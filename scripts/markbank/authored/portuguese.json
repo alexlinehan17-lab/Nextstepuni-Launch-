@@ -1,5 +1,453 @@
 [
  {
+  "id": "por-2019-hl-i-1-a",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "sentido-palavras-expressoes-morosamente",
+  "questionRef": "2019 HL Section I Q1(a)",
+  "questionText": "Explique o sentido das palavras ou expressões. Morosamente (§ 1);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "devagar, com lentidão, demoradamente;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2019-hl-i-1-b",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "sentido-palavras-expressoes-barafustar",
+  "questionRef": "2019 HL Section I Q1(b)",
+  "questionText": "Explique o sentido das palavras ou expressões. Barafustar (§ 2);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "protestar, discutir, reclamar;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2019-hl-i-1-c",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "sentido-palavras-expressoes-burburinho",
+  "questionRef": "2019 HL Section I Q1(c)",
+  "questionText": "Explique o sentido das palavras ou expressões. Burburinho (§ 4);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "confusão de vozes, sussurro, rumor;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2019-hl-i-1-d",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "sentido-palavras-expressoes-gorjeio",
+  "questionRef": "2019 HL Section I Q1(d)",
+  "questionText": "Explique o sentido das palavras ou expressões. Gorjeio (§ 8);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "chilreio, som de voz humana quando suave e harmoniosa;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2019-hl-i-1-e",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "sentido-palavras-expressoes-indiferenca-soberana",
+  "questionRef": "2019 HL Section I Q1(e)",
+  "questionText": "Explique o sentido das palavras ou expressões. Indiferença soberana (§ 10).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "altivez, inércia, desinteresse.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2019-hl-i-2",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "identifique-dois-tipos-pessoas-apareciam-baixa",
+  "questionRef": "2019 HL Section I Q2",
+  "questionText": "Identifique os dois tipos de pessoas que apareciam na Baixa àquela hora do dia.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Àquela hora, apareciam na Baixa as pessoas que saíam do trabalho (lojas, escritórios, oficinas) e “os elegantes que iam dar a sua volta pelas lojas de novidades e pelas casas de chá, para matar o tempo de qualquer maneira, ver caras desconhecidas, cumprimentar e ser cumprimentadas”.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2019-hl-i-3",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "era-explicitamente-proibido-fazer-dentro-electrico",
+  "questionRef": "2019 HL Section I Q3",
+  "questionText": "Segundo o texto, o que era explicitamente proibido fazer dentro do eléctrico? Havia alguma proibição implícita?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Era explicitamente proibido, como diziam os papeis colados nos vidros do eléctrico, fumar, cuspir e abrir as janelas durante os meses de Inverno. Implicitamente, era proibido assobiar, tal como diz o texto: “Mas nem uma palavra a respeito de assobios.”",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2019-hl-i-4",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "toda-gente-olhava-desprezo-ironia-inveja",
+  "questionRef": "2019 HL Section I Q4",
+  "questionText": "“Toda a gente o olhava. Com desprezo? Com ironia? Com inveja?” Comente estas três características humanas que o autor revela nesta frase tão expressiva.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cada pessoa reage à “indiferença soberana” da personagem conforme as suas características pessoais e a capacidade de interpretar o momento: a inveja de quem gostaria de o imitar, mas não tem coragem; a ironia de quem achou graça e não quer mostrar e o desprezo dos que consideravam o homenzinho mal-educado, sem, contudo, poderem apontar-lhe o que quer que fosse de má educação.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2019-hl-i-5",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "minuto-simplicidade-simpatia-iluminou-momento-iluminou",
+  "questionRef": "2019 HL Section I Q5",
+  "questionText": "“Um minuto de simplicidade e simpatia iluminou-as.” Explique como este momento iluminou as pessoas que estavam no eléctrico.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "No início da viagem, o “homenzinho” pareceu aos passageiros, perturbados pelo inusitado da situação, diferente e estranho. Só quando abandonou o eléctrico perceberam a simplicidade do momento e tudo se revelou como uma epifania: afinal tudo estava bem; na sua simplicidade, a personagem tinha conseguido o que queria, simplesmente porque era verdade que existia um lugar vazio lá à frente, sem molestar ou prejudicar ninguém e ainda os contemplou com um belo assobio, provocando nos utentes um “sorriso de bondosa ingenuidade”.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2019-hl-i-6",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "patetice-havia-outra-palavra-aquilo-patetice",
+  "questionRef": "2019 HL Section I Q6",
+  "questionText": "Que patetice! Não havia outra palavra para aquilo. Que patetice! Está de acordo com este ponto de vista? Explique porquê.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Podemos considerar a situação, tal como a frase diz e repete, uma dupla “patetice”: em primeiro lugar, da personagem pela atitude que não era normal e perturbou os utentes do eléctrico; seguidamente, uma patetice dos outros passageiros porque deram tanta importância a algo tão insignificante, só porque não era normal.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2019-hl-ii-1",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2019,
+  "section": "II",
+  "topicId": "portuguese-2-2",
+  "conceptId": "todos-atrevidos-tem-sorte-comente-frase",
+  "questionRef": "2019 HL Section II Q1",
+  "questionText": "Todos os atrevidos têm sorte. Comente a frase em cerca de 100 palavras.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diante da necessidade de se sentar, a personagem ousou importunar os passageiros que àquela hora enchiam completamente o eléctrico para ocupar um lugar que estava, aparentemente, vazio. Foi atrevido porque, perante o desejo de se sentar e a dificuldade de o conseguir, não desistiu. Daquela ousadia e atrevimento, obteve o prémio final: conseguiu o lugar para se sentar. Foi atrevido porque teve de passar por todos os passageiros que apinhavam o carro àquela hora; foi atrevido porque a “senhora opulenta”, ao lado de quem se sentou, ocupava seguramente dois lugares. A sorte não acontece por acaso: conquista-se, luta-se por ela.",
+    "marks": null,
+    "contextNote": "For “(Comentário pessoal, correcto e fluente em cerca de 100 palavras.)”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this ask 30 marks; the paper prints it on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2019-hl-iii-1",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2019,
+  "section": "III",
+  "topicId": "portuguese-2-2",
+  "conceptId": "proposta-sorte-protege-audazes-virgilio",
+  "questionRef": "2019 HL Section III Q1",
+  "questionText": "Proposta 1 A sorte protege os audazes. (Virgílio)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nas circunstâncias mais simples da nossa vida privada ou profissional, assim como nas grandes mudanças sociais, encontramos seres humanos inteligentes e audazes. A coragem de enfrentar o perigo e não se sujeitar à opressão, ao status quo, tem sido origem de grandes transformações sociais e tem proporcionado o desenvolvimento da sociedade, permitindo que um maior número de pessoas tenha acesso a uma vida mais digna. Tal como a personagem do texto, também na vida em geral, só os audazes, que apostam na luta contra aquilo que é indigno, contra a opressão, contra a escravatura, contra a exploração dos mais pobres e frágeis, às vezes com o risco da própria vida, têm a sorte de patrocinar a mudança para eles próprios e para os outros. Não é sorte, é audácia.",
+    "marks": null,
+    "contextNote": "For “Tema 1”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this ask 40 marks; the paper prints it on page 4 of the question booklet.",
+  "stem": "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)"
+ },
+ {
+  "id": "por-2019-hl-iii-2",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2019,
+  "section": "III",
+  "topicId": "portuguese-2-2",
+  "conceptId": "proposta-fazer-interrupcao-ano-nos-estudos",
+  "questionRef": "2019 HL Section III Q2",
+  "questionText": "Proposta 2 Fazer uma interrupção de um ano nos estudos, depois do ensino secundário, é útil ou uma perda de tempo? Dê uma resposta a esta questão em cerca de 300 palavras. Procure reflectir sobre os dois lados do argumento.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "O final do ensino secundário é um momento de viragem e de ansiedade para os jovens actuais. A entrada na universidade é um desafio para o qual muitos se preparam e desejam o mais rapidamente possível. Preparados pela educação dos pais e pelos desafios que conseguiram ultrapassar na escola secundária, atrasar a entrada na universidade é atrasar a vida e a entrada no mercado de trabalho. Com a entrada em vigor das alterações propostas pelo processo de Bolonha, os jovens dos diferentes países europeus estão em concorrência directa. Ou todos os jovens de todos os países da Europa aceitam fazer uma interrupção nos estudos, ou aqueles que o fizerem estão a prejudicar-se directamente permitindo que os outros lhes passem à frente e mais cedo tenham acesso ao mercado de trabalho. Uma pausa é, pois, uma perda de tempo. Contudo, por força das circunstâncias difíceis actuais do mercado de trabalho, cada vez mais, os jovens têm dificuldade em entrar na vida adulta e tornarem-se independentes. Os mesmos jovens têm demonstrado também alguma imaturidade quando chegam ao final do ensino secundário e são confrontados com a escolha do percurso académico universitário. Permitir que estes jovens façam uma experiência de um ano viajando, fazendo estágios de conhecimento e adaptação ao mundo do trabalho, fazendo voluntariado… ou ocupando o tempo em actividades que lhes permitam o confronto com a vida real, parece-nos uma óptima oportunidade para preparar melhor o futuro académico e prever e preparar futuras dificuldades na vida adulta e no mercado de trabalho.",
+    "marks": null,
+    "contextNote": "For “Tema 2”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this ask 40 marks; the paper prints it on page 4 of the question booklet.",
+  "stem": "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)"
+ },
+ {
   "id": "por-2021-hl-i-1-a",
   "subjectId": "portuguese",
   "level": "higher",

@@ -156,7 +156,14 @@ def add(year, level):
     for c in new:
         mine = [i for i, x in enumerate(out) if x['year'] == year and x['level'] == lv]
         before = [i for i in mine if place(out[i]) < place(c)]
-        at = max(before) if before else (min(mine) - 1 if mine else len(out) - 1)
+        if mine:
+            at = max(before) if before else min(mine) - 1
+        else:
+            # A sitting with no card yet (the 2010-2019 old examination): the
+            # file runs in ascending years per level, so it goes before the
+            # first later sitting of its level.
+            later = [i for i, x in enumerate(out) if x['level'] == lv and x['year'] > year]
+            at = min(later) - 1 if later else len(out) - 1
         out.insert(at + 1, c)
     with open(AUTHORED, 'w', encoding='utf-8') as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)

@@ -41,7 +41,7 @@ LEVEL_TITLE = {'hl': 'Higher', 'ol': 'Ordinary'}
 # booklet also letters it, the letter and a dash come first ("LC3a-i" is
 # Q3(a)(i)); a reading ask's roman follows a dash ("A1b-ii").
 KEY = re.compile(r'^(L[A-E])(\d{1,2})(?:([a-h])-)?(i{1,3}|iv|vi{0,3})?$'
-                 r'|^(A|B|II|I)(\d{1,2})([a-l])?(?:-(i{1,3}|iv|vi{0,3}))?$')
+                 r'|^(A|B|III|II|I)(\d{1,2})([a-l])?(?:-(i{1,3}|iv|vi{0,3}))?$')
 AUDIO = os.path.join(ROOT, 'data', 'portugueseAudio.json')
 PARTE = re.compile(r'^Parte\s+([A-E])\b')
 # A question's printed number: "(1)" (2025, 2026) or "1." (2022-2024).
@@ -225,6 +225,24 @@ class EachOnly:
         return 1, int(m.group(2)), m.group(0)
 
 
+class SchemeSpan:
+    """Scheme lines a..b read as one text: a model commentary that runs over a
+    page break. Only the page's furniture between is left out (blank lines,
+    "## Page" markers, a page number alone on its line); every other line is
+    read with S(n), so cells and prices are cut as everywhere else."""
+    def __init__(self, a, b):
+        self.a, self.b = a, b
+
+    def text(self, doc):
+        parts = []
+        for n in range(self.a, self.b + 1):
+            raw = doc['scheme'][n - 1].strip()
+            if not raw or raw.startswith('## Page') or re.fullmatch(r'\d{1,3}', raw):
+                continue
+            parts.append(S(n).text(doc))
+        return re.sub(r'\s+', ' ', ' '.join(parts)).strip()
+
+
 class Pontos:
     """A price printed in points, "PARTE II (40 pontos)" (the 2021 scheme): one
     answer at that total."""
@@ -347,8 +365,11 @@ def reading_cards(year, level):
                       + (f' {spec.note}' if spec.note else '')),
         }
         lead = P.lead(ask.q)
-        if spec.stem:
-            card['stem'] = ' '.join(x.text(doc) for x in spec.stem)
+        if spec.stem is not None:
+            # An empty tuple: the task prints no instruction of its own, and the
+            # booklet's lead for its number belongs to another part.
+            if spec.stem:
+                card['stem'] = ' '.join(x.text(doc) for x in spec.stem)
         elif lead and len(lead) >= 12:
             card['stem'] = lead
         source = eu_all.source_material(P, ask, SUBJECT, language, level, year) if spec.source else None
@@ -1097,6 +1118,28 @@ READING[(2021, 'hl')] = [
     C('II2', [shown(J(*[S(n) for n in range(102, 114)]), lead=S(99))], total=Pontos(76), whole=True,
       question=(PL(4, 'Tópico 2'), PL(4, '“Não podemos inventar'), PL(4, '- Greta Thunberg')),
       stem=_CHOICE_2021, source=False),
+]
+
+
+# ===================================================== 2010-2019 HL (old) ===
+# The old examination: Part I (reading; the shared generator's cards, the
+# shape of live 2021 Part I), Part II ("Parte II (30 pontos)", a commentary
+# of about 100 words on a sentence) and Part III ("Parte III (40 pontos)",
+# "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma."
+# over Proposta 1 and 2). The scheme prints a MODEL commentary for each task
+# and no marking list: CARD-STANDARD 10a, as 2021 Part II -- each model shown
+# after the reveal under the scheme's own heading for it, word for word,
+# scored on the printed total (questionTotal), never claimable; Part III is
+# two cards, the choice instruction the stem of each.
+_CHOICE_2019 = (PL(4, 'Das duas propostas'), PL(4, '(Comente a citação'))
+READING[(2019, 'hl')] = [
+    C('II1', [shown(SchemeSpan(85, 92), lead=S(84))], total=Pontos(83), whole=True,
+      question=(PL(4, 'Todos os atrevidos'), PL(4, 'Comente a frase em cerca de 100')), stem=()),
+    C('III1', [shown(SchemeSpan(100, 108), lead=S(99))], total=Pontos(97), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'A sorte protege')), stem=_CHOICE_2019, source=False),
+    C('III2', [shown(SchemeSpan(110, 132), lead=S(109))], total=Pontos(97), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, 'Fazer uma interrupção'), PL(4, 'de tempo?'),
+                PL(4, 'Dê uma resposta a esta'), PL(4, 'argumento.')), stem=_CHOICE_2019, source=False),
 ]
 
 
