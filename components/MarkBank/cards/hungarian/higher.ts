@@ -4557,6 +4557,89 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2025 Higher Level — © State Examinations Commission.",
+    id: "hun-2025-hl-i-3", topicId: "hungarian-0-1", conceptId: "szoveg-szerint-mik-lehetnek-baratsag-kialakulasanak",
+    section: "I", questionRef: "2025 HL Section I Q3",
+    questionText: "A szöveg szerint mik lehetnek a barátság kialakulásának akadályai?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "az emberek eltérő személyiségtípusa, valamint a szóba jöhető felek barátai, párja iránt érzett ellenszenv;", marks: null, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme opens its answer with: “Válasz a 3. bekezdésben: A barátság kialakulásának akadálya lehet”." },
+    { id: "r-2", kind: "point", verbatim: "az eltérő szociális, jövedelmi helyzet;", marks: null },
+    { id: "r-3", kind: "point", verbatim: "a politikai nézetkülönbség;", marks: null },
+    { id: "r-4", kind: "point", verbatim: "a munkahelyi alá-fölé rendeltségi viszonyok vagy az eltérő kulturális háttér", marks: null },
+    { id: "r-5", kind: "point", verbatim: "ha egy dolog kiveri a biztosítékot, nem fog működni a barátság.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2025 Higher Level — © State Examinations Commission.",
+    id: "hun-2025-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-min-100-max-150-szoban",
+    section: "II", questionRef: "2025 HL Section II Q1",
+    questionText: "Kommentár (min. 100, max. 150 szóban) „A tartós barátság titka a rendszeres találkozás, és az, hogy kövessük a másik életét” Kommentálja ezt az állítást minimum 100, maximum 150 szóban a szöveg és a saját álláspontja alapján!",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a jól működő barátságot megalapozó hasonlóságok közül a legfontosabb az azonos vagy közel azonos értékrend (3. bk);", marks: null, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints no criteria for this part. It prints “A minimum 100, maximum 150 szóban tisztán, érthetően kifejtett, szövegen alapuló saját vélemény.” and, under its heading “Lehetséges irányok:”, the points shown, as examples, not a checklist; the part is scored on its printed total." },
+    { id: "r-2", kind: "point", verbatim: "a személyiségünkhöz passzoló élményeket meg tudjuk tapasztalni, illetve érzelmi támogatást nyújtsanak szükség esetén (3. bk);", marks: null },
+    { id: "r-3", kind: "point", verbatim: "képben legyünk, s így érdemben tudjuk támogatni a másikat abban az esetben, ha egy krízis jelenne meg az életében, (3. bk);", marks: null },
+    { id: "r-4", kind: "point", verbatim: "a rendszeres személyes találkozások táplálják a barátságok tartósságát", marks: null },
+    { id: "r-5", kind: "point", verbatim: "a virtuális kapcsolattartás is jó áthidaló megoldás lehet, ha egyik félnek sincs elég ideje vagy módja a személyes találkozásra, de fontos számukra ez a kapcsolat (5. bk);", marks: null },
+    { id: "r-6", kind: "point", verbatim: "a régi barátságok megmentéséért nagyobb energiákat mozgósítanak az emberek, mert nagy veszteség egy több évtizedes barátságot elengedni, hiszen ezzel kárba vész az a sok energia, amit a kapcsolatba fektettünk is (6. bk);", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2025 Higher Level — © State Examinations Commission.",
+    id: "hun-2025-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-fontos-emberek-eletemben-kik",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Fontos emberek az életemben: kik azok és miért azok.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" Under Part III the scheme prints only “Tisztán, érthetően és világosan megírt esszé.” and, under each title, “Egyéni válasz minimum 300 szóban.” It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2025 Higher Level — © State Examinations Commission.",
+    id: "hun-2025-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-batorsag-kell-ahhoz-hogy",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Bátorság kell ahhoz, hogy kapcsolatba kerüljünk egy másik emberrel. (Csóka Judit)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" Under Part III the scheme prints only “Tisztán, érthetően és világosan megírt esszé.” and, under each title, “Egyéni válasz minimum 300 szóban.” It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2026, level: "higher",
     paperFileid: "LC551ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2026 Higher Level — © State Examinations Commission.",
