@@ -2241,6 +2241,186 @@
   }
  },
  {
+  "id": "hrv-2019-hl-ii-1",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2019,
+  "section": "II",
+  "topicId": "croatian-1-0",
+  "conceptId": "ovdje-lacuni-usavr-ili-smo-sigurnu",
+  "questionRef": "2019 HL Section II Q1",
+  "questionText": "„Ovdje u Lacuni usavršili smo sigurnu i učinkovitu tehniku koja se usredotočuje na brisanje uznemirujućih sjećanja. Patentirani, neinvazivni postupak koji će vas riješiti bolnih uspomena i omogućiti vam dugoročni spokoj koji nikada niste smatrali mogućim.“ Komentirajte, vlastitim riječima (minimalno 100 riječi), mogućnost koju nudi tvrtka Lacuna u filmu „Vječni sjaj nepobjedivog uma“ s pozitivnog i negativnog gledišta. Kad bi takav postupak postojao, biste li mu se i vi podvrgnuli te u kojem slučaju?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nikada se ne bih podvrgnuo takvom postupku. Sjećanja su ono što u velikoj mjeri čini ljudsko biće onakvim kakvo jest. Svi smo mi zbroj vlastitih iskustava, osjećaja i sjećanja, i svi oni čine upravo ono što život jest - prirodni zakoni nalažu da postoje i dan i noć, i dobro i loše, ljeto i zima, i da jedno bez drugoga jednostavno ne mogu postojati. Ne možemo cijeniti dobro ako nismo iskusili loše, ne možemo znati što je dobra knjiga ako nikada nismo pročitali lošu, ne možemo znati tko je prava osoba za nas ako na putu nismo imali nekoliko loših iskustava. Bolna iskustva i negativni osjećaji su ono što nas jača, ono što nas oblikuje i kao takvi su nužnost na našem životnom putu. Smisao života nije biti vječno sretan, nego postati najbolja moguća verzija nas samih, a to jednostavno nije moguće bez negativnih iskustava i učenja na vlastitim pogreškama.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme heads it “Na primjer:” The scheme misnumbers this part: it heads it “I. dio [30 bodova]”, where the paper prints it as Part II."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Neki od nas prošli su kroz nezamislive strahote i traume, pa im ni godine profesionalnih tretmana ne mogu pomoći. Kad bi na tržištu postojao postupak koji bi pomogao ovim ljudima da izbrišu te strašne scene iz svojih sjećanja, mislim da bi tim ljudima trebalo omogućiti normalan život.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2019-hl-iii-1",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2019,
+  "section": "III",
+  "topicId": "croatian-1-1",
+  "conceptId": "zna-najljep-ivotu-elja-prijatelju-selimovi",
+  "questionRef": "2019 HL Section III Q1",
+  "questionText": "Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema: „Znaš li što je najljepše u životu? Želja, prijatelju.”, M. Selimović, „Tvrđava“",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme misnumbers this part: it heads it “II. dio [40 bodova]”, where the paper prints it as Part III. Under it the scheme reprints only the instruction and the two titles, with no answer, criteria or notes: “Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema:”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "hrv-2019-hl-iii-2",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2019,
+  "section": "III",
+  "topicId": "croatian-1-1",
+  "conceptId": "odlazak-slobodnu-godinu-nakon-srednje-kole",
+  "questionRef": "2019 HL Section III Q2",
+  "questionText": "Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema: „Odlazak na slobodnu godinu nakon srednje škole – je li koristan ili je gubitak vremena?“",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme misnumbers this part: it heads it “II. dio [40 bodova]”, where the paper prints it as Part III. Under it the scheme reprints only the instruction and the two titles, with no answer, criteria or notes: “Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema:”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "hrv-2020-hl-i-2",
   "subjectId": "croatian",
   "level": "higher",
