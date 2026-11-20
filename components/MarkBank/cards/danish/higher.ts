@@ -1760,6 +1760,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2019 Higher Level — © State Examinations Commission.",
+    id: "dan-2019-hl-ii-1", topicId: "danish-1-0", conceptId: "lykkeforsker-christian-rnskov-forudser-vil-rre",
+    section: "II", questionRef: "2019 HL Section II Q1",
+    questionText: "Lykkeforsker Christian Bjørnskov forudser ”at vi vil føde færre børn i fremtiden, fordi vi ikke længere vil være bundet af den norm, at børn er et succeskriterium for et vellykket liv.” Diskuter synspunktet i ovenstående citat i en kommentar på 100-150 ord, hvor du refererer til Bjørnskovs udsagn, og hvor du giver din egen mening til kende.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Han mener, at børn ikke længere er et succeskriterium for et vellykket liv, som det har været tidligere, hvor folk fik flere børn. Hans forskning viser, at vores partner, vores sociale relationer, økonomiske frihed, familie og job gør os lykkelige – ikke børn. Karriere, vennekreds og kærlighedsliv er således de vigtigste succeskriterier, som vi måler os selv og hinanden på. 38% af højtuddannede kvinder i Tyskland har valgt ikke at få børn. Tallet er sikkert det samme i Danmark, fordi vores kultur ligner den tyske. Synspunktet kan modargumenteres ved at referere til fordelene ved et lykkeligt familieliv.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “En kommentar på ca. 100-150 ord, som viser evne til at forstå Bjørnskovs synspunkt.”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2019 Higher Level — © State Examinations Commission.",
+    id: "dan-2019-hl-iii-1", topicId: "danish-1-1", conceptId: "det-lykkelige-familieliv-det-muligt-eller",
+    section: "III", questionRef: "2019 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner: Det lykkelige familieliv. Er det muligt, eller er det blot ønsketænkning? Du skal argumentere for dit synspunkt, hvor du overvejer argumenter for og imod.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under Part III the scheme prints only: “Et velskrevet essay på ca. 300 ord, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2019 Higher Level — © State Examinations Commission.",
+    id: "dan-2019-hl-iii-2", topicId: "danish-1-1", conceptId: "mange-unge-lger-tage-sabbat-efter",
+    section: "III", questionRef: "2019 HL Section III Q2",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner: Mange unge vælger at tage et sabbatår efter deres studentereksamen. Er det fornuftigt, eller er det spild af tid? Du skal argumentere for dit synspunkt, hvor du overvejer argumenter for og imod.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under Part III the scheme prints only: “Et velskrevet essay på ca. 300 ord, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "higher",
     paperFileid: "LC038ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2022 Higher Level — © State Examinations Commission.",
