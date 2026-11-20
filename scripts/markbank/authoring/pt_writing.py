@@ -73,6 +73,9 @@ class Band:
         guidance = []
         for line in lines:
             text = re.sub(r'\s+', ' ', RANGE.sub(' ', line)).strip()
+            # A dash the range columns leave behind ("... of the task 0 – 3– 0 – 2",
+            # 2025 Higher p10) is the cells', not the descriptor's.
+            text = re.sub(r'\s*[–‐-]$', '', text).strip()
             if not text:
                 continue
             if BULLET.match(text) or not guidance:
@@ -92,6 +95,30 @@ class Crit:
         return {'id': self.cid, 'label': self.label.text(doc), 'maxMarks': top,
                 'permittedMarks': list(range(top + 1)), 'guidance': [],
                 'bands': sorted(bands, key=lambda b: -b['marks'][0])}
+
+
+class ScaledCrit:
+    """A criterion printed with two range columns, Full Scale and Lower Scale
+    (2025-2026): the full bands from the first range of each band, the lower
+    scale's from the second, and the scale switched on by the printed word
+    count alone ("If the answer is too short (less than 140 words), mark
+    questions 3 and 4 out of 20 marks (lower scale)"): contentCriteria [] and
+    no threshold (FrenchLowerScale). `bands` are (name line, first, last)."""
+    def __init__(self, cid, label, bands, rule, words_under):
+        self.cid, self.label, self.bands = cid, label, bands
+        self.rule, self.words_under = rule, words_under
+
+    def read(self, doc):
+        full = Crit(self.cid, self.label, [Band(*b, 0) for b in self.bands]).read(doc)
+        lower = sorted((Band(*b, 1).read(doc) for b in self.bands), key=lambda b: -b['marks'][0])
+        top = max(m for b in lower for m in b['marks'])
+        rule = re.sub(r'\s+', ' ', self.rule.text(doc)).strip()
+        if f'less than {self.words_under} words' not in rule:
+            raise ValueError(f'{self.cid}: the rule does not print the word count {self.words_under}: {rule!r}')
+        full['lowerScale'] = {'label': 'Lower', 'maxMarks': top, 'permittedMarks': list(range(top + 1)),
+                              'bands': lower, 'contentCriteria': [], 'wordsUnder': self.words_under,
+                              'rule': rule}
+        return full
 
 
 ANGLE = re.compile('\u27e8([^\u27e9]*)\u27e9')
@@ -380,7 +407,7 @@ SPECS[(2024, 'ol')] = [
 # Communication / Language, each band named only by the range in its marks
 # cell. Q4's Content prints rungs 4, 3, 2, 1 and no 0: RungCrit (lead ruling).
 # Part B's own rules (lines 269-274) are every card's taskRequirements.
-from pt_lib import J                                               # noqa: E402
+from pt_lib import J, Sel                                          # noqa: E402
 
 _REQ_2023_HL = [S(269), Celled(270, 271), J(S(272), S(273)), S(274)]
 _Q3_TOPICS = {'a': ((12, 0), [('Olá, tudo bem?', 0), ('Tudo!', 0), ('Viste a nova série', 0),
@@ -509,6 +536,137 @@ SPECS[(2022, 'ol')] = [
           RangeCrit('communication', S(311), 311, [RangeBand(312, 318), RangeBand(319, 325), RangeBand(326, 332)]),
           RangeCrit('language', S(337), 337, [RangeBand(338, 344), RangeBand(345, 351), RangeBand(352, 358)])],
          [], [15, 16]),
+]
+
+
+# ================================================================ 2025 HL ===
+# Scheme .md: p9 lines 209-240 (Questions 3 and 4) and p10 lines 245-274
+# (Question 5), each band printing its Full Scale and Lower Scale ranges; the
+# lower scale is switched on by the word count alone (less than 140 words for
+# Q3/Q4, 90 for Q5). No Section B rules are printed (the 2024 word-count
+# penalty is gone). Paper p11 (Q3), p13 (Q4), p15 (Q5, three pictures).
+def SK(n):
+    """Scheme line n with its marks kept: a lower-scale rule is the scheme's
+    sentence whole ("... out of 20 marks (lower scale)")."""
+    return Sel('scheme', n, keep_tariff=True)
+
+
+def _scaled(rule, words, cc, cc_bands, lang, lang_bands):
+    return [ScaledCrit('content', S(cc), cc_bands, rule, words),
+            ScaledCrit('language', S(lang), lang_bands, rule, words)]
+
+
+def _grid_2025_hl_q34():
+    return _scaled(J(SK(210), SK(211)), 140,
+                   215, [(216, 217, 219), (220, 221, 223), (224, 225, 227)],
+                   228, [(229, 230, 232), (233, 234, 236), (237, 238, 240)])
+
+
+def _grid_2025_hl_q5():
+    return _scaled(SK(245), 90,
+                   249, [(250, 251, 253), (254, 255, 257), (258, 259, 261)],
+                   262, [(263, 264, 266), (267, 268, 270), (271, 272, 274)])
+
+
+def _options(page, inclua, per=3):
+    """(a)-(c) printed on one page, each its heading, its "Inclua …" line and
+    its `per` bullets."""
+    return {x: (page, [PLk(page, f'({x})', 0, after=f'({x}) '), PLk(page, inclua, i)]
+                + [PLk(page, '•', per * i + j) for j in range(per)]) for i, x in enumerate('abc')}
+
+
+SPECS[(2025, 'hl')] = [
+    Task(3, 11, [PL(11, 'Escolha uma opção'), PL(11, 'Escreva cerca de 200'), PL(11, 'Seu professor')],
+         _options(11, 'Inclua os seguintes'), _grid_2025_hl_q34(), [], [9]),
+    Task(4, 13, [PL(13, 'Escolha uma opção'), PL(13, 'Escreva um e'), PL(13, 'Você teve uma ideia')],
+         _options(13, 'Inclua os seguintes'), _grid_2025_hl_q34(), [], [9]),
+    Task(5, 15, [PL(15, 'Observe as imagens')],
+         {x: (15, [PL(15, 'Escreva um texto em português, com cerca de 150'),
+                   PL(15, '• Que mensagem'), PL(15, '• A sua opinião')]) for x in 'abc'},
+         _grid_2025_hl_q5(), [], [10]),
+]
+
+
+# ================================================================ 2025 OL ===
+# Scheme .md p11 lines 271-301: one grid for Questions 4 and 5, Full and Lower
+# Scale (less than 60 words). Paper: Q4 (a) p12, (b) p13, (c) p14; Q5 p15
+# (three pictures).
+def _grid_2025_ol():
+    return _scaled(J(SK(271), SK(272)), 60,
+                   276, [(277, 278, 280), (281, 282, 284), (285, 286, 288)],
+                   289, [(290, 291, 293), (294, 295, 297), (298, 299, 301)])
+
+
+SPECS[(2025, 'ol')] = [
+    Task(4, 12, [PL(12, 'Escolha uma opção'), PL(12, 'Escreva um texto em português com cerca de 100')],
+         {'a': (12, [PLk(12, '(a)', 0, after='(a) '), PL(12, 'Escreva um email')] + [PLk(12, '•', j) for j in range(3)]),
+          'b': (13, [PLk(13, '(b)', 0, after='(b) '), PL(13, 'Escreva uma apresentação')]
+                + [PLk(13, '•', j) for j in range(3)]),
+          'c': (14, [PLk(14, '(c)', 0, after='(c) ')] + [PLk(14, '•', j) for j in range(3)])},
+         _grid_2025_ol(), [], [11]),
+    Task(5, 15, [PLk(15, 'Questão 5', 0, after='Questão 5 '), PL(15, 'Escreva um texto em português com cerca de 100')],
+         {x: (15, [PL(15, 'Inclua os seguintes'), PL(15, '• Que mensagem'), PL(15, '• A sua opinião')])
+          for x in 'abc'},
+         _grid_2025_ol(), [], [11]),
+]
+
+
+# ================================================================ 2026 OL ===
+# Scheme .md p10 lines 228-258: one grid for Questions 4 and 5, Full and Lower
+# Scale (less than 60 words). Paper: Q4 (a) p12, (b) p13, (c) p14, each
+# heading wrapped onto a second line; Q5 p15 (three pictures).
+def _grid_2026_ol():
+    return _scaled(J(SK(228), SK(229)), 60,
+                   233, [(234, 235, 237), (238, 239, 241), (242, 243, 245)],
+                   246, [(247, 248, 250), (251, 252, 254), (255, 256, 258)])
+
+
+def _wrapped(page, x, cont):
+    return (page, [PLk(page, f'({x})', 0, after=f'({x}) '), PL(page, cont), PL(page, 'Inclua as seguintes')]
+            + [PLk(page, '•', j) for j in range(3)])
+
+
+SPECS[(2026, 'ol')] = [
+    Task(4, 12, [PL(12, 'Escolha uma opção'), PL(12, 'Escreva um texto em português com cerca de 100')],
+         {'a': _wrapped(12, 'a', 'escolher um país'), 'b': _wrapped(13, 'b', 'foi a sua experiência'),
+          'c': _wrapped(14, 'c', 'de reclamação')},
+         _grid_2026_ol(), [], [10]),
+    Task(5, 15, [PLk(15, 'Questão 5', 0, after='Questão 5 '), PL(15, 'Escreva um texto em português com cerca de 100')],
+         {x: (15, [PL(15, 'Inclua os seguintes'), PL(15, '• Que mensagem'), PL(15, '• A sua opinião')])
+          for x in 'abc'},
+         _grid_2026_ol(), [], [10]),
+]
+
+
+# ================================================================ 2026 HL ===
+# Scheme .md p10 lines 231-263 (Questions 3 and 4, less than 140 words) and
+# p11 lines 268-299 (Question 5, less than 90). The Language bands print their
+# range columns on the FIRST line of a wrapped bullet ("Verb endings, tenses,
+# agreements (number, gender, etc.) 11 – 15 8 – 10" / "nearly always
+# correct."): the descriptor reads whole, and traces through the grid gate's
+# band-range form extended to a line's two trailing range pairs (lead ruling,
+# 19 Nov 2026). Paper p11 (Q3), p13 (Q4), p15 (Q5, three pictures).
+def _grid_2026_hl_q34():
+    return _scaled(J(SK(231), SK(232)), 140,
+                   235, [(236, 237, 239), (240, 241, 243), (244, 245, 247)],
+                   248, [(249, 250, 253), (254, 255, 258), (259, 260, 263)])
+
+
+def _grid_2026_hl_q5():
+    return _scaled(SK(268), 90,
+                   271, [(272, 273, 275), (276, 277, 279), (280, 281, 283)],
+                   284, [(285, 286, 289), (290, 291, 294), (295, 296, 299)])
+
+
+SPECS[(2026, 'hl')] = [
+    Task(3, 11, [PL(11, 'Escolha uma opção'), PL(11, 'Escreva cerca de 200'), PL(11, 'Escreva um e')],
+         _options(11, 'Inclua os seguintes'), _grid_2026_hl_q34(), [], [10]),
+    Task(4, 13, [PL(13, 'Escolha uma opção'), PL(13, 'Escreva cerca de 200'), PL(13, 'Escreva um anúncio')],
+         _options(13, 'Inclua os seguintes'), _grid_2026_hl_q34(), [], [10]),
+    Task(5, 15, [PLk(15, 'Questão 5', 0, after='Questão 5 ')],
+         {x: (15, [PL(15, 'Escreva um texto em português, com cerca de 150'),
+                   PL(15, '• Que mensagem'), PL(15, '• A sua opinião')]) for x in 'abc'},
+         _grid_2026_hl_q5(), [], [11]),
 ]
 
 

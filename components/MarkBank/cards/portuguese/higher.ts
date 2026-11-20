@@ -8548,6 +8548,1599 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2025 Higher Level, p.9 — © State Examinations Commission.",
+    id: "por-2025-hl-b-3-a", topicId: "portuguese-2-4", conceptId: "festa-nacional-data-comemorativa-importante-pais",
+    section: "B", questionRef: "2025 HL Section B Q3(a)",
+    stem: "Escolha uma opção (a) ou (b) ou (c) para responder. Escreva cerca de 200 palavras, em português. Seu professor de jornalismo pediu para você escrever um texto para o jornal local sobre:",
+    questionText: "Uma festa nacional ou data comemorativa importante de um país de língua portuguesa. Inclua os seguintes detalhes: • Descreva o evento; • Explique por que razão é importante; • Por que razão você gosta desta data.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Accurate completion of the task",
+                                        "High level of coherence",
+                                        "Clear and well-structured text"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Some accuracy in completion of the task",
+                                        "Some level of coherence",
+                                        "Some clarity and structure in the text"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Little or no accuracy in completion of the task",
+                                        "Little or no coherence",
+                                        "Little or no clarity or structure in the text"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 10,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [8,9,10],
+                                        "guidance": [
+                                              "Accurate completion of the task",
+                                              "High level of coherence",
+                                              "Clear and well-structured text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [4,5,6,7],
+                                        "guidance": [
+                                              "Some accuracy in completion of the task",
+                                              "Some level of coherence",
+                                              "Some clarity and structure in the text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2,3],
+                                        "guidance": [
+                                              "Little or no accuracy in completion of the task",
+                                              "Little or no coherence",
+                                              "Little or no clarity or structure in the text"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 140,
+                            "rule": "If the answer is too short (less than 140 words), mark questions 3 and 4 out of 20 marks (lower scale)."
+                      }
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Wide range of accurate vocabulary",
+                                        "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Rare spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Range of mostly accurate vocabulary",
+                                        "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Some spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Limited or inaccurate vocabulary. Interference of other languages",
+                                        "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 10,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [8,9,10],
+                                        "guidance": [
+                                              "Wide range of accurate vocabulary",
+                                              "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Rare spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [4,5,6,7],
+                                        "guidance": [
+                                              "Range of mostly accurate vocabulary",
+                                              "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Some spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2,3],
+                                        "guidance": [
+                                              "Limited or inaccurate vocabulary. Interference of other languages",
+                                              "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Frequent spelling mistakes"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 140,
+                            "rule": "If the answer is too short (less than 140 words), mark questions 3 and 4 out of 20 marks (lower scale)."
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 3",
+          "title": "Questão 3 (a) — answer in Portuguese",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Portuguese 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2025 Higher Level, p.9 — © State Examinations Commission.",
+    id: "por-2025-hl-b-3-b", topicId: "portuguese-2-4", conceptId: "importancia-aprender-lingua-portuguesa-inclua-seguintes",
+    section: "B", questionRef: "2025 HL Section B Q3(b)",
+    stem: "Escolha uma opção (a) ou (b) ou (c) para responder. Escreva cerca de 200 palavras, em português. Seu professor de jornalismo pediu para você escrever um texto para o jornal local sobre:",
+    questionText: "A importância de aprender a língua portuguesa. Inclua os seguintes detalhes: • Como é aprender a língua portuguesa; • Apresente os benefícios de aprender a língua portuguesa; • Como saber português influencia sua vida.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Accurate completion of the task",
+                                        "High level of coherence",
+                                        "Clear and well-structured text"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Some accuracy in completion of the task",
+                                        "Some level of coherence",
+                                        "Some clarity and structure in the text"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Little or no accuracy in completion of the task",
+                                        "Little or no coherence",
+                                        "Little or no clarity or structure in the text"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 10,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [8,9,10],
+                                        "guidance": [
+                                              "Accurate completion of the task",
+                                              "High level of coherence",
+                                              "Clear and well-structured text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [4,5,6,7],
+                                        "guidance": [
+                                              "Some accuracy in completion of the task",
+                                              "Some level of coherence",
+                                              "Some clarity and structure in the text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2,3],
+                                        "guidance": [
+                                              "Little or no accuracy in completion of the task",
+                                              "Little or no coherence",
+                                              "Little or no clarity or structure in the text"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 140,
+                            "rule": "If the answer is too short (less than 140 words), mark questions 3 and 4 out of 20 marks (lower scale)."
+                      }
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Wide range of accurate vocabulary",
+                                        "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Rare spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Range of mostly accurate vocabulary",
+                                        "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Some spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Limited or inaccurate vocabulary. Interference of other languages",
+                                        "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 10,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [8,9,10],
+                                        "guidance": [
+                                              "Wide range of accurate vocabulary",
+                                              "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Rare spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [4,5,6,7],
+                                        "guidance": [
+                                              "Range of mostly accurate vocabulary",
+                                              "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Some spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2,3],
+                                        "guidance": [
+                                              "Limited or inaccurate vocabulary. Interference of other languages",
+                                              "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Frequent spelling mistakes"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 140,
+                            "rule": "If the answer is too short (less than 140 words), mark questions 3 and 4 out of 20 marks (lower scale)."
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 3",
+          "title": "Questão 3 (b) — answer in Portuguese",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Portuguese 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2025 Higher Level, p.9 — © State Examinations Commission.",
+    id: "por-2025-hl-b-3-c", topicId: "portuguese-2-4", conceptId: "diferencas-culturais-entre-pais-lingua-portuguesa",
+    section: "B", questionRef: "2025 HL Section B Q3(c)",
+    stem: "Escolha uma opção (a) ou (b) ou (c) para responder. Escreva cerca de 200 palavras, em português. Seu professor de jornalismo pediu para você escrever um texto para o jornal local sobre:",
+    questionText: "Diferenças culturais entre um país de língua portuguesa e a Irlanda. Inclua os seguintes detalhes: • Descreva os dois países; • Escreva sobre as diferenças entre eles; • Escreva sobre as semelhanças entre eles.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Accurate completion of the task",
+                                        "High level of coherence",
+                                        "Clear and well-structured text"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Some accuracy in completion of the task",
+                                        "Some level of coherence",
+                                        "Some clarity and structure in the text"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Little or no accuracy in completion of the task",
+                                        "Little or no coherence",
+                                        "Little or no clarity or structure in the text"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 10,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [8,9,10],
+                                        "guidance": [
+                                              "Accurate completion of the task",
+                                              "High level of coherence",
+                                              "Clear and well-structured text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [4,5,6,7],
+                                        "guidance": [
+                                              "Some accuracy in completion of the task",
+                                              "Some level of coherence",
+                                              "Some clarity and structure in the text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2,3],
+                                        "guidance": [
+                                              "Little or no accuracy in completion of the task",
+                                              "Little or no coherence",
+                                              "Little or no clarity or structure in the text"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 140,
+                            "rule": "If the answer is too short (less than 140 words), mark questions 3 and 4 out of 20 marks (lower scale)."
+                      }
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Wide range of accurate vocabulary",
+                                        "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Rare spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Range of mostly accurate vocabulary",
+                                        "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Some spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Limited or inaccurate vocabulary. Interference of other languages",
+                                        "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 10,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [8,9,10],
+                                        "guidance": [
+                                              "Wide range of accurate vocabulary",
+                                              "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Rare spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [4,5,6,7],
+                                        "guidance": [
+                                              "Range of mostly accurate vocabulary",
+                                              "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Some spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2,3],
+                                        "guidance": [
+                                              "Limited or inaccurate vocabulary. Interference of other languages",
+                                              "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Frequent spelling mistakes"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 140,
+                            "rule": "If the answer is too short (less than 140 words), mark questions 3 and 4 out of 20 marks (lower scale)."
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 3",
+          "title": "Questão 3 (c) — answer in Portuguese",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Portuguese 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2025 Higher Level, p.9 — © State Examinations Commission.",
+    id: "por-2025-hl-b-4-a", topicId: "portuguese-2-4", conceptId: "roteiro-guiao-filme-inclua-seguintes-descricao",
+    section: "B", questionRef: "2025 HL Section B Q4(a)",
+    stem: "Escolha uma opção (a) ou (b) ou (c) para responder. Escreva um e‐mail com cerca de 200 palavras, em português. Você teve uma ideia brilhante e decidiu escrever um e‐mail para o seu/sua melhor amigo/a sobre:",
+    questionText: "Um roteiro / guião de um filme. Inclua os seguintes detalhes: • Descrição das personagens; • Descrição do espaço; • O que acontece.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Accurate completion of the task",
+                                        "High level of coherence",
+                                        "Clear and well-structured text"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Some accuracy in completion of the task",
+                                        "Some level of coherence",
+                                        "Some clarity and structure in the text"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Little or no accuracy in completion of the task",
+                                        "Little or no coherence",
+                                        "Little or no clarity or structure in the text"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 10,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [8,9,10],
+                                        "guidance": [
+                                              "Accurate completion of the task",
+                                              "High level of coherence",
+                                              "Clear and well-structured text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [4,5,6,7],
+                                        "guidance": [
+                                              "Some accuracy in completion of the task",
+                                              "Some level of coherence",
+                                              "Some clarity and structure in the text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2,3],
+                                        "guidance": [
+                                              "Little or no accuracy in completion of the task",
+                                              "Little or no coherence",
+                                              "Little or no clarity or structure in the text"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 140,
+                            "rule": "If the answer is too short (less than 140 words), mark questions 3 and 4 out of 20 marks (lower scale)."
+                      }
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Wide range of accurate vocabulary",
+                                        "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Rare spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Range of mostly accurate vocabulary",
+                                        "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Some spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Limited or inaccurate vocabulary. Interference of other languages",
+                                        "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 10,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [8,9,10],
+                                        "guidance": [
+                                              "Wide range of accurate vocabulary",
+                                              "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Rare spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [4,5,6,7],
+                                        "guidance": [
+                                              "Range of mostly accurate vocabulary",
+                                              "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Some spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2,3],
+                                        "guidance": [
+                                              "Limited or inaccurate vocabulary. Interference of other languages",
+                                              "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Frequent spelling mistakes"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 140,
+                            "rule": "If the answer is too short (less than 140 words), mark questions 3 and 4 out of 20 marks (lower scale)."
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 4",
+          "title": "Questão 4 (a) — answer in Portuguese",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Portuguese 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2025 Higher Level, p.9 — © State Examinations Commission.",
+    id: "por-2025-hl-b-4-b", topicId: "portuguese-2-4", conceptId: "podcast-inclua-seguintes-temas-vai-discutir",
+    section: "B", questionRef: "2025 HL Section B Q4(b)",
+    stem: "Escolha uma opção (a) ou (b) ou (c) para responder. Escreva um e‐mail com cerca de 200 palavras, em português. Você teve uma ideia brilhante e decidiu escrever um e‐mail para o seu/sua melhor amigo/a sobre:",
+    questionText: "Um podcast. Inclua os seguintes detalhes: • Temas que vai discutir; • Tipos de convidados; • Planos para desenvolver o seu projeto.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Accurate completion of the task",
+                                        "High level of coherence",
+                                        "Clear and well-structured text"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Some accuracy in completion of the task",
+                                        "Some level of coherence",
+                                        "Some clarity and structure in the text"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Little or no accuracy in completion of the task",
+                                        "Little or no coherence",
+                                        "Little or no clarity or structure in the text"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 10,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [8,9,10],
+                                        "guidance": [
+                                              "Accurate completion of the task",
+                                              "High level of coherence",
+                                              "Clear and well-structured text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [4,5,6,7],
+                                        "guidance": [
+                                              "Some accuracy in completion of the task",
+                                              "Some level of coherence",
+                                              "Some clarity and structure in the text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2,3],
+                                        "guidance": [
+                                              "Little or no accuracy in completion of the task",
+                                              "Little or no coherence",
+                                              "Little or no clarity or structure in the text"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 140,
+                            "rule": "If the answer is too short (less than 140 words), mark questions 3 and 4 out of 20 marks (lower scale)."
+                      }
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Wide range of accurate vocabulary",
+                                        "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Rare spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Range of mostly accurate vocabulary",
+                                        "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Some spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Limited or inaccurate vocabulary. Interference of other languages",
+                                        "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 10,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [8,9,10],
+                                        "guidance": [
+                                              "Wide range of accurate vocabulary",
+                                              "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Rare spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [4,5,6,7],
+                                        "guidance": [
+                                              "Range of mostly accurate vocabulary",
+                                              "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Some spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2,3],
+                                        "guidance": [
+                                              "Limited or inaccurate vocabulary. Interference of other languages",
+                                              "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Frequent spelling mistakes"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 140,
+                            "rule": "If the answer is too short (less than 140 words), mark questions 3 and 4 out of 20 marks (lower scale)."
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 4",
+          "title": "Questão 4 (b) — answer in Portuguese",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Portuguese 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2025 Higher Level, p.9 — © State Examinations Commission.",
+    id: "por-2025-hl-b-4-c", topicId: "portuguese-2-4", conceptId: "novo-negocio-inclua-seguintes-tipo-negocio",
+    section: "B", questionRef: "2025 HL Section B Q4(c)",
+    stem: "Escolha uma opção (a) ou (b) ou (c) para responder. Escreva um e‐mail com cerca de 200 palavras, em português. Você teve uma ideia brilhante e decidiu escrever um e‐mail para o seu/sua melhor amigo/a sobre:",
+    questionText: "Um novo negócio. Inclua os seguintes detalhes: • Que tipo de negócio vai iniciar; • Descreva o público‐alvo / clientes; • Por que razão será um negócio de sucesso.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Accurate completion of the task",
+                                        "High level of coherence",
+                                        "Clear and well-structured text"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Some accuracy in completion of the task",
+                                        "Some level of coherence",
+                                        "Some clarity and structure in the text"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Little or no accuracy in completion of the task",
+                                        "Little or no coherence",
+                                        "Little or no clarity or structure in the text"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 10,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [8,9,10],
+                                        "guidance": [
+                                              "Accurate completion of the task",
+                                              "High level of coherence",
+                                              "Clear and well-structured text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [4,5,6,7],
+                                        "guidance": [
+                                              "Some accuracy in completion of the task",
+                                              "Some level of coherence",
+                                              "Some clarity and structure in the text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2,3],
+                                        "guidance": [
+                                              "Little or no accuracy in completion of the task",
+                                              "Little or no coherence",
+                                              "Little or no clarity or structure in the text"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 140,
+                            "rule": "If the answer is too short (less than 140 words), mark questions 3 and 4 out of 20 marks (lower scale)."
+                      }
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Wide range of accurate vocabulary",
+                                        "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Rare spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Range of mostly accurate vocabulary",
+                                        "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Some spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Limited or inaccurate vocabulary. Interference of other languages",
+                                        "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 10,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [8,9,10],
+                                        "guidance": [
+                                              "Wide range of accurate vocabulary",
+                                              "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Rare spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [4,5,6,7],
+                                        "guidance": [
+                                              "Range of mostly accurate vocabulary",
+                                              "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Some spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2,3],
+                                        "guidance": [
+                                              "Limited or inaccurate vocabulary. Interference of other languages",
+                                              "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Frequent spelling mistakes"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 140,
+                            "rule": "If the answer is too short (less than 140 words), mark questions 3 and 4 out of 20 marks (lower scale)."
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 4",
+          "title": "Questão 4 (c) — answer in Portuguese",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Portuguese 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2025 Higher Level, p.10 — © State Examinations Commission.",
+    id: "por-2025-hl-b-5-a", topicId: "portuguese-2-4", conceptId: "escreva-portugues-cerca-150-palavras-onde",
+    section: "B", questionRef: "2025 HL Section B Q5(a)",
+    stem: "Observe as imagens com atenção e escolha uma: (a) ou (b) ou (c).",
+    questionText: "Escreva um texto em português, com cerca de 150 palavras, onde inclua os tópicos: • Que mensagem lhe transmite a imagem; • A sua opinião sobre a mensagem contida na imagem.",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Accurate completion of the task",
+                                        "High level of coherence",
+                                        "Clear and well-structured text"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Some accuracy in completion of the task",
+                                        "Some level of coherence",
+                                        "Some clarity and structure in the text"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Little or no accuracy in completion of the task",
+                                        "Little or no coherence",
+                                        "Little or no clarity or structure in the text"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 8,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [6,7,8],
+                                        "guidance": [
+                                              "Accurate completion of the task",
+                                              "High level of coherence",
+                                              "Clear and well-structured text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [3,4,5],
+                                        "guidance": [
+                                              "Some accuracy in completion of the task",
+                                              "Some level of coherence",
+                                              "Some clarity and structure in the text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2],
+                                        "guidance": [
+                                              "Little or no accuracy in completion of the task",
+                                              "Little or no coherence",
+                                              "Little or no clarity or structure in the text"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 90,
+                            "rule": "If the answer is too short (less than 90 words), mark question 5 out of 16 marks (lower scale)."
+                      }
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Wide range of accurate vocabulary",
+                                        "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Rare spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Range of mostly accurate vocabulary",
+                                        "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Some spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Limited or inaccurate vocabulary. Interference of other languages",
+                                        "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 8,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [6,7,8],
+                                        "guidance": [
+                                              "Wide range of accurate vocabulary",
+                                              "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Rare spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [3,4,5],
+                                        "guidance": [
+                                              "Range of mostly accurate vocabulary",
+                                              "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Some spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2],
+                                        "guidance": [
+                                              "Limited or inaccurate vocabulary. Interference of other languages",
+                                              "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Frequent spelling mistakes"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 90,
+                            "rule": "If the answer is too short (less than 90 words), mark question 5 out of 16 marks (lower scale)."
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 5",
+          "title": "Questão 5 (a) — answer in Portuguese",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Portuguese 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2025 Higher Level, p.10 — © State Examinations Commission.",
+    id: "por-2025-hl-b-5-b", topicId: "portuguese-2-4", conceptId: "escreva-portugues-cerca-150-palavras-onde",
+    section: "B", questionRef: "2025 HL Section B Q5(b)",
+    stem: "Observe as imagens com atenção e escolha uma: (a) ou (b) ou (c).",
+    questionText: "Escreva um texto em português, com cerca de 150 palavras, onde inclua os tópicos: • Que mensagem lhe transmite a imagem; • A sua opinião sobre a mensagem contida na imagem.",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Accurate completion of the task",
+                                        "High level of coherence",
+                                        "Clear and well-structured text"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Some accuracy in completion of the task",
+                                        "Some level of coherence",
+                                        "Some clarity and structure in the text"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Little or no accuracy in completion of the task",
+                                        "Little or no coherence",
+                                        "Little or no clarity or structure in the text"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 8,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [6,7,8],
+                                        "guidance": [
+                                              "Accurate completion of the task",
+                                              "High level of coherence",
+                                              "Clear and well-structured text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [3,4,5],
+                                        "guidance": [
+                                              "Some accuracy in completion of the task",
+                                              "Some level of coherence",
+                                              "Some clarity and structure in the text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2],
+                                        "guidance": [
+                                              "Little or no accuracy in completion of the task",
+                                              "Little or no coherence",
+                                              "Little or no clarity or structure in the text"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 90,
+                            "rule": "If the answer is too short (less than 90 words), mark question 5 out of 16 marks (lower scale)."
+                      }
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Wide range of accurate vocabulary",
+                                        "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Rare spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Range of mostly accurate vocabulary",
+                                        "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Some spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Limited or inaccurate vocabulary. Interference of other languages",
+                                        "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 8,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [6,7,8],
+                                        "guidance": [
+                                              "Wide range of accurate vocabulary",
+                                              "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Rare spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [3,4,5],
+                                        "guidance": [
+                                              "Range of mostly accurate vocabulary",
+                                              "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Some spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2],
+                                        "guidance": [
+                                              "Limited or inaccurate vocabulary. Interference of other languages",
+                                              "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Frequent spelling mistakes"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 90,
+                            "rule": "If the answer is too short (less than 90 words), mark question 5 out of 16 marks (lower scale)."
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 5",
+          "title": "Questão 5 (b) — answer in Portuguese",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Portuguese 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2025, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Portuguese 2025 Higher Level, p.10 — © State Examinations Commission.",
+    id: "por-2025-hl-b-5-c", topicId: "portuguese-2-4", conceptId: "escreva-portugues-cerca-150-palavras-onde",
+    section: "B", questionRef: "2025 HL Section B Q5(c)",
+    stem: "Observe as imagens com atenção e escolha uma: (a) ou (b) ou (c).",
+    questionText: "Escreva um texto em português, com cerca de 150 palavras, onde inclua os tópicos: • Que mensagem lhe transmite a imagem; • A sua opinião sobre a mensagem contida na imagem.",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Accurate completion of the task",
+                                        "High level of coherence",
+                                        "Clear and well-structured text"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Some accuracy in completion of the task",
+                                        "Some level of coherence",
+                                        "Some clarity and structure in the text"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Little or no accuracy in completion of the task",
+                                        "Little or no coherence",
+                                        "Little or no clarity or structure in the text"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 8,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [6,7,8],
+                                        "guidance": [
+                                              "Accurate completion of the task",
+                                              "High level of coherence",
+                                              "Clear and well-structured text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [3,4,5],
+                                        "guidance": [
+                                              "Some accuracy in completion of the task",
+                                              "Some level of coherence",
+                                              "Some clarity and structure in the text"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2],
+                                        "guidance": [
+                                              "Little or no accuracy in completion of the task",
+                                              "Little or no coherence",
+                                              "Little or no clarity or structure in the text"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 90,
+                            "rule": "If the answer is too short (less than 90 words), mark question 5 out of 16 marks (lower scale)."
+                      }
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Wide range of accurate vocabulary",
+                                        "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Rare spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Range of mostly accurate vocabulary",
+                                        "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Some spelling mistakes"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Limited or inaccurate vocabulary. Interference of other languages",
+                                        "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                        "Frequent spelling mistakes"
+                                  ]
+                            }
+                      ],
+                      "lowerScale": {
+                            "label": "Lower",
+                            "maxMarks": 8,
+                            "permittedMarks": [0,1,2,3,4,5,6,7,8],
+                            "bands": [
+                                  {
+                                        "label": "TOP",
+                                        "marks": [6,7,8],
+                                        "guidance": [
+                                              "Wide range of accurate vocabulary",
+                                              "Accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Rare spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "MIDDLE",
+                                        "marks": [3,4,5],
+                                        "guidance": [
+                                              "Range of mostly accurate vocabulary",
+                                              "Some accuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Some spelling mistakes"
+                                        ]
+                                  },
+                                  {
+                                        "label": "BOTTOM",
+                                        "marks": [0,1,2],
+                                        "guidance": [
+                                              "Limited or inaccurate vocabulary. Interference of other languages",
+                                              "General inaccuracy in: Verb tenses, agreements (number, gender, etc.)",
+                                              "Frequent spelling mistakes"
+                                        ]
+                                  }
+                            ],
+                            "contentCriteria": [],
+                            "wordsUnder": 90,
+                            "rule": "If the answer is too short (less than 90 words), mark question 5 out of 16 marks (lower scale)."
+                      }
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Portuguese, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTÃO 5",
+          "title": "Questão 5 (c) — answer in Portuguese",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Portuguese 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC018ALP000EV",

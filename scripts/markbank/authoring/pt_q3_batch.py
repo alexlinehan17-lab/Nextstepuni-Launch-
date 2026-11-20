@@ -17,9 +17,8 @@ A sitting's new cards are
   shaped wrongly by it): those ids are dropped from eu_all's output;
 * every listening ask (pt_specs.LISTENING), with the year's recording from
   data/portugueseAudio.json (CARD-STANDARD 10g);
-* the written tasks (pt_writing.py) — HELD for 2025 and 2026, whose schemes
-  print a word-count lower scale that waits on the shared lower-scale change
-  (coordinator ruling 19 Nov 2026): those asks stay open until it lands.
+* the written tasks (pt_writing.py); 2025 and 2026 print a word-count lower
+  scale, carded through the shared lower-scale change (63d1a42b2).
 """
 import collections
 import json
@@ -36,12 +35,13 @@ FILINGS = '/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/lang
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 # Sittings with no live card before this lane: a rewrite replaces them whole.
 ALL_NEW = {2026}
-# Written tasks held: 2025/2026 for the shared lower-scale change (see the
-# docstring). (2023, whose grids print their marks only in the marks cells,
-# is carded through the grid gate's cells form, ca408de7e; 2022, whose grids
-# print each band's range on a line of its own inside a wrapped bullet,
-# through its band-range-line form, d9cc8de6a.)
-WRITING_HELD = {2025, 2026}
+# Written tasks held: none. 2025/2026 print a word-count lower scale, carded
+# through the shared lower-scale change (63d1a42b2); 2026 Higher's Language
+# bands set their range columns inside a wrapped bullet, traced through the
+# grid gate's band-range form (two trailing range columns). 2023's grids
+# print their marks only in the marks cells (cells form, ca408de7e); 2022's
+# print each band's range on a line of its own (band-range form, d9cc8de6a).
+WRITING_HELD = set()
 # Sittings whose listening asks have no spec yet (pt_specs.LISTENING): they
 # stay open, and a write/add of the sitting carries no listening card.
 LISTENING_PENDING = {2022}
