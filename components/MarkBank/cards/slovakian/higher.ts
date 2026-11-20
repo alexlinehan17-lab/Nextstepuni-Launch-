@@ -4603,4 +4603,59 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2026 Higher Level — © State Examinations Commission.",
+    id: "slk-2026-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-100-150-slov-ktorom",
+    section: "II", questionRef: "2026 HL Section II Q1",
+    questionText: "Napíšte komentár (100 – 150 slov) v ktorom rozviniete tému: „Rastú aj riziká spojené s umelou inteligenciou.“",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Čím viac sa ľudia budú spoliehať na umelú inteligenciu, tým budú lenivejší a menej budú rozvíjať svoje schopnosti, najmä tvorivé myslenie.", marks: null, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme heads these points: “Riziká sú napríklad tieto:”. It reprints the task as: “Napíšte komentár (najmenej 100 slov) na tému:”." },
+    { id: "r-2", kind: "point", verbatim: "Cez umelú inteligenciu môžu sa zverejniť nejaké tajné informácie, ktoré súvisia s bezpečnosťou.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Pretože je umelá inteligencia pri riešení úloh omnoho rýchlejšia ako človek, mnoho ľudí môže prísť o prácu, lebo budú nahradení a aby sa mohli zamestnať, musia sa rekvalifikovať.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Pri vypracovávaní rôznych úloh pri štúdiu je možné, že žiaci a študenti budú využívať umelú inteligenciu a úlohy budú vydávať za svoje, môže to viesť ku klamstvu a podvádzaniu.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Umelá inteligencia vie napodobniť prejav a hlas človeka tak verne, že sa nedá rozoznať od originálu. Takto sa dajú vyrábať rôzne falošné vyhlásenia a šíriť dezinformácie. Je ťažké ich odhaliť.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Autonómne autá riadené umelou inteligenciou môžu byť technologicky napadnuté a potom môžu byť ovládané zvonka. Okrem toho sú veľmi drahé.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2026 Higher Level — © State Examinations Commission.",
+    id: "slk-2026-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-udska-inteligencia-fascinovana-pirovana-alebo",
+    section: "III", questionRef: "2026 HL Section III Q1",
+    questionText: "Napíšte esej (najmenej 300 slov) na jednu z dvoch nasledovných tém: Ľudská inteligencia je fascinovaná, inšpirovaná alebo ohrozená umelou inteligenciou?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints the instruction as “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part, and no criteria anywhere in this scheme.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2026 Higher Level — © State Examinations Commission.",
+    id: "slk-2026-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-ivot-znamena-pracova-nie-horolezec",
+    section: "III", questionRef: "2026 HL Section III Q2",
+    questionText: "Napíšte esej (najmenej 300 slov) na jednu z dvoch nasledovných tém: „Život znamená pracovať, nie mať. Horolezec šplhá na vrchol, aby ho dosiahol, nie aby sa ho zmocnil.“ Tomáš Janovic",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints the instruction as “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part, and no criteria anywhere in this scheme.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
 ];
