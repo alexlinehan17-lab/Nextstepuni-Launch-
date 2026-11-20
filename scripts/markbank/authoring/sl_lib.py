@@ -463,7 +463,10 @@ def quote(*sels, lead='The scheme prints'):
 RULE_WORDS = {
     'dutch': (r'Alle antwoorden', r'Nederlands'),
     'romanian': (r'Toate r\S{1,2}spunsurile', r'rom[âa]n'),
-    'bulgarian': (r'Всички отговори', r'българск'),
+    # Bulgarian 2011 prints the rule with spaces inside its words ("В сич ки
+    # отговори ... бъл гарски език.", rendered p2 at 300 dpi): matched, and
+    # quoted as printed.
+    'bulgarian': (r'В ?сич ?ки отговори', r'бъл ?гарск'),
     'croatian': (r'Svi odgovori', r'hrvatsk'),
     'danish': (r'Alle (?:svar|spørgsmål|opgaver)', r'dansk'),
     'estonian': (r'K[õo]ikidele', r'eesti'),
@@ -557,7 +560,8 @@ def rule_sentence(subject, doc):
 
 def printed_page(path, pdf_page):
     """The page number the booklet itself prints on PDF page `pdf_page`, where
-    it prints one: the number in the top or bottom margin that follows the
+    it prints one: the number in the top or bottom margin (within 100 points of
+    the edge; Bulgarian 2012/2014/2016 set it 97 points up) that follows the
     booklet's own offset from the PDF (most booklets 0; Dutch 2018's cover is
     unnumbered, so -1), voted over every page so a paragraph number set in the
     margin is not taken for it."""
@@ -570,7 +574,7 @@ def printed_page(path, pdf_page):
         for b in page.get_text('dict')['blocks']:
             for ln in b.get('lines', []):
                 t = ''.join(sp['text'] for sp in ln['spans']).strip()
-                if re.fullmatch(r'\d{1,2}', t) and (ln['bbox'][1] < 90 or ln['bbox'][1] > h - 90):
+                if re.fullmatch(r'\d{1,2}', t) and (ln['bbox'][1] < 100 or ln['bbox'][1] > h - 100):
                     nums.add(int(t))
         cands.append(nums)
     votes = collections.Counter(n - (i + 1) for i, nums in enumerate(cands) for n in nums)
