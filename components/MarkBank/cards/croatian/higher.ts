@@ -1429,6 +1429,84 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2020 Higher Level — © State Examinations Commission.",
+    id: "hrv-2020-hl-i-1", topicId: "croatian-0-0", conceptId: "objasnite-svojima-rije-ima-sljede-pojmove",
+    section: "I", questionRef: "2020 HL Section I Q1",
+    questionText: "Objasnite svojima riječima sljedeće pojmove:\na) cupka (2. odlomak)\nb) nelogično (6. odlomak)\nc) „vedro gleda na stvari“ (3. odlomak)\nd) „prebirati po uspomenama“ (5. odlomak)\ne) „poljuljati u uvjerenju“ (7. odlomak)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lagano poskakuje prilikom hoda, gotovo kao da pleše. Tako obično ulicom hodaju mala djeca.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    { id: "r-2", kind: "point", verbatim: "Ono što nije logično, ono što se opire zakonima logike.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Gledati na stvari s veselog i pozitivnog stajališta, biti dobre volje; suprotno od tmurno ili negativno gledati na stvari.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Ići kroz vlastite uspomene, prisjećati se stvari koju su nam se dogodile.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Narušiti naše uvjerenje, učiniti da ono više nije tako čvrsto kao što je bilo dotad.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2020 Higher Level — © State Examinations Commission.",
+    id: "hrv-2020-hl-ii-1", topicId: "croatian-1-0", conceptId: "jedanaestome-odlomku-autor-zaklju-uje-sre",
+    section: "II", questionRef: "2020 HL Section II Q1",
+    questionText: "U jedanaestome odlomku autor zaključuje: „Sreća nije stanje, nego je trenutak.“ Što mislite, što autor pod time misli? Slažete li se s njegovim zaključkom? Svoja razmišljanja iznesite u komentaru (minimalno 100 riječi).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Autor time želi reći da sreća nije glavni cilj kojemu bismo svi trebali težiti, jer sreća nije dugotrajno stanje, nego se ona nalazi u trenucima, kojima bismo se trebali znati prepustiti. U svakodnevnom životu nerijetko razmišljamo o prošlosti ili budućnosti te zbog njih brinemo. To je pogrešno jer ih ionako ne možemo promijeniti. Stoga bismo se trebali znati opustiti i prepustiti trenutku, odnosno sadašnjosti, jer je ona jedino što doista imamo. Zbog brzog života brojni trenuci nam neprimjetno iskliznu pa se često ne možemo ni sjetiti kako nam je dan prošao. I onda u takvim okolnostima tražimo sreću i čudimo se kako je ne uspijevamo pronaći. Sreća je znati uživati u trenutku, u svakom trenutku života.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme reprints the task as “U 11. odlomku autor zaključuje: „Sreća nije stanje, nego je trenutak.“”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2020 Higher Level — © State Examinations Commission.",
+    id: "hrv-2020-hl-iii-1", topicId: "croatian-1-1", conceptId: "vje-sre-nema-ivog-ovjeka-koji",
+    section: "III", questionRef: "2020 HL Section III Q1",
+    questionText: "Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema: „Vječna sreća! Nema živog čovjeka koji bi to mogao podnijeti; to bi bio pakao na zemlji.” – George Bernard Shaw",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" Under Part III the scheme reprints only the instruction and the two titles, with no answer, criteria or notes: “Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2020 Higher Level — © State Examinations Commission.",
+    id: "hrv-2020-hl-iii-2", topicId: "croatian-1-1", conceptId: "sre-putovanju-cilju",
+    section: "III", questionRef: "2020 HL Section III Q2",
+    questionText: "Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema: Sreća je u putovanju, a ne u cilju.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" Under Part III the scheme reprints only the instruction and the two titles, with no answer, criteria or notes: “Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC567ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2021 Higher Level — © State Examinations Commission.",
