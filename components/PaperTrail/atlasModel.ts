@@ -190,7 +190,13 @@ export function atlasLinkForCard(cardId: string): { href: string; heading: Model
   if (!ask || !ask.topics.length || !ask.n) return null;
   const heading = ask.topics[0];
   const p = new URLSearchParams({ view: 'innovation-zone', tool: 'paper-trail', subject: ask.atlasSubjectId, topic: heading.id, year: String(ask.year), level: ask.level, q: ask.n });
-  return { href: `/?${p.toString()}`, heading, question: `${ask.year} ${LEVEL_WORD[ask.level] ?? ask.level} Question ${ask.n}` };
+  // Some Atlas lists number a paper's questions or parts in their own way (Agricultural Science 1001, 1002…;
+  // Russian c1-1-i): name the printed question only when the Atlas number is one, the card shows its own citation.
+  // A 2010-2019 Geography booklet files Part One as 1000 + its printed number (topics.ts questionLabel).
+  const geographyPartOne = /^LC005[AG]LP000(EV|IV)\.pdf$/.test(ask.fileid) && Number(ask.n) > 1000 ? Number(ask.n) - 1000 : 0;
+  const printed = geographyPartOne ? ` Part One Question ${geographyPartOne}`
+    : /^\d{1,2}[a-z]?$|^[A-Z]{1,3}\d{0,2}$|^S\dQ\d{1,2}$|^\d{1,2}[A-Z]?\([a-z]+\)/.test(ask.n) ? ` Question ${ask.n}` : '';
+  return { href: `/?${p.toString()}`, heading, question: `${ask.year} ${LEVEL_WORD[ask.level] ?? ask.level}${printed}` };
 }
 
 /** A link that opens the Mark Bank on exactly these cards (read once at boot by markBankDeepLink.ts). */

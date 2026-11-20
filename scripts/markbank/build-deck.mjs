@@ -800,6 +800,17 @@ function spanishGridFault(c, scheme) {
       if (k.bands || allowed.length !== items + 1 || allowed.some((m, i) => m !== i * rate)) return `${k.label} is not placed on every count from 0 to ${items}`;
       continue;
     }
+    // A Music band line may print a half-mark top (2018 HL Composing Q4's bass
+    // quality "8 – 9.5", beside 0.5 x 21 = 10.5): every whole mark below it and
+    // the printed top. Every other criterion is the whole ladder 0..max.
+    const halfTop = SUBJECT_ID === 'music' && !Number.isInteger(k.maxMarks) && Number.isInteger(k.maxMarks * 2);
+    if (halfTop) {
+      const ladder = [...Array(Math.floor(k.maxMarks) + 1).keys(), k.maxMarks];
+      if (allowed.length !== ladder.length || allowed.some((m, i) => m !== ladder[i])) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
+      const marks = (k.bands ?? []).flatMap(b => b.marks).sort((a, b) => a - b);
+      if (marks.length !== ladder.length || marks.some((m, i) => m !== ladder[i])) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
+      continue;
+    }
     if (allowed.length !== k.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
     if (k.bands) {
       const marks = k.bands.flatMap(b => b.marks).sort((a, b) => a - b);
@@ -1111,7 +1122,10 @@ function brokenGlyphs(text) {
   if (DOUBLED_MATHS_DIGIT.test(text)) {
     return 'a doubled maths digit whose value the text layer has lost — the font mis-maps some digits, so the pair cannot be collapsed';
   }
-  const hits = (text.match(BROKEN) ?? []).filter(ch => !REAL.test(ch));
+  // A Music scheme prints the forte dynamic as "ƒ" (U+0192), and its text
+  // layer carries it so ("sudden ƒ", 2022 OL Q3(c)): a sign of the subject,
+  // not a broken glyph. Music only; every other deck is checked as before.
+  const hits = (text.match(BROKEN) ?? []).filter(ch => !REAL.test(ch) && !(SUBJECT_ID === 'music' && ch === 'ƒ'));
   if (!hits.length) return null;
   const uniq = [...new Set(hits)];
   return `${hits.length} unreadable glyph(s) from a broken font subset, e.g. `
