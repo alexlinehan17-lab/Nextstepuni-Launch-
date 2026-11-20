@@ -6106,6 +6106,164 @@
   }
  },
  {
+  "id": "bul-2022-hl-i-2",
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "year": 2022,
+  "section": "I",
+  "topicId": "bulgarian-0-1",
+  "conceptId": "ask",
+  "questionRef": "2022 HL Section I Q2",
+  "questionText": "„Но всеки прогрес има цена.” Според автора, прогрес ли е за обществото работата онлайн и каква е цената на този прогрес?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Според автора, „трудът онлайн е по‐производителен” и допринася за икономическия прогрес на обществото. В същото време обаче, трудът онлайн изостря социалните неравенства: някои имат удобства и средства за работа на дистанция, други не; някои са подготвени и компетентни, други не; някои са способни сами да планират и да организират работата си, на други им трябва някой „да стои над главата им”; много професии ще изчезнат, други професии ще просперират... Някои групи хора ще платят цената на този прогрес.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Bulgarian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Bulgarian 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
+  }
+ },
+ {
+  "id": "bul-2022-hl-i-5",
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "year": 2022,
+  "section": "I",
+  "topicId": "bulgarian-0-1",
+  "conceptId": "ask",
+  "questionRef": "2022 HL Section I Q5",
+  "questionText": "„Много вероятно е животът да мине в хибриден режим.” Защо „в хибриден режим”? Обяснете за какво става въпрос?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Това означава, че сме в период на преход, който в края на краищата ще промени начина ни на общуване и целия ни живот. Установяват се преходни, хибридни форми на социален живот и комуникация, смесица от стари навици и неизбежни иновации. В момента много неща в обществото и в нашето ежедневие се променят и ще продължават да се променят. Всеки трябва да се адаптира към новите условия и ще бъде трудно за всички.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Bulgarian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Bulgarian 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
+  }
+ },
+ {
+  "id": "bul-2022-hl-ii-1",
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "year": 2022,
+  "section": "II",
+  "topicId": "bulgarian-1-1",
+  "conceptId": "ask",
+  "questionRef": "2022 HL Section II Q1",
+  "questionText": "Напишете съчинение (минимум 300 думи) на една от следните теми: „Изглежда емоцията успява да зарази от разстояние.”",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Яснота и точност на израза – кандидатът разбира добре въпросите и знае как да отговори ясно и точно",
+    "marks": null,
+    "contextNote": "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\" The scheme heads this part “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” and prints, with no marks or percentages beside the criteria: “При оценяването на отговорите от първите две части се прилагат следните критерии:”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Свързаност и непротиворечивост на отговорите – кандидатът използва откъси от текста, които са адекватни на мисълта му, идеите му са непротиворечиви и композицията на съчинението следва определена логика",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Езикова компетентност – кандидатът умее свободно да изразява идеите си, езикът на изказването му е ясен и точен",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Конвенционални умения – кандидатът владее и прилага граматичната норма и правописа на съвременния български книжовен език",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "bul-2022-hl-ii-2",
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "year": 2022,
+  "section": "II",
+  "topicId": "bulgarian-1-1",
+  "conceptId": "ask",
+  "questionRef": "2022 HL Section II Q2",
+  "questionText": "Напишете съчинение (минимум 300 думи) на една от следните теми: Какво прави приятелството истинско.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Яснота и точност на израза – кандидатът разбира добре въпросите и знае как да отговори ясно и точно",
+    "marks": null,
+    "contextNote": "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\" The scheme heads this part “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” and prints, with no marks or percentages beside the criteria: “При оценяването на отговорите от първите две части се прилагат следните критерии:”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Свързаност и непротиворечивост на отговорите – кандидатът използва откъси от текста, които са адекватни на мисълта му, идеите му са непротиворечиви и композицията на съчинението следва определена логика",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Езикова компетентност – кандидатът умее свободно да изразява идеите си, езикът на изказването му е ясен и точен",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Конвенционални умения – кандидатът владее и прилага граматичната норма и правописа на съвременния български книжовен език",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "bul-2023-hl-i-1-а",
   "subjectId": "bulgarian",
   "level": "higher",
