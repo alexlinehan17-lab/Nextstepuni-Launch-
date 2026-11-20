@@ -565,6 +565,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2011 Higher Level — © State Examinations Commission.",
+    id: "est-2011-hl-ii-1", topicId: "estonian-1-0", conceptId: "stereotuupidel-nimelt-uks-halb-omadus-need",
+    section: "II", questionRef: "2011 HL Section II Q1",
+    questionText: "„Stereotüüpidel on nimelt üks halb omadus – need piiravad meid ja takistavad meil mõista nii oma kultuuri kui ka teisi kultuure ning need häirivad ka kultuuridevahelist kommunikatsiooni“ (11. lõik) Kuidas teeb eelarvamustevaba suhtumine teistesse inimestesse nende mõistmise ja nendega suhtlemise lihtsamaks? Kirjuta umbes 100sõnaline kommentaar oma seisukoha põhjenduseks.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 100sõnaline ladus kommentaar, tõestamaks teksti sisust arusaamist.", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Eelarvamustevaba suhtumine tähendab teiste aktsepteerimist sellistena nagu nad on, siirust, mõistmist, tähelepanelikkust ning inimlikkust suhtlemisel, sõbralikku ja lugupidavat lähenemist teistele ning vastastikust austust. Hinnanguvaba suhtumine teistesse ning avatus kriitikale teeb meist paremad suhtlejad ja kuulajad”; “Vabadus eelarvamustest muudab meid igapäevases suhtluses rohkem teiste inimestega arvetavaks ning suurendab empaatiat ja sallivust (kaaskodanikud, erivajadustega inimesed, erinevad vanuse-, rahvus-, rassi- ja soogrupid, erinevad sotsiaalsed, seksuaalsed ning kultuurihuvid jne)”; “Konfliktide ennetamine ja vägivallatus – eelarvamustevaba lähenemine vähendab kiusamist, vägivalda, ahistamist, diskrimineerimist”; “Positiivne suhtumine ja hea suhtlemisoskus aitab ümbritsevat paremini analüüsida, seda paremaks muuta, olla säästlikum, väärtustada oma kultuuri ja näidata üles huvi teiste kultuuride vastu”. The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. ÜLESANNE:",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2011 Higher Level — © State Examinations Commission.",
+    id: "est-2011-hl-iii-1", topicId: "estonian-1-1", conceptId: "enamik-inimesi-just-nii-onnelikud-kui",
+    section: "III", questionRef: "2011 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. „Enamik inimesi on just nii õnnelikud, kui õnnelikud nad on otsustanud olla“. (Abraham Lincoln (1809–1865), Ameerika Ühendriikide 16. president)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2011 Higher Level — © State Examinations Commission.",
+    id: "est-2011-hl-iii-2", topicId: "estonian-1-1", conceptId: "vordlemine-osa-meie-koigi-igapaevast",
+    section: "III", questionRef: "2011 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Võrdlemine on osa meie kõigi igapäevast",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2012, level: "higher",
     paperFileid: "LC552ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2012 Higher Level — © State Examinations Commission.",
