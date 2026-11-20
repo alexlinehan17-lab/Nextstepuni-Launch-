@@ -548,4 +548,62 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC570ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2026 Higher Level — © State Examinations Commission.",
+    id: "ukr-2026-hl-ii-1", topicId: "ukrainian-1-0", conceptId: "100-150",
+    section: "II", questionRef: "2026 HL Section II Q1",
+    questionText: "Напишіть коментар (100-150 слів) на тему: «І жодна машина не зможе замінити цієї магії людяності».",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "багатогранність і непередбачуваність людської природи;", marks: null, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme heads its points: “У відповіді можна розглянути магію людяності крізь призму деяких із запропонованих нижче аспектів:”." },
+    { id: "r-2", kind: "point", verbatim: "спонтанність та інтуїція;", marks: null },
+    { id: "r-3", kind: "point", verbatim: "схильність до співчуття і співпереживання;", marks: null },
+    { id: "r-4", kind: "point", verbatim: "роль культури, традицій та етики;", marks: null },
+    { id: "r-5", kind: "point", verbatim: "феномен людської творчості;", marks: null },
+    { id: "r-6", kind: "point", verbatim: "здатність любити й відчувати по-справжньому;", marks: null },
+    { id: "r-7", kind: "point", verbatim: "наявність життєвого досвіду та самосвідомості;", marks: null },
+    { id: "r-8", kind: "point", verbatim: "уміння імпровізувати й ухвалювати нестандартні рішення;", marks: null },
+    { id: "r-9", kind: "point", verbatim: "потреба в соціалізації.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ЧАСТИНА II",
+          "title": "Reading text — answer in Ukrainian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Ukrainian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC570ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2026 Higher Level — © State Examinations Commission.",
+    id: "ukr-2026-hl-iii-1", topicId: "ukrainian-1-0", conceptId: "ask",
+    section: "III", questionRef: "2026 HL Section III Q1",
+    questionText: "Напишіть есе (мінімум 300 слів) на одну із запропонованих нижче тем: Технології зближують нас чи віддаляють одне від одного?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme reprints the instruction and the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC570ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2026 Higher Level — © State Examinations Commission.",
+    id: "ukr-2026-hl-iii-2", topicId: "ukrainian-1-0", conceptId: "ask",
+    section: "III", questionRef: "2026 HL Section III Q2",
+    questionText: "Напишіть есе (мінімум 300 слів) на одну із запропонованих нижче тем: «Людина без вади — не людина. Кумедність поведінки, різноманітні дивацтва — це ж саме те, що й робить нас неповторними. І прекрасними» (Андрій Любка).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme reprints the instruction and the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
 ];

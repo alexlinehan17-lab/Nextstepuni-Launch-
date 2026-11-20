@@ -813,11 +813,11 @@
     "refsHash": "2f5d1d43deb026bd"
   },
   "ukrainian": {
-    "cards": 23,
-    "contentHash": "28b1d0356d11d899",
+    "cards": 26,
+    "contentHash": "9d6699d3b374302b",
     "coveragePct": 100.0,
-    "covered": 23,
-    "excluded": 3,
+    "covered": 26,
+    "excluded": 0,
     "leaves": 26,
     "open": 0,
     "orphans": 0,
@@ -825,6 +825,6 @@
       "count": 2,
       "hash": "8cb689ef44820e29"
     },
-    "refsHash": "a05f68a44af5364c"
+    "refsHash": "d0ba358099cf1735"
   }
 }
