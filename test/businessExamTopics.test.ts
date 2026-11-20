@@ -249,7 +249,8 @@ describe('Business exam-topic registry', () => {
   });
 
   it('exposes every official Business edition and top-level question through 2026', () => {
-    const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'business');
+    // June's editions; the carded deferred booklets ("…-deferred.pdf") are counted below.
+    const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'business' && !paper.fileid.endsWith('-deferred.pdf'));
     expect(businessEvidence.summary).toMatchObject({
       localPaperDocuments: 96,
       localPhysicalCards: 1442,
@@ -268,6 +269,14 @@ describe('Business exam-topic registry', () => {
       }
       expect(paper.q.map(question => question.n)).toEqual(
         expectedQuestionNumbers(paper.level, paper.year, paper.paperKey),
+      );
+    }
+    // The SEC's deferred sittings, carded (business_deferred.py): each booklet its own paper, numbered as June's.
+    const deferred = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'business' && paper.fileid.endsWith('-deferred.pdf'));
+    expect(deferred.map(paper => `${paper.year} ${paper.level} ${paper.fileid}`).sort()).toEqual(DEFERRED_BOOKLETS);
+    for (const paper of deferred) {
+      expect(paper.q.map(question => question.n)).toEqual(
+        expectedQuestionNumbers(paper.level as 'higher' | 'ordinary', paper.year, paper.paperKey),
       );
     }
   });
@@ -363,7 +372,8 @@ describe('Business exam-topic registry', () => {
   });
 
   it('keeps every available scheme sidecar valid and falls back honestly where absent', () => {
-    const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'business');
+    // June's editions; the deferred booklets open from paper-only anchors (business_deferred.py).
+    const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'business' && !paper.fileid.endsWith('-deferred.pdf'));
     let schemeMaps = 0;
     let paperOnlyVariants = 0;
     for (const paper of papers) {
@@ -389,9 +399,10 @@ describe('Business exam-topic registry', () => {
     expect(paperOnlyVariants).toBe(14);
   });
 
-  it('surfaces all 721 entitled questions through the 46 headings of the one list', () => {
+  it('surfaces all 721 entitled questions, and the carded deferred sittings\', through the 46 headings of the one list', () => {
+    // + the carded deferred sittings' printed questions (2022 Higher 21, 2022 Ordinary 24, 2023 Higher 21).
     expect(subjectAtlasStats('business')).toMatchObject({
-      questions: 721,
+      questions: 721 + 21 + 24 + 21,
       topics: 46,
       yearMin: 2010,
       yearMax: 2026,
@@ -406,6 +417,12 @@ describe('Business exam-topic registry', () => {
     )).toBe(5708);
   });
 });
+
+const DEFERRED_BOOKLETS = [
+  '2022 higher LC033ALP032EV-deferred.pdf', '2022 higher LC033ALP041EV-deferred.pdf',
+  '2022 ordinary LC033GLP032EV-deferred.pdf', '2022 ordinary LC033GLP033EV-deferred.pdf',
+  '2023 higher LC033ALP032EV-deferred.pdf', '2023 higher LC033ALP041EV-deferred.pdf',
+];
 
 function expectedQuestionNumbers(
   level: 'higher' | 'ordinary',

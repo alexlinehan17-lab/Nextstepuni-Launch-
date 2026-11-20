@@ -200,6 +200,7 @@ import PE_FROZEN_MANIFEST from '../scripts/markbank/authored/physical-education.
 import businessOriginals from '../scripts/markbank/authored/business.json';
 import businessReviewed from '../components/MarkBank/cards/business/rubric-authored.json';
 import businessRoutePools from '../components/MarkBank/cards/business/route-pools.json';
+import businessDeferred from '../components/MarkBank/cards/business/deferred-authored.json';
 import { expandBusinessRoutePools } from '../components/MarkBank/cards/business/routes.mjs';
 import agriculturalReview from '../scripts/markbank/authored/agricultural-science-reviewed-tasks.json';
 import biologyReview from '../scripts/markbank/authored/biology-review-audit.json';
@@ -1576,9 +1577,11 @@ const peAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('pe-'
 // routes that did not exist before are tracked as explicit additions on top;
 // corrected legacy cards keep their IDs and stay inside the frozen hash.
 const businessOriginalIds = new Set(businessOriginals.map(card => card.id));
+// The deferred sittings' cards (deferred-authored.json) are additions too: new ids naming their sitting.
 const businessAdditionIds = new Set([
   ...businessReviewed.cards,
   ...expandBusinessRoutePools(businessRoutePools.pools),
+  ...businessDeferred.cards,
 ].map(card => card.id).filter(id => !businessOriginalIds.has(id)));
 // Engineering lane (2026-11-04 on): the 554 pre-lane cards stay frozen in the
 // deck pins; each sitting's added cards are listed in the lane's ledger
@@ -3437,15 +3440,16 @@ describe('Mark Bank card preservation', () => {
      * and the one differently marked 2013 route pool. Every
      * addition is a new, unique ID at its own level; none reuses an original
      * ID. */
-    expect(businessAdditionIds.size).toBe(1382);
+    // + the deferred sittings: 2022 Higher 55, 2022 Ordinary 68, 2023 Higher 52.
+    expect(businessAdditionIds.size).toBe(1382 + 55 + 68 + 52);
     const higher = BUSINESS_HIGHER.map(card => card.id);
     const ordinary = BUSINESS_ORDINARY.map(card => card.id);
     expect(new Set(higher).size).toBe(higher.length);
     expect(new Set(ordinary).size).toBe(ordinary.length);
     const higherAdditions = BUSINESS_HIGHER.filter(card => businessAdditionIds.has(card.id));
     const ordinaryAdditions = BUSINESS_ORDINARY.filter(card => businessAdditionIds.has(card.id));
-    expect(higherAdditions).toHaveLength(605);
-    expect(ordinaryAdditions).toHaveLength(777);
+    expect(higherAdditions).toHaveLength(605 + 55 + 52);
+    expect(ordinaryAdditions).toHaveLength(777 + 68);
     expect(higherAdditions.length + ordinaryAdditions.length).toBe(businessAdditionIds.size);
     for (const id of businessAdditionIds) {
       expect(businessOriginalIds.has(id), id).toBe(false);
@@ -3950,7 +3954,7 @@ describe('Mark Bank card preservation', () => {
     expect(june(BIO_ORDINARY)).toHaveLength(2835);
     expect(idHash(june(BIO_ORDINARY).map(card => card.id))).toBe('4f0b15fd23902b4da3b0f8948e85519be7c02b8e567f42aeea5cb6aed366d95e');
     // The deferred sittings, carded one by one: [Higher, Ordinary].
-    expect([deferred(BIO_HIGHER).length, deferred(BIO_ORDINARY).length]).toEqual([182, 182]);
+    expect([deferred(BIO_HIGHER).length, deferred(BIO_ORDINARY).length]).toEqual([182 + 179 + 165 + 161, 182 + 188]);
     expect(biologyAdditionIds.size).toBe(2705 + 2835 - (673 - 1) - (686 - 1)
       + deferred(BIO_HIGHER).length + deferred(BIO_ORDINARY).length);
     // The sittings before 2021 had no Biology cards: everything they carry is new.
@@ -4114,7 +4118,9 @@ describe('Mark Bank card preservation', () => {
      * each reviewed page by page against its scheme. Every addition is a new, unique ID that never reuses an
      * original ID; every reviewed sitting's shipped IDs are still present,
      * live or (a choose-N combination card) through a progress alias. */
-    expect(geographyAdditionIds.size).toBe(3492);
+    // + the carded deferred sittings, all new ids (2022 Higher 120, 2023 Higher 124, 2024 Higher 124,
+    // 2025 Higher 120).
+    expect(geographyAdditionIds.size).toBe(3492 + 120 + 124 + 124 + 120);
     const all = [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY];
     const ids = all.map(card => card.id);
     expect(new Set(ids).size).toBe(ids.length);

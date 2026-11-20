@@ -82,6 +82,10 @@ const IRISH_DEFERRED_PAPERS: string[] = ['2025|LC001ALP100IV-deferred.pdf', '202
 const BIOLOGY_DEFERRED_PAPERS: string[] = [
   '2022|LC025ALP038EV-deferred.pdf', '2022|LC025ALP040EV-deferred.pdf',
   '2022|LC025GLP038EV-deferred.pdf', '2022|LC025GLP040EV-deferred.pdf',
+  '2023|LC025ALP038EV-deferred.pdf', '2023|LC025ALP040EV-deferred.pdf',
+  '2023|LC025GLP038EV-deferred.pdf', '2023|LC025GLP040EV-deferred.pdf',
+  '2024|LC025ALP038EV-deferred.pdf', '2024|LC025ALP040EV-deferred.pdf',
+  '2025|LC025ALP038EV-deferred.pdf', '2025|LC025ALP040EV-deferred.pdf',
 ];
 const ENGLISH_DEFERRED_PAPERS: string[] = ['2025|LC002ALP100EV-deferred.pdf', '2025|LC002ALP200EV-deferred.pdf',
   '2024|LC002ALP100EV-deferred.pdf', '2024|LC002ALP200EV-deferred.pdf',
@@ -118,6 +122,13 @@ const ADMITTED_DEFERRED = new Set([
   // Maths: both papers at both levels of every deferred sitting, 2022-2025.
   ...[2022, 2023, 2024, 2025].flatMap(year => ['ALP100', 'ALP200', 'GLP100', 'GLP200']
     .map(booklet => `mathematics|${year}|LC003${booklet}EV-deferred.pdf`)),
+  // Geography: Part One and Part Two of each carded Higher deferred sitting.
+  ...[2022, 2023, 2024, 2025].flatMap(year => ['ALP042', 'ALP043']
+    .map(booklet => `geography|${year}|LC005${booklet}EV-deferred.pdf`)),
+  // Business: both booklets of each carded deferred sitting (2022 Higher, 2022 Ordinary, 2023 Higher).
+  'business|2022|LC033ALP032EV-deferred.pdf', 'business|2022|LC033ALP041EV-deferred.pdf',
+  'business|2022|LC033GLP032EV-deferred.pdf', 'business|2022|LC033GLP033EV-deferred.pdf',
+  'business|2023|LC033ALP032EV-deferred.pdf', 'business|2023|LC033ALP041EV-deferred.pdf',
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {
