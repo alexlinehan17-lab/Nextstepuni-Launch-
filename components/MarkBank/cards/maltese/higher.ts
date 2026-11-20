@@ -42,7 +42,7 @@ export const CARDS: SecCard[] = [
     questionText: "Għaliex l-awtur jitkellem fit-tul dwar il-bankijiet antiki tal-primarja?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "B’dan il-mod il-kittieb qiegħed jispjega x’inhuma l-fruntieri kif ukoll juri l-importanza li l- bniedem itihom minn ċkunitu. / Iġibna konxji wkoll li aħna l-ħin kollu rridu nokkupaw spazju għalina; sens ta territorju.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "B’dan il-mod il-kittieb qiegħed jispjega x’inhuma l-fruntieri kif ukoll juri l-importanza li l- bniedem itihom minn ċkunitu. / Iġibna konxji wkoll li aħna l-ħin kollu rridu nokkupaw spazju għalina; sens ta territorju.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -53,7 +53,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\""
     },
   } as SecCard,
   {
@@ -66,7 +66,7 @@ export const CARDS: SecCard[] = [
     questionText: "Iddeskrivi l-attitudni tal-awtur lejn il-mezzi tax-xandir. Ikkwota l-frażi li turik din l-attitudni.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Il-mezzi tax-xandir qegħdin ‘irewħu’ biex iqajmu paniku, għalhekk l-awtur għandu attitudni negattiva u jara li l-mezzi tax-xandir għandhom influwenza qawwija fuq min isegwihom.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "Il-mezzi tax-xandir qegħdin ‘irewħu’ biex iqajmu paniku, għalhekk l-awtur għandu attitudni negattiva u jara li l-mezzi tax-xandir għandhom influwenza qawwija fuq min isegwihom.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -77,7 +77,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\""
     },
   } as SecCard,
   {
@@ -90,7 +90,7 @@ export const CARDS: SecCard[] = [
     questionText: "Iddiskuti l-importanza tal-aħħar sentenza ta’ dan l-artiklu fid-dawl tal-ħsieb ewlieni tal-silta kollha: U allura l-fruntiera tkompli tiċċaqlaq.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "F’din is-sentenza weħidha fi tmiem l-artiklu l-awtur jenfasizza l-għan ewlieni tal-artiklu; huwa jrid juri li l-fruntieri fl-imħuħ tan-nies jissawwru miċ-ċirkostanzi jew il-kuntesti u li dawn qegħdin hemm biss biex joħolqu sens ta’ firda bejn il-bnedmin li jħobbu jiddistingwu bejn ‘aħna’ u ‘huma’.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "F’din is-sentenza weħidha fi tmiem l-artiklu l-awtur jenfasizza l-għan ewlieni tal-artiklu; huwa jrid juri li l-fruntieri fl-imħuħ tan-nies jissawwru miċ-ċirkostanzi jew il-kuntesti u li dawn qegħdin hemm biss biex joħolqu sens ta’ firda bejn il-bnedmin li jħobbu jiddistingwu bejn ‘aħna’ u ‘huma’.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -101,7 +101,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\""
     },
   } as SecCard,
   {
@@ -333,7 +333,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira tal-espressjonijet li ġejjin: ngħożżhom",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ngħożżhom : inħobbhom u nipprova nsegwihom", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "ngħożżhom : inħobbhom u nipprova nsegwihom", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -344,7 +344,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\""
     },
   } as SecCard,
   {
@@ -357,7 +357,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira tal-espressjonijet li ġejjin: qatt ma waqgħet id-dinja",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "qatt ma waqgħet id-dinja: qatt ma jkun ġara xejn gravi", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "qatt ma waqgħet id-dinja: qatt ma jkun ġara xejn gravi", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -368,7 +368,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\""
     },
   } as SecCard,
   {
@@ -381,7 +381,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira tal-espressjonijet li ġejjin: tlaqqa’",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tlaqqa’: tressaq lin-nies qrib ta’ xulxin", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "tlaqqa’: tressaq lin-nies qrib ta’ xulxin", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -392,7 +392,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\""
     },
   } as SecCard,
   {
@@ -405,7 +405,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira tal-espressjonijet li ġejjin: bi ħsieb",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "bi ħsieb: bi pjan jew b’intenzjoni", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "bi ħsieb: bi pjan jew b’intenzjoni", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -416,7 +416,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\""
     },
   } as SecCard,
   {
@@ -429,7 +429,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira tal-espressjonijet li ġejjin: nbiegħdu",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "nbiegħdu: inżommu xi ħaġa ’l bogħod jew mhux fil-qrib", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "nbiegħdu: inżommu xi ħaġa ’l bogħod jew mhux fil-qrib", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -440,7 +440,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\""
     },
   } as SecCard,
   {
@@ -885,7 +885,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: qraba",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "qraba: membri tal‐familja", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "qraba: membri tal‐familja", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -897,7 +897,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Maltese 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -910,7 +910,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: xhieda ta’ dan",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "xhieda ta’ dan: din hija l‐evidenza/prova ta’ dan/li wieħed jista’ josserva", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "xhieda ta’ dan: din hija l‐evidenza/prova ta’ dan/li wieħed jista’ josserva", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -922,7 +922,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Maltese 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -935,7 +935,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: stħarriġ",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "stħarriġ: tiftix permezz ta’ mistoqsijiet magħmula lil numru ta’ nies/eżerċizzju li bih tinġabar informazzjoni min‐nies permezz ta’ mistoqsijiet", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "stħarriġ: tiftix permezz ta’ mistoqsijiet magħmula lil numru ta’ nies/eżerċizzju li bih tinġabar informazzjoni min‐nies permezz ta’ mistoqsijiet", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -947,7 +947,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Maltese 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -960,7 +960,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: għadna mjassra.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "għadna mjassra: aħna għadna lsiera/għadna niddependu minn", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "għadna mjassra: aħna għadna lsiera/għadna niddependu minn", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -972,7 +972,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Maltese 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -985,7 +985,7 @@ export const CARDS: SecCard[] = [
     questionText: "X’tinnota l-awtriċi dwar l-istatistika marbuta mal-ammont ta’ inċidenti fuq it-toroq Maltin u n- numru ta’ vetturi fit-toroq?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hija tinnota li n‐numru ta’ inċidenti huwa iktar mid‐doppju ta’ dak li kien fl‐2021 minkejja li s‐sena 2022 kienet għadha ma ntemmitx. Fl‐istess ħin, in‐numru ta’ vetturi fit‐toroq xorta qed ikompli jiżdied b’rata qawwija. Dan seħħ wara pandemija li wriet kemm imwiet jistgħu jkunu evitati.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "Hija tinnota li n‐numru ta’ inċidenti huwa iktar mid‐doppju ta’ dak li kien fl‐2021 minkejja li s‐sena 2022 kienet għadha ma ntemmitx. Fl‐istess ħin, in‐numru ta’ vetturi fit‐toroq xorta qed ikompli jiżdied b’rata qawwija. Dan seħħ wara pandemija li wriet kemm imwiet jistgħu jkunu evitati.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -997,7 +997,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Maltese 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1010,7 +1010,7 @@ export const CARDS: SecCard[] = [
     questionText: "Minbarra l-imwiet ikkawżati minn traġedji fit-toroq, kif qed twassal għal aktar imwiet il- problema tat-traffiku?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Malta għandha l‐agħar kwalità ta’ arja fl‐Ewropa u dan qed iwassal għal ħafna tipi ta’ mard u kundizzjonijiet li eventwalment iwasslu sal‐mewt; infatti, l‐esperti tas‐saħħa jikkalkulaw li din l‐arja maħmuġa twassal għal madwar 500 mewta fis‐ sena.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "Malta għandha l‐agħar kwalità ta’ arja fl‐Ewropa u dan qed iwassal għal ħafna tipi ta’ mard u kundizzjonijiet li eventwalment iwasslu sal‐mewt; infatti, l‐esperti tas‐saħħa jikkalkulaw li din l‐arja maħmuġa twassal għal madwar 500 mewta fis‐ sena.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1022,7 +1022,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Maltese 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1035,7 +1035,7 @@ export const CARDS: SecCard[] = [
     questionText: "Semmi tliet raġunijiet għalfejn il-biċċa l-kbira tal-Maltin huma mħassba.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "inkwetati dwar tal‐impatt tagħhom fuq problemi bħall‐ażma, il‐mard fil‐pulmun u l‐ mard tal‐qalb. konxji mill‐fatt li qegħdin jiġu injorati fit‐tħassib u l‐inkwiet tagħhom. (Stħarriġ tal‐ Ewrobarometru juri li 64% tal‐Maltin iħossu li l‐awtoritajiet mhumiex qegħdin jagħmlu biżżejjed biex inaqqsu t‐tniġġis fl‐arja.) il‐baġit ħasseb lin‐nies għax il‐problema tat‐traffiku ma ġietx indirizzata in‐numri ta’ karrozzi ġodda ta’ kuljum in‐nies qed ikollhom iħallsu anke b’mod finanzjarju. (Il‐konsegwenzi tal‐konġestjoni, l‐ istorbju u l‐arja ħażina jiswewna, skont l‐Ewrobarometru, erba’ mitt miljun ewro fis‐ sena ‐ 3.6 % tal‐PGD. )", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "inkwetati dwar tal‐impatt tagħhom fuq problemi bħall‐ażma, il‐mard fil‐pulmun u l‐ mard tal‐qalb. konxji mill‐fatt li qegħdin jiġu injorati fit‐tħassib u l‐inkwiet tagħhom. (Stħarriġ tal‐ Ewrobarometru juri li 64% tal‐Maltin iħossu li l‐awtoritajiet mhumiex qegħdin jagħmlu biżżejjed biex inaqqsu t‐tniġġis fl‐arja.) il‐baġit ħasseb lin‐nies għax il‐problema tat‐traffiku ma ġietx indirizzata in‐numri ta’ karrozzi ġodda ta’ kuljum in‐nies qed ikollhom iħallsu anke b’mod finanzjarju. (Il‐konsegwenzi tal‐konġestjoni, l‐ istorbju u l‐arja ħażina jiswewna, skont l‐Ewrobarometru, erba’ mitt miljun ewro fis‐ sena ‐ 3.6 % tal‐PGD. )", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1047,7 +1047,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Maltese 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1185,7 +1185,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: mdorrija",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "mdorrija : kellha l‐abitudni, dak li dejjem tagħmel l‐istess", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "mdorrija : kellha l‐abitudni, dak li dejjem tagħmel l‐istess", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1197,7 +1197,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Maltese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1210,7 +1210,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: tħażżiż",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tħażżiż: tpenġija ħafifa bil‐lapes", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "tħażżiż: tpenġija ħafifa bil‐lapes", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1222,7 +1222,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Maltese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1235,7 +1235,7 @@ export const CARDS: SecCard[] = [
     questionText: "Rachel Bartolo kif irnexxielha tkun kreattiva u sostenibbli fl-istess ħin?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rachel Bartolo kif irnexxiela tkun kreattiva u sostenibbli fl‐istess ħin? Hija kapaċi toħloq disinji oriġinali imma fl‐istess ħin tispira ruħha minn affarijiet qodma jew li ġew mormija. Kienet kapaċi toħloq xi ħaġa ġdida minn oġġett mormi billi użat l‐ immaġinazzjoni u l‐kreatività tagħha.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "Rachel Bartolo kif irnexxiela tkun kreattiva u sostenibbli fl‐istess ħin? Hija kapaċi toħloq disinji oriġinali imma fl‐istess ħin tispira ruħha minn affarijiet qodma jew li ġew mormija. Kienet kapaċi toħloq xi ħaġa ġdida minn oġġett mormi billi użat l‐ immaġinazzjoni u l‐kreatività tagħha.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1247,7 +1247,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Maltese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1260,7 +1260,7 @@ export const CARDS: SecCard[] = [
     questionText: "“Ħaġa tal-iskantament kienet libsa partikolari mimlija qxur tal-arzelli.” Spjega fi kliemek għaliex din il-libsa impressjonat lill-awtur b’dan il-mod?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "*kien hemm arzell li maż‐żmien kiber mal‐ħjut tax‐xibka meta din kienet għadha mormija fl‐ilma *Rachel kienet kapaċi żżomm dawn il‐ħjut u tintegrhom fil‐libsa *Hija ħietet iktar arzell mal‐libsa", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "*kien hemm arzell li maż‐żmien kiber mal‐ħjut tax‐xibka meta din kienet għadha mormija fl‐ilma *Rachel kienet kapaċi żżomm dawn il‐ħjut u tintegrhom fil‐libsa *Hija ħietet iktar arzell mal‐libsa", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1272,7 +1272,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Maltese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1285,7 +1285,7 @@ export const CARDS: SecCard[] = [
     questionText: "X’effetti taħseb li dan l-artiklu jista’ jkollu fuq il-qarrejja?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Semmi żewġ effetti li l‐artiklu jista’ jkollu fuq il‐qarrejja? *il‐qarrejja jkunu informati dwar dan il‐qasam tal‐moda f’Malta *iħajjar lin‐nies biex anke huma jkunu iktar għaqlin u jagħmlu għażliet iktar sostenibbli *jispira qarrejja żgħażagħ li huma nteressati jaħdmu f’dan il‐qasam jew ieħor simili", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "Semmi żewġ effetti li l‐artiklu jista’ jkollu fuq il‐qarrejja? *il‐qarrejja jkunu informati dwar dan il‐qasam tal‐moda f’Malta *iħajjar lin‐nies biex anke huma jkunu iktar għaqlin u jagħmlu għażliet iktar sostenibbli *jispira qarrejja żgħażagħ li huma nteressati jaħdmu f’dan il‐qasam jew ieħor simili", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1297,7 +1297,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Maltese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1489,7 +1489,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira ta’ dawn il-kliem skont is-sens fis-silta. jimirħu",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "jimirħu: jiġġerrew; joħorġu jduru", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "jimirħu: jiġġerrew; joħorġu jduru", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1499,7 +1499,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1512,7 +1512,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira ta’ dawn il-kliem skont is-sens fis-silta. frieħ",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "frieħ: ulied żgħar ta’; ħlejqiet għadhom jitwieldu", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "frieħ: ulied żgħar ta’; ħlejqiet għadhom jitwieldu", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1522,7 +1522,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1535,7 +1535,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira ta’ dawn il-kliem skont is-sens fis-silta. jdgħajjef",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "jdgħajjef: jagħmilhom aktar debboli; iktar bla saħħa", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "jdgħajjef: jagħmilhom aktar debboli; iktar bla saħħa", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1545,7 +1545,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1558,7 +1558,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira ta’ dawn il-kliem skont is-sens fis-silta. jiċkienu",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "jiċkienu: isiru iżgħar; isiru ċkejknin", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "jiċkienu: isiru iżgħar; isiru ċkejknin", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1568,7 +1568,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1581,7 +1581,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira ta’ dawn il-kliem skont is-sens fis-silta. kollass",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "kollass: meta xi ħaġa tispiċċa jew tfalli", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "kollass: meta xi ħaġa tispiċċa jew tfalli", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1591,7 +1591,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1604,7 +1604,7 @@ export const CARDS: SecCard[] = [
     questionText: "X’konsegwenzi qed ikollha l-kostruzzjoni bla rażan fuq il-popolazzjoni tal-ispeċi tal-qanfud f’Malta?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Is-saħħa tal-qniefed qed tiddgħajjef minħabba li l-art fejn jistgħu jimirħu qiegħda dejjem tiċkien u allura jitgħammru ma’ qniefed oħra li jiġu minnhom. Dan iwassal biex ikollhom difetti ġenetiċi u problemi fis-sistema immunitarja. L-ispazji żgħar li għandhom għalihom huma wkoll maqtugħin minn xulxin u minħabba dan, ma jkunux jistgħu jmorru f’żoni ġodda.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "Is-saħħa tal-qniefed qed tiddgħajjef minħabba li l-art fejn jistgħu jimirħu qiegħda dejjem tiċkien u allura jitgħammru ma’ qniefed oħra li jiġu minnhom. Dan iwassal biex ikollhom difetti ġenetiċi u problemi fis-sistema immunitarja. L-ispazji żgħar li għandhom għalihom huma wkoll maqtugħin minn xulxin u minħabba dan, ma jkunux jistgħu jmorru f’żoni ġodda.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1614,7 +1614,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1627,7 +1627,7 @@ export const CARDS: SecCard[] = [
     questionText: "Skont l-awtur, ir-rapport tal-Kumpanija Swiss Re huwa allarmanti. Għaliex?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ir-rapport jgħid li Malta għandha waħda mill-iktar ekosistemi fraġli fl-Ewropa u hemm ir-riskju ta’ kollass ekoloġiku totali. Dan ifisser li bidliet fl-ekosistema jkunu irriversibbli u allura ma jkunx possibbli li treġġa’ lura l-ħsara li tkun saret. Il-ħxejjex u l-annimali fl-ekosistemi tagħhom kollha jiddependu fuq xulxin, u meta jsiru ħafna bidliet, iċ-ciklu tal-ekosistema jitkisser.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ir-rapport jgħid li Malta għandha waħda mill-iktar ekosistemi fraġli fl-Ewropa u hemm ir-riskju ta’ kollass ekoloġiku totali. Dan ifisser li bidliet fl-ekosistema jkunu irriversibbli u allura ma jkunx possibbli li treġġa’ lura l-ħsara li tkun saret. Il-ħxejjex u l-annimali fl-ekosistemi tagħhom kollha jiddependu fuq xulxin, u meta jsiru ħafna bidliet, iċ-ciklu tal-ekosistema jitkisser.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1637,7 +1637,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1650,7 +1650,7 @@ export const CARDS: SecCard[] = [
     questionText: "X’taħseb li l-awtur jridna nifhmu meta jgħid, Mhux talli qatt ma smajna minnu, iżda kkundannajnieh għall-mewt?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Il-fatt li dan l-annimal kien maskott popolari f’kampanja nazzjonali, li kien iħeġġeġ lill-Maltin biex jieħdu ħsieb lil pajjiżhom, huwa ironiku għaliex mhux talli ma żammewx il-pajjiż nadif, iżda minħabba li ma ħadux ħsieb l-ambjent naturali, issa anke l-qanfud inniffsu qiegħed fil- periklu li jinqered.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "Il-fatt li dan l-annimal kien maskott popolari f’kampanja nazzjonali, li kien iħeġġeġ lill-Maltin biex jieħdu ħsieb lil pajjiżhom, huwa ironiku għaliex mhux talli ma żammewx il-pajjiż nadif, iżda minħabba li ma ħadux ħsieb l-ambjent naturali, issa anke l-qanfud inniffsu qiegħed fil- periklu li jinqered.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1660,7 +1660,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
@@ -1673,7 +1673,7 @@ export const CARDS: SecCard[] = [
     questionText: "Malta għandu jkollha programm ta’ konservazzjoni u protezzjoni tal-fawna (l-annimali u l-flora [il-pjanti]). Iddiskuti din id-dikjarazzjoni billi tirreferi għas-silta u agħti l-opinjoni tiegħek.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Il-kandidati jistgħu jiddiskutu l-importanza li l-pajjiż ikollu dan il-programm billi jirreferu għall-problemi msemmija fis-silta. Per eżempju: Dan il-programm ikun jista’ jsaħħaħ u jinforza l-liġijiet preżenti Jirriforma l-prattiċi kurrenti u jwaqqaf il-bini f’żoni protetti Jagħmel programmi edukattivi mmirati għal dan l-iskop Jorganizza kampanji pubbliċitarji Jieħu azzjoni fil-kommunitajiet L-istudji u r-riċerka jibqgħu jsiru b’mod regolari", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
+    { id: "r-1", kind: "point", verbatim: "Il-kandidati jistgħu jiddiskutu l-importanza li l-pajjiż ikollu dan il-programm billi jirreferu għall-problemi msemmija fis-silta. Per eżempju: Dan il-programm ikun jista’ jsaħħaħ u jinforza l-liġijiet preżenti Jirriforma l-prattiċi kurrenti u jwaqqaf il-bini f’żoni protetti Jagħmel programmi edukattivi mmirati għal dan l-iskop Jorganizza kampanji pubbliċitarji Jieħu azzjoni fil-kommunitajiet L-istudji u r-riċerka jibqgħu jsiru b’mod regolari", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1683,7 +1683,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
     },
   } as SecCard,
   {
