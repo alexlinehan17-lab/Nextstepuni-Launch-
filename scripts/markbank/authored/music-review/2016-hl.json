@@ -1,0 +1,3527 @@
+{
+ "year": 2016,
+ "level": "higher",
+ "deferred": false,
+ "readBy": "Claude (music lane helper), 19 Nov 2026",
+ "pagesWithoutAsks": {
+  "listening": [
+   1,
+   7,
+   12,
+   13,
+   14,
+   15,
+   16
+  ],
+  "composing": [
+   1,
+   2,
+   12,
+   13,
+   14,
+   15,
+   16
+  ],
+  "elective": [
+   1,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ]
+ },
+ "notCounted": [
+  {
+   "paper": "composing",
+   "page": 6,
+   "why": "Q4 \"PREPARATORY WORK\" (plot the chords of D major): unnumbered, no marks in the scheme; its chord bank prints I, iii and vii already filled in as a worked example"
+  },
+  {
+   "paper": "composing",
+   "page": 8,
+   "why": "Q5 \"PREPARATORY WORK\" (plot the chords of A minor): unnumbered, no marks in the scheme; i, ii, III and vii printed already filled in"
+  },
+  {
+   "paper": "composing",
+   "page": 10,
+   "why": "Q6 \"PREPARATORY WORK\" (plot the chords of E♭ major): unnumbered, no marks in the scheme; I, iii and vii printed already filled in"
+  }
+ ],
+ "asks": [
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 1(i)",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.05,
+    0.168,
+    0.95,
+    0.265
+   ],
+   "questionText": "From which section of the movement is this excerpt taken? The tempo is",
+   "questionContext": "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1. The full 16-bar excerpt, played TWICE.",
+   "needsRecording": true,
+   "figure": {
+    "page": 2,
+    "box": [
+     0.11,
+     0.168,
+     0.95,
+     0.265
+    ],
+    "what": "The printed question and the three tempo options (allegro, allegro assai, adagio)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 4,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Exposition",
+     "marks": 3,
+     "quote": [
+      "1st section / (Section) A = 1 mark"
+     ]
+    },
+    {
+     "type": "point",
+     "text": "Allegro Assai",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Printed Excerpt 1 (i): two tasks under one label (name the section; tick the tempo), one ask; the two lines are contiguous in print (only an answer line between) and joined with a space. Scheme: Exposition 3 (\"1st section / (Section) A = 1 mark\" quoted) + Allegro Assai 1. \"TWICE\" and \"ONE\" (this page and others) are printed in capitals; the text layer stores them lower case. The scheme heads Excerpt 1 \"Piano Concerto in A Major, 3rd Movement by Mozart, Bars 1 – 16\"."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 1(ii)",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.05,
+    0.32,
+    0.95,
+    0.35
+   ],
+   "questionText": "Identify ONE feature of the melody in this excerpt.",
+   "questionContext": "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1. The full 16-bar excerpt, played TWICE.\nBars 1–8 played THREE times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 2,
+    "box": [
+     0.11,
+     0.32,
+     0.95,
+     0.35
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 1,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A feature of the melody",
+     "options": [
+      "octave leap(s)",
+      "(ascending/descending) scale(s)",
+      "leap of 5th",
+      "quaver movement",
+      "broken chords",
+      "triadic",
+      "grace note(s)",
+      "ornamentation",
+      "rests"
+     ],
+     "claim": 1,
+     "per": 1,
+     "open": true,
+     "quote": [
+      "any other valid feature."
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). The excerpt line carries Excerpt 1's heading and the sub-heading the part is printed under (\"Bars 1–8 played THREE times.\"), joined with \"\\n\" because the two lines are printed apart (part (i) sits between them). Open (\"any other valid feature.\"): the scheme's list split at its semicolons. One feature for 1. The \"th\" of 5th is superscript in print."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 1(iii)",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.05,
+    0.36,
+    0.95,
+    0.43
+   ],
+   "questionText": "Describe ONE feature of the accompaniment in this excerpt.",
+   "questionContext": "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1. The full 16-bar excerpt, played TWICE.\nBars 1–8 played THREE times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 2,
+    "box": [
+     0.11,
+     0.36,
+     0.95,
+     0.39
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 2,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A feature of the accompaniment",
+     "options": [
+      "Alberti Bass",
+      "broken chords (in the LH)",
+      "quaver movement"
+     ],
+     "claim": 1,
+     "per": 2,
+     "open": false,
+     "quote": [
+      "Up to 2 marks for a description of one valid feature."
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). The excerpt line carries Excerpt 1's heading and the sub-heading the part is printed under (\"Bars 1–8 played THREE times.\"), joined with \"\\n\" because the two lines are printed apart (part (i) sits between them). Closed list on the literal lane ruling (the scheme says \"one valid feature\", not \"for example\" / \"any valid\"): the three printed features, one for 2; the rule line quoted."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 1(iv)",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.05,
+    0.44,
+    0.95,
+    0.502
+   ],
+   "questionText": "The excerpt ends with",
+   "questionContext": "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1. The full 16-bar excerpt, played TWICE.\nBars 1–8 played THREE times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 2,
+    "box": [
+     0.11,
+     0.44,
+     0.95,
+     0.502
+    ],
+    "what": "The printed question and its three options (a rising arpeggio, a rising scale, repeated notes)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 1,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Rising scale",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). The excerpt line carries Excerpt 1's heading and the sub-heading the part is printed under (\"Bars 1–8 played THREE times.\"), joined with \"\\n\" because the two lines are printed apart (part (i) sits between them). Tick-box choice: the stem as printed, the options in the figure."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 1(v)",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.05,
+    0.555,
+    0.95,
+    0.64
+   ],
+   "questionText": "Describe ONE way in which the music of bars 9–16 differs from the music of bars 1–8.",
+   "questionContext": "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1. The full 16-bar excerpt, played TWICE.\nBars 9–16 played THREE times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 2,
+    "box": [
+     0.11,
+     0.555,
+     0.95,
+     0.585
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 2,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Up to 2 marks for a description of  one valid difference"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). The excerpt line carries Excerpt 1's heading and the sub-heading the part is printed under (\"Bars 9–16 played THREE times.\"), joined with \"\\n\" because the two lines are printed apart (part (i) sits between them). The scheme prints a rule and no answer: steps 0-2 (no partial marks printed). Scheme spacing kept: \"of  one\"."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 1(vi)",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.05,
+    0.65,
+    0.95,
+    0.685
+   ],
+   "questionText": "Name the cadence heard at the end of the excerpt.",
+   "questionContext": "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1. The full 16-bar excerpt, played TWICE.\nBars 9–16 played THREE times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 2,
+    "box": [
+     0.11,
+     0.65,
+     0.95,
+     0.685
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 1,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Perfect cadence",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). The excerpt line carries Excerpt 1's heading and the sub-heading the part is printed under (\"Bars 9–16 played THREE times.\"), joined with \"\\n\" because the two lines are printed apart (part (i) sits between them). "
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 2(i)",
+   "page": 3,
+   "pages": [
+    2,
+    3
+   ],
+   "crop": [
+    0.05,
+    0.03,
+    0.95,
+    0.115
+   ],
+   "questionText": "The missing notes at X on the score are",
+   "questionContext": "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.11,
+     0.03,
+     0.95,
+     0.115
+    ],
+    "what": "The printed question and its three options, each a three-note figure printed on a treble stave",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 2,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "2nd figure",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Printed Excerpt 2 (i). Tick-box choice of three figures printed in notation (the figure); the scheme answers in words (\"2nd figure\", \"nd\" superscript), so no scheme crop. The excerpt heading and the outline score of bars 1–8 (X bracket over bar 4) sit at the foot of page 2; a figure cannot span two pages, so the figure carries the options on page 3 (pages: [2, 3]). \"X\" is bold in print. The scheme heads Excerpt 2 \"Bars 62 – 105\"."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 2(ii)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.05,
+    0.115,
+    0.95,
+    0.175
+   ],
+   "questionText": "From bar 9, the melody is repeated by",
+   "questionContext": "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.11,
+     0.115,
+     0.95,
+     0.175
+    ],
+    "what": "The printed question and its three options (flute, clarinets, bassoons)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 1,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Clarinets",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Printed Excerpt 2 (ii). Tick-box choice."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 2(iii)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.05,
+    0.18,
+    0.95,
+    0.265
+   ],
+   "questionText": "Describe ONE feature of the piano music from bar 9 in this excerpt.",
+   "questionContext": "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.11,
+     0.18,
+     0.95,
+     0.21
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 2,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Up to 2 marks for a description of one valid feature"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Printed Excerpt 2 (iii). The scheme prints a rule and no answer: steps 0-2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 3(i)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.05,
+    0.545,
+    0.95,
+    0.6
+   ],
+   "questionText": "Identify ONE feature of the music played by the strings in bars 1–8 of this excerpt.",
+   "questionContext": "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.05,
+     0.296,
+     0.95,
+     0.575
+    ],
+    "what": "The excerpt heading, the outline score of bars 1-8 and the printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 2,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A feature of the music played by the strings",
+     "options": [
+      "Pizzicato",
+      "pedal / sustained  note",
+      "chords"
+     ],
+     "claim": 1,
+     "per": 2,
+     "open": true,
+     "quote": [
+      "Up to 2 marks for any one valid feature."
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Printed Excerpt 3 (i). The figure carries the excerpt heading, the outline score of bars 1–8 and the question (the ask points at bars 1–8). Open: the rule reads \"any one valid feature\" (taken as the ruling's \"any valid\", as 2018 OL Q4(iii) \"any one valid feature\"); the three printed features, one for 2. \"Pizzicato\" is italic in the scheme; scheme spacing kept: \"sustained  note\". The scheme heads Excerpt 3 \"Bars176 – 201\"."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 3(ii)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.05,
+    0.612,
+    0.95,
+    0.705
+   ],
+   "questionText": "The music which immediately follows the music in this excerpt is the main theme/1st subject. It is played by:",
+   "questionContext": "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.11,
+     0.612,
+     0.95,
+     0.705
+    ],
+    "what": "The printed question and its three options (piano only, piano with string accompaniment, violins with orchestral accompaniment)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 2,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "piano only",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Printed Excerpt 3 (ii). Tick-box choice; the question's two printed lines are contiguous and joined with a space."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1 Excerpt 3(iii)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.05,
+    0.71,
+    0.95,
+    0.88
+   ],
+   "questionText": "Identify and describe the form of this movement.",
+   "questionContext": "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.11,
+     0.71,
+     0.95,
+     0.77
+    ],
+    "what": "The printed question and its three options (Sonata Form, Ternary Form, Sonata-rondo Form)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-9",
+   "marks": 5,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Sonata-Rondo",
+     "marks": 1
+    },
+    {
+     "type": "rule",
+     "marks": 4,
+     "steps": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "quote": [
+      "Up to 4 marks for a correct description of the form of this movement."
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Printed Excerpt 3 (iii): tick the form (Sonata Form / Ternary Form / Sonata-rondo Form, in the figure) and describe it; \"Description:\" is an answer slot. Scheme: Sonata-Rondo 1 + a 4-mark description for which it prints no answer (rule, steps 0-4; no partial marks printed). Q1 printed total (25) on page 3: 11 + 5 + 9."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(i)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.05,
+    0.255,
+    0.95,
+    0.29
+   ],
+   "questionText": "Name ONE instrument which plays the theme in this excerpt.",
+   "questionContext": "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question.",
+   "excerptLine": "Bars 1–15 of the excerpt, played THREE times.\n• An outline score of bars 1–8 of the excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 4,
+    "box": [
+     0.05,
+     0.14,
+     0.95,
+     0.29
+    ],
+    "what": "The outline score of bars 1-8 (the theme) and the printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-10",
+   "marks": 1,
+   "schemePage": 12,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Flute(s) / oboe(s) / clarinet(s)",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt, played in sections: each section heading (\"Bars 1–15 ...\", \"The remainder ...\", \"The full excerpt, ONCE only.\") is the excerpt line of the parts printed under it; the lead-in prints no \"Answer the following questions\" bullet. Alternatives on one printed line, one wanted: one row. The figure carries the outline score of the theme and the question. The scheme heads Q2 \"Symphonie Fantastique by Berlioz / Movement 2, bars 120 – 158\"."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(ii)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.05,
+    0.305,
+    0.95,
+    0.375
+   ],
+   "questionText": "In this excerpt, the theme is first heard in the key of\nIt is repeated in the key of",
+   "questionContext": "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question.",
+   "excerptLine": "Bars 1–15 of the excerpt, played THREE times.\n• An outline score of bars 1–8 of the excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 4,
+    "box": [
+     0.05,
+     0.14,
+     0.95,
+     0.375
+    ],
+    "what": "The outline score of bars 1-8, part (i) and the two printed lines with their key options (A, F, C)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-10",
+   "marks": 1,
+   "schemePage": 12,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "First heard in the key of",
+     "options": [
+      "F"
+     ],
+     "claim": 1,
+     "per": 0.5,
+     "open": false
+    },
+    {
+     "type": "menu",
+     "label": "Repeated in the key of",
+     "options": [
+      "F",
+      "C"
+     ],
+     "claim": 1,
+     "per": 0.5,
+     "open": false,
+     "quote": [
+      "F;  allow C"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt, played in sections: each section heading (\"Bars 1–15 ...\", \"The remainder ...\", \"The full excerpt, ONCE only.\") is the excerpt line of the parts printed under it; the lead-in prints no \"Answer the following questions\" bullet. Two tick-box lines under one label (A / F / C each), one ask; the options sit between and after the two lines, so they are joined with \"\\n\". Scheme: \"F\" .5, then \"F;  allow C\" .5: each line a one-pick list labelled by the line it answers (the second takes the allowed C, its line quoted). The figure carries the score, part (i)'s question (no answer) and both lines with their options."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(iii)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.05,
+    0.39,
+    0.95,
+    0.49
+   ],
+   "questionText": "Describe ONE feature of the accompaniment in this excerpt.",
+   "questionContext": "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question.",
+   "excerptLine": "Bars 1–15 of the excerpt, played THREE times.\n• An outline score of bars 1–8 of the excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 4,
+    "box": [
+     0.05,
+     0.39,
+     0.95,
+     0.42
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-10",
+   "marks": 2,
+   "schemePage": 12,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A feature of the accompaniment",
+     "options": [
+      "tremolo strings",
+      "ascending/descending broken chords",
+      "vamping/waltz-like accompaniment"
+     ],
+     "claim": 1,
+     "per": 2,
+     "open": true,
+     "quote": [
+      "Up to 2 marks for a description of one valid feature, for example:",
+      "any other valid feature."
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt, played in sections: each section heading (\"Bars 1–15 ...\", \"The remainder ...\", \"The full excerpt, ONCE only.\") is the excerpt line of the parts printed under it; the lead-in prints no \"Answer the following questions\" bullet. Open (\"for example\", \"any other valid feature.\"): the list split at its semicolons, one for 2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(iv)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.05,
+    0.54,
+    0.95,
+    0.68
+   ],
+   "questionText": "The texture of the music in this excerpt is polyphonic. Give ONE reason to support this statement.",
+   "questionContext": "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question.",
+   "excerptLine": "The remainder of the excerpt, played THREE times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 4,
+    "box": [
+     0.05,
+     0.54,
+     0.95,
+     0.57
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-10",
+   "marks": 2,
+   "schemePage": 12,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A reason the texture is polyphonic",
+     "options": [
+      "a melody/idée fixe is heard against fragments of the main/waltz theme",
+      "fragments of the main/waltz theme are heard in imitation"
+     ],
+     "claim": 1,
+     "per": 2,
+     "open": true,
+     "quote": [
+      "Up to 2 marks for one valid reason, for example:",
+      "any other valid reason."
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt, played in sections: each section heading (\"Bars 1–15 ...\", \"The remainder ...\", \"The full excerpt, ONCE only.\") is the excerpt line of the parts printed under it; the lead-in prints no \"Answer the following questions\" bullet. Open (\"for example\", \"any other valid reason.\"): the two printed reasons, one for 2. \"idée fixe\" is italic in the scheme."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(v)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.05,
+    0.718,
+    0.95,
+    0.92
+   ],
+   "questionText": "What name did Berlioz give the theme heard in this excerpt? How does he use this theme in the movements you have studied in Symphonie Fantastique?",
+   "questionContext": "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question.",
+   "excerptLine": "The full excerpt, ONCE only.",
+   "needsRecording": true,
+   "figure": {
+    "page": 4,
+    "box": [
+     0.05,
+     0.718,
+     0.95,
+     0.785
+    ],
+    "what": "The printed question (both lines)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-10",
+   "marks": 4,
+   "schemePage": 12,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "ideé fixe",
+     "marks": 1
+    },
+    {
+     "type": "rule",
+     "marks": 3,
+     "steps": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "quote": [
+      "Up to 3 marks for a description of how the idée fixe is used in Un Bal and March au Supplice"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt, played in sections: each section heading (\"Bars 1–15 ...\", \"The remainder ...\", \"The full excerpt, ONCE only.\") is the excerpt line of the parts printed under it; the lead-in prints no \"Answer the following questions\" bullet. Two tasks under one label, contiguous in print (an answer line between): one ask, joined with a space. Scheme: the name 1 (its misprint \"ideé fixe\" kept) + a 3-mark description it gives no answer for (rule, steps 0-3). Q2 printed total (10)."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(i)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.05,
+    0.275,
+    0.95,
+    0.405
+   ],
+   "questionText": "Name the woodwind instrument heard in lines 1–3 of this excerpt. Describe what it plays.",
+   "questionContext": "An excerpt from When I’m Sixty-four by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. 1. Send me a postcard, drop me a line stating point of view. 2. Indicate precisely what you mean to say 3. Yours sincerely wasting away. 4. Give me your answer, fill in a form, mine forever more. 5. Will you still need me, will you still feed me 6. When I’m sixty-four?\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.05,
+     0.088,
+     0.95,
+     0.342
+    ],
+    "what": "The printed lyrics (lines 1-6) and the question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-12",
+   "marks": 3,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Clarinet(s) / bass clarinet",
+     "marks": 1
+    },
+    {
+     "type": "menu",
+     "label": "What it plays",
+     "options": [
+      "the clarinet plays in harmony with the vocal line",
+      "the clarinet plays a different melody / a countermelody",
+      "the bass clarinet plays on the 1st and 3rd crotchets of the bar / plays the root and 5th of the chord"
+     ],
+     "claim": 1,
+     "per": 2,
+     "open": true,
+     "quote": [
+      "Up to 2 marks for a valid description, for example:",
+      "any other valid feature."
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: its lead-in, the printed lyrics (numbered \"1.\" to \"6.\" in this booklet, written as printed) and \"Answer the following questions:\" are the question context. Two tasks under one label, contiguous in print: one ask. Scheme: instrument 1 + a description 2 (\"for example\", \"any other valid feature\"): open. The clarinet line splits at its first \"/\" (each side restates \"the clarinet\"); the bass clarinet line stays whole (its second half has no subject). The figure carries the lyrics because the ask names lines 1–3. Superscripts in the scheme (\"1st\", \"3rd\", \"5th\") are plain in the text layer. The scheme heads Q3 \"When I’m Sixty-four by John Lennon & Paul McCartney, third verse\"."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(ii)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.05,
+    0.413,
+    0.95,
+    0.495
+   ],
+   "questionText": "The bass line rhythm heard in lines 4–5 is",
+   "questionContext": "An excerpt from When I’m Sixty-four by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. 1. Send me a postcard, drop me a line stating point of view. 2. Indicate precisely what you mean to say 3. Yours sincerely wasting away. 4. Give me your answer, fill in a form, mine forever more. 5. Will you still need me, will you still feed me 6. When I’m sixty-four?\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.05,
+     0.088,
+     0.95,
+     0.495
+    ],
+    "what": "The printed lyrics, part (i) and the question with its three bass-line rhythms printed as note values",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-12",
+   "marks": 2,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "the 2nd figure",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: its lead-in, the printed lyrics (numbered \"1.\" to \"6.\" in this booklet, written as printed) and \"Answer the following questions:\" are the question context. Tick-box choice of three rhythms printed in notation (figure); the scheme answers in words (\"the 2nd figure\"), so no scheme crop. The figure runs from the lyrics to the options, so part (i) sits inside it (no answer shown)."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(iii)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.05,
+    0.498,
+    0.95,
+    0.605
+   ],
+   "questionText": "Identify TWO features of the vocal part as heard in this excerpt.",
+   "questionContext": "An excerpt from When I’m Sixty-four by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. 1. Send me a postcard, drop me a line stating point of view. 2. Indicate precisely what you mean to say 3. Yours sincerely wasting away. 4. Give me your answer, fill in a form, mine forever more. 5. Will you still need me, will you still feed me 6. When I’m sixty-four?\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.05,
+     0.498,
+     0.95,
+     0.528
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-12",
+   "marks": 2,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "Features of the vocal part",
+     "options": [
+      "triadic melody",
+      "chromatic/stepwise movement",
+      "repetition",
+      "flattened 3rd",
+      "repeated notes",
+      "dotted/swung rhythm",
+      "syncopation",
+      "tape speeded up"
+     ],
+     "claim": 2,
+     "per": 1,
+     "open": true,
+     "quote": [
+      "One mark for each of two correct features, for example:",
+      "any other valid feature."
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: its lead-in, the printed lyrics (numbered \"1.\" to \"6.\" in this booklet, written as printed) and \"Answer the following questions:\" are the question context. Open (\"for example\", \"any other valid feature.\"): the list split at its semicolons, 1 + 1. \"1. / 2.\" are answer slots."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(iv)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.05,
+    0.615,
+    0.95,
+    0.645
+   ],
+   "questionText": "Identify the style of this song.",
+   "questionContext": "An excerpt from When I’m Sixty-four by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. 1. Send me a postcard, drop me a line stating point of view. 2. Indicate precisely what you mean to say 3. Yours sincerely wasting away. 4. Give me your answer, fill in a form, mine forever more. 5. Will you still need me, will you still feed me 6. When I’m sixty-four?\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.05,
+     0.615,
+     0.95,
+     0.645
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-12",
+   "marks": 1,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "The style of the song",
+     "options": [
+      "jazz",
+      "rag-time",
+      "a fusion of Jazz or Rag-time with classical/pop or with each other",
+      "a fusion of classical & pop",
+      "music hall/vaudeville"
+     ],
+     "claim": 1,
+     "per": 1,
+     "open": false,
+     "quote": [
+      "One mark for a correct style:",
+      "accept music hall/vaudeville"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: its lead-in, the printed lyrics (numbered \"1.\" to \"6.\" in this booklet, written as printed) and \"Answer the following questions:\" are the question context. Closed list (no \"for example\" / \"any valid\"): the four printed styles and the accepted \"music hall/vaudeville\" (its words as an option, the \"accept\" line quoted, as 2017 HL Q5 A Excerpt 3(ii)); one for 1."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(v)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.05,
+    0.667,
+    0.95,
+    0.875
+   ],
+   "questionText": "Describe TWO differences between the music in this verse and the music in verse 1 in When I’m Sixty-four.",
+   "questionContext": "An excerpt from When I’m Sixty-four by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. 1. Send me a postcard, drop me a line stating point of view. 2. Indicate precisely what you mean to say 3. Yours sincerely wasting away. 4. Give me your answer, fill in a form, mine forever more. 5. Will you still need me, will you still feed me 6. When I’m sixty-four?\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.05,
+     0.667,
+     0.95,
+     0.697
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-12",
+   "marks": 2,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Two valid differences."
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: its lead-in, the printed lyrics (numbered \"1.\" to \"6.\" in this booklet, written as printed) and \"Answer the following questions:\" are the question context. The scheme prints only \"Two valid differences.\" at 1 + 1: a rule row, steps 0-2. \"1st difference.\" / \"2nd difference.\" are answer slots. Q3 printed total (10)."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(i)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.05,
+    0.152,
+    0.95,
+    0.225
+   ],
+   "questionText": "The theme heard in this excerpt is",
+   "questionContext": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 6,
+    "box": [
+     0.05,
+     0.152,
+     0.95,
+     0.225
+    ],
+    "what": "The printed question and its three options (Dies Irae, Danse Macabre (Totentanz), The Main Melody)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-11",
+   "marks": 1,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "the Main Melody",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: its lead-in and printed bullets are the question context. Tick-box choice. The scheme heads Q4 \"Seachanges with Danse Macabre by Raymond Deane, bars 73 – 85\"."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(ii)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.05,
+    0.243,
+    0.95,
+    0.31
+   ],
+   "questionText": "Name THREE percussion instruments playing in this excerpt.",
+   "questionContext": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 6,
+    "box": [
+     0.05,
+     0.243,
+     0.95,
+     0.272
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-11",
+   "marks": 1.5,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "Percussion instruments",
+     "options": [
+      "Cymbal(s)",
+      "crotales",
+      "gong",
+      "rainstick"
+     ],
+     "claim": 3,
+     "per": 0.5,
+     "open": false,
+     "quote": [
+      "Any 3 correct percussion instruments"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: its lead-in and printed bullets are the question context. The ask wants three of a slash-separated printed line (\"Cymbal(s)/crotales/gong/rainstick\"): a closed menu split at the slashes, any 3 at .5 (\".5 + .5 + .5\"). General Note 3 (p10): each extra incorrect answer cancels a correct one. \"1. 2. 3.\" are answer slots."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(iii)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.05,
+    0.332,
+    0.95,
+    0.4
+   ],
+   "questionText": "Describe ONE feature of the piano music in this excerpt.",
+   "questionContext": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 6,
+    "box": [
+     0.05,
+     0.332,
+     0.95,
+     0.362
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-11",
+   "marks": 1.5,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A feature of the piano music",
+     "options": [
+      "sustained chords",
+      "dissonant chords",
+      "chord clusters"
+     ],
+     "claim": 1,
+     "per": 1.5,
+     "open": true,
+     "quote": [
+      "Up to 1.5 marks for a description of one valid feature, for example:",
+      "any other valid feature."
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: its lead-in and printed bullets are the question context. Open (\"for example\", \"any other valid feature.\"): the list split at its semicolons, one for 1.5."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(iv)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.05,
+    0.427,
+    0.95,
+    0.605
+   ],
+   "questionText": "Name a compositional technique used in this excerpt. Describe how this technique is used in this excerpt.",
+   "questionContext": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 6,
+    "box": [
+     0.05,
+     0.427,
+     0.95,
+     0.493
+    ],
+    "what": "The printed question (both lines)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-11",
+   "marks": 3,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "inversion / augmentation / subtraction principle",
+     "marks": 1
+    },
+    {
+     "type": "rule",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Up to 2 marks for a correct description of named compositional technique: inversion/augmentation/subtraction principal"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: its lead-in and printed bullets are the question context. Two tasks under one label, contiguous in print: one ask. Technique 1 (alternatives on one printed line: one row) + a 2-mark description the scheme gives no answer for (rule, steps 0-2). Scheme misprint kept in the quote: \"subtraction principal\"."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(v)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.05,
+    0.627,
+    0.95,
+    0.885
+   ],
+   "questionText": "How does this statement of the theme differ from the first time it is heard in Seachanges with Danse Macabre? Give TWO differences in your answer.",
+   "questionContext": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 6,
+    "box": [
+     0.05,
+     0.627,
+     0.95,
+     0.675
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-11",
+   "marks": 3,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 3,
+     "steps": [
+      0,
+      1,
+      1.5,
+      2,
+      2.5,
+      3
+     ],
+     "quote": [
+      "Up to 1.5 marks for each of 2 valid differences"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One excerpt for the whole question: its lead-in and printed bullets are the question context. The scheme prints a rule and no answer, 1.5 + 1.5. No partial marks printed: each difference 0, 1 or 1.5, so steps 0, 1, 1.5, 2, 2.5, 3 (as 2017 HL Q2(v)). \"1st difference.\" / \"2nd difference.\" are answer slots. Q4 printed total (10)."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 A Excerpt 1(i)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.153,
+    0.95,
+    0.215
+   ],
+   "questionText": "Identify the type of dance tune heard in this excerpt and its time signature.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.05,
+     0.153,
+     0.95,
+     0.215
+    ],
+    "what": "The printed question and its two answer slots (Dance, Time signature)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 1,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "(single/double) jig",
+     "marks": 0.5
+    },
+    {
+     "type": "point",
+     "text": "6/8",
+     "marks": 0.5
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Section A's lead-in is printed as one paragraph with no bullets, so its sentences are joined with spaces; the scheme numbers these parts with no \"A\" (its Q column reads \"5A\"). Printed A, Excerpt 1 (i). Dance .5 + time signature .5; the scheme prints \"6/8\" as plain text, so no scheme crop. \"Dance:\" / \"Time signature:\" are answer slots (in the figure). The heading \"Excerpt 1\" has no full stop in print. The scheme heads Excerpt 1 \"Tatter Jack Walsh from Gerry O’Connor. Time to Time\"."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 A Excerpt 1(ii)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.22,
+    0.95,
+    0.25
+   ],
+   "questionText": "Write one bar of rhythm associated with this type of dance.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.05,
+     0.22,
+     0.95,
+     0.25
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 0.5,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "criterion",
+     "text": "Any correct bar of single/double jig rhythm",
+     "marks": 0.5,
+     "steps": [
+      0,
+      0.5
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Section A's lead-in is printed as one paragraph with no bullets, so its sentences are joined with spaces; the scheme numbers these parts with no \"A\" (its Q column reads \"5A\"). Printed A, Excerpt 1 (ii). The scheme describes the answer and prints no rhythm: a criterion row (as 2017 HL \"One correct bar of hornpipe rhythm\"), .5."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 A Excerpt 1(iii)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.255,
+    0.95,
+    0.285
+   ],
+   "questionText": "Identify the instrument playing the melody in this excerpt.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.05,
+     0.255,
+     0.95,
+     0.285
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 0.5,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "The instrument playing the melody",
+     "options": [
+      "banjo",
+      "mandolin / mandola / bouzouki"
+     ],
+     "claim": 1,
+     "per": 0.5,
+     "open": false,
+     "quote": [
+      "accept mandolin / mandola / bouzouki"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Section A's lead-in is printed as one paragraph with no bullets, so its sentences are joined with spaces; the scheme numbers these parts with no \"A\" (its Q column reads \"5A\"). Printed A, Excerpt 1 (iii). One instrument for .5: \"banjo\" and the printed acceptance \"accept mandolin / mandola / bouzouki\" (its words as a second option, the line quoted), a closed one-pick list."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 A Excerpt 2(i)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.357,
+    0.95,
+    0.386
+   ],
+   "questionText": "Using letters, write down the form of the verse.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2 A verse from Galway Bay.",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.05,
+     0.357,
+     0.95,
+     0.386
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 2,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "ABBA",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Section A's lead-in is printed as one paragraph with no bullets, so its sentences are joined with spaces; the scheme numbers these parts with no \"A\" (its Q column reads \"5A\"). Printed A, Excerpt 2 (i). The excerpt line joins the bold heading \"Excerpt 2\" (no full stop) and \"A verse from Galway Bay.\" (its own line, title italic) with a space. The scheme heads Excerpt 2 \"Dolores Kean and John Faulkner. Galway Bay\"."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 A Excerpt 2(ii)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.392,
+    0.95,
+    0.45
+   ],
+   "questionText": "The melody heard in this excerpt features",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2 A verse from Galway Bay.",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.05,
+     0.392,
+     0.95,
+     0.45
+    ],
+    "what": "The printed question and its three options (repeated last note, minor tonality, a sequence)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 1,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "repeated last note",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Section A's lead-in is printed as one paragraph with no bullets, so its sentences are joined with spaces; the scheme numbers these parts with no \"A\" (its Q column reads \"5A\"). Printed A, Excerpt 2 (ii). Tick-box choice (the booklet prints \"repeated  last note\" with a double space)."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 A Excerpt 2(iii)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.455,
+    0.95,
+    0.63
+   ],
+   "questionText": "This song is a ballad. Give TWO reasons to support this statement. In your answer, make reference to the music heard in this excerpt.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2 A verse from Galway Bay.",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.05,
+     0.455,
+     0.95,
+     0.498
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 4,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 4,
+     "steps": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "quote": [
+      "Up to 2 marks for each of two valid reasons"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Section A's lead-in is printed as one paragraph with no bullets, so its sentences are joined with spaces; the scheme numbers these parts with no \"A\" (its Q column reads \"5A\"). Printed A, Excerpt 2 (iii). The scheme prints a rule and no answer (\"2+2\"): steps 0-4. \"1. / 2.\" are answer slots."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 A Excerpt 3(i)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.664,
+    0.95,
+    0.693
+   ],
+   "questionText": "Name the instrument playing the melody in this excerpt.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.05,
+     0.664,
+     0.95,
+     0.693
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 1,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "The instrument playing the melody",
+     "options": [
+      "accordion",
+      "box /concertina / melodeon/ piano accordion"
+     ],
+     "claim": 1,
+     "per": 1,
+     "open": false,
+     "quote": [
+      "Accept box /concertina / melodeon/ piano accordion"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Section A's lead-in is printed as one paragraph with no bullets, so its sentences are joined with spaces; the scheme numbers these parts with no \"A\" (its Q column reads \"5A\"). Printed A, Excerpt 3 (i). One instrument for 1: \"accordion\" and the printed acceptance (its words as a second option, the line quoted; scheme spacing kept). The scheme heads Excerpt 3 \"The Mighty Sparrow (live). Sharon Shannon\"."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 A Excerpt 3(ii)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.698,
+    0.95,
+    0.77
+   ],
+   "questionText": "Other than instrument, identify ONE traditional feature of the music heard in this excerpt.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.05,
+     0.698,
+     0.95,
+     0.727
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 1,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A traditional feature",
+     "options": [
+      "the melody is played with ornamentation",
+      "it is a reel",
+      "the tonality is modal",
+      "use of flattened 7th"
+     ],
+     "claim": 1,
+     "per": 1,
+     "open": true,
+     "quote": [
+      "1 mark for a valid feature, for example:",
+      "any other valid feature."
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Section A's lead-in is printed as one paragraph with no bullets, so its sentences are joined with spaces; the scheme numbers these parts with no \"A\" (its Q column reads \"5A\"). Printed A, Excerpt 3 (ii). Open (\"for example\", \"any other valid feature.\"): the list split at its semicolons, one for 1. The \"th\" of 7th is superscript in print."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 A Excerpt 3(iii)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.05,
+    0.774,
+    0.95,
+    0.94
+   ],
+   "questionText": "Describe TWO non-traditional features of the music heard in this excerpt.",
+   "questionContext": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.05,
+     0.774,
+     0.95,
+     0.803
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 4,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "Non-traditional features",
+     "options": [
+      "use of guitar(s) / drums / keyboards",
+      "use of harmony / accompaniment",
+      "syncopated rhythm / syncopation",
+      "use of a strong backbeat"
+     ],
+     "claim": 2,
+     "per": 2,
+     "open": true,
+     "quote": [
+      "Up to 2 marks each for a description of two valid features, for example:",
+      "any other valid feature;"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Section A's lead-in is printed as one paragraph with no bullets, so its sentences are joined with spaces; the scheme numbers these parts with no \"A\" (its Q column reads \"5A\"). Printed A, Excerpt 3 (iii). Open (\"for example\", \"any other valid feature;\"): the list split at its semicolons, 2 + 2. \"1. / 2.\" are answer slots. Section A: 2 + 7 + 6 = 15."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 B(i)",
+   "page": 9,
+   "pages": [
+    9
+   ],
+   "crop": [
+    0.05,
+    0.067,
+    0.95,
+    0.0935
+   ],
+   "questionText": "Discuss the Irish song tradition. In your answer make reference to four different types of Irish songs.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": {
+    "page": 9,
+    "box": [
+     0.05,
+     0.067,
+     0.95,
+     0.0935
+    ],
+    "what": "The printed option (i)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-13",
+   "marks": 10,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     16
+    ],
+    "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+    "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    "taskRequirements": [
+     "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+    ],
+    "criteria": [
+     {
+      "id": "quality",
+      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+      "max": 10,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Excellent awareness and detailed knowledge of musical features of topic",
+        "marks": "10",
+        "guidance": []
+       },
+       {
+        "label": "Very good knowledge of musical features of chosen topic",
+        "marks": "8-9",
+        "guidance": []
+       },
+       {
+        "label": "Good knowledge of topic, but lacking in detail",
+        "marks": "6-7",
+        "guidance": []
+       },
+       {
+        "label": "Some general points on topic, but lacking sufficient detail",
+        "marks": "4-5",
+        "guidance": []
+       },
+       {
+        "label": "Generally inadequate response to chosen topic.",
+        "marks": "2-3",
+        "guidance": []
+       },
+       {
+        "label": "Little response to chosen topic in evidence.",
+        "marks": "1",
+        "guidance": []
+       },
+       {
+        "label": "No response to chosen topic in evidence.",
+        "marks": "0",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "One of four options (answer one); every option carries the B marks (10). The scheme prints the band once, labelled \"5B\" (p16), with no clarifications this year; the choice rule is its General Note 2 (p10). Answer space on page 9 below the choice boxes; \"or\" is printed between the options."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 B(ii)",
+   "page": 9,
+   "pages": [
+    9
+   ],
+   "crop": [
+    0.05,
+    0.1065,
+    0.95,
+    0.1445
+   ],
+   "questionText": "Give an account of Irish dance music. In your answer refer to structure, rhythm and three different types of dance.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": {
+    "page": 9,
+    "box": [
+     0.05,
+     0.1065,
+     0.95,
+     0.1445
+    ],
+    "what": "The printed option (ii)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-13",
+   "marks": 10,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     16
+    ],
+    "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+    "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    "taskRequirements": [
+     "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+    ],
+    "criteria": [
+     {
+      "id": "quality",
+      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+      "max": 10,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Excellent awareness and detailed knowledge of musical features of topic",
+        "marks": "10",
+        "guidance": []
+       },
+       {
+        "label": "Very good knowledge of musical features of chosen topic",
+        "marks": "8-9",
+        "guidance": []
+       },
+       {
+        "label": "Good knowledge of topic, but lacking in detail",
+        "marks": "6-7",
+        "guidance": []
+       },
+       {
+        "label": "Some general points on topic, but lacking sufficient detail",
+        "marks": "4-5",
+        "guidance": []
+       },
+       {
+        "label": "Generally inadequate response to chosen topic.",
+        "marks": "2-3",
+        "guidance": []
+       },
+       {
+        "label": "Little response to chosen topic in evidence.",
+        "marks": "1",
+        "guidance": []
+       },
+       {
+        "label": "No response to chosen topic in evidence.",
+        "marks": "0",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "One of four options (answer one); every option carries the B marks (10). The scheme prints the band once, labelled \"5B\" (p16), with no clarifications this year; the choice rule is its General Note 2 (p10). Answer space on page 9 below the choice boxes; \"or\" is printed between the options."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 B(iii)",
+   "page": 9,
+   "pages": [
+    9
+   ],
+   "crop": [
+    0.05,
+    0.1575,
+    0.95,
+    0.179
+   ],
+   "questionText": "Seán Ó Riada has combined traditional Irish music with other styles in his compositions. Discuss.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": {
+    "page": 9,
+    "box": [
+     0.05,
+     0.1575,
+     0.95,
+     0.179
+    ],
+    "what": "The printed option (iii)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-13",
+   "marks": 10,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     16
+    ],
+    "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+    "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    "taskRequirements": [
+     "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+    ],
+    "criteria": [
+     {
+      "id": "quality",
+      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+      "max": 10,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Excellent awareness and detailed knowledge of musical features of topic",
+        "marks": "10",
+        "guidance": []
+       },
+       {
+        "label": "Very good knowledge of musical features of chosen topic",
+        "marks": "8-9",
+        "guidance": []
+       },
+       {
+        "label": "Good knowledge of topic, but lacking in detail",
+        "marks": "6-7",
+        "guidance": []
+       },
+       {
+        "label": "Some general points on topic, but lacking sufficient detail",
+        "marks": "4-5",
+        "guidance": []
+       },
+       {
+        "label": "Generally inadequate response to chosen topic.",
+        "marks": "2-3",
+        "guidance": []
+       },
+       {
+        "label": "Little response to chosen topic in evidence.",
+        "marks": "1",
+        "guidance": []
+       },
+       {
+        "label": "No response to chosen topic in evidence.",
+        "marks": "0",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "One of four options (answer one); every option carries the B marks (10). The scheme prints the band once, labelled \"5B\" (p16), with no clarifications this year; the choice rule is its General Note 2 (p10). Answer space on page 9 below the choice boxes; \"or\" is printed between the options."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5 B(iv)",
+   "page": 9,
+   "pages": [
+    9
+   ],
+   "crop": [
+    0.05,
+    0.1915,
+    0.95,
+    0.213
+   ],
+   "questionText": "Discuss ornamentation in Irish traditional instrumental music.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": {
+    "page": 9,
+    "box": [
+     0.05,
+     0.1915,
+     0.95,
+     0.213
+    ],
+    "what": "The printed option (iv)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-13",
+   "marks": 10,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     16
+    ],
+    "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+    "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    "taskRequirements": [
+     "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+    ],
+    "criteria": [
+     {
+      "id": "quality",
+      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+      "max": 10,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Excellent awareness and detailed knowledge of musical features of topic",
+        "marks": "10",
+        "guidance": []
+       },
+       {
+        "label": "Very good knowledge of musical features of chosen topic",
+        "marks": "8-9",
+        "guidance": []
+       },
+       {
+        "label": "Good knowledge of topic, but lacking in detail",
+        "marks": "6-7",
+        "guidance": []
+       },
+       {
+        "label": "Some general points on topic, but lacking sufficient detail",
+        "marks": "4-5",
+        "guidance": []
+       },
+       {
+        "label": "Generally inadequate response to chosen topic.",
+        "marks": "2-3",
+        "guidance": []
+       },
+       {
+        "label": "Little response to chosen topic in evidence.",
+        "marks": "1",
+        "guidance": []
+       },
+       {
+        "label": "No response to chosen topic in evidence.",
+        "marks": "0",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "One of four options (answer one); every option carries the B marks (10). The scheme prints the band once, labelled \"5B\" (p16), with no clarifications this year; the choice rule is its General Note 2 (p10). Answer space on page 9 below the choice boxes; \"or\" is printed between the options. Q5 printed total (25) on page 9: A 15 + B 10."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 1(i)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.05,
+    0.197,
+    0.95,
+    0.228
+   ],
+   "questionText": "Name the instrument which plays the melody.",
+   "questionContext": "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played FOUR times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.11,
+     0.197,
+     0.95,
+     0.228
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 17,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "The instrument which plays the melody",
+     "options": [
+      "violin(s)",
+      "viola(s) / cello(s)"
+     ],
+     "claim": 1,
+     "per": 2,
+     "open": false,
+     "quote": [
+      "Allow viola(s) / cello(s)"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Printed Excerpt 1 (i). One instrument for 2: \"violin(s)\" and the printed allowance (its words as a second option, the line quoted). The scheme heads Q6 \"Danse Macabre OP 40 by Saint-Saens\"."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 1(ii)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.05,
+    0.226,
+    0.95,
+    0.32
+   ],
+   "questionText": "The time signature of this music is 3/4. The melody begins on the",
+   "questionContext": "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played FOUR times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.11,
+     0.226,
+     0.95,
+     0.32
+    ],
+    "what": "The printed question (the time signature printed as a stacked 3/4) and its three options (1st, 2nd, 3rd beat of the bar)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 17,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "3rd beat of the bar",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Printed Excerpt 1 (ii). Tick-box choice (1st / 2nd / 3rd beat of the bar, in the figure). NEEDS THE LANE LEAD (readFromPage): the booklet prints the given time signature as a stacked 3 over 4 in the Opus music font, which the text layer carries as private-use characters (U+F033, U+F034) the checker drops, and the OCR reads as \"%,\", \"44\" or \"3\" / \"4\" on separate lines; the line is written \"3/4\" as read from the page. Filed music-2-4 (metre / where the melody begins), no score printed."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 1(iii)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.05,
+    0.334,
+    0.95,
+    0.364
+   ],
+   "questionText": "Identify ONE feature of the accompaniment.",
+   "questionContext": "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played FOUR times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.11,
+     0.334,
+     0.95,
+     0.364
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 17,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Up to 2 marks for one valid feature."
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Printed Excerpt 1 (iii). The scheme prints a rule and no answer: steps 0-2."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 1(iv)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.05,
+    0.382,
+    0.95,
+    0.452
+   ],
+   "questionText": "At the end of this excerpt the music",
+   "questionContext": "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played FOUR times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.11,
+     0.382,
+     0.95,
+     0.452
+    ],
+    "what": "The printed question and its three options (modulates to a major key, modulates to a minor key, does not change key)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 17,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "modulates to a major key",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet numbers the parts afresh under each excerpt; the address carries the excerpt (lane ruling, 19 Nov evening). Printed Excerpt 1 (iv). Tick-box choice."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 2",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.05,
+    0.546,
+    0.95,
+    0.735
+   ],
+   "questionText": "Describe TWO ways in which the music heard in this excerpt differs from the music heard in excerpt 1.",
+   "questionContext": "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played THREE times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.11,
+     0.546,
+     0.95,
+     0.592
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 4,
+   "schemePage": 17,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 4,
+     "steps": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "quote": [
+      "Up to 2 marks for each description of two valid differences"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Excerpt 2 prints one question with no part label (the scheme gives it none either): one ask, address \"Q6 Excerpt 2\". The scheme prints a rule and no answer (\"2+2\"): steps 0-4. \"1. / 2.\" are answer slots."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 3",
+   "page": 11,
+   "pages": [
+    11
+   ],
+   "crop": [
+    0.05,
+    0.067,
+    0.95,
+    0.2
+   ],
+   "questionText": "Describe the texture of the music heard in this excerpt.",
+   "questionContext": "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3, played THREE times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 11,
+    "box": [
+     0.11,
+     0.067,
+     0.95,
+     0.096
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 4,
+   "schemePage": 17,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "criterion",
+     "text": "Up to 4 marks for a description of the texture in the excerpt",
+     "marks": 4,
+     "steps": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "quote": [
+      "polyphonic / canonic /  imitation/ fugal without a description = 2 marks"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Excerpt 3 prints one question with no part label: one ask. The scheme names the textures it accepts only in its \"without a description = 2 marks\" line, so the 4-mark line is a criterion (steps 0-4) with that line quoted (scheme spacing kept: \"/  imitation\")."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6 Excerpt 4",
+   "page": 11,
+   "pages": [
+    11
+   ],
+   "crop": [
+    0.05,
+    0.276,
+    0.95,
+    0.56
+   ],
+   "questionText": "Describe TWO ways in which Saint-Saens conveys a feeling of death in the music heard in this excerpt.",
+   "questionContext": "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 4, played THREE times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 11,
+    "box": [
+     0.11,
+     0.276,
+     0.95,
+     0.305
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 4,
+   "schemePage": 17,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "Ways the music conveys a feeling of death",
+     "options": [
+      "descending scales on violins",
+      "percussion instruments and how they are used",
+      "use of dynamics",
+      "polyphonic texture",
+      "change in tempo/the music gets faster",
+      "description of rhythm"
+     ],
+     "claim": 2,
+     "per": 2,
+     "open": true,
+     "quote": [
+      "Up to 2 marks for each of two valid descriptions, for example:",
+      "any other valid descriptions."
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Excerpt 4 prints one question with no part label: one ask. Open (\"for example\", \"any other valid descriptions.\"): the list split at its semicolons, 2 + 2. \"1. / 2.\" are answer slots. Q6 printed total (20) on page 11: 8 + 4 + 4 + 4."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q1",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": null,
+   "questionText": "CONTINUATION OF A GIVEN OPENING • Continue the opening below to make a 16–bar melody. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ violin □ trumpet □ flute",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-10",
+   "marks": 40,
+   "schemePage": 3,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     3
+    ],
+    "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)",
+    "stem": "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "SECTION A – MELODY COMPOSITION (40 marks)",
+      "max": 40,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Melody has excellent style and imagination.",
+        "marks": "34-40",
+        "guidance": [
+         "Excellent sense of shape and structure.",
+         "Excellent development of opening ideas.",
+         "Excellent sense of direction and climax.",
+         "Appropriate performing directions (phrasing and dynamics) inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "A very good sense of melodic and rhythmic interest.",
+        "marks": "28-33",
+        "guidance": [
+         "Very good sense of shape and structure.",
+         "Very good development of opening ideas.",
+         "Very good sense of direction and climax.",
+         "Appropriate performing directions (phrasing and dynamics) inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "A good sense of melodic and rhythmic interest.",
+        "marks": "22-27",
+        "guidance": [
+         "Good sense of shape and structure.",
+         "Good development of opening ideas.",
+         "Good sense of direction and climax.",
+         "Appropriate performing directions (phrasing and dynamics) inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "A fair sense of melodic and rhythmic interest.",
+        "marks": "16-21",
+        "guidance": [
+         "A fair sense of shape and structure.",
+         "Some development of opening ideas.",
+         "Some sense of direction and climax.",
+         "Appropriate performing directions (phrasing and dynamics) inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Little melodic and rhythmic interest.",
+        "marks": "10-15",
+        "guidance": [
+         "Little sense of shape and structure.",
+         "Little development of opening ideas.",
+         "Little sense of direction.",
+         "Inappropriate performing directions (phrasing and dynamics) inserted.",
+         "Unsuitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Poor melodic and rhythmic interest.",
+        "marks": "4-9",
+        "guidance": [
+         "Poor sense of shape and structure.",
+         "Poor development of opening ideas.",
+         "Poor sense of direction.",
+         "No performing directions (phrasing and dynamics) inserted.",
+         "No instrument chosen."
+        ]
+       },
+       {
+        "label": "Very little/no attempt.",
+        "marks": "0-3",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "Bands printed as single ranges (34 – 40, 28 – 33 ...); first descriptor as label, the other bullets and the italic lines as guidance, in printed order. Title printed in capitals and kept so (without \"Q.1\"). The question, its instrument list (oboe, violin, trumpet, flute) and the opening (Moderato, 3/4, three flats) sit on page 3. \"16–bar\" is printed with an en dash here (Q3 prints \"16-bar\"). This year Q1 asks for no modulation and the scheme's Q1 descriptors carry none. The stem keeps the printed capitals (\"ONE QUESTION ONLY\")."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q2",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": null,
+   "questionText": "SETTING MUSIC TO A GIVEN TEXT Here is an extract from the poem Summer has Come (Anonymous, translated by Kuno Meyer). The sun smiles over every land, A parting for me from the brood of cares: Hounds bark, stags tryst, Ravens flourish, summer has come! The opening line has been set to music below. • Set the remaining words to make a melody of 16 bars. (You may exceed this number of bars and include a modulation, if you wish.) • Add appropriate performing directions (phrasing and dynamics) to the melody.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-11",
+   "marks": 40,
+   "schemePage": 4,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     4
+    ],
+    "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)",
+    "stem": "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "SECTION A – MELODY COMPOSITION (40 marks)",
+      "max": 40,
+      "guidance": [
+       "No attempt at word setting."
+      ],
+      "bands": [
+       {
+        "label": "Showing excellent style and imagination.",
+        "marks": "34-40",
+        "guidance": [
+         "Excellent \"marriage\" of words and music.",
+         "Excellent sense of shape and structure.",
+         "Excellent sense of direction and climax.",
+         "Appropriate performing directions (phrasing and dynamics) inserted."
+        ]
+       },
+       {
+        "label": "Melodically and rhythmically very convincing.",
+        "marks": "28-33",
+        "guidance": [
+         "Very good “marriage” of words and music.",
+         "Very good sense of shape and structure.",
+         "Very good sense of direction and climax.",
+         "Appropriate performing directions (phrasing and dynamics) inserted."
+        ]
+       },
+       {
+        "label": "Good sense of melody writing.",
+        "marks": "22-27",
+        "guidance": [
+         "Good word setting.",
+         "Good sense of shape and structure.",
+         "Good sense of direction and climax.",
+         "Appropriate performing directions (phrasing and dynamics) inserted."
+        ]
+       },
+       {
+        "label": "Fair sense of melodic interest.",
+        "marks": "16-21",
+        "guidance": [
+         "Fair sense of word setting.",
+         "Fair sense of shape and structure.",
+         "Some sense of direction and climax.",
+         "Appropriate performing directions (phrasing and dynamics) inserted."
+        ]
+       },
+       {
+        "label": "A little melodic interest.",
+        "marks": "10-15",
+        "guidance": [
+         "A little attempt at word setting.",
+         "A little sense of shape and structure.",
+         "A little sense of direction.",
+         "Inappropriate performing directions (phrasing and dynamics) inserted."
+        ]
+       },
+       {
+        "label": "Poor melodic interest.",
+        "marks": "4-9",
+        "guidance": [
+         "Almost non-existent word setting.",
+         "Poor sense of shape and structure.",
+         "Poor sense of direction.",
+         "No performing directions (phrasing and dynamics) inserted."
+        ]
+       },
+       {
+        "label": "Very little/no attempt.",
+        "marks": "0-3",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "Bands printed as single ranges; first descriptor as label, the other bullets and the italic line as guidance. \"No attempt at word setting.\" is printed as an extra table row marked 0 below NG: carried as criterion guidance (as 2017/2018 \"No text inserted 0\"). The scheme's Q2 table carries no instrument lines (the question asks for none). The top band prints \"marriage\" in straight quotes, the second in curly quotes (kept). The poem title is italic in print; the opening line is set on page 4 (Moderato, 3/4, one sharp)."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q3",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": null,
+   "questionText": "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM The opening phrase of a gigue is given below. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ trumpet □ violin □ horn □ flute",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-12",
+   "marks": 40,
+   "schemePage": 5,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     5
+    ],
+    "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)",
+    "stem": "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "SECTION A – MELODY COMPOSITION (40 marks)",
+      "max": 40,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Melody has excellent style and imagination.",
+        "marks": "34-40",
+        "guidance": [
+         "Excellent sense of shape and given structure.",
+         "Excellent development of opening ideas.",
+         "Excellent sense of direction and climax.",
+         "Excellent modulation to the dominant.",
+         "Rhythmic integrity and style of dance maintained with flair.",
+         "Appropriate performing directions (phrasing and dynamics) inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "A very good sense of melodic and rhythmic interest.",
+        "marks": "28-33",
+        "guidance": [
+         "Very good sense of shape and given structure.",
+         "Very good development of opening ideas.",
+         "Very good sense of direction and climax.",
+         "Very good modulation to the dominant.",
+         "Rhythmic integrity and style of dance very well maintained.",
+         "Appropriate performing directions (phrasing and dynamics) inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "A good sense of melodic and rhythmic interest.",
+        "marks": "22-27",
+        "guidance": [
+         "A good sense of shape and given structure.",
+         "Good development of opening ideas.",
+         "Good sense of direction and climax.",
+         "An unconfirmed modulation to the dominant.",
+         "Good attempt at maintaining dance rhythm.",
+         "Appropriate performing directions (phrasing and dynamics) inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "A fair sense of melodic and rhythmic interest.",
+        "marks": "16-21",
+        "guidance": [
+         "Some sense of shape and given structure.",
+         "Some development of opening ideas.",
+         "Some sense of direction and climax.",
+         "An unsuccessful modulation to the dominant.",
+         "Rhythmic integrity of the dance fairly well maintained.",
+         "Appropriate performing directions (phrasing and dynamics) inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Little melodic and rhythmic interest.",
+        "marks": "10-15",
+        "guidance": [
+         "Little sense of shape and given structure.",
+         "Little development of opening ideas.",
+         "Little sense of direction.",
+         "No attempt at modulation to the dominant.",
+         "Little awareness of dance rhythm.",
+         "Inappropriate performing directions (phrasing and dynamics) inserted.",
+         "Unsuitable instrument chosen"
+        ]
+       },
+       {
+        "label": "Poor melodic and rhythmic interest.",
+        "marks": "4-9",
+        "guidance": [
+         "Poor sense of shape and given structure.",
+         "Poor development of opening ideas.",
+         "Poor sense of direction.",
+         "No attempt at modulation to the dominant.",
+         "Poor awareness of dance rhythm.",
+         "No performing directions (phrasing and dynamics)inserted.",
+         "No instrument chosen."
+        ]
+       },
+       {
+        "label": "Very little/no attempt.",
+        "marks": "0-3",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "Bands printed as single ranges; first descriptor as label, the other bullets and the italic lines as guidance. \"Use the form AA¹BB¹.\": the 1s are printed as superscripts; this booklet's text layer carries them (as small \"1\" spans after AA and BB), so the line is proved by the text layer; written with superscript ones as printed. Instrument list: trumpet, violin, horn, flute; opening Moderato, 6/8, four sharps. Scheme misprints kept: \"Unsuitable instrument chosen\" (no full stop, 10 – 15 band) and \"(phrasing and dynamics)inserted.\" (no space, 4 - 9 band)."
+  },
+  {
+   "paper": "composing",
+   "address": "Section B Q4",
+   "page": 6,
+   "pages": [
+    6,
+    7
+   ],
+   "crop": null,
+   "questionText": "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS PREPARATORY WORK • Plot the chords available in the key of D major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-14",
+   "marks": 60,
+   "schemePage": 6,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     6
+    ],
+    "markingGuideNote": "SECTION B – HARMONY (60 marks)",
+    "stem": "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Melody",
+      "max": 40,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Melody has excellent style and imagination, with an excellent awareness of key and underlying harmonic structure and excellent development of opening ideas.",
+        "marks": "34-40",
+        "guidance": [
+         "Excellent sense of direction and climax."
+        ]
+       },
+       {
+        "label": "Melody has very good style and imagination, with a very good awareness of key and underlying harmonic structure and very good development of opening ideas.",
+        "marks": "28-33",
+        "guidance": [
+         "Very good sense of direction and climax."
+        ]
+       },
+       {
+        "label": "Melody has good style and imagination, with good awareness of key and underlying harmonic structure and good development of opening ideas.",
+        "marks": "22-27",
+        "guidance": [
+         "Good sense of direction and climax."
+        ]
+       },
+       {
+        "label": "A fair sense of melodic and rhythmic interest and a fair awareness of key and harmonic structure.",
+        "marks": "16-21",
+        "guidance": [
+         "A fair development of opening ideas.",
+         "Notes generally fit chords."
+        ]
+       },
+       {
+        "label": "Some melodic and rhythmic interest.",
+        "marks": "10-15",
+        "guidance": [
+         "Little sense of harmonic structure.",
+         "Some notes fit chords."
+        ]
+       },
+       {
+        "label": "No shape.",
+        "marks": "4-9",
+        "guidance": [
+         "Very few notes fit chords."
+        ]
+       },
+       {
+        "label": "Very little/no attempt.",
+        "marks": "0-3",
+        "guidance": []
+       }
+      ]
+     },
+     {
+      "id": "bass-count",
+      "label": ".5 mark per correct bass note under each chord symbol if treble melody note is also correct. (.5 X 21)",
+      "max": 10.5,
+      "counted": {
+       "rate": 0.5,
+       "items": 21
+      },
+      "guidance": []
+     },
+     {
+      "id": "bass-quality",
+      "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge.",
+      "max": 9.5,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Excellent bass line; musical with excellent awareness of style.",
+        "marks": "8-9.5",
+        "guidance": []
+       },
+       {
+        "label": "Very good bass line; musical with very good awareness of style.",
+        "marks": "6-7",
+        "guidance": []
+       },
+       {
+        "label": "Good bass line; musical with good awareness of style.",
+        "marks": "4-5",
+        "guidance": []
+       },
+       {
+        "label": "Fair bass line; fairly musical with some awareness of style.",
+        "marks": "2-3",
+        "guidance": []
+       },
+       {
+        "label": "Unmusical bass line; at variance with given style.",
+        "marks": "0-1",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "Melody 40 (band) + bass 20 = 0.5 x 21 counted (\"(.5 X 21)\" printed, 10.5; the 21 chord symbols left to set on page 7: 7 + 7 + 7) + quality band 9.5 printed as in 2017/2018 (\"8 – 9.5\", \"6 – 7\", \"4 - 5\", \"2 - 3\", \"0 - 1\"). This year each melody band is one printed paragraph, not bullets: its first sentence is the label and the following sentences its guidance, in printed order; each bass-quality band is one printed sentence, kept whole as its label. The \"Preparatory work\" on page 6 is not counted. The \"7\" of A7 (page 7) is superscript and the sharps of D/F♯ and A/C♯ are music-font signs in print (inside the score, not in the question text)."
+  },
+  {
+   "paper": "composing",
+   "address": "Section B Q5",
+   "page": 8,
+   "pages": [
+    8,
+    9
+   ],
+   "crop": null,
+   "questionText": "COMPOSING BASS NOTES AND CHORD INDICATIONS TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of A minor, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-13",
+   "marks": 60,
+   "schemePage": 7,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     7
+    ],
+    "markingGuideNote": "SECTION B – HARMONY (60 marks)",
+    "stem": "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "chords-count",
+      "label": "1 mark for each chord that is part of a good progression.",
+      "max": 23,
+      "counted": {
+       "rate": 1,
+       "items": 23
+      },
+      "guidance": []
+     },
+     {
+      "id": "chords-quality",
+      "label": "Quality of musical  progressions and cadences overall.",
+      "max": 12,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Excellent musical chord progressions.",
+        "marks": "11-12",
+        "guidance": []
+       },
+       {
+        "label": "Very musical progressions.",
+        "marks": "8-10",
+        "guidance": []
+       },
+       {
+        "label": "Good musical progressions.",
+        "marks": "5-7",
+        "guidance": []
+       },
+       {
+        "label": "Fairly musical progressions.",
+        "marks": "3-4",
+        "guidance": []
+       },
+       {
+        "label": "Poor chord progressions.",
+        "marks": "0-2",
+        "guidance": []
+       }
+      ]
+     },
+     {
+      "id": "bass-count",
+      "label": ".5 mark per correct bass note under each correct chord symbol. (0.5 x 26)",
+      "max": 13,
+      "counted": {
+       "rate": 0.5,
+       "items": 26
+      },
+      "guidance": []
+     },
+     {
+      "id": "bass-quality",
+      "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge.",
+      "max": 12,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Excellent bass line; musical with excellent awareness of style.",
+        "marks": "11-12",
+        "guidance": []
+       },
+       {
+        "label": "Very good bass line; musical with very good awareness of style.",
+        "marks": "8-10",
+        "guidance": []
+       },
+       {
+        "label": "Good bass line; musical with good awareness of style.",
+        "marks": "5-7",
+        "guidance": []
+       },
+       {
+        "label": "Fair bass line; fairly musical with some awareness of style.",
+        "marks": "3-4",
+        "guidance": []
+       },
+       {
+        "label": "Unmusical bass line; at variance with given style.",
+        "marks": "0-2",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "Chords 35 = 1 mark per chord (printed 23; no \"(r x n)\": items = 23, matching the 23 empty chord boxes on page 9: 2 + 7 + 7 + 7) + chord-quality band 12; Bass 25 = \"(0.5 x 26)\" counted, 13 (the 23 empty boxes and the three given chords of bars 2-3, V, V7b and i, whose bass is left blank) + bass-quality band 12. No chord progression general points and no acceptable-chords table are printed this year, so no task requirements and no scheme crop. \"A minor\" is set in the OpusChords font but drawn as plain letters (no sign). Scheme spacing kept: \"musical  progressions\". The \"Preparatory work\" on page 8 is not counted."
+  },
+  {
+   "paper": "composing",
+   "address": "Section B Q6",
+   "page": 10,
+   "pages": [
+    10,
+    11
+   ],
+   "crop": null,
+   "questionText": "ADDING A COUNTERMELODY OR DESCANT AND CHORDAL SUPPORT TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of E♭ major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable chord indications in the boxes provided. • Continue the descant part in the given style to complete the piece. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-15",
+   "marks": 60,
+   "schemePage": 8,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     8
+    ],
+    "markingGuideNote": "SECTION B – HARMONY (60 marks)",
+    "stem": "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "chords-count",
+      "label": "1 mark for each chord that fits the given melody and is part of a good chord progression. (1 X 16)",
+      "max": 16,
+      "counted": {
+       "rate": 1,
+       "items": 16
+      },
+      "guidance": []
+     },
+     {
+      "id": "cadences",
+      "label": "Up to 4 marks for correct cadences.",
+      "max": 4,
+      "guidance": []
+     },
+     {
+      "id": "descant",
+      "label": "Descant",
+      "max": 40,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Excellent descant line within harmonic framework.",
+        "marks": "34-40",
+        "guidance": [
+         "Excellent adherence to two-part style throughout."
+        ]
+       },
+       {
+        "label": "Very good descant line, which fits well over harmonic structure.",
+        "marks": "28-33",
+        "guidance": [
+         "Two-part style of given opening very well maintained."
+        ]
+       },
+       {
+        "label": "Good descant line and shape.",
+        "marks": "22-27",
+        "guidance": [
+         "Melody fits harmonic structure.",
+         "Good attempt at maintaining two-part style of opening."
+        ]
+       },
+       {
+        "label": "Fair descant line and shape.",
+        "marks": "16-21",
+        "guidance": [
+         "Notes generally fit chords.",
+         "Some attempt at maintaining two-part style of opening."
+        ]
+       },
+       {
+        "label": "Some notes fit chords.",
+        "marks": "10-15",
+        "guidance": [
+         "Little attempt at maintaining style.",
+         "Little sense of structure.",
+         "Little sense of technical knowledge."
+        ]
+       },
+       {
+        "label": "Very few notes fit chords.",
+        "marks": "4-9",
+        "guidance": [
+         "Very little attempt at maintaining style."
+        ]
+       },
+       {
+        "label": "Very little/no attempt.",
+        "marks": "0-3",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "Chords 20 = 1 x 16 counted (\"(1 X 16)\" printed; the 16 empty chord boxes on page 11: 5 + 4 + 7) + \"Up to 4 marks for correct cadences.\" (printed \"16 + 4\"; a criterion with no bands, as the Ordinary Section B quality lines) + Descant band 40. Each descant band is printed as sentences, not bullets: the first sentence is the label, the rest guidance in printed order. \"E♭ major\": the booklet sets \"Eb\" in the OpusChords font, which draws the b as a flat sign (read from the render), so the sign is written; the checker reads ♭ as b. The \"Preparatory work\" on page 10 is not counted."
+  },
+  {
+   "paper": "elective",
+   "address": "Q1",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.05,
+    0.066,
+    0.95,
+    0.15
+   ],
+   "questionText": "State the title of your chosen Listening Elective topic.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-2-8",
+   "marks": 100,
+   "schemePage": 18,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     18
+    ],
+    "markingGuideNote": "Listening – Higher level - Elective",
+    "stem": "Answer ALL questions.",
+    "taskRequirements": [
+     "Refer to the Leaving Certificate Music Syllabus – page 12 – 2.3.5"
+    ],
+    "criteria": [
+     {
+      "id": "elements-2-4",
+      "label": "Listening – Higher level - Elective",
+      "max": 100,
+      "guidance": [
+       "Name of topic -"
+      ],
+      "bands": [
+       {
+        "label": "Excellent awareness and detailed knowledge of musical features of topic.",
+        "marks": "85-100",
+        "guidance": [
+         "Excellent reference to all ten musical excerpts on the accompanying audio recording which illustrate the feature(s) discussed.",
+         "Excellent research evident, with excellent personal response.",
+         "Excellent sources and reference to pieces of music/composer/performer."
+        ]
+       },
+       {
+        "label": "Very good awareness and detailed knowledge of musical features of topic.",
+        "marks": "70-84",
+        "guidance": [
+         "Very good reference to all ten musical excerpts on the accompanying audio recording which illustrate the feature(s) discussed.",
+         "Very well researched, with very good personal response.",
+         "Very good sources and reference to pieces of music/composer/performer."
+        ]
+       },
+       {
+        "label": "Good knowledge of musical features of chosen topic, but lacking in detail.",
+        "marks": "55-69",
+        "guidance": [
+         "Good reference to all/some of the musical excerpts on the accompanying audio recording which broadly illustrate the feature(s) discussed.",
+         "Good research in evidence with good personal response.",
+         "Good sources and good reference to pieces of music/composer/performer."
+        ]
+       },
+       {
+        "label": "Some general points on topic, but lacking in detail.",
+        "marks": "40-54",
+        "guidance": [
+         "Choice of topic too broad to allow for appropriate detailed and personal response.",
+         "Some reference to all/some of the musical features of topic and to musical recordings.",
+         "Recorded excerpts do not illustrate / relate to the features in the essay.",
+         "General sources used, but lacking specific focus.",
+         "Some reference to pieces of music/composer/performer."
+        ]
+       },
+       {
+        "label": "Generally inadequate response to chosen topic.",
+        "marks": "25-39",
+        "guidance": [
+         "Little or no evidence of research or personal response.",
+         "Little or no reference to musical features of topic",
+         "Little or no reference to musical recordings.",
+         "Inadequate sources listed  and inadequate reference to pieces of music/composer/performer."
+        ]
+       },
+       {
+        "label": "Very little response to chosen topic in evidence.",
+        "marks": "10-24",
+        "guidance": []
+       },
+       {
+        "label": "No response to chosen topic in evidence.",
+        "marks": "0-9",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": "e-q1-q4",
+   "label": "1.",
+   "notes": "Lead ask of the shared card: the scheme gives element 1 (\"Name of topic\") \"-\" and marks elements 2-4 together on one 0-100 band (\"Paper 2-4\"); the card's 100 marks sit here. Descriptors refer to \"all ten musical excerpts\"; the paper never says ten (Q3 asks for five pieces). Scheme spacing kept: \"Inadequate sources listed  and\". The stem keeps the printed capitals (\"ALL\")."
+  },
+  {
+   "paper": "elective",
+   "address": "Q2",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.05,
+    0.157,
+    0.95,
+    0.31
+   ],
+   "questionText": "List THREE of the sources which you used in studying this topic. Full details are required for all of your sources. If one of your sources is the internet, give the full website address used in your research.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-2-8",
+   "marks": null,
+   "schemePage": 18,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": null,
+   "sharedCard": "e-q1-q4",
+   "label": "2.",
+   "notes": "Marked inside the shared 0-100 band (elements 2-4). (i)-(iii) are answer slots, not asks. \"THREE\" is printed in capitals (the text layer stores it lower case); \"internet\" is lower case in print this year."
+  },
+  {
+   "paper": "elective",
+   "address": "Q3",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.05,
+    0.329,
+    0.95,
+    0.565
+   ],
+   "questionText": "Name FIVE pieces of music, and the composer or performer, which you studied as part of this listening elective, and which are on your audio recording.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-2-8",
+   "marks": null,
+   "schemePage": 18,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": null,
+   "sharedCard": "e-q1-q4",
+   "label": "3.",
+   "notes": "Marked inside the shared band. The Piece / Composer or Performer table (rows 1.-5.) is an answer slot. \"FIVE\" is printed in capitals."
+  },
+  {
+   "paper": "elective",
+   "address": "Q4(a)",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.05,
+    0.594,
+    0.95,
+    0.735
+   ],
+   "questionText": "Identify THREE significant musical features of your chosen topic.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-2-8",
+   "marks": null,
+   "schemePage": 18,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": null,
+   "sharedCard": "e-q1-q4",
+   "label": "4. (a)",
+   "notes": "Marked inside the shared band. Printed \"4.(a)\"; \"musical\" is italic and \"THREE\" in capitals in print. (i)-(iii) are answer slots."
+  },
+  {
+   "paper": "elective",
+   "address": "Q4(b)",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.05,
+    0.748,
+    0.95,
+    0.935
+   ],
+   "questionText": "Give an account of your chosen topic ensuring that you • describe the three musical features which you have identified above • show how your three chosen, and other, musical features are present in the music you have studied for this elective • make reference to all the musical excerpts on your recording • include your personal response to your chosen topic.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-2-8",
+   "marks": null,
+   "schemePage": 18,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": null,
+   "sharedCard": "e-q1-q4",
+   "label": "(b)",
+   "notes": "Marked inside the shared band. Answer space runs on pages 3-6; page 7 is staves for rough work."
+  }
+ ],
+ "readFromPage": [
+  {
+   "booklet": "listening",
+   "page": 10,
+   "box": [
+    0.114,
+    0.239,
+    0.879,
+    0.291
+   ],
+   "text": "The time signature of this music is 3/4. The melody begins on the",
+   "readBy": "music lane lead, 19 Nov 2026, from a 220 dpi render of the page",
+   "why": "The booklet prints the time signature as a stacked 3 over 4 in a music font; the text layer drops it and the OCR readings give \"%,\", \"44\" or the digits on separate lines. Written 3/4, as the lane writes time signatures."
+  }
+ ]
+}
