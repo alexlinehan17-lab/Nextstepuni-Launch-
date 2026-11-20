@@ -835,6 +835,9 @@ def reconcile_subject(subject, census=None):
         'papers': papers,
         'censusFlags': sum(len(p.get('flags', [])) for p in census['papers']),
         'unreadPapers': [p for p in census['papers'] if p.get('error')],
+        # Sittings the SEC never published (paper_census.NOT_PUBLISHED), only
+        # for the subjects that list any: not unread, nothing to card.
+        **({'notPublished': census['notPublished']} if census.get('notPublished') else {}),
     }
 
 
@@ -847,6 +850,8 @@ def report(r, show_open=False):
           f"{len(r['unparsed'])} unparsed, {r['censusFlags']} census flag(s){incomplete}")
     for paper in unread[:3]:
         print(f"    UNREAD {paper['year']} {paper['level']}: {paper['error']}")
+    for paper in r.get('notPublished', []):
+        print(f"    NOT PUBLISHED {paper['year']} {paper['level'].upper()}: {paper['evidence']}")
     for o in r['orphans'][:8]:
         print(f"    ORPHAN {o['id']}: \"{o['ref']}\" — {o['why']}")
     for u in r['unparsed'][:4]:
