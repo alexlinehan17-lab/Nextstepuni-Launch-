@@ -739,6 +739,819 @@
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
  },
  {
+  "id": "ron-2011-hl-i-1-a",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "romanian-0-0",
+  "conceptId": "elita-intelectual",
+  "questionRef": "2011 HL Section I Q1(a)",
+  "questionText": "Explicaţi pe scurt cuvintele care urmează prin sinonime sau perifraze ţinând cont de context. elita intelectuală (p.1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "cei mai deosebiţi, mai buni, mai aleşi intelectuali ai ţării",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+  }
+ },
+ {
+  "id": "ron-2011-hl-i-1-b",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "romanian-0-0",
+  "conceptId": "insinuat",
+  "questionRef": "2011 HL Section I Q1(b)",
+  "questionText": "Explicaţi pe scurt cuvintele care urmează prin sinonime sau perifraze ţinând cont de context. s-a insinuat (p.1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "s-a strecurat, s-a introdus, a intrat pe nesimţite",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+  }
+ },
+ {
+  "id": "ron-2011-hl-i-1-c",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "romanian-0-0",
+  "conceptId": "iscodesc",
+  "questionRef": "2011 HL Section I Q1(c)",
+  "questionText": "Explicaţi pe scurt cuvintele care urmează prin sinonime sau perifraze ţinând cont de context. iscodesc (p.2)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "cercetează pe cineva cu de-amănuntul, încearcă să afle un secret",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+  }
+ },
+ {
+  "id": "ron-2011-hl-i-1-d",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "romanian-0-0",
+  "conceptId": "mediul-academic",
+  "questionRef": "2011 HL Section I Q1(d)",
+  "questionText": "Explicaţi pe scurt cuvintele care urmează prin sinonime sau perifraze ţinând cont de context. mediul academic (p.4)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "societate de învăţaţi, literaţi, care ţine de instiuţiile culturale şi învăţământ",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+  }
+ },
+ {
+  "id": "ron-2011-hl-i-1-e",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "romanian-0-0",
+  "conceptId": "invigorat-limba",
+  "questionRef": "2011 HL Section I Q1(e)",
+  "questionText": "Explicaţi pe scurt cuvintele care urmează prin sinonime sau perifraze ţinând cont de context. a învigorat limba (p.4)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "care dă vigoare, forţă şi vitalitate limbii",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+  }
+ },
+ {
+  "id": "ron-2011-hl-i-2",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "romanian-0-1",
+  "conceptId": "indica-care-sunt-principalele-surse-limb",
+  "questionRef": "2011 HL Section I Q2",
+  "questionText": "Indicaţi care sunt principalele surse de limbă engleză despre care se discută in text.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "muzica, televizorul, cinemaul, computerul cu sistemul de operare în limba engleză, site-ul de socializare Facebook, comerţul internaţional, fast-foodurile şi supermarket-urile, tot ce vine din America",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\" The scheme heads it: “Înţelegerea ideilor de fond discutate în text”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+  }
+ },
+ {
+  "id": "ron-2011-hl-i-3",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "romanian-0-1",
+  "conceptId": "referindu-text-care-motivul-general-invocat",
+  "questionRef": "2011 HL Section I Q3",
+  "questionText": "Referindu-vă la text, care este motivul general invocat de tinerii români pentru a justifica folosirea limbii engleze în comunicarea dintre ei?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "limba engleză suna mai bine",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\" The scheme heads it: “Înţelegerea cauzelor fenomenului lingvistic la care se referă textul”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "tinerii au impresia că-şi pot exprima mai bine şi mai uşor sentimentele în engleză",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+  }
+ },
+ {
+  "id": "ron-2011-hl-i-4",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "romanian-0-1",
+  "conceptId": "luand-considerare-textul-bazandu-observ-iile",
+  "questionRef": "2011 HL Section I Q4",
+  "questionText": "Luând în considerare textul şi bazându-vă pe observţiile personale, în ce fel sunt “mai vizibili tinerii de astăzi” faţă de generaţiile trecute? (p.6)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "sunt mai vizibili tinerii pentru că ei sunt în centrul atenţiei publice cu problemele lor, emisiunile de scandal, de modă etc...de la televizor.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\" The scheme heads it: “Înţelegerea profundă a unor idei exprimate mai putin explicit, demonstrează capacitate de gândire analitică şi extrapolare a cunoştiinţelor”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "generaţia tânără este cea care stăpâneşte puterea informatică",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "tinerii azi au mai multe mijloace de comunicare la îndemână şi le folosesc pentru a ieşi în evidenţă etc",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+  }
+ },
+ {
+  "id": "ron-2011-hl-i-5",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "romanian-0-1",
+  "conceptId": "referindu-ultimul-paragraf-explica-propriile-cuvinte",
+  "questionRef": "2011 HL Section I Q5",
+  "questionText": "Referindu-vă la ultimul paragraf (p.8), explicaţi cu propriile cuvinte de ce credeţi că autorul textului a ajuns la concluzia că tinerii vorbesc englezeşte pentru că “le e teamă să vorbească româneşte”.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "le e teamă să vorbească româneşte pentru că vorbind în limba maternă, tinerii nu pot ascunde ceea ce simt cu adevărat pe când în engleză, limba cinemaului mondial, ei pot interpreta un rol, pot să treacă drept o altă persoană cu scopul de a-şi proteja fiinţa interioară.Tinerilor nu le place să se arate cum sunt cu adevărat pentru că ei sunt încă în căutarea unui model şi nu se iubesc suficient pe ei înşişi.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\" The scheme heads it: “Demonstrează o bună înţelegere a textului în ansamblu şi capacitatea de a explica puncte de vedere personale”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "le e frică să exprime sentimente profunde cum ar fi iubirea, pentru a evita implicaţiile gravitaţii actului şi pentru a rămâne detaşaţi, deci stăpâni pe situaţie...etc",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+  }
+ },
+ {
+  "id": "ron-2011-hl-i-6",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "romanian-0-1",
+  "conceptId": "dup-rerea-mai-multor-tori-limbii",
+  "questionRef": "2011 HL Section I Q6",
+  "questionText": "După părerea mai multor apărători ai limbii române, zicala “Apa trece dar pietrele rămân”se poate aplica la fenomenul lingvistic descris în text. De ce este limba română comparată cu pietrele care rămân? (p.7)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "limba română şi poporul care o vorbeşte rămân stabili şi neclintiţi în esenţa lor în urma tuturor influenţelor lingvistice. Limba păstrează lexicul şi gramatica preponderent latină dar se îmbogăţeşte importând un lexic nou şi descriptiv al unor concepte noi în exclusivitate (de ex. limbajul informatic şi tot ce e legat de noua tehnologie..etc)",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\" The scheme heads it: “Buna înţelegere a unor explicaţii ilustrate metaforic”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "un alt aspect al interpretării metaforei: apa care trece este şi dătătoare de viaţă, curăţă şi înfrumuseţează pietrele, le face să lucească mai bine fără însă a avea puterea să le mute din loc.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Istoria a demonstrat că limba română nu se schimbă sub influenţa unei mode lingvistice, marii învăţaţi şi literaţi ai ţării veghează la păstrarea ei prin scrierile lor. De asemeni, există încă atâtea comunitaţi rurale şi arhaice pe teritoriul României unde limba se păstrează într-o stare pură şi nu suferă nici o influenţă a englezei şi a lumii computerizate.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+  }
+ },
+ {
+  "id": "ron-2011-hl-ii-1",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2011,
+  "section": "II",
+  "topicId": "romanian-1-0",
+  "conceptId": "referindu-text-folosind-aprox-100-cuvinte",
+  "questionRef": "2011 HL Section II Q1",
+  "questionText": "Referindu-vă la text (p.5) şi folosind aprox. 100 de cuvinte, răspundeţi la remarca Profesorului Alfred Bulai “Astea sunt fandoseli, încercări de a atrage atenţia, de a ieşi în evidenţă. Fenomenul e valabil la adolescenţi, dupa care se mai pierde această încercare de a epata”.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Comentarea citatului, (în aprox. 100 de cuvinte), demonstrând înţelegerea în ansamblu a subiectului şi în special a scopului cu care autorul a scris acest articol. Comentariul trebuie de asemenea să ilustreze înţelegerea consecinţelor pentru viaţa personală reală aşa cum se sugerează prin acest citat.",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Claritatea scopului – candidatul înţelege întrebarea şi modul în care i se cere să răspundă – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Coerenţa răspunsului – candidatul foloseşte un material adecvat într-o manieră structurată şi la subiect – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Eficienţa limbajului – candidatul demonstrează că stăpâneşte limba destul de bine pentru a-şi comunica cu claritate şi cursivitate ideile – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Respectarea regulilor – gramatică, punctuaţie – 10%",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\" The scheme prints: “În partea II si III vor fi luate în considerare la acordarea notelor urmatoarele criterii:”. The scheme prints, as examples, not a checklist: “prin această afirmaţie, profesorul Andrei Bulai relativizează importanţa şi gravitatea fenomenului şi, în total acord cu ceilalaţi lingvişti citaţi în text, consideră că engleza vorbită de adolescenţi nu reprezintă nici un pericol pentru limba română într-ucât este vorba de o simplă tendinţă a modei la această vârstă”; “adolescenţii încearcă să atragă atenţia asupra propriei persoane vorbind engleza, aşa cum încearcă şi prin moda vestimentară, muzică sau pur şi simplu vorbind tare şi râzând”; “pe măsură ce se maturizează, adolescenţii nu mai caută să se identifice cu altcineva sau cu altceva, în cazul nostru o limbă străină la modă, ba chiar uneori devin mândrii de ceea ce sunt, de propria lor individualitate şi apartenenţă la o comunitate etnică”; “ca aplicaţie directă la viaţa lor, adolescenţii pot înţelege din text, ca şi din afirmaţia Profesorului Bulai, că limba engleză nu poate înlocui limba română vorbită pe teritoriul României, ea poate servi doar ca limbă de comunicare internaţională. Tinerii trebuie să continue să-şi cultive cunoştiinţele de limbă română şi să devină conştienţi că atitudinea lor faţă de limba engleză nu este împărtăşită şi de populaţia adultă a ţării”. The scheme names the speaker “Andrei Bulai”; the paper prints “Alfred Bulai”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PARTEA II",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\""
+  }
+ },
+ {
+  "id": "ron-2011-hl-iii-1",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2011,
+  "section": "III",
+  "topicId": "romanian-1-1",
+  "conceptId": "zilele-noastre-putem-comunica-sentimente-idei",
+  "questionRef": "2011 HL Section III Q1",
+  "questionText": "Scrieţi un comentariu de aproximativ 300 de cuvinte pe una din temele următoare: În zilele noastre putem comunica sentimente şi idei complexe folosindu-ne de imagini şi expresii simplificate.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Compunere de aproximativ 300 de cuvinte la alegere între 2 subiecte, scrisă cursiv, urmărind o organizare coerentă a ideilor şi conducând la o concluzie clară.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Claritatea scopului – candidatul înţelege întrebarea şi modul în care i se cere să răspundă – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Coerenţa răspunsului – candidatul foloseşte un material adecvat într-o manieră structurată şi la subiect – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Eficienţa limbajului – candidatul demonstrează că stăpâneşte limba destul de bine pentru a-şi comunica cu claritate şi cursivitate ideile – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Respectarea regulilor – gramatică, punctuaţie – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\" The scheme prints: “În partea II si III vor fi luate în considerare la acordarea notelor urmatoarele criterii:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "ron-2011-hl-iii-2",
+  "subjectId": "romanian",
+  "level": "higher",
+  "year": 2011,
+  "section": "III",
+  "topicId": "romanian-1-1",
+  "conceptId": "majoritatea-oamenilor-sunt-ferici-masura-care",
+  "questionRef": "2011 HL Section III Q2",
+  "questionText": "Scrieţi un comentariu de aproximativ 300 de cuvinte pe una din temele următoare: ”Majoritatea oamenilor sunt fericiți în masura în care vor cu adevărat să fie fericiţi”-Abraham Lincoln- (al 16-lea preşedinte al SUA: 1809-1865).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Compunere de aproximativ 300 de cuvinte la alegere între 2 subiecte, scrisă cursiv, urmărind o organizare coerentă a ideilor şi conducând la o concluzie clară.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Claritatea scopului – candidatul înţelege întrebarea şi modul în care i se cere să răspundă – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Coerenţa răspunsului – candidatul foloseşte un material adecvat într-o manieră structurată şi la subiect – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Eficienţa limbajului – candidatul demonstrează că stăpâneşte limba destul de bine pentru a-şi comunica cu claritate şi cursivitate ideile – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Respectarea regulilor – gramatică, punctuaţie – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise în limba română\" The scheme prints: “În partea II si III vor fi luate în considerare la acordarea notelor urmatoarele criterii:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "ron-2021-hl-i-1-a",
   "subjectId": "romanian",
   "level": "higher",

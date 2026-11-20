@@ -358,6 +358,26 @@ class Run:
         self.first, self.last, self.page = first, last, page
 
 
+class ListQuestion:
+    """A question that lists printed items under its stem: the stem's line
+    (its number taken off) and each item's line with its own letter kept,
+    "a) docutainment", one per line."""
+    def __init__(self, page, stem, items):
+        self.page, self.stem, self.items = page, stem, items
+
+    def __call__(self, doc, _census=None):
+        stem = PL(self.page, self.stem).text(doc) if not isinstance(self.stem, Run) else \
+            paper_run(doc, self.stem.page or self.page, self.stem.first, self.stem.last)
+        stem = clean_question(MARKER.sub('', stem, count=1))
+        items = [clean_question((PL(*i) if isinstance(i, tuple) else PL(self.page, i)).text(doc))
+                 for i in self.items]
+        return '\n'.join([stem] + items)
+
+
+def QL(page, stem, *items):
+    return ListQuestion(page, stem, items)
+
+
 def QP(page, *openings, keep_marker=False):
     return PaperQuestion(page, openings, keep_marker)
 
@@ -432,7 +452,20 @@ RULE_LINES = 3      # the rule's sentence ends within this many printed lines
 #   glyph 1211 reads U+1EB7 in the 2012 and 2014 papers (texttrace) and is
 #   drawn as a with breve and dot below (rendered 2016 p2 at 300 dpi): the SEC
 #   printed "rặspunsurile".
-RULE_FIXES = {('romanian', 2013): {'\u04bb': '\u1eb7'}}
+# - Romanian 2011: two glyphs of MicrosoftSansSerif that occur once each in the
+#   whole Romanian corpus (no clean sighting to learn from), so settled by
+#   cropping them at 400 dpi and looking (p4): glyph 1931, read U+020A, is drawn
+#   as I with a circumflex ("În zilele noastre"); glyph 1440, read U+1E6D, as t
+#   with a comma below ("fericiți").
+TEXT_FIXES = {('romanian', 2013): {'\u04bb': '\u1eb7'},
+              ('romanian', 2011): {'\u020a': '\u00ce', '\u1e6d': '\u021b'}}
+RULE_FIXES = TEXT_FIXES
+
+
+def fix_text(subject, year, text):
+    for bad, good in TEXT_FIXES.get((subject, year), {}).items():
+        text = text.replace(bad, good)
+    return text
 LATIN_SUBJECTS = {'dutch', 'romanian', 'hungarian', 'slovakian', 'swedish', 'estonian', 'finnish',
                   'croatian', 'danish', 'slovenian', 'maltese'}
 
@@ -546,7 +579,7 @@ def default_price(key):
 
 def documents(subject, year, level='hl', scheme=True):
     P = EuPaper(year, level, subject)
-    doc = {'paper': [(l.page, l.text) for l in P.lines], 'lines': P.lines, 'P': P,
+    doc = {'paper': [(l.page, fix_text(subject, year, l.text)) for l in P.lines], 'lines': P.lines, 'P': P,
            'scheme': scheme_lines(subject, year, level) if scheme else []}
     return P, doc
 
@@ -554,10 +587,17 @@ def documents(subject, year, level='hl', scheme=True):
 def cards(subject, year, specs, level='hl', scheme=True):
     P, doc = documents(subject, year, level, scheme)
     asks = {a.key: a for a in P.all_asks()}
+    # A lettered question the paper prices only as a whole ("1. ... (5 puncte)"
+    # over a) to e)) is carded at the question: its parent ask (R7, CARD-STANDARD
+    # 2 "questionTotal"; Latvian and Czech Q1 are the precedent).
+    parents = {a.key: a for a in P._asks if a.letter is None and a.roman is None
+               and any(b.section == a.section and b.q == a.q and b.letter for b in P._asks)}
     two_part = not any(k[0] == 'III' for k in asks)
     out, seen = [], set()
     for spec in specs:
         key = parse_key(spec.key)
+        if key not in asks and key in parents:
+            asks[key] = parents[key]
         if key not in asks:
             raise ValueError(f'{subject} {year} {spec.key}: the census prints no such ask')
         if key in seen:
@@ -568,6 +608,7 @@ def cards(subject, year, specs, level='hl', scheme=True):
         question = clean_question(ask.full_text)
         if spec.question:
             question = spec.question(doc, question) if callable(spec.question) else spec.question
+        question = fix_text(subject, year, question)
         language = answer_language(subject, question)
         note = lang_note = rule_note(subject, doc, language)
         card = {
