@@ -2374,6 +2374,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
@@ -2397,6 +2398,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
@@ -2420,6 +2422,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
@@ -2443,6 +2446,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
@@ -2459,13 +2463,14 @@ export const CARDS: SecCard[] = [
     questionText: "Podľa autora žijeme „vo svete, v ktorom lož a hystéria obehnú svet skôr, než si pravda obuje topánky“. Komentujte tento citát.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Poznáme príklady hoaxov, ktoré obleteli celý svet. Migranti. Senzačné, neoverené a polopravdivé správy sa šíria rýchlo a vytvárajú falošnú predstavu sveta. Ľudí často pravda ani nezaujíma, lebo nie je atraktívna. Preto je obľúbená aj bulvárna tlač a rôzne konšpiračné médiá, ktoré fabulujú, vyvolávajú emócie, ľudia sa vystrašia, pohoršia a dezinformácie šíria ďalej ako overené informácie. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 % 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-1", kind: "point", verbatim: "Poznáme príklady hoaxov, ktoré obleteli celý svet. Migranti. Senzačné, neoverené a polopravdivé správy sa šíria rýchlo a vytvárajú falošnú predstavu sveta. Ľudí často pravda ani nezaujíma, lebo nie je atraktívna. Preto je obľúbená aj bulvárna tlač a rôzne konšpiračné médiá, ktoré fabulujú, vyvolávajú emócie, ľudia sa vystrašia, pohoršia a dezinformácie šíria ďalej ako overené informácie.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 1: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2018 Higher Level examination paper — © State Examinations Commission.",
@@ -2489,6 +2494,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2512,6 +2518,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2535,6 +2542,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2558,6 +2566,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2574,13 +2583,14 @@ export const CARDS: SecCard[] = [
     questionText: "Uveďte dôvody, prečo by ste sa aj vy chceli, prípadne nechceli stať youtuberom.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pozitívna stránka youtuberingu: youtuberi − robia niečo, z čoho majú radosť, čo ich zabáva, − ich obľúbená aktivita im zabezpečuje dobrý zárobok, − robia niečo dobre a takým spôsobom, že je to zaujímavé pre ostatných, − majú pocit, že sú potrební, obľúbení, chcení, − ich aktivita im posilňuje sebavedomie. Negatívna stránka youtuberingu: youtuberi − strácajú súkromie, − nemajú čas na vzdelávanie sa, vzdelanie pre nich nie je podstatné, − sú stále pod tlakom, sú obeťami vlastného úspechu, stále musia tvoriť, robiť nové videá, aby nestratili sledovateľov, − zverejňovať hlúpe videá o sebe je nezmyselné zabíjanie času. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 % 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30% 3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-1", kind: "point", verbatim: "Pozitívna stránka youtuberingu: youtuberi − robia niečo, z čoho majú radosť, čo ich zabáva, − ich obľúbená aktivita im zabezpečuje dobrý zárobok, − robia niečo dobre a takým spôsobom, že je to zaujímavé pre ostatných, − majú pocit, že sú potrební, obľúbení, chcení, − ich aktivita im posilňuje sebavedomie. Negatívna stránka youtuberingu: youtuberi − strácajú súkromie, − nemajú čas na vzdelávanie sa, vzdelanie pre nich nie je podstatné, − sú stále pod tlakom, sú obeťami vlastného úspechu, stále musia tvoriť, robiť nové videá, aby nestratili sledovateľov, − zverejňovať hlúpe videá o sebe je nezmyselné zabíjanie času.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2693,7 +2703,7 @@ export const CARDS: SecCard[] = [
     questionText: "Vysvetlite vlastnými slovami: irtuálny (4. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "virtuálny – neskutočný, zdanlivý, existujúci v počítačovej realite", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "neskutočný, zdanlivý, existujúci v počítačovej realite", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2813,7 +2823,7 @@ export const CARDS: SecCard[] = [
     questionText: "Uvažujte a argumentujte, prečo je divadelný proces dôležitý aj pre divákov.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Divadelné umenie zbližuje ľudí ‐ hercov aj divákov. Medzi najsilnejšie zážitky skupiny patrí predstavenie v ženskej väznici, o ktorom povedala Uršuľa, že to bola veľmi silná lekcia pre obidve strany. Na týchto predstaveniach zahrajú svoje životné príbehy ľudia, ktorí mlčali desiatky rokov. Diváci spoznávajú ich tragické ľudské osudy, prežívajú s nimi ťažké životné situácie, vďaka tomu sa prehlbuje ich schopnosť empatie aj záujem o hercov ‐ bezdomovcov. Už ich nevnímajú len ako skrachované existencie, ako rušivý element na uliciach alebo v podchodoch, vidia teraz, že sú to takí istí ľudia ako oni, len mali o niečo menej šťastia v živote. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom 3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene 4. Zručnosti – gramatika, pravopis", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\"" },
+    { id: "r-1", kind: "point", verbatim: "Divadelné umenie zbližuje ľudí ‐ hercov aj divákov. Medzi najsilnejšie zážitky skupiny patrí predstavenie v ženskej väznici, o ktorom povedala Uršuľa, že to bola veľmi silná lekcia pre obidve strany. Na týchto predstaveniach zahrajú svoje životné príbehy ľudia, ktorí mlčali desiatky rokov. Diváci spoznávajú ich tragické ľudské osudy, prežívajú s nimi ťažké životné situácie, vďaka tomu sa prehlbuje ich schopnosť empatie aj záujem o hercov ‐ bezdomovcov. Už ich nevnímajú len ako skrachované existencie, ako rušivý element na uliciach alebo v podchodoch, vidia teraz, že sú to takí istí ľudia ako oni, len mali o niečo menej šťastia v živote.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2844,6 +2854,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2867,6 +2878,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2890,6 +2902,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2913,6 +2926,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2936,6 +2950,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2959,6 +2974,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2982,6 +2998,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -3005,6 +3022,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -3028,6 +3046,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -3042,15 +3061,17 @@ export const CARDS: SecCard[] = [
     id: "slk-2022-hl-i-6", topicId: "slovakian-0-1", conceptId: "diskutujte-akej-miery-pravdive-tvrdenie-textu",
     section: "I", questionRef: "2022 HL Section I Q6",
     questionText: "Diskutujte, do akej miery je pravdivé tvrdenie z textu: „Nakupujem, teda som.“",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "„Nakupujem, teda som“ je parafrázou výroku „Myslím, teda som“. Oproti myšlienkovému a duchovnému obsahu pôvodného výroku tu ide o materiálnu podstatu. Ľudia nakupujú aj preto, že ich to teší a že si to môžu dovoliť, Uspokojí ich to. Potvrdia si tým svoj spoločenský status sami pred sebou aj pred ostatnými – pred verejnosťou. Zvýši to ich sebavedomie. Utvrdí sa v nich pocit nezávislosti, samostatnosti a vedomie, že patria k lepšie situovanej sociálnej vrstve. Z nakupovania sa stala spoločenská udalosť, nakupovať chodia celé rodiny, pretože obchodné centrá už nie sú len miestom, kde dostať všetko, ale aj miestom na posedenie, rozptýlenie, zábavu, stretnutie s priateľmi, sú tam reštaurácie, kiná, detské kútiky. Keď si človek niečo kúpil, hovorí sa aj, že si tým urobil radosť. Nakupovanie je zároveň obdarovaním seba samého. A vedomie, že človek si môže dovoliť kúpiť nejakú drahú vec alebo nejaké drahé značkové oblečenie, v človeku vzbudzuje pocit, že patrí medzi elitu. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom 3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene 4. Zručnosti – gramatika, pravopis", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-1", kind: "point", verbatim: "„Nakupujem, teda som“ je parafrázou výroku „Myslím, teda som“. Oproti myšlienkovému a duchovnému obsahu pôvodného výroku tu ide o materiálnu podstatu. Ľudia nakupujú aj preto, že ich to teší a že si to môžu dovoliť, Uspokojí ich to. Potvrdia si tým svoj spoločenský status sami pred sebou aj pred ostatnými – pred verejnosťou. Zvýši to ich sebavedomie. Utvrdí sa v nich pocit nezávislosti, samostatnosti a vedomie, že patria k lepšie situovanej sociálnej vrstve.", marks: null, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-2", kind: "point", verbatim: "Z nakupovania sa stala spoločenská udalosť, nakupovať chodia celé rodiny, pretože obchodné centrá už nie sú len miestom, kde dostať všetko, ale aj miestom na posedenie, rozptýlenie, zábavu, stretnutie s priateľmi, sú tam reštaurácie, kiná, detské kútiky. Keď si človek niečo kúpil, hovorí sa aj, že si tým urobil radosť. Nakupovanie je zároveň obdarovaním seba samého. A vedomie, že človek si môže dovoliť kúpiť nejakú drahú vec alebo nejaké drahé značkové oblečenie, v človeku vzbudzuje pocit, že patrí medzi elitu.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -3074,6 +3095,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3090,13 +3112,14 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu vysvetlite, prečo sú to najmä mladší ľudia, ktorí sa nechcú vrátiť domov na Slovensko.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Medzi 300 tisíc Slovákmi, ktorí za posledných 20 rokov odišli žiť do zahraničia, prevažujú mladí ľudia, pretože sú slobodnejší ako dospelí. Nie sú ešte usadení, nemajú rodiny a sú plní plánov a očakávaní od života. Pripravujú sa na budúci život, túžia po zážitkoch, po nových priateľoch a po dobrodružstve. .", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-1", kind: "point", verbatim: "Medzi 300 tisíc Slovákmi, ktorí za posledných 20 rokov odišli žiť do zahraničia, prevažujú mladí ľudia, pretože sú slobodnejší ako dospelí. Nie sú ešte usadení, nemajú rodiny a sú plní plánov a očakávaní od života. Pripravujú sa na budúci život, túžia po zážitkoch, po nových priateľoch a po dobrodružstve.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3113,13 +3136,14 @@ export const CARDS: SecCard[] = [
     questionText: "Na základe textu napíšte, aké dôvody lákajú mladých Slovákov odísť do zahraničia.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Niektorí mladí Slováci sa rozhodujú študovať v zahraničí, kde majú prístup k lepšiemu vzdelaniu a možnostiam rozvoja svojich zručností a schopností a naučia sa cudzie jazyky. Silnou motiváciou sú aj lepšie pracovné príležitosti, kde môžu zarábať viac a zlepšiť si svoju životnú úroveň, hovoria, že prístup k pracovným príležitostiam je férovejší ako na Slovensku, kde človek mnohokrát potrebuje známosti.Zároveň to môže byť príležitosť na rozšírenie ich kultúrnych a jazykových znalostí, čo môže byť prínosom pre ich kariéru a osobný rozvoj. Niektorí mladí Slováci sa rozhodujú odísť do zahraničia, aby objavovali nové krajiny, mestá, kultúry. .", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-1", kind: "point", verbatim: "Niektorí mladí Slováci sa rozhodujú študovať v zahraničí, kde majú prístup k lepšiemu vzdelaniu a možnostiam rozvoja svojich zručností a schopností a naučia sa cudzie jazyky. Silnou motiváciou sú aj lepšie pracovné príležitosti, kde môžu zarábať viac a zlepšiť si svoju životnú úroveň, hovoria, že prístup k pracovným príležitostiam je férovejší ako na Slovensku, kde človek mnohokrát potrebuje známosti.Zároveň to môže byť príležitosť na rozšírenie ich kultúrnych a jazykových znalostí, čo môže byť prínosom pre ich kariéru a osobný rozvoj. Niektorí mladí Slováci sa rozhodujú odísť do zahraničia, aby objavovali nové krajiny, mestá, kultúry.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3143,6 +3167,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3166,6 +3191,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3180,15 +3206,17 @@ export const CARDS: SecCard[] = [
     id: "slk-2023-hl-i-6", topicId: "slovakian-0-1", conceptId: "diskutujte-tom-znamena-pozera-slovensko-optimizmom",
     section: "I", questionRef: "2023 HL Section I Q6",
     questionText: "Diskutujte o tom, čo znamená „pozerať sa na Slovensko s optimizmom“.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pozerať sa na Slovensko s optimizmom znamená veriť v pozitívny potenciál krajiny a očakávať, že sa veci budú zlepšovať a vyvíjať sa k lepšiemu. Optimizmus sa môže zakladať na rôznych faktoroch, ako sú ekonomický rast, politická stabilita, inovácie, kultúra, kvalitné vzdelávanie a ďalšie. Ak sa niekto pozerá na Slovensko s optimizmom, môže vidieť krajinu ako miesto plné príležitostí pre rast a rozvoj, kde sú možnosti pre úspech a kde sa budú ďalej rozvíjať inovatívne a prosperujúce spoločnosti. Takýto pohľad môže pomôcť zvýšiť dôveru v Slovensko a jeho budúcnosť. . Poznámka: V 1., 2. a 3. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 % 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-1", kind: "point", verbatim: "Pozerať sa na Slovensko s optimizmom znamená veriť v pozitívny potenciál krajiny a očakávať, že sa veci budú zlepšovať a vyvíjať sa k lepšiemu. Optimizmus sa môže zakladať na rôznych faktoroch, ako sú ekonomický rast, politická stabilita, inovácie, kultúra, kvalitné vzdelávanie a ďalšie.", marks: null, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-2", kind: "point", verbatim: "Ak sa niekto pozerá na Slovensko s optimizmom, môže vidieť krajinu ako miesto plné príležitostí pre rast a rozvoj, kde sú možnosti pre úspech a kde sa budú ďalej rozvíjať inovatívne a prosperujúce spoločnosti. Takýto pohľad môže pomôcť zvýšiť dôveru v Slovensko a jeho budúcnosť.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3212,6 +3240,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3235,6 +3264,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3258,6 +3288,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3281,6 +3312,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3304,6 +3336,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3320,13 +3353,14 @@ export const CARDS: SecCard[] = [
     questionText: "Psychologička Eva Gajdošová hovorí, že závislosť kriví vnímanie, oberá človeka o schopnosť objektivity. Diskutujte v tomto zmysle o používaní mobilných telefónov.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Psychologička Eva Gajdošová upozorňuje na to, že každá závislosť kriví vnímanie, oberá človeka o schopnosť objektívne vnímať svet. Rovnako je to aj pri závislosti na mobilných telefónoch, ktorá je často spojená s nadmerným používaním sociálnych médií, ktoré môžu zvyšovať pocit neustáleho porovnávania sa s inými a vytvárať falošný obraz reality. Napríklad dievčatá sa porovnávajú s falošnými kráskami, ktoré sú upravené, vyretušované. Môže to u nich viesť k zníženému sebavedomiu, k depresiám, k anorexii. Poznámka: V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá: 1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 % 2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-1", kind: "point", verbatim: "Psychologička Eva Gajdošová upozorňuje na to, že každá závislosť kriví vnímanie, oberá človeka o schopnosť objektívne vnímať svet. Rovnako je to aj pri závislosti na mobilných telefónoch, ktorá je často spojená s nadmerným používaním sociálnych médií, ktoré môžu zvyšovať pocit neustáleho porovnávania sa s inými a vytvárať falošný obraz reality. Napríklad dievčatá sa porovnávajú s falošnými kráskami, ktoré sú upravené, vyretušované. Môže to u nich viesť k zníženému sebavedomiu, k depresiám, k anorexii.", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3350,6 +3384,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -3373,6 +3408,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -3396,6 +3432,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -3419,6 +3456,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -3442,6 +3480,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -3465,6 +3504,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -3488,6 +3528,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -3511,6 +3552,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -3534,6 +3576,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -3557,6 +3600,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -3580,6 +3624,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3603,6 +3648,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3626,6 +3672,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3642,13 +3689,14 @@ export const CARDS: SecCard[] = [
     questionText: "polopravda (4. odsek)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "polopravdy – tvrdenia, ktoré obsahujú len čiastočne pravdivú informáciu, zvyšok je klamstvo a prekrútená informácia", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-1", kind: "point", verbatim: "tvrdenia, ktoré obsahujú len čiastočne pravdivú informáciu, zvyšok je klamstvo a prekrútená informácia", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3672,6 +3720,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3695,6 +3744,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3718,6 +3768,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3741,6 +3792,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3764,6 +3816,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -3787,6 +3840,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Slovakian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Slovakian 2026 Higher Level examination paper — © State Examinations Commission.",
