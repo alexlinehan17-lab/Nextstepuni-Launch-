@@ -6316,6 +6316,332 @@
   }
  },
  {
+  "id": "lv-2023-hl-i-1-b",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "latvian-0-0",
+  "conceptId": "saliedet-komandu",
+  "questionRef": "2023 HL Section I Q1(b)",
+  "questionText": "Izskaidrojiet vārdu savienojumus un frāzes! saliedēt komandu",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "vienot",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+  }
+ },
+ {
+  "id": "lv-2023-hl-i-2",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "par-kadu-izradi-kad-kur-bobs",
+  "questionRef": "2023 HL Section I Q2",
+  "questionText": "Par kādu izrādi, kad un kur Bobs Hārtlijs runā un kuram šajā izrādē ir galvenā loma un kāds ir mērķis?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Bobs Hārtlijs runā par Latvijas hokeja izlases dalību 2017.gada Pasaules hokeja čempionātā Ķelnē, kurā galvenā, svarīgākā, nozīmīgākā loma ir izlases hokejistiem, jo “viņi ir tie, kuri gūs vārtus, bloķēs metienus, trieks bortā pretinieku”. Hokejistu mērķis ir cīnīties par uzvaru katrā spēlē, cīnīties par augstākā kaluma medaļām. Vārds zaudēt nav B.Hārtlija leksikā.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+  }
+ },
+ {
+  "id": "lv-2023-hl-i-3",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "raksturojiet-hartlija-personibu-argumentejot-faktiem-teksta",
+  "questionRef": "2023 HL Section I Q3",
+  "questionText": "Raksturojiet B.Hārtlija personību, argumentējot ar faktiem no teksta!",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "B. Hārtlijs ir pieredzējis, mērķtiecīgs treneris, kuram patīk jauni izaicinājumi, palīdzēt attīstīt talantus, sasniegt augstus rezultātus. Radošs, zinošs profesionālis, apgūst jaunas metodes, vada seminārus, dalās ar savām zināšanām un pieredzi.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme prints these paragraphs under the question, with no mark on any of them: shown as the scheme prints them, scored on the question's total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B. Hārtlijam piemīt augsta darba ētika, skaidras vērtības, kuras viņš nodod arī spēlētājiem. Viņam ir labas komunikācijas, komandas saliedēšanas spējas. Izturas pret spēlētājiem ar cieņu, kā “pret karaļiem”, izrāda interesi par katru kā personību, par viņu ģimenēm. B. Hārtlijs smagi strādā, ir piemērs citiem.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+  }
+ },
+ {
+  "id": "lv-2023-hl-i-4",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "hartlijs-raksturo-latvijas-izlases-speletaju-resursus",
+  "questionRef": "2023 HL Section I Q4",
+  "questionText": "Kā B.Hārtlijs raksturo Latvijas izlases spēlētāju resursus un kāpēc “ar vienu triku meistaru komanda neizcīna titulu”?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Latvijas spēlētāju resursi ir ierobežoti, neliela valsts, maz iedzīvotāju, “mums nebūs simtiem spēlētāju, no kuriem izvēlēties labākos”, tādēļ B.Hārtlijs komandā aicina tos, kas ir motivēti, mērķtiecīgi, gatavi strādāt komandā, jo ierobežotu spēlētāju resursu situācijā viens spēlētājs nevar uzvarēt spēles, spēcīgus pretiniekus. Vienīgais veids, ka uzvarēt ir komandas darbs, kurā visi strādā kā profesionāļi. Komanda ir mēs, nevis viņš.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+  }
+ },
+ {
+  "id": "lv-2023-hl-i-5",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "hokejs-netiek-spelets-tikai-ledus-bet",
+  "questionRef": "2023 HL Section I Q5",
+  "questionText": "“Hokejs netiek spēlēts tikai uz ledus, bet arī ģērbtuvēs,” apgalvo B.Hārtlijs. Ko treneris sagaida no spēlētājiem gan laukumā, gan ģērbtuvēs?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gan laukumā, gan ģērbtuvē treneris sagaida no spēlētājiem maksimālu koncentrēšanos, pozitīvu attieksmi gan laukumā, gan ģērbtuvēs. Spēlētāji, kuriem nav pozitīvas attieksmes, uz Ķelni netika ņemti.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme prints these paragraphs under the question, with no mark on any of them: shown as the scheme prints them, scored on the question's total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B. Hārtlijs sagaida, ka katrs spēlētājs pievērš uzmanību visām spēles niansēm, ka spēlētāji komunicē, atbalsta, uzmundrina, motivē cits citu gan laukumā, gan ārpus laukuma.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "B. Hartlijs uzskata, ka Latvijas hokejisti ir pārāk klusi. Kur spēlētājs liks ripu, ja viņš to izcīnīs? Viņš nezinās, ja viņam to nepateiks viņa komandas biedri. Komunikācijas trūkums var maksāt uzvaru.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Treneris lielu nozīmi piešķir spēlētāju vietām ģērbtuvē, lai uzturēto pozitīvu gaisotni. Ģērbtuvē ir plakāts ar komandas vērtībām, un tās tiek atkārtotas ik dienas.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+  }
+ },
+ {
+  "id": "lv-2023-hl-i-6",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "skaidrojiet-boba-harlija-apgalvojumu-vienkarsi-labi",
+  "questionRef": "2023 HL Section I Q6",
+  "questionText": "Skaidrojiet Boba Hārlija apgalvojumu “Vienkārši labi ir izcilības pretinieks. Ja tu pieņem viduvējību kā sava darba kvalitātes mēru, tu atsakies no izcilības”! Cik lielā mērā jūs tam piekrītat vai nepiekrītat?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "B. Hārtlijs aicina spēlētājus darīt savu darbu maksimāli labi ar pilnu atdevi, jo tikai tā var sasniegt augstākās virsotnes, lielas uzvaras ne tikai sportā, bet arī dzīvē: skolā, darbā un visās dzīves jomās. Nevērīga, pavirša attieksme, vienaldzība neveicina attīstību, progresu, sasniegumus, tā ir arī necieņa pret draugiem, kolēģiem, komandas biedriem – līdzcilvēkiem. Izcilība sasniedzam mērķtiecīgi, rūpīgi strādājot.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+  }
+ },
+ {
+  "id": "lv-2023-hl-ii",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2023,
+  "section": "II",
+  "topicId": "latvian-1-0",
+  "conceptId": "izsakiet-savu-viedokli-par-apgalvojumu-100",
+  "questionRef": "2023 HL Section II",
+  "questionText": "Izsakiet savu viedokli par šo apgalvojumu! (100 - 150 vārdu) “Krietnam darbam jāsākas no manis.”",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mēs katrs pats esam panākumu atslēga, nevis kāds cits, kāds no malas. Lai sasniegtu labus rezultātus, virsotnes visās dzīves jomās, pirmkārt, mums pašiem jādara maksimālais, jābūt par paraugu, piemēru, iedvesmas avotu citiem. Jāciena līdzcilvēki, jābūt augstai darba ētikai. Jādomā, jāmācās, jādara, jārīkojas, jābūt atbildīgam, sociāli aktīvam, nav jāgaida, ka manā vietā darīs citi.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme prints this one paragraph under the statement, with no mark inside it and no criteria for the part."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II DAĻA",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+  }
+ },
+ {
+  "id": "lv-2023-hl-iii-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2023,
+  "section": "III",
+  "topicId": "latvian-1-0",
+  "conceptId": "personibas-kuram-lepojamies-kuras-nes-latvijas",
+  "questionRef": "2023 HL Section III Q1",
+  "questionText": "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) “Personības, ar kurām lepojamies un kuras nes Latvijas vārdu pasaulē.”",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Skolēns raksta par Latvijā pazīstamām personībām – mūziķiem, māksliniekiem, sportistiem, kultūras un politikas darbiniekiem ‐ , kuri nes Latvijas vārdu pasaulē, sniedzot konkrētus piemērus par šo cilvēku veikumu, sasniegumiem, raksturojot gan šīs personības, gan to, kādu pienesumu tas dod Latvijas atpazīstamībai pasaulē.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme prints this paragraph under the title, with no mark inside it and no criteria for the part: an example, not a checklist."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "lv-2023-hl-iii-2",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2023,
+  "section": "III",
+  "topicId": "latvian-1-0",
+  "conceptId": "katram-roka-japieliek-lai-lielais-darbs",
+  "questionRef": "2023 HL Section III Q2",
+  "questionText": "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) “Ir katram roka jāpieliek, lai lielais darbs uz priekšu iet.“ (Rainis)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Skolēns domrakstā atklāj savu, līdzcilvēku, pazīstamu cilvēku, biedrības, sabiedrības, tautas, nācijas pieredzi kādā kopdarbā, komandas darbā, projektā, atklājot, raksturojot dalībnieku iesaistes , līdzdalības, atbildības, pienākumu nozīmi kopīgā mērķa, rezultāta sasniegšanā. Ko tas prasa no cilvēkiem gan fiziski, gan emocionāli.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme prints this paragraph under the title, with no mark inside it and no criteria for the part: an example, not a checklist."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "lv-2024-hl-i-1-a",
   "subjectId": "latvian",
   "level": "higher",
