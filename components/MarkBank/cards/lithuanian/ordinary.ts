@@ -683,6 +683,842 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-la-1-a", topicId: "lithuanian-0-0", conceptId: "koki-egzamina-laike-gediminas",
+    section: "LA", questionRef: "2022 OL Section LA Q1(a)",
+    stem: "You will hear a conversation between two friends Jūratė and Gediminas. Answer the questions in Lithuanian.",
+    questionText: "Kokį egzaminą laikė Gediminas ?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Anglų/anglų kalbos", marks: 5, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 1(a)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-la-1-b", topicId: "lithuanian-0-0", conceptId: "gediminas-egzamina-islaike-teisingai-neteisingai",
+    section: "LA", questionRef: "2022 OL Section LA Q1(b)",
+    stem: "You will hear a conversation between two friends Jūratė and Gediminas. Answer the questions in Lithuanian.",
+    questionText: "Gediminas egzaminą išlaikė. Teisingai Neteisingai",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Teisingai", marks: 5, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 1(b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-la-2-a", topicId: "lithuanian-0-0", conceptId: "gediminas-jurate-kviecia-kina-teatra-koncerta",
+    section: "LA", questionRef: "2022 OL Section LA Q2(a)",
+    stem: "You will hear a conversation between two friends Jūratė and Gediminas. Answer the questions in Lithuanian.",
+    questionText: "Gediminas Jūratę kviečia į kiną teatrą koncertą vakarėlį",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Koncertą", marks: 5, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 2(a)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-la-2-b", topicId: "lithuanian-0-0", conceptId: "jurate-gediminas-susitiks-pirmadieni-sestadieni-sekmadieni",
+    section: "LA", questionRef: "2022 OL Section LA Q2(b)",
+    stem: "You will hear a conversation between two friends Jūratė and Gediminas. Answer the questions in Lithuanian.",
+    questionText: "Jūratė ir Gediminas susitiks pirmadienį šeštadienį sekmadienį trečiadienį",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Šeštadienį", marks: 5, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 2(b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-la-3-a", topicId: "lithuanian-0-0", conceptId: "kur-vakarieniaus-jurate-gediminu",
+    section: "LA", questionRef: "2022 OL Section LA Q3(a)",
+    stem: "You will hear a conversation between two friends Jūratė and Gediminas. Answer the questions in Lithuanian.",
+    questionText: "Kur vakarieniaus Jūratė su Gediminu?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language. The scheme allows “Restorane” for 3 marks, in place of “Lietuviškų patiekalų restorane”, never beside it.", group: {"claimMax":1,"perOption":5,"options":["Lietuviškų patiekalų restorane","Restorane"],"optionMarks":[5,3],"optionOf":[null,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 3(a)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-la-3-b", topicId: "lithuanian-0-0", conceptId: "kokio-maisto-pasiilgo-gediminas-koldunu-bulviniu",
+    section: "LA", questionRef: "2022 OL Section LA Q3(b)",
+    stem: "You will hear a conversation between two friends Jūratė and Gediminas. Answer the questions in Lithuanian.",
+    questionText: "Kokio maisto pasiilgo Gediminas? koldūnų bulvinių blynų cepelinų makaronų",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cepelinų", marks: 5, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 3(b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-lb-1-a", topicId: "lithuanian-0-0", conceptId: "kaip-vadinasi-zickytes-filmas-lietuvis-laivai",
+    section: "LB", questionRef: "2022 OL Section LB Q1(a)",
+    stem: "You will hear a conversation in which film recommendations are given. Answer the questions in Lithuanian.",
+    questionText: "Kaip vadinasi G. Žickytės filmas? „Lietuvis“ „Laivai“ „Šuolis“ „Krytis“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "„Šuolis“", marks: 5, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 1(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-lb-1-b", topicId: "lithuanian-0-0", conceptId: "kudirka-buvo-grazintas-sovietu-laiva-teisingai",
+    section: "LB", questionRef: "2022 OL Section LB Q1(b)",
+    stem: "You will hear a conversation in which film recommendations are given. Answer the questions in Lithuanian.",
+    questionText: "S.Kudirka buvo grąžintas į sovietų laivą. Teisingai Neteisingai",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Teisingai", marks: 5, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 1(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-lb-2-a", topicId: "lithuanian-0-0", conceptId: "kas-filme-landsbergi-atskleidzia-lietuvos-laisves",
+    section: "LB", questionRef: "2022 OL Section LB Q2(a)",
+    stem: "You will hear a conversation in which film recommendations are given. Answer the questions in Lithuanian.",
+    questionText: "Kas filme apie V. Landsbergį atskleidžia Lietuvos laisvės istoriją?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":5,"options":["Archyviniai kadrai","Landsbergio pasakojimas"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 2(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-lb-2-b", topicId: "lithuanian-0-0", conceptId: "kelintais-metais-lietuvos-buvo-isvesti-sovietu",
+    section: "LB", questionRef: "2022 OL Section LB Q2(b)",
+    stem: "You will hear a conversation in which film recommendations are given. Answer the questions in Lithuanian.",
+    questionText: "Kelintais metais iš Lietuvos buvo išvesti sovietų kariai? 1991 1992 1993 1994",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1993", marks: 5, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 2(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-lb-3-a", topicId: "lithuanian-0-0", conceptId: "karolio-kaupinio-filmas-nova-lituania-meninis",
+    section: "LB", questionRef: "2022 OL Section LB Q3(a)",
+    stem: "You will hear a conversation in which film recommendations are given. Answer the questions in Lithuanian.",
+    questionText: "Karolio Kaupinio filmas „Nova Lituania“ yra meninis. Teisingai Neteisingai",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Teisingai", marks: 5, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 3(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-lb-3-b", topicId: "lithuanian-0-0", conceptId: "kur-gruodis-siulo-kurti-atsargine-lietuva",
+    section: "LB", questionRef: "2022 OL Section LB Q3(b)",
+    stem: "You will hear a conversation in which film recommendations are given. Answer the questions in Lithuanian.",
+    questionText: "Kur F.Gruodis siūlo kurti atsarginę Lietuvą? Azijoje Amerikoje Afrikoje Argentinoje",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Afrikoje", marks: 5, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 3(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-lc-1-a", topicId: "lithuanian-0-0", conceptId: "town-ginte-works",
+    section: "LC", questionRef: "2022 OL Section LC Q1(a)",
+    stem: "You will hear three stories about different occupations. Each story will be played three times. Answer the questions in English.",
+    questionText: "Name the town where Gintė works.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Klaipėda", marks: 5, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 1(a)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-lc-1-b", topicId: "lithuanian-0-0", conceptId: "ginte-doesn-take-temperature-seawater-true",
+    section: "LC", questionRef: "2022 OL Section LC Q1(b)",
+    stem: "You will hear three stories about different occupations. Each story will be played three times. Answer the questions in English.",
+    questionText: "Gintė doesn‘t take the temperature of the seawater. True False",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 5, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 1(b)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-lc-2", topicId: "lithuanian-0-0", conceptId: "many-years-jurgis-live-capital",
+    section: "LC", questionRef: "2022 OL Section LC Q2",
+    stem: "You will hear three stories about different occupations. Each story will be played three times. Answer the questions in English.",
+    questionText: "For how many years did Jurgis live in the capital?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "7", marks: 5, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-lc-3", topicId: "lithuanian-0-0", conceptId: "snails-hide-hot-day",
+    section: "LC", questionRef: "2022 OL Section LC Q3",
+    stem: "You will hear three stories about different occupations. Each story will be played three times. Answer the questions in English.",
+    questionText: "Where do the snails hide on a hot day? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":5,"options":["Under cabbage leaves","Under horseradish leaves","Under wooden planks/boards"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-ld-1-a", topicId: "lithuanian-0-0", conceptId: "ice-cream-first-appeared-lithuanian-cuisine",
+    section: "LD", questionRef: "2022 OL Section LD Q1(a)",
+    questionText: "Ice cream first appeared in Lithuanian cuisine in the 8th century.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 5, contextNote: "For “Ice cream first appeared in Lithuanian cuisine in the 8th century.”: The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 1(a)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-ld-1-b", topicId: "lithuanian-0-0", conceptId: "first-lithuanian-dessert-cucumbers-honey",
+    section: "LD", questionRef: "2022 OL Section LD Q1(b)",
+    questionText: "The first Lithuanian dessert was cucumbers with honey.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 5, contextNote: "For “The first Lithuanian dessert was cucumbers with honey.”: The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 1(b)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-ld-2-a", topicId: "lithuanian-0-0", conceptId: "tourists-spend-almost-half-budget-food",
+    section: "LD", questionRef: "2022 OL Section LD Q2(a)",
+    questionText: "The tourists spend almost half of their budget on food.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 5, contextNote: "For “The tourists spend almost half of their budget on food.”: The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 2(a)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-ld-2-b", topicId: "lithuanian-0-0", conceptId: "colour-cold-beetroot-soup-centre-communication",
+    section: "LD", questionRef: "2022 OL Section LD Q2(b)",
+    questionText: "The colour of the cold beetroot soup is at the centre of a communication campaign in Lithuania.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 5, contextNote: "For “The colour of the cold beetroot soup is at the centre of a communication campaign in Lithuania.”: The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 2(b)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-le-1-a", topicId: "lithuanian-0-0", conceptId: "lowest-temperature-varena-sunday-true-false",
+    section: "LE", questionRef: "2022 OL Section LE Q1(a)",
+    stem: "You will hear two news items. Each item will be played three times. Answer the questions in English.",
+    questionText: "The lowest temperature was in Varėna on Sunday. True False",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 5, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section E — Question 1(a)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section E · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-le-1-b", topicId: "lithuanian-0-0", conceptId: "many-degrees-varena-sunday",
+    section: "LE", questionRef: "2022 OL Section LE Q1(b)",
+    stem: "You will hear two news items. Each item will be played three times. Answer the questions in English.",
+    questionText: "How many degrees was it in Varėna on Sunday?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "-27", marks: 5, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section E — Question 1(b)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section E · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-le-2-a", topicId: "lithuanian-0-0", conceptId: "treasure-dates-back-period-duke-jogaila",
+    section: "LE", questionRef: "2022 OL Section LE Q2(a)",
+    stem: "You will hear two news items. Each item will be played three times. Answer the questions in English.",
+    questionText: "The treasure dates back to the period of which Duke? Jogaila Gediminas Vytautas Skirgaila",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Jogaila", marks: 5, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section E — Question 2(a)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section E · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-le-2-b", topicId: "lithuanian-0-0", conceptId: "kind-person-might-treasure-belonged",
+    section: "LE", questionRef: "2022 OL Section LE Q2(b)",
+    stem: "You will hear two news items. Each item will be played three times. Answer the questions in English.",
+    questionText: "What kind of person might the treasure have belonged to?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":5,"options":["Rich","Noble/royal"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section E — Question 2(b)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section E · listening",
+          "title": "2022 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC550GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2023 Ordinary Level — © State Examinations Commission.",
