@@ -150775,5 +150775,5133 @@
   "tariffModel": {
    "kind": "fixed"
   }
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q1-a",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-10",
+  "conceptId": "mus-called-excerpt-played-theme",
+  "questionRef": "2022 HL Listening Q1(a) — Deferred sitting",
+  "questionText": "The theme played in this excerpt is called",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 1",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 3,
+     "r": [
+      0.08,
+      0.215,
+      0.92,
+      0.295
+     ]
+    }
+   ]
+  },
+  "stem": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played twice. Answer (a) and (b).",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 1",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Descending theme",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q1-a-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q1-b-i",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-10",
+  "conceptId": "mus-compositional-excerpt-technique-this",
+  "questionRef": "2022 HL Listening Q1(b)(i) — Deferred sitting",
+  "questionText": "A compositional technique used in this excerpt is",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 1",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 3,
+     "r": [
+      0.08,
+      0.315,
+      0.92,
+      0.45
+     ]
+    }
+   ]
+  },
+  "stem": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played twice. Answer (a) and (b).",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 1",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Countermelody",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q1-b-i-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q1-b-ii",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-10",
+  "conceptId": "mus-answer-describe-excerpt-instrumentation",
+  "questionRef": "2022 HL Listening Q1(b)(ii) — Deferred sitting",
+  "questionText": "Describe how this technique is used in this excerpt, referring to the instrumentation in your answer.",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 1",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 3,
+     "r": [
+      0.08,
+      0.466,
+      0.92,
+      0.684
+     ]
+    }
+   ]
+  },
+  "stem": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played twice. Answer (a) and (b).",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 1",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(Descending theme on strings). Countermelody played on bassoon/lower strings",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q1-b-ii-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q1-c",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-10",
+  "conceptId": "mus-above-insert-melody-missing",
+  "questionRef": "2022 HL Listening Q1(c) — Deferred sitting",
+  "questionText": "Insert the 5 missing melody notes at X on the score above.",
+  "totalMarks": 2.5,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 1",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 4,
+     "r": [
+      0.08,
+      0.301,
+      0.92,
+      0.33
+     ]
+    }
+   ]
+  },
+  "stem": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played twice more. An outline score of bars 1–8 of the music in this excerpt is printed below. Answer (c) and (d).",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 1",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Pitch 0.5 X 5",
+    "marks": 2.5,
+    "permittedMarks": [
+     0,
+     0.5,
+     1,
+     1.5,
+     2,
+     2.5
+    ],
+    "contextNote": "The scheme prints its answer in music notation: its print is shown on this card."
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q1-c-score",
+  "questionFigureIncludesPrompt": true,
+  "figureKey": "music-2022-HL-deferred-scheme-p10-l-q1-c"
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q1-d",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-10",
+  "conceptId": "mus-cadence-excerpt-identify",
+  "questionRef": "2022 HL Listening Q1(d) — Deferred sitting",
+  "questionText": "Identify the cadence at the end of the excerpt.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 1",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 4,
+     "r": [
+      0.08,
+      0.352,
+      0.92,
+      0.432
+     ]
+    }
+   ]
+  },
+  "stem": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played twice more. An outline score of bars 1–8 of the music in this excerpt is printed below. Answer (c) and (d).",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 1",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Perfect cadence",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q1-d-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q1-e",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-10",
+  "conceptId": "mus-beginning-played-strings-theme",
+  "questionRef": "2022 HL Listening Q1(e) — Deferred sitting",
+  "questionText": "At the beginning, the theme played by the upper strings is",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 1",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 5,
+     "r": [
+      0.08,
+      0.096,
+      0.92,
+      0.232
+     ]
+    }
+   ]
+  },
+  "stem": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "an inversion of the theme in Excerpt 1",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q1-e-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q1-f",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-10",
+  "conceptId": "mus-beginning-excerpt-identify-instrumental",
+  "questionRef": "2022 HL Listening Q1(f) — Deferred sitting",
+  "questionText": "Identify an instrumental technique used at the beginning of the excerpt.",
+  "totalMarks": 1.5,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 1",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 5,
+     "r": [
+      0.08,
+      0.247,
+      0.92,
+      0.326
+     ]
+    }
+   ]
+  },
+  "stem": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pizzicato",
+    "marks": 1.5
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q1-f-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q1-g",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-10",
+  "conceptId": "mus-excerpt-first-halfway-heard",
+  "questionRef": "2022 HL Listening Q1(g) — Deferred sitting",
+  "questionText": "Name the theme that is heard for the first time halfway through the excerpt.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 1",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 5,
+     "r": [
+      0.08,
+      0.347,
+      0.92,
+      0.426
+     ]
+    }
+   ]
+  },
+  "stem": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "March theme",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q1-g-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q1-h",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-10",
+  "conceptId": "mus-features-identify-theme-this",
+  "questionRef": "2022 HL Listening Q1(h) — Deferred sitting",
+  "questionText": "Identify two features of this theme.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 1",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 5,
+     "r": [
+      0.08,
+      0.446,
+      0.92,
+      0.713
+     ]
+    }
+   ]
+  },
+  "stem": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Features of the theme",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Syncopation",
+      "dotted rhythms",
+      "two four bar phrases"
+     ]
+    },
+    "contextNote": "The scheme reads: “Identification of two valid features of the theme heard halfway through the excerpt.” “For example, feature:” “1 + 1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q1-h-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q1-i",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-10",
+  "conceptId": "mus-excerpt-from-movement-section",
+  "questionRef": "2022 HL Listening Q1(i) — Deferred sitting",
+  "questionText": "Which section of the movement is this excerpt taken from?",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 1",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 6,
+     "r": [
+      0.08,
+      0.096,
+      0.92,
+      0.175
+     ]
+    }
+   ]
+  },
+  "stem": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Coda",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q1-i-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q1-j",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-10",
+  "conceptId": "mus-fixe-instrument-melody-opening",
+  "questionRef": "2022 HL Listening Q1(j) — Deferred sitting",
+  "questionText": "The instrument on which the opening melody (the idée fixe) is played is",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 1",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 6,
+     "r": [
+      0.08,
+      0.196,
+      0.92,
+      0.275
+     ]
+    }
+   ]
+  },
+  "stem": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Clarinet",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q1-j-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q1-k",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-10",
+  "conceptId": "mus-explain-fixe-term",
+  "questionRef": "2022 HL Listening Q1(k) — Deferred sitting",
+  "questionText": "Explain the term idée fixe.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 1",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 6,
+     "r": [
+      0.08,
+      0.295,
+      0.92,
+      0.435
+     ]
+    }
+   ]
+  },
+  "stem": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Any valid explanation of idée fixe",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "The scheme reads: “For example:” “A recurring theme (which varies according to the demands of the programme)” “Partially correct answer = 1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q1-k-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q1-l",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-10",
+  "conceptId": "mus-after-describe-dramatic-fixe",
+  "questionRef": "2022 HL Listening Q1(l) — Deferred sitting",
+  "questionText": "A very dramatic moment occurs immediately after we hear the idée fixe. Describe what happens in the music at this point.",
+  "totalMarks": 3,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 1",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 6,
+     "r": [
+      0.08,
+      0.456,
+      0.92,
+      0.704
+     ]
+    }
+   ]
+  },
+  "stem": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Up to three marks for a valid description of the music heard immediately after the idée fixe in the excerpt.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "The scheme reads: “For example:” “A G minor block chord, ff on full orchestra, to depict the execution; three pizz. descending notes followed by silence (except for a drum roll). Then a fanfare-like ending.” “Award for quality: 0, 1, 2 or 3”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q1-l-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q1-m",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-10",
+  "conceptId": "mus-ends-excerpt",
+  "questionRef": "2022 HL Listening Q1(m) — Deferred sitting",
+  "questionText": "The excerpt ends in the key of",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 1",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 6,
+     "r": [
+      0.08,
+      0.724,
+      0.92,
+      0.86
+     ]
+    }
+   ]
+  },
+  "stem": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 1 · Excerpt 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "G major",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q1-m-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q2-a-i",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-12",
+  "conceptId": "mus-excerpt-name-recording-technique",
+  "questionRef": "2022 HL Listening Q2(a)(i) — Deferred sitting",
+  "questionText": "Name a recording technique used in this excerpt.",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 2",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 8,
+     "r": [
+      0.08,
+      0.352,
+      0.92,
+      0.432
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from She’s Leaving Home by the Beatles will be played three times.\n• The lyrics are printed below. Line 1 Friday morning at nine o’clock she is far away. Line 2 Waiting to keep the appointment she made. Line 3 Meeting a man from the motor trade. Line 4 She (what did we do that was wrong?) Line 5 Is having (we didn’t know it was wrong.) Line 6 Fun (Fun is the one thing that money can’t buy.) Line 7 Something inside, that was always denied, for so many years. Line 8 She’s leaving home, (bye, bye.)\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A recording technique",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Overdubbing / layering",
+      "panning",
+      "multitracking",
+      "reverberation"
+     ]
+    },
+    "contextNote": "The scheme reads: “Identification of a recording technique used in the excerpt.” “For example:”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q2-a-i-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q2-a-ii",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-12",
+  "conceptId": "mus-brief-description-give-technique",
+  "questionRef": "2022 HL Listening Q2(a)(ii) — Deferred sitting",
+  "questionText": "Give a brief description of this technique.",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 2",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 8,
+     "r": [
+      0.08,
+      0.435,
+      0.92,
+      0.605
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from She’s Leaving Home by the Beatles will be played three times.\n• The lyrics are printed below. Line 1 Friday morning at nine o’clock she is far away. Line 2 Waiting to keep the appointment she made. Line 3 Meeting a man from the motor trade. Line 4 She (what did we do that was wrong?) Line 5 Is having (we didn’t know it was wrong.) Line 6 Fun (Fun is the one thing that money can’t buy.) Line 7 Something inside, that was always denied, for so many years. Line 8 She’s leaving home, (bye, bye.)\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "unprinted": true,
+    "contextNote": "The scheme reads: “Description of this recording technique”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q2-a-ii-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q2-b",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-12",
+  "conceptId": "mus-appointment-heard-instrumental-keep",
+  "questionRef": "2022 HL Listening Q2(b) — Deferred sitting",
+  "questionText": "Which instrumental technique can be heard at the words ‘Waiting to keep the appointment she made’ (line 2)?",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 2",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 8,
+     "r": [
+      0.08,
+      0.626,
+      0.92,
+      0.722
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from She’s Leaving Home by the Beatles will be played three times.\n• The lyrics are printed below. Line 1 Friday morning at nine o’clock she is far away. Line 2 Waiting to keep the appointment she made. Line 3 Meeting a man from the motor trade. Line 4 She (what did we do that was wrong?) Line 5 Is having (we didn’t know it was wrong.) Line 6 Fun (Fun is the one thing that money can’t buy.) Line 7 Something inside, that was always denied, for so many years. Line 8 She’s leaving home, (bye, bye.)\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tremolo strings",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q2-b-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q2-c-i",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-12",
+  "conceptId": "mus-beginning-texture",
+  "questionRef": "2022 HL Listening Q2(c)(i) — Deferred sitting",
+  "questionText": "The texture at the beginning is",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 2",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 8,
+     "r": [
+      0.08,
+      0.725,
+      0.92,
+      0.86
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from She’s Leaving Home by the Beatles will be played three times.\n• The lyrics are printed below. Line 1 Friday morning at nine o’clock she is far away. Line 2 Waiting to keep the appointment she made. Line 3 Meeting a man from the motor trade. Line 4 She (what did we do that was wrong?) Line 5 Is having (we didn’t know it was wrong.) Line 6 Fun (Fun is the one thing that money can’t buy.) Line 7 Something inside, that was always denied, for so many years. Line 8 She’s leaving home, (bye, bye.)\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Homophonic",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q2-c-i-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q2-c-ii",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-12",
+  "conceptId": "mus-changes-describe-excerpt-later",
+  "questionRef": "2022 HL Listening Q2(c)(ii) — Deferred sitting",
+  "questionText": "Describe how the texture changes later in the excerpt.",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 2",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 9,
+     "r": [
+      0.08,
+      0.062,
+      0.92,
+      0.232
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from She’s Leaving Home by the Beatles will be played three times.\n• The lyrics are printed below. Line 1 Friday morning at nine o’clock she is far away. Line 2 Waiting to keep the appointment she made. Line 3 Meeting a man from the motor trade. Line 4 She (what did we do that was wrong?) Line 5 Is having (we didn’t know it was wrong.) Line 6 Fun (Fun is the one thing that money can’t buy.) Line 7 Something inside, that was always denied, for so many years. Line 8 She’s leaving home, (bye, bye.)\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The texture becomes polyphonic later in the excerpt; three / four part counterpoint",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q2-c-ii-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q2-d",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-12",
+  "conceptId": "mus-accompaniment-describe-feature-lines",
+  "questionRef": "2022 HL Listening Q2(d) — Deferred sitting",
+  "questionText": "Describe one feature of the accompaniment in lines 4–6.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 2",
+   "pages": [
+    8,
+    9
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 9,
+     "r": [
+      0.08,
+      0.252,
+      0.92,
+      0.392
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from She’s Leaving Home by the Beatles will be played three times.\n• The lyrics are printed below. Line 1 Friday morning at nine o’clock she is far away. Line 2 Waiting to keep the appointment she made. Line 3 Meeting a man from the motor trade. Line 4 She (what did we do that was wrong?) Line 5 Is having (we didn’t know it was wrong.) Line 6 Fun (Fun is the one thing that money can’t buy.) Line 7 Something inside, that was always denied, for so many years. Line 8 She’s leaving home, (bye, bye.)\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A feature of the accompaniment",
+    "marks": null,
+    "openList": false,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Repeated note motif on violins",
+      "arpeggio figure on lower strings",
+      "sustained note in lower strings",
+      "correct reference to rhythm"
+     ]
+    },
+    "contextNote": "The scheme reads: “Up to two marks for a valid description of one feature of the accompaniment in lines 4 – 6.” “Partially correct answer = 1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q2-d-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q2-e",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-12",
+  "conceptId": "mus-beatles-classical-describe-each",
+  "questionRef": "2022 HL Listening Q2(e) — Deferred sitting",
+  "questionText": "This song is a fusion of classical and pop styles. Describe one feature of each style, as used by the Beatles in this excerpt.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 2",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 9,
+     "r": [
+      0.08,
+      0.413,
+      0.92,
+      0.757
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from She’s Leaving Home by the Beatles will be played three times.\n• The lyrics are printed below. Line 1 Friday morning at nine o’clock she is far away. Line 2 Waiting to keep the appointment she made. Line 3 Meeting a man from the motor trade. Line 4 She (what did we do that was wrong?) Line 5 Is having (we didn’t know it was wrong.) Line 6 Fun (Fun is the one thing that money can’t buy.) Line 7 Something inside, that was always denied, for so many years. Line 8 She’s leaving home, (bye, bye.)\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A classical feature",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Classical instruments / String nonet and harp",
+      "instrumental / vocal counterpoint"
+     ]
+    },
+    "contextNote": "The scheme reads: “One mark for a description of a valid classical feature and one mark for identification of a valid pop feature in She’s Leaving Home” “For example:” “1 + 1”"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "A pop feature",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Relaxed vocals",
+      "ballad style/story telling"
+     ]
+    },
+    "contextNote": "The scheme reads: “For example:”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q2-e-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q3-a",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-9",
+  "conceptId": "mus-cadenza-does-known-movement",
+  "questionRef": "2022 HL Listening Q3(a) — Deferred sitting",
+  "questionText": "This section is known as the cadenza. In which section of the movement does it occur?",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 3",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 10,
+     "r": [
+      0.08,
+      0.181,
+      0.92,
+      0.261
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Piano Concerto in A major K488 by Mozart will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Recapitulation",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q3-a-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q3-b",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-9",
+  "conceptId": "mus-cadenza-explain-term",
+  "questionRef": "2022 HL Listening Q3(b) — Deferred sitting",
+  "questionText": "Explain the term cadenza.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 3",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 10,
+     "r": [
+      0.08,
+      0.281,
+      0.92,
+      0.451
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Piano Concerto in A major K488 by Mozart will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Up to two marks for a valid explanation of the term cadenza.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "The scheme reads: “For example:” “Solo passage played to show off the performer’s technical ability. It sounds improvised and consists of running scales, broken chords, trills, triplets” “Partially correct answer = 1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q3-b-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q3-c",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-9",
+  "conceptId": "mus-excerpt-features-identify-music",
+  "questionRef": "2022 HL Listening Q3(c) — Deferred sitting",
+  "questionText": "Identify three features of the music in this excerpt.",
+  "totalMarks": 3,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 3",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 10,
+     "r": [
+      0.08,
+      0.472,
+      0.92,
+      0.773
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Piano Concerto in A major K488 by Mozart will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Features of the music",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "Scale passages",
+      "arpeggio movement",
+      "octave leaps",
+      "chromatic movement",
+      "semiquaver / demisemiquaver movement",
+      "trills",
+      "triplets"
+     ]
+    },
+    "contextNote": "The scheme reads: “One mark for each of three valid features of the music in this excerpt:” “For example:” “1 + 1 + 1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q3-c-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q3-d",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-9",
+  "conceptId": "mus-cadence-excerpt",
+  "questionRef": "2022 HL Listening Q3(d) — Deferred sitting",
+  "questionText": "The cadence at the end of the excerpt is",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 3",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 11,
+     "r": [
+      0.08,
+      0.062,
+      0.92,
+      0.197
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Piano Concerto in A major K488 by Mozart will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Perfect cadence",
+    "marks": 2
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q3-d-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q3-e",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-9",
+  "conceptId": "mus-after-cadenza-concerto-continues",
+  "questionRef": "2022 HL Listening Q3(e) — Deferred sitting",
+  "questionText": "Describe how the music continues immediately after this cadenza section in Piano Concerto K488 by Mozart.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 3",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 11,
+     "r": [
+      0.08,
+      0.213,
+      0.92,
+      0.46
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Piano Concerto in A major K488 by Mozart will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Up to two marks for a valid description of how the music continues immediately after the cadenza in Piano Concerto in A major K488 by Mozart (Bars 299 – 314)",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "The scheme reads: “For example:” “The piano drops out; the full orchestra plays the Coda; the music uses material from theme D / B2; dialogue / imitation between violins and flute / low strings and horn” “Partially correct answer = 1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q3-e-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q4-a",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-11",
+  "conceptId": "mus-based-excerpt-name-that",
+  "questionRef": "2022 HL Listening Q4(a) — Deferred sitting",
+  "questionText": "Name the theme that this excerpt is based on.",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 4",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 12,
+     "r": [
+      0.08,
+      0.164,
+      0.92,
+      0.243
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Seachanges (with Danse Macabre) by Raymond Deane will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dies Irae",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q4-a-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q4-b",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-11",
+  "conceptId": "mus-excerpt-instruments-name-play",
+  "questionRef": "2022 HL Listening Q4(b) — Deferred sitting",
+  "questionText": "Name three instruments that play in this excerpt.",
+  "totalMarks": 1.5,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 4",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 12,
+     "r": [
+      0.08,
+      0.264,
+      0.92,
+      0.343
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Seachanges (with Danse Macabre) by Raymond Deane will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Instruments that play",
+    "marks": null,
+    "openList": false,
+    "group": {
+     "claimMax": 3,
+     "perOption": 0.5,
+     "options": [
+      "Guiro",
+      "Marimba",
+      "Violin",
+      "Cello",
+      "Piccolo",
+      "Piano"
+     ]
+    },
+    "contextNote": "The scheme reads: “(any three correct instruments)” “0.5 + 0.5 + 0.5”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q4-b-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q4-c-i",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-11",
+  "conceptId": "mus-excerpt-instrumental-technique-this",
+  "questionRef": "2022 HL Listening Q4(c)(i) — Deferred sitting",
+  "questionText": "An instrumental technique used in this excerpt is",
+  "totalMarks": 0.5,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 4",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 12,
+     "r": [
+      0.08,
+      0.364,
+      0.92,
+      0.443
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Seachanges (with Danse Macabre) by Raymond Deane will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An instrumental technique",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 0.5,
+     "options": [
+      "sul ponticello"
+     ]
+    },
+    "contextNote": "The scheme reads: “0.5 mark for an identification of an instrumental technique used in this excerpt:” “For example:”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q4-c-i-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q4-c-ii",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-11",
+  "conceptId": "mus-explain-technique-this",
+  "questionRef": "2022 HL Listening Q4(c)(ii) — Deferred sitting",
+  "questionText": "Explain this technique.",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 4",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 12,
+     "r": [
+      0.08,
+      0.447,
+      0.92,
+      0.587
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Seachanges (with Danse Macabre) by Raymond Deane will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "One mark for an explanation of the instrumental technique identified.",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "The scheme reads: “For example:” “Sul ponticello. The bow is played near / over / across /above / below / on / at the bridge (of the violin and / or cello)”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q4-c-ii-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q4-d",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-11",
+  "conceptId": "mus-based-begins-briefly-canon",
+  "questionRef": "2022 HL Listening Q4(d) — Deferred sitting",
+  "questionText": "This section is based on a canon. Describe briefly how this canon begins and proceeds.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 4",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 12,
+     "r": [
+      0.08,
+      0.607,
+      0.92,
+      0.838
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Seachanges (with Danse Macabre) by Raymond Deane will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Up to two marks for a description of how the canon begins and proceeds in the excerpt",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "The scheme reads: “For example feature:” “Canon begins on marimba and followed by violin one bar later. This is the inversion of the Dies Irae melody” “Partially correct answer = 1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q4-d-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q4-e",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-11",
+  "conceptId": "mus-century-deane-describe-excerpt",
+  "questionRef": "2022 HL Listening Q4(e) — Deferred sitting",
+  "questionText": "Describe two features of 20th Century Music as used by Raymond Deane in this excerpt.",
+  "totalMarks": 4,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 4",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 13,
+     "r": [
+      0.08,
+      0.062,
+      0.92,
+      0.509
+     ]
+    }
+   ]
+  },
+  "stem": "An excerpt from Seachanges (with Danse Macabre) by Raymond Deane will be played three times.\n• Answer the following questions:",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 4",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "secFileid": "LC067ZLP045EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP045EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Features of 20th century music",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Use of small melodic motifs",
+      "inversion",
+      "sul ponticello",
+      "changing time signatures"
+     ]
+    },
+    "contextNote": "The scheme reads: “Up to two marks each for a description of any two features of 20th century music as used by Raymond Deane in the excerpt:” “For example feature:” “Partially correct answer = 1” “2 + 2”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q4-e-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q5-a-a",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-2",
+  "conceptId": "mus-excerpt-features-heard-identify",
+  "questionRef": "2022 HL Listening Q5 A(a) — Deferred sitting",
+  "questionText": "Identify two features of the sean-nós style of singing as heard in this excerpt.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 5",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 14,
+     "r": [
+      0.08,
+      0.232,
+      0.92,
+      0.342
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions. A You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · Excerpt 1",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Features of sean-nós singing",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Ornamentation",
+      "free rhythm",
+      "nasal tone"
+     ]
+    },
+    "contextNote": "The scheme reads: “One mark each for any two valid features of the style of sean-nós singing as heard in the excerpt” “For example:” “1+1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q5-a-a-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q5-a-b",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-2",
+  "conceptId": "mus-accompaniment-describe",
+  "questionRef": "2022 HL Listening Q5 A(b) — Deferred sitting",
+  "questionText": "Describe the accompaniment.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 5",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 14,
+     "r": [
+      0.08,
+      0.345,
+      0.92,
+      0.516
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions. A You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · Excerpt 1",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Up to two marks for a description of the accompaniment in the excerpt",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "The scheme reads: “For example:” “String orchestra. playing mainly legato sustained chords. Harp plays broken chords and block chords” “Partially correct = 1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q5-a-b-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q5-a-c",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-2",
+  "conceptId": "mus-dance-excerpt-heard-identify",
+  "questionRef": "2022 HL Listening Q5 A(c) — Deferred sitting",
+  "questionText": "Identify the type of dance heard in this excerpt, and its time signature.",
+  "totalMarks": 4,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 5",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 14,
+     "r": [
+      0.08,
+      0.57,
+      0.92,
+      0.68
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions. A You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · Excerpt 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Jig",
+    "marks": 2,
+    "contextNote": "The scheme reads: “2+2”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Time signature",
+    "marks": 2,
+    "ask": true,
+    "contextNote": "The scheme prints its answer in music notation: its print is shown on this card."
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q5-a-c-score",
+  "questionFigureIncludesPrompt": true,
+  "figureKey": "music-2022-HL-deferred-scheme-p15-l-q5-a-c"
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q5-a-d",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-2",
+  "conceptId": "mus-associated-dance-rhythm-this",
+  "questionRef": "2022 HL Listening Q5 A(d) — Deferred sitting",
+  "questionText": "Write one bar of rhythm associated with this type of dance.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 5",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 14,
+     "r": [
+      0.08,
+      0.683,
+      0.92,
+      0.772
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions. A You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · Excerpt 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "unprinted": true,
+    "contextNote": "The scheme reads: “Any correct bar of jig rhythm”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q5-a-d-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q5-a-e",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-2",
+  "conceptId": "mus-dance-down-excerpt-form",
+  "questionRef": "2022 HL Listening Q5 A(e) — Deferred sitting",
+  "questionText": "Using letters, write down the form of the dance tune heard in this excerpt.",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 5",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 14,
+     "r": [
+      0.08,
+      0.776,
+      0.92,
+      0.856
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions. A You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · Excerpt 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "AABB",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q5-a-e-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q5-a-f",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-2",
+  "conceptId": "mus-excerpt-fusion-instruments-irish",
+  "questionRef": "2022 HL Listening Q5 A(f) — Deferred sitting",
+  "questionText": "This excerpt is a fusion of Irish traditional music and jazz. Name two instruments that play the melody in this excerpt.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 5",
+   "pages": [
+    15
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 15,
+     "r": [
+      0.08,
+      0.096,
+      0.92,
+      0.222
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions. A You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · Excerpt 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Instruments that play the melody",
+    "marks": null,
+    "openList": false,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Piano",
+      "(button) accordion",
+      "violin"
+     ]
+    },
+    "contextNote": "The scheme reads: “(Any two correct instruments)” “1+1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q5-a-f-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q5-a-g",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-2",
+  "conceptId": "mus-accompaniment-features-identify-non-traditional",
+  "questionRef": "2022 HL Listening Q5 A(g) — Deferred sitting",
+  "questionText": "Identify two non-traditional features of the accompaniment.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 5",
+   "pages": [
+    15
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 15,
+     "r": [
+      0.08,
+      0.243,
+      0.92,
+      0.553
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions. A You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 5 · Excerpt 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Non-traditional features of the accompaniment",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Saxophone playing an improvised descant",
+      "piano plays jazz melodic fragments",
+      "harmony",
+      "blues notes",
+      "syncopation",
+      "improvisation"
+     ]
+    },
+    "contextNote": "The scheme reads: “One mark each for any two valid non-traditional features of the accompaniment” “For example:” “1+1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q5-a-g-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q5-b-i",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-13",
+  "conceptId": "mus-account-answer-harping-ireland",
+  "questionRef": "2022 HL Listening Q5 B(i) — Deferred sitting",
+  "questionText": "Write an account of the harping tradition in Ireland. Refer to performers and music in your answer.",
+  "totalMarks": 10,
+  "schemePages": [
+   16
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+   ],
+   "criteria": [
+    {
+     "id": "quality",
+     "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Excellent awareness and detailed knowledge of musical features of topic",
+       "marks": [
+        10
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Very good knowledge of musical features of chosen topic",
+       "marks": [
+        8,
+        9
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Good knowledge of topic, but lacking in detail",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Some general points on topic, but lacking sufficient detail",
+       "marks": [
+        4,
+        5
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Generally inadequate response to chosen topic.",
+       "marks": [
+        2,
+        3
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Little response to chosen topic in evidence.",
+       "marks": [
+        1
+       ],
+       "guidance": []
+      },
+      {
+       "label": "No response to chosen topic in evidence.",
+       "marks": [
+        0
+       ],
+       "guidance": []
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Question 5 B",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 16,
+     "r": [
+      0.08,
+      0.098,
+      0.92,
+      0.137
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:"
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q5-b-ii",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-13",
+  "conceptId": "mus-american-answer-discuss-examples",
+  "questionRef": "2022 HL Listening Q5 B(ii) — Deferred sitting",
+  "questionText": "Discuss the ways in which Irish music has influenced North American music. In your answer refer to performing styles and musical examples.",
+  "totalMarks": 10,
+  "schemePages": [
+   16
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+   ],
+   "criteria": [
+    {
+     "id": "quality",
+     "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Excellent awareness and detailed knowledge of musical features of topic",
+       "marks": [
+        10
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Very good knowledge of musical features of chosen topic",
+       "marks": [
+        8,
+        9
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Good knowledge of topic, but lacking in detail",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Some general points on topic, but lacking sufficient detail",
+       "marks": [
+        4,
+        5
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Generally inadequate response to chosen topic.",
+       "marks": [
+        2,
+        3
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Little response to chosen topic in evidence.",
+       "marks": [
+        1
+       ],
+       "guidance": []
+      },
+      {
+       "label": "No response to chosen topic in evidence.",
+       "marks": [
+        0
+       ],
+       "guidance": []
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Question 5 B",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 16,
+     "r": [
+      0.08,
+      0.145,
+      0.92,
+      0.184
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:"
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q5-b-iii",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-13",
+  "conceptId": "mus-band-context-development-discuss",
+  "questionRef": "2022 HL Listening Q5 B(iii) — Deferred sitting",
+  "questionText": "Discuss the development of the céilí band tradition in the context of Irish traditional music.",
+  "totalMarks": 10,
+  "schemePages": [
+   16
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+   ],
+   "criteria": [
+    {
+     "id": "quality",
+     "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Excellent awareness and detailed knowledge of musical features of topic",
+       "marks": [
+        10
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Very good knowledge of musical features of chosen topic",
+       "marks": [
+        8,
+        9
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Good knowledge of topic, but lacking in detail",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Some general points on topic, but lacking sufficient detail",
+       "marks": [
+        4,
+        5
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Generally inadequate response to chosen topic.",
+       "marks": [
+        2,
+        3
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Little response to chosen topic in evidence.",
+       "marks": [
+        1
+       ],
+       "guidance": []
+      },
+      {
+       "label": "No response to chosen topic in evidence.",
+       "marks": [
+        0
+       ],
+       "guidance": []
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Question 5 B",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 16,
+     "r": [
+      0.08,
+      0.192,
+      0.92,
+      0.215
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:"
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q5-b-iv",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-13",
+  "conceptId": "mus-account-answer-features-irish",
+  "questionRef": "2022 HL Listening Q5 B(iv) — Deferred sitting",
+  "questionText": "Write an account of the Irish tradition of sean-nós singing and its features. Refer to singers and performances or recordings in your answer.",
+  "totalMarks": 10,
+  "schemePages": [
+   16
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+   ],
+   "criteria": [
+    {
+     "id": "quality",
+     "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Excellent awareness and detailed knowledge of musical features of topic",
+       "marks": [
+        10
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Very good knowledge of musical features of chosen topic",
+       "marks": [
+        8,
+        9
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Good knowledge of topic, but lacking in detail",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Some general points on topic, but lacking sufficient detail",
+       "marks": [
+        4,
+        5
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Generally inadequate response to chosen topic.",
+       "marks": [
+        2,
+        3
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Little response to chosen topic in evidence.",
+       "marks": [
+        1
+       ],
+       "guidance": []
+      },
+      {
+       "label": "No response to chosen topic in evidence.",
+       "marks": [
+        0
+       ],
+       "guidance": []
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Question 5 B",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 16,
+     "r": [
+      0.08,
+      0.222,
+      0.92,
+      0.262
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:"
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q5-b-v",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-13",
+  "conceptId": "mus-answer-describe-different-examples",
+  "questionRef": "2022 HL Listening Q5 B(v) — Deferred sitting",
+  "questionText": "Describe the different ways in which ornamentation is used in Irish traditional music. In your answer refer to musical examples.",
+  "totalMarks": 10,
+  "schemePages": [
+   16
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+   ],
+   "criteria": [
+    {
+     "id": "quality",
+     "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Excellent awareness and detailed knowledge of musical features of topic",
+       "marks": [
+        10
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Very good knowledge of musical features of chosen topic",
+       "marks": [
+        8,
+        9
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Good knowledge of topic, but lacking in detail",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Some general points on topic, but lacking sufficient detail",
+       "marks": [
+        4,
+        5
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Generally inadequate response to chosen topic.",
+       "marks": [
+        2,
+        3
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Little response to chosen topic in evidence.",
+       "marks": [
+        1
+       ],
+       "guidance": []
+      },
+      {
+       "label": "No response to chosen topic in evidence.",
+       "marks": [
+        0
+       ],
+       "guidance": []
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Question 5 B",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 16,
+     "r": [
+      0.08,
+      0.27,
+      0.92,
+      0.309
+     ]
+    }
+   ]
+  },
+  "stem": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:"
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q6-a",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-3",
+  "conceptId": "mus-above-bars-missing-notes",
+  "questionRef": "2022 HL Listening Q6(a) — Deferred sitting",
+  "questionText": "The missing notes in bars 7–8 in the score above are",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 6",
+   "pages": [
+    20
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 20,
+     "r": [
+      0.08,
+      0.438,
+      0.92,
+      0.652
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt. Excerpt 1, played twice. Answer (a) and (b). An outline score of bars 1–6 of the opening melody is printed below.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 1",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Option 2",
+    "marks": 2,
+    "contextNote": "The scheme prints its answer in music notation: its print is shown on this card."
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q6-a-score",
+  "questionFigureIncludesPrompt": true,
+  "figureKey": "music-2022-HL-deferred-scheme-p17-l-q6-a"
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q6-b",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-4",
+  "conceptId": "mus-melody-opening-played",
+  "questionRef": "2022 HL Listening Q6(b) — Deferred sitting",
+  "questionText": "The opening melody is played by the",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 6",
+   "pages": [
+    20
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 20,
+     "r": [
+      0.08,
+      0.694,
+      0.92,
+      0.773
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt. Excerpt 1, played twice. Answer (a) and (b). An outline score of bars 1–6 of the opening melody is printed below.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 1",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Trombone(s)",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q6-b-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q6-c",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-4",
+  "conceptId": "mus-features-halfway-identify-interruption",
+  "questionRef": "2022 HL Listening Q6(c) — Deferred sitting",
+  "questionText": "There is a sudden interruption in the music halfway through. Identify two features of the music at this point.",
+  "totalMarks": 3,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 6",
+   "pages": [
+    21
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 21,
+     "r": [
+      0.08,
+      0.096,
+      0.92,
+      0.362
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt. Excerpt 1, played twice more. Answer (c).",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 1",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Features of the music at the interruption",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1.5,
+     "options": [
+      "Very loud dynamics",
+      "discordant / high pitched, on piccolos, saxaphone, trumpet & trombone over cymbals",
+      "Glissandos",
+      "Descending (semiquaver) (chromatic) scale"
+     ]
+    },
+    "contextNote": "The scheme reads: “Up to 1.5 marks each for two valid features of the music at the point of sudden interruption.” “For example:” “Partially correct = 1” “1.5 + 1.5”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q6-c-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q6-d",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-4",
+  "conceptId": "mus-signature-time",
+  "questionRef": "2022 HL Listening Q6(d) — Deferred sitting",
+  "questionText": "The time signature is",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 6",
+   "pages": [
+    21
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 21,
+     "r": [
+      0.08,
+      0.399,
+      0.92,
+      0.488
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "4/4",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q6-d-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q6-e",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-4",
+  "conceptId": "mus-features-melody",
+  "questionRef": "2022 HL Listening Q6(e) — Deferred sitting",
+  "questionText": "The melody features",
+  "totalMarks": 1,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 6",
+   "pages": [
+    21
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 21,
+     "r": [
+      0.08,
+      0.487,
+      0.92,
+      0.612
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Step movement",
+    "marks": 1
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q6-e-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q6-f",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-4",
+  "conceptId": "mus-features-identify-music-rhythmic",
+  "questionRef": "2022 HL Listening Q6(f) — Deferred sitting",
+  "questionText": "Identify two rhythmic features of the music.",
+  "totalMarks": 4,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 6",
+   "pages": [
+    21
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 21,
+     "r": [
+      0.08,
+      0.612,
+      0.92,
+      0.861
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 2",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Rhythmic features",
+    "marks": null,
+    "openList": false,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Dotted rhythm",
+      "syncopation",
+      "crotchet / semiquaver passages in accompaniment"
+     ]
+    },
+    "contextNote": "The scheme reads: “Up to 2 marks each for two valid features of the rhythm of the music.” “Partially correct = 1” “2 + 2”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q6-f-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q6-g",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-4",
+  "conceptId": "mus-feature-identify-melody-opening",
+  "questionRef": "2022 HL Listening Q6(g) — Deferred sitting",
+  "questionText": "Identify one feature of the opening melody.",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 6",
+   "pages": [
+    22
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 22,
+     "r": [
+      0.08,
+      0.096,
+      0.92,
+      0.205
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A feature of the opening melody",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Descending / triadic movement",
+      "chromaticism"
+     ]
+    },
+    "contextNote": "The scheme reads: “Up to two marks for an identification of one feature of the opening melody.” “For example:” “Partially correct = 1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q6-g-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q6-h",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-4",
+  "conceptId": "mus-compositional-excerpt-technique-this",
+  "questionRef": "2022 HL Listening Q6(h) — Deferred sitting",
+  "questionText": "The compositional technique used in this excerpt is",
+  "totalMarks": 2,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 6",
+   "pages": [
+    22
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 22,
+     "r": [
+      0.08,
+      0.226,
+      0.92,
+      0.336
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A compositional feature",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Sequence",
+      "dialogue",
+      "imitation"
+     ]
+    },
+    "contextNote": "The scheme reads: “Up to two marks for an identification of one compositional feature in the excerpt.” “For example:” “Partially correct = 1”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q6-h-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-l-q6-i",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "L",
+  "topicId": "music-2-4",
+  "conceptId": "mus-achieves-climax-composer-describe",
+  "questionRef": "2022 HL Listening Q6(i) — Deferred sitting",
+  "questionText": "Describe two ways in which the composer achieves a sense of climax in this excerpt.",
+  "totalMarks": 4,
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "LISTENING (CORE)",
+   "title": "Listening — Question 6",
+   "pages": [
+    22
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Listening",
+   "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+   "regions": [
+    {
+     "p": 22,
+     "r": [
+      0.08,
+      0.356,
+      0.92,
+      0.666
+     ]
+    }
+   ]
+  },
+  "stem": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+  "audioMaterial": {
+   "kind": "source-audio",
+   "label": "Question 6 · Excerpt 3",
+   "title": "2022 Music · Deferred listening test (Higher)",
+   "playbackUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "secFileid": "LC067ZLP046EV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/deferredexams/2022/LC067ZLP046EV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+  },
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Ways of achieving a climax",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Increasingly louder dynamics",
+      "increasing instrumentation",
+      "increasingly shorter fragments of melody, split between the woodwind and French horn creating a dialogue or conversation",
+      "music gets faster",
+      "trumpet appears loudly at the final cadence"
+     ]
+    },
+    "contextNote": "The scheme reads: “Up to two marks each for a way in which the composer achieves a sense of climax in the excerpt.” “For example:” “Partially correct = 1” “2 + 2”"
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "questionFigureKey": "music-2022-HL-deferred-l-q6-i-score",
+  "questionFigureIncludesPrompt": true
+ },
+ {
+  "id": "mus-2022-hl-deferred-c-a-q1",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "A",
+  "topicId": "music-1-10",
+  "conceptId": "mus-appropriate-choose-continuation-continue",
+  "questionRef": "2022 HL Composing Section A Q1 — Deferred sitting",
+  "questionText": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ oboe □ trumpet □ horn",
+  "totalMarks": 50,
+  "schemePages": [
+   3
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [],
+   "criteria": [
+    {
+     "id": "melody",
+     "label": "SECTION A – MELODY COMPOSITION (50 marks)",
+     "maxMarks": 50,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Melody and rhythm have excellent style and imagination",
+       "marks": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+       ],
+       "guidance": [
+        "Excellent sense of shape and structure",
+        "Excellent development of opening ideas",
+        "Excellent sense of direction and climax",
+        "Appropriate performing directions (phrasing and dynamics) inserted",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Very good sense of melodic and rhythmic interest",
+       "marks": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+       ],
+       "guidance": [
+        "Very good sense of shape and structure",
+        "Very good development of opening ideas",
+        "Very good sense of direction and climax",
+        "Appropriate performing directions (phrasing and dynamics) inserted",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Good sense of melodic and rhythmic interest",
+       "marks": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+       ],
+       "guidance": [
+        "Good sense of shape and structure",
+        "Good development of opening ideas",
+        "Good sense of direction and climax",
+        "Appropriate performing directions (phrasing and dynamics) inserted",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Fair sense of melodic and rhythmic interest",
+       "marks": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+       ],
+       "guidance": [
+        "Fair sense of shape and structure",
+        "Fair development of opening ideas",
+        "Fair sense of direction and climax",
+        "Appropriate performing directions (phrasing and dynamics) inserted",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Poor melodic and rhythmic interest",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+       ],
+       "guidance": [
+        "Poor sense of shape and structure",
+        "Poor development of opening ideas",
+        "Poor sense of direction",
+        "Inappropriate performing directions (phrasing and dynamics) inserted",
+        "Unsuitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Very poor melodic and rhythmic interest",
+       "marks": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Very poor sense of shape and structure",
+        "Very poor development of opening ideas",
+        "Very poor sense of direction",
+        "No performing directions (phrasing and dynamics) inserted",
+        "No instrument chosen."
+       ]
+      },
+      {
+       "label": "Very little or no attempt",
+       "marks": [
+        0,
+        1,
+        2
+       ],
+       "guidance": []
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "SECTION A – MELODY COMPOSITION (50 marks)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "COMPOSING · SECTION A",
+   "title": "Section A — Question 1",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Composing",
+   "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them."
+  },
+  "stem": "Answer one question only in this section:"
+ },
+ {
+  "id": "mus-2022-hl-deferred-c-a-q2",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "A",
+  "topicId": "music-1-11",
+  "conceptId": "mus-about-appropriate-bars-bedtime",
+  "questionRef": "2022 HL Composing Section A Q2 — Deferred sitting",
+  "questionText": "Setting music to a given text Here is an extract from the poem Escape At Bedtime by Robert Louis Stevenson. The lights from the parlour and kitchen shone out Through the blinds and the windows and bars; And high overhead and moving about, There were thousands of millions of stars. The opening line has been set for you. • Set the remaining words to make a melody of 16 bars. (You may exceed this number of bars and include a modulation, if you wish.) • Add appropriate performing directions (phrasing and dynamics) to the melody.",
+  "totalMarks": 50,
+  "schemePages": [
+   4
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [],
+   "criteria": [
+    {
+     "id": "melody",
+     "label": "SECTION A – MELODY COMPOSITION (50 marks)",
+     "maxMarks": 50,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+     ],
+     "guidance": [
+      "No text inserted 0"
+     ],
+     "bands": [
+      {
+       "label": "Excellent \"marriage\" of words and music",
+       "marks": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+       ],
+       "guidance": [
+        "Excellent style and imagination",
+        "Excellent sense of shape and structure",
+        "Excellent sense of direction and climax",
+        "Appropriate performing directions (phrasing and dynamics) inserted"
+       ]
+      },
+      {
+       "label": "Very good “marriage” of words and music",
+       "marks": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+       ],
+       "guidance": [
+        "Very good sense of melodic and rhythmic interest",
+        "Very good sense of shape and structure",
+        "Very good sense of direction and climax",
+        "Appropriate performing directions (phrasing and dynamics) inserted"
+       ]
+      },
+      {
+       "label": "Good “marriage” of words and music",
+       "marks": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+       ],
+       "guidance": [
+        "Good sense of melodic and rhythmic interest",
+        "Good sense of shape and structure",
+        "Good sense of direction and climax",
+        "Appropriate performing directions (phrasing and dynamics) inserted"
+       ]
+      },
+      {
+       "label": "Fair “marriage” of words and music",
+       "marks": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+       ],
+       "guidance": [
+        "Fair sense of melodic and rhythmic interest",
+        "Fair sense of shape and structure",
+        "Fair sense of direction and climax",
+        "Appropriate performing directions (phrasing and dynamics) inserted"
+       ]
+      },
+      {
+       "label": "Poor “marriage” of words and music",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+       ],
+       "guidance": [
+        "Poor melodic and rhythmic interest",
+        "Poor sense of shape and structure",
+        "Poor sense of direction",
+        "Inappropriate performing directions (phrasing and dynamics) inserted"
+       ]
+      },
+      {
+       "label": "Very poor “marriage” of words and music",
+       "marks": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Very poor melodic and rhythmic interest",
+        "Very poor sense of shape and structure",
+        "Very poor sense of direction",
+        "No performing directions (phrasing and dynamics) inserted"
+       ]
+      },
+      {
+       "label": "Very little or no attempt",
+       "marks": [
+        0,
+        1,
+        2
+       ],
+       "guidance": []
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "SECTION A – MELODY COMPOSITION (50 marks)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "COMPOSING · SECTION A",
+   "title": "Section A — Question 2",
+   "pages": [
+    6,
+    7
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Composing",
+   "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them."
+  },
+  "stem": "Answer one question only in this section:"
+ },
+ {
+  "id": "mus-2022-hl-deferred-c-a-q3",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "A",
+  "topicId": "music-1-12",
+  "conceptId": "mus-appropriate-choose-composing-continue",
+  "questionRef": "2022 HL Composing Section A Q3 — Deferred sitting",
+  "questionText": "Composing to a given dance rhythm or metre or form The opening phrase of a gavotte is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ violin □ descant recorder □ flute □ trumpet",
+  "totalMarks": 50,
+  "schemePages": [
+   5
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [],
+   "criteria": [
+    {
+     "id": "melody",
+     "label": "SECTION A – MELODY COMPOSITION (50 marks)",
+     "maxMarks": 50,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Rhythmic integrity of dance excellently maintained",
+       "marks": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+       ],
+       "guidance": [
+        "Melody and rhythm have excellent style and imagination",
+        "Excellent sense of shape and structure",
+        "Excellent development of opening ideas",
+        "Excellent sense of direction and climax",
+        "Excellent adherence to given structure",
+        "Successful modulation",
+        "Appropriate performing directions (phrasing and dynamics) inserted",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Rhythmic integrity of dance very well maintained",
+       "marks": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+       ],
+       "guidance": [
+        "Very good sense of melodic and rhythmic interest",
+        "Very good sense of shape and structure",
+        "Very good development of opening ideas",
+        "Very good sense of direction and climax",
+        "Very good adherence to given structure",
+        "Successful modulation",
+        "Appropriate performing directions (phrasing and dynamics) inserted",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Good attempt at maintaining dance rhythm",
+       "marks": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+       ],
+       "guidance": [
+        "Good sense of melodic and rhythmic interest",
+        "Good sense of shape and structure",
+        "Good development of opening ideas",
+        "Good sense of direction and climax",
+        "Good adherence to given structure",
+        "An unconfirmed modulation",
+        "Appropriate performing directions (phrasing and dynamics) inserted",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Fair attempt at maintaining dance rhythm",
+       "marks": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+       ],
+       "guidance": [
+        "Fair sense of melodic and rhythmic interest",
+        "Fair sense of shape and structure",
+        "Fair development of opening ideas",
+        "Fair sense of direction and climax",
+        "Fair adherence to given structure",
+        "An unsuccessful modulation",
+        "Appropriate performing directions (phrasing and dynamics) inserted",
+        "Suitable instrument chosen."
+       ]
+      },
+      {
+       "label": "Poor awareness of dance rhythm",
+       "marks": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+       ],
+       "guidance": [
+        "Poor melodic and rhythmic interest.",
+        "Poor sense of shape and structure",
+        "Poor development of opening ideas",
+        "Poor sense of direction",
+        "Poor adherence to given structure",
+        "No attempt at modulation",
+        "Inappropriate performing directions (phrasing and dynamics) inserted",
+        "Unsuitable instrument chosen"
+       ]
+      },
+      {
+       "label": "Very poor awareness of dance rhythm",
+       "marks": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "guidance": [
+        "Very poor melodic and rhythmic interest.",
+        "Very poor sense of shape and structure",
+        "Very poor development of opening ideas",
+        "Very poor sense of direction",
+        "Very poor adherence to given structure",
+        "No attempt at modulation",
+        "No performing directions (phrasing and dynamics) inserted",
+        "No instrument chosen"
+       ]
+      },
+      {
+       "label": "Very little or no attempt",
+       "marks": [
+        0,
+        1,
+        2
+       ],
+       "guidance": []
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "SECTION A – MELODY COMPOSITION (50 marks)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "COMPOSING · SECTION A",
+   "title": "Section A — Question 3",
+   "pages": [
+    8,
+    9
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Composing",
+   "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them."
+  },
+  "stem": "Answer one question only in this section:"
+ },
+ {
+  "id": "mus-2022-hl-deferred-c-b-q4",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "B",
+  "topicId": "music-1-14",
+  "conceptId": "mus-available-bank-bass-below",
+  "questionRef": "2022 HL Composing Section B Q4 — Deferred sitting",
+  "questionText": "Composing melody and bass notes from a set of chords Preparatory work: Plot the chords available in the key of C minor, either in the chord bank grid or on the stave below. • Study the following piece of music. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
+  "totalMarks": 50,
+  "schemePages": [
+   6
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [],
+   "criteria": [
+    {
+     "id": "melody",
+     "label": "Melody",
+     "maxMarks": 33,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Excellent style and imagination",
+       "marks": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+       ],
+       "guidance": [
+        "Excellent awareness of key and underlying harmonic structure",
+        "Excellent development of opening ideas",
+        "Excellent sense of direction and climax"
+       ]
+      },
+      {
+       "label": "Very good style and imagination",
+       "marks": [
+        23,
+        24,
+        25,
+        26,
+        27
+       ],
+       "guidance": [
+        "Very good awareness of key and underlying harmonic structure",
+        "Very good development of opening ideas",
+        "Very good sense of direction and climax"
+       ]
+      },
+      {
+       "label": "Good style and imagination",
+       "marks": [
+        18,
+        19,
+        20,
+        21,
+        22
+       ],
+       "guidance": [
+        "Good awareness of key and underlying harmonic structure",
+        "Good development of opening ideas",
+        "Good sense of direction and climax"
+       ]
+      },
+      {
+       "label": "Fair style and imagination",
+       "marks": [
+        13,
+        14,
+        15,
+        16,
+        17
+       ],
+       "guidance": [
+        "Fair awareness of key and underlying harmonic structure",
+        "Fair development of opening ideas",
+        "Fair sense of direction and climax"
+       ]
+      },
+      {
+       "label": "Poor style and imagination",
+       "marks": [
+        8,
+        9,
+        10,
+        11,
+        12
+       ],
+       "guidance": [
+        "Poor awareness of key and underlying harmonic structure",
+        "Poor development of opening ideas",
+        "Poor sense of direction and climax"
+       ]
+      },
+      {
+       "label": "Very poor style and imagination",
+       "marks": [
+        3,
+        4,
+        5,
+        6,
+        7
+       ],
+       "guidance": [
+        "Very poor awareness of key and underlying harmonic structure",
+        "Very poor development of opening ideas",
+        "Very poor sense of direction and climax"
+       ]
+      },
+      {
+       "label": "Very little or no attempt",
+       "marks": [
+        0,
+        1,
+        2
+       ],
+       "guidance": []
+      }
+     ]
+    },
+    {
+     "id": "bass-count",
+     "label": "0.5 mark per correct bass note under each chord symbol (0.5 x 20)",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0,
+      8.5,
+      9.0,
+      9.5,
+      10.0
+     ],
+     "guidance": [
+      "(Correct pitch in correct place rhythmically)"
+     ],
+     "counted": {
+      "rate": 0.5,
+      "items": 20
+     }
+    },
+    {
+     "id": "bass-quality",
+     "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge",
+     "maxMarks": 7,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Excellent bass line",
+       "marks": [
+        7
+       ],
+       "guidance": [
+        "Excellent awareness of style"
+       ]
+      },
+      {
+       "label": "Very good bass line",
+       "marks": [
+        6
+       ],
+       "guidance": [
+        "Very good awareness of style"
+       ]
+      },
+      {
+       "label": "Good bass line",
+       "marks": [
+        4,
+        5
+       ],
+       "guidance": [
+        "Good awareness of style"
+       ]
+      },
+      {
+       "label": "Fair bass line",
+       "marks": [
+        2,
+        3
+       ],
+       "guidance": [
+        "Fair awareness of style"
+       ]
+      },
+      {
+       "label": "Poor bass line",
+       "marks": [
+        0,
+        1
+       ],
+       "guidance": [
+        "Poor awareness of style"
+       ]
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "SECTION B – HARMONY (50 marks)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "COMPOSING · SECTION B",
+   "title": "Section B — Question 4",
+   "pages": [
+    12,
+    13
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Composing",
+   "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them."
+  },
+  "stem": "Answer one question only in this section:"
+ },
+ {
+  "id": "mus-2022-hl-deferred-c-b-q5",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "B",
+  "topicId": "music-1-13",
+  "conceptId": "mus-adjacent-available-bank-bass",
+  "questionRef": "2022 HL Composing Section B Q5 — Deferred sitting",
+  "questionText": "Composing bass notes and chord indications to a given tune Preparatory work: Plot the chords available in the key of E♭ major, either in the chord bank grid or on the stave below. • Study the following piece of music. • Add suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+  "totalMarks": 50,
+  "schemePages": [
+   7
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [
+    "Chords: marks are awarded in the first instance for correct and acceptable chords. This is in the context of (i) the chord fitting the melody line at that point (i.e. until the next change of chord indicated by a box) (ii) the preceding chord and (iii) the following chord.",
+    "Chord quality: Marks are awarded here for the musical quality of the overall progressions chosen. While the candidate may have chosen chords that “worked” at any point, there may have been better choices. If that is the case, this will be reflected in the chord quality mark.",
+    "Chord Progressions - General points",
+    "Same chord in adjacent boxes not accepted unless bass changed or 7th added",
+    "Accidental and suffix, where relevant must be fully correct for mark to be awarded",
+    "Marks for chords not awarded in isolation. Chords must be part of a good progression.",
+    "V7 - V not accepted",
+    "Vb or V7b should generally be followed by I",
+    "V – ii generally not accepted",
+    "ii – I generally not accepted except as approach to Ic in cadential 6/4",
+    "Cadential 6/4 must be on the stronger of the two beats and at a cadence point",
+    "Secondary 7ths, if used, must be used correctly i.e. they must be followed by a chord whose root is a 4th higher",
+    "Bass Line",
+    "No doubling of major 3rd under chord symbol"
+   ],
+   "criteria": [
+    {
+     "id": "chords-count",
+     "label": "1 mark for each chord that is part of a good progression in chord boxes 1, 2, 3, 5, 6, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20 and 21",
+     "maxMarks": 18,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "guidance": [],
+     "counted": {
+      "rate": 1,
+      "items": 18
+     }
+    },
+    {
+     "id": "chords-count-half",
+     "label": "0.5 mark for each chord that is part of a good progression in chord boxes 4, 7, 14 and 22",
+     "maxMarks": 2,
+     "permittedMarks": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+     ],
+     "guidance": [],
+     "counted": {
+      "rate": 0.5,
+      "items": 4
+     }
+    },
+    {
+     "id": "chords-quality",
+     "label": "Quality of musical progressions in the style of the given opening",
+     "maxMarks": 10,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Excellent chord progressions",
+       "marks": [
+        9,
+        10
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Very good chord progressions",
+       "marks": [
+        6,
+        7,
+        8
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Good chord progressions",
+       "marks": [
+        4,
+        5
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Fair chord progressions",
+       "marks": [
+        2,
+        3
+       ],
+       "guidance": []
+      },
+      {
+       "label": "Poor chord progressions",
+       "marks": [
+        0,
+        1
+       ],
+       "guidance": []
+      }
+     ]
+    },
+    {
+     "id": "bass-count",
+     "label": "0.5 mark per correct bass note under each correct chord symbol",
+     "maxMarks": 11,
+     "permittedMarks": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0,
+      8.5,
+      9.0,
+      9.5,
+      10.0,
+      10.5,
+      11.0
+     ],
+     "guidance": [],
+     "counted": {
+      "rate": 0.5,
+      "items": 22
+     }
+    },
+    {
+     "id": "bass-quality",
+     "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge",
+     "maxMarks": 9,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Excellent bass line",
+       "marks": [
+        8,
+        9
+       ],
+       "guidance": [
+        "Excellent awareness of style"
+       ]
+      },
+      {
+       "label": "Very good bass line",
+       "marks": [
+        6,
+        7
+       ],
+       "guidance": [
+        "Very good awareness of style"
+       ]
+      },
+      {
+       "label": "Good bass line",
+       "marks": [
+        4,
+        5
+       ],
+       "guidance": [
+        "Good awareness of style"
+       ]
+      },
+      {
+       "label": "Fair bass line",
+       "marks": [
+        2,
+        3
+       ],
+       "guidance": [
+        "Fair awareness of style"
+       ]
+      },
+      {
+       "label": "Poor bass line",
+       "marks": [
+        0,
+        1
+       ],
+       "guidance": [
+        "Poor awareness of style"
+       ]
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "SECTION B – HARMONY (50 marks)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "COMPOSING · SECTION B",
+   "title": "Section B — Question 5",
+   "pages": [
+    14,
+    15
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Composing",
+   "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them."
+  },
+  "stem": "Answer one question only in this section:"
+ },
+ {
+  "id": "mus-2022-hl-deferred-c-b-q6",
+  "kind": "rubric",
+  "subjectId": "music",
+  "level": "higher",
+  "year": 2022,
+  "section": "B",
+  "topicId": "music-1-15",
+  "conceptId": "mus-adding-adjacent-available-bank",
+  "questionRef": "2022 HL Composing Section B Q6 — Deferred sitting",
+  "questionText": "Adding a countermelody or descant and chordal support to a given tune Preparatory work: Plot the chords available in the key of A major, either in the chord bank grid or on the stave below. • Study the following piece of music. • Insert suitable chord indications in the boxes provided. • Continue the descant part in the given style to complete the piece. • Do not use the same chord in the same position in adjacent boxes. • You may either use chord symbols or Roman numerals, but not both.",
+  "totalMarks": 50,
+  "schemePages": [
+   8
+  ],
+  "rubric": {
+   "system": "french",
+   "taskRequirements": [],
+   "criteria": [
+    {
+     "id": "chords-count",
+     "label": "1 mark for each chord that fits melody and is part of a good chord progression in chord boxes 1, 2, 3, 4, 5, 6, 7, 9, 11, 12, 13, 15, 16 and 18",
+     "maxMarks": 14,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ],
+     "guidance": [],
+     "counted": {
+      "rate": 1,
+      "items": 14
+     }
+    },
+    {
+     "id": "chords-count-half",
+     "label": "0.5 mark for each chord that fits melody and is part of a good chord progression in chord boxes 8, 10, 14, 17, 19 and 20",
+     "maxMarks": 3,
+     "permittedMarks": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+     ],
+     "guidance": [],
+     "counted": {
+      "rate": 0.5,
+      "items": 6
+     }
+    },
+    {
+     "id": "descant",
+     "label": "Descant",
+     "maxMarks": 33,
+     "permittedMarks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+     ],
+     "guidance": [],
+     "bands": [
+      {
+       "label": "Excellent descant line within harmonic framework",
+       "marks": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+       ],
+       "guidance": [
+        "Excellent adherence to two-part style of given opening"
+       ]
+      },
+      {
+       "label": "Very good descant line within harmonic framework",
+       "marks": [
+        23,
+        24,
+        25,
+        26,
+        27
+       ],
+       "guidance": [
+        "Very good adherence to two-part style of given opening"
+       ]
+      },
+      {
+       "label": "Good descant line within harmonic framework",
+       "marks": [
+        18,
+        19,
+        20,
+        21,
+        22
+       ],
+       "guidance": [
+        "Good adherence to two-part style of given opening"
+       ]
+      },
+      {
+       "label": "Fair descant line within harmonic framework",
+       "marks": [
+        13,
+        14,
+        15,
+        16,
+        17
+       ],
+       "guidance": [
+        "Fair adherence to two-part style of given opening"
+       ]
+      },
+      {
+       "label": "Poor descant line within harmonic framework",
+       "marks": [
+        8,
+        9,
+        10,
+        11,
+        12
+       ],
+       "guidance": [
+        "Poor adherence to two-part style of given opening"
+       ]
+      },
+      {
+       "label": "Very poor descant line within harmonic framework",
+       "marks": [
+        3,
+        4,
+        5,
+        6,
+        7
+       ],
+       "guidance": [
+        "Very poor adherence to two-part style of given opening"
+       ]
+      },
+      {
+       "label": "Very little or no attempt",
+       "marks": [
+        0,
+        1,
+        2
+       ],
+       "guidance": []
+      }
+     ]
+    }
+   ],
+   "markingGuideNote": "SECTION B – HARMONY (50 marks)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "COMPOSING · SECTION B",
+   "title": "Section B — Question 6",
+   "pages": [
+    16,
+    17
+   ],
+   "attribution": "SEC Leaving Certificate Music 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+   "sourceLabel": "Composing",
+   "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them."
+  },
+  "stem": "Answer one question only in this section:"
  }
 ]

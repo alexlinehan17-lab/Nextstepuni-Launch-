@@ -7927,6 +7927,258 @@
      "questionRef": "2023 HL Composing Section B Q6 — Deferred sitting"
     }
    ]
+  },
+  {
+   "year": 2022,
+   "level": "higher",
+   "paper": "Listening — Deferred",
+   "expectedAsks": 53,
+   "asks": [
+    {
+     "id": "mus-2022-hl-deferred-l-q1-a",
+     "questionRef": "2022 HL Listening Q1(a) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q1-b-i",
+     "questionRef": "2022 HL Listening Q1(b)(i) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q1-b-ii",
+     "questionRef": "2022 HL Listening Q1(b)(ii) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q1-c",
+     "questionRef": "2022 HL Listening Q1(c) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q1-d",
+     "questionRef": "2022 HL Listening Q1(d) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q1-e",
+     "questionRef": "2022 HL Listening Q1(e) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q1-f",
+     "questionRef": "2022 HL Listening Q1(f) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q1-g",
+     "questionRef": "2022 HL Listening Q1(g) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q1-h",
+     "questionRef": "2022 HL Listening Q1(h) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q1-i",
+     "questionRef": "2022 HL Listening Q1(i) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q1-j",
+     "questionRef": "2022 HL Listening Q1(j) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q1-k",
+     "questionRef": "2022 HL Listening Q1(k) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q1-l",
+     "questionRef": "2022 HL Listening Q1(l) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q1-m",
+     "questionRef": "2022 HL Listening Q1(m) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q2-a-i",
+     "questionRef": "2022 HL Listening Q2(a)(i) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q2-a-ii",
+     "questionRef": "2022 HL Listening Q2(a)(ii) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q2-b",
+     "questionRef": "2022 HL Listening Q2(b) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q2-c-i",
+     "questionRef": "2022 HL Listening Q2(c)(i) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q2-c-ii",
+     "questionRef": "2022 HL Listening Q2(c)(ii) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q2-d",
+     "questionRef": "2022 HL Listening Q2(d) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q2-e",
+     "questionRef": "2022 HL Listening Q2(e) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q3-a",
+     "questionRef": "2022 HL Listening Q3(a) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q3-b",
+     "questionRef": "2022 HL Listening Q3(b) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q3-c",
+     "questionRef": "2022 HL Listening Q3(c) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q3-d",
+     "questionRef": "2022 HL Listening Q3(d) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q3-e",
+     "questionRef": "2022 HL Listening Q3(e) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q4-a",
+     "questionRef": "2022 HL Listening Q4(a) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q4-b",
+     "questionRef": "2022 HL Listening Q4(b) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q4-c-i",
+     "questionRef": "2022 HL Listening Q4(c)(i) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q4-c-ii",
+     "questionRef": "2022 HL Listening Q4(c)(ii) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q4-d",
+     "questionRef": "2022 HL Listening Q4(d) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q4-e",
+     "questionRef": "2022 HL Listening Q4(e) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q5-a-a",
+     "questionRef": "2022 HL Listening Q5 A(a) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q5-a-b",
+     "questionRef": "2022 HL Listening Q5 A(b) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q5-a-c",
+     "questionRef": "2022 HL Listening Q5 A(c) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q5-a-d",
+     "questionRef": "2022 HL Listening Q5 A(d) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q5-a-e",
+     "questionRef": "2022 HL Listening Q5 A(e) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q5-a-f",
+     "questionRef": "2022 HL Listening Q5 A(f) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q5-a-g",
+     "questionRef": "2022 HL Listening Q5 A(g) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q5-b-i",
+     "questionRef": "2022 HL Listening Q5 B(i) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q5-b-ii",
+     "questionRef": "2022 HL Listening Q5 B(ii) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q5-b-iii",
+     "questionRef": "2022 HL Listening Q5 B(iii) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q5-b-iv",
+     "questionRef": "2022 HL Listening Q5 B(iv) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q5-b-v",
+     "questionRef": "2022 HL Listening Q5 B(v) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q6-a",
+     "questionRef": "2022 HL Listening Q6(a) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q6-b",
+     "questionRef": "2022 HL Listening Q6(b) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q6-c",
+     "questionRef": "2022 HL Listening Q6(c) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q6-d",
+     "questionRef": "2022 HL Listening Q6(d) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q6-e",
+     "questionRef": "2022 HL Listening Q6(e) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q6-f",
+     "questionRef": "2022 HL Listening Q6(f) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q6-g",
+     "questionRef": "2022 HL Listening Q6(g) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q6-h",
+     "questionRef": "2022 HL Listening Q6(h) — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-l-q6-i",
+     "questionRef": "2022 HL Listening Q6(i) — Deferred sitting"
+    }
+   ]
+  },
+  {
+   "year": 2022,
+   "level": "higher",
+   "paper": "Composing — Deferred",
+   "expectedAsks": 6,
+   "asks": [
+    {
+     "id": "mus-2022-hl-deferred-c-a-q1",
+     "questionRef": "2022 HL Composing Section A Q1 — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-c-a-q2",
+     "questionRef": "2022 HL Composing Section A Q2 — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-c-a-q3",
+     "questionRef": "2022 HL Composing Section A Q3 — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-c-b-q4",
+     "questionRef": "2022 HL Composing Section B Q4 — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-c-b-q5",
+     "questionRef": "2022 HL Composing Section B Q5 — Deferred sitting"
+    },
+    {
+     "id": "mus-2022-hl-deferred-c-b-q6",
+     "questionRef": "2022 HL Composing Section B Q6 — Deferred sitting"
+    }
+   ]
   }
  ],
  "covers": {
