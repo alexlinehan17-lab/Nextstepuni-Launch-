@@ -200,6 +200,7 @@ import PE_FROZEN_MANIFEST from '../scripts/markbank/authored/physical-education.
 import businessOriginals from '../scripts/markbank/authored/business.json';
 import businessReviewed from '../components/MarkBank/cards/business/rubric-authored.json';
 import businessRoutePools from '../components/MarkBank/cards/business/route-pools.json';
+import businessDeferred from '../components/MarkBank/cards/business/deferred-authored.json';
 import { expandBusinessRoutePools } from '../components/MarkBank/cards/business/routes.mjs';
 import agriculturalReview from '../scripts/markbank/authored/agricultural-science-reviewed-tasks.json';
 import biologyReview from '../scripts/markbank/authored/biology-review-audit.json';
@@ -1496,6 +1497,49 @@ const isPolishAdded = (id: string) => /^pl-\d{4}-/.test(id) && (Number(id.slice(
 const polishAddedTotal = [...Object.values(POLISH_ADDED), ...Object.values(POLISH_ADDED_TO_FROZEN)]
   .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
 
+/* Portuguese (the languages-q3 lane, from 2026-11-19): additions on top of
+ * the frozen 2021-2025 identity, as Polish does: new sittings whole (2026),
+ * and in a frozen sitting its Listening Comprehension Test (Partes A-E,
+ * sections LA-LE), its written tasks (Section B) and the reading asks the
+ * shared reader refused, each named. */
+const PORTUGUESE_ADDED: Record<number, { higher: number; ordinary: number }> = {
+  2026: { higher: 60, ordinary: 58 },
+};
+const PORTUGUESE_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
+  2025: { higher: 40, ordinary: 40 },
+  2024: { higher: 45, ordinary: 37 },
+  2023: { higher: 43, ordinary: 44 },
+  2022: { higher: 9, ordinary: 6 },
+};
+const PORTUGUESE_ADDED_TO_FROZEN_ID = /^por-202[1-5]-(?:hl|ol)-(?:l[a-e]-|b-)/;
+const PORTUGUESE_ADDED_TO_FROZEN_READING = new Set<string>([
+  'por-2025-hl-a-1-b-ii',
+  'por-2025-hl-a-1-i',
+  'por-2025-hl-a-2-j-i',
+  'por-2025-ol-a-1-d',
+  'por-2025-ol-a-1-h',
+  'por-2025-ol-a-2-f-i',
+  'por-2025-ol-a-2-f-ii',
+  'por-2025-ol-a-2-g',
+  'por-2025-ol-a-3-b',
+  'por-2024-hl-a-1-i',
+  'por-2024-hl-a-2-j',
+  'por-2024-ol-a-1-e',
+  'por-2023-hl-a-1-e',
+  'por-2023-hl-a-2-g',
+  'por-2023-ol-a-1-c',
+  'por-2023-ol-a-1-e',
+  'por-2023-ol-a-1-g',
+  'por-2023-ol-a-2-a',
+  'por-2023-ol-a-2-h',
+  'por-2023-ol-a-3-b',
+]);
+const isPortugueseAdded = (id: string) => /^por-\d{4}-/.test(id) && (Number(id.slice(4, 8)) in PORTUGUESE_ADDED
+  || (Number(id.slice(4, 8)) in PORTUGUESE_ADDED_TO_FROZEN
+    && (PORTUGUESE_ADDED_TO_FROZEN_ID.test(id) || PORTUGUESE_ADDED_TO_FROZEN_READING.has(id))));
+const portugueseAddedTotal = [...Object.values(PORTUGUESE_ADDED), ...Object.values(PORTUGUESE_ADDED_TO_FROZEN)]
+  .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
+
 /* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
  * addition on top of the frozen 2020-2026 set, never a replacement -- those
  * sittings had no card at all before. Pinned per level, count and id hash,
@@ -1533,9 +1577,11 @@ const peAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('pe-'
 // routes that did not exist before are tracked as explicit additions on top;
 // corrected legacy cards keep their IDs and stay inside the frozen hash.
 const businessOriginalIds = new Set(businessOriginals.map(card => card.id));
+// The deferred sittings' cards (deferred-authored.json) are additions too: new ids naming their sitting.
 const businessAdditionIds = new Set([
   ...businessReviewed.cards,
   ...expandBusinessRoutePools(businessRoutePools.pools),
+  ...businessDeferred.cards,
 ].map(card => card.id).filter(id => !businessOriginalIds.has(id)));
 // Engineering lane (2026-11-04 on): the 554 pre-lane cards stay frozen in the
 // deck pins; each sitting's added cards are listed in the lane's ledger
@@ -2770,6 +2816,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   if (name.startsWith('spanish:')) return ids.filter(id => !isSpanishAdded(id));
   if (name.startsWith('german:')) return ids.filter(id => !isGermanAdded(id));
   if (name.startsWith('polish:')) return ids.filter(id => !isPolishAdded(id));
+  if (name.startsWith('portuguese:')) return ids.filter(id => !isPortugueseAdded(id));
   if (name.startsWith('engineering:')) return ids.filter(id => !engineeringAdditionIds.has(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -2836,8 +2883,8 @@ const technologyAdditions = {
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
 } as const;
 const italianAdditions = {
-  higher: [ITALIAN_HIGHER, 232, 'dbdb1373b37ce794472bf5226ccee614ab8f2c2c1093aa569d14f584bebff061'],
-  ordinary: [ITALIAN_ORDINARY, 204, 'a155ef64bfaea7b85e2cdc92eccd5ba3b627b28e9040ebad3d4b2417a2a6974b'],
+  higher: [ITALIAN_HIGHER, 436, 'ad9de9b34b4501d67915b443dc5485a91988b8e781d7dd03a933ee019f630f16'],
+  ordinary: [ITALIAN_ORDINARY, 269, '3e4cc8f260417745b5f178183ea24fdf9b8bfec0d24ee1a413bbadfa1ee2351a'],
 } as const;
 const dcgAdditions = {
   higher: [DCG_HIGHER, 460, 'f3f80dccc2dbf842c64db715d43b83169290d4cb7315d9eb2087ad8b29c0a4c1'],
@@ -2966,7 +3013,12 @@ describe('Mark Bank card preservation', () => {
     // Dialogue 3 Q1 carded from the scheme's own line - and writing 4); 2021
     // Higher 33 for the 37 its 35 live cards left out (A Q5 on its printed
     // total, its count and split disagreeing); 2021 Ordinary 28 for the 28
-    // its 37 live cards left out (listening 24 and writing 4).
+    // its 37 live cards left out (listening 24 and writing 4); 2020 Higher
+    // added whole, 68 cards for its 68 asks (no live cards; its LB1 Q1 and LB3
+    // Q1 trace through the split-only scheme form); 2019 Higher added whole,
+    // 68 cards for its 68 asks; 2019 Ordinary added whole, 65 cards for its
+    // 71 asks (the matching task's eight items are two cards of four); 2018
+    // Higher added whole, 68 cards for its 68 asks.
     const additions = cards.map(card => card.id).filter(isItalianAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
@@ -3093,6 +3145,23 @@ describe('Mark Bank card preservation', () => {
       .toBe(true);
   });
 
+  it('adds each further Portuguese sitting on top of the frozen 2021-2025 identity', () => {
+    const cards = [...PORTUGUESE_HIGHER, ...PORTUGUESE_ORDINARY];
+    for (const [year, counts] of Object.entries(PORTUGUESE_ADDED)) {
+      const added = cards.filter(card => card.year === Number(year));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+      expect(added.every(card => card.id.startsWith(`por-${year}-`))).toBe(true);
+    }
+    for (const [year, counts] of Object.entries(PORTUGUESE_ADDED_TO_FROZEN)) {
+      const added = cards.filter(card => card.year === Number(year) && isPortugueseAdded(card.id));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+    }
+    expect(cards.filter(card => !isPortugueseAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
+      .toBe(true);
+  });
+
   /* A German card's conceptId is its level-independent identity, the key a
    * student's progress is carried on between Higher and Ordinary
    * (types/markBank.ts: it "cannot be retrofitted"), so it is held like the
@@ -3177,6 +3246,18 @@ describe('Mark Bank card preservation', () => {
       ['2021 higher', 49, 'ea13cfed03b3ea396d8733eabc4cfae72b1e5808dfa57cf98206964a83a60a48'],
       ['2021 ordinary', 58, '1c980af7d2f21f596c29c06f60cd59109beae576545254494c50999316d112ca'],
       ['2020 higher', 52, 'a2677fa649697b54889ea70b4452da79cef0574f41b5295411cbf87da250a9f1'],
+      ['2019 higher', 55, '55322e758ec8eac8c39649a6ffb68cf7a98f0176049c727b9fdca67f7e87a743'],
+      ['2019 ordinary', 52, '2ba9229ada814758708ed18ca2194860412ebfbd04596c2d6d2129c60620f41e'],
+      ['2018 higher', 50, 'eba4e6f785f08467ea6ffa3662cade25d707d3655dd9199c3e798be7e4376e39'],
+      ['2018 ordinary', 46, 'd0fd57d9c51117f8eec807dc680f679d559a714ebef18993fd18056e10d1a2f5'],
+      ['2017 higher', 57, '044683a1337881c65289d788ce076d63f4c6f30622f46eaedb87bf895aaa20d5'],
+      ['2017 ordinary', 52, '786f96da46a3ebed10203b54c31c4a968817ca9b38b5e89d32317046a03ef731'],
+      ['2016 higher', 54, '10af64b857b24fdab3c24b64b85a504920d10037c792ea56c782044fa29b504d'],
+      ['2016 ordinary', 48, '7315da8115ab273e6e8f5ae5790da66a3fcf7591ea43b46d3420a62160ebb696'],
+      ['2015 higher', 51, '89a71fc02367f26d4d72f088359128aecd96deacbe9b2b4de02d42b5d4bdaccf'],
+      ['2015 ordinary', 52, '0b3ac0058425a2a63b7bb2afc77125aac38f346b37248ee1bfe957d434ab27a2'],
+      ['2014 higher', 58, '81a38a10481a0b6222b729de7aa5c3e08f814a0ec88c0224c08f0f3bb68ebba2'],
+      ['2014 ordinary', 52, '42596fd6679cade7d6c3eeb3c5ca314790d4929140d4cc0e537e1cf6acf46ac3'],
     ];
     const lane = new Map<string, string[]>();
     for (const card of [...MUSIC_HIGHER, ...MUSIC_ORDINARY]) {
@@ -3297,6 +3378,7 @@ describe('Mark Bank card preservation', () => {
         : name.startsWith('spanish:') ? cards.filter(card => isSpanishAdded(card.id)).length
         : name.startsWith('german:') ? cards.filter(card => isGermanAdded(card.id)).length
         : name.startsWith('polish:') ? cards.filter(card => isPolishAdded(card.id)).length
+        : name.startsWith('portuguese:') ? cards.filter(card => isPortugueseAdded(card.id)).length
         // Technology's 2010-2019 and DCG's 2010-2018 additions count on top of the bank the same way.
         : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
@@ -3344,8 +3426,8 @@ describe('Mark Bank card preservation', () => {
         + treatmentAdditionIds.size
         // Italian (classics-italian lane): every card on top of the frozen 350.
         + italianAddedCount
-        // Polish additions (languages-q3 lane).
-        + polishAddedTotal);
+        // Polish and Portuguese additions (languages-q3 lane).
+        + polishAddedTotal + portugueseAddedTotal);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -3362,15 +3444,16 @@ describe('Mark Bank card preservation', () => {
      * and the one differently marked 2013 route pool. Every
      * addition is a new, unique ID at its own level; none reuses an original
      * ID. */
-    expect(businessAdditionIds.size).toBe(1382);
+    // + the deferred sittings: 2022 Higher 55, 2022 Ordinary 68, 2023 Higher 52.
+    expect(businessAdditionIds.size).toBe(1382 + 55 + 68 + 52);
     const higher = BUSINESS_HIGHER.map(card => card.id);
     const ordinary = BUSINESS_ORDINARY.map(card => card.id);
     expect(new Set(higher).size).toBe(higher.length);
     expect(new Set(ordinary).size).toBe(ordinary.length);
     const higherAdditions = BUSINESS_HIGHER.filter(card => businessAdditionIds.has(card.id));
     const ordinaryAdditions = BUSINESS_ORDINARY.filter(card => businessAdditionIds.has(card.id));
-    expect(higherAdditions).toHaveLength(605);
-    expect(ordinaryAdditions).toHaveLength(777);
+    expect(higherAdditions).toHaveLength(605 + 55 + 52);
+    expect(ordinaryAdditions).toHaveLength(777 + 68);
     expect(higherAdditions.length + ordinaryAdditions.length).toBe(businessAdditionIds.size);
     for (const id of businessAdditionIds) {
       expect(businessOriginalIds.has(id), id).toBe(false);
@@ -3875,7 +3958,7 @@ describe('Mark Bank card preservation', () => {
     expect(june(BIO_ORDINARY)).toHaveLength(2835);
     expect(idHash(june(BIO_ORDINARY).map(card => card.id))).toBe('4f0b15fd23902b4da3b0f8948e85519be7c02b8e567f42aeea5cb6aed366d95e');
     // The deferred sittings, carded one by one: [Higher, Ordinary].
-    expect([deferred(BIO_HIGHER).length, deferred(BIO_ORDINARY).length]).toEqual([182, 182]);
+    expect([deferred(BIO_HIGHER).length, deferred(BIO_ORDINARY).length]).toEqual([182 + 179 + 165 + 161, 182 + 188]);
     expect(biologyAdditionIds.size).toBe(2705 + 2835 - (673 - 1) - (686 - 1)
       + deferred(BIO_HIGHER).length + deferred(BIO_ORDINARY).length);
     // The sittings before 2021 had no Biology cards: everything they carry is new.
@@ -4039,7 +4122,9 @@ describe('Mark Bank card preservation', () => {
      * each reviewed page by page against its scheme. Every addition is a new, unique ID that never reuses an
      * original ID; every reviewed sitting's shipped IDs are still present,
      * live or (a choose-N combination card) through a progress alias. */
-    expect(geographyAdditionIds.size).toBe(3492);
+    // + the carded deferred sittings, all new ids (2022 Higher 120, 2023 Higher 124, 2024 Higher 124,
+    // 2025 Higher 120).
+    expect(geographyAdditionIds.size).toBe(3492 + 120 + 124 + 124 + 120);
     const all = [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY];
     const ids = all.map(card => card.id);
     expect(new Set(ids).size).toBe(ids.length);

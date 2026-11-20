@@ -1,0 +1,701 @@
+{
+ "readingFile": "2019-ol.json",
+ "readBy": "second reader (Opus helper), 19 Nov 2026",
+ "method": "each string compared word for word with a 150 dpi render of the printed page (300-600 dpi zooms where a character was in doubt: the composing titles, the superscripts in AA¹BB¹, the 2019-ol Excerpt 1 heading); each figure box cropped from the render and looked at. Booklets in scope have no usable text layer, so the verdicts rest on the renders alone.",
+ "booklet": "examiner-reports/music/papers/2019-ol-008-paper.pdf",
+ "pagesRendered": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+ ],
+ "asks": [
+  {
+   "address": "Q1(a)",
+   "paper": "listening",
+   "page": 2,
+   "strings": [
+    "The theme heard in this excerpt is the",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 2, directly under the Q.1 opening 'Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.'); the file's questionContext ends at '... Overture by Tchaikovsky.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(b)",
+   "paper": "listening",
+   "page": 2,
+   "strings": [
+    "The accompaniment in bars 1–8 features",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 2, directly under the Q.1 opening 'Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.'); the file's questionContext ends at '... Overture by Tchaikovsky.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(c)",
+   "paper": "listening",
+   "page": 2,
+   "strings": [
+    "This excerpt is taken from the",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 2, directly under the Q.1 opening 'Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.'); the file's questionContext ends at '... Overture by Tchaikovsky.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(d)",
+   "paper": "listening",
+   "page": 2,
+   "strings": [
+    "Describe the texture of the music heard in this excerpt.",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 2, directly under the Q.1 opening 'Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.'); the file's questionContext ends at '... Overture by Tchaikovsky.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(e)",
+   "paper": "listening",
+   "page": 3,
+   "strings": [
+    "The missing notes at X on the score are",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 3, played three times. An outline score of the music in this excerpt is printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 2, directly under the Q.1 opening 'Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.'); the file's questionContext ends at '... Overture by Tchaikovsky.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(f)",
+   "paper": "listening",
+   "page": 3,
+   "strings": [
+    "The theme heard in this excerpt is the",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 3, played once more."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 2, directly under the Q.1 opening 'Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.'); the file's questionContext ends at '... Overture by Tchaikovsky.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(g)",
+   "paper": "listening",
+   "page": 3,
+   "strings": [
+    "The tonality of the music is",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 3, played once more."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 2, directly under the Q.1 opening 'Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.'); the file's questionContext ends at '... Overture by Tchaikovsky.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(h)",
+   "paper": "listening",
+   "page": 3,
+   "strings": [
+    "Name the percussion instrument heard in this excerpt. It plays",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 4, played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 2, directly under the Q.1 opening 'Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.'); the file's questionContext ends at '... Overture by Tchaikovsky.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "The page prints the ask on two lines, 'Name the percussion instrument heard in this excerpt. ____' and 'It plays' above the tick boxes; the file joins them. Every word kept."
+   ]
+  },
+  {
+   "address": "Q1(i)",
+   "paper": "listening",
+   "page": 3,
+   "strings": [
+    "Describe how Tchaikovsky creates a feeling of calm and tranquillity in the music heard in this excerpt.",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 5, played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 2, directly under the Q.1 opening 'Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.'); the file's questionContext ends at '... Overture by Tchaikovsky.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(a)",
+   "paper": "listening",
+   "page": 4,
+   "strings": [
+    "Name the four instruments playing in this excerpt.",
+    "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the following questions:' (page 4, directly under the Q.2 opening 'An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(b)",
+   "paper": "listening",
+   "page": 4,
+   "strings": [
+    "The music in this excerpt features",
+    "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the following questions:' (page 4, directly under the Q.2 opening 'An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(c)",
+   "paper": "listening",
+   "page": 4,
+   "strings": [
+    "The music is performed",
+    "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the following questions:' (page 4, directly under the Q.2 opening 'An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(d)",
+   "paper": "listening",
+   "page": 4,
+   "strings": [
+    "This excerpt uses augmentation. Explain augmentation.",
+    "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the following questions:' (page 4, directly under the Q.2 opening 'An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(e)",
+   "paper": "listening",
+   "page": 4,
+   "strings": [
+    "Describe one of the following features used by Gerald Barry in his Piano Quartet No.1:",
+    "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the following questions:' (page 4, directly under the Q.2 opening 'An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "The three features to choose from ('canon', 'retrograde', 'hand clusters') are printed as a row under the stem, after its colon, and are not in questionText. Like tick-box options and the composing instrument lists, they are left to the figure, which shows them. Noted, not flagged; the coordinator may want them carried, since the stem ends on 'the following features ...:'.",
+    "'Feature:' / 'Description:' are answer-slot labels."
+   ]
+  },
+  {
+   "address": "Q3(a)",
+   "paper": "listening",
+   "page": 5,
+   "strings": [
+    "This excerpt is taken from",
+    "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the following questions:' (page 5, directly under the Q.3 opening 'An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(b)(i)",
+   "paper": "listening",
+   "page": 5,
+   "strings": [
+    "The type of voice heard in this excerpt is",
+    "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the following questions:' (page 5, directly under the Q.3 opening 'An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(b)(ii)",
+   "paper": "listening",
+   "page": 5,
+   "strings": [
+    "The singer is accompanied by",
+    "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the following questions:' (page 5, directly under the Q.3 opening 'An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(c)",
+   "paper": "listening",
+   "page": 5,
+   "strings": [
+    "Identify one feature of the vocal line heard in this excerpt.",
+    "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the following questions:' (page 5, directly under the Q.3 opening 'An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(d)",
+   "paper": "listening",
+   "page": 5,
+   "strings": [
+    "Identify one feature of the accompaniment in this excerpt.",
+    "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the following questions:' (page 5, directly under the Q.3 opening 'An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(e)",
+   "paper": "listening",
+   "page": 5,
+   "strings": [
+    "The cadence heard at the end of this excerpt is",
+    "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the following questions:' (page 5, directly under the Q.3 opening 'An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(a)(i)",
+   "paper": "listening",
+   "page": 6,
+   "strings": [
+    "The opening chords of this excerpt (before the vocals enter) are",
+    "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 1, played three times. The lyrics are printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 6, directly under the Q.4 opening 'Two excerpts from Bohemian Rhapsody by Freddie Mercury.'); the file's questionContext ends at '... by Freddie Mercury.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(a)(ii)",
+   "paper": "listening",
+   "page": 6,
+   "strings": [
+    "These chords are played on",
+    "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 1, played three times. The lyrics are printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 6, directly under the Q.4 opening 'Two excerpts from Bohemian Rhapsody by Freddie Mercury.'); the file's questionContext ends at '... by Freddie Mercury.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(b)",
+   "paper": "listening",
+   "page": 6,
+   "strings": [
+    "In which line are the drums heard for the first time?",
+    "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 1, played three times. The lyrics are printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 6, directly under the Q.4 opening 'Two excerpts from Bohemian Rhapsody by Freddie Mercury.'); the file's questionContext ends at '... by Freddie Mercury.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(c)",
+   "paper": "listening",
+   "page": 6,
+   "strings": [
+    "The bass line heard in line 6 features",
+    "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 1, played three times. The lyrics are printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 6, directly under the Q.4 opening 'Two excerpts from Bohemian Rhapsody by Freddie Mercury.'); the file's questionContext ends at '... by Freddie Mercury.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(d)",
+   "paper": "listening",
+   "page": 7,
+   "strings": [
+    "Lines 9–12 feature antiphonal dialogue. Explain.",
+    "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 2, played three times. The lyrics are printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 6, directly under the Q.4 opening 'Two excerpts from Bohemian Rhapsody by Freddie Mercury.'); the file's questionContext ends at '... by Freddie Mercury.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(e)",
+   "paper": "listening",
+   "page": 7,
+   "strings": [
+    "Identify two differences between the music heard in Excerpt 2 and the music in the opening section of Bohemian Rhapsody.",
+    "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 2, played three times. The lyrics are printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 6, directly under the Q.4 opening 'Two excerpts from Bohemian Rhapsody by Freddie Mercury.'); the file's questionContext ends at '... by Freddie Mercury.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "'1st difference:' / '2nd difference:' are answer-slot labels."
+   ]
+  },
+  {
+   "address": "Q5(a)",
+   "paper": "listening",
+   "page": 8,
+   "strings": [
+    "Identify one traditional feature of the music heard in this excerpt.",
+    "Irish Music You will hear three excerpts, each played three times.",
+    "Excerpt 1. One verse from the ballad The Bonny Irish Maid."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 8, directly under the Q.5 opening 'You will hear three excerpts, each played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "excerptLine: the page prints the bold heading 'Excerpt 1' with no full stop, and 'One verse from the ballad The Bonny Irish Maid.' on the next line (page 8, zoomed at 300 dpi). The file has 'Excerpt 1. One verse ...': a full stop the page does not print. It changes no meaning, so it is not counted as a difference; the file's 'Excerpt 2' and 'Excerpt 3' (no stop) match the print exactly.",
+    "questionContext: the page prints the heading 'Q. 5 Irish Music' (no full stop) and 'You will hear three excerpts, each played three times.' on separate lines; the file joins them as 'Irish Music You will hear ...'."
+   ]
+  },
+  {
+   "address": "Q5(b)",
+   "paper": "listening",
+   "page": 8,
+   "strings": [
+    "Identify one non-traditional feature of the music heard in this excerpt.",
+    "Irish Music You will hear three excerpts, each played three times.",
+    "Excerpt 1. One verse from the ballad The Bonny Irish Maid."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 8, directly under the Q.5 opening 'You will hear three excerpts, each played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "excerptLine: the page prints the bold heading 'Excerpt 1' with no full stop, and 'One verse from the ballad The Bonny Irish Maid.' on the next line (page 8, zoomed at 300 dpi). The file has 'Excerpt 1. One verse ...': a full stop the page does not print. It changes no meaning, so it is not counted as a difference; the file's 'Excerpt 2' and 'Excerpt 3' (no stop) match the print exactly."
+   ]
+  },
+  {
+   "address": "Q5(c)",
+   "paper": "listening",
+   "page": 8,
+   "strings": [
+    "The form of the verse heard in this excerpt is",
+    "Irish Music You will hear three excerpts, each played three times.",
+    "Excerpt 1. One verse from the ballad The Bonny Irish Maid."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 8, directly under the Q.5 opening 'You will hear three excerpts, each played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "excerptLine: the page prints the bold heading 'Excerpt 1' with no full stop, and 'One verse from the ballad The Bonny Irish Maid.' on the next line (page 8, zoomed at 300 dpi). The file has 'Excerpt 1. One verse ...': a full stop the page does not print. It changes no meaning, so it is not counted as a difference; the file's 'Excerpt 2' and 'Excerpt 3' (no stop) match the print exactly."
+   ]
+  },
+  {
+   "address": "Q5(d)",
+   "paper": "listening",
+   "page": 8,
+   "strings": [
+    "This tune is",
+    "Irish Music You will hear three excerpts, each played three times.",
+    "Excerpt 2"
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 8, directly under the Q.5 opening 'You will hear three excerpts, each played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(e)",
+   "paper": "listening",
+   "page": 8,
+   "strings": [
+    "The instrument playing the melody is the",
+    "Irish Music You will hear three excerpts, each played three times.",
+    "Excerpt 2"
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 8, directly under the Q.5 opening 'You will hear three excerpts, each played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(f)",
+   "paper": "listening",
+   "page": 8,
+   "strings": [
+    "The music in this excerpt features",
+    "Irish Music You will hear three excerpts, each played three times.",
+    "Excerpt 2"
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 8, directly under the Q.5 opening 'You will hear three excerpts, each played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(g)",
+   "paper": "listening",
+   "page": 8,
+   "strings": [
+    "Describe one non-traditional feature of this performance.",
+    "Irish Music You will hear three excerpts, each played three times.",
+    "Excerpt 2"
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 8, directly under the Q.5 opening 'You will hear three excerpts, each played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(h)",
+   "paper": "listening",
+   "page": 9,
+   "strings": [
+    "Name the instrument heard playing the melody in this excerpt.",
+    "Irish Music You will hear three excerpts, each played three times.",
+    "Excerpt 3"
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 8, directly under the Q.5 opening 'You will hear three excerpts, each played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(i)",
+   "paper": "listening",
+   "page": 9,
+   "strings": [
+    "Which one of the following can be heard in the melody in this excerpt?",
+    "Irish Music You will hear three excerpts, each played three times.",
+    "Excerpt 3"
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 8, directly under the Q.5 opening 'You will hear three excerpts, each played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(j)",
+   "paper": "listening",
+   "page": 9,
+   "strings": [
+    "This is a lament. How is this reflected in the music heard in the excerpt?",
+    "Irish Music You will hear three excerpts, each played three times.",
+    "Excerpt 3"
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 8, directly under the Q.5 opening 'You will hear three excerpts, each played three times.'); the file's questionContext ends at '... played three times.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(a)",
+   "paper": "listening",
+   "page": 10,
+   "strings": [
+    "Insert the four missing notes at X on the score. Use the given rhythm.",
+    "Aural Skills. This question is based on four excerpts of music.",
+    "Excerpt 1, played three times. An outline score of bars 1–4 of this excerpt is printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 10, directly under the Q.6 opening 'Aural Skills. This question is based on four excerpts of music.'); the file's questionContext ends at '... excerpts of music.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(b)",
+   "paper": "listening",
+   "page": 10,
+   "strings": [
+    "The music is sung by a",
+    "Aural Skills. This question is based on four excerpts of music.",
+    "Excerpt 1, played once more."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 10, directly under the Q.6 opening 'Aural Skills. This question is based on four excerpts of music.'); the file's questionContext ends at '... excerpts of music.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(c)",
+   "paper": "listening",
+   "page": 10,
+   "strings": [
+    "The cadence at the end of this excerpt is",
+    "Aural Skills. This question is based on four excerpts of music.",
+    "Excerpt 1, played once more."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 10, directly under the Q.6 opening 'Aural Skills. This question is based on four excerpts of music.'); the file's questionContext ends at '... excerpts of music.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(d)",
+   "paper": "listening",
+   "page": 10,
+   "strings": [
+    "Identify two differences between the music heard in this excerpt and the music heard in Excerpt 1.",
+    "Aural Skills. This question is based on four excerpts of music.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 10, directly under the Q.6 opening 'Aural Skills. This question is based on four excerpts of music.'); the file's questionContext ends at '... excerpts of music.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "'1st difference:' / '2nd difference:' are answer-slot labels."
+   ]
+  },
+  {
+   "address": "Q6(e)",
+   "paper": "listening",
+   "page": 11,
+   "strings": [
+    "The vocal music of line 2 is at",
+    "Aural Skills. This question is based on four excerpts of music.",
+    "Excerpt 3, played three times. The lyrics are printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 10, directly under the Q.6 opening 'Aural Skills. This question is based on four excerpts of music.'); the file's questionContext ends at '... excerpts of music.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(f)",
+   "paper": "listening",
+   "page": 11,
+   "strings": [
+    "Identify one change which takes place in the vocal music from line 3.",
+    "Aural Skills. This question is based on four excerpts of music.",
+    "Excerpt 3, played three times. The lyrics are printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 10, directly under the Q.6 opening 'Aural Skills. This question is based on four excerpts of music.'); the file's questionContext ends at '... excerpts of music.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(g)",
+   "paper": "listening",
+   "page": 11,
+   "strings": [
+    "Which of the following is heard in the vocal melody at A, B and C in the lyrics above?",
+    "Aural Skills. This question is based on four excerpts of music.",
+    "Excerpt 4, played twice. The lyrics are printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 10, directly under the Q.6 opening 'Aural Skills. This question is based on four excerpts of music.'); the file's questionContext ends at '... excerpts of music.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "Figure shows the Excerpt 4 heading, the lyrics with brackets A, B and C, the question and all three rows of options."
+   ]
+  },
+  {
+   "address": "Q6(h)",
+   "paper": "listening",
+   "page": 11,
+   "strings": [
+    "The accompaniment in this excerpt features",
+    "Aural Skills. This question is based on four excerpts of music.",
+    "Excerpt 4, played twice more."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words (generic instruction bullet). The page prints the bullet '• Answer the questions on each excerpt.' (page 10, directly under the Q.6 opening 'Aural Skills. This question is based on four excerpts of music.'); the file's questionContext ends at '... excerpts of music.'. Every word the file has matches the print. Convention note: no reading file in the lane carries this bullet, and the 2023-hl second-reader record passed the same omission (2023-hl page 3 prints '• Answer the questions on each excerpt.'); if that convention stands, this ask matches print."
+   ],
+   "figureShowsAsk": true
+  }
+ ],
+ "summary": {
+  "asksChecked": 44,
+  "matchesPrint": 0,
+  "differsOnlyByGenericBullet": 44,
+  "differsOtherwise": []
+ }
+}

@@ -183,7 +183,9 @@ const makeCard = (card: AuthoredGeographyCard): SecRubricCard => ({
   totalMarks: card.totalMarks,
   schemeCitation:
     `SEC Geography ${card.level === 'higher' ? 'Higher' : 'Ordinary'} Level ` +
-    `marking scheme ${card.year}, p.${card.schemePage} — © State Examinations Commission.`,
+    `marking scheme ${card.year}, p.${card.schemePage}` +
+    // A deferred sitting's own scheme (paperFileid "LC005ALP042EV-deferred"), named as every deferred card names it.
+    `${card.paperFileid.endsWith('-deferred') ? ', deferred examination' : ''} — © State Examinations Commission.`,
   specVersion: 'geography:outgoing',
   qa: card.reviewed
     ? {

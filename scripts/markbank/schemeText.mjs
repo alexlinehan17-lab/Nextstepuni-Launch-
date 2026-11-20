@@ -96,6 +96,20 @@ const ORDINAL_TARIFF = /\b\d+\s*(?:st|nd|rd|th)\s*[@x]\s*\d+\b/gi;
 const INLINE_ASIDE = /\[[^\]]*\]|\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})*\s*(?:m|marks?)\s*\)/gi;
 
 /**
+ * A split printed inside an answer that wraps: older Italian schemes print the
+ * ask's split at the end of the answer's first line, "They give up their free
+ * time/ they volunteer (2m) to be tourist (2+2+1)" over "guides/ to do tours
+ * (2m)" (2020 Higher Dialogue 3 Q1), so the lifted point "to be tourist
+ * guides/ to do tours" is cut in two by digits normalise() keeps. Only a
+ * bracket holding digits joined by plus signs and nothing else - never "(2m)",
+ * never marks with words. Stripped as an ADDED form, for the reason
+ * ORDINAL_TARIFF and INLINE_ASIDE are: it only removes printed characters, so
+ * no wording the SEC did not print can pass (coordinator ruling, 19 Nov 2026).
+ * (ADDED FORMS, below: 4.)
+ */
+const SPLIT_ONLY = /\(\s*\d+(?:\s*\+\s*\d+)+\s*\)/g;
+
+/**
  * The extractor's own page markers.
  *
  * A marking point does not stop at a page break — the SEC prints "Less Risk /
@@ -368,6 +382,133 @@ const LANGUAGE_TARIFF = new RegExp(
   + `punkt|pistett[äa]|point|to[čc]ke|to[čc]ka|to[čc]k|puncte|punct|punten|`
   + `punt|pontos|ponto|marks?|p)\\.?\\s*\\)?`, 'gi');
 
+/**
+ * ADDED FORMS. Four readings admit scheme text that comparableScheme's own
+ * filters hide. Each is built from the same raw text through the same pipeline
+ * (page markers, footers and cells handled alike) and only ADDS a reading:
+ * nothing the plain form offers is removed or rewritten, so a claim that traced
+ * before still traces, and every authored deck rebuilt byte-identical at each
+ * form's own commit.
+ *
+ * 1. CELLS -- comparableSchemeWithCells (ca408de7e).
+ *    Admits: the words inside the marks cells, unbracketed where they were
+ *    printed ("⟨10 - 13⟩" reads " 10 - 13 ").
+ *    Read by: the marking-grid gate alone (build-deck.mjs spanishGridFault),
+ *    beside the plain form.
+ *    Forced by: the Portuguese 2023 Higher scheme p10, whose grid prints each
+ *    band's range, each Content rung's price ("... on all topics. ⟨4 marks⟩")
+ *    and the penalty "Did not follow the requested structure/format. ⟨-1⟩
+ *    ⟨mark⟩" only in cells, which the plain form strips.
+ *    Only more: the plain form drops each cell; this one keeps the cell's own
+ *    printed words in place, and changes nothing else.
+ *
+ * 2. YEAR LINE -- YEAR_LINE, inside comparableScheme (fd2fb1dec).
+ *    Admits: a scheme line that is exactly a four-digit year, 19xx or 20xx,
+ *    once its marks cell and the page furniture are gone, as a form of its own.
+ *    Read by: every provenance path, since comparableScheme carries it (the
+ *    cells and band-range forms too).
+ *    Forced by: the Portuguese 2023 Ordinary scheme p6, which answers
+ *    "Quando as trotinetas chegaram a Lisboa? (parágrafo 1)" with the line
+ *    "2018 ⟨1 mark⟩".
+ *    Only more: MARKS_ONLY still drops every single numeric line from the
+ *    prose; the year is appended as an alternative of its own, and no line of
+ *    one to three or five or more digits, nor any other century, qualifies.
+ *
+ * 3. BAND RANGES LIFTED OUT -- comparableSchemeWithoutRangeLines
+ *    (d9cc8de6a; extended to (b) by its own later commit).
+ *    Admits: the prose a grid's printed band ranges split, read as one with
+ *    the ranges lifted out, in two cases only:
+ *    (a) a line that is exactly a band's range with its marks ("10 - 13
+ *        marks"), lifted whole;
+ *    (b) a line whose END is exactly two range pairs after prose -- a band's
+ *        Full Scale and Lower Scale columns ("... (etc.) 11 – 15 8 – 10"):
+ *        the prose kept, the two pairs dropped, so the bullet joins the line
+ *        that continues it. A single trailing pair is never stripped.
+ *    Read by: the marking-grid gate alone, beside the plain and cells forms.
+ *    Forced by: (a) the Portuguese 2022 Higher scheme p11 (2022-hl.md lines
+ *    252-254; the 2022 Ordinary scheme likewise), which centres each
+ *    Communication band's range in a side cell against a bullet that wraps,
+ *    so the text layer sets "10 - 13 marks" between "Comprehensible for
+ *    Portuguese language native speaker although" and "with a few mistakes";
+ *    (b) the Portuguese 2026 Higher scheme p10 lines 251/256/261 and p11
+ *    lines 287/292/297, whose Language bands set both range columns on the
+ *    first line of a wrapped bullet ("Verb endings, tenses, agreements
+ *    (number, gender, etc.) 11 – 15 8 – 10" over "nearly always correct.").
+ *    "After prose" means the character before the two pairs is neither a
+ *    digit nor a space. Across the grid subjects' schemes, exactly two pairs
+ *    after prose end 41 Portuguese lines, 27 Italian ("GRADE A 13 – 15
+ *    21 - 25", 2010-2014 Higher) and 2 Music ("Mark 4 - 9 0 - 3", a column
+ *    head), and no Spanish, German or Polish line; one pair after prose,
+ *    never cut, ends Spanish 34, German 1, Music 1,970, Polish 5, Italian 30
+ *    and Portuguese 8 lines. A lead-in of any non-space character was
+ *    refused: on Music's 170 lines of four pairs ("16 – 21 10 – 15 4 - 9
+ *    0 - 3") and German's 6 "Lower Ex." lines it would cut the last two pairs.
+ *    Only more: only range cells are lifted -- a whole range-only line, or
+ *    exactly two pairs at a line's end; a range inside a line of prose is
+ *    untouched, the plain form still offers every range (a band label
+ *    "10 - 13" traces there as before), and rangeLabelFault still holds every
+ *    band named by a range to that range.
+ *
+ * 4. SPLIT ONLY -- SPLIT_ONLY, inside comparableScheme,
+ *    /\(\s*\d+(?:\s*\+\s*\d+)+\s*\)/ (classics lane 092a58b26, landed via
+ *    #391, 2d06c7459; coordinator ruling, 19 Nov 2026).
+ *    Admits: the scheme text with a printed split such as "(3+2)" lifted out
+ *    where it sits inside a wrapped answer, so the answer reads as one.
+ *    Read by: comparableScheme, so every provenance path.
+ *    Forced by: Italian 2020 Higher LB1/LB3 Q1: the older Italian schemes print
+ *    an ask's split at the end of an answer's first line ("to be tourist
+ *    (2+2+1)" over "guides/ to do tours (2m)").
+ *    Proof (at its commit): 132,380 claims re-checked, exactly two flips, both
+ *    Italian 2020 Higher.
+ *    Only more: it is appended as an alternative reading
+ *    (joined.replace(SPLIT_ONLY, ' ')); the plain reading is unchanged.
+ *
+ * RULE FOR THE NEXT LANE: before adding a fifth form, record a lead or
+ * coordinator ruling for it, and prove at its commit that every authored deck
+ * rebuilds byte-identical; any card that appears or drops is named, and the
+ * work stops until that is ruled on too.
+ */
+
+/** The scheme with its marks cells kept, in place (ADDED FORMS, above: 1). */
+export const comparableSchemeWithCells = (raw) =>
+  comparableScheme(String(raw).replace(MARKS_CELL, cell => ` ${cell.slice(1, -1)} `));
+
+/** A line that is exactly a band's printed range with its marks, "10 - 13 marks". */
+const BAND_RANGE_LINE = /^\s*\d{1,2}\s*[-–]\s*\d{1,2}\s*marks?\s*$/i;
+
+/** Exactly two range pairs ending a line after prose (the character before
+ *  them neither a digit nor a space): a band's Full Scale and Lower Scale
+ *  columns ("... (etc.) 11 – 15 8 – 10"). One pair, or three or more, never match. */
+const TWO_RANGE_COLUMNS = /([^\d\s])\s+\d{1,2}\s*[–-]\s*\d{1,2}\s+\d{1,2}\s*[–-]\s*\d{1,2}\s*$/;
+
+/** The scheme with its band ranges lifted out (ADDED FORMS, above: 3): each
+ *  range-only line dropped, and two trailing range columns cut off a line. */
+export const comparableSchemeWithoutRangeLines = (raw) =>
+  comparableScheme(String(raw).split('\n').filter((l) => !BAND_RANGE_LINE.test(l.trim()))
+    .map((l) => l.replace(TWO_RANGE_COLUMNS, '$1')).join('\n'));
+
+/**
+ * A band the scheme names by nothing but its printed range ("10 - 13", "4"):
+ * such a label traces too easily on its own, so its marks must be exactly the
+ * range it names (lo..hi, or the single mark). Returns the reason a band
+ * fails, or null; a band with any other label is not this rule's.
+ */
+export const rangeLabelFault = (band) => {
+  const m = /^\s*(\d{1,3})(?:\s*[\u2010-\u2015-]\s*(\d{1,3}))?\s*$/.exec(String(band?.label ?? ''));
+  if (!m) return null;
+  const a = Number(m[1]);
+  const b = m[2] === undefined ? a : Number(m[2]);
+  const [lo, hi] = a <= b ? [a, b] : [b, a];
+  const want = Array.from({ length: hi - lo + 1 }, (_, i) => lo + i);
+  const marks = [...(band.marks ?? [])].sort((x, y) => x - y);
+  return marks.length === want.length && marks.every((v, i) => v === want[i])
+    ? null
+    : `band "${band.label}" is placed on ${marks.join(', ')}, not the ${lo}-${hi} its label prints`;
+};
+
+/** A scheme line that is exactly a four-digit year (ADDED FORMS, above: 2). */
+const YEAR_LINE = /^(?:19|20)\d\d$/;
+
 export const comparableScheme = (raw) => {
   const sourceLines = raw.replace(MARKS_CELL, ' ').replace(PAGE_MARKER, ' ').replace(PAGE_FOOTER, ' ')
     .split('\n');
@@ -386,6 +527,7 @@ export const comparableScheme = (raw) => {
     }
   }
   if (numericRun.length >= 2) numericRuns.push(normalise(numericRun.join(' ')));
+  const yearLines = sourceLines.map((l) => l.trim()).filter((l) => YEAR_LINE.test(l));
   const lines = sourceLines.filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l));
   const joined = lines.join(' ');
   const whole = normalise(joined);
@@ -396,10 +538,12 @@ export const comparableScheme = (raw) => {
     normalise(foldOriya(joined)),
     normalise(joined.replace(ORDINAL_TARIFF, ' ')),
     normalise(joined.replace(INLINE_ASIDE, ' ')),
+    normalise(joined.replace(SPLIT_ONLY, ' ')),
     normalise(joined.replace(LANGUAGE_TARIFF, ' ')),
     normalise(repairGlyphs(joined)),
     normalise(sourceLines.map((l) => l.replace(MARKS_COLUMN, ''))
       .filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l)).join(' ')),
     ...numericRuns,
+    ...yearLines,
   ].join('|');
 };

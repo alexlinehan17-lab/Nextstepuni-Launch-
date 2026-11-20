@@ -104,8 +104,9 @@ describe('Geography exam-topic registry', () => {
 
   it('keeps every existing Geography SEC card in outgoing-course topics', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'geography');
-    expect(papers).toHaveLength(60);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(720);
+    // + the carded deferred sittings' two booklets each (Part One 12 questions, Part Two 24): 2022-2025 Higher.
+    expect(papers).toHaveLength(60 + 2 * 4);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(720 + 36 * 4);
     // 1,317 reference-derived mappings plus 2026 Higher Part One Q5, which the
     // reference snapshot omitted and the independent 2026 review restores, and
     // 2024 Higher Part One Q5 and 2023 Higher Part One Q2 (Volcanic Activity),
@@ -123,8 +124,10 @@ describe('Geography exam-topic registry', () => {
     // and 12 a sitting). That makes 1,345; and since 2026-10-23 every 2010-2019
     // shared booklet also files its twelve Part One questions as their own
     // questions (n = 1000 + printed number), in English and in the Irish
-    // edition's mirror: + 240 + 240.
-    expect(examQuestionTopicMappingsForSubject('geography')).toHaveLength(1825);
+    // edition's mirror: + 240 + 240. Each carded deferred sitting adds its 36 printed questions
+    // (12 Part One, 24 Part Two), mapped under the deferred sitting and under its booklet's file id:
+    // 2022-2025 Higher, + 72 each.
+    expect(examQuestionTopicMappingsForSubject('geography')).toHaveLength(1825 + 72 * 4);
     const taxonomyById = new Map(taxonomy.topics.map(topic => [topic.id, topic]));
     for (const paper of papers) {
       for (const question of paper.q) {
