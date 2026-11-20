@@ -445,6 +445,162 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2019 Higher Level — © State Examinations Commission.",
+    id: "mlt-2019-hl-i-2", topicId: "maltese-0-1", conceptId: "kif-jara-rwol-tal-isport-fil",
+    section: "I", questionRef: "2019 HL Section I Q2",
+    questionText: "Kif jara r-rwol tal-isport fil-ħajja tal-bniedem David Stellini?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "L-isport huwa lezzjoni kontinwa fil-ħajja tal-bniedem. Sew fl-isports kif ukoll fil-ħajja, l-importanti hu li dejjem jipparteċipa u jagħti kontribut siewi ; fil-ħajja kull esperjenza qegħda hemm biex jitgħallem u li l-importanti u li jerġgħa jqum biex ikompli jiffaċċja ‘l ħajja. L-isport jgħinu biex ikollu l-qawwa li jkompli jikkumbati mal-ħajja.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\" The scheme ends its answer with: “(P3)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2019 Higher Level — © State Examinations Commission.",
+    id: "mlt-2019-hl-i-3", topicId: "maltese-0-1", conceptId: "essenzjalment-awturi-jaqblu-dwar-valur-tal",
+    section: "I", questionRef: "2019 HL Section I Q3",
+    questionText: "Essenzjalment, iż-żewġ awturi jaqblu dwar il-valur tal-isports, iżda x’inhuma l-aspetti differenti tal-isports li jenfassizzaw fl-artikli tagħhom?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "L-ewwel artiklu jenfasizza kif l-isport jipprepara t-tfal għall-isfidi tal-ħajja u kif jitgħallmu jqumu u jibqgħu jippruvaw; huma jitgħallmu wkoll dwar il-ġid komuni mill-isports. It-tieni artiklu jenfassizza l-fatt li l-isport kapaċi jgħin il-bniedem jgħix ħajja iżjed ħielsa mill-mard fiżiku u mentali u jwassal għal kwalità aħjar ta’ ħajja.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2019 Higher Level — © State Examinations Commission.",
+    id: "mlt-2019-hl-i-4", topicId: "maltese-0-1", conceptId: "nitkellmu-afna-dwar-onn-naqtg-korruzzjoni",
+    section: "I", questionRef: "2019 HL Section I Q4",
+    questionText: "“Nitkellmu ħafna dwar il-bżonn li naqtgħu l-korruzzjoni sew fl-isports kif ukoll f’oqsma oħra tas-soċjeta. Bl-isports it-tfal tagħna jistgħu jkunu jafu kemm jiswa l-ġid komuni - valur li jista’ jbegħedhom mir-riegħba u l-egoiżmu..” Fil kuntest ta’ din id-dikjarazzjoni, spjega kif l-isport jista’ jgħin biex jiġġieled kontra l-korruzzjoni.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "L-isport jgħallem lit-tfal u ż-żgħażagħ jibnu karattru sod.", marks: null, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\" The scheme reprints the last line of the question as: “Fil kuntest ta’ din id-dikjarazzjoni, spjega kif l-isport jista’ jgħin biex jikkumbati kontra l-korruzzjoni.”." },
+    { id: "r-2", kind: "point", verbatim: "Jgħallem il-valur tal-ġid komuni", marks: null },
+    { id: "r-3", kind: "point", verbatim: "L-isport jista’ jbegħedom mir-riegħba u l-egoiżmu", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2019 Higher Level — © State Examinations Commission.",
+    id: "mlt-2019-hl-i-5", topicId: "maltese-0-1", conceptId: "sina-eja-isfida-vera-hija-mag",
+    section: "I", questionRef: "2019 HL Section I Q5",
+    questionText: "Sina Buġeja tgħid li l-isfida vera hija “magħna nfusna” u David Stellini jgħid l-isport huwa sforz li bih “nimbuttaw il-limit tagħna”. Iddiskuti dawn il-konklużjonijiet billi tirreferi għaż-żewġ artikli.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "l-isport huwa mezz kif il-bniedem jibqa’ jipprova jegħleb l-isfidi u dan jgħinu jiffaċċja l-problem tal-ħajja.", marks: null, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\" The scheme heads its points: “Xi punti li jistgħu jissemmew:”." },
+    { id: "r-2", kind: "point", verbatim: "L-isport jgħin biex jibni karattri sodi, jagħti prinċipji siewja bħal li wieħed ma jaqtax qalbu.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Fuq livell psikoloġiku jgħallimna negħlbu l-limit li npoġġu fuqna nfusna.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Jgħin biex il-bniedem ikun b’saħħta b’mod sħiħ għax iwasslu biex jagħmel l-aħjar għażliet għal ħajja hienja.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2019 Higher Level — © State Examinations Commission.",
+    id: "mlt-2019-hl-ii-1", topicId: "maltese-1-0", conceptId: "imma-isport-jag-milx-impossibbli-minn",
+    section: "II", questionRef: "2019 HL Section II Q1",
+    questionText: "“Imma l-isport waħdu ma jagħmilx l-impossibbli.” Minn dak li qrajt f’din is-silta, ikkummenta dwar x’taħseb li huma l-aktar għażliet importanti fil-ħajja f’madwar mitt kelma.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Referenza għas-silta u kemm l-isport jew l-attività fiżika huma importanti; għazliet dwar x’nieklu u x’nixorbu li jistgħu jgħinu biex inkunu aktar f’saħħitna.", marks: null, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\" The scheme heads its points: “Xi punti li jistgħu jissemmew:”." },
+    { id: "r-2", kind: "point", verbatim: "Għażliet oħra fil-ħajja jistgħu jinkludu s-suġġetti li wieħed jagħżel biex jistudja, l-karriera jew it-tip ta’ xogħol.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Għażliet personali bħall-għażla tas-sieħeb/sieħba jew li tibqa’ waħdek.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Ir-relazzjonijiet mal-persuni li tgħix u taħdem magħhom.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "L-għażla li tagħmel persuna li tgħin u tikkontribwixxi biex ittejjeb il-ħajja ta’ dawk ta’ madwarha.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Għażliet ta’ kuljum, l-affarijiet is-sempliċi kif ukoll dawk li jagħmluna iktar sereni jew inqas kuntenti.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "IT-TIENI TAQSIMA",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2019 Higher Level — © State Examinations Commission.",
+    id: "mlt-2019-hl-iii-1", topicId: "maltese-1-0", conceptId: "ewwel-jien-tieni-jien-tielet-jien",
+    section: "III", questionRef: "2019 HL Section III Q1",
+    questionText: "‘L-ewwel jien, it-tieni jien u t-tielet jien.’ Dan il-proverbju jiddikkjara li n-nies huma tassew egoisti. Taqbel ma’ dan? Taħseb li dan il-proverbju huwa releventi fil-ħajja tal-lum? Iddiskuti l-opinjoni tiegħek f’komponiment ta’ madwar 300 kelma.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\" The scheme reprints the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2019 Higher Level — © State Examinations Commission.",
+    id: "mlt-2019-hl-iii-2", topicId: "maltese-1-0", conceptId: "seb-dwar-sena-paw-jie-erti",
+    section: "III", questionRef: "2019 HL Section III Q2",
+    questionText: "X’taħseb dwar is-sena ta’ pawża li jieħdu ċerti studenti wara li jispiċċaw l-iskola sekondarja jew wara li jiggradwaw? Hija biss sena moħlija fil-ħajja taż-żgħażagħ? Agħti t-tweġiba tiegħek f’komponiment ta madwar 300 kelma. Kun żgur li ssemmi ż-żewġ naħat tal-argument.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\" The scheme reprints the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC557ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2023 Higher Level — © State Examinations Commission.",
