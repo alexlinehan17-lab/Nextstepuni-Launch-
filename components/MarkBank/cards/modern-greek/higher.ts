@@ -855,6 +855,182 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2014 Higher Level — © State Examinations Commission.",
+    id: "mgr-2014-hl-1-2", topicId: "modern-greek-0-1", conceptId: "mgr-αλλαγών-εποχή-ζούμε",
+    section: "1", questionRef: "2014 HL Section 1 Q2",
+    questionText: "Τι χαρακτηρίζει την εποχή της οικονομικής κρίσης και των τεχνολογικών αλλαγών που ζούμε;",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"ΟΜΑΔΑ 1η","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Αυτή η εποχή που ο άνθρωπος καθορίζεται από το επάγγελμα του τελειώνει. Με την οικονομική κρίση και την τεχνολογική αλλαγή, μειώνεται συνεχώς ο αριθμός όσων έχουν μια ικανοποιητική δουλειά ή μένουν στο ίδιο επάγγελμα για πάντα. Ο άνθρωπος σταματά να είναι η δουλειά του. Κι αυτό τον υποχρεώνει να βρει νέα ταυτότητα.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2014 Higher Level — © State Examinations Commission.",
+    id: "mgr-2014-hl-1-3", topicId: "modern-greek-0-1", conceptId: "mgr-άνθρωποι-αυτοκαθορίζονται-μέρες",
+    section: "1", questionRef: "2014 HL Section 1 Q3",
+    questionText: "Πως αυτοκαθορίζονται συνήθως οι νέοι άνθρωποι στις μέρες μας;",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"ΟΜΑΔΑ 1η","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Το χάσμα των τάξεων ξεχωρίζει τους ανθρώπους σε εκείνους που επιλέγουν την δουλειά τους και σε εκείνους που δεν την επιλέγουν. Οι σημερινοί νέοι κατά κανόνα δεν την επιλέγουν. Αν έχουν δουλειά, είναι συχνά στην παροχή υπηρεσιών. Αυτό σημαίνει ότι πρέπει να αυτοκαθοριστούν χωρίς το πλεονέκτημα της επαγγελματικής ταυτότητας. Αρκετοί το κάνουν μέσω της κατανάλωσης: Είσαι ο Mac σου ή ο αγαπημένος σου καφές. Τα μέσα κοινωνικής δικτύωσης προσφέρουν άλλες στρατηγικές. Στο Twitter, έχεις 160 χαρακτήρες για να γράψεις τη βιογραφία σου –στην ουσία να δηλώσεις την ταυτότητά σου. Οι νεώτεροι άνθρωποι συχνά αναφέρουν απλώς την αγαπημένη τους ομάδα ή μάρκα ή χρησιμοποιούν κάποια έξυπνη φράση.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2014 Higher Level — © State Examinations Commission.",
+    id: "mgr-2014-hl-1-4", topicId: "modern-greek-0-1", conceptId: "mgr-ακαδημαϊκών-αλλαγές-αυτούς",
+    section: "1", questionRef: "2014 HL Section 1 Q4",
+    questionText: "Τι είδους αλλαγές στον εργασιακό χώρο των πολιτικών , των δημοσιογράφων και των ακαδημαϊκών δημιουργούν κάποια κρίση για αυτούς;",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"ΟΜΑΔΑ 1η","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Οι επαγγελματικές ταυτότητες αλλάζουν με τον χρόνο. Όταν μπήκα στην δημοσιογραφία , λέει ο συγγραφέας του άρθρου , πριν από 20 χρόνια, ήταν μεθυστικό επάγγελμα. Μετά ήρθε το Ιντερνέτ και απαιτούσε σχεδόν ασταμάτητο γράψιμο με μειωμένο μισθό. Σήμερα οι δημοσιογράφοι είναι μάλλον εργάτες και, όλο περισσότερο, είναι γυναίκες (Ο ταχύτερος τρόπος για να κυριαρχηθεί από γυναίκες ένα επάγγελμα, είναι η μείωση των μισθών). Το ακαδημαϊκό έργο κάποτε προσέλκυε ανθρώπους που τους άρεσαν οι ιδέες. Αλλά με την διολίσθηση της «καθολικής θεωρίας» και την πίεση για δημοσίευση ατελείωτων όγκων συγγραμμάτων, οι ακαδημαϊκοί σήμερα τείνουν να είναι σκληρά εργαζόμενοι τύποι, αποφασισμένοι να αφιερώσουν τη ζωή τους σε μικροσκοπικές ιδιαιτερότητες .Κάποια άλλα επαγγέλματα τα καταστρέφει η τεχνολογία. Όταν ένας βιβλιοπώλης με ρώτησε , λέει ο συγγραφέας, να του αναφέρω το αγαπημένο μου βιβλιοπωλείο, απάντησα ανοήτως «η Amazon» και απάντησε με μια κραυγή: γι 'αυτό η δημοσιογραφία αντικαθίσταται από τις δημόσιες σχέσεις.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\" The scheme reprints the question as: “Τι είδους αλλαγές στον εργασιακό χώρο των πολιτικών , των δημοσιογράφων και των ακαδημαϊκών δημιουργούν κάποιου είδους κρίση για αυτούς;”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2014 Higher Level — © State Examinations Commission.",
+    id: "mgr-2014-hl-1-5", topicId: "modern-greek-0-1", conceptId: "mgr-αποκαλεί-πιο-ρευστές",
+    section: "1", questionRef: "2014 HL Section 1 Q5",
+    questionText: "Γιατί ο Bauman αποκαλεί τις ταυτότητες μας πιο ρευστές;",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"ΟΜΑΔΑ 1η","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Γιατί συνήθως η ταυτότητα των σημερινών ανθρώπων παρουσιάζεται μέσα στις σελίδες κοινωνικής διαδικτύωσης και ενημέρωσης . Αυτές οι σελίδες δεν έχουν ένα σταθερό επίπεδο αξιών και διαφοροποιούνται πολύ εύκολα , με αποτέλεσμα οι ταυτότητες να αποδυναμώνονται ή να απογειώνονται πολύ πιο γρήγορα και πιο ρευστά από ότι παλιότερα.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2014 Higher Level — © State Examinations Commission.",
+    id: "mgr-2014-hl-1-6", topicId: "modern-greek-0-1", conceptId: "mgr-έχει-απώλεια-επαγγελματικής",
+    section: "1", questionRef: "2014 HL Section 1 Q6",
+    questionText: "Ποιες συνέπειες έχει η απώλεια της επαγγελματικής ταυτότητας ;",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"ΟΜΑΔΑ 1η","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Τα θύματα αυτών των αλλαγών χάνουν τις επαγγελματικές τους ταυτότητες. Αυτό συμβαίνει στους περισσότερους διαφημιστές, για παράδειγμα, γύρω στην ηλικία των 40. Στις συγκεκριμένες περιπτώσεις, η ιστορία που έχει ο καθένας για το ποιος είναι, ξαφνικά καταρρέει. Αυτός είναι ένας λόγος που οι άνεργοι τείνουν να είναι δυστυχισμένοι. Οποιαδήποτε ξαφνική αλλαγή στο εργασιακό στάτους φέρνει σύγχυση και σε οικογένεια και φίλους.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2014 Higher Level — © State Examinations Commission.",
+    id: "mgr-2014-hl-2", topicId: "modern-greek-1-0", conceptId: "mgr-άνεργους-έκφραση-είμαστε",
+    section: "2", questionRef: "2014 HL Section 2",
+    questionText: "Να σχολιάσετε σε περίπου 100 λέξεις πως καταλαβαίνετε την έκφραση: Όμως στους σημερινούς υλιστικούς, άνεργους, παγκοσμιοποιημένους καιρούς όπου όλο περισσότεροι από εμάς ζούμε μόνοι, δεν είμαστε πια σίγουροι για το ποιοι είμαστε.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Οι μεγάλες αλλαγές που έχουν συμβεί κατά τη διάρκεια των τελευταίων δεκαετιών στις σύγχρονες κοινωνίες έχουν επιφέρει ποικίλες αλλαγές και στη ψυχολογική κατάσταση αλλά και στην ταυτότητα μεγάλης ομάδας ανθρώπων. Η κοινωνία σε ένα μεγάλο μέρος της πέρασε από τη μεγάλη κατανάλωση, στην οικονομική κρίση, Το ποσοστό ανεργίας έχει αυξηθεί δραματικά και αγγίζει σχεδόν κάθε οικογένεια. Η παγκοσμιοποίηση που έγινε σε ταχύτερους ρυθμούς από ότι αναμένονταν αποπροσανατόλισε τους ανθρώπους με αποτέλεσμα όλες αυτές οι αλλαγές συσσωρευτικά να έχουν κάνει τους ανθρώπους σε μεγάλο ποσοστό να νιώθουν πως έχουν χάσει την ταυτότητα τους.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2014 Higher Level — © State Examinations Commission.",
+    id: "mgr-2014-hl-3-1", topicId: "modern-greek-1-0", conceptId: "mgr-επάγγελμα-ευτυχίας-παράγοντας",
+    section: "3", questionRef: "2014 HL Section 3 Q1",
+    questionText: "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων. Το επάγγελμα ως πηγή και παράγοντας ευτυχίας.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ta χαρακτηριστικά του επαγγέλματος", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "H θετική προσφορά του επαγγέλματος στο άτομο και στην κοινωνία (επιβεβαίωση ικανότητας, κοινωνική προσφορά, κοινωνική καταξίωση, διεύρυνση οριζόντων, κοινωνικοποίηση ανθρώπων, υγιέστερη λειτουργία της κοινωνίας)", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2014 Higher Level — © State Examinations Commission.",
+    id: "mgr-2014-hl-3-2", topicId: "modern-greek-1-0", conceptId: "mgr-έχουμε-ανακαλύψουμε-αυτήν",
+    section: "3", questionRef: "2014 HL Section 3 Q2",
+    questionText: "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων. «Αν και ταξιδεύουμε σε όλο τον κόσμο για να ανακαλύψουμε την ομορφιά, αυτήν πρέπει να την έχουμε μέσα μας γιατί διαφορετικά δεν πρόκειται να τη βρούμε.» Ralph Waldo Emerson",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ο άνθρωπος πρέπει πρώτα από όλα και κυρίως να έχει την ομορφιά μέσα του, στον εσωτερικό του κόσμο. Όσο και αν ψάξει μακριά, σε μέρη διαφορετικά και άλλους πολιτισμούς , το ωραίο και η ομορφιά είναι ένα ατομικό, μοναχικό ταξίδι κατάδυσης του καθενός στη ψυχή του, τις ρίζες του και την καλλιέργεια που επεδίωξε και πέτυχε. Άρα κάθε άλλο που κάνει ο άνθρωπος για να ανακαλύψει την ομορφιά μπορεί μόνο να τον βοηθήσει να φτάσει πιο γρήγορα στο στόχο του και να δείξει ένα μεγαλύτερο κομμάτι αυτής της ομορφιάς.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2017, level: "higher",
     paperFileid: "LC019ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2017 Higher Level — © State Examinations Commission.",
