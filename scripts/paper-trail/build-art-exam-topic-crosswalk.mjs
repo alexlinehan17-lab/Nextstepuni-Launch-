@@ -196,12 +196,18 @@ const EnglishWrittenPaper = (level, year) => {
   return candidates[0] ?? null;
 };
 
-const blockedReason = parsed => {
+const blockedReason = (parsed, level) => {
   if (parsed.year < 2010) {
     return 'The entitled local SEC Art corpus currently begins at 2010. This factual heading is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied.';
   }
   if (parsed.sitting === 'sample') {
     return 'The entitled Paper Trail corpus does not currently carry this sample booklet as a selectable paper. The factual heading is retained pending independent verification from an official source; no StudyClix-hosted question image or PDF is copied.';
+  }
+  if (parsed.sitting === 'deferred'
+    && deferredSourcePapers.some(paper => paper.year === parsed.year && paper.level === level)) {
+    // The deferred booklet is carded (art_deferred.py): its questions are mapped from their cards' reviewed topics by
+    // file id (deferredQuestionMappings below), never from these headings.
+    return 'The deferred-sitting booklet is carded as its own paper; its questions are mapped from their cards\' reviewed topics (deferredQuestionMappings), not from this heading. The factual heading is retained as a reference; no StudyClix-hosted question image or PDF is copied.';
   }
   if (parsed.sitting === 'deferred') {
     return 'The entitled Paper Trail corpus does not currently carry this deferred-sitting booklet. The factual heading is retained pending independent verification from an official source; no StudyClix-hosted question image or PDF is copied.';
@@ -465,7 +471,7 @@ for (const level of LEVELS) {
   for (const topic of reference.variants[level].topics) {
     for (const heading of topic.officialQuestionHeadings) {
       const parsed = parseHeading(heading);
-      const explicitBlock = blockedReason(parsed);
+      const explicitBlock = blockedReason(parsed, level);
       const paper = explicitBlock ? null : EnglishWrittenPaper(level, parsed.year);
       const localQuestion = paper?.q.find(question => question.n === parsed.questionNumber);
       if (explicitBlock || !paper || !localQuestion) {
