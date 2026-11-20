@@ -240,11 +240,11 @@ export const CARDS: SecCard[] = [
     questionText: "να εξηγήσεις με δικά σου λόγια τη σημασία των παρακάτω λέξεων ή φράσεων που είναι τυπωμένες με έντονο χρώμα :\nεγκατέλειψαν\nβιομηχανικά απόβλητα\nβιομηχανικές μονάδες\nανακυκλώνουν\nπαραβίασε",
     tariffModel: {"kind":"orderedSplit","notation":"5 × 1"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "άφησαν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "τα υπόλοιπα των βιομηχανιών", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "εργοστάσια", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "χρησιμοποιούν ξανά", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "παρανόμησε, δεν τήρησε", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "άφησαν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "τα υπόλοιπα των βιομηχανιών", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "εργοστάσια", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "χρησιμοποιούν ξανά", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "παρανόμησε, δεν τήρησε", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -255,7 +255,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -268,7 +268,7 @@ export const CARDS: SecCard[] = [
     questionText: "τι είναι η αστυφιλία; Μπορείς να δώσεις ένα ορισμό του όρου βασισμένος στο κείμενο; (την απάντηση σου να την πάρεις από την 2η παράγραφο)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "η συγκέντρωση πολλών ανθρώπων σε μια πόλη και η μόνιμη εγκατάσταση τους σε αυτή", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "η συγκέντρωση πολλών ανθρώπων σε μια πόλη και η μόνιμη εγκατάσταση τους σε αυτή", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -279,7 +279,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -292,7 +292,7 @@ export const CARDS: SecCard[] = [
     questionText: "πως μπορεί να λυθεί το πρόβλημα της μόλυνσης του περιβάλλοντος σύμφωνα με το κείμενο που διάβασες; (την απάντηση σου να την πάρεις από την 6,7,8η παράγραφο)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "τήρηση παγκόσμιων μέτρων , απομάκρυνση εργοστασίων από κατοικημένες περιοχές, δημιουργία πάρκων, ανακύκλωση", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "τήρηση παγκόσμιων μέτρων , απομάκρυνση εργοστασίων από κατοικημένες περιοχές, δημιουργία πάρκων, ανακύκλωση", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -303,7 +303,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -316,7 +316,7 @@ export const CARDS: SecCard[] = [
     questionText: "πως προσπαθούν κάποιες μεγαλουπόλεις να λύσουν το πρόβλημα; (την απάντηση σου να την πάρεις από την 6,7 η παράγραφο)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "περιορισμός αστυφιλίας, ανακύκλωση", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "περιορισμός αστυφιλίας, ανακύκλωση", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -327,7 +327,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -340,7 +340,7 @@ export const CARDS: SecCard[] = [
     questionText: "συμφωνείς με την άποψη ότι τα εργοστάσια είναι η σοβαρότερη αιτία μόλυνσης του περιβάλλοντος; (την απάντηση σου να την πάρεις από όλο το κείμενο)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "είναι σίγουρα μια σοβαρή αιτία όχι όμως η μοναδική", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "είναι σίγουρα μια σοβαρή αιτία όχι όμως η μοναδική", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -351,7 +351,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -364,7 +364,7 @@ export const CARDS: SecCard[] = [
     questionText: "σχολίασε τη φράση στη 5η παράγραφο: όταν είναι στην εξοχή γεμίζουν τις μπαταρίες τους αλλά την ίδια στιγμή αδειάζουν το περιβάλλον.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ενδιαφέρεται να πάρει ότι μπορεί να του προσφέρει η φύση αδιαφορώντας για τις συνέπειες που μπορεί να έχει αυτό στο περιβάλλον που μολύνει, καταστρέφει", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ενδιαφέρεται να πάρει ότι μπορεί να του προσφέρει η φύση αδιαφορώντας για τις συνέπειες που μπορεί να έχει αυτό στο περιβάλλον που μολύνει, καταστρέφει", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -375,7 +375,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -388,7 +388,7 @@ export const CARDS: SecCard[] = [
     questionText: "Να σχολιάσεις σε περίπου 100 λέξεις πως καταλαβαίνεις τη τελευταία φράση του κειμένου: οι άνθρωποι το προκάλεσαν το πρόβλημα της μόλυνσης και μόνο οι άνθρωποι μπορούν να το λύσουν.",
     tariffModel: {"kind":"fixed"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Στη 2η και 3η ομάδα ερωτήσεων τα ακόλουθα στοιχεία συνυπολογίζονται στη βαθμολογία:", marks: 30, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\" The scheme prints, as examples, not a checklist: “Το πρόβλημα της μόλυνσης δημιουργήθηκε από τις ενέργειες των ανθρώπων που συνειδητά ή ασυνείδητα θεωρεί ότι η φύση μπορεί πάντα να του προσφέρει τα πάντα”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. σαφήνεια σκοπού: ο υποψήφιος κατανοεί την ερώτηση και γνωρίζει πώς να οργανώσει την απάντηση του.(30%)","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. σχετικότητα της απάντησης : ο υποψήφιος χρησιμοποιεί το σχετικό και κατάλληλο υλικό με έναν τρόπο καλά δομημένο και επιλεγμένο.(30%)","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. επάρκεια γλώσσας : ο υποψήφιος αποδεικνύει μια ικανοποιητική χρήση της γλώσσας ικανή ώστε να μεταδώσει τις ιδέες του με σαφήνεια και ευχέρεια.(30%)","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. διατύπωση: γραμματική, συντακτικό, ορθογραφία. (10%)","marks":3,"permittedMarks":[0,1,2,3]}] },
+    { id: "r-1", kind: "criterion", verbatim: "Στη 2η και 3η ομάδα ερωτήσεων τα ακόλουθα στοιχεία συνυπολογίζονται στη βαθμολογία:", marks: 30, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\" The scheme prints, as examples, not a checklist: “Το πρόβλημα της μόλυνσης δημιουργήθηκε από τις ενέργειες των ανθρώπων που συνειδητά ή ασυνείδητα θεωρεί ότι η φύση μπορεί πάντα να του προσφέρει τα πάντα”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. σαφήνεια σκοπού: ο υποψήφιος κατανοεί την ερώτηση και γνωρίζει πώς να οργανώσει την απάντηση του.(30%)","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. σχετικότητα της απάντησης : ο υποψήφιος χρησιμοποιεί το σχετικό και κατάλληλο υλικό με έναν τρόπο καλά δομημένο και επιλεγμένο.(30%)","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. επάρκεια γλώσσας : ο υποψήφιος αποδεικνύει μια ικανοποιητική χρήση της γλώσσας ικανή ώστε να μεταδώσει τις ιδέες του με σαφήνεια και ευχέρεια.(30%)","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. διατύπωση: γραμματική, συντακτικό, ορθογραφία. (10%)","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -399,7 +399,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -412,7 +412,7 @@ export const CARDS: SecCard[] = [
     questionText: "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων : Για ποιους λόγους πιστεύεις ότι ο άνθρωπος έχει υποχρέωση να προστατεύει το περιβάλλον;",
     tariffModel: {"kind":"fixed"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Στη 2η και 3η ομάδα ερωτήσεων τα ακόλουθα στοιχεία συνυπολογίζονται στη βαθμολογία:", marks: 40, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. σαφήνεια σκοπού: ο υποψήφιος κατανοεί την ερώτηση και γνωρίζει πώς να οργανώσει την απάντηση του.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. σχετικότητα της απάντησης : ο υποψήφιος χρησιμοποιεί το σχετικό και κατάλληλο υλικό με έναν τρόπο καλά δομημένο και επιλεγμένο.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. επάρκεια γλώσσας : ο υποψήφιος αποδεικνύει μια ικανοποιητική χρήση της γλώσσας ικανή ώστε να μεταδώσει τις ιδέες του με σαφήνεια και ευχέρεια.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. διατύπωση: γραμματική, συντακτικό, ορθογραφία. (10%)","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    { id: "r-1", kind: "criterion", verbatim: "Στη 2η και 3η ομάδα ερωτήσεων τα ακόλουθα στοιχεία συνυπολογίζονται στη βαθμολογία:", marks: 40, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. σαφήνεια σκοπού: ο υποψήφιος κατανοεί την ερώτηση και γνωρίζει πώς να οργανώσει την απάντηση του.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. σχετικότητα της απάντησης : ο υποψήφιος χρησιμοποιεί το σχετικό και κατάλληλο υλικό με έναν τρόπο καλά δομημένο και επιλεγμένο.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. επάρκεια γλώσσας : ο υποψήφιος αποδεικνύει μια ικανοποιητική χρήση της γλώσσας ικανή ώστε να μεταδώσει τις ιδέες του με σαφήνεια και ευχέρεια.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. διατύπωση: γραμματική, συντακτικό, ορθογραφία. (10%)","marks":4,"permittedMarks":[0,1,2,3,4]}] },
     ],
   } as SecCard,
   {
@@ -425,7 +425,7 @@ export const CARDS: SecCard[] = [
     questionText: "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων : Τι πιστευετε ότι τα έντυπα μέσα: εφημερίδες, βιβλία συνεχίζουν να προσφέρουν στον ηλεκρονικό κόσμο μας;",
     tariffModel: {"kind":"fixed"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Στη 2η και 3η ομάδα ερωτήσεων τα ακόλουθα στοιχεία συνυπολογίζονται στη βαθμολογία:", marks: 40, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. σαφήνεια σκοπού: ο υποψήφιος κατανοεί την ερώτηση και γνωρίζει πώς να οργανώσει την απάντηση του.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. σχετικότητα της απάντησης : ο υποψήφιος χρησιμοποιεί το σχετικό και κατάλληλο υλικό με έναν τρόπο καλά δομημένο και επιλεγμένο.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. επάρκεια γλώσσας : ο υποψήφιος αποδεικνύει μια ικανοποιητική χρήση της γλώσσας ικανή ώστε να μεταδώσει τις ιδέες του με σαφήνεια και ευχέρεια.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. διατύπωση: γραμματική, συντακτικό, ορθογραφία. (10%)","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    { id: "r-1", kind: "criterion", verbatim: "Στη 2η και 3η ομάδα ερωτήσεων τα ακόλουθα στοιχεία συνυπολογίζονται στη βαθμολογία:", marks: 40, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. σαφήνεια σκοπού: ο υποψήφιος κατανοεί την ερώτηση και γνωρίζει πώς να οργανώσει την απάντηση του.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. σχετικότητα της απάντησης : ο υποψήφιος χρησιμοποιεί το σχετικό και κατάλληλο υλικό με έναν τρόπο καλά δομημένο και επιλεγμένο.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. επάρκεια γλώσσας : ο υποψήφιος αποδεικνύει μια ικανοποιητική χρήση της γλώσσας ικανή ώστε να μεταδώσει τις ιδέες του με σαφήνεια και ευχέρεια.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. διατύπωση: γραμματική, συντακτικό, ορθογραφία. (10%)","marks":4,"permittedMarks":[0,1,2,3,4]}] },
     ],
   } as SecCard,
   {

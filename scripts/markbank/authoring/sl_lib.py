@@ -722,8 +722,10 @@ def printed_page(path, pdf_page):
         for b in page.get_text('dict')['blocks']:
             for ln in b.get('lines', []):
                 t = ''.join(sp['text'] for sp in ln['spans']).strip()
-                if re.fullmatch(r'\d{1,2}', t) and (ln['bbox'][1] < 100 or ln['bbox'][1] > h - 100):
-                    nums.add(int(t))
+                # a bare number, or a footer "Page 2 of 4" (Modern Greek 2011; second reader, 20 Nov)
+                m = re.fullmatch(r'(\d{1,2})|Page\s+(\d{1,2})\s+of\s+\d{1,2}', t, re.I)
+                if m and (ln['bbox'][1] < 100 or ln['bbox'][1] > h - 100):
+                    nums.add(int(m.group(1) or m.group(2)))
         cands.append(nums)
     votes = collections.Counter(n - (i + 1) for i, nums in enumerate(cands) for n in nums)
     if not votes:
