@@ -3984,6 +3984,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2025 Higher Level — © State Examinations Commission.",
+    id: "swe-2025-hl-ii-1", topicId: "swedish-1-0", conceptId: "kommentera-detta-citat-och-uttryck-dina",
+    section: "II", questionRef: "2025 HL Section II Q1",
+    questionText: "Kommentera detta citat och uttryck dina tankar med 100 - 150 ord: ”Jag tycker att klimatfrågan är speciell.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kandidaten kan utgå från artikeln men hen kan också ta egna exempel. Hen kan eventuellt göra en jämförelse med ett annat ämne hen tycker är speciellt.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme prints: “Kandidaten utgår från citatet och uttrycker tydligt sin åsikt/ sina åsikter.”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEL II (30 POÄNG)",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2025 Higher Level — © State Examinations Commission.",
+    id: "swe-2025-hl-iii-1", topicId: "swedish-1-1", conceptId: "ska-over-varlden-ska-bli-stora",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "Skriv en uppsats på minst 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. ”Vi ska ta över världen. Vi ska bli stora! Vi ska bli mäktiga! Vi ska göra jorden hel. Vi ska göra vattnet rent. Vi ska aldrig skada varandra mer. Vi ska slåss. Vi ska slåss mot Goliat*!” (Laleh) *David och Goliat är en berättelse från Bibeln där David, en ung man, kämpar mot jätten Goliat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under “Del III (40 poäng)” the scheme reprints only the instruction and the two titles; it prints no answer, no content and no criteria for this part (and no criteria anywhere in this scheme).", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2025 Higher Level — © State Examinations Commission.",
+    id: "swe-2025-hl-iii-2", topicId: "swedish-1-1", conceptId: "man-sager-tid-pengar-men-tid",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "Skriv en uppsats på minst 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. ”Man säger tid är pengar, men tid är ju gratis vad jag vet.” (Lars Winnerbäck)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under “Del III (40 poäng)” the scheme reprints only the instruction and the two titles; it prints no answer, no content and no criteria for this part (and no criteria anywhere in this scheme).", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2026, level: "higher",
     paperFileid: "LC039ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2026 Higher Level — © State Examinations Commission.",
