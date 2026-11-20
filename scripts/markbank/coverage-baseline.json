@@ -109,7 +109,7 @@
   },
   "bulgarian": {
     "cards": 141,
-    "contentHash": "19d141129fe89fa4",
+    "contentHash": "88638f4591b1979f",
     "coveragePct": 100.0,
     "covered": 141,
     "excluded": 78,
@@ -258,19 +258,19 @@
     "refsHash": "0ffa06bee95d8270"
   },
   "dutch": {
-    "cards": 42,
-    "contentHash": "e9c0193ea33db730",
+    "cards": 219,
+    "contentHash": "a4d28c69e16b387b",
     "coveragePct": 100.0,
-    "covered": 42,
-    "excluded": 21,
-    "leaves": 63,
+    "covered": 219,
+    "excluded": 0,
+    "leaves": 219,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 5,
-      "hash": "b3a5be1d5053e77e"
+      "count": 17,
+      "hash": "454d40d79ee24093"
     },
-    "refsHash": "4bab4f79d784d94c"
+    "refsHash": "0ed1632758bc2776"
   },
   "economics": {
     "cards": 2297,
@@ -543,19 +543,19 @@
     "refsHash": "15602894c57e4cf0"
   },
   "maltese": {
-    "cards": 29,
-    "contentHash": "30ba73ce24958549",
-    "coveragePct": 73.7,
-    "covered": 29,
-    "excluded": 27,
+    "cards": 76,
+    "contentHash": "f7eb421a1516a463",
+    "coveragePct": 100.0,
+    "covered": 76,
+    "excluded": 0,
     "leaves": 76,
-    "open": 20,
+    "open": 0,
     "orphans": 0,
     "papers": {
       "count": 6,
       "hash": "33e3be70d6c6fac1"
     },
-    "refsHash": "528ec21bd8e43b8b"
+    "refsHash": "9f1ba0db49381417"
   },
   "mandarin-chinese": {
     "cards": 201,
@@ -708,19 +708,19 @@
     "refsHash": "3cd697c2c27583ae"
   },
   "romanian": {
-    "cards": 50,
-    "contentHash": "b9e5b706d1bb83fa",
+    "cards": 187,
+    "contentHash": "f4c89c5b1efba7d5",
     "coveragePct": 100.0,
-    "covered": 50,
-    "excluded": 13,
-    "leaves": 63,
+    "covered": 215,
+    "excluded": 0,
+    "leaves": 215,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 5,
-      "hash": "cb6697c0963fc51f"
+      "count": 17,
+      "hash": "c6a2348848034e00"
     },
-    "refsHash": "8dc6e8622a1ca48e"
+    "refsHash": "9fce2f7819b2c061"
   },
   "russian": {
     "cards": 1485,

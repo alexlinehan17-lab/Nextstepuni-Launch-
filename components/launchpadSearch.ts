@@ -1,8 +1,9 @@
-export const PRACTICE_TOOL_IDS = new Set(['mark-bank', 'paper-trail', 'topic-atlas', 'command-word-reflex']);
+export const PRACTICE_TOOL_IDS = new Set(['mark-bank', 'listening-studio', 'paper-trail', 'topic-atlas', 'command-word-reflex']);
 const aliases: Record<string, string> = {
   'paper-trail': 'past papers exam questions marking schemes SEC',
   'topic-atlas': 'past papers topics exam questions',
   'mark-bank': 'exam practice questions flashcards spaced repetition',
+  'listening-studio': 'aural listening comprehension recording cluastuiscint tape music excerpts',
   planner: 'weekly study plan schedule calendar timetable',
   comeback: 'fallen behind restart catch up',
   'coursework-companion': 'coursework projects portfolio evidence research sources feedback teacher brief investigation',
