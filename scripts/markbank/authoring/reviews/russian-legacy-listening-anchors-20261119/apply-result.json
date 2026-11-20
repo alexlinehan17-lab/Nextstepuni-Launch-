@@ -1,0 +1,21 @@
+{
+  "verifiedLegacyRepairs": 11,
+  "preservedTaskRoutes": 54,
+  "preservedOtherRows": 2,
+  "maps": 6,
+  "appliedAt": "2026-11-19T21:11:20.330172+00:00",
+  "head": "84ff81f68038b4941cdc73f40ed6f1cd5cf0bef9",
+  "branch": "codex/russian-release-20261119-batch-2",
+  "changedFiles": [
+    "public/paper-answers/2013/LC099ALPA00EV.pdf.json",
+    "public/paper-answers/2018/LC099GLPA00EV.pdf.json",
+    "public/paper-answers/2022/LC099GLPA00BV.pdf.json",
+    "scripts/paper-trail/answers/2013/LC099ALPA00EV.pdf.json",
+    "scripts/paper-trail/answers/2018/LC099GLPA00EV.pdf.json",
+    "scripts/paper-trail/answers/2022/LC099GLPA00BV.pdf.json"
+  ],
+  "otherAuralSidecarsUnchanged": 426,
+  "allOtherTrackedPathsUnchanged": true,
+  "indexAndHeadUnchanged": true,
+  "noCommitPushUploadOrDeploy": true
+}
