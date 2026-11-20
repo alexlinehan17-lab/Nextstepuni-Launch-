@@ -250,6 +250,50 @@ def _misprint_notes(cards, year, level):
             assert any(c['id'] == cid for c in cards), f'{cid}: no such card to carry its misprint note'
 
 
+# Reading asks whose scheme prices an answer in printed pieces the reader
+# cannot cut: 2018 Higher A 1(b) prints its first two pieces on the line that
+# carries the tariff ("Fare delle aree giochi/ campi da gioco (1m) in tutti i
+# quartieri (1m) 5 marks"), which the reader takes for a heading; A 3(a) prints
+# five pieces at (1) under "(1+1+1+1+1)" and the reader takes the first,
+# "Perché il bel clima (1m)", for a shorter answer. The pieces as printed, each
+# checked against the scheme with split brackets ("(1+1+1+2)") ignored, as the
+# build's provenance form ignores them; the scheme's shorter answers quoted.
+READING_POINTS = {
+    (2018, 'hl', 'A', 1, 'b'): {
+        'points': [('Fare delle aree giochi/ campi da gioco', 1), ('in tutti i quartieri', 1),
+                   ('soprattutto nelle periferie/ nelle zone', 1),
+                   ('in cui la qualità delle infrastrutture è scadente/ per migliorarle urbanisticamente/ '
+                    'per farle diventare luoghi dove socializzare', 2)],
+        'lesser': []},
+    (2018, 'hl', 'A', 3, 'a'): {
+        'points': [('Perché il bel clima', 1), ('Permette di fare sport/fare esercizio/allenarsi', 1),
+                   ('all’aperto/all’aria aperta/ en plein air', 1), ('tutto l’anno', 1),
+                   ('senza spendere soldi', 1)],
+        'lesser': [('Il tutto a costo zero', 1)]},
+}
+
+
+def _reading_points(year, level, reading):
+    import re as _re
+    ws = it_writing.Scheme(year, level)
+    flat_no_split = _re.sub(r'\(\s*\d+(?:\s*\+\s*\d+)+\s*\)', ' ', ws.flat)
+    flat_no_split = ' '.join(flat_no_split.split())
+    for (y, lvl, section, item, letter), o in READING_POINTS.items():
+        if (y, lvl) != (year, level):
+            continue
+        cid = it_all.card_id(year, level, section, item, letter)
+        card = next(c for c in reading if c['id'] == cid)
+        for text, _m in o['points'] + o['lesser']:
+            assert it_writing.flat(text) in flat_no_split, f'{cid}: {text!r} is not in the scheme'
+        assert sum(m for _t, m in o['points']) == card['totalMarks'], cid
+        language = it_all.answer_language(level, card['questionText'])
+        rows = [{'id': f'r-1-{k}', 'kind': 'point', 'verbatim': t, 'marks': m}
+                for k, (t, m) in enumerate(o['points'], start=1)]
+        rows[0]['contextNote'] = it_all.ladder_note(o['lesser'], language)
+        card['rows'] = rows
+        card['tariffModel'] = {'kind': 'fixed'}
+
+
 def sitting(year, level):
     P = ItPaper(year, level)
     S = ItScheme(year, level)
@@ -262,6 +306,7 @@ def sitting(year, level):
 
     reading = []
     it_all._reading(P, S, year, level, reading, refuse)
+    _reading_points(year, level, reading)
     for key in READING_LADDERS:
         if key[:2] == (year, level):
             ladder_card(P, S, year, level, *key[2:], reading)
