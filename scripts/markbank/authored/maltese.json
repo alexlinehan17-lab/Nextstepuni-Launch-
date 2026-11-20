@@ -3185,5 +3185,281 @@
    "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
   }
+ },
+ {
+  "id": "mlt-2025-hl-i-5",
+  "subjectId": "maltese",
+  "level": "higher",
+  "year": 2025,
+  "section": "I",
+  "topicId": "maltese-0-1",
+  "conceptId": "dawn-qed-juru-jekk-ikollok-gruppi",
+  "questionRef": "2025 HL Section I Q5",
+  "questionText": "Dawn qed juru li jekk ikollok gruppi ta’ nies li verament iħobbu l-ambjent Malti u jaħdmu favurih, huma jistgħu jagħmlu differenza. Taħseb li dan huwa minnu? Huwa possibbli li l-voluntiera jagħmlu differenza? Kif jistgħu agħmlu differenza?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "dawn il-voluntieri jqajmu kuxjenza u jagħmlu pressjoni fuq il-politiċi/l-awtoritajiet",
+    "marks": null,
+    "contextNote": "For “Iva”: The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\" The scheme prints: “Il-kandidati jridu jagħtu raġunijiet għalfejn jaħsbu iva jew le.”. It reprints the quotation as: “Dawn qed juru li jekk ikollok gruppi ta’ nies li verament iħobbu l-ambjent Malti jaħdmu favurih u jistgħu jagħmlu differenza”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "jaraw li ma jsirux abbużi/vandaliżmu fiż-żoni protetti",
+    "marks": null,
+    "contextNote": "For “Iva”"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "jippromwovu l-ambjent u l-ambjenti storiċi biex iktar Maltin ikunu jistgħu jgawduhom.",
+    "marks": null,
+    "contextNote": "For “Iva”"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "dawn qed jimxu fuq il-parir li kien jagħti Xummiemu",
+    "marks": null,
+    "contextNote": "For “Iva”"
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "il-bini xorta qed ikompli jiżdied,",
+    "marks": null,
+    "contextNote": "For “Le”"
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "l-ekosistemi Maltin jinsabu fil-periklu ta’ kollass meta wieħed iħares lejn ir-rapport tal-kumpanija Swiss Re.",
+    "marks": null,
+    "contextNote": "For “Le”"
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "l-awtoritajiet mhumiex jieħdu il-protezzjoni ambjentali bis-serjetà biżżejjed.",
+    "marks": null,
+    "contextNote": "For “Le”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Maltese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
+  }
+ },
+ {
+  "id": "mlt-2025-hl-ii-1",
+  "subjectId": "maltese",
+  "level": "higher",
+  "year": 2025,
+  "section": "II",
+  "topicId": "maltese-1-0",
+  "conceptId": "miskin-xummiemu-tant-kien-jidher-fuq",
+  "questionRef": "2025 HL Section II Q1",
+  "questionText": "Miskin Xummiemu li tant kien jidher fuq it-televiżjoni biex jgħidilna nżommu nadif. Kemm taħseb li l-kampanji ta’ pubbliċità huma effettivi? Veru li jbiddlu l-attitudni tan-nies ? Ikkummenta dwar dan ikteb bejn 100-150 kelma.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dawn il-kampanji huma effettivi, infatti ħafna Maltin jafu/jiftakru min hu Xummiemu anke jekk dik il-kampanja saret tant snin ilu",
+    "marks": null,
+    "contextNote": "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\" The scheme heads its points: “Il-kandidati jistgħu jagħtu l-opinjoni tagħhom billi jsemmu punti bħal:”. It reprints the last line of the task as: “Ikkummenta dwar dan f’madwar 100-150 kelma.”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Kampanji pubbliċitarji jużaw ideat u strateġiji effettivi li kapaċi jinfluenzaw l-opinjoni pubblika",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Importanti li jsiru għaliex xi ftit effett iħallu, speċjalment fuq it-tfal u ż-żgħażagħ",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Jafu jkunu ħela ta’ flus għaliex in-nies ma tantx ibiddlu l-opinjonijiet tagħhom malajr – infatti, l-kampjanja ta’ Xummiemu ma jidhirx li kellha l-effett mixtieq",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Minkejja li forsi ma jkunux effettivi ħafna, xorta għandhom isiru ħalli n-nies ikunu jistgħu jaraw x’inhu jiġri u x’jista’ wieħed jagħmel biex tittaffa l-problema",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TAQSIMA II",
+   "title": "Reading text — answer in Maltese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
+  }
+ },
+ {
+  "id": "mlt-2025-hl-iii-1",
+  "subjectId": "maltese",
+  "level": "higher",
+  "year": 2025,
+  "section": "III",
+  "topicId": "maltese-1-0",
+  "conceptId": "jistg-jag-mlu-biex-isalvaw-ambjent",
+  "questionRef": "2025 HL Section III Q1",
+  "questionText": "Agħżel mistoqsija waħda minn din it-taqsima u ikteb mhux inqas minn 300 kelma. X’jistgħu jagħmlu ż-żgħażagħ biex isalvaw l-ambjent għall-ġenerazzjonijiet futuri?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\" The scheme reprints the instruction as “Agħżel mistoqsija waħda minn din it‐taqsima u ikteb madwar 300 kelma.” and the two titles, and prints nothing under them."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "mlt-2025-hl-iii-2",
+  "subjectId": "maltese",
+  "level": "higher",
+  "year": 2025,
+  "section": "III",
+  "topicId": "maltese-1-0",
+  "conceptId": "bla-flus-annaq-lanqas-tbus-seb",
+  "questionRef": "2025 HL Section III Q2",
+  "questionText": "Agħżel mistoqsija waħda minn din it-taqsima u ikteb mhux inqas minn 300 kelma. Bla flus la tgħannaq u lanqas tbus. X’taħseb dwar dan il-proverbju? Tassew li mingħajr il-flus ma nistgħux inkunu ferħanin?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb it-taqsimiet kollha bil-Malti: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\" The scheme reprints the instruction as “Agħżel mistoqsija waħda minn din it‐taqsima u ikteb madwar 300 kelma.” and the two titles, and prints nothing under them."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
  }
 ]
