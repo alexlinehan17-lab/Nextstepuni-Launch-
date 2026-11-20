@@ -67412,7 +67412,15 @@
       "schemePages": [
         5
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          5
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2019-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -67442,7 +67450,7 @@
           "guidance": []
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {
@@ -67739,7 +67747,7 @@
         "kind": "point",
         "verbatim": "Где",
         "marks": null,
-        "contextNote": "Complete both Group A and Group B. The scheme publishes 20 marks for the whole exercise without per-gap allocations. Review all ten answers here; numeric self-scoring is unavailable for this exercise."
+        "contextNote": "Complete both Group A and Group B. The scheme publishes 20 marks for the whole exercise without per-gap allocations. Assess the complete exercise out of20 using all ten printed answers; do not infer a separate mark for each gap."
       },
       {
         "id": "gap-2",
@@ -67849,7 +67857,15 @@
       "schemePages": [
         9
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          9
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2019-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -67994,7 +68010,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {
@@ -68027,7 +68043,16 @@
         9,
         10
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          9,
+          10
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2019-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -68222,7 +68247,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {
@@ -68957,7 +68982,7 @@
         "kind": "point",
         "verbatim": "20 September",
         "marks": null,
-        "contextNote": "There is no penalty for excess material which does not invalidate the answer. Accept any formulation which communicates the information sought. Accept answers to questions written in the wrong place. The quality of the English will only be an assessment factor insofar as it impedes communication. If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise Choose two distinct details. The scheme publishes 10 marks for this question without a per-detail allocation. Review the accepted answers here; numeric self-scoring is unavailable for this question."
+        "contextNote": "There is no penalty for excess material which does not invalidate the answer. Accept any formulation which communicates the information sought. Accept answers to questions written in the wrong place. The quality of the English will only be an assessment factor insofar as it impedes communication. If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise Choose two distinct details. The scheme publishes 10 marks for this question without a per-detail allocation. Assess the complete response out of10 using the printed answer pool; do not infer a separate mark for each detail."
       },
       {
         "id": "answer-2",
@@ -69257,7 +69282,7 @@
         "kind": "point",
         "verbatim": "International",
         "marks": null,
-        "contextNote": "There is no penalty for excess material which does not invalidate the answer. Accept any formulation which communicates the information sought. Accept answers to questions written in the wrong place. The quality of the English will only be an assessment factor insofar as it impedes communication. If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise Choose two distinct details. The scheme publishes 10 marks for this question without a per-detail allocation. Review the accepted answers here; numeric self-scoring is unavailable for this question."
+        "contextNote": "There is no penalty for excess material which does not invalidate the answer. Accept any formulation which communicates the information sought. Accept answers to questions written in the wrong place. The quality of the English will only be an assessment factor insofar as it impedes communication. If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise Choose two distinct details. The scheme publishes 10 marks for this question without a per-detail allocation. Assess the complete response out of10 using the printed answer pool; do not infer a separate mark for each detail."
       },
       {
         "id": "answer-2",
@@ -69711,7 +69736,7 @@
         "kind": "point",
         "verbatim": "Father is German",
         "marks": null,
-        "contextNote": "There is no penalty for excess material which does not invalidate the answer. Accept any formulation which communicates the information sought. Accept answers to questions written in the wrong place. The quality of the English will only be an assessment factor insofar as it impedes communication. If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise Choose two distinct details. The scheme publishes 10 marks for this question without a per-detail allocation. Review the accepted answers here; numeric self-scoring is unavailable for this question."
+        "contextNote": "There is no penalty for excess material which does not invalidate the answer. Accept any formulation which communicates the information sought. Accept answers to questions written in the wrong place. The quality of the English will only be an assessment factor insofar as it impedes communication. If an answer is written entirely in Russian – do not penalise. If an answer includes isolated elements (words/expressions) of Russian – do not penalise Choose two distinct details. The scheme publishes 10 marks for this question without a per-detail allocation. Assess the complete response out of10 using the printed answer pool; do not infer a separate mark for each detail."
       },
       {
         "id": "answer-2",
