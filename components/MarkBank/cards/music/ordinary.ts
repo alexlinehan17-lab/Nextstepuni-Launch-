@@ -28184,4 +28184,2832 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC067GLP006EV"
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q1-x1-i", topicId: "music-2-9", conceptId: "mus-tempo",
+    section: "L", questionRef: "2016 OL Listening Q1 Excerpt 1(i)",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. The full 16-bar excerpt, played TWICE.",
+    questionText: "The tempo is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "allegro assai", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 2,
+                      "r": [
+                            0.08,
+                            0.158,
+                            0.92,
+                            0.217
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q1-x1-i-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q1-x1-i-score.png",
+          "srcHash": "24407bf7a40b291661e8a838f1ee4f2b",
+          "alt": "The question and its three printed options (andante, allegro assai, adagio), printed with Listening Q1 Excerpt 1(i) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q1-x1-ii", topicId: "music-2-9", conceptId: "mus-excerpt-heard-metre-music",
+    section: "L", questionRef: "2016 OL Listening Q1 Excerpt 1(ii)",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. The full 16-bar excerpt, played TWICE.",
+    questionText: "The metre of the music heard in this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 2,
+                      "r": [
+                            0.08,
+                            0.221,
+                            0.92,
+                            0.28
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q1-x1-ii-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q1-x1-ii-score.png",
+          "srcHash": "8680883c5b81b962e7d242b2406350fc",
+          "alt": "The question and its three printed options (2, 3, 6), printed with Listening Q1 Excerpt 1(ii) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q1-x1-iii", topicId: "music-2-9", conceptId: "mus-features-melody",
+    section: "L", questionRef: "2016 OL Listening Q1 Excerpt 1(iii)",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. The full 16-bar excerpt, played TWICE.\nBars 1–8 played THREE times.",
+    questionText: "The melody features",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a rising and descending scale", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 2,
+                      "r": [
+                            0.08,
+                            0.363,
+                            0.95,
+                            0.423
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q1-x1-iii-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q1-x1-iii-score.png",
+          "srcHash": "dc00dec04c9ed0dceb93e5afcab83283",
+          "alt": "The question and its three printed options (a rising scale, a descending scale, a rising and descending scale), printed with Listening Q1 Excerpt 1(iii) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q1-x1-iv", topicId: "music-2-9", conceptId: "mus-accompaniment-features",
+    section: "L", questionRef: "2016 OL Listening Q1 Excerpt 1(iv)",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. The full 16-bar excerpt, played TWICE.\nBars 1–8 played THREE times.",
+    questionText: "The accompaniment features",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "an alberti bass", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 2,
+                      "r": [
+                            0.08,
+                            0.426,
+                            0.92,
+                            0.485
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q1-x1-iv-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q1-x1-iv-score.png",
+          "srcHash": "038ed93907f3852ae8702ed373e3cb56",
+          "alt": "The question and its three printed options (a drone, an alberti bass, block chords), printed with Listening Q1 Excerpt 1(iv) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q1-x1-v", topicId: "music-2-9", conceptId: "mus-excerpt-music-played-this",
+    section: "L", questionRef: "2016 OL Listening Q1 Excerpt 1(v)",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. The full 16-bar excerpt, played TWICE.\nBars 9–16 played THREE times.",
+    questionText: "The music in this excerpt is played by",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "strings and wind", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 2,
+                      "r": [
+                            0.08,
+                            0.557,
+                            0.92,
+                            0.616
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q1-x1-v-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q1-x1-v-score.png",
+          "srcHash": "87856861831eb4ba14cebd422f714fbc",
+          "alt": "The question and its three printed options (piano only, piano and strings, strings and wind), printed with Listening Q1 Excerpt 1(v) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q1-x2-i", topicId: "music-2-9", conceptId: "mus-bars-excerpt-played-this",
+    section: "L", questionRef: "2016 OL Listening Q1 Excerpt 2(i)",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    questionText: "Bars 1–8 of this excerpt are played by",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "piano", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.034,
+                            0.92,
+                            0.095
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q1-x2-i-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q1-x2-i-score.png",
+          "srcHash": "b6882ea5f40e9e1bf1944c09f915c376",
+          "alt": "The question and its three printed options (piano, woodwind, strings), printed with Listening Q1 Excerpt 2(i) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q1-x2-ii", topicId: "music-2-9", conceptId: "mus-explain-melody-played-staccato",
+    section: "L", questionRef: "2016 OL Listening Q1 Excerpt 2(ii)",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    questionText: "The melody in bar 3 is played staccato. Explain staccato.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "detached; separated", marks: 2, contextNote: "The scheme reads: “Up to 2 marks for any valid description.”", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.114,
+                            0.95,
+                            0.17
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q1-x2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q1-x2-ii-score.png",
+          "srcHash": "895bb1d832e6571549f662873216ebc2",
+          "alt": "The Excerpt 2 heading and the printed outline score of bars 1-8 (bar 3 is the bar the question names), printed with Listening Q1 Excerpt 2(ii) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q1-x2-iii", topicId: "music-2-9", conceptId: "mus-excerpt-features-from-music",
+    section: "L", questionRef: "2016 OL Listening Q1 Excerpt 2(iii)",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    questionText: "The piano music from bar 9 to the end of the excerpt features",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "rising scales", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.2,
+                            0.92,
+                            0.262
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q1-x2-iii-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q1-x2-iii-score.png",
+          "srcHash": "f4ef33a76be7f76a67c94194db3815c9",
+          "alt": "The question and its three printed options (triplets, imitation, rising scales), printed with Listening Q1 Excerpt 2(iii) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q1-x3-i", topicId: "music-2-9", conceptId: "mus-bars-excerpt-piano-play",
+    section: "L", questionRef: "2016 OL Listening Q1 Excerpt 3(i)",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    questionText: "In bars 1–8 of this excerpt: The strings play The piano plays",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "pizzicato", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "repeated notes", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.613,
+                            0.95,
+                            0.701
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q1-x3-i-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q1-x3-i-score.png",
+          "srcHash": "1bd46a33673010fa645a2f4f7daca0c2",
+          "alt": "The Excerpt 3 heading, the printed outline score of bars 1-8, the question and its two printed rows of options (a sustained note, pizzicato, repeated notes for the strings and for the piano), printed with Listening Q1 Excerpt 3(i) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q1-x3-ii", topicId: "music-2-9", conceptId: "mus-concerto-each-first-form",
+    section: "L", questionRef: "2016 OL Listening Q1 Excerpt 3(ii)",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.",
+    questionText: "Identify the form of each movement of Piano Concerto in A Major, K488 by Mozart. First movement Second movement Third movement",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sonata", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "ternary", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "sonata-rondo", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.722,
+                            0.95,
+                            0.838
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q1-x3-ii-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q1-x3-ii-score.png",
+          "srcHash": "f94a45955014d2787dacb8de6043acb3",
+          "alt": "The question and its three printed rows (First movement, Second movement, Third movement), each with the options sonata-rondo, sonata, ternary, printed with Listening Q1 Excerpt 3(ii) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q2-i", topicId: "music-2-10", conceptId: "mus-excerpt-from-taken-this",
+    section: "L", questionRef: "2016 OL Listening Q2(i)",
+    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question. Bars 1–15 of the excerpt, played THREE times.\n• An outline score of bars 1–8 of the excerpt is printed below.",
+    questionText: "This excerpt is taken from",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Un Bal", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.05,
+                            0.271,
+                            0.92,
+                            0.337
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Bars 1–15 of the excerpt",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q2-i-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q2-i-score.png",
+          "srcHash": "28d75af75ce2603723500aae0aa849fa",
+          "alt": "The bullet \"An outline score of bars 1–8 of the excerpt is printed below.\", the printed outline score of bars 1-8, the question and its two printed options (Marche au Supplice, Un Bal), printed with Listening Q2(i) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q2-ii", topicId: "music-2-10", conceptId: "mus-excerpt-instruments-playing-theme",
+    section: "L", questionRef: "2016 OL Listening Q2(ii)",
+    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question. Bars 1–15 of the excerpt, played THREE times.\n• An outline score of bars 1–8 of the excerpt is printed below.",
+    questionText: "One of the instruments playing the theme in this excerpt is the",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "flute", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.05,
+                            0.345,
+                            0.92,
+                            0.41
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Bars 1–15 of the excerpt",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q2-ii-score.png",
+          "srcHash": "96a0b6ce5f7c643b2ad346c30ab25dbe",
+          "alt": "The question and its three printed options (violin, flute, cello), printed with Listening Q2(ii) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q2-iii", topicId: "music-2-10", conceptId: "mus-accompaniment-excerpt-feature-heard",
+    section: "L", questionRef: "2016 OL Listening Q2(iii)",
+    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question. Bars 1–15 of the excerpt, played THREE times.\n• An outline score of bars 1–8 of the excerpt is printed below.",
+    questionText: "Identify ONE feature of the accompaniment heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the accompaniment", marks: null, contextNote: "The scheme reads: “Up to 2 marks for one valid feature, for example:” “any other valid feature”", openList: true, group: {"claimMax":1,"perOption":2,"options":["tremolo strings","ascending/descending broken chords","vamping/waltz like accompaniment"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.05,
+                            0.419,
+                            0.95,
+                            0.476
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · Bars 1–15 of the excerpt",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q2-iv", topicId: "music-2-10", conceptId: "mus-excerpt-explain-music-polyphonic",
+    section: "L", questionRef: "2016 OL Listening Q2(iv)",
+    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question. The remainder of the excerpt, played THREE times.",
+    questionText: "The texture of the music in this excerpt is polyphonic. Explain.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "two or more melodies can be heard at the same time", marks: 2, contextNote: "The scheme reads: “Up to 2 marks for a valid explanation of polyphonic, for example:”", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.05,
+                            0.534,
+                            0.95,
+                            0.627
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · The remainder of the excerpt",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q2-v", topicId: "music-2-10", conceptId: "mus-berlioz-does-excerpt-fantastique",
+    section: "L", questionRef: "2016 OL Listening Q2(v)",
+    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question. The full excerpt, ONCE only.",
+    questionText: "What name did Berlioz give the theme heard in this excerpt?\nWhat does this theme represent in Symphonie Fantastique?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "idée fixe", marks: 2 },
+    { id: "r-2", kind: "anyN", verbatim: "What the theme represents", marks: null, contextNote: "The scheme reads: “any valid answer”", openList: true, group: {"claimMax":1,"perOption":1,"options":["It represents his beloved"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.05,
+                            0.685,
+                            0.95,
+                            0.847
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2 · The full excerpt",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q3-i", topicId: "music-2-12", conceptId: "mus-enters-instrument-line-name",
+    section: "L", questionRef: "2016 OL Listening Q3(i)",
+    stem: "An excerpt from When I’m Sixty-four by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. 1. Send me a postcard, drop me a line stating point of view. 2. Indicate precisely what you mean to say 3. Yours sincerely wasting away. 4. Give me your answer, fill in a form, mine forever more. 5. Will you still need me, will you still feed me 6. When I’m sixty-four?\n• Answer the following questions:",
+    questionText: "Name the instrument which enters at the start of line 2. It plays",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "piano", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "block chords", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.05,
+                            0.281,
+                            0.95,
+                            0.388
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q3-i-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q3-i-score.png",
+          "srcHash": "659716bb5c0f178dbe922d1275d239a7",
+          "alt": "The question, its answer line, \"It plays\" and its three printed options (block chords, broken chords, sustained chords), printed with Listening Q3(i) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q3-ii", topicId: "music-2-12", conceptId: "mus-clarinet-excerpt-line-plays",
+    section: "L", questionRef: "2016 OL Listening Q3(ii)",
+    stem: "An excerpt from When I’m Sixty-four by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. 1. Send me a postcard, drop me a line stating point of view. 2. Indicate precisely what you mean to say 3. Yours sincerely wasting away. 4. Give me your answer, fill in a form, mine forever more. 5. Will you still need me, will you still feed me 6. When I’m sixty-four?\n• Answer the following questions:",
+    questionText: "In line 4 of this excerpt the clarinet plays",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a countermelody", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.05,
+                            0.396,
+                            0.92,
+                            0.534
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q3-ii-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q3-ii-score.png",
+          "srcHash": "88886157fa52355580cbc75e72d54251",
+          "alt": "The question and its three printed options (the same melody as the singer, in harmony with the singer, a countermelody), printed with Listening Q3(ii) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q3-iii", topicId: "music-2-12", conceptId: "mus-excerpt-feature-heard-identify",
+    section: "L", questionRef: "2016 OL Listening Q3(iii)",
+    stem: "An excerpt from When I’m Sixty-four by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. 1. Send me a postcard, drop me a line stating point of view. 2. Indicate precisely what you mean to say 3. Yours sincerely wasting away. 4. Give me your answer, fill in a form, mine forever more. 5. Will you still need me, will you still feed me 6. When I’m sixty-four?\n• Answer the following questions:",
+    questionText: "Identify ONE feature of the vocal part as heard in line 6 of this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the vocal part in line 6", marks: null, contextNote: "The scheme reads: “any other valid feature”", openList: true, group: {"claimMax":1,"perOption":2,"options":["repeated notes","syncopation","high pitched notes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.05,
+                            0.541,
+                            0.95,
+                            0.598
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q3-iv", topicId: "music-2-12", conceptId: "mus-cadence-excerpt-this",
+    section: "L", questionRef: "2016 OL Listening Q3(iv)",
+    stem: "An excerpt from When I’m Sixty-four by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. 1. Send me a postcard, drop me a line stating point of view. 2. Indicate precisely what you mean to say 3. Yours sincerely wasting away. 4. Give me your answer, fill in a form, mine forever more. 5. Will you still need me, will you still feed me 6. When I’m sixty-four?\n• Answer the following questions:",
+    questionText: "The cadence at the end of this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "perfect", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.05,
+                            0.618,
+                            0.92,
+                            0.685
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q3-iv-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q3-iv-score.png",
+          "srcHash": "eb30f7ff18d92f8d30627cb6bc10354f",
+          "alt": "The question and its three printed options (plagal, perfect, imperfect), printed with Listening Q3(iv) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q3-v", topicId: "music-2-12", conceptId: "mus-identify-recording-song-technique",
+    section: "L", questionRef: "2016 OL Listening Q3(v)",
+    stem: "An excerpt from When I’m Sixty-four by John Lennon & Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. 1. Send me a postcard, drop me a line stating point of view. 2. Indicate precisely what you mean to say 3. Yours sincerely wasting away. 4. Give me your answer, fill in a form, mine forever more. 5. Will you still need me, will you still feed me 6. When I’m sixty-four?\n• Answer the following questions:",
+    questionText: "Identify a recording technique used in this song.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A recording technique used in When I’m Sixty-four", marks: null, contextNote: "The scheme reads: “any valid recording technique used in When I’m Sixty-four”", openList: true, group: {"claimMax":1,"perOption":1,"options":["speed of tape altered","echo","dubbing/overdubbing","multi-tracking","panning"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.05,
+                            0.692,
+                            0.95,
+                            0.749
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q4-i", topicId: "music-2-11", conceptId: "mus-excerpt-heard-name-theme",
+    section: "L", questionRef: "2016 OL Listening Q4(i)",
+    stem: "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Name the theme heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Main Melody", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.05,
+                            0.189,
+                            0.95,
+                            0.218
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q4-ii", topicId: "music-2-11", conceptId: "mus-excerpt-heard-instruments-name",
+    section: "L", questionRef: "2016 OL Listening Q4(ii)",
+    stem: "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Name TWO percussion instruments heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Percussion instruments", marks: null, contextNote: "The scheme reads: “(any 2)” “1+1”", group: {"claimMax":2,"perOption":1,"options":["cymbal","crotales","gong","rainstick"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.05,
+                            0.242,
+                            0.95,
+                            0.31
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q4-iii", topicId: "music-2-11", conceptId: "mus-excerpt-piano-plays-this",
+    section: "L", questionRef: "2016 OL Listening Q4(iii)",
+    stem: "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "In this excerpt the piano plays",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "chord clusters", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.05,
+                            0.33,
+                            0.92,
+                            0.394
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q4-iii-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q4-iii-score.png",
+          "srcHash": "53bb56ac878767af4a35dafc5e203865",
+          "alt": "The question and its three printed options (chord clusters, broken chords, scales), printed with Listening Q4(iii) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q4-iv", topicId: "music-2-11", conceptId: "mus-countermelody-excerpt-fast-heard",
+    section: "L", questionRef: "2016 OL Listening Q4(iv)",
+    stem: "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Throughout this excerpt, a fast moving countermelody is heard on the",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "flute", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.05,
+                            0.412,
+                            0.95,
+                            0.441
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q4-v", topicId: "music-2-11", conceptId: "mus-augmentation-below-between-canon",
+    section: "L", questionRef: "2016 OL Listening Q4(v)",
+    stem: "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Match each of the compositional techniques listed below with the correct description in the grid: Techniques • inversion • canon • augmentation Strict imitation between two or more instruments or parts Lengthening of note values Turning a melody upside down",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "canon", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "augmentation", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "inversion", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.05,
+                            0.466,
+                            0.95,
+                            0.776
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q4-v-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q4-v-score.png",
+          "srcHash": "539611fb3aab0c851dd42ac9846ab046",
+          "alt": "The question, the printed list of techniques (inversion, canon, augmentation) and the Description / Technique grid with its three descriptions and empty Technique boxes, printed with Listening Q4(v) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q5-x1-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-this",
+    section: "L", questionRef: "2016 OL Listening Q5 Excerpt 1(i)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1",
+    questionText: "The dance tune heard in this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Jig", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.239,
+                            0.92,
+                            0.305
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q5-x1-i-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q5-x1-i-score.png",
+          "srcHash": "5370925e63ed4bcfd48585a46e09c099",
+          "alt": "The question and its three printed options (a hornpipe, a jig, a reel), printed with Listening Q5 Excerpt 1(i) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q5-x1-ii", topicId: "music-2-2", conceptId: "mus-dance-signature-this-time",
+    section: "L", questionRef: "2016 OL Listening Q5 Excerpt 1(ii)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1",
+    questionText: "The time signature of this dance is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "6/8", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.313,
+                            0.92,
+                            0.39
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q5-x1-ii-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q5-x1-ii-score.png",
+          "srcHash": "494da0f6582e90005ddab677ebe86f97",
+          "alt": "The question and its three printed time signatures (4/4, 6/8, 9/8), each with a box, printed with Listening Q5 Excerpt 1(ii) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q5-x1-iii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-this",
+    section: "L", questionRef: "2016 OL Listening Q5 Excerpt 1(iii)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1",
+    questionText: "A typical bar of rhythm associated with this dance is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A typical bar of rhythm associated with this dance is", marks: 3, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.387,
+                            0.95,
+                            0.465
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q5-x1-iii-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q5-x1-iii-score.png",
+          "srcHash": "13a87fb18b4971043580a0ee75724fa2",
+          "alt": "The question and its three printed rhythms in music notation, each with a box, printed with Listening Q5 Excerpt 1(iii) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2016-OL-scheme-p14-l-q5-x1-iii",
+          "src": "/exam-figures/music/markbank/music-2016-OL-scheme-p14-l-q5-x1-iii.png",
+          "srcHash": "a840289e5861ef6baf9f82a59fa7971c",
+          "alt": "The marking scheme’s printed answer for Listening Q5 Excerpt 1(iii): the bar of rhythm printed in notation, with its 3 marks, cropped from page 14 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q5-x2-i", topicId: "music-2-2", conceptId: "mus-excerpt-form-heard-this",
+    section: "L", questionRef: "2016 OL Listening Q5 Excerpt 2(i)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2 A verse from Galway Bay.",
+    questionText: "The form of the verse heard in this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ABBA", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.626,
+                            0.92,
+                            0.692
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q5-x2-i-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q5-x2-i-score.png",
+          "srcHash": "0c8214700bbdcc381c255d36c4ef1e63",
+          "alt": "The question and its three printed options (AABA, AABB, ABBA), printed with Listening Q5 Excerpt 2(i) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q5-x2-ii", topicId: "music-2-2", conceptId: "mus-features-melody-vocal",
+    section: "L", questionRef: "2016 OL Listening Q5 Excerpt 2(ii)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2 A verse from Galway Bay.",
+    questionText: "The vocal melody features",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "repeated final note", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.7,
+                            0.92,
+                            0.766
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q5-x2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q5-x2-ii-score.png",
+          "srcHash": "b5535b836f0d73626eb20be2fa4edf9a",
+          "alt": "The question and its three printed options (a sequence, free rhythm, repeated final note), printed with Listening Q5 Excerpt 2(ii) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q5-x2-iii", topicId: "music-2-2", conceptId: "mus-accompaniment-features",
+    section: "L", questionRef: "2016 OL Listening Q5 Excerpt 2(iii)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2 A verse from Galway Bay.",
+    questionText: "The accompaniment features",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "broken chords", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.774,
+                            0.92,
+                            0.841
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q5-x2-iii-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q5-x2-iii-score.png",
+          "srcHash": "bcbc827efbc0e0bb636ec1b3a2ff7aff",
+          "alt": "The question and its three printed options (a countermelody, a drone, broken chords), printed with Listening Q5 Excerpt 2(iii) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q5-x3-i", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-melody-playing",
+    section: "L", questionRef: "2016 OL Listening Q5 Excerpt 3(i)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3",
+    questionText: "The instrument playing the melody in this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "the accordion", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.05,
+                            0.085,
+                            0.92,
+                            0.152
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q5-x3-i-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q5-x3-i-score.png",
+          "srcHash": "7ffe3957509faae4f56ccd27bff7abbd",
+          "alt": "The question and its three printed options (the fiddle, the accordion, the flute), printed with Listening Q5 Excerpt 3(i) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q5-x3-ii", topicId: "music-2-2", conceptId: "mus-feature-identify-instrument-other",
+    section: "L", questionRef: "2016 OL Listening Q5 Excerpt 3(ii)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3",
+    questionText: "Other than instrument, identify ONE traditional feature of this performance.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A traditional feature of this performance", marks: null, contextNote: "The scheme reads: “Up to 3 marks for one valid feature, for example:” “any other valid feature”", openList: true, group: {"claimMax":1,"perOption":3,"options":["the melody is played with ornamentation","it is a traditional dance tune, a reel","the form is AABB","the tonality is modal","use of flattened 7th"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.05,
+                            0.172,
+                            0.95,
+                            0.272
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q5-x3-iii", topicId: "music-2-2", conceptId: "mus-describe-feature-non-traditional-performance",
+    section: "L", questionRef: "2016 OL Listening Q5 Excerpt 3(iii)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3",
+    questionText: "Describe ONE non-traditional feature of this performance.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A non-traditional feature of this performance", marks: null, contextNote: "The scheme reads: “Up to 3 marks for one valid feature, for example:” “any valid feature”", openList: true, group: {"claimMax":1,"perOption":3,"options":["use of guitars/drums/keyboard(s)","syncopation","use of harmony/accompaniment"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.05,
+                            0.305,
+                            0.95,
+                            0.404
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q6-x1-i", topicId: "music-2-4", conceptId: "mus-instrument-melody-name-plays",
+    section: "L", questionRef: "2016 OL Listening Q6 Excerpt 1(i)",
+    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1, played FOUR times.",
+    questionText: "Name the instrument which plays the melody.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "violin(s)", marks: 2, contextNote: "The scheme reads: “allow viola(s) / cello(s)”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.23,
+                            0.92,
+                            0.259
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q6-x1-ii", topicId: "music-2-4", conceptId: "mus-accompaniment-played",
+    section: "L", questionRef: "2016 OL Listening Q6 Excerpt 1(ii)",
+    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1, played FOUR times.",
+    questionText: "The accompaniment is played by It is played",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "strings", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "pizzicato", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.278,
+                            0.92,
+                            0.411
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q6-x1-ii-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q6-x1-ii-score.png",
+          "srcHash": "28a7a2c5844a127f310b00819024eded",
+          "alt": "The two printed questions and their options (woodwind, brass, strings; arco, pizzicato, tremolo), printed with Listening Q6 Excerpt 1(ii) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q6-x1-iii", topicId: "music-2-4", conceptId: "mus-excerpt-heard-metre-music",
+    section: "L", questionRef: "2016 OL Listening Q6 Excerpt 1(iii)",
+    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1, played FOUR times.",
+    questionText: "The metre of the music heard in this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "3", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.426,
+                            0.92,
+                            0.492
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2016-OL-l-q6-x1-iii-score",
+          "src": "/exam-figures/music/markbank/music-2016-OL-l-q6-x1-iii-score.png",
+          "srcHash": "7ce46e6a6be583d7e930f97d9a959517",
+          "alt": "The question and its three printed options (2, 3, 4), printed with Listening Q6 Excerpt 1(iii) in the 2016 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q6-x2", topicId: "music-2-4", conceptId: "mus-differs-excerpt-from-heard",
+    section: "L", questionRef: "2016 OL Listening Q6 Excerpt 2",
+    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2, played THREE times.",
+    questionText: "Identify TWO ways in which the music heard in this excerpt differs from the music heard in Excerpt 1.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 4, contextNote: "The scheme reads: “Up to 2 marks for each of two valid differences” “2+2”", permittedMarks: [0,1,2,3,4], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.618,
+                            0.95,
+                            0.755
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 2",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q6-x3", topicId: "music-2-4", conceptId: "mus-excerpt-explain-heard-music",
+    section: "L", questionRef: "2016 OL Listening Q6 Excerpt 3",
+    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3, played THREE times.",
+    questionText: "The texture of the music heard in this excerpt is polyphonic. Explain.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Up to 2 marks for a valid explanation.”", permittedMarks: [0,1,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.085,
+                            0.95,
+                            0.223
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2016-ol-l-q6-x4", topicId: "music-2-4", conceptId: "mus-conveys-death-describe-excerpt",
+    section: "L", questionRef: "2016 OL Listening Q6 Excerpt 4",
+    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 4, played THREE times.",
+    questionText: "Describe TWO ways in which Saint-Saens conveys a feeling of death in the music heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 6, contextNote: "The scheme reads: “Up to 3 marks for each of two valid descriptions” “3+3”", permittedMarks: [0,1,2,3,4,5,6], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.329,
+                            0.95,
+                            0.614
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 4",
+          "title": "2016 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2016/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2016 Ordinary Level, p.3 — © State Examinations Commission.",
+    id: "mus-2016-ol-c-a-q1-a", topicId: "music-1-10", conceptId: "mus-answer-appropriate-choose-continuation",
+    section: "A", questionRef: "2016 OL Composing Section A Q1(a)",
+    stem: "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3.",
+    questionText: "CONTINUATION OF A GIVEN OPENING Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ oboe □ trumpet □ violin",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Each Melody",
+                      "maxMarks": 20,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good sense of key and melodic shape and continuation of given opening.",
+                                  "marks": [17,18,19,20],
+                                  "guidance": [
+                                        "Rhythmically consistent.",
+                                        "Melody ends on tonic.",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Good sense of key and melodic shape and continuation of given opening.",
+                                  "marks": [14,15,16],
+                                  "guidance": [
+                                        "Rhythmically consistent.",
+                                        "Melody ends on tonic.",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "A moderately good awareness of key and melodic shape and continuation of given opening.",
+                                  "marks": [11,12,13],
+                                  "guidance": [
+                                        "Rhythm generally consistent.",
+                                        "Melody ends on tonic.",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Some awareness of key and melodic shape and an attempt at continuing the given opening.",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Some rhythmical inconsistencies.",
+                                        "Melody ends on tonic.",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Little awareness of key and melodic shape and no attempt at continuing the given opening.",
+                                  "marks": [5,6,7],
+                                  "guidance": [
+                                        "Poor sense of rhythm.",
+                                        "Poor sense of tonality.",
+                                        "Inappropriate/no phrasing and expression marks inserted.",
+                                        "Unsuitable/no instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Little attempt.",
+                                  "marks": [2,3,4],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very little or no attempt.",
+                                  "marks": [0,1],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.05,
+                            0.133,
+                            0.95,
+                            0.545
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2016 Ordinary Level, p.3 — © State Examinations Commission.",
+    id: "mus-2016-ol-c-a-q1-b", topicId: "music-1-10", conceptId: "mus-answer-appropriate-choose-clarinet",
+    section: "A", questionRef: "2016 OL Composing Section A Q1(b)",
+    stem: "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3.",
+    questionText: "CONTINUATION OF A GIVEN OPENING Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ flute □ trumpet",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Each Melody",
+                      "maxMarks": 20,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good sense of key and melodic shape and continuation of given opening.",
+                                  "marks": [17,18,19,20],
+                                  "guidance": [
+                                        "Rhythmically consistent.",
+                                        "Melody ends on tonic.",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Good sense of key and melodic shape and continuation of given opening.",
+                                  "marks": [14,15,16],
+                                  "guidance": [
+                                        "Rhythmically consistent.",
+                                        "Melody ends on tonic.",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "A moderately good awareness of key and melodic shape and continuation of given opening.",
+                                  "marks": [11,12,13],
+                                  "guidance": [
+                                        "Rhythm generally consistent.",
+                                        "Melody ends on tonic.",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Some awareness of key and melodic shape and an attempt at continuing the given opening.",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Some rhythmical inconsistencies.",
+                                        "Melody ends on tonic.",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Little awareness of key and melodic shape and no attempt at continuing the given opening.",
+                                  "marks": [5,6,7],
+                                  "guidance": [
+                                        "Poor sense of rhythm.",
+                                        "Poor sense of tonality.",
+                                        "Inappropriate/no phrasing and expression marks inserted.",
+                                        "Unsuitable/no instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Little attempt.",
+                                  "marks": [2,3,4],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very little or no attempt.",
+                                  "marks": [0,1],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.05,
+                            0.58,
+                            0.95,
+                            0.94
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2016 Ordinary Level, p.5 — © State Examinations Commission.",
+    id: "mus-2016-ol-c-a-q3-a", topicId: "music-1-12", conceptId: "mus-answer-appropriate-choose-clarinet",
+    section: "A", questionRef: "2016 OL Composing Section A Q3(a)",
+    stem: "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3.",
+    questionText: "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM Answer (a) and (b). • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ flute □ violin □ descant recorder",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Each Melody",
+                      "maxMarks": 20,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good sense of key and melodic shape.",
+                                  "marks": [17,18,19,20],
+                                  "guidance": [
+                                        "Rhythm and style of dance maintained.",
+                                        "Melody ends on tonic.",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Good sense of key and melodic shape.",
+                                  "marks": [14,15,16],
+                                  "guidance": [
+                                        "Good attempt at maintaining rhythm and style of dance.",
+                                        "Melody ends on tonic.",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "A moderately good awareness of key and melodic shape.",
+                                  "marks": [11,12,13],
+                                  "guidance": [
+                                        "Rhythm and style of dance generally consistent.",
+                                        "Melody ends on tonic.",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Some awareness of key and melodic shape.",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Some rhythmical inconsistencies.",
+                                        "Melody ends on tonic.",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Little awareness of key and melodic shape.",
+                                  "marks": [5,6,7],
+                                  "guidance": [
+                                        "Poor sense of rhythm.",
+                                        "Poor sense of tonality.",
+                                        "Inappropriate/no phrasing and expression marks inserted.",
+                                        "Unsuitable/no instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Little attempt.",
+                                  "marks": [2,3,4],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very little or no attempt.",
+                                  "marks": [0,1],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.05,
+                            0.033,
+                            0.95,
+                            0.52
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2016 Ordinary Level, p.5 — © State Examinations Commission.",
+    id: "mus-2016-ol-c-a-q3-b", topicId: "music-1-12", conceptId: "mus-answer-appropriate-choose-composing",
+    section: "A", questionRef: "2016 OL Composing Section A Q3(b)",
+    stem: "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3.",
+    questionText: "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM Answer (a) and (b). • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ descant recorder □ flute □ violin",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Each Melody",
+                      "maxMarks": 20,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Very good sense of key and melodic shape.",
+                                  "marks": [17,18,19,20],
+                                  "guidance": [
+                                        "Rhythm and style of dance maintained.",
+                                        "Melody ends on tonic.",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Good sense of key and melodic shape.",
+                                  "marks": [14,15,16],
+                                  "guidance": [
+                                        "Good attempt at maintaining rhythm and style of dance.",
+                                        "Melody ends on tonic.",
+                                        "Appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "A moderately good awareness of key and melodic shape.",
+                                  "marks": [11,12,13],
+                                  "guidance": [
+                                        "Rhythm and style of dance generally consistent.",
+                                        "Melody ends on tonic.",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Some awareness of key and melodic shape.",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Some rhythmical inconsistencies.",
+                                        "Melody ends on tonic.",
+                                        "Generally appropriate phrasing and expression marks inserted.",
+                                        "Suitable instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Little awareness of key and melodic shape.",
+                                  "marks": [5,6,7],
+                                  "guidance": [
+                                        "Poor sense of rhythm.",
+                                        "Poor sense of tonality.",
+                                        "Inappropriate/no phrasing and expression marks inserted.",
+                                        "Unsuitable/no instrument chosen."
+                                  ]
+                            },
+                            {
+                                  "label": "Little attempt.",
+                                  "marks": [2,3,4],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very little or no attempt.",
+                                  "marks": [0,1],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.05,
+                            0.55,
+                            0.95,
+                            0.94
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2016 Ordinary Level, p.6 — © State Examinations Commission.",
+    id: "mus-2016-ol-c-b-q4", topicId: "music-1-14", conceptId: "mus-approach-available-bank-bass",
+    section: "B", questionRef: "2016 OL Composing Section B Q4",
+    stem: "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6.",
+    questionText: "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS PREPARATORY WORK • Write out the scale of G major on the stave below: • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Using the given rhythms, add melody and bass notes to complete each phrase with cadence and approach chords as follows: (i) At A, an IMPERFECT cadence with approach chord (I—IV—V) (ii) At B, a PERFECT cadence with approach chord (ii—V—I) (iii) At C, an INTERRUPTED cadence with approach chord (IV—V—vi) (iv) At D, a PERFECT cadence with approach chord (IV—V—I)",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "grid",
+                      "label": "1 mark per correct note of chord.",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Grid"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "melody",
+                      "label": "Melody",
+                      "maxMarks": 24,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+                      "guidance": [
+                            "Up to 2 marks per good melody note if the note is a correct note of the chord and the given rhythm is used.",
+                            "OR",
+                            "1 mark per good melody note if the note is a correct note of the chord but the given rhythm is not used.",
+                            "OR",
+                            "1 mark per note which is a correct note of the chord and the given rhythm is used but which is not a good melody note."
+                      ]
+                },
+                {
+                      "id": "bass",
+                      "label": "Bass",
+                      "maxMarks": 24,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+                      "guidance": [
+                            "2 marks per good bass note if given rhythm is used.",
+                            "OR",
+                            "1 mark per good bass note if given rhythm is not used."
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 4",
+          "pages": [
+                6,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.05,
+                            0.1,
+                            0.95,
+                            0.7
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2016 Ordinary Level, p.7 — © State Examinations Commission.",
+    id: "mus-2016-ol-c-b-q5", topicId: "music-1-13", conceptId: "mus-adding-adjacent-available-bank",
+    section: "B", questionRef: "2016 OL Composing Section B Q5",
+    stem: "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6.",
+    questionText: "ADDING BASS NOTES AND CHORD INDICATIONS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of F major on the stave below: • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Add suitable bass notes and chord indications to complete the cadences at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both. • Do not repeat the same chord in adjacent boxes.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "grid",
+                      "label": "1 mark per correct note of chord.",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Grid"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "chords",
+                      "label": "Chords",
+                      "maxMarks": 24,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+                      "guidance": [
+                            "Up to 2 marks per good cadence chord.",
+                            "OR",
+                            "1 mark per chord that fits but which is not a good cadence chord."
+                      ]
+                },
+                {
+                      "id": "bass",
+                      "label": "Bass",
+                      "maxMarks": 24,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+                      "guidance": [
+                            "2 marks per good bass note of each correct cadence chord when a correct rhythm is used.",
+                            "OR",
+                            "1 mark per good bass note of each correct cadence chord when an incorrect rhythm is used.",
+                            "OR",
+                            "1 mark per bass note of a chord that fits when a correct rhythm is used but which is not a good cadence chord."
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 5",
+          "pages": [
+                8,
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.033,
+                            0.95,
+                            0.685
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2016 Ordinary Level, p.8 — © State Examinations Commission.",
+    id: "mus-2016-ol-c-b-q6", topicId: "music-1-15", conceptId: "mus-adding-available-bank-below",
+    section: "B", questionRef: "2016 OL Composing Section B Q6",
+    stem: "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6.",
+    questionText: "ADDING DESCANT NOTES AND CHORD INDICATIONS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of G major on the stave below: • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Complete the phrase endings by adding suitable chords and descant notes at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "grid",
+                      "label": "1 mark per correct note of chord.",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Grid"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "chords",
+                      "label": "Chords",
+                      "maxMarks": 24,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+                      "guidance": [
+                            "Up to 2 marks per good cadence chord.",
+                            "OR",
+                            "1 mark per chord that fits but which is not a good cadence chord."
+                      ]
+                },
+                {
+                      "id": "descant",
+                      "label": "Descant",
+                      "maxMarks": 24,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+                      "guidance": [
+                            "Up to 2 marks per good descant note which is a correct note of a good cadence chord and in which a correct rhythm is used.",
+                            "OR",
+                            "1 mark per good descant note which is a correct note of a good cadence chord but in which an incorrect rhythm is used.",
+                            "OR",
+                            "1 mark per good descant note in which a correct rhythm is used but which is not from a good cadence chord."
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 6",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.05,
+                            0.033,
+                            0.95,
+                            0.685
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2016 Ordinary Level, p.4 — © State Examinations Commission.",
+    id: "mus-2016-ol-c-a-q2", topicId: "music-1-11", conceptId: "mus-anonymous-answer-appropriate-bare",
+    section: "A", questionRef: "2016 OL Composing Section A Q2(a)–(b)",
+    stem: "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3.",
+    questionText: "(a) SETTING MUSIC TO A GIVEN TEXT Answer (a) and (b). Here is an extract from the poem The Fair-Haired Girl (Anonymous). The sun has set, the stars are still, The red moon hides behind the hill; The tide has left the brown beach bare, The birds have fled the upper air. • The first two lines have been set to a rhythm. Compose a rhythm to fit the remaining words. (b) USING THIS RHYTHM, continue the opening below to make a melody of eight bars. • End on the keynote, that is, doh. • Write the words under the notes. • Add appropriate phrasing and expression marks to the melody.",
+    totalMarks: 40,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Q.2 SETTING MUSIC TO A GIVEN TEXT",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [
+                            "Where there is no answer at (a) and no attempt at word setting at (b) award 0 marks."
+                      ],
+                      "bands": [
+                            {
+                                  "label": "Rhythmically consistent with words at (a) and (b).",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Very good sense of key, melodic shape and text setting, using the rhythm at (a).",
+                                        "Melody ends on tonic.",
+                                        "Appropriate phrasing and expression marks inserted."
+                                  ]
+                            },
+                            {
+                                  "label": "Rhythm generally consistent with words at (a) and (b).",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Good sense of key, melodic shape and text setting, using the rhythm at (a).",
+                                        "Melody ends on tonic.",
+                                        "Appropriate phrasing and expression marks inserted."
+                                  ]
+                            },
+                            {
+                                  "label": "Rhythm fairly consistent with words at (a) and (b).",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "A moderately good awareness of key, melodic shape and text setting, using the rhythm at (a).",
+                                        "Melody ends on tonic.",
+                                        "Generally appropriate phrasing and expression marks inserted."
+                                  ]
+                            },
+                            {
+                                  "label": "Some rhythmical inconsistencies with words at (a) and (b).",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Some awareness of key, melodic shape and text setting, using the rhythm at (a).",
+                                        "Melody ends on tonic.",
+                                        "Generally appropriate phrasing and expression marks inserted."
+                                  ]
+                            },
+                            {
+                                  "label": "Rhythm inconsistent with words at (a) and (b).",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Little awareness of key, melodic shape or text setting.",
+                                        "Poor sense of tonality.",
+                                        "Inappropriate/no phrasing and expression marks inserted."
+                                  ]
+                            },
+                            {
+                                  "label": "Little attempt.",
+                                  "marks": [4,5,6,7,8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very little or no attempt.",
+                                  "marks": [0,1,2,3],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
 ];
