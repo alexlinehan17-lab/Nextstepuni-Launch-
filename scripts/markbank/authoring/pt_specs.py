@@ -1292,6 +1292,52 @@ READING[(2014, 'hl')] = [
 ]
 
 
+_CHOICE_RESP = (PL(4, 'Das duas propostas'), PL(4, '(Resposta em cerca de 300'))
+_Q1_2013 = PaperEach(3, '(5 × 1 ponto)', 1)
+_LEAD_2013 = PLc(3, '1. Explique', after='1. ')
+READING[(2013, 'hl')] = [
+    # Q1's five answers on one run, as 2018.
+    C('I1a', [one(S(50, after='a) ', before=' b)'), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'a) “Petulante”', after='a) ')), stem=()),
+    C('I1b', [one(J(S(50, after='b) '), S(51, before=' c)')), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'b) “Egoísta”', after='b) ')), stem=()),
+    C('I1c', [one(S(51, after='c) ', before=' d)'), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'c) “Intransigência”', after='c) ')), stem=()),
+    C('I1d', [one(J(S(51, after='d) '), S(52, before=' e)')), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'd) “Solidão”', after='d) ')), stem=()),
+    C('I1e', [one(S(52, after='e) '), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'e) “Vulnerável”', after='e) ')), stem=()),
+    # The scheme prints "(30 pontos / Total: 100)": the paper's "(30 pontos)".
+    C('II1', [shown(SchemeSpan(86, 97), lead=S(84))], total=PaperPontos(4, '(30 pontos)'), whole=True,
+      question=(PL(4, 'O facto de guardar'), PL(4, 'quase me deu'), PL(4, 'fora dos muros'), PL(4, 'de que se rodeou'),
+                PL(4, 'Num comentário crítico'), PL(4, 'diz sobre o autor')), stem=()),
+    C('III1', [shown(SchemeSpan(101, 110), lead=S(100))], total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'Os laços familiares')), stem=_CHOICE_RESP, source=False),
+    C('III2', [shown(SchemeSpan(112, 122), lead=S(111))], total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, 'Perseguir os nossos')), stem=_CHOICE_RESP, source=False),
+]
+_Q1_2012 = PaperEach(3, '(5 × 1 ponto)', 1)
+_LEAD_2012 = PLc(3, '1. Explique', after='1. ')
+READING[(2012, 'hl')] = [
+    C('I1a', [one(S(23, after='a) ', before=' b)'), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'a) “Países', after='a) ')), stem=()),
+    C('I1b', [one(J(S(23, after='b) '), S(24, before=' c)')), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'b) “Analfabetismo', after='b) ')), stem=()),
+    C('I1c', [one(J(S(24, after='c) '), S(25, before=' d)')), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'c) “Cultura', after='c) ')), stem=()),
+    C('I1d', [one(S(25, after='d) ', before=' e)'), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'd) “Vertiginosa', after='d) ')), stem=()),
+    C('I1e', [one(J(S(25, after='e) '), S(26)), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'e) “Ao deus', after='e) ')), stem=()),
+    C('II1', [shown(SchemeSpan(48, 52), lead=S(46))], total=PaperPontos(4, '(30 pontos)'), whole=True,
+      question=(PL(4, 'Mas no fim e ao cabo'), PL(4, 'possível, terá'), PL(4, 'Faça um comentário crítico')), stem=()),
+    C('III1', [shown(SchemeSpan(56, 61), lead=S(55))], total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, '“Abrir um livro')), stem=_CHOICE_RESP, source=False),
+    C('III2', [shown(SchemeSpan(63, 65), lead=S(62))], total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, 'Na sociedade actual')), stem=_CHOICE_RESP, source=False),
+]
+
+
 # ============================================================== 2022 OL ===
 # The reading asks the old shared generator excluded: two true/false ticks the
 # text layer cannot read (taken from the scheme PDF by tick position, CARD-

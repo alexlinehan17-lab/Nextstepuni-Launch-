@@ -1,5 +1,453 @@
 [
  {
+  "id": "por-2013-hl-i-1-a",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2013,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-petulante",
+  "questionRef": "2013 HL Section I Q1(a)",
+  "questionText": "Explique por palavras suas o sentido das seguintes expressões: “Petulante” (§ 1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Atrevido, imodesto, insolente;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2013 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2013-hl-i-1-b",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2013,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-egoista",
+  "questionRef": "2013 HL Section I Q1(b)",
+  "questionText": "Explique por palavras suas o sentido das seguintes expressões: “Egoísta” (§ 2);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "pessoa que apenas se preocupa consigo ou com os seus interesses;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2013 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2013-hl-i-1-c",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2013,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-intransigencia",
+  "questionRef": "2013 HL Section I Q1(c)",
+  "questionText": "Explique por palavras suas o sentido das seguintes expressões: “Intransigência” (§ 3)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "intolerância, rigidez, falta de flexibilidade;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2013 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2013-hl-i-1-d",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2013,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-solidao",
+  "questionRef": "2013 HL Section I Q1(d)",
+  "questionText": "Explique por palavras suas o sentido das seguintes expressões: “Solidão” (§ 5)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "isolamento, estado de quem está só;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2013 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2013-hl-i-1-e",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2013,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-vulneravel",
+  "questionRef": "2013 HL Section I Q1(e)",
+  "questionText": "Explique por palavras suas o sentido das seguintes expressões: “Vulnerável” (§ 5)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "frágil, com poucas defesas, ponto fraco.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2013 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2013-hl-i-2",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2013,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "define-autor-julgamento-pai-pelo-filho",
+  "questionRef": "2013 HL Section I Q2",
+  "questionText": "Como define o autor “o julgamento do pai pelo filho”? Porquê? Explique por palavras suas.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "O julgamento do pai pelo filho é um acto impiedoso e terrível. É normal o filho ver no pai o seu herói e não ser o seu juiz. Um julgamento mais sério só pode acontecer quando é já adulto e, nesse momento, a sua visão do mundo é diferente daquela de quando era jovem. É um acto praticado em isolamento e ao pai não é dado defender-se, porque ausente.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2013 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2013-hl-i-3",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2013,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "pela-autor-pronuncia-frase-seguinte-tudo",
+  "questionRef": "2013 HL Section I Q3",
+  "questionText": "Qual a razão pela qual o autor pronuncia a frase seguinte: Tudo mudou permanecendo igual mas a sua falta faz-me coxear, sem dar por isso, de compartimento em compartimento.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Os espaços que o autor percorre, os compartimentos da casa, permanecem iguais; contudo, a perspectiva com que ele os observa é diferente. A necessidade que o autor sente de procurar o pai pelos compartimentos da casa leva-o a considerar como tudo é diferente sem a sua presença, apesar de igual fisicamente.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2013 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2013-hl-i-4",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2013,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "analise-fazem-pai-mae-filho-autor",
+  "questionRef": "2013 HL Section I Q4",
+  "questionText": "Na análise que fazem do pai, mãe e filho (o autor) estão em desacordo. Explique por palavras suas a opinião de cada um sobre a pessoa do pai.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A mãe considera que o pai (marido) foi “o homem mais feliz” que conhecera “porque só fez o que queria”. O filho repete as palavras da mãe mas acrescenta que sempre sentiu no pai um desejo secreto de fazer o que não queria. Ou seja, o filho via no pai um ser frio e distante, fruto da educação que recebera, mas via também um sere humano que gostaria de saber estar mais próximo dos outros, gostaria de não ser tão individualista, sem receio de mostrar as suas fraquezas.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2013 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2013-hl-i-5",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2013,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "autor-estabelece-pessoa-pai-longo-dupla",
+  "questionRef": "2013 HL Section I Q5",
+  "questionText": "O autor estabelece com a pessoa do pai, ao longo do texto, uma dupla relação. Tendo em conta o sentido do texto, identifique e explique os dois sentidos daquela relação.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "No princípio do texto, percebe-se a relação do filho (autor) com o seu pai. Ao longo do texto, o autor constrói uma segunda imagem do seu próprio pai, desde criança, justificando os seus erros e fraquezas. Termina o texto numa posição oposta: o autor passa a ser pai que vê o seu próprio pai como filho, com a frase – “…se o menino se portar bem e não aborrecer a mãizinha o paezinho, seu filho, manda-lhe um presente…”",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2013 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2013-hl-i-6",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2013,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "autor-oprio-algumas-fraq-uezas-pai",
+  "questionRef": "2013 HL Section I Q6",
+  "questionText": "O autor vê em si pr óprio algumas das fraq uezas do pai. Contudo, o result ado final perante a vida é di ferente. Quais as fraquezas que os aproxi ma m e o que motivou a difere nça?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Afinal, pai e filho têm comportamentos e reacções semelhantes: vivem uma feroz solidão, são desagradáveis com os outros, injustamente agressivos, receiam mostrar as suas fraquezas. Mas, enquanto o pai se ficou pela expressão destes comportamentos na relação pessoal com os outros, o filho resolveu o problema através da escrita. Ou seja, usa os romances como expressão de mea culpa, uma espécie de catarse dos seus comportamentos enquanto pessoa.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2013 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2013-hl-ii-1",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2013,
+  "section": "II",
+  "topicId": "portuguese-2-2",
+  "conceptId": "facto-guardar-preciosamente-todos-aqueles-janjoes",
+  "questionRef": "2013 HL Section II Q1",
+  "questionText": "O facto de guardar preciosamente todos aqueles Janjões, que mais ninguém conhecia, tocou-me, quase me deu vontade de lhe pegar ao colo, garantir-lhe que havia, para ele, um lugar no mundo fora dos muros com cacos de vidro em cima, tantas vezes construídos de má-criação e violência, de que se rodeou. Num comentário crítico com cerca de 100 palavras, explique o sentido da citação e o que ela nos diz sobre o autor.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A visão de um pai frio, austero, quase insensível, transforma-se quando o filho descobre aqueles “janjões” nos postais antigos que ninguém conhecia. De repente, o filho descobre um pai menino, frágil delicado e sensível, desejando mesmo pegar-lhe ao colo e fazer dele uma pessoa diferente, mais próximo dos outros, mais afectuoso. A frase, “um lugar no mundo fora dos muros com cacos de vidro em cima, tantas vezes construído de má-criação e violência, de que se rodeou”, é exemplo claro daquela imagem de homem severo que se rodeia de regras e normas rígidas fechando-se no seu mundo de austeridade onde ninguém entrava, tal como um muro encimado por cacos de vidro não permite que algum estranho viole o espaço por ele fechado. Desejava, o filho, naquele momento, poder ensinar ao pai que ser sensível e carinhoso, ou seja, derrubar os muros que o isolavam dos outros, nada tinha de negativo e fraco.",
+    "marks": null,
+    "contextNote": "For “PARTE II”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(30 pontos)'; the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2013 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2013-hl-iii-1",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2013,
+  "section": "III",
+  "topicId": "portuguese-2-2",
+  "conceptId": "proposta-lacos-familiares-mais-importantes-quaisquer",
+  "questionRef": "2013 HL Section III Q1",
+  "questionText": "Proposta 1 Os laços familiares são mais importantes do que quaisquer outros.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Escolhemos os amigos, não escolhemos a família. Os laços de sangue consubstanciam- se de forma natural sem a intervenção da nossa vontade. Desta relação natural, nasce a ligação íntima que estabelecemos com os nossos familiares a quem recorremos sempre nos momentos de maior dificuldade e com quem partilhamos os momentos de alegria. Se porventura, a lealdade familiar for quebrada, aquela necessidade de conforto é ainda mais sofrida porque mais profundamente sentimos a ausência.",
+    "marks": null,
+    "contextNote": "For “Proposta 1”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(40 pontos)'; the paper prints this ask on page 4 of the question booklet.",
+  "stem": "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Resposta em cerca de 300 palavras)"
+ },
+ {
+  "id": "por-2013-hl-iii-2",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2013,
+  "section": "III",
+  "topicId": "portuguese-2-2",
+  "conceptId": "proposta-perseguir-nossos-sonhos-viagem-agridoce",
+  "questionRef": "2013 HL Section III Q2",
+  "questionText": "Proposta 2 Perseguir os nossos sonhos é uma viagem agridoce.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sonhar é próprio do homem ousado e aventureiro. “O sonho comanda a vida” diz António Gedeão no seguimento de um outro belíssimo verso de Pessoa “Triste de quem vive em casa / Contente com o seu lar…” Assim é, de facto, importante perseguir os nossos sonhos, os nossos desejos, e não só quando jovens. A felicidade que nos proporciona a realização de um sonho eleva o ser humano acima de um comum mortal. É esta a parte doce da questão. Contudo, a realização de um sonho, pressupõe o fim de uma procura, o fim de uma “viagem”, e neste sentido, perseguir um sonho tem também algo de amargo: por um lado, chegar ao fim, obriga-nos a reiniciar de novo, e nem sempre existe coragem; por outro, a realização de determinado sonho pode verificar-se desilusão, ao descobrirmos que afinal estávamos enganados. Nestes aspectos reside a parte amarga da viagem.",
+    "marks": null,
+    "contextNote": "For “Proposta 2”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(40 pontos)'; the paper prints this ask on page 4 of the question booklet.",
+  "stem": "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Resposta em cerca de 300 palavras)"
+ },
+ {
   "id": "por-2014-hl-i-1-a",
   "subjectId": "portuguese",
   "level": "higher",
