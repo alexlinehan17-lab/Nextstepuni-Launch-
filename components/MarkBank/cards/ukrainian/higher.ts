@@ -264,6 +264,62 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC570ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2025 Higher Level — © State Examinations Commission.",
+    id: "ukr-2025-hl-ii-1", topicId: "ukrainian-1-0", conceptId: "100-150",
+    section: "II", questionRef: "2025 HL Section II Q1",
+    questionText: "Напишіть коментар (100-150 слів) на тему: «Вишита сорочка вважається невід’ємним атрибутом української культури».",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Вишита сорочка – національний символ України. Вона віддавна вважається вагомою складовою неповторної української культури та її багатих традицій, важливим символом краси і здоров’я, щасливої долі й родової пам’яті, любові та святковості.", marks: null, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme heads its points: “Наприклад:”." },
+    { id: "r-2", kind: "point", verbatim: "Вишиванка не лише має естетичну цінність, але й містить у собі глибокий сакральний зміст, пов'язаний з історією, родинними зв'язками, моральними цінностями й духовними переконаннями українців.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Це своєрідний маркер етнокультурної традиції, у якому через досконалість мистецьких практик переданий віковічний досвід життя українців, особливості звичаїв, вірувань, обрядів, світогляду.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Вишивка на сорочці часто відображає регіональні особливості, соціальний статус, гендерну приналежність, вік власника.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Наші предки приписували вишиванці магічні властивості та вірили, що, вишиваючи на сорочці той чи той орнамент, вони в такий спосіб захищали себе від «злого» ока. Саме тому вишиванка була оберегом від злих сил та нещасть. Кожен візерунок на ній мав важливе значення і був частиною народної мудрості, переданої з покоління в покоління.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Сьогодні вишита сорочка не втрачає своєї актуальності. Це той чи не єдиний елемент національного одягу, який найбільш часто можна побачити в гардеробі українця: вишиванку часто одягають, святкуючи найважливіші події в житті, зокрема хрестини, весілля тощо.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "У наші дні вишита сорочка також вважається символом національної гідності та єдності українців.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ЧАСТИНА II",
+          "title": "Reading text — answer in Ukrainian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Ukrainian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC570ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2025 Higher Level — © State Examinations Commission.",
+    id: "ukr-2025-hl-iii-1", topicId: "ukrainian-1-0", conceptId: "ask",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "Напишіть есе (мінімум 300 слів) на одну із запропонованих нижче тем: «Бережи українське – носи вишиванку!» (Ліна Костенко).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme reprints the instruction and the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC570ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2025 Higher Level — © State Examinations Commission.",
+    id: "ukr-2025-hl-iii-2", topicId: "ukrainian-1-0", conceptId: "ask",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "Напишіть есе (мінімум 300 слів) на одну із запропонованих нижче тем: «Там, де є українці, там завжди є мистецтво» (Юрій Липа).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in UKRAINIAN. The paper prints the rule on page 2: \"Уважно прочитайте текст і дайте відповіді українською мовою на запитання з усіх трьох частин.\" The scheme reprints the instruction and the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2026, level: "higher",
     paperFileid: "LC570ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Ukrainian 2026 Higher Level — © State Examinations Commission.",

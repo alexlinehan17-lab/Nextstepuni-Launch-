@@ -54,6 +54,8 @@ LT_SUBJECTS = {'latvian', 'czech'}
 # Modern Greek's census walks the paper with mgr_paper.MgrPaper (groups, not parts).
 MGR_SUBJECTS = {'modern-greek'}
 SUBJECT_NAME = {**LANGUAGE_NAME, **lt_topics.LANGUAGE, 'modern-greek': 'Modern Greek'}
+import eu_topics as _eu_topics                                      # noqa: E402
+TARGET_WORDS_KNOWN = set(_eu_topics.TARGET_WORDS)
 from pl_listen_lib import (S, J, PL, one, menu, shown, graded,      # noqa: E402,F401
                            components, Graded, Shown, One, Menu, Sel, Join)
 from pl_listen_specs import build_rows                               # noqa: E402
@@ -123,9 +125,9 @@ def scheme_lines(subject, year, level='hl'):
 
 # ----------------------------------------------------------------- prices ---
 # eu_paper's mark words, with the Czech and Latvian forms the lt papers print
-# ("[5 bodů]", "(5 punktu)", "1 punkts"), each before its shorter stem so the
+# ("[5 bodů]", "(5 punktu)", "1 punkts") and Ukrainian ("(5 балів)", "(5 × 1 бал)"), each before its shorter stem so the
 # alternation does not stop at "bod" / "punkt" (Czech drafter, 20 Nov).
-MARK_WORD = r'bodů|punktu|punkts|' + eu_paper.MARK_WORD
+MARK_WORD = r'bodů|punktu|punkts|балів|бали|бал|' + eu_paper.MARK_WORD
 # The papers' price words plus the bare "p" some sittings print ("(1 p)",
 # "(5 p)", Dutch 2017), which the census's own tariff reader does not take.
 PRICE_WORD = MARK_WORD + r'|p\.?'
@@ -929,7 +931,11 @@ def cards(subject, year, specs, level='hl', scheme=True):
             import mgr_topics
             language = mgr_topics.answer_language(P._P) or 'Modern Greek'
         else:
-            language = (lt_topics.answer_language if lt else answer_language)(subject, question)
+            language = (lt_topics.answer_language(subject, question) if lt else
+                        # a subject whose paper prints a one-language rule that eu_topics has no
+                        # word list for (Ukrainian: "... дайте відповіді українською мовою ...")
+                        SUBJECT_NAME[subject] if subject in RULE_WORDS and subject not in ONE_LANGUAGE
+                        and subject not in TARGET_WORDS_KNOWN else answer_language(subject, question))
         note = lang_note = rule_note(subject, doc, language)
         card = {
             'id': (mgr_all.card_id(year, level, key) if mgr
