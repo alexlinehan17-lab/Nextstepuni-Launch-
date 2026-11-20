@@ -1556,6 +1556,19 @@ const isPortugueseAdded = (id: string) => /^por-\d{4}-/.test(id) && (Number(id.s
 const portugueseAddedTotal = [...Object.values(PORTUGUESE_ADDED), ...Object.values(PORTUGUESE_ADDED_TO_FROZEN)]
   .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
 
+/* Lithuanian (the languages-q3 lane, from 2026-11-20): additions on top of
+ * the frozen 306 cards of every sitting, never a replacement: each sitting's
+ * Listening Comprehension Test (sections LA-LE, CARD-STANDARD 10g), and then
+ * the asks the shared generator refused, each named. */
+const LITHUANIAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
+  2026: { higher: 31, ordinary: 0 },
+};
+const LITHUANIAN_ADDED_TO_FROZEN_ID = /^lt-202[2-6]-(?:hl|ol)-l[a-e]-/;
+const isLithuanianAdded = (id: string) => /^lt-\d{4}-/.test(id)
+  && Number(id.slice(3, 7)) in LITHUANIAN_ADDED_TO_FROZEN && LITHUANIAN_ADDED_TO_FROZEN_ID.test(id);
+const lithuanianAddedTotal = Object.values(LITHUANIAN_ADDED_TO_FROZEN)
+  .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
+
 /* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
  * addition on top of the frozen 2020-2026 set, never a replacement -- those
  * sittings had no card at all before. Pinned per level, count and id hash,
@@ -2833,6 +2846,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   if (name.startsWith('german:')) return ids.filter(id => !isGermanAdded(id));
   if (name.startsWith('polish:')) return ids.filter(id => !isPolishAdded(id));
   if (name.startsWith('portuguese:')) return ids.filter(id => !isPortugueseAdded(id));
+  if (name.startsWith('lithuanian:')) return ids.filter(id => !isLithuanianAdded(id));
   if (name.startsWith('engineering:')) return ids.filter(id => !engineeringAdditionIds.has(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -3178,6 +3192,16 @@ describe('Mark Bank card preservation', () => {
       .toBe(true);
   });
 
+  it('adds Lithuanian listening on top of the frozen 306 cards', () => {
+    const cards = [...LITHUANIAN_HIGHER, ...LITHUANIAN_ORDINARY];
+    for (const [year, counts] of Object.entries(LITHUANIAN_ADDED_TO_FROZEN)) {
+      const added = cards.filter(card => card.year === Number(year) && isLithuanianAdded(card.id));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+    }
+    expect(cards.filter(card => !isLithuanianAdded(card.id))).toHaveLength(306);
+  });
+
   /* A German card's conceptId is its level-independent identity, the key a
    * student's progress is carried on between Higher and Ordinary
    * (types/markBank.ts: it "cannot be retrofitted"), so it is held like the
@@ -3395,6 +3419,7 @@ describe('Mark Bank card preservation', () => {
         : name.startsWith('german:') ? cards.filter(card => isGermanAdded(card.id)).length
         : name.startsWith('polish:') ? cards.filter(card => isPolishAdded(card.id)).length
         : name.startsWith('portuguese:') ? cards.filter(card => isPortugueseAdded(card.id)).length
+        : name.startsWith('lithuanian:') ? cards.filter(card => isLithuanianAdded(card.id)).length
         // Technology's 2010-2019 and DCG's 2010-2018 additions count on top of the bank the same way.
         : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
@@ -3442,8 +3467,8 @@ describe('Mark Bank card preservation', () => {
         + treatmentAdditionIds.size
         // Italian (classics-italian lane): every card on top of the frozen 350.
         + italianAddedCount
-        // Polish and Portuguese additions (languages-q3 lane).
-        + polishAddedTotal + portugueseAddedTotal);
+        // Polish, Portuguese and Lithuanian additions (languages-q3 lane).
+        + polishAddedTotal + portugueseAddedTotal + lithuanianAddedTotal);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

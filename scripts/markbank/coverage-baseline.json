@@ -528,11 +528,11 @@
     "refsHash": "7fcb330db005a968"
   },
   "lithuanian": {
-    "cards": 306,
-    "contentHash": "0d11f6d500d72a7a",
+    "cards": 337,
+    "contentHash": "af9824adb74da114",
     "coveragePct": 98.1,
-    "covered": 306,
-    "excluded": 458,
+    "covered": 337,
+    "excluded": 427,
     "leaves": 779,
     "open": 15,
     "orphans": 0,
@@ -540,7 +540,7 @@
       "count": 32,
       "hash": "a95df1b95d3c2107"
     },
-    "refsHash": "15602894c57e4cf0"
+    "refsHash": "494452171359c91a"
   },
   "maltese": {
     "cards": 29,
