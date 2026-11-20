@@ -37,6 +37,9 @@ export function ToolArtwork({
   const asset =
     tool === 'topic-atlas'
       ? 'paper-trail'
+      // Listening Studio is Mark Bank's listening side and has no art of its own yet.
+      : tool === 'listening-studio'
+        ? 'mark-bank'
       : tool === 'cao-simulator'
         ? 'points-passport'
         : tool;

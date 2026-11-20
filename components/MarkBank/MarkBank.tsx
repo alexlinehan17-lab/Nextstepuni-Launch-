@@ -25,6 +25,8 @@ import { resolveSubjectId } from '../../curriculumRegistry';
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import MarkBankLibrary from './MarkBankLibrary';
+import ListeningStudio from '../ListeningStudio';
+import { LISTENING_SUBJECT_IDS } from '../ListeningStudio/model';
 import StartingPointCheck from './StartingPointCheck';
 import { useSubjectAccess } from '../launchpad/SubjectAccess';
 import SessionScreen, { type SessionCardResult } from './SessionScreen';
@@ -75,9 +77,19 @@ export interface MarkBankProps {
   uid?: string;
   examDate?: string | null;
   studentSubjects?: Array<{ subjectName: string; level?: string }>;
+  /**
+   * Listening Studio. Every card with a recording is sat there, not in a
+   * review: the Studio is this same tool on its own front page, so the cards,
+   * the student's memory of them and the recorder are the ones a review uses.
+   */
+  studio?: boolean;
+  /** Opens Listening Studio from Mark Bank's board. */
+  onOpenListeningStudio?: () => void;
   /** Injected for tests. */
   now?: () => number;
 }
+
+const isListeningSubject = (subjectId: string) => (LISTENING_SUBJECT_IDS as readonly string[]).includes(subjectId);
 
 /* ------------------------------------------------------------------ bits ---- */
 
@@ -131,17 +143,27 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
   return null;
 }
 
-const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now = () => Date.now() }) => {
+const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, studio = false, onOpenListeningStudio, now = () => Date.now() }) => {
   const canSelectSubject = useSubjectAccess();
   /* Read synchronously on mount. A Chemistry Ordinary student must never watch
      the tool open on Biology Higher and correct it — that is two clicks every
      session, forever. */
   const saved = useMemo(() => readChoice(uid), [uid]);
-  const profileDefault = useMemo(() => profileDeckChoice(studentSubjects?.filter(s => canSelectSubject(s.subjectName))), [studentSubjects, canSelectSubject]);
+  const profileDefault = useMemo(() => {
+    const selectable = studentSubjects?.filter(s => canSelectSubject(s.subjectName));
+    if (!studio) return profileDeckChoice(selectable);
+    // The Studio opens on the first of the student's subjects that has listenings.
+    for (const profileSubject of selectable ?? []) {
+      const choice = profileDeckChoice([profileSubject]);
+      if (choice && isListeningSubject(choice.subjectId)) return choice;
+    }
+    return null;
+  }, [studentSubjects, canSelectSubject, studio]);
   const savedIsValid = Boolean(
     saved
     && SUBJECTS.some(subject => subject.id === saved.subjectId && canSelectSubject(subject.title))
-    && deckSize(saved.subjectId, saved.level) > 0,
+    && deckSize(saved.subjectId, saved.level) > 0
+    && (!studio || isListeningSubject(saved.subjectId)),
   );
   // A Topic Atlas question's "Practise these parts" link opens its own deck (markBankDeepLink).
   const [practiceLink] = useState(() => {
@@ -153,7 +175,15 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
       ? { subjectId: subject.id, level: linkLevel, ids: link.ids } : null;
   });
   const linkedChoice = practiceLink ? { subjectId: practiceLink.subjectId, level: practiceLink.level } : null;
-  const initialChoice = linkedChoice ?? (savedIsValid && saved ? saved : profileDefault) ?? { subjectId: (SUBJECTS.find(s => canSelectSubject(s.title)) ?? SUBJECTS[0]).id, level: 'higher' as Level };
+  const studioSubjects = useMemo(
+    () => SUBJECTS.filter(s => isListeningSubject(s.id) && canSelectSubject(s.title) && levelsFor(s.id).some(l => deckSize(s.id, l) > 0)),
+    [canSelectSubject],
+  );
+  const firstStudioSubject = studioSubjects[0];
+  const fallbackChoice = studio && firstStudioSubject
+    ? { subjectId: firstStudioSubject.id, level: levelsFor(firstStudioSubject.id).find(l => deckSize(firstStudioSubject.id, l) > 0) ?? ('higher' as Level) }
+    : { subjectId: (SUBJECTS.find(s => canSelectSubject(s.title)) ?? SUBJECTS[0]).id, level: 'higher' as Level };
+  const initialChoice = (studio ? null : linkedChoice) ?? (savedIsValid && saved ? saved : profileDefault) ?? fallbackChoice;
   const [subjectId, setSubjectId] = useState<string>(initialChoice.subjectId);
   const [level, setLevel] = useState<Level>(initialChoice.level);
   const chooseSubject = useCallback((id: string) => {
@@ -254,13 +284,18 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
 
   const memories = deck.cards;
   const retention = retentionFor(now(), deck.examTs);
+  /* Cards with a recording are sat in Listening Studio, so they are not in
+     the board's counts or in any review queue. They are still this deck's
+     cards: the Studio records them through handleGrade below. */
+  const reviewCards = useMemo(() => cards.filter(card => !card.audioMaterial), [cards]);
+  const listeningCount = cards.length - reviewCards.length;
 
-  const cohortMenu = useMemo(() => markBankCurriculumMenu(subjectId, level, examDate, cards), [subjectId, level, examDate, cards]);
+  const cohortMenu = useMemo(() => markBankCurriculumMenu(subjectId, level, examDate, reviewCards), [subjectId, level, examDate, reviewCards]);
   const topicCardsFor = (id: string, pool: SecCard[]) => cardsForMenuTopic(id, pool, cohortMenu);
 
   const startSession = (topicId?: string, preparedQueue?: SecCard[]) => {
     if (launchingTopicId !== null) return;
-    const pool = topicId ? topicCardsFor(topicId, cards) : cards;
+    const pool = topicId ? topicCardsFor(topicId, reviewCards) : reviewCards;
     if (!pool.length) return;
     const queue = preparedQueue
       ?? resolveSessionQueue(pool, memories, now(), deck.examTs);
@@ -300,14 +335,14 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
   /* ------------------------------------------------------------ session ---- */
 
   if (screen.name === 'starting-point') return <StartingPointCheck
-    subjectLabel={subject.title} level={level} spec={cohortMenu.spec} cards={cards}
+    subjectLabel={subject.title} level={level} spec={cohortMenu.spec} cards={reviewCards}
     memories={memories} now={now} examTs={deck.examTs} onGrade={handleGrade}
     onClose={() => setScreen({ name: 'board' })}
     onPractice={(topicId, card) => startSession(topicId, [card])}
   />;
 
   if (screen.name === 'session') {
-    const reviewPool = screen.topicId ? topicCardsFor(screen.topicId, cards) : cards;
+    const reviewPool = screen.topicId ? topicCardsFor(screen.topicId, reviewCards) : reviewCards;
     const reviewPoolLabel = screen.topicId
       ? cohortMenu.strands
         .flatMap(strand => strand.topics)
@@ -349,7 +384,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
       const resultCard = cards.find(card => card.id === result.cardId);
       return resultCard ? listeningExerciseKey(resultCard) ?? resultCard.id : result.cardId;
     })).size;
-    const nextPool = screen.topicId ? topicCardsFor(screen.topicId, cards) : cards;
+    const nextPool = screen.topicId ? topicCardsFor(screen.topicId, reviewCards) : reviewCards;
     const nextQueue = resolveSessionQueue(nextPool, memories, now(), deck.examTs);
     const nextAction = nextSessionActionLabel(
       sessionExerciseCount(nextQueue),
@@ -433,7 +468,16 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
     );
   }
 
-  return <MarkBankLibrary key={deckId} examDate={examDate} subjectId={subjectId} level={level} cards={cards} state={deck} now={now}
+  if (studio) return <ListeningStudio
+    subjectId={subjectId} subjectLabel={subject.title} level={level}
+    subjects={studioSubjects.map(s => ({ id: s.id, title: s.title }))}
+    chooseSubject={chooseSubject} chooseLevel={chooseLevel}
+    cards={cards} memories={memories} loading={cardsLoading} error={cardsError}
+    onRetry={() => setCardsAttempt(value => value + 1)} onGrade={handleGrade}
+  />;
+
+  return <MarkBankLibrary key={deckId} examDate={examDate} subjectId={subjectId} level={level} cards={reviewCards} state={deck} now={now}
+    listeningCount={listeningCount} onOpenListeningStudio={onOpenListeningStudio}
     chooseSubject={chooseSubject} chooseLevel={chooseLevel} canSelectSubject={canSelectSubject}
     onStartingPoint={() => setScreen({ name: 'starting-point' })}
     onStart={startSession} busy={launchingTopicId!==null} ready={loaded&&!cardsLoading&&!cardsError}
