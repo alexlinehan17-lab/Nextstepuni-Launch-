@@ -249,6 +249,82 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2010 Higher Level — © State Examinations Commission.",
+    id: "est-2010-hl-i-4", topicId: "estonian-0-1", conceptId: "selgita-tekstile-toetudes-millised-ohud-ahvardavad",
+    section: "I", questionRef: "2010 HL Section I Q4",
+    questionText: "Selgita tekstile toetudes, millised ohud ähvardavad 0-km-toidu kontseptsiooni kaasajal?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Seni on kõige tervislikumaks peetud võimalikult kodu ligidal kasvanud toitu, sest see on säilitusainetevaba ja puhas. Geograafilised ja looduslikud tingimused loevad üha vähem, sest tänu säilitusainete kasutamisele on võimalik toitu toota just seal, kus see tootjate jaoks kõige odavam ning tarnida seda müügiks kuhu iganes maailmas, sest toote säilivusaeg on tänu säilitusainete olemasolule pikk.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme heads them: “Võimalikud vastused:”." },
+    { id: "r-2", kind: "point", verbatim: "Keskkonnaprobleemid – puhast ja looduslähedast toitu pole võimalik enam kasvatada, sest ümbritsev keskkond on saastatud.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Tarbimishullus ning brändikultuse levik Ameerikast ja Euroopast Aafrikasse ja Aasiasse – kogu maailmas tarbitakse massiliselt samu tooteid/brände.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2010 Higher Level — © State Examinations Commission.",
+    id: "est-2010-hl-ii-1", topicId: "estonian-1-0", conceptId: "kui-valitsused-kaitsmas-suurtoosturite-huve-siis",
+    section: "II", questionRef: "2010 HL Section II Q1",
+    questionText: "„Kui valitsused on kaitsmas suurtöösturite huve, siis tuleb vaadata, mida tarbijad oma huvide kaitseks ette võtta saavad.” (9. lõik) Kuidas saavad tarbijad oma huve kaitsta? Kirjuta umbes 100sõnaline kommentaar oma seisukoha põhjenduseks.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 100sõnaline ladus kommentaar tõestamaks teksti sisust arusaamist.", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Teadlikum ostmine: suhtumise muutumine, harjumuste muutmine, eelistuste muutmine”; “Tarbida teadlikult ja targalt: keskkonnasäästlikkus, tervislikkus, toote hinna ja kvaliteedi suhe”; “Harjumuste muutmine: kas eelistada pooltooteid (või valmis- või kiirtoitu) või küpsetada ise, kas eelistada mahepoode ja turgu või supermarketeid, kas kasvatada ise puu- ja köögivilja või osta välismaiseid, kas kodumaine toit või teadmata päritoluga importtoit, kas kvaliteet või hind; ajapuudus”; “Suhtumise muutmine – sotsiaalne surve (nt naabrid, sõbrad, koolikaaslased), trendid (nt dieettooted, rämpstoit, kaalujälgimine), tarbijate teavitamine ja reklaam – pakendid, nende märgistamine, meedia mõju ja reklaam”; “Kaitstud tarbija (tarbijate õigused, tarbijakaitse, seadused) versus teadlik tarbija (valikuvõimalused, keskkonnast hoolimine, tervislikkus, teadlikkus)”; “Aktiivsed kodanikud, kollektiivsed protestikampaaniad, keeldumine rämpstoidust”. The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. ÜLESANNE",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2010 Higher Level — © State Examinations Commission.",
+    id: "est-2010-hl-iii-1", topicId: "estonian-1-1", conceptId: "keegi-ole-saar-mainimatajatmine-tahenda-valetamist",
+    section: "III", questionRef: "2010 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Keegi ei ole saar",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2010 Higher Level — © State Examinations Commission.",
+    id: "est-2010-hl-iii-2", topicId: "estonian-1-1", conceptId: "mainimatajatmine-tahenda-valetamist",
+    section: "III", questionRef: "2010 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Mainimatajätmine ei tähenda valetamist",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2011, level: "higher",
     paperFileid: "LC552ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2011 Higher Level — © State Examinations Commission.",

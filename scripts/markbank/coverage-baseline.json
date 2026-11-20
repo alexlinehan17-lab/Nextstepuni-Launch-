@@ -318,19 +318,19 @@
     "refsHash": "2b0da202e5b95214"
   },
   "estonian": {
-    "cards": 107,
-    "contentHash": "5949fdc48a6c7ff9",
+    "cards": 111,
+    "contentHash": "11736e5c04656847",
     "coveragePct": 100.0,
-    "covered": 107,
-    "excluded": 64,
-    "leaves": 171,
+    "covered": 111,
+    "excluded": 61,
+    "leaves": 172,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 15,
       "hash": "be94459f5763acb6"
     },
-    "refsHash": "3d27c9b51da457f1"
+    "refsHash": "6e4abbfafefe743c"
   },
   "finnish": {
     "cards": 90,
