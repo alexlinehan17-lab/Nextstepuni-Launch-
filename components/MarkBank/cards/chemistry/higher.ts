@@ -36725,7 +36725,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the total hardness of the water sample in p.p.m. in terms of CaCO₃.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "308 p.p.m. CaCO₃", marks: 12, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "308 p.p.m. CaCO₃", marks: 12, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer. A misprint in the scheme: its second method gives \"M = 0.308 M\", but its own next line works with 0.00308 moles per litre, the molarity the first method finds.", openList: true },
     ],
     figure: {
           "candId": "chemistry-2022-HL-deferred-scheme-q9a-iii",
@@ -37293,7 +37293,7 @@ export const CARDS: SecCard[] = [
     questionText: "the concentration of dissolved oxygen in the lake water in moles per litre,",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0.00019 (1.9 × 10⁻⁴, 19/100000) moles /l (M) of O₂", marks: 6, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "0.00019 (1.9 × 10⁻⁴, 19/100000) moles /l (M) of O₂", marks: 6, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer. A misprint in the scheme: it writes 0.0000285 as \"2.85 × 10⁻⁴\" (twice); 0.0000285 is 2.85 × 10⁻⁵.", openList: true },
     ],
     figure: {
           "candId": "chemistry-2023-HL-deferred-scheme-q1c-iii",
@@ -37316,7 +37316,7 @@ export const CARDS: SecCard[] = [
     questionText: "the concentration of dissolved oxygen in the lake water in p.p.m. (mg l⁻¹).",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "6 – 6.1 p.p.m.", marks: 5, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "6 – 6.1 p.p.m.", marks: 5, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer. A misprint in the scheme: its rounding note says the deduction is made once only \"in (d)\"; this is part (c).", openList: true },
     ],
     figure: {
           "candId": "chemistry-2023-HL-deferred-scheme-q1c-iv",
@@ -37591,7 +37591,7 @@ export const CARDS: SecCard[] = [
     questionText: "Use the data in the table to plot a graph of volume versus time for the decomposition of the hydrogen peroxide solution.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "axis labelled volume (V, O₂, cm³) and axis labelled time (t, minutes)", marks: 3, contextNote: "The scheme prices these points [4 × 3], one each.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "axis labelled volume (V, O₂, cm³) and axis labelled time (t, minutes)", marks: 3, contextNote: "The scheme prices these points [4 × 3], one each. The scheme labels the time axis \"minutes\"; the paper's table gives the time in seconds.", openList: true },
     { id: "r-2", kind: "point", verbatim: "appropriate correct numeric scales on both axes", marks: 3, openList: true },
     { id: "r-3", kind: "point", verbatim: "careful plotting of points other than (0, 0)", marks: 3, openList: true },
     { id: "r-4", kind: "point", verbatim: "smooth curve of correct shape through origin", marks: 3, contextNote: "The scheme adds: [Pairs of points connected with straight lines do not give a smooth curve.] [Deduct (3) for each of the following: not on graph paper; more than one point plotted inaccurately.] [Time versus volume graph acceptable.]", openList: true },
@@ -37616,7 +37616,7 @@ export const CARDS: SecCard[] = [
     questionText: "Use your graph to determine the instantaneous rate at 240 seconds (in cm³ O₂ per second at room temperature and pressure).",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "good tangent drawn to plotted curve at 240 seconds", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "good tangent drawn to plotted curve at 240 seconds", marks: 3, contextNote: "A slip in the scheme: its rise-and-run example, \"134 cm³, 240 seconds\", does not match its own two points, (0, 105) and (320, 240), which give a rise of 135 cm³ over 320 seconds, as its division uses.", openList: true },
     { id: "r-2", kind: "point", verbatim: "0.42 cm³ O₂ per second [0.32 – 0.46] cm³ O₂ per second", marks: 3, contextNote: "The scheme sets out the working that earns the rate: any two points from tangent read correctly, e.g. (0, 105) and (320, 240) / rise and run correctly read from tangent, e.g. 134 cm³, 240 seconds; then the division, in a form its text cannot carry; its own print is shown with the answer. It adds: [Tangent must be drawn for work on instantaneous rate to be awarded full marks.] [Last 3 marks can be awarded for rate within stated range with no tangent drawn or consequentially for work done on a poor tangent or a tangent placed at an incorrect time.]", openList: true },
     ],
     questionFigure: {
@@ -38072,7 +38072,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the heat of combustion of C₁₂H₂₆ given that the heats of formation of C₁₂H₂₆, carbon dioxide and water are –349.3, –393.5 and –285.8 kJ mol⁻¹, respectively.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "–8,088.1 kJ mol⁻¹", marks: 12, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "–8,088.1 kJ mol⁻¹", marks: 12, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer. A misprint in the scheme: its box of equations ends \"ΔHcombustion –8,083.9 kJ\", but the three equations add to –8,088.1 kJ, the answer it states.", openList: true },
     ],
     figure: {
           "candId": "chemistry-2023-HL-deferred-scheme-q6b-i",
@@ -38203,7 +38203,7 @@ export const CARDS: SecCard[] = [
     questionText: "Write the equilibrium constant (Kc) expression for the reaction.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Write the equilibrium constant (Kc) expression for the reaction.", marks: 6, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. The scheme adds: [Square brackets essential.] [*Marks for (d)(i) may be awarded for this expression given in (d) (iv) CALCULATE.]", openList: true, ask: true },
+    { id: "r-1", kind: "point", verbatim: "Write the equilibrium constant (Kc) expression for the reaction.", marks: 6, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. The scheme adds: [Square brackets essential.] [*Marks for (d)(i) may be awarded for this expression given in (d) (iv) CALCULATE.] A misprint in the scheme: its note names \"(d)(i)\" and \"(d) (iv) CALCULATE\"; on this paper the expression is (c)(i) and the calculation (c)(ii).", openList: true, ask: true },
     ],
     figure: {
           "candId": "chemistry-2023-HL-deferred-scheme-q7c-i",
@@ -38226,7 +38226,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the number of moles of SO₂ and O₂ present at equilibrium, and hence, the value of Kc at 730 K.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "3.3 mol SO₂, 33.45 – 34.5 mol O₂, Kc = 62,729", marks: 12, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "3.3 mol SO₂, 33.45 – 34.5 mol O₂, Kc = 62,729", marks: 12, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer. A misprint in the scheme: its answer line gives \"33.45 – 34.5 mol O₂\", but both its worked methods give 34.45 – 34.5 mol O₂. Each method's printed step marks also add to 18, against the part's 12.", openList: true },
     ],
     figure: {
           "candId": "chemistry-2023-HL-deferred-scheme-q7c-ii",

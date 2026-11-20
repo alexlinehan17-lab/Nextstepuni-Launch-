@@ -461,6 +461,16 @@ for _cid, (_topic, _concept) in REVIEWED.items():
     _ids[_cid]['topicId'], _ids[_cid]['conceptId'] = _topic, _concept
 
 
+# Printed errors in the scheme's own print, said in plain words on the card's first row (CARD-STANDARD 10f), so a
+# student reading the scheme's crop is told which figure is wrong.
+SCHEME_ERRORS = {
+    'q9-a-iii': 'A misprint in the scheme: its second method gives "M = 0.308 M", but its own next line works with '
+                '0.00308 moles per litre, the molarity the first method finds.',
+}
+for _cid, _note in SCHEME_ERRORS.items():
+    _row = _ids[_cid]['rows'][0]
+    _row['contextNote'] = tidy(' '.join(x for x in (_row.get('contextNote') or '', _note) if x))
+
 def review():
     out = []
     for c in C.cards:

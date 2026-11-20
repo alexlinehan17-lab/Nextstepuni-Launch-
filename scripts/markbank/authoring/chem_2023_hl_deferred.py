@@ -450,6 +450,26 @@ for _cid, (_topic, _concept) in REVIEWED.items():
     _ids[_cid]['topicId'], _ids[_cid]['conceptId'] = _topic, _concept
 
 
+# Printed errors in the scheme's own print and its self-contradictions, said in plain words on the card's first row
+# (CARD-STANDARD 10f), so a student reading the scheme's crop is told which figure is wrong.
+SCHEME_ERRORS = {
+    'q1-c-iii': 'A misprint in the scheme: it writes 0.0000285 as "2.85 × 10⁻⁴" (twice); 0.0000285 is 2.85 × 10⁻⁵.',
+    'q1-c-iv': 'A misprint in the scheme: its rounding note says the deduction is made once only "in (d)"; this is '
+               'part (c).',
+    'q3-c-i': 'The scheme labels the time axis "minutes"; the paper\'s table gives the time in seconds.',
+    'q3-c-ii': 'A slip in the scheme: its rise-and-run example, "134 cm³, 240 seconds", does not match its own two '
+               'points, (0, 105) and (320, 240), which give a rise of 135 cm³ over 320 seconds, as its division uses.',
+    'q6-b-i': 'A misprint in the scheme: its box of equations ends "ΔHcombustion –8,083.9 kJ", but the three '
+              'equations add to –8,088.1 kJ, the answer it states.',
+    'q7-c-i': 'A misprint in the scheme: its note names "(d)(i)" and "(d) (iv) CALCULATE"; on this paper the '
+              'expression is (c)(i) and the calculation (c)(ii).',
+    'q7-c-ii': 'A misprint in the scheme: its answer line gives "33.45 – 34.5 mol O₂", but both its worked methods '
+               'give 34.45 – 34.5 mol O₂. Each method\'s printed step marks also add to 18, against the part\'s 12.',
+}
+for _cid, _note in SCHEME_ERRORS.items():
+    _row = _ids[_cid]['rows'][0]
+    _row['contextNote'] = tidy(' '.join(x for x in (_row.get('contextNote') or '', _note) if x))
+
 def review():
     out = []
     for c in C.cards:
