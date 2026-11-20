@@ -588,11 +588,11 @@
     "refsHash": "8e1e27da1b7b1b20"
   },
   "modern-greek": {
-    "cards": 128,
-    "contentHash": "37eae0b7355f742a",
+    "cards": 130,
+    "contentHash": "259f1f2ed829f786",
     "coveragePct": 100.0,
-    "covered": 128,
-    "excluded": 14,
+    "covered": 130,
+    "excluded": 12,
     "leaves": 142,
     "open": 0,
     "orphans": 0,
@@ -600,7 +600,7 @@
       "count": 16,
       "hash": "6c618224f47c0b52"
     },
-    "refsHash": "71dce4795ee22e53"
+    "refsHash": "16a23eb3dd8cbfc9"
   },
   "music": {
     "cards": 1259,

@@ -2407,6 +2407,32 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2022 Higher Level — © State Examinations Commission.",
+    id: "mgr-2022-hl-2-1", topicId: "modern-greek-1-0", conceptId: "mgr-αγάπης-αρετής-ατομικής",
+    section: "2", questionRef: "2022 HL Section 2 Q1",
+    questionText: "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων. Ο ρόλος της αρετής και της αγάπης στην πρόοδο της ατομικής και συλλογικής πορείας των σύγχρονων κοινωνιών.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\" Under “ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ” the scheme prints only the instruction and the title, and no answer: “Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων.” “1. Ο ρόλος της αρετής και της αγάπης στην πρόοδο της ατομικής και συλλογικής πορείας των σύγχρονων κοινωνιών.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2022 Higher Level — © State Examinations Commission.",
+    id: "mgr-2022-hl-2-2", topicId: "modern-greek-1-0", conceptId: "mgr-πραγματικής-φιλίας-χαρακτηριστικά",
+    section: "2", questionRef: "2022 HL Section 2 Q2",
+    questionText: "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων. Ποια είναι τα χαρακτηριστικά της πραγματικής φιλίας",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\" Under “ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ” the scheme prints only the instruction and the title, and no answer: “Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων.” “2. Ποια είναι τα χαρακτηριστικά της πραγματικής φιλίας”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC019ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2023 Higher Level — © State Examinations Commission.",
