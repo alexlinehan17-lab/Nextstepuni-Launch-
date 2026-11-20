@@ -1517,6 +1517,59 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2015 Higher Level — © State Examinations Commission.",
+    id: "por-2015-hl-ii-1", topicId: "portuguese-2-2", conceptId: "literatura-fosse-suficiente-proteger-quotidiano-havia",
+    section: "II", questionRef: "2015 HL Section II Q1",
+    questionText: "“Se a literatura não fosse suficiente para me proteger do quotidiano havia sempre o deserto, (...). Se a literatura me protegesse ia agora mesmo para casa (...) e pegava nas Arabian Sands do Wilfred Thesiger e evadia-me do quotidiano.” Faça um comentário sobre a frase do texto, em cerca de 100 palavras.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A cronista mostra-nos neste texto os dois aspectos opostos entre os quais a sua vida vai decorrendo: o quotidiano e a literatura. Esses dois aspectos projectam a crónica em dois polos: a realidade e o sonho/desejo. Sempre acreditou que a literatura havia de a proteger das misérias do dia-a-dia, mas 2\u0003 \u0003 \u0003 cada vez era mais difícil, para ela, a evasão do quotidiano que a leitura permite. Chegamos ao final do texto e o conflito mantém-se: continua a acreditar que a literatura a protege e se, porventura, não for possível, tem sempre a possibilidade de partir/evadir-se para um lugar onde não existe quotidiano – o deserto; mas, desesperada, é confrontada com a realidade de ter de trabalhar, quando naquele momento, “se a literatura [a] protegesse” ia para casa ler, parafraseando os primeiros versos do poema Liberdade de Fernando Pessoa: “Ai que prazer / Não cumprir um dever / Ter um livro para ler / E não o fazer…”(Oh, what a pleasure / not to follow a duty! To have a book / and not read it!", marks: null, contextNote: "For “PARTE II”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Portuguese 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2015 Higher Level — © State Examinations Commission.",
+    id: "por-2015-hl-iii-1", topicId: "portuguese-2-2", conceptId: "proposta-importancia-livros-leitura-espirito-humano",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    stem: "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. Comente a frase em cerca de 300 palavras.",
+    questionText: "Proposta 1 A importância dos livros e da leitura para o espírito humano.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ler é viajar e abrir o espírito. Eu diria, abrir um bom livro e lê-lo com capacidade de o compreender é abrir o espírito, porque é aprender. Ler um livro é viajar, é conhecer aquilo que nunca se visitou. É questionarmo-nos sobre a nossa condição; é interrogar. Ler um livro é partir à aventura e abrir as asas da imaginação. É desenvolver o espírito crítico, a capacidade de análise, é estar atento e desmascarar a manipulação, a demagogia. Ler é aprender e interpretar a vida.", marks: null, contextNote: "For “Tema 1”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2015 Higher Level — © State Examinations Commission.",
+    id: "por-2015-hl-iii-2", topicId: "portuguese-2-2", conceptId: "proposta-aquele-contenta-nada-mais-rico",
+    section: "III", questionRef: "2015 HL Section III Q2",
+    stem: "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. Comente a frase em cerca de 300 palavras.",
+    questionText: "Proposta 2 “Aquele que se contenta com nada é o mais rico dos homens.” (Sócrates)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "O homem sábio preocupa-se com aquilo que é e não com aquilo que possui. A afirmação do filósofo remete directamente para a importância do saber em detrimento dos bens físicos ou materiais. Sábio e pensador como era, desvalorizou, na sua prática de vida, a posse dos bens materiais e efémeros; mas, também na expressão da importância do conhecimento e do saber praticou sempre uma atitude de humildade: assumir que nada sabia para iniciar o caminho de busca e descoberta do conhecimento. A sua máxima “só sei que nada sei”, espelha bem a sua filosofia de vida.", marks: null, contextNote: "For “Tema 2”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "higher",
     paperFileid: "LC018ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2016 Higher Level — © State Examinations Commission.",
