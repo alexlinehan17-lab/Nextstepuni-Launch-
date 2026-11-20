@@ -2559,6 +2559,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2024 Higher Level — © State Examinations Commission.",
+    id: "hrv-2024-hl-ii-1", topicId: "croatian-1-0", conceptId: "lanku-autorica-isti-sada-nego-ikad",
+    section: "II", questionRef: "2024 HL Section II Q1",
+    questionText: "U članku autorica ističe: „sada, više nego ikad, jednostavno ne možemo tvrditi da je stvarna cijena naše odjeće ona cijena na etiketi“. Slažete li se s ovom tvrdnjom? Vlastitim riječima (100 - 150 riječi) argumentirajte svoje mišljenje.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem da stvarna cijena naše odjeće nije ona cijena na etiketi. Ako pogledamo cijene na modnim krpicama i razmislimo o njima, moramo se pitati kako nešto može biti toliko jeftino. Naravno, prvi odgovor koji nam se nameće je da se radi o komadima odjeće jako niske kvalitete. To bi čak bilo i u redu, no niska cijena nije rezultat samo niske kvalitete. Sve češće i sve više saznajemo o poznatim brendovima koji imaju velike tvornice u siromašnim zemljama i o načinima na koje posluju, gdje radnici nisu pošteno plaćeni i rade u nehumanim uvjetima, a često su ti radnici djeca. Osim toga, tu je i pitanje onečišćenja okoliša. Smatram da je rijetko tko svjestan negativnog utjecaja modne industrije na okoliš. Posljedice koje trenutno ne primjećujemo s vremenom će se gomilati i dugoročno ćemo platiti visoku cijenu zbog utjecaja koji će onečišćenje okoliša imati na klimatske promjene i naše zdravlje.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme heads it: “Na primjer:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. DIO",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2024 Higher Level — © State Examinations Commission.",
+    id: "hrv-2024-hl-iii-1", topicId: "croatian-1-1", conceptId: "odijelo-ini-ovjeka-ili",
+    section: "III", questionRef: "2024 HL Section III Q1",
+    questionText: "Napišite esej (od najmanje 300 riječi) o jednoj od sljedećih tema: „Odijelo ne čini čovjeka”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme reprints the part's head, the instruction and the two titles, and prints nothing under them: no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2024 Higher Level — © State Examinations Commission.",
+    id: "hrv-2024-hl-iii-2", topicId: "croatian-1-1", conceptId: "rije-nisu-dokazi-tko-osje-zna",
+    section: "III", questionRef: "2024 HL Section III Q2",
+    questionText: "Napišite esej (od najmanje 300 riječi) o jednoj od sljedećih tema: „Riječi nisu dokazi. Tko osjeća, zna dokazati i djelima.” (Marija Jurić Zagorka, Gordana – kraljica Hrvata)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme reprints the part's head, the instruction and the two titles, and prints nothing under them: no criteria and no split of the part's marks. It reprints this title as “„Riječi nisu dokaz. Tko osjeća, zna pokazati i djelima.“ (Marija Jurić Zagorka, Gordana – kraljica Hrvata)”, where the paper prints “„Riječi nisu dokazi. Tko osjeća, zna dokazati i djelima.””.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC567ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2025 Higher Level — © State Examinations Commission.",
