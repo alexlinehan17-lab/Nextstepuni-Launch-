@@ -150,6 +150,80 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2010 Higher Level — © State Examinations Commission.",
+    id: "bul-2010-hl-i-6", topicId: "bulgarian-0-1", conceptId: "ask",
+    section: "I", questionRef: "2010 HL Section I Q6",
+    questionText: "„В далечен исторически план интернет мрежите са може би най-важната промяна, която се случва в последните 4-5 века...” Съгласни ли сте с автора? Аргументирайте мнението си.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Лична интерпретация – няколко разсъждения (или примерa) за новите форми на обучение, на усвояване на информация, за дълбоките промени в социалните и културните отношения, за новите информационни мрежи и политиката, системите за контрол в обществото и т.н. Отговорът може да засегне един или повече от множеството възможни теми по въпроса.", marks: null, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2010 Higher Level — © State Examinations Commission.",
+    id: "bul-2010-hl-ii-1", topicId: "bulgarian-1-0", conceptId: "100",
+    section: "II", questionRef: "2010 HL Section II Q1",
+    questionText: "„И за първи път в историята на човечеството според мен има ситуация, в която младите са по-компетентни по съвременните и доминиращи културни кодове, отколкото по-старото поколение. Това, което казвам, разбира се, е импровизация, хипотеза, интуиция – не мога да го докажа.” Опитайте се да го докажете вие. (около 100 думи).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Кандидатът би могъл да развие темата, опирайки се на очевидното: компютърът е основното работно средство (основният инструмент) на младите – с негова помощ те усвояват света и се самообучават, добиват информация, но същевременно той е играчка и развлечение. Младите общуват във виртуалното пространство, обменят информация, срещат се и творят в него. Това е мястото и на социалната им изява и реакция... Младите познават кодовете на това пространство, възможностите му и измеренията му – толкова различни от тези на «реалния» свят на възрастните. С бързината на взаимодействията, с възможностите за всякакъв културен и социален «миксаж», интернет пространството създава новата култура, нова визия за света.", marks: null, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" The scheme heads it: “Лична интерпретация, ясни и непротиворечиви идеи.”. Under “Бележки:” the scheme prints “При оценяването на отговорите от първите две части се прилагат следните критерии:” “1. Яснота и точност на израза – кандидатът разбира добре въпросите и знае как да отговори ясно и точно – 30% ;” “2. Свързаност и непротиворечивост на отговорите – кандидатът използва откъси от текста, които са адекватни на мисълта му, идеите му са непротиворечиви и композицията на съчинението следва определена логика – 30% ;” “3. Езикова компетентност – кандидатът умее свободно да изразява идеи си, езикът на изказването му е ясен и точен – 30% ;” “4. Конвенционални умения – кандидатът владее и прилага граматичната норма и правописа на съвременния български книжовен език.” The fourth criterion prints no percentage, so the criteria are shown and the part is scored on its printed total." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ВТОРА ЧАСТ",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2010 Higher Level — © State Examinations Commission.",
+    id: "bul-2010-hl-iii-1", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2010 HL Section III Q1",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: Отива си нещо, но нещо друго се ражда...",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under the two titles the scheme prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Under “Бележки:” it prints its criteria for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2010 Higher Level — © State Examinations Commission.",
+    id: "bul-2010-hl-iii-2", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2010 HL Section III Q2",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: Никой човек не е остров.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under the two titles the scheme prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Under “Бележки:” it prints its criteria for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2011, level: "higher",
     paperFileid: "LC559ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2011 Higher Level — © State Examinations Commission.",
