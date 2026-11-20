@@ -569,6 +569,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2011 Higher Level — © State Examinations Commission.",
+    id: "slk-2011-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-najmenej-100-slov-temu",
+    section: "II", questionRef: "2011 HL Section II Q1",
+    questionText: "Napíšte komentár (najmenej 100 slov) na tému: Dá sa porušovaním pravidiel dosiahnuť nejaký pozitívny cieľ? Aké môžu byť dôsledky?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Komentár obsahujúci najmenej 100 slov, ktorý jasne preukáže porozumenie textu v podstatných bodoch.", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”. The scheme prints, as examples, not a checklist: “obchádzanie pravidiel, korupcia a arogancia prinášajú morálne a etické škody”; “nedodržiavanie predpisov pri výstavbe negatívne ovplyvní vzhľad miest”; “v mestách bude menej zelene”; “v nepekných mestách ľudia nebudú šťastní”; “paradoxne ignorovaním pravidiel pri výstavbe sa urýchli budovanie nových objektov”; “model agresívneho správania, ktoré má úspech, môže ovplyvniť celú populáciu”; “porušovanie zákonov sa má trestať a nie tolerovať”; “v budúcnosti bude veľmi ťažké naprávať chyby spôsobené takouto nekoncepčnou výstavbou”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2011 Higher Level — © State Examinations Commission.",
+    id: "slk-2011-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-aka-mala-respektive-nemala-krajina",
+    section: "III", questionRef: "2011 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Aká by mala byť, respektíve nemala byť krajina, kde by som prežil spokojný život?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2011 Higher Level — © State Examinations Commission.",
+    id: "slk-2011-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-udia-inou-taki-astni-aki",
+    section: "III", questionRef: "2011 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: „Ľudia sú väčšinou takí šťastní, akí šťasní sa rozhodnú byť.“ Abraham Lincoln (16. prezident USA, 1809 – 1865)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2012, level: "higher",
     paperFileid: "LC554ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2012 Higher Level — © State Examinations Commission.",
