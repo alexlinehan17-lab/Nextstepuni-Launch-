@@ -1681,5 +1681,39 @@
       0.66
     ],
     "reviewedAt": "2026-10-14"
+  },
+  "agsci-2023-hl-deferred-scheme-grass-vegetative-stage": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2023-hl-deferred-scheme-grass-vegetative-stage.png",
+    "md5": "2e2bfe6d700c54cce408bf7babb566cb",
+    "alt": "Official drawing of a grass plant at the vegetative stage: leafy tillers, the flower head not yet emerged from the flag-leaf sheath.",
+    "attribution": "SEC Agricultural Science 2023 Higher Level deferred marking scheme, PDF page 19 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/deferredmarkingschemes/2023/LC024ALP000EV.pdf",
+    "sourceSha256": "19b2cc3ef9c1bd460f2ecf1688395cae7a319f3d3da61dca197e4b1d8643f67e",
+    "pdfPage": 19,
+    "cropRect": [
+      0.617,
+      0.452,
+      0.771,
+      0.575
+    ],
+    "reviewedAt": "2026-11-20"
+  },
+  "agsci-2023-hl-deferred-scheme-nutrient-flow-setup": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2023-hl-deferred-scheme-nutrient-flow-setup.png",
+    "md5": "7628af13f444e9d4ba9ceaf74507f351",
+    "alt": "Official set-up drawing: water poured onto soil samples A and B, each in a funnel draining into a graduated cylinder; cylinder A has collected more water than B.",
+    "attribution": "SEC Agricultural Science 2023 Higher Level deferred marking scheme, PDF page 21 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/deferredmarkingschemes/2023/LC024ALP000EV.pdf",
+    "sourceSha256": "19b2cc3ef9c1bd460f2ecf1688395cae7a319f3d3da61dca197e4b1d8643f67e",
+    "pdfPage": 21,
+    "cropRect": [
+      0.388,
+      0.262,
+      0.672,
+      0.484
+    ],
+    "reviewedAt": "2026-11-20"
   }
 }

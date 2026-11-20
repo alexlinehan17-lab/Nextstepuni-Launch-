@@ -7,6 +7,13 @@ MANIFEST = ROOT/'components/MarkBank/figures-agricultural-science.json'
 # A figure keeps the review date it was first catalogued with; new figures take this one.
 REVIEWED_AT = '2026-10-14'
 FIGS = {
+  # 2023 Higher deferred sitting (deferredmarkingschemes/): the scheme's two drawn answers.
+  'agsci-2023-hl-deferred-scheme-grass-vegetative-stage': dict(kind='deferredmarkingschemes', year=2023, fileid='LC024ALP000EV.pdf', page=19, rect=[0.617,0.452,0.771,0.575], solution=True, reviewedAt='2026-11-20',
+      alt='Official drawing of a grass plant at the vegetative stage: leafy tillers, the flower head not yet emerged from the flag-leaf sheath.',
+      attribution='SEC Agricultural Science 2023 Higher Level deferred marking scheme, PDF page 19 — © State Examinations Commission.'),
+  'agsci-2023-hl-deferred-scheme-nutrient-flow-setup': dict(kind='deferredmarkingschemes', year=2023, fileid='LC024ALP000EV.pdf', page=21, rect=[0.388,0.262,0.672,0.484], solution=True, reviewedAt='2026-11-20',
+      alt='Official set-up drawing: water poured onto soil samples A and B, each in a funnel draining into a graduated cylinder; cylinder A has collected more water than B.',
+      attribution='SEC Agricultural Science 2023 Higher Level deferred marking scheme, PDF page 21 — © State Examinations Commission.'),
   # 2026
   'agsci-2026-hl-scheme-cow-reproductive-system': dict(kind='markingschemes', year=2026, fileid='LC024ALP000EV.pdf', page=25, rect=[0.30,0.612,0.725,0.762], solution=True,
       alt='Official labelled diagram of the cow’s reproductive system: uterus, cervix, vagina, vulva, ovary, oviduct and uterine horns.',
@@ -285,6 +292,6 @@ for key, f in FIGS.items():
     pix.save(out)
     manifest[key] = {'src': f'/exam-figures/agricultural-science/markbank/{key}.png', 'md5': hashlib.md5(out.read_bytes()).hexdigest(),
                      'alt': f['alt'], 'attribution': f['attribution'], 'solution': f['solution'], 'sourcePdf': str(pdf),
-                     'sourceSha256': hashlib.sha256(pdf.read_bytes()).hexdigest(), 'pdfPage': f['page'], 'cropRect': f['rect'], 'reviewedAt': manifest.get(key, {}).get('reviewedAt', REVIEWED_AT)}
+                     'sourceSha256': hashlib.sha256(pdf.read_bytes()).hexdigest(), 'pdfPage': f['page'], 'cropRect': f['rect'], 'reviewedAt': manifest.get(key, {}).get('reviewedAt', f.get('reviewedAt', REVIEWED_AT))}
     print(key, pix.width, pix.height)
 MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')

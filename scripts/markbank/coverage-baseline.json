@@ -15,19 +15,19 @@
     "refsHash": "0c7d25696a538166"
   },
   "agricultural-science": {
-    "cards": 2464,
-    "contentHash": "a56c69312551bb35",
+    "cards": 2549,
+    "contentHash": "66a41fdf30ffe221",
     "coveragePct": 100.0,
-    "covered": 2842,
+    "covered": 2927,
     "excluded": 0,
-    "leaves": 2842,
+    "leaves": 2927,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 34,
-      "hash": "cc3b10d8b4ed8ab5"
+      "count": 35,
+      "hash": "335f5f45b325d2ff"
     },
-    "refsHash": "e0d39c458d72982a"
+    "refsHash": "fa2d8993a6e34b69"
   },
   "ancient-greek": {
     "cards": 404,

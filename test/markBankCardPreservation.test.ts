@@ -3647,7 +3647,9 @@ describe('Mark Bank card preservation', () => {
     // Frozen pre-audit set: 438 Higher + 431 Ordinary, counted and hashed above.
     // Every source-reviewed task is an explicit addition on top; each withdrawn
     // per-item card resolves through its progress alias.
-    expect(agriAdditionIds.size).toBe(1604);
+    // 1,604 June additions and the 2023 Higher deferred sitting's 85 new cards (agsci-2023-hl-deferred-…).
+    expect([...agriAdditionIds].filter(id => !id.startsWith('agsci-2023-hl-deferred-')).length).toBe(1604);
+    expect([...agriAdditionIds].filter(id => id.startsWith('agsci-2023-hl-deferred-')).length).toBe(85);
     const live = [...AGSCI_HIGHER, ...AGSCI_ORDINARY];
     const liveIds = new Set(live.map(card => card.id));
     for (const id of agriAdditionIds) expect(liveIds.has(id), `missing reviewed addition ${id}`).toBe(true);

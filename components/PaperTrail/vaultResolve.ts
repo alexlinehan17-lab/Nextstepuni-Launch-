@@ -475,6 +475,8 @@ export const HOSTED_ANSWER_OVERRIDES = new Set([
   'english|2026|LC002ALP200EV.pdf',
   'english|2026|LC002GLP100EV.pdf',
   'english|2026|LC002GLP200EV.pdf',
+  // Agricultural Science's 2023 Higher deferred sitting (deferred lane): its reviewed answer map, hosted.
+  'agricultural-science|2023|LC024ALP000EV-deferred.pdf',
 ]);
 
 export const hostedAnswersUrl = (year: number, fileid: string) =>

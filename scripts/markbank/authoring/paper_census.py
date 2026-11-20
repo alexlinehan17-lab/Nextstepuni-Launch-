@@ -4883,7 +4883,36 @@ def _census_subject(subject):
         papers.extend(census_home_economics_deferred())
     if subject == 'chemistry':
         papers.extend(census_chemistry_deferred())
+    if subject == 'agricultural-science':
+        papers.extend(census_agri_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+
+
+# The SEC's deferred Agricultural Science sitting in the archive, English version: deferredexams/2023/LC024ALP000EV.pdf
+# (Higher; nothing for 2022 or 2024-2025), its scheme in deferredmarkingschemes/.
+AGRI_DEFERRED_SITTINGS = ((2023, 'hl'),)
+
+
+def census_agri_deferred():
+    """Each deferred Agricultural Science sitting (AGRI_DEFERRED_SITTINGS), read by June's reader (census_merged over
+    its own booklet) and keyed 'Deferred', as Biology keys its own (census_biology_deferred), so a deferred ask never
+    lands on a June leaf with the same address. The checksum is not run on it."""
+    papers = []
+    for year, level in AGRI_DEFERRED_SITTINGS:
+        letter = 'A' if level == 'hl' else 'G'
+        files = [os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'LC024{letter}LP000EV.pdf')]
+        parts, texts, _ = census_merged('agricultural-science', year, level, files=files)
+        leaves = leaves_of(parts)
+        flags = [f for f in continuity_flags(parts, texts, 'agricultural-science')
+                 if not short_ask_ok('agricultural-science', year, level, f, sitting='deferred')]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'agricultural-science'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
 
 
 # The SEC's deferred Chemistry sittings in the archive, English version: deferredexams/<year>/LC022<A|G>LP000EV.pdf

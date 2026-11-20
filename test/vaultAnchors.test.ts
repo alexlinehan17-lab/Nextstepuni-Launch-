@@ -83,7 +83,8 @@ describe('audited hosted answer maps', () => {
     expect([englishPapers - englishDeferred, englishDeferred]).toEqual([68, 12]);
     const originalOverrides = [...HOSTED_ANSWER_OVERRIDES].filter(key => key.startsWith('art|')
       || key.startsWith('physics|') || key.startsWith('agricultural-science|') || key.startsWith('english|'));
-    expect(originalOverrides).toHaveLength(61 + englishPapers);
+    // + the 2023 Higher Agricultural Science deferred map (deferred lane).
+    expect(originalOverrides).toHaveLength(61 + englishPapers + 1);
     for (const key of originalOverrides) {
       const [subjectId, year, fileid] = key.split('|');
       expect(['agricultural-science', 'art', 'english', 'physics']).toContain(subjectId);
