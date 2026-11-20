@@ -64,6 +64,615 @@
   }
  },
  {
+  "id": "lv-2010-hl-i-2",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "izglabusies-naira-juris",
+  "questionRef": "2010 HL Section I Q2",
+  "questionText": "No kā ir izglābušies Naira un Juris?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Juris un Naira ir izglābušies no narkotiku un alkohola atkarības. Tagad viņi spēj palīdzēt citiem atkarībā nonākušiem kuldīdzniekiem. Viņi uzskata, ka ir pilnībā izārstējušies no atkarības. Viņu dzīves pamats tagad ir ģimene un Dievs.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2010-hl-i-3",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "kapec-atkariba-viltiga-lieta",
+  "questionRef": "2010 HL Section I Q3",
+  "questionText": "Kāpēc atkarība ir viltīga lieta?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Atkarība ir viltīga lieta, var uzliesmot arī pēc daudziem skaidrības gadiem. Cilvēkam jābūt stipram, lai grūtību brīžos no jauna rokas nenolaistos un problēmas netiktu risinātas ar alkohola un narkotiku palīdzību.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2010-hl-i-4",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "autors-saka-sliktie-mani-atrada-pasi",
+  "questionRef": "2010 HL Section I Q4",
+  "questionText": "Autors saka, ka \"Sliktie mani atrada paši\" ? Kāpēc viņš tā domāja, pamato savu viedokli ar piemēriem no teksta .",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Autors ar izteicienu \"sliktie mani atrada paši\" , vēlējās teikt, ka Jurim trūka vecāku atbalsta, autoritatīva padoma. Tā kā starp \"labajiem zēniem\" viņam draugu nebija, viņš viegli pakļāvās un sāka naudu pelnīt negodīgā veidā.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2010-hl-i-5",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "vai-tavuprat-juris-veiksmigs-vai-neveiksmigs",
+  "questionRef": "2010 HL Section I Q5",
+  "questionText": "Vai tavuprāt Juris ir veiksmīgs vai neveiksmīgs cilvēks? Pamato savu viedokli ar piemēriem no teksta.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sākumā Juris ir neveiksminieks. Viņam nav paveicies ar ģimeni, ar draugiem. Juri dzīve nav lutinājusi, viņš ir pabijis narkotiku atkarībā un vairākas reizes bijis sodīts.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Viņš meklēja risinājumus, bet neveiksmīgi. Tad, kad Juris bija zaudējis ticību sev un pasaulei bargāka soda vietā viņš saņēma maigāku. Otrais veiksmīgais pavērsiens bija tuvāka iepazīšanās ar Nairu.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Uzskatu, ka Juris kopumā ir veiksmīgs cilvēks, jo ir izglābies no atkarību gūsta, atradis ticību dzīvei un vēl spēj palīdzēt citiem nelaimē nonākušiem.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2010-hl-i-6",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "nairai-jurim-sapnis-izveidot-puscela-majas",
+  "questionRef": "2010 HL Section I Q6",
+  "questionText": "Nairai un Jurim ir sapnis izveidot \" pusceļa mājas\". Kas lika viņiem līdz tam aizdomāties.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nairai un Jurim ir sapnis izveidot \" pusceļa mājas\", jo Juris pats saprot no cietuma iznākušo cilvēku problēmas un vajadzības. Viņš zina cik svarīgi, ja ir kāda vieta, kur atgriežoties no cietuma tu esi prom no nelabvēlīgās vides. \" Pusceļa mājas\" var palīdzēt bijušajiem cietumniekiem ātrāk iekļauties sabiedrībā.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2010-hl-ii",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2010,
+  "section": "II",
+  "topicId": "latvian-1-0",
+  "conceptId": "sodi-nedara-cilveku-labaku-komente-apgalvojumu",
+  "questionRef": "2010 HL Section II",
+  "questionText": "\"Sodi nedara cilvēku labāku” Komentē šo apgalvojumu, pamatojot savu viedokli ar piemēriem no teksta. (Uzrakstiet vismaz 100 vārdu garu aprakstu)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Piešķirot vērtējumu II un III daļā tiks ņemti vērā šādi elementi:",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Mērķa skaidrība – kandidāts pilnībā saprot jautājumu un zin kā uz to atbildēt – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Atbildes saskaņotība – kandidāts materiālu lieto atbilstoši un strukturēti mērķtiecīgā veidā 30 %",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Valodas prasme – kandidāta valoda ir pietiekami piemērota, lai domas izteiktu skaidri un plūstoši 30 %",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pareizrakstības noteikumi – gramatika un pareizrakstība 10 %",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" Under the scheme's heading “Piemēram:”, as examples, not a checklist: “Sodi rada tieksmi atriebties sabiedrībai.”; “Turpinot sodīt, rodas vēlme atriebties aizvien gudrākā veidā.”; “Maigāka soda saņemšana palīdzēja saņemties un sākt jaunu dzīvi.”; “Neliels solis pretī palīdz tikt pāri izmisumam, nezaudēt ticību sev un pasaulei.”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II DAĻA",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2010-hl-iii-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2010,
+  "section": "III",
+  "topicId": "latvian-1-0",
+  "conceptId": "palidziba-kas-nak-istaja-laika-sirds",
+  "questionRef": "2010 HL Section III Q1",
+  "questionText": "\"Palīdzība, kas nāk īstajā laikā un no sirds, spēj darīt brīnumus” Uzrakstiet eseju (vismaz 300 vārdu)!",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Piešķirot vērtējumu II un III daļā tiks ņemti vērā šādi elementi:",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Mērķa skaidrība – kandidāts pilnībā saprot jautājumu un zin kā uz to atbildēt – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Atbildes saskaņotība – kandidāts materiālu lieto atbilstoši un strukturēti mērķtiecīgā veidā 30 %",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Valodas prasme – kandidāta valoda ir pietiekami piemērota, lai domas izteiktu skaidri un plūstoši 30 %",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pareizrakstības noteikumi – gramatika un pareizrakstība 10 %",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "lv-2010-hl-iii-2",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2010,
+  "section": "III",
+  "topicId": "latvian-1-0",
+  "conceptId": "pilnigi-autonoms-nevar-but-neviens-uzrakstiet",
+  "questionRef": "2010 HL Section III Q2",
+  "questionText": "\"Pilnīgi autonoms nevar būt neviens” Uzrakstiet eseju (vismaz 300 vārdu)!",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Piešķirot vērtējumu II un III daļā tiks ņemti vērā šādi elementi:",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Mērķa skaidrība – kandidāts pilnībā saprot jautājumu un zin kā uz to atbildēt – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Atbildes saskaņotība – kandidāts materiālu lieto atbilstoši un strukturēti mērķtiecīgā veidā 30 %",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Valodas prasme – kandidāta valoda ir pietiekami piemērota, lai domas izteiktu skaidri un plūstoši 30 %",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pareizrakstības noteikumi – gramatika un pareizrakstība 10 %",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "lv-2011-hl-i-1",
   "subjectId": "latvian",
   "level": "higher",
