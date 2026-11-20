@@ -24,7 +24,7 @@ sys.path.insert(0, HERE)
 AUTHORED = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'lithuanian.json')
 FILINGS = '/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/languages-q3/filings-pending.json'
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
-KINDS = ('listening', 'reading')
+KINDS = ('listening', 'reading', 'writing')
 
 
 def new_cards(year, level, kinds):
@@ -40,6 +40,12 @@ def new_cards(year, level, kinds):
         cards, refused = lt_reading.reading_cards(year, level)
         if refused:
             raise ValueError(f'{year} {level}: reading asks refused {refused}')
+        out += cards
+    if 'writing' in kinds:
+        import lt_writing
+        cards, refused = lt_writing.writing_cards(year, level)
+        if refused:
+            raise ValueError(f'{year} {level}: written tasks refused {refused}')
         out += cards
     return out
 
