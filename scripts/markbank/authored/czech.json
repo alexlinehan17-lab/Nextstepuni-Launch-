@@ -5365,6 +5365,615 @@
   }
  },
  {
+  "id": "cs-2018-hl-i-2",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "vysvetlete-zaklade-textu-vkus",
+  "questionRef": "2018 HL Section I Q2",
+  "questionText": "Vysvětlete na základě textu, co je to vkus.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Podle definice je vkus schopnost posoudit krásu, harmonii, dokonalost a módnost. Když má člověk vkus, tak ví, co mu sluší, z trendů přebírá ty, které se pro něj hodí a do svého oblékání dává něco originálního, něco ze sebe, vkusný člověk je inspirací pro ostatní. Vkus je schopnost vidět, jak budou módní kousky pasovat k sobě. Netýká se to ale jenom módy, je to i vkusu v každodenním životě, zařizování bydlení nebo celkového postoje k životu.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2018-hl-i-3",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "textu-zminuje-lide-zajimaji-mimo-jine",
+  "questionRef": "2018 HL Section I Q3",
+  "questionText": "V textu se zmiňuje, že lidé se zajímají mimo jiné i o tzv. udržitelnost módy (předposlední odstavec). Domníváte se, že je to důležité? A proč? Vysvětlete svůj názor.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Udržitelnost je velmi módní pojem současnosti vycházející z ekologie. Mladí lidé se zajímají často o to, aby oblečení, které se kupují, nebylo vyrobeno v asijských zemích, kde panují špatné pracovní podmínky. Často vyhledávají oblečení od lokálních návrhářů místo nákupu globálních řetězcových značek. Zajímá je i materiál, např. bavlna z ekologicky kontrolovaného zemědělství. Často také recyklují módu, nakupují v second-handech anebo vyrábějí nové věci ze starých. Důležité je nezatížit životní prostředí a budoucí generace.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Prostor pro vlastní názor.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2018-hl-i-4",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "jake-jsou-rozdily-vnimani-mody-mezi",
+  "questionRef": "2018 HL Section I Q4",
+  "questionText": "Jaké jsou rozdíly ve vnímání módy mezi mladou a starší generací v Česku? Vysvětlete na základě textu.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Starší generace je ovlivněna obdobím komunismu, kdy se o módu nikdo nezajímal, vlastně ani nebylo nic k dispozici. Tehdejší režim se snažil vytvořit unifikované stádo, móda nebyla důležitá, lidé nosili modráky, tepláky nebo zástěry. Celá kultura odívání byla zničená, např. džíny se v běžném obchodě daly koupit jen velmi těžko. Mladá generace je víc ovlivněna globalizací, jednak jsou k dispozici informace o módních trendech, navíc jsou k dispozici i zdroje, kde tyto módní trendy koupit. Lidé se nebojí s módou více experimentovat.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Čím to je, že období socialismu ovlivnilo lidi i v něčem tak marginálním, jako je oblékání? Vždyť principálně se jedná o politické zřízení.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2018-hl-i-5",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "zaklade-informaci-textu-srovnejte-umeni-modu",
+  "questionRef": "2018 HL Section I Q5",
+  "questionText": "Na základě informací z textu srovnejte umění a módu.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Stejně jako v umění se vedou polemiky o tom, jestli je nějaký dílo ještě umění nebo kýč, tak v módě se řeší, jestli je něco vkusné nebo ne. Móda je velmi subjektivní, každému se líbí něco jiného a zároveň má společnost jakési obecné povědomí o tom, co je vkusné a co už ne. V umění i módě chybí exaktní měřítka, která by určila, že je to tak a ne jinak. Hranice mezi uměním a kýčem je velmi tenká, stejně jako hranice mezi vkusem a nevkusem. Často mají lidé vyrůstající v podnětném, kulturně a umělecky zaměřeném prostředí lepší vkus, protože i vkusu se dá částečně naučit.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2018-hl-i-6",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "cit-pro-modu-vrozeny-nebo-naucit",
+  "questionRef": "2018 HL Section I Q6",
+  "questionText": "„Je cit pro módu vrozený, nebo se dá naučit?“ – napište svůj názor na toto tvrzení z textu.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Úkolem je vlastními slovy vysvětlit svůj názor na toto tvrzení, případně lze polemizovat, přiklonit se ke kterémukoliv názoru, ten je ale potřeba vždy vlastními slovy zdůvodnit. Vlastní vysvětlení: vlastními slovy, bez opsání frází z textu.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2018-hl-ii",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2018,
+  "section": "II",
+  "topicId": "czech-1-0",
+  "conceptId": "zaklade-textu-napiste-komentar-100-150",
+  "questionRef": "2018 HL Section II",
+  "questionText": "Na základě textu napište komentář o 100-150 slovech na toto tvrzení: „Mít vkus totiž neznamená slepě následovat trendy. Většinou je to právě naopak.“",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Vlastními slovy, bez opsání frází z textu.",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pravidla: gramatika, pravopis – 10 %.",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”. The scheme prints, as examples, not a checklist: “Vlastní názor na uvedené tvrzení, lze vyjádřit souhlas i nesouhlas, pomocí argumentů z textu i vlastní zkušenosti.”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ČÁST 2",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2018-hl-iii-1",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2018,
+  "section": "III",
+  "topicId": "czech-1-0",
+  "conceptId": "televize-rozsiruje-nevkus-nemuze-jinak-protoze",
+  "questionRef": "2018 HL Section III Q1",
+  "questionText": "Napište esej (minimum 300 slov) na jedno z následujících témat: „Televize rozšiřuje nevkus a nemůže jinak, protože musí něco prodat, to je její pravý účel. Prodává se mnohým a musí se prodat mnoho.“ (Jan Werich)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pravidla: gramatika, pravopis – 10 %.",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”. The scheme reprints the instruction as: “Napište esej (minimum 300 slov) na jedno z následujících témat, s použitím argumentů proti a pro vyjádřete vlastní názor:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "cs-2018-hl-iii-2",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2018,
+  "section": "III",
+  "topicId": "czech-1-0",
+  "conceptId": "saty-delaji-cloveka-jake-miry-plati",
+  "questionRef": "2018 HL Section III Q2",
+  "questionText": "Napište esej (minimum 300 slov) na jedno z následujících témat: „Šaty dělají člověka.“ Do jaké míry platí, že lze vyjádřit na člověka názor pouze na základě jeho oblečení?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pravidla: gramatika, pravopis – 10 %.",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”. The scheme reprints the instruction as: “Napište esej (minimum 300 slov) na jedno z následujících témat, s použitím argumentů proti a pro vyjádřete vlastní názor:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "cs-2019-hl-i-1",
   "subjectId": "czech",
   "level": "higher",
