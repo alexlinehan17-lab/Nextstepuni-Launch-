@@ -41,13 +41,14 @@ export const CARDS: SecCard[] = [
     questionText: "Nämn fyra hinder för manlig vänskap",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rätt svar: (stycke 8)konkurrens, brist på förebilder för manlig intimitet, homofobi och mäns behov att ha kontroll", marks: 4, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "(stycke 8)konkurrens, brist på förebilder för manlig intimitet, homofobi och mäns behov att ha kontroll", marks: 4, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2011 Higher Level examination paper — © State Examinations Commission.",
@@ -64,13 +65,14 @@ export const CARDS: SecCard[] = [
     questionText: "Hur påverkas pojkar av att tidigt spela lagsporter?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rätt svar: (stycke 9)Unga pojkar får genom lagsporten tidigt lära sig att tävla mot varandra. Tillhörigheten till ett lag stärker banden och sammanhållningen inom gruppen, samtidigt som den enskilde spelaren känner sig stärkt av det sociala sammanhanget. Han är en del av laget, en av de andra. Laget fungerar alltså både som en plats där man konkurrerar med andra lagkamrater och mäter sig mot andra lag och en plats som bekräftar ens egen roll och ens eget värde för laget.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "(stycke 9)Unga pojkar får genom lagsporten tidigt lära sig att tävla mot varandra. Tillhörigheten till ett lag stärker banden och sammanhållningen inom gruppen, samtidigt som den enskilde spelaren känner sig stärkt av det sociala sammanhanget. Han är en del av laget, en av de andra. Laget fungerar alltså både som en plats där man konkurrerar med andra lagkamrater och mäter sig mot andra lag och en plats som bekräftar ens egen roll och ens eget värde för laget.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2011 Higher Level examination paper — © State Examinations Commission.",
@@ -87,13 +89,14 @@ export const CARDS: SecCard[] = [
     questionText: "På vilket sätt har vår tids medvetenhet om homosexualitet påverkat mäns vänskapsförhållanden?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Möjliga svar: (stycke 7)Förr i tiden, innan medierna gjorde oss alla vana vid att uppfatta känsliga män som homosexuella, var det vanligt för män att uttrycka starka känslor till varandra. Dagens tro att alla män som uttrycker varma känslor eller öppnar sig leder till att män upplever sig ha mycket mer att förlora eftersom det nu ses som feminint att vara intim. Homosexualiteten blir för den moderne mannen den yttersta punkten på en ganska kort skala, en plats som han vill hålla sig på betryggande avstånd från.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "(stycke 7)Förr i tiden, innan medierna gjorde oss alla vana vid att uppfatta känsliga män som homosexuella, var det vanligt för män att uttrycka starka känslor till varandra. Dagens tro att alla män som uttrycker varma känslor eller öppnar sig leder till att män upplever sig ha mycket mer att förlora eftersom det nu ses som feminint att vara intim. Homosexualiteten blir för den moderne mannen den yttersta punkten på en ganska kort skala, en plats som han vill hålla sig på betryggande avstånd från.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2011 Higher Level examination paper — © State Examinations Commission.",
@@ -110,13 +113,14 @@ export const CARDS: SecCard[] = [
     questionText: "Varför känner sig den moderna familjefadern ensam?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Varför känner sig den moderne familjefadern ensam? Möjliga svar: (stycke 10)Den moderne mannen har i och med sin familjebildning skapat sig ett eget lag. Därför söker han sig inte längre ut. De sammanhang där han tidigare automatiskt fick vänner är därför inte längre tillgängliga för honom. För frun är det naturligt att tala öppet och umgås med sina vänner. Mannen blir lämnad ensam. De starka vänskapsband som man kan ha haft tidigare i livet försvinner när förutsättningarna ändras. Kvinnor kan föra med sig en gammal vänskap även efter familjebildningen. Det gör sällan männen.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "(stycke 10)Den moderne mannen har i och med sin familjebildning skapat sig ett eget lag. Därför söker han sig inte längre ut. De sammanhang där han tidigare automatiskt fick vänner är därför inte längre tillgängliga för honom. För frun är det naturligt att tala öppet och umgås med sina vänner. Mannen blir lämnad ensam. De starka vänskapsband som man kan ha haft tidigare i livet försvinner när förutsättningarna ändras. Kvinnor kan föra med sig en gammal vänskap även efter familjebildningen. Det gör sällan männen.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2011 Higher Level examination paper — © State Examinations Commission.",
@@ -133,13 +137,14 @@ export const CARDS: SecCard[] = [
     questionText: "Kommentera följande utdrag ur stycke 11: ” Det måste vara något mellan två män”",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ett fullgott svar måste beröra följande punkter: för det första måste abiturienten uppfatta ordleken: att ”Det måste vara något mellan två män” i förstone uppfattas som att de måste ha en relation på ett sexuellt plan. Abiturienten måste visa att denne förstått att detta något är föremål: redskap, verktyg eller leksaker. Vidare bör abiturienten diskutera riktigheten i påståendet och även ge exempel att anföra som bevis för eller emot tesen och gärna delge läsaren sina egna erfarenheter. Anmärkning: I del I och II kommer följande kriterier att vägas in i betygssättningen:", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ett fullgott svar måste beröra följande punkter: för det första måste abiturienten uppfatta ordleken: att ”Det måste vara något mellan två män” i förstone uppfattas som att de måste ha en relation på ett sexuellt plan. Abiturienten måste visa att denne förstått att detta något är föremål: redskap, verktyg eller leksaker. Vidare bör abiturienten diskutera riktigheten i påståendet och även ge exempel att anföra som bevis för eller emot tesen och gärna delge läsaren sina egna erfarenheter.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2011 Higher Level examination paper — © State Examinations Commission.",
@@ -153,16 +158,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2012 Higher Level — © State Examinations Commission.",
     id: "swe-2012-hl-i-1", topicId: "swedish-0-1", conceptId: "ersatt-ordet-eller-uttrycket-med-ett",
     section: "I", questionRef: "2012 HL Section I Q1",
-    questionText: "Ersätt ordet eller uttrycket med ett annat som betyder samma sak. häpnadsväckande (stycke 2) föreställer sig (stycke 3) stick i stäv (stycke 4) uppmuntras (stycke 8) när det kommer till kritan (stycke 16)",
+    questionText: "Ersätt ordet eller uttrycket med ett annat som betyder samma sak.\nhäpnadsväckande (stycke 2)\nföreställer sig (stycke 3)\nstick i stäv (stycke 4)\nuppmuntras (stycke 8)\nnär det kommer till kritan (stycke 16)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(stycke 2): häpnadsväckande Rätt svar: förvånande, förbluffande, ofattbar, otrolig, överraskande (stycke 3): föreställer sig Rätt svar: tror, inbillar sig, kan tänka sig, kan fantisera om, anta (stycke 4) stick i stäv Rätt svar: i motsats till, mot vad man kan tro, tvärtom, omvänt (stycke 8): uppmuntras Rätt svar: peppas, animeras, sporras, stimuleras (stycke 16): när det kommer till kritan Rätt svar: när det verkligen gäller", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "förvånande, förbluffande, ofattbar, otrolig, överraskande", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "tror, inbillar sig, kan tänka sig, kan fantisera om, anta", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "i motsats till, mot vad man kan tro, tvärtom, omvänt", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "peppas, animeras, sporras, stimuleras", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "när det verkligen gäller", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -179,13 +189,14 @@ export const CARDS: SecCard[] = [
     questionText: "Vad utmärker ”målmedveten träning”? (stycke 12)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rätt svar, hämtade ur stycke 12 och 13: att man övar rätt genom att hela tiden öva på gränsen till sin förmåga, koncentrerar sig på sina svagheter och råder bot på dem så fort de yppar sig och inte drar sig för monotona och ansträngande övningar.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "att man övar rätt genom att hela tiden öva på gränsen till sin förmåga, koncentrerar sig på sina svagheter och råder bot på dem så fort de yppar sig och inte drar sig för monotona och ansträngande övningar.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -202,13 +213,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Betydelsen av medfödd begåvning är oerhört överskattad” (stycke 3) Förklara hur forskaren Anders Ericsson kommer fram till denna slutsats.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rätt svar, hämtade ur stycke 6 och 7: Anders Ericssons forskningsresultat inom området expertprestationer visar att det förmodligen inte finns någon gen som gör oss särskilt duktiga. Man har letat i 50 år utan att hitta någon. Även om man kan ha en fallenhet för en viss verksamhet är dess betydelse av ytterst liten vikt i jämförelse med idog träning. Även den som har korta fingrar kan öva upp händerna så att spannet mellan fingrarna blir längre; man kan också öva upp hjärnan att bättre förstå och uppskatta musik.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Anders Ericssons forskningsresultat inom området expertprestationer visar att det förmodligen inte finns någon gen som gör oss särskilt duktiga. Man har letat i 50 år utan att hitta någon. Även om man kan ha en fallenhet för en viss verksamhet är dess betydelse av ytterst liten vikt i jämförelse med idog träning. Även den som har korta fingrar kan öva upp händerna så att spannet mellan fingrarna blir längre; man kan också öva upp hjärnan att bättre förstå och uppskatta musik.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -225,13 +237,14 @@ export const CARDS: SecCard[] = [
     questionText: "Diskutera den koppling mellan ålder och prestationer som artikeln visar.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Möjliga svar hämtade ur stycke 7, 14 och 15.: Den viktigaste kopplingen handlar om antalet övade timmar; börjar man för sent hinner man inte ikapp de som har börjat tidigt. Då missar man inträdesproven till de bästa skolorna och kan inte komma med i eliten. I vissa discipliner, som balett, krävs att man har övat in vissa tekniker medan skelettet fortfarande är formbart , helst före elva års ålder,", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Den viktigaste kopplingen handlar om antalet övade timmar; börjar man för sent hinner man inte ikapp de som har börjat tidigt. Då missar man inträdesproven till de bästa skolorna och kan inte komma med i eliten. I vissa discipliner, som balett, krävs att man har övat in vissa tekniker medan skelettet fortfarande är formbart , helst före elva års ålder,", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -248,13 +261,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Föreställningen om att någon är begåvad blir också lätt till en självuppfyllande profetia” (stycke 8) Diskutera betydelsen av Anders Ericsson citat ovan.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Möjliga svar: Uppmuntran har en enorm positiv kraft. Den elev som får beröm och uppmuntran tror sig vara duktig och presterar bättre. I det motsatta fallet fungerar klander som en black om foten och begränsar förmågan. I begreppet en självuppfyllande profetia ligger ett ifrågasättande av insiktens relevans. Hur ofta slår profetior in? Vad man kan lära sig är att man med hjälp av uppmuntran och uppskattning kan få andra att prestera sitt yttersta.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Uppmuntran har en enorm positiv kraft. Den elev som får beröm och uppmuntran tror sig vara duktig och presterar bättre. I det motsatta fallet fungerar klander som en black om foten och begränsar förmågan. I begreppet en självuppfyllande profetia ligger ett ifrågasättande av insiktens relevans. Hur ofta slår profetior in? Vad man kan lära sig är att man med hjälp av uppmuntran och uppskattning kan få andra att prestera sitt yttersta.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -271,13 +285,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Kanske hittar vi i framtiden en kombination av gener som kan förklara den här typen av begåvningar, men eftersom forskarna har letat i över 50 år utan att ha hittat något, tyder det på att betydelsen av dessa gener kommer att vara ganska liten, säger Anders Ericsson.” (stycke 6) Håller du med Anders Ericsson i citatet ovan? Motivera ditt svar.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Håller du med Anders Ericsson? Motivera ditt svar. Möjliga svar: Argument för förekomsten och upptäckten av en sådan gen är den snabba utvecklingen på genetikens område. Hur denna kunskap skulle hjälpa oss är en annan fråga. Om vi inte kan modifiera vår arvsmassa kan vi inte tillägna oss egenskaper, läggning, talang och förmågor på annat sätt än med träning. Möjligen skulle man kunna i förväg bestämma vad människor bör ägna sig åt men valet, den fria viljan, skulle offras. Många upptäckter har varit lyckokast, när folk har tänkt i egna banor. Sådana upptäckter kanske skulle bli färre. Argument mot förekomsten av denna är de som anges i artikeln: den dokumenterade betydelsen av idog träning. Också sättet både kropp och hjärna har bevisats kunna kompensera för fysiska hinder talar för träningens överlägsna betydelse. Frågan är också hur man skulle utnyttja denna kunskap, om man nu skulle finna den felande genen. Det ligger en fara i att alltför mycket låta vår syn på människor baseras på våra gener. Anmärkning: I del I och II kommer följande kriterier att vägas in i betygssättningen:", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Argument för förekomsten och upptäckten av en sådan gen är den snabba utvecklingen på genetikens område. Hur denna kunskap skulle hjälpa oss är en annan fråga. Om vi inte kan modifiera vår arvsmassa kan vi inte tillägna oss egenskaper, läggning, talang och förmågor på annat sätt än med träning. Möjligen skulle man kunna i förväg bestämma vad människor bör ägna sig åt men valet, den fria viljan, skulle offras. Många upptäckter har varit lyckokast, när folk har tänkt i egna banor. Sådana upptäckter kanske skulle bli färre. Argument mot förekomsten av denna är de som anges i artikeln: den dokumenterade betydelsen av idog träning. Också sättet både kropp och hjärna har bevisats kunna kompensera för fysiska hinder talar för träningens överlägsna betydelse. Frågan är också hur man skulle utnyttja denna kunskap, om man nu skulle finna den felande genen. Det ligger en fara i att alltför mycket låta vår syn på människor baseras på våra gener.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -294,13 +309,14 @@ export const CARDS: SecCard[] = [
     questionText: "Vad betyder parallell-lyssnande?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vad betyder ”parallell-lyssnande”? (stycke 3) Rätt svar, hämtat ur stycke 3: att man lyssnar på musik samtidigt som man gör något annat.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "att man lyssnar på musik samtidigt som man gör något annat.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2013 Higher Level examination paper — © State Examinations Commission.",
@@ -317,13 +333,14 @@ export const CARDS: SecCard[] = [
     questionText: "På vilket sätt har den tekniska utvecklingen påverkat hur vi lyssnar på musik?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rätt svar, hämtat ur stycke 3: Musiken finns numera på Internet och de unga laddar ner musiken i stället för att köpa skivor. Många har tusentals låtar på sin dator. De som har en mobiltelefon eller en Mp3-spelare kan spela sin favoritmusik var och när de vill.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Musiken finns numera på Internet och de unga laddar ner musiken i stället för att köpa skivor. Många har tusentals låtar på sin dator. De som har en mobiltelefon eller en Mp3-spelare kan spela sin favoritmusik var och när de vill.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2013 Higher Level examination paper — © State Examinations Commission.",
@@ -340,13 +357,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Däremot finns det ingen `mirakelmusik` som får alla att bli lugna eller glada.” Utgå från texten som helhet och förklara hur man i artikeln kommer fram till denna slutsats.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "”Däremot finns det ingen `mirakelmusik` som får alla att bli lugna eller glada.” (stycke 10) Utgå från texten som helhet och förklara hur man i artikeln kommer fram till denna slutsats. Rätt svar, baserat på stycke 4, 6 och 10, : Hur vi upplever musik är högst individuellt. Nu för tiden är de flesta medvetna om vad de vill höra i olika situationer. Det viktiga är att man väljer musik som man själv tycker om, eftersom människor reagerar väldigt olika på musik. Vi väljer olika sorters musik för olika syften. Musiken kan ha en terapeutisk inverkan. Dyster musik kan förstärka negativa känslor och på så sätt kan man hantera dem lättare. Musik används också för njutning och stressreglering. Glad musik förstärker glädjen. Musiken fungerar som filmmusik som förstärker sinnesstämningar.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Hur vi upplever musik är högst individuellt. Nu för tiden är de flesta medvetna om vad de vill höra i olika situationer. Det viktiga är att man väljer musik som man själv tycker om, eftersom människor reagerar väldigt olika på musik. Vi väljer olika sorters musik för olika syften. Musiken kan ha en terapeutisk inverkan. Dyster musik kan förstärka negativa känslor och på så sätt kan man hantera dem lättare. Musik används också för njutning och stressreglering. Glad musik förstärker glädjen. Musiken fungerar som filmmusik som förstärker sinnesstämningar.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2013 Higher Level examination paper — © State Examinations Commission.",
@@ -363,13 +381,14 @@ export const CARDS: SecCard[] = [
     questionText: "I artikeln nämns tre forskare inom musik. Förklara likheterna och skillnaderna i deras specifika områden baserat på artikeln.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rätt svar, baserade på stycke 2, 4, 7 och 10: Alla tre forskar om musik men Lars Lilliestam fokuserar på musiklyssnandets historia och vårt förhållningssätt till musiken medan Daniel Västfjäll och Marie Helsing försöker ta reda på hur musiken påverkar vårt psyke. Med andra ord rör sig Lilliestams forskning om våra vanor och vårt förhållande till musiken medan de två andra forskar om hur musiken påverkar oss på ett djupare plan.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Alla tre forskar om musik men Lars Lilliestam fokuserar på musiklyssnandets historia och vårt förhållningssätt till musiken medan Daniel Västfjäll och Marie Helsing försöker ta reda på hur musiken påverkar vårt psyke. Med andra ord rör sig Lilliestams forskning om våra vanor och vårt förhållande till musiken medan de två andra forskar om hur musiken påverkar oss på ett djupare plan.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2013 Higher Level examination paper — © State Examinations Commission.",
@@ -386,13 +405,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Man kan skapa sitt eget `musikaliska husapotek`” Artikeln visar på så väl likheter som skillnader i sättet unga respektive gamla använder musiken som terapi. Förklara hur.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "”Man kan skapa sitt eget `musikaliska husapotek`” (stycke 10) Artikeln visar på så väl likheter som skillnader i sättet unga respektive gamla använder musiken som terapi. Förklara hur. Rätt svar, baserade på stycke 7, 8, 9 och 10: Fastän både ungas och gamlas lyssnande är terapeutiskt använder gamla musiken för att undertrycka negativa känslor. Unga får bekräftelse genom musiken medan gamla använder den för att fly undan sina problem. Unga som lyssnar på musik ensamma på sitt rum känner att sångaren talar direkt till dem medan äldre kan använda musiken för att dämpa negativa känslor som de annars skulle ha svårt att hantera. För dem uppfattas musiken ofta som en gammal bekant. Gemensamt för både unga och gamla är att man med musikens hjälp kan höja sitt välbefinnande. Anmärkning: I del I och II kommer följande kriterier att vägas in i betygssättningen:", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Fastän både ungas och gamlas lyssnande är terapeutiskt använder gamla musiken för att undertrycka negativa känslor. Unga får bekräftelse genom musiken medan gamla använder den för att fly undan sina problem. Unga som lyssnar på musik ensamma på sitt rum känner att sångaren talar direkt till dem medan äldre kan använda musiken för att dämpa negativa känslor som de annars skulle ha svårt att hantera. För dem uppfattas musiken ofta som en gammal bekant. Gemensamt för både unga och gamla är att man med musikens hjälp kan höja sitt välbefinnande.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2013 Higher Level examination paper — © State Examinations Commission.",
@@ -409,13 +429,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt följande ord och uttryck, som de används i texten, med andra som betyder samma sak: snusar",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "snusar (stycke 1) rätt svar: sover, dusar, slumrar, sussar, slaggar, knoppar, kojar", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "sover, dusar, slumrar, sussar, slaggar, knoppar, kojar", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -432,13 +453,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt följande ord och uttryck, som de används i texten, med andra som betyder samma sak: syssla med",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "syssla med (stycke 5) rätt svar: göra, bedriva, idka, arbeta med, ägna sig åt", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "göra, bedriva, idka, arbeta med, ägna sig åt", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -455,13 +477,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt följande ord och uttryck, som de används i texten, med andra som betyder samma sak: i skarpt läge",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "i skarpt läge (stycke 9) rätt svar: när det är allvar, när det är farligt, när det gäller", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "när det är allvar, när det är farligt, när det gäller", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -478,13 +501,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt följande ord och uttryck, som de används i texten, med andra som betyder samma sak: utsätta oss för",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "utsätta oss för (stycke 10) rätt svar: underkasta sig", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "underkasta sig", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -501,13 +525,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt följande ord och uttryck, som de används i texten, med andra som betyder samma sak: skrubbsår",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "skrubbsår (stycke 13) rätt svar: skråma, litet sår, ett sår som svider", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "skråma, litet sår, ett sår som svider", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -524,13 +549,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt följande uttryck med ett annat som betyder samma sak: öppna (ytterligare) fönster till",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "öppna (ytterligare) fönster till (stycke 5) Rätt svar: visa fler möjligheter, ge nya möjliga förklaringsmodeller till", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "visa fler möjligheter, ge nya möjliga förklaringsmodeller till", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -547,13 +573,14 @@ export const CARDS: SecCard[] = [
     questionText: "Vad kännetecknar REM-sömnen?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rätt svar, baserat på stycke 4 och 15: REM-sömnen är den mest intensiva drömfasen då vi drömmer mest. Under denna period är stresshormonet noradrenalin rejält nertryckt.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "REM-sömnen är den mest intensiva drömfasen då vi drömmer mest. Under denna period är stresshormonet noradrenalin rejält nertryckt.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -570,13 +597,14 @@ export const CARDS: SecCard[] = [
     questionText: "På vilket sätt fungerar sömnen som både minnesbearbetning och känsloreglering, enligt artikeln?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rätt svar, baserat på stycke 13, 14 och 15: En av sömnens huvudfunktioner är förmodligen att berarbeta ny information och skapa en minnesstruktur över den. Om man sover mellan olika testtillfällen minns man innehållet bättre. När vi sover bearbetar hjärnan dagens uppslitande händelser och gör dem till minnen som placeras i vår erfarenhetsbank. Under denna process försvinner mycket av den emotionella laddningen eftersom bearbetningen sker under rofyllda förhållanden.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "En av sömnens huvudfunktioner är förmodligen att berarbeta ny information och skapa en minnesstruktur över den. Om man sover mellan olika testtillfällen minns man innehållet bättre. När vi sover bearbetar hjärnan dagens uppslitande händelser och gör dem till minnen som placeras i vår erfarenhetsbank. Under denna process försvinner mycket av den emotionella laddningen eftersom bearbetningen sker under rofyllda förhållanden.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -593,13 +621,14 @@ export const CARDS: SecCard[] = [
     questionText: "På vilket sätt har drömmar haft en avgörande inverkan för att göra mänskligheten till vad den är i dag?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rätt svar, baserat på stycke 8, 9, 10 och 11: Drömmar är enligt Hot-teorin hjärnans sätt att öva oss inför hotfulla situationer. Man övar sig i en säker miljö för att senare kunna använda denna erfarenhet när det verkligen gäller. Drömanlagen har förts vidare då de som i drömmen utsatts för hotfulla situationer fått tillfälle att öva sig inför dem. Det betyder att de som drömt mer kommer att ha större chanser att överleva. Enligt teorin om sömn och drömmar som inlärningshjälp skulle det också innebära att de som sovit och drömt mer har lyckats lära sig mer och därför också klarat sig bättre. Samma sak gäller för den terapeutiska förklaringsmodellen. Sammanfattningsvis visar forskningen att sömn och drömmar har haft en avgörande positiv betydelse för mänsklighetens utveckling.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Drömmar är enligt Hot-teorin hjärnans sätt att öva oss inför hotfulla situationer. Man övar sig i en säker miljö för att senare kunna använda denna erfarenhet när det verkligen gäller. Drömanlagen har förts vidare då de som i drömmen utsatts för hotfulla situationer fått tillfälle att öva sig inför dem. Det betyder att de som drömt mer kommer att ha större chanser att överleva. Enligt teorin om sömn och drömmar som inlärningshjälp skulle det också innebära att de som sovit och drömt mer har lyckats lära sig mer och därför också klarat sig bättre. Samma sak gäller för den terapeutiska förklaringsmodellen. Sammanfattningsvis visar forskningen att sömn och drömmar har haft en avgörande positiv betydelse för mänsklighetens utveckling.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -616,13 +645,14 @@ export const CARDS: SecCard[] = [
     questionText: "Vilken förklaring till drömmens gåta förespråkar du? Argumentera tydligt för din ståndpunkt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Möjliga svar, baserade på hela artikeln: För ett godkänt svar måste arbiturenten belysa alla aspekter och förespråka en teori, eller en kombination av flera: budbärare från gudarna, meddelanden från vårt undermedvetna, hjärnans slumpmässiga sammankoppling av intryck under vaket tillstånd, Hot-teorin eller inlärnings- samt den terapeutiska funktionen. Arbiturenten måste visa med belägg i texten eller i sina egna erfarenheter varför han stöder just denna eller dessa teorier.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "För ett godkänt svar måste arbiturenten belysa alla aspekter och förespråka en teori, eller en kombination av flera: budbärare från gudarna, meddelanden från vårt undermedvetna, hjärnans slumpmässiga sammankoppling av intryck under vaket tillstånd, Hot-teorin eller inlärnings- samt den terapeutiska funktionen. Arbiturenten måste visa med belägg i texten eller i sina egna erfarenheter varför han stöder just denna eller dessa teorier.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -639,13 +669,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. skildra (stycke 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "skildra (stycke 1): berätta, återge, tala om, framställa", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "berätta, återge, tala om, framställa", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -662,13 +693,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. stundom (stycke 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "stundom (stycke 2): ibland, då och då, emellanåt", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "ibland, då och då, emellanåt", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -685,13 +717,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. frånstötande (stycke 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "frånstötande (stycke 2): motbjudande, vidrig, avskyvärd, otäck", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "motbjudande, vidrig, avskyvärd, otäck", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -708,13 +741,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. bli (mer) på vår vakt (stycke 9)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "bli (mer) på vår vakt (stycke 9): se upp, bli mer vaksam, förhöja sin uppmärksamhet", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "se upp, bli mer vaksam, förhöja sin uppmärksamhet", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -731,13 +765,14 @@ export const CARDS: SecCard[] = [
     questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. sänker garden (stycke 10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sänker garden (stycke 10): slappnar av, släppa på självkontrollen", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "slappnar av, släppa på självkontrollen", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -754,13 +789,14 @@ export const CARDS: SecCard[] = [
     questionText: "Vad menas med arketyper?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vad menas med arketyper? (stycke 7) Svar: Universella förställningar med rötter långt ner i människans historia.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Universella förställningar med rötter långt ner i människans historia.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -777,13 +813,14 @@ export const CARDS: SecCard[] = [
     questionText: "Förklara hur kroppen påverkas fysiskt av att titta på skräckfilm.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Svar: Hjärnan pumpar ut adrenalin i blodet så att vi blir mer på vår vakt och kan agera snabbt när vi utsätts för fara (stycke 7)OCH Morfinliknande endorfiner utsöndras i kroppen när vi känner oss lättade.(stycke 9)", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Hjärnan pumpar ut adrenalin i blodet så att vi blir mer på vår vakt och kan agera snabbt när vi utsätts för fara (stycke 7)OCH Morfinliknande endorfiner utsöndras i kroppen när vi känner oss lättade.(stycke 9)", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -800,13 +837,14 @@ export const CARDS: SecCard[] = [
     questionText: "Varför väljer vi att titta på skräckfilm, enligt artikeln?Diskutera och förklara vilken av dessa förklaringar du tror mest på.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Svar: Tradition (stycke 1)Katharsis(stycke 6), nyfikenhet (stycke 2), endorfinkick (stycke 9) + motivering", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Tradition (stycke 1)Katharsis(stycke 6), nyfikenhet (stycke 2), endorfinkick (stycke 9) + motivering", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -823,13 +861,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Vissa forskare hävdar att man primärt ser skräckfilm i underhållningssyfte.” (stycke 11) Delar du denna ståndpunkt? Förklara din uppfattning med hänvisning till artikeln.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Svar: Arbiturenten borde överväga de olika fysiologiska så väl som psykologiska aspekterna, såsom lättnaden man upplever efter att ha bevittnat något skrämmande (stycke 10); han borde också diskutera hur de efterdröjande effekterna av ”bra skräck” (stycke 11) påverkar oss.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Arbiturenten borde överväga de olika fysiologiska så väl som psykologiska aspekterna, såsom lättnaden man upplever efter att ha bevittnat något skrämmande (stycke 10); han borde också diskutera hur de efterdröjande effekterna av ”bra skräck” (stycke 11) påverkar oss.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -846,13 +885,14 @@ export const CARDS: SecCard[] = [
     questionText: "\"skräck är något subjektivt\" Diskutera med utgångspunkt i texten hur man kommer fram till denna slutsats. Visa också med bevis ur texten hur motsatsen kan anföras. Redogör för vilken förklaring du föredrar och varför.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "\"skräck är något subjektivt\" (stycke 4) Diskutera med utgångspunkt i texten hur man kommer fram till denna slutsats. Visa också med bevis ur texten hur motsatsen kan anföras. Redogör för vilken förklaring du föredrar och varför. Svar: Arbiturenten bör kontrastera påståendet att vi alla delar en nyfikenhet på det hemska och förbjudna (stycke 2) med påståendet att den baseras på vår mest privata ångest (stycke 4). Han bör också diskutera de psykologiska förklaringsmodellerna som säger att vårt undermedvetna är en produkt av undertyckta barnsliga önskningar (stycke 6) och diskutera hur väl det stämmer överens med teorin om arketyper (stycke 7).", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Arbiturenten bör kontrastera påståendet att vi alla delar en nyfikenhet på det hemska och förbjudna (stycke 2) med påståendet att den baseras på vår mest privata ångest (stycke 4). Han bör också diskutera de psykologiska förklaringsmodellerna som säger att vårt undermedvetna är en produkt av undertyckta barnsliga önskningar (stycke 6) och diskutera hur väl det stämmer överens med teorin om arketyper (stycke 7).", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",

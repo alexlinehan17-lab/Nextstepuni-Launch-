@@ -784,12 +784,12 @@
   },
   "swedish": {
     "cards": 121,
-    "contentHash": "693c584aa82e78bd",
-    "coveragePct": 100.0,
+    "contentHash": "abda9b946bc622f1",
+    "coveragePct": 96.3,
     "covered": 121,
     "excluded": 63,
-    "leaves": 184,
-    "open": 0,
+    "leaves": 191,
+    "open": 7,
     "orphans": 0,
     "papers": {
       "count": 16,
