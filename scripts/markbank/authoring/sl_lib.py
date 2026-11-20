@@ -459,6 +459,16 @@ def quote(*sels, lead='The scheme prints'):
 RULE_WORDS = {
     'dutch': (r'Alle antwoorden', r'Nederlands'),
     'romanian': (r'Toate r\S{1,2}spunsurile', r'rom[âa]n'),
+    'bulgarian': (r'Всички отговори', r'българск'),
+    'croatian': (r'Svi odgovori', r'hrvatsk'),
+    'danish': (r'Alle (?:svar|spørgsmål|opgaver)', r'dansk'),
+    'estonian': (r'K[õo]ikidele', r'eesti'),
+    'finnish': (r'Vastaa', r'suome'),
+    'hungarian': (r'[Vv]álaszoljon', r'magyar'),
+    'slovakian': (r'[Oo]dpove', r'slovensk'),
+    'slovenian': (r'[Oo]dgovor', r'slovensk'),
+    'swedish': (r'Alla? svar', r'svensk'),
+    'maltese': (r'[Ww]ieġeb|[Tt]weġibiet', r'[Mm]alti'),
 }
 RULE_LINES = 3      # the rule's sentence ends within this many printed lines
 
@@ -494,34 +504,42 @@ LATIN_SUBJECTS = {'dutch', 'romanian', 'hungarian', 'slovakian', 'swedish', 'est
                   'croatian', 'danish', 'slovenian', 'maltese'}
 
 
+# A sentence ends at . ! ? followed by an upper-case letter, a line end or the
+# text's end; not at "I." in "az I., II. és III. részben" (Hungarian).
+SENT_END = re.compile(r'[.!?](?=\s+[A-ZÀ-ÖØ-ÞĀ-Ž\u0400-\u042f]|\s*$)')
+
+
 def rule_sentence(subject, doc):
     """(PDF page, sentence) of the paper's answer-language rule, cut from its
-    own printed lines: from the answer word to the sentence's full stop, or to
-    the end of the printed line that names the language where the SEC set no
-    stop ("Toate răspunsurile vor fi scrise in limba româna", Romanian 2010)."""
+    own printed lines: from the start of the sentence holding the answer word
+    to its end. A printed line that names the language and has no stop ends
+    the sentence unless the next line runs on in lower case ("na hrvatskome" /
+    "jeziku."; Romanian 2010 sets no stop before "Maximum 100 puncte")."""
     answer, lang = (re.compile(x) for x in RULE_WORDS[subject])
-    fixes = RULE_FIXES.get((subject, doc['P'].year), {})
     for page in sorted({p for p, _t in doc['paper']}):
-        lines = [t for p, t in doc['paper'] if p == page]
+        lines = [re.sub(r'\s+', ' ', t).strip() for p, t in doc['paper'] if p == page]
         for i, line in enumerate(lines):
             m = answer.search(line)
             if not m:
                 continue
-            text = ''
-            for nxt in lines[i:i + RULE_LINES]:
-                start = len(text) + (1 if text else 0)
-                text = f'{text} {nxt}' if text else nxt
-                k = text.find(m.group(0))
-                stop = text.find('.', k)
-                if stop > k:
-                    text = text[:stop + 1]
+            # the sentence's start: after the last sentence end before the
+            # answer word, on this line or the one above it
+            prev = lines[i - 1] if i else ''
+            head = f'{prev} {line[:m.start()]}' if prev else line[:m.start()]
+            ends = [e.end() for e in SENT_END.finditer(head)]
+            lead = head[ends[-1]:].strip() if ends else (line[:m.start()].strip() if prev else head.strip())
+            text = f'{lead} {line[m.start():]}'.strip() if lead else line[m.start():]
+            for nxt in lines[i + 1:i + RULE_LINES]:
+                stop = SENT_END.search(text, len(lead))
+                if stop:
                     break
-                if lang.search(text[max(k, start):]):
+                if lang.search(text) and not re.match(r'[a-zà-öø-ÿā-ž\u0430-\u044f]', nxt):
                     break
-            k = text.find(m.group(0))
-            sent = re.sub(r'\s+', ' ', text[k:]).strip()
+                text = f'{text} {nxt}'
+            stop = SENT_END.search(text, len(lead))
+            sent = text[:stop.end()] if stop else text
             if lang.search(sent):
-                for bad, good in fixes.items():
+                for bad, good in RULE_FIXES.get((subject, doc['P'].year), {}).items():
                     sent = sent.replace(bad, good)
                 if subject in LATIN_SUBJECTS and re.search('[\u0400-\u04ff\ufffd]', sent):
                     raise ValueError(f'{subject} {doc["P"].year}: rule text carries an unrepaired glyph: {sent!r}')
