@@ -1,0 +1,148 @@
+{
+  "reviewer": "Codex second worker /root/russian_independent_review",
+  "recordedAt": "2026-11-20T12:26:13.949972+00:00",
+  "scope": "Final exact 48/50 source data/index lookup using unchanged public APIs. Not generator support or installed source review.",
+  "pin": "c369eabcd0156424cf604783dd399d0c5cf64fd2",
+  "finalAsksBound": 98,
+  "totalMarksUnchanged": 465,
+  "eachResolvedFileid": "LC462CLP000EV-deferred",
+  "sameFilenameDifferentSittingHandled": true,
+  "originalPdfs": [
+    {
+      "kind": "deferredexams",
+      "year": 2022,
+      "fileid": "LC462CLP000EV.pdf",
+      "path": "paper-trail-corpus/deferredexams/2022/LC462CLP000EV.pdf",
+      "sha256": "e345113703ad6ab2ed12634e6f6cba9b71795cc89cb20437fe61529443096835",
+      "pages": 40,
+      "localPath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/deferredexams/2022/LC462CLP000EV.pdf"
+    },
+    {
+      "kind": "deferredmarkingschemes",
+      "year": 2022,
+      "fileid": "LC462CLP000EV.pdf",
+      "path": "paper-trail-corpus/deferredmarkingschemes/2022/LC462CLP000EV.pdf",
+      "sha256": "9b14e6acf76be8d4467c394e15d5e59ecc2a0deaab5c52f4f2d887159f071ba2",
+      "pages": 20,
+      "localPath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/deferredmarkingschemes/2022/LC462CLP000EV.pdf"
+    },
+    {
+      "kind": "deferredexams",
+      "year": 2023,
+      "fileid": "LC462CLP000EV.pdf",
+      "path": "paper-trail-corpus/deferredexams/2023/LC462CLP000EV.pdf",
+      "sha256": "43b5e8362f07019d03fa8e8de76e2a7a455d24f32db8b29332ac7139e8f7be12",
+      "pages": 40,
+      "localPath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/deferredexams/2023/LC462CLP000EV.pdf"
+    },
+    {
+      "kind": "deferredmarkingschemes",
+      "year": 2023,
+      "fileid": "LC462CLP000EV.pdf",
+      "path": "paper-trail-corpus/deferredmarkingschemes/2023/LC462CLP000EV.pdf",
+      "sha256": "b64d9aff0039e06c09c21ca9218308263055547ea003d09fc1623e6afe2b6efa",
+      "pages": 20,
+      "localPath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/deferredmarkingschemes/2023/LC462CLP000EV.pdf"
+    }
+  ],
+  "transcripts": [
+    {
+      "year": 2022,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/deferredmarkingschemes/2022/LC462CLP000EV.pdf",
+      "sourceSha256": "9b14e6acf76be8d4467c394e15d5e59ecc2a0deaab5c52f4f2d887159f071ba2",
+      "pages": 20,
+      "transcript": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/2022-cl-deferred.md",
+      "transcriptSha256": "e9da40354eaed0d0d4acf20b51321510c3b71472e9f1f2b86c6807329035c467",
+      "intendedDestination": "examiner-reports/lcvp/schemes/2022-cl-deferred.md"
+    },
+    {
+      "year": 2023,
+      "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/deferredmarkingschemes/2023/LC462CLP000EV.pdf",
+      "sourceSha256": "b64d9aff0039e06c09c21ca9218308263055547ea003d09fc1623e6afe2b6efa",
+      "pages": 20,
+      "transcript": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/2023-cl-deferred.md",
+      "transcriptSha256": "72c7532a75cad515921b1c960fb0940cb49e896ce466d66419f5c060cb9411ad",
+      "intendedDestination": "examiner-reports/lcvp/schemes/2023-cl-deferred.md"
+    }
+  ],
+  "sourcePages": "Each of 98 records includes originalQuestionPages/schemePages, all authored source-material roles/pages, and native page text hashes in binding-inputs.json and final-98-explicit-source-bindings.json. Section B case study and question-page roles are intentionally distinct.",
+  "new2022SplitId": "lcvp-2022-cl-deferred-c6c-2 is explicitly present and resolved using the final candidate, not inherited from the old47 result.",
+  "sourceEvidenceHashesChecked": [
+    {
+      "year": 2022,
+      "role": "sourceManifest",
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/source-manifest.json",
+      "sha256": "d01f1ac569c5742e2e60dde41d94f4d9254e4de38cbb039c75160feb7e021f68"
+    },
+    {
+      "year": 2022,
+      "role": "sourceSelections",
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/source-parts.json",
+      "sha256": "732a6460d1def245044478b94c1703b1898d20b22cde6a4359d728ce67be030c"
+    },
+    {
+      "year": 2022,
+      "role": "priorVisualReading",
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/first-reading-frozen.json",
+      "sha256": "51777ecc8f8639b740218dc456db40a63ddfef70655484498bd98c1bf98e8ac5"
+    },
+    {
+      "year": 2022,
+      "role": "finalBoundaryDecision",
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/third-reader-decision.json",
+      "sha256": "ec8fae088bedbc0e7db2d6036ea790cc17ea89ac9975c62a85279bff580ccbf0"
+    },
+    {
+      "year": 2023,
+      "role": "sourceManifest",
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/source-manifest.json",
+      "sha256": "34e414492469fdadb99dc0b6deeef275fe904c8c96b5da314ce285c5c93fa9d2"
+    },
+    {
+      "year": 2023,
+      "role": "sourceSelections",
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/source-parts.json",
+      "sha256": "78c4e08272138eb7a1b4155f4d2b86e6fa33461f758039b4bd72c833d5e600bc"
+    },
+    {
+      "year": 2023,
+      "role": "priorVisualReading",
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/first-reading-frozen.json",
+      "sha256": "944bfb81d07f6b4059abdbd2e4c5b6734286579903f7bfe7be8d28a98173cbb5"
+    },
+    {
+      "year": 2023,
+      "role": "finalBoundaryDecision",
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/third-reader-decision.json",
+      "sha256": "15848a41a33b471b64468438fce20db2dc86da98008802f7a27fe0b7e98cfd4b"
+    }
+  ],
+  "preservation": {
+    "old47Proof": {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/deferred-candidate-source-binding-preflight.json",
+      "sha256": "cfb79ba07e1ba9e99f3371ecf6430bf6bd042bd9ad2c1521be13fcccbb4b6142",
+      "preserved": true
+    },
+    "finalCandidatesAndFilingInputsUnchanged": true,
+    "lanesSharedCodeAndCanonicalSourcesNotWritten": true
+  },
+  "historicalProducer": "No saved producer script found in searched review/old-lane helper paths. The unchanged source-map and indexed-pair APIs are reused directly; this is a newly recorded invocation, not a claim to rerun an unavailable historical script.",
+  "notInstalled": {
+    "builderSha256": "b7cdf40b63bdec99ef25d83b7d928497dc879bfac6ee3c8790db46ad1526db78",
+    "deferredIdExcerpt": "const DEFERRED_ID = {\n  economics: /^econ-\\d{4}-(?:hl|ol)-deferred-/,\n  engineering: /^eng-\\d{4}-(?:hl|ol)-deferred-/,\n  history: /^hist-\\d{4}-(?:hl|ol)-deferred-/,\n  spanish: /^es-\\d{4}-(?:hl|ol)-deferred-/,\n  dcg: /^dcg-\\d{4}-(?:hl|ol)-deferred-/,\n  german: /^de-\\d{4}-(?:hl|ol)-deferred-/,\n  biology: /^bio-\\d{4}-(?:hl|ol)-deferred-/,\n  physics: /^phys-\\d{4}-(?:hl|ol)-deferred-/,\n  'home-economics': /^he-\\d{4}-(?:hl|ol)-deferred-/,\n  maths: /^maths-\\d{4}-(?:hl|ol|fl)-deferred-/,\n};\n",
+    "missingInPinnedTree": [
+      "scripts/markbank/authoring/lcvp/2022-cl-deferred-review.json",
+      "examiner-reports/lcvp/schemes/2022-cl-deferred.md",
+      "scripts/markbank/authoring/lcvp/2023-cl-deferred-review.json",
+      "examiner-reports/lcvp/schemes/2023-cl-deferred.md"
+    ],
+    "isolatedRegisteredEntryPoint": "The copied unchanged reviewedLcvpSource requires a source-review file under its root and correctly rejects both first cards because no review is installed. The pure lcvpSourceMap callback path and explicit indexed resolver succeed without installing one.",
+    "coordinatorOwned": "Add/approve shared LCVP DEFERRED_ID registration separately; this proof does not modify or substitute for it."
+  },
+  "limitations": [
+    "No actual generator, browser, model/Atlas, media playback, production or new visual reading was run.",
+    "Per-card scheme pages come from the frozen source selections and final split linkage, not from the filename resolver, which validates source identity only.",
+    "The complete original paper/scheme hashes identify the existing English deferred originals. Page-text hashes are additional identity evidence, not visual QA.",
+    "The input review objects are external binding fixtures with references to existing source readings; they are not silently installed or represented as production review completion."
+  ]
+}

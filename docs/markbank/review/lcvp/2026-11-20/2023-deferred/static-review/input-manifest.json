@@ -1,0 +1,101 @@
+{
+  "pin": "c369eabcd0156424cf604783dd399d0c5cf64fd2",
+  "scope": "Pure small predicate and source text checks only; no generator, render, browser, network or lane mutation",
+  "assets": {
+    "scripts/markbank/build-deck.mjs": "b7cdf40b63bdec99ef25d83b7d928497dc879bfac6ee3c8790db46ad1526db78",
+    "scripts/markbank/schemeText.mjs": "7a08b50a397aabe527573665a604ea437e8e279ec44636c76d04153c22f7ebe5",
+    "scripts/markbank/questionText.mjs": "fc25d8f19c5601ffac2c066bd3133e1ff1540b9ba67fa9cbe59b8e1a91edba52",
+    "scripts/markbank/authoring/glyphmap.json": "a0e32f8c0233f1cb2499a8b0e7538c79406d9b9552b3e2318159a77bfeadadeb"
+  },
+  "inputs": [
+    {
+      "year": 2022,
+      "filingPath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-codex-third-reading-index/lcvp-filing-additions/2022-deferred.json",
+      "filingSha256": "b1ce7ba5884ee238837b4635e0813c34f9851ec8b6e6e340e45396895007acd8",
+      "candidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/proposed-48-after-third-reading.json",
+      "candidateSha256": "a66a9e40753549d3c29b2f57a3c1485b1a357f565c3e0e6521a7fa28a30a1280",
+      "schemeTranscript": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/2022-cl-deferred.md",
+      "schemeTranscriptSha256": "e9da40354eaed0d0d4acf20b51321510c3b71472e9f1f2b86c6807329035c467",
+      "originalScheme": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/deferredmarkingschemes/2022/LC462CLP000EV.pdf",
+      "originalSchemeSha256": "9b14e6acf76be8d4467c394e15d5e59ecc2a0deaab5c52f4f2d887159f071ba2",
+      "filingPending": []
+    },
+    {
+      "year": 2023,
+      "filingPath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-codex-third-reading-index/lcvp-filing-additions/2023-deferred.json",
+      "filingSha256": "b8a642d822afc9f6a35fa90d1329462eeb734056a9ea9e0c3b950096e13da78c",
+      "candidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/proposed-50-authored-cards.json",
+      "candidateSha256": "67cd973f737ed8e04f4db92edec3ecc7e6048685bd7e4d9eb570a66fd245ace1",
+      "schemeTranscript": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/2023-cl-deferred.md",
+      "schemeTranscriptSha256": "72c7532a75cad515921b1c960fb0940cb49e896ce466d66419f5c060cb9411ad",
+      "originalScheme": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/deferredmarkingschemes/2023/LC462CLP000EV.pdf",
+      "originalSchemeSha256": "b64d9aff0039e06c09c21ca9218308263055547ea003d09fc1623e6afe2b6efa",
+      "filingPending": [
+        {
+          "cardId": "lcvp-2023-cl-deferred-a4",
+          "headingIds": [
+            "link-modules-common-1-introduction-to-working-life"
+          ],
+          "how": null,
+          "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+          "reason": "Identifies employer responsibilities for workplace health and safety.",
+          "internalTopicId": "lcvp-link-modules-0-0",
+          "questionRef": "2023 CL Section A Q4 \u2014 Deferred sitting",
+          "previousReading": {
+            "cardId": "lcvp-2023-cl-deferred-a4",
+            "headingIds": [
+              "link-modules-common-1-introduction-to-working-life"
+            ],
+            "how": "r2",
+            "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+            "reason": "Health and safety in the workplace.",
+            "internalTopicId": "lcvp-link-modules-0-0",
+            "questionRef": "2023 CL Section A Q4 \u2014 Deferred sitting",
+            "firstHeadingIds": [
+              "link-modules-common-1-introduction-to-working-life"
+            ],
+            "secondHeadingIds": [
+              "link-modules-common-1-introduction-to-working-life"
+            ]
+          },
+          "secondHeadingIds": [
+            "link-modules-common-audio-visual"
+          ],
+          "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
+        },
+        {
+          "cardId": "lcvp-2023-cl-deferred-a6",
+          "headingIds": [
+            "link-modules-common-1-work-placement"
+          ],
+          "how": null,
+          "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+          "reason": "Evaluates arrangements that make a work placement meaningful.",
+          "internalTopicId": "lcvp-link-modules-0-3",
+          "questionRef": "2023 CL Section A Q6 \u2014 Deferred sitting",
+          "previousReading": {
+            "cardId": "lcvp-2023-cl-deferred-a6",
+            "headingIds": [
+              "link-modules-common-1-work-placement"
+            ],
+            "how": "r2",
+            "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+            "reason": "Providing meaningful work placement.",
+            "internalTopicId": "lcvp-link-modules-0-3",
+            "questionRef": "2023 CL Section A Q6 \u2014 Deferred sitting",
+            "firstHeadingIds": [
+              "link-modules-common-1-work-placement"
+            ],
+            "secondHeadingIds": [
+              "link-modules-common-1-work-placement"
+            ]
+          },
+          "secondHeadingIds": [
+            "link-modules-common-audio-visual"
+          ],
+          "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
+        }
+      ]
+    }
+  ]
+}

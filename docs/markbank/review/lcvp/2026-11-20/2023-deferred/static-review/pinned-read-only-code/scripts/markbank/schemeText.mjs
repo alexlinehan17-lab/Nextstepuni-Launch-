@@ -1,0 +1,419 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Mark Bank — how a marking point is compared against its marking scheme.
+ *
+ * The build drops any card whose rows it cannot find in the scheme, and a test
+ * re-checks the shipped deck the same way. Those two had their own copies of
+ * this logic and drifted: the build learned to ignore the extractor's ⟨marks⟩
+ * cells and page markers, the test did not, and four correct Chemistry and
+ * Physics cards were reported as untraceable by the very check that had just
+ * accepted them. One implementation, imported by both — the same reason
+ * paperIndex.mjs exists.
+ */
+
+import GLYPHS from './authoring/glyphmap.json' with { type: 'json' };
+/** A line that is nothing but a mark. */
+const MARKS_ONLY = /^\s*\d+\s*(\(\s*\d+\s*\))?\s*$/;
+
+/**
+ * A line that is nothing but a part label — "(iii)", "(B)", "(a)".
+ *
+ * These live in a narrow left-hand column of the scheme table and land on their
+ * own row, which puts them INSIDE the marking point printed beside them:
+ *
+ *     Increased sales/reach a wider audience:      ⟨14m⟩
+ *     (iii)
+ *     When a business chooses to distribute their product via retailers, the
+ *
+ * A card quoting that point whole — heading and sentence, which is what the
+ * (4+3) pays for — then fails provenance because of a label that is not part of
+ * the answer at all. Same reasoning as MARKS_ONLY: it carries no marking content.
+ */
+const LABEL_ONLY = /^\s*\(?\s*([ivx]{1,4}|[a-z]|\d{1,2})\s*\)\s*$/i;
+
+/**
+ * The same left-hand label, but sharing a line with the answer beside it.
+ *
+ * LABEL_ONLY catches the label that lands on its own row. It does not catch the
+ * one whose y-band happens to line up with a WRAPPED line of the answer, which
+ * the converter then emits as a single line:
+ *
+ *     The gearing ratio improved from 0.6:1 in 2020
+ *     (iii) to 0.25:1in 2021.
+ *
+ * In the printed scheme (Business 2022 HL p.52) that "(iii)" sits at x≈96 in the
+ * narrow Question column while the answer text starts at x≈127 — it is not a
+ * word of the SEC's answer. Left in, it splits the one sentence the examiner
+ * underlined, the literal answer to "improved or disimproved?", so no card can
+ * quote it. Physics 2025 HL loses C = q/V the same way: the fraction sets over
+ * two lines and "(i)" lands between numerator and denominator.
+ */
+const LEADING_LABEL = /^\s*\(\s*(?:[ivx]{1,4}|[a-z]|\d{1,2})\s*\)\s+(?=\S)/i;
+
+/**
+ * A marks cell that extract-scheme.py lifted out of the prose, e.g. ⟨2@5m(3+2)⟩.
+ * It has to come out before normalising, or its digits fuse onto the words either
+ * side of it and the sentence stops matching — the corruption the bracketing was
+ * added to undo.
+ */
+const MARKS_CELL = /⟨[^⟩]*⟩/g;
+
+/**
+ * The descending tariff spelled out in words -- "1st @ 8", "2nd x 6" -- which
+ * the SEC prints beside the question rather than in the marks column, and which
+ * lands in the MIDDLE of a marking point when the extractor flattens the page:
+ * "if there is affordable housing available in an area, this may encourage
+ * 2nd @ 4 people to move".
+ *
+ * Stripped as an ADDED scheme form rather than in normalise(), for the reason
+ * every other fold here is: a fold applied to both sides is symmetric, and a
+ * symmetric fold once cost a card that was genuinely in its scheme. An added
+ * form can only ever let more through.
+ */
+const ORDINAL_TARIFF = /\b\d+\s*(?:st|nd|rd|th)\s*[@x]\s*\d+\b/gi;
+
+/**
+ * The scheme's own bracketed aside, and the tariff it prints inside an answer.
+ *
+ * A Spanish scheme prices every answer in line and clarifies inside the answer
+ * itself. Its own explanatory page says so: "Square brackets [ ] show a
+ * breakdown of marks within the question or give further clarifications for
+ * marks to be awarded". Both land in the MIDDLE of a marking point:
+ *
+ *     We don't have enough courts (to satisfy the demand)/ there are only 50
+ *     courts [2m]and we have 6000 players [1m] (3m)
+ *     (There is no doubt that physical exercise) has lots of benefits for
+ *     everybody (2m) and it is something we should start at a young age (2m)
+ *
+ * so a card quoting the SEC's own sentence cannot be found in the SEC's own
+ * scheme. Stripped as an ADDED form, for the reason ORDINAL_TARIFF is: a fold
+ * applied to both sides is symmetric and a symmetric fold has cost a card
+ * before, while an added form can only ever let more of the SEC's own text
+ * through. No claim contains a marks cell or a square bracket.
+ */
+const INLINE_ASIDE = /\[[^\]]*\]|\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})*\s*(?:m|marks?)\s*\)/gi;
+
+/**
+ * A split printed inside an answer that wraps: older Italian schemes print the
+ * ask's split at the end of the answer's first line, "They give up their free
+ * time/ they volunteer (2m) to be tourist (2+2+1)" over "guides/ to do tours
+ * (2m)" (2020 Higher Dialogue 3 Q1), so the lifted point "to be tourist
+ * guides/ to do tours" is cut in two by digits normalise() keeps. Only a
+ * bracket holding digits joined by plus signs and nothing else - never "(2m)",
+ * never marks with words. Stripped as an ADDED form, for the reason
+ * ORDINAL_TARIFF and INLINE_ASIDE are: it only removes printed characters, so
+ * no wording the SEC did not print can pass (coordinator ruling, 19 Nov 2026).
+ */
+const SPLIT_ONLY = /\(\s*\d+(?:\s*\+\s*\d+)+\s*\)/g;
+
+/**
+ * The extractor's own page markers.
+ *
+ * A marking point does not stop at a page break — the SEC prints "Less Risk /
+ * Proven Business Model:" at the foot of one page and the sentence developing it
+ * at the head of the next. Leave "## Page 14" in the comparison text and those
+ * halves are no longer adjacent, so a card quoting the whole point is rejected
+ * for quoting it whole. This is our annotation, not the SEC's words.
+ */
+const PAGE_MARKER = /^##\s*Page\s*\d+\s*$/gm;
+
+/**
+ * The SEC's own running footer, letter-spaced: "17 | P a g e".
+ *
+ * Same reasoning as PAGE_MARKER above, for the SEC's furniture rather than
+ * ours: a marking point does not stop at a page break, and Economics wraps them
+ * across one often enough that leaving the footer in splits a point down the
+ * middle so no card can quote it whole. It is page furniture either way — the
+ * one thing on the page that is certainly not a marking point.
+ */
+const PAGE_FOOTER = /\d+\s*\|\s*P\s*a\s*g\s*e/g;
+
+/**
+ * Digits that are drawn differently but ARE digits.
+ *
+ * SEC PDFs extract formulae as plain ASCII — "H2SO4", not "H₂SO₄" — while an
+ * author writing the answer out is liable to typeset it properly. And the SEC's
+ * own equation editor sets answers in Mathematical Bold: "𝟎. 𝟓: 𝟏", every
+ * character of which normalise() would otherwise strip as non-alphanumeric,
+ * reducing a correct answer to the empty string. Folding maps a character to the
+ * digit it already means; it does not loosen what counts as a match.
+ */
+/**
+ * Ligature glyphs an SEC font encodes with no sensible Unicode mapping.
+ *
+ * The same map markbank_text.py folds on extraction, applied at comparison time
+ * as well, because two scheme files converted before that fold existed still
+ * carry the raw glyphs: Physics 2025 HL prints "paƩern" for "pattern" sixteen
+ * times, and the card quoting "electric field pattern" could not be traced.
+ * Folding here rather than rewriting the converted schemes keeps the extraction
+ * output exactly as the extractor produced it, and a claim can never contain
+ * one of these, so folding both sides changes nothing else.
+ */
+export const LIGATURES = { 'Ɵ': 'ti', 'Ŧ': 'ti', 'Ʃ': 'tt', 'ƫ': 'tti', 'Ō': 'ft', 'ϐ': 'f', 'ﬀ': 'ff', 'ﬁ': 'fi', 'ﬂ': 'fl', 'ﬃ': 'ffi', 'ﬄ': 'ffl', 'ﬅ': 'st', 'ﬆ': 'st' };
+
+const SUP = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9' };
+const collapseDoubledMathsLetters = (text) => {
+  let out = text;
+  for (let pass = 0; pass < 4; pass++) {
+    const next = out.replace(/([\u{1D400}-\u{1D7CD}])\1/gu, '$1');
+    if (next === out) break;
+    out = next;
+  }
+  return out;
+};
+
+export const foldDigits = (t) => collapseDoubledMathsLetters(t)
+  .replace(/[ƟŦƩƫŌϐﬀﬁﬂﬃﬄﬅﬆ]/g, (c) => LIGATURES[c] ?? c)
+  .replace(/[₀-₉]/g, (c) => String(c.charCodeAt(0) - 0x2080))
+  .replace(/[⁰¹²³⁴-⁹]/g, (c) => SUP[c] ?? c)
+  // Mathematical Alphanumeric Symbols, the whole block. The SEC typesets
+  // formulae in it -- "Kc = [𝐍𝐇𝟑]𝟐" is bold capital N, bold capital H, bold
+  // three, bold two -- and the LETTERS were being stripped as punctuation while
+  // the digits folded, so "[NH3]²" could never match "[𝐍𝐇𝟑]𝟐". NFKD maps each
+  // back to the character it already is. Same principle as the digit folding
+  // above, and it does not loosen what counts as a match: 𝐇 IS H.
+  .replace(/[\u{1D400}-\u{1D7FF}]/gu, (c) => c.normalize('NFKD'));
+
+/**
+ * The digits of a stacked fraction, as the SEC's equation font encodes them.
+ *
+ * Its ToUnicode map sends the ten digits into the Oriya letter block, so
+ * 22.50/187.5 extracts as "ଶଶ.ହ଴ / ଵ଼଻.ହ" — each digit is exactly U+0B34 plus
+ * its value. Eleven Chemistry calculations whose working was correct were
+ * dropped over it.
+ *
+ * NOT folded in foldDigits, which runs on both sides. Tried that first and it
+ * COST a card: Chemistry 2022 HL Q7(b)(ii) matched precisely because normalise()
+ * threw the Oriya characters away as punctuation, and turning them into digits
+ * put digits back in the middle of the phrase it quotes. An added form cannot do
+ * that. No claim contains an Oriya letter, so folding one side is enough.
+ */
+const ORIYA_DIGIT = /[\u0B34-\u0B3D]/g;
+const foldOriya = (t) => t.replace(ORIYA_DIGIT, (c) => String(c.charCodeAt(0) - 0x0B34));
+
+/**
+ * The scheme with every broken subset glyph repaired.
+ *
+ * build-deck.mjs repairs a card's own text -- the mangling belongs to the PDF's
+ * ToUnicode map, not to the examiner, and a card reading "h^(ᇱᇱ)(x)" where the
+ * scheme prints "h''(x)" is the wrong card. Repairing one side alone would then
+ * stop the repaired card matching the scheme it came from, which is how "theft"
+ * stopped matching "theŌ".
+ *
+ * An ADDED form, for the reason foldOriya gives: some marking points match
+ * precisely BECAUSE normalise() throws an unresolved glyph away as punctuation,
+ * and putting a character back in the middle of a phrase would break them.
+ * Searching both forms keeps those and admits the repaired ones.
+ */
+
+const BROKEN_GLYPH = /[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]/;
+export const repairGlyphs = (t) => (BROKEN_GLYPH.test(t)
+  ? [...t].map((c) => GLYPHS[c] ?? c).join('') : t);
+
+/**
+ * The degree sign as SEC PDFs actually print it.
+ *
+ * "17 °C to 32 °C" comes out of the scheme as "17oC to 32oC" — the degree mark
+ * is set as a superscript letter o, and the extractor faithfully reports a
+ * letter. An author who types the temperature properly then cannot match the
+ * scheme that priced it, which is what dropped the Biology 2022 OL alcohol
+ * preparation and the 2021 HL enzyme denaturation.
+ *
+ * Folded into a third form of the scheme rather than into normalise(). Doing it
+ * symmetrically would also eat a real leading "o" — "2 oxygen atoms" would
+ * reduce to "2xygen", and a card quoting "oxygen atoms" would stop matching.
+ * Adding a form can only add matches.
+ */
+const DEGREE_O = /(\d)oc/g;
+
+/** Case, spacing and punctuation removed; every character of an answer must
+ *  still appear, in order.
+ *
+ * CYRILLIC IS KEPT. The class was Latin letters and digits alone, which meant a
+ * marking point written in Russian normalised to the EMPTY STRING and matched
+ * every scheme ever printed: "стать" and "стоять" were the same claim, and so
+ * was a word the SEC never wrote. Russian's language-awareness answers are
+ * Russian words, so the gate that exists to stop a card quoting what the
+ * examiner did not say was, for that whole deck, not checking anything.
+ *
+ * LATIN EXTENDED-A IS KEPT, for the same reason and at the same cost. ą ć ę ł
+ * ń ó ś ź ż are letters of the POLISH alphabet, not accents on Latin ones:
+ * they have no combining decomposition, so the class threw each of them away
+ * whole. "łódź" reduced to "d" and "Księgarnia była mała" to "ksigarniabyamaa"
+ * — a gate that cannot tell one Polish marking point from another is not
+ * checking the thing it exists to check.
+ *
+ * Widening the class can only make matching STRICTER — a claim keeps more of
+ * its own characters and so must find more of them in the scheme — and it is
+ * identical on text that has no Cyrillic or Latin Extended-A in it, which is
+ * every other subject in the bank. */
+export const normalise = (t) =>
+  foldDigits(t).toLowerCase().replace(/[‐-―]/g, '-')
+    .replace(/[^a-z0-9\u0100-\u017f\u0400-\u04ff]+/g, '');
+
+/**
+ * A whole scheme file reduced to the text a marking point is searched in.
+ *
+ * Several forms of it, not one, joined by a character normalise() can never
+ * produce so that nothing matches across the seam: the scheme as printed, the
+ * scheme with inline part labels removed, the scheme with the degree sign read
+ * as a degree sign, and the scheme with a stacked fraction's digits read as
+ * digits.
+ *
+ * Deleting the inline labels outright would be simpler and wrong: some marking
+ * points ARE printed behind one, and quote it — "(i) PAYE which Gemma has to
+ * pay: 17,325" is the answer in Business 2025 HL, and sixteen other shipped rows
+ * read the same way. Searching every form keeps all of those matching while
+ * letting a point quoted across an intruding label match too. Nothing is added
+ * to any form, so no wording the SEC did not print can pass — the guard only
+ * stops rejecting the SEC's own.
+ */
+/**
+ * The double t an SEC font prints once.
+ *
+ * The 2024 Ordinary Chemistry scheme embeds a font whose "tt" ligature maps to a
+ * single t, so it reads "pipete", "atraction", "leters", "writen". Unlike the
+ * ligature glyphs above there is nothing in the text to say which t should be
+ * two, so it cannot be repaired — only compared around, by collapsing tt on BOTH
+ * sides. Restricted to tt because tt is what the evidence shows; collapsing every
+ * doubled letter would loosen matching far past the defect.
+ */
+const collapseTT = (t) => t.replace(/tt/g, 't');
+
+/**
+ * The MARKS COLUMN, where the converter rejoined it into the middle of a
+ * marking point.
+ *
+ * An SEC scheme laid out as a table prints the marks in their own narrow
+ * right-hand column, and extract-scheme.py puts each cell back on the printed
+ * row it shared — which is right, and which lands the number in the middle of
+ * a wrapped answer:
+ *
+ *     (c) Any valid point: goddess of the hearth, goddess of the eternal flame of 3
+ *     Rome. 3 marks.
+ *     (b) 1 mark each: Athena, Poseidon, Zeus, Hephaestus, Erechtheus, Cecrops, Boutes, 3
+ *     Pandrosus
+ *
+ * A card quoting the SEC's own answer — "…the eternal flame of Rome",
+ * "…Boutes, Pandrosus" — then cannot be found in the SEC's own scheme, because
+ * a tariff is sitting inside the sentence. Twenty-two correct Classical Studies
+ * cards were dropped over it.
+ *
+ * Only the column cell is stripped — a bare integer at the END of a line. An
+ * ADDED form, for the reason foldOriya and ORDINAL_TARIFF give: an added form
+ * can only ever let more of the SEC's own text through, while folding both
+ * sides has cost a card before, and a marking point that genuinely ends in a
+ * number still matches on the printed form. An inline "3 marks." is NOT
+ * stripped here: a card must not quote across one, it must stop at it.
+ */
+const MARKS_COLUMN = /(?<=\S)[ \t]+\d{1,3}[ \t]*$/gm;
+
+/** The last form comparableScheme() emits: the whole scheme with tt collapsed. */
+const collapsedCache = new Map();
+
+/**
+ * Does this marking point appear in this scheme?
+ *
+ * Imported by the build and by test/markBankDeck.test.ts so the shipped deck is
+ * re-checked by the rule that admitted it.
+ */
+export const claimMatches = (scheme, claim) => {
+  // An empty crop/selector is not source evidence. Check the original text:
+  // punctuation-only answers must retain the existing comparison behaviour.
+  if (!claim.trim()) return false;
+  const c = normalise(claim);
+  if (scheme.includes(c)) return true;
+  let collapsed = collapsedCache.get(scheme);
+  if (collapsed === undefined) {
+    collapsed = collapseTT(scheme);
+    collapsedCache.set(scheme, collapsed);
+  }
+  return collapsed.includes(collapseTT(c));
+};
+
+/**
+ * The build's whole provenance rule for one claim, as build-deck.mjs applies
+ * it: the claim appears in the scheme, or -- for a MENU option only -- it
+ * pairs a label with its value ("thoracic — 12", "Negative — Will increase
+ * inflation: …") and each half appears. Such an option was read from a
+ * scheme TABLE, names in one row and values in the next (2017 HL Biology
+ * Q15(b)(i)), so the two halves are never adjacent in the text layer.
+ *
+ * provcheck.mjs, the authoring pre-check, uses this; build-deck.mjs keeps its
+ * inline copy of the same lines (see its provenance loop). The pre-check
+ * lacked the halves rule and reported 24 such Economics 2019 Ordinary options
+ * as untraceable that the build accepted and shipped.
+ */
+export const claimTraces = (scheme, claim, { menuOption = false } = {}) => {
+  if (claimMatches(scheme, claim)) return true;
+  if (!menuOption) return false;
+  const halves = String(claim).split(/\s—\s/);
+  return halves.length === 2 && halves.every(half => half.trim() && claimMatches(scheme, half));
+};
+
+/**
+ * The tariff cell an SEC scheme prints IN THE MIDDLE of what it is pricing, in
+ * a language whose word for a mark is not "mark".
+ *
+ * The nine non-curricular EU languages carded in September 2026 set the
+ * reprinted question, then the price on a line of its own, then the answer:
+ *
+ *     2. Hány hajó közlekedik esténként a Duna belvárosi szakaszán átlagosan?
+ *     (5 pont)
+ *     Válasz a 4. bekezdésben: A Duna belvárosi szakaszán esténként átlagosan
+ *
+ * so a card quoting the answer alone cannot be found in the scheme it was
+ * lifted from — the price sits between the halves once the lines are joined.
+ * Bulgarian prints the same cell without a bracket ("5 точки") and Finnish
+ * abbreviates it ("5p."), and both land in the same place.
+ *
+ * Stripped as an ADDED form, for the reason ORDINAL_TARIFF and INLINE_ASIDE
+ * are: a fold applied to both sides is symmetric and a symmetric fold has cost
+ * a card before, while an added form can only ever let more of the SEC's own
+ * text through. No claim ever contains a tariff cell — the authoring scripts
+ * take the price off before the row is written.
+ */
+const LANGUAGE_TARIFF = new RegExp(
+  String.raw`\(?\s*\d{1,3}\s*(?:[x×*]\s*\d{1,2}\s*)?`
+  + `(?:pontot|pont|точки|точка|bodova|bodov|bodu|body|bod|po[äa]ng|punkti|`
+  + `punkt|pistett[äa]|point|to[čc]ke|to[čc]ka|to[čc]k|puncte|punct|punten|`
+  + `punt|pontos|ponto|marks?|p)\\.?\\s*\\)?`, 'gi');
+
+export const comparableScheme = (raw) => {
+  const sourceLines = raw.replace(MARKS_CELL, ' ').replace(PAGE_MARKER, ' ').replace(PAGE_FOOTER, ' ')
+    .split('\n');
+  // A consecutive run of numeric-only lines can itself be the answer: the
+  // 2025 OL flowchart outputs 0, 2, 4, 6, 8, 10, one value per scheme line.
+  // Single numeric lines remain excluded as ambiguous mark/page cells. Requiring
+  // a run of at least two preserves the exact printed sequence without making
+  // an arbitrary numeric claim match an unrelated tariff elsewhere.
+  const numericRuns = [];
+  let numericRun = [];
+  for (const line of sourceLines) {
+    if (MARKS_ONLY.test(line)) numericRun.push(line.trim());
+    else {
+      if (numericRun.length >= 2) numericRuns.push(normalise(numericRun.join(' ')));
+      numericRun = [];
+    }
+  }
+  if (numericRun.length >= 2) numericRuns.push(normalise(numericRun.join(' ')));
+  const lines = sourceLines.filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l));
+  const joined = lines.join(' ');
+  const whole = normalise(joined);
+  return [
+    whole,
+    normalise(lines.map((l) => l.replace(LEADING_LABEL, '')).join(' ')),
+    whole.replace(DEGREE_O, '$1c'),
+    normalise(foldOriya(joined)),
+    normalise(joined.replace(ORDINAL_TARIFF, ' ')),
+    normalise(joined.replace(INLINE_ASIDE, ' ')),
+    normalise(joined.replace(SPLIT_ONLY, ' ')),
+    normalise(joined.replace(LANGUAGE_TARIFF, ' ')),
+    normalise(repairGlyphs(joined)),
+    normalise(sourceLines.map((l) => l.replace(MARKS_COLUMN, ''))
+      .filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l)).join(' ')),
+    ...numericRuns,
+  ].join('|');
+};

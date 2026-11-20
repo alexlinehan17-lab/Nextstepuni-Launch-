@@ -1,0 +1,389 @@
+{
+  "reviewer": "Codex second worker /root/russian_independent_review",
+  "recordedAt": "2026-11-20T12:21:04.710443+00:00",
+  "scope": "Bounded independent read-only diagnosis/preparation. Pure small predicate and cached-source text checks only; not a generator, heavy command, browser, source census or release check.",
+  "pin": "c369eabcd0156424cf604783dd399d0c5cf64fd2",
+  "candidates": [
+    {
+      "year": 2022,
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/proposed-48-after-third-reading.json",
+      "sha256": "a66a9e40753549d3c29b2f57a3c1485b1a357f565c3e0e6521a7fa28a30a1280"
+    },
+    {
+      "year": 2023,
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/proposed-50-authored-cards.json",
+      "sha256": "67cd973f737ed8e04f4db92edec3ecc7e6048685bd7e4d9eb570a66fd245ace1"
+    }
+  ],
+  "counts": {
+    "cards": 98,
+    "marks": 465,
+    "criterionRows": 99,
+    "rows": 126,
+    "sourceClaims": 145,
+    "notices": 21,
+    "soleNotices": 13,
+    "lastNotices": 8,
+    "newIdsAbsentFromPinnedMain": 98
+  },
+  "requestedFailureClassInventory": {
+    "singletonCriterionParts": [],
+    "invalidCriterionStepsOrParts": [],
+    "nonliteralBuilderRowOrOptionClaims": [],
+    "duplicateQuestionRefsWithin98OrAgainstPinnedMain": [],
+    "shortQuestionText": [],
+    "repeatedOrMisplacedOrWrongFixedNotices": [],
+    "emptyRowContextNoteSerializerOmissions": []
+  },
+  "interpretation": "None of the requested failure classes occurs in the exact final candidate data under the inspected predicates. This does not predict a complete builder result because the deferred source/registration dependencies are intentionally not installed.",
+  "sourceEvidence": {
+    "intendedTranscriptClaims": 145,
+    "literalCachedOriginalPdfClaims": 145,
+    "differences": 0,
+    "details": "current-original-pdf-claim-trace.json",
+    "scope": "Whitespace/native-spatial text traces only for labels/options actually checked by the builder; this is not a fresh visual re-reading or a full contextNote validation."
+  },
+  "notices": [
+    {
+      "id": "unprinted-answer",
+      "index": 8,
+      "kind": "criterion",
+      "marks": 0,
+      "form": "last",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 0,
+      "kind": "criterion",
+      "marks": 2,
+      "form": "sole",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 2,
+      "kind": "criterion",
+      "marks": 0,
+      "form": "last",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 1,
+      "kind": "criterion",
+      "marks": 5,
+      "form": "last",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 0,
+      "kind": "criterion",
+      "marks": 4,
+      "form": "sole",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "response-1",
+      "index": 0,
+      "kind": "criterion",
+      "marks": 5,
+      "form": "sole",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 1,
+      "kind": "criterion",
+      "marks": 0,
+      "form": "last",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 0,
+      "kind": "criterion",
+      "marks": 1,
+      "form": "sole",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 0,
+      "kind": "criterion",
+      "marks": 1,
+      "form": "sole",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 1,
+      "kind": "criterion",
+      "marks": 0,
+      "form": "last",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 1,
+      "kind": "criterion",
+      "marks": 0,
+      "form": "last",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 1,
+      "kind": "criterion",
+      "marks": 0,
+      "form": "last",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 1,
+      "kind": "criterion",
+      "marks": 0,
+      "form": "last",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 0,
+      "kind": "criterion",
+      "marks": 1,
+      "form": "sole",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 0,
+      "kind": "criterion",
+      "marks": 3,
+      "form": "sole",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 0,
+      "kind": "criterion",
+      "marks": 1,
+      "form": "sole",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 0,
+      "kind": "criterion",
+      "marks": 2,
+      "form": "sole",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 0,
+      "kind": "criterion",
+      "marks": 10,
+      "form": "sole",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 0,
+      "kind": "criterion",
+      "marks": 2,
+      "form": "sole",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 0,
+      "kind": "criterion",
+      "marks": 2,
+      "form": "sole",
+      "exactPredicateSatisfied": true
+    },
+    {
+      "id": "unprinted-answer",
+      "index": 0,
+      "kind": "criterion",
+      "marks": 6,
+      "form": "sole",
+      "exactPredicateSatisfied": true
+    }
+  ],
+  "knownPrerequisites": {
+    "lcvpMissingFromPinnedDeferredId": true,
+    "pinnedSourceFiles": [
+      {
+        "path": "scripts/markbank/authoring/lcvp/2022-cl-deferred-review.json",
+        "presentInPin": false
+      },
+      {
+        "path": "examiner-reports/lcvp/schemes/2022-cl-deferred.md",
+        "presentInPin": false
+      },
+      {
+        "path": "scripts/markbank/authoring/lcvp/2023-cl-deferred-review.json",
+        "presentInPin": false
+      },
+      {
+        "path": "examiner-reports/lcvp/schemes/2023-cl-deferred.md",
+        "presentInPin": false
+      }
+    ],
+    "sourceBindingEvidence": "The existing 19 Nov deferred-candidate-source-binding-preflight covers earlier 47/50 payloads. Final exact 48/50 source review/tasks and binding verification must retain the C6(c)-2 addition and final hashes; do not relabel the older proof.",
+    "coordinatorOwnership": "Shared DEFERRED_ID change remains coordinator-owned and unapplied; do not bypass its guard or substitute June scheme/filenames.",
+    "filingDependencies": [
+      {
+        "year": 2022,
+        "pending": []
+      },
+      {
+        "year": 2023,
+        "pending": [
+          {
+            "cardId": "lcvp-2023-cl-deferred-a4",
+            "headingIds": [
+              "link-modules-common-1-introduction-to-working-life"
+            ],
+            "how": null,
+            "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+            "reason": "Identifies employer responsibilities for workplace health and safety.",
+            "internalTopicId": "lcvp-link-modules-0-0",
+            "questionRef": "2023 CL Section A Q4 — Deferred sitting",
+            "previousReading": {
+              "cardId": "lcvp-2023-cl-deferred-a4",
+              "headingIds": [
+                "link-modules-common-1-introduction-to-working-life"
+              ],
+              "how": "r2",
+              "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+              "reason": "Health and safety in the workplace.",
+              "internalTopicId": "lcvp-link-modules-0-0",
+              "questionRef": "2023 CL Section A Q4 — Deferred sitting",
+              "firstHeadingIds": [
+                "link-modules-common-1-introduction-to-working-life"
+              ],
+              "secondHeadingIds": [
+                "link-modules-common-1-introduction-to-working-life"
+              ]
+            },
+            "secondHeadingIds": [
+              "link-modules-common-audio-visual"
+            ],
+            "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
+          },
+          {
+            "cardId": "lcvp-2023-cl-deferred-a6",
+            "headingIds": [
+              "link-modules-common-1-work-placement"
+            ],
+            "how": null,
+            "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-recall-consistency/comparison.json",
+            "reason": "Evaluates arrangements that make a work placement meaningful.",
+            "internalTopicId": "lcvp-link-modules-0-3",
+            "questionRef": "2023 CL Section A Q6 — Deferred sitting",
+            "previousReading": {
+              "cardId": "lcvp-2023-cl-deferred-a6",
+              "headingIds": [
+                "link-modules-common-1-work-placement"
+              ],
+              "how": "r2",
+              "evidence": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/category-comparison.json",
+              "reason": "Providing meaningful work placement.",
+              "internalTopicId": "lcvp-link-modules-0-3",
+              "questionRef": "2023 CL Section A Q6 — Deferred sitting",
+              "firstHeadingIds": [
+                "link-modules-common-1-work-placement"
+              ],
+              "secondHeadingIds": [
+                "link-modules-common-1-work-placement"
+              ]
+            },
+            "secondHeadingIds": [
+              "link-modules-common-audio-visual"
+            ],
+            "methodStatus": "New difference under coordinator recall/content rule; third reading pending"
+          }
+        ]
+      }
+    ],
+    "otherReleaseDependencies": "Existing recording/source-opening/Atlas/UI/production work remains separate. No video readiness or live clearance is inferred."
+  },
+  "repairRecommendation": "No candidate repair is supported by these five failure-class checks. Retain all source text, marks, IDs/concepts and frozen packets. Integrate the exact deferred source reviews/transcripts and coordinator routing prerequisite before a separately scheduled isolated builder run.",
+  "existingEvidence": [
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/source-parts.json",
+      "sha256": "732a6460d1def245044478b94c1703b1898d20b22cde6a4359d728ce67be030c",
+      "role": "Earlier source review/trace; historical candidate hashes are not relabelled as current"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/source-claim-audit.json",
+      "sha256": "d80cb8044dfed682fdf0a51fe0d8ffc4507806b53a3f8a2f9d484f557cb3bf83",
+      "role": "Earlier source review/trace; historical candidate hashes are not relabelled as current"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/second-reader-candidate-review.json",
+      "sha256": "01cd0071c910bb3bc4ffbf12df37f724cc642012085a0dc707537b2b1f856c45",
+      "role": "Earlier source review/trace; historical candidate hashes are not relabelled as current"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/second-reader-bullet-normalization-confirmation.json",
+      "sha256": "0c9a3f90806a81f66f5bf19183cfae1ff014dd263d78863af8e0ae7f776572b7",
+      "role": "Earlier source review/trace; historical candidate hashes are not relabelled as current"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/question-and-complete-scheme-trace-current.json",
+      "sha256": "e69afaa52c360c480027b95263cf83c02ed7c77783dea2ad1733946c92cb81c8",
+      "role": "Earlier source review/trace; historical candidate hashes are not relabelled as current"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/question-and-complete-scheme-trace.json",
+      "sha256": "21a51b37afa4fb06043f277ad822a33f179d279bb80ff6040c73e8657e861a9c",
+      "role": "Earlier source review/trace; historical candidate hashes are not relabelled as current"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/first-reading-frozen.json",
+      "sha256": "51777ecc8f8639b740218dc456db40a63ddfef70655484498bd98c1bf98e8ac5",
+      "role": "Earlier frozen source reading or final boundary decision"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/third-reader-decision.json",
+      "sha256": "ec8fae088bedbc0e7db2d6036ea790cc17ea89ac9975c62a85279bff580ccbf0",
+      "role": "Earlier frozen source reading or final boundary decision"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/source-parts.json",
+      "sha256": "78c4e08272138eb7a1b4155f4d2b86e6fa33461f758039b4bd72c833d5e600bc",
+      "role": "Earlier source review/trace; historical candidate hashes are not relabelled as current"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/source-claim-audit.json",
+      "sha256": "20273109efeed25d27e00c8b734c1f23464ae0251042e80daafa1e21907c51d3",
+      "role": "Earlier source review/trace; historical candidate hashes are not relabelled as current"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/second-reader-candidate-review.json",
+      "sha256": "0fdbc5bb2001690ccee1a1d31817523f79741fb10bb400a57498200475629750",
+      "role": "Earlier source review/trace; historical candidate hashes are not relabelled as current"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/question-and-complete-scheme-trace.json",
+      "sha256": "e979e0ce96b3ecd93dd2a81e1639e05581f337cb333d51089ed7d203e46ccf18",
+      "role": "Earlier source review/trace; historical candidate hashes are not relabelled as current"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/first-reading-frozen.json",
+      "sha256": "944bfb81d07f6b4059abdbd2e4c5b6734286579903f7bfe7be8d28a98173cbb5",
+      "role": "Earlier frozen source reading or final boundary decision"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/third-reader-decision.json",
+      "sha256": "15848a41a33b471b64468438fce20db2dc86da98008802f7a27fe0b7e98cfd4b",
+      "role": "Earlier frozen source reading or final boundary decision"
+    }
+  ],
+  "preservation": "Both final candidate hashes and both filing-index hashes rechecked unchanged; no runner, lane, canonical filing, shared code or source candidate edited."
+}

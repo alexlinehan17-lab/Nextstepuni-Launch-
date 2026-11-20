@@ -1,0 +1,7 @@
+The final 48 asks for 2022 and 50 for 2023 are now explicitly bound through the unchanged source-map, indexed-pair and transcript APIs. All 98 resolve to `LC462CLP000EV-deferred`, with the correct English deferred question paper and scheme bytes. Each record includes the exact original question/scheme pages, case-study or instruction pages where present, and transcript hash. The added 2022 C6(c)-2 ID is included explicitly.
+
+The original 47/50 proof is unchanged. No saved producer script was found in the searched locations; this separate check uses the existing `lcvpSourceMap`, `resolveIndexedPaperFileid`, `resolvePaperFileid(..., 'deferred')`, `deferredPaperEntry` and `readLcvpDeferredScheme` APIs directly. Their pinned code is preserved beside the evidence.
+
+This proves source data lookup only. The pinned builder still has no LCVP DEFERRED_ID entry, and neither final source-review file nor deferred transcript is installed in that pinned tree. The isolated registered-source entry point correctly reports the missing review. The explicit callback/API path neither changes those guards nor establishes generator support.
+
+No candidate, lane, shared code, canonical source or earlier proof changed. No generator, heavy run, rendering, SEC request, browser or new visual reading occurred. Existing final source-reading/decision hashes were checked; page selections retain their original provenance. The parent can use this packet to prepare the eventual installation and separately scheduled generator check.

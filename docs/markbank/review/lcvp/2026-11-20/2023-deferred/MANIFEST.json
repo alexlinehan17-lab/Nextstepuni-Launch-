@@ -1,0 +1,112 @@
+{
+  "at": "2026-11-20T12:27:41.460582+00:00",
+  "year": 2023,
+  "sourceCandidateSha256": "67cd973f737ed8e04f4db92edec3ecc7e6048685bd7e4d9eb570a66fd245ace1",
+  "files": [
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/README.md",
+      "bytes": 901,
+      "sha256": "1bc07be6be43de80885060fc7eed93f669d6b7b2dd6433871c6fb7696a8610c7"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/candidate.json",
+      "bytes": 174930,
+      "sha256": "67cd973f737ed8e04f4db92edec3ecc7e6048685bd7e4d9eb570a66fd245ace1"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/source-binding/REPORT.json",
+      "bytes": 9186,
+      "sha256": "9a12e825b109b13c21b36e5c9dfcc22bae3860e8016043d5a9da03e7b2f9d543"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/source-binding/REPORT.md",
+      "bytes": 1521,
+      "sha256": "2d86ec9c147a76eafe4a12e5a3765e1b2efb226d2b89cc62132de621010313f7"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/source-binding/binding-inputs.json",
+      "bytes": 171043,
+      "sha256": "28fafa106696b8c826c467db2f352891d0d2231d80b24dcec2b959ab75d5b685"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/source-binding/check-explicit-bindings.mjs",
+      "bytes": 5123,
+      "sha256": "7df769197c53e5dac14e6445c2b5db78c4f2242079baef2c858476d462842b97"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/source-binding/final-98-explicit-source-bindings.json",
+      "bytes": 217421,
+      "sha256": "06c0f7a911b89c374cd143e36ff02315b23debc0a07cd4869d94e907df282482"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/source-binding/manifest.json",
+      "bytes": 1564,
+      "sha256": "4c199340f0b1f7e95b4c1234cf64eba0705d146f1c380e401e080ef8b1e22803"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/source-binding/pinned-read-only-code/scripts/markbank/lcvpSources.mjs",
+      "bytes": 4783,
+      "sha256": "c0cd8dc948f35470ec0cb9071747f357350f04c8c03b90c6a4c4c09ba616c397"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/source-binding/pinned-read-only-code/scripts/markbank/paperIndex.mjs",
+      "bytes": 21083,
+      "sha256": "197dccfd3c8a19c557dee57dce40366958fd82c254fe1653ce9ecfbd748e5fd8"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/static-review/REPORT.json",
+      "bytes": 15713,
+      "sha256": "2c8ac8aeb289927599978eab987ee448b90c03e43a4160f0153d6d36653e8bfc"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/static-review/REPORT.md",
+      "bytes": 1400,
+      "sha256": "38dac818f3059998de48d4a55af9835f4b0f9ccf60d2452be97d9ef61b9dc6a3"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/static-review/current-original-pdf-claim-trace.json",
+      "bytes": 43214,
+      "sha256": "3ebdf000576729b383dee9d43c45a5c1d6b665f6d0695751113308f712c98a3d"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/static-review/input-manifest.json",
+      "bytes": 5967,
+      "sha256": "ca47af1cdec9376c95b0e7c9c725276173603bb81427a5d2f345474f6b6b4f43"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/static-review/manifest.json",
+      "bytes": 1999,
+      "sha256": "0c76b65fe9a3e7740fc5b3ad524453128c767747d0d7ac91c4b789f530ba04e1"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/static-review/pinned-read-only-code/scripts/markbank/authoring/glyphmap.json",
+      "bytes": 4212,
+      "sha256": "a0e32f8c0233f1cb2499a8b0e7538c79406d9b9552b3e2318159a77bfeadadeb"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/static-review/pinned-read-only-code/scripts/markbank/build-deck.mjs",
+      "bytes": 154432,
+      "sha256": "b7cdf40b63bdec99ef25d83b7d928497dc879bfac6ee3c8790db46ad1526db78"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/static-review/pinned-read-only-code/scripts/markbank/questionText.mjs",
+      "bytes": 3122,
+      "sha256": "fc25d8f19c5601ffac2c066bd3133e1ff1540b9ba67fa9cbe59b8e1a91edba52"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/static-review/pinned-read-only-code/scripts/markbank/schemeText.mjs",
+      "bytes": 20728,
+      "sha256": "7a08b50a397aabe527573665a604ea437e8e279ec44636c76d04153c22f7ebe5"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/static-review/static-predicate-checks.mjs",
+      "bytes": 4338,
+      "sha256": "50835aefebdd574e5e8066c614be585d37722b8569f5233a6a6b4eef8910062f"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2023-deferred/static-review/static-predicate-findings.json",
+      "bytes": 93694,
+      "sha256": "ce0ca87f306499e0ea6962cee80e0868b8ca558a953c684e538e0535f57b941c"
+    }
+  ]
+}
