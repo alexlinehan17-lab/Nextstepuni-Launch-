@@ -7728,5 +7728,194 @@
   "truncated": false,
   "description": "The paper's own print of 2025 OL Q9(c)(i): \"(c) Water can be split into its elements by electrolysis using inert electrodes. The electrolyte is water, acidified with a few drops of sulfuric acid. The electrodes are connected to the positive and negative terminals of a direct current power supply. When the circuit is switched on, bubbles of gas form at both electrodes. During the electrolysis the volume of gas collected at the negative electrode is twice the volume of the gas collected at the positive electrode.\" with the word \"inert\" underlined, then \"(i) What is meant by the underlined term?\" The apparatus printed beside the text is not in this picture.",
   "questionRef": "2025 OL Q9(c)(i)"
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The structural formula of eugenol as the paper prints it: on the left, a carbon–carbon double bond with two H atoms on its end carbon and one on the other, joined through CH₂ to a benzene ring (a hexagon with a circle inside); the ring carries OH at its top right and an O–CH₃ group at its lower right.",
+  "questionRef": "2022 HL Q2(a) — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-paper-q2-funnel.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A separating funnel clamped to a retort stand, holding two liquid layers, the lower one labelled \"denser layer\"; a conical flask stands under the funnel's stem and a glass stopper lies on the bench beside it.",
+  "questionRef": "2022 HL Q2(c) — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-paper-q2b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Question 2's opening and part (b) as printed: \"Eugenol (boiling point 254 °C) is a heat sensitive substance that can be extracted from cloves as the major component of clove oil using steam distillation. The distillate produced consists of an emulsion of clove oil and water.\", with the word emulsion underlined; then \"(b) Explain the underlined term. Describe the appearance of the distillate.\"",
+  "questionRef": "2022 HL Q2(b) — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The students' results as a table: Time (minutes) 0, 1, 2, 3, 4, 5, 6, 7 and 8 against Volume O₂ at s.t.p. (cm³) 0, 20, 35, 46, 53, 57, 59, 60 and 60.",
+  "questionRef": "2022 HL Q3 — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-paper-q4j.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two photographs: on the left, the jagged-edged leaves of a stinging nettle plant; on the right, a heap of almonds, most in their pitted shells and one broken open.",
+  "questionRef": "2022 HL Q4(j) — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-paper-q5b-ii-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The nuclear equation as printed: carbon-14, written C with mass number 14 above and atomic number 6 below, gives X with mass number Y above (no number below) plus an electron, written e with 0 above and −1 below.",
+  "questionRef": "2022 HL Q5(b)(ii) — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-paper-q8a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Question 8(a) as printed: \"Alkenes and alkynes are described as unsaturated hydrocarbons. Explain the meaning of the underlined term.\", with the word hydrocarbons underlined.",
+  "questionRef": "2022 HL Q8(a) — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-paper-q8c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Apparatus for preparing ethyne: a dropping funnel holding water (labelled H₂O) above a conical flask with solid calcium carbide (labelled CaC₂) on its floor; a delivery tube from the flask's side arm runs into a trough of water and up into an inverted test tube, where the gas (labelled C₂H₂) collects.",
+  "questionRef": "2022 HL Q8(c) — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-paper-q9b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a laboratory ion exchanger: a tall clear cylinder labelled \"reservoir for cartridge\" with an outlet at its top labelled \"deionised water output\", a separate cylinder of granules labelled \"cartridge of deionising resins\", and a hose ending in a fitting labelled \"water supply connector\".",
+  "questionRef": "2022 HL Q9(b) — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-paper-q10b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The mass spectrometer's results for chromium as a table: isotopes ⁵⁰Cr, ⁵²Cr, ⁵³Cr and ⁵⁴Cr with natural abundances 4.345%, 83.789%, 9.501% and 2.365%.",
+  "questionRef": "2022 HL Q10(b) — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-paper-q11d-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Diagram of the cell that extracts aluminium: three blocks hanging from a bar labelled \"anode\" dip into the liquid labelled \"electrolyte\" in a tank whose lining is labelled \"cathode\"; the metal collects in a layer on the tank's floor and runs out through an outlet at the lower right labelled \"aluminium\".",
+  "questionRef": "2022 HL Q11(d)B — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-scheme-q1e-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 HL Q1(e)(iii) (deferred sitting), as the State Examinations Commission set it: the answer 14.29 to 14.3 % (3); its working, 1.68 over 11.76 × 100 = 14.29 % (3); or, allowing the crystals taken as pure ammonium iron sulfate (NH₄)₂Fe(SO₄)₂6H₂O, 56 over 392 × 100 = 14.29 % (3); and the note that 1 mark is deducted for incorrect rounding off that leaves the candidate's final numerical answer outside the given range, once only in (e).",
+  "questionRef": "2022 HL Q1(e)(iii) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-scheme-q2f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 HL Q2(f) (deferred sitting), as the State Examinations Commission set it: the answer 0.80 cm³ clove oil (6), with its working: 7 over 100 × 12 = 0.84 g clove oil (3), then 0.84 over 1.05 = 0.80 cm³ clove oil (3).",
+  "questionRef": "2022 HL Q2(f) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-scheme-q3a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 HL Q3(a) (deferred sitting), as the State Examinations Commission set it: DRAW: both reactants in flask (reaction vessel), one chemical labelled with name or formula [hydrogen peroxide added from dropping funnel not acceptable] // flask connected to graduated container, e.g. X or Y below, for oxygen collection [graduations marked or graduated, collecting, container labelled] (4 + 4); three drawings, A, B and C, of a vessel holding H₂O₂ and MnO₂ apart (the MnO₂ in a small tube inside a conical flask, at the closed end of a tilted test tube, on the floor of a flask), and two collectors, X a graduated cylinder inverted over water and Y a gas syringe; HOW: mix catalyst and hydrogen peroxide by disturbing test-tube / by rotating flask (3).",
+  "questionRef": "2022 HL Q3(a) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-scheme-q3c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 HL Q3(c) (deferred sitting), as the State Examinations Commission set it: PLOT: both axes correctly labelled (V / volume / cm³ / oxygen / O₂ / time / t / minutes / min) (3); appropriate, correct numeric scales on both axes (3); careful plotting of points other than (0, 0) (3); smooth curve of correct shape through origin (3); and its graph of volume (0 to 60) against time (0 to 8), the points joined by a curve that rises steeply from the origin and levels off at 60, with a tangent touching the curve near 4.5 minutes.",
+  "questionRef": "2022 HL Q3(c) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-scheme-q3d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 HL Q3(d)(ii) (deferred sitting), as the State Examinations Commission set it: the answer 3.8 – 4.8 cm³ oxygen per minute (6) [good tangent drawn to plotted curve at 4.5 minutes (4)]; any two points from a tangent drawn at 4.5 minutes, e.g. (2.0, 45.0) and (5.6, 60.0) (3); (60.0 − 45.0) over (5.6 − 2.0) = 15.0 over 3.6 = 4.17 [3.8 – 4.8] cm³ oxygen per minute (3); and its notes: the tangent must be drawn for work on instantaneous rate to be awarded full marks; the last 3 marks can be awarded for a rate within the stated range with no tangent drawn, or consequentially for work done on a poor tangent or a tangent placed at an incorrect time.",
+  "questionRef": "2022 HL Q3(d)(ii) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-scheme-q4d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 HL Q4(d) (deferred sitting), as the State Examinations Commission set it: the answer 3.6 × 10²² atoms (6), with its working: 448 over 22400 = 0.02 moles / 0.448 over 22.4 = 0.02 moles (3); 0.02 × 6.0 × 10²³ × 3 = 3.6 × 10²² atoms (3).",
+  "questionRef": "2022 HL Q4(d) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-scheme-q4f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 HL Q4(f) (deferred sitting), as the State Examinations Commission set it: the answer 0.5 moles per litre (M) (6), with its working: 3% (w/v) ⇒ 3 g per 100 cm³ / 30 g per litre (3); 30 over 60* = 0.5 moles per litre (3); [*Addition must be shown for error to be treated as slip.]",
+  "questionRef": "2022 HL Q4(f) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-scheme-q6c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 HL Q6(c) (deferred sitting), as the State Examinations Commission set it: the answer −1370 kJ (12), with its working: ΔH combustion = ΣΔH formation products − ΣΔH formation reactants = [2(−394)] kJ (3) + 3(−286)] kJ (3) − (−276) kJ (3); or = [(−788)] kJ (3) + (−858)] kJ (3) + 276 kJ (3); or = −1646 kJ (6) + 276 kJ (3); and = −1370 kJ (3); or, by equations, C₂H₅OH → 2C + 3H₂ + ½O₂ ΔH = 276 kJ (3), 2C + 2O₂ → 2CO₂ ΔH = −788 kJ (3) and 3H₂ + 1½O₂ → 3H₂O ΔH = −858 kJ (3), adding to C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O ΔH = −1370 kJ (3).",
+  "questionRef": "2022 HL Q6(c) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-scheme-q6c-profile.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 HL Q6(c) (deferred sitting), as the State Examinations Commission set it: its reaction profile: energy on the vertical axis against reaction progress on the horizontal; a level line for the reactants rises to a tall narrow peak and falls to a level line for the products, well below the reactants'.",
+  "questionRef": "2022 HL Q6(c) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-scheme-q7e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 HL Q7(e) (deferred sitting), as the State Examinations Commission set it: the answer 400 (12), with its working under N₂(g) + 3H₂(g) ⇌ 2NH₃(g): Initially 16.8 g, 1.4 g, 0 g; 0.6 mol, 0.7 mol, 0 mol // 0.6 mol/l, 0.7 mol/l, 0 mol/l (3); Change 0.6 − x mol, 0.7 − 3x mol, 2x mol ⇒ x = 0.2 mol // the same per litre; or 6.8 g NH₃ = 0.4 mol ⇒ x = 0.2 mol // per litre (3); Equil 0.4 mol/l, 0.1 mol/l, 0.4 mol/l (3); Kc = [NH₃]² over [N₂][H₂]³ = [0.4]² over [0.4][0.1]³ = 400 (3).",
+  "questionRef": "2022 HL Q7(e) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-scheme-q8e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 HL Q8(e) (deferred sitting), as the State Examinations Commission set it: DESCRIBE: initiation, homolysis (splitting, fission) of the chlorine molecule (Cl₂) into free radicals by ultraviolet (uv) light, Cl₂ → 2Cl• over uv (3); propagation (1), a chlorine radical reacts with a methane molecule giving hydrogen chloride and a methyl radical, Cl• + CH₄ → HCl + CH₃• (3), with [Hydrochloric acid not acceptable for HCl and cancellation applies.] [Where CH₃ used instead of CH₃• deduct 3 marks but only once in (c).]; propagation (2), a methyl radical reacts with a chlorine molecule giving monochloromethane and a chlorine radical, CH₃• + Cl₂ → CH₃Cl + Cl• (3); Allow (3) for chain reaction occurs / propagation steps repeat until one reactant used up or until termination reached if marks for (0) or (3) marks awarded for propagation (1) and propagation (2); termination, combination of remaining radicals, 2Cl• → Cl₂, Cl• + CH₃• → CH₃Cl, 2CH₃• → C₂H₆ (3). Two boxed side notes: where a candidate refers in name or in a drawing to ethane instead of methane, ethyl instead of methyl or butane instead of ethane, deduct 3 marks but only once in (c); where a radical is referred to as an ion, or a diagram shows a radical but the description refers to an ion, cancellation applies each time. GIVE: tetraethyllead (source of radicals) increases the rate by providing ethyl free radicals / oxygen (radical inhibitor) decreases the rate by removing free radicals / only occurs in sunlight (UV) / reaction cannot occur in darkness / for every photon absorbed, many choromethane molecules obtained / small amounts of ethane formed (3).",
+  "questionRef": "2022 HL Q8(e) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-scheme-q9a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 HL Q9(a)(iii) (deferred sitting), as the State Examinations Commission set it: the answer 308 p.p.m. CaCO₃ (12), with its working: 15.4 × 0.010 over 1000 = 0.000154 moles edta (3); ⇒ 0.000154 moles M²⁺ in 50 cm³ ⇒ 0.000154 × 20 = 0.00308 moles M²⁺ per litre (3); ⇒ 0.00308 × 100* = 0.308 g CaCO₃ per litre (3); ⇒ 0.308 × 1000 = 308 p.p.m. CaCO₃ (3); or 50.0 × M over 1 = 15.4 × 0.010 over 1 (3), M = 0.308 M as printed (3), then the same two steps to 0.308 g CaCO₃ per litre (3) and 308 p.p.m. CaCO₃ (3); and its notes: [*Addition must be shown for error to be treated as slip.] Incorrect substitution into formula is not a mathematical slip. [1 mark to be deducted for incorrect rounding off resulting in candidate's final numerical answer lying outside given values but deduction to be made once only in (iii).]",
+  "questionRef": "2022 HL Q9(a)(iii) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-scheme-q10b-calculation.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 HL Q10(b) (deferred sitting), as the State Examinations Commission set it: CALCULATE: the answer 52.1 (9), with its working: (50 × 4.345) + (52 × 83.789) + (53 × 9.501) + (54 × 2.365) = 217.25 + 4357.028 + 503.553 + 127.71 = (3) 5205.541 (mass of 100 atoms) (3); ⇒ 5205.541 ÷ 100 = 52.05541 (3); Minus 1 if not rounded to 1 decimal place.",
+  "questionRef": "2022 HL Q10(b) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-HL-deferred-scheme-q11b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 HL Q11(b) (deferred sitting), as the State Examinations Commission set it: DETERMINE: 0.0025 moles sulfuric limiting / zinc in excess 0.0031 moles (12), with its working: 25 × 0.10 over 1000 = 0.0025 moles sulfuric acid // 0.20 over 65 = 0.0031 moles Zn (6 + 3); ⇒ sulfuric limiting / zinc in excess (3); [Work must be shown for marks to be awarded].",
+  "questionRef": "2022 HL Q11(b) — Deferred sitting",
+  "solution": true
  }
 ]

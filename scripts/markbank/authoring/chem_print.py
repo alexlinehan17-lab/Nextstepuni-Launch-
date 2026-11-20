@@ -1194,7 +1194,13 @@ def learn_repairs(texts):
 # every one of them in the Chemistry corpus comes from those two fonts.
 # 0xB5 (proportional) is SymbolMT's ∝ in the 2019 Ordinary scheme's Q4(b),
 # "p ∝ 1/V / V ∝ 1/p" (PDF page 8), which the shared map reads as nothing.
-SYMBOL_FONT = {'\uf0de': '⇒', '\uf0b4': '×', '\uf0b5': '∝'}
+# The 2022 Higher deferred scheme sets three more in SymbolMT, read by the same encoding (0x61 alpha, 0x62
+# beta, 0xBA equivalence) and each cropped out of the page and looked at: "alpha (α)" and "beta (β)" (PDF
+# page 13) and "(CH≡CH)" (page 16), which the shared map reads as nothing; the 2023 Higher deferred scheme
+# prints the "≡" once. No June Chemistry paper or scheme holds any of the three. (Its gamma, SymbolMT 0x67,
+# reaches this reader as the shared map's Wingdings 3 arrow: DEFERRED_SCHEME_REPAIRS.)
+SYMBOL_FONT = {'\uf0de': '⇒', '\uf0b4': '×', '\uf0b5': '∝',
+               '\uf061': 'α', '\uf062': 'β', '\uf0ba': '≡'}
 
 
 def display(t):
@@ -1223,11 +1229,16 @@ OLD_OL_HEADS.add((2011, 'hl'))
 PAPER_ALT_LETTERS[(2011, 'hl')] = {('11', 'c')}
 
 
-# A deferred scheme's misprints that stop the reader reading what it means, each (printed, meant) and
-# found on exactly one line: 2022 HL Q1(b) heads its menu "ANY 0NE:" with a zero for the O.
+# A deferred scheme's misprints, and glyphs the shared map misreads, that stop the reader reading what it
+# means, each (printed, meant) and found on exactly one line: 2022 HL Q1(b) heads its menu "ANY 0NE:" with
+# a zero for the O.
 DEFERRED_SCHEME_REPAIRS = {
-    (2022, 'hl'): (('ANY 0NE:', 'ANY ONE:'),),
+    # Q5(b)(i) prints "gamma (γ)" twice in SymbolMT (PDF page 13, x 175, y 318 and 332; 0x67, cropped and looked
+    # at), which the shared glyph map reads as Wingdings 3's 0x67, "→".
+    (2022, 'hl'): (('ANY 0NE:', 'ANY ONE:'), ('gamma (→) is more', 'gamma (γ) is more'),
+                   ('gamma (→) travels', 'gamma (γ) travels')),
 }
+
 
 
 class Printed:
@@ -1249,6 +1260,12 @@ class Printed:
             year = lvl = None   # no June repair keyed (year, lvl) may touch a deferred document
         # (2013 OL: a head set in one run with its words, split_heads.)
         self.paper_lines = split_heads(read_lines(self.paper_path), year, lvl)
+        if sitting == 'deferred':
+            # The deferred papers' running footer reads "Leaving Certificate Examination" with no year (each page,
+            # x 57, y 782), which FOOTER ("... 2022") does not read: it was welded onto the asks either side of a
+            # page break ("... the mass of the unused reactant. Leaving Certificate Examination").
+            self.paper_lines = [l for l in self.paper_lines
+                                if not (l.y0 > 765 and l.text == 'Leaving Certificate Examination')]
         if (year, lvl) == (2012, 'hl'):
             # 2012 HL paper page 5 sets the state symbol "(l)" of the product Q6(a)(iii) draws in
             # full (2,2,4-trimethylpentane) as a run of its own after the structure's last "H"
@@ -2073,6 +2090,8 @@ class Cards:
         # ("2025 HL Q10(c)(i) — steps 1–5"): the build keeps one card per
         # citation, and the reconciler reads only what precedes the " — ".
         ref = self.ref(keys) + (f' — {ref_suffix}' if ref_suffix else '')
+        if getattr(self.P, 'sitting', None) == 'deferred':
+            ref += ' — Deferred sitting'   # a deferred card says so twice: its id and its citation
         c = self._card(full, self.P.year, self.level, topic,
                        concept, ref, qtext or self.qtext(keys, deep=deep),
                        notation or '', total, rows, notes, stem=stem,

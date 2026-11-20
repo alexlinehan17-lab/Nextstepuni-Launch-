@@ -116957,5 +116957,3165 @@
     }
    }
   ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q1-a",
+  "topicId": "chem-4-1",
+  "conceptId": "transferring-all-solution-to-volumetric-flask",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q1(a) — Deferred sitting",
+  "questionText": "How could you ensure that all the solution was transferred from the small beaker to the volumetric flask?",
+  "stem": "Ammonium iron(II) sulfate crystals are used in lawn feed. To analyse the iron(II) content of ammonium iron(II) sulfate crystals, 11.76 g of the crystals were used to make up 250 cm³ of solution. The ammonium iron(II) sulfate crystals were first dissolved in about 30 cm³ of dilute sulfuric acid in a small beaker. This solution was then carefully transferred to a 250 cm³ volumetric flask and the solution was made up to the mark using deionised water. The resulting iron(II) solution was measured in 25.0 cm³ portions into a conical flask, about 15 cm³ of dilute sulfuric acid were added and the mixture was then titrated with a previously standardised 0.020 M solution of potassium manganate(VII) (KMnO₄).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "rinse (wash) beaker a number (a few, several) times / rinse (wash) repeatedly",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme prices the three points 4 + (2 × 2)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "with small quantities of deionised water",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "add rinsings into volumetric flask",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q1-b",
+  "topicId": "chem-4-1",
+  "conceptId": "rinsing-and-filling-the-burette",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q1(b) — Deferred sitting",
+  "questionText": "Describe the procedure for washing and filling a burette with the potassium manganate(VII) solution.",
+  "stem": "Ammonium iron(II) sulfate crystals are used in lawn feed. To analyse the iron(II) content of ammonium iron(II) sulfate crystals, 11.76 g of the crystals were used to make up 250 cm³ of solution. The ammonium iron(II) sulfate crystals were first dissolved in about 30 cm³ of dilute sulfuric acid in a small beaker. This solution was then carefully transferred to a 250 cm³ volumetric flask and the solution was made up to the mark using deionised water. The resulting iron(II) solution was measured in 25.0 cm³ portions into a conical flask, about 15 cm³ of dilute sulfuric acid were added and the mixture was then titrated with a previously standardised 0.020 M solution of potassium manganate(VII) (KMnO₄).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "rinse (wash) with deionised water",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices the washing [2 × 3], one for each rinse, and adds: [correct order essential; one correct (3)]."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "rinse (wash) with potassium manganate(VII) (permanganate, KMnO₄, MnO₄ –, solution it is to contain)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "clamp vertical",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Any one of these for the filling, [6].",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "clamp vertical",
+      "use a funnel to fill",
+      "ensure part below tap (nozzle) is full before zeroing",
+      "read burette at eye‐level",
+      "read top (bottom) of meniscus",
+      "remove funnel before taking reading"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q1-c",
+  "topicId": "chem-4-1",
+  "conceptId": "excess-acid-in-manganate-titration",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q1(c) — Deferred sitting",
+  "questionText": "Why was dilute sulfuric acid added to the iron(II) solution in the conical flask before the titrations were commenced?",
+  "stem": "Ammonium iron(II) sulfate crystals are used in lawn feed. To analyse the iron(II) content of ammonium iron(II) sulfate crystals, 11.76 g of the crystals were used to make up 250 cm³ of solution. The ammonium iron(II) sulfate crystals were first dissolved in about 30 cm³ of dilute sulfuric acid in a small beaker. This solution was then carefully transferred to a 250 cm³ volumetric flask and the solution was made up to the mark using deionised water. The resulting iron(II) solution was measured in 25.0 cm³ portions into a conical flask, about 15 cm³ of dilute sulfuric acid were added and the mixture was then titrated with a previously standardised 0.020 M solution of potassium manganate(VII) (KMnO₄).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To ensure Mn⁷⁺ → Mn²⁺ / prevent formation of brown ppt.(MnO₂ / Mn⁴⁺)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q1-d",
+  "topicId": "chem-4-1",
+  "conceptId": "manganate-titration-end-point",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q1(d) — Deferred sitting",
+  "questionText": "How was the end point detected?",
+  "stem": "Ammonium iron(II) sulfate crystals are used in lawn feed. To analyse the iron(II) content of ammonium iron(II) sulfate crystals, 11.76 g of the crystals were used to make up 250 cm³ of solution. The ammonium iron(II) sulfate crystals were first dissolved in about 30 cm³ of dilute sulfuric acid in a small beaker. This solution was then carefully transferred to a 250 cm³ volumetric flask and the solution was made up to the mark using deionised water. The resulting iron(II) solution was measured in 25.0 cm³ portions into a conical flask, about 15 cm³ of dilute sulfuric acid were added and the mixture was then titrated with a previously standardised 0.020 M solution of potassium manganate(VII) (KMnO₄).",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 2]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "faint (pale) pink colour",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "persists (remains, becomes permanent)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [‘Pink to colourless’ not acceptable.]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q1-e-i",
+  "topicId": "chem-4-1",
+  "conceptId": "iron-ii-concentration-from-titre",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q1(e)(i) — Deferred sitting",
+  "questionText": "the concentration of the solution in the volumetric flask in moles per litre of iron(II),",
+  "stem": "Ammonium iron(II) sulfate crystals are used in lawn feed. To analyse the iron(II) content of ammonium iron(II) sulfate crystals, 11.76 g of the crystals were used to make up 250 cm³ of solution. The ammonium iron(II) sulfate crystals were first dissolved in about 30 cm³ of dilute sulfuric acid in a small beaker. This solution was then carefully transferred to a 250 cm³ volumetric flask and the solution was made up to the mark using deionised water. The resulting iron(II) solution was measured in 25.0 cm³ portions into a conical flask, about 15 cm³ of dilute sulfuric acid were added and the mixture was then titrated with a previously standardised 0.020 M solution of potassium manganate(VII) (KMnO₄). The titration reaction is described by the equation: MnO₄ – + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O In the titrations, 25.0 cm³ portions of the iron(II) solution made from the crystals required 30.0 cm³ of the 0.020 M KMnO₄ solution for complete reaction. Calculate",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "30 × 0.02 ÷ 1000 = 0.0006 moles MnO₄ –",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints 30 × 0.02 over 1000 as a fraction; ÷ stands for its bar."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.0006 × 5 = 0.003 moles Fe²⁺ in 25 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0.003 × 40 = 0.12 moles Fe²⁺ per litre",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme gives the answer, 0.12 moles per litre (M), priced [9], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q1-e-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "mass-of-iron-ii-in-crystals",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q1(e)(ii) — Deferred sitting",
+  "questionText": "the mass of iron(II) in the 11.76 g of crystals used to make up the 250 cm³ of solution,",
+  "stem": "Ammonium iron(II) sulfate crystals are used in lawn feed. To analyse the iron(II) content of ammonium iron(II) sulfate crystals, 11.76 g of the crystals were used to make up 250 cm³ of solution. The ammonium iron(II) sulfate crystals were first dissolved in about 30 cm³ of dilute sulfuric acid in a small beaker. This solution was then carefully transferred to a 250 cm³ volumetric flask and the solution was made up to the mark using deionised water. The resulting iron(II) solution was measured in 25.0 cm³ portions into a conical flask, about 15 cm³ of dilute sulfuric acid were added and the mixture was then titrated with a previously standardised 0.020 M solution of potassium manganate(VII) (KMnO₄). The titration reaction is described by the equation: MnO₄ – + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O In the titrations, 25.0 cm³ portions of the iron(II) solution made from the crystals required 30.0 cm³ of the 0.020 M KMnO₄ solution for complete reaction. Calculate",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.12 × 56 = 6.72 g per litre",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "6.72 ÷ 4 = 1.68 g per 250 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme gives the answer, 1.68 g, priced [6], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q1-e-iii",
+  "topicId": "chem-4-1",
+  "conceptId": "percentage-iron-in-ammonium-iron-sulfate",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q1(e)(iii) — Deferred sitting",
+  "questionText": "the percentage by mass of iron(II) in the crystals.",
+  "stem": "Ammonium iron(II) sulfate crystals are used in lawn feed. To analyse the iron(II) content of ammonium iron(II) sulfate crystals, 11.76 g of the crystals were used to make up 250 cm³ of solution. The ammonium iron(II) sulfate crystals were first dissolved in about 30 cm³ of dilute sulfuric acid in a small beaker. This solution was then carefully transferred to a 250 cm³ volumetric flask and the solution was made up to the mark using deionised water. The resulting iron(II) solution was measured in 25.0 cm³ portions into a conical flask, about 15 cm³ of dilute sulfuric acid were added and the mixture was then titrated with a previously standardised 0.020 M solution of potassium manganate(VII) (KMnO₄). The titration reaction is described by the equation: MnO₄ – + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O In the titrations, 25.0 cm³ portions of the iron(II) solution made from the crystals required 30.0 cm³ of the 0.020 M KMnO₄ solution for complete reaction. Calculate",
+  "figureKey": "chemistry-2022-HL-deferred-scheme-q1e-iii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "14.29 to 14.3 %",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q2-a-i-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "eugenol-tetrahedral-carbon-and-double-bond",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q2(a)(i)–(ii) — Deferred sitting",
+  "questionText": "(i) a carbon atom in tetrahedral geometry, (ii) a site where you would expect addition reactions could easily occur.",
+  "stem": "Eugenol (boiling point 254 °C) is a heat sensitive substance that can be extracted from cloves as the major component of clove oil using steam distillation. The distillate produced consists of an emulsion of clove oil and water. Liquid‐liquid extraction is then used to isolate the clove oil from the distillate. The structural formula of eugenol is shown. Copy the structure of eugenol and identify clearly",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q2",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[6 + 2]"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "either of the two tetrahedral carbons circled",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "double bond indicated by the arrow",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [6 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q2-b",
+  "topicId": "chem-u2",
+  "conceptId": "clove-oil-emulsion-and-distillate-appearance",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q2(b) — Deferred sitting",
+  "questionText": "Explain the underlined term. Describe the appearance of the distillate.",
+  "stem": "Eugenol (boiling point 254 °C) is a heat sensitive substance that can be extracted from cloves as the major component of clove oil using steam distillation. The distillate produced consists of an emulsion of clove oil and water. Liquid‐liquid extraction is then used to isolate the clove oil from the distillate. The structural formula of eugenol is shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "oil droplets in water (second liquid in which oil is insoluble) / oil droplets suspended (dispersed) in water (second liquid in which oil is insoluble) / fine dispersion of one liquid in a second liquid in which it is insoluble / two immiscible liquids mixed without a boundary / colloid of two immiscible liquids",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "white / milky /cloudy / mostly water with a few oil drops",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "questionFigureKey": "chemistry-2022-HL-deferred-paper-q2b-print"
+ },
+ {
+  "id": "chem-2022-hl-deferred-q2-c",
+  "topicId": "chem-u2",
+  "conceptId": "solvent-choice-for-liquid-liquid-extraction",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q2(c) — Deferred sitting",
+  "questionText": "Explain why ethanol is an unsuitable solvent for use in the liquid‐liquid extraction of the clove oil from the distillate. Name a suitable organic solvent for this liquid‐liquid extraction of the clove oil. State whether the aqueous layer is denser or less dense than the organic layer.",
+  "stem": "Eugenol (boiling point 254 °C) is a heat sensitive substance that can be extracted from cloves as the major component of clove oil using steam distillation. The distillate produced consists of an emulsion of clove oil and water. Liquid‐liquid extraction is then used to isolate the clove oil from the distillate. The structural formula of eugenol is shown.",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q2-funnel",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[6 + 2 + 1]"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ethanol is water soluble / water insoluble solvent required for liquid extraction of emulsion",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "cyclohexane / dichloromethane (methylene chloride) / diethyl ether (ethoxyethane) / ethyl ethanoate (ethyl acetate) / petroleum ether /etc",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "aqueous layer denser (with solvents with density less than 1.0 g cm^‐3) / aqueous layer less dense (with solvents with density greater than 1.0 g cm^‐3)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow any volatile (b.p. < 80 °C), water‐immiscible solvent; Methanol, ethanol, propan‐2‐one, (propanone, acetone), etc not suitable.]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [6 + 2 + 1] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q2-d-i",
+  "topicId": "chem-u2",
+  "conceptId": "several-small-extractions-improve-yield",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q2(d)(i) — Deferred sitting",
+  "questionText": "the distillate is washed three separate times, using 10 cm³ of solvent each time, instead of once with 30 cm³ of solvent,",
+  "stem": "Eugenol (boiling point 254 °C) is a heat sensitive substance that can be extracted from cloves as the major component of clove oil using steam distillation. The distillate produced consists of an emulsion of clove oil and water. Liquid‐liquid extraction is then used to isolate the clove oil from the distillate. The structural formula of eugenol is shown. Give a reason why, during the liquid‐liquid extraction,",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q2-funnel",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "better yield / more efficient extraction / more clove oil extracted",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q2-d-ii",
+  "topicId": "chem-u2",
+  "conceptId": "venting-the-separating-funnel",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q2(d)(ii) — Deferred sitting",
+  "questionText": "the tap of the stoppered separating funnel is opened briefly with the funnel lying on its side or upside down.",
+  "stem": "Eugenol (boiling point 254 °C) is a heat sensitive substance that can be extracted from cloves as the major component of clove oil using steam distillation. The distillate produced consists of an emulsion of clove oil and water. Liquid‐liquid extraction is then used to isolate the clove oil from the distillate. The structural formula of eugenol is shown. Give a reason why, during the liquid‐liquid extraction,",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q2-funnel",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "to release pressure (solvent vapour) / to prevent pressure build‐up / agitation vaporises the volatile solvent",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q2-e",
+  "topicId": "chem-u2",
+  "conceptId": "evaporating-solvent-to-isolate-clove-oil",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q2(e) — Deferred sitting",
+  "questionText": "Having separated the aqueous and organic layers into two separate flasks, describe how a dry sample of clove oil is then obtained.",
+  "stem": "Eugenol (boiling point 254 °C) is a heat sensitive substance that can be extracted from cloves as the major component of clove oil using steam distillation. The distillate produced consists of an emulsion of clove oil and water. Liquid‐liquid extraction is then used to isolate the clove oil from the distillate. The structural formula of eugenol is shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "evaporate",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 6], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "solvent",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow drying agent (MgSO₄, Na₂SO₄, CaCl₂, etc) for (6)]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q2-f",
+  "topicId": "chem-1-4",
+  "conceptId": "volume-of-clove-oil-from-yield",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q2(f) — Deferred sitting",
+  "questionText": "What volume of dry clove oil (density 1.05 g cm⁻³) is obtained from exactly 12 g of cloves using steam distillation followed by liquid‐liquid extraction given the percentage yield for the overall process is 7% by mass?",
+  "stem": "Eugenol (boiling point 254 °C) is a heat sensitive substance that can be extracted from cloves as the major component of clove oil using steam distillation. The distillate produced consists of an emulsion of clove oil and water. Liquid‐liquid extraction is then used to isolate the clove oil from the distillate. The structural formula of eugenol is shown.",
+  "figureKey": "chemistry-2022-HL-deferred-scheme-q2f",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.80 cm³ clove oil",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q2-g",
+  "topicId": "chem-u3",
+  "conceptId": "commercial-use-of-clove-oil",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q2(g) — Deferred sitting",
+  "questionText": "Give a commercial use for clove oil.",
+  "stem": "Eugenol (boiling point 254 °C) is a heat sensitive substance that can be extracted from cloves as the major component of clove oil using steam distillation. The distillate produced consists of an emulsion of clove oil and water. Liquid‐liquid extraction is then used to isolate the clove oil from the distillate. The structural formula of eugenol is shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "flavouring / preserve food / spice / antiseptic / toothache treatment / perfumes (soaps)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q3-a",
+  "topicId": "chem-u2",
+  "conceptId": "apparatus-for-collecting-oxygen-from-peroxide",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q3(a) — Deferred sitting",
+  "questionText": "Draw a labelled diagram of an apparatus that could have been used in this experiment. How could the catalyst and the hydrogen peroxide have been combined without affecting the volume of gas collected?",
+  "stem": "A group of students carried out an experiment to investigate the rate of decomposition of hydrogen peroxide in the presence of a catalyst. The reaction is described by the following equation. 2H₂O₂ → 2H₂O + O₂",
+  "figureKey": "chemistry-2022-HL-deferred-scheme-q3a",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a labelled diagram of an apparatus that could have been used in this experiment. How could the catalyst and the hydrogen peroxide have been combined without affecting the volume of gas collected?",
+    "marks": 11,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. It prices the part [4 + 4] and [3]. The scheme adds: [graduations marked or graduated, collecting, container labelled]",
+    "ask": true
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q3-b",
+  "topicId": "chem-3-2",
+  "conceptId": "manganese-dioxide-heterogeneous-catalysis",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q3(b) — Deferred sitting",
+  "questionText": "Identify a transition metal catalyst that could have been used when carrying out this experiment. What type of catalysis is involved in this reaction? Explain your answer.",
+  "stem": "A group of students carried out an experiment to investigate the rate of decomposition of hydrogen peroxide in the presence of a catalyst. The reaction is described by the following equation. 2H₂O₂ → 2H₂O + O₂",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "MnO₂ / manganese(IV) oxide / manganese dioxide",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "heterogeneous catalysis / surface adsorption catalysis",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "reactants in different phase from catalyst / catalyst does not dissolve / solid catalyst boundary (surface)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q3-c",
+  "topicId": "chem-3-2",
+  "conceptId": "plotting-oxygen-volume-against-time",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q3(c) — Deferred sitting",
+  "questionText": "Draw a graph of volume (y‐axis) against time using the results obtained by the students.",
+  "stem": "A group of students carried out an experiment to investigate the rate of decomposition of hydrogen peroxide in the presence of a catalyst. The reaction is described by the following equation. 2H₂O₂ → 2H₂O + O₂",
+  "figureKey": "chemistry-2022-HL-deferred-scheme-q3c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "both axes correctly labelled (V / volume / cm³ / oxygen / O₂ / time / t / minutes / min)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "appropriate, correct numeric scales on both axes",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "careful plotting of points other than (0, 0)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "smooth curve of correct shape through origin",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "questionFigureKey": "chemistry-2022-HL-deferred-paper-q3",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "chem-2022-hl-deferred-q3-d-i",
+  "topicId": "chem-3-2",
+  "conceptId": "time-to-produce-moles-of-oxygen",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q3(d)(i) — Deferred sitting",
+  "questionText": "the time required to produce 0.00116 moles of oxygen,",
+  "stem": "A group of students carried out an experiment to investigate the rate of decomposition of hydrogen peroxide in the presence of a catalyst. The reaction is described by the following equation. 2H₂O₂ → 2H₂O + O₂ Use the graph to determine",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q3",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.00116 × 24 = 0.02784 litres O₂ / 0.00116 × 22.4 = 0.025984 litres O₂ ⇒ 25.94 – 27.84 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "⇒ 1.3 – 1.8 minutes",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme gives the answer, 1.3 ‐ 1.8 minutes, priced [6], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q3-d-ii",
+  "topicId": "chem-3-2",
+  "conceptId": "instantaneous-rate-from-a-tangent",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q3(d)(ii) — Deferred sitting",
+  "questionText": "the instantaneous rate of the reaction at 4.5 minutes.",
+  "stem": "A group of students carried out an experiment to investigate the rate of decomposition of hydrogen peroxide in the presence of a catalyst. The reaction is described by the following equation. 2H₂O₂ → 2H₂O + O₂ Use the graph to determine",
+  "figureKey": "chemistry-2022-HL-deferred-scheme-q3d-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3.8 – 4.8 cm³ oxygen per minute",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer. The scheme adds: [good tangent drawn to plotted curve at 4.5 minutes (4)]"
+   }
+  ],
+  "questionFigureKey": "chemistry-2022-HL-deferred-paper-q3",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "chem-2022-hl-deferred-q3-e",
+  "topicId": "chem-3-2",
+  "conceptId": "curve-for-half-the-peroxide-concentration",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q3(e) — Deferred sitting",
+  "questionText": "Mark clearly on your graph the approximate curve you would expect to plot if this experiment were repeated using the same mass of the same catalyst and a solution of the same volume, but this time exactly half the concentration, of the original hydrogen peroxide solution.",
+  "stem": "A group of students carried out an experiment to investigate the rate of decomposition of hydrogen peroxide in the presence of a catalyst. The reaction is described by the following equation. 2H₂O₂ → 2H₂O + O₂",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q3",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "less steep curve",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "producing 25 ‐ 35 cm³ (approximately half) oxygen",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q4-a",
+  "topicId": "chem-1-3",
+  "conceptId": "how-mendeleev-arranged-the-elements",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q4(a) — Deferred sitting",
+  "questionText": "How did Mendeleev arrange the elements to form his periodic table?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "elements listed in order of increasing atomic mass (weight)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "elements listed in order of increasing atomic mass (weight)",
+      "elements with similar chemical properties were listed in columns (groups, repeating periodically)",
+      "left gaps"
+     ],
+     "perOptionSteps": [
+      4,
+      2
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q4-b-i-ii",
+  "topicId": "chem-1-2",
+  "conceptId": "atomic-and-mass-number-from-ion",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q4(b)(i)–(ii) — Deferred sitting",
+  "questionText": "(i) the atomic number, (ii) the mass number, of M?",
+  "stem": "The dispositive ion M²⁺ has 28 electrons and 34 neutrons. What is",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 2]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "30",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "64",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q4-c-i-ii",
+  "topicId": "chem-3-5",
+  "conceptId": "oxidation-numbers-of-sulfur",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q4(c)(i)–(ii) — Deferred sitting",
+  "questionText": "(i) SO₂ (ii) H₂SO₄?",
+  "stem": "What is the oxidation number of sulfur in",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 2]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "+4 / 4 / IV",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "+6 / 6 / VI",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q4-d",
+  "topicId": "chem-1-4",
+  "conceptId": "atoms-in-gas-volume-at-stp",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q4(d) — Deferred sitting",
+  "questionText": "How many atoms are there in 448 cm³ of carbon dioxide measured at s.t.p.?",
+  "figureKey": "chemistry-2022-HL-deferred-scheme-q4d",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3.6 × 10²²atoms",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q4-e",
+  "topicId": "chem-2-3",
+  "conceptId": "conditions-for-near-ideal-gas-behaviour",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q4(e) — Deferred sitting",
+  "questionText": "Under what conditions do gases come closest to ideal behaviour?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 2]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "low pressures",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "high temperatures",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q4-f",
+  "topicId": "chem-1-4",
+  "conceptId": "molarity-of-percent-w-v-solution",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q4(f) — Deferred sitting",
+  "questionText": "Calculate the molarity of a 3% (w/v) solution of ethanoic acid (CH₃COOH).",
+  "figureKey": "chemistry-2022-HL-deferred-scheme-q4f",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.5 moles per litre (M)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q4-g",
+  "topicId": "chem-2-3",
+  "conceptId": "avogadros-law",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q4(g) — Deferred sitting",
+  "questionText": "State Avogadro’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "at the same temperature and pressure",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "equal volumes of gases have equal (the same) number(s) of particles (atoms, molecules, moles)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Do not allow s.t.p for ‘same temperature and pressure’.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q4-h-i-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "structures-of-dimethylpropane-and-ethylbenzene",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q4(h)(i)–(ii) — Deferred sitting",
+  "questionText": "(i) 2,2‐dimethylpropane, (ii) ethylbenzene.",
+  "stem": "Draw the structural formula of",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 2]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "H₃ C C CH₃ CH₂",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "CH₃",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q4-i",
+  "topicId": "chem-u2",
+  "conceptId": "principle-of-chromatography",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q4(i) — Deferred sitting",
+  "questionText": "What is the principle involved in separating a mixture by chromatography?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 2]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "relative attraction of components (compounds) of mixture",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "for mobile phase compared to (versus, and) stationary phase",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q4-j-i-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "compounds-in-nettles-and-almonds",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q4(j)(i)–(ii) — Deferred sitting",
+  "questionText": "(i) the sting of nettles, (ii) the smell of almonds.",
+  "stem": "Identify an organic compound responsible for",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q4j",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 2]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "methanoic (formic) acid",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "benzaldehyde",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q4-k-i-ii",
+  "topicId": "chem-1-4",
+  "conceptId": "formulae-of-silicon-and-manganese-compounds",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q4(k)(i)–(ii) — Deferred sitting",
+  "questionText": "(i) silicon chloride, (ii) manganese(III) oxide.",
+  "stem": "Write the chemical formulae for:",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 2]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "SiCl₄",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Mn₂O₃",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q4-l-a",
+  "topicId": "chem-4-3",
+  "conceptId": "nitrogen-fixation-by-lightning",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q4(l)A — Deferred sitting",
+  "questionText": "Describe with the aid of a balanced equation how atmospheric nitrogen gas is fixed by lightning.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[3 + 3]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "½N₂ + ½O₂ → NO / N₂ + O₂ → 2NO",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [formulae (3), balancing (3)]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [3 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q4-l-b",
+  "topicId": "chem-3-5",
+  "conceptId": "how-a-sacrificial-anode-protects",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q4(l)B — Deferred sitting",
+  "questionText": "How does a sacrificial anode protect a piece of metal from corrosion?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "corrodes first (in preference) / metal becomes cathode and is not oxidised",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q5-a-i",
+  "topicId": "chem-1-2",
+  "conceptId": "stoney-named-the-electron",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q5(a)(i) — Deferred sitting",
+  "questionText": "Who coined the name ‘electron’?",
+  "stem": "The existence of electrons was first shown in experiments on cathode rays.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Stoney",
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q5-a-ii",
+  "topicId": "chem-1-2",
+  "conceptId": "thomson-and-millikan-on-electrons",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q5(a)(ii) — Deferred sitting",
+  "questionText": "What were the contributions of Thomson and Millikan to our understanding of electrons?",
+  "stem": "The existence of electrons was first shown in experiments on cathode rays.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Thomson: showed electrons (cathode rays) were charged (negative) particles / showed electrons (cathode rays) deflected in electric (magnetic) fields",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Any two of these for Thomson, [6 + 3].",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Thomson: showed electrons (cathode rays) were charged (negative) particles / showed electrons (cathode rays) deflected in electric (magnetic) fields",
+      "identified electrons as subatomic particles",
+      "measured ratio of charge to mass of electron"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Millikan: measured (determined, found) size of charge (e) on electron",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q5-a-iii",
+  "topicId": "chem-1-2",
+  "conceptId": "electron-configuration-of-copper",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q5(a)(iii) — Deferred sitting",
+  "questionText": "Give the electronic configuration (s, p, etc) of copper in its ground state.",
+  "stem": "The existence of electrons was first shown in experiments on cathode rays.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1s² 2s² 2p⁶ 3s² 3p⁶ / 1s² 2s² 2px²2py² 2pz²3s² 3px²3py² 3pz²/[Ar] / 4s¹ 3d¹⁰",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow subscripts instead of superscripts.] The scheme prices this point [2 × 3]."
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q5-a-iv",
+  "topicId": "chem-1-2",
+  "conceptId": "nitrogen-2p-orbitals-singly-occupied",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q5(a)(iv) — Deferred sitting",
+  "questionText": "How are the electrons arranged in the orbitals of the highest occupied sub‐level of a nitrogen atom in its ground state?",
+  "stem": "The existence of electrons was first shown in experiments on cathode rays.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2px¹2py¹ 2pz¹",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Arrows to represent numbers of electrons acceptable but sublevel symbols must be given.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q5-b-i",
+  "topicId": "chem-1-2",
+  "conceptId": "beta-radiation-and-penetrating-power",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q5(b)(i) — Deferred sitting",
+  "questionText": "What name is given to the type of nuclear radiation involving the release of electrons? Compare the penetrating power of this type of radiation with the penetrating powers of the other forms of radiation emitted by radioactive substances.",
+  "stem": "Electrons are emitted by some radioactive substances.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[5 + 2 + 2]"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "beta (β) radiation",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "gamma (γ) is more penetrating than beta (β) / gamma (γ) travels several metres (further) through air (several cm of lead) and beta only penetrates a few metres of air (5 mm of aluminium)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "alpha (α) is less penetrating than beta (β) / alpha (α) stopped by a sheet of paper (a few mm of air) and beta (β) can penetrate a few metres of air (5 mm of aluminium)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [5 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q5-b-ii",
+  "topicId": "chem-1-2",
+  "conceptId": "beta-decay-of-carbon-14",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q5(b)(ii) — Deferred sitting",
+  "questionText": "The emission of electrons by carbon–14, according to the following nuclear equation, is the basis for radiocarbon dating. Identify the element represented by X and state the value of Y, the mass number of the daughter nucleus. Explain clearly where the electron lost by the carbon atom in this process comes from.",
+  "stem": "Electrons are emitted by some radioactive substances.",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q5b-ii-eq",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[6 + 3 + 3]"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "X: nitrogen (N)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Y: 14",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "a neutron changes into a proton and this (an) electron",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [6 + 3 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q6-a",
+  "topicId": "chem-3-1",
+  "conceptId": "heat-of-combustion-and-bomb-calorimeter",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q6(a) — Deferred sitting",
+  "questionText": "Define heat of combustion of a substance. What apparatus is used to accurately measure the heat of combustion of a fuel?",
+  "stem": "Ethanol and hydrogen are both examples of fuels. Bioethanol is ethanol produced from the fermentation of sugars from plant material by yeast.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "heat change when one mole of a substance burned",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "in excess oxygen (completely)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "bomb calorimeter",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q6-b",
+  "topicId": "chem-3-1",
+  "conceptId": "use-of-kilogram-calorific-values",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q6(b) — Deferred sitting",
+  "questionText": "Give one use made of the kilogram calorific values of various fuels.",
+  "stem": "Ethanol and hydrogen are both examples of fuels. Bioethanol is ethanol produced from the fermentation of sugars from plant material by yeast.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "compare efficiencies of fuels",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q6-c",
+  "topicId": "chem-3-1",
+  "conceptId": "heat-of-combustion-of-ethanol",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q6(c) — Deferred sitting",
+  "questionText": "Carbon dioxide and water are produced by the burning of the liquid fuel, ethanol. The combustion of ethanol is described by the following equation. C₂H₅OH (l) + 3O₂ (g) → 2CO₂ (g) + 3H₂O (l) Calculate the heat of combustion of ethanol, given that the heats of formation of carbon dioxide, water and ethanol are –394, –286, and –276 kJ mol⁻¹ respectively.",
+  "stem": "Ethanol and hydrogen are both examples of fuels. Bioethanol is ethanol produced from the fermentation of sugars from plant material by yeast.",
+  "figureKey": "chemistry-2022-HL-deferred-scheme-q6c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "–1370 kJ",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q6-c-profile",
+  "topicId": "chem-3-2",
+  "conceptId": "exothermic-reaction-profile-diagram",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q6(c) — reaction profile diagram — Deferred sitting",
+  "questionText": "Draw a clearly labelled reaction profile diagram for this reaction.",
+  "stem": "Ethanol and hydrogen are both examples of fuels. Bioethanol is ethanol produced from the fermentation of sugars from plant material by yeast. Carbon dioxide and water are produced by the burning of the liquid fuel, ethanol. The combustion of ethanol is described by the following equation. C₂H₅OH (l) + 3O₂ (g) → 2CO₂ (g) + 3H₂O (l)",
+  "figureKey": "chemistry-2022-HL-deferred-scheme-q6c-profile",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "y‐axis: energy [Must be shown and labelled.] x‐axis: [Must be shown but need not be labelled.]",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices the labelled axes (3) and the curve (3)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "suitable curve with energy of reactants greater than energy of products",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q6-c-bioethanol",
+  "topicId": "chem-2-4",
+  "conceptId": "bioethanol-as-renewable-motor-fuel",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q6(c) — advantage of bioethanol — Deferred sitting",
+  "questionText": "Suggest one advantage of using bioethanol as a motor fuel.",
+  "stem": "Ethanol and hydrogen are both examples of fuels. Bioethanol is ethanol produced from the fermentation of sugars from plant material by yeast.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "bioethanol is renewable",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Any one of these, [6].",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "bioethanol is renewable",
+      "environmentally friendly",
+      "reduces knocking",
+      "cheaper"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q6-d",
+  "topicId": "chem-2-4",
+  "conceptId": "steam-reforming-and-hydrogen-as-fuel",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q6(d) — Deferred sitting",
+  "questionText": "Describe, with the aid of a balanced equation, how hydrogen is produced on a large scale from natural gas (methane). Give two advantages of using hydrogen as a fuel.",
+  "stem": "Ethanol and hydrogen are both examples of fuels. Bioethanol is ethanol produced from the fermentation of sugars from plant material by yeast.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "steam reforming / catalyst required",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "CH₄ + H₂O → 3H₂ + CO",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices the equation [3 + 3]: formulae (3), balancing (3)."
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "high kilogram calorific value",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Any two of these advantages, [2 × 3].",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "high kilogram calorific value",
+      "non‐polluting products",
+      "can be piped",
+      "can be produced from water",
+      "does not contribute to global warming, etc."
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q7-a",
+  "topicId": "chem-3-3",
+  "conceptId": "le-chateliers-principle",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q7(a) — Deferred sitting",
+  "questionText": "State Le Châtelier’s principle.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[3 + 2]"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "systems in (at) equilibrium",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "react to oppose (minimise, relieve) applied stress(es) {disturbance(s)}",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Instead of ‘stress(es){disturbance(s)}’ accept ‘change in temperature, pressure or number of moles (concentrations)’ if all three {temperature, pressure and moles (concentrations)} are given.]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [3 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q7-b",
+  "topicId": "chem-3-3",
+  "conceptId": "optimum-conditions-for-ammonia-yield",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q7(b) — Deferred sitting",
+  "questionText": "Explain how Le Châtelier’s principle may be used to determine the optimum conditions of temperature and pressure to maximise the yield of ammonia.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[6 + 3]"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "high pressure which results in formation of fewer gaseous molecules",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "low temperature which results in exothermic reaction",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [6 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q7-c",
+  "topicId": "chem-3-3",
+  "conceptId": "why-optimum-conditions-are-uneconomical",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q7(c) — Deferred sitting",
+  "questionText": "Why are these conditions not used in industry in the preparation of ammonia?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "high pressures costly (uneconomical, require thick walled‐steel vessels, unsafe)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "low temperatures uneconomical (slow rate of reaction)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [EXPLAIN & WHY linked] [Marks only available for WHY if EXPLAIN marks awarded]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q7-d",
+  "topicId": "chem-3-3",
+  "conceptId": "kc-expression-for-ammonia-synthesis",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q7(d) — Deferred sitting",
+  "questionText": "Write the equilibrium constant expression (Kc) for the reaction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "[N₂][H₂]³",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Do not accept inverted expression.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q7-e",
+  "topicId": "chem-3-3",
+  "conceptId": "kc-from-equilibrium-masses",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q7(e) — Deferred sitting",
+  "questionText": "In an experiment, a mixture of 16.8 g of nitrogen and 1.4 g of hydrogen were placed in a 1 litre flask and allowed come to equilibrium at a certain temperature. When equilibrium was reached, it was found that 6.8 g of ammonia had been produced. Calculate the value of Kc.",
+  "figureKey": "chemistry-2022-HL-deferred-scheme-q7e",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "400",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q7-f-i",
+  "topicId": "chem-3-3",
+  "conceptId": "temperature-rise-lowers-kc",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q7(f)(i) — Deferred sitting",
+  "questionText": "an increase in the equilibrium temperature,",
+  "stem": "What effect, if any, does each of the following have on the value of Kc for this reaction:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kc decreases (smaller)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "increased temperature favours endothermic (reverse) reaction",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices the two WHY answers, this one and the other roman's, [2 × 3]: one each. It adds: [EXPLAIN & WHY linked] [Marks only available for WHY if EXPLAIN marks awarded]."
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q7-f-ii",
+  "topicId": "chem-3-3",
+  "conceptId": "catalyst-does-not-change-kc",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q7(f)(ii) — Deferred sitting",
+  "questionText": "the use of a more efficient catalyst? Justify your answer in each case.",
+  "stem": "What effect, if any, does each of the following have on the value of Kc for this reaction:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "no change (effect) / none",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "catalyst affects rate of forward and reverse reactions equally / helps reach equilibrium faster / Kc only affected by temperature",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices the two WHY answers, this one and the other roman's, [2 × 3]: one each. It adds: [EXPLAIN & WHY linked] [Marks only available for WHY if EXPLAIN marks awarded]."
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q8-a",
+  "topicId": "chem-2-4",
+  "conceptId": "unsaturated-hydrocarbon-meaning",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q8(a) — Deferred sitting",
+  "questionText": "Alkenes and alkynes are described as unsaturated hydrocarbons. Explain the meaning of the underlined term.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "contain carbon and hydrogen only",
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "questionFigureKey": "chemistry-2022-HL-deferred-paper-q8a-print"
+ },
+ {
+  "id": "chem-2022-hl-deferred-q8-b",
+  "topicId": "chem-2-4",
+  "conceptId": "alkene-versus-alkyne-structure",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q8(b) — Deferred sitting",
+  "questionText": "Explain, with the aid of diagrams, the difference in structure between an alkene and an alkyne.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "alkenes: have at least one carbon‐carbon double bond / e.g. (CH₂=CH₂)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [The structure of any alkene with position of its double bond is required.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "alkynes: have at least one carbon‐carbon triple bond / e.g. (CH≡CH)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [The structure of any alkyne with position of its triple bond is required.] [Carbon‐carbon multiple bonding can be taken from diagrams.] [No diagram (–3)]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q8-c-i",
+  "topicId": "chem-2-4",
+  "conceptId": "equation-for-preparing-ethyne",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q8(c)(i) — Deferred sitting",
+  "questionText": "Write a balanced equation for the reaction involved in the laboratory preparation of ethyne.",
+  "stem": "Ethyne can be produced in the laboratory using the apparatus shown in the diagram.",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q8c",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[3 + 3]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "CaC₂ + 2H₂O → C₂H₂ + Ca(OH)₂",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [formulae (3), balancing (3)]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [3 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q8-c-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "test-for-unsaturation-in-ethyne",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q8(c)(ii) — Deferred sitting",
+  "questionText": "Describe a test you could carry out to show that ethyne is an unsaturated compound.",
+  "stem": "Ethyne can be produced in the laboratory using the apparatus shown in the diagram.",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q8c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "bromine (Br₂) solution (water) / acidified potassium manganate(VII) {permanganate} / (KMnO₄/H⁺) / (MnO₄ˉ/H⁺) when combined with ethyne",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "decolourises (changes to colourless, colour disappears)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q8-c-iii",
+  "topicId": "chem-2-4",
+  "conceptId": "large-scale-use-of-ethyne",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q8(c)(iii) — Deferred sitting",
+  "questionText": "Give one large‐scale use of ethyne.",
+  "stem": "Ethyne can be produced in the laboratory using the apparatus shown in the diagram.",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q8c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "cutting (welding) metal / ripening bananas / miners’ (cavers’) lamps",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q8-d-i-iii",
+  "topicId": "chem-4-2",
+  "conceptId": "classifying-addition-elimination-substitution",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q8(d)(i)–(iii) — Deferred sitting",
+  "questionText": "(i) ethanol to ethene, (ii) ethane to bromoethane, (iii) ethene to ethane.",
+  "stem": "Classify each of the following conversions as an addition, an elimination or a substitution reaction:",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[3 × 3]"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "elimination",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "substitution",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "addition",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Correct order essential unless answers clearly labelled.]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [3 × 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q8-e",
+  "topicId": "chem-4-2",
+  "conceptId": "monochlorination-of-methane-mechanism",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q8(e) — Deferred sitting",
+  "questionText": "Describe the reaction mechanism for the monochlorination of methane. Give one piece of experimental evidence that supports this mechanism.",
+  "figureKey": "chemistry-2022-HL-deferred-scheme-q8e",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "homolysis (splitting, fission) of chlorine molecule (Cl₂) into free radicals (atoms, Cl●, Cl) by ultraviolet (uv) light / Cl₂ uv 2Cl● / Cl₂ uv 2Cl",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Initiation."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "chlorine radical (atom, Cl●, Cl) reacts with methane molecule (CH₄) giving hydrogen chloride (HCl) and a methyl radical (CH₃●) / Cl● + CH₄ → HCl + CH₃● / Cl + CH₄ → HCl + CH₃●",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Propagation (1). The scheme adds: [Hydrochloric acid not acceptable for HCl and cancellation applies.] [Where CH₃ used instead of CH₃● deduct 3 marks but only once in (c).]"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "methyl radical (CH₃●) reacts with chlorine molecule (Cl₂) giving monochloromethane (CH₃Cl) and a chlorine radical (atom, Cl●, Cl) / CH₃● + Cl₂ → CH₃Cl + Cl● / CH₃● + Cl₂ → CH₃Cl + Cl",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Propagation (2). The scheme adds: Allow (3) for chain reaction occurs / propagation steps repeat until one reactant used up / propagation steps repeat until termination reached if (0) marks awarded for propagation (1) and propagation (2)."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "combination of remaining radicals 2Cl● → Cl₂ / 2Cl → Cl₂ / Cl● + CH₃● → CH₃Cl / Cl + CH₃● → CH₃Cl / 2CH₃● → C₂H₆",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Termination."
+   },
+   {
+    "id": "r-5",
+    "kind": "anyN",
+    "verbatim": "tetraethyllead (source of radicals) increases the rate (speeds up reaction) by providing (producing, breaking into) ethyl free radicals",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Any one piece of evidence, (3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "tetraethyllead (source of radicals) increases the rate (speeds up reaction) by providing (producing, breaking into) ethyl free radicals",
+      "oxygen (radical inhibitor) decreases the rate (slows down reaction) by removing free radicals",
+      "only occurs in sunlight (UV)",
+      "reaction cannot occur in darkness",
+      "for every photon absorbed, many choromethane molecules obtained",
+      "small amounts of ethane formed"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q9-a-i",
+  "topicId": "chem-4-1",
+  "conceptId": "full-name-of-edta",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q9(a)(i) — Deferred sitting",
+  "questionText": "What do the letters edta stand for?",
+  "stem": "In order to determine the total hardness in a water sample, 50.0 cm³ portions of the water were titrated with a 0.010 M edta solution. The average titre was found to be 15.4 cm³. The reaction between the edta (represented by H₂Y²⁻) and the calcium and magnesium ions (both represented by M²⁺) that are dissolved in the water is given in the following balanced equation: H₂Y²⁻ + M²⁺ → MY²⁻ + 2H⁺",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ethylenediaminetetraacetic acid",
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q9-a-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "buffer-and-indicator-in-edta-titration",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q9(a)(ii) — Deferred sitting",
+  "questionText": "What substances must be added to a 50.0 cm³ water sample before commencing each titration? Explain the purpose of each of these additions.",
+  "stem": "In order to determine the total hardness in a water sample, 50.0 cm³ portions of the water were titrated with a 0.010 M edta solution. The average titre was found to be 15.4 cm³. The reaction between the edta (represented by H₂Y²⁻) and the calcium and magnesium ions (both represented by M²⁺) that are dissolved in the water is given in the following balanced equation: H₂Y²⁻ + M²⁺ → MY²⁻ + 2H⁺",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "buffer solution pH > 10",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Eriochrome (Solochrome, Erio‐T) indicator",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "buffer: to ensure sharp (accurate, colour change at) end‐point / keep pH constant / to ensure only calcium ions (Ca²⁺, magnesium ions, Mg²⁺, M²⁺) detected / to ensure all calcium ions (Ca²⁺, magnesium ions, Mg²⁺, M²⁺) react (complex) with edta / to ensure non‐alkaline earth metal ions do not react (do not complex, not detected) / to ensure indicator works properly / MY²⁻ stable only at high pH for calcium and magnesium / alkaline conditions needed (acidic conditions unsuitable) for edta to complex with M²⁺ (calcium ions, Ca²⁺, magnesium ions, Mg²⁺)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Eriochrome (Solochrome, Erio‐T): to detect end point / change colour at end point / to act as indicator",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [WHAT and EXPLAIN are linked. EXPLAIN marks only available if WHAT marks awarded.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q9-a-iii",
+  "topicId": "chem-4-1",
+  "conceptId": "total-hardness-in-ppm-caco3",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q9(a)(iii) — Deferred sitting",
+  "questionText": "Calculate the total hardness of the water sample in p.p.m. in terms of CaCO₃.",
+  "stem": "In order to determine the total hardness in a water sample, 50.0 cm³ portions of the water were titrated with a 0.010 M edta solution. The average titre was found to be 15.4 cm³. The reaction between the edta (represented by H₂Y²⁻) and the calcium and magnesium ions (both represented by M²⁺) that are dissolved in the water is given in the following balanced equation: H₂Y²⁻ + M²⁺ → MY²⁻ + 2H⁺",
+  "figureKey": "chemistry-2022-HL-deferred-scheme-q9a-iii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "308 p.p.m. CaCO₃",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q9-a-iv",
+  "topicId": "chem-4-3",
+  "conceptId": "boiling-to-measure-temporary-hardness",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q9(a)(iv) — Deferred sitting",
+  "questionText": "Suggest how this titration experiment could be adapted to determine the amount of temporary hardness in the water sample.",
+  "stem": "In order to determine the total hardness in a water sample, 50.0 cm³ portions of the water were titrated with a 0.010 M edta solution. The average titre was found to be 15.4 cm³. The reaction between the edta (represented by H₂Y²⁻) and the calcium and magnesium ions (both represented by M²⁺) that are dissolved in the water is given in the following balanced equation: H₂Y²⁻ + M²⁺ → MY²⁻ + 2H⁺",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "boil water",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Any three, (5 + 2 + 2).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "boil water",
+      "filter water",
+      "repeat titration",
+      "subtract (difference between) the two readings is temporary hardness"
+     ],
+     "perOptionSteps": [
+      5,
+      2,
+      2
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q9-b",
+  "topicId": "chem-4-3",
+  "conceptId": "deionising-with-ion-exchange-resins",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q9(b) — Deferred sitting",
+  "questionText": "The diagram shows an ion exchanger that makes use of a replaceable filter cartridge of deionising resins to make deionised water for a school laboratory. Explain how ion exchange resins can be used to produce deionised water.",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q9b",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[6 + 3 + 3]"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "two hydrogen ions (2H⁺) from the cation‐exchange resin (RH) replace a Ca²⁺ (cations, positive ions) in the water / 2RH + Ca²⁺ → R₂Ca + 2H⁺",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "a hydroxide (hydroxyl) ion (OH⁻) from the anion‐exchange resin (R*OH) replaces a(n) HCO₃⁻ (anion, negative ion) in the water / R*OH + HCO₃⁻ → R*HCO₃ + OH⁻ (2R*OH + 2HCO₃⁻ → 2R*HCO₃ + 2OH⁻)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "hydrogen ion(s) (H⁺) and hydroxide (hydroxyl) ion(s) (OH⁻) combine to form water / 2H⁺ + 2OH⁻ → 2H₂O / H⁺ + OH⁻ → H₂O",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [6 + 3 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q10-a",
+  "topicId": "chem-4-2",
+  "conceptId": "steps-of-organic-synthesis",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q10(a) — Deferred sitting",
+  "questionText": "What are the steps involved in organic chemical synthesis?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "breaking bonds in reactants",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "These 2 points, as the scheme prices them together, [4 + 3].",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "breaking bonds in reactants",
+      "making bonds in products"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q10-b",
+  "topicId": "chem-1-2",
+  "conceptId": "another-application-of-mass-spectrometry",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q10(b) — Deferred sitting",
+  "questionText": "Mass spectrometry can be used to determine the isotopic abundance of a particular element. State one other application of mass spectrometry.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "determine relative atomic (molecular) mass",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Any one application, (4); the scheme closes its list \"etc.\".",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "determine relative atomic (molecular) mass",
+      "analysis of gases from a waste dump",
+      "analysis of trace organic pollutants in water",
+      "analysing (determining) structure organic substance",
+      "drug detection",
+      "heavy metals in water"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q10-b-calculation",
+  "topicId": "chem-1-2",
+  "conceptId": "relative-atomic-mass-of-chromium",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q10(b) — relative atomic mass — Deferred sitting",
+  "questionText": "Calculate the relative atomic mass (Ar) of chromium, correct to one decimal place, using this data.",
+  "stem": "Mass spectrometry can be used to determine the isotopic abundance of a particular element. Analysis of a sample of chromium using a mass spectrometer gave the following results:",
+  "figureKey": "chemistry-2022-HL-deferred-scheme-q10b-calculation",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "52.1",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole calculation (9) and sets out its working, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer. It adds: Minus 1 if not rounded to 1 decimal place."
+   }
+  ],
+  "questionFigureKey": "chemistry-2022-HL-deferred-paper-q10b",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "chem-2022-hl-deferred-q10-b-processes",
+  "topicId": "chem-1-2",
+  "conceptId": "processes-in-a-mass-spectrometer",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q10(b) — processes in a mass spectrometer — Deferred sitting",
+  "questionText": "What are the fundamental processes, in the sequence in which they occur, involved in the operation of a mass spectrometer?",
+  "stem": "Mass spectrometry can be used to determine the isotopic abundance of a particular element.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "vaporisation of substance",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Any four, in sequence, (4 × 3). The scheme adds: [Sequence incorrect (–3).]",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "vaporisation of substance",
+      "ionisation (production of positive ions)",
+      "acceleration",
+      "separation (deflection in magnetic field)",
+      "detection"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q10-c",
+  "topicId": "chem-2-2",
+  "conceptId": "shapes-possible-for-qx2",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q10(c) — Deferred sitting",
+  "questionText": "What shapes are possible for a molecule of the formula QX₂?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "linear",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "These 2 points, as the scheme prices them together, [4 + 3].",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "linear",
+      "v‐shaped"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-a",
+  "topicId": "chem-2-4",
+  "conceptId": "octane-number-and-raising-it",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(a) — Deferred sitting",
+  "questionText": "Define the term octane number. What molecular characteristics are required to create a hydrocarbon fuel with a high octane number? List three methods commonly used in oil refining to increase the octane number of a fuel.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 25,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "measure of (tendency, ability) of a fuel to resist knocking (autoigniting, pre‐igniting, igniting too early, pinking, igniting before spark) / measure of (tendency, ability) of a fuel to knock (autoignite, pre‐ignite, ignite too early, pink, ignite before spark) / fuel performance rating based on its equivalence to a certain mixture of hydrocarbons (alkanes)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "short chain",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Any two, (6 + 3). [any two]",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "short chain",
+      "branched chain",
+      "cyclic structure"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "isomerisation",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "Any three, (5 + 5 + 3). [any three]",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "isomerisation",
+      "reforming / dehydrocyclisation",
+      "catalytic cracking",
+      "adding oxygenates"
+     ],
+     "perOptionSteps": [
+      5,
+      5,
+      3
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-b",
+  "topicId": "chem-1-4",
+  "conceptId": "limiting-reactant-zinc-and-sulfuric-acid",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(b) — Deferred sitting",
+  "questionText": "Determine which is the limiting reactant.",
+  "stem": "In an experiment 25.0 cm³ of 0.10 M sulfuric acid were added to 0.20 g of granulated zinc. The reaction that occurs is described by the following equation. Zn (s) + H₂SO₄ (aq) → ZnSO₄ (aq) + H₂ (g)",
+  "figureKey": "chemistry-2022-HL-deferred-scheme-q11b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.0025 moles sulfuric limiting / zinc in excess 0.0031 moles",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-b-i",
+  "topicId": "chem-1-4",
+  "conceptId": "mass-of-zinc-sulfate-produced",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(b)(i) — Deferred sitting",
+  "questionText": "the mass of ZnSO₄ produced,",
+  "stem": "In an experiment 25.0 cm³ of 0.10 M sulfuric acid were added to 0.20 g of granulated zinc. The reaction that occurs is described by the following equation. Zn (s) + H₂SO₄ (aq) → ZnSO₄ (aq) + H₂ (g) Determine which is the limiting reactant. Calculate",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1:1 / 0.0025",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "161 g",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0.0025 × 161= 0.4025 g",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme gives the answer, 0.4025 g, priced [7], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-b-ii",
+  "topicId": "chem-1-4",
+  "conceptId": "mass-of-unused-zinc",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(b)(ii) — Deferred sitting",
+  "questionText": "the mass of the unused reactant.",
+  "stem": "In an experiment 25.0 cm³ of 0.10 M sulfuric acid were added to 0.20 g of granulated zinc. The reaction that occurs is described by the following equation. Zn (s) + H₂SO₄ (aq) → ZnSO₄ (aq) + H₂ (g) Determine which is the limiting reactant. Calculate",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.0031 – 0.0025 = 0.0006 moles zinc unused",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.0006 × 65 = 0.039 g zinc",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme gives the answer, 0.0325 – 0.04025 g zinc, priced [6], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-c-i-ii",
+  "topicId": "chem-3-4",
+  "conceptId": "dissociation-of-strong-and-weak-acids",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(c)(i)–(ii) — Deferred sitting",
+  "questionText": "(i) HCl, a strong acid, (ii) HCN, a weak acid.",
+  "stem": "The strength of an acid depends on the extent to which it dissociates in solution. Write a balanced equation to show the dissociation in water of",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "HCl + H₂O → Cl⁻ + H₃O⁺ / HCl → H⁺ + Cl‐",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices the two equations [6 + 3], in order."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "HCN + H₂O ⇌ CN⁻ + H₃O⁺ / HCN ⇌ H⁺ + CN‐",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-c-iii",
+  "topicId": "chem-3-4",
+  "conceptId": "bronsted-lowry-bases-in-an-equilibrium",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(c)(iii) — Deferred sitting",
+  "questionText": "Identify the two species acting as bases in the following equilibrium. HCl (aq) + HCN (aq) ⇌ Cl⁻ (aq) + H₂CN⁺ (aq)",
+  "stem": "The strength of an acid depends on the extent to which it dissociates in solution. Write a balanced equation to show the dissociation in water of",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "HCN",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cl⁻",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-c-iv",
+  "topicId": "chem-3-4",
+  "conceptId": "ph-from-hydroxide-ion-concentration",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(c)(iv) — Deferred sitting",
+  "questionText": "Calculate the pH of a TFR solution that has an OH⁻ ion concentration of 0.04 M.",
+  "stem": "The strength of an acid depends on the extent to which it dissociates in solution. Write a balanced equation to show the dissociation in water of Traffic film remover (TFR) solutions used in some car washes are very corrosive.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "[H₃O⁺] = 1.0 × 10⁻¹⁴ ÷ 0.04 = 2.50 × 10⁻¹³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "pH = –log[H₃O⁺] = –log 2.50 × 10⁻¹³ = 12.60",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme gives the answer, pH = 12.60 – 12.602, priced [6], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-c-v",
+  "topicId": "chem-3-4",
+  "conceptId": "hydronium-concentration-from-ph",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(c)(v) — Deferred sitting",
+  "questionText": "Calculate the concentration of H₃O⁺ ion in an alloy wheel cleaning solution that has a pH of 1.20.",
+  "stem": "The strength of an acid depends on the extent to which it dissociates in solution. Write a balanced equation to show the dissociation in water of Traffic film remover (TFR) solutions used in some car washes are very corrosive. Many alloy wheel cleaning solutions contain acids and are also very corrosive.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "[H₃O⁺] = inverse log (– 1.2) / [H₃O⁺] = antilog(– 1.2) / [H₃O⁺] = 10^–1.2",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme gives the answer, [H₃O⁺] = 0.063 moles per litre, priced [4], then the working that earns it, step by step."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "⇒ [H₃O⁺] = 0.063 moles per litre",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-d-a-i",
+  "topicId": "chem-4-3",
+  "conceptId": "environmental-issues-from-acidic-oxides",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(d)A(i) — Deferred sitting",
+  "questionText": "Identify two of these issues.",
+  "stem": "Oxides of nitrogen and of sulfur are associated with environmental issues negatively affecting the Earth’s atmosphere.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "acid rain",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "acid rain",
+      "global warming (enhanced greenhouse effect)",
+      "ozone depletion"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-d-a-ii",
+  "topicId": "chem-4-3",
+  "conceptId": "formulae-of-acid-rain-oxides",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(d)A(ii) — Deferred sitting",
+  "questionText": "Give the chemical formulae for two oxides, one oxide of nitrogen and one oxide of sulfur, that are major contributors to the issues that you have mentioned.",
+  "stem": "Oxides of nitrogen and of sulfur are associated with environmental issues negatively affecting the Earth’s atmosphere.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 2]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "NO / NO₂",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "SO₂",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-d-a-iii",
+  "topicId": "chem-4-3",
+  "conceptId": "sources-of-nitrogen-and-sulfur-oxides",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(d)A(iii) — Deferred sitting",
+  "questionText": "Describe how each of these oxides enters the atmosphere.",
+  "stem": "Oxides of nitrogen and of sulfur are associated with environmental issues negatively affecting the Earth’s atmosphere.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "lightning breaking down N₂ in air / spark plugs of petrol (car) engines",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "lightning breaking down N₂ in air / spark plugs of petrol (car) engines",
+      "breaking down N₂ in air / biological reactions / supersonic jet aircraft exhaust NO₂: reaction of NO in atmosphere with oxygen (O₂) / reaction of NO in atmosphere with ozone (O₃) / SO₂: burning coal (oil) / volcanoes / rotting vegetation, etc"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-d-a-iv",
+  "topicId": "chem-4-3",
+  "conceptId": "reducing-emissions-of-acidic-oxides",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(d)A(iv) — Deferred sitting",
+  "questionText": "Identify a measure that has been taken to reduce the release of one of these oxides into the atmosphere.",
+  "stem": "Oxides of nitrogen and of sulfur are associated with environmental issues negatively affecting the Earth’s atmosphere.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "scrubbers in factory (power plant) chimneys / use diesel (electric) cars / use nuclear power/ catalytic converter / etc",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-d-b",
+  "topicId": "chem-3-5",
+  "conceptId": "why-aluminium-corrodes-slower-than-iron",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(d)B — Deferred sitting",
+  "questionText": "Although aluminium is placed before (above) iron in the electrochemical series, an object made from aluminium will corrode much more slowly than an object made from iron if both are exposed to air and water. Why is this the case?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "aluminium forms oxide layer that forms an impermeable coat / iron forms flaky oxide layer / rust (iron oxide, oxide layer) falls off iron",
+    "marks": 7,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-d-b-i",
+  "topicId": "chem-3-5",
+  "conceptId": "electrode-material-for-aluminium-extraction",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(d)B(i) — Deferred sitting",
+  "questionText": "Name a suitable material for the anode and the cathode.",
+  "stem": "Although aluminium is placed before (above) iron in the electrochemical series, an object made from aluminium will corrode much more slowly than an object made from iron if both are exposed to air and water. Why is this the case? Alumina (Al₂O₃) is exported from Ireland to be processed into pure aluminium by the electrolysis of the molten oxide in a cell similar to that shown in the diagram above.",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q11d-b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "carbon / graphite",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-d-b-ii",
+  "topicId": "chem-3-5",
+  "conceptId": "electrode-equations-for-aluminium-extraction",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(d)B(ii) — Deferred sitting",
+  "questionText": "Write equations for the reactions that take place at the anode and at the cathode.",
+  "stem": "Although aluminium is placed before (above) iron in the electrochemical series, an object made from aluminium will corrode much more slowly than an object made from iron if both are exposed to air and water. Why is this the case? Alumina (Al₂O₃) is exported from Ireland to be processed into pure aluminium by the electrolysis of the molten oxide in a cell similar to that shown in the diagram above.",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q11d-b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "cathode: Al³⁺ + 3e⁻ → Al / 2Al³⁺ + 6e⁻ → 2Al",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "anode: O²⁻ → O + 2e⁻ → ½ O₂ + 2e⁻ / 3O²⁻ → 3O + 6e⁻ → 1½ O₂ + 6e⁻",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q11-d-b-iii",
+  "topicId": "chem-u3",
+  "conceptId": "lowering-the-cost-of-aluminium-production",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(d)B(iii) — Deferred sitting",
+  "questionText": "Describe one feature of the process that reduces the cost of producing aluminium.",
+  "stem": "Although aluminium is placed before (above) iron in the electrochemical series, an object made from aluminium will corrode much more slowly than an object made from iron if both are exposed to air and water. Why is this the case? Alumina (Al₂O₃) is exported from Ireland to be processed into pure aluminium by the electrolysis of the molten oxide in a cell similar to that shown in the diagram above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "DESCRIBE uses hydroelectric power / use of cryolite / recycles (reuses) aluminium",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q10-a-scheme",
+  "topicId": "chem-4-2",
+  "conceptId": "synthesis-of-ethyl-ethanoate-from-ethene",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q10(a) — reaction scheme — Deferred sitting",
+  "questionText": "Describe, using structural formulae, a three‐step reaction scheme in which ethene (C₂H₄) is converted to ethyl ethanoate (CH₃COOC₂H₅). Identify, where appropriate, the reagents required for each step.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C₂H₄ to C₂H₅OH",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [3 × 3]. [Expanded structures acceptable]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "C₂H₅OH to CH₃COOH",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [3 × 3]. [Expanded structures acceptable]"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "CH₃COOH and C₂H₅OH to CH₃COOC₂H₅",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [3 × 3]. [Expanded structures acceptable]"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "water",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [3 × 3]. [DESCRIBE and IDENTIFY are linked.]"
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "acidified potassium manganate(VII) / acidified potassium permanganate / H⁺ and MnO₄ – (KMnO₄)/ acidified sodium chromate(VI) / acidified sodium dichromate / H⁺ and Cr₂O₇ – (K₂Cr₂O₇) / alkaline potassium permanganate",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [3 × 3]. [DESCRIBE and IDENTIFY are linked.]"
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "C₂H₅OH (ethanol) /drop(s) of H⁺ (H₂SO₄)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [3 × 3]. [DESCRIBE and IDENTIFY are linked.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q10-c-shapes",
+  "topicId": "chem-2-2",
+  "conceptId": "vsepr-shapes-of-ammonia-and-ccl4",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q10(c) — shapes of NH₃ and CCl₄ — Deferred sitting",
+  "questionText": "Use electron pair repulsion theory to predict and explain the shapes of the following molecules: NH₃ CCl₄",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "NH₃ (ammonia): pyramidal",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3]."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "CCl₄ (tetrachloromethane, carbon tetrachloride): tetrahedral",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3]."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "NH₃ (ammonia): three bond pairs, one lone pair",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3]. [PREDICT and EXPLAIN are linked.]"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "CCl₄ (tetrachloromethane, carbon tetrachloride): four bond pairs only",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3]. [PREDICT and EXPLAIN are linked.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-deferred-q10-c-solubility",
+  "topicId": "chem-2-2",
+  "conceptId": "solubility-of-ammonia-in-water",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q10(c) — more soluble in water — Deferred sitting",
+  "questionText": "Which of these two compounds, NH₃ or CCl₄, would you expect to be the more soluble in water? Justify your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "NH₃ (ammonia)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "NH₃ (ammonia) is polar and is attracted to polar water molecules / NH₃ (ammonia) is forms hydrogen bonds (dipole‐dipole interactions) with water molecules / CCl₄ (tetrachloromethane, carbon tetrachloride) is non‐polar and is not attracted to polar water molecules / CCl₄ (tetrachloromethane, carbon tetrachloride) cannot form hydrogen bonds (dipole‐dipole interactions) with water molecules",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
  }
 ]

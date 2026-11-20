@@ -3936,13 +3936,16 @@ describe('Mark Bank card preservation', () => {
     const live = new Map([...CHEM_HIGHER, ...CHEM_ORDINARY].map(card => [card.id, card]));
     const count = (paper: string, status: string) => Object.values(chemistryLedger.papers[paper])
       .filter(record => record.status === status).length;
-    // Every audited sitting's additions and withdrawals, pinned.
+    // Every audited sitting's additions and withdrawals, pinned. A deferred sitting's record is its own
+    // ("2022 HL deferred"): all its cards are new (chem-<year>-<lvl>-deferred-...), none withdrawn.
     expect(Object.keys(chemistryLedger.papers).sort())
       .toEqual(['2010 HL', '2010 OL', '2011 HL', '2011 OL', '2012 HL', '2012 OL', '2013 HL',
         '2013 OL', '2014 HL', '2014 OL', '2015 HL', '2015 OL', '2016 HL', '2016 OL', '2017 HL',
         '2017 OL', '2018 HL', '2018 OL', '2019 HL', '2019 OL', '2020 HL', '2020 OL', '2021 HL',
-        '2021 OL', '2022 HL', '2022 OL', '2023 HL', '2023 OL', '2024 HL', '2024 OL', '2025 HL',
+        '2021 OL', '2022 HL', '2022 HL deferred', '2022 OL', '2023 HL', '2023 OL', '2024 HL', '2024 OL', '2025 HL',
         '2025 OL', '2026 HL', '2026 OL']);
+    expect([count('2022 HL deferred', 'added'), Object.keys(chemistryLedger.papers['2022 HL deferred']).length])
+      .toEqual([89, 89]);
     expect([count('2026 HL', 'added'), count('2026 OL', 'added'), count('2025 HL', 'added'),
       count('2025 OL', 'added'), count('2024 HL', 'added'), count('2024 OL', 'added'),
       count('2023 HL', 'added'), count('2023 OL', 'added'), count('2022 HL', 'added'),

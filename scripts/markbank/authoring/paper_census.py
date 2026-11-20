@@ -624,6 +624,11 @@ SHORT_ASKS = {
     # "Explain the following terms as used in genetics:" (040 p3); the term is the whole of the roman's ask.
     ('biology', 2023, 'ol-deferred', 'Q12(a)(i)'): ('Gene', '040 p3: the term "Gene" under Q12(a)\'s lead-in '
                                                             '"Explain the following terms as used in genetics:"'),
+    # Chemistry 2022 Higher deferred Q4(c)(i)-(ii): the paper prints the formula alone ("SO₂", "H₂SO₄?") under
+    # Q4(c)'s lead-in "What is the oxidation number of sulfur in" (p5); the formula is the whole of the roman's ask.
+    ('chemistry', 2022, 'hl-deferred', 'Q4(c)(i)'): ('SO2', 'p5: the formula "SO₂" under Q4(c)\'s lead-in "What is the '
+                                                            'oxidation number of sulfur in"'),
+    ('chemistry', 2022, 'hl-deferred', 'Q4(c)(ii)'): ('H2SO4?', 'p5: the formula "H₂SO₄?" under the same lead-in'),
     ('physics', 2015, 'ol', 'Q12(c)(i)'): ('gases', 'Paper p10 lists gases under the shared charge-carrier prompt; '
                                                     'scheme p16 puts all four materials in one stepped 6+2+1+1 '
                                                     'response. The card keeps the full prompt and all four matches.'),
@@ -1616,7 +1621,8 @@ def census_merged(subject, year, level, component=None, *, files=None):
             parts.add(key)
             texts[key] = wording.strip()
     if subject == 'chemistry':
-        parts, texts = chemistry_choice_parts(year, level, parts, texts)
+        # (A deferred sitting names its own booklet: census_chemistry_deferred.)
+        parts, texts = chemistry_choice_parts(year, level, parts, texts, path=files[0] if files else None)
     if subject == 'construction-studies':
         from construction_census_repairs import apply_construction_census_repairs
         parts, texts = apply_construction_census_repairs(year, level, parts, texts)
@@ -1635,7 +1641,7 @@ def census_merged(subject, year, level, component=None, *, files=None):
     return parts, texts, P.files
 
 
-def chemistry_choice_parts(year, level, parts, texts):
+def chemistry_choice_parts(year, level, parts, texts, path=None):
     """Chemistry's "Answer part A or part B." as two sets of asks, not one.
 
     Q4(l) and Q11(d) print two whole alternative parts, A and B, each with its
@@ -1655,13 +1661,15 @@ def chemistry_choice_parts(year, level, parts, texts):
     """
     import chem_print
     lvl = 'hl' if level in ('higher', 'hl') else 'ol'
-    path = os.path.join(PP.papers_dir('chemistry'), f'{year}-{lvl}-paper.pdf')
+    # A deferred sitting's booklet is named by its caller, and no June repair keyed (year, level) touches it.
+    keyed = (year, lvl) if path is None else (None, None)
+    path = path or os.path.join(PP.papers_dir('chemistry'), f'{year}-{lvl}-paper.pdf')
     # (2013 OL sets each head in one run with its words: chem_print.split_heads,
     # gated to the sittings in chem_print.OLD_OL_HEADS; every other paper as read.)
-    segs, _ = chem_print.segments(chem_print.split_heads(chem_print.read_lines(path), year, lvl),
+    segs, _ = chem_print.segments(chem_print.split_heads(chem_print.read_lines(path), *keyed),
                                   answers=False)
     choice = {}
-    if (year, lvl) in chem_print.PAPER_ALT_LETTERS:
+    if keyed in chem_print.PAPER_ALT_LETTERS:
         # (2013 HL prints Q11(c)'s choice "Answer either part A or part B.": its
         # alternatives are read as chem_print.Printed reads them, PAPER_ALT_LETTERS.)
         segs, _ = chem_print.segments(chem_print.split_heads(chem_print.read_lines(path), year, lvl),
@@ -4748,7 +4756,42 @@ def census_subject(subject):
         papers.extend(census_physics_deferred())
     if subject == 'home-economics':
         papers.extend(census_home_economics_deferred())
+    if subject == 'chemistry':
+        papers.extend(census_chemistry_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+
+
+# The SEC's deferred Chemistry sittings in the archive, English version: deferredexams/<year>/LC022<A|G>LP000EV.pdf
+# with its scheme in deferredmarkingschemes/, linked beside June's as <year>-<level>-deferred-paper.pdf (a name
+# June's reader, paper.Paper, never takes for a booklet of its own sitting). 2022 at both levels and 2023 Higher;
+# nothing for 2024-2025.
+CHEM_DEFERRED_SITTINGS = ((2022, 'hl'), (2022, 'ol'), (2023, 'hl'))
+
+
+def census_chemistry_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Each deferred Chemistry sitting (CHEM_DEFERRED_SITTINGS) is read by the
+    June reader (census_merged over its own booklet, with the choice parts read
+    from that booklet) and keyed 'Deferred', as Biology keys its own
+    (census_biology_deferred), so a deferred ask never lands on a June leaf
+    with the same address. The checksum is not run on it.
+    """
+    papers = []
+    for year, level in CHEM_DEFERRED_SITTINGS:
+        path = os.path.join(PP.papers_dir('chemistry'), f'{year}-{level}-deferred-paper.pdf')
+        parts, texts, _ = census_merged('chemistry', year, level, files=[path])
+        leaves = leaves_of(parts)
+        flags = [f for f in continuity_flags(parts, texts, 'chemistry')
+                 if not short_ask_ok('chemistry', year, level, f, sitting='deferred')]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'chemistry'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
 
 
 # The SEC's deferred Biology sittings in the archive, English version (deferredexams/<year>/: two booklets

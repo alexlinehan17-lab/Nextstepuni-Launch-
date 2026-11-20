@@ -27,8 +27,8 @@ more, each only the SEC's printed words in their printed order:
 
   * the text layer of each page, in reading order;
   * the answer column alone: each printed line's words that stand right of the
-    label column and left of the marks column (x 150-480 of a 595-wide page),
-    which drops the labels, part letters and marks and nothing else.
+    label column and left of the marks column (x 120-480 of a 595-wide page),
+    which drops the labels, side notes, part letters and marks and nothing else.
 
 Re-running replaces the appended sections; the flat and table-cell text above
 them are never touched.
@@ -49,12 +49,22 @@ def fold(text):
     return subprocess.run(['node', FOLD], input=text, capture_output=True, text=True, check=True).stdout
 
 
-def answer_column(page, left=150, right=480):
-    rows = {}
-    for x0, y0, _x1, _y1, word, *_ in page.get_text('words'):
-        if left <= x0 < right:
-            rows.setdefault(round(y0 / 3), []).append((x0, word))
-    return '\n'.join(' '.join(w for _x, w in sorted(words)) for _y, words in sorted(rows.items()))
+def answer_column(page, left=120, right=480, tolerance=4):
+    """The words right of the label column (cue labels and side notes end by x 90; answers start at x 135
+    or 163) and left of the marks column, one printed line at a time: a word set a few points off its
+    line (a radical's dot, "Cl●,"; an arrow's "uv") joins the line it is printed on."""
+    words = sorted((y0, x0, word) for x0, y0, _x1, _y1, word, *_ in page.get_text('words') if left <= x0 < right)
+    lines, current, at = [], [], None
+    for y0, x0, word in words:
+        if at is not None and y0 - at > tolerance:
+            lines.append(current)
+            current = []
+        if not current:
+            at = y0
+        current.append((x0, word))
+    if current:
+        lines.append(current)
+    return '\n'.join(' '.join(w for _x, w in sorted(line)) for line in lines)
 
 
 def main(year, level):

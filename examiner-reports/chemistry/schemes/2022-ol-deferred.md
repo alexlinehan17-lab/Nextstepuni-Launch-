@@ -1825,82 +1825,83 @@ Note to teachers and students on the marking schemes for the deferred examinatio
 
 na Scrúduithe Stáit
 Examinations Commission
-Certificate 2022
-Examinations
+Leaving Certificate 2022
+Deferred Examinations
 Marking Scheme
 Chemistry
 Ordinary Level
 and students on the marking schemes for the deferred examinations
 published by the State Examinations Commission are not intended
-They are an essential resource for examiners who receive training
-and application of the scheme. However, it should be noted
+documents. They are an essential resource for examiners who receive training
+interpretation and application of the scheme. However, it should be noted
 schemes for the deferred examinations may not necessarily be as detailed
 marking schemes for the main sitting of an examination, which
-across a large team of examiners.
+consistency across a large team of examiners.
 are working documents. While a draft marking scheme is prepared
-the scheme is not finalised until examiners have applied
-and the feedback from examiners has been collated and considered
-of responses of candidates, the overall level of difficulty of the
-the need to maintain consistency in standards between the main sitting
+the examination, the scheme is not finalised until examiners have applied
+work and the feedback from examiners has been collated and considered
+full range of responses of candidates, the overall level of difficulty of the
+and the need to maintain consistency in standards between the main sitting
 sitting and from year to year. In the case of the deferred examinations,
-the level of detail may vary by question, as the marking scheme will
-for the questions attempted by the candidates who sat these
-schemes that include model solutions or answers, it should be
-intended to be exhaustive. Variations and alternatives may also be
-must consider all answers on their merits, and will have consulted
-when in doubt.
+that the level of detail may vary by question, as the marking scheme will
+finalised for the questions attempted by the candidates who sat these
+of marking schemes that include model solutions or answers, it should be
+are not intended to be exhaustive. Variations and alternatives may also be
+Examiners must consider all answers on their merits, and will have consulted
+examiner when in doubt.
 Schemes
-future marking schemes on the basis of past schemes (whether for
+about future marking schemes on the basis of past schemes (whether for
 or the deferred examinations) should be avoided. While the underlying
-remain the same, the details of the marking of a particular type
-in the context of the contribution of that question to the overall
-Accordingly, aspects of the structure, detail and application
+principles remain the same, the details of the marking of a particular type
+change in the context of the contribution of that question to the overall
+concerned. Accordingly, aspects of the structure, detail and application
 for a particular examination will not necessarily be the same for the
 as for the main sitting or from one year to the next.
-scheme, the following should be noted.
-key phrases are given which contain the information and ideas that must
-in order to merit the assigned marks.
+the marking scheme, the following should be noted.
+only key phrases are given which contain the information and ideas that must
+answer in order to merit the assigned marks.
 methods and definitions in the scheme are not exhaustive and alternative
-in any answer is determined by the context and the manner in which the
-the number of marks assigned to the answer in the examination paper and,
-may vary from year to year.
-the essential points required in the candidate’s answer. A double
-for which separate marks are allocated in a part of the question. Words,
-by a solidus (/) are alternatives which are equally acceptable for
-phrase in bold, given in brackets, is an acceptable alternative to the preceding
-however, that words, expressions or phrases must be correctly used in
+acceptable.
+required in any answer is determined by the context and the manner in which the
+by the number of marks assigned to the answer in the examination paper and,
+therefore, may vary from year to year.
+text indicates the essential points required in the candidate’s answer. A double
+points for which separate marks are allocated in a part of the question. Words,
+separated by a solidus (/) are alternatives which are equally acceptable for
+or phrase in bold, given in brackets, is an acceptable alternative to the preceding
+Note, however, that words, expressions or phrases must be correctly used in
 and, where there is incorrect use of terminology or contradiction, the marks
-may apply when a candidate gives a list of correct and incorrect
-and formulas of elements and compounds are equally acceptable except
-name or the formula is specifically asked for in the question. However, in
-is asked for, the formula may be accepted as an alternative.
-of one mark for each arithmetical slip made by a candidate in a calculation.
-rate of 10% of the marks obtained will be given to a candidate who answers
-and who obtains less than 75% of the total marks. In calculating the bonus
+Cancellation may apply when a candidate gives a list of correct and incorrect
+names and formulas of elements and compounds are equally acceptable except
+the name or the formula is specifically asked for in the question. However, in
+name is asked for, the formula may be accepted as an alternative.
+deduction of one mark for each arithmetical slip made by a candidate in a calculation.
+at the rate of 10% of the marks obtained will be given to a candidate who answers
+Irish and who obtains less than 75% of the total marks. In calculating the bonus
 are always rounded down, not up e.g., 4.5 becomes 4; 4.9 becomes 4, etc.
-next page applies to candidates who answer entirely through Irish and who
-the total marks.
-to answer eight questions.
-marks (50).
+on the next page applies to candidates who answer entirely through Irish and who
+75% of the total marks.
+required to answer eight questions.
+equal marks (50).
 must be answered from this section.
 must be answered from this section.
-in Question 4. Six marks allocated to each item and one additional
-first two items for which the highest marks are awarded.
+be answered in Question 4. Six marks allocated to each item and one additional
+of the first two items for which the highest marks are awarded.
 who attempt Question 10 are required to answer two of the parts (a), (b)
-Question 11 are required to answer two of the parts (a), (b) and (c) where
-part (c) may choose A or B.
+attempt Question 11 are required to answer two of the parts (a), (b) and (c) where
+answer part (c) may choose A or B.
 3
 Coimisiún na Scrúduithe Stáit
 400@10%
 as ucht freagairt trí Ghaeilge
-an méid marcanna breise ba chóir a bhronnadh ar iarrthóirí a ghnóthaíonn
-na marcanna.
-de réir an ghnáthráta a bhronnadh ar iarrthóirí nach ngnóthaíonn
-marcanna don scrúdú. Ba chóir freisin an marc bónais sin a shlánú
-10%
-seo i gcás na n‐ábhar a bhfuil 400 marc san iomlán ag gabháil leo
-bhónais.
-i gcás 300 marc agus faoina bhun sin. Os cionn an mharc sin,
+thíos an méid marcanna breise ba chóir a bhronnadh ar iarrthóirí a ghnóthaíonn
+d’iomlán na marcanna.
+marcanna de réir an ghnáthráta a bhronnadh ar iarrthóirí nach ngnóthaíonn
+na marcanna don scrúdú. Ba chóir freisin an marc bónais sin a shlánú
+@ 10%
+an tábla seo i gcás na n‐ábhar a bhfuil 400 marc san iomlán ag gabháil leo
+an bhónais.
+an ngnáthráta i gcás 300 marc agus faoina bhun sin. Os cionn an mharc sin,
 Marc Bónais Bunmharc Marc
 29 351 ‐ 353 14
 28 354 ‐ 356 13
@@ -1924,8 +1925,7 @@ must be answered from this section.
 3 cooling //
 4 soluble //
 5 warm
-(3
-FIVE:
+FIVE: (3
 water
 [Accept ethanoic acid, petroleum ether, ethanol, benzene]
 diagram of crystals in capillary tube /
@@ -1934,92 +1934,90 @@ diagram of (Thiele tube, electric melting point apparatus) //
 thermometer in diagram //
 source of heat in diagram //
 heat sample (crystals) //
-observe temperature when melting occurs (starts, finishes)
-ANY
+observe temperature when melting occurs (starts, finishes) ANY
 [no diagram ‐3 marks]
 broader / lower / pure crystals have higher melting point (m.p.) /
 pure crystals have sharper melting point (m.p.) range
 5
-(molarity) known
-it correctly before use //
-a pipette filler / do not mouth pipette //
-bottom of meniscus //
-at eye level //
-not blow out (dislodge) last drop when emptying, etc
-with deionized water //
-with HCl (acid, solution it will contain)
-reversed ….allow (2 × 3)]
-orange / methyl red / phenolphthalein, etc
-(orange) //
-(pink, peach)
-– 0.111 mol l–1
-𝑽𝟏 ൈ 𝑴𝟏 𝑽𝟐 ൈ 𝑴𝟐
-ൌ
+concentration (molarity) known
+rinse it correctly before use //
+use a pipette filler / do not mouth pipette //
+read bottom of meniscus //
+read at eye level //
+do not blow out (dislodge) last drop when emptying, etc
+burette
+rinse with deionized water //
+rinse with HCl (acid, solution it will contain)
+[order reversed ….allow (2 × 3)]
+methyl orange / methyl red / phenolphthalein, etc
+yellow (orange) //
+red (pink, peach)
+0.1 – 0.111 mol l–1
+𝑽𝟏 ൈ 𝑴𝟏 ൌ 𝑽𝟐 ൈ 𝑴𝟐
 (3)
 𝒏𝟏 𝒏𝟐
-𝟐𝟓 ൈ 𝟎.𝟏𝟎
-=
+𝟐𝟓 ൈ 𝟎.𝟏𝟎 =
 (3)
 𝟏
 𝟐𝟐.𝟓 ൈ 𝑴
 (3)
 𝟏
-l–1 l–1]
-M = 0.111 mol [0.1– 0.111 mol (3)
-(3) is available consequentially for correct calculation of formula incorrectly
+M = 0.111 mol l–1 [0.1– 0.111 mol l–1] (3)
+Last (3) is available consequentially for correct calculation of formula incorrectly
+out.]
 or
-𝟎.𝟏𝟎
-= 0.0025 moles NaOH
+𝟐𝟓 ൈ 𝟎.𝟏𝟎 = 0.0025 moles NaOH
 (6)
-moles HCl (3)
-ൈ 𝟏𝟎𝟎𝟎
+𝟏𝟎𝟎𝟎
+⇒0.0025 moles HCl (3)
+𝑀ൌ𝟎.𝟎𝟎𝟐𝟓 ൈ 𝟏𝟎𝟎𝟎
 = 0.111 mol l–1 [0.1– 0.111 mol l–1] (3)
 𝟐𝟐.𝟓
 6
-funnel //
-beaker //
-Bunsen / burner
-remove suspended particles
-through //
-paper //
-inside a funnel
-may be awarded for information shown in a diagram.]
-cm3
-known volume (250 or other specified volume) //
-filtered seawater //
-beaker (evaporating basin) //
-known mass (weight) / previously weighed //
-to dryness / heat to evaporate (boil off, remove) water //
-beaker (evaporating basin) / find mass of solid
-ANY
-may be awarded for information shown in a diagram.]
-14 g per litre
+A: funnel //
+B: beaker //
+C: Bunsen / burner
+to remove suspended particles
+pour through //
+filter paper //
+folded inside a funnel
+[Marks may be awarded for information shown in a diagram.]
+measure known volume (250 cm3 or other specified volume) //
+of filtered seawater //
+into beaker (evaporating basin) //
+of known mass (weight) / previously weighed //
+heat to dryness / heat to evaporate (boil off, remove) water //
+reweigh beaker (evaporating basin) / find mass of solid ANY
+[Marks may be awarded for information shown in a diagram.]
+(i) 14 g per litre
 3.5 × 4 = 14 g per litre (6)
-14000 p.p.m.
+(i) 14000 p.p.m.
 14 × 1000 = 14,000 p.p.m. (m g l–1) (3)
 7
-Six marks to be allocated to each item and one additional mark
-items for which the highest marks are awarded.
-/ tea / sour milk, etc
-/ oven cleaner / drain cleaner, etc
-/ cutting metal
-calorimeter
-cobalt‐60
-/ radii get smaller
-/ addition of fluoride compounds (NaF, H2SiF6)
+be answered. Six marks to be allocated to each item and one additional mark
+first two items for which the highest marks are awarded.
+(i) vinegar / tea / sour milk, etc
+(ii) toothpaste / oven cleaner / drain cleaner, etc
+welding / cutting metal
+CaCl2
+bomb calorimeter
+60Co/ cobalt‐60
+decreases / radii get smaller
+fluoridation / addition of fluoride compounds (NaF, H2SiF6)
 40 + 12 + (3 × 16) = 100*
 (3)
 𝟑 ൈ 𝟏𝟔
 × 100 = 48% (3)
 𝟏𝟎𝟎
-must be shown for error to be treated as a slip.
-Curie
-covalent
-(3) for 1.04 difference if no conclusion or incorrect conclusion
-bonding given.]
-used in process / purified (prepared) raw materials
-/ shredding / washing /drying / re‐extrusion (melting)
-ANY
+* Addition must be shown for error to be treated as a slip.
+Marie Curie
+polar covalent
+[Allow (3) for 1.04 difference if no conclusion or incorrect conclusion
+about bonding given.]
+v‐shaped
+reactants used in process / purified (prepared) raw materials
+or
+sorting / shredding / washing /drying / re‐extrusion (melting) ANY
 8
 substance that cannot be made simpler //
 by chemical means
@@ -2040,42 +2038,41 @@ yellow (amber)
 compounds of carbon and hydrogen only
 flammable / explosive / suffocating
 contributes to greenhouse effect / leads to climate change (global warming)
-alkanes [10
-FOUR POINTS:
+alkanes FOUR POINTS: [10
 same molecular formula // different structural formula
 or
 [Hs and Cs need not be explicitly shown.]
 more soluble in cyclohexane / less soluble in water
 methylbenzene non polar and cyclohexane non polar / methylbenzene
 and water polar
-toxic / carcinogenic
-FOUR POINTS:
+toxic / carcinogenic FOUR POINTS:
 10
-water does not form lather easily with soap /
-of dissolved calcium ions (Ca2+) in water /
-(Mg2+)
-of dissolved magnesium ions in water
-(HCl) acid / sulfuric (H2SO4) acid / etc
-dioxide / CO2
-/ solution of calcium hydroxide/ solution of Ca(OH)2
-milky (cloudy, white) / white precipitate formed (observed)/
-= – log10 //
-/ [H3O+]
+WHAT: water does not form lather easily with soap /
+presence of dissolved calcium ions (Ca2+) in water /
+presence of dissolved magnesium ions (Mg2+) in water
+hydrochloric (HCl) acid / sulfuric (H2SO4) acid / etc
+carbon dioxide / CO2
+limewater / solution of calcium hydroxide/ solution of Ca(OH)2
+turns milky (cloudy, white) / white precipitate formed (observed)/
+Bubbles
+pH = – log10 //
+[H+] / [H3O+]
+1.0
 [H+] = 2 × 0.05 = 0.1 moles per litre (6)
 pH = – log 0.1 (3)
 = 1.0 (3)
 [Allow 6 marks for –log 0.05 = 1.3]
 11
-/ ethanol / CH3CH2OH
-ethene //
-ethanoic (acetic) acid
-addition //
-oxidation
-oxidation for X.]
-oxide
-/ ethanol / CH3CH2OH
-/ ethene / C2H4
-/ polythene
+B / ethanol / CH3CH2OH
+A: ethene //
+C: ethanoic (acetic) acid
+X: addition //
+Y: oxidation
+[Allow oxidation for X.]
+aluminium oxide
+B / ethanol / CH3CH2OH
+A / ethene / C2H4
+poly(ethene) / polythene
 12
 substance that alters (increases, decreases) rate (speed, activation energy)
 reaction //
@@ -2085,26 +2082,19 @@ axes correctly scaled
 six points other than (0, 0) correctly plotted
 smooth curve correctly drawn through points and (0, 0)
 [Allow (3) for 5 points correctly plotted.]
-cm3 [76 cm3]
-80 – 84
+80 cm3 [76 – 84 cm3]
 45 seconds [40 – 50 secs]
-cm3/sec
-1.33 THREE POINTS:
+1.33 cm3/sec THREE POINTS:
 [60 ÷ 45 = 1.33]
 platinum / palladium / rhodium
 [Allow symbols Pt, Pd and Rh]
-
-carbon monoxide converted to carbon dioxide / CO CO2 //
-
-nitrogen monoxide converted to nitrogen NO N2 //
-
-hydrocarbon CO2 + H2O //
-
-2CO2 +
-2CO + 2NO N2
+carbon monoxide converted to carbon dioxide / CO  CO2 //
+nitrogen monoxide converted to nitrogen NO  N2 //
+hydrocarbon  CO2 + H2O //
+2CO + 2NO  2CO2 + N2
 [Balancing not required, words or symbols acceptable.]
 13
-any two of the parts (a), (b) and (c).
+Answer any two of the parts (a), (b) and (c).
 soluble in water / conduct electricity when molten / conduct electricity
 aqueous solution /high melting points/ high boiling points/ solid (crystalline)
 sodium ion with 10 electrons //
@@ -2116,8 +2106,7 @@ on food / cooking / antiseptic wash / eyewash / melting ice on paths
 number of protons and neutrons in nucleus of an atom
 average mass of an atom /
 mass of an atom taking natural abundances of its isotopes into account
-1/12th
-compared to carbon‐12 atom (isotope)
+compared to 1/12th carbon‐12 atom (isotope)
 (6 × 12) + (12 × 1) + 6 × 16) = 180*
 * Addition must be shown for error to be treated as a slip.
 CH2O
@@ -2125,8 +2114,7 @@ C2H4O2
 stress (change of conditions) placed on system in chemical equilibrium
 results in reaction to relieve(reduce, absorb, counteract) the stress
 ሾ୒ୌయሿమ
-Kc
-=
+Kc =
 ሾୌమሿయሾ୒మሿ
 [Allow (3) for numerator only correct; allow (3) for denominator only
 allow (3) for correct numerator and denominator inverted.]
@@ -2137,7 +2125,7 @@ equilibrium moves to side with fewer moles (molecules) /
 Le Châtelier’s principle / stress opposed by making fewer molecules
 THREE POINTS:
 14
-any two of the parts (a), (b) and (c).
+Answer any two of the parts (a), (b) and (c).
 1 separation //
 2 mobile //
 3 stationary //
@@ -2145,23 +2133,25 @@ any two of the parts (a), (b) and (c).
 5 GC //
 6 drugs //
 7 alcohol
-(2 × 6) + (2
-SEVEN POINTS:
-of electrons
-Zn (zinc) //
-Cu2+ (copper ions)
-at start: Cu2+ (copper ions) //
-precipitate at end: Cu (copper)
-of one or more shared pairs of electrons/a bond where an atom
-another atom/2 shared electrons
-which heat is taken in (absorbed)
-(3)
-(3)
-O2 (2)
-mark for 0.4 moles of oxygen atoms)
-4.48 l (2)
+SEVEN POINTS: (2 × 6) + (2
+loss of electrons
+oxidized: Zn (zinc) //
+reduced: Cu2+ (copper ions)
+blue at start: Cu2+ (copper ions) //
+brownish precipitate at end: Cu (copper)
+consisting of one or more shared pairs of electrons/a bond where an atom
+with another atom/2 shared electrons
+in which heat is taken in (absorbed)
+g
+× 201 (3)
+g (3)
+l at STP
+of O2 (2)
+1 mark for 0.4 moles of oxygen atoms)
+22.4 = 4.48 l (2)
 15
-B
+A or part B
+Chemistry)
 makes drugs to cure disease / makes artificial fertilizer / produces new
 materials, e.g fabrics or plastics / produces dyes (semiconductors, fuels)
 provides employment /etc
@@ -2171,18 +2161,20 @@ definite reaction time / etc
 Continuous: constant supply of reactant in one end of the reactor /
 product is being removed throughout the process / continuous reaction
 ANY
-making fertilizer / making explosives
- 
-2NO + O2 2NO2 / NO + ½ O2 NO2 (3);
-FORMULAE:
-MgO
-diamond
-covalent
-graphite
-lubricant / lead in pencils / electrodes / etc
-x‐ray crystallography
-[11 +
-SEVEN POINTS:
+ONE:
+GIVE: making fertilizer / making explosives
+or
+2NO + O2  2NO2 / NO + ½ O2  NO2 (3);
+WRITE: FORMULAE:
+or
+GIVE: MgO
+or
+NAME: diamond
+WHAT: covalent
+NAME: graphite
+WHAT: lubricant / lead in pencils / electrodes / etc
+WHAT: x‐ray crystallography
+SEVEN POINTS: [11 +
 16
 
 

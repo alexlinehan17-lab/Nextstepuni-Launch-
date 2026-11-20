@@ -2986,97 +2986,98 @@ Note to teachers and students on the marking schemes for the deferred examinatio
 
 na Scrúduithe Stáit
 Examinations Commission
-Certificate 2022
-Examinations
+Leaving Certificate 2022
+Deferred Examinations
 Marking Scheme
 Chemistry
 Higher Level
 and students on the marking schemes for the deferred examinations
 published by the State Examinations Commission are not intended
-They are an essential resource for examiners who receive training
-and application of the scheme. However, it should be noted
+documents. They are an essential resource for examiners who receive training
+interpretation and application of the scheme. However, it should be noted
 schemes for the deferred examinations may not necessarily be as detailed
 marking schemes for the main sitting of an examination, which
-across a large team of examiners.
+consistency across a large team of examiners.
 are working documents. While a draft marking scheme is prepared
-the scheme is not finalised until examiners have applied
-and the feedback from examiners has been collated and considered
-of responses of candidates, the overall level of difficulty of the
-the need to maintain consistency in standards between the main sitting
+the examination, the scheme is not finalised until examiners have applied
+work and the feedback from examiners has been collated and considered
+full range of responses of candidates, the overall level of difficulty of the
+and the need to maintain consistency in standards between the main sitting
 sitting and from year to year. In the case of the deferred examinations,
-the level of detail may vary by question, as the marking scheme will
-for the questions attempted by the candidates who sat these
-schemes that include model solutions or answers, it should be
-intended to be exhaustive. Variations and alternatives may also be
-must consider all answers on their merits, and will have consulted
-when in doubt.
+that the level of detail may vary by question, as the marking scheme will
+finalised for the questions attempted by the candidates who sat these
+of marking schemes that include model solutions or answers, it should be
+are not intended to be exhaustive. Variations and alternatives may also be
+Examiners must consider all answers on their merits, and will have consulted
+examiner when in doubt.
 Schemes
-future marking schemes on the basis of past schemes (whether for
+about future marking schemes on the basis of past schemes (whether for
 or the deferred examinations) should be avoided. While the underlying
-remain the same, the details of the marking of a particular type
-in the context of the contribution of that question to the overall
-Accordingly, aspects of the structure, detail and application
+principles remain the same, the details of the marking of a particular type
+change in the context of the contribution of that question to the overall
+concerned. Accordingly, aspects of the structure, detail and application
 for a particular examination will not necessarily be the same for the
 as for the main sitting or from one year to the next.
-scheme, the following should be noted.
-key phrases are given which contain the information and ideas that must
-in order to merit the assigned marks.
-and definitions in the scheme are not exhaustive and alternative
+marking scheme, the following should be noted.
+only key phrases are given which contain the information and ideas that must
+answer in order to merit the assigned marks.
+methods and definitions in the scheme are not exhaustive and alternative
+acceptable.
 in any answer is determined by the context and the manner in which the
-number of marks assigned to the answer in the examination paper and, in
+by the number of marks assigned to the answer in the examination paper and, in
 may vary from year to year.
-the essential points required in the candidate’s answer. A double solidus
-which separate marks are allocated in a part of the question. Words, expressions
-by a solidus (/) are alternatives which are equally acceptable for a particular
-in bold, given in brackets, is an acceptable alternative to the preceding
-that words, expressions or phrases must be correctly used in context
-where there is incorrect use of terminology or contradiction, the marks may
+indicates the essential points required in the candidate’s answer. A double solidus
+for which separate marks are allocated in a part of the question. Words, expressions
+separated by a solidus (/) are alternatives which are equally acceptable for a particular
+or phrase in bold, given in brackets, is an acceptable alternative to the preceding
+however, that words, expressions or phrases must be correctly used in context
+and, where there is incorrect use of terminology or contradiction, the marks may
 may apply when a candidate gives a list of correct and incorrect answers.
-formulas of elements and compounds are equally acceptable except in
-or the formula is specifically asked for in the question. However, in some
-asked for, the formula may be accepted as an alternative.
+and formulas of elements and compounds are equally acceptable except in
+the name or the formula is specifically asked for in the question. However, in some
+is asked for, the formula may be accepted as an alternative.
 of one mark for each arithmetical slip made by a candidate in a calculation.
-incorrect Mr values but only if a candidate shows the addition of all the
-the error is clearly an addition error. If the addition of atomic masses is not
-3 marks for an incorrect Mr.
-rate of 10% of the marks obtained will be given to a candidate who answers
-obtains less than 75% of the total marks. In calculating the bonus to be
-rounded down, not up e.g., 4.5 becomes 4; 4.9 becomes 4, etc. The bonus
-applies to candidates who answer entirely through Irish and who obtained
-marks.
-to answer any SIX questions.
-marks (50).
+to incorrect Mr values but only if a candidate shows the addition of all the
+and the error is clearly an addition error. If the addition of atomic masses is not
+loses 3 marks for an incorrect Mr.
+at the rate of 10% of the marks obtained will be given to a candidate who answers
+and who obtains less than 75% of the total marks. In calculating the bonus to be
+always rounded down, not up e.g., 4.5 becomes 4; 4.9 becomes 4, etc. The bonus
+next page applies to candidates who answer entirely through Irish and who obtained
+the total marks.
+required to answer any SIX questions.
+equal marks (50).
 3
 Coimisiún na Scrúduithe Stáit
 Marcanna Breise as ucht freagairt trí Ghaeilge
-thíos an méid marcanna breise ba chóir a bhronnadh ar iarrthóirí a ghnóthaíonn
-na marcanna.
-de réir an ghnáthráta a bhronnadh ar iarrthóirí nach ngnóthaíonn níos
-don scrúdú. Ba chóir freisin an marc bónais sin a shlánú síos.
-@ 10%
-tábla seo i gcás na n‐ábhar a bhfuil 300 marc san iomlán ag gabháil leo agus
-bhónais.
-ngnáthráta i gcás 225 marc agus faoina bhun sin. Os cionn an mharc sin, féach
+tábla thíos an méid marcanna breise ba chóir a bhronnadh ar iarrthóirí a ghnóthaíonn
+d’iomlán na marcanna.
+marcanna de réir an ghnáthráta a bhronnadh ar iarrthóirí nach ngnóthaíonn níos
+marcanna don scrúdú. Ba chóir freisin an marc bónais sin a shlánú síos.
+300 @ 10%
+as an tábla seo i gcás na n‐ábhar a bhfuil 300 marc san iomlán ag gabháil leo agus
+an bhónais.
+as an ngnáthráta i gcás 225 marc agus faoina bhun sin. Os cionn an mharc sin, féach
 Marc Bónais Bunmharc Marc Bónais
 22 264 ‐ 266 10
-21 267 ‐ 270 9
-20 271 ‐ 273 8
-19 274 ‐ 276 7
-18 277 ‐ 280 6
-17 281 ‐ 283 5
-16 284 ‐ 286 4
-15 287 ‐ 290 3
-14 291 ‐ 293 2
-13 294 ‐ 296 1
-12 297 ‐ 300 0
-11
+230 21 267 ‐ 270 9
+233 20 271 ‐ 273 8
+236 19 274 ‐ 276 7
+240 18 277 ‐ 280 6
+243 17 281 ‐ 283 5
+246 16 284 ‐ 286 4
+250 15 287 ‐ 290 3
+253 14 291 ‐ 293 2
+256 13 294 ‐ 296 1
+260 12 297 ‐ 300 0
+263 11
 4
-Chemistry 2022
-examiners may award one total mark, e.g. six marks or a number of partial
-1 mark that add to the same total.
-examiners should place the apropriate marks near the correct part
-marks to indicate the part of the answer that is incorrect or insufficient.
-fully incorrect responses or responses of no merit with a 0 mark.
+in marking Chemistry 2022
+response examiners may award one total mark, e.g. six marks or a number of partial
+3 marks, 1 mark that add to the same total.
+responses examiners should place the apropriate marks near the correct part
+use 0 marks to indicate the part of the answer that is incorrect or insufficient.
+annotate fully incorrect responses or responses of no merit with a 0 mark.
 may vary.
 Meaning
 n marks awarded
@@ -3104,109 +3105,97 @@ use a funnel to fill /
 ensure part below tap (nozzle) is full before zeroing /
 read burette at eye‐level / read top (bottom) of meniscus /
 remove funnel before taking reading
-Mn7+  Mn2+ Mn4+)
-To ensure / prevent formation of brown ppt.(MnO2 /
+To ensure Mn7+  Mn2+ / prevent formation of brown ppt.(MnO2 / Mn4+)
 faint (pale) pink colour //
 persists (remains, becomes permanent)
 [‘Pink to colourless’ not acceptable.]
-0.12 moles per litre (M)
-𝟑𝟎 ൈ 𝟎.𝟎𝟐
-= –
-0.0006 moles MnO4 (3)
+(i) 0.12 moles per litre (M)
+𝟑𝟎 ൈ 𝟎.𝟎𝟐 –
+= 0.0006 moles MnO4 (3)
 𝟏𝟎𝟎𝟎
 0.0006 × 5 = 0.003 moles Fe2+ in 25 cm3 (3)
 0.003 × 40 = 0.12 moles Fe2+per litre (3)
 or
 𝟐𝟓.𝟎 ൈ 𝑴 𝟑𝟎 ൈ 𝟎.𝟎𝟐
-=
-(6)
+= (6)
 𝟓 𝟏
 M = 0.12 M (3)
 Incorrect substitution into formula is not a mathematical slip.
 or allow crystals taken as pure ammonium iron sulfate (NH4)2Fe(SO4)26H2O:
 (3) Mr = 392*
-ଵଵ.଻଺
-=
-g per litre (3) 0.03 moles in 250 cm3
-392
-/
-0.03 × 4 = 0.12 moles per litre
-moles per litre (3)
-be shown for error to be treated as slip.]
+= ଵଵ.଻଺
+× 4 47.04 g per litre (3) = 0.03 moles in 250 cm3
+/ 392
+0.012 moles per litre (3) 0.03 × 4 = 0.12 moles per litre
+must be shown for error to be treated as slip.]
 6
-1.68 g
+(ii) 1.68 g
 0.12 × 56 = 6.72 g per litre (3)
-
-6.72 4 = 1.68 g per 250 cm3 (3)
-14.29 to 14.3 %
-ଵ.଺଼
-ଵଵ.଻଺ൈ100
-=
-14.29 % (3)
+6.72  4 = 1.68 g per 250 cm3 (3)
+(iii) 14.29 to 14.3 %
+ଵଵ.଻଺ൈ100 ଵ.଺଼
+= 14.29 % (3)
 or allow crystals taken as pure ammonium iron sulfate (NH4)2Fe(SO4)26H2O:
-ହ଺
-ଷଽଶൈ100 =
-14.29 % (3)
-for incorrect rounding off resulting in candidate’s final numerical answer
-but deduction to be made once only in (e).]
+ଷଽଶൈ100 ହ଺
+= 14.29 % (3)
+be deducted for incorrect rounding off resulting in candidate’s final numerical answer
+range but deduction to be made once only in (e).]
 7
-of the two tetrahedral carbons circled
-bond indicated by the arrow
-droplets in water (second liquid in which oil is insoluble) /
-droplets suspended (dispersed) in water (second liquid in which oil is insoluble)
-dispersion of one liquid in a second liquid in which it is insoluble /
-immiscible liquids mixed without a boundary /
-of two immiscible liquids
-/ milky /cloudy / mostly water with a few oil drops
-is water soluble / water insoluble solvent required for liquid
-of emulsion
-/ dichloromethane (methylene chloride) / diethyl ether (ethoxyethane)
-ethanoate (ethyl acetate) / petroleum ether /etc
-C),
-any volatile (b.p. < 80 water‐immiscible solvent;
-ethanol, propan‐2‐one, (propanone, acetone), etc not suitable.]
-layer denser (with solvents with density less than 1.0 g cm‐3) /
-cm‐3)
-layer less dense (with solvents with density greater than 1.0 g
-yield / more efficient extraction / more clove oil extracted
-release pressure (solvent vapour) / to prevent pressure build‐up /
-vaporises the volatile solvent
-drying agent (MgSO4, Na2SO4, CaCl2, etc) for (6)]
-cm3 clove oil
+(i) either of the two tetrahedral carbons circled
+(ii) double bond indicated by the arrow
+oil droplets in water (second liquid in which oil is insoluble) /
+oil droplets suspended (dispersed) in water (second liquid in which oil is insoluble)
+fine dispersion of one liquid in a second liquid in which it is insoluble /
+two immiscible liquids mixed without a boundary /
+colloid of two immiscible liquids
+white / milky /cloudy / mostly water with a few oil drops
+ethanol is water soluble / water insoluble solvent required for liquid
+extraction of emulsion
+cyclohexane / dichloromethane (methylene chloride) / diethyl ether (ethoxyethane)
+ethyl ethanoate (ethyl acetate) / petroleum ether /etc
+[Allow any volatile (b.p. < 80 C), water‐immiscible solvent;
+Methanol, ethanol, propan‐2‐one, (propanone, acetone), etc not suitable.]
+aqueous layer denser (with solvents with density less than 1.0 g cm‐3) /
+aqueous layer less dense (with solvents with density greater than 1.0 g cm‐3)
+(i) better yield / more efficient extraction / more clove oil extracted
+(ii) to release pressure (solvent vapour) / to prevent pressure build‐up /
+agitation vaporises the volatile solvent
+evaporate//
+solvent
+[Allow drying agent (MgSO4, Na2SO4, CaCl2, etc) for (6)]
+0.80 cm3 clove oil
 ଻
-ଵ଴଴ 12
-= 0.84 g clove oil (3)
+ଵ଴଴ 12 = 0.84 g clove oil (3)
 ଴.଼ସ
-
-= 0.80 cm3 clove oil (3)
+ = 0.80 cm3 clove oil (3)
 ଵ.଴ହ
-/ preserve food / spice / antiseptic / toothache treatment / perfumes
+flavouring / preserve food / spice / antiseptic / toothache treatment / perfumes
 8
-reactants in flask (reaction vessel), one chemical labelled with name or
-peroxide added from dropping funnel not acceptable] //
-connected to graduated container, e.g. X or Y below, for oxygen collection
-marked or graduated, collecting, container labelled]
+both reactants in flask (reaction vessel), one chemical labelled with name or
+[hydrogen peroxide added from dropping funnel not acceptable] //
+flask connected to graduated container, e.g. X or Y below, for oxygen collection
+[graduations marked or graduated, collecting, container labelled]
+A
 B
-graduated
-C
+C graduated
 cylinder
 H2O2
-gas syringe
-MnO2
-catalyst and hydrogen peroxide by disturbing test‐tube /
-catalyst and hydrogen peroxide by rotating flask
-/ manganese(IV) oxide / manganese dioxide
-catalysis / surface adsorption catalysis
-in different phase from catalyst / catalyst does not dissolve / solid
-(surface)
-axes correctly labelled (V / volume / cm3 / oxygen / O2 / time / t / minutes
+MnO2 gas syringe
+mix catalyst and hydrogen peroxide by disturbing test‐tube /
+mix catalyst and hydrogen peroxide by rotating flask
+MnO2 / manganese(IV) oxide / manganese dioxide
+heterogeneous catalysis / surface adsorption catalysis
+reactants in different phase from catalyst / catalyst does not dissolve / solid
+boundary (surface)
+both axes correctly labelled (V / volume / cm3 / oxygen / O2 / time / t / minutes
 (3)
-correct numeric scales on both axes
-plotting of points other than (0, 0)
-curve of correct shape through origin
+appropriate, correct numeric scales on both axes
+careful plotting of points other than (0, 0)
+smooth curve of correct shape through origin
 60
 50
 40
+Volume
 30
 20
 10
@@ -3214,250 +3203,227 @@ curve of correct shape through origin
 0 1 2 3 4 5 6 7 8
 Time
 9
-‐ 1.8 minutes
-× 24 = 0.02784 litres O2 / 0.00116 × 22.4 = 0.025984 litres O2
+1.3 ‐ 1.8 minutes
+0.00116 × 24 = 0.02784 litres O2 / 0.00116 × 22.4 = 0.025984 litres O2
+
 25.94 – 27.84 cm3
+
 1.3 – 1.8 minutes
-cm3
-– 4.8 oxygen per minute
-tangent drawn to plotted curve at 4.5 minutes (4)]
+3.8 – 4.8 cm3 oxygen per minute
+[good tangent drawn to plotted curve at 4.5 minutes (4)]
 any two points from a tangent drawn at 4.5 minutes (3)
 e.g. (2.0, 45.0) and (5.6, 60.0)
 ଺଴.଴ିସହ.଴ ଵହ.଴
 = = 4.17 [3.8 – 4.8] cm3 oxygen per minute (3)
 ହ.଺ିଶ.଴ ଷ.଺
-must be drawn for work on instantaneous rate to be awarded full marks.]
-3 marks can be awarded for rate within stated range with no tangent drawn
-for work done on a poor tangent or a tangent placed at an
-time.]
-steep curve //
-25 ‐ 35 cm3 (approximately half) oxygen
+[Tangent must be drawn for work on instantaneous rate to be awarded full marks.]
+[Last 3 marks can be awarded for rate within stated range with no tangent drawn
+or
+consequentially for work done on a poor tangent or a tangent placed at an
+incorrect time.]
+less steep curve //
+producing 25 ‐ 35 cm3 (approximately half) oxygen
 10
-Six marks to be allocated to each item and one additional mark to
-for which the highest marks are awarded.
-listed in order of increasing atomic mass (weight) //
-with similar chemical properties were listed in columns (groups, repeating
-//
-gaps
+answered. Six marks to be allocated to each item and one additional mark to
+two items for which the highest marks are awarded.
+elements listed in order of increasing atomic mass (weight) //
+elements with similar chemical properties were listed in columns (groups, repeating
+periodically) //
+left gaps
 ANY
-30 //
-64
-+4 / 4 / IV //
-+6 / 6 / VI
- 1022atoms
-ସସ଼ ଴.ସସ଼
-ൌ𝟎. 𝟎𝟐 moles / ൌ𝟎. 𝟎𝟐
-moles (3)
-ଶଶ.ସ
- 
-× 6.0 1023 × 3 = 3.6 1022 atoms (3)
-pressures //
-temperatures
-moles per litre (M)
-
-(w/v) 3 g per 100 cm3 / 30 g per litre (3)
-ൌ𝟎. 𝟓
+(i) 30 //
+(ii) 64
+(i) +4 / 4 / IV //
+(ii) +6 / 6 / VI
+3.6  1022atoms
+ସସ଼ ൌ𝟎. 𝟎𝟐 ଴.ସସ଼ ൌ𝟎. 𝟎𝟐
+moles / moles (3)
+ଶଶସ଴଴ ଶଶ.ସ
+0.02 × 6.0  1023 × 3 = 3.6  1022 atoms (3)
+low pressures //
+high temperatures
+0.5 moles per litre (M)
+3% (w/v)  3 g per 100 cm3 / 30 g per litre (3)
+ଷ଴ ൌ𝟎. 𝟓
 moles per litre (3)
-must be shown for error to be treated as slip.]
-same temperature and pressure //
-volumes of gases have equal (the same) number(s) of particles (atoms,
-moles)
-not allow s.t.p for ‘same temperature and pressure’.]
+଺଴∗
+[*Addition must be shown for error to be treated as slip.]
+at the same temperature and pressure //
+equal volumes of gases have equal (the same) number(s) of particles (atoms,
+molecules, moles)
+[Do not allow s.t.p for ‘same temperature and pressure’.]
 CH3 CH3
 (ii)
-C C CH3 CH2
+H3 C C CH3 CH2
 CH3
-attraction of components (compounds) of mixture //
-mobile phase compared to (versus, and) stationary phase
+relative attraction of components (compounds) of mixture //
+for mobile phase compared to (versus, and) stationary phase
 11
-methanoic (formic) acid //
-benzaldehyde
-SiCl4
-Mn2O3
- 
-+ ½O2 NO / N2 + O2 2NO
+(i) methanoic (formic) acid //
+(ii) benzaldehyde
+(i) SiCl4
+(ii) Mn2O3
+½N2 + ½O2  NO / N2 + O2  2NO
 FORMULAE: (3) BALANCING:
-first (in preference) / metal becomes cathode and is not oxidised
+corrodes first (in preference) / metal becomes cathode and is not oxidised
 12
-showed electrons (cathode rays) were charged (negative) particles
-electrons (cathode rays) deflected in electric (magnetic) fields //
-electrons as subatomic particles //
-ratio of charge to mass of electron
-ANY
-measured (determined, found) size of charge (e) on electron
-2s2 2p6 3s2 3p6 1s2 2s2 2px22py2 2pz23s2 3px23py2 3pz2/[Ar]
-/ /
-3d10
-subscripts instead of superscripts.]
-2pz1
-to represent numbers of electrons acceptable but sublevel symbols must
-()
-radiation
-() ()
-is more penetrating than beta /
-()
-travels several metres (further) through air (several cm of lead) and
-a few metres of air (5 mm of aluminium) //
-() ()
-is less penetrating than beta /
-() ()
-stopped by a sheet of paper (a few mm of air) and beta can penetrate
-metres of air (5 mm of aluminium)
-(N) //
-changes into a proton and this (an) electron
+Stoney
+Thomson: showed electrons (cathode rays) were charged (negative) particles
+showed electrons (cathode rays) deflected in electric (magnetic) fields //
+identified electrons as subatomic particles //
+measured ratio of charge to mass of electron ANY
+Millikan: measured (determined, found) size of charge (e) on electron
+1s2 2s2 2p6 3s2 3p6 / 1s2 2s2 2px22py2 2pz23s2 3px23py2 3pz2/[Ar] /
+4s1 3d10
+[Allow subscripts instead of superscripts.]
+2px12py1 2pz1
+[Arrows to represent numbers of electrons acceptable but sublevel symbols must
+be given.]
+beta () radiation
+gamma () is more penetrating than beta () /
+gamma () travels several metres (further) through air (several cm of lead) and
+penetrates a few metres of air (5 mm of aluminium) //
+alpha () is less penetrating than beta () /
+alpha () stopped by a sheet of paper (a few mm of air) and beta () can penetrate
+a few metres of air (5 mm of aluminium)
+X: nitrogen (N) //
+Y: 14
+a neutron changes into a proton and this (an) electron
 13
-change when one mole of a substance burned //
-oxygen (completely)
-calorimeter
-efficiencies of fuels
-kJ
-ΔHformation ΔHformation
-ΔHcombustion = –
+heat change when one mole of a substance burned //
+in excess oxygen (completely)
+bomb calorimeter
+compare efficiencies of fuels
+–1370 kJ
+ΔHcombustion = ΔHformation – ΔHformation
 products reactants
 = [2(–394)] kJ (3) + 3(–286)] kJ (3) – (– 276) kJ (3)
 or = [(–788)] kJ (3) + (–858)] kJ (3) + 276 kJ (3)
 or = –1646 kJ (6) + 276 kJ (3)
 and = –1370 kJ (3)
 or
-
-2C + 3H2 + ½O2 ΔH = 276 kJ
-
-+ 2O2 2CO2 ΔH = –788 kJ
-
-+ 1½O2 3H2O ΔH = –858 kJ
-
-+ 3O2 2CO2 + 3H2O ΔH = –1370 kJ
+C2H5OH  2C + 3H2 + ½O2 ΔH = 276 kJ
+2C + 2O2  2CO2 ΔH = –788 kJ
+3H2 + 1½O2  3H2O ΔH = –858 kJ
+C2H5OH + 3O2  2CO2 + 3H2O ΔH = –1370 kJ
 energy
-energy [Must be shown and labelled.]
-[Must be shown but need not be labelled.]
+y‐axis: energy [Must be shown and labelled.]
+x‐axis: [Must be shown but need not be labelled.]
 (3)
-curve with energy of reactants
-than energy of products (3)
-is renewable /
-friendly / reduces knocking /
+suitable curve with energy of reactants
+greater than energy of products (3)
+bioethanol is renewable /
+environmentally friendly / reduces knocking /
 reaction progress
-(6)
-reforming / catalyst required
-+ H2O  3H2 + CO (3);
+cheaper (6)
+steam reforming / catalyst required
+CH4 + H2O  3H2 + CO (3);
 FORMULAE:
-kilogram calorific value / non‐polluting products / can be piped /
-be produced from water / does not contribute to global warming, etc.
+high kilogram calorific value / non‐polluting products / can be piped /
+can be produced from water / does not contribute to global warming, etc.
 14
-in (at) equilibrium //
-to oppose (minimise, relieve) applied stress(es) {disturbance(s)}
-of ‘stress(es){disturbance(s)}’ accept ‘change in temperature, pressure
-(concentrations)’ if all three {temperature, pressure and moles (concentrations)}
-given.]
-pressure which results in formation of fewer gaseous molecules //
-temperature which results in exothermic reaction
-pressures costly (uneconomical, require thick walled‐steel vessels, unsafe)//
-temperatures uneconomical (slow rate of reaction)
-& WHY linked]
-only available for if marks awarded]
-WHY EXPLAIN
+systems in (at) equilibrium //
+react to oppose (minimise, relieve) applied stress(es) {disturbance(s)}
+[Instead of ‘stress(es){disturbance(s)}’ accept ‘change in temperature, pressure
+of moles (concentrations)’ if all three {temperature, pressure and moles (concentrations)}
+are given.]
+high pressure which results in formation of fewer gaseous molecules //
+low temperature which results in exothermic reaction
+high pressures costly (uneconomical, require thick walled‐steel vessels, unsafe)//
+low temperatures uneconomical (slow rate of reaction)
+[EXPLAIN & WHY linked]
+[Marks only available for WHY if EXPLAIN marks awarded]
 ሾ𝐍𝐇𝟑ሿ𝟐
+Kc =
 ሾ𝐍𝟐ሿሾ𝐇𝟐ሿ𝟑
-not accept inverted expression.]
+[Do not accept inverted expression.]
+400
 ⇌
-N2 + 3H2 2NH3
-(g) (g) (g)
-16.8 g 1.4 g 0 g
+N2 (g) + 3H2 (g) 2NH3 (g)
+Initially: 16.8 g 1.4 g 0 g
 0.6 mol 0.7 mol 0 mol //
 0.6 mol/l 0.7 mol/l 0 mol/l (3)
-
-0.6 – x mol 0.7 – 3x mol 2x mol x = 0.2 mol //
-
-0.6 – x mol/l 0.7 – 3x mol/l 2x mol/l x = 0.2 mol/l
-mol
-6.8 g NH3= 0.4 x = 0.2 mol //
-
-6.8 g NH3= 0.4 mol /l x = 0.2 mol /l (3)
-0.4 mol/l 0.1 mol/l 0.4 mol/l (3)
+Change: 0.6 – x mol 0.7 – 3x mol 2x mol  x = 0.2 mol //
+0.6 – x mol/l 0.7 – 3x mol/l 2x mol/l  x = 0.2 mol/l
+6.8 g NH3= 0.4 mol x = 0.2 mol //
+6.8 g NH3= 0.4 mol /l  x = 0.2 mol /l (3)
+Equil: 0.4 mol/l 0.1 mol/l 0.4 mol/l (3)
 ሾ୒ୌయሿమ ሾ଴.ସሿమ
 Kc = = = 400 (3)
 ሾ୒మሿሾୌమሿయ ሾ଴.ସሿሾ଴.ଵሿయ
-(smaller)
-(effect) / none
-temperature favours endothermic (reverse) reaction //
-affects rate of forward and reverse reactions equally / helps reach equilibrium
-/ Kc only affected by temperature
-and linked; marks only available if
-EXPLAIN JUSTIFY
-marks awarded in (i) and (ii).]
+Kc decreases (smaller)
+no change (effect) / none
+increased temperature favours endothermic (reverse) reaction //
+catalyst affects rate of forward and reverse reactions equally / helps reach equilibrium
+faster / Kc only affected by temperature
+[JUSTIFY and EXPLAIN linked; JUSTIFY marks only available if
+EXPLAIN marks awarded in (i) and (ii).]
 15
-carbon and hydrogen only
-have at least one carbon‐carbon double bond / e.g. (CH2=CH2)
-structure of any alkene with position of its double bond is required.]
-(CHCH)
-have at least one carbon‐carbon triple bond / e.g.
-structure of any alkyne with position of its triple bond is required.]
-multiple bonding can be taken from diagrams.]
-diagram (–3)]
-
-+ 2H2O C2H2 + Ca(OH)2 FORMULAE: (3); BALANCING:
-(Br2) solution (water) / acidified potassium manganate(VII) {permanganate}
-/ (MnO4ˉ/H+) when combined with ethyne //
-(changes to colourless, colour disappears)
-(welding) metal / ripening bananas / miners’ (cavers’) lamps
-//
-//
-addition
-order essential unless answers clearly labelled.]
-(splitting, fission) of chlorine molecule (Cl2) into
-Cl●,
-radicals (atoms, Cl) by ultraviolet (uv) light /
-uv uv
-2Cl● / Cl2 2Cl
-(1):
-Cl●,
-radical (atom, Cl) reacts with methane molecule (CH4) giving hydrogen
-(HCl) and a methyl radical (CH3●) /
-CH3● CH3●
-+ CH4 → HCl + / Cl + CH4 → HCl +
-acid not acceptable for HCl and cancellation applies.]
-CH3●
-CH3 used instead of deduct 3 marks but only once in (c).]
-(2):
-radical (CH3●) reacts with chlorine molecule (Cl2) giving monochloromethane
-Cl●,
-and a chlorine radical (atom, Cl) /
-+ Cl2 → CH3Cl + Cl● / CH3● + Cl2 → CH3Cl + Cl
-(3) for chain reaction occurs / propagation steps repeat until one reactant
-up / propagation steps repeat until termination reached if marks for (0)
-awarded for propagation (1) and propagation (2).
-of remaining radicals
-→ Cl2 / 2Cl → Cl2 /
-+ CH3● → CH3Cl / Cl + CH3● → CH3Cl /
-→ C2H6
+contain carbon and hydrogen only
+alkenes: have at least one carbon‐carbon double bond / e.g. (CH2=CH2)
+[The structure of any alkene with position of its double bond is required.]
+alkynes: have at least one carbon‐carbon triple bond / e.g. (CHCH)
+[The structure of any alkyne with position of its triple bond is required.]
+[Carbon‐carbon multiple bonding can be taken from diagrams.]
+[No diagram (–3)]
+CaC2 + 2H2O  C2H2 + Ca(OH)2 (3);
+FORMULAE: BALANCING:
+bromine (Br2) solution (water) / acidified potassium manganate(VII) {permanganate}
+(KMnO4/H+) / (MnO4ˉ/H+) when combined with ethyne //
+decolourises (changes to colourless, colour disappears)
+cutting (welding) metal / ripening bananas / miners’ (cavers’) lamps
+(i) elimination //
+(ii) substitution //
+(iii) addition
+[Correct order essential unless answers clearly labelled.]
+initiation:
+homolysis (splitting, fission) of chlorine molecule (Cl2) into
+free radicals (atoms, Cl●, Cl) by ultraviolet (uv) light /
+Cl2 uv 2Cl● / Cl2 uv 2Cl
+propagation (1):
+chlorine radical (atom, Cl●, Cl) reacts with methane molecule (CH4) giving hydrogen
+chloride (HCl) and a methyl radical (CH3●) /
+Cl● + CH4 → HCl + CH3● / Cl + CH4 → HCl + CH3●
+[Hydrochloric acid not acceptable for HCl and cancellation applies.]
+[Where CH3 used instead of CH3● deduct 3 marks but only once in (c).]
+propagation (2):
+methyl radical (CH3●) reacts with chlorine molecule (Cl2) giving monochloromethane
+(CH3Cl) and a chlorine radical (atom, Cl●, Cl) /
+CH3● + Cl2 → CH3Cl + Cl● / CH3● + Cl2 → CH3Cl + Cl
+Allow (3) for chain reaction occurs / propagation steps repeat until one reactant
+used up / propagation steps repeat until termination reached if marks for (0)
+marks awarded for propagation (1) and propagation (2).
+termination:
+combination of remaining radicals
+2Cl● → Cl2 / 2Cl → Cl2 /
+Cl● + CH3● → CH3Cl / Cl + CH3● → CH3Cl /
+2CH3● → C2H6
 16
-(source of radicals) increases the rate (speeds up reaction) by
-breaking into) ethyl free radicals /
-(radical inhibitor) decreases the rate (slows down reaction) by removing
-/
-occurs in sunlight (UV) / reaction cannot occur in darkness/
-every photon absorbed, many choromethane molecules obtained /
-amounts of ethane formed
+tetraethyllead (source of radicals) increases the rate (speeds up reaction) by
+(producing, breaking into) ethyl free radicals /
+oxygen (radical inhibitor) decreases the rate (slows down reaction) by removing
+radicals /
+only occurs in sunlight (UV) / reaction cannot occur in darkness/
+for every photon absorbed, many choromethane molecules obtained /
+small amounts of ethane formed
 17
-acid
-solution pH > 10 //
-(Solochrome, Erio‐T) indicator
-to ensure sharp (accurate, colour change at) end‐point / keep pH constant
-(Ca2+, Mg2+, M2+)
-only calcium ions magnesium ions, detected /
-all calcium ions (Ca2+, magnesium ions, Mg2+, M2+) react (complex) with
-non‐alkaline earth metal ions do not react (do not complex, not detected)
-indicator works properly /
-stable only at high pH for calcium and magnesium /
-conditions needed (acidic conditions unsuitable) for edta to complex
-Ca2+, Mg2+)
-(calcium ions, magnesium ions, //
-(Solochrome, Erio‐T): to detect end point / change colour at end
-as indicator
-and EXPLAIN are linked. EXPLAIN marks only available if WHAT marks awarded.]
-p.p.m. CaCO3
+ethylenediaminetetraacetic acid
+buffer solution pH > 10 //
+Eriochrome (Solochrome, Erio‐T) indicator
+buffer: to ensure sharp (accurate, colour change at) end‐point / keep pH constant
+to ensure only calcium ions (Ca2+, magnesium ions, Mg2+, M2+) detected /
+to ensure all calcium ions (Ca2+, magnesium ions, Mg2+, M2+) react (complex) with
+to ensure non‐alkaline earth metal ions do not react (do not complex, not detected)
+to ensure indicator works properly /
+MY2– stable only at high pH for calcium and magnesium /
+alkaline conditions needed (acidic conditions unsuitable) for edta to complex
+M2+ (calcium ions, Ca2+, magnesium ions, Mg2+) //
+Eriochrome (Solochrome, Erio‐T): to detect end point / change colour at end
+to act as indicator
+[WHAT and EXPLAIN are linked. EXPLAIN marks only available if WHAT marks awarded.]
+308 p.p.m. CaCO3
 𝟏𝟓.𝟒 ൈ 𝟎.𝟎𝟏𝟎
-=
-0.000154 moles edta (3)
+= 0.000154 moles edta (3)
 𝟏𝟎𝟎𝟎
 
 0.000154 moles M2+ in 50 cm3
@@ -3476,128 +3442,114 @@ M = 0.308 M (3)
 0.00308 × 100* = 0.308 g CaCO3 per litre (3)
 
 0.308 × 1000 = 308 p.p.m. CaCO3 (3)
-must be shown for error to be treated as slip.]
-substitution into formula is not a mathematical slip.
-for incorrect rounding off resulting in candidate’s final numerical answer
-but deduction to be made once only in (iii).]
-water //
-water //
-titration //
-(difference between) the two readings is temporary hardness
-(ANY
-THREE
+[*Addition must be shown for error to be treated as slip.]
+Incorrect substitution into formula is not a mathematical slip.
+be deducted for incorrect rounding off resulting in candidate’s final numerical answer
+values but deduction to be made once only in (iii).]
+boil water //
+filter water //
+repeat titration //
+subtract (difference between) the two readings is temporary hardness
+(ANY THREE
 18
-(2H+) Ca2+
-hydrogen ions from the cation‐exchange resin (RH) replace a (cations,
-ions) in the water / 2RH + Ca2+  R2Ca + 2H+ //
-(hydroxyl) ion (OH–) from the anion‐exchange resin (R*OH) replaces
-HCO3–  OH–
-(anion, negative ion) in the water / R*OH + R*HCO3 +
-
-+ 2HCO3– 2R*HCO3 + 2OH–) //
-(H+) (OH–)
-ion(s) and hydroxide (hydroxyl) ion(s) combine to form water
- 
-+ 2OH– 2H2O / H+ + OH– H2O
+two hydrogen ions (2H+) from the cation‐exchange resin (RH) replace a Ca2+ (cations,
+positive ions) in the water / 2RH + Ca2+  R2Ca + 2H+ //
+a hydroxide (hydroxyl) ion (OH–) from the anion‐exchange resin (R*OH) replaces
+HCO3– (anion, negative ion) in the water / R*OH + HCO3–  R*HCO3 + OH–
+(2R*OH + 2HCO3–  2R*HCO3 + 2OH–) //
+hydrogen ion(s) (H+) and hydroxide (hydroxyl) ion(s) (OH–) combine to form water
+2H+ + 2OH–  2H2O / H+ + OH–  H2O
 19
-bonds in reactants //
-bonds in products
-to C2H5OH//
-to CH3COOH //
-and C2H5OH to CH3COOC2H5
-structures acceptable]
-//
-potassium manganate(VII) / acidified potassium permanganate / H+
-acidified sodium chromate(VI) / acidified sodium dichromate / H+ and
-/ alkaline potassium permanganate //
-H+
-(ethanol) /drop(s) of (H2SO4)
-and are linked.]
-IDENTIFY
-relative atomic (molecular) mass / analysis of gases from a waste
-of trace organic pollutants in water / analysing (determining) structure
-substance / drug detection / heavy metals in water /etc.
+breaking bonds in reactants //
+making bonds in products
+C2H4 to C2H5OH//
+C2H5OH to CH3COOH //
+CH3COOH and C2H5OH to CH3COOC2H5
+[Expanded structures acceptable]
+water //
+acidified potassium manganate(VII) / acidified potassium permanganate / H+
+(KMnO4)/ acidified sodium chromate(VI) / acidified sodium dichromate / H+ and
+(K2Cr2O7) / alkaline potassium permanganate //
+C2H5OH (ethanol) /drop(s) of H+ (H2SO4)
+[DESCRIBE and IDENTIFY are linked.]
+determine relative atomic (molecular) mass / analysis of gases from a waste
+analysis of trace organic pollutants in water / analysing (determining) structure
+organic substance / drug detection / heavy metals in water /etc.
+52.1
 (50 × 4.345) + (52 × 83.789) + (53 × 9.501) + (54 × 2.365) =/
 217.25 + 4357.028 + 503.553 + 127.71 = (3)
 5205.541 (mass of 100 atoms) (3)
-
-
+ 
 5205.541 100 = 52.05541 (3)
 Minus 1 if not rounded to 1 decimal place
-of substance //
-(production of positive ions) //
-//
-(deflection in magnetic field)
-ANY
-incorrect (–3).]
-//
-(ammonia): pyramidal //
-(tetrachloromethane, carbon tetrachloride): tetrahedral
-(ammonia): three bond pairs, one lone pair //
-(tetrachloromethane, carbon tetrachloride): four bond pairs only
-and are linked.]
-EXPLAIN
-(ammonia)
-(ammonia) is polar and is attracted to polar water molecules /
-(ammonia) is forms hydrogen bonds (dipole‐dipole interactions) with water
-/
-(tetrachloromethane, carbon tetrachloride) is non‐polar
-is not attracted to polar water molecules /
-(tetrachloromethane, carbon tetrachloride) cannot form hydrogen bonds
-interactions) with water molecules
+vaporisation of substance //
+ionisation (production of positive ions) //
+acceleration //
+separation (deflection in magnetic field)
+detection ANY
+[Sequence incorrect (–3).]
+linear //
+v‐shaped
+NH3 (ammonia): pyramidal //
+CCl4 (tetrachloromethane, carbon tetrachloride): tetrahedral
+NH3 (ammonia): three bond pairs, one lone pair //
+CCl4 (tetrachloromethane, carbon tetrachloride): four bond pairs only
+[PREDICT and EXPLAIN are linked.]
+NH3 (ammonia)
+NH3 (ammonia) is polar and is attracted to polar water molecules /
+NH3 (ammonia) is forms hydrogen bonds (dipole‐dipole interactions) with water
+molecules /
+CCl4 (tetrachloromethane, carbon tetrachloride) is non‐polar
+and is not attracted to polar water molecules /
+CCl4 (tetrachloromethane, carbon tetrachloride) cannot form hydrogen bonds
+(dipole‐dipole interactions) with water molecules
 20
-of (tendency, ability) of a fuel to resist knocking
-pre‐igniting, igniting too early, pinking, igniting before spark) /
-of (tendency, ability) of a fuel to knock
-pre‐ignite, ignite too early, pink, ignite before spark) /
-performance rating based on its equivalence to a certain mixture
-(alkanes)
-chain //
-chain //
-structure
-ANY
-//
-/ dehydrocyclisation //
-cracking //
-oxygenates
+measure of (tendency, ability) of a fuel to resist knocking
+(autoigniting, pre‐igniting, igniting too early, pinking, igniting before spark) /
+measure of (tendency, ability) of a fuel to knock
+(autoignite, pre‐ignite, ignite too early, pink, ignite before spark) /
+fuel performance rating based on its equivalence to a certain mixture
+of hydrocarbons (alkanes)
+short chain //
+branched chain //
+cyclic structure ANY
+isomerisation //
+reforming / dehydrocyclisation //
+catalytic cracking //
+adding oxygenates
 ANY THREE:
-moles sulfuric limiting / zinc in excess 0.0031 moles
+0.0025 moles sulfuric limiting / zinc in excess 0.0031 moles
 ଶହ ൈ ଴.ଵ଴
-= //
-0.0025 moles sulfuric acid
+= 0.0025 moles sulfuric acid //
 ଵ଴଴଴
 ଴.ଶ଴
 = 0.0031 moles Zn (6 + 3)
 ଺ହ
-
-sulfuric limiting / zinc in excess (3)
-must be shown for marks to be awarded]
-0.4025 g
+ sulfuric limiting / zinc in excess (3)
+[Work must be shown for marks to be awarded]
+(i) 0.4025 g
 1:1 / 0.0025 (3)
 161 g (2)
 0.0025 × 161= 0.4025 g (2)
-– 0.04025 g zinc
-0.0031 – 0.0025 = 0.0006 moles zinc unused
-or
+(ii) 0.0325 – 0.04025 g zinc
+0.0031 – 0.0025 = 0.0006 moles zinc unused or
 0.0006 × 65 = 0.039 g zinc
 21
- Cl– H3O+  H+ Cl‐
-HCl + H2O + / HCl +
+HCl + H2O  Cl– + H3O+ / HCl  H+ + Cl‐
 ⇌ ⇌
 HCN + H2O CN– + H3O+ / HCN H+ + CN‐
 HCN //
 Cl–
 pH = 12.60 – 12.602
-
-= 1.0 × 10–14 0.04 = 2.50 × 10–13
-= –log[H3O+] = –log 2.50 × 10–13 = 12.60
-= –log[OH–] = ‐log 0.04 = 1.398 ‐ 1.40
-= 14 – 1.40 = 12.60
-answer is not a slip error here]
+[H3O+] = 1.0 × 10–14  0.04 = 2.50 × 10–13
+pH = –log[H3O+] = –log 2.50 × 10–13 = 12.60
+or
+pOH = –log[OH–] = ‐log 0.04 = 1.398 ‐ 1.40
+pH = 14 – 1.40 = 12.60
+[negative answer is not a slip error here]
 [H3O+] = 0.063 moles per litre
-= inverse log (– 1.2) / [H3O+] = antilog(– 1.2) / [H3O+] = 10–1.2
-[H3O+]
-= 0.063 moles per litre
+[H3O+] = inverse log (– 1.2) / [H3O+] = antilog(– 1.2) / [H3O+] = 10–1.2
+ [H3O+] = 0.063 moles per litre
 22
 acid rain / global warming (enhanced greenhouse effect) / ozone depletion
 ANY
@@ -3614,10 +3566,8 @@ nuclear power/ catalytic converter / etc
 aluminium forms oxide layer that forms an impermeable coat /
 iron forms flaky oxide layer / rust (iron oxide, oxide layer) falls off iron
 carbon / graphite
-Al3+ 3e–  2Al3+ 6e– 
-cathode: + Al / + 2Al
-O2–  2e–  2e– 3O2–  6e– 
-anode: O + ½ O2 + / 3O + 1½ O2 +
+cathode: Al3+ + 3e–  Al / 2Al3+ + 6e–  2Al
+anode: O2–  O + 2e–  ½ O2 + 2e– / 3O2–  3O + 6e–  1½ O2 +
 uses hydroelectric power / use of cryolite / recycles (reuses) aluminium
 23
 

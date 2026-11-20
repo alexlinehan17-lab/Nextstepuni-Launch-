@@ -174,15 +174,16 @@ CROPS = {
 def _load_sitting_crops():
     """Each sitting carded after 2025 keeps its rectangles in a file of its own,
     chemistry/crops/<year>-<lvl>.json: a list of [suffix, source, page, rect],
-    where rect is [x0, y0, x1, y1], or a list of those for 'paper-panels'."""
+    where rect is [x0, y0, x1, y1], or a list of those for 'paper-panels'. A
+    deferred sitting's file is <year>-<lvl>-deferred.json, keyed (year, '<lvl>-deferred')."""
     folder = os.path.join(DIR, 'chemistry', 'crops')
     if not os.path.isdir(folder):
         return
     for name in sorted(os.listdir(folder)):
-        m = re.match(r'^(\d{4})-(hl|ol)\.json$', name)
+        m = re.match(r'^(\d{4})-(hl|ol)(-deferred)?\.json$', name)
         if not m:
             continue
-        key = (int(m.group(1)), m.group(2))
+        key = (int(m.group(1)), m.group(2) + (m.group(3) or ''))
         if key in CROPS:
             raise SystemExit(f'{name}: {key} is already in CROPS')
         rows = json.load(open(os.path.join(folder, name)))
@@ -349,6 +350,10 @@ MASKS = {
     # (x 113-386, y 526-567; dark pixels 72-630 x 214-296). (i) ends at row 196; the photograph
     # starts at column 673.
     'chemistry-2021-HL-paper-q11b-i-print.png': [(68, 210, 635, 301)],
+    # 2022 HL deferred scheme Q8(e): the print's first panel runs to the foot of the side notes' box
+    # (scheme page 16, y 789), past the page number "16" (x 289-300, y 781-792; pixels 535-558 x
+    # 829-852 of the print), whited out; the answer column's last line ends at row 744.
+    'chemistry-2022-HL-deferred-scheme-q8e.png': [(531, 825, 563, 856)],
     # 2022 OL Q8(a): the mark "(17)" at the end of (iii)'s last line (paper page 9, x 519-541,
     # y 360-372; dark pixels 975-1012 x 307-327); the line's own text ends at column 945.
     'chemistry-2022-OL-paper-q8a-print.png': [(971, 303, 1017, 332)],
@@ -370,8 +375,10 @@ MASKS = {
 ROTATE = {'chemistry-2012-HL-scheme-q9a.png': 90}
 
 def out_dir(year, lvl):
-    # bind-figures.mjs resolves a crop as exam-papers/<subject>/figures/<year>-<level>/.
-    return os.path.join(ROOT, 'exam-papers', 'chemistry', 'figures', f'{year}-{lvl}')
+    # bind-figures.mjs resolves a crop as exam-papers/<subject>/figures/<year>-<level>/, reading the
+    # level from the name's "-HL-"/"-OL-": a deferred sitting's crops ("chemistry-2022-HL-deferred-…")
+    # go beside June's, which their names keep apart.
+    return os.path.join(ROOT, 'exam-papers', 'chemistry', 'figures', f'{year}-{lvl.split("-")[0]}')
 
 
 suffix_of = {(src, pg, rect): suf for crops in CROPS.values() for suf, src, pg, rect in crops}
@@ -434,7 +441,10 @@ def render(year, lvl, source, page, rect):
 
 
 def name(year, lvl, suffix):
-    return f'chemistry-{year}-{lvl.upper()}-{suffix}.png'
+    # A deferred sitting's crop says so after its level, as Economics' and Engineering's do:
+    # chemistry-2022-HL-deferred-paper-q3.png.
+    base, _, sitting = lvl.partition('-')
+    return f'chemistry-{year}-{base.upper()}{"-" + sitting if sitting else ""}-{suffix}.png'
 
 
 def main():

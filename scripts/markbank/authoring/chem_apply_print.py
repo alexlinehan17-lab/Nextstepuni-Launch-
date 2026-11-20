@@ -155,12 +155,14 @@ def base_built_ids():
     return ids
 
 
-def no_longer_withdrawn(year, lvl, withdrawn):
+def no_longer_withdrawn(year, lvl, withdrawn, sitting=None):
     """Ids this sitting's ledger last recorded as withdrawn that the generator
     now emits again: their build-time drop and progress alias are stale."""
     if not os.path.exists(LEDGER):
         return set()
-    paper = json.load(open(LEDGER)).get('papers', {}).get(f'{year} {lvl.upper()}', {})
+    # (A deferred sitting's record is its own, '<year> <LV> deferred': June's withdrawals are never its own.)
+    paper = json.load(open(LEDGER)).get('papers', {}).get(
+        f'{year} {lvl.upper()}' + (' deferred' if sitting == 'deferred' else ''), {})
     return {i for i, r in paper.items() if r['status'] == 'withdrawn'} - set(withdrawn)
 
 
@@ -219,7 +221,7 @@ def main():
     out, record, withdrawn = plan(args.year, args.lvl, sitting)
     files = {DECK: json.dumps(out, ensure_ascii=False, indent=1),
              LEDGER: ledger_text(args.year, args.lvl, record, sitting)}
-    stale = no_longer_withdrawn(args.year, args.lvl, withdrawn)
+    stale = no_longer_withdrawn(args.year, args.lvl, withdrawn, sitting)
     if withdrawn or stale:
         files[CORRECTIONS] = corrections_text(withdrawn, stale)
         files[ALIASES] = aliases_text(withdrawn, stale)
@@ -229,12 +231,12 @@ def main():
         bad = [os.path.relpath(p, ROOT) for p, t in files.items()
                if not os.path.exists(p) or open(p).read() != t]
         print(('ok' if not bad else 'DIFFERS ' + ', '.join(bad)) + f': {args.year} '
-              f'{args.lvl.upper()} {counts}')
+              f'{args.lvl.upper()}{" deferred" if sitting else ""} {counts}')
         sys.exit(1 if bad else 0)
     for p, t in files.items():
         with open(p, 'w') as f:
             f.write(t)
-    print(f'{args.year} {args.lvl.upper()}: {counts}; deck holds {len(out)}')
+    print(f'{args.year} {args.lvl.upper()}{" deferred" if sitting else ""}: {counts}; deck holds {len(out)}')
 
 
 if __name__ == '__main__':
