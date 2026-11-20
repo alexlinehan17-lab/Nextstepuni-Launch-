@@ -220,6 +220,7 @@ import { CARDS as SLOVAKIAN_HIGHER } from '../components/MarkBank/cards/slovakia
 import { CARDS as SLOVENIAN_HIGHER } from '../components/MarkBank/cards/slovenian/higher';
 import { CARDS as SWEDISH_HIGHER } from '../components/MarkBank/cards/swedish/higher';
 import { CARDS as UKRAINIAN_HIGHER } from '../components/MarkBank/cards/ukrainian/higher';
+import { CARDS as MALTESE_HIGHER } from '../components/MarkBank/cards/maltese/higher';
 import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
 import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
 import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
@@ -3136,8 +3137,15 @@ describe('Mark Bank card preservation', () => {
     const listed = Object.entries(smallLanguageAdditions)
       .flatMap(([subject, bySitting]) => Object.keys(bySitting).map(year => `${subject} ${year}`)).sort();
     expect(listed).toEqual(SMALL_LANGUAGE_SITTINGS.map(([subject, year]) => `${subject} ${year}`).sort());
-    const deckIds = (subject: string) => new Set(decks.filter(([name]) => name.split(':')[0] === subject)
-      .flatMap(([, cards]) => cards.map(card => card.id)));
+    // Maltese is outside `decks` (never pinned before this lane; adding it there would move the bank's
+    // frozen totals): its 29 cards live on 2026-11-20 are pinned here instead, and held apart the same way.
+    const MALTESE_FROZEN: [number, string] = [29, '2c2e7c672b90c7a3edf05caaeeb789d39b21a59c61d9036a1fb8dad24ed22477'];
+    const malteseFrozen = MALTESE_HIGHER.map(card => card.id).filter(id => !smallLanguageAddedIds.has(id));
+    expect([malteseFrozen.length, idHash(malteseFrozen)]).toEqual(MALTESE_FROZEN);
+    const deckIds = (subject: string) => new Set([
+      ...decks.filter(([name]) => name.split(':')[0] === subject).flatMap(([, cards]) => cards.map(card => card.id)),
+      ...(subject === 'maltese' ? MALTESE_HIGHER.map(card => card.id) : []),
+    ]);
     for (const [subject, year, count, hash] of SMALL_LANGUAGE_SITTINGS) {
       const ids = smallLanguageAdditions[subject][String(year)];
       expect(ids, `${subject} ${year}`).toHaveLength(count);
@@ -3418,8 +3426,8 @@ describe('Mark Bank card preservation', () => {
         + italianAddedCount
         // Polish additions (languages-q3 lane).
         + polishAddedTotal
-        // The small languages (Claude queue 5).
-        + smallLanguageAddedIds.size);
+        // The small languages (Claude queue 5), Maltese's aside: its deck is not in `decks`.
+        + [...smallLanguageAddedIds].filter(id => !id.startsWith('mlt-')).length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
