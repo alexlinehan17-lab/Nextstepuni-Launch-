@@ -7104,5 +7104,296 @@
   "md5": "ec2480ef009f0cb86015a61d4df4f745",
   "alt": "The printed question (two lines), printed with Listening Q6 Excerpt 3(iv) in the 2012 Higher Level paper, as the SEC set it.",
   "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q1-x1-i-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x1-i-score.png",
+  "md5": "05d90cd8bc7397ce2fdbd713030cec1b",
+  "alt": "The question and its three printed options (the introduction, the operatic section, the rock section), printed with Listening Q1 Excerpt 1(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q1-x1-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x1-ii-score.png",
+  "md5": "7038711705bb703adc5e666e31301fd5",
+  "alt": "The question and its three printed options (in unison, in imitation, in harmony), printed with Listening Q1 Excerpt 1(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q1-x1-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x1-iii-score.png",
+  "md5": "27aa731b60d15b67cfabcf875d680af4",
+  "alt": "The printed question, printed with Listening Q1 Excerpt 1(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q1-x1-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x1-iv-score.png",
+  "md5": "e69fb9a032175675a3dd3c662a3fd3b3",
+  "alt": "The question and its three printed options (panning, distortion, flanging), printed with Listening Q1 Excerpt 1(iv) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q1-x2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x2-i-score.png",
+  "md5": "ec34f5daaa403a8af9bfc6ac37cc4315",
+  "alt": "The Excerpt 2 heading and its printed outline score (bars 1-15, the vocal line with its lyrics; treble clef, two flats, 4/4), with X bracketed over bar 4, printed with Listening Q1 Excerpt 2(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-scheme-p5-l-q1-x2-i": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-scheme-p5-l-q1-x2-i.png",
+  "md5": "4f4b96d5ce71c95456f9b98a983342f2",
+  "alt": "The marking scheme’s printed answer for Listening Q1 Excerpt 2(i): the five rhythms printed on a stave, with \"1 mark for each correct rhythm.\" and its 5 marks, cropped from page 5 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2012-OL-l-q1-x2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x2-ii-score.png",
+  "md5": "86b6f73e8e35ddde4de9f53b205fe523",
+  "alt": "The question and its three printed options (repeated notes, a descending arpeggio, a descending scale), printed with Listening Q1 Excerpt 2(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q1-x2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x2-iii-score.png",
+  "md5": "b06b39be7ecb102f231e44c3dab1aff3",
+  "alt": "The question, its three printed options (monophonic, homophonic, polyphonic) and the line \"Explain.\", printed with Listening Q1 Excerpt 2(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q1-x3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x3-i-score.png",
+  "md5": "3f2291f37319d10fc8222620fd5d4fc3",
+  "alt": "The question, its three printed options (rock, ballad, operatic) and the line \"Give one reason for your answer.\", printed with Listening Q1 Excerpt 3(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q1-x3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x3-ii-score.png",
+  "md5": "99384b7374d09af4159080c8a73d70ab",
+  "alt": "The question and its three printed options (countermelodies, a capella vocals, antiphonal vocals), printed with Listening Q1 Excerpt 3(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q1-x3-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x3-iii-score.png",
+  "md5": "9247b97c94e6ad7dd0dced0b3660cda0",
+  "alt": "The printed question, printed with Listening Q1 Excerpt 3(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q2-i-score.png",
+  "md5": "14a0a8f0dd1d50c87049be8cffd22051",
+  "alt": "The question and its three printed options (Exposition, Development, Recapitulation), printed with Listening Q2(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q2-ii-score.png",
+  "md5": "2086b8b5cb019b9d161f3c1bb70009ba",
+  "alt": "The question and its three printed options (the Friar Lawrence theme, the Strife theme, the Love theme), then \"It is played on\" and its three printed options (woodwind only, brass only, woodwind and brass), printed with Listening Q2(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q2-iii-score.png",
+  "md5": "ba7c038212f7613896ec8fec6e57dafa",
+  "alt": "The question, its three printed options (monophonic, homophonic, polyphonic) and the line \"Give one reason for your answer.\", printed with Listening Q2(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q2-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q2-iv-score.png",
+  "md5": "6132274d32b8627937d1f36639d327ce",
+  "alt": "The question and its three printed options (syncopated, dotted, triplet), printed with Listening Q2(iv) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q2-v-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q2-v-score.png",
+  "md5": "808c64261503b858ea41ea3646313346",
+  "alt": "The printed question (two lines), printed with Listening Q2(v) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q3-i-score.png",
+  "md5": "7b0b1df62ddac552337fa8529acfca6e",
+  "alt": "The question and its three printed options (1st, 4th, 7th), then \"It is\" and its three printed options (a chorale, a chorus, an aria), printed with Listening Q3(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q3-ii-score.png",
+  "md5": "3a45957c9b905c0defbb4745d29450d4",
+  "alt": "The question and its four printed options (soprano, alto, tenor, bass), then \"More voices enter\" and its three printed options (in unison, in harmony, in imitation), printed with Listening Q3(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q3-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q3-iii-score.png",
+  "md5": "78ac470fd2f50ab49d1aeea28e622759",
+  "alt": "The printed question, printed with Listening Q3(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q3-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q3-iv-score.png",
+  "md5": "92d6689804e11afd8af429c47ca019ae",
+  "alt": "The question and its three printed options (perfect, imperfect, interrupted), printed with Listening Q3(iv) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q3-v-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q3-v-score.png",
+  "md5": "a3dd2bd890b87b14f8b1df020a1b56cc",
+  "alt": "The question and the five printed features to choose from (canon, ritornello, chaconne, grief motif, melisma), printed with Listening Q3(v) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q4-i-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q4-i-score.png",
+  "md5": "4282cbbd8d2ed4a7398478976c4f0905",
+  "alt": "The question and its three printed options (the beginning of the work, the middle of the work, the end of the work), then \"The music is played\" and its three printed options (expressively, with accents, lightly), printed with Listening Q4(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q4-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q4-ii-score.png",
+  "md5": "dd377ea3c955ae299e34725c6fbf9784",
+  "alt": "The printed outline score of bars 1-7 (its time signatures 3/16, 4/4, 3/4, 3/8 and 2/8), down to the question (ii); (i) shows between, printed with Listening Q4(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q4-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q4-iii-score.png",
+  "md5": "cadd9c05ede43c46293b7fde51686131",
+  "alt": "The printed question, printed with Listening Q4(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q4-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q4-iv-score.png",
+  "md5": "3ef340a565388028c6affa0591e8eeb6",
+  "alt": "The question and its three printed dynamic markings (ff, mf, pp), printed with Listening Q4(iv) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q4-v-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q4-v-score.png",
+  "md5": "3acc222da11dbda131042f8f69b46978",
+  "alt": "The question and the three printed features to choose from (retrograde, augmentation, use of Irish tunes), printed with Listening Q4(v) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q5-x1-i-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x1-i-score.png",
+  "md5": "1bde7fffa14760d96cf63b9430421dc2",
+  "alt": "The question and its three printed options (a hornpipe, a reel, a slip jig), printed with Listening Q5 Excerpt 1(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q5-x1-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x1-ii-score.png",
+  "md5": "99307b47c232c8ab31c63e33075541b2",
+  "alt": "The question and its three printed bars of rhythm in music notation, each with a box, printed with Listening Q5 Excerpt 1(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-scheme-p7-l-q5-x1-ii": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-scheme-p7-l-q5-x1-ii.png",
+  "md5": "1b3c0c7703ae7fc6218b40172b646635",
+  "alt": "The marking scheme’s printed answer for Listening Q5 Excerpt 1(ii): the bar of rhythm printed in notation, with its 3 marks, cropped from page 7 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2012-OL-l-q5-x1-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x1-iii-score.png",
+  "md5": "2d4dc4405c8180d58962c0fd1db2f213",
+  "alt": "The printed question, printed with Listening Q5 Excerpt 1(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q5-x2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x2-i-score.png",
+  "md5": "cde989cec340f5e5548d7feb050651e6",
+  "alt": "The printed question, printed with Listening Q5 Excerpt 2(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q5-x2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x2-ii-score.png",
+  "md5": "7bf285e6e9927c489dd58be3c94765d0",
+  "alt": "The printed question, printed with Listening Q5 Excerpt 2(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q5-x2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x2-iii-score.png",
+  "md5": "a44c1495434d720e81286061c05fedd3",
+  "alt": "The printed question, printed with Listening Q5 Excerpt 2(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q5-x3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x3-i-score.png",
+  "md5": "025b8dc1cc0b6b57a0f58cc503408fae",
+  "alt": "The printed question, printed with Listening Q5 Excerpt 3(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q5-x3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x3-ii-score.png",
+  "md5": "75dea4dd4a7ea2d00e065d103805d619",
+  "alt": "The printed question, printed with Listening Q5 Excerpt 3(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q5-x3-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x3-iii-score.png",
+  "md5": "71d16abbdf607298cfb77412340eda41",
+  "alt": "The question, its three printed options (rock music, classical music, jazz music) and the line \"Give one reason for your answer.\", printed with Listening Q5 Excerpt 3(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q6-x1-i-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x1-i-score.png",
+  "md5": "b01db8fa8d9359a2088ed602d8d222b7",
+  "alt": "The printed outline score of the introduction (bars 1-7; treble clef, one sharp, 6/8) and the question, printed with Listening Q6 Excerpt 1(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q6-x1-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x1-ii-score.png",
+  "md5": "e81e57ba4935963e0b5403f8e12fbfd5",
+  "alt": "The printed question, printed with Listening Q6 Excerpt 1(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q6-x1-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x1-iii-score.png",
+  "md5": "5f50551497e77781807df2d939174b2a",
+  "alt": "The question and its six printed options (syncopation, harp chords, free rhythm, legato playing, imitation, ornamentation), printed with Listening Q6 Excerpt 1(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q6-x2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x2-i-score.png",
+  "md5": "28785df6bf1d581edf9bccbb58dfa050",
+  "alt": "The question and its three printed time-signature options (3/4, 4/4, 6/8), drawn as music-font time signatures, printed with Listening Q6 Excerpt 2(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q6-x2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x2-ii-score.png",
+  "md5": "21e4841c208e6f4b23864c9bc6e85edc",
+  "alt": "The printed question, printed with Listening Q6 Excerpt 2(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q6-x2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x2-iii-score.png",
+  "md5": "34356b9e86a9bf9add5ca26f0b666980",
+  "alt": "The printed question, printed with Listening Q6 Excerpt 2(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q6-x3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x3-i-score.png",
+  "md5": "8d12e03c7edd3099b8cdfd5df9b9c2f3",
+  "alt": "The question and its six printed options (unaccompanied singing, pedal notes, vocal harmony, minor tonality, triadic opening, octave leaps), printed with Listening Q6 Excerpt 3(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q6-x3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x3-ii-score.png",
+  "md5": "a2e2f09f24dadfb6b0876cfcd55c1288",
+  "alt": "The printed melody of bars 1-16 (treble clef, three flats, C time) with X bracketed over bars 9-10 (their rhythm, four minims, printed above the stave), down to the question (ii); (i) shows between, printed with Listening Q6 Excerpt 3(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-scheme-p8-l-q6-x3-ii": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-scheme-p8-l-q6-x3-ii.png",
+  "md5": "71b4318d60804ff5958721f1e52475f3",
+  "alt": "The marking scheme’s printed answer for Listening Q6 Excerpt 3(ii): the four missing notes printed on a treble stave, with \".5 mark per correct pitch.\" and its 2 marks, cropped from page 8 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2012-OL-l-q6-x3-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x3-iii-score.png",
+  "md5": "0ccdefe04688a636276cdecc48779a4f",
+  "alt": "The printed melody of bars 1-16, down to the question (iii) (two lines) and its three printed options (in bars 3–4, in bars 4–5, in bars 5–6); (i) and (ii) show between, printed with Listening Q6 Excerpt 3(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q6-x3-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x3-iv-score.png",
+  "md5": "121b7feb27059007582535d35037c595",
+  "alt": "The question and its three printed options (sopranos and altos, tenors and basses, full SATB choir), printed with Listening Q6 Excerpt 3(iv) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2012-OL-l-q6-x3-v-score": {
+  "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x3-v-score.png",
+  "md5": "0b665c6ec85144cdf24c5b17ce232cae",
+  "alt": "The question, its three printed options (an aria, a recitative, a chorale) and the line \"Give two reasons for your answer.\", printed with Listening Q6 Excerpt 3(v) in the 2012 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission"
  }
 }

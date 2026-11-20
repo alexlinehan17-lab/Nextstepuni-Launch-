@@ -46130,4 +46130,3211 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC067GLP006EV"
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q1-x1-i", topicId: "music-2-14", conceptId: "mus-excerpt-this",
+    section: "L", questionRef: "2012 OL Listening Q1 Excerpt 1(i)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
+    questionText: "This excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "the introduction", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.11,
+                            0.95,
+                            0.157
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q1-x1-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x1-i-score.png",
+          "srcHash": "05d90cd8bc7397ce2fdbd713030cec1b",
+          "alt": "The question and its three printed options (the introduction, the operatic section, the rock section), printed with Listening Q1 Excerpt 1(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q1-x1-ii", topicId: "music-2-14", conceptId: "mus-lines-sing-voices",
+    section: "L", questionRef: "2012 OL Listening Q1 Excerpt 1(ii)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
+    questionText: "In lines 1 and 2, the voices sing",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "in harmony", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.157,
+                            0.95,
+                            0.206
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q1-x1-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x1-ii-score.png",
+          "srcHash": "7038711705bb703adc5e666e31301fd5",
+          "alt": "The question and its three printed options (in unison, in imitation, in harmony), printed with Listening Q1 Excerpt 1(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q1-x1-iii", topicId: "music-2-14", conceptId: "mus-after-instrument-joins-line",
+    section: "L", questionRef: "2012 OL Listening Q1 Excerpt 1(iii)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
+    questionText: "Name the instrument that joins in after line 2.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "piano", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.206,
+                            0.95,
+                            0.236
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q1-x1-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x1-iii-score.png",
+          "srcHash": "27aa731b60d15b67cfabcf875d680af4",
+          "alt": "The printed question, printed with Listening Q1 Excerpt 1(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q1-x1-iv", topicId: "music-2-14", conceptId: "mus-blows-effect-highlight-used",
+    section: "L", questionRef: "2012 OL Listening Q1 Excerpt 1(iv)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
+    questionText: "The effect used to highlight the words “any way the wind blows” is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "flanging", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.236,
+                            0.95,
+                            0.3
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q1-x1-iv-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x1-iv-score.png",
+          "srcHash": "e69fb9a032175675a3dd3c662a3fd3b3",
+          "alt": "The question and its three printed options (panning, distortion, flanging), printed with Listening Q1 Excerpt 1(iv) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q1-x2-i", topicId: "music-2-14", conceptId: "mus-five-insert-missing-rhythms",
+    section: "L", questionRef: "2012 OL Listening Q1 Excerpt 2(i)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. An outline score of the music for this excerpt is printed below.",
+    questionText: "Insert the five missing rhythms at X on the score.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "1 mark for each correct rhythm.", marks: 5, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.337,
+                            0.95,
+                            0.362
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q1-x2-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x2-i-score.png",
+          "srcHash": "ec34f5daaa403a8af9bfc6ac37cc4315",
+          "alt": "The Excerpt 2 heading and its printed outline score (bars 1-15, the vocal line with its lyrics; treble clef, two flats, 4/4), with X bracketed over bar 4, printed with Listening Q1 Excerpt 2(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "music-2012-OL-scheme-p5-l-q1-x2-i",
+          "src": "/exam-figures/music/markbank/music-2012-OL-scheme-p5-l-q1-x2-i.png",
+          "srcHash": "4f4b96d5ce71c95456f9b98a983342f2",
+          "alt": "The marking scheme’s printed answer for Listening Q1 Excerpt 2(i): the five rhythms printed on a stave, with \"1 mark for each correct rhythm.\" and its 5 marks, cropped from page 5 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q1-x2-ii", topicId: "music-2-14", conceptId: "mus-bars-bass-guitar-plays",
+    section: "L", questionRef: "2012 OL Listening Q1 Excerpt 2(ii)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. An outline score of the music for this excerpt is printed below.",
+    questionText: "In bars 7 and 8, the bass guitar plays",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a descending scale", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.362,
+                            0.95,
+                            0.413
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q1-x2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x2-ii-score.png",
+          "srcHash": "86b6f73e8e35ddde4de9f53b205fe523",
+          "alt": "The question and its three printed options (repeated notes, a descending arpeggio, a descending scale), printed with Listening Q1 Excerpt 2(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q1-x2-iii", topicId: "music-2-14", conceptId: "mus-excerpt-explain-music-texture",
+    section: "L", questionRef: "2012 OL Listening Q1 Excerpt 2(iii)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. An outline score of the music for this excerpt is printed below.",
+    questionText: "The texture of the music in this excerpt is Explain.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "homophonic", marks: 1 },
+    { id: "r-2", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The scheme reads: “Any valid explanation of homophonic”", permittedMarks: [0,1], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.413,
+                            0.95,
+                            0.55
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q1-x2-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x2-iii-score.png",
+          "srcHash": "b06b39be7ecb102f231e44c3dab1aff3",
+          "alt": "The question, its three printed options (monophonic, homophonic, polyphonic) and the line \"Explain.\", printed with Listening Q1 Excerpt 2(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q1-x3-i", topicId: "music-2-14", conceptId: "mus-answer-excerpt-give-music",
+    section: "L", questionRef: "2012 OL Listening Q1 Excerpt 3(i)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    questionText: "The style of the music in this excerpt is Give one reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "operatic", marks: 1 },
+    { id: "r-2", kind: "anyN", verbatim: "A reason for your answer", marks: null, contextNote: "The scheme reads: “any other valid reason.” “Any one.”", openList: true, group: {"claimMax":1,"perOption":2,"options":["dramatic / operatic style of singing","choral singing / use of chorus","dramatic changes of dynamics","classical style harmonies"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.582,
+                            0.95,
+                            0.71
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q1-x3-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x3-i-score.png",
+          "srcHash": "3f2291f37319d10fc8222620fd5d4fc3",
+          "alt": "The question, its three printed options (rock, ballad, operatic) and the line \"Give one reason for your answer.\", printed with Listening Q1 Excerpt 3(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q1-x3-ii", topicId: "music-2-14", conceptId: "mus-excerpt-following-heard-this",
+    section: "L", questionRef: "2012 OL Listening Q1 Excerpt 3(ii)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    questionText: "Which one of the following can be heard in this excerpt?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "antiphonal vocals", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.713,
+                            0.95,
+                            0.765
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q1-x3-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x3-ii-score.png",
+          "srcHash": "99384b7374d09af4159080c8a73d70ab",
+          "alt": "The question and its three printed options (countermelodies, a capella vocals, antiphonal vocals), printed with Listening Q1 Excerpt 3(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q1-x3-iii", topicId: "music-2-14", conceptId: "mus-bohemian-describe-excerpt-follows",
+    section: "L", questionRef: "2012 OL Listening Q1 Excerpt 3(iii)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    questionText: "Describe the style of music which immediately follows this excerpt in Bohemian Rhapsody.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 3, contextNote: "The scheme reads: “Any valid description of the 1st guitar interlude or hard rock section (2nd song).”", permittedMarks: [0,3], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.766,
+                            0.95,
+                            0.852
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q1-x3-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q1-x3-iii-score.png",
+          "srcHash": "9247b97c94e6ad7dd0dced0b3660cda0",
+          "alt": "The printed question, printed with Listening Q1 Excerpt 3(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q2-i", topicId: "music-2-15", conceptId: "mus-excerpt-from-section-taken",
+    section: "L", questionRef: "2012 OL Listening Q2(i)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "From which section of the work is this excerpt taken?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Development", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.2,
+                            0.95,
+                            0.262
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q2-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q2-i-score.png",
+          "srcHash": "14a0a8f0dd1d50c87049be8cffd22051",
+          "alt": "The question and its three printed options (Exposition, Development, Recapitulation), printed with Listening Q2(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q2-ii", topicId: "music-2-15", conceptId: "mus-excerpt-heard-played-theme",
+    section: "L", questionRef: "2012 OL Listening Q2(ii)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "The theme heard in this excerpt is It is played on",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "the Friar Lawrence theme", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "woodwind and brass", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.272,
+                            0.95,
+                            0.392
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q2-ii-score.png",
+          "srcHash": "2086b8b5cb019b9d161f3c1bb70009ba",
+          "alt": "The question and its three printed options (the Friar Lawrence theme, the Strife theme, the Love theme), then \"It is played on\" and its three printed options (woodwind only, brass only, woodwind and brass), printed with Listening Q2(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q2-iii", topicId: "music-2-15", conceptId: "mus-answer-best-described-excerpt",
+    section: "L", questionRef: "2012 OL Listening Q2(iii)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "The texture of the music in this excerpt is best described as Give one reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "homophonic or polyphonic", marks: 1 },
+    { id: "r-2", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The scheme reads: “Any valid reason for the texture chosen”", permittedMarks: [0,1], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.402,
+                            0.95,
+                            0.53
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q2-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q2-iii-score.png",
+          "srcHash": "ba7c038212f7613896ec8fec6e57dafa",
+          "alt": "The question, its three printed options (monophonic, homophonic, polyphonic) and the line \"Give one reason for your answer.\", printed with Listening Q2(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q2-iv", topicId: "music-2-15", conceptId: "mus-excerpt-played-rhythm-this",
+    section: "L", questionRef: "2012 OL Listening Q2(iv)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "The rhythm played by the violins in this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "syncopated", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.533,
+                            0.95,
+                            0.595
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q2-iv-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q2-iv-score.png",
+          "srcHash": "6132274d32b8627937d1f36639d327ce",
+          "alt": "The question and its three printed options (syncopated, dotted, triplet), printed with Listening Q2(iv) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q2-v", topicId: "music-2-15", conceptId: "mus-another-describe-fantasy-feature",
+    section: "L", questionRef: "2012 OL Listening Q2(v)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Name another theme heard in Romeo and Juliet Fantasy Overture. Describe one musical feature of this theme.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Strife theme or Love theme", marks: 1 },
+    { id: "r-2", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The scheme reads: “Description of any valid musical feature of named theme.”", permittedMarks: [0,1], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.609,
+                            0.95,
+                            0.75
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q2-v-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q2-v-score.png",
+          "srcHash": "808c64261503b858ea41ea3646313346",
+          "alt": "The printed question (two lines), printed with Listening Q2(v) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q3-i", topicId: "music-2-17", conceptId: "mus-excerpt-from-movement-taken",
+    section: "L", questionRef: "2012 OL Listening Q3(i)",
+    stem: "An excerpt from the cantata Jesu, der du meine Seele by J.S. Bach will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "From which movement is this excerpt taken? It is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1st movement", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "a chorus", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.205,
+                            0.95,
+                            0.325
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q3-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q3-i-score.png",
+          "srcHash": "7b0b1df62ddac552337fa8529acfca6e",
+          "alt": "The question and its three printed options (1st, 4th, 7th), then \"It is\" and its three printed options (a chorale, a chorus, an aria), printed with Listening Q3(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q3-ii", topicId: "music-2-17", conceptId: "mus-enter-first-heard-more",
+    section: "L", questionRef: "2012 OL Listening Q3(ii)",
+    stem: "An excerpt from the cantata Jesu, der du meine Seele by J.S. Bach will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "The first voice heard is the More voices enter",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "alto", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "in imitation", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.34,
+                            0.95,
+                            0.46
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q3-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q3-ii-score.png",
+          "srcHash": "3a45957c9b905c0defbb4745d29450d4",
+          "alt": "The question and its four printed options (soprano, alto, tenor, bass), then \"More voices enter\" and its three printed options (in unison, in harmony, in imitation), printed with Listening Q3(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q3-iii", topicId: "music-2-17", conceptId: "mus-accompaniment-heard-identify-instruments",
+    section: "L", questionRef: "2012 OL Listening Q3(iii)",
+    stem: "An excerpt from the cantata Jesu, der du meine Seele by J.S. Bach will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Identify three instruments which can be heard in the accompaniment",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Instruments heard in the accompaniment", marks: null, contextNote: "The scheme reads: “Any three.”", group: {"claimMax":3,"perOption":1,"options":["flute","oboe(s)","violin(s)","viola","horn","cello","continuo"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.476,
+                            0.95,
+                            0.535
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q3-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q3-iii-score.png",
+          "srcHash": "78ac470fd2f50ab49d1aeea28e622759",
+          "alt": "The printed question, printed with Listening Q3(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q3-iv", topicId: "music-2-17", conceptId: "mus-cadence-excerpt-heard-this",
+    section: "L", questionRef: "2012 OL Listening Q3(iv)",
+    stem: "An excerpt from the cantata Jesu, der du meine Seele by J.S. Bach will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "The cadence heard at the end of this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "perfect", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.549,
+                            0.95,
+                            0.612
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q3-iv-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q3-iv-score.png",
+          "srcHash": "92d6689804e11afd8af429c47ca019ae",
+          "alt": "The question and its three printed options (perfect, imperfect, interrupted), printed with Listening Q3(iv) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q3-v", topicId: "music-2-17", conceptId: "mus-canon-chaconne-describe-features",
+    section: "L", questionRef: "2012 OL Listening Q3(v)",
+    stem: "An excerpt from the cantata Jesu, der du meine Seele by J.S. Bach will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Describe one of the following features of this movement: canon ritornello chaconne grief motif melisma",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Any valid description of one feature”", permittedMarks: [0,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.623,
+                            0.95,
+                            0.83
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q3-v-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q3-v-score.png",
+          "srcHash": "a3dd2bd890b87b14f8b1df020a1b56cc",
+          "alt": "The question and the five printed features to choose from (canon, ritornello, chaconne, grief motif, melisma), printed with Listening Q3(v) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q4-i", topicId: "music-2-16", conceptId: "mus-excerpt-from-music-played",
+    section: "L", questionRef: "2012 OL Listening Q4(i)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–7 of the excerpt is printed below.\n• Answer the following questions:",
+    questionText: "This excerpt is taken from The music is played",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "the middle of the work", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "with accents", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.315,
+                            0.95,
+                            0.424
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q4-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q4-i-score.png",
+          "srcHash": "4282cbbd8d2ed4a7398478976c4f0905",
+          "alt": "The question and its three printed options (the beginning of the work, the middle of the work, the end of the work), then \"The music is played\" and its three printed options (expressively, with accents, lightly), printed with Listening Q4(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q4-ii", topicId: "music-2-16", conceptId: "mus-excerpt-explain-signatures-this",
+    section: "L", questionRef: "2012 OL Listening Q4(ii)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–7 of the excerpt is printed below.\n• Answer the following questions:",
+    questionText: "Explain one of the time signatures used in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Any valid explanation of one of the following:” “3/16; 4/4; 3/4; 3/8;”", permittedMarks: [0,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.424,
+                            0.95,
+                            0.515
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q4-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q4-ii-score.png",
+          "srcHash": "dd377ea3c955ae299e34725c6fbf9784",
+          "alt": "The printed outline score of bars 1-7 (its time signatures 3/16, 4/4, 3/4, 3/8 and 2/8), down to the question (ii); (i) shows between, printed with Listening Q4(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q4-iii", topicId: "music-2-16", conceptId: "mus-excerpt-four-instruments-name",
+    section: "L", questionRef: "2012 OL Listening Q4(iii)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–7 of the excerpt is printed below.\n• Answer the following questions:",
+    questionText: "Name the four instruments playing in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "violin", marks: 0.5, contextNote: "The scheme reads: “.5 mark per correct instrument.”" },
+    { id: "r-2", kind: "point", verbatim: "viola", marks: 0.5 },
+    { id: "r-3", kind: "point", verbatim: "cello", marks: 0.5 },
+    { id: "r-4", kind: "point", verbatim: "piano", marks: 0.5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.517,
+                            0.95,
+                            0.6
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q4-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q4-iii-score.png",
+          "srcHash": "cadd9c05ede43c46293b7fde51686131",
+          "alt": "The printed question, printed with Listening Q4(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q4-iv", topicId: "music-2-16", conceptId: "mus-dynamic-excerpt-following-marking",
+    section: "L", questionRef: "2012 OL Listening Q4(iv)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–7 of the excerpt is printed below.\n• Answer the following questions:",
+    questionText: "Which of the following is the most suitable dynamic marking for this excerpt?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ff", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.6,
+                            0.95,
+                            0.658
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q4-iv-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q4-iv-score.png",
+          "srcHash": "3ef340a565388028c6affa0591e8eeb6",
+          "alt": "The question and its three printed dynamic markings (ff, mf, pp), printed with Listening Q4(iv) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q4-v", topicId: "music-2-16", conceptId: "mus-augmentation-barry-describe-features",
+    section: "L", questionRef: "2012 OL Listening Q4(v)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–7 of the excerpt is printed below.\n• Answer the following questions:",
+    questionText: "Describe one of the following features used by Gerald Barry in his Piano Quartet No.1. retrograde augmentation use of Irish tunes",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Any valid description of one feature.”", permittedMarks: [0,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.658,
+                            0.95,
+                            0.815
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q4-v-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q4-v-score.png",
+          "srcHash": "3acc222da11dbda131042f8f69b46978",
+          "alt": "The question and the three printed features to choose from (retrograde, augmentation, use of Irish tunes), printed with Listening Q4(v) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q5-x1-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-this",
+    section: "L", questionRef: "2012 OL Listening Q5 Excerpt 1(i)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1",
+    questionText: "The dance tune heard in this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a slip Jig", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.255,
+                            0.95,
+                            0.318
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q5-x1-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x1-i-score.png",
+          "srcHash": "1bde7fffa14760d96cf63b9430421dc2",
+          "alt": "The question and its three printed options (a hornpipe, a reel, a slip jig), printed with Listening Q5 Excerpt 1(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q5-x1-ii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-this",
+    section: "L", questionRef: "2012 OL Listening Q5 Excerpt 1(ii)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1",
+    questionText: "A typical bar of rhythm associated with this type of dance is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A typical bar of rhythm associated with this type of dance is", marks: 3, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.335,
+                            0.95,
+                            0.395
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q5-x1-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x1-ii-score.png",
+          "srcHash": "99307b47c232c8ab31c63e33075541b2",
+          "alt": "The question and its three printed bars of rhythm in music notation, each with a box, printed with Listening Q5 Excerpt 1(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2012-OL-scheme-p7-l-q5-x1-ii",
+          "src": "/exam-figures/music/markbank/music-2012-OL-scheme-p7-l-q5-x1-ii.png",
+          "srcHash": "1b3c0c7703ae7fc6218b40172b646635",
+          "alt": "The marking scheme’s printed answer for Listening Q5 Excerpt 1(ii): the bar of rhythm printed in notation, with its 3 marks, cropped from page 7 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q5-x1-iii", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-name-playing",
+    section: "L", questionRef: "2012 OL Listening Q5 Excerpt 1(iii)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1",
+    questionText: "Name the instrument playing in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "uilleann pipes", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.412,
+                            0.95,
+                            0.445
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q5-x1-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x1-iii-score.png",
+          "srcHash": "2d4dc4405c8180d58962c0fd1db2f213",
+          "alt": "The printed question, printed with Listening Q5 Excerpt 1(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q5-x2-i", topicId: "music-2-2", conceptId: "mus-beginning-excerpt-name-singing",
+    section: "L", questionRef: "2012 OL Listening Q5 Excerpt 2(i)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2",
+    questionText: "Name the style of singing at the beginning of this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sean-nós or Ballad", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.535,
+                            0.95,
+                            0.567
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q5-x2-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x2-i-score.png",
+          "srcHash": "cde989cec340f5e5548d7feb050651e6",
+          "alt": "The printed question, printed with Listening Q5 Excerpt 2(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q5-x2-ii", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
+    section: "L", questionRef: "2012 OL Listening Q5 Excerpt 2(ii)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2",
+    questionText: "Identify two features of this style of singing heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of the named style of singing", marks: null, contextNote: "The scheme reads: “Any two valid features of named style:” “any other valid feature.”", openList: true, group: {"claimMax":2,"perOption":2,"options":["unaccompanied","solo","use of ornamentation","use of free rhythm","sung with a nasal tone quality"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.582,
+                            0.95,
+                            0.675
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q5-x2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x2-ii-score.png",
+          "srcHash": "7bf285e6e9927c489dd58be3c94765d0",
+          "alt": "The printed question, printed with Listening Q5 Excerpt 2(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q5-x2-iii", topicId: "music-2-2", conceptId: "mus-describe-feature-non-traditional-performance",
+    section: "L", questionRef: "2012 OL Listening Q5 Excerpt 2(iii)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2",
+    questionText: "Describe one non-traditional feature of this performance.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A non-traditional feature of this performance", marks: null, contextNote: "The scheme reads: “A correct description of any one non-traditional feature:” “any other valid feature.”", openList: true, group: {"claimMax":1,"perOption":2,"options":["vocal harmony","use of non-traditional instruments (guitar, bass)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.08,
+                            0.69,
+                            0.95,
+                            0.8
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q5-x2-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x2-iii-score.png",
+          "srcHash": "a44c1495434d720e81286061c05fedd3",
+          "alt": "The printed question, printed with Listening Q5 Excerpt 2(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q5-x3-i", topicId: "music-2-2", conceptId: "mus-excerpt-identify-instrument-melody",
+    section: "L", questionRef: "2012 OL Listening Q5 Excerpt 3(i)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3",
+    questionText: "Identify the instrument that plays the melody and the instrument that plays the rhythm in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Piano", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "bodhrán / spoons / bones", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.08,
+                            0.134,
+                            0.95,
+                            0.26
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q5-x3-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x3-i-score.png",
+          "srcHash": "025b8dc1cc0b6b57a0f58cc503408fae",
+          "alt": "The printed question, printed with Listening Q5 Excerpt 3(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q5-x3-ii", topicId: "music-2-2", conceptId: "mus-excerpt-feature-identify-music",
+    section: "L", questionRef: "2012 OL Listening Q5 Excerpt 3(ii)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3",
+    questionText: "Identify one traditional feature of the music in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Any valid traditional feature as heard in the excerpt”", permittedMarks: [0,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.08,
+                            0.274,
+                            0.95,
+                            0.41
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q5-x3-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x3-ii-score.png",
+          "srcHash": "75dea4dd4a7ea2d00e065d103805d619",
+          "alt": "The printed question, printed with Listening Q5 Excerpt 3(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q5-x3-iii", topicId: "music-2-2", conceptId: "mus-answer-been-give-influenced",
+    section: "L", questionRef: "2012 OL Listening Q5 Excerpt 3(iii)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3",
+    questionText: "This recording has been most influenced by Give one reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Any valid reason for chosen musical style.”", permittedMarks: [0,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.08,
+                            0.414,
+                            0.95,
+                            0.62
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q5-x3-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q5-x3-iii-score.png",
+          "srcHash": "71d16abbdf607298cfb77412340eda41",
+          "alt": "The question, its three printed options (rock music, classical music, jazz music) and the line \"Give one reason for your answer.\", printed with Listening Q5 Excerpt 3(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q6-x1-i", topicId: "music-2-4", conceptId: "mus-bars-instrument-melody-name",
+    section: "L", questionRef: "2012 OL Listening Q6 Excerpt 1(i)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• The full excerpt will be played ONCE only. The introduction (bars 1–7), will then be played THREE times.\n• The outline score of the introduction is printed below.",
+    questionText: "Name the instrument which plays the melody in bars 1–7.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "flute", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.347,
+                            0.95,
+                            0.375
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q6-x1-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x1-i-score.png",
+          "srcHash": "b01db8fa8d9359a2088ed602d8d222b7",
+          "alt": "The printed outline score of the introduction (bars 1-7; treble clef, one sharp, 6/8) and the question, printed with Listening Q6 Excerpt 1(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q6-x1-ii", topicId: "music-2-4", conceptId: "mus-family-instruments-name-plays",
+    section: "L", questionRef: "2012 OL Listening Q6 Excerpt 1(ii)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• The full excerpt will be played ONCE only. The introduction (bars 1–7), will then be played THREE times.\n• The outline score of the introduction is printed below.\n• The rest of the excerpt will now be played TWICE. Answer (ii) and (iii) below.",
+    questionText: "Name the family of instruments that plays in this section.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "strings", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.406,
+                            0.95,
+                            0.432
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q6-x1-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x1-ii-score.png",
+          "srcHash": "e81e57ba4935963e0b5403f8e12fbfd5",
+          "alt": "The printed question, printed with Listening Q6 Excerpt 1(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q6-x1-iii", topicId: "music-2-4", conceptId: "mus-following-hear-section-this",
+    section: "L", questionRef: "2012 OL Listening Q6 Excerpt 1(iii)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• The full excerpt will be played ONCE only. The introduction (bars 1–7), will then be played THREE times.\n• The outline score of the introduction is printed below.\n• The rest of the excerpt will now be played TWICE. Answer (ii) and (iii) below.",
+    questionText: "Which two of the following do you hear in this section?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "harp chords", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "legato playing", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.435,
+                            0.95,
+                            0.535
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q6-x1-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x1-iii-score.png",
+          "srcHash": "5f50551497e77781807df2d939174b2a",
+          "alt": "The question and its six printed options (syncopation, harp chords, free rhythm, legato playing, imitation, ornamentation), printed with Listening Q6 Excerpt 1(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q6-x2-i", topicId: "music-2-4", conceptId: "mus-excerpt-signature-this-time",
+    section: "L", questionRef: "2012 OL Listening Q6 Excerpt 2(i)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• The excerpt will be played THREE times.",
+    questionText: "The time signature of this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "4/4", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.628,
+                            0.95,
+                            0.69
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q6-x2-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x2-i-score.png",
+          "srcHash": "28785df6bf1d581edf9bccbb58dfa050",
+          "alt": "The question and its three printed time-signature options (3/4, 4/4, 6/8), drawn as music-font time signatures, printed with Listening Q6 Excerpt 2(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q6-x2-ii", topicId: "music-2-4", conceptId: "mus-excerpt-instrument-melody-name",
+    section: "L", questionRef: "2012 OL Listening Q6 Excerpt 2(ii)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• The excerpt will be played THREE times.",
+    questionText: "Name one instrument playing the melody in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "flute / oboe / clarinet / violin / viola / cello / trumpet", marks: 1, contextNote: "The scheme reads: “Any one.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.691,
+                            0.95,
+                            0.715
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q6-x2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x2-ii-score.png",
+          "srcHash": "21e4841c208e6f4b23864c9bc6e85edc",
+          "alt": "The printed question, printed with Listening Q6 Excerpt 2(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q6-x2-iii", topicId: "music-2-4", conceptId: "mus-excerpt-feature-heard-identify",
+    section: "L", questionRef: "2012 OL Listening Q6 Excerpt 2(iii)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• The excerpt will be played THREE times.",
+    questionText: "Identify one feature of the melody heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Any valid feature as heard in the excerpt.”", permittedMarks: [0,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.717,
+                            0.95,
+                            0.79
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q6-x2-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x2-iii-score.png",
+          "srcHash": "34356b9e86a9bf9add5ca26f0b666980",
+          "alt": "The printed question, printed with Listening Q6 Excerpt 2(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q6-x3-i", topicId: "music-2-4", conceptId: "mus-excerpt-features-following-hear",
+    section: "L", questionRef: "2012 OL Listening Q6 Excerpt 3(i)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.",
+    questionText: "Which two of the following features do you hear in this excerpt?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "vocal harmony", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "triadic opening", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.287,
+                            0.95,
+                            0.38
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q6-x3-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x3-i-score.png",
+          "srcHash": "8d12e03c7edd3099b8cdfd5df9b9c2f3",
+          "alt": "The question and its six printed options (unaccompanied singing, pedal notes, vocal harmony, minor tonality, triadic opening, octave leaps), printed with Listening Q6 Excerpt 3(i) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q6-x3-ii", topicId: "music-2-3", conceptId: "mus-four-insert-melody-missing",
+    section: "L", questionRef: "2012 OL Listening Q6 Excerpt 3(ii)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.",
+    questionText: "Insert the four missing melody notes at X on the score.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: ".5 mark per correct pitch.", marks: 2, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", permittedMarks: [0,0.5,1,1.5,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.382,
+                            0.95,
+                            0.41
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q6-x3-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x3-ii-score.png",
+          "srcHash": "a2e2f09f24dadfb6b0876cfcd55c1288",
+          "alt": "The printed melody of bars 1-16 (treble clef, three flats, C time) with X bracketed over bars 9-10 (their rhythm, four minims, printed above the stave), down to the question (ii); (i) shows between, printed with Listening Q6 Excerpt 3(ii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2012-OL-scheme-p8-l-q6-x3-ii",
+          "src": "/exam-figures/music/markbank/music-2012-OL-scheme-p8-l-q6-x3-ii.png",
+          "srcHash": "71b4318d60804ff5958721f1e52475f3",
+          "alt": "The marking scheme’s printed answer for Listening Q6 Excerpt 3(ii): the four missing notes printed on a treble stave, with \".5 mark per correct pitch.\" and its 2 marks, cropped from page 8 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q6-x3-iii", topicId: "music-2-4", conceptId: "mus-bars-cadence-cadences-first",
+    section: "L", questionRef: "2012 OL Listening Q6 Excerpt 3(iii)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.",
+    questionText: "There are three cadences in bars 1–16. The first cadence can be heard",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "in bars 4 - 5", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.412,
+                            0.95,
+                            0.49
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q6-x3-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x3-iii-score.png",
+          "srcHash": "0ccdefe04688a636276cdecc48779a4f",
+          "alt": "The printed melody of bars 1-16, down to the question (iii) (two lines) and its three printed options (in bars 3–4, in bars 4–5, in bars 5–6); (i) and (ii) show between, printed with Listening Q6 Excerpt 3(iii) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q6-x3-iv", topicId: "music-2-4", conceptId: "mus-excerpt-heard-this-voices",
+    section: "L", questionRef: "2012 OL Listening Q6 Excerpt 3(iv)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.",
+    questionText: "The voices heard in this excerpt are",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "full SATB choir", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.5,
+                            0.95,
+                            0.558
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q6-x3-iv-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x3-iv-score.png",
+          "srcHash": "121b7feb27059007582535d35037c595",
+          "alt": "The question and its three printed options (sopranos and altos, tenors and basses, full SATB choir), printed with Listening Q6 Excerpt 3(iv) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2012-ol-l-q6-x3-v", topicId: "music-2-4", conceptId: "mus-answer-bach-cantata-closest",
+    section: "L", questionRef: "2012 OL Listening Q6 Excerpt 3(v)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.\n• The full excerpt will now be played ONCE more. Answer (v) below.",
+    questionText: "This excerpt is a movement from a cantata by J.S.Bach. It is closest in style to Give two reasons for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a chorale", marks: 1 },
+    { id: "r-2", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Two valid reasons”", permittedMarks: [0,1,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.598,
+                            0.95,
+                            0.858
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-OL-l-q6-x3-v-score",
+          "src": "/exam-figures/music/markbank/music-2012-OL-l-q6-x3-v-score.png",
+          "srcHash": "0b665c6ec85144cdf24c5b17ce232cae",
+          "alt": "The question, its three printed options (an aria, a recitative, a chorale) and the line \"Give two reasons for your answer.\", printed with Listening Q6 Excerpt 3(v) in the 2012 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Ordinary Level, p.3 — © State Examinations Commission.",
+    id: "mus-2012-ol-c-a-q1-a", topicId: "music-1-10", conceptId: "mus-appropriate-both-case-choose",
+    section: "A", questionRef: "2012 OL Composing Section A Q1(a)",
+    stem: "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3. Note that both Q1 and Q3 contain two sections.",
+    questionText: "CONTINUATION OF A GIVEN OPENING In the case of both (a) and (b), • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for each of your melodies from the list given.\n□ clarinet □ descant recorder □ violin □ trumpet",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Each Melody",
+                      "maxMarks": 20,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                      "guidance": [
+                            "Deductions, if omitted or deficient:",
+                            "Ending on tonic (2 marks each melody);",
+                            "Expression marks, phrasing, instruments(1 mark each for each melody)"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "Good sense of shape, rhythmically consistent.",
+                                  "marks": [17,18,19,20],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Rhythmically consistent, with a moderately good sense of shape.",
+                                  "marks": [14,15,16],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Rhythm generally consistent, with some awareness of key and shape.",
+                                  "marks": [11,12,13],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some rhythmical inconsistencies. Little awareness of key and shape.",
+                                  "marks": [8,9,10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No awareness of key, shape or rhythm.",
+                                  "marks": [5,6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little or no attempt",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.05,
+                            0.14,
+                            0.95,
+                            0.53
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Ordinary Level, p.3 — © State Examinations Commission.",
+    id: "mus-2012-ol-c-a-q1-b", topicId: "music-1-10", conceptId: "mus-appropriate-both-case-choose",
+    section: "A", questionRef: "2012 OL Composing Section A Q1(b)",
+    stem: "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3. Note that both Q1 and Q3 contain two sections.",
+    questionText: "CONTINUATION OF A GIVEN OPENING In the case of both (a) and (b), • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for each of your melodies from the list given.\n□ trumpet □ violin □ oboe □ clarinet",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Each Melody",
+                      "maxMarks": 20,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                      "guidance": [
+                            "Deductions, if omitted or deficient:",
+                            "Ending on tonic (2 marks each melody);",
+                            "Expression marks, phrasing, instruments(1 mark each for each melody)"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "Good sense of shape, rhythmically consistent.",
+                                  "marks": [17,18,19,20],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Rhythmically consistent, with a moderately good sense of shape.",
+                                  "marks": [14,15,16],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Rhythm generally consistent, with some awareness of key and shape.",
+                                  "marks": [11,12,13],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some rhythmical inconsistencies. Little awareness of key and shape.",
+                                  "marks": [8,9,10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No awareness of key, shape or rhythm.",
+                                  "marks": [5,6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little or no attempt",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.05,
+                            0.585,
+                            0.95,
+                            0.89
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Ordinary Level, p.3 — © State Examinations Commission.",
+    id: "mus-2012-ol-c-a-q2", topicId: "music-1-11", conceptId: "mus-appropriate-awaits-bars-been",
+    section: "A", questionRef: "2012 OL Composing Section A Q2",
+    stem: "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3. Note that both Q1 and Q3 contain two sections.",
+    questionText: "SETTING MUSIC TO A GIVEN TEXT Here is an extract from My River by Emily Dickinson. My river runs to thee Blue sea, wilt thou welcome me? My river awaits reply Oh sea, look graciously. • The first two lines have been set to a rhythm. Compose a rhythm to fit the remaining words. • Using this rhythm, compose a melody of eight bars, beginning as indicated and ending on the key note, that is, doh. • Add appropriate phrasing and expression marks to the melody.",
+    totalMarks: 40,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "SECTION A – MELODY COMPOSITION (40 marks)",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [
+                            "Deductions, if omitted or deficient:",
+                            "Ending on tonic (4 marks); Expression marks, phrasing (up to 2 each),"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "Good sense of shape, rhythmically consistent with words.",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Rhythm generally consistent with words. Moderately good sense of shape.",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Rhythm fairly consistent with words. Some awareness of key and shape.",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some rhythmical inconsistencies with words. Little awareness of key and shape.",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No awareness of key, shape or rhythm.",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little or no attempt",
+                                  "marks": [0,1,2,3,4,5,6,7,8,9],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.05,
+                            0.04,
+                            0.95,
+                            0.9
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Ordinary Level, p.3 — © State Examinations Commission.",
+    id: "mus-2012-ol-c-a-q3-a", topicId: "music-1-12", conceptId: "mus-answer-answering-appropriate-choose",
+    section: "A", questionRef: "2012 OL Composing Section A Q3(a)",
+    stem: "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3. Note that both Q1 and Q3 contain two sections.",
+    questionText: "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM Answer (a) and (b).\nStudy this opening of a waltz. • Complete the first phrase. • Compose an answering phrase, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ descant recorder □ oboe □ flute □ violin",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Each Melody",
+                      "maxMarks": 20,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                      "guidance": [
+                            "Deductions, if omitted or deficient:",
+                            "Ending on tonic (2 marks each melody);",
+                            "Expression marks, phrasing, instruments(1 mark each for each melody)"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "Good sense of shape; rhythm & style of dance maintained.",
+                                  "marks": [17,18,19,20],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good attempt at maintaining rhythm & style of dance, with a moderately good sense of shape.",
+                                  "marks": [14,15,16],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Rhythm & style of dance generally consistent, with some awareness of key and shape.",
+                                  "marks": [11,12,13],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some rhythmical inconsistencies. Little awareness of key and shape.",
+                                  "marks": [8,9,10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No awareness of key, shape or rhythm.",
+                                  "marks": [5,6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little or no attempt",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.05,
+                            0.04,
+                            0.95,
+                            0.49
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Ordinary Level, p.3 — © State Examinations Commission.",
+    id: "mus-2012-ol-c-a-q3-b", topicId: "music-1-12", conceptId: "mus-answer-answering-appropriate-choose",
+    section: "A", questionRef: "2012 OL Composing Section A Q3(b)",
+    stem: "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3. Note that both Q1 and Q3 contain two sections.",
+    questionText: "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM Answer (a) and (b).\nStudy this opening of a march. • Complete the first phrase. • Compose an answering phrase, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ flute □ violin □ trumpet",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Each Melody",
+                      "maxMarks": 20,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                      "guidance": [
+                            "Deductions, if omitted or deficient:",
+                            "Ending on tonic (2 marks each melody);",
+                            "Expression marks, phrasing, instruments(1 mark each for each melody)"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "Good sense of shape; rhythm & style of dance maintained.",
+                                  "marks": [17,18,19,20],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good attempt at maintaining rhythm & style of dance, with a moderately good sense of shape.",
+                                  "marks": [14,15,16],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Rhythm & style of dance generally consistent, with some awareness of key and shape.",
+                                  "marks": [11,12,13],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some rhythmical inconsistencies. Little awareness of key and shape.",
+                                  "marks": [8,9,10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No awareness of key, shape or rhythm.",
+                                  "marks": [5,6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little or no attempt",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.05,
+                            0.518,
+                            0.95,
+                            0.91
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Ordinary Level, p.4 — © State Examinations Commission.",
+    id: "mus-2012-ol-c-b-q4", topicId: "music-1-14", conceptId: "mus-approach-available-bank-bass",
+    section: "B", questionRef: "2012 OL Composing Section B Q4",
+    stem: "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6",
+    questionText: "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS PREPARATORY WORK • Write out the scale of F major on the stave below: • Plot the chords available in this key (I, ii, IV, V, and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Using the given rhythms, add melody and bass notes to complete the cadences and approach chords as follows: (i) At A, an IMPERFECT cadence with approach chord (I—IV—V) (ii) At B, a PERFECT cadence with approach chord (ii—V—I) (iii) At C, an INTERRUPTED cadence with approach chord (IV—V—vi) (iv) At D, a PERFECT cadence with approach chord (IV—V—I)",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "grid",
+                      "label": "1 mark per correct note of chord",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Grid"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "melody",
+                      "label": "Melody",
+                      "maxMarks": 24,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+                      "guidance": [
+                            "2 marks per correct note",
+                            "Deduct .5 mark per note if given rhythm not used"
+                      ]
+                },
+                {
+                      "id": "bass",
+                      "label": "Bass",
+                      "maxMarks": 24,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+                      "guidance": [
+                            "2 marks per correct bass note.",
+                            "Deduct .5 mark per note if given rhythm not used"
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 4",
+          "pages": [
+                6,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.05,
+                            0.105,
+                            0.95,
+                            0.64
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Ordinary Level, p.4 — © State Examinations Commission.",
+    id: "mus-2012-ol-c-b-q5", topicId: "music-1-13", conceptId: "mus-adding-available-bank-bass",
+    section: "B", questionRef: "2012 OL Composing Section B Q5",
+    stem: "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6",
+    questionText: "ADDING BASS NOTES AND CHORD INDICATIONS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of D major on the stave below: • Plot the chords available in this key (I, ii, IV, V, and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Add suitable bass notes and chord indications to complete the cadences at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "grid",
+                      "label": "1 mark per correct note of chord",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Grid"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "chords-fit",
+                      "label": "1 mark per chord that fits.",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Chords"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "chords-cadence",
+                      "label": "1 extra mark per good cadence chord",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Chords"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "bass-correct",
+                      "label": "1 mark per correct note for every correct chord.",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Bass"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "bass-cadence",
+                      "label": "1 extra mark per correct note for every good cadence chord",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Bass"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 5",
+          "pages": [
+                8,
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.045,
+                            0.95,
+                            0.585
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC067GLP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Ordinary Level, p.4 — © State Examinations Commission.",
+    id: "mus-2012-ol-c-b-q6", topicId: "music-1-15", conceptId: "mus-adding-available-bank-below",
+    section: "B", questionRef: "2012 OL Composing Section B Q6",
+    stem: "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6",
+    questionText: "ADDING DESCANT NOTES AND CHORD INDICATIONS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of B♭ major on the stave below: • Plot the chords available in this key (I, ii, IV, V, and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Complete the phrase endings by adding suitable chords and descant notes at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "grid",
+                      "label": "1 mark per correct note of chord",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Grid"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "chords-fit",
+                      "label": "1 mark per chord that fits.",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Chords"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "chords-cadence",
+                      "label": "1 extra mark per good cadence chord",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Chords"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "descant-fit",
+                      "label": "1 mark per correct note for every chord that fits",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Descant"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                },
+                {
+                      "id": "descant-cadence",
+                      "label": "1 extra mark per correct note for every good cadence chord",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "Descant"
+                      ],
+                      "counted": {
+                            "rate": 1,
+                            "items": 12
+                      }
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 6",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.05,
+                            0.045,
+                            0.95,
+                            0.625
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP006EV"
+    },
+  } as SecCard,
 ];
