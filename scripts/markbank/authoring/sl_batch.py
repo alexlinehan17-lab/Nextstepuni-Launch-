@@ -33,7 +33,7 @@ def exclusions_path(subject):
     return os.path.join(HERE, 'exclusions', f'{subject}.json')
 
 
-def sitting_cards(subject, year, level='hl'):
+def sitting_cards(subject, year, level='hl', skip_lane=False):
     mod = importlib.import_module(f'sl_specs_{subject.replace("-", "_")}')
     spec_list = mod.specs(year)
     if not spec_list:
@@ -43,6 +43,14 @@ def sitting_cards(subject, year, level='hl'):
     with open(authored_path(subject), encoding='utf-8') as fh:
         authored = json.load(fh)
     have = {c['id'] for c in authored}
+    if skip_lane:
+        # `add`: a sitting the lane already wrote gains a card (a census leaf
+        # added later, e.g. Maltese 2019 Q1A); its written cards are left alone.
+        lane = set()
+        if os.path.exists(ADDITIONS):
+            with open(ADDITIONS, encoding='utf-8') as fh:
+                lane = set(json.load(fh).get(subject, {}).get(str(year), []))
+        new = [c for c in new if c['id'] not in lane]
     ids = [c['id'] for c in new]
     dup = [i for i, n in collections.Counter(ids).items() if n > 1]
     if dup:
@@ -73,8 +81,8 @@ def record_additions(subject, year, ids):
         fh.write('\n')
 
 
-def write(subject, year, level='hl'):
-    authored, new = sitting_cards(subject, year, level)
+def write(subject, year, level='hl', skip_lane=False):
+    authored, new = sitting_cards(subject, year, level, skip_lane)
     at = 0
     for i, c in enumerate(authored):
         if c['year'] <= year:
@@ -181,4 +189,6 @@ if __name__ == '__main__':
     if cmd == 'refresh':
         sys.exit(refresh(subject))
     year = int(sys.argv[3])
+    if cmd == 'add':
+        sys.exit(write(subject, year, skip_lane=True))
     {'review': review, 'write': write}[cmd](subject, year)

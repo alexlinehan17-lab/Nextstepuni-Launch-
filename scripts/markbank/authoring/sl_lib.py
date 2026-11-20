@@ -59,7 +59,15 @@ LANE = 'small-languages lane, 20 Nov 2026'
 KEY = re.compile(r'^(III|II|I)(\d{1,2})(\w)?$')
 
 
+# A question the paper prints with NO number, keyed by the census's ADDED_ASKS
+# ("I1A": Maltese 2019's unnumbered question between Q1 and Q2).
+ADDED_KEY = re.compile(r'^(III|II|I)(\d{1,2}[A-Z])$')
+
+
 def parse_key(text):
+    m = ADDED_KEY.match(text)
+    if m:
+        return (m.group(1), m.group(2), None, None)
     m = KEY.match(text)
     if not m:
         raise ValueError(f'not a classic key: {text!r}')
@@ -661,7 +669,9 @@ def part_head(P, section):
                 # line, "Deel 2:" + "Commentaar" (Dutch 2023), price cells aside.
                 cells = [l.text for l in P.lines if l.page == line.page and abs(l.y - line.y) < 2
                          and l.x > line.x and not TARIFF_EDGE.fullmatch(l.text.strip())
-                         and not TARIFF_WORDED.fullmatch(' ' + l.text.strip())]
+                         and not TARIFF_WORDED.fullmatch(' ' + l.text.strip())
+                         # an unbracketed total, "30 marka" (Maltese 2019 p2)
+                         and not re.fullmatch(r'\d{1,3}\s*(?:' + MARK_WORD + r')', l.text.strip(), re.I)]
                 heads.append(' '.join([line.text] + cells))
     return heads[-1] if heads else None
 
@@ -684,6 +694,20 @@ def documents(subject, year, level='hl', scheme=True):
     return P, doc
 
 
+def _added_ask(subject, year, level, key, P):
+    """An ask the paper prints with no number (paper_census.ADDED_ASKS), as
+    the census lifts it, shaped like a walker's ask for the card builder."""
+    import types
+    import paper_census
+    for spec in paper_census.ADDED_ASKS.get((subject, year, level), []):
+        if tuple(spec['key']) == key:
+            leaf, _marks = paper_census._added_leaf(subject, year, level, spec)
+            return types.SimpleNamespace(key=key, section=key[0], q=key[1], letter=None, roman=None,
+                                         page=spec['lines'][0], text=leaf['text'], full_text=leaf['text'],
+                                         tariff=None, margin_price='', notation='')
+    return None
+
+
 def cards(subject, year, specs, level='hl', scheme=True):
     P, doc = documents(subject, year, level, scheme)
     asks = {a.key: a for a in P.all_asks()}
@@ -698,6 +722,9 @@ def cards(subject, year, specs, level='hl', scheme=True):
         key = parse_key(spec.key)
         if key not in asks and key in parents:
             asks[key] = parents[key]
+        added = key not in asks and _added_ask(subject, year, level, key, P)
+        if added:
+            asks[key] = added
         if key not in asks:
             raise ValueError(f'{subject} {year} {spec.key}: the census prints no such ask')
         if key in seen:
@@ -712,7 +739,7 @@ def cards(subject, year, specs, level='hl', scheme=True):
         language = answer_language(subject, question)
         note = lang_note = rule_note(subject, doc, language)
         card = {
-            'id': card_id(subject, year, level, key),
+            'id': card_id(subject, year, level, key).lower() if added else card_id(subject, year, level, key),
             'subjectId': subject,
             'level': LEVEL_WORD[level],
             'year': year,
@@ -805,7 +832,9 @@ def cards(subject, year, specs, level='hl', scheme=True):
                                            'answer. ' + lang_note)
                 if getattr(spec, 'pages', None):
                     src['pages'] = list(spec.pages)
-                if key[0] != 'I':
+                if key[0] != 'I' or added:
+                    # Part II's own head; and the part head for an unnumbered
+                    # question, which has no "Question N" of its own.
                     head = part_head(P, key[0])
                     if head:
                         src['label'] = clean_question(head).upper()[:60]

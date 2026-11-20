@@ -181,7 +181,18 @@ def _numbered(n):
             f'with no number and numbers this one {n - 1}.')
 
 
+# The unnumbered question (coordinator ruling A, 20 Nov): a census leaf of its
+# own (paper_census.ADDED_ASKS), cited "Section I Q1A", priced from the paper's
+# "(5 marki)" cell beside its last line (p4 y80); the note in plain words, as
+# ruled.
+UNNUMBERED_2019 = ('The paper prints this question without a number, between Questions 1 and 2; '
+                   'the marking scheme calls it Question 2.')
 SPECS[2019] = [
+    R('I1A', [one(LH(55, 59, before=' (P2)'), PY(4, 80))], total=PY(4, 80),
+      note='The paper prints this question with no number; the census keys it Section I Q1A (ADDED_ASKS).',
+      question=QP(4, Run('X’tgħallem dwar', 'tagħlima għall-ħajja')),
+      rownote=both(lambda d: UNNUMBERED_2019,
+                   quote(S(59, after='mill-esperjenza. '), lead='The scheme ends its answer with'))),
     R('I2', [one(LH(61, 64, before=' (P3)'), PP())], note=_numbered(3),
       rownote=quote(S(64, after='mal-ħajja. '), lead='The scheme ends its answer with')),
     R('I3', [one(LH(67, 70), PP())], note=_numbered(4)),

@@ -601,6 +601,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2019 Higher Level — © State Examinations Commission.",
+    id: "mlt-2019-hl-i-1a", topicId: "maltese-0-1", conceptId: "allem-dwar-aspett-iku-tal-isport",
+    section: "I", questionRef: "2019 HL Section I Q1A",
+    questionText: "X’tgħallem dwar l-aspett fiżiku tal-isport David Stellini mingħand l-għalliem tiegħu u kif ħa tagħlima għall-ħajja minn dan?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Huwa tgħallem dwar ir-‘recovery heart rate’ li tirreferi għall-ħin li ddum il-qalb biex tirkupra minn ġirja; huwa tgħallem li anke fil-ħajja, l-importanti mhux biss li tipprova, imma li meta taqa’ tkun kapaċi tirkupra u tiġi f’tiegħek bl-istess mod li l-qalb terġa’ tħabbat b’rata normali wara ġirja. Huwa ra li tirbaħ u ma tirbaħx m’għandek qatt jiddispjaċik li ħadt sehem, għax l-importanti li titgħallem mill-esperjenza.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\" The paper prints this question without a number, between Questions 1 and 2; the marking scheme calls it Question 2. The scheme ends its answer with: “(P2)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "L-EWWEL TAQSIMA",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, b’mod ċar u preċiż il-mistoqsijiet kollha f’taqsima I, II u III tal-karta tal-eżami.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "higher",
     paperFileid: "LC557ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",

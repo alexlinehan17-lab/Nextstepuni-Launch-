@@ -4248,10 +4248,55 @@ NOT_PUBLISHED = {
 }
 
 
+# A printed ask the paper gives NO number, so no walker can key it: added to
+# its sitting by name, scoped to that one sitting (coordinator ruling, 20 Nov
+# 2026). Maltese 2019 prints a sixth reading question at the head of p4, priced
+# "(5 marki)", between Q1 and the paper's Q2 (its marking scheme calls it
+# Question 2 and the paper's 2-5 its 3-6); Part I reaches its printed 30 only
+# with it. Cited "Section I Q1A". The leaf's text is lifted from the paper's own
+# printed lines: (page, the line it opens with, the line it ends with), and its
+# marks from the price cell printed beside its last line.
+ADDED_ASKS = {
+    ('maltese', 2019, 'hl'): [
+        {'key': ['I', '1A', None, None], 'label': 'Section I Q1A', 'before': ['I', 2, None, None],
+         'lines': (4, 'X\u2019tgħallem dwar l-aspett fiżiku', 'tagħlima għall-ħajja minn dan?')},
+    ],
+}
+
+
+def _added_leaf(subject, year, level, spec):
+    """One ADDED_ASKS leaf, its text and price read off the printed paper."""
+    import eu_paper
+    P = eu_paper.EuPaper(year, level, subject)
+    page, first, last = spec['lines']
+    lines = [l for l in P.lines if l.page == page]
+    start = next(i for i, l in enumerate(lines) if l.text.strip().startswith(first))
+    end = next(i for i, l in enumerate(lines[start:], start) if l.text.strip().endswith(last))
+    body = [l for l in lines[start:end + 1] if abs(l.x - lines[start].x) < 40]
+    cells = [l for l in lines if abs(l.y - lines[end].y) < 2 and l is not lines[end]
+             and re.fullmatch(r'\(\s*(\d+)\s*marki?\s*\)', l.text.strip())]
+    if len(cells) != 1:
+        raise ValueError(f'{subject} {year}: {len(cells)} price cells beside the added ask')
+    marks = int(re.search(r'\d+', cells[0].text).group(0))
+    text = re.sub(r'\s+', ' ', ' '.join(l.text for l in body)).strip()
+    return {'key': spec['key'], 'label': spec['label'], 'text': text}, marks
+
+
 def census_subject(subject):
     """The census, with the subject's never-published sittings recorded beside
-    it (only where NOT_PUBLISHED lists one, so no other subject's result moves)."""
+    it (only where NOT_PUBLISHED lists one, so no other subject's result moves),
+    and any ADDED_ASKS leaf put in its sitting (that subject only)."""
     result = _census_subject(subject)
+    for (s, y, l), specs in sorted(ADDED_ASKS.items()):
+        if s != subject:
+            continue
+        paper = next(p for p in result['papers'] if p['year'] == y and p['level'] == l)
+        for spec in specs:
+            leaf, marks = _added_leaf(s, y, l, spec)
+            at = next(i for i, x in enumerate(paper['leaves']) if x['key'] == spec['before'])
+            paper['leaves'].insert(at, leaf)
+            paper['leafCount'] += 1
+            paper['marksSum'] += marks
     gone = [{'year': y, 'level': l, 'evidence': e}
             for (s, y, l), e in sorted(NOT_PUBLISHED.items()) if s == subject]
     if gone:
