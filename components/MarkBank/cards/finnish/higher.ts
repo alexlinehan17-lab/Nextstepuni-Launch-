@@ -209,7 +209,7 @@ export const CARDS: SecCard[] = [
     questionText: "Miksi tekstin mukaan meidän olisi hyvä tunnistaa ja tunnustaa kateuden tunteemme? Perustele vastauksesi tekstin avulla.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Koska tunnistamaton ja käsittelemätön kateus voi saada paljon pahaa aikaan. Kateellinen itse voi ahdistua ja vaipua itsesääliin. Kateus sokeuttaa. Kateus ohjaa elämään omien kielteisten ajatusten mukaan. Kun tunnistaa kateutensa, sitä pystyy käsittelemään rakentavasti.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Koska tunnistamaton ja käsittelemätön kateus voi saada paljon pahaa aikaan. Kateellinen itse voi ahdistua ja vaipua itsesääliin. Kateus sokeuttaa. Kateus ohjaa elämään omien kielteisten ajatusten mukaan. Kun tunnistaa kateutensa, sitä pystyy käsittelemään rakentavasti.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" The scheme reprints this question as: “Miksi tekstin mukaan meidän olisi hyvä tunnistaa ja tunnustaa kateuden tunteemme?”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1446,7 +1446,7 @@ export const CARDS: SecCard[] = [
     questionText: "”Tie helvettiin on päällystetty hyvin aikein”, mitä tämä tarkoittaa tekstin mukaan?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kukaan ei ole niin taitava sabotoimaan omia aikeitaan kuin ihminen itse. Kunnianhimoisiin tekoihin tarvitaan myös kunnianhimoista puhetta. Konditionaaliin eli isi-muotoon kannattaa kiinnittää huomiota, jos ihmissuhteissa tuntuu olevan epämääräisen hankalaa pitää suunta selkeänä Silloin käytetään konditionaalia.Isi- muotoihin tykästyneen kanssa kannattaa harkita, mihin sitoutuu.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kukaan ei ole niin taitava sabotoimaan omia aikeitaan kuin ihminen itse. Kunnianhimoisiin tekoihin tarvitaan myös kunnianhimoista puhetta. Konditionaaliin eli isi-muotoon kannattaa kiinnittää huomiota, jos ihmissuhteissa tuntuu olevan epämääräisen hankalaa pitää suunta selkeänä Silloin käytetään konditionaalia.Isi-muotoihin tykästyneen kanssa kannattaa harkita, mihin sitoutuu.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3227,7 +3227,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kumman kirjoittajan näkemys vastaa paremmin omaa käsitystäsi äidinkielen merkityksestä? Perustele vastauksesi.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vastauksessa edetään referoiden jommankumman kirjoittajan kantaa ja sen pohjalta muodostetaan oma näkökulma", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Vastauksessa edetään referoiden jommankumman kirjoittajan kantaa ja sen pohjalta muodostetaan oma näkökulma", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" The scheme reprints this question as: “Kumman kirjoittajan näkemys vastaa paremmin omaa käsitystäsi äidinkielen merkityksestä?”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3251,7 +3251,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kirjoita noin 100 sanan kommentti Tarja Roinilan tekstin esittämään ajatukseen: ”Hänen [Anken] kaksikielinen tyttärensä saa koulussa kolme tuntia viikossa saksan opetusta ns. oman äidinkielen opetuksen puitteissa.”",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kirjoittaja voi pohtia, missä määrin kolme viikkotuntia tulee kielenkehitystä. Onko paras paikka kielenoppimiseen kotona, jossa se muodostuu tunnesuhteessa vanhempaan tai sisaruksiin. Mitä lisäarvoa kouluoppiminen voi tuoda? Kirjoittaja voi myös arvella, mitä ylimääräinen koulutyö voi tarkoittaa lapsen kaverisuhteiden ja läksyjen kannalta.", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kirjoittaja voi pohtia, missä määrin kolme viikkotuntia tulee kielenkehitystä. Onko paras paikka kielenoppimiseen kotona, jossa se muodostuu tunnesuhteessa vanhempaan tai sisaruksiin. Mitä lisäarvoa kouluoppiminen voi tuoda? Kirjoittaja voi myös arvella, mitä ylimääräinen koulutyö voi tarkoittaa lapsen kaverisuhteiden ja läksyjen kannalta.", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" The scheme reprints the task as: “Kirjoita noin 100 kommentti Tarja Roinilan tekstin esittämään ajatukseen: ”Hänen [Anken] kaksikielinen tyttärensä saa koulussa kolme tuntia viikossa saksan opetusta ns. oman äidinkielen opetuksen puitteissa.””." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3541,7 +3541,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kirjoita noin 100 – 150 sanan mittainen kommentti, jossa arvioit oman kokemuksesi perusteella, ovatko tutkijoiden antamat rajoitukset käyttökelpoisia tapoja älylaitteiden parissa toimivalle.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mielipide tulee rakentua dialogissa kolmeen tekstissä esitettyyn rajoitukseen eli aikaan, paikkaan ja ihmissuhteisiin liittyviin tilanteisiin. Oma reflektio tulee olla mukana.", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mielipide tulee rakentua dialogissa kolmeen tekstissä esitettyyn rajoitukseen eli aikaan, paikkaan ja ihmissuhteisiin liittyviin tilanteisiin. Oma reflektio tulee olla mukana.", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" The scheme restates the task as: “Arvioi oman kokemuksesi perusteella, ovatko tutkijoiden antamat rajoitukset käyttökelpoisia tapoja älylaitteiden parissa toimiville.”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3565,7 +3565,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kirjoita noin 300 sanan essee. Valitse aiheeksi toinen näistä. Pitäisikö koulussa kieltää kännykkä? Ota kantaa ajankohtaiseen keskusteluun.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Keskustelua on käyty hallitustasolla ja maan ylimpien päättäjien toimesta, joten mikäli kokelas tuo esiin keskustelun olevan ajankohtainen ja tuntee asia, se kertoo kulttuurisesta kompetenssista. Kokelas voi esittää perusteluja argumentteja puolesta ja vastaan.", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Keskustelua on käyty hallitustasolla ja maan ylimpien päättäjien toimesta, joten mikäli kokelas tuo esiin keskustelun olevan ajankohtainen ja tuntee asia, se kertoo kulttuurisesta kompetenssista. Kokelas voi esittää perusteluja argumentteja puolesta ja vastaan.", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" The scheme reprints the instruction as: “Kirjoita noin 300 sanan pituinen yhtenäinen teksti. Valitse aiheeksi toinen näistä.”." },
     ],
   } as SecCard,
   {
@@ -3578,7 +3578,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kirjoita noin 300 sanan essee. Valitse aiheeksi toinen näistä. ”Lukeminen parantaa muistia, lievittää stressiä ja jopa pidentää ikää”, sanoo aivotutkija Minna Huotilainen. Kirjoita pohtiva teksti, jossa tarkastelet lukemisen merkitystä aivoterveyden kannalta.",
     tariffModel: {"kind":"fixed"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" The marking scheme reprints a different title here (“Kenellä on vastuu älylaitteiden käytöstä ‐ valmistajalla, valtiolla vai käyttäjillä? Kirjoita pohtiva teksti, jossa tarkastelet asiaa monelta kannalta.”) and gives no answer for the title the paper prints.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" The scheme reprints the instruction as: “Kirjoita noin 300 sanan pituinen yhtenäinen teksti. Valitse aiheeksi toinen näistä.”. The marking scheme reprints a different title here (“Kenellä on vastuu älylaitteiden käytöstä ‐ valmistajalla, valtiolla vai käyttäjillä? Kirjoita pohtiva teksti, jossa tarkastelet asiaa monelta kannalta.”) and gives no answer for the title the paper prints.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
     ],
   } as SecCard,
   {
