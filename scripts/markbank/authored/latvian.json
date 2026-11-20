@@ -4972,6 +4972,366 @@
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
  },
  {
+  "id": "lv-2020-hl-i-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2020,
+  "section": "I",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-vardus-vardu-savienojumus",
+  "questionRef": "2020 HL Section I Q1",
+  "questionText": "Izskaidrojiet vārdus un vārdu savienojumus!\na) lektori (1.rinkopa)\nb) ambīcijas (4.rindkopa)\nc) aplauzties (5.rindkopa)\nd) dūša (5.rindkopa)\ne) vakances (6.rindkopa)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "cilvēks, kas lasa publiskas lekcijas, nodarbojas ar publisku lekciju lasīšanu/ stāsta savu pieredzi, izglīto citus/ skolotājs",
+    "marks": null,
+    "contextNote": "For “lektori (1.rinkopa)”: The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme glosses expression a) as “lektors”; the paper prints “lektori (1.rinkopa)”. Each gloss carries no mark of its own: the paper prices the question as a whole."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "godkārība, cenšanās pēc kaut kā aiz godkārības; tieksme, pretenzijas iegūt (ko)/ tieksme ko iegūt",
+    "marks": null,
+    "contextNote": "For “ambīcijas (4.rindkopa)”"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "kļūdīties; ciest neveiksmi/ vilties, būt sarūgtinātam/ neizdoties (neveikties)",
+    "marks": null,
+    "contextNote": "For “aplauzties (5.rindkopa)”"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "drosme, gribasspēks, uzņēmība/ fiziskais spēks, darba spars",
+    "marks": null,
+    "contextNote": "For “dūša (5.rindkopa)”"
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "neaizņemts amats, brīva darbavieta (piemēram, iestādē)",
+    "marks": null,
+    "contextNote": "For “vakances (6.rindkopa)”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2020-hl-i-2",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2020,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "kapec-eriks-radzelis-uzkata-rosinatava-ipasi",
+  "questionRef": "2020 HL Section I Q2",
+  "questionText": "Kāpēc Ēriks Radželis uzkata, ka Rosinātāvā īpaši vajadzētu uzrunāt vidusskolēnus?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Vidusskolēni vēl nav sapratuši/izvēlējušies, ko vēlas dzīvē darīt. Daudzi dodas uz ārzemēm vieglas peļņas nolūkā, Ēriks vēlas atrunāt. Šis ir laiks, kad var vēl jauniešus motivēt karjeras izvēlei.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2020-hl-i-3",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2020,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "miniet-tris-kriterijus-kadus-projekta-autori",
+  "questionRef": "2020 HL Section I Q3",
+  "questionText": "Miniet trīs kritērijus, kādus projekta autori izvirzīja, lai atlasītu iespējamos lektorus!",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lektoram jābūt ar pieredzi, kura gūta gan Latvijā, gan ārzemēs (atbraukuši atpakaļ un atraduši labu darbu). Vidējais vecums 25 gadi, jaunieši, kuri jau paši ko sasnieguši. Spēj atraktīvi dalīties savā pieredzē.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints this question as: “Miniet trīs kritērijus, kādu projekta autori izvirzīja, lai atlasītu iespējamos lektorus!”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2020-hl-i-4",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2020,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "pamatojiet-kapec-rosinatavas-pasakumi-nenotiek-lekcijas",
+  "questionRef": "2020 HL Section I Q4",
+  "questionText": "Pamatojiet, kāpēc Rosinātavas pasākumi nenotiek kā lekcijas! Vai jūs atbalstāt šādu pieeju?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Jauniešus vislabāk uzrunā diskusijas, aicina domāt, nevis dzirdēt un pierakstīt kaut kādas dzīves gudrības. Brīvā atmosfērā, nevis lekcijā saklausīt pārbaudītas vērtības, pārliecinātus dzīves stāstus.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Lektoram iespējams improvizēt atbilstoši jauniešu vēlmēm, iedvesmot.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2020-hl-i-5",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2020,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "kurs-trim-piedavatajiem-darba-meklesanas-veidiem",
+  "questionRef": "2020 HL Section I Q5",
+  "questionText": "Kurš no trim piedāvātajiem darba meklēšanas veidiem, Jūsuprāt, ir labākais? Pamatojiet!",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Jebkura atbilde (*izvēlos darbu, uzņēmumu, kurā gribu strādāt un iesniedzu CV, kaut arī uzņēmumam nav nepieciešami jauni drabieki, *paprasu, vai drauga kolektīvā nav nepieciešams jebkāds darbinieks, * veicu tirgus izpēti (vakances, alga) ar loģisku pamatojumu, piemēriem no savas dzīves. Iespējams, labākais darba meklēšanas veids ir darba tirgus pieprasījuma izpēte. Pirmās divas tekstā minētie darba meklēšanas veidi vairāk ir veiksme - draugi strādā kādā lielā uzņēmumā, kurai būs nepieciešama 19 gadīga jaunieša pieredze. Jebkurā nozarē pieredze ir nepieciešama, bet, var atrast jomu, kurā ir darba spēka trūkums - tad dod iespēju pilnveidot savas prasmes šajā jomā.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2020-hl-i-6",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2020,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "musu-merkis-nav-kaut-iemacit-bet",
+  "questionRef": "2020 HL Section I Q6",
+  "questionText": "“Mūsu mērķis nav kaut ko iemācīt, bet gan iedvesmot sākt to darīt.” Vai, Jūsuprāt, Rosinātavai izdosies sasniegt savu mērķi? Pamatojiet atbildi!",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Jā, jo Rosinātavas lektori, kuri ir gados jauni un jau dzīvē paši daudz ko jau sasnieguši, ar savu pieredzi varēs pārliecināt jauniešus izdarīt sev vēlamāko karjeras ceļu. Viņi diskutēs par iespējamajām problēmām, kā tas atrisināt.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Rosinātavas mērķis, neformālā gaisotnē satiekot cilvēkus, kas kaut ko jau dzīvē sasnieguši, ir iedvesmot jauniešus rīkoties, parādīt iespējas, ceļus un iedrošināt uzņemties risku, iegūt pieredzi, pirmkārt, jau uzdrošināties uzsākt ko jaunu. Ja nesanāk, nenobīties un mēģināt vēlreiz, līdz mērķis ir sasniegts. Vienmēr būs skolēni, kuri meklēs iespējas, kā sasniegt savus mērķu, Rosinātava ir vieta, kas mudina mudina to darīt un aizdomāties par nākotni.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2020-hl-ii",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2020,
+  "section": "II",
+  "topicId": "latvian-1-0",
+  "conceptId": "izsakiet-savu-viedokli-par-piedavato-apgalvojumu",
+  "questionRef": "2020 HL Section II",
+  "questionText": "Izsakiet savu viedokli par piedāvāto apgalvojumu! (vismaz 100 vārdu) \"Jauniešiem mazāk iespringt, vairāk darīt, riskēt.\"",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tas attiecināms ne tikai uz jauniem cilvēkiem, bet uz ikvienu. Tikai izzejot no komforta zonas un uzņemoties risku, varam kaut kaut ko sasniegt. Uzsākot kaut ko jaunu, mēs nezinām, kas mūs sagaida. Bet labāk ir mēģināt, nekā nemēģināt, pat ja neizdodas. Daudzi cilvēki ir iestrēguši bailēs, komforta zonā, no kuras nespēj izlauzties. Tas nenozīmē, ka jāriskē, bet jātur acis vaļā, lai ieraudzītu iespējas piepildīt savus sapņus un ņemtu dzīves grožus savās rokās.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints this one paragraph under the statement, with no mark inside it and no criteria for the part."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II DAĻA",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2020-hl-iii-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2020,
+  "section": "III",
+  "topicId": "latvian-1-0",
+  "conceptId": "uzrakstiet-parspriedumu-par-vienu-temam-mazak",
+  "questionRef": "2020 HL Section III Q1",
+  "questionText": "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) \"Katrs pats savas laimes kalējs.\" (Latviešu sakāmvārds)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Jau skolas gados mums atgādināja, kā mācīsieties, tādu darbu strādāsiet, tādu algu saņemsiet. Katrs pats var izlemt, pa kuru ceļu iet. Vai vienmēr vajag klausīt vecākus, pārņemt viņu pieredzi? Katram pašam par to jālemj. Neviens tevi nevar piespiest ko darīt. Katram pašam jāsaprot, ko vēlies darīt. Katram pašam par savām kļūdām jāmaksā, katrs pats saņem atalgojumu, uzslavu par savu darbu. Vai es esmu laimīgs? Jā/Nē. Kāpēc? Kas palīdzēja/traucēja? Personiskajās attiecības neviens tev nevar palīdzēt, pats vislabāk jūt, kā rīkoties.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints this paragraph under the title, with no mark inside it and no criteria for the part: an example, not a checklist."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "lv-2020-hl-iii-2",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2020,
+  "section": "III",
+  "topicId": "latvian-1-0",
+  "conceptId": "uzrakstiet-kadi-pasakumi-jusuprat-latvija-butu",
+  "questionRef": "2020 HL Section III Q2",
+  "questionText": "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) Uzrakstiet, kādi pasākumi, Jūsuprāt, Latvijā būtu jāveic, lai jaunieši vēlētos atgriezties dzimtenē!",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "nodrošinātas darba vietas (pats arī var attīstīt biznesa idejas)",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints this title as “Uzrakstiet, kādi pasākumi, Jūsuprāt, būtu Latvijā būtu jāveic, lai jaunieši vēlētos atgriezties dzimtenē!” Under it it prints “Jebkura loģiska argumentēta atbilde.” and these points, with no mark on any of them and no criteria for the part: examples, not a checklist."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "sakārtota nodokļu politika",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "kaut minimāli un garantēti sociālie apstākļi (dzīves vieta/sociālās garantijas/ viegli iegūstami kredīti uz reāliem nosacījumiem)",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "atalgojums līdzvērtīgs kā ES",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "lv-2022-hl-i-1",
   "subjectId": "latvian",
   "level": "higher",
