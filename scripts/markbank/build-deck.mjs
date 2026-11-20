@@ -636,6 +636,43 @@ const HISTORY_ESSAY_NO_MODEL_ANSWER = 'The scheme prints no model answer for thi
  *  paper (PLAN-2026-11-18 R4). Mirrors NO_SCHEME_PUBLISHED in types/markBank.ts. */
 const NO_SCHEME_PUBLISHED = 'The SEC published no marking scheme for this paper.';
 
+/** The fixed line a card carries where its paper prices only the section the
+ *  question sits in (types/markBank.ts `unpricedSection`, CARD-STANDARD 10i),
+ *  filled from that field. Mirrors UNPRICED_SECTION_LINE in types/markBank.ts.
+ *  The session prints it; no row may carry it. */
+const UNPRICED_SECTION_LINE = 'The paper gives {total} marks for {label} as a whole, not for each question.';
+
+/**
+ * A card whose paper prices only its section, never the question
+ * (`unpricedSection`): the scheme's answer rows, lifted and traced as on any
+ * card, carrying no marks; the `questionTotal` tariff; no total of its own (0);
+ * and the section's printed name and total, which the authoring lifts from
+ * the paper's text layer (the papers are PDFs only, so this build cannot read
+ * them). A total of 0 is refused on any card without the field. Returns the
+ * reason to drop the card, or null.
+ */
+function unpricedSectionFault(c) {
+  const s = c.unpricedSection;
+  if (s === undefined) return 'a card with no total of its own must name the section its paper prices (unpricedSection)';
+  if (c.noScheme) return 'an unpriced-section card has a scheme to lift its answers from';
+  if (typeof s !== 'object' || s === null || typeof s.label !== 'string' || !s.label.length || s.label !== s.label.trim()
+    || !Number.isInteger(s.totalMarks) || s.totalMarks <= 0 || Object.keys(s).some(k => !['label', 'totalMarks'].includes(k))) {
+    return 'unpricedSection is { label: the section as printed, totalMarks: its printed total }';
+  }
+  if ((c.tariffModel ?? {}).kind !== 'questionTotal') return 'an unpriced-section card has the questionTotal tariff';
+  if (c.totalMarks !== 0) return 'an unpriced-section card has no total of its own (0)';
+  const line = UNPRICED_SECTION_LINE.replace('{total}', String(s.totalMarks)).replace('{label}', s.label);
+  if (!c.rows.length || c.rows.some(r => r.kind !== 'point' || (r.marks !== null && r.marks !== undefined)
+    || r.group || r.parts || r.permittedMarks || r.route || r.unprinted || !String(r.verbatim ?? '').trim()
+    || r.verbatim === NO_SCHEME_PUBLISHED || r.verbatim === line)) {
+    return 'an unpriced-section card lifts the scheme\'s answers as point rows with no marks';
+  }
+  if (c.answerVariants?.length || c.questionBonus || c.taskGroups || c.mathematicsScale || c.extraneousMaterialRule || c.answerLanguageRule) {
+    return 'an unpriced-section card carries no route, bonus, group or scale';
+  }
+  return null;
+}
+
 /**
  * A card whose paper has no published scheme (types/markBank.ts `noScheme`):
  * the question as printed, the paper's own marks, and one criterion row that
@@ -2093,6 +2130,12 @@ for (const c of cards) {
     const fault = noSchemeFault(c);
     if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
   }
+  /* A paper that prices only the question's section (CARD-STANDARD 10i):
+   * held to its shape here, then traced row by row like any card. */
+  if (c.unpricedSection !== undefined || (typeof c.totalMarks === 'number' && c.totalMarks <= 0)) {
+    const fault = unpricedSectionFault(c);
+    if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
+  }
   // Every marking point must actually appear in its own scheme.
   const scheme = c.noScheme ? null : schemeFor(SUBJECT_ID, c);
   if (!c.noScheme && !scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
@@ -2276,7 +2319,7 @@ for (const c of cards) {
     id: ${q(c.id)}, topicId: ${q(c.topicId)},${c.additionalTopicIds?.length ? ` additionalTopicIds: ${JSON.stringify(c.additionalTopicIds)},` : ''} conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},${c.questionChoices?.length ? `\n    questionChoices: ${JSON.stringify(c.questionChoices)},` : ''}
-    tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},${c.noScheme ? '\n    noScheme: true,' : ''}
+    tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},${c.noScheme ? '\n    noScheme: true,' : ''}${c.unpricedSection ? `\n    unpricedSection: ${JSON.stringify(c.unpricedSection)},` : ''}
     rows: [
 ${rows}
     ],${c.mathematicsScale ? `\n    mathematicsScale: ${JSON.stringify(c.mathematicsScale)},` : ''}${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.audioMaterial ? `\n    audioMaterial: ${JSON.stringify(c.audioMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.videoMaterial ? `\n    videoMaterial: ${JSON.stringify(c.videoMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
