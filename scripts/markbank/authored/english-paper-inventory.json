@@ -2,7 +2,7 @@
   "subject": "english",
   "scope": "Every English question paper in PAPER_TRAIL_INDEX, both levels and both papers.",
   "evidenceRule": "Inventory and parser counts do not prove task, choice, source-material or topic completeness.",
-  "paperCount": 68,
+  "paperCount": 80,
   "papers": [
     {
       "id": "english-2010-hl-p1",
@@ -1430,6 +1430,270 @@
       },
       "answerMapPresent": true,
       "answerMapBlocks": 19,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2022-hl-deferred-p1",
+      "year": 2022,
+      "level": "higher",
+      "paper": 1,
+      "sitting": "deferred",
+      "paperFileid": "LC002ALP100EV-deferred.pdf",
+      "schemeFileid": "LC002ALP000EV-deferred.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/deferredexams/2022/LC002ALP100EV.pdf",
+        "sha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/deferredmarkingschemes/2022/LC002ALP000EV.pdf",
+        "sha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+        "pages": 55
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2022-hl-deferred-p2",
+      "year": 2022,
+      "level": "higher",
+      "paper": 2,
+      "sitting": "deferred",
+      "paperFileid": "LC002ALP200EV-deferred.pdf",
+      "schemeFileid": "LC002ALP000EV-deferred.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/deferredexams/2022/LC002ALP200EV.pdf",
+        "sha256": "6c70d8617e0123815c3af82a449d3daf74152c6e3fe6f8e975a3175081676608",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/deferredmarkingschemes/2022/LC002ALP000EV.pdf",
+        "sha256": "e3fc4be89fbe749dd1c7324cd8dd2942ba1c908877e4fcc5e5548b6ff6742d94",
+        "pages": 55
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 23,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2022-ol-deferred-p1",
+      "year": 2022,
+      "level": "ordinary",
+      "paper": 1,
+      "sitting": "deferred",
+      "paperFileid": "LC002GLP100EV-deferred.pdf",
+      "schemeFileid": "LC002GLP000EV-deferred.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/deferredexams/2022/LC002GLP100EV.pdf",
+        "sha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/deferredmarkingschemes/2022/LC002GLP000EV.pdf",
+        "sha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+        "pages": 51
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2022-ol-deferred-p2",
+      "year": 2022,
+      "level": "ordinary",
+      "paper": 2,
+      "sitting": "deferred",
+      "paperFileid": "LC002GLP200EV-deferred.pdf",
+      "schemeFileid": "LC002GLP000EV-deferred.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/deferredexams/2022/LC002GLP200EV.pdf",
+        "sha256": "f5717b9c01584b89fb1f70fabb27a9c254bf497584a1f79c1cf591efd522770b",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/deferredmarkingschemes/2022/LC002GLP000EV.pdf",
+        "sha256": "044873505d56e5ab46a70be20c7309a264f8f792d927634da000c75a21c3898f",
+        "pages": 51
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 19,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2023-hl-deferred-p1",
+      "year": 2023,
+      "level": "higher",
+      "paper": 1,
+      "sitting": "deferred",
+      "paperFileid": "LC002ALP100EV-deferred.pdf",
+      "schemeFileid": "LC002ALP000EV-deferred.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/deferredexams/2023/LC002ALP100EV.pdf",
+        "sha256": "8478421ce1f7230542c97d003557b909116f79e7d3e91cf0ba3a6245911e40d0",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/deferredmarkingschemes/2023/LC002ALP000EV.pdf",
+        "sha256": "755d417fc2b6536de58834daccb6f962525d384729e77ef8897131f1fcc6bf37",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2023-hl-deferred-p2",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "sitting": "deferred",
+      "paperFileid": "LC002ALP200EV-deferred.pdf",
+      "schemeFileid": "LC002ALP000EV-deferred.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/deferredexams/2023/LC002ALP200EV.pdf",
+        "sha256": "f09cefdb117b7aeff217515351077ff6fdc71cff3887fa7dfd4ba73ef9a1a278",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/deferredmarkingschemes/2023/LC002ALP000EV.pdf",
+        "sha256": "755d417fc2b6536de58834daccb6f962525d384729e77ef8897131f1fcc6bf37",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 23,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2024-hl-deferred-p1",
+      "year": 2024,
+      "level": "higher",
+      "paper": 1,
+      "sitting": "deferred",
+      "paperFileid": "LC002ALP100EV-deferred.pdf",
+      "schemeFileid": "LC002ALP000EV-deferred.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/deferredexams/2024/LC002ALP100EV.pdf",
+        "sha256": "951efae4c8cd26dd37d98cb4f4b3415d683d567500b8bd3f30ea8f72b2414f6a",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/deferredmarkingschemes/2024/LC002ALP000EV.pdf",
+        "sha256": "9df406094c42ada9f3b641d48a4fd4e5c4c14b1172778bc1d2d9b6c19285a0fb",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2024-hl-deferred-p2",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "sitting": "deferred",
+      "paperFileid": "LC002ALP200EV-deferred.pdf",
+      "schemeFileid": "LC002ALP000EV-deferred.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/deferredexams/2024/LC002ALP200EV.pdf",
+        "sha256": "4ef1663d1f4ccc88038f2705fc3b59d71fe885a576118ce3423006089a71f6b6",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/deferredmarkingschemes/2024/LC002ALP000EV.pdf",
+        "sha256": "9df406094c42ada9f3b641d48a4fd4e5c4c14b1172778bc1d2d9b6c19285a0fb",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 23,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2024-ol-deferred-p1",
+      "year": 2024,
+      "level": "ordinary",
+      "paper": 1,
+      "sitting": "deferred",
+      "paperFileid": "LC002GLP100EV-deferred.pdf",
+      "schemeFileid": "LC002GLP000EV-deferred.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/deferredexams/2024/LC002GLP100EV.pdf",
+        "sha256": "f5ad8ce2de2939fecb99076b76f8e2f95f40919f6fccce61cb94624841cefba1",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/deferredmarkingschemes/2024/LC002GLP000EV.pdf",
+        "sha256": "2cff36cfe559ca5bf37c6808ccb82c587ef6a736366997defceac92757f119c9",
+        "pages": 38
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2024-ol-deferred-p2",
+      "year": 2024,
+      "level": "ordinary",
+      "paper": 2,
+      "sitting": "deferred",
+      "paperFileid": "LC002GLP200EV-deferred.pdf",
+      "schemeFileid": "LC002GLP000EV-deferred.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/deferredexams/2024/LC002GLP200EV.pdf",
+        "sha256": "5142a1f63d16123e804e0869c3f81e39cda26c2c3a14c7947114dc76420961ee",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/deferredmarkingschemes/2024/LC002GLP000EV.pdf",
+        "sha256": "2cff36cfe559ca5bf37c6808ccb82c587ef6a736366997defceac92757f119c9",
+        "pages": 38
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 19,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2025-hl-deferred-p1",
+      "year": 2025,
+      "level": "higher",
+      "paper": 1,
+      "sitting": "deferred",
+      "paperFileid": "LC002ALP100EV-deferred.pdf",
+      "schemeFileid": "LC002ALP000EV-deferred.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/deferredexams/2025/LC002ALP100EV.pdf",
+        "sha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/deferredmarkingschemes/2025/LC002ALP000EV.pdf",
+        "sha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+        "pages": 48
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2025-hl-deferred-p2",
+      "year": 2025,
+      "level": "higher",
+      "paper": 2,
+      "sitting": "deferred",
+      "paperFileid": "LC002ALP200EV-deferred.pdf",
+      "schemeFileid": "LC002ALP000EV-deferred.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/deferredexams/2025/LC002ALP200EV.pdf",
+        "sha256": "418ea4b1dc2e672a03397fff6da8f7d9a86345bda5811afb122aba051d244136",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/deferredmarkingschemes/2025/LC002ALP000EV.pdf",
+        "sha256": "41a595146c0ee6a0376eead14dab687b00a240e53e9ad37fa3f0d6f410a53a30",
+        "pages": 48
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 23,
       "markBankCards": 0
     }
   ]

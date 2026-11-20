@@ -70,6 +70,7 @@ def inventory():
                 'answerMapBlocks': len(sidecar['q']) if sidecar else 0,
                 'markBankCards': len(cards),
             })
+    papers.extend(deferred_papers())
     return {
         'subject': 'english',
         'scope': 'Every English question paper in PAPER_TRAIL_INDEX, both levels and both papers.',
@@ -77,6 +78,37 @@ def inventory():
         'paperCount': len(papers),
         'papers': papers,
     }
+
+
+def deferred_papers():
+    """The SEC's deferred English sittings (2022-2025), papers of their own.
+
+    Paper Trail files each as "<fileid>-deferred.pdf" (paperTrailData.ts); the
+    corpus holds it under deferredexams/ and deferredmarkingschemes/ with the
+    SEC's own file id. A deferred paper's id says so ("english-2024-hl-deferred-p1"),
+    as every deferred card's does (CARD-STANDARD section 4).
+    """
+    papers = []
+    entries = [e for e in paper_index() if e.get('sitting') == 'deferred' and e['lang'] == 'ev']
+    for entry in sorted(entries, key=lambda e: (e['year'], e['level'])):
+        for item in entry['papers']:
+            number = {'Deferred · Paper One': 1, 'Deferred · Paper Two': 2}[item['label']]
+            paper_file, scheme_file = item['doc']['f'], item['scheme']['f']
+            raw_paper, raw_scheme = paper_file.removesuffix('-deferred.pdf') + '.pdf', \
+                scheme_file.removesuffix('-deferred.pdf') + '.pdf'
+            sidecar_path = ROOT / 'scripts/paper-trail/answers' / str(entry['year']) / (paper_file + '.json')
+            sidecar = json.loads(sidecar_path.read_text()) if sidecar_path.is_file() else None
+            papers.append({
+                'id': f"english-{entry['year']}-{'hl' if entry['level'] == 'higher' else 'ol'}-deferred-p{number}",
+                'year': entry['year'], 'level': entry['level'], 'paper': number, 'sitting': 'deferred',
+                'paperFileid': paper_file, 'schemeFileid': scheme_file,
+                'questionPaper': document_record(CORPUS / 'deferredexams' / str(entry['year']) / raw_paper),
+                'markingScheme': document_record(CORPUS / 'deferredmarkingschemes' / str(entry['year']) / raw_scheme),
+                'answerMapPresent': sidecar is not None,
+                'answerMapBlocks': len(sidecar['q']) if sidecar else 0,
+                'markBankCards': 0,
+            })
+    return papers
 
 
 def main():
