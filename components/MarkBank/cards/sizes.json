@@ -121,14 +121,14 @@
   "ordinary": 125
  },
  "portuguese": {
-  "higher": 291,
-  "ordinary": 264
+  "higher": 450,
+  "ordinary": 294
  },
  "romanian": {
-  "higher": 50
+  "higher": 187
  },
  "dutch": {
-  "higher": 42
+  "higher": 219
  },
  "lithuanian": {
   "higher": 163,
@@ -190,7 +190,7 @@
   "ordinary": 390
  },
  "maltese": {
-  "higher": 29
+  "higher": 76
  },
  "politics-and-society": {
   "higher": 263,
@@ -201,7 +201,7 @@
   "ordinary": 644
  },
  "music": {
-  "higher": 664,
-  "ordinary": 595
+  "higher": 904,
+  "ordinary": 804
  }
 }

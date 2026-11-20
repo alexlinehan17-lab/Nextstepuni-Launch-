@@ -1,4 +1,4 @@
-import type { SecCard } from '../../types/markBank';
+import { isUnpricedSectionCard, type SecCard } from '../../types/markBank';
 import { figureUrl } from '../../utils/figureUrl';
 import type { WaysInQuestionSource } from './types';
 
@@ -34,7 +34,9 @@ export function waysInSourceFromMarkBank(card: SecCard, subjectLabel: string): W
     // The total is printed on the question paper. Rows, routes, answer counts
     // and tariff mechanics come from the marking scheme and deliberately do
     // not cross this pre-reveal boundary—not even as anonymous numbers.
-    answerShape: {
+    // A question whose paper prices only its section (CARD-STANDARD 10i) has
+    // no printed total of its own to pass on.
+    answerShape: isUnpricedSectionCard(card) ? {} : {
       totalMarks: card.totalMarks,
     },
     textConfidence: 'verified',

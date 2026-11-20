@@ -636,6 +636,43 @@ const HISTORY_ESSAY_NO_MODEL_ANSWER = 'The scheme prints no model answer for thi
  *  paper (PLAN-2026-11-18 R4). Mirrors NO_SCHEME_PUBLISHED in types/markBank.ts. */
 const NO_SCHEME_PUBLISHED = 'The SEC published no marking scheme for this paper.';
 
+/** The fixed line a card carries where its paper prices only the section the
+ *  question sits in (types/markBank.ts `unpricedSection`, CARD-STANDARD 10i),
+ *  filled from that field. Mirrors UNPRICED_SECTION_LINE in types/markBank.ts.
+ *  The session prints it; no row may carry it. */
+const UNPRICED_SECTION_LINE = 'The paper gives {total} marks for {label} as a whole, not for each question.';
+
+/**
+ * A card whose paper prices only its section, never the question
+ * (`unpricedSection`): the scheme's answer rows, lifted and traced as on any
+ * card, carrying no marks; the `questionTotal` tariff; no total of its own (0);
+ * and the section's printed name and total, which the authoring lifts from
+ * the paper's text layer (the papers are PDFs only, so this build cannot read
+ * them). A total of 0 is refused on any card without the field. Returns the
+ * reason to drop the card, or null.
+ */
+function unpricedSectionFault(c) {
+  const s = c.unpricedSection;
+  if (s === undefined) return 'a card with no total of its own must name the section its paper prices (unpricedSection)';
+  if (c.noScheme) return 'an unpriced-section card has a scheme to lift its answers from';
+  if (typeof s !== 'object' || s === null || typeof s.label !== 'string' || !s.label.length || s.label !== s.label.trim()
+    || !Number.isInteger(s.totalMarks) || s.totalMarks <= 0 || Object.keys(s).some(k => !['label', 'totalMarks'].includes(k))) {
+    return 'unpricedSection is { label: the section as printed, totalMarks: its printed total }';
+  }
+  if ((c.tariffModel ?? {}).kind !== 'questionTotal') return 'an unpriced-section card has the questionTotal tariff';
+  if (c.totalMarks !== 0) return 'an unpriced-section card has no total of its own (0)';
+  const line = UNPRICED_SECTION_LINE.replace('{total}', String(s.totalMarks)).replace('{label}', s.label);
+  if (!c.rows.length || c.rows.some(r => r.kind !== 'point' || (r.marks !== null && r.marks !== undefined)
+    || r.group || r.parts || r.permittedMarks || r.route || r.unprinted || !String(r.verbatim ?? '').trim()
+    || r.verbatim === NO_SCHEME_PUBLISHED || r.verbatim === line)) {
+    return 'an unpriced-section card lifts the scheme\'s answers as point rows with no marks';
+  }
+  if (c.answerVariants?.length || c.questionBonus || c.taskGroups || c.mathematicsScale || c.extraneousMaterialRule || c.answerLanguageRule) {
+    return 'an unpriced-section card carries no route, bonus, group or scale';
+  }
+  return null;
+}
+
 /**
  * A card whose paper has no published scheme (types/markBank.ts `noScheme`):
  * the question as printed, the paper's own marks, and one criterion row that
@@ -809,8 +846,12 @@ function spanishGridFault(c, scheme, schemeCells = '', schemeRanges = '') {
     if (halfTop) {
       const ladder = [...Array(Math.floor(k.maxMarks) + 1).keys(), k.maxMarks];
       if (allowed.length !== ladder.length || allowed.some((m, i) => m !== ladder[i])) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
-      const marks = (k.bands ?? []).flatMap(b => b.marks).sort((a, b) => a - b);
-      if (marks.length !== ladder.length || marks.some((m, i) => m !== ladder[i])) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
+      // A quality line the scheme prints with its marks only (2011/2013 HL "Quality of bass line ... 9.5") has
+      // no bands; where bands are printed they cover the ladder once, as on every other criterion.
+      if (k.bands) {
+        const marks = k.bands.flatMap(b => b.marks).sort((a, b) => a - b);
+        if (marks.length !== ladder.length || marks.some((m, i) => m !== ladder[i])) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
+      }
       continue;
     }
     if (allowed.length !== k.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
@@ -942,6 +983,7 @@ const DEFERRED_ID = {
   maths: /^maths-\d{4}-(?:hl|ol|fl)-deferred-/,
   chemistry: /^chem-\d{4}-(?:hl|ol)-deferred-/,
   art: /^art-\d{4}-(?:hl|ol)-deferred-/,
+  music: /^mus-\d{4}-(?:hl|ol)-deferred-/,
 };
 const deferredCard = (subjectId, card) =>
   Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));
@@ -1037,7 +1079,13 @@ function schemeFor(subjectId, card, { cells = false, ranges = false } = {}) {
  * Calibri: the 2022 Higher Polish listening booklet prints "grows in 20\u1D52C" (rendered:
  * a degree sign), and its text layer carries the character itself, not a
  * subset's stand-in. Added alone; at the time no other deck input held it. */
-const REAL = /[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D52\u1D62-\u1D6A\u1F00-\u1FFF]/;
+/* U+1EB7 LATIN SMALL LETTER A WITH BREVE AND DOT BELOW is what the Romanian
+ * papers of 2012-2020 actually print in their bold instruction lines: the SEC
+ * typed "Toate r\u1EB7spunsurile trebuie scrise \u00een limba rom\u00e2n\u0103" (rendered at
+ * 300 dpi: an a with a breve and a dot below; 2013's text layer reads the same
+ * glyph, id 1211, as U+04BB and is repaired from that id). The answer-language
+ * note quotes that rule as printed. Added alone; no other deck input holds it. */
+const REAL = /[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D52\u1D62-\u1D6A\u1EB7\u1F00-\u1FFF]/;
 /* Greek Extended (U+1F00-U+1FFF) is genuinely Greek, for the same reason
  * U+0370-U+03FF already is: POLYTONIC Greek is the alphabet the Ancient Greek
  * paper and its scheme are printed in, and every accented vowel in it lives
@@ -1840,8 +1888,9 @@ for (const c of cards) {
     repairGlyphs(c);
     const mangled = mangledText(c);
     if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+    // A Music deferred sitting is its two booklets, as June's are ("Deferred · Listening", "Deferred · Composing").
     const fileid = deferredCard(SUBJECT_ID, c)
-      ? deferredDoc(SUBJECT_ID, c, 'Exam Paper')
+      ? deferredDoc(SUBJECT_ID, c, SUBJECT_ID === 'music' ? MUSIC_BOOKLET[c.section] : 'Exam Paper')
       : SUBJECT_ID === 'music'
       ? resolveCompanionFileid('music', c.year, c.level, MUSIC_BOOKLET[c.section])
       : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
@@ -1989,7 +2038,7 @@ for (const c of cards) {
    * show them the article. Unresolvable means the card is DROPPED. */
   const unresolvedSource = sources.map((source) => {
     if (!source.sourceLabel) return null;
-    const fileid = deferredCard(SUBJECT_ID, c) && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
+    const fileid = deferredCard(SUBJECT_ID, c) && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german' || SUBJECT_ID === 'music')
       ? deferredDoc(SUBJECT_ID, c, source.sourceLabel)
       : resolveCompanionFileid(
         corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year ?? 2025,
@@ -2093,6 +2142,12 @@ for (const c of cards) {
    * `noScheme` takes this path. */
   if (c.noScheme) {
     const fault = noSchemeFault(c);
+    if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
+  }
+  /* A paper that prices only the question's section (CARD-STANDARD 10i):
+   * held to its shape here, then traced row by row like any card. */
+  if (c.unpricedSection !== undefined || (typeof c.totalMarks === 'number' && c.totalMarks <= 0)) {
+    const fault = unpricedSectionFault(c);
     if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
   }
   // Every marking point must actually appear in its own scheme.
@@ -2256,6 +2311,8 @@ for (const c of cards) {
     ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
     : deferredEntry && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
     ? deferredDoc(SUBJECT_ID, c, listening ? 'Aural Paper' : 'Exam Paper')
+    : deferredEntry && SUBJECT_ID === 'music'
+    ? deferredDoc(SUBJECT_ID, c, MUSIC_BOOKLET[c.section])
     : deferredEntry
     ? (SUBJECT_ID === 'dcg' || SUBJECT_ID === 'biology'
       ? resolvePaperFileid(SUBJECT_ID, year, level, paperSection, 'deferred')
@@ -2278,7 +2335,7 @@ for (const c of cards) {
     id: ${q(c.id)}, topicId: ${q(c.topicId)},${c.additionalTopicIds?.length ? ` additionalTopicIds: ${JSON.stringify(c.additionalTopicIds)},` : ''} conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},${c.questionChoices?.length ? `\n    questionChoices: ${JSON.stringify(c.questionChoices)},` : ''}
-    tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},${c.noScheme ? '\n    noScheme: true,' : ''}
+    tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},${c.noScheme ? '\n    noScheme: true,' : ''}${c.unpricedSection ? `\n    unpricedSection: ${JSON.stringify(c.unpricedSection)},` : ''}
     rows: [
 ${rows}
     ],${c.mathematicsScale ? `\n    mathematicsScale: ${JSON.stringify(c.mathematicsScale)},` : ''}${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.audioMaterial ? `\n    audioMaterial: ${JSON.stringify(c.audioMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.videoMaterial ? `\n    videoMaterial: ${JSON.stringify(c.videoMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}

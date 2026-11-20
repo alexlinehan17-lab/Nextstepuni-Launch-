@@ -9,6 +9,9 @@
   "economics": [],
   "history": [],
   "home-economics": [],
+  "japanese": [
+   "ja-2024-hl-2a-4"
+  ],
   "lcvp": [],
   "maths": [
    "maths-2010-ol-p2-project-q9a-a",
@@ -236,6 +239,29 @@
    "2019|ordinary|LC098GLP000EV.pdf|18",
    "2019|ordinary|LC098GLP000EV.pdf|19",
    "2019|ordinary|LC098GLP000EV.pdf|20"
+  ],
+  "japanese": [
+   "2010|higher|LC058ALPA00EV.pdf|1",
+   "2010|higher|LC058ALPA00EV.pdf|2",
+   "2010|higher|LC058ALPA00EV.pdf|3",
+   "2010|higher|LC058ALPA00EV.pdf|4",
+   "2010|higher|LC058ALPA00EV.pdf|5",
+   "2010|higher|LC058ALPA00EV.pdf|6",
+   "2010|higher|LC058ALPA00EV.pdf|7",
+   "2010|higher|LC058ALPA00EV.pdf|8",
+   "2010|higher|LC058ALPA00EV.pdf|9",
+   "2015|higher|LC058ALPA00EV.pdf|2",
+   "2015|higher|LC058ALPA00EV.pdf|3",
+   "2025|ordinary|LC058GLP000BV.pdf|11",
+   "2025|ordinary|LC058GLP000BV.pdf|12",
+   "2025|ordinary|LC058GLP000BV.pdf|13",
+   "2025|ordinary|LC058GLP000BV.pdf|14",
+   "2025|ordinary|LC058GLP000BV.pdf|15",
+   "2026|ordinary|LC058GLP000BV.pdf|14",
+   "2026|ordinary|LC058GLP000BV.pdf|15",
+   "2026|ordinary|LC058GLP000BV.pdf|16",
+   "2026|ordinary|LC058GLP000BV.pdf|17",
+   "2026|ordinary|LC058GLP000BV.pdf|18"
   ],
   "link-modules": [
    "2010|common|LC462CLP000EV.pdf|1",

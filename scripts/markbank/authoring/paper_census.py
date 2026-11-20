@@ -4297,7 +4297,56 @@ def irish_manifest_files():
     return names
 
 
+# Sittings the SEC never published, for the small languages (Claude queue 5;
+# SOURCES.md item 5, checked 18 Nov 2026): no paper in the SEC's 31 Aug 2026
+# archive listing (the subject is absent from that year's exam-paper list), and
+# where checked live on 18 Nov 2026 the archive address returned 404. Nothing to
+# card: recorded so the census says "not published" and never "unread". A
+# sitting is listed only where neither paper is on disk.
+_LISTING = 'not in the SEC archive listing of 31 Aug 2026 (subject absent from that year\'s exam-paper list)'
+_LIVE404 = _LISTING + '; live check 18 Nov 2026: paper LC{code}ALP000EV.pdf = 404'
+NOT_PUBLISHED = {
+    ('danish', 2013, 'hl'): _LIVE404.format(code='038'),
+    ('danish', 2020, 'hl'): _LISTING,
+    ('danish', 2021, 'hl'): _LISTING,
+    ('danish', 2026, 'hl'): _LIVE404.format(code='038'),
+    ('estonian', 2020, 'hl'): _LISTING,
+    ('estonian', 2026, 'hl'): _LIVE404.format(code='552'),
+    ('finnish', 2017, 'hl'): (_LISTING + '; the SEC published the scheme (markingschemes/2017/LC049ALP000EV.pdf) '
+                              'but not the paper: live check 18 Nov 2026, LC049ALP000EV.pdf, LC049ALP000IV.pdf, '
+                              'LC049AP000EV.pdf = 404'),
+    ('finnish', 2020, 'hl'): _LISTING,
+    ('finnish', 2021, 'hl'): _LISTING,
+    ('finnish', 2026, 'hl'): _LIVE404.format(code='049'),
+    ('maltese', 2020, 'hl'): _LISTING,
+    ('maltese', 2021, 'hl'): _LISTING,
+    ('maltese', 2026, 'hl'): _LIVE404.format(code='557'),
+    ('slovenian', 2020, 'hl'): _LISTING,
+    ('slovenian', 2021, 'hl'): _LISTING,
+    ('slovenian', 2025, 'hl'): _LIVE404.format(code='558'),
+    ('slovenian', 2026, 'hl'): _LIVE404.format(code='558'),
+    ('modern-greek', 2020, 'hl'): _LISTING,
+    ('slovakian', 2020, 'hl'): _LISTING,
+    ('swedish', 2020, 'hl'): _LISTING,
+}
+
+
 def census_subject(subject):
+    """The census, with the subject's never-published sittings recorded beside
+    it (only where NOT_PUBLISHED lists one, so no other subject's result moves)."""
+    result = _census_subject(subject)
+    gone = [{'year': y, 'level': l, 'evidence': e}
+            for (s, y, l), e in sorted(NOT_PUBLISHED.items()) if s == subject]
+    if gone:
+        on_disk = {(p['year'], p['level']) for p in result['papers']}
+        clash = [(g['year'], g['level']) for g in gone if (g['year'], g['level']) in on_disk]
+        if clash:
+            raise ValueError(f'{subject}: listed as never published but a paper is on disk: {clash}')
+        result['notPublished'] = gone
+    return result
+
+
+def _census_subject(subject):
     if subject == 'accounting':
         import importlib.util
         spec = importlib.util.spec_from_file_location('accounting_coverage', os.path.join(ROOT, 'scripts', 'markbank', 'accounting', 'coverage.py'))
