@@ -1,0 +1,581 @@
+{
+ "readingFile": "2023-ol.json",
+ "readBy": "second reader (Opus helper), 19 Nov 2026",
+ "method": "each string compared word for word with a 150 dpi render of the printed page",
+ "booklet": "examiner-reports/music/papers/2023-ol-008-paper.pdf",
+ "pagesRendered": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17
+ ],
+ "crossCheck": "Cross-check only: every string was also searched, character for character, in the booklet's text layer decoded by glyph id (scripts/markbank/glyph_ids.py plus a capitals map read off the renders); every string was found there. The verdicts rest on the renders.",
+ "asks": [
+  {
+   "address": "Q1(a)",
+   "page": 3,
+   "strings": [
+    "The voices in this excerpt are singing",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(b)",
+   "page": 3,
+   "strings": [
+    "The music in this excerpt features",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(c)",
+   "page": 3,
+   "strings": [
+    "Name a recording technique used in this excerpt.",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(d)",
+   "page": 3,
+   "strings": [
+    "Name one instrument which plays the accompaniment in the excerpt.",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(e)",
+   "page": 4,
+   "strings": [
+    "Circle the word in line 3 where the highest note is sung.",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 3, played three times. The lyrics are printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "Figure shows the four lyric lines and (e); the student circles a word in line 3."
+   ]
+  },
+  {
+   "address": "Q1(f)",
+   "page": 4,
+   "strings": [
+    "The drum kit enters for the first time in line 4 at the word",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 3, played three times. The lyrics are printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "Figure shows the lyrics, (e), and (f) with its options."
+   ]
+  },
+  {
+   "address": "Q1(g)",
+   "page": 4,
+   "strings": [
+    "Describe one difference between the music in Excerpt 3 and the music in Excerpt 4. Refer to both excerpts in your answer.",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 3, played once more and Excerpt 4, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(h)",
+   "page": 5,
+   "strings": [
+    "Identify one feature of the guitar music in this excerpt.",
+    "Five excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 5, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(a)",
+   "page": 6,
+   "strings": [
+    "The music in this excerpt is taken from the",
+    "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(b)",
+   "page": 6,
+   "strings": [
+    "The theme heard in this excerpt is the",
+    "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(c)",
+   "page": 6,
+   "strings": [
+    "An instrument playing the theme in this excerpt is the",
+    "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(d)",
+   "page": 7,
+   "strings": [
+    "Identify the two families of instruments playing in this excerpt.",
+    "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(e)",
+   "page": 7,
+   "strings": [
+    "Towards the end of the excerpt the music",
+    "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(a)",
+   "page": 8,
+   "strings": [
+    "Identify the instrument playing in this excerpt.",
+    "An excerpt from Piano Quartet No.1 by Gerald Barry, will be played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(b)",
+   "page": 8,
+   "strings": [
+    "The other three instruments that play in Piano Quartet No.1 by Gerald Barry are",
+    "An excerpt from Piano Quartet No.1 by Gerald Barry, will be played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(c)",
+   "page": 8,
+   "strings": [
+    "The texture of the music in this excerpt is",
+    "An excerpt from Piano Quartet No.1 by Gerald Barry, will be played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(d)",
+   "page": 8,
+   "strings": [
+    "Identify one feature of 20th century music in this excerpt.",
+    "An excerpt from Piano Quartet No.1 by Gerald Barry, will be played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(e)",
+   "page": 9,
+   "strings": [
+    "Describe one difference between the music heard in this excerpt and the music which immediately follows this excerpt in Piano Quartet No.1 by Gerald Barry.",
+    "An excerpt from Piano Quartet No.1 by Gerald Barry, will be played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext checked on page 8 (Question 3 opening); (e) is on page 9."
+   ]
+  },
+  {
+   "address": "Q4(a)",
+   "page": 10,
+   "strings": [
+    "Insert the two missing notes at X on the score. Use the given rhythm.",
+    "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.",
+    "Excerpt 1, played three times. An outline score of the opening four bars of the excerpt is printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(b)",
+   "page": 10,
+   "strings": [
+    "This excerpt is taken from",
+    "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.",
+    "Excerpt 1, played three times. An outline score of the opening four bars of the excerpt is printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "excerptLine is the whole Excerpt 1 heading block on page 10 ('Excerpt 1, played three times.' then 'An outline score of the opening four bars of the excerpt is printed below.'); (b) sits under it, before any other excerpt heading."
+   ]
+  },
+  {
+   "address": "Q4(c)",
+   "page": 10,
+   "strings": [
+    "This excerpt ends with",
+    "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.",
+    "Excerpt 1, played three times. An outline score of the opening four bars of the excerpt is printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "excerptLine as for Q4(b)."
+   ]
+  },
+  {
+   "address": "Q4(d)",
+   "page": 11,
+   "strings": [
+    "Identify two instruments which play in this excerpt.",
+    "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(e)",
+   "page": 11,
+   "strings": [
+    "Describe one similarity or one difference between the music in Excerpt 1 and the music in Excerpt 2.",
+    "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.",
+    "Excerpt 1 and Excerpt 2 once more."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(a)",
+   "page": 12,
+   "strings": [
+    "The instrument playing in this excerpt is the",
+    "You will hear three excerpts, each played three times.",
+    "Excerpt 1."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Irish Music' on its own line (page 12, under 'Question 5') directly above 'You will hear three excerpts, each played three times.'; the file's context starts at 'You will hear'. Every word the file has matches the print. Convention note: every HL reading file keeps this heading (2023-hl: 'Irish Music. Answer A and B. ...'); every OL file drops it, although 2021, 2022, 2024, 2025 and 2026 OL print it too, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(b)",
+   "page": 12,
+   "strings": [
+    "The music in this excerpt features",
+    "You will hear three excerpts, each played three times.",
+    "Excerpt 1."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Irish Music' on its own line (page 12, under 'Question 5') directly above 'You will hear three excerpts, each played three times.'; the file's context starts at 'You will hear'. Every word the file has matches the print. Convention note: every HL reading file keeps this heading (2023-hl: 'Irish Music. Answer A and B. ...'); every OL file drops it, although 2021, 2022, 2024, 2025 and 2026 OL print it too, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(c)",
+   "page": 12,
+   "strings": [
+    "The form of the music in this excerpt is",
+    "You will hear three excerpts, each played three times.",
+    "Excerpt 1."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Irish Music' on its own line (page 12, under 'Question 5') directly above 'You will hear three excerpts, each played three times.'; the file's context starts at 'You will hear'. Every word the file has matches the print. Convention note: every HL reading file keeps this heading (2023-hl: 'Irish Music. Answer A and B. ...'); every OL file drops it, although 2021, 2022, 2024, 2025 and 2026 OL print it too, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(d)(i)",
+   "page": 13,
+   "strings": [
+    "The dance heard in this excerpt is",
+    "You will hear three excerpts, each played three times.",
+    "Excerpt 2."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Irish Music' on its own line (page 12, under 'Question 5') directly above 'You will hear three excerpts, each played three times.'; the file's context starts at 'You will hear'. Every word the file has matches the print. Convention note: every HL reading file keeps this heading (2023-hl: 'Irish Music. Answer A and B. ...'); every OL file drops it, although 2021, 2022, 2024, 2025 and 2026 OL print it too, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(d)(ii)",
+   "page": 13,
+   "strings": [
+    "The time signature of this dance is",
+    "You will hear three excerpts, each played three times.",
+    "Excerpt 2."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Irish Music' on its own line (page 12, under 'Question 5') directly above 'You will hear three excerpts, each played three times.'; the file's context starts at 'You will hear'. Every word the file has matches the print. Convention note: every HL reading file keeps this heading (2023-hl: 'Irish Music. Answer A and B. ...'); every OL file drops it, although 2021, 2022, 2024, 2025 and 2026 OL print it too, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(d)(iii)",
+   "page": 13,
+   "strings": [
+    "A typical bar of rhythm associated with this dance is",
+    "You will hear three excerpts, each played three times.",
+    "Excerpt 2."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Irish Music' on its own line (page 12, under 'Question 5') directly above 'You will hear three excerpts, each played three times.'; the file's context starts at 'You will hear'. Every word the file has matches the print. Convention note: every HL reading file keeps this heading (2023-hl: 'Irish Music. Answer A and B. ...'); every OL file drops it, although 2021, 2022, 2024, 2025 and 2026 OL print it too, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(e)",
+   "page": 13,
+   "strings": [
+    "Name one instrument which plays the melody in this excerpt.",
+    "You will hear three excerpts, each played three times.",
+    "Excerpt 2."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Irish Music' on its own line (page 12, under 'Question 5') directly above 'You will hear three excerpts, each played three times.'; the file's context starts at 'You will hear'. Every word the file has matches the print. Convention note: every HL reading file keeps this heading (2023-hl: 'Irish Music. Answer A and B. ...'); every OL file drops it, although 2021, 2022, 2024, 2025 and 2026 OL print it too, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(f)",
+   "page": 13,
+   "strings": [
+    "Identify one feature of sean nós singing as heard in this excerpt.",
+    "You will hear three excerpts, each played three times.",
+    "Excerpt 3."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Irish Music' on its own line (page 12, under 'Question 5') directly above 'You will hear three excerpts, each played three times.'; the file's context starts at 'You will hear'. Every word the file has matches the print. Convention note: every HL reading file keeps this heading (2023-hl: 'Irish Music. Answer A and B. ...'); every OL file drops it, although 2021, 2022, 2024, 2025 and 2026 OL print it too, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(g)",
+   "page": 13,
+   "strings": [
+    "Describe one feature of the instrumental accompaniment heard in this excerpt.",
+    "You will hear three excerpts, each played three times.",
+    "Excerpt 3."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Irish Music' on its own line (page 12, under 'Question 5') directly above 'You will hear three excerpts, each played three times.'; the file's context starts at 'You will hear'. Every word the file has matches the print. Convention note: every HL reading file keeps this heading (2023-hl: 'Irish Music. Answer A and B. ...'); every OL file drops it, although 2021, 2022, 2024, 2025 and 2026 OL print it too, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(a)",
+   "page": 14,
+   "strings": [
+    "How many full bars of music are heard in the introduction, before the vocalist enters?",
+    "This question is based on five excerpts of music.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Aural Skills' on its own line (page 14, under 'Question 6') directly above 'This question is based on five excerpts of music.'; the file's context starts at 'This question'. Every word the file has matches the print. Convention note: 2023-hl, where the page lays out the same heading the same way, keeps it ('Aural Skills This question is based on five excerpts of music.'); every OL file drops it, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(b)",
+   "page": 14,
+   "strings": [
+    "In this excerpt the piano plays",
+    "This question is based on five excerpts of music.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Aural Skills' on its own line (page 14, under 'Question 6') directly above 'This question is based on five excerpts of music.'; the file's context starts at 'This question'. Every word the file has matches the print. Convention note: 2023-hl, where the page lays out the same heading the same way, keeps it ('Aural Skills This question is based on five excerpts of music.'); every OL file drops it, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(c)",
+   "page": 15,
+   "strings": [
+    "A feature of the vocal music heard in lines 1–4 is",
+    "This question is based on five excerpts of music.",
+    "Excerpt 2, played three times. The lyrics are printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Aural Skills' on its own line (page 14, under 'Question 6') directly above 'This question is based on five excerpts of music.'; the file's context starts at 'This question'. Every word the file has matches the print. Convention note: 2023-hl, where the page lays out the same heading the same way, keeps it ('Aural Skills This question is based on five excerpts of music.'); every OL file drops it, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "excerptLine: the page prints the bold heading 'Excerpt 2, played three times.' and the bullet '• The lyrics are printed below.'; the file joins them. Every word kept."
+   ]
+  },
+  {
+   "address": "Q6(d)",
+   "page": 15,
+   "strings": [
+    "Name one instrument (other than piano) heard playing in lines 5–6.",
+    "This question is based on five excerpts of music.",
+    "Excerpt 2, played three times. The lyrics are printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Aural Skills' on its own line (page 14, under 'Question 6') directly above 'This question is based on five excerpts of music.'; the file's context starts at 'This question'. Every word the file has matches the print. Convention note: 2023-hl, where the page lays out the same heading the same way, keeps it ('Aural Skills This question is based on five excerpts of music.'); every OL file drops it, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "excerptLine as for Q6(c).",
+    "Figure shows the lyrics, (c) with its options, and (d)."
+   ]
+  },
+  {
+   "address": "Q6(e)",
+   "page": 15,
+   "strings": [
+    "The piano music at the end of line 6 features",
+    "This question is based on five excerpts of music.",
+    "Excerpt 2, played three times. The lyrics are printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Aural Skills' on its own line (page 14, under 'Question 6') directly above 'This question is based on five excerpts of music.'; the file's context starts at 'This question'. Every word the file has matches the print. Convention note: 2023-hl, where the page lays out the same heading the same way, keeps it ('Aural Skills This question is based on five excerpts of music.'); every OL file drops it, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "excerptLine as for Q6(c).",
+    "Figure shows the lyrics, (c), (d) with its answer box, and (e) with its options."
+   ]
+  },
+  {
+   "address": "Q6(f)",
+   "page": 16,
+   "strings": [
+    "The instrument playing the melody at the start of the excerpt is the",
+    "This question is based on five excerpts of music.",
+    "Excerpt 3, played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Aural Skills' on its own line (page 14, under 'Question 6') directly above 'This question is based on five excerpts of music.'; the file's context starts at 'This question'. Every word the file has matches the print. Convention note: 2023-hl, where the page lays out the same heading the same way, keeps it ('Aural Skills This question is based on five excerpts of music.'); every OL file drops it, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(g)",
+   "page": 16,
+   "strings": [
+    "Name another instrument heard playing in this excerpt.",
+    "This question is based on five excerpts of music.",
+    "Excerpt 3, played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Aural Skills' on its own line (page 14, under 'Question 6') directly above 'This question is based on five excerpts of music.'; the file's context starts at 'This question'. Every word the file has matches the print. Convention note: 2023-hl, where the page lays out the same heading the same way, keeps it ('Aural Skills This question is based on five excerpts of music.'); every OL file drops it, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(h)",
+   "page": 16,
+   "strings": [
+    "The missing notes at X on the score are",
+    "This question is based on five excerpts of music.",
+    "Excerpt 4, played three times. An outline score is printed below."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Aural Skills' on its own line (page 14, under 'Question 6') directly above 'This question is based on five excerpts of music.'; the file's context starts at 'This question'. Every word the file has matches the print. Convention note: 2023-hl, where the page lays out the same heading the same way, keeps it ('Aural Skills This question is based on five excerpts of music.'); every OL file drops it, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true,
+   "notes": [
+    "Figure shows the Excerpt 4 heading, the outline score (bars 1-7), (h) and its three printed options."
+   ]
+  },
+  {
+   "address": "Q6(i)",
+   "page": 17,
+   "strings": [
+    "From your prescribed works, select the work which most closely resembles the music heard in this excerpt. Give a reason for your choice.",
+    "This question is based on five excerpts of music.",
+    "Excerpt 5, played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "questionContext: missing words. The page prints the bold heading 'Aural Skills' on its own line (page 14, under 'Question 6') directly above 'This question is based on five excerpts of music.'; the file's context starts at 'This question'. Every word the file has matches the print. Convention note: 2023-hl, where the page lays out the same heading the same way, keeps it ('Aural Skills This question is based on five excerpts of music.'); every OL file drops it, and the 2025-ol second-reader record passed the omission."
+   ],
+   "figureShowsAsk": true
+  }
+ ],
+ "resolutions": [
+  "Q5 and Q6: the 18 flagged contexts now open with the printed section heading (\"Irish Music\", \"Aural Skills\") (lane lead, 19 Nov)."
+ ]
+}

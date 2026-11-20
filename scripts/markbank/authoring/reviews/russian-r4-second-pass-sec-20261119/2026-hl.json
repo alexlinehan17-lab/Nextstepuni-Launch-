@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-19T11:21:50.085526+00:00",
+  "archive": {
+    "year": 2026,
+    "level": "hl",
+    "url": "https://www.examinations.ie/archive/markingschemes/2026/LC099ALP000EV.pdf",
+    "checkedAt": "2026-11-19T10:57:00Z",
+    "downloadDone": true,
+    "method": "Native Chrome download; Done observed in transcript",
+    "bytes": 456315,
+    "sha256": "e56810faf2cb2b34e30216c07b4ff771d1cc6f99b91fb6fcf1d47d045d8265be",
+    "retainedSha256": "e56810faf2cb2b34e30216c07b4ff771d1cc6f99b91fb6fcf1d47d045d8265be",
+    "exactMatch": true,
+    "freshDownloadVerified": true,
+    "localFile": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/stale-exclusions-20261119/sec-recheck/2026-hl.pdf"
+  },
+  "cards": [
+    {
+      "id": "ru-2026-hl-se",
+      "printedMarks": 30,
+      "schemePages": [
+        13,
+        14
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2026-hl.pdf",
+      "schemeSha256": "e56810faf2cb2b34e30216c07b4ff771d1cc6f99b91fb6fcf1d47d045d8265be",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2026-hl.json",
+      "finding": "The scheme prints the task and marking criteria/grid, but no model answer or indicative answer content.",
+      "fixedLine": "The scheme prints no answer for this part."
+    },
+    {
+      "id": "ru-2026-hl-gw",
+      "printedMarks": 40,
+      "schemePages": [
+        15,
+        16,
+        17
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2026-hl.pdf",
+      "schemeSha256": "e56810faf2cb2b34e30216c07b4ff771d1cc6f99b91fb6fcf1d47d045d8265be",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2026-hl.json",
+      "finding": "The scheme prints the task and marking criteria/grid, but no model answer or indicative answer content.",
+      "fixedLine": "The scheme prints no answer for this part."
+    }
+  ],
+  "rule": "R4; CARD-STANDARD sections 3, 5 and 10a",
+  "sourceReview": "Complete relevant scheme pages read; handwriting pages also visually inspected. No model answers removed.",
+  "sourceBranch": "wip/russian-2026-11-19",
+  "liveCardsChanged": false
+}

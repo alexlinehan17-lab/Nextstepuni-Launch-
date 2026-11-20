@@ -826,6 +826,12 @@ export interface PclmRubric {
    */
   indicativeMaterial?: string[];
   indicativeMaterialNote: string;
+  /**
+   * Set only on a task its scheme sets out no block for (a deferred scheme is "finalised for the questions
+   * attempted by the candidates"). The card shows UNPRINTED_ANSWER, then this citation of the scheme's general
+   * criteria and printed grid the task is marked on, so the student knows why there are no task-specific points.
+   */
+  unprintedAnswer?: { citation: string };
 }
 
 export type IrishGuidanceKind =
@@ -1451,6 +1457,24 @@ export interface FrenchCriterion {
    *  printed rule; absent on every card that prints none, and those score
    *  exactly as before (frenchCriterionMark). */
   lowerScale?: FrenchLowerScale;
+  /** A line the scheme marks by COUNTING items at a printed rate, beside its
+   *  bands: Music Composing Section B, "0.5 mark per correct bass note under
+   *  each chord symbol (0.5 X 20)", "1 mark for each chord that is part of a
+   *  good progression in all chord boxes". The student counts the items they
+   *  got right, 0 to `items`, and the line earns count x `rate`; so
+   *  `permittedMarks` are exactly those products and `maxMarks` is
+   *  `items` x `rate`. The label is the scheme's rate line, verbatim. Set only
+   *  from a printed rate; absent on every other criterion, which scores
+   *  exactly as before (the stored mark is a product in permittedMarks). */
+  counted?: FrenchCountedLine;
+}
+
+/** See FrenchCriterion.counted. */
+export interface FrenchCountedLine {
+  /** Marks per item, as printed ("0.5 mark per", "1 mark for each"). */
+  rate: number;
+  /** How many items the question prints (the "X 20" of "0.5 X 20"). */
+  items: number;
 }
 
 /** See FrenchCriterion.lowerScale. Every string is the scheme's own. */
@@ -2446,10 +2470,24 @@ export function tariffReconciles(card: SecCard): boolean {
         && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
         && criteria.every(criterion => {
           const allowed = criterion.permittedMarks;
+          // A line counted at a printed rate: every count from 0 to the items,
+          // each at the rate, making the line's marks; no bands of its own.
+          if (criterion.counted) {
+            const { rate, items } = criterion.counted;
+            return rate > 0 && Number.isInteger(items) && items > 0 && !criterion.bands
+              && rate * items === criterion.maxMarks
+              && allowed.length === items + 1 && allowed.every((mark, index) => mark === index * rate);
+          }
+          // A Music band line may print a half-mark top ("8 – 9.5"): its ladder is
+          // every whole mark below that top and the top itself, nothing else.
+          const halfTop = card.subjectId === 'music' && !Number.isInteger(criterion.maxMarks)
+            && Number.isInteger(criterion.maxMarks * 2)
+            && allowed.length === Math.floor(criterion.maxMarks) + 2
+            && allowed.every((mark, index) => mark === (index <= Math.floor(criterion.maxMarks) ? index : criterion.maxMarks));
           if (!allowed.length || Math.min(...allowed) !== 0
             || Math.max(...allowed) !== criterion.maxMarks
             || new Set(allowed).size !== allowed.length
-            || allowed.some(mark => !Number.isInteger(mark) || mark < 0)) return false;
+            || allowed.some(mark => (!Number.isInteger(mark) && !(halfTop && mark === criterion.maxMarks)) || mark < 0)) return false;
           if (!criterion.bands) return true;
           const marks = criterion.bands.flatMap(band => band.marks);
           return marks.length === allowed.length && new Set(marks).size === marks.length

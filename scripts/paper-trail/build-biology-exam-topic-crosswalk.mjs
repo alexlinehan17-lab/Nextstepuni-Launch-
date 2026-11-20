@@ -47,7 +47,13 @@ const reviewed2026 = JSON.parse(fs.readFileSync(REVIEWED_2026_PATH, 'utf8'));
 const reviewedEarlier = new Map(REVIEWED_EARLIER_YEARS
   .filter(year => fs.existsSync(reviewedMapPath(year)))
   .map(year => [year, JSON.parse(fs.readFileSync(reviewedMapPath(year), 'utf8'))]));
-const localPapers = JSON.parse(fs.readFileSync(TAGS_PATH, 'utf8'));
+// The tags file also holds the carded deferred booklets ("…-deferred.pdf",
+// scripts/paper-trail/biology_deferred.py), checked below against their own
+// anchors and reviewed maps; every June check reads the June papers alone.
+const tagPapers = JSON.parse(fs.readFileSync(TAGS_PATH, 'utf8'));
+const isDeferredPaper = paper => /-deferred\.pdf$/i.test(paper.fileid);
+const localPapers = tagPapers.filter(paper => !isDeferredPaper(paper));
+const deferredTagPapers = tagPapers.filter(isDeferredPaper);
 const preservationBaseline = JSON.parse(fs.readFileSync(BASELINE_PATH, 'utf8'));
 
 const VARIANTS = [
@@ -114,7 +120,7 @@ for (const [year, map] of reviewedEarlier) {
 const paperIdentity = paper => [
   paper.level, paper.lang, paper.year, paper.paperKey, paper.fileid,
 ].join('|');
-const localPaperIds = localPapers.map(paperIdentity);
+const localPaperIds = tagPapers.map(paperIdentity);
 const duplicatePaperIds = localPaperIds.filter(
   (identity, index) => localPaperIds.indexOf(identity) !== index,
 );
@@ -254,8 +260,45 @@ const englishPaper = (level, year, number) => {
   return candidates[0] ?? null;
 };
 
+/* The SEC's deferred sittings, carded (scripts/markbank/authoring/
+ * bio_review_<year>_<level>_deferred.py, data/examTopics/biology-<year>-
+ * deferred-exam-topic-map.json). Each booklet is its own paper,
+ * "LC025ALP038EV-deferred.pdf" (Sections A and B) and
+ * "LC025ALP040EV-deferred.pdf" (Section C), numbered as June's, its anchors in
+ * public/paper-anchors/<year>/ (scripts/paper-trail/biology_deferred.py). A
+ * carded sitting's "Deferred Exam Paper" reference headings now match its own
+ * questions, which join on that file id (deferredQuestionMappings, as
+ * Engineering's do), never on June's year and number. */
+const DEFERRED_YEARS = [2022, 2023, 2024, 2025];
+const deferredMapPath = year => path.join(
+  ROOT, `data/examTopics/biology-${year}-deferred-exam-topic-map.json`,
+);
+const reviewedDeferred = new Map(DEFERRED_YEARS
+  .filter(year => fs.existsSync(deferredMapPath(year)))
+  .map(year => [year, JSON.parse(fs.readFileSync(deferredMapPath(year), 'utf8'))]));
+const cardedDeferred = new Set();
+for (const [year, map] of reviewedDeferred) {
+  if (map.year !== year) throw new Error(`Reviewed ${year} deferred Biology map names year ${map.year}`);
+  for (const [key, topicIds] of Object.entries(map.questions)) {
+    if (!/^(higher|ordinary)\|(?:[1-9]|1[0-7])$/.test(key)) {
+      throw new Error(`Invalid reviewed ${year} deferred identity: ${key}`);
+    }
+    for (const id of topicIds) {
+      if (!topicIndex.has(id)) throw new Error(`Unknown reviewed ${year} deferred topic: ${id}`);
+      if (!id.startsWith(`biology-${key.split('|')[0]}-`)) {
+        throw new Error(`Reviewed ${year} deferred ${key} topic ${id} is for the other level`);
+      }
+    }
+    cardedDeferred.add(`${key.split('|')[0]}|${year}`);
+  }
+}
+const deferredFileid = (level, number) => (
+  `LC025${level === 'higher' ? 'A' : 'G'}LP${Number(number) <= 10 ? '038' : '040'}EV-deferred.pdf`
+);
+
 const associations = [];
 const exactTopicsByCard = new Map();
+const deferredExactTopics = new Map();
 for (const topic of allTopics) {
   for (const heading of topic.officialQuestionHeadings) {
     const parsed = parseHeading(heading);
@@ -271,6 +314,34 @@ for (const topic of allTopics) {
       parsed.sitting === 'main'
       && targets.length === parsed.questionNumbers.length
     );
+    if (parsed.sitting === 'deferred' && cardedDeferred.has(`${topic.level}|${parsed.year}`)) {
+      for (const number of parsed.questionNumbers) {
+        const key = [topic.level, parsed.year, number].join('|');
+        const indexes = deferredExactTopics.get(key) ?? [];
+        const index = topicIndex.get(topic.id);
+        if (!indexes.includes(index)) indexes.push(index);
+        deferredExactTopics.set(key, indexes);
+      }
+      associations.push({
+        topicId: topic.id,
+        variant: topic.variant,
+        level: topic.level,
+        course: topic.course,
+        heading,
+        ...parsed,
+        paperKey: 'single',
+        resolution: 'matched',
+        targets: parsed.questionNumbers.map(number => ({
+          level: topic.level,
+          lang: 'ev',
+          year: parsed.year,
+          paperKey: 'single',
+          fileid: deferredFileid(topic.level, number),
+          questionNumber: number,
+        })),
+      });
+      continue;
+    }
 
     if (fullyMatched) {
       for (const target of targets) {
@@ -396,6 +467,55 @@ for (const paper of logicalEnglishPapers) {
       });
     }
   }
+}
+
+// Every printed question of a carded deferred sitting, from its anchor map:
+// the reference's deferred headings for it, and the topics its reviewed cards
+// need. A sitting whose reviewed map and printed questions disagree stops the
+// build.
+const deferredQuestionMappings = [];
+for (const [year, map] of reviewedDeferred) {
+  for (const level of ['higher', 'ordinary']) {
+    const keys = Object.keys(map.questions).filter(key => key.startsWith(`${level}|`));
+    if (!keys.length) continue;
+    const printed = [];
+    for (const part of ['038', '040']) {
+      const fileid = `LC025${level === 'higher' ? 'A' : 'G'}LP${part}EV-deferred.pdf`;
+      const hostedPath = path.join(HOSTED_ROOT, String(year), `${fileid}.json`);
+      if (!fs.existsSync(hostedPath)) {
+        throw new Error(`${year} ${level} deferred Biology: missing ${hostedPath}`);
+      }
+      const hosted = JSON.parse(fs.readFileSync(hostedPath, 'utf8'));
+      const expected = expectedNumbers({ year, fileid });
+      if (hosted.paperOnly !== 1 || JSON.stringify(hosted.q.map(question => question.n)) !== JSON.stringify(expected)) {
+        throw new Error(`${hostedPath}: deferred identities do not match the printed questions`);
+      }
+      for (const question of hosted.q) {
+        const ids = map.questions[`${level}|${question.n}`];
+        if (!ids) throw new Error(`${year} ${level} deferred Biology Q${question.n}: no reviewed mapping`);
+        const exact = deferredExactTopics.get([level, year, question.n].join('|')) ?? [];
+        const indexes = [...new Set([...exact, ...ids.map(id => topicIndex.get(id))])];
+        if (!indexes.length || indexes.some(index => index === undefined)) {
+          throw new Error(`${year} ${level} deferred Biology Q${question.n}: empty or invalid topic mapping`);
+        }
+        deferredQuestionMappings.push([level === 'higher' ? 'h' : 'o', year - 2000, fileid, question.n, indexes]);
+        printed.push(question.n);
+      }
+    }
+    if (printed.length !== keys.length) {
+      throw new Error(`${year} ${level} deferred Biology: ${keys.length} reviewed questions, ${printed.length} printed`);
+    }
+    const tagged = deferredTagPapers
+      .filter(paper => paper.year === year && paper.level === level && paper.lang === 'ev')
+      .flatMap(paper => paper.q.map(question => question.n));
+    if (JSON.stringify(tagged) !== JSON.stringify(printed)) {
+      throw new Error(`${year} ${level} deferred Biology: topic tags ${tagged.join(',')} != printed ${printed.join(',')}`);
+    }
+  }
+}
+
+if (deferredTagPapers.reduce((sum, paper) => sum + paper.q.length, 0) !== deferredQuestionMappings.length) {
+  throw new Error('Biology deferred topic tags name a sitting that is not carded');
 }
 
 const reported = allTopics.reduce(
@@ -538,6 +658,9 @@ const runtime = {
   partReferences: compactPartReferences,
   // [h/o, year-2000, printed question, topic indexes], shared by EV/IV.
   questionMappings,
+  // The SEC's deferred sittings, carded: [h/o, year-2000, booklet file id,
+  // printed question, topic indexes].
+  ...(deferredQuestionMappings.length ? { deferredQuestionMappings } : {}),
 };
 
 const matchedAssociations = associations.filter(
@@ -571,6 +694,7 @@ const localCrosswalk = {
     localPaperVariants: localPapers.length,
     localPhysicalCards: physicalCards,
     localLogicalQuestions: questionMappings.length,
+    ...(deferredQuestionMappings.length ? { deferredLogicalQuestions: deferredQuestionMappings.length } : {}),
     preservedBaselineVariants: preservationBaseline.length,
     preservedBaselineTasks,
     corrected2019To2020SectionCCardIds: correctedBaselineIds,

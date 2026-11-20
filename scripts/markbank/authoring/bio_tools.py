@@ -25,6 +25,11 @@ checks a ledger before `bio_review.py <year> <level> --write`.
   python3 bio_tools.py identity [YEAR-LEVEL ...]    re-run --write for every reviewed sitting (except those
                                                     named) and report whether the bank comes back byte-identical
 
+A deferred sitting is named by its level token with "-deferred" (2022 hl-deferred): its ledger is
+bio_review_<year>_<level>_deferred.py, its Atlas map biology-<year>-deferred-exam-topic-map.json (topics
+from the reference's "Deferred Exam Paper" headings), its scheme the deferredmarkingschemes/ PDF and its
+markdown examiner-reports/biology/schemes/<year>-<level>-deferred.md.
+
 Output (sheets, crops, montages) goes to $BIO_REVIEW_OUT, default
 <tmpdir>/bio-review. Run from anywhere; paths resolve from this file.
 """
@@ -51,7 +56,12 @@ def _pages(spec):
 
 
 def _ledger(year, level):
-    return importlib.import_module(f'bio_review_{year}_{level}')
+    return importlib.import_module(f'bio_review_{year}_{level.replace("-", "_")}')
+
+
+def _base(level):
+    """'hl' for 'hl' and 'hl-deferred': the level the runner takes."""
+    return level.split('-')[0]
 
 
 def cmd_dump(path, pages):
@@ -131,7 +141,7 @@ def cmd_existing(year, level):
     authored = json.load(open(os.path.join(ROOT, 'scripts/markbank/authored/biology.json')))
     cards = authored['cards'] if isinstance(authored, dict) else authored
     deck = open(os.path.join(ROOT, 'components/MarkBank/cards/biology',
-                             ('higher' if level == 'hl' else 'ordinary') + '.ts')).read()
+                             ('higher' if level.startswith('hl') else 'ordinary') + '.ts')).read()
     shipped = set(re.findall(rf'^\s*id: "({tag}[^"]*)"', deck, re.M))
     bind = json.load(open(os.path.join(ROOT, 'scripts/markbank/card-source-bindings.json'))).get('biology', {})
     corr = json.load(open(os.path.join(ROOT, 'scripts/markbank/card-corrections.json'))).get('biology', {})
@@ -158,7 +168,7 @@ def cmd_existing(year, level):
 def _build(year, level):
     import bio_review as R
     L = _ledger(int(year), level)
-    return L, R.build(L, int(year), level)
+    return L, R.build(L, int(year), _base(level))
 
 
 def cmd_cards(year, level):
@@ -200,7 +210,7 @@ def cmd_pointers(year, level):
 def cmd_crops(year, level, *only):
     import bio_review as R
     L = _ledger(int(year), level)
-    _, recs = R.figures(L, R.Lifter(L), int(year), level, False)
+    _, recs = R.figures(L, R.Lifter(L), int(year), _base(level), False)
     d = os.path.join(OUT, 'crops')
     os.makedirs(d, exist_ok=True)
     for k, png in recs:
@@ -253,6 +263,8 @@ def cmd_topics(year, level, adds='', *flags):
     if adds == '--replace':
         adds, flags = '', ('--replace',) + flags
     year = int(year)
+    deferred = level.endswith('-deferred')
+    level = _base(level)
     word = {'hl': 'higher', 'ol': 'ordinary'}.get(level, level)
     full = lambda t: t if t.startswith('biology-') else f'biology-{word}-new-course-{t}'
     extra, drop = {}, {}
@@ -267,16 +279,23 @@ def cmd_topics(year, level, adds='', *flags):
     for var in (f'{word}-new-course', f'{word}-old-course'):
         for t in ref_doc['variants'][var]['topics']:
             for h in t.get('officialQuestionHeadings', []):
-                m = re.search(r'Question\s+(\d+)', h) if h.startswith(f'{year} ') else None
+                # A deferred sitting takes only the reference's "Deferred Exam Paper" headings.
+                ok = h.startswith(f'{year} ') and (not deferred or 'Deferred Exam Paper' in h)
+                m = re.search(r'Question\s+(\d+)', h) if ok else None
                 if m and t['id'] not in ref[int(m.group(1))]:
                     ref[int(m.group(1))].append(t['id'])
-    path = os.path.join(ROOT, f'data/examTopics/biology-{year}-exam-topic-map.json')
+    path = os.path.join(ROOT, f'data/examTopics/biology-{year}{"-deferred" if deferred else ""}-exam-topic-map.json')
     doc = json.load(open(path)) if os.path.exists(path) else {
         'schemaVersion': 1, 'subjectId': 'biology', 'year': year, 'authority': 'State Examinations Commission',
+        **({'sitting': 'deferred'} if deferred else {}),
         'scope': 'Top-level question-to-reference-topic mapping reviewed directly from the official English paper '
-                 'booklets and marking schemes, task by task (scripts/markbank/authoring/bio_review_'
-                 f'{year}_<level>.py). Each question keeps every topic the factual reference snapshot already gave '
-                 'it and gains the topics its reviewed tasks need.', 'questions': {}}
+                 + ('booklets of the deferred sitting (deferredexams/) and its marking scheme, task by task '
+                    f'(scripts/markbank/authoring/bio_review_{year}_<level>_deferred.py). Each question keeps every '
+                    'topic the factual reference snapshot gives its "Deferred Exam Paper" heading and gains the '
+                    'topics its reviewed tasks need.' if deferred else
+                    'booklets and marking schemes, task by task (scripts/markbank/authoring/bio_review_'
+                    f'{year}_<level>.py). Each question keeps every topic the factual reference snapshot already gave '
+                    'it and gains the topics its reviewed tasks need.'), 'questions': {}}
     before = {k: v for k, v in doc['questions'].items() if k.startswith(f'{word}|')}
     for q in range(1, 18):
         if not ref[q] and not extra.get(q):
@@ -343,8 +362,13 @@ def cmd_scheme_md(year, level):
     import importlib.util
     import subprocess
     mb = os.path.join(ROOT, 'scripts', 'markbank')
-    pdf = os.path.join(ROOT, 'examiner-reports', 'biology', 'schemes', f'{year}-{level}.pdf')
-    md = pdf[:-4] + '.md'
+    if level.endswith('-deferred'):
+        letter = 'A' if level.startswith('hl') else 'G'
+        pdf = os.path.join(ROOT, 'paper-trail-corpus', 'deferredmarkingschemes', str(year), f'LC025{letter}LP000EV.pdf')
+        md = os.path.join(ROOT, 'examiner-reports', 'biology', 'schemes', f'{year}-{level}.md')
+    else:
+        pdf = os.path.join(ROOT, 'examiner-reports', 'biology', 'schemes', f'{year}-{level}.pdf')
+        md = pdf[:-4] + '.md'
 
     def load(path, name):
         spec = importlib.util.spec_from_file_location(name, path)
@@ -395,7 +419,7 @@ CLIP_READS = type('ClipReads', (), {'START': '<!-- markbank:clip-reads -->',
 def _clip_reads(year, level):
     import bio_review as R
     L = _ledger(int(year), level)
-    lifter = R.build(L, int(year), level)[0]
+    lifter = R.build(L, int(year), _base(level))[0]
     specs = []
 
     def walk(x):

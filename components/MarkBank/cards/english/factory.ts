@@ -287,6 +287,8 @@ interface PublishedEnglishCard {
   atlas: { fileid: string; n: string };
   /** Indicative bullets lifted verbatim from the card's scheme page (bridge ledger). */
   indicativeMaterial?: string[];
+  /** A deferred task its scheme sets out no block for (english_publish.py, from the reviewed ledgers). */
+  schemeOmitsTask?: true;
 }
 
 export interface PublishedEnglishManifest {
@@ -429,7 +431,9 @@ const makePublishedCard = (
   totalMarks: card.totalMarks,
   schemeCitation:
     `SEC English ${card.level === 'higher' ? 'Higher' : 'Ordinary'} Level marking scheme ` +
-    `${card.year}, ${pageList(card.schemePages)} — © State Examinations Commission.`,
+    `${card.year}, ${pageList(card.schemePages)}` +
+    // A deferred sitting's own scheme (paperFileid "LC002ALP100EV-deferred"), named as every deferred card names it.
+    `${card.paperFileid.endsWith('-deferred') ? ', deferred examination' : ''} — © State Examinations Commission.`,
   specVersion: 'english:outgoing',
   qa: {
     gates: ['verbatim-paper-prompt', 'independent-paper-review', 'paper-gate', 'printed-year-grid', 'indicative-not-checklist'],
@@ -442,6 +446,10 @@ const makePublishedCard = (
     assessment: publishedAssessment(card, grids),
     ...(card.indicativeMaterial?.length ? { indicativeMaterial: card.indicativeMaterial } : {}),
     indicativeMaterialNote: INDICATIVE_NOTE,
+    // A task the deferred scheme sets out no block for: the fixed line, then where its marks come from.
+    ...(card.schemeOmitsTask ? { unprintedAnswer: {
+      citation: `Marked on the scheme’s general criteria for assessment and its printed grid (${pageList(card.schemePages)}).`,
+    } } : {}),
   },
 });
 

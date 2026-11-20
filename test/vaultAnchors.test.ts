@@ -76,8 +76,11 @@ describe('audited hosted answer maps', () => {
     // (2010–2026 English Higher and Ordinary, plus the reviewed Irish editions),
     // and one reviewed English map per paper published by english_publish.py
     // (all 68 English-version papers 2010–2026, legacy papers bridged).
+    // and, from 2026-11-19, one per published deferred-sitting paper (2025, 2024 and 2023 Higher, 2024 Ordinary; P1 and P2).
     const englishPapers = publishedEnglishHigher.papers.length + publishedEnglishOrdinary.papers.length;
-    expect(englishPapers).toBe(68);
+    const englishDeferred = [...publishedEnglishHigher.papers, ...publishedEnglishOrdinary.papers]
+      .filter(paper => paper.paperId.includes('-deferred-')).length;
+    expect([englishPapers - englishDeferred, englishDeferred]).toEqual([68, 12]);
     const originalOverrides = [...HOSTED_ANSWER_OVERRIDES].filter(key => key.startsWith('art|')
       || key.startsWith('physics|') || key.startsWith('agricultural-science|') || key.startsWith('english|'));
     expect(originalOverrides).toHaveLength(61 + englishPapers);

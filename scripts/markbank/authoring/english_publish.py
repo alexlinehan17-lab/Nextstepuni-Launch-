@@ -98,7 +98,8 @@ def verify_grids(grids, records):
         schemes.setdefault((record['year'], record['level']), set()).add(
             (record['markingScheme']['path'], record['markingScheme']['sha256']))
     for key, sitting in grids['sittings'].items():
-        year, level = key.split('-')
+        # "<year>-<level>" for June, "<year>-<level>-deferred" for the deferred sitting's own scheme.
+        year, level = key.split('-')[:2]
         bound = schemes.get((int(year), level), set())
         if (sitting['scheme'], sitting['schemeSha256']) not in bound:
             raise ValueError('Marking grid bound to a different scheme: ' + key)
@@ -155,8 +156,13 @@ def stem_for(task):
     return stem or None
 
 
+def sitting_key_for(record):
+    """The marking-grid sitting of a paper: June's year and level, or its deferred sitting's own scheme."""
+    return f'{record["year"]}-{record["level"]}' + ('-deferred' if record.get('sitting') == 'deferred' else '')
+
+
 def card_record(route, record, review, grids):
-    sitting_key = f'{record["year"]}-{record["level"]}'
+    sitting_key = sitting_key_for(record)
     if sitting_key not in grids['sittings']:
         raise ValueError('No transcribed marking grid for ' + sitting_key)
     card = {
@@ -179,6 +185,10 @@ def card_record(route, record, review, grids):
         card['choiceParentId'] = route['choiceParentId']
         card['choiceLabel'] = route['choiceRoute']['label']
     card['schemePages'] = review['schemePages']
+    if route.get('schemeAbsent'):
+        # A deferred task its scheme sets out no block for: the card shows UNPRINTED_ANSWER and the
+        # general criteria and grid pages it is marked on (coordinator ruling, 2026-11-19).
+        card['schemeOmitsTask'] = True
     card['assessment'] = assessment_for(route, review, sitting_key, grids)
     card['paperFileid'] = record['paperFileid'].removesuffix('.pdf')
     card['atlas'] = {'fileid': record['paperFileid'], 'n': str(route['atlasParent'])}
@@ -207,7 +217,9 @@ def legacy_additional_sources(bridged=frozenset()):
     aggregated = {}
     for task_id, attachment in sorted(attachments.items()):
         extra = attachment.get('additionalSources') or []
-        paper_id = re.match(r'^(english-\d{4}-(?:hl|ol)-p[12])-', task_id).group(1)
+        # A deferred task ("english-2025-hl-deferred-p1-...") is never a legacy paper's.
+        match = re.match(r'^(english-\d{4}-(?:hl|ol)-p[12])-', task_id)
+        paper_id = match.group(1) if match else None
         if not extra or paper_id not in papers or paper_id in bridged:
             continue
         parent = next((cid for cid in legacy_ids if task_id == cid or task_id.startswith(cid + '-')), None)
@@ -420,7 +432,11 @@ def publish():
     published, refused, cards = [], [], {'higher': [], 'ordinary': []}
     for record in sorted(records, key=lambda r: (-r['year'], r['level'], r['paper'])):
         key = record['id']
-        entry = visual[key]
+        entry = visual.get(key)
+        if entry is None:
+            # A paper with no visual review entry at all (a deferred sitting not yet reviewed).
+            refused.append({'paperId': key, 'reason': 'no visual review entry'})
+            continue
         if key in legacy and key not in bridges:
             refused.append({'paperId': key, 'reason': 'served by legacy runtime cards; no legacy bridge'})
             continue

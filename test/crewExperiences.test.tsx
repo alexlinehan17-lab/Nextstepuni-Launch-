@@ -15,7 +15,13 @@ describe('subject carousel', () => {
     expect(container.querySelectorAll('.lsc-peek')).toHaveLength(2);
     const subject = screen.getByRole('combobox', { name: 'Jump to a subject' });
     fireEvent.change(subject, { target: { value: 'biology' } });
-    expect(screen.getByLabelText('Biology resources')).toHaveTextContent('5,540');
+    // Read from the generated showcase (scripts/build-subject-showcase.mjs), so carding a sitting moves no pin here.
+    const biology = catalogue.find(item => item.id === 'biology')!;
+    expect(biology.markBankCards).toBeGreaterThan(0);
+    expect(screen.getByLabelText('Biology resources'))
+      .toHaveTextContent(biology.markBankCards.toLocaleString('en-IE'));
+    expect(screen.getByLabelText('Biology resources'))
+      .toHaveTextContent(biology.atlasQuestions.toLocaleString('en-IE'));
     const lc = catalogue.filter(item => item.cycle === 'lc');
     fireEvent.change(subject, { target: { value: lc[0].id } });
     fireEvent.click(screen.getByRole('button', { name: 'Previous subject' }));
