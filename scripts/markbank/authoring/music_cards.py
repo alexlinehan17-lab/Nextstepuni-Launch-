@@ -389,7 +389,8 @@ def point_card(s, a, atlas):
     topic = a['topicId']
     atlas.check(s, a, topic)
     card = {'id': cid, 'subjectId': 'music', 'level': s.level, 'year': s.year,
-            'section': {'listening': 'L', 'composing': 'A', 'elective': 'E'}[a['paper']],
+            # a composing point card (a deferred question its scheme leaves unmarked) keeps its printed section
+            'section': a['address'][8] if a['paper'] == 'composing' else {'listening': 'L', 'elective': 'E'}[a['paper']],
             'topicId': topic, 'conceptId': music_2025.concept(a.get('conceptText') or question), 'questionRef': s.ref(a),
             'questionText': question, 'totalMarks': a['marks'],
             'sourceMaterial': source_for(s, a, f'{BOOKLET[a["paper"]]} — Question {q}')}
