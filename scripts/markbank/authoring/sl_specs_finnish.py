@@ -668,3 +668,677 @@ SPECS[2016] = [
       question=QP(4, ESSAY_2016, Run('2. ”Maailma', 'kestävämpää'), 'Fintan O’Toole',
                   Run('Pohdi väitettä', 'kehityksestä huolehtiminen'))),
 ]
+
+
+# ====================================================================== 2018
+# ================================================================ 2018 HL ===
+# Drafted (small-languages lane, 20 Nov): the six open asks of this sitting,
+# I3, I4, I5, II1, III1, III2. Live: I1a-e, I2, I6 (7 cards); not touched
+# (audited: see finnish-live-faults-2018-2025.json).
+# Paper (rendered pp2-4): the rule "Ohje: Vastaa kaikkiin kolmeen tehtävään
+# suomeksi. ..." (p2 y65); "TEKSTI" (p2 y168), the source line, the title
+# "Suomi vuonna 2025" (p2 y234) and paragraphs (1)-(5) on p2, (5) running on
+# to p3, the head "Keskusteleva koulu" (p3 y182), (6)-(10) to "(--)" p3 y702:
+# the reading text runs pp2-3. p4 holds only the questions: "I Tehtävä" /
+# "(30/100)" (p4 y65); Q1 a.-e. with "(5 x 1)" at the right of e. (y212);
+# Q2-Q6 "(5)" each at the end of the question's last line; "II Tehtävä" /
+# "(30/100)" (y476); "III Tehtävä" / "(40/100)" (y608), "Kirjoita noin 300
+# sanan essee. Valitse aiheeksesi toinen näistä." over two titles numbered
+# "1." / "2." joined by "Tai": cited Section III Q1/Q2 (ruling B).
+# PRICES:
+# - I3, I4, I5: "(5)" each, printed at the end of the question's own (last)
+#   line (PP: the census reads it).
+# - II1: the head's "(30/100)" (PARTP); the scheme prints the same head (140).
+# - III1/III2: the head's "(40/100)" (PARTP), each title answered alone at
+#   the part's 40; scheme head 149.
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-6 = printed pages 1-4; p2 the
+#   standard note, pp7-8 blank):
+# - Every Part I question is reprinted in bold, then "Tekstissä:" (in the
+#   text) over the paragraphs of the reading text that answer it, each led by
+#   the text's own paragraph number "(n)"; no marks inside, no dashes.
+# - Q3 (66-67 reprint): "Tekstissä seuraavat – kokelas käsittelee
+#   valitsemaansa kolmea seikkaa:" (68: the candidate treats the three points
+#   they choose), then five paragraphs: (1) 69-75, (2) 76-77, (3) 82-83 (p4),
+#   (7) 84-87, (8) 88.
+# - Q4 (89 reprint, worded "Millaisia syitä ...?" where the paper prints
+#   "Kerro omin sanoin, millaisia syitä ..."): "Tekstissä:" (90), then (1)
+#   91-93, (3) 94-97, (7) 98-100.
+# - Q5 (101-103 reprint, adding "esimerkein" the paper does not print):
+#   "Tekstissä:" (104), then (5) 105-110, (6) 111-112, (7) 113-114, and the
+#   scheme's own closing sentence 115-116, "Näiden pohjalta kokelas esittelee
+#   ja konkretisoi tilanteita, joissa koulutuksella pyritään ratkaisemaan
+#   ongelmia." (rendered p4: plain type, a paragraph of its own).
+# - Part II (140-143 reprint the head and the task): ONE paragraph, 144-148,
+#   "Kokelaan on hyvä aloittaa määrittelystä, ... Kokoava yhteenveto on
+#   eduksi." (rendered p5, small type). No criteria, no percentages anywhere
+#   in this scheme (pp7-8 blank). The exclusion's "the scheme prints NOTHING
+#   under this task" is wrong.
+# - Part III (149-150 reprint the head and the instruction): each title
+#   reprinted (151-153; 164-166) with ONE paragraph of its own under it:
+#   158-162 (p6, "Esseen tulee olla rakenteellisesti eheä: ... näkökulman
+#   tulisi olla Suomen tilannetta laajempi.") and 167-170 ("Esseen tulee olla
+#   rakenteellisesti eheä: ... Aihe sallii persoonallisen tai pakinoivan
+#   käsittely- ja ilmaisutavan."). The two share their first three sentences;
+#   each ends with a sentence of its own about its title.
+# SHAPES:
+# - I3, I4, I5: the scheme's paragraphs shown, one row each, priced as a
+#   whole on the paper's 5 (questionTotal: points with no per-point marks;
+#   I3's "three of five" is the scheme's own instruction, quoted, never a
+#   bestNofParts, since no mark per point is printed).
+# - II1: the paragraph shown, priced as a whole on the paper's 30 (10a).
+# - III1, III2: each title's own paragraph shown, priced as a whole on the
+#   paper's 40 (10a: indicative content for that title, never "prints no
+#   answer"; Danish 2025 the precedent).
+# JUDGEMENT CALLS:
+# - Each row keeps the text's paragraph number "(n)" as the scheme prints it
+#   (it names the paragraph of the reading text the student should find).
+#   The live I2 card cuts it off; both are the scheme's words.
+# - I5's closing sentence (115-116) is shown as the last row: it is the
+#   scheme's statement of what the answer does with the paragraphs above it.
+# - I3's lead line and the "Tekstissä:" heads are quoted in the first row's
+#   note, never rows (a heading is not an answer).
+# - I4 and I5: the scheme's reprint differs from the paper's question; the
+#   paper's words are the question (10f), the scheme's quoted on the card.
+# - III1's question: the instruction, then the title's two printed lines
+#   (the census glues "Tai" onto III1); III2 the instruction and its three
+#   lines.
+# - Reading text pp2-3 (rendered); II1 travels with it. The live cards of
+#   this sitting carry sourceMaterial.pages [4] (the questions page): flagged
+#   (P), not changed.
+# GLYPHS: none. ä ö read cleanly in every line used (paper and scheme;
+#   "ääriajattelu", "käsittelykappaleet", "kärsimyksiä" checked on the
+#   render). The only non-Finnish letters in either text layer are the á/ú of
+#   "Coimisiún na Scrúduithe Stáit" on the scheme cover.
+
+def _head_2018(n):
+    return quote(S(n), lead='The scheme heads its answer')
+
+
+ESSAY_2018 = 'Kirjoita noin 300 sanan essee.'
+
+SPECS[2018] = [
+    R('I3', [shown(L(69, 75)), shown(L(76, 77)), shown(L(82, 83)), shown(L(84, 87)), shown(S(88))],
+      whole=True, rownote=_head_2018(68), pages=(2, 3)),
+    R('I4', [shown(L(91, 93)), shown(L(94, 97)), shown(L(98, 100))], whole=True,
+      rownote=both(quote(S(89, after='4. '), lead='The scheme reprints this question as'), _head_2018(90)),
+      pages=(2, 3)),
+    R('I5', [shown(L(105, 110)), shown(L(111, 112)), shown(L(113, 114)), shown(L(115, 116))], whole=True,
+      rownote=both(quote(L(101, 103, after='5. '), lead='The scheme reprints this question as'), _head_2018(104)),
+      pages=(2, 3)),
+    R('II1', [shown(L(144, 148))], whole=True,
+      question=QP(4, 'Kirjoita noin 100 sanan', Run('”Nuorten keskuudessa', 'yhteiskunnan polarisaatio')),
+      pages=(2, 3)),
+    R('III1', [shown(L(158, 162))], whole=True,
+      question=QP(4, ESSAY_2018, Run('1. Maailma vuonna 2025', 'Anna myös ihmisille'))),
+    R('III2', [shown(L(167, 170))], whole=True,
+      question=QP(4, ESSAY_2018, Run('2. ”Vaatteet miehen', 'päätelmiä ihmisistä'))),
+]
+
+
+# ====================================================================== 2019
+# ================================================================ 2019 HL ===
+# Drafted (small-languages lane, 20 Nov): the five open asks of this sitting,
+# I2, I6, II1, III1, III2. Live: I1a-e, I3, I4, I5 (8 cards); not touched
+# (audited: see finnish-live-faults-2018-2025.json).
+# Paper (rendered pp2-4): the rule "Ohje: Vastaa kaikkiin kolmeen tehtävään
+# suomeksi. ..." (p2 y65); "TEKSTI" (p2 y152), the title "Sorron yön jälkeen
+# häämöttää vapauden valo" (p2 y176) and paragraphs (1)-(10) on p2, (11)-(16)
+# on p3 to the source "www.yle.fi 7.6.2018", "Janne Saarikivi" and the author
+# note (p3 y518): the reading text runs pp2-3. "I Tehtävä" / "(30/100)" (p3
+# y588), Q1 a.-e. under "(5 × 1)" (p3 y754); p4: Q2-Q6 each with "(5)" in a
+# cell of its own at the right margin (x482) of the question's last line;
+# "II Tehtävä" / "(30/100)" (p4 y430); "III Tehtävä" / "(40/100)" (p4 y588),
+# "Kirjoita noin 300 sanan essee. Valitse aiheeksesi toinen näistä." over two
+# titles numbered "1." / "2." joined by "Tai": Section III Q1/Q2 (ruling B).
+# PRICES:
+# - I2: "(5)" (p4 y65; PP()).
+# - I6: the paper PRINTS "(5)" in a cell of its own at the right of Q6's last
+#   line (p4 x482 y335; rendered). The census reads it WRONG: tariff (2, None,
+#   13), notation "(8) + (5)", because it also takes the paragraph reference
+#   "(8)" printed inside the question ("... sairaanhoitajan.” (8) Kommentoi
+#   ...") for a price, so PP() would say 13. PY cannot read the cell (its
+#   pattern needs a mark word; this paper prints a bare "(5)"), PaperP cannot
+#   pick it (five lines of p4 open "(5)"), and the scheme prints no price for
+#   Q2-Q6 at all (rendered scheme pp3-4). Priced by _cell_2019(4, 335): PY's
+#   own reading of a price cell at (page, y), taking the bare "(5)" (the
+#   printed figure, not inferred). If the lead extends PY to bare bracketed
+#   cells: PY(4, 335). Not a remainder, not 10i.
+# - II1: "(30/100)" (PARTP); scheme head "II Tehtävä (30/100)" (120).
+# - III1/III2: "(40/100)" (PARTP), each title answered alone at the part's
+#   40; scheme head 133.
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-5 = printed pages 1-3; p2 the
+#   standard note, pp6-7 blank):
+# - Each Part I question is reprinted in bold, then a plain lead ("Tekstissä:"
+#   or "Tekstissä kirjoittaja vertailee:") over the paragraphs of the reading
+#   text that answer it, each led by the text's paragraph number "(n)".
+# - Q2 (59 reprint): "Tekstissä:" (60), then ONE paragraph, (3), 61-63.
+# - Q6 (105-107 reprint, as the paper prints it): "Tekstissä kirjoittaja
+#   vertailee:" (108), then (5) 109-110, (6) 111-114, (7) 115-117, and the
+#   scheme's own closing paragraph 118-119, "Edellisen kommentoimisen lisäksi
+#   kokelas ilmaisee oman näkemyksensä ja perustelee sen esimerkiksi
+#   tuottavuuden ja talouskasvun näkökulmasta tai humanitaarisista
+#   näkökulmista."
+# - Part II (120-123 reprint the head and the task): ONE paragraph, 124-126
+#   + 131-132 (it runs over the page break, p4 to p5): "Kokelaan on hyvä
+#   aloittaa määrittelystä, mitä täystyöllisyydellä ja talouskasvulla
+#   tarkoitetaan. ... Kokoava yhteenveto on eduksi." No criteria and no
+#   percentages anywhere in this scheme. The exclusion's "the scheme prints
+#   NOTHING under this task" is wrong.
+# - Part III (133-134 reprint the head and the instruction): each title
+#   reprinted (135-137; 143-144) with ONE paragraph of its own under it:
+#   138-141 ("Esseen tulee olla rakenteellisesti eheä: ... näkökulman tulee
+#   suuntautua selkeästi tulevaisuuteen.") and 145-149 ("Esseen tulee olla
+#   rakenteellisesti eheä: ... Kokelaan tulee käsitellä aihetta sekä hyödyn
+#   ja kokemuksen että menetetyn ajan näkökulmasta. ...").
+# SHAPES:
+# - I2: one printed paragraph = one row at the paper's 5 (the shape of the
+#   live 2018 I2 and of Bulgarian's one-paragraph answers).
+# - I6: the three paragraphs and the closing paragraph shown, priced as a
+#   whole on the paper's 5 (questionTotal: points with no per-point marks).
+# - II1: the paragraph shown, priced as a whole on the paper's 30 (10a).
+# - III1, III2: each title's own paragraph shown, priced as a whole on the
+#   paper's 40 (10a; Danish 2025 the precedent).
+# JUDGEMENT CALLS:
+# - Rows keep the text's paragraph number "(n)" as the scheme prints it; the
+#   live 2019 rows cut it off. Both are the scheme's words.
+# - The leads "Tekstissä:" / "Tekstissä kirjoittaja vertailee:" are quoted
+#   in the first row's note, never rows.
+# - I6's closing paragraph (118-119) is a row: it states what the answer
+#   adds to the comparison above it (the candidate's own view).
+# - Part II's paragraph is cut around the page foot ("3", 127) and head
+#   ("## Page 5", 129): J(L(124, 126), L(131, 132)). Its "--" (125) is
+#   printed so.
+# - I6's question is cut from the paper's three printed lines (Run): the
+#   census drops the paragraph reference "(8)" printed inside it (it took it
+#   for a price). The opening "” En" keeps the space the paper prints after
+#   the quotation mark (rendered p4), as does II1's "” Tavoitteenamme".
+# - II1's question: the task line and the two lines of the quoted statement
+#   (the census glues the head's "(30/100)" in front). III1/III2: the
+#   instruction, then the title's lines (the census glues "Tai" onto III1).
+# - Reading text pp2-3 (rendered); II1 travels with it. The live cards of
+#   this sitting carry sourceMaterial.pages [3] (the page of Q1 and the end
+#   of the text): flagged (P), not changed.
+# GLYPHS: none. ä ö read cleanly in every line used ("häämöttää",
+#   "näkökulmista", "määrittelystä" checked on the render). The scheme sets
+#   "arbeta", "rabotat", "travailler" and "tripaliumin" in italic (Q5, a
+#   live card's lines): plain letters in the text layer.
+
+import re as _re
+
+
+class _Cell2019:
+    """A price the paper prints as a cell of its own at (page, y): PY's
+    reading (sl_lib.PaperLinePrice), taking a bare bracketed number "(5)"
+    as this paper prints it (PY's pattern needs a mark word)."""
+    def __init__(self, page, y):
+        self.page, self.y = page, y
+
+    def read(self, doc):
+        cell = _re.compile(r'^\(\s*(\d{1,2})\s*\)$')
+        hits = [ln for ln in doc['lines'] if ln.page == self.page and abs(ln.y - self.y) < 2
+                and cell.match(ln.text.strip())]
+        if len(hits) != 1:
+            raise ValueError(f'paper p{self.page} y{self.y}: {len(hits)} bare price cells')
+        return 1, int(cell.match(hits[0].text.strip()).group(1)), hits[0].text.strip()
+
+
+def _cell_2019(page, y):
+    return _Cell2019(page, y)
+
+
+def _head_2019(n):
+    return quote(S(n), lead='The scheme heads its answer')
+
+
+Q6P_2019 = _cell_2019(4, 335)
+ESSAY_2019 = 'Kirjoita noin 300 sanan essee.'
+
+SPECS[2019] = [
+    R('I2', [one(L(61, 63), PP())], rownote=_head_2019(60), pages=(2, 3)),
+    R('I6', [shown(L(109, 110)), shown(L(111, 114)), shown(L(115, 117)), shown(L(118, 119))], whole=True,
+      total=Q6P_2019, rownote=_head_2019(108),
+      question=QP(4, Run('6. ” En myöskään', 'Millaisesta työstä')), pages=(2, 3)),
+    R('II1', [shown(J(L(124, 126), L(131, 132)))], whole=True,
+      question=QP(4, 'Kirjoita noin 100 sanan', Run('” Tavoitteenamme', 'ihminen, joka ei')),
+      pages=(2, 3)),
+    R('III1', [shown(L(138, 141))], whole=True,
+      question=QP(4, ESSAY_2019, Run('1. Kuvittele', 'hyödyntää aiheesta'))),
+    R('III2', [shown(L(145, 149))], whole=True,
+      question=QP(4, ESSAY_2019, Run('2. Välivuosi', 'ja anna perusteltu'))),
+]
+
+
+# ====================================================================== 2022
+# ================================================================ 2022 HL ===
+# Drafted (small-languages lane, 20 Nov): the five open asks of this sitting,
+# I3, I4, I5, I6, II2. Live: I1a-e, I2 (6 cards); not touched (audited: see
+# finnish-live-faults-2018-2025.json). A TWO-PART sitting (out of 70): Part
+# II is the essay.
+# Paper (rendered pp2-4): the rule "Ohje: Vastaa kaikkiin tehtäviin suomeksi.
+# ..." (p2 y65), "Koko kokeen maksimipistemäärä on 70." (p2 y108); "TEKSTI 1"
+# (p2 y194), its title and paragraphs 1)-7) to the byline "Tiina Laaninen,
+# Helsingin Sanomat 25.1.2021 (lyhennetty)" (p2 y705); "TEKSTI 2:" (p3 y65),
+# its title and paragraphs 8)-18) on p3, 19)-21) on p4 to the byline "Mikko
+# Puttonen, Helsingin Sanomat 30.9.2021" (p4 y213): the reading texts run
+# pp2-4. "I TEHTÄVÄ" / "(30/70)" (p4 y258); Q1 a.-e. under "(5 × 1)"; Q2,
+# Q4, Q5, Q6 "(5)" each; "II TEHTÄVÄ" / "(40/70)" (p4 y650), "Kirjoita noin
+# 300 sanan essee. Valitse aiheeksi toinen näistä." over two titles numbered
+# "1." / "2." (p4 y709, y738).
+# PRICES:
+# - I3: the paper prints its price as a bare "5" welded to the question's
+#   full stop, with no bracket ("... kautta esitetään.5", p4 y487; rendered:
+#   the 5 sits on the text line, not in the right-hand price column). The
+#   census reads no tariff (and the exclusion says "neither document states a
+#   tariff": wrong). The scheme prints "(5)" at the end of its reprint of Q3
+#   (line 60); priced from it (RX), the same 5 the paper prints. Not a
+#   remainder, not 10i.
+# - I4, I5, I6: "(5)" each (PP()).
+# - II2: the head's "(40/70)" (PARTP); scheme head "II TEHTÄVÄ (40/70)" (96).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-4 = printed pages 1-2; p2 the
+#   standard note, pp5-6 blank):
+# - Q3 (60 reprint, worded "Kerro, millainen ..." where the paper prints
+#   "Kuvaa, millainen ..."; "(5)"): ONE paragraph, 61-63, "Tekstissä
+#   korostetaan vanhemman roolia kannustajana ja motivaattorina, ...
+#   Vanhempi ei ole vain auktoriteetti, vaan valmentaja."
+# - Q4 (64-65 reprint, "(5)" on a line of its own): THREE paragraphs, each
+#   opened by "Tekstissä:" and each PRICED at its end: 66-69 "(1 p.)", 70-71
+#   "(2 p.)", 72-74 "(2 p.)" (rendered p3: 1 + 2 + 2 = the printed 5). The
+#   exclusion's "the scheme states no answer for this ask, only its price"
+#   is wrong.
+# - Q5 (79-81 reprint, "(5)"): "Vastauksessa kokelaan on ymmärrettävä
+#   tekstissä kohta:" (82, a lead) and THREE paragraphs: 82-87 (the text's
+#   18) with the scheme's own remarks in brackets), 88-89, 90-91.
+# - Q6 (92-93 reprint, worded "... miksi psykologisilla taidoilla ..." where
+#   the paper prints "... millä tavalla psykologisilla taidoilla ..."; "(5)"):
+#   ONE paragraph, 94-95, "Psykologiset taidot tukevat kouluoppimista.
+#   Kokelas voi luetella tekstissä mainittuja taitoja (uteliaisuus,
+#   luottamus, sisu) pohtia niiden merkitystä oppimisen tai elämän
+#   kannalta."
+# - Part II (96-99 reprint the head, the instruction and both titles): ONE
+#   paragraph for both titles, 100-103, "Esseen tulee olla rakenteeltaan
+#   eheä: johdanto, erilliset käsittelykappaleet sekä päätäntä.
+#   Tehtävänannot ovat väitelauseita, joiden sisältöä tulee avata ja pohtia.
+#   Oma kanta tulee perustella ja antaa käsitteisiin (kannustamisen
+#   kulttuuri, sinnikäs optimisti, tärkeitä elämäntaitoja) sopivia sisältöjä
+#   sekä esimerkkejä." No criteria, no percentages.
+# SHAPES:
+# - I3: one printed paragraph = one row at the printed 5.
+# - I4: three point rows at the scheme's printed 1 + 2 + 2, adding to the
+#   paper's (5) (fixed; CARD-STANDARD 2 "prints answers, each with its
+#   marks"). Each row cut after its "Tekstissä: " lead and before its price.
+# - I5: the three paragraphs shown, priced as a whole on the paper's 5.
+# - I6: the paragraph shown, priced as a whole on the paper's 5: it states
+#   one point and then what the candidate "voi" (may) do (a requirement,
+#   not a stated answer to claim; Bulgarian 2010 I6 the precedent).
+# - II2: R4 (unprinted) at the paper's 40, the note quoting the scheme's
+#   paragraph: see JUDGEMENT CALLS.
+# JUDGEMENT CALLS:
+# - II2 R4, not shown: the one paragraph under both titles is general essay
+#   guidance (structure, own view, examples), and its one specific sentence
+#   does not fit title 2: it says the tasks are statements ("väitelauseita")
+#   to open up, where title 2 is a question ("Miten todellinen ystävyys
+#   syntyy?"), and the concepts it names ("sinnikäs optimisti", "tärkeitä
+#   elämäntaitoja") are printed in neither title (only "kannustamisen
+#   kulttuuri", title 1's). Read as ruling 4's descriptive line for this
+#   title. If the lead reads it as indicative content: [shown(L(100,
+#   103))], whole=True on the paper's 40.
+# - CENSUS GAP (not mine to card, flagged): the census has NO II1. The paper
+#   prints title 1 as "1.“Suomessa kannustamisen kulttuuri ei ole hirveän
+#   vahva.”" (p4 y709) with NO space after "1.", and the census keys only
+#   "2. Miten todellinen ystävyys syntyy?" (II2). Title 1 is a printed ask
+#   with no card and no exclusion.
+# - I3's question is cut from the paper's line before the welded "5" (PC,
+#   after the marker): "Kuvaa, millainen käsitys kasvattamisesta tekstin
+#   (teksti 1) kautta esitetään."
+# - I5's lead (82, "Vastauksessa kokelaan on ymmärrettävä tekstissä kohta:")
+#   is cut off the first row and quoted in its note; the bracketed remarks
+#   inside that row are the scheme's own and stay.
+# - I4's "Tekstissä:" leads quoted once, in the first row's note.
+# - 10f: Q3 and Q6 are reprinted with different wording; the paper's words
+#   are the questions, the scheme's quoted on the cards.
+# - Reading text pp2-4 (rendered: TEKSTI 2 ends on p4 at y213, above "I
+#   TEHTÄVÄ"). The live cards of this sitting carry sourceMaterial.pages [4]:
+#   flagged (P), not changed. No `pages` on II2 (the essay of a two-part
+#   sitting).
+# GLYPHS: none. ä ö read cleanly in every line used. Both documents set
+#   U+2010 HYPHEN in "Salmela‐Aro", "koulu‐ura", "‐nuorilla",
+#   "15‐vuotiailla", "MOTIVAATIO‐": a real hyphen character (rendered "-"),
+#   printed so, not a mis-mapped glyph.
+
+
+def _head_2022(n, after=None, before=None, lead='The scheme heads its answer'):
+    return quote(S(n, after=after, before=before), lead=lead)
+
+
+def _reprint_2022(a, b, after):
+    return quote(L(a, b, after=after, before=' (5)'), lead='The scheme reprints this question as')
+
+
+def _q3_2022(d, _census=None):
+    return PC(4, '3. Kuvaa', after='3. ', before='5').text(d)
+
+
+ESSAY_2022 = 'Kirjoita noin 300 sanan essee.'
+Q3P_2022 = RX(60, r'\((\d)\)\s*$')
+
+SPECS[2022] = [
+    R('I3', [one(L(61, 63), Q3P_2022)], total=Q3P_2022,
+      rownote=_reprint_2022(60, 60, '3. '), question=_q3_2022, pages=(2, 3, 4)),
+    R('I4', [one(L(66, 69, after='Tekstissä: ', before=' (1 p.)'), RX(69, r'\((\d) p\.\)')),
+             one(L(70, 71, after='Tekstissä: ', before=' (2 p.)'), RX(71, r'\((\d) p\.\)')),
+             one(L(72, 74, after='Tekstissä: ', before=' (2 p.)'), RX(74, r'\((\d) p\.\)'))],
+      rownote=_head_2022(66, before=' Salmela'), pages=(2, 3, 4)),
+    R('I5', [shown(L(82, 87, after='kohta: ')), shown(L(88, 89)), shown(L(90, 91))], whole=True,
+      rownote=_head_2022(82, before=' Salmela'), pages=(2, 3, 4)),
+    R('I6', [shown(L(94, 95))], whole=True,
+      rownote=quote(L(92, 93, after='6. ', before=' (5)'), lead='The scheme reprints this question as'),
+      pages=(2, 3, 4)),
+    # Title 1 (census ADDED_ASKS: printed "1.“Suomessa ..." with no space, p4 y709): the scheme's one
+    # paragraph under the two titles names title 1's concept ("kannustamisen kulttuuri") among those to
+    # develop: indicative content for this title (10a), shown on the paper's 40 (the lead's call; title 2
+    # keeps the drafter's R4, the paragraph quoted).
+    R('II1', [shown(L(100, 103))], whole=True, total=PARTP(),
+      question=_q(PL(4, ESSAY_2022), PC(4, '1.“Suomessa', after='1.'))),
+    R('II2', [unprinted(quote(L(100, 103), lead='Under the two titles the scheme prints only'))],
+      question=QP(4, ESSAY_2022, '2. Miten todellinen')),
+]
+
+
+# ====================================================================== 2023
+# ================================================================ 2023 HL ===
+# Drafted (small-languages lane, 20 Nov): all thirteen asks of this sitting,
+# I1a-e, I2-I6, II1, III1, III2. No live card (the old reader excluded the
+# whole sitting: "the scheme prices no ask at the address the paper prints").
+# Paper (rendered pp2-4): the rule "Ohje: Vastaa kaikkiin tehtäviin suomeksi.
+# ..." (p2 y65), "Kokeen maksimipistemäärä on 100 pistettä." (p2 y119);
+# "TEKSTI 1" (p2 y163), its title and paragraphs 1)-6) to the byline "Marja
+# Alkio, ... mielipidekirjoitus" (p2 y775); "TEKSTI 2" (p3 y65), its title
+# and paragraphs 7)-16) to "Katkelma Tarja Roinilan esseestä / Helsingin
+# Sanomat 7.6.2020" (p3 y691): the reading texts run pp2-3. "I TEHTÄVÄ" /
+# "(30/100)" (p3 y719); Q1 "1. Selitä omin sanoin seuraavat ilmaisut:" with
+# a) b) on p3 and c) d) e) on p4, "(5 × 1)" at the right of e) (p4 y109);
+# Q3-Q6 "(5)" each (p4 y190, y234, y277, y321); "II TEHTÄVÄ" / "(30/100)" (p4
+# y409); "III TEHTÄVÄ" / "(40/100)" (p4 y602), "Kirjoita noin 300 sanan
+# essee. Valitse aiheeksi toinen näistä." over two titles numbered "1." /
+# "2." (Section III Q1/Q2, ruling B).
+# PRICES:
+# - I1a-e: "(5 × 1)": five expressions at 1 each, adding to Q1's 5 (the
+#   census walks it down to the letters: PP() each). Per letter, as every
+#   live Finnish Q1.
+# - I2: the paper prints NO price (rendered p4: Q2's two lines y146-160 have
+#   nothing in the right-hand column, where Q3-Q6 each print "(5)"), and the
+#   scheme prints no price for Q2-Q6 at all. It is the ONE unpriced ask of a
+#   part whose printed total and every other price fix it: REM(PARTP(), the
+#   five "(5 × 1)" letters, Q3-Q6's "(5)") = 30 - 25 = 5, the note on the row
+#   (CARD-STANDARD 10i clarification).
+# - I3-I6: "(5)" each (PP()).
+# - II1: "(30/100)" (PARTP); scheme head "II TEHTÄVÄ (30/100)" (77).
+# - III1/III2: "(40/100)" (PARTP), each title answered alone at the part's
+#   40; scheme head "III TEHTÄVÄ (40/100)" (89).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-5 = printed pages 1-3; pp6-7
+#   blank):
+# - Part I head "TEHTÄVÄ (30/70)" (45): no numeral, and "/70" where the paper
+#   prints "(30/100)" (the 2022 sitting was out of 70). A printed scheme
+#   error; the paper's (30/100) governs (10f), quoted on I2, whose mark it
+#   fixes.
+# - Q1 (46 the stem, no number): "a) vaivihkaa = huomaamatta" (47), b) 48,
+#   c) 49, d) 50, e) 51; each gloss after " = ". The scheme reprints d) as
+#   "opetuksen puitteissa" where the paper prints "Oman äidinkielen
+#   opetuksen puitteissa" (10f: quoted on the card), and sets Q1's price
+#   INSIDE e): "e) vertaisryhmä (5 x 1) = samassa tilanteessa olevien ryhmä"
+#   (51; rendered p3 the same).
+# - Q2-Q6: each question reprinted (no price) and ONE plain paragraph under
+#   it: Q2 54-55, Q3 57-59, Q4 62-65, Q5 71-73, Q6 75-76 ("Vastauksessa
+#   edetään referoiden jommankumman kirjoittajan kantaa ja sen pohjalta
+#   muodostetaan oma näkökulma", no closing stop).
+# - Part II (77-80 reprint the head and the task, "noin 100 kommentti"
+#   without "sanan"): ONE paragraph, 81-84, "Kirjoittaja voi pohtia, missä
+#   määrin kolme viikkotuntia tulee kielenkehitystä. ... läksyjen
+#   kannalta."
+# - Part III (89-93 reprint the head, the instruction and both titles,
+#   unnumbered): ONE paragraph for both, 94-96, "Esseen tulee olla
+#   rakenteellisesti eheä: aiheeseen johdatteleva aloituskappale, selkeät
+#   käsittelykappaleet ja kokoava päätäntä. Tehtävänanto edellyttää
+#   omakohtaista pohdintaa ja sitä voi havainnollistaa esimerkein." No
+#   criteria and no percentages anywhere in this scheme.
+# SHAPES:
+# - I1a-e: one(gloss) each at the printed 1.
+# - I2-I5: one printed paragraph = one row at the printed 5 (I2 at the
+#   remainder 5).
+# - I6: the paragraph shown, priced as a whole on the paper's 5: it says how
+#   the answer proceeds (summarise one writer's view, then form one's own),
+#   a requirement, not a stated answer to claim.
+# - II1: the paragraph shown, priced as a whole on the paper's 30 (10a).
+# - III1, III2: R4 (unprinted) at the paper's 40, the note quoting the one
+#   paragraph the scheme prints under both titles (ruling 4: structure and
+#   "omakohtaista pohdintaa" for any title, nothing of either title's
+#   content).
+# JUDGEMENT CALLS:
+# - III R4, not shown: the paragraph is wholly generic (the 2018/2019
+#   paragraphs are printed under each title with a sentence of their own
+#   about that title; this one names neither). If the lead reads it as
+#   indicative content: [shown(L(94, 96))], whole=True on the paper's 40.
+# - I2 at the remainder rather than 10i: it is the only unpriced ask of Part
+#   I; the remainder uses printed figures only.
+# - I4's model answer prints "saksan kielensä olleet riittävän hyvä" (65),
+#   the SEC's own wording, lifted as printed.
+# - Questions: I1c-e are printed on p4 under the p3 stem; the census joins
+#   the stem to each (checked). II1's question is cut from the paper's three
+#   lines (the census glues "(30/100)" in front). III1/III2: the
+#   instruction, then the title; III2 keeps its printed attribution line
+#   "(Maija Vilkkumaa, suomalainen rockmuusikko)".
+# - Reading text pp2-3 (rendered); II1 travels with it. No live card to
+#   compare.
+# GLYPHS: none. ä ö read cleanly in every line used ("kiistämättömät",
+#   "Osattomuuden tunne vyöryi päälleni", "kyseenalaistaa" checked on the
+#   render). The scheme's "tasa‐" (52) sets U+2010 HYPHEN, printed so.
+
+
+def _rem_2023():
+    return REM(PARTP(), PP('I1a'), PP('I1b'), PP('I1c'), PP('I1d'), PP('I1e'),
+               PP('I3'), PP('I4'), PP('I5'), PP('I6'))
+
+
+Q2P_2023 = _rem_2023()
+ESSAY_2023 = 'Kirjoita noin 300 sanan essee.'
+III_NOTE_2023 = quote(L(94, 96), lead='Under the two titles the scheme prints only')
+
+SPECS[2023] = [
+    R('I1a', [one(S(47, after='= '), PP())], pages=(2, 3)),
+    R('I1b', [one(S(48, after='= '), PP())], pages=(2, 3)),
+    R('I1c', [one(S(49, after='= '), PP())], pages=(2, 3)),
+    R('I1d', [one(S(50, after='= '), PP())],
+      rownote=quote(S(50, after='d) ', before=' ='), lead='The scheme reprints this expression as'),
+      pages=(2, 3)),
+    R('I1e', [one(S(51, after='= '), PP())], pages=(2, 3)),
+    R('I2', [one(L(54, 55), Q2P_2023)], total=Q2P_2023,
+      rownote=both(Q2P_2023.note, quote(S(45), lead='The scheme heads Part I')), pages=(2, 3)),
+    R('I3', [one(L(57, 59), PP())], pages=(2, 3)),
+    R('I4', [one(L(62, 65), PP())], pages=(2, 3)),
+    R('I5', [one(L(71, 73), PP())], pages=(2, 3)),
+    R('I6', [shown(L(75, 76))], whole=True, pages=(2, 3)),
+    R('II1', [shown(L(81, 84))], whole=True,
+      question=QP(4, Run('Kirjoita noin 100 sanan kommentti', 'opetuksen puitteissa.”')), pages=(2, 3)),
+    R('III1', [unprinted(III_NOTE_2023)],
+      question=QP(4, ESSAY_2023, '1. Monikielisen')),
+    R('III2', [unprinted(III_NOTE_2023)],
+      question=QP(4, ESSAY_2023, '2. ”Maailma on kaaos', '(Maija Vilkkumaa')),
+]
+
+
+# ====================================================================== 2024
+# ================================================================ 2024 HL ===
+# Drafted (small-languages lane, 20 Nov): the eight open asks of this
+# sitting, I2-I6, II1, III1, III2. Live: I1a-e (5 cards); not touched
+# (audited: see finnish-live-faults-2018-2025.json).
+# Paper (rendered pp2-4): the rule "Ohje: Vastaa kaikkiin tehtäviin suomeksi.
+# ..." (p2 y65); "TEKSTI:" (p2 y138), the title "Moni ei enää jaksa keskittyä
+# kirjojen lukemiseen – ..." (p2 y153) and paragraphs 1)-9) on p2, 10)-19) on
+# p3 to the byline "Katri Kallionpää, Helsingin Sanomat 1.10.2023" (p3 y680):
+# the reading text runs pp2-3. p4: "I TEHTÄVÄ" / "(30/100)" (y65); Q1 a.-e.
+# under "(5 × 1 pistettä)" (y197); Q2-Q6 "(5 pistettä)" each in the right
+# column (Q6's on its second line, y387); "II TEHTÄVÄ" / "(30/100)" (y446);
+# "III TEHTÄVÄ" / "(40/100)" (y578), "Kirjoita noin 300 sanan essee. Valitse
+# aiheeksi toinen näistä." over two titles numbered "1." / "2." joined by
+# "tai" (Section III Q1/Q2, ruling B).
+# PRICES:
+# - I2-I6: "(5 pistettä)" each (PP(): the census reads every one).
+# - II1: "(30/100)" (PARTP); scheme head "II TEHTÄVÄ (30/100)" (76).
+# - III1/III2: "(40/100)" (PARTP), each title answered alone at the part's
+#   40; scheme head "III TEHTÄVÄ (40/100)" (81).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-4 = printed pages 1-2; pp5-6
+#   blank):
+# - Q2 (54): the question reprinted "2 Miksi ADT ei ole virallinen
+#   diagnoosi?" and its answer on the SAME line, running on to 55: "Se on
+#   itseaiheutettu eikä perinnöllinen tautiluokitettu neuropsykologinen
+#   sairaus."
+# - Q3-Q6: each reprinted (no price) over ONE plain paragraph: Q3 57-58, Q4
+#   60-62, Q5 64-66, Q6 69-71.
+# - Part II (76; 77-78 reprint the task in short, "Arvioi oman kokemuksesi
+#   perusteella, ..."): ONE paragraph, 79-80, "Mielipide tulee rakentua
+#   dialogissa kolmeen tekstissä esitettyyn rajoitukseen eli aikaan,
+#   paikkaan ja ihmissuhteisiin liittyviin tilanteisiin. Oma reflektio tulee
+#   olla mukana."
+# - Part III (81; the instruction reprinted as "Kirjoita noin 300 sanan
+#   pituinen yhtenäinen teksti." where the paper prints "Kirjoita noin 300
+#   sanan essee.", 82): title 1 reprinted as the paper prints it (83) with
+#   ONE paragraph, 84-86 ("Keskustelua on käyty hallitustasolla ...
+#   argumentteja puolesta ja vastaan."). Title 2 is NOT the paper's: the
+#   scheme prints "2. Kenellä on vastuu älylaitteiden käytöstä ‐
+#   valmistajalla, valtiolla vai käyttäjillä? Kirjoita pohtiva teksti, jossa
+#   tarkastelet asiaa monelta kannalta." (87-88; rendered scheme p4, bold)
+#   and a paragraph answering THAT title (89-95, "Huotilainen tuo esiin, että
+#   yksittäistä käyttäjää on turha syyllistää. ..."). The paper's title 2 is
+#   "”Lukeminen parantaa muistia, lievittää stressiä ja jopa pidentää ikää”,
+#   sanoo aivotutkija Minna Huotilainen. Kirjoita pohtiva teksti, jossa
+#   tarkastelet lukemisen merkitystä aivoterveyden kannalta." (p4 y723-754).
+#   No criteria, no percentages.
+# SHAPES:
+# - I2-I6: one printed paragraph = one row at the printed 5 each.
+# - II1: the paragraph shown, priced as a whole on the paper's 30 (10a).
+# - III1: title 1's own paragraph shown, priced as a whole on the paper's 40
+#   (10a; Danish 2025 the precedent).
+# - III2: R4 (unprinted) at the paper's 40 (10f: the paper wins). The note
+#   quotes the different title the scheme reprints and says the scheme gives
+#   no answer for the paper's title; the scheme's paragraph for its own
+#   title is not shown (it answers a question the student was not asked).
+# JUDGEMENT CALLS:
+# - I2's row is cut after the reprinted question on the same line
+#   ("diagnoosi? ").
+# - II1 and III1 are shown, not R4: each paragraph says what this task's
+#   answer works through (time, place and relationship limits; the debate
+#   at government level, arguments for and against).
+# - The scheme's differing reprints (Part II's shortened task, Part III's
+#   instruction) are noted here only; neither changes an answer.
+# - Questions: II1 cut from the paper's two lines (the census glues
+#   "(30/100)" in front); III1 the instruction and the title (the census
+#   glues "tai" onto it); III2 the instruction and the title's three lines.
+# - Reading text pp2-3 (rendered); II1 travels with it. The live cards of
+#   this sitting carry sourceMaterial.pages [4] (the questions page):
+#   flagged (P), not changed.
+# GLYPHS: none. ä ö read cleanly in every line used ("tarkkaavuusvajetta",
+#   "älylaitteiden", "käyttökelpoisia" checked on the render). The scheme
+#   sets U+2010 HYPHEN in "vapaa‐ajanviettotapana" (57) and its title 2's
+#   dash (87): real hyphen characters, printed so.
+
+
+def _other_title_2024(d):
+    return (f'The marking scheme reprints a different title here (“{L(87, 88, after="2. ").text(d)}”) '
+            f'and gives no answer for the title the paper prints.')
+
+
+ESSAY_2024 = 'Kirjoita noin 300 sanan essee.'
+
+SPECS[2024] = [
+    R('I2', [one(L(54, 55, after='diagnoosi? '), PP())], pages=(2, 3)),
+    R('I3', [one(L(57, 58), PP())], pages=(2, 3)),
+    R('I4', [one(L(60, 62), PP())], pages=(2, 3)),
+    R('I5', [one(L(64, 66), PP())], pages=(2, 3)),
+    R('I6', [one(L(69, 71), PP())], pages=(2, 3)),
+    R('II1', [shown(L(79, 80))], whole=True,
+      question=QP(4, Run('Kirjoita noin 100', 'ovatko tutkijoiden')), pages=(2, 3)),
+    R('III1', [shown(L(84, 86))], whole=True,
+      question=QP(4, ESSAY_2024, '1. Pitäisikö koulussa')),
+    R('III2', [unprinted(_other_title_2024)],
+      question=QP(4, ESSAY_2024, Run('2. ”Lukeminen parantaa', 'kannalta.'))),
+]
+
+
+# ====================================================================== 2025
+# ================================================================ 2025 HL ===
+# Drafted (small-languages lane, 20 Nov): the three open asks of this
+# sitting, II1, III1, III2. Live: I1a-e, I2-I6 (10 cards); not touched
+# (audited: see finnish-live-faults-2018-2025.json).
+# Paper (rendered pp2-4): "Ohje:" (p2 y65) over the rule "Vastaa kaikkiin
+# tehtäviin suomeksi. ..." (p2 y89); "TEKSTI 1" (p2 y176), the title
+# "Piipahdus luonnossa voi tehdä terveydelle ihmeitä: ..." (p2 y200) and
+# paragraphs (1)-(5) on p2, (6)-(14) on p3 to the byline "Piia Elonen,
+# Helsingin Sanomat 29.10.2024" (p3 y784): the reading text runs pp2-3. p4:
+# "I TEHTÄVÄ" / "(30/100)" (y65), Q1-Q6; "II TEHTÄVÄ" / "(30/100)" (y442),
+# the quotation "“Luontoa pitäisi tarjota hoitona terveydenhuollossa niin
+# vastaanottokäynneillä kuin erilaisissa digitaalisissa hoitopoluissa.”"
+# (y466-481) over "Kirjoita noin 100–150 sanaa kommentti artikkelin
+# esittämään ajatukseen." (y510); "III TEHTÄVÄ" / "(40/100)" (y572),
+# "Kirjoita vähintään 300 sanan pituinen essee. Valitse aiheeksi toinen
+# näistä." (y596) over two titles numbered "1." / "2." joined by "tai"
+# (Section III Q1/Q2, ruling B).
+# PRICES:
+# - II1: "(30/100)" (PARTP); scheme head "II TEHTÄVÄ (30/100)" (99).
+# - III1/III2: "(40/100)" (PARTP), each title answered alone at the part's
+#   40; scheme head "III TEHTÄVÄ (40/100)" (108).
+# WHAT THE SCHEME PRINTS (rendered scheme pp4-5 = printed pages 4-5; p3 the
+#   annotations table, pp6-8 blank but for their page numbers):
+# - Part II (99): the task reprinted at length, 100-102 ("Kirjoita noin
+#   100–150 sanan kommentti artikkelin esittämään ajatukseen, jonka mukaan
+#   Suomessa tulisi olla kansallinen luontoterveysohjelma, ... “niin
+#   vastaanottokäynneillä kuin erilaisissa digitaalisessa hoitopoluissa”."),
+#   then ONE paragraph of questions the comment can take up, 103-107 ("Miten
+#   Suomen talvessa onnistuu luonnossa annettava synnytysvalmennus tai
+#   uniapnean ryhmävastaanotto? ... Miten järjestetään turvallisia
+#   luontopolkuja haja-asutusalueille?"). The exclusion's "the scheme prints
+#   NOTHING under this task" is wrong.
+# - Part III (108): the instruction reprinted as "Kirjoita noin 300 sanan
+#   essee. Valitse aiheeksi toinen näistä." (109; the paper prints
+#   "vähintään 300 sanan pituinen essee") and the two titles, unnumbered,
+#   joined by "tai" (110-114). Nothing else: no answer, no guidance, no
+#   criteria (rendered p5; pp6-8 blank).
+# SHAPES:
+# - II1: the paragraph shown, priced as a whole on the paper's 30 (10a); the
+#   scheme's longer restatement of the task quoted in the note (10f: the
+#   paper's task is the question).
+# - III1, III2: R4 (unprinted) at the paper's 40, the note quoting what the
+#   scheme prints (its instruction; ruling 4).
+# JUDGEMENT CALLS:
+# - II1's paragraph breaks the compound "haja-asutusalueille" at the line end
+#   ("haja-" / "asutusalueille?", 106-107; rendered p5): joined with no space
+#   (Join sep='', as Estonian 2023 Part II), so the row reads the printed
+#   word.
+# - III notes quote the scheme's instruction, which differs from the
+#   paper's ("noin" for "vähintään ... pituinen"): the paper's words are the
+#   question (10f).
+# - Questions: II1 is the quotation and the task line as printed (the census
+#   glues "(30/100)" in front); III1 the instruction and the title (the
+#   census keys it as printed); III2 the instruction and the title's three
+#   lines.
+# - Reading text pp2-3 (rendered); II1 travels with it. The live cards of
+#   this sitting carry sourceMaterial.pages [4] (the questions page):
+#   flagged (P), not changed.
+# GLYPHS: none. ä ö read cleanly in every line used. The scheme sets this
+#   year in a font with "tt"/"ti" ligatures (rendered "artikkelin",
+#   "tietoja"); the text layer reads them as plain letters (no stray code
+#   points: checked over the whole .md).
+
+
+ESSAY_2025 = 'Kirjoita vähintään 300 sanan'
+III_NOTE_2025 = quote(S(109), lead='The scheme prints nothing under the two titles. It reprints the instruction as')
+
+SPECS[2025] = [
+    R('II1', [shown(J(L(103, 105), Join(S(106), S(107), sep='')))], whole=True,
+      rownote=quote(L(100, 102), lead='The scheme restates the task as'),
+      question=QP(4, Run('“Luontoa pitäisi tarjota', 'digitaalisissa hoitopoluissa'), 'Kirjoita noin 100–150'),
+      pages=(2, 3)),
+    R('III1', [unprinted(III_NOTE_2025)],
+      question=QP(4, ESSAY_2025, '1. “Mennään metsään”')),
+    R('III2', [unprinted(III_NOTE_2025)],
+      question=QP(4, ESSAY_2025, Run('2. ”Ellemme varmuudella', 'nykymaailmassa.'))),
+]

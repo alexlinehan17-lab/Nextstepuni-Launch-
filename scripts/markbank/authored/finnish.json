@@ -5072,6 +5072,254 @@
   }
  },
  {
+  "id": "fin-2018-hl-i-3",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "finnish-0-1",
+  "conceptId": "mainitse-kolme-huolenaihetta-jota-teksti-esittelee",
+  "questionRef": "2018 HL Section I Q3",
+  "questionText": "Mainitse kolme huolenaihetta, jota teksti esittelee, ja selitä, miten ne näkyvät Suomessa.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(1) Vaikea taloudellinen tilanne, yhteiskunnan nopeaan muutokseen liittyvät epävarmuudet ja pakolaiskriisi ovat kuitenkin luoneet Suomessa ja muualla Euroopassa kasvualustaa vihamieliselle kielenkäytölle, ääriasenteille ja jyrkille vastakkainasetteluille. Vihapuhe kohdistuu erilaisiin kansalaisryhmiin, vähemmistöihin ja yksilöihin. Se horjuttaa luottamuksen ja turvallisuuden tunteen perusteita. Vihapuhe ja uhan kokeminen ovat jo johtaneet kielteiseen käyttäytymiseen maahanmuuttajia ja yleisemminkin erilaisuutta kohtaan.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" The scheme heads its answer: “Tekstissä seuraavat – kokelas käsittelee valitsemaansa kolmea seikkaa:”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(2) Vihapuhe ja rasismi merkitsevät, että tietyt ihmisryhmät joutuvat elämään ilmapiirissä, jossa avoimesti kiistetään ryhmän jäsenten asema tasavertaisina yhteisön jäseninä.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(3) Suomeen on lyhyellä aikavälillä tullut suuri määrä maahanmuuttajia. Useimmilla suomalaisilla on vain vähän kokemusta vuorovaikutuksesta maahanmuuttajien kanssa.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "(7) Muun muassa lapsiasiavaltuutettu on esittänyt huolensa suomalaisten nuorten ääriajattelusta. (--) Jos keskustelu puuttuu, yhteiskunnan polarisaatio kasvaa. Ihmisille voi tulla tunne, että oikeusvaltio ei anna heille turvaa eikä vastaa heidän tarpeisiinsa. He alkavat itse etsiä ratkaisuja.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "(8) Esimerkiksi ilmastonmuutoksen takia Suomeen luultavasti tulee lisää pakolaisia.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2018-hl-i-4",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "finnish-0-1",
+  "conceptId": "kerro-omin-sanoin-millaisia-syita-teksti",
+  "questionRef": "2018 HL Section I Q4",
+  "questionText": "Kerro omin sanoin, millaisia syitä teksti tarjoaa rasistiseen käytökseen tai vihapuheeseen.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(1) Vaikea taloudellinen tilanne, yhteiskunnan nopeaan muutokseen liittyvät epävarmuudet ja pakolaiskriisi ovat kuitenkin luoneet Suomessa ja muualla Euroopassa kasvualustaa vihamieliselle kielenkäytölle, ääriasenteille ja jyrkille vastakkainasetteluille.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" The scheme reprints this question as: “Millaisia syitä teksti tarjoaa rasistiseen käytökseen tai vihapuheeseen?”. The scheme heads its answer: “Tekstissä:”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(3) Suomeen on lyhyellä aikavälillä tullut suuri määrä maahanmuuttajia. Useimmilla suomalaisilla on vain vähän kokemusta vuorovaikutuksesta maahanmuuttajien kanssa. Vihapuheiden ja rasistisen käytöksen taustalla voi olla myös epäoikeudenmukaisuuden, ulkopuolisuuden, merkityksettömyyden ja joskus kiusaamisen kokemuksia ja tunteita.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(7) Jos keskustelu puuttuu, yhteiskunnan polarisaatio kasvaa. Ihmisille voi tulla tunne, että oikeusvaltio ei anna heille turvaa eikä vastaa heidän tarpeisiinsa. He alkavat itse etsiä ratkaisuja.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2018-hl-i-5",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "finnish-0-1",
+  "conceptId": "miksi-koulutuksen-rooli-nahdaan-tarkeana-ongelmanratkaisijana",
+  "questionRef": "2018 HL Section I Q5",
+  "questionText": "Miksi koulutuksen rooli nähdään tärkeänä ongelmanratkaisijana? Havainnollista tekstin esittelemiä tilanteita, joissa mielestäsi ongelmia voidaan ratkaista koulutuksella.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(5) Opetushenkilöstöä ja muita ammattilaisia valmennetaan käymään hankalia keskusteluja muun muassa vihapuheeseen, rasistiseen käytökseen ja radikalisoitumisen signaaleihin liittyen. Koulutuksella varmistetaan, että lasten ja nuorten parissa työskentelevillä on valmiudet toimia työssään siten, että demokraattiset arvot, tietoisuus ihmisoikeuksista ja osallisuuden tunne lapsilla ja nuorilla vahvistuvat. (--) Monilukutaito, mediakriittisyys ja kriittinen ajattelu ovat muita koulutuksen teemoja.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" The scheme reprints this question as: “Miksi koulutuksen rooli nähdään tärkeänä ongelmanratkaisijana? Havainnollista esimerkein tekstin esittelemiä tilanteita, joissa mielestäsi ongelmia voidaan ratkaista koulutuksella.”. The scheme heads its answer: “Tekstissä:”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(6) Koulun tulee kiinnittää huomiota siihen, että jokainen nuori tuntee tulevansa nähdyksi ja kuulluksi. Kaikkien ihmisten keskeinen perustarve on tuntea itsensä merkitykselliseksi.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(7) Lasten ja nuorten ääriajattelu on kohdattava heidän omassa maailmassaan ennen kuin siitä kehittyy aikuisten maailmassa verkostoja ja liikkeitä.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Näiden pohjalta kokelas esittelee ja konkretisoi tilanteita, joissa koulutuksella pyritään ratkaisemaan ongelmia.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2018-hl-ii-1",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2018,
+  "section": "II",
+  "topicId": "finnish-1-0",
+  "conceptId": "kirjoita-noin-100-sanan-mittainen-kommentti",
+  "questionRef": "2018 HL Section II Q1",
+  "questionText": "Kirjoita noin 100 sanan mittainen kommentti tekstin väitteeseen: ”Nuorten keskuudessa oleva ääriajattelu pitää kohdata ja haastaa. Jos keskustelu puuttuu, yhteiskunnan polarisaatio kasvaa.”",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kokelaan on hyvä aloittaa määrittelystä, mitä ääriajattelulla ja yhteiskunnan polarisaatiolla tarkoitetaan. Havainnollistavat esimerkit tukevat määrittelyä. Kokelas voi kirjoittaa siitä, mitä ääriajattelun kohtaamisesta ja haastamisesta seuraa – ja mitä taas seuraa siitä, jos nämä puuttuvat. Näin kokelas päätyy osoittamaan väitteen kanssa samanmielisyyttä tai erimielisyyttä. Kokoava yhteenveto on eduksi.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II TEHTÄVÄ",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2018-hl-iii-1",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2018,
+  "section": "III",
+  "topicId": "finnish-1-1",
+  "conceptId": "maailma-vuonna-2025-pohdi-tulevaisuuden-uhkia",
+  "questionRef": "2018 HL Section III Q1",
+  "questionText": "Kirjoita noin 300 sanan essee. Valitse aiheeksesi toinen näistä. Maailma vuonna 2025 – pohdi tulevaisuuden uhkia ja mahdollisuuksia noin 300 sanan esseessä. Anna myös ihmisille suosituksia, kuinka ratkoa ongelmia ja tehdä maailmasta parempi.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Esseen tulee olla rakenteellisesti eheä: aiheeseen johdatteleva aloituskappale, selkeät käsittelykappaleet, kokoava päätäntä. Kokelas ilmaisee oman kantansa perustellen ja havainnollistaen. Esseessä voi olla yleisen tason käsittelyä sekä yksityiskohtaisempia tapausesimerkkejä. Kokelas voi hyödyntää pohjatekstiä esseessään, mutta näkökulman tulisi olla Suomen tilannetta laajempi.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "fin-2018-hl-iii-2",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2018,
+  "section": "III",
+  "topicId": "finnish-1-1",
+  "conceptId": "vaatteet-miehen-tekevat-pohdi-sanontaa-sita",
+  "questionRef": "2018 HL Section III Q2",
+  "questionText": "Kirjoita noin 300 sanan essee. Valitse aiheeksesi toinen näistä. ”Vaatteet miehen tekevät!” Pohdi sanontaa ja sitä puolustavia ja vastustavia perusteluja noin 300 sanan esseessä. Muodosta oma mielipiteesi siitä, missä määrin voimme tehdä päteviä päätelmiä ihmisistä heidän vaatetuksensa perusteella.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Esseen tulee olla rakenteellisesti eheä: aiheeseen johdatteleva aloituskappale, selkeät käsittelykappaleet, kokoava päätäntä. Kokelas ilmaisee oman kantansa perustellen ja havainnollistaen. Esseessä voi olla yleisen tason käsittelyä sekä yksityiskohtaisempia tapausesimerkkejä. Aihe sallii persoonallisen tai pakinoivan käsittely- ja ilmaisutavan.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "fin-2019-hl-i-1-a",
   "subjectId": "finnish",
   "level": "higher",
