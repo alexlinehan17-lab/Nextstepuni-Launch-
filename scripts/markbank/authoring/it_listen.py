@@ -362,6 +362,30 @@ def _sentences(text):
     return text[:end + 1] if end > 0 else ''
 
 
+# Shorter answers the heading repair moved out of these cards' options or
+# verbatims, where they had shipped as full answers. Quoted as the scheme
+# prints them until every listening card quotes its shorter answers.
+# Listening asks whose split prices separate answers in the order they are
+# given, not the printed pieces of one answer (review, 20 Nov).
+ORDER_FREE = {(2019, 'hl', 3, 3)}
+
+KEPT_LESSER = {
+    (2016, 'ol', 2, 4): ['(They were talking loudly and laughing 5 marks)', '(They were talking and laughing 4 marks)',
+                         '(They were messing/playing 3 marks)*', '(They were talking loudly 3 marks)',
+                         '(They were talking 2 marks)', '(They were laughing 2 marks)',
+                         '(They were (trying to) distract him 1 mark)'],
+    (2016, 'ol', 3, 4): ['(She (always) helps/supports him 2 marks)', '(She is kind 2 marks)', '(She is nice 1 mark)',
+                         '(Makes desserts 1 mark)'],
+    (2019, 'ol', 3, 8): ['(Tradition 2 marks)', '(City 1 mark)'],
+    (2022, 'ol', 3, 8): ['(To have a break/On holidays 2 marks)', 'The seaside 1 mark)'],
+    (2024, 'ol', 2, 2): ['(Working young people 4 marks)',
+                         '(People who would use a discount card (at the cinema/ theatre/restaurants) 4 marks)',
+                         'People on a budget (as there are no fees) 4 marks)', '(Young people 3 marks)',
+                         '(Working people 2 marks)', '(Giada herself 1 mark)', '(Children 1 mark)',
+                         '(Cinemas/theatres/restaurants 1 mark)'],
+}
+
+
 def cards(year, level, refuse, row_for, concept_for):
     """Every listening card for one sitting; refusals go to `refuse`."""
     B = Booklet(year, level)
@@ -509,6 +533,18 @@ def cards(year, level, refuse, row_for, concept_for):
                                       for a in part0.answers[:1]))
             if override:
                 rows = _override_rows(S, override, ref)
+            elif components and all(len(a.split()) <= 2 for a in part0.answers) \
+                    and (year, level, d, n) in ORDER_FREE:
+                # Separate one-word answers, not pieces of one: "German 5 marks"
+                # over "Swiss (2+1+1+1)", "Dutch", "English". The first share
+                # goes to the first answer given, in any order.
+                rows = [{'id': 'r-1', 'kind': 'anyN', 'verbatim': 'The answers the scheme accepts in full',
+                         'marks': None,
+                         'group': {'claimMax': len(part0.split), 'perOption': part0.split[0],
+                                   'perOptionSteps': list(part0.split), 'options': list(part0.answers)},
+                         'contextNote': (f'The scheme prints “({"+".join(map(str, part0.split))})”: '
+                                         f'{", ".join(map(str, part0.split))} marks for the first, second '
+                                         f'and further answers given, in any order.')}]
             elif components:
                 # "7 marks (1+1+2+3)" over four bullets: ONE answer the scheme
                 # cuts into four printed components, each worth its term.
@@ -529,6 +565,12 @@ def cards(year, level, refuse, row_for, concept_for):
                 refuse(bad, ref, f'{year} {lvl} scheme, Dialogue {d} ask {ask.item}: '
                                  f'{ask.parts[0].notation!r}')
                 continue
+            kept = KEPT_LESSER.get((year, level, d, n), [])
+            for piece in kept:
+                assert _flat(piece) in _scheme_text(S), (ref, piece)
+            if kept:
+                rows[0]['contextNote'] = (rows[0].get('contextNote', '') + ' The scheme also prints, for '
+                                          'shorter answers: ' + '; '.join(f'“{piece}”' for piece in kept) + '.').strip()
             rows[0]['contextNote'] = (rows[0].get('contextNote', '') +
                                       ' Answer in English or Irish.').strip()
             out.append({

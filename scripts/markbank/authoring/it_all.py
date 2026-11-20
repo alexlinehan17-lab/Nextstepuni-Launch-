@@ -359,6 +359,23 @@ def _paper_label(name, question):
     return m.group(0) if m else name
 
 
+def _own_lesser(part, rows, heads):
+    """Each group row quotes the shorter answers printed under its own heading;
+    the first group's stay in the card's note, with any whose place is unknown."""
+    groups = part.rung_groups or []
+    for row, head in list(zip(rows, heads))[1:]:
+        mine = [(t, m) for (t, m), g in zip(part.rungs, groups) if g == head and t and m is not None]
+        if mine:
+            quoted = '; '.join(f'“{t}” {m} {"mark" if m == 1 else "marks"}' for t, m in mine)
+            row['contextNote'] = (f'The scheme also pays part marks for a shorter answer: {quoted}. '
+                                  + row.get('contextNote', '')).strip()
+    moved = set(heads[1:])
+    keep = [k for k, g in enumerate(groups) if g not in moved] + list(range(len(groups), len(part.rungs)))
+    part.rungs = [part.rungs[k] for k in keep]
+    part.rung_groups = [groups[k] if k < len(groups) else None for k in keep]
+    return rows
+
+
 def _grouped_rows(part, n, ask, question):
     """One option group per heading the scheme prints over a twenty-mark
     summary ask, each claiming as many points as the paper asks for under it.
@@ -408,7 +425,7 @@ def _grouped_rows(part, n, ask, question):
                              'verbatim': f'{head} — the answers the scheme accepts',
                              'marks': None, 'group': group, 'contextNote': note})
             else:
-                return rows
+                return _own_lesser(part, rows, [h for h, _a in part.groups])
     if counts and sum(c for _l, c in counts) == claim \
             and all(len(a) >= c for (_h, a), (_l, c) in zip(part.groups, counts)):
         rows = []
@@ -428,7 +445,7 @@ def _grouped_rows(part, n, ask, question):
                          'verbatim': f'{show} — the answers the scheme accepts', 'marks': None,
                          'group': {'claimMax': count, 'perOption': per[0], 'options': list(answers)},
                          'contextNote': note})
-        return rows
+        return _own_lesser(part, rows, [h for h, _a in part.groups])
     options = [a if h is None else f'{h} — {a}' for h, answers in part.groups for a in answers]
     if len(options) > MAX_OPTIONS:
         return 'the scheme prints more answers than a card can show'
@@ -461,6 +478,17 @@ def _row_for(part, n, ask, question=None):
 
 def _row_for_settled(part, n, ask, question):
     if part.components:
+        if all(len(a.split()) <= 3 for a in part.answers):
+            # Separate short answers, not pieces of one: "1. (a) Rest 8 marks
+            # (3+3+2)" over "Dance", "Food". The first share goes to the first
+            # answer GIVEN, in any order.
+            return [{'id': f'r-{n}', 'kind': 'anyN', 'verbatim': 'The answers the scheme accepts in full',
+                     'marks': None,
+                     'group': {'claimMax': len(part.split), 'perOption': part.split[0],
+                               'perOptionSteps': list(part.split), 'options': list(part.answers)},
+                     'contextNote': (f'The scheme prints “({"+".join(map(str, part.split))})”: '
+                                     f'{", ".join(map(str, part.split))} marks for the first, second and '
+                                     f'further answers given, in any order.')}]
         return [{'id': f'r-{n}-{k}' if len(part.answers) > 1 else f'r-{n}', 'kind': 'point',
                  'verbatim': a, 'marks': m}
                 for k, (a, m) in enumerate(zip(part.answers, part.split), start=1)]

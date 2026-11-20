@@ -338,7 +338,7 @@ class Part:
     __slots__ = ('total', 'split', 'claim', 'directive', 'stated', 'label',
                  'answers', 'rungs', 'notation', 'seq', 'lead', 'confirmed',
                  'groups', 'asides', 'prices', 'components', 'stem', 'notes',
-                 'inline', 'fullnames')
+                 'inline', 'fullnames', 'rung_after', 'rung_groups')
 
     @property
     def counted(self):
@@ -681,6 +681,8 @@ class ItScheme:
             in_note = False
             if PAREN_RUNG.match(t):
                 parts[-1].rungs.append(_rung(t))
+                parts[-1].rung_after = (parts[-1].rung_after or []) + [
+                    parts[-1].answers[-1] if parts[-1].answers else None]
                 continue
             ds = DIRECTIVE_SPLIT.match(t)
             if ds and not parts[-1].answers:
@@ -728,6 +730,8 @@ class ItScheme:
                 in_ladder = False
             if in_ladder:
                 parts[-1].rungs.append(_rung(t))
+                parts[-1].rung_after = (parts[-1].rung_after or []) + [
+                    parts[-1].answers[-1] if parts[-1].answers else None]
                 continue
             # A SECOND priced head inside the block. It has to end the line and
             # be worth at least what one answer of the part above it is worth:
@@ -894,13 +898,14 @@ def _settle(part):
     # One answer's whole worth: the total where an unequal split says how one
     # answer divides, else one share.
     whole = part.total if part.split and len(set(part.split)) > 1 else per
-    kept, demoted = [], []
+    kept, demoted, demoted_after = [], [], []
     for a in part.answers:
         body = INLINE_SPLIT.sub('', a).strip()
         marks = list(BRACKET_MARK.finditer(body))
         bare = BARE_MARK.search(body)
         if bare and int(bare.group(1)) < per and not body.startswith('('):
             demoted.append(_rung(a))
+            demoted_after.append(kept[-1] if kept else None)
         elif (kept and len(marks) == 1 and marks[0].end() >= len(body.rstrip())
               and _completes(kept[-1], int(marks[0].group(1)), whole)):
             # The wrapped tail of the full answer above, not a lesser answer:
@@ -914,8 +919,11 @@ def _settle(part):
               and int(marks[0].group(1)) < per):
             demoted.append(_rung(body[:marks[0].start()] + ' '
                                 + str(marks[0].group(1)) + 'm'))
+            demoted_after.append(kept[-1] if kept else None)
         else:
             kept.append(a)
+    part.rung_after = (part.rung_after or []) + [None] * (len(part.rungs) - len(part.rung_after or []))
+    part.rung_after += demoted_after
     part.answers, part.rungs = kept, part.rungs + demoted
     # The directive printed at the FRONT of the first answer instead of on a
     # line of its own: 2024 Higher A 3(b) prices "(b) 5 marks (3+2)" and
@@ -1050,7 +1058,13 @@ def _settle(part):
                 # unless the paper prints it as a heading. An unbulleted line
                 # under an unbulleted one that ends on a word is a line of its
                 # own (2025 Higher A Q5's Serendippo points).
-                parallel = above and e[1].split()[:2] == above[1].split()[:2] and len(e[1].split()) > 2
+                # Parallel to the BULLETED answer it would continue ("È il
+                # posto …" twice), not to an earlier tail of that answer
+                # (2022 Higher B1 Q5: "Camilla was smaller …" and "Camilla was
+                # calmer …" are both lines of one bullet).
+                head_line = next((x for x in reversed(seq[:k]) if x[3]), above)
+                parallel = (above and e[1].split()[:2] == head_line[1].split()[:2]
+                            and len(e[1].split()) > 2)
                 # Never a bracket ("(A cycling event/For cycling" opens a
                 # shorter answer) or a line priced on its own ("Standard
                 # tickets cost €10 … 2 marks").
@@ -1279,7 +1293,7 @@ def confirm_headings(part, question):
         # The stem every answer completes, when it is the only such line:
         # "They can" over "spend time together", "hug a tree" …; "She lived:"
         # over "in a small town", "in the west of Ireland" …
-        if kind in ('cand', 'head') and at == 0 and not part.lead:
+        if kind in ('cand', 'head') and at == 0 and not part.lead and not bulleted:
             after = [e[1] for e in seq[1:] if (e[0] == 'ans' or (e[0] == 'cand' and _opens_wrapped(e[1])))
                      and not e[1].startswith('(') and not CLOSED_RUNG.match(e[1])]
             others = [e for e in seq[1:] if e[0] in ('cand', 'head')
@@ -1455,6 +1469,16 @@ def confirm_headings(part, question):
             named[-1][1].extend(answers)
         else:
             named.append([label, list(answers)])
+    # The group each shorter answer is printed under: the one holding the
+    # answer it follows (2019 Higher A Q5 prints Serena's shorter answers
+    # under Serena, not under "Why").
+    flat_ = lambda t: BULLET.sub('', t or '').strip()[:40]
+    part.rung_groups = []
+    after = (part.rung_after or []) + [None] * (len(part.rungs) - len(part.rung_after or []))
+    for k, (_t, _m) in enumerate(part.rungs):
+        where = flat_(after[k])
+        part.rung_groups.append(next((g[0] for g in named for a in g[1]
+                                      if where and a.startswith(where[:30])), None))
     headed = [g for g in named if g[0]]
     # One heading the scheme marks, over the second run of answers only: 2025
     # Higher B2A Q5 prints its passage points under "The candidate must refer
@@ -1503,6 +1527,7 @@ def _recut(ask, alt):
         if len(other.answers) < part.claim:
             continue
         part.answers, part.rungs = other.answers, other.rungs
+        part.rung_after = other.rung_after
         part.seq = other.seq
         part.lead = part.lead or other.lead
         part.label = part.label or other.label

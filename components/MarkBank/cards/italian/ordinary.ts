@@ -14021,9 +14021,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention the three main hobbies of\nItalians.\n(Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "Rest", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Cooking” 1 mark." },
-    { id: "r-1-2", kind: "point", verbatim: "Dance", marks: 3 },
-    { id: "r-1-3", kind: "point", verbatim: "Food", marks: 2 },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Cooking” 1 mark. The scheme prints “(3+3+2)”: 3, 3, 2 marks for the first, second and further answers given, in any order.", group: {"claimMax":3,"options":["Rest","Dance","Food"],"perOption":3,"perOptionSteps":[3,3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16461,7 +16459,7 @@ export const CARDS: SecCard[] = [
     questionText: "When is the voucher valid?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1-1", kind: "point", verbatim: "January", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “For six months after purchase/In the next 6 months” 1 mark. The scheme also prints: “(The answers “For six months after purchase” or “In the next six months” will only be acceptable as an answer in”." },
+    { id: "r-1-1", kind: "point", verbatim: "January", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “For six months after purchase/In the next 6 months” 1 mark. The scheme also prints: “(The answers “For six months after purchase” or “In the next six months” will only be acceptable as an answer in Question 4. if not used already as an answer in Question 3)”." },
     { id: "r-1-2", kind: "point", verbatim: "February", marks: 1 },
     { id: "r-1-3", kind: "point", verbatim: "March", marks: 1 },
     { id: "r-1-4", kind: "point", verbatim: "April", marks: 1 },
@@ -18383,8 +18381,8 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about the working hours\nfor the job in the fourth advertisement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "You work four hours a day", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They are of a part-time nature” 1 mark.", permittedMarks: [0,1,2] },
-    { id: "r-2", kind: "point", verbatim: "You work three days a week", marks: 2, contextNote: "The scheme adds to the shorter answer “They are of a part-time nature”: “* only if not mentioned above”." },
+    { id: "r-1", kind: "criterion", verbatim: "You work four hours a day", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They are of a part-time nature” 1 mark (“* only if not mentioned above”).", permittedMarks: [0,1,2] },
+    { id: "r-2", kind: "criterion", verbatim: "You work three days a week", marks: 2, contextNote: "The scheme also pays part marks for a shorter answer: “They are of a part-time nature” 1 mark (“* only if not mentioned above”).", permittedMarks: [0,1,2] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19426,7 +19424,7 @@ export const CARDS: SecCard[] = [
     questionText: "What were the two people in the queue behind Raffaele doing?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "They were talking loudly and laughing in order to distract him", marks: 6, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "They were talking loudly and laughing in order to distract him", marks: 6, contextNote: "The scheme also prints, for shorter answers: “(They were talking loudly and laughing 5 marks)”; “(They were talking and laughing 4 marks)”; “(They were messing/playing 3 marks)*”; “(They were talking loudly 3 marks)”; “(They were talking 2 marks)”; “(They were laughing 2 marks)”; “(They were (trying to) distract him 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19566,7 +19564,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Michele say about his mother?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"options":["She is patient","She is generous","She always gives him lifts/ takes him to matches","She makes desserts for the team","His team mates all love her"],"perOption":4,"perOptionSteps":[4,3]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(She (always) helps/supports him 2 marks)”; “(She is kind 2 marks)”; “(She is nice 1 mark)”; “(Makes desserts 1 mark)”. Answer in English or Irish.", group: {"claimMax":2,"options":["She is patient","She is generous","She always gives him lifts/ takes him to matches","She makes desserts for the team","His team mates all love her"],"perOption":4,"perOptionSteps":[4,3]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
