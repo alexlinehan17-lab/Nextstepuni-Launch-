@@ -528,19 +528,19 @@
     "refsHash": "7fcb330db005a968"
   },
   "lithuanian": {
-    "cards": 502,
-    "contentHash": "c6ca672d853f5635",
-    "coveragePct": 98.6,
-    "covered": 502,
-    "excluded": 266,
+    "cards": 512,
+    "contentHash": "a58b09dc40f94438",
+    "coveragePct": 98.8,
+    "covered": 512,
+    "excluded": 258,
     "leaves": 779,
-    "open": 11,
+    "open": 9,
     "orphans": 0,
     "papers": {
       "count": 32,
       "hash": "a95df1b95d3c2107"
     },
-    "refsHash": "a6883c2da768a3cf"
+    "refsHash": "b0c2133c630d844e"
   },
   "maltese": {
     "cards": 29,

@@ -24,7 +24,7 @@ sys.path.insert(0, HERE)
 AUTHORED = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'lithuanian.json')
 FILINGS = '/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/languages-q3/filings-pending.json'
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
-KINDS = ('listening',)
+KINDS = ('listening', 'reading')
 
 
 def new_cards(year, level, kinds):
@@ -35,7 +35,28 @@ def new_cards(year, level, kinds):
         if refused:
             raise ValueError(f'{year} {level}: listening asks refused {refused}')
         out += cards
+    if 'reading' in kinds:
+        import lt_reading
+        cards, refused = lt_reading.reading_cards(year, level)
+        if refused:
+            raise ValueError(f'{year} {level}: reading asks refused {refused}')
+        out += cards
     return out
+
+
+ROMAN_ORDER = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii']
+
+
+def paper_order(card):
+    """Where a card's ask sits in the booklet: its section, question, letter
+    and row, read from its own questionRef ("2026 OL Section A Q1(e)(ii)")."""
+    import re
+    m = re.match(r'^\d{4} [HO]L Section (\w+) Q(\d+)(?:\(([a-z])\))?(?:\(([ivx]+|\d+)\))?', card['questionRef'])
+    if not m:
+        raise ValueError(f'{card["id"]}: unreadable questionRef {card["questionRef"]!r}')
+    sec, q, letter, row = m.groups()
+    rank = (ROMAN_ORDER.index(row) + 1 if row in ROMAN_ORDER else int(row)) if row else 0
+    return (sec.startswith('L'), sec, int(q), letter or '', rank)
 
 
 def add(year, level, kinds):
@@ -58,10 +79,18 @@ def add(year, level, kinds):
     mine = [i for i, x in enumerate(out) if x['year'] == year and x['level'] == lv]
     if not mine:
         raise ValueError(f'{year} {level}: no card of this sitting in the bank to place beside')
-    at = max(mine)
     for c in new:
-        at += 1
-        out.insert(at, c)
+        if c['section'].startswith('L'):
+            # the listening booklet follows the written one, in its own order
+            at = max(i for i, x in enumerate(out) if x['year'] == year and x['level'] == lv)
+        else:
+            # a reading card goes after the last card of its sitting that the
+            # booklet prints before it, so the sitting stays in paper order
+            before = [i for i, x in enumerate(out) if x['year'] == year and x['level'] == lv
+                      and paper_order(x) < paper_order(c)]
+            at = max(before) if before else min(i for i, x in enumerate(out)
+                                                if x['year'] == year and x['level'] == lv) - 1
+        out.insert(at + 1, c)
     with open(AUTHORED, 'w', encoding='utf-8') as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)
         fh.write('\n')

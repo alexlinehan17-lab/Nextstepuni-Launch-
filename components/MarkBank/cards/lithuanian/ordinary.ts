@@ -5908,6 +5908,102 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC550GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-a-1-e-ii", topicId: "lithuanian-2-1", conceptId: "isrinkite-tinkama-zodi-irasykite-remkites-nepastebimai",
+    section: "U1", questionRef: "2026 OL Section A Q1(e)(ii)",
+    stem: "Pirma užduotis",
+    questionText: "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) nepastebimai laiškus neprastos dokumentus portalus permesti akimis",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "permesti akimis portalus", marks: 1, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PIRMA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-a-1-e-iii", topicId: "lithuanian-2-1", conceptId: "isrinkite-tinkama-zodi-irasykite-remkites-nepastebimai",
+    section: "U1", questionRef: "2026 OL Section A Q1(e)(iii)",
+    stem: "Pirma užduotis",
+    questionText: "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) nepastebimai laiškus neprastos dokumentus portalus atsakyti į",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "atsakyti į laiškus", marks: 1, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PIRMA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-a-1-e-iv", topicId: "lithuanian-2-1", conceptId: "isrinkite-tinkama-zodi-irasykite-remkites-nepastebimai",
+    section: "U1", questionRef: "2026 OL Section A Q1(e)(iv)",
+    stem: "Pirma užduotis",
+    questionText: "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) nepastebimai laiškus neprastos dokumentus portalus peržiūrėti ir patvirtinti",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "peržiūrėti ir patvirtinti dokumentus", marks: 1, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PIRMA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-a-1-e-v", topicId: "lithuanian-2-1", conceptId: "isrinkite-tinkama-zodi-irasykite-remkites-nepastebimai",
+    section: "U1", questionRef: "2026 OL Section A Q1(e)(v)",
+    stem: "Pirma užduotis",
+    questionText: "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) nepastebimai laiškus neprastos dokumentus portalus naujienos",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "naujienos neprastos", marks: 1, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PIRMA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
     id: "lt-2026-ol-a-1-f", topicId: "lithuanian-2-1", conceptId: "viena-moteriskosios-gimines-daiktavardi",
     section: "U1", questionRef: "2026 OL Section A Q1(f)",
     stem: "Pirma užduotis",
@@ -6052,6 +6148,33 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC550GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-a-2-a", topicId: "lithuanian-2-1", conceptId: "sudarykite-sakinius-irasykite-atsakymo-raide-prie",
+    section: "U2", questionRef: "2026 OL Section A Q2(a)",
+    stem: "Antra užduotis",
+    questionText: "Sudarykite sakinius. Įrašykite atsakymo raidę prie pateiktų skaičių. (1 dalis)\n1. Keturiolika tūkstančių … A. ... mėnesių.\n2. Vienuolika … B. ... Europos valstybių.\n3. Trisdešimt … C. ... kilometrų.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "C", marks: 2, contextNote: "For “1. Keturiolika tūkstančių …”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "A", marks: 2, contextNote: "For “2. Vienuolika …”" },
+    { id: "r-3", kind: "point", verbatim: "B", marks: 2, contextNote: "For “3. Trisdešimt …”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ANTRA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
     id: "lt-2026-ol-a-2-b", topicId: "lithuanian-2-1", conceptId: "riedlente-reikejo-keisti-net-devynis-kartus",
     section: "U2", questionRef: "2026 OL Section A Q2(b)",
     stem: "Antra užduotis",
@@ -6184,6 +6307,106 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["suplyšo drabužiai","suplyšo batai","sugedo riedlentė","buvo kelio remonto darbai"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ANTRA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-a-2-h-ii", topicId: "lithuanian-2-1", conceptId: "isrinkite-tinkama-zodi-irasykite-remkites-piesiniu",
+    section: "U2", questionRef: "2026 OL Section A Q2(h)(ii)",
+    stem: "Antra užduotis",
+    questionText: "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (3 dalis) piešinių keliauti lengvesnis pinigų dietą nusprendžiau",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "nusprendžiau keliauti", marks: 2, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ANTRA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-a-2-h-iii", topicId: "lithuanian-2-1", conceptId: "isrinkite-tinkama-zodi-irasykite-remkites-piesiniu",
+    section: "U2", questionRef: "2026 OL Section A Q2(h)(iii)",
+    stem: "Antra užduotis",
+    questionText: "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (3 dalis) piešinių keliauti lengvesnis pinigų dietą supratau, kad turiu pakankamai",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "supratau, kad turiu pakankamai pinigų", marks: 2, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ANTRA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-a-2-h-iv", topicId: "lithuanian-2-1", conceptId: "isrinkite-tinkama-zodi-irasykite-remkites-piesiniu",
+    section: "U2", questionRef: "2026 OL Section A Q2(h)(iv)",
+    stem: "Antra užduotis",
+    questionText: "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (3 dalis) piešinių keliauti lengvesnis pinigų dietą galiu rašyti knygą apie savo",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "galiu rašyti knygą apie savo dietą", marks: 2, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ANTRA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-a-2-h-v", topicId: "lithuanian-2-1", conceptId: "isrinkite-tinkama-zodi-irasykite-remkites-piesiniu",
+    section: "U2", questionRef: "2026 OL Section A Q2(h)(v)",
+    stem: "Antra užduotis",
+    questionText: "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (3 dalis) piešinių keliauti lengvesnis pinigų dietą grįžau keturiolika kilogramų",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "grįžau keturiolika kilogramų lengvesnis", marks: 2, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6384,6 +6607,33 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "namus", marks: 4, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TREČIA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-a-3-g", topicId: "lithuanian-2-1", conceptId: "sudarykite-sakinius-irasykite-atsakymo-raide-prie",
+    section: "U3", questionRef: "2026 OL Section A Q3(g)",
+    stem: "Trečia užduotis",
+    questionText: "Sudarykite sakinius. Įrašykite atsakymo raidę prie pateiktų skaičių. (3 dalis)\n1. Lietuviškas maistas ... A. ... džiugina Lietuvą.\n2. Naujiena ... B. ... gali kurti modernius produktus.\n3. Šalis ... C. ... keliauja į kosmosą.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "C", marks: 2, contextNote: "For “1. Lietuviškas maistas ...”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "A", marks: 2, contextNote: "For “2. Naujiena ...”" },
+    { id: "r-3", kind: "point", verbatim: "B", marks: 2, contextNote: "For “3. Šalis ...”" },
     ],
     sourceMaterial: {
           "kind": "source-text",

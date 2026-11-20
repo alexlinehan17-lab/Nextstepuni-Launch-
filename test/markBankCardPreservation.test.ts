@@ -1561,14 +1561,30 @@ const portugueseAddedTotal = [...Object.values(PORTUGUESE_ADDED), ...Object.valu
  * Listening Comprehension Test (sections LA-LE, CARD-STANDARD 10g), and then
  * the asks the shared generator refused, each named. */
 const LITHUANIAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
-  2026: { higher: 31, ordinary: 30 },
+  2026: { higher: 31, ordinary: 40 },
   2025: { higher: 28, ordinary: 30 },
   2024: { higher: 0, ordinary: 27 },
   2023: { higher: 25, ordinary: 25 },
 };
-const LITHUANIAN_ADDED_TO_FROZEN_ID = /^lt-202[2-6]-(?:hl|ol)-l[a-e]-/;
+/* The listening booklet (sections LA-LE) and Section B's written tasks, which
+ * have no live card, by their ids; the reading asks the generator refused, by
+ * name, since their ids share the live cards' form. */
+const LITHUANIAN_ADDED_TO_FROZEN_ID = /^lt-202[2-6]-(?:hl|ol)-(?:l[a-e]-|b-)/;
+const LITHUANIAN_ADDED_TO_FROZEN_READING = new Set<string>([
+  'lt-2026-ol-a-1-e-ii',
+  'lt-2026-ol-a-1-e-iii',
+  'lt-2026-ol-a-1-e-iv',
+  'lt-2026-ol-a-1-e-v',
+  'lt-2026-ol-a-2-a',
+  'lt-2026-ol-a-2-h-ii',
+  'lt-2026-ol-a-2-h-iii',
+  'lt-2026-ol-a-2-h-iv',
+  'lt-2026-ol-a-2-h-v',
+  'lt-2026-ol-a-3-g',
+]);
 const isLithuanianAdded = (id: string) => /^lt-\d{4}-/.test(id)
-  && Number(id.slice(3, 7)) in LITHUANIAN_ADDED_TO_FROZEN && LITHUANIAN_ADDED_TO_FROZEN_ID.test(id);
+  && Number(id.slice(3, 7)) in LITHUANIAN_ADDED_TO_FROZEN
+  && (LITHUANIAN_ADDED_TO_FROZEN_ID.test(id) || LITHUANIAN_ADDED_TO_FROZEN_READING.has(id));
 const lithuanianAddedTotal = Object.values(LITHUANIAN_ADDED_TO_FROZEN)
   .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
 
@@ -3195,7 +3211,7 @@ describe('Mark Bank card preservation', () => {
       .toBe(true);
   });
 
-  it('adds Lithuanian listening on top of the frozen 306 cards', () => {
+  it('adds Lithuanian listening, reading and written cards on top of the frozen 306 cards', () => {
     const cards = [...LITHUANIAN_HIGHER, ...LITHUANIAN_ORDINARY];
     for (const [year, counts] of Object.entries(LITHUANIAN_ADDED_TO_FROZEN)) {
       const added = cards.filter(card => card.year === Number(year) && isLithuanianAdded(card.id));

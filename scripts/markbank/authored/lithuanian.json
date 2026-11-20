@@ -20538,6 +20538,150 @@
   }
  },
  {
+  "id": "lt-2026-ol-a-1-e-ii",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "U1",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "isrinkite-tinkama-zodi-irasykite-remkites-nepastebimai",
+  "questionRef": "2026 OL Section A Q1(e)(ii)",
+  "questionText": "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) nepastebimai laiškus neprastos dokumentus portalus permesti akimis",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "permesti akimis portalus",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 Marks (4 x 1)' over rows (ii)-(v); row (i) is printed answered as the worked example. The paper prints this ask on page 5 of the question booklet.",
+  "stem": "Pirma užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PIRMA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2026-ol-a-1-e-iii",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "U1",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "isrinkite-tinkama-zodi-irasykite-remkites-nepastebimai",
+  "questionRef": "2026 OL Section A Q1(e)(iii)",
+  "questionText": "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) nepastebimai laiškus neprastos dokumentus portalus atsakyti į",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "atsakyti į laiškus",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 Marks (4 x 1)' over rows (ii)-(v); row (i) is printed answered as the worked example. The paper prints this ask on page 5 of the question booklet.",
+  "stem": "Pirma užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PIRMA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2026-ol-a-1-e-iv",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "U1",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "isrinkite-tinkama-zodi-irasykite-remkites-nepastebimai",
+  "questionRef": "2026 OL Section A Q1(e)(iv)",
+  "questionText": "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) nepastebimai laiškus neprastos dokumentus portalus peržiūrėti ir patvirtinti",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "peržiūrėti ir patvirtinti dokumentus",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 Marks (4 x 1)' over rows (ii)-(v); row (i) is printed answered as the worked example. The paper prints this ask on page 5 of the question booklet.",
+  "stem": "Pirma užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PIRMA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2026-ol-a-1-e-v",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "U1",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "isrinkite-tinkama-zodi-irasykite-remkites-nepastebimai",
+  "questionRef": "2026 OL Section A Q1(e)(v)",
+  "questionText": "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) nepastebimai laiškus neprastos dokumentus portalus naujienos",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "naujienos neprastos",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 Marks (4 x 1)' over rows (ii)-(v); row (i) is printed answered as the worked example. The paper prints this ask on page 5 of the question booklet.",
+  "stem": "Pirma užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PIRMA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
   "id": "lt-2026-ol-a-1-f",
   "subjectId": "lithuanian",
   "level": "ordinary",
@@ -20781,6 +20925,57 @@
   }
  },
  {
+  "id": "lt-2026-ol-a-2-a",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "U2",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "sudarykite-sakinius-irasykite-atsakymo-raide-prie",
+  "questionRef": "2026 OL Section A Q2(a)",
+  "questionText": "Sudarykite sakinius. Įrašykite atsakymo raidę prie pateiktų skaičių. (1 dalis)\n1. Keturiolika tūkstančių … A. ... mėnesių.\n2. Vienuolika … B. ... Europos valstybių.\n3. Trisdešimt … C. ... kilometrų.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C",
+    "marks": 2,
+    "contextNote": "For “1. Keturiolika tūkstančių …”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A",
+    "marks": 2,
+    "contextNote": "For “2. Vienuolika …”"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 2,
+    "contextNote": "For “3. Trisdešimt …”"
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 Marks (3 x 2)' and answers the grid in one line, \"1. 2. 3.\" over \"C A B\". The paper prints this task on page 8 of the question booklet; the census counts it once (10c).",
+  "stem": "Antra užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ANTRA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    7,
+    8
+   ],
+   "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
   "id": "lt-2026-ol-a-2-b",
   "subjectId": "lithuanian",
   "level": "ordinary",
@@ -21019,6 +21214,154 @@
    }
   ],
   "notes": "The scheme prints the tariff as '(2 x 2)'; the paper prints this ask on page 9 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "stem": "Antra užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ANTRA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    7,
+    8
+   ],
+   "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2026-ol-a-2-h-ii",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "U2",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "isrinkite-tinkama-zodi-irasykite-remkites-piesiniu",
+  "questionRef": "2026 OL Section A Q2(h)(ii)",
+  "questionText": "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (3 dalis) piešinių keliauti lengvesnis pinigų dietą nusprendžiau",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "nusprendžiau keliauti",
+    "marks": 2,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '8 Marks (4 x 2)' over rows (ii)-(v); row (i) is printed answered as the worked example. The paper prints this ask on page 9 of the question booklet.",
+  "stem": "Antra užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ANTRA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    7,
+    8
+   ],
+   "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2026-ol-a-2-h-iii",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "U2",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "isrinkite-tinkama-zodi-irasykite-remkites-piesiniu",
+  "questionRef": "2026 OL Section A Q2(h)(iii)",
+  "questionText": "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (3 dalis) piešinių keliauti lengvesnis pinigų dietą supratau, kad turiu pakankamai",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "supratau, kad turiu pakankamai pinigų",
+    "marks": 2,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '8 Marks (4 x 2)' over rows (ii)-(v); row (i) is printed answered as the worked example. The paper prints this ask on page 9 of the question booklet.",
+  "stem": "Antra užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ANTRA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    7,
+    8
+   ],
+   "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2026-ol-a-2-h-iv",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "U2",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "isrinkite-tinkama-zodi-irasykite-remkites-piesiniu",
+  "questionRef": "2026 OL Section A Q2(h)(iv)",
+  "questionText": "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (3 dalis) piešinių keliauti lengvesnis pinigų dietą galiu rašyti knygą apie savo",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "galiu rašyti knygą apie savo dietą",
+    "marks": 2,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '8 Marks (4 x 2)' over rows (ii)-(v); row (i) is printed answered as the worked example. The paper prints this ask on page 9 of the question booklet.",
+  "stem": "Antra užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ANTRA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    7,
+    8
+   ],
+   "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2026-ol-a-2-h-v",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "U2",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "isrinkite-tinkama-zodi-irasykite-remkites-piesiniu",
+  "questionRef": "2026 OL Section A Q2(h)(v)",
+  "questionText": "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (3 dalis) piešinių keliauti lengvesnis pinigų dietą grįžau keturiolika kilogramų",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "grįžau keturiolika kilogramų lengvesnis",
+    "marks": 2,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '8 Marks (4 x 2)' over rows (ii)-(v); row (i) is printed answered as the worked example. The paper prints this ask on page 9 of the question booklet.",
   "stem": "Antra užduotis",
   "sourceMaterial": {
    "kind": "source-text",
@@ -21371,6 +21714,57 @@
    }
   ],
   "notes": "The scheme prints the tariff as '4 Marks'; the paper prints this ask on page 11 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "stem": "Trečia užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TREČIA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    10,
+    11
+   ],
+   "attribution": "SEC Lithuanian 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2026-ol-a-3-g",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "U3",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "sudarykite-sakinius-irasykite-atsakymo-raide-prie",
+  "questionRef": "2026 OL Section A Q3(g)",
+  "questionText": "Sudarykite sakinius. Įrašykite atsakymo raidę prie pateiktų skaičių. (3 dalis)\n1. Lietuviškas maistas ... A. ... džiugina Lietuvą.\n2. Naujiena ... B. ... gali kurti modernius produktus.\n3. Šalis ... C. ... keliauja į kosmosą.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C",
+    "marks": 2,
+    "contextNote": "For “1. Lietuviškas maistas ...”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A",
+    "marks": 2,
+    "contextNote": "For “2. Naujiena ...”"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 2,
+    "contextNote": "For “3. Šalis ...”"
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 Marks (3 x 2)' and answers the grid in one line, \"1. 2. 3.\" over \"C A B\". The paper prints this task on page 12 of the question booklet; the census counts it once (10c).",
   "stem": "Trečia užduotis",
   "sourceMaterial": {
    "kind": "source-text",
