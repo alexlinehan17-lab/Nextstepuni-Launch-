@@ -908,3 +908,1029 @@ SPECS[2017] = [
       rownote=both(quote(S(155, after='2. '), lead='The scheme reprints this title as'), _examples_2017),
       question=QP(4, ESSAY_2017, '2. “Mans', 'Atklājiet šo tematu')),
 ]
+
+
+# ====================================================================== 2018
+# ================================================================ 2018 HL ===
+# Drafted (small-languages lane, 20 Nov): the eight open asks of this sitting,
+# I2-I6, II, III1, III2. Live: I1 (Q1 carded whole, lv-2018-hl-i-1); not
+# touched (audited: see latvian-live-faults-2018-2026.json; no fault found).
+# Paper (rendered pp2-4): "LATVIEŠU VALODA", "Maksimālais punktu skaits – 100",
+# the instruction with the rule "... Visām atbildēm jābūt latviski." (p2
+# y109-153); the title "Beznosacījuma stāstus meklējot" (p2 y197), nine
+# numbered paragraphs p2 y219 to p3 y760 (an interview, no byline); p4 holds
+# the questions: "I daļa (30 punkti)" (y65), Q1 "(5 punkti)" over a)-e)
+# (live), Q2-Q6 "(5 punkti)" each; "II daļa (30 punkti)" (y491), the
+# commentary, ONE task with no number ("Izsakiet savu viedokli par šo
+# apgalvojumu! (vismaz 100 vārdu)" over the statement-question, y521-567);
+# "III daļa (40 punkti)" (y614), the instruction "Uzrakstiet pārspriedumu par
+# vienu no tematiem! (ne mazāk kā 300 vārdu)" (y638) over titles printed
+# "1.“Tas ..." (y662) and "2.“Neskati ..." (y710-741), "vai" between them.
+# CENSUS: every printed ask is keyed (I1a-e, I2-I6, II, III1, III2). The
+# census text for I4 keeps the paper's "(5 punkti)." with the stop the paper
+# sets AFTER the price (p4 y331), so the question is cut from the paper's
+# lines here; III1's text ends with the "vai" printed under it.
+# PRICES (the lt walker reads no per-ask price, so PP() cannot apply):
+# - Q2 "2. Paskaidrojiet ..." (p4 y243), Q3 'dzīvība.” (5 punkti)' (y288), Q4
+#   "fragmentārajai pasaulei! (5 punkti)." (y331), Q6 "ceremoniju Latvijas
+#   lepnums, ..." (y427): "(5 punkti)" at the end of the question's own last
+#   line (rendered p4, right-hand column), PaperP.
+# - Q5: "(5 punkti)" on a line of its own under the question (p4 x431 y383),
+#   PY(4, 383).
+# - II: "II daļa (30 punkti)" (PARTP); III1/III2: "III daļa (40 punkti)"
+#   (PARTP). The scheme prints the same "(5 punkti)" on each reprint, "(30
+#   punkti)" (98) and "(40 punkti)" (105).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-4 = printed pages 2-3; p2 the
+# note to teachers; pp5-6 blank; answers in italics under each reprint):
+# - Q2 (61 reprint): one paragraph, 62-66. Q3 (67-68): one paragraph, 69-73.
+#   Q4 (74-75): one paragraph, 76-80. Q5 (85): one paragraph, 86-91. Q6
+#   (92-93): one paragraph, 94-97. No mark inside any answer.
+# - Part II (98 the head; 99-100 reprint the task's second and third lines
+#   only, with "(ap 100 vārdu)"): one italic paragraph, 101-104.
+# - Part III (105 the head): title 1 with "(ne mazāk kā 300 vārdu)" (106) over
+#   one italic paragraph, 107-108; "vai" (109); title 2 (110-112) over one
+#   italic paragraph, 113-116.
+#   NO criteria anywhere in this scheme.
+# SHAPES:
+# - I2-I6: one printed model paragraph each: ONE claimable row, one(sel,
+#   price) at the paper's 5.
+# - II: one paragraph of model content for a 30-mark commentary with no
+#   criteria: shown, whole=True on the paper's 30 (10a; as 2013 II).
+# - III1/III2: one paragraph of model content under each title, no criteria:
+#   shown, whole=True on the paper's 40 (10a), labelled as an example.
+# JUDGEMENT CALLS:
+# - Part II (10f): the paper prints "Izsakiet savu viedokli par šo
+#   apgalvojumu! (vismaz 100 vārdu)" over the task; the scheme reprints the
+#   task alone with "(ap 100 vārdu)" (99-100). The paper's words are the
+#   question (the census's text); the scheme's reprint quoted on the row.
+# - Q2: the scheme's reprint ends "?" where the paper prints "!" (61);
+#   punctuation only, not quoted. Q6's reprint differs in spacing only.
+# - I4's question: the paper's two lines, the second cut before its price
+#   (the census keeps "(5 punkti)." and the stop would be left standing).
+# - III1/III2's questions: the instruction line and the title, the title's
+#   printed number "1." / "2." (set without a space before the quotation mark,
+#   which the marker reader does not take) cut off at its own anchor.
+# - Reading text: pp2-3 (rendered: the title and paragraphs 1-5 on p2, 6-9 on
+#   p3; p4 holds only the questions). The live Q1 card's sourceMaterial.pages
+#   [2, 3] AGREE with the render.
+# GLYPHS: none; ā č ē ģ ī ķ ļ ņ š ū ž read as the render shows them in every
+# line used (the only non-Latvian letters are the cover's á ú). Lifted as
+# printed: "veiklāk pamanīt" (69), "viedo sižetus", "atzīsts" (78-79),
+# "mazāk vērtīgāki" (77), "ieguldīs ... sasniegs" (107-108).
+
+ESSAY_2018 = 'Uzrakstiet pārspriedumu'
+
+
+def _part2_2018(d):
+    return ('The scheme prints this one paragraph under the task, with no mark inside it and no criteria '
+            f'for the part. It reprints the task as “{L(99, 100).text(d)}”')
+
+
+def _essay_2018(d):
+    return ('The scheme prints this paragraph under the title, with no mark inside it and no criteria for '
+            'the part: an example, not a checklist.')
+
+
+def _q4_2018(d, _q=None):
+    return f"{PC(4, '4. Izmantojot', after='4. ').text(d)} {PC(4, 'fragmentārajai', before=' (5').text(d)}"
+
+
+def _title1_2018(d, _q=None):
+    return f"{PL(4, ESSAY_2018).text(d)} {PC(4, '1.“Tas', after='1.').text(d)}"
+
+
+def _title2_2018(d, _q=None):
+    return (f"{PL(4, ESSAY_2018).text(d)} {PC(4, '2.“Neskati', after='2.').text(d)} "
+            f"{PL(4, 'par cilvēku pēc').text(d)} {PL(4, 'apgalvojuma patiesumu').text(d)}")
+
+
+SPECS[2018] = [
+    R('I2', [one(L(62, 66), PaperP(4, '2. Paskaidrojiet'))], total=PaperP(4, '2. Paskaidrojiet'), pages=(2, 3)),
+    R('I3', [one(L(69, 73), PaperP(4, 'dzīvība.”'))], total=PaperP(4, 'dzīvība.”'), pages=(2, 3)),
+    R('I4', [one(L(76, 80), PaperP(4, 'fragmentārajai'))], total=PaperP(4, 'fragmentārajai'), pages=(2, 3),
+      question=_q4_2018),
+    R('I5', [one(L(86, 91), PY(4, 383))], total=PY(4, 383), pages=(2, 3)),
+    R('I6', [one(L(94, 97), PaperP(4, 'ceremoniju Latvijas'))], total=PaperP(4, 'ceremoniju Latvijas'),
+      pages=(2, 3)),
+    R('II', [shown(L(101, 104))], whole=True, rownote=_part2_2018, pages=(2, 3)),
+    R('III1', [shown(L(107, 108))], whole=True, rownote=_essay_2018, question=_title1_2018),
+    R('III2', [shown(L(113, 116))], whole=True, rownote=_essay_2018, question=_title2_2018),
+]
+
+
+# ====================================================================== 2019
+# ================================================================ 2019 HL ===
+# Drafted (small-languages lane, 20 Nov): the eight open asks of this sitting,
+# I2-I6, II, III1, III2. Live: I1 (Q1 carded whole, lv-2019-hl-i-1); not
+# touched (audited: see latvian-live-faults-2018-2026.json; no fault found).
+# Paper (rendered pp2-4): "LATVIEŠU VALODA", "Maksimālais punktu skaits – 100",
+# the instruction with the rule "... Visām atbildēm jābūt latviski." (p2
+# y141-155); the title "Arābs ar Daugavas asinīm" and "Fragments no
+# intervijas ar Hosamu Abu Meri." (p2 y181-195), ten numbered paragraphs p2
+# y217 to p3 y408, the byline "Pēteris Rudaks, „Diena”, 2007.gada septembris"
+# (p3 y429); "I daļa (30 punkti)" (p3 y493), Q1 "(5 punkti)" over a)-e) (live)
+# and Q2 on p3, Q3-Q6 on p4, "(5 punkti)" each; "II daļa (30 punkti)" (p4
+# y369), the commentary, ONE task with no number; "III daļa (40 punkti)" (p4
+# y514), the instruction "Uzrakstiet pārspriedumu par vienu no tēmām! (ne
+# mazāk kā 300 vārdu)" (y543) over two titles numbered "1." (y585) and "2."
+# (y643-672), "vai" between them.
+# CENSUS: every printed ask is keyed (I1a-e, I2-I6, II, III1, III2). The
+# census text for I1d is the expression alone, without the stem "Izskaidrojiet
+# vārdus un frāzes!" the other letters carry (I1 is live, carded whole);
+# III1's text ends with the "vai" printed under it.
+# PRICES (the lt walker reads no per-ask price, so PP() cannot apply):
+# - Q2 "2. Kāpēc Abu Meri ... (5 punkti)" (p3 y726), Q3 "3. Par kādiem ..."
+#   (p4 y64), Q5 "apgalvojumu! (5 punkti)" (p4 y211), Q6 "atbildība? (5
+#   punkti)" (p4 y283): the price at the end of the question's own last line,
+#   PaperP.
+# - Q4: "(5 punkti)" on a line of its own under the question (p4 x89 y137),
+#   PY(4, 137).
+# - II: "II daļa (30 punkti)" (PARTP); III1/III2: "III daļa (40 punkti)"
+#   (PARTP). The scheme prints the same (101, 115).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-4 = printed pages 1-2; p2 the
+# note to teachers; pp5-6 blank; each point opens with a check mark ✓, which
+# the text layer reads as U+2713 and the selectors take off as a bullet):
+# - Q2 (59 reprint): four points, 60-61, 62, 63, 64.
+# - Q3 (65): three points, 66-67, 68, 69.
+# - Q4 (70-71): two points, 72, 73-76.
+# - Q5 (77-78): three points, 83-85, 86-88, 89-90 (p4).
+# - Q6 (91-92): four points, 93-94, 95-97, 98, 99-100.
+#   No mark on any point, none says how many are wanted.
+# - Part II (101-104 reprint the head and the task as the paper prints it):
+#   four points, 105-108, 109-110, 111-112, 113-114.
+# - Part III (115-120): the head, the instruction, both titles and "vai" --
+#   and nothing under them (rendered p4; pp5-6 blank). NO criteria anywhere in
+#   this scheme.
+# SHAPES:
+# - I2-I6: points with no per-point mark: shown rows, whole=True on the
+#   paper's printed 5 (10a).
+# - II: four points, shown, whole=True on the paper's 30 (10a), labelled as
+#   examples.
+# - III1/III2: nothing printed under the titles -> unprinted (ruling 4) at
+#   the paper's 40, the note saying what the scheme does print.
+# JUDGEMENT CALLS:
+# - Part II's second point runs over a line that opens with a dash, "– tā ir
+#   viņa identitāte." (110, rendered p4): the dash is printed inside the
+#   sentence, so line 110 is lifted raw (SR), keeping it.
+# - Q2's first point and Q4's second carry the text's own quotations,
+#   lifted as printed.
+# - III2's title: the paper prints "... noderīgi vai laika tērēšana”. / Lūdzu
+#   analizējiet abus aspektus!" (p4 y643-672); the scheme reprints the second
+#   line as "Lūdzu analizējiet abus aspektus!”." (120): punctuation only, not
+#   quoted.
+# - Questions: the census's text for I2-I6 and II (checked on the render; no
+#   price); III1/III2 the instruction line and the title (III1's census text
+#   carries the "vai", III2's is the bare title).
+# - Reading text: pp2-3 (rendered: title and paragraphs 1-6 on p2, 7-10 and
+#   the byline on p3 above "I daļa"). The live Q1 card's sourceMaterial.pages
+#   [2, 3] AGREE with the render.
+# GLYPHS: none; ā č ē ģ ī ķ ļ ņ š ū ž read as the render shows them in every
+# line used. Lifted as printed: "iegūstos pilsonību" (93), "latviešu valdu"
+# (106), "sajūtas vairāk piederīgs" (live Q1 row, 57).
+
+ESSAY_2019 = 'Uzrakstiet pārspriedumu'
+
+
+def _points_2019(d):
+    return ('The scheme gives no mark to any of these points and does not say how many are wanted: '
+            'shown as the scheme prints them, scored on the question\'s total.')
+
+
+def _examples_2019(d):
+    return ('The scheme prints these points with no mark on any of them and no criteria for the part: '
+            'examples, not a checklist.')
+
+
+def _essay_2019(d):
+    return ('The scheme reprints the part\'s head, the instruction and the two titles, and prints nothing '
+            'under them: no criteria, no descriptive line and no split of the part\'s marks.')
+
+
+SPECS[2019] = [
+    R('I2', [shown(L(60, 61)), shown(S(62)), shown(S(63)), shown(S(64))], whole=True,
+      total=PaperP(3, '2. Kāpēc'), rownote=_points_2019, pages=(2, 3)),
+    R('I3', [shown(L(66, 67)), shown(S(68)), shown(S(69))], whole=True,
+      total=PaperP(4, '3. Par kādiem'), rownote=_points_2019, pages=(2, 3)),
+    R('I4', [shown(S(72)), shown(L(73, 76))], whole=True,
+      total=PY(4, 137), rownote=_points_2019, pages=(2, 3)),
+    R('I5', [shown(L(83, 85)), shown(L(86, 88)), shown(L(89, 90))], whole=True,
+      total=PaperP(4, 'apgalvojumu!'), rownote=_points_2019, pages=(2, 3)),
+    R('I6', [shown(L(93, 94)), shown(L(95, 97)), shown(S(98)), shown(L(99, 100))], whole=True,
+      total=PaperP(4, 'atbildība?'), rownote=_points_2019, pages=(2, 3)),
+    R('II', [shown(L(105, 108)), shown(J(S(109), SR(110))), shown(L(111, 112)), shown(L(113, 114))],
+      whole=True, rownote=_examples_2019, pages=(2, 3)),
+    R('III1', [unprinted(_essay_2019)], question=QP(4, ESSAY_2019, '1. „Ko')),
+    R('III2', [unprinted(_essay_2019)], question=QP(4, ESSAY_2019, '2. „Brīvs', 'Lūdzu analizējiet')),
+]
+
+
+# ====================================================================== 2020
+# ================================================================ 2020 HL ===
+# Drafted (small-languages lane, 20 Nov): the nine open asks of this sitting,
+# I1 (Q1 whole), I2-I6, II, III1, III2. No live card in this sitting.
+# Paper (rendered pp2-4): "LATVIEŠU VALODA", "Maksimālais punktu skaits – 100"
+# and the instruction with the rule "... Visām atbildēm jābūt latviski." (p2);
+# the interview text, seven numbered questions with their answers, p2 to p3
+# y549, the byline "Marta Sondare, „Diena”, 2007.gada 5.marts" (p3 y561); "I
+# daļa (30 punkti)" (p3 y597), Q1 "1. Izskaidrojiet vārdus un vārdu
+# savienojumus! (5 punkti)" (p3 y641) over a)-e) with NO price of their own
+# (y670-758); Q2-Q6 on p4, "(5 punkti)" each; "II daļa (30 punkti)" (p4
+# y392), the commentary, ONE task with no number; "III daļa" (p4 y526) with NO
+# total on its head: "(40 punkti)" is printed at the end of the instruction
+# line under it, "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300
+# vārdu) (40 punkti)" (y560); two UNNUMBERED titles, '"Katrs pats savas laimes
+# kalējs." (Latviešu sakāmvārds)' (y592) and "Uzrakstiet, kādi pasākumi, ..."
+# (y659), "vai" between them.
+# CENSUS: every printed ask is keyed (I1a-e, I2-I6, II, III1, III2); III1's
+# census text is the instruction (with its price) and title 1, III2's the bare
+# title 2.
+# PRICES (the lt walker reads no per-ask price, so PP() cannot apply):
+# - Q1: "(5 punkti)" on the stem's own line (p3 y641), the expressions
+#   unpriced: Q1 carded WHOLE at 'I1' (as the live Latvian Q1 cards and
+#   Romanian 2010-2019), PaperP on the stem.
+# - Q2 "2. Kāpēc Ēriks ..." (p4 y82), Q3 "3. Miniet ..." (y132), Q6
+#   "izdosies sasniegt savu mērķi? ..." (y312): the price at the end of the
+#   question's own last line, PaperP.
+# - Q4, Q5: "(5 punkti)" on a line of its own under the question (p4 x482 y198
+#   and y253): two lines of p4 open "(5 punkti)", so each is read at its own
+#   height, PY(4, 198), PY(4, 253).
+# - II: "II daļa (30 punkti)" (PARTP). III1/III2: the "(40 punkti)" on the
+#   instruction line (PaperP; PARTP finds no total on "III daļa"). The scheme
+#   sets them the same way (90; 98-99).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-5 = printed pages 1-3, headed
+# "ATBILDES"; p2 the note to teachers; pp6-7 blank):
+# - Q1 (50): a)-e), each the expression, a dash and its gloss in italics:
+#   51-52, 53-54, 55, 56, 57. No mark on any.
+# - Q2 (58 reprint, no price): one paragraph, 59-60. Q3 (61): one paragraph,
+#   62-63. Q5 (68): one paragraph, 69-75.
+# - Q4 (64): TWO paragraphs (rendered p3: line 66 ends short at "stāstus.",
+#   "Lektoram iespējams ..." opens the next line): 65-66 and 67.
+# - Q6 (80-81, p4): TWO paragraphs (line 84 ends short at "kā tas
+#   atrisināt."): 82-84 and 85-89.
+#   No mark inside any answer.
+# - Part II (90-92 reprint the head and the task): one italic paragraph,
+#   93-97.
+# - Part III (98-99 the head and the instruction): under title 1 (100) one
+#   italic paragraph, 101-106; under title 2 (111, p5) "Jebkura loģiska
+#   argumentēta atbilde." (112) over four ✓ points, 113, 114, 115-116, 117.
+#   NO criteria anywhere in this scheme.
+# SHAPES:
+# - I1: five glosses with no mark of their own under a question priced as a
+#   whole: five shown rows, whole=True on the paper's 5, each row led by the
+#   expression as the paper prints it.
+# - I2, I3, I5: one printed model paragraph each: ONE claimable row, one(sel,
+#   price) at the paper's 5.
+# - I4, I6: two paragraphs each: shown rows, whole=True on the printed 5.
+# - II: one model paragraph, no criteria: shown, whole=True on the paper's 30
+#   (10a).
+# - III1: one model paragraph: shown, whole=True on the paper's 40 (10a).
+# - III2: four points under the scheme's own line "Jebkura loģiska
+#   argumentēta atbilde.": shown, whole=True on the paper's 40; that line is
+#   quoted on the note, not a row (it says what is accepted, it is not
+#   content).
+# JUDGEMENT CALLS (10f: the paper's words are the question; where the scheme
+# rewords one, its reprint is quoted on the row's note):
+# - Q1 a): the paper prints "lektori (1.rinkopa)" (sic), the scheme glosses
+#   "lektors" (51). Quoted on the first row.
+# - Q3: the paper prints "Miniet trīs kritērijus, kādus projekta autori
+#   ..."; the scheme reprints "kādu" (61). Quoted. The answer is one
+#   paragraph naming the three criteria in three sentences with no mark on
+#   any: one claimable row on the convention. Flip to three shown rows
+#   (whole=True) only if the lead reads the sentences as the scheme's points.
+# - III2: the paper prints "... Jūsuprāt, Latvijā būtu jāveic, ..."; the
+#   scheme reprints "... Jūsuprāt, būtu Latvijā būtu jāveic, ..." (111).
+#   Quoted.
+# - I4 and I6 split at the scheme's own paragraph ends (a short last line,
+#   the next sentence on a new line); if the lead reads either as one
+#   paragraph, flip to one(...). III1's line 104 runs to the right margin, so
+#   "Vai es esmu laimīgs? ..." (105) continues the same paragraph.
+# - III1's question is the census's text (the instruction, its price taken
+#   off, and title 1); III2's the instruction line and title 2.
+# - Reading text: pp2-3 (rendered: the text from p2 to the byline at p3 y561,
+#   Q1 below it on p3). No live card to compare.
+# GLYPHS: none; ā č ē ģ ī ķ ļ ņ š ū ž read as the render shows them in every
+# line used. Printed as such: "Rosinātāvā" and "uzkata" (Q2, paper and
+# scheme), "1.rinkopa" (paper). Lifted as printed: "drabieki" (70), "kaut
+# kaut ko" (94), "mudina mudina" (88), "savus mērķu" (88), "Personiskajās
+# attiecības" (105).
+
+Q1P_2020 = PaperP(3, '1. Izskaidrojiet')
+ESSAY_2020 = 'Uzrakstiet pārspriedumu'
+REPRINT = 'The scheme reprints this question as'
+
+
+def _q1_2020(d):
+    return (f'The scheme glosses expression a) as “{S(51, after="a) ", before=" –").text(d)}”; the paper prints '
+            f'“{PC(3, "a) lektori", after="a) ").text(d)}”. Each gloss carries no mark of its own: the paper prices '
+            f'the question as a whole.')
+
+
+def _part2_2020(d):
+    return ('The scheme prints this one paragraph under the statement, with no mark inside it and no criteria '
+            'for the part.')
+
+
+def _title1_2020(d):
+    return ('The scheme prints this paragraph under the title, with no mark inside it and no criteria for '
+            'the part: an example, not a checklist.')
+
+
+def _title2_2020(d):
+    return (f'The scheme reprints this title as “{S(111, after="2. ").text(d)}” Under it it prints '
+            f'“{S(112).text(d)}” and these points, with no mark on any of them and no criteria for the part: '
+            f'examples, not a checklist.')
+
+
+SPECS[2020] = [
+    R('I1', [shown(L(51, 52, after='– '), lead=PC(3, 'a) lektori', after='a) ')),
+             shown(L(53, 54, after='– '), lead=PC(3, 'b) ambīcijas', after='b) ')),
+             shown(S(55, after='– '), lead=PC(3, 'c) aplauzties', after='c) ')),
+             shown(S(56, after='– '), lead=PC(3, 'd) dūša', after='d) ')),
+             shown(S(57, after='– '), lead=PC(3, 'e) vakances', after='e) '))],
+      whole=True, total=Q1P_2020, rownote=_q1_2020, pages=(2, 3),
+      question=QL(3, '1. Izskaidrojiet', 'a) lektori', 'b) ambīcijas', 'c) aplauzties', 'd) dūša', 'e) vakances')),
+    R('I2', [one(L(59, 60), PaperP(4, '2. Kāpēc'))], total=PaperP(4, '2. Kāpēc'), pages=(2, 3)),
+    R('I3', [one(L(62, 63), PaperP(4, '3. Miniet'))], total=PaperP(4, '3. Miniet'), pages=(2, 3),
+      rownote=quote(S(61, after='3. '), lead=REPRINT)),
+    R('I4', [shown(L(65, 66)), shown(S(67))], whole=True, total=PY(4, 198), pages=(2, 3)),
+    R('I5', [one(L(69, 75), PY(4, 253))], total=PY(4, 253), pages=(2, 3)),
+    R('I6', [shown(L(82, 84)), shown(L(85, 89))], whole=True, total=PaperP(4, 'izdosies sasniegt'), pages=(2, 3)),
+    R('II', [shown(L(93, 97))], whole=True, rownote=_part2_2020, pages=(2, 3)),
+    R('III1', [shown(L(101, 106))], whole=True, total=PaperP(4, ESSAY_2020), rownote=_title1_2020),
+    R('III2', [shown(S(113)), shown(S(114)), shown(L(115, 116)), shown(S(117))], whole=True,
+      total=PaperP(4, ESSAY_2020), rownote=_title2_2020, question=QP(4, ESSAY_2020, 'Uzrakstiet, kādi')),
+]
+
+
+# ====================================================================== 2021
+# ================================================================ 2021 HL ===
+# Drafted (small-languages lane, 20 Nov): the open asks of this sitting, Q1
+# (as its five lettered expressions, I1a-I1e), I2-I6, II1, II2. No live card
+# in this sitting.
+# TWO-PART sitting: the instruction "... atbildiet uz pirmās un otrās daļas
+# jautājumiem! ..." (p2 y65), "I daļa (30 punkti)" (p2 y153) and "II daļa (40
+# punkti)" (p4 y356), the essay; no commentary. Keys II1/II2 are the essay's
+# two titles (ruling B), cited Section II Q1/Q2.
+# Paper (rendered pp2-4): the reading text (Oto Brantevics and the film
+# "Dvēseļu putenis"), nine numbered paragraphs p2 to p3 y515, the byline "Laura
+# Dumbere, „IR”, 2019. gada 6.novembris" (p3 y528); "Atbildiet uz
+# jautājumiem!" (p3 y582) and Q1 "1. Izskaidrojiet vārdus un vārdu
+# savienojumus! (5 × 1 punkti)" (p3 y604) over a)-e); Q2-Q6 on p4, each
+# priced "(5)"; Part II the instruction "Uzrakstiet pārspriedumu par vienu no
+# tēmām! (ne mazāk kā 300 vārdu)" (y386) over two titles numbered "1." (y429)
+# and "2." (y513), "vai" between them.
+# CENSUS: every printed ask is keyed (I1a-e, I2-I6, II1, II2).
+# PRICES (the lt walker reads no per-ask price, so PP() cannot apply):
+# - Q1: the paper prints "(5 × 1 punkti)" on the stem's line (rendered p3,
+#   right-hand column): one mark for EACH expression, so Q1 is carded per
+#   letter (the brief: "if the paper prints per-expression marks that add to
+#   the whole, card per letter"; live 2023/2024 Q1 the precedent), each at the
+#   "1 punkti" PaperP reads off that line. The scheme prints "(5 punkti)" for
+#   the question (50), the same total.
+# - Q2 "... “Dvēseļu putenis”? (5)" (p4 y65), Q3 "... par vīrieti! (5)"
+#   (y109), Q4 "īstenojās? (5)" (y168), Q5 "... filmēšanas laikā? (5)"
+#   (y212), Q6 "cilvēkiem, bet ļoti smags, svarīgs darbs”! (5)" (y270): a bare
+#   "(5)" at the end of the question's own last line, PaperP.
+# - II1/II2: "II daļa (40 punkti)" (PARTP, 40). The scheme prints the same
+#   (110).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-5 = printed pages 1-3, headed
+# "ATBILDES"; pp6-7 blank; answers in italics):
+# - Q1 (50): each expression with its paragraph reference on one line and its
+#   gloss in italics on the next: 52, 54, 56, 58, 60. No mark on any.
+# - Q2 (61 reprint): one paragraph, 62-67.
+# - Q3 (68): FOUR paragraphs, 69-73 (its last line short at the foot of p3),
+#   78-79, 80-82, 83 (p4; each a new line after a short one).
+# - Q4 (84-85): TWO paragraphs, 86-88 and 89-91 (a blank line between).
+# - Q5 (92): one paragraph, 93-96.
+# - Q6 (97-98): THREE paragraphs, 99-100, 101-103, 104-105.
+#   No mark inside any answer.
+# - Part II (110-111, p5, the head and the instruction): under title 1 (112)
+#   one italic paragraph, 113-117; under title 2 (118) one italic paragraph,
+#   119-121, ending with the bracketed instruction "(Skolēnu atbildēs jābūt
+#   konkrētiem piemēriem.)".
+#   NO criteria anywhere in this scheme.
+# SHAPES:
+# - I1a-I1e: one stated gloss each: ONE claimable row at the paper's 1.
+# - I2, I5: one printed model paragraph each: ONE claimable row, one(sel,
+#   price) at the paper's 5.
+# - I3, I4, I6: several paragraphs: shown rows, whole=True on the printed 5.
+# - II1/II2: one model paragraph under each title, no criteria: shown,
+#   whole=True on the paper's 40 (10a), labelled as an example.
+# JUDGEMENT CALLS:
+# - Q1 per letter, not whole: the paper prices each expression ("5 × 1"). If
+#   the lead keeps Q1 whole at the parent (the exclusions list "2021 HL
+#   Section I Q1" whole), the same rows go shown on R('I1', ..., whole=True,
+#   total=PaperP(3, '1. Izskaidrojiet')) -- which would read 1, not 5: then
+#   use SP(50).
+# - II2: the bracketed line closing the scheme's paragraph, "(Skolēnu atbildēs
+#   jābūt konkrētiem piemēriem.)" (120-121), tells the examiner what answers
+#   must hold; it is cut off the row (at the row's end) and quoted on the note.
+# - II2 (10f, punctuation only): the paper prints '... nepatīk.” - Grēta
+#   Tūnberga', the scheme '... nepatīk.” (Grēta Tūnberga)' (118): not quoted.
+# - Q4: the scheme's reprint drops the comma before "un vai" (84): not quoted.
+# - Questions: the census's text for I1a-e and I2-I6 (checked on the render;
+#   no price); II1/II2 the instruction line and the title.
+# - No `pages` on II1/II2: a two-part sitting's Part II is the essay. Part I
+#   pages (2, 3): the text from p2 to its byline at p3 y528, Q1 below it on
+#   p3; Q2-Q6 on p4.
+# GLYPHS: none (U+00A0 spaces in the scheme read as spaces); ā č ē ģ ī ķ ļ ņ
+# š ū ž read as the render shows them in every line used. Lifted as printed:
+# "atbilda šīm tēlam" (64), "Filmēšanā prasa" (99), "būtu būtu" (paper p3
+# y442, not lifted).
+
+ESSAY_2021 = 'Uzrakstiet pārspriedumu'
+Q1P_2021 = PaperP(3, '1. Izskaidrojiet')
+
+
+def _points_2021(d):
+    return ('The scheme prints these paragraphs under the question, with no mark on any of them: shown as '
+            'the scheme prints them, scored on the question\'s total.')
+
+
+def _title1_2021(d):
+    return ('The scheme prints this paragraph under the title, with no mark inside it and no criteria for '
+            'the part: an example, not a checklist.')
+
+
+def _title2_2021(d):
+    return (f'The scheme prints this paragraph under the title, with no mark inside it and no criteria for '
+            f'the part: an example, not a checklist. It closes it with “{L(120, 121, after="labu.").text(d)}”')
+
+
+SPECS[2021] = [
+    R('I1a', [one(S(52), Q1P_2021)], total=Q1P_2021, pages=(2, 3)),
+    R('I1b', [one(S(54), Q1P_2021)], total=Q1P_2021, pages=(2, 3)),
+    R('I1c', [one(S(56), Q1P_2021)], total=Q1P_2021, pages=(2, 3)),
+    R('I1d', [one(S(58), Q1P_2021)], total=Q1P_2021, pages=(2, 3)),
+    R('I1e', [one(S(60), Q1P_2021)], total=Q1P_2021, pages=(2, 3)),
+    R('I2', [one(L(62, 67), PaperP(4, '2. Kāpēc'))], total=PaperP(4, '2. Kāpēc'), pages=(2, 3)),
+    R('I3', [shown(L(69, 73)), shown(L(78, 79)), shown(L(80, 82)), shown(S(83))], whole=True,
+      total=PaperP(4, '3. Pamatojiet'), rownote=_points_2021, pages=(2, 3)),
+    R('I4', [shown(L(86, 88)), shown(L(89, 91))], whole=True, total=PaperP(4, 'īstenojās?'),
+      rownote=_points_2021, pages=(2, 3)),
+    R('I5', [one(L(93, 96), PaperP(4, '5. Kā'))], total=PaperP(4, '5. Kā'), pages=(2, 3)),
+    R('I6', [shown(L(99, 100)), shown(L(101, 103)), shown(L(104, 105))], whole=True,
+      total=PaperP(4, 'cilvēkiem, bet ļoti'), rownote=_points_2021, pages=(2, 3)),
+    R('II1', [shown(L(113, 117))], whole=True, total=PARTP(), rownote=_title1_2021,
+      question=QP(4, ESSAY_2021, '1. "Es neesmu')),
+    R('II2', [shown(L(119, 120, before=' (Skolēnu'))], whole=True, total=PARTP(), rownote=_title2_2021,
+      question=QP(4, ESSAY_2021, '2. “Fakti')),
+]
+
+
+# ====================================================================== 2022
+# ================================================================ 2022 HL ===
+# Drafted (small-languages lane, 20 Nov): the seven open asks of this sitting,
+# I2-I6, II1, II2. Live: I1 (Q1 carded whole, lv-2022-hl-i-1); not touched
+# (audited: see latvian-live-faults-2018-2026.json: its first two rows are in
+# the scheme's order, which swaps a) and b)).
+# TWO-PART sitting: "Maksimālais punktu skaits – 70" (p2 y91), "I daļa (30
+# punkti)" (p2 y118) and "II daļa (40 punkti)" (p4 y509), the ESSAY
+# ("Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu)",
+# y556, over two titles numbered "1." (y596) and "2." (y694), "Vai" between
+# them); no commentary. The exclusions file calls II1/II2 a "commentary":
+# wrong, both are essay titles (rendered p4). Keys II1/II2, cited Section II
+# Q1/Q2 (ruling B).
+# Paper (rendered pp2-4): the instruction with the rule "... Visām atbildēm
+# jābūt latviski!" (p2 y64-78); the interview "Kristaps Liepiņš: Virsotne ir
+# tikai pusceļš" (p2 y185), fifteen numbered paragraphs p2 y212 to p3 y751,
+# the byline "Kaspars Ozols .Intervija portālam tvnet.lv, 2020.gada
+# 9.februāris" (p3 y764); p4 holds the questions: "Atbildiet uz jautājumiem!
+# (5 × 1 punkts)" (y80) over Q1 a)-e) (live); Q2-Q6 each priced "(5)".
+# CENSUS: every printed ask is keyed (I1a-e, I2-I6, II1, II2).
+# PRICES (the lt walker reads no per-ask price, so PP() cannot apply):
+# - Q3 "3. Kuri klienti, ... un kāpēc? (5)" (p4 y309), Q4 "nepieciešamas
+#   alpīnistam? (5)" (y355), Q5 "Vai grūtību pārvarēšana ir tā vērtas? ...
+#   (5)" (y401), Q6 "viedokli par šo apgalvojumu, ... (5)" (y448): a bare "(5)"
+#   at the end of the question's own last line, PaperP.
+# - Q2: "(5)" on a line of its own under the question (p4 x510 y278), the only
+#   line of p4 opening "(5)": PaperP(4, '(5)') (PY reads only a worded cell).
+# - II1/II2: "II daļa (40 punkti)" (PARTP, 40). The scheme prints the same
+#   (194).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-7 = printed pages 1-5; pp8-9
+# blank): it REPRINTS THE WHOLE READING TEXT first (51-143), then Q1 (144-150,
+# live), then each question with its answer in italics:
+# - Q2 (151-152 reprint, "(5)"): one paragraph, 153-157.
+# - Q3 (162): one paragraph, 163-167.
+# - Q4 (168-169): TWO paragraphs, 170-173 and 174-175 (rendered p6: line 173
+#   ends short at "nepiesārņot vidi.", "Alpīnistam jābūt ..." opens the next).
+# - Q5 (176-177): TWO paragraphs, 178-181 and 182-183 (line 181 short).
+# - Q6 (184-185): one paragraph, 186-189.
+#   No mark inside any answer.
+# - Part II (194-198, p7): the head, the instruction, both titles and "Vai" --
+#   and nothing under them (rendered p7; pp8-9 blank). NO criteria anywhere in
+#   this scheme.
+# SHAPES:
+# - I2, I3, I6: one printed model paragraph each: ONE claimable row, one(sel,
+#   price) at the paper's 5.
+# - I4, I5: two paragraphs each: shown rows, whole=True on the printed 5.
+# - II1/II2: nothing printed under the titles -> unprinted (ruling 4) at the
+#   paper's 40, the note saying what the scheme does print.
+# JUDGEMENT CALLS (10f: the paper's words are the question; where the scheme
+# rewords one, its reprint is quoted on the row's note):
+# - Q5: the paper prints "Vai grūtību pārvarēšana ir tā vērtas?" (p4 y401);
+#   the scheme reprints "Vai šīs sajūtas ir grūtību pārvarēšanas vērtas?"
+#   (176-177). Quoted.
+# - Q2-Q4, Q6: the scheme's reprints differ in spacing or a space after the
+#   closing quotation mark only; not quoted.
+# - I4, I5 split at the scheme's own paragraph ends; if the lead reads either
+#   as one paragraph, flip to one(...).
+# - Questions: the census's text for I2-I6 (checked on the render; no price;
+#   Q6 keeps the paper's "dzīves.”Izsakiet" with no space, as printed); II1/II2
+#   the instruction line and the title.
+# - No `pages` on II1/II2 (the essay). Part I pages (2, 3): the text from p2 to
+#   its byline at p3 y764; p4 holds only the questions. The live Q1 card's
+#   sourceMaterial.pages [2, 3] AGREE with the render.
+# GLYPHS: none (U+00A0 spaces in the scheme read as spaces; U+2010 "‐" is the
+# SEC's own hyphen glyph, printed as a dash in the text and in Q1, rendered
+# p5); ā č ē ģ ī ķ ļ ņ š ū ž read as the render shows them in every line used.
+# Lifted as printed: "Jau bērnība", "Avairs Bojārs" (153-154), "radīju"
+# (157), "K.Liepinā", "paišiem" (163), "pārvarēti sevi" (146, live).
+
+ESSAY_2022 = 'Uzrakstiet pārspriedumu'
+
+
+def _essay_2022(d):
+    return ('The scheme reprints the part\'s head, the instruction and the two titles, and prints nothing '
+            'under them: no criteria, no descriptive line and no split of the part\'s marks.')
+
+
+def _paras_2022(d):
+    return ('The scheme prints these paragraphs under the question, with no mark on any of them: shown as '
+            'the scheme prints them, scored on the question\'s total.')
+
+
+SPECS[2022] = [
+    R('I2', [one(L(153, 157), PaperP(4, '(5)'))], total=PaperP(4, '(5)'), pages=(2, 3)),
+    R('I3', [one(L(163, 167), PaperP(4, '3. Kuri'))], total=PaperP(4, '3. Kuri'), pages=(2, 3)),
+    R('I4', [shown(L(170, 173)), shown(L(174, 175))], whole=True, total=PaperP(4, 'nepieciešamas alpīnistam'),
+      rownote=_paras_2022, pages=(2, 3)),
+    R('I5', [shown(L(178, 181)), shown(L(182, 183))], whole=True, total=PaperP(4, 'Vai grūtību'), pages=(2, 3),
+      rownote=both(_paras_2022, quote(L(176, 177, after='5. ', before=' Paskaidro'),
+                                      lead='The scheme reprints this question as'))),
+    R('I6', [one(L(186, 189), PaperP(4, 'viedokli par šo'))], total=PaperP(4, 'viedokli par šo'), pages=(2, 3)),
+    R('II1', [unprinted(_essay_2022)], total=PARTP(), question=QP(4, ESSAY_2022, '1. “Mani')),
+    R('II2', [unprinted(_essay_2022)], total=PARTP(), question=QP(4, ESSAY_2022, '2. Kā rodas')),
+]
+
+
+# ====================================================================== 2023
+# ================================================================ 2023 HL ===
+# Drafted (small-languages lane, 20 Nov): the nine open asks of this sitting,
+# I1b, I2-I6, II, III1, III2. Live: I1a, I1c, I1d, I1e (Q1 carded per letter at
+# 1 each); not touched (audited: see latvian-live-faults-2018-2026.json:
+# lv-2023-hl-i-1-e splits its one gloss into two "alternatives").
+# Paper (rendered pp2-4): the instruction with the rule "... Visām atbildēm
+# jābūt latviski!" (p2 y65-80); the interview lead-in on Bob Hartley and the
+# Latvian ice-hockey team (y109-124), ten numbered paragraphs p2 y143 to p3
+# y651 (no byline); p4 holds the questions: "Atbildiet uz
+# visiem jautājumiem, ..." (y65), "I daļa (30 punkti)" (y108), Q1 "1.
+# Izskaidrojiet vārdu savienojumus un frāzes!" (y159) over a)-e), "(5 × 1
+# punkti)" at the end of e)'s line (y246); Q2-Q6 each priced "(5)"; "II daļa
+# (30 punkti)" (y522), the commentary, ONE task with no number; "III daļa (40
+# punkti)" (y640), the instruction "Uzrakstiet pārspriedumu par vienu no
+# tēmām! (ne mazāk kā 300 vārdu)" (y663) over two titles numbered "1." (y692)
+# and "2." (y744), "vai" between them.
+# CENSUS: every printed ask is keyed (I1a-e, I2-I6, II, III1, III2); III1's
+# census text ends with the "vai" printed under it.
+# PRICES (the lt walker reads no per-ask price, so PP() cannot apply):
+# - Q1(b): the paper's "(5 × 1 punkti)" (p4 y246, on e)'s line): one mark for
+#   each expression, as the live a), c)-e) cards read it; PaperP on e)'s line
+#   reads the "1 punkti".
+# - Q2 "mērķis? (5)" (y297), Q3 "3. Raksturojiet ... (5)" (y324), Q4 "komanda
+#   neizcīna titulu”? (5)" (y368), Q5 "spēlētājiem gan laukumā, gan
+#   ģērbtuvēs? (5)" (y411), Q6 "nepiekrītat? (5)" (y472): a bare "(5)" at the
+#   end of the question's own last line, PaperP.
+# - II: "II daļa (30 punkti)" (PARTP); III1/III2: "III daļa (40 punkti)"
+#   (PARTP). The scheme prints the same (99, 110).
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-5 = printed pages 1-3; pp6-7
+# blank; answers in plain type under each reprint):
+# - Q1 (47): each expression, a dash and its gloss on one line, 48-54; b) is
+#   "b) saliedēt komandu –vienot" (49): the gloss "vienot" set straight after
+#   the dash with no space (rendered p3). The exclusions file says "the scheme
+#   states no answer for this ask, only its price": wrong, it prints "vienot".
+# - Q2 (55-56 reprint): one paragraph, 57-60.
+# - Q3 (61): TWO paragraphs, 62-64 and 65-68 (a gap between, rendered p3).
+# - Q4 (69-70): one paragraph running over the p3/p4 break, 71-73 and 78-79
+#   (74-76 the page number and the page head, left out).
+# - Q5 (80-81): FOUR paragraphs, 82-84, 85-86, 87-88, 89-90 (gaps between,
+#   rendered p4).
+# - Q6 (91-93): one paragraph, 94-98.
+#   No mark inside any answer.
+# - Part II (99-101 reprint the head, the instruction and the statement): one
+#   paragraph, 102-105.
+# - Part III (110-111, p5, the head and the instruction): under title 1 (112)
+#   one paragraph, 113-116, saying what the student writes about; "vai"
+#   (117); under title 2 (118) one paragraph, 119-122.
+#   NO criteria anywhere in this scheme.
+# SHAPES:
+# - I1b: one stated gloss: ONE claimable row at the paper's 1, as the live
+#   a), c)-e) cards.
+# - I2, I4, I6: one printed model paragraph each: ONE claimable row, one(sel,
+#   price) at the paper's 5.
+# - I3, I5: several paragraphs: shown rows, whole=True on the printed 5.
+# - II: one model paragraph, no criteria: shown, whole=True on the paper's 30
+#   (10a).
+# - III1/III2: one paragraph of indicative content under each title, no
+#   criteria: shown, whole=True on the paper's 40 (10a), labelled as an
+#   example.
+# JUDGEMENT CALLS:
+# - I4's row joins its paragraph over the page break (J of 71-73 and 78-79),
+#   as Czech 2021 Q4 and Latvian 2015 Q4: one paragraph on the render.
+# - The scheme's reprints differ from the paper in spacing only ("B.  Hārtlijs
+#   raksturo", "(100 ‐ 150 vārdu)" with the SEC's hyphen glyph); not quoted.
+# - Questions: the census's text for I1b and I2-II (checked on the render; no
+#   price; Q6 keeps the paper's "Boba Hārlija", as printed); III1/III2 the
+#   instruction line and the title.
+# - Reading text: pp2-3 (rendered: the lead-in and paragraphs 1-5 on p2, 6-10
+#   on p3 to y651; p4 holds only the questions). The live Q1 cards'
+#   sourceMaterial.pages [2, 3] AGREE with the render.
+# GLYPHS: none (U+00A0 spaces in the scheme read as spaces; U+2010 "‐" is the
+# SEC's hyphen glyph, rendered as a dash); ā č ē ģ ī ķ ļ ņ š ū ž read as the
+# render shows them in every line used. Lifted as printed: "trieks bortā"
+# (59), "augstākā kaluma" (60), "ka uzvarēt" (78), "uzturēto" (89), "Izcilība
+# sasniedzam" (97), "B. Hartlijs" (87).
+
+ESSAY_2023 = 'Uzrakstiet pārspriedumu'
+
+
+def _paras_2023(d):
+    return ('The scheme prints these paragraphs under the question, with no mark on any of them: shown as '
+            'the scheme prints them, scored on the question\'s total.')
+
+
+def _part2_2023(d):
+    return ('The scheme prints this one paragraph under the statement, with no mark inside it and no criteria '
+            'for the part.')
+
+
+def _essay_2023(d):
+    return ('The scheme prints this paragraph under the title, with no mark inside it and no criteria for '
+            'the part: an example, not a checklist.')
+
+
+Q1P_2023 = PaperP(4, 'e) panākumu')
+
+SPECS[2023] = [
+    R('I1b', [one(S(49, after='–'), Q1P_2023)], total=Q1P_2023, pages=(2, 3)),
+    R('I2', [one(L(57, 60), PaperP(4, 'mērķis?'))], total=PaperP(4, 'mērķis?'), pages=(2, 3)),
+    R('I3', [shown(L(62, 64)), shown(L(65, 68))], whole=True, total=PaperP(4, '3. Raksturojiet'),
+      rownote=_paras_2023, pages=(2, 3)),
+    R('I4', [one(J(L(71, 73), L(78, 79)), PaperP(4, 'komanda neizcīna'))], total=PaperP(4, 'komanda neizcīna'),
+      pages=(2, 3)),
+    R('I5', [shown(L(82, 84)), shown(L(85, 86)), shown(L(87, 88)), shown(L(89, 90))], whole=True,
+      total=PaperP(4, 'spēlētājiem gan laukumā'), rownote=_paras_2023, pages=(2, 3)),
+    R('I6', [one(L(94, 98), PaperP(4, 'nepiekrītat?'))], total=PaperP(4, 'nepiekrītat?'), pages=(2, 3)),
+    R('II', [shown(L(102, 105))], whole=True, rownote=_part2_2023, pages=(2, 3)),
+    R('III1', [shown(L(113, 116))], whole=True, rownote=_essay_2023, question=QP(4, ESSAY_2023, '1. “Personības')),
+    R('III2', [shown(L(119, 122))], whole=True, rownote=_essay_2023, question=QP(4, ESSAY_2023, '2. “Ir katram')),
+]
+
+
+# ====================================================================== 2024
+# ================================================================ 2024 HL ===
+# Drafted (small-languages lane, 20 Nov): the nine open asks of this sitting,
+# I1b, I2-I6, II, III1, III2. Live: I1a, I1c, I1d, I1e (Q1 carded per letter at
+# 1 each); not touched (audited: see latvian-live-faults-2018-2026.json:
+# lv-2024-hl-i-1-e's row ends with the welded price fragment "(5 ×").
+# Paper (rendered pp2-4): "LATVIEŠU VALODA", "Maksimālais punktu skaits – 100"
+# (p2 y64-81) and NO answer-language rule (sl_lib gives the lt walker's own
+# note); the interview with Lilija Zobens (p2 y111-128), questions in bold and
+# answers, p2 to p4 y153, closing with its source address
+# "(https://www.latviesi.com/...)" (p4 y153); then on p4: "I daļa (30
+# punkti)" (y197), Q1 "1. Skaidrojiet vārdus un frāzes!" (y243) over a)-e),
+# "(5 × 1 punkti)" at the end of e)'s line (y332); Q2-Q6 each priced "(5)";
+# "II daļa (30 punkti)" (y588), the commentary, ONE task with no number; "III
+# daļa (40 punkti)" (y682), the instruction "Uzrakstiet pārspriedumu par vienu
+# no tēmām! (ne mazāk kā 300 vārdu)" (y709) over two titles numbered "1."
+# (y734) and "2." (y768), "vai" between them.
+# CENSUS: every printed ask is keyed (I1a-e, I2-I6, II, III1, III2), but
+# III2's census text runs on into the page footer: "Mūzika ir labākais
+# mierinājums noskumušam cilvēkam. (Mārtiņš Luters) Leaving Certificate
+# Examination, 2024 Leaving Certificate Examination, 2024 4 Latvian – Higher
+# Level Latvian – Higher Level 4" (p4 y768 + the footer at y793-805). The
+# question is cut from the paper's lines here. III1's census text ends with
+# the "vai" printed under it.
+# PRICES (the lt walker reads no per-ask price, so PP() cannot apply):
+# - Q1(b): the paper's "(5 × 1 punkti)" (p4 y332, on e)'s line): one mark for
+#   each expression, as the live a), c)-e) cards read it; PaperP on e)'s line
+#   reads the "1 punkti". The scheme prints the same at the end of e)'s gloss
+#   (58).
+# - Q2 "2. Kādu problēmu ... (5)" (y360), Q3 "gaitās? (5)" (y404), Q4 "par to
+#   saistībā ar tekstu un savu pieredzi. (5)" (y447), Q5 "trimdā? (5)" (y491),
+#   Q6 "latviskumu un latvisko idenditāti? (5)" (y535): a bare "(5)" at the end
+#   of the question's own last line, PaperP.
+# - II: "II daļa (30 punkti)" (PARTP); III1/III2: "III daļa (40 punkti)"
+#   (PARTP). The scheme prints "II daļa (30 punkti)" (89) but "III daļa (30
+#   punkti)" (106): see the judgement calls.
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-5 = printed pages 1-3; pp6-7
+# blank; answers in italics):
+# - Q1 (48): each expression on its line, its gloss in italics on the next,
+#   49-58; b) is reprinted "b) gāzt kalnus" (51) over "pārvarēt grūtības,
+#   daudz izdarīt, daudz strādāt" (52).
+# - Q2 (59): one paragraph, 60-63. Q3 (64-65): one paragraph, 66-68. Q4
+#   (69-70): one paragraph, 75-77 (p4). Q5 (78-79): one paragraph, 80-83. Q6
+#   (84-85): one paragraph, 86-88. No mark inside any answer.
+# - Part II (89-92 reprint the head, the instruction and the statement): TWO
+#   paragraphs, 93-94 and 95-101 (a gap between, rendered p4).
+# - Part III (106-107, p5, the head and the instruction): under title 1 (108)
+#   one paragraph, 109-114; "Or" (115, in English); under title 2 (116) one
+#   paragraph, 117-119; each says what the student may write about.
+#   NO criteria anywhere in this scheme.
+# SHAPES:
+# - I1b: one stated gloss: ONE claimable row at the paper's 1, as the live
+#   a), c)-e) cards.
+# - I2-I6: one printed model paragraph each: ONE claimable row, one(sel,
+#   price) at the paper's 5.
+# - II: two paragraphs of model content, no criteria: shown, whole=True on the
+#   paper's 30 (10a).
+# - III1/III2: one paragraph of indicative content under each title, no
+#   criteria: shown, whole=True on the paper's 40 (10a), labelled as an
+#   example.
+# JUDGEMENT CALLS (10f: the paper's words and prices stand; the scheme's are
+# quoted on the row's note):
+# - Q1(b): the paper prints "b) jāgāž milzīgi kalni" (p4 y282); the scheme
+#   reprints the expression as "b) gāzt kalnus" (51), the same idiom in its
+#   dictionary form, and glosses it on the next line. The exclusions file
+#   reads the two as different questions ("the paper and the scheme do not
+#   print the same question at this address"); they are the same ask, so it
+#   is carded with the scheme's gloss and the reprint quoted.
+# - III: the paper prices the essay "(40 punkti)"; the scheme heads the part
+#   "III daļa (30 punkti)" (106), against "Maksimālais punktu skaits – 100"
+#   (46) and 30 + 30 + 40. An SEC self-contradiction: the paper's 40 stands,
+#   the scheme's head quoted on each title's row.
+# - Questions: the census's text for I1b and I2-II (checked on the render; no
+#   price; Q6 keeps the paper's "idenditāti", as printed); III1/III2 the
+#   instruction line and the title, which also drops III2's welded footer.
+# - Reading text: pp2-4 (rendered: the interview runs from p2 to p4 y153, its
+#   source line, above "I daļa"). The live Q1 cards' sourceMaterial.pages
+#   [2, 3, 4] AGREE with the render.
+# GLYPHS: none (U+00A0 spaces in the scheme read as spaces); ā č ē ģ ī ķ ļ ņ
+# š ū ž read as the render shows them in every line used. Lifted as printed:
+# "kas ir vienmēr tiks dziedātas" (81), "attīsījis" (94).
+
+ESSAY_2024 = 'Uzrakstiet pārspriedumu'
+
+
+def _q1b_2024(d):
+    return (f'The scheme reprints this expression as “{S(51, after="b) ").text(d)}” and glosses it on the line '
+            f'under it; the paper prints “{PC(4, "b) jāgāž", after="b) ").text(d)}”.')
+
+
+def _part2_2024(d):
+    return ('The scheme prints these two paragraphs under the statement, with no mark inside them and no '
+            'criteria for the part.')
+
+
+def _essay_2024(d):
+    return (f'The scheme prints this paragraph under the title, with no mark inside it and no criteria for '
+            f'the part: an example, not a checklist. It heads the part “{S(106).text(d)}”; the paper prints '
+            f'“{PL(4, "III daļa").text(d)}”, and the paper\'s total stands.')
+
+
+Q1P_2024 = PaperP(4, 'e) kopš')
+
+SPECS[2024] = [
+    R('I1b', [one(S(52), Q1P_2024)], total=Q1P_2024, rownote=_q1b_2024, pages=(2, 3, 4)),
+    R('I2', [one(L(60, 63), PaperP(4, '2. Kādu'))], total=PaperP(4, '2. Kādu'), pages=(2, 3, 4)),
+    R('I3', [one(L(66, 68), PaperP(4, 'gaitās?'))], total=PaperP(4, 'gaitās?'), pages=(2, 3, 4)),
+    R('I4', [one(L(75, 77), PaperP(4, 'par to saistībā'))], total=PaperP(4, 'par to saistībā'), pages=(2, 3, 4)),
+    R('I5', [one(L(80, 83), PaperP(4, 'trimdā?'))], total=PaperP(4, 'trimdā?'), pages=(2, 3, 4)),
+    R('I6', [one(L(86, 88), PaperP(4, 'latviskumu un latvisko'))], total=PaperP(4, 'latviskumu un latvisko'),
+      pages=(2, 3, 4)),
+    R('II', [shown(L(93, 94)), shown(L(95, 101))], whole=True, rownote=_part2_2024, pages=(2, 3, 4)),
+    R('III1', [shown(L(109, 114))], whole=True, rownote=_essay_2024, question=QP(4, ESSAY_2024, '1. Dziesmu')),
+    R('III2', [shown(L(117, 119))], whole=True, rownote=_essay_2024, question=QP(4, ESSAY_2024, '2. Mūzika')),
+]
+
+
+# ====================================================================== 2025
+# ================================================================ 2025 HL ===
+# Drafted (small-languages lane, 20 Nov): the thirteen open asks of this
+# sitting, I1a-I1e, I2-I6, II, III1, III2. No live card in this sitting.
+# Paper (rendered pp2-4): "Maksimālais punktu skaits – 100" (p2 y65) and NO
+# answer-language rule (sl_lib gives the lt walker's own note); the title
+# "Svešumā dažreiz pat sirsnīgāk. Kā latvieši pasaulē svin valsts svētkus"
+# (p2 y94), the text in unnumbered sections with bold heads, p2 y124 to p4
+# y94, closing with its source address "https://www.lsm.lv/raksts/..." (p4
+# y122-134); then on p4: "I daļa (30 punkti)" (y176), Q1 "1. Skaidrojiet
+# tekstā lietotos vārdus un frāzes!" (y220) over a)-e), "(5 × 1)" at the end
+# of e)'s line (y313); Q2-Q6 each priced "(5)"; "II daļa (30 punkti)" (y557),
+# the commentary, ONE task with no number; "III daļa (40 punkti)" (y674), the
+# instruction "Uzrakstiet eseju par vienu no tēmām! (ne mazāk kā 300 vārdu)"
+# (y689) over two titles numbered "1." (y715) and "2." (y748), "vai" between
+# them.
+# CENSUS: every printed ask is keyed (I1a-e, I2-I6, II, III1, III2); III1's
+# census text ends with the "vai" printed under it.
+# PRICES (the lt walker reads no per-ask price, so PP() cannot apply):
+# - Q1: the paper prints "(5 × 1)" at the end of e)'s line (p4 y313,
+#   rendered): one mark for EACH expression, so Q1 is carded per letter (the
+#   brief: "unless the paper prints a mark per expression"; live 2023/2024 Q1,
+#   priced "(5 × 1 punkti)" the same way, are per letter). PaperP does not read
+#   a bracket with "×" and no mark word, and PY reads only a worded cell, so
+#   each letter is priced from the identical cell the scheme prints at the end
+#   of e)'s gloss, "gandrīz 20 gadus (5 × 1)" (70): RX(70, ...), group 1 = the
+#   per-expression 1.
+# - Q2 "... izraisa 18.novembris. (5)" (y348), Q3 "... multikulturālā ģimenē.
+#   (5)" (y375), Q4 "viedokli, atsaucoties uz tekstu un savu pieredzi. (5)"
+#   (y418), Q6 "tekstu un savu pieredzi. (5)" (y489): a bare "(5)" at the end of
+#   the question's own last line, PaperP.
+# - Q5: "(5)" on a line of its own under the question (p4 x482 y460), the only
+#   line of p4 opening "(5)": PaperP(4, '(5)').
+# - II: "II daļa (30 punkti)" (PARTP); III1/III2: "III daļa (40 punkti)"
+#   (PARTP). The scheme prints "II daļa (30)" (131) and "III daļa (40)" (148).
+# WHAT THE SCHEME PRINTS (rendered scheme pp4-7 = printed pages 4-7, "Latvian
+# Marking Scheme 2025"; p3 the annotations table; p8 blank; answers in
+# italics):
+# - Q1 (60): each expression on its line, its gloss on the next: 62, 64, 66,
+#   68, 70 ("gandrīz 20 gadus (5 × 1)"). No mark on any but that cell.
+# - Q2 (71): one paragraph, 72-74, "(5)" set at the end of its last line.
+# - Q3 (75): THREE paragraphs, 76-80, 81-82, 83-84 (gaps between, rendered
+#   p4), "(5)" at the end of the last.
+# - Q4 (89-90): one paragraph, 91-100. Q5 (101-102): one paragraph, 103-111.
+#   Q6 (112-113): one paragraph, 114-126. Each ends with "(5)".
+#   No mark inside any answer.
+# - Part II (131-134 the head, the instruction and the statement): TWO
+#   paragraphs, 135-145 and 146-147 (a gap between, rendered p6).
+# - Part III (148-152, the head, the instruction and both titles), then each
+#   title again as a plain head with its content under it: "Tradīcijas ir
+#   sabiedrības pamats" (153) over FOUR paragraphs, 154-160, 161-162, 167-168,
+#   169-170 (pp6-7); '“Nekad neuzliec vecuma limitu saviem sapņiem” (Dara
+#   Torres)' (171) over FOUR paragraphs, 172-177, 178-179, 180-182, 183-185
+#   (rendered p7: each opens a new line after a short one).
+#   NO criteria anywhere in this scheme.
+# SHAPES:
+# - I1a-I1e: one stated gloss each: ONE claimable row at 1.
+# - I2, I4, I5, I6: one printed model paragraph each: ONE claimable row,
+#   one(sel, price) at the paper's 5, cut before the scheme's "(5)".
+# - I3: three paragraphs: shown rows, whole=True on the printed 5.
+# - II: two paragraphs of model content, no criteria: shown, whole=True on the
+#   paper's 30 (10a).
+# - III1/III2: the paragraphs the scheme prints under each title, no
+#   criteria: shown, whole=True on the paper's 40 (10a), labelled as
+#   examples; the title the scheme reprints over them is a head, not a row.
+# JUDGEMENT CALLS:
+# - Q1 per letter, as above; if the lead rules "(5 × 1)" a whole-question
+#   price, the same rows go shown on R('I1', ..., whole=True) at 5.
+# - I4, I5, I6 are long paragraphs of indicative content ("Skolēni var ...")
+#   but each is ONE printed paragraph: one claimable row on the convention.
+#   Flip to [shown(...)], whole=True if the lead prefers.
+# - The scheme's reprints match the paper word for word (Q2 ends "." on both).
+# - Questions: the census's text for I1a-e and I2-II (checked on the render;
+#   no price); III1/III2 the instruction line and the title.
+# - Reading text: pp2-4 (rendered: the text runs from p2 to p4 y94, its
+#   source address at p4 y122-134, above "I daļa"). No live card to compare.
+# GLYPHS: none; ā č ē ģ ī ķ ļ ņ š ū ž read as the render shows them in every
+# line used. Lifted as printed: "pieredzēm" (76), "Laine un Artūrs" (114).
+
+ESSAY_2025 = 'Uzrakstiet eseju'
+Q1P_2025 = RX(70, r'\(\d\s*×\s*(\d)\)')
+
+
+def _paras_2025(d):
+    return ('The scheme prints these paragraphs under the question, with no mark on any of them: shown as '
+            'the scheme prints them, scored on the question\'s total.')
+
+
+def _part2_2025(d):
+    return ('The scheme prints these two paragraphs under the statement, with no mark inside them and no '
+            'criteria for the part.')
+
+
+def _essay_2025(d):
+    return ('The scheme prints these paragraphs under the title, with no mark on any of them and no criteria '
+            'for the part: examples, not a checklist.')
+
+
+SPECS[2025] = [
+    R('I1a', [one(S(62), Q1P_2025)], total=Q1P_2025, pages=(2, 3, 4)),
+    R('I1b', [one(S(64), Q1P_2025)], total=Q1P_2025, pages=(2, 3, 4)),
+    R('I1c', [one(S(66), Q1P_2025)], total=Q1P_2025, pages=(2, 3, 4)),
+    R('I1d', [one(S(68), Q1P_2025)], total=Q1P_2025, pages=(2, 3, 4)),
+    R('I1e', [one(S(70, before=' (5'), Q1P_2025)], total=Q1P_2025, pages=(2, 3, 4)),
+    R('I2', [one(L(72, 74, before=' (5)'), PaperP(4, '2. Kādas'))], total=PaperP(4, '2. Kādas'), pages=(2, 3, 4)),
+    R('I3', [shown(L(76, 80)), shown(L(81, 82)), shown(L(83, 84, before=' (5)'))], whole=True,
+      total=PaperP(4, '3. Aprakstiet'), rownote=_paras_2025, pages=(2, 3, 4)),
+    R('I4', [one(L(91, 100, before=' (5)'), PaperP(4, 'viedokli, atsaucoties'))],
+      total=PaperP(4, 'viedokli, atsaucoties'), pages=(2, 3, 4)),
+    R('I5', [one(L(103, 111, before=' (5)'), PaperP(4, '(5)'))], total=PaperP(4, '(5)'), pages=(2, 3, 4)),
+    R('I6', [one(L(114, 126, before=' (5)'), PaperP(4, 'tekstu un savu pieredzi.'))],
+      total=PaperP(4, 'tekstu un savu pieredzi.'), pages=(2, 3, 4)),
+    R('II', [shown(L(135, 145)), shown(L(146, 147))], whole=True, rownote=_part2_2025, pages=(2, 3, 4)),
+    R('III1', [shown(L(154, 160)), shown(L(161, 162)), shown(L(167, 168)), shown(L(169, 170))], whole=True,
+      rownote=_essay_2025, question=QP(4, ESSAY_2025, '1. Tradīcijas')),
+    R('III2', [shown(L(172, 177)), shown(L(178, 179)), shown(L(180, 182)), shown(L(183, 185))], whole=True,
+      rownote=_essay_2025, question=QP(4, ESSAY_2025, '2. “Nekad')),
+]
+
+
+# ====================================================================== 2026
+# ================================================================ 2026 HL ===
+# Drafted (small-languages lane, 20 Nov): the eight open asks of this sitting,
+# I2-I6, II, III1, III2. Live: I1 (Q1 carded whole, lv-2026-hl-i-1); not
+# touched (audited: see latvian-live-faults-2018-2026.json: its question text
+# is the scheme's stem, not the paper's).
+# Paper (rendered pp2-4): "LATVIEŠU VALODA", "Maksimālais punktu skaits – 100",
+# the instruction with the rule "... Visām atbildēm jābūt latviski!" (p2
+# y108-123); the title "Sarežģītais teksta uzdevums" (p2 y152), numbered
+# paragraphs p2 y178 to p3, closing with its source
+# "https://satori.lv/article/sarezgitais-teksta-uzdevums-diskusija,
+# 28.12.2022." (p3 y710); p4 holds the questions: "Atbildiet uz visiem
+# jautājumiem, ..." (y65), "I daļa (30 punkti)" (y108), Q1 "1. Skaidrojiet
+# tekstā lietotos vārdus un frāzes!" (y163) over a)-e), "(5 × 1 punkti)" at
+# the end of e)'s line (y281) (live); Q2-Q6 each priced "(5)"; "II daļa (30
+# punkti)" (y539), the commentary, ONE task with no number; "III daļa (40
+# punkti)" (y655), the instruction "Uzrakstiet eseju par vienu no tēmām! (ne
+# mazāk kā 300 vārdu)" (y678) over two titles numbered "1." (y707) and "2."
+# (y746), "vai" between them.
+# CENSUS: every printed ask is keyed (I1a-e, I2-I6, II, III1, III2); III1's
+# census text ends with the "vai" printed under it.
+# PRICES (the lt walker reads no per-ask price, so PP() cannot apply):
+# - Q2 "2. Formulējiet ... (5)" (p4 y325), Q3 "3. Kas ir diskusijas ... (5)"
+#   (y355), Q4 "akcentē tās nozīmi? (5)" (y399), Q5 "tā pretstats? (5)" (y443):
+#   a bare "(5)" at the end of the question's own last line, PaperP.
+# - Q6: "(5)" on a line of its own under the question (p4 x482 y501), the only
+#   line of p4 opening "(5)": PaperP(4, '(5)').
+# - II: "II daļa (30 punkti)" (PARTP); III1/III2: "III daļa (40 punkti)"
+#   (PARTP). The scheme prints "II daļa (30 punktu)" (131) and "III daļa (40
+#   punkti)" (144).
+# WHAT THE SCHEME PRINTS (rendered scheme pp4-7 = printed pages 4-7,
+# "Leaving Certificate Latvian Marking Scheme 2026"; p3 the annotations
+# table; p8 blank; answers in plain type, Part II-III in italics):
+# - Q2 (72 reprint): one paragraph, 73-77. Q3 (78): one paragraph, 79-84.
+# - Q4 (89-90): TWO paragraphs, 91-92 and 93-97 (a gap between, rendered p5).
+# - Q5 (98-99): TWO paragraphs, 100-105 and 106-107 ("Pretstats ir ...").
+# - Q6 (108-110): THREE paragraphs, 111-115 (p5), 120-123 and 124-126 (p6).
+#   No mark inside any answer.
+# - Part II (131-135, p7, the head and the task, reworded: see below): THREE
+#   paragraphs, 136-137, 138-142, and "Skolēns pauž savu argumentētu
+#   viedokli." (143) on a line of its own.
+# - Part III (144-145 the head and the instruction): under title 1 (146) one
+#   paragraph, 147-150; "vai" (151); under title 2 (152) one paragraph,
+#   153-155; each says what the student writes about.
+#   NO criteria anywhere in this scheme.
+# SHAPES:
+# - I2, I3: one printed model paragraph each: ONE claimable row, one(sel,
+#   price) at the paper's 5.
+# - I4, I5, I6: several paragraphs: shown rows, whole=True on the printed 5.
+# - II: three paragraphs of model content, no criteria: shown, whole=True on
+#   the paper's 30 (10a).
+# - III1/III2: one paragraph of indicative content under each title, no
+#   criteria: shown, whole=True on the paper's 40 (10a), labelled as an
+#   example.
+# JUDGEMENT CALLS (10f: the paper's words are the question; where the scheme
+# rewords one, its reprint is quoted on the row's note):
+# - Part II: the paper prints "Izsakiet savu viedokli par šo apgalvojumu!
+#   (100 - 150 vārdu)" (p4 y568); the scheme reprints "Izsakiet savu viedokli
+#   par piedāvāto apgalvojumu! (vismaz 100 vārdu)" (132). Quoted.
+# - Part III: the paper prints "Uzrakstiet eseju par vienu no tēmām! ..."
+#   (p4 y678); the scheme reprints "Uzrakstiet pārspriedumu par vienu no
+#   tēmām! ..." (145). Quoted on both titles.
+# - Part II's line 143 ("the student gives an argued opinion") is the scheme's
+#   own closing line under the model, kept as a shown row as the scheme sets
+#   it; move it to the note if the lead reads it as an instruction.
+# - Q2-Q6: the scheme's reprints differ in spacing only ("Kas ir lasītprasme,
+#   kuros", "Raksturojiet, kādu  situāciju"); not quoted.
+# - Questions: the census's text for I2-II (checked on the render; no price);
+#   III1/III2 the instruction line and the title.
+# - Reading text: pp2-3 (rendered: the title and the text from p2 to its
+#   source line at p3 y710; p4 holds only the questions). The live Q1 card's
+#   sourceMaterial.pages [2, 3] AGREE with the render.
+# GLYPHS: none; ā č ē ģ ī ķ ļ ņ š ū ž read as the render shows them in every
+# line used. Lifted as printed: "jaunieši lasītprasme" (73), "izdevniecīu",
+# "kurs ik dienu" (81-82), "Diskusijas dalībnieka nonāk" (95), "lēnajam
+# laikam.Lasot" (103), "ineresantām", "neinteresanas", "tika fragmenti"
+# (125-126).
+
+ESSAY_2026 = 'Uzrakstiet eseju'
+
+
+def _paras_2026(d):
+    return ('The scheme prints these paragraphs under the question, with no mark on any of them: shown as '
+            'the scheme prints them, scored on the question\'s total.')
+
+
+def _part2_2026(d):
+    return ('The scheme prints these paragraphs under the statement, with no mark inside them and no criteria '
+            f'for the part. It reprints the instruction as “{S(132).text(d)}”')
+
+
+def _essay_2026(d):
+    return ('The scheme prints this paragraph under the title, with no mark inside it and no criteria for '
+            f'the part: an example, not a checklist. It reprints the instruction as “{S(145).text(d)}”')
+
+
+SPECS[2026] = [
+    R('I2', [one(L(73, 77), PaperP(4, '2. Formulējiet'))], total=PaperP(4, '2. Formulējiet'), pages=(2, 3)),
+    R('I3', [one(L(79, 84), PaperP(4, '3. Kas ir'))], total=PaperP(4, '3. Kas ir'), pages=(2, 3)),
+    R('I4', [shown(L(91, 92)), shown(L(93, 97))], whole=True, total=PaperP(4, 'akcentē tās'),
+      rownote=_paras_2026, pages=(2, 3)),
+    R('I5', [shown(L(100, 105)), shown(L(106, 107))], whole=True, total=PaperP(4, 'tā pretstats?'),
+      rownote=_paras_2026, pages=(2, 3)),
+    R('I6', [shown(L(111, 115)), shown(L(120, 123)), shown(L(124, 126))], whole=True, total=PaperP(4, '(5)'),
+      rownote=_paras_2026, pages=(2, 3)),
+    R('II', [shown(L(136, 137)), shown(L(138, 142)), shown(S(143))], whole=True, rownote=_part2_2026,
+      pages=(2, 3)),
+    R('III1', [shown(L(147, 150))], whole=True, rownote=_essay_2026, question=QP(4, ESSAY_2026, '1. “Mana')),
+    R('III2', [shown(L(153, 155))], whole=True, rownote=_essay_2026, question=QP(4, ESSAY_2026, '2. „Turiet')),
+]

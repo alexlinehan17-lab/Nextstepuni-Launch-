@@ -4204,6 +4204,272 @@
   }
  },
  {
+  "id": "lv-2018-hl-i-2",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "paskaidrojiet-autors-izprot-jedzienu-beznosacijuma-stasti",
+  "questionRef": "2018 HL Section I Q2",
+  "questionText": "Paskaidrojiet, kā autors izprot jēdzienu “beznosacījuma stāsti”!",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mēs ikdienā veicam pašam par sevi saprotamas darbības, sniedzam viens otram palīdzību, rūpējamies par tuvāko, neprasot par to samaksu, nedomājot, ka to varētu kāds cits izdarīt. Taču reizēm veicam pašsaprotamus darbus, nedomājot par sevi, iespējamām sekām, vienkārši – palīdzam kādam. Citi varbūt tādos gadījumos domātu, kas man par to būs, tas jādara kādam citam. Ne visos gadījumos iespējams rīkoties pēc iepriekš saskaņotas instrukcijas – vienkārši tā dara.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 1: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 1: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2018-hl-i-3",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "izmantojot-savu-pieredzi-raksturojiet-baibas-zuzenas",
+  "questionRef": "2018 HL Section I Q3",
+  "questionText": "Izmantojot savu pieredzi, raksturojiet Baibas Zūzenas apgalvojumu: “Arī laukos ir dzīvība.”",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Laukos veiklāk pamanīt kādu cilvēku, kurš pašaizliedzīgi dara kādu darbu, par tiem pilsētā uzzina reti. Pilsētās mediji jau atspoguļo tikai valstiski svarīgu informāciju. Laukos, kur viens otru pazīst, cilvēki vairāk palīdz, īpaši jau gados vecākiem cilvēkiem, lauksaimniekiem, kuriem ir kuplas ģimenes. Te vietējie cenšas saglabāt novada tradīcijas, vēsturi. Lauku iedzīvotāji arī visbiežāk otram pasaka: “Paldies!”, kas pilsētā reti saklausāms. Lauciniekiem vairāk sevi jāslavē.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 1: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 1: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2018-hl-i-4",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "izmantojot-faktus-teksta-pamatojiet-raidijums-latvijas",
+  "questionRef": "2018 HL Section I Q4",
+  "questionText": "Izmantojot faktus no teksta, pamatojiet, ka raidījums Latvijas lepnums ir kā pretstats mūsdienu fragmentārajai pasaulei!",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Jebkurš slavējams darbs, ja tas netiek pienācīgi novērtēts, ar laiku tiek aizmirsts. Tā vietā rodas citi, jauni, mazāk vērtīgāki, ierastāki. Taču par Latvijas lepnumiem runā vismaz pusgadu, to intervē, filmē, viedo sižetus, rāda televīzijā. Cilvēks gūst popularitāti, dalās savā pieredzē, viņam tiek pievērsta īpaša uzmanība. Viņš jūtas atzīsts. Citi no viņa mācās. Un tas jau ir kas krietni vairāk, nekā vienkārši veikts “labs” darbs.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 1: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 1: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2018-hl-i-5",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "kadas-parmainas-sabiedriba-lidzcilvekos-liecina-sabiedribas",
+  "questionRef": "2018 HL Section I Q5",
+  "questionText": "Kādas pārmaiņas sabiedrībā un līdzcilvēkos liecina, ka sabiedrības inteliģence attīstās?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ar inteliģenci es domāju visus, kas piesaka Latvijas lepnumu. Ja sākotnēji jebkurš kādam būtisks darbiņš tika celts godā, tad tagad balvai izvirza krietni mazāk pretendentus, bet gan īpašus cilvēkus, kuri tiešām šo titulu pelnījuši par pašaizliedzīgu, nesamaksājamu darbu. Tas liecina, ka cilvēki vispirms izvērtē balvas pretendenta ieguldījumu, apzinās ieguldījuma nozīmību, unikalitāti un tikai tad piesaka. Latvijas lepnumam jābūt īpašam cilvēkam ar īpašu stāstu. Skatītājiem, klausoties šos stāstus, jāizjūt “tauriņa efekts”.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 1: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 1: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2018-hl-i-6",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "izskaidrojiet-jusuprat-domaja-baiba-zuzena-sakot",
+  "questionRef": "2018 HL Section I Q6",
+  "questionText": "Izskaidrojiet, ko , jūsuprāt, domāja Baiba Zūzena , sakot, ka „tajā dienā, kad televīzijā raida ceremoniju Latvijas lepnums, Latvija kļūst labāka”.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Šajā dienā skatītāji gūst tikai pozitīvas emocijas, aizmirst ikdienas likstas. Gandrīz katrs padomā, vai tad es arī nevarētu būt Latvijas lepnums. Priecājamies par šodienas varoņiem, par to, ka mums blakus ir cilvēks, ar kuru gribas lepoties. Raidījums vieno Latvijas iedzīvotājus, tas nav nekāds šovs, kurā kādu pazemo. Rodas sajūta, ja tādi mēs visi būtu, Latvija būtu labāka. Kāpēc ne?",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 1: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 1: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2018-hl-ii",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2018,
+  "section": "II",
+  "topicId": "latvian-1-0",
+  "conceptId": "izsakiet-savu-viedokli-par-apgalvojumu-vismaz",
+  "questionRef": "2018 HL Section II",
+  "questionText": "Izsakiet savu viedokli par šo apgalvojumu! (vismaz 100 vārdu) Izskaidrojiet frāzi “Uzņemties atbildību par savu dzīvi”! Vai, Jūsuprāt, cilvēki “uzņemas atbildību par savu dzīvi”?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Jau no mazotnes vecākiem un skolai vajadzētu iemācīt bērniem uzņemties atbildību par savu dzīvi. Pašam jau tā vien būs jādzīvo, melnrakstu dzīvē nav. Šķiet, ka Latvijā daļa cilvēku sevi pakļāvuši pilnīgi likteņa varai – kā būs, tā būs. Protams, ir cilvēki, kuri stratēģiski plāno savu dzīvi jau no skolas gadiem.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 1: \"Visām atbildēm jābūt latviski.\" The scheme prints this one paragraph under the task, with no mark inside it and no criteria for the part. It reprints the task as “Izskaidrojiet frāzi “Uzņemties atbildību par savu dzīvi”! Vai, Jūsuprāt, cilvēki “uzņemas atbildību par savu dzīvi”? (ap 100 vārdu)”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II DAĻA",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 1: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2018-hl-iii-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2018,
+  "section": "III",
+  "topicId": "latvian-1-0",
+  "conceptId": "tas-cik-labi-mes-dzivojam-musu",
+  "questionRef": "2018 HL Section III Q1",
+  "questionText": "Uzrakstiet pārspriedumu par vienu no tematiem! (ne mazāk kā 300 vārdu) “Tas, cik labi mēs dzīvojam, ir mūsu rokās.”",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mēs paši esam savas laimes kalēji. Jo vairāk ieguldīs darbu sevis izglītošanā, jo draudzīgāks būsi pret līdzcilvēkiem, jo laimīgāks būsi, vieglāk sasniegs savus sapņus.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 1: \"Visām atbildēm jābūt latviski.\" The scheme prints this paragraph under the title, with no mark inside it and no criteria for the part: an example, not a checklist."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "lv-2018-hl-iii-2",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2018,
+  "section": "III",
+  "topicId": "latvian-1-0",
+  "conceptId": "neskati-viru-cepures-aicina-latviesu-sakamvards",
+  "questionRef": "2018 HL Section III Q2",
+  "questionText": "Uzrakstiet pārspriedumu par vienu no tematiem! (ne mazāk kā 300 vārdu) “Neskati vīru no cepures,” aicina latviešu sakāmvārds. Analizējiet, cik lielā mērā varam spriest par cilvēku pēc viņa izskata un apģērba! Miniet argumentus, kuri apstiprina un kuri noliedz šī apgalvojuma patiesumu!",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cilvēka izskats, ģērbšanās stils, ārējais veidols lielā mērā ir cilvēka personības spogulis un attēls, taču bieži vien tas var būt arī maldinošs. Patiesi cilvēku mēs iepazīstam, veidojot attiecības, sarunājoties, pavadot laiku un strādājot kopā, sadarbojoties, it īpaši pārbaudījumos, grūtībās un ekstremālās situācijās.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 1: \"Visām atbildēm jābūt latviski.\" The scheme prints this paragraph under the title, with no mark inside it and no criteria for the part: an example, not a checklist."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "lv-2019-hl-i-1",
   "subjectId": "latvian",
   "level": "higher",
