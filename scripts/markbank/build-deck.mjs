@@ -917,6 +917,7 @@ const DEFERRED_ID = {
   physics: /^phys-\d{4}-(?:hl|ol)-deferred-/,
   'home-economics': /^he-\d{4}-(?:hl|ol)-deferred-/,
   maths: /^maths-\d{4}-(?:hl|ol|fl)-deferred-/,
+  music: /^mus-\d{4}-(?:hl|ol)-deferred-/,
 };
 const deferredCard = (subjectId, card) =>
   Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));
@@ -1809,8 +1810,9 @@ for (const c of cards) {
     repairGlyphs(c);
     const mangled = mangledText(c);
     if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+    // A Music deferred sitting is its two booklets, as June's are ("Deferred · Listening", "Deferred · Composing").
     const fileid = deferredCard(SUBJECT_ID, c)
-      ? deferredDoc(SUBJECT_ID, c, 'Exam Paper')
+      ? deferredDoc(SUBJECT_ID, c, SUBJECT_ID === 'music' ? MUSIC_BOOKLET[c.section] : 'Exam Paper')
       : SUBJECT_ID === 'music'
       ? resolveCompanionFileid('music', c.year, c.level, MUSIC_BOOKLET[c.section])
       : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
@@ -2225,6 +2227,8 @@ for (const c of cards) {
     ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
     : deferredEntry && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
     ? deferredDoc(SUBJECT_ID, c, listening ? 'Aural Paper' : 'Exam Paper')
+    : deferredEntry && SUBJECT_ID === 'music'
+    ? deferredDoc(SUBJECT_ID, c, MUSIC_BOOKLET[c.section])
     : deferredEntry
     ? (SUBJECT_ID === 'dcg' || SUBJECT_ID === 'biology'
       ? resolvePaperFileid(SUBJECT_ID, year, level, paperSection, 'deferred')
