@@ -537,7 +537,7 @@ RULE_LINES = 3      # the rule's sentence ends within this many printed lines
 #   as I with a circumflex ("În zilele noastre"); glyph 1440, read U+1E6D, as t
 #   with a comma below ("fericiți").
 TEXT_FIXES = {('romanian', 2011): {'\u020a': '\u00ce', '\u1e6d': '\u021b'}}
-# - Paper maps derived from glyph ids by ro_glyphs.py (Romanian 2013: Times New
+# - Paper maps derived from glyph ids by sl_glyphs.py (Romanian 2013: Times New
 #   Roman with no ToUnicode map; each entry voted by the same glyph's clean
 #   sightings across the corpus, or settled on a render): loaded as written.
 for _path in sorted(__import__('glob').glob(os.path.join(HERE, 'glyphmap-*-*-paper.json'))):
