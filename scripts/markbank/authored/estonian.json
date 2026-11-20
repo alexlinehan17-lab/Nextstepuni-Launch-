@@ -6152,8 +6152,32 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "vastandumine",
-    "marks": 5,
+    "marks": 1,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "otsustavalt erinema, olema hoopis teistsugune",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "eriti/ennekõike meeldivad/sobivad inimestele, inimesed eelistavad",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "väga kiiresti laiali minema",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "oma panust andma, oma osa andma, jõupingutus millegi saavutamiseks",
+    "marks": 1
    }
   ],
   "notes": "The paper prints the tariff as '(5 × 1)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
@@ -6187,7 +6211,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "kardinaalselt erinema – otsustavalt erinema, olema hoopis teistsugune",
+    "verbatim": "Tegemist võib olla kas puhaste väljamõeldistega või lihtsalt algallika sõnastuse muutmise või täiendamisega. Samuti võib valeuudiseks olla kõmupealkiri, poliitiline satiir või liikvel olev legend, aga ka valikuliselt kajastatud uudis.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
    }
@@ -6223,7 +6247,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "iseäranis lähevad peale – eriti/ennekõike meeldivad/sobivad inimestele, inimesed eelistavad",
+    "verbatim": "Meediakirjaoskus tähendab, et uudise tõlgendamiseks ja selle tõesuse hindamiseks on vaja teada, kuidas meedia üldiselt funktsioneerib, oskust näha protsesse ja nähtusi kõne all oleva üksiksündmuse taga, võimet need infotükid konteksti paigutada ning kogu pilti kriitiliselt analüüsida. Ühiskond on täis inimesi, noored nende hulgas, kes on küll digitaalselt väga pädevad, ent kelle analüüsioskus jätab soovida.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
    }
@@ -6259,7 +6283,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "kulutulena levima – väga kiiresti laiali minema",
+    "verbatim": "Moodsal ajastul tarbivad inimesed uudiste lugemiseks üha rohkem digitaalseid kanaleid ning aina vähem traditsioonilist massimeediat. Sotsiaalmeedia osatähtsus info vahendaja ja meelelahutajana on hüppeliselt kasvanud. Samuti on kasvanud inimeste pädevus ise sisu toota ning seda sotsiaalvõrgustikes jagada. Inimesed tahavad, et info jõuaks nendeni kiiresti ja koguaeg ning et see oleks esitatud võimalikult lühidalt ja illustreerivalt. Traditsiooniline massimeedia ei ahvatle enam, sest ta on liiga aeglane, liiga põhjalik ning võimalik, et ideoloogiliselt kallutatud. Tegelikult ei tajuta, et sotsiaalmeedia uudised on samamoodi ühekülgsed ja kallutatud, ning ka inimeselt inimesele jagatav sisu ei ole mitte alati kõige õiglasem ja erapooletum.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 1: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
    }
@@ -6797,8 +6821,32 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "esindaja, tutvustaja, propageerija",
-    "marks": 5,
+    "marks": 1,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "kaine, mõistuspärane, ratsionaalne lähenemine",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "kahtlema ergutama, innustama, tagant tõukama",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "vähesus, nappus",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "põlastama, halvaks panema",
+    "marks": 1
    }
   ],
   "notes": "The paper prints the tariff as '(5 × 1)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
@@ -6832,7 +6880,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "tervemõistuslik lähenemine – kaine, mõistuspärane, ratsionaalne lähenemine",
+    "verbatim": "Kindlasti ei ole vaid naised nullkulu põhimõtte järgijad, kuid nad on altimad oma tegevust sotsiaalmeedias esitlema. Lisaks on naised need, kes käivad paratamatult rohkem sisseoste tegemas ning see võib muuta mõtteviisi ja tekitada protesti.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
    }
@@ -6868,7 +6916,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "ärgitama kahtlemist – kahtlema ergutama, innustama, tagant tõukama",
+    "verbatim": "Selle põhimõtte järgi üritatakse kõigepealt loobuda asjadest, mida ei vajata, ning vähendada tarbimist. Seejärel kasutada ostetut paremini ära, rohkem korduskasutada, ümber töödelda ja kompostida. Kõik selle nimel, et jäätmeid tekiks võimalikult vähe.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
    }
@@ -6904,7 +6952,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "vähesus, nappus",
+    "verbatim": "Nullkulu eesmärk on minimalism. Vähem asju tähendab lihtsamat elu. Seejuures olgu asjad praktilised ja kauakestvad, mis on valmistatud loodussõbralikest ja kvaliteetsetest materjalidest. Selliseid tooteid kestavad kauem ja neid on võimalik parandada, ümber töödelda ja uuesti kasutada, selle asemel et aina uusi juurde soetada. Vanad järeleproovitud lahendused on tagasi, hinnatakse toodete naturaalset päritolu, vastupidavat kvaliteeti ja ajatut stiili.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
    }
@@ -6940,7 +6988,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "*Inimeste mõtteviis peab muutuma. Tarbijad saavad mõjutada tootjaid, sest tarbija on see, kes valib, milliseid tooteid osta ja milliseid teenuseid tarbida. *Tootja peab oma toote vastavalt tarbijate nõudmistele (ümber) kujundama ja koguseid kohandama. Mida rohkem ostetakse, seda rohkem toodetakse ning mida rohkem mittevajalikke ja ebakvaliteetseid kaupu tarbitakse, seda väiksem on tõenäosus tootmist vähendada. *Ettevõtted on sunnitud oma ärimudeli igal juhul üle vaatama ka riikliku surve tõttu, sest keskkonda puudutav seadusandlus karmistub kõikjal maailmas. Jne. II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on",
+    "verbatim": "*Inimeste mõtteviis peab muutuma. Tarbijad saavad mõjutada tootjaid, sest tarbija on see, kes valib, milliseid tooteid osta ja milliseid teenuseid tarbida. *Tootja peab oma toote vastavalt tarbijate nõudmistele (ümber) kujundama ja koguseid kohandama. Mida rohkem ostetakse, seda rohkem toodetakse ning mida rohkem mittevajalikke ja ebakvaliteetseid kaupu tarbitakse, seda väiksem on tõenäosus tootmist vähendada. *Ettevõtted on sunnitud oma ärimudeli igal juhul üle vaatama ka riikliku surve tõttu, sest keskkonda puudutav seadusandlus karmistub kõikjal maailmas.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
    }
@@ -7448,8 +7496,32 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "vastulöök, lüüasaamine",
-    "marks": 5,
+    "marks": 1,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "hädavaevu, läbi raskuste, vaevaliselt, kuidagimoodi",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "veetma tööülesandeid täites kontoris ettenähtud töötunnid, sõltumata sellest, kas neid ülesandeid oleks võimalik täita kiiremini ja efektiivsemalt",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "hakkama saama, toime tulema, lõpetama kõik vajalikud või ette nähtud tööd",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "kaasinimene, teine inimene, lähedane inimene",
+    "marks": 1
    }
   ],
   "notes": "The paper prints the tariff as '(5 × 1)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
@@ -7484,7 +7556,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "üle kivide ja kändude – hädavaevu, läbi raskuste, vaevaliselt, kuidagimoodi",
+    "verbatim": "See pärineb saja aasta tagusest tööstusajastust ja oli loodud kaitsma vabrikutöölisi ülekoormuse eest. Idee autor on F. Perkins.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -7521,7 +7593,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "tegema tagumikutunde –veetma tööülesandeid täites kontoris ettenähtud töötunnid, sõltumata sellest, kas neid ülesandeid oleks võimalik täita kiiremini ja efektiivsemalt",
+    "verbatim": "Rootsi vanadekodu eksperiment näitas, et vaba aeg, mis töötajatel nüüd tööst üle jäi, suurendas nende energiat ja motivatsiooni oma füüsilise vormi eest paremini hoolt kanda. See omakorda vähendas selliseid tervisehädasid nagu kaela‐ ja seljaprobleemid ning töötajad olid sunnitud võtma vähem haiguspäevi ja puuduma harvem töölt.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -7558,7 +7630,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "(midagi) seljatama – hakkama saama, toime tulema, lõpetama kõik vajalikud või ette nähtud tööd",
+    "verbatim": "Kuna töötundide vähenedes töö hulk samavõrra ei vähene, tähendab see, et tööülesannetele tuleb läheneda targemini ja neid tuleb täita tulemuslikumalt. Üheks võtmesõnaks on siin paindlikkus, mida noorenev töötajaskond tööandjalt järjest enam eeldab, näiteks võimalus valida oma tööaega ja/või töökeskkonda. Teine oluline võtmesõna on motivatsioon. Tööandja peab looma tööks sellised tingimused, et töötajad oleksid motiveeritud kulutama oma lühemat tööl veedetud aega tulemuslikult ja kvaliteetselt tööd tehes, muidu ei ole ettevõtte edukas.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -7595,7 +7667,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Esimene mõjutaja on kindlasti raha. Kui me töötaks vähem tunde päevas või vähem päevi nädalas, siis kahtlemata jääks rohkem aega pere, puhkamise, hobide, spordi ja kultuuri jaoks. Kui palk lühema tööaja eest jääks samaks võrreldes täisajaga töötamisega, on see ideaalne. Siis oleks tõepoolest võimalik pühendada oma tööst üle jääv aeg lähedastele, hobidele ja meelelahutusele. Ent kui tööandja vähendaks ka palka samavõrra – mis ilmselt paratamatult kaasneb, sest ka ettevõtted peavad ellu jääma – mõjutab see igal juhul inimeste võimalusi näiteks kultuuri nautida, hobidega tegeleda ja reisida. Väga ebatõenäoline on muidugi ka see, et hinnad vastavalt langeksid. Teine probleem seisneb tööharjumustes. Kuna me oleme harjunud palju töötama, töötunde lugema ja ületunnitööd tegema (nt nädalavahetusel või õhtuti), siis selleks, et leida õige tasakaal töö ja pereelu vahel, peame me õppima palju tõhusamalt tööd tegema, st suutma teha vähema aja jooksul rohkem, ilma et tekiks ületunde, ilma et kannataks kvaliteet või jääks lõpetamata tööülesandeid või ilma ise läbi põlemata. Harjumuste muutmine on aga aeganõudev. Samuti peaksid tööandjad leidma õige tasakaalu pakutavate töötingimuste ja oodatavate töötulemuste vahel, et töötajatel oleks motivatsiooni ja huvi lühema töönädala eelistamiseks. Lõpptulemusena parandaks lühem tööaeg kahtlemata inimeste elu kvaliteeti ja vähendaks oluliselt igapäevast stressi (nt liiklusummikud, inimeste heaolu, vaimne ja füüsiline tervis). II ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama 2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane 3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks 4. Õigekiri: õigekeelsus ja kirjavahemärgid",
+    "verbatim": "Esimene mõjutaja on kindlasti raha. Kui me töötaks vähem tunde päevas või vähem päevi nädalas, siis kahtlemata jääks rohkem aega pere, puhkamise, hobide, spordi ja kultuuri jaoks. Kui palk lühema tööaja eest jääks samaks võrreldes täisajaga töötamisega, on see ideaalne. Siis oleks tõepoolest võimalik pühendada oma tööst üle jääv aeg lähedastele, hobidele ja meelelahutusele. Ent kui tööandja vähendaks ka palka samavõrra – mis ilmselt paratamatult kaasneb, sest ka ettevõtted peavad ellu jääma – mõjutab see igal juhul inimeste võimalusi näiteks kultuuri nautida, hobidega tegeleda ja reisida. Väga ebatõenäoline on muidugi ka see, et hinnad vastavalt langeksid. Teine probleem seisneb tööharjumustes. Kuna me oleme harjunud palju töötama, töötunde lugema ja ületunnitööd tegema (nt nädalavahetusel või õhtuti), siis selleks, et leida õige tasakaal töö ja pereelu vahel, peame me õppima palju tõhusamalt tööd tegema, st suutma teha vähema aja jooksul rohkem, ilma et tekiks ületunde, ilma et kannataks kvaliteet või jääks lõpetamata tööülesandeid või ilma ise läbi põlemata. Harjumuste muutmine on aga aeganõudev. Samuti peaksid tööandjad leidma õige tasakaalu pakutavate töötingimuste ja oodatavate töötulemuste vahel, et töötajatel oleks motivatsiooni ja huvi lühema töönädala eelistamiseks. Lõpptulemusena parandaks lühem tööaeg kahtlemata inimeste elu kvaliteeti ja vähendaks oluliselt igapäevast stressi (nt liiklusummikud, inimeste heaolu, vaimne ja füüsiline tervis).",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -7768,8 +7840,32 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "õppija, õpilane",
-    "marks": 5,
+    "marks": 1,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "kiiresti taipama, kiiresti aru saama",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "koht, mis pakub pidet; kokkupuutekoht, tugi, toetus, seos, ühendus",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "jätma tühiku või puuduse teadmistesse, teadmistes on midagi jäänud vahele või ununenud",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "hoogu või kiirust maha võtma, protsessi aeglustama",
+    "marks": 1
    }
   ],
   "notes": "The paper prints the tariff as '(5 × 1)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
@@ -7803,7 +7899,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "lennult haarama – kiiresti taipama, kiiresti aru saama",
+    "verbatim": "Ennast juhtival õppuril peaks olema suurepärane enesejuhtimisoskus (iseseisvus, tahtejõud, aja planeerimine), kõrge tähelepanu‐ ja keskendumisvõime.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -7839,7 +7935,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "pidepunkt – koht, mis pakub pidet; kokkupuutekoht, tugi, toetus, seos, ühendus",
+    "verbatim": "Autori arvates ei sobi koduõpe paljudele, sest see eeldab iseseisvalt töötamise oskust, oskust seada eesmärke ja visadust neid eesmärke täita. Tihti vajavad aga lapsed/noored õpetaja abi ja selgitusi, aga ka klassikaaslaste toetust. Koduõpe ei sobi paljudele ka seetõttu, et see eeldab tugevat enesekontrolli, keskendumisvõimet ja püsivust. Need oskused on noorematel lastel suhteliselt piiratud.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -7875,7 +7971,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "jätma lünka – jätma tühiku või puuduse teadmistesse, teadmistes on midagi jäänud vahele või ununenud",
+    "verbatim": "Digipöördega soovitakse, et lapsed omandaksid juba varases nooruses elus vajaminevaid IT‐oskusi, kuid vähemalt lasteaialaste puhul peaks keskenduma hoopis sellele, et õpetada neile inimestevahelist silmast‐silma suhtlemist – st oskust teisi inimesi kuulata, eri teemade üle arutleda, teiste seisukohtadega arvestama. Samuti peaks enne IT‐oskusi arendama hoopis selliseid oskusi, mis ei nõua tingimata nutivahendite omamist ja käsitlemist – näiteks joonistamist, muusikaga tegelemist, raamatute lugemist. See on vajalik selleks, et kasvaks üles põlvkond, kes tahab ja oskab kaasinimestega suhelda end suuliselt väljendades ning kes eelistaks otsest suhtlust inimeste, mitte arvutiga. Mänguasjadega mängimisest on keerulisem sõltuvusse sattuda, kui arvuti ees istumisest.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -8075,9 +8171,33 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "1) räämas olema – lohakil, kasimata olukorras; räpane, määrdunud",
-    "marks": 5,
+    "verbatim": "lohakil, kasimata olukorras; räpane, määrdunud",
+    "marks": 1,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "on jäetud tähelepanuta",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "mõjus, efektiivne, tugev, intensiivne",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "kavandatud liikumistee, tegelik liikumissuund",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "ind, õhin, hoog",
+    "marks": 1
    }
   ],
   "notes": "The paper prints the tariff as '(5 × 1)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
@@ -8111,7 +8231,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "(miski on) vaeslapse osas – on jäetud tähelepanuta",
+    "verbatim": "Uuringute tulemustest selgub, et looduses viibimine arendab laste ja noorte vaimseid võimeid, samuti on täheldatud, et tähelepanu‐ ja aktiivsushäirete tunnuseid esineb tulevikus vähem. Pikemas plaanis tagab looduses viibimine tugevama vaimse tervise ja parema elukvaliteedi täiskasvanueas.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -8147,7 +8267,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "tõhus – mõjus, efektiivne, tugev, intensiivne",
+    "verbatim": "Autori arvates on tänapäeva tehnoloogialahendustest palju abi, lihtsalt inimeste teadlikkust nende rakenduste olemasolust tuleb suurendada. Saadaval on mitu lihtsasti kasutatavat loodusäppi, mille abil saab näiteks tundma õppida ja määrata eri taimeliike või õppida eristama linde laulu järgi või tegema vahet putukatel.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -8183,7 +8303,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "marsruut – kavandatud liikumistee, tegelik liikumissuund",
+    "verbatim": "Praeguses autokeskses linnaruumis on noortel üsna piiratud liikumisvõimalused. Kulgedes enamasti ettemääratud marsruudil kooli, kodu ja trennide/huviringide vahel, on lastel vähe vabadust omapäi ringi liikuda ja väljas aega veeta. Kuigi äärelinnas elavatel noortel võib olla rohkem võimalusi mängida vabas õhus ja nautida loodust kui kortermajade noortel, peaks kõigil linnanoortel olema võrdelt võimalusi värskes õhus vaba aega veeta ja suhelda mujal kui siseruumides. Olemasolevatele mängu‐ ja spordiväljakutele ning noortekeskustele peaks lisa pakkuma sellised vabas õhus asuvad kokkusaamiskohad ja mängualad (nt eri liikumismängude mängimiseks, koostegutsemiseks, looduse avastamiseks, hobide ja loominguga tegelemiseks, liikide jälgimiseks) nagu linnametsatukad, loodulikud pargilapid, jalgrajad, samuti peaks linnadesse rajama palju rohkem eri tüüpi veekogusid, nt tiike, kraave ja ojasid.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -8212,16 +8332,22 @@
   "questionRef": "2023 HL Section I Q6",
   "questionText": "„Tänapäeva inimene elab linnas, keskkonnas, mis on küll turvaline ja ressursirohke, kuid kus me sellest hoolimata tunneme end sageli võõrkehana.“ Kas sinu arvates vastab see tõele? Selgita, miks sa nõustud või ei nõustu selle väitega. Esita oma arvamus loetule tuginedes.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Selgita, miks sa nõustud või ei nõustu selle väitega. Esita loetule tuginedes oma arvamus. 1) Ei nõustu selle väitega näiteks seetõttu, et linnastumine on paratamatu ja inimene on väga kohanemisvõimeline. Hoolimata sellest, et linnaelu on stressi‐ ja mürarohke ning steriilne, on see samas väga terviklik, mugav ja võimalusterohke (töökohad, transport, meelelahutus). Elukvaliteedi parandamiseks ja oma ökoloogilise jalajälje vähendamiseks saaksime siiski oma linnaeluviisi ümber kujundada – näiteks eelistada tervist mugavusele (harjutama ümber transpordi‐ ja liikumisharjumused), muuta linnakeskkonna looduslähedasemaks ja loomulikumaks (rohkem spontaanseid loodualasid ja looduspõhisem linnaruum) ning väärtustada liigirikkust (nt putukate elukohad, taimede kasvukohad). 2) Nõustun selle väitega näiteks seetõttu, et inimese loomulik elukeskkond on ajalooliselt olnud looduse keskel ja peaks võimalikult looduslähedaseks jääma ka edaspidi. Linnad laienevad ja võtavad enda alla järjest suurema maa‐ala, palju elusloodust (linnud, loomad, taimed) on sunnitud linnade eest taanduma või linnaeluga kohanema. Samas toit tuleb maalt, maal on rahu ja ruumi, vähem stressi, müra ja prügi, parem õhukvaliteet, suurem privaatsus ja rohkem eeldusi kvaliteetseks ja tervislikuks eluks. Loodus on lähedal, mis soodustab kehalist aktiivsust ja looduse rütmis elamist. II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on",
-    "marks": 5,
+    "verbatim": "Ei nõustu selle väitega näiteks seetõttu, et linnastumine on paratamatu ja inimene on väga kohanemisvõimeline. Hoolimata sellest, et linnaelu on stressi‐ ja mürarohke ning steriilne, on see samas väga terviklik, mugav ja võimalusterohke (töökohad, transport, meelelahutus). Elukvaliteedi parandamiseks ja oma ökoloogilise jalajälje vähendamiseks saaksime siiski oma linnaeluviisi ümber kujundada – näiteks eelistada tervist mugavusele (harjutama ümber transpordi‐ ja liikumisharjumused), muuta linnakeskkonna looduslähedasemaks ja loomulikumaks (rohkem spontaanseid loodualasid ja looduspõhisem linnaruum) ning väärtustada liigirikkust (nt putukate elukohad, taimede kasvukohad).",
+    "marks": null,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Nõustun selle väitega näiteks seetõttu, et inimese loomulik elukeskkond on ajalooliselt olnud looduse keskel ja peaks võimalikult looduslähedaseks jääma ka edaspidi. Linnad laienevad ja võtavad enda alla järjest suurema maa‐ala, palju elusloodust (linnud, loomad, taimed) on sunnitud linnade eest taanduma või linnaeluga kohanema. Samas toit tuleb maalt, maal on rahu ja ruumi, vähem stressi, müra ja prügi, parem õhukvaliteet, suurem privaatsus ja rohkem eeldusi kvaliteetseks ja tervislikuks eluks. Loodus on lähedal, mis soodustab kehalist aktiivsust ja looduse rütmis elamist.",
+    "marks": null
    }
   ],
   "notes": "The paper prints the tariff as '(5)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
@@ -8708,7 +8834,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "nutikas – taibukas, leidlik, terane, tark, lahtise peaga",
+    "verbatim": "See näitab inimese toimetulekuvõimet, oskust seada eesmärke ja langetada otsuseid nende eesmärkide täideviimiseks. See eeldab oskust teha valikuid, kasutades olemasolevaid oskusi ja teadmisi.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -8744,7 +8870,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "äge – väga tore, vaimustust äratav, vinge, kihvt",
+    "verbatim": "Tehisaru on nagu auto. Autoga sõitmiseks tuleb olla teatud vanuses, õppida juhtima autot, omandada sõidureeglid, sooritada eksamid ja õppida liikluses käituma. Samamoodi peab inimene tehisaru kasutamise jaoks vastama teatud tingimustele (nt vanus) ja omandama teatud teadmised ja hoiakud ning järgima reegleid. Tehnoloogiat nagu autotki tuleb kasutada mõistlikult.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -8780,7 +8906,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "pärssima – (protsessi) aeglustama, takistama, tagasi hoidma",
+    "verbatim": "Esiteks peab õppimiseks võtma aega ja olema keskendunud. Tervete ülesannete kopeerimisel tehisarust otse vihikusse ei ole pikaajalist väärtust, sest õppuri oma aju jääb rakenduseta. Selle asemel oleks tehisarumudelitelt hoopis mõttekas küsida end huvitava teema kohta üsna spetsiifilisi küsimusi või selgitusi, seejärel tuleks pakutud vastused oma peas läbi mõelda ja uus info oma seniste teadmistega siduda. Teiseks aitab kaasa see, kui õpilast teema huvitab ja ülesanne nõuab loomingulist lähenemist ja iseseisvust. Samuti on kasu taustteadmistest tehisaru kasutamise võimaluste kohta.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -8816,7 +8942,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Maailm muutub aina tehnoloogiakesksemaks ja robotite, algoritmide ja tehisintellekti mõju aina kasvab. Enamik tulevikuameteid eeldab rohkem või vähem tehnoloogilist võimekust ja teadmisi – on vaja osata näiteks programmeerimist, andmetöötlust, masinõpet. Seega on oluliste tulevikus vajaminevate oskuste hulgas kindlasti arvutioskus (sh enesetäiendamine, elukestev ja ümberõpe) ning keeleoskus ja ‐õpe. Samas jäävad tõenäoliselt alles siiski erialad, mis nõuavad vähem tehnoloogiaoskust ja rohkem loovust, empaatiavõimet, meeskonnatööoskust, suhtlemisoskust, paindlikkust. II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume: 1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on",
+    "verbatim": "Maailm muutub aina tehnoloogiakesksemaks ja robotite, algoritmide ja tehisintellekti mõju aina kasvab. Enamik tulevikuameteid eeldab rohkem või vähem tehnoloogilist võimekust ja teadmisi – on vaja osata näiteks programmeerimist, andmetöötlust, masinõpet. Seega on oluliste tulevikus vajaminevate oskuste hulgas kindlasti arvutioskus (sh enesetäiendamine, elukestev ja ümberõpe) ning keeleoskus ja ‐õpe. Samas jäävad tõenäoliselt alles siiski erialad, mis nõuavad vähem tehnoloogiaoskust ja rohkem loovust, empaatiavõimet, meeskonnatööoskust, suhtlemisoskust, paindlikkust.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -9491,7 +9617,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "murendama – vähendama, nõrgemaks muutma, kahandama",
+    "verbatim": "Protestitakse maailma eri paigus, erinevates kultuuriruumides ja paljudel põhjustel. Protestitakse kollektiivselt selleks, et muuta poliitilisi, sotsiaalseid või kultuurilisi protsesse ühiskonnas. Protesti kaudu saab juhtida tähelepanu probleemidele ja selle kaudu on võimalik saavutada õiglasemaid lahendusi.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -9527,7 +9653,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "keskne – peamine, põhiline",
+    "verbatim": "Inimeste protestikäitumine näitab demokraatia küpsust ja selle kujunemise mustrit. Küsitluste tulemused näitavad, et Euroopa vanades demokraatiates (nt Skandinaaviamaad ja Ühendkuningriik), kus meeleavaldamise ja streikimise kultuur on vanem, kasutatakse seda võimalust aktiivsemalt ja laialdasemalt, sest rahvas teab, et nii on neil võimalik oma riigi poliitikat mõjutada. Euroopa ida- ja lõunaosas, st riikides, kus demokraatia on noor, protestitakse vähem ja harvem, sest inimestel ei ole suurt usku sellesse, et poliitiline süsteem nende arvamust arvesse võtab.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
    }
@@ -9563,7 +9689,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "nappima – puudu olema, liiga vähe olema",
+    "verbatim": "Suurem eneseteadlikkus ja enesekindlus, analüüsivõimelisemad, sotsiaalselt kogenumad ja poliitiliselt aktiivsemad. Sotsiaalmeedia mõju, huvid ja elustiil, avar maailmavaade, keeleoskus ja lugemus, reisimine ja rahvusvaheline suhtlus, koostöösoov. Elatustase – heaolu suurendab enesekindlust ja võimaldab paremini põhimõtete nimel võidelda.",
     "marks": 5,
     "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
    }
