@@ -3318,4 +3318,175 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Czech and it is answered in CZECH."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2026 Higher Level — © State Examinations Commission.",
+    id: "cs-2026-hl-i-2", topicId: "czech-0-1", conceptId: "jak-zaklade-statistik-zmenil-pocet-prectenych",
+    section: "I", questionRef: "2026 HL Section I Q2",
+    questionText: "Jak se na základě statistik změnil počet přečtených knih za poslední roky?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Před pěti lety přečetli Češi asi 12 knih za rok, v současnosti je to 9,9 knihy. Je to proto, že lidé nemají čas a schopnosti číst delší dobu. Také stoupá počet lidí, kteří za rok nepřečtou ani jednu knihu.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2026 Higher Level — © State Examinations Commission.",
+    id: "cs-2026-hl-i-3", topicId: "czech-0-1", conceptId: "vysvetlete-zaklade-textu-hluboke-cteni",
+    section: "I", questionRef: "2026 HL Section I Q3",
+    questionText: "Vysvětlete na základě textu, co je to hluboké čtení.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hluboké čtení je spojené se soustředěním, průzkumy ukazují, že člověku trvá asi 15 minut, než se začte, na to mnoho lidí v dnešní době nemá dostatek trpělivosti a soustředění.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2026 Higher Level — © State Examinations Commission.",
+    id: "cs-2026-hl-i-4", topicId: "czech-0-1", conceptId: "internet-nas-ctenarsky-fragmentarizuje-vyjadrete-vlastni",
+    section: "I", questionRef: "2026 HL Section I Q4",
+    questionText: "„Internet nás čtenářsky fragmentarizuje.“ Vyjádřete vlastní názor na toto tvrzení a vysvětlete na základě textu.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Čtení na internetu je povrchnější, často tam jsou jen krátké texty, lidé tam čtou krátké zprávy, diskuse a ta nemusí pozornost udržet tak dlouho jako u čtení delších textů nebo knih, beletrie. Vlastně nás internet jako čtenáře rozptyluje. Internetem často jen srolujeme, a to se s knížkou dělat nedá. Když potom vezmeme do ruky knihu, nedokážeme ji číst, chybí nám trpělivost a nedokážeme se soustředit, často jí ani nerozumíme, protože nejsme schopni porozumět dlouhým textům.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2026 Higher Level — © State Examinations Commission.",
+    id: "cs-2026-hl-i-5", topicId: "czech-0-1", conceptId: "klasicka-kniha-uchovava-svou-kulturni-cenu",
+    section: "I", questionRef: "2026 HL Section I Q5",
+    questionText: "„…klasická kniha si uchovává svou kulturní cenu. To se jen tak nevymaže.“ Souhlasíte s tímto tvrzením? Vysvětlete na základě textu a vyjádřete vlastní názor.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Prostor pro vlastní názor za použití argumentů z textu. Potřebujeme knihy ke svému životu? Nebo se obejdeme bez nich a vystačíme si s internetem?", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2026 Higher Level — © State Examinations Commission.",
+    id: "cs-2026-hl-i-6", topicId: "czech-0-1", conceptId: "cesi-jsou-narodem-konzervativnich-ctenaru-zaklade",
+    section: "I", questionRef: "2026 HL Section I Q6",
+    questionText: "„Češi jsou národem konzervativních čtenářů.“ Na základě textu diskutujte toto tvrzení a vyjádřete vlastní názor.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Prostor pro vlastní názor na základě informací z textu. Znamená to, že elektronická media nebudou u českých čtenářů převažovat a dál si budou kupovat a číst knihy? Vlastní vysvětlení: vlastními slovy, bez opsání frází z textu. Vlastní zkušenost.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2026 Higher Level — © State Examinations Commission.",
+    id: "cs-2026-hl-ii", topicId: "czech-1-0", conceptId: "zaklade-textu-napiste-komentar-100-150",
+    section: "II", questionRef: "2026 HL Section II",
+    questionText: "Na základě textu napište komentář o 100-150 slovech na toto tvrzení a vyjádřete vlastní názor: „Tato (stabilní) věž mírně oprýskává a na digitálních nádvořích pod ní se dějí zajímavé věci. Nicméně to neohrožuje existenci věže.“",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Vlastní názor na uvedené tvrzení, lze vyjádřit souhlas i nesouhlas, pomocí argumentů z textu i vlastní zkušenosti.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints no criteria for the part and no mark beside either line; it is scored on its printed total." },
+    { id: "r-2", kind: "point", verbatim: "Vlastními slovy, bez opsání frází z textu.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČÁST 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2026 Higher Level — © State Examinations Commission.",
+    id: "cs-2026-hl-iii-1", topicId: "czech-1-0", conceptId: "knihy-jsou-mrtvym-materialem-dokud-nas",
+    section: "III", questionRef: "2026 HL Section III Q1",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: „Knihy jsou mrtvým materiálem, dokud v nás neožijí. (Jiří Mahen)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme reprints the part's head, the instruction and the two titles; under them it prints only “Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.” It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2026 Higher Level — © State Examinations Commission.",
+    id: "cs-2026-hl-iii-2", topicId: "czech-1-0", conceptId: "vlastenectvi-laska-vlastnimu-narodu-nikoli-nenavist",
+    section: "III", questionRef: "2026 HL Section III Q2",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: „Vlastenectví je láska k vlastnímu národu, nikoli nenávist k jiným.“ (T. G. Masaryk)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme reprints the part's head, the instruction and the two titles; under them it prints only “Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.” It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
 ];
