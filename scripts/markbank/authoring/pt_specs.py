@@ -1065,13 +1065,21 @@ LISTENING[(2023, 'hl')] = [
 # text layer cannot read (taken from the scheme PDF by tick position, CARD-
 # STANDARD 10c), and the medals table (Q3(g) on the paper, (i) in the scheme:
 # "6 marks: 6 x 1 marks", "Any two lines", each line a year, a place and a
-# medal), placed 0 to 6 in steps of 1 as one printed statement.
+# medal), scored on its printed total.
 READING[(2022, 'ol')] = [
-    C('A1d', [one(VI(100, 5), T(100))]),
+    # The paper sets each label beside an empty box the text layer reads as
+    # U+F063: the question is its printed lines, the boxes left out.
+    C('A1d', [one(VI(100, 5), T(100))],
+      question=(PLc(4, '(d) Qual é a ocupação', after='(d) '), PL(4, 'Clara é estudante'), PL(4, 'Verdadeiro'),
+                PLc(4, 'Falso', before=' \uf063'))),
     C('A2d', [one(VI(160, 8), T(160))]),
-    C('A3g', [stepped(B(S(216), S(217), S(218, before=' Any two'), S(219)), T(217))],
+    # The scheme prints "Any two lines" beside the third line, so the four
+    # lines never read as one statement: each is shown, scored on the printed
+    # total, the price quoted.
+    C('A3g', [shown(S(216)), shown(S(217)), shown(S(218, before=' Any two')), shown(S(219))],
+      total=T(217), whole=True,
       rownote='The scheme prices the table “6 marks: 6 x 1 marks” and prints “Any two lines” beside it: '
-           'a mark for each detail of two of the lines.'),
+              'a mark for each detail of two of the lines.'),
 ]
 
 # Scheme .md lines 363-489 (pages 17-22). The recording is the 2022 one
@@ -1087,7 +1095,8 @@ LISTENING[(2022, 'ol')] = [
     # Each half of the station's name on its own line at a lower price: paid
     # in place of the full name, never beside it.
     C('LB2', [menu([S(393)], T(393), [alt(S(394), T(394), of=0), alt(S(395), T(395), of=0)])]),
-    C('LB3', [one(S(398), T(398))]),
+    C('LB3', [one(S(398), T(398))],
+      question=(PL(4, 'Quantos objetivos'), PL(4, 'Dois'), PL(4, 'Três'))),
     C('LB4i', [one(S(402), T(402))]),
     C('LB4ii', [one(S(405), T(405))]),
     # "6 marks: 3 x 2 marks" beside "Any 2" for "Indique dois temas": the
