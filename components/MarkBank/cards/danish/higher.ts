@@ -475,6 +475,43 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2012 Higher Level — © State Examinations Commission.",
+    id: "dan-2012-hl-ii-1", topicId: "danish-1-0", conceptId: "mennesker-bare-bedre-ans-tte-grimme",
+    section: "II", questionRef: "2012 HL Section II Q1",
+    questionText: "”Pæne mennesker er bare bedre at ansætte, og grimme mennesker kan skade forretningen. Det er også fakta, at pæne mennesker får mere i løn end grimme. Det er et skridt i den rigtige retning.” Diskuter dette synspunkt med ca. 100 ord.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Kommentar på ca. 100 ord som viser klar forståelse af tekstens vigtigste pointer.", marks: 30, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under the scheme's heading “Diskussionen kan f.eks. drejes i følgende retninger:”, as examples, not a checklist: “Udviklingen er harmløs og uundgåelig. Grimme mennesker skal nok ikke præsentere firmaet udadtil, men kan udmærket finde sig en plads i samfundet og skabe sig en karriere”; “Udskillelse af grimme mennesker kan føre til decideret diskrimination og had.”. The scheme prints: “Note: I del 2 og del 3 vil de følgende elementer blive anvendt som vurderingskriterier.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Målstyring – eksaminanden viser forståelse af spørgsmålet og af en måde at besvare det på – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Sammenhæng – eksaminanden inddrager relevante og passende emner på en struktureret og meningsfuld måde – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sprogligt herredømme – eksaminanden demonstrerer sprogligt herredømme competent nok til at kommunikere ideer klart og flydende – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Sprogregler – grammatiske regler, staveregler, tegnsætning – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2012 Higher Level — © State Examinations Commission.",
+    id: "dan-2012-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2012 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner:\nDybde og overflade i menneskelige relationer\nI vores moderne verden bliver der altid fokuseret på her og nu",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Et velskrevet eassay på ca. 300 ord, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under the scheme's heading “For eksempel:”, as examples, not a checklist: “Menneskelige relationer bygger på meget andet end udseendet for de fleste. Dybde og modenhed vokser frem i tillid og direkte kontakt mellem mennesker og ikke i nogen klub på internettet.”. The scheme prints: “Note: I del 2 og del 3 vil de følgende elementer blive anvendt som vurderingskriterier.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Målstyring – eksaminanden viser forståelse af spørgsmålet og af en måde at besvare det på – 30 %","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Sammenhæng – eksaminanden inddrager relevante og passende emner på en struktureret og meningsfuld måde – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sprogligt herredømme – eksaminanden demonstrerer sprogligt herredømme competent nok til at kommunikere ideer klart og flydende – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Sprogregler – grammatiske regler, staveregler, tegnsætning – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2014, level: "higher",
     paperFileid: "LC038ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2014 Higher Level — © State Examinations Commission.",
