@@ -182,6 +182,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2010 Higher Level — © State Examinations Commission.",
+    id: "mgr-2010-hl-2", topicId: "modern-greek-1-0", conceptId: "mgr-έκφραση-ανθρωπότητα-επιτέλους",
+    section: "2", questionRef: "2010 HL Section 2",
+    questionText: "Να σχολιάσεις σε περίπου 100 λέξεις πως καταλαβαίνεις την έκφραση: όπου επιτέλους η ανθρωπότητα λυτρώνεται ( 2η παράγραφος), λαμβάνοντας υπόψη σου τα περιεχόμενο όλου του κειμένου",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Στη 2η και 3η ομάδα ερωτήσεων τα ακόλουθα στοιχεία συνυπολογίζονται στη βαθμολογία:", marks: 30, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\" The scheme prints, as examples, not a checklist: “Δημιουργείται μια ψευδαίσθηση όπου ο άνθρωπος μπορεί να νιώσει άνετος, δυνατός, ισχυρός σε κάποιους τομείς της ζωής του και για ένα συγκεκριμένο χρονικό διάστημα”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. σαφήνεια σκοπού: ο υποψήφιος κατανοεί την ερώτηση και γνωρίζει πώς να οργανώσει την απάντηση του.(30%)","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. σχετικότητα της απάντησης: ο υποψήφιος χρησιμοποιεί το σχετικό και κατάλληλο υλικό με έναν τρόπο καλά δομημένο και επιλεγμένο.(30%)","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. επάρκεια γλώσσας : ο υποψήφιος αποδεικνύει μια ικανοποιητική χρήση της γλώσσας ικανή ώστε να μεταδώσει τις ιδέες του με σαφήνεια και ευχέρεια.(30%)","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. διατύπωση: γραμματική, συντακτικό, ορθογραφία. (10%)","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2010 Higher Level — © State Examinations Commission.",
+    id: "mgr-2010-hl-3-1", topicId: "modern-greek-1-0", conceptId: "mgr-αξίες-απόκτηση-βοηθούν",
+    section: "3", questionRef: "2010 HL Section 3 Q1",
+    questionText: "Να διαλέξεις ένα από τα δύο θέματα και να γράψεις τις απόψεις σου σε ένα κείμενο 300 περίπου λέξεων: Ποιες αξίες βοηθούν στην απόκτηση της πραγματικής ευτυχίας;",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Στη 2η και 3η ομάδα ερωτήσεων τα ακόλουθα στοιχεία συνυπολογίζονται στη βαθμολογία:", marks: 40, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\" The scheme prints, as examples, not a checklist: “Η φιλία”; “Η οικογένεια”; “Η κοινωνική προσφορά”; “Η σωστή επιλογή του επαγγέλματος”; “κλπ”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. σαφήνεια σκοπού: ο υποψήφιος κατανοεί την ερώτηση και γνωρίζει πώς να οργανώσει την απάντηση του.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. σχετικότητα της απάντησης: ο υποψήφιος χρησιμοποιεί το σχετικό και κατάλληλο υλικό με έναν τρόπο καλά δομημένο και επιλεγμένο.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. επάρκεια γλώσσας : ο υποψήφιος αποδεικνύει μια ικανοποιητική χρήση της γλώσσας ικανή ώστε να μεταδώσει τις ιδέες του με σαφήνεια και ευχέρεια.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. διατύπωση: γραμματική, συντακτικό, ορθογραφία. (10%)","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2010 Higher Level — © State Examinations Commission.",
+    id: "mgr-2010-hl-3-2", topicId: "modern-greek-1-0", conceptId: "mgr-αυτόνομος-εντελώς-ζήσει",
+    section: "3", questionRef: "2010 HL Section 3 Q2",
+    questionText: "Να διαλέξεις ένα από τα δύο θέματα και να γράψεις τις απόψεις σου σε ένα κείμενο 300 περίπου λέξεων: Μπορεί κανείς να ζήσει εντελώς αυτόνομος;",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Στη 2η και 3η ομάδα ερωτήσεων τα ακόλουθα στοιχεία συνυπολογίζονται στη βαθμολογία:", marks: 40, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\" The scheme prints, as examples, not a checklist: “Τα τελευταία γεγονότα είναι ένα παράδειγμα μόνον ότι δε μπορεί”; “Χρειάζεται σεβασμός στη φύση”; “Συνεργασία και επικοινωνία με τους συνανθρώπους μας”; “Κατανόηση και αποδοχή της ανθρώπινης φύσης που έχει όρια και περιορισμούς”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. σαφήνεια σκοπού: ο υποψήφιος κατανοεί την ερώτηση και γνωρίζει πώς να οργανώσει την απάντηση του.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. σχετικότητα της απάντησης: ο υποψήφιος χρησιμοποιεί το σχετικό και κατάλληλο υλικό με έναν τρόπο καλά δομημένο και επιλεγμένο.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. επάρκεια γλώσσας : ο υποψήφιος αποδεικνύει μια ικανοποιητική χρήση της γλώσσας ικανή ώστε να μεταδώσει τις ιδέες του με σαφήνεια και ευχέρεια.(30%)","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. διατύπωση: γραμματική, συντακτικό, ορθογραφία. (10%)","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2011, level: "higher",
     paperFileid: "LC019ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2011 Higher Level — © State Examinations Commission.",
