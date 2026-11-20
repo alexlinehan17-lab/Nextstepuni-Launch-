@@ -40,17 +40,22 @@ class FrenchSecWordingTest(unittest.TestCase):
         review = json.loads((AUTH / 'french-reading-review.json').read_text())
         cls.aliases = {(r['year'], r['level']): tuple(a['glyph'] for a in r.get('schemeBulletAliases', []))
                        for r in review['papers']}
+        deferred = json.loads((AUTH / 'french-reading-review-deferred.json').read_text())
+        cls.aliases.update({(r['year'], f"{r['level']}-deferred"): tuple(a['glyph'] for a in r.get('schemeBulletAliases', []))
+                            for r in deferred['papers']})
 
     def check(self, deck):
         failures = []
         seen = {}
         for card in json.loads((DECKS / f'{deck}.json').read_text()):
             year, level = card['year'], {'higher': 'hl', 'ordinary': 'ol'}[card['level']]
+            if '-deferred-' in card['id']:
+                level += '-deferred'      # the deferred sitting's own files, named by it
             paper = DATA / f'papers/{year}-{level}-{"A00" if deck == "listening" else "000"}-paper.pdf'
             scheme = DATA / f'schemes/{year}-{level}.pdf'
-            aliases = self.aliases.get((year, level), ()) if deck == 'reading' else ()
+            aliases = self.aliases.get((year, level), ()) if deck in ('reading', 'deferred-reading') else ()
             rubric = card['rubric']
-            if deck == 'reading':
+            if deck in ('reading', 'deferred-reading'):
                 cited = [int(p) for p in re.search(r'pp\.([\d, ]+);', card['schemeCitation'])[1].split(',')]
             else:
                 first = card['schemeRegion']['p']
@@ -123,6 +128,9 @@ class FrenchSecWordingTest(unittest.TestCase):
 
     def test_listening_shows_only_printed_wording(self):
         self.check('listening')
+
+    def test_deferred_reading_shows_only_printed_wording(self):
+        self.check('deferred-reading')
 
 
 if __name__ == '__main__':
