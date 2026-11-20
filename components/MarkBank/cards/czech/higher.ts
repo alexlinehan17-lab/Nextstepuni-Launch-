@@ -1851,6 +1851,180 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2019 Higher Level — © State Examinations Commission.",
+    id: "cs-2019-hl-i-2", topicId: "czech-0-1", conceptId: "vysvetlete-zaklade-textu-znamena-urbex",
+    section: "I", questionRef: "2019 HL Section I Q2",
+    questionText: "Vysvětlete na základě textu, co znamená urbex.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Urbex je městský průzkum, poznávání a dokumentace různých staveb, budov a objektů (zejména běžně nepřístupných, opuštěných, chátrajících a někdy nebezpečných), průzkum všeho, co vzniklo lidskou rukou.", marks: 5, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2019 Higher Level — © State Examinations Commission.",
+    id: "cs-2019-hl-i-3", topicId: "czech-0-1", conceptId: "vysvetlete-zaklade-textu-proc-davaji-urbexeri",
+    section: "I", questionRef: "2019 HL Section I Q3",
+    questionText: "Vysvětlete na základě textu, proč dávají urbexeři místům falešná jména.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pravidlem urbexerů je, že nesmějí zanechat stopy, chtějí jen udělat fotky. Ale mnoho míst se prozradí a potom se může stát, že je vandalové zničí, případně rozkradou věci, které na těch místech zůstaly. Dávání falešných jmen je tedy jakousi ochranou proti těmto vandalům.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2019 Higher Level — © State Examinations Commission.",
+    id: "cs-2019-hl-i-4", topicId: "czech-0-1", conceptId: "vysvetlete-zaklade-textu-pozitivni-aspekty-urbexu",
+    section: "I", questionRef: "2019 HL Section I Q4",
+    questionText: "Vysvětlete na základě textu pozitivní aspekty urbexu a pozitivní dopady jejich aktivit.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Urbex má v podstatě za cíl dokumentovat historii, nechtějí nic ničit, chtějí jen zdokumentovat – vyfotit - to, co lidé opustili a víc už nechtějí. Díky tomu mohou alespoň na fotkách zůstat zachována svědectví o každodenním lidském životě, naší historii. Některé budovy mohou mít i cennou historickou hodnotu a je výhodou, pokud si těchto fotek všimne někdo, kdo má možnosti pro záchranu těchto staveb něco udělat.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    { id: "r-2", kind: "point", verbatim: "Zde je možnost se zamyslet i nad aspektem udržitelnosti – na co stavět nové stavby, když můžeme opravit ty staré?", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Dalším pohledem na urbex může být i umělecká hodnota vzniklých fotografií a tím kulturní přínos pro společnost.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2019 Higher Level — © State Examinations Commission.",
+    id: "cs-2019-hl-i-5", topicId: "czech-0-1", conceptId: "popiste-zaklade-textu-rizika-spojena-urbexem",
+    section: "I", questionRef: "2019 HL Section I Q5",
+    questionText: "Popište na základě textu rizika spojená s urbexem. Domníváte se, že se tato rizika vyplatí? Vysvětlete, proč ano/proč ne. Vezměte ve své odpovědi do úvahy urbexery samotné, ale i společnost obecně.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Jednoznačným rizikem urbexu je riziko zdravotní. Budovy a místa, která jsou pro urbexery zajímavá, jsou často stará a zchátralá a není výjímkou, že se někdo zraní. Rizikem může být i zklamání z toho, že se nedostaví očekávaný výsledek hledání, protože mezitím nekdo toto místo zničil nebo vykradl. Pozitivním rizikem je, že se nedostaví výsledek, protože už se někdo rozhodl stavbu zachránit a opravuje ji.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    { id: "r-2", kind: "point", verbatim: "Je nutno přiznat, že urbex může mít i rizika spojená s kontrolou nebo zadržením policií, protože i opuštěná místo mohou stát na pozemku, který má soukromého majitele. Může se stát, že urbexer dostane pokutu, nebo ho policie považuje za vandala. Ve starých objektech se často také pohybují zloději, kteří hledají, co by se z těchto opuštěných míst dalo zpeněžit.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Prostor pro vlastní názor.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2019 Higher Level — © State Examinations Commission.",
+    id: "cs-2019-hl-i-6", topicId: "czech-0-1", conceptId: "zanech-pouze-stopy-odnes-pouze-fotky",
+    section: "I", questionRef: "2019 HL Section I Q6",
+    questionText: "„Zanech pouze stopy, odnes pouze fotky.“ Je hlavní motto urbexerů - vyjádřete vlastní názor na toto tvrzení.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Úkolem je vlastními slovy vysvětlit svůj názor na toto tvrzení, případně lze polemizovat. Je také možno porovnat s konvenčním turismem. Urbex se zajímá o ztracenou minulost, soustředí se na opuštěná místa, a ne na typické kulturní a historické dědictví. Motivací je konzervovat toto dědictví a znovu objevit zapomnutá místa. Urbexeři sou velmi opatrní, aby nic nezměnili ani nezničili a zazanamenávají jen na fotkách a slovem. Vlastní vysvětlení: vlastními slovy, bez opsání frází z textu.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2019 Higher Level — © State Examinations Commission.",
+    id: "cs-2019-hl-ii", topicId: "czech-1-0", conceptId: "zaklade-textu-napiste-komentar-100-150",
+    section: "II", questionRef: "2019 HL Section II",
+    questionText: "Na základě textu napište komentář o 100-150 slovech na toto tvrzení: „Vynikající je, pokud si pak těch obrázků všimne někdo, kdo tu stavbu zachrání, což se stává.“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vlastními slovy, bez opsání frází z textu.", marks: 30, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”. The scheme prints, as examples, not a checklist: “Vlastní názor na uvedené tvrzení, lze vyjádřit souhlas i nesouhlas, pomocí argumentů z textu i vlastní zkušenosti.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČÁST 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2019 Higher Level — © State Examinations Commission.",
+    id: "cs-2019-hl-iii-1", topicId: "czech-1-0", conceptId: "navsteva-opustenych-mist-laka-cim-dal",
+    section: "III", questionRef: "2019 HL Section III Q1",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: „Návštěva opuštěných míst láká čím dál víc.“ Vyjádřete vlastní názor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”. The scheme reprints the instruction as: “Napište esej (minimum 300 slov) na jedno z následujících témat: , s použitím argumentů pro a proti vyjádřete vlastní názor:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2019 Higher Level — © State Examinations Commission.",
+    id: "cs-2019-hl-iii-2", topicId: "czech-1-0", conceptId: "dat-rocni-pauzu-stredni-skole-uzitecne",
+    section: "III", questionRef: "2019 HL Section III Q2",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: Dát si roční pauzu po střední škole – je to užitečné, nebo je to jen ztráta času? Vezměte ve svém textu do úvahy obě strany tohoto tvrzení.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”. The scheme reprints the instruction as: “Napište esej (minimum 300 slov) na jedno z následujících témat: , s použitím argumentů pro a proti vyjádřete vlastní názor:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2020, level: "higher",
     paperFileid: "LC547ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2020 Higher Level — © State Examinations Commission.",
