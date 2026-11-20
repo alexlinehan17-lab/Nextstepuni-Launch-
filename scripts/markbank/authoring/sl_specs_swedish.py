@@ -170,8 +170,9 @@ ESSAY_2010 = Run('Skriv en uppsats på ungefär 300', 'ämnena nedan.')
 
 
 def _part3_note_2010(d):
-    return (f'Under the two titles the scheme prints only “{L(68, 69).text(d)}” Its criteria are printed for '
-            f'parts I and II only: “{S(70, after="Anmärkning: ").text(d)}”')
+    # (second reader: the criteria block is printed under the titles too, so not "only")
+    return (f'Under the two titles the scheme prints “{L(68, 69).text(d)}” and its criteria note, which names '
+            f'parts I and II only: “{S(70, after="Anmärkning: ").text(d)}” It prints no answer for this part.')
 
 
 SPECS[2010] = [

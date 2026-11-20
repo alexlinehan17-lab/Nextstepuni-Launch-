@@ -214,7 +214,7 @@ export const CARDS: SecCard[] = [
     questionText: "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. Förväntar vi oss för mycket av livet nu för tiden?",
     tariffModel: {"kind":"fixed"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under the two titles the scheme prints only “En klart och tydligt skriven uppsats som väl håller sig till ämnet, med tydlig disposition, klart syfte och godtagbara formuleringar.” Its criteria are printed for parts I and II only: “I del I och II kommer följande kriterier att vägas in i betygsättningen:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under the two titles the scheme prints “En klart och tydligt skriven uppsats som väl håller sig till ämnet, med tydlig disposition, klart syfte och godtagbara formuleringar.” and its criteria note, which names parts I and II only: “I del I och II kommer följande kriterier att vägas in i betygsättningen:” It prints no answer for this part.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
     ],
   } as SecCard,
   {
@@ -227,7 +227,7 @@ export const CARDS: SecCard[] = [
     questionText: "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. Ingen människa är en ö",
     tariffModel: {"kind":"fixed"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under the two titles the scheme prints only “En klart och tydligt skriven uppsats som väl håller sig till ämnet, med tydlig disposition, klart syfte och godtagbara formuleringar.” Its criteria are printed for parts I and II only: “I del I och II kommer följande kriterier att vägas in i betygsättningen:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under the two titles the scheme prints “En klart och tydligt skriven uppsats som väl håller sig till ämnet, med tydlig disposition, klart syfte och godtagbara formuleringar.” and its criteria note, which names parts I and II only: “I del I och II kommer följande kriterier att vägas in i betygsättningen:” It prints no answer for this part.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
     ],
   } as SecCard,
   {
