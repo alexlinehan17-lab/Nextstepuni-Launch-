@@ -2658,6 +2658,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2681,6 +2682,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2704,6 +2706,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2727,6 +2730,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2750,6 +2754,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2773,6 +2778,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2789,13 +2795,14 @@ export const CARDS: SecCard[] = [
     questionText: "Miért okozott különösen jelentős demográfiai hiányt az emigrációs hullám?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Miért okozott jelentős demográfiai hiányt az emigrációs hullám? Válasz a 4. bekezdésben: Azért okozott jelentős demográfiai hiányt az emigrációs hullám, mert a távozottak egyharmada magasan kvalifikált munkaerő, vagyis velük a hazai átlagnál sokkal képzettebb népességet veszített az ország, b, jelentős részük fiatal, miközben a régebben emigráltak közül sokan éppen a nyugdíjas korukra térnek vissza hazájukba. A legutóbbi adatok szerint a határokon kívül élő állampolgárok aránya a legmagasabbak közt van az európai országok körében. c, A külföldre távozottak visszacsábítására tett próbálkozások csak szórványos eredménnyel jártak, mert a legtöbben már gyökeret vertek a választott országban, a gyermekeik is ott születtek.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 4. bekezdésben: Azért okozott jelentős demográfiai hiányt az emigrációs hullám, mert a távozottak egyharmada magasan kvalifikált munkaerő, vagyis velük a hazai átlagnál sokkal képzettebb népességet veszített az ország, b, jelentős részük fiatal, miközben a régebben emigráltak közül sokan éppen a nyugdíjas korukra térnek vissza hazájukba. A legutóbbi adatok szerint a határokon kívül élő állampolgárok aránya a legmagasabbak közt van az európai országok körében. c, A külföldre távozottak visszacsábítására tett próbálkozások csak szórványos eredménnyel jártak, mert a legtöbben már gyökeret vertek a választott országban, a gyermekeik is ott születtek.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2819,6 +2826,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2842,6 +2850,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2858,13 +2867,14 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg a szöveg alapján, miért központi kérdés Magyarország jövőjének szempontjából a demográfiai egyensúly!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 1., 3. és 5. bekezdése alapján adott válasz: Azért központi kérdés Magyarország jövőjének szempontjából a demográfiai egyensúly, mert a születésszám növekedése nem tudja pótolni a demográfiai hiányt, egyre elöregedettebb a népesség, mind kevesebb a fiatal is. A jelenlegi tízmilliós lakosság jelentősen zsugorodik, olyan nagyarányú idős népességgel, ami hatalmas kihívás a társadalom fenntarthatósága szempontjából. Egyre több munkaképes korú felnőtt tervezi, hogy külföldön vállal munkát, és elhagyja az országot a közeljövőben. Különösen a fiatalok körében magas és a korábbiakhoz képest egyre növekvő ez az arány. A külföldre távozottak visszacsábítására tett próbálkozások csak szórványos eredménnyel jártak. A migrációs egyenleg is negatív, vagyis többen hagyják el az országot, mint ahány külföldi ott letelepedik. A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30% 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 1., 3. és 5. bekezdése alapján adott válasz: Azért központi kérdés Magyarország jövőjének szempontjából a demográfiai egyensúly, mert a születésszám növekedése nem tudja pótolni a demográfiai hiányt, egyre elöregedettebb a népesség, mind kevesebb a fiatal is. A jelenlegi tízmilliós lakosság jelentősen zsugorodik, olyan nagyarányú idős népességgel, ami hatalmas kihívás a társadalom fenntarthatósága szempontjából. Egyre több munkaképes korú felnőtt tervezi, hogy külföldön vállal munkát, és elhagyja az országot a közeljövőben. Különösen a fiatalok körében magas és a korábbiakhoz képest egyre növekvő ez az arány. A külföldre távozottak visszacsábítására tett próbálkozások csak szórványos eredménnyel jártak. A migrációs egyenleg is negatív, vagyis többen hagyják el az országot, mint ahány külföldi ott letelepedik.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -2888,6 +2898,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -2911,6 +2922,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -2924,7 +2936,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2020 Higher Level — © State Examinations Commission.",
     id: "hun-2020-hl-i-1-c", topicId: "hungarian-0-0", conceptId: "magyarazd-meg-mit-jelent-debutal-ige",
     section: "I", questionRef: "2020 HL Section I Q1(c)",
-    questionText: "Magyarázd meg, mit jelent a „debütál” ige! Magyarázd meg, mit jelent a „pallérozódott” ige!",
+    questionText: "Magyarázd meg, mit jelent a „pallérozódott” ige!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Az 1. bekezdésben található ige a saját szavaiddal kifejezve: A pallérozódott ige azt jelenti, hogy nevelődött.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
@@ -2934,6 +2946,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -2947,7 +2960,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2020 Higher Level — © State Examinations Commission.",
     id: "hun-2020-hl-i-1-d", topicId: "hungarian-0-0", conceptId: "magyarazd-meg-mit-jelent-debutal-ige",
     section: "I", questionRef: "2020 HL Section I Q1(d)",
-    questionText: "Magyarázd meg, mit jelent a „debütál” ige! Magyarázd meg, mit jelent a „szenzációhajhász” szó!",
+    questionText: "Magyarázd meg, mit jelent a „szenzációhajhász” szó!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben található szó a saját szavaiddal kifejezve: A szenzációhajhász szó azt jelenti, hogy valaki minél érdekesebbé, izgalmasabbá teszi a híreket.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
@@ -2957,6 +2970,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -2980,6 +2994,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -3003,6 +3018,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -3026,6 +3042,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -3049,6 +3066,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -3072,6 +3090,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -3088,13 +3107,14 @@ export const CARDS: SecCard[] = [
     questionText: "Mik voltak a napilap összeomlásának okai?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 5. bekezdése alapján saját szavakkal kifejtett vélemény. A lap többnyire szálka volt a kormányok szemében. A lapnak az évek során többször is megvonták a kolportázshoz, vagyis az utcai terjesztéshez való jogát, vagy munkatársain keresztül próbálták kikezdeni az újságot. A mindinkább szélsőjobboldalra tolódó hatalom 1939 szeptemberében hallgattatta el Az Estet. A részvénytársaság elhúzódó pénzügyi perét ürügyül használva az adóhatóság a szerkesztőségi helyiségeket íróasztalostul, írógépestül puccsszerűen kiüríttette. A lapnak mindössze arra maradt lehetősége, hogy önnön megszűntét még nyomtatásban tudassa az utolsó számában. A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30% 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 5. bekezdése alapján saját szavakkal kifejtett vélemény. A lap többnyire szálka volt a kormányok szemében. A lapnak az évek során többször is megvonták a kolportázshoz, vagyis az utcai terjesztéshez való jogát, vagy munkatársain keresztül próbálták kikezdeni az újságot. A mindinkább szélsőjobboldalra tolódó hatalom 1939 szeptemberében hallgattatta el Az Estet. A részvénytársaság elhúzódó pénzügyi perét ürügyül használva az adóhatóság a szerkesztőségi helyiségeket íróasztalostul, írógépestül puccsszerűen kiüríttette. A lapnak mindössze arra maradt lehetősége, hogy önnön megszűntét még nyomtatásban tudassa az utolsó számában.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -3135,7 +3155,7 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent a „túlturistásodott” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Magyarázza meg, mit jelent az „túlturistásodott (overtourism)” kifejezés! A 3. és7. bekezdésben található kifejezés saját szavaival megfogalmazva: a „túlturistásodott” kifejezés azt jelenti, hogy torlódások és túlzsúfoltság alakul ki a túlzott turistaáradat miatt, ami konfliktust okoz(hat) a helyieknek, de akár a település infrastruktúrájában is.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 3. és7. bekezdésben található kifejezés saját szavaival megfogalmazva: a „túlturistásodott” kifejezés azt jelenti, hogy torlódások és túlzsúfoltság alakul ki a túlzott turistaáradat miatt, ami konfliktust okoz(hat) a helyieknek, de akár a település infrastruktúrájában is.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3231,7 +3251,7 @@ export const CARDS: SecCard[] = [
     questionText: "Hány hajó közlekedik a Duna belvárosi szakaszán esténként átlagosan?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hány hajó közlekedik esténként a Duna belvárosi szakaszán átlagosan? Válasz a 4. bekezdésben: A Duna belvárosi szakaszán esténként átlagosan 70 hajó közlekedik.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
+    { id: "r-1", kind: "point", verbatim: "Válasz a 4. bekezdésben: A Duna belvárosi szakaszán esténként átlagosan 70 hajó közlekedik.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3327,7 +3347,7 @@ export const CARDS: SecCard[] = [
     questionText: "A szerző azt állítja, hogy „az overtourism kínja annyira fájdalmassá vált”. A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért-e ezzel vagy sem! !",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szerző azt állítja, hogy „az overtourism kínja annyira fájdalmassá vált”. A szövegre utalva fejtse ki ezt az álláspontot, és azt is, egyetért‐e vele vagy sem! A szöveg 1. és 6. bekezdése alapján adott válasz: Az az állítás, hogy „ az overtourism kínja annyira fájdalmassá vált”, azt jelenti, hogy konkrét intézkedéseket próbálnak foganatosítani. Ilyen a szezon elhúzása, alternatív célpontok kínálása, a legsűrűbb időszakban megemelt árak kiszorító hatása, a szálláskínálat szabályozása, a szívesen látottak számának vagy a látványosságokhoz való hozzáférés korlátozása, a kirívó viselkedés büntetése. Igen, egyetértek vele, mert … vagy Nem, nem értek egyet vele, mert …Egyéni válasz.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 1. és 6. bekezdése alapján adott válasz: Az az állítás, hogy „ az overtourism kínja annyira fájdalmassá vált”, azt jelenti, hogy konkrét intézkedéseket próbálnak foganatosítani. Ilyen a szezon elhúzása, alternatív célpontok kínálása, a legsűrűbb időszakban megemelt árak kiszorító hatása, a szálláskínálat szabályozása, a szívesen látottak számának vagy a látványosságokhoz való hozzáférés korlátozása, a kirívó viselkedés büntetése. Igen, egyetértek vele, mert … vagy Nem, nem értek egyet vele, mert …Egyéni válasz.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3358,6 +3378,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -3381,6 +3402,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -3404,6 +3426,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -3427,6 +3450,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -3450,6 +3474,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -3473,6 +3498,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -3496,6 +3522,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -3519,6 +3546,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -3542,6 +3570,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -3558,13 +3587,14 @@ export const CARDS: SecCard[] = [
     questionText: "A szerző azt állítja, hogy a közhely beigazolódott, hogy a válság új lehetőségeket teremt. A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért‐e ezzel vagy sem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 5. bekezdése alapján adott válasz: Az az állítás, hogy a közhely beigazolódott, hogy a válság új lehetőségeket teremt, azt jelenti, hogy ha valaki megfelelő tudással és infrastruktúrával rendelkezett, és képes volt elhagyni a komfortzónáját, kihasználhatta az adódó lehetőségeket. Ebben pedig a fiataloknak helyenként még előnyük is volt az idősebb vállalkozókkal szemben. Sokat segített az alkalmazkodóképességük, a rugalmasságuk, és hogy már korábban is sokkal otthonosabban mozogtak a digitalizáció terén. A feladatok és a munkamenet egy jó részét hirtelen át kellett tenni az online világba, korábban nem használt programokat kellett elsajátítani. Sok fiatal cégvezető alkalmazkodott a versenytársaknál gyorsabban a távmunka kényszeréhez. Igen, egyetértek vele, mert … vagy Nem, nem értek egyet vele, mert … Egyéni válasz. A II. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. 3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. 4. Nyelvhelyesség – Nyelvi és helyesírási szabályok.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 5. bekezdése alapján adott válasz: Az az állítás, hogy a közhely beigazolódott, hogy a válság új lehetőségeket teremt, azt jelenti, hogy ha valaki megfelelő tudással és infrastruktúrával rendelkezett, és képes volt elhagyni a komfortzónáját, kihasználhatta az adódó lehetőségeket. Ebben pedig a fiataloknak helyenként még előnyük is volt az idősebb vállalkozókkal szemben. Sokat segített az alkalmazkodóképességük, a rugalmasságuk, és hogy már korábban is sokkal otthonosabban mozogtak a digitalizáció terén. A feladatok és a munkamenet egy jó részét hirtelen át kellett tenni az online világba, korábban nem használt programokat kellett elsajátítani. Sok fiatal cégvezető alkalmazkodott a versenytársaknál gyorsabban a távmunka kényszeréhez. Igen, egyetértek vele, mert … vagy Nem, nem értek egyet vele, mert … Egyéni válasz.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -3588,6 +3618,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3611,6 +3642,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3634,6 +3666,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3657,6 +3690,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3680,6 +3714,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3703,6 +3738,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3726,6 +3762,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3749,6 +3786,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3772,6 +3810,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3788,13 +3827,14 @@ export const CARDS: SecCard[] = [
     questionText: "Dóka Péter azt állítja, hogy a Harry Potter nemcsak remek könyvsorozat, hanem a modern gyerekirodalom kezdőpontja is, új korszak nyitánya. A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért-e ezzel vagy sem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 7. bekezdése alapján adott válasz: Dóka Péter azért állítja, hogy a Harry Potter nemcsak remek könyvsorozat, hanem a modern gyerekirodalom kezdőpontja is, új korszak nyitánya, mert korszakhatárt jelölt: A, J. K. Rowling is „filmszerűen” fogalmazta meg a Harry Potter könyvsorozatát. B, Még mindig a varázslóiskola berkeiben játszódó könyvsorozat a jelenlegi ifjúsági irodalom viszonyítási pontja. A Harry Potter‐könyvek egy teljes generáció számára bizonyultak „kapudrognak” az olvasáshoz. C, A Harry Potterrel kezdődött az, hogy a fiatalokban is megnőtt a vágy a romantika iránt, így feléledt ez a korstílus. Megjelent a gótikus regény (lásd: Alkonyat), megjelentek az alternatív történelmi regények, a varázslós történetek. És, mint a romantikában általában, ismét nagyon nagy szerepük lett a történetekben az egyéniségeknek, akik képesek megváltoztatni a világot. Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ... A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30% 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 7. bekezdése alapján adott válasz: Dóka Péter azért állítja, hogy a Harry Potter nemcsak remek könyvsorozat, hanem a modern gyerekirodalom kezdőpontja is, új korszak nyitánya, mert korszakhatárt jelölt: A, J. K. Rowling is „filmszerűen” fogalmazta meg a Harry Potter könyvsorozatát. B, Még mindig a varázslóiskola berkeiben játszódó könyvsorozat a jelenlegi ifjúsági irodalom viszonyítási pontja. A Harry Potter‐könyvek egy teljes generáció számára bizonyultak „kapudrognak” az olvasáshoz. C, A Harry Potterrel kezdődött az, hogy a fiatalokban is megnőtt a vágy a romantika iránt, így feléledt ez a korstílus. Megjelent a gótikus regény (lásd: Alkonyat), megjelentek az alternatív történelmi regények, a varázslós történetek. És, mint a romantikában általában, ismét nagyon nagy szerepük lett a történetekben az egyéniségeknek, akik képesek megváltoztatni a világot. Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ...", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3818,6 +3858,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3841,6 +3882,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3864,6 +3906,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3887,6 +3930,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3910,6 +3954,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3933,6 +3978,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3956,6 +4002,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3979,6 +4026,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -4002,6 +4050,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -4018,13 +4067,14 @@ export const CARDS: SecCard[] = [
     questionText: "A cikk szerzője azt állítja, hogy „(m)inél inkább ráteszik a kezüket a nagyvállalatok ezekre az alternatív gazdasági megoldásokra, annál jobban felhígul a fogalom eredeti tartalma.” A szöveg alapján magyarázza meg ezt az állítást, illetve fejtse ki véleményét, egyetért-e ezzel vagy sem!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A szöveg 3. és 4. bekezdése alapján adott válasz: A cikk szerzője azt állítja, hogy minél inkább ráteszik a kezüket a nagyvállalatok ezekre az alternatív gazdasági megoldásokra, annál jobban felhígul a fogalom eredeti tartalma, mert A) Budapesten is egyre nagyobb teret nyernek az autómegosztók. Immár három vállalat is küzd a sofőrök kegyeiért. Kérdés, hogy abban az esetben, ha a hagyományos gazdaság egyazon vállalata biztosítja a járművet és az applikációt is, az mennyiben tekinthető a megosztáson alapuló gazdaság részének, és mennyiben egy olyan autókölcsönzőnek, amelynek szétszórtan találhatók az átvételi pontjai. B) Az autómegosztás mellett ékes példáját szolgáltatja a rollerkölcsönzés is: az elektromos roller máris vonzó alternatívává vált, mihelyst tömegével jelent meg a nagyvárosokban. A rollerek példáján át jól szemléltethető a megosztáson alapuló gazdaság elégtelen törvényi háttere is. Ahogyan a globális techóriások, úgy ennek a piacnak a szereplői is egy olyan rést töltenek be, aminek a szabályozása még még mindig elégtelen, noha a probléma már a napnál is világosabb. A törvényhozás azonban csak maszatol, és próbálja valamilyen közlekedési eszközként definiálni az elektromos rollereket, miközben arról mélyen hallgat, lehet‐e profitszerzés céljából teleszemetelni a településeket, mindenféle rendezettség nélkül, mert a rollert a felhasználó ott hagyja, ahol éppen jólesik neki.. Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ... A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg: 1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30% 2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A szöveg 3. és 4. bekezdése alapján adott válasz: A cikk szerzője azt állítja, hogy minél inkább ráteszik a kezüket a nagyvállalatok ezekre az alternatív gazdasági megoldásokra, annál jobban felhígul a fogalom eredeti tartalma, mert A) Budapesten is egyre nagyobb teret nyernek az autómegosztók. Immár három vállalat is küzd a sofőrök kegyeiért. Kérdés, hogy abban az esetben, ha a hagyományos gazdaság egyazon vállalata biztosítja a járművet és az applikációt is, az mennyiben tekinthető a megosztáson alapuló gazdaság részének, és mennyiben egy olyan autókölcsönzőnek, amelynek szétszórtan találhatók az átvételi pontjai. B) Az autómegosztás mellett ékes példáját szolgáltatja a rollerkölcsönzés is: az elektromos roller máris vonzó alternatívává vált, mihelyst tömegével jelent meg a nagyvárosokban. A rollerek példáján át jól szemléltethető a megosztáson alapuló gazdaság elégtelen törvényi háttere is. Ahogyan a globális techóriások, úgy ennek a piacnak a szereplői is egy olyan rést töltenek be, aminek a szabályozása még még mindig elégtelen, noha a probléma már a napnál is világosabb. A törvényhozás azonban csak maszatol, és próbálja valamilyen közlekedési eszközként definiálni az elektromos rollereket, miközben arról mélyen hallgat, lehet‐e profitszerzés céljából teleszemetelni a településeket, mindenféle rendezettség nélkül, mert a rollert a felhasználó ott hagyja, ahol éppen jólesik neki.. Igen, egyetértek ezzel, mert... vagy Nem, nem értek egyet, mert... vagy részben értek egyet, mert ...", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -4048,6 +4098,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4071,6 +4122,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4094,6 +4146,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4117,6 +4170,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4133,13 +4187,14 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „örödként gondol valamire” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Magyarázza meg, mit jelent az „ördögként gondol valamire” kifejezés! Az 5. bekezdésben található kifejezés saját szavaival megfogalmazva: az „ördögként gondol valamire” kifejezés azt jelenti, hogy rossznak, gonosznak, megvetendőnek hiszi.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található kifejezés saját szavaival megfogalmazva: az „ördögként gondol valamire” kifejezés azt jelenti, hogy rossznak, gonosznak, megvetendőnek hiszi.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4163,6 +4218,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4179,13 +4235,14 @@ export const CARDS: SecCard[] = [
     questionText: "Miután az embernek családja lett, nem igazán van szüksége barátokra. Kommentálja ezt az állítást a szövegre való hivatkozással, és fejtse ki saját álláspontját!",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Például: A 2. bekezdésben a szöveg azt állítja, hogy mára megváltozott a tendencia, miszerint ha egyszer van családod, akkor nincs igazán szükséged barátokra. A rendszerváltás utáni évtizedben szinte mindenki azt válaszolta, hogy családjával beszéli meg problémáit, de mára ez is a barátok javára fordult. Ez persze úgy is értelmezhető, hogy sokan nem tudják megosztani problémáikat közeli családtagjaikkal, például házastársukkal, ami nem jó hír. Egyetértek az állítással: A család mindig közelebb lesz, mint a barátok, és egész életen át veled lesz, míg a barátok jöhetnek-mehetnek. vagy Nem értek egyet az állítással: Kiválaszthatod a barátaidat, akiknek gyakran több közös vonásuk lesz veled, mint a családtagjaiddal. Könnyebb lehet olyan kérdéseket megvitatni, mint például a személyes problémákat egy közeli baráttal, nem pedig a családdal.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "A 2. bekezdésben a szöveg azt állítja, hogy mára megváltozott a tendencia, miszerint ha egyszer van családod, akkor nincs igazán szükséged barátokra. A rendszerváltás utáni évtizedben szinte mindenki azt válaszolta, hogy családjával beszéli meg problémáit, de mára ez is a barátok javára fordult. Ez persze úgy is értelmezhető, hogy sokan nem tudják megosztani problémáikat közeli családtagjaikkal, például házastársukkal, ami nem jó hír. Egyetértek az állítással: A család mindig közelebb lesz, mint a barátok, és egész életen át veled lesz, míg a barátok jöhetnek-mehetnek. vagy Nem értek egyet az állítással: Kiválaszthatod a barátaidat, akiknek gyakran több közös vonásuk lesz veled, mint a családtagjaiddal. Könnyebb lehet olyan kérdéseket megvitatni, mint például a személyes problémákat egy közeli baráttal, nem pedig a családdal.", marks: 5, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4209,6 +4266,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4232,6 +4290,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4255,6 +4314,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -4278,6 +4338,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -4301,6 +4362,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -4324,6 +4386,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -4347,6 +4410,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -4370,6 +4434,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -4393,6 +4458,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -4416,6 +4482,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -4439,6 +4506,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
@@ -4462,6 +4530,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Hungarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Hungarian 2026 Higher Level examination paper — © State Examinations Commission.",
