@@ -3394,6 +3394,201 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-i-1-a", topicId: "estonian-0-0", conceptId: "digiriik",
+    section: "I", questionRef: "2024 HL Section I Q1(a)",
+    questionText: "Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis. Sõnad ja väljendid on esitatud paksus kirjas. digiriik",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "riik, mis kasutab toimimiseks palju digitaalseid lahendusi; riik, mida iseloomustab kõrge digitaliseerituse tase ning digitehnoloogia kiire areng", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-i-1-b", topicId: "estonian-0-0", conceptId: "nutikas",
+    section: "I", questionRef: "2024 HL Section I Q1(b)",
+    questionText: "Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis. Sõnad ja väljendid on esitatud paksus kirjas. nutikas",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "taibukas, leidlik, terane, tark, lahtise peaga", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-i-1-c", topicId: "estonian-0-0", conceptId: "age",
+    section: "I", questionRef: "2024 HL Section I Q1(c)",
+    questionText: "Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis. Sõnad ja väljendid on esitatud paksus kirjas. äge",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "väga tore, vaimustust äratav, vinge, kihvt", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-i-1-d", topicId: "estonian-0-0", conceptId: "parssima",
+    section: "I", questionRef: "2024 HL Section I Q1(d)",
+    questionText: "Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis. Sõnad ja väljendid on esitatud paksus kirjas. pärssima",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(protsessi) aeglustama, takistama, tagasi hoidma", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-i-1-e", topicId: "estonian-0-0", conceptId: "maailmaga-suhestuma",
+    section: "I", questionRef: "2024 HL Section I Q1(e)",
+    questionText: "Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis. Sõnad ja väljendid on esitatud paksus kirjas. maailmaga suhestuma",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "maailmaga seostuma, haakuma, suhtes olema", marks: 1, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the question as: “Selgita järgmiste sõnade ja väljendite tähendust, nii nagu need esinevad teksti kontekstis:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-i-5", topicId: "estonian-0-1", conceptId: "agentsuse-oluline-osa-oskus-langetada-eesmargiparaseid",
+    section: "I", questionRef: "2024 HL Section I Q5",
+    questionText: "„Agentsuse oluline osa on oskus langetada eesmärgipäraseid valikuid. Et agentsust arendada, tuleks lapsel koolis harjutada rohkem valikute tegemist.“ Kuidas aitab sinu arvates valikute tegemise oskus kaasa tehnoloogia õigesti kasutamise oskusele? Esita loetu põhjal oma seisukoht.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Valikute tegemise oskus on kõigepealt oluline selleks, et lapsed oleksid võimelised otsustama ise, millal neil on vaja tehnoloogiat, nutiseadmeid või tehisaru ning et nad oskaksid neid seadmeid sihipäraselt kasutada. Koolil on tähtis roll suunanäitajana.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\"" },
+    { id: "r-2", kind: "point", verbatim: "Valikute tegemise oskus aitab meil oma elus eesmärkideni jõuda. Noorte puhul on üheks eesmärgiks tulevik ja karjäär. Võimalus valida endale sobivaid aineid ja projekte aitab meid muuta pädevamaks, loovamaks, raskuste ületamisel julgemaks, sihikindlamaks, iseseisvamaks ning arendada kriitilist mõtlemist ja kiiret analüüsivõimet. Samad oskused on vajalikud tehnoloogiamaailmas – pädevust kasutada ja arendada tehnoloogiat, läheneda projektidele loovalt ja viia ideid ellu sihipäraselt, arvestada ohte (nt küberkuritegevus, valeinfo), järgida reegleid (nt andmekaitse) või oskust valida sobivaid töömeetodeid.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-ii-1", topicId: "estonian-1-0", conceptId: "eesmark-pole-mitte-riik-kus-koik",
+    section: "II", questionRef: "2024 HL Section II Q1",
+    questionText: "„Eesmärk pole mitte riik, kus kõik kasutavad nutividinaid, vaid riik, kus inimesed on nutikad.“ Artiklile tuginedes arutle, kuidas seda eesmärki saavutada. Kirjuta umbes 100–150sõnaline arvamus oma seisukoha põhjenduseks.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “digivahendid ja tehnoloogia, innovatsioon, digiharidus, keskkond, internet, keel ja kultuur, tehisintellekt, sotsiaalmeedia, küberturvalisus, nutiseadmete kasutamise mõju inimeste tervisele ja käitumisele, digiseadmete mõistlik kasutamine ja piirangud, kodu, kooli ja riigi roll;”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II ÜLESANNE",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-iii-1", topicId: "estonian-1-1", conceptId: "tehnoloogia-areng-nagu-kahe-teraga-mook",
+    section: "III", questionRef: "2024 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Tehnoloogia areng – nagu kahe teraga mõõk",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2024 Higher Level — © State Examinations Commission.",
+    id: "est-2024-hl-iii-2", topicId: "estonian-1-1", conceptId: "eesti-suurim-turvalisusrisk-harimatus-jaak-joeruut",
+    section: "III", questionRef: "2024 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. „Eesti suurim turvalisusrisk on harimatus.“ (Jaak Jõerüüt)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele ülesannetele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC552ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2025 Higher Level — © State Examinations Commission.",
