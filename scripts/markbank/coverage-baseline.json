@@ -708,11 +708,11 @@
     "refsHash": "3cd697c2c27583ae"
   },
   "romanian": {
-    "cards": 176,
-    "contentHash": "84133eb553d453ef",
+    "cards": 178,
+    "contentHash": "b8482959908aad26",
     "coveragePct": 100.0,
-    "covered": 204,
-    "excluded": 11,
+    "covered": 206,
+    "excluded": 9,
     "leaves": 215,
     "open": 0,
     "orphans": 0,
@@ -720,7 +720,7 @@
       "count": 17,
       "hash": "c6a2348848034e00"
     },
-    "refsHash": "0bd1b8e8243dfb91"
+    "refsHash": "ba608f139e5216ee"
   },
   "russian": {
     "cards": 1485,
