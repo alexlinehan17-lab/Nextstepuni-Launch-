@@ -7894,6 +7894,170 @@
   }
  },
  {
+  "id": "est-2022-hl-i-5",
+  "subjectId": "estonian",
+  "level": "higher",
+  "year": 2022,
+  "section": "I",
+  "topicId": "estonian-0-1",
+  "conceptId": "nii-oleks-meil-justkui-olemas-koik",
+  "questionRef": "2022 HL Section I Q5",
+  "questionText": "„Nii oleks meil justkui olemas kõik võimalused, et saata kõik lapsed kenasti distantsõppele. Mind aga teeb murelikuks, mis mõju see lastele avaldab.“ Selgita, miks on autor mures distantsõppe mõju pärast laste psüühikale? Kas see mure on sinu arvates õigustatud? Põhjenda oma seisukohta.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Autori arvates on inimesed loodud suhtlema teiste inimestega silmast‐silma, mitte (ainult) nutiseadmete abil. Eriti noorte jaoks on tähtsad sõbrad ja suhtlemine, ühistegevused ja huviringid või trennid. Tänu distantsõppele (sotsiaalne distantseerumine) langes aga noortele vajalik suhtlus miinimumini ja kogu nende harjumuspärane sotsiaalne elu kolis üle internetti, sh kool. See oli (on) väga paljude jaoks suur elumuutus, mis tõi (toob endiselt) paljudele kaasa probleeme sotsiaalse suhtlemisoskuse ja suhetega nii koolis (mahajäämus ja õpiraskused) kui ka kodus (peretülid, füüsiline tervis ja heaolu), samuti vaimseid üleelamisi, näiteks ärevushäired, depressioon, sõltuvus. Siis on teiste inimeste abi ja tugi väga oluline.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the task as: “Selgita, mispärast on autor mures distantsõppe mõju pärast laste psüühikale? Kas see mure on sinu arvates õigustatud?”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Estonian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Estonian 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
+  }
+ },
+ {
+  "id": "est-2022-hl-i-6",
+  "subjectId": "estonian",
+  "level": "higher",
+  "year": 2022,
+  "section": "I",
+  "topicId": "estonian-0-1",
+  "conceptId": "kus-tehnoloogia-selle-kasutamine-ole-eesmark",
+  "questionRef": "2022 HL Section I Q6",
+  "questionText": "„…. kus tehnoloogia ja selle kasutamine ei ole eesmärk omaette, vaid kus see nagu keelgi ühendab inimesi, mitte ei lahuta.“ Arutle loetule ja oma kogemusele tuginedes, kas tehnoloogia meie praeguses koolihariduses pigem ühendab või lahutab inimesi?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "digipädevus on tänapäeva kooli elementaarne osa – sobilik tehnoloogia ja õiged õpetamisvõtted võimaldab õpetada efektiivsemalt ja õppida mõtestatumalt, individuaalsem lähenemine või uued meeskonnatöö võimalused, kõrgem motivatsioon õppida, positiivne mõju enesehinnangule, algatusvõimele ja loovusele, suurem enesekindlus, lugupidamine teiste vastu ja mõistmine; õpetab vastutust ja iseseisvust – koostöökultuur õpilaste vahel, õpetaja ja õpilase, õpetaja ja lapsevanema, samuti kooli õpetajate vahel, jne.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" The scheme heads them: “Näiteks:”. It reprints the task as: “Arutle loetule ja omaenda kogemusele tuginedes”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Digivahendite ületarbimine ja ületähtsustamine koolitöös, meelelahutuse ja õppeülesannete osakaal, pidev infovoog, tehnoloogia mõju vaimsele ja füüsilisele tervisele – keskendumisraskused ja tähelepanuhäired, üksindus, enesesse kapseldumine, võõrandumine iseendast ja teistest; õpetajate, õpilaste ja lapsevanemate digipädevus, perede varanduslik ebavõrdsus, koolide võimekus digivahendeid kasutada, eelarvamused ja stereotüübid, koolikius, jne.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Estonian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Estonian 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
+  }
+ },
+ {
+  "id": "est-2022-hl-ii-1",
+  "subjectId": "estonian",
+  "level": "higher",
+  "year": 2022,
+  "section": "II",
+  "topicId": "estonian-1-1",
+  "conceptId": "tanapaeva-isaac-newtonite-ees-seisvad-suurimad",
+  "questionRef": "2022 HL Section II Q1",
+  "questionText": "Kirjuta kirjand (vähemalt 300 sõna), vali üks antud teemadest. Tänapäeva Isaac Newtonite ees seisvad suurimad väljakutsed Uued ajad, uued kangelased",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" Under Part II the scheme prints “Vähemalt 300 sõna pikkune sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.” Under “II ülesande hindamisel arvestatakse järgmisi kriteeriume:” it prints the four criteria with no marks or percentages beside them, so they are shown and the part is scored on its printed total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Õigekiri: õigekeelsus ja kirjavahemärgid",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "est-2022-hl-ii-2",
+  "subjectId": "estonian",
+  "level": "higher",
+  "year": 2022,
+  "section": "II",
+  "topicId": "estonian-1-1",
+  "conceptId": "kuidas-tekib-toeline-soprus",
+  "questionRef": "2022 HL Section II Q2",
+  "questionText": "Kirjuta kirjand (vähemalt 300 sõna), vali üks antud teemadest. Kuidas tekib tõeline sõprus?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" Under Part II the scheme prints “Vähemalt 300 sõna pikkune sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.” Under “II ülesande hindamisel arvestatakse järgmisi kriteeriume:” it prints the four criteria with no marks or percentages beside them, so they are shown and the part is scored on its printed total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Õigekiri: õigekeelsus ja kirjavahemärgid",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "est-2023-hl-i-1",
   "subjectId": "estonian",
   "level": "higher",

@@ -1,25 +1,5 @@
 [
  {
-  "ref": "2022 HL Section I Q5",
-  "reason": "the scheme markdown the provenance gate reads does not hold this answer as one run of words",
-  "evidence": "2022 HL scheme, \"\": \"võtma pöördeid maha – hoogu või kiirust maha võtma, protsessi aeglustama Vasta teksti põhjal küsimusele, sõnas\" is not found in examiner-reports/estonian/schemes/2022-hl.md, which is the file the deck build checks every marking point against"
- },
- {
-  "ref": "2022 HL Section I Q6",
-  "reason": "the scheme markdown the provenance gate reads does not hold this answer as one run of words",
-  "evidence": "2022 HL scheme, \"\": \"„…. kus tehnoloogia ja selle kasutamine ei ole eesmärk omaette, vaid kus see nagu keelgi ühendab inimesi, mitt\" is not found in examiner-reports/estonian/schemes/2022-hl.md, which is the file the deck build checks every marking point against"
- },
- {
-  "ref": "2022 HL Section II Q1",
-  "reason": "the scheme prices no line of this written-production task",
-  "evidence": "2022 HL scheme, Part II: the scheme prints NOTHING under this task beyond the SEC's own wording and, where the paper offers two titles, the titles. There is no answer, no indicative content and no tariff beside any line of it."
- },
- {
-  "ref": "2022 HL Section II Q2",
-  "reason": "the scheme prices no line of this written-production task",
-  "evidence": "2022 HL scheme, Part II: the scheme prints NOTHING under this task beyond the SEC's own wording and, where the paper offers two titles, the titles. There is no answer, no indicative content and no tariff beside any line of it."
- },
- {
   "ref": "2023 HL Section I Q5",
   "reason": "the scheme markdown the provenance gate reads does not hold this answer as one run of words",
   "evidence": "2023 HL scheme, \"\": \"hasart – ind, õhin, hoog Vasta teksti põhjal küsimusele, sõnastades loetu ümber oma sõnadega 2. Milline on loo\" is not found in examiner-reports/estonian/schemes/2023-hl.md, which is the file the deck build checks every marking point against"
