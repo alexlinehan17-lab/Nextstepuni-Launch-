@@ -620,6 +620,10 @@ SHORT_ASKS = {
     **{('biology', 2022, 'ol-deferred', f'Q4(a)({r})'): ('', f'p4: answer box "{x}:" under Q4(a)\'s lead-in "Give one '
                                                            f'example of an organism for A, B and C."')
        for r, x in (('ii', 'A'), ('iii', 'B'), ('iv', 'C'))},
+    # Biology 2023 Ordinary deferred Q12(a)(i): the paper prints the term alone ("Gene") under Q12(a)'s lead-in
+    # "Explain the following terms as used in genetics:" (040 p3); the term is the whole of the roman's ask.
+    ('biology', 2023, 'ol-deferred', 'Q12(a)(i)'): ('Gene', '040 p3: the term "Gene" under Q12(a)\'s lead-in '
+                                                            '"Explain the following terms as used in genetics:"'),
     ('physics', 2015, 'ol', 'Q12(c)(i)'): ('gases', 'Paper p10 lists gases under the shared charge-carrier prompt; '
                                                     'scheme p16 puts all four materials in one stepped 6+2+1+1 '
                                                     'response. The card keeps the full prompt and all four matches.'),
@@ -3732,6 +3736,80 @@ def pl_flags(P, S):
     return flags
 
 
+# Asks the EU walker folds together, keyed by sitting. The listening booklet
+# nests a lettered level under a number and a roman level under each letter,
+# and the walker, which reads one level under a number, keys both letters'
+# romans onto the number, so two printed asks are counted as one. Each entry
+# names the keys the walker writes and the printed asks they hold, the asks'
+# words read from the booklet's own lines (by the text each line opens with),
+# never typed. Only the sittings named here change: every other census is the
+# walker's, untouched.
+EU_FOLDED_ASKS = {
+    # Portuguese 2024 Higher, Parte C Q3 (listening booklet p5): "3. Alice chose
+    # a weekend package. (a) Answer the questions about the first day.
+    # (i) Where will the lunch be? (ii) What will they do after visiting the
+    # Museum? (b) Answer the questions about the second day. (i) What will they
+    # do in Vila Real? (ii) What will they do in the afternoon?" Four asks, the
+    # scheme prices each (p13: 1, 3, 2 and 2 marks); the walker read two.
+    ('portuguese', 2024, 'hl'): {
+        'folded': [('LC', 3, None, 'i'), ('LC', 3, None, 'ii')],
+        'asks': {
+            ('LC', 3, 'a', 'i'): ('3. Alice chose', '(i) Where will the lunch'),
+            ('LC', 3, 'a', 'ii'): ('3. Alice chose', '(ii) What will they do after'),
+            # The stem line also prints (a)'s heading: (b) takes it up to "(a)".
+            ('LC', 3, 'b', 'i'): (('3. Alice chose', ' (a)'), '(b) Answer the questions',
+                                  '(i) What will they do in Vila'),
+            ('LC', 3, 'b', 'ii'): (('3. Alice chose', ' (a)'), '(b) Answer the questions',
+                                   '(ii) What will they do in the afternoon'),
+        },
+    },
+    # The other way round, CARD-STANDARD 10c ("Tick the correct options":
+    # one card per printed question; the census counts the printed question
+    # once). Portuguese 2023 Ordinary (written booklet pp4-5) prints Q1(c)
+    # "Assinale com um (✓) as opções corretas" over six options (i)-(vi), and
+    # Q1(e) "Tick (✓) the True (T) and False (F) answers below" over four
+    # statements (i)-(iv); the walker keyed every option and statement as an
+    # ask of its own. One ask each.
+    ('portuguese', 2023, 'ol'): {
+        'booklet': 'written',
+        'folded': [('A', 1, 'c', r) for r in ('i', 'ii', 'iii', 'iv', 'v', 'vi')]
+                  + [('A', 1, 'e', r) for r in ('i', 'ii', 'iii', 'iv')],
+        'asks': {
+            ('A', 1, 'c', None): ('(c) Quais os planos', 'Assinale com um', '(i) Telefonar', '(ii) Falar',
+                                  '(iii) Iniciar', '(iv) Escrever', '(v) Abrir', '(vi) Jogar'),
+            ('A', 1, 'e', None): ('(e) Tick', '(i) Pedro Barros', '(ii) The post', '(iii) Pedro and',
+                                  '(iv) Antônio keeps'),
+        },
+    },
+}
+_EU_MARKERS = re.compile(r'^(?:\d{1,2}\.\s*|\((?:[a-h]|i{1,3}|iv|vi{0,3})\)\s*)+')
+
+
+def _eu_unfold(subject, year, level, P, texts):
+    fix = EU_FOLDED_ASKS.get((subject, year, level))
+    if not fix:
+        return texts
+    from eu_paper import read_lines                             # noqa: E402
+    missing = [k for k in fix['folded'] if k not in texts]
+    if missing:
+        raise ValueError(f'{subject} {year} {level}: the walker no longer writes {missing}; '
+                         f'review EU_FOLDED_ASKS')
+    path = P.path if fix.get('booklet') == 'written' else P.aural_path
+    lines = [l.text for l in read_lines(path, P.furniture)]
+    out = {k: v for k, v in texts.items() if k not in fix['folded']}
+    for key, openings in fix['asks'].items():
+        parts = []
+        for opening in openings:
+            opening, before = opening if isinstance(opening, tuple) else (opening, None)
+            hits = [t for t in lines if t.startswith(opening)]
+            if len(hits) != 1:
+                raise ValueError(f'{subject} {year} {level}: {len(hits)} booklet lines open {opening!r}')
+            text = hits[0] if before is None else hits[0].split(before, 1)[0]
+            parts.append(_EU_MARKERS.sub('', text).strip())
+        out[key] = ' '.join(parts)
+    return out
+
+
 def census_eu(subject, year, level):
     """Portuguese, Romanian and Dutch: the written booklet and, where the SEC
     sets one, the Listening Comprehension booklet.
@@ -3757,7 +3835,8 @@ def census_eu(subject, year, level):
         # count this bank measures itself against. The paper is censused; the
         # asks are refused, one by one, in eu_all.
         S = None
-    texts = {ask.key: ask.full_text for ask in P.all_asks()}
+    texts = _eu_unfold(subject, year, level, P,
+                       {ask.key: ask.full_text for ask in P.all_asks()})
     files = [P.path] + ([P.aural_path] if P.aural_path else [])
     return set(texts), texts, files, P, S
 
@@ -4230,16 +4309,19 @@ def census_subject(subject):
             raise AssertionError('Geography authored census total is stale')
         papers = []
         for sitting in payload['sittings']:
+            # A deferred sitting (its rows carry "sitting": "deferred") is a
+            # paper of its own beside June's of the same year and level.
             asks = [task for task in tasks
                     if task['year'] == sitting['year']
-                    and task['level'] == sitting['level']]
+                    and task['level'] == sitting['level']
+                    and task.get('sitting') == sitting.get('sitting')]
             if sitting.get('paperBaseTasks') != len(asks):
                 raise AssertionError(
                     f"Geography {sitting['year']} {sitting['level']} "
                     'census count is stale')
             papers.append({
                 'year': sitting['year'], 'level': sitting['level'],
-                'paper': None, 'leafCount': len(asks),
+                'paper': sitting.get('sitting'), 'leafCount': len(asks),
                 'leaves': [{
                     'key': [ask['id']], 'label': ask['questionRef'],
                     'text': ask['title'], 'status': ask['status'],
@@ -4719,6 +4801,8 @@ def census_subject(subject):
                     'detail': f"marks sum {p['marksSum']}, other years say {want}"})
     if subject == 'biology':
         papers.extend(census_biology_deferred())
+    if subject == 'business':
+        papers.extend(census_business_deferred())
     if subject == 'engineering':
         papers.extend(census_engineering_deferred())
     if subject == 'history':
@@ -4771,6 +4855,85 @@ def census_biology_deferred():
             'year': year, 'level': level, 'paper': 'Deferred',
             'leafCount': len(leaves),
             'leaves': [{'key': list(k), 'label': key_label(k, 'biology'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
+
+
+# The SEC's deferred Business sittings in the archive, English version (deferredexams/<year>/: two booklets
+# each, as June's: Higher LC033ALP032EV Section 1 and Answerbook and LC033ALP041EV Sections 2 and 3; Ordinary
+# LC033GLP032EV Section 1 and Answerbook and LC033GLP033EV Section 2; scheme LC033<A|G>LP000EV in
+# deferredmarkingschemes/). 2022 at both levels and 2023 Higher; nothing for 2024-2025.
+BUS_DEFERRED_SITTINGS = ((2022, 'hl'), (2022, 'ol'), (2023, 'hl'))
+
+
+def business_deferred_files(year, level):
+    booklets = ('ALP032EV', 'ALP041EV') if level == 'hl' else ('GLP032EV', 'GLP033EV')
+    return [os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'LC033{b}.pdf')
+            for b in booklets]
+
+
+# Where June's section walker misreads a deferred booklet, the printed tasks it should have keyed, each pinned to
+# the words the page prints and to the reading it replaces (a reader change fails here and is reviewed again).
+# 2022 Higher Sections 2 and 3 booklet (LC033ALP041EV): p4 prints Question 2's (A)-(C) and Question 3's (A)-(C)
+# side by side, each question's number and extract after its parts in the text layer, so the walker kept Question 2
+# as one headless leaf and read its parts as Question 1's and Question 3's; p9 prints Question 8 the same way and its
+# (A)(i) was read into Question 7(A)(i) on p8, its (A)(ii) as a part of no letter.
+BUS_DEFERRED_REPAIRS = {
+    (2022, 'hl'): [
+        {'booklet': 'LC033ALP041EV', 'page': 4, 'prior': [('3', 2, None, None)],
+         'printed': [(('3', 2, 'a', None), 'Outline the impact for the economy as a result of the government collecting LPT.'),
+                     (('3', 2, 'b', None), 'Explain two ways the Irish Government could use the tax system to create a positive climate for business in Ireland. Use examples to illustrate your answer.'),
+                     (('3', 2, 'c', None), 'Evaluate the advantages and disadvantages of a partnership as a form of ownership structure.')]},
+        {'booklet': 'LC033ALP041EV', 'page': 9, 'prior': [('3', 8, None, 'ii')],
+         'printed': [(('3', 8, 'a', 'i'), 'Outline your understanding of the term unique selling point.'),
+                     (('3', 8, 'a', 'ii'), 'Illustrate the implications for a business such as Boyne Valley Farmhouse Cheese when operating in a niche market.')]},
+    ],
+}
+
+
+def business_deferred_repairs(year, level, parts, texts):
+    """BUS_DEFERRED_REPAIRS applied: each prior reading must still be the walker's, each printed task on its page."""
+    import fitz                                   # noqa: E402  (PyMuPDF)
+    parts, texts = set(parts), dict(texts)
+    for repair in BUS_DEFERRED_REPAIRS.get((year, level), ()):
+        path = os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), repair['booklet'] + '.pdf')
+        with fitz.open(path) as pdf:
+            page = ' '.join(pdf[repair['page'] - 1].get_text().split())
+        for key in repair['prior']:
+            assert key in parts, f'Business deferred repair: the walker no longer reads {key}; review required'
+            parts.discard(key)
+            texts.pop(key, None)
+        for key, text in repair['printed']:
+            assert text in page, f'Business deferred repair: {text!r} is not on {repair["booklet"]} p{repair["page"]}'
+            assert key not in parts, key
+            parts.add(key)
+            texts[key] = text
+    return parts, texts
+
+
+def census_business_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Each deferred Business sitting (BUS_DEFERRED_SITTINGS) is read by June's
+    section walker (census_sections over its own two booklets) and keyed
+    'Deferred', as Biology keys its own (census_biology_deferred), so a
+    deferred ask never lands on a June leaf with the same address. The
+    checksum is not run on it.
+    """
+    papers = []
+    for year, level in BUS_DEFERRED_SITTINGS:
+        parts, texts, _ = census_sections('business', year, level, files=business_deferred_files(year, level))
+        parts, texts = business_deferred_repairs(year, level, parts, texts)
+        leaves = [k for k in leaves_of(parts)
+                  if not printed_example('business', year, level, k, texts)]
+        flags = [f for f in continuity_flags(parts, texts, 'business')
+                 if not short_ask_ok('business', year, level, f, sitting='deferred')]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'business'),
                         'text': texts.get(k, '')[:160]} for k in leaves],
             'marksSum': None, 'marksQuestions': 0, 'flags': flags,
         })

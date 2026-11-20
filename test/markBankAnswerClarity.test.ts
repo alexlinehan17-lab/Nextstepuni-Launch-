@@ -76,7 +76,8 @@ const pricedProseLines = (deck: unknown, pick: (card: Guided) => string[][]): nu
 describe('answer clarity: priced answers are rows, not prose', () => {
   it('Geography: every structured criterion reconciles and lifts its words from the scheme or the paper', () => {
     const cards = [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY].filter(isRubricCard);
-    expect(cards).toHaveLength(4153);
+    // + the carded deferred sittings (2022 Higher 120, 2023 Higher 124, 2024 Higher 124, 2025 Higher 120).
+    expect(cards).toHaveLength(4153 + 120 + 124 + 124 + 120);
     const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '');
     let criteria = 0;
     let structuredCriteria = 0;
@@ -141,8 +142,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // Every criterion structures since the last 45 cards did (2026-10-28):
     // the 2010–2013 Higher 80-mark options (a points table split over two
     // criteria) and 2016 Ordinary Q12C (one line pricing three patterns).
-    expect([criteria, structuredCriteria]).toEqual([7689, 7689]);
-    expect(structured).toHaveLength(4153);
+    // + the carded deferred sittings' criteria (2022 Higher 235, 2023 Higher 236, 2024 Higher 222,
+    // 2025 Higher 233).
+    expect([criteria, structuredCriteria]).toEqual([7689 + 235 + 236 + 222 + 233, 7689 + 235 + 236 + 222 + 233]);
+    expect(structured).toHaveLength(4153 + 120 + 124 + 124 + 120);
     expect(fallback.map(card => card.id)).toEqual([]);
 
     // 2010–2013 Higher options print one table for 80 marks: "Number of
@@ -816,7 +819,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     const inline = /\(\s*\d+\s*m?\s*\)|\[\s*\d+\s*\]/g;
     expect(rows.filter(({ row }) => row.kind !== 'anyN' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
     const pieces = rows.filter(({ row }) => /^r-\d+-\d+$/.test(row.id));
-    expect([pieces.length, new Set(pieces.map(({ card }) => card.id)).size]).toEqual([173, 62]);
+    expect([pieces.length, new Set(pieces.map(({ card }) => card.id)).size]).toEqual([299, 105]);
     for (const { card, row } of pieces) {
       expect(row.kind, `${card.id}/${row.id}`).toBe('point');
       expect(/[\p{L}\p{N}]/u.test(row.verbatim), `${card.id}/${row.id}: "${row.verbatim}"`).toBe(true);
@@ -838,7 +841,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // unpriced criteria the student judges against the printed total; it has
     // no printed steps to check.
     const stepped = rows.filter(({ card, row }) => row.kind === 'criterion' && card.tariffModel.kind !== 'questionTotal');
-    expect(stepped).toHaveLength(51);
+    expect(stepped).toHaveLength(67);
     for (const { card, row } of stepped) {
       const where = `${card.id}/${row.id}`;
       expect(row.permittedMarks![0], where).toBe(0);
@@ -850,7 +853,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // options (the group has no per-option steps). Model one of those and lower its number here.
     const noted = rows.filter(({ row }) => row.kind !== 'criterion' && (row.contextNote ?? '').includes(lesser));
     expect(noted.filter(({ row }) => row.kind === 'point').every(({ row }) => /^r-\d+-\d+$/.test(row.id))).toBe(true);
-    expect([noted.filter(({ row }) => row.kind === 'point').length, noted.filter(({ row }) => row.kind === 'anyN').length]).toEqual([19, 120]);
+    expect([noted.filter(({ row }) => row.kind === 'point').length, noted.filter(({ row }) => row.kind === 'anyN').length]).toEqual([31, 158]);
   });
 
   it('Technology: a drawn answer is the ask as its one row behind the scheme\'s own print; every printed 2026 Higher ask is a card', () => {
@@ -884,14 +887,16 @@ describe('answer clarity: priced answers are rows, not prose', () => {
 
   it('Business: the responses the scheme prints for a part are rows on the card, each lifted from the cited scheme page', () => {
     const cards = [...BUSINESS_HIGHER, ...BUSINESS_ORDINARY].filter((card): card is SecRubricCard & { rubric: BusinessRubric } => isRubricCard(card) && card.rubric.system === 'business');
-    expect(cards).toHaveLength(1988);
+    // + the deferred sittings (deferred-authored.json): 2022 Higher 55, 2022 Ordinary 68, 2023 Higher 52.
+    expect(cards).toHaveLength(1988 + 55 + 68 + 52);
     const normalise = (value: string) => value.normalize('NFKC').toLowerCase().replace(/[^a-z0-9]+/g, '');
     const schemes = new Map<string, { text: string; cells: Set<string> }>();
     // The scheme markdown as bus_expected.py reads it: no page heads, running footers, "(20 marks)" cells or marks column.
     const FOOT = /^\s*(?:Page \d+ of \d+|Bus\.? ?\d{4} ?\((?:OL|HL)\) ?\d+|LC Business \d{4} \((?:OL|HL)\)|Leaving Certificate\b.*|\d{1,2}\s*marks?|⟨\d+⟩|\d{1,2})\s*$/;
     const INLINE_FOOT = /\s*(?:LC Business \d{4} \((?:OL|HL)\)|Bus\.? ?\d{4} ?\((?:OL|HL)\) ?\d+|Page \d+ of \d+|Leaving Certificate(?: \d{4})?\s*[–-]\s*(?:Higher|Ordinary) Level(?: \d{4})?)\s*(?:⟨\d{1,2}⟩)?\s*/g;
-    const schemeText = (year: number, level: string) => {
-      const key = `${year}-${level === 'higher' ? 'hl' : 'ol'}`;
+    // A deferred sitting's card reads its own scheme (examiner-reports/business/schemes/<year>-<level>-deferred.md).
+    const schemeText = (year: number, level: string, deferred = false) => {
+      const key = `${year}-${level === 'higher' ? 'hl' : 'ol'}${deferred ? '-deferred' : ''}`;
       if (!schemes.has(key)) {
         const raw = readFileSync(resolve(__dirname, '..', 'examiner-reports', 'business', 'schemes', `${key}.md`), 'utf8').replace(/\u00a0/g, ' ');
         const lines = raw.split('\n')
@@ -908,11 +913,13 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     const lifted = cards.filter(card => card.rubric.expected);
     // 1,766 from the text layer (stage A), 15 from a hand-checked slice, 198 from the page's geometry (stage B: tables, ticks, rings, True/False columns).
     // The six cards without rows are the recorded exclusions in business-expected-slices.json: two image answers, a drawn organisation chart, three drawn charts.
-    expect(lifted).toHaveLength(1979);
+    // A deferred sitting's rows are cut from its scheme page at the printed headings (deferred_lib.py), so read as
+    // slices: 2022 Higher 55, 2022 Ordinary 68, 2023 Higher 49 (its Question 3 prints no answer: three cards without rows).
+    expect(lifted).toHaveLength(1979 + 55 + 68 + 49);
     expect(lifted.filter(card => card.rubric.expected!.lifted === 'geometry')).toHaveLength(198);
-    expect(lifted.filter(card => card.rubric.expected!.lifted === 'slice')).toHaveLength(15);
+    expect(lifted.filter(card => card.rubric.expected!.lifted === 'slice')).toHaveLength(15 + 55 + 68 + 49);
     for (const card of lifted) {
-      const { text: corpus, cells } = schemeText(card.year, card.level);
+      const { text: corpus, cells } = schemeText(card.year, card.level, card.paperFileid?.endsWith('-deferred'));
       const expected = card.rubric.expected!;
       expect(expected.page, card.id).toBeGreaterThan(0);
       expect(expected.items.length, card.id).toBeGreaterThan(0);
@@ -935,7 +942,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     }
     // A row sits under the response it names, or in one pool the responses draw from.
     const layouts = lifted.map(card => businessExpectedLayout(card.rubric)!.kind);
-    expect([layouts.filter(kind => kind === 'per-response').length, layouts.filter(kind => kind === 'pool').length]).toEqual([258, 1721]);
+    // Deferred: per response 8 + 4 + 3, pooled 47 + 64 + 46 (2022 Higher, 2022 Ordinary, 2023 Higher).
+    expect([layouts.filter(kind => kind === 'per-response').length, layouts.filter(kind => kind === 'pool').length]).toEqual([258 + 15, 1721 + 157]);
     // What bus_expected.py could not lift — the text-layer reason, then the slice's — each with the pages it looked at.
     // Every entry is a recorded exclusion whose slice reason carries the page evidence; a new shape here needs its own evidence.
     const review = JSON.parse(readFileSync(resolve(__dirname, '..', 'scripts', 'markbank', 'authored', 'business-expected-review.json'), 'utf8')) as Array<{ id: string; reason: string; schemePages: number[] }>;
@@ -956,7 +964,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     }
     const reviewed = new Set(review.map(entry => entry.id));
     // Every card either carries its rows or is on the review list; the three route-pool expansions share their template's data.
-    expect(cards.filter(card => !card.rubric.expected && !reviewed.has(card.id)).length).toBe(3);
+    // + the three 2023 Higher deferred Question 3 cards, whose scheme prints no answer (their row says so).
+    expect(cards.filter(card => !card.rubric.expected && !reviewed.has(card.id)).length).toBe(3 + 3);
   });
 
 });

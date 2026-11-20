@@ -1,0 +1,3085 @@
+{
+ "year": 2019,
+ "level": "ordinary",
+ "deferred": false,
+ "readBy": "Claude (music lane helper), 19 Nov 2026",
+ "pagesWithoutAsks": {
+  "listening": [
+   1,
+   12,
+   13,
+   14,
+   15,
+   16
+  ],
+  "composing": [
+   1,
+   2,
+   4,
+   6,
+   14,
+   15,
+   16
+  ]
+ },
+ "notCounted": [],
+ "asks": [
+  {
+   "paper": "listening",
+   "address": "Q1(a)",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.08,
+    0.368,
+    0.92,
+    0.44
+   ],
+   "questionText": "The theme heard in this excerpt is the",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 2,
+    "box": [
+     0.08,
+     0.17,
+     0.92,
+     0.437
+    ],
+    "what": "The outline score of bars 1-8, the question and its three printed options (Friar Lawrence theme, Strife theme, Love theme)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-15",
+   "marks": 2,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Love Theme",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The theme is the one the outline score prints, so the figure carries the score down to the options. The booklet's text layer is glyph ids (a Calibri subset) for: excerpt line \"Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1(b)",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.08,
+    0.455,
+    0.92,
+    0.597
+   ],
+   "questionText": "The accompaniment in bars 1–8 features",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 2,
+    "box": [
+     0.08,
+     0.17,
+     0.92,
+     0.595
+    ],
+    "what": "The outline score of bars 1-8, down to the question (b) and its three printed options (an ascending scale on flute, a 2-note descending figure on French horn, pizzicato strings)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-15",
+   "marks": 3,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "A 2‐note descending figure on French horn",
+     "marks": 3
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The ask points at bars 1-8 of the printed outline score, so the figure spans the score down to (b)'s options; (a) shows between. The scheme prints the answer with a trailing \";\" (left out) and a U+2010 hyphen (kept). The booklet's text layer is glyph ids (a Calibri subset) for: excerpt line \"Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1(c)",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.08,
+    0.613,
+    0.92,
+    0.685
+   ],
+   "questionText": "This excerpt is taken from the",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 2,
+    "box": [
+     0.08,
+     0.613,
+     0.88,
+     0.681
+    ],
+    "what": "The question and its three printed options (introduction, recapitulation, coda)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-15",
+   "marks": 2,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Recapitulation",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: excerpt line \"Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1(d)",
+   "page": 2,
+   "pages": [
+    2
+   ],
+   "crop": [
+    0.08,
+    0.757,
+    0.92,
+    0.85
+   ],
+   "questionText": "Describe the texture of the music heard in this excerpt.",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 2,
+    "box": [
+     0.08,
+     0.757,
+     0.92,
+     0.786
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-15",
+   "marks": 3,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 3,
+     "steps": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "quote": [
+      "Up to three marks for an accurate description of the texture of the music heard in the excerpt.",
+      "Reference to the terms polyphonic and homophonic is not required. However, if the terms polyphonic or homophonic are included in the answer, the description must match for full marks.",
+      "Polyphonic (on it’s own) = 2 + elaboration = 3",
+      "Homophonic (on it’s own) = 2 + elaboration = 3",
+      "Canon = 0"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Rule only: the scheme prints no model texture, only what a named texture earns (2, or 3 with elaboration) and \"Canon = 0\", all quoted; steps 0-3 read from \"Up to three marks\", as 2019 Higher Q1(c). \"it’s\" (sic) kept. The booklet's text layer is glyph ids (a Calibri subset) for: excerpt line \"Excerpt 2, played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1(e)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.08,
+    0.085,
+    0.95,
+    0.395
+   ],
+   "questionText": "The missing notes at X on the score are",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3, played three times. An outline score of the music in this excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.08,
+     0.085,
+     0.92,
+     0.392
+    ],
+    "what": "The outline score of bars 1-4 with X over bar 2, the question and its three printed notated options, each with a box",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-15",
+   "marks": 3,
+   "schemePage": 11,
+   "schemeCrop": {
+    "page": 11,
+    "box": [
+     0.12,
+     0.527,
+     0.9,
+     0.638
+    ],
+    "what": "the notes printed on a treble stave, with \"Option 3\" and its 3 marks"
+   },
+   "rows": [
+    {
+     "type": "ask",
+     "text": "The missing notes at X on the score are",
+     "marks": 3,
+     "printedAnswer": true
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Tick one of three notated options; the scheme prints the notes (an image) and \"Option 3\": ask row and scheme crop, as 2023 Ordinary Q6. Option 3 on the paper is the third stave, the notes the scheme prints. Filed under the set work (music-2-15), as other sittings filed a set-work score question. \"X\" is bold in print. The booklet's text layer is glyph ids (a Calibri subset) for: excerpt line \"Excerpt 3, played three times. An outline score of the music in this excerpt is printed below.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1(f)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.08,
+    0.45,
+    0.92,
+    0.518
+   ],
+   "questionText": "The theme heard in this excerpt is the",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3, played once more.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.08,
+     0.45,
+     0.85,
+     0.516
+    ],
+    "what": "The question and its three printed options (Strife theme, Friar Lawrence theme, Love theme)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-15",
+   "marks": 2,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Strife Theme",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: excerpt line \"Excerpt 3, played once more.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1(g)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.08,
+    0.52,
+    0.92,
+    0.58
+   ],
+   "questionText": "The tonality of the music is",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3, played once more.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.08,
+     0.52,
+     0.6,
+     0.578
+    ],
+    "what": "The question and its two printed options (major, minor)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-15",
+   "marks": 2,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Minor",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: excerpt line \"Excerpt 3, played once more.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1(h)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.08,
+    0.618,
+    0.92,
+    0.715
+   ],
+   "questionText": "Name the percussion instrument heard in this excerpt. It plays",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 4, played three times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.08,
+     0.618,
+     0.92,
+     0.711
+    ],
+    "what": "The question (name the instrument; \"It plays\") and its three printed options (syncopated rhythm, dotted rhythm, triplet rhythm)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-15",
+   "marks": 5,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "criterion",
+     "text": "Timpani",
+     "marks": 3,
+     "steps": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "quote": [
+      "Bass drum = 2 drum(s) = 1",
+      "Percussion/snare drum/bodhrán = 0"
+     ]
+    },
+    {
+     "type": "point",
+     "text": "Triplet rhythm",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "JUDGEMENT CALL: the paper prints ONE part (h) with two asks (name the instrument; \"It plays\" a tick box) and no (i)/(ii); the scheme numbers them (h)(i) 3 and (h)(ii) 2. One ask at the printed level, 5 marks, two rows. \"Timpani\" is a criterion on 0-3 because the scheme prints lesser answers at 2 (\"Bass drum\") and 1 (\"drum(s)\"), quoted with its 0 line. The booklet's text layer is glyph ids (a Calibri subset) for: excerpt line \"Excerpt 4, played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q1(i)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.08,
+    0.763,
+    0.92,
+    0.872
+   ],
+   "questionText": "Describe how Tchaikovsky creates a feeling of calm and tranquillity in the music heard in this excerpt.",
+   "questionContext": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 5, played three times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 3,
+    "box": [
+     0.08,
+     0.763,
+     0.92,
+     0.807
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-15",
+   "marks": 3,
+   "schemePage": 11,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 3,
+     "steps": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "quote": [
+      "Up to 3 marks for a description of how Tchaikovsky creates a feeling of calm and tranquillity in the music heard in the excerpt."
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Rule only, no partial line printed: steps 0-3 read from \"Up to 3 marks\". The booklet's text layer is glyph ids (a Calibri subset) for: excerpt line \"Excerpt 5, played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(a)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.08,
+    0.145,
+    0.92,
+    0.24
+   ],
+   "questionText": "Name the four instruments playing in this excerpt.",
+   "questionContext": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 4,
+    "box": [
+     0.08,
+     0.145,
+     0.92,
+     0.176
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-16",
+   "marks": 2,
+   "schemePage": 12,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Violin",
+     "marks": 0.5
+    },
+    {
+     "type": "point",
+     "text": "Viola",
+     "marks": 0.5
+    },
+    {
+     "type": "point",
+     "text": "Cello",
+     "marks": 0.5
+    },
+    {
+     "type": "point",
+     "text": "piano",
+     "marks": 0.5
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The scheme prints the four instruments at 0.5 each: one point row each. The numbered rows 1-4 are answer slots. Q2 has one excerpt: its \"played three times\" line is the question context. The booklet's text layer is glyph ids (a Calibri subset) for: question context \"An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(b)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.08,
+    0.267,
+    0.92,
+    0.338
+   ],
+   "questionText": "The music in this excerpt features",
+   "questionContext": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 4,
+    "box": [
+     0.08,
+     0.267,
+     0.78,
+     0.334
+    ],
+    "what": "The question and its three printed options (scales, harmonics, repeated notes)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-16",
+   "marks": 2,
+   "schemePage": 12,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Repeated notes",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: question context \"An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(c)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.08,
+    0.354,
+    0.92,
+    0.424
+   ],
+   "questionText": "The music is performed",
+   "questionContext": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 4,
+    "box": [
+     0.08,
+     0.354,
+     0.78,
+     0.421
+    ],
+    "what": "The question and its three printed options (pizzicato, flautando, with accents)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-16",
+   "marks": 2,
+   "schemePage": 12,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "With accents",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: question context \"An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(d)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.08,
+    0.44,
+    0.92,
+    0.535
+   ],
+   "questionText": "This excerpt uses augmentation. Explain augmentation.",
+   "questionContext": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 4,
+    "box": [
+     0.08,
+     0.44,
+     0.92,
+     0.471
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-16",
+   "marks": 2,
+   "schemePage": 12,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Up to 2 marks for a valid description of augmentation, with/without reference to the excerpt",
+      "Partially correct answer = 1"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Rule only (no model answer printed), 1 printed. The booklet's text layer is glyph ids (a Calibri subset) for: question line \"This excerpt uses augmentation. Explain augmentation.\"; question context \"An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q2(e)",
+   "page": 4,
+   "pages": [
+    4
+   ],
+   "crop": [
+    0.08,
+    0.563,
+    0.92,
+    0.75
+   ],
+   "questionText": "Describe one of the following features used by Gerald Barry in his Piano Quartet No.1:",
+   "questionContext": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 4,
+    "box": [
+     0.08,
+     0.563,
+     0.92,
+     0.628
+    ],
+    "what": "The question and the three printed features to choose from (canon, retrograde, hand clusters)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-16",
+   "marks": 2,
+   "schemePage": 12,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Feature =0",
+      "Up to 2 marks for a valid description of canon or retrograde or hand clusters, with/without reference to Piano Quartet No.1 by Gerald Barry",
+      "Partially correct answer = 1"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Rule only, 1 printed; \"Feature =0\" (naming the feature earns nothing) quoted. The three features are printed as a row under the stem, not numbered: one ask, the row as the figure. \"Feature:\" / \"Description:\" are answer-slot labels. The booklet's text layer is glyph ids (a Calibri subset) for: question context \"An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(a)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.08,
+    0.162,
+    0.92,
+    0.232
+   ],
+   "questionText": "This excerpt is taken from",
+   "questionContext": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.08,
+     0.162,
+     0.7,
+     0.23
+    ],
+    "what": "The question and its three printed options (a chorus, a recitative, an aria)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-17",
+   "marks": 2,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "A recitative",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The scheme names the work \"Cantata No.78, Jesu Der Du Meine Seele by J.S. Bach, Movement 3\"; the paper's words are used. The booklet's text layer is glyph ids (a Calibri subset) for: question context \"An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(b)(i)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.08,
+    0.249,
+    0.92,
+    0.318
+   ],
+   "questionText": "The type of voice heard in this excerpt is",
+   "questionContext": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.08,
+     0.249,
+     0.7,
+     0.317
+    ],
+    "what": "The question and its three printed options (an alto, a tenor, a bass)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-17",
+   "marks": 1,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "a tenor",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: question context \"An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(b)(ii)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.08,
+    0.321,
+    0.92,
+    0.39
+   ],
+   "questionText": "The singer is accompanied by",
+   "questionContext": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.08,
+     0.321,
+     0.85,
+     0.388
+    ],
+    "what": "The question and its three printed options (strings, organ and bass, strings, organ and oboe)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-17",
+   "marks": 1,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "organ and bass",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: question context \"An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(c)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.08,
+    0.407,
+    0.92,
+    0.468
+   ],
+   "questionText": "Identify one feature of the vocal line heard in this excerpt.",
+   "questionContext": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.08,
+     0.407,
+     0.92,
+     0.438
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-17",
+   "marks": 2,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A feature of the vocal line",
+     "options": [
+      "Leaps/wide leaps/wide intervals",
+      "upward/downward leaps",
+      "wide range (10th)",
+      "repeated notes",
+      "ornamentation/grace note/appoggiatura",
+      "sung with free rhythm",
+      "speech‐like / declamatory in style",
+      "(mainly) syllabic",
+      "melismatic",
+      "chromatic notes/chromaticism"
+     ],
+     "claim": 1,
+     "per": 2,
+     "open": true,
+     "quote": [
+      "Up to 2 marks for a valid identification of one feature of the vocal line.",
+      "For example:",
+      "Trills = 0",
+      "Word‐painting = 0",
+      "Partially correct answer = 1"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Open (\"For example:\"), split at the semicolons; slash-joined wordings of one feature kept one option. The refused answers and partial 1 are quoted. \"10th\" prints its \"th\" as a superscript. The booklet's text layer is glyph ids (a Calibri subset) for: question line \"Identify one feature of the vocal line heard in this excerpt.\"; question context \"An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(d)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.08,
+    0.497,
+    0.92,
+    0.558
+   ],
+   "questionText": "Identify one feature of the accompaniment in this excerpt.",
+   "questionContext": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.08,
+     0.497,
+     0.92,
+     0.528
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-17",
+   "marks": 2,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A feature of the accompaniment",
+     "options": [
+      "(block) chords (on organ)",
+      "long notes",
+      "repeated notes/ pedal note",
+      "descending line"
+     ],
+     "claim": 1,
+     "per": 2,
+     "open": true,
+     "quote": [
+      "Up to 2 marks for a valid identification of one feature of the accompaniment.",
+      "For example:",
+      "Partially correct answer = 1"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Open (\"For example:\"), split at the semicolons. The booklet's text layer is glyph ids (a Calibri subset) for: question line \"Identify one feature of the accompaniment in this excerpt.\"; question context \"An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q3(e)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.08,
+    0.587,
+    0.92,
+    0.656
+   ],
+   "questionText": "The cadence heard at the end of this excerpt is",
+   "questionContext": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\n• Answer the following questions:",
+   "excerptLine": null,
+   "needsRecording": true,
+   "figure": {
+    "page": 5,
+    "box": [
+     0.08,
+     0.587,
+     0.7,
+     0.654
+    ],
+    "what": "The question and its three printed options (plagal, imperfect, perfect)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-17",
+   "marks": 2,
+   "schemePage": 13,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "perfect",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: question context \"An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(a)(i)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.08,
+    0.316,
+    0.92,
+    0.386
+   ],
+   "questionText": "The opening chords of this excerpt (before the vocals enter) are",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity.",
+   "needsRecording": true,
+   "figure": {
+    "page": 6,
+    "box": [
+     0.08,
+     0.316,
+     0.75,
+     0.384
+    ],
+    "what": "The question and its two printed options (block chords, broken chords)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-14",
+   "marks": 1,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Block chords",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: excerpt line \"Excerpt 1, played three times. The lyrics are printed below.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(a)(ii)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.08,
+    0.39,
+    0.92,
+    0.42
+   ],
+   "questionText": "These chords are played on",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity.",
+   "needsRecording": true,
+   "figure": {
+    "page": 6,
+    "box": [
+     0.08,
+     0.39,
+     0.92,
+     0.42
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-14",
+   "marks": 1,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Piano",
+     "marks": 1
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "A fill-in-the-blank line (\"played on ____\"); the scheme prints one answer. The booklet's text layer is glyph ids (a Calibri subset) for: excerpt line \"Excerpt 1, played three times. The lyrics are printed below.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(b)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.08,
+    0.441,
+    0.92,
+    0.472
+   ],
+   "questionText": "In which line are the drums heard for the first time?",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity.",
+   "needsRecording": true,
+   "figure": {
+    "page": 6,
+    "box": [
+     0.08,
+     0.163,
+     0.92,
+     0.472
+    ],
+    "what": "The printed lyrics of Excerpt 1 (Lines 1-7), down to the question (b); (a) shows between",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-14",
+   "marks": 2,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Line 3",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The ask is answered by a line number of the printed lyrics, so the lyrics are the figure. The booklet's text layer is glyph ids (a Calibri subset) for: question line \"In which line are the drums heard for the first time?\"; excerpt line \"Excerpt 1, played three times. The lyrics are printed below.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(c)",
+   "page": 6,
+   "pages": [
+    6
+   ],
+   "crop": [
+    0.08,
+    0.493,
+    0.92,
+    0.562
+   ],
+   "questionText": "The bass line heard in line 6 features",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity.",
+   "needsRecording": true,
+   "figure": {
+    "page": 6,
+    "box": [
+     0.08,
+     0.163,
+     0.84,
+     0.56
+    ],
+    "what": "The printed lyrics (Lines 1-7), down to the question (c) and its three printed options (long sustained notes, a scale, repeated notes)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-14",
+   "marks": 2,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Repeated notes",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The ask points at line 6 of the printed lyrics, so the figure spans the lyrics down to (c)'s options; (a) and (b) show between. The booklet's text layer is glyph ids (a Calibri subset) for: excerpt line \"Excerpt 1, played three times. The lyrics are printed below.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(d)",
+   "page": 7,
+   "pages": [
+    7
+   ],
+   "crop": [
+    0.08,
+    0.265,
+    0.92,
+    0.355
+   ],
+   "questionText": "Lines 9–12 feature antiphonal dialogue. Explain.",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times. The lyrics are printed below. Line 8 Easy come, easy go, will you let me go? Line 9 Bismillah. No we will not let you go. Let him go. Line 10 Bismillah. We will not let you go. Let him go. Line 11 Bismillah. We will not let you go. Let me go. Line 12 Will not let you go. Let me go. Will not let you go. Let me go. Oh. Line 13 No no no no no no no. Line 14 Oh mama mia, mama mia. Mama mia let me go. Line 15 Beelzebub has a devil put aside for me, for me, for me.",
+   "needsRecording": true,
+   "figure": {
+    "page": 7,
+    "box": [
+     0.08,
+     0.095,
+     0.92,
+     0.293
+    ],
+    "what": "The printed lyrics of Excerpt 2 (Lines 8-15) and the question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-14",
+   "marks": 2,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "criterion",
+     "text": "call and response",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "Up to 2 marks for a correct description of antiphonal dialogue, with/without reference to the music heard in the excerpt.",
+      "For example:"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "A single \"For example\" model answer as a criterion (CARD-STANDARD 10a); the scheme prints it \"call and response:\" (colon left out). No partial line printed: steps 0-2 read from \"Up to 2 marks\". The ask points at lines 9-12 of the printed lyrics: figure. The booklet's text layer is glyph ids (a Calibri subset) for: question line \"Lines 9–12 feature antiphonal dialogue. Explain.\"; excerpt line \"Excerpt 2, played three times. The lyrics are printed below.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q4(e)",
+   "page": 7,
+   "pages": [
+    7
+   ],
+   "crop": [
+    0.08,
+    0.371,
+    0.92,
+    0.485
+   ],
+   "questionText": "Identify two differences between the music heard in Excerpt 2 and the music in the opening section of Bohemian Rhapsody.",
+   "questionContext": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times. The lyrics are printed below. Line 8 Easy come, easy go, will you let me go? Line 9 Bismillah. No we will not let you go. Let him go. Line 10 Bismillah. We will not let you go. Let him go. Line 11 Bismillah. We will not let you go. Let me go. Line 12 Will not let you go. Let me go. Will not let you go. Let me go. Oh. Line 13 No no no no no no no. Line 14 Oh mama mia, mama mia. Mama mia let me go. Line 15 Beelzebub has a devil put aside for me, for me, for me.",
+   "needsRecording": true,
+   "figure": {
+    "page": 7,
+    "box": [
+     0.08,
+     0.371,
+     0.92,
+     0.416
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-14",
+   "marks": 2,
+   "schemePage": 14,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 2,
+     "steps": [
+      0,
+      1,
+      2
+     ],
+     "quote": [
+      "1 mark for each of two correct differences between the music heard in this question and the opening section of Bohemian Rhapsody.",
+      "1 + 1"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Rule only (no examples printed): \"1 + 1\", steps 0-2. \"1st difference:\" / \"2nd difference:\" are answer-slot labels. The booklet's text layer is glyph ids (a Calibri subset) for: question line \"Identify two differences between the music heard in Excerpt 2 and the music in the opening section of Bohemian Rhapsody.\"; excerpt line \"Excerpt 2, played three times. The lyrics are printed below.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(a)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.08,
+    0.228,
+    0.92,
+    0.32
+   ],
+   "questionText": "Identify one traditional feature of the music heard in this excerpt.",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1 One verse from the ballad The Bonny Irish Maid.",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.08,
+     0.228,
+     0.92,
+     0.257
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 3,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A traditional feature of the music heard",
+     "options": [
+      "unaccompanied",
+      "sung with ornamentation",
+      "sung with free rhythm"
+     ],
+     "claim": 1,
+     "per": 3,
+     "open": true,
+     "quote": [
+      "Up to 3 marks for one traditional feature of the music as heard in the excerpt.",
+      "For example:",
+      "Features of the music itself/lyrics = 0"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Open (\"For example:\"), split at the semicolons; no partial line printed. The booklet's text layer is glyph ids (a Calibri subset) for: question line \"Identify one traditional feature of the music heard in this excerpt.\"; question context \"Irish Music You will hear three excerpts, each played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(b)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.08,
+    0.338,
+    0.92,
+    0.43
+   ],
+   "questionText": "Identify one non-traditional feature of the music heard in this excerpt.",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1 One verse from the ballad The Bonny Irish Maid.",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.08,
+     0.338,
+     0.92,
+     0.367
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 3,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A non-traditional feature of the music heard",
+     "options": [
+      "Harmony/close harmony/barbershop style",
+      "Group singing"
+     ],
+     "claim": 1,
+     "per": 3,
+     "open": true,
+     "quote": [
+      "Up to 3 marks for one traditional feature of the music as heard in the excerpt.",
+      "For example:"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "SCHEME MISPRINT KEPT: the scheme's (b) rule line repeats (a)'s word for word (\"one traditional feature\"), where the paper asks for a NON-traditional feature; its examples (harmony / close harmony / barbershop style; group singing) are non-traditional features of the performance, so the row is matched to the paper's (b) by its examples and position, and the rule is quoted as printed. Open, split at the semicolons. The booklet's text layer is glyph ids (a Calibri subset) for: question line \"Identify one non-traditional feature of the music heard in this excerpt.\"; question context \"Irish Music You will hear three excerpts, each played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(c)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.08,
+    0.448,
+    0.92,
+    0.516
+   ],
+   "questionText": "The form of the verse heard in this excerpt is",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1 One verse from the ballad The Bonny Irish Maid.",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.08,
+     0.448,
+     0.62,
+     0.514
+    ],
+    "what": "The question and its three printed options (AABB, ABBA, AABA)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 2,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "ABBA",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: question context \"Irish Music You will hear three excerpts, each played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(d)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.08,
+    0.549,
+    0.92,
+    0.617
+   ],
+   "questionText": "This tune is",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.08,
+     0.549,
+     0.7,
+     0.615
+    ],
+    "what": "The question and its three printed options (a dance tune, a march, a slow air)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 2,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "A dance tune",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: question context \"Irish Music You will hear three excerpts, each played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(e)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.08,
+    0.619,
+    0.92,
+    0.687
+   ],
+   "questionText": "The instrument playing the melody is the",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.08,
+     0.619,
+     0.7,
+     0.685
+    ],
+    "what": "The question and its three printed options (fiddle, uilleann pipes, low whistle)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 2,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Low whistle",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: question context \"Irish Music You will hear three excerpts, each played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(f)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.08,
+    0.689,
+    0.92,
+    0.757
+   ],
+   "questionText": "The music in this excerpt features",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.08,
+     0.689,
+     0.72,
+     0.755
+    ],
+    "what": "The question and its three printed options (free rhythm, a drone, ornamentation)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 2,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "ornamentation",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: question context \"Irish Music You will hear three excerpts, each played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(g)",
+   "page": 8,
+   "pages": [
+    8
+   ],
+   "crop": [
+    0.08,
+    0.759,
+    0.92,
+    0.89
+   ],
+   "questionText": "Describe one non-traditional feature of this performance.",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2",
+   "needsRecording": true,
+   "figure": {
+    "page": 8,
+    "box": [
+     0.08,
+     0.759,
+     0.92,
+     0.788
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 3,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A non-traditional feature of the performance",
+     "options": [
+      "There is accompaniment on harpsichord/cello",
+      "long notes on the cello",
+      "chords on the harpsichord",
+      "another melody/countermelody on the cello"
+     ],
+     "claim": 1,
+     "per": 3,
+     "open": true,
+     "quote": [
+      "Up to 2 marks for a valid description of one correct non‐traditional feature of the performance.",
+      "For example:"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "SCHEME INCONSISTENCY KEPT: the rule line says \"Up to 2 marks\" but the scheme's marks column prints 3 for (g), and only 3 makes Question 5 add up to its printed 25 (3+3+2+2+2+2+3+2+3+3); marks 3 from the column, the line quoted as printed. Open (\"For example:\"), split at the semicolons. The booklet's text layer is glyph ids (a Calibri subset) for: question line \"Describe one non-traditional feature of this performance.\"; question context \"Irish Music You will hear three excerpts, each played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(h)",
+   "page": 9,
+   "pages": [
+    9
+   ],
+   "crop": [
+    0.08,
+    0.091,
+    0.92,
+    0.145
+   ],
+   "questionText": "Name the instrument heard playing the melody in this excerpt.",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3",
+   "needsRecording": true,
+   "figure": {
+    "page": 9,
+    "box": [
+     0.08,
+     0.091,
+     0.92,
+     0.12
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 2,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Harp",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: question context \"Irish Music You will hear three excerpts, each played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(i)",
+   "page": 9,
+   "pages": [
+    9
+   ],
+   "crop": [
+    0.08,
+    0.163,
+    0.92,
+    0.231
+   ],
+   "questionText": "Which one of the following can be heard in the melody in this excerpt?",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3",
+   "needsRecording": true,
+   "figure": {
+    "page": 9,
+    "box": [
+     0.08,
+     0.163,
+     0.92,
+     0.229
+    ],
+    "what": "The question and its three printed options (ornamentation, triplets, repeated last note)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 3,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Repeated last note",
+     "marks": 3
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: question context \"Irish Music You will hear three excerpts, each played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q5(j)",
+   "page": 9,
+   "pages": [
+    9
+   ],
+   "crop": [
+    0.08,
+    0.233,
+    0.92,
+    0.34
+   ],
+   "questionText": "This is a lament. How is this reflected in the music heard in the excerpt?",
+   "questionContext": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3",
+   "needsRecording": true,
+   "figure": {
+    "page": 9,
+    "box": [
+     0.08,
+     0.233,
+     0.92,
+     0.263
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-2",
+   "marks": 3,
+   "schemePage": 15,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "rule",
+     "marks": 3,
+     "steps": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "quote": [
+      "Up to 3 marks for a valid description of why this is an example of a lament.",
+      "Answers must refer to the excerpt.",
+      "Description of lament only = 1"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Rule only: \"Description of lament only = 1\" printed; steps 0-3 read from \"Up to 3 marks\". The booklet's text layer is glyph ids (a Calibri subset) for: question line \"This is a lament. How is this reflected in the music heard in the excerpt?\"; question context \"Irish Music You will hear three excerpts, each played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(a)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.08,
+    0.13,
+    0.95,
+    0.338
+   ],
+   "questionText": "Insert the four missing notes at X on the score. Use the given rhythm.",
+   "questionContext": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played three times. An outline score of bars 1–4 of this excerpt is printed below.",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.08,
+     0.1525,
+     0.92,
+     0.338
+    ],
+    "what": "The outline score of bars 1-4 (Nun danket alle Gott) with X over the four given rhythm notes of bar 3, and the question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-3",
+   "marks": 2,
+   "schemePage": 16,
+   "schemeCrop": {
+    "page": 16,
+    "box": [
+     0.12,
+     0.127,
+     0.9,
+     0.204
+    ],
+    "what": "the four notes printed on a treble stave, with its marking line and 2 marks"
+   },
+   "rows": [
+    {
+     "type": "criterion",
+     "text": "Missing notes x 4, pitch only. 0.5 mark each",
+     "marks": 2,
+     "steps": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2
+     ],
+     "printedAnswer": true
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Notation answer: the scheme prints the four notes on a stave (an image; scheme page 16 has no text layer above Excerpt 3, so its words are proven by the committed .md) and \"Missing notes x 4, pitch only. 0.5 mark each\": criterion on 0-2 in halves. \"X\" is bold in print. Filed music-2-3 (dictation on a score), the Atlas's secondary for Q6. The booklet's text layer is glyph ids (a Calibri subset) for: question context \"Aural Skills. This question is based on four excerpts of music.\"; excerpt line \"Excerpt 1, played three times. An outline score of bars 1–4 of this excerpt is printed below.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(b)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.08,
+    0.39,
+    0.92,
+    0.458
+   ],
+   "questionText": "The music is sung by a",
+   "questionContext": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played once more.",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.08,
+     0.39,
+     0.88,
+     0.456
+    ],
+    "what": "The question and its three printed options (male voice choir, female voice choir, mixed voice choir)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Mixed voice choir",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: question context \"Aural Skills. This question is based on four excerpts of music.\"; excerpt line \"Excerpt 1, played once more.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(c)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.08,
+    0.46,
+    0.92,
+    0.528
+   ],
+   "questionText": "The cadence at the end of this excerpt is",
+   "questionContext": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 1, played once more.",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.08,
+     0.46,
+     0.65,
+     0.526
+    ],
+    "what": "The question and its three printed options (imperfect, perfect, plagal)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "perfect",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: question context \"Aural Skills. This question is based on four excerpts of music.\"; excerpt line \"Excerpt 1, played once more.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(d)",
+   "page": 10,
+   "pages": [
+    10
+   ],
+   "crop": [
+    0.08,
+    0.578,
+    0.92,
+    0.71
+   ],
+   "questionText": "Identify two differences between the music heard in this excerpt and the music heard in Excerpt 1.",
+   "questionContext": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 2, played three times.",
+   "needsRecording": true,
+   "figure": {
+    "page": 10,
+    "box": [
+     0.08,
+     0.578,
+     0.92,
+     0.624
+    ],
+    "what": "The printed question",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A difference between Excerpt 1 and Excerpt 2",
+     "options": [
+      "no (instrumental) accompaniment — (instrumental) accompaniment",
+      "no (instrumental) introduction — (instrumental) introduction",
+      "There are no instruments — Flutes / oboes/ clarinets/ timpani/ violins/ violas/ cellos/ basses/ organ",
+      "There is vocal harmony — There is no vocal harmony",
+      "No independent melody line — independent melody line",
+      "The voices are softer — The voices are louder"
+     ],
+     "claim": 2,
+     "per": 1,
+     "open": true,
+     "quote": [
+      "I mark for each of 2 valid differences between excerpt 1 and excerpt 2. Answers need only refer to one excerpt. For example:",
+      "1 + 1"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Open (\"For example:\"): the scheme's two-column table (Excerpt 1 | Excerpt 2), each row one option \"<Excerpt 1> — <Excerpt 2>\"; two differences at 1 each. \"I mark\" (sic, for \"1 mark\") kept. \"1st difference:\" / \"2nd difference:\" are answer-slot labels. The booklet's text layer is glyph ids (a Calibri subset) for: question line \"Identify two differences between the music heard in this excerpt and the music heard in Excerpt 1.\"; question context \"Aural Skills. This question is based on four excerpts of music.\"; excerpt line \"Excerpt 2, played three times.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(e)",
+   "page": 11,
+   "pages": [
+    11
+   ],
+   "crop": [
+    0.08,
+    0.173,
+    0.92,
+    0.298
+   ],
+   "questionText": "The vocal music of line 2 is at",
+   "questionContext": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3, played three times. The lyrics are printed below. Line 1 It’s a God-awful small affair to the girl with the mousy hair Line 2 But her mummy is yelling no, and her daddy has told her to go. Line 3 But her friend is nowhere to be seen, now she walks through her sunken dream Line 4 To the seat with the clearest view and she’s hooked to the silver screen.",
+   "needsRecording": true,
+   "figure": {
+    "page": 11,
+    "box": [
+     0.08,
+     0.092,
+     0.9,
+     0.296
+    ],
+    "what": "The printed lyrics (Lines 1-4), the question and its three printed options",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "At a higher pitch than line 1",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The ask points at lines 1 and 2 of the printed lyrics, so the figure spans the lyrics down to (e)'s options. The booklet's text layer is glyph ids (a Calibri subset) for: question context \"Aural Skills. This question is based on four excerpts of music.\"; excerpt line \"Excerpt 3, played three times. The lyrics are printed below.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(f)",
+   "page": 11,
+   "pages": [
+    11
+   ],
+   "crop": [
+    0.08,
+    0.3,
+    0.92,
+    0.392
+   ],
+   "questionText": "Identify one change which takes place in the vocal music from line 3.",
+   "questionContext": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 3, played three times. The lyrics are printed below. Line 1 It’s a God-awful small affair to the girl with the mousy hair Line 2 But her mummy is yelling no, and her daddy has told her to go. Line 3 But her friend is nowhere to be seen, now she walks through her sunken dream Line 4 To the seat with the clearest view and she’s hooked to the silver screen.",
+   "needsRecording": true,
+   "figure": {
+    "page": 11,
+    "box": [
+     0.08,
+     0.092,
+     0.92,
+     0.33
+    ],
+    "what": "The printed lyrics of Excerpt 3 (Lines 1-4), down to the question (f); (e) shows between",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "menu",
+     "label": "A change in the vocal music from line 3",
+     "options": [
+      "Vocal harmony is added",
+      "another voice is added",
+      "there are two voices heard",
+      "there are more voices heard/added",
+      "the melody is at a higher pitch",
+      "vocals are overdubbed / there is overdubbing",
+      "Backing vocal(s) enter"
+     ],
+     "claim": 1,
+     "per": 2,
+     "open": true,
+     "quote": [
+      "Up to 2 marks for a correct identification of any change which takes place in the vocal music from line 3.",
+      "For example:",
+      "partially correct answer = 1"
+     ]
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "Open (\"For example:\"), split at the semicolons; partial 1 quoted. The ask points at line 3 of the printed lyrics: figure. The booklet's text layer is glyph ids (a Calibri subset) for: question line \"Identify one change which takes place in the vocal music from line 3.\"; question context \"Aural Skills. This question is based on four excerpts of music.\"; excerpt line \"Excerpt 3, played three times. The lyrics are printed below.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(g)",
+   "page": 11,
+   "pages": [
+    11
+   ],
+   "crop": [
+    0.08,
+    0.6,
+    0.92,
+    0.724
+   ],
+   "questionText": "Which of the following is heard in the vocal melody at A, B and C in the lyrics above?",
+   "questionContext": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 4, played twice. The lyrics are printed below. Line 1 Sailors fighting in the dance hall. Line 2 Oh man, look at those cavemen go, it’s the freakiest show. Line 3 Take a look at the lawman beating up the wrong guy Line 4 Oh man, wonder if he’ll ever know he’s in the best selling show. Line 5 Is there life on Mars?",
+   "needsRecording": true,
+   "figure": {
+    "page": 11,
+    "box": [
+     0.08,
+     0.405,
+     0.86,
+     0.722
+    ],
+    "what": "Its excerpt line, the printed lyrics (Lines 1-5) with brackets A, B and C, the question and the three rows of printed options (an upward leap, a downward leap, repeated notes) for A, B and C",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 6,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "A = a downward leap",
+     "marks": 2
+    },
+    {
+     "type": "point",
+     "text": "B = repeated notes",
+     "marks": 2
+    },
+    {
+     "type": "point",
+     "text": "C = an upward leap",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "One lettered part (g) with three tick rows labelled A, B, C (positions in the lyrics, not numbered parts): one ask and one card, the scheme's answer per row at 2 each (as the coordinator's ruling for statements under one lettered part). The booklet's text layer is glyph ids (a Calibri subset) for: question context \"Aural Skills. This question is based on four excerpts of music.\"; excerpt line \"Excerpt 4, played twice. The lyrics are printed below.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "listening",
+   "address": "Q6(h)",
+   "page": 11,
+   "pages": [
+    11
+   ],
+   "crop": [
+    0.08,
+    0.758,
+    0.92,
+    0.822
+   ],
+   "questionText": "The accompaniment in this excerpt features",
+   "questionContext": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.",
+   "excerptLine": "Excerpt 4, played twice more.",
+   "needsRecording": true,
+   "figure": {
+    "page": 11,
+    "box": [
+     0.08,
+     0.758,
+     0.78,
+     0.82
+    ],
+    "what": "The question and its three printed options (trills, descending scales, pedal notes)",
+    "includesPrompt": true
+   },
+   "topicId": "music-2-4",
+   "marks": 2,
+   "schemePage": 16,
+   "schemeCrop": null,
+   "rows": [
+    {
+     "type": "point",
+     "text": "Descending scales",
+     "marks": 2
+    }
+   ],
+   "grid": null,
+   "sharedCard": null,
+   "notes": "The booklet's text layer is glyph ids (a Calibri subset) for: question context \"Aural Skills. This question is based on four excerpts of music.\"; excerpt line \"Excerpt 4, played twice more.\". Written as printed (read off the page image); proven by the lane OCR (ocr/2019-ol-008.json); the card shows the printed ask."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q1(a)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.08,
+    0.175,
+    0.92,
+    0.525
+   ],
+   "questionText": "CONTINUATION OF A GIVEN OPENING Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ descant recorder □ clarinet □ trumpet □ violin",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-10",
+   "marks": 20,
+   "schemePage": 3,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     3
+    ],
+    "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)",
+    "stem": "Answer one question only in this section: Q1 or Q2 or Q3.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Each Melody",
+      "max": 20,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Very good sense of key",
+        "marks": "17-20",
+        "guidance": [
+         "Very good melodic shape",
+         "Very good continuation of given opening",
+         "Very good rhythmic consistency",
+         "Melody ends on tonic",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Good sense of key",
+        "marks": "14-16",
+        "guidance": [
+         "Good melodic shape",
+         "Good continuation of given opening",
+         "Good rhythmic consistency",
+         "Melody ends on tonic",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Moderately good sense of key",
+        "marks": "11-13",
+        "guidance": [
+         "Moderately good melodic shape",
+         "Moderately good continuation of given opening",
+         "Moderately good rhythmic consistency",
+         "Melody ends on tonic",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Fair sense of key",
+        "marks": "8-10",
+        "guidance": [
+         "Fair melodic shape",
+         "Fair continuation of given opening",
+         "Fair rhythmic consistency",
+         "Melody ends on tonic",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Poor sense of key",
+        "marks": "5-7",
+        "guidance": [
+         "Poor melodic shape",
+         "Poor continuation of given opening",
+         "Poor rhythmic consistency",
+         "Melody does not end on tonic",
+         "Inappropriate/no phrasing and expression marks inserted.",
+         "Unsuitable/no instrument chosen."
+        ]
+       },
+       {
+        "label": "Very poor sense of key",
+        "marks": "2-4",
+        "guidance": [
+         "Very poor melodic shape",
+         "Very poor continuation of given opening",
+         "Very poor rhythmic consistency",
+         "Melody does not end on tonic",
+         "Inappropriate/no phrasing and expression marks inserted.",
+         "Unsuitable/no instrument chosen."
+        ]
+       },
+       {
+        "label": "Very little or no attempt",
+        "marks": "0-1",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "\"Answer (a) and (b).\" prints two separately answered melodies; the scheme marks \"Each Melody\" on one 20-mark band table, \"20 + 20\". One ask and one card per melody. The bands are printed as single ranges (17 – 20 ... 2 – 4, \"Very little or no attempt\" 0 - 1). The 2019 Ordinary scheme prints no rhythm notes for Section A, so no task requirements; each band's \"Melody ends on tonic\" / \"Melody does not end on tonic\" bullet and its italic phrasing and instrument lines are carried in its guidance. The instrument list (descant recorder, clarinet, trumpet, violin) is a row of tick boxes, shown on the booklet page, as other sittings. Printed opening (a): 4/4, one flat, Moderato, mf."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q1(b)",
+   "page": 3,
+   "pages": [
+    3
+   ],
+   "crop": [
+    0.08,
+    0.57,
+    0.92,
+    0.86
+   ],
+   "questionText": "CONTINUATION OF A GIVEN OPENING Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ descant recorder □ clarinet □ trumpet □ violin",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-10",
+   "marks": 20,
+   "schemePage": 3,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     3
+    ],
+    "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)",
+    "stem": "Answer one question only in this section: Q1 or Q2 or Q3.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Each Melody",
+      "max": 20,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Very good sense of key",
+        "marks": "17-20",
+        "guidance": [
+         "Very good melodic shape",
+         "Very good continuation of given opening",
+         "Very good rhythmic consistency",
+         "Melody ends on tonic",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Good sense of key",
+        "marks": "14-16",
+        "guidance": [
+         "Good melodic shape",
+         "Good continuation of given opening",
+         "Good rhythmic consistency",
+         "Melody ends on tonic",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Moderately good sense of key",
+        "marks": "11-13",
+        "guidance": [
+         "Moderately good melodic shape",
+         "Moderately good continuation of given opening",
+         "Moderately good rhythmic consistency",
+         "Melody ends on tonic",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Fair sense of key",
+        "marks": "8-10",
+        "guidance": [
+         "Fair melodic shape",
+         "Fair continuation of given opening",
+         "Fair rhythmic consistency",
+         "Melody ends on tonic",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Poor sense of key",
+        "marks": "5-7",
+        "guidance": [
+         "Poor melodic shape",
+         "Poor continuation of given opening",
+         "Poor rhythmic consistency",
+         "Melody does not end on tonic",
+         "Inappropriate/no phrasing and expression marks inserted.",
+         "Unsuitable/no instrument chosen."
+        ]
+       },
+       {
+        "label": "Very poor sense of key",
+        "marks": "2-4",
+        "guidance": [
+         "Very poor melodic shape",
+         "Very poor continuation of given opening",
+         "Very poor rhythmic consistency",
+         "Melody does not end on tonic",
+         "Inappropriate/no phrasing and expression marks inserted.",
+         "Unsuitable/no instrument chosen."
+        ]
+       },
+       {
+        "label": "Very little or no attempt",
+        "marks": "0-1",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "\"Answer (a) and (b).\" prints two separately answered melodies; the scheme marks \"Each Melody\" on one 20-mark band table, \"20 + 20\". One ask and one card per melody. The bands are printed as single ranges (17 – 20 ... 2 – 4, \"Very little or no attempt\" 0 - 1). The 2019 Ordinary scheme prints no rhythm notes for Section A, so no task requirements; each band's \"Melody ends on tonic\" / \"Melody does not end on tonic\" bullet and its italic phrasing and instrument lines are carried in its guidance. The instrument list (descant recorder, clarinet, trumpet, violin) is a row of tick boxes, shown on the booklet page, as other sittings. (b)'s bullets repeat (a)'s word for word; only the printed opening differs (3/4, two sharps, Moderato, mp). (a) and (b) are printed on one page here, so the crops split it at \"and\"."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q2(a)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.08,
+    0.055,
+    0.92,
+    0.475
+   ],
+   "questionText": "SETTING MUSIC TO A GIVEN TEXT Answer (a) and (b). Here is an extract from the poem Still I Rise by Maya Angelou. You may write me down in history With your bitter, twisted lies, You may trod me in the very dirt But still, like dust, I’ll rise. • The first two lines have been set to a rhythm. Compose a rhythm to fit the remaining words.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-11",
+   "marks": 40,
+   "schemePage": 4,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     4
+    ],
+    "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)",
+    "stem": "Answer one question only in this section: Q1 or Q2 or Q3.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Q.2 SETTING MUSIC TO A GIVEN TEXT",
+      "max": 40,
+      "guidance": [
+       "Where there is no answer at (a) and no attempt at word setting at (b) award 0 marks."
+      ],
+      "bands": [
+       {
+        "label": "Very good rhythmic consistency with words",
+        "marks": "34-40",
+        "guidance": [
+         "Very good sense of key",
+         "Very good melodic shape",
+         "Very good continuation of given opening",
+         "Very good text setting",
+         "Melody ends on tonic",
+         "Appropriate phrasing and expression marks inserted."
+        ]
+       },
+       {
+        "label": "Good rhythmic consistency with words",
+        "marks": "28-33",
+        "guidance": [
+         "Good sense of key",
+         "Good melodic shape",
+         "Good continuation of given opening",
+         "Good text setting",
+         "Melody ends on tonic",
+         "Appropriate phrasing and expression marks inserted."
+        ]
+       },
+       {
+        "label": "Moderately good rhythmic consistency with words",
+        "marks": "22-27",
+        "guidance": [
+         "Moderately good sense of key",
+         "Moderately good melodic shape",
+         "Moderately good continuation of given opening",
+         "Moderately good text setting",
+         "Melody ends on tonic",
+         "Generally appropriate phrasing and expression marks inserted."
+        ]
+       },
+       {
+        "label": "Fair rhythmic consistency with words",
+        "marks": "16-21",
+        "guidance": [
+         "Fair sense of key",
+         "Fair melodic shape",
+         "Fair continuation of given opening",
+         "Fair text setting",
+         "Melody ends on tonic",
+         "Generally appropriate phrasing and expression marks inserted."
+        ]
+       },
+       {
+        "label": "Poor rhythmic consistency with words",
+        "marks": "10-15",
+        "guidance": [
+         "Poor sense of key",
+         "Poor melodic shape",
+         "Poor continuation of given opening",
+         "Poor text setting",
+         "Melody does not end on tonic",
+         "Inappropriate/no phrasing and expression marks inserted."
+        ]
+       },
+       {
+        "label": "Very poor rhythmic consistency with words",
+        "marks": "4-9",
+        "guidance": [
+         "Very poor sense of key",
+         "Very poor melodic shape",
+         "Very poor continuation of given opening",
+         "Very poor text setting",
+         "Melody does not end on tonic",
+         "Inappropriate/no phrasing and expression marks inserted."
+        ]
+       },
+       {
+        "label": "Very little or no attempt",
+        "marks": "0-3",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": "c-a-q2",
+   "notes": "(a) the rhythm and (b) the melody are two printed parts the scheme marks together on one 40-mark band (\"Where there is no answer at (a) and no attempt at word setting at (b) award 0 marks.\"): both counted, one shared card c-a-q2. The bands are printed as single ranges (34 – 40 ... 4 – 9, \"Very little or no attempt\" 0 - 3); the first bullet of each is its label.",
+   "label": "(a)"
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q2(b)",
+   "page": 5,
+   "pages": [
+    5
+   ],
+   "crop": [
+    0.08,
+    0.478,
+    0.92,
+    0.87
+   ],
+   "questionText": "Using the rhythm at (a), continue the opening below to make a melody of eight bars. • End on the keynote, that is, doh. • Write the words under the notes. • Add appropriate phrasing and expression marks to the melody.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-11",
+   "marks": 40,
+   "schemePage": 4,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": null,
+   "sharedCard": "c-a-q2",
+   "notes": "(a) the rhythm and (b) the melody are marked together on one 40-mark band: shared card c-a-q2 (grid on (a)). Printed opening: 4/4, one sharp, Moderato, f, the words of lines 1-2 under the notes.",
+   "label": "(b)"
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q3(a)",
+   "page": 7,
+   "pages": [
+    7
+   ],
+   "crop": [
+    0.08,
+    0.055,
+    0.92,
+    0.49
+   ],
+   "questionText": "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM Answer (a) and (b). • Study this opening of a waltz. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ descant recorder □ clarinet □ trumpet □ violin",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-12",
+   "marks": 20,
+   "schemePage": 5,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     5
+    ],
+    "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)",
+    "stem": "Answer one question only in this section: Q1 or Q2 or Q3.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Each Melody",
+      "max": 20,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Very good sense of key",
+        "marks": "17-20",
+        "guidance": [
+         "Very good melodic shape",
+         "Very good continuation of given opening",
+         "Rhythm and style of dance very well maintained",
+         "Melody ends on tonic",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Good sense of key",
+        "marks": "14-16",
+        "guidance": [
+         "Good melodic shape",
+         "Good continuation of given opening",
+         "Rhythm and style of dance well maintained",
+         "Melody ends on tonic",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Moderately good sense of key",
+        "marks": "11-13",
+        "guidance": [
+         "Moderately good melodic shape",
+         "Moderately good continuation of given opening",
+         "Rhythm and style of dance moderately well maintained",
+         "Melody ends on tonic",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Fair sense of key",
+        "marks": "8-10",
+        "guidance": [
+         "Fair melodic shape",
+         "Fair continuation of given opening",
+         "Rhythm and style of dance fairly well maintained",
+         "Melody ends on tonic",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Poor sense of key",
+        "marks": "5-7",
+        "guidance": [
+         "Poor melodic shape",
+         "Poor continuation of given opening",
+         "Poor adherence to rhythm and style of dance",
+         "Melody does not end on tonic",
+         "Inappropriate/no phrasing and expression marks inserted.",
+         "Unsuitable/no instrument chosen."
+        ]
+       },
+       {
+        "label": "Very poor sense of key",
+        "marks": "2-4",
+        "guidance": [
+         "Very poor melodic shape",
+         "Very poor continuation of given opening",
+         "Very poor adherence to rhythm and style of dance",
+         "Melody does not end on tonic",
+         "Inappropriate/no phrasing and expression marks inserted.",
+         "Unsuitable/no instrument chosen."
+        ]
+       },
+       {
+        "label": "Very little or no attempt",
+        "marks": "0-1",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "\"Answer (a) and (b).\" prints two separately answered melodies; the scheme marks \"Each Melody\" on one 20-mark band table, \"20 + 20\". One ask and one card per melody. The bands are printed as single ranges (17 – 20 ... 2 – 4, \"Very little or no attempt\" 0 - 1). The 2019 Ordinary scheme prints no rhythm notes for Section A, so no task requirements; each band's \"Melody ends on tonic\" / \"Melody does not end on tonic\" bullet and its italic phrasing and instrument lines are carried in its guidance. The instrument list (descant recorder, clarinet, trumpet, violin) is a row of tick boxes, shown on the booklet page, as other sittings. (a) is the waltz (3/4, one sharp, Moderato, mp). The 2019 scheme prints the dance bullet (\"Rhythm and style of dance ...\") FOURTH, after sense of key, melodic shape and continuation, so the band label is the first printed bullet (sense of key) and the dance bullet is in the guidance, in print order (2022-2024 print the dance bullet first)."
+  },
+  {
+   "paper": "composing",
+   "address": "Section A Q3(b)",
+   "page": 7,
+   "pages": [
+    7
+   ],
+   "crop": [
+    0.08,
+    0.525,
+    0.92,
+    0.86
+   ],
+   "questionText": "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM Answer (a) and (b). • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ descant recorder □ clarinet □ trumpet □ violin",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-12",
+   "marks": 20,
+   "schemePage": 5,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     5
+    ],
+    "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)",
+    "stem": "Answer one question only in this section: Q1 or Q2 or Q3.",
+    "taskRequirements": [],
+    "criteria": [
+     {
+      "id": "melody",
+      "label": "Each Melody",
+      "max": 20,
+      "guidance": [],
+      "bands": [
+       {
+        "label": "Very good sense of key",
+        "marks": "17-20",
+        "guidance": [
+         "Very good melodic shape",
+         "Very good continuation of given opening",
+         "Rhythm and style of dance very well maintained",
+         "Melody ends on tonic",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Good sense of key",
+        "marks": "14-16",
+        "guidance": [
+         "Good melodic shape",
+         "Good continuation of given opening",
+         "Rhythm and style of dance well maintained",
+         "Melody ends on tonic",
+         "Appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Moderately good sense of key",
+        "marks": "11-13",
+        "guidance": [
+         "Moderately good melodic shape",
+         "Moderately good continuation of given opening",
+         "Rhythm and style of dance moderately well maintained",
+         "Melody ends on tonic",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Fair sense of key",
+        "marks": "8-10",
+        "guidance": [
+         "Fair melodic shape",
+         "Fair continuation of given opening",
+         "Rhythm and style of dance fairly well maintained",
+         "Melody ends on tonic",
+         "Generally appropriate phrasing and expression marks inserted.",
+         "Suitable instrument chosen."
+        ]
+       },
+       {
+        "label": "Poor sense of key",
+        "marks": "5-7",
+        "guidance": [
+         "Poor melodic shape",
+         "Poor continuation of given opening",
+         "Poor adherence to rhythm and style of dance",
+         "Melody does not end on tonic",
+         "Inappropriate/no phrasing and expression marks inserted.",
+         "Unsuitable/no instrument chosen."
+        ]
+       },
+       {
+        "label": "Very poor sense of key",
+        "marks": "2-4",
+        "guidance": [
+         "Very poor melodic shape",
+         "Very poor continuation of given opening",
+         "Very poor adherence to rhythm and style of dance",
+         "Melody does not end on tonic",
+         "Inappropriate/no phrasing and expression marks inserted.",
+         "Unsuitable/no instrument chosen."
+        ]
+       },
+       {
+        "label": "Very little or no attempt",
+        "marks": "0-1",
+        "guidance": []
+       }
+      ]
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "\"Answer (a) and (b).\" prints two separately answered melodies; the scheme marks \"Each Melody\" on one 20-mark band table, \"20 + 20\". One ask and one card per melody. The bands are printed as single ranges (17 – 20 ... 2 – 4, \"Very little or no attempt\" 0 - 1). The 2019 Ordinary scheme prints no rhythm notes for Section A, so no task requirements; each band's \"Melody ends on tonic\" / \"Melody does not end on tonic\" bullet and its italic phrasing and instrument lines are carried in its guidance. The instrument list (descant recorder, clarinet, trumpet, violin) is a row of tick boxes, shown on the booklet page, as other sittings. (b) is the march (4/4, two flats, Moderato, mf). The band label is the first printed bullet (sense of key); the dance bullet is the fourth, in the guidance. In the \"Very poor\" band the scheme prints \"Unsuitable/no instrument chosen.\" as a bullet."
+  },
+  {
+   "paper": "composing",
+   "address": "Section B Q4",
+   "page": 8,
+   "pages": [
+    8,
+    9
+   ],
+   "crop": [
+    0.08,
+    0.125,
+    0.92,
+    0.665
+   ],
+   "questionText": "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of G major on the stave below: • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Using the given rhythms, add melody and bass notes to complete each phrase with cadence and approach chords as follows: (i) At A, a plagal cadence with approach chord (vi—IV—I) (ii) At B, an interrupted cadence with approach chord (ii—V—vi) (iii) At C, an imperfect cadence with approach chord (V—I—V) (iv) At D, a perfect cadence with approach chord (IV—V—I)",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-14",
+   "marks": 60,
+   "schemePage": 7,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     6,
+     7
+    ],
+    "markingGuideNote": "SECTION B – HARMONY (60 marks)",
+    "stem": "Answer one question only in this section: Q4 or Q5 or Q6.",
+    "taskRequirements": [
+     "Chord Progressions - General points",
+     "Same chord in adjacent boxes not accepted",
+     "Accidental and suffix, where relevant, must be fully correct for mark to be awarded",
+     "Chords must be part of a good progression",
+     "V – ii generally not accepted",
+     "ii – I generally not accepted",
+     "Chords that cause weak bass line (aug 4th, dim 5th) not accepted",
+     "Good Progressions",
+     "Falling 3rd = generally better than rising 3rd",
+     "Rising 4ths",
+     "Cadence progressions anywhere",
+     "Primary triads",
+     "Bass Line",
+     "No doubling of major 3rd under chord symbol",
+     "Treatment of LN (aug 4th)",
+     "Stepwise movement to and from inversions = good",
+     "Good finish"
+    ],
+    "criteria": [
+     {
+      "id": "grid",
+      "label": "1 mark per correct note of chord",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Grid / Stave"
+      ]
+     },
+     {
+      "id": "melody-count",
+      "label": "1 mark per correct melody note which is part of the chord and which falls on the correct beat of the bar",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": []
+     },
+     {
+      "id": "melody-quality",
+      "label": "Up to 3 marks for quality of correct melody line at each cadence point, which fits well with the chord progression and correct bass notes",
+      "max": 12,
+      "guidance": []
+     },
+     {
+      "id": "bass-count",
+      "label": "1 mark per correct bass note of the chord and which falls on the correct beat of the bar",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": []
+     },
+     {
+      "id": "bass-quality",
+      "label": "Up to 3 marks for quality of the correct bass line at each cadence point.",
+      "max": 12,
+      "guidance": []
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "Section B: the \"Preparatory work\" (scale and chord bank) is MARKED at Ordinary Level (\"Grid / Stave\", 1 mark per correct note of chord, 12), so its bullets are part of the question text and its line is a counted criterion (lane ruling). The chord bank prints I (\"The first chord is given\") and also iii and vii° already filled in and shaded, outside the five chords asked for: the 12 notes are those of ii, IV, V and vi; the pre-filled chords are part of the printed question, not separate asks. Each \"1 mark per ... (1 × 12)\" line is counted, each \"Up to 3 marks for quality ... (3 × 4)\" line a no-band criterion on 0-12 (12 + 24 + 24 = 60). The \"1 × 12\" / \"3 × 4\" sit in the scheme's Mark column, so the labels carry the descriptor only. The Section B general points (scheme p6) are carried on all three questions (\"aug 4th\", \"dim 5th\", \"3rd\" print their endings as superscripts). The 2019 Ordinary scheme prints NO table of given or accepted chords, so there is no scheme crop. \"PREPARATORY WORK\" is a printed heading, not an ask. Q4's (i)-(iv) name the cadences at A-D (the cadence words print in bold); one ask, one total. Key G major, 3/4."
+  },
+  {
+   "paper": "composing",
+   "address": "Section B Q5",
+   "page": 10,
+   "pages": [
+    10,
+    11
+   ],
+   "crop": [
+    0.08,
+    0.06,
+    0.92,
+    0.6
+   ],
+   "questionText": "ADDING BASS NOTES AND CHORD INDICATIONS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of F major on the stave below: • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Add suitable bass notes and chord indications to complete the cadences at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both. • Do not repeat the same chord in adjacent boxes.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-13",
+   "marks": 60,
+   "schemePage": 8,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     6,
+     8
+    ],
+    "markingGuideNote": "SECTION B – HARMONY (60 marks)",
+    "stem": "Answer one question only in this section: Q4 or Q5 or Q6.",
+    "taskRequirements": [
+     "Chord Progressions - General points",
+     "Same chord in adjacent boxes not accepted",
+     "Accidental and suffix, where relevant, must be fully correct for mark to be awarded",
+     "Chords must be part of a good progression",
+     "V – ii generally not accepted",
+     "ii – I generally not accepted",
+     "Chords that cause weak bass line (aug 4th, dim 5th) not accepted",
+     "Good Progressions",
+     "Falling 3rd = generally better than rising 3rd",
+     "Rising 4ths",
+     "Cadence progressions anywhere",
+     "Primary triads",
+     "Bass Line",
+     "No doubling of major 3rd under chord symbol",
+     "Treatment of LN (aug 4th)",
+     "Stepwise movement to and from inversions = good",
+     "Good finish"
+    ],
+    "criteria": [
+     {
+      "id": "grid",
+      "label": "1 mark per correct note of chord",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Grid / Stave"
+      ]
+     },
+     {
+      "id": "chord-count",
+      "label": "1 mark per correct chord that fits the notes",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": []
+     },
+     {
+      "id": "chord-quality",
+      "label": "Up to 3 marks per quality of chord progression at each cadence point, which fits well with the melody",
+      "max": 12,
+      "guidance": []
+     },
+     {
+      "id": "bass-count",
+      "label": "1 mark per correct bass note of the chord and which falls on the correct beat of the bar",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": []
+     },
+     {
+      "id": "bass-quality",
+      "label": "Up to 3 marks for quality of bass line at each cadence point, which fits well with the chord progression and melody notes",
+      "max": 12,
+      "guidance": []
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "Section B: the \"Preparatory work\" (scale and chord bank) is MARKED at Ordinary Level (\"Grid / Stave\", 1 mark per correct note of chord, 12), so its bullets are part of the question text and its line is a counted criterion (lane ruling). The chord bank prints I (\"The first chord is given\") and also iii and vii° already filled in and shaded, outside the five chords asked for: the 12 notes are those of ii, IV, V and vi; the pre-filled chords are part of the printed question, not separate asks. Each \"1 mark per ... (1 × 12)\" line is counted, each \"Up to 3 marks for quality ... (3 × 4)\" line a no-band criterion on 0-12 (12 + 24 + 24 = 60). The \"1 × 12\" / \"3 × 4\" sit in the scheme's Mark column, so the labels carry the descriptor only. The Section B general points (scheme p6) are carried on all three questions (\"aug 4th\", \"dim 5th\", \"3rd\" print their endings as superscripts). The 2019 Ordinary scheme prints NO table of given or accepted chords, so there is no scheme crop. \"PREPARATORY WORK\" is a printed heading, not an ask. \"Up to 3 marks per quality of chord progression\" keeps the scheme's \"per\" (sic). Key F major, 3/4."
+  },
+  {
+   "paper": "composing",
+   "address": "Section B Q6",
+   "page": 12,
+   "pages": [
+    12,
+    13
+   ],
+   "crop": [
+    0.08,
+    0.06,
+    0.92,
+    0.6
+   ],
+   "questionText": "ADDING DESCANT NOTES AND CHORD INDICATIONS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of G major on the stave below: • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Complete the phrase endings by adding suitable chords and descant notes at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both.",
+   "questionContext": null,
+   "excerptLine": null,
+   "needsRecording": false,
+   "figure": null,
+   "topicId": "music-1-15",
+   "marks": 60,
+   "schemePage": 9,
+   "schemeCrop": null,
+   "rows": null,
+   "grid": {
+    "schemePages": [
+     6,
+     9
+    ],
+    "markingGuideNote": "SECTION B – HARMONY (60 marks)",
+    "stem": "Answer one question only in this section: Q4 or Q5 or Q6.",
+    "taskRequirements": [
+     "Chord Progressions - General points",
+     "Same chord in adjacent boxes not accepted",
+     "Accidental and suffix, where relevant, must be fully correct for mark to be awarded",
+     "Chords must be part of a good progression",
+     "V – ii generally not accepted",
+     "ii – I generally not accepted",
+     "Chords that cause weak bass line (aug 4th, dim 5th) not accepted",
+     "Good Progressions",
+     "Falling 3rd = generally better than rising 3rd",
+     "Rising 4ths",
+     "Cadence progressions anywhere",
+     "Primary triads",
+     "Bass Line",
+     "No doubling of major 3rd under chord symbol",
+     "Treatment of LN (aug 4th)",
+     "Stepwise movement to and from inversions = good",
+     "Good finish"
+    ],
+    "criteria": [
+     {
+      "id": "grid",
+      "label": "1 mark per correct note of chord",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": [
+       "Grid Stave"
+      ]
+     },
+     {
+      "id": "chord-count",
+      "label": "1 mark per correct cadence chord",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": []
+     },
+     {
+      "id": "chord-quality",
+      "label": "Up to 3 marks per quality of chord progression at each cadence point, which fits well with the bass notes",
+      "max": 12,
+      "guidance": []
+     },
+     {
+      "id": "descant-count",
+      "label": "1 mark per correct descant note which is part of the chord and which falls on the correct beat of the bar",
+      "max": 12,
+      "counted": {
+       "rate": 1,
+       "items": 12
+      },
+      "guidance": []
+     },
+     {
+      "id": "descant-quality",
+      "label": "Up to 3 marks for quality of descant line at each cadence point, which fits well with the melody and bass notes",
+      "max": 12,
+      "guidance": []
+     }
+    ]
+   },
+   "sharedCard": null,
+   "notes": "Section B: the \"Preparatory work\" (scale and chord bank) is MARKED at Ordinary Level (\"Grid / Stave\", 1 mark per correct note of chord, 12), so its bullets are part of the question text and its line is a counted criterion (lane ruling). The chord bank prints I (\"The first chord is given\") and also iii and vii° already filled in and shaded, outside the five chords asked for: the 12 notes are those of ii, IV, V and vi; the pre-filled chords are part of the printed question, not separate asks. Each \"1 mark per ... (1 × 12)\" line is counted, each \"Up to 3 marks for quality ... (3 × 4)\" line a no-band criterion on 0-12 (12 + 24 + 24 = 60). The \"1 × 12\" / \"3 × 4\" sit in the scheme's Mark column, so the labels carry the descriptor only. The Section B general points (scheme p6) are carried on all three questions (\"aug 4th\", \"dim 5th\", \"3rd\" print their endings as superscripts). The 2019 Ordinary scheme prints NO table of given or accepted chords, so there is no scheme crop. \"PREPARATORY WORK\" is a printed heading, not an ask. The scheme prints Q6's element as \"Grid\" over \"Stave\" (no slash). \"Up to 3 marks per quality of chord progression\" keeps the scheme's \"per\" (sic). Q6 prints no \"Do not repeat the same chord\" bullet. Key G major, 2/4."
+  }
+ ]
+}

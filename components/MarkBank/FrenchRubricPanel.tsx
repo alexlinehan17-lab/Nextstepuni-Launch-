@@ -20,6 +20,7 @@ import {
   frenchRowValue,
   frenchScoreId,
   frenchShortId,
+  frenchShortSwitchId,
   lowerScaleActive,
   rubricLanguage,
   type FrenchScoreId,
@@ -224,21 +225,32 @@ export default function FrenchRubricPanel({ card, scores, onScore }: {
         const named = rubric.criteria.find(k => k.id === other);
         return sum + (named ? frenchCriterionMark(rubric.criteria, named, scores) : 0);
       }, 0) : 0;
-      const short = lower ? scores[frenchShortId(criterion.id)] === 1 : false;
+      // One "under N words" switch serves the card (frenchShortSwitchId): the
+      // printed rule and its button sit once, under the first criterion with a
+      // word count, and every lowered criterion reads it (each German and
+      // Italian criterion is its own switch). A scale switched on by the word
+      // count alone reports the switch, not a content total.
+      const shortId = frenchShortSwitchId(rubric.criteria, criterion);
+      const short = lower ? scores[shortId] === 1 : false;
+      const hasSwitch = shortId === frenchShortId(criterion.id);
+      const switchLabel = rubric.criteria.find(k => frenchShortId(k.id) === shortId)?.label;
+      const wordsOnly = !!lower && lower.contentCriteria.length === 0;
       return <section key={criterion.id} className="mb-french-criterion">
         <div className="mb-french-criterion-heading"><h4>{criterion.label}</h4><span>/ {scale.maxMarks}</span></div>
         {criterion.guidance.map((text, index) => <p key={index}>{text}</p>)}
         {attemptBlocked && <p>Language marks require an attempted communicative task.</p>}
         {gated && !attemptBlocked && <p>{criterion.label} marks require a {gate!.label} mark above 0.</p>}
         {lower && <div className="mb-french-lower" aria-live="polite">
-          <p className="mb-french-lower-rule">{lower.rule}</p>
-          {lower.wordsUnder !== undefined && <button type="button" className="mb-french-attempt" aria-pressed={short}
-            onClick={() => onScore(frenchShortId(criterion.id), short ? 0 : 1)}>
+          {hasSwitch && <p className="mb-french-lower-rule">{lower.rule}</p>}
+          {lower.wordsUnder !== undefined && hasSwitch && <button type="button" className="mb-french-attempt" aria-pressed={short}
+            onClick={() => onScore(shortId, short ? 0 : 1)}>
             {short ? `Recorded: my answer is under ${lower.wordsUnder} words` : `My answer is under ${lower.wordsUnder} words`}
           </button>}
           <p className="mb-french-lower-status">
             <strong>{lowered ? `${lower.label} scale applies` : 'Full scale applies'}</strong>
-            {` · your content marks add to ${content}${short ? ', and your answer is under ' + lower.wordsUnder + ' words' : ''}. `}
+            {wordsOnly
+              ? ` · ${short ? `your answer is under ${lower.wordsUnder} words` : `you have not said your answer is under ${lower.wordsUnder} words`}${hasSwitch ? '' : ` (set under ${switchLabel})`}. `
+              : ` · your content marks add to ${content}${short ? ', and your answer is under ' + lower.wordsUnder + ' words' : ''}. `}
             {lowered ? `${criterion.label} is placed out of ${lower.maxMarks}.` : `${criterion.label} is placed out of ${criterion.maxMarks}.`}
           </p>
         </div>}
