@@ -211,6 +211,35 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC550GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-a-1-h", topicId: "lithuanian-2-1", conceptId: "match-words-text-definitions-indicate-answer",
+    section: "U1", questionRef: "2022 OL Section A Q1(h)",
+    stem: "Pirma užduotis",
+    questionText: "Match the words from the text with their definitions. Indicate your answer in all cases by inserting the letters which correspond to the numbers in the boxes below.\n1. rūkas A. įdėmiai žiūrėdami\n2. stebuklas B. gamtos reiškinys\n3. įbedę akis C. neįtikėtinas atsitikimas\n4. nieko nepešę D. pavargę\n5. sunkiom kojom E. neradę, ko ieškojo",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B", marks: 1, contextNote: "For “1. rūkas”: The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "C", marks: 1, contextNote: "For “2. stebuklas”" },
+    { id: "r-3", kind: "point", verbatim: "A", marks: 1, contextNote: "For “3. įbedę akis”" },
+    { id: "r-4", kind: "point", verbatim: "E", marks: 1, contextNote: "For “4. nieko nepešę”" },
+    { id: "r-5", kind: "point", verbatim: "D", marks: 1, contextNote: "For “5. sunkiom kojom”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PIRMA UŽDUOTIS",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
     id: "lt-2022-ol-a-1-i", topicId: "lithuanian-2-1", conceptId: "narrator-fascinated-sees-new-york-agree",
     section: "U1", questionRef: "2022 OL Section A Q1(i)",
     stem: "Pirma užduotis",
@@ -668,6 +697,35 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Teisingas", marks: 1, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TREČIA UŽDUOTIS",
+          "title": "Reading text — answer in English or Irish",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Lithuanian 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2022 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2022-ol-a-3-f", topicId: "lithuanian-2-1", conceptId: "match-beginnings-endings-make-statements-text",
+    section: "U3", questionRef: "2022 OL Section A Q3(f)",
+    stem: "Trečia užduotis",
+    questionText: "Match the beginnings and the endings to make statements about the text. Indicate your answer in all cases by inserting the letters which correspond to the numbers in the boxes below. The beginnings The endings\n1. Gabė stovėjo už klasės durų … A. … kai jai kažkas durimis trenkė į nosį.\n2. Pirmasis Gabės susitikimas su klasės draugais įvyko, … B. … ir net neatsiprašė.\n3. Gabė suprato, kad jos nauji klasės draugai yra menininkai … C. … ji sutepta aliejiniais dažais.\n4. Radvilės suknelė neišsiplaus, nes … D. … jai pirštais laikant sukruvintą nosį.\n5. Benas Radvilei nepasiūlė pagalbos … E. … iš jų drabužių, papuošalų ir šukuosenų.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A", marks: 2, contextNote: "For “1. Gabė stovėjo už klasės durų …”: The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "D", marks: 2, contextNote: "For “2. Pirmasis Gabės susitikimas su klasės draugais įvyko, …”" },
+    { id: "r-3", kind: "point", verbatim: "E", marks: 2, contextNote: "For “3. Gabė suprato, kad jos nauji klasės draugai yra menininkai …”" },
+    { id: "r-4", kind: "point", verbatim: "C", marks: 2, contextNote: "For “4. Radvilės suknelė neišsiplaus, nes …”" },
+    { id: "r-5", kind: "point", verbatim: "B", marks: 2, contextNote: "For “5. Benas Radvilei nepasiūlė pagalbos …”" },
     ],
     sourceMaterial: {
           "kind": "source-text",

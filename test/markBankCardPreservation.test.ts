@@ -1565,13 +1565,15 @@ const LITHUANIAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: num
   2025: { higher: 37, ordinary: 40 },
   2024: { higher: 9, ordinary: 41 },
   2023: { higher: 35, ordinary: 32 },
-  2022: { higher: 25, ordinary: 24 },
+  2022: { higher: 25, ordinary: 26 },
 };
 /* The listening booklet (sections LA-LE) and Section B's written tasks, which
  * have no live card, by their ids; the reading asks the generator refused, by
  * name, since their ids share the live cards' form. */
 const LITHUANIAN_ADDED_TO_FROZEN_ID = /^lt-202[2-6]-(?:hl|ol)-(?:l[a-e]-|b-)/;
 const LITHUANIAN_ADDED_TO_FROZEN_READING = new Set<string>([
+  'lt-2022-ol-a-1-h',
+  'lt-2022-ol-a-3-f',
   'lt-2023-hl-a-1-a',
   'lt-2023-ol-a-1-h',
   'lt-2024-ol-a-1-e-ii',

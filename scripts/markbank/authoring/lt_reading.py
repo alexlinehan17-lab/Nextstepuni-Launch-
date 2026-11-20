@@ -84,6 +84,10 @@ SPECS = {
     (2023, 'hl'): [
         ('prov', ('A', 1, 'a'), None, None),
     ],
+    (2022, 'ol'): [
+        ('box', ('A', 1, 'h'), '(h) Match the words from the text with their definitions.', None),
+        ('box', ('A', 3, 'f'), '(f) Match the beginnings and the endings to make statements about the text.', None),
+    ],
 }
 
 SPLIT = re.compile(r'\((\d+)\s*[x×]\s*(\d+)(?:\s*marks?)?\)', re.I)
@@ -140,7 +144,7 @@ def _split(block):
 
 def _notation(block):
     """The price exactly as the head prints it, e.g. "4 Marks (4 x 1)"."""
-    text = ' '.join(block[:2])
+    text = ' '.join(block[:3])
     m = re.search(r'(\d+\s*[Mm]arks?\s*)?\(?\d+\s*[x×]\s*\d+(?:\s*marks?)?\)?', text)
     return _norm(m.group(0)) if m else ''
 
@@ -231,13 +235,35 @@ def box(P, lines, year, level, key3, anchor, _extra):
     if len(paid) != count:
         raise Refused(f'{key3}: {len(paid)} numbers paid, the split prices {count}')
     stem = _norm(children[0].stem)
-    printed = [f'{a.roman}. {_norm(a.text)}' for a in children]
+
+    def halves(a):
+        """A row as the paper prints it: the number's half and the letter's.
+        Where the number's half wraps onto a second line, the reader runs the
+        wrap on after the letter's half ("Pirmasis Gabės susitikimas su klasės
+        B. … ir net neatsiprašė. draugais įvyko, …", 2022 OL A Q3(f)): the
+        wrap is put back, only where the number's half does not end in "…"
+        and the text after the letter's closing period does."""
+        text = _norm(a.text)
+        m = re.match(r'^(.*?)\s([A-F])\.\s(.*)$', text)
+        if not m:
+            return text, None
+        left, letter, right = m.groups()
+        if not left.endswith('…'):
+            w = re.match(r'^(.*?\.)\s+(\S.*…)$', right)
+            if w:
+                return f'{left} {w.group(2)}', f'{letter}. {w.group(1)}'
+        return left, f'{letter}. {right}'
+
+    printed, lefts = [], {}
+    for a in children:
+        left, right = halves(a)
+        lefts[a.roman] = left
+        printed.append(f'{a.roman}. {left} {right}' if right else f'{a.roman}. {left}')
     question = '\n'.join([stem] + printed)
     rows = []
     for n, letter, a in paid:
-        left = _norm(re.split(r'\s[A-F]\.\s', ' ' + _norm(a.text) + ' ', maxsplit=1)[0])
         rows.append({'id': f'r-{len(rows) + 1}', 'kind': 'point', 'verbatim': letter, 'marks': per,
-                     '_lead': f'{n}. {left}'})
+                     '_lead': f'{n}. {lefts[a.roman]}'})
     parent = key3 + (None,)
     card, note = _skeleton(P, children[0], parent, year, level, question, count * per, rows, '')
     _led(card['rows'], note)
