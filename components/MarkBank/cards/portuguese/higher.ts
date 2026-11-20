@@ -33,6 +33,203 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
+    id: "por-2018-hl-i-1-a", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-futilidades",
+    section: "I", questionRef: "2018 HL Section I Q1(a)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. futilidades (§ 3);",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "coisas sem importância; b) ambiente citadino desconfortável, inóspito; c) defender a honra; d) habitação pequena, exígua; e) frase que se apõe num túmulo para homenagear o morto.", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
+    id: "por-2018-hl-i-2", topicId: "portuguese-2-0", conceptId: "quer-dizer-autora-expressao-semana-existe",
+    section: "I", questionRef: "2018 HL Section I Q2",
+    questionText: "O que quer dizer a autora com a expressão: “A semana não existe como tempo, que é uma fita contínua na qual não devemos mexer”.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "O tempo é contínuo, sem paragens, dividi-lo em etapas é desnecessário, não faz sentido.", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
+    id: "por-2018-hl-i-3", topicId: "portuguese-2-0", conceptId: "metafora-final-documentario-tendo-nadado-artistas",
+    section: "I", questionRef: "2018 HL Section I Q3",
+    questionText: "Explique a metáfora: “No final do documentário, tendo nadado com os artistas sem os ver afundar…”.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Quando o documentário acabou, a cronista sentia-se em empatia com os artistas retratados. A metáfora da frase faz alusão ao título do documentário “Afoga-te ou nada” uma vez que a cronista compreendeu o percurso dos artistas retratados “nadando” ao seu lado e vendo a forma como evoluíam, sem os ver “afundar”.", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
+    id: "por-2018-hl-i-4", topicId: "portuguese-2-0", conceptId: "respeitando-sentido-conteudo-frase-arte-parece",
+    section: "I", questionRef: "2018 HL Section I Q4",
+    questionText: "Respeitando o sentido do texto, explique o conteúdo da frase: “A arte parece ter-se tornado uma libertação”.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "O que distingue o ser humano dos outros animais é a sua capacidade de expressão artística. Naquele mundo de guerra, hostil, a única forma de o homem se libertar, a única forma de o homem se sentir homem é através da arte.", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
+    id: "por-2018-hl-i-5", topicId: "portuguese-2-0", conceptId: "autora-actividades-homem-ajudam-formar-proprio",
+    section: "I", questionRef: "2018 HL Section I Q5",
+    questionText: "Segundo a autora, que actividades do homem ajudam a formar o próprio homem?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "As actividades do homem que ajudam a formar o próprio são, segundo a autora, o grande jornalismo e a grande literatura.", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
+    id: "por-2018-hl-i-6", topicId: "portuguese-2-0", conceptId: "cronista-refere-projectos-sociais-cumpriram-sua",
+    section: "I", questionRef: "2018 HL Section I Q6",
+    questionText: "No parágrafo 4, a cronista refere os “projectos sociais que não cumpriram a sua missão e se transformaram em guetos habitacionais e células solitárias.” Que aspectos da sociedade são criticados pela cronista?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A cronista critica os diversos projectos dirigidos aos cidadãos que em vez de resolverem os problemas das pessoas mais desprotegidas os agravam: abandonados na grande cidade, rodeados por um ambiente hostil de ruído e poluição, em habitações pequenas, sem espaços de convívio…", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
+    id: "por-2018-hl-ii-1", topicId: "portuguese-2-2", conceptId: "faca-comentario-frase-cerca-100-palavras",
+    section: "II", questionRef: "2018 HL Section II Q1",
+    questionText: "Faça um comentário sobre a frase do texto, em cerca de 100 palavras. A lágrima rolou atravessando a secura da pele. Por Kadija. E pela gente de Pedrógão, pela perda, pelo desperdício, por todas as vezes em que choramos o desaparecimento do tempo a que chamamos futuro.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A frase termina muito bem o conteúdo do texto e faz ligação com a situação actual de Portugal. Tendo visto o documentário sobre o evoluir artístico de uma jovem exilada iraquiana a viver em Londres, a cronista apercebe-se, no final, que aquela artista já não vive porque morrera no incêndio do prédio onde vivia, tal como muitas vítimas dos incêndios que ensombraram o Verão de 2017 em Portugal O choro surge como consequência das duas situações análogas.", marks: null, contextNote: "For “Parte II”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
+    id: "por-2018-hl-iii-1", topicId: "portuguese-2-2", conceptId: "proposta-vejo-pais-cinzento-pesado-pedra",
+    section: "III", questionRef: "2018 HL Section III Q1",
+    stem: "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)",
+    questionText: "Proposta 1 Vejo um país cinzento e pesado como uma pedra tumular abatendo-se sobre nós perante a complacência, cobardia e arrogância. A raiva faz evaporar as lágrimas porque é uma trovoada seca.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "− a ideia de um país sem rumo, sem organização, sem objectivos; um país que, como uma pedra tumular, abandona e esconde os cidadãos mais desprotegidos, sem que aqueles que os deviam proteger apresentem uma solução.", marks: null, contextNote: "For “Aspectos que o aluno pode referir na sua resposta:”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "− a raiva, a impotência de quem assiste a este cenário é tanat que nem lágrimas há para chorar os mortos; é um sofrimento, uma dor sem lágrimas: é uma trovoada seca.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
+    id: "por-2018-hl-iii-2", topicId: "portuguese-2-2", conceptId: "proposta-habito-faz-monge-medida-incorrecto",
+    section: "III", questionRef: "2018 HL Section III Q2",
+    stem: "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)",
+    questionText: "Proposta 2 O hábito não faz o monge. Em que medida é incorrecto julgarmos as pessoas por aquilo que vestem. Considere os argumentos a favor ou contra, mostrando o seu ponto de vista num texto de cerca de 300 palavras.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The paper prices this task “(40 pontos)”; the scheme prints no answer for it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2019, level: "higher",
     paperFileid: "LC018ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2019 Higher Level — © State Examinations Commission.",

@@ -243,6 +243,21 @@ class SchemeSpan:
         return re.sub(r'\s+', ' ', ' '.join(parts)).strip()
 
 
+class PaperPontos:
+    """A part's price as the PAPER prints it, on the line that opens with
+    `opening` on `page` ("(30 pontos)" under "Parte II"), where the scheme
+    prints none (2012, 2013, 2015, 2018)."""
+    def __init__(self, page, opening):
+        self.page, self.opening = page, opening
+
+    def read(self, doc):
+        t = PL(self.page, self.opening).text(doc)
+        m = re.search(r'\((\d{1,3})\s*pontos\)', t)
+        if not m:
+            raise ValueError(f'paper p{self.page}: {t!r} prints no "(N pontos)"')
+        return 1, int(m.group(1)), m.group(0)
+
+
 class Pontos:
     """A price printed in points, "PARTE II (40 pontos)" (the 2021 scheme): one
     answer at that total."""
@@ -1140,6 +1155,47 @@ READING[(2019, 'hl')] = [
     C('III2', [shown(SchemeSpan(110, 132), lead=S(109))], total=Pontos(97), whole=True,
       question=(PL(4, 'Proposta 2'), PL(4, 'Fazer uma interrupção'), PL(4, 'de tempo?'),
                 PL(4, 'Dê uma resposta a esta'), PL(4, 'argumento.')), stem=_CHOICE_2019, source=False),
+]
+
+
+_CHOICE_P4 = (PL(4, 'Das duas propostas'), PL(4, '(Comente a citação'))
+READING[(2018, 'hl')] = [
+    C('II1', [shown(SchemeSpan(65, 71), lead=S(64))], total=PaperPontos(4, '(30 pontos)'), whole=True,
+      question=(PL(4, 'Faça um comentário sobre a frase'), PL(4, 'A lágrima rolou'), PL(4, 'perda, pelo'),
+                PL(4, 'que chamamos futuro')), stem=()),
+    # The scheme's Part III prints one indicative list ("Aspectos que o aluno
+    # pode referir na sua resposta:"), for Proposta 1's quotation.
+    C('III1', [shown(SchemeSpan(78, 80), lead=S(77)), shown(SchemeSpan(81, 82))],
+      total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'Vejo um país'), PL(4, 'complacência'), PL(4, 'seca.')),
+      stem=_CHOICE_P4, source=False),
+    # Nothing for Proposta 2: CARD-STANDARD 3, the scheme prints no answer.
+    C('III2', [rest(PaperPontos(4, '(40 pontos)'), 0)], total=PaperPontos(4, '(40 pontos)'),
+      question=(PL(4, 'Proposta 2'), PL(4, 'O hábito não faz'), PL(4, 'Em que medida'),
+                PL(4, 'argumentos a favor'), PL(4, 'palavras.')), stem=_CHOICE_P4, source=False),
+]
+READING[(2017, 'hl')] = [
+    C('II1', [shown(SchemeSpan(84, 86), lead=S(83))], total=Pontos(82), whole=True,
+      question=(PL(4, 'Faça um comentário sobre a frase'), PL(4, '“A parte do mundo')), stem=()),
+    # Tema 1's answer is the scheme's guidance for the task, shown as printed.
+    C('III1', [shown(SchemeSpan(90, 91), lead=S(89))], total=Pontos(87), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'Relembre um objecto'), PL(4, 'como ele foi')),
+      stem=_CHOICE_P4, source=False),
+    C('III2', [shown(SchemeSpan(93, 109), lead=S(92))], total=Pontos(87), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, '“A minha opinião'), PL(4, 'Comente a frase no contexto')),
+      stem=_CHOICE_P4, source=False),
+]
+READING[(2016, 'hl')] = [
+    C('II1', [shown(SchemeSpan(71, 80), lead=S(70))], total=Pontos(69), whole=True,
+      question=(PL(4, 'Faça um comentário sobre a frase'), PL(4, 'Os bons livros'), PL(4, 'suja basta virar'),
+                PL(4, 'tem princípio nem fim')), stem=()),
+    C('III1', [shown(SchemeSpan(84, 88), lead=S(83))], total=Pontos(81), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'Uma língua é o lugar'), PL(4, 'pensar e sentir'),
+                PL(4, 'como da de outros'), PL(4, 'mar foi a da nossa'), PL(4, 'Vergílio Ferreira')),
+      stem=_CHOICE_P4, source=False),
+    C('III2', [shown(SchemeSpan(90, 97), lead=S(89))], total=Pontos(81), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, 'O mundo pode ser'), PL(4, 'fazermos mais igual'), PL(4, 'Fintan')),
+      stem=_CHOICE_P4, source=False),
 ]
 
 

@@ -346,8 +346,13 @@ def build_rows(doc, rows, note, key=''):
             left = (count - r.printed) * per
             if left <= 0:
                 raise ValueError(f'{key}: {notation!r} pays no more than the {r.printed} printed answers')
-            said = (f'The scheme prices this ask “{notation}” and prints {NUMBER[r.printed]} '
-                    f'answer{"" if r.printed == 1 else "s"}; it prints no answer for the rest.')
+            if r.printed == 0:
+                # A task the scheme prints no answer for at all (2018 Higher
+                # Part III Proposta 2): the card's one row.
+                said = f'The paper prices this task “{notation}”; the scheme prints no answer for it.'
+            else:
+                said = (f'The scheme prices this ask “{notation}” and prints {NUMBER[r.printed]} '
+                        f'answer{"" if r.printed == 1 else "s"}; it prints no answer for the rest.')
             out.append({'id': rid, 'kind': 'criterion', 'verbatim': UNPRINTED_ANSWER, 'marks': left,
                         'unprinted': True, 'permittedMarks': list(range(left + 1)),
                         'contextNote': _joined(ctx, said)})
