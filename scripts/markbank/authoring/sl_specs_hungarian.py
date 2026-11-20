@@ -465,3 +465,461 @@ SPECS[2018] = [
     R('III2', [graded(S(180), PARTP(), CRIT_2018)], rownote=LEAD_2018,
       question=QP(4, 'A két téma közül', Run('A ruha teszi', 'véleményét egy min.'))),
 ]
+
+
+# ====================================================================== 2019
+# ================================================================ 2019 HL ===
+# Drafted (small-languages lane, 20 Nov): the three open asks of this sitting,
+# II1, III1, III2. Live: I1a-e, I2-I6 (10 cards); not touched here (see the live
+# audit, hungarian-live-faults-2019-2026.json).
+# Paper (rendered pp2-4): rule p2 y65-80 ("Olvassa el a következő szöveget, és
+# válaszoljon érthetően magyarul az I., II. és III. részben feltett
+# kérdésekre!"); reading text "Tárt karokkal? – Magyarország ..." p2 y124 to
+# the byline "Muharay Katalin: HVG, 2018, adaptáció" p3 y372 (paragraphs 1-5
+# on p2, the end of 5 and 6-7 on p3); "I. RÉSZ (30 pont / 100 pont)" p3 y415;
+# "II. RÉSZ (30 pont / 100 pont)" p4 y241 with "Kommentár (min. 100, max. 150
+# szóban)" y270; "III. RÉSZ (40 pont / 100 pont)" p4 y446, titles "1.
+# lehetőség" / "vagy" / "2. lehetőség".
+# PRICES: II1 "(30 pont / 100 pont)", III1/III2 "(40 pont / 100 pont)" on the
+# part heads (PARTP). Nothing else is priced for these parts (paper or scheme).
+# WHAT THE SCHEME PRINTS (rendered scheme pp4-5):
+# - Criteria (p4, under Q6, grey-boxed lead): "A II. és III. részben elérhető
+#   pontok az alábbi szempontok szerint oszlanak meg:" (116) and the four
+#   criteria at 30/30/30/10 % (117-123), for Parts II and III: both graded
+#   (10b), 9/9/9/3 of 30 and 12/12/12/4 of 40, as the lead's 2010.
+# - Part II (p5; 128-132 reprint the head, the task and the sentence): the
+#   requirement line "A minimum 100, maximum 150 szóban tisztán, érthetően
+#   kifejtett, szövegen alapuló saját vélemény." (133-134), the graded head;
+#   "Lehetséges irányok:" (135, italic), the sub-head "Talán igen:" (136), four
+#   dashed points (137-146) and "Talán nem, ha ..." (147), quoted as examples in
+#   order, sub-head included.
+# - Part III (p5, 148-160): "Tisztán, érthetően és világosan megírt esszé."
+#   (150, bold), the graded rows' head; each title reprinted with "Egyéni válasz
+#   minimum 300 szóban." (155, 160), left to the head as in 2010.
+# SHAPES: II1, III1, III2 graded(head, PARTP(), CRIT_2019).
+# JUDGEMENT CALLS:
+# - Reading text pp2-3 (rendered); pages=(2, 3) on II1. The live Part I cards
+#   carry [3]: flagged (P) in the live audit.
+# - II1's question: the head line "Kommentár (min. 100, max. 150 szóban)", the
+#   task (two printed lines) and the sentence to comment on, as 2018; the census
+#   glues the part head's "(30 pont / 100 pont)" in front, so cut from the
+#   paper's own lines (QP).
+# - III1/III2: the instruction line plus the title (III1 with its printed
+#   attribution "(Barack Obama)"); the labels "1. lehetőség" / "2. lehetőség"
+#   left out, as the lead's 2010.
+# GLYPHS: none (á é í ó ö ő ú ü ű read clean in paper and scheme; no code point
+#   outside the Hungarian alphabet in the scheme .md).
+CRIT_2019 = crit((117, 118), (119, 120), (121, 122), 123)
+LEAD_2019 = quote(S(116), lead='The scheme prints')
+SPECS[2019] = [
+    R('II1', [graded(L(133, 134), PARTP(), CRIT_2019)],
+      rownote=both(LEAD_2019, examples(S(135), S(136), S(137), L(138, 139), L(140, 142), L(143, 146), S(147))),
+      question=QP(4, 'Kommentár (min.', Run('Kommentálja a szöveg', 'szóban!'), 'Talán Magyarországnak'),
+      pages=(2, 3)),
+    R('III1', [graded(S(150), PARTP(), CRIT_2019)], rownote=LEAD_2019,
+      question=QP(4, 'A két téma közül', Run('A válság az', 'és falakat'))),
+    R('III2', [graded(S(150), PARTP(), CRIT_2019)], rownote=LEAD_2019,
+      question=QP(4, 'A két téma közül', Run('Egy év halasztást', 'Esszéjében'))),
+]
+
+
+# ====================================================================== 2020
+# ================================================================ 2020 HL ===
+# Drafted (small-languages lane, 20 Nov): the three open asks of this sitting,
+# II1, III1, III2. Live: I1a-e, I2-I6 (10 cards); not touched here (see the live
+# audit, hungarian-live-faults-2019-2026.json).
+# Paper (rendered pp2-4): rule p2 y85 ("Válaszolj érthetően magyarul az I., II.
+# és III. részben feltett kérdésekre!"); reading text "Így cifrázták ők. A
+# bulváretalon: Az Est." p2 y118 to the byline "Serf András, HVG (adaptáció)"
+# p3 y306 (paragraphs 1-4 on p2, the end of 4 and 5 on p3); "I. RÉSZ (30 pont/
+# 100 pont)" p3 y362; "II. RÉSZ" p4 y75 with "(30 pont/ 100 pont)" at x424 on
+# the same line; "III. RÉSZ (40 pont/ 100 pont)" p4 y266, titles "1.
+# lehetőség" / "vagy" / "2. lehetőség".
+# PRICES:
+# - II1: the text layer sets the head as three cells, "II." (x57), "RÉSZ"
+#   (x83) and "(30 pont/ 100 pont)" (x424), so the census reads no Part II
+#   total and PARTP() refuses ("part heads print []"). Rendered p4: "II. RÉSZ
+#   (30 pont/ 100 pont)" on one line. Priced from that printed cell:
+#   PaperP(4, '(30 pont/', k=0) = 30 (the FIRST worded price; k=-1 would read
+#   the paper's 100). The scheme prints the same "(30 pont / 100 pont)" (114).
+# - III1/III2: "(40 pont/ 100 pont)" (PARTP, read cleanly).
+# WHAT THE SCHEME PRINTS (rendered scheme pp4-5):
+# - Criteria (p4, under Q6, grey-boxed lead): "A II. és III. részben elérhető
+#   pontok az alábbi szempontok szerint oszlanak meg:" (105) and the four
+#   criteria at 30/30/30/10 % (106-112), for Parts II and III: graded.
+# - Part II (p4-5; 113-118 reprint the head and the task): requirement line "A
+#   minimum 100, maximum 150 szóban tisztán, érthetően kifejtett, szövegen
+#   alapuló saját vélemény." (119-120), the graded head; "Lehetséges irányok:"
+#   (125, top of p5) and seven dashed points (126-139), quoted as examples.
+# - Part III (p5, 140-151): "Tisztán, érthetően és világosan megírt esszé."
+#   (143).
+# SHAPES: II1, III1, III2 graded(head, <printed total>, CRIT_2020).
+# JUDGEMENT CALLS:
+# - The scheme reprints the Part II task in other words ("Fejtsd ki véleményedet
+#   minimum 100 szóban az alábbi témáról!", 116) than the paper ("Fejtsd ki
+#   álláspontodat min. 100 szóban a 2. bekezdésben található alábbi mondattal
+#   kapcsolatban!", p4 y135-150): the paper's is the question (10f). The
+#   scheme's head adds "maximum 150 szóban", which the paper does not print; it
+#   is the scheme's own requirement line, kept as the graded head.
+# - II1's question: "Kommentár", the task (two lines) and the quoted sentence
+#   (two lines), cut from the paper (the census glues "(30 pont/ 100 pont)").
+# - Reading text pp2-3 (rendered); pages=(2, 3) on II1. The live Part I cards
+#   carry [3]: flagged (P).
+# GLYPHS: none. The paper sets U+2010 HYPHEN ("színe‐javának", "1938‐ban"), a
+#   real hyphen on the render; not in any line used here.
+CRIT_2020 = crit((106, 107), (108, 109), (110, 111), 112)
+LEAD_2020 = quote(S(105), lead='The scheme prints')
+PART2_2020 = PaperP(4, '(30 pont/', k=0)
+SPECS[2020] = [
+    R('II1', [graded(L(119, 120), PART2_2020, CRIT_2020)], total=PART2_2020,
+      rownote=both(LEAD_2020, examples(S(125), L(126, 127), L(128, 129), L(130, 131), L(132, 133), L(134, 135),
+                                       L(136, 137), L(138, 139))),
+      question=QP(4, 'Kommentár', Run('Fejtsd ki álláspontodat', 'kapcsolatban!'), Run('„Azonban mit sem', 'nem kellően')),
+      pages=(2, 3)),
+    R('III1', [graded(S(143), PARTP(), CRIT_2020)], rownote=LEAD_2020,
+      question=QP(4, 'A két téma közül', 'Mi a konfliktus')),
+    R('III2', [graded(S(143), PARTP(), CRIT_2020)], rownote=LEAD_2020,
+      question=QP(4, 'A két téma közül', Run('Figyelembe véve', 'sztárokat, mit'))),
+]
+
+
+# ====================================================================== 2021
+# ================================================================ 2021 HL ===
+# Drafted (small-languages lane, 20 Nov): the two open asks of this TWO-PART
+# sitting, II1 and II2 (Part II is the essay: cited Section II Q1/Q2, filed as
+# Part III's is). Live: I1a-e, I2-I6 (10 cards); not touched here (see the live
+# audit, hungarian-live-faults-2019-2026.json).
+# Paper (rendered pp2-4): rule p2 y65-80 ("Válaszoljon mindkét részre: az I. és
+# a II. részre is!" / "Minden válaszát magyarul írja le!"), "Max. 70 pont";
+# "I. RÉSZ (30 pont / 70 pont)" p2 y124 over the reading text "Elveszett
+# paradicsomok" p2 y227 to the byline "Nagy Gábor: HVG, 2018, 2019, adaptáció"
+# p3 y681; Q1 a)-b) p3, c)-e) and Q2-Q6 p4; "II. RÉSZ (40 pont / 70 pont)" p4
+# y475, "Esszé", the instruction "A két téma közül válasszon ki egyet, és írjon
+# egy minimum 300 szavas esszét!" (y534) and two titles "1. lehetőség" /
+# "vagy" / "2. lehetőség", each with an attribution line set at the right
+# ("- Patrick James Rothfuss: A bölcs ember félelme" y607, "- Greta Thunberg"
+# y721).
+# PRICES: "(40 pont / 70 pont)" on the part head (PARTP). Nothing else.
+# WHAT THE SCHEME PRINTS (rendered scheme pp3-5): NO criteria anywhere in this
+# scheme (no "A II. ... részben elérhető pontok" lead, no percentages). Under
+# "II. RÉSZ (40 pont / 70 pont)" / "Esszé" (127-128) it prints only the
+# descriptive line "Tisztán, érthetően és világosan megírt esszé." (129) and,
+# under each reprinted title, "Egyéni válasz minimum 300 szóban." (133, 138).
+# SHAPES: II1, II2 unprinted(note quoting both lines) at the paper's 40 (R4;
+# brief: "nothing printed for that part (or only a descriptive line)").
+# JUDGEMENT CALLS:
+# - Questions: the instruction line, then the title and its printed
+#   attribution line, as the paper prints them (QP); the scheme reprints title 1
+#   without its quotation marks and title 2's attribution as "(Greta
+#   Thunberg)": punctuation only, not quoted.
+# - No `pages`: a two-part sitting's Part II is the essay (sl_lib attaches no
+#   reading text). LIVE PAGES: the live 2021 cards carry [2, 3], which agree
+#   with the render.
+# GLYPHS: none. The scheme sets its text in NO-BREAK SPACES (U+00A0, 621 of
+#   them) and U+2010 HYPHEN ("jegy‐ és", "egyetért‐e"), real hyphens on the
+#   render; neither is a mangled letter.
+
+
+def _essay_2021(d):
+    return (f'Under Part II the scheme prints only “{S(129).text(d)}” and, under each title, “{S(133).text(d)}” '
+            f'It prints no criteria and no split of the part\'s marks.')
+
+
+ESSAY_2021 = 'A két téma közül'
+SPECS[2021] = [
+    R('II1', [unprinted(_essay_2021)], question=QP(4, ESSAY_2021, '„Egy hosszú út', '- Patrick James')),
+    R('II2', [unprinted(_essay_2021)], question=QP(4, ESSAY_2021, 'Nem találhatsz ki', '- Greta Thunberg')),
+]
+
+
+# ====================================================================== 2022
+# ================================================================ 2022 HL ===
+# Drafted (small-languages lane, 20 Nov): the two open asks of this TWO-PART
+# sitting, II1 and II2 (Part II is the essay). Live: I1a-e, I2-I6 (10 cards);
+# not touched here (see the live audit, hungarian-live-faults-2019-2026.json).
+# Paper (rendered pp2-4): rule p2 y65-80 ("Válaszoljon mindkét részre: az I. és
+# a II. részre is!" / "Minden válaszát magyarul írja le!"); reading text
+# "Poszttraumás nemzedék" p2 y124 to the byline "Balla Györgyi, Bihari Ádám:
+# HVG, 2020, adaptáció" p3 y519; "I. RÉSZ (30 pont / 70 pont)" p3 y563 (Q1 on
+# p3, Q2-Q6 on p4); "II. RÉSZ (40 pont / 70 pont)" p4 y431, "Esszé", the
+# instruction (y519) and titles "1. lehetőség" / "vagy" / "2. lehetőség".
+# PRICES: "(40 pont / 70 pont)" on the part head (PARTP). Nothing else.
+# WHAT THE SCHEME PRINTS (rendered scheme p5):
+# - Above Part II, grey-boxed: "A II. részben elérhető pontok az alábbi
+#   szempontok szerint oszlanak meg:" (127) and the four criteria "1. Megértés
+#   – ...", "2. A válasz koherenciája – ...", "3. Nyelvi képesség – ...", "4.
+#   Nyelvhelyesség – ..." (128-134) with NO percentages and no marks (the 2019
+#   and 2023 schemes print "– 30%" etc. on the same criteria; this one does
+#   not). Stated for Part II.
+# - Under "II. RÉSZ (40 pont / 70 pont)" (135) it reprints "Esszé", the
+#   instruction and the two titles (136-143) and prints nothing else (no
+#   "Tisztán, érthetően ..." line this year).
+# SHAPES: coordinator ruling F (criteria printed for the part without
+#   percentages, Bulgarian 2021): the four criteria as shown rows on the
+#   paper's 40 (whole=True, questionTotal), their lead quoted in the rownote.
+# JUDGEMENT CALLS:
+# - The criteria rows keep their printed numbers "1." to "4.", as Bulgarian and
+#   Estonian 2021 keep theirs.
+# - Questions: the instruction line, then the title (title 1 with its printed
+#   attribution "(Andrew Matthews)"); the census reads II2 as "2. lehetőség"
+#   only, so both are cut from the paper's own lines (QP).
+# - No `pages` (the essay of a two-part sitting). LIVE PAGES: the live Part I
+#   cards carry [3]; the text runs pp2-3: flagged (P).
+# GLYPHS: none. U+00A0 spacing and U+2010 HYPHEN ("Z‐nek", "it‐tőkével",
+#   "egyetért‐e") in scheme and paper are real hyphens on the render.
+CRIT_ROWS_2022 = (L(128, 129), L(130, 131), L(132, 133), S(134))
+
+
+def _crit_note_2022(d):
+    return (f'Under “{S(127).text(d)}” the scheme prints the four criteria with no marks or percentages beside them, '
+            f'so they are shown and the part is scored on its printed total. Under Part II itself it reprints the '
+            f'instruction and the two titles and prints nothing else.')
+
+
+ESSAY_2022 = 'A két téma közül'
+SPECS[2022] = [
+    R('II1', [shown(c) for c in CRIT_ROWS_2022], whole=True, rownote=_crit_note_2022,
+      question=QP(4, ESSAY_2022, Run('Az élet attól', 'elsorvasztja'))),
+    R('II2', [shown(c) for c in CRIT_ROWS_2022], whole=True, rownote=_crit_note_2022,
+      question=QP(4, ESSAY_2022, 'Hogyan jön létre')),
+]
+
+
+# ====================================================================== 2023
+# ================================================================ 2023 HL ===
+# Drafted (small-languages lane, 20 Nov): the three open asks of this sitting,
+# II1, III1, III2. Live: I1a-e, I2-I6 (10 cards); not touched here (see the live
+# audit, hungarian-live-faults-2019-2026.json).
+# Paper (rendered pp2-4): rule p2 y65-80; reading text "Kütyühalmokon kinőtt
+# romantika" p2 y124 to the byline "Csatlós Hanna: HVG, 2022, adaptáció" p3
+# y460; "I. RÉSZ (30 pont / 100 pont)" p3 y503 (Q1-Q2 p3, Q3-Q6 p4); "II. RÉSZ
+# (30 pont / 100 pont)" p4 y343 with "Kommentár (min. 100, max. 150 szóban)"
+# y373; "III. RÉSZ (40 pont / 100 pont)" p4 y519, titles "1. lehetőség" /
+# "vagy" / "2. lehetőség".
+# PRICES: II1 "(30 pont / 100 pont)", III1/III2 "(40 pont / 100 pont)" on the
+# part heads (PARTP). Nothing else is priced for these parts.
+# WHAT THE SCHEME PRINTS (rendered scheme pp5-6):
+# - Criteria (top of p5, grey-boxed lead): "A II. és III. részben elérhető
+#   pontok az alábbi szempontok szerint oszlanak meg:" (131) and the four
+#   criteria at 30/30/30/10 % (132-138), for Parts II and III: graded.
+# - Part II (p5; 139-144 reprint the head, the task and the sentence):
+#   requirement line "A minimum 100, maximum 150 szóban tisztán, érthetően
+#   kifejtett, szövegen alapuló saját vélemény." (145-146), the graded head;
+#   "Lehetséges irányok:" (147) and five dashed points (148-162), quoted as
+#   examples in order.
+# - Part III (p6, 167-178): "Tisztán, érthetően és világosan megírt esszé."
+#   (169).
+# SHAPES: II1, III1, III2 graded(head, PARTP(), CRIT_2023).
+# JUDGEMENT CALLS:
+# - Reading text pp2-3 (rendered); pages=(2, 3) on II1. Live Part I cards carry
+#   [3]: flagged (P).
+# - II1's question: head line, task (two lines), and the quoted sentence (two
+#   lines), cut from the paper (QP).
+# - III1: the paper prints the title in quotation marks with "(Amy Harmon)"; the
+#   scheme reprints it without them (171): the paper's is the question.
+# GLYPHS: none. U+00A0 spacing (954) and U+2010 HYPHEN ("gyermek‐ és",
+#   "Netflix‐sorozat") in the scheme are real hyphens on the render.
+CRIT_2023 = crit((132, 133), (134, 135), (136, 137), 138)
+LEAD_2023 = quote(S(131), lead='The scheme prints')
+SPECS[2023] = [
+    R('II1', [graded(L(145, 146), PARTP(), CRIT_2023)],
+      rownote=both(LEAD_2023, examples(S(147), L(148, 149), L(150, 153), L(154, 155), L(156, 159), L(160, 162))),
+      question=QP(4, 'Kommentár (min.', Run('Kommentálja a szöveg', 'szóban!'), Run('„Az általunk', 'közül a Z')),
+      pages=(2, 3)),
+    R('III1', [graded(S(169), PARTP(), CRIT_2023)], rownote=LEAD_2023,
+      question=QP(4, 'A két téma közül', '„Olvasás közben')),
+    R('III2', [graded(S(169), PARTP(), CRIT_2023)], rownote=LEAD_2023,
+      question=QP(4, 'A két téma közül', Run('„A legtöbb technikai', 'vívmányok túlnőnek'))),
+]
+
+
+# ====================================================================== 2024
+# ================================================================ 2024 HL ===
+# Drafted (small-languages lane, 20 Nov): the three open asks of this sitting,
+# II1, III1, III2. Live: I1a-e, I2-I6 (10 cards); not touched here (see the live
+# audit, hungarian-live-faults-2019-2026.json).
+# Paper (rendered pp2-4): rule p2 y65-80; reading text "Csak azért is
+# kisajátítás" p2 y124 to the byline "- Fülöp István: HVG, 2023, adaptáció" p3
+# y372; "I. RÉSZ (30 pont / 100 pont)" p3 y430 (Q1-Q3 p3, Q4-Q6 p4); "II. RÉSZ
+# (30 pont / 100 pont)" p4 y329 with "Kommentár (min. 100, max. 150 szóban)"
+# y358; "III. RÉSZ (40 pont / 100 pont)" p4 y490, titles "1. lehetőség" /
+# "vagy" / "2. lehetőség" (title 2's attribution "(Csányi Vilmos)" set at the
+# right on its own line, y727).
+# PRICES: II1 "(30 pont / 100 pont)", III1/III2 "(40 pont / 100 pont)" on the
+# part heads (PARTP). Nothing else is priced for these parts.
+# WHAT THE SCHEME PRINTS (rendered scheme pp5-6):
+# - Criteria (p5, under Q6): "A II. és III. részben elérhető pontok az alábbi
+#   szempontok szerint oszlanak meg:" (138) and the four criteria at 30/30/30/10
+#   % (139-145), for Parts II and III: graded.
+# - Part II (p5-6; 146-151 reprint the head, the task and the sentence):
+#   requirement line (152-153), the graded head; "Lehetséges irányok:" (154) and
+#   seven dashed points (155-177; the first ends p5, 155-157, the rest on p6
+#   from 162), quoted as examples in order.
+# - Part III (p6, 178-189): "Tisztán, érthetően és világosan megírt esszé."
+#   (180).
+# SHAPES: II1, III1, III2 graded(head, PARTP(), CRIT_2024).
+# JUDGEMENT CALLS:
+# - Reading text pp2-3 (rendered); pages=(2, 3) on II1. Live Part I cards carry
+#   [3]: flagged (P).
+# - III2: the title, then its attribution line "(Csányi Vilmos)" as printed (the
+#   paper sets it on a line of its own); the scheme reprints the title without
+#   quotation marks (187-188): the paper's is the question.
+# - Example 2 ends "... szempontokat sem, (2. bk);" with a stray comma: the
+#   scheme's own punctuation, quoted as printed.
+# GLYPHS: none. U+00A0 spacing and U+2010 HYPHEN ("többé‐kevésbé",
+#   "Airbnb‐n") are real hyphens on the render.
+CRIT_2024 = crit((139, 140), (141, 142), (143, 144), 145)
+LEAD_2024 = quote(S(138), lead='The scheme prints')
+SPECS[2024] = [
+    R('II1', [graded(L(152, 153), PARTP(), CRIT_2024)],
+      rownote=both(LEAD_2024, examples(S(154), L(155, 157), L(162, 165), L(166, 167), L(168, 170), L(171, 173),
+                                       L(174, 175), L(176, 177))),
+      question=QP(4, 'Kommentár (min.', Run('Kommentálja a szöveg', 'szóban!'), '„A megosztáson alapuló'),
+      pages=(2, 3)),
+    R('III1', [graded(S(180), PARTP(), CRIT_2024)], rownote=LEAD_2024,
+      question=QP(4, 'A két téma közül', Run('A megosztási gazdaság', 'fenntarthatóbb fogyasztási'))),
+    R('III2', [graded(S(180), PARTP(), CRIT_2024)], rownote=LEAD_2024,
+      question=QP(4, 'A két téma közül', '„A közösség az egyén', '(Csányi Vilmos)')),
+]
+
+
+# ====================================================================== 2025
+# ================================================================ 2025 HL ===
+# Drafted (small-languages lane, 20 Nov): the four open asks of this sitting,
+# I3, II1, III1, III2. Live: I1a-e, I2, I4-I6 (9 cards); not touched here (see
+# the live audit, hungarian-live-faults-2019-2026.json).
+# Paper (rendered pp2-4): rule p2 y65-80; reading text "Van-e még életre
+# szóló?" p2 y124 to the byline "Csendes-Erdei Emese: HVG, 2024, adaptáció" p3
+# y518; "I. RÉSZ (30 pont / 100 pont)" p3 y561 (Q1 p3, Q2-Q6 p4); "II. RÉSZ
+# (30 pont / 100 pont)" p4 y358 with "Kommentár (min. 100, max. 150 szóban)"
+# y387; "III. RÉSZ (40 pont / 100 pont)" p4 y534, titles "1. lehetőség" /
+# "vagy" / "2. lehetőség".
+# PRICES:
+# - I3: "(5 pont)" at the right of its own line (p4 x453 y109), read by the
+#   census (PP); the scheme prints the same "(5 pont)" (85).
+# - II1 "(30 pont / 100 pont)", III1/III2 "(40 pont / 100 pont)" on the part
+#   heads (PARTP).
+# WHAT THE SCHEME PRINTS (rendered scheme pp4-6):
+# - I3 (p4, 85-92): the lead "Válasz a 3. bekezdésben: A barátság
+#   kialakulásának akadálya lehet" (86) and five obstacles lettered "a," to
+#   "e," (87-92), one per line, no per-point marks. (The census found no scheme
+#   ask for I3 at the paper's address; the scheme's Q3 reprint, 85, is the
+#   paper's question word for word.)
+# - NO criteria anywhere in this scheme (no "A II. és III. részben ..." lead,
+#   no percentages).
+# - Part II (p6; 145-149 reprint the head, the sentence and the task): the
+#   requirement line "A minimum 100, maximum 150 szóban tisztán, érthetően
+#   kifejtett, szövegen alapuló saját vélemény." (150-151), "Lehetséges
+#   irányok:" (152, italic) and six dashed points (153-164).
+# - Part III (p6, 165-174): only "Tisztán, érthetően és világosan megírt
+#   esszé." (167) and, under each title, "Egyéni válasz minimum 300 szóban."
+#   (170, 174).
+# SHAPES:
+# - I3: five shown rows (one per lettered obstacle, the letters cut off),
+#   whole=True on the paper's 5 (points with no per-point marks); the lead in
+#   the rownote. Not one(): the scheme lists points, not one stated answer.
+# - II1: the six dashed points as shown rows, whole=True on the paper's 30
+#   (indicative points the scheme prices only as a whole, 10a); the requirement
+#   line and the heading "Lehetséges irányok:" in the rownote (a heading never
+#   in a row). Not graded: no criteria are printed this year.
+# - III1/III2: unprinted(note quoting the two descriptive lines), R4.
+# JUDGEMENT CALLS:
+# - I3 rows keep the scheme's trailing ";" (87-90) and its unstopped d) line
+#   (91): punctuation as printed.
+# - II1 point 3 ends "... az életében, (3. bk);" and point 4 prints no "(bk)"
+#   reference: as printed.
+# - Reading text pp2-3 (rendered); pages=(2, 3) on I3 and II1. The live Part I
+#   cards carry [3]: flagged (P).
+# - II1's question: head line, the quoted sentence, then the task (two lines),
+#   in the paper's order (QP).
+# GLYPHS: none (the scheme .md carries no code point outside the alphabet).
+#   NOTE (not a glyph fault): the paper prints Q1 e) "örödként" where the scheme
+#   prints "ördögként"; and the scheme prints above Q1 (62-63) that every
+#   candidate was given e)'s mark. Live I1e only; reported in the live audit.
+
+
+def _comment_2025(d):
+    return (f'The scheme prints no criteria for this part. It prints “{L(150, 151).text(d)}” and, under its '
+            f'heading “{S(152).text(d)}”, the points shown, as examples, not a checklist; the part is scored on '
+            f'its printed total.')
+
+
+def _essay_2025(d):
+    return (f'Under Part III the scheme prints only “{S(167).text(d)}” and, under each title, “{S(170).text(d)}” '
+            f'It prints no criteria and no split of the part\'s marks.')
+
+
+SPECS[2025] = [
+    R('I3', [shown(L(87, 88, after='a, ')), shown(S(89, after='b, ')), shown(S(90, after='c, ')),
+             shown(S(91, after='d, ')), shown(S(92, after='e, '))], whole=True,
+      rownote=quote(S(86), lead='The scheme opens its answer with'), pages=(2, 3)),
+    R('II1', [shown(L(153, 154)), shown(L(155, 156)), shown(L(157, 158)), shown(S(159)), shown(L(160, 161)),
+              shown(L(162, 164))], whole=True, rownote=_comment_2025,
+      question=QP(4, 'Kommentár (min.', '„A tartós barátság', Run('Kommentálja ezt az', 'alapján!')),
+      pages=(2, 3)),
+    R('III1', [unprinted(_essay_2025)], question=QP(4, 'A két téma közül', 'Fontos emberek az')),
+    R('III2', [unprinted(_essay_2025)], question=QP(4, 'A két téma közül', 'Bátorság kell ahhoz')),
+]
+
+
+# ====================================================================== 2026
+# ================================================================ 2026 HL ===
+# Drafted (small-languages lane, 20 Nov): the three open asks of this sitting,
+# II1, III1, III2. Live: I1a-e, I2-I6 (10 cards); not touched here (see the live
+# audit, hungarian-live-faults-2019-2026.json).
+# Paper (rendered pp2-4): rule p2 y65-80; reading text "Testvériesen vagy
+# fele-fele?" p2 y109 to the byline "Szabó Yvette: HVG, 2023, adaptáció" p3
+# y505; "I. RÉSZ (30 pont / 100 pont)" p3 y549 (Q1 p3, Q2-Q6 p4); "II. RÉSZ
+# (30 pont / 100 pont)" p4 y358 with "Kommentár (min. 100, max. 150 szóban)"
+# y387; "III. RÉSZ (40 pont / 100 pont)" p4 y490, titles "1. lehetőség" /
+# "vagy" / "2. lehetőség" (title 2's "(Csányi Vilmos)" on a line of its own at
+# the right, y752).
+# PRICES: II1 "(30 pont / 100 pont)", III1/III2 "(40 pont / 100 pont)" on the
+# part heads (PARTP). Nothing else is priced for these parts.
+# WHAT THE SCHEME PRINTS (rendered scheme pp6-7):
+# - NO criteria anywhere in this scheme (no lead, no percentages).
+# - Part II (p6-7; 134-138 reprint the head, the task and the sentence): the
+#   requirement line "A minimum 100, maximum 150 szóban tisztán, érthetően
+#   kifejtett, szövegen alapuló saját vélemény." (139-140), "Lehetséges
+#   irányok:" (141) and six dashed points (142-166; the fourth runs over the
+#   page break, 153-154 + 159-160).
+# - Part III (p7, 167-181): under each title only "Egyéni válasz minimum 300
+#   szóban." and "Tisztán, érthetően és világosan megírt esszé." (173-174,
+#   180-181).
+# SHAPES: II1 six shown rows, whole=True on the paper's 30 (indicative points,
+#   10a; as 2025), the requirement line and heading in the rownote; III1/III2
+#   unprinted(note quoting the two descriptive lines), R4.
+# JUDGEMENT CALLS:
+# - II1 point 4 joins its two halves across the page break (J(L(153, 154),
+#   L(159, 160)); the page number "6" and page marker, 155-158, left out).
+# - II1's question: head line, task, sentence, as printed (QP).
+# - III2: the title (two lines) and its attribution line "(Csányi Vilmos)", as
+#   printed.
+# - Reading text pp2-3 (rendered); pages=(2, 3) on II1. Live Part I cards carry
+#   [3]: flagged (P).
+# GLYPHS: none (the scheme .md carries no code point outside the alphabet; the
+#   live I4 row's "közösségéíptés" is the scheme's own misprint, 101, on the
+#   render too).
+
+
+def _comment_2026(d):
+    return (f'The scheme prints no criteria for this part. It prints “{L(139, 140).text(d)}” and, under its '
+            f'heading “{S(141).text(d)}”, the points shown, as examples, not a checklist; the part is scored on '
+            f'its printed total.')
+
+
+def _essay_2026(d):
+    return (f'Under Part III the scheme prints only, under each title, “{S(173).text(d)}” and '
+            f'“{S(174).text(d)}” It prints no criteria and no split of the part\'s marks.')
+
+
+SPECS[2026] = [
+    R('II1', [shown(L(142, 143)), shown(L(144, 147)), shown(L(148, 152)), shown(J(L(153, 154), L(159, 160))),
+              shown(L(161, 164)), shown(L(165, 166))], whole=True, rownote=_comment_2026,
+      question=QP(4, 'Kommentár (min.', 'Kommentálja ezt a kijelentést', 'Változóban van'),
+      pages=(2, 3)),
+    R('III1', [unprinted(_essay_2026)],
+      question=QP(4, 'A két téma közül', Run('A közösségi gazdaságon', 'térben éljük'))),
+    R('III2', [unprinted(_essay_2026)],
+      question=QP(4, 'A két téma közül', Run('„A jelenlegi kultúrában', 'őszülsz, festesd'), '(Csányi Vilmos)')),
+]
