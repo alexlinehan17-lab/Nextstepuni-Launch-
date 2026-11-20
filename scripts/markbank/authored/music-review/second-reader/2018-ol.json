@@ -1,0 +1,962 @@
+{
+ "readingFile": "2018-ol.json",
+ "readBy": "second reader (Opus helper), 19 Nov 2026",
+ "method": "Rendered every ask page of both booklets with music_pages.py render at 130 dpi and read each full page; then zoomed clips with PyMuPDF (250-800 dpi) on every glyph in doubt: curly apostrophes (I’m, doesn’t, Barry’s, Carolan’s, look’d) and the opening quote in ‘twas, en dash vs hyphen (lines 1–2, bars 1–6, bars 1–4, 16–bar in HL composing Q1 vs 16-bar in Q3, eight-bar), the em dashes in OL Q4 (IV—ii—V), the superscripts in AA¹BB¹, the flat sign in B♭, the acute accents in An Bonnán Buí, full stops after excerpt headings, the case of every title and of \"PREPARATORY WORK\" (full capitals, not small caps), and every bullet at the left margin. Typed the printed text of every in-scope field from the renders into a script (bullets as \"\\n• \" in questionContext, \" • \" between printed bullet lines in composing questionText, space for unbulleted lines) and compared it with the file string exactly, after collapsing runs of spaces; checked the code point of every non-ASCII character in the file strings. Tick-box glyph shape ignored; \" • \" / \"\\n• \" treated as structure. Elective asks and composing grid stems were outside the brief and are not recorded.",
+ "booklets": {
+  "listening": "examiner-reports/music/papers/2018-ol-008-paper.pdf",
+  "composing": "examiner-reports/music/papers/2018-ol-006-paper.pdf"
+ },
+ "pagesRendered": {
+  "listening": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   8,
+   9,
+   10,
+   11
+  ],
+  "composing": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ]
+ },
+ "asks": [
+  {
+   "address": "Q1 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This excerpt is taken from the"
+  },
+  {
+   "address": "Q1 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1 for the first time. Answer (i) and (ii)."
+  },
+  {
+   "address": "Q1 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The melody heard at the start of this excerpt is based on the"
+  },
+  {
+   "address": "Q1 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1 for the first time. Answer (i) and (ii)."
+  },
+  {
+   "address": "Q1 Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The melody is played by"
+  },
+  {
+   "address": "Q1 Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1 for the second time. Answer (iii)."
+  },
+  {
+   "address": "Q1 Excerpt 1(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The rhythm of the four missing notes at X on the score is"
+  },
+  {
+   "address": "Q1 Excerpt 1(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 1(iv)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played twice more. The first 2 bars of the melody are printed below. Answer (iv)."
+  },
+  {
+   "address": "Q1 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two differences between the music heard in this excerpt and the music heard in Excerpt 1."
+  },
+  {
+   "address": "Q1 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times."
+  },
+  {
+   "address": "Q1 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The tonality of the music in this excerpt is"
+  },
+  {
+   "address": "Q1 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q1 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This music is played tutti. Explain tutti."
+  },
+  {
+   "address": "Q1 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q1 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two features of the music heard in this excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q1 Excerpt 4(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "In this excerpt there is a • Give a reason for your choice."
+  },
+  {
+   "address": "Q1 Excerpt 4(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 4(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played three times."
+  },
+  {
+   "address": "Q1 Excerpt 4(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name your favourite section of Romeo and Juliet Fantasy Overture by Tchaikovsky. • Give one reason why this is your favourite section. Refer to the music of Romeo and Juliet Fantasy Overture in your answer."
+  },
+  {
+   "address": "Q1 Excerpt 4(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q2(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Lines 1–2 are sung a cappella. Explain a cappella."
+  },
+  {
+   "address": "Q2(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "In which line is the piano heard for the first time? It plays"
+  },
+  {
+   "address": "Q2(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify one feature of the vocal line in line 5."
+  },
+  {
+   "address": "Q2(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe how the words any way the wind blows (line 6) are depicted in the music."
+  },
+  {
+   "address": "Q2(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(v)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two differences between the music in the operatic section of Bohemian Rhapsody and the music heard in this excerpt."
+  },
+  {
+   "address": "Q2(v)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Which two instruments play in this excerpt? (Tick two)."
+  },
+  {
+   "address": "Q3(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The music is performed mp senza vib. Explain mp senza vib."
+  },
+  {
+   "address": "Q3(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An outline score of bars 1–6 of the excerpt is printed below. The missing time signature in bar 5 is"
+  },
+  {
+   "address": "Q3(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The texture of the music heard in this excerpt is"
+  },
+  {
+   "address": "Q3(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(v)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name an Irish tune used by Gerald Barry in his Piano Quartet No.1 and name the section of the work where it can be heard."
+  },
+  {
+   "address": "Q3(v)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This excerpt is taken from • It is sung by"
+  },
+  {
+   "address": "Q4(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q4(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The vocal line in this excerpt features"
+  },
+  {
+   "address": "Q4(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q4(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify one feature of the accompaniment in this excerpt."
+  },
+  {
+   "address": "Q4(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q4(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The cadence at the end of the excerpt is"
+  },
+  {
+   "address": "Q4(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(iv)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q4(v)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two differences between the music heard in this excerpt and the music heard in Excerpt 1."
+  },
+  {
+   "address": "Q4(v)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(v)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times."
+  },
+  {
+   "address": "Q5 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify the style of singing in this excerpt."
+  },
+  {
+   "address": "Q5 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Extra full stop. The file writes \"Excerpt 1.\" but page 8 prints the bold heading \"Excerpt 1\" with no full stop, and \"A verse from An Bonnán Buí.\" on its own line below it. Printed: \"Excerpt 1 A verse from An Bonnán Buí.\" (the ask's notes say the \". \" join follows 2018 Higher, where the heading itself is printed \"Excerpt 1.\", unlike this booklet)"
+   ],
+   "checked": "Excerpt 1. A verse from An Bonnán Buí."
+  },
+  {
+   "address": "Q5 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two features of this style of singing as heard in this excerpt."
+  },
+  {
+   "address": "Q5 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Extra full stop. The file writes \"Excerpt 1.\" but page 8 prints the bold heading \"Excerpt 1\" with no full stop, and \"A verse from An Bonnán Buí.\" on its own line below it. Printed: \"Excerpt 1 A verse from An Bonnán Buí.\" (the ask's notes say the \". \" join follows 2018 Higher, where the heading itself is printed \"Excerpt 1.\", unlike this booklet)"
+   ],
+   "checked": "Excerpt 1. A verse from An Bonnán Buí."
+  },
+  {
+   "address": "Q5 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name three different instruments heard playing the melody in this excerpt."
+  },
+  {
+   "address": "Q5 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Extra full stop. The file writes \"Excerpt 2.\" but page 8 prints the bold heading \"Excerpt 2\" with no full stop, and \"An excerpt from Carolan’s Concerto.\" on its own line below it. Printed: \"Excerpt 2 An excerpt from Carolan’s Concerto.\" (the ask's notes say the \". \" join follows 2018 Higher, where the heading itself is printed \"Excerpt 2.\", unlike this booklet)"
+   ],
+   "checked": "Excerpt 2. An excerpt from Carolan’s Concerto."
+  },
+  {
+   "address": "Q5 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The music heard in this excerpt features (tick two)"
+  },
+  {
+   "address": "Q5 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Extra full stop. The file writes \"Excerpt 2.\" but page 8 prints the bold heading \"Excerpt 2\" with no full stop, and \"An excerpt from Carolan’s Concerto.\" on its own line below it. Printed: \"Excerpt 2 An excerpt from Carolan’s Concerto.\" (the ask's notes say the \". \" join follows 2018 Higher, where the heading itself is printed \"Excerpt 2.\", unlike this booklet)"
+   ],
+   "checked": "Excerpt 2. An excerpt from Carolan’s Concerto."
+  },
+  {
+   "address": "Q5 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The first dance heard in this excerpt is a • The time signature of this dance is"
+  },
+  {
+   "address": "Q5 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Extra full stop. The file writes \"Excerpt 3.\" but page 9 prints the bold heading \"Excerpt 3\" with no full stop, and \"This excerpt consists of three different dances based on the tune Drops of Brandy.\" on its own line below it. Printed: \"Excerpt 3 This excerpt consists of three different dances based on the tune Drops of Brandy.\" (the ask's notes say the \". \" join follows 2018 Higher, where the heading itself is printed \"Excerpt 3.\", unlike this booklet)"
+   ],
+   "checked": "Excerpt 3. This excerpt consists of three different dances based on the tune Drops of Brandy."
+  },
+  {
+   "address": "Q5 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The second dance heard in this excerpt is a • A typical bar of rhythm associated with this dance is"
+  },
+  {
+   "address": "Q5 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Extra full stop. The file writes \"Excerpt 3.\" but page 9 prints the bold heading \"Excerpt 3\" with no full stop, and \"This excerpt consists of three different dances based on the tune Drops of Brandy.\" on its own line below it. Printed: \"Excerpt 3 This excerpt consists of three different dances based on the tune Drops of Brandy.\" (the ask's notes say the \". \" join follows 2018 Higher, where the heading itself is printed \"Excerpt 3.\", unlike this booklet)"
+   ],
+   "checked": "Excerpt 3. This excerpt consists of three different dances based on the tune Drops of Brandy."
+  },
+  {
+   "address": "Q5 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The third dance heard in this excerpt is a • The time signature of this dance is"
+  },
+  {
+   "address": "Q5 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Extra full stop. The file writes \"Excerpt 3.\" but page 9 prints the bold heading \"Excerpt 3\" with no full stop, and \"This excerpt consists of three different dances based on the tune Drops of Brandy.\" on its own line below it. Printed: \"Excerpt 3 This excerpt consists of three different dances based on the tune Drops of Brandy.\" (the ask's notes say the \". \" join follows 2018 Higher, where the heading itself is printed \"Excerpt 3.\", unlike this booklet)"
+   ],
+   "checked": "Excerpt 3. This excerpt consists of three different dances based on the tune Drops of Brandy."
+  },
+  {
+   "address": "Q6 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The metre of the music heard in this excerpt is"
+  },
+  {
+   "address": "Q6 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q6 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two features of the music heard in this excerpt. (Tick two)."
+  },
+  {
+   "address": "Q6 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q6 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The five missing notes at X on the score above are"
+  },
+  {
+   "address": "Q6 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times. An outline score of  bars 1–4 of this excerpt is printed below. Answer (i)."
+  },
+  {
+   "address": "Q6 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify  two features of the accompaniment as heard in this excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played twice more. Answer (ii)."
+  },
+  {
+   "address": "Q6 Excerpt 3",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two differences between the music heard in this excerpt and the music heard in Excerpt 2."
+  },
+  {
+   "address": "Q6 Excerpt 3",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 3",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q6 Excerpt 4",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This excerpt is the concluding section of E.T. Flying Theme by John Williams. Describe two ways in which the composer achieves a sense of climax in this excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 4",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 4",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played three times."
+  },
+  {
+   "address": "Section A Q1(a)",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "CONTINUATION OF A GIVEN OPENING Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ descant recorder □ violin □ clarinet"
+  },
+  {
+   "address": "Section A Q1(b)",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "CONTINUATION OF A GIVEN OPENING Answer (a) and (b). • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ descant recorder □ violin □ clarinet"
+  },
+  {
+   "address": "Section A Q2(a)",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "differs",
+   "differences": [
+    "Three extra bullets. The file writes \" • \" before \"Answer (a) and (b).\", before \"Here is an extract from the poem ...\" and before the poem's first line \"The old priest Peter Gilligan\"; page 4 prints none of these three lines with a bullet (only the (a) line \"• The first two lines have been set to a rhythm. ...\" carries one). Q1(a)/(b) and Q3(a)/(b) in this file join the same unbulleted \"Answer (a) and (b).\" with a space, and 2018 Higher Q2 joins its intro and poem with spaces. Printed: \"SETTING MUSIC TO A GIVEN TEXT Answer (a) and (b). Here is an extract from the poem The Ballad of Fr. Gilligan by W. B. Yeats. The old priest Peter Gilligan Was weary night and day; For half his flock were in their beds, Or under green sods lay. • The first two lines have been set to a rhythm. Compose a rhythm to fit the remaining words.\""
+   ],
+   "checked": "SETTING MUSIC TO A GIVEN TEXT • Answer (a) and (b). • Here is an extract from the poem The Ballad of Fr. Gilligan by W. B. Yeats. • The old priest Peter Gilligan Was weary night and day; For half his flock were in their beds, Or under green sods lay. • The first two lines have been set to a rhythm. Compose a rhythm to fit the remaining words."
+  },
+  {
+   "address": "Section A Q2(b)",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Using this rhythm, continue the opening below to make a melody of eight bars. • End on the keynote, that is, doh. • Write the words under the notes. • Add appropriate phrasing and expression marks to the melody."
+  },
+  {
+   "address": "Section A Q3(a)",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM Answer (a) and (b). • Study this opening of a march. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ descant recorder □ violin □ clarinet"
+  },
+  {
+   "address": "Section A Q3(b)",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM Answer (a) and (b). • Study this opening of a minuet. • Continue the given opening to make an eight-bar melody, ending on the keynote, that is, doh. • Add appropriate phrasing and expression marks to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ descant recorder □ violin □ clarinet"
+  },
+  {
+   "address": "Section B Q4",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "differs",
+   "differences": [
+    "Four extra bullets. The file writes \" • \" before each of \"(i) At A, ...\", \"(ii) At B, ...\", \"(iii) At C, ...\", \"(iv) At D, ...\"; page 7 prints these four lines indented under \"... as follows:\" with no bullet. Every word, the em dashes (IV—ii—V etc.) and B♭ match. Printed: \"COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of B♭ major on the stave below: • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Using the given rhythms, add melody and bass notes to complete each phrase with cadence and approach chords as follows: (i) At A, an imperfect cadence with approach chord (IV—ii—V) (ii) At B, a plagal cadence with approach chord (vi—IV—I) (iii) At C, an imperfect cadence with approach chord (vi—IV—V) (iv) At D, a perfect cadence with approach chord (ii—V—I)\""
+   ],
+   "checked": "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of B♭ major on the stave below: • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Using the given rhythms, add melody and bass notes to complete each phrase with cadence and approach chords as follows: • (i) At A, an imperfect cadence with approach chord (IV—ii—V) • (ii) At B, a plagal cadence with approach chord (vi—IV—I) • (iii) At C, an imperfect cadence with approach chord (vi—IV—V) • (iv) At D, a perfect cadence with approach chord (ii—V—I)"
+  },
+  {
+   "address": "Section B Q5",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "ADDING BASS NOTES AND CHORD INDICATIONS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of D major on the stave below: • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Add suitable bass notes and chord indications to complete the cadences at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both. • Do not repeat the same chord in adjacent boxes."
+  },
+  {
+   "address": "Section B Q6",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "ADDING DESCANT NOTES AND CHORD INDICATIONS AT CADENCE POINTS PREPARATORY WORK • Write out the scale of F major on the stave below: • Plot the chords available in this key (I, ii, IV, V and vi) either in the chord bank grid or on the stave below. The first chord is given. • Study the piece of music below. • Complete the phrase endings by adding suitable chords and descant notes at A, B, C and D. • You may use either chord symbols or Roman numerals, but not both."
+  },
+  {
+   "address": "readFromPage composing p6 box [0.05, 0.04, 0.95, 0.25]",
+   "paper": "composing",
+   "field": "readFromPage",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Write out the scale of B♭ major on the stave below:"
+  }
+ ],
+ "summary": {
+  "entriesChecked": 113,
+  "matchesPrint": 104,
+  "differs": 9
+ }
+}
