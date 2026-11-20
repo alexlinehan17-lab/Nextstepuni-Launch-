@@ -1,0 +1,37 @@
+{
+  "at": "2026-11-20T11:54:47.431526+00:00",
+  "reviewer": "Codex second reader /root/russian_independent_review",
+  "scope": "Exact two editorial changes after the frozen June11 audit. No candidate/helper edits or execution by reviewer.",
+  "beforeFixtureSha256": "d66d2cad87719c4a0fbba02644ba2a8065603c994984ee52252f110ef72a1da2",
+  "afterFixtureSha256": "a8127bcddd37f0072b6bf22ce45ac1c6dedab4f06188015e73d14ce31f7bcedf",
+  "changes": [
+    {
+      "id": "lcvp-2010-cl-c3a",
+      "paths": [
+        "/questionRef"
+      ],
+      "before": "2010 CL Section C Q3(a) — CV",
+      "after": "2010 CL Section C Q3(a) — CV only"
+    },
+    {
+      "id": "lcvp-2012-cl-c4b-2",
+      "paths": [
+        "/rows/0/contextNote"
+      ],
+      "before": "Use the same two research methods. Keep all positive details and the acceptance of valid criticism with expansion. Proposed 2+4 split awaits adjudication. Printed support notes and allocation: State two research methods used when planning this activity. Analyse the usefulness of each method used. 6 Marks 1. Telephone call, face to face meetings, talking with school Principal and teachers and anyone else involved. Information can be requested directly. Answers are instant answer. Clarification can be provided if needed/questions explained. Easy to do. 2. Survey/Questionaire/Sugggestion Box It is inexpensive to carry out. Different types of information can be gathered easily. It is quick to administer and answers can be collated easily. Anonymous. Good response rate. 3. Internet A wide variety of information can be accessed. This can be done from your desk at any time of the day or night. It is inexpensive to carry out this type of research. (Information may not be specific to the needs of the activity/hard to filter information) 4. Brainstorming/Class Discussion/Group discussion The entire class can be involved. Everyone can give their opinion on ideas being expressed. It is quick to administer and can be done in a single session. 5.Publications Library free to access Different types of information can be accessed **Also accept valid critisism with an expansion 2 @ 3m (1 + 2)",
+      "after": "Use the same two research methods. Keep all positive details and the acceptance of valid criticism with expansion. Printed support notes and allocation: State two research methods used when planning this activity. Analyse the usefulness of each method used. 6 Marks 1. Telephone call, face to face meetings, talking with school Principal and teachers and anyone else involved. Information can be requested directly. Answers are instant answer. Clarification can be provided if needed/questions explained. Easy to do. 2. Survey/Questionaire/Sugggestion Box It is inexpensive to carry out. Different types of information can be gathered easily. It is quick to administer and answers can be collated easily. Anonymous. Good response rate. 3. Internet A wide variety of information can be accessed. This can be done from your desk at any time of the day or night. It is inexpensive to carry out this type of research. (Information may not be specific to the needs of the activity/hard to filter information) 4. Brainstorming/Class Discussion/Group discussion The entire class can be involved. Everyone can give their opinion on ideas being expressed. It is quick to administer and can be done in a single session. 5.Publications Library free to access Different types of information can be accessed **Also accept valid critisism with an expansion 2 @ 3m (1 + 2)"
+    }
+  ],
+  "other181CardsExact": true,
+  "allQuestionsAnswersMarksControlsSourcesHeadingsIdentitiesUnchanged": true,
+  "captionInterpretation": "CV only is an app reference/practice scope label, not represented as printed source wording. Original instruction and CV term stay exact; app preview remains pending.",
+  "settledSentenceRemoval": "Removes the previously recorded stale provisional note only; all source quotations and preceding context remain exact.",
+  "all183BindingIdsAndResolutionsUnchanged": true,
+  "sourceAndOriginalPreparationHashesPass": true,
+  "helperOnlyManifestHashChanged": true,
+  "helperSha256": "8fdcd268afd8ca500817a87cd752780afbc36ae5b6e051ea3a338d8d3bafe96b",
+  "manifestSha256": "83ae12b59251c4597c05648c831dd30f4ca86868e88015db1f5bc2f2d97dd8ae",
+  "asks": 183,
+  "marks": 840,
+  "status": "Exact editorial revision verified; generator and application checks remain pending."
+}

@@ -1,0 +1,20 @@
+{
+  "reviewer": "Codex second worker /root/russian_independent_review",
+  "files": [
+    {
+      "path": "REPORT.md",
+      "bytes": 1258,
+      "sha256": "fab583cbaa4b56179e2f83c0ceacf5df4e005fbd5656a68baf9b19fd58be7c4b"
+    },
+    {
+      "path": "all-183-field-comparison.json",
+      "bytes": 233960,
+      "sha256": "29632c50ec5a5f403bef9017ac848ad86386192cb77d91519af278d1bfce14d9"
+    },
+    {
+      "path": "diagnosis.json",
+      "bytes": 6739,
+      "sha256": "fa035706a35c5f7e94d81822f3145d5e6cadd462989abd9a2ac33e3ffd1f2e5b"
+    }
+  ]
+}
