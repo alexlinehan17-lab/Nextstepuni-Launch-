@@ -2460,6 +2460,140 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2024 Higher Level — © State Examinations Commission.",
+    id: "dan-2024-hl-i-1-a", topicId: "danish-0-0", conceptId: "forklar-betydningen-ordet-forventningspresset-som-det",
+    section: "I", questionRef: "2024 HL Section I Q1(a)",
+    questionText: "Forklar betydningen af ordet ”forventningspresset” som det bruges i teksten.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Forventninger til fremtiden føles som et pres. Enhver rimelig forklaring (e.g. ”forventninger til fremtiden mht. karriere‐ og familieplaner, der under tiden føles som et pres.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2024 Higher Level — © State Examinations Commission.",
+    id: "dan-2024-hl-i-1-b", topicId: "danish-0-0", conceptId: "forklar-betydningen-ordet-rnepligt-som-det",
+    section: "I", questionRef: "2024 HL Section I Q1(b)",
+    questionText: "Forklar betydningen af ordet ”værnepligt” som det bruges i teksten.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”en borgers lovbestemte pligt til at gennemgå uddannelse for at deltage i sit lands militære forsvar.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2024 Higher Level — © State Examinations Commission.",
+    id: "dan-2024-hl-i-1-c", topicId: "danish-0-0", conceptId: "forklar-betydningen-ordet-arketyper-som-det",
+    section: "I", questionRef: "2024 HL Section I Q1(c)",
+    questionText: "Forklar betydningen af ordet ”arketyper” som det bruges i teksten.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”en grundlæggende psykisk struktur”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2024 Higher Level — © State Examinations Commission.",
+    id: "dan-2024-hl-i-1-e", topicId: "danish-0-0", conceptId: "forklar-betydningen-ordet-patriarkalsk-som-det",
+    section: "I", questionRef: "2024 HL Section I Q1(e)",
+    questionText: "Forklar betydningen af ordet ”patriarkalsk” som det bruges i teksten.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(e.g. ”et mandsdomineret samfund”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2024 Higher Level — © State Examinations Commission.",
+    id: "dan-2024-hl-ii-1", topicId: "danish-1-0", conceptId: "thomsen-mener-det-store-problem-man",
+    section: "II", questionRef: "2024 HL Section II Q1",
+    questionText: "Thomsen mener, at ”Det store problem er, at man taler om drengen som undertrykker og pigen som undertrykt. Men vores samfund er ikke undertrykkende og patriarkalsk.” Diskuter synspunktet i ovenstående citat. Forklar din mening i en kommentar på 100-150 ord.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Thomsen mener, at der er opnået fuld ligestilling i Danmark. Han er meget begejstret for denne udvikling, hvor kvinden har mulighed for at skabe sin egen identitet og realisere sig selv. Han oplever dog, at flere kvinder har den grundholdning, at samfundet stadig er patriarkalsk og at kvinderne derved fortsat er undertrykte. Mange kvinder oplever nemlig, at de bliver tvunget til at blive hjemme i barslen, og at de bruger mere tid på børnepasning end mændene. Disse prioriteringer ikke nødvendigvis et udtryk for kvindeundertrykkelse. Det er vel praktisk og naturligt, at kvinder bliver hjemme i barslen, og at de bruger meget tid sammen med børnene, imens de er små. Barsel og børnepasning skal vel ikke deles 50‐50 for at opnå ligestilling. I det moderne samfund må hvert forældrepar finde en individuel løsning, der passer dem bedst.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2024 Higher Level — © State Examinations Commission.",
+    id: "dan-2024-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2024 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner, hvor du overvejer argumenter for og imod.\nRitt Bjerregaard (dansk politiker): ”Penge er forudsætningen for ligestilling. Kampen er ikke slut før den dag, hvor mænd og kvinder tjener det samme.”\nJohnny Madsen (dansk musiker): ”Børn skal ikke opdrages. Hvis vi holdt fingrene væk, så ville de alligevel lære at gå og tale. Der ville ske det samme uanset hvad forældrene gør.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "I et essay om ”Penge er forudsætningen for ligestilling. Kampen er ikke slut før den dag, hvor mænd og kvinder tjener det samme.” kan man reflektere over relevante temaer og problemstillinger, f.eks. om hvorvidt finansiel ligestilling er nødvendigt for at opnå ligestilling mellem kønnene, og om hvorvidt det overhovedet er en realistisk målsætning.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “Et essay på ca. 300 ord om et af følgende emner: ”Penge er forudsætningen for ligestilling. Kampen er ikke slut før den dag, hvor mænd og kvinder tjener det samme.” og ”Børn skal ikke opdrages. Hvis vi holdt fingrene væk, så ville de alligevel lære at gå og tale. Der ville ske det samme uanset hvad forældrene gør.” Essayet skal være velskrevet, relevant i forhold til sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog. Essayet skal indeholde relevante abstrakte og filosofiske refleksioner, rationel argumentation samt en fokuseret konklusion.”." },
+    { id: "r-2", kind: "point", verbatim: "I et essay om ”Børn skal ikke opdrages. Hvis vi holdt fingrene væk, så ville de alligevel lære at gå og tale. Der ville ske det samme uanset hvad forældrene gør.” kan man reflektere over relevante temaer og problemstillinger, f.eks. om hvorvidt børn har mest gavn af en fri opdragelse eller en autoritær opdragelse, og om hvorvidt det er arv eller miljø, der påvirker mennesket mest i dets udvikling fra barn til voksen.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC038ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2025 Higher Level — © State Examinations Commission.",
