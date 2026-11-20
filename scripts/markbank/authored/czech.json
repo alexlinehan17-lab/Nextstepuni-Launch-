@@ -6723,6 +6723,615 @@
   }
  },
  {
+  "id": "cs-2020-hl-i-2",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2020,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "popiste-zaklade-tex-rozdil-oznacovani-velikosti",
+  "questionRef": "2020 HL Section I Q2",
+  "questionText": "Popište na základě tex tu rozdíl v označování velikostí v minulosti a v současnosti.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dříve se velikosti nijak neoznačovaly, protože oblečení se šilo na míru u krejčího nebo švadleny. V současné době je oblečení šito v normovaných velikostech, do kterých ale spousta lidí vůbec nezapadá, protože samozřejmě každý je jiný.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2020-hl-i-3",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2020,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "popiste-zaklade-textu-politiku-retezcu-vzhledem",
+  "questionRef": "2020 HL Section I Q3",
+  "questionText": "Popište na základě textu politiku řetězců vzhledem k označování velikostí. Proč uplatňují tuto politiku?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lidé, zejména ženy, se zvětšují. Ale není to dobrovolně a spousta žen s tím má veliký problém, výrobci tedy oblečení označí stejně, ale velikost trochu zvětší, aby zákazníci nepropadali panice, že přibrali. Důležité je, aby zákazníci dále nakupovali. Na druhou stranu obchody, které prodávají oblečení pro mladé, velikosti zmenšují, což vede mnoho mladých dívek k představě, že když se toho oblečení nevejdou, není s nimi něco v pořádku.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2020-hl-i-4",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2020,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "jakou-mate-velikost-neexistuje-strasnejsi-otazka",
+  "questionRef": "2020 HL Section I Q4",
+  "questionText": "„Jakou máte velikost?… Neexistuje strašnější otázka.“ Popište s odkazy k textu, proč je tato otázka považována za strašnou.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tím, že jsou postavy a velikosti normované, je jasné, jakou velikost si v obchodě musíme koupit. A protože se všeobecně ví, že „standard“ je velikost 34 nebo 36, protože to mají všechny modelky, každý chce pasovat do této velikosti. Proto se lidé stydí, když musejí přiznat, že se do těchto velikostí nevejdou a musí kupovat větší. Často si proto koupí menší oblečení, jen aby do něj zhubli.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2020-hl-i-5",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2020,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "jake-jsou-prakticke-dusledky-pro-zeny",
+  "questionRef": "2020 HL Section I Q5",
+  "questionText": "Jaké jsou praktické důsledky pro ženy pramenící ze způsobu označování oblečení. Popište svůj vlastní názor na tento způsob.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Velmi mnoho mladých dívek propadá zoufalství, protože všechno oblečení v obchodě je jim malé, znervózní je to, znejistí, často se pak vrhají do různých diet, aby zhubly a vešly se do velikosti 34, protože pokud má všechno v obchodě tuto velikost, tak je to přece normální být tak takhle hubený. Ženy středního věku si potom stěžují, že na sebe v obchodě nemůžou vůbec nic sehnat, protože jim oblečení z běžných řetězců vůbec nesedí.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Vlastní názor: vlastními slovy, bez opisovaných frází z textu.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2020-hl-i-6",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2020,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "jaky-projekt-zaklade-textu-zahajilo-americke",
+  "questionRef": "2020 HL Section I Q6",
+  "questionText": "Jaký projekt - na základě textu - zahájilo americké ministerstvo zemědělství v polovině třicátých let 20. století? Vysvětlete svůj názor na tento projekt.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cílem tohoto projektu bylo vytvořit na základě změření většího množství žen průměrnou postavu a jednotný systém, podle kterého se bude konfekce šít, aby ženy měli jistotu, že jim oblečení určité velikosti bude sedět.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Vlastní názor: vlastními slovy, bez opisování frází z textu.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2020-hl-ii",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2020,
+  "section": "II",
+  "topicId": "czech-1-0",
+  "conceptId": "ale-jsme-jimi-nechali-znejistit-pochybujeme",
+  "questionRef": "2020 HL Section II",
+  "questionText": "„Ale to, že jsme se jimi nechali znejistit a pochybujeme kvůli nim sami nad sebou, je náš problém.“ Napište komentář (minimum 100 slov), ve kterém vysvětlíte svůj názor na toto tvrzení.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Vlastní názor vlastními slovy, bez opisování frází z textu.",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pravidla: gramatika, pravopis – 10 %.",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”. The scheme prints, as examples, not a checklist: “Souhlas, nesouhlas. Mnoho dívek a mladých žen má psychické problémy a diagnózu anorexie, protože se nechaly znejistit reklamou a mediální masáží o ideální postavě. Snaží se vypadat stejně jako modelky a obléct stejně malou velikost oblečení. Zapomínají přitom na svoji individualitu a možnosti. Nechají se úplně pohltit a domnívají se, že pokud nebudou mít tu správnou velikost, budou méněcenné a horší než ty, které ji mají.”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ČÁST 2",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2020-hl-iii-1",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2020,
+  "section": "III",
+  "topicId": "czech-1-0",
+  "conceptId": "moda-zrcadlem-ktere-odrazi-nasi-kulturu",
+  "questionRef": "2020 HL Section III Q1",
+  "questionText": "Napište esej (minimum 300 slov) na jedno z následujících témat: Móda je zrcadlem, které odráží naši kulturu a společnost.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pravidla: gramatika, pravopis – 10 %.",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "cs-2020-hl-iii-2",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2020,
+  "section": "III",
+  "topicId": "czech-1-0",
+  "conceptId": "lide-ukazuji-dobe-krize-jak-svoje",
+  "questionRef": "2020 HL Section III Q2",
+  "questionText": "Napište esej (minimum 300 slov) na jedno z následujících témat: Lidé ukazují v době krize jak svoje nejlepší tak i nejhorsi stranky.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pravidla: gramatika, pravopis – 10 %.",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”. The scheme reprints this title as: “Lidé ukazují v době krize jak svoje nejlepší tak i nejhorší stránky.”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "cs-2021-hl-i-1",
   "subjectId": "czech",
   "level": "higher",
