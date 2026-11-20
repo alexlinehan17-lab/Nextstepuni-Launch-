@@ -5030,7 +5030,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-la-1", topicId: "italian-3-1", conceptId: "advertisement-about",
     section: "L", questionRef: "2026 OL Section LA Q1",
@@ -5066,7 +5066,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-la-2", topicId: "italian-3-1", conceptId: "italy-experiencing",
     section: "L", questionRef: "2026 OL Section LA Q2",
@@ -5102,7 +5102,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-la-3", topicId: "italian-3-1", conceptId: "volunteers-will-read",
     section: "L", questionRef: "2026 OL Section LA Q3",
@@ -5138,7 +5138,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-la-4", topicId: "italian-3-1", conceptId: "deposit-team",
     section: "L", questionRef: "2026 OL Section LA Q4",
@@ -5174,7 +5174,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-la-5", topicId: "italian-3-1", conceptId: "stefano-looking-best",
     section: "L", questionRef: "2026 OL Section LA Q5",
@@ -5210,7 +5210,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-la-6", topicId: "italian-3-1", conceptId: "comites-members-elected",
     section: "L", questionRef: "2026 OL Section LA Q6",
@@ -5246,7 +5246,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-la-7", topicId: "italian-3-1", conceptId: "recommended-that-travel-concert",
     section: "L", questionRef: "2026 OL Section LA Q7",
@@ -5282,7 +5282,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-la-8", topicId: "italian-3-1", conceptId: "news-item-about",
     section: "L", questionRef: "2026 OL Section LA Q8",
@@ -5318,7 +5318,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb1-1", topicId: "italian-3-0", conceptId: "does-laura-feel-about-hosting-exchange",
     section: "L", questionRef: "2026 OL Section LB1 Q1",
@@ -5353,7 +5353,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb1-2", topicId: "italian-3-0", conceptId: "personal-qualities-ensure-positive-hosting-experience",
     section: "L", questionRef: "2026 OL Section LB1 Q2",
@@ -5388,7 +5388,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb1-3", topicId: "italian-3-0", conceptId: "did-marco-friday-nights",
     section: "L", questionRef: "2026 OL Section LB1 Q3",
@@ -5428,7 +5428,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb1-4", topicId: "italian-3-0", conceptId: "when-did-marco-sweden",
     section: "L", questionRef: "2026 OL Section LB1 Q4",
@@ -5463,7 +5463,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb2-1", topicId: "italian-3-0", conceptId: "many-months-did-monica-spend-istituto",
     section: "L", questionRef: "2026 OL Section LB2 Q1",
@@ -5498,7 +5498,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb2-2", topicId: "italian-3-0", conceptId: "were-monica-tasks",
     section: "L", questionRef: "2026 OL Section LB2 Q2",
@@ -5533,7 +5533,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb2-3", topicId: "italian-3-0", conceptId: "does-monica-say-about-grammar",
     section: "L", questionRef: "2026 OL Section LB2 Q3",
@@ -5568,7 +5568,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb2-4", topicId: "italian-3-0", conceptId: "did-monica-create-full",
     section: "L", questionRef: "2026 OL Section LB2 Q4",
@@ -5603,7 +5603,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb3-1", topicId: "italian-3-0", conceptId: "sport-did-paolo-take-when-six",
     section: "L", questionRef: "2026 OL Section LB3 Q1",
@@ -5638,7 +5638,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb3-2", topicId: "italian-3-0", conceptId: "age-did-paolo-stop-playing-semi",
     section: "L", questionRef: "2026 OL Section LB3 Q2",
@@ -5673,7 +5673,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb3-3", topicId: "italian-3-0", conceptId: "when-did-paolo-work-airport",
     section: "L", questionRef: "2026 OL Section LB3 Q3",
@@ -5708,7 +5708,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb3-4", topicId: "italian-3-0", conceptId: "did-paolo-choose-study-sports-psychology",
     section: "L", questionRef: "2026 OL Section LB3 Q4",
@@ -5743,7 +5743,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb3-5", topicId: "italian-3-0", conceptId: "did-paolo-during-his-holidays",
     section: "L", questionRef: "2026 OL Section LB3 Q5",
@@ -5778,7 +5778,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb3-6", topicId: "italian-3-0", conceptId: "professional-sports-people-find-difficult",
     section: "L", questionRef: "2026 OL Section LB3 Q6",
@@ -5813,7 +5813,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb3-7", topicId: "italian-3-0", conceptId: "where-has-paolo-been-giving-his",
     section: "L", questionRef: "2026 OL Section LB3 Q7",
@@ -5850,7 +5850,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2026 Ordinary Level — © State Examinations Commission.",
     id: "it-2026-ol-lb3-8", topicId: "italian-3-0", conceptId: "who-will-help-paolo-create-his",
     section: "L", questionRef: "2026 OL Section LB3 Q8",
@@ -6172,7 +6172,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-la-1", topicId: "italian-3-1", conceptId: "following-languages-mentioned",
     section: "L", questionRef: "2025 OL Section LA Q1",
@@ -6208,7 +6208,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-la-2", topicId: "italian-3-1", conceptId: "enrico-offers-take-care",
     section: "L", questionRef: "2025 OL Section LA Q2",
@@ -6244,7 +6244,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-la-3", topicId: "italian-3-1", conceptId: "advertisement-about",
     section: "L", questionRef: "2025 OL Section LA Q3",
@@ -6280,7 +6280,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-la-4", topicId: "italian-3-1", conceptId: "weather-forecast-mentions",
     section: "L", questionRef: "2025 OL Section LA Q4",
@@ -6316,7 +6316,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-la-5", topicId: "italian-3-1", conceptId: "appliances-mentioned",
     section: "L", questionRef: "2025 OL Section LA Q5",
@@ -6352,7 +6352,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-la-6", topicId: "italian-3-1", conceptId: "festival-lasts",
     section: "L", questionRef: "2025 OL Section LA Q6",
@@ -6388,7 +6388,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-la-7", topicId: "italian-3-1", conceptId: "news-item-mentions",
     section: "L", questionRef: "2025 OL Section LA Q7",
@@ -6424,7 +6424,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-la-8", topicId: "italian-3-1", conceptId: "other-than-italy-county-mentioned",
     section: "L", questionRef: "2025 OL Section LA Q8",
@@ -6460,7 +6460,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb1-1", topicId: "italian-3-0", conceptId: "long-has-paola-prepared-maths-competition",
     section: "L", questionRef: "2025 OL Section LB1 Q1",
@@ -6495,7 +6495,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb1-2", topicId: "italian-3-0", conceptId: "many-categories-there-competition",
     section: "L", questionRef: "2025 OL Section LB1 Q2",
@@ -6530,7 +6530,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb1-3", topicId: "italian-3-0", conceptId: "about-final",
     section: "L", questionRef: "2025 OL Section LB1 Q3",
@@ -6565,7 +6565,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb1-4", topicId: "italian-3-0", conceptId: "provided-organisation-those-who-get-through",
     section: "L", questionRef: "2025 OL Section LB1 Q4",
@@ -6600,7 +6600,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb2-1", topicId: "italian-3-0", conceptId: "does-lisa-want-spend-her-summer",
     section: "L", questionRef: "2025 OL Section LB2 Q1",
@@ -6638,7 +6638,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb2-2", topicId: "italian-3-0", conceptId: "does-samuele-plan-when-wexford",
     section: "L", questionRef: "2025 OL Section LB2 Q2",
@@ -6673,7 +6673,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb2-3", topicId: "italian-3-0", conceptId: "sports-available-afternoon",
     section: "L", questionRef: "2025 OL Section LB2 Q3",
@@ -6708,7 +6708,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb2-4", topicId: "italian-3-0", conceptId: "where-will-samuele-stay",
     section: "L", questionRef: "2025 OL Section LB2 Q4",
@@ -6743,7 +6743,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb3-1", topicId: "italian-3-0", conceptId: "about-citt-pedala",
     section: "L", questionRef: "2025 OL Section LB3 Q1",
@@ -6778,7 +6778,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb3-2", topicId: "italian-3-0", conceptId: "time-will-event-start",
     section: "L", questionRef: "2025 OL Section LB3 Q2",
@@ -6813,7 +6813,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb3-3", topicId: "italian-3-0", conceptId: "where-meeting-point",
     section: "L", questionRef: "2025 OL Section LB3 Q3",
@@ -6848,7 +6848,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb3-4", topicId: "italian-3-0", conceptId: "much-money-participants-encouraged-donate",
     section: "L", questionRef: "2025 OL Section LB3 Q4",
@@ -6883,7 +6883,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb3-5", topicId: "italian-3-0", conceptId: "when-does-event-take-place",
     section: "L", questionRef: "2025 OL Section LB3 Q5",
@@ -6918,7 +6918,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb3-6", topicId: "italian-3-0", conceptId: "about-event-organisers",
     section: "L", questionRef: "2025 OL Section LB3 Q6",
@@ -6953,7 +6953,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb3-7", topicId: "italian-3-0", conceptId: "services-does-association-offer",
     section: "L", questionRef: "2025 OL Section LB3 Q7",
@@ -6988,7 +6988,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2025 Ordinary Level — © State Examinations Commission.",
     id: "it-2025-ol-lb3-8", topicId: "italian-3-0", conceptId: "about-people-that-wish-hire",
     section: "L", questionRef: "2025 OL Section LB3 Q8",
@@ -7298,7 +7298,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-la-1", topicId: "italian-3-1", conceptId: "news-item-about-celebrating",
     section: "L", questionRef: "2024 OL Section LA Q1",
@@ -7334,7 +7334,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-la-2", topicId: "italian-3-1", conceptId: "following-nationalities-mentioned",
     section: "L", questionRef: "2024 OL Section LA Q2",
@@ -7370,7 +7370,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-la-3", topicId: "italian-3-1", conceptId: "colour-associated-with-newspaper",
     section: "L", questionRef: "2024 OL Section LA Q3",
@@ -7406,7 +7406,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-la-4", topicId: "italian-3-1", conceptId: "weather-forecast-day",
     section: "L", questionRef: "2024 OL Section LA Q4",
@@ -7442,7 +7442,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-la-5", topicId: "italian-3-1", conceptId: "initiative-has-been-running-since",
     section: "L", questionRef: "2024 OL Section LA Q5",
@@ -7478,7 +7478,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-la-6", topicId: "italian-3-1", conceptId: "award-best",
     section: "L", questionRef: "2024 OL Section LA Q6",
@@ -7514,7 +7514,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-la-7", topicId: "italian-3-1", conceptId: "announcement-tickets",
     section: "L", questionRef: "2024 OL Section LA Q7",
@@ -7550,7 +7550,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-la-8", topicId: "italian-3-1", conceptId: "special-offer-relates",
     section: "L", questionRef: "2024 OL Section LA Q8",
@@ -7586,7 +7586,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb1-1", topicId: "italian-3-0", conceptId: "whom-giulia-going-buy-present",
     section: "L", questionRef: "2024 OL Section LB1 Q1",
@@ -7621,7 +7621,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb1-2", topicId: "italian-3-0", conceptId: "did-giulia-not-hear-her-phone",
     section: "L", questionRef: "2024 OL Section LB1 Q2",
@@ -7656,7 +7656,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb1-3", topicId: "italian-3-0", conceptId: "where-did-giulia-have-appointment",
     section: "L", questionRef: "2024 OL Section LB1 Q3",
@@ -7691,7 +7691,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb1-4", topicId: "italian-3-0", conceptId: "when-did-giulia-get-her-phone",
     section: "L", questionRef: "2024 OL Section LB1 Q4",
@@ -7726,7 +7726,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb2-1", topicId: "italian-3-0", conceptId: "where-does-giada-work-mornings",
     section: "L", questionRef: "2024 OL Section LB2 Q1",
@@ -7761,7 +7761,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb2-2", topicId: "italian-3-0", conceptId: "who-can-benefit-from-bank-account",
     section: "L", questionRef: "2024 OL Section LB2 Q2",
@@ -7796,7 +7796,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb2-3", topicId: "italian-3-0", conceptId: "about-giada-work-contract",
     section: "L", questionRef: "2024 OL Section LB2 Q3",
@@ -7831,7 +7831,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb2-4", topicId: "italian-3-0", conceptId: "family-member-lives-canada",
     section: "L", questionRef: "2024 OL Section LB2 Q4",
@@ -7866,7 +7866,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb3-1", topicId: "italian-3-0", conceptId: "instruments-does-riccardo-play",
     section: "L", questionRef: "2024 OL Section LB3 Q1",
@@ -7901,7 +7901,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb3-2", topicId: "italian-3-0", conceptId: "subject-did-riccardo-teach",
     section: "L", questionRef: "2024 OL Section LB3 Q2",
@@ -7936,7 +7936,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb3-3", topicId: "italian-3-0", conceptId: "where-does-riccardo-usually-tour",
     section: "L", questionRef: "2024 OL Section LB3 Q3",
@@ -7971,7 +7971,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb3-4", topicId: "italian-3-0", conceptId: "type-restaurant-riccardo-friend-looking",
     section: "L", questionRef: "2024 OL Section LB3 Q4",
@@ -8006,7 +8006,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb3-5", topicId: "italian-3-0", conceptId: "when-riccardo-last-dublin",
     section: "L", questionRef: "2024 OL Section LB3 Q5",
@@ -8041,7 +8041,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb3-6", topicId: "italian-3-0", conceptId: "does-riccardo-like-when-ireland",
     section: "L", questionRef: "2024 OL Section LB3 Q6",
@@ -8076,7 +8076,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb3-7", topicId: "italian-3-0", conceptId: "does-riccardo-say-about-music",
     section: "L", questionRef: "2024 OL Section LB3 Q7",
@@ -8111,7 +8111,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2024 Ordinary Level — © State Examinations Commission.",
     id: "it-2024-ol-lb3-8", topicId: "italian-3-0", conceptId: "where-ireland-riccardo-looking-forward-going",
     section: "L", questionRef: "2024 OL Section LB3 Q8",
@@ -8421,7 +8421,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-la-1", topicId: "italian-3-1", conceptId: "shop-sells",
     section: "L", questionRef: "2023 OL Section LA Q1",
@@ -8457,7 +8457,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-la-2", topicId: "italian-3-1", conceptId: "film-screened",
     section: "L", questionRef: "2023 OL Section LA Q2",
@@ -8493,7 +8493,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-la-3", topicId: "italian-3-1", conceptId: "news-item-about",
     section: "L", questionRef: "2023 OL Section LA Q3",
@@ -8529,7 +8529,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-la-4", topicId: "italian-3-1", conceptId: "botanic-gardens-padua-were-established",
     section: "L", questionRef: "2023 OL Section LA Q4",
@@ -8565,7 +8565,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-la-5", topicId: "italian-3-1", conceptId: "advertisement-job",
     section: "L", questionRef: "2023 OL Section LA Q5",
@@ -8601,7 +8601,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-la-6", topicId: "italian-3-1", conceptId: "weather-announcement-month",
     section: "L", questionRef: "2023 OL Section LA Q6",
@@ -8637,7 +8637,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-la-7", topicId: "italian-3-1", conceptId: "boarding-will-start",
     section: "L", questionRef: "2023 OL Section LA Q7",
@@ -8673,7 +8673,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-la-8", topicId: "italian-3-1", conceptId: "news-item-about",
     section: "L", questionRef: "2023 OL Section LA Q8",
@@ -8709,7 +8709,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb1-1", topicId: "italian-3-0", conceptId: "who-marco-going-holiday-with",
     section: "L", questionRef: "2023 OL Section LB1 Q1",
@@ -8744,7 +8744,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb1-2", topicId: "italian-3-0", conceptId: "activities-can-cinque-terre",
     section: "L", questionRef: "2023 OL Section LB1 Q2",
@@ -8779,7 +8779,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb1-3", topicId: "italian-3-0", conceptId: "type-accommodation-have-booked",
     section: "L", questionRef: "2023 OL Section LB1 Q3",
@@ -8814,7 +8814,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb1-4", topicId: "italian-3-0", conceptId: "reason-maria-prefers-travelling-train",
     section: "L", questionRef: "2023 OL Section LB1 Q4",
@@ -8849,7 +8849,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb2-1", topicId: "italian-3-0", conceptId: "long-did-anna-have-rest",
     section: "L", questionRef: "2023 OL Section LB2 Q1",
@@ -8884,7 +8884,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb2-2", topicId: "italian-3-0", conceptId: "who-worried-about-anna",
     section: "L", questionRef: "2023 OL Section LB2 Q2",
@@ -8919,7 +8919,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb2-3", topicId: "italian-3-0", conceptId: "does-anna-say-about-her-team",
     section: "L", questionRef: "2023 OL Section LB2 Q3",
@@ -8954,7 +8954,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb2-4", topicId: "italian-3-0", conceptId: "other-symptom-anna-had-after-she",
     section: "L", questionRef: "2023 OL Section LB2 Q4",
@@ -8989,7 +8989,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb3-1", topicId: "italian-3-0", conceptId: "where-did-sabrina-work-experience",
     section: "L", questionRef: "2023 OL Section LB3 Q1",
@@ -9024,7 +9024,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb3-2", topicId: "italian-3-0", conceptId: "when-did-sabrina-work-waitress",
     section: "L", questionRef: "2023 OL Section LB3 Q2",
@@ -9059,7 +9059,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb3-3", topicId: "italian-3-0", conceptId: "describe-area-where-sabrina-lived",
     section: "L", questionRef: "2023 OL Section LB3 Q3",
@@ -9094,7 +9094,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb3-4", topicId: "italian-3-0", conceptId: "nationalities-mentioned",
     section: "L", questionRef: "2023 OL Section LB3 Q4",
@@ -9129,7 +9129,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb3-5", topicId: "italian-3-0", conceptId: "time-italians-usually-finish-work",
     section: "L", questionRef: "2023 OL Section LB3 Q5",
@@ -9164,7 +9164,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb3-6", topicId: "italian-3-0", conceptId: "did-sabrina-her-free-time",
     section: "L", questionRef: "2023 OL Section LB3 Q6",
@@ -9199,7 +9199,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb3-7", topicId: "italian-3-0", conceptId: "irish-foods-sabrina-liked",
     section: "L", questionRef: "2023 OL Section LB3 Q7",
@@ -9234,7 +9234,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2023 Ordinary Level — © State Examinations Commission.",
     id: "it-2023-ol-lb3-8", topicId: "italian-3-0", conceptId: "did-sabrina-miss-while-ireland",
     section: "L", questionRef: "2023 OL Section LB3 Q8",
@@ -9548,7 +9548,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-la-1", topicId: "italian-3-1", conceptId: "giorgio-parisi-born",
     section: "L", questionRef: "2022 OL Section LA Q1",
@@ -9584,7 +9584,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-la-2", topicId: "italian-3-1", conceptId: "train-has-been-delayed",
     section: "L", questionRef: "2022 OL Section LA Q2",
@@ -9620,7 +9620,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-la-3", topicId: "italian-3-1", conceptId: "sciocola",
     section: "L", questionRef: "2022 OL Section LA Q3",
@@ -9656,7 +9656,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-la-4", topicId: "italian-3-1", conceptId: "north-italy-there-will",
     section: "L", questionRef: "2022 OL Section LA Q4",
@@ -9692,7 +9692,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-la-5", topicId: "italian-3-1", conceptId: "announcement-about",
     section: "L", questionRef: "2022 OL Section LA Q5",
@@ -9728,7 +9728,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-la-6", topicId: "italian-3-1", conceptId: "initiative-about",
     section: "L", questionRef: "2022 OL Section LA Q6",
@@ -9764,7 +9764,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-la-7", topicId: "italian-3-1", conceptId: "news-item-about",
     section: "L", questionRef: "2022 OL Section LA Q7",
@@ -9800,7 +9800,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-la-8", topicId: "italian-3-1", conceptId: "city-council-crema-has-adopted",
     section: "L", questionRef: "2022 OL Section LA Q8",
@@ -9836,7 +9836,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb1-1", topicId: "italian-3-0", conceptId: "time-will-meeting-start",
     section: "L", questionRef: "2022 OL Section LB1 Q1",
@@ -9871,7 +9871,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb1-2", topicId: "italian-3-0", conceptId: "who-project-aimed",
     section: "L", questionRef: "2022 OL Section LB1 Q2",
@@ -9908,7 +9908,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb1-3", topicId: "italian-3-0", conceptId: "household-chores-mentioned",
     section: "L", questionRef: "2022 OL Section LB1 Q3",
@@ -9943,7 +9943,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb1-4", topicId: "italian-3-0", conceptId: "other-activity-included-project",
     section: "L", questionRef: "2022 OL Section LB1 Q4",
@@ -9978,7 +9978,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb2-1", topicId: "italian-3-0", conceptId: "agata-feeling",
     section: "L", questionRef: "2022 OL Section LB2 Q1",
@@ -10013,7 +10013,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb2-2", topicId: "italian-3-0", conceptId: "age-children-will-agata-organise-art",
     section: "L", questionRef: "2022 OL Section LB2 Q2",
@@ -10048,7 +10048,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb2-3", topicId: "italian-3-0", conceptId: "item-agata-will-use-her-art",
     section: "L", questionRef: "2022 OL Section LB2 Q3",
@@ -10083,7 +10083,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb2-4", topicId: "italian-3-0", conceptId: "has-positive-effect-people-wellbeing",
     section: "L", questionRef: "2022 OL Section LB2 Q4",
@@ -10118,7 +10118,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb3-1", topicId: "italian-3-0", conceptId: "month-did-piero-start-his-sailing",
     section: "L", questionRef: "2022 OL Section LB3 Q1",
@@ -10153,7 +10153,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb3-2", topicId: "italian-3-0", conceptId: "when-did-piero-start-sailing",
     section: "L", questionRef: "2022 OL Section LB3 Q2",
@@ -10188,7 +10188,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb3-3", topicId: "italian-3-0", conceptId: "documentary-about",
     section: "L", questionRef: "2022 OL Section LB3 Q3",
@@ -10223,7 +10223,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb3-4", topicId: "italian-3-0", conceptId: "people-ask-piero",
     section: "L", questionRef: "2022 OL Section LB3 Q4",
@@ -10258,7 +10258,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb3-5", topicId: "italian-3-0", conceptId: "dangers-being-sea",
     section: "L", questionRef: "2022 OL Section LB3 Q5",
@@ -10293,7 +10293,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb3-6", topicId: "italian-3-0", conceptId: "other-than-fruit-foods-that-piero",
     section: "L", questionRef: "2022 OL Section LB3 Q6",
@@ -10328,7 +10328,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb3-7", topicId: "italian-3-0", conceptId: "would-piero-like-future",
     section: "L", questionRef: "2022 OL Section LB3 Q7",
@@ -10363,7 +10363,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2022 Ordinary Level — © State Examinations Commission.",
     id: "it-2022-ol-lb3-8", topicId: "italian-3-0", conceptId: "where-piero-going-after-sailing-trip",
     section: "L", questionRef: "2022 OL Section LB3 Q8",
@@ -10681,7 +10681,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-la-1", topicId: "italian-3-1", conceptId: "when-will-european-day-parks-celebrated",
     section: "L", questionRef: "2021 OL Section LA Q1",
@@ -10717,7 +10717,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-la-2", topicId: "italian-3-1", conceptId: "new-google-map-function-available",
     section: "L", questionRef: "2021 OL Section LA Q2",
@@ -10753,7 +10753,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-la-3", topicId: "italian-3-1", conceptId: "heavy-rain-will-affect",
     section: "L", questionRef: "2021 OL Section LA Q3",
@@ -10789,7 +10789,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-la-4", topicId: "italian-3-1", conceptId: "long-should-spend-sun-beginning-holidays",
     section: "L", questionRef: "2021 OL Section LA Q4",
@@ -10825,7 +10825,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-la-5", topicId: "italian-3-1", conceptId: "new-offices-located",
     section: "L", questionRef: "2021 OL Section LA Q5",
@@ -10861,7 +10861,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-la-6", topicId: "italian-3-1", conceptId: "many-hours-year-people-spend-traffic",
     section: "L", questionRef: "2021 OL Section LA Q6",
@@ -10897,7 +10897,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-la-7", topicId: "italian-3-1", conceptId: "dolphin-adoption-kit-includes",
     section: "L", questionRef: "2021 OL Section LA Q7",
@@ -10933,7 +10933,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-la-8", topicId: "italian-3-1", conceptId: "announcement-about",
     section: "L", questionRef: "2021 OL Section LA Q8",
@@ -10969,7 +10969,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb1-1", topicId: "italian-3-0", conceptId: "when-michele-his-friends-going-bike",
     section: "L", questionRef: "2021 OL Section LB1 Q1",
@@ -11004,7 +11004,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb1-2", topicId: "italian-3-0", conceptId: "describe-michele-brother-bike",
     section: "L", questionRef: "2021 OL Section LB1 Q2",
@@ -11039,7 +11039,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb1-3", topicId: "italian-3-0", conceptId: "food-does-michele-suggest-bring-picnic",
     section: "L", questionRef: "2021 OL Section LB1 Q3",
@@ -11074,7 +11074,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb1-4", topicId: "italian-3-0", conceptId: "will-afternoon",
     section: "L", questionRef: "2021 OL Section LB1 Q4",
@@ -11109,7 +11109,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb2-1", topicId: "italian-3-0", conceptId: "who-davide-going-visit",
     section: "L", questionRef: "2021 OL Section LB2 Q1",
@@ -11144,7 +11144,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb2-2", topicId: "italian-3-0", conceptId: "item-did-sara-lose",
     section: "L", questionRef: "2021 OL Section LB2 Q2",
@@ -11179,7 +11179,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb2-3", topicId: "italian-3-0", conceptId: "place-sara-rang",
     section: "L", questionRef: "2021 OL Section LB2 Q3",
@@ -11214,7 +11214,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb2-4", topicId: "italian-3-0", conceptId: "who-found-missing-item",
     section: "L", questionRef: "2021 OL Section LB2 Q4",
@@ -11249,7 +11249,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb3-1", topicId: "italian-3-0", conceptId: "subject-does-laura-teach",
     section: "L", questionRef: "2021 OL Section LB3 Q1",
@@ -11284,7 +11284,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb3-2", topicId: "italian-3-0", conceptId: "when-did-laura-exchange-italy",
     section: "L", questionRef: "2021 OL Section LB3 Q2",
@@ -11320,7 +11320,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb3-3", topicId: "italian-3-0", conceptId: "nice-eat-outside-italy",
     section: "L", questionRef: "2021 OL Section LB3 Q3",
@@ -11355,7 +11355,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb3-4", topicId: "italian-3-0", conceptId: "does-she-like-about-italy",
     section: "L", questionRef: "2021 OL Section LB3 Q4",
@@ -11390,7 +11390,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb3-5", topicId: "italian-3-0", conceptId: "where-did-laura-friends-emigrate-countries",
     section: "L", questionRef: "2021 OL Section LB3 Q5",
@@ -11425,7 +11425,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb3-6", topicId: "italian-3-0", conceptId: "when-irish-work-colleagues-meet",
     section: "L", questionRef: "2021 OL Section LB3 Q6",
@@ -11461,7 +11461,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb3-7", topicId: "italian-3-0", conceptId: "long-does-she-want-travel-italy",
     section: "L", questionRef: "2021 OL Section LB3 Q7",
@@ -11496,7 +11496,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2021 Ordinary Level — © State Examinations Commission.",
     id: "it-2021-ol-lb3-8", topicId: "italian-3-0", conceptId: "where-would-laura-like-visit",
     section: "L", questionRef: "2021 OL Section LB3 Q8",
@@ -12672,7 +12672,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-la-1", topicId: "italian-3-1", conceptId: "during-months-will-flight-operate",
     section: "L", questionRef: "2019 OL Section LA Q1",
@@ -12708,7 +12708,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-la-2", topicId: "italian-3-1", conceptId: "where-hostel-located",
     section: "L", questionRef: "2019 OL Section LA Q2",
@@ -12744,7 +12744,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-la-3", topicId: "italian-3-1", conceptId: "new-cycle-route",
     section: "L", questionRef: "2019 OL Section LA Q3",
@@ -12780,7 +12780,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-la-4", topicId: "italian-3-1", conceptId: "following-shops-mentioned",
     section: "L", questionRef: "2019 OL Section LA Q4",
@@ -12816,7 +12816,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-la-5", topicId: "italian-3-1", conceptId: "advertisement-relates",
     section: "L", questionRef: "2019 OL Section LA Q5",
@@ -12852,7 +12852,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-la-6", topicId: "italian-3-1", conceptId: "advertisement-about",
     section: "L", questionRef: "2019 OL Section LA Q6",
@@ -12888,7 +12888,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-la-7", topicId: "italian-3-1", conceptId: "when-will-thunderstorm-hit-north-italy",
     section: "L", questionRef: "2019 OL Section LA Q7",
@@ -12924,7 +12924,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-la-8", topicId: "italian-3-1", conceptId: "who-initiative-aimed",
     section: "L", questionRef: "2019 OL Section LA Q8",
@@ -12960,7 +12960,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb1-1", topicId: "italian-3-0", conceptId: "volunteer-activity-daniele-involved",
     section: "L", questionRef: "2019 OL Section LB1 Q1",
@@ -12998,7 +12998,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb1-2", topicId: "italian-3-0", conceptId: "who-inspired-daniele-volunteer",
     section: "L", questionRef: "2019 OL Section LB1 Q2",
@@ -13034,7 +13034,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb1-3", topicId: "italian-3-0", conceptId: "served-during-break-full",
     section: "L", questionRef: "2019 OL Section LB1 Q3",
@@ -13071,7 +13071,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb1-4", topicId: "italian-3-0", conceptId: "does-daniele-describe-his-teacher",
     section: "L", questionRef: "2019 OL Section LB1 Q4",
@@ -13106,7 +13106,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb2-1", topicId: "italian-3-0", conceptId: "does-sara-feel-after-finishing-her",
     section: "L", questionRef: "2019 OL Section LB2 Q1",
@@ -13141,7 +13141,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb2-2", topicId: "italian-3-0", conceptId: "when-will-sara-interview",
     section: "L", questionRef: "2019 OL Section LB2 Q2",
@@ -13176,7 +13176,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb2-3", topicId: "italian-3-0", conceptId: "long-will-sara-holidays",
     section: "L", questionRef: "2019 OL Section LB2 Q3",
@@ -13211,7 +13211,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb2-4", topicId: "italian-3-0", conceptId: "where-does-sara-wish-visit-while",
     section: "L", questionRef: "2019 OL Section LB2 Q4",
@@ -13246,7 +13246,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb3-1", topicId: "italian-3-0", conceptId: "old-gianfranco",
     section: "L", questionRef: "2019 OL Section LB3 Q1",
@@ -13281,7 +13281,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb3-2", topicId: "italian-3-0", conceptId: "gianfranco-first-job",
     section: "L", questionRef: "2019 OL Section LB3 Q2",
@@ -13317,7 +13317,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb3-3", topicId: "italian-3-0", conceptId: "nationalities-who-visit-lakes-areas",
     section: "L", questionRef: "2019 OL Section LB3 Q3",
@@ -13352,7 +13352,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb3-4", topicId: "italian-3-0", conceptId: "member-gianfranco-family-french",
     section: "L", questionRef: "2019 OL Section LB3 Q4",
@@ -13387,7 +13387,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb3-5", topicId: "italian-3-0", conceptId: "challenge-gianfranco-job",
     section: "L", questionRef: "2019 OL Section LB3 Q5",
@@ -13422,7 +13422,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb3-6", topicId: "italian-3-0", conceptId: "ideal-qualities-this-profession",
     section: "L", questionRef: "2019 OL Section LB3 Q6",
@@ -13457,7 +13457,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb3-7", topicId: "italian-3-0", conceptId: "when-will-gianfranco-open-his-restaurant",
     section: "L", questionRef: "2019 OL Section LB3 Q7",
@@ -13492,7 +13492,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2019, level: "ordinary",
-    paperFileid: "LC013GLP000BV",
+    paperFileid: "LC013GLPA00BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Italian 2019 Ordinary Level — © State Examinations Commission.",
     id: "it-2019-ol-lb3-8", topicId: "italian-3-0", conceptId: "does-gianfranco-wish-live-langhe-region",
     section: "L", questionRef: "2019 OL Section LB3 Q8",

@@ -318,6 +318,18 @@ export function resolvePaperFileid(subjectId, year, level, section, sitting = 'm
     : paperEntry(subjectId, year, level);
   if (!entry?.papers?.length) return null;
   if (subjectId === 'dcg') return dcgBookletFor(entry, section);
+  // A listening card is answered from the Listening Comprehension Test, the
+  // separate booklet the index labels "Aural Paper", never from the written
+  // paper. Italian files its listening as section L; Polish, Portuguese and
+  // Lithuanian file theirs by the test's printed sections, LA to LE. Their
+  // cards resolved to the written paper because nothing below names those
+  // tokens. German and Spanish reach the Aural Paper through build-deck's own
+  // listening branch and are not routed here.
+  if ((subjectId === 'italian' && section === 'L')
+      || (['polish', 'portuguese', 'lithuanian'].includes(subjectId) && /^L[A-E]$/.test(String(section ?? '')))) {
+    const aural = entry.papers.filter(p => /^Aural Paper$/i.test(String(p.label ?? '').trim()));
+    if (aural.length === 1) return stripPdf(aural[0].doc?.f);
+  }
   // One paper for the year means there is nothing to choose between.
   if (entry.papers.length === 1) return stripPdf(entry.papers[0].doc?.f);
   // The older Foundation Irish sitting separates listening from the written
