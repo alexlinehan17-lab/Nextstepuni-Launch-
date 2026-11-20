@@ -195,13 +195,15 @@ class Sitting:
         kind, addr = a['paper'], a['address']
         base = f'mus-{self.year}-{self.tag}'
         if kind == 'listening':
-            # 2018 numbers its parts afresh under each excerpt: "Q1 Excerpt 2(i)".
-            m = re.fullmatch(r'Q(\d)(?: ([AB]))?(?: Excerpt (\d))?((?:\([a-z]+\))*)', addr)
+            # 2018 numbers its parts afresh under each excerpt: "Q1 Excerpt 2(i)". 2011 HL Q6 numbers them afresh
+            # again inside one excerpt, under the printed "The next 8 bars (bars 9–16) ...": "Q6 Excerpt 1 Bars 9–16(i)".
+            m = re.fullmatch(r'Q(\d)(?: ([AB]))?(?: Excerpt (\d))?(?: Bars (\d+)–(\d+))?((?:\([a-z]+\))*)', addr)
             if not m:
                 raise SystemExit(f'listening address {addr!r}')
-            parts = re.findall(r'\(([a-z]+)\)', m.group(4))
+            parts = re.findall(r'\(([a-z]+)\)', m.group(6))
             excerpt = f'x{m.group(3)}' if m.group(3) else ''
-            return '-'.join(x for x in [f'{base}-l', f'q{m.group(1)}', (m.group(2) or '').lower(), excerpt, *parts] if x)
+            bars = f'b{m.group(4)}-{m.group(5)}' if m.group(4) else ''
+            return '-'.join(x for x in [f'{base}-l', f'q{m.group(1)}', (m.group(2) or '').lower(), excerpt, bars, *parts] if x)
         if kind == 'composing':
             # Ordinary Level prints two melodies under one question, "Answer (a) and (b)".
             m = re.fullmatch(r'Section ([AB]) Q(\d)((?:\([a-z]+\))*)', addr)
