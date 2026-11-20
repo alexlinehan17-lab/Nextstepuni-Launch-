@@ -333,19 +333,19 @@
     "refsHash": "ca6f9603134fc99f"
   },
   "finnish": {
-    "cards": 138,
-    "contentHash": "9187fdcf5b5b7267",
-    "coveragePct": 99.4,
-    "covered": 138,
-    "excluded": 29,
+    "cards": 144,
+    "contentHash": "98cf2c2ca58c2b58",
+    "coveragePct": 100.0,
+    "covered": 144,
+    "excluded": 24,
     "leaves": 168,
-    "open": 1,
+    "open": 0,
     "orphans": 0,
     "papers": {
       "count": 13,
       "hash": "f03b7ec1b6337cd6"
     },
-    "refsHash": "889e8ecde680c7a2"
+    "refsHash": "f0e2ac8e029dc0bf"
   },
   "french": {
     "cards": 2286,

@@ -2836,6 +2836,136 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2022 Higher Level — © State Examinations Commission.",
+    id: "fin-2022-hl-i-3", topicId: "finnish-0-1", conceptId: "kuvaa-millainen-kasitys-kasvattamisesta-tekstin-teksti",
+    section: "I", questionRef: "2022 HL Section I Q3",
+    questionText: "Kuvaa, millainen käsitys kasvattamisesta tekstin (teksti 1) kautta esitetään.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tekstissä korostetaan vanhemman roolia kannustajana ja motivaattorina, jonka tehtävä on keskustella ja saada lapsi tavoittelemaan tärkeitä asioita. Vanhempi ei ole vain auktoriteetti, vaan valmentaja.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" The scheme reprints this question as: “Kerro, millainen käsitys kasvattamisesta tekstin (teksti 1) kautta esitetään.”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Finnish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2022 Higher Level — © State Examinations Commission.",
+    id: "fin-2022-hl-i-4", topicId: "finnish-0-1", conceptId: "kerro-omin-sanoin-milla-tavalla-suomalaislasten",
+    section: "I", questionRef: "2022 HL Section I Q4",
+    questionText: "Kerro omin sanoin, millä tavalla suomalaislasten saamat tulokset yllättivät tutkijat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Salmela‐Aro yllättyi hienoisesti siitä, että perisuomalaiseksi hyveeksi mainostettu sisu ei olekaan erityisen suomalainen piirre. Suomalaislapsilla ja ‐nuorilla oli tutkimuksen mukaan vähemmän sisua tai sinnikkyyttä kuin tutkimuksen osallistujilla keskimäärin. ”Suomalainen sisu on myytti ainakin näiden tulosten perusteella”, toteaa Salmela‐Aro.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" The scheme heads its answer: “Tekstissä:”." },
+    { id: "r-2", kind: "point", verbatim: "Tulos tukee Salmela‐Aron mukaan aiempia havaintoja siitä, että perhetaustan merkitys koulumenestyksessä on vahvistunut Suomessa", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "Voimakas jakolinja OECD:n tutkimuksessa oli ikä. Kaikki taidot paitsi jämäkkyys ja suvaitsevaisuus olivat 15‐vuotiailla alempia kuin kymmenenvuotiailla. Salmela‐Aro toteaa: ”Oli aika dramaattinen tulos, että nämä taidot laskevat niin paljon nuoruudessa.”", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Finnish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2022 Higher Level — © State Examinations Commission.",
+    id: "fin-2022-hl-i-5", topicId: "finnish-0-1", conceptId: "tutkimuksen-mukaan-oppijan-ika-sukupuoli-vaikuttavat",
+    section: "I", questionRef: "2022 HL Section I Q5",
+    questionText: "Tutkimuksen mukaan oppijan ikä ja sukupuoli vaikuttavat voimakkaasti siihen, miten koulunkäynnin kokee. Oletko itse havainnut kyseisiä eroja joko omassa koulunkäynnissäsi tai muissa nuorissa?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Salmela‐Aro selittää ikäryhmien välisiä eroja selittää sillä, että etenkin lapsuudesta nuoruuteen varttuvien tyttöjen viihtyminen koulussa vähenee (Sukupuolen merkitys on Suomessa suuri). Nuoruudessa myös käsitys koulun merkityksestä muuttuu realistisemmaksi, kun lapsuuden innostus väistyy (Pienet viihtyvät koulussa paremmin kuin teinit, koska vaatimustason nousu ja oppilaiden väliset erot tulevat selkeimmiksi. Nuori vertaa itseään muihin).", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" The scheme heads its answer: “Vastauksessa kokelaan on ymmärrettävä tekstissä kohta:”." },
+    { id: "r-2", kind: "point", verbatim: "Koulu ei enää ole ainoa kiinnostava paikka ja lapsi oppii näkemään itsensä realistisesti oppijana, joka saa kokea myös pettymyksiä.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Pieni lapsi voi luottaa ja olla utelias, mutta teini suhtautuu kyseisiin piirteisiin jo hieman kriittisemmin. Sitä vastoin oma tahto ja suvaitsevaisuus ovat teineille tärkeitä.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Finnish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2022 Higher Level — © State Examinations Commission.",
+    id: "fin-2022-hl-i-6", topicId: "finnish-0-1", conceptId: "kerro-omin-sanoin-milla-tavalla-psykologisilla",
+    section: "I", questionRef: "2022 HL Section I Q6",
+    questionText: "Kerro omin sanoin, millä tavalla psykologisilla taidoilla on merkitystä koulunkäynnin kannalta.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Psykologiset taidot tukevat kouluoppimista. Kokelas voi luetella tekstissä mainittuja taitoja (uteliaisuus, luottamus, sisu) pohtia niiden merkitystä oppimisen tai elämän kannalta.", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" The scheme reprints this question as: “Kerro omin sanoin, miksi psykologisilla taidoilla on merkitystä koulunkäynnin kannalta.”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Finnish 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2022 Higher Level — © State Examinations Commission.",
+    id: "fin-2022-hl-ii-1", topicId: "finnish-1-1", conceptId: "suomessa-kannustamisen-kulttuuri-ole-hirvean-vahva",
+    section: "II", questionRef: "2022 HL Section II Q1",
+    questionText: "Kirjoita noin 300 sanan essee. Valitse aiheeksi toinen näistä. “Suomessa kannustamisen kulttuuri ei ole hirveän vahva.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Esseen tulee olla rakenteeltaan eheä: johdanto, erilliset käsittelykappaleet sekä päätäntä. Tehtävänannot ovat väitelauseita, joiden sisältöä tulee avata ja pohtia. Oma kanta tulee perustella ja antaa käsitteisiin (kannustamisen kulttuuri, sinnikäs optimisti, tärkeitä elämäntaitoja) sopivia sisältöjä sekä esimerkkejä.", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2022 Higher Level — © State Examinations Commission.",
+    id: "fin-2022-hl-ii-2", topicId: "finnish-1-1", conceptId: "miten-todellinen-ystavyys-syntyy",
+    section: "II", questionRef: "2022 HL Section II Q2",
+    questionText: "Kirjoita noin 300 sanan essee. Valitse aiheeksi toinen näistä. Miten todellinen ystävyys syntyy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\" Under the two titles the scheme prints only: “Esseen tulee olla rakenteeltaan eheä: johdanto, erilliset käsittelykappaleet sekä päätäntä. Tehtävänannot ovat väitelauseita, joiden sisältöä tulee avata ja pohtia. Oma kanta tulee perustella ja antaa käsitteisiin (kannustamisen kulttuuri, sinnikäs optimisti, tärkeitä elämäntaitoja) sopivia sisältöjä sekä esimerkkejä.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC049ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2024 Higher Level — © State Examinations Commission.",

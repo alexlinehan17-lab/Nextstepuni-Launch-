@@ -4355,6 +4355,16 @@ ADDED_ASKS = {
         {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
          'cut': (4, '1) Keegi ei ole saar', 'saar '), 'alternative': True},
     ],
+    # Finnish 2022 prints essay title 1 as "1.“Suomessa kannustamisen kulttuuri
+    # ei ole hirveän vahva.”" (p4 y709) with no space after "1.", which the
+    # walker does not take for a title number, so the census keys only title 2
+    # (II2: a two-part sitting, Part II is the essay). Title 1 is the words
+    # after its printed "1."; an alternative of Part II (40/70), whose total the
+    # census already holds.
+    ('finnish', 2022, 'hl'): [
+        {'key': ['II', 1, None, None], 'label': 'Section II Q1', 'before': ['II', 2, None, None],
+         'cut': (4, '1.\u201cSuomessa kannustamisen', '1.'), 'alternative': True},
+    ],
 }
 
 
