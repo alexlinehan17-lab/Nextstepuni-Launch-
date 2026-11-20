@@ -2822,4 +2822,54 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2025 Higher Level — © State Examinations Commission.",
+    id: "dan-2025-hl-ii-1", topicId: "danish-1-0", conceptId: "har-tilladt-digital-kultur-hvis-mest",
+    section: "II", questionRef: "2025 HL Section II Q1",
+    questionText: "”Vi har tilladt en digital kultur, hvis mest iøjefaldende konsekvens er, at børn og unge mistrives og har svært ved at finde retning og mening i deres tilværelse.” Skriv en kommentar på 100-150 ord, hvor du diskuterer synspunktet.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tekstens forfattere etablerer en årsagssammenhæng mellem forældregenerationens manglende ansvarstagen og passivet mht. techindustriens indflydelse og børn og unges mistrivsel, som kan ende i eksistentielle kriser. Vi har brug for en generel holdningsændring, hvor det ikke længere betragtes som en rettighed at være på digitale platforme uden begrænsninger og reguleringer. De voksne skal tage ansvar og beskytte børnene mod digitale stimulanser. Undersøgelser viser, at børn og unge i dag har svært ved at finde venner, og flere føler sig ensomme, fordi de mangler de nødvendige sociale kompetencer. Mobning, herunder digital mobning, er også blevet et større problem. Vi ser også en stor fremgang i psykiske diagnoser, som angst, ADHD og selvskadeligt adfærd, som måske også kan kobles til børn og unges stigende skærmbrug. Mange unge og børn bliver ofte udsat for voldsomt indhold på digitale platforme, herunder vold, som kan være psykisk skadeligt. Derudover bombarderes de af billeder af perfekte mennesker på de sociale medier, som de spejler sig i, som kan udløse eksistentielle kriser, hvis de ikke kan leve op til perfekthedsidealet. Tiktok og Youtube har afløst fjernsynet og giver de unge en endeløs strøm af korte videoer, der er tilpasset deres interesser, hvilket er med til at holde dem fanget af deres skærm.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2025 Higher Level — © State Examinations Commission.",
+    id: "dan-2025-hl-iii-1", topicId: "danish-1-1", conceptId: "brugen-mobiltelefoner-skolen-skal-forbydes-eller",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "Skriv et essay på minimum 300 ord om ét af disse to emner, hvor du overvejer argumenter for og imod. ”Brugen af mobiltelefoner i skolen skal forbydes.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "I et essay om ”Brugen af mobiltelefoner i skolen skal forbydes.” kan man reflektere over fordelene og ulemperne ved brugen af mobiltelefoner i skolen. Fordelene kunne være at stress, afhængighed og cybermobning mindskes. Elevernes fællesskab styrkes i frikvartererne, og de fokuserer mere på undervisningen. Men på de anden side er digitalisering et grundvilkår i vores samfund, og derfor skal skolen følge med resten af verdenen. Eleverne skal således lære at leve og agere i en digital verden, og mobiltelefoner skal derfor integreres mere i undervisningen for at styrke elevernes digitale kompetencer.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “Et essay på min. 300 ord om et af følgende emner: ”Brugen af mobiltelefoner i skolen skal forbydes.” og ”Lykke er når ens forventninger svarer til virkeligheden.” Essayet skal være velskrevet, relevant i forhold til sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog. Essayet skal indeholde relevante abstrakte og filosofiske refleksioner, rationel argumentation samt en fokuseret konklusion.”." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2025 Higher Level — © State Examinations Commission.",
+    id: "dan-2025-hl-iii-2", topicId: "danish-1-1", conceptId: "troels-vedal-dansk-forfatter-lykke-ens",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "Skriv et essay på minimum 300 ord om ét af disse to emner, hvor du overvejer argumenter for og imod. Troels Kløvedal (dansk forfatter): ”Lykke er når ens forventninger svarer til virkeligheden.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "I et essay om ”Lykke er når ens forventninger svarer til virkeligheden.” kan man reflektere over relevante temaer og problemstillinger, f.eks. den moderne perfekthedskulturs høje forventninger til sig selv og andre, som kan udløse eksistentielle kriser, hvis forventningerne ikke indfries. Men kan man overhovedet skrue ned for forventningerne? Skal man ikke turde drømme store drømme, hvis man vil have succes i livet?", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “Et essay på min. 300 ord om et af følgende emner: ”Brugen af mobiltelefoner i skolen skal forbydes.” og ”Lykke er når ens forventninger svarer til virkeligheden.” Essayet skal være velskrevet, relevant i forhold til sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog. Essayet skal indeholde relevante abstrakte og filosofiske refleksioner, rationel argumentation samt en fokuseret konklusion.”." },
+    ],
+  } as SecCard,
 ];
