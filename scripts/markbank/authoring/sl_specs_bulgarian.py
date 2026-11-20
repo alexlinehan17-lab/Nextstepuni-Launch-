@@ -984,8 +984,8 @@ def _essay_2021(d):
 # rows on the paper's 40 (questionTotal), their lead and the part's
 # descriptive line quoted (raised with the coordinator as decision F).
 def _crit_note_2021(d):
-    return (f'The scheme heads this part “{L(146, 148).text(d)}” and prints, with no marks or percentages '
-            f'beside the criteria: “{L(150, 151).text(d)}” It reprints the instruction as “{S(141).text(d)}”')
+    return (f'Under the two titles the scheme prints “{L(146, 148).text(d)}” It then prints, with no marks or '
+            f'percentages beside the criteria: “{L(150, 151).text(d)}” It reprints the instruction as “{S(141).text(d)}”')
 
 
 ESSAY_2021 = 'Напишете есе (минимум 300 думи)'
@@ -1061,8 +1061,8 @@ Q2P_2022 = PaperP(4, 'работата онлайн и каква')
 Q5P_2022 = PaperP(4, 'режим”? Обяснете')
 # Lead (20 Nov): criteria as shown rows on the paper's 40, as 2021 (decision F).
 def _crit_note_2022(d):
-    return (f'The scheme heads this part “{L(148, 150).text(d)}” and prints, with no marks or percentages '
-            f'beside the criteria: “{L(152, 153).text(d)}”')
+    return (f'Under the two titles the scheme prints “{L(148, 150).text(d)}” It then prints, with no marks or '
+            f'percentages beside the criteria: “{L(152, 153).text(d)}”')
 
 
 ESSAY_2022 = 'Напишете съчинение (минимум 300 думи)'
@@ -1276,7 +1276,7 @@ ESSAY_2025 = 'Напишете съчинение (минимум 300 думи)'
 
 def _essay_2025(d):
     return (f'Under Part III the scheme reprints the instruction and the two titles and prints only '
-            f'“{L(148, 150).text(d)}” It prints no criteria and no marks for the part.')
+            f'“{L(148, 150).text(d)}” It prints no criteria and no split of the part\'s marks.')
 
 
 SPECS[2025] = [
@@ -1358,7 +1358,7 @@ ESSAY_2026 = 'Напишете съчинение (минимум 300 думи)'
 
 def _essay_2026(d):
     return (f'Under Part III the scheme reprints the instruction and the two titles and prints only '
-            f'“{L(162, 163).text(d)}” It prints no criteria and no marks for the part.')
+            f'“{L(162, 163).text(d)}” It prints no criteria and no split of the part\'s marks.')
 
 
 SPECS[2026] = [
