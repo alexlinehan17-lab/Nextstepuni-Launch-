@@ -1019,6 +1019,44 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2016 Higher Level — © State Examinations Commission.",
+    id: "dan-2016-hl-ii-1", topicId: "danish-1-0", conceptId: "ske-det-modreaktion-til-ernes-galopperende",
+    section: "II", questionRef: "2016 HL Section II Q1",
+    questionText: "”Måske er det en modreaktion til 00’ernes galopperende individualisme og konstant accelererende forbrugsfest. Måske er det et tegn på en ny tid, hvor de grundlæggende værdier igen er til forhandling, og folk søger mod nye fællesskaber for at finde meningen med det hele. Eller måske handler det bare om at få en grønnere hverdag.” Der kan være flere årsager til byhavernes popularitet. Hvad enten det er som modefænomen eller et som et forsøg på at redde verden. Det kan ligefrem være udtryk for ønsket om ”at finde meningen med det hele”, altså en slags religion. Er du enig i dette synspunkt? Skriv en kommentar om dette emne på ca. 100 ord.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "F.eks. kan man tage det approach, at byhaverne blot er en poppet by-trend, der ikke har nogen effekt på det globale plan eller det økonomiske plan. F.eks. viser undersøgelser fra Berlin, at grønsagerne dyrket i byhavernes jord ikke lever op til EU’s grænseværdier for forurening.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “Kommentar på ca. 100 ord som viser evne til at sætte temaet ind i et større perspektiv.”." },
+    { id: "r-2", kind: "point", verbatim: "Eller man kan gå med teksten og lægge sig i forlængelse af budskabet ved at hævde, at byhaverne er den nye tids kapitalisme.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2016 Higher Level — © State Examinations Commission.",
+    id: "dan-2016-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2016 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner:\nDet gode menneske i en omskiftelig og globaliseret verden\n”Verden kan blive et temmelig dårligt sted at være, hvis vi ikke arbejder sammen på at gøre den mere lige, mere demokratisk og mere bæredygtig.” Fintan O’Toole i The Irish Times, 22. februar 2016",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under the two titles the scheme prints only: “Et velskrevet essay på ca. 300 ord, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende.”. It reprints the second title as: “Verden kan blive et temmelig dårligt sted at være, hvis vi ikke arbejder sammen på at skabe mere lighed, mere demokrati og mere bæredygtighed i den.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2017, level: "higher",
     paperFileid: "LC038AP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2017 Higher Level — © State Examinations Commission.",
