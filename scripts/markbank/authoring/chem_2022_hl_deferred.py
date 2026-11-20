@@ -70,13 +70,13 @@ C.add([k('1', 'b')], TOPIC, 'procedure-washing-filling-burette-potassium-mangana
     C.lifted('r-1', 'rinse (wash) with deionised water', 3,
              'The scheme prices the washing [2 × 3], one for each rinse, and adds: [correct order essential; '
              'one correct (3)].'),
-    C.lifted('r-2', 'rinse (wash) with potassium manganate(VII) (permanganate, KMnO₄, MnO₄ –, solution it is '
+    C.lifted('r-2', 'rinse (wash) with potassium manganate(VII) (permanganate, KMnO₄, MnO₄⁻, solution it is '
              'to contain)', 3),
     anyN('r-3', _fill[0], 6, 1, 6, _fill, 'Any one of these for the filling, [6].')], total=12)
 C.fixed([k('1', 'c')], TOPIC, 'dilute-sulfuric-acid-added-iron-ii')
 C.ordered([k('1', 'd')], TOPIC, 'end-point-detected')
 C.route([k('1', 'e', 'i')], TOPIC, 'concentration-solution-volumetric-flask-moles-per',
-        fixes={'30 × 0.02 1000 = 0.0006 moles MnO₄ –': '30 × 0.02 ÷ 1000 = 0.0006 moles MnO₄ –'},
+        fixes={'30 × 0.02 1000 = 0.0006 moles MnO₄⁻': '30 × 0.02 ÷ 1000 = 0.0006 moles MnO₄⁻'},
         row_notes={0: FRACTION.format('30 × 0.02', '1000')})
 C.route([k('1', 'e', 'ii')], TOPIC, 'mass-iron-ii-11-76-crystals',
         fixes={'6.72 \uf0b8 4 = 1.68 g per 250 cm³': '6.72 ÷ 4 = 1.68 g per 250 cm³'})
@@ -466,6 +466,9 @@ for _cid, (_topic, _concept) in REVIEWED.items():
 SCHEME_ERRORS = {
     'q9-a-iii': 'A misprint in the scheme: its second method gives "M = 0.308 M", but its own next line works with '
                 '0.00308 moles per litre, the molarity the first method finds.',
+    'q10-a-scheme': 'A misprint in the scheme: in its list of oxidising agents it writes the dichromate ion as '
+                    '"Cr₂O₇⁻", with one minus charge. The dichromate ion carries two (Cr₂O₇²⁻), as the potassium '
+                    'dichromate printed beside it, K₂Cr₂O₇, shows.',
 }
 for _cid, _note in SCHEME_ERRORS.items():
     _row = _ids[_cid]['rows'][0]
