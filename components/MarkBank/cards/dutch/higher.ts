@@ -3952,6 +3952,152 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2023 Higher Level — © State Examinations Commission.",
+    id: "nld-2023-hl-i-1-c", topicId: "dutch-0-0", conceptId: "waarnaar-verwijzen-volgende-woorden-het-zin",
+    section: "I", questionRef: "2023 HL Section I Q1(c)",
+    questionText: "Waarnaar verwijzen de volgende woorden? ‘het’ in de zin: ‘Wat kunstmatige intelligentie volgens Haselager zo interessant maakt, is dat het ons laat zien wat we eigenlijk niet weten – of niet willen weten – over onszelf.’ (alinea 8)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kunstmatige intelligentie", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2023 Higher Level — © State Examinations Commission.",
+    id: "nld-2023-hl-i-4", topicId: "dutch-0-1", conceptId: "gebaseerd-tekst-waarom-vinden-meeste-experts",
+    section: "I", questionRef: "2023 HL Section I Q4",
+    questionText: "Gebaseerd op de tekst: Waarom vinden de meeste experts dat Lemoines beweringen over LaMDA niet noodzakelijk geheel betrouwbaar zijn? Wat vind jij van zijn beweringen?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this question and prints nothing under it.", permittedMarks: [0,1,2,3,4,5], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2023 Higher Level — © State Examinations Commission.",
+    id: "nld-2023-hl-i-5", topicId: "dutch-0-1", conceptId: "daarom-werkt-het-volgens-lanzing-ook",
+    section: "I", questionRef: "2023 HL Section I Q5",
+    questionText: "‘Daarom werkt het volgens Lanzing ook niet zo goed als bedrijven ons van tevoren waarschuwen dat we met een machine te maken hebben.’ Uitgaande van jouw lectuur van de tekst, waarom werkt die waarschuwing onvoldoende? Wat denk je dat bedrijven zouden moeten doen?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Eigen antwoord van de kandidaat. Die moet hierbij verwijzen naar zaken die verder gaan dan een loutere herhaling van wat in de tekst wordt beweerd.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2023 Higher Level — © State Examinations Commission.",
+    id: "nld-2023-hl-i-6", topicId: "dutch-0-1", conceptId: "alinea-zegt-lanzing-vergeten-ons-dagelijks",
+    section: "I", questionRef: "2023 HL Section I Q6",
+    questionText: "In alinea 14 zegt Lanzing : ‘We vergeten in ons dagelijks leven vaak dat robots door mensen worden gemaakt, en dat ze daarom vaak onbedoeld de problemen in onze maatschappij weerspiegelen of zelfs versterken.’ Ben je het daarmee eens of niet? Verdedig je standpunt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Eigen antwoord van de kandidaat. Van belang hier is de argumentatie in het antwoord.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2023 Higher Level — © State Examinations Commission.",
+    id: "nld-2023-hl-ii-1", topicId: "dutch-1-0", conceptId: "kan-ontwikkeling-van-artificiele-intelligentie-zowel",
+    section: "II", questionRef: "2023 HL Section II Q1",
+    questionText: "Kan de ontwikkeling van artificiële intelligentie zowel slechte als goede gevolgen hebben? ‘We moeten meer ethische vragen stellen over kunstmatige intelligentie. (paragraaf 6)’ Wat bedoelt de auteur met deze opmerking? Geef je eigen visie in 100 tot 150 woorden op deze stelling.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 30, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task, in slightly different words, and prints nothing under it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEEL 2:",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2023 Higher Level — © State Examinations Commission.",
+    id: "nld-2023-hl-iii-1", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-minimum-300-woorden",
+    section: "III", questionRef: "2023 HL Section III Q1",
+    questionText: "Schrijf een opstel (minimum 300 woorden) over één van de volgende onderwerpen: De grens tussen het normale en artificiële leven vervaagt steeds meer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2023 Higher Level — © State Examinations Commission.",
+    id: "nld-2023-hl-iii-2", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-minimum-300-woorden",
+    section: "III", questionRef: "2023 HL Section III Q2",
+    questionText: "Schrijf een opstel (minimum 300 woorden) over één van de volgende onderwerpen: ‘Ook deze tijd zal eenmaal de goede oude tijd worden.’ (Godfried Bomans, Nederlands schrijver (1913-1971))",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC017ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2024 Higher Level — © State Examinations Commission.",
