@@ -3543,4 +3543,1056 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-la-1-a", topicId: "lithuanian-0-0", conceptId: "sali-skris-jonas-milda",
+    section: "LA", questionRef: "2026 OL Section LA Q1(a)",
+    stem: "You will hear a conversation between Milda and Jonas. Answer the questions in Lithuanian.",
+    questionText: "Į kokią šalį skris Jonas ir Milda?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Į Lietuvą", marks: 4, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 1(a)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-la-1-b", topicId: "lithuanian-0-0", conceptId: "kur-jonas-milda-gyvens-palangoje-viesbutyje",
+    section: "LA", questionRef: "2026 OL Section LA Q1(b)",
+    stem: "You will hear a conversation between Milda and Jonas. Answer the questions in Lithuanian.",
+    questionText: "Kur Jonas ir Milda gyvens Palangoje? viešbutyje namuose viloje pas močiutę",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Viloje", marks: 3, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 1(b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-la-1-c", topicId: "lithuanian-0-0", conceptId: "milda-kambari-mokes-grynais-teisingai-neteisingai",
+    section: "LA", questionRef: "2026 OL Section LA Q1(c)",
+    stem: "You will hear a conversation between Milda and Jonas. Answer the questions in Lithuanian.",
+    questionText: "Milda už kambarį mokės grynais. Teisingai Neteisingai",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Teisingai", marks: 3, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 1(c)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-la-2-a", topicId: "lithuanian-0-0", conceptId: "koki-muzieju-jonui-siulo-aplankyti-milda",
+    section: "LA", questionRef: "2026 OL Section LA Q2(a)",
+    stem: "You will hear a conversation between Milda and Jonas. Answer the questions in Lithuanian.",
+    questionText: "Kokį muziejų Jonui siūlo aplankyti Milda?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":4,"options":["Palangos Gintaro","Gintaro"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 2(a)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-la-2-b", topicId: "lithuanian-0-0", conceptId: "saules-akmuo-maziausias-gintaras-lietuvoje-teisingai",
+    section: "LA", questionRef: "2026 OL Section LA Q2(b)",
+    stem: "You will hear a conversation between Milda and Jonas. Answer the questions in Lithuanian.",
+    questionText: "Saulės akmuo – mažiausias gintaras Lietuvoje. Teisingai Neteisingai",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Neteisingai", marks: 3, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 2(b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-la-2-c", topicId: "lithuanian-0-0", conceptId: "valgys-muziejaus-kavineje-jonas-milda",
+    section: "LA", questionRef: "2026 OL Section LA Q2(c)",
+    stem: "You will hear a conversation between Milda and Jonas. Answer the questions in Lithuanian.",
+    questionText: "Ką valgys muziejaus kavinėje Jonas ir Milda?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ledus", marks: 4, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 2(c)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-la-2-d", topicId: "lithuanian-0-0", conceptId: "veiks-jonas-milda-palangoje-vakarais-miegos",
+    section: "LA", questionRef: "2026 OL Section LA Q2(d)",
+    stem: "You will hear a conversation between Milda and Jonas. Answer the questions in Lithuanian.",
+    questionText: "Ką veiks Jonas ir Milda Palangoje vakarais? miegos stebės saulėlydį eis į kavinę valgys ledus",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Stebės saulėlydį", marks: 4, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 2(d)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-lb-1-a", topicId: "lithuanian-0-0", conceptId: "kiek-metu-praejo-nuo-ciurlionio-gimimo",
+    section: "LB", questionRef: "2026 OL Section LB Q1(a)",
+    stem: "You will hear a story about Mikalojus Konstantinas Čiurlionis. Answer the questions in Lithuanian.",
+    questionText: "Kiek metų praėjo nuo M. K. Čiurlionio gimimo?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":4,"options":["150 metų","Šimtas penkiasdešimt metų"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 1(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-lb-1-b", topicId: "lithuanian-0-0", conceptId: "koks-buvo-ciurlionio-butas-dvi",
+    section: "LB", questionRef: "2026 OL Section LB Q1(b)",
+    stem: "You will hear a story about Mikalojus Konstantinas Čiurlionis. Answer the questions in Lithuanian.",
+    questionText: "Koks buvo M. K. Čiurlionio butas? Parašykite dvi detales.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["Mažas","Tamsus","Šaltas"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 1(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-lb-1-c", topicId: "lithuanian-0-0", conceptId: "meno-kritikai-ciurlioni-pripazino-genialiu-dailininku",
+    section: "LB", questionRef: "2026 OL Section LB Q1(c)",
+    stem: "You will hear a story about Mikalojus Konstantinas Čiurlionis. Answer the questions in Lithuanian.",
+    questionText: "Meno kritikai Čiurlionį pripažino genialiu dailininku. Teisingai Neteisingai",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Teisingai", marks: 3, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 1(c)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-lb-2-a", topicId: "lithuanian-0-0", conceptId: "kokiu-instrumentu-grojo-ciurlionis",
+    section: "LB", questionRef: "2026 OL Section LB Q2(a)",
+    stem: "You will hear a story about Mikalojus Konstantinas Čiurlionis. Answer the questions in Lithuanian.",
+    questionText: "Kokiu instrumentu grojo M. K. Čiurlionis?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pianinu", marks: 4, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 2(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-lb-2-b", topicId: "lithuanian-0-0", conceptId: "grojimas-nukele-paslaptinga-namu-pasauli-teisingai",
+    section: "LB", questionRef: "2026 OL Section LB Q2(b)",
+    stem: "You will hear a story about Mikalojus Konstantinas Čiurlionis. Answer the questions in Lithuanian.",
+    questionText: "Grojimas nukėlė į paslaptingą namų pasaulį. Teisingai Neteisingai",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Neteisingai", marks: 3, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 2(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-lb-3-a", topicId: "lithuanian-0-0", conceptId: "kelinta-valanda-ciurlioniai-valgydavo-pusrycius",
+    section: "LB", questionRef: "2026 OL Section LB Q3(a)",
+    stem: "You will hear a story about Mikalojus Konstantinas Čiurlionis. Answer the questions in Lithuanian.",
+    questionText: "Kelintą valandą Čiurlioniai valgydavo pusryčius?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Devintą valandą", marks: 3, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 3(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-lb-3-b", topicId: "lithuanian-0-0", conceptId: "savaites-diena-minima",
+    section: "LB", questionRef: "2026 OL Section LB Q3(b)",
+    stem: "You will hear a story about Mikalojus Konstantinas Čiurlionis. Answer the questions in Lithuanian.",
+    questionText: "Parašykite savaitės dieną, minimą tekste.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Šeštadienis", marks: 4, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 3(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-lc-1-a", topicId: "lithuanian-0-0", conceptId: "many-students-sailed-raft",
+    section: "LC", questionRef: "2026 OL Section LC Q1(a)",
+    stem: "You will hear a story about a students’ end of school adventure. Answer the questions in English.",
+    questionText: "How many students sailed on a raft?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":4,"options":["Six","6"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 1(a)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-lc-1-b", topicId: "lithuanian-0-0", conceptId: "students-planned-sailing-baltic-ocean-baltic",
+    section: "LC", questionRef: "2026 OL Section LC Q1(b)",
+    stem: "You will hear a story about a students’ end of school adventure. Answer the questions in English.",
+    questionText: "The students planned sailing to the Baltic Ocean the Baltic Lake the Baltic Sea the Baltic River",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Baltic Sea", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 1(b)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-lc-1-c", topicId: "lithuanian-0-0", conceptId: "month-students-start-work",
+    section: "LC", questionRef: "2026 OL Section LC Q1(c)",
+    stem: "You will hear a story about a students’ end of school adventure. Answer the questions in English.",
+    questionText: "Which month did the students start their work?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "November", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 1(c)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-lc-2-a", topicId: "lithuanian-0-0", conceptId: "indicate-whether-following-statements-true-false",
+    section: "LC", questionRef: "2026 OL Section LC Q2(a)",
+    stem: "You will hear a story about a students’ end of school adventure. Answer the questions in English.",
+    questionText: "Indicate whether the following statements are True or False. Put a tick (✓) in the relevant boxes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 4, contextNote: "For “Work will interfere with preparation for the exams.”: The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "True", marks: 4, contextNote: "For “Worked until 5:30 a.m.”" },
+    { id: "r-3", kind: "point", verbatim: "False", marks: 4, contextNote: "For “The raft was lifted by six people.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 2(a)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-lc-2-b", topicId: "lithuanian-0-0", conceptId: "students-manage-get-raft-into-lake",
+    section: "LC", questionRef: "2026 OL Section LC Q2(b)",
+    stem: "You will hear a story about a students’ end of school adventure. Answer the questions in English.",
+    questionText: "When did the students manage to get the raft into a lake?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":4,"options":["In the afternoon","After lunch","After the help was called"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 2(b)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-ld-1-a", topicId: "lithuanian-0-0", conceptId: "interview-sigita-mikstaite-musician-true-false",
+    section: "LD", questionRef: "2026 OL Section LD Q1(a)",
+    stem: "You will hear an interview about an exhibition at the Lithuanian National Museum. Answer the questions in English.",
+    questionText: "The interview is with Sigita Mikštaite, the musician. True False",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 1(a)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-ld-1-b", topicId: "lithuanian-0-0", conceptId: "dogs-descended-black-wolves-white-wolves",
+    section: "LD", questionRef: "2026 OL Section LD Q1(b)",
+    stem: "You will hear an interview about an exhibition at the Lithuanian National Museum. Answer the questions in English.",
+    questionText: "Dogs descended from black wolves white wolves gray wolves brown wolves .",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Gray wolves", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 1(b)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-ld-1-c", topicId: "lithuanian-0-0", conceptId: "wolves-intelligent-curious-animals-true-false",
+    section: "LD", questionRef: "2026 OL Section LD Q1(c)",
+    stem: "You will hear an interview about an exhibition at the Lithuanian National Museum. Answer the questions in English.",
+    questionText: "Wolves were intelligent and curious animals. True False",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 1(c)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-ld-2-a", topicId: "lithuanian-0-0", conceptId: "dogs-while-living-humans",
+    section: "LD", questionRef: "2026 OL Section LD Q2(a)",
+    stem: "You will hear an interview about an exhibition at the Lithuanian National Museum. Answer the questions in English.",
+    questionText: "What did the dogs do while living with humans? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":4,"options":["one detail.","Hunted","Guarded the house","Played with children","Performed special tasks","Have been always close"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 2(a)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-ld-2-b", topicId: "lithuanian-0-0", conceptId: "there-known-case-dog-broke-spine",
+    section: "LD", questionRef: "2026 OL Section LD Q2(b)",
+    stem: "You will hear an interview about an exhibition at the Lithuanian National Museum. Answer the questions in English.",
+    questionText: "There is a known case where a dog broke a spine a neck a leg a tail",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Leg", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 2(b)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-ld-2-c", topicId: "lithuanian-0-0", conceptId: "dog-become-twentieth-century",
+    section: "LD", questionRef: "2026 OL Section LD Q2(c)",
+    stem: "You will hear an interview about an exhibition at the Lithuanian National Museum. Answer the questions in English.",
+    questionText: "What did the dog become in the twentieth century? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":4,"options":["one detail.","Police officer","Border guard","Therapy specialist","Children's reading buddy"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 2(c)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-le-1-a", topicId: "lithuanian-0-0", conceptId: "juneta-years-old",
+    section: "LE", questionRef: "2026 OL Section LE Q1(a)",
+    stem: "You will hear two news items. Each item will be played three times.",
+    questionText: "Juneta was 20 years old.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 4, contextNote: "For “Juneta was 20 years old.”: The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section E — Question 1(a)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section E · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-le-1-b", topicId: "lithuanian-0-0", conceptId: "juneta-reached-shore-after-more-than",
+    section: "LE", questionRef: "2026 OL Section LE Q1(b)",
+    stem: "You will hear two news items. Each item will be played three times.",
+    questionText: "Juneta reached the shore after more than thirteen hours swimming.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 4, contextNote: "For “Juneta reached the shore after more than thirteen hours”: The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section E — Question 1(b)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section E · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-le-1-c", topicId: "lithuanian-0-0", conceptId: "juneta-collected-thousand-fifteen-euros-charity",
+    section: "LE", questionRef: "2026 OL Section LE Q1(c)",
+    stem: "You will hear two news items. Each item will be played three times.",
+    questionText: "Juneta collected two thousand and fifteen euros for charity.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 4, contextNote: "For “Juneta collected two thousand fifteen euros.”: The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section E — Question 1(c)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section E · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-le-2-a", topicId: "lithuanian-0-0", conceptId: "bears-became-extinct-due-deforestation",
+    section: "LE", questionRef: "2026 OL Section LE Q2(a)",
+    stem: "You will hear two news items. Each item will be played three times.",
+    questionText: "Bears became extinct due to deforestation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 4, contextNote: "For “Bears became extinct due to deforestation.”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section E — Question 2(a)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section E · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2026-ol-le-2-b", topicId: "lithuanian-0-0", conceptId: "bears-afraid-cities",
+    section: "LE", questionRef: "2026 OL Section LE Q2(b)",
+    stem: "You will hear two news items. Each item will be played three times.",
+    questionText: "Bears are afraid to go to the cities.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "False", marks: 4, contextNote: "For “Bears are afraid to go to cities.”: The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section E — Question 2(b)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Lithuanian 2026 Ordinary Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550GLPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section E · listening",
+          "title": "2026 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
 ];

@@ -1561,7 +1561,7 @@ const portugueseAddedTotal = [...Object.values(PORTUGUESE_ADDED), ...Object.valu
  * Listening Comprehension Test (sections LA-LE, CARD-STANDARD 10g), and then
  * the asks the shared generator refused, each named. */
 const LITHUANIAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
-  2026: { higher: 31, ordinary: 0 },
+  2026: { higher: 31, ordinary: 30 },
 };
 const LITHUANIAN_ADDED_TO_FROZEN_ID = /^lt-202[2-6]-(?:hl|ol)-l[a-e]-/;
 const isLithuanianAdded = (id: string) => /^lt-\d{4}-/.test(id)
