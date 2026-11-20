@@ -1995,6 +1995,1095 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "lt-2022-hl-b-3-a", topicId: "lithuanian-2-4", conceptId: "suauge-vaikai-tevai-visada-gerai-sutaria",
+    section: "B", questionRef: "2022 HL Section B Q3(a)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "Suaugę vaikai ir tėvai ne visada gerai sutaria. Ar svarbu palaikyti gerus santykius su šeimos nariais? (apie 200 žodžių)",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task/s",
+                                        "High level of textual coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Adequate achievement of the task/s",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear argumentation",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task/s",
+                                        "Lack of textual coherence",
+                                        "Argumentation not always clear or unclear",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Grammar generally correct, cases nearly always correct",
+                                        "Spelling mistakes are rare, good level of accuracy in word formation",
+                                        "Punctuation nearly always correct",
+                                        "Almost all sentences constructed in a clear and logical manner with a clear meaning"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor grammar errors, cases generally correct",
+                                        "At least half the words spelt correctly, only occasional word formation mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a clear and logical manner, the meaning is clear"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax, direct translation from English can be detected",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious grammar errors, cases generally incorrect",
+                                        "Most words misspelt, wrong word formation",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an unclear and illogical manner, the meaning isn’t clear"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TREČIA UŽDUOTIS",
+          "title": "Trečia užduotis (a) — answer in Lithuanian",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Lithuanian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "lt-2022-hl-b-3-b", topicId: "lithuanian-2-4", conceptId: "klaidu-darome-visi-sunku-pripazinti-klydus",
+    section: "B", questionRef: "2022 HL Section B Q3(b)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "Klaidų darome visi. Ar sunku pripažinti klydus? Kaip ištaisyti savo klaidas? (apie 200 žodžių)",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task/s",
+                                        "High level of textual coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Adequate achievement of the task/s",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear argumentation",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task/s",
+                                        "Lack of textual coherence",
+                                        "Argumentation not always clear or unclear",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Grammar generally correct, cases nearly always correct",
+                                        "Spelling mistakes are rare, good level of accuracy in word formation",
+                                        "Punctuation nearly always correct",
+                                        "Almost all sentences constructed in a clear and logical manner with a clear meaning"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor grammar errors, cases generally correct",
+                                        "At least half the words spelt correctly, only occasional word formation mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a clear and logical manner, the meaning is clear"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax, direct translation from English can be detected",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious grammar errors, cases generally incorrect",
+                                        "Most words misspelt, wrong word formation",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an unclear and illogical manner, the meaning isn’t clear"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TREČIA UŽDUOTIS",
+          "title": "Trečia užduotis (b) — answer in Lithuanian",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Lithuanian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "lt-2022-hl-b-3-c", topicId: "lithuanian-2-4", conceptId: "daznai-zmones-padeda-vieni-kitiems-kokius",
+    section: "B", questionRef: "2022 HL Section B Q3(c)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "Dažnai žmonės padeda vieni kitiems. Kokius gerus darbus esate padarę jūs? (Istorija gali būti reali arba išgalvota). (apie 200 žodžių)",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task/s",
+                                        "High level of textual coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Adequate achievement of the task/s",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear argumentation",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task/s",
+                                        "Lack of textual coherence",
+                                        "Argumentation not always clear or unclear",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Grammar generally correct, cases nearly always correct",
+                                        "Spelling mistakes are rare, good level of accuracy in word formation",
+                                        "Punctuation nearly always correct",
+                                        "Almost all sentences constructed in a clear and logical manner with a clear meaning"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor grammar errors, cases generally correct",
+                                        "At least half the words spelt correctly, only occasional word formation mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a clear and logical manner, the meaning is clear"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax, direct translation from English can be detected",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious grammar errors, cases generally incorrect",
+                                        "Most words misspelt, wrong word formation",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an unclear and illogical manner, the meaning isn’t clear"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TREČIA UŽDUOTIS",
+          "title": "Trečia užduotis (c) — answer in Lithuanian",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Lithuanian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "lt-2022-hl-b-4-a", topicId: "lithuanian-2-4", conceptId: "savanoriaujate-gyvunu-prieglaudoje-kuriai-labai-truksta",
+    section: "B", questionRef: "2022 HL Section B Q4(a)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "Savanoriaujate gyvūnų prieglaudoje, kuriai labai trūksta pinigų būtiniausioms prekėms. Parašykite elektroninę žinutę savo draugams. • Paprašykite paaukoti. • Paaiškinkite, kam ir kodėl bus skiriami pinigai. (apie 200 žodžių)",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task/s",
+                                        "High level of textual coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Adequate achievement of the task/s",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear argumentation",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task/s",
+                                        "Lack of textual coherence",
+                                        "Argumentation not always clear or unclear",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Grammar generally correct, cases nearly always correct",
+                                        "Spelling mistakes are rare, good level of accuracy in word formation",
+                                        "Punctuation nearly always correct",
+                                        "Almost all sentences constructed in a clear and logical manner with a clear meaning"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor grammar errors, cases generally correct",
+                                        "At least half the words spelt correctly, only occasional word formation mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a clear and logical manner, the meaning is clear"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax, direct translation from English can be detected",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious grammar errors, cases generally incorrect",
+                                        "Most words misspelt, wrong word formation",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an unclear and illogical manner, the meaning isn’t clear"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "KETVIRTA UŽDUOTIS",
+          "title": "Ketvirta užduotis (a) — answer in Lithuanian",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Lithuanian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "lt-2022-hl-b-4-b", topicId: "lithuanian-2-4", conceptId: "dalyvaujate-mokyklos-studentu-atstovybes-rinkimuose-laiska",
+    section: "B", questionRef: "2022 HL Section B Q4(b)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "Dalyvaujate mokyklos studentų atstovybės rinkimuose. Parašykite laišką savo draugams ir pakvieskite balsuoti už jus. • Kodėl jūs esate tinkamiausias kandidatas į šias pareigas? • Ką mokykloje pakeisite? (apie 200 žodžių)",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task/s",
+                                        "High level of textual coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Adequate achievement of the task/s",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear argumentation",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task/s",
+                                        "Lack of textual coherence",
+                                        "Argumentation not always clear or unclear",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Grammar generally correct, cases nearly always correct",
+                                        "Spelling mistakes are rare, good level of accuracy in word formation",
+                                        "Punctuation nearly always correct",
+                                        "Almost all sentences constructed in a clear and logical manner with a clear meaning"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor grammar errors, cases generally correct",
+                                        "At least half the words spelt correctly, only occasional word formation mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a clear and logical manner, the meaning is clear"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax, direct translation from English can be detected",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious grammar errors, cases generally incorrect",
+                                        "Most words misspelt, wrong word formation",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an unclear and illogical manner, the meaning isn’t clear"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "KETVIRTA UŽDUOTIS",
+          "title": "Ketvirta užduotis (b) — answer in Lithuanian",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Lithuanian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "lt-2022-hl-b-4-c", topicId: "lithuanian-2-4", conceptId: "mokykloje-vyksta-kulturos-naktis-papasakokite-savo",
+    section: "B", questionRef: "2022 HL Section B Q4(c)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "Mokykloje vyksta kultūros naktis. Papasakokite apie savo kilmės šalį: maistą, gamtą, orą, ką žmonės veikia.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task/s",
+                                        "High level of textual coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Adequate achievement of the task/s",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear argumentation",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task/s",
+                                        "Lack of textual coherence",
+                                        "Argumentation not always clear or unclear",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 15,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [11,12,13,14,15],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Grammar generally correct, cases nearly always correct",
+                                        "Spelling mistakes are rare, good level of accuracy in word formation",
+                                        "Punctuation nearly always correct",
+                                        "Almost all sentences constructed in a clear and logical manner with a clear meaning"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [6,7,8,9,10],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor grammar errors, cases generally correct",
+                                        "At least half the words spelt correctly, only occasional word formation mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a clear and logical manner, the meaning is clear"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4,5],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax, direct translation from English can be detected",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious grammar errors, cases generally incorrect",
+                                        "Most words misspelt, wrong word formation",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an unclear and illogical manner, the meaning isn’t clear"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "KETVIRTA UŽDUOTIS",
+          "title": "Ketvirta užduotis (c) — answer in Lithuanian",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Lithuanian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "lt-2022-hl-b-5-a", topicId: "lithuanian-2-4", conceptId: "gyvename-globaliame-pasaulyje-jusu-nuomone-jaunimas",
+    section: "B", questionRef: "2022 HL Section B Q5(a)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "Gyvename globaliame pasaulyje. Jūsų nuomone, ar jaunimas turėtų studijuoti, gyventi ir dirbti kitose šalyse ar likti savo šalyje? (apie 150 žodžių)",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task/s",
+                                        "High level of textual coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Adequate achievement of the task/s",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear argumentation",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task/s",
+                                        "Lack of textual coherence",
+                                        "Argumentation not always clear or unclear",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Grammar generally correct, cases nearly always correct",
+                                        "Spelling mistakes are rare, good level of accuracy in word formation",
+                                        "Punctuation nearly always correct",
+                                        "Almost all sentences constructed in a clear and logical manner with a clear meaning"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor grammar errors, cases generally correct",
+                                        "At least half the words spelt correctly, only occasional word formation mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a clear and logical manner, the meaning is clear"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax, direct translation from English can be detected",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious grammar errors, cases generally incorrect",
+                                        "Most words misspelt, wrong word formation",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an unclear and illogical manner, the meaning isn’t clear"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PENKTA UŽDUOTIS",
+          "title": "Penkta užduotis (a) — answer in Lithuanian",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Lithuanian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "lt-2022-hl-b-5-b", topicId: "lithuanian-2-4", conceptId: "dabar-ypac-daug-kalbama-dvikalbystes-daugiakalbystes",
+    section: "B", questionRef: "2022 HL Section B Q5(b)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "Dabar ypač daug kalbama apie dvikalbystės, daugiakalbystės naudą. Jūsų nuomone, ar kalbų mokėjimas yra teigiamas dalykas ir kodėl? (apie 150 žodžių)",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task/s",
+                                        "High level of textual coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Adequate achievement of the task/s",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear argumentation",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task/s",
+                                        "Lack of textual coherence",
+                                        "Argumentation not always clear or unclear",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Grammar generally correct, cases nearly always correct",
+                                        "Spelling mistakes are rare, good level of accuracy in word formation",
+                                        "Punctuation nearly always correct",
+                                        "Almost all sentences constructed in a clear and logical manner with a clear meaning"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor grammar errors, cases generally correct",
+                                        "At least half the words spelt correctly, only occasional word formation mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a clear and logical manner, the meaning is clear"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax, direct translation from English can be detected",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious grammar errors, cases generally incorrect",
+                                        "Most words misspelt, wrong word formation",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an unclear and illogical manner, the meaning isn’t clear"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PENKTA UŽDUOTIS",
+          "title": "Penkta užduotis (b) — answer in Lithuanian",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Lithuanian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2022 Higher Level, pp.10-11 — © State Examinations Commission.",
+    id: "lt-2022-hl-b-5-c", topicId: "lithuanian-2-4", conceptId: "amziuje-daug-senu-zmoniu-jauciasi-vienisi",
+    section: "B", questionRef: "2022 HL Section B Q5(c)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "21 amžiuje daug senų žmonių jaučiasi vieniši. Jūsų nuomone, ką daryti, kad senjorai jaustųsi bendruomenės dalimi? (apie 150 žodžių)",
+    totalMarks: 20,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "content",
+                      "label": "Content and Communication",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Very good or excellent achievement of the task/s",
+                                        "High level of textual coherence",
+                                        "Clear argumentation",
+                                        "Full completion of communicative task",
+                                        "Little or no irrelevant material",
+                                        "Few mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Adequate achievement of the task/s",
+                                        "Reasonable level of textual coherence",
+                                        "Reasonably clear argumentation",
+                                        "Almost full completion of communicative task",
+                                        "Some irrelevant material",
+                                        "Not too many mistakes in register"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Barely adequate or inadequate achievement of the task/s",
+                                        "Lack of textual coherence",
+                                        "Argumentation not always clear or unclear",
+                                        "Communicative task barely fulfilled or not fulfilled at all",
+                                        "A lot of irrelevant material",
+                                        "Mistakes in register"
+                                  ]
+                            }
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Very good range of vocabulary, appropriate words and phrases used",
+                                        "Verb endings, tenses, agreements nearly always correct",
+                                        "Grammar generally correct, cases nearly always correct",
+                                        "Spelling mistakes are rare, good level of accuracy in word formation",
+                                        "Punctuation nearly always correct",
+                                        "Almost all sentences constructed in a clear and logical manner with a clear meaning"
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [4,5,6,7],
+                                  "guidance": [
+                                        "Vocabulary use quite good, generally adequate and appropriate, some phrases used",
+                                        "Verb endings, tenses, agreements correct more often than not",
+                                        "Minor grammar errors, cases generally correct",
+                                        "At least half the words spelt correctly, only occasional word formation mistakes",
+                                        "Good attention to punctuation",
+                                        "Most sentences constructed in a clear and logical manner, the meaning is clear"
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3],
+                                  "guidance": [
+                                        "Vocabulary very inadequate, possibly with English words and interference from English syntax, direct translation from English can be detected",
+                                        "Most verb endings, tenses, agreements incorrect",
+                                        "Serious grammar errors, cases generally incorrect",
+                                        "Most words misspelt, wrong word formation",
+                                        "Poor attention to punctuation",
+                                        "Majority of sentences constructed in an unclear and illogical manner, the meaning isn’t clear"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PENKTA UŽDUOTIS",
+          "title": "Penkta užduotis (c) — answer in Lithuanian",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Lithuanian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2022, level: "higher",
     paperFileid: "LC550ALP000EV",
