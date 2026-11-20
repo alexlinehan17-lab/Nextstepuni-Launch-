@@ -398,7 +398,9 @@ def point_card(s, a, atlas):
             'topicId': topic, 'conceptId': music_2025.concept(a.get('conceptText') or question), 'questionRef': s.ref(a),
             'questionText': question, 'totalMarks': a['marks'],
             'sourceMaterial': source_for(s, a, f'{BOOKLET[a["paper"]]} — Question {q}')}
-    stem = ' '.join(printed_block(s, a['paper'], x) for x in [a.get('questionContext'), a.get('excerptLine')] if x)
+    # The lead-in and the excerpt heading are separate printed lines: a line break between them, shown as
+    # printed (SessionScreen routes Music stems through stemWithPrintedBreaks, coordinator 20 Nov).
+    stem = '\n'.join(printed_block(s, a['paper'], x) for x in [a.get('questionContext'), a.get('excerptLine')] if x)
     if stem:
         card['stem'] = stem
     if a.get('needsRecording'):

@@ -37,7 +37,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q1-a", topicId: "music-2-15", conceptId: "mus-excerpt-heard-identify-theme",
     section: "L", questionRef: "2025 HL Listening Q1(a)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify the theme heard in the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -83,7 +83,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q1-b", topicId: "music-2-15", conceptId: "mus-excerpt-from-identify-section",
     section: "L", questionRef: "2025 HL Listening Q1(b)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify the section of the work from which the excerpt is taken.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -129,7 +129,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q1-c", topicId: "music-2-15", conceptId: "mus-excerpt-instrument-name-playing",
     section: "L", questionRef: "2025 HL Listening Q1(c)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Name one instrument playing the theme in the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -175,7 +175,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q1-d", topicId: "music-2-15", conceptId: "mus-cadence-excerpt-heard",
     section: "L", questionRef: "2025 HL Listening Q1(d)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "The cadence heard at the end of the excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -221,7 +221,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q1-e", topicId: "music-2-15", conceptId: "mus-answer-between-both-differences",
     section: "L", questionRef: "2025 HL Listening Q1(e)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played once more and Excerpt 2, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1, played once more and Excerpt 2, played three times.",
     questionText: "Identify two differences between the music in Excerpt 1 and the music in Excerpt 2. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -267,7 +267,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q1-f", topicId: "music-2-15", conceptId: "mus-excerpt-features-identify-music",
     section: "L", questionRef: "2025 HL Listening Q1(f)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "Identify three features of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -313,7 +313,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q1-g", topicId: "music-2-15", conceptId: "mus-above-four-insert-missing",
     section: "L", questionRef: "2025 HL Listening Q1(g)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 4, played three times. An outline score of the excerpt is printed below.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times. An outline score of the excerpt is printed below.",
     questionText: "Insert the four missing notes at X on the score above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -377,7 +377,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q1-h", topicId: "music-2-15", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2025 HL Listening Q1(h)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 5, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 5, played three times.",
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -423,7 +423,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q2-a", topicId: "music-2-16", conceptId: "mus-excerpt-identify-instrument-melody",
     section: "L", questionRef: "2025 HL Listening Q2(a)",
-    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of the excerpt is printed below.",
+    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. An outline score of the excerpt is printed below.",
     questionText: "Identify the instrument which plays the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -469,7 +469,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q2-b", topicId: "music-2-16", conceptId: "mus-accompaniment-excerpt-identify-instrument",
     section: "L", questionRef: "2025 HL Listening Q2(b)",
-    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of the excerpt is printed below.",
+    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. An outline score of the excerpt is printed below.",
     questionText: "Identify the instrument which plays the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -515,7 +515,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q2-c", topicId: "music-2-16", conceptId: "mus-above-insert-missing-score",
     section: "L", questionRef: "2025 HL Listening Q2(c)",
-    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of the excerpt is printed below.",
+    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. An outline score of the excerpt is printed below.",
     questionText: "Insert the missing time signatures at X and Y on the score above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -580,7 +580,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q2-d", topicId: "music-2-16", conceptId: "mus-accompaniment-based-excerpt-music",
     section: "L", questionRef: "2025 HL Listening Q2(d)",
-    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of the excerpt is printed below.",
+    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. An outline score of the excerpt is printed below.",
     questionText: "The music of the accompaniment in this excerpt is based on",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -626,7 +626,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q2-e-i", topicId: "music-2-16", conceptId: "mus-compositional-excerpt-technique-this",
     section: "L", questionRef: "2025 HL Listening Q2(e)(i)",
-    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "A compositional technique used in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -672,7 +672,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q2-e-ii", topicId: "music-2-16", conceptId: "mus-above-compositional-describe-excerpt",
     section: "L", questionRef: "2025 HL Listening Q2(e)(ii)",
-    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe the compositional technique which you have identified above as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -718,7 +718,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q3-a", topicId: "music-2-14", conceptId: "mus-bars-boxes-change-chord",
     section: "L", questionRef: "2025 HL Listening Q3(a)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of the vocal melody is printed below.\n• The ticked box in bar 1 indicates the first chord of the excerpt.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. An outline score of the vocal melody is printed below.\n• The ticked box in bar 1 indicates the first chord of the excerpt.",
     questionText: "Tick three boxes in bars 2–4 where a chord change is heard.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -782,7 +782,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q3-b", topicId: "music-2-14", conceptId: "mus-features-heard-identify-lines",
     section: "L", questionRef: "2025 HL Listening Q3(b)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 2, played three times. The opening lyrics are printed below. Line 1 Galileo, Galileo, Galileo, Galileo, Line 2 Galileo Figaro. Magnifico. Line 3 I’m just a poor boy, nobody loves me. Line 4 He’s just a poor boy from a poor family, Line 5 Spare him his life from this monstrosity.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times. The opening lyrics are printed below. Line 1 Galileo, Galileo, Galileo, Galileo, Line 2 Galileo Figaro. Magnifico. Line 3 I’m just a poor boy, nobody loves me. Line 4 He’s just a poor boy from a poor family, Line 5 Spare him his life from this monstrosity.",
     questionText: "Identify two features of the vocal music heard in lines 1–5.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -828,7 +828,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q3-c", topicId: "music-2-14", conceptId: "mus-describe-excerpt-music-name",
     section: "L", questionRef: "2025 HL Listening Q3(c)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 2, played three times. The opening lyrics are printed below. Line 1 Galileo, Galileo, Galileo, Galileo, Line 2 Galileo Figaro. Magnifico. Line 3 I’m just a poor boy, nobody loves me. Line 4 He’s just a poor boy from a poor family, Line 5 Spare him his life from this monstrosity.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times. The opening lyrics are printed below. Line 1 Galileo, Galileo, Galileo, Galileo, Line 2 Galileo Figaro. Magnifico. Line 3 I’m just a poor boy, nobody loves me. Line 4 He’s just a poor boy from a poor family, Line 5 Spare him his life from this monstrosity.",
     questionText: "Name a recording technique used in this excerpt. Describe this recording technique with reference to the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -875,7 +875,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q3-d", topicId: "music-2-14", conceptId: "mus-describe-emphasised-excerpt-music",
     section: "L", questionRef: "2025 HL Listening Q3(d)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 2, played three times. The opening lyrics are printed below. Line 1 Galileo, Galileo, Galileo, Galileo, Line 2 Galileo Figaro. Magnifico. Line 3 I’m just a poor boy, nobody loves me. Line 4 He’s just a poor boy from a poor family, Line 5 Spare him his life from this monstrosity.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times. The opening lyrics are printed below. Line 1 Galileo, Galileo, Galileo, Galileo, Line 2 Galileo Figaro. Magnifico. Line 3 I’m just a poor boy, nobody loves me. Line 4 He’s just a poor boy from a poor family, Line 5 Spare him his life from this monstrosity.",
     questionText: "Describe how the words ‘for me’ are emphasised in the music towards the end of the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -921,7 +921,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q4-a", topicId: "music-2-17", conceptId: "mus-excerpt-identify-music-this",
     section: "L", questionRef: "2025 HL Listening Q4(a)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify the tonality of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -967,7 +967,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q4-b", topicId: "music-2-17", conceptId: "mus-continuo-excerpt-feature-identify",
     section: "L", questionRef: "2025 HL Listening Q4(b)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify a feature of the music played by the continuo in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1013,7 +1013,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q4-c", topicId: "music-2-17", conceptId: "mus-baroque-describe-excerpt-feature",
     section: "L", questionRef: "2025 HL Listening Q4(c)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Describe one feature of Baroque music as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1059,7 +1059,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q4-d", topicId: "music-2-17", conceptId: "mus-alto-bass-enter-excerpt",
     section: "L", questionRef: "2025 HL Listening Q4(d)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Identify the voices (Soprano, Alto, Tenor, Bass) in the order in which they enter in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1108,7 +1108,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q4-e", topicId: "music-2-17", conceptId: "mus-excerpt-explain-features-music",
     section: "L", questionRef: "2025 HL Listening Q4(e)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "This excerpt features a Tierce de Picardie. Explain Tierce de Picardie with reference to the music in the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -1154,7 +1154,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q5-a-a", topicId: "music-2-2", conceptId: "mus-excerpt-identify-singing-style",
     section: "L", questionRef: "2025 HL Listening Q5 A(a)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on three excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on three excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify the style of singing in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -1200,7 +1200,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q5-a-b", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2025 HL Listening Q5 A(b)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on three excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on three excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify two features of this style of singing as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1246,7 +1246,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q5-a-c", topicId: "music-2-2", conceptId: "mus-down-excerpt-form-letters",
     section: "L", questionRef: "2025 HL Listening Q5 A(c)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on three excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on three excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Using letters, write down the form of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1292,7 +1292,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q5-a-d", topicId: "music-2-2", conceptId: "mus-associated-dance-excerpt-give",
     section: "L", questionRef: "2025 HL Listening Q5 A(d)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on three excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on three excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Identify the type of dance tune heard in this excerpt. Give its time signature and one bar of rhythm associated with it.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1349,7 +1349,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q5-a-e", topicId: "music-2-2", conceptId: "mus-excerpt-instruments-melody-name",
     section: "L", questionRef: "2025 HL Listening Q5 A(e)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on three excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on three excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Name two instruments which play the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1395,7 +1395,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q5-a-f", topicId: "music-2-2", conceptId: "mus-different-discuss-excerpt-fusion",
     section: "L", questionRef: "2025 HL Listening Q5 A(f)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on three excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on three excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "This excerpt is a fusion of different styles of music. Discuss, with reference to the music heard in the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1931,7 +1931,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q6-a", topicId: "music-2-7", conceptId: "mus-excerpt-metre-music-this",
     section: "L", questionRef: "2025 HL Listening Q6(a)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "The metre of the music in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1977,7 +1977,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q6-b", topicId: "music-2-7", conceptId: "mus-accompaniment-describe-excerpt",
     section: "L", questionRef: "2025 HL Listening Q6(b)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Describe the accompaniment in the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -2023,7 +2023,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q6-c", topicId: "music-2-7", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2025 HL Listening Q6(c)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -2069,7 +2069,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q6-d", topicId: "music-2-7", conceptId: "mus-missing-notes-score",
     section: "L", questionRef: "2025 HL Listening Q6(d)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. An outline score of the opening vocal melody is printed below.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. An outline score of the opening vocal melody is printed below.",
     questionText: "The missing notes at X on the score are",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -2133,7 +2133,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q6-e", topicId: "music-2-7", conceptId: "mus-excerpt-identify-music-this",
     section: "L", questionRef: "2025 HL Listening Q6(e)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. An outline score of the opening vocal melody is printed below.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. An outline score of the opening vocal melody is printed below.",
     questionText: "Identify the key of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2188,7 +2188,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q6-f", topicId: "music-2-7", conceptId: "mus-bars-heard-introduction-many",
     section: "L", questionRef: "2025 HL Listening Q6(f)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "How many bars of music are heard in the introduction?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2234,7 +2234,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q6-g", topicId: "music-2-7", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2025 HL Listening Q6(g)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Identify two features of the vocal music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -2280,7 +2280,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2025 Higher Level — © State Examinations Commission.",
     id: "mus-2025-hl-l-q6-h", topicId: "music-2-7", conceptId: "mus-answer-between-both-describe",
     section: "L", questionRef: "2025 HL Listening Q6(h)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played once more and Excerpt 5, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played once more and Excerpt 5, played three times.",
     questionText: "Describe two differences between the music heard in Excerpt 4 and the music heard in Excerpt 5. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -3217,7 +3217,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q1-a", topicId: "music-2-10", conceptId: "mus-excerpt-heard-identify-instrument",
     section: "L", questionRef: "2026 HL Listening Q1(a)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify the percussion instrument heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3263,7 +3263,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q1-b", topicId: "music-2-10", conceptId: "mus-excerpt-feature-heard-identify",
     section: "L", questionRef: "2026 HL Listening Q1(b)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify one rhythmic feature heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3309,7 +3309,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q1-c", topicId: "music-2-10", conceptId: "mus-describe-excerpt-heard-identify",
     section: "L", questionRef: "2026 HL Listening Q1(c)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify and describe one instrumental technique heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -3356,7 +3356,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q1-d", topicId: "music-2-10", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2026 HL Listening Q1(d)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -3402,7 +3402,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q1-e", topicId: "music-2-10", conceptId: "mus-above-insert-missing-score",
     section: "L", questionRef: "2026 HL Listening Q1(e)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 3, played three times. An outline of the score of the opening four bars of the excerpt is printed below.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. An outline of the score of the opening four bars of the excerpt is printed below.",
     questionText: "Insert the missing time signature at X on the score above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3466,7 +3466,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q1-f", topicId: "music-2-10", conceptId: "mus-above-four-insert-missing",
     section: "L", questionRef: "2026 HL Listening Q1(f)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 3, played three times. An outline of the score of the opening four bars of the excerpt is printed below.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. An outline of the score of the opening four bars of the excerpt is printed below.",
     questionText: "Insert the four missing notes at Y on the score above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -3531,7 +3531,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q1-g", topicId: "music-2-10", conceptId: "mus-accompaniment-describe-excerpt-heard",
     section: "L", questionRef: "2026 HL Listening Q1(g)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Describe the accompaniment heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -3577,7 +3577,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q1-h", topicId: "music-2-10", conceptId: "mus-cadence-excerpt-heard-this",
     section: "L", questionRef: "2026 HL Listening Q1(h)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "The cadence heard at the end of this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3641,7 +3641,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q1-i", topicId: "music-2-10", conceptId: "mus-berlioz-blow’-depicted-describe",
     section: "L", questionRef: "2026 HL Listening Q1(i)",
-    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 5, played three times.",
+    stem: "Five excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 5, played three times.",
     questionText: "In his programme note for Symphonie Fantastique Berlioz described the music in this except as a ‘final thought of love which is interrupted by the fatal blow’. With reference to the music in this excerpt, describe how this is depicted.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -3687,7 +3687,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q2-a", topicId: "music-2-9", conceptId: "mus-excerpt-features-identify-melody",
     section: "L", questionRef: "2026 HL Listening Q2(a)",
-    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify two features of the melody played by the piano in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3733,7 +3733,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q2-b", topicId: "music-2-9", conceptId: "mus-accompaniment-alberti-bass-excerpt",
     section: "L", questionRef: "2026 HL Listening Q2(b)",
-    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "The accompaniment in this excerpt features an Alberti bass. Explain Alberti bass.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3779,7 +3779,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q2-c", topicId: "music-2-9", conceptId: "mus-answer-between-both-differences",
     section: "L", questionRef: "2026 HL Listening Q2(c)",
-    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Identify two differences between the music in Excerpt 1 and the music in Excerpt 2. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -3834,7 +3834,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q2-d", topicId: "music-2-9", conceptId: "mus-cadenza-excerpt-explain-from",
     section: "L", questionRef: "2026 HL Listening Q2(d)",
-    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Three excerpts from Piano Concerto No. 23 in A Major, K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "This excerpt is taken from the cadenza. Explain the term cadenza with reference to the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3880,7 +3880,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q3-a", topicId: "music-2-11", conceptId: "mus-above-complete-excerpt-heard",
     section: "L", questionRef: "2026 HL Listening Q3(a)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Complete the rhythm of the music played by the violin on the stave above, as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -3944,7 +3944,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q3-b-i", topicId: "music-2-11", conceptId: "mus-compositional-excerpt-heard-identify",
     section: "L", questionRef: "2026 HL Listening Q3(b)(i)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Identify two compositional techniques heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3990,7 +3990,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q3-b-ii", topicId: "music-2-11", conceptId: "mus-above-compositional-describe-excerpt",
     section: "L", questionRef: "2026 HL Listening Q3(b)(ii)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe one of the compositional techniques that you have identified above as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4036,7 +4036,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q3-c-i", topicId: "music-2-11", conceptId: "mus-below-each-excerpt-flute",
     section: "L", questionRef: "2026 HL Listening Q3(c)(i)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played once more.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.\nExcerpt 2, played once more.",
     questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. (i) Flute in G",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4091,7 +4091,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q3-c-ii", topicId: "music-2-11", conceptId: "mus-below-cymbal-each-excerpt",
     section: "L", questionRef: "2026 HL Listening Q3(c)(ii)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played once more.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.\nExcerpt 2, played once more.",
     questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. (ii) Cymbal",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4146,7 +4146,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q3-c-iii", topicId: "music-2-11", conceptId: "mus-below-each-excerpt-following",
     section: "L", questionRef: "2026 HL Listening Q3(c)(iii)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played once more.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.\nExcerpt 2, played once more.",
     questionText: "Identify the instrumental technique, seen on the staves below, as performed by each of the following instruments in this excerpt. (iii) Violin",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4201,7 +4201,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q4-a", topicId: "music-2-12", conceptId: "mus-excerpt-identify-music-this",
     section: "L", questionRef: "2026 HL Listening Q4(a)",
-    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify the tonality of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4247,7 +4247,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q4-b", topicId: "music-2-12", conceptId: "mus-excerpt-heard-identify-instruments",
     section: "L", questionRef: "2026 HL Listening Q4(b)",
-    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify three instruments heard playing in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -4293,7 +4293,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q4-c", topicId: "music-2-12", conceptId: "mus-boxes-chord-chords-identify",
     section: "L", questionRef: "2026 HL Listening Q4(c)",
-    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt. Excerpt 2, played three times. An outline score of the opening vocal melody is printed below.",
+    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times. An outline score of the opening vocal melody is printed below.",
     questionText: "Identify the two missing chords in the chord boxes in bar 2.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4358,7 +4358,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q4-d", topicId: "music-2-12", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2026 HL Listening Q4(d)",
-    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "Identify two features of the vocal music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4404,7 +4404,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q4-e", topicId: "music-2-12", conceptId: "mus-excerpt-there-this",
     section: "L", questionRef: "2026 HL Listening Q4(e)",
-    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Three excerpts from Sgt. Pepper’s Lonely Hearts Club Band by The Beatles.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "At the end of this excerpt there is a",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4468,7 +4468,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q5-a-a", topicId: "music-2-2", conceptId: "mus-associated-case-dance-each",
     section: "L", questionRef: "2026 HL Listening Q5 A(a)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify the two dance tunes heard in this excerpt. In the case of each dance tune, give its time signature and one bar of rhythm associated with it.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -4528,7 +4528,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q5-a-b", topicId: "music-2-2", conceptId: "mus-excerpt-heard-instruments-name",
     section: "L", questionRef: "2026 HL Listening Q5 A(b)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Name two instruments heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4574,7 +4574,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q5-a-c-i", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-melody-name",
     section: "L", questionRef: "2026 HL Listening Q5 A(c)(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Name the instrument playing the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4620,7 +4620,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q5-a-c-ii", topicId: "music-2-2", conceptId: "mus-excerpt-heard-identify-instrument",
     section: "L", questionRef: "2026 HL Listening Q5 A(c)(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Identify one type of ornamentation played by this instrument, as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4666,7 +4666,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q5-a-d", topicId: "music-2-2", conceptId: "mus-excerpt-heard-identify-singing",
     section: "L", questionRef: "2026 HL Listening Q5 A(d)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Identify the style of singing heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4712,7 +4712,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q5-a-e", topicId: "music-2-2", conceptId: "mus-missing-notes-score",
     section: "L", questionRef: "2026 HL Listening Q5 A(e)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. An outline score of the melody is printed below.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. An outline score of the melody is printed below.",
     questionText: "The missing notes at X on the score (bar 4) are",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4776,7 +4776,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q5-a-f", topicId: "music-2-2", conceptId: "mus-missing-notes-score",
     section: "L", questionRef: "2026 HL Listening Q5 A(f)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. An outline score of the melody is printed below.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. An outline score of the melody is printed below.",
     questionText: "The missing notes at Y on the score (bar 8) are",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4840,7 +4840,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q5-a-g", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2026 HL Listening Q5 A(g)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Identify two features of Irish traditional music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4886,7 +4886,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q5-a-h", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2026 HL Listening Q5 A(h)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. This section is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Identify two non-traditional features heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -5432,7 +5432,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q6-a", topicId: "music-2-4", conceptId: "mus-excerpt-identify-instrument-melody",
     section: "L", questionRef: "2026 HL Listening Q6(a)",
-    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify the instrument which plays the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5478,7 +5478,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q6-b", topicId: "music-2-4", conceptId: "mus-accompaniment-describe-excerpt-this",
     section: "L", questionRef: "2026 HL Listening Q6(b)",
-    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Describe the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -5524,7 +5524,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q6-c", topicId: "music-2-4", conceptId: "mus-down-excerpt-form-letters",
     section: "L", questionRef: "2026 HL Listening Q6(c)",
-    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Using letters, write down the form of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5570,7 +5570,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q6-d", topicId: "music-2-4", conceptId: "mus-excerpt-features-identify-melody",
     section: "L", questionRef: "2026 HL Listening Q6(d)",
-    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Identify two features of the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -5616,7 +5616,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q6-e", topicId: "music-2-4", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2026 HL Listening Q6(e)",
-    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -5662,7 +5662,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q6-f", topicId: "music-2-3", conceptId: "mus-above-mising-notes-score",
     section: "L", questionRef: "2026 HL Listening Q6(f)",
-    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times. An outline score of the opening melody is printed below.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times. An outline score of the opening melody is printed below.",
     questionText: "The mising notes at X on the score above are",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5726,7 +5726,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q6-g", topicId: "music-2-4", conceptId: "mus-excerpt-identify-music-this",
     section: "L", questionRef: "2026 HL Listening Q6(g)",
-    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times. An outline score of the opening melody is printed below.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times. An outline score of the opening melody is printed below.",
     questionText: "Identify the key of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5772,7 +5772,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q6-h", topicId: "music-2-4", conceptId: "mus-each-false-statement-tick",
     section: "L", questionRef: "2026 HL Listening Q6(h)",
-    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 5, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 5, played three times.",
     questionText: "Tick whether each statement is true or false.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -5839,7 +5839,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q6-i", topicId: "music-2-4", conceptId: "mus-excerpt-heard-identify-instrumental",
     section: "L", questionRef: "2026 HL Listening Q6(i)",
-    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 6, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 6, played three times.",
     questionText: "Identify one instrumental technique heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5885,7 +5885,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q6-j", topicId: "music-2-4", conceptId: "mus-excerpt-feature-heard-identify",
     section: "L", questionRef: "2026 HL Listening Q6(j)",
-    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 6, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 6, played three times.",
     questionText: "Identify one melodic feature heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5931,7 +5931,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2026 Higher Level — © State Examinations Commission.",
     id: "mus-2026-hl-l-q6-k", topicId: "music-2-4", conceptId: "mus-excerpt-feature-heard-identify",
     section: "L", questionRef: "2026 HL Listening Q6(k)",
-    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 6, played three times.",
+    stem: "Aural Skills This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 6, played three times.",
     questionText: "Identify one rhythmic feature heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -6891,7 +6891,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q1-a", topicId: "music-2-16", conceptId: "mus-different-excerpt-identify-instruments",
     section: "L", questionRef: "2024 HL Listening Q1(a)",
-    stem: "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify two different instruments which play the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -6938,7 +6938,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q1-b", topicId: "music-2-16", conceptId: "mus-above-insert-missing-score",
     section: "L", questionRef: "2024 HL Listening Q1(b)",
-    stem: "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Insert the missing time signatures at X and Y on the score above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -6994,7 +6994,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q1-c", topicId: "music-2-16", conceptId: "mus-compositional-describe-excerpt-identify",
     section: "L", questionRef: "2024 HL Listening Q1(c)",
-    stem: "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Identify and describe one compositional technique used in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -7041,7 +7041,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q1-d", topicId: "music-2-16", conceptId: "mus-answer-between-both-differences",
     section: "L", questionRef: "2024 HL Listening Q1(d)",
-    stem: "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 2, played once more and Excerpt 3, played three times.",
+    stem: "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.\nExcerpt 2, played once more and Excerpt 3, played three times.",
     questionText: "Identify two differences between the music in Excerpt 2 and the music in Excerpt 3. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -7087,7 +7087,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q1-e", topicId: "music-2-16", conceptId: "mus-excerpt-features-identify-music",
     section: "L", questionRef: "2024 HL Listening Q1(e)",
-    stem: "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Identify three features of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -7133,7 +7133,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q1-f", topicId: "music-2-16", conceptId: "mus-barry-describe-excerpt-follows",
     section: "L", questionRef: "2024 HL Listening Q1(f)",
-    stem: "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Four excerpts from Piano Quartet No.1 by Gerald Barry.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Describe the music that immediately follows the music in this excerpt in Piano Quartet No 1 by Gerald Barry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -7417,7 +7417,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q3-a", topicId: "music-2-14", conceptId: "mus-accompaniment-describe-excerpt-features",
     section: "L", questionRef: "2024 HL Listening Q3(a)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 1, played three times. The lyrics are printed below. Line 1 Too late, my time has come, Line 2 Sends shivers down my spine, body’s aching all the time. Line 3 Goodbye, everybody, I’ve got to go, Line 4 Got to leave you all behind and face the truth. Line 5 Mama, ooh, I don’t want to die, Line 6 I sometimes wish I’d never been born at all.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. The lyrics are printed below. Line 1 Too late, my time has come, Line 2 Sends shivers down my spine, body’s aching all the time. Line 3 Goodbye, everybody, I’ve got to go, Line 4 Got to leave you all behind and face the truth. Line 5 Mama, ooh, I don’t want to die, Line 6 I sometimes wish I’d never been born at all.",
     questionText: "Describe two features of the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -7472,7 +7472,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q3-b", topicId: "music-2-14", conceptId: "mus-describe-example-excerpt-heard",
     section: "L", questionRef: "2024 HL Listening Q3(b)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 1, played three times. The lyrics are printed below. Line 1 Too late, my time has come, Line 2 Sends shivers down my spine, body’s aching all the time. Line 3 Goodbye, everybody, I’ve got to go, Line 4 Got to leave you all behind and face the truth. Line 5 Mama, ooh, I don’t want to die, Line 6 I sometimes wish I’d never been born at all.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. The lyrics are printed below. Line 1 Too late, my time has come, Line 2 Sends shivers down my spine, body’s aching all the time. Line 3 Goodbye, everybody, I’ve got to go, Line 4 Got to leave you all behind and face the truth. Line 5 Mama, ooh, I don’t want to die, Line 6 I sometimes wish I’d never been born at all.",
     questionText: "Describe an example of word painting heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -7527,7 +7527,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q3-c", topicId: "music-2-14", conceptId: "mus-above-four-insert-missing",
     section: "L", questionRef: "2024 HL Listening Q3(c)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 2, played three times. An outline score of the excerpt is printed below.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times. An outline score of the excerpt is printed below.",
     questionText: "Insert the four missing notes at X on the score above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -7592,7 +7592,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q4-a", topicId: "music-2-15", conceptId: "mus-excerpt-heard-identify-theme",
     section: "L", questionRef: "2024 HL Listening Q4(a)",
-    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify the theme heard in the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -7638,7 +7638,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q4-b", topicId: "music-2-15", conceptId: "mus-describe-excerpt-features-heard",
     section: "L", questionRef: "2024 HL Listening Q4(b)",
-    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Describe two features of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -7684,7 +7684,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q4-c", topicId: "music-2-15", conceptId: "mus-beginning-excerpt-identify-instruments",
     section: "L", questionRef: "2024 HL Listening Q4(c)",
-    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Identify two of the instruments which play the melody at the beginning of the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -7730,7 +7730,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q4-d", topicId: "music-2-15", conceptId: "mus-compositional-describe-excerpt-feature",
     section: "L", questionRef: "2024 HL Listening Q4(d)",
-    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Identify and describe a compositional feature of the music as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -7777,7 +7777,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q5-a-a", topicId: "music-2-2", conceptId: "mus-associated-dance-excerpt-give",
     section: "L", questionRef: "2024 HL Listening Q5 A(a)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1.",
     questionText: "Identify the type of dance tune in this excerpt. Give its time signature and one bar of rhythm associated with it.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -7834,7 +7834,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q5-a-b", topicId: "music-2-2", conceptId: "mus-excerpt-instruments-melody-name",
     section: "L", questionRef: "2024 HL Listening Q5 A(b)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1.",
     questionText: "Name two instruments which play the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -7880,7 +7880,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q5-a-c", topicId: "music-2-2", conceptId: "mus-down-excerpt-form-letters",
     section: "L", questionRef: "2024 HL Listening Q5 A(c)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2.",
     questionText: "Using letters, write down the form of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -7926,7 +7926,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q5-a-d", topicId: "music-2-2", conceptId: "mus-different-discuss-excerpt-fusion",
     section: "L", questionRef: "2024 HL Listening Q5 A(d)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 3.",
     questionText: "This excerpt is a fusion of different styles of music. Discuss, with reference to the music heard in the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -8402,7 +8402,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q6-a", topicId: "music-2-4", conceptId: "mus-accompaniment-excerpt-played-this",
     section: "L", questionRef: "2024 HL Listening Q6(a)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of bars 1–3 is printed below.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. An outline score of bars 1–3 is printed below.",
     questionText: "The accompaniment in this excerpt is played on",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -8457,7 +8457,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q6-b", topicId: "music-2-3", conceptId: "mus-above-missing-score-signature",
     section: "L", questionRef: "2024 HL Listening Q6(b)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of bars 1–3 is printed below.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. An outline score of bars 1–3 is printed below.",
     questionText: "The missing time signature at X on the score above is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -8512,7 +8512,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q6-c", topicId: "music-2-4", conceptId: "mus-accompaniment-excerpt-features-heard",
     section: "L", questionRef: "2024 HL Listening Q6(c)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Identify two features of the accompaniment heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -8558,7 +8558,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q6-d", topicId: "music-2-4", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2024 HL Listening Q6(d)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -8604,7 +8604,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q6-e", topicId: "music-2-4", conceptId: "mus-bars-full-heard-introduction",
     section: "L", questionRef: "2024 HL Listening Q6(e)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "How many full bars of music are heard in the introduction?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -8659,7 +8659,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q6-f", topicId: "music-2-4", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2024 HL Listening Q6(f)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Identify two features of the vocal music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -8705,7 +8705,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2024 Higher Level — © State Examinations Commission.",
     id: "mus-2024-hl-l-q6-g", topicId: "music-2-4", conceptId: "mus-answer-between-both-describe",
     section: "L", questionRef: "2024 HL Listening Q6(g)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played once more and Excerpt 5, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played once more and Excerpt 5, played three times.",
     questionText: "Describe two differences between the music heard in Excerpt 4 and the music heard in Excerpt 5. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -9655,7 +9655,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q1-a", topicId: "music-2-14", conceptId: "mus-excerpt-features-identify-music",
     section: "L", questionRef: "2023 HL Listening Q1(a)",
-    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify two features of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -9710,7 +9710,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q1-b", topicId: "music-2-14", conceptId: "mus-describe-excerpt-music-name",
     section: "L", questionRef: "2023 HL Listening Q1(b)",
-    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Name a recording technique used in this excerpt. Describe this recording technique with reference to the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -9766,7 +9766,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q1-c", topicId: "music-2-14", conceptId: "mus-describe-excerpt-music-piano",
     section: "L", questionRef: "2023 HL Listening Q1(c)",
-    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe the music played by the piano in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -9821,7 +9821,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q1-d", topicId: "music-2-14", conceptId: "mus-chord-heard-line-word",
     section: "L", questionRef: "2023 HL Listening Q1(d)",
-    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. B♭ Gm Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. The lyrics are printed below. B♭ Gm Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
     questionText: "The chord heard at the word gun in line 2 is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -9876,7 +9876,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q1-e", topicId: "music-2-14", conceptId: "mus-bass-describe-guitar-identify",
     section: "L", questionRef: "2023 HL Listening Q1(e)",
-    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. B♭ Gm Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. The lyrics are printed below. B♭ Gm Line 1 Mama, just killed a man, Line 2 Put a gun against his head, pulled my trigger, now he’s dead. Line 3 Mama, life had just begun, Line 4 But now I’ve gone and thrown it all away.",
     questionText: "Identify and describe the instrumental technique played by the bass guitar at the end of line 2.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -9932,7 +9932,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q1-f", topicId: "music-2-14", conceptId: "mus-answer-between-both-describe",
     section: "L", questionRef: "2023 HL Listening Q1(f)",
-    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 3, played once more and Excerpt 4, played three times.",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 3, played once more and Excerpt 4, played three times.",
     questionText: "Describe two differences between the music in Excerpt 3 and the music in Excerpt 4. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -9987,7 +9987,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q1-g", topicId: "music-2-14", conceptId: "mus-excerpt-features-guitar-identify",
     section: "L", questionRef: "2023 HL Listening Q1(g)",
-    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 5, played three times.",
+    stem: "Five excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 5, played three times.",
     questionText: "Identify two features of the guitar music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -10042,7 +10042,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q2-a", topicId: "music-2-15", conceptId: "mus-excerpt-from-name-section",
     section: "L", questionRef: "2023 HL Listening Q2(a)",
-    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Name the section of the work from which the excerpt is taken.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -10097,7 +10097,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q2-b", topicId: "music-2-15", conceptId: "mus-excerpt-heard-theme-this",
     section: "L", questionRef: "2023 HL Listening Q2(b)",
-    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "The theme heard in this excerpt is the",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -10152,7 +10152,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q2-c-i", topicId: "music-2-15", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2023 HL Listening Q2(c)(i)",
-    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify two features of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -10208,7 +10208,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q2-c-ii", topicId: "music-2-15", conceptId: "mus-chosen-describe-excerpt-features",
     section: "L", questionRef: "2023 HL Listening Q2(c)(ii)",
-    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Describe one of the features you have chosen with reference to the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -10263,7 +10263,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q2-d", topicId: "music-2-15", conceptId: "mus-creates-describe-excerpt-feeling",
     section: "L", questionRef: "2023 HL Listening Q2(d)",
-    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe one way in which Tchaikovsky creates a feeling of tension in the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -10528,7 +10528,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q4-a", topicId: "music-2-17", conceptId: "mus-four-insert-missing-notes",
     section: "L", questionRef: "2023 HL Listening Q4(a)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of the opening four bars of the excerpt is printed below.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. An outline score of the opening four bars of the excerpt is printed below.",
     questionText: "Insert the four missing notes at X on the score.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -10593,7 +10593,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q4-b", topicId: "music-2-17", conceptId: "mus-baroque-describe-excerpt-feature",
     section: "L", questionRef: "2023 HL Listening Q4(b)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe one feature of Baroque music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -10648,7 +10648,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q4-c", topicId: "music-2-17", conceptId: "mus-answer-between-both-describe",
     section: "L", questionRef: "2023 HL Listening Q4(c)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1 and Excerpt 2 once more.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt.\nExcerpt 1 and Excerpt 2 once more.",
     questionText: "Describe one similarity and one difference between the music in Excerpt 1 and the music in Excerpt 2. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -10704,7 +10704,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q5-a-a", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-name-playing",
     section: "L", questionRef: "2023 HL Listening Q5 A(a)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1.",
     questionText: "Name the instrument playing in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -10759,7 +10759,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q5-a-b", topicId: "music-2-2", conceptId: "mus-excerpt-features-music-this",
     section: "L", questionRef: "2023 HL Listening Q5 A(b)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1.",
     questionText: "The music in this excerpt features (tick two)",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -10815,7 +10815,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q5-a-c", topicId: "music-2-2", conceptId: "mus-down-excerpt-form-letters",
     section: "L", questionRef: "2023 HL Listening Q5 A(c)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1.",
     questionText: "Using letters, write down the form of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -10870,7 +10870,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q5-a-d", topicId: "music-2-2", conceptId: "mus-associated-dance-excerpt-give",
     section: "L", questionRef: "2023 HL Listening Q5 A(d)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2.",
     questionText: "Identify the type of dance tune in this excerpt. Give its time signature and one bar of rhythm associated with it.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -10936,7 +10936,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q5-a-e", topicId: "music-2-2", conceptId: "mus-excerpt-instruments-melody-name",
     section: "L", questionRef: "2023 HL Listening Q5 A(e)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2.",
     questionText: "Name two instruments which play the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -10991,7 +10991,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q5-a-f", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2023 HL Listening Q5 A(f)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 3.",
     questionText: "Identify two features of sean nós singing as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -11046,7 +11046,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q5-a-g", topicId: "music-2-2", conceptId: "mus-accompaniment-describe-excerpt-features",
     section: "L", questionRef: "2023 HL Listening Q5 A(g)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 3.",
     questionText: "Describe two features of the instrumental accompaniment heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -11531,7 +11531,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q6-a", topicId: "music-2-4", conceptId: "mus-bars-before-enters-full",
     section: "L", questionRef: "2023 HL Listening Q6(a)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "How many full bars of music are heard in the introduction, before the vocalist enters?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -11586,7 +11586,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q6-b", topicId: "music-2-4", conceptId: "mus-excerpt-feature-identify-music",
     section: "L", questionRef: "2023 HL Listening Q6(b)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify a feature of the music played by the piano in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -11641,7 +11641,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q6-c", topicId: "music-2-4", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2023 HL Listening Q6(c)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.\n• The lyrics are printed below. Line 1 I never thought I’d miss you Line 2 Half as much as I do. Line 3 And I never thought I’d feel this way Line 4 The way I feel about you. Line 5 As soon as I wake up, every night every day. Line 6 I know that it’s you I need to take the blues away.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.\n• The lyrics are printed below. Line 1 I never thought I’d miss you Line 2 Half as much as I do. Line 3 And I never thought I’d feel this way Line 4 The way I feel about you. Line 5 As soon as I wake up, every night every day. Line 6 I know that it’s you I need to take the blues away.",
     questionText: "Identify two features of the vocal music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -11696,7 +11696,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q6-d", topicId: "music-2-4", conceptId: "mus-heard-instruments-lines-name",
     section: "L", questionRef: "2023 HL Listening Q6(d)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.\n• The lyrics are printed below. Line 1 I never thought I’d miss you Line 2 Half as much as I do. Line 3 And I never thought I’d feel this way Line 4 The way I feel about you. Line 5 As soon as I wake up, every night every day. Line 6 I know that it’s you I need to take the blues away.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.\n• The lyrics are printed below. Line 1 I never thought I’d miss you Line 2 Half as much as I do. Line 3 And I never thought I’d feel this way Line 4 The way I feel about you. Line 5 As soon as I wake up, every night every day. Line 6 I know that it’s you I need to take the blues away.",
     questionText: "Name two instruments (other than piano) heard playing in lines 5–6.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -11751,7 +11751,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q6-e", topicId: "music-2-4", conceptId: "mus-excerpt-instrument-melody-name",
     section: "L", questionRef: "2023 HL Listening Q6(e)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "Name the instrument which plays the melody at the start of this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -11806,7 +11806,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q6-f", topicId: "music-2-4", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2023 HL Listening Q6(f)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -11861,7 +11861,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q6-g", topicId: "music-2-3", conceptId: "mus-missing-notes-score",
     section: "L", questionRef: "2023 HL Listening Q6(g)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times. An outline score is printed below.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times. An outline score is printed below.",
     questionText: "The missing notes at X on the score are",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -11925,7 +11925,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2023 Higher Level — © State Examinations Commission.",
     id: "mus-2023-hl-l-q6-h", topicId: "music-2-4", conceptId: "mus-choice-closely-excerpt-from",
     section: "L", questionRef: "2023 HL Listening Q6(h)",
-    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt. Excerpt 5, played three times.",
+    stem: "Aural Skills This question is based on five excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 5, played three times.",
     questionText: "From your prescribed works, select the work which most closely resembles the music heard in this excerpt. Give a reason for your choice.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -12865,7 +12865,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q1-a", topicId: "music-2-9", conceptId: "mus-different-excerpt-instruments-melody",
     section: "L", questionRef: "2022 HL Listening Q1(a)",
-    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Name two different instruments which play the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -12920,7 +12920,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q1-b", topicId: "music-2-9", conceptId: "mus-answer-between-both-describe",
     section: "L", questionRef: "2022 HL Listening Q1(b)",
-    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe two differences between the music in this excerpt and the music in Excerpt 1. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -12975,7 +12975,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q1-c", topicId: "music-2-9", conceptId: "mus-four-insert-missing-notes",
     section: "L", questionRef: "2022 HL Listening Q1(c)",
-    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 3, played three times. An outline score of bars 1–4 of the excerpt is printed below.",
+    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. An outline score of bars 1–4 of the excerpt is printed below.",
     questionText: "Insert the four missing notes at X on the score.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -13040,7 +13040,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q1-d", topicId: "music-2-9", conceptId: "mus-describe-excerpt-features-music",
     section: "L", questionRef: "2022 HL Listening Q1(d)",
-    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Describe two features of the piano music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -13095,7 +13095,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q1-e", topicId: "music-2-9", conceptId: "mus-cadenza-could-described-excerpt",
     section: "L", questionRef: "2022 HL Listening Q1(e)",
-    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 5, played three times.",
+    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 5, played three times.",
     questionText: "The music in this excerpt could be described as a mini cadenza. Give one reason to support this statement with reference to the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -13150,7 +13150,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q1-f", topicId: "music-2-9", conceptId: "mus-cadence-excerpt-identify",
     section: "L", questionRef: "2022 HL Listening Q1(f)",
-    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 5, played three times.",
+    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 5, played three times.",
     questionText: "Identify the cadence at the end of the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -13205,7 +13205,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q1-g", topicId: "music-2-9", conceptId: "mus-concerto-describe-excerpt-feature",
     section: "L", questionRef: "2022 HL Listening Q1(g)",
-    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 5, played three times.",
+    stem: "Five excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 5, played three times.",
     questionText: "Describe one feature of the music which immediately follows the music in this excerpt in Piano Concerto in A major, K 488 by Mozart.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -13260,7 +13260,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q2-a", topicId: "music-2-10", conceptId: "mus-excerpt-instrument-melody-name",
     section: "L", questionRef: "2022 HL Listening Q2(a)",
-    stem: "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Name one instrument playing the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -13315,7 +13315,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q2-b", topicId: "music-2-10", conceptId: "mus-excerpt-feature-melody-this",
     section: "L", questionRef: "2022 HL Listening Q2(b)",
-    stem: "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "A feature of the melody in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -13370,7 +13370,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q2-c", topicId: "music-2-10", conceptId: "mus-accompaniment-describe-excerpt-features",
     section: "L", questionRef: "2022 HL Listening Q2(c)",
-    stem: "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe two features of the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -13425,7 +13425,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q2-d", topicId: "music-2-10", conceptId: "mus-describe-excerpt-features-heard",
     section: "L", questionRef: "2022 HL Listening Q2(d)",
-    stem: "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "This excerpt features inversion. Describe the inversion heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -13480,7 +13480,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q3-a", topicId: "music-2-11", conceptId: "mus-excerpt-instruments-melody-name",
     section: "L", questionRef: "2022 HL Listening Q3(a)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Name the two instruments playing the melody at the start of this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -13536,7 +13536,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q3-b-i", topicId: "music-2-11", conceptId: "mus-excerpt-explain-features-ponticello",
     section: "L", questionRef: "2022 HL Listening Q3(b)(i)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "This excerpt features sul ponticello. Explain sul ponticello.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -13591,7 +13591,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q3-b-ii", topicId: "music-2-11", conceptId: "mus-excerpt-features-instrument-name",
     section: "L", questionRef: "2022 HL Listening Q3(b)(ii)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "This excerpt features sul ponticello. Name one instrument that uses sul ponticello in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -13646,7 +13646,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q3-c", topicId: "music-2-11", conceptId: "mus-excerpt-this",
     section: "L", questionRef: "2022 HL Listening Q3(c)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "In this excerpt",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -13701,7 +13701,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q3-d", topicId: "music-2-11", conceptId: "mus-answer-between-both-describe",
     section: "L", questionRef: "2022 HL Listening Q3(d)",
-    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Seachanges (with Danse Macabre) by Raymond Deane.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe two differences between the music heard in this excerpt and the music heard in Excerpt 1. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -13987,7 +13987,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q5-a-a", topicId: "music-2-2", conceptId: "mus-associated-dance-excerpt-give",
     section: "L", questionRef: "2022 HL Listening Q5 A(a)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1.",
     questionText: "Identify the type of dance tune heard in this excerpt, and give its time signature and one bar of rhythm associated with it.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -14053,7 +14053,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q5-a-b", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-melody-name",
     section: "L", questionRef: "2022 HL Listening Q5 A(b)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1.",
     questionText: "Name the instrument playing the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -14108,7 +14108,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q5-a-c", topicId: "music-2-2", conceptId: "mus-describe-excerpt-feature-heard",
     section: "L", questionRef: "2022 HL Listening Q5 A(c)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1.",
     questionText: "Describe one non-traditional feature of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -14163,7 +14163,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q5-a-d", topicId: "music-2-2", conceptId: "mus-excerpt-identify-singing-style",
     section: "L", questionRef: "2022 HL Listening Q5 A(d)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2.",
     questionText: "Identify the style of singing in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -14218,7 +14218,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q5-a-e", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2022 HL Listening Q5 A(e)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2.",
     questionText: "Identify two features of this style of singing, as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -14273,7 +14273,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q5-a-f", topicId: "music-2-2", conceptId: "mus-excerpt-following-heard-this",
     section: "L", questionRef: "2022 HL Listening Q5 A(f)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2.",
     questionText: "Which of the following can be heard in this excerpt?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -14328,7 +14328,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q5-a-g", topicId: "music-2-2", conceptId: "mus-excerpt-heard-identify-this",
     section: "L", questionRef: "2022 HL Listening Q5 A(g)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 3.",
     questionText: "Identify the type of tune heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -14383,7 +14383,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q5-a-h", topicId: "music-2-2", conceptId: "mus-excerpt-identify-instrument-playing",
     section: "L", questionRef: "2022 HL Listening Q5 A(h)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 3.",
     questionText: "Identify the instrument playing the tune in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -14438,7 +14438,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q5-a-i", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2022 HL Listening Q5 A(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 3.",
     questionText: "Identify two traditional features of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -14923,7 +14923,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q6-a", topicId: "music-2-4", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2022 HL Listening Q6(a)",
-    stem: "Aural Skills. This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Aural Skills. This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -14978,7 +14978,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q6-b", topicId: "music-2-4", conceptId: "mus-describe-excerpt-feature-heard",
     section: "L", questionRef: "2022 HL Listening Q6(b)",
-    stem: "Aural Skills. This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Aural Skills. This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe one feature of the piano music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -15033,7 +15033,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q6-c", topicId: "music-2-4", conceptId: "mus-composer-dance-death-does",
     section: "L", questionRef: "2022 HL Listening Q6(c)",
-    stem: "Aural Skills. This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Aural Skills. This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "The music in this excerpt is taken from a dance of death. How does the composer portray a dance of death in the music heard in this excerpt?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -15088,7 +15088,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q6-d", topicId: "music-2-3", conceptId: "mus-five-insert-missing-notes",
     section: "L", questionRef: "2022 HL Listening Q6(d)",
-    stem: "Aural Skills. This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times. An outline score is printed below.",
+    stem: "Aural Skills. This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times. An outline score is printed below.",
     questionText: "Insert the five missing notes at X on the score.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -15153,7 +15153,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2022 Higher Level — © State Examinations Commission.",
     id: "mus-2022-hl-l-q6-e", topicId: "music-2-4", conceptId: "mus-answer-between-both-describe",
     section: "L", questionRef: "2022 HL Listening Q6(e)",
-    stem: "Aural Skills. This question is based on six excerpts of music.\n• Answer the questions on each excerpt. Excerpt 5 and Excerpt 6, played three times.",
+    stem: "Aural Skills. This question is based on six excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 5 and Excerpt 6, played three times.",
     questionText: "Describe two differences between the music heard in Excerpt 5 and the music heard in Excerpt 6. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -16135,7 +16135,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q1-a-i", topicId: "music-2-10", conceptId: "mus-excerpt-instruments-melody-playing",
     section: "L", questionRef: "2021 HL Listening Q1(a)(i)",
-    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "The instruments playing the melody in this excerpt are (tick two)",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -16191,7 +16191,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q1-a-ii", topicId: "music-2-10", conceptId: "mus-melody-range-this",
     section: "L", questionRef: "2021 HL Listening Q1(a)(ii)",
-    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "The range of this melody is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -16246,7 +16246,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q1-b", topicId: "music-2-10", conceptId: "mus-describe-excerpt-music-texture",
     section: "L", questionRef: "2021 HL Listening Q1(b)",
-    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe the texture of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -16292,7 +16292,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q1-c", topicId: "music-2-10", conceptId: "mus-between-describe-difference-excerpt",
     section: "L", questionRef: "2021 HL Listening Q1(c)",
-    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "Describe one difference between the music in this excerpt and the music in Excerpt 2.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -16338,7 +16338,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q1-d", topicId: "music-2-10", conceptId: "mus-describe-excerpt-features-music",
     section: "L", questionRef: "2021 HL Listening Q1(d)",
-    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Describe two features of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -16384,7 +16384,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q1-e", topicId: "music-2-10", conceptId: "mus-four-insert-missing-notes",
     section: "L", questionRef: "2021 HL Listening Q1(e)",
-    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 5, played three times. An outline score of bars 1–4 of the excerpt is printed below.",
+    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 5, played three times. An outline score of bars 1–4 of the excerpt is printed below.",
     questionText: "Insert the four missing notes at X on the score.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -16448,7 +16448,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q1-f", topicId: "music-2-10", conceptId: "mus-accompaniment-describe-excerpt-features",
     section: "L", questionRef: "2021 HL Listening Q1(f)",
-    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 5, played twice more.",
+    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 5, played twice more.",
     questionText: "Describe two features of the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -16495,7 +16495,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q1-g", topicId: "music-2-10", conceptId: "mus-answer-between-both-describe",
     section: "L", questionRef: "2021 HL Listening Q1(g)",
-    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 6, played three times.",
+    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 6, played three times.",
     questionText: "Describe one difference between the music in this excerpt and the music in Excerpt 5. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -16541,7 +16541,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q1-h", topicId: "music-2-10", conceptId: "mus-being-described-excerpt-give",
     section: "L", questionRef: "2021 HL Listening Q1(h)",
-    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 6, played three times.",
+    stem: "Six excerpts from the fourth movement of Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 6, played three times.",
     questionText: "The music in this excerpt is often described as being suited to a procession. Give one reason to support this statement with reference to the music heard in the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -16780,7 +16780,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q3-a", topicId: "music-2-9", conceptId: "mus-describe-excerpt-features-heard",
     section: "L", questionRef: "2021 HL Listening Q3(a)",
-    stem: "Three excerpts from the second movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Three excerpts from the second movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "This excerpt features imitation. Describe the imitation heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -16826,7 +16826,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q3-b", topicId: "music-2-9", conceptId: "mus-cadence-excerpt-identify-this",
     section: "L", questionRef: "2021 HL Listening Q3(b)",
-    stem: "Three excerpts from the second movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Three excerpts from the second movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify the cadence at the end of this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -16872,7 +16872,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q3-c", topicId: "music-2-9", conceptId: "mus-excerpt-features-identify-music",
     section: "L", questionRef: "2021 HL Listening Q3(c)",
-    stem: "Three excerpts from the second movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Three excerpts from the second movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Identify two features of the music played on the piano in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -16918,7 +16918,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q3-d", topicId: "music-2-9", conceptId: "mus-describe-excerpt-features-music",
     section: "L", questionRef: "2021 HL Listening Q3(d)",
-    stem: "Three excerpts from the second movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 3, played twice.",
+    stem: "Three excerpts from the second movement of Piano Concerto in A major K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 3, played twice.",
     questionText: "Describe two features of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -17222,7 +17222,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q5-a-a", topicId: "music-2-2", conceptId: "mus-associated-case-dance-each",
     section: "L", questionRef: "2021 HL Listening Q5 A(a)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1. Two dance tunes.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1. Two dance tunes.",
     questionText: "In the case of each dance tune, identify the type of dance and give its time signature and one bar of rhythm associated with it.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -17282,7 +17282,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q5-a-b", topicId: "music-2-2", conceptId: "mus-dance-first-instrument-melody",
     section: "L", questionRef: "2021 HL Listening Q5 A(b)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1. Two dance tunes.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1. Two dance tunes.",
     questionText: "Name one instrument playing the melody in the first dance tune.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -17328,7 +17328,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q5-a-c", topicId: "music-2-2", conceptId: "mus-excerpt-identify-singing-style",
     section: "L", questionRef: "2021 HL Listening Q5 A(c)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2.",
     questionText: "Identify the style of singing in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 0.5,
     rows: [
@@ -17374,7 +17374,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q5-a-d", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2021 HL Listening Q5 A(d)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2.",
     questionText: "Identify two features of this style of singing, as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -17420,7 +17420,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q5-a-e", topicId: "music-2-2", conceptId: "mus-excerpt-following-heard-this",
     section: "L", questionRef: "2021 HL Listening Q5 A(e)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2.",
     questionText: "Which of the following can be heard in this excerpt?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -17475,7 +17475,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q5-a-f", topicId: "music-2-2", conceptId: "mus-down-excerpt-form-letters",
     section: "L", questionRef: "2021 HL Listening Q5 A(f)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2.",
     questionText: "Using letters, write down the form of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -17521,7 +17521,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q5-a-g", topicId: "music-2-2", conceptId: "mus-another-contemporary-describe-different",
     section: "L", questionRef: "2021 HL Listening Q5 A(g)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 3.",
     questionText: "This excerpt is a fusion of different styles of music. One of these styles is Irish traditional music. Another style is Modern/Contemporary. Describe one feature of each of these styles as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -17998,7 +17998,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q6-a-i", topicId: "music-2-4", conceptId: "mus-excerpt-identify-instrument-melody",
     section: "L", questionRef: "2021 HL Listening Q6(a)(i)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify the instrument playing the melody at the start of the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -18044,7 +18044,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q6-a-ii", topicId: "music-2-4", conceptId: "mus-melody-played-then",
     section: "L", questionRef: "2021 HL Listening Q6(a)(ii)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "The melody is then played by",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -18099,7 +18099,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q6-b", topicId: "music-2-4", conceptId: "mus-excerpt-features-music-this",
     section: "L", questionRef: "2021 HL Listening Q6(b)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "The music in this excerpt features",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -18154,7 +18154,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q6-c", topicId: "music-2-3", conceptId: "mus-four-given-insert-melody",
     section: "L", questionRef: "2021 HL Listening Q6(c)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times. An outline score is printed below.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times. An outline score is printed below.",
     questionText: "Insert the four missing melody notes at X on the score. Use the given rhythm.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -18218,7 +18218,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q6-d", topicId: "music-2-4", conceptId: "mus-feature-identify-lines-melody",
     section: "L", questionRef: "2021 HL Listening Q6(d)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. A verse followed by an instrumental section.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. A verse followed by an instrumental section.",
     questionText: "Identify one feature of the vocal melody in lines 1–4.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -18273,7 +18273,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q6-e", topicId: "music-2-4", conceptId: "mus-accompaniment-excerpt-features-lines",
     section: "L", questionRef: "2021 HL Listening Q6(e)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. A verse followed by an instrumental section.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. A verse followed by an instrumental section.",
     questionText: "In lines 1–3 of this excerpt, the string accompaniment features",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -18329,7 +18329,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q6-f", topicId: "music-2-4", conceptId: "mus-bass-excerpt-features-guitar",
     section: "L", questionRef: "2021 HL Listening Q6(f)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. A verse followed by an instrumental section.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. A verse followed by an instrumental section.",
     questionText: "In lines 6–8 of this excerpt, the bass guitar part features",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -18385,7 +18385,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2021 Higher Level — © State Examinations Commission.",
     id: "mus-2021-hl-l-q6-g", topicId: "music-2-4", conceptId: "mus-answer-between-both-describe",
     section: "L", questionRef: "2021 HL Listening Q6(g)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Describe two differences between the music heard in this excerpt and the music heard in Excerpt 3. You must refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -19360,7 +19360,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q1-a", topicId: "music-2-12", conceptId: "mus-feature-identify-lines-music",
     section: "L", questionRef: "2020 HL Listening Q1(a)",
-    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 1, played three times.\n• The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.\n• The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave",
     questionText: "Identify one feature of the vocal music in lines 1–2.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -19415,7 +19415,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q1-b", topicId: "music-2-12", conceptId: "mus-change-describe-line-music",
     section: "L", questionRef: "2020 HL Listening Q1(b)",
-    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 1, played three times.\n• The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.\n• The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave",
     questionText: "Describe one change which takes place in the vocal music in line 3.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -19470,7 +19470,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q1-c", topicId: "music-2-12", conceptId: "mus-accompaniment-describe-feature-instrumental",
     section: "L", questionRef: "2020 HL Listening Q1(c)",
-    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 1, played three times.\n• The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.\n• The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave",
     questionText: "Describe one feature of the instrumental accompaniment in lines 1–4.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -19525,7 +19525,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q1-d", topicId: "music-2-12", conceptId: "mus-cadence-line",
     section: "L", questionRef: "2020 HL Listening Q1(d)",
-    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 1, played three times.\n• The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.\n• The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave",
     questionText: "The cadence at the end of Line 5 is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -19580,7 +19580,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q1-e", topicId: "music-2-12", conceptId: "mus-four-given-insert-missing",
     section: "L", questionRef: "2020 HL Listening Q1(e)",
-    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 2. An excerpt from verse 1 of She’s Leaving Home played three times. An outline score is printed below.",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt.\nExcerpt 2. An excerpt from verse 1 of She’s Leaving Home played three times. An outline score is printed below.",
     questionText: "Insert the four missing notes at X on the score. Use the given rhythm.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -19644,7 +19644,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q1-f", topicId: "music-2-12", conceptId: "mus-accompaniment-describe-excerpt-features",
     section: "L", questionRef: "2020 HL Listening Q1(f)",
-    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 3. Verse 1 from She’s Leaving Home played twice.",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt.\nExcerpt 3. Verse 1 from She’s Leaving Home played twice.",
     questionText: "Describe two features of the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -19699,7 +19699,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q1-g", topicId: "music-2-12", conceptId: "mus-before-describe-enter-excerpt",
     section: "L", questionRef: "2020 HL Listening Q1(g)",
-    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 4, played three times.\n• The lyrics are printed below. Line 1 It was twenty years ago today Line 2 Sergeant Pepper taught the band to play Line 3 They’ve been going in and out of style Line 4 But they’re guaranteed to raise a smile Line 5 So may I introduce to you Line 6 The act you’ve known for all these years; Line 7 Sergeant Pepper’s Lonely Hearts Club Band",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.\n• The lyrics are printed below. Line 1 It was twenty years ago today Line 2 Sergeant Pepper taught the band to play Line 3 They’ve been going in and out of style Line 4 But they’re guaranteed to raise a smile Line 5 So may I introduce to you Line 6 The act you’ve known for all these years; Line 7 Sergeant Pepper’s Lonely Hearts Club Band",
     questionText: "Describe one feature of the opening of this excerpt (before the instruments enter).",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -19754,7 +19754,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q1-h", topicId: "music-2-12", conceptId: "mus-drum-heard-lines-rhythm",
     section: "L", questionRef: "2020 HL Listening Q1(h)",
-    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 4, played three times.\n• The lyrics are printed below. Line 1 It was twenty years ago today Line 2 Sergeant Pepper taught the band to play Line 3 They’ve been going in and out of style Line 4 But they’re guaranteed to raise a smile Line 5 So may I introduce to you Line 6 The act you’ve known for all these years; Line 7 Sergeant Pepper’s Lonely Hearts Club Band",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.\n• The lyrics are printed below. Line 1 It was twenty years ago today Line 2 Sergeant Pepper taught the band to play Line 3 They’ve been going in and out of style Line 4 But they’re guaranteed to raise a smile Line 5 So may I introduce to you Line 6 The act you’ve known for all these years; Line 7 Sergeant Pepper’s Lonely Hearts Club Band",
     questionText: "The snare drum rhythm heard in lines 1–4 is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -19818,7 +19818,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q1-i", topicId: "music-2-12", conceptId: "mus-describe-excerpt-features-follows",
     section: "L", questionRef: "2020 HL Listening Q1(i)",
-    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt. Excerpt 4, played three times.\n• The lyrics are printed below. Line 1 It was twenty years ago today Line 2 Sergeant Pepper taught the band to play Line 3 They’ve been going in and out of style Line 4 But they’re guaranteed to raise a smile Line 5 So may I introduce to you Line 6 The act you’ve known for all these years; Line 7 Sergeant Pepper’s Lonely Hearts Club Band",
+    stem: "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.\n• The lyrics are printed below. Line 1 It was twenty years ago today Line 2 Sergeant Pepper taught the band to play Line 3 They’ve been going in and out of style Line 4 But they’re guaranteed to raise a smile Line 5 So may I introduce to you Line 6 The act you’ve known for all these years; Line 7 Sergeant Pepper’s Lonely Hearts Club Band",
     questionText: "Describe two features of the music in this song which immediately follows the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -19873,7 +19873,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q2-a", topicId: "music-2-10", conceptId: "mus-excerpt-features-identify-melody",
     section: "L", questionRef: "2020 HL Listening Q2(a)",
-    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify two features of the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -19928,7 +19928,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q2-b", topicId: "music-2-10", conceptId: "mus-accompaniment-describe-excerpt-feature",
     section: "L", questionRef: "2020 HL Listening Q2(b)",
-    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Describe one feature of the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -19983,7 +19983,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q2-c", topicId: "music-2-10", conceptId: "mus-excerpt-identify-instrument-melody",
     section: "L", questionRef: "2020 HL Listening Q2(c)",
-    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Identify the instrument which plays the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -20038,7 +20038,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q2-d", topicId: "music-2-10", conceptId: "mus-accompaniment-excerpt-features-following",
     section: "L", questionRef: "2020 HL Listening Q2(d)",
-    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Which one of the following features can be heard in the accompaniment in this excerpt?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -20093,7 +20093,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q2-e-i", topicId: "music-2-10", conceptId: "mus-excerpt-heard-name-theme",
     section: "L", questionRef: "2020 HL Listening Q2(e)(i)",
-    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Name the theme heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 0.5,
     rows: [
@@ -20148,7 +20148,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q2-e-ii", topicId: "music-2-10", conceptId: "mus-berlioz-every-fantastique-movement",
     section: "L", questionRef: "2020 HL Listening Q2(e)(ii)",
-    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Berlioz uses this theme in every movement of Symphonie Fantastique. What is the reason for this?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -20203,7 +20203,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q3-a", topicId: "music-2-9", conceptId: "mus-excerpt-from-taken-this",
     section: "L", questionRef: "2020 HL Listening Q3(a)",
-    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
     questionText: "This excerpt is taken from the",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -20258,7 +20258,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q3-b", topicId: "music-2-9", conceptId: "mus-bars-features-melody",
     section: "L", questionRef: "2020 HL Listening Q3(b)",
-    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
     questionText: "The melody in bars 5 and 6 features",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -20313,7 +20313,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q3-c", topicId: "music-2-9", conceptId: "mus-describe-difference-excerpt-first",
     section: "L", questionRef: "2020 HL Listening Q3(c)",
-    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
     questionText: "In this excerpt, we first hear the melody played by the orchestra and then by the soloist. Describe one difference in the melody when played by the soloist.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -20368,7 +20368,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q3-d", topicId: "music-2-9", conceptId: "mus-describe-excerpt-feature-music",
     section: "L", questionRef: "2020 HL Listening Q3(d)",
-    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe one feature of the piano music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -20423,7 +20423,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q3-e", topicId: "music-2-9", conceptId: "mus-excerpt-features-music-orchestral",
     section: "L", questionRef: "2020 HL Listening Q3(e)",
-    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "The orchestral music in this excerpt features",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -20478,7 +20478,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q3-f", topicId: "music-2-9", conceptId: "mus-chord-excerpt-final-identify",
     section: "L", questionRef: "2020 HL Listening Q3(f)",
-    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Identify the tonality of the final chord of the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -20808,7 +20808,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q5-a-a", topicId: "music-2-2", conceptId: "mus-associated-case-dance-each",
     section: "L", questionRef: "2020 HL Listening Q5 A(a)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt. Excerpt 1. Two dance tunes.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1. Two dance tunes.",
     questionText: "In the case of each dance tune, identify the type of dance and give its time signature and one bar of rhythm associated with it.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -20877,7 +20877,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q5-a-b", topicId: "music-2-2", conceptId: "mus-different-excerpt-heard-identify",
     section: "L", questionRef: "2020 HL Listening Q5 A(b)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt. Excerpt 1. Two dance tunes.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1. Two dance tunes.",
     questionText: "Identify two different instruments heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -20932,7 +20932,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q5-a-c", topicId: "music-2-2", conceptId: "mus-excerpt-heard-identify-singing",
     section: "L", questionRef: "2020 HL Listening Q5 A(c)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt. Excerpt 2. A verse from Caoineadh na dTrí Mhuire.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2. A verse from Caoineadh na dTrí Mhuire.",
     questionText: "Identify the style of singing heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -20987,7 +20987,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q5-a-d", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2020 HL Listening Q5 A(d)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt. Excerpt 2. A verse from Caoineadh na dTrí Mhuire.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2. A verse from Caoineadh na dTrí Mhuire.",
     questionText: "Identify two features of this style of singing, as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -21042,7 +21042,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q5-a-e", topicId: "music-2-2", conceptId: "mus-excerpt-feature-heard-identify",
     section: "L", questionRef: "2020 HL Listening Q5 A(e)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt. Excerpt 2. A verse from Caoineadh na dTrí Mhuire.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2. A verse from Caoineadh na dTrí Mhuire.",
     questionText: "Identify one feature of the melody heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -21097,7 +21097,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q5-a-f", topicId: "music-2-2", conceptId: "mus-lines-pipes-uilleann",
     section: "L", questionRef: "2020 HL Listening Q5 A(f)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt. Excerpt 3. An excerpt from Granuaile by Shaun Davey.\n• The lyrics are printed below. Line 1 What can you see from the masthead? Line 2 A trading ship for Galway Line 3 What does he pay for the passage? Line 4 A just reward for the pilot Line 5 Rising up on the breaking wave Line 6 Let it carry you over all the sea in the morning Line 7 Weigh, hey, and up she rises, Line 8 Sun is up, the bird’s a-wing Line 9 And we’re sailing free and easy",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 3. An excerpt from Granuaile by Shaun Davey.\n• The lyrics are printed below. Line 1 What can you see from the masthead? Line 2 A trading ship for Galway Line 3 What does he pay for the passage? Line 4 A just reward for the pilot Line 5 Rising up on the breaking wave Line 6 Let it carry you over all the sea in the morning Line 7 Weigh, hey, and up she rises, Line 8 Sun is up, the bird’s a-wing Line 9 And we’re sailing free and easy",
     questionText: "In lines 2 and 4, the uilleann pipes",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -21152,7 +21152,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q5-a-g", topicId: "music-2-2", conceptId: "mus-describe-excerpt-feature-heard",
     section: "L", questionRef: "2020 HL Listening Q5 A(g)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt. Excerpt 3. An excerpt from Granuaile by Shaun Davey.\n• The lyrics are printed below. Line 1 What can you see from the masthead? Line 2 A trading ship for Galway Line 3 What does he pay for the passage? Line 4 A just reward for the pilot Line 5 Rising up on the breaking wave Line 6 Let it carry you over all the sea in the morning Line 7 Weigh, hey, and up she rises, Line 8 Sun is up, the bird’s a-wing Line 9 And we’re sailing free and easy",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 3. An excerpt from Granuaile by Shaun Davey.\n• The lyrics are printed below. Line 1 What can you see from the masthead? Line 2 A trading ship for Galway Line 3 What does he pay for the passage? Line 4 A just reward for the pilot Line 5 Rising up on the breaking wave Line 6 Let it carry you over all the sea in the morning Line 7 Weigh, hey, and up she rises, Line 8 Sun is up, the bird’s a-wing Line 9 And we’re sailing free and easy",
     questionText: "Describe one non-traditional feature of the music heard in lines 5–9 of this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -21551,7 +21551,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q6-a", topicId: "music-2-3", conceptId: "mus-four-insert-missing-notes",
     section: "L", questionRef: "2020 HL Listening Q6(a)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played twice. An outline score of bars 1–8 of this excerpt is printed below.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played twice. An outline score of bars 1–8 of this excerpt is printed below.",
     questionText: "Insert the four missing notes at X on the score.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -21615,7 +21615,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q6-b", topicId: "music-2-4", conceptId: "mus-excerpt-instruments-melody-name",
     section: "L", questionRef: "2020 HL Listening Q6(b)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played twice more.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played twice more.",
     questionText: "Name the instruments that play the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -21670,7 +21670,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q6-c", topicId: "music-2-4", conceptId: "mus-excerpt-form-heard-music",
     section: "L", questionRef: "2020 HL Listening Q6(c)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played twice more.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played twice more.",
     questionText: "The form of the music heard in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -21725,7 +21725,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q6-d", topicId: "music-2-4", conceptId: "mus-describe-excerpt-music-texture",
     section: "L", questionRef: "2020 HL Listening Q6(d)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe the texture of the music in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -21780,7 +21780,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q6-e", topicId: "music-2-4", conceptId: "mus-introduction-piano-played-rhythm",
     section: "L", questionRef: "2020 HL Listening Q6(e)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day.",
     questionText: "The rhythm of the introduction played on piano is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -21844,7 +21844,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q6-f", topicId: "music-2-4", conceptId: "mus-between-describe-line-music",
     section: "L", questionRef: "2020 HL Listening Q6(f)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day.",
     questionText: "Describe one similarity between the vocal music of line 1 and the vocal music of line 3.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -21899,7 +21899,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q6-g", topicId: "music-2-4", conceptId: "mus-cadence-identify-line",
     section: "L", questionRef: "2020 HL Listening Q6(g)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day.",
     questionText: "Identify the cadence at the end of line 6.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -21954,7 +21954,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q6-h", topicId: "music-2-4", conceptId: "mus-achieved-climax-line-music",
     section: "L", questionRef: "2020 HL Listening Q6(h)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day.",
     questionText: "There is a climax in the music in line 7. How is this achieved?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -22009,7 +22009,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2020 Higher Level — © State Examinations Commission.",
     id: "mus-2020-hl-l-q6-i", topicId: "music-2-4", conceptId: "mus-answer-between-both-describe",
     section: "L", questionRef: "2020 HL Listening Q6(i)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Describe two differences between the music heard in this excerpt and the music heard in Excerpt 3. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -22908,7 +22908,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q1-a", topicId: "music-2-15", conceptId: "mus-bars-different-excerpt-instruments",
     section: "L", questionRef: "2019 HL Listening Q1(a)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
     questionText: "Name two different instruments which play the melody in bars 1–8 of this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -22963,7 +22963,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q1-b", topicId: "music-2-15", conceptId: "mus-accompaniment-describe-excerpt-features",
     section: "L", questionRef: "2019 HL Listening Q1(b)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
     questionText: "Describe two features of the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -23018,7 +23018,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q1-c", topicId: "music-2-15", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2019 HL Listening Q1(c)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -23073,7 +23073,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q1-d", topicId: "music-2-15", conceptId: "mus-bars-five-insert-missing",
     section: "L", questionRef: "2019 HL Listening Q1(d)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 3, played three times. An outline score of the music in this excerpt is printed below.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. An outline score of the music in this excerpt is printed below.",
     questionText: "Insert the five missing notes in bars 1 and 2, at X on the score.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3.5,
     rows: [
@@ -23139,7 +23139,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q1-e", topicId: "music-2-15", conceptId: "mus-conflict-creates-excerpt-feature",
     section: "L", questionRef: "2019 HL Listening Q1(e)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 3, played once more.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 3, played once more.",
     questionText: "Identify one feature which creates a feeling of conflict in the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -23194,7 +23194,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q1-f", topicId: "music-2-15", conceptId: "mus-excerpt-from-name-section",
     section: "L", questionRef: "2019 HL Listening Q1(f)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Name the section from which this excerpt is taken.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -23249,7 +23249,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q1-g", topicId: "music-2-15", conceptId: "mus-based-melody-name-theme",
     section: "L", questionRef: "2019 HL Listening Q1(g)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Name the theme on which this melody is based.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -23304,7 +23304,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q1-h", topicId: "music-2-15", conceptId: "mus-answer-both-describe-differs",
     section: "L", questionRef: "2019 HL Listening Q1(h)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Describe two ways in which the thematic material heard in this excerpt differs from the first time it is heard in Romeo and Juliet Fantasy Overture by Tchaikovsky. You must refer to both sections in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -23359,7 +23359,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q1-i", topicId: "music-2-15", conceptId: "mus-being-chorale-described-excerpt",
     section: "L", questionRef: "2019 HL Listening Q1(i)",
-    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 5, played three times.",
+    stem: "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 5, played three times.",
     questionText: "The music in this excerpt is often described as being like a chorale. Give one reason to support this statement with reference to the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -23910,7 +23910,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q4-a", topicId: "music-2-14", conceptId: "mus-before-chords-enter-excerpt",
     section: "L", questionRef: "2019 HL Listening Q4(a)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity.",
     questionText: "The opening chords of this excerpt (before the vocals enter) are",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -23965,7 +23965,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q4-b", topicId: "music-2-14", conceptId: "mus-drums-enter-excerpt-first",
     section: "L", questionRef: "2019 HL Listening Q4(b)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity.",
     questionText: "Identify the word in the text where the drums enter for the first time in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -24020,7 +24020,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q4-c", topicId: "music-2-14", conceptId: "mus-describe-line-magnifico-music",
     section: "L", questionRef: "2019 HL Listening Q4(c)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity.",
     questionText: "Describe the vocal music on the word Magnifico in line 4.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -24075,7 +24075,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q4-d", topicId: "music-2-14", conceptId: "mus-bass-describe-excerpt-line",
     section: "L", questionRef: "2019 HL Listening Q4(d)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity.",
     questionText: "Describe the bass line in line 7 of this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -24130,7 +24130,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q4-e-i", topicId: "music-2-14", conceptId: "mus-feature-lines",
     section: "L", questionRef: "2019 HL Listening Q4(e)(i)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 2, played three times. The lyrics are printed below. Line 8 Easy come, easy go, will you let me go? Line 9 Bismillah. No we will not let you go. Let him go. Line 10 Bismillah. We will not let you go. Let him go. Line 11 Bismillah. We will not let you go. Let me go. Line 12 Will not let you go. Let me go. Will not let you go. Let me go. Oh. Line 13 No no no no no no no. Line 14 Oh mama mia, mama mia. Mama mia let me go. Line 15 Beelzebub has a devil put aside for me, for me, for me.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times. The lyrics are printed below. Line 8 Easy come, easy go, will you let me go? Line 9 Bismillah. No we will not let you go. Let him go. Line 10 Bismillah. We will not let you go. Let him go. Line 11 Bismillah. We will not let you go. Let me go. Line 12 Will not let you go. Let me go. Will not let you go. Let me go. Oh. Line 13 No no no no no no no. Line 14 Oh mama mia, mama mia. Mama mia let me go. Line 15 Beelzebub has a devil put aside for me, for me, for me.",
     questionText: "Lines 9–12 feature",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -24185,7 +24185,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q4-e-ii", topicId: "music-2-14", conceptId: "mus-excerpt-explain-feature-heard",
     section: "L", questionRef: "2019 HL Listening Q4(e)(ii)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 2, played three times. The lyrics are printed below. Line 8 Easy come, easy go, will you let me go? Line 9 Bismillah. No we will not let you go. Let him go. Line 10 Bismillah. We will not let you go. Let him go. Line 11 Bismillah. We will not let you go. Let me go. Line 12 Will not let you go. Let me go. Will not let you go. Let me go. Oh. Line 13 No no no no no no no. Line 14 Oh mama mia, mama mia. Mama mia let me go. Line 15 Beelzebub has a devil put aside for me, for me, for me.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times. The lyrics are printed below. Line 8 Easy come, easy go, will you let me go? Line 9 Bismillah. No we will not let you go. Let him go. Line 10 Bismillah. We will not let you go. Let him go. Line 11 Bismillah. We will not let you go. Let me go. Line 12 Will not let you go. Let me go. Will not let you go. Let me go. Oh. Line 13 No no no no no no no. Line 14 Oh mama mia, mama mia. Mama mia let me go. Line 15 Beelzebub has a devil put aside for me, for me, for me.",
     questionText: "Explain this feature, with reference to the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -24240,7 +24240,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q4-f", topicId: "music-2-14", conceptId: "mus-emphasised-line-music-word",
     section: "L", questionRef: "2019 HL Listening Q4(f)",
-    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt. Excerpt 2, played three times. The lyrics are printed below. Line 8 Easy come, easy go, will you let me go? Line 9 Bismillah. No we will not let you go. Let him go. Line 10 Bismillah. We will not let you go. Let him go. Line 11 Bismillah. We will not let you go. Let me go. Line 12 Will not let you go. Let me go. Will not let you go. Let me go. Oh. Line 13 No no no no no no no. Line 14 Oh mama mia, mama mia. Mama mia let me go. Line 15 Beelzebub has a devil put aside for me, for me, for me.",
+    stem: "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times. The lyrics are printed below. Line 8 Easy come, easy go, will you let me go? Line 9 Bismillah. No we will not let you go. Let him go. Line 10 Bismillah. We will not let you go. Let him go. Line 11 Bismillah. We will not let you go. Let me go. Line 12 Will not let you go. Let me go. Will not let you go. Let me go. Oh. Line 13 No no no no no no no. Line 14 Oh mama mia, mama mia. Mama mia let me go. Line 15 Beelzebub has a devil put aside for me, for me, for me.",
     questionText: "How is the word ‘no’ emphasised in the music of line 13?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -24295,7 +24295,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q5-a-a", topicId: "music-2-2", conceptId: "mus-excerpt-feature-heard-identify",
     section: "L", questionRef: "2019 HL Listening Q5 A(a)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1. One verse from the ballad The Bonny Irish Maid.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1. One verse from the ballad The Bonny Irish Maid.",
     questionText: "Identify one traditional feature of this style of music as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -24350,7 +24350,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q5-a-b", topicId: "music-2-2", conceptId: "mus-excerpt-feature-heard-identify",
     section: "L", questionRef: "2019 HL Listening Q5 A(b)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1. One verse from the ballad The Bonny Irish Maid.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1. One verse from the ballad The Bonny Irish Maid.",
     questionText: "Identify one non-traditional feature of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -24405,7 +24405,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q5-a-c", topicId: "music-2-2", conceptId: "mus-down-form-letters-using",
     section: "L", questionRef: "2019 HL Listening Q5 A(c)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1. One verse from the ballad The Bonny Irish Maid.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1. One verse from the ballad The Bonny Irish Maid.",
     questionText: "Using letters, write down the form of the verse.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -24460,7 +24460,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q5-a-d", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-melody-name",
     section: "L", questionRef: "2019 HL Listening Q5 A(d)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2.",
     questionText: "Name the instrument playing the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -24515,7 +24515,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q5-a-e", topicId: "music-2-2", conceptId: "mus-excerpt-music-played-style",
     section: "L", questionRef: "2019 HL Listening Q5 A(e)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2.",
     questionText: "The music in this excerpt is played in the style of a",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -24570,7 +24570,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q5-a-f", topicId: "music-2-2", conceptId: "mus-aabb-excerpt-form-heard",
     section: "L", questionRef: "2019 HL Listening Q5 A(f)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2.",
     questionText: "The form of the melody heard in this excerpt is AABB. In the B phrases",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -24625,7 +24625,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q5-a-g", topicId: "music-2-2", conceptId: "mus-describe-excerpt-feature-heard",
     section: "L", questionRef: "2019 HL Listening Q5 A(g)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2.",
     questionText: "Describe one non-traditional feature of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -24680,7 +24680,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q5-a-h", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-melody-name",
     section: "L", questionRef: "2019 HL Listening Q5 A(h)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 3.",
     questionText: "Name the instrument playing the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -24735,7 +24735,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q5-a-i", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2019 HL Listening Q5 A(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 3.",
     questionText: "Identify two features of the melody heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -24790,7 +24790,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q5-a-j", topicId: "music-2-2", conceptId: "mus-accompaniment-describe-excerpt-feature",
     section: "L", questionRef: "2019 HL Listening Q5 A(j)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 3.",
     questionText: "Describe one feature of the accompaniment heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -25189,7 +25189,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q6-a", topicId: "music-2-3", conceptId: "mus-four-insert-missing-notes",
     section: "L", questionRef: "2019 HL Listening Q6(a)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played three times. An outline score of bars 1–4 of this excerpt is printed below.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times. An outline score of bars 1–4 of this excerpt is printed below.",
     questionText: "Insert the four missing notes at X on the score.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -25253,7 +25253,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q6-b", topicId: "music-2-4", conceptId: "mus-ensemble-excerpt-heard-this",
     section: "L", questionRef: "2019 HL Listening Q6(b)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played once more.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played once more.",
     questionText: "The type of vocal ensemble heard in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -25308,7 +25308,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q6-c", topicId: "music-2-4", conceptId: "mus-cadence-excerpt-heard-identify",
     section: "L", questionRef: "2019 HL Listening Q6(c)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 1, played once more.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 1, played once more.",
     questionText: "Identify the cadence heard at the end of this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -25363,7 +25363,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q6-d", topicId: "music-2-4", conceptId: "mus-answer-between-both-describe",
     section: "L", questionRef: "2019 HL Listening Q6(d)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe two differences between the music heard in this excerpt and the music heard in Excerpt 1. You must refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -25418,7 +25418,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q6-e", topicId: "music-2-4", conceptId: "mus-does-line-music-relate",
     section: "L", questionRef: "2019 HL Listening Q6(e)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. Line 1 It’s a God-awful small affair to the girl with the mousy hair Line 2 But her mummy is yelling no, and her daddy has told her to go. Line 3 But her friend is nowhere to be seen, now she walks through her sunken dream Line 4 To the seat with the clearest view and she’s hooked to the silver screen.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. The lyrics are printed below. Line 1 It’s a God-awful small affair to the girl with the mousy hair Line 2 But her mummy is yelling no, and her daddy has told her to go. Line 3 But her friend is nowhere to be seen, now she walks through her sunken dream Line 4 To the seat with the clearest view and she’s hooked to the silver screen.",
     questionText: "How does the vocal music of line 2 relate to the vocal music of line 1?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -25473,7 +25473,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q6-f", topicId: "music-2-4", conceptId: "mus-change-from-identify-line",
     section: "L", questionRef: "2019 HL Listening Q6(f)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. Line 1 It’s a God-awful small affair to the girl with the mousy hair Line 2 But her mummy is yelling no, and her daddy has told her to go. Line 3 But her friend is nowhere to be seen, now she walks through her sunken dream Line 4 To the seat with the clearest view and she’s hooked to the silver screen.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. The lyrics are printed below. Line 1 It’s a God-awful small affair to the girl with the mousy hair Line 2 But her mummy is yelling no, and her daddy has told her to go. Line 3 But her friend is nowhere to be seen, now she walks through her sunken dream Line 4 To the seat with the clearest view and she’s hooked to the silver screen.",
     questionText: "Identify one change which takes place in the vocal music from line 3.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -25528,7 +25528,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q6-g", topicId: "music-2-4", conceptId: "mus-accompaniment-describe-excerpt-heard",
     section: "L", questionRef: "2019 HL Listening Q6(g)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 3, played three times. The lyrics are printed below. Line 1 It’s a God-awful small affair to the girl with the mousy hair Line 2 But her mummy is yelling no, and her daddy has told her to go. Line 3 But her friend is nowhere to be seen, now she walks through her sunken dream Line 4 To the seat with the clearest view and she’s hooked to the silver screen.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. The lyrics are printed below. Line 1 It’s a God-awful small affair to the girl with the mousy hair Line 2 But her mummy is yelling no, and her daddy has told her to go. Line 3 But her friend is nowhere to be seen, now she walks through her sunken dream Line 4 To the seat with the clearest view and she’s hooked to the silver screen.",
     questionText: "Describe the accompaniment heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -25583,7 +25583,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q6-h", topicId: "music-2-4", conceptId: "mus-accompaniment-excerpt-features-lines",
     section: "L", questionRef: "2019 HL Listening Q6(h)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played twice. The lyrics are printed below. Line 1 Sailors fighting in the dance hall. Line 2 Oh man, look at those cavemen go, it’s the freakiest show. Line 3 Take a look at the lawman beating up the wrong guy Line 4 Oh man, wonder if he’ll ever know he’s in the best selling show. Line 5 Is there life on Mars?",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played twice. The lyrics are printed below. Line 1 Sailors fighting in the dance hall. Line 2 Oh man, look at those cavemen go, it’s the freakiest show. Line 3 Take a look at the lawman beating up the wrong guy Line 4 Oh man, wonder if he’ll ever know he’s in the best selling show. Line 5 Is there life on Mars?",
     questionText: "The accompaniment in lines 1–4 of this excerpt features (tick two):",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -25639,7 +25639,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2019 Higher Level — © State Examinations Commission.",
     id: "mus-2019-hl-l-q6-i", topicId: "music-2-4", conceptId: "mus-excerpt-feature-leap-line",
     section: "L", questionRef: "2019 HL Listening Q6(i)",
-    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt. Excerpt 4, played twice more.",
+    stem: "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt.\nExcerpt 4, played twice more.",
     questionText: "The underlined words in line 5 of this excerpt feature an upward vocal leap of",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -26581,7 +26581,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q1-x1-i", topicId: "music-2-15", conceptId: "mus-based-excerpt-heard-melody",
     section: "L", questionRef: "2018 HL Listening Q1 Excerpt 1(i)",
-    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1 for the first time. Answer (i) and (ii).",
+    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1 for the first time. Answer (i) and (ii).",
     questionText: "The melody heard at the start of this excerpt is based on the",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -26636,7 +26636,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q1-x1-ii", topicId: "music-2-15", conceptId: "mus-excerpt-from-taken-this",
     section: "L", questionRef: "2018 HL Listening Q1 Excerpt 1(ii)",
-    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1 for the first time. Answer (i) and (ii).",
+    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1 for the first time. Answer (i) and (ii).",
     questionText: "This excerpt is taken from the",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -26691,7 +26691,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q1-x1-iii", topicId: "music-2-15", conceptId: "mus-antiphonal-dialogue-excerpt-explain",
     section: "L", questionRef: "2018 HL Listening Q1 Excerpt 1(iii)",
-    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1 for the second time. Answer (iii).",
+    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1 for the second time. Answer (iii).",
     questionText: "The music in this excerpt features antiphonal dialogue. Explain antiphonal dialogue, with reference to the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -26747,7 +26747,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q1-x1-iv", topicId: "music-2-15", conceptId: "mus-bars-below-first-four",
     section: "L", questionRef: "2018 HL Listening Q1 Excerpt 1(iv)",
-    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 1, played twice more. Answer (iv).",
+    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 1, played twice more. Answer (iv).",
     questionText: "The first 2 bars of the melody are printed below. Insert the four missing notes in bars 3 and 4, marked X on the score.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -26812,7 +26812,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q1-x2-i", topicId: "music-2-15", conceptId: "mus-answer-between-both-describe",
     section: "L", questionRef: "2018 HL Listening Q1 Excerpt 2(i)",
-    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "Describe two differences between the music heard in this excerpt and the music heard in Excerpt 1. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -26867,7 +26867,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q1-x3-i", topicId: "music-2-15", conceptId: "mus-melody-opening-played",
     section: "L", questionRef: "2018 HL Listening Q1 Excerpt 3(i)",
-    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "The opening melody is played by",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -26922,7 +26922,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q1-x3-ii", topicId: "music-2-15", conceptId: "mus-excerpt-music-this-tonality",
     section: "L", questionRef: "2018 HL Listening Q1 Excerpt 3(ii)",
-    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "The tonality of the music in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -26977,7 +26977,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q1-x3-iii", topicId: "music-2-15", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2018 HL Listening Q1 Excerpt 3(iii)",
-    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "Identify two features of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -27032,7 +27032,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q1-x4-i", topicId: "music-2-15", conceptId: "mus-background-following-heard-quietly",
     section: "L", questionRef: "2018 HL Listening Q1 Excerpt 4(i)",
-    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Which one of the following rhythms can be heard quietly in the background?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -27096,7 +27096,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q1-x4-ii", topicId: "music-2-15", conceptId: "mus-describe-excerpt-fantasy-features",
     section: "L", questionRef: "2018 HL Listening Q1 Excerpt 4(ii)",
-    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "Describe two features of the music which immediately follows the music in this excerpt in Romeo and Juliet Fantasy Overture.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -27705,7 +27705,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q4-i", topicId: "music-2-17", conceptId: "mus-excerpt-heard-identify-this",
     section: "L", questionRef: "2018 HL Listening Q4(i)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify the type of voice heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -27760,7 +27760,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q4-ii", topicId: "music-2-17", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2018 HL Listening Q4(ii)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify two features of the vocal line heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -27815,7 +27815,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q4-iii", topicId: "music-2-17", conceptId: "mus-accompaniment-excerpt-feature-heard",
     section: "L", questionRef: "2018 HL Listening Q4(iii)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify one feature of the accompaniment heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -27870,7 +27870,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q4-iv", topicId: "music-2-17", conceptId: "mus-cadence-excerpt-heard-identify",
     section: "L", questionRef: "2018 HL Listening Q4(iv)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify the cadence heard at the end of this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -27925,7 +27925,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q4-v", topicId: "music-2-17", conceptId: "mus-choice-excerpt-from-give",
     section: "L", questionRef: "2018 HL Listening Q4(v)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "This excerpt is taken from Give a reason for your choice.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -27981,7 +27981,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q4-vi", topicId: "music-2-17", conceptId: "mus-achieved-dramatic-excerpt-explain",
     section: "L", questionRef: "2018 HL Listening Q4(vi)",
-    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt. Excerpt 2, played three times.",
+    stem: "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times.",
     questionText: "The music in this excerpt is more dramatic than the music in Excerpt 1. Explain why this is so and how it is achieved.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -28036,7 +28036,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q5-a-x1-i", topicId: "music-2-2", conceptId: "mus-excerpt-identify-singing-style",
     section: "L", questionRef: "2018 HL Listening Q5 A Excerpt 1(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1. A verse from An Bonnán Buí.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1. A verse from An Bonnán Buí.",
     questionText: "Identify the style of singing in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -28091,7 +28091,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q5-a-x1-ii", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2018 HL Listening Q5 A Excerpt 1(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1. A verse from An Bonnán Buí.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1. A verse from An Bonnán Buí.",
     questionText: "Identify three features of this style of singing, as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -28146,7 +28146,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q5-a-x1-iii", topicId: "music-2-2", conceptId: "mus-form-verse",
     section: "L", questionRef: "2018 HL Listening Q5 A Excerpt 1(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 1. A verse from An Bonnán Buí.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 1. A verse from An Bonnán Buí.",
     questionText: "The form of the verse is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -28201,7 +28201,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q5-a-x2-i", topicId: "music-2-2", conceptId: "mus-different-excerpt-heard-identify",
     section: "L", questionRef: "2018 HL Listening Q5 A Excerpt 2(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2. An excerpt from Carolan’s Concerto.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2. An excerpt from Carolan’s Concerto.",
     questionText: "Identify three different instruments heard playing the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -28256,7 +28256,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q5-a-x2-ii", topicId: "music-2-2", conceptId: "mus-excerpt-features-music-this",
     section: "L", questionRef: "2018 HL Listening Q5 A Excerpt 2(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2. An excerpt from Carolan’s Concerto.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2. An excerpt from Carolan’s Concerto.",
     questionText: "The music in this excerpt features",
     tariffModel: {"kind":"fixed"}, totalMarks: 0.5,
     rows: [
@@ -28311,7 +28311,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q5-a-x2-iii", topicId: "music-2-2", conceptId: "mus-baroque-being-carolan’s-concerto",
     section: "L", questionRef: "2018 HL Listening Q5 A Excerpt 2(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 2. An excerpt from Carolan’s Concerto.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 2. An excerpt from Carolan’s Concerto.",
     questionText: "Carolan’s Concerto is often described as being Baroque in style. Identify two features of the music heard in this excerpt which support this statement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -28366,7 +28366,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q5-a-x3", topicId: "music-2-2", conceptId: "mus-associated-based-brandy-case",
     section: "L", questionRef: "2018 HL Listening Q5 A Excerpt 3",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "This excerpt consists of three different dances based on the tune Drops of Brandy. In the case of each one, identify the type of dance and give its time signature and one bar of rhythm associated with it.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -28774,7 +28774,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q6-x1-i", topicId: "music-2-4", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2018 HL Listening Q6 Excerpt 1(i)",
-    stem: "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt. Excerpt 1, played three times.",
+    stem: "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt.\nExcerpt 1, played three times.",
     questionText: "Identify two features of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -28829,7 +28829,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q6-x2-i", topicId: "music-2-3", conceptId: "mus-five-insert-missing-notes",
     section: "L", questionRef: "2018 HL Listening Q6 Excerpt 2(i)",
-    stem: "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt. Excerpt 2, played three times. An outline score of bars 1–4 of this excerpt is printed below. Answer (i) and (ii).",
+    stem: "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times. An outline score of bars 1–4 of this excerpt is printed below. Answer (i) and (ii).",
     questionText: "Insert the five missing notes at X on the score.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2.5,
     rows: [
@@ -28893,7 +28893,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q6-x2-ii", topicId: "music-2-3", conceptId: "mus-missing-score-signature-start",
     section: "L", questionRef: "2018 HL Listening Q6 Excerpt 2(ii)",
-    stem: "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt. Excerpt 2, played three times. An outline score of bars 1–4 of this excerpt is printed below. Answer (i) and (ii).",
+    stem: "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt.\nExcerpt 2, played three times. An outline score of bars 1–4 of this excerpt is printed below. Answer (i) and (ii).",
     questionText: "The missing time signature at the start of the score is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -28948,7 +28948,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q6-x2-iii", topicId: "music-2-4", conceptId: "mus-accompaniment-briefly-describe-excerpt",
     section: "L", questionRef: "2018 HL Listening Q6 Excerpt 2(iii)",
-    stem: "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt. Excerpt 2, played twice more. Answer (iii).",
+    stem: "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt.\nExcerpt 2, played twice more. Answer (iii).",
     questionText: "Briefly describe two features of the accompaniment, as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -29003,7 +29003,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q6-x3", topicId: "music-2-4", conceptId: "mus-answer-between-both-describe",
     section: "L", questionRef: "2018 HL Listening Q6 Excerpt 3",
-    stem: "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt. Excerpt 3, played three times.",
+    stem: "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times.",
     questionText: "Describe two differences between the music heard in this excerpt and the music heard in Excerpt 2. Refer to both excerpts in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -29058,7 +29058,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2018 Higher Level — © State Examinations Commission.",
     id: "mus-2018-hl-l-q6-x4", topicId: "music-2-4", conceptId: "mus-achieve-climax-composer-concluding",
     section: "L", questionRef: "2018 HL Listening Q6 Excerpt 4",
-    stem: "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt. Excerpt 4, played three times.",
+    stem: "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\n• Answer the questions on each excerpt.\nExcerpt 4, played three times.",
     questionText: "This excerpt is the concluding section of E.T. Flying Theme by John Williams. Describe two ways in which the composer uses the orchestra to achieve a sense of climax in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -30053,7 +30053,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q1-x1-i", topicId: "music-2-16", conceptId: "mus-excerpt-from-taken-this",
     section: "L", questionRef: "2017 HL Listening Q1 Excerpt 1(i)",
-    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. An outline score of the music in this excerpt is printed below.",
     questionText: "This excerpt is taken from",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -30108,7 +30108,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q1-x1-ii", topicId: "music-2-16", conceptId: "mus-based-excerpt-irish-melody",
     section: "L", questionRef: "2017 HL Listening Q1 Excerpt 1(ii)",
-    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. An outline score of the music in this excerpt is printed below.",
     questionText: "Name the Irish tune on which the melody in this excerpt is based.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -30163,7 +30163,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q1-x1-iii", topicId: "music-2-16", conceptId: "mus-compositional-describe-excerpt-identify",
     section: "L", questionRef: "2017 HL Listening Q1 Excerpt 1(iii)",
-    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. An outline score of the music in this excerpt is printed below.",
     questionText: "Identify a compositional technique used in this excerpt. Describe how this technique is used in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -30219,7 +30219,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q1-x1-iv", topicId: "music-2-16", conceptId: "mus-bars-change-excerpt-features",
     section: "L", questionRef: "2017 HL Listening Q1 Excerpt 1(iv)",
-    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. An outline score of the music in this excerpt is printed below.",
     questionText: "Bars 1–26 are repeated in the excerpt. This repeat features a change in",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -30274,7 +30274,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q1-x2-i", topicId: "music-2-16", conceptId: "mus-excerpt-hear-name-section",
     section: "L", questionRef: "2017 HL Listening Q1 Excerpt 2(i)",
-    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2. There is no printed music for this excerpt.",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2. There is no printed music for this excerpt.",
     questionText: "Name the section of the work that you hear in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -30329,7 +30329,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q1-x2-ii", topicId: "music-2-16", conceptId: "mus-describe-differs-excerpt-from",
     section: "L", questionRef: "2017 HL Listening Q1 Excerpt 2(ii)",
-    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2. There is no printed music for this excerpt.",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2. There is no printed music for this excerpt.",
     questionText: "Describe two ways in which the music in this excerpt differs from the music in excerpt 1.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -30384,7 +30384,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q1-x2-iii", topicId: "music-2-16", conceptId: "mus-excerpt-features-music-this",
     section: "L", questionRef: "2017 HL Listening Q1 Excerpt 2(iii)",
-    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2. There is no printed music for this excerpt.",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2. There is no printed music for this excerpt.",
     questionText: "The music in this excerpt features",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -30439,7 +30439,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q1-x3-i", topicId: "music-2-16", conceptId: "mus-excerpt-heard-instruments-name",
     section: "L", questionRef: "2017 HL Listening Q1 Excerpt 3(i)",
-    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3. An outline score of the music in this excerpt is printed below.",
     questionText: "Name the three instruments heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -30496,7 +30496,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q1-x3-ii", topicId: "music-2-16", conceptId: "mus-asked-excerpt-explain-flautando",
     section: "L", questionRef: "2017 HL Listening Q1 Excerpt 3(ii)",
-    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3. An outline score of the music in this excerpt is printed below.",
     questionText: "In this excerpt, the performers are asked to play flautando. Explain.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -30551,7 +30551,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q1-x3-iii", topicId: "music-2-16", conceptId: "mus-excerpt-music-this-tonality",
     section: "L", questionRef: "2017 HL Listening Q1 Excerpt 3(iii)",
-    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3. An outline score of the music in this excerpt is printed below.",
     questionText: "The tonality of the music in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -30606,7 +30606,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q1-x3-iv", topicId: "music-2-16", conceptId: "mus-changing-effect-excerpt-have",
     section: "L", questionRef: "2017 HL Listening Q1 Excerpt 3(iv)",
-    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3. An outline score of the music in this excerpt is printed below.",
     questionText: "What effect do the changing time signatures have on the music in this excerpt?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -30661,7 +30661,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q1-x3-v", topicId: "music-2-16", conceptId: "mus-barry-briefly-describe-features",
     section: "L", questionRef: "2017 HL Listening Q1 Excerpt 3(v)",
-    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3. An outline score of the music in this excerpt is printed below.",
     questionText: "Briefly describe any two of the following features as used in Piano Quartet No. 1 by Gerald Barry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -31555,7 +31555,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q5-a-x1-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-identify",
     section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 1(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Identify the type of dance tune heard in this excerpt and its time signature.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -31611,7 +31611,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q5-a-x1-ii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-this",
     section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 1(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Write one bar of rhythm associated with this type of dance.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -31666,7 +31666,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q5-a-x1-iii", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-melody-name",
     section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 1(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Name one instrument which plays the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -31721,7 +31721,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q5-a-x1-iv", topicId: "music-2-2", conceptId: "mus-accompanying-excerpt-instrument-this",
     section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 1(iv)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "The accompanying instrument in this excerpt is the",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -31776,7 +31776,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q5-a-x2-i", topicId: "music-2-2", conceptId: "mus-excerpt-identify-singing-style",
     section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 2(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 Two verses from Neainsín Bhán.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2 Two verses from Neainsín Bhán.",
     questionText: "Identify the style of singing in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -31831,7 +31831,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q5-a-x2-ii", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 2(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 Two verses from Neainsín Bhán.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2 Two verses from Neainsín Bhán.",
     questionText: "Identify three features of this style of singing as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -31886,7 +31886,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q5-a-x2-iii", topicId: "music-2-2", conceptId: "mus-down-form-letters-using",
     section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 2(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 Two verses from Neainsín Bhán.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2 Two verses from Neainsín Bhán.",
     questionText: "Using letters, write down the form of the verse.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -31941,7 +31941,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q5-a-x3-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-identify",
     section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 3(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "Identify the type of dance tune heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -31996,7 +31996,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q5-a-x3-ii", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-melody-name",
     section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 3(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "Name one instrument playing the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -32051,7 +32051,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q5-a-x3-iii", topicId: "music-2-2", conceptId: "mus-excerpt-feature-heard-identify",
     section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 3(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "Identify one traditional feature of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -32106,7 +32106,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q5-a-x3-iv", topicId: "music-2-2", conceptId: "mus-accompaniment-describe-excerpt-feature",
     section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 3(iv)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "Describe one feature of the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -32505,7 +32505,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q6-x1-i", topicId: "music-2-4", conceptId: "mus-bars-music-played",
     section: "L", questionRef: "2017 HL Listening Q6 Excerpt 1(i)",
-    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. Excerpt 1, first section played three times. An outline score of bars 1–6 of this excerpt is printed below.",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt.\nExcerpt 1, first section played three times. An outline score of bars 1–6 of this excerpt is printed below.",
     questionText: "The music in bars 1–6 is played",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -32560,7 +32560,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q6-x1-ii", topicId: "music-2-4", conceptId: "mus-bars-describe-feature-follows",
     section: "L", questionRef: "2017 HL Listening Q6 Excerpt 1(ii)",
-    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. Excerpt 1, first section played three times. An outline score of bars 1–6 of this excerpt is printed below.",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt.\nExcerpt 1, first section played three times. An outline score of bars 1–6 of this excerpt is printed below.",
     questionText: "Describe one feature of the music which immediately follows bars 1–6.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -32615,7 +32615,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q6-x1-iii", topicId: "music-2-4", conceptId: "mus-accompanied-chords-complete-excerpt",
     section: "L", questionRef: "2017 HL Listening Q6 Excerpt 1(iii)",
-    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. Excerpt 1, first section played three times. An outline score of bars 1–6 of this excerpt is printed below.",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt.\nExcerpt 1, first section played three times. An outline score of bars 1–6 of this excerpt is printed below.",
     questionText: "A new melody is heard in the final part of the excerpt. Complete the following statement. The melody is played on the accompanied by chords on the .",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -32671,7 +32671,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q6-x1-iv", topicId: "music-2-4", conceptId: "mus-features-music-section-this",
     section: "L", questionRef: "2017 HL Listening Q6 Excerpt 1(iv)",
-    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. A later section from the same movement, played three times. Answer (iv).",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt.\nA later section from the same movement, played three times. Answer (iv).",
     questionText: "The music in this section features (tick two).",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -32727,7 +32727,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q6-x2-i", topicId: "music-2-3", conceptId: "mus-above-missing-notes-score",
     section: "L", questionRef: "2017 HL Listening Q6 Excerpt 2(i)",
-    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. Excerpt 2, first section played three times. An outline score of the music in this excerpt is printed below.",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt.\nExcerpt 2, first section played three times. An outline score of the music in this excerpt is printed below.",
     questionText: "The missing notes at X on the score above are",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -32791,7 +32791,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q6-x2-ii", topicId: "music-2-4", conceptId: "mus-accompaniment-describe-excerpt-feature",
     section: "L", questionRef: "2017 HL Listening Q6 Excerpt 2(ii)",
-    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. Excerpt 2, first section played three times. An outline score of the music in this excerpt is printed below.",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt.\nExcerpt 2, first section played three times. An outline score of the music in this excerpt is printed below.",
     questionText: "Describe one feature of the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -32846,7 +32846,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q6-x2-iii", topicId: "music-2-4", conceptId: "mus-between-describe-differences-excerpt",
     section: "L", questionRef: "2017 HL Listening Q6 Excerpt 2(iii)",
-    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. A later section from the same movement, played three times. Answer (iii).",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt.\nA later section from the same movement, played three times. Answer (iii).",
     questionText: "Describe two differences between this music and the music heard in the first section of Excerpt 2.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -32901,7 +32901,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
     id: "mus-2017-hl-l-q6-x3", topicId: "music-2-4", conceptId: "mus-between-coda-describe-excerpt",
     section: "L", questionRef: "2017 HL Listening Q6 Excerpt 3",
-    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. Excerpt 3, played three times. There is no printed music for this excerpt.",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt.\nExcerpt 3, played three times. There is no printed music for this excerpt.",
     questionText: "You will now hear the final section from this work. Describe one similarity between the music in this excerpt and the final section (Coda) of Romeo and Juliet Fantasy Overture by Tchaikovsky.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -33874,7 +33874,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q1-x1-i", topicId: "music-2-9", conceptId: "mus-excerpt-from-movement-section",
     section: "L", questionRef: "2016 HL Listening Q1 Excerpt 1(i)",
-    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. The full 16-bar excerpt, played TWICE.",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. The full 16-bar excerpt, played TWICE.",
     questionText: "From which section of the movement is this excerpt taken? The tempo is",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -33930,7 +33930,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q1-x1-ii", topicId: "music-2-9", conceptId: "mus-excerpt-feature-identify-melody",
     section: "L", questionRef: "2016 HL Listening Q1 Excerpt 1(ii)",
-    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. The full 16-bar excerpt, played TWICE.\nBars 1–8 played THREE times.",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. The full 16-bar excerpt, played TWICE.\nBars 1–8 played THREE times.",
     questionText: "Identify ONE feature of the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -33985,7 +33985,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q1-x1-iii", topicId: "music-2-9", conceptId: "mus-accompaniment-describe-excerpt-feature",
     section: "L", questionRef: "2016 HL Listening Q1 Excerpt 1(iii)",
-    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. The full 16-bar excerpt, played TWICE.\nBars 1–8 played THREE times.",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. The full 16-bar excerpt, played TWICE.\nBars 1–8 played THREE times.",
     questionText: "Describe ONE feature of the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -34040,7 +34040,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q1-x1-iv", topicId: "music-2-9", conceptId: "mus-ends-excerpt-with",
     section: "L", questionRef: "2016 HL Listening Q1 Excerpt 1(iv)",
-    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. The full 16-bar excerpt, played TWICE.\nBars 1–8 played THREE times.",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. The full 16-bar excerpt, played TWICE.\nBars 1–8 played THREE times.",
     questionText: "The excerpt ends with",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -34095,7 +34095,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q1-x1-v", topicId: "music-2-9", conceptId: "mus-bars-describe-differs-from",
     section: "L", questionRef: "2016 HL Listening Q1 Excerpt 1(v)",
-    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. The full 16-bar excerpt, played TWICE.\nBars 9–16 played THREE times.",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. The full 16-bar excerpt, played TWICE.\nBars 9–16 played THREE times.",
     questionText: "Describe ONE way in which the music of bars 9–16 differs from the music of bars 1–8.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -34150,7 +34150,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q1-x1-vi", topicId: "music-2-9", conceptId: "mus-cadence-excerpt-heard-name",
     section: "L", questionRef: "2016 HL Listening Q1 Excerpt 1(vi)",
-    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. The full 16-bar excerpt, played TWICE.\nBars 9–16 played THREE times.",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. The full 16-bar excerpt, played TWICE.\nBars 9–16 played THREE times.",
     questionText: "Name the cadence heard at the end of the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -34205,7 +34205,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q1-x2-i", topicId: "music-2-9", conceptId: "mus-missing-notes-score",
     section: "L", questionRef: "2016 HL Listening Q1 Excerpt 2(i)",
-    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
     questionText: "The missing notes at X on the score are",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -34261,7 +34261,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q1-x2-ii", topicId: "music-2-9", conceptId: "mus-from-melody-repeated",
     section: "L", questionRef: "2016 HL Listening Q1 Excerpt 2(ii)",
-    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
     questionText: "From bar 9, the melody is repeated by",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -34316,7 +34316,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q1-x2-iii", topicId: "music-2-9", conceptId: "mus-describe-excerpt-feature-from",
     section: "L", questionRef: "2016 HL Listening Q1 Excerpt 2(iii)",
-    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
     questionText: "Describe ONE feature of the piano music from bar 9 in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -34371,7 +34371,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q1-x3-i", topicId: "music-2-9", conceptId: "mus-bars-excerpt-feature-identify",
     section: "L", questionRef: "2016 HL Listening Q1 Excerpt 3(i)",
-    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
     questionText: "Identify ONE feature of the music played by the strings in bars 1–8 of this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -34426,7 +34426,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q1-x3-ii", topicId: "music-2-9", conceptId: "mus-excerpt-follows-immediately-main",
     section: "L", questionRef: "2016 HL Listening Q1 Excerpt 3(ii)",
-    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
     questionText: "The music which immediately follows the music in this excerpt is the main theme/1st subject. It is played by:",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -34481,7 +34481,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q1-x3-iii", topicId: "music-2-9", conceptId: "mus-describe-form-identify-movement",
     section: "L", questionRef: "2016 HL Listening Q1 Excerpt 3(iii)",
-    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
+    stem: "Three excerpts from the third movement of Piano Concerto in A Major, K488 by Mozart.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3, played THREE times. An outline score of bars 1–8 of the music in this excerpt is printed below.",
     questionText: "Identify and describe the form of this movement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -34537,7 +34537,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q2-i", topicId: "music-2-10", conceptId: "mus-excerpt-instrument-name-plays",
     section: "L", questionRef: "2016 HL Listening Q2(i)",
-    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question. Bars 1–15 of the excerpt, played THREE times.\n• An outline score of bars 1–8 of the excerpt is printed below.",
+    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question.\nBars 1–15 of the excerpt, played THREE times.\n• An outline score of bars 1–8 of the excerpt is printed below.",
     questionText: "Name ONE instrument which plays the theme in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -34592,7 +34592,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q2-ii", topicId: "music-2-10", conceptId: "mus-excerpt-first-heard-repeated",
     section: "L", questionRef: "2016 HL Listening Q2(ii)",
-    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question. Bars 1–15 of the excerpt, played THREE times.\n• An outline score of bars 1–8 of the excerpt is printed below.",
+    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question.\nBars 1–15 of the excerpt, played THREE times.\n• An outline score of bars 1–8 of the excerpt is printed below.",
     questionText: "In this excerpt, the theme is first heard in the key of It is repeated in the key of",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -34648,7 +34648,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q2-iii", topicId: "music-2-10", conceptId: "mus-accompaniment-describe-excerpt-feature",
     section: "L", questionRef: "2016 HL Listening Q2(iii)",
-    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question. Bars 1–15 of the excerpt, played THREE times.\n• An outline score of bars 1–8 of the excerpt is printed below.",
+    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question.\nBars 1–15 of the excerpt, played THREE times.\n• An outline score of bars 1–8 of the excerpt is printed below.",
     questionText: "Describe ONE feature of the accompaniment in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -34703,7 +34703,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q2-iv", topicId: "music-2-10", conceptId: "mus-excerpt-give-music-polyphonic",
     section: "L", questionRef: "2016 HL Listening Q2(iv)",
-    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question. The remainder of the excerpt, played THREE times.",
+    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question.\nThe remainder of the excerpt, played THREE times.",
     questionText: "The texture of the music in this excerpt is polyphonic. Give ONE reason to support this statement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -34758,7 +34758,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q2-v", topicId: "music-2-10", conceptId: "mus-berlioz-does-excerpt-fantastique",
     section: "L", questionRef: "2016 HL Listening Q2(v)",
-    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question. The full excerpt, ONCE only.",
+    stem: "An excerpt from Symphonie Fantastique by Berlioz.\n• There is a twenty second gap between each playing of the music in this question.\nThe full excerpt, ONCE only.",
     questionText: "What name did Berlioz give the theme heard in this excerpt? How does he use this theme in the movements you have studied in Symphonie Fantastique?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -35366,7 +35366,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q5-a-x1-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-identify",
     section: "L", questionRef: "2016 HL Listening Q5 A Excerpt 1(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Identify the type of dance tune heard in this excerpt and its time signature.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -35422,7 +35422,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q5-a-x1-ii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-this",
     section: "L", questionRef: "2016 HL Listening Q5 A Excerpt 1(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Write one bar of rhythm associated with this type of dance.",
     tariffModel: {"kind":"fixed"}, totalMarks: 0.5,
     rows: [
@@ -35477,7 +35477,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q5-a-x1-iii", topicId: "music-2-2", conceptId: "mus-excerpt-identify-instrument-melody",
     section: "L", questionRef: "2016 HL Listening Q5 A Excerpt 1(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Identify the instrument playing the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 0.5,
     rows: [
@@ -35532,7 +35532,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q5-a-x2-i", topicId: "music-2-2", conceptId: "mus-down-form-letters-using",
     section: "L", questionRef: "2016 HL Listening Q5 A Excerpt 2(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 A verse from Galway Bay.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2 A verse from Galway Bay.",
     questionText: "Using letters, write down the form of the verse.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -35587,7 +35587,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q5-a-x2-ii", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-melody",
     section: "L", questionRef: "2016 HL Listening Q5 A Excerpt 2(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 A verse from Galway Bay.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2 A verse from Galway Bay.",
     questionText: "The melody heard in this excerpt features",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -35642,7 +35642,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q5-a-x2-iii", topicId: "music-2-2", conceptId: "mus-answer-ballad-excerpt-give",
     section: "L", questionRef: "2016 HL Listening Q5 A Excerpt 2(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 A verse from Galway Bay.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2 A verse from Galway Bay.",
     questionText: "This song is a ballad. Give TWO reasons to support this statement. In your answer, make reference to the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -35697,7 +35697,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q5-a-x3-i", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-melody-name",
     section: "L", questionRef: "2016 HL Listening Q5 A Excerpt 3(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "Name the instrument playing the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -35752,7 +35752,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q5-a-x3-ii", topicId: "music-2-2", conceptId: "mus-excerpt-feature-heard-identify",
     section: "L", questionRef: "2016 HL Listening Q5 A Excerpt 3(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "Other than instrument, identify ONE traditional feature of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -35807,7 +35807,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q5-a-x3-iii", topicId: "music-2-2", conceptId: "mus-describe-excerpt-features-heard",
     section: "L", questionRef: "2016 HL Listening Q5 A Excerpt 3(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "Describe TWO non-traditional features of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -36206,7 +36206,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q6-x1-i", topicId: "music-2-4", conceptId: "mus-instrument-melody-name-plays",
     section: "L", questionRef: "2016 HL Listening Q6 Excerpt 1(i)",
-    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1, played FOUR times.",
+    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1, played FOUR times.",
     questionText: "Name the instrument which plays the melody.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -36261,7 +36261,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q6-x1-ii", topicId: "music-2-4", conceptId: "mus-begins-melody-music-signature",
     section: "L", questionRef: "2016 HL Listening Q6 Excerpt 1(ii)",
-    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1, played FOUR times.",
+    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1, played FOUR times.",
     questionText: "The time signature of this music is 3/4. The melody begins on the",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -36316,7 +36316,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q6-x1-iii", topicId: "music-2-4", conceptId: "mus-accompaniment-feature-identify",
     section: "L", questionRef: "2016 HL Listening Q6 Excerpt 1(iii)",
-    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1, played FOUR times.",
+    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1, played FOUR times.",
     questionText: "Identify ONE feature of the accompaniment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -36371,7 +36371,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q6-x1-iv", topicId: "music-2-4", conceptId: "mus-excerpt-music-this",
     section: "L", questionRef: "2016 HL Listening Q6 Excerpt 1(iv)",
-    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1, played FOUR times.",
+    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1, played FOUR times.",
     questionText: "At the end of this excerpt the music",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -36426,7 +36426,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q6-x2", topicId: "music-2-4", conceptId: "mus-describe-differs-excerpt-from",
     section: "L", questionRef: "2016 HL Listening Q6 Excerpt 2",
-    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2, played THREE times.",
+    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2, played THREE times.",
     questionText: "Describe TWO ways in which the music heard in this excerpt differs from the music heard in excerpt 1.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -36481,7 +36481,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q6-x3", topicId: "music-2-4", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2016 HL Listening Q6 Excerpt 3",
-    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3, played THREE times.",
+    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3, played THREE times.",
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -36536,7 +36536,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2016 Higher Level — © State Examinations Commission.",
     id: "mus-2016-hl-l-q6-x4", topicId: "music-2-4", conceptId: "mus-conveys-death-describe-excerpt",
     section: "L", questionRef: "2016 HL Listening Q6 Excerpt 4",
-    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 4, played THREE times.",
+    stem: "Aural Skills. This question is based on excerpts of music taken from Danse Macabre by Saint-Saens.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 4, played THREE times.",
     questionText: "Describe TWO ways in which Saint-Saens conveys a feeling of death in the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -37454,7 +37454,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q1-x1-i", topicId: "music-2-11", conceptId: "mus-excerpt-from-taken-this",
     section: "L", questionRef: "2015 HL Listening Q1 Excerpt 1(i)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. An outline score of the music in this excerpt is printed below.",
     questionText: "This excerpt is taken from",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -37510,7 +37510,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q1-x1-ii", topicId: "music-2-11", conceptId: "mus-insert-missing-signature-time",
     section: "L", questionRef: "2015 HL Listening Q1 Excerpt 1(ii)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. An outline score of the music in this excerpt is printed below.",
     questionText: "Insert the missing time signature in bar 5.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -37566,7 +37566,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q1-x1-iii", topicId: "music-2-11", conceptId: "mus-excerpt-explain-flag-flageolet",
     section: "L", questionRef: "2015 HL Listening Q1 Excerpt 1(iii)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. An outline score of the music in this excerpt is printed below.",
     questionText: "In this excerpt the violin plays flageolet (flag.). Explain the term flageolet.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -37622,7 +37622,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q1-x1-iv", topicId: "music-2-11", conceptId: "mus-cell-describe-excerpt-note",
     section: "L", questionRef: "2015 HL Listening Q1 Excerpt 1(iv)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. An outline score of the music in this excerpt is printed below.",
     questionText: "Describe the use of a 3-note cell in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -37678,7 +37678,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q1-x2-i", topicId: "music-2-11", conceptId: "mus-excerpt-heard-name-theme",
     section: "L", questionRef: "2015 HL Listening Q1 Excerpt 2(i)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2. An outline score of the music in this excerpt is printed below.",
     questionText: "Name the theme heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -37734,7 +37734,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q1-x2-ii", topicId: "music-2-11", conceptId: "mus-accompaniment-excerpt-figures-following",
     section: "L", questionRef: "2015 HL Listening Q1 Excerpt 2(ii)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2. An outline score of the music in this excerpt is printed below.",
     questionText: "Which one of the following rhythmic figures is heard in the accompaniment? Name one instrument which plays this rhythm in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -37800,7 +37800,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q1-x2-iii", topicId: "music-2-11", conceptId: "mus-compositional-describe-excerpt-identify",
     section: "L", questionRef: "2015 HL Listening Q1 Excerpt 2(iii)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. An outline score of the music in this excerpt is printed below.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2. An outline score of the music in this excerpt is printed below.",
     questionText: "Identify and describe a compositional technique used in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -37857,7 +37857,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q1-x3-i", topicId: "music-2-11", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2015 HL Listening Q1 Excerpt 3(i)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. The violin part of bars 1–6 of this excerpt is printed below.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. The violin part of bars 1–6 of this excerpt is printed below.",
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -37913,7 +37913,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q1-x3-ii", topicId: "music-2-11", conceptId: "mus-describe-excerpt-feature-flute",
     section: "L", questionRef: "2015 HL Listening Q1 Excerpt 3(ii)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. The violin part of bars 1–6 of this excerpt is printed below.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. The violin part of bars 1–6 of this excerpt is printed below.",
     questionText: "Describe one feature of the music played by the flute in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -37969,7 +37969,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q1-x3-iii", topicId: "music-2-11", conceptId: "mus-danse-deane-death-describe",
     section: "L", questionRef: "2015 HL Listening Q1 Excerpt 3(iii)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. The violin part of bars 1–6 of this excerpt is printed below.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Raymond Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. The violin part of bars 1–6 of this excerpt is printed below.",
     questionText: "Describe how Raymond Deane evokes the imagery of death in Seachanges with Danse Macabre.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -38871,7 +38871,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q5-a-x1-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-identify",
     section: "L", questionRef: "2015 HL Listening Q5 A Excerpt 1(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Identify the type of dance tune heard in this excerpt and its time signature.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -38927,7 +38927,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q5-a-x1-ii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-this",
     section: "L", questionRef: "2015 HL Listening Q5 A Excerpt 1(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Write one bar of rhythm associated with this dance.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -38982,7 +38982,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q5-a-x1-iii", topicId: "music-2-2", conceptId: "mus-heard-instruments-melody-name",
     section: "L", questionRef: "2015 HL Listening Q5 A Excerpt 1(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Name the three instruments playing the melody, in the order in which they are heard.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -39039,7 +39039,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q5-a-x2-i", topicId: "music-2-2", conceptId: "mus-down-form-letters-using",
     section: "L", questionRef: "2015 HL Listening Q5 A Excerpt 2(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 Two verses from Casadh na tSugáin",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2 Two verses from Casadh na tSugáin",
     questionText: "Using letters, write down the form of the verse.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -39094,7 +39094,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q5-a-x2-ii", topicId: "music-2-2", conceptId: "mus-excerpt-features-following-heard",
     section: "L", questionRef: "2015 HL Listening Q5 A Excerpt 2(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 Two verses from Casadh na tSugáin",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2 Two verses from Casadh na tSugáin",
     questionText: "Which one of the following features can be heard in the melody in this excerpt?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -39149,7 +39149,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q5-a-x2-iii", topicId: "music-2-2", conceptId: "mus-describe-excerpt-features-heard",
     section: "L", questionRef: "2015 HL Listening Q5 A Excerpt 2(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 Two verses from Casadh na tSugáin",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2 Two verses from Casadh na tSugáin",
     questionText: "Describe two non-traditional features of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -39204,7 +39204,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q5-a-x3-i", topicId: "music-2-2", conceptId: "mus-describe-excerpt-feature-heard",
     section: "L", questionRef: "2015 HL Listening Q5 A Excerpt 3(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3 This excerpt is a fusion of different styles of music. One of these styles is Irish traditional music.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3 This excerpt is a fusion of different styles of music. One of these styles is Irish traditional music.",
     questionText: "Describe one feature of Irish traditional music which can be heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -39259,7 +39259,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q5-a-x3-ii", topicId: "music-2-2", conceptId: "mus-another-describe-excerpt-features",
     section: "L", questionRef: "2015 HL Listening Q5 A Excerpt 3(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3 This excerpt is a fusion of different styles of music. One of these styles is Irish traditional music.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3 This excerpt is a fusion of different styles of music. One of these styles is Irish traditional music.",
     questionText: "Identify another style of music which can be heard in this excerpt. Describe two features of this style as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -39658,7 +39658,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q6-x1-i", topicId: "music-2-4", conceptId: "mus-bars-instrument-melody-name",
     section: "L", questionRef: "2015 HL Listening Q6 Excerpt 1(i)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• An excerpt from a piece of music by Brahms will be played THREE times.\n• An outline score of bars 1–16 of the excerpt is printed below.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1\n• An excerpt from a piece of music by Brahms will be played THREE times.\n• An outline score of bars 1–16 of the excerpt is printed below.",
     questionText: "Name the instrument which plays the melody in bars 1–8.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -39713,7 +39713,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q6-x1-ii", topicId: "music-2-3", conceptId: "mus-above-five-insert-melody",
     section: "L", questionRef: "2015 HL Listening Q6 Excerpt 1(ii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• An excerpt from a piece of music by Brahms will be played THREE times.\n• An outline score of bars 1–16 of the excerpt is printed below.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1\n• An excerpt from a piece of music by Brahms will be played THREE times.\n• An outline score of bars 1–16 of the excerpt is printed below.",
     questionText: "Insert the five missing melody notes at X on the score above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2.5,
     rows: [
@@ -39777,7 +39777,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q6-x1-iii", topicId: "music-2-4", conceptId: "mus-describe-dynamics-excerpt-this",
     section: "L", questionRef: "2015 HL Listening Q6 Excerpt 1(iii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• An excerpt from a piece of music by Brahms will be played THREE times.\n• An outline score of bars 1–16 of the excerpt is printed below.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1\n• An excerpt from a piece of music by Brahms will be played THREE times.\n• An outline score of bars 1–16 of the excerpt is printed below.",
     questionText: "Describe the dynamics in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -39832,7 +39832,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q6-x2-i", topicId: "music-2-4", conceptId: "mus-dance-excerpt-identify-played",
     section: "L", questionRef: "2015 HL Listening Q6 Excerpt 2(i)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• An excerpt from a piece of music by Sibelius will be played THREE times.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2\n• An excerpt from a piece of music by Sibelius will be played THREE times.",
     questionText: "Identify the type of dance played in this excerpt. The time signature is",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -39888,7 +39888,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q6-x2-ii", topicId: "music-2-4", conceptId: "mus-accompaniment-excerpt-feature-heard",
     section: "L", questionRef: "2015 HL Listening Q6 Excerpt 2(ii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• An excerpt from a piece of music by Sibelius will be played THREE times.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2\n• An excerpt from a piece of music by Sibelius will be played THREE times.",
     questionText: "Identify one feature of the accompaniment heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -39943,7 +39943,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q6-x2-iii", topicId: "music-2-4", conceptId: "mus-excerpt-features-following-heard",
     section: "L", questionRef: "2015 HL Listening Q6 Excerpt 2(iii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• An excerpt from a piece of music by Sibelius will be played THREE times.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2\n• An excerpt from a piece of music by Sibelius will be played THREE times.",
     questionText: "Which two of the following features can be heard in the melody in this excerpt?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -39999,7 +39999,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2015 Higher Level — © State Examinations Commission.",
     id: "mus-2015-hl-l-q6-x3", topicId: "music-2-4", conceptId: "mus-battle-commemorate-composed-describe",
     section: "L", questionRef: "2015 HL Listening Q6 Excerpt 3",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• An excerpt from a piece of music by Tchaikovsky will be played THREE times.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3\n• An excerpt from a piece of music by Tchaikovsky will be played THREE times.",
     questionText: "This music was composed to commemorate a victory in battle. Describe two ways in which Tchaikovsky illustrates this in the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -40909,7 +40909,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q1-x1-i", topicId: "music-2-9", conceptId: "mus-excerpt-from-movement-section",
     section: "L", questionRef: "2014 HL Listening Q1 Excerpt 1(i)",
-    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. Bars 1–16 of this excerpt are printed below.",
+    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. Bars 1–16 of this excerpt are printed below.",
     questionText: "From which section of the movement is this excerpt taken?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -40965,7 +40965,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q1-x1-ii", topicId: "music-2-9", conceptId: "mus-alberti-bars-bass-excerpt",
     section: "L", questionRef: "2014 HL Listening Q1 Excerpt 1(ii)",
-    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. Bars 1–16 of this excerpt are printed below.",
+    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. Bars 1–16 of this excerpt are printed below.",
     questionText: "The opening bars of this excerpt feature an Alberti Bass. Explain, with reference to the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -41021,7 +41021,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q1-x1-iii", topicId: "music-2-9", conceptId: "mus-added-begins-excerpt-instruments",
     section: "L", questionRef: "2014 HL Listening Q1 Excerpt 1(iii)",
-    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. Bars 1–16 of this excerpt are printed below.",
+    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. Bars 1–16 of this excerpt are printed below.",
     questionText: "This excerpt begins with piano only. In which bar are more instruments added? These instruments are",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -41078,7 +41078,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q1-x1-iv", topicId: "music-2-9", conceptId: "mus-cadence-excerpt-identify",
     section: "L", questionRef: "2014 HL Listening Q1 Excerpt 1(iv)",
-    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. Bars 1–16 of this excerpt are printed below.",
+    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. Bars 1–16 of this excerpt are printed below.",
     questionText: "Identify the cadence at the end of the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -41134,7 +41134,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q1-x2-i", topicId: "music-2-9", conceptId: "mus-excerpt-this-tonality",
     section: "L", questionRef: "2014 HL Listening Q1 Excerpt 2(i)",
-    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. Bars 1–8 of this excerpt are printed below.",
+    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2. Bars 1–8 of this excerpt are printed below.",
     questionText: "The tonality of this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -41190,7 +41190,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q1-x2-ii", topicId: "music-2-9", conceptId: "mus-eight-insert-melody-missing",
     section: "L", questionRef: "2014 HL Listening Q1 Excerpt 2(ii)",
-    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. Bars 1–8 of this excerpt are printed below.",
+    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2. Bars 1–8 of this excerpt are printed below.",
     questionText: "Insert the eight missing melody notes at X on the score.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -41255,7 +41255,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q1-x2-iii", topicId: "music-2-9", conceptId: "mus-from-identify-instruments-melody",
     section: "L", questionRef: "2014 HL Listening Q1 Excerpt 2(iii)",
-    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. Bars 1–8 of this excerpt are printed below.",
+    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2. Bars 1–8 of this excerpt are printed below.",
     questionText: "Identify two instruments which play the melody from bar 9.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -41311,7 +41311,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q1-x2-iv", topicId: "music-2-9", conceptId: "mus-describe-excerpt-feature-from",
     section: "L", questionRef: "2014 HL Listening Q1 Excerpt 2(iv)",
-    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. Bars 1–8 of this excerpt are printed below.",
+    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2. Bars 1–8 of this excerpt are printed below.",
     questionText: "Describe one feature of the piano music from bar 9 to the end of the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -41367,7 +41367,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q1-x3-i", topicId: "music-2-9", conceptId: "mus-excerpt-from-movement-section",
     section: "L", questionRef: "2014 HL Listening Q1 Excerpt 3(i)",
-    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. There is no printed music for this excerpt.",
     questionText: "From which section of the movement is this excerpt taken?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -41423,7 +41423,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q1-x3-ii", topicId: "music-2-9", conceptId: "mus-excerpt-following-heard-this",
     section: "L", questionRef: "2014 HL Listening Q1 Excerpt 3(ii)",
-    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. There is no printed music for this excerpt.",
     questionText: "Which two of the following can be heard in this excerpt?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -41480,7 +41480,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q1-x3-iii", topicId: "music-2-9", conceptId: "mus-contrasts-describe-excerpt-music",
     section: "L", questionRef: "2014 HL Listening Q1 Excerpt 3(iii)",
-    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. There is no printed music for this excerpt.",
     questionText: "Describe one way in which the music played by the soloist contrasts with the music played by the orchestra in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -41536,7 +41536,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q1-x3-iv", topicId: "music-2-9", conceptId: "mus-describe-form-identify-movement",
     section: "L", questionRef: "2014 HL Listening Q1 Excerpt 3(iv)",
-    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    stem: "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. There is no printed music for this excerpt.",
     questionText: "Identify and describe the form of this movement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -42431,7 +42431,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q5-a-x1-i", topicId: "music-2-2", conceptId: "mus-excerpt-heard-identify-singing",
     section: "L", questionRef: "2014 HL Listening Q5 A Excerpt 1(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Identify the style of singing heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -42486,7 +42486,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q5-a-x1-ii", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2014 HL Listening Q5 A Excerpt 1(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Identify three features of this style of singing as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -42541,7 +42541,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q5-a-x1-iii", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-music",
     section: "L", questionRef: "2014 HL Listening Q5 A Excerpt 1(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "The music heard in this excerpt features",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -42596,7 +42596,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q5-a-x2-i", topicId: "music-2-2", conceptId: "mus-dance-identify-tune-type",
     section: "L", questionRef: "2014 HL Listening Q5 A Excerpt 2(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 This excerpt consists of two dance tunes. In the case of each one:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2 This excerpt consists of two dance tunes. In the case of each one:",
     questionText: "Identify the type of dance tune.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -42652,7 +42652,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q5-a-x2-ii", topicId: "music-2-2", conceptId: "mus-identify-signature-time",
     section: "L", questionRef: "2014 HL Listening Q5 A Excerpt 2(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 This excerpt consists of two dance tunes. In the case of each one:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2 This excerpt consists of two dance tunes. In the case of each one:",
     questionText: "Identify its time signature.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -42708,7 +42708,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q5-a-x2-iii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-type",
     section: "L", questionRef: "2014 HL Listening Q5 A Excerpt 2(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 This excerpt consists of two dance tunes. In the case of each one:",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2 This excerpt consists of two dance tunes. In the case of each one:",
     questionText: "Write out one bar of rhythm associated with the type of dance.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -42764,7 +42764,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q5-a-x3-i", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2014 HL Listening Q5 A Excerpt 3(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "Identify two traditional features of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -42819,7 +42819,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q5-a-x3-ii", topicId: "music-2-2", conceptId: "mus-describe-excerpt-feature-heard",
     section: "L", questionRef: "2014 HL Listening Q5 A Excerpt 3(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "Identify and describe one non-traditional feature of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -43218,7 +43218,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q6-x1-i", topicId: "music-2-4", conceptId: "mus-bars-before-enters-heard",
     section: "L", questionRef: "2014 HL Listening Q6 Excerpt 1(i)",
-    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An excerpt from All That Jazz by Fred Ebb and John Kander.\n• The outline score of the verse is printed below.",
+    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. An excerpt from All That Jazz by Fred Ebb and John Kander.\n• The outline score of the verse is printed below.",
     questionText: "How many bars of music are heard in the introduction before the voice enters?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -43273,7 +43273,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q6-x1-ii", topicId: "music-2-3", conceptId: "mus-missing-notes-score",
     section: "L", questionRef: "2014 HL Listening Q6 Excerpt 1(ii)",
-    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An excerpt from All That Jazz by Fred Ebb and John Kander.\n• The outline score of the verse is printed below.",
+    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. An excerpt from All That Jazz by Fred Ebb and John Kander.\n• The outline score of the verse is printed below.",
     questionText: "The missing notes at X on the score are",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -43337,7 +43337,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q6-x1-iii", topicId: "music-2-4", conceptId: "mus-bars-bass-consists-line",
     section: "L", questionRef: "2014 HL Listening Q6 Excerpt 1(iii)",
-    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An excerpt from All That Jazz by Fred Ebb and John Kander.\n• The outline score of the verse is printed below.",
+    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. An excerpt from All That Jazz by Fred Ebb and John Kander.\n• The outline score of the verse is printed below.",
     questionText: "In bars 13–14 the bass line consists of",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -43392,7 +43392,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q6-x1-iv", topicId: "music-2-4", conceptId: "mus-describe-excerpt-feature-heard",
     section: "L", questionRef: "2014 HL Listening Q6 Excerpt 1(iv)",
-    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An excerpt from All That Jazz by Fred Ebb and John Kander.\n• The outline score of the verse is printed below.",
+    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. An excerpt from All That Jazz by Fred Ebb and John Kander.\n• The outline score of the verse is printed below.",
     questionText: "Describe one feature of jazz music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -43447,7 +43447,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q6-x2-i", topicId: "music-2-4", conceptId: "mus-excerpt-metre-this",
     section: "L", questionRef: "2014 HL Listening Q6 Excerpt 2(i)",
-    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2. An excerpt from Try to Remember by Tom Jones and Harvey Schmidt.\n• The lyrics are printed below. Line 1 Try to remember the kind of September Line 2 When life was slow and oh, so mellow Line 3 Try to remember the kind of September Line 4 When grass was green and grain was yellow Line 5 Try to remember the kind of September Line 6 When you were a tender and callow fellow Line 7 Try to remember and if you remember, then follow.",
+    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2. An excerpt from Try to Remember by Tom Jones and Harvey Schmidt.\n• The lyrics are printed below. Line 1 Try to remember the kind of September Line 2 When life was slow and oh, so mellow Line 3 Try to remember the kind of September Line 4 When grass was green and grain was yellow Line 5 Try to remember the kind of September Line 6 When you were a tender and callow fellow Line 7 Try to remember and if you remember, then follow.",
     questionText: "The metre of this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -43503,7 +43503,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q6-x2-ii", topicId: "music-2-4", conceptId: "mus-accompaniment-describe-feature-lines",
     section: "L", questionRef: "2014 HL Listening Q6 Excerpt 2(ii)",
-    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2. An excerpt from Try to Remember by Tom Jones and Harvey Schmidt.\n• The lyrics are printed below. Line 1 Try to remember the kind of September Line 2 When life was slow and oh, so mellow Line 3 Try to remember the kind of September Line 4 When grass was green and grain was yellow Line 5 Try to remember the kind of September Line 6 When you were a tender and callow fellow Line 7 Try to remember and if you remember, then follow.",
+    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2. An excerpt from Try to Remember by Tom Jones and Harvey Schmidt.\n• The lyrics are printed below. Line 1 Try to remember the kind of September Line 2 When life was slow and oh, so mellow Line 3 Try to remember the kind of September Line 4 When grass was green and grain was yellow Line 5 Try to remember the kind of September Line 6 When you were a tender and callow fellow Line 7 Try to remember and if you remember, then follow.",
     questionText: "Describe one feature of the accompaniment in lines 1–4.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -43559,7 +43559,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q6-x2-iii", topicId: "music-2-4", conceptId: "mus-features-lines-music-vocal",
     section: "L", questionRef: "2014 HL Listening Q6 Excerpt 2(iii)",
-    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2. An excerpt from Try to Remember by Tom Jones and Harvey Schmidt.\n• The lyrics are printed below. Line 1 Try to remember the kind of September Line 2 When life was slow and oh, so mellow Line 3 Try to remember the kind of September Line 4 When grass was green and grain was yellow Line 5 Try to remember the kind of September Line 6 When you were a tender and callow fellow Line 7 Try to remember and if you remember, then follow.",
+    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2. An excerpt from Try to Remember by Tom Jones and Harvey Schmidt.\n• The lyrics are printed below. Line 1 Try to remember the kind of September Line 2 When life was slow and oh, so mellow Line 3 Try to remember the kind of September Line 4 When grass was green and grain was yellow Line 5 Try to remember the kind of September Line 6 When you were a tender and callow fellow Line 7 Try to remember and if you remember, then follow.",
     questionText: "The vocal music of lines 5–6 features",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -43615,7 +43615,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q6-x2-iv", topicId: "music-2-3", conceptId: "mus-following-heard-line-melody",
     section: "L", questionRef: "2014 HL Listening Q6 Excerpt 2(iv)",
-    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2. An excerpt from Try to Remember by Tom Jones and Harvey Schmidt.\n• The lyrics are printed below. Line 1 Try to remember the kind of September Line 2 When life was slow and oh, so mellow Line 3 Try to remember the kind of September Line 4 When grass was green and grain was yellow Line 5 Try to remember the kind of September Line 6 When you were a tender and callow fellow Line 7 Try to remember and if you remember, then follow.",
+    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2. An excerpt from Try to Remember by Tom Jones and Harvey Schmidt.\n• The lyrics are printed below. Line 1 Try to remember the kind of September Line 2 When life was slow and oh, so mellow Line 3 Try to remember the kind of September Line 4 When grass was green and grain was yellow Line 5 Try to remember the kind of September Line 6 When you were a tender and callow fellow Line 7 Try to remember and if you remember, then follow.",
     questionText: "In which line is the following melody heard?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -43671,7 +43671,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q6-x3-i", topicId: "music-2-4", conceptId: "mus-excerpt-hear-played-start",
     section: "L", questionRef: "2014 HL Listening Q6 Excerpt 3(i)",
-    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3. A version of You’ll Never Walk Alone by Rogers and Hammerstein.\n• The lyrics are printed below. Line 1 When you walk through a storm, hold your head up high, Line 2 And don’t be afraid of the dark, Line 3 At the end of the storm is a golden sky, Line 4 And the sweet, silver song of a lark. Line 5 Walk on through the wind, walk on through the rain, Line 6 Though your dreams be tossed and blown Line 7 Walk on, walk on, with hope in your heart, Line 8 And you’ll never walk alone, you’ll never walk alone Line 9 Walk on, walk on, with hope in your heart, Line 10 And you’ll never walk alone, you’ll never walk alone.",
+    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3. A version of You’ll Never Walk Alone by Rogers and Hammerstein.\n• The lyrics are printed below. Line 1 When you walk through a storm, hold your head up high, Line 2 And don’t be afraid of the dark, Line 3 At the end of the storm is a golden sky, Line 4 And the sweet, silver song of a lark. Line 5 Walk on through the wind, walk on through the rain, Line 6 Though your dreams be tossed and blown Line 7 Walk on, walk on, with hope in your heart, Line 8 And you’ll never walk alone, you’ll never walk alone Line 9 Walk on, walk on, with hope in your heart, Line 10 And you’ll never walk alone, you’ll never walk alone.",
     questionText: "At the start of the excerpt we hear They are played by",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -43727,7 +43727,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q6-x3-ii", topicId: "music-2-4", conceptId: "mus-being-describe-line-music",
     section: "L", questionRef: "2014 HL Listening Q6 Excerpt 3(ii)",
-    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3. A version of You’ll Never Walk Alone by Rogers and Hammerstein.\n• The lyrics are printed below. Line 1 When you walk through a storm, hold your head up high, Line 2 And don’t be afraid of the dark, Line 3 At the end of the storm is a golden sky, Line 4 And the sweet, silver song of a lark. Line 5 Walk on through the wind, walk on through the rain, Line 6 Though your dreams be tossed and blown Line 7 Walk on, walk on, with hope in your heart, Line 8 And you’ll never walk alone, you’ll never walk alone Line 9 Walk on, walk on, with hope in your heart, Line 10 And you’ll never walk alone, you’ll never walk alone.",
+    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3. A version of You’ll Never Walk Alone by Rogers and Hammerstein.\n• The lyrics are printed below. Line 1 When you walk through a storm, hold your head up high, Line 2 And don’t be afraid of the dark, Line 3 At the end of the storm is a golden sky, Line 4 And the sweet, silver song of a lark. Line 5 Walk on through the wind, walk on through the rain, Line 6 Though your dreams be tossed and blown Line 7 Walk on, walk on, with hope in your heart, Line 8 And you’ll never walk alone, you’ll never walk alone Line 9 Walk on, walk on, with hope in your heart, Line 10 And you’ll never walk alone, you’ll never walk alone.",
     questionText: "Describe the music played by the violins while the underlined words of line 3 are being sung.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -43782,7 +43782,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q6-x3-iii", topicId: "music-2-4", conceptId: "mus-describe-does-lark-line",
     section: "L", questionRef: "2014 HL Listening Q6 Excerpt 3(iii)",
-    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3. A version of You’ll Never Walk Alone by Rogers and Hammerstein.\n• The lyrics are printed below. Line 1 When you walk through a storm, hold your head up high, Line 2 And don’t be afraid of the dark, Line 3 At the end of the storm is a golden sky, Line 4 And the sweet, silver song of a lark. Line 5 Walk on through the wind, walk on through the rain, Line 6 Though your dreams be tossed and blown Line 7 Walk on, walk on, with hope in your heart, Line 8 And you’ll never walk alone, you’ll never walk alone Line 9 Walk on, walk on, with hope in your heart, Line 10 And you’ll never walk alone, you’ll never walk alone.",
+    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3. A version of You’ll Never Walk Alone by Rogers and Hammerstein.\n• The lyrics are printed below. Line 1 When you walk through a storm, hold your head up high, Line 2 And don’t be afraid of the dark, Line 3 At the end of the storm is a golden sky, Line 4 And the sweet, silver song of a lark. Line 5 Walk on through the wind, walk on through the rain, Line 6 Though your dreams be tossed and blown Line 7 Walk on, walk on, with hope in your heart, Line 8 And you’ll never walk alone, you’ll never walk alone Line 9 Walk on, walk on, with hope in your heart, Line 10 And you’ll never walk alone, you’ll never walk alone.",
     questionText: "How does the music describe “silver song of a lark” at the end of line 4?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -43837,7 +43837,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2014 Higher Level — © State Examinations Commission.",
     id: "mus-2014-hl-l-q6-x3-iv", topicId: "music-2-4", conceptId: "mus-describe-differs-from-lines",
     section: "L", questionRef: "2014 HL Listening Q6 Excerpt 3(iv)",
-    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3. A version of You’ll Never Walk Alone by Rogers and Hammerstein.\n• The lyrics are printed below. Line 1 When you walk through a storm, hold your head up high, Line 2 And don’t be afraid of the dark, Line 3 At the end of the storm is a golden sky, Line 4 And the sweet, silver song of a lark. Line 5 Walk on through the wind, walk on through the rain, Line 6 Though your dreams be tossed and blown Line 7 Walk on, walk on, with hope in your heart, Line 8 And you’ll never walk alone, you’ll never walk alone Line 9 Walk on, walk on, with hope in your heart, Line 10 And you’ll never walk alone, you’ll never walk alone.",
+    stem: "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3. A version of You’ll Never Walk Alone by Rogers and Hammerstein.\n• The lyrics are printed below. Line 1 When you walk through a storm, hold your head up high, Line 2 And don’t be afraid of the dark, Line 3 At the end of the storm is a golden sky, Line 4 And the sweet, silver song of a lark. Line 5 Walk on through the wind, walk on through the rain, Line 6 Though your dreams be tossed and blown Line 7 Walk on, walk on, with hope in your heart, Line 8 And you’ll never walk alone, you’ll never walk alone Line 9 Walk on, walk on, with hope in your heart, Line 10 And you’ll never walk alone, you’ll never walk alone.",
     questionText: "Describe one way in which the music of lines 9–10 differs from the music of lines 7–8.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -44747,7 +44747,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q1-x1-i", topicId: "music-2-15", conceptId: "mus-excerpt-from-section-taken",
     section: "L", questionRef: "2013 HL Listening Q1 Excerpt 1(i)",
-    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1.",
+    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1.",
     questionText: "From which section of the work is this excerpt taken?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -44803,7 +44803,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q1-x1-ii", topicId: "music-2-15", conceptId: "mus-excerpt-instrument-name-percussion",
     section: "L", questionRef: "2013 HL Listening Q1 Excerpt 1(ii)",
-    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1.",
+    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1.",
     questionText: "Name the percussion instrument playing in this excerpt. It plays",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -44869,7 +44869,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q1-x1-iii", topicId: "music-2-15", conceptId: "mus-excerpt-instruments-melody-name",
     section: "L", questionRef: "2013 HL Listening Q1 Excerpt 1(iii)",
-    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1.",
+    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1.",
     questionText: "Name two instruments which play the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -44925,7 +44925,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q1-x1-iv", topicId: "music-2-15", conceptId: "mus-bass-describe-double-excerpt",
     section: "L", questionRef: "2013 HL Listening Q1 Excerpt 1(iv)",
-    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1.",
+    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1.",
     questionText: "Describe the music played by the double bass in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -44981,7 +44981,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q1-x2-i", topicId: "music-2-15", conceptId: "mus-four-insert-melody-missing",
     section: "L", questionRef: "2013 HL Listening Q1 Excerpt 2(i)",
-    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2.",
+    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2.",
     questionText: "Insert the four missing melody notes at X on the score.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -45046,7 +45046,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q1-x2-ii", topicId: "music-2-15", conceptId: "mus-describe-differs-excerpt-from",
     section: "L", questionRef: "2013 HL Listening Q1 Excerpt 2(ii)",
-    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2.",
+    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2.",
     questionText: "Describe two ways in which the music of this excerpt differs from the music of excerpt 1.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -45102,7 +45102,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q1-x2-iii", topicId: "music-2-15", conceptId: "mus-excerpt-heard-music-texture",
     section: "L", questionRef: "2013 HL Listening Q1 Excerpt 2(iii)",
-    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2.",
+    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2.",
     questionText: "The texture of the music heard in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -45158,7 +45158,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q1-x3-i", topicId: "music-2-15", conceptId: "mus-bars-excerpt-heard-name",
     section: "L", questionRef: "2013 HL Listening Q1 Excerpt 3(i)",
-    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. Bars 1–9 of this excerpt are printed below",
+    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. Bars 1–9 of this excerpt are printed below",
     questionText: "Name the theme heard in bars 1–9 of this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -45214,7 +45214,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q1-x3-ii", topicId: "music-2-15", conceptId: "mus-accompaniment-bars-describe-excerpt",
     section: "L", questionRef: "2013 HL Listening Q1 Excerpt 3(ii)",
-    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. Bars 1–9 of this excerpt are printed below",
+    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. Bars 1–9 of this excerpt are printed below",
     questionText: "Describe one feature of the accompaniment in bars 1–9 of this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -45270,7 +45270,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q1-x3-iii", topicId: "music-2-15", conceptId: "mus-bars-describe-excerpt-final",
     section: "L", questionRef: "2013 HL Listening Q1 Excerpt 3(iii)",
-    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. Bars 1–9 of this excerpt are printed below",
+    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. Bars 1–9 of this excerpt are printed below",
     questionText: "Describe the music heard in the final bars of this excerpt (bar 9 to end).",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -45326,7 +45326,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q1-x3-iv", topicId: "music-2-15", conceptId: "mus-describe-detail-fantasy-first",
     section: "L", questionRef: "2013 HL Listening Q1 Excerpt 3(iv)",
-    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. Bars 1–9 of this excerpt are printed below",
+    stem: "Three excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. Bars 1–9 of this excerpt are printed below",
     questionText: "Tchaikovsky uses three main themes in his Romeo and Juliet Fantasy Overture. Describe in detail how one of these themes is heard for the first time in this work.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -46210,7 +46210,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q5-a-x1-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-identify",
     section: "L", questionRef: "2013 HL Listening Q5 A Excerpt 1(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Identify the type of dance tune heard in this excerpt and its time signature.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -46266,7 +46266,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q5-a-x1-ii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-this",
     section: "L", questionRef: "2013 HL Listening Q5 A Excerpt 1(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Write one bar of rhythm associated with this type of dance",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -46321,7 +46321,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q5-a-x1-iii", topicId: "music-2-2", conceptId: "mus-instrument-melody-name-playing",
     section: "L", questionRef: "2013 HL Listening Q5 A Excerpt 1(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Name the instrument playing the melody",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -46376,7 +46376,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q5-a-x1-iv", topicId: "music-2-2", conceptId: "mus-dance-down-form-letters",
     section: "L", questionRef: "2013 HL Listening Q5 A Excerpt 1(iv)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Using letters, write down the form of this dance tune",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -46431,7 +46431,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q5-a-x2-i", topicId: "music-2-2", conceptId: "mus-excerpt-heard-identify-singing",
     section: "L", questionRef: "2013 HL Listening Q5 A Excerpt 2(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2",
     questionText: "Identify the style of singing heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -46486,7 +46486,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q5-a-x2-ii", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2013 HL Listening Q5 A Excerpt 2(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2",
     questionText: "Identify three features of this style of singing as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -46541,7 +46541,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q5-a-x2-iii", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-music",
     section: "L", questionRef: "2013 HL Listening Q5 A Excerpt 2(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2",
     questionText: "The music heard in this excerpt features",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -46596,7 +46596,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q5-a-x3-i", topicId: "music-2-2", conceptId: "mus-describe-excerpt-feature-heard",
     section: "L", questionRef: "2013 HL Listening Q5 A Excerpt 3(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3 This recording is a fusion of different styles of music. One of these styles is Irish traditional music.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3 This recording is a fusion of different styles of music. One of these styles is Irish traditional music.",
     questionText: "Describe one feature of Irish traditional music which can be heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -46651,7 +46651,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q5-a-x3-ii", topicId: "music-2-2", conceptId: "mus-another-describe-excerpt-feature",
     section: "L", questionRef: "2013 HL Listening Q5 A Excerpt 3(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3 This recording is a fusion of different styles of music. One of these styles is Irish traditional music.",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3 This recording is a fusion of different styles of music. One of these styles is Irish traditional music.",
     questionText: "Identify another style of music which can be heard in this excerpt. Describe one feature of this style as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -47043,7 +47043,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q6-x1-i", topicId: "music-2-4", conceptId: "mus-bars-before-enter-heard",
     section: "L", questionRef: "2013 HL Listening Q6 Excerpt 1(i)",
-    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1",
+    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "How many bars of music are heard in the introduction before the voices enter?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -47098,7 +47098,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q6-x1-ii", topicId: "music-2-4", conceptId: "mus-family-heard-instruments-introduction",
     section: "L", questionRef: "2013 HL Listening Q6 Excerpt 1(ii)",
-    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1",
+    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Name a family of instruments heard in the introduction.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -47153,7 +47153,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q6-x1-iii", topicId: "music-2-3", conceptId: "mus-above-five-insert-missing",
     section: "L", questionRef: "2013 HL Listening Q6 Excerpt 1(iii)",
-    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1",
+    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Insert the five missing notes at X on the score above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2.5,
     rows: [
@@ -47217,7 +47217,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q6-x2-i", topicId: "music-2-4", conceptId: "mus-describe-differs-excerpt-from",
     section: "L", questionRef: "2013 HL Listening Q6 Excerpt 2(i)",
-    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2",
+    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2",
     questionText: "Describe two ways in which the music heard in this excerpt differs from Excerpt 1.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -47272,7 +47272,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q6-x2-ii", topicId: "music-2-4", conceptId: "mus-accompaniment-figures-heard-rhythmic",
     section: "L", questionRef: "2013 HL Listening Q6 Excerpt 2(ii)",
-    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2",
+    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2",
     questionText: "Which of these rhythmic figures can be heard in the accompaniment?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -47336,7 +47336,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q6-x3-i", topicId: "music-2-3", conceptId: "mus-line-music-played-trumpet",
     section: "L", questionRef: "2013 HL Listening Q6 Excerpt 3(i)",
-    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The words for lines 1–4 of this excerpt are printed below. Line 1 God save the King, long live the King, God save the King! Line 2 May he live forever Line 3 Amen, amen, alleluia, alleluia, amen. Line 4 A - - - - - men, amen, amen, alleluia, amen.",
+    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3\n• The words for lines 1–4 of this excerpt are printed below. Line 1 God save the King, long live the King, God save the King! Line 2 May he live forever Line 3 Amen, amen, alleluia, alleluia, amen. Line 4 A - - - - - men, amen, amen, alleluia, amen.",
     questionText: "The music played by the trumpet in line 1 is.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -47400,7 +47400,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q6-x3-ii", topicId: "music-2-4", conceptId: "mus-line-strings-sung-this",
     section: "L", questionRef: "2013 HL Listening Q6 Excerpt 3(ii)",
-    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The words for lines 1–4 of this excerpt are printed below. Line 1 God save the King, long live the King, God save the King! Line 2 May he live forever Line 3 Amen, amen, alleluia, alleluia, amen. Line 4 A - - - - - men, amen, amen, alleluia, amen.",
+    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3\n• The words for lines 1–4 of this excerpt are printed below. Line 1 God save the King, long live the King, God save the King! Line 2 May he live forever Line 3 Amen, amen, alleluia, alleluia, amen. Line 4 A - - - - - men, amen, amen, alleluia, amen.",
     questionText: "Line 2 is sung by In this line, the strings",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -47456,7 +47456,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q6-x3-iii", topicId: "music-2-4", conceptId: "mus-describe-feature-line-music",
     section: "L", questionRef: "2013 HL Listening Q6 Excerpt 3(iii)",
-    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The words for lines 1–4 of this excerpt are printed below. Line 1 God save the King, long live the King, God save the King! Line 2 May he live forever Line 3 Amen, amen, alleluia, alleluia, amen. Line 4 A - - - - - men, amen, amen, alleluia, amen.",
+    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3\n• The words for lines 1–4 of this excerpt are printed below. Line 1 God save the King, long live the King, God save the King! Line 2 May he live forever Line 3 Amen, amen, alleluia, alleluia, amen. Line 4 A - - - - - men, amen, amen, alleluia, amen.",
     questionText: "Describe one feature of the vocal music in line 4.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -47511,7 +47511,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Higher Level — © State Examinations Commission.",
     id: "mus-2013-hl-l-q6-x3-iv", topicId: "music-2-4", conceptId: "mus-answer-excerpt-give-heard",
     section: "L", questionRef: "2013 HL Listening Q6 Excerpt 3(iv)",
-    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The words for lines 1–4 of this excerpt are printed below. Line 1 God save the King, long live the King, God save the King! Line 2 May he live forever Line 3 Amen, amen, alleluia, alleluia, amen. Line 4 A - - - - - men, amen, amen, alleluia, amen.",
+    stem: "Aural Skills. This question is based on three excerpts from Zadok the Priest by G.F. Handel.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3\n• The words for lines 1–4 of this excerpt are printed below. Line 1 God save the King, long live the King, God save the King! Line 2 May he live forever Line 3 Amen, amen, alleluia, alleluia, amen. Line 4 A - - - - - men, amen, amen, alleluia, amen.",
     questionText: "The style of music heard in this excerpt is Give one reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -48280,7 +48280,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q1-x1-i", topicId: "music-2-17", conceptId: "mus-excerpt-from-movement-name",
     section: "L", questionRef: "2011 HL Listening Q1 Excerpt 1(i)",
-    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. Bars 1–8 of the vocal line in this excerpt are printed below.",
+    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. Bars 1–8 of the vocal line in this excerpt are printed below.",
     questionText: "Name the movement from which this excerpt is taken.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -48336,7 +48336,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q1-x1-ii", topicId: "music-2-17", conceptId: "mus-does-enter-excerpt-heard",
     section: "L", questionRef: "2011 HL Listening Q1 Excerpt 1(ii)",
-    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. Bars 1–8 of the vocal line in this excerpt are printed below.",
+    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. Bars 1–8 of the vocal line in this excerpt are printed below.",
     questionText: "Identify the two types of voices heard in this excerpt.\nIn which bar does the second voice enter?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -48393,7 +48393,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q1-x1-iii", topicId: "music-2-17", conceptId: "mus-excerpt-moves-this-violone",
     section: "L", questionRef: "2011 HL Listening Q1 Excerpt 1(iii)",
-    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. Bars 1–8 of the vocal line in this excerpt are printed below.",
+    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. Bars 1–8 of the vocal line in this excerpt are printed below.",
     questionText: "In this excerpt, the violone moves in",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -48449,7 +48449,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q1-x1-iv", topicId: "music-2-17", conceptId: "mus-examples-excerpt-explain-features",
     section: "L", questionRef: "2011 HL Listening Q1 Excerpt 1(iv)",
-    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. Bars 1–8 of the vocal line in this excerpt are printed below.",
+    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. Bars 1–8 of the vocal line in this excerpt are printed below.",
     questionText: "This excerpt features examples of melisma. Explain melisma, with reference to the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -48505,7 +48505,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q1-x2-i", topicId: "music-2-17", conceptId: "mus-describe-excerpt-heard-identify",
     section: "L", questionRef: "2011 HL Listening Q1 Excerpt 2(i)",
-    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. There is no printed music for this excerpt.",
+    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2. There is no printed music for this excerpt.",
     questionText: "Identify and describe the type of recitative heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -48562,7 +48562,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q1-x2-ii", topicId: "music-2-17", conceptId: "mus-describe-excerpt-feature-heard",
     section: "L", questionRef: "2011 HL Listening Q1 Excerpt 2(ii)",
-    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. There is no printed music for this excerpt.",
+    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2. There is no printed music for this excerpt.",
     questionText: "Describe one feature of the vocal line heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -48618,7 +48618,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q1-x2-iii", topicId: "music-2-17", conceptId: "mus-bass-continuo-excerpt-explain",
     section: "L", questionRef: "2011 HL Listening Q1 Excerpt 2(iii)",
-    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. There is no printed music for this excerpt.",
+    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2. There is no printed music for this excerpt.",
     questionText: "Name the continuo instruments heard in this excerpt. These instruments read from a figured bass. Explain.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -48675,7 +48675,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q1-x3-i", topicId: "music-2-17", conceptId: "mus-identify-movement-this-tonality",
     section: "L", questionRef: "2011 HL Listening Q1 Excerpt 3(i)",
-    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. An outline score of the instrumental music in this excerpt is printed below",
+    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. An outline score of the instrumental music in this excerpt is printed below",
     questionText: "Identify the tonality of this movement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -48731,7 +48731,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q1-x3-ii", topicId: "music-2-17", conceptId: "mus-excerpt-heard-identify-instrument",
     section: "L", questionRef: "2011 HL Listening Q1 Excerpt 3(ii)",
-    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. An outline score of the instrumental music in this excerpt is printed below",
+    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. An outline score of the instrumental music in this excerpt is printed below",
     questionText: "Identify the solo instrument heard in this excerpt. This instrument plays",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -48788,7 +48788,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q1-x3-iii", topicId: "music-2-17", conceptId: "mus-bach’s-describe-movement-ritornello",
     section: "L", questionRef: "2011 HL Listening Q1 Excerpt 3(iii)",
-    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. An outline score of the instrumental music in this excerpt is printed below",
+    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. An outline score of the instrumental music in this excerpt is printed below",
     questionText: "Describe Bach’s use of ritornello in this movement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -48844,7 +48844,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q1-x3-iv", topicId: "music-2-17", conceptId: "mus-answer-bach’s-canon-cantata",
     section: "L", questionRef: "2011 HL Listening Q1 Excerpt 3(iv)",
-    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. An outline score of the instrumental music in this excerpt is printed below",
+    stem: "Three excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. An outline score of the instrumental music in this excerpt is printed below",
     questionText: "Describe Bach’s use of canon in this cantata. Refer to specific movements in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -49742,7 +49742,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q5-a-x1-i", topicId: "music-2-2", conceptId: "mus-excerpt-identify-instrument-playing",
     section: "L", questionRef: "2011 HL Listening Q5 A Excerpt 1(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Identify the instrument playing in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -49797,7 +49797,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q5-a-x1-ii", topicId: "music-2-2", conceptId: "mus-excerpt-heard-identify-this",
     section: "L", questionRef: "2011 HL Listening Q5 A Excerpt 1(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Identify the type of tune heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -49852,7 +49852,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q5-a-x1-iii", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2011 HL Listening Q5 A Excerpt 1(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Identify two traditional features of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -49907,7 +49907,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q5-a-x2-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-identify",
     section: "L", questionRef: "2011 HL Listening Q5 A Excerpt 2(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2",
     questionText: "Identify the type of dance tune heard in this excerpt and its time signature.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -49963,7 +49963,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q5-a-x2-ii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-this",
     section: "L", questionRef: "2011 HL Listening Q5 A Excerpt 2(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2",
     questionText: "Write one bar of rhythm associated with this type of dance:",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -50027,7 +50027,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q5-a-x2-iii", topicId: "music-2-2", conceptId: "mus-down-form-letters-this",
     section: "L", questionRef: "2011 HL Listening Q5 A Excerpt 2(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2",
     questionText: "Using letters, write down the form of this tune:",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -50082,7 +50082,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q5-a-x3-i", topicId: "music-2-2", conceptId: "mus-excerpt-identify-instrument-melody",
     section: "L", questionRef: "2011 HL Listening Q5 A Excerpt 3(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "Identify the instrument which plays the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -50137,7 +50137,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q5-a-x3-ii", topicId: "music-2-2", conceptId: "mus-describe-excerpt-features-heard",
     section: "L", questionRef: "2011 HL Listening Q5 A Excerpt 3(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "Describe two traditional features of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -50192,7 +50192,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q5-a-x3-iii", topicId: "music-2-2", conceptId: "mus-describe-excerpt-features-heard",
     section: "L", questionRef: "2011 HL Listening Q5 A Excerpt 3(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "Describe two non-traditional features of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -50591,7 +50591,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q6-x1-i", topicId: "music-2-4", conceptId: "mus-excerpt-heard-instrument-name",
     section: "L", questionRef: "2011 HL Listening Q6 Excerpt 1(i)",
-    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An excerpt from the 3rd movement of a concerto by W.A. Mozart.\n• The full excerpt will be played ONCE only. Bars 1–8, taken from this excerpt, will then be played THREE times.\n• The outline score of bars 1–8 is printed below.",
+    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. An excerpt from the 3rd movement of a concerto by W.A. Mozart.\n• The full excerpt will be played ONCE only. Bars 1–8, taken from this excerpt, will then be played THREE times.\n• The outline score of bars 1–8 is printed below.",
     questionText: "Name the solo instrument heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -50646,7 +50646,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q6-x1-ii", topicId: "music-2-3", conceptId: "mus-above-insert-missing-score",
     section: "L", questionRef: "2011 HL Listening Q6 Excerpt 1(ii)",
-    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An excerpt from the 3rd movement of a concerto by W.A. Mozart.\n• The full excerpt will be played ONCE only. Bars 1–8, taken from this excerpt, will then be played THREE times.\n• The outline score of bars 1–8 is printed below.",
+    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. An excerpt from the 3rd movement of a concerto by W.A. Mozart.\n• The full excerpt will be played ONCE only. Bars 1–8, taken from this excerpt, will then be played THREE times.\n• The outline score of bars 1–8 is printed below.",
     questionText: "Insert the missing time signature on the score above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -50701,7 +50701,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q6-x1-iii", topicId: "music-2-3", conceptId: "mus-melody-missing-notes-three",
     section: "L", questionRef: "2011 HL Listening Q6 Excerpt 1(iii)",
-    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An excerpt from the 3rd movement of a concerto by W.A. Mozart.\n• The full excerpt will be played ONCE only. Bars 1–8, taken from this excerpt, will then be played THREE times.\n• The outline score of bars 1–8 is printed below.",
+    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. An excerpt from the 3rd movement of a concerto by W.A. Mozart.\n• The full excerpt will be played ONCE only. Bars 1–8, taken from this excerpt, will then be played THREE times.\n• The outline score of bars 1–8 is printed below.",
     questionText: "The three missing melody notes at X are",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -50756,7 +50756,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q6-x1-b9-16-i", topicId: "music-2-4", conceptId: "mus-bars-describe-differs-from",
     section: "L", questionRef: "2011 HL Listening Q6 Excerpt 1 Bars 9–16(i)",
-    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An excerpt from the 3rd movement of a concerto by W.A. Mozart.\n• The full excerpt will be played ONCE only. Bars 1–8, taken from this excerpt, will then be played THREE times.\n• The outline score of bars 1–8 is printed below.\n• The next 8 bars (bars 9–16) will now be played THREE times.",
+    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. An excerpt from the 3rd movement of a concerto by W.A. Mozart.\n• The full excerpt will be played ONCE only. Bars 1–8, taken from this excerpt, will then be played THREE times.\n• The outline score of bars 1–8 is printed below.\n• The next 8 bars (bars 9–16) will now be played THREE times.",
     questionText: "Describe one way in which the music of bars 9–16 differs from the music of bars 1–8.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -50811,7 +50811,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q6-x1-b9-16-ii", topicId: "music-2-4", conceptId: "mus-bass-figures-following-heard",
     section: "L", questionRef: "2011 HL Listening Q6 Excerpt 1 Bars 9–16(ii)",
-    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An excerpt from the 3rd movement of a concerto by W.A. Mozart.\n• The full excerpt will be played ONCE only. Bars 1–8, taken from this excerpt, will then be played THREE times.\n• The outline score of bars 1–8 is printed below.\n• The next 8 bars (bars 9–16) will now be played THREE times.",
+    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. An excerpt from the 3rd movement of a concerto by W.A. Mozart.\n• The full excerpt will be played ONCE only. Bars 1–8, taken from this excerpt, will then be played THREE times.\n• The outline score of bars 1–8 is printed below.\n• The next 8 bars (bars 9–16) will now be played THREE times.",
     questionText: "Which of the following rhythmic figures can be heard in the bass?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -50866,7 +50866,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q6-x1-b9-16-iii", topicId: "music-2-4", conceptId: "mus-cadence-excerpt-heard-identify",
     section: "L", questionRef: "2011 HL Listening Q6 Excerpt 1 Bars 9–16(iii)",
-    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An excerpt from the 3rd movement of a concerto by W.A. Mozart.\n• The full excerpt will be played ONCE only. Bars 1–8, taken from this excerpt, will then be played THREE times.\n• The outline score of bars 1–8 is printed below.\n• The next 8 bars (bars 9–16) will now be played THREE times.",
+    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1. An excerpt from the 3rd movement of a concerto by W.A. Mozart.\n• The full excerpt will be played ONCE only. Bars 1–8, taken from this excerpt, will then be played THREE times.\n• The outline score of bars 1–8 is printed below.\n• The next 8 bars (bars 9–16) will now be played THREE times.",
     questionText: "Identify the cadence heard at the end of the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -50921,7 +50921,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q6-x2-i", topicId: "music-2-4", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2011 HL Listening Q6 Excerpt 2(i)",
-    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2. The Flight of the Bumblebee by Rimsky-Korsakov will be played THREE times.",
+    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2. The Flight of the Bumblebee by Rimsky-Korsakov will be played THREE times.",
     questionText: "Describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -50976,7 +50976,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q6-x2-ii", topicId: "music-2-4", conceptId: "mus-accompaniment-features",
     section: "L", questionRef: "2011 HL Listening Q6 Excerpt 2(ii)",
-    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2. The Flight of the Bumblebee by Rimsky-Korsakov will be played THREE times.",
+    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2. The Flight of the Bumblebee by Rimsky-Korsakov will be played THREE times.",
     questionText: "The accompaniment features",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -51031,7 +51031,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q6-x2-iii", topicId: "music-2-4", conceptId: "mus-bumblebee-does-excerpt-flight",
     section: "L", questionRef: "2011 HL Listening Q6 Excerpt 2(iii)",
-    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2. The Flight of the Bumblebee by Rimsky-Korsakov will be played THREE times.",
+    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2. The Flight of the Bumblebee by Rimsky-Korsakov will be played THREE times.",
     questionText: "How does Rimsky-Korsakov illustrate the flight of the bumblebee in this excerpt?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -51086,7 +51086,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Higher Level — © State Examinations Commission.",
     id: "mus-2011-hl-l-q6-x2-iv", topicId: "music-2-4", conceptId: "mus-choice-closest-excerpt-from",
     section: "L", questionRef: "2011 HL Listening Q6 Excerpt 2(iv)",
-    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2. The Flight of the Bumblebee by Rimsky-Korsakov will be played THREE times.\n• The excerpt will be played once more. Answer (iv) below.",
+    stem: "Aural Skills. This question is based on TWO excerpts of orchestral music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2. The Flight of the Bumblebee by Rimsky-Korsakov will be played THREE times.\n• The excerpt will be played once more. Answer (iv) below.",
     questionText: "From your prescribed works, select the work which, in your opinion, is closest in style to the music heard in this excerpt. Give two reasons for your choice.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -51860,7 +51860,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q1-x1-i", topicId: "music-2-11", conceptId: "mus-excerpt-from-section-taken",
     section: "L", questionRef: "2010 HL Listening Q1 Excerpt 1(i)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The music played by the piano in this excerpt is printed below.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. The music played by the piano in this excerpt is printed below.",
     questionText: "From which section of the work is this excerpt taken?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -51916,7 +51916,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q1-x1-ii", topicId: "music-2-11", conceptId: "mus-excerpt-heard-identify-instruments",
     section: "L", questionRef: "2010 HL Listening Q1 Excerpt 1(ii)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The music played by the piano in this excerpt is printed below.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. The music played by the piano in this excerpt is printed below.",
     questionText: "Identify three percussion instruments heard playing in this excerpt. These instruments play",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -51973,7 +51973,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q1-x1-iii", topicId: "music-2-11", conceptId: "mus-first-heard-piccolo",
     section: "L", questionRef: "2010 HL Listening Q1 Excerpt 1(iii)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The music played by the piano in this excerpt is printed below.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. The music played by the piano in this excerpt is printed below.",
     questionText: "The piccolo is first heard at",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -52029,7 +52029,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q1-x2-i", topicId: "music-2-11", conceptId: "mus-insert-melody-missing-notes",
     section: "L", questionRef: "2010 HL Listening Q1 Excerpt 2(i)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2.",
     questionText: "Insert the 5 missing melody notes at X on the score.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -52094,7 +52094,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q1-x2-ii", topicId: "music-2-11", conceptId: "mus-associated-below-describe-excerpt",
     section: "L", questionRef: "2010 HL Listening Q1 Excerpt 2(ii)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2.",
     questionText: "The instrumental technique illustrated below is heard in this excerpt. Describe this technique and identify the instrument(s) with which it is associated in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -52151,7 +52151,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q1-x2-iii", topicId: "music-2-11", conceptId: "mus-describe-excerpt-figure-figures",
     section: "L", questionRef: "2010 HL Listening Q1 Excerpt 2(iii)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2.",
     questionText: "Which one of the following rhythmic figures can be heard in this excerpt? Describe one way in which this figure is used in the work?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -52217,7 +52217,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q1-x3-i", topicId: "music-2-11", conceptId: "mus-compositional-describe-excerpt-features",
     section: "L", questionRef: "2010 HL Listening Q1 Excerpt 3(i)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. There is no printed music for this excerpt.",
     questionText: "Identify and describe two compositional features/treatments of the melody heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -52274,7 +52274,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q1-x3-ii", topicId: "music-2-11", conceptId: "mus-describe-excerpt-feature-part",
     section: "L", questionRef: "2010 HL Listening Q1 Excerpt 3(ii)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. There is no printed music for this excerpt.",
     questionText: "Describe one feature of the piano part in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -52330,7 +52330,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q1-x3-iii", topicId: "music-2-11", conceptId: "mus-composer’s-outline-reasons-seachanges",
     section: "L", questionRef: "2010 HL Listening Q1 Excerpt 3(iii)",
-    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    stem: "Three excerpts from Seachanges with Danse Macabre by Deane.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. There is no printed music for this excerpt.",
     questionText: "Outline the reasons for the composer’s use of the word Seachanges in the title of this work.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -53246,7 +53246,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q5-a-x1-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-identify",
     section: "L", questionRef: "2010 HL Listening Q5 A Excerpt 1(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Identify the type of dance tune heard in this excerpt and its time signature.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -53302,7 +53302,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q5-a-x1-ii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-this",
     section: "L", questionRef: "2010 HL Listening Q5 A Excerpt 1(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Write one bar of rhythm associated with this type of dance",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -53357,7 +53357,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q5-a-x1-iii", topicId: "music-2-2", conceptId: "mus-dance-excerpt-form-heard",
     section: "L", questionRef: "2010 HL Listening Q5 A Excerpt 1(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "The dance tune heard in this excerpt is played on The form of the dance tune heard in this excerpt is",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -53413,7 +53413,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q5-a-x2-i", topicId: "music-2-2", conceptId: "mus-excerpt-identify-instruments-melody",
     section: "L", questionRef: "2010 HL Listening Q5 A Excerpt 2(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2",
     questionText: "Identify two instruments which play the melody in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -53469,7 +53469,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q5-a-x2-ii", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2010 HL Listening Q5 A Excerpt 2(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2",
     questionText: "Identify two traditional features of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -53524,7 +53524,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q5-a-x2-iii", topicId: "music-2-2", conceptId: "mus-describe-excerpt-feature-heard",
     section: "L", questionRef: "2010 HL Listening Q5 A Excerpt 2(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2",
     questionText: "Describe one non-traditional feature of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -53579,7 +53579,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q5-a-x3", topicId: "music-2-2", conceptId: "mus-both-describe-different-excerpt",
     section: "L", questionRef: "2010 HL Listening Q5 A Excerpt 3",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "This excerpt is a fusion of two different styles. Identify both styles and describe features of both styles as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -53973,7 +53973,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q6-x1-i", topicId: "music-2-3", conceptId: "mus-insert-introduction-missing-notes",
     section: "L", questionRef: "2010 HL Listening Q6 Excerpt 1(i)",
-    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• The Introduction and first verse of One Day I’ll Fly Away by Will Jennings/Joe Sample will be played THREE times. The words of the verse only are printed below. 1. I make it alone 2. When love is gone 3. Still you made your mark 4. Here in my heart",
+    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1\n• The Introduction and first verse of One Day I’ll Fly Away by Will Jennings/Joe Sample will be played THREE times. The words of the verse only are printed below. 1. I make it alone 2. When love is gone 3. Still you made your mark 4. Here in my heart",
     questionText: "Insert the pitch and rhythm of the 5 missing notes at X played by the oboe in the introduction.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -54037,7 +54037,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q6-x1-ii", topicId: "music-2-4", conceptId: "mus-describe-each-line-music",
     section: "L", questionRef: "2010 HL Listening Q6 Excerpt 1(ii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• The Introduction and first verse of One Day I’ll Fly Away by Will Jennings/Joe Sample will be played THREE times. The words of the verse only are printed below. 1. I make it alone 2. When love is gone 3. Still you made your mark 4. Here in my heart",
+    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1\n• The Introduction and first verse of One Day I’ll Fly Away by Will Jennings/Joe Sample will be played THREE times. The words of the verse only are printed below. 1. I make it alone 2. When love is gone 3. Still you made your mark 4. Here in my heart",
     questionText: "Describe the music played by the violins at the end of each line of the verse.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -54092,7 +54092,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q6-x1-iii", topicId: "music-2-4", conceptId: "mus-form-verse",
     section: "L", questionRef: "2010 HL Listening Q6 Excerpt 1(iii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• The Introduction and first verse of One Day I’ll Fly Away by Will Jennings/Joe Sample will be played THREE times. The words of the verse only are printed below. 1. I make it alone 2. When love is gone 3. Still you made your mark 4. Here in my heart",
+    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1\n• The Introduction and first verse of One Day I’ll Fly Away by Will Jennings/Joe Sample will be played THREE times. The words of the verse only are printed below. 1. I make it alone 2. When love is gone 3. Still you made your mark 4. Here in my heart",
     questionText: "The form of the verse is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -54147,7 +54147,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q6-x2-i", topicId: "music-2-3", conceptId: "mus-figure-heard-introduction-melodic",
     section: "L", questionRef: "2010 HL Listening Q6 Excerpt 2(i)",
-    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• The introduction and first verse of It’s Not Unusual by Les Reed/Gordon Mills will be played THREE times. The words only are printed below. 1. It’s not unusual to be loved by anyone 2. It’s not unusual to have fun with anyone 3. But when I see you hanging about with anyone 4. It’s not unusual to see me cry, I wanna die.",
+    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2\n• The introduction and first verse of It’s Not Unusual by Les Reed/Gordon Mills will be played THREE times. The words only are printed below. 1. It’s not unusual to be loved by anyone 2. It’s not unusual to have fun with anyone 3. But when I see you hanging about with anyone 4. It’s not unusual to see me cry, I wanna die.",
     questionText: "The melodic figure heard in the introduction is It is played by",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -54212,7 +54212,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q6-x2-ii", topicId: "music-2-4", conceptId: "mus-excerpt-identify-this-tonality",
     section: "L", questionRef: "2010 HL Listening Q6 Excerpt 2(ii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• The introduction and first verse of It’s Not Unusual by Les Reed/Gordon Mills will be played THREE times. The words only are printed below. 1. It’s not unusual to be loved by anyone 2. It’s not unusual to have fun with anyone 3. But when I see you hanging about with anyone 4. It’s not unusual to see me cry, I wanna die.",
+    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2\n• The introduction and first verse of It’s Not Unusual by Les Reed/Gordon Mills will be played THREE times. The words only are printed below. 1. It’s not unusual to be loved by anyone 2. It’s not unusual to have fun with anyone 3. But when I see you hanging about with anyone 4. It’s not unusual to see me cry, I wanna die.",
     questionText: "Identify the tonality of this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -54267,7 +54267,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q6-x2-iii", topicId: "music-2-4", conceptId: "mus-describe-excerpt-feature-heard",
     section: "L", questionRef: "2010 HL Listening Q6 Excerpt 2(iii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• The introduction and first verse of It’s Not Unusual by Les Reed/Gordon Mills will be played THREE times. The words only are printed below. 1. It’s not unusual to be loved by anyone 2. It’s not unusual to have fun with anyone 3. But when I see you hanging about with anyone 4. It’s not unusual to see me cry, I wanna die.",
+    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2\n• The introduction and first verse of It’s Not Unusual by Les Reed/Gordon Mills will be played THREE times. The words only are printed below. 1. It’s not unusual to be loved by anyone 2. It’s not unusual to have fun with anyone 3. But when I see you hanging about with anyone 4. It’s not unusual to see me cry, I wanna die.",
     questionText: "Describe one rhythmic feature of the vocal line as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -54322,7 +54322,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q6-x3-i", topicId: "music-2-4", conceptId: "mus-accompaniment-features-line",
     section: "L", questionRef: "2010 HL Listening Q6 Excerpt 3(i)",
-    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The first verse of Bridge Over Troubled Water by Paul Simon will be played THREE times. The words are printed below. 1. When you’re weary, feeling small 2. When tears are in your eyes, I will dry them all 3. I’m on your side, oh, when times get rough 4. And friends just can’t be found 5. Like a bridge over troubled water, I will lay me down 6. Like a bridge over troubled water, I will lay me down",
+    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3\n• The first verse of Bridge Over Troubled Water by Paul Simon will be played THREE times. The words are printed below. 1. When you’re weary, feeling small 2. When tears are in your eyes, I will dry them all 3. I’m on your side, oh, when times get rough 4. And friends just can’t be found 5. Like a bridge over troubled water, I will lay me down 6. Like a bridge over troubled water, I will lay me down",
     questionText: "The accompaniment in line 1 features",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -54377,7 +54377,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q6-x3-ii", topicId: "music-2-3", conceptId: "mus-following-heard-line-melody",
     section: "L", questionRef: "2010 HL Listening Q6 Excerpt 3(ii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The first verse of Bridge Over Troubled Water by Paul Simon will be played THREE times. The words are printed below. 1. When you’re weary, feeling small 2. When tears are in your eyes, I will dry them all 3. I’m on your side, oh, when times get rough 4. And friends just can’t be found 5. Like a bridge over troubled water, I will lay me down 6. Like a bridge over troubled water, I will lay me down",
+    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3\n• The first verse of Bridge Over Troubled Water by Paul Simon will be played THREE times. The words are printed below. 1. When you’re weary, feeling small 2. When tears are in your eyes, I will dry them all 3. I’m on your side, oh, when times get rough 4. And friends just can’t be found 5. Like a bridge over troubled water, I will lay me down 6. Like a bridge over troubled water, I will lay me down",
     questionText: "In which line is the following melody heard?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -54432,7 +54432,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q6-x3-iii", topicId: "music-2-4", conceptId: "mus-describe-excerpt-texture",
     section: "L", questionRef: "2010 HL Listening Q6 Excerpt 3(iii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The first verse of Bridge Over Troubled Water by Paul Simon will be played THREE times. The words are printed below. 1. When you’re weary, feeling small 2. When tears are in your eyes, I will dry them all 3. I’m on your side, oh, when times get rough 4. And friends just can’t be found 5. Like a bridge over troubled water, I will lay me down 6. Like a bridge over troubled water, I will lay me down",
+    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3\n• The first verse of Bridge Over Troubled Water by Paul Simon will be played THREE times. The words are printed below. 1. When you’re weary, feeling small 2. When tears are in your eyes, I will dry them all 3. I’m on your side, oh, when times get rough 4. And friends just can’t be found 5. Like a bridge over troubled water, I will lay me down 6. Like a bridge over troubled water, I will lay me down",
     questionText: "Describe the texture of the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -54487,7 +54487,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2010 Higher Level — © State Examinations Commission.",
     id: "mus-2010-hl-l-q6-x3-iv", topicId: "music-2-4", conceptId: "mus-describe-differs-from-three",
     section: "L", questionRef: "2010 HL Listening Q6 Excerpt 3(iv)",
-    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The first verse of Bridge Over Troubled Water by Paul Simon will be played THREE times. The words are printed below. 1. When you’re weary, feeling small 2. When tears are in your eyes, I will dry them all 3. I’m on your side, oh, when times get rough 4. And friends just can’t be found 5. Like a bridge over troubled water, I will lay me down 6. Like a bridge over troubled water, I will lay me down\n• Now listen to a later excerpt from the song (verse 3) which is not printed here. It will be played TWICE. Answer (iv) below.",
+    stem: "Aural Skills. This question is based on THREE excerpts of popular music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3\n• The first verse of Bridge Over Troubled Water by Paul Simon will be played THREE times. The words are printed below. 1. When you’re weary, feeling small 2. When tears are in your eyes, I will dry them all 3. I’m on your side, oh, when times get rough 4. And friends just can’t be found 5. Like a bridge over troubled water, I will lay me down 6. Like a bridge over troubled water, I will lay me down\n• Now listen to a later excerpt from the song (verse 3) which is not printed here. It will be played TWICE. Answer (iv) below.",
     questionText: "Describe three ways in which verse 3 differs from verse 1.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4.5,
     rows: [
@@ -55255,7 +55255,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q1-x1-i", topicId: "music-2-14", conceptId: "mus-excerpt-heard-identify-line",
     section: "L", questionRef: "2012 HL Listening Q1 Excerpt 1(i)",
-    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
     questionText: "Identify the style of singing heard in line 1 of this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -55311,7 +55311,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q1-x1-ii", topicId: "music-2-14", conceptId: "mus-does-enter-line-piano",
     section: "L", questionRef: "2012 HL Listening Q1 Excerpt 1(ii)",
-    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
     questionText: "In which line does the piano enter? It plays",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -55368,7 +55368,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q1-x1-iii", topicId: "music-2-14", conceptId: "mus-features-heard-identify-line",
     section: "L", questionRef: "2012 HL Listening Q1 Excerpt 1(iii)",
-    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
     questionText: "Identify two features of the vocal music as heard in line 5.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -55424,7 +55424,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q1-x1-iv", topicId: "music-2-14", conceptId: "mus-anyway-blows’-describe-effect",
     section: "L", questionRef: "2012 HL Listening Q1 Excerpt 1(iv)",
-    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
     questionText: "Describe the effect used to illustrate the words ‘anyway the wind blows’ in line 6.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -55480,7 +55480,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q1-x2-i", topicId: "music-2-14", conceptId: "mus-bars-bass-describe-excerpt",
     section: "L", questionRef: "2012 HL Listening Q1 Excerpt 2(i)",
-    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. An outline score of the music for this excerpt is printed below.",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2. An outline score of the music for this excerpt is printed below.",
     questionText: "Describe the bass guitar part heard in bars 1–6 of this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -55536,7 +55536,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q1-x2-ii", topicId: "music-2-14", conceptId: "mus-five-insert-melody-missing",
     section: "L", questionRef: "2012 HL Listening Q1 Excerpt 2(ii)",
-    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. An outline score of the music for this excerpt is printed below.",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2. An outline score of the music for this excerpt is printed below.",
     questionText: "Insert the five missing melody notes at X on the score.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2.5,
     rows: [
@@ -55601,7 +55601,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q1-x2-iii", topicId: "music-2-14", conceptId: "mus-describe-excerpt-heard-music",
     section: "L", questionRef: "2012 HL Listening Q1 Excerpt 2(iii)",
-    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. An outline score of the music for this excerpt is printed below.",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 2. An outline score of the music for this excerpt is printed below.",
     questionText: "Describe the style of music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -55657,7 +55657,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q1-x3-i", topicId: "music-2-14", conceptId: "mus-excerpt-from-section-song",
     section: "L", questionRef: "2012 HL Listening Q1 Excerpt 3(i)",
-    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. There is no printed music for this excerpt.",
     questionText: "From which section of the song is this excerpt taken?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -55713,7 +55713,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q1-x3-ii", topicId: "music-2-14", conceptId: "mus-excerpt-explain-this-vocals",
     section: "L", questionRef: "2012 HL Listening Q1 Excerpt 3(ii)",
-    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. There is no printed music for this excerpt.",
     questionText: "The vocals in this excerpt are Explain.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -55770,7 +55770,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q1-x3-iii", topicId: "music-2-14", conceptId: "mus-emphasised-excerpt-this-word",
     section: "L", questionRef: "2012 HL Listening Q1 Excerpt 3(iii)",
-    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. There is no printed music for this excerpt.",
     questionText: "How is the word ‘no’ emphasised in this excerpt?.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -55826,7 +55826,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q1-x3-iv", topicId: "music-2-14", conceptId: "mus-contrasts-describe-excerpt-heard",
     section: "L", questionRef: "2012 HL Listening Q1 Excerpt 3(iv)",
-    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3.\nExcerpt 3. There is no printed music for this excerpt.",
     questionText: "Describe two ways in which the music heard in the remainder of the song, contrasts with the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -56725,7 +56725,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q5-a-x1-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-identify",
     section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 1(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Identify the type of dance tune heard in this excerpt and its time signature.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -56781,7 +56781,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q5-a-x1-ii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-this",
     section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 1(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "Write one bar of rhythm associated with this type of dance:",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -56836,7 +56836,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q5-a-x1-iii", topicId: "music-2-2", conceptId: "mus-excerpt-features-this",
     section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 1(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 1",
     questionText: "This excerpt features",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -56891,7 +56891,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q5-a-x2-i", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
     section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 2(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2",
     questionText: "Identify two features of the vocals heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -56946,7 +56946,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q5-a-x2-ii", topicId: "music-2-2", conceptId: "mus-excerpt-heard-identify-instruments",
     section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 2(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2",
     questionText: "Identify two traditional instruments heard in this excerpt",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -57001,7 +57001,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q5-a-x2-iii", topicId: "music-2-2", conceptId: "mus-describe-excerpt-feature-heard",
     section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 2(iii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 2",
     questionText: "Describe one non-traditional feature of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -57056,7 +57056,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q5-a-x3-i", topicId: "music-2-2", conceptId: "mus-excerpt-heard-instruments-name",
     section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 3(i)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "Name two instruments heard in this excerpt",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -57111,7 +57111,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q5-a-x3-ii", topicId: "music-2-2", conceptId: "mus-both-describe-different-excerpt",
     section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 3(ii)",
-    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt.\nExcerpt 3",
     questionText: "This recording is a fusion of two different styles. Identify both styles and describe features of both styles as heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -57513,7 +57513,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q6-x1-i", topicId: "music-2-4", conceptId: "mus-bars-instrument-melody-name",
     section: "L", questionRef: "2012 HL Listening Q6 Excerpt 1(i)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• The full excerpt will be played ONCE only. The introduction (bars 1–7), taken from this excerpt, will then be played THREE times.\n• The outline score of the introduction is printed below.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1\n• The full excerpt will be played ONCE only. The introduction (bars 1–7), taken from this excerpt, will then be played THREE times.\n• The outline score of the introduction is printed below.",
     questionText: "Name the instrument which plays the melody in bars 1–7.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -57568,7 +57568,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q6-x1-ii", topicId: "music-2-4", conceptId: "mus-accompaniment-bars-describe-feature",
     section: "L", questionRef: "2012 HL Listening Q6 Excerpt 1(ii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• The full excerpt will be played ONCE only. The introduction (bars 1–7), taken from this excerpt, will then be played THREE times.\n• The outline score of the introduction is printed below.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1\n• The full excerpt will be played ONCE only. The introduction (bars 1–7), taken from this excerpt, will then be played THREE times.\n• The outline score of the introduction is printed below.",
     questionText: "Describe one feature of the harp accompaniment in bars 1–7.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -57623,7 +57623,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q6-x1-iii", topicId: "music-2-4", conceptId: "mus-form-heard-music-section",
     section: "L", questionRef: "2012 HL Listening Q6 Excerpt 1(iii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• The full excerpt will be played ONCE only. The introduction (bars 1–7), taken from this excerpt, will then be played THREE times.\n• The outline score of the introduction is printed below.\n• The rest of the excerpt will now be played TWICE. Answer (iii) below.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 1\n• The full excerpt will be played ONCE only. The introduction (bars 1–7), taken from this excerpt, will then be played THREE times.\n• The outline score of the introduction is printed below.\n• The rest of the excerpt will now be played TWICE. Answer (iii) below.",
     questionText: "The form of the music heard in this section is",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -57678,7 +57678,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q6-x2-i", topicId: "music-2-4", conceptId: "mus-excerpt-heard-identify-music",
     section: "L", questionRef: "2012 HL Listening Q6 Excerpt 2(i)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• The excerpt will be played THREE times.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2\n• The excerpt will be played THREE times.",
     questionText: "Identify the time signature of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -57733,7 +57733,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q6-x2-ii", topicId: "music-2-4", conceptId: "mus-accompaniment-figure-heard-rhythmic",
     section: "L", questionRef: "2012 HL Listening Q6 Excerpt 2(ii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• The excerpt will be played THREE times.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2\n• The excerpt will be played THREE times.",
     questionText: "Which rhythmic figure can be heard in the accompaniment?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
     rows: [
@@ -57797,7 +57797,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q6-x2-iii", topicId: "music-2-4", conceptId: "mus-describe-excerpt-heard-identify",
     section: "L", questionRef: "2012 HL Listening Q6 Excerpt 2(iii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• The excerpt will be played THREE times.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 2\n• The excerpt will be played THREE times.",
     questionText: "Identify and describe the texture of the music heard in this excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2.5,
     rows: [
@@ -57853,7 +57853,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q6-x3-i", topicId: "music-2-4", conceptId: "mus-cadences-identify",
     section: "L", questionRef: "2012 HL Listening Q6 Excerpt 3(i)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.",
     questionText: "Identify the cadences at X and Z.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -57909,7 +57909,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q6-x3-ii", topicId: "music-2-3", conceptId: "mus-four-insert-missing-notes",
     section: "L", questionRef: "2012 HL Listening Q6 Excerpt 3(ii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.",
     questionText: "Insert the four missing notes at Y on the score.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -57973,7 +57973,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q6-x3-iii", topicId: "music-2-4", conceptId: "mus-excerpt-identify-tonality",
     section: "L", questionRef: "2012 HL Listening Q6 Excerpt 3(iii)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.",
     questionText: "Identify the tonality of the excerpt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -58028,7 +58028,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
     id: "mus-2012-hl-l-q6-x3-iv", topicId: "music-2-4", conceptId: "mus-choice-closest-excerpt-from",
     section: "L", questionRef: "2012 HL Listening Q6 Excerpt 3(iv)",
-    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.\n• The full excerpt will now be played ONCE more. Answer (iv) below.",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt.\nExcerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.\n• The full excerpt will now be played ONCE more. Answer (iv) below.",
     questionText: "From your prescribed works, select the work which, in your opinion, is closest in style to the music heard in this excerpt. Give two reasons for your choice.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [

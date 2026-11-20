@@ -25,10 +25,17 @@ export const stemWithListBreaks = (stem: string): string =>
  * between its instruction and the extract, and a new line where the paper
  * starts one — an indented paragraph, a dated diary entry, a bulleted item, a
  * row of a printed table. The words are the lifted words; only the breaks are
- * the paper's. Only History's reader records breaks like these, so only a
- * History stem is shown through this; every other subject keeps
+ * the paper's. Music's do too (scripts/markbank/authoring/music_cards.py): a
+ * listening question's lead-in, its instruction bullets and the excerpt
+ * heading are separate printed lines, as are a Q5 B essay's two printed
+ * lines. Only those two readers record breaks like these, so only their stems
+ * are shown through this (stemKeepsPrintedBreaks); every other subject keeps
  * stemWithListBreaks, unchanged.
  */
 export const stemWithPrintedBreaks = (stem: string): string =>
   stem.trim().replace(/[^\S\n]*\n\s*/g, (gap: string) =>
     ((gap.match(/\n/g) ?? []).length > 1 ? '\n\n' : '\n'));
+
+/** The subjects whose stems record the paper's own line breaks. */
+export const stemKeepsPrintedBreaks = (subjectId: string): boolean =>
+  subjectId === 'history' || subjectId === 'music';
