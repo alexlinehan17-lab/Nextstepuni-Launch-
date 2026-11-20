@@ -49,6 +49,7 @@ CROATIAN = set('čćđšžČĆĐŠŽ')
 GREEK = {chr(c) for c in list(range(0x370, 0x400)) + list(range(0x1F00, 0x2000))}
 BULGARIAN = set('абвгдежзийклмнопрстуфхцчшщъьюяѝАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЮЯЍ')
 HUNGARIAN = set('áéíóöőúüűÁÉÍÓÖŐÚÜŰ')
+SLOVAK = set('áäčďéíĺľňóôŕšťúýžÁÄČĎÉÍĹĽŇÓÔŔŠŤÚÝŽ')
 MIN_SIGHTINGS, MIN_SHARE = 3, 0.95
 
 
@@ -168,6 +169,11 @@ SUBJECTS = {
     # glyph across them): those two lines are kept as extracted (no card uses
     # them); every other changed line is glyph-for-glyph, same length.
     'hungarian': {'docs': {2015: ('scheme',)}, 'alphabet': HUNGARIAN, 'rendered': {}, 'suspect': set(),
+                  'standin': lambda c: False, 'positional': True},
+    # Slovakian 2015 (scheme): a Type0 Times New Roman draws Č č ď ľ Ť ť with no
+    # Unicode; rawdict reports their ids (253 as ý, colliding with the real ý),
+    # so by position, as Czech (drafter's report, 20 Nov).
+    'slovakian': {'docs': {2015: ('scheme',)}, 'alphabet': SLOVAK, 'rendered': {}, 'suspect': set(),
                   'standin': lambda c: False, 'positional': True},
     'bulgarian': {'docs': {2015: ('scheme',)}, 'alphabet': BULGARIAN,
                   'rendered': {'TimesNewRoman|630': '\u044c'}, 'suspect': set(),
