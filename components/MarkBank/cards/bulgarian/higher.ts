@@ -639,6 +639,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2012 Higher Level — © State Examinations Commission.",
+    id: "bul-2012-hl-ii-1", topicId: "bulgarian-1-0", conceptId: "100",
+    section: "II", questionRef: "2012 HL Section II Q1",
+    questionText: "„В съвременния свят културният и езиков плурализъм може да се види като нещо негативно и опасно – идентичността на отделните народи, на отделните култури, спецификата на националните литератури се претопява. Или поне силно избледнява... Но езиковата глобализация може да се види и като нещо положително – най-после ние, човеците живеем наистина заедно, разбираме се помежду си, общуваме без граници.” Какво е вашето мнение? (около 100 думи)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Кандидатът би могъл да развие темата, опирайки се на авторовата теза (интерпретирана в 6-ти въпрос), но в същото време е добре да изрази собственото си мнение - би могъл да засегне въпроси, свързани с възможностите, които културните взаимодействия и комуникацията разкриват пред човечеството, «културните смесвания», чертите на една нова идентичност надхвърляща тесните национални рамки... Културите изграждат понятията си във взаимодействие, те се оглеждат една в друга, всяка култура по някакъв начин «съдържа» в себе си всички останали. Осъзнаването на тази връзка е важно условие за разбирането на свързаността ни с «другите» и на общочовешките културни стойности.", marks: null, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" The scheme heads it: “Лична интерпретация, ясни и непротиворечиви идеи.”. Under “Бележки:” the scheme prints “При оценяването на отговорите от първите две части се прилагат следните критерии:” “1. Яснота и точност на израза – кандидатът разбира добре въпросите и знае как да отговори ясно и точно – 30% ;” “2. Свързаност и непротиворечивост на отговорите – кандидатът използва откъси от текста, които са адекватни на мисълта му, идеите му са непротиворечиви и композицията на съчинението следва определена логика – 30% ;” “3. Езикова компетентност – кандидатът умее свободно да изразява идеи си, езикът на изказването му е ясен и точен – 30% ;” “4. Конвенционални умения – кандидатът владее и прилага граматичната норма и правописа на съвременния български книжовен език.” The fourth criterion prints no percentage, so the criteria are shown and the part is scored on its printed total." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ВТОРА ЧАСТ",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2012 Higher Level — © State Examinations Commission.",
+    id: "bul-2012-hl-iii-1", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2012 HL Section III Q1",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: Дали има много светове около нас?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under the two titles the scheme prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Under “Бележки:” it prints its criteria for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:” The scheme reprints this title as: “Дали има ли много светове около нас?”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2012 Higher Level — © State Examinations Commission.",
+    id: "bul-2012-hl-iii-2", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2012 HL Section III Q2",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: В съвременното ни общество всичко се фокусира върху „тук и сега”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under the two titles the scheme prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Under “Бележки:” it prints its criteria for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2013, level: "higher",
     paperFileid: "LC559ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2013 Higher Level — © State Examinations Commission.",

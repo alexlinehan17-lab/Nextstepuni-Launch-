@@ -108,11 +108,11 @@
     "refsHash": "9c52a9738a3c0ca4"
   },
   "bulgarian": {
-    "cards": 153,
-    "contentHash": "1209429438472f43",
+    "cards": 156,
+    "contentHash": "66c5df801d20b849",
     "coveragePct": 100.0,
-    "covered": 153,
-    "excluded": 66,
+    "covered": 156,
+    "excluded": 63,
     "leaves": 219,
     "open": 0,
     "orphans": 0,
@@ -120,7 +120,7 @@
       "count": 17,
       "hash": "4d409f9708da65de"
     },
-    "refsHash": "6028e41a299cff07"
+    "refsHash": "a74d5d83fa988981"
   },
   "business": {
     "cards": 2163,
