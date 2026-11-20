@@ -571,6 +571,7 @@ RULE_WORDS = {
     'maltese': (r'[Ww]ieġeb|[Tt]weġibiet', r'[Mm]alti'),
     # Czech and Latvian print the rule on their own p2 (the lt walker's live
     # cards say only that the question is in the language; new cards quote it).
+    'ukrainian': (r'відповід', r'українськ'),
     'czech': (r'Všechny otázky', r'česk'),
     'latvian': (r'Visām atbildēm', r'latvisk'),
 }
