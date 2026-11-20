@@ -689,6 +689,10 @@ def cards(subject, year, specs, level='hl', scheme=True):
         if spec.stem if hasattr(spec, 'stem') else None:
             card['stem'] = spec.stem(doc) if callable(spec.stem) else spec.stem
         if getattr(spec, 'source', True) and essay_part(key[0], two_part) in ('I', 'II'):
+            if getattr(spec, 'pages', None):
+                # The spec's pages, read on the render, where the census attaches
+                # none or the wrong ones (Romanian 2010 has none).
+                P.text_pages[ask.q] = list(spec.pages)
             src = source_material(P, ask, subject, language, level, year)
             if src:
                 src['presentationNote'] = ('Read the text exactly as the examination printed it, then '

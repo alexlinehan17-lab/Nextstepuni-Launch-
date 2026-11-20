@@ -43,6 +43,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "a relata evenimente, fapte, folosind mai ales imagini, documentare etc., şi a distra in acelaşi timp spectatorii (SAU documentare+distracţie)", marks: 1, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -56,6 +67,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "a educa prin metode amuzante, făcând ca materiile sau subiectele predate să fie distractive şi interesante in acelaşi timp (SAU educaţie, invăţătură+distracţie)", marks: 1, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -69,6 +91,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "a primi şi a transmite informaţii într-un mod uşor accesibil şi amuzant în scopul de a facilita înţelegerea mesajului (SAU informaţie+distracţie)", marks: 1, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -82,6 +115,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "un plan sau studiu despre cum trebuie prezentate, anunţate şi vândute produsele unei societaţi comerciale", marks: 1, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -95,6 +139,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "a lua în considerare numai faptele fară a se lăsa influenţat de sentimentele şi părerile personale", marks: 1, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -110,6 +165,17 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "publicul nu are nici un control asupra programelor pre-selecţionate, toate tratează aceleaşi teme: sexualitate, violentă, tragedii...Faptul că avem telecomanda este doar o iluzie că am avea şi controlul alegerilor noastre", marks: null },
     { id: "r-3", kind: "point", verbatim: "această metaforă face ca descrierea televizorului să fie mai convingătoare şi mai expresivă sugerând că tot ce e personal şi ne diferenţiaza de ceilalţi este, in traducere literala, şters, spălat din creierul nostru cu excepţia imaginilor şi a sunetelor acestor programe manipulatoare", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -123,6 +189,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "ca o consecinţă directă a « maşinii de spălat creierul », a difuzării continue de ştiri senzaţionale obişnuinţa cu ce este rău, extrem şi impresionant duce la o slăbire a sensibilităţii pană când nimic nu ne mai impresionează, nu mai suntem capabili să distingem între bine şi rău, banal şi ieşit din comun", marks: 5, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -141,6 +218,17 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "nu are suficient control asupra propriilor dorinţe sau alegeri şi este usor de manipulat", marks: null, contextNote: "For “Caracteristici negative:”" },
     { id: "r-6", kind: "point", verbatim: "îi place să acumuleze informaţii pur factuale pentru a fi văzut bine şi respectat, nu pare să înţeleagă rolul gândirii analitice şi al creativitatii", marks: null, contextNote: "For “Caracteristici negative:”" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -156,6 +244,17 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "rareori este un mijloc de instruire şi educaţie iar atunci când se întâmplă să fie, (programele culturale şi ştiintifice) aspectul factual rămâne predominant fară a lăsa loc pentru o înţelegere aprofundată şi aplicaţia la viata personală", marks: null },
     { id: "r-3", kind: "point", verbatim: "tv reprezintă toate cele trei aspecte impreună şi totul depinde de public dacă vrea sau nu să decidă cât consumă din programele tv", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -173,6 +272,17 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "să diversificăm sursele noastre de informaţie, să citim mai mult, să călătorim, să ne jucăm, să ne găsim noi hobiuri", marks: null },
     { id: "r-5", kind: "point", verbatim: "cum să ne închipuim pe noi înşine contribuind la schimbările din lumea in care trăim", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -186,6 +296,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "criterion", verbatim: "Comentarea citatului, (în aprox. 100 de cuvinte), demonstrînd înţelegerea în ansamblu a subiectului şi în special a scopului cu care autorul a scris acest articol. Comentariul trebuie de asemenea să ilustreze înţelegerea consecinţelor pentru viaţa personală reală aşa cum se sugerează prin acest citat.", marks: 30, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\" The scheme prints: “In partea II si III vor fi luate in considerare la acordarea notelor urmatoarele criterii:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înţelege întrebarea şi modul in care i se cere să răspundă – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Coerenta răspunsului – candidatul foloseşte un material adecvat într-o manieră structurată şi la subiect– 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Eficienţa limbajului – candidatul demonstrează că stăpâneşte limba destul de bine pentru a-şi comunica cu claritate şi cursivitate ideile – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Respectarea regulilor – gramatică, punctuaţie – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PARTEA II",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
