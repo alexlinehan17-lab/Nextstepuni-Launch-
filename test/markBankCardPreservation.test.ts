@@ -187,6 +187,7 @@ import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-stu
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
 import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
+import { CARDS as MUSIC_ORDINARY } from '../components/MarkBank/cards/music/ordinary';
 import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
@@ -2115,9 +2116,12 @@ const BIOLOGY_REVIEW_ADDED = new Set([
     .sittings).flatMap(sitting => sitting.review?.added ?? []),
   'bio-2025-hl-q9-b-ii',
 ]);
+// The SEC's deferred sittings (bio_review_<year>_<level>_deferred.py, from 2026-11-19,
+// "bio-2022-hl-deferred-…", cited "… — Deferred sitting") join as additions: every id is new.
+const BIOLOGY_DEFERRED_ID = /^bio-\d{4}-(?:hl|ol)-deferred-/;
 const isBiologyAdded = (id: string) => {
   const year = Number(id.slice('bio-'.length, 'bio-'.length + 4));
-  return year < 2021 || year > 2025 || BIOLOGY_REVIEW_ADDED.has(id);
+  return year < 2021 || year > 2025 || BIOLOGY_REVIEW_ADDED.has(id) || BIOLOGY_DEFERRED_ID.test(id);
 };
 const biologyAdditionIds = new Set([...BIO_HIGHER, ...BIO_ORDINARY]
   .map(card => card.id).filter(isBiologyAdded));
@@ -3149,10 +3153,43 @@ describe('Mark Bank card preservation', () => {
   it('pins the Music 2025 Higher prototype (review pack 1), a deck of its own', () => {
     // 46 cards for 53 printed asks: 42 listening, Composing Section A's three,
     // and one Listening elective card for its five asks (one shared band).
-    // Composing Section B's three asks are not carded: no card type takes
-    // their half mark per correct note (treatments lane README).
-    expect(MUSIC_HIGHER).toHaveLength(46);
-    expect(idHash(MUSIC_HIGHER.map(card => card.id))).toBe('2d7a41260efd6dc6e9c91822e02da297e675a9eba782445057e9c868d2dd46b2');
+    // Composing Section B's three asks were carded later by the music lane,
+    // on the counted grid line (MUSIC_LANE_SITTINGS below).
+    const prototype = MUSIC_HIGHER.filter(card => card.year === 2025 && card.section !== 'B' && !card.id.includes('-deferred-'));
+    expect(prototype).toHaveLength(46);
+    expect(idHash(prototype.map(card => card.id))).toBe('2d7a41260efd6dc6e9c91822e02da297e675a9eba782445057e9c868d2dd46b2');
+  });
+
+  it('pins every card the music lane adds, sitting by sitting', () => {
+    // [sitting, cards, sha256 of the sorted ids]. One row per sitting, added
+    // in the commit that cards it; a row never changes once added.
+    const MUSIC_LANE_SITTINGS: Array<[string, number, string]> = [
+      ['2025 higher', 3, 'eba1c9deac3a34ae8b9e609a168791b0d6112c4ba1db6eddda4d57516dcc0c2c'],
+      ['2026 higher', 56, '7456dcb567921ed8a24c698bb99a461e7ced4159f874a83abef3f3d0df302fe2'],
+      ['2026 ordinary', 48, 'a5afbcf10d02d25dd699036a151444daafb5de89e16958c5ed1d54c5a9dfa47a'],
+      ['2025 ordinary', 45, '9e48dccaa817e4794a5d66be0fe64437eee127158bc9e8d728c77d07a4902cfa'],
+      ['2024 higher', 41, 'ae7bcd811086917d0b01d58c13f230471592207e378e7800eccd8c86df819c13'],
+      ['2023 higher', 46, '7a00f4ada5a057a1155666911d6a7790156544c2de115193ad745f8ba79a87bd'],
+      ['2023 ordinary', 49, '7e98423ac2396a730531a5d062928ff20e1bc3a0c6a5c33ed9ebe9476af6af46'],
+      ['2022 higher', 46, '02c9d681ec7687bbdfe6e87644143135e124436b596846592fed8fcf8e67728c'],
+      ['2022 ordinary', 50, '4f11e42020c66984a50bbcfe73489369ba4b962700bb361ab8abc66e7abf2586'],
+      ['2024 ordinary', 43, '071715cc041aacb54332c2fedf874795febb2ade6355650894c0beb348123cb6'],
+      ['2021 higher', 49, 'ea13cfed03b3ea396d8733eabc4cfae72b1e5808dfa57cf98206964a83a60a48'],
+      ['2021 ordinary', 58, '1c980af7d2f21f596c29c06f60cd59109beae576545254494c50999316d112ca'],
+      ['2020 higher', 52, 'a2677fa649697b54889ea70b4452da79cef0574f41b5295411cbf87da250a9f1'],
+    ];
+    const lane = new Map<string, string[]>();
+    for (const card of [...MUSIC_HIGHER, ...MUSIC_ORDINARY]) {
+      const deferred = card.id.includes('-deferred-');
+      if (card.year === 2025 && card.level === 'higher' && card.section !== 'B' && !deferred) continue;
+      const key = `${card.year} ${card.level}${deferred ? ' deferred' : ''}`;
+      lane.set(key, [...(lane.get(key) ?? []), card.id]);
+    }
+    expect([...lane.keys()].sort()).toEqual(MUSIC_LANE_SITTINGS.map(([key]) => key).sort());
+    for (const [key, count, hash] of MUSIC_LANE_SITTINGS) {
+      expect(lane.get(key), key).toHaveLength(count);
+      expect(idHash(lane.get(key)!), key).toBe(hash);
+    }
   });
 
   it('protects the complete current bank', () => {
@@ -3773,7 +3810,11 @@ describe('Mark Bank card preservation', () => {
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
     const published = new Set([...publishedEnglishHigher.cards, ...publishedEnglishOrdinary.cards]
       .map(card => card.id));
-    expect(published.size).toBe(2_685);
+    // 2,685 June cards; the deferred sittings (from 2026-11-19, "english-<year>-<lv>-deferred-…") are new ids
+    // on top, never a June id.
+    expect([...published].filter(id => !id.includes('-deferred-'))).toHaveLength(2_685);
+    expect([...published].filter(id => id.includes('-deferred-'))
+      .every(id => /^english-20(?:22|23|24|25)-(?:hl|ol)-deferred-p[12]-/.test(id))).toBe(true);
     // No route card is published: a printed choice marked identically is one card.
     expect([...published].some(id => id.includes('-route-'))).toBe(false);
     // Legacy ids of bridged papers (2025 HL) are no longer served as legacy
@@ -3803,19 +3844,25 @@ describe('Mark Bank card preservation', () => {
     }
     const papers = [...publishedEnglishHigher.papers, ...publishedEnglishOrdinary.papers].map(paper => paper.paperId);
     expect([...published].every(id => papers.some(paper => id.startsWith(`${paper}-`)))).toBe(true);
-    // Reviewed additions on top of the frozen 650: 548 Higher + 1,612 Ordinary,
-    // none reusing a frozen ID or an alias key.
-    const added = (level: string) => [...englishAdditionIds].filter(id => id.includes(level)).length;
+    // Reviewed additions on top of the frozen 650: 548 Higher + 1,612 Ordinary June cards,
+    // none reusing a frozen ID or an alias key; and, from 2026-11-19, the deferred sittings' new ids
+    // (2025 Higher 44, 2024 Higher 44, 2024 Ordinary 121, 2023 Higher 45).
+    const added = (level: string) => [...englishAdditionIds].filter(id => id.includes(level) && !id.includes('-deferred-')).length;
     const aliased = (level: string) => englishAliasIds.filter(id => id.includes(level)).length;
     expect([added('-hl-'), aliased('-hl-'), added('-ol-'), aliased('-ol-')]).toEqual([548, 20, 1612, 105]);
+    const deferredAdded = (level: string) => [...englishAdditionIds]
+      .filter(id => id.includes(`${level}deferred-`)).length;
+    expect([deferredAdded('-hl-'), deferredAdded('-ol-')]).toEqual([179, 241]);
     for (const id of englishAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
-    expect(ENGLISH_HIGHER).toHaveLength(210 - aliased('-hl-') + added('-hl-'));
-    expect(ENGLISH_ORDINARY).toHaveLength(440 - aliased('-ol-') + added('-ol-'));
+    expect(ENGLISH_HIGHER).toHaveLength(210 - aliased('-hl-') + added('-hl-') + deferredAdded('-hl-'));
+    expect(ENGLISH_ORDINARY).toHaveLength(440 - aliased('-ol-') + added('-ol-') + deferredAdded('-ol-'));
   });
 
   it('adds the reviewed Biology sittings on top of the frozen 2021-2025 set without replacing an id', () => {
     // Every card id names its own sitting, which is what isBiologyAdded reads.
     expect(BIO_HIGHER.every(card => card.id.startsWith(`bio-${card.year}-hl-`))).toBe(true);
+    const june = (cards: readonly { id: string }[]) => cards.filter(card => !BIOLOGY_DEFERRED_ID.test(card.id));
+    const deferred = (cards: readonly { id: string }[]) => cards.filter(card => BIOLOGY_DEFERRED_ID.test(card.id));
     expect(BIO_ORDINARY.every(card => card.id.startsWith(`bio-${card.year}-ol-`))).toBe(true);
     // A shipped id a review withdraws survives as a progress alias; restored,
     // the 2021-2025 set is exactly the one pinned before the reviews (above).
@@ -3823,11 +3870,14 @@ describe('Mark Bank card preservation', () => {
     expect(biologyAliasIds.filter(id => id.includes('-ol-'))).toEqual(['bio-2025-ol-q16-ciii-fig']);
     for (const id of biologyAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
     // The live decks, pinned whole (their history is beside the frozen pins).
-    expect(BIO_HIGHER).toHaveLength(2705);
-    expect(idHash(BIO_HIGHER.map(card => card.id))).toBe('ddd10144ca8fa3f688428f95265c9ec22b34845cb958e688bda87cbe1fe5cf39');
-    expect(BIO_ORDINARY).toHaveLength(2835);
-    expect(idHash(BIO_ORDINARY.map(card => card.id))).toBe('4f0b15fd23902b4da3b0f8948e85519be7c02b8e567f42aeea5cb6aed366d95e');
-    expect(biologyAdditionIds.size).toBe(2705 + 2835 - (673 - 1) - (686 - 1));
+    expect(june(BIO_HIGHER)).toHaveLength(2705);
+    expect(idHash(june(BIO_HIGHER).map(card => card.id))).toBe('ddd10144ca8fa3f688428f95265c9ec22b34845cb958e688bda87cbe1fe5cf39');
+    expect(june(BIO_ORDINARY)).toHaveLength(2835);
+    expect(idHash(june(BIO_ORDINARY).map(card => card.id))).toBe('4f0b15fd23902b4da3b0f8948e85519be7c02b8e567f42aeea5cb6aed366d95e');
+    // The deferred sittings, carded one by one: [Higher, Ordinary].
+    expect([deferred(BIO_HIGHER).length, deferred(BIO_ORDINARY).length]).toEqual([182, 182]);
+    expect(biologyAdditionIds.size).toBe(2705 + 2835 - (673 - 1) - (686 - 1)
+      + deferred(BIO_HIGHER).length + deferred(BIO_ORDINARY).length);
     // The sittings before 2021 had no Biology cards: everything they carry is new.
     expect(BIO_HIGHER.filter(card => card.year <= 2020)).toHaveLength(1627);
     expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(1742);

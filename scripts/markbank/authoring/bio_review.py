@@ -75,6 +75,28 @@ def level_word(level):
     return B.LEVEL_WORD[level]
 
 
+def deferred_of(ledger):
+    """A ledger for the SEC's deferred sitting (bio_review_<year>_<level>_deferred.py, DEFERRED = True).
+
+    Its cards say so twice, as every live deferred card does: the id carries "-deferred-"
+    ("bio-2022-hl-deferred-q1-a") and the citation ends " — Deferred sitting". Its census is
+    the deferred booklets' own (paper_census.census_biology_deferred), its Atlas map the
+    sitting's own (biology-<year>-deferred-exam-topic-map.json), and its figures, audit entry
+    and bank slot are keyed apart from June's of the same year and level."""
+    return bool(getattr(ledger, 'DEFERRED', False))
+
+
+def sitting_token(ledger, level):
+    """'hl' for June, 'hl-deferred' for the deferred sitting: the level token in ids and keys."""
+    return level + ('-deferred' if deferred_of(ledger) else '')
+
+
+def in_sitting(cid, prefix, deferred):
+    """Is this bank id one of the sitting's own? June's prefix ("bio-2022-hl-") also begins every
+    deferred id of that year and level, which a June write must never touch."""
+    return cid.startswith(prefix) and (deferred or not cid.startswith(prefix + 'deferred-'))
+
+
 def booklet(sec, ledger=None):
     """The booklet a section is printed in. From 2019 the paper is two booklets
     (038: Sections A and B, 040: Section C); up to 2018 it is one, keyed
@@ -605,7 +627,7 @@ def build(ledger, year, level):
         qn, letter, roman, item = B.parse_ref(t['ref'])
         key_part = (qn, letter)
         item = t.get('item')
-        cid = t.get('id') or B.card_id(year, level, t['ref'],
+        cid = t.get('id') or B.card_id(year, sitting_token(ledger, level), t['ref'],
                                        t['route'] or (item[0] if item else None))
         if cid in seen_ids:
             problems.append(f'{cid}: duplicate card id')
@@ -634,7 +656,8 @@ def build(ledger, year, level):
             'id': cid, 'subjectId': 'biology', 'topicId': t['topic'], 'conceptId': t['concept'],
             'section': t['sec'],
             'questionRef': f'{year} {LT} {t["ref"]}' + (f' — {t["route"]}' if t['route'] else '')
-                           + (f' — {item[1]}' if item else ''),
+                           + (f' — {item[1]}' if item else '')
+                           + (' — Deferred sitting' if deferred_of(ledger) else ''),
         }
         if stem:
             card['stem'] = stem
@@ -656,12 +679,12 @@ def build(ledger, year, level):
             card['answerVariants'] = variants
         notes = ' '.join(x for x in (t['decision'], t['notes']) if x)
         card['notes'] = (notes + ' ' if notes else '') + \
-            f'Reviewed {getattr(ledger, "REVIEWED_AT", "2026-10-11")} against the paper and scheme; ledger bio_review_{year}_{level}.py.'
+            f'Reviewed {getattr(ledger, "REVIEWED_AT", "2026-10-11")} against the paper and scheme; ledger {ledger.__name__}.py.'
         card.update({'year': year, 'level': level_word(level)})
         if t['fig']:
-            card['figureKey'] = f'biology-{year}-{level}-{t["fig"]}'
+            card['figureKey'] = f'biology-{year}-{sitting_token(ledger, level)}-{t["fig"]}'
         if t['qfig']:
-            card['questionFigureKey'] = f'biology-{year}-{level}-{t["qfig"]}'
+            card['questionFigureKey'] = f'biology-{year}-{sitting_token(ledger, level)}-{t["qfig"]}'
         if t['labels']:
             key = []
             for lab in t['labels']:
@@ -676,7 +699,8 @@ def build(ledger, year, level):
                 'kind': 'source-illustration', 'label': 'OFFICIAL QUESTION PAGE',
                 'title': 'Official question page', 'pages': t['source_pages'],
                 'attribution': f'SEC Biology {year} {"Higher" if level == "hl" else "Ordinary"} '
-                               'Level examination paper — © State Examinations Commission.',
+                               f'Level {"deferred " if deferred_of(ledger) else ""}examination paper'
+                               ' — © State Examinations Commission.',
                 'presentationNote': 'Open the exact examination page to use its published chart, '
                                     'table, photograph or diagram.',
             }
@@ -764,7 +788,9 @@ def build(ledger, year, level):
             problems.append(f'checksum {ck}: rows give {got}, scheme tick summary says {want}')
 
     # --- census: every leaf claimed, every task a leaf --------------------
-    parts, _texts, _files = PC.census_merged('biology', year, level, None)
+    parts, _texts, _files = PC.census_merged(
+        'biology', year, level, None,
+        files=PC.biology_deferred_files(year, level) if deferred_of(ledger) else None)
     leaves = set(PC.leaves_of(parts))
     claimed, excluded_only = set(), set()
     for t in ledger.TASKS:
@@ -832,7 +858,8 @@ def build(ledger, year, level):
                                 f'{sel["start"][:50]!r} (a question figure replaces the question text)')
 
     # --- Atlas topics -----------------------------------------------------
-    atlas = json.load(open(ATLAS_MAP.format(year=year), encoding='utf-8'))
+    atlas = json.load(open(ATLAS_MAP.format(year=f'{year}-deferred' if deferred_of(ledger) else year),
+                           encoding='utf-8'))
     crosswalk = json.load(open(CROSSWALK, encoding='utf-8'))
     atlas_view = defaultdict(lambda: {'atlasTopics': [], 'taskTopics': set()})
     for t in ledger.TASKS:
@@ -903,7 +930,7 @@ def figures(ledger, lifter, year, level, write):
     for suffix, spec in ledger.FIGURES.items():
         doc, page, rect, credit, letters, alt, solution = spec[:7]
         masks = spec[7] if len(spec) > 7 else []
-        key = f'biology-{year}-{level}-{suffix}'
+        key = f'biology-{year}-{sitting_token(ledger, level)}-{suffix}'
         src = lifter.srcs[doc]
         if doc not in fresh:
             fresh[doc] = fitz.open(src.path)
@@ -943,6 +970,7 @@ def figures(ledger, lifter, year, level, write):
         rel = f'/exam-figures/biology/markbank/{key}.png'
         level_name = 'Higher' if level == 'hl' else 'Ordinary'
         what = 'marking scheme' if doc == 'scheme' else 'examination paper'
+        what = ('deferred ' if deferred_of(ledger) else '') + what
         attribution = f'SEC Leaving Certificate Biology {year} {level_name} Level {what} — © State Examinations Commission'
         if credit != ledger.SEC:
             attribution += f'; source credited in the paper\'s acknowledgements: {credit}'
@@ -1051,6 +1079,9 @@ def reconcile_existing(ledger, prefix, cards):
 
 def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
     prefix = f'bio-{year}-{level}-'
+    deferred = deferred_of(ledger)
+    if deferred:
+        prefix = f'bio-{year}-{level}-deferred-'
     raw = open(AUTHORED, encoding='utf-8').read()
     bank = json.loads(raw)
     record = None
@@ -1063,7 +1094,7 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
             if t['status'] == 'carded':
                 t['status'] = status[t['id']]
     else:
-        before = [c['id'] for c in bank if c['id'].startswith(prefix)]
+        before = [c['id'] for c in bank if in_sitting(c['id'], prefix, deferred)]
         new_ids = {c['id'] for c in cards}
         lost = [i for i in before if i not in new_ids]
         if lost:
@@ -1074,7 +1105,7 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
         # anchor. Cards this pipeline added on an earlier run are dropped first.
         out, first = [], True
         for c in bank:
-            if c['id'].startswith(prefix) and c['id'] not in replacements:
+            if in_sitting(c['id'], prefix, deferred) and c['id'] not in replacements:
                 continue
             if c['id'] in replacements:
                 if first:
@@ -1088,9 +1119,9 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
     else:
         # The sitting's cards go back where they were (appended when new), so
         # a re-run leaves every other card, and the bank's order, untouched.
-        at = next((i for i, c in enumerate(bank) if c['id'].startswith(prefix)), len(bank))
-        kept = [c for c in bank if not c['id'].startswith(prefix)]
-        at -= sum(1 for c in bank[:at] if c['id'].startswith(prefix))
+        at = next((i for i, c in enumerate(bank) if in_sitting(c['id'], prefix, deferred)), len(bank))
+        kept = [c for c in bank if not in_sitting(c['id'], prefix, deferred)]
+        at -= sum(1 for c in bank[:at] if in_sitting(c['id'], prefix, deferred))
         bank = kept[:at] + block + kept[at:]
     with open(AUTHORED, 'w', encoding='utf-8') as fh:
         fh.write(json.dumps(bank, indent=1, ensure_ascii=False))
@@ -1111,7 +1142,8 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
     manifest = {}
     if os.path.exists(FIG_MANIFEST):
         manifest = json.load(open(FIG_MANIFEST, encoding='utf-8'))
-    manifest = {k: v for k, v in manifest.items() if not k.startswith(f'biology-{year}-{level}-')}
+    fig_prefix = f'biology-{year}-{sitting_token(ledger, level)}-'
+    manifest = {k: v for k, v in manifest.items() if not in_sitting(k, fig_prefix, deferred)}
     for c in cards:
         for field in ('figureKey', 'questionFigureKey'):
             if c.get(field):
@@ -1139,10 +1171,10 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
                 'pageRoles': {str(p): r for p, r in ledger.PAGE_ROLES[k].items()},
                 'pagesLifted': sorted(lifter.used.get(k, []))}
             for k, v in ledger.SOURCES.items()}
-    audit['sittings'][f'{year}-{level}'] = {
+    audit['sittings'][f'{year}-{sitting_token(ledger, level)}'] = {
         'status': 'reviewed',
         'reviewedAt': getattr(ledger, 'REVIEWED_AT', '2026-10-11'),
-        'ledger': f'scripts/markbank/authoring/bio_review_{year}_{level}.py',
+        'ledger': f'scripts/markbank/authoring/{ledger.__name__}.py',
         'method': ledger.__doc__.strip().split('\n\n')[0],
         'sources': srcs,
         'visualSweep': {k: f'all {v["pages"]} pages rendered and read' for k, v in ledger.SOURCES.items()},
@@ -1173,8 +1205,11 @@ def main():
     ap.add_argument('year', type=int)
     ap.add_argument('level', choices=['hl', 'ol'])
     ap.add_argument('--write', action='store_true')
+    ap.add_argument('--deferred', action='store_true', help="the SEC's deferred sitting (bio_review_<y>_<l>_deferred.py)")
     args = ap.parse_args()
-    ledger = importlib.import_module(f'bio_review_{args.year}_{args.level}')
+    ledger = importlib.import_module(f'bio_review_{args.year}_{args.level}' + ('_deferred' if args.deferred else ''))
+    if deferred_of(ledger) != args.deferred:
+        raise SystemExit(f'{ledger.__name__}: DEFERRED does not match --deferred')
     try:
         lifter, cards, audit_tasks, checks = build(ledger, args.year, args.level)
         figs, _ = figures(ledger, lifter, args.year, args.level, args.write)

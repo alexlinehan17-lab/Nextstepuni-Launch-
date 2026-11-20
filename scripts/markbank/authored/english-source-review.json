@@ -5677,6 +5677,988 @@
       "attribution": "Murmuration — Barbara Crooker, as reproduced in the SEC 2020 paper.",
       "questionSha256": "9815f06906a63ffc079bcd9f12d1fc2717de5288cec27761032f1340fb9c67fe",
       "reason": "Paper PDF13 prints the instruction (“Read the following poem by Barbara Crooker”), the title, the whole 13-line poem, the byline and the gloss (*A murmuration occurs when a large flock of birds … fly together in swooping patterns) above both questions; visually verified. PDF14 begins Prescribed Poem A."
+    },
+    "english-2022-hl-deferred-p1-composing-4": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Maggie O’Farrell",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Maggie O’Farrell — edited extracts from her novel Hamnet (Tinder Press, 2020), in which Shakespeare is about to go on stage as the ghost in Hamlet, with a photograph of Shakespeare’s Globe (PDF6–7). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "The story is “set in Shakespeare’s Globe Theatre on the day described in Text 3” and must fulfil “Shakespeare’s premonition of trouble” (paper PDF8, scheme PDF17), both of which only TEXT 3 describes; the whole of TEXT 3 (PDF6–7) is retained.",
+      "questionSha256": "96ceb1d675f8991092e7290174de6343635bbe3a9e10f2574b495b9239a6ad47"
+    },
+    "english-2022-hl-deferred-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Ciaran Carty Meets Paula Meehan",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Ciaran Carty — edited text adapted from an interview with the poet Paula Meehan, from his collection of interviews Writer to Writer, The Republic of Elsewhere (The Lilliput Press, 2018), with a photograph of the poet (PDF2–3). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "73b48020f597201546e4bf37ecd891047d83604d91f87e6e0498477ade2dd019"
+    },
+    "english-2022-hl-deferred-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Ciaran Carty Meets Paula Meehan",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Ciaran Carty — edited text adapted from an interview with the poet Paula Meehan, from his collection of interviews Writer to Writer, The Republic of Elsewhere (The Lilliput Press, 2018), with a photograph of the poet (PDF2–3). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "The task asks about the observations on poetry Jeanette Winterson and Paula Meehan make “in the final paragraph of TEXT 1” (paper PDF3); scheme PDF5 assesses how the candidate relates “the observations about poetry made by both” to their own experience, so the text is needed to answer faithfully. All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "b85575670cf41e59a5c6e0b940afe1b9b901aea362b58f56edb470a083ef82a3"
+    },
+    "english-2022-hl-deferred-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Ciaran Carty Meets Paula Meehan",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Ciaran Carty — edited text adapted from an interview with the poet Paula Meehan, from his collection of interviews Writer to Writer, The Republic of Elsewhere (The Lilliput Press, 2018), with a photograph of the poet (PDF2–3). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "9df11a2aa509012f0d8159d0a15f135c3f0be51b3a1e3d4f13615196a0bb6a36"
+    },
+    "english-2022-hl-deferred-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Billy O’Callaghan",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Billy O’Callaghan — text adapted from his essay The Nature of Stories, in the collection The Danger and the Glory, Irish Authors on the Art of Writing (Arlen House, 2019), with an image of a Chinese boat (PDF4–5). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "953f2f08453c6146661ec05f0748aebd1cbf3b5702f372c3e3e7e470c338deed"
+    },
+    "english-2022-hl-deferred-p1-t2-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "BILLY O’CALLAGHAN",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "7256cd3a5372fe2d2d477d763158e1589a7d6e5279b74df99dbc09b76011b0e4",
+      "questionSha256": "767d528aa71ab77a53ead91c1acb50dc19032e5db0d6ec6daa11c53516bd4a4e",
+      "reason": "Self-contained: the task prints Billy O’Callaghan’s view in full (“the best stories, poems and novels cast spells and crack eternity and let the light come streaming in”) and asks how far the candidate can relate it to their own experience of literature; scheme PDF7 assesses that relation (“Allow for a wide variety of responses”) and never refers to the rest of TEXT 2. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2022-hl-deferred-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Billy O’Callaghan",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Billy O’Callaghan — text adapted from his essay The Nature of Stories, in the collection The Danger and the Glory, Irish Authors on the Art of Writing (Arlen House, 2019), with an image of a Chinese boat (PDF4–5). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "b07df9613561b2c24f8540d61db6c846e89ab9219caa2fab04e63b2d84c984db"
+    },
+    "english-2022-hl-deferred-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Maggie O’Farrell",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Maggie O’Farrell — edited extracts from her novel Hamnet (Tinder Press, 2020), in which Shakespeare is about to go on stage as the ghost in Hamlet, with a photograph of Shakespeare’s Globe (PDF6–7). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "6f31603e79a5e1c4dfea75602926008336ff6a4297a2c2f41563a9d92599cfb6"
+    },
+    "english-2022-hl-deferred-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Maggie O’Farrell",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Maggie O’Farrell — edited extracts from her novel Hamnet (Tinder Press, 2020), in which Shakespeare is about to go on stage as the ghost in Hamlet, with a photograph of Shakespeare’s Globe (PDF6–7). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "The task relates “the experience of the audience in the text” in “the final paragraph of TEXT 3” (paper PDF7) to the candidate’s own experience of live performances (scheme PDF10), so the text is needed to answer faithfully. All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "18ae6c80c9e8cd0a4b2c6c4b19a180d7b9f2870b822e4558fa12cf795ebaee53"
+    },
+    "english-2022-hl-deferred-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Maggie O’Farrell",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Maggie O’Farrell — edited extracts from her novel Hamnet (Tinder Press, 2020), in which Shakespeare is about to go on stage as the ghost in Hamlet, with a photograph of Shakespeare’s Globe (PDF6–7). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "0b779c03e0107c280f5ef98a78e6f6b1ff727cf2b0c699fcd30a6c18c9b39218"
+    },
+    "english-2022-hl-deferred-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The English Astronaut",
+      "pages": [
+        6
+      ],
+      "attribution": "The English Astronaut — Simon Armitage, as reproduced in the SEC 2022 deferred paper.",
+      "reason": "Paper PDF6 prints the instruction (read the poem by Simon Armitage and answer either Question 1 or Question 2), the title, the whole poem in two stanzas and the byline above the questions; visually verified.",
+      "questionSha256": "afbe9249b996c0c4156a67b61074743d6d46567f98a495b0c58908f3846c8673"
+    },
+    "english-2022-hl-deferred-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The English Astronaut",
+      "pages": [
+        6
+      ],
+      "attribution": "The English Astronaut — Simon Armitage, as reproduced in the SEC 2022 deferred paper.",
+      "reason": "Paper PDF6 prints the instruction (read the poem by Simon Armitage and answer either Question 1 or Question 2), the title, the whole poem in two stanzas and the byline above the questions; visually verified.",
+      "questionSha256": "8638f2df26eb8ef390850519788b56a6bbf92194fdabb03593ddd8c50f3ca225"
+    },
+    "english-2022-hl-deferred-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The English Astronaut",
+      "pages": [
+        6
+      ],
+      "attribution": "The English Astronaut — Simon Armitage, as reproduced in the SEC 2022 deferred paper.",
+      "reason": "Paper PDF6 prints the instruction (read the poem by Simon Armitage and answer either Question 1 or Question 2), the title, the whole poem in two stanzas and the byline above the questions; visually verified.",
+      "questionSha256": "56ac887b3bdd4ea1236ae47ef52046061972bb0013313be1884df2f5ea15a8b7"
+    },
+    "english-2022-ol-deferred-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Nuri, the Beekeeper",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Christy Lefteri — an edited extract from her novel The Beekeeper of Aleppo (Bonnier Books (UK) Ltd., 2019), with the photograph “Beekeepers at Work” (PDF2–3). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. The scheme (PDF4, General – Paper 1) treats each text as a whole, so the whole text is retained.",
+      "questionSha256": "8dcd2d1e230538f24934b0e5fd4128787c433a1820d8c0ca9c561afdc0b2b68f"
+    },
+    "english-2022-ol-deferred-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Nuri, the Beekeeper",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Christy Lefteri — an edited extract from her novel The Beekeeper of Aleppo (Bonnier Books (UK) Ltd., 2019), with the photograph “Beekeepers at Work” (PDF2–3). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. The scheme (PDF4, General – Paper 1) treats each text as a whole, so the whole text is retained.",
+      "questionSha256": "7a1a42534b954a0a09c8730774332a4a3cc92b064767450b80aff513a01bbac4"
+    },
+    "english-2022-ol-deferred-p1-t1-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "NURI, THE BEEKEEPER",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "questionSha256": "71ba6e7fac1e806d3f7247e1bbbe1465d473c3a7f7ebf49d5386e9e3ff8a81e3",
+      "reason": "Self-contained: whether humans show sufficient respect to the other creatures with whom we share the planet; the scheme (PDF6) assesses the candidate’s own view (“Allow for a broad range of responses”) and never refers to TEXT 1. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2022-ol-deferred-p1-t1-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "NURI, THE BEEKEEPER",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "questionSha256": "71e385b20e9c655e7a526067b514c9d67dbef6f09c8ef93afd291cd205cda1c4",
+      "reason": "Self-contained: the creature – an insect, bird or other animal – the candidate would choose to spend a day as, with reasons; the scheme (PDF6) assesses their own choice (“Allow for a broad range of responses”) and never refers to TEXT 1. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2022-ol-deferred-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "What We Can Learn From Other Creatures",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "A text on the relationship between humans and other creatures and what we can learn from a variety of animals (sourced from onegreenplanet.org), with a photograph of a beach sign (PDF4–5). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. The scheme (PDF4, General – Paper 1) treats each text as a whole, so the whole text is retained.",
+      "questionSha256": "bcb9c3bb83433d94817b43ffd01997d316c82d542cb684387009c5f44635ab6d"
+    },
+    "english-2022-ol-deferred-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "What We Can Learn From Other Creatures",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "A text on the relationship between humans and other creatures and what we can learn from a variety of animals (sourced from onegreenplanet.org), with a photograph of a beach sign (PDF4–5). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. The scheme (PDF4, General – Paper 1) treats each text as a whole, so the whole text is retained.",
+      "questionSha256": "2919b5bcd5eb2e033ea2d16d8fb37ac92b5b7416196e7d82e58b9631e3d596d4"
+    },
+    "english-2022-ol-deferred-p1-t2-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "considers the relationship between humans and other creatures and what we can",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "questionSha256": "71ba6e7fac1e806d3f7247e1bbbe1465d473c3a7f7ebf49d5386e9e3ff8a81e3",
+      "reason": "Self-contained: whether humans show sufficient respect to the other creatures with whom we share the planet; the scheme (PDF7) assesses the candidate’s own view (“Allow for a broad range of responses”) and never refers to TEXT 2. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2022-ol-deferred-p1-t2-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "considers the relationship between humans and other creatures and what we can",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "questionSha256": "71e385b20e9c655e7a526067b514c9d67dbef6f09c8ef93afd291cd205cda1c4",
+      "reason": "Self-contained: the creature – an insect, bird or other animal – the candidate would choose to spend a day as, with reasons; the scheme (PDF8) assesses their own choice (“Allow for a broad range of responses”) and never refers to TEXT 2. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2022-ol-deferred-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "For the Love of Birds",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Washington Wachira — based on his TED talk, with additional information on Citizen Science (EPA), and the photograph “A Crested Guinea Fowl” (PDF6–7). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. The scheme (PDF4, General – Paper 1) treats each text as a whole, so the whole text is retained.",
+      "questionSha256": "40a56f204f7af4b55a1f6e9e0d98b76f6e3d08383dadc5585bd45c47097e20c5"
+    },
+    "english-2022-ol-deferred-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "For the Love of Birds",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Washington Wachira — based on his TED talk, with additional information on Citizen Science (EPA), and the photograph “A Crested Guinea Fowl” (PDF6–7). As reproduced in the SEC 2022 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. The scheme (PDF4, General – Paper 1) treats each text as a whole, so the whole text is retained.",
+      "questionSha256": "0e9887d303bc799ad0f0f48fe53d5adfbdd37d984678a2f1bc1d85e287a85561"
+    },
+    "english-2022-ol-deferred-p1-t3-a-iii-a": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "FOR THE LOVE OF BIRDS",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "questionSha256": "71ba6e7fac1e806d3f7247e1bbbe1465d473c3a7f7ebf49d5386e9e3ff8a81e3",
+      "reason": "Self-contained: whether humans show sufficient respect to the other creatures with whom we share the planet; the scheme (PDF9) assesses the candidate’s own view (“Allow for a broad range of responses”) and never refers to TEXT 3. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2022-ol-deferred-p1-t3-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "FOR THE LOVE OF BIRDS",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "fbe9dbd08e8427f0d1e8998ef5a0d1f3df1e20c20d84bf642786a0dc4901e339",
+      "questionSha256": "71e385b20e9c655e7a526067b514c9d67dbef6f09c8ef93afd291cd205cda1c4",
+      "reason": "Self-contained: the creature – an insect, bird or other animal – the candidate would choose to spend a day as, with reasons; the scheme (PDF10) assesses their own choice (“Allow for a broad range of responses”) and never refers to TEXT 3. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2022-ol-deferred-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Poet and his Dog",
+      "pages": [
+        14
+      ],
+      "attribution": "The Poet and his Dog (after the Gaelic poem, ‘The Scholar and His Cat’) — Desmond O’Grady, as reproduced in the SEC 2022 deferred paper.",
+      "reason": "Paper PDF14 prints the introduction (the poet describes his relationship with his dog), the instruction to read the poem and questions at least twice, the title, the subtitle, the whole poem and the byline above both questions; visually verified.",
+      "questionSha256": "9f283582968a0e5712b871e5f48ea1b7d5ae5b7c6b610ad6420ac2167fc1cb42"
+    },
+    "english-2022-ol-deferred-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Poet and his Dog",
+      "pages": [
+        14
+      ],
+      "attribution": "The Poet and his Dog (after the Gaelic poem, ‘The Scholar and His Cat’) — Desmond O’Grady, as reproduced in the SEC 2022 deferred paper.",
+      "reason": "Paper PDF14 prints the introduction (the poet describes his relationship with his dog), the instruction to read the poem and questions at least twice, the title, the subtitle, the whole poem and the byline above both questions; visually verified.",
+      "questionSha256": "b8a0a544181fe5dbaf5b2d317a215ea0de1a0843eb4b5d8a076e5927fd23aa7a"
+    },
+    "english-2023-hl-deferred-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Telling Other People’s Stories",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Kit de Waal — edited extracts from a manifesto she delivered at A National Day for Writers organised by Words Ireland in 2018, with a photograph of the writer (PDF2–3). As reproduced in the SEC 2023 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "80a67879b525dcfdac746ede8865621d54c81541cf2862ef65cb8d6e92911805"
+    },
+    "english-2023-hl-deferred-p1-t1-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "TELLING OTHER PEOPLE’S STORIES",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "8478421ce1f7230542c97d003557b909116f79e7d3e91cf0ba3a6245911e40d0",
+      "questionSha256": "a9c197a125ce5620098376edb8e9d83e24798c066797d89fadaa3cd46afe593b",
+      "reason": "Self-contained: why the candidate prefers to engage with other people’s fictional stories through the printed media; scheme PDF5 assesses the candidate’s own reasons and never refers to TEXT 1. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2023-hl-deferred-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Telling Other People’s Stories",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Kit de Waal — edited extracts from a manifesto she delivered at A National Day for Writers organised by Words Ireland in 2018, with a photograph of the writer (PDF2–3). As reproduced in the SEC 2023 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "87a3dccda84d9e312c988348b7203afb6435c0cc45e8db268f351bee3b6ee415"
+    },
+    "english-2023-hl-deferred-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Shuggie’s Story",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Douglas Stuart — edited extracts from the opening paragraphs of his Booker Prize-winning novel Shuggie Bain (Picador, 2020), with the book’s cover (PDF4–5). As reproduced in the SEC 2023 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "dfd2691aaa2338d51f17383240c07950b17a0066ecf803ea4b2f1005a7ab37b1"
+    },
+    "english-2023-hl-deferred-p1-t2-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "SHUGGIE’S STORY",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "8478421ce1f7230542c97d003557b909116f79e7d3e91cf0ba3a6245911e40d0",
+      "questionSha256": "a9c197a125ce5620098376edb8e9d83e24798c066797d89fadaa3cd46afe593b",
+      "reason": "Self-contained: why the candidate prefers to engage with other people’s fictional stories through the printed media; scheme PDF7 assesses the candidate’s own reasons and never refers to TEXT 2. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2023-hl-deferred-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Shuggie’s Story",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Douglas Stuart — edited extracts from the opening paragraphs of his Booker Prize-winning novel Shuggie Bain (Picador, 2020), with the book’s cover (PDF4–5). As reproduced in the SEC 2023 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "1017dc51629dabe7e640d96c9d47d9b2d8995dd1000015872b1f18b31cc17c13"
+    },
+    "english-2023-hl-deferred-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Story of Another Life",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Michael Viney — edited extracts from the first column of his series Another Life, first published in The Irish Times in 1977, with a photograph of him in Mayo in 1977 (PDF6–7). As reproduced in the SEC 2023 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "6c3ecdf481bc55cd321ec0418fdd7eefe7bf23a55e7459fbc96e49da1f331f01"
+    },
+    "english-2023-hl-deferred-p1-t3-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "THE STORY OF ANOTHER LIFE",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "8478421ce1f7230542c97d003557b909116f79e7d3e91cf0ba3a6245911e40d0",
+      "questionSha256": "e4a9cd59bde2f8e7ff6399f3973f571749815e1c5ca7643ebd448de6879d6bec",
+      "reason": "Self-contained: why the candidate prefers to engage with other people’s non-fictional stories through the printed media; scheme PDF10 assesses the candidate’s own reasons and never refers to TEXT 3. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2023-hl-deferred-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Story of Another Life",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Michael Viney — edited extracts from the first column of his series Another Life, first published in The Irish Times in 1977, with a photograph of him in Mayo in 1977 (PDF6–7). As reproduced in the SEC 2023 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "ee557414f5011e1f9f224f94e0c05dce4144147a9d49915c0f07a200f3bf6629"
+    },
+    "english-2023-hl-deferred-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "A Song at Imbolc",
+      "pages": [
+        6
+      ],
+      "attribution": "A Song at Imbolc — Moya Cannon, as reproduced in the SEC 2023 deferred paper.",
+      "reason": "Paper PDF6 prints the introduction, the title, the epigraph, the whole poem, the byline and three notes above the questions; visually verified.",
+      "questionSha256": "145b8492ea0dcbfaca2ead292cab81aee354df0e9d5a708420d59439cb9c0bd8"
+    },
+    "english-2023-hl-deferred-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "A Song at Imbolc",
+      "pages": [
+        6
+      ],
+      "attribution": "A Song at Imbolc — Moya Cannon, as reproduced in the SEC 2023 deferred paper.",
+      "reason": "Paper PDF6 prints the introduction, the title, the epigraph, the whole poem, the byline and three notes above the questions; visually verified.",
+      "questionSha256": "ca21eabfadf464c839c0d49b47b856a128e7607381632ee779484c4462971381"
+    },
+    "english-2023-hl-deferred-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "A Song at Imbolc",
+      "pages": [
+        6
+      ],
+      "attribution": "A Song at Imbolc — Moya Cannon, as reproduced in the SEC 2023 deferred paper.",
+      "reason": "Paper PDF6 prints the introduction, the title, the epigraph, the whole poem, the byline and three notes above the questions; visually verified.",
+      "questionSha256": "e7875fd0d320d84644a067970f20cb9dcfb190fd1467bc79d5b95c2fa94e3921"
+    },
+    "english-2024-hl-deferred-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "The Thrill of the Tigress",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Maggie O’Farrell — edited extracts adapted from her novel The Marriage Portrait (Tinder Press, 2022), with a photograph of a tigress (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "90037e09aa92a9d7acbefaa46b5fab088b560ae3c5460ce5f9e8ad755895278a"
+    },
+    "english-2024-hl-deferred-p1-t1-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "THE THRILL OF THE TIGRESS",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "951efae4c8cd26dd37d98cb4f4b3415d683d567500b8bd3f30ea8f72b2414f6a",
+      "questionSha256": "3bca05e350a3b9e33f6950d13a2d1c77aa8c446cca93e46ebd6caa02028a3aa6",
+      "reason": "Self-contained: the characteristics of a truly thrilling experience, supported by one the candidate found thrilling; the paper says “you may not refer to any of the texts that appear in this examination paper”, and scheme PDF5 assesses the candidate’s own explanation. The same task is printed under all three texts, so the default reader is removed."
+    },
+    "english-2024-hl-deferred-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "The Thrill of the Tigress",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Maggie O’Farrell — edited extracts adapted from her novel The Marriage Portrait (Tinder Press, 2022), with a photograph of a tigress (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "667b02fe4b0ceabbed3bf0c71a2d45d2b96529fdbc1be8faddd4e9ab458f6690"
+    },
+    "english-2024-hl-deferred-p1-t1-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "The Thrill of the Tigress",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Maggie O’Farrell — edited extracts adapted from her novel The Marriage Portrait (Tinder Press, 2022), with a photograph of a tigress (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "The director’s note must discuss “the aspects of the extract” that made it suitable for film-making (scheme PDF7), so the extract is needed to answer faithfully: TEXT 1 as printed on PDF2–3, introduction and photograph included.",
+      "questionSha256": "81d8995228332bf1343f8912f4659eb114bb637ea9a608fc9c58c0122e674c6e"
+    },
+    "english-2024-hl-deferred-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Thrill of the Game",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Duncan Hamilton — edited extracts adapted from the prologue of his book Going to the Match (Cornet, 2018), with L.S. Lowry’s painting Going to the Match (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "f1dda66c9591187240c9f130bc6750d75710b0660f2877c6e98423f764a5bbfb"
+    },
+    "english-2024-hl-deferred-p1-t2-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "THE THRILL OF THE GAME",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "951efae4c8cd26dd37d98cb4f4b3415d683d567500b8bd3f30ea8f72b2414f6a",
+      "questionSha256": "3bca05e350a3b9e33f6950d13a2d1c77aa8c446cca93e46ebd6caa02028a3aa6",
+      "reason": "Self-contained: the characteristics of a truly thrilling experience, supported by one the candidate found thrilling; the paper says “you may not refer to any of the texts that appear in this examination paper”, and scheme PDF8 assesses the candidate’s own explanation. The same task is printed under all three texts, so the default reader is removed."
+    },
+    "english-2024-hl-deferred-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Thrill of the Game",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Duncan Hamilton — edited extracts adapted from the prologue of his book Going to the Match (Cornet, 2018), with L.S. Lowry’s painting Going to the Match (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "926bc8772699a73c00f520fd4e213d88d794f5238778a980ada2bbc8631cf363"
+    },
+    "english-2024-hl-deferred-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Thrill of Story",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Seamus Heaney — edited extracts adapted from the opening of his Nobel Prize lecture, delivered in Stockholm in 1995, with a photograph of him delivering it (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "01cb94fd46f4ee40fd5c95b88613af8dbcd22c40f7d67181daeb40ce0623fb0c"
+    },
+    "english-2024-hl-deferred-p1-t3-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "THE THRILL OF STORY",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "951efae4c8cd26dd37d98cb4f4b3415d683d567500b8bd3f30ea8f72b2414f6a",
+      "questionSha256": "3bca05e350a3b9e33f6950d13a2d1c77aa8c446cca93e46ebd6caa02028a3aa6",
+      "reason": "Self-contained: the characteristics of a truly thrilling experience, supported by one the candidate found thrilling; the paper says “you may not refer to any of the texts that appear in this examination paper”, and scheme PDF11 assesses the candidate’s own explanation. The same task is printed under all three texts, so the default reader is removed."
+    },
+    "english-2024-hl-deferred-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "The Thrill of Story",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Seamus Heaney — edited extracts adapted from the opening of his Nobel Prize lecture, delivered in Stockholm in 1995, with a photograph of him delivering it (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "f31af3b1f8c0908b528ecb5593e80fe5e240b568666efd2fbdec6074c261fc78"
+    },
+    "english-2024-hl-deferred-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Extract from milk and honey",
+      "pages": [
+        6
+      ],
+      "attribution": "An extract from ‘milk and honey’ — Rupi Kaur, as reproduced in the SEC 2024 deferred paper.",
+      "reason": "Paper PDF6 prints the introduction (an extract from ‘milk and honey’ by the Indian-Canadian poet Rupi Kaur), the whole extract and the byline above both questions; visually verified.",
+      "questionSha256": "61660d353e35a1030c8887f2244d3964fb888367649b6de39af0db00d55f9971"
+    },
+    "english-2024-hl-deferred-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Extract from milk and honey",
+      "pages": [
+        6
+      ],
+      "attribution": "An extract from ‘milk and honey’ — Rupi Kaur, as reproduced in the SEC 2024 deferred paper.",
+      "reason": "Paper PDF6 prints the introduction (an extract from ‘milk and honey’ by the Indian-Canadian poet Rupi Kaur), the whole extract and the byline above both questions; visually verified.",
+      "questionSha256": "1ec29f8f5b0d95c78571c3e421a75a4e1c1a6535ec05b451c7d35ac0bf4952a6"
+    },
+    "english-2024-hl-deferred-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Extract from milk and honey",
+      "pages": [
+        6
+      ],
+      "attribution": "An extract from ‘milk and honey’ — Rupi Kaur, as reproduced in the SEC 2024 deferred paper.",
+      "reason": "Paper PDF6 prints the introduction (an extract from ‘milk and honey’ by the Indian-Canadian poet Rupi Kaur), the whole extract and the byline above both questions; visually verified.",
+      "questionSha256": "2ad3950332bd330ef893c85ebca6c83279238bffbd6a68bb36313b2387516fd1"
+    },
+    "english-2024-ol-deferred-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Successful Singer-Songwriter",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Taylor Swift — edited extracts from her speech to students graduating from New York University in 2022, when she was awarded an honorary doctorate, with a photograph from the ceremony (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "8da350dabf8c5e6a80a4d18780d83d83f087e1c5865fa803946fa6175b05781d"
+    },
+    "english-2024-ol-deferred-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Successful Singer-Songwriter",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Taylor Swift — edited extracts from her speech to students graduating from New York University in 2022, when she was awarded an honorary doctorate, with a photograph from the ceremony (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "1f28b8601c46eb0c6f916cb6bf90c4728bf8eeef23295df5f534687e3a419364"
+    },
+    "english-2024-ol-deferred-p1-t1-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Successful Singer-Songwriter",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Taylor Swift — edited extracts from her speech to students graduating from New York University in 2022, when she was awarded an honorary doctorate, with a photograph from the ceremony (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "9ef3d724b04930a06c8428e6e3bbe1b9f312092c0d23f6a27ab9e68408942b38"
+    },
+    "english-2024-ol-deferred-p1-t1-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "A SUCCESSFUL SINGER-SONGWRITER",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "f5ad8ce2de2939fecb99076b76f8e2f95f40919f6fccce61cb94624841cefba1",
+      "questionSha256": "3da900e9dd71fda4c599ab5854fa832c87f00ab0c3ce7d66efc853442aa31b69",
+      "reason": "Self-contained: a successful person the candidate would like to meet and why; the paper says “you may not refer to any of the people featured in this examination paper”, and scheme PDF6 assesses the candidate’s own choice. The same task is printed under all three texts, so the default reader is removed."
+    },
+    "english-2024-ol-deferred-p1-t1-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "A Successful Singer-Songwriter",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Taylor Swift — edited extracts from her speech to students graduating from New York University in 2022, when she was awarded an honorary doctorate, with a photograph from the ceremony (PDF2–3). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "The blog post must “outline what Taylor Swift told the graduating students” and react to it (scheme PDF6), so the speech is needed to answer faithfully: TEXT 1 as printed on PDF2–3.",
+      "questionSha256": "f47e1e30e882219fa60fbcc78c9786a30c418f880922a287bfa12165bd7f6432"
+    },
+    "english-2024-ol-deferred-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Successful Actor",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Material drawn from two articles about the actor Mark Smith, one by Marjorie Brennan and one by Orla Dwyer, with a photograph of Mark Smith and Aisling Byrne on stage (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "79458303159b23619060c3fdb740ec13fe2abf4a9d1db9a94e46b3f308297f69"
+    },
+    "english-2024-ol-deferred-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Successful Actor",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Material drawn from two articles about the actor Mark Smith, one by Marjorie Brennan and one by Orla Dwyer, with a photograph of Mark Smith and Aisling Byrne on stage (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "35cf468ecd6cb87830bd35283efa342b331293a3d935ba6b0b568ad0001da0e6"
+    },
+    "english-2024-ol-deferred-p1-t2-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Successful Actor",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Material drawn from two articles about the actor Mark Smith, one by Marjorie Brennan and one by Orla Dwyer, with a photograph of Mark Smith and Aisling Byrne on stage (PDF4–5). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "7283423c548e6cf80550720b82651276d3b0b3a9bb896c5c504102c7ec7f163f"
+    },
+    "english-2024-ol-deferred-p1-t2-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "A SUCCESSFUL ACTOR",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "f5ad8ce2de2939fecb99076b76f8e2f95f40919f6fccce61cb94624841cefba1",
+      "questionSha256": "3da900e9dd71fda4c599ab5854fa832c87f00ab0c3ce7d66efc853442aa31b69",
+      "reason": "Self-contained: a successful person the candidate would like to meet and why; the paper says “you may not refer to any of the people featured in this examination paper”, and scheme PDF8 assesses the candidate’s own choice. The same task is printed under all three texts, so the default reader is removed."
+    },
+    "english-2024-ol-deferred-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "A Successful Sportsperson",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Kellie Harrington — edited extracts from Kellie, her book written with Roddy Doyle, with the book’s cover (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "6e5a0ff1a1a31e011a5da62dfc9ae2e10699d31a8875e2ee5099013d88e99927"
+    },
+    "english-2024-ol-deferred-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "A Successful Sportsperson",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Kellie Harrington — edited extracts from Kellie, her book written with Roddy Doyle, with the book’s cover (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "dc6abf9494baa0df5f7d53dd0926475038c1aca06cc3572a7621d411a6a51dc7"
+    },
+    "english-2024-ol-deferred-p1-t3-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "A Successful Sportsperson",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Kellie Harrington — edited extracts from Kellie, her book written with Roddy Doyle, with the book’s cover (PDF6–7). As reproduced in the SEC 2024 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "278944eec14abb9cad903657038a64fc46eba53bb4e5238c7a218bf3b7d92dc0"
+    },
+    "english-2024-ol-deferred-p1-t3-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "A SUCCESSFUL SPORTSPERSON",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "f5ad8ce2de2939fecb99076b76f8e2f95f40919f6fccce61cb94624841cefba1",
+      "questionSha256": "3da900e9dd71fda4c599ab5854fa832c87f00ab0c3ce7d66efc853442aa31b69",
+      "reason": "Self-contained: a successful person the candidate would like to meet and why; the paper says “you may not refer to any of the people featured in this examination paper”, and scheme PDF10 assesses the candidate’s own choice. The same task is printed under all three texts, so the default reader is removed."
+    },
+    "english-2024-ol-deferred-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Three Good Things",
+      "pages": [
+        14
+      ],
+      "attribution": "Three Good Things — Jan Dean, as reproduced in the SEC 2024 deferred paper.",
+      "reason": "Paper PDF14 prints the title, the whole poem and the byline above both questions; visually verified.",
+      "questionSha256": "b2f011695c41580d0f4838188aba10a522ab6e7c983b9b079b3aedadb7099097"
+    },
+    "english-2024-ol-deferred-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Three Good Things",
+      "pages": [
+        14
+      ],
+      "attribution": "Three Good Things — Jan Dean, as reproduced in the SEC 2024 deferred paper.",
+      "reason": "Paper PDF14 prints the title, the whole poem and the byline above both questions; visually verified.",
+      "questionSha256": "dd59a44c3048cb8e4c3df88ab3bfb62afd0d22b5d4344f14edd09fbc79432a09"
+    },
+    "english-2025-hl-deferred-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Stories from the Irish Traveller Community",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Oein DeBhairduin — an edited adaptation of his introduction to Why the Moon Travels, his collection of Traveller stories (Skein Press, 2020), with the book’s cover, illustrated by Leanne McDonagh (PDF2–3). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "052966cf07f2a7f4f28888d34f4cadcdc25233e1bcbc2c2609e9f34473715185"
+    },
+    "english-2025-hl-deferred-p1-t1-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "is an edited adaptation of the introduction by Oein DeBhairduin to his collection of",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "questionSha256": "71a2ae88f033ae04c871133a0fe75a30395759f06dcd13899edd0a9b389d31d5",
+      "reason": "Self-contained: the impact on the candidate’s own life of at least one community they belong to. Scheme PDF5 assesses the candidate’s own evaluation (“Allow a broad interpretation of ‘communities’”) and never refers to TEXT 1. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2025-hl-deferred-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Stories from the Irish Traveller Community",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Oein DeBhairduin — an edited adaptation of his introduction to Why the Moon Travels, his collection of Traveller stories (Skein Press, 2020), with the book’s cover, illustrated by Leanne McDonagh (PDF2–3). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "096bc78660a9e2dc6e13c28dc97a2d3ee6378cf130856c99f6bc752019d17a2b"
+    },
+    "english-2025-hl-deferred-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Community on the Wall",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "John Lanchester — edited extracts from his dystopian novel The Wall (Faber & Faber, 2019), with the book’s cover and two printed notes (PDF4–5). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "46bf88bbb7d6b1ccab9744d65c44a6baf8a2df02f67e7224254ebc448ed03aa1"
+    },
+    "english-2025-hl-deferred-p1-t2-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "THE COMMUNITY ON THE WALL",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "questionSha256": "71a2ae88f033ae04c871133a0fe75a30395759f06dcd13899edd0a9b389d31d5",
+      "reason": "Self-contained: the impact on the candidate’s own life of at least one community they belong to. Scheme PDF7 assesses the candidate’s own evaluation (“Allow a broad interpretation of ‘communities’”) and never refers to TEXT 2. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2025-hl-deferred-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Community on the Wall",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "John Lanchester — edited extracts from his dystopian novel The Wall (Faber & Faber, 2019), with the book’s cover and two printed notes (PDF4–5). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "22cd1b40791ccbae57531cc7aeffd312dbc6f9da038ecf4c92fc4bf8f48c4759"
+    },
+    "english-2025-hl-deferred-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Communities in All Their Diversity",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "President Michael D. Higgins — edited extracts from his speech at a garden party at Áras an Uachtaráin celebrating community groups and activists, with a photograph from the event (PDF6–7). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "9a1a6dbdda99a81c708030e3dbb56f0db80775cd746e07e23a5db6277de4620a"
+    },
+    "english-2025-hl-deferred-p1-t3-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "is based on edited extracts from a speech delivered by Irish President, Michael D.",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "5bd9f5a6450c3e6db8c8effe5a27ee26048fbcde76c2e79462126a82cc1e519b",
+      "questionSha256": "71a2ae88f033ae04c871133a0fe75a30395759f06dcd13899edd0a9b389d31d5",
+      "reason": "Self-contained: the impact on the candidate’s own life of at least one community they belong to. Scheme PDF10 assesses the candidate’s own evaluation (“Allow a broad interpretation of ‘communities’”) and never refers to TEXT 3. The same task is printed under all three texts. No passage is needed to answer faithfully, so the default reader is removed."
+    },
+    "english-2025-hl-deferred-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Communities in All Their Diversity",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "President Michael D. Higgins — edited extracts from his speech at a garden party at Áras an Uachtaráin celebrating community groups and activists, with a photograph from the event (PDF6–7). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "All 12 paper pages viewed: printed heading (in capitals), introduction, both columns and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained.",
+      "questionSha256": "d4b06c34ed6d66e4d2a6b46fcfb7b8ff3cdf9665cf06a100eba8a495b93e3bd0"
+    },
+    "english-2025-hl-deferred-p1-t3-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Communities in All Their Diversity",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "President Michael D. Higgins — edited extracts from his speech at a garden party at Áras an Uachtaráin celebrating community groups and activists, with a photograph from the event (PDF6–7). As reproduced in the SEC 2025 deferred paper.",
+      "reason": "The task responds to “at least two of the observations made by the President during the course of his speech” (scheme PDF12), so the speech is needed to answer faithfully: TEXT 3 as printed on PDF6–7, introduction and photograph included.",
+      "questionSha256": "f515dd52d0f33982be65e47be843047a4b1491029ecec555a0e176a57ed14a29"
+    },
+    "english-2025-hl-deferred-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Word",
+      "pages": [
+        6
+      ],
+      "attribution": "The Word — Zaffar Kunial, as reproduced in the SEC 2025 deferred paper.",
+      "reason": "Paper PDF6 prints the title, the whole poem and the byline above both questions; visually verified.",
+      "questionSha256": "9c0f4ac74ed37e44e80c5e9398a9a00f3acb952d9aebf1112e9cfaef02d7ffde"
+    },
+    "english-2025-hl-deferred-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Word",
+      "pages": [
+        6
+      ],
+      "attribution": "The Word — Zaffar Kunial, as reproduced in the SEC 2025 deferred paper.",
+      "reason": "Paper PDF6 prints the title, the whole poem and the byline above both questions; visually verified.",
+      "questionSha256": "9966af03924c38b02779b9c64b55d2437f985f4bcf2fdf4ddfebe047f3805296"
+    },
+    "english-2025-hl-deferred-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Word",
+      "pages": [
+        6
+      ],
+      "attribution": "The Word — Zaffar Kunial, as reproduced in the SEC 2025 deferred paper.",
+      "reason": "Paper PDF6 prints the title, the whole poem and the byline above both questions; visually verified.",
+      "questionSha256": "9b05830075e10f137b3ad656a1c59fd130a7e2e78523f3a955aaaa48b6dd1ff8"
     }
   }
 }

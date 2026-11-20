@@ -1,7 +1,7 @@
 {
  "biology": {
-  "higher": 2705,
-  "ordinary": 2835
+  "higher": 2887,
+  "ordinary": 3017
  },
  "chemistry": {
   "higher": 1862,
@@ -37,8 +37,8 @@
   "foundation": 1137
  },
  "english": {
-  "higher": 738,
-  "ordinary": 1947
+  "higher": 917,
+  "ordinary": 2188
  },
  "irish": {
   "higher": 1750,
@@ -201,6 +201,7 @@
   "ordinary": 644
  },
  "music": {
-  "higher": 46
+  "higher": 339,
+  "ordinary": 293
  }
 }

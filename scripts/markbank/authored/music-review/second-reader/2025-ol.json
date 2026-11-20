@@ -1,0 +1,500 @@
+{
+ "readingFile": "2025-ol.json",
+ "readBy": "second reader (Opus helper), 19 Nov 2026",
+ "method": "each string compared word for word with a 150 dpi render of the printed page",
+ "booklet": "examiner-reports/music/papers/2025-ol-008-paper.pdf",
+ "pagesRendered": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16
+ ],
+ "asks": [
+  {
+   "address": "Q1(a)",
+   "page": 3,
+   "strings": [
+    "The music in this excerpt is taken from the",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played four times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(b)",
+   "page": 3,
+   "strings": [
+    "The theme heard in this excerpt is the",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played four times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(c)",
+   "page": 3,
+   "strings": [
+    "Name one instrument playing the theme in the excerpt.",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played four times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(d)",
+   "page": 3,
+   "strings": [
+    "In this excerpt the strings play",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played four times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(e)",
+   "page": 3,
+   "strings": [
+    "The cadence heard at the end of the excerpt is",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 1, played four times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(f)",
+   "page": 4,
+   "strings": [
+    "Describe how the music changes during this excerpt.",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(g)",
+   "page": 4,
+   "strings": [
+    "Identify two features of the music in this excerpt:",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 3, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(h)",
+   "page": 5,
+   "strings": [
+    "Insert the two missing notes at X on the score above. Use the given rhythm.",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 4, played three times. An outline score of the excerpt is printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q1(i)",
+   "page": 5,
+   "strings": [
+    "Describe the texture of the music heard in this excerpt.",
+    "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    "Excerpt 5, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(a)",
+   "page": 6,
+   "strings": [
+    "Identify the two instruments which play in this excerpt.",
+    "Two excerpts from Piano Quartet No.1 by Gerald Barry.",
+    "Excerpt 1, played three times. An outline score of the excerpt is printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(b)",
+   "page": 6,
+   "strings": [
+    "The missing time signature at X on the score above is",
+    "Two excerpts from Piano Quartet No.1 by Gerald Barry.",
+    "Excerpt 1, played three times. An outline score of the excerpt is printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "Figure box also takes in part (a) and its answer boxes between the score and (b), as its 'what' says; (b) and its three time signatures are inside."
+   ]
+  },
+  {
+   "address": "Q2(c)",
+   "page": 7,
+   "strings": [
+    "The texture of the music in this excerpt is",
+    "Two excerpts from Piano Quartet No.1 by Gerald Barry.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q2(d)",
+   "page": 7,
+   "strings": [
+    "This excerpt features canon. Explain canon.",
+    "Two excerpts from Piano Quartet No.1 by Gerald Barry.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(a)",
+   "page": 8,
+   "strings": [
+    "The music in this excerpt is taken from the",
+    "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(b)",
+   "page": 8,
+   "strings": [
+    "Identify an instrument playing the accompaniment in this excerpt.",
+    "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(c)",
+   "page": 8,
+   "strings": [
+    "Identify one feature of the vocal music heard in lines 1–5.",
+    "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 2, played three times. The opening lyrics are printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(d)",
+   "page": 9,
+   "strings": [
+    "This excerpt features panning. Explain panning.",
+    "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "excerptLine: missing words. The file has 'Excerpt 2, played three times.'; the page prints the heading over Q3(c)-(e) (page 8, before the lyrics) as 'Excerpt 2, played three times. The opening lyrics are printed below.' Q3(c) in this file carries the full line, as other sittings do for every ask under a lyrics heading (e.g. 2023-ol Q6(c)-(e), 2024-ol Q3(a)-(d))."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q3(e)",
+   "page": 9,
+   "strings": [
+    "Describe how the words ‘for me’ are emphasised in the music towards the end of the excerpt.",
+    "Two excerpts from Bohemian Rhapsody by Freddie Mercury.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "differs",
+   "differences": [
+    "excerptLine: missing words. The file has 'Excerpt 2, played three times.'; the page prints the heading over Q3(c)-(e) (page 8, before the lyrics) as 'Excerpt 2, played three times. The opening lyrics are printed below.' Q3(c) in this file carries the full line, as other sittings do for every ask under a lyrics heading (e.g. 2023-ol Q6(c)-(e), 2024-ol Q3(a)-(d))."
+   ],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(a)",
+   "page": 10,
+   "strings": [
+    "The music in this excerpt is taken from the",
+    "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(b)",
+   "page": 10,
+   "strings": [
+    "The tonality of the music in this excerpt is",
+    "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(c)",
+   "page": 10,
+   "strings": [
+    "Identify one feature of Baroque music as heard in this excerpt.",
+    "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(d)",
+   "page": 11,
+   "strings": [
+    "The first voice heard in this excerpt is a",
+    "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q4(e)",
+   "page": 11,
+   "strings": [
+    "This excerpt features a Tierce de Picardie. Explain Tierce de Picardie.",
+    "Two excerpts from Cantata Jesu, der du meine Seele BWV 78 by J.S. Bach.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q5(a)",
+   "page": 12,
+   "strings": [
+    "This song is sung in the sean-nós style. Identify two features of sean-nós singing as heard in the excerpt.",
+    "This question is based on three excepts of music.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext keeps the printed misprint 'excepts' ('This question is based on three excepts of music.'), as the page prints it."
+   ]
+  },
+  {
+   "address": "Q5(b)",
+   "page": 12,
+   "strings": [
+    "The form of the music in this excerpt is",
+    "This question is based on three excepts of music.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext keeps the printed misprint 'excepts' ('This question is based on three excepts of music.'), as the page prints it."
+   ]
+  },
+  {
+   "address": "Q5(c)(i)",
+   "page": 12,
+   "strings": [
+    "The dance heard in this excerpt is",
+    "This question is based on three excepts of music.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext keeps the printed misprint 'excepts' ('This question is based on three excepts of music.'), as the page prints it."
+   ]
+  },
+  {
+   "address": "Q5(c)(ii)",
+   "page": 12,
+   "strings": [
+    "The time signature of this dance is",
+    "This question is based on three excepts of music.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext keeps the printed misprint 'excepts' ('This question is based on three excepts of music.'), as the page prints it."
+   ]
+  },
+  {
+   "address": "Q5(c)(iii)",
+   "page": 12,
+   "strings": [
+    "A typical bar of rhythm associated with this dance is",
+    "This question is based on three excepts of music.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext keeps the printed misprint 'excepts' ('This question is based on three excepts of music.'), as the page prints it."
+   ]
+  },
+  {
+   "address": "Q5(d)",
+   "page": 12,
+   "strings": [
+    "Name one instrument which plays the melody in this excerpt.",
+    "This question is based on three excepts of music.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext keeps the printed misprint 'excepts' ('This question is based on three excepts of music.'), as the page prints it."
+   ]
+  },
+  {
+   "address": "Q5(e)",
+   "page": 13,
+   "strings": [
+    "This excerpt is a fusion of different styles of music. Discuss, with reference to the music heard in the excerpt.",
+    "This question is based on three excepts of music.",
+    "Excerpt 3, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true,
+   "notes": [
+    "questionContext keeps the printed misprint 'excepts' ('This question is based on three excepts of music.'), as the page prints it."
+   ]
+  },
+  {
+   "address": "Q6(a)",
+   "page": 14,
+   "strings": [
+    "The time signature of the music in this excerpt is",
+    "This question is based on five excerpts of music.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(b)",
+   "page": 14,
+   "strings": [
+    "Name the instrument which plays the accompaniment in this excerpt.",
+    "This question is based on five excerpts of music.",
+    "Excerpt 1, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(c)",
+   "page": 14,
+   "strings": [
+    "Describe the texture of the music heard in this excerpt.",
+    "This question is based on five excerpts of music.",
+    "Excerpt 2, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(d)",
+   "page": 15,
+   "strings": [
+    "The missing notes at X on the score are",
+    "This question is based on five excerpts of music.",
+    "Excerpt 3, played three times. An outline score of the opening vocal melody is printed below."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(e)",
+   "page": 16,
+   "strings": [
+    "How many bars of music are heard in the introduction?",
+    "This question is based on five excerpts of music.",
+    "Excerpt 4, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(f)",
+   "page": 16,
+   "strings": [
+    "Identify one feature of the vocal music heard in this excerpt.",
+    "This question is based on five excerpts of music.",
+    "Excerpt 4, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  },
+  {
+   "address": "Q6(g)",
+   "page": 16,
+   "strings": [
+    "Describe one difference between the music heard in Excerpt 4 and the music heard in Excerpt 5. Refer to both excerpts in your answer.",
+    "This question is based on five excerpts of music.",
+    "Excerpt 4, played once more and Excerpt 5, played three times."
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "figureShowsAsk": true
+  }
+ ],
+ "resolutions": [
+  "Q3(d), Q3(e): excerptLine corrected to the full printed heading \"Excerpt 2, played three times. The opening lyrics are printed below.\" (lane lead, 19 Nov).",
+  "Q5 and Q6 (all listening asks under them): questionContext now opens with the printed section heading (\"Irish Music\", \"Aural Skills\"), found missing in the 2023 OL second reading; never drop printed words (lane lead, 19 Nov)."
+ ]
+}

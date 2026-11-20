@@ -1,0 +1,11 @@
+{
+  "recordedAt": "2026-11-19T20:39:45.408331+00:00",
+  "reportRead": true,
+  "helperRead": true,
+  "proposalSha256": "3ba7a7271ce000309b85b437dc13bdc6c64e6c359356ef4419abab18add3cab0",
+  "imagesActuallyViewed": [
+    "source-images/2013-hl/scheme-04.png",
+    "source-images/2013-hl/aural-01.png"
+  ],
+  "decision": "The proposal repairs legacy full-paper answer destinations only. Reviewed card bodies, citations, direct source readers and all54 task routes stay unchanged, so this does not require a new live-card approval. Application and current-head checks remain pending."
+}
