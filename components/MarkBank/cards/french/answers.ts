@@ -99,6 +99,10 @@ const CLOZE_DEDUCT = /deduct\s+(\d+)\s+marks?/i;
 /** "1. ta", "2. passe/serai", "6 travaille" (2019 prints no stop), "10." (2022 prints a blank). */
 const CLOZE_ENTRY = /^(\d+)(?:\.\s*|\s+)(.*)$/;
 const TWO_ASKED = /\b(?:two|deux)\b|\(two details\)/i;
+/** "Any of:" printed bare (no count, no price) over a list the scheme prices only on the question's head: the
+ *  2022 Ordinary deferred Q.4 7 cards ("7. … 4 + 4 Marks"), one per labelled part (fr_reading's labelledParts
+ *  carries the line into each). Any one listed point earns the card's mark. */
+const ANY_OF = /^any of\s*:$/i;
 
 const tidy = (value: string) => value.replace(/\s+/g, ' ').replace(/\s*[—–]\s*$/, '').trim();
 
@@ -151,6 +155,7 @@ export function parseFrenchAnswers(source: FrenchAnswerSource): FrenchAnswerResu
   let headerCount: number | undefined;
   let ladderTerms: number[] | undefined;
   const ladderEntries = new Map<number, number>();
+  let anyOf = false;
 
   const pushPriced = (bare: string, kind: Draft['kind'], partial: boolean) => {
     const priced = TRAILING_PRICE.exec(bare);
@@ -171,6 +176,7 @@ export function parseFrenchAnswers(source: FrenchAnswerSource): FrenchAnswerResu
     const priced = TRAILING_PRICE.test(bare);
 
     if (!marker) {
+      if (ANY_OF.test(bare)) { anyOf = true; continue; }
       if (FURNITURE.test(bare)) {
         const count = COUNT_HEADER.exec(bare);
         if (count) headerCount = NUMBER_WORDS[(count[1] ?? count[2]).toLowerCase()];
@@ -268,6 +274,14 @@ export function parseFrenchAnswers(source: FrenchAnswerSource): FrenchAnswerResu
       ladder = steps as number[];
     }
     unpriced.forEach(draft => { draft.marks = 0; });
+  } else if (anyOf && unpriced.length > 0 && unpriced.length === answers.length && perRow === undefined && !stroke
+    && headerCount === undefined && answers.every(draft => draft.kind === 'full')
+    && !directions.some(note => /partially correct/i.test(note))) {
+    // "Any of:" over points the scheme prices only on the head (ANY_OF): each point a row at the card's printed
+    // mark, any one earns it; no partial-marks row, none being printed.
+    if (!source.permittedMarks.includes(source.totalMarks)) return { ok: false, reason: 'card mark is not a permitted mark' };
+    unpriced.forEach(draft => { draft.marks = source.totalMarks; });
+    headerCount = 1;
   } else if (unpriced.length > 0 && unpriced.length === answers.filter(draft => draft.kind !== 'condition').length && perRow === undefined && !stroke
     && (headerCount ?? (TWO_ASKED.test(source.questionText) ? 2 : undefined)) !== undefined) {
     // "Award 2 marks if answer is partially correct" beside an opinion list is the partial-credit rule, not a row.

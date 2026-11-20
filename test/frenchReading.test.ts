@@ -812,12 +812,19 @@ describe('French deferred sittings (2022 and 2023, both levels)', () => {
       "2022 HL Section A2 Q1(b) · L'ordre — Deferred sitting 5", '2022 HL Section A2 Q1(b) · Le désordre — Deferred sitting 5',
       '2022 OL Section A4 Q7 · Kamo — Deferred sitting 4', '2022 OL Section A4 Q7 · His mother — Deferred sitting 4',
     ]);
-    // The L'ordre / Le désordre cards' scheme answers are claimable rows. The Kamo / his mother cards keep the
-    // list fallback: the scheme prices that ask only on its head ("4 + 4") and lists its accepted points
-    // unpriced ("Any of: … Etc., etc."), with no partial-credit rule to place them (coordinator to rule).
+    // Every labelled card's scheme answers are claimable rows. The Kamo / his mother cards (ruling (b), 20 Nov): the
+    // scheme prices that ask only on its head ("4 + 4") and introduces each list with a printed "Any of:", so each
+    // listed point is a row at the card's 4, any one earns it, and no partial-marks row is invented.
     expect(labelled.filter(card => (card.rubric as { allocation?: unknown }).allocation).map(card => card.id)).toEqual([
       'fr-2022-hl-deferred-reading-a2-q1-b-ordre', 'fr-2022-hl-deferred-reading-a2-q1-b-desordre',
+      'fr-2022-ol-deferred-reading-a4-q7-kamo', 'fr-2022-ol-deferred-reading-a4-q7-mother',
     ]);
+    for (const card of labelled.filter(item => /a4-q7-(kamo|mother)$/.test(item.id))) {
+      const allocation = (card.rubric as { allocation: { count: number; rows: { text: string; marks: number; steps?: number[] }[] } }).allocation;
+      expect(allocation.count, card.id).toBe(1);
+      expect(allocation.rows.map(row => row.marks), card.id).toEqual([4, 4, 4, 4]);
+      expect(allocation.rows.every(row => !row.steps), card.id).toBe(true);
+    }
   });
 
   it('files every deferred task under its paper\'s own Atlas question', () => {
