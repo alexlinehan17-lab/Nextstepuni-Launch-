@@ -4889,6 +4889,8 @@ def _census_subject(subject):
         papers.extend(census_agri_deferred())
     if subject == 'construction-studies':
         papers.extend(census_construction_deferred())
+    if subject == 'physical-education':
+        papers.extend(census_pe_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
 
 
@@ -4940,6 +4942,33 @@ def census_construction_deferred():
             'year': year, 'level': level, 'paper': 'Deferred',
             'leafCount': len(leaves),
             'leaves': [{'key': list(k), 'label': key_label(k, 'construction-studies'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
+
+
+# The SEC's deferred Physical Education sittings in the archive, English version: deferredexams/<year>/LC225ALP000EV.pdf
+# (Higher, 2022 and 2023; nothing for 2024-2025), its scheme in deferredmarkingschemes/.
+PE_DEFERRED_SITTINGS = ((2022, 'hl'), (2023, 'hl'))
+
+
+def census_pe_deferred():
+    """Each deferred Physical Education sitting (PE_DEFERRED_SITTINGS), read by June's reader (census_merged over its own
+    booklet) and keyed 'Deferred', as Biology keys its own (census_biology_deferred), so a deferred ask never lands on a
+    June leaf with the same address. The checksum is not run on it."""
+    papers = []
+    for year, level in PE_DEFERRED_SITTINGS:
+        letter = 'A' if level == 'hl' else 'G'
+        files = [os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'LC225{letter}LP000EV.pdf')]
+        parts, texts, _ = census_merged('physical-education', year, level, files=files)
+        leaves = leaves_of(parts)
+        flags = [f for f in continuity_flags(parts, texts, 'physical-education')
+                 if not short_ask_ok('physical-education', year, level, f, sitting='deferred')]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'physical-education'),
                         'text': texts.get(k, '')[:160]} for k in leaves],
             'marksSum': None, 'marksQuestions': 0, 'flags': flags,
         })

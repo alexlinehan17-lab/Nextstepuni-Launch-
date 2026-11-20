@@ -146,6 +146,9 @@ const ADMITTED_DEFERRED = new Set([
   'applied-mathematics|2023|LC020ALP000EV-deferred.pdf',
   // Construction Studies: the paper of its one deferred sitting (2022 Higher).
   'construction-studies|2022|LC029ALP000EV-deferred.pdf',
+  // Physical Education: the papers of its two deferred sittings (2022 and 2023 Higher).
+  'physical-education|2022|LC225ALP000EV-deferred.pdf',
+  'physical-education|2023|LC225ALP000EV-deferred.pdf',
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {

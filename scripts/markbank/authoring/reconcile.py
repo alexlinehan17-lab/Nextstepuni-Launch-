@@ -770,7 +770,8 @@ def reconcile_subject(subject, census=None):
             if hist_deferred:
                 ref['paper'] = 'Deferred'
         if subject in ('economics', 'engineering', 'dcg', 'spanish', 'german', 'biology', 'physics', 'home-economics',
-                       'business', 'french', 'chemistry', 'agricultural-science', 'construction-studies'):
+                       'business', 'french', 'chemistry', 'agricultural-science', 'construction-studies',
+                       'physical-education'):
             # A deferred sitting is its own census paper, 'Deferred', and its
             # card says so twice: the id ("econ-2022-hl-deferred-...",
             # "eng-2022-hl-deferred-...", "dcg-2022-hl-deferred-...", "bio-2022-hl-deferred-...",
@@ -790,7 +791,8 @@ def reconcile_subject(subject, census=None):
                                       'french': r'^fr-\d{4}-(?:hl|ol)-deferred-',
                                       'chemistry': r'^chem-\d{4}-(?:hl|ol)-deferred-',
                                       'agricultural-science': r'^agsci-\d{4}-(?:hl|ol)-deferred-',
-                                      'construction-studies': r'^cons-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
+                                      'construction-studies': r'^cons-\d{4}-(?:hl|ol)-deferred-',
+                                      'physical-education': r'^pe-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
             if deferred != (' — Deferred sitting' in refstr):
                 unparsed.append({'id': cid, 'ref': refstr})
                 continue

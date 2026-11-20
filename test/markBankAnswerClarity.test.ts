@@ -403,11 +403,12 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       }
       expect([...sums].sort((a, b) => a - b), `${card.id}/${criterion.label}: reachable marks`).toEqual([...criterion.permittedMarks].sort((a, b) => a - b));
     }
-    expect(criteria).toHaveLength(1269);
+    // June's 1,269 and the two deferred sittings' 197 (2022 and 2023 Higher, pe_review_<year>_hl_deferred.py).
+    expect(criteria).toHaveLength(1269 + 197);
     // 1230 before the residue shapes were read: "one mark per …" counted rows and rows per listed name, labels priced
     // without a colon, an extra "+1" as a step, ordinal responses as one counted row, and a ladder outranking a
     // printed breakdown that is not the criterion.
-    expect(structured).toHaveLength(1269);
+    expect(structured).toHaveLength(1269 + 197);
     expect(criteria.filter(({ criterion }) => !criterion.allocation).map(({ card, criterion }) => `${card.id}/${criterion.id}`)).toEqual([]);
     // "Accurate description: 4; some accuracy: 2." and "3 × 2 marks. Load: javelin…" still as prose, in those criteria only.
     const PE_PRICED = /:\s*\d+(?:\s*[–-]\s*\d+)?\s*[;.]|\b\d+\s*(?:×|x)\s*\d+\s*marks?|\b\d+\s*\+\s*\d+\s*marks?|\b\d+\s*marks?\b/i;

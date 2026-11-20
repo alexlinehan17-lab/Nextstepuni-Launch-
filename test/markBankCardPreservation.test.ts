@@ -1380,6 +1380,11 @@ const accountingDeferredTotal = ACCOUNTING_DEFERRED_ADDED.higher + ACCOUNTING_DE
 const APPLIED_MATHS_DEFERRED_ADDED = { higher: 42 + 53, ordinary: 0 };
 const isAppliedMathsDeferred = (id: string) => /^am-\d{4}-(?:hl|ol)-deferred-/.test(id);
 const appliedMathsDeferredTotal = APPLIED_MATHS_DEFERRED_ADDED.higher + APPLIED_MATHS_DEFERRED_ADDED.ordinary;
+/* Physical Education's deferred sittings (pe_review_<year>_hl_deferred.py), pe-<year>-hl-deferred-…: new cards beside the
+ * pinned June additions, 2022 Higher 60 and 2023 Higher 54. */
+const PE_DEFERRED_ADDED = { higher: 60 + 54, ordinary: 0 };
+const isPeDeferred = (id: string) => /^pe-\d{4}-(?:hl|ol)-deferred-/.test(id);
+const peDeferredTotal = PE_DEFERRED_ADDED.higher + PE_DEFERRED_ADDED.ordinary;
 const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED || isArtDeferred(id);
 /* Spanish keeps its 347 2021-2025 IDs frozen (204 Higher + 143 Ordinary, the
  * identity hashes above). The languages lane (2026-11-05) cards every further
@@ -3112,10 +3117,17 @@ describe('Mark Bank card preservation', () => {
     // 2026-10-12: 652 -> 551 additions (443/430 -> 382/390 cards). Each printed
     // choice is one card; the 101 per-option and per-pair route cards were
     // branch-only and are withdrawn rather than aliased.
-    const additions = cards.map(card => card.id).filter(id => !peFrozen.has(id));
+    const additions = cards.map(card => card.id).filter(id => !peFrozen.has(id) && !isPeDeferred(id));
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => peAliasIds.includes(id))).toEqual([]);
     expect(idHash(additions)).toBe(hash);
+  });
+
+  it('adds the Physical Education deferred sittings beside the pinned June additions', () => {
+    const deferred = [...PE_HIGHER, ...PE_ORDINARY].filter(card => isPeDeferred(card.id));
+    expect([deferred.filter(card => card.level === 'higher').length, deferred.filter(card => card.level === 'ordinary').length])
+      .toEqual([PE_DEFERRED_ADDED.higher, PE_DEFERRED_ADDED.ordinary]);
+    expect(deferred.every(card => card.questionRef.endsWith(' — Deferred sitting') && card.paperFileid === 'LC225ALP000EV-deferred')).toBe(true);
   });
 
   it('collapses each Art printed choice to one card and resolves every withdrawn ID', () => {
@@ -3550,7 +3562,7 @@ describe('Mark Bank card preservation', () => {
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
     ), 0)).toBe(24_087 + frenchAdditionIds.size + artNet + russianAdditionIds.size + accountingDeferredTotal
-      + appliedMathsDeferredTotal);
+      + appliedMathsDeferredTotal + peDeferredTotal);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
       .toBe(24_087 + frenchAdditionIds.size + businessAdditionIds.size + technologyAddedCount + dcgAddedCount
         + russianAdditionIds.size
@@ -3575,6 +3587,8 @@ describe('Mark Bank card preservation', () => {
         + polishAddedTotal + portugueseAddedTotal
         // Accounting's and Applied Mathematics' carded deferred sittings (deferred lane), on top of their frozen decks.
         + accountingDeferredTotal + appliedMathsDeferredTotal
+        // Physical Education's carded deferred sittings (deferred lane), beside its pinned June additions.
+        + peDeferredTotal
         // The small languages (Claude queue 5), Maltese's aside: its deck is not in `decks`.
         + [...smallLanguageAddedIds].filter(id => !id.startsWith('mlt-')).length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
