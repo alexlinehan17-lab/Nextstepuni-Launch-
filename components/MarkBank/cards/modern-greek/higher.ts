@@ -42,11 +42,11 @@ export const CARDS: SecCard[] = [
     questionText: "να εξηγήσεις με δικά σου λόγια τη σημασία των παρακάτω λέξεων ή φράσεων που είναι τυπωμένες με έντονο χρώμα :",
     tariffModel: {"kind":"orderedSplit","notation":"5 × 1"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Του αναπτυγμένου κόσμου (1η παράγραφος) — Περιοχές με καλό οικονομικό επίπεδο", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Καταναλωτική κοινωνία(1η παράγραφος) — σύνολο ανθρώπων που ξοδεύουν πολλά προϊόντα ή χρήματα", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Ηδονή (3η παράγραφος) — ευχαρίστηση", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "Σπατάλη (3η παράγραφος) — κατανάλωση μεγάλων ποσοτήτων", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "Καθημερινότητα (3η παράγραφος) — τρόπος ζωής", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Του αναπτυγμένου κόσμου (1η παράγραφος) — Περιοχές με καλό οικονομικό επίπεδο", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Καταναλωτική κοινωνία(1η παράγραφος) — σύνολο ανθρώπων που ξοδεύουν πολλά προϊόντα ή χρήματα", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Ηδονή (3η παράγραφος) — ευχαρίστηση", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "Σπατάλη (3η παράγραφος) — κατανάλωση μεγάλων ποσοτήτων", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "Καθημερινότητα (3η παράγραφος) — τρόπος ζωής", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -57,7 +57,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -70,7 +70,7 @@ export const CARDS: SecCard[] = [
     questionText: "σύμφωνα με το κείμενο που διάβασες πως δημιουργείται η ζωντανή ουτοπία στη σύγχρονη καταναλωτική κοινωνία μας;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Η ζωντανή ουτοπία δημιουργείται στη σύγχρονη καταναλωτική κοινωνία μας από την απεραντοσύνη των χώρων, την εκπληκτική ποικιλία των προϊόντων που παρουσιάζονται, το διάχυτο φωτισμό, τα χιλιόμετρα των διαδρόμων και την έντεχνη τοποθέτηση των προϊόντων", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Η ζωντανή ουτοπία δημιουργείται στη σύγχρονη καταναλωτική κοινωνία μας από την απεραντοσύνη των χώρων, την εκπληκτική ποικιλία των προϊόντων που παρουσιάζονται, το διάχυτο φωτισμό, τα χιλιόμετρα των διαδρόμων και την έντεχνη τοποθέτηση των προϊόντων", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -81,7 +81,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -94,9 +94,9 @@ export const CARDS: SecCard[] = [
     questionText: "να περιγράψεις τον τρόπο με τον οποίο λειτουργούν οι σύγχρονοι χώροι του εμπορίου.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Μέσα στο συγκεντρωμένο πλούτο ενός πολυκαταστήματος, υπάρχει κάτι το υπερβολικό κι αυτό το υπερβολικό είναι ανάμεσα σε όλα τα άλλα και κουραστικό", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Το βλέμμα του επισκέπτη /καταναλωτή επηρεάζεται από τα φώτα που τον περιτριγυρίζουν από παντού και τελικά δε μπορεί να απολαύσει ταυτόχρονα όλα αυτά τα θαυμαστά προϊόντα που προσφέρονται γύρω του", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Προτού να επιλέξει το ένα ή το άλλο αντικείμενο, προτού μεθύσει με τους χρωματικούς συνδυασμούς ή τις φίρμες -γιατί τα πάντα εδώ είναι προσχεδιασμένα, ταξινομημένα, τοποθετημένα σύμφωνα με μια συγκεκριμένη στρατηγική , όλα τα προϊόντα να μπορούμε να τα δούμε εύκολα και σχεδόν από κάθε γωνία, μεθάει με τα προϊόντα που….. δε θα αγοράσει και που θα τα χαϊδεύει …. μονάχα με τα μάτια", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Μέσα στο συγκεντρωμένο πλούτο ενός πολυκαταστήματος, υπάρχει κάτι το υπερβολικό κι αυτό το υπερβολικό είναι ανάμεσα σε όλα τα άλλα και κουραστικό", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Το βλέμμα του επισκέπτη /καταναλωτή επηρεάζεται από τα φώτα που τον περιτριγυρίζουν από παντού και τελικά δε μπορεί να απολαύσει ταυτόχρονα όλα αυτά τα θαυμαστά προϊόντα που προσφέρονται γύρω του", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Προτού να επιλέξει το ένα ή το άλλο αντικείμενο, προτού μεθύσει με τους χρωματικούς συνδυασμούς ή τις φίρμες -γιατί τα πάντα εδώ είναι προσχεδιασμένα, ταξινομημένα, τοποθετημένα σύμφωνα με μια συγκεκριμένη στρατηγική , όλα τα προϊόντα να μπορούμε να τα δούμε εύκολα και σχεδόν από κάθε γωνία, μεθάει με τα προϊόντα που….. δε θα αγοράσει και που θα τα χαϊδεύει …. μονάχα με τα μάτια", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -107,7 +107,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -120,9 +120,9 @@ export const CARDS: SecCard[] = [
     questionText: "αφού διαβάσεις προσεκτικά την 3η παράγραφο να εξηγήσεις βασισμένος στο κείμενο γιατί ο καταναλωτής επισκέπτεται αυτούς τους χώρους που περιγράφει ο συγγραφέας;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Πηγαίνουμε σε αυτούς τους χώρους όχι μόνο για να κάνουμε τα ψώνια μας, τις διακοπές μας, αλλά και για να έχουμε την ψευδαίσθηση ότι όλα τα πράγματα που βλέπουμε θεωρητικά μπορούμε να τα αγγίξουμε, να τα δοκιμάσουμε, να τα φάμε, να τα ζήσουμε", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Αυτή λοιπόν η άμεση σχέση μας με την πολυτέλεια και την υπερβολή, στην αρχή μας ξαφνιάζει, αλλά γρήγορα αρχίζει να μας αρέσει, να μας αρέσει συνεχώς περισσότερο", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Εδώ νομίζουμε ότι ξεχνάμε έστω και για λίγο την καθημερινότητα μας, τα προβλήματα που μας περιτριγυρίζουν, ότι βρισκόμαστε στη Γη της Επαγγελίας, όπου το γάλα και το μέλι τρέχουν πλούσια, όπου επιτέλους η ανθρωπότητα λυτρώνεται", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Πηγαίνουμε σε αυτούς τους χώρους όχι μόνο για να κάνουμε τα ψώνια μας, τις διακοπές μας, αλλά και για να έχουμε την ψευδαίσθηση ότι όλα τα πράγματα που βλέπουμε θεωρητικά μπορούμε να τα αγγίξουμε, να τα δοκιμάσουμε, να τα φάμε, να τα ζήσουμε", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Αυτή λοιπόν η άμεση σχέση μας με την πολυτέλεια και την υπερβολή, στην αρχή μας ξαφνιάζει, αλλά γρήγορα αρχίζει να μας αρέσει, να μας αρέσει συνεχώς περισσότερο", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Εδώ νομίζουμε ότι ξεχνάμε έστω και για λίγο την καθημερινότητα μας, τα προβλήματα που μας περιτριγυρίζουν, ότι βρισκόμαστε στη Γη της Επαγγελίας, όπου το γάλα και το μέλι τρέχουν πλούσια, όπου επιτέλους η ανθρωπότητα λυτρώνεται", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -133,7 +133,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -146,9 +146,9 @@ export const CARDS: SecCard[] = [
     questionText: "εξήγησε γιατί κατά τη γνώμη σου ο συγγραφέας λέει: Αυτοί οι σύγχρονοι χώροι του εμπορίου αποδεικνύουν τη νίκη της σύγχρονης καταναλωτικής κοινωνίας πάνω στο απλό, στο σπάνιο.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Γιατί όλοι αυτοί οι χώροι τα έχουν όλα σε υπερβολικό βαθμό", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Υπερβολικά φώτα, υπερβολική ποικιλία , υπερβολικά προϊόντα, υπερβολικά καλά τοποθετημένα", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Στην εποχή της κατανάλωσης το απλό και το σπάνιο δεν υπάρχει", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Γιατί όλοι αυτοί οι χώροι τα έχουν όλα σε υπερβολικό βαθμό", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Υπερβολικά φώτα, υπερβολική ποικιλία , υπερβολικά προϊόντα, υπερβολικά καλά τοποθετημένα", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Στην εποχή της κατανάλωσης το απλό και το σπάνιο δεν υπάρχει", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -159,7 +159,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -172,7 +172,7 @@ export const CARDS: SecCard[] = [
     questionText: "Σύμφωνα με το κείμενο που διάβασες πιστεύεις ότι ο συγγραφέας υποστηρίζει τη σύγχρονη καταναλωτική κοινωνία; Δικαιολόγησε την απάντηση σου . (την απάντηση σου να την πάρεις από ολόκληρο το κείμενο)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Αρχικά ο συγγραφέας παρουσιάζει τα χαρακτηριστικά γνωρίσματα της σύγχρονης κοινωνίας και τον τρόπο που λειτουργεί . στην τελευταία όμως παράγραφο του κειμένου και ειδικότερα στην τελευταία πρόταση μας αφήνει να καταλάβουμε ότι αυτή μας τη στάση πρέπει να την αξιολογήσουμε ξανά και ίσως να την αναθεωρήσουμε", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Αρχικά ο συγγραφέας παρουσιάζει τα χαρακτηριστικά γνωρίσματα της σύγχρονης κοινωνίας και τον τρόπο που λειτουργεί . στην τελευταία όμως παράγραφο του κειμένου και ειδικότερα στην τελευταία πρόταση μας αφήνει να καταλάβουμε ότι αυτή μας τη στάση πρέπει να την αξιολογήσουμε ξανά και ίσως να την αναθεωρήσουμε", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -183,7 +183,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2010 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -196,11 +196,11 @@ export const CARDS: SecCard[] = [
     questionText: "να εξηγήσεις με δικά σου λόγια τη σημασία των παρακάτω λέξεων ή φράσεων που είναι τυπωμένες με έντονο χρώμα :",
     tariffModel: {"kind":"orderedSplit","notation":"5 × 1"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "εγκατέλειψαν — άφησαν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "βιομηχανικά απόβλητα — τα υπόλοιπα των βιομηχανιών", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "βιομηχανικές μονάδες — εργοστάσια", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "ανακυκλώνουν — χρησιμοποιούν ξανά", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "παραβίασε — παρανόμησε, δεν τήρησε", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "εγκατέλειψαν — άφησαν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "βιομηχανικά απόβλητα — τα υπόλοιπα των βιομηχανιών", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "βιομηχανικές μονάδες — εργοστάσια", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "ανακυκλώνουν — χρησιμοποιούν ξανά", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "παραβίασε — παρανόμησε, δεν τήρησε", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -211,7 +211,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -224,7 +224,7 @@ export const CARDS: SecCard[] = [
     questionText: "τι είναι η αστυφιλία; Μπορείς να δώσεις ένα ορισμό του όρου βασισμένος στο κείμενο; (την απάντηση σου να την πάρεις από την 2η παράγραφο)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "η συγκέντρωση πολλών ανθρώπων σε μια πόλη και η μόνιμη εγκατάσταση τους σε αυτή", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "η συγκέντρωση πολλών ανθρώπων σε μια πόλη και η μόνιμη εγκατάσταση τους σε αυτή", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -235,7 +235,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -248,7 +248,7 @@ export const CARDS: SecCard[] = [
     questionText: "πως μπορεί να λυθεί το πρόβλημα της μόλυνσης του περιβάλλοντος σύμφωνα με το κείμενο που διάβασες; (την απάντηση σου να την πάρεις από την 6,7,8η παράγραφο)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "τήρηση παγκόσμιων μέτρων , απομάκρυνση εργοστασίων από κατοικημένες περιοχές, δημιουργία πάρκων, ανακύκλωση", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "τήρηση παγκόσμιων μέτρων , απομάκρυνση εργοστασίων από κατοικημένες περιοχές, δημιουργία πάρκων, ανακύκλωση", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -259,7 +259,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -272,7 +272,7 @@ export const CARDS: SecCard[] = [
     questionText: "πως προσπαθούν κάποιες μεγαλουπόλεις να λύσουν το πρόβλημα; (την απάντηση σου να την πάρεις από την 6,7 η παράγραφο)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "περιορισμός αστυφιλίας, ανακύκλωση", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "περιορισμός αστυφιλίας, ανακύκλωση", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -283,7 +283,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -296,7 +296,7 @@ export const CARDS: SecCard[] = [
     questionText: "συμφωνείς με την άποψη ότι τα εργοστάσια είναι η σοβαρότερη αιτία μόλυνσης του περιβάλλοντος; (την απάντηση σου να την πάρεις από όλο το κείμενο)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "είναι σίγουρα μια σοβαρή αιτία όχι όμως η μοναδική", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "είναι σίγουρα μια σοβαρή αιτία όχι όμως η μοναδική", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -307,7 +307,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -320,7 +320,7 @@ export const CARDS: SecCard[] = [
     questionText: "σχολίασε τη φράση στη 5η παράγραφο: όταν είναι στην εξοχή γεμίζουν τις μπαταρίες τους αλλά την ίδια στιγμή αδειάζουν το περιβάλλον. Page 3 of 4",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "τι μπορεί να του προσφέρει η φύση αδιαφορώντας για τις συνέπειες που μπορεί να έχει αυτό στο περιβάλλον που μολύνει, καταστρέφει", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "τι μπορεί να του προσφέρει η φύση αδιαφορώντας για τις συνέπειες που μπορεί να έχει αυτό στο περιβάλλον που μολύνει, καταστρέφει", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -331,7 +331,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2011 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule above its questions: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -679,11 +679,11 @@ export const CARDS: SecCard[] = [
     questionText: "Να εξηγήσετε με δικά σας λόγια τη σημασία των παρακάτω λέξεων ή φράσεων που είναι υπογραμμισμένες στο κείμενο που σας δίνεται:",
     tariffModel: {"kind":"orderedSplit","notation":"5 × 1"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "συντριπτική τους πλειοψηφία — μεγαλύτερος αριθμός αυτών που αποφασίζουν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "η ελεημοσύνη — η βοήθεια σε κάποιον που δεν έχει", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "παρέχουν — δίνουν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "αντιξοότητες — οι δυσκολίες", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "διακρίνονται — ξεχωρίζουν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "συντριπτική τους πλειοψηφία — μεγαλύτερος αριθμός αυτών που αποφασίζουν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "η ελεημοσύνη — η βοήθεια σε κάποιον που δεν έχει", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "παρέχουν — δίνουν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "αντιξοότητες — οι δυσκολίες", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "διακρίνονται — ξεχωρίζουν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -694,7 +694,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -708,10 +708,10 @@ export const CARDS: SecCard[] = [
     questionText: "Ποια είναι τα χαρακτηριστικά γνωρίσματα της εποχής όπως τα περιγράφει ο συγγραφέας στο άρθρο του;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Χαρακτηριστικά όπως: ο ατομικισμός για την απόκτηση χρημάτων", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "ενδιαφέρον μόνο για την αυτοπροβολή και για την οικονομική και κοινωνική άνοδo", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "το κέρδος είναι ο μοναδικός στόχος στη ζωή των ανθρώπων", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "οι ηθικοί κανόνες παραβλέπονται", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Χαρακτηριστικά όπως: ο ατομικισμός για την απόκτηση χρημάτων", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "ενδιαφέρον μόνο για την αυτοπροβολή και για την οικονομική και κοινωνική άνοδo", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "το κέρδος είναι ο μοναδικός στόχος στη ζωή των ανθρώπων", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "οι ηθικοί κανόνες παραβλέπονται", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -722,7 +722,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -736,12 +736,12 @@ export const CARDS: SecCard[] = [
     questionText: "Ποιες ομοιότητες παρουσιάζουν τα άτομα και τα κράτη όταν «χορηγούν» την προσφορά τους;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Οι άνθρωποι: είναι βαθιά εγωιστές και ενδιαφέρονται για την ικανοποίηση των ποικίλων αναγκών τους", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "αδιαφορούν για τις ανάγκες του κοινωνικού συνόλου", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "η ελεημοσύνη που δίνουν είναι μία μάλλον αυτόματη κίνηση,", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "οι χορηγίες έχουν έντονο το χαρακτήρα της διαφήμισης και της προβολής Τα κράτη: εγωισμός και προσωπικό συμφέρον", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "παροχή κάποιας άμεσης βοήθειας για τρέχουσες και επείγουσες ανάγκες,", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-6", kind: "point", verbatim: "πρόσκαιρες παροχές που μένουν μόνο σε υποσχέσεις και εξαγγελίες ανεκπλήρωτες για το μέλλον", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Οι άνθρωποι: είναι βαθιά εγωιστές και ενδιαφέρονται για την ικανοποίηση των ποικίλων αναγκών τους", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "αδιαφορούν για τις ανάγκες του κοινωνικού συνόλου", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "η ελεημοσύνη που δίνουν είναι μία μάλλον αυτόματη κίνηση,", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "οι χορηγίες έχουν έντονο το χαρακτήρα της διαφήμισης και της προβολής Τα κράτη: εγωισμός και προσωπικό συμφέρον", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "παροχή κάποιας άμεσης βοήθειας για τρέχουσες και επείγουσες ανάγκες,", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-6", kind: "point", verbatim: "πρόσκαιρες παροχές που μένουν μόνο σε υποσχέσεις και εξαγγελίες ανεκπλήρωτες για το μέλλον", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -752,7 +752,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -766,11 +766,11 @@ export const CARDS: SecCard[] = [
     questionText: "Σύμφωνα με το δοσμένο κείμενο να αναφέρετε 5 χαρακτηριστικά γνωρίσματα του πνεύματος της προσφοράς.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Για παράδειγμα: Το πνεύμα της προσφοράς είναι ελεύθερο και ανεξάρτητο,", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "κάνει την εμφάνισή του και την όποια δωρεά του όπου νομίζει ότι πρέπει και χρειάζεται η συμβολή του", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Τα έργα του συνήθως δε γίνονται αντιληπτά από τους πολλούς, παρά από τους ελάχιστους, γιατί δεν υπάρχει η πρόθεση της προβολής ή έστω της γνωστοποίησης", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "To πνεύμα της προσφοράς δεν λυγίζει από τις δυσκολίες", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "και τελικά νικά τις φυσικές και τεχνητές αντιξοότητες, για να απαλύνει και να μετριάσει τον πόνο και τη δυστυχία", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Για παράδειγμα: Το πνεύμα της προσφοράς είναι ελεύθερο και ανεξάρτητο,", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "κάνει την εμφάνισή του και την όποια δωρεά του όπου νομίζει ότι πρέπει και χρειάζεται η συμβολή του", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Τα έργα του συνήθως δε γίνονται αντιληπτά από τους πολλούς, παρά από τους ελάχιστους, γιατί δεν υπάρχει η πρόθεση της προβολής ή έστω της γνωστοποίησης", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "To πνεύμα της προσφοράς δεν λυγίζει από τις δυσκολίες", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "και τελικά νικά τις φυσικές και τεχνητές αντιξοότητες, για να απαλύνει και να μετριάσει τον πόνο και τη δυστυχία", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -781,7 +781,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -795,8 +795,8 @@ export const CARDS: SecCard[] = [
     questionText: "Γιατί αξίζει να θαυμάζουμε και να μιμηθούμε το θείο δώρο της προσφοράς;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Για παράδειγμα: Γιατί η οργάνωση της προσφοράς, σε τοπικό ή διεθνές επίπεδο, δεν μπορεί να συγκριθεί με το μη οργανωμένο, με το πηγαίο και προσωπικό πνεύμα της προσφοράς, που εκδηλώνεται μόνο του, χωρίς να ζητάει οργάνωση, βοήθεια, καθοδήγηση", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Το μεμονωμένο και ανεξάρτητο πνεύμα της προσφοράς, που μπορεί να γεννηθεί στη ψυχή του πιο ταπεινού πολίτη και χωρίς τη μεσολάβηση άλλων ανθρώπων για να εκδηλωθεί, αυτό είναι το θείο δώρο , αυτό έχει όλο το θαυμασμό μας και αυτό είναι που αξίζει να μιμηθούμε, κλπ……", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Για παράδειγμα: Γιατί η οργάνωση της προσφοράς, σε τοπικό ή διεθνές επίπεδο, δεν μπορεί να συγκριθεί με το μη οργανωμένο, με το πηγαίο και προσωπικό πνεύμα της προσφοράς, που εκδηλώνεται μόνο του, χωρίς να ζητάει οργάνωση, βοήθεια, καθοδήγηση", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Το μεμονωμένο και ανεξάρτητο πνεύμα της προσφοράς, που μπορεί να γεννηθεί στη ψυχή του πιο ταπεινού πολίτη και χωρίς τη μεσολάβηση άλλων ανθρώπων για να εκδηλωθεί, αυτό είναι το θείο δώρο , αυτό έχει όλο το θαυμασμό μας και αυτό είναι που αξίζει να μιμηθούμε, κλπ……", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -807,7 +807,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -821,9 +821,9 @@ export const CARDS: SecCard[] = [
     questionText: "Να συζητήσετε κάνοντας και τις σχετικές αναφορές στο κείμενο και βασισμένοι και στη δική σας άποψη ποιον βοηθά ο εθελοντισμός: αυτόν που δέχεται τη προσφορά, αυτόν που προσφέρει ή και τους δύο;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Η προσφορά και ο εθελοντισμός προσφέρουν μια άμεση βοήθεια καθοριστική σε αυτούς που την έχουν ανάγκη", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Από την άλλη πλευρά ωφελούνται και οι εθελοντές γιατί νιώθουν τη χαρά της συμμετοχής , της αντιμετώπισης των αναγκών του συνανθρώπου ακόμα και της ζεστασιάς που ένας καλός λόγος και ένα χαμόγελο χαρίζουν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Κατά συνέπεια από την προσφορά και τον εθελοντισμό ωφελούνται και τα δύο μέρη", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Η προσφορά και ο εθελοντισμός προσφέρουν μια άμεση βοήθεια καθοριστική σε αυτούς που την έχουν ανάγκη", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Από την άλλη πλευρά ωφελούνται και οι εθελοντές γιατί νιώθουν τη χαρά της συμμετοχής , της αντιμετώπισης των αναγκών του συνανθρώπου ακόμα και της ζεστασιάς που ένας καλός λόγος και ένα χαμόγελο χαρίζουν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Κατά συνέπεια από την προσφορά και τον εθελοντισμό ωφελούνται και τα δύο μέρη", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -834,7 +834,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2017 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -847,11 +847,11 @@ export const CARDS: SecCard[] = [
     questionText: "Εξηγήστε με δικά σας λόγια τη σημασία των παρακάτω φράσεων που είναι υπογραμμισμένες στο δοσμένο κείμενο:",
     tariffModel: {"kind":"orderedSplit","notation":"5 × 1"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ραγδαία — απότομη", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "εμφανίζονται — παρουσιάζονται", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "παράλληλης συνομιλίας — ταυτόχρονης συζήτησης", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "να γίνονται αντιληπτές — να γίνουν ορατές", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "θα προτιμήσουν — θα επιλέξουν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "ραγδαία — απότομη", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "εμφανίζονται — παρουσιάζονται", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "παράλληλης συνομιλίας — ταυτόχρονης συζήτησης", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "να γίνονται αντιληπτές — να γίνουν ορατές", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "θα προτιμήσουν — θα επιλέξουν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -862,7 +862,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -875,7 +875,7 @@ export const CARDS: SecCard[] = [
     questionText: "Ποιοι παράγοντες επηρεάζουν την εξέλιξη της χρήσης της γλώσσας;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ανάμεσα στους παράγοντες που επηρεάζουν τη χρήση της γλώσσας συγκαταλέγονται οι σύγχρονοι ρυθμοί της ζωής, η ραγδαία ανάπτυξη της τεχνολογίας και τα πολλά και ποικίλα ερεθίσματα που δέχονται καθημερινά οι χρήστες του διαδικτύου (Internet)", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ανάμεσα στους παράγοντες που επηρεάζουν τη χρήση της γλώσσας συγκαταλέγονται οι σύγχρονοι ρυθμοί της ζωής, η ραγδαία ανάπτυξη της τεχνολογίας και τα πολλά και ποικίλα ερεθίσματα που δέχονται καθημερινά οι χρήστες του διαδικτύου (Internet)", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -886,7 +886,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -899,8 +899,8 @@ export const CARDS: SecCard[] = [
     questionText: "Τι είναι τα emoticons και ποιες ανάγκες των χρηστών καλύπτουν;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Τα emoticons είναι μια σύνθετη λέξη που προέρχεται από τις λέξεις emotions και icons , δηλαδή είναι διάφορα ‘εικονο-σύμβολα’ που κωδικοποιούν βιωματικές αντιδράσεις αυτών που γράφουν απέναντι στο περιεχόμενο όσων έχουν γράψει οι ίδιοι ή άλλοι, π.χ. χαρά, λύπη, ειρωνεία απέναντι σ αυτούς που γράφουν, έκφραση συμπάθειας ή αντιπάθειας απέναντί τους κ.ά", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Αυτά τα συγκεκριμένα σύμβολα σχεδόν πάντα χρησιμοποιούνται παράλληλα με τις συντμήσεις των λέξεων, από όσα άτομα επιλέγουν τον συγκεκριμένο τρόπο γραφής", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Τα emoticons είναι μια σύνθετη λέξη που προέρχεται από τις λέξεις emotions και icons , δηλαδή είναι διάφορα ‘εικονο-σύμβολα’ που κωδικοποιούν βιωματικές αντιδράσεις αυτών που γράφουν απέναντι στο περιεχόμενο όσων έχουν γράψει οι ίδιοι ή άλλοι, π.χ. χαρά, λύπη, ειρωνεία απέναντι σ αυτούς που γράφουν, έκφραση συμπάθειας ή αντιπάθειας απέναντί τους κ.ά", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Αυτά τα συγκεκριμένα σύμβολα σχεδόν πάντα χρησιμοποιούνται παράλληλα με τις συντμήσεις των λέξεων, από όσα άτομα επιλέγουν τον συγκεκριμένο τρόπο γραφής", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -911,7 +911,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -924,8 +924,8 @@ export const CARDS: SecCard[] = [
     questionText: "Γιατί ο συγγραφέας υποστηρίζει ότι η χρήση των συντομογραφιών και των συντμήσεων δεν είναι ούτε υπεργενικευμένη, ούτε ασήμαντη ούτε όμως περιθωριακή;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "O συγγραφέας υποστηρίζει ότι η χρήση των συντομογραφιών και των συντμήσεων δεν είναι ούτε υπεργενικευμένη ούτε ασήμαντη ούτε όμως περιθωριακή γιατί η χρήση τους γίνεται κυρίως από νέους στην ηλικία συνομιλητές που επικοινωνούν σε σελίδες κοινωνικής δικτύωσης, όταν βιάζονται, όταν το περιεχόμενο της συζήτησης τους είναι πολύ γνωστό ανάμεσα τους, όταν οι ίδιοι επιλέγουν μια καθαρά φιλική γλώσσα", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Επομένως το περιβάλλον είναι συγκεκριμένο , αλλά η χρήση των συντομογραφιών και των συντμήσεων είναι και κατανοητή και αποδεκτή και αρκετά διαδεδομένη", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "O συγγραφέας υποστηρίζει ότι η χρήση των συντομογραφιών και των συντμήσεων δεν είναι ούτε υπεργενικευμένη ούτε ασήμαντη ούτε όμως περιθωριακή γιατί η χρήση τους γίνεται κυρίως από νέους στην ηλικία συνομιλητές που επικοινωνούν σε σελίδες κοινωνικής δικτύωσης, όταν βιάζονται, όταν το περιεχόμενο της συζήτησης τους είναι πολύ γνωστό ανάμεσα τους, όταν οι ίδιοι επιλέγουν μια καθαρά φιλική γλώσσα", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Επομένως το περιβάλλον είναι συγκεκριμένο , αλλά η χρήση των συντομογραφιών και των συντμήσεων είναι και κατανοητή και αποδεκτή και αρκετά διαδεδομένη", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -936,7 +936,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -949,10 +949,10 @@ export const CARDS: SecCard[] = [
     questionText: "Με βάση το κείμενο που διαβάσατε αλλά και την προσωπική σας εκτίμηση πόσο μεγάλη πιθανότητα δίνετε στην ευρεία καθιέρωση αυτού του νέου τρόπου γραφής;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Στη γλώσσα ποτέ κανείς δεν μπορεί να σίγουρος για το πώς μπορεί να εξελιχθεί", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Από την άλλη όμως πλευρά, αρκετές φορές ό,τι ξεκινά ως ένα περιθωριακό φαινόμενο ή ως ένα φαινόμενο που επιβάλλεται περιστασιακά από ποικίλες ανάγκες καταλήγει να γενικεύεται σε μελλοντικές φάσεις της, δεν αποκλείεται ο συγκεκριμένος τρόπος γραφής να επεκταθεί στο μέλλον, τουλάχιστον σε κάποιες λέξεις", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Βεβαίως, για ποικίλους κοινωνιογλωσσ(ολογ)ικούς λόγους, μάλλον πιο πιθανό είναι να περιορισθεί η συγκεκριμένη γραφή σε κάποια μόνο διαδικτυακά περιβάλλοντα (π.χ. στα chat) ή στην ανταλλαγή μηνυμάτων , και από άτομα συγκεκριμένων ηλικιών", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "Η άποψη αυτή του συγγραφέα μοιάζει και λογική και είναι αυτό που μέχρι τώρα έχει συμβεί σε παρόμοιες περιστάσεις", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Στη γλώσσα ποτέ κανείς δεν μπορεί να σίγουρος για το πώς μπορεί να εξελιχθεί", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Από την άλλη όμως πλευρά, αρκετές φορές ό,τι ξεκινά ως ένα περιθωριακό φαινόμενο ή ως ένα φαινόμενο που επιβάλλεται περιστασιακά από ποικίλες ανάγκες καταλήγει να γενικεύεται σε μελλοντικές φάσεις της, δεν αποκλείεται ο συγκεκριμένος τρόπος γραφής να επεκταθεί στο μέλλον, τουλάχιστον σε κάποιες λέξεις", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Βεβαίως, για ποικίλους κοινωνιογλωσσ(ολογ)ικούς λόγους, μάλλον πιο πιθανό είναι να περιορισθεί η συγκεκριμένη γραφή σε κάποια μόνο διαδικτυακά περιβάλλοντα (π.χ. στα chat) ή στην ανταλλαγή μηνυμάτων , και από άτομα συγκεκριμένων ηλικιών", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "Η άποψη αυτή του συγγραφέα μοιάζει και λογική και είναι αυτό που μέχρι τώρα έχει συμβεί σε παρόμοιες περιστάσεις", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -963,7 +963,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -976,7 +976,7 @@ export const CARDS: SecCard[] = [
     questionText: "Συμφωνείτε με τον χαρακτηρισμό του αρθρογράφου : Ας εκλάβουμε προς το παρόν το νέο τρόπο γραφής ως ένα ‘παιχνίδι’ των νέων με τη γλώσσα, που έχει τα όριά του.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ο συγγραφέας φαίνεται να είναι συγκρατημένα αισιόδοξος , ότι αυτή η εξέλιξη στη γραπτή χρήση της γλώσσας είναι μάλλον μία παροδική τάση των νέων κυρίως χρηστών του διαδικτύου και προς το παρόν εμφανίζεται αποκλειστικά και μόνο στο γραπτό λόγο και συνήθως προκύπτει ως ένα αποτέλεσμα χρονικής πίεσης ή μεγάλης οικειότητας ανάμεσα στους «συνομιλούντες»", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ο συγγραφέας φαίνεται να είναι συγκρατημένα αισιόδοξος , ότι αυτή η εξέλιξη στη γραπτή χρήση της γλώσσας είναι μάλλον μία παροδική τάση των νέων κυρίως χρηστών του διαδικτύου και προς το παρόν εμφανίζεται αποκλειστικά και μόνο στο γραπτό λόγο και συνήθως προκύπτει ως ένα αποτέλεσμα χρονικής πίεσης ή μεγάλης οικειότητας ανάμεσα στους «συνομιλούντες»", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -987,7 +987,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1000,11 +1000,11 @@ export const CARDS: SecCard[] = [
     questionText: "Εξηγήστε με δικά σας λόγια τη σημασία των παρακάτω φράσεων που είναι γραμμένες με έντονα γράμματα στο δοσμένο κείμενο:",
     tariffModel: {"kind":"orderedSplit","notation":"5 × 1"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "είχαν συγκροτήσει — είχαν σχηματίσει", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "περιορίζουν — μειώνουν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "άρχισε να ανοίγει τα προφίλ — ξεκίνησε να βλέπει τα βιογραφικά", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "άλλαζε μαζί τους κουβέντες — συζητούσε", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "συμμετείχαν — έπαιρναν μέρος", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "είχαν συγκροτήσει — είχαν σχηματίσει", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "περιορίζουν — μειώνουν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "άρχισε να ανοίγει τα προφίλ — ξεκίνησε να βλέπει τα βιογραφικά", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "άλλαζε μαζί τους κουβέντες — συζητούσε", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "συμμετείχαν — έπαιρναν μέρος", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1015,7 +1015,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1028,9 +1028,9 @@ export const CARDS: SecCard[] = [
     questionText: "Τι παρουσίαζε η φωτογραφία που έλαβε ο Γιώργος στο κινητό του;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Η φωτογραφία παρουσίαζε ένα γνωστό μέρος", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Πιο συγκεκριμένα, ήταν ένα ωραίο μέρος της πατρίδας των γονιών του το οποίο είχε επισκεφτεί αρκετές φορές κατά τα ταξίδια που έκαναν στη διάρκεια των καλοκαιρινών διακοπών στην Ελλάδα", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Εκεί πήγαινε με τα άλλα παιδιά του χωριού για να κολυμπήσουν στο μεγάλο ποτάμι, τον Αχελώο και για να περάσουν δροσερές στιγμές κάτω από τα αιωνόβια πλατάνια, ενώ τις νύχτες σε αυτή την ποταμίσια αμμουδιά, οργάνωναν τα πάρτι τους με πολύ μουσική και διασκέδαση", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Η φωτογραφία παρουσίαζε ένα γνωστό μέρος", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Πιο συγκεκριμένα, ήταν ένα ωραίο μέρος της πατρίδας των γονιών του το οποίο είχε επισκεφτεί αρκετές φορές κατά τα ταξίδια που έκαναν στη διάρκεια των καλοκαιρινών διακοπών στην Ελλάδα", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Εκεί πήγαινε με τα άλλα παιδιά του χωριού για να κολυμπήσουν στο μεγάλο ποτάμι, τον Αχελώο και για να περάσουν δροσερές στιγμές κάτω από τα αιωνόβια πλατάνια, ενώ τις νύχτες σε αυτή την ποταμίσια αμμουδιά, οργάνωναν τα πάρτι τους με πολύ μουσική και διασκέδαση", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1041,7 +1041,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1054,9 +1054,9 @@ export const CARDS: SecCard[] = [
     questionText: "Για ποιο λόγο έστειλαν στον Γιώργο οι φίλοι του αυτήν την φωτογραφία;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Την φωτογραφία αυτή την έστειλαν στο Γιώργο οι φίλοι του από το χωριό που είχαν συγκροτήσει μια ομάδα που είχε στόχο να προβάλλει τις ομορφιές του τόπου τους, ένα μεγαλοχώρι στην Άρτα, αλλά και να αποτελέσει έναν κόμβο γνωριμίας μεταξύ των συγχωριανών όπου κι αν βρίσκονται αυτοί", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Στόχος επίσης ήταν η καλύτερη οργάνωση των εκδηλώσεων αλλά και των διαφόρων άλλων δράσεων που γίνονται κάθε καλοκαίρι εκεί και βεβαίως να αποτελέσει μια πηγή πληροφοριών και επικοινωνίας σε όλη τη διάρκεια του έτους και ειδικά το χειμώνα που οι καιρικές συνθήκες περιορίζουν τις μετακινήσεις των συγχωριανών", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Επί πλέον, η ομάδα έστελνε μαζί με την φωτογραφία και όλες όσες συνδέσεις αναφέρονταν όχι μόνο στο συγκεκριμένο χωριό, αλλά σε όλα που βρίσκονται κατά μήκος του Αχελώου", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Την φωτογραφία αυτή την έστειλαν στο Γιώργο οι φίλοι του από το χωριό που είχαν συγκροτήσει μια ομάδα που είχε στόχο να προβάλλει τις ομορφιές του τόπου τους, ένα μεγαλοχώρι στην Άρτα, αλλά και να αποτελέσει έναν κόμβο γνωριμίας μεταξύ των συγχωριανών όπου κι αν βρίσκονται αυτοί", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Στόχος επίσης ήταν η καλύτερη οργάνωση των εκδηλώσεων αλλά και των διαφόρων άλλων δράσεων που γίνονται κάθε καλοκαίρι εκεί και βεβαίως να αποτελέσει μια πηγή πληροφοριών και επικοινωνίας σε όλη τη διάρκεια του έτους και ειδικά το χειμώνα που οι καιρικές συνθήκες περιορίζουν τις μετακινήσεις των συγχωριανών", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Επί πλέον, η ομάδα έστελνε μαζί με την φωτογραφία και όλες όσες συνδέσεις αναφέρονταν όχι μόνο στο συγκεκριμένο χωριό, αλλά σε όλα που βρίσκονται κατά μήκος του Αχελώου", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1067,7 +1067,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1080,9 +1080,9 @@ export const CARDS: SecCard[] = [
     questionText: "Με ποιους τρόπους η χρήση των μέσων κοινωνικής δικτύωσης εμπλούτισε την εκτίμηση του Γιώργου για το μέρος που γεννήθηκαν οι γονείς του στην Ελλάδα;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ο Γιώργος μέσα από τα προφίλ των συγχωριανών του , αλλά και τις ιστοσελίδες που άνοιγε και αναφέρονταν στο χωριό του, διαπίστωσε πως ένιωθε πως περπατούσε σε ένα τόπο που γνώριζε κάθε λεπτομέρειά του", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Επί πλέον, ήταν σαν ήξερε από παλιά έναν – έναν τους ανθρώπους που συναντούσε και άλλαζε μαζί τους κουβέντες για ένα σωρό πράγματα που τους απασχολούσαν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Με αυτόν τον τρόπο, το κινητό τηλέφωνο στα χέρια του Γιώργου έγινε ξαφνικά η γέφυρα που τον ένωνε με την πατρίδα καθώς μέσα απ’ αυτό και τις λειτουργίες του, μπορούσε να δει φωτογραφίες από ένα σωρό μέρη και βίντεο, να ακούσει τους συγχωριανούς του στην Ελλάδα και να συνομιλήσει μαζί τους οπουδήποτε", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ο Γιώργος μέσα από τα προφίλ των συγχωριανών του , αλλά και τις ιστοσελίδες που άνοιγε και αναφέρονταν στο χωριό του, διαπίστωσε πως ένιωθε πως περπατούσε σε ένα τόπο που γνώριζε κάθε λεπτομέρειά του", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Επί πλέον, ήταν σαν ήξερε από παλιά έναν – έναν τους ανθρώπους που συναντούσε και άλλαζε μαζί τους κουβέντες για ένα σωρό πράγματα που τους απασχολούσαν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Με αυτόν τον τρόπο, το κινητό τηλέφωνο στα χέρια του Γιώργου έγινε ξαφνικά η γέφυρα που τον ένωνε με την πατρίδα καθώς μέσα απ’ αυτό και τις λειτουργίες του, μπορούσε να δει φωτογραφίες από ένα σωρό μέρη και βίντεο, να ακούσει τους συγχωριανούς του στην Ελλάδα και να συνομιλήσει μαζί τους οπουδήποτε", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1093,7 +1093,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1106,7 +1106,7 @@ export const CARDS: SecCard[] = [
     questionText: "Με βάση το κείμενο που διαβάσατε αλλά και την προσωπική σας άποψη που οφείλεται κατά τη γνώμη σας η κινητοποίηση του Γιώργου;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Αυτό που κινητοποίησε τον Γιώργο είναι η δυνατότητα που το πρόσφεραν τα μέσα κοινωνικής δικτύωσης αλλά και οι σελίδες που ανακάλυπτε στο διαδίκτυο έτσι ώστε ,να κρατήσει την επαφή του με τους καλοκαιρινούς του φίλους, τους συγγενείς του και τα όσα γίνονταν στο χωριό του, έτσι ώστε να νιώθει ότι παραμένει ένα ενεργό μέλος του χωριού του", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Αυτό που κινητοποίησε τον Γιώργο είναι η δυνατότητα που το πρόσφεραν τα μέσα κοινωνικής δικτύωσης αλλά και οι σελίδες που ανακάλυπτε στο διαδίκτυο έτσι ώστε ,να κρατήσει την επαφή του με τους καλοκαιρινούς του φίλους, τους συγγενείς του και τα όσα γίνονταν στο χωριό του, έτσι ώστε να νιώθει ότι παραμένει ένα ενεργό μέλος του χωριού του", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1117,7 +1117,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1130,8 +1130,8 @@ export const CARDS: SecCard[] = [
     questionText: "Να συζητήσετε τη φράση: Ο Γιώργος ένοιωσε πολύ υπερήφανος που ανέλαβε να συστήσει στους φίλους του τον τόπο του και σε τούτο τον βοήθησε πολύ η τεχνολογία του κινητού…",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Η τεχνολογία έδωσε την ευκαιρία στον Γιώργο , να νιώσει περήφανος για την πατρίδα του, να νιώσει ότι είναι κομμάτι του χωριού που γεννήθηκαν οι γονείς του και ζουν οι συγγενείς του, βρήκε έναν ξεχωριστό ρόλο ανάμεσα στους φίλους που είχε στην ευρωπαϊκή πόλη που ζούσε", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Και ένιωσε ότι η τεχνολογία και το κινητό του ήταν ένας σύμμαχος του", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Η τεχνολογία έδωσε την ευκαιρία στον Γιώργο , να νιώσει περήφανος για την πατρίδα του, να νιώσει ότι είναι κομμάτι του χωριού που γεννήθηκαν οι γονείς του και ζουν οι συγγενείς του, βρήκε έναν ξεχωριστό ρόλο ανάμεσα στους φίλους που είχε στην ευρωπαϊκή πόλη που ζούσε", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Και ένιωσε ότι η τεχνολογία και το κινητό του ήταν ένας σύμμαχος του", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1142,7 +1142,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1156,11 +1156,11 @@ export const CARDS: SecCard[] = [
     questionText: "Εξηγήστε με δικά σας λόγια τη σημασία των παρακάτω φράσεων που είναι γραμμένες με έντονα γράμματα στο δοσμένο κείμενο:",
     tariffModel: {"kind":"orderedSplit","notation":"5 × 1"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "μειώθηκε — περιορίστηκε", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "θα ανακάμψει — θα βελτιωθεί πάλι, θα συνέλθει", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "πηγάζει — γεννιέται, προέρχεται", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "θα εκτοπίσουν — θα στείλουν μακριά, θα απομακρύνουν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "αναδιανομή — μοίρασμα από την αρχή", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "μειώθηκε — περιορίστηκε", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "θα ανακάμψει — θα βελτιωθεί πάλι, θα συνέλθει", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "πηγάζει — γεννιέται, προέρχεται", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "θα εκτοπίσουν — θα στείλουν μακριά, θα απομακρύνουν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "αναδιανομή — μοίρασμα από την αρχή", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1171,7 +1171,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1185,7 +1185,7 @@ export const CARDS: SecCard[] = [
     questionText: "Ποιο είναι σύμφωνα με το κείμενο, το κύριο πρόβλημα της ελληνικής οικονομίας;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Αυτό που οι πιο σοβαροί οικονομολόγοι λένε ότι είναι το κύριο πρόβλημα της ελληνικής οικονομίας, είναι πως υπάρχει εγχώρια ζήτηση, αλλά η αγορά είναι στα χέρια των ξένων παραγωγών και στις μεγάλες πολυεθνικές εταιρείες και εδώ η ανεργία οφείλεται στην χαμηλή ανταγωνιστικότητα των ελληνικών επιχειρήσεων", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Αυτό που οι πιο σοβαροί οικονομολόγοι λένε ότι είναι το κύριο πρόβλημα της ελληνικής οικονομίας, είναι πως υπάρχει εγχώρια ζήτηση, αλλά η αγορά είναι στα χέρια των ξένων παραγωγών και στις μεγάλες πολυεθνικές εταιρείες και εδώ η ανεργία οφείλεται στην χαμηλή ανταγωνιστικότητα των ελληνικών επιχειρήσεων", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1196,7 +1196,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1210,9 +1210,9 @@ export const CARDS: SecCard[] = [
     questionText: "Ποιοι είναι οι κίνδυνοι που εντοπίζουν οι οικονομολόγοι από την υπερβολική ανάπτυξη της τεχνητής νοημοσύνης και των ρομπότ;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Οι κίνδυνοι από την υπερβολική ανάπτυξη της τεχνητής νοημοσύνης και των ρομπότ είναι πραγματικοί και πολλοί", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Αρκετοί οικονομολόγοι ανησυχούν ότι η τεχνητή νοημοσύνη και τα ρομπότ θα εκτοπίσουν τόσο πολλούς ανθρώπους, σε τόσο πολλούς κλάδους που θα είναι πολύ δύσκολο να βρουν όλοι δουλειά σε νέες δραστηριότητες, όπως είχε γίνει στις προηγούμενες βιομηχανικές επαναστάσεις", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Παράλληλα , πολλές από τις νέες δουλειές θα είναι περιστασιακές και κακοπληρωμένες", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Οι κίνδυνοι από την υπερβολική ανάπτυξη της τεχνητής νοημοσύνης και των ρομπότ είναι πραγματικοί και πολλοί", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Αρκετοί οικονομολόγοι ανησυχούν ότι η τεχνητή νοημοσύνη και τα ρομπότ θα εκτοπίσουν τόσο πολλούς ανθρώπους, σε τόσο πολλούς κλάδους που θα είναι πολύ δύσκολο να βρουν όλοι δουλειά σε νέες δραστηριότητες, όπως είχε γίνει στις προηγούμενες βιομηχανικές επαναστάσεις", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Παράλληλα , πολλές από τις νέες δουλειές θα είναι περιστασιακές και κακοπληρωμένες", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1223,7 +1223,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1237,10 +1237,10 @@ export const CARDS: SecCard[] = [
     questionText: "Βασισμένοι στην ανάγνωση του κειμένου, να αναφέρετε ένα από τα οφέλη που προκύπτουν για τις χώρες που χρησιμοποιούν θετικά την τεχνολογική εξέλιξη και να εξηγήσετε πως θα μπορούσε η ελληνική οικονομία να ωφεληθεί από αυτό.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ένα από τα οφέλη που προκύπτουν για τις χώρες που χρησιμοποιούν θετικά την τεχνολογική εξέλιξη είναι: Στις χώρες που θα αντιμετωπίσουν θετικά την πρόκληση, μία από τις λύσεις π.χ. θα μπορούσε να είναι να προχωρήσουν σε εισαγωγή νέων τεχνικών σε παραδοσιακούς κλάδους (σε χωράφια, εργοστάσια και γραφεία) για να μειώσουν πολύ το κόστος και να βελτιώσουν το προϊόν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Αυτό θα προστατεύσει τις επιχειρήσεις από ξένους ανταγωνιστές και θα επιτρέψει να δίνουν καλές αμοιβές", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Για την κοινωνία γύρω τους το μεγάλο όφελος θα είναι φθηνότερα και καλύτερα προϊόντα", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "Αυτό θα βοηθούσε την ελληνική οικονομία που θα αξιοποιούσε το εξειδικευμένο ανθρώπινο δυναμικό της, θα μεγάλωνε το κύκλο εργασιών ,αλλά και το μερίδιο της αγοράς στην οποία απευθύνεται", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ένα από τα οφέλη που προκύπτουν για τις χώρες που χρησιμοποιούν θετικά την τεχνολογική εξέλιξη είναι: Στις χώρες που θα αντιμετωπίσουν θετικά την πρόκληση, μία από τις λύσεις π.χ. θα μπορούσε να είναι να προχωρήσουν σε εισαγωγή νέων τεχνικών σε παραδοσιακούς κλάδους (σε χωράφια, εργοστάσια και γραφεία) για να μειώσουν πολύ το κόστος και να βελτιώσουν το προϊόν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Αυτό θα προστατεύσει τις επιχειρήσεις από ξένους ανταγωνιστές και θα επιτρέψει να δίνουν καλές αμοιβές", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Για την κοινωνία γύρω τους το μεγάλο όφελος θα είναι φθηνότερα και καλύτερα προϊόντα", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "Αυτό θα βοηθούσε την ελληνική οικονομία που θα αξιοποιούσε το εξειδικευμένο ανθρώπινο δυναμικό της, θα μεγάλωνε το κύκλο εργασιών ,αλλά και το μερίδιο της αγοράς στην οποία απευθύνεται", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1251,7 +1251,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1265,8 +1265,8 @@ export const CARDS: SecCard[] = [
     questionText: "Αντλώντας στοιχεία από όλο το δοσμένο κείμενο , τι είδος ανθρώπων αναφέρει ο συγγραφέας ως τους πιο σημαντικούς για την αντιμετώπιση της ανεργίας και της ανισότητας;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Οι άνθρωποι που θα μπορούσαν να βοηθήσουν για να αντιμετωπιστεί η ανεργία και η ανισότητα σύμφωνα με τον αρθρογράφο είναι οι επιχειρηματίες με καινοτόμες ιδέες, τα στελέχη και οι ερευνητές που κατανοούν, παράγουν και αξιοποιούν τις νέες τεχνολογίες", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Είναι, δηλαδή, οι νεότεροι, οι μορφωμένοι, οι κοσμοπολίτες μεσοαστοί, που έχουν την περιέργεια να μαθαίνουν, την αυτοπεποίθηση να δοκιμάζουν, τη φιλοδοξία να ζήσουν καλά και δεν φοβούνται τον ξένο ανταγωνιστή", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Οι άνθρωποι που θα μπορούσαν να βοηθήσουν για να αντιμετωπιστεί η ανεργία και η ανισότητα σύμφωνα με τον αρθρογράφο είναι οι επιχειρηματίες με καινοτόμες ιδέες, τα στελέχη και οι ερευνητές που κατανοούν, παράγουν και αξιοποιούν τις νέες τεχνολογίες", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Είναι, δηλαδή, οι νεότεροι, οι μορφωμένοι, οι κοσμοπολίτες μεσοαστοί, που έχουν την περιέργεια να μαθαίνουν, την αυτοπεποίθηση να δοκιμάζουν, τη φιλοδοξία να ζήσουν καλά και δεν φοβούνται τον ξένο ανταγωνιστή", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1277,7 +1277,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1291,9 +1291,9 @@ export const CARDS: SecCard[] = [
     questionText: "Από το κείμενο που διαβάσατε αλλά και από την μέχρι τώρα εμπειρία σας ,ποιο είναι το αποτέλεσμα, ο απόηχος της ανεργίας στην κοινωνία;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Μέσα από το κείμενο προκύπτει ότι ο απόηχος της ανεργίας είναι οι εκατοντάδες άνεργοι λόγω της μειωμένης εξάσκησης δραστηριοτήτων, επίσης λόγω του μεγάλου ανταγωνισμού από τεράστιες πολυεθνικές εταιρείες και τέλος λόγω της ραγδαίας επέκτασης της τεχνητής νοημοσύνης και των ρομπότ σε συνεχώς περισσότερους κλάδους εργασιών", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Ο κόσμος στην Ελλάδα όμως δεν εστιάζει στην κατανόηση αυτών των δεδομένων, δεν προσπαθεί να βρει λύσεις στις αιτίες που έχουν δημιουργήσει αυτό το πρόβλημα, γιατί είναι απασχολημένοι με τη λιτότητα και την ανταγωνιστικότητα", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Από την μέχρι τώρα εμπειρία μας προκύπτει η ελληνική κοινωνία αποδείχθηκε ανέτοιμη να αντιμετωπίσει την ανεργία , αλλά παράλληλα δείχνει να προσαρμόζεται δύσκολα και με αργούς ρυθμούς στους λόγους της ανεργίας", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Μέσα από το κείμενο προκύπτει ότι ο απόηχος της ανεργίας είναι οι εκατοντάδες άνεργοι λόγω της μειωμένης εξάσκησης δραστηριοτήτων, επίσης λόγω του μεγάλου ανταγωνισμού από τεράστιες πολυεθνικές εταιρείες και τέλος λόγω της ραγδαίας επέκτασης της τεχνητής νοημοσύνης και των ρομπότ σε συνεχώς περισσότερους κλάδους εργασιών", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Ο κόσμος στην Ελλάδα όμως δεν εστιάζει στην κατανόηση αυτών των δεδομένων, δεν προσπαθεί να βρει λύσεις στις αιτίες που έχουν δημιουργήσει αυτό το πρόβλημα, γιατί είναι απασχολημένοι με τη λιτότητα και την ανταγωνιστικότητα", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Από την μέχρι τώρα εμπειρία μας προκύπτει η ελληνική κοινωνία αποδείχθηκε ανέτοιμη να αντιμετωπίσει την ανεργία , αλλά παράλληλα δείχνει να προσαρμόζεται δύσκολα και με αργούς ρυθμούς στους λόγους της ανεργίας", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1304,7 +1304,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1317,11 +1317,11 @@ export const CARDS: SecCard[] = [
     questionText: "Εξηγήστε με δικά σας λόγια τη σημασία των παρακάτω φράσεων που είναι γραμμένες με έντονα γράμματα στο δοσμένο κείμενο:",
     tariffModel: {"kind":"orderedSplit","notation":"5 × 1"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Συνένωσαν — εργάστηκαν μαζί", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Υπερισχύσει — αποδειχθεί ανώτερη", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Παροτρύνσεις — συμβουλές", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "Εξασθένισε — μειώθηκε, ελαττώθηκε", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "Θα συμβάλει — θα βοηθήσει", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Συνένωσαν — εργάστηκαν μαζί", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Υπερισχύσει — αποδειχθεί ανώτερη", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Παροτρύνσεις — συμβουλές", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "Εξασθένισε — μειώθηκε, ελαττώθηκε", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "Θα συμβάλει — θα βοηθήσει", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1332,7 +1332,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1345,9 +1345,9 @@ export const CARDS: SecCard[] = [
     questionText: "Σύμφωνα με το κείμενο που διαβάσατε ποια ήταν η αντίδραση της επιστημονικής κοινότητας κατά τη διάρκεια της πρώτης περιόδου της πανδημίας;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Στην διάρκεια της πρώτης πανδημίας είδαμε σε επιστημονικά κέντρα σε όλο τον κόσμο μια γνήσια αλληλεγγύη", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Μακριά από εγωισμούς, κορυφαίοι επιστήμονες συνένωσαν τις δυνάμεις τους για να ανακαλύψουν θεραπείες και, κυρίως, εμβόλια που θα μπορούσαν να σταματήσουν την πανδημία", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Χάρη σε αυτήν τη συντονισμένη προσπάθεια έγινε εφικτό να παραχθούν εμβόλια αρκετά αποτελεσματικά, σε σύντομο χρονικό διάστημα χάρη στην εφαρμογή νέων τεχνολογιών", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Στην διάρκεια της πρώτης πανδημίας είδαμε σε επιστημονικά κέντρα σε όλο τον κόσμο μια γνήσια αλληλεγγύη", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Μακριά από εγωισμούς, κορυφαίοι επιστήμονες συνένωσαν τις δυνάμεις τους για να ανακαλύψουν θεραπείες και, κυρίως, εμβόλια που θα μπορούσαν να σταματήσουν την πανδημία", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Χάρη σε αυτήν τη συντονισμένη προσπάθεια έγινε εφικτό να παραχθούν εμβόλια αρκετά αποτελεσματικά, σε σύντομο χρονικό διάστημα χάρη στην εφαρμογή νέων τεχνολογιών", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1358,7 +1358,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1371,7 +1371,7 @@ export const CARDS: SecCard[] = [
     questionText: "Τί μπορεί να ωθήσει τον άνθρωπο να δράσει με γνώμονα το κοινό όφελος;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Η αγάπη για το σύνολο μπορεί να υπερισχύσει του ατομικού συμφέροντος, η κατανόηση ότι οι ανυπέρβλητες δυνάμεις όπως οι φυσικές καταστροφές , οι υγειονομικές κρίσεις και ο πόλεμος είναι καταστάσεις που ο άνθρωπος κάποιες φορές αναγκάζεται ν α επιλέξει να δράσει με βάση το κοινό καλό", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Η αγάπη για το σύνολο μπορεί να υπερισχύσει του ατομικού συμφέροντος, η κατανόηση ότι οι ανυπέρβλητες δυνάμεις όπως οι φυσικές καταστροφές , οι υγειονομικές κρίσεις και ο πόλεμος είναι καταστάσεις που ο άνθρωπος κάποιες φορές αναγκάζεται ν α επιλέξει να δράσει με βάση το κοινό καλό", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1382,7 +1382,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1395,10 +1395,10 @@ export const CARDS: SecCard[] = [
     questionText: "Πώς εξηγείται η έλλειψη της αλληλεγγύης την περίοδο της πανδημίας;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Από την στιγμή που τα εμβόλια έγιναν διαθέσιμα, η αλληλεγγύη εξασθένισε", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Σε ατομικό επίπεδο, σε μια σειρά από πολιτισμένες, υποτίθεται, χώρες, αξιωματούχοι και εύποροι πολίτες επινόησαν κάθε είδους παγαποντιά για να κάνουν πρώτοι το εμβόλιο, κι ας ήταν άλλοι που το χρειάζονταν περισσότερο", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Ο φόβος , η αγωνία για τον άγνωστο αόρατο εχθρό, οι απρόβλεπτες και ανυπολόγιστες συνέπειες έκαναν λαούς και άτομα να λειτουργούν μόνο εγωιστικά", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "Η διαχείριση της πανδημίας πέρασε από πολλά και διαφορετικά στάδια… Από τη συνεργασία κα τη συσπείρωση, στον άκρατο εγωισμό , στο συμφέρον και τη δύναμη του δυνατού , στον εξορθολογισμό", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Από την στιγμή που τα εμβόλια έγιναν διαθέσιμα, η αλληλεγγύη εξασθένισε", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Σε ατομικό επίπεδο, σε μια σειρά από πολιτισμένες, υποτίθεται, χώρες, αξιωματούχοι και εύποροι πολίτες επινόησαν κάθε είδους παγαποντιά για να κάνουν πρώτοι το εμβόλιο, κι ας ήταν άλλοι που το χρειάζονταν περισσότερο", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Ο φόβος , η αγωνία για τον άγνωστο αόρατο εχθρό, οι απρόβλεπτες και ανυπολόγιστες συνέπειες έκαναν λαούς και άτομα να λειτουργούν μόνο εγωιστικά", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "Η διαχείριση της πανδημίας πέρασε από πολλά και διαφορετικά στάδια… Από τη συνεργασία κα τη συσπείρωση, στον άκρατο εγωισμό , στο συμφέρον και τη δύναμη του δυνατού , στον εξορθολογισμό", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1409,7 +1409,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1422,13 +1422,13 @@ export const CARDS: SecCard[] = [
     questionText: "Αφού διαβάσετε όλο το κείμενο και αξιοποιώντας και τις προσωπικές σας γνώσεις και εμπειρίες συμφωνείτε με την άποψη ότι ο πολιτισμός είναι πηγή δυστυχίας; Να τεκμηριώσετε τη θέση σας.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ο Φρόιντ στο βιβλίο του « Ο Πολιτισμός πηγή δυστυχίας» έγραφε ότι οι άνθρωποι επιθυμούν να χαρούν τη ζωή τους ανεμπόδιστα", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Όμως ο κόσμος γύρω τους δεν φτιάχτηκε γι’ αυτό", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Στη «δημιουργία» του κόσμου δεν είχε προβλεφθεί ο άνθρωπος να είναι ευτυχισμένος", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "Είναι εξαίσιο το να βλέπεις ανθρώπους να ξεχνούν τις έχθρες και τα ιδιοτελή συμφέροντα που τους διχάζουν, για να θυμηθούν τον μεγάλο κοινό στόχο της διαιώνισης του ανθρώπινου είδους απέναντι στις συντριπτικά ανώτερες φυσικές δυνάμεις", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "Τα μέχρι τώρα γεγονότα αποδεικνύουν ότι οι άνθρωποι μόνο όταν αγαπήσουν ο ένας τον άλλον , παραμερίσουν αντιπαλότητες και αυτοκαταστροφές μπορεί να γίνει ευτυχισμένος", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-6", kind: "point", verbatim: "Αλλά αυτό είναι μια διαδικασία που για να έχει αποτέλεσμα καλό είναι να είναι συλλογική, συνειδητή και διαρκής", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-7", kind: "point", verbatim: "Τελικά ίσως μπορούμε να καταλήξουμε στην πρόταση ότι ο πολιτισμός είναι πηγή δυστυχίας ή ευτυχίας ανάλογα με τις δικές μας επιλογές", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ο Φρόιντ στο βιβλίο του « Ο Πολιτισμός πηγή δυστυχίας» έγραφε ότι οι άνθρωποι επιθυμούν να χαρούν τη ζωή τους ανεμπόδιστα", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Όμως ο κόσμος γύρω τους δεν φτιάχτηκε γι’ αυτό", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Στη «δημιουργία» του κόσμου δεν είχε προβλεφθεί ο άνθρωπος να είναι ευτυχισμένος", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "Είναι εξαίσιο το να βλέπεις ανθρώπους να ξεχνούν τις έχθρες και τα ιδιοτελή συμφέροντα που τους διχάζουν, για να θυμηθούν τον μεγάλο κοινό στόχο της διαιώνισης του ανθρώπινου είδους απέναντι στις συντριπτικά ανώτερες φυσικές δυνάμεις", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "Τα μέχρι τώρα γεγονότα αποδεικνύουν ότι οι άνθρωποι μόνο όταν αγαπήσουν ο ένας τον άλλον , παραμερίσουν αντιπαλότητες και αυτοκαταστροφές μπορεί να γίνει ευτυχισμένος", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-6", kind: "point", verbatim: "Αλλά αυτό είναι μια διαδικασία που για να έχει αποτέλεσμα καλό είναι να είναι συλλογική, συνειδητή και διαρκής", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-7", kind: "point", verbatim: "Τελικά ίσως μπορούμε να καταλήξουμε στην πρόταση ότι ο πολιτισμός είναι πηγή δυστυχίας ή ευτυχίας ανάλογα με τις δικές μας επιλογές", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1439,7 +1439,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1452,7 +1452,7 @@ export const CARDS: SecCard[] = [
     questionText: "Με ποιο τρόπο η αγάπη και η αλληλεγγύη μπορεί να συμβάλλει στην διατήρηση του ανθρώπινου είδους;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Σύμφωνα με το πνεύμα του κειμένου αλλά και το κοινό αίσθημα η αγάπη και η αλληλεγγύη έχουν αποτέλεσμα και συμβάλλουν στην διατήρηση του ανθρώπινου είδους; μόνο όταν είναι ειλικρινείς, άδολες, συνυπολογίζουν στις συνέπειες των επιλογών τους το ατομικό , αλλά και το κοινό συμφέρον , δεν δρουν εγωιστικά , αλλά συσπειρώνονται στο οικουμενικό καλό", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Σύμφωνα με το πνεύμα του κειμένου αλλά και το κοινό αίσθημα η αγάπη και η αλληλεγγύη έχουν αποτέλεσμα και συμβάλλουν στην διατήρηση του ανθρώπινου είδους; μόνο όταν είναι ειλικρινείς, άδολες, συνυπολογίζουν στις συνέπειες των επιλογών τους το ατομικό , αλλά και το κοινό συμφέρον , δεν δρουν εγωιστικά , αλλά συσπειρώνονται στο οικουμενικό καλό", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1463,7 +1463,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1476,11 +1476,11 @@ export const CARDS: SecCard[] = [
     questionText: "Εξηγήστε με δικά σας λόγια τη σημασία των παρακάτω φράσεων που είναι γραμμένες με έντονα γράμματα στο δοσμένο κείμενο:",
     tariffModel: {"kind":"orderedSplit","notation":"5 × 1"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Πάλεψε — αγωνίστηκε /αντιμετώπισε", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Έρημη — άδεια", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Προπηλακίζεται — χλευάζεται/ την κοροϊδεύουν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "Οι κόποι — οι προσπάθειες", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "Να μην πληγώσει — να μην στεναχωρέσει", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Πάλεψε — αγωνίστηκε /αντιμετώπισε", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Έρημη — άδεια", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Προπηλακίζεται — χλευάζεται/ την κοροϊδεύουν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "Οι κόποι — οι προσπάθειες", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "Να μην πληγώσει — να μην στεναχωρέσει", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1491,7 +1491,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1504,7 +1504,7 @@ export const CARDS: SecCard[] = [
     questionText: "Να αναφέρετε τα αρνητικά σχόλια που άκουσε η Αντιγόνη στην προσπάθεια της να ακολουθήσει το αθλητικό της όνειρο.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Την κατηγορούσαν ότι είναι μεγάλη σε ηλικία 38 χρονών, ότι δεν είχε αθλητική παιδεία, ότι ξενυχτούσε και δούλευε σε ταβέρνα", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Την κατηγορούσαν ότι είναι μεγάλη σε ηλικία 38 χρονών, ότι δεν είχε αθλητική παιδεία, ότι ξενυχτούσε και δούλευε σε ταβέρνα", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1515,7 +1515,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1528,7 +1528,7 @@ export const CARDS: SecCard[] = [
     questionText: "Ποιες αντικειμενικές δυσκολίες έπρεπε να ξεπεράσουν η Αντιγόνη και ο Γιάννης Αντετοκούμπο;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Οι αθλητές αυτοί είχαν να ξεπεράσουν εμπόδια όπως: την ηλικία, την έλλειψη αθλητικής παιδείας , τη μη συστηματική προπόνηση της, το χρώμα του δέρματος του, τη φτώχεια του , την ευρεία αποδοχή τους από την κοινωνία στην αρχή", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Οι αθλητές αυτοί είχαν να ξεπεράσουν εμπόδια όπως: την ηλικία, την έλλειψη αθλητικής παιδείας , τη μη συστηματική προπόνηση της, το χρώμα του δέρματος του, τη φτώχεια του , την ευρεία αποδοχή τους από την κοινωνία στην αρχή", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1539,7 +1539,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1552,7 +1552,7 @@ export const CARDS: SecCard[] = [
     questionText: "Σύμφωνα με το κείμενο που διαβάσατε ποιο είναι το βασικό νόημα που θέλει ο συγγραφέας ,κατά τη γνώμη σας, να μεταφέρει;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Το βασικό μήνυμα που θέλει ο συγγραφέας να μεταφέρει γίνεται φανερό από την αρχή, από τον τίτλο , όπου αναφέρεται σε 2 αθλητές που δεν είχαν ένα εύκολο και προδιαγεγραμμένο αθλητικό δρόμο, αλλά ανέδειξαν το ταλέντο τους και διακρίθηκαν με πολύ αγώνα και πείσμα", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Το βασικό μήνυμα που θέλει ο συγγραφέας να μεταφέρει γίνεται φανερό από την αρχή, από τον τίτλο , όπου αναφέρεται σε 2 αθλητές που δεν είχαν ένα εύκολο και προδιαγεγραμμένο αθλητικό δρόμο, αλλά ανέδειξαν το ταλέντο τους και διακρίθηκαν με πολύ αγώνα και πείσμα", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1563,7 +1563,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1576,8 +1576,8 @@ export const CARDS: SecCard[] = [
     questionText: "Βασισμένοι στο κείμενο που διαβάσατε αλλά και στις δικές σας εμπειρίες τι επίδραση έχει η νίκη αυτών των αθλητών στη ζωή ενός νέου ανθρώπου;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Είναι οι νέοι άνθρωποι κυρίως αυτοί που έχουν ανάγκη από πρότυπα, από ανθρώπους που θα θαυμάζουνε γιατί πέτυχαν τους στόχους τους", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Είναι οι νέοι άνθρωποι που όταν ξεκινάνε με όνειρα τη ζωή τους, αλλά βλέπουν πολλά εμπόδια στο δρόμο τους, τότε αυτοί οι αθλητές τους με το δικό τους θρίαμβο , τους διδάσκουν ότι όταν οι νέοι έχουν αφοσίωση, αυτοπειθαρχία και είναι συγκεντρωμένοι στο στόχο τους , μπορούν να πετύχουν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Είναι οι νέοι άνθρωποι κυρίως αυτοί που έχουν ανάγκη από πρότυπα, από ανθρώπους που θα θαυμάζουνε γιατί πέτυχαν τους στόχους τους", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Είναι οι νέοι άνθρωποι που όταν ξεκινάνε με όνειρα τη ζωή τους, αλλά βλέπουν πολλά εμπόδια στο δρόμο τους, τότε αυτοί οι αθλητές τους με το δικό τους θρίαμβο , τους διδάσκουν ότι όταν οι νέοι έχουν αφοσίωση, αυτοπειθαρχία και είναι συγκεντρωμένοι στο στόχο τους , μπορούν να πετύχουν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1588,7 +1588,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1601,7 +1601,7 @@ export const CARDS: SecCard[] = [
     questionText: "Γιατί οι αθλητές σε παγκόσμιο επίπεδο εμπνέουν τόσο πολύ τους ανθρώπους;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Γιατί τα αποτελέσματα τους τα βλέπουμε όλοι, μας ενώνουν οι πανηγυρισμοί τους, χαιρόμαστε σαν να είναι δικά μας τα αποτελέσματα τους, και όταν μάθουμε για τη ζωή τους , εμπνεόμαστε από τους αγώνες και τις προσπάθειες τους, την αφοσίωση και τις θυσίες που κάνουν για πολύ μεγάλη χρονική περίοδο, την πειθαρχεία τους στον εαυτό τους και τους προπονητές τους", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Γιατί τα αποτελέσματα τους τα βλέπουμε όλοι, μας ενώνουν οι πανηγυρισμοί τους, χαιρόμαστε σαν να είναι δικά μας τα αποτελέσματα τους, και όταν μάθουμε για τη ζωή τους , εμπνεόμαστε από τους αγώνες και τις προσπάθειες τους, την αφοσίωση και τις θυσίες που κάνουν για πολύ μεγάλη χρονική περίοδο, την πειθαρχεία τους στον εαυτό τους και τους προπονητές τους", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1612,7 +1612,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1625,11 +1625,11 @@ export const CARDS: SecCard[] = [
     questionText: "Εξηγήστε με δικά σας λόγια τη σημασία των παρακάτω φράσεων που είναι γραμμένες με έντονα γράμματα στο δοσμένο κείμενο:",
     tariffModel: {"kind":"orderedSplit","notation":"5 × 1"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "εκτεταμένες — πολύ μεγάλες, διευρυμένες", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "επιπτώσεις — συνέπειες", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "κινητοποίηση — δραστηριοποίηση", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "ψυχαγωγικές δραστηριότητες — διασκεδαστικές απασχολήσεις", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "εντέλει — τελικά", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "εκτεταμένες — πολύ μεγάλες, διευρυμένες", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "επιπτώσεις — συνέπειες", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "κινητοποίηση — δραστηριοποίηση", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "ψυχαγωγικές δραστηριότητες — διασκεδαστικές απασχολήσεις", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "εντέλει — τελικά", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1640,7 +1640,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1653,8 +1653,8 @@ export const CARDS: SecCard[] = [
     questionText: "Ποιες γνωστικές προκαταλήψεις και πλάνες κάνουν τους ανθρώπους επιρρεπείς να εμπλέκονται ασυνείδητα, προκειμένου να μην αντιμετωπίσουν την κλιματική αλλαγή;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Υπάρχουν διάφορα στοιχεία που οδηγούν τους ανθρώπους στο να επιστρατεύσουν ασυνείδητα γνωστικές προκαταλήψεις και πλάνες, όπως ότι πυροδοτεί το συναίσθημα του φόβου και της απειλής, παραπέμπει στην περίπτωση βραχυπρόθεσμης απώλειας του τρόπου ζωής, ότι θα απαιτήσει αλλαγές, κάτι στο οποίο οι περισσότεροι άνθρωποι έχουν μια έμφυτη δυσανεξία", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Τα αποτελέσματα ή οι απειλές δεν είναι εύκολα κατανοητές και οι χειρότεροι κίνδυνοι μοιάζουν αβέβαιοι και πολύ μελλοντικοί, και ένα μεγάλο ποσοστό ανθρώπων αμφισβητούν τη σοβαρότητα, ακόμη και την ύπαρξη της κλιματικής αλλαγής", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Υπάρχουν διάφορα στοιχεία που οδηγούν τους ανθρώπους στο να επιστρατεύσουν ασυνείδητα γνωστικές προκαταλήψεις και πλάνες, όπως ότι πυροδοτεί το συναίσθημα του φόβου και της απειλής, παραπέμπει στην περίπτωση βραχυπρόθεσμης απώλειας του τρόπου ζωής, ότι θα απαιτήσει αλλαγές, κάτι στο οποίο οι περισσότεροι άνθρωποι έχουν μια έμφυτη δυσανεξία", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Τα αποτελέσματα ή οι απειλές δεν είναι εύκολα κατανοητές και οι χειρότεροι κίνδυνοι μοιάζουν αβέβαιοι και πολύ μελλοντικοί, και ένα μεγάλο ποσοστό ανθρώπων αμφισβητούν τη σοβαρότητα, ακόμη και την ύπαρξη της κλιματικής αλλαγής", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1665,7 +1665,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1678,9 +1678,9 @@ export const CARDS: SecCard[] = [
     questionText: "Πόσο σοβαρούς και αξιόλογους θεωρείτε τους λόγους για τους οποίους αδιαφορούν οι περισσότεροι άνθρωποι για την κλιματική αλλαγή;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Οι περισσότεροι άνθρωποι έχουν πολύ πιο άμεσα και επείγοντα ζητήματα στη ζωή τους να ασχοληθούν (προσωπικά προβλήματα & στόχοι, εργασία, οικογένεια) ώστε αυτά να απαιτούν μεγάλο μέρος της ενέργειάς τους", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Αυτό είναι κανόνας στη σημερινή εποχή και εμποδίζει γενικά την κινητοποίηση σε συλλογική δράση για πολλά προβλήματα της κοινωνίας μας και είναι ίσως το μέγιστο εμπόδιο στην περιβαλλοντική ενημερότητα και την αντιμετώπιση της κλιματικής αλλαγής με τη βαρύτητα που της αρμόζει", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Ακούμε και βλέπουμε ειδήσεις και αρχόμενες ενδείξεις κλιματικής αλλαγής και περιβαλλοντικών καταστροφών, αλλά νιώθουμε ότι δεν περνάει από το χέρι μας, ή ότι δε μας αφορά και πολύ", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Οι περισσότεροι άνθρωποι έχουν πολύ πιο άμεσα και επείγοντα ζητήματα στη ζωή τους να ασχοληθούν (προσωπικά προβλήματα & στόχοι, εργασία, οικογένεια) ώστε αυτά να απαιτούν μεγάλο μέρος της ενέργειάς τους", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Αυτό είναι κανόνας στη σημερινή εποχή και εμποδίζει γενικά την κινητοποίηση σε συλλογική δράση για πολλά προβλήματα της κοινωνίας μας και είναι ίσως το μέγιστο εμπόδιο στην περιβαλλοντική ενημερότητα και την αντιμετώπιση της κλιματικής αλλαγής με τη βαρύτητα που της αρμόζει", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Ακούμε και βλέπουμε ειδήσεις και αρχόμενες ενδείξεις κλιματικής αλλαγής και περιβαλλοντικών καταστροφών, αλλά νιώθουμε ότι δεν περνάει από το χέρι μας, ή ότι δε μας αφορά και πολύ", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1691,7 +1691,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1704,9 +1704,9 @@ export const CARDS: SecCard[] = [
     questionText: "Σύμφωνα με το κείμενο που διαβάσατε και δίνοντας τη δική σας άποψη τί προκαλεί την κλιματική αδράνεια;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Παρόλο που σχεδόν όλοι γνωρίζουν τις πάμπολλες συνέπειες της κλιματικής αλλαγής και της καταστροφής του περιβάλλοντος, συχνά θέλουν να αποφύγουν να ασχοληθούν σοβαρά με το θέμα της κλιματικής αλλαγής, καθώς μπορεί να φαίνεται πολύ αρνητικό ή μακρινό, ή ως ένα θέμα χωρίς εφαρμόσιμες λύσεις Μια σειρά από σχετικούς μηχανισμούς σκέψης επηρεάζουν την αντίληψη και τη συμπεριφορά μας ως προς την κλιματική αλλαγή", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Αυτοί αλλά και άλλες γνωστικές προκαταλήψεις μπορούν να αλληλοεπιδράσουν μεταξύ τους και να δημιουργήσουν περίπλοκα ψυχολογικά εμπόδια στη δράση για το κλίμα", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Η κατανόηση τους μπορεί να βοηθήσει τα άτομα και τις κοινωνίες να τις ξεπεράσουν και να λάβουν πιο αποτελεσματική δράση για την αντιμετώπιση της κλιματικής αλλαγής", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Παρόλο που σχεδόν όλοι γνωρίζουν τις πάμπολλες συνέπειες της κλιματικής αλλαγής και της καταστροφής του περιβάλλοντος, συχνά θέλουν να αποφύγουν να ασχοληθούν σοβαρά με το θέμα της κλιματικής αλλαγής, καθώς μπορεί να φαίνεται πολύ αρνητικό ή μακρινό, ή ως ένα θέμα χωρίς εφαρμόσιμες λύσεις Μια σειρά από σχετικούς μηχανισμούς σκέψης επηρεάζουν την αντίληψη και τη συμπεριφορά μας ως προς την κλιματική αλλαγή", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Αυτοί αλλά και άλλες γνωστικές προκαταλήψεις μπορούν να αλληλοεπιδράσουν μεταξύ τους και να δημιουργήσουν περίπλοκα ψυχολογικά εμπόδια στη δράση για το κλίμα", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Η κατανόηση τους μπορεί να βοηθήσει τα άτομα και τις κοινωνίες να τις ξεπεράσουν και να λάβουν πιο αποτελεσματική δράση για την αντιμετώπιση της κλιματικής αλλαγής", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1717,7 +1717,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1730,7 +1730,7 @@ export const CARDS: SecCard[] = [
     questionText: "Από την ανάγνωση του κειμένου και δίνοντας τη δική σας άποψη πόσο σημαντική είναι η Ψυχική ανθεκτικότητα για τους ανθρώπους στη σημερινή εποχή;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Η ψυχική ανθεκτικότητα είναι απαραίτητο χαρακτηριστικό για τους ανθρώπους στη σημερινή εποχή, η οποία πέραν της κλιματικής κρίσης δε στερείται καθόλου σοβαρών προκλήσεων για το μεγαλύτερο μέρος του παγκόσμιου πληθυσμού όπως: η πρόσφατη πανδημία, οικονομική αστάθεια και αύξηση οικονομικών ανισοτήτων, αβεβαιότητα, μοναξιά, αύξηση ψυχικών διαταραχών, αλλά και διαφόρων προβλημάτων υγείας, όπως π.χ. η παχυσαρκία και οι εθισμοί", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Η ψυχική ανθεκτικότητα είναι απαραίτητο χαρακτηριστικό για τους ανθρώπους στη σημερινή εποχή, η οποία πέραν της κλιματικής κρίσης δε στερείται καθόλου σοβαρών προκλήσεων για το μεγαλύτερο μέρος του παγκόσμιου πληθυσμού όπως: η πρόσφατη πανδημία, οικονομική αστάθεια και αύξηση οικονομικών ανισοτήτων, αβεβαιότητα, μοναξιά, αύξηση ψυχικών διαταραχών, αλλά και διαφόρων προβλημάτων υγείας, όπως π.χ. η παχυσαρκία και οι εθισμοί", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1741,7 +1741,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1754,12 +1754,12 @@ export const CARDS: SecCard[] = [
     questionText: "Έχοντας διαβάσει το άρθρο, πόσο πιθανό πιστεύετε ότι η κλιματική αλλαγή μπορεί να συμβάλει στην ανάπτυξη και τη στάση του ατόμου;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Η ενασχόληση με την προστασία του περιβάλλοντος και την κλιματική αλλαγή θα μπορούσε να είναι μια διαδικασία που να δίνει νόημα", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Είναι μια ευκαιρία να είναι ενεργοί οι άνθρωποι και να έρχονται σε περισσότερη επαφή με συνανθρώπους τους", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Αυτό έχει αποδεδειγμένο όφελος για τα άτομα", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "Ταυτόχρονα μπορούμε να μάθουμε να περνάμε περισσότερο χρόνο κοντά στη φύση σε διάφορες ψυχαγωγικές δραστηριότητες", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "Η επαφή με τη φύση είναι γνωστό ότι έχει ανυπολόγιστα οφέλη για τον άνθρωπο", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-6", kind: "point", verbatim: "Η συμμετοχή σε ομάδες, η από κοινού δράση για το κοινό όφελος, η δημιουργία υποστηρικτικών δικτύων στις κοινότητες αποτελούν αναγνωρισμένες συμπεριφορές μείωσης της απομόνωσης, ανάπτυξης της αίσθησης σκοπού και ανήκειν, υποστήριξης της συνολικής υγείας των ατόμων και εντέλει προαγωγής της ποιότητας ζωής", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Η ενασχόληση με την προστασία του περιβάλλοντος και την κλιματική αλλαγή θα μπορούσε να είναι μια διαδικασία που να δίνει νόημα", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Είναι μια ευκαιρία να είναι ενεργοί οι άνθρωποι και να έρχονται σε περισσότερη επαφή με συνανθρώπους τους", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Αυτό έχει αποδεδειγμένο όφελος για τα άτομα", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "Ταυτόχρονα μπορούμε να μάθουμε να περνάμε περισσότερο χρόνο κοντά στη φύση σε διάφορες ψυχαγωγικές δραστηριότητες", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "Η επαφή με τη φύση είναι γνωστό ότι έχει ανυπολόγιστα οφέλη για τον άνθρωπο", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-6", kind: "point", verbatim: "Η συμμετοχή σε ομάδες, η από κοινού δράση για το κοινό όφελος, η δημιουργία υποστηρικτικών δικτύων στις κοινότητες αποτελούν αναγνωρισμένες συμπεριφορές μείωσης της απομόνωσης, ανάπτυξης της αίσθησης σκοπού και ανήκειν, υποστήριξης της συνολικής υγείας των ατόμων και εντέλει προαγωγής της ποιότητας ζωής", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1770,7 +1770,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1783,11 +1783,11 @@ export const CARDS: SecCard[] = [
     questionText: "Εξηγήστε με δικά σας λόγια τη σημασία των παρακάτω φράσεων που είναι γραμμένες με έντονα γράμματα στο δοσμένο κείμενο:",
     tariffModel: {"kind":"orderedSplit","notation":"5 × 1"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "είναι προσανατολισμένο — είναι εστιασμένο/επικεντρωμένο", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "να συνειδητοποιήσουν — να κατανοήσουν/να αντιληφθούν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "σχεδιάστηκαν — οργανώθηκαν/δημιουργήθηκαν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "είναι μη αποδοτικές — είναι αναποτελεσματικές/ ανεπαρκείς", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "θα έκαναν την εμπειρία — θα βελτίωναν /εμπλούτιζαν τη γνώση", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "είναι προσανατολισμένο — είναι εστιασμένο/επικεντρωμένο", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "να συνειδητοποιήσουν — να κατανοήσουν/να αντιληφθούν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "σχεδιάστηκαν — οργανώθηκαν/δημιουργήθηκαν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "είναι μη αποδοτικές — είναι αναποτελεσματικές/ ανεπαρκείς", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "θα έκαναν την εμπειρία — θα βελτίωναν /εμπλούτιζαν τη γνώση", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1798,7 +1798,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1811,8 +1811,8 @@ export const CARDS: SecCard[] = [
     questionText: "Ποια ιδιαίτερα χαρακτηριστικά παρουσιάζει το σχολείο στη Σύμη;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Για παράδειγμα: Το σχολείο αυτό βρίσκεται σε ένα μικρό νησί μακριά από την Αθήνα, σε ένα μικρό περιβάλλον χωρίς άλλα εκπαιδευτικά ιδρύματα γύρω του, οι μαθητές και οι μαθήτριες αισθάνονται ότι αυτό τούς δυσκολεύει να συνειδητοποιήσουν τι τους ενοχλεί στο εκπαιδευτικό σύστημα και πώς θα μπορούσε να διορθωθεί", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Αυτή η απομόνωση τους είναι ένας βασικός λόγος που το σχολείο αυτό κάνει μια τεράστια προσπάθεια ανοίγματος προς την Ευρώπη μέσα από διάφορα προγράμματα", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Για παράδειγμα: Το σχολείο αυτό βρίσκεται σε ένα μικρό νησί μακριά από την Αθήνα, σε ένα μικρό περιβάλλον χωρίς άλλα εκπαιδευτικά ιδρύματα γύρω του, οι μαθητές και οι μαθήτριες αισθάνονται ότι αυτό τούς δυσκολεύει να συνειδητοποιήσουν τι τους ενοχλεί στο εκπαιδευτικό σύστημα και πώς θα μπορούσε να διορθωθεί", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Αυτή η απομόνωση τους είναι ένας βασικός λόγος που το σχολείο αυτό κάνει μια τεράστια προσπάθεια ανοίγματος προς την Ευρώπη μέσα από διάφορα προγράμματα", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1823,7 +1823,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1836,12 +1836,12 @@ export const CARDS: SecCard[] = [
     questionText: "Να αναφέρετε δύο προβληματισμούς σχετικά με την εκπαίδευση που εκφράστηκαν από τους μαθητές στο σχολείο της Σύμης. Συμμερίζεστε αυτούς τους προβληματισμούς; Να εξηγήσετε την άποψη σας.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Για παράδειγμα: Δύο ενδεικτικοί προβληματισμοί σχετικά με την εκπαίδευση: Οι μαθητές του σχολείου στη Σύμη εξέφρασαν τους εξής προβληματισμούς: Το σχολείο είναι πολύ θεωρητικό και δεν προσφέρει αρκετές πρακτικές γνώσεις που θα είναι χρήσιμες στην καθημερινή ζωή", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Για παράδειγμα, ανέφεραν ότι δεν μαθαίνουν βασικά πράγματα, όπως τι είναι οι φόροι, παρόλο που σε λίγο θα ψηφίζουν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Οι γνώμες των μαθητών δεν λαμβάνονται υπόψη από τους ενήλικες, οι οποίοι τις θεωρούν παιδιάστικες ή ανώριμες", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "Συμμερίζομαι αυτούς τους προβληματισμούς γιατί πολλές φορές το σχολείο επικεντρώνεται στην αποστήθιση και όχι στην ουσιαστική μάθηση", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "Θα έπρεπε να διδάσκονται περισσότερες πρακτικές δεξιότητες που αφορούν την καθημερινή ζωή", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-6", kind: "point", verbatim: "Επίσης, η γνώμη των μαθητών είναι σημαντική, καθώς βιώνουν από πρώτο χέρι τα προβλήματα του εκπαιδευτικού συστήματος", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Για παράδειγμα: Δύο ενδεικτικοί προβληματισμοί σχετικά με την εκπαίδευση: Οι μαθητές του σχολείου στη Σύμη εξέφρασαν τους εξής προβληματισμούς: Το σχολείο είναι πολύ θεωρητικό και δεν προσφέρει αρκετές πρακτικές γνώσεις που θα είναι χρήσιμες στην καθημερινή ζωή", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Για παράδειγμα, ανέφεραν ότι δεν μαθαίνουν βασικά πράγματα, όπως τι είναι οι φόροι, παρόλο που σε λίγο θα ψηφίζουν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Οι γνώμες των μαθητών δεν λαμβάνονται υπόψη από τους ενήλικες, οι οποίοι τις θεωρούν παιδιάστικες ή ανώριμες", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "Συμμερίζομαι αυτούς τους προβληματισμούς γιατί πολλές φορές το σχολείο επικεντρώνεται στην αποστήθιση και όχι στην ουσιαστική μάθηση", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "Θα έπρεπε να διδάσκονται περισσότερες πρακτικές δεξιότητες που αφορούν την καθημερινή ζωή", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-6", kind: "point", verbatim: "Επίσης, η γνώμη των μαθητών είναι σημαντική, καθώς βιώνουν από πρώτο χέρι τα προβλήματα του εκπαιδευτικού συστήματος", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1852,7 +1852,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1865,10 +1865,10 @@ export const CARDS: SecCard[] = [
     questionText: "Βασισμένοι στη συνέντευξη που διαβάσατε αλλά και από τη δική σας εμπειρία τι κάνει ένα μάθημα ελκυστικό αλλά και αποδοτικό;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Για παράδειγμα: Ένα μάθημα γίνεται πιο ελκυστικό και αποδοτικό όταν: Ο/η καθηγητής/καθηγήτρια χρησιμοποιεί διαδραστικές μεθόδους, όπως θεατρικές δραστηριότητες ή πειράματα, όπως ανέφεραν οι μαθητές της Σύμης", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Υπάρχει πρακτική εφαρμογή της θεωρίας, για να μπορεί ο μαθητής να κατανοήσει πώς συνδέεται η γνώση με την πραγματική ζωή", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Χρησιμοποιούνται εποπτικά μέσα (π.χ. βίντεο, προτζέκτορες, tablets), αλλά χωρίς υπερβολές που θα μπορούσαν να αποσπάσουν την προσοχή", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "Γίνεται διάλογος στην τάξη και οι μαθητές συμμετέχουν ενεργά στη διαδικασία της μάθησης", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Για παράδειγμα: Ένα μάθημα γίνεται πιο ελκυστικό και αποδοτικό όταν: Ο/η καθηγητής/καθηγήτρια χρησιμοποιεί διαδραστικές μεθόδους, όπως θεατρικές δραστηριότητες ή πειράματα, όπως ανέφεραν οι μαθητές της Σύμης", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Υπάρχει πρακτική εφαρμογή της θεωρίας, για να μπορεί ο μαθητής να κατανοήσει πώς συνδέεται η γνώση με την πραγματική ζωή", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Χρησιμοποιούνται εποπτικά μέσα (π.χ. βίντεο, προτζέκτορες, tablets), αλλά χωρίς υπερβολές που θα μπορούσαν να αποσπάσουν την προσοχή", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "Γίνεται διάλογος στην τάξη και οι μαθητές συμμετέχουν ενεργά στη διαδικασία της μάθησης", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1879,7 +1879,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1892,9 +1892,9 @@ export const CARDS: SecCard[] = [
     questionText: "Βασισμένοι στη συνέντευξη που διαβάσατε αλλά και από τη δική σας εμπειρία θα ωφελούσε την εκπαιδευτική διαδικασία η παρουσία μαθητών στα κέντρα λήψης αποφάσεων;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Για παράδειγμα: Ναι, θα ήταν πολύ ωφέλιμο να υπάρχει η φωνή των μαθητών στα κέντρα λήψης αποφάσεων της εκπαίδευσης", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Οι μαθητές βιώνουν άμεσα τα θετικά και τα αρνητικά του σχολικού συστήματος, οπότε μπορούν να προσφέρουν πολύτιμες προτάσεις βελτίωσης", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Εάν οι αρμόδιοι ακούσουν τους μαθητές, θα μπορούσαν να δημιουργήσουν ένα εκπαιδευτικό σύστημα πιο προσαρμοσμένο στις πραγματικές τους ανάγκες", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Για παράδειγμα: Ναι, θα ήταν πολύ ωφέλιμο να υπάρχει η φωνή των μαθητών στα κέντρα λήψης αποφάσεων της εκπαίδευσης", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Οι μαθητές βιώνουν άμεσα τα θετικά και τα αρνητικά του σχολικού συστήματος, οπότε μπορούν να προσφέρουν πολύτιμες προτάσεις βελτίωσης", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Εάν οι αρμόδιοι ακούσουν τους μαθητές, θα μπορούσαν να δημιουργήσουν ένα εκπαιδευτικό σύστημα πιο προσαρμοσμένο στις πραγματικές τους ανάγκες", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1905,7 +1905,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1918,10 +1918,10 @@ export const CARDS: SecCard[] = [
     questionText: "Σχετικά με το νόημα των εξετάσεων συμφωνείτε περισσότερο με την άποψη της Μιχαέλας ή του Αγκίμ;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Για παράδειγμα: 1η Ενδεικτική επιλογή: Συμφωνώ περισσότερο με τον Αγκίμ, γιατί πολλές φορές οι εξετάσεις λειτουργούν μηχανικά", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Οι μαθητές διαβάζουν πολύ για να περάσουν, αλλά μετά ξεχνούν τα περισσότερα, ειδικά αν το μάθημα δεν τους ενδιαφέρει", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Η εκπαίδευση δεν πρέπει να βασίζεται μόνο σε εξετάσεις αλλά σε πιο ουσιαστικούς τρόπους μάθησης, όπως η πρακτική εφαρμογή της γνώσης και οι διαδραστικές δραστηριότητες. 2η Ενδεικτική επιλογή: Συμφωνώ περισσότερο με την Μιχαέλα, γιατί οι εξετάσεις είναι μια επανάληψη του μαθήματος που έκαναν οι μαθητές/τριες όλη τη χρονιά και αυτό βοηθάει", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "Άρα οι εξετάσεις είναι ένα χρήσιμο εργαλείο για να θυμούνται αυτά που έμαθαν την περασμένη χρονιά", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Για παράδειγμα: 1η Ενδεικτική επιλογή: Συμφωνώ περισσότερο με τον Αγκίμ, γιατί πολλές φορές οι εξετάσεις λειτουργούν μηχανικά", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Οι μαθητές διαβάζουν πολύ για να περάσουν, αλλά μετά ξεχνούν τα περισσότερα, ειδικά αν το μάθημα δεν τους ενδιαφέρει", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Η εκπαίδευση δεν πρέπει να βασίζεται μόνο σε εξετάσεις αλλά σε πιο ουσιαστικούς τρόπους μάθησης, όπως η πρακτική εφαρμογή της γνώσης και οι διαδραστικές δραστηριότητες. 2η Ενδεικτική επιλογή: Συμφωνώ περισσότερο με την Μιχαέλα, γιατί οι εξετάσεις είναι μια επανάληψη του μαθήματος που έκαναν οι μαθητές/τριες όλη τη χρονιά και αυτό βοηθάει", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "Άρα οι εξετάσεις είναι ένα χρήσιμο εργαλείο για να θυμούνται αυτά που έμαθαν την περασμένη χρονιά", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1932,7 +1932,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1945,11 +1945,11 @@ export const CARDS: SecCard[] = [
     questionText: "Εξηγήστε με δικά σας λόγια τη σημασία των παρακάτω φράσεων που είναι γραμμένες με έντονα γράμματα στο δοσμένο κείμενο:",
     tariffModel: {"kind":"orderedSplit","notation":"5 × 1"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Συνοδεύονται — ακολουθούνται", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Πληροφορούν — ενημερώνουν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Επίκειται — αναμένεται/περιμένουμε", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "Διανοητές — μορφωμένοι/λόγιοι", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-5", kind: "point", verbatim: "με παρεμφερείς τρόπους — με παρόμοιους τρόπους (5X1)", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Συνοδεύονται — ακολουθούνται", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Πληροφορούν — ενημερώνουν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Επίκειται — αναμένεται/περιμένουμε", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "Διανοητές — μορφωμένοι/λόγιοι", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-5", kind: "point", verbatim: "με παρεμφερείς τρόπους — με παρόμοιους τρόπους (5X1)", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1960,7 +1960,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1973,7 +1973,7 @@ export const CARDS: SecCard[] = [
     questionText: "Τι εννοεί ο αρθρογράφος με τον όρο δοξοθυμία;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Όταν οι σχηματιζόμενες απόψεις συνοδεύονται και από κάποιο συναίσθημα, τότε η εντύπωση και το συναίσθημα μαζί ονομάζεται «δοξοθυμία»", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Όταν οι σχηματιζόμενες απόψεις συνοδεύονται και από κάποιο συναίσθημα, τότε η εντύπωση και το συναίσθημα μαζί ονομάζεται «δοξοθυμία»", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1984,7 +1984,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -1997,8 +1997,8 @@ export const CARDS: SecCard[] = [
     questionText: "Τι κατά κύριο λόγο χρησιμοποιούν στις καμπάνιες τους οι επικοινωνιολόγοι και ποια η άποψη του αρθρογράφου για αυτό;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Οι επικοινωνιολόγοι που συμβουλεύουν τους πολιτικούς για το πώς θα ψηφιστούν, και τους διαφημιστές προϊόντων πως θα κερδίσουν περισσότερους πελάτες γνωρίζουν τη δύναμη της πρώτης εντύπωσης γνωρίζουν τη δύναμη των συναισθημάτων και γι’ αυτόν τον λόγο προτιμούν τις «άσχετες» εικόνες, τις «έξυπνες» ατάκες και τους «εντυπωσιασμούς» από την άρθρωση επιχειρημάτων", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Ο αρθρογράφος με την άποψη: Τα επιχειρήματα θα έπρεπε να ήταν τα μόνα εργαλεία πειθούς, αν οι άνθρωποι είμασταν όντα στα οποία κυριαρχεί ο ορθός λόγος κι όχι όντα εντυπώσεων, φανερώνει τη δική του κριτική απόσταση από αυτό που χρησιμοποιούν οι επικοινωνιολόγοι", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Οι επικοινωνιολόγοι που συμβουλεύουν τους πολιτικούς για το πώς θα ψηφιστούν, και τους διαφημιστές προϊόντων πως θα κερδίσουν περισσότερους πελάτες γνωρίζουν τη δύναμη της πρώτης εντύπωσης γνωρίζουν τη δύναμη των συναισθημάτων και γι’ αυτόν τον λόγο προτιμούν τις «άσχετες» εικόνες, τις «έξυπνες» ατάκες και τους «εντυπωσιασμούς» από την άρθρωση επιχειρημάτων", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Ο αρθρογράφος με την άποψη: Τα επιχειρήματα θα έπρεπε να ήταν τα μόνα εργαλεία πειθούς, αν οι άνθρωποι είμασταν όντα στα οποία κυριαρχεί ο ορθός λόγος κι όχι όντα εντυπώσεων, φανερώνει τη δική του κριτική απόσταση από αυτό που χρησιμοποιούν οι επικοινωνιολόγοι", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2009,7 +2009,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -2022,8 +2022,8 @@ export const CARDS: SecCard[] = [
     questionText: "Πώς μπορούν να επιδράσουν οι εντυπώσεις στη λειτουργία της κοινωνίας;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Οι εντυπώσεων που δημιουργούνται μπορούν να κυριαρχήσουν στο μυαλό και να κάνουν τόσο σε ατομικό όσο και σε συλλογικό επίπεδο", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Είναι αμέτρητες οι φορές που παρεξηγούμε άλλους ανθρώπους, που εκτιμούμε λανθασμένα, που χαρακτηρίζουμε τελεσίδικα, αδικούμε, ομαδοποιούμαστε, ψηφίζουμε ή αγοράζουμε με βάση τυχάρπαστες εντυπώσεις", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Οι εντυπώσεων που δημιουργούνται μπορούν να κυριαρχήσουν στο μυαλό και να κάνουν τόσο σε ατομικό όσο και σε συλλογικό επίπεδο", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Είναι αμέτρητες οι φορές που παρεξηγούμε άλλους ανθρώπους, που εκτιμούμε λανθασμένα, που χαρακτηρίζουμε τελεσίδικα, αδικούμε, ομαδοποιούμαστε, ψηφίζουμε ή αγοράζουμε με βάση τυχάρπαστες εντυπώσεις", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2034,7 +2034,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -2047,8 +2047,8 @@ export const CARDS: SecCard[] = [
     questionText: "Σύμφωνα με τα παραδείγματα που παραθέτει ο αρθρογράφος ,αλλά και από τη δική σας εμπειρία πώς δημιουργούνται οι εσφαλμένες εντυπώσεις;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Οι εσφαλμένες εντυπώσεις δημιουργούνται άλλοτε από την πρώτη θετική εικόνα που βλέπει κάποιος ακόμα και αν γνωρίζει ότι αυτή δεν ανταποκρίνεται στην πραγματικότητα, γιατί εύκολα υιοθετείται η εντύπωση που προβάλλεται, ακόμα κι αν είναι προφανές ότι δεν είναι ακριβής", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Παράλληλα είναι γνωστό πως οι ανθρώπινες αισθήσεις μας δεν μας πληροφορούν με ακρίβεια για το πώς είναι ο κόσμος, αλλά ότι αντιλαμβανόμαστε ένα πολύ μικρό μέρος από όσα πραγματικά υπάρχουν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Οι εσφαλμένες εντυπώσεις δημιουργούνται άλλοτε από την πρώτη θετική εικόνα που βλέπει κάποιος ακόμα και αν γνωρίζει ότι αυτή δεν ανταποκρίνεται στην πραγματικότητα, γιατί εύκολα υιοθετείται η εντύπωση που προβάλλεται, ακόμα κι αν είναι προφανές ότι δεν είναι ακριβής", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Παράλληλα είναι γνωστό πως οι ανθρώπινες αισθήσεις μας δεν μας πληροφορούν με ακρίβεια για το πώς είναι ο κόσμος, αλλά ότι αντιλαμβανόμαστε ένα πολύ μικρό μέρος από όσα πραγματικά υπάρχουν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2059,7 +2059,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
   {
@@ -2072,10 +2072,10 @@ export const CARDS: SecCard[] = [
     questionText: "Συμφωνείτε με την άποψη του αρθρογράφου ότι είναι προτιμότερο το να αισιοδοξεί κάποιος , από το να υποφέρει από καταστροφικές εντυπώσεις;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Δεν είναι μόνο ο αρθρογράφος που υποστηρίζει ότι το να αισιοδοξεί κανείς είναι πολύ προτιμότερο από το να υποφέρει από καταστροφικές εντυπώσεις", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-2", kind: "point", verbatim: "Επίσης έρευνες δείχνουν το ίδιο ακριβώς καθώς και ότι η υπερβολική αισιοδοξία ίσως μας οδηγήσει στο να μην πάρουμε κατάλληλα μέτρα για προβλήματα υγείας ή τα οποιαδήποτε μέτρα ασφαλείας για την εκάστοτε δραστηριότητα, με ολέθριες κάποιες φορές συνέπειες", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-3", kind: "point", verbatim: "Οπωσδήποτε, το κακό της αισιοδοξίας θα φανεί μόνο αν τα πράγματα στραβώσουν", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
-    { id: "r-4", kind: "point", verbatim: "Το κακό όμως από τη βίωση αρνητικών δοξοθυμιών εισπράττεται εδώ και τώρα, ακόμα και αν η έκβαση δεν είναι καθόλου κακή στο μέλλον", marks: null, contextNote: "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Δεν είναι μόνο ο αρθρογράφος που υποστηρίζει ότι το να αισιοδοξεί κανείς είναι πολύ προτιμότερο από το να υποφέρει από καταστροφικές εντυπώσεις", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Επίσης έρευνες δείχνουν το ίδιο ακριβώς καθώς και ότι η υπερβολική αισιοδοξία ίσως μας οδηγήσει στο να μην πάρουμε κατάλληλα μέτρα για προβλήματα υγείας ή τα οποιαδήποτε μέτρα ασφαλείας για την εκάστοτε δραστηριότητα, με ολέθριες κάποιες φορές συνέπειες", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-3", kind: "point", verbatim: "Οπωσδήποτε, το κακό της αισιοδοξίας θα φανεί μόνο αν τα πράγματα στραβώσουν", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-4", kind: "point", verbatim: "Το κακό όμως από τη βίωση αρνητικών δοξοθυμιών εισπράττεται εδώ και τώρα, ακόμα και αν η έκβαση δεν είναι καθόλου κακή στο μέλλον", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2086,7 +2086,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Modern Greek 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the article exactly as the examination printed it, then answer. The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+          "presentationNote": "Read the article exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
     },
   } as SecCard,
 ];

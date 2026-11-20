@@ -58,13 +58,16 @@ def _prove(before, after, mask):
 def note(subject):
     cards, added = _live(subject)
     before = json.loads(json.dumps(cards))
-    old = language_note(subject, LANGUAGE_NAME[subject])
+    old = language_note(subject, LANGUAGE_NAME[subject]) if subject in LANGUAGE_NAME else None
     # The live note as the deck carries it, where another generator wrote it
     # (Ukrainian: the same "on its own first page" sentence, a subject eu_topics
     # does not list in ONE_LANGUAGE): read off the cards themselves.
+    # (Modern Greek: its walker's own sentence, "The paper states that answers are to be given in Modern
+    # Greek: "...""), one sitting's rule quoted for every sitting and no page.)
     found = {m.group(0) for c in cards if c['id'] not in added for r in c['rows']
              for m in [re.search(r'The examination requires every answer in [A-Z]+\. The paper prints the rule '
-                                 r'on its own first page: "[^"]*"', r.get('contextNote') or '')] if m}
+                                 r'on its own first page: "[^"]*"|The paper states that answers are to be given '
+                                 r'in [A-Z][a-z]+(?: [A-Z][a-z]+)?: "[^"]*"', r.get('contextNote') or '')] if m}
     if len(found) == 1 and old not in found:
         old = next(iter(found))
     docs, changed = {}, []
