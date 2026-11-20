@@ -2855,7 +2855,7 @@ export const CARDS: SecCard[] = [
     questionText: "Εξηγήστε με δικά σας λόγια τη σημασία των παρακάτω φράσεων που είναι γραμμένες με έντονα γράμματα στο δοσμένο κείμενο:\na) είναι προσανατολισμένο\nb) να συνειδητοποιήσουν\nc) σχεδιάστηκαν\nd) είναι μη αποδοτικές\ne) θα έκαναν την εμπειρία",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "είναι εστιασμένο/επικεντρωμένο", marks: 1, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "είναι εστιασμένο/επικεντρωμένο", marks: 1, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\" The scheme heads its answer “Για παράδειγμα:”: what it gives is an example, not a required list." },
     { id: "r-2", kind: "point", verbatim: "να κατανοήσουν/να αντιληφθούν", marks: 1 },
     { id: "r-3", kind: "point", verbatim: "οργανώθηκαν/δημιουργήθηκαν", marks: 1 },
     { id: "r-4", kind: "point", verbatim: "είναι αναποτελεσματικές/ ανεπαρκείς", marks: 1 },
@@ -2907,7 +2907,7 @@ export const CARDS: SecCard[] = [
     questionText: "Να αναφέρετε δύο προβληματισμούς σχετικά με την εκπαίδευση που εκφράστηκαν από τους μαθητές στο σχολείο της Σύμης. Συμμερίζεστε αυτούς τους προβληματισμούς; Να εξηγήσετε την άποψη σας.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Οι μαθητές του σχολείου στη Σύμη εξέφρασαν τους εξής προβληματισμούς:", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-1", kind: "point", verbatim: "Οι μαθητές του σχολείου στη Σύμη εξέφρασαν τους εξής προβληματισμούς:", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 4: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\" The scheme heads its answer “Για παράδειγμα:” and “Δύο ενδεικτικοί προβληματισμοί σχετικά με την εκπαίδευση:”: what it gives is an example, not a required list." },
     { id: "r-2", kind: "point", verbatim: "Το σχολείο είναι πολύ θεωρητικό και δεν προσφέρει αρκετές πρακτικές γνώσεις που θα είναι χρήσιμες στην καθημερινή ζωή. Για παράδειγμα, ανέφεραν ότι δεν μαθαίνουν βασικά πράγματα, όπως τι είναι οι φόροι, παρόλο που σε λίγο θα ψηφίζουν.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Οι γνώμες των μαθητών δεν λαμβάνονται υπόψη από τους ενήλικες, οι οποίοι τις θεωρούν παιδιάστικες ή ανώριμες.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Συμμερίζομαι αυτούς τους προβληματισμούς γιατί πολλές φορές το σχολείο επικεντρώνεται στην αποστήθιση και όχι στην ουσιαστική μάθηση. Θα έπρεπε να διδάσκονται περισσότερες πρακτικές δεξιότητες που αφορούν την καθημερινή ζωή. Επίσης, η γνώμη των μαθητών είναι σημαντική, καθώς βιώνουν από πρώτο χέρι τα προβλήματα του εκπαιδευτικού συστήματος.", marks: null },

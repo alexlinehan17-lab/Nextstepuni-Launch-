@@ -199,7 +199,7 @@
   },
   "croatian": {
     "cards": 151,
-    "contentHash": "a0dbbd1590e86172",
+    "contentHash": "9bd5fde5fea1c13a",
     "coveragePct": 100.0,
     "covered": 167,
     "excluded": 0,
@@ -589,7 +589,7 @@
   },
   "modern-greek": {
     "cards": 142,
-    "contentHash": "a1f71f9f99a5be9f",
+    "contentHash": "38006a7dd447e722",
     "coveragePct": 100.0,
     "covered": 142,
     "excluded": 0,
@@ -754,7 +754,7 @@
   },
   "slovenian": {
     "cards": 60,
-    "contentHash": "07fbdb034125103f",
+    "contentHash": "57e2d74e8d774ace",
     "coveragePct": 100.0,
     "covered": 64,
     "excluded": 0,
@@ -814,7 +814,7 @@
   },
   "ukrainian": {
     "cards": 26,
-    "contentHash": "1a5c1e68447923bf",
+    "contentHash": "665bbb1ea3a19cd8",
     "coveragePct": 100.0,
     "covered": 26,
     "excluded": 0,
