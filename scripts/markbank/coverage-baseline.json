@@ -228,11 +228,11 @@
     "refsHash": "223459d1ccf6fd01"
   },
   "danish": {
-    "cards": 91,
-    "contentHash": "5004d81cb9c75742",
+    "cards": 94,
+    "contentHash": "24d2bf7a1e589800",
     "coveragePct": 100.0,
-    "covered": 91,
-    "excluded": 34,
+    "covered": 94,
+    "excluded": 31,
     "leaves": 125,
     "open": 0,
     "orphans": 0,
@@ -240,7 +240,7 @@
       "count": 13,
       "hash": "d51ea34693abb0f0"
     },
-    "refsHash": "21e74859352d94aa"
+    "refsHash": "ece966397180f816"
   },
   "dcg": {
     "cards": 1284,
