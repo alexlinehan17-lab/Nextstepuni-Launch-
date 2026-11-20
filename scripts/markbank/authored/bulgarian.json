@@ -2609,6 +2609,277 @@
   }
  },
  {
+  "id": "bul-2016-hl-ii-1",
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "year": 2016,
+  "section": "II",
+  "topicId": "bulgarian-1-0",
+  "conceptId": "google-100",
+  "questionRef": "2016 HL Section II Q1",
+  "questionText": "„Проблемът на света, крепен от Google, не е, че няма реалност. Разбира се, че такава реалност има. Проблемът не е и в това защо в дадени моменти излизат едни, а не други препратки. Проблемът е дали става дума за свобода (произвол) или пък има опит за целенасочена подредба (политически контекст). Докато интернет-светът е лотария, това гарантира на питащия човек максимална свобода. Другата хипотеза е стряскаща, тъй като е лесно представимо как глобалната мрежа може да стане подвластна на тоталитарна политика. И тогава питащият човек, както е при идеологиите, ще разполага дори с повече отговори, отколкото са му необходими. Без те изобщо да се покриват с неговите истински въпроси.” Споделяте ли страховете на автора? Обяснете защо. (около 100 думи)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Лична интерпретация, ясни и непротиворечиви идеи.",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Яснота и точност на израза – кандидатът разбира добре въпросите и знае как да отговори ясно и точно – 30% ;",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Свързаност и непротиворечивост на отговорите – кандидатът използва откъси от текста, които са адекватни на мисълта му, идеите му са непротиворечиви и композицията на съчинението следва определена логика – 30% ;",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Езикова компетентност – кандидатът умее свободно да изразява идеите си, езикът на изказването му е ясен и точен – 30% ;",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Конвенционални умения – кандидатът владее и прилага граматичната норма и правописа на съвременния български книжовен език – 10%.",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" The scheme prints: “При оценяването на отговорите от първите две части се прилагат следните критерии:”. Under the scheme's heading “Различни възможности за отговор:”, as examples, not a checklist: “Кандидатът би могъл да даде примери, за да подкрепи авторовата теза или да се позове на собствения си опит и опровергае страховете на автора, да говори и за това, че класическият познавателен опит би могъл да „овладее” практиките на новите информационни системи като Google... а защо не и да изрази аргументирано мнение за това, че на практика е невъзможно Google да подрежда „целенасочено”, че произволът е алгоритмично заложен в системата му, която е по принцип „неидеолгоична” и затова неуправляема.”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ВТОРА ЧАСТ",
+   "title": "Reading text — answer in Bulgarian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Bulgarian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+  }
+ },
+ {
+  "id": "bul-2016-hl-iii-1",
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "bulgarian-1-1",
+  "conceptId": "ask",
+  "questionRef": "2016 HL Section III Q1",
+  "questionText": "Напишете съчинение (минимум 300 думи) на една от следните теми: „Човекът е по природа питащо същество...”",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under the two titles the scheme prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Under “Бележки:” it prints its criteria for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "bul-2016-hl-iii-2",
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "bulgarian-1-1",
+  "conceptId": "irish-times-2016",
+  "questionRef": "2016 HL Section III Q2",
+  "questionText": "Напишете съчинение (минимум 300 думи) на една от следните теми: „Светът може да се превърне в едно ужасно лошо място, ако не работим заедно, за да го направим по-справедлив, по-демократичен, по-устойчив.” (Финтан О'Тул,\"The Irish Times\", 22, февруари, 2016 г.)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under the two titles the scheme prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Under “Бележки:” it prints its criteria for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "bul-2017-hl-i-1-а",
   "subjectId": "bulgarian",
   "level": "higher",
