@@ -1496,6 +1496,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Maltese",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -1519,6 +1520,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Maltese",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -1542,6 +1544,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Maltese",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -1565,6 +1568,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Maltese",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -1588,6 +1592,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Maltese",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -1611,6 +1616,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Maltese",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -1634,6 +1640,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Maltese",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -1657,6 +1664,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Maltese",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -1680,6 +1688,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Maltese",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Maltese 2025 Higher Level examination paper — © State Examinations Commission.",
