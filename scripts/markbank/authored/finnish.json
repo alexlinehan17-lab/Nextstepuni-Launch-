@@ -1,5 +1,505 @@
 [
  {
+  "id": "fin-2010-hl-i-1-a",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "finnish-0-0",
+  "conceptId": "kateus-vie-tuhkatkin-pesasta",
+  "questionRef": "2010 HL Section I Q1(a)",
+  "questionText": "Selitä omin sanoin seuraavat ilmaisut: Kateus vie tuhkatkin pesästä",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kateus on tunteena erittäin voimakas ja kaiken tuhoava voima. Metafora liittyy tuhkaan, palaneeseen jätteeseen, jolla ei ole mitään arvoa, mutta kateellinen ihminen tai kateuden tunne vie senkin. Pesä on tässä uunin pesä.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" The scheme reprints the instruction as: “Selitä omin sanoin seuraavat sanat:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2010-hl-i-1-b",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "finnish-0-0",
+  "conceptId": "kateus-ambivalentti-tunne",
+  "questionRef": "2010 HL Section I Q1(b)",
+  "questionText": "Selitä omin sanoin seuraavat ilmaisut: Kateus on ambivalentti tunne",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tunnetila/olotila/mielentila, jossa on kahdenlaisia tunteita, usein vastakkaiset tunnetilat",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" The scheme reprints the instruction as: “Selitä omin sanoin seuraavat sanat:”. The scheme reprints this expression as: “Kaksijakoinen tunne”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2010-hl-i-1-c",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "finnish-0-0",
+  "conceptId": "koska-ihmisten-arvomaailma-erilainen-kateuden-aiheetkin",
+  "questionRef": "2010 HL Section I Q1(c)",
+  "questionText": "Selitä omin sanoin seuraavat ilmaisut: Koska ihmisten arvomaailma on erilainen, kateuden aiheetkin vaihtelevat",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ihmiset arvostavat erilaisia asioita arvostustensa mukaan, toiselle omaisuus (raha ja konkreettinen materia) on kateuden aihe, toisille taas toisten henkiset ominaisuudet (vaikkapa älykkyys)",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" The scheme reprints the instruction as: “Selitä omin sanoin seuraavat sanat:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2010-hl-i-1-d",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "finnish-0-0",
+  "conceptId": "toisen-tyota-aletaan-mitatoida-helposti-mitatoidaan",
+  "questionRef": "2010 HL Section I Q1(d)",
+  "questionText": "Selitä omin sanoin seuraavat ilmaisut: Toisen työtä aletaan mitätöidä ja helposti mitätöidään koko ihminen",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ei anneta arvoa toisen työlle eikä persoonallisuudelle.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" The scheme reprints the instruction as: “Selitä omin sanoin seuraavat sanat:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2010-hl-i-1-e",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "finnish-0-0",
+  "conceptId": "jos-tunnet-olevasi-kateellinen-sano-aaneen",
+  "questionRef": "2010 HL Section I Q1(e)",
+  "questionText": "Selitä omin sanoin seuraavat ilmaisut: Jos tunnet olevasi kateellinen, sano se ääneen, sillä se katkaisee kateudelta terän",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ääneen sanominen on tässä oman kateuden tunnustamista ja tunnistamista. Silloin kateus laimenee ja vähenee, ”terän katkaisu” on tässä metaforinen ilmaisu. Terä voi katketa vahingoittavalta aseelta, tässä vahingoittavalta tunteelta.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" The scheme reprints the instruction as: “Selitä omin sanoin seuraavat sanat:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2010-hl-i-2",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "finnish-0-1",
+  "conceptId": "miten-sana-kateus-tekstissa-maaritellaan-miksi",
+  "questionRef": "2010 HL Section I Q2",
+  "questionText": "Miten sana ”kateus” tekstissä määritellään ja miksi sana oikeastaan on harhaanjohtava? Perustele vastauksesi tekstin avulla.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kateus on inhimillistä. Se on kaksijakoinen ikävä tunne, mutta sitä on turha kieltää. Kateus on ambivalentti tunne. Siinä usein kaksi tunnetta yhdistyy toisiinsa. Harva myöntää kateuttaan, sillä negatiivisia tunteita ei itsessä helposti tunnisteta. Kateus saatetaan kieltää kokonaan. Kateutta pidetään kielteisenä asiana kaikissa kulttuureissa. Se on itsessä koettua puutteen tunnetta, kun toisella on tai arvioidaan olevan jotain, mitä itsellä ei ole. Koska kateutta pidetään häpeällisenä, se ilmeneekin useimmiten peitettynä ja tiedostamattomana.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2010-hl-i-3",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "finnish-0-1",
+  "conceptId": "mita-huonoa-toisaalta-myos-hyvaa-kateudesta",
+  "questionRef": "2010 HL Section I Q3",
+  "questionText": "Mitä huonoa ja toisaalta myös hyvää kateudesta kirjoittajan mukaan työpaikoilla seuraa? Perustele vastauksesi tekstin avulla.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kateus voi saada paljon pahaa aikaan. Kateellinen voi ahdistua ja vaipua itsesääliin. Pahimmillaan kateus sokeuttaa ihmistä. Kateellinen elää ja toimii omien kielteisten ajatusten mukaan. Kateus saattaa ilmetä selän takana puhumisena ja arvostelemisena. Toisen työtä aletaan mitätöidä ja helposti mitätöidään koko ihminen. Kateus vahingoittaa työpaikan ilmapiiriä, heikentää yhteisöllisyyttä ja syö työn tulosta. Pahimmillaan kateus voi myrkyttää koko työyhteisön, jolloin työntekijöiden aika menee toistensa kyttäämiseen ja kyräilyyn. Toki kateuden voi jalostaa hyviin tarkoituksiin. Kateus voi motivoida uuden oppimiseen ja olla pontimena entistä parempiin suorituksiin. Jos työkaveri pystyy, niin miksen minäkin… - Kateudesta voi yllättäen löytyä avaimet henkilökohtaiseen kasvuun ja koko työyhteisön kehitykseen.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2010-hl-i-4",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "finnish-0-1",
+  "conceptId": "miksi-tekstin-mukaan-meidan-olisi-hyva",
+  "questionRef": "2010 HL Section I Q4",
+  "questionText": "Miksi tekstin mukaan meidän olisi hyvä tunnistaa ja tunnustaa kateuden tunteemme? Perustele vastauksesi tekstin avulla.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Koska tunnistamaton ja käsittelemätön kateus voi saada paljon pahaa aikaan. Kateellinen itse voi ahdistua ja vaipua itsesääliin. Kateus sokeuttaa. Kateus ohjaa elämään omien kielteisten ajatusten mukaan. Kun tunnistaa kateutensa, sitä pystyy käsittelemään rakentavasti.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2010-hl-i-5",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "finnish-0-1",
+  "conceptId": "kateuden-tehtavana-toimia-ihmisen-puolustajana-omanarvontunnon",
+  "questionRef": "2010 HL Section I Q5",
+  "questionText": "Kateuden tehtävänä on toimia ihmisen puolustajana ja omanarvontunnon säilyttäjänä, Kaivola selittää. Miten tekstissä perustellaan tätä väitettä?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kateus kumpuaa ihmisen omasta epävarmuudesta ja tulee esille etenkin silloin, kun joku näyttäytyy meille uhkana. Kateuden kokemisen uskotaan liittyvän itsetuntoon. Itsetunnoltaan vahva osaa käsitellä kateuden tunnettaan. Hän muistaa ja huomaa omat hyvät puolensa ja pystyy arvostamaan itseään silloinkin, kun joku osoittaa olevansa etevämpi. Pohdi kateuttasi: miksi ja mitä minä oikein kadehdin. Mikä estää minua saamasta kadehtimiani asioita? Pelkäänkö epäonnistumista vai olenko kenties laiska?",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2010-hl-i-6",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "finnish-0-1",
+  "conceptId": "jokainen-hyva-jossakin-yhdessa-olemme-erinomaisia",
+  "questionRef": "2010 HL Section I Q6",
+  "questionText": "Jokainen on hyvä jossakin ja yhdessä olemme erinomaisia. Miten tekstissä perustellaan tätä väitettä?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Yhdessä onnistutaan tai epäonnistutaan. Jos tunnemme kuuluvamme samaan porukkaan, kateus helpottuu ja onnistuminen yhdessä on mahdollista. Kollegan kadehtimisen sijaan on syytä iloita, että saa itse tehdä työtä osaavan ihmisen kanssa. Siitä voi olla ylpeä työpaikan ulkopuolellakin. Useimmiten jossakin asiassa lahjakas henkilö tuo iloa myös ympärillään oleville. Keskustelua työyhteisöissä pitäisi lisätä, kokoukset eivät siihen riitä. Työyhteisöissä olisi hyvä sopia yhteiset pelisäännöt keskustelun tavoista. Hyvä yhteisö arvostaa ja hyödyntää ihmisten erilaisuutta.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2010-hl-ii-1",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2010,
+  "section": "II",
+  "topicId": "finnish-1-0",
+  "conceptId": "kirjoita-suunnilleen-100-sanan-mittainen-oma",
+  "questionRef": "2010 HL Section II Q1",
+  "questionText": "Kirjoita suunnilleen 100 sanan mittainen oma kommenttisi tekstin väitteeseen: ”Aikamme trendi lisätä kilpailua ja nostaa jalustalle yksilöitä ei edistä yhteisöllisyyttä Kiittämis- ja palkitsemisjärjestelmiä tulisi kehittää yhteistyötä edistävään suuntaan. Yksilöitä tulisi kiittää ja palkita kollektiivisesti vastuullisella tavalla, Ben Furman ehdottaa.”",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Tekstin sisällön ymmärtäminen: kokelas ymmärtää kysymykset tekstistä ja osaa vastata niihin.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" Under Part II the scheme prints “Noin sadan sanan mittainen kommentti, jossa kirjoittaja osoittaa ymmärtäneensä tekstin pääasiat” Under “HUOMAA: Tehtavien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet” it prints the four criteria with no marks or percentages beside them, so they are shown and the part is scored on its printed total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Vastausten sisältö ja rakenne: kokelas käyttää asianmukaista ja täsmällistä kieltä jäsentyneesti sekä viittaa oikein.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Kielellinen ilmaisu: kokelas pystyy ilmaisemaan sujuvasti ja selkeästi ajatuksiaan.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Kieliasu: kieliopillinen rakenne, oikeinkirjoitus, välimerkit.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II TEHTÄVÄ: 30P",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2010-hl-iii-1",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2010,
+  "section": "III",
+  "topicId": "finnish-1-1",
+  "conceptId": "jokainen-oman-onnensa-seppa",
+  "questionRef": "2010 HL Section III Q1",
+  "questionText": "Kirjoita suunnilleen 300 sanan aine. Valitse aiheeksi toinen näistä: „Jokainen on oman onnensa seppä“",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Tekstin sisällön ymmärtäminen: kokelas ymmärtää kysymykset tekstistä ja osaa vastata niihin.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" Under the two titles the scheme prints “Kielellisesti huoliteltu n. 300 sanan essee, jossa on onnistunut aiheenrajaus ja selkeä jäsentely. Ajattelun kypsyys ja esityksen sujuvuus ovat myös onnistuneen vastauksen tunnusmerkkejä.” Under “HUOMAA: Tehtavien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet” it prints the four criteria with no marks or percentages beside them, so they are shown and the part is scored on its printed total. Under the scheme's heading “Hyvän vastauksen aineksia:”, as examples, not a checklist: “yhteisöllisyys on tärkeää”; “nykyään yksilöllisyys on korostuneesti esillä”; “työpaikkojen keskustelut ovat tärkeitä”; “työpaikoilla yhteiset säännöt keskusteluille”; “toisten arvostaminen”; “ole avoin ihmissuhteissasi”; “punnitse omat arvosi”; “ympäröivän median vaikutus meihin”; “mallimme – voimmeko muuttaa niitä?”; “eettiset näkökulmat suhteessa”; “yhteisöllisyyteen / yksilöllisyyteen”; “tasa – arvon toteutuminem”; “palkitsemisjärjestelmät kilpailuyhteiskunnassa”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Vastausten sisältö ja rakenne: kokelas käyttää asianmukaista ja täsmällistä kieltä jäsentyneesti sekä viittaa oikein.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Kielellinen ilmaisu: kokelas pystyy ilmaisemaan sujuvasti ja selkeästi ajatuksiaan.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Kieliasu: kieliopillinen rakenne, oikeinkirjoitus, välimerkit.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "fin-2010-hl-iii-2",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2010,
+  "section": "III",
+  "topicId": "finnish-1-1",
+  "conceptId": "kukaan-ole-saari",
+  "questionRef": "2010 HL Section III Q2",
+  "questionText": "Kirjoita suunnilleen 300 sanan aine. Valitse aiheeksi toinen näistä: Kukaan ei ole saari",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Tekstin sisällön ymmärtäminen: kokelas ymmärtää kysymykset tekstistä ja osaa vastata niihin.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" Under the two titles the scheme prints “Kielellisesti huoliteltu n. 300 sanan essee, jossa on onnistunut aiheenrajaus ja selkeä jäsentely. Ajattelun kypsyys ja esityksen sujuvuus ovat myös onnistuneen vastauksen tunnusmerkkejä.” Under “HUOMAA: Tehtavien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet” it prints the four criteria with no marks or percentages beside them, so they are shown and the part is scored on its printed total. Under the scheme's heading “Hyvän vastauksen aineksia:”, as examples, not a checklist: “yhteisöllisyys on tärkeää”; “nykyään yksilöllisyys on korostuneesti esillä”; “työpaikkojen keskustelut ovat tärkeitä”; “työpaikoilla yhteiset säännöt keskusteluille”; “toisten arvostaminen”; “ole avoin ihmissuhteissasi”; “punnitse omat arvosi”; “ympäröivän median vaikutus meihin”; “mallimme – voimmeko muuttaa niitä?”; “eettiset näkökulmat suhteessa”; “yhteisöllisyyteen / yksilöllisyyteen”; “tasa – arvon toteutuminem”; “palkitsemisjärjestelmät kilpailuyhteiskunnassa”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Vastausten sisältö ja rakenne: kokelas käyttää asianmukaista ja täsmällistä kieltä jäsentyneesti sekä viittaa oikein.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Kielellinen ilmaisu: kokelas pystyy ilmaisemaan sujuvasti ja selkeästi ajatuksiaan.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Kieliasu: kieliopillinen rakenne, oikeinkirjoitus, välimerkit.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "fin-2011-hl-i-1-a",
   "subjectId": "finnish",
   "level": "higher",
