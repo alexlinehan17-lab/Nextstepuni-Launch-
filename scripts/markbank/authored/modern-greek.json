@@ -4522,7 +4522,7 @@
     "kind": "point",
     "verbatim": "Η τεχνητή νοημοσύνη (TN) και τα ρομπότ αναμένεται να παίξουν καθοριστικό ρόλο στην τεχνολογία του μέλλοντος. Η τεχνητή νοημοσύνη και τα ρομπότ μπορούν με την ανθρώπινη καθοδήγηση να 'κατανοούν' το περιβάλλον τους, να επιλύουν προβλήματα και να δρουν προς την επίτευξη ενός συγκεκριμένου στόχου. Μπορούν δηλαδή να «υπηρετήσουν» τους ανθρώπους και να βελτιώσουν τη καθημερινότητα τους.",
     "marks": null,
-    "contextNote": "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\" The scheme reprints the instruction as: “Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων.”. The scheme leads the points after its second paragraph with: “Πιο συγκεκριμένα :”."
+    "contextNote": "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 2: \"Όλες οι απαντήσεις πρέπει να γραφούν στα νέα Ελληνικά.\" The scheme reprints the instruction as: “Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων.”. The scheme leads the points after its second paragraph with “Πιο συγκεκριμένα :” and the four examples after its fourth with “Για παράδειγμα:”."
    },
    {
     "id": "r-2",
@@ -4539,7 +4539,7 @@
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "Μπορούν να μεταμορφώσουν όλες τις πτυχές της οικονομίας και της καθημερινότητάς μας. Για παράδειγμα:",
+    "verbatim": "Μπορούν να μεταμορφώσουν όλες τις πτυχές της οικονομίας και της καθημερινότητάς μας.",
     "marks": null
    },
    {

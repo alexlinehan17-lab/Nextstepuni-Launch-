@@ -866,10 +866,13 @@ INSTR_2021 = quote(L(120, 121), lead='The scheme reprints the instruction as')
 
 SPECS[2021] = [
     # "Πιο συγκεκριμένα :" (133) is a lead-in heading for the points under it: in the note, not a row (lead)
+    # r-4 ends before "Για παράδειγμα:", the lead-in to the next four rows (second reader): in the note
     R('SIIQ1', [shown(L(124, 129)), shown(L(130, 132)), shown(L(138, 140)),
-                shown(L(141, 142)), shown(L(143, 144)), shown(L(145, 147)), shown(L(148, 154)),
-                shown(L(155, 161)), shown(L(162, 163))], whole=True,
-      rownote=both(INSTR_2021, quote(S(133), lead='The scheme leads the points after its second paragraph with')),
+                shown(L(141, 142, before=' Για παράδειγμα:')), shown(L(143, 144)), shown(L(145, 147)),
+                shown(L(148, 154)), shown(L(155, 161)), shown(L(162, 163))], whole=True,
+      rownote=both(INSTR_2021, lambda d: (f'The scheme leads the points after its second paragraph with '
+                                          f'“{S(133).text(d)}” and the four examples after its fourth with '
+                                          f'“{S(142, after="μας. ").text(d)}”.')),
       question=QP(4, ESSAY_2021, 'Η τεχνητή νοημοσύνη')),
     R('SIIQ2', [shown(L(171, 177)), shown(L(178, 183))], whole=True, rownote=INSTR_2021,
       question=QP(4, ESSAY_2021, Run('Η Greta Thunberg', 'επειδή δεν σου'))),
