@@ -42,6 +42,10 @@ from typing import Any, Iterable
 import fitz
 
 import geography_review as GR
+import geography_review_2022_hl_deferred as REVIEW_2022_HL_DEFERRED
+import geography_review_2023_hl_deferred as REVIEW_2023_HL_DEFERRED
+import geography_review_2024_hl_deferred as REVIEW_2024_HL_DEFERRED
+import geography_review_2025_hl_deferred as REVIEW_2025_HL_DEFERRED
 import geography_review_2026_hl as REVIEW_2026_HL
 import geography_review_2026_ol as REVIEW_2026_OL
 import geography_review_2025_hl as REVIEW_2025_HL
@@ -144,6 +148,16 @@ REVIEWED = {
     (2011, 'ordinary'): REVIEW_2011_OL,
     (2010, 'higher'): REVIEW_2010_HL,
     (2010, 'ordinary'): REVIEW_2010_OL,
+}
+
+# The SEC's deferred sittings (2022-2025 Higher; no Ordinary deferred paper is
+# archived), each reviewed as June's are. Their cards follow every June sitting
+# in the outputs, so a deferred sitting added here changes no June byte.
+REVIEWED_DEFERRED: dict[tuple[int, str], Any] = {
+    (2022, 'higher'): REVIEW_2022_HL_DEFERRED,
+    (2023, 'higher'): REVIEW_2023_HL_DEFERRED,
+    (2024, 'higher'): REVIEW_2024_HL_DEFERRED,
+    (2025, 'higher'): REVIEW_2025_HL_DEFERRED,
 }
 
 # 2021-2026 are carded in full. An earlier sitting joins the corpus only once
@@ -699,6 +713,21 @@ process.stdout.write(JSON.stringify(out));
     return out
 
 
+def deferred_fileids(year: int, level: str) -> dict[tuple[int, str, int], str]:
+    """A deferred sitting's two booklets, resolved from Paper Trail's index."""
+    source = f"""
+import {{ resolvePaperFileid }} from './scripts/markbank/paperIndex.mjs';
+process.stdout.write(JSON.stringify(['1', '2'].map(part =>
+  resolvePaperFileid('geography', {year}, '{level}', part, 'deferred'))));
+"""
+    result = subprocess.run(['node', '--input-type=module', '-e', source], cwd=ROOT,
+                            check=True, capture_output=True, text=True)
+    first, second = json.loads(result.stdout)
+    if not first or not second:
+        raise AssertionError(f'Paper Trail has no Geography {year} {level} deferred booklets')
+    return {(year, level, 1): first, (year, level, 2): second}
+
+
 def bullet_pool(question_text: str) -> tuple[int, list[str], tuple[int, int]] | None:
     lines = question_text.splitlines()
     bullets = [index for index, line in enumerate(lines) if line.startswith('• ')]
@@ -1034,17 +1063,43 @@ COMPANIONS: dict[int, dict[str, str | None]] = {
            'aerial': 'LC005CLP003EV.jpg'},
 }
 
+# A deferred sitting's own companions, harvested in deferredexams/<year> under
+# June's SEC names and filed in Paper Trail storage as "<name>-deferred" (each
+# aerial photograph is published only as a JPEG).
+DEFERRED_COMPANIONS: dict[int, dict[str, str | None]] = {
+    2025: {'place': 'Longford', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
+    2024: {'place': 'Castlebar', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
+    2023: {'place': 'Listowel', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
+    2022: {'place': 'Caher', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
+}
+
+
+def deferred_name(fileid: str) -> str:
+    """Paper Trail's name for a deferred file: "-deferred" before any extension."""
+    stem, dot, extension = fileid.partition('.')
+    return f'{stem}-deferred{dot}{extension}'
+
 
 COMPANION_CACHE = os.path.join(ROOT, 'tmp', 'geography-audit', 'companions')
 STORAGE = ('https://firebasestorage.googleapis.com/v0/b/nextstepuni-app.firebasestorage.app/o/'
            'papers%2Flc%2Fgeography%2F{year}%2Fpaper%2F{name}?alt=media')
 
 
-def companion_path(year: int, fileid: str, fetch: bool = False) -> str:
+def companion_path(year: int, fileid: str, fetch: bool = False, deferred: bool = False) -> str:
     """The local copy of a companion: the harvested corpus, else a copy of the
     same Paper Trail storage object kept in a git-ignored cache. Its bytes are
-    checked against the review ledger by the caller."""
+    checked against the review ledger by the caller. A deferred sitting's
+    companion is read from the deferred corpus only."""
     name = fileid if '.' in fileid else f'{fileid}.pdf'
+    if deferred:
+        path = os.path.join(GR.DEFERRED_CORPUS_ROOT, str(year), name)
+        if not os.path.exists(path):
+            raise AssertionError(f'{year} deferred companion {name} is not in the deferred corpus')
+        return path
     cached = os.path.join(COMPANION_CACHE, f'{year}-{name}')
     for path in (os.path.join(GR.CORPUS_ROOT, str(year), name), cached):
         if os.path.exists(path):
@@ -1059,8 +1114,18 @@ def companion_path(year: int, fileid: str, fetch: bool = False) -> str:
         'geography_cards.py --fetch-companions')
 
 
-def companion_material(kind: str, year: int = 2026) -> dict[str, Any]:
+def companion_material(kind: str, year: int = 2026, deferred: bool = False) -> dict[str, Any]:
     """One separate official companion document, shown as its own source."""
+    if deferred:
+        files = DEFERRED_COMPANIONS[year]
+        material = companion_material(kind, year)
+        # The deferred sitting's own document, named as Paper Trail files it.
+        material['sourceFileid'] = deferred_name(files[kind])
+        material['attribution'] = material['attribution'].replace(
+            ' — ©', ', deferred examination — ©')
+        if kind == 'aerial':
+            material['title'] = f"Official {files['place']} aerial photograph"
+        return material
     files = COMPANIONS[year]
     if kind == 'map':
         return {
@@ -1196,9 +1261,15 @@ def canonical_topic_ids() -> set[str]:
 
 def reviewed_sitting(year: int, level: str, review: Any,
                      fileids: dict[tuple[int, str, int], str],
-                     topic_ids: set[str], crosswalk: dict[str, list[str]]) -> dict[str, Any]:
-    """Cards, census rows, audit and Atlas rows for one independently reviewed sitting."""
-    sitting = GR.Sitting.open(year, level)
+                     topic_ids: set[str], crosswalk: dict[str, list[str]],
+                     deferred: bool = False) -> dict[str, Any]:
+    """Cards, census rows, audit and Atlas rows for one independently reviewed
+    sitting. A deferred sitting reads its own documents and companions, and its
+    rows say so (a "sitting" key June's rows never carry)."""
+    sitting = GR.Sitting.open(year, level, deferred)
+    suffix = GR.DEFERRED_REF if deferred else ''
+    tagged = {'sitting': 'deferred'} if deferred else {}
+    companion_files = DEFERRED_COMPANIONS if deferred else COMPANIONS
     short = LEVEL_SHORT[level]
     for part, document in sitting.papers.items():
         if len(document) != review.PAPER_PAGES[part]:
@@ -1218,14 +1289,20 @@ def reviewed_sitting(year: int, level: str, review: Any,
         sources[key] = {'fileid': name, 'bytes': size, 'sha256': GR.sha256(document.path),
                         'pages': len(document)}
     for part in (1, 2):
-        if fileids[(year, level, part)] + '.pdf' != review.EXPECTED_SOURCES[f'paper{part}'][0]:
+        indexed = fileids[(year, level, part)]
+        if deferred:
+            # Paper Trail files the deferred booklet under June's name plus "-deferred".
+            if not indexed.endswith('-deferred'):
+                raise AssertionError(f'{year} {level} Part {part}: {indexed} is not a deferred file id')
+            indexed = indexed[:-len('-deferred')]
+        if indexed + '.pdf' != review.EXPECTED_SOURCES[f'paper{part}'][0]:
             raise AssertionError(f'{year} {level} Part {part}: Paper Trail file id changed')
     # A companion the SEC never published for a sitting is None in COMPANIONS
     # (2011 has no legend sheet); a task that names it then fails loudly below,
     # so the ledger must hold, not card, any task that depends on it.
-    published = tuple(kind for kind in ('map', 'legend', 'aerial') if COMPANIONS[year][kind])
+    published = tuple(kind for kind in ('map', 'legend', 'aerial') if companion_files[year][kind])
     for kind in published:
-        path = companion_path(year, COMPANIONS[year][kind])
+        path = companion_path(year, companion_files[year][kind], deferred=deferred)
         sources[kind] = {'fileid': os.path.basename(path).split(f'{year}-')[-1],
                          'bytes': os.path.getsize(path),
                          'sha256': GR.sha256(path), 'pages': len(fitz.open(path))}
@@ -1240,7 +1317,7 @@ def reviewed_sitting(year: int, level: str, review: Any,
     if sorted(map(tuple, classified)) != sorted(map(tuple, scan)):
         raise AssertionError(f'{year} {level}: selection review does not classify the scan')
 
-    companions = {kind: companion_material(kind, year) for kind in published}
+    companions = {kind: companion_material(kind, year, deferred) for kind in published}
     cards: list[dict[str, Any]] = []
     tasks_out, base_tasks, selection_rows = [], [], []
     absorbed_pairs: list[tuple[str, str]] = []
@@ -1268,11 +1345,11 @@ def reviewed_sitting(year: int, level: str, review: Any,
         for card in task_cards:
             for atlas_id in card['atlasTopicIds']:
                 weights[atlas_id] = weights.get(atlas_id, 0) + card['totalMarks'] / len(task_cards)
-        ref = GR.ref_label(year, level, task)
+        ref = GR.ref_label(year, level, task) + suffix
         base_tasks.append({'id': task.card_id, 'year': year, 'level': level,
                            'part': task.part, 'questionRef': ref,
                            'title': task_cards[0]['stem'].split(' — ')[0],
-                           'status': 'authored'})
+                           'status': 'authored', **tagged})
         if task.routes:
             selection_rows.append({'questionRef': ref, 'classification': 'finite-expanded',
                                    'variants': len(task_cards),
@@ -1313,11 +1390,11 @@ def reviewed_sitting(year: int, level: str, review: Any,
         # A held row may name one separately priced part ('sub', e.g. '(iii)').
         sub = row.get('sub', '')
         key = sub.strip('()').replace(')(', '-')
-        ref = f"{year} {LEVEL_REF[level]} Part {row['part']} Q{row['question']}{sub}"
+        ref = f"{year} {LEVEL_REF[level]} Part {row['part']} Q{row['question']}{sub}" + suffix
         base_tasks.append({'id': ID_PREFIX.format(year=year, short=LEVEL_SHORT[level])
                            + f"p{row['part']}-q{row['question'].lower()}" + (f'-{key}' if key else ''),
                            'year': year, 'level': level, 'part': row['part'], 'questionRef': ref,
-                           'title': row['title'], 'status': 'excluded'})
+                           'title': row['title'], 'status': 'excluded', **tagged})
         excluded_rows.append({'year': year, 'level': level, 'part': row['part'],
                               'questionRef': row['question'] + sub, 'title': row['title'],
                               'reason': row['reason']})
@@ -1361,11 +1438,11 @@ def reviewed_sitting(year: int, level: str, review: Any,
          'fileid': fileids[(year, level, part)] + '.pdf',
          'n': str(PART_ONE_ATLAS_OFFSET + int(n)) if single and part == 1 else n,
          'part': part, 'printed': n,
-         'topicIds': sorted(weights, key=lambda topic: (-weights[topic], topic))}
+         'topicIds': sorted(weights, key=lambda topic: (-weights[topic], topic)), **tagged}
         for (part, n), weights in sorted(atlas.items(), key=lambda kv: (kv[0][0], int(kv[0][1])))]
     audit = {
-        'year': year, 'level': level, 'lang': 'ev', 'status': 'reviewed',
-        'reviewedAt': '2026-10-11', 'sources': sources,
+        'year': year, 'level': level, **tagged, 'lang': 'ev', 'status': 'reviewed',
+        'reviewedAt': getattr(review, 'REVIEWED_AT', '2026-10-11'), 'sources': sources,
         'pageReview': review.PAGE_REVIEW, 'selectionScan': scan,
         'selectionReview': review.SELECTION_REVIEW,
         'questionTotals': {f'Part {p} Q{q}': m for (p, q), m in sorted(totals.items())},
@@ -1377,7 +1454,8 @@ def reviewed_sitting(year: int, level: str, review: Any,
         **({'held': excluded_rows} if excluded_rows else {}),
         'rule': (review.__doc__ or '').strip(),
     }
-    sitting_row = {'year': year, 'level': level, 'paperBaseTasks': len(review.TASKS) + len(held),
+    sitting_row = {'year': year, 'level': level, **tagged,
+                   'paperBaseTasks': len(review.TASKS) + len(held),
                    'includedBaseTasks': len(review.TASKS), 'excludedBaseTasks': len(held),
                    'authoredCardsAfterFiniteExpansion': len(cards), 'reviewed': True}
     return {'cards': cards, 'baseTasks': base_tasks, 'sitting': sitting_row,
@@ -1592,6 +1670,20 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
                 'authoredCardsAfterFiniteExpansion': sitting_cards,
             })
 
+    # The deferred sittings, after every June one (each is its own paper:
+    # "-deferred" file ids, " — Deferred sitting" references).
+    for (year, level), review in sorted(REVIEWED_DEFERRED.items()):
+        built = reviewed_sitting(year, level, review, deferred_fileids(year, level),
+                                 topic_ids, crosswalk, deferred=True)
+        cards.extend(built['cards'])
+        base_tasks.extend(built['baseTasks'])
+        sittings.append(built['sitting'])
+        selection_audit.extend(built['selection'])
+        aliases.update(built['aliases'])
+        reviewed_audits.append(built['audit'])
+        atlas_rows.extend(built['atlas'])
+        excluded.extend(built['excluded'])
+
     ids = [card['id'] for card in cards]
     if len(ids) != len(set(ids)):
         duplicate = next(card_id for card_id in ids if ids.count(card_id) > 1)
@@ -1629,7 +1721,7 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
     # exactly that aggregation). Its topics keep the shipped order.
     shipped_order = {topic: index for index, topic in enumerate(reference['topicIds'])}
     reviewed_topics = {(row['level'], row['year'], row['part'], row['printed']): set(row['topicIds'])
-                       for row in atlas_rows}
+                       for row in atlas_rows if not row.get('sitting')}
     with open(LOCAL_CROSSWALK, encoding='utf-8') as handle:
         crosswalk = json.load(handle)
     shipped: dict[tuple[str, str, int, str, str, str], set[str]] = {}
