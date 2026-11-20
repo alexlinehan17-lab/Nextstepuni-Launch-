@@ -3919,6 +3919,152 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2024 Higher Level — © State Examinations Commission.",
+    id: "slk-2024-hl-i-1-a", topicId: "slovakian-0-0", conceptId: "droga-odsek",
+    section: "I", questionRef: "2024 HL Section I Q1(a)",
+    questionText: "Vysvetlite vlastnými slovami výrazy: droga (1. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "návyková látka, ktorá je najprv príjemná, ale po čase škodlivá pre človeka", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints one price for Question 1, “(5 bodov)”, beside e), for the five expressions together; the scheme prices them “(5 × 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2024 Higher Level — © State Examinations Commission.",
+    id: "slk-2024-hl-i-1-b", topicId: "slovakian-0-0", conceptId: "monitoruje-odsek",
+    section: "I", questionRef: "2024 HL Section I Q1(b)",
+    questionText: "Vysvetlite vlastnými slovami výrazy: monitoruje (2. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "systematicky pozorovať, zbierať údaje", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints one price for Question 1, “(5 bodov)”, beside e), for the five expressions together; the scheme prices them “(5 × 1 bod)”. The scheme reprints the expression as “monitorovať”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2024 Higher Level — © State Examinations Commission.",
+    id: "slk-2024-hl-i-1-c", topicId: "slovakian-0-0", conceptId: "kyber-ikanovanie-odsek",
+    section: "I", questionRef: "2024 HL Section I Q1(c)",
+    questionText: "Vysvetlite vlastnými slovami výrazy: kyberšikanovanie (3. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "online obťažovanie, agresívne správanie, ponižovanie, urážky alebo hrozby najmä cez sociálne siete", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints one price for Question 1, “(5 bodov)”, beside e), for the five expressions together; the scheme prices them “(5 × 1 bod)”. The scheme reprints the expression as “kyberšikana”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2024 Higher Level — © State Examinations Commission.",
+    id: "slk-2024-hl-i-1-d", topicId: "slovakian-0-0", conceptId: "spankovy-dlh-odsek",
+    section: "I", questionRef: "2024 HL Section I Q1(d)",
+    questionText: "Vysvetlite vlastnými slovami výrazy: spánkový dlh (4. odsek)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "nedostatok spánku", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints one price for Question 1, “(5 bodov)”, beside e), for the five expressions together; the scheme prices them “(5 × 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2024 Higher Level — © State Examinations Commission.",
+    id: "slk-2024-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-najmenej-100-150-slov",
+    section: "II", questionRef: "2024 HL Section II Q1",
+    questionText: "Napíšte komentár (najmenej 100 - 150 slov) na tému: „Ten, kto nie je schopný mobil odložiť, nie je schopný ho ani rozumne používať.“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme reprints the task as: “Napíšte komentár (najmenej 100 slov) na tému:”. The scheme prints, as examples, not a checklist: “Obmedziť denný čas strávený na obrazovke pomocou aplikácií na správu času stráveného na obrazovke alebo pomocou zabudovaných funkcií na obmedzenie času stráveného na obrazovke.”; “Používať smartfón na produktívne aktivity, ako je profesionálna komunikácia, plánovanie trás, riadenie úloh a kalendárov.”; “Vyhnúť sa nadmernému používaniu sociálnych médií stanovením časových obmedzení na ich používanie a vyhýbaním sa súťaživému prechádzaniu obsahu.”; “Vypnúť alebo nastaviť režim ticha počas jedál alebo iných interakcií s ľuďmi okolo nás.”; “Chrániť súkromie použitím silných hesiel, aktivovaním možností ochrany osobných údajov a vyhýbaním sa zdieľaniu citlivých informácií online.”; “Praktizovať mierumilovnosť pri hrách a online zábave a vyhnúť sa nadmernému tráveniu času hraním hier alebo sledovaním videí.”; “Vypnúť alebo nastaviť režim lietania na smartfóne počas noci.”; “Byť si vedomý(á) environmentálneho dopadu smartfónov a recyklovať alebo znovu používať staré zariadenia, keď je to možné.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2024 Higher Level — © State Examinations Commission.",
+    id: "slk-2024-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-nech-internet-nie-jedinym-uto",
+    section: "III", questionRef: "2024 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Nech internet nie je jediným útočiskom pre deti.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2024 Higher Level — © State Examinations Commission.",
+    id: "slk-2024-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-inteligentny-vysava-bezpe-nostne-riziko",
+    section: "III", questionRef: "2024 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: „Aj inteligentný vysávač môže byť bezpečnostné riziko. Svet je zraniteľný a nebezpečný.“ Marek Jílek (etický hacker)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC554ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2025 Higher Level — © State Examinations Commission.",
