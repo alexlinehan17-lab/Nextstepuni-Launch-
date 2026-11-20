@@ -2071,6 +2071,423 @@
   }
  },
  {
+  "id": "fin-2013-hl-ii-1",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2013,
+  "section": "II",
+  "topicId": "finnish-1-0",
+  "conceptId": "kirjoita-suunnilleen-100-sanan-mittainen-oma",
+  "questionRef": "2013 HL Section II Q1",
+  "questionText": "Kirjoita suunnilleen 100 sanan mittainen oma kommenttisi tekstin väitteeseen: ”Soveltavan kielentutkimuksen tohtorin Mirja Tarnasen mukaan on huomattava kansalaisuuden monikerroksisuus: vaikka Suomen kansalaisuus on vahva yhteisöllisen identiteetin perusta, myös EU:n kansalaisuus ja maailmankansalaisuus ovat nykyisin osa sitä.”",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Huomaa. Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet:",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Tekstin sisällön ymmärtäminen: kokelas ymmärtää kysymykset tekstistä ja osaa vastata niihin. Johtopäätökset tekstistä ovat oikeita. -30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Vastausten sisältö ja rakenne: kokelas kehittelee ajatuksiaan tekstin avulla jäsentyneesti, argumentoi asianmukaisesti ja täsmällisesti sekä viittaa oikein tekstiin. -30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Kielellinen ilmaisu: kokelas pystyy ilmaisemaan ajatuksiaan selkeästi ja sujuvasti. -30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Kieliasu: kieliopillinen rakenne, oikeinkirjoitus, välimerkit. -10%",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" Under the scheme's heading “Hyvän vastauksen aineksia:”, as examples, not a checklist: “kansalaisuus/kansallisuus>ero”; “identiteetti>mistä koostuu, havainnollistusta”; “EU>mitä merkitsee”; “maailmankansalaisuus>mitä on”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II TEHTÄVÄ:",
+   "title": "Reading text — answer in Finnish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Finnish 2013 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+  }
+ },
+ {
+  "id": "fin-2013-hl-iii-1",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2013,
+  "section": "III",
+  "topicId": "finnish-1-1",
+  "conceptId": "minun-kielellinen-identiteettini",
+  "questionRef": "2013 HL Section III Q1",
+  "questionText": "Kirjoita suunnilleen 300 sanan essee. Valitse aiheeksi toinen näistä: Minun kielellinen identiteettini",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Huomaa. Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet:",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Tekstin sisällön ymmärtäminen: kokelas ymmärtää kysymykset tekstistä ja osaa vastata niihin. Johtopäätökset tekstistä ovat oikeita. -30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Vastausten sisältö ja rakenne: kokelas kehittelee ajatuksiaan tekstin avulla jäsentyneesti, argumentoi asianmukaisesti ja täsmällisesti sekä viittaa oikein tekstiin. -30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Kielellinen ilmaisu: kokelas pystyy ilmaisemaan ajatuksiaan selkeästi ja sujuvasti. -30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Kieliasu: kieliopillinen rakenne, oikeinkirjoitus, välimerkit. -10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" The scheme reprints this title as: “Minun kieli-identiteettini”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "fin-2013-hl-iii-2",
+  "subjectId": "finnish",
+  "level": "higher",
+  "year": 2013,
+  "section": "III",
+  "topicId": "finnish-1-1",
+  "conceptId": "seuraa-unelmiasi-katkeransuloinen-matka",
+  "questionRef": "2013 HL Section III Q2",
+  "questionText": "Kirjoita suunnilleen 300 sanan essee. Valitse aiheeksi toinen näistä: Seuraa unelmiasi – katkeransuloinen matka",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Huomaa. Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet:",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Tekstin sisällön ymmärtäminen: kokelas ymmärtää kysymykset tekstistä ja osaa vastata niihin. Johtopäätökset tekstistä ovat oikeita. -30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Vastausten sisältö ja rakenne: kokelas kehittelee ajatuksiaan tekstin avulla jäsentyneesti, argumentoi asianmukaisesti ja täsmällisesti sekä viittaa oikein tekstiin. -30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Kielellinen ilmaisu: kokelas pystyy ilmaisemaan ajatuksiaan selkeästi ja sujuvasti. -30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Kieliasu: kieliopillinen rakenne, oikeinkirjoitus, välimerkit. -10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "fin-2014-hl-i-1-a",
   "subjectId": "finnish",
   "level": "higher",
