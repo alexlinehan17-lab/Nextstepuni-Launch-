@@ -52,7 +52,10 @@ import {
   isConfidenceReviewCard,
   isPointCard,
   isRubricCard,
+  isUnpricedSectionCard,
   NO_SCHEME_PUBLISHED,
+  unpricedSectionChip,
+  unpricedSectionLine,
   pclmCapRule,
   rowId,
   type ArtRubric,
@@ -118,7 +121,7 @@ import TranslationPanel from './TranslationPanel';
 import { translationMarks, translationPlacementComplete, type TranslationScoreId } from './translationScoring';
 import { listeningExerciseKey, listeningScoredAlone, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
-import { stemWithListBreaks, stemWithPrintedBreaks } from './stemText';
+import { stemKeepsPrintedBreaks, stemWithListBreaks, stemWithPrintedBreaks } from './stemText';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -2596,6 +2599,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   // A held task (isConfidenceReviewCard) is reviewed against its guidance with
   // no mark total: the reviewed sources do not settle one.
   const confidenceReview = Boolean(assessmentCard && isConfidenceReviewCard(assessmentCard));
+  // A paper that prices only the question's section (CARD-STANDARD 10i): a
+  // self-check with the section's printed total, never scored.
+  const unpricedSection = assessmentCard && isUnpricedSectionCard(assessmentCard) ? assessmentCard.unpricedSection : null;
   const mathematicsCard = assessmentCard && isPointCard(assessmentCard) && assessmentCard.mathematicsScale
     ? assessmentCard as MathematicsScaleCard : undefined;
   useEffect(() => {
@@ -2976,7 +2982,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           by a declared edge rather than adrift in a wide window. */}
       {studyReview?.banner}
       {paperLayout ? <header className="mb-paper-session-heading">
-        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{confidenceReview ? 'Confidence review' : `${assessmentCard.totalMarks} ${marksWord(assessmentCard.totalMarks)}`} · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
+        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{confidenceReview ? 'Confidence review' : unpricedSection ? unpricedSectionLine(unpricedSection) : `${assessmentCard.totalMarks} ${marksWord(assessmentCard.totalMarks)}`} · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
         <div><Button variant="outline" aria-label={expanded?'Contract to compact view':'Expand to full screen'} aria-pressed={expanded} onClick={()=>setExpanded(value=>!value)}>{expanded?<Minimize2 size={16}/>:<Maximize2 size={16}/>}<span>{expanded?'Contract':'Expand'}</span></Button><Button ref={leaveButtonRef} variant="ghost" size="icon" aria-label="Close practice" onClick={openExitConfirmation}><X size={18}/></Button></div>
       </header> : <div style={{
         position: 'sticky', top: 0, zIndex: 3,
@@ -3191,7 +3197,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 font: `700 11.5px/1 ${MONO}`, background: INK, color: 'var(--mb-paper)',
                 borderRadius: 6, padding: '5px 8px', fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
               }}>
-                {confidenceReview ? 'Confidence review' : `${assessmentCard.totalMarks}m`}
+                {confidenceReview ? 'Confidence review' : unpricedSection ? unpricedSectionChip(unpricedSection) : `${assessmentCard.totalMarks}m`}
               </span>
             </div>
 
@@ -3202,10 +3208,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             )}
 
             {assessmentCard.stem && !printedQuestionReplacesText && (
-              /* A printed bullet list keeps one item to a line; a History stem
-                 keeps the paper's own paragraph breaks. See stemText. */
+              /* A printed bullet list keeps one item to a line; a History or
+                 Music stem keeps the paper's own line breaks. See stemText. */
               <p style={{ margin: '10px 0 0', font: `400 14.5px/1.6 ${SANS}`, color: INK_2, whiteSpace: 'pre-line' }}>
-                {assessmentCard.subjectId === 'history'
+                {stemKeepsPrintedBreaks(assessmentCard.subjectId)
                   ? stemWithPrintedBreaks(assessmentCard.stem)
                   : stemWithListBreaks(assessmentCard.stem)}
               </p>
@@ -3546,7 +3552,25 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                           ({assessmentCard.tariffModel.notation}) — so what these are worth depends on how many you got.
                         </p>
                       )}
-                      {assessmentCard.tariffModel.kind === 'questionTotal' && (
+                      {unpricedSection ? (
+                        /* The paper prices the section, not this question
+                           (CARD-STANDARD 10i): the fixed line, filled from the
+                           card, and nothing scored. */
+                        <section
+                          aria-label="No marks for this question on its own"
+                          data-testid="mark-bank-unpriced-section"
+                          style={{
+                            display: 'grid', gap: 7, marginTop: 4, padding: '13px 14px', borderRadius: 12,
+                            border: `1.5px solid ${MUTED_BORDER}`, background: 'var(--mb-raised)',
+                          }}
+                        >
+                          <p style={{ margin: 0, font: `600 16px/1.35 ${SERIF}`, color: INK }}>{unpricedSectionLine(unpricedSection)}</p>
+                          <p style={{ margin: 0, font: `400 13px/1.5 ${SANS}`, color: INK_2 }}>
+                            This question cannot be scored here: it has no marks of its own to check yours against.
+                            {' '}Compare your answer with the scheme's above, then choose how it went.
+                          </p>
+                        </section>
+                      ) : assessmentCard.tariffModel.kind === 'questionTotal' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
                           {confidenceReview ? <>
                             Review your complete answer against the source guidance and required parts above,
@@ -3725,7 +3749,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               {(
                 <MotionDiv key="grades" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.18 }}>
                   <p id="mark-bank-grade-guidance" style={{ margin: '0 0 9px', font: `400 12px/1.45 ${SANS}`, color: INK_2 }}>
-                    {isNoSchemeCard(assessmentCard)
+                    {isNoSchemeCard(assessmentCard) || unpricedSection
                       ? <>Nothing on this card can be scored, so there is no suggestion. Choose how it went yourself.</>
                       : mathematicsCard
                       ? !schemeInteracted
@@ -3754,7 +3778,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       360px hit area and makes the rail read as a toolbar. */}
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 168px))', gap: 8 }}>
                     {(['missed', 'shaky', 'got'] as MarkBankGrade[]).map(g => {
-                      const isSuggested = schemeInteracted && !placementPending && g === suggested;
+                      const isSuggested = schemeInteracted && !placementPending && !unpricedSection && g === suggested;
                       return (
                         <button
                           key={g}

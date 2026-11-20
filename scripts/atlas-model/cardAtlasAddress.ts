@@ -11,6 +11,7 @@
  * question number in the card's reference (the audit's own inference, listed as such).
  */
 import spanishAtlas from '../markbank/authoring/spanish-atlas.json';
+import japaneseAtlas from '../markbank/authoring/japanese-atlas.json';
 import physicalEducationTasks from '../../data/paperTrail/physicalEducationTasks.json';
 import accountingAuthored from '../../components/MarkBank/cards/accounting/authored.json';
 import agsciRuntime from '../../data/examTopics/agricultural-science-question-runtime.json';
@@ -42,6 +43,7 @@ const irishFiles = import.meta.glob('../../components/MarkBank/cards/irish/*auth
 const economicsReviews = import.meta.glob('../markbank/authoring/reviews/economics-*-ev.json', { eager: true, import: 'default' }) as Record<string, { fileid: string; questions: Array<{ n: string; tasks?: Array<{ cardId?: string }> }> }>;
 
 const spanish = (spanishAtlas as { cards: Record<string, { fileid: string; n: string }> }).cards;
+const japanese = (japaneseAtlas as { cards: Record<string, { fileid: string; n: string | null }> }).cards;
 const peByCard = new Map((physicalEducationTasks as Array<{ cardId: string; fileid: string; n: string }>).map(t => [t.cardId, t]));
 const accByCard = new Map(((accountingAuthored as { cards: Json[] }).cards).map(c => [String(c.id), c]));
 const agsciByCard = new Map(((agsciRuntime as { markBankCards: Json[] }).markBankCards).map(r => [String(r.cardId), r]));
@@ -183,7 +185,12 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
       const aural = /^l(\d)$/.exec(m[1]);
       return { fileid: fid, cands: aural ? [m[1], { ifHas: aural[1], n: aural[1] }] : [m[1]], cls: 'inferred' };
     }
-    case 'italian': case 'japanese':
+    case 'japanese': {
+      // The Atlas numbers each Japanese paper straight through, with labels that change by year: a committed join.
+      const e = japanese[c.id];
+      return e?.n ? { fileid: e.fileid, cands: [e.n], cls: 'join' } : { fail: e ? 'no-atlas-question' : 'no-join-entry', cls: 'join' };
+    }
+    case 'italian':
       // The Atlas numbers these papers straight through; card citations restart in each section. No join yet.
       return { fail: 'no-address-rule', cls: 'none' };
     default: {

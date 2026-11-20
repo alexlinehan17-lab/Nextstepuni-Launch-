@@ -121,8 +121,8 @@
   "ordinary": 125
  },
  "portuguese": {
-  "higher": 291,
-  "ordinary": 264
+  "higher": 450,
+  "ordinary": 294
  },
  "romanian": {
   "higher": 50
@@ -201,7 +201,7 @@
   "ordinary": 644
  },
  "music": {
-  "higher": 664,
-  "ordinary": 595
+  "higher": 904,
+  "ordinary": 804
  }
 }

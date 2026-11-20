@@ -1505,12 +1505,23 @@ const polishAddedTotal = [...Object.values(POLISH_ADDED), ...Object.values(POLIS
  * shared reader refused, each named. */
 const PORTUGUESE_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 60, ordinary: 58 },
+  2019: { higher: 13, ordinary: 0 },
+  2018: { higher: 13, ordinary: 0 },
+  2017: { higher: 13, ordinary: 0 },
+  2016: { higher: 13, ordinary: 0 },
+  2015: { higher: 13, ordinary: 0 },
+  2014: { higher: 13, ordinary: 0 },
+  2013: { higher: 13, ordinary: 0 },
+  2012: { higher: 13, ordinary: 0 },
+  2011: { higher: 13, ordinary: 0 },
+  2010: { higher: 13, ordinary: 0 },
 };
 const PORTUGUESE_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
   2025: { higher: 40, ordinary: 40 },
   2024: { higher: 45, ordinary: 37 },
   2023: { higher: 43, ordinary: 44 },
-  2022: { higher: 9, ordinary: 6 },
+  2022: { higher: 36, ordinary: 36 },
+  2021: { higher: 2, ordinary: 0 },
 };
 const PORTUGUESE_ADDED_TO_FROZEN_ID = /^por-202[1-5]-(?:hl|ol)-(?:l[a-e]-|b-)/;
 const PORTUGUESE_ADDED_TO_FROZEN_READING = new Set<string>([
@@ -1534,6 +1545,11 @@ const PORTUGUESE_ADDED_TO_FROZEN_READING = new Set<string>([
   'por-2023-ol-a-2-a',
   'por-2023-ol-a-2-h',
   'por-2023-ol-a-3-b',
+  'por-2022-ol-a-1-d',
+  'por-2022-ol-a-2-d',
+  'por-2022-ol-a-3-g',
+  'por-2021-hl-ii-1',
+  'por-2021-hl-ii-2',
 ]);
 const isPortugueseAdded = (id: string) => /^por-\d{4}-/.test(id) && (Number(id.slice(4, 8)) in PORTUGUESE_ADDED
   || (Number(id.slice(4, 8)) in PORTUGUESE_ADDED_TO_FROZEN
@@ -3261,6 +3277,16 @@ describe('Mark Bank card preservation', () => {
       ['2015 ordinary', 52, '0b3ac0058425a2a63b7bb2afc77125aac38f346b37248ee1bfe957d434ab27a2'],
       ['2014 higher', 58, '81a38a10481a0b6222b729de7aa5c3e08f814a0ec88c0224c08f0f3bb68ebba2'],
       ['2014 ordinary', 52, '42596fd6679cade7d6c3eeb3c5ca314790d4929140d4cc0e537e1cf6acf46ac3'],
+      ['2013 higher', 55, '0cb69426999770514fc2f3da657f8344089c338130ec556d0f9fecbe71f79778'],
+      ['2013 ordinary', 51, '339d41160ba1ae084c13bdca8937fb6029fbb660b6569f6af6eb6cc5ea8b0716'],
+      ['2011 higher', 56, '5726ceeb3a351cd26b81b5fcab2ade266b549a313af8fbae44b6c2312125fcb8'],
+      ['2011 ordinary', 53, 'f4031d66c14bb6f27cc05d69c215c21c072bd55e0699c6f11cef8325c888dd77'],
+      ['2010 higher', 52, '32c134a41995cdd3d2e4f114d168ca032398b9727160acc1a75061ada4e043b7'],
+      ['2010 ordinary', 52, '38d03c3c3eab8c66b8a23e9225cff58b2ef69df208a8a7c12f470d8cad0b31ad'],
+      ['2012 higher', 55, '0a0e4c44992f3397cfaa06b522616b04181327d1366cddea39ff5b0023bbd3f2'],
+      ['2012 ordinary', 53, '90cc73fbdf587827dbbc894324f3ee9a0d8d2e7ae8f0c1fd90114344c1e8d96d'],
+      ['2023 higher deferred', 11, '75d010f65ce07730f15d1759058a02eb92a891561773b13f27c6bc05773712ee'],
+      ['2022 higher deferred', 11, '48007df9138409a6b4d6ab6cbc9eec98328e49abea766734aba54aef0d1cc5ea'],
     ];
     const lane = new Map<string, string[]>();
     for (const card of [...MUSIC_HIGHER, ...MUSIC_ORDINARY]) {

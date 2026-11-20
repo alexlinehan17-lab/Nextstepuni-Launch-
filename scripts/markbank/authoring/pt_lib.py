@@ -268,6 +268,20 @@ def shown(sel, lead=None):
     return Shown(sel, lead)
 
 
+class PctCriterion(Row):
+    """A percentage criterion the scheme prints for an essay ("1. Clareza do
+    discurso – ... - 30%", 2010/2011 Higher Parts II and III), carded under
+    CARD-STANDARD 10b: the printed line whole, at its percentage of the
+    printed total, placed 0 to that mark. Refused unless the percentage times
+    the total is a whole number (never round a tariff into existence)."""
+    def __init__(self, sel, total, lead=None):
+        self.sel, self.total, self.lead = sel, total, lead
+
+
+def pct(sel, total, lead=None):
+    return PctCriterion(sel, total, lead)
+
+
 def pairs(lines, tariff, after=None):
     """One point row per printed cue/answer pair on `lines`, each at the
     per-answer price of `tariff` (a scheme line number, or a price object):
@@ -333,6 +347,21 @@ def build_rows(doc, rows, note, key=''):
             out.append({'id': rid, 'kind': 'point', 'verbatim': r.sel.text(doc), 'marks': None,
                         **({'contextNote': ctx} if ctx else {})})
             continue
+        if isinstance(r, PctCriterion):
+            text = r.sel.text(doc)
+            m = re.search(r'(\d{1,3})\s*%\s*$', text)
+            if not m:
+                raise ValueError(f'{key}: criterion {text!r} ends in no percentage')
+            count, per, notation = r.total.read(doc)
+            whole = count * per
+            if int(m.group(1)) * whole % 100:
+                raise ValueError(f'{key}: {m.group(1)}% of {notation!r} is not a whole mark')
+            marks = int(m.group(1)) * whole // 100
+            out.append({'id': rid, 'kind': 'criterion', 'verbatim': text, 'marks': marks,
+                        'permittedMarks': list(range(marks + 1)),
+                        **({'contextNote': ctx} if ctx else {})})
+            total += marks
+            continue
         if isinstance(r, One):
             count, per, notation = r.tariff.read(doc)
             if count != 1:
@@ -346,8 +375,13 @@ def build_rows(doc, rows, note, key=''):
             left = (count - r.printed) * per
             if left <= 0:
                 raise ValueError(f'{key}: {notation!r} pays no more than the {r.printed} printed answers')
-            said = (f'The scheme prices this ask “{notation}” and prints {NUMBER[r.printed]} '
-                    f'answer{"" if r.printed == 1 else "s"}; it prints no answer for the rest.')
+            if r.printed == 0:
+                # A task the scheme prints no answer for at all (2018 Higher
+                # Part III Proposta 2): the card's one row.
+                said = f'The paper prices this task “{notation}”; the scheme prints no answer for it.'
+            else:
+                said = (f'The scheme prices this ask “{notation}” and prints {NUMBER[r.printed]} '
+                        f'answer{"" if r.printed == 1 else "s"}; it prints no answer for the rest.')
             out.append({'id': rid, 'kind': 'criterion', 'verbatim': UNPRINTED_ANSWER, 'marks': left,
                         'unprinted': True, 'permittedMarks': list(range(left + 1)),
                         'contextNote': _joined(ctx, said)})

@@ -603,19 +603,19 @@
     "refsHash": "98497719950dbd78"
   },
   "music": {
-    "cards": 1259,
-    "contentHash": "032ad6545a7054fc",
-    "coveragePct": 100.0,
-    "covered": 1319,
+    "cards": 1708,
+    "contentHash": "8cc16882eb137a54",
+    "coveragePct": 95.4,
+    "covered": 1786,
     "excluded": 0,
-    "leaves": 1319,
-    "open": 0,
+    "leaves": 1873,
+    "open": 87,
     "orphans": 0,
     "papers": {
       "count": 90,
       "hash": "19ae47d97a6c3bd4"
     },
-    "refsHash": "f5e3e0088d2a4238"
+    "refsHash": "b7b0eca0a10423ac"
   },
   "physical-education": {
     "cards": 772,
@@ -678,19 +678,19 @@
     "refsHash": "38694d71adeb29ca"
   },
   "portuguese": {
-    "cards": 555,
-    "contentHash": "f3720c011c91b293",
-    "coveragePct": 82.5,
-    "covered": 555,
-    "excluded": 59,
+    "cards": 744,
+    "contentHash": "ce36bcf5b5fb45e5",
+    "coveragePct": 100.0,
+    "covered": 744,
+    "excluded": 0,
     "leaves": 744,
-    "open": 130,
+    "open": 0,
     "orphans": 0,
     "papers": {
       "count": 31,
       "hash": "1ed69ceed274dcd0"
     },
-    "refsHash": "8be153614d17c28a"
+    "refsHash": "4c0d60523a88bcfe"
   },
   "religious-education": {
     "cards": 786,

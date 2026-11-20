@@ -1,0 +1,1769 @@
+{
+ "readingFile": "2022-hl-deferred.json",
+ "readBy": "second reader (Opus helper), 20 Nov 2026",
+ "method": "Every page of both booklets rendered at 130 dpi (music_pages.py render) and read in full; each string compared character by character with the printed question block, with PyMuPDF clips at 220–600 dpi wherever a character could be in doubt (the Q2 lyric block and quotes, every en dash in 'bars 1–8', 'lines 4–6', 'bars 7–8', 'bars 1–6', the accents in idée, sean-nós, céilí, Háry János, Kodály, the Q5/Q6 lead-ins and excerpt headings, the composing titles and every bullet, 'AA¹BB¹', 'E♭', both 'Answer one question only in this section:' lines). The OCR files (ocr/2022-hl-deferred-006/008.json) were looked at only as a cross-check; the verdicts rest on the renders. Read only: nothing but this record was written.",
+ "booklets": {
+  "listening": "paper-trail-corpus/deferredexams/2022/LC067ALP008EV.pdf (2022.M52C, 28 pages)",
+  "composing": "paper-trail-corpus/deferredexams/2022/LC067ALP006EV.pdf (2022.M50C, 20 pages)"
+ },
+ "pagesRendered": {
+  "listening": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28
+  ],
+  "composing": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20
+  ],
+  "zoomed": {
+   "listening": [
+    4,
+    8,
+    9,
+    14,
+    16,
+    20
+   ],
+   "composing": [
+    3,
+    4,
+    6,
+    8,
+    11,
+    12,
+    14,
+    16
+   ]
+  },
+  "dir": "/private/tmp/claude-501/music-second-reader-2022hld/"
+ },
+ "asks": [
+  {
+   "address": "Q1(a)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The theme played in this excerpt is called"
+  },
+  {
+   "address": "Q1(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(a)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played twice. Answer (a) and (b)."
+  },
+  {
+   "address": "Q1(b)(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "A compositional technique used in this excerpt is"
+  },
+  {
+   "address": "Q1(b)(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(b)(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played twice. Answer (a) and (b)."
+  },
+  {
+   "address": "Q1(b)(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe how this technique is used in this excerpt, referring to the instrumentation in your answer."
+  },
+  {
+   "address": "Q1(b)(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(b)(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played twice. Answer (a) and (b)."
+  },
+  {
+   "address": "Q1(c)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Insert the 5 missing melody notes at X on the score above."
+  },
+  {
+   "address": "Q1(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(c)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played twice more. An outline score of bars 1–8 of the music in this excerpt is printed below. Answer (c) and (d)."
+  },
+  {
+   "address": "Q1(d)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify the cadence at the end of the excerpt."
+  },
+  {
+   "address": "Q1(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    4
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played twice more. An outline score of bars 1–8 of the music in this excerpt is printed below. Answer (c) and (d)."
+  },
+  {
+   "address": "Q1(e)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "At the beginning, the theme played by the upper strings is"
+  },
+  {
+   "address": "Q1(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(e)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times."
+  },
+  {
+   "address": "Q1(f)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify an instrumental technique used at the beginning of the excerpt."
+  },
+  {
+   "address": "Q1(f)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(f)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times."
+  },
+  {
+   "address": "Q1(g)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name the theme that is heard for the first time halfway through the excerpt."
+  },
+  {
+   "address": "Q1(g)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(g)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times."
+  },
+  {
+   "address": "Q1(h)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two features of this theme."
+  },
+  {
+   "address": "Q1(h)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(h)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times."
+  },
+  {
+   "address": "Q1(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Which section of the movement is this excerpt taken from?"
+  },
+  {
+   "address": "Q1(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q1(j)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The instrument on which the opening melody (the idée fixe) is played is"
+  },
+  {
+   "address": "Q1(j)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(j)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q1(k)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Explain the term idée fixe."
+  },
+  {
+   "address": "Q1(k)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(k)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q1(l)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "A very dramatic moment occurs immediately after we hear the idée fixe. Describe what happens in the music at this point."
+  },
+  {
+   "address": "Q1(l)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(l)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q1(m)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The excerpt ends in the key of"
+  },
+  {
+   "address": "Q1(m)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(m)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    6
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q2(a)(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name a recording technique used in this excerpt."
+  },
+  {
+   "address": "Q2(a)(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from She’s Leaving Home by the Beatles will be played three times.\n• The lyrics are printed below. Line 1 Friday morning at nine o’clock she is far away. Line 2 Waiting to keep the appointment she made. Line 3 Meeting a man from the motor trade. Line 4 She (what did we do that was wrong?) Line 5 Is having (we didn’t know it was wrong.) Line 6 Fun (Fun is the one thing that money can’t buy.) Line 7 Something inside, that was always denied, for so many years. Line 8 She’s leaving home, (bye, bye.)\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(a)(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Give a brief description of this technique."
+  },
+  {
+   "address": "Q2(a)(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from She’s Leaving Home by the Beatles will be played three times.\n• The lyrics are printed below. Line 1 Friday morning at nine o’clock she is far away. Line 2 Waiting to keep the appointment she made. Line 3 Meeting a man from the motor trade. Line 4 She (what did we do that was wrong?) Line 5 Is having (we didn’t know it was wrong.) Line 6 Fun (Fun is the one thing that money can’t buy.) Line 7 Something inside, that was always denied, for so many years. Line 8 She’s leaving home, (bye, bye.)\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(b)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Which instrumental technique can be heard at the words ‘Waiting to keep the appointment she made’ (line 2)?",
+   "note": "Curly quotes ‘ … ’ confirmed at 350 dpi."
+  },
+  {
+   "address": "Q2(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from She’s Leaving Home by the Beatles will be played three times.\n• The lyrics are printed below. Line 1 Friday morning at nine o’clock she is far away. Line 2 Waiting to keep the appointment she made. Line 3 Meeting a man from the motor trade. Line 4 She (what did we do that was wrong?) Line 5 Is having (we didn’t know it was wrong.) Line 6 Fun (Fun is the one thing that money can’t buy.) Line 7 Something inside, that was always denied, for so many years. Line 8 She’s leaving home, (bye, bye.)\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(c)(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The texture at the beginning is"
+  },
+  {
+   "address": "Q2(c)(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from She’s Leaving Home by the Beatles will be played three times.\n• The lyrics are printed below. Line 1 Friday morning at nine o’clock she is far away. Line 2 Waiting to keep the appointment she made. Line 3 Meeting a man from the motor trade. Line 4 She (what did we do that was wrong?) Line 5 Is having (we didn’t know it was wrong.) Line 6 Fun (Fun is the one thing that money can’t buy.) Line 7 Something inside, that was always denied, for so many years. Line 8 She’s leaving home, (bye, bye.)\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(c)(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    9
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe how the texture changes later in the excerpt."
+  },
+  {
+   "address": "Q2(c)(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    9
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from She’s Leaving Home by the Beatles will be played three times.\n• The lyrics are printed below. Line 1 Friday morning at nine o’clock she is far away. Line 2 Waiting to keep the appointment she made. Line 3 Meeting a man from the motor trade. Line 4 She (what did we do that was wrong?) Line 5 Is having (we didn’t know it was wrong.) Line 6 Fun (Fun is the one thing that money can’t buy.) Line 7 Something inside, that was always denied, for so many years. Line 8 She’s leaving home, (bye, bye.)\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(d)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    8,
+    9
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe one feature of the accompaniment in lines 4–6.",
+   "note": "The ask is printed on page 9 only; the file's pages [8, 9] take in the lyric lines 4–6 it refers to (page 8). Not a text difference."
+  },
+  {
+   "address": "Q2(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    8,
+    9
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from She’s Leaving Home by the Beatles will be played three times.\n• The lyrics are printed below. Line 1 Friday morning at nine o’clock she is far away. Line 2 Waiting to keep the appointment she made. Line 3 Meeting a man from the motor trade. Line 4 She (what did we do that was wrong?) Line 5 Is having (we didn’t know it was wrong.) Line 6 Fun (Fun is the one thing that money can’t buy.) Line 7 Something inside, that was always denied, for so many years. Line 8 She’s leaving home, (bye, bye.)\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(e)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    9
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This song is a fusion of classical and pop styles. Describe one feature of each style, as used by the Beatles in this excerpt."
+  },
+  {
+   "address": "Q2(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    9
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from She’s Leaving Home by the Beatles will be played three times.\n• The lyrics are printed below. Line 1 Friday morning at nine o’clock she is far away. Line 2 Waiting to keep the appointment she made. Line 3 Meeting a man from the motor trade. Line 4 She (what did we do that was wrong?) Line 5 Is having (we didn’t know it was wrong.) Line 6 Fun (Fun is the one thing that money can’t buy.) Line 7 Something inside, that was always denied, for so many years. Line 8 She’s leaving home, (bye, bye.)\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(a)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This section is known as the cadenza. In which section of the movement does it occur?"
+  },
+  {
+   "address": "Q3(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Piano Concerto in A major K488 by Mozart will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(b)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Explain the term cadenza."
+  },
+  {
+   "address": "Q3(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Piano Concerto in A major K488 by Mozart will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(c)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify three features of the music in this excerpt."
+  },
+  {
+   "address": "Q3(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    10
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Piano Concerto in A major K488 by Mozart will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(d)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    11
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The cadence at the end of the excerpt is"
+  },
+  {
+   "address": "Q3(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    11
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Piano Concerto in A major K488 by Mozart will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(e)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    11
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe how the music continues immediately after this cadenza section in Piano Concerto K488 by Mozart."
+  },
+  {
+   "address": "Q3(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    11
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Piano Concerto in A major K488 by Mozart will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(a)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name the theme that this excerpt is based on."
+  },
+  {
+   "address": "Q4(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges (with Danse Macabre) by Raymond Deane will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(b)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name three instruments that play in this excerpt."
+  },
+  {
+   "address": "Q4(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges (with Danse Macabre) by Raymond Deane will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(c)(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An instrumental technique used in this excerpt is"
+  },
+  {
+   "address": "Q4(c)(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges (with Danse Macabre) by Raymond Deane will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(c)(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Explain this technique."
+  },
+  {
+   "address": "Q4(c)(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges (with Danse Macabre) by Raymond Deane will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(d)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This section is based on a canon. Describe briefly how this canon begins and proceeds."
+  },
+  {
+   "address": "Q4(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    12
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges (with Danse Macabre) by Raymond Deane will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(e)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    13
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe two features of 20th Century Music as used by Raymond Deane in this excerpt."
+  },
+  {
+   "address": "Q4(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    13
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges (with Danse Macabre) by Raymond Deane will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q5 A(a)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two features of the sean-nós style of singing as heard in this excerpt."
+  },
+  {
+   "address": "Q5 A(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(a)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1."
+  },
+  {
+   "address": "Q5 A(b)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe the accompaniment."
+  },
+  {
+   "address": "Q5 A(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(b)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1."
+  },
+  {
+   "address": "Q5 A(c)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify the type of dance heard in this excerpt, and its time signature."
+  },
+  {
+   "address": "Q5 A(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(c)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2."
+  },
+  {
+   "address": "Q5 A(d)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Write one bar of rhythm associated with this type of dance."
+  },
+  {
+   "address": "Q5 A(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2."
+  },
+  {
+   "address": "Q5 A(e)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Using letters, write down the form of the dance tune heard in this excerpt."
+  },
+  {
+   "address": "Q5 A(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(e)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    14
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2."
+  },
+  {
+   "address": "Q5 A(f)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    15
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This excerpt is a fusion of Irish traditional music and jazz. Name two instruments that play the melody in this excerpt."
+  },
+  {
+   "address": "Q5 A(f)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    15
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(f)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    15
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3."
+  },
+  {
+   "address": "Q5 A(g)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    15
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two non-traditional features of the accompaniment."
+  },
+  {
+   "address": "Q5 A(g)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    15
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(g)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    15
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3."
+  },
+  {
+   "address": "Q5 B(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Write an account of the harping tradition in Ireland. Refer to performers and music in your answer."
+  },
+  {
+   "address": "Q5 B(i)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "page": [
+    14,
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
+   "note": "First line on listening page 14 (bold 'Irish Music.'), second on page 16: the page prints a bold 'B' with no full stop, so 'B Answer one of the following:' is as printed."
+  },
+  {
+   "address": "Q5 B(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Discuss the ways in which Irish music has influenced North American music. In your answer refer to performing styles and musical examples."
+  },
+  {
+   "address": "Q5 B(ii)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "page": [
+    14,
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
+   "note": "First line on listening page 14 (bold 'Irish Music.'), second on page 16: the page prints a bold 'B' with no full stop, so 'B Answer one of the following:' is as printed."
+  },
+  {
+   "address": "Q5 B(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Discuss the development of the céilí band tradition in the context of Irish traditional music."
+  },
+  {
+   "address": "Q5 B(iii)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "page": [
+    14,
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
+   "note": "First line on listening page 14 (bold 'Irish Music.'), second on page 16: the page prints a bold 'B' with no full stop, so 'B Answer one of the following:' is as printed."
+  },
+  {
+   "address": "Q5 B(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Write an account of the Irish tradition of sean-nós singing and its features. Refer to singers and performances or recordings in your answer."
+  },
+  {
+   "address": "Q5 B(iv)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "page": [
+    14,
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
+   "note": "First line on listening page 14 (bold 'Irish Music.'), second on page 16: the page prints a bold 'B' with no full stop, so 'B Answer one of the following:' is as printed."
+  },
+  {
+   "address": "Q5 B(v)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe the different ways in which ornamentation is used in Irish traditional music. In your answer refer to musical examples."
+  },
+  {
+   "address": "Q5 B(v)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "page": [
+    14,
+    16
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB Answer one of the following:",
+   "note": "First line on listening page 14 (bold 'Irish Music.'), second on page 16: the page prints a bold 'B' with no full stop, so 'B Answer one of the following:' is as printed."
+  },
+  {
+   "address": "Q6(a)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The missing notes in bars 7–8 in the score above are"
+  },
+  {
+   "address": "Q6(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(a)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played twice. Answer (a) and (b). An outline score of bars 1–6 of the opening melody is printed below."
+  },
+  {
+   "address": "Q6(b)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The opening melody is played by the"
+  },
+  {
+   "address": "Q6(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(b)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    20
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played twice. Answer (a) and (b). An outline score of bars 1–6 of the opening melody is printed below."
+  },
+  {
+   "address": "Q6(c)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "There is a sudden interruption in the music halfway through. Identify two features of the music at this point."
+  },
+  {
+   "address": "Q6(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(c)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played twice more. Answer (c)."
+  },
+  {
+   "address": "Q6(d)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The time signature is"
+  },
+  {
+   "address": "Q6(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times."
+  },
+  {
+   "address": "Q6(e)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The melody features"
+  },
+  {
+   "address": "Q6(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(e)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times."
+  },
+  {
+   "address": "Q6(f)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two rhythmic features of the music."
+  },
+  {
+   "address": "Q6(f)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(f)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    21
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times."
+  },
+  {
+   "address": "Q6(g)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    22
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify one feature of the opening melody."
+  },
+  {
+   "address": "Q6(g)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    22
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(g)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    22
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q6(h)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    22
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The compositional technique used in this excerpt is"
+  },
+  {
+   "address": "Q6(h)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    22
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(h)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    22
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q6(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "page": [
+    22
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe two ways in which the composer achieves a sense of climax in this excerpt."
+  },
+  {
+   "address": "Q6(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "page": [
+    22
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on excerpts of music from Háry János Suite by Zoltán Kodály.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "page": [
+    22
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Section A Q1",
+   "paper": "composing",
+   "field": "questionText",
+   "page": [
+    4,
+    5
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Continuation of a given opening • Continue the given opening to make a 16-bar melody. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ oboe □ trumpet □ horn"
+  },
+  {
+   "address": "Section A Q1",
+   "paper": "composing",
+   "field": "grid.stem",
+   "page": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer one question only in this section:"
+  },
+  {
+   "address": "Section A Q2",
+   "paper": "composing",
+   "field": "questionText",
+   "page": [
+    6,
+    7
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Setting music to a given text Here is an extract from the poem Escape At Bedtime by Robert Louis Stevenson. The lights from the parlour and kitchen shone out Through the blinds and the windows and bars; And high overhead and moving about, There were thousands of millions of stars. The opening line has been set for you. • Set the remaining words to make a melody of 16 bars. (You may exceed this number of bars and include a modulation, if you wish.) • Add appropriate performing directions (phrasing and dynamics) to the melody."
+  },
+  {
+   "address": "Section A Q2",
+   "paper": "composing",
+   "field": "grid.stem",
+   "page": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer one question only in this section:"
+  },
+  {
+   "address": "Section A Q3",
+   "paper": "composing",
+   "field": "questionText",
+   "page": [
+    8,
+    9
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Composing to a given dance rhythm or metre or form The opening phrase of a gavotte is given. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ violin □ descant recorder □ flute □ trumpet",
+   "note": "'Use the form AA¹BB¹.' zoomed at 600 dpi: both 1s are superscript, full stop after the second."
+  },
+  {
+   "address": "Section A Q3",
+   "paper": "composing",
+   "field": "grid.stem",
+   "page": [
+    3
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer one question only in this section:"
+  },
+  {
+   "address": "Section B Q4",
+   "paper": "composing",
+   "field": "questionText",
+   "page": [
+    12,
+    13
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Composing melody and bass notes from a set of chords Preparatory work: Plot the chords available in the key of C minor, either in the chord bank grid or on the stave below. • Study the following piece of music. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style."
+  },
+  {
+   "address": "Section B Q4",
+   "paper": "composing",
+   "field": "grid.stem",
+   "page": [
+    11
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer one question only in this section:"
+  },
+  {
+   "address": "Section B Q5",
+   "paper": "composing",
+   "field": "questionText",
+   "page": [
+    14,
+    15
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Composing bass notes and chord indications to a given tune Preparatory work: Plot the chords available in the key of E♭ major, either in the chord bank grid or on the stave below. • Study the following piece of music. • Add suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+   "note": "The page sets the flat raised after the E ('E' then a superscript music-font flat, 'key of E♭ major'); the file's 'E♭' carries the printed sign (Unicode has no superscript flat). The second OCR reading gives 'Eb major', the first 'E' major'."
+  },
+  {
+   "address": "Section B Q5",
+   "paper": "composing",
+   "field": "grid.stem",
+   "page": [
+    11
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer one question only in this section:"
+  },
+  {
+   "address": "Section B Q6",
+   "paper": "composing",
+   "field": "questionText",
+   "page": [
+    16,
+    17
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Adding a countermelody or descant and chordal support to a given tune Preparatory work: Plot the chords available in the key of A major, either in the chord bank grid or on the stave below. • Study the following piece of music. • Insert suitable chord indications in the boxes provided. • Continue the descant part in the given style to complete the piece. • Do not use the same chord in the same position in adjacent boxes. • You may either use chord symbols or Roman numerals, but not both."
+  },
+  {
+   "address": "Section B Q6",
+   "paper": "composing",
+   "field": "grid.stem",
+   "page": [
+    11
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer one question only in this section:"
+  },
+  {
+   "address": "Section A Q3",
+   "paper": "composing",
+   "field": "readFromPage",
+   "page": [
+    8
+   ],
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Use the form AA¹BB¹.",
+   "note": "Box [0.1, 0.16, 0.62, 0.19] holds the printed line (it sits at about y 0.170–0.185, x 0.15–0.33 of page 8)."
+  }
+ ],
+ "missingLines": [
+  "Listening p16, Q5 B: 'Indicate your choice of question (i) □ (ii) □ (iii) □ (iv) □ (v) □' (tick-box choice line under the five options) is in no string; answer-slot material, listed for completeness (this year's wording is 'Indicate', not 'Please indicate').",
+  "Listening p16: 'Continue your answer on pages 17–19. Question 6 begins on page 20.' (italic) and p3, p5, p15, p21 'This question continues on the next page.' are in no string; page navigation, outside the question blocks.",
+  "Listening p22: 'You have three minutes to complete the examination paper.' (bold) is in no string; outside the question block.",
+  "Listening question headings 'Question 1 (25 marks)' … 'Question 6 (20 marks)' are in no string (the address carries the number), as in every sitting.",
+  "Listening answer-slot labels in no string (not asks, by rule): 'Answer:', 'Feature 1:' / 'Feature 2:' (Q1(h), Q3(c) adds 'Feature 3:', Q4(e), Q5 A(a), Q5 A(g), Q6(c), Q6(f)), 'Classical:' / 'Pop:' (Q2(e)), 'Dance:' / 'Time signature:' (Q5 A(c), shown in its figure), 'Instrument 1:' / 'Instrument 2:' (Q5 A(f)), numbered rows '1. 2. 3.' (Q4(b)) and '1.' / '2.' (Q6(i)).",
+  "Listening tick-box options in no string, carried by the asks' figures (printed-choice rule): Q1(b)(i) canon / counter melody / ostinato; Q1(e) the same theme as in Excerpt 1 / an inversion of the theme in Excerpt 1 / a different theme to Excerpt 1; Q1(m) B flat major / G major / G minor; Q2(c)(i) monophonic / homophonic / polyphonic; Q3(d) perfect / imperfect / interrupted; Q6(a) three notated options; Q6(d) 3/4, 4/4, 6/8; Q6(e) step movement / arpeggio movement / octave leaps.",
+  "Listening score material in no string: the Q1 Excerpt 1 outline score with its X bracket (p4) and the Q6 Excerpt 1 outline score with bar numbers 2–8 (p20); inside the figures.",
+  "Composing p3 and p11: the section bars 'Section A  Melody Composition  50 marks' / 'Section B  Harmony  50 marks' and the question lists ('Question 1 Continuation of a given opening (50 marks) or Question 2 … or Question 3 …', likewise Q4–Q6) are in no string (section level); the 'Answer one question only in this section:' lines are carried by grid.stem. Composing p2 instructions ('Answer as follows: • one question from Section A – Melody Composition OR • one question from Section B – Harmony') are in no string; paper level.",
+  "Composing score and chord-bank material in no string: 'Moderato', 'mf' / 'mp', the Q2 underlay 'The lights from the par - lour and kit - chen shone_ out___' (p7), the chord bank grids' labels 'Notes of chord' / 'Chord symbol' / 'Roman numeral' and filled cells (p12, p14, p16; worked example, in notCounted), the chord symbols over the staves (p12–p17), the stave labels 'Descant' / 'Melody' (p16), and the 'Roughwork' / 'Extra work' boxes."
+ ],
+ "observations": [
+  "Addresses match the printed numbering throughout: Q1 runs (a)–(m) across its three excerpts with (b)(i)/(ii); Q2 (a)(i)/(ii), (b), (c)(i)/(ii), (d), (e); Q3 (a)–(e); Q4 (a), (b), (c)(i)/(ii), (d), (e); Q5 A (a)–(g) across three excerpts; Q5 B (i)–(v); Q6 (a)–(i) across three excerpts; composing Section A Q1–Q3, Section B Q4–Q6. The letters never restart under an excerpt, so no address needs 'Excerpt N'.",
+  "The sub-part labels '(i)' / '(ii)' that open the printed lines of Q1(b), Q2(a), Q2(c) and Q4(c) are carried by the addresses, not the question text, as in the lane's other sittings.",
+  "pagesWithoutAsks checked against the renders: listening 1, 2, 7, 17, 18, 19, 23–28 and composing 1, 2, 3, 10, 11, 18, 19, 20 carry no ask (composing 3 and 11 carry only the section stems used as grid.stem)."
+ ],
+ "summary": {
+  "entriesChecked": 149,
+  "matchesPrint": 149,
+  "differs": 0
+ }
+}
