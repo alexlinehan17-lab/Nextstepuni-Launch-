@@ -1564,7 +1564,7 @@ const LITHUANIAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: num
   2026: { higher: 31, ordinary: 30 },
   2025: { higher: 28, ordinary: 30 },
   2024: { higher: 0, ordinary: 27 },
-  2023: { higher: 25, ordinary: 0 },
+  2023: { higher: 25, ordinary: 25 },
 };
 const LITHUANIAN_ADDED_TO_FROZEN_ID = /^lt-202[2-6]-(?:hl|ol)-l[a-e]-/;
 const isLithuanianAdded = (id: string) => /^lt-\d{4}-/.test(id)

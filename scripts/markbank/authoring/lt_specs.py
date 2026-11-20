@@ -351,6 +351,18 @@ def rows_for(r, note):
         if len(cells) == 1:
             return [{'id': 'r-1', 'kind': 'point', 'verbatim': cells[0]['text'], 'marks': top,
                      'contextNote': note}], top
+        if len(cells) == count:
+            # every printed answer is required, each at its own printed price
+            # (2023 OL LB Q2(c): "8 marks (2 × 4 marks)" over "Atimdavo 4 marks"
+            # and "Duodavo 4 marks", one per blank): a point row each, as on
+            # the unpriced path above, never a menu of all its options
+            def ctx(i, c):
+                lead = f'For “{c["lead"]}”' if c.get('lead') else ''
+                if i == 1:
+                    return f'{lead}: {note}' if lead else note
+                return lead
+            return [{'id': f'r-{i}', 'kind': 'point', 'verbatim': c['text'], 'marks': top,
+                     **({'contextNote': ctx(i, c)} if ctx(i, c) else {})} for i, c in enumerate(cells, 1)], count * top
         return [{'id': 'r-1', 'kind': 'anyN', 'verbatim': 'The answers the scheme accepts in full',
                  'marks': None, 'contextNote': note,
                  'group': {'claimMax': count, 'perOption': top, 'options': [c['text'] for c in cells]}}], count * top
