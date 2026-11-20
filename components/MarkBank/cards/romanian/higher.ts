@@ -3729,4 +3729,307 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\""
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2026 Higher Level — © State Examinations Commission.",
+    id: "ron-2026-hl-i-1-a", topicId: "romanian-0-0", conceptId: "invizibil",
+    section: "I", questionRef: "2026 HL Section I Q1(a)",
+    questionText: "Explicați pe scurt următoarele cuvinte și expresii (redate îngroșat în text), folosind sinonime sau scurte explicaţii și ținând cont de contextul în care apar: forță invizibilă",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "fenomen sau tendință care se manifestă din umbră sau ale căror urmări intră în viața de zi cu zi treptat, pe nesimțite; aspect care tinde să ia o amploare tot mai mare în viețile noastre sau în lumea în care trăim.", marks: 1, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2026 Higher Level — © State Examinations Commission.",
+    id: "ron-2026-hl-i-1-b", topicId: "romanian-0-0", conceptId: "teoriile-preg-tit-terenul",
+    section: "I", questionRef: "2026 HL Section I Q1(b)",
+    questionText: "Explicați pe scurt următoarele cuvinte și expresii (redate îngroșat în text), folosind sinonime sau scurte explicaţii și ținând cont de contextul în care apar: teoriile au pregătit terenul",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "În cazul impunerii sau manifestării concrete a ceva nou, acel lucru a fost mai întâi doar subiectul abstract, teoretic al unor cercetări. Schimbarea pe care o aduce este majoră, ea fiind bine descrisă mai întâi la nivel de discurs teoretic.", marks: 1, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2026 Higher Level — © State Examinations Commission.",
+    id: "ron-2026-hl-i-1-c", topicId: "romanian-0-0", conceptId: "pasul-decisiv",
+    section: "I", questionRef: "2026 HL Section I Q1(c)",
+    questionText: "Explicați pe scurt următoarele cuvinte și expresii (redate îngroșat în text), folosind sinonime sau scurte explicaţii și ținând cont de contextul în care apar: pasul decisiv",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "o etapă importantă în depășirea unei limite sau momentul hotărâtor în intrarea într-o nouă etapă; momentul care marchează clar o schimbare.", marks: 1, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2026 Higher Level — © State Examinations Commission.",
+    id: "ron-2026-hl-i-1-d", topicId: "romanian-0-0", conceptId: "inile-inteligente",
+    section: "I", questionRef: "2026 HL Section I Q1(d)",
+    questionText: "Explicați pe scurt următoarele cuvinte și expresii (redate îngroșat în text), folosind sinonime sau scurte explicaţii și ținând cont de contextul în care apar: mașinile inteligente",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "mecanisme create de om capabile de operațiuni sofisticate, cu un mod de funcționare care le face capabile să execute o parte din operațiunile destinate omului.", marks: 1, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2026 Higher Level — © State Examinations Commission.",
+    id: "ron-2026-hl-i-1-e", topicId: "romanian-0-0", conceptId: "buni-sfetnici",
+    section: "I", questionRef: "2026 HL Section I Q1(e)",
+    questionText: "Explicați pe scurt următoarele cuvinte și expresii (redate îngroșat în text), folosind sinonime sau scurte explicaţii și ținând cont de contextul în care apar: buni sfetnici",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "consilieri de încredere, exemplu care poate inspira, prin prezența și modul său de funcționare.", marks: 1, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2026 Higher Level — © State Examinations Commission.",
+    id: "ron-2026-hl-i-2", topicId: "romanian-0-1", conceptId: "oferi-exemple-folosind-textul-pentru-ilustra",
+    section: "I", questionRef: "2026 HL Section I Q2",
+    questionText: "Oferiți exemple, folosind textul, pentru a ilustra modul în care omul imită natura.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Omul, de la începutul evoluției sale, a încercat să își îmbunățească viața, în mare parte și prin supunerea naturii. A încercat să folosească natura în interesul lui, în interiorul vieții comunității sale. Astfel, un exemplu este folosirea focului, forță imensă a naturii, pe care el a izolat-o și a folosit-o în beneficiul lui. Din zborul păsărilor, s-a născut dorința lui de a se deplasa repede, survolând pericolele terestre. A încercat să își confecționeze aripi asemănătoare, și,după mii de ani, omul a reușit să construiască aparate zburătoare care să se înalțe mai sus decât păsările.", marks: 5, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\" The scheme heads it: “Identificarea informaţiilor detaliate din text:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2026 Higher Level — © State Examinations Commission.",
+    id: "ron-2026-hl-i-3", topicId: "romanian-0-1", conceptId: "prezenta-situa-actual-men-ionat-sau",
+    section: "I", questionRef: "2026 HL Section I Q3",
+    questionText: "Prezentați o situație actuală (menționată sau nu în text) în care folosirea IA ar putea fi utilă.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "O situație menționată în text în care IA poate fi folosită cu succes este în detectarea știrilor false. Fenomenul fake news acaparează spațiul informațional și publicului receptor poate să îi fie dificil să discearnă între adevăr și minciună sau între nuanțe, încât să nu ajungă victima manipulărilor.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\" The scheme heads it: “Înţelegerea ideilor de fond exprimate în text :”." },
+    { id: "r-2", kind: "point", verbatim: "IA poate pune în funcțiune filtre speciale care să facă munca de detectare a falsului sau a tendențiosului, comparând diverse surse, câutând în istoricul acestor surse etc. Utilitatea IA în acest domeniu poate fi repede testată, de asemenea, prin control uman.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2026 Higher Level — © State Examinations Commission.",
+    id: "ron-2026-hl-i-4", topicId: "romanian-0-1", conceptId: "cine-putea-ingrijorat-tirile-privire-dezvoltarea",
+    section: "I", questionRef: "2026 HL Section I Q4",
+    questionText: "Cine ar putea fi îngrijorat de știrile cu privire la dezvoltarea sistemelor de Inteligență Artificială? Raportați-vă la text, ca și la propriile cunoștințe, pentru a dezvolta răspunsul.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "IA pare să pătrundă în tot mai multe domenii de viață și de activitate umană.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\" The scheme heads it: “Înţelegerea profundă a unor idei din text, exprimate mai putin explicit, demonstrând capacitate de gândire analitică şi extrapolarea cunoştinţelor:”." },
+    { id: "r-2", kind: "point", verbatim: "Există domenii unde folosirea acesteia este testată în fiecare zi – selectare de date, operații matematice, traducere, medicină – căutarea diagnosticului, excluderea diagnosticelor greșite. Muncile bazate pe repetitivitate sau pe folosirea unor date deja înmagazinate într-o bază de date pot fi executate de sisteme dotate cu IA. Funcția umană ar rămâne nu de execuție, ci doar de control asupra procesului și produsului activității sistemului de IA, ceea ce ar duce la o creștere a eficacității.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "În domeniul artistic, s-a dovedit că sistemele dotate cu IA pot genera produse/conținuturi artistice, dar, aici, există partea inerentă creativității ce nu poate fi imitată, imprevizibilul și scânteia adusă de fiecare artist.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2026 Higher Level — © State Examinations Commission.",
+    id: "ron-2026-hl-i-5", topicId: "romanian-0-1", conceptId: "text-relatat-robotul-mika-func-ional",
+    section: "I", questionRef: "2026 HL Section I Q5",
+    questionText: "În text, este relatat că: robotul Mika, funcțional cu un soft ce folosește IA, a fost numit director general al unei companii poloneze care produce băuturi alcoolice. Comentați acest fapt, prezentând posibile avantaje și dezavantaje ale acestei situații.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Numirea unui robot într-o poziție ce presupune control și responsabilitate este un indicator al gradului în care sistemele dotate cu IA pot reproduce funcții umane și pot executa roluri îndeplinite de om.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\" The scheme heads it: “Demonstrarea unei bune înţelegeri a textului în ansamblu şi capacitatea de a explica puncte de vedere personale:”." },
+    { id: "r-2", kind: "point", verbatim: "Poziția de director general presupune analizarea în permanență a unor situații și luarea unor hotărâri, privind atât procesul de producție specific întreprinderii, cât și mișcarea subalternilor, a angajaților umani. Avantajul folosirii robotului în această situație poate fi acela că permite o bună sistematizare și analiză a datelor legate de producție.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Pe de altă parte, robotul Mika poate prezenta dezavantaj în gestionarea raporturilor umane - nevoi ale personalului, posibile situații conflictuale sau în luarea unor decizii sau prioritizarea unor alegeri în fața altora atunci când criteriul nu este neapărat cel statistic.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Folosirea robotului pentru o asemenea poziție poate fi experimentală.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2026 Higher Level — © State Examinations Commission.",
+    id: "ron-2026-hl-i-6", topicId: "romanian-0-1", conceptId: "putea-inteligen-artificial-ajute-chiar-salveze",
+    section: "I", questionRef: "2026 HL Section I Q6",
+    questionText: "Ar putea Inteligența Artificială să ajute, chiar să salveze umanitatea sau, din contră, ar putea să o distrugă? Prezentați-vă părerea, aducând argumente.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "IA a fost creată de oameni de știință cu scopul de a asista omul în cercetările sale, ajungându-se la integrarea acesteia, sub diverse aspecte, în viața de zi cu zi, unde folosirea ei nu este indispensabilă, dar îl scutește pe om de anumite sarcini.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\" The scheme heads it: “Buna înţelegere a textului şi a implicațiilor fenomenului descris în el:”." },
+    { id: "r-2", kind: "point", verbatim: "Dezvoltându-se până la a deveni o forță, IA ajunge să fie folosită în domenii și situații dintre cele mai relevante pentru siguranța oamenilor – armată, sănătate. Așa cum există un factor de eroare uman, așa există, cu siguranță, și un factor de risc în folosirea sistemului, oricât de testat și de perfecționat ar fi el. Dar sistemul dotat cu IA poate continua să intervină acolo unde omul s-ar opri din cauza oboselii sau a altor neajunsuri legate inevitabil de condiția umană – rezistență, suportabilitate la anumite condiții etc.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "IA poate fi folosită în mod responsabil pentru a ajuta omul și a servi umanității. Factorul etic este foarte important – până în ce punct este responsabil să folosim IA? Care este vârful pe care îl fixează creatorii acestui sistem pentru folosirea lui? Sau, la fel de bine trebuie să ne întrebăm: există un asemenea punct? Există o limită? Cui îi revine sarcina, responsabilitatea de a configura sistemul de IA? IA poate să se dezvolte până la își depăși creatorii. A fost avut în vedere acest scenariu? Cum se va face alegerea între o persoană și un robot, dacă un asemenea context devine real?", marks: null },
+    { id: "r-4", kind: "point", verbatim: "IA poate ajuta omul. Numai omul poate să facă în așa fel încât limitele să fie respectate.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2026 Higher Level — © State Examinations Commission.",
+    id: "ron-2026-hl-ii-1", topicId: "romanian-1-0", conceptId: "inteligen-artificial-inger-sau-demon-comenta",
+    section: "II", questionRef: "2026 HL Section II Q1",
+    questionText: "Inteligența artificială – înger sau demon? Comentaţi această temă, în lumina textului, în ansamblul său, și exprimându-vă propria părere. (100-150 de cuvinte)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Folosirea roboților sau a oricărui sistem bazat pe IA poate fi acceptată, de cele mai multe ori fără ezitare, ca ajutor, atâta vreme cât rămâne supusă controlului uman.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\" The scheme reprints the task as: “Inteligența artificială – înger sau demon? Discutați această temă, în lumina textului, în ansamblul său, și exprimându-vă propria părere. (100-150 de cuvinte)”." },
+    { id: "r-2", kind: "point", verbatim: "Omul poate fi ușurat în munca lui de intervenția sistemelor IA, dar, pe de altă parte, este încetinit în exprimarea capacităților sale. Omul poate să se lenevească, să intre într-o zonă de comoditate.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Pe măsură ce omul intră într-o zonă de confort intelectual, sistemul IA poate continua să se dezvolte, depășind capacitățile omului și dincolo de zona de control a acestuia.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Un sistem puternic informațional, devenit parte din zone numeroase și variate din viața omului, poate dezvolta capacitatea de a lua singur decizii și de a căuta o cale de a ieși din zona de control al creatorului său.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Un sistem puternic, folosit în mod iresponsabil sau chiar în funcție de interese neetice de cei care îl proiectează și controlează, devine o armă blestemată.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PARTEA A II-A",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2026 Higher Level — © State Examinations Commission.",
+    id: "ron-2026-hl-iii-1", topicId: "romanian-1-1", conceptId: "creierul-uman-crea-neegalat",
+    section: "III", questionRef: "2026 HL Section III Q1",
+    questionText: "Scrieți un eseu în care să comentați, la alegere, una dintre ideile de mai jos (1. sau 2.) (minimum 300 de cuvinte): Creierul uman – o creație de neegalat",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\" The scheme reprints the instruction as “Scrieți un eseu în care să comentați, la alegere, una dintre ideile de mai jos (a sau b) (minimum 300 de cuvinte):” and the two titles, and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2026 Higher Level — © State Examinations Commission.",
+    id: "ron-2026-hl-iii-2", topicId: "romanian-1-1", conceptId: "cand-sclavul-venereaz-lan-urile-inutil",
+    section: "III", questionRef: "2026 HL Section III Q2",
+    questionText: "Scrieți un eseu în care să comentați, la alegere, una dintre ideile de mai jos (1. sau 2.) (minimum 300 de cuvinte): Când sclavul își venerează lanțurile, e inutil să-i vorbești de libertate. (Mihai Eminescu, poet român)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile trebuie scrise în limba română.\" The scheme reprints the instruction as “Scrieți un eseu în care să comentați, la alegere, una dintre ideile de mai jos (a sau b) (minimum 300 de cuvinte):” and the two titles, and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
 ];
