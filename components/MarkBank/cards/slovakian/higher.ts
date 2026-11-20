@@ -1729,6 +1729,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2015 Higher Level — © State Examinations Commission.",
+    id: "slk-2015-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-najmenej-100-slov-temu",
+    section: "II", questionRef: "2015 HL Section II Q1",
+    questionText: "Napíšte komentár (najmenej 100 slov) na tému: „Ak chceme, aby ostatní prišli na našu stranu lesa, treba im otvoriť dvere.“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the scheme's heading “Napríklad:”, as examples, not a checklist: “Byť otvorený voči ostatným”; “Prekonať uzavretosť, opatrnosť, rezervovanosť”; “Dôverovať ľuďom a opätovať ich dôveru”; “Vyhľadávať možnosti aktívne budovať sociálne vzťahy”; “Nezištne dávať”; “Zbaviť sa predsudkov”; “Byť pozitívne naladený”; “Byťiniciatívny pri plánovaní spoločných aktivít s priateľmi”; “Keď sa človek cíti osamelý, neváhať zavolať napríklad dávnemu priateľovi alebo zájsť za ním”; “Pozývať priateľov na večeru, na oslavy a prijímať pozvania od nich”; “Venovať priateľom svoj čas”; “Neváhať priateľov poprosiť o pomoc”; “Vedieť odpustiť”; “Byť tolerantný a rešpektovať inakosť”; “Hľadať dobrú stránku v ľuďoch, ktorí nás obklopujú”; “Vyhľadávať spoločenské podujatia v regióne a zúčastniť sa na nich”; “Spriateliť sa s novými ľuďmi v škole/v práci”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2015 Higher Level — © State Examinations Commission.",
+    id: "slk-2015-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-magicka-sila-priate-stva",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Magická sila priateľstva",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2015 Higher Level — © State Examinations Commission.",
+    id: "slk-2015-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-lovek-ktory-uspokoji-malom-najbohat",
+    section: "III", questionRef: "2015 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: „Človek, ktorý sa uspokojí s málom, je najbohatší zo všetkých.“ (Sokrates)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "higher",
     paperFileid: "LC554ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2016 Higher Level — © State Examinations Commission.",
