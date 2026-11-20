@@ -1781,6 +1781,308 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2016 Higher Level — © State Examinations Commission.",
+    id: "nld-2016-hl-i-1-a", topicId: "dutch-0-0", conceptId: "waarnaar-verwijzen-volgende-woorden-alinea-romeinse",
+    section: "I", questionRef: "2016 HL Section I Q1(a)",
+    questionText: "Waarnaar verwijzen de volgende woorden? ‘ze’ (alinea 6) Romeinse cijfers en letters zijn hoekig omdat ze in steen gehouwen moesten worden.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Romeinse cijfers en letters", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2016 Higher Level — © State Examinations Commission.",
+    id: "nld-2016-hl-i-1-b", topicId: "dutch-0-0", conceptId: "waarnaar-verwijzen-volgende-woorden-alinea-tegenwoordig",
+    section: "I", questionRef: "2016 HL Section I Q1(b)",
+    questionText: "Waarnaar verwijzen de volgende woorden? ‘ze’ (alinea 2: Tegenwoordig duiken ze steeds vaker op in tekstberichten, e-mails en op sociaalnetwerken allerhande..)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Emoji", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2016 Higher Level — © State Examinations Commission.",
+    id: "nld-2016-hl-i-1-c", topicId: "dutch-0-0", conceptId: "waarnaar-verwijst-tweede-hier-vetgedrukte-dat",
+    section: "I", questionRef: "2016 HL Section I Q1(c)",
+    questionText: "Waarnaar verwijst de tweede (hier vetgedrukte) dat in de zin: Maar volgens Van de Velde is er geen sluitend bewijs dat dat ook effectief zo is. (alinea 8)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "een bedreiging voor onze taal", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2016 Higher Level — © State Examinations Commission.",
+    id: "nld-2016-hl-i-1-d", topicId: "dutch-0-0", conceptId: "wat-betekent-tot-wasdom-kwamen-zin",
+    section: "I", questionRef: "2016 HL Section I Q1(d)",
+    questionText: "Wat betekent ‘tot wasdom kwamen’ in de zin: ‘De emoji verspreiden en ontwikkelen zich veel sneller dan bijvoorbeeld de Egyptische hiëroglyfen, die pas na een paar eeuwen tot wasdom kwamen.’ (alinea 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tot hun volle bloei kwamen, succesvol werden", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2016 Higher Level — © State Examinations Commission.",
+    id: "nld-2016-hl-i-1-e", topicId: "dutch-0-0", conceptId: "wat-betekent-een-stille-dood-sterven",
+    section: "I", questionRef: "2016 HL Section I Q1(e)",
+    questionText: "Wat betekent ‘een stille dood sterven’ in deze zin: ‘Of sterven ze een stille dood?’? (alinea 11)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Langzaam weer verdwijnen", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2016 Higher Level — © State Examinations Commission.",
+    id: "nld-2016-hl-i-2", topicId: "dutch-0-1", conceptId: "waarom-denkt-britse-taalkundige-vyvyan-ewans",
+    section: "I", questionRef: "2016 HL Section I Q2",
+    questionText: "Waarom denkt de Britse taalkundige Vyvyan Ewans van de Bangor University dat emoji een nieuwe taal kunnen zijn ?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "omdat ze alomtegenwoordig zijn", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme heads its points: “Het antwoord bevat in elk geval deze redenen:”." },
+    { id: "r-2", kind: "point", verbatim: "omdat ze steeds vaker opduiken", marks: null },
+    { id: "r-3", kind: "point", verbatim: "omdat ze bijzonder snel evolueren", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2016 Higher Level — © State Examinations Commission.",
+    id: "nld-2016-hl-i-3", topicId: "dutch-0-1", conceptId: "geef-drie-redenen-waarom-emoji-meer",
+    section: "I", questionRef: "2016 HL Section I Q3",
+    questionText: "Geef drie redenen waarom emoji meer zijn dan zomaar wat kinderachtige spielerei.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Emoji vormen een volwaardig communicatiemiddel", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-2", kind: "point", verbatim: "Emoji vormen een heel inventief systeem", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "Emoji zijn perfect aangepast aan de technologie die vandaag voorhanden is", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2016 Higher Level — © State Examinations Commission.",
+    id: "nld-2016-hl-i-4", topicId: "dutch-0-1", conceptId: "ben-het-eens-met-critici-dat",
+    section: "I", questionRef: "2016 HL Section I Q4",
+    questionText: "Ben je het eens met de critici dat sms-taal en emoji een bedreiging vormen voor de gewone taal? Leg je standpunt uit en verdedig het.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "een duidelijk standpunt bevatten (bijvoorbeeld het er mee eens zijn of niet mee eens zijn)", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme heads it: “Het antwoord van de kandidaat moet”. Under the scheme's heading “In het geval dat men ervoor kiest om het er mee eens te zijn, kunnen ondermeer volgende argumenten worden gebruikt:”, as examples, not a checklist: “Geschreven taal wordt minder verzorgd.”; “Men weet niet meer welk register te gebruiken omdat door het gebruik van emoji de algemene kennis van de woordenschat verdwijnt.”; “Emoji gebruiken niet de gangbare grammaticale regels.”; “Communciatie wordt dus minder rijk en ‘kinderachtig’.”; “etc.”. Under the scheme's heading “In het geval dat men ervoor kiest om het er niet mee eens te zijn, kunnen ondermeer volgende argumenten worden gebruikt:”, as examples, not a checklist: “Taal verandert voortdurend.”; “Ook de leestekens veranderen mee, dus ook de emoji.”; “Emoji voegen iets toe wat normaal taalgebruik niet heeft”; “Emoji voegen kleur toe aan de taal”; “Emoji zijn een uitstekend voorbeeld van hoe onze taal met de technologie mee evolueert”; “Emoji zijn universeel waardoor communicatie tussen verschillende talen en culturen mogelijk wordt.”; “etc.”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2016 Higher Level — © State Examinations Commission.",
+    id: "nld-2016-hl-i-5", topicId: "dutch-0-1", conceptId: "gebaseerd-tekst-beschrijf-een-overeenkomst-een",
+    section: "I", questionRef: "2016 HL Section I Q5",
+    questionText: "Gebaseerd op de tekst: beschrijf één overeenkomst en één verschil tussen het taalgebruik van iemand die schrijft op Twitter en een creatieve schrijver (romancier). Welke vorm van schrijven stel jij het meest op prijs? Beargumenteer je antwoord.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Gebaseerd op de tekst: beschrijf één overeenkomst en één verschil tussen het taalgebruik van iemand die schrijft op Twitter en een creatieve schrijver (romancier).", marks: 2, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" Under the scheme's heading “Overeenkomsten, bijvoorbeeld:”, as examples, not a checklist: “Zowel de klassieke auteur als de Twitteraar maken gebruik van dezelfde basiselementen.”; “Zowel de klassieke auteur als de Twitteraar kiezen nauwkeurig en zorgvuldig hun woorden om hun boodschap te verpersoonlijken”; “etc.”. Under the scheme's heading “Verschillen, bijvoorbeeld:”, as examples, not a checklist: “Volgens het onderzoek van Liberman is de gemiddelde woordlengte van Twitteraars langer dan de woordlengte van romanciers.”; “Actieve Twitteraars hebben een hogere productie dan klassieke schrijvers.”; “Twitteraars hanteren een minder rijke woordenschat dan klassieke schrijvers.”; “etc.”.", permittedMarks: [0,1,2] },
+    { id: "r-2", kind: "criterion", verbatim: "Welke vorm van schrijven stel jij het meest op prijs? Beargumenteer je antwoord.", marks: 3, contextNote: "The scheme prints: “Het antwoord van de kandidaat moet” “een duidelijk standpunt bevatten” “en minstens een geldig argument”.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2016 Higher Level — © State Examinations Commission.",
+    id: "nld-2016-hl-i-6", topicId: "dutch-0-1", conceptId: "becommentarieer-visie-van-professor-freek-van",
+    section: "I", questionRef: "2016 HL Section I Q6",
+    questionText: "Becommentarieer de visie van professor Freek van de Velde inzake emoji’s en het feit of ze al dan niet als taal kunnen worden beschouwd.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In de strikte zin van het woord zijn emoji geen taal, wel een schriftsysteem.", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme heads its points: “Het antwoord van de kandidaat bevat verwijzingen naar de visie van Freek van de Velde.” “Mogelijke verwijzingen zijn:”." },
+    { id: "r-2", kind: "point", verbatim: "Als je emoji gebruikt, heb je geen twintig synoniemen voor hetzelfde woord. Maar niemand schrijft altijd en overal in emoji.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Emoji gebruik je enkel in een bepaalde context.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Taal is veel complexer dan emoji.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Emoji communiceren emoties en kunnen niet dezelfde rijkdom aan beelden oproepen dan klassieke taal.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Emoji zijn vooral visuele symbolen en kunnen niet uitgesproken worden zoals de klassieke taal dat wel kan doen. Etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2016 Higher Level — © State Examinations Commission.",
+    id: "nld-2016-hl-ii-1", topicId: "dutch-1-0", conceptId: "net-als-het-verleden-hangt-veel",
+    section: "II", questionRef: "2016 HL Section II Q1",
+    questionText: "“Net als in het verleden hangt veel, zo niet alles, af van de technologie die voorhanden is.” Becommentarieer in 100 tot 150 woorden het belang van technologie.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kandidaten tonen aan dat ze verwijzingen naar de Romeinse en Griekse cultuur met betrekking tot taal uit de tekst halen (de dragers papyrus, hieroglyfen) en verwijzen bijvoorbeeld ook naar de uitvinding van de drukmachines, en het belang van de electronische –hedendaagse- media.", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-2", kind: "point", verbatim: "Hierdoor tonen ze aan dat taal met de technologie mee evolueert.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Kandidaten kunnen mogelijk ook verwijzen naar andere media zoals televisie.... etc.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEEL 2: COMMENTAAR",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2016 Higher Level — © State Examinations Commission.",
+    id: "nld-2016-hl-iii-1", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-van-minimum-300",
+    section: "III", questionRef: "2016 HL Section III Q1",
+    questionText: "Schrijf een opstel van minimum 300 woorden. Kies één van de volgende opgaven. ‘Mijn taal is mijn wereld.’",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task and prints nothing under it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2016 Higher Level — © State Examinations Commission.",
+    id: "nld-2016-hl-iii-2", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-van-minimum-300",
+    section: "III", questionRef: "2016 HL Section III Q2",
+    questionText: "Schrijf een opstel van minimum 300 woorden. Kies één van de volgende opgaven. ‘De wereld kan best een vervelende plek worden wanneer we niet samenwerken om het tot een gelijkere, meer democratische en duurzame wereld te maken.‘ (Fintan O’Toole: The Irish Times, 22 februari 2016)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task and prints nothing under it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC017ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2021 Higher Level — © State Examinations Commission.",
