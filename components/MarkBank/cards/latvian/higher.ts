@@ -1092,6 +1092,210 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2015 Higher Level — © State Examinations Commission.",
+    id: "lv-2015-hl-i-2", topicId: "latvian-0-1", conceptId: "kapec-zolude-apgalvo-mes-savus-pecnacejus",
+    section: "I", questionRef: "2015 HL Section I Q2",
+    questionText: "Kāpēc I.Žolude apgalvo, ka „..mēs savus pēcnācējus noslīcināsim attēlu jūrā”? Vai jūs piekrītat autores sacītajam?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mūsdienās fotografēšana ir kļuvusi par kaut ko ikdienišķu un visiem pieejamu, ikviens var fotografēt, vai nu tas ir vai nav vajadzīgs. “Nupat jau sevis paša knipsēšanai ļāvušies visnotaļ cienījami cilvēki”.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Mūsdienās mēs fotografējam visu, ko ieraugām, –sejas, vietas, telpas, notikumus - bez kāda īpaša iemesla un jēga.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Ja mēs izprintētu visas fotogrāfijas, mēs tajās „varētu noslīcināt” savus pēcnācējus.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Cilvēki zaudējuši spēju atlasīt, izvēlēties un saglabāt tikai tās fotogrāfijas, kurās ir atainoti vissvarīgākie, būtiskākie mūsu dzīves mirkļi un notikumi, kas satilptu 2 vai 3 foto albumos.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2015 Higher Level — © State Examinations Commission.",
+    id: "lv-2015-hl-i-3", topicId: "latvian-0-1", conceptId: "paskaidrojiet-kas-autoresprat-makslas-fotografija",
+    section: "I", questionRef: "2015 HL Section I Q3",
+    questionText: "Paskaidrojiet, kas, autoresprāt, ir „mākslas” fotogrāfija!",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Senos laikos fotogrāfs bija arī mākslinieks, kas fotogrāfijas papildināja, uzlaboja, pielaboja, piezīmējot dažreiz pat trūkstošus sejas fragmentus. Fotografēšana bija radošs process, kurā bija nepieciešamas gleznotāja iemaņas, mākslinieka talants.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "100 gadus vecas ģimenes fotogrāfijās iemūžinātie dzīves mirkļi bija īpaši. Tagad mums ir tik daudz fotogrāfiju, ka vairs nespējam ar tām tikt galā.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Mākslas fotogrāfs ir stāstnieks, kurš cenšas nofotografēt neredzamo, atklāt būtību, dziļāko jēgu, apslēpto, acīm neredzamo.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Mākslas fotogrāfija ir kā glezna, kas atklāj fotografējamā dvēseli, sajūtas, pārdzīvojumus.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2015 Higher Level — © State Examinations Commission.",
+    id: "lv-2015-hl-i-4", topicId: "latvian-0-1", conceptId: "kadel-raksta-autorei-parnakot-vakara-majas",
+    section: "I", questionRef: "2015 HL Section I Q4",
+    questionText: "Kādēļ raksta autorei, pārnākot vakarā mājās, ir sajūta, ka no viņas „teju vai katrs pretimnācējs ir noplēsis pa gabaliņam savām virtuāli sociālajām vajadzībām”?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mūsdienās gandrīz katram cilvēkam ir viedtālrunis, un mēs dzīvojam sabiedrībā, kuru ir pārņēmusi fotografēšanas mānija. Mēs fotografējam visu, ko redzam, satiekam, piedzīvojam, visu, par ko sajūsmināmies, priecājamies, dusmojamies. Fotografēšana – mirkļa piefiksēšana – ir kļuvusi par 21.gs.dzīves veidu.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Lai tiktu iemūžināts mirklis, viss, kas mums ir neieciešams, ir viedtālrunis un viena rokas kustība. Vēl viena kustība – foto ir atrodams uz kādas sociālo tīklu „virtuālās sienas”. Kas gan tur slikts? Problēma slēpjas tajā, ka cilvēki nejūt: šādi rīkojoties, fotografējot un ievietojot bildes sociālajos tīklos, neprasot piekrišanu, mēs pārkāpjam ētikas normas un privātās dzīves neaizskaramību, mēs brutāli noplēšam bez atļaujas „pa gabaliņam savām virtuāli sociālajām vajadzībām” gan no līdzcilvēkiem, gan no svešiniekiem.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Īpaši pieprasītas ir visa veida neizdošanās – kritieni, sabojāti apģērbi, neveiksmīgs izskats utt. –, jo tas ir baigi smieklīgi (?). Nu, un, ja cilvēks nevar pasmieties par sevi, tad mūsu nelielā kopiena pasmiesies par viņu. Publicējot šādas fotogrāfijas, mēs sāpinām līdzcilvēkus.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Tas aktualizē jautājumu gan par fotografētāja rīcības brīvību, gan arī morāla rakstura jautājumu – cik lielā mērā mums atļauts neprasot ielauzties kāda cilvēka dzīvē pat ar tik šķietami nevainīgu lietu kā fotografēšana un bilžu publiskošana. Kādas var būt šādas rīcības sekas?", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2015 Higher Level — © State Examinations Commission.",
+    id: "lv-2015-hl-i-5", topicId: "latvian-0-1", conceptId: "mums-skiet-visiem-butu-mus-jaredz",
+    section: "I", questionRef: "2015 HL Section I Q5",
+    questionText: "„Mums šķiet, ka visiem būtu mūs jāredz tādus, kādus redzam paši. Taču selfiji mūs izkropļo,” saka Inga Žolude. Izsakiet savu viedokli par šo apgalvojumu!",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Selfiji – fotogrāfija, kas radīta fotografējot pašam sevi ar izstieptu roku, ķerot sevi attēla centrā ar nedabisku skatienu sevis paša vadītā ierīcē, izkropļo mūsu attēlu, tas nav dabisks.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Ne vienmēr mūsu izpratne par to, kas ir skaists, fotogēnisks, stilīgs, saskan ar citu izpratni par mūsu skaistumu, fotogēniskumu, stilīgumu. Mums jāļauj sevi ieraudzīt ar citu acīm.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Tas var arī deformēt/kropļot mūsu būtību, raksturu, izpratni par ētiskajām un estētiskajām vērtībām.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Pārmērīga aizraušanās ar selfijiem var robežoties ar narcisismu: attīstīt neveselīgu sevis apbrīnošanu un apjūsmošanu. Cilvēks izskatās smieklīgi un muļķīgi.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2015 Higher Level — © State Examinations Commission.",
+    id: "lv-2015-hl-i-6", topicId: "latvian-0-1", conceptId: "virtuala-realitate-klust-musu-personibas-turpinajuma",
+    section: "I", questionRef: "2015 HL Section I Q6",
+    questionText: "„..virtuālā realitāte kļūst no mūsu personības turpinājuma par alternatīvo realitāti. Pat nevis realitātes aizstājējs, bet jau kaut kas \"labāks\" par realitāti”. Ar ko izskaidrojama tekstā minētā mūsdienu parādība?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "„..mēs dzīvojam tādā kā dzīves jēgas, arī kultūras jēgas zaudēšanas laikmetā. Mēs vairs neticam vecajam, bet arī neuzticamies jaunajam,” apgalvo Teleacs. Attīstoties tehnoloģijām, virtuālā dzīve aizvien vairāk līdzinās realitātei, un tai ir gan bezgala daudz priekšrocību, gan trūkumu.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Virtuālā realitāte ikvienam cilvēkam, jo īpaši cilvēkiem ar invaliditāti ļauj iepazīt pasauli, piedalīties dažādās aktivitātēs, piedzīvot kaut ko jaunu un veikt darbības, ko ikdienas dzīvē bez tehnoloģiju palīdzības viņi nespētu. Virtuālās realitātes programmas sniedz ikvienam iespējas pilnveidoties un izglītoties dažādās jomās.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Taču ar virtuālo realitāti ir saistīti vairāki morālas dabas jautājumi – cik lielā mērā un kā virtuālā realitāte ietekmē, maina cilvēka uzvedību un rīcības motīvus. Piem., datorspēļu industrija un visi sociālie portāli, kuros tiek ignorētas vispārpieņemtās sabiedrības ētikas normas. Spēļu industrijas radītās vardarbības pilnās spēles var izraisīt un attīstīt spēlētājā tādas jūtas kā vienaldzību, bezjūtību un cietsirdību, sagraut cilvēkā izpratni par sabiedrībā vispārpieņemtajām vērtībām.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Virtuālā realitāte sniedz cilvēkam iespēju iejusties citā lomā, dzīvot izdomu, iedomu pasaulē. Cilvēkam ir bail uzņemties atbildību, veidot attiecības reālajā dzīvē. Kamēr tā ir spēle, tā skar tikai pašu aktieri, bet ko darīt tad, ja šī viltus persona veic kriminālas darbības un veic tās virtuālajā realitātē?", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Virtuālā realitāte ir iedarbīgs ierocis, ar kura palīdzību var manipulēt ar cilvēku domāšanu un sabiedrības vērtībām. Tāpēc ir ļoti svarīgi virtuālās realitātes iespējas izmantot jēgpilni, nekaitējot cilvēkam un sabiedrībai.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2015 Higher Level — © State Examinations Commission.",
+    id: "lv-2015-hl-ii", topicId: "latvian-1-0", conceptId: "mums-vairs-nav-tas-brivibas-netapt",
+    section: "II", questionRef: "2015 HL Section II",
+    questionText: "„..mums vairs nav tās brīvības netapt fotografētiem un izsekotiem.” Uzrakstiet, ko šie vārdi atklāj/liecina par moderno tehnoloģiju ietekmi uz sabiedrības domāšanu un vērtību sistēmu! (vismaz 100 vārdu)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Modernās tehnoloģijas ir kļuvušas par mūsu ikdienas dzīves neatņemamu sastāvdaļu – sociālie tīmekļi, laikraksti, ziņas, filmas, komunikācija (skaips, whatsApp, tviteris u.c.), maksājumi, iepirkumi un pat piedalīšanās vēlēšanās – visas šīs darbības notiek virtuālajā vidē. Tādēļ privātās dzīves neaizskaramība moderno tehnoloģiju laikmetā ir apdraudēta.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints these points under the task, with no mark on any of them and no criteria for the part: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "Lai ko mēs darītu, mēs atstājam savus pirkstu nospiedumus virtuālajā pasaulē, reģistrējoties, pierakstoties, lejuplādējot, komentējot, daloties ar informāciju, ievietojot bildes. Ņemot vērā visu iepriekš minēto, mums vēl arvien ir iespēja pateikt: ”Nē, es to nevēlos!”", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Dzīvojot moderno tehnoloģiju laikmetā, kur ikviens pats nosaka, kā tās izmantot, mēs esam zaudējuši brīvību netikt nejauši vai tīšām fotografēti, filmēti, izsekoti, un mēs nevaram novērst to, ka otrs ieliks mūsu attēlus un video sociālajos tīklos. Kā lai mēs aizliedzam citiem fotografēt, kā lai mēs izvairāmies no nejaušības iekļūt kādā nejaušā fotogrāfijā, ja apkārt ir tik daudz fotografējošu cilvēku ar viedtālruņiem? Tas ir kā vīruss, kuru nav iespējams iznīcināt, apkarot.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Mums apkārt ir tik daudz „sabiedrības modro foto acu”, ka tas ir ārpus mūsu varēšanas izvairīties no tā, ka citi mūs fotografē un ievieto bildes, mums nezinot, virtuālajā vidē. Tāpēc autore arī saka: „Brīdī, kad glāstošās rokās nonāk glāstekrāna ierocis, mēs piederam visiem, tikai ne sev, mums vairs nav tās elementārās brīvības netapt fotografētiem un izsekotiem, būt neredzamiem, būt anonīmiem, būt tikai sev.”", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II DAĻA",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2015 Higher Level — © State Examinations Commission.",
+    id: "lv-2015-hl-iii-1", topicId: "latvian-1-0", conceptId: "manas-virtualas-vajadzibas",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    questionText: "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) „Manas virtuālās vajadzības”.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mēs dzīvojam moderno tehnoloģiju laikmetā. Virtuālā pasaule un tās sniegtās iespējas ir moderno tehnoloģiju radītas. 21.gs cilvēks nespēj iedomāties savu dzīvi, savu ikdienu bez moderno tehnoloģiju izmantošanas. Cilvēku virtuālās vajadzības ir dažādas atkarībā no viņa vecuma, sociālās piederības, nodarbošanās, interesēm un citiem faktoriem:", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints this paragraph and these items under the title, with no mark on any of them and no criteria for the part: examples, not a checklist. The list ends “u.c.”. It adds two notes on the title's words: “*Virtuāls ir varbūtējs, iespējams; tāds, kas var parādīties vai kam noteiktos apstākļos jāparādās. Tāds, kas fiziski neeksistē, bet ir matemātiski aprēķināts vai izveidots atsevišķa datora vai lielāku datorsistēmu atmiņā kā modelis.” “**vajadzības - faktori, to kopums (dabiski, sociāli, garīgi), kas nepieciešami (organisma, personības, sociālas grupas) dzīves, darbības nodrošināšanai”" },
+    { id: "r-2", kind: "point", verbatim: "informācijas avots (ziņu portāli, laikraksti, avīzes utt.)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "palīglīdzeklis mācībās un studijās (digitālās enciklopēdijas, vārdnīcas, tālmācība, speciālās virtuālās mācību programmas u.tml.),", marks: null },
+    { id: "r-4", kind: "point", verbatim: "komunikācijas līdzeklis – epasti, skaips, tvītošana, videokonferences, dažādie sociālie portāli, piem., facebook, draugiem.lv u.c.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "informācijas apmaiņas līdzeklis, diskusiju platforma", marks: null },
+    { id: "r-6", kind: "point", verbatim: "interneta veikali", marks: null },
+    { id: "r-7", kind: "point", verbatim: "ceļojumu plānošana, viesnīcu un ceļojumu rezervēšana", marks: null },
+    { id: "r-8", kind: "point", verbatim: "biznesa ideju realizēšanas līdzeklis", marks: null },
+    { id: "r-9", kind: "point", verbatim: "reklāmu vide", marks: null },
+    { id: "r-10", kind: "point", verbatim: "naudas pārskaitījumi, virtuālie bankas pakalpojumi", marks: null },
+    { id: "r-11", kind: "point", verbatim: "izklaide - mūzika, filmas, virtuālās pastaigas, izstādes, koncerti", marks: null },
+    { id: "r-12", kind: "point", verbatim: "nodrošina iespēja piedalīties vēlēšanās, balsojot internetā", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2015 Higher Level — © State Examinations Commission.",
+    id: "lv-2015-hl-iii-2", topicId: "latvian-1-0", conceptId: "visbagatakais-tas-kam-pietiek-mazuminu-sokrats",
+    section: "III", questionRef: "2015 HL Section III Q2",
+    questionText: "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) „Visbagātākais ir tas, kam pietiek ar mazumiņu”. (Sokrāts)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pirmā doma, kas ienāk prātā: nabadzīgs tas, kam nav naudas. Vai tiešām viss ir tik vienkārši? Katram cilvēkam atkarībā no vides, tradīcijām, valsts, kultūras un viņa labklājības līmeņa, ģimenē ieaudzinātajām vērtībām ir izveidojusies sava izpratne par jēdzieniem – bagāts un bagātība, kas veido šī jēdziena izpratnes saturu. To bieži vien nosaka tas, cik mums katram nepieciešams, lai varam teikt – nu ir gana, man viss ir, man pietiek, esmu bagāts.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints these paragraphs under the title, with no mark on any of them and no criteria for the part: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "Rodas jautājums, vai bagātība ir materiālas vērtības, kas izmērāmas naudas izteiksmē (visam ir cena) vai bagātība ir garīgās, ētiskās, vispārcilvēciskās vērtības: attiecības, ģimene, draudzība, savas dvēseles dzīves un iekšējās inteliģence kopšana, tolerance, spēja piedot, dalīties, spēja un vēlme mainīties un kļūt par labāku cilvēku, kā arī pieticība.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Rietumeiropa lielā mērā ir patērētāju sabiedrība – lielākas mājas, vairāk drēbju, skaistākas mašīnas. Jāpērk, jāpērk, jāpērk, lai neatpaliktu no citiem. Sekas – mūžīga cīņa, sacensība par labklājību un mantām, un īpašumiem. Cilvēks kļūst par lietu, mantu, īpašumu vergu. Ja cilvēkam visa tā nav, viņš tiek uzskatīts par neveiksminieku. Lai to visu iegūtu, ir daudz jāstrādā. Nav vairs laika ne sev, ne savai ģimenei, ne bērniem. Mūsos rodas tukšums- milzīga dvēseles nabadzība. Cilvēks, garā nabags, jūtas nelaimīgs, iztukšots, nolietots bezjēdzīgā amoka skrējienā pēc kaut kā, kas ik pa brīdim jāmaina, jāremontē, jāuztur.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Rietumeiropas cilvēkam ir tik daudz mantu, ka reizēm mājās visam nav vietas, bērniem tik daudz rotaļlietu, ka visam zūd vērtības. Mēs vairs neprotam priecāties par sīkumiem, mēs vairs neprotam sarunāties, just, piedot, pieņemt, atteikties, ziedot. Visa dzīve - darbs, mantas, virtuālā komunikācija. Ir materiāla nabadzība, bet ir arī garīgā,t.i., dvēseles nabadzība. Kas ir ļaunāk, no kā vairāk jābaidās: no materiālās nabadzības vai no vergošanas mantai.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Tas ir jautājums par to, kuru ceļu uzvēlamies. Tiekties pēc arvien jaunām mantām un lietam vai iztikt ar mazumiņu, bet būt vairāk cilvēkos, ar cilvēkiem, kalpojot, sadarbojoties, mīlot, daloties, palīdzot, kopjot ģimeniskumu, kas ved uz harmonisku un garīgi piepildītu, priekpilnu dzīvi. Tā ir izvēle starp vergošanu mantai vai dzīvot brīvi.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "higher",
     paperFileid: "LC549ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2016 Higher Level — © State Examinations Commission.",
