@@ -2412,6 +2412,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2020 Higher Level — © State Examinations Commission.",
+    id: "bul-2020-hl-ii-1", topicId: "bulgarian-1-0", conceptId: "100",
+    section: "II", questionRef: "2020 HL Section II Q1",
+    questionText: "„Съвременният човек в много голяма степен е изгубил чувствителността си към фундаменталната значимост на живота в дома.” Съгласни ли сте с автора? Обяснете защо. (около 100 думи)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Лична интерпретация, ясни и непротиворечиви идеи.", marks: 30, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" The scheme prints: “При оценяването на отговорите от първите две части се прилагат следните критерии:”. The scheme prints, as examples, not a checklist: “Въпросът дава възможност за най-разнообразни отговори, свързани с лични преживявания и опит. Неизброими цитати от известни личности на съвременността говорят по-скоро за осъзнаване на „фундаменталната значимост на живота в дома”. Темата може да бъде също „олекотена” и интерпретирана с чувство за хумор. Примерен цитат: „Къде бихте се чувствали по-добре от това, да бъдете сред своите в семейството си?Навсякъде другаде!”( Ерве Базен) Съвременният човек не е забравил значимостта на семейството, той обаче не е затворен в тясното му пространство, а се чувства „свойствено” и добре „навсякъде” в живота.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Яснота и точност на израза – кандидатът разбира добре въпросите и знае как да отговори ясно и точно – 30% ;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Свързаност и непротиворечивост на отговорите – кандидатът използва откъси от текста, които са адекватни на мисълта му, идеите му са непротиворечиви и композицията на съчинението следва определена логика – 30% ;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Езикова компетентност – кандидатът умее свободно да изразява идеите си, езикът на изказването му е ясен и точен – 30% ;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Конвенционални умения – кандидатът владее и прилага граматичната норма и правописа на съвременния български книжовен език – 10%.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ВТОРА ЧАСТ",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2020 Higher Level — © State Examinations Commission.",
+    id: "bul-2020-hl-iii-1", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2020 HL Section III Q1",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: „Без семейство, човекът трепери от студ в огромната вселена.\" (Андре Мороа, Чувства и обичаи)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under Part III the scheme reprints the instruction and the two titles and prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Its criteria are printed for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2020 Higher Level — © State Examinations Commission.",
+    id: "bul-2020-hl-iii-2", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2020 HL Section III Q2",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: „Приятелитe ми ca моeтo семейство, членоветe нa което съм избрал.”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under Part III the scheme reprints the instruction and the two titles and prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Its criteria are printed for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC559ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2021 Higher Level — © State Examinations Commission.",
