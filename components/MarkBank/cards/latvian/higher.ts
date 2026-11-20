@@ -3744,4 +3744,180 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2026 Higher Level — © State Examinations Commission.",
+    id: "lv-2026-hl-i-2", topicId: "latvian-0-1", conceptId: "formulejiet-diskusijas-temu-uzrakstiet-kur-kad",
+    section: "I", questionRef: "2026 HL Section I Q2",
+    questionText: "Formulējiet diskusijas tēmu un uzrakstiet kur, kad un kāpēc tā tiek organizēta?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Diskusijas tēma ir bērnu un skolas vecuma jaunieši lasītprasme digitalizācijas laikmetā, izaicinājumi, ar kuriem jāsaskaras visām iesaistītajām pusēm: bērniem, jauniešiem, vecākiem, pedagogiem, skolām. Diskusiju organizē Izdevniecība \"Liels un mazs\" Rīgas Grāmatu svētkos 2022. gada 5. novembrī. Diskusijā tiek analizēta drukātā teksta, grāmatu lasīšanas nozīme, vieta mūsdienās, ar kādām problēmām saskaramies, kā tās risināt.", marks: 5, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2026 Higher Level — © State Examinations Commission.",
+    id: "lv-2026-hl-i-3", topicId: "latvian-0-1", conceptId: "kas-diskusijas-dalibnieki-kuri-fakti-liecina",
+    section: "I", questionRef: "2026 HL Section I Q3",
+    questionText: "Kas ir diskusijas dalībnieki un kuri fakti liecina, ka viņi ir valodas eksperti?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Diskusijā piedalās trīs dalībnieki, un viņi visi savā profesionālajā darbībā tiešā un nepastarpinātā veidā ir saistīti ar valodu. Inese Zandere ir pazīstama rakstniece, pārstāv arī izdevniecīu “Liels un mazs”, Laura Dumbere ir profesionāla žurnāliste, kuras darbs ir tieši saistīts ar “vārdiem, valodu, tekstu”, bet Andris Krieķis ir valodas skolotājs, kurs ik dienu strādā ar skolēniem, mācot, mudinot viņus lasīt, attīstot viņu valodas spējas un prasmes. Šie fakti liecina, ka visi trīs diskusijas dalībnieki ir valodas eksperti.", marks: 5, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2026 Higher Level — © State Examinations Commission.",
+    id: "lv-2026-hl-i-4", topicId: "latvian-0-1", conceptId: "kas-lasitprasme-kuros-macibu-prieksmetos-dzives",
+    section: "I", questionRef: "2026 HL Section I Q4",
+    questionText: "Kas ir lasītprasme, kuros mācību priekšmetos, dzīves situācijās un jomās diskusijas dalībnieki akcentē tās nozīmi?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lasītprasme ir spēja, prasme saprast teksta būtību un jēgu gan drukātos, gan digitālos medijos: ne tikai prasme tehniski pareizi izlasīt vārdus, saprast to nozīmi ārpus konteksta.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme prints these paragraphs under the question, with no mark on any of them: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Lasītprasme ir svarīgi visos mācību priekšmetos, kā, piemēram, tekstā minēta matemātika, vēsture, fizika, ģeogrāfija, zinātniski teksti, pētījumi, instrukcijas, grāmatvedības dokumenti, instrukcijas u.c. Diskusijas dalībnieka nonāk pie atziņas, ka lasītprasme ir svarīga visās dzīves jomās, tā ir regulāri, mērķtiecīgi jātrenē, jāattīsta, lasot dažādus tekstus, ne tikai daiļliteratūras darbus.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2026 Higher Level — © State Examinations Commission.",
+    id: "lv-2026-hl-i-5", topicId: "latvian-0-1", conceptId: "skaidrojiet-jedzienu-lenais-laiks-nozimi-lasisana",
+    section: "I", questionRef: "2026 HL Section I Q5",
+    questionText: "Skaidrojiet jēdzienu “lēnais laiks” un tā nozīmi lasīšanā, valodas attīstīšanā, kopšanā un kas ir tā pretstats?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "“Lēnais laiks” (3.rindkopa) ir laikietilpīgs process, kas nepieciešams, lai lasītu daiļliteratūru, t.i., garākus tekstus: ir jāapstājas, jādomā, jākoncentrējas, zinot, ka apkārt ir miljons citu lietu, ko darīt. Mūsdienās cilvēkiem katastrofāli nav laika, tāpēc liela daļa pieaugušo lasa daiļliteratūru atvaļinājumos un brīvdienās, kad ir iespēja tikt klāt lēnajam laikam.Lasot grāmatu, cilvēks iemācās pilnvērtīgi saprast valodu, lasīšana veicina iztēli, un tā ir darbināšanas instruments smadzenēm. Tas ir darbs, kas prasa gribasspēku un treniņu.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme prints these paragraphs under the question, with no mark on any of them: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Pretstats ir digitālajā kultūrā, kurā mēs drīzāk dzīvojam bildēs nekā tekstos: ātri uztverama, izlasāma informācija.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2026 Higher Level — © State Examinations Commission.",
+    id: "lv-2026-hl-i-6", topicId: "latvian-0-1", conceptId: "raksturojiet-kadu-situaciju-atklaj-fraze-majas",
+    section: "I", questionRef: "2026 HL Section I Q6",
+    questionText: "Raksturojiet, kādu situāciju atklāj frāze, ka “Mājās nav tādas mēbeles kā grāmatu plaukts”, analizējot (cēloņus un sekas), kā digitālais laikmets ietekmē pieaugušo un bērnu lasītprasmi?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Digitālās paaudzes cilvēki vairs nelasa grāmatas, viņiem pietiek ar informāciju, ko sniedz digitālie informācijas avoti, tāpēc mājās nav tādas mēbeles kā grāmatplaukts, bet tas nenozīmē, ka viņi nav inteliģenti cilvēki, viņi vienkārši nelasa grāmatas. Otrkārt, lasīšana priekšā bērniem beidzas apmēram 4–5 gadu vecumā, vecāki cer, ka pēcāk bērns jau lasīs pats.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme prints these paragraphs under the question, with no mark on any of them: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Atziņa ir tāda, ka lasīšanas paradums ir jāveido, jātrenē: “Mēs varam vingrināt savus paradumus. Tehnoloģiju izmantošanas paradumi veidojas mājās, nevis skolā.” Grāmatu lasīšana ir gribas akts, apzināta izvēle, kas prasa piepūli, tas ir treniņa jautājums. Lasītprasmju attīstīšana ir kopdarbs: visiem ir jāiesaistās.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Mācību grāmatās bērnu interesējošai pasaulei jābūt klātesošai. Mācību grāmatām un lasāmajām grāmatām jābūt ineresantām. Mācību grāmatas mēdz būt neinteresanas, tajās ir tika fragmenti.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2026 Higher Level — © State Examinations Commission.",
+    id: "lv-2026-hl-ii", topicId: "latvian-1-0", conceptId: "izsakiet-savu-viedokli-par-apgalvojumu-100",
+    section: "II", questionRef: "2026 HL Section II",
+    questionText: "Izsakiet savu viedokli par šo apgalvojumu! (100 - 150 vārdu) “Lasīšana konkurenci ar datoru un telefonu nav izturējusi, tā ir zaudēta cīņa.” Cik lielā mērā jūs piekrītat šim apgalvojumam? Kas ir zaudētās konkurences iemesli un kādu risinājumu piedāvā diskusijas autori, ko jūs ieteiktu?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Diskusijas dalībnieki uzskata, ka, pirmkārt, vecākiem nav laika bērniem lasīt priekšā, lasīt kopā.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme prints these paragraphs under the statement, with no mark inside them and no criteria for the part. It reprints the instruction as “Izsakiet savu viedokli par piedāvāto apgalvojumu! (vismaz 100 vārdu)”" },
+    { id: "r-2", kind: "point", verbatim: "Otrkārt, trešdaļa mācību grāmatās izvēlētā satura ir ļoti slikta literatūra - netalantīga, grafomāniska, primitīva. Treškārt, netiek ņemtas vērā bērna intereses. Pieaugušais ( vecāks vai skolotājs) pieņem, ka viņš zina labāk, ko vajag bērnam. Piem., \"Lego\" ražotāji sen zina, ka viņiem ir jāsaprot, kas interesē bērnu, kas veicinās bērna interesi par konkrēto produktu, ko viņi ražos.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Skolēns pauž savu argumentētu viedokli.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II DAĻA",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2026 Higher Level — © State Examinations Commission.",
+    id: "lv-2026-hl-iii-1", topicId: "latvian-1-0", conceptId: "mana-lasisanas-pieredze-vai",
+    section: "III", questionRef: "2026 HL Section III Q1",
+    questionText: "Uzrakstiet eseju par vienu no tēmām! (ne mazāk kā 300 vārdu) “Mana lasīšanas pieredze.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Skolēns raksta par savu lasīšanas pieredzi – ko viņš lasa, cik bieži viņš lasa, kas viņu motivē lasīt u.tml. Lasīšanas teksti ir dažādi – tās var būt grāmatas, žurnāli u.c. gan digitālā, gan drukātā formā. Skolēns var rakstīt, kādam tekstam, kādā formātā viņš dod priekšroku. Kāds teksta žanrs viņu interesē, kas viņu aizrauj.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme prints this paragraph under the title, with no mark inside it and no criteria for the part: an example, not a checklist. It reprints the instruction as “Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu)”" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2026 Higher Level — © State Examinations Commission.",
+    id: "lv-2026-hl-iii-2", topicId: "latvian-1-0", conceptId: "turiet-jus-latviesi-savu-valodu-goda",
+    section: "III", questionRef: "2026 HL Section III Q2",
+    questionText: "Uzrakstiet eseju par vienu no tēmām! (ne mazāk kā 300 vārdu) „Turiet jūs, latvieši, savu valodu godā un jums labi klāsies virs zemes” (Juris Alunāns)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Skolēns raksta par latviešu valodas nozīmi viņa ikdienā. Kad un kur viņš lieto latviešu valodu? Vai viņš to lieto ģimenē, ar radiniekiem, skolā, komunikācijā ar draugiem u.c. Cik bieži viņš to lieto? Kā tā konkurē ar angļu valodu vai citām valodām, ko viņš ikdienā lieto.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme prints this paragraph under the title, with no mark inside it and no criteria for the part: an example, not a checklist. It reprints the instruction as “Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu)”" },
+    ],
+  } as SecCard,
 ];
