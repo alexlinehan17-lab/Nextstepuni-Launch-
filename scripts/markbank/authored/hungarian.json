@@ -8130,6 +8130,423 @@
   }
  },
  {
+  "id": "hun-2020-hl-ii-1",
+  "subjectId": "hungarian",
+  "level": "higher",
+  "year": 2020,
+  "section": "II",
+  "topicId": "hungarian-1-0",
+  "conceptId": "kommentar-fejtsd-allaspontodat-min-100-szoban",
+  "questionRef": "2020 HL Section II Q1",
+  "questionText": "Kommentár Fejtsd ki álláspontodat min. 100 szóban a 2. bekezdésben található alábbi mondattal kapcsolatban! „Azonban mit sem ért volna a bulvár nagy találmánya, hogy minden cikknek hangzatos címet ad, ha nem kellően friss és »szenzációs« maga a hír.”",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "A minimum 100, maximum 150 szóban tisztán, érthetően kifejtett, szövegen alapuló saját vélemény.",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “A jobb üzletmenet érdekében a rikkancsok még az eleve szenzációhajhász címeket is tovább színezték (§ 2)”; “Az Est újítása volt az, hogy a riporterek a gépírókisasszonyoknak telefonon át közvetlenül gépbe diktálhatták tudósításaikat (§ 2)”; “Repülőgépre ültette és európai városokba küldte válogatott tudósítóit, hogy az újdonságszámba menő repülés élményével is színesítsék helyszíni riportjaikat (§ 2)”; “Mint az egyik legjobban fizető lap, Az Est a kezdetektől fogva az újságírószakma és az irodalmi élet elitjét foglalkoztatta (§ 2)”; “Gyors és megbízható hírszolgálatának köszönhetően az 1910-es évek közepétől Az Est híreit rendszeresen átvették a külföldi lapok is (§ 3)”; “Az Estből és a többi bulvárnak mondott lapból nyomon követhetőek a 20. század első felének legfontosabb eseményei (§ 4)”; “Az önálló irodalmi rovatot is jegyző bulvárlap valósággal dúskált az irodalmi csemegékben is (§ 4)”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II. RÉSZ",
+   "title": "Reading text — answer in Hungarian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Hungarian 2020 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+  }
+ },
+ {
+  "id": "hun-2020-hl-iii-1",
+  "subjectId": "hungarian",
+  "level": "higher",
+  "year": 2020,
+  "section": "III",
+  "topicId": "hungarian-1-1",
+  "conceptId": "lehet-seg-konfliktus-maganelethez-valo-jog",
+  "questionRef": "2020 HL Section III Q1",
+  "questionText": "A két téma közül válassz ki egyet, és írj egy min. 300 szavas esszét! Mi a konfliktus a magánélethez való jog és a sajtószabadság között?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Tisztán, érthetően és világosan megírt esszé.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "hun-2020-hl-iii-2",
+  "subjectId": "hungarian",
+  "level": "higher",
+  "year": 2020,
+  "section": "III",
+  "topicId": "hungarian-1-1",
+  "conceptId": "lehet-seg-figyelembe-veve-hogyan-hasznaljak",
+  "questionRef": "2020 HL Section III Q2",
+  "questionText": "A két téma közül válassz ki egyet, és írj egy min. 300 szavas esszét! Figyelembe véve, hogyan használják a sztárok a bulvársajtót és hogyan használja a bulvársajtó a sztárokat, mit mond ez számunkra a mai társadalomról?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Tisztán, érthetően és világosan megírt esszé.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "hun-2021-hl-i-1-a",
   "subjectId": "hungarian",
   "level": "higher",
