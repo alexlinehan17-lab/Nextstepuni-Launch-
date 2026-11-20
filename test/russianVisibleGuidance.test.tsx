@@ -487,10 +487,14 @@ describe('Russian source directions visible in the practice session',()=>{
     expect(screen.getByText('no marks: seat downstairs, ticket for coupe wagon, wagon P')).toBeVisible();
     expect(screen.getByText(/If an answer is written entirely in Russian/)).toBeVisible();
   });
-  it('shows the2019 mandatory dialogues and overall-only allocation',async()=>{
+  it('shows the 2019 mandatory dialogues and whole-exercise allocation',async()=>{
     reveal('sd','ol',2019);
     await waitFor(()=>expect(screen.getByText(/Complete both Group A and Group B/)).toBeVisible());
-    expect(screen.getByText(/numeric self-scoring is unavailable/)).toHaveTextContent('20 marks');
+    const guidance=screen.getByText(/Assess the complete exercise out of20/);
+    expect(guidance).toBeVisible();
+    expect(guidance).toHaveTextContent('20 marks for the whole exercise without per-gap allocations');
+    expect(guidance).toHaveTextContent('using all ten printed answers; do not infer a separate mark for each gap');
+    expect(screen.queryByText(/numeric self-scoring is unavailable/)).not.toBeInTheDocument();
   });
   it('shows the2019 accepted earlier prices and no-repeat condition',async()=>{
     reveal('ir1-7','ol',2019);
