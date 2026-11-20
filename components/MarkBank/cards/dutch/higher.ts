@@ -2998,6 +2998,297 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2020 Higher Level — © State Examinations Commission.",
+    id: "nld-2020-hl-i-1-a", topicId: "dutch-0-0", conceptId: "waarnaar-verwijzen-volgende-woorden-dat-alinea",
+    section: "I", questionRef: "2020 HL Section I Q1(a)",
+    questionText: "Waarnaar verwijzen de volgende woorden? ‘dat’ (alinea 2: Dat is bijvoorbeeld)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Maar die invloed beperkt zich tot het aanreiken van woorden en vaste uitdrukkingen, vaak in domeinen waar het Nederlands weinig of geen alternatieven biedt.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2020 Higher Level — © State Examinations Commission.",
+    id: "nld-2020-hl-i-1-b", topicId: "dutch-0-0", conceptId: "waarnaar-verwijzen-volgende-woorden-daarvan-alinea",
+    section: "I", questionRef: "2020 HL Section I Q1(b)",
+    questionText: "Waarnaar verwijzen de volgende woorden? ‘daarvan’ (alinea 6: daarvan is geen sprake)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Van zogeheten code switching, ‘waarbij je een zin in het Nederlands begint en daarna you make some sentences in English'", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2020 Higher Level — © State Examinations Commission.",
+    id: "nld-2020-hl-i-1-c", topicId: "dutch-0-0", conceptId: "wat-betekent-weerloos-deze-zin-evenmin",
+    section: "I", questionRef: "2020 HL Section I Q1(c)",
+    questionText: "Wat betekent weerloos in deze zin: ‘en evenmin is elk Nederlands woord bij voorbaat weerloos tegen een vijandige overname.’ (alinea 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Zonder kans zijn, in dit geval heeft het Nederlandse woord wél een kans.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2020 Higher Level — © State Examinations Commission.",
+    id: "nld-2020-hl-i-1-d", topicId: "dutch-0-0", conceptId: "wat-betekent-vrij-baan-deze-zin",
+    section: "I", questionRef: "2020 HL Section I Q1(d)",
+    questionText: "Wat betekent ‘vrij baan’ in deze zin: ‘Vrij baan krijgen vooral Engelse leenwoorden die een lacune vullen.’ (alinea 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dat deze woorden het wel makkelijk halen van het Nederlandse equivalent.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2020 Higher Level — © State Examinations Commission.",
+    id: "nld-2020-hl-i-1-e", topicId: "dutch-0-0", conceptId: "wat-betekent-voor-hem-geen-partij",
+    section: "I", questionRef: "2020 HL Section I Q1(e)",
+    questionText: "Wat betekent: ‘voor hem geen partij’ in de zin: ‘De dandy, in 1832 aan het Engels ontleend, heeft het wel gehaald: de fat was voor hem geen partij.' (alinea 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dat het woord ‘dandy’ het makkelijk haalden van het woord ‘fat’.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2020 Higher Level — © State Examinations Commission.",
+    id: "nld-2020-hl-i-2", topicId: "dutch-0-1", conceptId: "wanneer-heeft-het-engels-het-moeilijk",
+    section: "I", questionRef: "2020 HL Section I Q2",
+    questionText: "Wanneer heeft het Engels het moeilijk om een Nederlands woord te vervangen?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Het gebruik van leenwoorden uit het Engels neemt in Vlaanderen en Nederland toe. Maar niet elk woord dat uit het Engels tot ons komt, verdringt zijn Nederlandse equivalent. ‘Integendeel', zegt Zenner, ‘daarvoor moet het van goeden huize zijn. Als het Nederlands al heel lang een goed ingeburgerd woord heeft voor een bepaald begrip, dan komt het Engels er echt niet zomaar tussen.'", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2020 Higher Level — © State Examinations Commission.",
+    id: "nld-2020-hl-i-3", topicId: "dutch-0-1", conceptId: "waarom-valt-invloed-van-het-engels",
+    section: "I", questionRef: "2020 HL Section I Q3",
+    questionText: "Waarom valt de invloed van het Engels op het Nederlands eigenlijk nog wel mee volgens Zenner?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(alinea 2) Ja', zegt de taalwetenschapster van de KU Leuven, ‘de invloed ervan op het Nederlands neemt toe. En nee, er is geen andere taal die zo'n grote invloed heeft.' Maar die invloed beperkt zich tot het aanreiken van woorden en vaste uitdrukkingen, vaak in domeinen waar het Nederlands weinig of geen alternatieven biedt, leerde Zenner uit een analyse van anderhalf miljard woorden die tussen 1995 en 2005 in Nederlandse en Vlaamse kranten verschenen.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2020 Higher Level — © State Examinations Commission.",
+    id: "nld-2020-hl-i-4", topicId: "dutch-0-1", conceptId: "leg-uit-hoe-het-televisieprogramma-expeditie",
+    section: "I", questionRef: "2020 HL Section I Q4",
+    questionText: "Leg uit hoe het televisieprogramma Expeditie Robinson een aanduiding kon geven van het taalgebruik van hoger opgeleiden",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Doordat deelnemers aan Expeditie Robinson anders dan bij bijvoorbeeld bij Temptation Island ook uit hoger opgeleide lagen van de bevolking komen, kon Zenner turven welke sociale klasse zich het vaakst van het Engels bedient.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2020 Higher Level — © State Examinations Commission.",
+    id: "nld-2020-hl-i-5", topicId: "dutch-0-1", conceptId: "bespreek-het-verband-tussen-sociale-klasse",
+    section: "I", questionRef: "2020 HL Section I Q5",
+    questionText: "Bespreek het verband tussen sociale klasse en het daarbij horende taalgebruik. Verwijs hiervoor naar de tekst.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Het antwoord van de kandidaat bevat verwijzingen naar de diverse beroepscategorieën en duidelijke voorbeelden uit de verschillen tussen de in de tekst genoemde televisieprogramma’s.", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2020 Higher Level — © State Examinations Commission.",
+    id: "nld-2020-hl-i-6", topicId: "dutch-0-1", conceptId: "waarom-heeft-het-langer-geduurd-voor",
+    section: "I", questionRef: "2020 HL Section I Q6",
+    questionText: "Waarom heeft het langer geduurd voor het Engels dezelfde invloed kon laten gelden in Vlaanderen dan in Nederland. Leg uit hoe de auteur dit heeft ontdekt.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "‘Vlaanderen heeft lang een puristische reflex gehad, maar die lijkt nu vrijwel verlaten. In kranten- en spreektaal is het aandeel Engelse leenwoorden in Noord en Zuid inmiddels gelijk.’", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-2", kind: "point", verbatim: "Verder verwijst het antwoord naar het onderzoek naar het taalgebruik in de jobadvertenties.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2020 Higher Level — © State Examinations Commission.",
+    id: "nld-2020-hl-ii-1", topicId: "dutch-1-0", conceptId: "becommentarieer-ongeveer-100-woorden-volgende-kwestie",
+    section: "II", questionRef: "2020 HL Section II Q1",
+    questionText: "Becommentarieer in ongeveer 100 woorden de volgende kwestie: ‘Het Nederlands moet strijden tegen de invloed van het Engels.’",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 30, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task and prints nothing under it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEEL 2: COMMENTAAR",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2020 Higher Level — © State Examinations Commission.",
+    id: "nld-2020-hl-iii-1", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-van-minimaal-300",
+    section: "III", questionRef: "2020 HL Section III Q1",
+    questionText: "Schrijf een opstel van minimaal 300 woorden. Kies één van de volgende opgaven. Taal verdeelt meer dan ze verenigt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task and prints nothing under it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2020 Higher Level — © State Examinations Commission.",
+    id: "nld-2020-hl-iii-2", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-van-minimaal-300",
+    section: "III", questionRef: "2020 HL Section III Q2",
+    questionText: "Schrijf een opstel van minimaal 300 woorden. Kies één van de volgende opgaven. Mensen laten zowel het beste als het slechtste van zich in tijden van crisis.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task and prints nothing under it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC017ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2021 Higher Level — © State Examinations Commission.",
