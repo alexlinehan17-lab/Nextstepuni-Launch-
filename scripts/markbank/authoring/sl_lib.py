@@ -413,37 +413,105 @@ def quote(*sels, lead='The scheme prints'):
 
 
 # ------------------------------------------------------------------ cards ---
-# The words each paper's answer-language rule opens with, where they are not
-# the first two words of eu_topics.ONE_LANGUAGE's (2025-era) sentence.
-RULE_OPENING = {}
+# How each subject's paper words its answer-language rule: a sentence that
+# opens with the answer word (pattern 1) and names the language (pattern 2),
+# read line by line from the paper (the passage itself may name the language:
+# Dutch 2010-2014 are texts about Dutch). Read per sitting: the wording changes
+# ("Alle antwoorden moeten worden geschreven in het Nederlands." 2021).
+RULE_WORDS = {
+    'dutch': (r'Alle antwoorden', r'Nederlands'),
+    'romanian': (r'Toate r\S{1,2}spunsurile', r'rom[âa]n'),
+}
+RULE_LINES = 3      # the rule's sentence ends within this many printed lines
+
+
+# Text-layer repairs for a rule sentence, per sitting, each derived from glyph
+# ids (never a hand map; memory markbank-glyph-repair):
+# - Romanian 2013: the bold instruction font TimesNewRoman,Bold carries no
+#   ToUnicode map, and get_text reads its glyph 1211 as U+04BB. The same font's
+#   glyph 1211 reads U+1EB7 in the 2012 and 2014 papers (texttrace) and is
+#   drawn as a with breve and dot below (rendered 2016 p2 at 300 dpi): the SEC
+#   printed "rặspunsurile".
+RULE_FIXES = {('romanian', 2013): {'\u04bb': '\u1eb7'}}
+LATIN_SUBJECTS = {'dutch', 'romanian', 'hungarian', 'slovakian', 'swedish', 'estonian', 'finnish',
+                  'croatian', 'danish', 'slovenian', 'maltese'}
+
+
+def rule_sentence(subject, doc):
+    """(PDF page, sentence) of the paper's answer-language rule, cut from its
+    own printed lines: from the answer word to the sentence's full stop, or to
+    the end of the printed line that names the language where the SEC set no
+    stop ("Toate răspunsurile vor fi scrise in limba româna", Romanian 2010)."""
+    answer, lang = (re.compile(x) for x in RULE_WORDS[subject])
+    fixes = RULE_FIXES.get((subject, doc['P'].year), {})
+    for page in sorted({p for p, _t in doc['paper']}):
+        lines = [t for p, t in doc['paper'] if p == page]
+        for i, line in enumerate(lines):
+            m = answer.search(line)
+            if not m:
+                continue
+            text = ''
+            for nxt in lines[i:i + RULE_LINES]:
+                start = len(text) + (1 if text else 0)
+                text = f'{text} {nxt}' if text else nxt
+                k = text.find(m.group(0))
+                stop = text.find('.', k)
+                if stop > k:
+                    text = text[:stop + 1]
+                    break
+                if lang.search(text[max(k, start):]):
+                    break
+            k = text.find(m.group(0))
+            sent = re.sub(r'\s+', ' ', text[k:]).strip()
+            if lang.search(sent):
+                for bad, good in fixes.items():
+                    sent = sent.replace(bad, good)
+                if subject in LATIN_SUBJECTS and re.search('[\u0400-\u04ff\ufffd]', sent):
+                    raise ValueError(f'{subject} {doc["P"].year}: rule text carries an unrepaired glyph: {sent!r}')
+                return page, sent
+    return None
+
+
+def printed_page(path, pdf_page):
+    """The page number the booklet itself prints on PDF page `pdf_page`, where
+    it prints one: the number in the top or bottom margin that follows the
+    booklet's own offset from the PDF (most booklets 0; Dutch 2018's cover is
+    unnumbered, so -1), voted over every page so a paragraph number set in the
+    margin is not taken for it."""
+    import collections
+    import fitz
+    doc = fitz.open(path)
+    cands = []
+    for page in doc:
+        h, nums = page.rect.height, set()
+        for b in page.get_text('dict')['blocks']:
+            for ln in b.get('lines', []):
+                t = ''.join(sp['text'] for sp in ln['spans']).strip()
+                if re.fullmatch(r'\d{1,2}', t) and (ln['bbox'][1] < 90 or ln['bbox'][1] > h - 90):
+                    nums.add(int(t))
+        cands.append(nums)
+    votes = collections.Counter(n - (i + 1) for i, nums in enumerate(cands) for n in nums)
+    if not votes:
+        return None
+    offset = votes.most_common(1)[0][0]
+    want = pdf_page + offset
+    return want if want in cands[pdf_page - 1] else None
 
 
 def rule_note(subject, doc, language):
-    """The answer-language note, quoting the rule as THIS paper prints it.
-
-    eu_topics.language_note quotes one sitting's sentence for every sitting
-    and says it is printed "on its own first page", which is the cover in these
-    booklets (second reader, 20 Nov: Dutch prints it on p2, p3 or p4, worded
-    three ways). Here the sentence is cut from the paper's own text, from its
-    opening words to its full stop, and its page named."""
-    rule = ONE_LANGUAGE.get(subject)
-    if not rule:
+    """The answer-language note, quoting the rule as THIS paper prints it,
+    with the page number the booklet prints (coordinator, 20 Nov: wording and
+    page as printed). eu_topics.language_note quotes one sitting's sentence for
+    every sitting and says it is printed "on its own first page", the cover."""
+    if subject not in ONE_LANGUAGE:
         return language_note(subject, language)
-    opening = RULE_OPENING.get(subject) or ' '.join(rule.split()[:2])
-    hits = []
-    for page in sorted({p for p, _t in doc['paper']}):
-        text = re.sub(r'\s+', ' ', ' '.join(t for p, t in doc['paper'] if p == page))
-        i = text.find(opening)
-        if i >= 0:
-            j = text.find('.', i)
-            hits.append((page, text[i:j + 1] if j > i else text[i:]))
-    if len(hits) != 1:
-        raise ValueError(f'{subject}: the paper prints {len(hits)} answer-language rules: {hits}')
-    _page, sentence = hits[0]
-    # No page number: some booklets number their pages one lower than the PDF
-    # (Dutch 2018's cover is unnumbered; second reader, 20 Nov).
+    found = rule_sentence(subject, doc)
+    if found is None:
+        raise ValueError(f'{subject}: the paper prints no answer-language rule')
+    page = printed_page(doc['P'].path, found[0])
+    where = f'on page {page}' if page else 'above its questions'
     return (f'The examination requires every answer in {LANGUAGE_NAME[subject].upper()}. '
-            f'The paper prints the rule: "{sentence}"')
+            f'The paper prints the rule {where}: "{found[1]}"')
 
 
 def part_head(P, section):
@@ -456,7 +524,12 @@ def part_head(P, section):
         if pm:
             token = next(g for g in pm.groups() if g).lower()
             if (part_map.get(token) or eu_paper._part_token(token)) == section:
-                heads.append(line.text)
+                # The head's second half set as a cell of its own on the same
+                # line, "Deel 2:" + "Commentaar" (Dutch 2023), price cells aside.
+                cells = [l.text for l in P.lines if l.page == line.page and abs(l.y - line.y) < 2
+                         and l.x > line.x and not TARIFF_EDGE.fullmatch(l.text.strip())
+                         and not TARIFF_WORDED.fullmatch(' ' + l.text.strip())]
+                heads.append(' '.join([line.text] + cells))
     return heads[-1] if heads else None
 
 
@@ -506,7 +579,9 @@ def cards(subject, year, specs, level='hl', scheme=True):
             # In a two-part sitting (2021, 2022) Part II IS the essay: filed
             # and shown as Part III's is.
             'topicId': topic_for(subject, 'classic', essay_part(key[0], two_part), key[2]),
-            'conceptId': concept_for(question),
+            # From the ask's own printed words, not an instruction put before
+            # them (2026 Q1(c)-(e) shared one; second reader, 20 Nov).
+            'conceptId': concept_for(clean_question(MARKER.sub('', ask.text, count=1)) or question),
             'questionRef': question_ref(year, level, key),
             'questionText': question,
         }

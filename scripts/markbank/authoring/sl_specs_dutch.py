@@ -46,10 +46,11 @@ SPECS[2010] = [
 
 
 # ================================================================ 2011 HL ===
-# The scheme reprints every question with its price, then its answer. Q5's
-# answer is how it is marked ("Goede uitleg en verwijzingen naar eigen
-# onderwijs.", second reader 20 Nov): a row at the printed price. Q6 prints
-# what an answer may contain: shown, priced as a whole (10a).
+# The scheme reprints every question with its price, then its answer. Q5
+# prints only how it is marked ("Goede uitleg en verwijzingen naar eigen
+# onderwijs."): shown, self-assessed on the printed price, as every
+# requirement-only answer is (second reader, 20 Nov). Q6 prints what an answer
+# may contain: shown, priced as a whole (10a).
 CRIT_2011 = crit(90, (91, 92), (93, 94), 95)
 SPECS[2011] = [
     R('I1a', [one(S(25), PP())], question=QP(3, '1) Waarnaar verwijzen', 'a: ‘die’')),
@@ -60,7 +61,7 @@ SPECS[2011] = [
     R('I2', [one(L(40, 42), PP())]),
     R('I3', [one(L(48, 50), PP())]),
     R('I4', [one(L(54, 55), PP())]),
-    R('I5', [one(S(61), PP())]),
+    R('I5', [shown(S(61))], whole=True),
     R('I6', [shown(S(66, after='• ')), shown(S(67, after='• ')), shown(S(68, after='• '))], whole=True,
       rownote=quote(S(64), S(65), lead='The scheme heads its points')),
     R('II1', [graded(S(89), PARTP(), CRIT_2011)],
@@ -325,19 +326,27 @@ SPECS[2019] = [
 # (10a). Deel 2 and Deel 3: nothing printed under the task (R4).
 NOTHING_2020 = 'The scheme reprints this task and prints nothing under it.'
 SPECS[2020] = [
-    R('I1a', [one(L(53, 54), PP())], question=QP(3, '1) Waarnaar verwijzen', 'a: ‘dat’')),
-    R('I1b', [one(L(56, 57), PP())], question=QP(3, '1) Waarnaar verwijzen', 'b: ‘daarvan’')),
+    # Q1(a), (b), Q2-Q4: the scheme sets the answer in bold inside the passage
+    # it quotes (font weight, second reader 20 Nov): the bold words are the row.
+    R('I1a', [one(S(53, after='Maar ', before=' beperkt'), PP())],
+      question=QP(3, '1) Waarnaar verwijzen', 'a: ‘dat’'), rownote=quote(L(53, 54), lead='The scheme prints its answer in bold inside')),
+    R('I1b', [one(S(56, after='zogeheten ', before=', '), PP())],
+      question=QP(3, '1) Waarnaar verwijzen', 'b: ‘daarvan’'), rownote=quote(L(56, 57), lead='The scheme prints its answer in bold inside')),
     R('I1c', [one(S(61), PP())]),
     R('I1d', [one(S(65), PP())]),
     R('I1e', [one(S(73), PP())]),
-    R('I2', [one(L(76, 80), PP())]),
-    R('I3', [one(L(84, 89), PP())]),
-    R('I4', [one(L(93, 95), PP())]),
+    R('I2', [one(J(S(78, after='goeden huize zijn. '), S(79), S(80)), PP())], rownote=quote(L(76, 80), lead='The scheme prints its answer in bold inside')),
+    R('I3', [one(J(S(85, after="heeft.' "), S(86), S(87, before=', leerde')), PP())],
+      rownote=quote(L(84, 89), lead='The scheme prints its answer in bold inside')),
+    R('I4', [one(S(94, after='Island ', before=', kon'), PP())], rownote=quote(L(93, 95), lead='The scheme prints its answer in bold inside')),
     R('I5', [shown(L(103, 105))], whole=True),
     R('I6', [shown(L(109, 111)), shown(S(112))], whole=True),
     R('II1', [unprinted(NOTHING_2020)]),
-    R('III1', [unprinted(NOTHING_2020)], question=QP(4, 'Schrijf een opstel', 'a) Taal verdeelt')),
-    R('III2', [unprinted(NOTHING_2020)], question=QP(4, 'Schrijf een opstel', 'b) Mensen laten')),
+    R('III1', [unprinted('The scheme reprints the two titles and prints nothing under them.')],
+      question=QP(4, 'Schrijf een opstel', 'a) Taal verdeelt')),
+    R('III2', [unprinted(lambda d: f'The scheme reprints the two titles, this one in other words, '
+                                   f'“{S(120, after="b) ").text(d)}”, and prints nothing under them.')],
+      question=QP(4, 'Schrijf een opstel', 'b) Mensen laten')),
 ]
 
 # ================================================================ 2026 HL ===
@@ -374,9 +383,10 @@ SPECS[2026] = [
 # scheme reprints each and prints nothing under it (R4).
 SPECS[2021] = [
     R('I6', [unprinted('The scheme reprints this question and prints nothing under it.')]),
-    R('II1', [unprinted('The scheme reprints the two titles and prints nothing under them.')],
+    R('II1', [unprinted('The scheme reprints this title and prints nothing under it.')],
       question=pre(4, 'Schrijf een opstel')),
-    R('II2', [unprinted('The scheme reprints the two titles and prints nothing under them.')],
+    R('II2', [unprinted(lambda d: f'The scheme reprints this title in other words, “{L(117, 118, after="b) ").text(d)}” '
+                                  f'({S(119).text(d)}), and prints nothing under it.')],
       question=pre(4, 'Schrijf een opstel')),
 ]
 
@@ -394,18 +404,19 @@ SPECS[2022] = [
 # Live: Q1(a), (b), (d), (e), Q2, Q3. The scheme letters Q1's expressions in
 # another order from the paper's: its b) answers the paper's (c) 'het'
 # ("Kunstmatige intelligentie", p5), and the live (b) and (d) cards already
-# follow the paper. Q4: nothing printed (R4). Q5 and Q6: the scheme prints how
-# the candidate's own answer is judged, a row at the printed price. Deel 2 and
-# Deel 3: nothing printed under the task (R4).
+# follow the paper. Q4: nothing printed (R4). Q5 and Q6: the scheme prints only
+# how the candidate's own answer is judged: shown, self-assessed on the printed
+# price. Deel 2 and Deel 3: nothing printed under the task (R4).
 SPECS[2023] = [
     R('I1c', [one(S(153), PP())],
       question=QP(4, '1. Waarnaar verwijzen', Run('c: ‘het’', 'eigenlijk niet weten'), '(alinea 8)'),
       note='The scheme letters this expression b) (p5); the paper prints it at (c).'),
     R('I4', [unprinted('The scheme reprints this question and prints nothing under it.')]),
-    R('I5', [one(L(188, 189), PP())]),
-    R('I6', [one(S(194), PP())]),
-    R('II1', [unprinted('The scheme reprints this task, in slightly different words, and prints nothing '
-                        'under it.')],
+    R('I5', [shown(L(188, 189))], whole=True),
+    R('I6', [shown(S(194))], whole=True),
+    R('II1', [unprinted(lambda d: 'The scheme reprints this task in its own words, '
+                                  + ' '.join(f'“{S(n).text(d)}”' for n in (200, 201, 202, 203))
+                                  + ', and prints nothing under it.')],
       question=QP(4, 'Kan de ontwikkeling', '‘We moeten meer', 'Wat bedoelt de auteur', 'Geef je eigen visie')),
     R('III1', [unprinted('The scheme reprints the two titles and prints nothing under them.')],
       question=QP(4, 'Schrijf een opstel', 'a) De grens')),

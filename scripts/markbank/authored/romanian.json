@@ -6,7 +6,7 @@
   "year": 2010,
   "section": "I",
   "topicId": "romanian-0-0",
-  "conceptId": "explica-cuvintele-urmatoare-prin-sinonime-sau",
+  "conceptId": "docutainment",
   "questionRef": "2010 HL Section I Q1(a)",
   "questionText": "Explicaţi cuvintele urmatoare prin sinonime sau perifraze: docutainment (p.1)",
   "tariffModel": {
@@ -19,7 +19,7 @@
     "kind": "point",
     "verbatim": "a relata evenimente, fapte, folosind mai ales imagini, documentare etc., şi a distra in acelaşi timp spectatorii (SAU documentare+distracţie)",
     "marks": 1,
-    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule: \"Toate răspunsurile vor fi scrise in limba româna Maximum 100 puncte TELEVIZIUNEA, O FANTASMAGONIE MODERNĂ 1.\""
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper."
@@ -31,7 +31,7 @@
   "year": 2010,
   "section": "I",
   "topicId": "romanian-0-0",
-  "conceptId": "explica-cuvintele-urmatoare-prin-sinonime-sau",
+  "conceptId": "edutainment",
   "questionRef": "2010 HL Section I Q1(b)",
   "questionText": "Explicaţi cuvintele urmatoare prin sinonime sau perifraze: edutainment (p.1)",
   "tariffModel": {
@@ -44,7 +44,7 @@
     "kind": "point",
     "verbatim": "a educa prin metode amuzante, făcând ca materiile sau subiectele predate să fie distractive şi interesante in acelaşi timp (SAU educaţie, invăţătură+distracţie)",
     "marks": 1,
-    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule: \"Toate răspunsurile vor fi scrise in limba româna Maximum 100 puncte TELEVIZIUNEA, O FANTASMAGONIE MODERNĂ 1.\""
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper."
@@ -56,7 +56,7 @@
   "year": 2010,
   "section": "I",
   "topicId": "romanian-0-0",
-  "conceptId": "explica-cuvintele-urmatoare-prin-sinonime-sau",
+  "conceptId": "infotainment",
   "questionRef": "2010 HL Section I Q1(c)",
   "questionText": "Explicaţi cuvintele urmatoare prin sinonime sau perifraze: infotainment (p.1)",
   "tariffModel": {
@@ -69,7 +69,7 @@
     "kind": "point",
     "verbatim": "a primi şi a transmite informaţii într-un mod uşor accesibil şi amuzant în scopul de a facilita înţelegerea mesajului (SAU informaţie+distracţie)",
     "marks": 1,
-    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule: \"Toate răspunsurile vor fi scrise in limba româna Maximum 100 puncte TELEVIZIUNEA, O FANTASMAGONIE MODERNĂ 1.\""
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper."
@@ -81,7 +81,7 @@
   "year": 2010,
   "section": "I",
   "topicId": "romanian-0-0",
-  "conceptId": "explica-cuvintele-urmatoare-prin-sinonime-sau",
+  "conceptId": "plan-marketing",
   "questionRef": "2010 HL Section I Q1(d)",
   "questionText": "Explicaţi cuvintele urmatoare prin sinonime sau perifraze: plan de marketing (p.5)",
   "tariffModel": {
@@ -94,7 +94,7 @@
     "kind": "point",
     "verbatim": "un plan sau studiu despre cum trebuie prezentate, anunţate şi vândute produsele unei societaţi comerciale",
     "marks": 1,
-    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule: \"Toate răspunsurile vor fi scrise in limba româna Maximum 100 puncte TELEVIZIUNEA, O FANTASMAGONIE MODERNĂ 1.\""
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper."
@@ -106,7 +106,7 @@
   "year": 2010,
   "section": "I",
   "topicId": "romanian-0-0",
-  "conceptId": "explica-cuvintele-urmatoare-prin-sinonime-sau",
+  "conceptId": "obiectivitate",
   "questionRef": "2010 HL Section I Q1(e)",
   "questionText": "Explicaţi cuvintele urmatoare prin sinonime sau perifraze: obiectivitate (p.8)",
   "tariffModel": {
@@ -119,7 +119,7 @@
     "kind": "point",
     "verbatim": "a lua în considerare numai faptele fară a se lăsa influenţat de sentimentele şi părerile personale",
     "marks": 1,
-    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule: \"Toate răspunsurile vor fi scrise in limba româna Maximum 100 puncte TELEVIZIUNEA, O FANTASMAGONIE MODERNĂ 1.\""
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper."
@@ -144,7 +144,7 @@
     "kind": "point",
     "verbatim": "programele de televizor sunt toate programate de specialiştii în domeniu comform studiilor de piaţă şi cu scopul de a face ca toată lumea să gândescă la fel şi să dorească aceleaşi lucruri",
     "marks": null,
-    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule: \"Toate răspunsurile vor fi scrise in limba româna Maximum 100 puncte TELEVIZIUNEA, O FANTASMAGONIE MODERNĂ 1.\""
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
    },
    {
     "id": "r-2",
@@ -181,7 +181,7 @@
     "kind": "point",
     "verbatim": "ca o consecinţă directă a « maşinii de spălat creierul », a difuzării continue de ştiri senzaţionale obişnuinţa cu ce este rău, extrem şi impresionant duce la o slăbire a sensibilităţii pană când nimic nu ne mai impresionează, nu mai suntem capabili să distingem între bine şi rău, banal şi ieşit din comun",
     "marks": 5,
-    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule: \"Toate răspunsurile vor fi scrise in limba româna Maximum 100 puncte TELEVIZIUNEA, O FANTASMAGONIE MODERNĂ 1.\""
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper."
@@ -206,7 +206,7 @@
     "kind": "point",
     "verbatim": "publicul tv poate fi constructiv sub influenţa plictiselii",
     "marks": null,
-    "contextNote": "For “Caracteristici pozitive:”: The examination requires every answer in ROMANIAN. The paper prints the rule: \"Toate răspunsurile vor fi scrise in limba româna Maximum 100 puncte TELEVIZIUNEA, O FANTASMAGONIE MODERNĂ 1.\" The scheme heads it: “Înţelegerea clară a temelor principale tratate în text”."
+    "contextNote": "For “Caracteristici pozitive:”: The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\" The scheme heads it: “Înţelegerea clară a temelor principale tratate în text”."
    },
    {
     "id": "r-2",
@@ -266,7 +266,7 @@
     "kind": "point",
     "verbatim": "reiese din text că televizorul este de cele mai multe ori un mijloc de manipulare din motive comerciale şi pentru marea majoritate reprezintă modul cel mai ieftin şi la indemâna de a petrece timpul liber",
     "marks": null,
-    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule: \"Toate răspunsurile vor fi scrise in limba româna Maximum 100 puncte TELEVIZIUNEA, O FANTASMAGONIE MODERNĂ 1.\" The scheme heads it: “Demonstrează o bună înţelegere a textului în ansamblu şi capacitatea de a explica puncte de vedere personale”."
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\" The scheme heads it: “Demonstrează o bună înţelegere a textului în ansamblu şi capacitatea de a explica puncte de vedere personale”."
    },
    {
     "id": "r-2",
@@ -303,7 +303,7 @@
     "kind": "point",
     "verbatim": "informaţia este viaţa in termeni teoretici şi deci este important să facem ca informaţia pasivă să devină activă prin aplicarea ei la viaţa reală si nicidecum să o contemplăm pasivi pe un ecran",
     "marks": null,
-    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule: \"Toate răspunsurile vor fi scrise in limba româna Maximum 100 puncte TELEVIZIUNEA, O FANTASMAGONIE MODERNĂ 1.\" The scheme heads it: “Buna înţelegere a textului în ansamblu şi capacitatea de a extinde conceptele din text la experienţa de viaţă personală”."
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\" The scheme heads it: “Buna înţelegere a textului în ansamblu şi capacitatea de a extinde conceptele din text la experienţa de viaţă personală”."
    },
    {
     "id": "r-2",
@@ -449,7 +449,7 @@
       ]
      }
     ],
-    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule: \"Toate răspunsurile vor fi scrise in limba româna Maximum 100 puncte TELEVIZIUNEA, O FANTASMAGONIE MODERNĂ 1.\" The scheme prints: “In partea II si III vor fi luate in considerare la acordarea notelor urmatoarele criterii:”."
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\" The scheme prints: “In partea II si III vor fi luate in considerare la acordarea notelor urmatoarele criterii:”."
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
@@ -461,7 +461,7 @@
   "year": 2010,
   "section": "III",
   "topicId": "romanian-1-1",
-  "conceptId": "scrie-comentariu-aproximativ-300-cuvinte-una",
+  "conceptId": "informa-inseamn-putere-sau",
   "questionRef": "2010 HL Section III Q1",
   "questionText": "Scrieţi un comentariu de aproximativ 300 de cuvinte pe una din temele urmatoare: “Informaţia înseamnă putere” (p.6)",
   "tariffModel": {
@@ -591,7 +591,7 @@
       ]
      }
     ],
-    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule: \"Toate răspunsurile vor fi scrise in limba româna Maximum 100 puncte TELEVIZIUNEA, O FANTASMAGONIE MODERNĂ 1.\" The scheme prints: “In partea II si III vor fi luate in considerare la acordarea notelor urmatoarele criterii:”."
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\" The scheme prints: “In partea II si III vor fi luate in considerare la acordarea notelor urmatoarele criterii:”."
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
@@ -603,7 +603,7 @@
   "year": 2010,
   "section": "III",
   "topicId": "romanian-1-1",
-  "conceptId": "scrie-comentariu-aproximativ-300-cuvinte-una",
+  "conceptId": "nimeni-insul-nimeni-complet-autonom",
   "questionRef": "2010 HL Section III Q2",
   "questionText": "Scrieţi un comentariu de aproximativ 300 de cuvinte pe una din temele urmatoare: Nimeni nu este o insulă (nimeni nu este complet autonom)",
   "tariffModel": {
@@ -733,7 +733,7 @@
       ]
      }
     ],
-    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule: \"Toate răspunsurile vor fi scrise in limba româna Maximum 100 puncte TELEVIZIUNEA, O FANTASMAGONIE MODERNĂ 1.\" The scheme prints: “In partea II si III vor fi luate in considerare la acordarea notelor urmatoarele criterii:”."
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\" The scheme prints: “In partea II si III vor fi luate in considerare la acordarea notelor urmatoarele criterii:”."
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
