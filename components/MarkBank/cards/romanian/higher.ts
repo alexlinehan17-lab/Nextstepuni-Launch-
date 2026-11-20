@@ -511,6 +511,213 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2012 Higher Level — © State Examinations Commission.",
+    id: "ron-2012-hl-i-1", topicId: "romanian-0-1", conceptId: "explica-scurt-cuvintele-expresiile-urm-toare",
+    section: "I", questionRef: "2012 HL Section I Q1",
+    questionText: "Explicaţi pe scurt cuvintele şi expresiile următoare folosind sinonime sau perifraze şi ţinând cont de context.\na) democratizarea totală a publicatului (p.2)\nb) lectura este pozitiv conotată (p.2)\nc) citesc cu nesaţ (p.4)\nd) predispuşi să-l facă praf (p.7)\ne) o fervoare a demascării (p.8)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Datorită Internetului, publicarea articolelor de orice natură a devenit accesibilă orcui vrea să-şi spună părerea, indiferent de profesie, limbă, vârstă sau ţară în care trăieşte.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\"" },
+    { id: "r-2", kind: "point", verbatim: "Cititul este perceput în general ca un lucru, o ocupaţie bună şi nobilă", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Sunt nerăbdători şi dornici să citească comentariile de sub articolele lor din dorinţa de a afla ce gândesc alţi oameni despre ei, sunt împinşi mai mult de curiozitate decât de interese pur intelectuale şi literare", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Aceşti cititori nu sunt interesaţi de articol şi de valoarea lui, nici de ideile şi mesajul pe care scriitorul vrea să-l transmită, abordează textul cu intenţia de a-l critica şi a-l devaloriza, din motive de frustrare personală sau din alte motive meschine", marks: null },
+    { id: "r-5", kind: "point", verbatim: "O pasiune, o dorinţă puternică de a face public ceea ce acei cititori rău voitori consideră a fi părţile ascunse sau negative ale personalitaţii autorului, criticând în felul acesta persoana şi nu textul", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2012 Higher Level — © State Examinations Commission.",
+    id: "ron-2012-hl-i-2", topicId: "romanian-0-1", conceptId: "potrivit-afirma-iilor-autorului-din-paragrafele",
+    section: "I", questionRef: "2012 HL Section I Q2",
+    questionText: "Potrivit afirmaţiilor autorului din paragrafele 2 si 3, cum ar trebui să fie o lectură corectă?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cititul ar trebui să fie o activitate intelectuală pozitivă aşa cum a fost timp de secole pană la apariţia Internetului.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\" The scheme heads it: “Înţelegerea ideilor de fond discutate în text”." },
+    { id: "r-2", kind: "point", verbatim: "O lectură corectă este când atitudinea este şi ea corectă, atunci când citeşti cu scopul de a învăţa şi a înţelege lumea care te înconjoară", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Cititul trebuie să combată ignoranţa prin transmiterea de informaţii de valoare şi ajutându-ne să descoperim viaţa în formele ei cele mai variate", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Cititul trebuie să te ajute să gândeşti mai bine şi mai profund", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Cititul te face să progresezi în toate domeniile şi nu contrariul (care se întâmplă atunci când persoanele nepregătite pentru scris îşi impun textele şi ideile lor confuse ce nu fac decât să dezorienteze şi mai mult pe cititorii neavizaţi)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2012 Higher Level — © State Examinations Commission.",
+    id: "ron-2012-hl-i-3", topicId: "romanian-0-1", conceptId: "descrie-trei-categorii-comentarii-online-care",
+    section: "I", questionRef: "2012 HL Section I Q3",
+    questionText: "Descrieţi trei categorii de comentarii online pe care autorul articolului le-a observat. (p. 5, 6, 7 )",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Prima categorie o constituie articolele în care oamenii se ceartă şi chiar se luptă din motive personale necunoscute, se agresează verbal şi se urmăresc prin spaţiile Internetului în absenţa luptelor fizice din viaţa reală", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\" The scheme heads it: “Identificarea informaţiilor detaliate despre formele de manifestare a lecturii incorecte”." },
+    { id: "r-2", kind: "point", verbatim: "A doua categorie cuprinde o mare varietate de anunţuri publicitare şi comerciale care de fapt banalizează scrisul şi lectura", marks: null },
+    { id: "r-3", kind: "point", verbatim: "A treia categorie de comentarii o constituie articolele scrise pentru a-i denigra pe ceilalţi autori şi a devia atenţia cititorului de la textul scris, înspre autorul acestuia; este vorba despre o non-lectură a textului. Aceste articole-comentarii sunt negative şi nocive într-ucăt distrug textul privăndu-l de valoarea sa.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2012 Higher Level — © State Examinations Commission.",
+    id: "ron-2012-hl-i-4", topicId: "romanian-0-1", conceptId: "explica-autorul-articolului-nume-lectura-sub",
+    section: "I", questionRef: "2012 HL Section I Q4",
+    questionText: "Explicaţi de ce autorul articolului numeşte lectura sub influenţa urei “Un tip de lectură nou apărută. De fapt, o non-lectură”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Odată cu apariţia Internetului şi a libertăţii implicite de a scrie tot ce ne trece prin minte, a aparut şi un nou tip de lectură; aşa cum oricine poate scrie orice, oricine poate citi orice vrea să citească dintr-un text fără a se teme de opoziţie şi atribuindu-şi merite pe care nu le are. In zilele noastre nu trebuie să fii ziarist, scriitor sau profesor pentru a fi calificat să scrii pe Net şi să-ţi strigi cu voce tare punctul de vedere", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\" The scheme heads it: “Înţelegerea profundă a unor idei exprimate mai putin explicit, demonstrează capacitate de gândire analitică şi extrapolare a cunoştiinţelor”." },
+    { id: "r-2", kind: "point", verbatim: "Deseori comentariile la un articol pot fi atăt de negative şi destructive încăt să afecteze sensul de bază al textului creănd astfel un fenomen opus lecturii tradiţionale pe care autorul articolului îl numeşte « non-lectură »", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2012 Higher Level — © State Examinations Commission.",
+    id: "ron-2012-hl-i-5", topicId: "romanian-0-1", conceptId: "puncte-explica-comparat-spa-iul-comentarii",
+    section: "I", questionRef: "2012 HL Section I Q5",
+    questionText: "Explicaţi de ce este comparat spaţiul de comentarii sub articolele online, cu un maidan. “ Unele sînt certuri între postaci, iar spaţiul de comentarii de sub articol e doar maidanul pe care se întîlnesc. Am putut observa, de pildă, cum caftul începe în josul unui articol semnat C.T. Popescu, continuă sub articolul din aceeaşi zi al lui Ion Cristoiu, se prelungeşte în locul rezervat comentariilor articolului lui Andrei Pleşu şi tot aşa – oamenii se fugăresc neobosit prin faldurile infinite ale netului.” (p.5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Incepănd cu apariţia Internetului şi a siturilor sociale, oamenilor le-a fost mai uşor să comunice prin scris şi cu timpul au înlocuit lumea reală şi fizică cu cea virtuală. O mare parte din viaţa lor se desfaşoară pe Net, inclusiv manifestările de bucurie şi de supărare. Dacă nu se înţeleg sau se află într-o situaţie de competiţie, atunci se luptă pe Net ca şi când s-ar lupta pe terenurile din cartierele lor. Pumnii şi armele sunt îinlocuite de cuvintele urâte şi de critica nedreaptă etc....", marks: 5, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\" The scheme heads it: “Demonstrează o bună înţelegere a textului în ansamblu şi capacitatea de a explica puncte de vedere personale”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2012 Higher Level — © State Examinations Commission.",
+    id: "ron-2012-hl-i-6", topicId: "romanian-0-1", conceptId: "bazandu-articol-ansamblul-lui-care-crede",
+    section: "I", questionRef: "2012 HL Section I Q6",
+    questionText: "Bazându-vă pe articol în ansamblul lui, care credeţi că sunt efectele acestei schimbări?: “ multiplicarea cărţilor a produs ceva ca o diluţie a lecturii, determinînd trecerea de la lectura intensivă la lectura extensivă“.(p.1)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ca principiu general, o cantitate prea mare implică pierderea calităţii. Ca atare, multe surse de lectură (cărţi, reviste, Internetul..) implică mulţi autori şi subiecte care nu pot fi întotdeauna verificate.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\" The scheme heads it: “Buna înţelegere a textului şi a consecinţelor produse de fenomenul descris în el”." },
+    { id: "r-2", kind: "point", verbatim: "Oamenii sunt bombardaţi cu informaţii provenind din domenii de activitate pe care ei nu au nici timpul nici autoritatea să le cerceteze în de aproape. Avem cu toţii impresia că citim mai mult dar înţelegem mai puţin. Cititul a fost diluat în privinţa calităţii într-ucât a devenit dificil să distingem între o lectură bună şi una mai puţin bună.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "In trecut existau mai putine surse de lectură iar autorii lor erau scriitori sau jurnalişti de profesie – lectura era deci intensivă şi de valoare. In zilele noastre, mai ales în urma creării Internetului, oricine poate scrie şi citi dar nu toată lumea are pregatirea şi calificarea necesare scrierii şi citirii corecte a textelor - astfel cititul a devenit extensiv.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2012 Higher Level — © State Examinations Commission.",
+    id: "ron-2012-hl-ii-1", topicId: "romanian-1-0", conceptId: "referindu-text-folosind-aprox-100-cuvinte",
+    section: "II", questionRef: "2012 HL Section II Q1",
+    questionText: "Referindu-vă la text (p.1) şi folosind aprox. 100 de cuvinte, comentaţi afirmaţia autorului: “ Astăzi, nimic nu poate opri pe oricine să scrie ceva şi să pună sub ochii tuturor ce scrie.”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Comentarea citatului, (în aprox. 100 de cuvinte), demonstrând înţelegerea în ansamblu a subiectului şi în special a scopului cu care autorul a scris acest articol. Comentariul trebuie de asemenea să ilustreze înţelegerea consecinţelor pentru viaţa personală reală aşa cum se sugerează prin acest citat.", marks: 30, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\" The scheme prints: “În partea II si III vor fi luate în considerare la acordarea notelor urmatoarele criterii:”. The scheme prints, as examples, not a checklist: “Cum bine spune autorul acestui articol « democratizarea publicatului » a dus la apariţia unei noi forme de scriere şi de lectura. Toata lumea are dreptul sa se exprime în scris indiferent de statutul sau. Ce conteaza azi este comunicarea de idei sub orice forma.”; “Cea mai mare libertate a scrisului se observa la nivelul articolelelor publicate pe Internet unde nu există nici un control, nici o cenzură în afară de cea la nivel personal. Fiecare persoană îşi asumă deci propria responsabi-litate în priviinţa a ceea ce scrie şi citeşte, acceptă sau refuză scrisul celorlalţi. Acesta nu este şi cazul publicaţiilor de presă, al cărţilor publicate de edituri recunoscute unde putem încă avea siguranţa autenticităţii, veridicităţii informaţiilor scrise şi a calităţii literare.”; “Faptul că oricine poate să arate celorlalţi ceea ce a scris, să-şi spună punctul de vedere şi să dialogheze pe subiecte de actualitate sau de interes comun, reprezintă o mare realizare a secolului nostru, o deschidere nemaiîntâlnită până acum în istoria omenirii. Desigur, există şi multe consecinţe nefaste ale fenomenului şi în mod paradoxal, acestea provin din prea marea liberate a expresiei. Ar trebui poate să se inventeze o modalitate de a controla excesele şi de a limita riscurile mai ales cand este vorba de cititorii adolescenţi care din lipsa de experienţă pot adopta idei şi obiceiuri greşite....”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înţelege întrebarea şi modul în care i se cere să răspundă – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Coerenţa răspunsului – candidatul foloseşte un material adecvat într-o manieră structurată şi la subiect– 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Eficienţa limbajului – candidatul demonstrează că stăpâneşte limba destul de bine pentru a-şi comunica cu claritate şi cursivitate ideile – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Respectarea regulilor – gramatică, punctuaţie – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PARTEA II",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2012 Higher Level — © State Examinations Commission.",
+    id: "ron-2012-hl-iii-1", topicId: "romanian-1-1", conceptId: "cuvantul-scris-cel-mai-bun-mijloc",
+    section: "III", questionRef: "2012 HL Section III Q1",
+    questionText: "Scrieţi un comentariu de aproximativ 300 de cuvinte pe una din temele următoare exprimând punctul vostru de vedere faţă de afirmaţia autorului. Cuvântul scris este cel mai bun mijloc de a lupta împotriva ignoranţei.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Compunere de aproximativ 300 de cuvinte la alegere între 2 subiecte, scrisă cursiv, urmărind o organizare coerentă a ideilor şi conducând la o concluzie clară.", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\" The scheme prints: “În partea II si III vor fi luate în considerare la acordarea notelor urmatoarele criterii:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înţelege întrebarea şi modul în care i se cere să răspundă – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Coerenţa răspunsului – candidatul foloseşte un material adecvat într-o manieră structurată şi la subiect– 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Eficienţa limbajului – candidatul demonstrează că stăpâneşte limba destul de bine pentru a-şi comunica cu claritate şi cursivitate ideile – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Respectarea regulilor – gramatică, punctuaţie – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2012 Higher Level — © State Examinations Commission.",
+    id: "ron-2012-hl-iii-2", topicId: "romanian-1-1", conceptId: "societatea-modern-actual-totul-concentreaz-momentul",
+    section: "III", questionRef: "2012 HL Section III Q2",
+    questionText: "Scrieţi un comentariu de aproximativ 300 de cuvinte pe una din temele următoare exprimând punctul vostru de vedere faţă de afirmaţia autorului. În societatea modernă actuală totul se concentrează pe momentul prezent.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Compunere de aproximativ 300 de cuvinte la alegere între 2 subiecte, scrisă cursiv, urmărind o organizare coerentă a ideilor şi conducând la o concluzie clară.", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română\" The scheme prints: “În partea II si III vor fi luate în considerare la acordarea notelor urmatoarele criterii:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înţelege întrebarea şi modul în care i se cere să răspundă – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Coerenţa răspunsului – candidatul foloseşte un material adecvat într-o manieră structurată şi la subiect– 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Eficienţa limbajului – candidatul demonstrează că stăpâneşte limba destul de bine pentru a-şi comunica cu claritate şi cursivitate ideile – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Respectarea regulilor – gramatică, punctuaţie – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC553ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2021 Higher Level — © State Examinations Commission.",
