@@ -1355,13 +1355,14 @@ export const CARDS: SecCard[] = [
     questionText: "Hvordan skal overskriften ”Jeg melder fra.com” forstås?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Overskriften er et citat fra musiker Niels Skousen. Overskriften er et ordspil, hvor Iben Krog Rasmussen sammenfatter sit budskab om, at hun ikke længere vil anvende de sociale medier som en del af hendes privatsfære. De sociale medier skal udelukkende anvendes som et offentligt forum, der er beregnet til demokratiske debatter. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Overskriften er et citat fra musiker Niels Skousen. Overskriften er et ordspil, hvor Iben Krog Rasmussen sammenfatter sit budskab om, at hun ikke længere vil anvende de sociale medier som en del af hendes privatsfære. De sociale medier skal udelukkende anvendes som et offentligt forum, der er beregnet til demokratiske debatter.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2018 Higher Level examination paper — © State Examinations Commission.",
@@ -1378,13 +1379,14 @@ export const CARDS: SecCard[] = [
     questionText: "Hvordan beskriver Iben Krog Rasmussen sig selv og sit liv?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hun beskriver sig selv som succesfuld og smuk. Hun har en lækker kæreste og bor i en luksuslejlighed i København med to veninder. Hun har førhen været en flittig bruger af de sociale medier, hvor hun gerne ville vise sit succesfulde liv. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Hun beskriver sig selv som succesfuld og smuk. Hun har en lækker kæreste og bor i en luksuslejlighed i København med to veninder. Hun har førhen været en flittig bruger af de sociale medier, hvor hun gerne ville vise sit succesfulde liv.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 1: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2018 Higher Level examination paper — © State Examinations Commission.",
@@ -1535,7 +1537,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2019 Higher Level — © State Examinations Commission.",
     id: "dan-2019-hl-i-1-a", topicId: "danish-0-0", conceptId: "forklar-betydningen-ordene-barnet-heller-ikke",
     section: "I", questionRef: "2019 HL Section I Q1(a)",
-    questionText: "Forklar betydningen af ordene ”Barnet er heller ikke bare en del af familien, men det",
+    questionText: "Forklar betydningen af ordene ”Barnet er heller ikke bare en del af familien, men det royale medlem for bordenden” som de bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Udtrykket skal forstås metaforisk, og det betyder, at barnet behandles som en konge, hvilket betyder, at barnets behov sættes i centrum, og at det derved har magten over forældrene”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
@@ -1545,6 +1547,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -1568,6 +1571,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -1591,6 +1595,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -1614,6 +1619,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -1630,13 +1636,14 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”moderskab” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Moderskab betyder egentlig bare det at være mor, men i teksten italesættes det ofte negativt bl.a. med ord som ”kvindeundertrykkelse” og ”sur askese” pga. idealet om den perfekte mor, hvor kvinden tilsidesætter sine egne behov.”) (maks. 5 × 1 point)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Moderskab betyder egentlig bare det at være mor, men i teksten italesættes det ofte negativt bl.a. med ord som ”kvindeundertrykkelse” og ”sur askese” pga. idealet om den perfekte mor, hvor kvinden tilsidesætter sine egne behov.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -1653,13 +1660,14 @@ export const CARDS: SecCard[] = [
     questionText: "Hvad viser lykkeforskningsprojektet, som Hermansen henviser til?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Lykkeforskningsprojektet gør op med forestillingen om, at børn er nøglen til et lykkeligt liv. Undersøgelsen viser, at det, der gør os lykkelig, er vores partner, vores sociale relationer, økonomiske frihed, familie og job - ikke vores børn. Børn begrænser vores frihed. Det er ofte svært at forene vores egocentriske behov med det at være forældre, hvor barnets behov sættes i centrum. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Lykkeforskningsprojektet gør op med forestillingen om, at børn er nøglen til et lykkeligt liv. Undersøgelsen viser, at det, der gør os lykkelig, er vores partner, vores sociale relationer, økonomiske frihed, familie og job - ikke vores børn. Børn begrænser vores frihed. Det er ofte svært at forene vores egocentriske behov med det at være forældre, hvor barnets behov sættes i centrum.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -1676,13 +1684,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Aldrig før har vi i den grad idoliseret vores børn som i dag.” Forklar Hermansens synspunkt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Citatet kan ses som en kritik af den moderne børneopdragelse. At idolisere betyder at beundre, tilbede og forgude. Forældre behandler deres børn som idoler ved konstant at fotografere dem og ved at hylde alt, hvad de laver som værende genialt, f.eks. deres tegninger. Et idol er ufejlbarligt og kan derfor ikke kritiseres. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Citatet kan ses som en kritik af den moderne børneopdragelse. At idolisere betyder at beundre, tilbede og forgude. Forældre behandler deres børn som idoler ved konstant at fotografere dem og ved at hylde alt, hvad de laver som værende genialt, f.eks. deres tegninger. Et idol er ufejlbarligt og kan derfor ikke kritiseres.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -1699,13 +1708,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Moderskabet er blevet en avanceret form for kvindeundertrykkelse, siger den franske filosof Elisabeth Bandinter.” Er du enig i Bandinters synspunkt? (Hvorfor/hvorfor ikke?)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Der kan både argumenteres for og imod Bandinters synspunkt. Hun definerer moderskabet som en sur askese med endeløse pligter, hvor kvinden først genfinder lykken, når barnet flytter hjemmefra. Kvindeundertrykkelsen består i, at kvinden ikke får lov til at realisere sig selv. Man kan argumentere for det modsatte synspunkt ved at påstå, at kvinder realiserer sig selv gennem barnet og dermed føler sig fuldendte. Det er således et stort tab, når barnet flytter hjemmefra. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Der kan både argumenteres for og imod Bandinters synspunkt. Hun definerer moderskabet som en sur askese med endeløse pligter, hvor kvinden først genfinder lykken, når barnet flytter hjemmefra. Kvindeundertrykkelsen består i, at kvinden ikke får lov til at realisere sig selv. Man kan argumentere for det modsatte synspunkt ved at påstå, at kvinder realiserer sig selv gennem barnet og dermed føler sig fuldendte. Det er således et stort tab, når barnet flytter hjemmefra.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -1722,13 +1732,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Jeg forstår grundlæggende godt dem, der vælger ikke at få børn. De orker ikke leve op til det herskende ideal om at være Den Perfekte Mor.” Diskuter Hermansens synspunkt i citatet.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Idealet om den perfekte mor defineres som en mor, der tilsidesætter sine egne behov. Hun bruger al sin tid på børnene, bl.a. ved at lave hjemmelavet mad og ved at amme, hvilket er meget krævende. Man kan argumentere for og imod påstanden om, at dette er et herskende ideal. Man kan argumentere for, at det i dag er blevet nemmere at være mor pga. af moderne opfindelser som modermælkserstatning og færdigretter, og at man generelt har flere ressourcer til at sikre børnene en tryg barndom. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Idealet om den perfekte mor defineres som en mor, der tilsidesætter sine egne behov. Hun bruger al sin tid på børnene, bl.a. ved at lave hjemmelavet mad og ved at amme, hvilket er meget krævende. Man kan argumentere for og imod påstanden om, at dette er et herskende ideal. Man kan argumentere for, at det i dag er blevet nemmere at være mor pga. af moderne opfindelser som modermælkserstatning og færdigretter, og at man generelt har flere ressourcer til at sikre børnene en tryg barndom.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -1745,13 +1756,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Vi skal have redefineret vores tilgang til at få børn og ikke mindst revideret deres betydning for vores liv.” Diskuter Hermansens synspunkt i citatet.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hermansen mener, at alle bør stille sig selv spørgsmålet: hvorfor egentlig få børn? Hun vil have redefineret moderidealet, fordi det ikke længere passer til moderne kvinders livsstil. Selvrealisering behøver ikke at stå i modsætning til det at være mor. Hun kritiserer også moderne curlingforældre for ikke at ville opdrage børnene, og derved gør de det vanskeligt for dem selv at være forældre. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Hermansen mener, at alle bør stille sig selv spørgsmålet: hvorfor egentlig få børn? Hun vil have redefineret moderidealet, fordi det ikke længere passer til moderne kvinders livsstil. Selvrealisering behøver ikke at stå i modsætning til det at være mor. Hun kritiserer også moderne curlingforældre for ikke at ville opdrage børnene, og derved gør de det vanskeligt for dem selv at være forældre.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2019 Higher Level examination paper — © State Examinations Commission.",
@@ -1825,6 +1837,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -1848,6 +1861,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -1871,6 +1885,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -1894,6 +1909,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -1910,13 +1926,14 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordene ”tage livtag” som de bruges i teksten. (par 12)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Udtrykket bruges metaforisk og skal derfor læses i overført betydning. Det betyder indædt eller anstrengende kamp; intenst arbejde.”) (maks. 5 × 1 point)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Udtrykket bruges metaforisk og skal derfor læses i overført betydning. Det betyder indædt eller anstrengende kamp; intenst arbejde.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -1933,13 +1950,14 @@ export const CARDS: SecCard[] = [
     questionText: "Maja Lucas beskriver sin moders holdning til forbrug således: ”Man smider ikke brugbare ting ud. Man køber ikke nyt, medmindre det er nødvendigt. Man serverer ikke overdådige retter, da mad dybest set handler om at blive mæt. Man smider ikke om sig med penge. Heller ikke hvis man har dem.” Forklar moderens holdning til forbrug. Er du enig med moderen? (begrund dit svar)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Moderen er født i efterkrigstidens mangelsamfund og er opdraget til at leve nøjsomt, hvilket betyder, at hun er sparsommelig, og at hun genanvender og reparerer ting. Hendes livsstil står i stærk kontrast til moderne forbrugerisme. Dansk kultur var førhen præget af jantelov, hvor man ikke måtte prale, f.eks. ved at bruge sine penge på luksus. I det moderne forbrugersamfund er idealet ofte den omvendte livsstil, hvor man gerne viser sin rigdom frem bl.a. ved at lægge billeder af sit hjem ud på sociale medier. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Moderen er født i efterkrigstidens mangelsamfund og er opdraget til at leve nøjsomt, hvilket betyder, at hun er sparsommelig, og at hun genanvender og reparerer ting. Hendes livsstil står i stærk kontrast til moderne forbrugerisme. Dansk kultur var førhen præget af jantelov, hvor man ikke måtte prale, f.eks. ved at bruge sine penge på luksus. I det moderne forbrugersamfund er idealet ofte den omvendte livsstil, hvor man gerne viser sin rigdom frem bl.a. ved at lægge billeder af sit hjem ud på sociale medier.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -1956,13 +1974,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Da jeg var yngre, kunne jeg af og til skamme mig over vores hjem og ting. Over at der ingen smarthed og fornemhed var. Hun havde ikke sans for lækre og nye ting, selv om hun altid har tjent godt. Hendes fokus har altid været på tingenes brugsværdi, ikke på deres æstetik.” Forklar, hvorfor Maja Lucas skammede sig over sit barndomshjem, da hun var yngre. Vurder, om tings brugsværdi er vigtigere end deres æstetiske værdi? (begrund dit svar)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ydre værdier betød meget for Maja Lucas, da hun var barn, hvor hun så moderens nøjsomme livsstil som et udtryk for nærighed. Praktiske, nyttige og billige ting skaber ikke nødvendigvis et hyggeligt hjem, hvor man føler sig tilpas. Et flot dekoreret hjem, med f.eks. designmøbler, dekorative porcelænsvaser og flotte malerier, skal ikke nødvendigvis opfattes som noget syndigt, men det kan være med til at skabe rammerne for mere livskvalitet for ens familie. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ydre værdier betød meget for Maja Lucas, da hun var barn, hvor hun så moderens nøjsomme livsstil som et udtryk for nærighed. Praktiske, nyttige og billige ting skaber ikke nødvendigvis et hyggeligt hjem, hvor man føler sig tilpas. Et flot dekoreret hjem, med f.eks. designmøbler, dekorative porcelænsvaser og flotte malerier, skal ikke nødvendigvis opfattes som noget syndigt, men det kan være med til at skabe rammerne for mere livskvalitet for ens familie.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -1979,13 +1998,14 @@ export const CARDS: SecCard[] = [
     questionText: "”I al fald dømmer vi mennesker også hinanden på vores ting og det ydre. Hvor lidt vi end vil det. Vi kan godt sætte os op på den høje hest og sige: ’Jeg er ligeglad med ting og statusobjekter!’ Men det passer ikke. Ikke helt i hvert fald.” Forklar Maja Lucas’ synspunkt. Vurder, om det er muligt at se helt bort fra ting og statusobjekter, når vi bedømmer andre mennesker. (begrund dit svar)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Maja Lucas kan ikke helt se bort fra ting og statusobjekter, når hun bedømmer andre mennesker. I et moderne forbrugersamfund er meget af vores identitet knyttet til de ting, vi ejer. Hvis man f.eks. vælger en minimalistisk livsstil, hvor man kun ejer få ting, eller hvis man altid går i genbrugstøj, vil ens identitet og image også blive defineret af ens ting. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Maja Lucas kan ikke helt se bort fra ting og statusobjekter, når hun bedømmer andre mennesker. I et moderne forbrugersamfund er meget af vores identitet knyttet til de ting, vi ejer. Hvis man f.eks. vælger en minimalistisk livsstil, hvor man kun ejer få ting, eller hvis man altid går i genbrugstøj, vil ens identitet og image også blive defineret af ens ting.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2002,13 +2022,14 @@ export const CARDS: SecCard[] = [
     questionText: "“Det er svært at gøre ligesom min mor, der nægter at udskifte sin absurd slidte håndtaske. Men vi må forsøge.” Forklar Maja Lucas’ synspunkt. Vurder, om det er nødvendigt, at vi ændrer vores værdier og livstil? (begrund dit svar)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Øget forbrug fører til øget udledning af CO2 og derved global opvarmning, som kan få store konsekvenser for menneskeheden. Maja Lucas ser et lavere forbrug som løsningen. Men løsningen kunne også være en mere bæredygtig produktion, herunder overvejende brug af vedvarende energi i forbindelse med produktion og transport af varerne. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Øget forbrug fører til øget udledning af CO2 og derved global opvarmning, som kan få store konsekvenser for menneskeheden. Maja Lucas ser et lavere forbrug som løsningen. Men løsningen kunne også være en mere bæredygtig produktion, herunder overvejende brug af vedvarende energi i forbindelse med produktion og transport af varerne.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
@@ -2069,6 +2090,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2085,13 +2107,14 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”afkodningsniveau” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Forklar betydningen af ordet ”afkodningsniveau” som det bruges i teksten. Enhver rimelig forklaring (e.g. ”evnen til at forstå af meddelelser, der foreligger i en uvant eller svært tilgængelig form.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”evnen til at forstå af meddelelser, der foreligger i en uvant eller svært tilgængelig form.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2115,6 +2138,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2138,6 +2162,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2154,13 +2179,14 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”fordybelse” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”grundigt arbejde med et emne og dybere refleksion”). (maks. 5 ×1 point)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”grundigt arbejde med et emne og dybere refleksion”).", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2177,13 +2203,14 @@ export const CARDS: SecCard[] = [
     questionText: "Gundlund Jensen og Ina-Maria Nielsen mener, at ”Mange unge i gymnasiet er i tiltagende grad ikke i stand til at læse eller skrive tekster, der afviger særlig meget fra det typiske afkodningsniveau, der fylder deres fritid, hvilket truer med at gøre dem historieløse og dårligt udrustede dannelsesmæssigt.” Forklar, hvorfor mange unge mangler dannelse og kan betegnes som historieløse. Er du enig? (hvorfor/hvorfor ikke?)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Unge mangler dannelse og er historieløse, fordi de ikke læser seriøse og komplicerede tekster, herunder aviser og litteratur, der henvender sig til voksne. Mange unge får deres viden primært fra sociale medier, og dermed opnår de ikke dyberegående viden om kultur og samfundsforhold. Man kan diskutere, om det traditionelle dannelsesideal er forældet, og om der derfor skal introduceres et nyt dannelsesbegreb med mere fokus på dannelse i en digitaliseret verden. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Unge mangler dannelse og er historieløse, fordi de ikke læser seriøse og komplicerede tekster, herunder aviser og litteratur, der henvender sig til voksne. Mange unge får deres viden primært fra sociale medier, og dermed opnår de ikke dyberegående viden om kultur og samfundsforhold. Man kan diskutere, om det traditionelle dannelsesideal er forældet, og om der derfor skal introduceres et nyt dannelsesbegreb med mere fokus på dannelse i en digitaliseret verden.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2200,13 +2227,14 @@ export const CARDS: SecCard[] = [
     questionText: "Torben Weinreich mener, at ”Den verden, vi lever i, prioriterer det funktionelle. Det, vi bruger vores tid på, skal kunne bruges lige her og nu. I den sammenhæng står litteraturen svagt, fordi den har et bredere sigte og formål. Litteratur og dannelse er ikke så måleligt” Forklar Weinreichs synspunkt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "I det moderne samfund fokuseres der på det funktionelle, dvs. kompetencer som umiddelbart er samfundsnyttige, f.eks. naturvidenskabelig og matematiske evner, der kan bruges i erhvervslivet. Kulturel og litterær dannelse nedprioriteres, fordi elever og erhvervslivet ikke kan se det nyttige i viden om f.eks. litteraturhistoriske perioder, fordi denne form for viden ikke umiddelbart opfattes som målbar og brugbar, men det er personlighedsudviklende at læse litteratur, bl.a. fordi man udvikler empati for andre mennesker, og man bliver mere selvreflekterende, hvilket er meget vigtige egenskaber, som også er nyttige for erhvervslivet. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "I det moderne samfund fokuseres der på det funktionelle, dvs. kompetencer som umiddelbart er samfundsnyttige, f.eks. naturvidenskabelig og matematiske evner, der kan bruges i erhvervslivet. Kulturel og litterær dannelse nedprioriteres, fordi elever og erhvervslivet ikke kan se det nyttige i viden om f.eks. litteraturhistoriske perioder, fordi denne form for viden ikke umiddelbart opfattes som målbar og brugbar, men det er personlighedsudviklende at læse litteratur, bl.a. fordi man udvikler empati for andre mennesker, og man bliver mere selvreflekterende, hvilket er meget vigtige egenskaber, som også er nyttige for erhvervslivet.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2223,13 +2251,14 @@ export const CARDS: SecCard[] = [
     questionText: "En undersøgelse viser, at ”andelen af voksne amerikanere, der læser en eller anden form for litteratur af lyst er faldet til et rekordlavt niveau. Kun 43 procent af de voksne amerikanere har læst en roman, en novelle, et digt eller et skuespil i løbet af det seneste år.” Vurder, om denne udvikling er problematisk (begrund dit svar)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Udviklingen kan ses som et udtryk for, at amerikanere læser mindre skønlitteratur end tidligere. Udvikling kan ses som problematisk, fordi amerikanerne risikerer at forringe deres læsefærdigheder, og måske er det også et tegn på, at deres koncentrationsevne generelt set er blevet forringet, fordi læsning af skønlitteratur kræver langvarig koncentration. Udviklingen kunne skyldes, at de bruger mere tid på sociale medier, og at de ser flere tv‐programmer, serier og film, hvilket dog ikke nødvendigvis skal opfattes negativt, idet de på den måde også bruger meget tid på læsning af beskeder og opdateringer. Moderne film og tv‐serier skal ikke kun betragtes som letfordøjelig underholdning uden et dannelsesmæssigt aspekt, fordi de kræver både koncentration og fordybelse, og de har på mange måder erstattet skønlitteratur som nutidens historiefortællere. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Udviklingen kan ses som et udtryk for, at amerikanere læser mindre skønlitteratur end tidligere. Udvikling kan ses som problematisk, fordi amerikanerne risikerer at forringe deres læsefærdigheder, og måske er det også et tegn på, at deres koncentrationsevne generelt set er blevet forringet, fordi læsning af skønlitteratur kræver langvarig koncentration. Udviklingen kunne skyldes, at de bruger mere tid på sociale medier, og at de ser flere tv‐programmer, serier og film, hvilket dog ikke nødvendigvis skal opfattes negativt, idet de på den måde også bruger meget tid på læsning af beskeder og opdateringer. Moderne film og tv‐serier skal ikke kun betragtes som letfordøjelig underholdning uden et dannelsesmæssigt aspekt, fordi de kræver både koncentration og fordybelse, og de har på mange måder erstattet skønlitteratur som nutidens historiefortællere.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2246,13 +2275,14 @@ export const CARDS: SecCard[] = [
     questionText: "Birgitte Darger siger, at ”det kræver også fordybelse at læse en længere artikel eller følge argumentationen i en blog, der fylder mere end fire linjer. Vi har vænnet os til, at alt i dag bliver præsenteret i et kort format, politikerne skriver jo også flere tweets, end de skriver blogs i dag” Forklar, hvordan politikerne foretrækker at kommunikere. Diskuter de positive og negative konsekvenser af denne kommunikationsform.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Politikere foretrækker ofte et kort kommunikationsformat, bl.a. bruger de Twitter, når de kommunikerer med vælgerne, idet de såkaldte ”tweets” er en nem og praktisk måde at nå sin målgruppe i det moderne informationssamfunds overflod af informationer, hvor folk har svært ved at navigere og bevare overblikket. Problemet er dog, at budskaberne, problematikkerne og argumenterne bliver forsimplede, og der mangler ofte dokumentation. Et andet problem med Twitter er, at folk er tilbøjelige til kun at følge politikere, de er enige med, og derved risikerer de, at nyhedsstrømmen bliver for ensidig og unuanceret. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Politikere foretrækker ofte et kort kommunikationsformat, bl.a. bruger de Twitter, når de kommunikerer med vælgerne, idet de såkaldte ”tweets” er en nem og praktisk måde at nå sin målgruppe i det moderne informationssamfunds overflod af informationer, hvor folk har svært ved at navigere og bevare overblikket. Problemet er dog, at budskaberne, problematikkerne og argumenterne bliver forsimplede, og der mangler ofte dokumentation. Et andet problem med Twitter er, at folk er tilbøjelige til kun at følge politikere, de er enige med, og derved risikerer de, at nyhedsstrømmen bliver for ensidig og unuanceret.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2269,13 +2299,14 @@ export const CARDS: SecCard[] = [
     questionText: "Birgitte Darger siger, at ”Vi skal måske indføre læsestunder, hvor alle mobiler lægges væk, så der bliver rum for fordybelse. Vi er nødt til i fremtiden at tænke det ind som et vilkår.” Forklar, hvordan lærerne bliver nødt til at ændre måden, de underviser på. Vurder, om de tilpasser undervisningen til eleverne.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Darger foreslår, at der indføres læsetimer, hvor mobiltelefoner forbydes, fordi de forstyrrer eleverne. Dermed lærer eleverne at koncentrere og fordybe sig i længere og vanskeligere tekster. En anden mulighed er, at man i højere grad forsøger at integrere mobiler, internet og sociale medier i undervisningens indhold for at gøre den mere tidsvarende og relevant for eleverne. Dermed lærer eleverne også at omgås det i en arbejdssituation og lærer at anvende det som et nyttigt værktøj og ikke kun som et legetøj. (maks. 5 point)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Darger foreslår, at der indføres læsetimer, hvor mobiltelefoner forbydes, fordi de forstyrrer eleverne. Dermed lærer eleverne at koncentrere og fordybe sig i længere og vanskeligere tekster. En anden mulighed er, at man i højere grad forsøger at integrere mobiler, internet og sociale medier i undervisningens indhold for at gøre den mere tidsvarende og relevant for eleverne. Dermed lærer eleverne også at omgås det i en arbejdssituation og lærer at anvende det som et nyttigt værktøj og ikke kun som et legetøj.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -2327,17 +2358,18 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2024 Higher Level — © State Examinations Commission.",
     id: "dan-2024-hl-i-1-d", topicId: "danish-0-0", conceptId: "forklar-betydningen-ordet-patriarkalsk-som-det",
     section: "I", questionRef: "2024 HL Section I Q1(d)",
-    questionText: "Forklar betydningen af ordet ”patriarkalsk” som det bruges i teksten.",
+    questionText: "Forklar betydningen af ordet ”ynglefabrikker” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Forklar betydningen af ordet ”ynglefabrikker” som det bruges i teksten. Enhver rimelig forklaring (e.g. ”metafor, der betegner kvinder, der føder mange børn”)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”metafor, der betegner kvinder, der føder mange børn”)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -2353,14 +2385,15 @@ export const CARDS: SecCard[] = [
     questionText: "Thomsen mener, at ”Vores børn taber, når vi gør drenge til undertrykkere og piger til ofre” Forklar Thomsens synspunkt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Forklar Thomsens synspunkt. (maks. 5 point) Thomsen er bekymret for børn og unge i det moderne samfund, fordi de har fået det markant psykisk dårlige på trods af øget rigdom. Problemet er, at vi fortsat italesætter drenge som undertrykker og pigerne som ofre, hvilket er med til på forhånd at definere kønnenes identitet. Denne udvikling er ifølge Thomsen problematisk, fordi drengene bliver dømt for noget, de ikke har gjort. Derved bliver det at være mand nærmest kriminaliseret, fordi manderollen fremstår som undertrykkende og forkert. Det gavner heller ikke pigerne, at de identificerer sig med offerrollen. Feminisme har for længst sejret, og der er opnået ligestilling i Danmark. Thomsen vil således gøre op med brugen af betegnelserne ”undertrykkere” og ”ofre”, der ikke længere automatisk skal forbindes med kønnene, fordi det er utidssvarende, og det kan i værste fald udløse identitetskriser hos både drengene og pigerne.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Thomsen er bekymret for børn og unge i det moderne samfund, fordi de har fået det markant psykisk dårlige på trods af øget rigdom. Problemet er, at vi fortsat italesætter drenge som undertrykker og pigerne som ofre, hvilket er med til på forhånd at definere kønnenes identitet. Denne udvikling er ifølge Thomsen problematisk, fordi drengene bliver dømt for noget, de ikke har gjort. Derved bliver det at være mand nærmest kriminaliseret, fordi manderollen fremstår som undertrykkende og forkert. Det gavner heller ikke pigerne, at de identificerer sig med offerrollen. Feminisme har for længst sejret, og der er opnået ligestilling i Danmark. Thomsen vil således gøre op med brugen af betegnelserne ”undertrykkere” og ”ofre”, der ikke længere automatisk skal forbindes med kønnene, fordi det er utidssvarende, og det kan i værste fald udløse identitetskriser hos både drengene og pigerne.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -2376,14 +2409,15 @@ export const CARDS: SecCard[] = [
     questionText: "Thomsen mener, at ”Når drenge mister fodfæste og retning i livet, og piger begynder at skære i sig selv, må grunden være eksistentiel og ikke ’bare’ foranderligheden i verden omkring dem.” Forklar Thomsens synspunkt. Er du enig? (hvorfor/hvorfor ikke?)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Forklar Thomsens synspunkt. Er du enig? (hvorfor/hvorfor ikke?) (maks. 5 point) Halvdelen af drengene vurderes ikkeegnede til session pga. fysiske og psykiske problemer. Næsten halvdelen af alle 19‐årige piger har modtaget psykologhjælp, og en stor gruppe begynder med selvskadelig adfærd. En udbredt teori er, at det moderne samfund er skyld i de unges mistrivsel, fordi det er svært at følge med. Thomsen mener, at der i højere grad er tale om eksistentielle problemer. De unge oplever ofte en identitetskrise, fordi de ikke kan finde en mening med livet. Især drengene mangler retning i livet, hvilket også betegnes som ”the boy crisis”. Thomsen mener, at årsagen til denne udvikling er, at man er begyndt at kritisere og nedbryde de klassiske kønsroller, dvs. kvinden som moderen og manden som beskytteren og jægeren. Piger og drenge har derved ikke nogen faste holdepunkter, når de danner deres identitet, hvilket resulterer psykisk mistrivsel. Den øgede mistrivsel kan dog forklares som et resultat af det moderne samfunds individualisering, hvor øget brug af sociale medier og forventningspres kan resultere i stress, angst og depression hos mange unge.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Halvdelen af drengene vurderes ikkeegnede til session pga. fysiske og psykiske problemer. Næsten halvdelen af alle 19‐årige piger har modtaget psykologhjælp, og en stor gruppe begynder med selvskadelig adfærd. En udbredt teori er, at det moderne samfund er skyld i de unges mistrivsel, fordi det er svært at følge med. Thomsen mener, at der i højere grad er tale om eksistentielle problemer. De unge oplever ofte en identitetskrise, fordi de ikke kan finde en mening med livet. Især drengene mangler retning i livet, hvilket også betegnes som ”the boy crisis”. Thomsen mener, at årsagen til denne udvikling er, at man er begyndt at kritisere og nedbryde de klassiske kønsroller, dvs. kvinden som moderen og manden som beskytteren og jægeren. Piger og drenge har derved ikke nogen faste holdepunkter, når de danner deres identitet, hvilket resulterer psykisk mistrivsel. Den øgede mistrivsel kan dog forklares som et resultat af det moderne samfunds individualisering, hvor øget brug af sociale medier og forventningspres kan resultere i stress, angst og depression hos mange unge.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -2399,14 +2433,15 @@ export const CARDS: SecCard[] = [
     questionText: "Thomsen mener, at ”drenge har mistet retning og formål i livet, fordi det er svært at passe ind i én af de to identiteter, drenge har tilstræbt gennem historien. Hvad er man som mand, hvis man ikke kan forsørge eller beskytte sin familie?” Diskuter de positive og negative konsekvenser ved denne udvikling.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Diskuter de positive og negative konsekvenser ved denne udvikling. (maks. 5 point) De klassiske arketyper beskytteren, der skal beskytte sin familie, og jægeren, der skal forsørge sin familie, har tidligere givet drenge og mænd en fastlagt identitet og derved et formål med livet. Familien kræver ikke længere beskyttelse i samme omfang som tidligere, idet staten nu varetager denne opgave, og i dag deler manden ofte forsørgerbyrden med sin kone. Dette kan betragtes som en positiv udvikling, fordi mænd og kvinder nu deler ansvaret og derved lærer at samarbejde og respektere hinanden, hvor de klassiske kønsroller skaber et mere opdelt samfund, hvor mænd og kvinder har deres klart definerede ansvarsområder og interessesfærer. Problemet er, at udviklingen måske er gået for stærkt, og at mange drenge derfor oplever en identitetskrise. Mange drenge er opdraget til at passe ind i den klassiske mandeidentitet, og de spejler sig i deres fædre og andre rollemodeller, bl.a. influencere på sociale medier, der konsekvent dyrker den klassiske manderolle som et ideal. Men en mands værdi bør ikke længere måles efter disse forældede kriterier, og samfundet bør tage et større ansvar med at hjælpe de unge.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "De klassiske arketyper beskytteren, der skal beskytte sin familie, og jægeren, der skal forsørge sin familie, har tidligere givet drenge og mænd en fastlagt identitet og derved et formål med livet. Familien kræver ikke længere beskyttelse i samme omfang som tidligere, idet staten nu varetager denne opgave, og i dag deler manden ofte forsørgerbyrden med sin kone. Dette kan betragtes som en positiv udvikling, fordi mænd og kvinder nu deler ansvaret og derved lærer at samarbejde og respektere hinanden, hvor de klassiske kønsroller skaber et mere opdelt samfund, hvor mænd og kvinder har deres klart definerede ansvarsområder og interessesfærer. Problemet er, at udviklingen måske er gået for stærkt, og at mange drenge derfor oplever en identitetskrise. Mange drenge er opdraget til at passe ind i den klassiske mandeidentitet, og de spejler sig i deres fædre og andre rollemodeller, bl.a. influencere på sociale medier, der konsekvent dyrker den klassiske manderolle som et ideal. Men en mands værdi bør ikke længere måles efter disse forældede kriterier, og samfundet bør tage et større ansvar med at hjælpe de unge.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -2422,14 +2457,15 @@ export const CARDS: SecCard[] = [
     questionText: "Thomsen skriver, at ”Det har tidligere været nok at kunne give liv til et nyt menneske og påtage sig moderrollen for at give kvinden oplevelsen af formål, men nu er moderrollen undertrykkelse, så det er ikke nok. Langtfra. Derfor bliver det ikke bare en mulighed for pigerne at skulle springe ud i en karriere, men et krav, for ellers er man undertrykt.” Forklar Thomsens synspunkt. Er du enig? (hvorfor/hvorfor ikke?)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Forklar Thomsens synspunkt. Er du enig? (hvorfor/hvorfor ikke?) (maks. 5 point) Den traditionelle kvinderolle defineres af Thomsen som værende moderrollen, fordi kvinden primært oplever livet som meningsfuldt, når hun bliver mor. De blev hjemme for at passe børnene, mens manden arbejdede. Arbejdet udenfor hjemmet blev derfor meningsgivende for mænd. Førhen var det dermed mere enkelt at være kvinde. Thomsen mener, at man i dag ser ned på kvinder, der vælger karrieren fra til fordel for børnene. Hvis en kvinde identificerer sig med den traditionelle kvinderolle, bliver det fortolket som tegn på undertrykkelse, og derfor er moderne kvinder underlagt et krav om at gøre karriere for at bevise, at de ikke er undertrykte. Thomsen generaliserer. Motiverne bag karrierevalg er individuelt fra kvinde til kvinde. I det moderne samfund har alle også friheden til at vælge deres egen identitet og livsstil. Den traditionelle kvinderolle er også et valg som nogle kvinder bevidst vælger, og det er ikke nødvendigvis et tegn på undertrykkelse, men kan betragtes som en selvbevidst og reflekteret beslutning foretaget af et moderne individ.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Den traditionelle kvinderolle defineres af Thomsen som værende moderrollen, fordi kvinden primært oplever livet som meningsfuldt, når hun bliver mor. De blev hjemme for at passe børnene, mens manden arbejdede. Arbejdet udenfor hjemmet blev derfor meningsgivende for mænd. Førhen var det dermed mere enkelt at være kvinde. Thomsen mener, at man i dag ser ned på kvinder, der vælger karrieren fra til fordel for børnene. Hvis en kvinde identificerer sig med den traditionelle kvinderolle, bliver det fortolket som tegn på undertrykkelse, og derfor er moderne kvinder underlagt et krav om at gøre karriere for at bevise, at de ikke er undertrykte. Thomsen generaliserer. Motiverne bag karrierevalg er individuelt fra kvinde til kvinde. I det moderne samfund har alle også friheden til at vælge deres egen identitet og livsstil. Den traditionelle kvinderolle er også et valg som nogle kvinder bevidst vælger, og det er ikke nødvendigvis et tegn på undertrykkelse, men kan betragtes som en selvbevidst og reflekteret beslutning foretaget af et moderne individ.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -2445,14 +2481,15 @@ export const CARDS: SecCard[] = [
     questionText: "Thomsen skriver, at ”Chancen for, at en mand tager nattearbejde, et job på boreplatform eller en uddannelse, der kan give et højtlønnet job, er højere end for kvinder.” Vurder, om denne udvikling er problematisk. (Begrund dit svar)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vurder, om denne udvikling er problematisk (begrund dit svar) (maks. 5 point) Mænd tjener gennemsnitligt mere end kvinder, fordi de ofte vælger bedre lønnet jobs end kvinder. Typiske mandejobs, f.eks. de såkaldte STEM‐fag, er bedre lønnet end typiske kvindejobs, f.eks. sygeplejeske eller pædagog. Dette skal ikke nødvendigvis betragtes som et udtryk for manglende ligestilling, fordi det handler om individets prioritering. Det handler vel lige så meget om forskellen på lønninger indenfor det private erhvervsliv og det offentlige, hvor der ofte er stor forskel, fordi lønnen ofte fastsættes efter, hvor meget værdi man skaber til virksomheden. Mange har også den opfattelse, at hvis man arbejder med mennesker, f.eks. sygeplejesker, så bærer det lønnen i sig selv. Mænd tager måske flere af de bedre betalte nattevagter end kvinder, fordi kvinder måske ikke har samme muligheder, hvis de skal passe børn. Jobs på boreplatforme kræver også, at man er væk i længere fra hjemmet, hvilket kan være svært at forene med familielivet. Udviklingen betragtes som naturlig, fordi mange kvinder prioriterer anderledes end mænd, og i mange familier har man måske aftalt indbyrdes, at det er manden der skal gøre karriere eller lave overarbejde.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mænd tjener gennemsnitligt mere end kvinder, fordi de ofte vælger bedre lønnet jobs end kvinder. Typiske mandejobs, f.eks. de såkaldte STEM‐fag, er bedre lønnet end typiske kvindejobs, f.eks. sygeplejeske eller pædagog. Dette skal ikke nødvendigvis betragtes som et udtryk for manglende ligestilling, fordi det handler om individets prioritering. Det handler vel lige så meget om forskellen på lønninger indenfor det private erhvervsliv og det offentlige, hvor der ofte er stor forskel, fordi lønnen ofte fastsættes efter, hvor meget værdi man skaber til virksomheden. Mange har også den opfattelse, at hvis man arbejder med mennesker, f.eks. sygeplejesker, så bærer det lønnen i sig selv. Mænd tager måske flere af de bedre betalte nattevagter end kvinder, fordi kvinder måske ikke har samme muligheder, hvis de skal passe børn. Jobs på boreplatforme kræver også, at man er væk i længere fra hjemmet, hvilket kan være svært at forene med familielivet. Udviklingen betragtes som naturlig, fordi mange kvinder prioriterer anderledes end mænd, og i mange familier har man måske aftalt indbyrdes, at det er manden der skal gøre karriere eller lave overarbejde.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -2609,6 +2646,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -2632,6 +2670,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -2655,6 +2694,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -2678,6 +2718,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -2694,13 +2735,14 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”formynderisk” som det bruges i teksten.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”tilsidesættelse af nogens ret til at træffe selvstændige beslutninger ud fra en bedrevidende mening om hvad der er i vedkommendes interesse.”) (maks. 5 × 1 point)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”tilsidesættelse af nogens ret til at træffe selvstændige beslutninger ud fra en bedrevidende mening om hvad der er i vedkommendes interesse.”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -2717,13 +2759,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Børn og unge har i dagens Danmark europæisk rekord i det, man kan kalde rekreativ skærmbrug med et gennemsnitligt forbrug på 35 timer ugentligt.” Hvad er de negative konsekvenser ved dette forbrug ifølge teksten?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hvad er de negative konsekvenser ved dette forbrug ifølge teksten? (maks. 5 point) Dette forbrug har både negative fysiske og psykiske konsekvenser for børn og unge, herunder stigende inaktivitet. Under 25 procent af unge mellem 11-15 år lever op til sundhedsstyrelsens anbefalinger for fysisk aktivitet, fordi de bruger tiden på sociale medier, computerspil og YouTube. Manglende fysisk-social kontakt er også en negativ konsekvens. Under 13 procent af 15-årige ses regelmæssigt fysisk efter skole. De unges søvnvaner bliver også påvirket. De sover en time mindre og er præget af dårligere søvnkvalitet med langt flere opvågninger. Dette resulterer i, at børn og unge mistrives og har svært ved at finde retning og mening i deres tilværelse.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Dette forbrug har både negative fysiske og psykiske konsekvenser for børn og unge, herunder stigende inaktivitet. Under 25 procent af unge mellem 11-15 år lever op til sundhedsstyrelsens anbefalinger for fysisk aktivitet, fordi de bruger tiden på sociale medier, computerspil og YouTube. Manglende fysisk-social kontakt er også en negativ konsekvens. Under 13 procent af 15-årige ses regelmæssigt fysisk efter skole. De unges søvnvaner bliver også påvirket. De sover en time mindre og er præget af dårligere søvnkvalitet med langt flere opvågninger. Dette resulterer i, at børn og unge mistrives og har svært ved at finde retning og mening i deres tilværelse.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -2740,13 +2783,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Med den digitale udvikling er menneskers tid og opmærksomhed blevet et middel til at opfylde økonomiske målsætninger.” Forklar, hvordan techindustrien tjener penge på digitaliseringen ifølge teksten, og forklar hvorfor denne udvikling er problematisk.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Forklar, hvordan techindustrien tjener penge på digitaliseringen ifølge teksten, og forklar hvorfor denne udvikling er problematisk. (maks. 5 point) Techindustrien er kommerciel. Den består af en række store aktieselskaber, der ser mennesket som et objekt, hvorfra viden bliver tappet og solgt med det eneste formål at sikre en øget økonomisk omsætning. Techindustrien forsøger derfor at fastholde brugerne længst muligt på lige præcis deres platform for at tjene så mange penge som muligt. Denne udvikling er problematisk, fordi techindustrien derved ikke tager hensyn til menneskers eksistentielle og livsvigtige behov, herunder værdier som familier, som samfund og som mennesker. Deres rolle er ikke at opdrage børnene til at blive moralske mennesker og udvikle deres sociale kompetencer. Tværtimod eksponerer de børn og unge for skadeligt indhold blot med det formål at fastholde dem på deres platform.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Techindustrien er kommerciel. Den består af en række store aktieselskaber, der ser mennesket som et objekt, hvorfra viden bliver tappet og solgt med det eneste formål at sikre en øget økonomisk omsætning. Techindustrien forsøger derfor at fastholde brugerne længst muligt på lige præcis deres platform for at tjene så mange penge som muligt. Denne udvikling er problematisk, fordi techindustrien derved ikke tager hensyn til menneskers eksistentielle og livsvigtige behov, herunder værdier som familier, som samfund og som mennesker. Deres rolle er ikke at opdrage børnene til at blive moralske mennesker og udvikle deres sociale kompetencer. Tværtimod eksponerer de børn og unge for skadeligt indhold blot med det formål at fastholde dem på deres platform.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -2763,13 +2807,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Vi har sågar hørt argumenter som, at forældre og fagpersoner ikke skal være bagstræberiske, og at problemerne vil forsvinde, hvis blot de voksne interesserer sig for, hvad børnene laver digitalt.” Er du enig i disse argumenter? (Hvorfor / hvorfor ikke?)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Er du enig i disse argumenter? (Hvorfor / hvorfor ikke?) (maks. 5 point) Der er en udbredt holdning om, at ungdommen er digital. Forældre og fagpersoner skal ikke være for formynderiske og sætte begrænsninger for de unges brug af digitale platforme, fordi de er en naturlig del af ungdomskulturen i dag. Det er nok bare at vise interesse for, hvad børnene laver digitalt, så vil problemerne forsvinde. Voksne, der begrænser børnenes og de unges brug af digitale platforme, betragtes som bagstræberiske, fordi de viser modstand mod udviklingen. De vil bevare forholdene, som de kender fra deres egen ungdom, hvor man havde et mindre skærmforbrug og var mere sammen fysisk. De romantiserer måske deres barndoms- og ungdomstid og ønsker måske en lignende barndom og ungdom for deres egne børn. Mange moderne forældre forstår, at ungdomskulturen er anderledes i dag, end da de selv var unge, og derfor må de respektere de nye spilleregler. Faren ved denne holdning er, at mange moderne forældre har således ikke indset, at de derved lader techindustrien få kontrol over børns og unges liv, hvilket kan ende i mistrivsel, og at de får svært ved at finde retning og mening i deres tilværelse.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Der er en udbredt holdning om, at ungdommen er digital. Forældre og fagpersoner skal ikke være for formynderiske og sætte begrænsninger for de unges brug af digitale platforme, fordi de er en naturlig del af ungdomskulturen i dag. Det er nok bare at vise interesse for, hvad børnene laver digitalt, så vil problemerne forsvinde. Voksne, der begrænser børnenes og de unges brug af digitale platforme, betragtes som bagstræberiske, fordi de viser modstand mod udviklingen. De vil bevare forholdene, som de kender fra deres egen ungdom, hvor man havde et mindre skærmforbrug og var mere sammen fysisk. De romantiserer måske deres barndoms- og ungdomstid og ønsker måske en lignende barndom og ungdom for deres egne børn. Mange moderne forældre forstår, at ungdomskulturen er anderledes i dag, end da de selv var unge, og derfor må de respektere de nye spilleregler. Faren ved denne holdning er, at mange moderne forældre har således ikke indset, at de derved lader techindustrien få kontrol over børns og unges liv, hvilket kan ende i mistrivsel, og at de får svært ved at finde retning og mening i deres tilværelse.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -2786,13 +2831,14 @@ export const CARDS: SecCard[] = [
     questionText: "Tekstens forfattere har en ide om ”at skabe et trivselsfremmende miljø med plads til meningsfulde aktiviteter i tæt kontakt med de mennesker, der har betydning.” Forklar deres ide, og forklar, hvordan de ønsker, at ideen skal blive realiseret.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Forklar deres ide, og forklar, hvordan de ønsker, at ideen skal blive realiseret. (maks. 5 point) Ideen med at skabe et trivselsfremmende miljø indebærer, at man skaber en modkultur til den nuværende digitalisering, hvor børn og unge igen bruger mere tid sammen med deres forældre og venner samt at dyrke sport og hobbyer, som f.eks. boldspil og ridning, hvor de igen kommer tættere på naturen. Børn og unge har et stort behov for at være sammen med venner og familie fysisk, som giver dem mere fysisk og psykisk overskud til bl.a. at fordybe sig i skolearbejdet, og de vil opleve et mere fyldestgørende og meningsfuldt liv. Hvis denne ide skal realiseres, kræver det at forældre og politikere tager ansvar for at hjælpe børn og unge ud af de digitale platformes greb. Techindustrien skal kontrolleres og reguleres, således at børn og unge ikke længere er overladt til sig selv i en ulige kamp mod de profitjagende virksomheder.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ideen med at skabe et trivselsfremmende miljø indebærer, at man skaber en modkultur til den nuværende digitalisering, hvor børn og unge igen bruger mere tid sammen med deres forældre og venner samt at dyrke sport og hobbyer, som f.eks. boldspil og ridning, hvor de igen kommer tættere på naturen. Børn og unge har et stort behov for at være sammen med venner og familie fysisk, som giver dem mere fysisk og psykisk overskud til bl.a. at fordybe sig i skolearbejdet, og de vil opleve et mere fyldestgørende og meningsfuldt liv. Hvis denne ide skal realiseres, kræver det at forældre og politikere tager ansvar for at hjælpe børn og unge ud af de digitale platformes greb. Techindustrien skal kontrolleres og reguleres, således at børn og unge ikke længere er overladt til sig selv i en ulige kamp mod de profitjagende virksomheder.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -2809,13 +2855,14 @@ export const CARDS: SecCard[] = [
     questionText: "”Vi ønsker, at politikerne skal turde at regulere en techindustri, som er ude af kontrol.” Diskuter, om det overhovedet er muligt for politikerne at regulere techindustrien. (Begrund dit svar)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Diskuter, om det overhovedet er muligt for politikerne at regulere techindustrien. (Begrund dit svar) (maks. 5 point) Det er vanskeligt at regulere techindustrien, der i dag er mere magtfulde end nogensinde før, hvilket bl.a. ses i USA, hvor der er et tydeligt samarbejde mellem statsmagten og store amerikanske techvirksomheder. Et andet problem er manglende politisk vilje, idet mange politikere enten ikke forstår problemet eller ignorerer det. Lovgivningen beskytter allerede børn og unge mod andre vanedannende og skadelige produkter såsom tobak, alkohol og gambling, og derfor bør digitale stimulanser, der manipulerer unge brugeres adfærd, underlægges samme restriktioner, f.eks. ved at forbyde det i skolerne og lave en aldersbegrænsning på 18 år. Det kan være dog være svært at håndhæve, fordi der er mange mulige smuthuller, når det handler om udenlandske digitale platforme, der ikke har deres adresse i Europa.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Det er vanskeligt at regulere techindustrien, der i dag er mere magtfulde end nogensinde før, hvilket bl.a. ses i USA, hvor der er et tydeligt samarbejde mellem statsmagten og store amerikanske techvirksomheder. Et andet problem er manglende politisk vilje, idet mange politikere enten ikke forstår problemet eller ignorerer det. Lovgivningen beskytter allerede børn og unge mod andre vanedannende og skadelige produkter såsom tobak, alkohol og gambling, og derfor bør digitale stimulanser, der manipulerer unge brugeres adfærd, underlægges samme restriktioner, f.eks. ved at forbyde det i skolerne og lave en aldersbegrænsning på 18 år. Det kan være dog være svært at håndhæve, fordi der er mange mulige smuthuller, når det handler om udenlandske digitale platforme, der ikke har deres adresse i Europa.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2025 Higher Level examination paper — © State Examinations Commission.",
