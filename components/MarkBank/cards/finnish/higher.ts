@@ -2597,6 +2597,107 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2019 Higher Level — © State Examinations Commission.",
+    id: "fin-2019-hl-i-2", topicId: "finnish-0-1", conceptId: "kerro-omin-sanoin-millainen-kolumnin-kirjoittajan",
+    section: "I", questionRef: "2019 HL Section I Q2",
+    questionText: "Kerro omin sanoin, millainen on kolumnin kirjoittajan, Janne Saarikiven työ.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(3) Käyn päivittäin yliopistossa, opetan ja tutkin. Olen kirjoittanut kirjoja. Olen kolumnisti, esiinnyn televisiossa ja luennoin. Minulla on melko suuri palkka, hävettävän suuri. Mutta väittäisin, että minulla ei ole työtä.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" The scheme heads its answer: “Tekstissä:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2019 Higher Level — © State Examinations Commission.",
+    id: "fin-2019-hl-i-6", topicId: "finnish-0-1", conceptId: "myoskaan-ymmarra-miksi-palkkani-niin-paljon",
+    section: "I", questionRef: "2019 HL Section I Q6",
+    questionText: "” En myöskään ymmärrä, miksi palkkani on niin paljon parempi kuin konkreettisia hyödyllisiä asioita tekevien veturinkuljettajan tai sairaanhoitajan.” (8) Kommentoi Saarikiven ihmettelyä. Millaisesta työstä sinun mielestäsi tulisi maksaa hyvää palkkaa? Perustele.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(5) Esimerkiksi veturinkuljettaja tuskin jatkaisi työtään minuuttiakaan potkujen jälkeen. Veturinkuljettajan ja professorin työ on itse asiassa niin erilaista, että on typerää kutsua molempia samalla sanalla.", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" The scheme heads its answer: “Tekstissä kirjoittaja vertailee:”." },
+    { id: "r-2", kind: "point", verbatim: "(6) Professori voi jäädä aamulla nukkumaan, ellei ole luentoa tai tapaamisia. Hän voi mennä töihin lounasaikaan luettuaan aamulla opinnäytteitä kotonaan. Veturinkuljettaja, jonka juna lähtee 9.06, ei voi saapua asemalle kello 11.27 kahvikuppi kädessään ja sanoa, että ajelen tänään Turkuun tavallista myöhemmin, kerkiäähän sitä.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(7) Toisaalta professorin työ ei lopu koskaan. Hän jää neljän jälkeen konttorille kirjoittamaan ja herää yöllä hikisenä muistelemaan vastaamattomia viestejä. Veturinkuljettaja taas ei vuoron päätyttyä jää huvin tai häpeän takia ajelemaan Helsingin ja Pasilan väliä.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Edellisen kommentoimisen lisäksi kokelas ilmaisee oman näkemyksensä ja perustelee sen esimerkiksi tuottavuuden ja talouskasvun näkökulmasta tai humanitaarisista näkökulmista.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2019 Higher Level — © State Examinations Commission.",
+    id: "fin-2019-hl-ii-1", topicId: "finnish-1-0", conceptId: "kirjoita-noin-100-sanan-mittainen-kommentti",
+    section: "II", questionRef: "2019 HL Section II Q1",
+    questionText: "Kirjoita noin 100 sanan mittainen kommentti tekstin väitteeseen: ” Tavoitteenamme nyt kuten antiikin aikana ei tule olla täystyöllisyys ja talouskasvu, vaan vapaa ihminen, joka ei työskentele.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kokelaan on hyvä aloittaa määrittelystä, mitä täystyöllisyydellä ja talouskasvulla tarkoitetaan. Tärkeää on myös selvittää, miten elää ja millainen on vapaa ihminen -- kuinka hän elättää itsensä ja mihin käyttää aikansa. Havainnollistavat esimerkit tukevat määrittelyä. Kokelas voi kirjoittaa siitä, miten vapautta tavoitellaan ja mitä se tuo tullessaan. Näin kokelas päätyy osoittamaan väitteen kanssa samanmielisyyttä tai erimielisyyttä. Kokoava yhteenveto on eduksi.", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II TEHTÄVÄ",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2019 Higher Level — © State Examinations Commission.",
+    id: "fin-2019-hl-iii-1", topicId: "finnish-1-1", conceptId: "kuvittele-tulevaisuuden-tyoelamaa-millaiset-ammatit-sailyvat",
+    section: "III", questionRef: "2019 HL Section III Q1",
+    questionText: "Kirjoita noin 300 sanan essee. Valitse aiheeksesi toinen näistä. Kuvittele tulevaisuuden työelämää. Millaiset ammatit säilyvät, mitkä poistuvat? Millaisia ammatteja tulee lisää? Miten ja missä työtä tehdään? Millä alalla kuvittelet itse toimivasi? Voit hyödyntää aiheesta aiemmin mahdollisesti lukemaasi. Pohdi asiaa noin 300 sanan esseessä.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Esseen tulee olla rakenteellisesti eheä: aiheeseen johdatteleva aloituskappale, selkeät käsittelykappaleet, kokoava päätäntä. Kokelas ilmaisee oman kantansa perustellen ja havainnollistaen. Esseessä voi olla yleisen tason käsittelyä sekä yksityiskohtaisempia tapausesimerkkejä. Kokelas voi hyödyntää pohjatekstiä esseessään, mutta näkökulman tulee suuntautua selkeästi tulevaisuuteen.", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2019 Higher Level — © State Examinations Commission.",
+    id: "fin-2019-hl-iii-2", topicId: "finnish-1-1", conceptId: "valivuosi-lukion-jalkeen-jarkeva-valinta-vai",
+    section: "III", questionRef: "2019 HL Section III Q2",
+    questionText: "Kirjoita noin 300 sanan essee. Valitse aiheeksesi toinen näistä. Välivuosi lukion jälkeen – järkevä valinta vai ajanhukkaa? Pohdi asiaa molemmista näkökulmista ja anna perusteltu vastauksesi noin 300 sanan esseessä.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Esseen tulee olla rakenteellisesti eheä: aiheeseen johdatteleva aloituskappale, selkeät käsittelykappaleet, kokoava päätäntä. Kokelaan tulee käsitellä aihetta sekä hyödyn ja kokemuksen että menetetyn ajan näkökulmasta. Vertailurakenne on sopiva, mutta muutkin rakenneratkaisut voivat tulla kysymykseen, kunhan teksti vastaa tehtävänantoon. Kokelas ilmaisee oman kantansa perustellen ja havainnollistaen.", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "higher",
     paperFileid: "LC049ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2022 Higher Level — © State Examinations Commission.",
