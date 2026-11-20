@@ -601,6 +601,282 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
+    id: "mlt-2022-hl-i-1-a", topicId: "maltese-0-0", conceptId: "oqsma",
+    section: "I", questionRef: "2022 HL Section I Q1(a)",
+    questionText: "Spjega fi kliemek it‐tifsira tal‐espressjonijet li ġejjin: oqsma",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\" The marking scheme the SEC published for 2022 answers a different text in Part I (its Question 1 explains tajt titwila, battala, burdati, l‐għan, il‐qofol), so it gives no answer for this question.", permittedMarks: [0,1], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
+    id: "mlt-2022-hl-i-1-b", topicId: "maltese-0-0", conceptId: "emda",
+    section: "I", questionRef: "2022 HL Section I Q1(b)",
+    questionText: "Spjega fi kliemek it‐tifsira tal‐espressjonijet li ġejjin: ħemda",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\" The marking scheme the SEC published for 2022 answers a different text in Part I (its Question 1 explains tajt titwila, battala, burdati, l‐għan, il‐qofol), so it gives no answer for this question.", permittedMarks: [0,1], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
+    id: "mlt-2022-hl-i-1-ċ", topicId: "maltese-0-0", conceptId: "omm",
+    section: "I", questionRef: "2022 HL Section I Q1(ċ)",
+    questionText: "Spjega fi kliemek it‐tifsira tal‐espressjonijet li ġejjin: żżomm",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\" The marking scheme the SEC published for 2022 answers a different text in Part I (its Question 1 explains tajt titwila, battala, burdati, l‐għan, il‐qofol), so it gives no answer for this question.", permittedMarks: [0,1], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
+    id: "mlt-2022-hl-i-1-d", topicId: "maltese-0-0", conceptId: "antikwati",
+    section: "I", questionRef: "2022 HL Section I Q1(d)",
+    questionText: "Spjega fi kliemek it‐tifsira tal‐espressjonijet li ġejjin: antikwati",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\" The marking scheme the SEC published for 2022 answers a different text in Part I (its Question 1 explains tajt titwila, battala, burdati, l‐għan, il‐qofol), so it gives no answer for this question.", permittedMarks: [0,1], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
+    id: "mlt-2022-hl-i-1-e", topicId: "maltese-0-0", conceptId: "idmietna",
+    section: "I", questionRef: "2022 HL Section I Q1(e)",
+    questionText: "Spjega fi kliemek it‐tifsira tal‐espressjonijet li ġejjin: ħidmietna",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\" The marking scheme the SEC published for 2022 answers a different text in Part I (its Question 1 explains tajt titwila, battala, burdati, l‐għan, il‐qofol), so it gives no answer for this question.", permittedMarks: [0,1], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
+    id: "mlt-2022-hl-i-2", topicId: "maltese-0-1", conceptId: "aliex-nuqqas-tan-nisa-erti-oqsma",
+    section: "I", questionRef: "2022 HL Section I Q2",
+    questionText: "Għaliex in‐nuqqas tan‐nisa f’ċerti oqsma huwa meqjus bħala ‘ħela’?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\" The marking scheme the SEC published for 2022 answers a different text in Part I (its Question 1 explains tajt titwila, battala, burdati, l‐għan, il‐qofol), so it gives no answer for this question.", permittedMarks: [0,1,2,3,4,5], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
+    id: "mlt-2022-hl-i-3", topicId: "maltese-0-1", conceptId: "spjega-aliex-awtri-tirrakkonta-istorja-tal",
+    section: "I", questionRef: "2022 HL Section I Q3",
+    questionText: "Spjega għaliex l‐awtriċi tirrakkonta l‐istorja tal‐inċident u l‐kummenti li rat fuq il‐midja soċjali.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\" The marking scheme the SEC published for 2022 answers a different text in Part I (its Question 1 explains tajt titwila, battala, burdati, l‐għan, il‐qofol), so it gives no answer for this question.", permittedMarks: [0,1,2,3,4,5], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
+    id: "mlt-2022-hl-i-4", topicId: "maltese-0-1", conceptId: "awtri-ssemmi-diversi-fatturi-ommu-lin",
+    section: "I", questionRef: "2022 HL Section I Q4",
+    questionText: "L‐awtriċi ssemmi diversi fatturi li jżommu lin‐nisa milli jaħdmu fil‐qasam tat‐trasport pubbliku. X’inhuma dawn il‐fatturi?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\" The marking scheme the SEC published for 2022 answers a different text in Part I (its Question 1 explains tajt titwila, battala, burdati, l‐għan, il‐qofol), so it gives no answer for this question.", permittedMarks: [0,1,2,3,4,5], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
+    id: "mlt-2022-hl-i-5", topicId: "maltese-0-1", conceptId: "dan-iktar-empju-kif-meta-died",
+    section: "I", questionRef: "2022 HL Section I Q5",
+    questionText: "Dan hu l‐iktar eżempju ċar ta’ kif meta tiżdied id‐diversità f’settur, igawdi kulħadd, mhux in‐ nisa biss. Spjega kif it‐tibdil li jsir fuq il‐postijiet tax‐xogħol biex jgħin lin‐nisa jista’ wkoll ikun ta’ għajnuna għall‐ħaddiema kollha.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\" The marking scheme the SEC published for 2022 answers a different text in Part I (its Question 1 explains tajt titwila, battala, burdati, l‐għan, il‐qofol), so it gives no answer for this question.", permittedMarks: [0,1,2,3,4,5], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
+    id: "mlt-2022-hl-i-6", topicId: "maltese-0-1", conceptId: "aliex-jissemmew-nisa-amlu-ess-fil",
+    section: "I", questionRef: "2022 HL Section I Q6",
+    questionText: "Għaliex jissemmew nisa li għamlu suċċess fil‐qasam tat‐trasport? Ikkumenta dwar il‐ konlużjoni tal‐awtriċi. X’inhu l‐għan ewlieni tal‐awtriċi u kif turi dan fl‐aħħar żewġ paragrafi tas‐silta?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\" The marking scheme the SEC published for 2022 answers a different text in Part I (its Question 1 explains tajt titwila, battala, burdati, l‐għan, il‐qofol), so it gives no answer for this question.", permittedMarks: [0,1,2,3,4,5], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
+    id: "mlt-2022-hl-ii-1", topicId: "maltese-1-0", conceptId: "aliex-bniedem-isibha-tant-loq-isterjotipi",
+    section: "II", questionRef: "2022 HL Section II Q1",
+    questionText: "Ikteb komponiment (minimu ta' 300 kelma) dwar wieħed minn dawn it‐titli: Għaliex il‐bniedem isibha tant faċli li joħloq l‐isterjotipi? Taħseb li l‐edukazzjoni hija s‐soluzzjoni? Jew m’hemmx mod biex naċċettaw aktar lil xulxin bla preġudizzju? Iddiskuti l‐opinjoni tiegħek f’komponiment ta’ madwar 300 kelma.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\" The scheme reprints the instruction as “Agħżel mistoqsija waħda minn din it‐taqsima u ikteb madwar 300 kelma.” and the two titles, and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
+    id: "mlt-2022-hl-ii-2", topicId: "maltese-1-0", conceptId: "kif-tissawwar-biberija-enwina-iddiskuti-opinjoni",
+    section: "II", questionRef: "2022 HL Section II Q2",
+    questionText: "Ikteb komponiment (minimu ta' 300 kelma) dwar wieħed minn dawn it‐titli: Kif Tissawwar il‐Ħbiberija Ġenwina. Iddiskuti l‐opinjoni tiegħek f’komponiment ta’ madwar 300 kelma.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\" The scheme reprints the instruction as “Agħżel mistoqsija waħda minn din it‐taqsima u ikteb madwar 300 kelma.” and the two titles, and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC557ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2023 Higher Level — © State Examinations Commission.",
