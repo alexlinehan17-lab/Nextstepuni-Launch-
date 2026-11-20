@@ -653,6 +653,176 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2013 Higher Level — © State Examinations Commission.",
+    id: "cs-2013-hl-i-2", topicId: "czech-0-1", conceptId: "popiste-zaklade-textu-typickeho-mamanka",
+    section: "I", questionRef: "2013 HL Section I Q2",
+    questionText: "Popište na základě textu typického mamánka.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mamánek může pocházet z jakékoliv společenské vrstvy, jejich společnou charakteristikou je nechuť vzít svůj vlastní život do vlastních rukou, nechtějí převzít zodpovědnost za sebe sama. Zůstávají jakoby věčnými dětmi, které se nechtějí a neumí odloučit od rodičů. Jsou nesamostatní a připoutaní k rodičům.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2013 Higher Level — © State Examinations Commission.",
+    id: "cs-2013-hl-i-3", topicId: "czech-0-1", conceptId: "vysvetlete-zaklade-textu-duvody-mamankovsvi",
+    section: "I", questionRef: "2013 HL Section I Q3",
+    questionText: "Vysvětlete na základě textu důvody mamánkovsví.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Na vině jsou zejména rodiče, kteří odmítají pochopit a přijmout fakt, že jejich potomek už není nesamostatným dítětem, ale dospělou osobou. Někdy rodiče chtějí mít svého potomka neustále při sobě a děti se často snaží vydírat, aby neodcházely, např. majetkem.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme reprints this question as: “Vysvětlete na základě textu důvody mamánkovství.”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2013 Higher Level — © State Examinations Commission.",
+    id: "cs-2013-hl-i-4", topicId: "czech-0-1", conceptId: "autorka-popisuje-zkusenosti-irska-ceske-republiky",
+    section: "I", questionRef: "2013 HL Section I Q4",
+    questionText: "Autorka popisuje zkušenosti z Irska a České republiky. Popište na základě textu rozdíly ve vnímání dospělosti mezi těmito dvěma zeměmi.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "V České republice je pro mladé lidi velmi těžké pořídit si např. vlastní bydlení. Mladí lidé se snaží studovat jakoukoliv vysokou školu, ze které je třeba i po roce vyhodí, aby nemuseli být „dospělí“. V Irsku naopak mladí lidé žijí raději s několika dalšími v malých bytech, ale samostatně. Následkem toho si většina mladých lidí umí vážit dobrého bydla u rodičů a také pomáhá případně udržovat.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2013 Higher Level — © State Examinations Commission.",
+    id: "cs-2013-hl-i-5", topicId: "czech-0-1", conceptId: "zaklade-cteni-textu-vysvetlete-jaky-vliv",
+    section: "I", questionRef: "2013 HL Section I Q5",
+    questionText: "Na základě čtení textu vysvětlete, jaký vliv má mamánkovství na lidi v jejich okolí. Myslíte si, že názor autorky je správný? Vysvětlete svůj názor.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Souhlas nebo nesouhlas s autorkou. Pro lidi kolem mamánků může být velmi složité s nimi žít. Za prvé, rodiče sami možná nechtějí takto žít, ale nedokážou své dítě vyhodit na ulici. Pro mamánky může být velmi složité si najít ženu. Pro ženy může být těžké žít s takovým mužem, který nedokáže být zodpovědný sám za sebe a navíc očekává od své ženy stejný servis, jaký měl u své matky. Otázkou je, zda takový člověk může vychovat děti v sebevědomé a nezávislé osobnosti, když sám takový není.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2013 Higher Level — © State Examinations Commission.",
+    id: "cs-2013-hl-i-6", topicId: "czech-0-1", conceptId: "nutno-ale-rict-potreba-neplest-ono",
+    section: "I", questionRef: "2013 HL Section I Q6",
+    questionText: "„…Nutno ale říct, že je potřeba neplést si ono uplakané mamánkovství se skutečně vřelým vztahem s matkou.“ – porovnejte na základě textu zdravý a nezdravý vztah s rodiči, včetně postoje ze strany dětí.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Zdravý vztah dětí s rodiči je založený na vzájemném respektu. Blízký vztah s rodiči činí děti psychicky i mentálně mnohem stabilnější. Děti se domů vracejí a dokáží ocenit snahu rodičů o vytvoření co nejlepších podmínek. Nezdravý vztah tento respekt minimálně na jedné straně postrádá, ze strany dětí se rodiče často stávají „poskoky“, kteří se snaží vyplnit jakékoliv přání již dospělého potomka a z rodičovské lásky ho nedokážou odmítnout. Ze strany rodičů je to pak často vydírání majetkem, případně stářím a nutností potřeby péče ze strany dětí.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2013 Higher Level — © State Examinations Commission.",
+    id: "cs-2013-hl-ii", topicId: "czech-1-0", conceptId: "rodice-maji-pravo-tahat-krku-jen",
+    section: "II", questionRef: "2013 HL Section II",
+    questionText: "„… (rodiče)... Mají právo na to tahat si na krku jen přívěsek, co jsme v dětství vykopali na poli. Já už se po pětatřiceti letech na světě protáhnu životem přece jen sama.“ Vysvětlete, proč si toto autorka myslí, a napište komentář (minimum 100 slov), ve kterém vysvětlíte svůj názor na toto tvrzení.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:", marks: 30, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints, as examples, not a checklist: “Souhlas, nesouhlas. Dítě by nemělo být přívěškem a viset na krku svých rodičů. Autorka obrazně vyjadřuje, že rodiče mají právo na krku nosit jedině šperk, mají právo na to, aby se děti jednou začaly starat samy o sebe a nevyžadovaly tuto péči od rodičů. Je možno s tímto názorem polemizovat a říci, že pokud si rodiče děti jednou pořídí, měli by se o ně taky potom starat, bez ohledu na případnou dospělost potomků. Mají rodiče právo, aby se o ně naopak ve stáří postaraly jejich děti? Aby jim vlastně „vrátily“ to, co jim rodiče dali, když byly malé? Jak daleko toto „vracení“ může až jít?”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen používat komunikovat v jazyce jasně a plynule – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČÁST 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2013 Higher Level — © State Examinations Commission.",
+    id: "cs-2013-hl-iii-1", topicId: "czech-1-0", conceptId: "opici-laska-laska-ktera-nici-misto",
+    section: "III", questionRef: "2013 HL Section III Q1",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: Opičí láska – láska, která ničí místo aby posilovala.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen používat komunikovat v jazyce jasně a plynule – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2013 Higher Level — © State Examinations Commission.",
+    id: "cs-2013-hl-iii-2", topicId: "czech-1-0", conceptId: "jit-svym-snem-horkosladka-cesta",
+    section: "III", questionRef: "2013 HL Section III Q2",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: Jít za svým snem – hořkosladká cesta.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen používat komunikovat v jazyce jasně a plynule – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2014, level: "higher",
     paperFileid: "LC547ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2014 Higher Level — © State Examinations Commission.",
