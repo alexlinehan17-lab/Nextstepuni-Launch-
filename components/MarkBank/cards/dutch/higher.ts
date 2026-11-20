@@ -3572,7 +3572,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
@@ -3595,7 +3596,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
@@ -3618,7 +3620,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
@@ -3641,7 +3644,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
@@ -3664,7 +3668,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
@@ -3687,7 +3692,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Dutch",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
@@ -3710,7 +3716,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Dutch",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
@@ -3733,7 +3740,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Dutch",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
@@ -3756,7 +3764,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Dutch",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
@@ -3829,6 +3838,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3852,6 +3862,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3875,6 +3886,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3898,6 +3910,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3921,6 +3934,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -3944,6 +3958,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
@@ -4113,6 +4128,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -4136,6 +4152,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -4159,6 +4176,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -4182,6 +4200,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -4205,6 +4224,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -4228,6 +4248,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -4251,6 +4272,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -4274,6 +4296,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -4401,6 +4424,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4424,6 +4448,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4447,6 +4472,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4470,6 +4496,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4493,6 +4520,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4516,6 +4544,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4539,6 +4568,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4562,6 +4592,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4585,6 +4616,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
@@ -4608,6 +4640,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Dutch",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
