@@ -189,12 +189,17 @@ def ordinary_grid(S, q, letter, paper_bullets):
         line = S.lines[per_task[0]]
         reprint = _option_bullets(S, task, letter, comm)
         if len(paper_bullets) == 4:
-            # R2: scored per task where the option prints exactly four bullets;
-            # the guidance quotes the scheme's reprint of the bullet where it
-            # prints one (it traces), else the scheme's line alone
+            # R2: scored per task where the option prints exactly four bullets,
+            # on the French per-point shape (French "Communication · point N"):
+            # the label is the app's, so the criterion carries no bands, and
+            # its guidance quotes the scheme: its reprint of the bullet where
+            # it prints one, the line pricing the tasks, and the two
+            # categories as printed. cat_bands() holds the categories to
+            # covering 0-4 once.
+            cat_bands(4)
             comm_crits = [{'id': f'communication-{i}', 'label': f'Communication · task {i}', 'maxMarks': 4,
                            'permittedMarks': list(range(5)),
-                           'guidance': ([reprint[i - 1]] if reprint else []) + [line], 'bands': cat_bands(4)}
+                           'guidance': ([reprint[i - 1]] if reprint else []) + [line] + cats}
                           for i in range(1, 5)]
         else:
             comm_crits = [{'id': 'communication', 'label': 'Communication', 'maxMarks': 16,

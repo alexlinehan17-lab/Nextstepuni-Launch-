@@ -1561,7 +1561,7 @@ const portugueseAddedTotal = [...Object.values(PORTUGUESE_ADDED), ...Object.valu
  * Listening Comprehension Test (sections LA-LE, CARD-STANDARD 10g), and then
  * the asks the shared generator refused, each named. */
 const LITHUANIAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
-  2026: { higher: 41, ordinary: 40 },
+  2026: { higher: 41, ordinary: 46 },
   2025: { higher: 28, ordinary: 34 },
   2024: { higher: 0, ordinary: 35 },
   2023: { higher: 26, ordinary: 26 },
