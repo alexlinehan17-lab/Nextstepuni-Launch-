@@ -1846,6 +1846,501 @@
   }
  },
  {
+  "id": "est-2012-hl-i-4",
+  "subjectId": "estonian",
+  "level": "higher",
+  "year": 2012,
+  "section": "I",
+  "topicId": "estonian-0-1",
+  "conceptId": "seega-ebaloogiline-jareldada-kuulumine-ateistlikku-idablokki",
+  "questionRef": "2012 HL Section I Q4",
+  "questionText": "„Seega on ebaloogiline järeldada, et kuulumine ateistlikku idablokki oleks suutnud muuta uskliku meelelaadi ilmalikuks ...“ Selgita artikli 3. lõigu põhjal, miks autor nii arvab.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kommunistlik režiim püüdis usku igati maha suruda, pannes sellega aluse paranormaalsete uskumuste ulatuslikumale levikule. Siiski toimis see protsess kommunismimaades erinevalt – nt religiooni ja kristluse suhtes niigi jaheda suhtumisega riikides nagu Eesti ja Läti leidsid paranormaalsed uskumused tõesti rohkem kandepinda. Samas jäid traditsioonilised religioossed maad nagu näiteks Poola ja Rumeenia usuvastasele survele vaatamata tihedalt religiooni ning uskliku meelelaadiga seotuks. Järelikult ei saa väita, et kõik postkommunistlikud riigid on ühesugused ja et neis kõigis suhtutakse religiooni ja paranormaalsetesse uskumustesse samal moel. Riikide religioosne taust on väga erinev.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Estonian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Estonian 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+  }
+ },
+ {
+  "id": "est-2012-hl-i-5",
+  "subjectId": "estonian",
+  "level": "higher",
+  "year": 2012,
+  "section": "I",
+  "topicId": "estonian-0-1",
+  "conceptId": "religioossete-toekspidamiste-austamine-tootab-ebausu-suhtes",
+  "questionRef": "2012 HL Section I Q5",
+  "questionText": "„Religioossete tõekspidamiste austamine töötab ebausu suhtes kahte pidi – ühelt poolt on inimesed, kes usuvad jumalat, rohkem altid uskuma ka teisi teaduslikult seletamatuid nähtusi. Teisalt aga on sügavalt usklikud ning usku praktiseerivad inimesed vähem vastuvõtlikud teistsuguste nähtuste aktsepteerimisele ...“ (4. lõik). Selgita tekstile tuginedes, kuidas autor seda väidet tõestab.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Autor tõestab oma väidet Ameerika ja Malta näite varal. Mõlemad maad on religioossed, ent suhtumine ebausku neis maades on erinev. Kuigi usk ei ole USAs enam nii rangelt praktiseeritav kui varasematel aegadel, on see endiselt tugev ja mõjukas. Ameeriklaste kultuuriline mitmekesisus ja muretu ellusuhtumine/moraal on religiooni karmust nõrgestanud ning inimeste vastuvõtuvõimet alternatiivsete uskumuste, seletamatute nähtuste ning müstitsismi suhtes suurendanud. See näitab, et usku kõikvõimalikesse paranormaalsetesse sündmustesse ja usku jumalasse on võimalik harrastada käsikäes. See teeb Ameerikast ühe ebausklikuma lääne riigi.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Malta seevastu on teise äärmusena jäikade usutraditsioonidega maa, kus järgitakse väga täpselt usulisi rituaale ja ettekirjutusi. Ettekirjutatud reeglitest kõrvalekaldumine läheb usu ja kristliku moraaliga vastuollu, ning see on põhjus, miks maltalased on ebausu suhtes suhteliselt vastuvõtmatud.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Estonian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Estonian 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+  }
+ },
+ {
+  "id": "est-2012-hl-ii-1",
+  "subjectId": "estonian",
+  "level": "higher",
+  "year": 2012,
+  "section": "II",
+  "topicId": "estonian-1-0",
+  "conceptId": "artikkel-kannab-pealkirja-miks-usume-muinasjuttudesse",
+  "questionRef": "2012 HL Section II Q1",
+  "questionText": "Artikkel kannab pealkirja „Miks me usume muinasjuttudesse?“ Kas sinu arvates selgub artiklist, miks me nendesse usume? Kirjuta umbes 100sõnaline kommentaar oma seisukoha põhjenduseks.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Umbes 100sõnaline ladus kommentaar, tõestamaks teksti sisust arusaamist.",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Õigekiri: õigekeelsus ja interpunktsioon – 10%",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Eestlaste usul muinasjuttudesse on palju põhjusi. Kindlasti saab seda usku seletada näiteks infokülluse ja meedia rolliga, ajaloolise taustaga, jumalakauge maailmavaatega, rahva puuduliku koolihariduse ning vähese kultuurilise teadlikkusega kuni 19. sajandi keskpaigani, ateistliku režiimi usuvastase pärandiga, kaasaja ühiskonna ebastabiilsete majanduslike tingimuste ja ebavõrdsusega, eestlastele omase praktilisuse ja kaine mõistusega jne.”; “Lisaks saab muinasjuttudesse uskumist seletada ka näiteks üleilmastumise ja maailma avardumisega (maausu kõrval levivad kõikvõimalikud uususundid ja spirituaalsed praktikad, nt New Age, Jehoova tunnistajad, saientoloogia, energiapüramiidid, feng shui), tarbimishulluse ja popkultuuri levimisega, inimeste kaugenemisega loodusest ja lääne ühiskonna tehislikkusega (nt looduslikud ravivõimed ja -meetodid on unustusse vajumas), elukeskkonna saastumisega, tänapäevaste terviseprobleemidega (nt ebatervislikud eluviisid, valed toitumisharjumused, haigused, uimastid, alkoholism, liigne kehakaal jne), rahvusliku konservatiivsuse ning umbusklikkusega kõige vastu, mis on uus ja teistsugune, inimeste rumaluse, lihtsameelsuse, kõleda kliima või tundetute kaasinimestega jne.”. The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II. ÜLESANNE:",
+   "title": "Reading text — answer in Estonian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Estonian 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+  }
+ },
+ {
+  "id": "est-2012-hl-iii-1",
+  "subjectId": "estonian",
+  "level": "higher",
+  "year": 2012,
+  "section": "III",
+  "topicId": "estonian-1-1",
+  "conceptId": "lootusel-mitu-nagu",
+  "questionRef": "2012 HL Section III Q1",
+  "questionText": "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Lootusel on mitu nägu",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Õigekiri: õigekeelsus ja interpunktsioon – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "est-2012-hl-iii-2",
+  "subjectId": "estonian",
+  "level": "higher",
+  "year": 2012,
+  "section": "III",
+  "topicId": "estonian-1-1",
+  "conceptId": "meie-tanapaeva-uhiskonnas-koik-keskendunud-siia",
+  "questionRef": "2012 HL Section III Q2",
+  "questionText": "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Meie tänapäeva ühiskonnas on kõik keskendunud siia ja praegu",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Õigekiri: õigekeelsus ja interpunktsioon – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "est-2013-hl-i-1-a",
   "subjectId": "estonian",
   "level": "higher",
