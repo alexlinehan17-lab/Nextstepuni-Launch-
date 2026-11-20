@@ -930,7 +930,7 @@ def _added_ask(subject, year, level, key, P):
         if tuple(spec['key']) == key:
             leaf, _marks = paper_census._added_leaf(subject, year, level, spec)
             return types.SimpleNamespace(key=key, section=key[0], q=key[1], letter=None, roman=None,
-                                         page=(spec.get('lines') or spec.get('cut'))[0], text=leaf['text'],
+                                         page=(spec.get('lines') or spec.get('cut') or spec.get('line'))[0], text=leaf['text'],
                                          full_text=leaf['text'],
                                          tariff=None, margin_price='', notation='')
     return None

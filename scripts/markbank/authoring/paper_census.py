@@ -4371,6 +4371,18 @@ ADDED_ASKS = {
     # under the true "II daļa (30 punkti)" (y521), one task with no number, gets
     # no ask. Added here as the bare Section II the other sittings key, its marks
     # read off that head.
+    # Slovenian 2022 and 2024 print their second essay title on a line of its own
+    # after "ALI" (2022 p4 y690, 2024 p4 y740), which the walker folds into
+    # title 1's part and keys no ask for: lifted as that printed line, an
+    # alternative of its part's 40, whose total the census already holds.
+    ('slovenian', 2022, 'hl'): [
+        {'key': ['II', 2, None, None], 'label': 'Section II Q2', 'before': None,
+         'line': (4, 'Kako se razvije pravo prijateljstvo'), 'alternative': True},
+    ],
+    ('slovenian', 2024, 'hl'): [
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'line': (4, '\u00bbVsak \u010dlovek je enkratna stvaritev'), 'alternative': True},
+    ],
     ('latvian', 2014, 'hl'): [
         {'key': ['II', None, None, None], 'label': 'Section II', 'before': ['II', 1, None, None],
          'lines': (4, '\u201eCilv\u0113kresursi ir tas', '(vismaz 100 v\u0101rdu)'),
@@ -4387,6 +4399,14 @@ def _added_leaf(subject, year, level, spec):
     else:
         import eu_paper
         P = eu_paper.EuPaper(year, level, subject)
+    if 'line' in spec:
+        # a title printed as one line of its own: that line, as printed
+        page, opening = spec['line']
+        hits = [l for l in P.lines if l.page == page and l.text.strip().startswith(opening)]
+        if len(hits) != 1:
+            raise ValueError(f'{subject} {year}: {len(hits)} lines open {opening!r}')
+        return {'key': spec['key'], 'label': spec['label'],
+                'text': re.sub(r'\s+', ' ', hits[0].text).strip()}, 0
     if 'cut' in spec:
         # a title the text layer welds onto another printed line: the words after `after`
         page, opening, after = spec['cut']

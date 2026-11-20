@@ -551,6 +551,284 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Slovenian 2022 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "slv-2022-hl-i-1-a", topicId: "slovenian-0-0", conceptId: "izlet",
+    section: "I", questionRef: "2022 HL Section I Q1(a)",
+    questionText: "S svojimi besedami na podlagi prebranega besedila pojasnite naslednje pojme: “Izlet”.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 1,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovenian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovenian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Slovenian 2022 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "slv-2022-hl-i-1-b", topicId: "slovenian-0-0", conceptId: "bivak",
+    section: "I", questionRef: "2022 HL Section I Q1(b)",
+    questionText: "S svojimi besedami na podlagi prebranega besedila pojasnite naslednje pojme: “Bivak”.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 1,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovenian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovenian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Slovenian 2022 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "slv-2022-hl-i-1-c", topicId: "slovenian-0-0", conceptId: "kljubovati",
+    section: "I", questionRef: "2022 HL Section I Q1(c)",
+    questionText: "S svojimi besedami na podlagi prebranega besedila pojasnite naslednje pojme: “Kljubovati”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 1,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovenian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovenian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Slovenian 2022 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "slv-2022-hl-i-1-d", topicId: "slovenian-0-0", conceptId: "dru-tvo",
+    section: "I", questionRef: "2022 HL Section I Q1(d)",
+    questionText: "S svojimi besedami na podlagi prebranega besedila pojasnite naslednje pojme: “Društvo”.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 1,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovenian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovenian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Slovenian 2022 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "slv-2022-hl-i-1-e", topicId: "slovenian-0-0", conceptId: "narodna-zavest",
+    section: "I", questionRef: "2022 HL Section I Q1(e)",
+    questionText: "S svojimi besedami na podlagi prebranega besedila pojasnite naslednje pojme: “Narodna zavest”.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 1,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovenian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovenian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Slovenian 2022 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "slv-2022-hl-i-2", topicId: "slovenian-0-1", conceptId: "podlagi-besedila-ste-ravnokar-prebrali-pojasnite",
+    section: "I", questionRef: "2022 HL Section I Q2",
+    questionText: "Na podlagi besedila, ki ste ga ravnokar prebrali, pojasnite, na kaj moramo biti pozorni, preden se odpravimo v gore.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Slovenian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovenian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Slovenian 2022 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "slv-2022-hl-i-3", topicId: "slovenian-0-1", conceptId: "podlagi-prebranega-besedila-pojasnite-zakaj-pravimo",
+    section: "I", questionRef: "2022 HL Section I Q3",
+    questionText: "Na podlagi prebranega besedila pojasnite, zakaj pravimo, da je planinstvo slovenski »nacionalni šport«.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Slovenian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovenian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Slovenian 2022 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "slv-2022-hl-i-4", topicId: "slovenian-0-1", conceptId: "podlagi-prebranega-besedila-pojasnite-kak-vlogo",
+    section: "I", questionRef: "2022 HL Section I Q4",
+    questionText: "Na podlagi prebranega besedila pojasnite, kakšno vlogo je imelo planinstvo za Slovence v 19. stoletju.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Slovenian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovenian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Slovenian 2022 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "slv-2022-hl-i-5", topicId: "slovenian-0-1", conceptId: "podlagi-besedila-ste-ravnokar-prebrali-pojasnite",
+    section: "I", questionRef: "2022 HL Section I Q5",
+    questionText: "Na podlagi besedila, ki ste ga ravnokar prebrali, pojasnite, kaj je tisto, kar določa identiteto nekega naroda. Kaj je po vašem mnenju potrebno, da neka stvar postane simbol?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Slovenian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovenian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Slovenian 2022 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "slv-2022-hl-i-6", topicId: "slovenian-0-1", conceptId: "osvojimo-gore-sami-sebe-podlagi-besedila",
+    section: "I", questionRef: "2022 HL Section I Q6",
+    questionText: "»Ne osvojimo gore, pač pa sami sebe.« Na podlagi besedila, ki ste ga ravnokar prebrali, navedite, ali se strinjate s to izjavo. Svoje stališče utemeljite.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Slovenian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovenian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Slovenian 2022 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "slv-2022-hl-ii-1", topicId: "slovenian-1-1", conceptId: "napi-ite-esej-minimalno-300-besed",
+    section: "II", questionRef: "2022 HL Section II Q1",
+    questionText: "Napišite esej (minimalno 300 besed). Izberite enega izmed danih naslovov. »Turizem – blagoslov ali prekletstvo?« Ali se vam zdi, da turizem uničuje naravo? Na kakšen način po vašem mnenju narava plačuje ceno za to, da mi uživamo v njeni lepoti?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\"" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "No marking scheme: the SEC published none for Slovenian 2022 Higher Level. Question quoted from the SEC examination paper — © State Examinations Commission.",
+    id: "slv-2022-hl-ii-2", topicId: "slovenian-1-1", conceptId: "kako-razvije-pravo-prijateljstvo",
+    section: "II", questionRef: "2022 HL Section II Q2",
+    questionText: "Napišite esej (minimalno 300 besed). Izberite enega izmed danih naslovov. Kako se razvije pravo prijateljstvo.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    noScheme: true,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The SEC published no marking scheme for this paper.", marks: null, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\"" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC558ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Slovenian 2023 Higher Level — © State Examinations Commission.",
