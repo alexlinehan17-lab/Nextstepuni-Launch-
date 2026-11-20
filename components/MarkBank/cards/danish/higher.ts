@@ -1126,6 +1126,119 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC038AP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2017 Higher Level — © State Examinations Commission.",
+    id: "dan-2017-hl-i-1", topicId: "danish-0-1", conceptId: "forklar-betydningen-ordet-lkehus-som-det",
+    section: "I", questionRef: "2017 HL Section I Q1",
+    questionText: "Forklar betydningen af ordet ”bjælkehus” som det bruges i teksten\nForklar betydningen af ordet ”værdier” som det bruges i teksten\nForklar betydningen af ordene ”et stort og vildt spring ud over kanten” som de bruges i teksten\nForklar betydningen af ordet ”nøjsomhed” som det bruges i teksten\nForklar betydningen af ordene ” tæskede mig selv” som de bruges i teksten",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”et gammeldags hus opført af træbjælker”)", marks: 1, contextNote: "For “bjælkehus”: The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-2", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”Værdier er kulturelt bestemte opfattelser af, hvad der er værdifuldt og ønskværdigt. Her er der tale om miljømæssige, menneskelige og familiære værdier, modsat materielle værdier”)", marks: 1, contextNote: "For “værdier”" },
+    { id: "r-3", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”et valg, der medfører en radikal forandring i livsstil”)", marks: 1, contextNote: "For “et stort og vildt spring ud over kanten”" },
+    { id: "r-4", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”livsstil, hvor man klarer sig med eller er tilfreds med lidt”)", marks: 1, contextNote: "For “nøjsomhed”" },
+    { id: "r-5", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”at bebrejde eller kritisere sig selv”)", marks: 1, contextNote: "For “tæskede mig selv”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC038AP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2017 Higher Level — © State Examinations Commission.",
+    id: "dan-2017-hl-i-5", topicId: "danish-0-1", conceptId: "det-virker-ens-sind-man-bliver",
+    section: "I", questionRef: "2017 HL Section I Q5",
+    questionText: "”Det påvirker ens sind. Man bliver bedre til at huske at hugge brænde, til at have et forråd af mad. Men jeg skal også ærligt sige, at det stikker dybere. Hvis klimaet går helt amok, hvis de økonomiske systemer bryder sammen, så vil jeg sgu have mit på det rene. Jeg vil kunne sørge for mig, min familie og mine naboer.« Beskriv med dine egne ord de dybere tanker, som Andrea Hejlskov gør sig om fremtiden.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ligesom de amerikanske ”Preppers” forbereder familien sig på en dystopisk fremtid, hvor samfundets strukturer kollapser pga. klimaforandringer og økonomiske kriser. Hjelskov ser derfor en nødvendighed i, at familien bliver selvforsynende.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC038AP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2017 Higher Level — © State Examinations Commission.",
+    id: "dan-2017-hl-i-6", topicId: "danish-0-1", conceptId: "helt-sikkert-del-autenticitetsbev-gelsen-det",
+    section: "I", questionRef: "2017 HL Section I Q6",
+    questionText: "”Vi er helt sikkert del af ’autenticitetsbevægelsen’. Det kan godt irritere mig – for vi ville jo væk fra alt det der – trends vi bruger som små plastre på såret, trends vi følger for at give livet indhold (…) Jeg kan sagtens se, hvor latterligt det kan forekomme, hvor fake. Og hvor meget autenticitet bare bliver en ny form for forbrug, en hul livsstil, man kan købe, og som ser pænere ud.” Kommenter ud fra dette citat personens selvkritik.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Den moderne livsstil er præget af trends, som giver livet indhold. Den autentiske livsstil kan også opfattes som en trend, og således kan autenticitet også ses som et udtryk for forbrugerisme, som Hjelskov netop forsøger at tage afstand fra.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC038AP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2017 Higher Level — © State Examinations Commission.",
+    id: "dan-2017-hl-ii-1", topicId: "danish-1-0", conceptId: "unge-vores-samfund-har-lugtet-lunten",
+    section: "II", questionRef: "2017 HL Section II Q1",
+    questionText: "”De unge i vores samfund har lugtet lunten, og det er en illusion, at det moderne liv er den bedste af alle livsformer.” Hvorfor tror du, ud fra din læsning af teksten som helhed, at Andrea Hejlskov når til denne konklusion? Forklar din mening i en kommentar på ca. 100 ord.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hjelskov baserer bl.a. sin påstand på sin datters veninde, der også har et ønske om at forlade det moderne samfund, idet hun lykønsker familien, fordi det lykkes dem at slippe ud af det moderne samfund i tide. De unge mennesker lever under et enormt pres i det moderne samfund og oplever derfor ikke følelsen af frihed. Frihed i den moderne livsstil er en illusion, og derfor kan unge mennesker identificere sig med alternative og antimoderne livsstile, såsom den autentiske livsstil.", marks: null, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “En kommentar på ca. 100 ord, som viser evne til at forstå Hjelskovs syn på det moderne samfund.”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC038AP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2017 Higher Level — © State Examinations Commission.",
+    id: "dan-2017-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2017 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner:\nPersonlige værdier og kompetencer i en verden under forandring\n”Min holdning er lige så god som din, og alle holdninger er lige meget værd.” Diskuter dette synspunkt i en moderne verden-kontekst især med fokus på brugen af sociale medier.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under the two titles the scheme prints only: “Et velskrevet essay på ca. 300 ord, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC038ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2018 Higher Level — © State Examinations Commission.",
