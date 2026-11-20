@@ -4291,6 +4291,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2024 Higher Level — © State Examinations Commission.",
+    id: "hun-2024-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-min-100-max-150-szoban",
+    section: "II", questionRef: "2024 HL Section II Q1",
+    questionText: "Kommentár (min. 100, max. 150 szóban) Kommentálja a szöveg alapján az 1. bekezdés alábbi mondatát minimum 100, maximum 150 szóban! „A megosztáson alapuló gazdaság mindeközben egyre több társadalmi vitát gerjeszt”.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100, maximum 150 szóban tisztán, érthetően kifejtett, szövegen alapuló saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “tulajdonnélküliség valójában még inkább erősíti a modern ember függőségét, akinek se háza, se kocsija, de még egy rollere sincs, a megosztáson alapuló szolgáltatások pedig a vállalatok korlátlan profitéhségének újabb kiszolgálói (1. bk);”; “a megosztás javítja a szegényebb rétegek életkörülményeit, hiszen olyan mobilitási lehetőséget teremt számukra, amit tőke híján egyébként nem tudnának igénybe venni, másrészt nem lehet figyelmen kívül hagyni a környezetvédelmi szempontokat sem, (2. bk);”; “városi környezetben egy megosztott autó akár 7–10 saját használatút is kiválthat, így csökkentve a szükséges parkolóhelyek számát (3. bk);”; “minél inkább ráteszik a kezüket a nagyvállalatok ezekre az alternatív gazdasági megoldásokra, annál jobban felhígul a fogalom eredeti tartalma: az autómegosztás mellett ennek ékes példáját szolgáltatja a rollerkölcsönzés is (4. bk);”; “a megosztáson alapuló gazdaság elégtelen törvényi háttere: ennek a piacnak a szereplői is egy olyan rést töltenek be, aminek a szabályozása még még mindig elégtelen (4. bk);”; “a tömegek számára talán legszimpatikusabb kezdeményezés a Mol és a BKK közös kerékpárkölcsönző projektje, a budapesti Bubi (5. bk)”; “egy törvényileg szabályozott iparágat tarol le, gyakorlatilag jogellenesen, ráadásul a modell az adóelkerülés gyanúját is felveti: pl Airbnb és az Uber (1. és 6. bk)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2024 Higher Level — © State Examinations Commission.",
+    id: "hun-2024-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-megosztasi-gazdasag-osszekapcsolodik-fenntarthatosaggal",
+    section: "III", questionRef: "2024 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! A megosztási gazdaság összekapcsolódik a fenntarthatósággal, és gazdasági lehetőségnek, fenntarthatóbb fogyasztási formának tekintik.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2024 Higher Level — © State Examinations Commission.",
+    id: "hun-2024-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-kozosseg-egyen-elete-volt",
+    section: "III", questionRef: "2024 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! „A közösség az egyén élete előtt is volt, utána is lesz, segíti őt a megélhetésében, a bajában.” (Csányi Vilmos)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC551ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2025 Higher Level — © State Examinations Commission.",
