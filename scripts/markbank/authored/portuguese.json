@@ -1,5 +1,667 @@
 [
  {
+  "id": "por-2011-hl-i-1-a",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-carga-simbolica",
+  "questionRef": "2011 HL Section I Q1(a)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Carga simbólica (§ 1);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Valor importante, elemento que representa algo;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 x 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2011-hl-i-1-b",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-ostensivamente",
+  "questionRef": "2011 HL Section I Q1(b)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Ostensivamente (§ 2);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "com convicção, força e clareza;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 x 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2011-hl-i-1-c",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-reclusao",
+  "questionRef": "2011 HL Section I Q1(c)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Reclusão (§ 4);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "prisão, isolamento;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 x 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2011-hl-i-1-d",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-falencia-moral",
+  "questionRef": "2011 HL Section I Q1(d)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Falência moral (§ 4);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ausência de valores morais;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 x 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2011-hl-i-1-e",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-soterrados",
+  "questionRef": "2011 HL Section I Q1(e)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Soterrados (§ 4);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "aprisionados por um desabamento de terra.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 x 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2011-hl-i-2",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "porque-autor-considera-importante-conteudo-mensagem",
+  "questionRef": "2011 HL Section I Q2",
+  "questionText": "Porque é que o autor considera importante o conteúdo da mensagem enviada pelos mineiros?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Porque era simples, concisa, dizia apenas o importante e necessário: estavam vivos e estavam bem.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2011-hl-i-3",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "estabelece-comparacao-entre-dois-mundos-vistos",
+  "questionRef": "2011 HL Section I Q3",
+  "questionText": "O texto estabelece uma comparação entre dois mundos vistos pela televisão. Identifique o que se compara e estabeleça as diferenças que os distinguem.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "O texto compara dois momentos televisivos: o da salvação dos mineiros soterrados com um programa de entretenimento onde os concorrentes se fecham voluntariamente numa casa. Por um lado, os mineiros ficaram aprisionados por um acidente involuntário; os concorrentes do programa estão fechados voluntariamente, em busca do sucesso fácil, sem olharem a meios para atingirem o fim de ganhar dinheiro e ficarem famosos.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2011-hl-i-4",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "partir-leitura-terceiro-forma-simples-melhor",
+  "questionRef": "2011 HL Section I Q4",
+  "questionText": "A partir da leitura do terceiro parágrafo, explique de forma simples, o que melhor caracteriza o comportamento daqueles mineiros.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Os mineiros demonstraram ser, desde o acidente, homens cheios de coragem, organização, dignidade, honestidade; com estas qualidades conseguiram aguentar- se tanto tempo debaixo de terra, naquela prisão atroz e involuntária.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2011-hl-i-5",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "quer-dizer-autor-expressao-chile-deu",
+  "questionRef": "2011 HL Section I Q5",
+  "questionText": "O que quer dizer o autor com a expressão: “O Chile deu uma lição ao mundo e soube aproveitá-la, com planeamento e sabedoria”.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "O Chile, o povo chileno, fez-nos recordar momentos dignos de registo histórico; ensinou ao mundo a importância dos valores morais, da unidade e solidariedade, sem esquecer a importância da imagem como meio de informação, sem excessos, sem sensacionalismo.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2011-hl-i-6",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "poucas-palavras-esclareca-importancia-televisao-imagem",
+  "questionRef": "2011 HL Section I Q6",
+  "questionText": "Em poucas palavras esclareça a importância da televisão e da imagem na transmissão de acontecimentos como o do salvamento dos mineiros.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "O poder da imagem, hoje, é quase absoluto: “uma imagem vale mais que mil palavras”. A utilização da imagem para mostrar acontecimentos importantes como o relatado no texto é muito importante: permite a entre ajuda de meios técnicos, por vezes desconhecidos ou inalcançáveis; informa ensinando os outros a reagir; aproxima as pessoas tornando-as mais solidárias e humanas.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2011-hl-ii-1",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2011,
+  "section": "II",
+  "topicId": "portuguese-2-2",
+  "conceptId": "tvi-mostra-nos-espectaculo-degradante-prostituicao",
+  "questionRef": "2011 HL Section II Q1",
+  "questionText": "“A TVI mostra-nos o espectáculo degradante da prostituição moral e da indigência mental, feitas happenning para um milhão e meio de voyeurs.” Em cerca de 100 palavras, comente a frase transcrita, de acordo com o sentido do texto.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Programas de televisão como o que está comentado no último parágrafo do texto devem fazer-nos pensar em três perspectivas diferentes e complementares: os autores, produtores e divulgadores do programa; os concorrentes; o público que o visiona. São programas que nada informam, nada divulgam, nada ensinam; apenas mostram a intimidade acrítica, imoral, ignorante daqueles que no programa participam. Do lado do telespectador que vê, nada se aprende, apenas se perde tempo diante da pobreza de espírito alheia que, ignorante, não sabendo ocupar o tempo de ócio de forma digna, o faz daquela forma indigna. A televisão, que deveria ser meio de informação e divulgação cultural, arrecada para si as maiores culpas, porque é o motor daquela indignidade.",
+    "marks": null,
+    "contextNote": "For “(Comentário pessoal, correcto e fluente em cerca de 100 palavras.)”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "1. Clareza do discurso – o aluno compreendeu as questões e respondeu de forma clara - 30%",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "For “Na classificação da segunda e terceira partes, serão considerados os seguintes aspectos :”"
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "2. Coerência das respostas – o aluno fez citações apropriadas à estrutura do seu pensamento ; as ideias não são contraditórias e a composição mantém uma coesão interna - 30%",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "id": "r-4",
+    "kind": "criterion",
+    "verbatim": "3. Competência linguística – o aluno exprimiu correcta e livremente as suas ideias e opiniões - 30%",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "id": "r-5",
+    "kind": "criterion",
+    "verbatim": "4. Competência gramatical – correcção gramatical e ortográfica - 10%",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  ],
+  "notes": "The scheme prices this ask 30 marks; the paper prints it on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2011-hl-iii-1",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2011,
+  "section": "III",
+  "topicId": "portuguese-2-2",
+  "conceptId": "proposta-grandes-momentos-exigem-grandes-homens",
+  "questionRef": "2011 HL Section III Q1",
+  "questionText": "Proposta 1 “Grandes momentos exigem grandes homens.”",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A frase transcrita pode aplicar-se em pleno ao momento da salvação daqueles mineiros, assim como em outros muitos momentos da nossa história recente e remota. Todos os grandes momentos, aqueles momentos em que se registam acontecimentos que fazem mover o mundo; acontecimentos que marcam a marcha da história; acontecimentos que unificam todo um povo, são momentos que exigem a presença de seres humanos moralmente superiores; sem eles (individuais ou colectivos) muitos aspectos e perspectivas desses acontecimentos ficariam perdidos sem darem os resultados que os seus autores esperariam; não se lhes poderia chamar grande momento da história, porque não teriam ficado registados; não serviriam de exemplo aos vindouros. A história faz-se de grandes acontecimentos, mas qualquer que ele seja, tem sempre por trás um grande homem. Mesmo nas catástrofes naturais que ficaram registadas, sobressaem sempre grandes homens capazes de conduzir, organizar, dirigir os meios de salvação e apoio às vítimas. Assim a história guarda os registos de grandes momentos sempre associados a nomes de grandes e corajosas pessoas. Desde Aquiles e Ulisses, D. Afonso Henriques, D. Dinis, D. João II, Fernão de Magalhães ou Vasco da Gama, Marquês de Pombal no terramoto de 1755, ou ainda Churchil e Eisenhauer na condução dos destinos da Segunda Guerra Mundial, Aldring e Amstrong na Lua em 1969, ou os mineiros apanhados de surpresa naquela mina e que com coragem, organização e esperança tão bem souberam salvar-se. Ou pela coragem, ou pela inteligência, ou pela capacidade de decisão e orientação, ou pela sensibilidade no momento de maior tensão, a história exige do homem que seja grande, para que a própria história o torne depois maior.",
+    "marks": null,
+    "contextNote": "For “Proposta 1”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "1. Clareza do discurso – o aluno compreendeu as questões e respondeu de forma clara - 30%",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "For “Na classificação da segunda e terceira partes, serão considerados os seguintes aspectos :”"
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "2. Coerência das respostas – o aluno fez citações apropriadas à estrutura do seu pensamento ; as ideias não são contraditórias e a composição mantém uma coesão interna - 30%",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "id": "r-4",
+    "kind": "criterion",
+    "verbatim": "3. Competência linguística – o aluno exprimiu correcta e livremente as suas ideias e opiniões - 30%",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "id": "r-5",
+    "kind": "criterion",
+    "verbatim": "4. Competência gramatical – correcção gramatical e ortográfica - 10%",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  ],
+  "notes": "The scheme prices this ask 40 marks; the paper prints it on page 4 of the question booklet.",
+  "stem": "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)"
+ },
+ {
+  "id": "por-2011-hl-iii-2",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2011,
+  "section": "III",
+  "topicId": "portuguese-2-2",
+  "conceptId": "proposta-maior-parte-pessoas-tanto-mais",
+  "questionRef": "2011 HL Section III Q2",
+  "questionText": "Proposta 2 “A maior parte das pessoas é tanto mais feliz quanto decide sê-lo.” Abraham Lincoln (16º Presidente dos E.U.A.)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "1. Clareza do discurso – o aluno compreendeu as questões e respondeu de forma clara - 30%",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "For “Na classificação da segunda e terceira partes, serão considerados os seguintes aspectos :”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "2. Coerência das respostas – o aluno fez citações apropriadas à estrutura do seu pensamento ; as ideias não são contraditórias e a composição mantém uma coesão interna - 30%",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "3. Competência linguística – o aluno exprimiu correcta e livremente as suas ideias e opiniões - 30%",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "id": "r-4",
+    "kind": "criterion",
+    "verbatim": "4. Competência gramatical – correcção gramatical e ortográfica - 10%",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  ],
+  "notes": "The scheme prices this ask 40 marks; the paper prints it on page 4 of the question booklet.",
+  "stem": "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)"
+ },
+ {
   "id": "por-2012-hl-i-1-a",
   "subjectId": "portuguese",
   "level": "higher",

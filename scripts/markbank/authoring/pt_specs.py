@@ -27,7 +27,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
 sys.path.insert(0, HERE)
 
-from pt_lib import (S, J, B, T, T2, TG, AnyOf, CELL, PL, Sel, one, menu, alt, stepped, shown, rest,   # noqa: E402,F401
+from pt_lib import (S, J, B, T, T2, TG, AnyOf, CELL, PL, Sel, one, menu, alt, stepped, shown, rest, pct,   # noqa: E402,F401
                     pairs, scheme_doc, build_rows, SCHEMES)
 from eu_paper import EuPaper, read_lines                          # noqa: E402
 from eu_topics import (topic_for, concept_for, answer_language,    # noqa: E402
@@ -242,6 +242,17 @@ class SchemeSpan:
             # The bullet the shared cut leaves on: a minus sign (2018 Higher).
             parts.append(re.sub(r'^−\s+', '', S(n).text(doc)))
         return re.sub(r'\s+', ' ', ' '.join(parts)).strip()
+
+
+class Lines:
+    """Scheme lines a..b joined as printed, nothing cut: a criterion whose
+    percentage the SEC wrapped onto a line of its own ("- 30%", 2011), which
+    the bullet cut would strip."""
+    def __init__(self, a, b):
+        self.a, self.b = a, b
+
+    def text(self, doc):
+        return re.sub(r'\s+', ' ', ' '.join(doc['scheme'][n - 1] for n in range(self.a, self.b + 1))).strip()
 
 
 class PaperPontos:
@@ -1335,6 +1346,51 @@ READING[(2012, 'hl')] = [
       question=(PL(4, 'Proposta 1'), PL(4, '“Abrir um livro')), stem=_CHOICE_RESP, source=False),
     C('III2', [shown(SchemeSpan(63, 65), lead=S(62))], total=PaperPontos(4, '(40 pontos)'), whole=True,
       question=(PL(4, 'Proposta 2'), PL(4, 'Na sociedade actual')), stem=_CHOICE_RESP, source=False),
+]
+
+
+# 2010 and 2011 print four percentage criteria for Parts II and III under
+# "Observações" ("Na classificação da segunda e terceira partes, serão
+# considerados os seguintes aspectos :"): CARD-STANDARD 10b, marks per
+# criterion (30%/30%/30%/10% of 30 = 9/9/9/3; of 40 = 12/12/12/4), each the
+# printed line whole, the block's lead line on the first criterion; the
+# scheme's model shown before them, as printed, under its own heading (10a).
+def _criteria(lines, total, lead):
+    return [pct(Lines(*lines[0]), total, lead=lead)] + [pct(Lines(*l), total) for l in lines[1:]]
+
+
+_CRIT_2010 = ((114, 114), (115, 117), (118, 119), (120, 120))
+_CRIT_LEAD_2010 = J(S(112, after='Observações : '), S(113))
+READING[(2010, 'hl')] = [
+    C('II1', [shown(SchemeSpan(62, 75), lead=S(61))] + _criteria(_CRIT_2010, Pontos(60), _CRIT_LEAD_2010),
+      total=Pontos(60),
+      question=(PL(4, '“A democracia e a tecnologia'), PL(4, 'mundo à nossa volta'), PL(4, 'Em cerca de 100 palavras')),
+      stem=()),
+    C('III1', [shown(SchemeSpan(83, 97), lead=S(82))] + _criteria(_CRIT_2010, Pontos(80), _CRIT_LEAD_2010),
+      total=Pontos(80),
+      question=(PL(4, 'Proposta 1'), PL(4, '“O homem nasceu livre'), PL(4, '(Jean-Jacques')),
+      stem=_CHOICE_P4, source=False),
+    C('III2', [shown(SchemeSpan(99, 111), lead=S(98))] + _criteria(_CRIT_2010, Pontos(80), _CRIT_LEAD_2010),
+      total=Pontos(80),
+      question=(PL(4, 'Proposta 2'), PL(4, '“Nenhum homem'), PL(4, '(John Donne)')),
+      stem=_CHOICE_P4, source=False),
+]
+_CRIT_2011 = ((100, 101), (102, 104), (105, 106), (107, 107))
+READING[(2011, 'hl')] = [
+    C('II1', [shown(SchemeSpan(55, 64), lead=S(54))] + _criteria(_CRIT_2011, Pontos(53), S(99)),
+      total=Pontos(53),
+      question=(PL(4, '“A TVI mostra-nos'), PL(4, 'mental, feitas'), PL(4, 'Em cerca de 100 palavras')),
+      stem=()),
+    C('III1', [shown(SchemeSpan(68, 94), lead=S(67))] + _criteria(_CRIT_2011, Pontos(65), S(99)),
+      total=Pontos(65),
+      question=(PL(4, 'Proposta 1'), PL(4, '“Grandes momentos')),
+      stem=_CHOICE_P4, source=False),
+    # The scheme prints no model for Proposta 2 (it restates the quotation and
+    # goes to "Observações"): the criteria are its marking.
+    C('III2', _criteria(_CRIT_2011, Pontos(65), S(99)),
+      total=Pontos(65),
+      question=(PL(4, 'Proposta 2'), PL(4, '“A maior parte'), PL(4, 'Abraham Lincoln')),
+      stem=_CHOICE_P4, source=False),
 ]
 
 

@@ -1509,6 +1509,7 @@ const PORTUGUESE_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2014: { higher: 13, ordinary: 0 },
   2013: { higher: 13, ordinary: 0 },
   2012: { higher: 13, ordinary: 0 },
+  2011: { higher: 13, ordinary: 0 },
 };
 const PORTUGUESE_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
   2025: { higher: 40, ordinary: 40 },
