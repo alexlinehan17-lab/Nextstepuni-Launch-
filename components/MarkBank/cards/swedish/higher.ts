@@ -288,7 +288,7 @@ export const CARDS: SecCard[] = [
     questionText: "På vilket sätt har vår tids medvetenhet om homosexualitet påverkat mäns vänskapsförhållanden?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(stycke 7)Förr i tiden, innan medierna gjorde oss alla vana vid att uppfatta känsliga män som homosexuella, var det vanligt för män att uttrycka starka känslor till varandra. Dagens tro att alla män som uttrycker varma känslor eller öppnar sig leder till att män upplever sig ha mycket mer att förlora eftersom det nu ses som feminint att vara intim. Homosexualiteten blir för den moderne mannen den yttersta punkten på en ganska kort skala, en plats som han vill hålla sig på betryggande avstånd från.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "(stycke 7)Förr i tiden, innan medierna gjorde oss alla vana vid att uppfatta känsliga män som homosexuella, var det vanligt för män att uttrycka starka känslor till varandra. Dagens tro att alla män som uttrycker varma känslor eller öppnar sig leder till att män upplever sig ha mycket mer att förlora eftersom det nu ses som feminint att vara intim. Homosexualiteten blir för den moderne mannen den yttersta punkten på en ganska kort skala, en plats som han vill hålla sig på betryggande avstånd från.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme heads its answer “Möjliga svar:”: what it gives is an example, not a required list." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -312,7 +312,7 @@ export const CARDS: SecCard[] = [
     questionText: "Varför känner sig den moderna familjefadern ensam?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(stycke 10)Den moderne mannen har i och med sin familjebildning skapat sig ett eget lag. Därför söker han sig inte längre ut. De sammanhang där han tidigare automatiskt fick vänner är därför inte längre tillgängliga för honom. För frun är det naturligt att tala öppet och umgås med sina vänner. Mannen blir lämnad ensam. De starka vänskapsband som man kan ha haft tidigare i livet försvinner när förutsättningarna ändras. Kvinnor kan föra med sig en gammal vänskap även efter familjebildningen. Det gör sällan männen.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "(stycke 10)Den moderne mannen har i och med sin familjebildning skapat sig ett eget lag. Därför söker han sig inte längre ut. De sammanhang där han tidigare automatiskt fick vänner är därför inte längre tillgängliga för honom. För frun är det naturligt att tala öppet och umgås med sina vänner. Mannen blir lämnad ensam. De starka vänskapsband som man kan ha haft tidigare i livet försvinner när förutsättningarna ändras. Kvinnor kan föra med sig en gammal vänskap även efter familjebildningen. Det gör sällan männen.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme heads its answer “Möjliga svar:”: what it gives is an example, not a required list." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -515,7 +515,7 @@ export const CARDS: SecCard[] = [
     questionText: "Diskutera den koppling mellan ålder och prestationer som artikeln visar.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Den viktigaste kopplingen handlar om antalet övade timmar; börjar man för sent hinner man inte ikapp de som har börjat tidigt. Då missar man inträdesproven till de bästa skolorna och kan inte komma med i eliten. I vissa discipliner, som balett, krävs att man har övat in vissa tekniker medan skelettet fortfarande är formbart , helst före elva års ålder,", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Den viktigaste kopplingen handlar om antalet övade timmar; börjar man för sent hinner man inte ikapp de som har börjat tidigt. Då missar man inträdesproven till de bästa skolorna och kan inte komma med i eliten. I vissa discipliner, som balett, krävs att man har övat in vissa tekniker medan skelettet fortfarande är formbart , helst före elva års ålder,", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme heads its answer “Möjliga svar hämtade ur stycke 7, 14 och 15.:”: what it gives is an example, not a required list." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -539,7 +539,7 @@ export const CARDS: SecCard[] = [
     questionText: "”Föreställningen om att någon är begåvad blir också lätt till en självuppfyllande profetia” (stycke 8) Diskutera betydelsen av Anders Ericsson citat ovan.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Uppmuntran har en enorm positiv kraft. Den elev som får beröm och uppmuntran tror sig vara duktig och presterar bättre. I det motsatta fallet fungerar klander som en black om foten och begränsar förmågan. I begreppet en självuppfyllande profetia ligger ett ifrågasättande av insiktens relevans. Hur ofta slår profetior in? Vad man kan lära sig är att man med hjälp av uppmuntran och uppskattning kan få andra att prestera sitt yttersta.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Uppmuntran har en enorm positiv kraft. Den elev som får beröm och uppmuntran tror sig vara duktig och presterar bättre. I det motsatta fallet fungerar klander som en black om foten och begränsar förmågan. I begreppet en självuppfyllande profetia ligger ett ifrågasättande av insiktens relevans. Hur ofta slår profetior in? Vad man kan lära sig är att man med hjälp av uppmuntran och uppskattning kan få andra att prestera sitt yttersta.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme heads its answer “Möjliga svar:”: what it gives is an example, not a required list." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -563,7 +563,7 @@ export const CARDS: SecCard[] = [
     questionText: "”Kanske hittar vi i framtiden en kombination av gener som kan förklara den här typen av begåvningar, men eftersom forskarna har letat i över 50 år utan att ha hittat något, tyder det på att betydelsen av dessa gener kommer att vara ganska liten, säger Anders Ericsson.” (stycke 6) Håller du med Anders Ericsson i citatet ovan? Motivera ditt svar.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Argument för förekomsten och upptäckten av en sådan gen är den snabba utvecklingen på genetikens område. Hur denna kunskap skulle hjälpa oss är en annan fråga. Om vi inte kan modifiera vår arvsmassa kan vi inte tillägna oss egenskaper, läggning, talang och förmågor på annat sätt än med träning. Möjligen skulle man kunna i förväg bestämma vad människor bör ägna sig åt men valet, den fria viljan, skulle offras. Många upptäckter har varit lyckokast, när folk har tänkt i egna banor. Sådana upptäckter kanske skulle bli färre. Argument mot förekomsten av denna är de som anges i artikeln: den dokumenterade betydelsen av idog träning. Också sättet både kropp och hjärna har bevisats kunna kompensera för fysiska hinder talar för träningens överlägsna betydelse. Frågan är också hur man skulle utnyttja denna kunskap, om man nu skulle finna den felande genen. Det ligger en fara i att alltför mycket låta vår syn på människor baseras på våra gener.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Argument för förekomsten och upptäckten av en sådan gen är den snabba utvecklingen på genetikens område. Hur denna kunskap skulle hjälpa oss är en annan fråga. Om vi inte kan modifiera vår arvsmassa kan vi inte tillägna oss egenskaper, läggning, talang och förmågor på annat sätt än med träning. Möjligen skulle man kunna i förväg bestämma vad människor bör ägna sig åt men valet, den fria viljan, skulle offras. Många upptäckter har varit lyckokast, när folk har tänkt i egna banor. Sådana upptäckter kanske skulle bli färre. Argument mot förekomsten av denna är de som anges i artikeln: den dokumenterade betydelsen av idog träning. Också sättet både kropp och hjärna har bevisats kunna kompensera för fysiska hinder talar för träningens överlägsna betydelse. Frågan är också hur man skulle utnyttja denna kunskap, om man nu skulle finna den felande genen. Det ligger en fara i att alltför mycket låta vår syn på människor baseras på våra gener.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme heads its answer “Möjliga svar:”: what it gives is an example, not a required list." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1143,7 +1143,7 @@ export const CARDS: SecCard[] = [
     questionText: "Vilken förklaring till drömmens gåta förespråkar du? Argumentera tydligt för din ståndpunkt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "För ett godkänt svar måste arbiturenten belysa alla aspekter och förespråka en teori, eller en kombination av flera: budbärare från gudarna, meddelanden från vårt undermedvetna, hjärnans slumpmässiga sammankoppling av intryck under vaket tillstånd, Hot-teorin eller inlärnings- samt den terapeutiska funktionen. Arbiturenten måste visa med belägg i texten eller i sina egna erfarenheter varför han stöder just denna eller dessa teorier.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "För ett godkänt svar måste arbiturenten belysa alla aspekter och förespråka en teori, eller en kombination av flera: budbärare från gudarna, meddelanden från vårt undermedvetna, hjärnans slumpmässiga sammankoppling av intryck under vaket tillstånd, Hot-teorin eller inlärnings- samt den terapeutiska funktionen. Arbiturenten måste visa med belägg i texten eller i sina egna erfarenheter varför han stöder just denna eller dessa teorier.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme heads its answer “Möjliga svar, baserade på hela artikeln:”: what it gives is an example, not a required list." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2056,7 +2056,7 @@ export const CARDS: SecCard[] = [
     questionText: "Jämför barn och ungdomars situation tillbaka i tiden med idag utifrån artikeln.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Den tekniska utvecklingen har gått fort: idag har majoriteten av alla tvååringar varit på nätet och nästa alla elvaåringar har en smart-phone. För ca 15 år sedan var det extremt med mer än tre timmars internetanvändning per dag medan det idag är normalt. De som förr kände sig ensamma kan idag via internet komma i kontakt med många andra med samma problem. Många barns sovrum är idag fulla med datorer, mobiler och andra IT-produkter. Utan att lämna rummet har de nu kontakt med hela världen. Den tidigare skylten ”tillträde förbjudet” som kunde stå på barns dörrar finns i dag i deras datorer i form av hemliga inloggningar.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "Den tekniska utvecklingen har gått fort: idag har majoriteten av alla tvååringar varit på nätet och nästa alla elvaåringar har en smart-phone. För ca 15 år sedan var det extremt med mer än tre timmars internetanvändning per dag medan det idag är normalt. De som förr kände sig ensamma kan idag via internet komma i kontakt med många andra med samma problem. Många barns sovrum är idag fulla med datorer, mobiler och andra IT-produkter. Utan att lämna rummet har de nu kontakt med hela världen. Den tidigare skylten ”tillträde förbjudet” som kunde stå på barns dörrar finns i dag i deras datorer i form av hemliga inloggningar.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\" The scheme heads these points “Några exempel:”: they are examples, not a required list." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2549,7 +2549,7 @@ export const CARDS: SecCard[] = [
     questionText: "Nämn en problemställning med dagens internet utifrån artikeln, som du anser vara den allvarligaste och skriv vad du tycker.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Många är alltför okritiska till hur vi sprider spår på nätet och därmed hjälper till att göra \"big data\" ännu större och mäktigare. Kunskapen kan hamna i fel händer. Nätet gör det möjligt att dra till sig väldigt många människor på kort tid. Det ser ut som om det finns en stark rörelse, men i själva verket finns där varken ledare eller organisation. Därmed sker ingen verklig förändring. Algoritmer övervakar, manipulerar och styr oss. Plattformar som Facebook och Google bestämmer vilka vi lyssnar på. Vissa håll lyfts fram, andra inte. Artificiell intelligens skapar hela tiden en alltmer komplex dynamik. Politiker följer inte med i utvecklingen.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme prints: “Kandidaten nämner en av följande problemställningar och diskuterar den.” Any ONE of the problems it lists, discussed, is a full answer.", group: {"claimMax":1,"perOption":5,"options":["Många är alltför okritiska till hur vi sprider spår på nätet och därmed hjälper till att göra \"big data\" ännu större och mäktigare. Kunskapen kan hamna i fel händer.","Nätet gör det möjligt att dra till sig väldigt många människor på kort tid. Det ser ut som om det finns en stark rörelse, men i själva verket finns där varken ledare eller organisation. Därmed sker ingen verklig förändring.","Algoritmer övervakar, manipulerar och styr oss.","Plattformar som Facebook och Google bestämmer vilka vi lyssnar på. Vissa håll lyfts fram, andra inte.","Artificiell intelligens skapar hela tiden en alltmer komplex dynamik. Politiker följer inte med i utvecklingen."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3475,6 +3475,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3498,6 +3499,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3521,6 +3523,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3544,6 +3547,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2024 Higher Level examination paper — © State Examinations Commission.",
@@ -3567,6 +3571,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Swedish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Swedish 2024 Higher Level examination paper — © State Examinations Commission.",

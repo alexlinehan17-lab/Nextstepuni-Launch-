@@ -109,7 +109,7 @@
   },
   "bulgarian": {
     "cards": 219,
-    "contentHash": "e058c240061523e2",
+    "contentHash": "1e12301fc6408657",
     "coveragePct": 100.0,
     "covered": 219,
     "excluded": 0,
@@ -199,7 +199,7 @@
   },
   "croatian": {
     "cards": 151,
-    "contentHash": "b725a25cd0b53832",
+    "contentHash": "a0dbbd1590e86172",
     "coveragePct": 100.0,
     "covered": 167,
     "excluded": 0,
@@ -319,7 +319,7 @@
   },
   "estonian": {
     "cards": 172,
-    "contentHash": "2cc601c5acafa2ce",
+    "contentHash": "de774c62c374676a",
     "coveragePct": 100.0,
     "covered": 172,
     "excluded": 0,
@@ -334,7 +334,7 @@
   },
   "finnish": {
     "cards": 168,
-    "contentHash": "2e356ec3bbe79873",
+    "contentHash": "22b7db6dbbfe4f67",
     "coveragePct": 100.0,
     "covered": 168,
     "excluded": 0,
@@ -424,7 +424,7 @@
   },
   "hungarian": {
     "cards": 219,
-    "contentHash": "add3b4c611cdff21",
+    "contentHash": "1d21e0988af0604c",
     "coveragePct": 100.0,
     "covered": 219,
     "excluded": 0,
@@ -589,7 +589,7 @@
   },
   "modern-greek": {
     "cards": 142,
-    "contentHash": "7e6b8369ba9d2f7f",
+    "contentHash": "a1f71f9f99a5be9f",
     "coveragePct": 100.0,
     "covered": 142,
     "excluded": 0,
@@ -784,7 +784,7 @@
   },
   "swedish": {
     "cards": 191,
-    "contentHash": "8d5ab4e86e445001",
+    "contentHash": "d149d82da4867513",
     "coveragePct": 100.0,
     "covered": 191,
     "excluded": 0,
@@ -814,7 +814,7 @@
   },
   "ukrainian": {
     "cards": 26,
-    "contentHash": "b9fc5ff83f1e8d50",
+    "contentHash": "1a5c1e68447923bf",
     "coveragePct": 100.0,
     "covered": 26,
     "excluded": 0,

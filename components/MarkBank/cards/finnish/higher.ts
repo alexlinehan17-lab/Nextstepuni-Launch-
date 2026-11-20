@@ -1700,7 +1700,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kommentoi omasta näkökulmastasi tekstissä esitellyn neljän naisen hauskoja mutta samalla myös pelottavia kokemuksia ulkomailla asumisesta.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sanat (Kiukkonen ja suhiseva s)", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "sanat (Kiukkonen ja suhiseva s)", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" The scheme heads its answer “Esim. voi esitellä”: what it gives is an example, not a required list." },
     { id: "r-2", kind: "point", verbatim: "lauseet (Elliott ja kömpelöt/huvittavat ilmaisut)", marks: null },
     { id: "r-3", kind: "point", verbatim: "tilanteet (Sirén ja unohtunut sana puhelimessa)", marks: null },
     { id: "r-4", kind: "point", verbatim: "kielihistoria (Elliott ja kolmas sukupolvi, joka ei osaakaan suomea)", marks: null },
