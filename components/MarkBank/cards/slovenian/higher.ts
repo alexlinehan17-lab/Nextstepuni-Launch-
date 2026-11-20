@@ -1341,4 +1341,78 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\""
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovenian 2024 Higher Level — © State Examinations Commission.",
+    id: "slv-2024-hl-i-1-e", topicId: "slovenian-0-0", conceptId: "odtegnitveni-simptomi",
+    section: "I", questionRef: "2024 HL Section I Q1(e)",
+    questionText: "S svojimi besedami na podlagi prebranega besedila pojasnite naslednje pojme: “Odtegnitveni simptomi”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Simptomi, ki se pojavijo, ko oseba nenadoma preneha ali zmanjša uporabo snovi, ki povzroča odvisnost.", marks: 1, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovenian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovenian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovenian 2024 Higher Level — © State Examinations Commission.",
+    id: "slv-2024-hl-ii-1", topicId: "slovenian-1-0", conceptId: "podlagi-prebranega-besedila-komentirajte-naslednjo-misel",
+    section: "II", questionRef: "2024 HL Section II Q1",
+    questionText: "Na podlagi prebranega besedila komentirajte naslednjo misel (100 - 150 besed). “Po jutru se dan pozna.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Menim, da so jutranje aktivnosti in odločitve pomembne za celotno izkušnjo dneva. V tem kontekstu ima pitje kave zjutraj lahko pomembno vlogo. Za mnoge ljudi je skodelica kave zjutraj ritual, ki jih pripravi na začetek dneva. Kofein v kavi lahko pomaga prebuditi um in telo, izboljša koncentracijo ter pomaga pri premagovanju začetne utrujenosti. Zato lahko kava zjutraj vpliva na to, kako se počutimo in kako produktivni smo čez dan. Če začnemo dan z uživanjem kave, lahko to vpliva na naše razpoloženje, energijsko raven in celo na naš odnos do dela in drugih obveznosti. Tako kot dober začetek lahko določi ton za celoten dan, lahko tudi skodelica kave zjutraj vpliva na našo uspešnost in doživljanje dnevnih dogodkov.", marks: null, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\" The scheme heads its answer: “Na primer:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "2. DEL",
+          "title": "Reading text — answer in Slovenian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovenian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovenian 2024 Higher Level — © State Examinations Commission.",
+    id: "slv-2024-hl-iii-1", topicId: "slovenian-1-1", conceptId: "napi-ite-esej-minimalno-300-besed",
+    section: "III", questionRef: "2024 HL Section III Q1",
+    questionText: "Napišite esej (minimalno 300 besed). Izberite enega izmed danih naslovov. »Socializacija – pomemben del našega življenja ali ne?« Kakšne so po vašem mnenju prednosti oz. slabosti socializacije? Ali se vam zdi, da v današnjem času ljudje dovolj časa preživimo s prijatelji, družino …? Kako po vašem mnenju na posameznike vpliva druženje z ljudmi, ki so jim pri srcu?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\" The scheme reprints the part's head, the instruction and the two titles, and prints nothing under them: no answer, no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC558ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovenian 2024 Higher Level — © State Examinations Commission.",
+    id: "slv-2024-hl-iii-2", topicId: "slovenian-1-1", conceptId: "vsak-lovek-enkratna-stvaritev-bibi",
+    section: "III", questionRef: "2024 HL Section III Q2",
+    questionText: "Napišite esej (minimalno 300 besed). Izberite enega izmed danih naslovov. »Vsak človek je enkratna stvaritev.« (P. Bibič)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVENIAN. The paper prints the rule on page 2: \"Vsi odgovori morajo biti v slovenščini.\" The scheme reprints the part's head, the instruction and the two titles, and prints nothing under them: no answer, no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
 ];
