@@ -32,8 +32,10 @@ DIRECTIVE = re.compile(
     r'\b(?:choose|select|either|(?:one|any) of the following|any (?:one|two|three|four|five))\b', re.I)
 
 
-def paper_text(year: int, level: str) -> list[tuple[int, str]]:
-    doc = fitz.open(os.path.join(PAPERS, f'{year}-{SHORT[level]}-paper.pdf'))
+def paper_text(year: int, level: str, sitting: str = 'main') -> list[tuple[int, str]]:
+    # A deferred sitting's paper is linked beside June's as <year>-<lvl>-deferred-paper.pdf.
+    name = f"{year}-{SHORT[level]}{'-deferred' if sitting == 'deferred' else ''}-paper.pdf"
+    doc = fitz.open(os.path.join(PAPERS, name))
     pages = []
     for number, page in enumerate(doc, start=1):
         text = page.get_text(sort=True)
@@ -43,8 +45,8 @@ def paper_text(year: int, level: str) -> list[tuple[int, str]]:
     return pages
 
 
-def census(year: int, level: str) -> dict:
-    pages = paper_text(year, level)
+def census(year: int, level: str, sitting: str = 'main') -> dict:
+    pages = paper_text(year, level, sitting)
     text = '\n'.join(f'\n@@PAGE {number}\n{FURNITURE.sub(" ", body)}' for number, body in pages)
     head = r'(?m)^\s*Question\s+(\d{1,2})\b' if year >= 2023 else r'(?m)^\s*(\d{1,2})\.\s'
     heads = list(re.finditer(head, text))

@@ -1365,7 +1365,11 @@ const ART_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2011: { higher: 59, ordinary: 57 },
   2010: { higher: 58, ordinary: 57 },
 };
-const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED;
+/* The SEC's deferred sittings (art_cards.py DEFERRED_SITTINGS), all new cards (art-<year>-<lvl>-deferred-…), pinned
+ * per level beside the June additions and never folded into the frozen hashes. */
+const ART_DEFERRED_ADDED = { higher: 62, ordinary: 0 };
+const isArtDeferred = (id: string) => /^art-\d{4}-(?:hl|ol)-deferred-/.test(id);
+const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED || isArtDeferred(id);
 /* Spanish keeps its 347 2021-2025 IDs frozen (204 Higher + 143 Ordinary, the
  * identity hashes above). The languages lane (2026-11-05) cards every further
  * sitting on top, one sitting per commit, pinned here per year and level and
@@ -1523,7 +1527,7 @@ const isItalianAdded = (id: string) => /^it-(?:201\d|2020|2026)-/.test(id)
  * beside the frozen set (dcgAdditions below). */
 const isDcgAdded = (id: string) => /^dcg-201[0-8]-/.test(id) || /^dcg-\d{4}-(?:hl|ol)-deferred-/.test(id);
 const artAdded = (level: 'higher' | 'ordinary') => Object.values(ART_ADDED)
-  .reduce((sum, counts) => sum + counts[level], 0);
+  .reduce((sum, counts) => sum + counts[level], ART_DEFERRED_ADDED[level]);
 
 /* Additive, alias-aware decks: the frozen set is pinned with main's own count and
  * hash, and reviewed additions are pinned separately, so a deliberate change to
@@ -3053,8 +3057,11 @@ describe('Mark Bank card preservation', () => {
   it('adds each further Art year on top of the frozen 2021–2025 identity', () => {
     // No added id was ever aliased or frozen; each is a new card for a printed task.
     const cards = [...ART_HIGHER, ...ART_ORDINARY];
+    expect([cards.filter(card => isArtDeferred(card.id) && card.level === 'higher').length,
+      cards.filter(card => isArtDeferred(card.id) && card.level === 'ordinary').length])
+      .toEqual([ART_DEFERRED_ADDED.higher, ART_DEFERRED_ADDED.ordinary]);
     for (const [year, counts] of Object.entries(ART_ADDED)) {
-      const added = cards.filter(card => card.year === Number(year));
+      const added = cards.filter(card => card.year === Number(year) && !isArtDeferred(card.id));
       expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
       expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
       expect(added.every(card => card.id.startsWith(`art-${year}-`))).toBe(true);

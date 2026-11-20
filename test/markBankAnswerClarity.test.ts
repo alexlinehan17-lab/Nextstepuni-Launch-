@@ -420,7 +420,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     const cards = [...ART_HIGHER, ...ART_ORDINARY].filter((card): card is SecRubricCard & { rubric: ArtRubric } => card.rubric.system === 'art');
     const criteria = cards.flatMap(card => card.rubric.criteria.map(criterion => ({ card, criterion })));
     const legacy = criteria.filter(({ criterion }) => criterion.rowMarks?.length);
-    expect(legacy).toHaveLength(2574);
+    // June's 2,574 and the carded deferred sittings' (2022 Higher: 118), each cut from its own printed table.
+    const isDeferred = (id: string) => /^art-\d{4}-(?:hl|ol)-deferred-/.test(id);
+    expect([legacy.filter(({ card }) => !isDeferred(card.id)).length, legacy.filter(({ card }) => isDeferred(card.id)).length])
+      .toEqual([2574, 118]);
     // 2023+ descriptor criteria keep their bands; only a printed table becomes rows.
     for (const { card, criterion } of criteria.filter(({ criterion }) => !criterion.rowMarks?.length)) {
       expect(criterion.allocation, card.id).toBeUndefined();
@@ -430,19 +433,22 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     let rows = 0;
     let cut = 0;
     const kept: string[] = [];
+    // The carded deferred sittings' rows, counted apart from June's.
+    const deferred = { rows: 0, cut: 0, kept: [] as string[] };
     for (const { card, criterion } of legacy) {
       const allocation = criterion.allocation!;
       const where = `${card.id}/${criterion.id}`;
       // The rows are the printed rows at the printed marks, and add up to the component.
       expect(allocation.rows.map(row => row.marks), where).toEqual(criterion.rowMarks);
       expect(allocation.rows.reduce((sum, row) => sum + row.marks, 0), where).toBe(criterion.maxMarks);
+      const tally = isDeferred(card.id) ? deferred : null;
       allocation.rows.forEach((row, index) => {
-        rows += 1;
+        if (tally) tally.rows += 1; else rows += 1;
         const note = criterion.rowNotes?.[index] ?? '';
         const corpus = normalise(`${criterion.guidance[index]} ${note}`);
         expect(normalise(row.text), `${where}/${row.id}: row text`).toBe(normalise(criterion.guidance[index]));
         if (row.parts) {
-          cut += 1;
+          if (tally) tally.cut += 1; else cut += 1;
           expect(row.parts.length, `${where}/${row.id}: a split has at least two parts`).toBeGreaterThan(1);
           expect(row.parts.reduce((sum, part) => sum + part.marks, 0), `${where}/${row.id}: parts add up`).toBe(row.marks);
           for (const part of row.parts) {
@@ -450,13 +456,15 @@ describe('answer clarity: priced answers are rows, not prose', () => {
             expect(corpus.includes(normalise(part.text)), `${where}/${row.id}/${part.id}: "${part.text}" is not lifted`).toBe(true);
           }
         } else if (row.note) {
-          kept.push(`${where}/${row.id}`);
+          (tally ? tally.kept : kept).push(`${where}/${row.id}`);
         }
         // A note is the cell's own words, one rule per sentence.
         for (const piece of row.note?.split('. ') ?? []) expect(corpus.includes(normalise(piece)), `${where}/${row.id}: note "${piece}" is not lifted`).toBe(true);
       });
     }
     expect([rows, cut]).toEqual([2616, 414]);
+    // 2022 Higher: 152 printed rows, 3 cut at the prices the cell prints, no note left under a whole row.
+    expect([deferred.rows, deferred.cut, deferred.kept.sort()]).toEqual([152, 3, []]);
     // Notes cells the parser leaves as a note under a whole row: a rule on the
     // row ("Max 3 for partially correct name"), a cap ("3 points for 30 marks
     // and 2 detailed points for 26 marks maximum"), a count without a noun

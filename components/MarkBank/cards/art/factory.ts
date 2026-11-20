@@ -45,6 +45,8 @@ interface AuthoredCriterion {
 
 interface AuthoredArtCard {
   id: string;
+  /** The SEC's deferred sitting (art_cards.py DEFERRED_SITTINGS): its own paper, scheme and descriptors. */
+  sitting?: 'deferred';
   year: number;
   level: ArtLevel;
   section: 'A' | 'B' | 'C' | '1' | '2' | '3';
@@ -86,7 +88,8 @@ const AUDITED_YEARS = new Set<number>(authored.auditedYears);
 /** The printed descriptors a 2023+ card shows; legacy cards have none. */
 const printedFor = (card: AuthoredArtCard): PrintedScheme | undefined => {
   if (card.assessment === 'legacy-components') return undefined;
-  const printed = AUDITED_YEARS.has(card.year) ? PRINTED[`${card.year}-${card.level}`] : undefined;
+  const printed = AUDITED_YEARS.has(card.year)
+    ? PRINTED[`${card.year}-${card.level}${card.sitting === 'deferred' ? '-deferred' : ''}`] : undefined;
   if (!printed) throw new Error(`${card.id}: no printed descriptors lifted for ${card.year} ${card.level}`);
   return printed;
 };
@@ -184,7 +187,8 @@ const schemeCitation = (card: AuthoredArtCard) => {
     : contiguous(card.schemePage)
       ? `pp.${card.schemePage[0]}–${card.schemePage.at(-1)}`
       : `pp.${card.schemePage.join(', ')}`;
-  return `SEC Art ${card.level === 'higher' ? 'Higher' : 'Ordinary'} Level marking scheme ${card.year}, ${pages} — © State Examinations Commission.`;
+  const sitting = card.sitting === 'deferred' ? ', deferred examination' : '';
+  return `SEC Art ${card.level === 'higher' ? 'Higher' : 'Ordinary'} Level marking scheme ${card.year}${sitting}, ${pages} — © State Examinations Commission.`;
 };
 
 const makeCard = (card: AuthoredArtCard): SecRubricCard => ({

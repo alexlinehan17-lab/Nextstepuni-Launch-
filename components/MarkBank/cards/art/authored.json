@@ -1,7 +1,7 @@
 {
   "subjectId": "art",
   "corpus": "All separately marked written-examination tasks, 2010–2026; a printed choice is one card",
-  "cardCount": 1756,
+  "cardCount": 1818,
   "auditedYears": [
     2010,
     2011,
@@ -123225,6 +123225,4686 @@
         "Include discussion of context, innovation and invention, art elements and design principles, media and areas of practice."
       ],
       "assessment": "current-long-descriptors"
+    },
+    {
+      "id": "art-2022-hl-deferred-q1-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "1",
+      "questionRef": "2022 HL Q1 · task 1 — Deferred sitting",
+      "questionText": "Ireland’s Stone Age monuments demonstrate the skills and knowledge of the people who built them.\nDiscuss this statement with reference to the monument, illustrated on the accompanying sheet. Name the monument and refer in your answer to form, function, construction techniques and decoration.",
+      "paperPage": 2,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 30,
+      "schemePage": 3,
+      "topicId": "art-5-0",
+      "conceptId": "art-2022-q1-hl-task1-deferred",
+      "taskRequirements": [
+        "Ireland’s Stone Age monuments demonstrate the skills and knowledge of the people who built them.",
+        "Discuss this statement with reference to the monument, illustrated on the accompanying sheet. Name the monument and refer in your answer to form, function, construction techniques and decoration."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "1. Discussion of statement",
+            "2. Name of illustrated monument."
+          ],
+          "rowMarks": [
+            5,
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of illustration with reference to form and function."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of illustration with reference to construction techniques and decoration."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q1",
+        "title": "Official illustrations for Question 1",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q1-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "1",
+      "questionRef": "2022 HL Q1 · task 2 — Deferred sitting",
+      "questionText": "Name, briefly describe and discuss one other type of Stone Age monument.\nIllustrate your answer.",
+      "paperPage": 2,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 20,
+      "schemePage": 3,
+      "topicId": "art-5-0",
+      "conceptId": "art-2022-q1-hl-task2-deferred",
+      "taskRequirements": [
+        "Name, briefly describe and discuss one other type of Stone Age monument.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. Name one other type of Stone Age monument.",
+            "2. Brief description and discussion of one other type of Stone Age monument."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ]
+        },
+        {
+          "id": "e",
+          "label": "Part E",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            5
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q1",
+        "title": "Official illustrations for Question 1",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Ireland’s Stone Age monuments demonstrate the skills and knowledge of the people who built them.\nDiscuss this statement with reference to the monument, illustrated on the accompanying sheet. Name the monument and refer in your answer to form, function, construction techniques and decoration.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q2-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "1",
+      "questionRef": "2022 HL Q2 · task 1 — Deferred sitting",
+      "questionText": "Art in Ireland developed during the Iron Age under the influence of the Celts and their new design style.\nDiscuss this statement with reference to one named metal artefact from this period in Ireland. Refer in your answer to form, function, decoration and production techniques.",
+      "paperPage": 2,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 3,
+      "topicId": "art-5-0",
+      "conceptId": "art-2022-q2-hl-task1-deferred",
+      "taskRequirements": [
+        "Art in Ireland developed during the Iron Age under the influence of the Celts and their new design style.",
+        "Discuss this statement with reference to one named metal artefact from this period in Ireland. Refer in your answer to form, function, decoration and production techniques."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "1. Discussion of statement.",
+            "2. Name one metal artefact from the Iron Age."
+          ],
+          "rowMarks": [
+            5,
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Refer in answer to form, function, decoration and production techniques."
+          ],
+          "rowMarks": [
+            15
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q2-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "1",
+      "questionRef": "2022 HL Q2 · task 2 — Deferred sitting",
+      "questionText": "Briefly describe and discuss one other named Irish metal artefact from this period.\nIllustrate your answer.",
+      "paperPage": 2,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 3,
+      "topicId": "art-5-0",
+      "conceptId": "art-2022-q2-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly describe and discuss one other named Irish metal artefact from this period.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. One other named Irish metal artefact from the same period.",
+            "2. Brief description and discussion of named Irish metal artefact from the same period."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "stem": "Art in Ireland developed during the Iron Age under the influence of the Celts and their new design style.\nDiscuss this statement with reference to one named metal artefact from this period in Ireland. Refer in your answer to form, function, decoration and production techniques.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q3-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "1",
+      "questionRef": "2022 HL Q3 · task 1 — Deferred sitting",
+      "questionText": "Stone crosses developed significantly in Ireland from the early carved pillars to the more elaborate structures of the high crosses.\nDiscuss this statement with reference to the Reask Pillar and Muiredach’s Cross illustrated on the accompanying sheet. Describe and discuss the form, decoration and construction techniques of both examples.",
+      "paperPage": 2,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 35,
+      "schemePage": 4,
+      "topicId": "art-5-1",
+      "conceptId": "art-2022-q3-hl-task1-deferred",
+      "taskRequirements": [
+        "Stone crosses developed significantly in Ireland from the early carved pillars to the more elaborate structures of the high crosses.",
+        "Discuss this statement with reference to the Reask Pillar and Muiredach’s Cross illustrated on the accompanying sheet. Describe and discuss the form, decoration and construction techniques of both examples."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Discussion of statement."
+          ],
+          "rowMarks": [
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Description and discussion of illustration one with reference to form, decoration and construction techniques."
+          ],
+          "rowMarks": [
+            15
+          ]
+        },
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Description and discussion of illustration two with reference to form, decoration and construction techniques."
+          ],
+          "rowMarks": [
+            15
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q3",
+        "title": "Official illustrations for Question 3",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q3-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "1",
+      "questionRef": "2022 HL Q3 · task 2 — Deferred sitting",
+      "questionText": "Briefly describe and discuss the functions of high crosses in Ireland.\nIllustrate your answer.",
+      "paperPage": 2,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 15,
+      "schemePage": 4,
+      "topicId": "art-5-1",
+      "conceptId": "art-2022-q3-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly describe and discuss the functions of high crosses in Ireland.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Brief description and discussion of the functions of high crosses in Ireland."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "e",
+          "label": "Part E",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            5
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q3",
+        "title": "Official illustrations for Question 3",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Stone crosses developed significantly in Ireland from the early carved pillars to the more elaborate structures of the high crosses.\nDiscuss this statement with reference to the Reask Pillar and Muiredach’s Cross illustrated on the accompanying sheet. Describe and discuss the form, decoration and construction techniques of both examples.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q4-task1-parliament-house",
+      "year": 2022,
+      "level": "higher",
+      "section": "1",
+      "questionRef": "2022 HL Q4 · task 1 — Deferred sitting",
+      "questionText": "Choose one of the following buildings:\n• Parliament House, Dublin\n• Russborough House, Co. Wicklow\n• The Four Courts, Dublin.\nName the architect(s) of the building you have selected. Describe and discuss the architectural features, both structural and decorative, of your chosen building.",
+      "paperPage": 2,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 4,
+      "topicId": "art-5-3",
+      "conceptId": "art-2022-q4-hl-task1-parliament-house-deferred",
+      "taskRequirements": [
+        "Choose one of the following buildings:",
+        "Name the architect(s) of the building you have selected. Describe and discuss the architectural features, both structural and decorative, of your chosen building."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Name of the architect/s of chosen building."
+          ],
+          "rowMarks": [
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [
+            "Description and discussion of chosen building with reference to the architectural features, both structural and decorative."
+          ],
+          "rowMarks": [
+            20
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q4-task2-parliament-house",
+      "year": 2022,
+      "level": "higher",
+      "section": "1",
+      "questionRef": "2022 HL Q4 · task 2 — Deferred sitting",
+      "questionText": "Briefly describe and discuss one other named building by the same architect.\nIllustrate your answer.",
+      "paperPage": 2,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 4,
+      "topicId": "art-5-3",
+      "conceptId": "art-2022-q4-hl-task2-parliament-house-deferred",
+      "taskRequirements": [
+        "Briefly describe and discuss one other named building by the same architect.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. One other named building by the same architect.",
+            "2. Brief description and discussion of other named building by the same architect."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "stem": "Choose one of the following buildings:\n• Parliament House, Dublin\n• Russborough House, Co. Wicklow\n• The Four Courts, Dublin.\nName the architect(s) of the building you have selected. Describe and discuss the architectural features, both structural and decorative, of your chosen building.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q5-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "1",
+      "questionRef": "2022 HL Q5 · task 1 — Deferred sitting",
+      "questionText": "The interplay of light and landscape in the West of Ireland inspired the work of Paul Henry (1876-1958).\nDiscuss this statement with reference to one named painting by Paul Henry. Refer in your answer to subject matter, composition, techniques and colour.",
+      "paperPage": 3,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 5,
+      "topicId": "art-5-4",
+      "conceptId": "art-2022-q5-hl-task1-deferred",
+      "taskRequirements": [
+        "The interplay of light and landscape in the West of Ireland inspired the work of Paul Henry (1876-1958).",
+        "Discuss this statement with reference to one named painting by Paul Henry. Refer in your answer to subject matter, composition, techniques and colour."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "1. Discussion of statement.",
+            "2. One named painting by Paul Henry."
+          ],
+          "rowMarks": [
+            5,
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Discussion of named painting with reference to subject matter, composition, techniques and colour."
+          ],
+          "rowMarks": [
+            15
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q5-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "1",
+      "questionRef": "2022 HL Q5 · task 2 — Deferred sitting",
+      "questionText": "Briefly describe and discuss one other named work by Paul Henry.\nIllustrate your answer.",
+      "paperPage": 3,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 5,
+      "topicId": "art-5-4",
+      "conceptId": "art-2022-q5-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly describe and discuss one other named work by Paul Henry.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. One other named work by Paul Henry.",
+            "2. Brief description and discussion of other named work by Paul Henry."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "stem": "The interplay of light and landscape in the West of Ireland inspired the work of Paul Henry (1876-1958).\nDiscuss this statement with reference to one named painting by Paul Henry. Refer in your answer to subject matter, composition, techniques and colour.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q6-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "1",
+      "questionRef": "2022 HL Q6 · task 1 — Deferred sitting",
+      "questionText": "Describe and discuss ‘The Children of Lir’ by Oisín Kelly (1915-1981) illustrated on the accompanying sheet.\nRefer in your answer to subject matter, form/composition, theme, techniques and treatment of the figures.",
+      "paperPage": 3,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 30,
+      "schemePage": 5,
+      "topicId": "art-5-5",
+      "conceptId": "art-2022-q6-hl-task1-deferred",
+      "taskRequirements": [
+        "Describe and discuss ‘The Children of Lir’ by Oisín Kelly (1915-1981) illustrated on the accompanying sheet.",
+        "Refer in your answer to subject matter, form/composition, theme, techniques and treatment of the figures."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Description and discussion of the illustration with reference to subject matter, form/composition."
+          ],
+          "rowMarks": [
+            15
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Description and discussion of the illustration with reference to theme, techniques and treatment of the human figure."
+          ],
+          "rowMarks": [
+            15
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q6",
+        "title": "Official illustrations for Question 6",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q6-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "1",
+      "questionRef": "2022 HL Q6 · task 2 — Deferred sitting",
+      "questionText": "Briefly describe and discuss one other named example of Irish public sculpture.\nIllustrate your answer.",
+      "paperPage": 3,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 20,
+      "schemePage": 5,
+      "topicId": "art-5-5",
+      "conceptId": "art-2022-q6-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly describe and discuss one other named example of Irish public sculpture.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. One other named example of Irish public sculpture.",
+            "2. Brief description and discussion of other named example"
+          ],
+          "rowMarks": [
+            5,
+            10
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            5
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q6",
+        "title": "Official illustrations for Question 6",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Describe and discuss ‘The Children of Lir’ by Oisín Kelly (1915-1981) illustrated on the accompanying sheet.\nRefer in your answer to subject matter, form/composition, theme, techniques and treatment of the figures.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q7-walter-osborne",
+      "year": 2022,
+      "level": "higher",
+      "section": "1",
+      "questionRef": "2022 HL Q7 — Deferred sitting",
+      "questionText": "Choose one of the following:\n• Walter Osborne (1859-1903)\n• Jack B. Yeats (1871-1957)\n• Mary Swanzy (1882-1978)\n• Seán Keating (1889-1977)\n• Louis le Brocquy (1916-2012)\n• Robert Ballagh (b.1943)\n• Kathy Prendergast (b.1958).\nDescribe and discuss the work of your chosen artist, making detailed reference to two named works by that artist. Refer to subject matter, style, media/materials, techniques and influences in your answer.\nIllustrate your answer.",
+      "paperPage": 3,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 50,
+      "schemePage": 6,
+      "topicId": "art-5-4",
+      "conceptId": "art-2022-q7-hl-response-walter-osborne-deferred",
+      "taskRequirements": [
+        "Choose one of the following:",
+        "Describe and discuss the work of your chosen artist, making detailed reference to two named works by that artist. Refer to subject matter, style, media/materials, techniques and influences in your answer.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Description and discussion of the work of your chosen artist."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. Named work one by chosen artist.",
+            "2. Description and discussion of named work with reference to subject matter, style, media/materials, techniques and influences."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ]
+        },
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. Named work two by chosen artist.",
+            "2. Description and discussion of named work with reference to subject matter, style, media/materials, techniques and influences."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q8-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q8 · task 1 — Deferred sitting",
+      "questionText": "Stained glass is arguably one of the most important aspects of a Gothic church or cathedral.\nDiscuss this statement with reference to one named example of stained glass from a Gothic church or cathedral you have studied. Refer in your answer to subject matter, colour, function and production techniques.",
+      "paperPage": 4,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 30,
+      "schemePage": 7,
+      "topicId": "art-4-0",
+      "conceptId": "art-2022-q8-hl-task1-deferred",
+      "taskRequirements": [
+        "Stained glass is arguably one of the most important aspects of a Gothic church or cathedral.",
+        "Discuss this statement with reference to one named example of stained glass from a Gothic church or cathedral you have studied. Refer in your answer to subject matter, colour, function and production techniques."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "1. Discussion of statement.",
+            "2. One named example of Gothic stained glass."
+          ],
+          "rowMarks": [
+            5,
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Description and discussion of stained glass with reference to subject matter and colour."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Description and discussion of stained glass with reference to function and production techniques."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q8-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q8 · task 2 — Deferred sitting",
+      "questionText": "Briefly describe and discuss the main architectural features of Gothic architecture.\nIllustrate your answer.",
+      "paperPage": 4,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 20,
+      "schemePage": 7,
+      "topicId": "art-4-0",
+      "conceptId": "art-2022-q8-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly describe and discuss the main architectural features of Gothic architecture.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Brief description and discussion of the main features of Gothic architecture."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "e",
+          "label": "Part E",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "stem": "Stained glass is arguably one of the most important aspects of a Gothic church or cathedral.\nDiscuss this statement with reference to one named example of stained glass from a Gothic church or cathedral you have studied. Refer in your answer to subject matter, colour, function and production techniques.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q9-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q9 · task 1 — Deferred sitting",
+      "questionText": "Donatello (1386-1466) created dramatic sculptures which were technically innovative and highly skilled.\nDiscuss this statement referring in your answer to one named work by Donatello. Refer in your answer to subject matter, composition/form, techniques and the treatment of the human figure.",
+      "paperPage": 4,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 7,
+      "topicId": "art-4-1",
+      "conceptId": "art-2022-q9-hl-task1-deferred",
+      "taskRequirements": [
+        "Donatello (1386-1466) created dramatic sculptures which were technically innovative and highly skilled.",
+        "Discuss this statement referring in your answer to one named work by Donatello. Refer in your answer to subject matter, composition/form, techniques and the treatment of the human figure."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "One named work by Donatello."
+          ],
+          "rowMarks": [
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of statement with reference to chosen work with reference to subject matter and composition/form."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of statement with reference to chosen work with reference to techniques and treatment of the human figure."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q9-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q9 · task 2 — Deferred sitting",
+      "questionText": "Briefly describe and discuss one other named work by Donatello.\nIllustrate your answer.",
+      "paperPage": 4,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 7,
+      "topicId": "art-4-1",
+      "conceptId": "art-2022-q9-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly describe and discuss one other named work by Donatello.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. One other named work by Donatello.",
+            "2. Brief description and discussion of other named work."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ]
+        },
+        {
+          "id": "e",
+          "label": "Part E",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "stem": "Donatello (1386-1466) created dramatic sculptures which were technically innovative and highly skilled.\nDiscuss this statement referring in your answer to one named work by Donatello. Refer in your answer to subject matter, composition/form, techniques and the treatment of the human figure.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q10-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q10 · task 1 — Deferred sitting",
+      "questionText": "The portraits by Leonardo da Vinci (1452-1519) demonstrate his acute observational powers and fascination with the human form.\nDiscuss this statement with reference to the ‘Lady with an Ermine’, illustrated on the accompanying sheet. In your answer refer to subject matter, composition, techniques and treatment of the human figure.",
+      "paperPage": 4,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 30,
+      "schemePage": 8,
+      "topicId": "art-4-1",
+      "conceptId": "art-2022-q10-hl-task1-deferred",
+      "taskRequirements": [
+        "The portraits by Leonardo da Vinci (1452-1519) demonstrate his acute observational powers and fascination with the human form.",
+        "Discuss this statement with reference to the ‘Lady with an Ermine’, illustrated on the accompanying sheet. In your answer refer to subject matter, composition, techniques and treatment of the human figure."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of statement."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of the ‘Lady with an Ermine’ with reference to subject matter and composition."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of the ‘Lady with an Ermine’ with reference to colour, techniques and treatment of the human figure."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q10",
+        "title": "Official illustrations for Question 10",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q10-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q10 · task 2 — Deferred sitting",
+      "questionText": "Briefly describe and discuss one other named portrait by Leonardo da Vinci.\nIllustrate your answer.",
+      "paperPage": 4,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 20,
+      "schemePage": 8,
+      "topicId": "art-4-1",
+      "conceptId": "art-2022-q10-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly describe and discuss one other named portrait by Leonardo da Vinci.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. One other named portrait by Leonardo da Vinci.",
+            "2. Brief description and discussion of one other named portrait."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ],
+          "rowNotes": [
+            ".",
+            "."
+          ]
+        },
+        {
+          "id": "e",
+          "label": "Part E",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            5
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q10",
+        "title": "Official illustrations for Question 10",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "The portraits by Leonardo da Vinci (1452-1519) demonstrate his acute observational powers and fascination with the human form.\nDiscuss this statement with reference to the ‘Lady with an Ermine’, illustrated on the accompanying sheet. In your answer refer to subject matter, composition, techniques and treatment of the human figure.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q11-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q11 · task 1 — Deferred sitting",
+      "questionText": "Rembrandt van Rijn (1606-1669) is considered a master of light and shadow.\nDiscuss this statement with reference to the ‘Night Watch’, illustrated on the accompanying sheet. Refer in your answer to subject matter, composition, techniques and treatment of the human figure.",
+      "paperPage": 4,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 30,
+      "schemePage": 8,
+      "topicId": "art-4-2",
+      "conceptId": "art-2022-q11-hl-task1-deferred",
+      "taskRequirements": [
+        "Rembrandt van Rijn (1606-1669) is considered a master of light and shadow.",
+        "Discuss this statement with reference to the ‘Night Watch’, illustrated on the accompanying sheet. Refer in your answer to subject matter, composition, techniques and treatment of the human figure."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of statement."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of the ‘Night Watch’ with reference to subject matter and composition."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of the ‘Night Watch’ with reference to techniques and treatment of the human figure."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q11",
+        "title": "Official illustrations for Question 11",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q11-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q11 · task 2 — Deferred sitting",
+      "questionText": "Briefly describe and discuss one other named work by Rembrandt van Rijn.\nIllustrate your answer.",
+      "paperPage": 4,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 20,
+      "schemePage": 8,
+      "topicId": "art-4-2",
+      "conceptId": "art-2022-q11-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly describe and discuss one other named work by Rembrandt van Rijn.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. One other named work by Rembrandt van Rijn.",
+            "2. Brief description and discussion of other named work."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ]
+        },
+        {
+          "id": "e",
+          "label": "Part E",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            5
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q11",
+        "title": "Official illustrations for Question 11",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Rembrandt van Rijn (1606-1669) is considered a master of light and shadow.\nDiscuss this statement with reference to the ‘Night Watch’, illustrated on the accompanying sheet. Refer in your answer to subject matter, composition, techniques and treatment of the human figure.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q12-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q12 · task 1 — Deferred sitting",
+      "questionText": "Claude Monet (1840-1926) was a key figure in the Impressionist movement that transformed painting in the 19th century.\nDiscuss this statement with reference to ‘Regatta at Argenteuil’, illustrated on the accompanying sheet. Refer in your answer to subject matter, composition, colour and techniques.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 30,
+      "schemePage": 9,
+      "topicId": "art-4-3",
+      "conceptId": "art-2022-q12-hl-task1-deferred",
+      "taskRequirements": [
+        "Claude Monet (1840-1926) was a key figure in the Impressionist movement that transformed painting in the 19th century.",
+        "Discuss this statement with reference to ‘Regatta at Argenteuil’, illustrated on the accompanying sheet. Refer in your answer to subject matter, composition, colour and techniques."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of statement."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of ‘Regatta at Argenteuil’ with reference to subject matter and composition."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of ‘Regatta at Argenteuil’ with reference to colour and techniques."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q12",
+        "title": "Official illustrations for Question 12",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q12-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q12 · task 2 — Deferred sitting",
+      "questionText": "Briefly describe and discuss one other named painting by Claude Monet.\nIllustrate your answer.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 20,
+      "schemePage": 9,
+      "topicId": "art-4-3",
+      "conceptId": "art-2022-q12-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly describe and discuss one other named painting by Claude Monet.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. One other named work by Claude Monet.",
+            "2. Brief description and discussion of one other named work by Claude Monet."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ]
+        },
+        {
+          "id": "e",
+          "label": "Part E",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            5
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q12",
+        "title": "Official illustrations for Question 12",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Claude Monet (1840-1926) was a key figure in the Impressionist movement that transformed painting in the 19th century.\nDiscuss this statement with reference to ‘Regatta at Argenteuil’, illustrated on the accompanying sheet. Refer in your answer to subject matter, composition, colour and techniques.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q13-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q13 · task 1 — Deferred sitting",
+      "questionText": "Paul Cézanne (1839-1906) pioneered a new way of depicting pictorial space and form.\nDiscuss this statement with reference to one named work by Paul Cézanne. Refer in your answer to subject matter, composition, colour and techniques.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 9,
+      "topicId": "art-4-3",
+      "conceptId": "art-2022-q13-hl-task1-deferred",
+      "taskRequirements": [
+        "Paul Cézanne (1839-1906) pioneered a new way of depicting pictorial space and form.",
+        "Discuss this statement with reference to one named work by Paul Cézanne. Refer in your answer to subject matter, composition, colour and techniques."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "One named work by Paul Cezanne."
+          ],
+          "rowMarks": [
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of statement of named work with reference to subject matter and composition."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of statement of named work with reference to colour and techniques."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q13-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q13 · task 2 — Deferred sitting",
+      "questionText": "Briefly describe and discuss one other named painting by Paul Cézanne.\nIllustrate your answer.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 9,
+      "topicId": "art-4-3",
+      "conceptId": "art-2022-q13-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly describe and discuss one other named painting by Paul Cézanne.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. One other named painting by Paul Cézanne.",
+            "2. Brief description and discussion of other named painting."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ]
+        },
+        {
+          "id": "e",
+          "label": "Part E",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "stem": "Paul Cézanne (1839-1906) pioneered a new way of depicting pictorial space and form.\nDiscuss this statement with reference to one named work by Paul Cézanne. Refer in your answer to subject matter, composition, colour and techniques.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-a-giotto-di-bondone",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(a) · Giotto di Bondone (c.1267-1337) — Deferred sitting",
+      "questionText": "(a) Choose and name a work by one of the following:\n• Giotto di Bondone (c.1267-1337)\n• Jan van Eyck (c.1390-1441)\n• Jacques-Louis David (1748-1825)\n• Edvard Munch (1863-1944)\n• Salvador Dalí (1904-1989).",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 5,
+      "schemePage": 10,
+      "topicId": "art-4-1",
+      "conceptId": "art-2022-q14-hl-a-giotto-di-bondone-deferred",
+      "taskRequirements": [
+        "(a) Choose and name a work by one of the following:",
+        "Giotto di Bondone (c.1267-1337)"
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Name of chosen work."
+          ],
+          "rowMarks": [
+            5
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-b-giotto-di-bondone",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(b) · Giotto di Bondone (c.1267-1337) — Deferred sitting",
+      "questionText": "(b) Discuss the work you have chosen in detail, making reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which it was produced.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 20,
+      "schemePage": 10,
+      "topicId": "art-4-1",
+      "conceptId": "art-2022-q14-hl-b-giotto-di-bondone-deferred",
+      "taskRequirements": [
+        "(b) Discuss the work you have chosen in detail, making reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which it was produced."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [
+            "Description and discussion of chosen work with reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which the work was produced."
+          ],
+          "rowMarks": [
+            20
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-c-giotto-di-bondone",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(c) · Giotto di Bondone (c.1267-1337) — Deferred sitting",
+      "questionText": "(c) Name, briefly describe and discuss one other work by the artist you have chosen.\nIllustrate your answer.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 10,
+      "topicId": "art-4-1",
+      "conceptId": "art-2022-q14-hl-c-giotto-di-bondone-deferred",
+      "taskRequirements": [
+        "(c) Name, briefly describe and discuss one other work by the artist you have chosen.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. One other named work by the artist you have chosen.",
+            "2. Brief description and discussion of other named work by the artist you have chosen."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ],
+          "rowNotes": [
+            ".",
+            "."
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-a-jan-van-eyck",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(a) · Jan van Eyck (c.1390-1441) — Deferred sitting",
+      "questionText": "(a) Choose and name a work by one of the following:\n• Giotto di Bondone (c.1267-1337)\n• Jan van Eyck (c.1390-1441)\n• Jacques-Louis David (1748-1825)\n• Edvard Munch (1863-1944)\n• Salvador Dalí (1904-1989).",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 5,
+      "schemePage": 10,
+      "topicId": "art-4-1",
+      "conceptId": "art-2022-q14-hl-a-jan-van-eyck-deferred",
+      "taskRequirements": [
+        "(a) Choose and name a work by one of the following:",
+        "Jan van Eyck (c.1390-1441)"
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Name of chosen work."
+          ],
+          "rowMarks": [
+            5
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-b-jan-van-eyck",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(b) · Jan van Eyck (c.1390-1441) — Deferred sitting",
+      "questionText": "(b) Discuss the work you have chosen in detail, making reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which it was produced.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 20,
+      "schemePage": 10,
+      "topicId": "art-4-1",
+      "conceptId": "art-2022-q14-hl-b-jan-van-eyck-deferred",
+      "taskRequirements": [
+        "(b) Discuss the work you have chosen in detail, making reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which it was produced."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [
+            "Description and discussion of chosen work with reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which the work was produced."
+          ],
+          "rowMarks": [
+            20
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-c-jan-van-eyck",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(c) · Jan van Eyck (c.1390-1441) — Deferred sitting",
+      "questionText": "(c) Name, briefly describe and discuss one other work by the artist you have chosen.\nIllustrate your answer.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 10,
+      "topicId": "art-4-1",
+      "conceptId": "art-2022-q14-hl-c-jan-van-eyck-deferred",
+      "taskRequirements": [
+        "(c) Name, briefly describe and discuss one other work by the artist you have chosen.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. One other named work by the artist you have chosen.",
+            "2. Brief description and discussion of other named work by the artist you have chosen."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ],
+          "rowNotes": [
+            ".",
+            "."
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-a-jacques-louis-david",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(a) · Jacques-Louis David (1748-1825) — Deferred sitting",
+      "questionText": "(a) Choose and name a work by one of the following:\n• Giotto di Bondone (c.1267-1337)\n• Jan van Eyck (c.1390-1441)\n• Jacques-Louis David (1748-1825)\n• Edvard Munch (1863-1944)\n• Salvador Dalí (1904-1989).",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 5,
+      "schemePage": 10,
+      "topicId": "art-4-6",
+      "conceptId": "art-2022-q14-hl-a-jacques-louis-david-deferred",
+      "taskRequirements": [
+        "(a) Choose and name a work by one of the following:",
+        "Jacques-Louis David (1748-1825)"
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Name of chosen work."
+          ],
+          "rowMarks": [
+            5
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-b-jacques-louis-david",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(b) · Jacques-Louis David (1748-1825) — Deferred sitting",
+      "questionText": "(b) Discuss the work you have chosen in detail, making reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which it was produced.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 20,
+      "schemePage": 10,
+      "topicId": "art-4-6",
+      "conceptId": "art-2022-q14-hl-b-jacques-louis-david-deferred",
+      "taskRequirements": [
+        "(b) Discuss the work you have chosen in detail, making reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which it was produced."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [
+            "Description and discussion of chosen work with reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which the work was produced."
+          ],
+          "rowMarks": [
+            20
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-c-jacques-louis-david",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(c) · Jacques-Louis David (1748-1825) — Deferred sitting",
+      "questionText": "(c) Name, briefly describe and discuss one other work by the artist you have chosen.\nIllustrate your answer.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 10,
+      "topicId": "art-4-6",
+      "conceptId": "art-2022-q14-hl-c-jacques-louis-david-deferred",
+      "taskRequirements": [
+        "(c) Name, briefly describe and discuss one other work by the artist you have chosen.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. One other named work by the artist you have chosen.",
+            "2. Brief description and discussion of other named work by the artist you have chosen."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ],
+          "rowNotes": [
+            ".",
+            "."
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-a-edvard-munch",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(a) · Edvard Munch (1863-1944) — Deferred sitting",
+      "questionText": "(a) Choose and name a work by one of the following:\n• Giotto di Bondone (c.1267-1337)\n• Jan van Eyck (c.1390-1441)\n• Jacques-Louis David (1748-1825)\n• Edvard Munch (1863-1944)\n• Salvador Dalí (1904-1989).",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 5,
+      "schemePage": 10,
+      "topicId": "art-4-4",
+      "conceptId": "art-2022-q14-hl-a-edvard-munch-deferred",
+      "taskRequirements": [
+        "(a) Choose and name a work by one of the following:",
+        "Edvard Munch (1863-1944)"
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Name of chosen work."
+          ],
+          "rowMarks": [
+            5
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-b-edvard-munch",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(b) · Edvard Munch (1863-1944) — Deferred sitting",
+      "questionText": "(b) Discuss the work you have chosen in detail, making reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which it was produced.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 20,
+      "schemePage": 10,
+      "topicId": "art-4-4",
+      "conceptId": "art-2022-q14-hl-b-edvard-munch-deferred",
+      "taskRequirements": [
+        "(b) Discuss the work you have chosen in detail, making reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which it was produced."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [
+            "Description and discussion of chosen work with reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which the work was produced."
+          ],
+          "rowMarks": [
+            20
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-c-edvard-munch",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(c) · Edvard Munch (1863-1944) — Deferred sitting",
+      "questionText": "(c) Name, briefly describe and discuss one other work by the artist you have chosen.\nIllustrate your answer.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 10,
+      "topicId": "art-4-4",
+      "conceptId": "art-2022-q14-hl-c-edvard-munch-deferred",
+      "taskRequirements": [
+        "(c) Name, briefly describe and discuss one other work by the artist you have chosen.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. One other named work by the artist you have chosen.",
+            "2. Brief description and discussion of other named work by the artist you have chosen."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ],
+          "rowNotes": [
+            ".",
+            "."
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-a-salvador-dali",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(a) · Salvador Dalí (1904-1989) — Deferred sitting",
+      "questionText": "(a) Choose and name a work by one of the following:\n• Giotto di Bondone (c.1267-1337)\n• Jan van Eyck (c.1390-1441)\n• Jacques-Louis David (1748-1825)\n• Edvard Munch (1863-1944)\n• Salvador Dalí (1904-1989).",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 5,
+      "schemePage": 10,
+      "topicId": "art-4-4",
+      "conceptId": "art-2022-q14-hl-a-salvador-dali-deferred",
+      "taskRequirements": [
+        "(a) Choose and name a work by one of the following:",
+        "Salvador Dalí (1904-1989)."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Name of chosen work."
+          ],
+          "rowMarks": [
+            5
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-b-salvador-dali",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(b) · Salvador Dalí (1904-1989) — Deferred sitting",
+      "questionText": "(b) Discuss the work you have chosen in detail, making reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which it was produced.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 20,
+      "schemePage": 10,
+      "topicId": "art-4-4",
+      "conceptId": "art-2022-q14-hl-b-salvador-dali-deferred",
+      "taskRequirements": [
+        "(b) Discuss the work you have chosen in detail, making reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which it was produced."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [
+            "Description and discussion of chosen work with reference to the artist, subject matter, style, composition/form, materials, techniques and the period in which the work was produced."
+          ],
+          "rowMarks": [
+            20
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q14-c-salvador-dali",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q14(c) · Salvador Dalí (1904-1989) — Deferred sitting",
+      "questionText": "(c) Name, briefly describe and discuss one other work by the artist you have chosen.\nIllustrate your answer.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 10,
+      "topicId": "art-4-4",
+      "conceptId": "art-2022-q14-hl-c-salvador-dali-deferred",
+      "taskRequirements": [
+        "(c) Name, briefly describe and discuss one other work by the artist you have chosen.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. One other named work by the artist you have chosen.",
+            "2. Brief description and discussion of other named work by the artist you have chosen."
+          ],
+          "rowMarks": [
+            5,
+            10
+          ],
+          "rowNotes": [
+            ".",
+            "."
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q15-a-international-gothic",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q15(a) · International Gothic — Deferred sitting",
+      "questionText": "(a) Discuss the development of one of the following art styles or movements:\n• International Gothic\n• Romanticism\n• Cubism\n• De Stijl.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 10,
+      "schemePage": 10,
+      "topicId": "art-4-0",
+      "conceptId": "art-2022-q15-hl-a-international-gothic-deferred",
+      "taskRequirements": [
+        "(a) Discuss the development of one of the following art styles or movements:",
+        "International Gothic"
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of the development of chosen art style or movement."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q15-b-international-gothic",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q15(b) · International Gothic — Deferred sitting",
+      "questionText": "(b) Describe the main characteristics of your chosen style or movement.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 10,
+      "schemePage": 10,
+      "topicId": "art-4-0",
+      "conceptId": "art-2022-q15-hl-b-international-gothic-deferred",
+      "taskRequirements": [
+        "(b) Describe the main characteristics of your chosen style or movement."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Description of the main characteristics of chosen art style or movement."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q15-c-international-gothic",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q15(c) · International Gothic — Deferred sitting",
+      "questionText": "(c) Describe and discuss one named work by a named artist whose work is typical of this style or movement.\nIllustrate your answer.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 30,
+      "schemePage": 10,
+      "topicId": "art-4-0",
+      "conceptId": "art-2022-q15-hl-c-international-gothic-deferred",
+      "taskRequirements": [
+        "(c) Describe and discuss one named work by a named artist whose work is typical of this style or movement.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [
+            "1. One named work by a named artist whose work is typical of this style or movement.",
+            "2. One named work by a named artist whose work is typical of this style or movement",
+            "3. Description and discussion of named work by a named artist whose work is typical of this style or movement."
+          ],
+          "rowMarks": [
+            5,
+            5,
+            10
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q15-a-romanticism",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q15(a) · Romanticism — Deferred sitting",
+      "questionText": "(a) Discuss the development of one of the following art styles or movements:\n• International Gothic\n• Romanticism\n• Cubism\n• De Stijl.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 10,
+      "schemePage": 10,
+      "topicId": "art-4-6",
+      "conceptId": "art-2022-q15-hl-a-romanticism-deferred",
+      "taskRequirements": [
+        "(a) Discuss the development of one of the following art styles or movements:",
+        "Romanticism"
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of the development of chosen art style or movement."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q15-b-romanticism",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q15(b) · Romanticism — Deferred sitting",
+      "questionText": "(b) Describe the main characteristics of your chosen style or movement.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 10,
+      "schemePage": 10,
+      "topicId": "art-4-6",
+      "conceptId": "art-2022-q15-hl-b-romanticism-deferred",
+      "taskRequirements": [
+        "(b) Describe the main characteristics of your chosen style or movement."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Description of the main characteristics of chosen art style or movement."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q15-c-romanticism",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q15(c) · Romanticism — Deferred sitting",
+      "questionText": "(c) Describe and discuss one named work by a named artist whose work is typical of this style or movement.\nIllustrate your answer.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 30,
+      "schemePage": 10,
+      "topicId": "art-4-6",
+      "conceptId": "art-2022-q15-hl-c-romanticism-deferred",
+      "taskRequirements": [
+        "(c) Describe and discuss one named work by a named artist whose work is typical of this style or movement.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [
+            "1. One named work by a named artist whose work is typical of this style or movement.",
+            "2. One named work by a named artist whose work is typical of this style or movement",
+            "3. Description and discussion of named work by a named artist whose work is typical of this style or movement."
+          ],
+          "rowMarks": [
+            5,
+            5,
+            10
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q15-a-cubism",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q15(a) · Cubism — Deferred sitting",
+      "questionText": "(a) Discuss the development of one of the following art styles or movements:\n• International Gothic\n• Romanticism\n• Cubism\n• De Stijl.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 10,
+      "schemePage": 10,
+      "topicId": "art-4-4",
+      "conceptId": "art-2022-q15-hl-a-cubism-deferred",
+      "taskRequirements": [
+        "(a) Discuss the development of one of the following art styles or movements:",
+        "Cubism"
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of the development of chosen art style or movement."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q15-b-cubism",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q15(b) · Cubism — Deferred sitting",
+      "questionText": "(b) Describe the main characteristics of your chosen style or movement.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 10,
+      "schemePage": 10,
+      "topicId": "art-4-4",
+      "conceptId": "art-2022-q15-hl-b-cubism-deferred",
+      "taskRequirements": [
+        "(b) Describe the main characteristics of your chosen style or movement."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Description of the main characteristics of chosen art style or movement."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q15-c-cubism",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q15(c) · Cubism — Deferred sitting",
+      "questionText": "(c) Describe and discuss one named work by a named artist whose work is typical of this style or movement.\nIllustrate your answer.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 30,
+      "schemePage": 10,
+      "topicId": "art-4-4",
+      "conceptId": "art-2022-q15-hl-c-cubism-deferred",
+      "taskRequirements": [
+        "(c) Describe and discuss one named work by a named artist whose work is typical of this style or movement.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [
+            "1. One named work by a named artist whose work is typical of this style or movement.",
+            "2. One named work by a named artist whose work is typical of this style or movement",
+            "3. Description and discussion of named work by a named artist whose work is typical of this style or movement."
+          ],
+          "rowMarks": [
+            5,
+            5,
+            10
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q15-a-de-stijl",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q15(a) · De Stijl — Deferred sitting",
+      "questionText": "(a) Discuss the development of one of the following art styles or movements:\n• International Gothic\n• Romanticism\n• Cubism\n• De Stijl.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 10,
+      "schemePage": 10,
+      "topicId": "art-4-4",
+      "conceptId": "art-2022-q15-hl-a-de-stijl-deferred",
+      "taskRequirements": [
+        "(a) Discuss the development of one of the following art styles or movements:",
+        "De Stijl."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of the development of chosen art style or movement."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q15-b-de-stijl",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q15(b) · De Stijl — Deferred sitting",
+      "questionText": "(b) Describe the main characteristics of your chosen style or movement.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 10,
+      "schemePage": 10,
+      "topicId": "art-4-4",
+      "conceptId": "art-2022-q15-hl-b-de-stijl-deferred",
+      "taskRequirements": [
+        "(b) Describe the main characteristics of your chosen style or movement."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Description of the main characteristics of chosen art style or movement."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q15-c-de-stijl",
+      "year": 2022,
+      "level": "higher",
+      "section": "2",
+      "questionRef": "2022 HL Q15(c) · De Stijl — Deferred sitting",
+      "questionText": "(c) Describe and discuss one named work by a named artist whose work is typical of this style or movement.\nIllustrate your answer.",
+      "paperPage": 5,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 30,
+      "schemePage": 10,
+      "topicId": "art-4-4",
+      "conceptId": "art-2022-q15-hl-c-de-stijl-deferred",
+      "taskRequirements": [
+        "(c) Describe and discuss one named work by a named artist whose work is typical of this style or movement.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [
+            "1. One named work by a named artist whose work is typical of this style or movement.",
+            "2. One named work by a named artist whose work is typical of this style or movement",
+            "3. Description and discussion of named work by a named artist whose work is typical of this style or movement."
+          ],
+          "rowMarks": [
+            5,
+            5,
+            10
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q16-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "3",
+      "questionRef": "2022 HL Q16 · task 1 — Deferred sitting",
+      "questionText": "Information presented by galleries, museums and interpretative centres has the potential to greatly enhance the viewing experience.\nDiscuss this statement with reference to one named art gallery, museum or interpretative centre that you have visited, online or in person. Describe and discuss two named artefacts that you found interesting and, refer to how the information presented enhanced your viewing experience.",
+      "paperPage": 6,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 11,
+      "topicId": "art-6-0",
+      "conceptId": "art-2022-q16-hl-task1-deferred",
+      "taskRequirements": [
+        "Information presented by galleries, museums and interpretative centres has the potential to greatly enhance the viewing experience.",
+        "Discuss this statement with reference to one named art gallery, museum or interpretative centre that you have visited, online or in person. Describe and discuss two named artefacts that you found interesting and, refer to how the information presented enhanced your viewing experience."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "1. Discussion of statement.",
+            "2. One named art gallery, museum, or interpretative centre."
+          ],
+          "rowMarks": [
+            5,
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. Two named artefacts.",
+            "2. Describe and discuss two artefacts that were interesting.",
+            "3. Refer how the information presented enhanced the viewing experience."
+          ],
+          "rowMarks": [
+            5,
+            5,
+            5
+          ],
+          "rowNotes": [
+            "3/2 named artefacts",
+            "3/2 named artefacts",
+            "3/2 named artefacts"
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q16-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "3",
+      "questionRef": "2022 HL Q16 · task 2 — Deferred sitting",
+      "questionText": "Briefly outline your visual concepts for how you would exhibit the following artefacts:\n• a freestanding sculpture\n• a medieval manuscript\n• a watercolour painting.\nGive reasons for your design decisions.\nIllustrate your answer.",
+      "paperPage": 6,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 11,
+      "topicId": "art-6-0",
+      "conceptId": "art-2022-q16-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly outline your visual concepts for how you would exhibit the following artefacts:",
+        "a freestanding sculpture",
+        "a medieval manuscript",
+        "a watercolour painting.",
+        "Give reasons for your design decisions.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "1. Brief outline of own ideas for how to exhibit artefact 1.",
+            "2. Brief outline of own ideas for how to exhibit artefact 2.",
+            "3. Brief outline of own ideas for how to exhibit artefact 3."
+          ],
+          "rowMarks": [
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "stem": "Information presented by galleries, museums and interpretative centres has the potential to greatly enhance the viewing experience.\nDiscuss this statement with reference to one named art gallery, museum or interpretative centre that you have visited, online or in person. Describe and discuss two named artefacts that you found interesting and, refer to how the information presented enhanced your viewing experience.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q17-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "3",
+      "questionRef": "2022 HL Q17 · task 1 — Deferred sitting",
+      "questionText": "Graphic designers communicate by using many visual elements to attract and inform.\nDiscuss this statement with reference to the illustration on the accompanying sheet.\nRefer in your answer to layout, colour, techniques and typography.",
+      "paperPage": 6,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 30,
+      "schemePage": 11,
+      "topicId": "art-6-1",
+      "conceptId": "art-2022-q17-hl-task1-deferred",
+      "taskRequirements": [
+        "Graphic designers communicate by using many visual elements to attract and inform.",
+        "Discuss this statement with reference to the illustration on the accompanying sheet.",
+        "Refer in your answer to layout, colour, techniques and typography."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Discussion of statement with reference to given illustration: layout and colour."
+          ],
+          "rowMarks": [
+            15
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Discussion of statement with reference to given illustration: techniques and typography."
+          ],
+          "rowMarks": [
+            15
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q17",
+        "title": "Official illustrations for Question 17",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q17-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "3",
+      "questionRef": "2022 HL Q17 · task 2 — Deferred sitting",
+      "questionText": "Briefly outline your visual concepts for a book cover design for a novel you have studied from your Leaving Certificate course. Give reasons for your design decisions.\nIllustrate your answer.",
+      "paperPage": 6,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 20,
+      "schemePage": 11,
+      "topicId": "art-6-1",
+      "conceptId": "art-2022-q17-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly outline your visual concepts for a book cover design for a novel you have studied from your Leaving Certificate course. Give reasons for your design decisions.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Brief outline of your visual concepts for a book cover design for a novel on your LC course. Reasons for your design decisions."
+          ],
+          "rowMarks": [
+            15
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            5
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q17",
+        "title": "Official illustrations for Question 17",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Graphic designers communicate by using many visual elements to attract and inform.\nDiscuss this statement with reference to the illustration on the accompanying sheet.\nRefer in your answer to layout, colour, techniques and typography.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q18-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "3",
+      "questionRef": "2022 HL Q18 · task 1 — Deferred sitting",
+      "questionText": "Interior designers create unique and unusual concepts for functional spaces.\nDiscuss this statement with reference to the hotel lobby, illustrated on the accompanying sheet. Refer in your answer to layout, colour, materials and visual impact.",
+      "paperPage": 6,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 30,
+      "schemePage": 12,
+      "topicId": "art-6-1",
+      "conceptId": "art-2022-q18-hl-task1-deferred",
+      "taskRequirements": [
+        "Interior designers create unique and unusual concepts for functional spaces.",
+        "Discuss this statement with reference to the hotel lobby, illustrated on the accompanying sheet. Refer in your answer to layout, colour, materials and visual impact."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Discussion of statement with reference to given illustration: layout and colour."
+          ],
+          "rowMarks": [
+            15
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Discussion of statement with reference to given illustration: materials and visual impact."
+          ],
+          "rowMarks": [
+            15
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q18",
+        "title": "Official illustrations for Question 18",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q18-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "3",
+      "questionRef": "2022 HL Q18 · task 2 — Deferred sitting",
+      "questionText": "Briefly outline your visual concepts for a bedroom design suitable for the hotel illustrated.\nGive reasons for your design decisions.\nIllustrate your answer.",
+      "paperPage": 6,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 20,
+      "schemePage": 12,
+      "topicId": "art-6-1",
+      "conceptId": "art-2022-q18-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly outline your visual concepts for a bedroom design suitable for the hotel illustrated.",
+        "Give reasons for your design decisions.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Brief outline of your visual concepts for a bedroom design for the illustrated hotel. Reasons for your design decisions."
+          ],
+          "rowMarks": [
+            15
+          ]
+        },
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            5
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q18",
+        "title": "Official illustrations for Question 18",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Interior designers create unique and unusual concepts for functional spaces.\nDiscuss this statement with reference to the hotel lobby, illustrated on the accompanying sheet. Refer in your answer to layout, colour, materials and visual impact.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q19-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "3",
+      "questionRef": "2022 HL Q19 · task 1 — Deferred sitting",
+      "questionText": "Shopfront designs must be eye-catching as well as convey positive messages about the products or services offered.\nDiscuss this statement with reference to a shopfront that you are familiar with.\nRefer in your answer to colour, signage, location and visual impact.",
+      "paperPage": 6,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 12,
+      "topicId": "art-6-1",
+      "conceptId": "art-2022-q19-hl-task1-deferred",
+      "taskRequirements": [
+        "Shopfront designs must be eye-catching as well as convey positive messages about the products or services offered.",
+        "Discuss this statement with reference to a shopfront that you are familiar with.",
+        "Refer in your answer to colour, signage, location and visual impact."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Discussion of statement."
+          ],
+          "rowMarks": [
+            5
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Description and discussion of chosen shopfront with reference to colour and signage."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Description and discussion of chosen shopfront with reference to location and visual impact."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q19-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "3",
+      "questionRef": "2022 HL Q19 · task 2 — Deferred sitting",
+      "questionText": "Briefly outline your visual concepts for a shopfront design for a charity shop.\nGive reasons for your design decisions.\nIllustrate your answer.",
+      "paperPage": 6,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 25,
+      "schemePage": 12,
+      "topicId": "art-6-1",
+      "conceptId": "art-2022-q19-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly outline your visual concepts for a shopfront design for a charity shop.",
+        "Give reasons for your design decisions.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Brief outline of your visual concepts for a shopfront design for a charity shop. Reasons for your design decisions."
+          ],
+          "rowMarks": [
+            15
+          ]
+        },
+        {
+          "id": "e",
+          "label": "Part E",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "stem": "Shopfront designs must be eye-catching as well as convey positive messages about the products or services offered.\nDiscuss this statement with reference to a shopfront that you are familiar with.\nRefer in your answer to colour, signage, location and visual impact.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q20-task1",
+      "year": 2022,
+      "level": "higher",
+      "section": "3",
+      "questionRef": "2022 HL Q20 · task 1 — Deferred sitting",
+      "questionText": "Public art commissions offer the artist an opportunity to create a work that relates to its environment.\nDiscuss this statement with reference to the illustration on the accompanying sheet.\nRefer in your answer to subject matter, form, scale, location and materials.",
+      "paperPage": 7,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 30,
+      "schemePage": 13,
+      "topicId": "art-6-3",
+      "conceptId": "art-2022-q20-hl-task1-deferred",
+      "taskRequirements": [
+        "Public art commissions offer the artist an opportunity to create a work that relates to its environment.",
+        "Discuss this statement with reference to the illustration on the accompanying sheet.",
+        "Refer in your answer to subject matter, form, scale, location and materials."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part A",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of statement."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "b",
+          "label": "Part B",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of illustration referring to subject matter and form."
+          ],
+          "rowMarks": [
+            10
+          ]
+        },
+        {
+          "id": "c",
+          "label": "Part C",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": [
+            "Discussion of illustration referring to scale, location and materials."
+          ],
+          "rowMarks": [
+            10
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q20",
+        "title": "Official illustrations for Question 20",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2022-hl-deferred-q20-task2",
+      "year": 2022,
+      "level": "higher",
+      "section": "3",
+      "questionRef": "2022 HL Q20 · task 2 — Deferred sitting",
+      "questionText": "Briefly outline your visual concepts for a public artwork to be situated in your locality.\nGive reasons for your design decisions.\nIllustrate your answer.",
+      "paperPage": 7,
+      "paperFileid": "LC014ALP000EV-deferred",
+      "totalMarks": 20,
+      "schemePage": 13,
+      "topicId": "art-6-3",
+      "conceptId": "art-2022-q20-hl-task2-deferred",
+      "taskRequirements": [
+        "Briefly outline your visual concepts for a public artwork to be situated in your locality.",
+        "Give reasons for your design decisions.",
+        "Illustrate your answer."
+      ],
+      "assessment": "legacy-components",
+      "criteria": [
+        {
+          "id": "d",
+          "label": "Part D",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Brief outline of your visual concepts for a public artwork to be situated in your locality. Reasons for your design decisions."
+          ],
+          "rowMarks": [
+            15
+          ]
+        },
+        {
+          "id": "e",
+          "label": "Part E",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Sketches."
+          ],
+          "rowMarks": [
+            5
+          ]
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q20",
+        "title": "Official illustrations for Question 20",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014ALP004EV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2022 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "Public art commissions offer the artist an opportunity to create a work that relates to its environment.\nDiscuss this statement with reference to the illustration on the accompanying sheet.\nRefer in your answer to subject matter, form, scale, location and materials.",
+      "sitting": "deferred"
     }
   ]
 }

@@ -78,19 +78,19 @@
     "refsHash": "7a1ca0dfb9d8a129"
   },
   "art": {
-    "cards": 1756,
-    "contentHash": "836c645d0f080984",
+    "cards": 1818,
+    "contentHash": "2e9e1b7e12ff9123",
     "coveragePct": 100.0,
-    "covered": 1756,
+    "covered": 1818,
     "excluded": 0,
-    "leaves": 1756,
+    "leaves": 1818,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 50,
       "hash": "fc024eb5d16de25b"
     },
-    "refsHash": "4fef6e53e28af5ba"
+    "refsHash": "ecabbee80eeff01e"
   },
   "biology": {
     "cards": 6597,

@@ -365,6 +365,8 @@ interface ArtRuntime {
   partReferences: Array<[number, number, 'm' | 'd' | 's', string, string, string]>;
   /** [h/o, e/i, year-2000, component code, printed number, topic indexes] */
   questionMappings: Array<['h' | 'o', 'e' | 'i', number, string, string, number[]]>;
+  /** The SEC's deferred sittings, carded: [h/o, year-2000, booklet file id, question number, topic indexes]. */
+  deferredQuestionMappings?: Array<['h' | 'o', number, string, string, number[]]>;
 }
 
 interface ComputerScienceRuntime {
@@ -3844,6 +3846,19 @@ for (const [
       'single',
       lang,
     ),
+    topicIndexes.map(topicIndex => {
+      const topicId = artRuntime.topics[topicIndex]?.[0];
+      if (!topicId) throw new Error(`Unknown Art runtime topic index: ${topicIndex}`);
+      return topicId;
+    }),
+  );
+}
+// A deferred sitting's paper ("LC014ALP000EV-deferred.pdf") is numbered as June's: its questions join on the
+// paper, never on June's question of the same number (Engineering's do the same).
+for (const [levelCode, yearOffset, fileid, n, topicIndexes] of artRuntime.deferredQuestionMappings ?? []) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey(artRuntime.subjectId, levelCode === 'h' ? 'higher' : 'ordinary', yearOffset + 2000, 'main',
+      fileid, n, 'single', 'ev'),
     topicIndexes.map(topicIndex => {
       const topicId = artRuntime.topics[topicIndex]?.[0];
       if (!topicId) throw new Error(`Unknown Art runtime topic index: ${topicIndex}`);

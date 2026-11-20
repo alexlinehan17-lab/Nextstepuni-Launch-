@@ -4292,7 +4292,8 @@ def census_subject(subject):
                     f"Art {source['year']} {source['level']} census count is stale")
             papers.append({
                 'year': source['year'], 'level': source['level'],
-                'paper': None, 'leafCount': len(cards),
+                # A deferred sitting (art_cards.py DEFERRED_SITTINGS) is a paper of its own, keyed 'Deferred'.
+                'paper': 'Deferred' if source.get('sitting') == 'deferred' else None, 'leafCount': len(cards),
                 'leaves': [{
                     'key': [card['cardId']], 'label': card['questionRef'],
                     'text': '', 'status': 'authored',

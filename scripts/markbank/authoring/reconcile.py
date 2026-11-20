@@ -321,8 +321,9 @@ def reconcile_manifest(subject, census):
         wanted = expected.get(cid)
         # A deferred Irish card says so twice, as Economics', Engineering's and History's do: its id
         # ("irish-2023-hl-deferred-…") and its citation ("… — Deferred sitting"). The two must agree.
-        # English's deferred cards say so the same two ways ("english-2025-hl-deferred-p1-…").
-        if subject in ('irish', 'english') and \
+        # English's deferred cards say so the same two ways ("english-2025-hl-deferred-p1-…"), and Art's
+        # ("art-2022-hl-deferred-q1-task1").
+        if subject in ('irish', 'english', 'art') and \
                 bool(re.match(rf'^{subject}-\d{{4}}-(?:hl|ol)-deferred-', cid)) != (' — Deferred sitting' in ref):
             orphans.append({'id': cid, 'ref': ref, 'why': 'deferred id and "— Deferred sitting" citation disagree'})
             continue
