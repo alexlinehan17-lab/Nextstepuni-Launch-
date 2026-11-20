@@ -136,4 +136,11 @@ describe('Spanish listening is scored one task at a time, as French is', () => {
     expect(polish.map(listeningExerciseKey)).toEqual([null, null]);
     expect(visibleSessionExercises(polish).map(card => card.id)).toEqual(['pl-2026-hl-la-1', 'pl-2026-hl-la-2']);
   });
+
+  test('a Lithuanian listening card is its own exercise, and its grid is named Lithuanian', () => {
+    const lithuanian = [listening('lithuanian', 'lt-2026-hl-la-1-a'), listening('lithuanian', 'lt-2026-hl-la-1-b')];
+    expect(lithuanian.map(listeningExerciseKey)).toEqual([null, null]);
+    expect(visibleSessionExercises(lithuanian).map(card => card.id)).toEqual(['lt-2026-hl-la-1-a', 'lt-2026-hl-la-1-b']);
+    expect(rubricLanguage('lithuanian')).toBe('Lithuanian');
+  });
 });

@@ -5,7 +5,7 @@ import type { FrenchAllocation, FrenchAnswerRow, FrenchCriterion, SecRubricCard 
  *  the panel names the scheme by the card's own subject. */
 const RUBRIC_LANGUAGE: Record<string, string> = {
   french: 'French', spanish: 'Spanish', german: 'German', music: 'Music', polish: 'Polish',
-  italian: 'Italian', portuguese: 'Portuguese',
+  italian: 'Italian', portuguese: 'Portuguese', lithuanian: 'Lithuanian',
 };
 export const rubricLanguage = (subjectId: string): string => RUBRIC_LANGUAGE[subjectId] ?? 'French';
 
