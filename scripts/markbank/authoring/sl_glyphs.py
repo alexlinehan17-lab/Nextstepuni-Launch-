@@ -44,6 +44,7 @@ from glyph_ids import MANGLED, load_table, family, page_glyphs  # noqa: E402
 # Cyrillic alphabet it prints (ѝ included).
 ROMANIAN = set('ăâîşșţțĂÂÎŞȘŢȚ')
 CZECH = set('áčďéěíňóřšťúůýžÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ')
+CROATIAN = set('čćđšžČĆĐŠŽ')
 BULGARIAN = set('абвгдежзийклмнопрстуфхцчшщъьюяѝАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЮЯЍ')
 MIN_SIGHTINGS, MIN_SHARE = 3, 0.95
 
@@ -136,6 +137,15 @@ SUBJECTS = {
     # repaired by POSITION (positional()), never by character.
     'czech': {'docs': {2015: ('scheme',)}, 'alphabet': CZECH, 'rendered': {}, 'suspect': set(),
               'standin': lambda c: False, 'positional': True},
+    # Croatian 2015 (scheme): Georgia and Times New Roman Type0 fonts draw
+    # č ć đ Č Đ with no Unicode; rawdict reports their ids as þ ü ÿ ý Ĉ. By
+    # position, as Czech.
+    # Two Georgia glyphs settled by cropping at 400 dpi (p3): 264 is Đ (the bold
+    # heading "VOĐA IZ ŠKOLE"; no clean sighting), 253 is Č ("Čudio se"; two
+    # clean sightings, short of three).
+    'croatian': {'docs': {2015: ('scheme',)}, 'alphabet': CROATIAN,
+                 'rendered': {'Georgia|264': '\u0110', 'Georgia|253': '\u010c'}, 'suspect': set(),
+                 'standin': lambda c: False, 'positional': True},
     'bulgarian': {'docs': {2015: ('scheme',)}, 'alphabet': BULGARIAN,
                   'rendered': {'TimesNewRoman|630': '\u044c'}, 'suspect': set(),
                   'standin': lambda c: False},
@@ -183,7 +193,10 @@ def positional(subject, year, check):
     page number and some cells), and only a position where the PDF draws an
     UNNAMED glyph (trace U+FFFD) is changed, to the table's reading of that
     glyph's (family, id). A position the .md already reads as the table does
-    (the extractor's own repair) is left; one it reads otherwise is refused."""
+    (the extractor's own repair) is left; one it reads otherwise is refused.
+    Run it ONCE, on the .md as extracted: on a file it has already repaired the
+    alignment no longer pairs the stand-ins and it reports them unaligned (take
+    the unrepaired file from git to re-derive)."""
     import difflib
     from glyph_ids import page_glyphs, page_unnamed
     table = full_table(subject)
