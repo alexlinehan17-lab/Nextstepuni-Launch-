@@ -1547,6 +1547,14 @@ const businessAdditionIds = new Set([
 // their own ids are not additions and stay in the frozen hash.
 const engineeringAdditionIds = new Set<string>((JSON.parse(readFileSync(resolve(__dirname, '..',
   'scripts/markbank/authoring/eng_residue/additions.json'), 'utf8')) as { ids: string[] }).ids);
+/* The small languages (Claude queue 5, from 2026-11-20): every card that lane
+ * adds is listed by subject and sitting in sl_additions.json (written by
+ * scripts/markbank/authoring/sl_batch.py) and held apart from its deck's frozen
+ * pre-lane identity above, never folded into it. Each sitting is pinned by
+ * count and id hash (SMALL_LANGUAGE_SITTINGS below). */
+const smallLanguageAdditions = JSON.parse(readFileSync(resolve(__dirname, '..',
+  'scripts/markbank/authoring/sl_additions.json'), 'utf8')) as Record<string, Record<string, string[]>>;
+const smallLanguageAddedIds = new Set(Object.values(smallLanguageAdditions).flatMap(bySitting => Object.values(bySitting).flat()));
 // Keep the original French count/hash frozen. Reviewed additions have their own
 // source-and-route audit in frenchWriting.test.ts; never rebaseline missing IDs.
 const frenchAdditionIds = new Set([
@@ -2772,6 +2780,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
   if (name.startsWith('spanish:')) return ids.filter(id => !isSpanishAdded(id));
   if (name.startsWith('german:')) return ids.filter(id => !isGermanAdded(id));
+  if (name.split(':')[0] in smallLanguageAdditions) return ids.filter(id => !smallLanguageAddedIds.has(id));
   if (name.startsWith('polish:')) return ids.filter(id => !isPolishAdded(id));
   if (name.startsWith('engineering:')) return ids.filter(id => !engineeringAdditionIds.has(id));
   if (name.startsWith('biology:')) {
@@ -3101,6 +3110,30 @@ describe('Mark Bank card preservation', () => {
       .toBe(true);
   });
 
+  it('pins every card the small-languages lane adds, sitting by sitting', () => {
+    // [subject, year, cards, sha256 of the sorted ids]. One row per sitting,
+    // added in the commit that cards it; a row never changes once added.
+    const SMALL_LANGUAGE_SITTINGS: Array<[string, number, number, string]> = [
+      ['dutch', 2010, 13, '3a68196d10246f17ffe2c2693bf6398820bed450dc655cb515ad450ed31ecaef'],
+    ];
+    const listed = Object.entries(smallLanguageAdditions)
+      .flatMap(([subject, bySitting]) => Object.keys(bySitting).map(year => `${subject} ${year}`)).sort();
+    expect(listed).toEqual(SMALL_LANGUAGE_SITTINGS.map(([subject, year]) => `${subject} ${year}`).sort());
+    const deckIds = (subject: string) => new Set(decks.filter(([name]) => name.split(':')[0] === subject)
+      .flatMap(([, cards]) => cards.map(card => card.id)));
+    for (const [subject, year, count, hash] of SMALL_LANGUAGE_SITTINGS) {
+      const ids = smallLanguageAdditions[subject][String(year)];
+      expect(ids, `${subject} ${year}`).toHaveLength(count);
+      expect(idHash(ids), `${subject} ${year}`).toBe(hash);
+      const live = deckIds(subject);
+      for (const id of ids) {
+        expect(live.has(id), `${id}: not in the ${subject} deck`).toBe(true);
+        expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
+        expect(id.includes(`-${year}-`), `${id}: filed under ${year}`).toBe(true);
+      }
+    }
+  });
+
   /* A German card's conceptId is its level-independent identity, the key a
    * student's progress is carried on between Higher and Ordinary
    * (types/markBank.ts: it "cannot be retrofitted"), so it is held like the
@@ -3322,7 +3355,9 @@ describe('Mark Bank card preservation', () => {
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
         : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length
         : name === 'latin:higher' || name === 'ancient-greek:ordinary' ? cards.filter(card => treatmentAdditionIds.has(card.id)).length
-        : name.startsWith('italian:') ? cards.filter(card => isItalianAdded(card.id)).length : 0;
+        : name.startsWith('italian:') ? cards.filter(card => isItalianAdded(card.id)).length
+        // The small languages (Claude queue 5): sl_additions.json, on top of each frozen deck.
+        : name.split(':')[0] in smallLanguageAdditions ? cards.filter(card => smallLanguageAddedIds.has(card.id)).length : 0;
     const italianAddedCount = [...ITALIAN_HIGHER, ...ITALIAN_ORDINARY].filter(card => isItalianAdded(card.id)).length;
     const technologyAddedCount = [...TECHNOLOGY_HIGHER, ...TECHNOLOGY_ORDINARY]
       .filter(card => isTechnologyAdded(card.id)).length;
@@ -3365,7 +3400,9 @@ describe('Mark Bank card preservation', () => {
         // Italian (classics-italian lane): every card on top of the frozen 350.
         + italianAddedCount
         // Polish additions (languages-q3 lane).
-        + polishAddedTotal);
+        + polishAddedTotal
+        // The small languages (Claude queue 5).
+        + smallLanguageAddedIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
