@@ -1,45 +1,5 @@
 [
  {
-  "ref": "2014 HL Section I Q2",
-  "reason": "the scheme answers this with one continuous model paragraph and prices nothing inside it",
-  "evidence": "2014 HL scheme, \"Jaký je rozdíl mezi mužským a ženským příjmením v českém jazyce?\": the scheme answers this with a continuous MODEL PARAGRAPH and prices nothing inside it. The old examination sets its Questions 2 to 6 at five taškai each and answers each one with unbroken prose — measured across the twelve sittings the answers run from 131 to 1,789 characters, with no bullet, no directive, no \"Any two of:\" and no split beside the printed total. Five marks over an answer the SEC never divided cannot be turned into marking rows without inventing the division, which is the one thing this bank never does. Contrast the SAME question's part (a) to (e), which are priced one taškas each against a stated gloss and card in full."
- },
- {
-  "ref": "2014 HL Section I Q3",
-  "reason": "the scheme answers this with one continuous model paragraph and prices nothing inside it",
-  "evidence": "2014 HL scheme, \"Jaké jsou důvody toho, že si Češky v posledních letech nepřechylují příjmení?\": the scheme answers this with a continuous MODEL PARAGRAPH and prices nothing inside it. The old examination sets its Questions 2 to 6 at five taškai each and answers each one with unbroken prose — measured across the twelve sittings the answers run from 131 to 1,789 characters, with no bullet, no directive, no \"Any two of:\" and no split beside the printed total. Five marks over an answer the SEC never divided cannot be turned into marking rows without inventing the division, which is the one thing this bank never does. Contrast the SAME question's part (a) to (e), which are priced one taškas each against a stated gloss and card in full."
- },
- {
-  "ref": "2014 HL Section I Q4",
-  "reason": "the scheme answers this with one continuous model paragraph and prices nothing inside it",
-  "evidence": "2014 HL scheme, \"Popište na základě textu, jaký je postoj Čechů k přechylování.\": the scheme answers this with a continuous MODEL PARAGRAPH and prices nothing inside it. The old examination sets its Questions 2 to 6 at five taškai each and answers each one with unbroken prose — measured across the twelve sittings the answers run from 131 to 1,789 characters, with no bullet, no directive, no \"Any two of:\" and no split beside the printed total. Five marks over an answer the SEC never divided cannot be turned into marking rows without inventing the division, which is the one thing this bank never does. Contrast the SAME question's part (a) to (e), which are priced one taškas each against a stated gloss and card in full."
- },
- {
-  "ref": "2014 HL Section I Q5",
-  "reason": "the scheme answers this with one continuous model paragraph and prices nothing inside it",
-  "evidence": "2014 HL scheme, \"Vysvětlete, jaké jsou gramatické důvody přechylování? Srovnejte tento gramatický jev s jaz\": the scheme answers this with a continuous MODEL PARAGRAPH and prices nothing inside it. The old examination sets its Questions 2 to 6 at five taškai each and answers each one with unbroken prose — measured across the twelve sittings the answers run from 131 to 1,789 characters, with no bullet, no directive, no \"Any two of:\" and no split beside the printed total. Five marks over an answer the SEC never divided cannot be turned into marking rows without inventing the division, which is the one thing this bank never does. Contrast the SAME question's part (a) to (e), which are priced one taškas each against a stated gloss and card in full."
- },
- {
-  "ref": "2014 HL Section I Q6",
-  "reason": "the scheme answers this with one continuous model paragraph and prices nothing inside it",
-  "evidence": "2014 HL scheme, \"„Ti nejradikálnější kritici přechylování si dokonce myslí, že koncovka -ová není ničím jin\": the scheme answers this with a continuous MODEL PARAGRAPH and prices nothing inside it. The old examination sets its Questions 2 to 6 at five taškai each and answers each one with unbroken prose — measured across the twelve sittings the answers run from 131 to 1,789 characters, with no bullet, no directive, no \"Any two of:\" and no split beside the printed total. Five marks over an answer the SEC never divided cannot be turned into marking rows without inventing the division, which is the one thing this bank never does. Contrast the SAME question's part (a) to (e), which are priced one taškas each against a stated gloss and card in full."
- },
- {
-  "ref": "2014 HL Section II",
-  "reason": "the scheme answers this commentary with one continuous model answer and prices nothing inside it",
-  "evidence": "2014 HL scheme, II DALIS: the scheme answers this commentary with one continuous MODEL ANSWER of its own and prices nothing inside it. The task is \"Pakomentuokite šią ištrauką. Savo teiginius argumentuokite (ne mažiau kaip 100 žodžių)\" — comment on this extract in at least a hundred words — and the scheme prints a hundred-odd words of finished commentary against the single printed total the part head carries. There is no marking point in it to claim and no split to divide it by, so a card would offer a whole essay as one thing to have written."
- },
- {
-  "ref": "2014 HL Section III Q1",
-  "reason": "the scheme prices no line of this essay, so there is no tariff to put on a card",
-  "evidence": "2014 HL scheme, III DALIS: the scheme answers this essay with a description of a good essay and nothing that could be marked right or wrong. Under the two titles it prints one sentence — \"Rišliai parašytas rašinys, atsakantis į pasirinktą temą, atspindintis logišką minties dėstymą, parodantis, jog užduotis suprasta, parašytas aiškia ir taisyklinga kalba (apytiksliai 300 žodžių)\" — which describes a coherent, well-argued, correctly written essay of about 300 words. No line of it is priced, so there is no tariff to put on a card."
- },
- {
-  "ref": "2014 HL Section III Q2",
-  "reason": "the scheme prices no line of this essay, so there is no tariff to put on a card",
-  "evidence": "2014 HL scheme, III DALIS: the scheme answers this essay with a description of a good essay and nothing that could be marked right or wrong. Under the two titles it prints one sentence — \"Rišliai parašytas rašinys, atsakantis į pasirinktą temą, atspindintis logišką minties dėstymą, parodantis, jog užduotis suprasta, parašytas aiškia ir taisyklinga kalba (apytiksliai 300 žodžių)\" — which describes a coherent, well-argued, correctly written essay of about 300 words. No line of it is priced, so there is no tariff to put on a card."
- },
- {
   "ref": "2015 HL Section I Q1(a)",
   "reason": "the scheme's text layer cannot be read for this sitting",
   "evidence": "2015 HL scheme: the 2015 scheme embeds a subset font whose ToUnicode map collapses several accented letters onto ONE code point, so the same character stands for different letters in different words and no map can undo it. Its text layer returns \"VysvČtlete\" for \"Vysvětlete\", \"kterČ\" for \"které\", \"každČ\" for \"každé\" and \"vČznam\" for \"význam\" — one glyph doing the work of ě, é and ý — and it returns \"ýást 1\" for \"Část 1\", a letter of the alphabet standing for another letter of the same alphabet. derive_glyphs.py's own rule applies: a mangled code point that means two different characters cannot be repaired from the character alone, so it is dropped rather than guessed. Every other sitting of this subject reads clean; the repair map for the ones that need one is in glyphmap-czech.json."

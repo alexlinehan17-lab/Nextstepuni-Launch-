@@ -851,6 +851,176 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2014 Higher Level — © State Examinations Commission.",
+    id: "cs-2014-hl-i-2", topicId: "czech-0-1", conceptId: "jaky-rozdil-mezi-muzskym-zenskym-prijmenim",
+    section: "I", questionRef: "2014 HL Section I Q2",
+    questionText: "Jaký je rozdíl mezi mužským a ženským příjmením v českém jazyce?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ženské příjmení v češtině má ve většině případů na konci přidanou koncovku -ová, např. Novák / Nováková.", marks: 5, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2014 Higher Level — © State Examinations Commission.",
+    id: "cs-2014-hl-i-3", topicId: "czech-0-1", conceptId: "jake-jsou-duvody-toho-cesky-poslednich",
+    section: "I", questionRef: "2014 HL Section I Q3",
+    questionText: "Jaké jsou důvody toho, že si Češky v posledních letech nepřechylují příjmení?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Důvody jsou různé, např. nepřechýlené příjmení může být originálnější než to přechýlené, a proto v mediálním světě lépe zapamatovatelné. Mnoho českých žen žije v zahraničí, kde je přechýlené příjmení nepochopitelné a cizinci nechápou, že je žena vdaná. Často to je libozvučnost jména, která v nepřechýlené podobě zní lépe. Často se také ženy vdají za cizince, a tak cizí příjmení nepřechylují i přesto, že žijí v České republice.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2014 Higher Level — © State Examinations Commission.",
+    id: "cs-2014-hl-i-4", topicId: "czech-0-1", conceptId: "popiste-zaklade-textu-jaky-postoj-cechu",
+    section: "I", questionRef: "2014 HL Section I Q4",
+    questionText: "Popište na základě textu, jaký je postoj Čechů k přechylování.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Velké části české populace se nepřechýlená česká příjmení zdají směšná a proti pravidlům češtiny. Ženy s nepřechýleným příjmením si musejí vyslechnout mnoho komentářů a netolerantních poznámek. Tolerantnější jsou Češi v případě, že má žena nepřechýlené příjmení, které je cizí, protože se vdala za cizince. Na druhou stranu si ale mnoho lidí myslí, že je to každého soukromá věc, jak se bude jmenovat.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2014 Higher Level — © State Examinations Commission.",
+    id: "cs-2014-hl-i-5", topicId: "czech-0-1", conceptId: "vysvetlete-jake-jsou-gramaticke-duvody-prechylovani",
+    section: "I", questionRef: "2014 HL Section I Q5",
+    questionText: "Vysvětlete, jaké jsou gramatické důvody přechylování? Srovnejte tento gramatický jev s jazyky uvedenými v textu (angličtina, němčina, litevština).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Čeština je jazyk, který funguje na principu skloňování slov, tzv. flexivní. Pokud je ale ženské příjmení nepřechýlené, tak je nesklonné, což může způsobovat nejasnosti v komunikaci a tato slova se pak těžko zařazují do vět. Pravdou ale je, že si čeština může pomoci použitím přídavných slov, která pomohou objasnit, jestli se mluví o muži nebo ženě. Angličtina ani němčina nepoužívají přechylování a žádné nejasnosti v komunikaci to nezpůsobuje, pokud náhodou, není problém se zeptat. Tento argument je často používaný odpůrci přechylování. Naproti tomu jsou jiné jazyky v oblasti přechylování mnohem komplikovanější než čeština, např. litevština.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2014 Higher Level — © State Examinations Commission.",
+    id: "cs-2014-hl-i-6", topicId: "czech-0-1", conceptId: "nejradikalnejsi-kritici-prechylovani-dokonce-mysli-koncovka",
+    section: "I", questionRef: "2014 HL Section I Q6",
+    questionText: "„Ti nejradikálnější kritici přechylování si dokonce myslí, že koncovka -ová není ničím jiným než neslušným vyjádřením toho, jak si drsný chlap přivlastňuje křehkou ženu jako majetek. Neboli že paní Nováková je vlastnictvím pana Nováka.“ – na základě textu vyjádřete svůj souhlas nebo nesouhlas s tímto tvrzením.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Toto tvrzení je velmi kontroverzní a může být interpretováno i jako pohled na posun významu manželství, které mnozí vnímají jako vlastnictví ženy mužem, naproti lze postavit moderní pohled rovnosti obou pohlaví jak ve společnosti, tak v manželství.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2014 Higher Level — © State Examinations Commission.",
+    id: "cs-2014-hl-ii", topicId: "czech-1-0", conceptId: "jazyk-dedictvi-nehoz-nam-dnes-neco",
+    section: "II", questionRef: "2014 HL Section II",
+    questionText: "„Jazyk je dědictví, z něhož se nám dnes něco může více hodit a něco méně, ale je to naše mateřština, k jejímž zásadám je třeba mít úctu.“ Napište komentář (minimum 100 slov), ve kterém vysvětlíte svůj názor na toto tvrzení.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:", marks: 30, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints, as examples, not a checklist: “Souhlas, nesouhlas. Toto tvrzení velmi silně souvisí s historií naší země, v 18.-19. století bojovali naši předci za samostatnost českého národa a tento boj byl silně spojován s bojem za samostatný, funkční a kodifikovaný český jazyk. Je možné, že pokud bychom nerespektovali svoji mateřštinu, jsme méně Češi? Je to opravdu dědictví, které si musíme nést s sebou? A jsme lepší jenom proto, že perfektně ovládáme českou gramatiku a ostatní opravujeme, aby ji používali správně?”. The scheme reprints the task as: “„Jazyk je dědictví, z něhož se nám dnes něco může více hodit a něco méně, ale je to naše mateřština, k jejímž zásadám je třeba mít úctu.“ Vysvětlete, proč si toto autorka myslí, a napište komentář (minimum 100 slov), ve kterém vysvětlíte svůj názor na toto tvrzení.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen používat komunikovat v jazyce jasně a plynule – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČÁST 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2014 Higher Level — © State Examinations Commission.",
+    id: "cs-2014-hl-iii-1", topicId: "czech-1-0", conceptId: "vlastni-zkusenosti-myslite-nastal-konecne-cas",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: Z vlastní zkušenosti - myslíte, že nastal konečně čas změnit pravidla českého pravopisu?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”. The scheme reprints this title as: “Nastal čas změnit pravidla českého pravopisu?”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen používat komunikovat v jazyce jasně a plynule – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2014 Higher Level — © State Examinations Commission.",
+    id: "cs-2014-hl-iii-2", topicId: "czech-1-0", conceptId: "kdyz-procestujete-cely-svet-abyste-nasli",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: I když procestujete celý svět, abyste našli krásu, nikdy ji nenajdete, pokud ji nenesete s sebou. (Ralph Waldo Emerson)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen používat komunikovat v jazyce jasně a plynule – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "higher",
     paperFileid: "LC547ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2016 Higher Level — © State Examinations Commission.",
