@@ -174,5 +174,168 @@
     ],
     "diaryInstruction": "Note three of the following five points in French in your diary:",
     "formInstruction": "Pour 6, 7, 8 et 9, choisissez trois questions et répondez par des phrases complètes."
+  },
+  {
+    "year": 2023,
+    "sitting": "deferred",
+    "hlGridPage": 14,
+    "olLanguagePage": 14,
+    "formPage": 13,
+    "formSchemePage": 11,
+    "form_stem": "Vous vous appelez Kevin/Anne Corcoran. Vous désirez travailler dans le supermarché Carrefour à Toulouse. Remplissez le formulaire suivant.",
+    "fields": [
+      "Nom",
+      "Prénom",
+      "Âge",
+      "Nationalité",
+      "Lieu de naissance"
+    ],
+    "answers": [
+      "Surname – accept any reasonable surname",
+      "First name – accept any reasonable first name",
+      "Age– accept any reasonable age",
+      "Nationality– accept any reasonable nationality",
+      "Place of birth – accept any reasonable country"
+    ],
+    "form_questions": [
+      "Donnez une brève description de votre personnalité.",
+      "Quel est votre niveau de français ?",
+      "Pourquoi voulez‐vous travailler en France ?",
+      "Avez‐vous déjà travaillé dans un supermarché ?"
+    ],
+    "pools": [
+      [
+        "B2A",
+        14,
+        12,
+        "Leave the following message in French for your friend Henri/Claire with whom you are staying in Lille.",
+        [
+          "You met Louis at the swimming pool this afternoon.",
+          "He cannot go to the concert tomorrow.",
+          "He will phone you at 9 p.m.",
+          "You have gone to have dinner in a small restaurant.",
+          "You will be home late tonight."
+        ],
+        [
+          "You met Louis at the pool/ this afternoon.",
+          "He cannot go to the concert/ tomorrow.",
+          "He will phone you/at 9pm.",
+          "You have gone to have dinner/in a small restaurant.",
+          "You will be home late/tonight."
+        ]
+      ],
+      [
+        "B2B",
+        14,
+        13,
+        "You are on holidays in Antibes. Write a postcard in French to your friend Sabine/Hugo",
+        [
+          "You are on holidays in Antibes with your sister.",
+          "Yesterday you bought some presents in town.",
+          "You hope to visit Grasse next week.",
+          "You will take the train to Nice on Wednesday.",
+          "You spoke French in a bank this morning."
+        ],
+        [
+          "You are on holidays in Antibes/ with your sister.",
+          "Yesterday you bought some presents/ in town.",
+          "You hope to visit Grasse/ nest week.",
+          "You will take the train to Nice/ on Wednesday.",
+          "You spike French in a bank/ this morning."
+        ]
+      ],
+      [
+        "B3A",
+        16,
+        14,
+        "You have just spent an enjoyable day.",
+        [
+          "You went cycling near the river this morning.",
+          "The countryside is beautiful in summer.",
+          "At 3 p.m. you went to the cinema with a friend.",
+          "You are very tired now.",
+          "You will stay at home this evening."
+        ],
+        [
+          "You went cycling near the river/ this morning.",
+          "The countryside is beautiful/ in summer.",
+          "At 3 p.m. you went to the cinema/ with a friend.",
+          "You are very tired/ now.",
+          "You will stay at home/ this evening."
+        ]
+      ],
+      [
+        "B3B",
+        16,
+        15,
+        "Write a formal letter in French to L’Office de Tourisme, 1 rue Jean Jaurès, 74000 Annecy, France.",
+        [
+          "You hope to spend a week in France in July.",
+          "You are looking for an apartment near the lake.",
+          "You intend to go swimming every day.",
+          "You would like a list of activities in the area.",
+          "Ask if you can hire a boat for a day."
+        ],
+        [
+          "You hope to spend a week in France/ in July.",
+          "You are looking for an apartment/ near the lake.",
+          "You intend to go swimming/every day.",
+          "You would like a list of activities/ in the area.",
+          "Ask if you can hire a boat/ for a day."
+        ]
+      ]
+    ],
+    "letterIdentity": "You are Robert / Gráinne Brady, 25 Monaleen, Mallow, Co. Cork.",
+    "languageBottom": "very poor to poor use of vocabulary of vocabulary",
+    "formatSchemePage": 20,
+    "formatNotes": {
+      "top": [
+        "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
+        "City / town / village & date (Monaleen, le 18 mai 2023) in top right corner or underneath.",
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
+      ],
+      "close": [
+        "Formal ending required.",
+        "Treat one or more incorrect accents in closing formula as one mistake."
+      ],
+      "deductions": [
+        "1 mistake - ignore.",
+        "2 mistakes - deduct 1 mark.",
+        "3 mistakes - deduct 2 marks.",
+        "If candidate has general layout of Top of Page or Closing Formula correct, despite numerous mistakes - award one mark."
+      ]
+    },
+    "hlCriteriaMax": [
+      30,
+      20
+    ],
+    "hlNoLayoutQuestion": 3,
+    "fieldAllowed": {},
+    "hlPassageRefs": {
+      "B1A": 1,
+      "B1B": 2,
+      "B1C": 2
+    },
+    "illustrationTasks": [
+      "B4",
+      "B5"
+    ],
+    "hlPromptParagraphs": {},
+    "hlSelectionNote": "Q1a/b/c are alternatives; Q1a refers to the Section A Q.1 passage and Q1b and Q1c to Q.2. Q3 email requires answers to all three of Nicole’s questions. Q1b real/imaginary is open creative scope, not a finite response pool. The Q4 and Q5 photographs are retained in the illustration viewer.",
+    "taskSourceNotes": {
+      "ordinary": {
+        "B2B": "Source discrepancy: the marking scheme prints “nest week” in its answer to the third point and “You spike French” in its answer to the fifth, where the paper prints “next week” and “You spoke French”. The scheme’s answers are shown as printed."
+      }
+    },
+    "sourceNotes": [
+      "Higher Q1 tasks are 60 marks (30 Communication + 30 Language); Q2–Q6 tasks are 40 (20 + 20).",
+      "The Ordinary language descriptors are lifted from scheme page 14: pages 11 to 13 break “at least half the words spelt correctly” across two lines after “incorrect; at”."
+    ],
+    "diaryInstruction": "Note three of the following five points in French in your diary:",
+    "formInstruction": "Pour 6, 7, 8 et 9 : Choisissez trois questions et répondez par des phrases complètes.",
+    "levels": [
+      "hl"
+    ]
   }
 ]

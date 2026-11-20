@@ -7362,5 +7362,168 @@
         "primary": "french-6-6"
       }
     ]
+  },
+  {
+    "subjectId": "french",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2023,
+    "fileid": "LC010ALP000BV-deferred.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "A1",
+        "primary": "french-5-0",
+        "secondary": "french-1-0"
+      },
+      {
+        "n": "A2",
+        "primary": "french-5-1",
+        "secondary": "french-2-1"
+      },
+      {
+        "n": "B1A",
+        "primary": "french-7-3"
+      },
+      {
+        "n": "B1B",
+        "primary": "french-6-7"
+      },
+      {
+        "n": "B1C",
+        "primary": "french-7-7"
+      },
+      {
+        "n": "B2",
+        "primary": "french-6-0"
+      },
+      {
+        "n": "B3",
+        "primary": "french-6-3"
+      },
+      {
+        "n": "B4",
+        "primary": "french-7-6"
+      },
+      {
+        "n": "B5",
+        "primary": "french-7-4"
+      },
+      {
+        "n": "B6",
+        "primary": "french-7-2",
+        "secondary": "french-7-4"
+      },
+      {
+        "n": "A1-Q1-a",
+        "primary": "french-5-0",
+        "secondary": "french-1-0"
+      },
+      {
+        "n": "A1-Q1-b",
+        "primary": "french-5-0",
+        "secondary": "french-1-0"
+      },
+      {
+        "n": "A1-Q2-a",
+        "primary": "french-5-0",
+        "secondary": "french-1-0"
+      },
+      {
+        "n": "A1-Q2-b",
+        "primary": "french-5-0",
+        "secondary": "french-1-0"
+      },
+      {
+        "n": "A1-Q3-a",
+        "primary": "french-5-0",
+        "secondary": "french-1-0"
+      },
+      {
+        "n": "A1-Q3-b",
+        "primary": "french-5-0",
+        "secondary": "french-1-0"
+      },
+      {
+        "n": "A1-Q4-a",
+        "primary": "french-5-0",
+        "secondary": "french-1-0"
+      },
+      {
+        "n": "A1-Q4-b",
+        "primary": "french-5-0",
+        "secondary": "french-1-0"
+      },
+      {
+        "n": "A1-Q5-a",
+        "primary": "french-5-0",
+        "secondary": "french-1-0"
+      },
+      {
+        "n": "A1-Q5-b",
+        "primary": "french-5-0",
+        "secondary": "french-1-0"
+      },
+      {
+        "n": "A1-Q6",
+        "primary": "french-5-0",
+        "secondary": "french-1-0"
+      },
+      {
+        "n": "A2-Q1-a",
+        "primary": "french-5-1",
+        "secondary": "french-2-1"
+      },
+      {
+        "n": "A2-Q1-b",
+        "primary": "french-5-1",
+        "secondary": "french-2-1"
+      },
+      {
+        "n": "A2-Q2-a",
+        "primary": "french-5-1",
+        "secondary": "french-2-1"
+      },
+      {
+        "n": "A2-Q2-b",
+        "primary": "french-5-1",
+        "secondary": "french-2-1"
+      },
+      {
+        "n": "A2-Q3-a",
+        "primary": "french-5-1",
+        "secondary": "french-2-1"
+      },
+      {
+        "n": "A2-Q3-b",
+        "primary": "french-5-1",
+        "secondary": "french-2-1"
+      },
+      {
+        "n": "A2-Q4-a",
+        "primary": "french-5-1",
+        "secondary": "french-2-1"
+      },
+      {
+        "n": "A2-Q4-b",
+        "primary": "french-5-1",
+        "secondary": "french-2-1"
+      },
+      {
+        "n": "A2-Q5-a",
+        "primary": "french-5-1",
+        "secondary": "french-2-1"
+      },
+      {
+        "n": "A2-Q5-b",
+        "primary": "french-5-1",
+        "secondary": "french-2-1"
+      },
+      {
+        "n": "A2-Q6",
+        "primary": "french-5-1",
+        "secondary": "french-2-1"
+      }
+    ]
   }
 ]

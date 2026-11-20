@@ -1,7 +1,7 @@
 {
   "status": "deferred-sittings-review",
   "reviewedAt": "2026-11-20",
-  "expectedCards": 53,
+  "expectedCards": 75,
   "papers": [
     {
       "year": 2022,
@@ -162,6 +162,59 @@
         "Kamo:",
         "His Mother:"
       ]
+    },
+    {
+      "year": 2023,
+      "level": "hl",
+      "sitting": "deferred",
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2023-hl-deferred-000-paper.pdf",
+          "sha256": "5feb661ec0939b8bbc8a52e9e22f90c33fb75aa66f81bc9c27b359ad93a6ff43"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2023-hl-deferred.pdf",
+          "sha256": "ce881b053d55bdd448ca9b673ee172393ac797354d86b64eca5df285c814ed37"
+        }
+      ],
+      "paperCues": {
+        "A1-Q4-a": "Dans la quatrième section, Clémence suggère que",
+        "A2-Q3-a": "Selon la deuxième section, le narrateur pense que"
+      },
+      "pricedBoundaries": [
+        "1:1a:5",
+        "1:1b:5",
+        "1:2a:5",
+        "1:2b:5",
+        "1:3a:5",
+        "1:3b:5",
+        "1:4a:5",
+        "1:4b:5",
+        "1:5a:5",
+        "1:5b:5",
+        "1:6:10",
+        "2:1a:5",
+        "2:1b:5",
+        "2:2a:5",
+        "2:2b:5",
+        "2:3a:5",
+        "2:3b:5",
+        "2:4a:5",
+        "2:4b:5",
+        "2:5a:5",
+        "2:5b:5",
+        "2:6:10"
+      ],
+      "printedPrompts": {
+        "A2-Q6": {
+          "page": 7,
+          "reason": "Paper page 7 sets the Irish version of Q.2 6 beside the English one; the Irish sentence ends \"... iomlán.)\" on its own line, which the reader welds onto the English ask. The English ask as printed, line by line.",
+          "lines": [
+            "The narrator shows some sympathy towards the young woman in this extract. Do you agree?",
+            "Refer to the text in support of your answer. (Two points, about 50 words in total.)"
+          ]
+        }
+      }
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "status": "deferred-sittings-review",
   "reviewedAt": "2026-11-20",
-  "cards": 18,
+  "cards": 26,
   "review": [
     {
       "year": 2022,
@@ -85,6 +85,30 @@
     {
       "source": "examiner-reports/french/schemes/2022-ol-deferred.pdf",
       "sha256": "fbf3f622a345ec69bc9e1e3decf61739d803bab0b97fd7e7b26f34f6b42a111d"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        8,
+        11,
+        12
+      ],
+      "schemePages": [
+        13,
+        14
+      ],
+      "notes": "Q1a/b/c are alternatives; Q1a refers to the Section A Q.1 passage and Q1b and Q1c to Q.2. Q3 email requires answers to all three of Nicole’s questions. Q1b real/imaginary is open creative scope, not a finite response pool. The Q4 and Q5 photographs are retained in the illustration viewer."
+    },
+    {
+      "source": "examiner-reports/french/papers/2023-hl-deferred-000-paper.pdf",
+      "sha256": "5feb661ec0939b8bbc8a52e9e22f90c33fb75aa66f81bc9c27b359ad93a6ff43"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2023-hl-deferred.pdf",
+      "sha256": "ce881b053d55bdd448ca9b673ee172393ac797354d86b64eca5df285c814ed37"
     }
   ],
   "examSelectionPolicy": "Choosing two separately marked examination questions does not create one combined practice card. Each task is independently practicable at its own tariff."
