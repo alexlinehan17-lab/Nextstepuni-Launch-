@@ -2730,15 +2730,15 @@
   "questionRef": "2015 HL Section I Q1(a)",
   "questionText": "Ersätt orden eller uttrycken med andra som betyder samma sak. skildra (stycke 1)",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 1,
+  "totalMarks": 0,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "berätta, återge, tala om, framställa",
-    "marks": 1,
+    "marks": null,
     "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\""
    }
   ],
@@ -2753,6 +2753,10 @@
    ],
    "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\""
+  },
+  "unpricedSection": {
+   "label": "Question 1",
+   "totalMarks": 5
   }
  },
  {
@@ -2766,15 +2770,15 @@
   "questionRef": "2015 HL Section I Q1(b)",
   "questionText": "Ersätt orden eller uttrycken med andra som betyder samma sak. stundom (stycke 2)",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 1,
+  "totalMarks": 0,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "ibland, då och då, emellanåt",
-    "marks": 1,
+    "marks": null,
     "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\""
    }
   ],
@@ -2789,6 +2793,10 @@
    ],
    "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\""
+  },
+  "unpricedSection": {
+   "label": "Question 1",
+   "totalMarks": 5
   }
  },
  {
@@ -2802,15 +2810,15 @@
   "questionRef": "2015 HL Section I Q1(c)",
   "questionText": "Ersätt orden eller uttrycken med andra som betyder samma sak. frånstötande (stycke 2)",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 1,
+  "totalMarks": 0,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "motbjudande, vidrig, avskyvärd, otäck",
-    "marks": 1,
+    "marks": null,
     "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\""
    }
   ],
@@ -2825,6 +2833,10 @@
    ],
    "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\""
+  },
+  "unpricedSection": {
+   "label": "Question 1",
+   "totalMarks": 5
   }
  },
  {
@@ -2838,15 +2850,15 @@
   "questionRef": "2015 HL Section I Q1(d)",
   "questionText": "Ersätt orden eller uttrycken med andra som betyder samma sak. bli (mer) på vår vakt (stycke 9)",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 1,
+  "totalMarks": 0,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "se upp, bli mer vaksam, förhöja sin uppmärksamhet",
-    "marks": 1,
+    "marks": null,
     "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\""
    }
   ],
@@ -2861,6 +2873,10 @@
    ],
    "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\""
+  },
+  "unpricedSection": {
+   "label": "Question 1",
+   "totalMarks": 5
   }
  },
  {
@@ -2874,15 +2890,15 @@
   "questionRef": "2015 HL Section I Q1(e)",
   "questionText": "Ersätt orden eller uttrycken med andra som betyder samma sak. sänker garden (stycke 10)",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 1,
+  "totalMarks": 0,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "slappnar av, släppa på självkontrollen",
-    "marks": 1,
+    "marks": null,
     "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\""
    }
   ],
@@ -2897,6 +2913,10 @@
    ],
    "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\""
+  },
+  "unpricedSection": {
+   "label": "Question 1",
+   "totalMarks": 5
   }
  },
  {
@@ -3922,15 +3942,15 @@
   "questionRef": "2017 HL Section I Q1(a)",
   "questionText": "Ersätt följande ord och uttryck med andra som betyder samma sak: befinner sig i en gryende vår",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 1,
+  "totalMarks": 0,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "vädrar morgonluft, har framtiden för sig, har lysande utsikter",
-    "marks": 1,
+    "marks": null,
     "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
    }
   ],
@@ -3945,6 +3965,10 @@
    ],
    "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+  },
+  "unpricedSection": {
+   "label": "Question 1",
+   "totalMarks": 5
   }
  },
  {
@@ -3958,15 +3982,15 @@
   "questionRef": "2017 HL Section I Q1(b)",
   "questionText": "Ersätt följande ord och uttryck med andra som betyder samma sak: apa efter",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 1,
+  "totalMarks": 0,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "härma, efterlikna",
-    "marks": 1,
+    "marks": null,
     "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
    }
   ],
@@ -3981,6 +4005,10 @@
    ],
    "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+  },
+  "unpricedSection": {
+   "label": "Question 1",
+   "totalMarks": 5
   }
  },
  {
@@ -3994,15 +4022,15 @@
   "questionRef": "2017 HL Section I Q1(c)",
   "questionText": "Ersätt följande ord och uttryck med andra som betyder samma sak: bete sig",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 1,
+  "totalMarks": 0,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "uppföra sig, uppträda, gå tillväga",
-    "marks": 1,
+    "marks": null,
     "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
    }
   ],
@@ -4017,6 +4045,10 @@
    ],
    "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+  },
+  "unpricedSection": {
+   "label": "Question 1",
+   "totalMarks": 5
   }
  },
  {
@@ -4030,15 +4062,15 @@
   "questionRef": "2017 HL Section I Q1(d)",
   "questionText": "Ersätt följande ord och uttryck med andra som betyder samma sak: står till buds",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 1,
+  "totalMarks": 0,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "stå till förfogande, finns, existera",
-    "marks": 1,
+    "marks": null,
     "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
    }
   ],
@@ -4053,6 +4085,10 @@
    ],
    "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+  },
+  "unpricedSection": {
+   "label": "Question 1",
+   "totalMarks": 5
   }
  },
  {
@@ -4066,15 +4102,15 @@
   "questionRef": "2017 HL Section I Q1(e)",
   "questionText": "Ersätt följande ord och uttryck med andra som betyder samma sak: övervägande",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 1,
+  "totalMarks": 0,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "till största delen, rådande, dominerande, störst",
-    "marks": 1,
+    "marks": null,
     "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
    }
   ],
@@ -4089,6 +4125,10 @@
    ],
    "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+  },
+  "unpricedSection": {
+   "label": "Question 1",
+   "totalMarks": 5
   }
  },
  {

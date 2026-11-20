@@ -4445,7 +4445,7 @@ export const CARDS: SecCard[] = [
     questionText: "Magyarázza meg, mit jelent az „örödként gondol valamire” kifejezés!",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található kifejezés saját szavaival megfogalmazva: az „ördögként gondol valamire” kifejezés azt jelenti, hogy rossznak, gonosznak, megvetendőnek hiszi.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    { id: "r-1", kind: "point", verbatim: "Az 5. bekezdésben található kifejezés saját szavaival megfogalmazva: az „ördögként gondol valamire” kifejezés azt jelenti, hogy rossznak, gonosznak, megvetendőnek hiszi.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The paper's question prints “örödként”; its reading text and the scheme print “ördögként”. The scheme notes above Question 1: “Mivel az 1. feladat e) kérdésének többféle értelmezése is lehetséges, ezért erre a válaszra minden jelölt kapott 1 pontot” In plain words: (e) can be read more than one way, so every candidate was given its 1 mark." },
     ],
     sourceMaterial: {
           "kind": "source-text",

@@ -1215,9 +1215,10 @@ export const CARDS: SecCard[] = [
     id: "swe-2015-hl-i-1-a", topicId: "swedish-0-0", conceptId: "ersatt-orden-eller-uttrycken-med-andra",
     section: "I", questionRef: "2015 HL Section I Q1(a)",
     questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. skildra (stycke 1)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Question 1","totalMarks":5},
     rows: [
-    { id: "r-1", kind: "point", verbatim: "berätta, återge, tala om, framställa", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "berätta, återge, tala om, framställa", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1239,9 +1240,10 @@ export const CARDS: SecCard[] = [
     id: "swe-2015-hl-i-1-b", topicId: "swedish-0-0", conceptId: "ersatt-orden-eller-uttrycken-med-andra",
     section: "I", questionRef: "2015 HL Section I Q1(b)",
     questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. stundom (stycke 2)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Question 1","totalMarks":5},
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ibland, då och då, emellanåt", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "ibland, då och då, emellanåt", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1263,9 +1265,10 @@ export const CARDS: SecCard[] = [
     id: "swe-2015-hl-i-1-c", topicId: "swedish-0-0", conceptId: "ersatt-orden-eller-uttrycken-med-andra",
     section: "I", questionRef: "2015 HL Section I Q1(c)",
     questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. frånstötande (stycke 2)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Question 1","totalMarks":5},
     rows: [
-    { id: "r-1", kind: "point", verbatim: "motbjudande, vidrig, avskyvärd, otäck", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "motbjudande, vidrig, avskyvärd, otäck", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1287,9 +1290,10 @@ export const CARDS: SecCard[] = [
     id: "swe-2015-hl-i-1-d", topicId: "swedish-0-0", conceptId: "ersatt-orden-eller-uttrycken-med-andra",
     section: "I", questionRef: "2015 HL Section I Q1(d)",
     questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. bli (mer) på vår vakt (stycke 9)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Question 1","totalMarks":5},
     rows: [
-    { id: "r-1", kind: "point", verbatim: "se upp, bli mer vaksam, förhöja sin uppmärksamhet", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "se upp, bli mer vaksam, förhöja sin uppmärksamhet", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1311,9 +1315,10 @@ export const CARDS: SecCard[] = [
     id: "swe-2015-hl-i-1-e", topicId: "swedish-0-0", conceptId: "ersatt-orden-eller-uttrycken-med-andra",
     section: "I", questionRef: "2015 HL Section I Q1(e)",
     questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. sänker garden (stycke 10)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Question 1","totalMarks":5},
     rows: [
-    { id: "r-1", kind: "point", verbatim: "slappnar av, släppa på självkontrollen", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "slappnar av, släppa på självkontrollen", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"All svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1729,9 +1734,10 @@ export const CARDS: SecCard[] = [
     id: "swe-2017-hl-i-1-a", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-med",
     section: "I", questionRef: "2017 HL Section I Q1(a)",
     questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: befinner sig i en gryende vår",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Question 1","totalMarks":5},
     rows: [
-    { id: "r-1", kind: "point", verbatim: "vädrar morgonluft, har framtiden för sig, har lysande utsikter", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "vädrar morgonluft, har framtiden för sig, har lysande utsikter", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1753,9 +1759,10 @@ export const CARDS: SecCard[] = [
     id: "swe-2017-hl-i-1-b", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-med",
     section: "I", questionRef: "2017 HL Section I Q1(b)",
     questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: apa efter",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Question 1","totalMarks":5},
     rows: [
-    { id: "r-1", kind: "point", verbatim: "härma, efterlikna", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "härma, efterlikna", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1777,9 +1784,10 @@ export const CARDS: SecCard[] = [
     id: "swe-2017-hl-i-1-c", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-med",
     section: "I", questionRef: "2017 HL Section I Q1(c)",
     questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: bete sig",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Question 1","totalMarks":5},
     rows: [
-    { id: "r-1", kind: "point", verbatim: "uppföra sig, uppträda, gå tillväga", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "uppföra sig, uppträda, gå tillväga", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1801,9 +1809,10 @@ export const CARDS: SecCard[] = [
     id: "swe-2017-hl-i-1-d", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-med",
     section: "I", questionRef: "2017 HL Section I Q1(d)",
     questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: står till buds",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Question 1","totalMarks":5},
     rows: [
-    { id: "r-1", kind: "point", verbatim: "stå till förfogande, finns, existera", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "stå till förfogande, finns, existera", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1825,9 +1834,10 @@ export const CARDS: SecCard[] = [
     id: "swe-2017-hl-i-1-e", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-med",
     section: "I", questionRef: "2017 HL Section I Q1(e)",
     questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: övervägande",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Question 1","totalMarks":5},
     rows: [
-    { id: "r-1", kind: "point", verbatim: "till största delen, rådande, dominerande, störst", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-1", kind: "point", verbatim: "till största delen, rådande, dominerande, störst", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",

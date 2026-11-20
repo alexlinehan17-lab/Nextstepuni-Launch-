@@ -3490,9 +3490,9 @@ export const CARDS: SecCard[] = [
     id: "slk-2023-hl-i-1-e", topicId: "slovakian-0-0", conceptId: "vysvetlite-vlastnymi-slovami-vyrazy-motiva-kampa",
     section: "I", questionRef: "2023 HL Section I Q1(e)",
     questionText: "Vysvetlite vlastnými slovami výrazy: motivačná kampaň (8. odsek)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "naplánovaný rad akcií, ktorých cieľom je u niekoho vzbudiť záujem o niečo", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-1", kind: "point", verbatim: "naplánovaný rad akcií, ktorých cieľom je u niekoho vzbudiť záujem o niečo", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3781,9 +3781,9 @@ export const CARDS: SecCard[] = [
     id: "slk-2024-hl-i-1-e", topicId: "slovakian-0-0", conceptId: "vysvetlite-vlastnymi-slovami-vyrazy-diskomfort-odsek",
     section: "I", questionRef: "2024 HL Section I Q1(e)",
     questionText: "Vysvetlite vlastnými slovami výrazy: diskomfort (6. odsek)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "situácia, keď sa človek necíti dobre psychicky alebo fyzicky, príčinou môže byť napríklad stres, choroba", marks: 5, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
+    { id: "r-1", kind: "point", verbatim: "situácia, keď sa človek necíti dobre psychicky alebo fyzicky, príčinou môže byť napríklad stres, choroba", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",

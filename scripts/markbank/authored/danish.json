@@ -4778,13 +4778,13 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 5,
+  "totalMarks": 1,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "Enhver rimelig forklaring (e.g. ”metafor, der betegner kvinder, der føder mange børn”)",
-    "marks": 5,
+    "marks": 1,
     "contextNote": "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
    }
   ],

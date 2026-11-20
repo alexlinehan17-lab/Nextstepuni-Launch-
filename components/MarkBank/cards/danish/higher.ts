@@ -2359,9 +2359,9 @@ export const CARDS: SecCard[] = [
     id: "dan-2024-hl-i-1-d", topicId: "danish-0-0", conceptId: "forklar-betydningen-ordet-patriarkalsk-som-det",
     section: "I", questionRef: "2024 HL Section I Q1(d)",
     questionText: "Forklar betydningen af ordet ”ynglefabrikker” som det bruges i teksten.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”metafor, der betegner kvinder, der føder mange børn”)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. ”metafor, der betegner kvinder, der føder mange børn”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",

@@ -229,7 +229,7 @@
   },
   "danish": {
     "cards": 126,
-    "contentHash": "0dc0354600f84186",
+    "contentHash": "c450bea35e4cf9a2",
     "coveragePct": 100.0,
     "covered": 126,
     "excluded": 0,
@@ -424,7 +424,7 @@
   },
   "hungarian": {
     "cards": 219,
-    "contentHash": "7c00fa1707f29ae7",
+    "contentHash": "add3b4c611cdff21",
     "coveragePct": 100.0,
     "covered": 219,
     "excluded": 0,
@@ -499,7 +499,7 @@
   },
   "latvian": {
     "cards": 167,
-    "contentHash": "ddf87972ec0fe40c",
+    "contentHash": "a2cdfb2286244df2",
     "coveragePct": 100.0,
     "covered": 219,
     "excluded": 0,
@@ -510,7 +510,7 @@
       "count": 17,
       "hash": "f66362d289720cbb"
     },
-    "refsHash": "3503ee96aa79ad12"
+    "refsHash": "08d5e39f5136dbc3"
   },
   "lcvp": {
     "cards": 518,
@@ -739,7 +739,7 @@
   },
   "slovakian": {
     "cards": 206,
-    "contentHash": "3b36bbeffd9faa8a",
+    "contentHash": "7c26fcef8fc0c008",
     "coveragePct": 100.0,
     "covered": 206,
     "excluded": 0,
@@ -784,7 +784,7 @@
   },
   "swedish": {
     "cards": 191,
-    "contentHash": "59df61e614a0e91e",
+    "contentHash": "8d5ab4e86e445001",
     "coveragePct": 100.0,
     "covered": 191,
     "excluded": 0,

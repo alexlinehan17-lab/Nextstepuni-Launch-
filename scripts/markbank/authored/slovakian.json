@@ -7256,13 +7256,13 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 5,
+  "totalMarks": 1,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "naplánovaný rad akcií, ktorých cieľom je u niekoho vzbudiť záujem o niečo",
-    "marks": 5,
+    "marks": 1,
     "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
    }
   ],
@@ -8039,13 +8039,13 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 5,
+  "totalMarks": 1,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "situácia, keď sa človek necíti dobre psychicky alebo fyzicky, príčinou môže byť napríklad stres, choroba",
-    "marks": 5,
+    "marks": 1,
     "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
    }
   ],
