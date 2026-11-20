@@ -174,6 +174,37 @@
       "schemeSha256": "3fd5f06ee6dbc78e1ef53bcaa1e1e6f9a6d822c6ee898a69f16ec34cf0aac999",
       "reviewedAt": "2026-11-19",
       "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2024-hl.json"
+    },
+    "ru-2023-ol-la2": {
+      "printedMarks": 6,
+      "schemePages": [
+        6
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2023-ol.pdf",
+      "schemeSha256": "da5064b6da1f3906e010bf0ae0610add8100a8b00964149bb6d2ca97593e1b5b",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2023-ol.json"
+    },
+    "ru-2023-ol-sa": {
+      "printedMarks": 30,
+      "schemePages": [
+        12
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2023-ol.pdf",
+      "schemeSha256": "da5064b6da1f3906e010bf0ae0610add8100a8b00964149bb6d2ca97593e1b5b",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2023-ol.json"
+    },
+    "ru-2023-ol-ew": {
+      "printedMarks": 30,
+      "schemePages": [
+        13,
+        14
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2023-ol.pdf",
+      "schemeSha256": "da5064b6da1f3906e010bf0ae0610add8100a8b00964149bb6d2ca97593e1b5b",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2023-ol.json"
     }
   }
 }
