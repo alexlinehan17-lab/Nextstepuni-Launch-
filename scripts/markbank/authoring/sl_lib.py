@@ -345,13 +345,17 @@ class R:
     """One card: the paper's address, its rows, the price it must add up to,
     and the notes. `whole` = `questionTotal` (rows shown, not claimed)."""
     def __init__(self, key, rows, total=None, whole=False, note=None, rownote=None,
-                 question=None, source=True, stem=None, pages=None):
+                 question=None, source=True, stem=None, pages=None, concept=None):
         self.key, self.rows, self.total, self.whole = key, rows, total, whole
         self.note, self.rownote, self.question = note, rownote, question
         self.source, self.stem = source, stem
         # The question paper's pages that print the reading text, where the
         # census's own reading of them is wrong (checked on the render).
         self.pages = pages
+        # concept='question': the conceptId from the card's own (printed) question,
+        # where the census text it is usually built from is misaligned (Danish
+        # 2024 reads each Q1 expression one letter late).
+        self.concept = concept
 
 
 class NoScheme:
@@ -958,7 +962,8 @@ def cards(subject, year, specs, level='hl', scheme=True):
             # them (2026 Q1(c)-(e) shared one; second reader, 20 Nov).
             'conceptId': (mgr_topics.concept_for if mgr else lt_topics.concept_for if subject in LT_SUBJECTS
                           else concept_for)(
-                clean_question(MARKER.sub('', ask.text, count=1)) or question),
+                question if getattr(spec, 'concept', None) == 'question'
+                else clean_question(MARKER.sub('', ask.text, count=1)) or question),
             'questionRef': (mgr_all.question_ref if mgr else lt_all.question_ref if lt else question_ref)(year, level, key),
             'questionText': question,
         }

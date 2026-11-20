@@ -4261,6 +4261,16 @@ ADDED_ASKS = {
         {'key': ['I', '1A', None, None], 'label': 'Section I Q1A', 'before': ['I', 2, None, None],
          'lines': (4, 'X\u2019tgħallem dwar l-aspett fiżiku', 'tagħlima għall-ħajja minn dan?')},
     ],
+    # Danish 2018 numbers its sixth reading question "6" with no stop (p4 y234,
+    # "6 ”De sociale medier ...”"), which the walker does not take for a
+    # question number, so the census counts Q1-Q5; the paper prices it
+    # "(maks. 5 point)" beside its last line (y267) and the scheme answers it.
+    # Keyed and cited by the number it prints: Section I Q6.
+    ('danish', 2018, 'hl'): [
+        {'key': ['I', 6, None, None], 'label': 'Section I Q6', 'before': ['II', 1, None, None],
+         'lines': (4, '\u201dDe sociale medier', 'Rasmussens synspunkt.'),
+         'price': r'\(\s*maks\.\s*(\d+)\s*point\s*\)'},
+    ],
 }
 
 
@@ -4273,8 +4283,9 @@ def _added_leaf(subject, year, level, spec):
     start = next(i for i, l in enumerate(lines) if l.text.strip().startswith(first))
     end = next(i for i, l in enumerate(lines[start:], start) if l.text.strip().endswith(last))
     body = [l for l in lines[start:end + 1] if abs(l.x - lines[start].x) < 40]
+    price = re.compile(spec.get('price', r'\(\s*(\d+)\s*marki?\s*\)'))
     cells = [l for l in lines if abs(l.y - lines[end].y) < 2 and l is not lines[end]
-             and re.fullmatch(r'\(\s*(\d+)\s*marki?\s*\)', l.text.strip())]
+             and price.fullmatch(l.text.strip())]
     if len(cells) != 1:
         raise ValueError(f'{subject} {year}: {len(cells)} price cells beside the added ask')
     marks = int(re.search(r'\d+', cells[0].text).group(0))
