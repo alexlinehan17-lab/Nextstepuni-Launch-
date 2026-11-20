@@ -64,6 +64,603 @@
   }
  },
  {
+  "id": "cs-2010-hl-i-2",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "meli-mladi-lide-komunistickem-ceskoslovensku-svobodny",
+  "questionRef": "2010 HL Section I Q2",
+  "questionText": "Měli mladí lidé v komunistickém Československu svobodný přístup ke vzdělání? Vysvětlete na základě textu.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Přístup ke vzdělání nebyl svobodný. Zdánlivě mohl studovat kdokoliv, ale musel být loajální vůči vládnoucímu režimu, pokud se protivil někdo osobně nebo z rodiny, studium mohlo být znemožněno. Mnoho studentů nemohlo studovat z politických příčin, školy byly „čištěny od reakčních studentů“. Situaci mohlo ještě zhoršit, pokud student nechtěl vstoupit do SSM, účastnil se zakázaných demonstrací, vydával samizdatový časopis, podepisoval petice apod.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2010-hl-i-3",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "zprave-svem-chystanem-vylouceni-myslel-student",
+  "questionRef": "2010 HL Section I Q3",
+  "questionText": "Co si o zprávě o svém chystaném vyloučení myslel student Michal Semín? Vysvětlete na základě textu.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nebyl překvapený, tuto zprávu očekával a domníval se, že je to „bomba“ a svým způsobem dobrá zpráva. Okamžitě ho napadlo, že by se to dalo využít k rozhýbání ostatních studentů a upozornění na to, že další studenti mají být vyloučeni z politických příčin. Proto toho využil ke svolání další demonstrace, která se konala přímo před fakultou.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2010-hl-i-4",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "autor-popisuje-situaci-pred-pedagogickou-fakultou",
+  "questionRef": "2010 HL Section I Q4",
+  "questionText": "Autor popisuje situaci před pedagogickou fakultou jako z absurdního dramatu (odstavec 4). Co tuto situaci činí tak absurdní?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Demonstrace se odehrávala v malé zapadlé uličce v centru Prahy, studenti zpívali národní písně a z bublifuků vypouštěli bubliny. Děkan pobíhal kolem a nemohl dělat nic jiného než hrozit dalšími vyhazovy, což v souvislousti s „romantickou“ kulisou starého města a poletujícími bublinami vypadalo až směšně.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2010-hl-i-5",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "predstavitele-komunisticke-strany-politicke-policie-neskryvali",
+  "questionRef": "2010 HL Section I Q5",
+  "questionText": "„Představitelé komunistické strany a politické policie neskrývali nelibost.“ Vysvětlete, proč si toto komunistická strana myslela, a napište svůj vlastní názor na toto její zklamání.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Komunistická strana si uvědomovala slábnoucí moc a to, že spousta institucí už „nedrží basu“, studentské akce měly velmi masivní charakter a nebylo možné je jen tak snadno potlačit, aniž by to vzbudilo nežádoucí pozornost. Chtěla po univerzitách, aby proti studentům zasáhly silněji a rychleji.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2010-hl-i-6",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "autor-popisuje-pribeh-zmen-spolecnosti-ktere",
+  "questionRef": "2010 HL Section I Q6",
+  "questionText": "Autor popisuje příběh změn ve společnosti – na které změny upozorňuje text?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Text upozorňuje zejména na změny související se změnou vládnoucí garnitury v roce 1948, které pak měly za následek i změny v pozdějších letech, např. změna od silně totalitního režimu k režimu „volnějšímu“ na konci 60. let, změna postavení učitelů a univerzit, změna osobní nezávislosti a svobody, změna statutu provinění (velkým proviněním byla například neloajalita k totalitnímu režimu), pasivita k policejní brutalitě, změna chápání tolerance v celé společnosti apod.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2010-hl-ii",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2010,
+  "section": "II",
+  "topicId": "czech-1-0",
+  "conceptId": "vezmete-sebou-bublifuk-studenti-jednu-demonstraci",
+  "questionRef": "2010 HL Section II",
+  "questionText": "„... vezměte s sebou bublifuk...“ Studenti si na jednu z demonstrací měli s sebou přinést bublifuk. Napište komentář (minimum 100 slov), ve kterém vysvětlíte, co podle vás měly bubliny z bublifuku v daném kontextu symbolizovat.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Správný, plynulý komentář o minimálně 100 slovech.",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Souvislost odpovědi – uchazeč užívá odpovídající a a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Efektivita jazyka – uchazeč je schopen používat komunikovat v jazyce jasně a plynule – 30 %.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pravidla: gramatika, pravopis – 10 %.",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujích kritérií:”. The scheme prints, as examples, not a checklist: “Bubliny jsou něco velmi lehkého lehkého a hravého, symbolizují svobodu – mohou volně letět – v protikladu k totalitnímu režimu. Evokují vzpomínky na dětství, které bylo bezstarostné a daleko od problémů všedního života. Jsou barevné, mají barvu duhy, symbolu míru, oproti tomu totalita bývá popisována jako „šedivá“ nebo „bezbarvá“.”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ČÁST 2",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2010-hl-iii-1",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2010,
+  "section": "III",
+  "topicId": "czech-1-0",
+  "conceptId": "svoboda-neco-stoji",
+  "questionRef": "2010 HL Section III Q1",
+  "questionText": "Napište esej (minimum 300 slov) na jedno z následujících témat: Svoboda něco stojí.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Souvislost odpovědi – uchazeč užívá odpovídající a a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Efektivita jazyka – uchazeč je schopen používat komunikovat v jazyce jasně a plynule – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pravidla: gramatika, pravopis – 10 %.",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujích kritérií:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "cs-2010-hl-iii-2",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2010,
+  "section": "III",
+  "topicId": "czech-1-0",
+  "conceptId": "nikdo-neni-ostrov",
+  "questionRef": "2010 HL Section III Q2",
+  "questionText": "Napište esej (minimum 300 slov) na jedno z následujících témat: Nikdo není ostrov.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Souvislost odpovědi – uchazeč užívá odpovídající a a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Efektivita jazyka – uchazeč je schopen používat komunikovat v jazyce jasně a plynule – 30 %.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pravidla: gramatika, pravopis – 10 %.",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujích kritérií:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "cs-2011-hl-i-1",
   "subjectId": "czech",
   "level": "higher",
