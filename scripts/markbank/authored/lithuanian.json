@@ -15318,6 +15318,64 @@
   }
  },
  {
+  "id": "lt-2025-ol-a-1-f",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "U1",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "sudarykite-sakinius-irasykite-atsakymo-raide-prie",
+  "questionRef": "2025 OL Section A Q1(f)",
+  "questionText": "Sudarykite sakinius. Įrašykite atsakymo raidę prie žemiau pateiktų skaičių. (2 dalis)\n1. Užlipo į palėpę A. ... atsargiai.\n2. Pamatė B. ... keistas garsas.\n3. Pradėjo groti C. ... po pietų.\n4. Pasigirdo D. ... muziką.\n5. Garsas nelabai priminė E. ... pianiną.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "E",
+    "marks": 1,
+    "contextNote": "For “2. Pamatė”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A",
+    "marks": 1,
+    "contextNote": "For “3. Pradėjo groti”"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 1,
+    "contextNote": "For “4. Pasigirdo”"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D",
+    "marks": 1,
+    "contextNote": "For “5. Garsas nelabai priminė”"
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks (4 x 1 mark)' and answers the grid in one line, \"1. 2. 3. 4. 5.\" over \"C E A B D\". Number 1 is printed answered (\"C\") as the worked example. The paper prints this task on page 5 of the question booklet; the census counts it once (10c).",
+  "stem": "Pirma užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PIRMA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Lithuanian 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
   "id": "lt-2025-ol-a-1-g",
   "subjectId": "lithuanian",
   "level": "ordinary",
@@ -15398,6 +15456,71 @@
    }
   ],
   "notes": "The scheme prints the tariff as '5 marks'; the paper prints this ask on page 6 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "stem": "Pirma užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PIRMA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Lithuanian 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2025-ol-a-1-i",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "U1",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "sunumeruokite-veiksmus-pagal-eiliskuma-irasykite-skaiciu",
+  "questionRef": "2025 OL Section A Q1(i)",
+  "questionText": "Sunumeruokite veiksmus pagal jų eiliškumą tekste. Įrašykite skaičių. (3 dalis)\nTėvai didžiuojasi.\nPasakotoja verkia.\nGroja didelėje scenoje. 1\nSmuikininkas apkabina.\nAtsistoja ir nusilenkia.\nPublika dovanoja gėlių.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "4",
+    "marks": 2,
+    "contextNote": "For “Tėvai didžiuojasi.”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "6",
+    "marks": 2,
+    "contextNote": "For “Pasakotoja verkia.”"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "5",
+    "marks": 2,
+    "contextNote": "For “Smuikininkas apkabina.”"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "2",
+    "marks": 2,
+    "contextNote": "For “Atsistoja ir nusilenkia.”"
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "3",
+    "marks": 2,
+    "contextNote": "For “Publika dovanoja gėlių.”"
+   }
+  ],
+  "notes": "The scheme prints the tariff as '10 marks (5 x 2 marks)'; \"Groja didelėje scenoje\" is printed already numbered 1 as the worked example. The positions are the scheme's. The paper prints this task on page 6 of the question booklet.",
   "stem": "Pirma užduotis",
   "sourceMaterial": {
    "kind": "source-text",
@@ -15747,6 +15870,64 @@
    }
   ],
   "notes": "The scheme prints the tariff as '2 marks'; the paper prints this ask on page 8 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "stem": "Antra užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ANTRA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    7,
+    8
+   ],
+   "attribution": "SEC Lithuanian 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2025-ol-a-2-h",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "U2",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "pabrauktu-zodziu-reiksmes-irasykite-atsakymo-raide",
+  "questionRef": "2025 OL Section A Q2(h)",
+  "questionText": "Raskite tekste pabrauktų žodžių reikšmes. Įrašykite atsakymo raidę prie žemiau pateiktų skaičių. (2 dalis)\n1. Disciplina A. Žinojimas, kad gali padaryti.\n2. Darbas komandoje B. Studijų ir mokslo įstaiga.\n3. Universitetas C. Nustatytos tvarkos laikymasis.\n4. Pasitikėjimas D. Darbas kartu su kitais.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C",
+    "marks": 2,
+    "contextNote": "For “1. Disciplina”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "D",
+    "marks": 2,
+    "contextNote": "For “2. Darbas komandoje”"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 2,
+    "contextNote": "For “3. Universitetas”"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "A",
+    "marks": 2,
+    "contextNote": "For “4. Pasitikėjimas”"
+   }
+  ],
+  "notes": "The scheme prints the tariff as '8 marks (4 x 2 marks)' and answers the grid in one line, \"1. 2. 3. 4.\" over \"C D B A\". The paper prints this task on page 9 of the question booklet; the census counts it once (10c).",
   "stem": "Antra užduotis",
   "sourceMaterial": {
    "kind": "source-text",
@@ -16218,6 +16399,63 @@
    }
   ],
   "notes": "The scheme prints the tariff as '4 marks'; the paper prints this ask on page 11 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "stem": "Trečia užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TREČIA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Lithuanian 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2025-ol-a-3-g",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2025,
+  "section": "U3",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "sudarykite-sakinius-irasykite-atsakymo-raide-prie",
+  "questionRef": "2025 OL Section A Q3(g)",
+  "questionText": "Sudarykite sakinius. Įrašykite atsakymo raidę prie žemiau pateiktų skaičių. (3 dalis)\n1. Portalas sulaukė A. žiniasklaida.\n2. Žinia pasiekė B. komplimentų.\n3. Plačiai rašė C. sėkmės.\n4. Įžymūs žmonės negailėjo D. didelę skaitytojų auditoriją.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C",
+    "marks": 3,
+    "contextNote": "For “1. Portalas sulaukė”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "D",
+    "marks": 3,
+    "contextNote": "For “2. Žinia pasiekė”"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A",
+    "marks": 3,
+    "contextNote": "For “3. Plačiai rašė”"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 3,
+    "contextNote": "For “4. Įžymūs žmonės negailėjo”"
+   }
+  ],
+  "notes": "The scheme prints the tariff as '12 marks (4 x 3 marks)' and answers the grid in one line, \"1. 2. 3. 4.\" over \"C D A B\". The paper prints this task on page 12 of the question booklet; the census counts it once (10c).",
   "stem": "Trečia užduotis",
   "sourceMaterial": {
    "kind": "source-text",

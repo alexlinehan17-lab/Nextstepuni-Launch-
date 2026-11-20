@@ -4192,6 +4192,34 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC550GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2025-ol-a-1-f", topicId: "lithuanian-2-1", conceptId: "sudarykite-sakinius-irasykite-atsakymo-raide-prie",
+    section: "U1", questionRef: "2025 OL Section A Q1(f)",
+    stem: "Pirma užduotis",
+    questionText: "Sudarykite sakinius. Įrašykite atsakymo raidę prie žemiau pateiktų skaičių. (2 dalis)\n1. Užlipo į palėpę A. ... atsargiai.\n2. Pamatė B. ... keistas garsas.\n3. Pradėjo groti C. ... po pietų.\n4. Pasigirdo D. ... muziką.\n5. Garsas nelabai priminė E. ... pianiną.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "E", marks: 1, contextNote: "For “2. Pamatė”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "A", marks: 1, contextNote: "For “3. Pradėjo groti”" },
+    { id: "r-3", kind: "point", verbatim: "B", marks: 1, contextNote: "For “4. Pasigirdo”" },
+    { id: "r-4", kind: "point", verbatim: "D", marks: 1, contextNote: "For “5. Garsas nelabai priminė”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PIRMA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Lithuanian 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Ordinary Level — © State Examinations Commission.",
     id: "lt-2025-ol-a-1-g", topicId: "lithuanian-2-1", conceptId: "pasakotoja-pritupe-ant-kedes-pradejo-groti",
     section: "U1", questionRef: "2025 OL Section A Q1(g)",
     stem: "Pirma užduotis",
@@ -4224,6 +4252,35 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":5,"options":["Baldai","Drabužiai","Daiktai","Voratinkliai","Kartelis","Pianinas","Garsas","Pietūs","Kartas","Sodas","Viršus","Grojimas","Kaimynas","Langas"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PIRMA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Lithuanian 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2025-ol-a-1-i", topicId: "lithuanian-2-1", conceptId: "sunumeruokite-veiksmus-pagal-eiliskuma-irasykite-skaiciu",
+    section: "U1", questionRef: "2025 OL Section A Q1(i)",
+    stem: "Pirma užduotis",
+    questionText: "Sunumeruokite veiksmus pagal jų eiliškumą tekste. Įrašykite skaičių. (3 dalis)\nTėvai didžiuojasi.\nPasakotoja verkia.\nGroja didelėje scenoje. 1\nSmuikininkas apkabina.\nAtsistoja ir nusilenkia.\nPublika dovanoja gėlių.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "4", marks: 2, contextNote: "For “Tėvai didžiuojasi.”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "6", marks: 2, contextNote: "For “Pasakotoja verkia.”" },
+    { id: "r-3", kind: "point", verbatim: "5", marks: 2, contextNote: "For “Smuikininkas apkabina.”" },
+    { id: "r-4", kind: "point", verbatim: "2", marks: 2, contextNote: "For “Atsistoja ir nusilenkia.”" },
+    { id: "r-5", kind: "point", verbatim: "3", marks: 2, contextNote: "For “Publika dovanoja gėlių.”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4424,6 +4481,34 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Neteisingai", marks: 2, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ANTRA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                7,
+                8
+          ],
+          "attribution": "SEC Lithuanian 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2025-ol-a-2-h", topicId: "lithuanian-2-1", conceptId: "pabrauktu-zodziu-reiksmes-irasykite-atsakymo-raide",
+    section: "U2", questionRef: "2025 OL Section A Q2(h)",
+    stem: "Antra užduotis",
+    questionText: "Raskite tekste pabrauktų žodžių reikšmes. Įrašykite atsakymo raidę prie žemiau pateiktų skaičių. (2 dalis)\n1. Disciplina A. Žinojimas, kad gali padaryti.\n2. Darbas komandoje B. Studijų ir mokslo įstaiga.\n3. Universitetas C. Nustatytos tvarkos laikymasis.\n4. Pasitikėjimas D. Darbas kartu su kitais.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "C", marks: 2, contextNote: "For “1. Disciplina”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "D", marks: 2, contextNote: "For “2. Darbas komandoje”" },
+    { id: "r-3", kind: "point", verbatim: "B", marks: 2, contextNote: "For “3. Universitetas”" },
+    { id: "r-4", kind: "point", verbatim: "A", marks: 2, contextNote: "For “4. Pasitikėjimas”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4719,6 +4804,33 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":4,"options":["Aktyviai","Mojuoja","Šoka","Siunčia oro bučinius","Daro atsispaudimus","Randa savo būdą susikalbėti"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TREČIA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Lithuanian 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2025-ol-a-3-g", topicId: "lithuanian-2-1", conceptId: "sudarykite-sakinius-irasykite-atsakymo-raide-prie",
+    section: "U3", questionRef: "2025 OL Section A Q3(g)",
+    stem: "Trečia užduotis",
+    questionText: "Sudarykite sakinius. Įrašykite atsakymo raidę prie žemiau pateiktų skaičių. (3 dalis)\n1. Portalas sulaukė A. žiniasklaida.\n2. Žinia pasiekė B. komplimentų.\n3. Plačiai rašė C. sėkmės.\n4. Įžymūs žmonės negailėjo D. didelę skaitytojų auditoriją.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "C", marks: 3, contextNote: "For “1. Portalas sulaukė”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "D", marks: 3, contextNote: "For “2. Žinia pasiekė”" },
+    { id: "r-3", kind: "point", verbatim: "A", marks: 3, contextNote: "For “3. Plačiai rašė”" },
+    { id: "r-4", kind: "point", verbatim: "B", marks: 3, contextNote: "For “4. Įžymūs žmonės negailėjo”" },
     ],
     sourceMaterial: {
           "kind": "source-text",
