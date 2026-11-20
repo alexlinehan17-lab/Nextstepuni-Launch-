@@ -71,6 +71,16 @@ REVIEWED = {
     # 2022 Higher Q3 (listed only as "experiment Q3 other"): the rate of decomposition of hydrogen peroxide, tagged
     # as June 2022 Higher Q3's rate experiment is: 6.1 Reaction Rates, then 6.2 Factors Affecting Rates.
     (2022, 'higher', '3'): ['chemistry-5-0', 'chemistry-5-1'],
+    # 2022 Ordinary Q1 (not listed): the recrystallisation of benzoic acid and its melting point, tagged as June 2024
+    # Higher Q2's recrystallisation is: 7.3 Organic Reaction Types, then 7.4 Organic Natural Products.
+    (2022, 'ordinary', '1'): ['chemistry-6-2', 'chemistry-6-3'],
+    # 2022 Ordinary Q2 (not listed): an acid-base titration with a standard solution, tagged as every June Ordinary Q2
+    # titration from 2014 to 2026 (bar 2017's one tag, 2022's and 2024's) is: 4.3 Volumetric Analysis, then 4.1
+    # Concentration of Solutions.
+    (2022, 'ordinary', '2'): ['chemistry-3-2', 'chemistry-3-0'],
+    # 2022 Ordinary Q3 (listed only as an experiment question): the dissolved solids in seawater, tagged as June 2023
+    # Ordinary Q3's is: 9.4 Water Analysis, then 4.1 Concentration of Solutions.
+    (2022, 'ordinary', '3'): ['chemistry-8-3', 'chemistry-3-0'],
 }
 
 

@@ -133,7 +133,7 @@ const ADMITTED_DEFERRED = new Set([
   // join when their listening is carded, which waits on the deferred recordings.
   ...[2022, 2023].flatMap(year => ['ALP000', 'GLP000'].map(booklet => `french|${year}|LC010${booklet}BV-deferred.pdf`)),
   // Chemistry: the paper of each carded deferred sitting (2022 Higher, 2022 Ordinary, 2023 Higher; one booklet).
-  'chemistry|2022|LC022ALP000EV-deferred.pdf',
+  'chemistry|2022|LC022ALP000EV-deferred.pdf', 'chemistry|2022|LC022GLP000EV-deferred.pdf',
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {

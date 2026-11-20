@@ -7917,5 +7917,92 @@
   "description": "The marking scheme's own print of its answer to 2022 HL Q11(b) (deferred sitting), as the State Examinations Commission set it: DETERMINE: 0.0025 moles sulfuric limiting / zinc in excess 0.0031 moles (12), with its working: 25 × 0.10 over 1000 = 0.0025 moles sulfuric acid // 0.20 over 65 = 0.0031 moles Zn (6 + 3); ⇒ sulfuric limiting / zinc in excess (3); [Work must be shown for marks to be awarded].",
   "questionRef": "2022 HL Q11(b) — Deferred sitting",
   "solution": true
+ },
+ {
+  "file": "chemistry-2022-OL-deferred-paper-q1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Five drawings in a table, each labelled with its stage of the recrystallisation: Dissolving (a beaker of solid stirred with a dropper), Hot filtration (a beaker poured through a fluted filter paper in a funnel into a conical flask), Crystals reforming (crystals at the bottom of a conical flask), Suction filtration (crystals poured onto a Buchner funnel on a side-arm flask, its side arm labelled \"suction\" and its base labelled \"A\"), and Drying (crystals spread on a dish).",
+  "questionRef": "2022 OL Q1 — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-OL-deferred-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Three pieces of equipment drawn one above the other: A, a filter funnel; B, a graduated beaker; C, a Bunsen burner.",
+  "questionRef": "2022 OL Q3(a) — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-OL-deferred-paper-q4i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white photograph of a woman with her hair tied up, her hand at her cheek, wearing a dark dress with a pleated light bodice: the scientist the question asks the student to name.",
+  "questionRef": "2022 OL Q4(i) — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-OL-deferred-paper-q5b-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Question 5(b)(i) as printed: \"State the number of protons, neutrons and electrons in an atom of lithium, ⁷₃Li.\", the symbol Li with the mass number 7 above and the atomic number 3 below.",
+  "questionRef": "2022 OL Q5(b)(i) — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-OL-deferred-paper-q5b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a small piece of metal held in tweezers above a glass trough of water, labelled \"sodium\", \"tweezers\", \"trough\" and \"water\".",
+  "questionRef": "2022 OL Q5(b)(iii) — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-OL-deferred-paper-q7a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Apparatus for testing limescale: a stoppered test tube, labelled A, holding the \"limescale and acid\" (labelled), with a delivery tube from its top bent down into a second test tube, labelled B, that holds a liquid labelled X, bubbles rising through it.",
+  "questionRef": "2022 OL Q7(a) — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-OL-deferred-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The reaction scheme: C₂H₄ (A) converts to CH₃CH₂OH (B) by X, and back by Z (two arrows, X forward above, Z back below); CH₃CH₂OH (B) converts to CH₃COOH (C) by Y.",
+  "questionRef": "2022 OL Q8 — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-OL-deferred-paper-q9.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The results as a table: Time (seconds) 0, 30, 60, 90, 120, 150, 180 and 210 against Volume O₂ (cm³) 0, 40, 70, 90, 100, 104, 105 and 105.",
+  "questionRef": "2022 OL Q9 — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-OL-deferred-paper-q11d-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two ball-and-stick drawings of the crystalline forms of carbon: A, a branching three-dimensional network in which each atom joins four others; B, flat hexagonal rings stacked in layers, the layers joined by dashed lines.",
+  "questionRef": "2022 OL Q11(d)B — Deferred sitting"
+ },
+ {
+  "file": "chemistry-2022-OL-deferred-scheme-q2e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 OL Q2(e) (deferred sitting), as the State Examinations Commission set it: the answer 0.1 – 0.111 mol l⁻¹ (12), with its working: V₁ × M₁ over n₁ = V₂ × M₂ over n₂ (3); 25 × 0.10 over 1 = (3); 22.5 × M over 1 (3); M = 0.111 mol l⁻¹ [0.1 – 0.111 mol l⁻¹] (3); \"Last (3) is available consequentially for correct calculation of formula incorrectly filled out.]\"; or 25 × 0.10 over 1000 = 0.0025 moles NaOH (6), ⇒ 0.0025 moles HCl (3), M = 0.0025 × 1000 over 22.5 = 0.111 mol l⁻¹ [0.1 – 0.111 mol l⁻¹] (3).",
+  "questionRef": "2022 OL Q2(e) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-OL-deferred-scheme-q4h.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 OL Q4(h) (deferred sitting), as the State Examinations Commission set it: CALCULATE (6), with its working: 40 + 12 + (3 × 16) = 100* (3); 3 × 16 over 100 × 100 = 48% (3); * Addition must be shown for error to be treated as a slip.",
+  "questionRef": "2022 OL Q4(h) — Deferred sitting",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2022-OL-deferred-scheme-q10c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2022 OL Q10(c)(ii) (deferred sitting), as the State Examinations Commission set it: WRITE: Kc = [NH₃]² over [H₂]³[N₂] (6); [Allow (3) for numerator only correct; allow (3) for denominator only correct; allow (3) for correct numerator and denominator inverted.]",
+  "questionRef": "2022 OL Q10(c)(ii) — Deferred sitting",
+  "solution": true
  }
 ]

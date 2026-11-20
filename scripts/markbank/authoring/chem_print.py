@@ -1238,7 +1238,13 @@ DEFERRED_SCHEME_REPAIRS = {
     (2022, 'hl'): (('ANY 0NE:', 'ANY ONE:'), ('gamma (→) is more', 'gamma (γ) is more'),
                    ('gamma (→) travels', 'gamma (γ) travels')),
 }
-
+# A deferred scheme's part markers printed wrong, each named by its page and place: (page, x0, y0, printed, meant).
+DEFERRED_SCHEME_MARKERS = {
+    # 2022 OL: Q3(e) prints its second roman as "(i)" (PDF page 7, x 142, y 430), over (ii)'s answer "14000 p.p.m.";
+    # Q8 prints "(e)" twice, the second (page 12, x 57, y 290) over (f)'s answer "A / ethene / C₂H₄ poly(ethene)",
+    # the paper's "Which one of these compounds polymerises to give a widely used plastic?".
+    (2022, 'ol'): ((7, 142, 430, '(i)', '(ii)'), (12, 57, 290, '(e)', '(f)')),
+}
 
 
 class Printed:
@@ -1286,6 +1292,11 @@ class Printed:
                 hits = [l for l in self.scheme_lines if printed in l.text]
                 assert len(hits) == 1, (deferred_key, printed, [l.text for l in hits])
                 hits[0].text = hits[0].text.replace(printed, meant)
+            for page, x0, y0, printed, meant in DEFERRED_SCHEME_MARKERS.get(deferred_key, ()):
+                hits = [l for l in self.scheme_lines
+                        if l.page == page and abs(l.x0 - x0) < 1.5 and abs(l.y0 - y0) < 1.5]
+                assert len(hits) == 1 and hits[0].text == printed, (deferred_key, page, x0, y0, hits)
+                hits[0].text = meant
         if (year, lvl) == (2019, 'hl'):
             # 2019 HL scheme PDF page 29: a "(c)" at the letters' margin (x 49.6,
             # y 339.4) lies under the white fill of Q11(b)(ii)'s third working box;
