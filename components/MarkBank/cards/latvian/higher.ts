@@ -120,7 +120,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2013 Higher Level — © State Examinations Commission.",
     id: "lv-2013-hl-i-1", topicId: "latvian-0-0", conceptId: "izskaidrojiet-saviem-vardiem-frazes-cemodanus-izpakot",
     section: "U1", questionRef: "2013 HL Section I Q1",
-    questionText: "Izskaidrojiet saviem vārdiem frāzes (a) čemodānus izpakot (3.rindkopa) - (b) zinātņu klans (3.rindkopa) (c) varētu piemist skolotāja dotumi (4.rindkopa) (d) jābūt iedvesmai (7.rindkopa) (e) nebija sevi jādzen strādāt (9.rindkopa)",
+    questionText: "Izskaidrojiet saviem vārdiem frāzes! a) čemodānus izpakot (3.rindkopa) - b) zinātņu klans (3.rindkopa) c) varētu piemist skolotāja dotumi (4.rindkopa) d) jābūt iedvesmai (7.rindkopa) e) nebija sevi jādzen strādāt (9.rindkopa)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "izkrāmēt ceļojuma somu", marks: null, contextNote: "The scheme prints this as the meaning of \"čemodānus izpakot (3.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN." },
@@ -151,7 +151,7 @@ export const CARDS: SecCard[] = [
     questionText: "Izskaidrojiet vārdus un frāzes! (a) nokausēt (2.fragments) (b) plaģiāts (4.fragments) (c) aklas sekošanas nācija (4.fragments) (d) gandarījums (5.fragments) (e) ņemt par pilnu (6.fragments)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "nogurdināt, nostrādināt (2.fragments)", marks: null, contextNote: "The scheme prints this as the meaning of \"nokausēt\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-1", kind: "point", verbatim: "nogurdināt, nostrādināt", marks: null, contextNote: "The scheme prints this as the meaning of \"nokausēt\". The examination prints this question in Latvian and it is answered in LATVIAN." },
     { id: "r-2", kind: "point", verbatim: "cita autora darba vai tā daļas (4.fragments) (literāra, zinātniska darba, izgudrojuma u.tml.) uzdošana par savu, publicēšana ar savu vārdu vai pseidonīmu", marks: null, contextNote: "The scheme prints this as the meaning of \"plaģiāts\". The examination prints this question in Latvian and it is answered in LATVIAN." },
     { id: "r-3", kind: "point", verbatim: "tauta, kas (4.fragments) nedomā, nerada, ar kuru viegli manipulēt; tauta, kuras vietā domā citi", marks: null, contextNote: "The scheme prints this as the meaning of \"aklas sekošanas nācija\". The examination prints this question in Latvian and it is answered in LATVIAN." },
     { id: "r-4", kind: "point", verbatim: "apmierinājums, prieks par (5.fragments) paveikto", marks: null, contextNote: "The scheme prints this as the meaning of \"gandarījums\". The examination prints this question in Latvian and it is answered in LATVIAN." },
@@ -179,11 +179,11 @@ export const CARDS: SecCard[] = [
     questionText: "Izskaidrojiet vārdus un frāzes! (a) glāstekrāna ierocis (1.rindkopa) (b) stukačs (3.rindkopa) (c) virtuālās sienas (4.rindkopa) (d) anonīmu cilvēku trofejas (4.rindkopa) (e) knipsēšana (7.rindkopa)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "skārienjūtīgais telefons, viedtālrunis (1.rindkopa)", marks: null, contextNote: "The scheme prints this as the meaning of \"glāstekrāna ierocis\". The examination prints this question in Latvian and it is answered in LATVIAN." },
-    { id: "r-2", kind: "point", verbatim: "ziņu pienesējs, nosūdzētājs (3.rindkopa)", marks: null, contextNote: "The scheme prints this as the meaning of \"stukačs\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-1", kind: "point", verbatim: "skārienjūtīgais telefons, viedtālrunis", marks: null, contextNote: "The scheme prints this as the meaning of \"glāstekrāna ierocis\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-2", kind: "point", verbatim: "ziņu pienesējs, nosūdzētājs", marks: null, contextNote: "The scheme prints this as the meaning of \"stukačs\". The examination prints this question in Latvian and it is answered in LATVIAN." },
     { id: "r-3", kind: "point", verbatim: "virtuālā vide, dažādi interneta portāli, kuros (4.rindkopa) izvietojam fotogrāfijas", marks: null, contextNote: "The scheme prints this as the meaning of \"virtuālās sienas\". The examination prints this question in Latvian and it is answered in LATVIAN." },
     { id: "r-4", kind: "point", verbatim: "anonīmu, nezināmu cilvēku (4.rindkopa) fotogrāfijas", marks: null, contextNote: "The scheme prints this as the meaning of \"anonīmu cilvēku trofejas\". The examination prints this question in Latvian and it is answered in LATVIAN." },
-    { id: "r-5", kind: "point", verbatim: "fotografēšana (7.rindkopa)", marks: null, contextNote: "The scheme prints this as the meaning of \"knipsēšana\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-5", kind: "point", verbatim: "fotografēšana", marks: null, contextNote: "The scheme prints this as the meaning of \"knipsēšana\". The examination prints this question in Latvian and it is answered in LATVIAN." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -235,11 +235,11 @@ export const CARDS: SecCard[] = [
     questionText: "Izskaidrojiet vārdus un vārdu savienojumus! (a) mudināt – (10. rinda) (b) pirmās vēsmas – (21. rinda) (c) vēstījums uz ārpusi – (28. rinda) (d) pārstāvēt – (33. rinda) (e) privilēģija – (36. rinda)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(10. rinda) ierosināt, ieteikt", marks: null, contextNote: "The scheme prints this as the meaning of \"mudināt\". The examination prints this question in Latvian and it is answered in LATVIAN." },
-    { id: "r-2", kind: "point", verbatim: "(21. rinda) pirmās reakcijas, pazīmes, kustības, sašūpošanās", marks: null, contextNote: "The scheme prints this as the meaning of \"pirmās vēsmas\". The examination prints this question in Latvian and it is answered in LATVIAN." },
-    { id: "r-3", kind: "point", verbatim: "(28. rinda) ziņot uz ārzemēm, informēt pasauli", marks: null, contextNote: "The scheme prints this as the meaning of \"vēstījums uz ārpusi\". The examination prints this question in Latvian and it is answered in LATVIAN." },
-    { id: "r-4", kind: "point", verbatim: "(33. rinda) izteikt kā viedokli, runāt valsts vārdā", marks: null, contextNote: "The scheme prints this as the meaning of \"pārstāvēt\". The examination prints this question in Latvian and it is answered in LATVIAN." },
-    { id: "r-5", kind: "point", verbatim: "(36. rinda) priekšrocība, iespēja", marks: null, contextNote: "The scheme prints this as the meaning of \"privilēģija\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-1", kind: "point", verbatim: "ierosināt, ieteikt", marks: null, contextNote: "The scheme prints this as the meaning of \"mudināt\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-2", kind: "point", verbatim: "pirmās reakcijas, pazīmes, kustības, sašūpošanās", marks: null, contextNote: "The scheme prints this as the meaning of \"pirmās vēsmas\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-3", kind: "point", verbatim: "ziņot uz ārzemēm, informēt pasauli", marks: null, contextNote: "The scheme prints this as the meaning of \"vēstījums uz ārpusi\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-4", kind: "point", verbatim: "izteikt kā viedokli, runāt valsts vārdā", marks: null, contextNote: "The scheme prints this as the meaning of \"pārstāvēt\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-5", kind: "point", verbatim: "priekšrocība, iespēja", marks: null, contextNote: "The scheme prints this as the meaning of \"privilēģija\". The examination prints this question in Latvian and it is answered in LATVIAN." },
     ],
     sourceMaterial: {
           "kind": "source-text",

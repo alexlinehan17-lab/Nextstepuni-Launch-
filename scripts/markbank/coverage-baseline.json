@@ -499,12 +499,12 @@
   },
   "latvian": {
     "cards": 20,
-    "contentHash": "43eb8b6b9bc1be46",
-    "coveragePct": 100.0,
+    "contentHash": "2c15417f3fbd893c",
+    "coveragePct": 99.5,
     "covered": 68,
     "excluded": 150,
-    "leaves": 218,
-    "open": 0,
+    "leaves": 219,
+    "open": 1,
     "orphans": 0,
     "papers": {
       "count": 17,

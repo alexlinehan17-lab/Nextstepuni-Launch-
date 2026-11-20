@@ -200,7 +200,7 @@
   "topicId": "latvian-0-0",
   "conceptId": "izskaidrojiet-saviem-vardiem-frazes-cemodanus-izpakot",
   "questionRef": "2013 HL Section I Q1",
-  "questionText": "Izskaidrojiet saviem vārdiem frāzes (a) čemodānus izpakot (3.rindkopa) - (b) zinātņu klans (3.rindkopa) (c) varētu piemist skolotāja dotumi (4.rindkopa) (d) jābūt iedvesmai (7.rindkopa) (e) nebija sevi jādzen strādāt (9.rindkopa)",
+  "questionText": "Izskaidrojiet saviem vārdiem frāzes! a) čemodānus izpakot (3.rindkopa) - b) zinātņu klans (3.rindkopa) c) varētu piemist skolotāja dotumi (4.rindkopa) d) jābūt iedvesmai (7.rindkopa) e) nebija sevi jādzen strādāt (9.rindkopa)",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -273,7 +273,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "nogurdināt, nostrādināt (2.fragments)",
+    "verbatim": "nogurdināt, nostrādināt",
     "marks": null,
     "contextNote": "The scheme prints this as the meaning of \"nokausēt\". The examination prints this question in Latvian and it is answered in LATVIAN."
    },
@@ -337,14 +337,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "skārienjūtīgais telefons, viedtālrunis (1.rindkopa)",
+    "verbatim": "skārienjūtīgais telefons, viedtālrunis",
     "marks": null,
     "contextNote": "The scheme prints this as the meaning of \"glāstekrāna ierocis\". The examination prints this question in Latvian and it is answered in LATVIAN."
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "ziņu pienesējs, nosūdzētājs (3.rindkopa)",
+    "verbatim": "ziņu pienesējs, nosūdzētājs",
     "marks": null,
     "contextNote": "The scheme prints this as the meaning of \"stukačs\". The examination prints this question in Latvian and it is answered in LATVIAN."
    },
@@ -365,7 +365,7 @@
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "fotografēšana (7.rindkopa)",
+    "verbatim": "fotografēšana",
     "marks": null,
     "contextNote": "The scheme prints this as the meaning of \"knipsēšana\". The examination prints this question in Latvian and it is answered in LATVIAN."
    }
@@ -465,35 +465,35 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "(10. rinda) ierosināt, ieteikt",
+    "verbatim": "ierosināt, ieteikt",
     "marks": null,
     "contextNote": "The scheme prints this as the meaning of \"mudināt\". The examination prints this question in Latvian and it is answered in LATVIAN."
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "(21. rinda) pirmās reakcijas, pazīmes, kustības, sašūpošanās",
+    "verbatim": "pirmās reakcijas, pazīmes, kustības, sašūpošanās",
     "marks": null,
     "contextNote": "The scheme prints this as the meaning of \"pirmās vēsmas\". The examination prints this question in Latvian and it is answered in LATVIAN."
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "(28. rinda) ziņot uz ārzemēm, informēt pasauli",
+    "verbatim": "ziņot uz ārzemēm, informēt pasauli",
     "marks": null,
     "contextNote": "The scheme prints this as the meaning of \"vēstījums uz ārpusi\". The examination prints this question in Latvian and it is answered in LATVIAN."
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "(33. rinda) izteikt kā viedokli, runāt valsts vārdā",
+    "verbatim": "izteikt kā viedokli, runāt valsts vārdā",
     "marks": null,
     "contextNote": "The scheme prints this as the meaning of \"pārstāvēt\". The examination prints this question in Latvian and it is answered in LATVIAN."
    },
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "(36. rinda) priekšrocība, iespēja",
+    "verbatim": "priekšrocība, iespēja",
     "marks": null,
     "contextNote": "The scheme prints this as the meaning of \"privilēģija\". The examination prints this question in Latvian and it is answered in LATVIAN."
    }
