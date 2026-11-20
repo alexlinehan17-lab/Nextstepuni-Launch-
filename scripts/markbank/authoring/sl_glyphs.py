@@ -48,6 +48,7 @@ CROATIAN = set('čćđšžČĆĐŠŽ')
 # Greek and Coptic (U+0370-03FF) and Greek Extended (U+1F00-1FFF), as build-deck's REAL class
 GREEK = {chr(c) for c in list(range(0x370, 0x400)) + list(range(0x1F00, 0x2000))}
 BULGARIAN = set('абвгдежзийклмнопрстуфхцчшщъьюяѝАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЮЯЍ')
+HUNGARIAN = set('áéíóöőúüűÁÉÍÓÖŐÚÜŰ')
 MIN_SIGHTINGS, MIN_SHARE = 3, 0.95
 
 
@@ -160,6 +161,14 @@ SUBJECTS = {
                                   'TimesNewRoman|513': '\u039b', 'TimesNewRoman|516': '\u039e',
                                   'TimesNewRoman|518': '\u03a0', 'TimesNewRoman|522': '\u03a5'}, 'suspect': set(),
                      'standin': lambda c: False, 'positional': True},
+    # Hungarian 2015 (scheme): a Type0 Times New Roman with no Unicode for some
+    # glyphs; rawdict reports their ids, read as Ę Ħ ĥ where the render shows
+    # ő ű Ű (second drafter, 20 Nov). By position, as Czech. The pass misaligns
+    # on the cover's "Hungarian" / "Higher Level" (lines 10-11: it moved one
+    # glyph across them): those two lines are kept as extracted (no card uses
+    # them); every other changed line is glyph-for-glyph, same length.
+    'hungarian': {'docs': {2015: ('scheme',)}, 'alphabet': HUNGARIAN, 'rendered': {}, 'suspect': set(),
+                  'standin': lambda c: False, 'positional': True},
     'bulgarian': {'docs': {2015: ('scheme',)}, 'alphabet': BULGARIAN,
                   'rendered': {'TimesNewRoman|630': '\u044c'}, 'suspect': set(),
                   'standin': lambda c: False},
