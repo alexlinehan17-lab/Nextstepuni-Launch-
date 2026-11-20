@@ -97,18 +97,20 @@ HEAD = re.compile(
 # five expressions "а) б) в) г) д)" — five Cyrillic letters that look like
 # Latin ones and are not — and a Latin-only token class read none of them, so
 # every Bulgarian citation naming a part failed to parse and its exclusions
-# reported stale forever. The mirror of this grammar in
-# test/markBankCoverage.test.ts reads the same class.
-PART_TOKEN = re.compile(
-    r'\s*(?:\(\s*([A-Za-z\u0430-\u044f\u0410-\u042f]{1,4}|\d{1,2})\s*\)'
-    r'|([\u2013\u2014-])|(,|\band\b))')
-# A part letter is not always a LATIN letter: Maltese letters the five
+# reported stale forever.
+# A part letter is not always a LATIN letter either: Maltese letters the five
 # expressions of every Question 1 "a) b) ċ) d) e)", in the Maltese alphabet,
-# and a citation names the marker the candidate saw. The mirror of this class
-# is TAIL in test/markBankCoverage.test.ts, and the two have to agree.
+# and a citation names the marker the candidate saw.
+# ONE class holds all three alphabets. It was once written twice, the Maltese
+# copy after the Cyrillic one, and the second silently replaced the first: the
+# parser stopped at "(а)", read "Q1(а)" as the whole of Q1, and a Bulgarian
+# card for one expression reported all five covered (2025: one card, five
+# asks). The mirror of this class is TAIL in test/markBankCoverage.test.ts,
+# which already held the union; the two have to agree.
 PART_TOKEN = re.compile(
-    r'\s*(?:\(\s*([A-Za-z\u010b\u010a\u0121\u0120\u0127\u0126'
-    r'\u017c\u017b]{1,4}|\d{1,2})\s*\)|([\u2013\u2014-])|(,|\band\b))')
+    r'\s*(?:\(\s*([A-Za-z\u010b\u010a\u0121\u0120\u0127\u0126\u017c\u017b'
+    r'\u0430-\u044f\u0410-\u042f]{1,4}|\d{1,2})\s*\)'
+    r'|([\u2013\u2014-])|(,|\band\b))')
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
           'xi', 'xii']
 LETTERS = 'abcdefghijkl'
