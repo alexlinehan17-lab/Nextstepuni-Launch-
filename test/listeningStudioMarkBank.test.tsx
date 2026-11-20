@@ -34,6 +34,7 @@ vi.mock('@/utils/programmeAnalytics', () => ({ trackProgrammeEvent: mocks.track 
 vi.mock('@/components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new Promise(() => {})) }));
 import MarkBank from '@/components/MarkBank/MarkBank';
 import { CARDS as MUSIC_HIGHER } from '@/components/MarkBank/cards/music/higher';
+import { listeningSittings } from '@/components/ListeningStudio/model';
 
 const MUSIC_2025 = MUSIC_HIGHER.filter(card => card.year === 2025);
 const RECORDED = MUSIC_2025.filter(card => card.audioMaterial);
@@ -72,8 +73,9 @@ describe('Listening Studio', () => {
     const paper = await screen.findByRole('region', { name: '2025 Higher' });
     expect(within(paper).getAllByRole('button')).toHaveLength(6);
     expect(within(paper).getByRole('button', { name: /^Question 5/ })).toHaveTextContent('3 extracts · 6 parts · 15 marks');
-    // Until its sound files are uploaded, a Music paper says where its recording is.
-    expect(within(paper).getByText('Recording opens on the SEC site')).toBeInTheDocument();
+    // A paper says where its recording is: here once its sound files are uploaded, the SEC's site until then.
+    const playsHere = listeningSittings(MUSIC_2025)[0].playsInApp;
+    expect(within(paper).getByText(playsHere ? 'Recording plays here' : 'Recording opens on the SEC site')).toBeInTheDocument();
     expect(mocks.library).not.toHaveBeenCalled();
   });
 
