@@ -354,6 +354,10 @@ MASKS = {
     # (scheme page 16, y 789), past the page number "16" (x 289-300, y 781-792; pixels 535-558 x
     # 829-852 of the print), whited out; the answer column's last line ends at row 744.
     'chemistry-2022-HL-deferred-scheme-q8e.png': [(531, 825, 563, 856)],
+    # 2023 HL deferred Q2(c): the loose fluted filter paper's tip prints level with (c)'s mark "(20)" (paper page 3,
+    # x 519-539, y 669-681) and the funnel's rim reaches x 522.7, so the crop to x 525 catches "(2" (pixels 300-310 x
+    # 566-587), whited out; the drawing's own pixels in those rows end at column 186.
+    'chemistry-2023-HL-deferred-paper-q2c.png': [(296, 562, 311, 592)],
     # 2022 OL Q8(a): the mark "(17)" at the end of (iii)'s last line (paper page 9, x 519-541,
     # y 360-372; dark pixels 975-1012 x 307-327); the line's own text ends at column 945.
     'chemistry-2022-OL-paper-q8a-print.png': [(971, 303, 1017, 332)],

@@ -4459,5 +4459,69 @@
     "secondary": "chemistry-4-1"
    }
   ]
+ },
+ {
+  "subjectId": "chemistry",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC022ALP000EV-deferred.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "chemistry-8-0",
+    "secondary": "chemistry-8-1"
+   },
+   {
+    "n": "2",
+    "primary": "chemistry-4-1",
+    "secondary": "chemistry-6-2"
+   },
+   {
+    "n": "3",
+    "primary": "chemistry-5-0",
+    "secondary": "chemistry-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "chemistry-0-1",
+    "secondary": "chemistry-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "chemistry-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "chemistry-4-0",
+    "secondary": "chemistry-4-1"
+   },
+   {
+    "n": "7",
+    "primary": "chemistry-7-0",
+    "secondary": "chemistry-7-1"
+   },
+   {
+    "n": "8",
+    "primary": "chemistry-4-0",
+    "secondary": "chemistry-4-1"
+   },
+   {
+    "n": "9",
+    "primary": "chemistry-3-0",
+    "secondary": "chemistry-3-1"
+   },
+   {
+    "n": "10",
+    "primary": "chemistry-0-1",
+    "secondary": "chemistry-6-4"
+   },
+   {
+    "n": "11",
+    "primary": "chemistry-1-0",
+    "secondary": "chemistry-1-1"
+   }
+  ]
  }
 ]

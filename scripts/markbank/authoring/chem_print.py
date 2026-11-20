@@ -1237,7 +1237,12 @@ DEFERRED_SCHEME_REPAIRS = {
     # at), which the shared glyph map reads as Wingdings 3's 0x67, "→".
     (2022, 'hl'): (('ANY 0NE:', 'ANY ONE:'), ('gamma (→) is more', 'gamma (γ) is more'),
                    ('gamma (→) travels', 'gamma (γ) travels')),
+    # Q11(a)(iii) prints "(Hδ+)" and "(Clδ–)" with the delta in SymbolMT (PDF page 25, x 170, y 233 and 247; 0x64,
+    # cropped and looked at), its sign set as a script after the bracket: no shared map reads the glyph (and June's
+    # 2017 Higher scheme holds the same glyph, so it is repaired here, for this scheme, not in SYMBOL_FONT).
+    (2023, 'hl'): (('(H\uf064)+', '(Hδ+)'), ('(Cl\uf064)–', '(Clδ–)')),
 }
+DEFERRED_FOOTER = re.compile(r'^(?=.)(ATAL Chemistry 20\d\d)?\s*(Leaving Certificate Deferred Examination \(M\d+C\))?$')
 # A deferred scheme's part markers printed wrong, each named by its page and place: (page, x0, y0, printed, meant).
 DEFERRED_SCHEME_MARKERS = {
     # 2022 OL: Q3(e) prints its second roman as "(i)" (PDF page 7, x 142, y 430), over (ii)'s answer "14000 p.p.m.";
@@ -1292,6 +1297,10 @@ class Printed:
                 hits = [l for l in self.scheme_lines if printed in l.text]
                 assert len(hits) == 1, (deferred_key, printed, [l.text for l in hits])
                 hits[0].text = hits[0].text.replace(printed, meant)
+            # The 2023 Higher deferred scheme's running footer, "ATAL Chemistry 2023" over "Leaving Certificate
+            # Deferred Examination (M34C)" (every answer page, x 57, y 782 and 796), sometimes read as one run, which
+            # FOOTER does not read: it was filed as answer text.
+            self.scheme_lines = [l for l in self.scheme_lines if not (l.y0 > 765 and DEFERRED_FOOTER.match(l.text))]
             for page, x0, y0, printed, meant in DEFERRED_SCHEME_MARKERS.get(deferred_key, ()):
                 hits = [l for l in self.scheme_lines
                         if l.page == page and abs(l.x0 - x0) < 1.5 and abs(l.y0 - y0) < 1.5]

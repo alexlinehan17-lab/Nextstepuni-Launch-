@@ -185,9 +185,10 @@ describe('Chemistry exam-topic registry', () => {
     const all = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'chemistry');
     const papers = all.filter(paper => !paper.fileid.endsWith('-deferred.pdf'));
     expect(all.filter(paper => paper.fileid.endsWith('-deferred.pdf'))
-      .map(paper => `${paper.year}|${paper.level}|${paper.fileid}|${paper.q.map(question => question.n).join(',')}`))
+      .map(paper => `${paper.year}|${paper.level}|${paper.fileid}|${paper.q.map(question => question.n).join(',')}`).sort())
       .toEqual(['2022|higher|LC022ALP000EV-deferred.pdf|1,2,3,4,5,6,7,8,9,10,11',
-        '2022|ordinary|LC022GLP000EV-deferred.pdf|1,2,3,4,5,6,7,8,9,10,11']);
+        '2022|ordinary|LC022GLP000EV-deferred.pdf|1,2,3,4,5,6,7,8,9,10,11',
+        '2023|higher|LC022ALP000EV-deferred.pdf|1,2,3,4,5,6,7,8,9,10,11']);
     expect(chemistryEvidence.summary).toMatchObject({
       localPaperVariants: 68,
       localPhysicalCards: 748,
@@ -310,9 +311,9 @@ describe('Chemistry exam-topic registry', () => {
     ))).toBe(false);
   });
 
-  it('surfaces all 374 entitled June questions and 22 deferred ones through the single model\'s 34 headings', () => {
+  it('surfaces all 374 entitled June questions and 33 deferred ones through the single model\'s 34 headings', () => {
     expect(subjectAtlasStats('chemistry')).toMatchObject({
-      questions: 374 + 11 + 11,
+      questions: 374 + 11 + 11 + 11,
       topics: 34,
       yearMin: 2010,
       yearMax: 2026,

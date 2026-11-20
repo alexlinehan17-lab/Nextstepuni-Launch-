@@ -81,6 +81,10 @@ REVIEWED = {
     # 2022 Ordinary Q3 (listed only as an experiment question): the dissolved solids in seawater, tagged as June 2023
     # Ordinary Q3's is: 9.4 Water Analysis, then 4.1 Concentration of Solutions.
     (2022, 'ordinary', '3'): ['chemistry-8-3', 'chemistry-3-0'],
+    # 2023 Higher Q2 (listed only as "experiment Q2 organic"): tests on organic compounds and the recrystallisation
+    # of benzoic acid, tagged as June 2022 and 2023 Higher Q2's organic experiments are: chemistry-4-1, then
+    # chemistry-6-2 (7.3 Organic Reaction Types).
+    (2023, 'higher', '2'): ['chemistry-4-1', 'chemistry-6-2'],
 }
 
 
