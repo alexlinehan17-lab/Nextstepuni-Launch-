@@ -971,18 +971,9 @@ PRINTED_EXAMPLES = {
     # Polish and Lithuanian (languages-q3 lane, 19 Nov 2026; CARD-STANDARD 10d): rows each
     # paper prints already answered as the worked example. Each was rendered and read on its
     # paper page (bold, pre-ticked or pre-numbered) and on its scheme page (a dash, 0 or no mark).
-    ('lithuanian', 2023, 'ol', 'Section A Q1(h)(iii)'): (
-        'Ką veikė Severija? Sunumeruokite įvykius eilės tvarka pagal pavyzdį. (3 dalis) Prirakino dviratį. 2',
-        'paper p6: the ordering row is printed bold with "2" already in its box ("pagal pavyzdį"); scheme p5 prints it bold and unbracketed and pays "(4 × 2 marks)" to the four blank rows only.'),
-    ('lithuanian', 2023, 'ol', 'Section A Q1(h)(vi)'): (
-        'Ką veikė Severija? Sunumeruokite įvykius eilės tvarka pagal pavyzdį. (3 dalis) Ėmė lyti. 1',
-        'paper p6: the ordering row is printed bold with "1" already in its box ("pagal pavyzdį"); scheme p5 prints it bold and unbracketed and pays "(4 × 2 marks)" to the four blank rows only.'),
     ('lithuanian', 2024, 'ol', 'Section A Q1(e)(i)'): (
         'Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) paltas viena užkalbintų sustingusi sukryžiuotos mėlynas ilgas paltas',
         'paper p5: row (i) "mėlynas ilgas" is printed with "paltas" already written in (italic); scheme p4 pays "4 Marks (4 x 1)" to rows (ii)-(v).'),
-    ('lithuanian', 2025, 'ol', 'Section A Q1(f)(1)'): (
-        'Sudarykite sakinius. Įrašykite atsakymo raidę prie žemiau pateiktų skaičių. (2 dalis) Užlipo į palėpę A. ... atsargiai.',
-        'paper p5: the answer grid prints "C" already under 1 ("pagal pavyzdį"); scheme p4 pays "4 marks (4 x 1 mark)" to boxes 2-5.'),
     ('lithuanian', 2026, 'ol', 'Section A Q1(e)(i)'): (
         'Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) nepastebimai laiškus neprastos dokumentus portalus laikas bėga nepastebimai',
         'paper p5: row (i) "laikas bėga" is printed with "nepastebimai" already written in (italic); scheme p4 pays "4 Marks (4 x 1)" to rows (ii)-(v).'),
@@ -3840,6 +3831,85 @@ def census_eu(subject, year, level):
     files = [P.path] + ([P.aural_path] if P.aural_path else [])
     return set(texts), texts, files, P, S
 
+# CARD-STANDARD 10c for Lithuanian (coordinator, 20 Nov 2026): a matching,
+# ordering or tick grid the paper prints as ONE question -- boxes to fill
+# under one question letter -- is one ask, and one card with a claimable row
+# per box. lt_paper keys every box or row as an ask of its own; these grids
+# are folded back into the question that prints them. Decided by the paper's
+# own row labels, read on each page: a grid whose rows the paper prints with
+# their own (i)-(v) or 1.-5. labels as separate questions is NOT here (2024
+# and 2026 OL Q1(e), 2026 OL Q1(g) and Q2(h) stay row by row). The 36 live
+# true/false row cards (2022-2026 OL) are untouched: their ids are live.
+# Each entry names the grid's question and the exact child keys the walker
+# writes under it; the folded ask's words are the walker's own readings of
+# the booklet (the grid's printed instruction, then each row in order).
+LT_FOLDED_ASKS = {
+    # Matching grids: items numbered 1-n against options A-n, answered by
+    # letters in boxes under the numbers.
+    ('lithuanian', 2022, 'ol'): {
+        ('A', 1, 'h', None): [('A', 1, 'h', r) for r in ('1', '2', '3', '4', '5')],
+        ('A', 3, 'f', None): [('A', 3, 'f', r) for r in ('1', '2', '3', '4', '5')]},
+    # A1(h): an ordering grid whose rows print no labels ("Sunumeruokite
+    # įvykius eilės tvarka pagal pavyzdį"; rows (iii) and (vi) are the worked
+    # example, 10d, and carry no row on the card). LC Q2: a true/false tick
+    # grid over lettered statements (a)-(c).
+    ('lithuanian', 2023, 'ol'): {
+        ('A', 1, 'h', None): [('A', 1, 'h', r) for r in ('i', 'ii', 'iii', 'iv', 'v', 'vi')],
+        ('LC', 2, None, None): [('LC', 2, x, None) for x in ('a', 'b', 'c')]},
+    # A2(e), A3(e): matching grids. A2(h): a tick grid, "pažymėkite (✓), ką
+    # rasite Kondigno žaidime", five options, four ticked in the scheme. LC Q1:
+    # a true/false tick grid over (a)-(c) (the scheme heads it "(a)" with no
+    # number).
+    ('lithuanian', 2024, 'ol'): {
+        ('A', 2, 'e', None): [('A', 2, 'e', r) for r in ('1', '2', '3')],
+        ('A', 3, 'e', None): [('A', 3, 'e', r) for r in ('1', '2', '3')],
+        ('A', 2, 'h', None): [('A', 2, 'h', r) for r in ('i', 'ii', 'iii', 'iv', 'v')],
+        ('LC', 1, None, None): [('LC', 1, x, None) for x in ('a', 'b', 'c')]},
+    # Matching grids (A1(f) box 1 is the worked example, 10d), and the
+    # true/false tick grid LC Q3 over (a)-(c).
+    ('lithuanian', 2025, 'ol'): {
+        ('A', 1, 'f', None): [('A', 1, 'f', r) for r in ('1', '2', '3', '4', '5')],
+        ('A', 2, 'h', None): [('A', 2, 'h', r) for r in ('1', '2', '3', '4')],
+        ('A', 3, 'g', None): [('A', 3, 'g', r) for r in ('1', '2', '3', '4')],
+        ('LC', 3, None, None): [('LC', 3, x, None) for x in ('a', 'b', 'c')]},
+    # Matching grids, and the listening true/false tick grid LC Q2(a) over (i)-(iii).
+    ('lithuanian', 2026, 'ol'): {
+        ('A', 2, 'a', None): [('A', 2, 'a', r) for r in ('1', '2', '3')],
+        ('A', 3, 'g', None): [('A', 3, 'g', r) for r in ('1', '2', '3')],
+        ('LC', 2, 'a', None): [('LC', 2, 'a', r) for r in ('i', 'ii', 'iii')]},
+}
+
+
+def _lt_fold(subject, year, level, texts):
+    grids = LT_FOLDED_ASKS.get((subject, year, level))
+    if not grids:
+        return texts
+    out = dict(texts)
+    for parent, want in grids.items():
+        missing = [k for k in want if k not in texts]
+        if missing:
+            raise ValueError(f'{subject} {year} {level} {parent}: the walker no longer writes {missing}; '
+                             'review LT_FOLDED_ASKS')
+        # Every key the walker writes under the grid's question must be named:
+        # a row the table does not list would be folded silently otherwise.
+        depth = 3 if parent[2] is not None else 2
+        under = [k for k in texts if k[:depth] == parent[:depth] and k != parent]
+        stray = [k for k in under if k not in want]
+        if parent[2] is None:
+            stray = [k for k in stray if k[2] is not None and k[3] is None]
+        if stray:
+            raise ValueError(f'{subject} {year} {level} {parent}: the walker also writes {stray} under the grid')
+        if parent in texts:
+            raise ValueError(f'{subject} {year} {level} {parent}: the walker already writes the question itself')
+        bodies = [texts[k] for k in want]
+        head = os.path.commonprefix(bodies)
+        head = head[:head.rfind(' ') + 1] if ' ' in head else ''
+        for k in want:
+            del out[k]
+        out[parent] = ' '.join([head.strip()] + [b[len(head):].strip() for b in bodies]).strip()
+    return out
+
+
 def census_lt(subject, year, level):
     """Lithuanian, Latvian and Czech: the booklets one sitting prints.
 
@@ -3856,7 +3926,7 @@ def census_lt(subject, year, level):
 
     P = LtPaper(year, level, subject)
     S = LtScheme(year, level, subject)
-    texts = {ask.key: ask.full_text for ask in P.all_asks()}
+    texts = _lt_fold(subject, year, level, {ask.key: ask.full_text for ask in P.all_asks()})
     files = [P.path] + ([P.aural_path] if P.aural_path else [])
     return set(texts), texts, files, P, S
 

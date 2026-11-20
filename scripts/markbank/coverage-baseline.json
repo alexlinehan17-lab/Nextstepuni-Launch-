@@ -530,11 +530,11 @@
   "lithuanian": {
     "cards": 306,
     "contentHash": "0d11f6d500d72a7a",
-    "coveragePct": 100.0,
+    "coveragePct": 98.1,
     "covered": 306,
-    "excluded": 520,
-    "leaves": 826,
-    "open": 0,
+    "excluded": 458,
+    "leaves": 779,
+    "open": 15,
     "orphans": 0,
     "papers": {
       "count": 32,
