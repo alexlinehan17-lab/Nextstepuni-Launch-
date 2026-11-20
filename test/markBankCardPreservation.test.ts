@@ -3329,7 +3329,7 @@ describe('Mark Bank card preservation', () => {
       ['latvian', 2011, 8, '30559a22af97dffe4d5f8258d24bcf1bd881f0cf9f9b9ec4da821ab83af37ed1'],
       ['latvian', 2012, 8, '2e221c7a75f3af9824871d07674aaf4cf737fc7f05a172079223c214d4a329c1'],
       ['latvian', 2013, 8, '7cf5918c7bd54fda63219017b2253099a86991f37360153a2738ec654b9ad08e'],
-      ['latvian', 2014, 8, 'd9e07aabc2544c14deec77b05b127d8c61355c30a661c4c05b2ea1a5a1cf0355'],
+      ['latvian', 2014, 8, '5e447137253b9b048119ff47ba50e4b84ca8833539e1c762601f3793775c5d6b'],
       ['latvian', 2015, 8, '3cb8f54e8adb5dcb0125874844dc3e3fa458190823a25c65b93e58a06f7aed65'],
       ['latvian', 2016, 8, '1fd3f3fa5ec32fa25d3fe49062358b03e1bdb104531293f68065ed75de90d95a'],
       ['latvian', 2017, 8, 'ba43e595bd841078c26c98691b4ec4c1d73c06955c95a541bdf418c85b5e9ce8'],

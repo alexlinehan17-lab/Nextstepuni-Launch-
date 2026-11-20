@@ -1041,12 +1041,12 @@ export const CARDS: SecCard[] = [
     year: 2014, level: "higher",
     paperFileid: "LC549ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2014 Higher Level — © State Examinations Commission.",
-    id: "lv-2014-hl-ii-1", topicId: "latvian-1-0", conceptId: "zinatne-nepastav-tikai-zinatnes-del-pastav",
-    section: "II", questionRef: "2014 HL Section II Q1",
+    id: "lv-2014-hl-iii-1", topicId: "latvian-1-0", conceptId: "zinatne-nepastav-tikai-zinatnes-del-pastav",
+    section: "III", questionRef: "2014 HL Section III Q1",
     questionText: "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) „Zinātne nepastāv tikai zinātnes dēļ. Tā pastāv cilvēku dēļ”",
     tariffModel: {"kind":"fixed"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The paper heads this part “II daļa (40 punkti)”; the scheme heads it “III daļa (40 punkti)”. The scheme reprints the instruction and the two titles and prints nothing under them: no criteria, no descriptive line and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" This is Part III of the paper, the essay. The paper misprints its heading as “II daļa (40 punkti)”, the same number as the commentary before it; the scheme heads it “III daļa (40 punkti)”. The scheme reprints the instruction and the two titles and prints nothing under them: no criteria, no descriptive line and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
     ],
   } as SecCard,
   {
@@ -1054,12 +1054,12 @@ export const CARDS: SecCard[] = [
     year: 2014, level: "higher",
     paperFileid: "LC549ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2014 Higher Level — © State Examinations Commission.",
-    id: "lv-2014-hl-ii-2", topicId: "latvian-1-0", conceptId: "mes-varam-apcelot-visu-pasauli-mekledami",
-    section: "II", questionRef: "2014 HL Section II Q2",
+    id: "lv-2014-hl-iii-2", topicId: "latvian-1-0", conceptId: "mes-varam-apcelot-visu-pasauli-mekledami",
+    section: "III", questionRef: "2014 HL Section III Q2",
     questionText: "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) „Mēs varam apceļot visu pasauli, meklēdami skaistumu, bet mēs to neatradīsim, ja neglabāsim savā sirdī”. Ralfs Valdo Emersons (1803-1882)",
     tariffModel: {"kind":"fixed"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The paper heads this part “II daļa (40 punkti)”; the scheme heads it “III daļa (40 punkti)”. The scheme reprints the instruction and the two titles and prints nothing under them: no criteria, no descriptive line and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" This is Part III of the paper, the essay. The paper misprints its heading as “II daļa (40 punkti)”, the same number as the commentary before it; the scheme heads it “III daļa (40 punkti)”. The scheme reprints the instruction and the two titles and prints nothing under them: no criteria, no descriptive line and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
     ],
   } as SecCard,
   {

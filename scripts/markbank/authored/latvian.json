@@ -2410,14 +2410,14 @@
   }
  },
  {
-  "id": "lv-2014-hl-ii-1",
+  "id": "lv-2014-hl-iii-1",
   "subjectId": "latvian",
   "level": "higher",
   "year": 2014,
-  "section": "II",
+  "section": "III",
   "topicId": "latvian-1-0",
   "conceptId": "zinatne-nepastav-tikai-zinatnes-del-pastav",
-  "questionRef": "2014 HL Section II Q1",
+  "questionRef": "2014 HL Section III Q1",
   "questionText": "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) „Zinātne nepastāv tikai zinātnes dēļ. Tā pastāv cilvēku dēļ”",
   "tariffModel": {
    "kind": "fixed"
@@ -2473,20 +2473,20 @@
      40
     ],
     "unprinted": true,
-    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The paper heads this part “II daļa (40 punkti)”; the scheme heads it “III daļa (40 punkti)”. The scheme reprints the instruction and the two titles and prints nothing under them: no criteria, no descriptive line and no split of the part's marks."
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" This is Part III of the paper, the essay. The paper misprints its heading as “II daļa (40 punkti)”, the same number as the commentary before it; the scheme heads it “III daļa (40 punkti)”. The scheme reprints the instruction and the two titles and prints nothing under them: no criteria, no descriptive line and no split of the part's marks."
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
  },
  {
-  "id": "lv-2014-hl-ii-2",
+  "id": "lv-2014-hl-iii-2",
   "subjectId": "latvian",
   "level": "higher",
   "year": 2014,
-  "section": "II",
+  "section": "III",
   "topicId": "latvian-1-0",
   "conceptId": "mes-varam-apcelot-visu-pasauli-mekledami",
-  "questionRef": "2014 HL Section II Q2",
+  "questionRef": "2014 HL Section III Q2",
   "questionText": "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) „Mēs varam apceļot visu pasauli, meklēdami skaistumu, bet mēs to neatradīsim, ja neglabāsim savā sirdī”. Ralfs Valdo Emersons (1803-1882)",
   "tariffModel": {
    "kind": "fixed"
@@ -2542,7 +2542,7 @@
      40
     ],
     "unprinted": true,
-    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The paper heads this part “II daļa (40 punkti)”; the scheme heads it “III daļa (40 punkti)”. The scheme reprints the instruction and the two titles and prints nothing under them: no criteria, no descriptive line and no split of the part's marks."
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" This is Part III of the paper, the essay. The paper misprints its heading as “II daļa (40 punkti)”, the same number as the commentary before it; the scheme heads it “III daļa (40 punkti)”. The scheme reprints the instruction and the two titles and prints nothing under them: no criteria, no descriptive line and no split of the part's marks."
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."

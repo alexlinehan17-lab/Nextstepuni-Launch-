@@ -514,8 +514,11 @@ def _points_2014(d):
 
 
 def _essay_2014(d):
-    return (f'The paper heads this part “{PL(4, "II daļa (40").text(d)}”; the scheme heads it '
-            f'“{S(143).text(d)}”. The scheme reprints the instruction and the two titles and prints nothing '
+    # 10f, in plain words (coordinator ruling 2, 20 Nov): the essay part is Part III, though the paper misprints
+    # its heading
+    return (f'This is Part III of the paper, the essay. The paper misprints its heading as '
+            f'“{PL(4, "II daļa (40").text(d)}”, the same number as the commentary before it; the scheme heads '
+            f'it “{S(143).text(d)}”. The scheme reprints the instruction and the two titles and prints nothing '
             f'under them: no criteria, no descriptive line and no split of the part\'s marks.')
 
 
@@ -531,15 +534,15 @@ SPECS[2014] = [
     R('I6', [shown(L(104, 106)), shown(L(107, 108)), shown(S(109)), shown(L(110, 111)), shown(L(112, 113)),
              shown(L(114, 115)), shown(L(116, 117))], whole=True, total=PaperP(4, '6. Raksturojiet'),
       rownote=_points_2014, pages=(2, 3)),
-    R('II1', [unprinted(_essay_2014)], total=PaperP(4, 'II daļa (40'),
+    # Section III (the census re-keys the misprinted "II daļa (40 punkti)" head as Part III: lt_paper.MISPRINTED_PART)
+    R('III1', [unprinted(_essay_2014)], total=PaperP(4, 'II daļa (40'),
       question=QP(4, ESSAY_2014, '1. „Zinātne')),
-    R('II2', [unprinted(_essay_2014)], total=PaperP(4, 'II daļa (40'),
+    R('III2', [unprinted(_essay_2014)], total=PaperP(4, 'II daļa (40'),
       question=QP(4, ESSAY_2014, Run('2. „Mēs varam', 'neglabāsim'))),
 ]
 
-# The commentary (census ADDED_ASKS, keyed bare 'II' as the other sittings; the lead, from the drafter's
-# ready spec above): its points shown on the head's printed 30; reading text forced (the sitting reads as
-# two-part because of the misprinted essay head, which would otherwise treat 'II' as the essay).
+# The commentary (bare 'II', as the other sittings; keyed by the walker once the misprinted essay head is read
+# as Part III; the lead, from the drafter's ready spec above): its points shown on the head's printed 30.
 SPECS[2014].insert(5, R('II', [shown(L(121, 122)), shown(S(123)), shown(L(124, 125)), shown(L(126, 127)),
                                shown(L(128, 129)), shown(L(135, 139)), shown(L(140, 142))], whole=True,
                         total=PaperP(4, 'II daļa (30'), source='text', pages=(2, 3),

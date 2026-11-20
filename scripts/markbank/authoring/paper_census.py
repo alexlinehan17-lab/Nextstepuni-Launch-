@@ -4365,12 +4365,6 @@ ADDED_ASKS = {
         {'key': ['II', 1, None, None], 'label': 'Section II Q1', 'before': ['II', 2, None, None],
          'cut': (4, '1.\u201cSuomessa kannustamisen', '1.'), 'alternative': True},
     ],
-    # Latvian 2014 misprints its essay head as "II daļa (40 punkti)" (p4 y618;
-    # the scheme heads it "III daļa (40 punkti)"), so the lt walker reads one
-    # Part II and keys the two essay titles II1/II2, and the commentary printed
-    # under the true "II daļa (30 punkti)" (y521), one task with no number, gets
-    # no ask. Added here as the bare Section II the other sittings key, its marks
-    # read off that head.
     # Slovenian 2022 and 2024 print their second essay title on a line of its own
     # after "ALI" (2022 p4 y690, 2024 p4 y740), which the walker folds into
     # title 1's part and keys no ask for: lifted as that printed line, an
@@ -4414,11 +4408,6 @@ ADDED_ASKS = {
          'price_beside_first': True},
         {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
          'line': (4, '\u201dVärlden kan vara', "Fintan O'Toole"), 'alternative': True},
-    ],
-    ('latvian', 2014, 'hl'): [
-        {'key': ['II', None, None, None], 'label': 'Section II', 'before': ['II', 1, None, None],
-         'lines': (4, '\u201eCilv\u0113kresursi ir tas', '(vismaz 100 v\u0101rdu)'),
-         'price_head': (4, 'II da\u013ca (30'), 'price': r'\((\d+)\s*punkti\)'},
     ],
 }
 
