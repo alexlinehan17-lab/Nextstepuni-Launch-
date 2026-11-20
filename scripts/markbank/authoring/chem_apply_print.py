@@ -64,28 +64,33 @@ def digest(card):
                           .encode('utf-8')).hexdigest()[:16]
 
 
-def generator(year, lvl):
-    for name in (f'chem_audit_{year}_{lvl}', f'chem_{year}_{lvl}'):
+def generator(year, lvl, sitting=None):
+    names = ((f'chem_{year}_{lvl}_deferred',) if sitting == 'deferred'
+             else (f'chem_audit_{year}_{lvl}', f'chem_{year}_{lvl}'))
+    for name in names:
         if os.path.exists(os.path.join(DIR, name + '.py')):
             return importlib.import_module(name)
     raise SystemExit(f'no generator for {year} {lvl}')
 
 
-def plan(year, lvl):
-    mod = generator(year, lvl)
+def plan(year, lvl, sitting=None):
+    mod = generator(year, lvl, sitting)
     problems = mod.make_audit(mod.MAX_OPTIONS)(mod.C.cards)
     if problems:
         raise SystemExit('audit refused:\n  ' + '\n  '.join(problems))
     from chem_print import prior_deck
     cards = [lean(c) for c in mod.C.finish()]
     withdrawn = getattr(mod, 'WITHDRAWN', {})
-    prefix = f'chem-{year}-{lvl}-'
+    prefix = f'chem-{year}-{lvl}-' + ('deferred-' if sitting == 'deferred' else '')
+    # June's sitting never claims its deferred sitting's cards (chem-<y>-<l>-deferred-...), nor they June's.
+    ours = (lambda i: i.startswith(prefix)) if sitting == 'deferred' else \
+        (lambda i: i.startswith(prefix) and not i.startswith(prefix + 'deferred-'))
     made = {c['id']: c for c in cards}
     if len(made) != len(cards):
         raise SystemExit('the generator emits a duplicate id')
     deck = json.load(open(DECK))
-    held = {c['id']: c for c in deck if c['id'].startswith(prefix)}
-    prior = {i: c for i, c in prior_deck().items() if i.startswith(prefix)}
+    held = {c['id']: c for c in deck if ours(c['id'])}
+    prior = {i: c for i, c in prior_deck().items() if ours(i)}
     for old, (new, _reason) in withdrawn.items():
         if old not in prior:
             raise SystemExit(f'{old}: withdrawn but not a pre-audit card')
@@ -193,12 +198,12 @@ def aliases_text(withdrawn, stale=()):
     return '\n'.join(lines)
 
 
-def ledger_text(year, lvl, record):
+def ledger_text(year, lvl, record, sitting=None):
     data = json.load(open(LEDGER)) if os.path.exists(LEDGER) else {}
     from chem_print import AUDIT_BASE
     data['base'] = AUDIT_BASE
     papers = data.setdefault('papers', {})
-    papers[f'{year} {lvl.upper()}'] = dict(sorted(record.items()))
+    papers[f'{year} {lvl.upper()}' + (' deferred' if sitting == 'deferred' else '')] = dict(sorted(record.items()))
     data['papers'] = dict(sorted(papers.items()))
     return json.dumps(data, ensure_ascii=False, indent=1) + '\n'
 
@@ -208,10 +213,12 @@ def main():
     ap.add_argument('year', type=int)
     ap.add_argument('lvl', choices=['hl', 'ol'])
     ap.add_argument('--check', action='store_true')
+    ap.add_argument('--deferred', action='store_true', help="the sitting's deferred paper (chem_<y>_<l>_deferred.py)")
     args = ap.parse_args()
-    out, record, withdrawn = plan(args.year, args.lvl)
+    sitting = 'deferred' if args.deferred else None
+    out, record, withdrawn = plan(args.year, args.lvl, sitting)
     files = {DECK: json.dumps(out, ensure_ascii=False, indent=1),
-             LEDGER: ledger_text(args.year, args.lvl, record)}
+             LEDGER: ledger_text(args.year, args.lvl, record, sitting)}
     stale = no_longer_withdrawn(args.year, args.lvl, withdrawn)
     if withdrawn or stale:
         files[CORRECTIONS] = corrections_text(withdrawn, stale)

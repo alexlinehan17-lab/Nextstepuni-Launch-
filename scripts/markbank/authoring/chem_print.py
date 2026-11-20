@@ -1223,6 +1223,13 @@ OLD_OL_HEADS.add((2011, 'hl'))
 PAPER_ALT_LETTERS[(2011, 'hl')] = {('11', 'c')}
 
 
+# A deferred scheme's misprints that stop the reader reading what it means, each (printed, meant) and
+# found on exactly one line: 2022 HL Q1(b) heads its menu "ANY 0NE:" with a zero for the O.
+DEFERRED_SCHEME_REPAIRS = {
+    (2022, 'hl'): (('ANY 0NE:', 'ANY ONE:'),),
+}
+
+
 class Printed:
     """One sitting in the printed layout: its paper and its scheme, split into parts."""
 
@@ -1238,6 +1245,7 @@ class Printed:
         self.paper_path = os.path.join(PAPERS, f'{self.stem}-paper.pdf')
         self.scheme_path = os.path.join(SCHEMES, f'{self.stem}.pdf')
         if sitting == 'deferred':
+            deferred_key = (year, lvl)
             year = lvl = None   # no June repair keyed (year, lvl) may touch a deferred document
         # (2013 OL: a head set in one run with its words, split_heads.)
         self.paper_lines = split_heads(read_lines(self.paper_path), year, lvl)
@@ -1255,6 +1263,12 @@ class Printed:
         if figures:
             self.paper_lines = self._outside_figures(self.paper_lines)
         self.scheme_lines = read_lines(self.scheme_path)
+        if sitting == 'deferred':
+            # A deferred scheme's own misprints, each repaired where it stands (DEFERRED_SCHEME_REPAIRS).
+            for printed, meant in DEFERRED_SCHEME_REPAIRS.get(deferred_key, ()):
+                hits = [l for l in self.scheme_lines if printed in l.text]
+                assert len(hits) == 1, (deferred_key, printed, [l.text for l in hits])
+                hits[0].text = hits[0].text.replace(printed, meant)
         if (year, lvl) == (2019, 'hl'):
             # 2019 HL scheme PDF page 29: a "(c)" at the letters' margin (x 49.6,
             # y 339.4) lies under the white fill of Q11(b)(ii)'s third working box;

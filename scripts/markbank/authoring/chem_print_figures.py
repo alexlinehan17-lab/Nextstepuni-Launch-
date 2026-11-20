@@ -440,7 +440,7 @@ def name(year, lvl, suffix):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('year', type=int)
-    ap.add_argument('lvl', choices=['hl', 'ol'])
+    ap.add_argument('lvl', choices=['hl', 'ol', 'hl-deferred', 'ol-deferred'])
     ap.add_argument('--check', action='store_true')
     args = ap.parse_args()
     crops = CROPS.get((args.year, args.lvl), [])

@@ -3931,3 +3931,875 @@ electricity exp using reducing
 n, chlorine and • •
 2e  Cl + 2e 2 FORMULAE:
 <!-- /markbank:table-cells -->
+
+<!-- pdf-text-order: the PDF text layer in reading order (deferred scheme) -->
+
+Coimisiún na Scrúduithe Stáit State Examinations Commission Leaving Certificate 2023 Deferred Examinations Marking Scheme Higher Level Chemistry v. 2
+Note to teachers and students on the marking schemes for the deferred examinations Marking schemes published by the State Examinations Commission are not intended to be standalone documents. They are an essential resource for examiners who receive training in the correct interpretation and application of the scheme. However, it should be noted that the marking schemes for the deferred examinations may not necessarily be as detailed as the corresponding marking schemes for the main sitting of an examination, which serve to ensure consistency across a large team of examiners. Marking schemes are working documents. While a draft marking scheme is prepared in advance of the examination, the scheme is not finalised until examiners have applied it to candidates’ work and the feedback from examiners has been collated and considered in light of the full range of responses of candidates, the overall level of difficulty of the examination, and the need to maintain consistency in standards between the main sitting and the deferred sitting and from year to year. In the case of the deferred examinations, this means that the level of detail may vary by question, as the marking scheme will only have been finalised for the questions attempted by the candidates who sat these examinations. In the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable. Examiners must consider all answers on their merits, and will have consulted with a senior examiner when in doubt. Future Marking Schemes Assumptions about future marking schemes on the basis of past schemes (whether for the main examinations or the deferred examinations) should be avoided. While the underlying assessment principles remain the same, the details of the marking of a particular type of question may change in the context of the contribution of that question to the overall examination concerned. Accordingly, aspects of the structure, detail and application of the marking scheme for a particular examination will not necessarily be the same for the deferred sitting as for the main sitting or from one year to the next.
+ATAL Chemistry 2023 1 Marking Scheme Leaving Certificate Deferred Examination (M34C) Introduction In considering the marking scheme, the following should be noted. 1. In many cases only key phrases are given which contain the information and ideas that must appear in the candidate’s answer in order to merit the assigned marks. 2. The descriptions, methods and definitions in the scheme are not exhaustive and alternative valid answers are acceptable. 3. The detail required in any answer is determined by the context and the manner in which the question is asked, and by the number of marks assigned to the answer in the examination paper and, in any instance, therefore, may vary from year to year. 4. The bold text indicates the essential points required in the candidate’s answer. A double solidus (//) separates points for which separate marks are allocated in a part of the question. Words, expressions or statements separated by a solidus (/) are alternatives which are equally acceptable for a particular point. A word or phrase in bold, given in brackets, is an acceptable alternative to the preceding word or phrase. Note, however, that words, expressions or phrases must be correctly used in context and not contradicted, and, where there is incorrect use of terminology or contradiction, the marks may not be awarded. Cancellation may apply when a candidate gives a list of correct and incorrect answers. 5. In general, names and formulas of elements and compounds are equally acceptable except in cases where either the name or the formula is specifically asked for in the question. However, in some cases where the name is asked for, the formula may be accepted as an alternative. 6. There is a deduction of one mark for each arithmetical slip made by a candidate in a calculation. This deduction applies to incorrect Mr values but only if a candidate shows the addition of all the correct atomic masses and the error is clearly an addition error. If the addition of atomic masses is not shown, the candidate loses the marks for an incorrect Mr. 7. Bonus marks at the rate of 10% of the marks obtained will be given to a candidate who answers entirely through Irish and who obtains less than 75% of the total marks. In calculating the bonus to be applied decimals are always rounded down, not up e.g., 4.5 becomes 4; 4.9 becomes 4, etc. The bonus table given on the next page applies to candidates who answer entirely through Irish and who obtain more than 75% of the total marks. Candidates are required to answer EIGHT questions in all. All questions carry equal marks (50).
+ATAL Chemistry 2023 2 Marking Scheme Leaving Certificate Deferred Examination (M34C) Coimisiún na Scrúduithe Stáit Marcanna Breise as ucht freagairt trí Ghaeilge Léiríonn an tábla thíos an méid marcanna breise ba chóir a bhronnadh ar iarrthóirí a ghnóthaíonn níos mó ná 75% d’iomlán na marcanna. N.B. Ba chóir marcanna de réir an ghnáthráta a bhronnadh ar iarrthóirí nach ngnóthaíonn níos mó ná 75% d’iomlán na marcanna don scrúdú. Ba chóir freisin an marc bónais sin a shlánú síos. Tábla 400 @ 10% Bain úsáid as an tábla seo i gcás na n‐ábhar a bhfuil 400 marc san iomlán ag gabháil leo agus inarb é 10% gnáthráta an bhónais. Bain úsáid as an ngnáthráta i gcás 300 marc agus faoina bhun sin. Os cionn an mharc sin, féach an tábla thíos. Bunmharc Marc Bónais Bunmharc Marc Bónais 301 ‐ 303 29 351 ‐ 353 14 304 ‐ 306 28 354 ‐ 356 13 307 ‐ 310 27 357 ‐ 360 12 311 ‐ 313 26 361 ‐ 363 11 314 ‐ 316 25 364 ‐ 366 10 317 ‐ 320 24 367 ‐ 370 9 321 ‐ 323 23 371 ‐ 373 8 324 ‐ 326 22 374 ‐ 376 7 327 ‐ 330 21 377 ‐ 380 6 331 ‐ 333 20 381 ‐ 383 5 334 ‐ 336 19 384 ‐ 386 4 337 ‐ 340 18 387 ‐ 390 3 341 ‐ 343 17 391 ‐ 393 2 344 ‐ 346 16 394 ‐ 396 1 347 ‐ 350 15 397 ‐ 400 0 400@10%
+ATAL Chemistry 2023 3 Marking Scheme Leaving Certificate Deferred Examination (M34C) QUESTION 1 (a) (i) IDENTIFY: MnSO4.2H2O (manganese(II) sulfate) / MnCl2.4H2O (manganese(II) chloride) [Incorrect oxidation number cancels.] (ii) EXPLAIN: ensures all O2 (oxygen) detected (analysed, reacts) / ensures O2 (oxygen) limiting / if insufficient added not all O2 (oxygen) detected (analysed, reacts) / provides enough for all O2 (oxygen) (iii) WHAT: brown (3 × 3) (b) (i) WHAT: known concentration / known moles (mass) in known volume (3) (ii) HOW: rinsed with deionised (distilled, pure) water and with iodine solution (solution from bottle, solution it will measure) // use filler // fill until bottom of meniscus on mark // read at eye‐level // allow drainage time / last drop to remain (not to be shaken out, blown out) / drain under gravity / touch (tip, tap) pipette against wall of conical flask repeat a number of times to add 150 cm3 in total (3 × 3) (iii) NAME: starch (3) (iv) WHAT: blue (black, blue‐black) to colourless (3) [Ending with ‘blue (black, blue‐black) to colourless’ essential if other colours mentioned.] (c) FIND: (i) 0.000114 (1.14 × 10–4, 57/500000) moles thiosulfate (9) [*Addition must be shown for error to be treated as slip.] (ii) = 0.000057 (5.7 × 10–5, 57/1000000) moles of I2 (3) ଻.଺ ൈ ଴.଴ଵହ ଵ଴଴଴ = 0.000114 (1.14 × 10–4, 57/500000) moles thiosulfate (3) Mr of Na2S2O3.5H2O = 248* (3) 𝑀ൌ ଷ.଻ଶ ଶସ଼ = 0.015 (3/200) M (3) thiosulfate : I2 = 2 : 1  0.000114 (1.14 × 10–4, 57/500000)  2 [Divide by 2 essential.] = 0.000057 (5.7 × 10–5, 57/1000000) moles I2 in 150.0 cm3 (3)
+ATAL Chemistry 2023 4 Marking Scheme Leaving Certificate Deferred Examination (M34C) (iii) 0.00019 (1.9 × 10–4, 19/100000) moles /l (M) of O2 (6) or or or (iv) 6 – 6.1 p.p.m. (5) [1 mark to be deducted for incorrect or inappropriate rounding off resulting in candidate’s final answer lying outside given range but deduction to be made once only in (d).] 0.00019 (1.9 × 10–4, 19/100000) × 32 = 0.00608 g/l [Multiply by 32 essential.] 0.00608 × 1000 = 6.08 – 6.1 p.p.m. [Multiply by 1000 essential.] (3 + 2) 0.000057 (5.7 × 10–5, 57/1000000) × ଵ଴଴଴ ଵହ଴ = 0.00038 (3.8 × 10–4, 19/50000) moles /l (M) of I2 (3) [Multiply by ଵ଴଴଴ ଵହ଴ essential.] 0.00038 (3.8 × 10–4, 19/50000) moles /l (M) of I2 ÷ 2 = 0.00019 (1.9 × 10–4, 19/100000) moles /l (M) of O2 (3) [Divide by 2 essential.] ଵହ଴ ൈ ெ ଵ = ଻.଺ ൈ ଴.଴ଵହ ସ  M = 0.00019 (1.9 × 10–4, 19/100000) moles /l (M) of O2 (6) 0.000057 (5.7 × 10–5, 57/1000000) ÷ 2 = 0.0000285 (2.85 × 10–4, 57/2000000) moles of O2 in 150.0 cm3 (3) [Divide by 2 essential.] 0.0000285 (2.85 × 10–4, 57/2000000) × ଵ଴଴଴ ଵହ଴ = 0.00019 (1.9 × 10–4, 19/100000) moles /l (M) of O2 (3) [Multiply by ଵ଴଴଴ ଵହ଴ essential.] ଵହ଴ ൈ ெ ଵ = ଻.଺ ൈ ଴.଴ଵହ ଶ  M = 0.00038 (3.8 × 10–4, 19/50000) moles /l (M) of I2 (3) 0.00038 (3.8 × 10–4, 19/50000) moles /l (M) of I2 ÷ 2 = 0.00019 (1.9 × 10–4, 19/100000) moles /l (M) of O2 (3) [Divide by 2 essential.]
+ATAL Chemistry 2023 5 Marking Scheme Leaving Certificate Deferred Examination (M34C) QUESTION 2 (a) (i) WHICH: ethene (C2H4) (3) (ii) STATE: purple (lilac, violet, pink) decolourises (to colourless) (3) [Correct order essential] [Decolourises alone insufficient] [Clear not acceptable instead of colourless] JUSTIFY: both gases unsaturated / addition reaction occurs in both cases / double bond or triple bond present / multiple bond (3) (b) (i) DEDUCE: ethanoic acid (CH3COOH) (3) (ii) WRITE: 2CH3COOH + Na2CO3  2CH3COONa + H2O + CO2 FORMULAE: (3) BALANCING: (3) (iii) IDENTIFY: ethanal (CH3CHO) (3) (iv) WRITE: add Fehling’s reagent // warm / heat gently // brick‐red precipitate fomed / brick‐red Cu+ formed (3 × 3) (c) (i) DESCRIBE: sample (crystals) in melting point (m.p.) capillary tube in melting point block (apparatus, in Thiele tube) shown in diagram / sample (crystals) on aluminium (melting) block shown in diagram // heat slowly while observing crystals / heat source shown or labelled in diagram // record (note) temperature range at which melting occurs / record (note) the melting point temperature (3 × 3) [‘Record melting point’ sufficient where thermometer shown or mentioned.] [Maximum (6) if no diagram or no labels.] (ii) HOW: measure (compare) melting points (m.p.) before and after purer (recrystallized, second) melting point higher (closer to correct value, closer to 122C ) / impure (original) melting point lower / purer (recrystallized) melting point sharper / impure (original) melting point broader (less sharp) (6) or CHO gravimetric microanalysis / named spectroscopic technique purer (recrystallized) CHO analysis closer to correct result / impure (original) CHO analysis farther from correct result / spectrum of purer (recrystallized) sample shows fewer (no) impurities / spectrum of impure (original) sample shows more impurities (6) [Both parts linked.] (iii) CALCULATE: 81.03 % (3) (iv) STATE: removal of insoluble impurities (substances) (2) ଵ.଼଼ ൈ ଵ଴଴ ଶ.ଷଶ = 81.0344% (3)
+ATAL Chemistry 2023 6 Marking Scheme Leaving Certificate Deferred Examination (M34C) QUESTION 3 (a) (i) WHAT: oxidizer (oxidising reagent) / can cause fire by oxidising other substances or releasing oxygen [Do not accept flammable.] (ii) GIVE: reduce amount (dilute) / store (purchase) small quantities / consider substitute / consider eliminate / store cool (dry, secure, well ventilated, away from non‐ compatible substances, away from non‐compatible chemicals, with other oxidising agents, in the dark, in ventilated containers, in plastic containers, with small hole in stopper) / do not store in glass bottles / wear PPE (gloves, eye protection) / avoid contact with skin (eyes, clothing) / use appropriate labels / use glycerine (glycerol, negative catalyst) / use as soon as possible [Allow store in air‐tight container.] (iii) DESCRIBE: brown (black) solid (powder, grains, pellets) (6 + 3 + 2) (b) (i) CALCULATE: 0.02 moles H2O2 in 10 cm3 (6) or [*Addition must be shown for error to be treated as slip.] [If no other marks are awarded, award (3) for calculation of 34.] (ii) FIND: 0.24 litres of O2 (240 cm3 of O2) (2 × 3) (iii) SUGGEST: large (250 cm3) graduated cylinder / gas syringe (3) 6.8 g per 100 g  6.8 g per 100 cm3  0.68 g per 10 cm3 (3) ଴.଺଼ ଷସ∗ = 0.02 moles in 10 cm3 (3) 6.8 g per 100 g  6.8 g per 100 cm3 ଺.଼ ଷସ∗ = 0.2 moles in 100 cm3 (3)  0.2 ÷ 10 = 0.02 moles in 10 cm3 (3) 0.02 moles H2O2  0.01 moles O2 formed (3)  0.01 × 24.0 = 0.24 litres of O2 (240 cm3 of O2) (3)
+ATAL Chemistry 2023 7 Marking Scheme Leaving Certificate Deferred Examination (M34C) (iv) DRAW: both reactants in flask (reaction vessel), e.g. A, B or C below, and one reactant labelled with name or formula [hydrogen peroxide added from dropping funnel not acceptable] // flask connected to graduated container, e.g. X or Y below, for oxygen collection / [graduations marked or collecting graduated container labelled] (2 × 3) MnO2 H2O2 gas syringe graduated cylinder A B X Y C
+ATAL Chemistry 2023 8 Marking Scheme Leaving Certificate Deferred Examination (M34C) (c) (i) PLOT: axis labelled volume (V, O2, cm3) and axis labelled time (t, minutes) // appropriate correct numeric scales on both axes // careful plotting of points other than (0, 0) // smooth curve of correct shape through origin (4 × 3) [Pairs of points connected with straight lines do not give a smooth curve.] [Deduct (3) for each of the following: not on graph paper; more than one point plotted inaccurately.] [Time versus volume graph acceptable.] (ii) USE: good tangent drawn to plotted curve at 240 seconds (3) any two points from tangent read correctly, e.g. (0, 105) and (320, 240) / rise and run correctly read from tangent, e.g. 134 cm3, 240 seconds 0.42 cm3 O2 per second [0.32 – 0.46] cm3 O2 per second (3) [Tangent must be drawn for work on instantaneous rate to be awarded full marks.] [Last 3 marks can be awarded for rate within stated range with no tangent drawn or consequentially for work done on a poor tangent or a tangent placed at an incorrect time.] 𝟐𝟒𝟎ି𝟏𝟎𝟓 𝟑𝟐𝟎ି𝟎 ൌ 𝟏𝟑𝟓 𝟑𝟐𝟎 = 0.42 cm3 O2 per second [0.32 – 0.46] cm3 O2 per second (3)
+ATAL Chemistry 2023 9 Marking Scheme Leaving Certificate Deferred Examination (M34C) QUESTION 4 Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded. (a) WHAT: atoms with same atomic number (same Z, equal numbers protons) / atoms of the same element // different number of neutrons (different A) / different mass numbers (2 × 3) (b) IDENTIFY: vapourisation // ionisation (2 × 3) [Take order of question unless answers clearly labelled.] [Where only one stage is given and not labelled first or second, take as the first stage.] (c) COPY & COMPLETE: 𝐏𝐛 𝟖𝟐 𝟐𝟎𝟒 (6) (d) FIND: x = 5.7 (6) (e) STATE: at the same temperature and pressure // equal volumes of gases have equal (the same) number(s) of particles (atoms, molecules, moles) (2 × 3) [Do not allow s.t.p for ‘same temperature and pressure’.] (f) CALCULATE: 1.5 × 105 Pa (6) (g) WHY: 2 bond pairs of electrons in valence shell of beryllium only (no lone pairs) // 2 lone pairs and 2 bond pairs in water (H2O) (2 × 3) (h) HOW: add barium chloride {barium nitrate, BaCl2, Ba(NO3)2} solution / add solution of barium ions (Ba2+) // white precipitate // dissolves (disappears, clears) in (on addition of) dilute hydrochloric acid (HCl) (3 × 2) In 100 g CH4∙xH2O there are 13.4 g CH4 and 86.6 g H2O ଵଷ.ସ ଵ଺∗ = 0.8375 moles CH4 (2) ଼଺.଺ ଵ଼∗∗ = 4.8111 moles H2O (2)  CH4 : H2O = 1 : x = 0.8375 : 4.8111 = 1 : 5.7 (2) n = ଶଽସ ଶ଼ = 10.5 moles (2) pV = nRT / p = 𝒏𝑹𝑻 𝑽 / p × 0.168 = 10.5 × 8.3 × 293 / p ൌ 𝟏𝟎.𝟓 ൈ 𝟖.𝟑 ൈ𝟐𝟗𝟑 ଴.𝟏𝟔𝟖  (2) p = 1.5 × 105 Pa (2) [Use of Kelvin essential here]
+ATAL Chemistry 2023 10 Marking Scheme Leaving Certificate Deferred Examination (M34C) (i) WRITE: CaCO3 + H2CO3  Ca(HCO3)2 FORMULAE: (3) BALANCING: (3) (j) WHICH: 12 (6) (k) DRAW: (6) (l) A EXPLAIN: very strong (high energy) triple bond / NN // non‐polar / high degree of symmetry / no dipole moment / no unpaired electrons (2 × 3) or B WHY: does not have incomplete d sublevel (d subshell, d orbitals) / d orbitals (d sublevel, d subshell) filled / does not form cation with incomplete d sublevel (d subshell, d orbitals) (6) [Allow (3) for does not have variable valency / forms white (colourless) compounds / does not form coloured compounds / not a good catalyst]
+ATAL Chemistry 2023 11 Marking Scheme Leaving Certificate Deferred Examination (M34C) QUESTION 5 (a) WHAT: elements have similar chemical properties // atomic mass (weight) of one element is average of (midway between) those of other two / mass number of one element is average of the mass numbers of the others (3 + 2) (b) DESCRIBE: (4 × 3) *[Allow ‘metal inoculating loop’, or ‘metal spatula’ for ‘platinum (nichrome) wire’.] [Clear labelled diagram for some or all points acceptable.] [**Method 2: ‘Soak splint (stick) in salt solution’ merits (6).] (c) (i) WRITE: 1s2 2s2 2p6 / 1s2 2s2 2px22py2 2pz2 // 3s2 3p6 4s1 / 3s2 3px23py2 3pz24s1 / (2 × 3) or [Allow [Ar] 4s1 for (6)] [Allow subscripts instead of superscripts.] [Arrows to represent numbers of electrons acceptable but sublevel labels must be given.] (ii) HOW MANY: 6 (3) (d) (i) DEFINE: minimum energy required to completely remove // the most loosely bound electron / the outermost electron (2 × 3) (ii) WRITE: K(g)  K+ (g) + e– (3) [Subscripts not required][X instead of K acceptable] (iii) ACCOUNT: increasing atomic radius / outer electrons farther from nucleus / extra shell of electrons // additional screening (shielding) from electrons in inner shells (2 × 3) (iv) WHY: effective nuclear charge increasing // atomic radius decreasing (2 × 3) (v) EXPLAIN: full outer subshell of magnesium more stable than half‐filled outer subshell of Sodium (3) Method 1 Method 2 Method 3 clean a platinum (nichrome) wire* (rod, probe) in HCl (concentrated hydrochloric acid) soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick) prepare a solution of the given salt (3) dip wet rod in salt (sample) dip** splint (stick) in salt (sample) in water and ethanol (propanol) (3) hold salt in or over hot (blue) part of Bunsen flame hold salt in or over hot (blue) part of Bunsen flame spray salt solution onto (into) hot (blue) part of Bunsen flame (3) red colour is a positive result for strontium in salt red colour is a positive result strontium in salt red colour is a positive result for strontium in salt (3)
+ATAL Chemistry 2023 12 Marking Scheme Leaving Certificate Deferred Examination (M34C) QUESTION 6 (a) (i) DESCRIBE: column with trays or outlets at different levels // indication that base is hotter than top, e.g. position of furnace, label, etc, or indication that molecules with lower boiling points separate higher up // crude oil heated before entering column (3 × 3) [no diagram or no labels –3] (ii) WHAT: boiling point / relative molecular mass (Mr) / number of carbon atoms [Do not allow length of carbon chain] (6) (iii) EXPLAIN: same molecular formulae (formulas) // different structures / different arrangement of atoms (bonds) (2 × 3) light gasoline naphtha kerosene crude oil gas oil temperature decreasing furnace
+ATAL Chemistry 2023 13 Marking Scheme Leaving Certificate Deferred Examination (M34C) (b) (i) CALCULATE: –8,088.1 kJ mol–1 (12) or Mixing and matching from different boxes not acceptable. Where final answer for ΔH = +8,088.1 kJ mol–1 apply the marking scheme but the maximum mark is 9. (ii) FIND: 1.692 × 1030 – 1.7 × 1030 molecules (6) (c) (i) HOW: steam reforming of natural gas / coal gasification / electrolysis of water / dehydrocyclization (reforming) of hydrocarbons / methane pyrolysis (6) (ii) SUGGEST: explosive / fire risk / very little green hydrogen available / needs high pressure storage / difficulties storing fuel on aircraft / leaks from storage tanks (5) ΔHreaction = ΔHformation products – ΔHformation reactants ΔHreaction = (12 × –393.5) kJ + (13 × –285.8) kJ – (–349.3) kJ (3) / ΔHreaction = (–4,722.0) kJ (3) + (–3715.4) kJ (3) –(–349.3) kJ (3) / ΔHreaction = (–4,722.0) kJ (3) + (–3,715.4) kJ (3) + 349.3 kJ (3) ΔHcombustion = –8,088.1 kJ mol–1 (3) C12H26  12C + 13H2 ΔH = 349.3 kJ (3) 12C + 12O2  12CO2 ΔH = –4,722.0 kJ (3) 13H2 + 6½O2  13H2O ΔH = –3,715.4 kJ (3) C12H26 + 18½O2  12CO2 + 13H2O ΔHcombustion –8,083.9 kJ (3) 3 ΔHs must be added for the consequential award of the fourth 3 marks. ΔHcombustion = –8,088.1 kJ mol–1 235,000 moles C12H26  235,000 × 12 = 2820,000 moles CO2 (3) 2820,000 × 6 × 1023 = 1.692 × 1030 – 1.7 × 1030 molecules (3)
+ATAL Chemistry 2023 14 Marking Scheme Leaving Certificate Deferred Examination (M34C) QUESTION 7 (a) (i) EXPLAIN: state reached when rates of forward and reverse reactions are equal / rf = rr / state reached when concentrations are constant in reversible reaction (3) (ii) STATE: systems in (at) equilibrium // react to oppose (minimise, relieve) applied stress(es) {disturbance(s)} (2 × 3) [Instead of ‘stress(es){disturbance(s)}’ accept ‘change in temperature, pressure or number of moles (concentrations)’ if all three {temperature, pressure and moles (concentrations)} are given.] (b) (i) SUGGEST: greater surface area means greater catalytic ability / more active sites available / more adsorption of reactants possible (3) (ii) HOW: poison adheres to (coats) surface of catalyst irreversibly (competitively) / adsorption reactants reduced / active sites blocked (fewer active sites available) / (3) (c) (i) WRITE: Kc = ሾ𝐒𝐎𝟑ሿ𝟐 ሾ𝐒𝐎𝟐ሿ𝟐ሾ𝐎𝟐ሿ∗ (6) [Square brackets essential.] [*Marks for (d)(i) may be awarded for this expression given in (d) (iv) CALCULATE.] (ii) CALCULATE: 3.3 mol SO2, 33.45 – 34.5 mol O2, Kc = 62,729 (12) or Let x = number of moles of O2 that reacts. 2SO2 (g) + O2 (g) ⇌ 2SO3 (g) Initially: 65.6 mol 65.6 mol 0 mol Change: – 2x mol – x mol + 2x mol Equil: 65.6 – 2x mol 65.6 – x mol 2x mol (3) 2x = 62.3 moles / x = 31.15 moles Equil: 3.3 mol (3) 34.45 – 34.5 mol (3) 62.3 mol (3) But V = 6,000 litres. Divide by 6000. Equil: ଷ.ଷ ଺.଴ ൈ ଵ଴య = ଷସ.ସହ ଺.଴ ൈ ଵ଴య = ଺ଶ.ଷ ଺.଴ ൈ ଵ଴య 5.5 × 10‐4 mol/l 5.7 × 10‐3 – 5.8 × 10‐3 mol/l 0.01 – 0.0104 mol/l (3) Kc = ሾୗ୓యሿమ ሾୗ୓మሿమሾ୓మሿ ൌ ሾ0.0104ሿ2 ሾ5.5 ൈ 10െ4ሿ 2 ቂ5.75 ൈ10െ3ቃ = 56,996 – 62,729 (3)
+ATAL Chemistry 2023 15 Marking Scheme Leaving Certificate Deferred Examination (M34C) [Do not allow mixing and matching of marks between boxes.] [Allow use of incorrect Kc expression from (c) (i) WRITE in (c) (ii) CALCULATE without further penalty.] (d) (i) HOW: increased / greater yield (more product, more SO3) (3) (ii) HOW: no change (3) (iii) STATE: more costly / less economical / less safe (3) (e) (i) HOW: exothermic (3) EXPLAIN: endothermic (heat absorbing, reverse, formation of SO2) reaction favoured (occurs) at higher temperatures / left side (LHS) of equilibrium favoured at higher temperatures / exothermic (heat releasing forward, formation of SO3) reaction favoured (occurs) at lower temperatures / right side (RHS) of equilibrium favoured at lower temperatures (3) [(i) IS must be correct for (i) EXPLAIN to be awarded marks.] (ii) SUGGEST: rate too slow / rate increased (better, faster) at higher temperatures (730 K) (2) Let ½x = number of moles of O2 that reacts. 2SO2 (g) + O2 (g) ⇌ 2SO3 (g) Initially: 65.6 mol 65.6 mol 0 mol Change: – x mol – ½x mol + x mol Equil: 65.6 – x mol 65.6 – ½x mol x mol (3) x = 62.3 moles / ½x = 31.15 moles Equil: 3.3 mol (3) 34.45 – 34.5 mol (3) 62.3 mol (3) But V = 6,000 litres. Divide by 6000. Equil: ଷ.ଷ ଺.଴ ൈ ଵ଴య = ଷସ.ସହ ଺.଴ ൈ ଵ଴య = ଺ଶ.ଷ ଺.଴ ൈ ଵ଴య 5.5 × 10‐4 mol/l 5.7 × 10‐3 – 5.8 × 10‐3 mol/l 0.01 – 0.0104 mol/l (3) Kc = ሾୗ୓యሿమ ሾୗ୓మሿమሾ୓మሿ ൌ ሾ0.0104ሿ2 ሾ5.5 ൈ 10െ4ሿ 2 ቂ5.75 ൈ10െ3ቃ = 56,996 – 62,729 (3)
+ATAL Chemistry 2023 16 Marking Scheme Leaving Certificate Deferred Examination (M34C) QUESTION 8 (a) (i) GIVE: B: ethane // C: methylbenzene / phenyl methane (2 × 3) [Take order of question unless answers clearly labelled.] (ii) WHICH: A (ethene, C2H4) (3) (b) (i) GIVE: Cl2 // ultraviolet (uv) light / sunshine (2 × 3) [Take order of question unless answers clearly labelled.] (ii) DESCRIBE: initiation: homolysis (splitting, fission) of chlorine molecule (Cl2) into free radicals (atoms, Cl●, Cl) by ultraviolet (uv) light / Cl2 uv 2Cl● / Cl2 uv 2Cl propagation (1): chlorine radical (atom, Cl●, Cl) reacts with ethane (C2H6) giving hydrogen chloride (HCl) and an ethyl radical (C2H5●) / Cl● + C2H6 → HCl + C2H5● / Cl + C2H6 → HCl + C2H5● [Hydrochloric acid not acceptable for HCl and cancellation applies.] [Where C2H5 used instead of C2H5● deduct 3 marks but only once in (c).] propagation (2): ethyl radical (C2H5●) reacts with chlorine molecule (Cl2) giving monochloroethane (C2H5Cl) and a chlorine radical (atom, Cl●, Cl) / C2H5● + Cl2 → C2H5Cl + Cl● / C2H5● + Cl2 → C2H5Cl + Cl chain reaction occurs / propagation steps repeat until one reactant used up / propagation steps repeat until termination reached [Accept ‘chain reaction occurs’ anywhere in (c).] termination: combination of remaining radicals to form molecules (chlorine, chloroethane, butane) / 2Cl● → Cl2 / 2Cl → Cl2 / Cl● + C2H5● → C2H5Cl / Cl + C2H5● → C2H5Cl / 2C2H5● → C4H10 ANY FOUR:(6 + 3 + 3 + 3) [Where a radical is referred to as an ion or where a diagram shows a radical but the description refers to an ion cancellation applies each time.] [Where a candidate refers in name or in a drawing to methane instead of ethane and/or methyl instead of ethyl and/or ethane instead of butane, deduct 3 marks but only once in (c) (ii). (iii) HOW: provides (produces, breaks into, source of) ethyl free radicals / increased rate (speeding up) of reaction shows radicals part in mechanism (3) [‘Radical promoter’ insufficient on its own.]
+ATAL Chemistry 2023 17 Marking Scheme Leaving Certificate Deferred Examination (M34C) (c) (i) STATE: hydrogen chloride (HCl) (3) (ii) WHAT: addition (3) (d) (i) NAME: poly(ethene) /polythene / polyethylene /poly(ethylene) (3) (ii) DRAW: (4) (iii) HOW: planar // to tetrahedral (2 × 2) Carbons need not be shown explicitly Carbons need not be shown explicitly Hs need not be shown explicitly??????? Hs need not be shown explicitly, CH bond is shown Hs need not be shown explicitly, CH bond is shown Carbons need not be shown explicitly Hs need not be shown explicitly??????? 2 2 2 2
+ATAL Chemistry 2023 18 Marking Scheme Leaving Certificate Deferred Examination (M34C) QUESTION 9 (a) WHAT: (i) dissociates in water (aqueous solution) // to produce protons (hydrogen ions, H+) (2 × 2) [Allow H3O+ (hydronium ions)] WHAT: (ii) proton (hydrogen ion, H+) donor (4) (iii) IDENTIFY: HCO3– // NH4+ (2 × 3) (iv) WHY: NH3 does not dissociate in water (aqueous solution) / hydroxide (hydroxyl ions, OH‐) not produced (6) [Allow ‘no OH’ for (3)] (b) (i) DEFINE: pH = – log10[H+] / pH = – log10[H3O+] / minus log base 10 hydrogen ion concentration expressed in moles per litre (6) (ii) STATE: only for dilute solutions / unreliable (inaccurate, unsuitable) in very concentrated solutions // only valid (useful) in 0 ‐ 14 range // applies to (only for) aqueous solutions // unreliable for negative pH values // temperature dependent / pH scale 0 – 14 only at 25 °C (3) [‘Valid range 1 – 14’ unacceptable but does not cancel.] (iii) CALCULATE: pH = 11.278 – 11.3 (9) pOH = –logඥ𝑲𝒃ሾ𝐗𝐎𝐇ሿ / antilog(– pOH) = ඥ𝑲𝒃ሾ𝐗𝐎𝐇ሿ / [OH–] = ඥ𝑲𝒃ሾ𝐗𝐎𝐇ሿ / pOH = –logඥ𝑲𝒃ሾ𝐍𝐇𝟒𝐎𝐇ሿ / antilog(– pOH) = ඥ𝑲𝒃ሾ𝐍𝐇𝟒𝐎𝐇ሿ / [OH–] = ඥ𝑲𝒃ሾ𝐍𝐇𝟒𝐎𝐇ሿ / pOH = –logඥ𝟏. 𝟖 ൈ𝟏𝟎ି𝟓ሾ𝟎. 𝟐𝟎ሿ / antilog(– pOH) = ඥ𝟏. 𝟖 ൈ𝟏𝟎ି𝟓ሾ𝟎. 𝟐𝟎ሿ / [OH–] = ඥ𝟏. 𝟖 ൈ𝟏𝟎ି𝟓ሾ𝟎. 𝟐𝟎ሿ / pOH = –log√𝟑. 𝟔 ൈ𝟏𝟎ି𝟔 / antilog(– pOH) = √𝟑. 𝟔 ൈ𝟏𝟎ି𝟔 / [OH–] = √𝟑. 𝟔 ൈ𝟏𝟎ି𝟔 / pOH = – log(1.9 × 10–3) / antilog(– pOH) = 1.9 × 10–3 / [OH–] = 1.9 × 10–3 (3) pOH = 2.72 / Kw = 1.0  10–14 = [H+] × 1.9 × 10–3  [H+] = 5.3  10–12 (3)  pH = 14 – 2.72 = 11.278 – 11.3 /  pH = ‐log(5.3  10–12) = 11.278 – 11.3 (3)
+ATAL Chemistry 2023 19 Marking Scheme Leaving Certificate Deferred Examination (M34C) (c) (i) EXPLAIN: in acid (at low pH) high (more, increased) H3O+ concentration is a stress so equilibrium shifts to left (LHS, yellow side, HIn side) / in acid (at low pH) high (more, increased) H3O+ concentration is a stress so more yellow (HIn) at equilibrium (when reverse reaction favoured) // in base (at high pH) H3O+ removed (concentration decreased) by reaction with OH– equilibrium shifts to right (RHS, blue side, In– side) / in base (at high pH) H3O+ removed (concentration decreased) by reaction with OH– more blue (In–) at equilibrium (when forward reaction favoured) (2 × 3) (ii) WOULD: yes (3) JUSTIFY: colour change (pH range, pH 3.8 to 5.4) of indicator coincides with pH change at end point (neutralisation) / weak base strong acid titration / end point (neutralisation) below 6 (7) (3) [JUSTIFY marks only available if WOULD marks awarded.]
+ATAL Chemistry 2023 20 Marking Scheme Leaving Certificate Deferred Examination (M34C) QUESTION 10 (a) CALCULATE: (i) 0.1 g oxygen (9) [*Addition must be shown for error to be treated as slip.] CALCULATE: (ii) 0.5 g oxygen added to sample (10) [**Addition must be shown for error to be treated as slip.] CALCULATE: (iii) 0.08 – 0.0814 moles Fe3O4 (3) (iv) WHAT: FeO: 2 (+2, II) // Fe3O4: 8/3 (+ 8/3) // Fe2O3: 3 (+3, III) (3 × 1) [Take order of question unless responses clearly labelled.] 7.2% of 12.5 g is 0.9 g FeO (3) ଴.ଽ ଻ଶ∗ = 0.0125 (1/80) moles FeO  0.003125 (1/320) moles O2 / 0.00625 (1/160) moles O (3) 0.003125 × 32 / 0.00625 × 16 = 0.1 g oxygen (3) 12.5 – 0.9 = 11.6 g Fe3O4 / 92.8% of 12.5 = 11.6 g Fe3O4 (3) ଵଵ.଺ ଶଷଶ∗∗ = 0.05 (1/20) moles Fe3O4  0.00125 (1/80) moles O2 / 0.0025 (1/40) moles O (3) 0.00125 × 32 / 0.0025 × 16 = 0.4 g oxygen added to Fe3O4 (3) 0.1 + 0.4 = 0.5 g oxygen added to sample (1) 0.00625 moles Fe2O3 from FeO + 0.075 moles from Fe3O4  0.08125 (0.08 – 0.0814) moles Fe2O3 (3)
+ATAL Chemistry 2023 21 Marking Scheme Leaving Certificate Deferred Examination (M34C) (b) (i) NAME: steam distillation (3) (ii) WHAT: components have different attractions (affinities, interactions, solubilities) for (in) / components differentially partitioned (dissolved) between // stationary and mobile phases or mobile phase carrying the mixture through (in contact with) stationary phase // components selectively (differently) adsorbed (retained) by stationary phase / components pass (move, elute) through (on, along) stationary phase at different speeds (rates) (2 × 3) (iii) WHY: part of spectrum unique to a compound / each compound has a different spectrum / spectrum allows compound to be distinguished (identified) from all others / database (library) spectra for different compounds exists (3) (iv) WHAT: Mr C10H12O2 = 164* (3) [*Addition must be shown for error to be treated as slip.] (v) CALCULATE: 73.2% C, 7.3% H, 19.5% O (6) (vi) WOULD: yes JUSTIFY: unsaturated / double carbon‐carbon bond present (2 × 2) ଵଶ଴ ଵ଺ସ × 100 = 73.2% C (2) ଵଶ ଵ଺ସ × 100 = 7.3% H (2) ଷଶ ଵ଺ସ × 100 = 19.5% O (2) (12 × 10) + (1 × 12) + (16 × 2) = 164* (3)
+ATAL Chemistry 2023 22 Marking Scheme Leaving Certificate Deferred Examination (M34C) (c) (i) IDENTIFY: aluminium sulfate (alum, Al2(SO4)3) / polyacrylamide (‐CH2CHCONH2‐)n / sodium silicate (Na2SiO3, Na4SiO4, Na6Si2O7, etc) / sodium aluminate (NaAlO2, NaAl(OH)4∙ (H2O)x, Na2O∙Al2O3, Na2Al2O4) / aluminium chlorohydrate (AlnCl3n‐m(OH)m) / iron(II) sulfate (FeSO4) / iron(III) chloride (FeCl3) / calcium oxide (CaO) / calcium hydroxide (Ca(OH)2) (3) [Allow polyelectrolyte] (ii) WHAT: clumping (coagulation, settlement, sedimentation) / formation of larger particles / (6) (iii) WHAT: disinfection (sterilisation) / kill pathogens (harmful microorganisms, harmful bacteria) / prevent spread of water‐borne disease / to ensure treated water remains disinfected (sterile) (3) (iv) WHY: to avoid impairing taste (smell) / too much affects taste (smell) negatively (3) (v) IDENTIFY: sodium fluoride (NaF) / hexafluorosilicic acid (H2SiF6) / sodium fluorosilicate (Na2SiF6) / [Allow fluoride ion (F–), fluoride salt.] (3) (vi) WHY: to avoid fluorosis (staining teeth, damaging teeth) / too much stains teeth (damages teeth, causes fluorosis) (3) (vii) GIVE: corrosion of pipes (4)
+ATAL Chemistry 2023 23 Marking Scheme Leaving Certificate Deferred Examination (M34C) QUESTION 11 (a) (i) DEFINE: number expressing the relative (measure of) attraction of an atom // for shared pair(s) of electrons / for electrons in a covalent bond (2 × 3) (ii) IN WHICH: ammonia (NH3) // hydrogen peroxide (H2O2) // hydrogen fluoride (HF) (3 × 2) IDENTIFY: hydrogen chloride (HCl) (2) IDENTIFY: dipole‐dipole interactions (2) [Allow van der Waals force] DESCRIBE: partial positive charge on a hydrogen (H+) of one molecule attracted to partial negative charge on chlorine (Cl–) of another molecule (3) [Information to be given in diagrammatic form, at least two HCls shown] ACCOUNT: hydrogen bonding between HCl and H2O / dipole‐dipole interactions between HCl and H2O (3) (iv) EXPLAIN: temporary dipoles between molecules due to movement of electrons (3)
+ATAL Chemistry 2023 24 Marking Scheme Leaving Certificate Deferred Examination (M34C) (b) (i) DEFINE: change in concentration per unit (over) time (rate of change of concentration, 𝒄𝒉𝒂𝒏𝒈𝒆 𝒊𝒏 𝒄𝒐𝒏𝒄𝒆𝒏𝒕𝒓𝒂𝒕𝒊𝒐𝒏 𝒕𝒊𝒎𝒆 ) of one reactant or product or 𝒅ሾ𝒓𝒆𝒂𝒄𝒕𝒂𝒏𝒕ሿ 𝒅𝒕 / ି𝒅ሾ𝒓𝒆𝒂𝒄𝒕𝒂𝒏𝒕ሿ 𝒅𝒕 / 𝒅ሾ𝒑𝒓𝒐𝒅𝒖𝒄𝒕ሿ 𝒅𝒕 (3) (ii) WHAT: minimum combined energy of colliding particles (molecules) // for reaction to take place between them or minimum combined energy of reacting particles (molecules) // for (of) effective collisions / [At least one mention of collisions or colliding is essential for full marks.] or minimum energy of reacting molecules (particles) // for product molecule(s) to be formed / for reaction to occur / for intermediate (transition state) to be formed / for internal bonds to be broken TWO PARTS : (2 × 2) (iii) ACCOUNT: more reactant collisions per unit time / frequency of reactant collisions increased / reactants (A and B) closer together in solution / reactants (A and B) have less distance to travel in solution before colliding (3) (iv) ACCOUNT: more successful (effective, energetic) collisions per unit time / frequency successful (effective, energetic) collisions increased / more collisions have activation energy (form intermediate, form product) per unit time / frequency of collisions with activation energy (that form intermediate, that form product) increased (6) [Allow more overall collisions per unit time / frequency overall collisions increased (3)] (v) ACCOUNT: ionic bonds broken (on dissolving, already) / no ionic bonds to be broken in solution / ionic substances (AgNO3 and NaCl) dissociated / oppositely charged ions (Ag+, NO3‐, Na+ and Cl‐) can re‐associate (collide, bond) freely (3) (vi) ACCOUNT: activation energy (time) required to break bonds / bonds must be broken before reaction can proceed / bonds must be broken before (new bonds, intermediate) can be formed (3) (vii) SUGGEST very little motion of particles in solids / few collisions / collisions have little energy / ionic substances not dissociated into ions (3)
+ATAL Chemistry 2023 25 Marking Scheme Leaving Certificate Deferred Examination (M34C) (c) (i) DEFINE: gain of electrons (3) (ii) WHY: do not take part in reaction (electrolysis) / only conduct currrent (3) (iii) IDENTIFY: hydrogen (H2) (4) (iv) WRITE: H2O + e–  ½H2 + OH– / 2H2O + 2e–  H2 + 2OH– FORMULAE: (3) BALANCING: (3) (v) WHAT: A: red// B: blue (2 × 3) [Take order of question unless answers clearly labelled.] (vi) EXPLAIN: Na+ too difficult to reduce (not easily reduced, stable) / sodium high up electrochemical series / H+ (hydrogen ion) more easily reduced / high concentration H+ (hydrogen ion) (3)
+ATAL Chemistry 2023 26 Marking Scheme Leaving Certificate Deferred Examination (M34C) (d) A (i) WHAT: O3 / allotrope of oxygen (3) (ii) IDENTIFY: ultraviolet (uv) (3) (iii) WHAT: contains carbon, chlorine and fluorine (3) (iv) WRITE: CCl2F2  CClF2 + Cl (3) [Dots to label free radicals not essential.] (v) WRITE: O3 + Cl  O2 + ClO // ClO + O  O2 + Cl (2 × 3) [Dots to label free radicals not essential.] (vi) EXPLAIN: gas that absorbs (traps) infrared (ir, heat) in the atmosphere / gas that contributes to global warming (greenhouse effect) (3) (vii) HOW: bubble into universal indicator (blue litmus) solution // turns yellow (orange, red) or bubble into water // pH falls (2 × 2) or B (i) WHAT: chlorine (Cl2) (3) (ii) WHY: to avoid them reforming NaCl / to avoid them reacting together (3) HOW: mesh (gauze) to separe them / separate (two) compartments / extract (remove) chlorine and pipe away molten sodium from cell (3) (iii) EXPLAIN: CaCl2 (calcium chloride) added to lower the melting point (m.p.) / CaCl2 (calcium chloride) added to dissolve the sodium chloride (NaCl) (3) (iv) WHAT: carbon (graphite) (3) EXPLAIN: chemically inert (unreactive) (3) (v) WRITE: Cl–  Cl + e–  ½Cl2 + e– / 2Cl–  2Cl + 2e–  Cl2 + 2e– FORMULAE: (2) BALANCING: (2) (vi) WHY: electricity expensive / using reducing agents (heat, blast furnace, other methods) more economical (3)
+
+
+
+<!-- pdf-answer-column: the answer column alone, line by line (deferred scheme) -->
+
+na Scrúduithe Stáit
+Examinations Commission
+Certificate 2023
+Examinations
+Marking Scheme
+Chemistry
+Higher Level
+and students on the marking schemes for the deferred examinations
+published by the State Examinations Commission are not intended
+They are an essential resource for examiners who receive training
+and application of the scheme. However, it should be noted
+schemes for the deferred examinations may not necessarily be as detailed
+marking schemes for the main sitting of an examination, which
+across a large team of examiners.
+are working documents. While a draft marking scheme is prepared
+the scheme is not finalised until examiners have applied
+and the feedback from examiners has been collated and considered
+of responses of candidates, the overall level of difficulty of the
+the need to maintain consistency in standards between the main sitting
+sitting and from year to year. In the case of the deferred examinations,
+the level of detail may vary by question, as the marking scheme will
+for the questions attempted by the candidates who sat these
+schemes that include model solutions or answers, it should be
+intended to be exhaustive. Variations and alternatives may also be
+must consider all answers on their merits, and will have consulted
+when in doubt.
+Schemes
+future marking schemes on the basis of past schemes (whether for
+or the deferred examinations) should be avoided. While the underlying
+remain the same, the details of the marking of a particular type
+in the context of the contribution of that question to the overall
+Accordingly, aspects of the structure, detail and application
+for a particular examination will not necessarily be the same for the
+as for the main sitting or from one year to the next.
+scheme, the following should be noted.
+key phrases are given which contain the information and ideas that must
+in order to merit the assigned marks.
+methods and definitions in the scheme are not exhaustive and alternative
+in any answer is determined by the context and the manner in which the
+the number of marks assigned to the answer in the examination paper and,
+may vary from year to year.
+the essential points required in the candidate’s answer. A double solidus
+for which separate marks are allocated in a part of the question. Words,
+by a solidus (/) are alternatives which are equally acceptable for a
+phrase in bold, given in brackets, is an acceptable alternative to the preceding
+however, that words, expressions or phrases must be correctly used in context
+and, where there is incorrect use of terminology or contradiction, the marks
+may apply when a candidate gives a list of correct and incorrect
+and formulas of elements and compounds are equally acceptable except
+name or the formula is specifically asked for in the question. However, in
+is asked for, the formula may be accepted as an alternative.
+of one mark for each arithmetical slip made by a candidate in a calculation.
+to incorrect Mr values but only if a candidate shows the addition of all the
+the error is clearly an addition error. If the addition of atomic masses is
+the marks for an incorrect Mr.
+rate of 10% of the marks obtained will be given to a candidate who answers
+and who obtains less than 75% of the total marks. In calculating the bonus
+are always rounded down, not up e.g., 4.5 becomes 4; 4.9 becomes 4, etc.
+next page applies to candidates who answer entirely through Irish and who
+the total marks.
+to answer EIGHT questions in all.
+marks (50).
+1 Marking Scheme
+Examination (M34C)
+400@10%
+Coimisiún na Scrúduithe Stáit
+Marcanna Breise as ucht freagairt trí Ghaeilge
+an méid marcanna breise ba chóir a bhronnadh ar iarrthóirí a ghnóthaíonn
+de réir an ghnáthráta a bhronnadh ar iarrthóirí nach ngnóthaíonn níos mó
+don scrúdú. Ba chóir freisin an marc bónais sin a shlánú síos.
+10%
+seo i gcás na n‐ábhar a bhfuil 400 marc san iomlán ag gabháil leo agus inarb
+i gcás 300 marc agus faoina bhun sin. Os cionn an mharc sin, féach
+Marc Bónais Bunmharc Marc Bónais
+29 351 ‐ 353 14
+28 354 ‐ 356 13
+27 357 ‐ 360 12
+26 361 ‐ 363 11
+25 364 ‐ 366 10
+24 367 ‐ 370 9
+23 371 ‐ 373 8
+22 374 ‐ 376 7
+21 377 ‐ 380 6
+20 381 ‐ 383 5
+19 384 ‐ 386 4
+18 387 ‐ 390 3
+17 391 ‐ 393 2
+16 394 ‐ 396 1
+15 397 ‐ 400 0
+2 Marking Scheme
+Examination (M34C)
+MnSO4.2H2O (manganese(II) sulfate) / MnCl2.4H2O (manganese(II) chloride)
+[Incorrect oxidation number cancels.]
+ensures all O2 (oxygen) detected (analysed, reacts) /
+ensures O2 (oxygen) limiting /
+if insufficient added not all O2 (oxygen) detected (analysed, reacts) /
+provides enough for all O2 (oxygen)
+brown
+known concentration / known moles (mass) in known volume
+rinsed with deionised (distilled, pure) water and with iodine solution
+(solution from bottle, solution it will measure) //
+use filler //
+fill until bottom of meniscus on mark //
+read at eye‐level //
+allow drainage time / last drop to remain (not to be shaken out, blown
+drain under gravity / touch (tip, tap) pipette against wall of conical flask
+repeat a number of times to add 150 cm3 in total
+starch
+blue (black, blue‐black) to colourless
+[Ending with ‘blue (black, blue‐black) to colourless’ essential if other colours
+mentioned.]
+0.000114 (1.14 × 10–4, 57/500000) moles thiosulfate
+Mr of Na2S2O3.5H2O = 248* (3)
+ଷ.଻ଶ
+𝑀ൌ
+= 0.015 (3/200) M (3)
+ଶସ଼
+[*Addition must be shown for error to be treated as slip.]
+଻.଺ ൈ ଴.଴ଵହ
+= 0.000114 (1.14 × 10–4, 57/500000) moles thiosulfate
+ଵ଴଴଴
+10–5,
+= 0.000057 (5.7 × 57/1000000) moles of I2
+ 
+thiosulfate : I2 = 2 : 1 0.000114 (1.14 × 10–4, 57/500000) 2
+[Divide by 2 essential.]
+10–5, cm3
+= 0.000057 (5.7 × 57/1000000) moles I2 in 150.0
+3 Marking Scheme
+Examination (M34C)
+10–4,
+0.00019 (1.9 × 19/100000) moles /l (M) of O2
+ଵ଴଴଴
+0.000057 (5.7 × 10–5, 57/1000000) × =
+ଵହ଴
+0.00038 (3.8 × 10–4, 19/50000) moles /l (M) of I2 (3)
+ଵ଴଴଴
+[Multiply by essential.]
+ଵହ଴
+10–4,
+0.00038 (3.8 × 19/50000) moles /l (M) of I2 ÷ 2 =
+0.00019 (1.9 × 10–4, 19/100000) moles /l (M) of O2 (3)
+[Divide by 2 essential.]
+or
+10–5,
+0.000057 (5.7 × 57/1000000) ÷ 2 =
+0.0000285 (2.85 × 10–4, 57/2000000) moles of O2 in 150.0 cm3 (3)
+[Divide by 2 essential.]
+ଵ଴଴଴
+0.0000285 (2.85 × 10–4, 57/2000000) × =
+ଵହ଴
+10–4,
+0.00019 (1.9 × 19/100000) moles /l (M) of O2 (3)
+ଵ଴଴଴
+[Multiply by essential.]
+ଵହ଴
+or
+ൈ ଴.଴ଵହ
+
+M = 0.00038 (3.8 × 10–4, 19/50000) moles /l (M) of I2
+ଶ
+10–4, 19/50000) moles /l (M) of I2 ÷ 2 =
+10–4,
+19/100000) moles /l (M) of O2
+or
+ൈ ଴.଴ଵହ
+ M = 0.00019 (1.9 × 10–4, 19/100000) moles /l (M) of O2
+ସ
+6 – 6.1 p.p.m.
+0.00019 (1.9 × 10–4, 19/100000) × 32 = 0.00608 g/l
+[Multiply by 32 essential.]
+0.00608 × 1000 = 6.08 – 6.1 p.p.m.
+[Multiply by 1000 essential.] (3
+for incorrect or inappropriate rounding off resulting in candidate’s
+given range but deduction to be made once only in (d).]
+4 Marking Scheme
+Examination (M34C)
+ethene (C2H4)
+purple (lilac, violet, pink) decolourises (to colourless)
+[Correct order essential] [Decolourises alone insufficient]
+[Clear not acceptable instead of colourless]
+both gases unsaturated / addition reaction occurs in both cases /
+double bond or triple bond present / multiple bond
+ethanoic acid (CH3COOH)
+
+2CH3COOH + Na2CO3 2CH3COONa + H2O + CO2 (3)
+FORMULAE:
+ethanal (CH3CHO)
+add Fehling’s reagent //
+warm / heat gently //
+brick‐red precipitate fomed / brick‐red Cu+ formed
+sample (crystals) in melting point (m.p.) capillary tube in melting point
+(apparatus, in Thiele tube) shown in diagram / sample (crystals) on aluminium
+(melting) block shown in diagram //
+heat slowly while observing crystals / heat source shown or labelled in
+record (note) temperature range at which melting occurs / record (note)
+melting point temperature
+[‘Record melting point’ sufficient where thermometer shown or mentioned.]
+[Maximum (6) if no diagram or no labels.]
+measure (compare) melting points (m.p.) before and after
+purer (recrystallized, second) melting point higher (closer to correct value,
+122C
+) /
+impure (original) melting point lower /
+purer (recrystallized) melting point sharper /
+impure (original) melting point broader (less sharp)
+or
+CHO gravimetric microanalysis / named spectroscopic technique
+purer (recrystallized) CHO analysis closer to correct result /
+impure (original) CHO analysis farther from correct result /
+spectrum of purer (recrystallized) sample shows fewer (no) impurities
+spectrum of impure (original) sample shows more impurities
+[Both parts linked.]
+81.03 %
+ଵ.଼଼ ൈ ଵ଴଴
+= 81.0344% (3)
+ଶ.ଷଶ
+removal of insoluble impurities (substances)
+5 Marking Scheme
+Examination (M34C)
+oxidizer (oxidising reagent) / can cause fire by oxidising other substances
+releasing oxygen
+[Do not accept flammable.]
+reduce amount (dilute) / store (purchase) small quantities / consider
+consider eliminate / store cool (dry, secure, well ventilated, away from
+compatible substances, away from non‐compatible chemicals, with other
+oxidising agents, in the dark, in ventilated containers, in plastic containers,
+small hole in stopper) / do not store in glass bottles / wear PPE (gloves,
+protection) / avoid contact with skin (eyes, clothing) / use appropriate
+use glycerine (glycerol, negative catalyst) / use as soon as possible
+[Allow store in air‐tight container.]
+brown (black) solid (powder, grains, pellets)
+0.02 moles H2O2 in 10 cm3
+ cm3  cm3
+6.8 g per 100 g 6.8 g per 100 0.68 g per 10 (3)
+଴.଺଼
+= 0.02 moles in 10 cm3 (3)
+ଷସ∗
+or
+ cm3
+6.8 g per 100 g 6.8 g per 100
+଺.଼
+= 0.2 moles in 100 cm3 (3)
+ଷସ∗
+ cm3
+0.2 ÷ 10 = 0.02 moles in 10 (3)
+must be shown for error to be treated as slip.]
+no other marks are awarded, award (3) for calculation of 34.]
+litres of O2 (240 cm3 of O2)
+
+0.02 moles H2O2 0.01 moles O2 formed (3)
+ 0.01 × 24.0 = 0.24 litres of O2 (240 cm3 of O2) (3)
+large (250 cm3) graduated cylinder / gas syringe
+6 Marking Scheme
+Examination (M34C)
+both reactants in flask (reaction vessel), e.g. A, B or C below, and one
+labelled with name or formula [hydrogen peroxide added from dropping
+not acceptable] //
+flask connected to graduated container, e.g. X or Y below, for oxygen
+[graduations marked or collecting graduated container labelled]
+B
+graduated
+C
+cylinder
+H2O2
+gas syringe
+MnO2
+7 Marking Scheme
+Examination (M34C)
+labelled volume (V, O2, cm3) and axis labelled time (t, minutes) //
+correct numeric scales on both axes //
+plotting of points other than (0, 0) //
+curve of correct shape through origin
+of points connected with straight lines do not give a smooth curve.]
+(3) for each of the following: not on graph paper; more than one point
+versus volume graph acceptable.]
+tangent drawn to plotted curve at 240 seconds
+two points from tangent read correctly, e.g. (0, 105) and (320, 240) /
+cm3,
+and run correctly read from tangent, e.g. 134 240 seconds
+cm3 cm3
+O2 per second [0.32 – 0.46] O2 per second
+𝟐𝟒𝟎ି𝟏𝟎𝟓 𝟏𝟑𝟓
+ൌ
+= 0.42 cm3 O2 per second [0.32 – 0.46] cm3 O2 per second
+𝟑𝟐𝟎ି𝟎 𝟑𝟐𝟎
+must be drawn for work on instantaneous rate to be awarded full marks.]
+3 marks can be awarded for rate within stated range with no tangent drawn
+for work done on a poor tangent or a tangent placed at an incorrect
+8 Marking Scheme
+Examination (M34C)
+Six marks to be allocated to each item and one additional mark
+items for which the highest marks are awarded.
+with same atomic number (same Z, equal numbers protons) /
+of the same element //
+number of neutrons (different A) / different mass numbers
+//
+order of question unless answers clearly labelled.]
+only one stage is given and not labelled first or second, take as the first
+𝟐𝟎𝟒 𝐏𝐛
+𝟖𝟐
+5.7
+In 100 g CH4∙xH2O there are 13.4 g CH4 and 86.6 g H2O
+ଵଷ.ସ
+= 0.8375 moles CH4 (2)
+ଵ଺∗
+଼଺.଺
+= 4.8111 moles H2O (2)
+ଵ଼∗∗
+
+CH4 : H2O = 1 : x =
+0.8375 : 4.8111 = 1 : 5.7 (2)
+the same temperature and pressure //
+volumes of gases have equal (the same) number(s) of particles (atoms,
+moles)
+not allow s.t.p for ‘same temperature and pressure’.]
+× 105 Pa
+ଶଽସ
+n = = 10.5 moles
+ଶ଼
+𝒏𝑹𝑻 𝟏𝟎.𝟓 ൈ 𝟖.𝟑 ൈ𝟐𝟗𝟑
+ൌ 
+pV = nRT / p = / p × 0.168 = 10.5 × 8.3 × 293 / p
+𝑽 ଴.𝟏𝟔𝟖
+p = 1.5 × 105 Pa
+[Use of Kelvin essential here]
+pairs of electrons in valence shell of beryllium only (no lone pairs) //
+pairs and 2 bond pairs in water (H2O)
+barium chloride {barium nitrate, BaCl2, Ba(NO3)2} solution /
+solution of barium ions (Ba2+) //
+precipitate //
+(disappears, clears) in (on addition of) dilute hydrochloric acid (HCl)
+9 Marking Scheme
+Examination (M34C)
+
++ H2CO3 Ca(HCO3)2 (3)
+FORMULAE:
+NN
+strong (high energy) triple bond / //
+/ high degree of symmetry / no dipole moment /
+unpaired electrons
+not have incomplete d sublevel (d subshell, d orbitals) /
+orbitals (d sublevel, d subshell) filled /
+not form cation with incomplete d sublevel (d subshell, d orbitals)
+(3) for does not have variable valency / forms white (colourless) compounds
+not form coloured compounds / not a good catalyst]
+10 Marking Scheme
+Examination (M34C)
+have similar chemical properties //
+mass (weight) of one element is average of (midway between) those
+/ mass number of one element is average of the mass numbers of the others
+Method 1 Method 2 Method 3
+clean a platinum soak wood (splint,
+(nichrome) wire* stick) overnight in
+prepare a solution of
+probe) in HCl water / use damp
+the given salt
+(concentrated (wet) wood (splint,
+hydrochloric acid) stick)
+dip wet rod in salt dip** splint (stick) in in water and ethanol
+(sample) salt (sample) (propanol)
+salt in or over hot hold salt in or over spray salt solution onto
+part of Bunsen hot (blue) part of (into) hot (blue) part of
+flame Bunsen flame Bunsen flame
+red colour red colour red colour
+a positive result for is a positive result is a positive result for
+strontium in salt strontium in salt strontium in salt
+‘metal inoculating loop’, or ‘metal spatula’ for ‘platinum (nichrome)
+labelled diagram for some or all points acceptable.]
+2: ‘Soak splint (stick) in salt solution’ merits (6).]
+1s2 2s2 2p6 / 1s2 2s2 2px22py2 2pz2 //
+3s2 3p6 4s1 / 3s2 3px23py2 3pz24s1 /
+or
+[Allow [Ar] 4s1 for (6)]
+[Allow subscripts instead of superscripts.]
+[Arrows to represent numbers of electrons acceptable but sublevel labels
+6
+minimum energy required to completely remove //
+the most loosely bound electron / the outermost electron
+ K+ e–
+K(g) +
+(g)
+[Subscripts not required][X instead of K acceptable]
+increasing atomic radius / outer electrons farther from nucleus /
+extra shell of electrons //
+additional screening (shielding) from electrons in inner shells
+effective nuclear charge increasing //
+atomic radius decreasing
+full outer subshell of magnesium more stable than half‐filled outer subshell
+Sodium
+11 Marking Scheme
+Examination (M34C)
+decreasing
+light gasoline
+temperature
+naphtha
+kerosene
+crude oil
+gas oil
+furnace
+column with trays or outlets at different levels //
+indication that base is hotter than top, e.g. position of furnace, label,
+indication that molecules with lower boiling points separate higher up
+crude oil heated before entering column
+[no diagram or no labels –3]
+boiling point / relative molecular mass (Mr) / number of carbon atoms
+[Do not allow length of carbon chain]
+same molecular formulae (formulas) //
+different structures / different arrangement of atoms (bonds)
+12 Marking Scheme
+Examination (M34C)
+mol–1
+–8,088.1 kJ
+ΔHformation ΔHformation
+ΔHreaction = –
+products reactants
+ΔHreaction = (12 × –393.5) kJ + (13 × –285.8) kJ – (–349.3) kJ
+ΔHreaction = (–4,722.0) kJ (3) + (–3715.4) kJ (3) –(–349.3) kJ
+ΔHreaction = (–4,722.0) kJ (3) + (–3,715.4) kJ (3) + 349.3 kJ
+ΔHcombustion = –8,088.1 kJ mol–1
+or
+
+12C + 13H2 ΔH = 349.3 kJ
+
+12O2 12CO2 ΔH = –4,722.0 kJ
+
+6½O2 13H2O ΔH = –3,715.4 kJ
+
++ 18½O2 12CO2 + 13H2O ΔHcombustion –8,083.9 kJ
+be added for the consequential award of the fourth 3 marks.
+ΔHcombustion = –8,088.1 kJ mol–1
+and matching from different boxes not acceptable.
+final answer for ΔH = +8,088.1 kJ mol–1 apply the marking scheme but
+mark is 9.
+1.692 × 1030 – 1.7 × 1030 molecules
+
+235,000 moles C12H26 235,000 × 12 = 2820,000 moles CO2 (3)
+2820,000 × 6 × 1023 = 1.692 × 1030 – 1.7 × 1030 molecules (3)
+steam reforming of natural gas /
+coal gasification /
+electrolysis of water /
+dehydrocyclization (reforming) of hydrocarbons /
+methane pyrolysis
+explosive / fire risk / very little green hydrogen available / needs high
+storage / difficulties storing fuel on aircraft / leaks from storage tanks
+13 Marking Scheme
+Examination (M34C)
+state reached when rates of forward and reverse reactions are equal
+state reached when concentrations are constant in reversible reaction
+systems in (at) equilibrium //
+react to oppose (minimise, relieve) applied stress(es) {disturbance(s)}
+[Instead of ‘stress(es){disturbance(s)}’ accept ‘change in temperature,
+number of moles (concentrations)’ if all three {temperature, pressure
+(concentrations)} are given.]
+greater surface area means greater catalytic ability / more active sites
+more adsorption of reactants possible
+poison adheres to (coats) surface of catalyst irreversibly (competitively)
+adsorption reactants reduced /
+active sites blocked (fewer active sites available) /
+ሾ𝐒𝐎𝟑ሿ𝟐
+ሾ𝐒𝐎𝟐ሿ𝟐ሾ𝐎𝟐ሿ∗
+=
+brackets essential.]
+for (d)(i) may be awarded for this expression given in (d) (iv) CALCULATE.]
+3.3 mol SO2, 33.45 – 34.5 mol O2, Kc = 62,729
+of moles of O2 that reacts.
+⇌
+2SO2 + O2 2SO3
+(g) (g) (g)
+65.6 mol 65.6 mol 0 mol
+– 2x mol – x mol + 2x mol
+65.6 – 2x mol 65.6 – x mol 2x mol
+moles / x = 31.15 moles
+3.3 mol (3) 34.45 – 34.5 mol (3) 62.3 mol
+litres. Divide by 6000.
+ଷ.ଷ ଷସ.ସହ ଺ଶ.ଷ
+= =
+ଵ଴య ଵ଴య ଵ଴య
+଺.଴ ൈ ଺.଴ ൈ ଺.଴ ൈ
+× 10‐4 mol/l 5.7 × 10‐3 – 5.8 × 10‐3 mol/l 0.01 – 0.0104 mol/l
+ሾ0.0104ሿ2
+ൌ
+= 56,996 – 62,729
+2
+10െ4ሿ ൈ10െ3ቃ
+ሾ5.5 ൈ ቂ5.75
+14 Marking Scheme
+Examination (M34C)
+number of moles of O2 that reacts.
+⇌
+2SO2 + O2 2SO3
+(g) (g) (g)
+65.6 mol 65.6 mol 0 mol
+– x mol – ½x mol + x mol
+65.6 – x mol 65.6 – ½x mol x mol
+moles / ½x = 31.15 moles
+3.3 mol (3) 34.45 – 34.5 mol (3) 62.3 mol
+litres. Divide by 6000.
+ଷ.ଷ ଷସ.ସହ ଺ଶ.ଷ
+= =
+ଵ଴య ଵ଴య ଵ଴య
+଺.଴ ൈ ଺.଴ ൈ ଺.଴ ൈ
+× 10‐4 mol/l 5.7 × 10‐3 – 5.8 × 10‐3 mol/l 0.01 – 0.0104 mol/l
+ሾୗ୓యሿమ ሾ0.0104ሿ2
+ൌ
+= 56,996 – 62,729
+2
+10െ4ሿ ൈ10െ3ቃ
+ሾ5.5 ൈ ቂ5.75
+mixing and matching of marks between boxes.]
+incorrect Kc expression from (c) (i) in (c) (ii) without further
+WRITE CALCULATE
+increased / greater yield (more product, more SO3)
+no change
+more costly / less economical / less safe
+exothermic
+endothermic (heat absorbing, reverse, formation of SO2) reaction
+favoured (occurs) at higher temperatures / left side (LHS) of equilibrium
+higher temperatures /
+exothermic (heat releasing forward, formation of SO3) reaction favoured
+at lower temperatures / right side (RHS) of equilibrium favoured at lower
+temperatures
+[(i) must be correct for (i) to be awarded marks.]
+IS EXPLAIN
+rate too slow / rate increased (better, faster) at higher temperatures
+15 Marking Scheme
+Examination (M34C)
+B: ethane //
+C: methylbenzene / phenyl methane
+[Take order of question unless answers clearly labelled.]
+A (ethene, C2H4)
+Cl2 //
+ultraviolet (uv) light / sunshine
+[Take order of question unless answers clearly labelled.]
+initiation:
+homolysis (splitting, fission) of chlorine molecule (Cl2) into
+Cl●,
+free radicals (atoms, Cl) by ultraviolet (uv) light /
+Cl2 uv 2Cl● / Cl2 uv 2Cl
+propagation (1):
+Cl●,
+chlorine radical (atom, Cl) reacts with ethane (C2H6) giving
+hydrogen chloride (HCl) and an ethyl radical (C2H5●) /
+Cl● + C2H6 → HCl + C2H5● / Cl + C2H6 → HCl + C2H5●
+[Hydrochloric acid not acceptable for HCl and cancellation applies.]
+[Where C2H5 used instead of C2H5● deduct 3 marks but only once in (c).]
+propagation (2):
+ethyl radical (C2H5●) reacts with chlorine molecule (Cl2) giving monochloroethane
+(C2H5Cl) and a chlorine radical (atom, Cl●, Cl) /
+C2H5● Cl● C2H5●
++ Cl2 → C2H5Cl + / + Cl2 → C2H5Cl + Cl
+chain reaction occurs / propagation steps repeat until one reactant used
+propagation steps repeat until termination reached
+[Accept ‘chain reaction occurs’ anywhere in (c).]
+termination:
+combination of remaining radicals to form molecules (chlorine, chloroethane,
+butane) /
+2Cl● → Cl2 / 2Cl → Cl2 /
+Cl● C2H5● C2H5●
++ → C2H5Cl / Cl + → C2H5Cl /
+2C2H5● → C4H10 FOUR:(6
+ANY
+[Where a radical is referred to as an ion or where a diagram shows a radical
+the description refers to an ion cancellation applies each time.]
+[Where a candidate refers in name or in a drawing to methane instead
+and/or methyl instead of ethyl and/or ethane instead of butane, deduct
+but only once in (c) (ii).
+provides (produces, breaks into, source of) ethyl free radicals /
+increased rate (speeding up) of reaction shows radicals part in mechanism
+[‘Radical promoter’ insufficient on its own.]
+16 Marking Scheme
+Examination (M34C)
+hydrogen chloride (HCl)
+addition
+poly(ethene) /polythene / polyethylene /poly(ethylene)
+Carbons need
+shown explicitly
+Carbons need not be shown explicitly
+Hs need not
+explicitly???????
+not be shown
+bond is shown
+Carbons need
+shown explicitly
+Hs need not
+Hs need not be shown explicitly, CH
+explicitly???????
+bond is shown
+2 2
+// to tetrahedral
+17 Marking Scheme
+Examination (M34C)
+dissociates in water (aqueous solution) //
+to produce protons (hydrogen ions, H+)
+[Allow H3O+ (hydronium ions)]
+H+)
+proton (hydrogen ion, donor
+HCO3–
+//
+NH4+
+NH3 does not dissociate in water (aqueous solution) /
+OH‐)
+hydroxide (hydroxyl ions, not produced
+[Allow ‘no OH’ for (3)]
+log10[H+] log10[H3O+]
+pH = – / pH = – /
+minus log base 10 hydrogen ion concentration expressed in moles per
+only for dilute solutions / unreliable (inaccurate, unsuitable) in very
+concentrated solutions //
+only valid (useful) in 0 ‐ 14 range //
+applies to (only for) aqueous solutions //
+unreliable for negative pH values //
+temperature dependent / pH scale 0 – 14 only at 25 °C
+[‘Valid range 1 – 14’ unacceptable but does not cancel.]
+pH = 11.278 – 11.3
+–logඥ𝑲𝒃ሾ𝐗𝐎𝐇ሿ / antilog(– pOH) = ඥ𝑲𝒃ሾ𝐗𝐎𝐇ሿ / [OH–] = ඥ𝑲𝒃ሾ𝐗𝐎𝐇ሿ /
+–logඥ𝑲𝒃ሾ𝐍𝐇𝟒𝐎𝐇ሿ ඥ𝑲𝒃ሾ𝐍𝐇𝟒𝐎𝐇ሿ ඥ𝑲𝒃ሾ𝐍𝐇𝟒𝐎𝐇ሿ
+/ antilog(– pOH) = / [OH–] =
+–logඥ𝟏. 𝟖 ൈ𝟏𝟎ି𝟓ሾ𝟎. 𝟐𝟎ሿ ඥ𝟏. 𝟖 ൈ𝟏𝟎ି𝟓ሾ𝟎. 𝟐𝟎ሿ
+/ antilog(– pOH) = /
+ඥ𝟏. 𝟖 ൈ𝟏𝟎ି𝟓ሾ𝟎. 𝟐𝟎ሿ
+= /
+–log√𝟑. 𝟔 ൈ𝟏𝟎ି𝟔 √𝟑. 𝟔 ൈ𝟏𝟎ି𝟔 √𝟑. 𝟔 ൈ𝟏𝟎ି𝟔
+/ antilog(– pOH) = / [OH–] =
+– log(1.9 × 10–3) / antilog(– pOH) = 1.9 × 10–3 / [OH–] = 1.9 × 10–3
+  
+2.72 / Kw = 1.0 10–14 = [H+] × 1.9 × 10–3 [H+] = 5.3 10–12
+ 
+= 14 – 2.72 = 11.278 – 11.3 / pH = ‐log(5.3 10–12) = 11.278 – 11.3
+18 Marking Scheme
+Examination (M34C)
+H3O+
+in acid (at low pH) high (more, increased) concentration is a stress
+equilibrium shifts to left (LHS, yellow side, HIn side) /
+H3O+
+in acid (at low pH) high (more, increased) concentration is a stress
+more yellow (HIn) at equilibrium (when reverse reaction favoured) //
+in base (at high pH) H3O+ removed (concentration decreased) by reaction
+with OH– equilibrium shifts to right (RHS, blue side, In– side) /
+in base (at high pH) H3O+ removed (concentration decreased) by reaction
+OH– more blue (In–) at equilibrium (when forward reaction favoured)
+change (pH range, pH 3.8 to 5.4) of indicator coincides with pH change
+end point (neutralisation) /
+base strong acid titration /
+point (neutralisation) below 6 (7)
+marks only available if marks awarded.]
+WOULD
+19 Marking Scheme
+Examination (M34C)
+(i) 0.1 g oxygen
+g is 0.9 g FeO
+(1/80) moles FeO
+(1/320) moles O2 / 0.00625 (1/160) moles O
+/ 0.00625 × 16 = 0.1 g oxygen
+must be shown for error to be treated as slip.]
+(ii) 0.5 g oxygen added to sample
+11.6 g Fe3O4 / 92.8% of 12.5 = 11.6 g Fe3O4
+
+(1/20) moles Fe3O4 0.00125 (1/80) moles O2 / 0.0025 (1/40) moles O
+/ 0.0025 × 16 = 0.4 g oxygen added to Fe3O4
+g oxygen added to sample
+must be shown for error to be treated as slip.]
+(iii) 0.08 – 0.0814 moles Fe3O4
+Fe2O3 from FeO + 0.075 moles from Fe3O4
+(0.08 – 0.0814) moles Fe2O3
+FeO: 2 (+2, II) //
+Fe3O4: 8/3 (+ 8/3) //
+Fe2O3: 3 (+3, III)
+[Take order of question unless responses clearly labelled.]
+20 Marking Scheme
+Examination (M34C)
+steam distillation
+components have different attractions (affinities, interactions, solubilities)
+(in) / components differentially partitioned (dissolved) between //
+stationary and mobile phases
+or
+mobile phase carrying the mixture through (in contact with) stationary
+components selectively (differently) adsorbed (retained) by stationary
+components pass (move, elute) through (on, along) stationary phase
+speeds (rates)
+part of spectrum unique to a compound /
+each compound has a different spectrum /
+spectrum allows compound to be distinguished (identified) from all others
+database (library) spectra for different compounds exists
+Mr C10H12O2 = 164*
+(12 × 10) + (1 × 12) + (16 × 2) = 164* (3)
+[*Addition must be shown for error to be treated as slip.]
+73.2% C, 7.3% H, 19.5% O
+ଵଶ଴
+× 100 = 73.2% C (2)
+ଵ଺ସ
+ଵଶ
+× 100 = 7.3% H (2)
+ଵ଺ସ
+ଷଶ
+× 100 = 19.5% O (2)
+ଵ଺ସ
+yes
+unsaturated / double carbon‐carbon bond present
+21 Marking Scheme
+Examination (M34C)
+aluminium sulfate (alum, Al2(SO4)3) / polyacrylamide (‐CH2CHCONH2‐)n
+silicate (Na2SiO3, Na4SiO4, Na6Si2O7, etc) / sodium aluminate (NaAlO2,
+(H2O)x, Na2O∙Al2O3, Na2Al2O4) / aluminium chlorohydrate (AlnCl3n‐m(OH)m)
+iron(II) sulfate (FeSO4) / iron(III) chloride (FeCl3) / calcium oxide (CaO)
+calcium hydroxide (Ca(OH)2)
+[Allow polyelectrolyte]
+clumping (coagulation, settlement, sedimentation) /
+formation of larger particles /
+disinfection (sterilisation) /
+kill pathogens (harmful microorganisms, harmful bacteria) /
+prevent spread of water‐borne disease /
+to ensure treated water remains disinfected (sterile)
+to avoid impairing taste (smell) /
+too much affects taste (smell) negatively
+sodium fluoride (NaF) / hexafluorosilicic acid (H2SiF6) /
+sodium fluorosilicate (Na2SiF6) /
+[Allow fluoride ion (F–), fluoride salt.]
+to avoid fluorosis (staining teeth, damaging teeth) /
+too much stains teeth (damages teeth, causes fluorosis)
+corrosion of pipes
+22 Marking Scheme
+Examination (M34C)
+number expressing the relative (measure of) attraction of an atom //
+for shared pair(s) of electrons / for electrons in a covalent bond
+ammonia (NH3) //
+hydrogen peroxide (H2O2) //
+hydrogen fluoride (HF)
+hydrogen chloride (HCl)
+dipole‐dipole interactions
+[Allow van der Waals force]
+(H+)
+partial positive charge on a hydrogen of one molecule attracted
+(Cl–)
+partial negative charge on chlorine of another molecule
+[Information to be given in diagrammatic form, at least two HCls shown]
+hydrogen bonding between HCl and H2O /
+dipole‐dipole interactions between HCl and H2O
+temporary dipoles between molecules due to movement of electrons
+23 Marking Scheme
+Examination (M34C)
+change in concentration per unit (over) time (rate of change of concentration,
+𝒄𝒉𝒂𝒏𝒈𝒆 𝒊𝒏 𝒄𝒐𝒏𝒄𝒆𝒏𝒕𝒓𝒂𝒕𝒊𝒐𝒏
+) of one reactant or product
+𝒕𝒊𝒎𝒆
+or
+𝒅ሾ𝒓𝒆𝒂𝒄𝒕𝒂𝒏𝒕ሿ ି𝒅ሾ𝒓𝒆𝒂𝒄𝒕𝒂𝒏𝒕ሿ 𝒅ሾ𝒑𝒓𝒐𝒅𝒖𝒄𝒕ሿ
+/ /
+𝒅𝒕 𝒅𝒕 𝒅𝒕
+minimum combined energy of colliding particles (molecules) //
+for reaction to take place between them
+or
+minimum combined energy of reacting particles (molecules) //
+for (of) effective collisions /
+[At least one mention of collisions or colliding is essential for full marks.]
+or
+minimum energy of reacting molecules (particles) //
+for product molecule(s) to be formed / for reaction to occur /
+for intermediate (transition state) to be formed / for internal bonds
+broken
+TWO
+more reactant collisions per unit time /
+frequency of reactant collisions increased /
+reactants (A and B) closer together in solution /
+reactants (A and B) have less distance to travel in solution before colliding
+more successful (effective, energetic) collisions per unit time /
+frequency successful (effective, energetic) collisions increased /
+more collisions have activation energy (form intermediate, form product)
+unit time /
+frequency of collisions with activation energy (that form intermediate,
+product) increased
+[Allow more overall collisions per unit time / frequency overall collisions
+increased (3)]
+ionic bonds broken (on dissolving, already) /
+no ionic bonds to be broken in solution /
+ionic substances (AgNO3 and NaCl) dissociated /
+(Ag+, NO3‐, Na+ Cl‐)
+oppositely charged ions and can re‐associate (collide,
+freely
+activation energy (time) required to break bonds /
+bonds must be broken before reaction can proceed /
+bonds must be broken before (new bonds, intermediate) can be formed
+very little motion of particles in solids / few collisions / collisions have
+energy / ionic substances not dissociated into ions
+24 Marking Scheme
+Examination (M34C)
+gain of electrons
+do not take part in reaction (electrolysis) / only conduct currrent
+hydrogen (H2)
+e–  OH– 2e–  2OH–
+H2O + ½H2 + / 2H2O + H2 + FORMULAE: (3)
+A: red//
+B: blue
+[Take order of question unless answers clearly labelled.]
+Na+
+too difficult to reduce (not easily reduced, stable) /
+sodium high up electrochemical series /
+H+ (hydrogen ion) more easily reduced /
+high concentration H+ (hydrogen ion)
+25 Marking Scheme
+Examination (M34C)
+O3 / allotrope of oxygen
+ultraviolet (uv)
+contains carbon, chlorine and fluorine
+ CClF2 Cl
+CCl2F2 +
+[Dots to label free radicals not essential.]
+Cl  ClO
+O3 + O2 + //
+ClO + O  O2 + Cl
+[Dots to label free radicals not essential.]
+gas that absorbs (traps) infrared (ir, heat) in the atmosphere /
+gas that contributes to global warming (greenhouse effect)
+bubble into universal indicator (blue litmus) solution //
+turns yellow (orange, red)
+or
+bubble into water //
+pH falls
+chlorine (Cl2)
+to avoid them reforming NaCl / to avoid them reacting together
+mesh (gauze) to separe them / separate (two) compartments /
+extract (remove) chlorine and pipe away molten sodium from cell
+CaCl2 (calcium chloride) added to lower the melting point (m.p.) /
+CaCl2 (calcium chloride) added to dissolve the sodium chloride (NaCl)
+carbon (graphite)
+chemically inert (unreactive)
+   
+Cl– Cl + e– ½Cl2 + e– / 2Cl– 2Cl + 2e– Cl2 + 2e–
+(2)
+FORMULAE:
+electricity expensive /
+using reducing agents (heat, blast furnace, other methods) more economical
+26 Marking Scheme
+Examination (M34C)
+
+
