@@ -643,6 +643,43 @@
   ],
   "year": 2024
  },
+ "audio/2024/LC067ZLP045EV.mp3": {
+  "bitRate": 256000,
+  "bytes": 88515845,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC067ZLP045EV.mp3",
+  "durationSeconds": 2766.120156,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "8xTQQ0DXpKj+UKWCKJhOLA==",
+  "path": "audio/2024/LC067ZLP045EV.mp3",
+  "secFileid": "LC067ZLP045EV.mp3",
+  "sha256": "2db0b715decfc80b8b35ccc0b2786514ae8db9a56d582e1792d5f01bc5cea021",
+  "sitting": "june",
+  "source": {
+   "contentLength": 88515845,
+   "contentType": "audio/mpeg",
+   "etag": "\"546a505-618415407c480\"",
+   "fetchedAt": "2026-11-20T22:01:25.668Z",
+   "lastModified": "Sun, 12 May 2024 12:58:42 GMT",
+   "status": 200,
+   "via": "Chrome tab on www.examinations.ie"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "rZhGNg==",
+   "generation": "1795212321258746",
+   "md5Hash": "8xTQQ0DXpKj+UKWCKJhOLA==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2024/LC067ZLP045EV.mp3",
+   "sha256Metadata": "2db0b715decfc80b8b35ccc0b2786514ae8db9a56d582e1792d5f01bc5cea021",
+   "size": 88515845,
+   "uploadedAt": "2026-11-20T22:05:21+00:00"
+  },
+  "subjects": [
+   "music"
+  ],
+  "year": 2024
+ },
  "audio/2025/LC010CLP017EV.mp3": {
   "bitRate": 256000,
   "bytes": 75338710,
@@ -711,6 +748,80 @@
   },
   "subjects": [
    "japanese"
+  ],
+  "year": 2025
+ },
+ "audio/2025/LC067ZLP045EV.mp3": {
+  "bitRate": 256000,
+  "bytes": 96987755,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC067ZLP045EV.mp3",
+  "durationSeconds": 3030.867344,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "tY9dwykxMIoyw88pi3UF7w==",
+  "path": "audio/2025/LC067ZLP045EV.mp3",
+  "secFileid": "LC067ZLP045EV.mp3",
+  "sha256": "f1262f3debf630a56640c4a5c4e3187ebe8e0849e48afa949a177b2f5ca33897",
+  "sitting": "june",
+  "source": {
+   "contentLength": 96987755,
+   "contentType": "audio/mpeg",
+   "etag": "\"5c7ea6b-635f33faea880\"",
+   "fetchedAt": "2026-11-20T21:59:22.715Z",
+   "lastModified": "Sun, 25 May 2025 10:25:22 GMT",
+   "status": 200,
+   "via": "Chrome tab on www.examinations.ie"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "v2edFQ==",
+   "generation": "1795212330942238",
+   "md5Hash": "tY9dwykxMIoyw88pi3UF7w==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2025/LC067ZLP045EV.mp3",
+   "sha256Metadata": "f1262f3debf630a56640c4a5c4e3187ebe8e0849e48afa949a177b2f5ca33897",
+   "size": 96987755,
+   "uploadedAt": "2026-11-20T22:05:31+00:00"
+  },
+  "subjects": [
+   "music"
+  ],
+  "year": 2025
+ },
+ "audio/2025/LC067ZLP046EV.mp3": {
+  "bitRate": 256000,
+  "bytes": 81159495,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC067ZLP046EV.mp3",
+  "durationSeconds": 2536.234219,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "uMQC5FyGqzpCtgXN1zu2yQ==",
+  "path": "audio/2025/LC067ZLP046EV.mp3",
+  "secFileid": "LC067ZLP046EV.mp3",
+  "sha256": "2070d31c9a26fd20bdb4c24dfb3f373ddc6e0418e33b8667aec38662a73cc680",
+  "sitting": "june",
+  "source": {
+   "contentLength": 81159495,
+   "contentType": "audio/mpeg",
+   "etag": "\"4d66547-635f358f46280\"",
+   "fetchedAt": "2026-11-20T22:00:23.113Z",
+   "lastModified": "Sun, 25 May 2025 10:32:26 GMT",
+   "status": 200,
+   "via": "Chrome tab on www.examinations.ie"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=31536000, immutable",
+   "contentType": "audio/mpeg",
+   "crc32c": "EgxW/Q==",
+   "generation": "1795212339232663",
+   "md5Hash": "uMQC5FyGqzpCtgXN1zu2yQ==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2025/LC067ZLP046EV.mp3",
+   "sha256Metadata": "2070d31c9a26fd20bdb4c24dfb3f373ddc6e0418e33b8667aec38662a73cc680",
+   "size": 81159495,
+   "uploadedAt": "2026-11-20T22:05:39+00:00"
+  },
+  "subjects": [
+   "music"
   ],
   "year": 2025
  },
@@ -853,6 +964,80 @@
   },
   "subjects": [
    "japanese"
+  ],
+  "year": 2026
+ },
+ "audio/2026/LC067ZLP045EV.mp3": {
+  "bitRate": 256000,
+  "bytes": 91262995,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC067ZLP045EV.mp3",
+  "durationSeconds": 2851.968594,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "OD0ynZoPggBGQ2t76I47yg==",
+  "path": "audio/2026/LC067ZLP045EV.mp3",
+  "secFileid": "LC067ZLP045EV.mp3",
+  "sha256": "5bdf3cd4261287ae54b81411e6e086197ba8b7f75536d1220a92a35d6ce07a3a",
+  "sitting": "june",
+  "source": {
+   "contentLength": 91262995,
+   "contentType": "audio/mpeg",
+   "etag": "\"5709013-65161e261c600\"",
+   "fetchedAt": "2026-11-20T21:57:21.419Z",
+   "lastModified": "Sat, 09 May 2026 12:45:12 GMT",
+   "status": 200,
+   "via": "Chrome tab on www.examinations.ie"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=86400",
+   "contentType": "audio/mpeg",
+   "crc32c": "f28q3w==",
+   "generation": "1795212348557400",
+   "md5Hash": "OD0ynZoPggBGQ2t76I47yg==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2026/LC067ZLP045EV.mp3",
+   "sha256Metadata": "5bdf3cd4261287ae54b81411e6e086197ba8b7f75536d1220a92a35d6ce07a3a",
+   "size": 91262995,
+   "uploadedAt": "2026-11-20T22:05:49+00:00"
+  },
+  "subjects": [
+   "music"
+  ],
+  "year": 2026
+ },
+ "audio/2026/LC067ZLP046EV.mp3": {
+  "bitRate": 256000,
+  "bytes": 87176505,
+  "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC067ZLP046EV.mp3",
+  "durationSeconds": 2724.265781,
+  "fileType": "MPG3",
+  "format": "2 ch,  44100 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame",
+  "md5": "Ah1j+9AWPwazEBdkXrEMjg==",
+  "path": "audio/2026/LC067ZLP046EV.mp3",
+  "secFileid": "LC067ZLP046EV.mp3",
+  "sha256": "c1d89ec373203b34cff5487b8da6004d0c3123c3fa621eced1e8092fb33f027b",
+  "sitting": "june",
+  "source": {
+   "contentLength": 87176505,
+   "contentType": "audio/mpeg",
+   "etag": "\"5323539-65161fc9ba400\"",
+   "fetchedAt": "2026-11-20T21:58:21.921Z",
+   "lastModified": "Sat, 09 May 2026 12:52:32 GMT",
+   "status": 200,
+   "via": "Chrome tab on www.examinations.ie"
+  },
+  "storage": {
+   "cacheControl": "public, max-age=86400",
+   "contentType": "audio/mpeg",
+   "crc32c": "jpCjpg==",
+   "generation": "1795212357383339",
+   "md5Hash": "Ah1j+9AWPwazEBdkXrEMjg==",
+   "object": "gs://nextstepuni-app.firebasestorage.app/audio/2026/LC067ZLP046EV.mp3",
+   "sha256Metadata": "c1d89ec373203b34cff5487b8da6004d0c3123c3fa621eced1e8092fb33f027b",
+   "size": 87176505,
+   "uploadedAt": "2026-11-20T22:05:58+00:00"
+  },
+  "subjects": [
+   "music"
   ],
   "year": 2026
  },

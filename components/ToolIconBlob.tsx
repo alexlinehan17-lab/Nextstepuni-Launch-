@@ -15,7 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
-import { type LucideIcon, Mic, Stamp, ListChecks, SpellCheck } from 'lucide-react';
+import { type LucideIcon, Headphones, Mic, Stamp, ListChecks, SpellCheck } from 'lucide-react';
 
 export type ToolIconKey =
   | 'meet-tools'
@@ -23,6 +23,7 @@ export type ToolIconKey =
   | 'ways-in'
   | 'journey'
   | 'mark-bank'
+  | 'listening-studio'
   | 'topic-atlas'
   | 'cao-simulator'
   | 'planner'
@@ -85,6 +86,14 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     // tick as the illustration's only saturated focal point.
     blob: '#E4CF8F',
     iconPath: '/assets/tools/mark-bank.png',
+    blobPath: 'M 7 23 Q 0 48 8 77 Q 23 97 51 95 Q 84 93 95 67 Q 101 39 87 15 Q 66 -2 37 4 Q 15 10 7 23 Z',
+    iconScale: 1.0,
+  },
+  'listening-studio': {
+    // No drawn art yet: a charcoal headphone mark on a pale neutral ground.
+    blob: '#E4E4E7',
+    icon: Headphones,
+    iconColor: '#1A1A1A',
     blobPath: 'M 7 23 Q 0 48 8 77 Q 23 97 51 95 Q 84 93 95 67 Q 101 39 87 15 Q 66 -2 37 4 Q 15 10 7 23 Z',
     iconScale: 1.0,
   },

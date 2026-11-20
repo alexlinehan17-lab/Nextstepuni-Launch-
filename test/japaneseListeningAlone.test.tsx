@@ -6,7 +6,7 @@
  * the recording and saw all ten 2025 Higher Section A and C questions, but after
  * the reveal only the first card's answers appeared and only that card was
  * graded. In the release Japanese (and Russian) listening cards are scored alone
- * (sessionPlanning.ts LISTENING_SCORED_ALONE): each printed question is its own
+ * (sessionPlanning.ts listeningScoredAlone): each printed question is its own
  * exercise with its own player for the same recording, its own answers, its own
  * grade, and the sitting's printed wrong-language rule under its scheme.
  */
