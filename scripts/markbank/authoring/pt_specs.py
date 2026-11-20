@@ -73,8 +73,12 @@ def card_id(year, level, key):
 class C:
     """One card: the census address, its rows, the price it must add up to."""
     def __init__(self, key, rows, total=None, note=None, rownote=None, extra=(), whole=False,
-                 question=None, stem=None, source=True):
+                 question=None, stem=None, source=True, unpriced=None):
         self.key, self.rows, self.total, self.note = key, rows, total, note
+        # (section label, section total): a question the paper prices only as
+        # part of its section (types/markBank.ts unpricedSection, CARD-STANDARD
+        # 10i): the scheme's answer shown, no total of the card's own.
+        self.unpriced = unpriced
         self.rownote, self.extra, self.whole = rownote, extra, whole
         # Where the census's reading of the ask is cut short (a true/false
         # table read as its first statement): the question as the paper prints
@@ -87,6 +91,18 @@ class C:
         # False where the booklet's reading text is not the task's material
         # (2021 Tópico 2 comments on a quotation, not on the text).
         self.source = source
+
+
+class Heading:
+    """A heading printed alone on its line ("Parte I"), exactly one on `page`."""
+    def __init__(self, page, text):
+        self.page, self.text_ = page, text
+
+    def text(self, doc):
+        hits = [t for p, t in doc['paper'] if p == self.page and t.strip() == self.text_]
+        if len(hits) != 1:
+            raise ValueError(f'paper p{self.page}: {len(hits)} lines read {self.text_!r}')
+        return hits[0].strip()
 
 
 class PaperCut:
@@ -421,7 +437,15 @@ def reading_cards(year, level):
         if spec.rownote:
             note = f'{note} {spec.rownote(doc) if callable(spec.rownote) else spec.rownote}'
         rows, total = build_rows(doc, spec.rows, note, spec.key)
-        if spec.whole:
+        section = None
+        if spec.unpriced:
+            label = spec.unpriced[0].text(doc)
+            c, p, n = spec.unpriced[1].read(doc)
+            section = {'label': label, 'totalMarks': c * p, 'notation': n}
+            if total or any(r.get('marks') is not None for r in rows):
+                raise ValueError(f'{year} {level} {spec.key}: an unpriced question carries no marks')
+            total = 0
+        elif spec.whole:
             c, p, n = spec.total.read(doc)
             total = c * p
         else:
@@ -436,16 +460,22 @@ def reading_cards(year, level):
             'conceptId': concept_for(question),
             'questionRef': f'{year} {level.upper()} {key_label(key)}',
             'questionText': question,
-            'tariffModel': {'kind': 'questionTotal' if spec.whole else 'fixed'},
+            'tariffModel': {'kind': 'questionTotal' if spec.whole or section else 'fixed'},
             'totalMarks': total,
             'rows': rows,
-            'notes': ((f'{spec.total.tariff_note(doc)}; the paper prints this ask on page {ask.page} '
+            'notes': ((f'The paper prints no price on this question: it prints “{section["label"]}” '
+                       f'“{section["notation"]}” for the part as a whole; the paper prints this ask on page '
+                       f'{ask.page} of the question booklet.')
+                      if section else
+                      (f'{spec.total.tariff_note(doc)}; the paper prints this ask on page {ask.page} '
                        'of the question booklet.')
                       if hasattr(spec.total, 'tariff_note') else
                       (f'The scheme prices this ask {total} {"mark" if total == 1 else "marks"}; '
                        f'the paper prints it on page {ask.page} of the question booklet.'))
                      + (f' {spec.note}' if spec.note else ''),
         }
+        if section:
+            card['unpricedSection'] = {'label': section['label'], 'totalMarks': section['totalMarks']}
         lead = P.lead(ask.q)
         if spec.stem is not None:
             # An empty tuple: the task prints no instruction of its own, and the
@@ -1458,6 +1488,48 @@ READING[(2015, 'hl')] = [
     C('III2', [shown(SchemeSpan(99, 104), lead=S(98))], total=PaperPontos(4, '(40 pontos)', under='Parte III'),
       whole=True, question=(PL(4, 'Proposta 2'), PL(4, '“Aquele que se contenta')),
       stem=_CHOICE_2015, source=False),
+]
+
+
+# ------------------------------------------- the unpriced Part I asks (10i) ---
+# 2017 Q2-Q6 and 2015 Q1(a)-(e), Q2-Q6: the paper prints no price on the
+# question, only "Parte I" "(30 pontos)" for the part as a whole (2015 also
+# none on Q1). Coordinator ruling (B), 20 Nov 2026 (types/markBank.ts
+# unpricedSection): the scheme's answer shown word for word, no marks, no
+# total of the card's own; the section's printed name and total lifted from
+# the line under its heading.
+_UNPRICED_2017 = (Heading(2, 'Parte I'), PaperPontos(2, '(30 pontos)', under='Parte I'))
+READING[(2017, 'hl')] += [
+    C('I2', [shown(J(S(53, after='2. '), S(54)))], unpriced=_UNPRICED_2017, note=_JOINED_LATER),
+    C('I3', [shown(J(S(55, after='3. '), S(56), S(57)))], unpriced=_UNPRICED_2017, note=_JOINED_LATER),
+    C('I4', [shown(J(S(58, after='4. '), S(59), S(60), S(61), S(62)))], unpriced=_UNPRICED_2017,
+      note=_JOINED_LATER),
+    C('I5', [shown(J(S(63, after='5. '), S(64), S(65), S(66), S(67)))], unpriced=_UNPRICED_2017,
+      note=_JOINED_LATER),
+    # Over a page break (line 72 is the page number).
+    C('I6', [shown(J(S(68, after='6. '), S(69), S(70), S(71), S(76), S(77), S(78), S(79), S(80), S(81)))],
+      unpriced=_UNPRICED_2017, note=_JOINED_LATER),
+]
+_UNPRICED_2015 = (Heading(4, 'Parte I'), PaperPontos(4, '(30 pontos)', under='Parte I'))
+_LEAD_2015 = PLc(4, '1. Explique por palavras suas', after='1. ')
+READING[(2015, 'hl')] += [
+    # Q1's five answers on one run, as 2018: each part cut at the printed letters.
+    C('I1a', [shown(S(53, after='a) ', before=' b)'))], unpriced=_UNPRICED_2015, note=_JOINED_LATER,
+      question=(_LEAD_2015, PLc(4, 'a) Mentores', after='a) ')), stem=()),
+    # "levam-" closes line 53 and "na" opens 54: the clitic is joined as printed.
+    C('I1b', [shown(Join(S(53, after='b) '), S(54, before=' c)'), sep=''))], unpriced=_UNPRICED_2015,
+      note=_JOINED_LATER, question=(_LEAD_2015, PLc(4, 'b) Esquizofrenicamente', after='b) ')), stem=()),
+    C('I1c', [shown(S(54, after='c) ', before=' d)'))], unpriced=_UNPRICED_2015, note=_JOINED_LATER,
+      question=(_LEAD_2015, PLc(4, 'c) O cúmulo', after='c) ')), stem=()),
+    C('I1d', [shown(S(54, after='d) '))], unpriced=_UNPRICED_2015, note=_JOINED_LATER,
+      question=(_LEAD_2015, PLc(4, 'd) Evasão', after='d) ')), stem=()),
+    C('I1e', [shown(S(55, after='e) '))], unpriced=_UNPRICED_2015, note=_JOINED_LATER,
+      question=(_LEAD_2015, PLc(4, 'e) Fazer pela vida', after='e) ')), stem=()),
+    C('I2', [shown(J(S(56, after='2. '), S(57), S(58)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
+    C('I3', [shown(J(S(59, after='3. '), S(60), S(61)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
+    C('I4', [shown(J(S(62, after='4. '), S(63)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
+    C('I5', [shown(J(S(64, after='5. '), S(65), S(66), S(67)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
+    C('I6', [shown(J(S(68, after='6. '), S(69), S(70), S(71)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
 ]
 
 

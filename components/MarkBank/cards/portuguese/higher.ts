@@ -1985,6 +1985,131 @@ export const CARDS: SecCard[] = [
     year: 2017, level: "higher",
     paperFileid: "LC018ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2017 Higher Level — © State Examinations Commission.",
+    id: "por-2017-hl-i-2", topicId: "portuguese-2-0", conceptId: "relacoes-sentido-titulo-estabelece-conteudo",
+    section: "I", questionRef: "2017 HL Section I Q2",
+    questionText: "Explique as relações de sentido que o título estabelece com o conteúdo do texto.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "O título está de acordo com o conteúdo do texto; aliás, o título faz-nos pensar de imediato na evocação de episódios de ambiente familiar.", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2017 Higher Level — © State Examinations Commission.",
+    id: "por-2017-hl-i-3", topicId: "portuguese-2-0", conceptId: "comente-efeitos-sentido-produzidos-pelo-recurso",
+    section: "I", questionRef: "2017 HL Section I Q3",
+    questionText: "Comente os efeitos de sentido produzidos pelo recurso às expressões “Nessas horas” (§ 1), “Nesses dias” (§ 2), “Nesse tempo” (§ 6), tendo em conta a forma como o autor faz reflectir isso no seu passado.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No percurso evocativo que o autor faz do passado para o presente, a utilização daquelas expressões está de acordo com o evoluir do percurso: quanto mais distante o tempo, menos definido é o valor do conceito.", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2017 Higher Level — © State Examinations Commission.",
+    id: "por-2017-hl-i-4", topicId: "portuguese-2-0", conceptId: "longo-percebemos-passagem-tempo-numa-relacao",
+    section: "I", questionRef: "2017 HL Section I Q4",
+    questionText: "Ao longo do texto percebemos a passagem do tempo, numa relação passado-presente, na memória do narrador. Retire do texto exemplos que justifiquem a afirmação.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "O percurso passado-presente percebe-se em expressões como: passado – “A toalha de mesa era nova”; “Nesses dias não faltava sol no quintal”; “Quando era pequeno”; presente – “Agora parece-me que eram sempre domingos”; “Tenho a idade que os meus pais tinham”; “Chego a casa”; “Sinto-me culpado”.", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2017 Higher Level — © State Examinations Commission.",
+    id: "por-2017-hl-i-5", topicId: "portuguese-2-0", conceptId: "sentido-metaforico-frase-caminhos-afastavam-almocos",
+    section: "I", questionRef: "2017 HL Section I Q5",
+    questionText: "Explique o sentido metafórico da frase: “… caminhos que me afastavam dos almoços de domingo...” (§ 9)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Quando as suas escolhas o afastaram daqueles almoços, que hoje são recordados como momentos de verdadeira felicidade, sente-se culpado. Sente-se culpado porque não pode oferecer as mesmas experiências aos seus filhos: os tempos mudaram e sente-se culpado por não manter os mesmos rituais e estilo de vida de que ele tanto gostava na sua infância e juventude.", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2017 Higher Level — © State Examinations Commission.",
+    id: "por-2017-hl-i-6", topicId: "portuguese-2-0", conceptId: "comente-relevancia-toalha-mesa-evocacao-narrador",
+    section: "I", questionRef: "2017 HL Section I Q6",
+    questionText: "Comente a relevância da “toalha de mesa” na evocação do narrador.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A toalha de mesa é o elemento condutor do discurso, a marca da passagem do tempo e a metáfora mais importante do texto; um símbolo da afeição do autor pelos pais e pela infância; a mudança para o estilo de vida moderno (hoje, as toalhas são sempre novas, as coisas velhas não têm valor e são descartadas; consumismo e sociedade supérflua vs reutilização e valor das coisas antigas; no passado, a toalha de mesa era usada apenas aos domingos, quando desbotada ainda era usada em dias de semana e mais tarde como esfregão; a toalha usada ainda ganha \"um toque mais suave e mais delicado\"). No final do texto, a toalha de mesa (sempre nova) simboliza a nova sociedade, mas também é uma página aberta no sentido de continuidade para os seus filhos e futuras gerações.", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2017 Higher Level — © State Examinations Commission.",
     id: "por-2017-hl-ii-1", topicId: "portuguese-2-2", conceptId: "faca-comentario-frase-cerca-100-palavras",
     section: "II", questionRef: "2017 HL Section II Q1",
     questionText: "Faça um comentário sobre a frase do texto, em cerca de 100 palavras. “A parte do mundo em que eles não existiam era cruel.”",
