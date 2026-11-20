@@ -3546,6 +3546,986 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-la-1-a", topicId: "lithuanian-0-0", conceptId: "kada-mindaugas-vaziuos-lietuva",
+    section: "LA", questionRef: "2025 HL Section LA Q1(a)",
+    stem: "You will hear a conversation between Mindaugas and a travel agent. Answer the questions in Lithuanian.",
+    questionText: "Kada Mindaugas važiuos į Lietuvą?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":2,"options":["Rudenį","Rugsėjį","Šeštadienį"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 1(a)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-la-1-b", topicId: "lithuanian-0-0", conceptId: "kelioniu-agentura-uzsakys-mindaugui-lektuvo-bilieta",
+    section: "LA", questionRef: "2025 HL Section LA Q1(b)",
+    stem: "You will hear a conversation between Mindaugas and a travel agent. Answer the questions in Lithuanian.",
+    questionText: "Kelionių agentūra užsakys Mindaugui lėktuvo bilietą. Teisingai Neteisingai",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Neteisingai", marks: 3, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 1(b)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-la-1-c", topicId: "lithuanian-0-0", conceptId: "kiek-laiko-mindaugas-praleis-lietuvoje",
+    section: "LA", questionRef: "2025 HL Section LA Q1(c)",
+    stem: "You will hear a conversation between Mindaugas and a travel agent. Answer the questions in Lithuanian.",
+    questionText: "Kiek laiko Mindaugas praleis Lietuvoje?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Savaitę", marks: 2, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 1(c)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-la-2", topicId: "lithuanian-0-0", conceptId: "dvi-laisves-aleja",
+    section: "LA", questionRef: "2025 HL Section LA Q2",
+    stem: "You will hear a conversation between Mindaugas and a travel agent. Answer the questions in Lithuanian.",
+    questionText: "Parašykite dvi detales apie Laisvės alėją.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["Tai pagrindinė gatvė","Tai pėsčiųjų gatvė","Viena ilgiausių Europoje","Beveik 2 km / dviejų kilometrų","Yra dviračių takas","Kaunas"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-la-3-a", topicId: "lithuanian-0-0", conceptId: "viena-nida",
+    section: "LA", questionRef: "2025 HL Section LA Q3(a)",
+    stem: "You will hear a conversation between Mindaugas and a travel agent. Answer the questions in Lithuanian.",
+    questionText: "Parašykite vieną detalę apie Nidą.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["Mažas miestelis","Pušų miškas","Prie jūros","Didelė kopa","Unikali gamta","Viena gražiausių vietų Lietuvoje","Saulės laikrodis"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 3(a)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-la-3-b", topicId: "lithuanian-0-0", conceptId: "kada-kur-mindaugas-isvyks-nida",
+    section: "LA", questionRef: "2025 HL Section LA Q3(b)",
+    stem: "You will hear a conversation between Mindaugas and a travel agent. Answer the questions in Lithuanian.",
+    questionText: "Kada ir iš kur Mindaugas išvyks į Nidą?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language. The scheme prices “Pirmadienį / 10 val / Kaunas / Pilis” at 1 mark, as an answer of its own.", group: {"claimMax":1,"perOption":4,"options":["Kada? Pirmadienį 10 val","Iš kur? Nuo Kauno pilies","Pirmadienį / 10 val / Kaunas / Pilis"],"optionMarks":[4,4,1],"optionOf":[null,null,null]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section A — Question 3(b)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section A · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-lb-1-a", topicId: "lithuanian-0-0", conceptId: "kur-laikrodziu-muziejus-dvi",
+    section: "LB", questionRef: "2025 HL Section LB Q1(a)",
+    stem: "You will hear a story about the Clock Museum. Answer the questions in Lithuanian.",
+    questionText: "Kur yra laikrodžių muziejus? Parašykite dvi detales.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language. The scheme allows “Europoje” for 1 mark, in place of “Rytų Europoje”, never beside it. The scheme prices “Miesto centre” at 1 mark, as an answer of its own.", group: {"claimMax":2,"perOption":2,"options":["Rytų Europoje","Klaipėdoje","Klaipėdos centre","Liepų gatvėje","Europoje","Miesto centre"],"optionMarks":[2,2,2,2,1,1],"optionOf":[null,null,null,null,0,null]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 1(a)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-lb-1-b", topicId: "lithuanian-0-0", conceptId: "skirtingos-kulturos-laika-suprato-vienodai-teisingai",
+    section: "LB", questionRef: "2025 HL Section LB Q1(b)",
+    stem: "You will hear a story about the Clock Museum. Answer the questions in Lithuanian.",
+    questionText: "Skirtingos kultūros laiką suprato vienodai. Teisingai Neteisingai",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Neteisingai", marks: 3, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 1(b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-lb-2-a", topicId: "lithuanian-0-0", conceptId: "kokiu-laikrodziu-laikrodziu-muziejuje-dvi",
+    section: "LB", questionRef: "2025 HL Section LB Q2(a)",
+    stem: "You will hear a story about the Clock Museum. Answer the questions in Lithuanian.",
+    questionText: "Kokių laikrodžių yra laikrodžių muziejuje? Parašykite dvi detales.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Originalių","Vandens","Retų","Smėlio","Saulės","Mechaninių","Ugnies"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 2(a)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-lb-2-b", topicId: "lithuanian-0-0", conceptId: "kiek-kainuoja-audiogidas",
+    section: "LB", questionRef: "2025 HL Section LB Q2(b)",
+    stem: "You will hear a story about the Clock Museum. Answer the questions in Lithuanian.",
+    questionText: "Kiek kainuoja audiogidas?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["Nemokamas","Nieko nekainuoja","Galima naudotis nemokamai","0 eurų / už dyką"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 2(b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-lb-3-a", topicId: "lithuanian-0-0", conceptId: "galima-rasti-muziejaus-kieme-viena",
+    section: "LB", questionRef: "2025 HL Section LB Q3(a)",
+    stem: "You will hear a story about the Clock Museum. Answer the questions in Lithuanian.",
+    questionText: "Ką galima rasti muziejaus kieme? Parašykite vieną detalę.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language. The scheme allows “Parką” for 1 mark, in place of “Saulės laikrodžių parką”, never beside it. The scheme prices “Aikštelę” at 1 mark, as an answer of its own. The scheme allows “Dirbtuves” for 1 mark, in place of “Edukacines dirbtuves”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["Saulės laikrodžių parką","Žaidimų aikšteles / aštuonias žaidimų aikšteles","Edukacines dirbtuves","Parką","Aikštelę","Dirbtuves"],"optionMarks":[3,3,3,1,1,1],"optionOf":[null,null,null,0,null,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 3(a)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-lb-3-b", topicId: "lithuanian-0-0", conceptId: "muzieju-galite-aplankyti-pirmadieni",
+    section: "LB", questionRef: "2025 HL Section LB Q3(b)",
+    stem: "You will hear a story about the Clock Museum. Answer the questions in Lithuanian.",
+    questionText: "Muziejų galite aplankyti pirmadienį.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Neteisingai", marks: 3, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section B — Question 3(b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section B · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-lc-1-a", topicId: "lithuanian-0-0", conceptId: "potato-pancakes-remind-egle",
+    section: "LC", questionRef: "2025 HL Section LC Q1(a)",
+    stem: "You will hear a conversation about people‘s favourite meals. Answer the questions in English.",
+    questionText: "What do potato pancakes remind Eglė of? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":6,"options":["Childhood","Summers","Grandmother","The countryside / village","Grandmother’s pancakes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 1(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-lc-1-b", topicId: "lithuanian-0-0", conceptId: "used-eat-pancakes-sour-cream-apple",
+    section: "LC", questionRef: "2025 HL Section LC Q1(b)",
+    stem: "You will hear a conversation about people‘s favourite meals. Answer the questions in English.",
+    questionText: "They used to eat pancakes with sour cream apple jam potatoes butter",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Apple jam", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 1(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-lc-2-a", topicId: "lithuanian-0-0", conceptId: "cheese-ingredients",
+    section: "LC", questionRef: "2025 HL Section LC Q2(a)",
+    stem: "You will hear a conversation about people‘s favourite meals. Answer the questions in English.",
+    questionText: "Name two of the cheese ingredients.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":4,"options":["Cottage cheese","Salt","Sour cream","Caraway seeds / cumin","Garlic","Curd"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 2(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-lc-2-b", topicId: "lithuanian-0-0", conceptId: "meal-jonas-cheese",
+    section: "LC", questionRef: "2025 HL Section LC Q2(b)",
+    stem: "You will hear a conversation about people‘s favourite meals. Answer the questions in English.",
+    questionText: "For what meal does Jonas have cheese?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Breakfast", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 2(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-lc-3-a", topicId: "lithuanian-0-0", conceptId: "sakotis-sweet-true-false",
+    section: "LC", questionRef: "2025 HL Section LC Q3(a)",
+    stem: "You will hear a conversation about people‘s favourite meals. Answer the questions in English.",
+    questionText: "Šakotis is sweet. True False",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 3(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-lc-3-b", topicId: "lithuanian-0-0", conceptId: "elena-eats-sakotis-traditional-holidays-holiday",
+    section: "LC", questionRef: "2025 HL Section LC Q3(b)",
+    stem: "You will hear a conversation about people‘s favourite meals. Answer the questions in English.",
+    questionText: "Elena eats šakotis on traditional holidays. Name one holiday.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Easter / Christmas", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section C — Question 3(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section C · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-ld-1-a", topicId: "lithuanian-0-0", conceptId: "nationality-birute-galdikas",
+    section: "LD", questionRef: "2025 HL Section LD Q1(a)",
+    stem: "You will hear an interview with Birutė Marija Galdikas, a scientist researching orangutans. Answer the questions in English.",
+    questionText: "What is the nationality of Birutė Galdikas?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language. The scheme allows “Lithuanian” for 2 marks, in place of “Lithuanian and Canadian”, never beside it. The scheme allows “Canadian” for 2 marks, in place of “Lithuanian and Canadian”, never beside it.", group: {"claimMax":1,"perOption":4,"options":["Lithuanian and Canadian","Lithuanian","Canadian"],"optionMarks":[4,2,2],"optionOf":[null,0,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 1(a)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-ld-1-b", topicId: "lithuanian-0-0", conceptId: "birute-galdikas-still-working-island-borneo",
+    section: "LD", questionRef: "2025 HL Section LD Q1(b)",
+    stem: "You will hear an interview with Birutė Marija Galdikas, a scientist researching orangutans. Answer the questions in English.",
+    questionText: "Birutė Galdikas is still working on the island of Borneo.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 1(b)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-ld-1-c", topicId: "lithuanian-0-0", conceptId: "birute-galdikas-help-orangutans-survive",
+    section: "LD", questionRef: "2025 HL Section LD Q1(c)",
+    stem: "You will hear an interview with Birutė Marija Galdikas, a scientist researching orangutans. Answer the questions in English.",
+    questionText: "How does Birutė Galdikas help orangutans survive? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["Established the research centre","Buys land","Plants / grows trees"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 1(c)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-ld-2-a", topicId: "lithuanian-0-0", conceptId: "birute-parents-teach",
+    section: "LD", questionRef: "2025 HL Section LD Q2(a)",
+    stem: "You will hear an interview with Birutė Marija Galdikas, a scientist researching orangutans. Answer the questions in English.",
+    questionText: "What did Birutė’s parents teach her? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["To know trees / plants / mushrooms","Taught her about trees / plants / mushrooms","To tell apart trees / plants / mushrooms"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 2(a)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-ld-2-b", topicId: "lithuanian-0-0", conceptId: "characteristics-orangutans",
+    section: "LD", questionRef: "2025 HL Section LD Q2(b)",
+    stem: "You will hear an interview with Birutė Marija Galdikas, a scientist researching orangutans. Answer the questions in English.",
+    questionText: "Give two characteristics of orangutans.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["Patience","Thoughtfulness","Wisdom","Thinking before doing","Intelligence","Not impulsive","Don’t do anything fast","Evaluates situation","Human emotions – thinking / anger / fear / love / ability to think / be angry / be afraid / to love."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 2(b)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-ld-2-c", topicId: "lithuanian-0-0", conceptId: "birute-galdikas-feel-close-orangutans",
+    section: "LD", questionRef: "2025 HL Section LD Q2(c)",
+    stem: "You will hear an interview with Birutė Marija Galdikas, a scientist researching orangutans. Answer the questions in English.",
+    questionText: "Why does Birutė Galdikas feel so close to orangutans?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They are like humans", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section D — Question 2(c)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section D · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-le-1-a", topicId: "lithuanian-0-0", conceptId: "train-leave-vilnius",
+    section: "LE", questionRef: "2025 HL Section LE Q1(a)",
+    stem: "You will hear two news items. Each item will be played three times. Answer the questions in English.",
+    questionText: "When will the train leave Vilnius?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In the morning", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section E — Question 1(a)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section E · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-le-1-b", topicId: "lithuanian-0-0", conceptId: "month-date-train-tickets-purchased",
+    section: "LE", questionRef: "2025 HL Section LE Q1(b)",
+    stem: "You will hear two news items. Each item will be played three times. Answer the questions in English.",
+    questionText: "For what month and date can the train tickets be purchased?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":4,"options":["Month: December","Date: 18th"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section E — Question 1(b)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section E · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-le-2-a", topicId: "lithuanian-0-0", conceptId: "special-race",
+    section: "LE", questionRef: "2025 HL Section LE Q2(a)",
+    stem: "You will hear two news items. Each item will be played three times. Answer the questions in English.",
+    questionText: "What is special about this race? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["It’s meant purely for pleasure","It‘s pleasure not result oriented","It happens at night","More than a thousand participants","2 km distance with pets","Ran on illuminated tracks"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section E — Question 2(a)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section E · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2025 Higher Level — © State Examinations Commission.",
+    id: "lt-2025-hl-le-2-b", topicId: "lithuanian-0-0", conceptId: "participants",
+    section: "LE", questionRef: "2025 HL Section LE Q2(b)",
+    stem: "You will hear two news items. Each item will be played three times. Answer the questions in English.",
+    questionText: "Give one detail about the participants.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Lithuanian. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":4,"options":["They wore luminous / glowing clothes","Lit up lights","Pets participated"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Section E — Question 2(b)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2025 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC550ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Section E · listening",
+          "title": "2025 Lithuanian · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "secFileid": "LC550ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC550ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2026, level: "higher",
     paperFileid: "LC550ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Higher Level — © State Examinations Commission.",
