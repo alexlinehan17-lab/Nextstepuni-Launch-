@@ -4668,6 +4668,73 @@
   }
  },
  {
+  "id": "dan-2023-hl-ii-1",
+  "subjectId": "danish",
+  "level": "higher",
+  "year": 2023,
+  "section": "II",
+  "topicId": "danish-1-0",
+  "conceptId": "torben-weinreich-siger-det-virker-ikke",
+  "questionRef": "2023 HL Section II Q1",
+  "questionText": "Torben Weinreich siger, ”det virker ikke, som om den ældre litteratur er gangbar i skole og gymnasium i dag. Eleverne modarbejder det og gider det ikke.” Diskuter synspunktet i ovenstående citat. Forklar din mening i en kommentar på 100-150 ord.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Weinreich påstår, at eleverne ikke gider at læse ældre litteratur i dag, fordi det er besværligt at læse pga. et ældre og kompliceret ordforråd. Dermed bliver de litterære klassikere ikke længere læst. De er dermed ikke længere del af vores fælles bevidsthed, og dermed mister man også forståelsen for tidligere perioders måde at kommunikere og tænke på. Mange unge er sikkert vant til at se filmatiseringer af de klassiske værker, som ofte er mere tilgængelige pga. et moderniseret sprogbrug og simplificering af fortællingernes karakterer og temaer. Omvendt bør undervisningen også tage udgangspunkt i elevernes niveau og interesse for at engagere dem, og dermed bør pensum i dansktimerne moderniseres, hvilket måske vil resultere i, at ældre litteratur ikke længere skal læses i samme omfang.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OPGAVE II",
+   "title": "Reading text — answer in Danish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Danish 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+  }
+ },
+ {
+  "id": "dan-2023-hl-iii-1",
+  "subjectId": "danish",
+  "level": "higher",
+  "year": 2023,
+  "section": "III",
+  "topicId": "danish-1-1",
+  "conceptId": "skriv-essay-cirka-300-ord-disse",
+  "questionRef": "2023 HL Section III Q1",
+  "questionText": "Skriv et essay på cirka 300 ord om ét af disse to emner, hvor du overvejer argumenter for og imod.\n”Karakterer og prøver i skolen skal afskaffes”\nHans Christian Andersen: ”Livet er den eneste rigtige læremester eller skole”",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "I et essay om ”Karakterer og prøver i skolen skal afskaffes” kan man reflektere over relevante temaer og problemstillinger, f.eks. om hvorvidt prøver og karakterer overhovedet er egnet som læringsinstrumenter, og om hvorvidt vi skal gøre op med præstationssamfundets karakterræs, som bl.a. er medvirkende til en stigende grad af stress og angst blandt unge.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" The scheme heads it: “Et essay på ca. 300 ord om et af følgende emner: ”Karakterer og prøver i skolen skal afskaffes” og ”Livet er den eneste rigtige læremester og skole”. Essayet skal være velskrevet, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog. Essayet skal indeholde relevante abstrakte og filosofiske refleksioner, rationel argumentation samt en fokuseret konklusion.”. The paper prints the second title as “Livet er den eneste rigtige læremester eller skole”; the scheme reprints it so, but its own head and paragraph word it “Livet er den eneste rigtige læremester og skole”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "I et essay om ” Livet er den eneste rigtige læremester og skole” kan man reflektere over relevante temaer og problemstillinger, f.eks. om hvorvidt skolen forbereder eleverne ordentligt til livets udfordringer, fordi den er for overbeskyttende, for teoretisk, for umoderne eller for lærerstyret m.fl.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "dan-2024-hl-i-1-d",
   "subjectId": "danish",
   "level": "higher",
