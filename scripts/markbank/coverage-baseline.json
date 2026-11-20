@@ -198,11 +198,11 @@
     "refsHash": "7ac2f5d4293ded21"
   },
   "croatian": {
-    "cards": 107,
-    "contentHash": "292ae57a44df33e6",
+    "cards": 110,
+    "contentHash": "ce2eecec58d2b13b",
     "coveragePct": 100.0,
-    "covered": 111,
-    "excluded": 56,
+    "covered": 114,
+    "excluded": 53,
     "leaves": 167,
     "open": 0,
     "orphans": 0,
@@ -210,7 +210,7 @@
       "count": 13,
       "hash": "1b6552f0658d264b"
     },
-    "refsHash": "3d43e4085452d3e4"
+    "refsHash": "d230fefb695355b4"
   },
   "czech": {
     "cards": 15,

@@ -975,6 +975,59 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2018 Higher Level — © State Examinations Commission.",
+    id: "hrv-2018-hl-ii-1", topicId: "croatian-1-0", conceptId: "sedmome-odlomku-mlada-zadranka-navodi-sljede",
+    section: "II", questionRef: "2018 HL Section II Q1",
+    questionText: "U sedmome odlomku mlada Zadranka navodi sljedeće uvjerenje: „Čvrsto vjerujem da se pravi život nalazi izvan rutine, izvan granice komfora u kojemu svaki dan plivamo”. Komentirajte, vlastitim riječima (minimalno 100 riječi), ovu misao.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ne postoji stvarno upoznavanje sebe, svojih stvarnih mogućnosti i svojih ograničenja bez izlaska iz takozvane zone komfora. Sve velike stvari u životu dolaze s određenom cijenom pa tako i osobni rast.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 1: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme heads it “Na primjer:”" },
+    { id: "r-2", kind: "point", verbatim: "Rutina je ponekad pozitivna pojava, pročitala sam negdje kako je sreća samo prirodna posljedica dobro organizirana života. Ne bih rekla kako se radi o sreći, radi se o osjećaju zadovoljstva. Sreća su trenuci, nitko ne može stalno i besprekidno biti sretan, to nije moguće, ali može dopustiti životu da ga s vremena na vrijeme iznenadi, a to je moguće postići jedino izlaženjem iz vlastite rutine, skretanjem s dobro utabane staze života, prepuštanjem životu i vjerom u to da su čuda moguća.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Komfor i rutina prema mojemu su mišljenju istoznačnica s dosadom. Nema prave inspiracije u upornom i posvećenom ponavljanju istih stvari svaki dan. Naša sposobnost kreativnog razmišljanja tako polako ali sigurno odumire, utišava se. Djeca svake sekunde svog malog života žele isprobati nešto novo, odrasli to zovu dječjom igrom, ali to nije igra, to je jednostavno znatiželja, neutaživa glad za nečim novim, nepoznatim, povremeno čak i opasnim. Svi bismo zauvijek u sebi trebali zadržati to znatiželjno dijete.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Mnogi ostanak u zoni komfora opravdavaju strahom. Takvi ljudi misle da se hrabre osobe ne plaše, smatraju kako je hrabrost zapravo odsustvo straha. Ali hrabrost nije odsustvo straha, svi osjećaju strah. Jedino što hrabri ljudi unatoč tome što osjećaju strah svejedno učine ono čega se boje jer su tako odlučili i jer znaju da je jedino tako u životu moguće rasti i u potpunosti upoznati sebe.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 1: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2018 Higher Level — © State Examinations Commission.",
+    id: "hrv-2018-hl-iii-1", topicId: "croatian-1-1", conceptId: "nisu-svi-koji-lutaju-izgubljeni-tolkien",
+    section: "III", questionRef: "2018 HL Section III Q1",
+    questionText: "Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema: „Nisu svi koji lutaju izgubljeni” J.R.R. Tolkien",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 1: \"Svi odgovori moraju biti na hrvatskome jeziku.\" Under Part III the scheme reprints only the instruction and the two titles, with no answer, criteria or notes: “Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2018 Higher Level — © State Examinations Commission.",
+    id: "hrv-2018-hl-iii-2", topicId: "croatian-1-1", conceptId: "odijelo-ini-ovjeka-stara-hrvatska-poslovica",
+    section: "III", questionRef: "2018 HL Section III Q2",
+    questionText: "Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema: „Odijelo ne čini čovjeka“ stara je hrvatska poslovica. Do koje je mjere moguće reći da se ljude može ispravno prosuditi na temelju odjeće koju nose? Uzimajući u obzir argumente za i protiv, iznesite svoje mišljenje.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 1: \"Svi odgovori moraju biti na hrvatskome jeziku.\" Under Part III the scheme reprints only the instruction and the two titles, with no answer, criteria or notes: “Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema:” The scheme reprints this title as “„Odijelo ne čini čovjeka” stara je hrvatska poslovica. Do koje je mjere moguće reći da se o ljudima može donijeti ispravna prosudba na temelju odjeće koju nose? Uzimajući u obzir argumente za i protiv, iznesite svoje mišljenje.”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2019, level: "higher",
     paperFileid: "LC567ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2019 Higher Level — © State Examinations Commission.",
