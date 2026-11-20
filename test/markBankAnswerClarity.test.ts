@@ -838,7 +838,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // unpriced criteria the student judges against the printed total; it has
     // no printed steps to check.
     const stepped = rows.filter(({ card, row }) => row.kind === 'criterion' && card.tariffModel.kind !== 'questionTotal');
-    expect(stepped).toHaveLength(83);
+    expect(stepped).toHaveLength(88);
     for (const { card, row } of stepped) {
       const where = `${card.id}/${row.id}`;
       expect(row.permittedMarks![0], where).toBe(0);
@@ -850,7 +850,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // options (the group has no per-option steps). Model one of those and lower its number here.
     const noted = rows.filter(({ row }) => row.kind !== 'criterion' && (row.contextNote ?? '').includes(lesser));
     expect(noted.filter(({ row }) => row.kind === 'point').every(({ row }) => /^r-\d+-\d+$/.test(row.id))).toBe(true);
-    expect([noted.filter(({ row }) => row.kind === 'point').length, noted.filter(({ row }) => row.kind === 'anyN').length]).toEqual([35, 183]);
+    expect([noted.filter(({ row }) => row.kind === 'point').length, noted.filter(({ row }) => row.kind === 'anyN').length]).toEqual([35, 195]);
   });
 
   it('Technology: a drawn answer is the ask as its one row behind the scheme\'s own print; every printed 2026 Higher ask is a card', () => {
