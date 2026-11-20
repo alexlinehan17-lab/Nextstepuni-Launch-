@@ -859,6 +859,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2012 Higher Level — © State Examinations Commission.",
+    id: "slk-2012-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-tychto-viet-najmenej-100",
+    section: "II", questionRef: "2012 HL Section II Q1",
+    questionText: "Napíšte komentár týchto viet (najmenej 100 slov): Predstavme si novodobého Nostradama spomínaného autorom v texte, ktorý hovorí: „Vidím obrovskú nástenku, kde stámilióny ľudí budú písať, čo mali na raňajky“ alebo „budú existovať dotykové zariadenia, ktoré budú ľudia hladkať v baroch, len aby sa, preboha, nemuseli rozprávať s kamarátmi.“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Komentár obsahujúci najmenej 100 slov, ktorý jasne preukáže porozumenie textu v podstatných bodoch.", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”. The scheme prints, as examples, not a checklist: “je to obraz našej doby – sociálne siete ako facebook, twitter a iné sú populárne a vytvárajú niekedy iba virtuálne vzťahy”; “ak nie si na sociálnej sieti, nie si nikde”; “cez sociálne siete ľudia medzi sebou komunikujú ľahšie ako v skutočnosti”; “v dnešnom globalizovanom svete je to praktická forma komunikácie”; “na svoje nástenky zverejňujú o sebe rôzne informácie – dôležité, ale aj úplne banálne a nepodstatné, ako napríklad to, čo mali na raňajky”; “zo zmysluplnej komunikácie sa často stáva táranie”; “ľudia majú niekoľko stoviek priateľov v zozname, ale koľko z nich je skutočných priateľov v živote”; “sociálne siete nemôžu nahradiť skutočné vzťahy”; “táto forma umožňuje komunikovať naraz s viacerými ľuďmi”; “dotykové zariadenia sú napríklad mobily, smartphony, tablety”; “na jednej strane je pohodlné telefonovať si s priateľmi kdekoľvek, kedykoľvek”; “ísť za nimi si vyžaduje čas, ale priamy kontakt je základom budovania vzťahu”; “treba nájsť rozumný kompromis”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2012 Higher Level — © State Examinations Commission.",
+    id: "slk-2012-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-udstvo-zavisi-viac-ako-mysli",
+    section: "III", questionRef: "2012 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Ľudstvo závisí viac ako si myslí od svojich snov",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2012 Higher Level — © State Examinations Commission.",
+    id: "slk-2012-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-modernej-spolo-nosti-etko-zamerane",
+    section: "III", questionRef: "2012 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: V našej modernej spoločnosti je všetko zamerané na tu a teraz",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2013, level: "higher",
     paperFileid: "LC554ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2013 Higher Level — © State Examinations Commission.",
