@@ -3392,6 +3392,7 @@ describe('Mark Bank card preservation', () => {
       ['swedish', 2021, 2, 'c2b4ec1b2b8500683ce7b7458598ee1c44d505415c5499dddc8977798f1c8486'],
       ['swedish', 2022, 2, 'c8e35718f81e94fcd491db2d5e44ad01de8f49e48fbf5d339b735ec8e5b18b19'],
       ['swedish', 2023, 3, '2a9353b799fd7266f9ee5cda860355c9193b58dd2d163a3648da3c4497617e1b'],
+      ['swedish', 2024, 3, 'b5625450f4b23333800613b588c811cc54066c587ef5b279e67b759d5566c6ae'],
     ];
     const listed = Object.entries(smallLanguageAdditions)
       .flatMap(([subject, bySitting]) => Object.keys(bySitting).map(year => `${subject} ${year}`)).sort();
