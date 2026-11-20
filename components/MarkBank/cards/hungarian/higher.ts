@@ -1723,6 +1723,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2015 Higher Level — © State Examinations Commission.",
+    id: "hun-2015-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-szoveg-alapjan-kommentalja-alabbiakat-minimum",
+    section: "II", questionRef: "2015 HL Section II Q1",
+    questionText: "A szöveg alapján kommentálja az alábbiakat minimum 100 szóban! „ [A] képek elfogyasztják a valóságot”.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100 szóban tisztán, érthetően kifejtett saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “Azért mondhatjuk, hogy „ a képek elfogyasztják a valóságot”, mert:”; “A világ fulladozni látszik a fényképek áradatában: csak a Facebookra naponta 350 millió fotót töltenek fel naponta, az elmúlt egy-két évben több mint 35 millió selfie-t tettek fel az Instagramra, (1. bk);”; “A világszerte számolatlanul készített képek döntő többsége viszont korántsem a pillanat ihletettségével, a kompozíció kimunkáltságával, eredetiségével hívja fel magára a figyelmet. Az sincs rendben, amikor „az emberek az ételüket fotózzák az étteremben ahelyett, hogy ennének; lekapják a Mona Lisát ahelyett, hogy megnéznék” (2. bk);”; “Aki ugyanis kényszeresen kattogtat, és próbálja dokumentálni a hétköznapokat vagy élete valamely jeles eseményét, pontosan a pillanatról, a múló percek szépségéről marad le. Ezek a fotók, másoknak készülnek, nem céljuk, hogy közelebb hozzák egymáshoz a szereplőket, hogy a valóságot mutassák, csupán annyi, hogy minél vonzóbbak legyenek. Nem vetnek fel kérdéseket, egyszerűek, önmagukért vannak, beszűkítenek. Aztán lehet lájkolni. (3. bk);”; “Tagadhatatlan, hogy egy fotó nem elsősorban a technikai feltételeknek köszönhetően lesz jó, hatásos, de – tromfolnak mások – a gondolatot, a koncepciót nem helyettesítheti a spontaneitás. Márpedig egyre kevesebben gondolkodnak el az exponálógomb megnyomása előtt (6. bk);”; “„A kamera maga a gyógyír és a kór, egyszerre eszköze a valóság birtokbavételének és elsorvasztásának.” (7. bk)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2015 Higher Level — © State Examinations Commission.",
+    id: "hun-2015-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-minden-amit-szepnek-latok",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! “Minden, amit szépnek látok, növeli lelkem világosságát. Erősebb, jobb, istenibb vagyok tőle.” (Gárdonyi Géza)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2015 Higher Level — © State Examinations Commission.",
+    id: "hun-2015-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-leggazdagabb-akinek-legkevesebbre-van",
+    section: "III", questionRef: "2015 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Az a leggazdagabb, akinek a legkevesebbre van szüksége. (Szókratész)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "higher",
     paperFileid: "LC551ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2016 Higher Level — © State Examinations Commission.",
