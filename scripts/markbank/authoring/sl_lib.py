@@ -695,6 +695,10 @@ def rule_note(subject, doc, language):
     if subject not in ONE_LANGUAGE and subject not in RULE_WORDS:
         return language_note(subject, language)
     found = rule_sentence(subject, doc)
+    if found is None and subject in LT_SUBJECTS:
+        # Latvian 2024 and 2025 print no answer-language rule at all ("Atbildiet
+        # uz jautājumiem!" only): the lt walker's own note, which claims none.
+        return lt_topics.language_note(subject, SUBJECT_NAME[subject], doc['P'].year)
     if found is None:
         raise ValueError(f'{subject}: the paper prints no answer-language rule')
     page = printed_page(doc['P'].path, found[0])
