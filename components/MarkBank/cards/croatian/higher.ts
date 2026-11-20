@@ -2125,6 +2125,200 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2023 Higher Level — © State Examinations Commission.",
+    id: "hrv-2023-hl-i-1-a", topicId: "croatian-0-0", conceptId: "potomaka",
+    section: "I", questionRef: "2023 HL Section I Q1(a)",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: potomaka",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "onih koji od mekoga potječu rođenjem (od roditelja i predaka)", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2023 Higher Level — © State Examinations Commission.",
+    id: "hrv-2023-hl-i-1-b", topicId: "croatian-0-0", conceptId: "sudionici-bili-podvrgnuti-skeniranjima-mozga",
+    section: "I", questionRef: "2023 HL Section I Q1(b)",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: „sudionici su bili podvrgnuti skeniranjima mozga”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "učiniti koga ili što objektom čega, izložiti utjecaju čega", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme sets the paper's expressions in another order and prints this answer under: “e) „sudionici su bili podvrgnuti skeniranjima mozga” (3)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2023 Higher Level — © State Examinations Commission.",
+    id: "hrv-2023-hl-i-1-c", topicId: "croatian-0-0", conceptId: "suo-iti",
+    section: "I", questionRef: "2023 HL Section I Q1(c)",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: suočiti",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "susresti se s kim ili čim oči u oči, stati pred koga ili što", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme sets the paper's expressions in another order and prints this answer under: “c) suočiti se (3)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2023 Higher Level — © State Examinations Commission.",
+    id: "hrv-2023-hl-i-1-d", topicId: "croatian-0-0", conceptId: "povr-veze",
+    section: "I", questionRef: "2023 HL Section I Q1(d)",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: površne veze",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "veze koje se ograničavaju samo na ono što je na površini, koje nisu duboke i smislene", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme sets the paper's expressions in another order and prints this answer under: “b) površne veze (6)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2023 Higher Level — © State Examinations Commission.",
+    id: "hrv-2023-hl-i-1-e", topicId: "croatian-0-0", conceptId: "osje-aju-blagostanja",
+    section: "I", questionRef: "2023 HL Section I Q1(e)",
+    questionText: "Objasnite svojima riječima sljedeće pojmove: osjećaju blagostanja",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "osjećaju obilja materijalnih dobara, bogatstva; život u obilju, izobilje; suprotno od oskudice", marks: 1, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme sets the paper's expressions in another order and prints this answer under: “d) osjećaju blagostanja (6)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2023 Higher Level — © State Examinations Commission.",
+    id: "hrv-2023-hl-i-3", topicId: "croatian-0-1", conceptId: "opi-ite-temelju-teksta-ali-svojim",
+    section: "I", questionRef: "2023 HL Section I Q3",
+    questionText: "Opišite, na temelju teksta, ali svojim riječima, na koji su način dobri ljudski odnosi u čovjekovu životu povezani s njegovom razinom stresa i zdravljem?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Voditelj harvardskog istraživanja dr. Waldinger tvrdi da su dobri odnosi sastavnica u dobrom upravljnju stresom. Naime, studija je pokazala kako ničiji život nije pošteđen poteškoća i izazova, ali razlika zbog koje se netko smatra manje ili više sretnim je način na koji se osoba suočava s tim izazovima, a u tome joj od velike koristi mogu biti upravo dobri i čvrsti odnosi s ljudima. Svaku je nevolju lakše podnijeti kada se čovjek ima na koga osloniti i važno je u životu imati barem jednu takvu osobu. Ukoliko takva podrška u nečijem životu izostane, to može dovesti do kroničnog stresa te za posljedicu imati narušeno zdravlje.", marks: 5, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2023 Higher Level — © State Examinations Commission.",
+    id: "hrv-2023-hl-ii-1", topicId: "croatian-1-0", conceptId: "jedna-lekcija-edesetljetne-studije-sveu-ili",
+    section: "II", questionRef: "2023 HL Section II Q1",
+    questionText: "Jedna od lekcija iz višedesetljetne studije Sveučilišta Harvard je i ona da „život ne mora biti lagodan da bi bio sretan”. Slažete li se s ovim zaključkom? Vlastitim riječima (100 - 150 riječi) argumentirajte svoje mišljenje.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem s ovom tvrdnjom. Svrha života su stalan rast i razvoj kako bismo postali najbolja inačica sebe, što za posljedicu ima zadovoljstvo sobom i svojim životom te osjećaj sreće. Nemoguće je rasti i razvijati se ukoliko je more kojim plovimo stalno mirno i glatko, bez valova i vjetra. Svoju vlastitu snagu spoznajemo tek kada se sučimo s izazovima, tek tada doznamo za što smo sve sposobni i kolike i koje smo sve granice sposobni prijeći. Život bogat takvim iskustvima, neobičnim, teškim, zahtjevnim, mijenja našu perspektivu, jača našu osbnost i naš karakter te nas čini samopouzdanijima i samozadovoljnijima.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme heads it: “Na primjer:”. The scheme reprints the task as: “Jedna od lekcija iz višedesetljetne studije Sveučilišta Harvard je i ona da „život ne mora biti lagodan da bi bio sretan”. Slažete li se s ovim zaključkom? Vlastitim riječima (minimalno 100 riječi) iscrpno argumentirajte svoje mišljenje.”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. DIO",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2023 Higher Level — © State Examinations Commission.",
+    id: "hrv-2023-hl-iii-1", topicId: "croatian-1-1", conceptId: "sre-nam-mogu-kupiti-bogatstvo-privilegije",
+    section: "III", questionRef: "2023 HL Section III Q1",
+    questionText: "Napišite esej (od najmanje 300 riječi) o jednoj od sljedećih tema: „Sreću nam ne mogu kupiti bogatstvo i privilegije”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme reprints the part's head, the instruction and the two titles, and prints nothing under them: no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2023 Higher Level — © State Examinations Commission.",
+    id: "hrv-2023-hl-iii-2", topicId: "croatian-1-1", conceptId: "ovje-pazi-ide-malen-ispod-zvijezda",
+    section: "III", questionRef: "2023 HL Section III Q2",
+    questionText: "Napišite esej (od najmanje 300 riječi) o jednoj od sljedećih tema: „Čovječe, pazi da ne ideš malen ispod zvijezdaǃ”, Antun Branko Šimić, „Opomena”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme reprints the part's head, the instruction and the two titles, and prints nothing under them: no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC567ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2024 Higher Level — © State Examinations Commission.",
