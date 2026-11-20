@@ -50102,13 +50102,22 @@
         12,
         13
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          12,
+          13
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2022-hl.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
       "system": "language-writing",
       "taskRequirements": [],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
@@ -50416,7 +50425,17 @@
         15,
         16
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          14,
+          15,
+          16
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2022-hl.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -50424,7 +50443,7 @@
       "taskRequirements": [
         "Q.3. Guided writing 40 marks Write a piece of continuous prose in Russian (140 words) in answer to ONE of the following. In your answer make sure to include ALL the points listed. 1. LETTER Write a letter to your Russian teacher telling him/her about a recent trip to Russia. In your letter make reference to the following: Opening (A) • Who you were with (B) • Where you have been (C) • What you have done (D) • Where you have stayed (E) • What you enjoyed most (F) Sign Off (G) OR Write a letter of application for a place on a Russian language course. In your letter of application include: Opening (A) • Basic information about yourself (B) • Your level of Russian (C) • Why you are interested in this course (D) • Where you heard about this course (E) Sign Off (F) 2. NARRATIVE (a) Write about the best day of your school life. OR (b) Write a review of a Russian film. 3. DISCUSSION (a) Discuss the benefits of a healthy lifestyle. OR (b) Discuss being an influencer as a career."
       ],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",

@@ -259,6 +259,29 @@
       "schemeSha256": "184ff292e15bf7702b94bdb4e7626d7bfb538bfb948bed4c85ae4efe01df7399",
       "reviewedAt": "2026-11-19",
       "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2022-ol.json"
+    },
+    "ru-2022-hl-se": {
+      "printedMarks": 30,
+      "schemePages": [
+        12,
+        13
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2022-hl.pdf",
+      "schemeSha256": "7f539dcb7b70c18e30b1047e463426bd2715926ddfe16a6daa0a93b995907071",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2022-hl.json"
+    },
+    "ru-2022-hl-gw": {
+      "printedMarks": 40,
+      "schemePages": [
+        14,
+        15,
+        16
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2022-hl.pdf",
+      "schemeSha256": "7f539dcb7b70c18e30b1047e463426bd2715926ddfe16a6daa0a93b995907071",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2022-hl.json"
     }
   }
 }
