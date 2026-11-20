@@ -22,10 +22,18 @@ from fr_selection import verify_paper
 from fr_reviewed_tasks import write_tasks
 from fr_printed import lift, try_lift, doc_texts, skeleton, MARKER
 import fr_printed_rules as printed_rules
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'paper-trail'))
+import french_deferred  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[3]
 DATA = ROOT / 'examiner-reports/french'
 LEDGER = Path(__file__).with_name('french-reading-review.json')
+# The deferred sittings (2022 and 2023, both levels): their own ledger, selection review and card file, so
+# June's ledger and every card built from it are untouched by them.
+DEFERRED_LEDGER = Path(__file__).with_name('french-reading-review-deferred.json')
+DEFERRED_SELECTION = Path(__file__).with_name('french-selection-review-deferred.json')
+DEFERRED_OUT = ROOT / 'components/MarkBank/cards/french/deferred-reading.json'
 
 
 def pdf_text(path):
@@ -118,12 +126,17 @@ def printed_guide(guide, path, pages, aliases, added, what, corrections=None):
     return shown, sorted(set(extra))
 
 
-def build():
-    review = json.loads(LEDGER.read_text())
+def build(sitting=None):
+    review = json.loads((DEFERRED_LEDGER if sitting else LEDGER).read_text())
     index = (ROOT / 'paperTrailData.ts').read_text().split('  "french": [', 1)[1].split('\n  ],', 1)[0]
     entries = [json.loads(line.strip().rstrip(',')) for line in index.splitlines() if line.strip()]
-    # Reviewed window only: June sittings from 2010.
-    entries = [entry for entry in entries if not entry.get('sitting') and entry['year'] >= 2010]
+    # Reviewed window only: June sittings from 2010 (or the deferred sittings).
+    entries = [entry for entry in entries if entry.get('sitting') == sitting and entry['year'] >= 2010]
+    selection = json.loads(DEFERRED_SELECTION.read_text()) if sitting else None
+    # A deferred sitting's files are named by it ("2022-hl-deferred.pdf"); see fr_paper.FrPaper.
+    fl = (lambda level: f'{level}-deferred') if sitting else (lambda level: level)
+    deferred_ref = ' — Deferred sitting' if sitting else ''
+    deferred_doc = 'deferred examination paper' if sitting else 'examination paper'
     tags = json.loads((ROOT / 'scripts/paper-trail/topic-tags/tags/french.json').read_text())
     runtime = json.loads((ROOT / 'data/examTopics/french-runtime.json').read_text())
     original = {card['id']: card for card in json.loads((ROOT / 'scripts/markbank/authored/french.json').read_text())}
@@ -132,14 +145,14 @@ def build():
         year, level = record['year'], record['level']
         for source in record['sources']:
             assert hashlib.sha256((ROOT / source['path']).read_bytes()).hexdigest() == source['sha256'], source['path']
-        paper = FrPaper(year, level)
-        verify_paper(Path(paper.path), pages=record.get('selectionPages'))
-        scheme = FrScheme(year, level, raw_text=pdf_text(DATA / f'schemes/{year}-{level}.pdf'))
+        paper = FrPaper(year, level, sitting=sitting)
+        verify_paper(Path(paper.path), selection, pages=record.get('selectionPages'))
+        scheme = FrScheme(year, level, raw_text=pdf_text(DATA / f'schemes/{year}-{fl(level)}.pdf'), sitting=sitting)
         actual = [f'{a.rc}:{a.item}{a.letter or ""}{"-" + a.letter_to if a.letter_to else ""}:{a.total}' for a in scheme.reading()]
         assert actual == record['pricedBoundaries'], (level, actual)
         level_name = {'hl': 'higher', 'ol': 'ordinary'}[level]
         entry = next(e for e in entries if e['year'] == year and e['level'] == level_name and e['lang'] == 'ev')
-        doc = next(p for p in entry['papers'] if p['label'] == 'Exam Paper')
+        doc = next(p for p in entry['papers'] if p['label'] == ('Deferred · Exam Paper' if sitting else 'Exam Paper'))
         paper_tags = next(p for p in tags if p['year'] == year and p['level'] == level_name and p['fileid'] == doc['doc']['f'])
         for ask in scheme.reading():
             address = f'A{ask.rc}-Q{ask.item}' + (f'-{ask.letter}' if ask.letter else '')
@@ -155,6 +168,12 @@ def build():
             hit = paper.find(ask.rc, ask.item, None if ask.letter_to else ask.letter, ask.cue, whole=mcq)
             assert hit, scheme.ref(ask)
             question, question_page, _ = hit
+            printed_prompt = record.get('printedPrompts', {}).get(address)
+            if printed_prompt:
+                # (Deferred ledger.) An ask the paper reader cuts at a printed "(i)" inside its
+                # own sentence: the whole ask, line by line as printed; each line is lifted below.
+                assert printed_prompt['reason'] and printed_prompt['page'] == question_page, address
+                question = '\n'.join(printed_prompt['lines'])
             paper_groups = doc_texts(paper.path, paper.rc_pages[ask.rc])
             context = record.get('paperContextLines', {}).get(address)
             if context:
@@ -210,17 +229,37 @@ def build():
             if offset is None:
                 offset = (ask.rc - 1) * 6 if level == 'hl' else [0, 0, 6, 14, 22][ask.rc]
             parent = record.get('archiveParents', {}).get(address, str(offset + ask.item))
+            if sitting:
+                # A deferred paper's questions are numbered as the Atlas lists them: "A1", "A2", ...
+                parent = f'A{ask.rc}'
             tag = next(q for q in paper_tags['q'] if q['n'] == parent)
-            topic_indexes = next(m[5] for m in runtime['questionMappings'] if m[:5] == [level_name[0], 'e', year - 2000, 's', parent])
-            topic_ids = [runtime['topics'][i][0] for i in topic_indexes]
+            if sitting:
+                topic_ids = french_deferred.runtime_topic_ids(year, level, 's', parent)
+            else:
+                topic_indexes = next(m[5] for m in runtime['questionMappings'] if m[:5] == [level_name[0], 'e', year - 2000, 's', parent])
+                topic_ids = [runtime['topics'][i][0] for i in topic_indexes]
             topic_id = tag['primary']
             topic_correction = record.get('topicCorrections', {}).get(str(ask.rc))
             if topic_correction:
                 assert topic_correction['reason'] and topic_correction['topicIds'], ask.rc
                 topic_id, topic_ids = topic_correction['topicId'], topic_correction['topicIds']
             letters = [chr(i) for i in range(ord(ask.letter), ord(ask.letter_to) + 1)] if ask.letter_to else [ask.letter]
-            for index, letter in enumerate(letters):
+            # (Deferred ledger.) An ask whose paper prints two labelled answers, each priced on its own
+            # in the scheme under its own heading: one card per label, as June splits 2011 HL Q.1 3
+            # (Positif / Négatif) and 2014 OL Q.4 8 (His parents / His sisters).
+            labelled = record.get('labelledParts', {}).get(address) if sitting else None
+            if labelled:
+                assert labelled['reason'] and not ask.letter_to, address
+            units = [(ask.letter, part) for part in labelled['parts']] if labelled else [(letter, None) for letter in letters]
+            for index, (letter, labelled_part) in enumerate(units):
                 prompt, guide, maximum = question, guidance, ask.total
+                if labelled_part:
+                    heads = [part['heading'] for part in labelled['parts']]
+                    start = guide.index(labelled_part['heading'])
+                    later = [guide.index(head) for head in heads if guide.index(head) > start]
+                    guide = guide[start:min(later) if later else len(guide)]
+                    prompt = '\n'.join([*labelled['lines'], labelled_part['paperLabel']])
+                    maximum = ask.per
                 if ask.letter_to:
                     part = max(paper.candidates(ask.rc, ask.item, letter), key=lambda block: (block.side == 'R', len(block.text)))
                     prompt = question + '\n\n' + part.text
@@ -231,8 +270,9 @@ def build():
                 suffix = f'{ask.item}' + (f'({letter})' if letter else '')
                 if question_group:
                     suffix = ' and Q'.join(map(str, question_group['questions']))
-                n = f'A{ask.rc}-Q{ask.item}' + (f'-{letter}' if letter else '')
-                cid = f'fr-{year}-{level}-reading-{n.lower()}'
+                n = f'A{ask.rc}-Q{ask.item}' + (f'-{letter}' if letter else '') + (f'-{labelled_part["key"]}' if labelled_part else '')
+                cid = f'fr-{year}-{level}-{"deferred-" if sitting else ""}reading-{n.lower()}'
+                label_ref = f' · {labelled_part["refLabel"]}' if labelled_part else ''
                 preserved_id = record.get('preservedCardIds', {}).get(n)
                 if preserved_id:
                     previous = original[preserved_id]
@@ -255,30 +295,30 @@ def build():
                 requirements = []
                 if level == 'hl':
                     kind = 'mcq' if mcq else 'english' if english else 'french'
-                    requirements.append(printed_rules.reading_language(year, level, kind)[0])
-                    requirements += printed_rules.reading_general_points(year, record.get('generalRulesPage', 4))
+                    requirements.append(printed_rules.reading_language(year, fl(level), kind)[0])
+                    requirements += printed_rules.reading_general_points(year, record.get('generalRulesPage', 4), fl(level))
                     note = record.get('sourceNotes', {}).get(address, '')
                     if ask.item == 6 and note.startswith('Special'):
-                        requirements.append(printed_rules.special_segment_rule(year))
+                        requirements.append(printed_rules.special_segment_rule(year, fl(level)))
                 else:
                     if english:
-                        requirements.append(printed_rules.reading_language(year, level, 'english')[0])
-                    mcq_instruction = printed_rules.reading_mcq_instruction(year, level, paper.rc_pages[ask.rc]) if mcq else None
+                        requirements.append(printed_rules.reading_language(year, fl(level), 'english')[0])
+                    mcq_instruction = printed_rules.reading_mcq_instruction(year, fl(level), paper.rc_pages[ask.rc]) if mcq else None
                     if mcq_instruction:
                         requirements.append(mcq_instruction[0])
                     elif mcq:
                         practice.append('Select one answer. The other printed options are distractors.')
                     if english:
-                        requirements += printed_rules.ordinary_equivalence(year)
+                        requirements += printed_rules.ordinary_equivalence(year, fl(level))
                     else:
                         practice.append('Answer in French.')
                     if ask.rc >= 3:
-                        requirements += printed_rules.ordinary_question_rules(year, ask.rc)[0]
+                        requirements += printed_rules.ordinary_question_rules(year, ask.rc, fl(level))[0]
                 if shared_tariff:
                     assert maximum == 8 and shared_tariff['reason'], address
-                    requirements.append(lift(doc_texts(DATA / f'schemes/{year}-{level}.pdf', scheme_pages), shared_tariff['printedRule'], marks='', what=address))
+                    requirements.append(lift(doc_texts(DATA / f'schemes/{year}-{fl(level)}.pdf', scheme_pages), shared_tariff['printedRule'], marks='', what=address))
                     practice.append('Give both required answers. Award 7 marks for one correct answer and 1 additional mark for the second correct answer (8 marks total).')
-                elif ask.count > 1 and not ask.letter_to:
+                elif ask.count > 1 and not ask.letter_to and not labelled_part:
                     practice.append(f'Give {ask.count} distinct points. Each earns at most {ask.per} marks; do not score the same point twice.')
                 if shared_tariff:
                     allowed = [0, 7, 8] if ask.rc < 3 else list(range(9))
@@ -302,10 +342,10 @@ def build():
                     allowed = explicit_marks['marks']
                 pages = paper.rc_pages[ask.rc]
                 source = dict(kind='source-text', label=f'Reading Comprehension {ask.rc}', title=f'Reading Comprehension {ask.rc}',
-                              pages=pages, attribution=f'SEC French {year} {level_name.title()} Level examination paper — © State Examinations Commission.',
+                              pages=pages, attribution=f'SEC French {year} {level_name.title()} Level {deferred_doc} — © State Examinations Commission.',
                               presentationNote='Read the original passage and return to this task.')
                 aliases = tuple(alias['glyph'] for alias in record.get('schemeBulletAliases', []))
-                scheme_path = DATA / f'schemes/{year}-{level}.pdf'
+                scheme_path = DATA / f'schemes/{year}-{fl(level)}.pdf'
                 if choice_review.get('letteredOptions'):
                     # The scheme prints the letter; the option it names is quoted
                     # as our note, never joined to the scheme's line.
@@ -315,20 +355,24 @@ def build():
                 cited = sorted(set(scheme_pages) | set(extra_pages))
                 card = dict(id=cid, subjectId='french', level=level_name, source='sec', kind='rubric', year=year,
                             paperFileid=doc['doc']['f'].removesuffix('.pdf'), section='A',
-                            questionRef=f'{year} {level.upper()} Section A{ask.rc} Q{suffix}', questionText=prompt,
+                            questionRef=f'{year} {level.upper()} Section A{ask.rc} Q{suffix}' + label_ref + deferred_ref, questionText=prompt,
                             totalMarks=maximum, topicId=topic_id, conceptId=f'french-reading-{topic_id}',
                             sourceMaterial=source, specVersion='lc-french-syllabus',
-                            schemeCitation=f'SEC French {year} {level_name.title()} Level marking scheme, pp.{", ".join(map(str, cited))}; general rules p.{record.get("generalRulesPage", 4 if level == "hl" else 3)} — © State Examinations Commission.',
+                            schemeCitation=f'SEC French {year} {level_name.title()} Level marking scheme{", deferred examination" if sitting else ""}, pp.{", ".join(map(str, cited))}; general rules p.{record.get("generalRulesPage", 4 if level == "hl" else 3)} — © State Examinations Commission.',
                             schemeRegion=dict(schemeFileid=doc['scheme']['f'], p=cited[0], r=[0, 0, 1, 1]),
                             rubric=dict(system='french', taskRequirements=requirements, answerGuide=guide,
                                         criteria=[dict(id='response', label='Response', maxMarks=maximum, permittedMarks=allowed, guidance=[])],
-                                        markingGuideNote='\n'.join(printed_rules.scheme_notes(year, level)), practiceNotes=practice),
+                                        markingGuideNote='\n'.join(printed_rules.scheme_notes(year, fl(level))), practiceNotes=practice),
                             qa=dict(gates=['visual-paper-scheme-review', 'published-tariff-boundary', 'complete-partial-credit', 'selection-review'], humanReviewedBy='agent-verified', humanReviewedAt=review['reviewedAt']))
                 cards.append(card)
                 if preserved_id:
                     card['conceptId'] = previous['conceptId']
                 if scoring:
                     practice.append(scoring['sourceNote'])
+                if labelled_part:
+                    practice.append(labelled['note'])
+                elif ask.decision:
+                    practice.append(ask.decision['sourceNote'])
                 if split and split.get('taskInstruction'):
                     practice.append(split['taskInstruction'])
                 if address in record.get('sourceNotes', {}):
@@ -342,14 +386,15 @@ def build():
                         key = f'({chr(97 + choice_review["correctOption"])})'
                         assert len(ask.answers) == 1 and ask.answers[0]['text'] == key, cid
                         assert re.match(rf'(?:{MARKER}\s*)?{re.escape(key)}', card['rubric']['answerGuide'][0]), cid
-                tasks.append(dict(cardId=cid, category='reading', subjectId='french', level=level_name, year=year, sitting='main', paperKey='single', lang='ev',
+                tasks.append(dict(cardId=cid, category='reading', subjectId='french', level=level_name, year=year, sitting=sitting or 'main', paperKey='single', lang='ev',
                                   fileid=doc['doc']['f'], n=n, parent=parent, topicIds=topic_ids,
-                                  topicId=topic_id, pages=pages, label=f'Reading Comprehension {ask.rc} · Q{suffix}'))
+                                  topicId=topic_id, pages=pages, label=f'Reading Comprehension {ask.rc} · Q{suffix}{label_ref}'))
     assert len(cards) == review['expectedCards']
-    (ROOT / 'components/MarkBank/cards/french/reading.json').write_text(json.dumps(cards, ensure_ascii=False, indent=2) + '\n')
-    write_tasks('reading', tasks)
+    (DEFERRED_OUT if sitting else ROOT / 'components/MarkBank/cards/french/reading.json').write_text(
+        json.dumps(cards, ensure_ascii=False, indent=2) + '\n')
+    write_tasks('reading', tasks, sitting=sitting or 'main')
     print(f'Wrote {len(cards)} reviewed French reading cards and exact Atlas tasks.')
 
 
 if __name__ == '__main__':
-    build()
+    build('deferred' if '--deferred' in sys.argv[1:] else None)

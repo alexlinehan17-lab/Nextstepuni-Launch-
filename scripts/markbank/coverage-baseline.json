@@ -348,19 +348,19 @@
     "refsHash": "b09aab8adfbbe234"
   },
   "french": {
-    "cards": 2120,
-    "contentHash": "cb31f9d606064fb4",
-    "coveragePct": 100.0,
-    "covered": 1876,
+    "cards": 2286,
+    "contentHash": "a35d4dadbeb7c3bb",
+    "coveragePct": 95.9,
+    "covered": 2012,
     "excluded": 0,
-    "leaves": 1876,
-    "open": 0,
+    "leaves": 2097,
+    "open": 85,
     "orphans": 0,
     "papers": {
-      "count": 68,
-      "hash": "f1bfcddb8b7e2aff"
+      "count": 76,
+      "hash": "920510cefee5bb86"
     },
-    "refsHash": "9aa653ddbc92b175"
+    "refsHash": "a0bb78da2a557c0e"
   },
   "geography": {
     "cards": 4641,
@@ -678,19 +678,19 @@
     "refsHash": "38694d71adeb29ca"
   },
   "portuguese": {
-    "cards": 555,
-    "contentHash": "9f9d8879a16274b4",
-    "coveragePct": 82.5,
-    "covered": 555,
-    "excluded": 59,
+    "cards": 744,
+    "contentHash": "9970d654ff30decd",
+    "coveragePct": 100.0,
+    "covered": 744,
+    "excluded": 0,
     "leaves": 744,
-    "open": 130,
+    "open": 0,
     "orphans": 0,
     "papers": {
       "count": 31,
       "hash": "1ed69ceed274dcd0"
     },
-    "refsHash": "8be153614d17c28a"
+    "refsHash": "4c0d60523a88bcfe"
   },
   "religious-education": {
     "cards": 786,

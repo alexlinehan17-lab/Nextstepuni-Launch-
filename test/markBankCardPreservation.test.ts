@@ -122,6 +122,7 @@ import { FRENCH_WRITING_CARDS } from '../components/MarkBank/cards/french/writin
 import { FRENCH_LISTENING_CARDS } from '../components/MarkBank/cards/french/listening';
 import { FRENCH_CLOZE_CARDS } from '../components/MarkBank/cards/french/cloze';
 import { FRENCH_READING_CARDS } from '../components/MarkBank/cards/french/reading';
+import { FRENCH_DEFERRED_CARDS } from '../components/MarkBank/cards/french/deferred';
 import { CARDS as GERMAN_HIGHER } from '../components/MarkBank/cards/german/higher';
 import { CARDS as GERMAN_ORDINARY } from '../components/MarkBank/cards/german/ordinary';
 import { CARDS as SPANISH_HIGHER } from '../components/MarkBank/cards/spanish/higher';
@@ -1504,12 +1505,23 @@ const polishAddedTotal = [...Object.values(POLISH_ADDED), ...Object.values(POLIS
  * shared reader refused, each named. */
 const PORTUGUESE_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 60, ordinary: 58 },
+  2019: { higher: 13, ordinary: 0 },
+  2018: { higher: 13, ordinary: 0 },
+  2017: { higher: 13, ordinary: 0 },
+  2016: { higher: 13, ordinary: 0 },
+  2015: { higher: 13, ordinary: 0 },
+  2014: { higher: 13, ordinary: 0 },
+  2013: { higher: 13, ordinary: 0 },
+  2012: { higher: 13, ordinary: 0 },
+  2011: { higher: 13, ordinary: 0 },
+  2010: { higher: 13, ordinary: 0 },
 };
 const PORTUGUESE_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
   2025: { higher: 40, ordinary: 40 },
   2024: { higher: 45, ordinary: 37 },
   2023: { higher: 43, ordinary: 44 },
-  2022: { higher: 9, ordinary: 6 },
+  2022: { higher: 36, ordinary: 36 },
+  2021: { higher: 2, ordinary: 0 },
 };
 const PORTUGUESE_ADDED_TO_FROZEN_ID = /^por-202[1-5]-(?:hl|ol)-(?:l[a-e]-|b-)/;
 const PORTUGUESE_ADDED_TO_FROZEN_READING = new Set<string>([
@@ -1533,6 +1545,11 @@ const PORTUGUESE_ADDED_TO_FROZEN_READING = new Set<string>([
   'por-2023-ol-a-2-a',
   'por-2023-ol-a-2-h',
   'por-2023-ol-a-3-b',
+  'por-2022-ol-a-1-d',
+  'por-2022-ol-a-2-d',
+  'por-2022-ol-a-3-g',
+  'por-2021-hl-ii-1',
+  'por-2021-hl-ii-2',
 ]);
 const isPortugueseAdded = (id: string) => /^por-\d{4}-/.test(id) && (Number(id.slice(4, 8)) in PORTUGUESE_ADDED
   || (Number(id.slice(4, 8)) in PORTUGUESE_ADDED_TO_FROZEN
@@ -1597,6 +1614,8 @@ const frenchAdditionIds = new Set([
   // Reviewed corrections retain legacy IDs and remain in the frozen hash.
   ...FRENCH_READING_CARDS.filter(card => card.id.includes('-reading-')),
   ...FRENCH_CLOZE_CARDS, ...FRENCH_LISTENING_CARDS,
+  // The deferred sittings' reviewed cards (2022 and 2023): new, never a frozen identity.
+  ...FRENCH_DEFERRED_CARDS,
 ].map(card => card.id));
 /* Economics keeps its 697 pre-review IDs frozen (383 Higher + 314 Ordinary, the
  * original identity hashes above). The paper-by-paper physical review

@@ -24,6 +24,7 @@ import { writingCardsForLevel } from './writing';
 import { readingCardsForLevel } from './reading';
 import { clozeCardsForLevel } from './cloze';
 import { listeningCardsForLevel } from './listening';
+import { deferredCardsForLevel } from './deferred';
 
 
 const base = {
@@ -130,4 +131,5 @@ export const CARDS: SecCard[] = [
   ...readingCardsForLevel("ordinary"),
   ...clozeCardsForLevel("ordinary"),
   ...listeningCardsForLevel("ordinary"),
+  ...deferredCardsForLevel("ordinary"),
 ];

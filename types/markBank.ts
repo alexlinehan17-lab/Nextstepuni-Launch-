@@ -690,6 +690,20 @@ export interface SecPointCardBase extends SecCardBase {
    * carries no marks either way.
    */
   noScheme?: true;
+  /**
+   * The paper prices only the SECTION this question sits in, never the
+   * question (Portuguese 2015 Higher Part I prints "Parte I (30 pontos)" and
+   * no price on any of its questions; 2017 Higher Q2-Q6 the same). Coordinator
+   * ruling, 20 Nov 2026 (CARD-STANDARD 10i). The card lifts the scheme's
+   * answer rows, which carry no marks, and has no total of its own
+   * (`totalMarks` is 0, the `questionTotal` tariff): wherever it would show
+   * marks it shows the section's printed total with UNPRICED_SECTION_LINE.
+   * `label` is the section's name as the paper prints it ("Parte I") and
+   * `totalMarks` the total the paper prints for the section (30). It is
+   * studied as a self-check and never scored, as a no-scheme card is not: its
+   * result carries no marks, and no grade is suggested.
+   */
+  unpricedSection?: { label: string; totalMarks: number };
 }
 
 export type PclmCriterionId = 'purpose' | 'coherence' | 'language' | 'mechanics';
@@ -1706,6 +1720,23 @@ export const TRANSLATION_NO_MODEL = 'The scheme prints no model translation.';
  */
 export const NO_SCHEME_PUBLISHED = 'The SEC published no marking scheme for this paper.';
 
+/**
+ * The fixed line on a card whose paper prices only its section
+ * (`unpricedSection`, CARD-STANDARD 10i), filled from that field: "{total}" is
+ * the section's printed total and "{label}" its printed name. Mirrored in
+ * build-deck.mjs, which refuses the line as a row: it is NextStepUni's, never
+ * the SEC's.
+ */
+export const UNPRICED_SECTION_LINE = 'The paper gives {total} marks for {label} as a whole, not for each question.';
+
+/** UNPRICED_SECTION_LINE for one section: "The paper gives 30 marks for Parte I as a whole, ...". */
+export const unpricedSectionLine = (section: { label: string; totalMarks: number }): string =>
+  UNPRICED_SECTION_LINE.replace('{total}', String(section.totalMarks)).replace('{label}', section.label);
+
+/** Where a card shows its marks in a chip, the section's printed total: "Parte I: 30m in all". */
+export const unpricedSectionChip = (section: { label: string; totalMarks: number }): string =>
+  `${section.label}: ${section.totalMarks}m in all`;
+
 /** Source-defined language grids. Conditions are printed scheme rules, never
  * inferred from the language or carried forward from another examination. */
 export type LanguageLimitCondition =
@@ -1893,6 +1924,9 @@ export const isPointCard = (c: SecCard): c is SecPointCard => c.kind === 'questi
 export const isRubricCard = (c: SecCard): c is SecRubricCard => c.kind === 'rubric';
 /** A card whose paper has no published marking scheme: shown, never scored. */
 export const isNoSchemeCard = (c: SecCard): boolean => (c.kind === 'question' || c.kind === 'diagram') && c.noScheme === true;
+/** A card whose paper prices only its section (`unpricedSection`): a self-check, never scored. */
+export const isUnpricedSectionCard = (c: SecCard): c is SecPointCard & { unpricedSection: { label: string; totalMarks: number } } =>
+  (c.kind === 'question' || c.kind === 'diagram') && c.unpricedSection !== undefined;
 
 /** Subjects whose reviewed decks still hold a task as a confidence review:
  *  Codex's Russian and Link Modules, until they are converted under R3/R4.
@@ -2598,6 +2632,22 @@ export function tariffReconciles(card: SecCard): boolean {
         && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
   }
   const { tariffModel: t, rows, totalMarks } = card;
+  // The paper prices only the question's section (CARD-STANDARD 10i): the
+  // scheme's answer rows with no marks, no total of the card's own, and the
+  // section's printed name and total in `unpricedSection`. A card without
+  // that field never has a total of 0 or less.
+  if (card.unpricedSection !== undefined || totalMarks <= 0) {
+    const section = card.unpricedSection;
+    return section !== undefined && t.kind === 'questionTotal' && totalMarks === 0 && !card.noScheme
+      && typeof section.label === 'string' && section.label.length > 0 && section.label === section.label.trim()
+      && Number.isInteger(section.totalMarks) && section.totalMarks > 0
+      && rows.length > 0 && rows.every(row => row.kind === 'point' && row.marks === null
+        && !row.group && !row.permittedMarks && !row.parts && !row.route && !row.unprinted
+        && row.verbatim.trim().length > 0 && row.verbatim !== NO_SCHEME_PUBLISHED
+        && row.verbatim !== unpricedSectionLine(section))
+      && !card.answerVariants?.length && !card.questionBonus && !card.mathematicsScale
+      && !card.taskGroups?.length && !card.extraneousMaterialRule && !card.answerLanguageRule;
+  }
   // No scheme was published: the card carries the paper's marks and one
   // statement, and nothing on it is claimable.
   if (card.noScheme) {
