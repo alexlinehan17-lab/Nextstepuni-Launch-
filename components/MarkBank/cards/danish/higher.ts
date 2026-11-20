@@ -230,8 +230,23 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar ordet ”bunden” som det bruges i teksten (1. afsnit) Forklar ordet ” tredje” som det bruges i teksten (1. afsnit) Forklar ordet ”behov” som det bruges i teksten (4. afsnit) Forklar ordet ”måling” som det bruges i teksten (5. afsnit) Forklar ordet ”tilfreds” som det bruges i teksten (8. afsnit)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nederst på listen Nummer tre/3 Noget som man ikke kan undvære Undersøgelse, studie Være glad for det, man har", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\"" },
+    { id: "r-1", kind: "point", verbatim: "Nederst på listen", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\"" },
+    { id: "r-2", kind: "point", verbatim: "Nummer tre/3", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "Noget som man ikke kan undvære", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "Undersøgelse, studie", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "Være glad for det, man har", marks: 1 },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -245,6 +260,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Danskerne er de lykkeligste, de andre de ulykkeligste i verden.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -258,6 +284,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Summen af lykke er konstant, men selve målestokken for lykke har forandret sig. Før betød materiel lykke mere end i dag, hvor spirituel/sjælelig lykke opfattes som vigtigere.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -271,6 +308,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Mistillid, minderne fra fortiden (menneskerne i de tidligere sovjetlande bærer stadig på minderne fra 50 års frygt og familietragedier), sammenligning med andre.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -284,6 +332,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Svaret forventes at gå i retning af: Lykken kommer ikke af sig selv, man må være deltager i livet for at kunne få noget tilbage fra det. Ordene ”risikere” og ”investere” i forbindelse med mennesker peger på, at der også være tale om skuffelser - ikke en sikker gevinst.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -297,6 +356,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Svaret forventes at opsamle de vigtigste pointer i teksten om lykke ud fra danskernes opfattelse af den: At være dansk, at have tillid, at udvikle sig selv sammen med andre, at kunne være tilfreds med det, man har, samt et vist mål af utilfredshed.", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\"" },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -345,13 +415,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordene ”veldrejede ydre” som de bruges i teksten (1. afsnit) Forklar betydningen af ordene ”sparke døre ind” som de bruges i teksten (1. afsnit) Forklar betydningen af ordet ”undersøgelse” som det bruges i teksten ( 2. afsnit) Forklar betydningen af ordet ”bedømme” som det bruges i teksten (3. afsnit) Forklar betydningen af ordet ”forarge” som det bruges i teksten (4. afsnit)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “godt udseende”, ”smuk”) Enhver rimelig forklaring (e.g. “at få succes\") Enhver rimelig forklaring (e.g. “udforskning”) Enhver rimelig forklaring (e.g. “vurdere”) Enhver rimelig forklaring (e.g. “vække vrede”, ”modvilje”)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “godt udseende”, ”smuk”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-2", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “at få succes\")", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “udforskning”)", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “vurdere”)", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “vække vrede”, ”modvilje”)", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -375,6 +450,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -398,6 +474,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -421,6 +498,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -444,6 +522,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -467,6 +546,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -520,13 +600,18 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”bjælkehus” som det bruges i teksten Forklar betydningen af ordet ”værdier” som de bruges i teksten Forklar betydningen af ordene ”et stort og vildt spring ud over kanten” som de bruges i teksten Forklar betydningen af ordet ”nøjsomhed” som det bruges i teksten Forklar betydningen af ordene ” tæskede mig selv” som de bruges i teksten",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “hus lavet af træ, træstammer”) Enhver rimelig forklaring (e.g. “holdninger som man lever efter\") Enhver rimelig forklaring (e.g. “at forlade det trygge liv, tage chancer”) Enhver rimelig forklaring (e.g. “at leve for få midler”) Enhver rimelig forklaring (e.g. “at kritisere/bebrejde sig selv”)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “hus lavet af træ, træstammer”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-2", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “holdninger som man lever efter\")", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “at forlade det trygge liv, tage chancer”)", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “at leve for få midler”)", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “at kritisere/bebrejde sig selv”)", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -550,6 +635,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -573,6 +659,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -596,6 +683,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -619,6 +707,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -642,6 +731,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -715,6 +805,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -738,6 +829,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -761,6 +853,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -784,6 +877,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -807,6 +901,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -889,14 +984,19 @@ export const CARDS: SecCard[] = [
     questionText: "Forklar betydningen af ordet ”højhuse” som det bruges i teksten Forklar betydningen af ordene ”tilfældighed” som det bruges i teksten Forklar betydningen af ordet ”fællesskabet” som det bruges i teksten Forklar betydningen af ordet ”afgrøder” som det bruges i teksten Forklar betydningen af ordene ”hvinende dæk” som de bruges i teksten",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “en stor bygning med lejligheder og plads til mange mennesker”) Enhver rimelig forklaring (e.g. “at noget sker uden at være planlagt på forhånd, uden bestemt hensigt\") Enhver rimelig forklaring (e.g. “at være sammen om noget, f.eks. en byhave”) Enhver rimelig forklaring (e.g. “de biologiske produkter, der dyrkes i byhaverne”) Enhver rimelig forklaring (e.g. “larmen fra bildæk, når den drejer skarpt i høj fart. Her anvendt som stilelement”)", marks: 5, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-1", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “en stor bygning med lejligheder og plads til mange mennesker”)", marks: 1, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\"" },
+    { id: "r-2", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “at noget sker uden at være planlagt på forhånd, uden bestemt hensigt\")", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “at være sammen om noget, f.eks. en byhave”)", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “de biologiske produkter, der dyrkes i byhaverne”)", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "Enhver rimelig forklaring (e.g. “larmen fra bildæk, når den drejer skarpt i høj fart. Her anvendt som stilelement”)", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 1",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -919,7 +1019,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -942,7 +1043,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -965,7 +1067,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -988,7 +1091,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -1011,7 +1115,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -1072,6 +1177,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1095,6 +1201,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1118,6 +1225,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Danish",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",

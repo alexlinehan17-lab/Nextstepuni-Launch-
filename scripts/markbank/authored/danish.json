@@ -302,12 +302,47 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Nederst på listen Nummer tre/3 Noget som man ikke kan undvære Undersøgelse, studie Være glad for det, man har",
-    "marks": 5,
+    "verbatim": "Nederst på listen",
+    "marks": 1,
     "contextNote": "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Nummer tre/3",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Noget som man ikke kan undvære",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Undersøgelse, studie",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Være glad for det, man har",
+    "marks": 1
    }
   ],
-  "notes": "The paper prints the tariff as '(maks. 5 x 1 point)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question."
+  "notes": "The paper prints the tariff as '(maks. 5 x 1 point)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Danish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+  }
  },
  {
   "id": "dan-2011-hl-i-2",
@@ -332,7 +367,18 @@
     "contextNote": "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
    }
   ],
-  "notes": "The paper prints the tariff as '(maks. 5 point)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question."
+  "notes": "The paper prints the tariff as '(maks. 5 point)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Danish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+  }
  },
  {
   "id": "dan-2011-hl-i-3",
@@ -357,7 +403,18 @@
     "contextNote": "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
    }
   ],
-  "notes": "The paper prints the tariff as '(maks. 5 point)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question."
+  "notes": "The paper prints the tariff as '(maks. 5 point)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Danish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+  }
  },
  {
   "id": "dan-2011-hl-i-4",
@@ -382,7 +439,18 @@
     "contextNote": "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
    }
   ],
-  "notes": "The paper prints the tariff as '(maks. 5 point)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question."
+  "notes": "The paper prints the tariff as '(maks. 5 point)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Danish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+  }
  },
  {
   "id": "dan-2011-hl-i-5",
@@ -407,7 +475,18 @@
     "contextNote": "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
    }
   ],
-  "notes": "The paper prints the tariff as '(maks. 5 point)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question."
+  "notes": "The paper prints the tariff as '(maks. 5 point)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Danish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+  }
  },
  {
   "id": "dan-2011-hl-i-6",
@@ -432,7 +511,18 @@
     "contextNote": "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
    }
   ],
-  "notes": "The paper prints the tariff as '(maks. 5 point)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question."
+  "notes": "The paper prints the tariff as '(maks. 5 point)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Danish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+  }
  },
  {
   "id": "dan-2011-hl-ii-1",
@@ -727,9 +817,33 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Enhver rimelig forklaring (e.g. “godt udseende”, ”smuk”) Enhver rimelig forklaring (e.g. “at få succes\") Enhver rimelig forklaring (e.g. “udforskning”) Enhver rimelig forklaring (e.g. “vurdere”) Enhver rimelig forklaring (e.g. “vække vrede”, ”modvilje”)",
-    "marks": 5,
+    "verbatim": "Enhver rimelig forklaring (e.g. “godt udseende”, ”smuk”)",
+    "marks": 1,
     "contextNote": "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Enhver rimelig forklaring (e.g. “at få succes\")",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Enhver rimelig forklaring (e.g. “udforskning”)",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Enhver rimelig forklaring (e.g. “vurdere”)",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Enhver rimelig forklaring (e.g. “vække vrede”, ”modvilje”)",
+    "marks": 1
    }
   ],
   "notes": "The paper prints the tariff as '(maks. 5x1 point)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
@@ -738,6 +852,7 @@
    "label": "QUESTION 1",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -773,6 +888,7 @@
    "label": "QUESTION 2",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -808,6 +924,7 @@
    "label": "QUESTION 3",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -843,6 +960,7 @@
    "label": "QUESTION 4",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -878,6 +996,7 @@
    "label": "QUESTION 5",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -913,6 +1032,7 @@
    "label": "QUESTION 6",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2012 Higher Level examination paper — © State Examinations Commission.",
@@ -1212,9 +1332,33 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Enhver rimelig forklaring (e.g. “hus lavet af træ, træstammer”) Enhver rimelig forklaring (e.g. “holdninger som man lever efter\") Enhver rimelig forklaring (e.g. “at forlade det trygge liv, tage chancer”) Enhver rimelig forklaring (e.g. “at leve for få midler”) Enhver rimelig forklaring (e.g. “at kritisere/bebrejde sig selv”)",
-    "marks": 5,
+    "verbatim": "Enhver rimelig forklaring (e.g. “hus lavet af træ, træstammer”)",
+    "marks": 1,
     "contextNote": "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Enhver rimelig forklaring (e.g. “holdninger som man lever efter\")",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Enhver rimelig forklaring (e.g. “at forlade det trygge liv, tage chancer”)",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Enhver rimelig forklaring (e.g. “at leve for få midler”)",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Enhver rimelig forklaring (e.g. “at kritisere/bebrejde sig selv”)",
+    "marks": 1
    }
   ],
   "notes": "The paper prints the tariff as '(5 × 1 point)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
@@ -1223,6 +1367,7 @@
    "label": "QUESTION 1",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -1258,6 +1403,7 @@
    "label": "QUESTION 2",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -1293,6 +1439,7 @@
    "label": "QUESTION 3",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -1328,6 +1475,7 @@
    "label": "QUESTION 4",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -1363,6 +1511,7 @@
    "label": "QUESTION 5",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -1398,6 +1547,7 @@
    "label": "QUESTION 6",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2014 Higher Level examination paper — © State Examinations Commission.",
@@ -1850,6 +2000,7 @@
    "label": "QUESTION 2",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -1885,6 +2036,7 @@
    "label": "QUESTION 3",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -1920,6 +2072,7 @@
    "label": "QUESTION 4",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -1955,6 +2108,7 @@
    "label": "QUESTION 5",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -1990,6 +2144,7 @@
    "label": "QUESTION 6",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2015 Higher Level examination paper — © State Examinations Commission.",
@@ -2189,9 +2344,33 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Enhver rimelig forklaring (e.g. “en stor bygning med lejligheder og plads til mange mennesker”) Enhver rimelig forklaring (e.g. “at noget sker uden at være planlagt på forhånd, uden bestemt hensigt\") Enhver rimelig forklaring (e.g. “at være sammen om noget, f.eks. en byhave”) Enhver rimelig forklaring (e.g. “de biologiske produkter, der dyrkes i byhaverne”) Enhver rimelig forklaring (e.g. “larmen fra bildæk, når den drejer skarpt i høj fart. Her anvendt som stilelement”)",
-    "marks": 5,
+    "verbatim": "Enhver rimelig forklaring (e.g. “en stor bygning med lejligheder og plads til mange mennesker”)",
+    "marks": 1,
     "contextNote": "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Enhver rimelig forklaring (e.g. “at noget sker uden at være planlagt på forhånd, uden bestemt hensigt\")",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Enhver rimelig forklaring (e.g. “at være sammen om noget, f.eks. en byhave”)",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Enhver rimelig forklaring (e.g. “de biologiske produkter, der dyrkes i byhaverne”)",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Enhver rimelig forklaring (e.g. “larmen fra bildæk, når den drejer skarpt i høj fart. Her anvendt som stilelement”)",
+    "marks": 1
    }
   ],
   "notes": "The paper prints the tariff as '(5 × 1 point)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
@@ -2200,7 +2379,8 @@
    "label": "QUESTION 1",
    "title": "Reading text — answer in Danish",
    "pages": [
-    4
+    2,
+    3
    ],
    "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -2235,7 +2415,8 @@
    "label": "QUESTION 2",
    "title": "Reading text — answer in Danish",
    "pages": [
-    4
+    2,
+    3
    ],
    "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -2270,7 +2451,8 @@
    "label": "QUESTION 3",
    "title": "Reading text — answer in Danish",
    "pages": [
-    4
+    2,
+    3
    ],
    "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -2305,7 +2487,8 @@
    "label": "QUESTION 4",
    "title": "Reading text — answer in Danish",
    "pages": [
-    4
+    2,
+    3
    ],
    "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -2340,7 +2523,8 @@
    "label": "QUESTION 5",
    "title": "Reading text — answer in Danish",
    "pages": [
-    4
+    2,
+    3
    ],
    "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -2375,7 +2559,8 @@
    "label": "QUESTION 6",
    "title": "Reading text — answer in Danish",
    "pages": [
-    4
+    2,
+    3
    ],
    "attribution": "SEC Danish 2016 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
@@ -2521,6 +2706,7 @@
    "label": "QUESTION 2",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -2556,6 +2742,7 @@
    "label": "QUESTION 3",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -2591,6 +2778,7 @@
    "label": "QUESTION 4",
    "title": "Reading text — answer in Danish",
    "pages": [
+    2,
     3
    ],
    "attribution": "SEC Danish 2017 Higher Level examination paper — © State Examinations Commission.",
