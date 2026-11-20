@@ -41,7 +41,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Kiinnittyminen/leimautuminen lapseen",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kiinnittyminen/leimautuminen lapseen = prosessi/tapahtumaketju, jonka aikana hormonit vaikuttavat vanhemmissa siten, että nämä haluavat hoitaa vauvaansa, vaikka se olisi kuinka raskasta 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kiinnittyminen/leimautuminen lapseen = prosessi/tapahtumaketju, jonka aikana hormonit vaikuttavat vanhemmissa siten, että nämä haluavat hoitaa vauvaansa, vaikka se olisi kuinka raskasta 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
   } as SecCard,
   {
@@ -54,7 +54,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Hoivavietti",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hoivavietti = inhimillinen ominaisuus, halu hoitaa, joka saa meidät pitämään huolta jälkeläisistämme, mutta myös lemmikeistämme. Hoivavietin herättää esim. vauvan/koiran ulkonäkö. 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Hoivavietti = inhimillinen ominaisuus, halu hoitaa, joka saa meidät pitämään huolta jälkeläisistämme, mutta myös lemmikeistämme. Hoivavietin herättää esim. vauvan/koiran ulkonäkö. 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
   } as SecCard,
   {
@@ -67,7 +67,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Rakastumisen alkuhuuma",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rakastumisen alkuhuuma = voimakas tunne rakastumisen alkuvaiheessa, jolloin ”sammakkokin näyttää prinssiltä” ja kaikki ”vaaleanpunaiselta”. 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Rakastumisen alkuhuuma = voimakas tunne rakastumisen alkuvaiheessa, jolloin ”sammakkokin näyttää prinssiltä” ja kaikki ”vaaleanpunaiselta”. 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
   } as SecCard,
   {
@@ -80,7 +80,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Lähteä lätkimään",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Lähteä lätkimään = lähteä, poistua, karata paikalta 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Lähteä lätkimään = lähteä, poistua, karata paikalta 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
   } as SecCard,
   {
@@ -93,7 +93,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Jalostettu seurakoira",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Jalostettu seurakoira = pienikokoinen ja söpö (vauvannaamainen) koirarotu 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Jalostettu seurakoira = pienikokoinen ja söpö (vauvannaamainen) koirarotu 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
   } as SecCard,
   {
@@ -106,7 +106,7 @@ export const CARDS: SecCard[] = [
     questionText: "Millaisessa mielentilassa tuoreet vanhemmat ovat heti lapsen saatuaan ja miksi? Perustele vastauksesi tekstin avulla.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Perustele vastauksesi tekstin avulla. Ihan kuin vanhemmat olisivat eläneet jonkinlaisessa miellyttävässä sumussa pari ensimmäistä vuotta lapsen syntymän jälkeen. ”Elämässä on kaksi tällaista idealisoinnin vaihetta, jotka hiukan muistuttavat toisiaan. Toinen on rakastumisen alkuhuuma, toinen on vauvaan kiinnittyminen.”Hullaantumisen perusta on evoluutio- psykologinen. On tärkeää saada geneettisiä jälkeläisiä, mutta tarvitaan myös kemiallista oksitosiinin aiheuttamaa hullaantumista, jotta kiinnittyminen onnistuu. 5p", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Perustele vastauksesi tekstin avulla. Ihan kuin vanhemmat olisivat eläneet jonkinlaisessa miellyttävässä sumussa pari ensimmäistä vuotta lapsen syntymän jälkeen. ”Elämässä on kaksi tällaista idealisoinnin vaihetta, jotka hiukan muistuttavat toisiaan. Toinen on rakastumisen alkuhuuma, toinen on vauvaan kiinnittyminen.”Hullaantumisen perusta on evoluutio- psykologinen. On tärkeää saada geneettisiä jälkeläisiä, mutta tarvitaan myös kemiallista oksitosiinin aiheuttamaa hullaantumista, jotta kiinnittyminen onnistuu. 5p", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
   } as SecCard,
   {
@@ -119,7 +119,7 @@ export const CARDS: SecCard[] = [
     questionText: "Olemme harvoin tyytyväisiä omaan ulkonäköömme, mutta pidämme kauniina vauvaamme, joka ulkoisesti muistuttaa meitä. Miksi? Perustele vastauksesi tekstin avulla.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mukana on itsekeskeisyyttä: ”On tehty kokeita, joissa vieraan ihmisen kuvaan on lisätty koehenkilön omia kasvonpiirteitä, jolloin kuvaa on pidetty puoleensavetävämpänä ja luotettavampana”( Rantala). Hoivavietti tai ainakin pieni sokeus omalle jälkikasvulle on tyypillistä lapsen syntymän jälkeen.Vietti kulkee käsi kädessä oksitosiini-hormonin kanssa ja saa maailman näyttämään hyvältä. 5p", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mukana on itsekeskeisyyttä: ”On tehty kokeita, joissa vieraan ihmisen kuvaan on lisätty koehenkilön omia kasvonpiirteitä, jolloin kuvaa on pidetty puoleensavetävämpänä ja luotettavampana”( Rantala). Hoivavietti tai ainakin pieni sokeus omalle jälkikasvulle on tyypillistä lapsen syntymän jälkeen.Vietti kulkee käsi kädessä oksitosiini-hormonin kanssa ja saa maailman näyttämään hyvältä. 5p", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
   } as SecCard,
   {
@@ -132,7 +132,7 @@ export const CARDS: SecCard[] = [
     questionText: "Millaiset asiat vaikuttavat tekstin mukaan isovanhempien ja lasten sekä lastenlasten suhteisiin?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Millaiset asiat vaikuttavat tekstin mukaan isovanhempien ja lasten sekä lastenlasten suhteisiin? Isovanhempien hullaantuminen lapsenlapsiinsa kun on kehitysopin näkökulmasta sitä, että omia geenejä tuupitaan eteenpäin. Välillä jopa epäreilusti. ”Isovanhemmat auttavat yleensä sitä enemmän, mitä enemmän lapsenlapset näyttävät omilta lapsilta. He myös hoitavat usein mieluummin tyttären kuin pojan lapsia. Tyttären lapsihan on väkisin omaa sukua, mutta pojan lapsista ei voi olla ihan varma”, Rantala sanoo. 5p", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Millaiset asiat vaikuttavat tekstin mukaan isovanhempien ja lasten sekä lastenlasten suhteisiin? Isovanhempien hullaantuminen lapsenlapsiinsa kun on kehitysopin näkökulmasta sitä, että omia geenejä tuupitaan eteenpäin. Välillä jopa epäreilusti. ”Isovanhemmat auttavat yleensä sitä enemmän, mitä enemmän lapsenlapset näyttävät omilta lapsilta. He myös hoitavat usein mieluummin tyttären kuin pojan lapsia. Tyttären lapsihan on väkisin omaa sukua, mutta pojan lapsista ei voi olla ihan varma”, Rantala sanoo. 5p", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
   } as SecCard,
   {
@@ -145,7 +145,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mitä tekstin mukaan on hullaantumisen ja sokean rakastumisen taustalla?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mitä tekstin mukaan on hullaantumisen ja sokean rakastumisen taustalla? Hullaantumisen perusta on evoluutio-psykologinen. Se on vaistomaista. Vauva esimerkiksi manipuloi vanhempansa hoitamaan itseään (ulkonäkö). Oksitosiinilla on osansa rakastumisessa. Myös hajut merkitsevät. 5p", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mitä tekstin mukaan on hullaantumisen ja sokean rakastumisen taustalla? Hullaantumisen perusta on evoluutio-psykologinen. Se on vaistomaista. Vauva esimerkiksi manipuloi vanhempansa hoitamaan itseään (ulkonäkö). Oksitosiinilla on osansa rakastumisessa. Myös hajut merkitsevät. 5p", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
   } as SecCard,
   {
@@ -158,7 +158,7 @@ export const CARDS: SecCard[] = [
     questionText: "Millaista manipulointia liittyy lasten, vanhempien ja lähisuvun suhteisiin tekstin mukaan?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "On todettu, että äidin puolen suku tapaa vakuutella, että lapsi on isän näköinen. Sekin on manipulointia. Äitikin sanoo yleensä lasta isän näköiseksi ja yrittää etsiä yhteisiä piirteitä. Mutta ehkä se johtuu siitä, että lapsi on isän näköinen? Ehkä. Lapsi muistuttaa ensimmäisen ikävuoden enemmän isäänsä kuin äitiään. Kenties kaiken takana on se, että herätetään isän hoivavietti. On myös havaittu, että lapsen ulkonäön samankaltaisuus isän ulkomuodon kanssa lisää isän panostusta perheeseen. 5p", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "On todettu, että äidin puolen suku tapaa vakuutella, että lapsi on isän näköinen. Sekin on manipulointia. Äitikin sanoo yleensä lasta isän näköiseksi ja yrittää etsiä yhteisiä piirteitä. Mutta ehkä se johtuu siitä, että lapsi on isän näköinen? Ehkä. Lapsi muistuttaa ensimmäisen ikävuoden enemmän isäänsä kuin äitiään. Kenties kaiken takana on se, että herätetään isän hoivavietti. On myös havaittu, että lapsen ulkonäön samankaltaisuus isän ulkomuodon kanssa lisää isän panostusta perheeseen. 5p", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
   } as SecCard,
   {
@@ -171,7 +171,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Vieraantuminen",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vieraantuminen=etääntyminen, vieraaksi tuleminen esim. ihmissuhteessa tai suhteessa johonkin ennen tärkeään asiaan 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Vieraantuminen=etääntyminen, vieraaksi tuleminen esim. ihmissuhteessa tai suhteessa johonkin ennen tärkeään asiaan 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -181,7 +181,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -194,7 +194,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Surutyö",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Surutyö=surevan ihmisen läpikäymä prosessi 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Surutyö=surevan ihmisen läpikäymä prosessi 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -204,7 +204,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -217,7 +217,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Kompastuskivi",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kompastuskivi=abstrakti ilmaisu esteelle 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kompastuskivi=abstrakti ilmaisu esteelle 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -227,7 +227,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -240,7 +240,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Miesmaku",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Miesmaku=tietynlainen mies ulkoisesti ja luonteeltaan, joka miellyttää 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Miesmaku=tietynlainen mies ulkoisesti ja luonteeltaan, joka miellyttää 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -250,7 +250,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -263,7 +263,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Aukipuhuminen",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Aukipuhuminen=asian puhuminen, läpikäyminen ja miettiminen avoimesti 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Aukipuhuminen=asian puhuminen, läpikäyminen ja miettiminen avoimesti 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -273,7 +273,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -286,7 +286,7 @@ export const CARDS: SecCard[] = [
     questionText: "Miksi Mäkinen kiinnostui ystävyydestä tutkimuskohteenaan?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Miksi Mäkinen kiinnostui ystävyydestä tutkimuskohteenaan? 5p Onko sinulle käynyt niin, että läheisenä pitämästäsi ihmisestä onkin tullut etäinen, tapaamiset ovat vähentyneet ja lopulta ne ovat loppuneet kokonaan ? Tai onko pitkä ystävyyssuhteesi päättynyt aluksi vähäiseltä tuntuvaan riitaan ? Kun sitten mietit syytä välirikkoon, sitä voi olla vaikea löytää. Yhteiskuntatieteiden tohtori ja kirjailija Arja Mäkinen menetti läheisen ystävänsä joitain vuosia sitten juuri näin. Riita sovittiin, mutta ystävyys ei enää jatkunut. Riita ehti tehdä näkyväksi sen, että olimme vieraantuneet toisistamme, vaikka kumpikaan meistä ei olisi tahtonut sitä myöntää. Riidan jälkeen ymmärsin, että minun oli jatkettava ilman häntä. Suru pitkään kestäneen ihmissuhteen menetyksestä oli suuri. Mäkinen halusi tietää, miten muut ovat vastaavassa tilanteessa reagoineet. Katkesivatko ystävyyssuhteet yleensäkin näin ? Mäkisen yllätykseksi aihetta ei ollut Suomessa tutkittu. Hän alkoi etsiä ihmisiä haastateltavaksi ja oppi, että vain harva ystävyys kestää suuret elämäntilanteen muutokset ja paikkakunnalta muuton. Siinä oli ehkä keskeisin syy myös hänen ystävyytensä päättymiseen.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Miksi Mäkinen kiinnostui ystävyydestä tutkimuskohteenaan? 5p Onko sinulle käynyt niin, että läheisenä pitämästäsi ihmisestä onkin tullut etäinen, tapaamiset ovat vähentyneet ja lopulta ne ovat loppuneet kokonaan ? Tai onko pitkä ystävyyssuhteesi päättynyt aluksi vähäiseltä tuntuvaan riitaan ? Kun sitten mietit syytä välirikkoon, sitä voi olla vaikea löytää. Yhteiskuntatieteiden tohtori ja kirjailija Arja Mäkinen menetti läheisen ystävänsä joitain vuosia sitten juuri näin. Riita sovittiin, mutta ystävyys ei enää jatkunut. Riita ehti tehdä näkyväksi sen, että olimme vieraantuneet toisistamme, vaikka kumpikaan meistä ei olisi tahtonut sitä myöntää. Riidan jälkeen ymmärsin, että minun oli jatkettava ilman häntä. Suru pitkään kestäneen ihmissuhteen menetyksestä oli suuri. Mäkinen halusi tietää, miten muut ovat vastaavassa tilanteessa reagoineet. Katkesivatko ystävyyssuhteet yleensäkin näin ? Mäkisen yllätykseksi aihetta ei ollut Suomessa tutkittu. Hän alkoi etsiä ihmisiä haastateltavaksi ja oppi, että vain harva ystävyys kestää suuret elämäntilanteen muutokset ja paikkakunnalta muuton. Siinä oli ehkä keskeisin syy myös hänen ystävyytensä päättymiseen.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -296,7 +296,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -309,7 +309,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mitkä syyt tekstin mukaan aiheuttavat ystävyyden päättymisen?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mitkä syyt tekstin mukaan aiheuttavat ystävyyden päättymisen? 5p Vieraantuminen on ystävyyden kompastuskivi. Yhdistävien asioiden hiipuessa pois yhdessäolo ei enää tunnu yhtä tärkeältä kuin ennen. Näin voi käydä esimerkiksi silloin, kun toinen saa lapsia, aloittaa parisuhteen tai eroaa. Koetukselle ystävyys joutuu siinä tilanteessa, että elämäntilanteet poikkeavat suuresti toisistaan. Lapseton ystävä tuntee helposti olonsa ulkopuoliseksi toisen elämän pyöriessä vauvan ympärillä, ja vastarakastuneen voi olla vaikea pitää suhdetta ystävään läheisenä. Jos ystävät ovat tottuneet tapaamaan pariskuntina ja toinen eroaa, kuviot menevät uusiksi. Niin sanotut ystävyysbudjetit eivät enää kohtaa. Budjetin epätasapainosta on kyse silloinkin, kun toiselle lankeaa kerrasta toiseen antajan rooli. Moni Mäkisen haastattelemista naisista mainitsi ystävyyden päättymiseen johtaneista syistä arvottomuuden tunteen.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mitkä syyt tekstin mukaan aiheuttavat ystävyyden päättymisen? 5p Vieraantuminen on ystävyyden kompastuskivi. Yhdistävien asioiden hiipuessa pois yhdessäolo ei enää tunnu yhtä tärkeältä kuin ennen. Näin voi käydä esimerkiksi silloin, kun toinen saa lapsia, aloittaa parisuhteen tai eroaa. Koetukselle ystävyys joutuu siinä tilanteessa, että elämäntilanteet poikkeavat suuresti toisistaan. Lapseton ystävä tuntee helposti olonsa ulkopuoliseksi toisen elämän pyöriessä vauvan ympärillä, ja vastarakastuneen voi olla vaikea pitää suhdetta ystävään läheisenä. Jos ystävät ovat tottuneet tapaamaan pariskuntina ja toinen eroaa, kuviot menevät uusiksi. Niin sanotut ystävyysbudjetit eivät enää kohtaa. Budjetin epätasapainosta on kyse silloinkin, kun toiselle lankeaa kerrasta toiseen antajan rooli. Moni Mäkisen haastattelemista naisista mainitsi ystävyyden päättymiseen johtaneista syistä arvottomuuden tunteen.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -319,7 +319,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -332,7 +332,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mikä aiheuttaa kirjoittajan mukaan ystävyydessä luottamuksen menettämisen?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mikä aiheuttaa kirjoittajan mukaan ystävyydessä luottamuksen menettämisen? 5p Ero voi kuitenkin tapahtua myös äkillisesti. Näin käy erityisesti silloin, kun luottamus syystä tai toisesta katoaa. Klassisin esimerkki lienee konkreettinen pettäminen – ystävä vikittelee tai menee jopa sänkyyn toisen puolison kanssa. Mutta paljon pienemmistäkin asioista luottamus voi mennä. Ystävyyshän perustuu pitkälti juuri tunteeseen siitä, että toiseen voi luottaa. Jos näin ei olekaan, voi ystävyyden jatkaminen ymmärrettävästi tuntua turhalta tai jopa mahdottomalta.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mikä aiheuttaa kirjoittajan mukaan ystävyydessä luottamuksen menettämisen? 5p Ero voi kuitenkin tapahtua myös äkillisesti. Näin käy erityisesti silloin, kun luottamus syystä tai toisesta katoaa. Klassisin esimerkki lienee konkreettinen pettäminen – ystävä vikittelee tai menee jopa sänkyyn toisen puolison kanssa. Mutta paljon pienemmistäkin asioista luottamus voi mennä. Ystävyyshän perustuu pitkälti juuri tunteeseen siitä, että toiseen voi luottaa. Jos näin ei olekaan, voi ystävyyden jatkaminen ymmärrettävästi tuntua turhalta tai jopa mahdottomalta.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -342,7 +342,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -355,7 +355,7 @@ export const CARDS: SecCard[] = [
     questionText: "”- Ihan pikkujutuista en itsekään haluaisi lähteä toista kritisoimaan, mutta jos ystävä on tärkeä, yrittäisin puhua minua vaivaavasta asiassa. ” Miksi Mäkinen antaa tällaisen neuvon? Oletko samaa mieltä? Perustele vastauksesi tekstin avulla.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "”- Ihan pikkujutuista en itsekään haluaisi lähteä toista kritisoimaan, mutta jos ystävä on tärkeä, yrittäisin puhua minua vaivaavasta asiassa. ” Miksi Mäkinen antaa tällaisen neuvon? Oletko samaa mieltä? Perustele vastauksesi tekstin avulla. 5p Mäkinen muistuttaa, etteivät aukipuhumista kaipaavat asiat ole kaikille samanlaisia. Joku kokee myöhästelemisen sovituista tapaamisista erityisen loukkaavana välinpitämättömyytenä, jotakuta toista sama määrä myöhästelyä suututtaa vain hetkellisesti. Ovatpa ystävyyttä hiertävät asiat mitä tahansa, keskustelemisen ajankohta on syytä harkita tarkkaan. Kannattaa puhua vain kahden kesken ja varautua kuuntelemaan, mitä ystävällä on sanottavanaan. Syytös ilman selittämismahdollisuutta on lähes varma keino ystävyyden tuhoamiseen. Kun harmin aiheita patoo sisällään kuukausia, ehkä vuosiakin, jonain päivänä on siten edessä iso pamaus. Siitä ystävyys harvoin jatkuu. Näin ei tietenkään tarvitsisi olla. Mäkinen uskoo, että myös ystävyyteen mahtuu tunnepuhetta.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "”- Ihan pikkujutuista en itsekään haluaisi lähteä toista kritisoimaan, mutta jos ystävä on tärkeä, yrittäisin puhua minua vaivaavasta asiassa. ” Miksi Mäkinen antaa tällaisen neuvon? Oletko samaa mieltä? Perustele vastauksesi tekstin avulla. 5p Mäkinen muistuttaa, etteivät aukipuhumista kaipaavat asiat ole kaikille samanlaisia. Joku kokee myöhästelemisen sovituista tapaamisista erityisen loukkaavana välinpitämättömyytenä, jotakuta toista sama määrä myöhästelyä suututtaa vain hetkellisesti. Ovatpa ystävyyttä hiertävät asiat mitä tahansa, keskustelemisen ajankohta on syytä harkita tarkkaan. Kannattaa puhua vain kahden kesken ja varautua kuuntelemaan, mitä ystävällä on sanottavanaan. Syytös ilman selittämismahdollisuutta on lähes varma keino ystävyyden tuhoamiseen. Kun harmin aiheita patoo sisällään kuukausia, ehkä vuosiakin, jonain päivänä on siten edessä iso pamaus. Siitä ystävyys harvoin jatkuu. Näin ei tietenkään tarvitsisi olla. Mäkinen uskoo, että myös ystävyyteen mahtuu tunnepuhetta.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -365,7 +365,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -378,7 +378,7 @@ export const CARDS: SecCard[] = [
     questionText: "”Eräänä päivänä se silti saattaa olla edessä – on aika antaa ystävän mennä.” Mitä Mäkinen tarkoittaa tällä ilmaisullaan? Kuinka vaikeaa neuvon noudattaminen voi hänen mukaansa olla?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "5p Ehkä ystävyys on käytännössä ollut ohi jo pitkään ja puuttuu vain päätös siirtää ystävä mielessä menneisyyden kansioon. Jos suhde ystävän kanssa on ollut yhtä antamista, ero voi olla helpotus. Usein edessä on kuitenkin surutyö. –Pitkä ystävyyssuhde ei poikkea muista ihmissuhteista siinä, että se jättää loppuessaan suuren aukon ihmisen elämään. Tutkimuksistakin käy ilmi, että se voi olla yhtä rankkaa kuin seurustelusuhteen katkeaminen. Toisinaan luopumista helpottaisi, jos ystävykset voisivat keskustella asiasta vielä kerran. Erota tavallaan ystävinä. Vaikka tämä ei olisikaan mahdollista, jokainen voi tahollaan käydä asiaa läpi. On hyvä tehdä itselleen selväksi, mitä ystävyydelle tapahtui, ja jatkaa sen jälkeen elämäänsä takertumatta jo päättyneeseen ihmissuhteeseen. HUOMAA: Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet: 1. Tekstin sisällön ymmärtäminen: kokelas ymmärtää kysymykset tekstistä ja osaa vastata", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "5p Ehkä ystävyys on käytännössä ollut ohi jo pitkään ja puuttuu vain päätös siirtää ystävä mielessä menneisyyden kansioon. Jos suhde ystävän kanssa on ollut yhtä antamista, ero voi olla helpotus. Usein edessä on kuitenkin surutyö. –Pitkä ystävyyssuhde ei poikkea muista ihmissuhteista siinä, että se jättää loppuessaan suuren aukon ihmisen elämään. Tutkimuksistakin käy ilmi, että se voi olla yhtä rankkaa kuin seurustelusuhteen katkeaminen. Toisinaan luopumista helpottaisi, jos ystävykset voisivat keskustella asiasta vielä kerran. Erota tavallaan ystävinä. Vaikka tämä ei olisikaan mahdollista, jokainen voi tahollaan käydä asiaa läpi. On hyvä tehdä itselleen selväksi, mitä ystävyydelle tapahtui, ja jatkaa sen jälkeen elämäänsä takertumatta jo päättyneeseen ihmissuhteeseen. HUOMAA: Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet: 1. Tekstin sisällön ymmärtäminen: kokelas ymmärtää kysymykset tekstistä ja osaa vastata", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -388,7 +388,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2012 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -401,7 +401,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Alkuperäiskans",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Alkuperäiskansa = ihmiset, jotka ovat asuttaneet seutua aina 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Alkuperäiskansa = ihmiset, jotka ovat asuttaneet seutua aina 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -411,7 +411,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -424,7 +424,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Kaukonäköisyys",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kaukonäköisyys = katsoa ymmärtävästi tulevaisuuteen 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kaukonäköisyys = katsoa ymmärtävästi tulevaisuuteen 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -434,7 +434,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -447,7 +447,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: ”Ei ole häävi”",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "”Ei ole häävi”= ei ole hyvä 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "”Ei ole häävi”= ei ole hyvä 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -457,7 +457,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -470,7 +470,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Uhkakuva",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Uhkakuva = pelottava (liioiteltukin) tulevaisuuden näkymä 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Uhkakuva = pelottava (liioiteltukin) tulevaisuuden näkymä 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -480,7 +480,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -493,7 +493,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Pakkoruotsi",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pakkoruotsi =pakollinen oppiaine 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Pakkoruotsi =pakollinen oppiaine 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -503,7 +503,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -516,7 +516,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mikä on muuttunut tekstin mukaan suomalaisten englannin kielen oppimisessa viimeisten vuosikymmenten aikana ja miksi? Mitä mieltä itse olet asiasta?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "5p. Tänään totuttelemme tuon ihmekielen muassaan tuomaan maailmankuvaan. Enää ei puhuta pelkästään sanojen oppimisesta ja lainautumisesta. Nyt lainataan kielellisiä ja kulttuurisia käytänteitä sekä arvoja ja asenteita.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "5p. Tänään totuttelemme tuon ihmekielen muassaan tuomaan maailmankuvaan. Enää ei puhuta pelkästään sanojen oppimisesta ja lainautumisesta. Nyt lainataan kielellisiä ja kulttuurisia käytänteitä sekä arvoja ja asenteita.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -526,7 +526,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -539,7 +539,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mitä seurauksia englannin suosiosta tekstin mukaan suomalaisessa yhteiskunnassa on? Mitä mieltä itse olet asiasta?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mitä seurauksia englannin suosiosta tekstin mukaan suomalaisessa yhteiskunnassa on? Mitä mieltä itse olet asiasta? 5p. uusia kielenkäytön lajeja talouselämän sanasto muuttuu tutkimusmaailmassakin kohistaan. Edes suomen kielen tutkijat eivät pysty etenemään urallaan ilman kansainvälisiä - englanninkielisiä - julkaisuja. Kaikilla tieteenaloilla ei enää anneta suomenkielistä opetusta eikä kehitetä suomenkielistä sanastoa, mikä tietysti heijastuu vähitellen ihmisten arkeen.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mitä seurauksia englannin suosiosta tekstin mukaan suomalaisessa yhteiskunnassa on? Mitä mieltä itse olet asiasta? 5p. uusia kielenkäytön lajeja talouselämän sanasto muuttuu tutkimusmaailmassakin kohistaan. Edes suomen kielen tutkijat eivät pysty etenemään urallaan ilman kansainvälisiä - englanninkielisiä - julkaisuja. Kaikilla tieteenaloilla ei enää anneta suomenkielistä opetusta eikä kehitetä suomenkielistä sanastoa, mikä tietysti heijastuu vähitellen ihmisten arkeen.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -549,7 +549,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -562,7 +562,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mikä muu kuin englanti on vaikuttanut kielemme asemaan ja kehitykseen artikkelin mukaan? Arvioi vaikutusten etuja ja haittoja.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mikä muu kuin englanti on vaikuttanut kielemme asemaan ja kehitykseen artikkelin mukaan? Arvioi vaikutusten etuja ja haittoja. 5p. kielimaisema on muuttumassa muinkin tavoin. Murteiden ja puhekielen julkisen käytön lisääntyminen, sosiaalisen median suosio, maapalloistuminen, kulttuurin ja yhteiskunnan monenlainen pirstaloituminen - nämä kaikki vaikuttavat kielten tulevaisuuteen.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mikä muu kuin englanti on vaikuttanut kielemme asemaan ja kehitykseen artikkelin mukaan? Arvioi vaikutusten etuja ja haittoja. 5p. kielimaisema on muuttumassa muinkin tavoin. Murteiden ja puhekielen julkisen käytön lisääntyminen, sosiaalisen median suosio, maapalloistuminen, kulttuurin ja yhteiskunnan monenlainen pirstaloituminen - nämä kaikki vaikuttavat kielten tulevaisuuteen.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -572,7 +572,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -585,7 +585,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mihin ja miksi tekstin mukaan tarvitaan poliittisia päätöksiä kielten asemasta? . Mitä itse ajattelet tästä?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mihin ja miksi tekstin mukaan tarvitaan poliittisia päätöksiä kielten asemasta? Mitä itse ajattelet tästä? 5p. vahvistamaan kansalliskielten sekä saamelaisen alkuperäiskansan ja muiden perustuslaissa mainittujen ryhmien - romanien ja viittomakielisten asemaa kaikkien yksilöiden mahdollisuudet käyttää äidinkieltään tasaveroisiksi yksilön perusoikeudet kielten rauhanomainen rinnakkaiselo", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mihin ja miksi tekstin mukaan tarvitaan poliittisia päätöksiä kielten asemasta? Mitä itse ajattelet tästä? 5p. vahvistamaan kansalliskielten sekä saamelaisen alkuperäiskansan ja muiden perustuslaissa mainittujen ryhmien - romanien ja viittomakielisten asemaa kaikkien yksilöiden mahdollisuudet käyttää äidinkieltään tasaveroisiksi yksilön perusoikeudet kielten rauhanomainen rinnakkaiselo", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -595,7 +595,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -608,7 +608,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mitä teksti sanoo kielen ja kansallisen identiteetin suhteista? Mitä kokemuksia sinulla on tästä asiasta?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "kansalaisuuden monikerroksisuus: vaikka Suomen kansalaisuus on vahva yhteisöllisen identiteetin perusta, myös EU:n kansalaisuus ja maailmankansalaisuus ovat nykyisin osa sitä. Kielet elävät silloin rinta rinnan. Toisaalta: jääkö kotoinen kansalliskielemme ja useimpien äidinkieli suomi lopulta maanvyöryn alle kielimaiseman myllerryksessä? 5p. Huomaa. Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet: 1. Tekstin sisällön ymmärtäminen: kokelas ymmärtää kysymykset tekstistä ja", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "kansalaisuuden monikerroksisuus: vaikka Suomen kansalaisuus on vahva yhteisöllisen identiteetin perusta, myös EU:n kansalaisuus ja maailmankansalaisuus ovat nykyisin osa sitä. Kielet elävät silloin rinta rinnan. Toisaalta: jääkö kotoinen kansalliskielemme ja useimpien äidinkieli suomi lopulta maanvyöryn alle kielimaiseman myllerryksessä? 5p. Huomaa. Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet: 1. Tekstin sisällön ymmärtäminen: kokelas ymmärtää kysymykset tekstistä ja", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -618,7 +618,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2013 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -631,7 +631,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: jämäkkä tykästynyt",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "jämäkkä = ankara, tarkka, sanojensa takana 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "jämäkkä = ankara, tarkka, sanojensa takana 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -641,7 +641,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -654,7 +654,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: nihkeä mollata",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "nihkeä = vaikea, hankala, (hikinen) 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "nihkeä = vaikea, hankala, (hikinen) 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -664,7 +664,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -677,7 +677,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: kiehnätä",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "kiehnätä = hierova liike (kissa kiehnää) tässä abstr. luikertelu tilanteesta 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "kiehnätä = hierova liike (kissa kiehnää) tässä abstr. luikertelu tilanteesta 1p.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -687,7 +687,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -700,7 +700,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mitä ovat tyhjät sanat ja peitepuhe? Miksi ja mihin tarkoitukseen niitä käytetään tekstin mukaan?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mitä ovat tyhjät sanat ja peitepuhe? Miksi ja mihin tarkoitukseen niitä käytetään tekstin mukaan? 5p. Usein aikojat eivät sitoudu mihinkään muuhun kuin aikomiseen. Kun kyse on muka- tekemisen naamioimisesta tekemiseksi, tarkoitukseen sopivat hyvin seuraavat verbit: yritän, koetan, aion, pyrin ja lupaan. Ihmisellä on tarve säilyttää olemassa oleva huono, samalla kun hänellä on tarve olla mallikelpoinen. Siksi tarvitaan peitepuhetta, johon ei liity aikomustakaan muuttaa mitään.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mitä ovat tyhjät sanat ja peitepuhe? Miksi ja mihin tarkoitukseen niitä käytetään tekstin mukaan? 5p. Usein aikojat eivät sitoudu mihinkään muuhun kuin aikomiseen. Kun kyse on muka- tekemisen naamioimisesta tekemiseksi, tarkoitukseen sopivat hyvin seuraavat verbit: yritän, koetan, aion, pyrin ja lupaan. Ihmisellä on tarve säilyttää olemassa oleva huono, samalla kun hänellä on tarve olla mallikelpoinen. Siksi tarvitaan peitepuhetta, johon ei liity aikomustakaan muuttaa mitään.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -710,7 +710,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -723,7 +723,7 @@ export const CARDS: SecCard[] = [
     questionText: "Miten kielipelejä pelataan perheissä? Ovatko nämä pelit hyödyllisiä perhesuhteiden kannalta? Perustele vastauksesi tekstin avulla.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Miten kielipelejä pelataan perheissä? Ovatko nämä pelit hyödyllisiä perhesuhteiden kannalta? Perustele vastauksesi tekstin avulla. 5p. Perhe voi omaksua kielipelin tavaksi olla yhdessä. Kaikki ovat äänessä, jotta ei tarvitse oikeasti keskustella. Tällöin ei muodostu hyvää vuorovaikutussuhdetta vanhempien välillä ja vanhempien ja lasten välillä. Roolit jaetaan valmiiksi, se hankaloittaa kasvatustyötä ja vuorovaikutusta. Eivät siis ole hyödyllisiä, koska eivät rakenna yhteisyyttä ja luottamusta.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Miten kielipelejä pelataan perheissä? Ovatko nämä pelit hyödyllisiä perhesuhteiden kannalta? Perustele vastauksesi tekstin avulla. 5p. Perhe voi omaksua kielipelin tavaksi olla yhdessä. Kaikki ovat äänessä, jotta ei tarvitse oikeasti keskustella. Tällöin ei muodostu hyvää vuorovaikutussuhdetta vanhempien välillä ja vanhempien ja lasten välillä. Roolit jaetaan valmiiksi, se hankaloittaa kasvatustyötä ja vuorovaikutusta. Eivät siis ole hyödyllisiä, koska eivät rakenna yhteisyyttä ja luottamusta.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -733,7 +733,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -746,7 +746,7 @@ export const CARDS: SecCard[] = [
     questionText: "Millaisia kielipelejä me olemme taipuvaisia elämän vaikeissa tilanteissa pelaamaan? Perustele vastauksesi tekstin avulla.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Millaisia kielipelejä me olemme taipuvaisia elämän vaikeissa tilanteissa pelaamaan? Perustele vastauksesi tekstin avulla. 5p. Sanoilla voi pelata itselleen valtaa, aikaa tai etäisyyttä. Niillä voi ylläpitää mielikuvia, vältellä vastuuta ja aitoa mielikuvitusta. Käytämme tyhjiä sanoja ja lauseita (ehkä, mutta kun, pitäisi), jaamme ja valitsemme keskustelurooleja, vähättelemme, emme halua tai osaa nähdä toisen syvimpiä tunteita.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Millaisia kielipelejä me olemme taipuvaisia elämän vaikeissa tilanteissa pelaamaan? Perustele vastauksesi tekstin avulla. 5p. Sanoilla voi pelata itselleen valtaa, aikaa tai etäisyyttä. Niillä voi ylläpitää mielikuvia, vältellä vastuuta ja aitoa mielikuvitusta. Käytämme tyhjiä sanoja ja lauseita (ehkä, mutta kun, pitäisi), jaamme ja valitsemme keskustelurooleja, vähättelemme, emme halua tai osaa nähdä toisen syvimpiä tunteita.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -756,7 +756,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2014 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -769,7 +769,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: totuttelupäivä kompata",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "totuttelupäivä=päivä, jonka aikana siirtyy kielestä/maasta/mielentilasta toiseen ja ”totuttelee” /harjoittelee tai opettelee uudelleen toimimaan uudessa kieliympäristössä 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "totuttelupäivä=päivä, jonka aikana siirtyy kielestä/maasta/mielentilasta toiseen ja ”totuttelee” /harjoittelee tai opettelee uudelleen toimimaan uudessa kieliympäristössä 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -779,7 +779,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -792,7 +792,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: vikkelä some",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "vikkelä =nopea 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "vikkelä =nopea 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -802,7 +802,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -815,7 +815,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Joka kuuseen kurkottaa, se katajaan kapsahtaa",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Joka kuuseen kurkottaa, se katajaan kapsahtaa=jos tavoittelee ahneesti jtkn liian suurta/vaikeaa/haasteellista/mahdotonta, voi pettyä pahasti 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Joka kuuseen kurkottaa, se katajaan kapsahtaa=jos tavoittelee ahneesti jtkn liian suurta/vaikeaa/haasteellista/mahdotonta, voi pettyä pahasti 1p", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -825,7 +825,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -838,7 +838,7 @@ export const CARDS: SecCard[] = [
     questionText: "Anna joitakin esimerkkejä, mitä tekstin mukaan suomen kielelle tapahtuu englanninkielisessä ympäristössä?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Anna joitakin esimerkkejä, mitä tekstin mukaan suomen kielelle tapahtuu englanninkielisessä ympäristössä. 5p Käyttämättömänä kieli jäykistyy nopeasti, vanhentuu, ruostuu ja alkaa vähitellen jopa unohtua ”Aloin puhua omaa äidinkieltäni (suomea) aksentilla” Hänen unensa muuttuivat englanninkielisiksi Suomen kieleen alkaa hiipiä vieraita sanoja, rakenteita ja ilmaisuja Kömpelöitä ja joskus hassujakin virkkeitä suomeksi", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Anna joitakin esimerkkejä, mitä tekstin mukaan suomen kielelle tapahtuu englanninkielisessä ympäristössä. 5p Käyttämättömänä kieli jäykistyy nopeasti, vanhentuu, ruostuu ja alkaa vähitellen jopa unohtua ”Aloin puhua omaa äidinkieltäni (suomea) aksentilla” Hänen unensa muuttuivat englanninkielisiksi Suomen kieleen alkaa hiipiä vieraita sanoja, rakenteita ja ilmaisuja Kömpelöitä ja joskus hassujakin virkkeitä suomeksi", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -848,7 +848,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -861,7 +861,7 @@ export const CARDS: SecCard[] = [
     questionText: "Miksi äidinkielen säilyttäminen vieraskielisessä ympäristössä ei välttämättä olekaan niin helppoa kuin ehkä kuvittelemme? Miten tekstin mukaan voi yrittää työskennellä, jotta äidinkieli säilyisi paremmin? Perustele vastauksesi tekstin avulla.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "5p Vieraassa kieliympäristössä äidinkielen säilyminen on pitkälti kiinni omasta asenteesta ja aktiivisuudesta Lapsista kasvoi täysin kaksikielisiä aikuisia, mutta lapsenlapset alkoivat vierastaa outoa kieltä, jota kuulivat vain silloin tällöin", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "5p Vieraassa kieliympäristössä äidinkielen säilyminen on pitkälti kiinni omasta asenteesta ja aktiivisuudesta Lapsista kasvoi täysin kaksikielisiä aikuisia, mutta lapsenlapset alkoivat vierastaa outoa kieltä, jota kuulivat vain silloin tällöin", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -871,7 +871,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -884,7 +884,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mitkä tekstissä mainitut kokemukset erityisesti tukevat tekstin naisten väitettä äidinkielen säilyttämisen vaikeudesta?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mitkä tekstissä mainitut kokemukset erityisesti tukevat tekstin naisten väitettä äidinkielen säilyttämisen vaikeudesta? 5p Vaikeinta kielitaidon ylläpitämisessä on jo opitun päivittäminen Kieli muuttuu niin vikkelään Kieli syntyy, elää ja uudistuu kulttuurikontekstissa", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mitkä tekstissä mainitut kokemukset erityisesti tukevat tekstin naisten väitettä äidinkielen säilyttämisen vaikeudesta? 5p Vaikeinta kielitaidon ylläpitämisessä on jo opitun päivittäminen Kieli muuttuu niin vikkelään Kieli syntyy, elää ja uudistuu kulttuurikontekstissa", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -894,7 +894,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -907,7 +907,7 @@ export const CARDS: SecCard[] = [
     questionText: "” -- Huomasin kauhukseni, että ässäni alkoi suhista kummallisesti—”, Kiukkonen kuvailee tekstissä. Miksi tämä mahtaa kauhistuttaa Kiukkosta? Perustele vastauksesi tekstin avulla.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "” -- Huomasin kauhukseni, että ässäni alkoi suhista kummallisesti—”, Kiukkonen kuvailee tekstissä. Miksi tämä mahtaa kauhistuttaa Kiukkosta? Perustele vastauksesi tekstin avulla. 5p “Että kadotan koko kielen” Aksentin pelko/leimautumisen pelko? Minulle (anglismeilleni) naureskeltiin Suomessa Kieli edustaa sosiaaliluokkia mahdollisesti enemmän Englannissa", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "” -- Huomasin kauhukseni, että ässäni alkoi suhista kummallisesti—”, Kiukkonen kuvailee tekstissä. Miksi tämä mahtaa kauhistuttaa Kiukkosta? Perustele vastauksesi tekstin avulla. 5p “Että kadotan koko kielen” Aksentin pelko/leimautumisen pelko? Minulle (anglismeilleni) naureskeltiin Suomessa Kieli edustaa sosiaaliluokkia mahdollisesti enemmän Englannissa", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -917,7 +917,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -930,7 +930,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kommentoi omasta näkökulmastasi tekstissä esitellyn neljän naisen hauskoja mutta samalla myös pelottavia kokemuksia ulkomailla asumisesta.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "5p Esim. voi esitellä sanat (Kiukkonen ja suhiseva s) lauseet (Elliott ja kömpelöt/huvittavat ilmaisut) tilanteet (Sirén ja unohtunut sana puhelimessa) kielihistoria (Elliott ja kolmas sukupolvi, joka ei osaakaan suomea) tietoisuus omista kielenkäyttötavoista (Sirén tietoinen anglismeistaan) mahdolliset kielen rekisterit (Virtanen ja lakiopinnot englanniksi) äidinkielen status (Sukupolvien väliset asenne-erot suhteessa äidinkieleen) kieli ja tunteet (Kiukkonen, Virtanen ja Sirén pari- ja sukulaisuussuhteissaan)", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "5p Esim. voi esitellä sanat (Kiukkonen ja suhiseva s) lauseet (Elliott ja kömpelöt/huvittavat ilmaisut) tilanteet (Sirén ja unohtunut sana puhelimessa) kielihistoria (Elliott ja kolmas sukupolvi, joka ei osaakaan suomea) tietoisuus omista kielenkäyttötavoista (Sirén tietoinen anglismeistaan) mahdolliset kielen rekisterit (Virtanen ja lakiopinnot englanniksi) äidinkielen status (Sukupolvien väliset asenne-erot suhteessa äidinkieleen) kieli ja tunteet (Kiukkonen, Virtanen ja Sirén pari- ja sukulaisuussuhteissaan)", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -940,7 +940,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2015 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -953,7 +953,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Perhekeskeinen",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Perhekeskeinen = asettaa perhe tärkeään asemaan, esim. työn edelle", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Perhekeskeinen = asettaa perhe tärkeään asemaan, esim. työn edelle", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -963,7 +963,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -976,7 +976,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Perintö",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Perintö = perillisille siirtyvä vainajan jäämistö, voi viitata myös henkisiin arvoihin", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Perintö = perillisille siirtyvä vainajan jäämistö, voi viitata myös henkisiin arvoihin", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -986,7 +986,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -999,7 +999,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Sukupuolimoraali",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Sukupuolimoraali = sukupuolista tai seksuaalista käyttäytymistä ohjaava moraali ja arvostukset", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Sukupuolimoraali = sukupuolista tai seksuaalista käyttäytymistä ohjaava moraali ja arvostukset", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1009,7 +1009,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1022,7 +1022,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Jalansija",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Saada jalansijaa = vallata alaa, yleistyä, tulla käytäntöön", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Saada jalansijaa = vallata alaa, yleistyä, tulla käytäntöön", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1032,7 +1032,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1045,7 +1045,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Aviovuode",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Aviovuode = sanalla viitataan seksuaaliseen kanssakäymiseen avioliitossa", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Aviovuode = sanalla viitataan seksuaaliseen kanssakäymiseen avioliitossa", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1055,7 +1055,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1068,7 +1068,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selvitä lyhyesti, miksi avioliittolainsäädäntö on ajankohtainen asia.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "”Suomen eduskunta hyväksyi joulukuussa 2014 lakimuutoksen, joka mahdollistaa samaa sukupuolta olevien parien avioliiton. Avioliittolainsäädännöstä keskustellaan kuitenkin edelleen kiivaasti.” (1.) ”Jos haluamme puhua tasa-arvoisesta yhteiskunnasta, ainakin siviiliviranomaisen vahvistama avioliitto on tuotava kaikkien ulottuville. Tämä onkin nähtävästi toteutumassa muutaman vuoden kuluttua.” (12.) ”Kun avioliittolakiamme ollaan uudistamassa, voisimme yhtä hyvin luopua kokonaan vihkimisestä avioliiton juridisena merkkinä ja säätää siviiliviranomaisen vahvistaman liiton ainoaksi avioliittomuodoksi kaikille pareille.” (13.)", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "”Suomen eduskunta hyväksyi joulukuussa 2014 lakimuutoksen, joka mahdollistaa samaa sukupuolta olevien parien avioliiton. Avioliittolainsäädännöstä keskustellaan kuitenkin edelleen kiivaasti.” (1.) ”Jos haluamme puhua tasa-arvoisesta yhteiskunnasta, ainakin siviiliviranomaisen vahvistama avioliitto on tuotava kaikkien ulottuville. Tämä onkin nähtävästi toteutumassa muutaman vuoden kuluttua.” (12.) ”Kun avioliittolakiamme ollaan uudistamassa, voisimme yhtä hyvin luopua kokonaan vihkimisestä avioliiton juridisena merkkinä ja säätää siviiliviranomaisen vahvistaman liiton ainoaksi avioliittomuodoksi kaikille pareille.” (13.)", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1078,7 +1078,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1091,7 +1091,7 @@ export const CARDS: SecCard[] = [
     questionText: "Millaisia eroja teksti kertoo olleen länsi- ja itäsuomalaisissa avioliittokäytänteissä keskiajalta 1800-luvulle? Kuinka nämä erot vaikuttivat avio- tai avoliiton solmimiseen?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "”Myös sukupuolielämän aloittaminen ennen vihkimistä oli ikivanha perinne, joka säilyi etenkin niin sanotun tilattoman väestön keskuudessa katkeamattomana tapana keskiajalta aina 1800-luvulle asti. Historiantutkija Tiina Miettistä lainaten ennen avioliiton alkua siitetyt lapset olivat osa avioliittoon tähtäävää seurustelua, ”ajan normaali käytäntö”. Näin oli etenkin läntisessä Suomessa, jossa naiset piikoivat vuosikaudet ennen vihille menoa. Kun avioliitto solmittiin vasta lähempänä kolmeakymmentä ikävuotta, ei impeys ollut kansannaisille varteenotettava vaihtoehto. Itäisemmässä Suomessa mentiin naimisiin nuorempina ja sukupuolielämän alku sijoittui luontevammin aviovuoteeseen.” (4.)", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "”Myös sukupuolielämän aloittaminen ennen vihkimistä oli ikivanha perinne, joka säilyi etenkin niin sanotun tilattoman väestön keskuudessa katkeamattomana tapana keskiajalta aina 1800-luvulle asti. Historiantutkija Tiina Miettistä lainaten ennen avioliiton alkua siitetyt lapset olivat osa avioliittoon tähtäävää seurustelua, ”ajan normaali käytäntö”. Näin oli etenkin läntisessä Suomessa, jossa naiset piikoivat vuosikaudet ennen vihille menoa. Kun avioliitto solmittiin vasta lähempänä kolmeakymmentä ikävuotta, ei impeys ollut kansannaisille varteenotettava vaihtoehto. Itäisemmässä Suomessa mentiin naimisiin nuorempina ja sukupuolielämän alku sijoittui luontevammin aviovuoteeseen.” (4.)", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1101,7 +1101,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1114,7 +1114,7 @@ export const CARDS: SecCard[] = [
     questionText: "”Lapsensa itse hoitavasta kotiäidistä tuli ihanne kaikissa yhteiskuntaluokissa.” Miten tällaiseen ajatukseen päädyttiin? Mitä ajatuksia tämä herättää nykyihmisessä?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "”Lapsensa itse hoitavasta kotiäidistä tuli ihanne kaikissa yhteiskuntaluokissa.” (9.) ”Aiemmin naisilla ei ollut taloudellisia tai muitakaan mahdollisuuksia keskittyä pelkkään lastenhoitoon, sillä vaimon ja emännän velvollisuudet nähtiin 1800-luvun alkupuolelle saakka äitiyttä tärkeämpinä velvollisuuksina.” (9.) ”Äitiydestä tuli Suomessa erityisen vahva osa naiseutta vasta maan itsenäistyttyä. Lasten synnyttämisestä tuli naisen kutsumus, varsinkin kun modernin perheen lapsiluku oli alkanut laskea.” (10.) Jälkimmäistä kysymystä pohtiessaan kokelas voi nostaa esiin nykynaisen moninaisemmat mahdollisuudet ja sen, ettei kotiäitiys ole ainoa hyväksytty vaihtoehto. Myös yhteiskunta tukee toisenlaisiakin valintoja. Odotukset eivät ole enää niin sukupuolittuneita kuin aikana, josta teksti puhuu.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "”Lapsensa itse hoitavasta kotiäidistä tuli ihanne kaikissa yhteiskuntaluokissa.” (9.) ”Aiemmin naisilla ei ollut taloudellisia tai muitakaan mahdollisuuksia keskittyä pelkkään lastenhoitoon, sillä vaimon ja emännän velvollisuudet nähtiin 1800-luvun alkupuolelle saakka äitiyttä tärkeämpinä velvollisuuksina.” (9.) ”Äitiydestä tuli Suomessa erityisen vahva osa naiseutta vasta maan itsenäistyttyä. Lasten synnyttämisestä tuli naisen kutsumus, varsinkin kun modernin perheen lapsiluku oli alkanut laskea.” (10.) Jälkimmäistä kysymystä pohtiessaan kokelas voi nostaa esiin nykynaisen moninaisemmat mahdollisuudet ja sen, ettei kotiäitiys ole ainoa hyväksytty vaihtoehto. Myös yhteiskunta tukee toisenlaisiakin valintoja. Odotukset eivät ole enää niin sukupuolittuneita kuin aikana, josta teksti puhuu.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1124,7 +1124,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1137,7 +1137,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kuinka romanttisen rakkauden ihanne vaikutti yhteiskuntaan?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "”Rakkaus ja kiihkeät tunteet eivät sinänsä olleet ihmissuhteissa mikään uutuus, mutta uutta oli, että puoliso valittiin tunteiden ohjauksessa.” (5.) ”Tunteisiin perustuvilla avioliittomarkkinoilla nuorten oli tuotava entistä paremmin esiin parhaita puoliaan ja kyettävä sitä kautta itse herättämään kiinnostus ja rakkaus vastakkaisessa sukupuolessa. Aiemmin sulhasen oli vakuutettava morsiamen isä, mutta nyt hänen oli saatava ennen kaikkea tavoittelemansa nainen puolelleen. Naisille romanttisen rakkauden vaatimus merkitsi lisääntyviä ulkonäköön, käytökseen ja vaatetukseen liittyviä paineita.” (6.)", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "”Rakkaus ja kiihkeät tunteet eivät sinänsä olleet ihmissuhteissa mikään uutuus, mutta uutta oli, että puoliso valittiin tunteiden ohjauksessa.” (5.) ”Tunteisiin perustuvilla avioliittomarkkinoilla nuorten oli tuotava entistä paremmin esiin parhaita puoliaan ja kyettävä sitä kautta itse herättämään kiinnostus ja rakkaus vastakkaisessa sukupuolessa. Aiemmin sulhasen oli vakuutettava morsiamen isä, mutta nyt hänen oli saatava ennen kaikkea tavoittelemansa nainen puolelleen. Naisille romanttisen rakkauden vaatimus merkitsi lisääntyviä ulkonäköön, käytökseen ja vaatetukseen liittyviä paineita.” (6.)", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1147,7 +1147,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1160,7 +1160,7 @@ export const CARDS: SecCard[] = [
     questionText: "Ihmiset, jotka vastustavat avioliittolain lakimuutosta, ”joka mahdollistaa samaa sukupuolta olevien parien avioliiton” (1.), ajattelevat muutosten heikentävän avioliittoa. Oletko samaa mieltä? Perustele kantasi.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kokelas voi osoittaa samanmielisyyttä tai erimielisyttä. Molemmissa tapauksissa on tärkeää, että hän perustelee huolellisesti ja laajasti kantansa. ”Mielestäni uusi avioliittolaki heikentää avioliittoa instituutiona, koska…” TAI ”Mielestäni avioliitto instituutiona ei heikkene / vahvistuu uuden avioliittolain myötä, koska…” Avioliiton aseman heikkenemisen puolesta voi puhua esimerkiksi uskonnollinen vakaumus tai perinne. Jos taas kokelas on eri mieltä, hän voi perustella sen yhdenmukaisuuden ja tasa-arvon periaatteilla. Esimerkein havainnollistaminen molemmissa tapauksissa on eduksi.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kokelas voi osoittaa samanmielisyyttä tai erimielisyttä. Molemmissa tapauksissa on tärkeää, että hän perustelee huolellisesti ja laajasti kantansa. ”Mielestäni uusi avioliittolaki heikentää avioliittoa instituutiona, koska…” TAI ”Mielestäni avioliitto instituutiona ei heikkene / vahvistuu uuden avioliittolain myötä, koska…” Avioliiton aseman heikkenemisen puolesta voi puhua esimerkiksi uskonnollinen vakaumus tai perinne. Jos taas kokelas on eri mieltä, hän voi perustella sen yhdenmukaisuuden ja tasa-arvon periaatteilla. Esimerkein havainnollistaminen molemmissa tapauksissa on eduksi.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1170,7 +1170,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2016 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1183,7 +1183,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: pakolainen",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "pakolainen = henkilö, joka joutuu vainoa peläten pakenemaan vieraaseen maahan", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "pakolainen = henkilö, joka joutuu vainoa peläten pakenemaan vieraaseen maahan", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1193,7 +1193,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1206,7 +1206,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: vähemmistöryhmä",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "vähemmistöryhmä = ryhmä joka ei kuulu hallitsevaan enemmistöön tai joka on valtaväestöön nähden heikommassa asemassa koulutuksen, työllisyyden, omaisuuden tai poliittisen vallan suhteen", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "vähemmistöryhmä = ryhmä joka ei kuulu hallitsevaan enemmistöön tai joka on valtaväestöön nähden heikommassa asemassa koulutuksen, työllisyyden, omaisuuden tai poliittisen vallan suhteen", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1216,7 +1216,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1229,7 +1229,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: verkkopohjainen",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "verkkopohjainen = internetissä oleva sähköinen materiaali", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "verkkopohjainen = internetissä oleva sähköinen materiaali", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1239,7 +1239,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1252,7 +1252,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: ääriajattelu",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ääriajattelu = äärimmäisen jyrkkä ajattelu tai ideologia, ekstremismi", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "ääriajattelu = äärimmäisen jyrkkä ajattelu tai ideologia, ekstremismi", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1262,7 +1262,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1275,7 +1275,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: perustarve",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "perustarve = tarve, joka tulee tyydyttää riittävässä määrin. Perustarpeisiin kuuluvat fysiologiset tarpeet (ruoka, juoma jne.) sekä turvallisuuden, yhteenkuuluvuuden, arvonannon ja itsensä toteuttamisen tarpeet", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "perustarve = tarve, joka tulee tyydyttää riittävässä määrin. Perustarpeisiin kuuluvat fysiologiset tarpeet (ruoka, juoma jne.) sekä turvallisuuden, yhteenkuuluvuuden, arvonannon ja itsensä toteuttamisen tarpeet", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1285,7 +1285,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1298,7 +1298,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kerro omin sanoin, millainen Suomi on hallituksen tavoitteen mukaisesti vuonna 2025.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hallituksen tavoitteena on, että Suomi on vuonna 2025 avoin ja kansainvälinen, kieliltään ja kulttuuriltaan rikas, hyvä maa, jossa positiivinen asenne toisiimme sekä ympäröivään maailmaan tekee Suomesta ainutlaatuisen.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Hallituksen tavoitteena on, että Suomi on vuonna 2025 avoin ja kansainvälinen, kieliltään ja kulttuuriltaan rikas, hyvä maa, jossa positiivinen asenne toisiimme sekä ympäröivään maailmaan tekee Suomesta ainutlaatuisen.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1308,7 +1308,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1321,7 +1321,7 @@ export const CARDS: SecCard[] = [
     questionText: "”Koulun tulee kiinnittää huomiota siihen, että jokainen nuori tuntee tulevansa nähdyksi ja kuulluksi.” (6. kappale) Millaisia keinoja sinulle tulee mieleen tämän varmistamiseksi? Mainitse ainakin kaksi keinoa ja perustele, miksi ne olisivat sinusta toimivia.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Koulun tulee kiinnittää huomiota siihen, että jokainen nuori tuntee tulevansa nähdyksi ja kuulluksi. Kaikkien ihmisten keskeinen perustarve on tuntea itsensä merkitykselliseksi.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Koulun tulee kiinnittää huomiota siihen, että jokainen nuori tuntee tulevansa nähdyksi ja kuulluksi. Kaikkien ihmisten keskeinen perustarve on tuntea itsensä merkitykselliseksi.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1331,7 +1331,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 1: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1344,7 +1344,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: työvoima",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "työvoima = ammatinharjoittajat ja työtä tekevät ihmiset, työpaikkojen henkilöstö", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "työvoima = ammatinharjoittajat ja työtä tekevät ihmiset, työpaikkojen henkilöstö", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1354,7 +1354,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1367,7 +1367,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: sukupolvi",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sukupolvi = yksi taso vanhempien ja heidän jälkeläistensä muodostamassa jatkumossa", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "sukupolvi = yksi taso vanhempien ja heidän jälkeläistensä muodostamassa jatkumossa", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1377,7 +1377,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1390,7 +1390,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: tekosyy",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tekosyy = syy, joka ei ole todellinen vaan keksitty, usein hätävalheeksi", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "tekosyy = syy, joka ei ole todellinen vaan keksitty, usein hätävalheeksi", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1400,7 +1400,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1413,7 +1413,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: nykypoliitikot oikealla ja vasemmalla",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "nykypoliitikot oikealla ja vasemmalla = tällä hetkellä toimivat aktiiviset poliitikot puoluekannastaan riippumatta, sekä vasemmistolaista että oikeistolaista kantaa edustavat poliitikot", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "nykypoliitikot oikealla ja vasemmalla = tällä hetkellä toimivat aktiiviset poliitikot puoluekannastaan riippumatta, sekä vasemmistolaista että oikeistolaista kantaa edustavat poliitikot", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1423,7 +1423,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1436,7 +1436,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: Kattia kanssa.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kattia kanssa. = väheksyvä ilmaus, jolla osoitetaan edellä sanotun olevan valheellista tai muuten arvotonta", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Kattia kanssa. = väheksyvä ilmaus, jolla osoitetaan edellä sanotun olevan valheellista tai muuten arvotonta", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1446,7 +1446,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1459,7 +1459,7 @@ export const CARDS: SecCard[] = [
     questionText: "Miksi kirjoittaja sanoo, että hänellä ”ei ole työtä”?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Käyn päivittäin yliopistossa, opetan ja tutkin. Olen kirjoittanut kirjoja. Olen kolumnisti, esiinnyn televisiossa ja luennoin. Minulla on melko suuri palkka, hävettävän suuri. Mutta väittäisin, että minulla ei ole työtä. 3. Miksi kirjoittaja sanoo, että hänellä ”ei ole työtä”? Tekstissä:", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Käyn päivittäin yliopistossa, opetan ja tutkin. Olen kirjoittanut kirjoja. Olen kolumnisti, esiinnyn televisiossa ja luennoin. Minulla on melko suuri palkka, hävettävän suuri. Mutta väittäisin, että minulla ei ole työtä. 3. Miksi kirjoittaja sanoo, että hänellä ”ei ole työtä”? Tekstissä:", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1469,7 +1469,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1482,7 +1482,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kirjoittaja sanoo, että modernisaatio on ollut suomalaisten ”suuri tarina”. Selitä, mitä hän tarkoittaa tällä ja miksi hän pitää modernisaatiota Suomen ”suurena tarinana”.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Työn kuuluisi kai olla jotakin, mihin myyn aikaani ja voimiani. Mutta käytän aikani ja voimani paljolti itseni kehittämiseen ja uteliaisuuteni tyydyttämiseen, siis elämään. Jos yliopistot katoaisivat kokonaan ja tutkimusalallani ei olisi työpaikkoja, jatkaisin kuitenkin tutkimusta mahdollisuuksien mukaan. Samoin jatkaisin tämän kolumnin kaltaisten tekstien tuottamista.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Työn kuuluisi kai olla jotakin, mihin myyn aikaani ja voimiani. Mutta käytän aikani ja voimani paljolti itseni kehittämiseen ja uteliaisuuteni tyydyttämiseen, siis elämään. Jos yliopistot katoaisivat kokonaan ja tutkimusalallani ei olisi työpaikkoja, jatkaisin kuitenkin tutkimusta mahdollisuuksien mukaan. Samoin jatkaisin tämän kolumnin kaltaisten tekstien tuottamista.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1492,7 +1492,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1505,7 +1505,7 @@ export const CARDS: SecCard[] = [
     questionText: "Työväenliike laulaa kärsimyksestä, sorrosta ja orjuudesta. Selitä, miksi nämä ovat laulujen perinteisiä aiheita. Voisivatko mielestäsi nämä aiheet esiintyä nykypäivänä sävelletyissä lauluissa? Perustele näkemyksesi.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Esimerkiksi veturinkuljettaja tuskin jatkaisi työtään minuuttiakaan potkujen jälkeen. Veturinkuljettajan ja professorin työ on itse asiassa niin erilaista, että on typerää kutsua molempia samalla sanalla.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Esimerkiksi veturinkuljettaja tuskin jatkaisi työtään minuuttiakaan potkujen jälkeen. Veturinkuljettajan ja professorin työ on itse asiassa niin erilaista, että on typerää kutsua molempia samalla sanalla.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1515,7 +1515,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Finnish 2019 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
     },
   } as SecCard,
   {
@@ -1528,7 +1528,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: lyödä hanskat tiskiin",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "lyödä hanskat tiskiin = lopettaa jonkin asian tekeminen", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "lyödä hanskat tiskiin = lopettaa jonkin asian tekeminen", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1538,7 +1538,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1551,7 +1551,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: koulutaival",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "koulutaival = koulunkäynnin aika, koko koulu‐ura", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "koulutaival = koulunkäynnin aika, koko koulu‐ura", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1561,7 +1561,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1574,7 +1574,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: toimeen tarttuva",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "toimeen tarttuva = aikaan saava", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "toimeen tarttuva = aikaan saava", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1584,7 +1584,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1597,7 +1597,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: hyväosaisen perheen lapsi",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "hyväosaisen perheen lapsi = yhteiskunnalliselta asemaltaan eli sosioekonomisesti hyvin toimeentuleva perhe", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "hyväosaisen perheen lapsi = yhteiskunnalliselta asemaltaan eli sosioekonomisesti hyvin toimeentuleva perhe", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1607,7 +1607,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1620,7 +1620,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: jämäkkyys",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "jämäkkyys = tiukka, mielipiteessään pysyvä", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "jämäkkyys = tiukka, mielipiteessään pysyvä", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1630,7 +1630,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1643,7 +1643,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä, mitä sinnikkyydellä tarkoitetaan.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tekstissä: Sinnikkyys on kykyä kohdata vaikeita tai epämiellyttäviltä tuntuvia tunteita, sietää muutoksia ja selviytyä hankalistakin tilanteista. Sinnikkyys vaatii pitkäjänteisyyttä ja taitoa katsoa yksittäisiä hetkiä pidemmälle.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Tekstissä: Sinnikkyys on kykyä kohdata vaikeita tai epämiellyttäviltä tuntuvia tunteita, sietää muutoksia ja selviytyä hankalistakin tilanteista. Sinnikkyys vaatii pitkäjänteisyyttä ja taitoa katsoa yksittäisiä hetkiä pidemmälle.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1653,7 +1653,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1666,7 +1666,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: lukutoukka",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "lukutoukka = lukemista aktiivisesti harrastava henkilö", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "lukutoukka = lukemista aktiivisesti harrastava henkilö", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1676,7 +1676,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1689,7 +1689,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: tipaton tammikuu",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "tipaton tammikuu = alkoholin käyttökielto/lakko tammikuun ajaksi", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "tipaton tammikuu = alkoholin käyttökielto/lakko tammikuun ajaksi", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1699,7 +1699,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1712,7 +1712,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: luhistua",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "luhistua = sortua, romahtaa, mennä kasaan", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "luhistua = sortua, romahtaa, mennä kasaan", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1722,7 +1722,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1735,7 +1735,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: ruutuaika",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ruutuaika = aika, joka vietetään ruudun ääressä", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "ruutuaika = aika, joka vietetään ruudun ääressä", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1745,7 +1745,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1758,7 +1758,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: kansallinen suositus",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "kansallinen suositus = valtion tai valtiollisen laitoksen antama ohjesääntö 2 Miksi ADT ei ole virallinen diagnoosi? Se on itseaiheutettu eikä perinnöllinen tautiluokitettu neuropsykologinen sairaus. 3 Kuvaile omin sanoin, millainen elämäntapa tuottaa tarkkaavuusvajetta. Se liittyy älylaitteiden aktiiviseen käyttöön sekä työvälineenä että vapaa‐ajanviettotapana, jota elämäntapaa toteuttava ei itse edes tiedosta tai huomaa olevansa älylaitteeseen kiinnittynyt. 4 Miksi aivotutkija on huolissaan älylaitteiden käytöstä? Toistaiseksi emme voi tietää niiden haittapuolista, koska tutkimusta ei vielä ole. Aivotutkija tuo esiin älylaitteiden vaikuttavan aivoihin, jotka ovat muokkaantuva elin. Lisäksi älylaitteet ovat koukuttavia eli ne tuottavat riippuvuutta. 5 Kuvaile omin sanoin älylaitteiden toimintaperiaatteita. Älylaitteet on rakennettu niin, että niihin jää helposti koukkuun, koska ne tuottavat elämyksellisiä tunnereaktioita. Ihminen saattaa olla täysin riippuvainen näistä tunnetiloista ja ei osaa olla ilman niitä. 6 Mitä Huotilainen tarkoittaa sanoessaan, että älylaitteesta luopuminen toisen seurassa on arvostuksen osoitus? Hän viittaa siihen, että usein ihmisillä on tapana vilkuilla kännykkää jopa kasvotusten tapahtuvassa vuorovaikutuksessa. Seurustelukumppanille voi tulla käsitys, että älylaite on kiinnostavampi ja tärkeämpi kuin läsnä oleva ihminen.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "kansallinen suositus = valtion tai valtiollisen laitoksen antama ohjesääntö 2 Miksi ADT ei ole virallinen diagnoosi? Se on itseaiheutettu eikä perinnöllinen tautiluokitettu neuropsykologinen sairaus. 3 Kuvaile omin sanoin, millainen elämäntapa tuottaa tarkkaavuusvajetta. Se liittyy älylaitteiden aktiiviseen käyttöön sekä työvälineenä että vapaa‐ajanviettotapana, jota elämäntapaa toteuttava ei itse edes tiedosta tai huomaa olevansa älylaitteeseen kiinnittynyt. 4 Miksi aivotutkija on huolissaan älylaitteiden käytöstä? Toistaiseksi emme voi tietää niiden haittapuolista, koska tutkimusta ei vielä ole. Aivotutkija tuo esiin älylaitteiden vaikuttavan aivoihin, jotka ovat muokkaantuva elin. Lisäksi älylaitteet ovat koukuttavia eli ne tuottavat riippuvuutta. 5 Kuvaile omin sanoin älylaitteiden toimintaperiaatteita. Älylaitteet on rakennettu niin, että niihin jää helposti koukkuun, koska ne tuottavat elämyksellisiä tunnereaktioita. Ihminen saattaa olla täysin riippuvainen näistä tunnetiloista ja ei osaa olla ilman niitä. 6 Mitä Huotilainen tarkoittaa sanoessaan, että älylaitteesta luopuminen toisen seurassa on arvostuksen osoitus? Hän viittaa siihen, että usein ihmisillä on tapana vilkuilla kännykkää jopa kasvotusten tapahtuvassa vuorovaikutuksessa. Seurustelukumppanille voi tulla käsitys, että älylaite on kiinnostavampi ja tärkeämpi kuin läsnä oleva ihminen.", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1768,7 +1768,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1781,7 +1781,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: kehon puolustusjärjestelmä",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "kehon puolustusjärjestelmä = ihmisruumiin oma taudintorjuntamekanismi", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "kehon puolustusjärjestelmä = ihmisruumiin oma taudintorjuntamekanismi", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1791,7 +1791,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1804,7 +1804,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: kohtalainen näyttö",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "kohtalainen näyttö = riittävän hyvä todennettavuus eli evidenssi", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "kohtalainen näyttö = riittävän hyvä todennettavuus eli evidenssi", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1814,7 +1814,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1827,7 +1827,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: seuloa",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "seuloa = valikoida, erottaa", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "seuloa = valikoida, erottaa", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1837,7 +1837,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1850,7 +1850,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: päteä",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "päteä = soveltua, kelvata", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "päteä = soveltua, kelvata", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1860,7 +1860,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1873,7 +1873,7 @@ export const CARDS: SecCard[] = [
     questionText: "Selitä omin sanoin seuraavat ilmaisut: alavireinen ihminen",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "alavireinen ihminen = masentunut, väsynyt, apaattinen", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "alavireinen ihminen = masentunut, väsynyt, apaattinen", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1883,7 +1883,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1896,7 +1896,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kerro, mitä luonnon terveysvaikutuksesta on havaittu?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tekstin mukaan luonto vaikuttaa mielenterveyteen, fyysiseen terveyteen ja kehon puolustusjärjestelmien toimintaan. Luonto vaikuttaa mielialaan parantavasti ja vähentää stressiä. Lisäksi luonto näyttää suojaavan aikuisia lihavuudelta ja kakkostyypin diabetekselta.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Tekstin mukaan luonto vaikuttaa mielenterveyteen, fyysiseen terveyteen ja kehon puolustusjärjestelmien toimintaan. Luonto vaikuttaa mielialaan parantavasti ja vähentää stressiä. Lisäksi luonto näyttää suojaavan aikuisia lihavuudelta ja kakkostyypin diabetekselta.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1906,7 +1906,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1919,7 +1919,7 @@ export const CARDS: SecCard[] = [
     questionText: "Kerro omin sanoin, mitä pohjoismaalaiset tutkimustulokset tuovat esiin luonnon terveyshyödyistä.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ihmisillä, jotka asuvat lähellä luontoa, on todennäköisesti vähemmän mielenterveyden ongelmia. Lisäksi luonto on suojaava tekijä lapselle, jolla on riski sairastua skitsofreniaan tai alttius ADHD-oireyhtymään. Aikuisilla lähiluonto suojaa ylipainolta, lihavuudelta sekä kakkostyypin diabetekselta.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ihmisillä, jotka asuvat lähellä luontoa, on todennäköisesti vähemmän mielenterveyden ongelmia. Lisäksi luonto on suojaava tekijä lapselle, jolla on riski sairastua skitsofreniaan tai alttius ADHD-oireyhtymään. Aikuisilla lähiluonto suojaa ylipainolta, lihavuudelta sekä kakkostyypin diabetekselta.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1929,7 +1929,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1942,7 +1942,7 @@ export const CARDS: SecCard[] = [
     questionText: "Miksi luonnon terveyshyötyjä ei kaikilta osin voida näyttää toteen tai niistä ei voida olla varmoja?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Lapsia ei ole juuri tutkittu, joten heihin tutkimustietoa ei voi ulottaa. Aikuisten sydän- ja verisuonitaudeista näyttöä on vähän, joten niihin luonnolla ei ole tutkimusnäyttöä. Tuloksia ei voi yleistää kaikkialle: suomalaiset liikkuvat mielellään metsässä, mutta tämä ei päde välttämättä Suomen ulkopuolella. Lisäksi allergiat ja astmat ovat tutkimuksissa ristiriitaisten tulosten kohteena. Luonto saattaa allergisoida tai pahentaa astmaa, mutta myös päinvastoin.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Lapsia ei ole juuri tutkittu, joten heihin tutkimustietoa ei voi ulottaa. Aikuisten sydän- ja verisuonitaudeista näyttöä on vähän, joten niihin luonnolla ei ole tutkimusnäyttöä. Tuloksia ei voi yleistää kaikkialle: suomalaiset liikkuvat mielellään metsässä, mutta tämä ei päde välttämättä Suomen ulkopuolella. Lisäksi allergiat ja astmat ovat tutkimuksissa ristiriitaisten tulosten kohteena. Luonto saattaa allergisoida tai pahentaa astmaa, mutta myös päinvastoin.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1952,7 +1952,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1965,7 +1965,7 @@ export const CARDS: SecCard[] = [
     questionText: "Millä tavalla raha ja luonnon terveyshyödyt liitetään artikkelissa yhteen?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mielenterveysongelmat ovat erittäin yleisiä. Niiden takia ollaan poissa töistä tai jäädään aiemmin eläkkeelle. Kansantaloudellisesti puhutaan suurista kuluista. Luonnon terveysvaikutuksia on mallinnettu ja laskettu kustannuksia: Mikäli lähiluonto vähenee 10 prosenttia, mielenterveyden ongelmien hoito ja työpoissaolot tulevat maksamaan 45 miljoonaa euroa.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mielenterveysongelmat ovat erittäin yleisiä. Niiden takia ollaan poissa töistä tai jäädään aiemmin eläkkeelle. Kansantaloudellisesti puhutaan suurista kuluista. Luonnon terveysvaikutuksia on mallinnettu ja laskettu kustannuksia: Mikäli lähiluonto vähenee 10 prosenttia, mielenterveyden ongelmien hoito ja työpoissaolot tulevat maksamaan 45 miljoonaa euroa.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1975,7 +1975,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
   {
@@ -1988,7 +1988,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mitä mieltä olet ehdotuksesta, jonka mukaan olemassa olevia puita koulujen pihoista tai lähistöiltä ei saisi kaataa? Perustele vastauksesi.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mitä mieltä olet ehdotuksesta, jonka mukaan olevassa olevia puita koulujen pihoista tai lähistöiltä ei saisi kaataa? Perustele vastauksesi. Oma vastaus voi kerrata artikkelin tietoja luonnon terveysvaikutuksista. Lisäksi kokelas voi pohtia, onko lahoavien tai huonokuntoisten puiden kaataminen aina väärin. Laho puu saattaa kaatuessaan olla hengenvaarallinen. Lisäksi voi pohtia, viettävätkö lapset enää aikaa lähiluonnossa vai onko niin, että tietokonepelit ja digitaalinen kulttuuri on osa lasten ja nuorten elämää, vaikka puita olisi lähistöllä.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mitä mieltä olet ehdotuksesta, jonka mukaan olevassa olevia puita koulujen pihoista tai lähistöiltä ei saisi kaataa? Perustele vastauksesi. Oma vastaus voi kerrata artikkelin tietoja luonnon terveysvaikutuksista. Lisäksi kokelas voi pohtia, onko lahoavien tai huonokuntoisten puiden kaataminen aina väärin. Laho puu saattaa kaatuessaan olla hengenvaarallinen. Lisäksi voi pohtia, viettävätkö lapset enää aikaa lähiluonnossa vai onko niin, että tietokonepelit ja digitaalinen kulttuuri on osa lasten ja nuorten elämää, vaikka puita olisi lähistöllä.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1998,7 +1998,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Finnish 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on its own first page: \"Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
 ];
