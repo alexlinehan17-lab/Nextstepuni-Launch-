@@ -197,6 +197,15 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
       const e = italian[c.id];
       return e?.n ? { fileid: e.fileid, cands: [e.n], cls: 'join' } : { fail: e ? 'no-atlas-question' : 'no-join-entry', cls: 'join' };
     }
+    case 'bulgarian': case 'croatian': case 'czech': case 'danish': case 'dutch': case 'estonian': case 'finnish':
+    case 'hungarian': case 'latvian': case 'maltese': case 'modern-greek': case 'romanian': case 'slovakian':
+    case 'slovenian': case 'swedish': case 'ukrainian': {
+      // The Atlas lists only Part I (Q1-Q6) for these sixteen languages: a Section II or III card restarts at Q1 and
+      // must not land on Part I's question. Unlinked until the small-languages lane adds the Part II/III rows and its
+      // section-qualified rule (coordinator, 20 Nov); listed with that reason in test/fixtures/atlasModelRuledMisses.json.
+      if (/\bSection (?:II|III)\b/.test(ref)) return { fail: 'no-atlas-question', cls: 'inferred' };
+      const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
+    }
     case 'polish': case 'portuguese': {
       // A listening card cites "Section L<A-E> Q<n>" and carries the listening booklet's file id (…LPA00…, build-deck's
       // resolver, queue 3); the Atlas lists that booklet one row per part, A to E. The card's own Q<n> numbers the
