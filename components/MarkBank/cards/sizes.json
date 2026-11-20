@@ -1,7 +1,7 @@
 {
  "biology": {
-  "higher": 2887,
-  "ordinary": 3017
+  "higher": 3392,
+  "ordinary": 3205
  },
  "chemistry": {
   "higher": 1862,
@@ -16,8 +16,8 @@
   "ordinary": 1257
  },
  "business": {
-  "higher": 877,
-  "ordinary": 1111
+  "higher": 984,
+  "ordinary": 1179
  },
  "home-economics": {
   "higher": 1026,
@@ -50,7 +50,7 @@
   "ordinary": 854
  },
  "geography": {
-  "higher": 2007,
+  "higher": 2495,
   "ordinary": 2146
  },
  "computer-science": {
@@ -201,7 +201,7 @@
   "ordinary": 644
  },
  "music": {
-  "higher": 339,
-  "ordinary": 293
+  "higher": 664,
+  "ordinary": 595
  }
 }

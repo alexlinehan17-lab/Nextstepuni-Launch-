@@ -1,0 +1,1290 @@
+{
+ "readingFile": "2014-hl.json",
+ "readBy": "second reader (Opus helper), 19 Nov 2026",
+ "method": "Rendered every page of the three booklets with music_pages.py render at 110 dpi (listening 1-16, composing 1-16, elective 1-8) and read every ask page in full; confirmed on a contact sheet that listening 1, 7, 12-16, composing 1, 2, 12-16 and elective 1, 3-8 carry no question text (cover, BLANK PAGE, ROUGH WORK, answer lines). Zoomed with PyMuPDF clips at 250-400 dpi on every glyph in doubt: THREE in capitals in the Q1-Q6 lead-ins and Q5 A; the bullets of each lead-in (Q1, Q2, Q3, Q4, Q6 and the Q6 Excerpt 1-3 headings print bullets; Q5 A prints none; Q2 prints its fourth bullet as \"• Answer the following questions:\" after the lyrics, Q3 after the score); the excerpt headings (\"Excerpt 1. Bars 1–16 ...\" with full stops on listening p2; bare \"Excerpt 1\" / \"Excerpt 2\" / \"Excerpt 3\" with no full stop in Q5 A, and Q5 A Excerpt 2's second line \"This excerpt consists of two dance tunes. In the case of each one:\"); curly apostrophes in When I’m, I’d, I’m, You’ll, You’ll Never, don’t, you’ll (x4), hill’s; the curly double quotes around “silver song of a lark”; \"McCartney\" (no space), \"Rogers and Hammerstein\" (as printed), \"Céilí\" (acute on e and i), \"sixty-four\" and \"non-traditional\" with hyphens; en dashes in bars 1–16, 1–8, lines 1–2, 5–6, 13–14, 1–4, 9–10, 7–8 and composing Q1 \"16–bar\", against the hyphen in Q3 \"16-bar\"; AA¹BB¹ with its closing full stop (two 6pt \"1\" spans; the text layer also carries a 1.5pt-wide 6pt space after the first ¹ that prints as no word space); the drawn flat in Q5 \"A♭ major\" (OpusChordsStd \"b\" in the text layer, a raised flat on the page); PREPARATORY WORK in regular-weight capitals with no bullet; the composing stems \"Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3\" / \"Q4 or Q5 or Q6\" (no closing full stop) and the elective stem \"Answer ALL questions.\"; the lyric blanks (Q2 Line 5 \"Ooh\" + 10 underscores, Line 6 \"Ah\" + 11 underscores, as in the text layer). Typed the printed text of every in-scope field into a script (lead-in bullets as \"\\n• \", \" • \" between composing/elective bullet lines, a space for unbulleted lines, \"\\n\" between the two Q6 Excerpt 3(i) lines either side of the printed options, tick boxes as \"□ \", the Q5 B stem per the lane ruling) and compared each file string exactly with no normalisation; then checked every typed word token exactly (case, punctuation, apostrophe and dash code points) against the text-layer spans of the ask's pages; then listed the code point of every non-ASCII character in the file strings (¹ U+00B9, é U+00E9, í U+00ED, – U+2013, ’ U+2019, “ U+201C, ” U+201D, • U+2022, □ U+25A1, ♭ U+266D). The file has no readFromPage entries. Elective Q2-Q4(b) carry no grid, so no grid.stem there. Every address matches the printed numbering (Q5 A Excerpt 2's (i)-(iii) are printed once for both dances; elective \"4.(a)\" / \"(b)\" read as Q4(a) / Q4(b)).",
+ "booklets": {
+  "listening": "examiner-reports/music/papers/2014-hl-008-paper.pdf",
+  "composing": "examiner-reports/music/papers/2014-hl-006-paper.pdf",
+  "elective": "examiner-reports/music/papers/2014-hl-007-paper.pdf"
+ },
+ "pagesRendered": {
+  "listening": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16
+  ],
+  "composing": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16
+  ],
+  "elective": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ]
+ },
+ "asks": [
+  {
+   "address": "Q1 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "From which section of the movement is this excerpt taken?"
+  },
+  {
+   "address": "Q1 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3."
+  },
+  {
+   "address": "Q1 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. Bars 1–16 of this excerpt are printed below."
+  },
+  {
+   "address": "Q1 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The opening bars of this excerpt feature an Alberti Bass. Explain, with reference to the music heard in this excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3."
+  },
+  {
+   "address": "Q1 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. Bars 1–16 of this excerpt are printed below."
+  },
+  {
+   "address": "Q1 Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This excerpt begins with piano only. In which bar are more instruments added? These instruments are"
+  },
+  {
+   "address": "Q1 Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3."
+  },
+  {
+   "address": "Q1 Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. Bars 1–16 of this excerpt are printed below."
+  },
+  {
+   "address": "Q1 Excerpt 1(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify the cadence at the end of the excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 1(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3."
+  },
+  {
+   "address": "Q1 Excerpt 1(iv)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. Bars 1–16 of this excerpt are printed below."
+  },
+  {
+   "address": "Q1 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The tonality of this excerpt is"
+  },
+  {
+   "address": "Q1 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3."
+  },
+  {
+   "address": "Q1 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2. Bars 1–8 of this excerpt are printed below."
+  },
+  {
+   "address": "Q1 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Insert the eight missing melody notes at X on the score."
+  },
+  {
+   "address": "Q1 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3."
+  },
+  {
+   "address": "Q1 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2. Bars 1–8 of this excerpt are printed below."
+  },
+  {
+   "address": "Q1 Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two instruments which play the melody from bar 9."
+  },
+  {
+   "address": "Q1 Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3."
+  },
+  {
+   "address": "Q1 Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2. Bars 1–8 of this excerpt are printed below."
+  },
+  {
+   "address": "Q1 Excerpt 2(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe one feature of the piano music from bar 9 to the end of the excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 2(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3."
+  },
+  {
+   "address": "Q1 Excerpt 2(iv)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2. Bars 1–8 of this excerpt are printed below."
+  },
+  {
+   "address": "Q1 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "From which section of the movement is this excerpt taken?"
+  },
+  {
+   "address": "Q1 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3."
+  },
+  {
+   "address": "Q1 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3. There is no printed music for this excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Which two of the following can be heard in this excerpt?"
+  },
+  {
+   "address": "Q1 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3."
+  },
+  {
+   "address": "Q1 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3. There is no printed music for this excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe one way in which the music played by the soloist contrasts with the music played by the orchestra in this excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3."
+  },
+  {
+   "address": "Q1 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3. There is no printed music for this excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 3(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify and describe the form of this movement."
+  },
+  {
+   "address": "Q1 Excerpt 3(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Three excerpts from the first movement of Piano Concerto in A major K488 by Mozart.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3."
+  },
+  {
+   "address": "Q1 Excerpt 3(iv)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3. There is no printed music for this excerpt."
+  },
+  {
+   "address": "Q2(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "How many bars of music are heard in the introduction? Identify three different instruments that play in the introduction."
+  },
+  {
+   "address": "Q2(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from When I’m Sixty Four by John Lennon and Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. Line 1 When I get older losing my hair, many years from now Line 2 Will you still be sending me a valentine, birthday greetings, bottle of wine Line 3 If I’d been out till quarter to three, would you lock the door? Line 4 Will you still need me, will you still feed me, when I’m sixty-four? Line 5 Ooh __________ You’ll be older too Line 6 Ah ___________ And if you say the word, I could stay with you.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two features of the vocal melody heard in lines 1–2 of this excerpt."
+  },
+  {
+   "address": "Q2(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from When I’m Sixty Four by John Lennon and Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. Line 1 When I get older losing my hair, many years from now Line 2 Will you still be sending me a valentine, birthday greetings, bottle of wine Line 3 If I’d been out till quarter to three, would you lock the door? Line 4 Will you still need me, will you still feed me, when I’m sixty-four? Line 5 Ooh __________ You’ll be older too Line 6 Ah ___________ And if you say the word, I could stay with you.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Which one of the following can be heard in the accompaniment in line 3?"
+  },
+  {
+   "address": "Q2(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from When I’m Sixty Four by John Lennon and Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. Line 1 When I get older losing my hair, many years from now Line 2 Will you still be sending me a valentine, birthday greetings, bottle of wine Line 3 If I’d been out till quarter to three, would you lock the door? Line 4 Will you still need me, will you still feed me, when I’m sixty-four? Line 5 Ooh __________ You’ll be older too Line 6 Ah ___________ And if you say the word, I could stay with you.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe the texture of the music in lines 5–6."
+  },
+  {
+   "address": "Q2(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from When I’m Sixty Four by John Lennon and Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. Line 1 When I get older losing my hair, many years from now Line 2 Will you still be sending me a valentine, birthday greetings, bottle of wine Line 3 If I’d been out till quarter to three, would you lock the door? Line 4 Will you still need me, will you still feed me, when I’m sixty-four? Line 5 Ooh __________ You’ll be older too Line 6 Ah ___________ And if you say the word, I could stay with you.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(v)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify and describe the style of When I’m Sixty Four."
+  },
+  {
+   "address": "Q2(v)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from When I’m Sixty Four by John Lennon and Paul McCartney will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The lyrics of the excerpt are printed below. Line 1 When I get older losing my hair, many years from now Line 2 Will you still be sending me a valentine, birthday greetings, bottle of wine Line 3 If I’d been out till quarter to three, would you lock the door? Line 4 Will you still need me, will you still feed me, when I’m sixty-four? Line 5 Ooh __________ You’ll be older too Line 6 Ah ___________ And if you say the word, I could stay with you.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "In bars 1–16. Identify the instrument playing the melody. Describe the accompaniment."
+  },
+  {
+   "address": "Q3(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from the second movement of Symphonie Fantastique by Berlioz will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–16 of the excerpt is printed below.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "From bar 17 to the end of the excerpt, the music features"
+  },
+  {
+   "address": "Q3(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from the second movement of Symphonie Fantastique by Berlioz will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–16 of the excerpt is printed below.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe one way in which the music heard from bar 17 to the end of the excerpt differs from the music heard in bars 1–16."
+  },
+  {
+   "address": "Q3(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from the second movement of Symphonie Fantastique by Berlioz will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–16 of the excerpt is printed below.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The final chord in this excerpt is the"
+  },
+  {
+   "address": "Q3(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from the second movement of Symphonie Fantastique by Berlioz will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–16 of the excerpt is printed below.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(v)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe the music which immediately follows this excerpt in the movement."
+  },
+  {
+   "address": "Q3(v)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from the second movement of Symphonie Fantastique by Berlioz will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–16 of the excerpt is printed below.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify the theme heard in this excerpt."
+  },
+  {
+   "address": "Q4(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "In the table below, write down the order in which the instruments listed are heard at the start of the excerpt."
+  },
+  {
+   "address": "Q4(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name the compositional technique used in this excerpt. Describe how this technique is used in this excerpt."
+  },
+  {
+   "address": "Q4(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "In this excerpt the cello plays sul pont. Explain."
+  },
+  {
+   "address": "Q4(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(v)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe some of the Mexican influences evident in Seachanges with Danse Macabre."
+  },
+  {
+   "address": "Q4(v)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q5 A Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify the style of singing heard in this excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 1(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1"
+  },
+  {
+   "address": "Q5 A Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify three features of this style of singing as heard in this excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1"
+  },
+  {
+   "address": "Q5 A Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The music heard in this excerpt features"
+  },
+  {
+   "address": "Q5 A Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1"
+  },
+  {
+   "address": "Q5 A Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify the type of dance tune."
+  },
+  {
+   "address": "Q5 A Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 2(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2 This excerpt consists of two dance tunes. In the case of each one:"
+  },
+  {
+   "address": "Q5 A Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify its time signature."
+  },
+  {
+   "address": "Q5 A Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2 This excerpt consists of two dance tunes. In the case of each one:"
+  },
+  {
+   "address": "Q5 A Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Write out one bar of rhythm associated with the type of dance."
+  },
+  {
+   "address": "Q5 A Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2 This excerpt consists of two dance tunes. In the case of each one:"
+  },
+  {
+   "address": "Q5 A Excerpt 3(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two traditional features of the music heard in this excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 3(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 3(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3"
+  },
+  {
+   "address": "Q5 A Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify and describe one non-traditional feature of the music heard in this excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3"
+  },
+  {
+   "address": "Q5 B(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Discuss regional styles in Irish traditional singing. Refer to singers and their repertoires as appropriate."
+  },
+  {
+   "address": "Q5 B(i)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:"
+  },
+  {
+   "address": "Q5 B(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Discuss some of the ways in which Irish Folk music has influenced the folk music of North America. Refer to specific pieces of music and/or songs in your answer."
+  },
+  {
+   "address": "Q5 B(ii)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:"
+  },
+  {
+   "address": "Q5 B(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Write an account of the Céilí band tradition in the context of Irish traditional music."
+  },
+  {
+   "address": "Q5 B(iii)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:"
+  },
+  {
+   "address": "Q5 B(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Write a concise account of either the fiddle or uileann pipes. Refer to a performer of this instrument in your answer and comment on their performing style."
+  },
+  {
+   "address": "Q5 B(iv)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:"
+  },
+  {
+   "address": "Q6 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "How many bars of music are heard in the introduction before the voice enters?"
+  },
+  {
+   "address": "Q6 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. An excerpt from All That Jazz by Fred Ebb and John Kander.\n• The outline score of the verse is printed below."
+  },
+  {
+   "address": "Q6 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The missing notes at X on the score are"
+  },
+  {
+   "address": "Q6 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. An excerpt from All That Jazz by Fred Ebb and John Kander.\n• The outline score of the verse is printed below."
+  },
+  {
+   "address": "Q6 Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "In bars 13–14 the bass line consists of"
+  },
+  {
+   "address": "Q6 Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. An excerpt from All That Jazz by Fred Ebb and John Kander.\n• The outline score of the verse is printed below."
+  },
+  {
+   "address": "Q6 Excerpt 1(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe one feature of jazz music heard in this excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 1(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 1(iv)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. An excerpt from All That Jazz by Fred Ebb and John Kander.\n• The outline score of the verse is printed below."
+  },
+  {
+   "address": "Q6 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The metre of this excerpt is"
+  },
+  {
+   "address": "Q6 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2. An excerpt from Try to Remember by Tom Jones and Harvey Schmidt.\n• The lyrics are printed below. Line 1 Try to remember the kind of September Line 2 When life was slow and oh, so mellow Line 3 Try to remember the kind of September Line 4 When grass was green and grain was yellow Line 5 Try to remember the kind of September Line 6 When you were a tender and callow fellow Line 7 Try to remember and if you remember, then follow."
+  },
+  {
+   "address": "Q6 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe one feature of the accompaniment in lines 1–4."
+  },
+  {
+   "address": "Q6 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2. An excerpt from Try to Remember by Tom Jones and Harvey Schmidt.\n• The lyrics are printed below. Line 1 Try to remember the kind of September Line 2 When life was slow and oh, so mellow Line 3 Try to remember the kind of September Line 4 When grass was green and grain was yellow Line 5 Try to remember the kind of September Line 6 When you were a tender and callow fellow Line 7 Try to remember and if you remember, then follow."
+  },
+  {
+   "address": "Q6 Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The vocal music of lines 5–6 features"
+  },
+  {
+   "address": "Q6 Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2. An excerpt from Try to Remember by Tom Jones and Harvey Schmidt.\n• The lyrics are printed below. Line 1 Try to remember the kind of September Line 2 When life was slow and oh, so mellow Line 3 Try to remember the kind of September Line 4 When grass was green and grain was yellow Line 5 Try to remember the kind of September Line 6 When you were a tender and callow fellow Line 7 Try to remember and if you remember, then follow."
+  },
+  {
+   "address": "Q6 Excerpt 2(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "In which line is the following melody heard?"
+  },
+  {
+   "address": "Q6 Excerpt 2(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 2(iv)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2. An excerpt from Try to Remember by Tom Jones and Harvey Schmidt.\n• The lyrics are printed below. Line 1 Try to remember the kind of September Line 2 When life was slow and oh, so mellow Line 3 Try to remember the kind of September Line 4 When grass was green and grain was yellow Line 5 Try to remember the kind of September Line 6 When you were a tender and callow fellow Line 7 Try to remember and if you remember, then follow."
+  },
+  {
+   "address": "Q6 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "At the start of the excerpt we hear\nThey are played by"
+  },
+  {
+   "address": "Q6 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3. A version of You’ll Never Walk Alone by Rogers and Hammerstein.\n• The lyrics are printed below. Line 1 When you walk through a storm, hold your head up high, Line 2 And don’t be afraid of the dark, Line 3 At the end of the storm is a golden sky, Line 4 And the sweet, silver song of a lark. Line 5 Walk on through the wind, walk on through the rain, Line 6 Though your dreams be tossed and blown Line 7 Walk on, walk on, with hope in your heart, Line 8 And you’ll never walk alone, you’ll never walk alone Line 9 Walk on, walk on, with hope in your heart, Line 10 And you’ll never walk alone, you’ll never walk alone."
+  },
+  {
+   "address": "Q6 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe the music played by the violins while the underlined words of line 3 are being sung."
+  },
+  {
+   "address": "Q6 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3. A version of You’ll Never Walk Alone by Rogers and Hammerstein.\n• The lyrics are printed below. Line 1 When you walk through a storm, hold your head up high, Line 2 And don’t be afraid of the dark, Line 3 At the end of the storm is a golden sky, Line 4 And the sweet, silver song of a lark. Line 5 Walk on through the wind, walk on through the rain, Line 6 Though your dreams be tossed and blown Line 7 Walk on, walk on, with hope in your heart, Line 8 And you’ll never walk alone, you’ll never walk alone Line 9 Walk on, walk on, with hope in your heart, Line 10 And you’ll never walk alone, you’ll never walk alone."
+  },
+  {
+   "address": "Q6 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "How does the music describe “silver song of a lark” at the end of line 4?"
+  },
+  {
+   "address": "Q6 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3. A version of You’ll Never Walk Alone by Rogers and Hammerstein.\n• The lyrics are printed below. Line 1 When you walk through a storm, hold your head up high, Line 2 And don’t be afraid of the dark, Line 3 At the end of the storm is a golden sky, Line 4 And the sweet, silver song of a lark. Line 5 Walk on through the wind, walk on through the rain, Line 6 Though your dreams be tossed and blown Line 7 Walk on, walk on, with hope in your heart, Line 8 And you’ll never walk alone, you’ll never walk alone Line 9 Walk on, walk on, with hope in your heart, Line 10 And you’ll never walk alone, you’ll never walk alone."
+  },
+  {
+   "address": "Q6 Excerpt 3(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe one way in which the music of lines 9–10 differs from the music of lines 7–8."
+  },
+  {
+   "address": "Q6 Excerpt 3(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on three excerpts of music.\n• Each excerpt will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 3(iv)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3. A version of You’ll Never Walk Alone by Rogers and Hammerstein.\n• The lyrics are printed below. Line 1 When you walk through a storm, hold your head up high, Line 2 And don’t be afraid of the dark, Line 3 At the end of the storm is a golden sky, Line 4 And the sweet, silver song of a lark. Line 5 Walk on through the wind, walk on through the rain, Line 6 Though your dreams be tossed and blown Line 7 Walk on, walk on, with hope in your heart, Line 8 And you’ll never walk alone, you’ll never walk alone Line 9 Walk on, walk on, with hope in your heart, Line 10 And you’ll never walk alone, you’ll never walk alone."
+  },
+  {
+   "address": "Section A Q1",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "CONTINUATION OF A GIVEN OPENING • Continue the opening below to make a 16–bar melody. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ clarinet □ violin □ descant recorder"
+  },
+  {
+   "address": "Section A Q1",
+   "paper": "composing",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3"
+  },
+  {
+   "address": "Section A Q2",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "SETTING MUSIC TO A GIVEN TEXT Here is an extract from La Belle Dame Sans Merci by John Keats. I saw their starved lips in the gloam, With horrid warning gaped wide, And I awoke and found me here, On the cold hill’s side. The opening line has been set to music below. • Set the remaining words to make a melody of 16 bars. (You may exceed this number of bars, and include a modulation, if you wish.) • Add appropriate performing directions (phrasing and dynamics) to the melody."
+  },
+  {
+   "address": "Section A Q2",
+   "paper": "composing",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3"
+  },
+  {
+   "address": "Section A Q3",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM The opening phrase of a gigue is given below. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ violin □ trumpet □ oboe □ descant recorder"
+  },
+  {
+   "address": "Section A Q3",
+   "paper": "composing",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3"
+  },
+  {
+   "address": "Section B Q4",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS PREPARATORY WORK • Plot the chords available in the key of F minor, either in the chord bank grid or on the stave below. • Study the piece of music below. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style."
+  },
+  {
+   "address": "Section B Q4",
+   "paper": "composing",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6"
+  },
+  {
+   "address": "Section B Q5",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "COMPOSING BASS NOTES AND CHORD INDICATIONS TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of A♭ major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable bass notes and chord indications in the style of the given opening. • Do not repeat the same chord in the same position in adjacent boxes. • You may use chord symbols or Roman numerals, but not both."
+  },
+  {
+   "address": "Section B Q5",
+   "paper": "composing",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6"
+  },
+  {
+   "address": "Section B Q6",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "ADDING A COUNTERMELODY OR DESCANT AND CHORDAL SUPPORT TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of E major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable chord indications in the boxes provided and continue the descant part in the given style to complete the piece. • You may use either chord symbols or Roman numerals, but not both. • Do not repeat the same chord in the same position in adjacent boxes."
+  },
+  {
+   "address": "Section B Q6",
+   "paper": "composing",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6"
+  },
+  {
+   "address": "Q1",
+   "paper": "elective",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "State the title of your chosen Listening Elective topic."
+  },
+  {
+   "address": "Q1",
+   "paper": "elective",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Answer ALL questions."
+  },
+  {
+   "address": "Q2",
+   "paper": "elective",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "List three of the sources which you used in studying this topic. Full details are required for all of your sources. If one of your sources is the internet, give the full website address used in your research."
+  },
+  {
+   "address": "Q3",
+   "paper": "elective",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name five pieces of music and the composer or performer, which you studied as part of this listening elective, and which are on your audio recording."
+  },
+  {
+   "address": "Q4(a)",
+   "paper": "elective",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify three significant musical features of your chosen topic."
+  },
+  {
+   "address": "Q4(b)",
+   "paper": "elective",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Discuss your chosen topic ensuring that you • describe the three musical features which you have identified above. • show how your three chosen and other musical features are present in the music you have studied for this elective. • make reference to all the musical excerpts on your recording. • include your personal response to your chosen topic."
+  }
+ ],
+ "missingLines": [
+  "Listening p3: the bare bold headings \"Excerpt 1\" / \"Excerpt 2\" / \"Excerpt 3\" repeated above the Q1 questions are in no string on their own; their words open the page-2 headings carried as the excerpt lines. Listed for completeness.",
+  "Listening p6, Q4(ii): the table \"Instrument\" / \"Order\" with rows \"Violin\", \"Guiro\", \"Marimba\" is in no string; the ask's figure crop carries it (the question refers to \"the instruments listed\"). Listed for completeness.",
+  "Listening p9, Q5 B: \"Please indicate your choice of question (i) □ (ii) □ (iii) □ (iv) □\" and the bold \"or\" between options (i)-(iv) are in no string; answer-slot / separator material.",
+  "Listening p11: \"You have three minutes to complete the examination paper\" (printed bold, no full stop, after the (20) marks box) is in no string; outside the question block.",
+  "Listening answer-slot labels in no string (not asks, by rule): \"Form\" / \"Description\" (Q1 Excerpt 3(iv)), \"Style\" / \"Description\" (Q2(v)), \"Dance 1\" / \"Dance 2\" / \"Time signature\" / \"Bar of rhythm\" (Q5 A Excerpt 2), \"Feature\" / \"Description\" (Q5 A Excerpt 3(ii)), \"Line\" slot (Q6 Excerpt 2(iv)); numbered rows 1./2./3. (Q1 Excerpt 2(iii), Q2(i), Q2(ii), Q5 A Excerpt 1(ii), Excerpt 3(i)). Tick-box options, the Q2(iii) rhythm options and the Q6 Excerpt 1(ii) stave options are figure material.",
+  "Composing p3 and p6: \"Answer TWO questions – ONE from Section A (Melody Composition) and ONE from Section B (Harmony)\", \"SECTION A – MELODY COMPOSITION (40 marks)\" and \"SECTION B – HARMONY (60 marks)\" are in no string (section-level headings above the grid stems); listed for completeness. Andante / Adagio / Moderato, the Q2 underlay, chord-bank grids, ROUGH WORK, the Descant / Melody stave labels and the FOR THE EXAMINER boxes are score or answer material.",
+  "Elective p2: the Q3 table headings \"Piece\" / \"Composer or Performer\" with rows 1.-5., and the (i)-(iii) slots of Q2 and Q4(a), are in no string; answer-slot labels, listed for completeness."
+ ],
+ "summary": {
+  "entriesChecked": 152,
+  "matchesPrint": 152,
+  "differs": 0
+ }
+}

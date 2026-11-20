@@ -620,6 +620,10 @@ SHORT_ASKS = {
     **{('biology', 2022, 'ol-deferred', f'Q4(a)({r})'): ('', f'p4: answer box "{x}:" under Q4(a)\'s lead-in "Give one '
                                                            f'example of an organism for A, B and C."')
        for r, x in (('ii', 'A'), ('iii', 'B'), ('iv', 'C'))},
+    # Biology 2023 Ordinary deferred Q12(a)(i): the paper prints the term alone ("Gene") under Q12(a)'s lead-in
+    # "Explain the following terms as used in genetics:" (040 p3); the term is the whole of the roman's ask.
+    ('biology', 2023, 'ol-deferred', 'Q12(a)(i)'): ('Gene', '040 p3: the term "Gene" under Q12(a)\'s lead-in '
+                                                            '"Explain the following terms as used in genetics:"'),
     ('physics', 2015, 'ol', 'Q12(c)(i)'): ('gases', 'Paper p10 lists gases under the shared charge-carrier prompt; '
                                                     'scheme p16 puts all four materials in one stepped 6+2+1+1 '
                                                     'response. The card keeps the full prompt and all four matches.'),
@@ -4230,16 +4234,19 @@ def census_subject(subject):
             raise AssertionError('Geography authored census total is stale')
         papers = []
         for sitting in payload['sittings']:
+            # A deferred sitting (its rows carry "sitting": "deferred") is a
+            # paper of its own beside June's of the same year and level.
             asks = [task for task in tasks
                     if task['year'] == sitting['year']
-                    and task['level'] == sitting['level']]
+                    and task['level'] == sitting['level']
+                    and task.get('sitting') == sitting.get('sitting')]
             if sitting.get('paperBaseTasks') != len(asks):
                 raise AssertionError(
                     f"Geography {sitting['year']} {sitting['level']} "
                     'census count is stale')
             papers.append({
                 'year': sitting['year'], 'level': sitting['level'],
-                'paper': None, 'leafCount': len(asks),
+                'paper': sitting.get('sitting'), 'leafCount': len(asks),
                 'leaves': [{
                     'key': [ask['id']], 'label': ask['questionRef'],
                     'text': ask['title'], 'status': ask['status'],
@@ -4719,6 +4726,8 @@ def census_subject(subject):
                     'detail': f"marks sum {p['marksSum']}, other years say {want}"})
     if subject == 'biology':
         papers.extend(census_biology_deferred())
+    if subject == 'business':
+        papers.extend(census_business_deferred())
     if subject == 'engineering':
         papers.extend(census_engineering_deferred())
     if subject == 'history':
@@ -4771,6 +4780,85 @@ def census_biology_deferred():
             'year': year, 'level': level, 'paper': 'Deferred',
             'leafCount': len(leaves),
             'leaves': [{'key': list(k), 'label': key_label(k, 'biology'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
+
+
+# The SEC's deferred Business sittings in the archive, English version (deferredexams/<year>/: two booklets
+# each, as June's: Higher LC033ALP032EV Section 1 and Answerbook and LC033ALP041EV Sections 2 and 3; Ordinary
+# LC033GLP032EV Section 1 and Answerbook and LC033GLP033EV Section 2; scheme LC033<A|G>LP000EV in
+# deferredmarkingschemes/). 2022 at both levels and 2023 Higher; nothing for 2024-2025.
+BUS_DEFERRED_SITTINGS = ((2022, 'hl'), (2022, 'ol'), (2023, 'hl'))
+
+
+def business_deferred_files(year, level):
+    booklets = ('ALP032EV', 'ALP041EV') if level == 'hl' else ('GLP032EV', 'GLP033EV')
+    return [os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'LC033{b}.pdf')
+            for b in booklets]
+
+
+# Where June's section walker misreads a deferred booklet, the printed tasks it should have keyed, each pinned to
+# the words the page prints and to the reading it replaces (a reader change fails here and is reviewed again).
+# 2022 Higher Sections 2 and 3 booklet (LC033ALP041EV): p4 prints Question 2's (A)-(C) and Question 3's (A)-(C)
+# side by side, each question's number and extract after its parts in the text layer, so the walker kept Question 2
+# as one headless leaf and read its parts as Question 1's and Question 3's; p9 prints Question 8 the same way and its
+# (A)(i) was read into Question 7(A)(i) on p8, its (A)(ii) as a part of no letter.
+BUS_DEFERRED_REPAIRS = {
+    (2022, 'hl'): [
+        {'booklet': 'LC033ALP041EV', 'page': 4, 'prior': [('3', 2, None, None)],
+         'printed': [(('3', 2, 'a', None), 'Outline the impact for the economy as a result of the government collecting LPT.'),
+                     (('3', 2, 'b', None), 'Explain two ways the Irish Government could use the tax system to create a positive climate for business in Ireland. Use examples to illustrate your answer.'),
+                     (('3', 2, 'c', None), 'Evaluate the advantages and disadvantages of a partnership as a form of ownership structure.')]},
+        {'booklet': 'LC033ALP041EV', 'page': 9, 'prior': [('3', 8, None, 'ii')],
+         'printed': [(('3', 8, 'a', 'i'), 'Outline your understanding of the term unique selling point.'),
+                     (('3', 8, 'a', 'ii'), 'Illustrate the implications for a business such as Boyne Valley Farmhouse Cheese when operating in a niche market.')]},
+    ],
+}
+
+
+def business_deferred_repairs(year, level, parts, texts):
+    """BUS_DEFERRED_REPAIRS applied: each prior reading must still be the walker's, each printed task on its page."""
+    import fitz                                   # noqa: E402  (PyMuPDF)
+    parts, texts = set(parts), dict(texts)
+    for repair in BUS_DEFERRED_REPAIRS.get((year, level), ()):
+        path = os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), repair['booklet'] + '.pdf')
+        with fitz.open(path) as pdf:
+            page = ' '.join(pdf[repair['page'] - 1].get_text().split())
+        for key in repair['prior']:
+            assert key in parts, f'Business deferred repair: the walker no longer reads {key}; review required'
+            parts.discard(key)
+            texts.pop(key, None)
+        for key, text in repair['printed']:
+            assert text in page, f'Business deferred repair: {text!r} is not on {repair["booklet"]} p{repair["page"]}'
+            assert key not in parts, key
+            parts.add(key)
+            texts[key] = text
+    return parts, texts
+
+
+def census_business_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Each deferred Business sitting (BUS_DEFERRED_SITTINGS) is read by June's
+    section walker (census_sections over its own two booklets) and keyed
+    'Deferred', as Biology keys its own (census_biology_deferred), so a
+    deferred ask never lands on a June leaf with the same address. The
+    checksum is not run on it.
+    """
+    papers = []
+    for year, level in BUS_DEFERRED_SITTINGS:
+        parts, texts, _ = census_sections('business', year, level, files=business_deferred_files(year, level))
+        parts, texts = business_deferred_repairs(year, level, parts, texts)
+        leaves = [k for k in leaves_of(parts)
+                  if not printed_example('business', year, level, k, texts)]
+        flags = [f for f in continuity_flags(parts, texts, 'business')
+                 if not short_ask_ok('business', year, level, f, sitting='deferred')]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'business'),
                         'text': texts.get(k, '')[:160]} for k in leaves],
             'marksSum': None, 'marksQuestions': 0, 'flags': flags,
         })

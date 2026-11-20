@@ -20,7 +20,7 @@
  */
 import { describe, expect, it } from 'vitest';
 import { createHash } from 'node:crypto';
-import { readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 import baseline from '../scripts/markbank/coverage-baseline.json';
@@ -263,15 +263,17 @@ describe('Mark Bank paper-coverage ratchet', () => {
         if (subject === 'music') {
           // Three booklets, each its own address: "Listening Q5 A(d)", "Listening Q5 B(i)", "Listening Q2(e)(ii)",
           // "Listening Q6(k)", 2017-2018's parts numbered afresh under each excerpt, "Listening Q1 Excerpt 2(i)",
+          // 2011 HL Q6's restarting again under a printed bars heading, "Listening Q6 Excerpt 1 Bars 9–16(i)",
           // "Composing Section A Q1", Ordinary's "Composing Section A Q1(a)" and the one card
           // over parts the scheme marks together, "Composing Section A Q2(a)–(b)", and the elective's one card over
           // its five asks, "Elective Q1–Q4(b)". A deferred sitting's card ends " — Deferred sitting".
-          return !/^\d{4} (?:HL|OL) (?:Listening Q[1-7](?: [AB])?(?: Excerpt [1-9])?(?:\([a-l]\))?(?:\((?:i|ii|iii|iv|v|vi)\))?|Composing Section [AB] Q[1-6](?:\([ab]\)(?:–\([ab]\))?)?|Elective Q[1-4](?:\([ab]\))?(?:–Q[1-4](?:\([ab]\))?)?)(?: — Deferred sitting)?$/.test(ref);
+          return !/^\d{4} (?:HL|OL) (?:Listening Q[1-7](?: [AB])?(?: Excerpt [1-9](?: Bars \d{1,2}–\d{1,2})?)?(?:\([a-l]\))?(?:\((?:i|ii|iii|iv|v|vi)\))?|Composing Section [AB] Q[1-6](?:\([ab]\)(?:–\([ab]\))?)?|Elective Q[1-4](?:\([ab]\))?(?:–Q[1-4](?:\([ab]\))?)?)(?: — Deferred sitting)?$/.test(ref);
         }
         if (subject === 'geography') {
           // Reviewed sittings cite the printed part: "Q2(ii)(a)", "Q5A(iii)", "Q8A(vii)";
-          // 2017 Ordinary prints four lettered statements under Q4(i), (a)-(d).
-          return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?:\((?:i|ii|iii|iv|v|vi|vii|viii)\))?(?:\([a-d]\))?(?: · .+)?$/.test(ref);
+          // 2017 Ordinary prints four lettered statements under Q4(i), (a)-(d). A deferred sitting's card
+          // (geography_review_<year>_hl_deferred.py) cites the same grammar and says so: "… — Deferred sitting".
+          return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?:\((?:i|ii|iii|iv|v|vi|vii|viii)\))?(?:\([a-d]\))?(?: · .+)?(?: — Deferred sitting)?$/.test(ref);
         }
         // As reconcile.py reads a Mathematics citation: the booklet is pinned by
         // its review, so "(Project Maths)" before the address goes; a deferred
@@ -361,6 +363,9 @@ describe('Mark Bank paper-coverage ratchet', () => {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
+      // The deferred sittings' cards (deferred-authored.json), last, as reconcile.py reads them.
+      const deferred = resolve(__dirname, '..', 'components', 'MarkBank', 'cards', subject, 'deferred-authored.json');
+      if (existsSync(deferred)) h.update(readFileSync(deferred));
     }
     if (subject === 'french') {
       // Same files and order as reconcile.py's content hash, listening included.

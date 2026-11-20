@@ -93,19 +93,19 @@
     "refsHash": "4fef6e53e28af5ba"
   },
   "biology": {
-    "cards": 5904,
-    "contentHash": "fd2115321a18ee7a",
-    "coveragePct": 89.5,
-    "covered": 5259,
+    "cards": 6597,
+    "contentHash": "4d960d74f6563f0f",
+    "coveragePct": 100.0,
+    "covered": 5876,
     "excluded": 0,
     "leaves": 5876,
-    "open": 617,
+    "open": 0,
     "orphans": 0,
     "papers": {
       "count": 50,
       "hash": "4fd05441da103297"
     },
-    "refsHash": "214ae8bb950e8bd4"
+    "refsHash": "9c52a9738a3c0ca4"
   },
   "bulgarian": {
     "cards": 141,
@@ -123,19 +123,19 @@
     "refsHash": "98027c9761a7d3b1"
   },
   "business": {
-    "cards": 1988,
-    "contentHash": "8c53f2ed50e3e2fc",
+    "cards": 2163,
+    "contentHash": "4baf895f016eba4a",
     "coveragePct": 100.0,
-    "covered": 2173,
+    "covered": 2366,
     "excluded": 0,
-    "leaves": 2173,
+    "leaves": 2366,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 48,
       "hash": "473899bda3fb160b"
     },
-    "refsHash": "4b71b53d9940c654"
+    "refsHash": "fe3ddea26ba3fb3e"
   },
   "chemistry": {
     "cards": 3369,
@@ -363,19 +363,19 @@
     "refsHash": "9aa653ddbc92b175"
   },
   "geography": {
-    "cards": 4153,
-    "contentHash": "c5cb46da46ff07b8",
+    "cards": 4641,
+    "contentHash": "eac69e24a1fa1b8c",
     "coveragePct": 100.0,
-    "covered": 3869,
+    "covered": 4316,
     "excluded": 0,
-    "leaves": 3869,
+    "leaves": 4316,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 24,
-      "hash": "7d40addba29edb98"
+      "count": 81,
+      "hash": "35423f0906b5e2d2"
     },
-    "refsHash": "3616d976252aed5a"
+    "refsHash": "03183f2139f4cba8"
   },
   "german": {
     "cards": 1776,
@@ -603,19 +603,19 @@
     "refsHash": "98497719950dbd78"
   },
   "music": {
-    "cards": 632,
-    "contentHash": "fd8a2e7257a5dd1a",
+    "cards": 1259,
+    "contentHash": "032ad6545a7054fc",
     "coveragePct": 100.0,
-    "covered": 662,
+    "covered": 1319,
     "excluded": 0,
-    "leaves": 662,
+    "leaves": 1319,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 90,
       "hash": "19ae47d97a6c3bd4"
     },
-    "refsHash": "5bf5c630be2b416c"
+    "refsHash": "f5e3e0088d2a4238"
   },
   "physical-education": {
     "cards": 772,
