@@ -112,6 +112,7 @@ import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-stu
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
 import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
+import { CARDS as MUSIC_ORDINARY } from '../components/MarkBank/cards/music/ordinary';
 import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
 import { CARDS as AGREEK_HIGHER } from '../components/MarkBank/cards/ancient-greek/higher';
 import { CARDS as AGREEK_ORDINARY } from '../components/MarkBank/cards/ancient-greek/ordinary';
@@ -155,8 +156,7 @@ const SAMPLE_CARDS = [
   ...LATVIAN_HIGHER, ...CZECH_HIGHER,
   ...CLAS_HIGHER, ...CLAS_ORDINARY,
   ...LATIN_HIGHER, ...LATIN_ORDINARY,
-  // Review pack 1 prototype: Music 2025 Higher only.
-  ...MUSIC_HIGHER,
+  ...MUSIC_HIGHER, ...MUSIC_ORDINARY,
   ...ARABIC_HIGHER, ...ARABIC_ORDINARY,
   ...AGREEK_HIGHER, ...AGREEK_ORDINARY,
   // Higher only: Modern Greek is examined at ONE level and there is no
@@ -218,6 +218,8 @@ const deferredCard = (card: { id?: string; subjectId: string }) =>
   || (card.subjectId === 'irish' && /^irish-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'spanish' && /^es-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'german' && /^de-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'english' && /^english-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'biology' && /^bio-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'physics' && /^phys-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'home-economics' && /^he-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'maths' && /^maths-\d{4}-(?:hl|ol|fl)-deferred-/.test(card.id ?? ''));
@@ -637,11 +639,18 @@ describe('every card points at the question paper it came from', () => {
           const named = entry?.papers?.find((p: { label: string }) => p.label === `Deferred · Paper ${c.section === '1' ? 'One' : 'Two'}`);
           return entry?.sitting !== 'deferred' || String(named?.doc?.f ?? '').replace(/\.pdf$/, '') !== c.paperFileid;
         }
-        // DCG's deferred sitting is two booklets, as June's is: a deferred
-        // card's paper is the one printing its section, found as June's is.
-        if (deferredCard(c) && c.subjectId === 'dcg') {
+        // English's deferred sitting is two papers, as June's is: a deferred card's paper is the one its
+        // section names in the year's deferred entry ("Deferred · Paper One" for section 1).
+        if (deferredCard(c) && c.subjectId === 'english') {
+          const deferred = deferredPaperEntry('english', c.year, c.level);
+          const named = deferred?.papers?.find((p: { label: string }) => p.label === `Deferred · Paper ${c.section === '1' ? 'One' : 'Two'}`);
+          return String(named?.doc?.f ?? '').replace(/\.pdf$/, '') !== c.paperFileid;
+        }
+        // DCG's and Biology's deferred sittings are two booklets, as June's are:
+        // a deferred card's paper is the one printing its section, found as June's is.
+        if (deferredCard(c) && (c.subjectId === 'dcg' || c.subjectId === 'biology')) {
           return c.paperFileid === null
-            || c.paperFileid !== resolvePaperFileid('dcg', c.year, c.level, c.section, 'deferred');
+            || c.paperFileid !== resolvePaperFileid(c.subjectId, c.year, c.level, c.section, 'deferred');
         }
         if (deferredCard(c) && !REVIEWED_SOURCE_SUBJECTS.has(c.subjectId)) {
           const deferred = deferredPaperEntry(c.subjectId, c.year, c.level);

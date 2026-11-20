@@ -1,0 +1,621 @@
+{
+ "readingFile": "2020-hl.json",
+ "readBy": "second reader (Opus helper), 19 Nov 2026",
+ "method": "Pages rendered at 200 dpi with music_pages.py render (listening 2-6, 8, 9, 12, 13; composing 3, 5, 7-13) and read whole; every in-scope line re-read in a 400 dpi clip to settle apostrophes (curly vs straight), dashes (en dash vs hyphen), superscripts and commas. Neither booklet has a usable text layer, so the renders are the only source. I typed my own transcription of every in-scope string from the renders without copying the reading file, then diffed it against the file by machine. Line breaks and spacing were collapsed, \"\\n• \" was treated as equal to \" • \", and the \" • \" joiner was ignored. Strings were compared both with and without bullet markers, and the non-ASCII code points of every string were listed. No ligature, non-breaking or stray characters were found.",
+ "scope": [
+  "1. excerptLine of every listening ask whose excerptLine contains 'Line 1' (Q1(a)-(d), Q1(g)-(i), Q5 A(f)-(g), Q6(e)-(h)); the whole string checked",
+  "2. questionContext of every listening ask (46 asks; Q5 B(i)-(iv) carry none)",
+  "3. questionText of all six composing asks"
+ ],
+ "booklets": {
+  "listening": "examiner-reports/music/papers/2020-hl-008-paper.pdf",
+  "composing": "examiner-reports/music/papers/2020-hl-006-paper.pdf"
+ },
+ "pagesRendered": {
+  "listening": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   8,
+   9,
+   12,
+   13
+  ],
+  "composing": [
+   3,
+   5,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13
+  ]
+ },
+ "asks": [
+  {
+   "address": "Q1(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(a)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Bullet marker only. The page (p.2) prints the bold heading 'Excerpt 1, played three times.' and then, on its own line, '• The lyrics are printed below.'; the file runs it on as 'Excerpt 1, played three times. The lyrics are printed below. Line 1 ...' with no bullet. If bullets are carried as in the questionContext strings, the text should read 'Excerpt 1, played three times.\\n• The lyrics are printed below. Line 1 ...'. Every word, the case, the curly apostrophes (’), the punctuation and every 'Line N' label after that point match the print, character for character."
+   ],
+   "checked": "Excerpt 1, played three times. The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave"
+  },
+  {
+   "address": "Q1(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(b)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Bullet marker only. The page (p.2) prints the bold heading 'Excerpt 1, played three times.' and then, on its own line, '• The lyrics are printed below.'; the file runs it on as 'Excerpt 1, played three times. The lyrics are printed below. Line 1 ...' with no bullet. If bullets are carried as in the questionContext strings, the text should read 'Excerpt 1, played three times.\\n• The lyrics are printed below. Line 1 ...'. Every word, the case, the curly apostrophes (’), the punctuation and every 'Line N' label after that point match the print, character for character."
+   ],
+   "checked": "Excerpt 1, played three times. The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave"
+  },
+  {
+   "address": "Q1(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(c)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Bullet marker only. The page (p.2) prints the bold heading 'Excerpt 1, played three times.' and then, on its own line, '• The lyrics are printed below.'; the file runs it on as 'Excerpt 1, played three times. The lyrics are printed below. Line 1 ...' with no bullet. If bullets are carried as in the questionContext strings, the text should read 'Excerpt 1, played three times.\\n• The lyrics are printed below. Line 1 ...'. Every word, the case, the curly apostrophes (’), the punctuation and every 'Line N' label after that point match the print, character for character."
+   ],
+   "checked": "Excerpt 1, played three times. The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave"
+  },
+  {
+   "address": "Q1(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Bullet marker only. The page (p.2) prints the bold heading 'Excerpt 1, played three times.' and then, on its own line, '• The lyrics are printed below.'; the file runs it on as 'Excerpt 1, played three times. The lyrics are printed below. Line 1 ...' with no bullet. If bullets are carried as in the questionContext strings, the text should read 'Excerpt 1, played three times.\\n• The lyrics are printed below. Line 1 ...'. Every word, the case, the curly apostrophes (’), the punctuation and every 'Line N' label after that point match the print, character for character."
+   ],
+   "checked": "Excerpt 1, played three times. The lyrics are printed below. Line 1 Every summer we can rent a cottage Line 2 In the Isle of Wight, if it’s not too dear Line 3 We shall scrimp and save Line 4 Grandchildren on your knee Line 5 Vera, Chuck and Dave"
+  },
+  {
+   "address": "Q1(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(f)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(g)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(g)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Bullet marker only. The page (p.3) prints the bold heading 'Excerpt 4, played three times.' and then, on its own line, '• The lyrics are printed below.'; the file runs it on as 'Excerpt 4, played three times. The lyrics are printed below. Line 1 ...' with no bullet. If bullets are carried as in the questionContext strings, the text should read 'Excerpt 4, played three times.\\n• The lyrics are printed below. Line 1 ...'. Every word, the case, the curly apostrophes (’), the punctuation and every 'Line N' label after that point match the print, character for character."
+   ],
+   "checked": "Excerpt 4, played three times. The lyrics are printed below. Line 1 It was twenty years ago today Line 2 Sergeant Pepper taught the band to play Line 3 They’ve been going in and out of style Line 4 But they’re guaranteed to raise a smile Line 5 So may I introduce to you Line 6 The act you’ve known for all these years; Line 7 Sergeant Pepper’s Lonely Hearts Club Band"
+  },
+  {
+   "address": "Q1(h)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(h)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Bullet marker only. The page (p.3) prints the bold heading 'Excerpt 4, played three times.' and then, on its own line, '• The lyrics are printed below.'; the file runs it on as 'Excerpt 4, played three times. The lyrics are printed below. Line 1 ...' with no bullet. If bullets are carried as in the questionContext strings, the text should read 'Excerpt 4, played three times.\\n• The lyrics are printed below. Line 1 ...'. Every word, the case, the curly apostrophes (’), the punctuation and every 'Line N' label after that point match the print, character for character."
+   ],
+   "checked": "Excerpt 4, played three times. The lyrics are printed below. Line 1 It was twenty years ago today Line 2 Sergeant Pepper taught the band to play Line 3 They’ve been going in and out of style Line 4 But they’re guaranteed to raise a smile Line 5 So may I introduce to you Line 6 The act you’ve known for all these years; Line 7 Sergeant Pepper’s Lonely Hearts Club Band"
+  },
+  {
+   "address": "Q1(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Four excerpts from Sgt. Pepper’s Lonely Hearts Club Band album by the Beatles.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Bullet marker only. The page (p.3) prints the bold heading 'Excerpt 4, played three times.' and then, on its own line, '• The lyrics are printed below.'; the file runs it on as 'Excerpt 4, played three times. The lyrics are printed below. Line 1 ...' with no bullet. If bullets are carried as in the questionContext strings, the text should read 'Excerpt 4, played three times.\\n• The lyrics are printed below. Line 1 ...'. Every word, the case, the curly apostrophes (’), the punctuation and every 'Line N' label after that point match the print, character for character."
+   ],
+   "checked": "Excerpt 4, played three times. The lyrics are printed below. Line 1 It was twenty years ago today Line 2 Sergeant Pepper taught the band to play Line 3 They’ve been going in and out of style Line 4 But they’re guaranteed to raise a smile Line 5 So may I introduce to you Line 6 The act you’ve known for all these years; Line 7 Sergeant Pepper’s Lonely Hearts Club Band"
+  },
+  {
+   "address": "Q2(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q2(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q2(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q2(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q2(e)(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q2(e)(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Symphonie Fantastique by Berlioz.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q3(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q3(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q3(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q3(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q3(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q3(f)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from the first movement of Piano Concerto in A major, K488 by Mozart.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q4(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Seachanges with Danse Macabre by Raymond Deane will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q5 A(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(f)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(f)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Bullet marker only. The page (p.9) prints 'Excerpt 3. An excerpt from Granuaile by Shaun Davey.' (only 'Excerpt 3.' in bold) and then, on its own line, '• The lyrics are printed below.'; the file runs it on as 'Excerpt 3. An excerpt from Granuaile by Shaun Davey. The lyrics are printed below. Line 1 ...' with no bullet. If bullets are carried as in the questionContext strings, the text should read 'Excerpt 3. An excerpt from Granuaile by Shaun Davey.\\n• The lyrics are printed below. Line 1 ...'. Every word, the case, the curly apostrophes (’), the punctuation and every 'Line N' label after that point match the print, character for character."
+   ],
+   "checked": "Excerpt 3. An excerpt from Granuaile by Shaun Davey. The lyrics are printed below. Line 1 What can you see from the masthead? Line 2 A trading ship for Galway Line 3 What does he pay for the passage? Line 4 A just reward for the pilot Line 5 Rising up on the breaking wave Line 6 Let it carry you over all the sea in the morning Line 7 Weigh, hey, and up she rises, Line 8 Sun is up, the bird’s a-wing Line 9 And we’re sailing free and easy"
+  },
+  {
+   "address": "Q5 A(g)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts of music, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(g)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "differs",
+   "differences": [
+    "Bullet marker only. The page (p.9) prints 'Excerpt 3. An excerpt from Granuaile by Shaun Davey.' (only 'Excerpt 3.' in bold) and then, on its own line, '• The lyrics are printed below.'; the file runs it on as 'Excerpt 3. An excerpt from Granuaile by Shaun Davey. The lyrics are printed below. Line 1 ...' with no bullet. If bullets are carried as in the questionContext strings, the text should read 'Excerpt 3. An excerpt from Granuaile by Shaun Davey.\\n• The lyrics are printed below. Line 1 ...'. Every word, the case, the curly apostrophes (’), the punctuation and every 'Line N' label after that point match the print, character for character."
+   ],
+   "checked": "Excerpt 3. An excerpt from Granuaile by Shaun Davey. The lyrics are printed below. Line 1 What can you see from the masthead? Line 2 A trading ship for Galway Line 3 What does he pay for the passage? Line 4 A just reward for the pilot Line 5 Rising up on the breaking wave Line 6 Let it carry you over all the sea in the morning Line 7 Weigh, hey, and up she rises, Line 8 Sun is up, the bird’s a-wing Line 9 And we’re sailing free and easy"
+  },
+  {
+   "address": "Q5 B(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "questionContext is null; no text from the printed question block reaches this ask. Page 9 prints 'B. Answer one of the following:' directly above (i) to (iv), and page 8 opens Q5 with 'Q. 5 Irish Music. Answer A and B. Note that B contains a choice of questions.'. This is a missing field, not a mis-transcription: no word in the file is wrong. Two points for the coordinator: every HL reading file in the lane (2017 to 2026) leaves Q5 B's questionContext null, and this ask's grid.stem already holds 'Answer one of the following:' (without 'B.'). Under the 'every printed line of the question block' ruling, the printed block for B arguably needs a questionContext such as 'Irish Music. Answer A and B. Note that B contains a choice of questions. B. Answer one of the following:'."
+   ],
+   "checked": null
+  },
+  {
+   "address": "Q5 B(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "questionContext is null; no text from the printed question block reaches this ask. Page 9 prints 'B. Answer one of the following:' directly above (i) to (iv), and page 8 opens Q5 with 'Q. 5 Irish Music. Answer A and B. Note that B contains a choice of questions.'. This is a missing field, not a mis-transcription: no word in the file is wrong. Two points for the coordinator: every HL reading file in the lane (2017 to 2026) leaves Q5 B's questionContext null, and this ask's grid.stem already holds 'Answer one of the following:' (without 'B.'). Under the 'every printed line of the question block' ruling, the printed block for B arguably needs a questionContext such as 'Irish Music. Answer A and B. Note that B contains a choice of questions. B. Answer one of the following:'."
+   ],
+   "checked": null
+  },
+  {
+   "address": "Q5 B(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "questionContext is null; no text from the printed question block reaches this ask. Page 9 prints 'B. Answer one of the following:' directly above (i) to (iv), and page 8 opens Q5 with 'Q. 5 Irish Music. Answer A and B. Note that B contains a choice of questions.'. This is a missing field, not a mis-transcription: no word in the file is wrong. Two points for the coordinator: every HL reading file in the lane (2017 to 2026) leaves Q5 B's questionContext null, and this ask's grid.stem already holds 'Answer one of the following:' (without 'B.'). Under the 'every printed line of the question block' ruling, the printed block for B arguably needs a questionContext such as 'Irish Music. Answer A and B. Note that B contains a choice of questions. B. Answer one of the following:'."
+   ],
+   "checked": null
+  },
+  {
+   "address": "Q5 B(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "questionContext is null; no text from the printed question block reaches this ask. Page 9 prints 'B. Answer one of the following:' directly above (i) to (iv), and page 8 opens Q5 with 'Q. 5 Irish Music. Answer A and B. Note that B contains a choice of questions.'. This is a missing field, not a mis-transcription: no word in the file is wrong. Two points for the coordinator: every HL reading file in the lane (2017 to 2026) leaves Q5 B's questionContext null, and this ask's grid.stem already holds 'Answer one of the following:' (without 'B.'). Under the 'every printed line of the question block' ruling, the printed block for B arguably needs a questionContext such as 'Irish Music. Answer A and B. Note that B contains a choice of questions. B. Answer one of the following:'."
+   ],
+   "checked": null
+  },
+  {
+   "address": "Q6(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(e)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day."
+  },
+  {
+   "address": "Q6(f)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(f)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day."
+  },
+  {
+   "address": "Q6(g)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(g)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day."
+  },
+  {
+   "address": "Q6(h)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(h)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times. The lyrics are printed below. Line 1 Joyful, joyful, Lord we adore Thee. Line 2 God of glory, Lord of love. Line 3 Hearts unfold like flowers before Thee, Line 4 Hail Thee as the sun above. Line 5 Melt the clouds of sin and sadness, Line 6 Drive the dark of doubt away. Line 7 Giver of immortal gladness, Line 8 Fill us with the light, fill us with the light. Line 9 Oh, fill us with the light of day."
+  },
+  {
+   "address": "Q6(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Section A Q1",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "CONTINUATION OF A GIVEN OPENING • Continue the opening below to make a 16–bar melody. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ descant recorder □ oboe □ violin □ trumpet"
+  },
+  {
+   "address": "Section A Q2",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "SETTING MUSIC TO A GIVEN TEXT Here is an extract from Romeo and Juliet by William Shakespeare. But soft, what light through yonder window breaks? It is the east and Juliet is the sun! Arise, fair sun, and kill the envious moon Who is already sick and pale with grief. The opening line has been set to music below. • Set the remaining words to make a melody of 16 bars. (You may exceed this number of bars and include a modulation, if you wish.) • Add appropriate performing directions (phrasing and dynamics) to the melody."
+  },
+  {
+   "address": "Section A Q3",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM The opening phrase of a minuet is given below. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ clarinet □ violin □ flute □ trumpet"
+  },
+  {
+   "address": "Section B Q4",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS PREPARATORY WORK • Plot the chords available in the key of E major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style."
+  },
+  {
+   "address": "Section B Q5",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "COMPOSING BASS NOTES AND CHORD INDICATIONS TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of E flat major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both."
+  },
+  {
+   "address": "Section B Q6",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "ADDING A COUNTERMELODY OR DESCANT AND CHORDAL SUPPORT TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of B minor, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable chord indications in the boxes provided. • Continue the descant part in the given style to complete the piece. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both."
+  }
+ ],
+ "notes": [
+  "Composing Q1 and Q3 instrument lists: the page prints each option after a shadowed 3-D tick box (the nearest Unicode is ❒ U+2752); the file uses □ U+25A1, as the coordinator's ruling names it. This is a rendering of an answer box, not a printed character, so it is not counted as a difference.",
+  "Composing Q1 prints '16–bar' with an en dash (U+2013) and Q3 prints '16-bar' with a hyphen. The file has the same, and the two dashes visibly differ in length at 400 dpi.",
+  "Composing Q3 'Use the form AA¹BB¹.': both 1s are printed superscript and the file has U+00B9 twice. This agrees with the existing readFromPage entry.",
+  "'PREPARATORY WORK' (composing Q4-Q6) is printed in true capitals in a lighter serif, not in small caps of mixed-case text, so the file's capitals match.",
+  "Listening Q6(e)-(h): page 13 prints 'Excerpt 3, played three times. The lyrics are printed below.' as one bold line with no bullet, so the file's run-on form is right there. It differs from Q1 and Q5 A, which print the lyrics line as a separate bullet.",
+  "The 'Q. 1' to 'Q. 6' and 'Q.1' to 'Q.6' question labels are left out of every string, which is the lane's convention; this is not counted as a difference.",
+  "Out of scope but read in passing: every listening questionText, and every excerptLine without lyrics, agreed with the page. They were not formally recorded."
+ ],
+ "summary": {
+  "entriesChecked": 65,
+  "asksCovered": 52,
+  "matchesPrint": 52,
+  "differs": 13,
+  "differsBreakdown": {
+   "wordsCaseSpellingPunctuationDashesApostrophesLineLabels": 0,
+   "bulletMarkerMissingBeforeLyricsLine": [
+    "Q1(a)",
+    "Q1(b)",
+    "Q1(c)",
+    "Q1(d)",
+    "Q1(g)",
+    "Q1(h)",
+    "Q1(i)",
+    "Q5 A(f)",
+    "Q5 A(g)"
+   ],
+   "questionContextNull": [
+    "Q5 B(i)",
+    "Q5 B(ii)",
+    "Q5 B(iii)",
+    "Q5 B(iv)"
+   ]
+  }
+ }
+}
