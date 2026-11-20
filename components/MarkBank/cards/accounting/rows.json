@@ -56295,6 +56295,952 @@
     }
    ]
   },
+  "acc-2023-hl-deferred-q1A(a)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "31/12/2022",
+     "marks": 1,
+     "page": 3
+    },
+    {
+     "id": "r2",
+     "text": "Sales 1,293,150",
+     "marks": 3,
+     "page": 3,
+     "figure": "1,293,150"
+    },
+    {
+     "id": "r3",
+     "text": "Opening stock 31,500",
+     "marks": 3,
+     "page": 3,
+     "figure": "31,500"
+    },
+    {
+     "id": "r4",
+     "text": "Purchases 754,600",
+     "marks": 9,
+     "page": 3,
+     "figure": "754,600"
+    },
+    {
+     "id": "r5",
+     "text": "Closing stock (48,900)",
+     "marks": 6,
+     "page": 3,
+     "figure": "(48,900)"
+    },
+    {
+     "id": "r6",
+     "text": "Advertising 6,000",
+     "marks": 2,
+     "page": 3,
+     "figure": "6,000"
+    },
+    {
+     "id": "r7",
+     "text": "Commission 4,800",
+     "marks": 2,
+     "page": 3,
+     "figure": "4,800"
+    },
+    {
+     "id": "r8",
+     "text": "Depreciation delivery van 43,700",
+     "marks": 4,
+     "page": 3,
+     "figure": "43,700"
+    },
+    {
+     "id": "r9",
+     "text": "Bad debts written off 1,800",
+     "marks": 4,
+     "page": 3,
+     "figure": "1,800"
+    },
+    {
+     "id": "r10",
+     "text": "Salaries & general expenses 167,900",
+     "marks": 3,
+     "page": 3,
+     "figure": "167,900"
+    },
+    {
+     "id": "r11",
+     "text": "Insurance 20,000",
+     "marks": 2,
+     "page": 3,
+     "figure": "20,000"
+    },
+    {
+     "id": "r12",
+     "text": "Patents written off 12,320",
+     "marks": 5,
+     "page": 3,
+     "figure": "12,320"
+    },
+    {
+     "id": "r13",
+     "text": "Loss on insurance claim 2,100",
+     "marks": 1,
+     "page": 3,
+     "figure": "2,100"
+    },
+    {
+     "id": "r14",
+     "text": "Depreciation buildings 16,000",
+     "marks": 2,
+     "page": 3,
+     "figure": "16,000"
+    },
+    {
+     "id": "r15",
+     "text": "Discount received 3,700",
+     "marks": 2,
+     "page": 3,
+     "figure": "3,700"
+    },
+    {
+     "id": "r16",
+     "text": "Rent 21,500",
+     "marks": 7,
+     "page": 3,
+     "figure": "21,500"
+    },
+    {
+     "id": "r17",
+     "text": "Profit on sale delivery van 6,800",
+     "marks": 4,
+     "page": 3,
+     "figure": "6,800"
+    },
+    {
+     "id": "r18",
+     "text": "Decrease in bad debts provision 905",
+     "marks": 4,
+     "page": 3,
+     "figure": "905"
+    },
+    {
+     "id": "r19",
+     "text": "Investment income 6,600",
+     "marks": 4,
+     "page": 3,
+     "figure": "6,600"
+    },
+    {
+     "id": "r20",
+     "text": "Mortgage interest (22,000)",
+     "marks": 4,
+     "page": 3,
+     "figure": "(22,000)"
+    },
+    {
+     "id": "r21",
+     "text": "Net Profit 298,835",
+     "marks": 3,
+     "page": 3,
+     "figure": "298,835"
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q1A(b)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "Patents 49,280",
+     "marks": 2,
+     "page": 4,
+     "figure": "49,280"
+    },
+    {
+     "id": "r2",
+     "text": "Buildings 800,000",
+     "marks": 1,
+     "page": 4,
+     "figure": "800,000"
+    },
+    {
+     "id": "r3",
+     "text": "Buildings",
+     "marks": 1,
+     "page": 4
+    },
+    {
+     "id": "r4",
+     "text": "Delivery Vans 230,000",
+     "marks": 3,
+     "page": 4,
+     "figure": "230,000"
+    },
+    {
+     "id": "r5",
+     "text": "Delivery Vans (73,900)",
+     "marks": 3,
+     "page": 4,
+     "figure": "(73,900)"
+    },
+    {
+     "id": "r6",
+     "text": "Equipment 35,000",
+     "marks": 1,
+     "page": 4,
+     "figure": "35,000"
+    },
+    {
+     "id": "r7",
+     "text": "Equipment (15,000)",
+     "marks": 1,
+     "page": 4,
+     "figure": "(15,000)"
+    },
+    {
+     "id": "r8",
+     "text": "4% investments 220,000",
+     "marks": 2,
+     "page": 4,
+     "figure": "220,000"
+    },
+    {
+     "id": "r9",
+     "text": "Debtors 59,900",
+     "marks": 3,
+     "page": 4,
+     "figure": "59,900"
+    },
+    {
+     "id": "r10",
+     "text": "Less bad debts provision (2,995)",
+     "marks": 1,
+     "page": 4,
+     "figure": "(2,995)"
+    },
+    {
+     "id": "r11",
+     "text": "Investment income due 2,200",
+     "marks": 2,
+     "page": 4,
+     "figure": "2,200"
+    },
+    {
+     "id": "r12",
+     "text": "Closing stock 48,900",
+     "marks": 2,
+     "page": 4,
+     "figure": "48,900"
+    },
+    {
+     "id": "r13",
+     "text": "Insurance claim due 15,900",
+     "marks": 2,
+     "page": 4,
+     "figure": "15,900"
+    },
+    {
+     "id": "r14",
+     "text": "Mortgage interest due 18,000",
+     "marks": 2,
+     "page": 4,
+     "figure": "18,000"
+    },
+    {
+     "id": "r15",
+     "text": "Creditors 33,780",
+     "marks": 5,
+     "page": 4,
+     "figure": "33,780"
+    },
+    {
+     "id": "r16",
+     "text": "Bank 32,540",
+     "marks": 4,
+     "page": 4,
+     "figure": "32,540"
+    },
+    {
+     "id": "r17",
+     "text": "VAT 12,080",
+     "marks": 3,
+     "page": 4,
+     "figure": "12,080"
+    },
+    {
+     "id": "r18",
+     "text": "PAYE, PRSI & USC 2,850",
+     "marks": 1,
+     "page": 4,
+     "figure": "2,850"
+    },
+    {
+     "id": "r19",
+     "text": "8% Mortgage 300,000",
+     "marks": 2,
+     "page": 4,
+     "figure": "300,000"
+    },
+    {
+     "id": "r20",
+     "text": "Capital 700,000",
+     "marks": 1,
+     "page": 4,
+     "figure": "700,000"
+    },
+    {
+     "id": "r21",
+     "text": "Net Profit 298,835",
+     "marks": 1,
+     "page": 4,
+     "figure": "298,835"
+    },
+    {
+     "id": "r22",
+     "text": "Less drawings (44,800)",
+     "marks": 2,
+     "page": 4,
+     "figure": "(44,800)"
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q5(a)(i)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "(i) Cash Sales if the average period of credit given to debtors is 1.5",
+     "marks": 10,
+     "page": 6,
+     "figure": "1.5"
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q5(a)(ii)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "(ii) Return on Capital Employed.",
+     "marks": 10,
+     "page": 6
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q5(a)(iii)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "(iii) Dividend Yield.",
+     "marks": 10,
+     "page": 6
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q5(a)(iv)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "(iv) Price Earnings Ratio .",
+     "marks": 10,
+     "page": 6
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q5(a)(v)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "(v) Interest Cover.",
+     "marks": 10,
+     "page": 6
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q5(b)": {
+   "how": "partition",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "Profitability. Desmond is a profitable business. The Return on Capital Employed (roce) in 2022 is",
+     "marks": 7,
+     "page": 7
+    },
+    {
+     "id": "r2",
+     "text": "Dividend Policy.",
+     "marks": 6,
+     "page": 7
+    },
+    {
+     "id": "r3",
+     "text": "Liquidity. The current ratio is 0.92:1 (€110,000 : €120,000).",
+     "marks": 7,
+     "page": 7
+    },
+    {
+     "id": "r4",
+     "text": "Gearing.",
+     "marks": 6,
+     "page": 8
+    },
+    {
+     "id": "r5",
+     "text": "Sector. Desmond plc operates in the IT security sector. In the short term, prospects are good because plus valid reason. In the long term, prospects are good/bad because plus valid reason.",
+     "marks": 5,
+     "page": 8
+    },
+    {
+     "id": "r6",
+     "text": "Market Value of a Share.",
+     "marks": 6,
+     "page": 8
+    },
+    {
+     "id": "r7",
+     "text": "buy 150,000",
+     "marks": 3,
+     "page": 8,
+     "figure": "150,000"
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q5(c)": {
+   "how": "partition",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "would be of interest to these stakeholders. Employees Employees will be mainly interested to know whether the company is profitable enough for their jobs to be secure. Is the business making sufficient profits to maintain their jobs? Could the business afford to pay their pensions? They will also be interested in how much of the profits is being paid to shareholders in the form of dividends as the",
+     "marks": 10,
+     "page": 9,
+     "block": true
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q6(b)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "(i) Explain why it is important that financial statements are properly regulated. Regulation is important for the following reasons: • To ensure that financial statements are consistent from year to year • To ensure that financial statements can be easily compared with other businesses • To ensure that financial statements comply with national and international law • To ensure that the required ac",
+     "marks": 10,
+     "page": 13,
+     "block": true
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q8(a)(i)-break-even": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "per unit = €533,340",
+     "marks": 11,
+     "page": 14,
+     "figure": "€533,340"
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q8(a)(i)-margin-of-safety": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "= 45,555",
+     "marks": 5,
+     "page": 14,
+     "figure": "45,555"
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q8(a)(ii)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "calculated in part (i). Costs/ T R revenue Output (Units)",
+     "marks": 8,
+     "page": 15
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q8(a)(iii)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "116,667 = Units 116,667",
+     "marks": 8,
+     "page": 15,
+     "figure": "116,667"
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q8(a)(iv)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "Selling price to be charged = €12.27",
+     "marks": 8,
+     "page": 16,
+     "figure": "€12.27"
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q8(a)(v)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "Sales units) 1,330,000",
+     "marks": 10,
+     "page": 16,
+     "figure": "1,330,000"
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q8(b)(i)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "(i) Calculate the closing stock using ‘First in/First out’ (fifo) Stock 01/01/22 5,500 units Add purchases 11,400 units Less sales (11,800) units = Stock 31/12/22 5,100 units Closing Stock Valuation",
+     "marks": 15,
+     "page": 17
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q8(b)(ii)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "Sales 129,300",
+     "marks": 3,
+     "page": 17,
+     "figure": "129,300"
+    },
+    {
+     "id": "r2",
+     "text": "Opening stock 01/01 44,000",
+     "marks": 2,
+     "page": 17,
+     "figure": "44,000"
+    },
+    {
+     "id": "r3",
+     "text": "Add purchases 103,000",
+     "marks": 2,
+     "page": 17,
+     "figure": "103,000"
+    },
+    {
+     "id": "r4",
+     "text": "Less closing stock (47,800)",
+     "marks": 2,
+     "page": 17,
+     "figure": "(47,800)"
+    },
+    {
+     "id": "r5",
+     "text": "Gross Profit 30,100",
+     "marks": 2,
+     "page": 17,
+     "figure": "30,100"
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q8(b)(iii)": {
+   "how": "heading",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "(iii) Outline the implications of an incorrect stock valuation Incorrect valuation of stock affects: • The financial statements of two years or two accounting periods i.e., the closing stock of one accounting period and the opening stock of the next accounting period. • The figures for cost of sales, gross profit, net profit and subsequent figures in the balance sheet. • In the balance sheet, it w",
+     "marks": 4,
+     "page": 18
+    }
+   ]
+  },
+  "acc-2023-hl-deferred-q9(a)": {
+   "how": "partition",
+   "rows": [
+    {
+     "id": "r1",
+     "text": "Cash Sales Receipts 47,040",
+     "marks": 1,
+     "page": 19,
+     "figure": "47,040"
+    },
+    {
+     "id": "r2",
+     "text": "Cash Sales Receipts 70,560",
+     "marks": 1,
+     "page": 19,
+     "figure": "70,560"
+    },
+    {
+     "id": "r3",
+     "text": "Cash Sales Receipts 94,080",
+     "marks": 1,
+     "page": 19,
+     "figure": "94,080"
+    },
+    {
+     "id": "r4",
+     "text": "Cash Sales Receipts 65,856",
+     "marks": 1,
+     "page": 19,
+     "figure": "65,856"
+    },
+    {
+     "id": "r5",
+     "text": "Cash Sales Receipts 58,800",
+     "marks": 1,
+     "page": 19,
+     "figure": "58,800"
+    },
+    {
+     "id": "r6",
+     "text": "Cash Sales Receipts 49,392",
+     "marks": 1,
+     "page": 19,
+     "figure": "49,392"
+    },
+    {
+     "id": "r7",
+     "text": "- 36,000 54,000 72,000 50,400 45,000 (1 month) Credit Sales",
+     "marks": 2,
+     "page": 19,
+     "block": true
+    },
+    {
+     "id": "r8",
+     "text": "Credit pur (1 month) - 32,300",
+     "marks": 2,
+     "page": 19,
+     "figure": "32,300"
+    },
+    {
+     "id": "r9",
+     "text": "Credit pur (1 month) - 40,850",
+     "marks": 1,
+     "page": 19,
+     "figure": "40,850"
+    },
+    {
+     "id": "r10",
+     "text": "Credit pur (1 month) - 55,100",
+     "marks": 1,
+     "page": 19,
+     "figure": "55,100"
+    },
+    {
+     "id": "r11",
+     "text": "Credit pur (1 month) - 38,950",
+     "marks": 1,
+     "page": 19,
+     "figure": "38,950"
+    },
+    {
+     "id": "r12",
+     "text": "Credit pur (1 month) - 32,300",
+     "marks": 1,
+     "page": 19,
+     "figure": "32,300"
+    },
+    {
+     "id": "r13",
+     "text": "- - 34,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "34,000"
+    },
+    {
+     "id": "r14",
+     "text": "- - 43,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "43,000"
+    },
+    {
+     "id": "r15",
+     "text": "- - 58,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "58,000"
+    },
+    {
+     "id": "r16",
+     "text": "- - 41,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "41,000"
+    },
+    {
+     "id": "r17",
+     "text": "Wages 18,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "18,000"
+    },
+    {
+     "id": "r18",
+     "text": "Wages 21,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "21,000"
+    },
+    {
+     "id": "r19",
+     "text": "Wages 24,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "24,000"
+    },
+    {
+     "id": "r20",
+     "text": "Wages 20,400",
+     "marks": 1,
+     "page": 19,
+     "figure": "20,400"
+    },
+    {
+     "id": "r21",
+     "text": "Wages 19,500",
+     "marks": 1,
+     "page": 19,
+     "figure": "19,500"
+    },
+    {
+     "id": "r22",
+     "text": "Wages 18,300",
+     "marks": 1,
+     "page": 19,
+     "figure": "18,300"
+    },
+    {
+     "id": "r23",
+     "text": "Variable O/Hs 20,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "20,000"
+    },
+    {
+     "id": "r24",
+     "text": "Variable O/Hs 40,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "40,000"
+    },
+    {
+     "id": "r25",
+     "text": "Variable O/Hs 28,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "28,000"
+    },
+    {
+     "id": "r26",
+     "text": "Variable O/Hs 25,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "25,000"
+    },
+    {
+     "id": "r27",
+     "text": "Variable O/Hs 21,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "21,000"
+    },
+    {
+     "id": "r28",
+     "text": "Fixed O/Hs (-depr) 21,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "21,000"
+    },
+    {
+     "id": "r29",
+     "text": "Equipment 144,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "144,000"
+    },
+    {
+     "id": "r30",
+     "text": "Loan instalments - 6,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "6,000"
+    },
+    {
+     "id": "r31",
+     "text": "Loan Interest 600",
+     "marks": 1,
+     "page": 19,
+     "figure": "600"
+    },
+    {
+     "id": "r32",
+     "text": "Loan Interest 570",
+     "marks": 1,
+     "page": 19,
+     "figure": "570"
+    },
+    {
+     "id": "r33",
+     "text": "Loan Interest 540",
+     "marks": 1,
+     "page": 19,
+     "figure": "540"
+    },
+    {
+     "id": "r34",
+     "text": "Loan Interest 510",
+     "marks": 1,
+     "page": 19,
+     "figure": "510"
+    },
+    {
+     "id": "r35",
+     "text": "Loan Interest 480",
+     "marks": 1,
+     "page": 19,
+     "figure": "480"
+    },
+    {
+     "id": "r36",
+     "text": "Loan Interest 450",
+     "marks": 1,
+     "page": 19,
+     "figure": "450"
+    },
+    {
+     "id": "r37",
+     "text": "Net Cash (150,560)",
+     "marks": 1,
+     "page": 19,
+     "figure": "(150,560)"
+    },
+    {
+     "id": "r38",
+     "text": "Net Cash (4310)",
+     "marks": 1,
+     "page": 19,
+     "figure": "(4310)"
+    },
+    {
+     "id": "r39",
+     "text": "Net Cash 17,690",
+     "marks": 1,
+     "page": 19,
+     "figure": "17,690"
+    },
+    {
+     "id": "r40",
+     "text": "Net Cash 17,846",
+     "marks": 1,
+     "page": 19,
+     "figure": "17,846"
+    },
+    {
+     "id": "r41",
+     "text": "Net Cash 12,270",
+     "marks": 1,
+     "page": 19,
+     "figure": "12,270"
+    },
+    {
+     "id": "r42",
+     "text": "Net Cash 4,742",
+     "marks": 1,
+     "page": 19,
+     "figure": "4,742"
+    },
+    {
+     "id": "r43",
+     "text": "Bank Loan 120,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "120,000"
+    },
+    {
+     "id": "r44",
+     "text": "Opening Balance 30,000",
+     "marks": 1,
+     "page": 19,
+     "figure": "30,000"
+    },
+    {
+     "id": "r45",
+     "text": "Opening Balance 36,936",
+     "marks": 1,
+     "page": 19,
+     "figure": "36,936"
+    },
+    {
+     "id": "r46",
+     "text": "Closing Balance 41,678",
+     "marks": 3,
+     "page": 19,
+     "figure": "41,678"
+    },
+    {
+     "id": "r47",
+     "text": "Sales 984,000",
+     "marks": 1,
+     "page": 20,
+     "figure": "984,000"
+    },
+    {
+     "id": "r48",
+     "text": "+Purchases 480,000",
+     "marks": 1,
+     "page": 20,
+     "figure": "480,000"
+    },
+    {
+     "id": "r49",
+     "text": "Wages 121,200",
+     "marks": 1,
+     "page": 20,
+     "figure": "121,200"
+    },
+    {
+     "id": "r50",
+     "text": "Variable Overheads 164,000",
+     "marks": 1,
+     "page": 20,
+     "figure": "164,000"
+    },
+    {
+     "id": "r51",
+     "text": "Fixed Overheads 126,000",
+     "marks": 1,
+     "page": 20,
+     "figure": "126,000"
+    },
+    {
+     "id": "r52",
+     "text": "months) 12,000",
+     "marks": 1,
+     "page": 20,
+     "figure": "12,000"
+    },
+    {
+     "id": "r53",
+     "text": "Discount allowed (984,000 x 40% x 2%) 7,872",
+     "marks": 2,
+     "page": 20,
+     "figure": "7,872"
+    }
+   ]
+  },
   "acc-2023-hl-q1A(a)": {
    "how": "heading",
    "rows": [

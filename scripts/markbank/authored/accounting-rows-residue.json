@@ -178,6 +178,18 @@
    "reason": "The cash budget has five months plus a total column with bare numeric prices. Bind marks to row and month, including final-column totals. Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
   },
   {
+   "id": "acc-2023-hl-deferred-q6(a)",
+   "reason": "marks 97 vs totals 100 over the question; resolved 1/2 scale 1"
+  },
+  {
+   "id": "acc-2023-hl-deferred-q9(b)",
+   "reason": "marks 72 vs totals 80 over the question; resolved 1/3 scale 1"
+  },
+  {
+   "id": "acc-2023-hl-deferred-q9(c)",
+   "reason": "marks 72 vs totals 80 over the question; resolved 1/3 scale 1"
+  },
+  {
    "id": "acc-2023-hl-q8(b)(i)",
    "reason": "The two profit statements share 18 marks; absorption and marginal costs must remain labelled separately. A six-mark benefits block follows and is not part of the calculation. Implement and visually verify the source mapping described above; retain the complete original scheme and half-mark stepper until then."
   },

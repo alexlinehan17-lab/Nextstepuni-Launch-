@@ -11,6 +11,10 @@ type AuthoredTask = Omit<(typeof authored.cards)[number], 'level' | 'schemeRegio
 };
 
 /** The SEC's deferred sittings (build.py is_deferred): their own edition, "LC032ALP000EV-deferred.pdf". */
+/** A task the deferred scheme sets out no solution for (build.py schemeOmitsTask): the SEC's own page-2 note, quoted. */
+const DEFERRED_SCHEME_NOTE = 'The SEC’s note on its deferred marking schemes (PDF page 2): “In the case of the deferred '
+  + 'examinations, this means that the level of detail may vary by question, as the marking scheme will only have been '
+  + 'finalised for the questions attempted by the candidates who sat these examinations.”';
 const isDeferred = (task: AuthoredTask) => (task as { sitting?: string }).sitting === 'deferred';
 
 const makeCard = (task: AuthoredTask): SecRubricCard => {
@@ -49,6 +53,7 @@ const makeCard = (task: AuthoredTask): SecRubricCard => {
     rubric: {
       system: 'accounting', solution, allocationNote: task.allocationNote, taskFocus: task.taskFocus ?? undefined,
       ...(ROWS[task.id] ? { rows: ROWS[task.id].rows } : {}),
+      ...((task as { schemeOmitsTask?: boolean }).schemeOmitsTask ? { unprintedAnswer: { citation: DEFERRED_SCHEME_NOTE } } : {}),
     },
   };
 };

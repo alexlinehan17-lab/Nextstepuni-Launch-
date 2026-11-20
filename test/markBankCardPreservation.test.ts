@@ -1372,7 +1372,7 @@ const ART_DEFERRED_ADDED = { higher: 62 + 26, ordinary: 26 };
 const isArtDeferred = (id: string) => /^art-\d{4}-(?:hl|ol)-deferred-/.test(id);
 /* Accounting's deferred sittings (accounting/build.py CARDED_DEFERRED_YEARS) are new cards, acc-<year>-hl-deferred-q…,
  * pinned per level here and never folded into the frozen 721 / 644. */
-const ACCOUNTING_DEFERRED_ADDED = { higher: 43, ordinary: 0 };
+const ACCOUNTING_DEFERRED_ADDED = { higher: 43 + 34, ordinary: 0 };
 const isAccountingDeferred = (id: string) => /^acc-\d{4}-(?:hl|ol)-deferred-q/.test(id);
 const accountingDeferredTotal = ACCOUNTING_DEFERRED_ADDED.higher + ACCOUNTING_DEFERRED_ADDED.ordinary;
 /* Applied Mathematics' deferred sittings (reviewed/applied-maths/<year>-deferred.json), am-<year>-hl-deferred-…: new

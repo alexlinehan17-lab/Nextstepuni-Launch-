@@ -53,7 +53,7 @@ def read(path):
 # answer sidecar and scheme text, its own Atlas rows. It has no earlier sidecar to preserve.
 # The deferred sittings carded so far, each entered into the inventory (and so into reconcile.py's corpus) when its
 # reviewed manifest lands: one commit per sitting.
-CARDED_DEFERRED_YEARS = (2022,)
+CARDED_DEFERRED_YEARS = (2022, 2023)
 
 
 def is_deferred(review):
@@ -297,7 +297,10 @@ def build(finalize=False):
                         paperPages=pages, schemeRegions=solution_regions,
                         taskFocus=task.get('focus'), allocationNote=task['allocationEvidence'],
                         reviewedAt=review['reviewedAt'],
-                        **({'sitting': 'deferred'} if is_deferred(review) else {}))
+                        **({'sitting': 'deferred'} if is_deferred(review) else {}),
+                        # A task the deferred scheme sets out no solution for (its page-2 note: finalised only for the
+                        # questions candidates attempted): the card says so (factory.ts unprintedAnswer), never a row.
+                        **({'schemeOmitsTask': True} if task.get('schemeOmitsTask') else {}))
             cards.append(card)
             mapping_rows.append(dict(level=level, year=year, fileid=fileid,
                                      n=task['key'], topicIds=task['examTopicIds']))

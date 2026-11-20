@@ -19,7 +19,10 @@ describe('Accounting source review, 28 October 2026', () => {
       'acc-2022-hl-deferred-q7(a)', 'acc-2022-hl-deferred-q7(e)', 'acc-2022-hl-deferred-q8(a)(i)-break-even',
       'acc-2022-hl-deferred-q8(a)(i)-margin-of-safety', 'acc-2022-hl-deferred-q8(a)(ii)', 'acc-2022-hl-deferred-q8(a)(iii)',
       'acc-2022-hl-deferred-q8(a)(iv)', 'acc-2022-hl-deferred-q8(b)(i)', 'acc-2022-hl-deferred-q8(b)(ii)',
-      'acc-2022-hl-deferred-q8(b)(iii)']);
+      'acc-2022-hl-deferred-q8(b)(iii)',
+      // 2023 Higher deferred: Q6(a)'s itemised credits total 89 of its boxed 90, and Q9(b)-(c) share a question whose
+      // printed marks the parser reads as 72 of 80; each keeps the crop and the stepper.
+      'acc-2023-hl-deferred-q6(a)', 'acc-2023-hl-deferred-q9(b)', 'acc-2023-hl-deferred-q9(c)']);
     expect(deferredResidue.every(task => task.reason.length > 0)).toBe(true);
     expect(retained).toHaveLength(49);
     for (const task of review.tasks) {

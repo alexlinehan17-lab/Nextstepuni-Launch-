@@ -47,7 +47,7 @@ describe('Accounting corpus reconciliation', () => {
       .flatMap(entry => entry.papers.map(paper => `${entry.year}/${paper.doc.f}`));
     const deferredInventory = inventory.papers.filter(paper => 'sitting' in paper && paper.sitting === 'deferred')
       .map(paper => `${paper.year}/${paper.fileid}`);
-    expect(deferredInventory).toEqual(['2022/LC032ALP000EV-deferred.pdf']);
+    expect(deferredInventory).toEqual(['2022/LC032ALP000EV-deferred.pdf', '2023/LC032ALP000EV-deferred.pdf']);
     expect(deferredInventory.every(key => deferredIndexed.includes(key))).toBe(true);
     expect(new Set(inventory.papers.map(paper => `${paper.year}/${paper.fileid}`))).toEqual(new Set([...indexed, ...deferredInventory]));
     expect(progress.editions.filter(edition => edition.status === 'pending')).toEqual([]);
@@ -269,11 +269,11 @@ describe('Accounting paper-specific allocations', () => {
     expect(byQuestion).toEqual({ 1: year < 2021 ? 120 : 240, 2: 60, 3: 60, 4: 60, 5: 100, 6: 100, 7: 100, 8: 80, 9: 80 });
   });
 
-  it('cards every separately priced task of each carded deferred sitting on its own edition', () => {
-    const cards = [...CARDS, ...ORDINARY].filter(card => isDeferredEdition(card.paperFileid));
+  it.each([[2022, 43], [2023, 34]] as const)('cards every separately priced task of the %i deferred sitting on its own edition', (year, count) => {
+    const cards = [...CARDS, ...ORDINARY].filter(card => isDeferredEdition(card.paperFileid) && card.year === year);
     expect(cards.map(card => [card.year, card.level, card.paperFileid]).filter((v, i, a) => a.findIndex(w => w.join() === v.join()) === i))
-      .toEqual([[2022, 'higher', 'LC032ALP000EV-deferred']]);
-    expect(cards).toHaveLength(43);
+      .toEqual([[year, 'higher', 'LC032ALP000EV-deferred']]);
+    expect(cards).toHaveLength(count);
     expect(cards.every(tariffReconciles)).toBe(true);
     expect(cards.every(card => card.questionRef.endsWith(' — Deferred sitting')
       && card.schemeCitation.includes(', deferred examination,'))).toBe(true);
@@ -284,6 +284,23 @@ describe('Accounting paper-specific allocations', () => {
       return totals;
     }, {});
     expect(byQuestion).toEqual({ 1: 240, 2: 60, 3: 60, 4: 60, 5: 100, 6: 100, 7: 100, 8: 80, 9: 80 });
+  });
+
+  it('says so on each 2023 deferred task its scheme sets out no solution for (coordinator ruling, 20 Nov)', () => {
+    // The 2023 deferred scheme prints no solution for Q1(B), Q2, Q3, Q4 or Q7: eleven tasks, 400 of the paper's 880
+    // marks. Each card shows UNPRINTED_ANSWER and quotes the SEC's page-2 note; it has no row to claim.
+    const omitted = CARDS.filter(card => card.rubric.system === 'accounting' && card.rubric.unprintedAnswer);
+    expect(omitted.map(card => card.id).sort()).toEqual(['acc-2023-hl-deferred-q1B(a)', 'acc-2023-hl-deferred-q1B(b)',
+      'acc-2023-hl-deferred-q2(a)', 'acc-2023-hl-deferred-q2(b)', 'acc-2023-hl-deferred-q2(c)', 'acc-2023-hl-deferred-q3',
+      'acc-2023-hl-deferred-q4(a)', 'acc-2023-hl-deferred-q4(b)', 'acc-2023-hl-deferred-q4(c)', 'acc-2023-hl-deferred-q7(a)',
+      'acc-2023-hl-deferred-q7(b)'].sort());
+    expect(omitted.reduce((sum, card) => sum + card.totalMarks, 0)).toBe(400);
+    for (const card of omitted) {
+      if (card.rubric.system !== 'accounting') throw new Error(card.id);
+      expect(card.rubric.rows).toBeUndefined();
+      expect(card.rubric.unprintedAnswer!.citation).toContain('will only have been finalised for the questions attempted by the candidates');
+      expect(card.rubric.solution.pages).toEqual([2]);
+    }
   });
 
   it('retains the repeated 2010 acid-test requirement within its only published allocation', () => {

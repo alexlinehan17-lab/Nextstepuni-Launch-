@@ -40,6 +40,9 @@ HERE=os.path.dirname(os.path.abspath(__file__)); ROOT=os.path.abspath(os.path.jo
 os.chdir(ROOT)
 sys.path.insert(0, os.path.join(ROOT, 'scripts/paper-trail')); import accounting_era as era
 cards=json.load(open('components/MarkBank/cards/accounting/authored.json'))['cards']
+# A task its deferred scheme sets out no solution for (build.py schemeOmitsTask) has nothing to lift: its card says so
+# (factory.ts unprintedAnswer), so it is neither a row source nor residue.
+cards=[c for c in cards if not c.get('schemeOmitsTask')]
 # The scheme's text layer draws "ti", "tt", "fi" as single ligature glyphs and its bullets from the Symbol font;
 # the shared repair map (glyphmap.json, ligature test) and NFKC make them the printed letters.
 GLYPHMAP=json.load(open(os.path.join(HERE, 'glyphmap.json')))
