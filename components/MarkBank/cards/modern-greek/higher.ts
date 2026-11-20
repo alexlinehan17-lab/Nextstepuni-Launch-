@@ -1031,6 +1031,208 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2015 Higher Level — © State Examinations Commission.",
+    id: "mgr-2015-hl-1-1", topicId: "modern-greek-0-0", conceptId: "mgr-δίνεται-εξηγήσετε-λέξεων",
+    section: "1", questionRef: "2015 HL Section 1 Q1",
+    questionText: "Να εξηγήσετε με δικά σας λόγια τη σημασία των παρακάτω λέξεων ή φράσεων που είναι υπογραμμισμένες στο κείμενο που σας δίνεται:\nοικονομική ευημερία,\nπροβλέψουμε,\nνα επιλέξεις,\nφτιάχνεις,\nέχει εντοπίσει",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "οικονομική πρόοδος, καλοπέραση", marks: null, contextNote: "For “οικονομική ευημερία”: The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "καθορίσουμε, διακρίνουμε, καταλάβουμε", marks: null, contextNote: "For “προβλέψουμε”" },
+    { id: "r-3", kind: "point", verbatim: "να διαλέξεις", marks: null, contextNote: "For “να επιλέξεις”" },
+    { id: "r-4", kind: "point", verbatim: "δημιουργείς, τραβάς", marks: null, contextNote: "For “φτιάχνεις”" },
+    { id: "r-5", kind: "point", verbatim: "έχει παρατηρήσει", marks: null, contextNote: "For “έχει εντοπίσει”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2015 Higher Level — © State Examinations Commission.",
+    id: "mgr-2015-hl-1-2", topicId: "modern-greek-0-1", conceptId: "mgr-αγαθό-ανθρώπους-επιστήμη",
+    section: "1", questionRef: "2015 HL Section 1 Q2",
+    questionText: "Ποιο είναι το σημαντικότερο αγαθό που φέρνει στους ανθρώπους την ευτυχία σύμφωνα με την επιστήμη;",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Το σημαντικότερο αγαθό που φέρνει ευτυχία σύμφωνα με την επιστήμη είναι οι καλές ανθρώπινες κοινωνικές σχέσεις, οικογενειακές ή φιλικές. Αυτό μετράει πολύ πάνω και από τα χρήματα, αλλά και από την υγεία. Με μία όμως εξαίρεση, τα παιδιά. Όλοι θα σου πουν ότι «τα παιδιά είναι η μεγαλύτερη πηγή ευτυχίας», οι επιστημονικές όμως έρευνες όλα αυτά τα χρόνια δεν το επιβεβαιώνουν. Σε κάποιες έρευνες, μάλιστα, φαίνεται και μια μικρή αρνητική συσχέτιση, δηλαδή άνθρωποι με παιδιά είναι λίγο λιγότερο ευτυχισμένοι από εκείνους χωρίς παιδιά. Δεν υπάρχει αμφιβολία ότι τα παιδιά δίνουν νόημα στη ζωή, αλλά την ίδια στιγμή αποτελούν το μοναδικό είδος σχέσης στην οποία ο άλλος, το παιδί σ αυτήν την περίπτωση χρειάζεται συνεχώς πράγματα από εσένα και συνήθως, τουλάχιστον για καιρό, δίνει πολύ λίγα πίσω.", marks: 5, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2015 Higher Level — © State Examinations Commission.",
+    id: "mgr-2015-hl-1-3", topicId: "modern-greek-0-1", conceptId: "mgr-γκίλμπερτ-ευτυχία-ρόλο",
+    section: "1", questionRef: "2015 HL Section 1 Q3",
+    questionText: "Να σχολιάσετε την άποψη του Ν. Γκίλμπερτ για τον ρόλο της φαντασίας στην ευτυχία.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ο εγκέφαλος μας κάνει μια σειρά από λάθη όταν με το μυαλό του προσπαθεί να «φανταστεί» κάποια γεγονότα από το μέλλον του. Ένα είναι ότι προσομοιώνουμε το κεντρικό κομμάτι ενός επεισοδίου και όχι τις λεπτομέρειες. Πες, για παράδειγμα, ότι σου ζητώ να φανταστείς ότι πηγαίνεις στον οδοντίατρο. Εάν, όταν τελειώσεις, σε ρωτήσω πού πάρκαρες το αυτοκίνητο ή τι μουσική έπαιζε στο οδοντιατρείο ή εάν ήταν ευγενική η γραμματέας, δεν θα ξέρεις, γιατί αυτό που προσομοίωσες είναι μόνο το κεντρικό μέρος του γεγονότος: εσύ στην καρέκλα, με το στόμα ανοιχτό, και ο γιατρός να κάνει κάτι. Οι λεπτομέρειες όμως που δεν κατάφερες να φανταστείς είναι πολύ σημαντικές στην εκτίμηση του κατά πόσο θα απολαύσεις ή όχι την επίσκεψη. Ένα άλλο πρόβλημα είναι ότι φανταζόμαστε την αρχή των επεισοδίων. Για παράδειγμα, σου ζητώ να επιλέξεις μεταξύ ενός πόνου στη μέση για την υπόλοιπη ζωή σου ή την απώλεια της όρασής σου, τι διαλέγεις; Όλοι απαντούν τον πόνο στη μέση. Και η απάντησή τους είναι λανθασμένη! Ο διαρκής πόνος στη μέση θα σε κάνει δυστυχισμένο. Αντίθετα, οι τυφλοί δεν είναι δυστυχισμένοι. Κάνεις αυτό το λάθος γιατί στην πραγματικότητα φαντάζεσαι τη στιγμή που χάνεις την όρασή σου. Όταν όμως φτιάχνεις τη νοητική εικόνα, τραβάς συνήθως φωτογραφία και όχι βίντεο. Αυτά είναι μερικά από τα λάθη που συνήθως κάνουμε.", marks: 5, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2015 Higher Level — © State Examinations Commission.",
+    id: "mgr-2015-hl-1-4", topicId: "modern-greek-0-1", conceptId: "mgr-αντίληψη-είμαστε-ενταγμένοι",
+    section: "1", questionRef: "2015 HL Section 1 Q4",
+    questionText: "Με ποιο τρόπο ο πολιτισμός στον οποίο είμαστε ενταγμένοι επηρεάζει την αντίληψη μας για την ευτυχία;",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Είμαστε όλοι μέλη μιας κουλτούρας. Περιβαλλόμαστε από ανθρώπους, γονείς, θείους, παρουσιαστές τηλεόρασης, ιερείς, μπάρμαν, ταξιτζήδες, και όλοι αυτοί έχουν μια θεωρία για το τι φέρνει ευτυχία στον άνθρωπο και δεν διστάζουν να τη μοιραστούν.", marks: 5, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2015 Higher Level — © State Examinations Commission.",
+    id: "mgr-2015-hl-1-5", topicId: "modern-greek-0-1", conceptId: "mgr-αυτή-επιστήμονες-ευτυχίας",
+    section: "1", questionRef: "2015 HL Section 1 Q5",
+    questionText: "Ποια είναι η συνταγή της ευτυχίας σύμφωνα με τους επιστήμονες και πως πρόεκυψε αυτή η συνταγή ;",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Δεν υπάρχει μυστικό ευτυχίας. Υπάρχουν όμως πράγματα τα οποία αν κάνεις κάθε μέρα για κάποιο μεγάλο χρονικό διάστημα, ένα χρόνο ή και περισσότερο, θα δεις τη ζωή σου να αλλάζει. Και επειδή δεν είμαστε καλοί στο να τα προβλέψουμε μόνοι μας, η επιστήμη τα έχει εντοπίσει για εμάς. Περισσότερος και πιο ποιοτικός ύπνος, επένδυση χρόνου στις κοινωνικές σχέσεις, διαλογισμός, ακόμη και ασκήσεις ευγνωμοσύνης, να καταγράφεις δηλαδή θετικά πράγματα που έχεις στη ζωή σου, μπορούν να αυξήσουν την ευτυχία μας.", marks: 5, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2015 Higher Level — © State Examinations Commission.",
+    id: "mgr-2015-hl-1-6", topicId: "modern-greek-0-1", conceptId: "mgr-ανθρώπων-ευτυχισμένη-ζωή",
+    section: "1", questionRef: "2015 HL Section 1 Q6",
+    questionText: "Γιατί οι κοινωνικές σχέσεις κάνουν τη ζωή των ανθρώπων πιο ευτυχισμένη;",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Επειδή ο άνθρωπος θέλει να είναι μαζί με άλλους , να μοιράζεται τη χαρά , τα προβλήματα του, τη λύπη του, να ξέρει ότι κάπου ανήκει . Ο άνθρωπος είναι από τη φύση του κοινωνικός , είναι ενταγμένος μέσα στην κοινωνία που ζει.", marks: 5, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2015 Higher Level — © State Examinations Commission.",
+    id: "mgr-2015-hl-2", topicId: "modern-greek-1-0", conceptId: "mgr-έκφραση-έχεις-αγοράσουν",
+    section: "2", questionRef: "2015 HL Section 2",
+    questionText: "Να σχολιάσετε σε περίπου 100 λέξεις πως καταλαβαίνετε την έκφραση: Τα χρήματα κάνουν τη ζωή του ανθρώπου ευκολότερη αλλά δεν χρειάζεται να έχεις πολλά χρήματα για να αποκτήσεις σχεδόν όλη την ευτυχία που τα λεφτά μπορούν να σου αγοράσουν.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Χωρίς λεφτά ο άνθρωπος δυσκολεύεται να εκπληρώσει έστω και τις στοιχειώδεις υποχρεώσεις του . Για αυτό αναζητά τα χρήματα για να έχει η ζωή του άνεση και ποιότητα. Τα χρήματα όμως δεν μπορούν να αγοράσουν συναισθήματα αξίες, φιλίες αληθινές. Η σωστή ιεράρχηση των αναγκών , των αξιών και των επιθυμιών, μπορεί να βοηθήσει τον άνθρωπο να νιώθει ικανοποιημένος , χωρίς να αναζητά συνεχώς περισσότερα χρήματα και να αφήνει τα χρόνια να περνούν κυνηγώντας κάτι που εξάλλου δεν έχει τέλος.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2015 Higher Level — © State Examinations Commission.",
+    id: "mgr-2015-hl-3-1", topicId: "modern-greek-1-0", conceptId: "mgr-ένας-ανθρώπους-βοηθήσει",
+    section: "3", questionRef: "2015 HL Section 3 Q1",
+    questionText: "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων. Είναι τα κοινωνικά μέσα της εποχής μας ένας τρόπος που μπορεί να βοηθήσει τους ανθρώπους να νιώσουν πιο ευτυχισμένοι;",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Οι άνθρωποι στις μέρες μας και ειδικότερα οι νεότερες και οι μεσαίας ηλικίας γενιές χρησιμοποιούν τον ηλεκτρονικό υπολογιστή σε ημερήσια βάση για πολλές ώρες. Μέσα από αυτόν ψωνίζουν , δουλεύουν, τακτοποιούν τις περισσότερες δοσοληψίες τους , αλληλογραφούν , επικοινωνούν τηλεφωνικά και όχι μόνο και στις ελεύθερες ώρες τους ψυχαγωγούνται και ασχολούνται με τα μέσα κοινωνικής δικτύωσης. Για όλους αυτούς τους λόγους μένουν κλεισμένοι και περιορισμένοι γύρω από τον υπολογιστή , το κινητό ή το tablet τους.", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Η νέα αυτή συνήθεια των ανθρώπων που παρατηρείται με τόση ένταση τις τελευταίες δύο δεκαετίες , έχει αρχίσει και γίνεται αντικείμενο μελέτης από τους μελετητές, τους επιστήμονες και άλλους συναφείς με το χώρο και τα αποτελέσματα των ερευνών αυτών δείχνουν ότι οι άνθρωποι έχοντας χάσει την πραγματική επαφή με τους ανθρώπους, τα αντικείμενα και τη κοινή ψυχαγωγία σε κοινούς χώρους δεν κάνουν τους ανθρώπους πιο ευτυχισμένους.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Από την άλλη όμως πλευρά τα κοινωνικά μέσα φέρνουν κοντά ανθρώπους που για διάφορους λόγους π.χ. εργασία , σπουδές, γάμος κ.λπ. μένουν μόνοι και μακριά από οικεία πρόσωπα. Συμπερασματικά, τα κοινωνικά μέσα δικτύωσης ούτε μπορούμε να τα θεωρήσουμε σωτηρία των σύγχρονων προβλημάτων των ανθρώπων , ούτε όμως να τα καταδικάσουμε χωρίς σκέψη.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Η καλή χρήση τους και η συνειδητοποίηση ότι η πραγματική ζωή δεν είναι στην οθόνη , αλλά έξω , θα βοηθούσε όλους να νιώθουν περισσότερο ευτυχισμένοι.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2015 Higher Level — © State Examinations Commission.",
+    id: "mgr-2015-hl-3-2", topicId: "modern-greek-1-0", conceptId: "mgr-αρκείται-εκείνος-ελάχιστα",
+    section: "3", questionRef: "2015 HL Section 3 Q2",
+    questionText: "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων. Πλουσιότερος όλων είναι εκείνος που αρκείται στα ελάχιστα.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ο άνθρωπος στη ζωή του συνηθίζει να κυνηγάει το χρήμα , τις επιτυχίες , τη δόξα. Και όταν πετυχαίνει το στόχο που βάζει , δεν νιώθει ευτυχισμένος, δε χαίρεται με αυτό που έχει κερδίσει , αλλά κυνηγάει περισσότερα αγαθά, χρήμα, δόξα , επιτυχίες. Και πάλι όμως δεν είναι ικανοποιημένος .", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    { id: "r-2", kind: "point", verbatim: "Ο Σωκράτης προτείνει λοιπόν ότι ο άνθρωπος γίνεται πραγματικά πλούσιος όταν συνειδητοποιήσει , ότι ο πλούτος κρύβεται στα λίγα, στην αυτάρκεια , στον έλεγχο δηλαδή του τι ζητάει από τη ζωή και τι θεωρεί ως παράγοντα ευτυχίας. Όταν απαλλαγεί από το κυνήγι αυτό , τότε μόνο θα γίνει πλούσιος, ελεύθερος και αυτάρκης και θα ασχοληθεί με αυτά που κάνουν έναν άνθρωπο πλούσιο.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2017, level: "higher",
     paperFileid: "LC019ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2017 Higher Level — © State Examinations Commission.",
