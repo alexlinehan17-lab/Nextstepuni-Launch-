@@ -9,7 +9,8 @@
  * (no network / pdf.js in jsdom). Guards the feature additions (search, year
  * chips, per-level counts, filter-aware header) against render regressions.
  */
-import { describe, test, expect, beforeEach, vi } from 'vitest';
+import { describe, test, expect, beforeAll, beforeEach, vi } from 'vitest';
+import { loadAllAtlasModels } from '@/components/PaperTrail/atlasModel';
 import { render, screen, fireEvent } from '@testing-library/react';
 import ReviseByTopic from '@/components/PaperTrail/ReviseByTopic';
 import { taggedSubjects, topicsForSubject } from '@/components/PaperTrail/topics';
@@ -25,6 +26,9 @@ beforeEach(() => {
   localStorage.clear();
   vi.stubGlobal('fetch', vi.fn(() => Promise.reject(new Error('no network in jsdom'))));
 });
+
+// Subjects in the single model show their topics once their filing has loaded (ReviseByTopic loads it on open).
+beforeAll(() => loadAllAtlasModels());
 
 describe('Topic Vault — ReviseByTopic', () => {
   test('opens directly on a topic map with a subject picker', () => {
