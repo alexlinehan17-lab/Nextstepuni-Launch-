@@ -747,6 +747,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2012 Higher Level — © State Examinations Commission.",
+    id: "fin-2012-hl-ii-1", topicId: "finnish-1-0", conceptId: "kirjoita-suunnilleen-100-sanan-mittainen-oma",
+    section: "II", questionRef: "2012 HL Section II Q1",
+    questionText: "Kirjoita suunnilleen 100 sanan mittainen oma kommenttisi tekstin väitteeseen: ”Erota tavallaan ystävinä.”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "HUOMAA: Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet:", marks: 30, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" Under the scheme's heading “Hyvän vastauksen aineksia:”, as examples, not a checklist: “onko mahdollista erota ystävinä?”; “ystävyys muistuttaa seurustelusuhdetta”; “tunnepuhe ja keskustelu olisi tärkeää, mutta erotessa vaikeaa”; “surutyö vie voimia”; “luottamus on ehkä menetetty”; “on jo vieraannuttu toisistaan”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Tekstin sisällön ymmärtäminen: kokelas ymmärtää kysymykset tekstistä ja osaa vastata niihin. Johtopäätökset tekstistä ovat oikeita. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Vastausten sisältö ja rakenne: kokelas kehittelee ajatuksiaan tekstin avulla jäsentyneesti, argumentoi asianmukaisesti ja täsmällisesti sekä viittaa oikein tekstiin. - 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Kielellinen ilmaisu: kokelas pystyy ilmaisemaan sujuvasti ja selkeästi ajatuksiaan. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Kieliasu: kieliopillinen rakenne, oikeinkirjoitus, välimerkit.- 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II TEHTÄVÄ:",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2012 Higher Level — © State Examinations Commission.",
+    id: "fin-2012-hl-iii-1", topicId: "finnish-1-1", conceptId: "parhaat-ystavani",
+    section: "III", questionRef: "2012 HL Section III Q1",
+    questionText: "Kirjoita suunnilleen 300 sanan essee. Valitse aiheeksi toinen näistä: Parhaat ystäväni",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "HUOMAA: Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet:", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Tekstin sisällön ymmärtäminen: kokelas ymmärtää kysymykset tekstistä ja osaa vastata niihin. Johtopäätökset tekstistä ovat oikeita. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Vastausten sisältö ja rakenne: kokelas kehittelee ajatuksiaan tekstin avulla jäsentyneesti, argumentoi asianmukaisesti ja täsmällisesti sekä viittaa oikein tekstiin. - 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Kielellinen ilmaisu: kokelas pystyy ilmaisemaan sujuvasti ja selkeästi ajatuksiaan. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Kieliasu: kieliopillinen rakenne, oikeinkirjoitus, välimerkit.- 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2012 Higher Level — © State Examinations Commission.",
+    id: "fin-2012-hl-iii-2", topicId: "finnish-1-1", conceptId: "nyky-yhteiskunnassa-haluamme-kaiken-hyvan-itsellemme",
+    section: "III", questionRef: "2012 HL Section III Q2",
+    questionText: "Kirjoita suunnilleen 300 sanan essee. Valitse aiheeksi toinen näistä: Nyky-yhteiskunnassa haluamme kaiken hyvän itsellemme heti",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "HUOMAA: Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet:", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Tekstin sisällön ymmärtäminen: kokelas ymmärtää kysymykset tekstistä ja osaa vastata niihin. Johtopäätökset tekstistä ovat oikeita. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Vastausten sisältö ja rakenne: kokelas kehittelee ajatuksiaan tekstin avulla jäsentyneesti, argumentoi asianmukaisesti ja täsmällisesti sekä viittaa oikein tekstiin. - 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Kielellinen ilmaisu: kokelas pystyy ilmaisemaan sujuvasti ja selkeästi ajatuksiaan. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Kieliasu: kieliopillinen rakenne, oikeinkirjoitus, välimerkit.- 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2013, level: "higher",
     paperFileid: "LC049ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2013 Higher Level — © State Examinations Commission.",
