@@ -101,6 +101,17 @@ def claims(card):
     if card['kind'] == 'question':
         rows = [row for variant in card.get('answerVariants', []) for row in variant['rows']] or card['rows']
         for row in rows:
+            if row.get('unprinted'):
+                # R4's fixed app wording is not a quotation from the scheme.
+                # Require the independently reviewed, hash-bound evidence entry.
+                from ru_no_answer import FIXED_LINE, annotate_no_answers
+                assert row['kind'] == 'criterion' and row['verbatim'] == FIXED_LINE, card['id']
+                entry = json.loads((ROOT / 'scripts/markbank/authoring/russian-no-answer.json').read_text())['cards'][card['id']]
+                assert entry['treatment'] == 'unprinted-criterion', card['id']
+                assert card['review']['noPrintedAnswer']['evidence'] == entry['evidence'], card['id']
+                assert (ROOT / entry['evidence']).is_file(), card['id']
+                annotate_no_answers([card])
+                continue
             if row.get('group'):
                 for option in row['group']['options']:
                     yield from option.split(' — ')

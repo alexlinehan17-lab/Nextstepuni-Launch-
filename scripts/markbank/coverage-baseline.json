@@ -603,19 +603,19 @@
     "refsHash": "98497719950dbd78"
   },
   "music": {
-    "cards": 239,
-    "contentHash": "d44375a1adc74eed",
+    "cards": 632,
+    "contentHash": "fd8a2e7257a5dd1a",
     "coveragePct": 100.0,
-    "covered": 253,
+    "covered": 662,
     "excluded": 0,
-    "leaves": 253,
+    "leaves": 662,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 90,
       "hash": "19ae47d97a6c3bd4"
     },
-    "refsHash": "fa2a38deb6e15718"
+    "refsHash": "5bf5c630be2b416c"
   },
   "physical-education": {
     "cards": 772,
@@ -724,7 +724,7 @@
   },
   "russian": {
     "cards": 1485,
-    "contentHash": "4f30f3c1c5adae72",
+    "contentHash": "7d2d3e47eab56c67",
     "coveragePct": 100.0,
     "covered": 1489,
     "excluded": 0,
