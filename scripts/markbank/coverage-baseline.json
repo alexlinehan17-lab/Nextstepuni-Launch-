@@ -423,11 +423,11 @@
     "refsHash": "06b764f923a27680"
   },
   "hungarian": {
-    "cards": 190,
-    "contentHash": "303677d99fce5a73",
+    "cards": 193,
+    "contentHash": "5790f4bdef776b50",
     "coveragePct": 100.0,
-    "covered": 190,
-    "excluded": 29,
+    "covered": 193,
+    "excluded": 26,
     "leaves": 219,
     "open": 0,
     "orphans": 0,
@@ -435,7 +435,7 @@
       "count": 17,
       "hash": "e3b0a73bce59703d"
     },
-    "refsHash": "17420289aac31599"
+    "refsHash": "d571e8b7b53579fc"
   },
   "irish": {
     "cards": 3231,
