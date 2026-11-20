@@ -708,19 +708,19 @@
     "refsHash": "3cd697c2c27583ae"
   },
   "romanian": {
-    "cards": 50,
-    "contentHash": "b9e5b706d1bb83fa",
-    "coveragePct": 100.0,
-    "covered": 50,
+    "cards": 63,
+    "contentHash": "8a06b2289aaa6b46",
+    "coveragePct": 35.3,
+    "covered": 63,
     "excluded": 13,
-    "leaves": 63,
-    "open": 0,
+    "leaves": 215,
+    "open": 139,
     "orphans": 0,
     "papers": {
-      "count": 5,
-      "hash": "cb6697c0963fc51f"
+      "count": 17,
+      "hash": "c6a2348848034e00"
     },
-    "refsHash": "8dc6e8622a1ca48e"
+    "refsHash": "e2b8c2fc960a4a62"
   },
   "russian": {
     "cards": 1485,

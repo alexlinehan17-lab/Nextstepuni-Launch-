@@ -150,6 +150,18 @@ class PartPrice:
             token = next(g for g in pm.groups() if g).lower()
             if (part_map.get(token) or eu_paper._part_token(token)) == ask.section:
                 got.add((total, head))
+        if not got:
+            # The total printed on the head's OWN line, "PARTEA II (30/100)",
+            # which _part_head_tariff (a cell to the right) does not read.
+            own = re.compile(r'[(\[]\s*(?:[^\W\d_]+\.?\s+){0,2}?(\d{1,3})\s*(?:' + PRICE_WORD
+                             + r')?\s*(?:/\s*\d{1,3}\s*(?:' + MARK_WORD + r')?\s*)?[)\]]\s*$', re.I)
+            for line in P.lines:
+                pm = part_pat.match(line.text) or part_pat.match(re.sub(r'\s+', '', line.text))
+                m = own.search(line.text)
+                if pm and m:
+                    token = next(g for g in pm.groups() if g).lower()
+                    if (part_map.get(token) or eu_paper._part_token(token)) == ask.section:
+                        got.add((int(m.group(1)), line.text))
         totals = {t for t, _h in got}
         if len(totals) != 1:
             raise ValueError(f'{ask.key}: part heads print {sorted(got)}')

@@ -211,5 +211,22 @@
    "nld-2026-hl-iii-1",
    "nld-2026-hl-iii-2"
   ]
+ },
+ "romanian": {
+  "2010": [
+   "ron-2010-hl-i-1-a",
+   "ron-2010-hl-i-1-b",
+   "ron-2010-hl-i-1-c",
+   "ron-2010-hl-i-1-d",
+   "ron-2010-hl-i-1-e",
+   "ron-2010-hl-i-2",
+   "ron-2010-hl-i-3",
+   "ron-2010-hl-i-4",
+   "ron-2010-hl-i-5",
+   "ron-2010-hl-i-6",
+   "ron-2010-hl-ii-1",
+   "ron-2010-hl-iii-1",
+   "ron-2010-hl-iii-2"
+  ]
  }
 }
