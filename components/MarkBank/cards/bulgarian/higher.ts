@@ -3763,6 +3763,152 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2025 Higher Level — © State Examinations Commission.",
+    id: "bul-2025-hl-i-1-б", topicId: "bulgarian-0-0", conceptId: "ask",
+    section: "I", questionRef: "2025 HL Section I Q1(б)",
+    questionText: "Какво е значението на думите и на изразите в текста? фолклор",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "народно творчество", marks: 1, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" The scheme reprints the question as: “Какво е значението на подчертаните думи и изрази в текста?”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2025 Higher Level — © State Examinations Commission.",
+    id: "bul-2025-hl-i-1-в", topicId: "bulgarian-0-0", conceptId: "ask",
+    section: "I", questionRef: "2025 HL Section I Q1(в)",
+    questionText: "Какво е значението на думите и на изразите в текста? вълшебна приказка",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "народна приказка, в която се разказва за необикновени приключения и герои, фантастична приказка", marks: 1, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" The scheme reprints the question as: “Какво е значението на подчертаните думи и изрази в текста?”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2025 Higher Level — © State Examinations Commission.",
+    id: "bul-2025-hl-i-1-г", topicId: "bulgarian-0-0", conceptId: "ask",
+    section: "I", questionRef: "2025 HL Section I Q1(г)",
+    questionText: "Какво е значението на думите и на изразите в текста? остроумие",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "интелигентност, находчивост, духовитост", marks: 1, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" The scheme reprints the question as: “Какво е значението на подчертаните думи и изрази в текста?”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2025 Higher Level — © State Examinations Commission.",
+    id: "bul-2025-hl-i-1-д", topicId: "bulgarian-0-0", conceptId: "ask",
+    section: "I", questionRef: "2025 HL Section I Q1(д)",
+    questionText: "Какво е значението на думите и на изразите в текста? обективно установено",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ясно определено, действително съществуващо", marks: 1, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" The scheme reprints the question as: “Какво е значението на подчертаните думи и изрази в текста?”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2025 Higher Level — © State Examinations Commission.",
+    id: "bul-2025-hl-ii-1", topicId: "bulgarian-1-0", conceptId: "100-150",
+    section: "II", questionRef: "2025 HL Section II Q1",
+    questionText: "« Езика го забравя, който иска. » Според вас, можем ли да забравим родния си език? Аргументирайте отговора си. (100 - 150 думи)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Кандидатът е свободен да определи отношението си към родния език и да говори за личния си езиков опит в чуждата среда, за усилията, които полага, за да не забрави езика си, за употребата му в семейна и приятелска среда, за необходимостта от контакти със сънародници… за медии, филми, книги на бългаски и всичко, което му помага да усъвършенства речта си. Интересен е въпросът защо е важно (или важно ли е) да не забравяш родния си език.", marks: null, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" The scheme heads it: “Лична интерпретация, ясни и непротиворечиви идеи.”. The scheme reprints the last line of the task as: “Аргументирайте отговора си. (около 150 думи)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ВТОРА ЧАСТ",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2025 Higher Level — © State Examinations Commission.",
+    id: "bul-2025-hl-iii-1", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: „Нищо не развива интелигентността така, както пътуването.“ (Емил Зола)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under Part III the scheme reprints the instruction and the two titles and prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” It prints no criteria and no marks for the part.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2025 Higher Level — © State Examinations Commission.",
+    id: "bul-2025-hl-iii-2", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: “Човек винаги е свикнал да търси причините и за доброто, и за лошото вън от себе си. А те са вътре в нас.” (Димитър Талев)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under Part III the scheme reprints the instruction and the two titles and prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” It prints no criteria and no marks for the part.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2026, level: "higher",
     paperFileid: "LC559ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2026 Higher Level — © State Examinations Commission.",
