@@ -4214,6 +4214,63 @@
   }
  },
  {
+  "id": "lt-2023-hl-a-1-a",
+  "subjectId": "lithuanian",
+  "level": "higher",
+  "year": 2023,
+  "section": "U1",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "kokiu-buna-dzinsu-dvi",
+  "questionRef": "2023 HL Section A Q1(a)",
+  "questionText": "Kokių būna džinsų? Parašykite dvi detales. (1 dalis)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Šviesiai mėlyni",
+      "Suplyšę per kelius",
+      "Juodi",
+      "Siauri",
+      "Aptempti",
+      "Raudoni",
+      "Žali",
+      "Platėjantys",
+      "Apsmukę",
+      "Puošti „Swarovski“ kristalais",
+      "Margingti leopardo kailio raštais",
+      "Auksiniai",
+      "Su prisiūta prie liemens trumpikių imitacija",
+      "Su klynu vos virš kelių (rytietiški)"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints the tariff as '(2 × 2 marks)'; the paper prints this ask on page 5 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "stem": "Pirma užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PIRMA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Lithuanian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
   "id": "lt-2023-hl-a-1-b",
   "subjectId": "lithuanian",
   "level": "higher",

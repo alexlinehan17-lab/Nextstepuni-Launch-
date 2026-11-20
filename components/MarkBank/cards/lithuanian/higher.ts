@@ -1999,6 +1999,31 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC550ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2023 Higher Level — © State Examinations Commission.",
+    id: "lt-2023-hl-a-1-a", topicId: "lithuanian-2-1", conceptId: "kokiu-buna-dzinsu-dvi",
+    section: "U1", questionRef: "2023 HL Section A Q1(a)",
+    stem: "Pirma užduotis",
+    questionText: "Kokių būna džinsų? Parašykite dvi detales. (1 dalis)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Šviesiai mėlyni","Suplyšę per kelius","Juodi","Siauri","Aptempti","Raudoni","Žali","Platėjantys","Apsmukę","Puošti „Swarovski“ kristalais","Margingti leopardo kailio raštais","Auksiniai","Su prisiūta prie liemens trumpikių imitacija","Su klynu vos virš kelių (rytietiški)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PIRMA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                4,
+                5
+          ],
+          "attribution": "SEC Lithuanian 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2023 Higher Level — © State Examinations Commission.",
     id: "lt-2023-hl-a-1-b", topicId: "lithuanian-2-1", conceptId: "pasakotojos-kaimyne-niekas-nedraugavo",
     section: "U1", questionRef: "2023 HL Section A Q1(b)",
     stem: "Pirma užduotis",
