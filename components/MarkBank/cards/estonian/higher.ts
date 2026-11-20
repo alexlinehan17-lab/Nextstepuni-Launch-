@@ -1128,6 +1128,43 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2013 Higher Level — © State Examinations Commission.",
+    id: "est-2013-hl-ii-1", topicId: "estonian-1-0", conceptId: "artikli-loigus-mainitakse-filmi-pealkirjaga-ebamugav",
+    section: "II", questionRef: "2013 HL Section II Q1",
+    questionText: "Artikli 4. lõigus mainitakse filmi pealkirjaga „Ebamugav tõde“. Kuidas mõistad sina seda pealkirja? Kirjuta umbes 100sõnaline arvamus oma seisukoha põhjenduseks.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 100sõnaline ladus kommentaar, tõestamaks teksti sisust arusaamist.", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Aina sagedamad looduskatastroofid – orkaan Sandy Ameerikas, Jaapani tsunami, võimsad maavärinad Haitil, Uus-Meremaal, suured üleujutused Austraalias ja Pakistanis, paduvihmad ja kuumalained Kesk-Euroopas, taifuunid, maalihked, tulekahjud jne – inimkonna ennast ja loodust hävitava tegevuse tulemus?”; “Planeedi kohanemine üha kasvava rahvaarvuga ning toimetulek inimkonna kasvava vee-, energia-, sooja ning toiduvajaduse, isikliku sõiduauto ja muude läänelike eluhüvede rahuldamisega.”; “Üksikindiviidi säästev suhtumine – alternatiivsete energiaallikate kasutamine, elektriautode ning ühistranspordi eelistamine, energiasäästlikud majad, prügi sorteerimine, tarbimise vähendamine – kas sellest piisab, et vähendada atmosfääri reostust ja hoida keskkonda.”; “Keskkonna saastatus ja selle mõju inimese elu kvaliteedile – joogivee olukord, õhusaaste, toidu kvaliteet.”; “Millise keskkonna pärandame me järeltulevatele põlvedele? Kas kulutused kasvuhoonegaaside piiramiseks on mõttetu raiskamine? Kas kliimasoojenemisega on võimalik üldse võidelda?”. The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. ÜLESANNE:",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2013 Higher Level — © State Examinations Commission.",
+    id: "est-2013-hl-iii-1", topicId: "estonian-1-1", conceptId: "kirjuta-umbes-300-sonaline-arutlev-kirjand",
+    section: "III", questionRef: "2013 HL Section III Q1",
+    questionText: "Kirjuta umbes 300-sõnaline arutlev kirjand. Vali üks antud teemadest.\nInimene on looduse kroon\nOma unistuste täide viimine – kibemagus teekond",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vähemalt 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks esitamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja interpunktsioon – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2014, level: "higher",
     paperFileid: "LC552ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2014 Higher Level — © State Examinations Commission.",
