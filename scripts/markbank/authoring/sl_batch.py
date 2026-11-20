@@ -98,7 +98,10 @@ def write(subject, year, level='hl', skip_lane=False):
     if os.path.exists(path):
         with open(path, encoding='utf-8') as fh:
             excl = json.load(fh)
-        kept = [e for e in excl if e.get('ref') not in refs]
+        # a whole-question card ("Section I Q1") also answers the parts its
+        # question prints ("Section I Q1(a)" ...)
+        kept = [e for e in excl if e.get('ref') not in refs
+                and not any(str(e.get('ref', '')).startswith(r + '(') for r in refs)]
         dropped = len(excl) - len(kept)
         with open(path, 'w', encoding='utf-8') as fh:
             json.dump(kept, fh, ensure_ascii=False, indent=1)
