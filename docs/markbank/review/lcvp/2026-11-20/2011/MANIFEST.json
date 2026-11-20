@@ -1,0 +1,72 @@
+{
+  "at": "2026-11-20T12:16:53.238054+00:00",
+  "source": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2011.json",
+  "candidateSha256": "fa712f9f9970c683acaced3e58be644b26e497ef35ce5bd3130fdecd7e1eb085",
+  "files": [
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2011/README.md",
+      "bytes": 1206,
+      "sha256": "7517c51a7545d9020c70ac6066078fb19a7aef98c811ece088c28f28d83c6e9d"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2011/candidate.json",
+      "bytes": 171543,
+      "sha256": "fa712f9f9970c683acaced3e58be644b26e497ef35ce5bd3130fdecd7e1eb085"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2011/evidence/complete-saved-output-comparison.py",
+      "bytes": 4917,
+      "sha256": "214b172d6f89ce532dd232586ab210b4079859245ff2e8b8db29817fe74b9d80"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2011/evidence/repair-report.json",
+      "bytes": 8626,
+      "sha256": "7f0df32aabdfe92a10e73aed9d41b6e2396ab1bf1e3613e7c6b0985f3e05e9b6"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2011/evidence/result.json",
+      "bytes": 9248,
+      "sha256": "e9e94eee688d4ad669c887c6331cf426d4b1f5fbfa80589854cfc362975e1971"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2011/evidence/revision-input-manifest.json",
+      "bytes": 8404,
+      "sha256": "83ae12b59251c4597c05648c831dd30f4ca86868e88015db1f5bc2f2d97dd8ae"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2011/evidence/second-reader-audit.json",
+      "bytes": 14310,
+      "sha256": "fa4c460a12f7534e6b10ab2d34f8d799ccac32f8eacc63cf0a7df44513461b2f"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2011/evidence/second-reader-editorial-revision-confirmation.json",
+      "bytes": 4439,
+      "sha256": "7cc11049cead0ef31756fb83f897e0361f6c9886a2d5733aa74e3fe34ab7d491"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2011/field-proof.json",
+      "bytes": 28294,
+      "sha256": "802f555400d96eec0583f9c4b5df4dcca4dd2cf6cc7f039acaf9973848f2366a"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2011/generated-asks.json",
+      "bytes": 191426,
+      "sha256": "2ce5fd3865c5fba67202f02d329a824208377a70a3c1a36b8866fbfe814b86e7"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2011/serializer-audit/REPORT.md",
+      "bytes": 1258,
+      "sha256": "fab583cbaa4b56179e2f83c0ceacf5df4e005fbd5656a68baf9b19fd58be7c4b"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2011/serializer-audit/diagnosis.json",
+      "bytes": 6739,
+      "sha256": "fa035706a35c5f7e94d81822f3145d5e6cadd462989abd9a2ac33e3ffd1f2e5b"
+    },
+    {
+      "path": "docs/markbank/review/lcvp/2026-11-20/2011/serializer-audit/manifest.json",
+      "bytes": 549,
+      "sha256": "fc96008692fc5294220ed4597b491b4d5239150ad725306e95e4d4f565e3e91b"
+    }
+  ]
+}

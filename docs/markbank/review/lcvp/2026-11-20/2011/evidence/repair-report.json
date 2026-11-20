@@ -1,0 +1,235 @@
+{
+  "at": "2026-11-20T11:51:23.835602+00:00",
+  "status": "Prepared only; no lane write, shared change, generator or application check. Existing source/split/heading decisions still pending where recorded.",
+  "failedRun": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-2010-2013-generator-preflight/generator-isolation/run-20261120T113842Z-49b7406a/result.json",
+  "originalFixtureSha256": "91ae72cc9489b70747f14fe22676a5b33faa61f2f351d8628e8a8f1f55f11497",
+  "revisedFixtureSha256": "a8127bcddd37f0072b6bf22ce45ac1c6dedab4f06188015e73d14ce31f7bcedf",
+  "asks": 183,
+  "marks": 840,
+  "changedCards": 11,
+  "allNewRelativeToObservedMain": true,
+  "changes": [
+    {
+      "id": "lcvp-2010-cl-a8",
+      "kind": "new-card scoring representation",
+      "detail": "Use the existing parent criterion controls for one indivisible component; retain multi-component controls, exact printed guidance, marks and permitted values. These are new cards, not approved live-card corrections.",
+      "rows": [
+        {
+          "row": "response-2",
+          "removedSingletonPart": {
+            "id": "component-1",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          "retainedMarks": 2,
+          "retainedSteps": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lcvp-2010-cl-c3b",
+      "kind": "new-card scoring representation",
+      "detail": "Use the existing parent criterion controls for one indivisible component; retain multi-component controls, exact printed guidance, marks and permitted values. These are new cards, not approved live-card corrections.",
+      "rows": [
+        {
+          "row": "response-1",
+          "removedSingletonPart": {
+            "id": "component-1",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          "retainedMarks": 2,
+          "retainedSteps": [
+            0,
+            2
+          ]
+        },
+        {
+          "row": "response-2",
+          "removedSingletonPart": {
+            "id": "component-1",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          "retainedMarks": 2,
+          "retainedSteps": [
+            0,
+            2
+          ]
+        },
+        {
+          "row": "response-3",
+          "removedSingletonPart": {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          "retainedMarks": 1,
+          "retainedSteps": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lcvp-2010-cl-c3d",
+      "kind": "new-card scoring representation",
+      "detail": "Use the existing parent criterion controls for one indivisible component; retain multi-component controls, exact printed guidance, marks and permitted values. These are new cards, not approved live-card corrections.",
+      "rows": [
+        {
+          "row": "response-3",
+          "removedSingletonPart": {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          "retainedMarks": 1,
+          "retainedSteps": [
+            0,
+            1
+          ]
+        },
+        {
+          "row": "response-4",
+          "removedSingletonPart": {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          "retainedMarks": 1,
+          "retainedSteps": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lcvp-2010-cl-c5c",
+      "kind": "new-card scoring representation",
+      "detail": "Use the existing parent criterion controls for one indivisible component; retain multi-component controls, exact printed guidance, marks and permitted values. These are new cards, not approved live-card corrections.",
+      "rows": [
+        {
+          "row": "response-2",
+          "removedSingletonPart": {
+            "id": "component-1",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          "retainedMarks": 2,
+          "retainedSteps": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lcvp-2013-cl-c2c",
+      "kind": "new-card scoring representation",
+      "detail": "Use the existing parent criterion controls for one indivisible component; retain multi-component controls, exact printed guidance, marks and permitted values. These are new cards, not approved live-card corrections.",
+      "rows": [
+        {
+          "row": "response-4",
+          "removedSingletonPart": {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          "retainedMarks": 1,
+          "retainedSteps": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lcvp-2012-cl-b2iii-2",
+      "kind": "distinct ask reference",
+      "before": "2012 CL Section B Q2(iii)",
+      "after": "2012 CL Section B Q2(iii) — implications for the committee",
+      "detail": "The exact printed address remains; append a literal phrase from this ask, following the existing2014 split-reference convention. Question/body/source/identity/marks unchanged."
+    },
+    {
+      "id": "lcvp-2012-cl-c4b-2",
+      "kind": "distinct ask reference",
+      "before": "2012 CL Section C Q4(b)",
+      "after": "2012 CL Section C Q4(b) — usefulness of each research method",
+      "detail": "The exact printed address remains; append a literal phrase from this ask, following the existing2014 split-reference convention. Question/body/source/identity/marks unchanged.",
+      "settledEditorialCleanup": {
+        "removed": " Proposed 2+4 split awaits adjudication.",
+        "proof": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-codex-third-reading-index/final-note-cleanup/proof.json",
+        "proofSha256": "2a0c5b163a325c710911a7be2cfbb446de31c25f77a21127d7c50c5546dd9a47",
+        "sourceAndScoringUnchanged": true
+      }
+    },
+    {
+      "id": "lcvp-2012-cl-c4c-2",
+      "kind": "distinct ask reference",
+      "before": "2012 CL Section C Q4(c)",
+      "after": "2012 CL Section C Q4(c) — reason for each subject choice",
+      "detail": "The exact printed address remains; append a literal phrase from this ask, following the existing2014 split-reference convention. Question/body/source/identity/marks unchanged."
+    },
+    {
+      "id": "lcvp-2012-cl-c5a-2",
+      "kind": "distinct ask reference",
+      "before": "2012 CL Section C Q5(a)",
+      "after": "2012 CL Section C Q5(a) — product/service",
+      "detail": "The exact printed address remains; append a literal phrase from this ask, following the existing2014 split-reference convention. Question/body/source/identity/marks unchanged."
+    },
+    {
+      "id": "lcvp-2012-cl-c5b-2",
+      "kind": "distinct ask reference",
+      "before": "2012 CL Section C Q5(b)",
+      "after": "2012 CL Section C Q5(b) — type of support",
+      "detail": "The exact printed address remains; append a literal phrase from this ask, following the existing2014 split-reference convention. Question/body/source/identity/marks unchanged."
+    },
+    {
+      "id": "lcvp-2010-cl-c3a",
+      "kind": "retain printed instruction beside selected term",
+      "before": "CV",
+      "after": "Explain the three underlined words.\n\nCV",
+      "sourceImage": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/original-pages/paper-20.png",
+      "sourceImageSha256": "64e9bdc8c1cb2048012c2451355b2fb440b85ce8853779dbf846c8f755055e3c",
+      "detail": "Both exact source strings are shown together; no invented command. Existing full advertisement and instruction stay in stem; reference still identifies CV and the two-mark practice scope. Root reopened the original page; actual UI review pending.",
+      "captionClarification": "Existing CV reference now says CV only, so the two-mark practice scope is visible before reveal."
+    }
+  ]
+}

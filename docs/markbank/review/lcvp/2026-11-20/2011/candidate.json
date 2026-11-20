@@ -1,0 +1,3559 @@
+[
+  {
+    "id": "lcvp-2011-cl-a1",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "a1-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "A",
+    "questionRef": "2011 CL Section A Q1",
+    "questionText": "What is volunteering?",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 1,
+    "rows": [
+      {
+        "id": "definition",
+        "kind": "point",
+        "verbatim": "Volunteering is when people work to help others/for a particular cause.",
+        "marks": 1
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        3
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2011 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2011 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-a2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "a2-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "A",
+    "questionRef": "2011 CL Section A Q2",
+    "questionText": "Why is volunteering considered to be a selfless activity?",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Why is volunteering considered a selfless activity?",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": " Complete printed support notes and allocation: It is intended to promote good/improve the quality of life for others. 2 @ 1m",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        3
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2011 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2011 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-a3",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "a3-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "A",
+    "questionRef": "2011 CL Section A Q3",
+    "questionText": "Why did the organisation ‘HELP IRELAND’ appeal to Orla?",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Why did the organisation ‘HELP IRELAND’ appeal to Orla?",
+        "marks": 3,
+        "openList": true,
+        "group": {
+          "claimMax": 3,
+          "perOption": 1,
+          "options": [
+            "Because in the current climate homelessness is on the rise.",
+            "She was impressed by their vision 'everybody has a right to a place that they can call home'.",
+            "She also liked that they helped a wide range of people, young, old, male, female, also from a variety of backgrounds."
+          ]
+        },
+        "contextNote": " Complete printed support notes and allocation: 1. Because in the current climate homelessness is on the rise. 2. She was impressed by their vision 'everybody has a right to a place that they can call home'. 3. She also liked that they helped a wide range of people, young, old, male, female, also from a variety of backgrounds. 3 @ 1m"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        3
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2011 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2011 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-a4",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "a4-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "A",
+    "questionRef": "2011 CL Section A Q4",
+    "questionText": "Like many voluntary organisations, ‘HELP IRELAND’ has seen many changes in recent years. Outline some of these changes.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Like many voluntary organisations ‘HELP IRELAND’ has seen many changes in recent years. Outline some of these changes.",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "There is an increase in homelessness due to financial difficulties.",
+            "Due also to personal, family situations or medical reasons."
+          ]
+        },
+        "contextNote": " Complete printed support notes and allocation: 1. There is an increase in homelessness due to financial difficulties. 2. Due also to personal, family situations or medical reasons. 2 @ 2m"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        4
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2011 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2011 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-a5",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "a5-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "A",
+    "questionRef": "2011 CL Section A Q5",
+    "questionText": "Explain the type of help offered to the clients of ‘HELP IRELAND’.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Explain the type of help offered to the clients of ‘HELP IRELAND’.",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 4,
+          "perOption": 1,
+          "options": [
+            "They have emergency hostels/short term accommodation.",
+            "They try to get permanent accommodation for everyone.",
+            "Provide inexpensive meals.",
+            "Give impartial advice.",
+            "Encourage clients to participate in training/education programmes.",
+            "More experienced volunteers provide/offer support to anyone who asks for help/place to go/someone to liase with.",
+            "They assist clients in making the transition from being homeless."
+          ]
+        },
+        "contextNote": " Complete printed support notes and allocation: 1. They have emergency hostels/short term accommodation. 2. They try to get permanent accommodation for everyone. 3. Provide inexpensive meals. 4. Give impartial advice. 5. Encourage clients to participate in training/education programmes. 6. More experienced volunteers provide/offer support to anyone who asks for help/place to go/someone to liase with. 7. They assist clients in making the transition from being homeless. 4 @ 1m"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        4
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2011 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2011 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-a6",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "a6-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "A",
+    "questionRef": "2011 CL Section A Q6",
+    "questionText": "Why does ‘HELP IRELAND’ encourage young people to act as volunteers in their organisation?",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Why does ‘HELP IRELAND’ encourage young people to act as volunteers in their organisations?",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": " Complete printed support notes and allocation: 1. Young people are energetic/enthusiastic. Clients find them uplifting and optimistic. 2. They have many areas/practical aspects in which they can work e.g. helping in the hostels/the coffee shop/soup runs/generally interacting with clients. 2 @ 2m (1 + 1)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        5
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2011 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2011 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-a7",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "a7-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "A",
+    "questionRef": "2011 CL Section A Q7 — decision",
+    "questionText": "Why did Orla decide not to show her interview with Stephen, a homeless man?",
+    "stem": " Why did Orla decide not to show her interview with Stephen, a homeless man? What has Orla learned about homelessness and peoples’ attitude to the homeless from her interview with Stephen?",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 1,
+    "rows": [
+      {
+        "id": "decision",
+        "kind": "point",
+        "verbatim": "Orla decided not to show the interview with Stephen as she wanted to respect his dignity as it was a bit to personal.",
+        "marks": 1
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        6
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2011 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2011 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-a7-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "a7-2011-source-second-ask",
+    "level": "common",
+    "year": 2011,
+    "section": "A",
+    "questionRef": "2011 CL Section A Q7 — learning",
+    "questionText": "What has Orla learned about homelessness and peoples’ attitude to the homeless from her interview with Stephen?",
+    "stem": " Why did Orla decide not to show her interview with Stephen, a homeless man? What has Orla learned about homelessness and peoples’ attitude to the homeless from her interview with Stephen?",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 5,
+    "rows": [
+      {
+        "id": "learning",
+        "kind": "anyN",
+        "verbatim": "Orla has learned;",
+        "marks": 5,
+        "openList": true,
+        "group": {
+          "claimMax": 5,
+          "perOption": 1,
+          "options": [
+            "Homelessness can be very tough.",
+            "Most people he meets are decent.",
+            "Some try to talk down to him/tell him to get a job.",
+            "He misses having his own place and a normal way of life.",
+            "He does not feel safe on the streets."
+          ]
+        },
+        "contextNote": ""
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        6
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2011 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2011 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-a8",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "a8-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "A",
+    "questionRef": "2011 CL Section A Q8",
+    "questionText": "Personal growth and development can be achieved through involvement in voluntary work. Explain the meaning of this statement.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "response-1",
+        "kind": "criterion",
+        "verbatim": "Personal growth and development can be achieved through involvement in voluntary work. Explain the meaning of this statement.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Use four distinct responses: the scheme gives two developed responses two marks each and the other two one mark each. Preserve all four complete printed examples. Response 1 of 4 receives up to 2 marks. Complete printed support notes and allocation: 1. Personal characteristics are developed such as determination, patience and understanding. You learn to take initiative, show committment and be energetic. 2. Improve skills/CV/will enhance employment prospects/can help with future working life. 3. Make a difference to improve community/make a difference to the quality of peoples’ lives/making your community a safer and more pleasant place to live. 4. Learned empathy; organised own fundraising event. 2 @ 2m (1m+1m) 2 @ 1m"
+      },
+      {
+        "id": "response-2",
+        "kind": "criterion",
+        "verbatim": "Personal growth and development can be achieved through involvement in voluntary work. Explain the meaning of this statement.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Use four distinct responses: the scheme gives two developed responses two marks each and the other two one mark each. Preserve all four complete printed examples. Response 2 of 4 receives up to 2 marks. Complete printed support notes and allocation: 1. Personal characteristics are developed such as determination, patience and understanding. You learn to take initiative, show committment and be energetic. 2. Improve skills/CV/will enhance employment prospects/can help with future working life. 3. Make a difference to improve community/make a difference to the quality of peoples’ lives/making your community a safer and more pleasant place to live. 4. Learned empathy; organised own fundraising event. 2 @ 2m (1m+1m) 2 @ 1m"
+      },
+      {
+        "id": "response-3",
+        "kind": "criterion",
+        "verbatim": "Personal growth and development can be achieved through involvement in voluntary work. Explain the meaning of this statement.",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": "Use four distinct responses: the scheme gives two developed responses two marks each and the other two one mark each. Preserve all four complete printed examples. Response 3 of 4 receives up to 1 marks. Complete printed support notes and allocation: 1. Personal characteristics are developed such as determination, patience and understanding. You learn to take initiative, show committment and be energetic. 2. Improve skills/CV/will enhance employment prospects/can help with future working life. 3. Make a difference to improve community/make a difference to the quality of peoples’ lives/making your community a safer and more pleasant place to live. 4. Learned empathy; organised own fundraising event. 2 @ 2m (1m+1m) 2 @ 1m"
+      },
+      {
+        "id": "response-4",
+        "kind": "criterion",
+        "verbatim": "Personal growth and development can be achieved through involvement in voluntary work. Explain the meaning of this statement.",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": "Use four distinct responses: the scheme gives two developed responses two marks each and the other two one mark each. Preserve all four complete printed examples. Response 4 of 4 receives up to 1 marks. Complete printed support notes and allocation: 1. Personal characteristics are developed such as determination, patience and understanding. You learn to take initiative, show committment and be energetic. 2. Improve skills/CV/will enhance employment prospects/can help with future working life. 3. Make a difference to improve community/make a difference to the quality of peoples’ lives/making your community a safer and more pleasant place to live. 4. Learned empathy; organised own fundraising event. 2 @ 2m (1m+1m) 2 @ 1m"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        7
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2011 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2011 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original sequence with sound before answering. Follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-b1",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "b1-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "B",
+    "questionRef": "2011 CL Section B Q1 — characteristics",
+    "questionText": "State three enterprising characteristics/skills shown by Sara.",
+    "stem": "SWEET DREAMS BY SARA Sara Ryan was always interested in cooking and baking. From a young age she made cakes and desserts for family and friends. Following her Leaving Certificate she did a catering course in the local Institute of Technology and three years later qualified with a Degree in Culinary Arts. She moved to Dublin where she got a job as an assistant chef in a top city centre restaurant. She impressed the head chef with her technical skills and positive attitude. Sara loved experimenting with ingredients and impressed the restaurant’s head chef with her exciting dessert recipes. She was quickly promoted to head pastry chef, with full responsibility for the dessert menu in the restaurant. After four years working in Dublin she decided to move home. She got a job as the head chef in a local restaurant. As head chef she had responsibility for setting the menus, ordering in ingredients, negotiating prices with suppliers and managing two assistant chefs. She really enjoyed the decision-making power of being head chef. However, this restaurant only opened between the months of March and October. During the winter months Sara kept busy. She enrolled on a web design course so that she could upskill herself. She supported herself by baking cakes for birthdays, weddings, christenings and other occasions for friends and neighbours. When the local town council started a farmers’ market on Saturday mornings Sara rented a stall where she sold a selection of baked goods. Her produce was hugely popular and she often sold everything within a few hours. Sara is considering asking the restaurant owner for the use of the restaurant premises for the following winter. She has prepared a Business Plan and has decided this is feasible. Her aim is to run a café from the premises during the day and use the kitchen to bake the ‘special occasion’ cakes in the evening. Sara believes that running a café during the winter months is a viable business idea. The town is the main shopping area for local people from the surrounding countryside. The local hotel ‘Annerly Hall’ is in the process of developing its spa facilities and is also planning a wedding fair in 2011. Besides the hotel there is no other place for local people to meet for lunch. She has also noticed that there is not much traditional tourism in the winter months. The area, like many others, is very popular with hiking and walking groups (see table). Sara is concerned that she does not have the relevant business experience to run the café and is considering approaching the local county enterprise board for support.\n\nActivities Engaged in by Domestic Holidaymakers (%)\nNational Parks — 2008: 26; 2009: 23\nWater Sports — 2008: 26; 2009: 27\nHouses Castles — 2008: 25; 2009: 24\nHiking Walking — 2008: 25; 2009: 21\nVisits to Spas — 2008: 20; 2009: 24\nGardens — 2008: 19; 2009: 20\nHeritage Interpretive Centres — 2008: 15; 2009: 21\nMuseums Art Galleries — 2008: 14; 2009: 14\nGolf — 2008: 11; 2009: 10\nSource: Fáilte Ireland 2009 State and explain three enterprising characteristics/skills shown by Sara.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "characteristics",
+        "kind": "anyN",
+        "verbatim": "State",
+        "marks": 3,
+        "openList": true,
+        "group": {
+          "claimMax": 3,
+          "perOption": 1,
+          "options": [
+            "Innovative/Creative",
+            "Motivated",
+            "Realistic",
+            "Risktaker",
+            "Decisive",
+            "Flexible",
+            "Hardworking"
+          ]
+        },
+        "contextNote": " Complete printed support notes and allocation: 1. Innovative/Creative: She has come up with new ideas or found ways to improve existing ideas. 2. Motivated: She is a self starter/enthuastic to get going. She wants to give herself personal satisfaction. 3. Realistic: She knows what needs to be done without being too overly ambitious. 4. Risktaker: She is willing to set up on her own and is willing to manage the risks both personal and financial. 5. Decisive: She is good at making decisions. She makes them quickly and definitely. 6. Flexible: She is willing to change her career path as the need arises. 7. Hardworking: She is willing to put in a huge effort/hours/work. 3 @ 2m (1 + 1) 1m for stating +1m for description No repetition"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Sweet Dreams by Sara — complete case and table",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          9
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-b1-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "b1-2011-source-second-ask",
+    "level": "common",
+    "year": 2011,
+    "section": "B",
+    "questionRef": "2011 CL Section B Q1 — explanations",
+    "questionText": "explain three enterprising characteristics/skills shown by Sara.",
+    "stem": "SWEET DREAMS BY SARA Sara Ryan was always interested in cooking and baking. From a young age she made cakes and desserts for family and friends. Following her Leaving Certificate she did a catering course in the local Institute of Technology and three years later qualified with a Degree in Culinary Arts. She moved to Dublin where she got a job as an assistant chef in a top city centre restaurant. She impressed the head chef with her technical skills and positive attitude. Sara loved experimenting with ingredients and impressed the restaurant’s head chef with her exciting dessert recipes. She was quickly promoted to head pastry chef, with full responsibility for the dessert menu in the restaurant. After four years working in Dublin she decided to move home. She got a job as the head chef in a local restaurant. As head chef she had responsibility for setting the menus, ordering in ingredients, negotiating prices with suppliers and managing two assistant chefs. She really enjoyed the decision-making power of being head chef. However, this restaurant only opened between the months of March and October. During the winter months Sara kept busy. She enrolled on a web design course so that she could upskill herself. She supported herself by baking cakes for birthdays, weddings, christenings and other occasions for friends and neighbours. When the local town council started a farmers’ market on Saturday mornings Sara rented a stall where she sold a selection of baked goods. Her produce was hugely popular and she often sold everything within a few hours. Sara is considering asking the restaurant owner for the use of the restaurant premises for the following winter. She has prepared a Business Plan and has decided this is feasible. Her aim is to run a café from the premises during the day and use the kitchen to bake the ‘special occasion’ cakes in the evening. Sara believes that running a café during the winter months is a viable business idea. The town is the main shopping area for local people from the surrounding countryside. The local hotel ‘Annerly Hall’ is in the process of developing its spa facilities and is also planning a wedding fair in 2011. Besides the hotel there is no other place for local people to meet for lunch. She has also noticed that there is not much traditional tourism in the winter months. The area, like many others, is very popular with hiking and walking groups (see table). Sara is concerned that she does not have the relevant business experience to run the café and is considering approaching the local county enterprise board for support.\n\nActivities Engaged in by Domestic Holidaymakers (%)\nNational Parks — 2008: 26; 2009: 23\nWater Sports — 2008: 26; 2009: 27\nHouses Castles — 2008: 25; 2009: 24\nHiking Walking — 2008: 25; 2009: 21\nVisits to Spas — 2008: 20; 2009: 24\nGardens — 2008: 19; 2009: 20\nHeritage Interpretive Centres — 2008: 15; 2009: 21\nMuseums Art Galleries — 2008: 14; 2009: 14\nGolf — 2008: 11; 2009: 10\nSource: Fáilte Ireland 2009 State and explain three enterprising characteristics/skills shown by Sara.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "descriptions",
+        "kind": "criterion",
+        "verbatim": "State and explain three enterprising characteristics/skills shown by Sara.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Explain the same three chosen characteristics. No repetition. Complete printed support notes and allocation: 1. Innovative/Creative: She has come up with new ideas or found ways to improve existing ideas. 2. Motivated: She is a self starter/enthuastic to get going. She wants to give herself personal satisfaction. 3. Realistic: She knows what needs to be done without being too overly ambitious. 4. Risktaker: She is willing to set up on her own and is willing to manage the risks both personal and financial. 5. Decisive: She is good at making decisions. She makes them quickly and definitely. 6. Flexible: She is willing to change her career path as the need arises. 7. Hardworking: She is willing to put in a huge effort/hours/work. 3 @ 2m (1 + 1) 1m for stating +1m for description No repetition",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Sweet Dreams by Sara — complete case and table",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          9
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-b2i",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "b2i-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "B",
+    "questionRef": "2011 CL Section B Q2(i)",
+    "questionText": "What are the benefits for Sara of enrolling in a web design course?",
+    "stem": "SWEET DREAMS BY SARA Sara Ryan was always interested in cooking and baking. From a young age she made cakes and desserts for family and friends. Following her Leaving Certificate she did a catering course in the local Institute of Technology and three years later qualified with a Degree in Culinary Arts. She moved to Dublin where she got a job as an assistant chef in a top city centre restaurant. She impressed the head chef with her technical skills and positive attitude. Sara loved experimenting with ingredients and impressed the restaurant’s head chef with her exciting dessert recipes. She was quickly promoted to head pastry chef, with full responsibility for the dessert menu in the restaurant. After four years working in Dublin she decided to move home. She got a job as the head chef in a local restaurant. As head chef she had responsibility for setting the menus, ordering in ingredients, negotiating prices with suppliers and managing two assistant chefs. She really enjoyed the decision-making power of being head chef. However, this restaurant only opened between the months of March and October. During the winter months Sara kept busy. She enrolled on a web design course so that she could upskill herself. She supported herself by baking cakes for birthdays, weddings, christenings and other occasions for friends and neighbours. When the local town council started a farmers’ market on Saturday mornings Sara rented a stall where she sold a selection of baked goods. Her produce was hugely popular and she often sold everything within a few hours. Sara is considering asking the restaurant owner for the use of the restaurant premises for the following winter. She has prepared a Business Plan and has decided this is feasible. Her aim is to run a café from the premises during the day and use the kitchen to bake the ‘special occasion’ cakes in the evening. Sara believes that running a café during the winter months is a viable business idea. The town is the main shopping area for local people from the surrounding countryside. The local hotel ‘Annerly Hall’ is in the process of developing its spa facilities and is also planning a wedding fair in 2011. Besides the hotel there is no other place for local people to meet for lunch. She has also noticed that there is not much traditional tourism in the winter months. The area, like many others, is very popular with hiking and walking groups (see table). Sara is concerned that she does not have the relevant business experience to run the café and is considering approaching the local county enterprise board for support.\n\nActivities Engaged in by Domestic Holidaymakers (%)\nNational Parks — 2008: 26; 2009: 23\nWater Sports — 2008: 26; 2009: 27\nHouses Castles — 2008: 25; 2009: 24\nHiking Walking — 2008: 25; 2009: 21\nVisits to Spas — 2008: 20; 2009: 24\nGardens — 2008: 19; 2009: 20\nHeritage Interpretive Centres — 2008: 15; 2009: 21\nMuseums Art Galleries — 2008: 14; 2009: 14\nGolf — 2008: 11; 2009: 10\nSource: Fáilte Ireland 2009",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "What are the benefits for Sarah of enrolling in a web design course?",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 4,
+          "perOption": 1,
+          "options": [
+            "She can design her own website/use her new skill/upskilling herself/develop IT skills.",
+            "Save money/doesn’t need a professional designer.",
+            "Having a professional website gives her a competitive edge/good image.",
+            "To show Banks/County Enterprise Board she is serious about setting up on her own."
+          ]
+        },
+        "contextNote": " Complete printed support notes and allocation: 1. She can design her own website/use her new skill/upskilling herself/develop IT skills. 2. Save money/doesn’t need a professional designer. 3. Having a professional website gives her a competitive edge/good image. 4. To show Banks/County Enterprise Board she is serious about setting up on her own. 4 @ 1m"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Sweet Dreams by Sara — complete case and table",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          10
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-b2ii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "b2ii-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "B",
+    "questionRef": "2011 CL Section B Q2(ii)",
+    "questionText": "Sara will be running this business on her own (sole trader). What impact will Information and Communication Technology (ICT) have on Sweet Dreams?",
+    "stem": "SWEET DREAMS BY SARA Sara Ryan was always interested in cooking and baking. From a young age she made cakes and desserts for family and friends. Following her Leaving Certificate she did a catering course in the local Institute of Technology and three years later qualified with a Degree in Culinary Arts. She moved to Dublin where she got a job as an assistant chef in a top city centre restaurant. She impressed the head chef with her technical skills and positive attitude. Sara loved experimenting with ingredients and impressed the restaurant’s head chef with her exciting dessert recipes. She was quickly promoted to head pastry chef, with full responsibility for the dessert menu in the restaurant. After four years working in Dublin she decided to move home. She got a job as the head chef in a local restaurant. As head chef she had responsibility for setting the menus, ordering in ingredients, negotiating prices with suppliers and managing two assistant chefs. She really enjoyed the decision-making power of being head chef. However, this restaurant only opened between the months of March and October. During the winter months Sara kept busy. She enrolled on a web design course so that she could upskill herself. She supported herself by baking cakes for birthdays, weddings, christenings and other occasions for friends and neighbours. When the local town council started a farmers’ market on Saturday mornings Sara rented a stall where she sold a selection of baked goods. Her produce was hugely popular and she often sold everything within a few hours. Sara is considering asking the restaurant owner for the use of the restaurant premises for the following winter. She has prepared a Business Plan and has decided this is feasible. Her aim is to run a café from the premises during the day and use the kitchen to bake the ‘special occasion’ cakes in the evening. Sara believes that running a café during the winter months is a viable business idea. The town is the main shopping area for local people from the surrounding countryside. The local hotel ‘Annerly Hall’ is in the process of developing its spa facilities and is also planning a wedding fair in 2011. Besides the hotel there is no other place for local people to meet for lunch. She has also noticed that there is not much traditional tourism in the winter months. The area, like many others, is very popular with hiking and walking groups (see table). Sara is concerned that she does not have the relevant business experience to run the café and is considering approaching the local county enterprise board for support.\n\nActivities Engaged in by Domestic Holidaymakers (%)\nNational Parks — 2008: 26; 2009: 23\nWater Sports — 2008: 26; 2009: 27\nHouses Castles — 2008: 25; 2009: 24\nHiking Walking — 2008: 25; 2009: 21\nVisits to Spas — 2008: 20; 2009: 24\nGardens — 2008: 19; 2009: 20\nHeritage Interpretive Centres — 2008: 15; 2009: 21\nMuseums Art Galleries — 2008: 14; 2009: 14\nGolf — 2008: 11; 2009: 10\nSource: Fáilte Ireland 2009",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Sara will be running this business on her own (sole trader). What impact will Information and Communications Technology (ICT) have on Sweet Dreams?",
+        "marks": 8,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "contextNote": "No marks for headings. No repetition of points. Preserve all six full ICT pools and their examples. Complete printed support notes and allocation: Impact of ICT 1. Internet/ Email/ Website/Social networking sites Website to advertise the products/take orders. To check out what competitors are doing. Online payment(paypal) To do market research 2. Software packages Word Processing/Database/Publisher To be professional in the letters, invoices, flyers she sends out. Easy to store information. 3. Financial Keeping accounts/payroll/spreadsheet. Able to do online banking. Easy to draw up budgets/change figures. Online payments 4. Product Developement Modern cake designs can be prepared. Customers can email in photos etc. Research designs online. 5. Mobile Phone/Laptop/Video Conferencing/Fax/Phone Makes business efficient as you can handle business matters anywhere. Cuts down on the need for other machines such as answer machines etc. 6. Cost Implications Email/ design brochures/ valid cost implications/website advertising. 4 @ 2m (1+1) No marks for headings No repetition of points",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Sweet Dreams by Sara — complete case and table",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          10
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-b3i",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "b3i-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "B",
+    "questionRef": "2011 CL Section B Q3(i)",
+    "questionText": "State how the preparation of a Business Plan will help Sara’s enterprise.",
+    "stem": "SWEET DREAMS BY SARA Sara Ryan was always interested in cooking and baking. From a young age she made cakes and desserts for family and friends. Following her Leaving Certificate she did a catering course in the local Institute of Technology and three years later qualified with a Degree in Culinary Arts. She moved to Dublin where she got a job as an assistant chef in a top city centre restaurant. She impressed the head chef with her technical skills and positive attitude. Sara loved experimenting with ingredients and impressed the restaurant’s head chef with her exciting dessert recipes. She was quickly promoted to head pastry chef, with full responsibility for the dessert menu in the restaurant. After four years working in Dublin she decided to move home. She got a job as the head chef in a local restaurant. As head chef she had responsibility for setting the menus, ordering in ingredients, negotiating prices with suppliers and managing two assistant chefs. She really enjoyed the decision-making power of being head chef. However, this restaurant only opened between the months of March and October. During the winter months Sara kept busy. She enrolled on a web design course so that she could upskill herself. She supported herself by baking cakes for birthdays, weddings, christenings and other occasions for friends and neighbours. When the local town council started a farmers’ market on Saturday mornings Sara rented a stall where she sold a selection of baked goods. Her produce was hugely popular and she often sold everything within a few hours. Sara is considering asking the restaurant owner for the use of the restaurant premises for the following winter. She has prepared a Business Plan and has decided this is feasible. Her aim is to run a café from the premises during the day and use the kitchen to bake the ‘special occasion’ cakes in the evening. Sara believes that running a café during the winter months is a viable business idea. The town is the main shopping area for local people from the surrounding countryside. The local hotel ‘Annerly Hall’ is in the process of developing its spa facilities and is also planning a wedding fair in 2011. Besides the hotel there is no other place for local people to meet for lunch. She has also noticed that there is not much traditional tourism in the winter months. The area, like many others, is very popular with hiking and walking groups (see table). Sara is concerned that she does not have the relevant business experience to run the café and is considering approaching the local county enterprise board for support.\n\nActivities Engaged in by Domestic Holidaymakers (%)\nNational Parks — 2008: 26; 2009: 23\nWater Sports — 2008: 26; 2009: 27\nHouses Castles — 2008: 25; 2009: 24\nHiking Walking — 2008: 25; 2009: 21\nVisits to Spas — 2008: 20; 2009: 24\nGardens — 2008: 19; 2009: 20\nHeritage Interpretive Centres — 2008: 15; 2009: 21\nMuseums Art Galleries — 2008: 14; 2009: 14\nGolf — 2008: 11; 2009: 10\nSource: Fáilte Ireland 2009",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "State how the preparation of a Business Plan will help Sara’s enterprise.",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 4,
+          "perOption": 1,
+          "options": [
+            "You know your aims/objectives/can assess actual performance compared to what is expected.",
+            "Banks and other fancial institutions/agencies will require it if you apply for a loan or look for a grant.",
+            "Helps decision making, helps you see how aims objectives can be met.",
+            "Planning helps anticipate problems and aids problem solving/SWOT.",
+            "Allows you to plan for the future – costings/finance/capital purchases."
+          ]
+        },
+        "contextNote": " Complete printed support notes and allocation: 1. You know your aims/objectives/can assess actual performance compared to what is expected. 2. Banks and other fancial institutions/agencies will require it if you apply for a loan or look for a grant. 3. Helps decision making, helps you see how aims objectives can be met. 4. Planning helps anticipate problems and aids problem solving/SWOT. 5. Allows you to plan for the future – costings/finance/capital purchases. 4 @ 1m"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Sweet Dreams by Sara — complete case and table",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          11
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-b3ii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "b3ii-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "B",
+    "questionRef": "2011 CL Section B Q3(ii)",
+    "questionText": "Discuss, under relevant headings, the main issues that Sara must plan for in her new enterprise start-up.",
+    "stem": "SWEET DREAMS BY SARA Sara Ryan was always interested in cooking and baking. From a young age she made cakes and desserts for family and friends. Following her Leaving Certificate she did a catering course in the local Institute of Technology and three years later qualified with a Degree in Culinary Arts. She moved to Dublin where she got a job as an assistant chef in a top city centre restaurant. She impressed the head chef with her technical skills and positive attitude. Sara loved experimenting with ingredients and impressed the restaurant’s head chef with her exciting dessert recipes. She was quickly promoted to head pastry chef, with full responsibility for the dessert menu in the restaurant. After four years working in Dublin she decided to move home. She got a job as the head chef in a local restaurant. As head chef she had responsibility for setting the menus, ordering in ingredients, negotiating prices with suppliers and managing two assistant chefs. She really enjoyed the decision-making power of being head chef. However, this restaurant only opened between the months of March and October. During the winter months Sara kept busy. She enrolled on a web design course so that she could upskill herself. She supported herself by baking cakes for birthdays, weddings, christenings and other occasions for friends and neighbours. When the local town council started a farmers’ market on Saturday mornings Sara rented a stall where she sold a selection of baked goods. Her produce was hugely popular and she often sold everything within a few hours. Sara is considering asking the restaurant owner for the use of the restaurant premises for the following winter. She has prepared a Business Plan and has decided this is feasible. Her aim is to run a café from the premises during the day and use the kitchen to bake the ‘special occasion’ cakes in the evening. Sara believes that running a café during the winter months is a viable business idea. The town is the main shopping area for local people from the surrounding countryside. The local hotel ‘Annerly Hall’ is in the process of developing its spa facilities and is also planning a wedding fair in 2011. Besides the hotel there is no other place for local people to meet for lunch. She has also noticed that there is not much traditional tourism in the winter months. The area, like many others, is very popular with hiking and walking groups (see table). Sara is concerned that she does not have the relevant business experience to run the café and is considering approaching the local county enterprise board for support.\n\nActivities Engaged in by Domestic Holidaymakers (%)\nNational Parks — 2008: 26; 2009: 23\nWater Sports — 2008: 26; 2009: 27\nHouses Castles — 2008: 25; 2009: 24\nHiking Walking — 2008: 25; 2009: 21\nVisits to Spas — 2008: 20; 2009: 24\nGardens — 2008: 19; 2009: 20\nHeritage Interpretive Centres — 2008: 15; 2009: 21\nMuseums Art Galleries — 2008: 14; 2009: 14\nGolf — 2008: 11; 2009: 10\nSource: Fáilte Ireland 2009",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Discuss, under relevant headings, the main issues that Sara must consider for in her new enterprise start-up.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "No marks for headings. Preserve all seven full start-up issue pools, including each question and example. Complete printed support notes and allocation: 1. Premises/Location Where will she set up? How much rent she has to pay? Will she have renovation/alteration costs? Proximity to market/infrastructure. Is the premises fitted out with equipment? 2. Finances What capital will she need for stock/start up? Day to day expenses needed/running costs. Will suppliers give credit? Sources of finance Ability to repay loans/restraints imposed by lenders. 3. Marketing How will she advertise/website etc? What products will be successful? Who are the different types of customers/target market? How will she stand out from the competitors? Keeping up good community relations. 4. Employees Will she need any and what for/how many/what skills are needed? Cost of wages. Training needed. 5. Product/Service Will this be a seasonal business or an all year round? How will she need to change the product depending on the time of year? Getting it right to meet customer demands/charging the right price/maintaining quality control/service sourcing ingredients/one off/batch. 6. Competition Who are the competition? How will her business be better/USP? How will competition influence price? 7. Legalities All laws regarding setting up a business adhered to. Licences secured/or in order. Health and safety issues addressed. Employment law/Consumer law. 3 @ 2m (1m + 1m) No marks for headings",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Sweet Dreams by Sara — complete case and table",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          11,
+          12
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-b3iii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "b3iii-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "B",
+    "questionRef": "2011 CL Section B Q3(iii)",
+    "questionText": "Explain one reason the café might be successful during the winter months.",
+    "stem": "SWEET DREAMS BY SARA Sara Ryan was always interested in cooking and baking. From a young age she made cakes and desserts for family and friends. Following her Leaving Certificate she did a catering course in the local Institute of Technology and three years later qualified with a Degree in Culinary Arts. She moved to Dublin where she got a job as an assistant chef in a top city centre restaurant. She impressed the head chef with her technical skills and positive attitude. Sara loved experimenting with ingredients and impressed the restaurant’s head chef with her exciting dessert recipes. She was quickly promoted to head pastry chef, with full responsibility for the dessert menu in the restaurant. After four years working in Dublin she decided to move home. She got a job as the head chef in a local restaurant. As head chef she had responsibility for setting the menus, ordering in ingredients, negotiating prices with suppliers and managing two assistant chefs. She really enjoyed the decision-making power of being head chef. However, this restaurant only opened between the months of March and October. During the winter months Sara kept busy. She enrolled on a web design course so that she could upskill herself. She supported herself by baking cakes for birthdays, weddings, christenings and other occasions for friends and neighbours. When the local town council started a farmers’ market on Saturday mornings Sara rented a stall where she sold a selection of baked goods. Her produce was hugely popular and she often sold everything within a few hours. Sara is considering asking the restaurant owner for the use of the restaurant premises for the following winter. She has prepared a Business Plan and has decided this is feasible. Her aim is to run a café from the premises during the day and use the kitchen to bake the ‘special occasion’ cakes in the evening. Sara believes that running a café during the winter months is a viable business idea. The town is the main shopping area for local people from the surrounding countryside. The local hotel ‘Annerly Hall’ is in the process of developing its spa facilities and is also planning a wedding fair in 2011. Besides the hotel there is no other place for local people to meet for lunch. She has also noticed that there is not much traditional tourism in the winter months. The area, like many others, is very popular with hiking and walking groups (see table). Sara is concerned that she does not have the relevant business experience to run the café and is considering approaching the local county enterprise board for support.\n\nActivities Engaged in by Domestic Holidaymakers (%)\nNational Parks — 2008: 26; 2009: 23\nWater Sports — 2008: 26; 2009: 27\nHouses Castles — 2008: 25; 2009: 24\nHiking Walking — 2008: 25; 2009: 21\nVisits to Spas — 2008: 20; 2009: 24\nGardens — 2008: 19; 2009: 20\nHeritage Interpretive Centres — 2008: 15; 2009: 21\nMuseums Art Galleries — 2008: 14; 2009: 14\nGolf — 2008: 11; 2009: 10\nSource: Fáilte Ireland 2009",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          2
+        ],
+        "contextNote": "Any relevant comment to the case study: two marks. No model answer or intermediate mark is printed. Complete printed support notes and allocation: Any relevant comment to the case study. 2m",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Sweet Dreams by Sara — complete case and table",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          11,
+          12
+        ],
+        "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-c1a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-2",
+    "conceptId": "c1a-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q1(a)",
+    "questionText": "Name the career you investigated as part of your LCVP Link Modules.",
+    "stem": "A career investigation is helpful when making a career choice.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 1,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": " Complete printed support notes and allocation: Any career mentioned 1m",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c1b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-2",
+    "conceptId": "c1b-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q1(b) — characteristics",
+    "questionText": "State three qualities/skills relevant to this career.",
+    "stem": "A career investigation is helpful when making a career choice. Name the career you investigated as part of your LCVP Link Modules. State and explain three qualities/skills relevant to this career.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "characteristics",
+        "kind": "criterion",
+        "verbatim": "State",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Three distinct skills, one mark each. The three printed examples end with Etc.; they are examples rather than three compulsory answers. Complete printed support notes and allocation: 1. Teamwork skills 2. Communication skills 3. Confidence Etc. State 1m Explain 1m 3 @ 2m (1 +1)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c1b-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-2",
+    "conceptId": "c1b-2011-source-second-ask",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q1(b) — explanations",
+    "questionText": "explain three qualities/skills relevant to this career.",
+    "stem": "A career investigation is helpful when making a career choice. Name the career you investigated as part of your LCVP Link Modules. State and explain three qualities/skills relevant to this career.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Explain the same three chosen characteristics. No repetition. Complete printed support notes and allocation: 1. Teamwork skills 2. Communication skills 3. Confidence Etc. State 1m Explain 1m 3 @ 2m (1 +1)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ],
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c1c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-2",
+    "conceptId": "c1c-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q1(c)",
+    "questionText": "As part of your investigation you were involved in an ‘out of school’ activity. What were the benefits of participating in this activity?",
+    "stem": "A career investigation is helpful when making a career choice. Name the career you investigated as part of your LCVP Link Modules.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "response-1",
+        "kind": "criterion",
+        "verbatim": "As part of your investigation you were involved in an ‘out of school’ activity. What were the benefits of participating in this activity?",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 1 of 3.  Complete printed support notes and allocation: 1. You learn new skills such as communication skills by having to get information or pass on information successfully. 2. Improve personal skills e.g. you improve planning/research/organisation skills. 3. Easy to gain awareness/information about the career. 4. You can have new experiences such as interviewing someone from the career/learn about the type of work available/world of work. 5. Complete a portfolio item for the Link Modules on a career investigation. 6. Helped to focus you for the future/make decisions/make contacts/more motivated at school. 3 @ 3m (1 + 2) Complete original guidance: You learn new skills such as communication skills by having to get information or pass on information successfully. | Improve personal skills e.g. you improve planning/research/organisation skills. | Easy to gain awareness/information about the career. | You can have new experiences such as interviewing someone from the career/learn about the type of work available/world of work. | Complete a portfolio item for the Link Modules on a career investigation. | Helped to focus you for the future/make decisions/make contacts/more motivated at school.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-2",
+        "kind": "criterion",
+        "verbatim": "As part of your investigation you were involved in an ‘out of school’ activity. What were the benefits of participating in this activity?",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 2 of 3.  Complete printed support notes and allocation: 1. You learn new skills such as communication skills by having to get information or pass on information successfully. 2. Improve personal skills e.g. you improve planning/research/organisation skills. 3. Easy to gain awareness/information about the career. 4. You can have new experiences such as interviewing someone from the career/learn about the type of work available/world of work. 5. Complete a portfolio item for the Link Modules on a career investigation. 6. Helped to focus you for the future/make decisions/make contacts/more motivated at school. 3 @ 3m (1 + 2) Complete original guidance: You learn new skills such as communication skills by having to get information or pass on information successfully. | Improve personal skills e.g. you improve planning/research/organisation skills. | Easy to gain awareness/information about the career. | You can have new experiences such as interviewing someone from the career/learn about the type of work available/world of work. | Complete a portfolio item for the Link Modules on a career investigation. | Helped to focus you for the future/make decisions/make contacts/more motivated at school.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-3",
+        "kind": "criterion",
+        "verbatim": "As part of your investigation you were involved in an ‘out of school’ activity. What were the benefits of participating in this activity?",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 3 of 3.  Complete printed support notes and allocation: 1. You learn new skills such as communication skills by having to get information or pass on information successfully. 2. Improve personal skills e.g. you improve planning/research/organisation skills. 3. Easy to gain awareness/information about the career. 4. You can have new experiences such as interviewing someone from the career/learn about the type of work available/world of work. 5. Complete a portfolio item for the Link Modules on a career investigation. 6. Helped to focus you for the future/make decisions/make contacts/more motivated at school. 3 @ 3m (1 + 2) Complete original guidance: You learn new skills such as communication skills by having to get information or pass on information successfully. | Improve personal skills e.g. you improve planning/research/organisation skills. | Easy to gain awareness/information about the career. | You can have new experiences such as interviewing someone from the career/learn about the type of work available/world of work. | Complete a portfolio item for the Link Modules on a career investigation. | Helped to focus you for the future/make decisions/make contacts/more motivated at school.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        15
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c1d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-1",
+    "conceptId": "c1d-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q1(d)",
+    "questionText": "What advice would you give to a recently qualified person who is finding it difficult to get a job in their chosen career area?",
+    "stem": "A career investigation is helpful when making a career choice. Name the career you investigated as part of your LCVP Link Modules.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "response-1",
+        "kind": "criterion",
+        "verbatim": "What advice would you give to a recently qualified person who is finding it difficult to get a job in their chosen career area?",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 1 of 3.  Complete printed support notes and allocation: 1. Seek unpaid work experience in a relevant business to show that you are really interested in this area of work. 2. Do voluntary work to show you are interested in adding to your CV/ not being idle/personal satisfaction. 3. Investigate what further courses you could take so that you can keep up your skills/retrain/FAS/upskill. 4. Be flexible in what work you would do as this will make you more attractive as an employee. 5. Develop personal skills, such as teamwork which will make you more efficient as a worker. 6. Make personal contact with potential employers/recruitment agencies. 7. Set up your own business: grants/mentoring/fulfill personal ambition. 8. Emigrate: move to a country where your skills /qualifications are needed. You are upskilled/trained which enhances your CV. 3 @ 3m (1 + 2) Complete original guidance: Seek unpaid work experience in a relevant business to show that you are really interested in this area of work. | Do voluntary work to show you are interested in adding to your CV/ not being idle/personal satisfaction. | Investigate what further courses you could take so that you can keep up your skills/retrain/FAS/upskill. | Be flexible in what work you would do as this will make you more attractive as an employee. | Develop personal skills, such as teamwork which will make you more efficient as a worker. | Make personal contact with potential employers/recruitment agencies. | Set up your own business: grants/mentoring/fulfill personal ambition. | Emigrate: move to a country where your skills /qualifications are needed. You are upskilled/trained which enhances your CV.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-2",
+        "kind": "criterion",
+        "verbatim": "What advice would you give to a recently qualified person who is finding it difficult to get a job in their chosen career area?",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 2 of 3.  Complete printed support notes and allocation: 1. Seek unpaid work experience in a relevant business to show that you are really interested in this area of work. 2. Do voluntary work to show you are interested in adding to your CV/ not being idle/personal satisfaction. 3. Investigate what further courses you could take so that you can keep up your skills/retrain/FAS/upskill. 4. Be flexible in what work you would do as this will make you more attractive as an employee. 5. Develop personal skills, such as teamwork which will make you more efficient as a worker. 6. Make personal contact with potential employers/recruitment agencies. 7. Set up your own business: grants/mentoring/fulfill personal ambition. 8. Emigrate: move to a country where your skills /qualifications are needed. You are upskilled/trained which enhances your CV. 3 @ 3m (1 + 2) Complete original guidance: Seek unpaid work experience in a relevant business to show that you are really interested in this area of work. | Do voluntary work to show you are interested in adding to your CV/ not being idle/personal satisfaction. | Investigate what further courses you could take so that you can keep up your skills/retrain/FAS/upskill. | Be flexible in what work you would do as this will make you more attractive as an employee. | Develop personal skills, such as teamwork which will make you more efficient as a worker. | Make personal contact with potential employers/recruitment agencies. | Set up your own business: grants/mentoring/fulfill personal ambition. | Emigrate: move to a country where your skills /qualifications are needed. You are upskilled/trained which enhances your CV.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-3",
+        "kind": "criterion",
+        "verbatim": "What advice would you give to a recently qualified person who is finding it difficult to get a job in their chosen career area?",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 3 of 3.  Complete printed support notes and allocation: 1. Seek unpaid work experience in a relevant business to show that you are really interested in this area of work. 2. Do voluntary work to show you are interested in adding to your CV/ not being idle/personal satisfaction. 3. Investigate what further courses you could take so that you can keep up your skills/retrain/FAS/upskill. 4. Be flexible in what work you would do as this will make you more attractive as an employee. 5. Develop personal skills, such as teamwork which will make you more efficient as a worker. 6. Make personal contact with potential employers/recruitment agencies. 7. Set up your own business: grants/mentoring/fulfill personal ambition. 8. Emigrate: move to a country where your skills /qualifications are needed. You are upskilled/trained which enhances your CV. 3 @ 3m (1 + 2) Complete original guidance: Seek unpaid work experience in a relevant business to show that you are really interested in this area of work. | Do voluntary work to show you are interested in adding to your CV/ not being idle/personal satisfaction. | Investigate what further courses you could take so that you can keep up your skills/retrain/FAS/upskill. | Be flexible in what work you would do as this will make you more attractive as an employee. | Develop personal skills, such as teamwork which will make you more efficient as a worker. | Make personal contact with potential employers/recruitment agencies. | Set up your own business: grants/mentoring/fulfill personal ambition. | Emigrate: move to a country where your skills /qualifications are needed. You are upskilled/trained which enhances your CV.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        16
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c2a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "c2a-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q2(a)",
+    "questionText": "Name the business enterprise your class visited.",
+    "stem": "A visit-out to a local business enterprise is very beneficial as a class activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          2
+        ],
+        "contextNote": " Complete printed support notes and allocation: Any business named 2m",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        17
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c2b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "c2b-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q2(b)",
+    "questionText": "State two goals you had for the visit-out to this business.",
+    "stem": "A visit-out to a local business enterprise is very beneficial as a class activity. Name the business enterprise your class visited.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "State two goals you had for the visit-out to this business.",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "To learn about the business.",
+            "To sucessfully plan/organise a visit out.",
+            "To improve personal skills.",
+            "To prepare an item for my portfolio.",
+            "Learn to work as part of a team."
+          ]
+        },
+        "contextNote": " Complete printed support notes and allocation: 1. To learn about the business. 2. To sucessfully plan/organise a visit out. 3. To improve personal skills. 4. To prepare an item for my portfolio. 5. Learn to work as part of a team. 2 @ 2m (0, 2)"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        17
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c2c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c2c-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q2(c)",
+    "questionText": "Outline the main factors which contributed to the success or failure of the activity.",
+    "stem": "A visit-out to a local business enterprise is very beneficial as a class activity. Name the business enterprise your class visited.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "response-1",
+        "kind": "criterion",
+        "verbatim": "Outline the main factors which contributed to the success or failure of the visit-out.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 1 of 3.  Complete printed support notes and allocation: 1. How well the visit was planned? 2. Did arrangements work according to plan? 3. Participation of all the class members. 4. How welcoming/prepared the organisation we visited was for us? 5. The quality of the research on the organisation. 6. Quality of the questions asked/information received. 3 @ 3m (1 + 2) Complete original guidance: How well the visit was planned? | Did arrangements work according to plan? | Participation of all the class members. | How welcoming/prepared the organisation we visited was for us? | The quality of the research on the organisation. | Quality of the questions asked/information received.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-2",
+        "kind": "criterion",
+        "verbatim": "Outline the main factors which contributed to the success or failure of the visit-out.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 2 of 3.  Complete printed support notes and allocation: 1. How well the visit was planned? 2. Did arrangements work according to plan? 3. Participation of all the class members. 4. How welcoming/prepared the organisation we visited was for us? 5. The quality of the research on the organisation. 6. Quality of the questions asked/information received. 3 @ 3m (1 + 2) Complete original guidance: How well the visit was planned? | Did arrangements work according to plan? | Participation of all the class members. | How welcoming/prepared the organisation we visited was for us? | The quality of the research on the organisation. | Quality of the questions asked/information received.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-3",
+        "kind": "criterion",
+        "verbatim": "Outline the main factors which contributed to the success or failure of the visit-out.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 3 of 3.  Complete printed support notes and allocation: 1. How well the visit was planned? 2. Did arrangements work according to plan? 3. Participation of all the class members. 4. How welcoming/prepared the organisation we visited was for us? 5. The quality of the research on the organisation. 6. Quality of the questions asked/information received. 3 @ 3m (1 + 2) Complete original guidance: How well the visit was planned? | Did arrangements work according to plan? | Participation of all the class members. | How welcoming/prepared the organisation we visited was for us? | The quality of the research on the organisation. | Quality of the questions asked/information received.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        18
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c2di",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c2di-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q2(d)(i)",
+    "questionText": "Explain what is meant by evaluation.",
+    "stem": "A visit-out to a local business enterprise is very beneficial as a class activity. Name the business enterprise your class visited.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Explain what is meant by evaluation.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          2,
+          4
+        ],
+        "contextNote": "One definition, with the printed two plus two marks. No one-mark steps are printed. Complete printed support notes and allocation: Evaluation is the reviewing of an activity with a view to assessing if it was successful/analysing the information to see if it was a success or failure/to alter how we would do the activity in the future. 2m + 2m",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        19
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c2dii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c2dii-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q2(d)(ii) — methods",
+    "questionText": "How would your class evaluate the visit-out?",
+    "stem": "A visit-out to a local business enterprise is very beneficial as a class activity. Name the business enterprise your class visited. How would your class evaluate the visit-out? Give reasons why they would do so.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "methods",
+        "kind": "criterion",
+        "verbatim": "How would your class evaluate the visit-out? Give reasons why they would do so.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Three methods. Complete printed support notes and allocation: 1. Questionnaire: Can be given to the organisation visited as well as to the class. Reason: Easy to administer/collate results. Can be completed anonymously. Generally inexpensive. Good response rate. They are objective. 2. Ask Teachers/Member of organisation visited for their opinion. Reason: Allows the class to practice their interview/communication skills. Questions can be explained if necessary. Easy to do. No cost involved. You will get honest feedback/review of teamwork. 3. Quality of report - has enough information/correct type of information been learned? Reason: Easy method to use as all class members must produce a report. Reports can be compared easily. 4. Review of Teamwork – to see if the class put into practice what they have learned. Reason Objective was to work well as a team. All class members are aware of what is involved. 5. Class Discussion: Varying opinions and discussions can be taken on board. Reason Easy to organise Everyone can participate. Allows one to see how much was learned. Good to show improvement or practice in communication skills. 3 @ 2m (1 + 1)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        19
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c2dii-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c2dii-2011-source-second-ask",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q2(d)(ii) — reasons",
+    "questionText": "Give reasons why they would do so.",
+    "stem": "A visit-out to a local business enterprise is very beneficial as a class activity. Name the business enterprise your class visited. How would your class evaluate the visit-out? Give reasons why they would do so.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "reasons",
+        "kind": "criterion",
+        "verbatim": "How would your class evaluate the visit-out? Give reasons why they would do so.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "One reason for each same method. Complete printed support notes and allocation: 1. Questionnaire: Can be given to the organisation visited as well as to the class. Reason: Easy to administer/collate results. Can be completed anonymously. Generally inexpensive. Good response rate. They are objective. 2. Ask Teachers/Member of organisation visited for their opinion. Reason: Allows the class to practice their interview/communication skills. Questions can be explained if necessary. Easy to do. No cost involved. You will get honest feedback/review of teamwork. 3. Quality of report - has enough information/correct type of information been learned? Reason: Easy method to use as all class members must produce a report. Reports can be compared easily. 4. Review of Teamwork – to see if the class put into practice what they have learned. Reason Objective was to work well as a team. All class members are aware of what is involved. 5. Class Discussion: Varying opinions and discussions can be taken on board. Reason Easy to organise Everyone can participate. Allows one to see how much was learned. Good to show improvement or practice in communication skills. 3 @ 2m (1 + 1)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        19
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c3a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-0",
+    "conceptId": "c3a-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q3(a)",
+    "questionText": "Give one reason why you think your school is located where it is.",
+    "stem": "Consider the area where you live.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 1,
+    "rows": [
+      {
+        "id": "reason",
+        "kind": "anyN",
+        "verbatim": "Give one reason why you think your school is located where it is.",
+        "marks": 1,
+        "openList": true,
+        "group": {
+          "claimMax": 1,
+          "perOption": 1,
+          "options": [
+            "In a town/near a large population.",
+            "No other school nearby.",
+            "Tradition in the area.",
+            "Out of the way of major traffic/roads."
+          ]
+        },
+        "contextNote": " Complete printed support notes and allocation: 1. In a town/near a large population. 2. No other school nearby. 3. Tradition in the area. 4. Out of the way of major traffic/roads. Any valid reason 1m"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        20
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c3b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "c3b-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q3(b) — types",
+    "questionText": "Name two types of enterprises/organisations in the area.",
+    "stem": "Consider the area where you live. Name two types of enterprises/organisations in the area. Explain one advantage of each to the area.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "types",
+        "kind": "anyN",
+        "verbatim": "Types of enterprises",
+        "marks": 2,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "Retail",
+            "Manufacturing",
+            "Financial",
+            "Transport",
+            "Service industry",
+            "Job creation",
+            "State run organisations",
+            "Tourism/Heritage",
+            "Community organisation",
+            "Charitable organisation",
+            "Sporting organisations"
+          ]
+        },
+        "contextNote": "Keep both original columns: commercial and voluntary organisations. No mandatory mix is printed. Complete printed support notes and allocation: Types of enterprises Commercial Organisations Voluntary Organisations Retail Community organisation Manufacturing Charitable organisation Financial Sporting organisations Transport Service industry Job creation State run organisations Tourism/Heritage 2 @ 1m Advantages 1. Service offered is needed/has a function. 2. Convenience for the customers. 3. They provide employment/job creation. 4. Prestige for the area/brings visitors 5. They help other business/organisations/brings better facilities. 6. Sponsor school/community organisation. 7. Creates a community spirit/brings people together. 2 @ 2m (0, 2)"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        20
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalTopicIds": [
+      "lcvp-link-modules-1-2"
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-c3b-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "c3b-2011-source-second-ask",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q3(b) — advantages",
+    "questionText": "Explain one advantage of each to the area.",
+    "stem": "Consider the area where you live. Name two types of enterprises/organisations in the area. Explain one advantage of each to the area.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "advantages",
+        "kind": "criterion",
+        "verbatim": "Advantages",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          2,
+          4
+        ],
+        "contextNote": "One advantage for each same selected type. Two or zero marks each. Complete printed support notes and allocation: Types of enterprises Commercial Organisations Voluntary Organisations Retail Community organisation Manufacturing Charitable organisation Financial Sporting organisations Transport Service industry Job creation State run organisations Tourism/Heritage 2 @ 1m Advantages 1. Service offered is needed/has a function. 2. Convenience for the customers. 3. They provide employment/job creation. 4. Prestige for the area/brings visitors 5. They help other business/organisations/brings better facilities. 6. Sponsor school/community organisation. 7. Creates a community spirit/brings people together. 2 @ 2m (0, 2)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        20
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalTopicIds": [
+      "lcvp-link-modules-1-2"
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-c3c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "c3c-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q3(c) — challenges",
+    "questionText": "Identify two challenges faced by enterprises/organisations in the area.",
+    "stem": "Consider the area where you live. Identify two challenges faced by enterprises/organisations in the area. Explain two ways each challenge can be overcome.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "challenges",
+        "kind": "criterion",
+        "verbatim": "Identify two challenges faced by enterprises/organisations in the area. Explain two ways each challenge can be overcome.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          2,
+          4
+        ],
+        "contextNote": "Two challenges, two or zero marks each. Complete printed support notes and allocation: 1. People have less money to spend/Recession/Lack of donations Change their product/service/diversify. Lower prices. Give value for money. 2. High cost Negotiate new prices with suppliers. Find new suppliers. Move premises/re-negotiate rent. Reduce wage bill. 3. Competition from others Have a unique good/service. Make sure quality is better thus keeping customers. Lower prices. 4. Some organisations may be faced with higher demand for service but with less staff/money e.g. hospitals Reorganise how they do their work. Provide information so that customers understand why you are operating how you are. Voluntary workers. 5. Location/rural/urban Remote area lack of services/online business. Urban – No Parking. 6. Depopulation/Emigration Festivals. Source grant incentives to set up a new business. Provide education and training courses 7. Environmental issue/Vandalism Set up task a force within the enterprise/organisation to address/monitor issues/look at data. Recycling CCTV [2 x 2m challenges (0, 2)] [2 x 2m - ways to overcome (1 + 1)]",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        21
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalTopicIds": [
+      "lcvp-link-modules-1-2"
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-c3c-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "c3c-2011-source-second-ask",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q3(c) — ways to overcome",
+    "questionText": "Explain two ways each challenge can be overcome.",
+    "stem": "Consider the area where you live. Identify two challenges faced by enterprises/organisations in the area. Explain two ways each challenge can be overcome.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "first-remedies",
+        "kind": "criterion",
+        "verbatim": "Identify two challenges faced by enterprises/organisations in the area. Explain two ways each challenge can be overcome.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Two one-mark remedies for the first chosen challenge. Complete printed support notes and allocation: 1. People have less money to spend/Recession/Lack of donations Change their product/service/diversify. Lower prices. Give value for money. 2. High cost Negotiate new prices with suppliers. Find new suppliers. Move premises/re-negotiate rent. Reduce wage bill. 3. Competition from others Have a unique good/service. Make sure quality is better thus keeping customers. Lower prices. 4. Some organisations may be faced with higher demand for service but with less staff/money e.g. hospitals Reorganise how they do their work. Provide information so that customers understand why you are operating how you are. Voluntary workers. 5. Location/rural/urban Remote area lack of services/online business. Urban – No Parking. 6. Depopulation/Emigration Festivals. Source grant incentives to set up a new business. Provide education and training courses 7. Environmental issue/Vandalism Set up task a force within the enterprise/organisation to address/monitor issues/look at data. Recycling CCTV [2 x 2m challenges (0, 2)] [2 x 2m - ways to overcome (1 + 1)]",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "second-remedies",
+        "kind": "criterion",
+        "verbatim": "Identify two challenges faced by enterprises/organisations in the area. Explain two ways each challenge can be overcome.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Two one-mark remedies for the second chosen challenge. Complete printed support notes and allocation: 1. People have less money to spend/Recession/Lack of donations Change their product/service/diversify. Lower prices. Give value for money. 2. High cost Negotiate new prices with suppliers. Find new suppliers. Move premises/re-negotiate rent. Reduce wage bill. 3. Competition from others Have a unique good/service. Make sure quality is better thus keeping customers. Lower prices. 4. Some organisations may be faced with higher demand for service but with less staff/money e.g. hospitals Reorganise how they do their work. Provide information so that customers understand why you are operating how you are. Voluntary workers. 5. Location/rural/urban Remote area lack of services/online business. Urban – No Parking. 6. Depopulation/Emigration Festivals. Source grant incentives to set up a new business. Provide education and training courses 7. Environmental issue/Vandalism Set up task a force within the enterprise/organisation to address/monitor issues/look at data. Recycling CCTV [2 x 2m challenges (0, 2)] [2 x 2m - ways to overcome (1 + 1)]",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        21
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalTopicIds": [
+      "lcvp-link-modules-1-2"
+    ]
+  },
+  {
+    "id": "lcvp-2011-cl-c3d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "c3d-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q3(d)",
+    "questionText": "What advice would you give to an entrepreneur who is researching the possibility of setting up a business in the area? (Four points required)",
+    "stem": "Consider the area where you live.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "response-1",
+        "kind": "criterion",
+        "verbatim": "What advice would you give to an entrepreneur who is researching the possibility of setting up a business in the area? Four points needed.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Four distinct points. The scheme gives two responses three marks (1+2) and two responses two marks (1+1). Preserve all nine printed alternatives; do not fix particular alternatives to the higher award. Response 1 of 4 receives up to 3 marks. Complete printed support notes and allocation: 1. Do Market Research to determine if a market exists/look at competition. 2. Contact the local enterprise board for advice/mentoring. 3. Do a business plan/to get a bank loan/investors. 4. Conduct a feasibility study. 5. Apply for grants that are available. 6. Rent one of the vacant units rather than building a new unit/lease equipment or premises. 7. Research the availability of suitable employees, so that you select hardworking, flexible staff. 8. Transport systems, near airport/port/good infrastructure. 9. Check with the local council re planning requirements/permits/licences secured/planning permission. 2 @ 3m (1 + 2) 2 @ 2m (1 + 1)"
+      },
+      {
+        "id": "response-2",
+        "kind": "criterion",
+        "verbatim": "What advice would you give to an entrepreneur who is researching the possibility of setting up a business in the area? Four points needed.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Four distinct points. The scheme gives two responses three marks (1+2) and two responses two marks (1+1). Preserve all nine printed alternatives; do not fix particular alternatives to the higher award. Response 2 of 4 receives up to 3 marks. Complete printed support notes and allocation: 1. Do Market Research to determine if a market exists/look at competition. 2. Contact the local enterprise board for advice/mentoring. 3. Do a business plan/to get a bank loan/investors. 4. Conduct a feasibility study. 5. Apply for grants that are available. 6. Rent one of the vacant units rather than building a new unit/lease equipment or premises. 7. Research the availability of suitable employees, so that you select hardworking, flexible staff. 8. Transport systems, near airport/port/good infrastructure. 9. Check with the local council re planning requirements/permits/licences secured/planning permission. 2 @ 3m (1 + 2) 2 @ 2m (1 + 1)"
+      },
+      {
+        "id": "response-3",
+        "kind": "criterion",
+        "verbatim": "What advice would you give to an entrepreneur who is researching the possibility of setting up a business in the area? Four points needed.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Four distinct points. The scheme gives two responses three marks (1+2) and two responses two marks (1+1). Preserve all nine printed alternatives; do not fix particular alternatives to the higher award. Response 3 of 4 receives up to 2 marks. Complete printed support notes and allocation: 1. Do Market Research to determine if a market exists/look at competition. 2. Contact the local enterprise board for advice/mentoring. 3. Do a business plan/to get a bank loan/investors. 4. Conduct a feasibility study. 5. Apply for grants that are available. 6. Rent one of the vacant units rather than building a new unit/lease equipment or premises. 7. Research the availability of suitable employees, so that you select hardworking, flexible staff. 8. Transport systems, near airport/port/good infrastructure. 9. Check with the local council re planning requirements/permits/licences secured/planning permission. 2 @ 3m (1 + 2) 2 @ 2m (1 + 1)"
+      },
+      {
+        "id": "response-4",
+        "kind": "criterion",
+        "verbatim": "What advice would you give to an entrepreneur who is researching the possibility of setting up a business in the area? Four points needed.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Four distinct points. The scheme gives two responses three marks (1+2) and two responses two marks (1+1). Preserve all nine printed alternatives; do not fix particular alternatives to the higher award. Response 4 of 4 receives up to 2 marks. Complete printed support notes and allocation: 1. Do Market Research to determine if a market exists/look at competition. 2. Contact the local enterprise board for advice/mentoring. 3. Do a business plan/to get a bank loan/investors. 4. Conduct a feasibility study. 5. Apply for grants that are available. 6. Rent one of the vacant units rather than building a new unit/lease equipment or premises. 7. Research the availability of suitable employees, so that you select hardworking, flexible staff. 8. Transport systems, near airport/port/good infrastructure. 9. Check with the local council re planning requirements/permits/licences secured/planning permission. 2 @ 3m (1 + 2) 2 @ 2m (1 + 1)"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        22
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c4a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-0",
+    "conceptId": "c4a-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q4(a)",
+    "questionText": "Name two types of work other than employment.",
+    "stem": "Through your participation in LCVP you have gained knowledge of the working world.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Name two types of work other than employment.",
+        "marks": 2,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "Self employment",
+            "Voluntary work",
+            "Housework",
+            "Schoolwork/Homework",
+            "Work experience"
+          ]
+        },
+        "contextNote": " Complete printed support notes and allocation: 1. Self employment 2. Voluntary work 3. Housework 4. Schoolwork/Homework 5. Work experience 2 @ 1m"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        23
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c4b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-0",
+    "conceptId": "c4b-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q4(b)",
+    "questionText": "Describe three non-financial benefits of employment.",
+    "stem": "Through your participation in LCVP you have gained knowledge of the working world.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Describe three non-financial benefits of employment.",
+        "marks": 6,
+        "openList": true,
+        "group": {
+          "claimMax": 3,
+          "perOption": 2,
+          "options": [
+            "Experience/learn new skills/team work skills.",
+            "Improve your own self esteem/more confident/self fulfilment.",
+            "Sociable activity/friendships/quality of life/interpersonal aspect.",
+            "You may get benefits-in-kind/company car/travel/shares.",
+            "Job security so you can plan for the future.",
+            "CV improved by having work/reference/referee/contact for the future."
+          ]
+        },
+        "contextNote": "Explanation is needed applies to every response; it is not part of option6. Complete printed support notes and allocation: 1. Experience/learn new skills/team work skills. 2. Improve your own self esteem/more confident/self fulfilment. 3. Sociable activity/friendships/quality of life/interpersonal aspect. 4. You may get benefits-in-kind/company car/travel/shares. 5. Job security so you can plan for the future. 6. CV improved by having work/reference/referee/contact for the future. Explanation is needed 3 @ 2m (0, 2)"
+      },
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "unprinted": true,
+        "contextNote": "The notice applies to the unprinted explanations required beyond the brief statements in options1–4. Keep the complete printed wording of all six options, including the explanatory clauses in options5 and6. Each complete response receives two or zero marks; this notice adds no marks."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        23
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c4c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-0",
+    "conceptId": "c4c-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q4(c) — definition",
+    "questionText": "What is a Trade Union?",
+    "stem": "Through your participation in LCVP you have gained knowledge of the working world. What is a Trade Union? Explain three reasons why employees join Trade Unions.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "definition",
+        "kind": "criterion",
+        "verbatim": "What is a Trade Union?",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": " Complete printed support notes and allocation: A Trade Union represents an organisation of workers. They represent the workers as a group to improve their conditions of work. 2m (1 + 1) Reasons why workers join unions. . 1. All the workers back each other, solidarity. 2. The union will negotiate better wages/working conditions. 3. Union will represent the worker if there is a dispute/issue/bullying. 4. Thousands of members are more powerful than a small number so better for negotiating. 5. Benefit from group schemes (VHI/Credit Union). 6. Can be compulsory. 3 @ 2m (1 + 1)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        24
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c4c-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-0",
+    "conceptId": "c4c-2011-source-second-ask",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q4(c) — reasons",
+    "questionText": "Explain three reasons why employees join Trade Unions.",
+    "stem": "Through your participation in LCVP you have gained knowledge of the working world. What is a Trade Union? Explain three reasons why employees join Trade Unions.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "reasons",
+        "kind": "criterion",
+        "verbatim": "Reasons why workers join unions.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": " Complete printed support notes and allocation: A Trade Union represents an organisation of workers. They represent the workers as a group to improve their conditions of work. 2m (1 + 1) Reasons why workers join unions. . 1. All the workers back each other, solidarity. 2. The union will negotiate better wages/working conditions. 3. Union will represent the worker if there is a dispute/issue/bullying. 4. Thousands of members are more powerful than a small number so better for negotiating. 5. Benefit from group schemes (VHI/Credit Union). 6. Can be compulsory. 3 @ 2m (1 + 1)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        24
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c4d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-0",
+    "conceptId": "c4d-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q4(d)",
+    "questionText": "Discuss three benefits for workers who engage in further education and training throughout their working life.",
+    "stem": "Through your participation in LCVP you have gained knowledge of the working world.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "response-1",
+        "kind": "criterion",
+        "verbatim": "Discuss three benefits for workers who engage in further education and training throughout their working life.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 1 of 3.  Complete printed support notes and allocation: 1. Improve skills: Better chance of promotion in their job/retention of work. 2. Helps to find work in the future/Enhances your CV/Gives the employee choice for their future. 3. New challenges: Keeps the employee motivated and interested. 4. Certain careers (such as IT) need constant updating because of new developments.. 5. Employees now change careers more often so new qualifications are needed. 6. Renumeration/greater responsibility. 3 @ 3m (1 + 2) Complete original guidance: Improve skills: Better chance of promotion in their job/retention of work. | Helps to find work in the future/Enhances your CV/Gives the employee choice for their future. | New challenges: Keeps the employee motivated and interested. | Certain careers (such as IT) need constant updating because of new developments.. | Employees now change careers more often so new qualifications are needed. | Renumeration/greater responsibility.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-2",
+        "kind": "criterion",
+        "verbatim": "Discuss three benefits for workers who engage in further education and training throughout their working life.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 2 of 3.  Complete printed support notes and allocation: 1. Improve skills: Better chance of promotion in their job/retention of work. 2. Helps to find work in the future/Enhances your CV/Gives the employee choice for their future. 3. New challenges: Keeps the employee motivated and interested. 4. Certain careers (such as IT) need constant updating because of new developments.. 5. Employees now change careers more often so new qualifications are needed. 6. Renumeration/greater responsibility. 3 @ 3m (1 + 2) Complete original guidance: Improve skills: Better chance of promotion in their job/retention of work. | Helps to find work in the future/Enhances your CV/Gives the employee choice for their future. | New challenges: Keeps the employee motivated and interested. | Certain careers (such as IT) need constant updating because of new developments.. | Employees now change careers more often so new qualifications are needed. | Renumeration/greater responsibility.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-3",
+        "kind": "criterion",
+        "verbatim": "Discuss three benefits for workers who engage in further education and training throughout their working life.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 3 of 3.  Complete printed support notes and allocation: 1. Improve skills: Better chance of promotion in their job/retention of work. 2. Helps to find work in the future/Enhances your CV/Gives the employee choice for their future. 3. New challenges: Keeps the employee motivated and interested. 4. Certain careers (such as IT) need constant updating because of new developments.. 5. Employees now change careers more often so new qualifications are needed. 6. Renumeration/greater responsibility. 3 @ 3m (1 + 2) Complete original guidance: Improve skills: Better chance of promotion in their job/retention of work. | Helps to find work in the future/Enhances your CV/Gives the employee choice for their future. | New challenges: Keeps the employee motivated and interested. | Certain careers (such as IT) need constant updating because of new developments.. | Employees now change careers more often so new qualifications are needed. | Renumeration/greater responsibility.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        25
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c5a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c5a-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q5(a)",
+    "questionText": "Outline two methods of generating ideas for enterprise activities.",
+    "stem": "Your Link Modules class has decided to produce and sell friendship bracelets to the students of your school as an enterprise activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Outline two methods of generating ideas for enterprise activities.",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "Brainstorming in the class/suggestion box/mind map",
+            "Copy previous successful enterprises.",
+            "Do Market Research to find out what would sell/survey/internet.",
+            "Look at what is available in the shops.",
+            "Hobbies/interests.",
+            "Consultants/mentor from Junior Achievement/CEB."
+          ]
+        },
+        "contextNote": " Complete printed support notes and allocation: 1. Brainstorming in the class/suggestion box/mind map 2. Copy previous successful enterprises. 3. Do Market Research to find out what would sell/survey/internet. 4. Look at what is available in the shops. 5. Hobbies/interests. 6. Consultants/mentor from Junior Achievement/CEB. 2 @ 2m (0, 2)"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        26
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c5b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c5b-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q5(b)",
+    "questionText": "Explain why it is important to carry out market research before undertaking this activity.",
+    "stem": "Your Link Modules class has decided to produce and sell friendship bracelets to the students of your school as an enterprise activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Explain why it is important to carry out market research before undertaking this activity.",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "You find out if the students would be interested in the product/what year groups are interested so you can plan your product around them.",
+            "You can get an idea of how much students would be willing to pay.",
+            "Potential problems should be identified e.g. quality, need for raw materials/start up capital/location.",
+            "Make sure money is not wasted, produce the correct quantity.",
+            "Information on competitors/what’s in the shops."
+          ]
+        },
+        "contextNote": " Complete printed support notes and allocation: 1. You find out if the students would be interested in the product/what year groups are interested so you can plan your product around them. 2. You can get an idea of how much students would be willing to pay. 3. Potential problems should be identified e.g. quality, need for raw materials/start up capital/location. 4. Make sure money is not wasted, produce the correct quantity. 5. Information on competitors/what’s in the shops. 2 @ 2m (0, 2)"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        26
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c5c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c5c-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q5(c)",
+    "questionText": "Draft a questionnaire to carry out market research for this activity. It should contain at least five questions.",
+    "stem": "Your Link Modules class has decided to produce and sell friendship bracelets to the students of your school as an enterprise activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "presentation-1",
+        "kind": "point",
+        "verbatim": "Layout",
+        "marks": 1,
+        "contextNote": " Complete printed support notes and allocation: Questionnaire Q.1 Male □ Female □ Q.2 What year are you in? 1st □ 2nd □ 3rd □ 5th □ 6th □ Q.3 Would you buy a Friendship Bracelet? Yes □ No □ Q.4 If yes, would you buy bracelets in more than one colour? Yes □ No □ Q.5 Would you buy them for yourself or as a gift? ______________________ Q.6* How much would you be willing to pay for 1 bracelet? ________________ Layout Heading Neatness Instructions Variety of question styles 5 marks 5 @ 1m 5 Questions 5 marks 5 @ 1m *Compulsory Question"
+      },
+      {
+        "id": "presentation-2",
+        "kind": "point",
+        "verbatim": "Heading",
+        "marks": 1
+      },
+      {
+        "id": "presentation-3",
+        "kind": "point",
+        "verbatim": "Neatness",
+        "marks": 1
+      },
+      {
+        "id": "presentation-4",
+        "kind": "point",
+        "verbatim": "Instructions",
+        "marks": 1
+      },
+      {
+        "id": "presentation-5",
+        "kind": "point",
+        "verbatim": "Variety of question styles",
+        "marks": 1
+      },
+      {
+        "id": "compulsory-question",
+        "kind": "criterion",
+        "verbatim": "How much would you be willing to pay for 1 bracelet?",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": "The source marks this question with an asterisk and says Compulsory Question."
+      },
+      {
+        "id": "other-questions",
+        "kind": "criterion",
+        "verbatim": "5 Questions",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": "Four other distinct questions, one mark each. Together with the compulsory willingness-to-pay question these make the five marked questions. Preserve all six example questions and printed answer choices in the full model above.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        27
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c5d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-3",
+    "conceptId": "c5d-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q5(d)",
+    "questionText": "Set out the marketing section of the Business Plan which would have been drawn up. Include all elements of the marketing mix which would have been considered.",
+    "stem": "Your Link Modules class has decided to produce and sell friendship bracelets to the students of your school as an enterprise activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 7,
+    "rows": [
+      {
+        "id": "research",
+        "kind": "point",
+        "verbatim": "Market Research: Draw up a questionnaire and do research in year group. Ask other students who have set up mini companies in the past for advice. Use the internet to get ideas for different products.",
+        "marks": 1,
+        "contextNote": " Complete printed support notes and allocation: Marketing section: Market Research: Draw up a questionnaire and do research in year group. Ask other students who have set up mini companies in the past for advice. Use the internet to get ideas for different products. 1 mark Product Make sure that the quality is good by using good quality raw materials and that the production is of a high standard/ USP/ packaging/design. Price Consider how much students will pay so that this is not priced to high yet high enough to cover costs and yield a profit/in line with competition/different pricing stratagies. Place Plan carefully where the bracelets will be sold, e.g. setting up a stand in the school in a good location in the assembly area. Sell the bracelets when there is a school activity such as at sports event or school concert/set up stand in local shopping centre/craft fairs/local primary school. Promotion How will the bracelets be advertised; make samples and go round taking orders in advance, allow students to order the colours they want. Put up posters around the school and use the school intercom. Sales promotion/web site. 2 @ 2m (1 + 1) 2 @ 1m"
+      },
+      {
+        "id": "mix-1",
+        "kind": "criterion",
+        "verbatim": "Marketing section:",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Use each of the four marketing-mix elements once. The two more developed elements receive two marks each and the other two one each; no particular element is assigned the higher award. Response 1 of four."
+      },
+      {
+        "id": "mix-2",
+        "kind": "criterion",
+        "verbatim": "Marketing section:",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Use each of the four marketing-mix elements once. The two more developed elements receive two marks each and the other two one each; no particular element is assigned the higher award. Response 2 of four."
+      },
+      {
+        "id": "mix-3",
+        "kind": "criterion",
+        "verbatim": "Marketing section:",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": "Use each of the four marketing-mix elements once. The two more developed elements receive two marks each and the other two one each; no particular element is assigned the higher award. Response 3 of four."
+      },
+      {
+        "id": "mix-4",
+        "kind": "criterion",
+        "verbatim": "Marketing section:",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": "Use each of the four marketing-mix elements once. The two more developed elements receive two marks each and the other two one each; no particular element is assigned the higher award. Response 4 of four."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        28
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c6a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-3",
+    "conceptId": "c6a-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q6(a)",
+    "questionText": "Write an email you might send when seeking a suitable work placement.",
+    "stem": "Work Experience/Shadowing placement is a very valuable exercise for LCVP students as it prepares them for the future.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": "One email. Choose any four of the eight printed criteria, one mark each. A complete model email is not printed. Complete printed support notes and allocation: Salutation (opening) Subject line Introduction Reason why the email is being sent Number of days/dates Closing statement/closure Attach CV Email address (Any 4) 4 @ 1m each",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ],
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        29
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c6b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-3",
+    "conceptId": "c6b-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q6(b)",
+    "questionText": "Outline three responsibilities you have as an employee to your work placement employer.",
+    "stem": "Work Experience/Shadowing placement is a very valuable exercise for LCVP students as it prepares them for the future.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Outline three responsibilities you have as an employee to your work placement employer.",
+        "marks": 6,
+        "openList": true,
+        "group": {
+          "claimMax": 3,
+          "perOption": 2,
+          "options": [
+            "To work hard/act responsibly/ensure standards/honesty/attend training.",
+            "To turn up on time.",
+            "To follow Health & Safety instructions/take responsibility for their safety.",
+            "To dress appropriately/take pride in uniform etc.",
+            "Be pleasant to work colleagues/customers.",
+            "Confidentiality/loyalty to organisation."
+          ]
+        },
+        "contextNote": " Complete printed support notes and allocation: 1. To work hard/act responsibly/ensure standards/honesty/attend training. 2. To turn up on time. 3. To follow Health & Safety instructions/take responsibility for their safety. 4. To dress appropriately/take pride in uniform etc. 5. Be pleasant to work colleagues/customers. 6. Confidentiality/loyalty to organisation. 3 @ 2m (0, 2)"
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        29
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c6c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-2",
+    "conceptId": "c6c-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q6(c)",
+    "questionText": "Describe three ways your LCVP work placement has influenced your career choice.",
+    "stem": "Work Experience/Shadowing placement is a very valuable exercise for LCVP students as it prepares them for the future.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Describe three ways your LCVP work placement has influenced your career choice.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": " Complete printed support notes and allocation: 1. Type of work I enjoyed/did not enjoy it/see what was involved in the particular job. 2. Skills needed Suitable for you, I have the skills/do not have the skills. 3. Training I am interested in this and would enjoy the training/college course/found it too difficult or too long. 4. Job prospects Good/poor. 5. Career choice Helped to make a decision regarding the career. 3 @ 2m (1 + 1)",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        30
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c6d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c6d-2011-source",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q6(d) — characteristics",
+    "questionText": "Employers value certain characteristics in their employees. Name three of these characteristics.",
+    "stem": "Work Experience/Shadowing placement is a very valuable exercise for LCVP students as it prepares them for the future. Employers value certain characteristics in their employees. Name three of these characteristics. Explain why each is important to an employer.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "characteristics",
+        "kind": "criterion",
+        "verbatim": "Naming characteristics:",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": " Complete printed support notes and allocation: Naming characteristics: 1. Trustworthy An employer must know that no stock or money will be stolen. 2. Showing initiative An employer will want an employee who does not have to be told everything to do/who will find efficient ways to carry out the work/can deal with the unexpected quickly and efficiently. 3. Reliable An employer wants employees to turn up on time and be able to depend upon them to get the work done properly. 4. Loyalty An employer would expect employees to have the best interests of the employer at heart and want to do a good job. 5. Hard working An employer will expect employees to do their best, to do a fair share of the work and to a high standard. 6. Team player An employer will want employees who want to work together to do a task well, the employee must be willing to co-operate with each other. 7. Being well presented Neat, tidy, appropriate attire to create a good impression for the business. 8. Good communicator An employer will want employees who can deal clearly with customers/others. 3 @ 3m 1m for naming 2 @1m for why important no repetition of points allowed",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        31
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2011-cl-c6d-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "c6d-2011-source-second-ask",
+    "level": "common",
+    "year": 2011,
+    "section": "C",
+    "questionRef": "2011 CL Section C Q6(d) — explanations",
+    "questionText": "Explain why each is important to an employer.",
+    "stem": "Work Experience/Shadowing placement is a very valuable exercise for LCVP students as it prepares them for the future. Employers value certain characteristics in their employees. Name three of these characteristics. Explain why each is important to an employer.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "explanations",
+        "kind": "criterion",
+        "verbatim": "explain why each is important to an employer.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "Explain why each same characteristic matters to the employer; two one-mark details per characteristic. No repetition. Complete printed support notes and allocation: Naming characteristics: 1. Trustworthy An employer must know that no stock or money will be stolen. 2. Showing initiative An employer will want an employee who does not have to be told everything to do/who will find efficient ways to carry out the work/can deal with the unexpected quickly and efficiently. 3. Reliable An employer wants employees to turn up on time and be able to depend upon them to get the work done properly. 4. Loyalty An employer would expect employees to have the best interests of the employer at heart and want to do a good job. 5. Hard working An employer will expect employees to do their best, to do a fair share of the work and to a high standard. 6. Team player An employer will want employees who want to work together to do a task well, the employee must be willing to co-operate with each other. 7. Being well presented Neat, tidy, appropriate attire to create a good impression for the business. 8. Good communicator An employer will want employees who can deal clearly with customers/others. 3 @ 3m 1m for naming 2 @1m for why important no repetition of points allowed",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2011 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        31
+      ],
+      "attribution": "SEC LCVP Link Modules 2011 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  }
+]
