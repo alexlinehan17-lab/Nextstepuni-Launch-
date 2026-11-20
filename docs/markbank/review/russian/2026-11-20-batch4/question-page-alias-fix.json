@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-20T11:14:11.730324+00:00",
+  "reason": "2019 Ordinary source entries use paperPages, supported by build-russian-reviewed-anchors.mjs line43. The older external checker required questionPages only. Use that same documented fallback and still require a positive integer page list and exact anchor pP. No source payload or shared app code changes.",
+  "beforeSha256": "6151038888fd0d8a0dbbe8e7ea708afad263bee0fc9556953cd92260b0b0e41d",
+  "afterSha256": "813654bdbcc4f28e8fa3441afc6f216855b9705f069d6dbad234ad28d0b97d76",
+  "sourceGenerationPassed": true,
+  "applicationChecksStillRequired": true
+}

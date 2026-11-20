@@ -1,0 +1,58 @@
+{
+  "at": "2026-11-20T11:14:41.094794+00:00",
+  "base": "df5fbf698a833ca620636c1a2d0e4b0f9fc270e1",
+  "branch": "wip/russian-2026-11-20",
+  "scope": "Unfinished 2019 Ordinary replay after source/generation passed and external checker rejected valid paperPages alias. Application checks and lane release commit remain.",
+  "files": [
+    {
+      "path": "components/MarkBank/cards/russian/reviewed.json",
+      "sha256": "af06813b0eb82938bf7f82fa4209260ad09c52ec2839ecea0e29f9c4460c2e0a",
+      "bytes": 7486305
+    },
+    {
+      "path": "docs/markbank/review/russian/2026-11-20-batch4/check-remaining-release-sitting-before-pages-fix.py",
+      "sha256": "6151038888fd0d8a0dbbe8e7ea708afad263bee0fc9556953cd92260b0b0e41d",
+      "bytes": 10084
+    },
+    {
+      "path": "docs/markbank/review/russian/2026-11-20-batch4/check-remaining-release-sitting.py",
+      "sha256": "813654bdbcc4f28e8fa3441afc6f216855b9705f069d6dbad234ad28d0b97d76",
+      "bytes": 10289
+    },
+    {
+      "path": "docs/markbank/review/russian/2026-11-20-batch4/question-page-alias-fix.json",
+      "sha256": "66041bed6c9f369c5027164ad5d02773d4802f1f2786bf816507fa8b92af2c17",
+      "bytes": 614
+    },
+    {
+      "path": "scripts/markbank/authored/russian-reviewed.json",
+      "sha256": "3429ec21d1c0cde9e9668539de3952f7dfd700a0661a7a5d96369817994fbba3",
+      "bytes": 6913309
+    },
+    {
+      "path": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2019-ol.json",
+      "sha256": "83606ee4f091f43126f2a9663afa1445863c788000d306d34e1a82370eab72f7",
+      "bytes": 2795
+    },
+    {
+      "path": "scripts/markbank/authoring/ru_review_2019_ol.py",
+      "sha256": "80cd668c222e2ae6ccfbf211b40d23135d80e352ff6bd90aa85b18f8858e91b7",
+      "bytes": 18869
+    },
+    {
+      "path": "scripts/markbank/authoring/russian-no-answer.json",
+      "sha256": "6177eaf1a32af10b884e14c9bd1b50606afdfc2037dd1bd1c435d99d839a7bdb",
+      "bytes": 13040
+    },
+    {
+      "path": "scripts/markbank/authoring/russian-reviewed-sources.json",
+      "sha256": "249dfa167bdc569a0ebf06a1209f47d328528df96a8877fef353cc885da5d941",
+      "bytes": 627870
+    },
+    {
+      "path": "test/russian2019OrdinaryReviewed.test.ts",
+      "sha256": "9db5982c08eb6243d9c382c1942e5a52ec4c31254c7bbb646009be1ffa7694cc",
+      "bytes": 6018
+    }
+  ]
+}
