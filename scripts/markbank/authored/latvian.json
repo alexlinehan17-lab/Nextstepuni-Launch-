@@ -3724,6 +3724,422 @@
   }
  },
  {
+  "id": "lv-2017-hl-i-2",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "miniet-vairakus-intervijas-faktus-kuri-apliecina",
+  "questionRef": "2017 HL Section I Q2",
+  "questionText": "Miniet vairākus intervijas faktus, kuri apliecina, ka J. Mažeiks ir „Triju Zvaigžņu ordeņa un triju bērnu komandieris”!",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Trīs zvaigžņu ordeni Latvijā piešķir par īpašiem nopelniem Latvijas labā. J.Mažeiks saņēmis ordeni Trīs zvaigznes par ieguldīto darbu, apņēmību un pārliecību šajā valstī.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "J.Mažeiks veicināja neatkarības procesu: viņš piedalījās Latvijas sarkanbaltsarkanā karoga atjaunošanā, palīdzēja J.Stradiņam sakārtot atbalsta vēstules; reģistrēt iedzīvotāju vēlmes.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "1991.gadā J.Mažeiks strādāja kā brīvprātīgais Augstākās Padomes Preses centrā, kopā ar dažiem kolēģiem no Tautas frontes paziņoja pārējai pasaulei par neatkarības kustību Baltijas valstīs.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "J.Mažeiks ir kalpojis kā diplomāts, pašlaik J.Mažeiks ir ārkārtējais un pilnvarotais vēstnieks Latvijas Republikas Pastāvīgā pārstāvniecībā ANO, kas pārstāv Latvijas valsts intereses ārvalstīs.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "J.Mažeikam ir 3 bērni, un viņš piedalās vietējās latviešu kopienas aktivitātēs, kas palīdz saglabāt latviešu identitāti, mantojumu un valodu starp latviešiem ārzemēs.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Fakti – virsraksts, teksta ievadā, kur iepazīstina ar J.Mažeiku, teksta beigās, kur J.Mažeiks stāsta par saviem bērniem. Par komandieri kļūst, kad pasniedz ordeni. To var uzskatīt par titulu. Par bērnu komandieri dēvē, jo audzina trīs bērnus tā, kā pats uzskata par pareizu.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2017-hl-i-3",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "kapec-mazeiks-kluva-par-diplomatu-uzskata",
+  "questionRef": "2017 HL Section I Q3",
+  "questionText": "Kāpēc J. Mažeiks kļuva par diplomātu un uzskata, ka tas ir interesants un atbildīgs darbs?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Viņš vienmēr interesējies par politiku, pat bērnībā, jo viņa vecāki daudz runāja par politiku.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Viņš studēja politiskās zinātnes, kaut pats nezināja, ko darīs pēc studijām, paralēli studijām strādāja Ārlietu ministrijā.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "J.Mažeiks domā, ka tas ir svarīgs, interesants un atbildīgs darbs.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Diplomātam ir gods pārstāvēt savu valsti. Īstam diplomātam skaidri jānorāda, kāda ir Latvijas nostāja konkrētā jautājumā.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Diplomāts ir kā pirmā aizsardzības līnija no valsts puses, viņam ir iespēja izteikt savas valsts ārpolitikas intereses.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2017-hl-i-4",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "izmantojot-intervija-pausto-par-valodu-apguvi",
+  "questionRef": "2017 HL Section I Q4",
+  "questionText": "Izmantojot intervijā pausto par valodu apguvi skolā, analizējiet, kā valodu prasmes var ietekmēt cilvēka dzīvi un karjeru!",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Valodas prasmei ir liela priekšrocība karjeras veidošanā.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "J.Mažeiks skolā padziļināti mācījās angļu valodu. Angļu valodas prasmes ir J.Mažeika karjeras līdzeklis. Labās valodas dēļ viņam ir iespēja strādāt ārpolitikas jomā.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "J.Mažeiks angļu valodā varēja informēt ārzemju žurnālistus, jo strādāja kā brīvprātīgais Augstākās Padomes Preses centrā, varēja palīdzēt izplatīt ziņas par neatkarības kustību ārpasaulei.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "J.Mažeiks varēja studēt ārzemēs, strādāt Ārlietu ministrijā.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "J.Mažeika valodas prasmes palīdzēja veidot karjeru politikā un kļūt par vēstnieku.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2017-hl-i-5",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "mazeiks-stasta-ironiska-karta-pavisam-nesen",
+  "questionRef": "2017 HL Section I Q5",
+  "questionText": "J. Mažeiks stāsta, ka „ironiskā kārtā pavisam nesen ASV iebraukušie latvieši pēc iespējas ātrāk vēlējušies kļūt par amerikāņiem”. Kuri fakti apliecina, ka J. Mažeikam ir „svarīgi saprast savas saknes”?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Viņš vairākus gadus bija folkloras grupas biedrs.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Viņš pārzina latviešu tautas tradīcijas, var pat sarīkot Līgo svētku svinēšanu.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "J.Mažeiks ar savu ģimeni piedalās Amerikas latviešu kopienas darbībā (latviešu skola, skautu nometne, latviešu baznīcas, aktīvu latviešu mūzikas dzīve).",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "J. Mažeiks palīdz organizēt Lieldienas un Līgo, kā arī Latvijas karavīru dziesmu vakaru 11. novembrī. Organizē latviskus pasākumus, kas pašu aizrauj.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Īpaši izjūt latviskuma nepieciešamību brīžos, kad apkārt maz latviešu.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2017-hl-i-6",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "loti-svarigi-pret-saviem-pienakumiem-attiekties",
+  "questionRef": "2017 HL Section I Q6",
+  "questionText": "„Ir ļoti svarīgi pret saviem pienākumiem attiekties atbildīgi.” Izsakiet viedokli par šo apgalvojumu, ņemot vērā, ka J.Mažeiks strādā par diplomātu!",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tā kā J.Mažeiks ir Latvijas Republikas pilnvarotais vēstnieks Latvijas Republikas Pastāvīgajā pārstāvniecībā Apvienoto Nāciju Organizācijā, viņam pret savu darbu jāizturas atbildīgi.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "J. Mažeiks jebkurā situācijā pārstāv Latvijas valsti, līdz ar to viņa pieļautās kļūdas ir Latvijas valsts kļūdas. Jebkura kļūda, neatbildīga rīcība kaitē gan Latvijas valstij, gan tās tēlam.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2017-hl-ii",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2017,
+  "section": "II",
+  "topicId": "latvian-1-0",
+  "conceptId": "izsakiet-savu-viedokli-par-apgalvojumu-vismaz",
+  "questionRef": "2017 HL Section II",
+  "questionText": "Izsakiet savu viedokli par šo apgalvojumu! (vismaz 100 vārdu) „Kā ar gaisu – kamēr cilvēkam tas ir, viņš to nepamana, taču sāk manīt tajā brīdī, kad tā sāk trūkt.” Paskaidrojiet, ko J.Mažeiks domā, sakot šos vārdus!",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "J.Mažeiks uzskata, ka cilvēks par vērtībām sāk domāt tikai tad, kad jūt problēmu klātesamību. Piemēram, cilvēks par veselību sāk domāt tikai tad, kad nopietni saslimst. Par latvietību sāk domāt tikai tad, kad sabiedrībā jūtas vientuļš, jo apkārt nav savējo.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints these points with no mark on any of them and no criteria for the part: examples, not a checklist."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Dzīvojot ārzemēs arvien vairāk J.Mažeiks izjūt nepieciešamību saglabāt latviskumu, tāpēc ģimenē kopā ar sievu to cenšas saglabāt, iesaistoties dažādu latviešu pasākumu organizēšanā, bērniem mācot latviešu valodu, tam visam atvēlot daudz laika, investīcijas.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II DAĻA",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2017-hl-iii-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2017,
+  "section": "III",
+  "topicId": "latvian-1-0",
+  "conceptId": "nakotnes-profesijas-karjeras-izveles-krustceles",
+  "questionRef": "2017 HL Section III Q1",
+  "questionText": "Uzraksti pārspriedumu par vienu no tematiem! (ne mazāk kā 300 vārdu) “Nākotnes profesijas un karjeras izvēles krustcelēs.”",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Jau no bērnības katrs bērns sapņo, par ko kļūs. Vai turpinās dzimtas tradīcijas, piem., skolotājs, ārsts, aktieris, vai pilnīgi kaut ko jaunu mēģinās. Bērnībā zēni sapņo kļūt par šoferiem, ugundzēsējiem, banķieriem, meitenes - modeles, aktrises, skolotājas. Pieaugot domas mainās, reizēm pat pilnīgi pretējā virzienā.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints these points with no mark on any of them and no criteria for the part: examples, not a checklist."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Taču skolas beigās skolēns nonāk pirmajās profesijas izvēles krustcelēs - apgūt kādu arodu vai turpināt mācīties augstskolā. Mācīties arodu, kuru vieglāk apgūt, mazāk prasības iestājai augstskolā, bet ar nezināmu nākotni - būs vai nebūs darba, cik varēs nopelnīt. Varbūt tomēr izvēlēties arodu, kas pašam patīk, kaut gan būs daudz jāmācās, alga var būt pat būs maza. Varbūt apgūt profesiju, kura valstī ir prestiža, liela alga, bet pašam tā varētu sākotnēji šķist pa nepieņemama.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Vēl krustcelēs var stāvēt, ja nezini, ko darīt - veidot ģimeni vai tomēr sasniegt iespējamo karjeras kāpnes un tad tikai domāt par ģimeni.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Var būt izvēle strādāt tuvu mājām vai tālu, pat ārzemēs. Latvijā, kur par to pašu darbu, ko veiktu ārzemes, maksā mazāk. Turklāt braukt uz ārzemēm nozīmē šķirties no ģimenes, radiem, draugiem.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Ko es pats vēlos darīt, kāpēc? Vai man krustceles vēl tikai priekšā, varbūt esmu izdarījis savu izvēli.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "lv-2017-hl-iii-2",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2017,
+  "section": "III",
+  "topicId": "latvian-1-0",
+  "conceptId": "mans-viedoklis-nav-sliktaks-par-tavejo",
+  "questionRef": "2017 HL Section III Q2",
+  "questionText": "Uzraksti pārspriedumu par vienu no tematiem! (ne mazāk kā 300 vārdu) “Mans viedoklis nav sliktāks par tavējo, visi viedoklļi ir vienlīdz vērtīgi.” Atklājiet šo tematu modernās pasaules un sociālo mediju lietošanas kontekstā!",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Demokrātiskā sabiedrībā katram ir tiesības izteikt savu veidokli par jebkuru tematu. Nav pareizu un nepareizu viedokļu, sliktāku vai labāku viedokļu, ir tikai argumentēti viedokļi. Jebkurā viedoklī ir patiesība, jo katrs par savu taisnību pārliecināts.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints these points with no mark on any of them and no criteria for the part: examples, not a checklist."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Pieņemot lēmumu, jāanalizē visi viedokļi. Nedrīkst vērtēt viedokli tikai no sev izdevīgas pozīcijas.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Šodien īpaši jābūt uzmanīgiem, uzklausot, izlasot citu viedokļus sociālajos medijos, jo aizvien biežāk nākas uzklausīt viedokļus, kuros tā paudējs izsaka tikai sev izdevīgu argumentāciju. Jābūt kritiskiem, analizējot visus viedokļus.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "lv-2018-hl-i-1",
   "subjectId": "latvian",
   "level": "higher",
