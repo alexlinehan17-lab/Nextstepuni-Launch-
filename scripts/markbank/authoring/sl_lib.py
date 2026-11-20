@@ -511,7 +511,9 @@ RULE_WORDS = {
     # отговори ... бъл гарски език.", rendered p2 at 300 dpi): matched, and
     # quoted as printed.
     'bulgarian': (r'В ?сич ?ки отговори', r'бъл ?гарск'),
-    'croatian': (r'Svi odgovori', r'hrvatsk'),
+    # Croatian 2016 breaks "Svi" / "odgovori moraju biti na hrvatskome jeziku." over two
+    # lines; 2014 words it "Odgovore napišite na hrvatskome jeziku, ...".
+    'croatian': (r'Svi odgovori|Svi$|Odgovore napišite', r'hrvatsk'),
     'danish': (r'Alle (?:svar|spørgsmål|opgaver)', r'dansk'),
     'estonian': (r'K[õo]ikidele', r'eesti'),
     'finnish': (r'Vastaa', r'suome'),
