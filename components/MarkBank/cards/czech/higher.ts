@@ -2619,6 +2619,178 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-i-2", topicId: "czech-0-1", conceptId: "vysvetlete-zaklade-textu-znamena-zkratka-rvp",
+    section: "I", questionRef: "2023 HL Section I Q2",
+    questionText: "Vysvětlete na základě textu, co znamená zkratka RVP a definujte tento pojem.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "RVP jsou Rámcové vzdělávací programy, které definují témata, která je nutno zahrnout do vzdělávacího procesu, tedy témata, která musí být součástí toho, co se děti ve škole naučí. Zároveň definují, co by měli žáci v rámci daného předmětu na každém stupni zvládnout – jaké dovednosti by si měli osvojit.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-i-3", topicId: "czech-0-1", conceptId: "vysvetlete-zaklade-textu-jakym-zpusobem-lze",
+    section: "I", questionRef: "2023 HL Section I Q3",
+    questionText: "Vysvětlete na základě textu, jakým způsobem lze vyučovat ve školách mediální výchovu.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mediální výchova je definována jako průřezové téma, takže nemá vlastní hodinovou dotaci v rozvrhu, ale měla by být součástí všech ostatních předmětů. Jednotlivá témata lze zařadit do více předmětů, případně lze zorganizovat projektové týdny, kurzy apod. jako příklad je uvedená škola v článku, kde studenti v dějepisu porovnávají nacistickou a komunistickou propagandu, v základech společenských věd analyzují volební kampaně a v zeměpise studují mediální pohledy na různé světové konflikty. I v českém jazyce lze zahrnout témata mediální výchovy, například rozlišování zpravodajství a publicistiky a rozdílu mezi názorem a faktem.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-i-4", topicId: "czech-0-1", conceptId: "zaklade-textu-vysvetlete-vlastnimi-slovy-cilem",
+    section: "I", questionRef: "2023 HL Section I Q4",
+    questionText: "Na základě textu vysvětlete vlastními slovy, co je cílem mediální výchovy.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mediální výchova je jednou z forem rozvoje kritického myšlení, úkolem je posílit mediální gramotnost. Žáci by měli být schopni analyzovat nabízená sdělení a posoudit jejich věrohodnost, orientovat v mediálních obsazích. Mimo jiné má za úkol i naučit žáky rozeznávat rozdíly mezi „seriózním“ a „bulvárním“ zpravodajstvím, včetně typických výrazových prostředků, žáci by měli být schopni zhodnotit rizika a přednosti informací získaných na internetu, ověřovat informace získané na internetu, analyzovat mediální kauzy, identifikovat základní postupy argumentace a manipulace.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-i-5", topicId: "czech-0-1", conceptId: "vysvetlete-zaklade-textu-proc-jakym-problemum",
+    section: "I", questionRef: "2023 HL Section I Q5",
+    questionText: "Vysvětlete na základě textu, proč a jakým problémům čelí učitelé mediální výchovy. Jak by tyto problémy mohly být vyřešeny?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mediální výchova je relativně nový předmět, učitelé na něj nemají vzdělání, velká část učitelů ani neabsolvovala nějaké školení, není součástí přípravy budoucích učitelů. Většina učitelů se cítí nejistá a uvítala by nějakou podporu. Dlouho chyběla i didaktická podpora, nedostatek vyučovacích materiálů. Problémem je i to, že chybí jasné společenské zadání, jak a co by se mělo vyučovat.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    { id: "r-2", kind: "point", verbatim: "Prostor pro vlastní názor, vlastní zkušenost.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-i-6", topicId: "czech-0-1", conceptId: "napiste-vlastni-nazor-tvrzeni-textu-medialni",
+    section: "I", questionRef: "2023 HL Section I Q6",
+    questionText: "Napište vlastní názor na tvrzení z textu: „…mediální gramotnost je jednou z klíčových dovedností, kterou by měl disponovat každý občan bez ohledu na jeho věk a termín voleb, protože je to jeden z předpokladů zdravé a fungující demokracie.“",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Proč je mediální gramotnost důležitá? Bez ní mohou lidé snadno podléhat dezinformacím a nebýt schopni rozlišit seriózní informace od hoaxů. V konečném důsledku se to může projevit na výsledku voleb, kdy se k moci dostávají extremističtí populisté slibují jednoduchá řešení, která jsou ale nereálná.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    { id: "r-2", kind: "point", verbatim: "Vlastní vysvětlení: vlastními slovy, bez opsání frází z textu. Vlastní zkušenost.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-ii", topicId: "czech-1-0", conceptId: "zaklade-textu-napiste-komentar-100-150",
+    section: "II", questionRef: "2023 HL Section II",
+    questionText: "Na základě textu napište komentář o 100-150 slovech na toto tvrzení: „…mediální výchova je jednou z forem rozvoje kritického myšlení“. Proč je podle vašeho názoru důležité rozvíjet kritické myšlení?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vlastními slovy, bez opsání frází z textu.", marks: 30, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”. The scheme prints, as examples, not a checklist: “Vlastní názor na uvedené tvrzení, lze vyjádřit souhlas i nesouhlas, pomocí argumentů z textu i vlastní zkušenosti.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČÁST 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-iii-1", topicId: "czech-1-0", conceptId: "vitezna-lez-stava-pravdou",
+    section: "III", questionRef: "2023 HL Section III Q1",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: Vítězná lež se stává pravdou.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-iii-2", topicId: "czech-1-0", conceptId: "pravda-laska-musi-zvitezit-nad-lzi",
+    section: "III", questionRef: "2023 HL Section III Q2",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: „Pravda a láska musí zvítězit nad lží a nenávistí.“ (Václav Havel)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC547ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2024 Higher Level — © State Examinations Commission.",
