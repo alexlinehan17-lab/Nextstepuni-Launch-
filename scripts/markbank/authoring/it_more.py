@@ -28,6 +28,7 @@ import it_writing                                                # noqa: E402
 from it_paper import ItPaper                                     # noqa: E402
 from it_rows import split_priced                                 # noqa: E402
 from it_scheme import ItScheme                                   # noqa: E402
+import it_scheme                                                 # noqa: E402
 
 AUTHORED = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'italian.json')
 EXCLUSIONS = os.path.join(DIR, 'exclusions', 'italian.json')
@@ -49,6 +50,7 @@ def ladder_card(P, S, year, level, section, item, letter, cards):
                       if (sec, it, le) == (section, item, letter))
     steps = [b - a for a, b in zip(scale, scale[1:])]
     assert sum(steps) == ask.total
+    it_scheme.confirm_headings(ask.parts[0], text)
     ws = it_writing.Scheme(year, level)
     ws.check(head, *ask.parts[0].answers)
     language = it_all.answer_language(level, text)
@@ -86,11 +88,16 @@ def question_total_card(P, S, year, level, section, item, letter, cards):
     text, page = next((t, pg) for sec, it, le, t, pg in P.asks()
                       if (sec, it, le) == (section, item, letter))
     part = ask.parts[0]
+    it_scheme.confirm_headings(part, text)
     ws = it_writing.Scheme(year, level)
     ws.check(part.directive, *part.answers, *[t for t, _m in part.rungs])
     language = it_all.answer_language(level, text)
+    # Under the headings the scheme prints, where it prints more than one
+    # (2018 Higher A Q5: "Sportspeople", "Families").
+    answers = ([a if h is None else f'{h} — {a}' for h, group in part.groups for a in group]
+               if part.groups else list(part.answers))
     rows = [{'id': f'r-{k}', 'kind': 'criterion', 'verbatim': a, 'marks': None}
-            for k, a in enumerate(part.answers, start=1)]
+            for k, a in enumerate(answers, start=1)]
     lesser = '; '.join(f'{t} {m}m' for t, m in part.rungs)
     split = (f' and the split ({"+".join(map(str, part.split))}), which do not agree'
              if part.split and part.claim and len(part.split) != part.claim else '')
@@ -212,6 +219,7 @@ def _split_parts(S, year, level):
         q = copy.copy(p)
         q.total, q.split, q.claim, q.directive = marks, None, None, None
         q.stated, q.answers, q.rungs, q.notation = text, [text], [], f'{marks} marks'
+        q.seq = q.lead = q.groups = None     # its one answer is the line above, nothing held aside
         p.rungs = []
         ask.parts = [p, q]
         ask.total = p.total + q.total

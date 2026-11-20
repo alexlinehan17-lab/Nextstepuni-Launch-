@@ -62701,29 +62701,29 @@
   "totalMarks": 10,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "“mountain wind”) — the answers the scheme accepts",
-    "marks": null,
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He has a brother / a sister” 1 mark.",
     "group": {
      "claimMax": 5,
-     "perOption": 2,
      "options": [
       "He is a successful (1m) musician/artist (1m)",
       "He came first (1m) at Sanremo / Festival",
       "He is very refined",
       "He likes good (1m) food (1m)",
       "He has an incredible story",
-      "He has a very common (1m) Albanian name (1m) (meaning",
+      "He has a very common (1m) Albanian name (1m) (meaning “mountain wind”)",
       "He left Albania with his Family / brother, sister and mother",
       "He left Albania more than twenty years ago",
       "He never had a good relationship (1m) with his father (1m)",
       "He was born (1m) (and grew up initially) in Fier /Albania (1m)",
       "(He) returned five years ago (1m) to Albania (1m)",
       "He (still) loves the place"
-     ]
+     ],
+     "perOption": 2
     },
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He has a brother / a sister” 1 mark. The scheme prices this half of the ask separately, under the heading ““mountain wind”)”."
+    "id": "r-1",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "The answers the scheme accepts in full"
    }
   ],
   "notes": "The scheme prints the tariff as '10 marks (2+2+2+2+2)'; the paper prints this ask on page 3 of the question booklet.",
@@ -66358,21 +66358,55 @@
   "totalMarks": 20,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Advantage — the answers the scheme accepts",
-    "marks": null,
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Young people can go to cultural events they previously had no money for / It allows young people who may not have previously been able to, to expand their culture” 3 marks; “You get to spend (500€) (+1 example” 3 marks; “The Italian government is doing something for young people” 3 marks; “It encourages expanding one’s own knowledge/interest in their culture” 3 marks; “It’s important for their personal development” 3 marks; “The bonus is valid for one year” 1 mark. The scheme lists 8 further lesser answer(s) for this ask. The scheme prints these answers under the heading “Advantage”; the paper asks for 1 point on it.",
     "group": {
-     "claimMax": 4,
-     "perOption": 5,
+     "claimMax": 1,
      "options": [
       "You can spend (500€) on cultural events on tickets to go to the cinema/ theatre/ museums/ exhibitions/ to buy books and school books/ go to a live show (2 elements required)",
       "Cultural purchases: tickets to go to the cinema/ theatre/ museums/ buy books and school books/ go to a live show can be made online",
       "The state doesn’t decide how the money is spent – the choice is made by the students",
       "It allows young people of 18 to spend public money on cultural events helping them learn and to appreciate new things"
-     ]
+     ],
+     "perOption": 5
     },
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Young people can go to cultural events they previously had no money for / It allows young people who may not have previously been able to, to expand their culture” 3 marks; “You get to spend (500€) (+1 example” 3 marks; “The Italian government is doing something for young people” 3 marks; “It encourages expanding one’s own knowledge/interest in their culture” 3 marks; “It’s important for their personal development” 3 marks; “The bonus is valid for one year” 1 mark. The scheme lists 9 further lesser answer(s) for this ask. The scheme prices this half of the ask separately, under the heading “Advantage”."
+    "id": "r-1",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "Advantage — the answers the scheme accepts"
+   },
+   {
+    "contextNote": "The scheme prints these answers under the heading “Disadvantage”; the paper asks for 1 point on it.",
+    "group": {
+     "claimMax": 1,
+     "options": [
+      "People have problems in accessing the website where vouchers can be downloaded to get free goods.",
+      "It is difficult to get your SPID /your digital identity that you will need to avail of the initiative /bonus.",
+      "Not all people would be good (at buying on line) or be computer literate/computer savvy."
+     ],
+     "perOption": 5
+    },
+    "id": "r-2",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "Disadvantage — the answers the scheme accepts"
+   },
+   {
+    "contextNote": "The scheme prints these answers under the heading “Riccardo”; the paper asks for 2 points on it.",
+    "group": {
+     "claimMax": 2,
+     "options": [
+      "Riccardo: he is not very interested in art, museums, or any cultural activity in general.",
+      "Riccardo: he could use the money to go to the cinema /theatre with his friends.",
+      "Riccardo: he believes that the bonus should be allocated according to the family yearly income (3m) (+one explanation) some young people would not need the money at all/others could achieve a lot with 500€ /it would make a big difference in their life.",
+      "Riccardo: He thinks that the system implemented is not fair as the bonus should be allocated according to the family yearly income.",
+      "Riccardo: Some young people would not need the money at all, while some others could achieve a lot with 500€; because the bonus would make a big difference in some people’s life/ because the bonus could give some people the chance to do things that were inaccessible before."
+     ],
+     "perOption": 5
+    },
+    "id": "r-3",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "Riccardo — the answers the scheme accepts"
    }
   ],
   "notes": "The scheme prints the tariff as '20 marks'; the paper prints this ask on page 3 of the question booklet."
@@ -67175,23 +67209,23 @@
   "totalMarks": 20,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "From the passage / From the novel — the answers the scheme accepts",
-    "marks": null,
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the headings “From the passage”, “From the novel”.",
     "group": {
      "claimMax": 4,
-     "perOption": 5,
      "options": [
-      "Marcovaldo sees beccacce in the sky and ends up being fined",
-      "He plans to get beccacce on the terrace of his apartment, so with his children devises a plan to catch them but he manages to catch a pigeon instead.",
-      "Because of the birdlime (above mentioned plan to get the beccacce) Filippetto nearly gets stuck.",
-      "Because of his plan to catch the beccacce (birdlime all over the terrace, the wheat etc.) the laundry gets destroyed.",
-      "He’s in trouble with the law because of his plan to catch beccacce; the traffic warden, who previously fined him, was investigating the illegal hunting of pigeons and he is in Marcovaldo’s landlady’s living room enquiring about suspicious activity in that building.",
-      "Any story that mentions his efforts and misadventures + example and consequences."
-     ]
+      "From the passage — Marcovaldo sees beccacce in the sky and ends up being fined",
+      "From the passage — He plans to get beccacce on the terrace of his apartment, so with his children devises a plan to catch them but he manages to catch a pigeon instead.",
+      "From the passage — Because of the birdlime (above mentioned plan to get the beccacce) Filippetto nearly gets stuck.",
+      "From the passage — Because of his plan to catch the beccacce (birdlime all over the terrace, the wheat etc.) the laundry gets destroyed.",
+      "From the passage — He’s in trouble with the law because of his plan to catch beccacce; the traffic warden, who previously fined him, was investigating the illegal hunting of pigeons and he is in Marcovaldo’s landlady’s living room enquiring about suspicious activity in that building.",
+      "From the novel — Any story that mentions his efforts and misadventures + example and consequences."
+     ],
+     "perOption": 5
     },
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “From the passage / From the novel”."
+    "id": "r-1",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "The answers the scheme accepts in full"
    }
   ],
   "notes": "The scheme prints the tariff as '20 marks'; the paper prints this ask on page 9 of the question booklet."
@@ -67212,71 +67246,71 @@
   "totalMarks": 20,
   "rows": [
    {
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints \"Three of the following\" and the split (5+5+5+5), which do not agree for 20 marks and does not say what one answer is worth: judge your answer against the total.",
     "id": "r-1",
     "kind": "criterion",
-    "verbatim": "Salvatore is the same age as Michele, but he looks older, he is taller, he was always well dressed/ presented and he spoke in a calm way.",
     "marks": null,
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints \"Three of the following\" and the split (5+5+5+5), which do not agree for 20 marks and does not say what one answer is worth: judge your answer against the total."
+    "verbatim": "Salvatore is the same age as Michele, but he looks older, he is taller, he was always well dressed/ presented and he spoke in a calm way."
    },
    {
     "id": "r-2",
     "kind": "criterion",
-    "verbatim": "He plays the piano and a piano teacher from Lucignano goes to his house to teach him, his parents forced him to play but he despised it and he used to say that he would give up when he was older.",
-    "marks": null
+    "marks": null,
+    "verbatim": "He plays the piano and a piano teacher from Lucignano goes to his house to teach him, his parents forced him to play but he despised it and he used to say that he would give up when he was older."
    },
    {
     "id": "r-3",
     "kind": "criterion",
-    "verbatim": "Salvatore and Michele used to play Subbuteo/ (to do) organise/partake in Subbuteo tournaments during the winter and spent entire afternoons playing at it. He used to play also when he was on his own.",
-    "marks": null
+    "marks": null,
+    "verbatim": "Salvatore and Michele used to play Subbuteo/ (to do) organise/partake in Subbuteo tournaments during the winter and spent entire afternoons playing at it. He used to play also when he was on his own."
    },
    {
     "id": "r-4",
     "kind": "criterion",
-    "verbatim": "Salvatore gets very precious and every expensive presents from his well-off father who is a lawyer, that’s why he had 12 Subbuteo teams",
-    "marks": null
+    "marks": null,
+    "verbatim": "Salvatore gets very precious and every expensive presents from his well-off father who is a lawyer, that’s why he had 12 Subbuteo teams"
    },
    {
     "id": "r-5",
     "kind": "criterion",
-    "verbatim": "Even though he had lots of Subbuteo teams Salvatore does not want to give any to Michele as his father would not be happy with that/because he’s mean",
-    "marks": null
+    "marks": null,
+    "verbatim": "Even though he had lots of Subbuteo teams Salvatore does not want to give any to Michele as his father would not be happy with that/because he’s mean"
    },
    {
     "id": "r-6",
     "kind": "criterion",
-    "verbatim": "Salvatore is Michele’s best friend but he betrays him ➔ Secret+driving lesson must be mentioned to get full marks",
-    "marks": null
+    "marks": null,
+    "verbatim": "Points from the novel — Salvatore is Michele’s best friend but he betrays him ➔ Secret+driving lesson must be mentioned to get full marks"
    },
    {
     "id": "r-7",
     "kind": "criterion",
-    "verbatim": "He redeems himself at the end of the novel when he tells Michele where they have moved Filippo.",
-    "marks": null
+    "marks": null,
+    "verbatim": "Points from the novel — He redeems himself at the end of the novel when he tells Michele where they have moved Filippo."
    },
    {
     "id": "r-8",
     "kind": "criterion",
-    "verbatim": "He was much brighter than Teschio and could have been the leader of the gang but he was not interested in that.",
-    "marks": null
+    "marks": null,
+    "verbatim": "Points from the novel — He was much brighter than Teschio and could have been the leader of the gang but he was not interested in that."
    },
    {
     "id": "r-9",
     "kind": "criterion",
-    "verbatim": "3 pts from passage + 1 pt from novel",
-    "marks": null
+    "marks": null,
+    "verbatim": "Points from the novel — 3 pts from passage + 1 pt from novel"
    },
    {
     "id": "r-10",
     "kind": "criterion",
-    "verbatim": "1 pt from passage + 3 pts from novel*",
-    "marks": null
+    "marks": null,
+    "verbatim": "Points from the novel — 1 pt from passage + 3 pts from novel*"
    },
    {
     "id": "r-11",
     "kind": "criterion",
-    "verbatim": "2 pts from passage + 2 pts from novel*",
-    "marks": null
+    "marks": null,
+    "verbatim": "Points from the novel — 2 pts from passage + 2 pts from novel* *Reference to the fact that Salvatore betrayed Michele ➔ Salvatore aveva venduto il Michele e il suo segreto per una lezione di guida must be made when 2 pts are taken from the novel"
    }
   ],
   "notes": "The scheme prints the tariff as '20 marks' under 'Three of the following'; the paper prints this ask on page 7."
@@ -68458,17 +68492,35 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 2,
+  "totalMarks": 4,
   "rows": [
    {
+    "contextNote": "Answer in English or Irish.",
     "id": "r-1",
     "kind": "point",
-    "verbatim": "The Centre and the South",
+    "marks": 1,
+    "verbatim": "(a) — The Centre"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "marks": 1,
+    "verbatim": "(a) — the South"
+   },
+   {
+    "contextNote": "The scheme also pays part marks for a shorter answer: “2 elements” 1 mark.",
+    "id": "r-3",
+    "kind": "criterion",
     "marks": 2,
-    "contextNote": "The scheme prices this half of the ask separately, under the heading “.”. Answer in English or Irish."
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "verbatim": "(b) — People are (very) welcoming, chatty and (very) helpful"
    }
   ],
-  "notes": "The scheme prints the tariff as '2 marks(1+1)'; the listening booklet prints this ask on page 4.",
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 4.",
   "stem": "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
   "sourceMaterial": {
    "kind": "source-text",
@@ -68503,19 +68555,29 @@
   "questionRef": "2017 HL Section LB3 Q7",
   "questionText": "What difficulties did she encounter during her journey? Give two details.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
-  "totalMarks": 2,
+  "totalMarks": 4,
   "rows": [
    {
+    "contextNote": "The scheme prints “Any two of 4 marks(2+2)”. Answer in English or Irish.",
+    "group": {
+     "claimMax": 2,
+     "options": [
+      "Roads are narrow (1m) there are often no footpaths on roads (1m)",
+      "Cars are speeding",
+      "Sometimes (1m) she could not get accommodation (1m)",
+      "She had to sleep on the beach or in a campsite"
+     ],
+     "perOption": 2
+    },
     "id": "r-1",
-    "kind": "criterion",
-    "verbatim": "People are (very) welcoming, chatty and (very) helpful",
+    "kind": "anyN",
     "marks": null,
-    "contextNote": "The scheme gives marks for this answer by how many of its elements are given: 2 elements 1m. Answer in English or Irish."
+    "verbatim": "The answers the scheme accepts in full"
    }
   ],
-  "notes": "The scheme prints the tariff as '2 marks'; the listening booklet prints this ask on page 4.",
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 4.",
   "stem": "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
   "sourceMaterial": {
    "kind": "source-text",
@@ -68555,24 +68617,24 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Cars are speeding — the answers the scheme accepts",
-    "marks": null,
+    "contextNote": "The scheme prints this ask’s “4 marks (2+2)” on the line above its number. The scheme also pays part marks for a shorter answer: “She will write a book” 1 mark. Answer in English or Irish.",
     "group": {
      "claimMax": 2,
-     "perOption": 2,
      "options": [
-      "Roads are narrow (1m) there are often no footpaths on roads (1m)",
-      "Sometimes (1m) she could not get accommodation (1m)",
-      "She had to sleep on the beach or in a campsite",
-      "4 marks (2+2)"
-     ]
+      "She is going back to Dublin (to her fiancé) (1m) for six months (1m)",
+      "She will publish her book",
+      "She will travel to Europe (1m) by bike (1m)",
+      "She will write another/second book"
+     ],
+     "perOption": 2
     },
-    "contextNote": "The scheme prices this half of the ask separately, under the heading “Cars are speeding”. Answer in English or Irish."
+    "id": "r-1",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "The answers the scheme accepts in full"
    }
   ],
-  "notes": "The scheme prints the tariff as '4 marks(2+2)'; the listening booklet prints this ask on page 4.",
+  "notes": "The scheme prints the tariff as '4 marks'; the listening booklet prints this ask on page 4.",
   "stem": "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
   "sourceMaterial": {
    "kind": "source-text",
@@ -70399,19 +70461,20 @@
   "totalMarks": 2,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "They are Milanese — the answers the scheme accepts",
-    "marks": null,
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.",
     "group": {
      "claimMax": 2,
-     "perOption": 1,
      "options": [
+      "They are Milanese",
       "They have two children /they have an six/eight year old child",
       "They are looking for a home help/childminder"
-     ]
+     ],
+     "perOption": 1
     },
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “They are Milanese”."
+    "id": "r-1",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "The answers the scheme accepts in full"
    }
   ],
   "notes": "The scheme prints the tariff as '2 marks (1+1)'; the paper prints this ask on page 7 of the question booklet.",
@@ -70693,23 +70756,24 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "25 theory classes — the answers the scheme accepts",
-    "marks": null,
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Driving lessons” 1 mark; “Classes” 1 mark; “Pink document” 1 mark; “Book” 1 mark; “CD” 1 mark.",
     "group": {
      "claimMax": 2,
-     "perOption": 2,
      "options": [
       "The enrolment to the school",
       "Three driving lessons",
+      "25 theory classes",
       "Teaching resources/Theory book/Quiz book/ Quiz CD/CD with quizzes",
       "Theory exam fees",
       "Theory exam",
       "Provisional licence"
-     ]
+     ],
+     "perOption": 2
     },
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Driving lessons” 1 mark; “Classes” 1 mark; “Pink document” 1 mark; “Book” 1 mark; “CD” 1 mark. The scheme prices this half of the ask separately, under the heading “25 theory classes”."
+    "id": "r-1",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "The answers the scheme accepts in full"
    }
   ],
   "notes": "The scheme prints the tariff as '4 marks (2+2)'; the paper prints this ask on page 9 of the question booklet.",
@@ -73197,14 +73261,11 @@
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "He is Italian — the answers the scheme accepts",
-    "marks": null,
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He studied” 1 mark; “He worked” 1 mark.",
     "group": {
      "claimMax": 3,
-     "perOption": 3,
      "options": [
+      "He is Italian",
       "He is the founder of a blog (italiansinfuga.com)",
       "He advises people who are thinking of working abroad.",
       "He is forty years old",
@@ -73213,13 +73274,17 @@
       "He worked in Great Britain/China/Taiwan",
       "He lives in Australia"
      ],
+     "perOption": 3,
      "perOptionSteps": [
       3,
       3,
       2
      ]
     },
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He studied” 1 mark; “He worked” 1 mark. The scheme prices this half of the ask separately, under the heading “He is Italian”."
+    "id": "r-1",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "The answers the scheme accepts in full"
    }
   ],
   "notes": "The scheme prints the tariff as '8 marks (3+3+2)'; the paper prints this ask on page 3 of the question booklet.",
@@ -74562,22 +74627,21 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "It is safe / It is convenient — the answers the scheme accepts",
-    "marks": null,
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.",
     "group": {
      "claimMax": 4,
-     "perOption": 2,
      "options": [
       "It is simple",
       "It is quick",
       "It is easy",
+      "It is safe",
       "You can send a parcel from home/from the office",
       "You can do it on-line (from home or office)/saves time or energy (compared to going to post office etc)",
       "You can send to anywhere in Europe",
+      "It is convenient",
       "They guarantee fast delivery times (within a few days)/ fast"
      ],
+     "perOption": 2,
      "perOptionSteps": [
       2,
       1,
@@ -74585,7 +74649,10 @@
       1
      ]
     },
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “It is safe / It is convenient”."
+    "id": "r-1",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "The answers the scheme accepts in full"
    }
   ],
   "notes": "The scheme prints the tariff as '5 marks (2+1+1+1)'; the paper prints this ask on page 13 of the question booklet.",
@@ -75816,21 +75883,22 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Felt challenged — the answers the scheme accepts",
-    "marks": null,
+    "contextNote": "Answer in English or Irish.",
     "group": {
      "claimMax": 1,
-     "perOption": 5,
      "options": [
       "Felt great satisfaction",
       "Felt little scared",
+      "Felt challenged",
       "Felt he may have to encourage the team (through difficult moments)",
       "Felt he may have to be diplomatic (in solving problems)"
-     ]
+     ],
+     "perOption": 5
     },
-    "contextNote": "The scheme prices this half of the ask separately, under the heading “Felt challenged”. Answer in English or Irish."
+    "id": "r-1",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "The answers the scheme accepts in full"
    }
   ],
   "notes": "The scheme prints the tariff as '5 marks'; the listening booklet prints this ask on page 4.",
@@ -75873,25 +75941,26 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "She is generous — the answers the scheme accepts",
-    "marks": null,
+    "contextNote": "Answer in English or Irish.",
     "group": {
      "claimMax": 2,
-     "perOption": 4,
      "options": [
       "She is patient",
+      "She is generous",
       "She always gives him lifts/ takes him to matches",
       "She makes desserts for the team",
       "His team mates all love her (She (always) helps/supports him 2 marks)"
      ],
+     "perOption": 4,
      "perOptionSteps": [
       4,
       3
      ]
     },
-    "contextNote": "The scheme prices this half of the ask separately, under the heading “She is generous”. Answer in English or Irish."
+    "id": "r-1",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "The answers the scheme accepts in full"
    }
   ],
   "notes": "The scheme prints the tariff as '7 marks (4+3)'; the listening booklet prints this ask on page 4.",

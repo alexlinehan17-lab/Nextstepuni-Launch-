@@ -22726,7 +22726,9 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nLooking at the passage as a whole,\nmention one advantage and one\ndisadvantage of the bonus cultura. What is\nRiccardo’s view of this initiative?\nGive two points.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Advantage — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Young people can go to cultural events they previously had no money for / It allows young people who may not have previously been able to, to expand their culture” 3 marks; “You get to spend (500€) (+1 example” 3 marks; “The Italian government is doing something for young people” 3 marks; “It encourages expanding one’s own knowledge/interest in their culture” 3 marks; “It’s important for their personal development” 3 marks; “The bonus is valid for one year” 1 mark. The scheme lists 9 further lesser answer(s) for this ask. The scheme prices this half of the ask separately, under the heading “Advantage”.", group: {"claimMax":4,"perOption":5,"options":["You can spend (500€) on cultural events on tickets to go to the cinema/ theatre/ museums/ exhibitions/ to buy books and school books/ go to a live show (2 elements required)","Cultural purchases: tickets to go to the cinema/ theatre/ museums/ buy books and school books/ go to a live show can be made online","The state doesn’t decide how the money is spent – the choice is made by the students","It allows young people of 18 to spend public money on cultural events helping them learn and to appreciate new things"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Advantage — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Young people can go to cultural events they previously had no money for / It allows young people who may not have previously been able to, to expand their culture” 3 marks; “You get to spend (500€) (+1 example” 3 marks; “The Italian government is doing something for young people” 3 marks; “It encourages expanding one’s own knowledge/interest in their culture” 3 marks; “It’s important for their personal development” 3 marks; “The bonus is valid for one year” 1 mark. The scheme lists 8 further lesser answer(s) for this ask. The scheme prints these answers under the heading “Advantage”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["You can spend (500€) on cultural events on tickets to go to the cinema/ theatre/ museums/ exhibitions/ to buy books and school books/ go to a live show (2 elements required)","Cultural purchases: tickets to go to the cinema/ theatre/ museums/ buy books and school books/ go to a live show can be made online","The state doesn’t decide how the money is spent – the choice is made by the students","It allows young people of 18 to spend public money on cultural events helping them learn and to appreciate new things"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Disadvantage — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Disadvantage”; the paper asks for 1 point on it.", group: {"claimMax":1,"options":["People have problems in accessing the website where vouchers can be downloaded to get free goods.","It is difficult to get your SPID /your digital identity that you will need to avail of the initiative /bonus.","Not all people would be good (at buying on line) or be computer literate/computer savvy."],"perOption":5} },
+    { id: "r-3", kind: "anyN", verbatim: "Riccardo — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under the heading “Riccardo”; the paper asks for 2 points on it.", group: {"claimMax":2,"options":["Riccardo: he is not very interested in art, museums, or any cultural activity in general.","Riccardo: he could use the money to go to the cinema /theatre with his friends.","Riccardo: he believes that the bonus should be allocated according to the family yearly income (3m) (+one explanation) some young people would not need the money at all/others could achieve a lot with 500€ /it would make a big difference in their life.","Riccardo: He thinks that the system implemented is not fair as the bonus should be allocated according to the family yearly income.","Riccardo: Some young people would not need the money at all, while some others could achieve a lot with 500€; because the bonus would make a big difference in some people’s life/ because the bonus could give some people the chance to do things that were inaccessible before."],"perOption":5} },
     ],
   } as SecCard,
   {
@@ -23069,7 +23071,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer the following question in English.\nBasing your answers on this passage and the\nnovel as a whole, explain how Marcovaldo’s\nideas always turn into misadventure. Give\nfour points.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "From the passage / From the novel — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “From the passage / From the novel”.", group: {"claimMax":4,"perOption":5,"options":["Marcovaldo sees beccacce in the sky and ends up being fined","He plans to get beccacce on the terrace of his apartment, so with his children devises a plan to catch them but he manages to catch a pigeon instead.","Because of the birdlime (above mentioned plan to get the beccacce) Filippetto nearly gets stuck.","Because of his plan to catch the beccacce (birdlime all over the terrace, the wheat etc.) the laundry gets destroyed.","He’s in trouble with the law because of his plan to catch beccacce; the traffic warden, who previously fined him, was investigating the illegal hunting of pigeons and he is in Marcovaldo’s landlady’s living room enquiring about suspicious activity in that building.","Any story that mentions his efforts and misadventures + example and consequences."]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the headings “From the passage”, “From the novel”.", group: {"claimMax":4,"options":["From the passage — Marcovaldo sees beccacce in the sky and ends up being fined","From the passage — He plans to get beccacce on the terrace of his apartment, so with his children devises a plan to catch them but he manages to catch a pigeon instead.","From the passage — Because of the birdlime (above mentioned plan to get the beccacce) Filippetto nearly gets stuck.","From the passage — Because of his plan to catch the beccacce (birdlime all over the terrace, the wheat etc.) the laundry gets destroyed.","From the passage — He’s in trouble with the law because of his plan to catch beccacce; the traffic warden, who previously fined him, was investigating the illegal hunting of pigeons and he is in Marcovaldo’s landlady’s living room enquiring about suspicious activity in that building.","From the novel — Any story that mentions his efforts and misadventures + example and consequences."],"perOption":5} },
     ],
   } as SecCard,
   {
@@ -23087,12 +23089,12 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "criterion", verbatim: "Salvatore and Michele used to play Subbuteo/ (to do) organise/partake in Subbuteo tournaments during the winter and spent entire afternoons playing at it. He used to play also when he was on his own.", marks: null },
     { id: "r-4", kind: "criterion", verbatim: "Salvatore gets very precious and every expensive presents from his well-off father who is a lawyer, that’s why he had 12 Subbuteo teams", marks: null },
     { id: "r-5", kind: "criterion", verbatim: "Even though he had lots of Subbuteo teams Salvatore does not want to give any to Michele as his father would not be happy with that/because he’s mean", marks: null },
-    { id: "r-6", kind: "criterion", verbatim: "Salvatore is Michele’s best friend but he betrays him ➔ Secret+driving lesson must be mentioned to get full marks", marks: null },
-    { id: "r-7", kind: "criterion", verbatim: "He redeems himself at the end of the novel when he tells Michele where they have moved Filippo.", marks: null },
-    { id: "r-8", kind: "criterion", verbatim: "He was much brighter than Teschio and could have been the leader of the gang but he was not interested in that.", marks: null },
-    { id: "r-9", kind: "criterion", verbatim: "3 pts from passage + 1 pt from novel", marks: null },
-    { id: "r-10", kind: "criterion", verbatim: "1 pt from passage + 3 pts from novel*", marks: null },
-    { id: "r-11", kind: "criterion", verbatim: "2 pts from passage + 2 pts from novel*", marks: null },
+    { id: "r-6", kind: "criterion", verbatim: "Points from the novel — Salvatore is Michele’s best friend but he betrays him ➔ Secret+driving lesson must be mentioned to get full marks", marks: null },
+    { id: "r-7", kind: "criterion", verbatim: "Points from the novel — He redeems himself at the end of the novel when he tells Michele where they have moved Filippo.", marks: null },
+    { id: "r-8", kind: "criterion", verbatim: "Points from the novel — He was much brighter than Teschio and could have been the leader of the gang but he was not interested in that.", marks: null },
+    { id: "r-9", kind: "criterion", verbatim: "Points from the novel — 3 pts from passage + 1 pt from novel", marks: null },
+    { id: "r-10", kind: "criterion", verbatim: "Points from the novel — 1 pt from passage + 3 pts from novel*", marks: null },
+    { id: "r-11", kind: "criterion", verbatim: "Points from the novel — 2 pts from passage + 2 pts from novel* *Reference to the fact that Salvatore betrayed Michele ➔ Salvatore aveva venduto il Michele e il suo segreto per una lezione di guida must be made when 2 pts are taken from the novel", marks: null },
     ],
   } as SecCard,
   {
@@ -23853,9 +23855,11 @@ export const CARDS: SecCard[] = [
     section: "L", questionRef: "2017 HL Section LB3 Q6",
     stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
     questionText: "What two parts of Italy did Daniela like the most? (b) Why?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The Centre and the South", marks: 2, contextNote: "The scheme prices this half of the ask separately, under the heading “.”. Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "(a) — The Centre", marks: 1, contextNote: "Answer in English or Irish." },
+    { id: "r-2", kind: "point", verbatim: "(a) — the South", marks: 1 },
+    { id: "r-3", kind: "criterion", verbatim: "(b) — People are (very) welcoming, chatty and (very) helpful", marks: 2, contextNote: "The scheme also pays part marks for a shorter answer: “2 elements” 1 mark.", permittedMarks: [0,1,2] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23888,9 +23892,9 @@ export const CARDS: SecCard[] = [
     section: "L", questionRef: "2017 HL Section LB3 Q7",
     stem: "Dialogue 3. Interview with Daniela Montelli. In this section there are three conversations. You will hear each conversation three times: first right through, then in segments with short internal pauses and finally right through again. The answers should be written in English in the spaces provided.",
     questionText: "What difficulties did she encounter during her journey? Give two details.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "People are (very) welcoming, chatty and (very) helpful", marks: null, contextNote: "The scheme gives marks for this answer by how many of its elements are given: 2 elements 1m. Answer in English or Irish." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints “Any two of 4 marks(2+2)”. Answer in English or Irish.", group: {"claimMax":2,"options":["Roads are narrow (1m) there are often no footpaths on roads (1m)","Cars are speeding","Sometimes (1m) she could not get accommodation (1m)","She had to sleep on the beach or in a campsite"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -23925,7 +23929,7 @@ export const CARDS: SecCard[] = [
     questionText: "What are Daniela’s projects for the future?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Cars are speeding — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Cars are speeding”. Answer in English or Irish.", group: {"claimMax":2,"perOption":2,"options":["Roads are narrow (1m) there are often no footpaths on roads (1m)","Sometimes (1m) she could not get accommodation (1m)","She had to sleep on the beach or in a campsite","4 marks (2+2)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints this ask’s “4 marks (2+2)” on the line above its number. The scheme also pays part marks for a shorter answer: “She will write a book” 1 mark. Answer in English or Irish.", group: {"claimMax":2,"options":["She is going back to Dublin (to her fiancé) (1m) for six months (1m)","She will publish her book","She will travel to Europe (1m) by bike (1m)","She will write another/second book"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",

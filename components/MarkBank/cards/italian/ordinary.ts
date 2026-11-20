@@ -13882,7 +13882,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give five details about Ermal.\n(Introduction & Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "“mountain wind”) — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He has a brother / a sister” 1 mark. The scheme prices this half of the ask separately, under the heading ““mountain wind”)”.", group: {"claimMax":5,"perOption":2,"options":["He is a successful (1m) musician/artist (1m)","He came first (1m) at Sanremo / Festival","He is very refined","He likes good (1m) food (1m)","He has an incredible story","He has a very common (1m) Albanian name (1m) (meaning","He left Albania with his Family / brother, sister and mother","He left Albania more than twenty years ago","He never had a good relationship (1m) with his father (1m)","He was born (1m) (and grew up initially) in Fier /Albania (1m)","(He) returned five years ago (1m) to Albania (1m)","He (still) loves the place"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He has a brother / a sister” 1 mark.", group: {"claimMax":5,"options":["He is a successful (1m) musician/artist (1m)","He came first (1m) at Sanremo / Festival","He is very refined","He likes good (1m) food (1m)","He has an incredible story","He has a very common (1m) Albanian name (1m) (meaning “mountain wind”)","He left Albania with his Family / brother, sister and mother","He left Albania more than twenty years ago","He never had a good relationship (1m) with his father (1m)","He was born (1m) (and grew up initially) in Fier /Albania (1m)","(He) returned five years ago (1m) to Albania (1m)","He (still) loves the place"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16225,7 +16225,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about the family in the\nfirst advertisement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "They are Milanese — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “They are Milanese”.", group: {"claimMax":2,"perOption":1,"options":["They have two children /they have an six/eight year old child","They are looking for a home help/childminder"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":2,"options":["They are Milanese","They have two children /they have an six/eight year old child","They are looking for a home help/childminder"],"perOption":1} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16387,7 +16387,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention two things included in the price\nof the course.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "25 theory classes — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Driving lessons” 1 mark; “Classes” 1 mark; “Pink document” 1 mark; “Book” 1 mark; “CD” 1 mark. The scheme prices this half of the ask separately, under the heading “25 theory classes”.", group: {"claimMax":2,"perOption":2,"options":["The enrolment to the school","Three driving lessons","Teaching resources/Theory book/Quiz book/ Quiz CD/CD with quizzes","Theory exam fees","Theory exam","Provisional licence"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Driving lessons” 1 mark; “Classes” 1 mark; “Pink document” 1 mark; “Book” 1 mark; “CD” 1 mark.", group: {"claimMax":2,"options":["The enrolment to the school","Three driving lessons","25 theory classes","Teaching resources/Theory book/Quiz book/ Quiz CD/CD with quizzes","Theory exam fees","Theory exam","Provisional licence"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17960,7 +17960,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give three details about Aldo Mencaraglia.\n(Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "He is Italian — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He studied” 1 mark; “He worked” 1 mark. The scheme prices this half of the ask separately, under the heading “He is Italian”.", group: {"claimMax":3,"perOption":3,"options":["He is the founder of a blog (italiansinfuga.com)","He advises people who are thinking of working abroad.","He is forty years old","He left Italy when he was nineteen years old","He studied in Great Britain/China/Taiwan","He worked in Great Britain/China/Taiwan","He lives in Australia"],"perOptionSteps":[3,3,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He studied” 1 mark; “He worked” 1 mark.", group: {"claimMax":3,"options":["He is Italian","He is the founder of a blog (italiansinfuga.com)","He advises people who are thinking of working abroad.","He is forty years old","He left Italy when he was nineteen years old","He studied in Great Britain/China/Taiwan","He worked in Great Britain/China/Taiwan","He lives in Australia"],"perOption":3,"perOptionSteps":[3,3,2]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18697,7 +18697,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why would you use the SpedireSicuro\nservice? Mention four reasons.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "It is safe / It is convenient — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “It is safe / It is convenient”.", group: {"claimMax":4,"perOption":2,"options":["It is simple","It is quick","It is easy","You can send a parcel from home/from the office","You can do it on-line (from home or office)/saves time or energy (compared to going to post office etc)","You can send to anywhere in Europe","They guarantee fast delivery times (within a few days)/ fast"],"perOptionSteps":[2,1,1,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":4,"options":["It is simple","It is quick","It is easy","It is safe","You can send a parcel from home/from the office","You can do it on-line (from home or office)/saves time or energy (compared to going to post office etc)","You can send to anywhere in Europe","It is convenient","They guarantee fast delivery times (within a few days)/ fast"],"perOption":2,"perOptionSteps":[2,1,1,1]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19520,7 +19520,7 @@ export const CARDS: SecCard[] = [
     questionText: "How did Michele feel when he was nominated captain?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Felt challenged — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Felt challenged”. Answer in English or Irish.", group: {"claimMax":1,"perOption":5,"options":["Felt great satisfaction","Felt little scared","Felt he may have to encourage the team (through difficult moments)","Felt he may have to be diplomatic (in solving problems)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["Felt great satisfaction","Felt little scared","Felt challenged","Felt he may have to encourage the team (through difficult moments)","Felt he may have to be diplomatic (in solving problems)"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19555,7 +19555,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Michele say about his mother?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "She is generous — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “She is generous”. Answer in English or Irish.", group: {"claimMax":2,"perOption":4,"options":["She is patient","She always gives him lifts/ takes him to matches","She makes desserts for the team","His team mates all love her (She (always) helps/supports him 2 marks)"],"perOptionSteps":[4,3]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"options":["She is patient","She is generous","She always gives him lifts/ takes him to matches","She makes desserts for the team","His team mates all love her (She (always) helps/supports him 2 marks)"],"perOption":4,"perOptionSteps":[4,3]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
