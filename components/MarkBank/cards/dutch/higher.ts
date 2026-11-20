@@ -3762,6 +3762,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2022 Higher Level — © State Examinations Commission.",
+    id: "nld-2022-hl-i-6", topicId: "dutch-0-1", conceptId: "alinea-zegt-muusse-het-goed-dat",
+    section: "I", questionRef: "2022 HL Section I Q6",
+    questionText: "In alinea 16 zegt Muusse: ““Het is goed dat de ene generatie zich afzet tegen de andere. Dat maakt van een generatie een generatie.” Ben je het daarmee eens of niet? Verdedig je standpunt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this question and prints nothing under it.", permittedMarks: [0,1,2,3,4,5], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2022 Higher Level — © State Examinations Commission.",
+    id: "nld-2022-hl-ii-1", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-van-minimum-300",
+    section: "II", questionRef: "2022 HL Section II Q1",
+    questionText: "Schrijf een opstel van minimum 300 woorden. Kies één van de volgende opgaven. ‘De oudere generatie oogst wat ze zelf heeft gezaaid.’ Wat denk jij over de verantwoordelijk die oudere generaties dragen ten opzichte van je eigen generatie? Geef je visie op deze stelling in een essay van ongeveer 300 woorden. Zorg ervoor dat je visie een duidelijke stelling en argumentatie heeft.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2022 Higher Level — © State Examinations Commission.",
+    id: "nld-2022-hl-ii-2", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-van-minimum-300",
+    section: "II", questionRef: "2022 HL Section II Q2",
+    questionText: "Schrijf een opstel van minimum 300 woorden. Kies één van de volgende opgaven. Hoe echte vriendschap wordt gemaakt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC017ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2023 Higher Level — © State Examinations Commission.",
