@@ -1,0 +1,503 @@
+{
+  "year": 2017,
+  "level": "ordinary",
+  "sources": {
+    "paper": {
+      "pages": 20,
+      "sha256": "2b705ed6fdff983ac7effe1b4d3737fdaca5a1cd893f19b8b58946f544d713f6"
+    },
+    "aural": {
+      "pages": 8,
+      "sha256": "98fbb84beb3eb52c85dc18ccca198dfb964a2b7727444aa42634a041f3bcdd61"
+    },
+    "scheme": {
+      "pages": 16,
+      "sha256": "27ccb0243cfcc6e793f3abfff15dab61fe0d7b2a575a624629770bf1d1fa447f"
+    }
+  },
+  "sourceAsks": 51,
+  "writtenAsks": 33,
+  "listeningAsks": 18,
+  "sourceAddresses": [
+    {
+      "unit": "IR1",
+      "printedQuestion": null,
+      "roman": "i",
+      "questionPages": [
+        3
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "IR1",
+      "printedQuestion": null,
+      "roman": "ii",
+      "questionPages": [
+        3
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "IR1",
+      "printedQuestion": null,
+      "roman": "iii",
+      "questionPages": [
+        3
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "IR1",
+      "printedQuestion": null,
+      "roman": "iv",
+      "questionPages": [
+        3
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "IR1",
+      "printedQuestion": null,
+      "roman": "v",
+      "questionPages": [
+        3
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "IR1",
+      "printedQuestion": null,
+      "roman": "vi",
+      "questionPages": [
+        3
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "IR1",
+      "printedQuestion": null,
+      "roman": "vii",
+      "questionPages": [
+        3
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "IR1",
+      "printedQuestion": null,
+      "roman": "viii",
+      "questionPages": [
+        4
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "LA1",
+      "printedQuestion": null,
+      "roman": null,
+      "questionPages": [
+        4
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "IR2",
+      "printedQuestion": null,
+      "roman": "i",
+      "questionPages": [
+        6
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "IR2",
+      "printedQuestion": null,
+      "roman": "ii",
+      "questionPages": [
+        6
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "IR2",
+      "printedQuestion": null,
+      "roman": "iii",
+      "questionPages": [
+        6
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "IR2",
+      "printedQuestion": null,
+      "roman": "iv",
+      "questionPages": [
+        6
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "IR2",
+      "printedQuestion": null,
+      "roman": "v",
+      "questionPages": [
+        6
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "IR2",
+      "printedQuestion": null,
+      "roman": "vi",
+      "questionPages": [
+        7
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "IR2",
+      "printedQuestion": null,
+      "roman": "vii",
+      "questionPages": [
+        7
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "LA2",
+      "printedQuestion": null,
+      "roman": null,
+      "questionPages": [
+        7
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "MM",
+      "printedQuestion": 1,
+      "roman": null,
+      "questionPages": [
+        8
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "SD",
+      "printedQuestion": null,
+      "roman": null,
+      "questionPages": [
+        9,
+        10
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "CD",
+      "printedQuestion": 1,
+      "roman": "i",
+      "questionPages": [
+        12
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "CD",
+      "printedQuestion": 1,
+      "roman": "ii",
+      "questionPages": [
+        12
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "CD",
+      "printedQuestion": 1,
+      "roman": "iii",
+      "questionPages": [
+        12
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "CD",
+      "printedQuestion": 2,
+      "roman": null,
+      "questionPages": [
+        12
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "CD",
+      "printedQuestion": 3,
+      "roman": "i",
+      "questionPages": [
+        12
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "CD",
+      "printedQuestion": 3,
+      "roman": "ii",
+      "questionPages": [
+        12
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "CD",
+      "printedQuestion": 3,
+      "roman": "iii",
+      "questionPages": [
+        13
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "CD",
+      "printedQuestion": 3,
+      "roman": "iv",
+      "questionPages": [
+        13
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "CD",
+      "printedQuestion": 4,
+      "roman": "i",
+      "questionPages": [
+        13
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "CD",
+      "printedQuestion": 4,
+      "roman": "ii",
+      "questionPages": [
+        13
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "CD",
+      "printedQuestion": 4,
+      "roman": "iii",
+      "questionPages": [
+        13
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "CD",
+      "printedQuestion": 4,
+      "roman": "iv",
+      "questionPages": [
+        13
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "CA",
+      "printedQuestion": null,
+      "roman": null,
+      "questionPages": [
+        14
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "EW",
+      "printedQuestion": null,
+      "roman": null,
+      "questionPages": [
+        15
+      ],
+      "component": "000"
+    },
+    {
+      "unit": "L1",
+      "printedQuestion": 1,
+      "roman": null,
+      "questionPages": [
+        2
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L1",
+      "printedQuestion": 2,
+      "roman": null,
+      "questionPages": [
+        2
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L1",
+      "printedQuestion": 3,
+      "roman": "i",
+      "questionPages": [
+        2
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L1",
+      "printedQuestion": 3,
+      "roman": "ii",
+      "questionPages": [
+        2
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L1",
+      "printedQuestion": 4,
+      "roman": null,
+      "questionPages": [
+        2
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L2",
+      "printedQuestion": 1,
+      "roman": null,
+      "questionPages": [
+        3
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L2",
+      "printedQuestion": 2,
+      "roman": null,
+      "questionPages": [
+        3
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L2",
+      "printedQuestion": 3,
+      "roman": "i",
+      "questionPages": [
+        3
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L2",
+      "printedQuestion": 3,
+      "roman": "ii",
+      "questionPages": [
+        3
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L3",
+      "printedQuestion": 1,
+      "roman": "i",
+      "questionPages": [
+        4
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L3",
+      "printedQuestion": 1,
+      "roman": "ii",
+      "questionPages": [
+        4
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L3",
+      "printedQuestion": 2,
+      "roman": null,
+      "questionPages": [
+        4
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L3",
+      "printedQuestion": 3,
+      "roman": null,
+      "questionPages": [
+        4
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L4",
+      "printedQuestion": 1,
+      "roman": "i",
+      "questionPages": [
+        5
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L4",
+      "printedQuestion": 1,
+      "roman": "ii",
+      "questionPages": [
+        5
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L4",
+      "printedQuestion": 2,
+      "roman": null,
+      "questionPages": [
+        5
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L4",
+      "printedQuestion": 3,
+      "roman": null,
+      "questionPages": [
+        5
+      ],
+      "component": "A00"
+    },
+    {
+      "unit": "L4",
+      "printedQuestion": 4,
+      "roman": null,
+      "questionPages": [
+        5
+      ],
+      "component": "A00"
+    }
+  ],
+  "method": "Literal original-paper task inventory from the independent 44-page visual review, checked again against cached original page text on 12 November. These are printed addresses; runtime/reconcile normalization must be validated separately. Not derived from the historical 25-task parser diagnostic.",
+  "canonicalUnitMapping": {
+    "CA": "SA",
+    "reason": "The read-only census uses CA as a descriptive cultural-awareness label. The established Ordinary source/citation parser uses SA for the same short-answer task. Preserve its one original boundary and all five topic options; no identity exists to rename. MM retains its actual printed Q1. SD is unnumbered in the original paper and has no invented Q2."
+  },
+  "reviewCorrection": {
+    "date": "2026-11-13",
+    "page": 9,
+    "image": "paper-03.png",
+    "imageSha256": "94308079550f548fa75e39f543f6add68e8fc92518e0f29567d05da9b017e8eb",
+    "correction": "Original C. Structuring discourse is unnumbered. Earlier unpublished printedQuestion2 annotation was a reader error; corrected to null. Source task count51 and both-dialogue boundary unchanged. No existing SD card or anchor is renamed."
+  },
+  "notes": [
+    "One card per printed ask, including 18 individual listening asks.",
+    "Both discourse dialogues are one unnumbered exercise.",
+    "The six-mark cursive exercise is one ask with three phrases.",
+    "Short answers retain the choice of two of five; extended writing retains one of three.",
+    "Listening allocations await Alex because the printed per-detail instruction conflicts with the section totals and named three-mark answers."
+  ],
+  "status": "Independent paper census filed; card generation and scoring verification are separate."
+}

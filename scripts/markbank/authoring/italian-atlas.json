@@ -1,5 +1,5 @@
 {
-"note": "Italian Mark Bank card -> its printed Topic Atlas question (the Atlas numbers each paper straight through with section labels). Built 19 Nov 2026 by the standard-model lane over all 10 papers (stage2/italian/JOIN.md).",
+"note": "Italian Mark Bank card -> its printed Topic Atlas question (the Atlas numbers each paper straight through by section). Built 19 Nov 2026 by the standard-model lane over every paper (stage2/italian/JOIN.md); null where the Atlas lists no question for the part (the listening cards are keyed to the written paper, and 2021-2025 Higher essays are not on those Atlas lists).",
 "cards": {
 "it-2021-hl-a-1-a": {
 "fileid": "LC013ALP000BV.pdf",
@@ -32,6 +32,10 @@
 "it-2021-hl-a-4-b": {
 "fileid": "LC013ALP000BV.pdf",
 "n": "4"
+},
+"it-2021-hl-a-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "5"
 },
 "it-2021-hl-b1-1-a": {
 "fileid": "LC013ALP000BV.pdf",
@@ -140,6 +144,134 @@
 "it-2021-hl-b2b-5": {
 "fileid": "LC013ALP000BV.pdf",
 "n": "20"
+},
+"it-2021-hl-b3a-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-b3a-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-b3b-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-b3b-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-c-1-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C1"
+},
+"it-2021-hl-c-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C2"
+},
+"it-2021-hl-c-3-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C3"
+},
+"it-2021-hl-c-3-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C3"
+},
+"it-2021-hl-la-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-la-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-la-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-la-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-la-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-la-6": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-la-7": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-la-8": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb1-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb1-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb1-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb1-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb2-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb2-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb2-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb2-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb3-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb3-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb3-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb3-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb3-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb3-6": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb3-7": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2021-hl-lb3-8": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
 },
 "it-2021-ol-a1-1": {
 "fileid": "LC013GLP000BV.pdf",
@@ -289,6 +421,118 @@
 "fileid": "LC013GLP000BV.pdf",
 "n": "27"
 },
+"it-2021-ol-c-1-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C1A"
+},
+"it-2021-ol-c-1-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C1B"
+},
+"it-2021-ol-c-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C2"
+},
+"it-2021-ol-c-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C3"
+},
+"it-2021-ol-la-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-la-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-la-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-la-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-la-5": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-la-6": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-la-7": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-la-8": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb1-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb1-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb1-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb1-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb2-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb2-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb2-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb2-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb3-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb3-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb3-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb3-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb3-5": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb3-6": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb3-7": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2021-ol-lb3-8": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
 "it-2022-hl-a-1-a": {
 "fileid": "LC013ALP000BV.pdf",
 "n": "1"
@@ -320,6 +564,10 @@
 "it-2022-hl-a-4-b": {
 "fileid": "LC013ALP000BV.pdf",
 "n": "4"
+},
+"it-2022-hl-a-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "5"
 },
 "it-2022-hl-b1-1-a": {
 "fileid": "LC013ALP000BV.pdf",
@@ -428,6 +676,134 @@
 "it-2022-hl-b2b-5": {
 "fileid": "LC013ALP000BV.pdf",
 "n": "20"
+},
+"it-2022-hl-b3a-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-b3a-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-b3b-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-b3b-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-c-1-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C1"
+},
+"it-2022-hl-c-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C2"
+},
+"it-2022-hl-c-3-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C3"
+},
+"it-2022-hl-c-3-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C3"
+},
+"it-2022-hl-la-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-la-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-la-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-la-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-la-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-la-6": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-la-7": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-la-8": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb1-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb1-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb1-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb1-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb2-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb2-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb2-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb2-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb3-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb3-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb3-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb3-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb3-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb3-6": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb3-7": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2022-hl-lb3-8": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
 },
 "it-2022-ol-a1-1": {
 "fileid": "LC013GLP000BV.pdf",
@@ -573,6 +949,118 @@
 "fileid": "LC013GLP000BV.pdf",
 "n": "25"
 },
+"it-2022-ol-c-1-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C1A"
+},
+"it-2022-ol-c-1-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C1B"
+},
+"it-2022-ol-c-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C2"
+},
+"it-2022-ol-c-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C3"
+},
+"it-2022-ol-la-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-la-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-la-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-la-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-la-5": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-la-6": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-la-7": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-la-8": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb1-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb1-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb1-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb1-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb2-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb2-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb2-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb2-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb3-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb3-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb3-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb3-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb3-5": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb3-6": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb3-7": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2022-ol-lb3-8": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
 "it-2023-hl-a-1-a": {
 "fileid": "LC013ALP000BV.pdf",
 "n": "1"
@@ -598,6 +1086,10 @@
 "n": "3"
 },
 "it-2023-hl-a-4-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "4"
+},
+"it-2023-hl-a-4-b": {
 "fileid": "LC013ALP000BV.pdf",
 "n": "4"
 },
@@ -708,6 +1200,134 @@
 "it-2023-hl-b2b-5": {
 "fileid": "LC013ALP000BV.pdf",
 "n": "20"
+},
+"it-2023-hl-b3a-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-b3a-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-b3b-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-b3b-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-c-1-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C1"
+},
+"it-2023-hl-c-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C2"
+},
+"it-2023-hl-c-3-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C3"
+},
+"it-2023-hl-c-3-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C3"
+},
+"it-2023-hl-la-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-la-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-la-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-la-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-la-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-la-6": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-la-7": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-la-8": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb1-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb1-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb1-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb1-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb2-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb2-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb2-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb2-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb3-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb3-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb3-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb3-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb3-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb3-6": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb3-7": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2023-hl-lb3-8": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
 },
 "it-2023-ol-a1-1": {
 "fileid": "LC013GLP000BV.pdf",
@@ -853,6 +1473,118 @@
 "fileid": "LC013GLP000BV.pdf",
 "n": "26"
 },
+"it-2023-ol-c-1-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C1A"
+},
+"it-2023-ol-c-1-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C1B"
+},
+"it-2023-ol-c-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C2"
+},
+"it-2023-ol-c-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C3"
+},
+"it-2023-ol-la-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-la-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-la-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-la-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-la-5": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-la-6": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-la-7": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-la-8": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb1-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb1-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb1-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb1-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb2-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb2-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb2-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb2-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb3-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb3-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb3-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb3-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb3-5": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb3-6": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb3-7": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2023-ol-lb3-8": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
 "it-2024-hl-a-1-a": {
 "fileid": "LC013ALP000BV.pdf",
 "n": "1"
@@ -961,6 +1693,10 @@
 "fileid": "LC013ALP000BV.pdf",
 "n": "15"
 },
+"it-2024-hl-b2b-1-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "16"
+},
 "it-2024-hl-b2b-1-b": {
 "fileid": "LC013ALP000BV.pdf",
 "n": "16"
@@ -992,6 +1728,134 @@
 "it-2024-hl-b2b-5": {
 "fileid": "LC013ALP000BV.pdf",
 "n": "20"
+},
+"it-2024-hl-b3a-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-b3a-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-b3b-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-b3b-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-c-1-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C1"
+},
+"it-2024-hl-c-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C2"
+},
+"it-2024-hl-c-3-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C3"
+},
+"it-2024-hl-c-3-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C3"
+},
+"it-2024-hl-la-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-la-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-la-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-la-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-la-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-la-6": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-la-7": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-la-8": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb1-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb1-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb1-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb1-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb2-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb2-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb2-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb2-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb3-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb3-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb3-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb3-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb3-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb3-6": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb3-7": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2024-hl-lb3-8": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
 },
 "it-2024-ol-a1-1": {
 "fileid": "LC013GLP000BV.pdf",
@@ -1133,6 +1997,118 @@
 "fileid": "LC013GLP000BV.pdf",
 "n": "25"
 },
+"it-2024-ol-c-1-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C1A"
+},
+"it-2024-ol-c-1-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C1B"
+},
+"it-2024-ol-c-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C2"
+},
+"it-2024-ol-c-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C3"
+},
+"it-2024-ol-la-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-la-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-la-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-la-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-la-5": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-la-6": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-la-7": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-la-8": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb1-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb1-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb1-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb1-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb2-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb2-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb2-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb2-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb3-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb3-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb3-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb3-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb3-5": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb3-6": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb3-7": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2024-ol-lb3-8": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
 "it-2025-hl-a-1-a": {
 "fileid": "LC013ALP000BV.pdf",
 "n": "1"
@@ -1154,6 +2130,10 @@
 "n": "2"
 },
 "it-2025-hl-a-3-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "3"
+},
+"it-2025-hl-a-3-b": {
 "fileid": "LC013ALP000BV.pdf",
 "n": "3"
 },
@@ -1264,6 +2244,134 @@
 "it-2025-hl-b2b-5": {
 "fileid": "LC013ALP000BV.pdf",
 "n": "20"
+},
+"it-2025-hl-b3a-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-b3a-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-b3b-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-b3b-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-c-1-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C1"
+},
+"it-2025-hl-c-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C2"
+},
+"it-2025-hl-c-3-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C3"
+},
+"it-2025-hl-c-3-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "C3"
+},
+"it-2025-hl-la-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-la-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-la-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-la-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-la-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-la-6": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-la-7": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-la-8": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb1-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb1-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb1-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb1-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb2-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb2-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb2-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb2-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb3-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb3-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb3-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb3-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb3-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb3-6": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb3-7": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2025-hl-lb3-8": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
 },
 "it-2025-ol-a1-1": {
 "fileid": "LC013GLP000BV.pdf",
@@ -1400,6 +2508,642 @@
 "it-2025-ol-b5-e-match": {
 "fileid": "LC013GLP000BV.pdf",
 "n": "26"
+},
+"it-2025-ol-c-1-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C1A"
+},
+"it-2025-ol-c-1-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C1B"
+},
+"it-2025-ol-c-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C2"
+},
+"it-2025-ol-c-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "C3"
+},
+"it-2025-ol-la-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-la-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-la-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-la-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-la-5": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-la-6": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-la-7": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-la-8": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb1-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb1-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb1-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb1-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb2-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb2-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb2-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb2-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb3-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb3-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb3-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb3-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb3-5": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb3-6": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb3-7": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2025-ol-lb3-8": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-hl-a-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "1"
+},
+"it-2026-hl-a-2-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "2"
+},
+"it-2026-hl-a-2-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "2"
+},
+"it-2026-hl-a-2-c": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "2"
+},
+"it-2026-hl-a-3-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "3"
+},
+"it-2026-hl-a-3-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "3"
+},
+"it-2026-hl-a-4-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "4"
+},
+"it-2026-hl-a-4-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "4"
+},
+"it-2026-hl-a-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "5"
+},
+"it-2026-hl-b1-1-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "6"
+},
+"it-2026-hl-b1-1-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "6"
+},
+"it-2026-hl-b1-2-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "7"
+},
+"it-2026-hl-b1-2-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "7"
+},
+"it-2026-hl-b1-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "8"
+},
+"it-2026-hl-b1-4-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "9"
+},
+"it-2026-hl-b1-4-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "9"
+},
+"it-2026-hl-b1-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "10"
+},
+"it-2026-hl-b2a-1-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "11"
+},
+"it-2026-hl-b2a-1-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "11"
+},
+"it-2026-hl-b2a-2-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "12"
+},
+"it-2026-hl-b2a-2-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "12"
+},
+"it-2026-hl-b2a-3-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "13"
+},
+"it-2026-hl-b2a-3-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "13"
+},
+"it-2026-hl-b2a-4-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "14"
+},
+"it-2026-hl-b2a-4-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "14"
+},
+"it-2026-hl-b2a-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "15"
+},
+"it-2026-hl-b2b-1-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "16"
+},
+"it-2026-hl-b2b-1-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "16"
+},
+"it-2026-hl-b2b-2-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "17"
+},
+"it-2026-hl-b2b-2-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "17"
+},
+"it-2026-hl-b2b-3-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "18"
+},
+"it-2026-hl-b2b-3-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "18"
+},
+"it-2026-hl-b2b-4-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "19"
+},
+"it-2026-hl-b2b-4-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "19"
+},
+"it-2026-hl-b2b-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "20"
+},
+"it-2026-hl-b3a-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "21"
+},
+"it-2026-hl-b3a-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "21"
+},
+"it-2026-hl-b3b-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "22"
+},
+"it-2026-hl-b3b-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "22"
+},
+"it-2026-hl-c-1-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "23"
+},
+"it-2026-hl-c-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "24"
+},
+"it-2026-hl-c-3-a": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "25"
+},
+"it-2026-hl-c-3-b": {
+"fileid": "LC013ALP000BV.pdf",
+"n": "25"
+},
+"it-2026-hl-la-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-la-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-la-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-la-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-la-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-la-6": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-la-7": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-la-8": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb1-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb1-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb1-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb1-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb2-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb2-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb2-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb2-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb3-1": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb3-2": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb3-3": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb3-4": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb3-5": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb3-6": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb3-7": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-hl-lb3-8": {
+"fileid": "LC013ALP000BV.pdf",
+"n": null
+},
+"it-2026-ol-a1-1-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "1"
+},
+"it-2026-ol-a1-1-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "1"
+},
+"it-2026-ol-a1-2-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "1"
+},
+"it-2026-ol-a1-2-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "1"
+},
+"it-2026-ol-a1-3-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "1"
+},
+"it-2026-ol-a1-3-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "1"
+},
+"it-2026-ol-a1-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "1"
+},
+"it-2026-ol-a1-5": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "1"
+},
+"it-2026-ol-a2-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "2"
+},
+"it-2026-ol-a2-2-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "2"
+},
+"it-2026-ol-a2-2-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "2"
+},
+"it-2026-ol-a2-2-c": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "2"
+},
+"it-2026-ol-a2-3-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "2"
+},
+"it-2026-ol-a2-3-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "2"
+},
+"it-2026-ol-a2-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "2"
+},
+"it-2026-ol-b1-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "3"
+},
+"it-2026-ol-b1-2-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "3"
+},
+"it-2026-ol-b1-2-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "3"
+},
+"it-2026-ol-b1-3-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "3"
+},
+"it-2026-ol-b1-3-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "3"
+},
+"it-2026-ol-b1-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "3"
+},
+"it-2026-ol-b2-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "4"
+},
+"it-2026-ol-b2-2-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "4"
+},
+"it-2026-ol-b2-2-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "4"
+},
+"it-2026-ol-b2-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "4"
+},
+"it-2026-ol-b3-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "5"
+},
+"it-2026-ol-b3-2-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "5"
+},
+"it-2026-ol-b3-2-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "5"
+},
+"it-2026-ol-b3-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "5"
+},
+"it-2026-ol-b3-4-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "5"
+},
+"it-2026-ol-b3-4-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "5"
+},
+"it-2026-ol-b4-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "6"
+},
+"it-2026-ol-b4-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "6"
+},
+"it-2026-ol-b4-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "6"
+},
+"it-2026-ol-b5-a-match": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "7"
+},
+"it-2026-ol-b5-e-match": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "7"
+},
+"it-2026-ol-c-1-a": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "8"
+},
+"it-2026-ol-c-1-b": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "9"
+},
+"it-2026-ol-c-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "10"
+},
+"it-2026-ol-c-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": "11"
+},
+"it-2026-ol-la-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-la-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-la-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-la-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-la-5": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-la-6": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-la-7": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-la-8": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb1-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb1-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb1-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb1-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb2-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb2-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb2-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb2-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb3-1": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb3-2": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb3-3": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb3-4": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb3-5": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb3-6": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb3-7": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
+},
+"it-2026-ol-lb3-8": {
+"fileid": "LC013GLP000BV.pdf",
+"n": null
 }
 }
 }

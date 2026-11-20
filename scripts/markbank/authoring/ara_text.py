@@ -175,6 +175,25 @@ def _glyphs(span, hashes=None):
                          for h in gh.get(gid, ())}
                 named.discard(None)
                 ch = named.pop() if len(named) == 1 else '\ufffd'
+        elif len(ch) == 1 and ch.isascii() and not ch.isspace() \
+                and gid in blank:
+            ch = ' '      # the junk form of a glyph that paints nothing
+        elif len(ch) == 1 and ch.isascii() and not ch.isspace():
+            # The third junk form, in the sittings before 2016: Word writes a
+            # glyph's position in the subset as an ASCII letter, so 2011
+            # Higher's text layer reads "القسمAالأ2@" with a capital A for
+            # every space-width glyph and a Latin letter for a missing Arabic
+            # one. ara_glyphs.derive already drops these readings before it
+            # votes; here an ASCII letter is replaced only where the corpus
+            # names that very OUTLINE with an Arabic letter, so a genuine
+            # Latin word set in a Latin font is never touched.
+            named = {table.get(f"{span['font']}|{h}")
+                     for h in gh.get(gid, ())}
+            named.discard(None)
+            if len(named) == 1:
+                cand = named.pop()
+                if any(ara_glyphs._is_arabic(c) for c in cand):
+                    ch = cand
         out.append((ch, bbox, origin))
     return out
 
@@ -362,6 +381,7 @@ def page_lines(page):
             merged.append((y, list(rows[y])))
     lines = []
     for _y, glyphs in merged:
+        glyphs = _drop_overprints(glyphs)
         rtl = any(is_arabic(c) for g in glyphs for c in g['text'])
         glyphs.sort(key=lambda g: g['rect'].x0, reverse=rtl)
         parts = []
@@ -389,6 +409,29 @@ def page_lines(page):
         lines.append({'text': text, 'bbox': (x0, y0, x1, y1), 'rtl': rtl,
                       'size': max(g['size'] for g in glyphs)})
     return lines
+
+
+def _drop_overprints(glyphs):
+    """One glyph where the page paints the same glyph twice in one place.
+
+    Some older papers were edited in a way that left a second copy of part of
+    a line painted exactly over the first: 2015 Higher page 5 draws the thaa
+    of its own part head twice, at x=321.5 and x=321.6, under two different
+    content streams, and read as two letters the head became "الثثاني" — not
+    a word, and not a part head any reader could find, so the whole of Parts
+    2 to 4 was filed under Question 6. Two copies of one character within half
+    a point of each other are one printed letter; real text never sets the
+    same letter twice on the same spot.
+    """
+    out = []
+    for g in glyphs:
+        if any(h['text'] == g['text']
+               and abs(h['rect'].x0 - g['rect'].x0) < 0.5
+               and abs(h['rect'].x1 - g['rect'].x1) < 0.5
+               and abs(h['base'] - g['base']) < 0.5 for h in out):
+            continue
+        out.append(g)
+    return out
 
 
 def page_text(page):

@@ -68,9 +68,12 @@ describe('the single model: Mark Bank and Topic Atlas, both ways', () => {
   it('every card of a switched-on subject reaches a Topic Atlas question under the same topic (known misses may only shrink)', () => {
     expect(known, 'test/fixtures/atlasModelKnownMisses.json is missing').not.toBeNull();
     for (const subject of MODEL_SUBJECTS) expect(subject in (known!.cards ?? {}), `${subject}: run with ATLAS_MISSES_WRITE=1`).toBe(true);
-    // A switched-on subject's card can miss only because the Atlas does not list its paper or question yet.
+    // A switched-on subject's card may miss the Atlas only for an address or join-data gap (the Atlas does not list
+    // its paper or question, or the join file has no entry yet); a filing error (no record, a heading the card is
+    // not filed under, a heading at the wrong level) always fails (coordinator, 19 Nov).
+    const ADDRESS_GAPS = new Set(['no-atlas-question', 'no-atlas-paper', 'no-join-entry', 'unreadable-ref', 'no-own-atlas-question', 'no-address-rule']);
     for (const subject of MODEL_SUBJECTS) {
-      expect(Object.keys(result.cards[subject] ?? {}).filter(reason => reason !== 'no-atlas-question' && reason !== 'no-atlas-paper'), subject).toEqual([]);
+      expect(Object.keys(result.cards[subject] ?? {}).filter(reason => !ADDRESS_GAPS.has(reason)), subject).toEqual([]);
     }
     const { grew, fixed } = compare(gatedCards(result.cards), known!.cards);
     expect(grew, 'cards that newly fail to reach the Atlas').toEqual([]);

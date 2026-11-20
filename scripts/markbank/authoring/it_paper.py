@@ -79,6 +79,18 @@ SOURCE_PAGE = re.compile(r'Leaving\s+Certificate\s+Examination', re.I)
 SECTION_A = re.compile(r'ROINN\s+A\b|SECTION\s+A\b')
 SECTION_B = re.compile(r'ROINN\s+B\b|SECTION\s+B\b')
 SECTION_C = re.compile(r'ROINN\s+C\b|SECTION\s+C\b')
+# The older papers' folio, Irish then English on one line, which the modern
+# FURNITURE pattern (one language per line) does not see.
+OLDER_FOLIO = re.compile(r'^Lch\s+\d+\s+de\s+\d+\b', re.I)
+# The last year of the older layout: from 2021 every sitting keeps the modern
+# alternation of a page to read and a page to write on (see _layout_older).
+OLD_LAYOUT_LAST = 2020
+# SEC misprints in the older papers, keyed by sitting and unit, never inferred.
+# 2012 Higher prints the first question of the second prescribed novel as a
+# bare "1" with no full stop (page 8, above "(a) Trovate quattro parole"), so
+# no marker shape reads it, and the page's furniture rule drops a lone digit
+# as a page number. Its "(a)" and "(b)" are that question's parts.
+NUMBER_WITHOUT_STOP = {(2012, 'hl', 'B2B')}
 # Higher's three Section B routes, each headed in Irish and in English.
 B2_HEAD = re.compile(r'Sliocht\s+Liteartha\s+as\s+[ÚU]rsc[ée]al\s+Dualgais'
                      r'|Literary\s+Passage\s+from\s+Prescribed\s+Novel', re.I)
@@ -134,12 +146,18 @@ LAYOUT = {
 class Block:
     """One printed marker and the lines beneath it, in one column."""
 
-    __slots__ = ('section', 'page', 'side', 'item', 'letter', 'lines')
+    __slots__ = ('section', 'page', 'side', 'item', 'letter', 'lines', 'sub')
 
     def __init__(self, section, page, side, item, letter):
         self.section, self.page, self.side = section, page, side
         self.item, self.letter = item, letter
         self.lines = []
+        # The item letter of a matching task nested UNDER a lettered part:
+        # 2013 Ordinary sets publicity piece 2 as "(a)" and then "(b) Match
+        # the healthy eating advice…" over eight items lettered "(a)" to
+        # "(h)" again. Those eight are (b)'s, and read as the piece's own
+        # they collided with (a) and (b) and lost four asks.
+        self.sub = None
 
     @property
     def text(self):
@@ -251,9 +269,195 @@ class ItPaper:
         source['C'] = []
         return pages, source
 
+    # -- the older layout (2010-2020, and 2026 Higher) ------------------------
+    def _layout_older(self):
+        """(section token -> question pages, -> source pages) for the older papers.
+
+        The papers before 2021 do not keep the modern alternation of a page to
+        read and a page to write on. A Higher passage and its first question
+        share a page, the passage's own paragraphs numbered "1." to "4." above
+        a question numbered "1."; an older Ordinary prints SIX publicity pieces
+        in 2010 and sets some of them, stimulus and questions, on one page; and
+        2011 Ordinary sets its stimulus pages in a layout whose text layer is
+        clipped, section heads and all. So a UNIT (a comprehension, a route, a
+        publicity piece) is read off the pages themselves:
+
+          * a page is a QUESTION page where it rules a line to write on, or
+            prints its markers twice over, in Irish and in English;
+          * a unit opens on a page with no question on it, or on a question
+            page that opens with the unit's own printed number standing alone
+            ("2." over the second comprehension) or restarts the run of
+            question markers the page before it was in;
+          * where a unit's first question page also carries its stimulus, the
+            questions start at the row the paper's own numbering restarts
+            (Higher: the "1." after the paragraphs) or where the markers start
+            coming in pairs, Irish and English (Ordinary).
+
+        Higher units are named by the heads the paper prints on them — the
+        unseen passage, the prescribed novel and its "B.", the essay — and the
+        count of units is asserted for both levels: a sitting printing a
+        different number is flagged, not re-keyed.
+        """
+        texts = self._page_texts(self.path)
+        c_at = next((i for i, t in enumerate(texts) if i and SECTION_C.search(t)), None)
+        if c_at is None:
+            self.flags.append('the paper prints no Section C head')
+            return {}, {}
+        info = [self._page_markers(i) for i in range(len(texts))]
+        pages, source = {}, {}
+        if self.level == 'hl':
+            heads = self._older_hl_heads(texts, c_at)
+            if heads is None:
+                return {}, {}
+            for token, (start, stop) in heads.items():
+                if token == 'B3':
+                    pages['B3'], source['B3'] = [start + 1], []
+                    continue
+                q = [i for i in range(start, stop) if info[i]['question']]
+                if not q:
+                    self.flags.append(f'unit {token} prints no question page')
+                    continue
+                # A question page that opens part-way through the run — "(b)"
+                # or "2." — has its first question on the page before it,
+                # under the passage, where no line is ruled: 2014 Higher sets
+                # the second novel's "1. (a)" at the foot of its extract.
+                if info[q[0]]['first'] not in ('1', '1a') and q[0] > start \
+                        and info[q[0] - 1]['labels']:
+                    q.insert(0, q[0] - 1)
+                pages[token] = [i + 1 for i in q]
+                source[token] = [i + 1 for i in range(start, q[0])]
+                if q[0] == start or not any(not info[i]['question'] for i in range(start, q[0])):
+                    self.starts[(token, q[0] + 1)] = info[q[0]]['restart_row']
+        else:
+            units = []
+            prev_q = False
+            for i in range(1, c_at):
+                rec = info[i]
+                if not rec['labels']:
+                    if not ANSWER_RULE.search(texts[i]):
+                        # a page of printed matter with no marker at all
+                        if prev_q or not units:
+                            units.append({'s': [], 'q': [], 'mixed': False})
+                        units[-1]['s'].append(i)
+                        prev_q = False
+                    continue
+                if not rec['question']:
+                    if prev_q or not units:
+                        units.append({'s': [], 'q': [], 'mixed': False})
+                    units[-1]['s'].append(i)
+                    prev_q = False
+                    continue
+                opens = not units or (prev_q and (
+                    rec['bare_head'] == len(units) + 1 - (2 if len(units) >= 2 else 0)
+                    or rec['bare_head'] == len(units) + 1
+                    or self._restarts(info[units[-1]['q'][-1]], rec)))
+                if opens:
+                    units.append({'s': [], 'q': [], 'mixed': True})
+                units[-1]['q'].append(i)
+                prev_q = True
+            units = [u for u in units if u['q']]
+            if not 7 <= len(units) <= 8:
+                self.flags.append(f'the older Ordinary paper reads as {len(units)} '
+                                  'units, where it sets two comprehensions and five '
+                                  'or six publicity pieces')
+                return {}, {}
+            names = ['A1', 'A2'] + [f'B{k}' for k in range(1, len(units) - 1)]
+            for token, u in zip(names, units):
+                pages[token] = [i + 1 for i in u['q']]
+                source[token] = [i + 1 for i in u['s']]
+                if u['mixed'] or not u['s']:
+                    self.starts[(token, u['q'][0] + 1)] = info[u['q'][0]]['pair_row']
+        pages['C'] = [i + 1 for i in range(c_at, len(texts))
+                      if _has_marker(texts[i])]
+        source['C'] = []
+        return pages, source
+
+    def _older_hl_heads(self, texts, c_at):
+        """{token: (first page, stop page)} for an older Higher paper."""
+        a_at = next((i for i, t in enumerate(texts) if i and SECTION_A.search(t)), None)
+        b_at = next((i for i, t in enumerate(texts) if i and SECTION_B.search(t)), None)
+        b2_at = next((i for i, t in enumerate(texts) if B2_HEAD.search(t)), None)
+        b3_at = next((i for i, t in enumerate(texts) if B3_HEAD.search(t)), None)
+        if None in (a_at, b_at, b2_at, b3_at):
+            self.flags.append('the older Higher paper does not print all its heads')
+            return None
+        b2b_at = next((i for i in range(b2_at + 1, b3_at)
+                       if re.search(r'^\s*B\s*\.\s*(?:$|L[ée]igh|Read)', texts[i], re.M)),
+                      None)
+        if b2b_at is None:
+            self.flags.append('the second prescribed novel prints no "B." head')
+            return None
+        return {'A': (a_at, b_at), 'B1': (b_at, b2_at), 'B2A': (b2_at, b2b_at),
+                'B2B': (b2b_at, b3_at), 'B3': (b3_at, b3_at + 1)}
+
+    def _page_markers(self, pno):
+        """What a page prints, for the older layout: its markers row by row."""
+        rows = _rows(self.path, pno, pno + 1)
+        marks = []                   # (row, label, side, bare)
+        for row_no, (_p, groups) in enumerate(rows):
+            for _x0, side, text in groups:
+                s = _clean(text)
+                if not s or FURNITURE.match(s):
+                    continue
+                m = NUM_MARK.match(s)
+                if m:
+                    label = m.group(1) + (m.group(2) or '')
+                    marks.append((row_no, label, side, not m.group(3).strip()
+                                  and not m.group(2)))
+                    continue
+                m = LETTER_MARK.match(s) or PLAIN_LETTER.match(
+                    re.sub(r'^_{3,}\s*', '', s))
+                if m:
+                    marks.append((row_no, '(' + m.group(1) + ')', side, False))
+        labels = [m[1] for m in marks]
+        # Markers in pairs: the same label twice running, Irish then English.
+        pair_row = None
+        for a, b in zip(marks, marks[1:]):
+            if a[1] == b[1]:
+                pair_row = a[0]
+                break
+        # The row the paper's own numbering restarts on: a "1." after a
+        # higher number, the questions after a numbered passage.
+        restart_row = 0
+        nums = [(m[0], int(re.match(r'\d+', m[1]).group(0))) for m in marks
+                if m[1][0].isdigit()]
+        for (r0, n0), (r1, n1) in zip(nums, nums[1:]):
+            if n1 == 1 and n0 > 1:
+                restart_row = r1
+        text = self._page_texts(self.path)[pno]
+        # DISTINCT labels in pairs: a passage heads itself "1." and opens its
+        # first paragraph "1." too, which is one pair and not a question page.
+        paired = len({a for a, b in zip(labels, labels[1:]) if a == b})
+        question = bool(marks) and (bool(ANSWER_RULE.search(text)) or paired >= 2)
+        bare = next((int(m[1]) for m in marks[:1] if m[3] and m[1].isdigit()), None)
+        return {'labels': labels, 'question': question, 'pair_row': pair_row or 0,
+                'restart_row': restart_row, 'bare_head': bare,
+                'first': labels[0] if labels else None,
+                'last': labels[-1] if labels else None}
+
+    @staticmethod
+    def _restarts(prev, rec):
+        """Whether this page opens a new run of question markers."""
+        first = rec['first']
+        if first not in ('(a)', '1', '1a'):
+            return False
+        return prev['last'] not in (None, first)
+
     # -- the walk -----------------------------------------------------------
     def _read(self):
         self.pages, self.source_pages = self._layout()
+        self.starts = {}          # (token, page) -> first row of the questions
+        self.letters_open = False
+        self._carried = {}        # token -> the item a page break left open
+        self._nest = {}           # (token, side) -> the part a matching task sits under
+        if self.flags and self.year <= OLD_LAYOUT_LAST or (
+                self.flags and self.level == 'hl' and self.year == 2026):
+            # The modern layout did not hold: read the older one instead. Its
+            # flags are replaced by the older reader's own, never kept beside
+            # them, because both are statements about the same pages.
+            self.flags = []
+            self.pages, self.source_pages = self._layout_older()
+            self.letters_open = True
         for token, pages in self.pages.items():
             # Section C, and the Higher essay on a prescribed text, are walked
             # separately because neither is answered: both are priced by a band
@@ -263,9 +467,9 @@ class ItPaper:
             if token == 'C' or (token == 'B3' and self.level == 'hl'):
                 continue
             for page in pages:
-                self._walk(token, page - 1)
+                self._walk(token, page - 1, self.starts.get((token, page), 0))
 
-    def _walk(self, token, pno):
+    def _walk(self, token, pno, start_row=0):
         cur = {}
         # ONE current item across both columns, not one per column. The two
         # columns are the same questions in two languages, and the SEC numbers
@@ -274,17 +478,26 @@ class ItPaper:
         # English one. Keyed per column, the English half of every such ask
         # belonged to no item and was dropped, and the card was set in Irish.
         cur_item = None
+        if self.letters_open:
+            # An older paper runs a question over the page break — 2016
+            # Higher sets "1. (a)" at the foot of the passage page and "(b)"
+            # at the top of the next — so the item carries over.
+            cur_item = self._carried.get(token)
         rows = _rows(self.path, pno, pno + 1)
         bound = _ruled_bound(rows, self.width)
         if bound is not None:
             # Re-read the page on its own bound, so a row whose two languages
             # share a printed line is CUT there rather than sided whole.
             rows = _rows(self.path, pno, pno + 1, split_at=bound)
-        for _p, groups in rows:
+        for row_no, (_p, groups) in enumerate(rows):
+            if row_no < start_row:
+                continue          # the stimulus above the questions (older papers)
             for _x0, side, text in groups:
                 s = _clean(text)
                 if not s or FURNITURE.match(s):
                     continue
+                if self.letters_open and OLDER_FOLIO.match(s):
+                    continue      # "Lch 8 de 20 / Page 8 of 20"
                 # The right-hand column of the matching task, recovered from
                 # the answer box printed in front of its marker. fr_paper finds
                 # a page's column bound from the MARKERS printed down it, and
@@ -322,6 +535,17 @@ class ItPaper:
                     if m and cur_item:
                         item, letter, rest = cur_item, m.group(1), m.group(2)
                         opened = True
+                    elif m and self.letters_open and (
+                            self.year, self.level, token) in NUMBER_WITHOUT_STOP:
+                        item, letter, rest = 1, m.group(1), m.group(2)
+                        opened = True
+                    elif m and self.letters_open:
+                        # An older Ordinary publicity piece letters its
+                        # questions "(a)" to "(f)" and numbers nothing above
+                        # them: the number is the PIECE's, printed over its
+                        # stimulus.
+                        item, letter, rest = None, m.group(1), m.group(2)
+                        opened = True
                     else:
                         m = PLAIN_LETTER.match(s)
                         if m:
@@ -334,12 +558,22 @@ class ItPaper:
                         cur[side].lines.append(s)
                     continue
                 block = Block(token, pno + 1, side, item, letter)
+                if self.letters_open and letter and item is None:
+                    prev = cur.get(side)
+                    nest = self._nest.get((token, side))
+                    if nest is None and prev is not None and prev.item is None \
+                            and prev.letter and prev.letter > 'a' and letter == 'a' \
+                            and prev.section == token:
+                        nest = self._nest[(token, side)] = prev.letter
+                    if nest is not None:
+                        block.letter, block.sub = nest, letter
                 if rest.strip():
                     block.lines.append(rest.strip())
                 self.blocks.append(block)
                 cur[side] = block
                 if item is not None:
                     cur_item = item
+                    self._carried[token] = item
 
     # -- the asks -----------------------------------------------------------
     def asks(self):
@@ -353,10 +587,14 @@ class ItPaper:
         order = []
         lettered = {(b.section, b.item) for b in self.blocks
                     if b.letter and b.item is not None}
+        nested = {(b.section, b.item, b.letter) for b in self.blocks if b.sub}
         for b in self.blocks:
             if b.letter is None and (b.section, b.item) in lettered:
                 continue          # a head whose lettered parts are the asks
-            key = (b.section, b.item, b.letter)
+            if b.sub is None and (b.section, b.item, b.letter) in nested:
+                continue          # the matching task's own head: its items are the asks
+            key = (b.section, b.item, b.letter) if b.sub is None else \
+                (b.section, b.item, (b.letter, b.sub))
             if key not in best:
                 order.append(key)
             prev = best.get(key)
@@ -546,6 +784,56 @@ class ItPaper:
         """
         if not self.aural_path:
             return []
+        out = self._aural_asks_by_page()
+        if self.year <= OLD_LAYOUT_LAST and \
+                len({sec for sec, _i, _t in out if sec.startswith('B')}) < 3:
+            # The older booklets set TWO dialogues on one page (2010 Higher
+            # page 3 heads "Dialogue 1." and "Dialogue 2." both), and a head
+            # read once per page filed Dialogue 2's four questions under
+            # Dialogue 1, where they collided and were lost.
+            out = self._aural_asks_by_row()
+        return out
+
+    def _aural_asks_by_row(self):
+        """aural_asks for the older booklets: a dialogue head is read per ROW."""
+        section = None
+        out = []
+        cur = {}
+        for pno, groups in _rows(self.aural_path):
+            row = ' '.join(t for _x, _s, t in groups)
+            if section is None and SECTION_A.search(row):
+                section = 'A'
+            m = re.search(r'(?:Comhr[áa]|Dialogue)\s*(\d)\s*\.', row)
+            if m:
+                section = f'B{m.group(1)}'
+                cur = {}
+                continue
+            for _x0, side, text in groups:
+                s = _clean(text)
+                if not s or FURNITURE.match(s) or section is None:
+                    continue
+                if LETTER_MARK.match(s) or PLAIN_LETTER.match(s):
+                    if cur.get(side) is not None:
+                        cur[side][2].append(s)
+                    continue
+                m = NUM_MARK.match(s)
+                if not m:
+                    if cur.get(side) is not None:
+                        cur[side][2].append(s)
+                    continue
+                row_ = [section, int(m.group(1)),
+                        [m.group(3).strip()] if m.group(3).strip() else [], side]
+                out.append(row_)
+                cur[side] = row_
+        best = {}
+        for section, item, lines, side in out:
+            key = (section, item)
+            text = ' '.join(' '.join(lines).split())
+            if key not in best or len(text) > len(best[key]):
+                best[key] = text
+        return [(k[0], k[1], best[k]) for k in sorted(best)]
+
+    def _aural_asks_by_page(self):
         texts = self._page_texts(self.aural_path)
         section = None
         out = []

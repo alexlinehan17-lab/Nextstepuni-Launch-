@@ -1,0 +1,665 @@
+{
+  "reviewedAt": "2026-11-18T20:28:51.972173+00:00",
+  "sitting": "Russian 2021 Higher",
+  "asksCarded": 41,
+  "asksCountedFromPapers": 41,
+  "census": "ru_review_census.reviewed_keys(2021, hl); pinned original 16 written, 8 aural and 28 scheme pages, visual sweep retained from 12–13 November",
+  "splitReview": {
+    "written": 21,
+    "listening": 20,
+    "oneCardPerCensusAsk": true,
+    "spanningMultipleNumberedParts": 0,
+    "duplicateCardsForOneAsk": 0,
+    "printedChoices": [
+      {
+        "id": "ru-2021-hl-se",
+        "options": 5,
+        "reason": "One response under the same 30-mark grid and short-essay topic."
+      },
+      {
+        "id": "ru-2021-hl-gw",
+        "options": 6,
+        "reason": "Three genre headings contain six alternatives; one response under the same 40-mark grid and extended-writing topic."
+      }
+    ],
+    "details": "The continuous grammar passage and noun/verb/word-class tasks retain their printed task boundaries and claimable form rows. Required detail counts remain within their own printed ask; the crew question keeps the scheme’s printed one-by-four allocation without inventing a two-by-two split."
+  },
+  "categoryReview": {
+    "asksChecked": 41,
+    "cardAtlasPrimaryMismatches": 0,
+    "primaryTopicsMoved": 0,
+    "basis": "Own printed question wording, source page bindings and retained independent listening-category review; 17 existing primary topics preserved. Secondary-topic records remain as reviewed. This is a sitting report, not the whole-subject independent category sweep."
+  },
+  "rows": [
+    {
+      "id": "ru-2021-hl-c1-1-i",
+      "question": "Why was that day special for Lisa? Give two details.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English",
+      "reason": "Reading comprehension: this printed part asks for details from the Lisa text."
+    },
+    {
+      "id": "ru-2021-hl-c1-1-ii",
+      "question": "Give two personal details about Lisa.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English",
+      "reason": "Reading comprehension: this printed part asks for details from the Lisa text."
+    },
+    {
+      "id": "ru-2021-hl-c1-2-i",
+      "question": "Give three details about her first concert.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English",
+      "reason": "Reading comprehension: this printed part asks for details from the Lisa text."
+    },
+    {
+      "id": "ru-2021-hl-c1-2-ii",
+      "question": "What does Lisa recall about performing in front of an audience? Give two details.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English",
+      "reason": "Reading comprehension: this printed part asks for details from the Lisa text."
+    },
+    {
+      "id": "ru-2021-hl-c1-3-i",
+      "question": "Give three details of the advantage to Lisa of not having a contract with an agency.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English",
+      "reason": "Reading comprehension: this printed part asks for details from the Lisa text."
+    },
+    {
+      "id": "ru-2021-hl-c1-3-ii",
+      "question": "How does Lisa promote her music? Give two details.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English",
+      "reason": "Reading comprehension: this printed part asks for details from the Lisa text."
+    },
+    {
+      "id": "ru-2021-hl-c1-3-iii",
+      "question": "Give one advantage and one disadvantage of Lisa promoting herself in her YouTube video blogs.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English",
+      "reason": "Reading comprehension: this printed part asks for details from the Lisa text."
+    },
+    {
+      "id": "ru-2021-hl-c1-4-i",
+      "question": "How does Lisa’s life in Moscow differ from her life in Ekaterinburg? Give two details.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English",
+      "reason": "Reading comprehension: this printed part asks for details from the Lisa text."
+    },
+    {
+      "id": "ru-2021-hl-c1-4-ii",
+      "question": "Give two details about how Lisa’s fans respond to her.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        4,
+        5
+      ],
+      "cardPrimary": "russian-3-0",
+      "atlasPrimary": "russian-3-0",
+      "heading": "Comprehension — Reading Text with Questions in English",
+      "reason": "Reading comprehension: this printed part asks for details from the Lisa text."
+    },
+    {
+      "id": "ru-2021-hl-c2-1",
+      "question": "Tolya is uncertain about some aspects of his future and certain about others. Give four details.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        7,
+        8
+      ],
+      "cardPrimary": "russian-3-1",
+      "atlasPrimary": "russian-3-1",
+      "heading": "Summary in English",
+      "reason": "Summary: this printed part asks for four details from its own named person."
+    },
+    {
+      "id": "ru-2021-hl-c2-2",
+      "question": "What plans does Katya have for the future? Give four details.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        8
+      ],
+      "cardPrimary": "russian-3-1",
+      "atlasPrimary": "russian-3-1",
+      "heading": "Summary in English",
+      "reason": "Summary: this printed part asks for four details from its own named person."
+    },
+    {
+      "id": "ru-2021-hl-c2-3",
+      "question": "Igor has clear views on what he does and does not want to do in the future? Give four details.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        8,
+        9
+      ],
+      "cardPrimary": "russian-3-1",
+      "atlasPrimary": "russian-3-1",
+      "heading": "Summary in English",
+      "reason": "Summary: this printed part asks for four details from its own named person."
+    },
+    {
+      "id": "ru-2021-hl-c2-4",
+      "question": "What has informed Sveta’s life choices and what does she feel she needs to do to achieve her goal? Give four details.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        9
+      ],
+      "cardPrimary": "russian-3-1",
+      "atlasPrimary": "russian-3-1",
+      "heading": "Summary in English",
+      "reason": "Summary: this printed part asks for four details from its own named person."
+    },
+    {
+      "id": "ru-2021-hl-la1",
+      "question": "Indicate the case of the following noun phrases:",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "cardPrimary": "russian-3-2",
+      "atlasPrimary": "russian-3-2",
+      "heading": "Language Awareness Tasks",
+      "reason": "Language awareness: the printed task asks for grammatical cases."
+    },
+    {
+      "id": "ru-2021-hl-ca1",
+      "question": "In the text find ten words related to ‘Music’ and list them in Russian.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "cardPrimary": "russian-2-0",
+      "atlasPrimary": "russian-2-0",
+      "heading": "Present-Day Target Culture",
+      "reason": "The printed cultural-awareness task asks for music vocabulary; its preserved primary and meaning/leisure secondary topics remain explicit."
+    },
+    {
+      "id": "ru-2021-hl-la2-i",
+      "question": "Supply the infinitive/dictionary form of the following verbs from the text.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        10
+      ],
+      "cardPrimary": "russian-3-2",
+      "atlasPrimary": "russian-3-2",
+      "heading": "Language Awareness Tasks",
+      "reason": "Language awareness: infinitive forms and parts of speech are distinct printed alternatives."
+    },
+    {
+      "id": "ru-2021-hl-la2-ii",
+      "question": "Match the words, which are all selected from the text, with the names of parts of speech. Insert the appropriate number in the right-hand column of the table entitled WORDS.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        10
+      ],
+      "cardPrimary": "russian-3-2",
+      "atlasPrimary": "russian-3-2",
+      "heading": "Language Awareness Tasks",
+      "reason": "Language awareness: infinitive forms and parts of speech are distinct printed alternatives."
+    },
+    {
+      "id": "ru-2021-hl-sd",
+      "question": "Read the following paragraphs which describe various TV programmes. Match each paragraph with the headings provided. Indicate your answer by inserting the number of the programme genre in the left-hand column.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "cardPrimary": "russian-3-3",
+      "atlasPrimary": "russian-3-3",
+      "heading": "Structuring Discourse",
+      "reason": "Structuring discourse: match programme descriptions to genre headings."
+    },
+    {
+      "id": "ru-2021-hl-gr",
+      "question": "Read through the following text. Put the words in brackets into the correct form. All nouns, adjectives and pronouns are supplied in the nominative form of the appropriate number (singular or plural); verbs are supplied in the infinitive of the appropriate aspect. No marks are awarded for incorrectly spelled words or substitute words.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        12
+      ],
+      "cardPrimary": "russian-3-7",
+      "atlasPrimary": "russian-3-7",
+      "heading": "Grammar & Language Use",
+      "reason": "Grammar: complete the connected passage with the required word forms."
+    },
+    {
+      "id": "ru-2021-hl-gw",
+      "question": "Write a piece of continuous prose in Russian (140 words) in answer to ONE of the following. In your answer make sure to include ALL the points listed. You may use vocabulary and turns of phrases from texts in other sections of the examination paper, but marks will not be awarded for segments of your essay which replicate word for word segments from examination texts. 1. LETTER Write a letter to your pen-pal about a concert or a music festival that you recently attended. In your letter make reference to the following: • Where the concert/festival took place • How you got there • Who went with you • Your impresssions: share your thoughts and feelings about the concert/festival. OR Write the cover letter to accompany your CV in order to apply for a summer job. In your letter make reference to the following: • Why you want this job • What experience you have • What skills/qualities you bring to this position. 2. NARRATIVE (a) Write a review of your favourite book or film. OR (b) Write an account of an amusing episode from your childhood. 3. DISCUSSION (a) Discuss the advantages and disadvantages of living in a big city. OR (b) Discuss the challenges of choosing a career.",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        13
+      ],
+      "schemePages": [
+        16,
+        17,
+        18
+      ],
+      "cardPrimary": "russian-3-9",
+      "atlasPrimary": "russian-3-9",
+      "heading": "Guided / Extended Writing (Letter, Continuous Prose)",
+      "reason": "Guided/extended writing: one six-option printed choice under a shared content/expression/task grid."
+    },
+    {
+      "id": "ru-2021-hl-se",
+      "question": "Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title.\n\nНапишите небольшую статью по–русски размером 50 слов на одну из следующих \nтем. В свою статью включите пять страноведческих фактов. \n \n• \nCathair i gCónaidhm na Rúise / A city in the Russian Federation / Город в РФ  \n \n \n \n• \nCeangail/Caidrimh Rúiseacha-Éireannacha / Russian-Irish links / Российско-ирландские \nсвязи   \n \n• \nDuine cáiliúil sa pholaitíocht i gCónaidhm na Rúise / A famous political figure in the Russian \nFederation / Известный политический деятель РФ \n \n• \nLaethanta saoire/féilte i gCónaidhm na Rúise / Holidays/festivals in the Russian Federation / \nПраздники/фестивали в РФ  \n \n \n \n• \nCóras na Scoileanna i gCónaidhm na Rúise / School system in the Russian Federation / \nШкола в РФ \n \n \n \n \n \n",
+      "paperFileid": "LC099ALP000BV.pdf",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        13,
+        14,
+        15
+      ],
+      "cardPrimary": "russian-3-8",
+      "atlasPrimary": "russian-3-8",
+      "heading": "Short Essay (~50 Words, HL)",
+      "reason": "Short essay: one five-option printed choice, one shared content/expression grid."
+    },
+    {
+      "id": "ru-2021-hl-l1-1",
+      "question": "In this piece Maxim describes his family’s holidays. Give three details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        19
+      ],
+      "cardPrimary": "russian-0-8",
+      "atlasPrimary": "russian-0-8",
+      "heading": "Travel & Transport",
+      "reason": "The family holiday destinations and transport context."
+    },
+    {
+      "id": "ru-2021-hl-l1-2",
+      "question": "Give three details about Andrei’s interests.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        19
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits",
+      "reason": "Andrei’s sports, chess and music interests."
+    },
+    {
+      "id": "ru-2021-hl-l1-3",
+      "question": "Why does Anna want to bring Charlie to the vet? Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        19
+      ],
+      "cardPrimary": "russian-0-9",
+      "atlasPrimary": "russian-0-9",
+      "heading": "Buying Goods & Services",
+      "reason": "Reasons for seeking the veterinary service; no separate health node is invented."
+    },
+    {
+      "id": "ru-2021-hl-l1-4",
+      "question": "Why is it not necessary for this man to book a taxi earlier than 5 o’clock in the morning? Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        19
+      ],
+      "cardPrimary": "russian-0-8",
+      "atlasPrimary": "russian-0-8",
+      "heading": "Travel & Transport",
+      "reason": "Airport taxi timing, weather and traffic."
+    },
+    {
+      "id": "ru-2021-hl-l2-1-i",
+      "question": "Victor talks about his first experiences with Gaelic football. Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        20
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits",
+      "reason": "Victor’s first Gaelic football experiences."
+    },
+    {
+      "id": "ru-2021-hl-l2-1-ii",
+      "question": "Who supported Victor at the start of his football career?",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        20
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits",
+      "reason": "Support at the start of his football career."
+    },
+    {
+      "id": "ru-2021-hl-l2-2-i",
+      "question": "Give two details about Victor’s club.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        20
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits",
+      "reason": "Club membership, training, team and matches."
+    },
+    {
+      "id": "ru-2021-hl-l2-2-ii",
+      "question": "Give one detail about Victor’s football coach.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        20
+      ],
+      "cardPrimary": "russian-0-5",
+      "atlasPrimary": "russian-0-5",
+      "heading": "Leisure Pursuits",
+      "reason": "Football coach details."
+    },
+    {
+      "id": "ru-2021-hl-l2-3",
+      "question": "What does Victor most like about Gaelic football? Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        20
+      ],
+      "cardPrimary": "russian-0-11",
+      "atlasPrimary": "russian-0-11",
+      "heading": "Feelings & Attitudes",
+      "reason": "What Victor most likes about playing Gaelic football."
+    },
+    {
+      "id": "ru-2021-hl-l2-4",
+      "question": "What are Victor’s hopes / dreams for the future? Give two details.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        20
+      ],
+      "cardPrimary": "russian-0-6",
+      "atlasPrimary": "russian-0-6",
+      "heading": "Plans & Future Action",
+      "reason": "Victor’s future hopes and plans."
+    },
+    {
+      "id": "ru-2021-hl-l3-1-i",
+      "question": "According to this travel company what is the best way to see this beautiful country? Give one detail.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        21
+      ],
+      "cardPrimary": "russian-0-8",
+      "atlasPrimary": "russian-0-8",
+      "heading": "Travel & Transport",
+      "reason": "How to travel through the country."
+    },
+    {
+      "id": "ru-2021-hl-l3-1-ii",
+      "question": "Other than the flight give two details about what is included in the price of this ticket.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        21
+      ],
+      "cardPrimary": "russian-0-9",
+      "atlasPrimary": "russian-0-9",
+      "heading": "Buying Goods & Services",
+      "reason": "Services included in the purchased ticket."
+    },
+    {
+      "id": "ru-2021-hl-l3-2",
+      "question": "Give two details about the crew of the steamboat.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        21
+      ],
+      "cardPrimary": "russian-0-8",
+      "atlasPrimary": "russian-0-8",
+      "heading": "Travel & Transport",
+      "reason": "Information about the steamboat crew."
+    },
+    {
+      "id": "ru-2021-hl-l3-3-i",
+      "question": "Give three details about the island of Kizhi.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        21
+      ],
+      "cardPrimary": "russian-0-2",
+      "atlasPrimary": "russian-0-2",
+      "heading": "Your Region & Locality",
+      "reason": "Details about the island of Kizhi."
+    },
+    {
+      "id": "ru-2021-hl-l3-3-ii",
+      "question": "Why would tourists be interested in visiting the Peasant’s house?",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        21
+      ],
+      "cardPrimary": "russian-2-6",
+      "atlasPrimary": "russian-2-6",
+      "heading": "Aspects of Russian History",
+      "reason": "Historic everyday life represented in the Peasant’s house."
+    },
+    {
+      "id": "ru-2021-hl-l3-4",
+      "question": "Where should you visit if you are interested in Western European art?",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        21
+      ],
+      "cardPrimary": "russian-2-5",
+      "atlasPrimary": "russian-2-5",
+      "heading": "Aspects of Russian Culture",
+      "reason": "Art collection at the named Russian museum."
+    },
+    {
+      "id": "ru-2021-hl-l4-1-i",
+      "question": "Give two details about Sasha’s education.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        22
+      ],
+      "cardPrimary": "russian-0-3",
+      "atlasPrimary": "russian-0-3",
+      "heading": "Learning",
+      "reason": "Sasha’s education."
+    },
+    {
+      "id": "ru-2021-hl-l4-1-ii",
+      "question": "What are Sasha’s two key principles for posting on Instagram?",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        22
+      ],
+      "cardPrimary": "russian-0-10",
+      "atlasPrimary": "russian-0-10",
+      "heading": "Facilitating, Encouraging or Impeding Action",
+      "reason": "Her principles for posting on Instagram."
+    },
+    {
+      "id": "ru-2021-hl-l4-2",
+      "question": "Give three details about Sasha’s success.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        22
+      ],
+      "cardPrimary": "russian-0-4",
+      "atlasPrimary": "russian-0-4",
+      "heading": "Work",
+      "reason": "Professional success, earnings and publishing/business activities."
+    },
+    {
+      "id": "ru-2021-hl-l4-3",
+      "question": "Outline three pieces of advice from Sasha about how to become a successful blogger.",
+      "paperFileid": "LC099ALPA00BV.pdf",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        22
+      ],
+      "cardPrimary": "russian-0-10",
+      "atlasPrimary": "russian-0-10",
+      "heading": "Facilitating, Encouraging or Impeding Action",
+      "reason": "Advice on becoming a successful blogger."
+    }
+  ]
+}

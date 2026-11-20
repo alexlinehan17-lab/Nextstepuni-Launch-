@@ -1,0 +1,194 @@
+{
+  "status": "Proposal awaiting Alex; not authored",
+  "freshArchiveCheck": {
+    "checkedAt": "2026-11-18T21:09:16.009793+00:00",
+    "url": "https://www.examinations.ie/archive/markingschemes/2017/LC099GLP000EV.pdf",
+    "method": "Native Chrome opened official URL; automatic security verification completed; PDF download visibly Done",
+    "bytes": 914118,
+    "sha256": "27ccb0243cfcc6e793f3abfff15dab61fe0d7b2a575a624629770bf1d1fa447f",
+    "retainedSha256": "27ccb0243cfcc6e793f3abfff15dab61fe0d7b2a575a624629770bf1d1fa447f",
+    "exactMatch": true,
+    "file": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/2017-ol/SEC-fresh-20261118.pdf"
+  },
+  "conflict": {
+    "generalLine": "Award two marks for each correct/relevant point.",
+    "sectionTotals": [
+      25,
+      25,
+      25,
+      25
+    ],
+    "requestedDetailsPerSection": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "explicitNamedAnswerMark": 3
+  },
+  "proposal": "Use five marks for each complete requested detail; retain all explicitly printed three-mark alternatives; keep one card per printed ask and a visible source-conflict note. Five is inferred from the four section totals and requested detail counts, not printed as a per-detail award. Requires Alex to approve this source-error treatment under R7/R12.",
+  "cards": [
+    {
+      "section": "I",
+      "part": "1",
+      "schemeQuestionCue": "Give one detail about the LONGA studio?",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": ""
+    },
+    {
+      "section": "I",
+      "part": "2",
+      "schemeQuestionCue": "Give one detail about the celebrations of Bloomsday in Moscow.",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": ""
+    },
+    {
+      "section": "I",
+      "part": "3(i)",
+      "schemeQuestionCue": "Give one detail about the chess tournament.",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": "34 (people): 3"
+    },
+    {
+      "section": "I",
+      "part": "3(ii)",
+      "schemeQuestionCue": "Give one detail about the winners of the tournament.",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": ""
+    },
+    {
+      "section": "I",
+      "part": "4",
+      "schemeQuestionCue": "Give one detail about Kirill Afanasyev?",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": "winner: 3; Azerbaijan: 3"
+    },
+    {
+      "section": "II",
+      "part": "1",
+      "schemeQuestionCue": "Name two countries taking part in the project.",
+      "requestedDetails": 2,
+      "proposedMaximum": 10,
+      "literalGeneralMaximum": 4,
+      "explicitThreeMarkAnswers": ""
+    },
+    {
+      "section": "II",
+      "part": "2",
+      "schemeQuestionCue": "Give one detail about either the venue or the age group of the project participants.",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": "kids up to the age of …: 3"
+    },
+    {
+      "section": "II",
+      "part": "3(i)",
+      "schemeQuestionCue": "Give one detail about the activities on offer in the camp.",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": ""
+    },
+    {
+      "section": "II",
+      "part": "3(ii)",
+      "schemeQuestionCue": "What is the purpose of this summer camp? Give one detail.",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": "friendship: 3"
+    },
+    {
+      "section": "III",
+      "part": "1(i)",
+      "schemeQuestionCue": "Give one detail about the activities Sasha did before taking up piano.",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": ""
+    },
+    {
+      "section": "III",
+      "part": "1(ii)",
+      "schemeQuestionCue": "Give one detail about when Sasha took up music.",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": ""
+    },
+    {
+      "section": "III",
+      "part": "2",
+      "schemeQuestionCue": "Give two details about Sasha’s pastimes and/or interests.",
+      "requestedDetails": 2,
+      "proposedMaximum": 10,
+      "literalGeneralMaximum": 4,
+      "explicitThreeMarkAnswers": ""
+    },
+    {
+      "section": "III",
+      "part": "3",
+      "schemeQuestionCue": "Sasha has been to a few countries. Name one country he enjoyed visiting.",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": ""
+    },
+    {
+      "section": "IV",
+      "part": "1(i)",
+      "schemeQuestionCue": "Give one detail about either when or where Pavel was born?",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": ""
+    },
+    {
+      "section": "IV",
+      "part": "1(ii)",
+      "schemeQuestionCue": "At what age did Pavel first show an interest in programming?",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": ""
+    },
+    {
+      "section": "IV",
+      "part": "2",
+      "schemeQuestionCue": "Give one detail about Pavel’s time at university.",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": ""
+    },
+    {
+      "section": "IV",
+      "part": "3",
+      "schemeQuestionCue": "Give one detail about Vkontakte.",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": "Facebook: 3"
+    },
+    {
+      "section": "IV",
+      "part": "4",
+      "schemeQuestionCue": "Give one detail about Pavel Durov’s life since 2014.",
+      "requestedDetails": 1,
+      "proposedMaximum": 5,
+      "literalGeneralMaximum": 2,
+      "explicitThreeMarkAnswers": ""
+    }
+  ]
+}

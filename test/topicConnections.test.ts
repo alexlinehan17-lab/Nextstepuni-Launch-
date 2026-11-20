@@ -43,7 +43,8 @@ describe('topic connections', () => {
     const cards = await loadCards('latin', 'higher');
     const menu = markBankCurriculumMenu('latin', 'higher', '2027-06-02', cards);
     expect(menu.spec?.id).toBe('latin:2027');
-    expect(menu.strands.some(strand => strand.label === 'Original paper topics')).toBe(true);
+    // Latin is in the single model: its menu is the one heading list (no separate original-paper strand).
+    expect(menu.model).toBe(true);
     const reachable = new Set(menu.strands.flatMap(strand => strand.topics.flatMap(topic => cardsForCurriculumNode(topic.id, cards, menu.spec).map(card => card.id))));
     expect(reachable.size).toBe(cards.length);
   });
