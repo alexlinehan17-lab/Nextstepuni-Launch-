@@ -2435,6 +2435,162 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2022 Higher Level — © State Examinations Commission.",
+    id: "cs-2022-hl-i-2", topicId: "czech-0-1", conceptId: "vysvetlete-zaklade-textu-znamenena-eskapismus",
+    section: "I", questionRef: "2022 HL Section I Q2",
+    questionText: "Vysvětlete na základě textu, co znamenená „eskapismus“.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Jedná se o návrat do bezpečí, když žijeme v nejisté době a v nejistém životě a vyhledáváme něco, co nám dává pocit jistoty.", marks: 5, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2022 Higher Level — © State Examinations Commission.",
+    id: "cs-2022-hl-i-3", topicId: "czech-0-1", conceptId: "opetovne-vyhledavani-stejnych-pribehu-ciste-moderni",
+    section: "I", questionRef: "2022 HL Section I Q3",
+    questionText: "Je opětovné vyhledávání stejných příběhů čistě moderní záležitostí? Vysvětlete na základě textu.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Opětovné vyhledávání stejných příběhů není moderní záležitostí. Odpověď na otázku, proč opakujeme stejné věci, hledal už ve starověku například Aristoteles. Prakticky během celé historie naší civilizace se setkáváme s opakováním, s návraty ke stejným knihám nebo s návraty na stejná místa. V současné době digitálního 21. století je přístup k prožitkům extrémně jednoduchý, to je rozdíl oproti minulosti.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    { id: "r-2", kind: "point", verbatim: "Možnost přidat vlastní zkušenost: dětská kniha čtená pořád dokola, seriál v dětství apod.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2022 Higher Level — © State Examinations Commission.",
+    id: "cs-2022-hl-i-4", topicId: "czech-0-1", conceptId: "jak-vlastne-mozne-nas-porad-bavi",
+    section: "I", questionRef: "2022 HL Section I Q4",
+    questionText: "„Jak je vlastně možné, že nás pořád baví příběhy, na kterých nás už nic nepřekvapí?“ Jakou odpověď dává autor v textu? Souhlasíte? Vysvětlete, proč ano nebo ne.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Autor hledá odpověď i v historii, zda se tento fenomén objevuje i dříve než jen v současné době, a zjišťuje, toto hledání provází lidstvo celý čas. Autor na tuto otázku odpovídá následovně: důvody mohou být banální, že se nám to prostě líbí, případně si spojujeme s titulem nějaké emocionální důvody, vzpomínky. Velkou roli hrají osobní preference, potřeba nebýt vyloučený z prostředí, kde se na ten seriál dívají všichni. Velmi významem důvodem je hledání emocionálního bezpečí, pak může mít sledování seriálu až terapeutický účinek.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    { id: "r-2", kind: "point", verbatim: "Souhlas – nesouhlas, vlastní názor, vlastní zkušenost.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2022 Higher Level — © State Examinations Commission.",
+    id: "cs-2022-hl-i-5", topicId: "czech-0-1", conceptId: "pozitek-casto-spociva-tom-vam-serial",
+    section: "I", questionRef: "2022 HL Section I Q5",
+    questionText: "„Požitek často spočívá v tom, že vám seriál kromě zábavy dává i pocit jistoty.“ Vyjádřete a vysvětlete svůj názor na toto tvrzení s ohledem na celý text.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Vyhledávání pocitu bezpečí je jedním z hlavních důvodů, proč se lidé opakovaně dívají na stejné seriály. Z tohoto důvodu se lidé vracejí k titulům, které jsou jednoduché a nekontroverzní. V celém textu se řeší fenomén opakování a jak to na lidi působí.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    { id: "r-2", kind: "point", verbatim: "Prostor pro vlastní názor, vlastní zkušenost., souhlas – nesouhlas.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2022 Higher Level — © State Examinations Commission.",
+    id: "cs-2022-hl-i-6", topicId: "czech-0-1", conceptId: "napiste-vlastni-nazor-tvrzeni-textu-lide",
+    section: "I", questionRef: "2022 HL Section I Q6",
+    questionText: "Napište vlastní názor na tvrzení z textu: „Lidé si také mohou budovat i emocionální vztah k postavám.“ (odstavec 10)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Když se člověk dívá na nějaký seriál nebo čte nějakou knihu, tak někdo může postavy z těchto děl vidět jako reálné, vidí je jako kamarády, jako někoho, koho potkává každý den, s kým sdílí tento svět. Někteří k těmto postavám vzhlížejí a chtějí se jim podobat, nebo žárlí na jejich život. Někteří naopak mohou hrdiny příběhů nenávidět, odsuzovat je za to (často se hercům negativních postav stává, že jsou odsuzováni i v reálném životě za to, co udělali jako filmová postava. Podobně herce, který se proslaví rolí lékaře, lidé potom v reálném životě žádají o diagnózu, protože si nedokážou oddělit herce a jeho postavu.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    { id: "r-2", kind: "point", verbatim: "Vlastní vysvětlení: vlastními slovy, bez opsání frází z textu. Vlastní zkušenost.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2022 Higher Level — © State Examinations Commission.",
+    id: "cs-2022-hl-ii-1", topicId: "czech-1-0", conceptId: "stesti-touha-opakovani-milan-kundera",
+    section: "II", questionRef: "2022 HL Section II Q1",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: „…štěstí je touha po opakování.“ (Milan Kundera)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints “Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.” Under “Poznámka:” it prints “V části 2 jsou odpovědi posuzovány podle následujících kritérií:” and the four criteria, with no marks or percentages beside them; the part is scored on its printed total." },
+    { id: "r-2", kind: "point", verbatim: "2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule", marks: null },
+    { id: "r-4", kind: "point", verbatim: "4. Pravidla: gramatika, pravopis", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2022 Higher Level — © State Examinations Commission.",
+    id: "cs-2022-hl-ii-2", topicId: "czech-1-0", conceptId: "jak-vznika-opravdove-pratelstvi",
+    section: "II", questionRef: "2022 HL Section II Q2",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: Jak vzniká opravdové přátelství.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints “Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.” Under “Poznámka:” it prints “V části 2 jsou odpovědi posuzovány podle následujících kritérií:” and the four criteria, with no marks or percentages beside them; the part is scored on its printed total." },
+    { id: "r-2", kind: "point", verbatim: "2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule", marks: null },
+    { id: "r-4", kind: "point", verbatim: "4. Pravidla: gramatika, pravopis", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC547ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2023 Higher Level — © State Examinations Commission.",
