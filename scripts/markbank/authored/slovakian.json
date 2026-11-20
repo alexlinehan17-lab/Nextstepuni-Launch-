@@ -396,6 +396,277 @@
   }
  },
  {
+  "id": "slk-2010-hl-ii-1",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2010,
+  "section": "II",
+  "topicId": "slovakian-1-0",
+  "conceptId": "napi-komentar-najmenej-100-slov-temu",
+  "questionRef": "2010 HL Section II Q1",
+  "questionText": "Napíšte komentár (najmenej 100 slov) na tému: Takýto druh zločinu mi pripadal dôstojný muža Komentujte, prečo prišiel autor k takémuto záveru.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Komentár obsahujúci najmenej 100 slov, ktorý jasne preukáže porozumenie textu v podstatných bodoch.",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Zručnosti – gramatika, pravopis – 10%",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”. The scheme prints, as examples, not a checklist: “autor obdivuje umelcov, ale nemá dosť talentu, aby sa stal maliarom”; “obdivuje falšovateľov, lebo rozširujú umenie a dobre si tým zarábajú”; “vedú švihácky život”; “falšovanie a krádež umeleckých predmetov nepovažuje za taký vážny zločin ako vraždu, nie je v tom násilie”; “navyše zostáva v umeleckej brandži”; “páči sa mu zločin, v ktorom sa spája láska k umeniu, bohatstvo a dobrodružstvo”; “imponuje mu najmä odvahu a inteligenciu falšovateľa”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ČASŤ II",
+   "title": "Reading text — answer in Slovakian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovakian 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+  }
+ },
+ {
+  "id": "slk-2010-hl-iii-1",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2010,
+  "section": "III",
+  "topicId": "slovakian-1-1",
+  "conceptId": "tema-alebo-nie-pri-livy-ivot",
+  "questionRef": "2010 HL Section III Q1",
+  "questionText": "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Čím je alebo nie je príťažlivý život slávnych ľudí",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "slk-2010-hl-iii-2",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2010,
+  "section": "III",
+  "topicId": "slovakian-1-1",
+  "conceptId": "tema-nikto-nie-ostrovom-samym-pre",
+  "questionRef": "2010 HL Section III Q2",
+  "questionText": "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: „Nikto nie je ostrovom samým pre seba“ (John Donne)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "slk-2011-hl-i-1-a",
   "subjectId": "slovakian",
   "level": "higher",
