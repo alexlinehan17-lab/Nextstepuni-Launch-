@@ -777,6 +777,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2013 Higher Level — © State Examinations Commission.",
+    id: "mgr-2013-hl-2", topicId: "modern-greek-1-0", conceptId: "mgr-δικαιωμάτων-εγγύησης-εθελοντισμός",
+    section: "2", questionRef: "2013 HL Section 2",
+    questionText: "Να σχολιάσετε σε περίπου 100 λέξεις πως καταλαβαίνετε την φράση: «Ο Εθελοντισμός θα μπορούσε να χαρακτηρισθεί ως μια μορφή “κοινωνικής εγγύησης” των θεμελιωδών δικαιωμάτων».",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Η προσφορά των μεμονωμένων ατόμων αλλά και οργανωμένων ομάδων σε περιόδους κρίσης αποτελεί τον τρόπο με τον οποίο η κοινωνία μπορεί να ξεπεράσει τα μεγάλα της προβλήματα, να βοηθήσει τους συνανθρώπους της να έχουν τα στοιχειώδη και θεμελιώδη δικαιώματα και να αποτελέσει ένα κυματοθραύστη των κοινωνικών εξεγέρσεων. Κλπ….", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\" The scheme reprints the task as: “Να σχολιάσετε σε περίπου 100 λέξεις πως καταλαβαίνετε την έκφραση:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ΤΟ ΚΕΙΜΕΝΟ",
+          "title": "The article this question is about — answer in Modern Greek",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Modern Greek 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2013 Higher Level — © State Examinations Commission.",
+    id: "mgr-2013-hl-3-1", topicId: "modern-greek-1-0", conceptId: "mgr-άτομο-αλληλεγγύης-αξία",
+    section: "3", questionRef: "2013 HL Section 3 Q1",
+    questionText: "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων. Η αξία της συνεργασίας και της αλληλεγγύης για το άτομο και τις κοινωνίες.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Από τη συνεργασία και την αλληλεγγύη βγαίνουν ωφελημένοι όλοι. Ο άνθρωπος παύει να σκέφτεται μόνο τον εαυτό του και να είναι προσκολλημένος σε ανάγκες που ουσιαστικά δεν έχει και προσφέρει να βοηθήσει όσους έχουν ανaγκη και τα πλέον βασικά είδη. Η κοινωνία δυναμώνει προοδεύει, ενισχύεται το αίσθημα του πολίτη και όχι του ιδιώτ . Kλπ……", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC019ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2013 Higher Level — © State Examinations Commission.",
+    id: "mgr-2013-hl-3-2", topicId: "modern-greek-1-0", conceptId: "mgr-ακολουθώντας-γλυκόπικρο-ταξίδι",
+    section: "3", questionRef: "2013 HL Section 3 Q2",
+    questionText: "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων. Ακολουθώντας τα όνειρα σου – ένα γλυκόπικρο ταξίδι.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Το ταξίδι της ζωής του καθενός είναι ένα σύνολο από γλυκές και πικρές στιγμές και εμπειρίες, άλλες επιλεγμένες από εμάς , άλλες από την τύχη , τη χρονική συγκυρία , τη μοίρα. Όλα αυτά λοιπόν είναι απαραίτητα και αναπόφευκτα όταν βγούμε στο ταξίδι μιας ζωής γεμάτης όνειρα. Κλπ…..", marks: null, contextNote: "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\"" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2014, level: "higher",
     paperFileid: "LC019ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Modern Greek 2014 Higher Level — © State Examinations Commission.",
