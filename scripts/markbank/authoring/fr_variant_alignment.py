@@ -69,8 +69,11 @@ def build():
     shipped = {card['id'] for cards in decks.values() for card in cards}
     legacy = [card for card in json.loads((ROOT / 'scripts/markbank/authored/french.json').read_text())
               if card['id'] not in shipped]
-    tasks = json.loads((ROOT / 'data/examTopics/french-reviewed-tasks.json').read_text())
-    census = {(p['year'], p['level']): p for p in reconcile.reconcile_subject('french')['papers']}
+    # June's variants only: the deferred sittings' tasks and census papers ('Deferred') are their own.
+    tasks = [t for t in json.loads((ROOT / 'data/examTopics/french-reviewed-tasks.json').read_text())
+             if t.get('sitting', 'main') == 'main']
+    census = {(p['year'], p['level']): p for p in reconcile.reconcile_subject('french')['papers']
+              if p.get('paper') != 'Deferred'}
 
     rows = []
     for v in listed:

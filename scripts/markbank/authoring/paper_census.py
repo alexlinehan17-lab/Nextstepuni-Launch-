@@ -2464,7 +2464,7 @@ def census_sections(subject, year, level, files=None):
     return set(parts), texts, P.files
 
 
-def census_lang(subject, year, level):
+def census_lang(subject, year, level, sitting=None):
     """French: the written booklet and the listening booklet, read together.
 
     THE DENOMINATOR IS THE PAPER, and in this subject the paper needs help
@@ -2495,8 +2495,8 @@ def census_lang(subject, year, level):
     from fr_paper import FrPaper                              # noqa: E402
     from fr_scheme import FrScheme                            # noqa: E402
 
-    P = FrPaper(year, level, subject)
-    S = FrScheme(year, level, subject)
+    P = FrPaper(year, level, subject, sitting=sitting)
+    S = FrScheme(year, level, subject, sitting=sitting)
     # A readable text file is not proof that this parser understood its layout.
     # Older schemes use Roman sections and paired 7+1 allocations. Without
     # this guard they silently census zero reading tasks after PDF extraction.
@@ -3736,6 +3736,80 @@ def pl_flags(P, S):
     return flags
 
 
+# Asks the EU walker folds together, keyed by sitting. The listening booklet
+# nests a lettered level under a number and a roman level under each letter,
+# and the walker, which reads one level under a number, keys both letters'
+# romans onto the number, so two printed asks are counted as one. Each entry
+# names the keys the walker writes and the printed asks they hold, the asks'
+# words read from the booklet's own lines (by the text each line opens with),
+# never typed. Only the sittings named here change: every other census is the
+# walker's, untouched.
+EU_FOLDED_ASKS = {
+    # Portuguese 2024 Higher, Parte C Q3 (listening booklet p5): "3. Alice chose
+    # a weekend package. (a) Answer the questions about the first day.
+    # (i) Where will the lunch be? (ii) What will they do after visiting the
+    # Museum? (b) Answer the questions about the second day. (i) What will they
+    # do in Vila Real? (ii) What will they do in the afternoon?" Four asks, the
+    # scheme prices each (p13: 1, 3, 2 and 2 marks); the walker read two.
+    ('portuguese', 2024, 'hl'): {
+        'folded': [('LC', 3, None, 'i'), ('LC', 3, None, 'ii')],
+        'asks': {
+            ('LC', 3, 'a', 'i'): ('3. Alice chose', '(i) Where will the lunch'),
+            ('LC', 3, 'a', 'ii'): ('3. Alice chose', '(ii) What will they do after'),
+            # The stem line also prints (a)'s heading: (b) takes it up to "(a)".
+            ('LC', 3, 'b', 'i'): (('3. Alice chose', ' (a)'), '(b) Answer the questions',
+                                  '(i) What will they do in Vila'),
+            ('LC', 3, 'b', 'ii'): (('3. Alice chose', ' (a)'), '(b) Answer the questions',
+                                   '(ii) What will they do in the afternoon'),
+        },
+    },
+    # The other way round, CARD-STANDARD 10c ("Tick the correct options":
+    # one card per printed question; the census counts the printed question
+    # once). Portuguese 2023 Ordinary (written booklet pp4-5) prints Q1(c)
+    # "Assinale com um (✓) as opções corretas" over six options (i)-(vi), and
+    # Q1(e) "Tick (✓) the True (T) and False (F) answers below" over four
+    # statements (i)-(iv); the walker keyed every option and statement as an
+    # ask of its own. One ask each.
+    ('portuguese', 2023, 'ol'): {
+        'booklet': 'written',
+        'folded': [('A', 1, 'c', r) for r in ('i', 'ii', 'iii', 'iv', 'v', 'vi')]
+                  + [('A', 1, 'e', r) for r in ('i', 'ii', 'iii', 'iv')],
+        'asks': {
+            ('A', 1, 'c', None): ('(c) Quais os planos', 'Assinale com um', '(i) Telefonar', '(ii) Falar',
+                                  '(iii) Iniciar', '(iv) Escrever', '(v) Abrir', '(vi) Jogar'),
+            ('A', 1, 'e', None): ('(e) Tick', '(i) Pedro Barros', '(ii) The post', '(iii) Pedro and',
+                                  '(iv) Antônio keeps'),
+        },
+    },
+}
+_EU_MARKERS = re.compile(r'^(?:\d{1,2}\.\s*|\((?:[a-h]|i{1,3}|iv|vi{0,3})\)\s*)+')
+
+
+def _eu_unfold(subject, year, level, P, texts):
+    fix = EU_FOLDED_ASKS.get((subject, year, level))
+    if not fix:
+        return texts
+    from eu_paper import read_lines                             # noqa: E402
+    missing = [k for k in fix['folded'] if k not in texts]
+    if missing:
+        raise ValueError(f'{subject} {year} {level}: the walker no longer writes {missing}; '
+                         f'review EU_FOLDED_ASKS')
+    path = P.path if fix.get('booklet') == 'written' else P.aural_path
+    lines = [l.text for l in read_lines(path, P.furniture)]
+    out = {k: v for k, v in texts.items() if k not in fix['folded']}
+    for key, openings in fix['asks'].items():
+        parts = []
+        for opening in openings:
+            opening, before = opening if isinstance(opening, tuple) else (opening, None)
+            hits = [t for t in lines if t.startswith(opening)]
+            if len(hits) != 1:
+                raise ValueError(f'{subject} {year} {level}: {len(hits)} booklet lines open {opening!r}')
+            text = hits[0] if before is None else hits[0].split(before, 1)[0]
+            parts.append(_EU_MARKERS.sub('', text).strip())
+        out[key] = ' '.join(parts)
+    return out
+
+
 def census_eu(subject, year, level):
     """Portuguese, Romanian and Dutch: the written booklet and, where the SEC
     sets one, the Listening Comprehension booklet.
@@ -3761,7 +3835,8 @@ def census_eu(subject, year, level):
         # count this bank measures itself against. The paper is censused; the
         # asks are refused, one by one, in eu_all.
         S = None
-    texts = {ask.key: ask.full_text for ask in P.all_asks()}
+    texts = _eu_unfold(subject, year, level, P,
+                       {ask.key: ask.full_text for ask in P.all_asks()})
     files = [P.path] + ([P.aural_path] if P.aural_path else [])
     return set(texts), texts, files, P, S
 
@@ -4789,6 +4864,8 @@ def _census_subject(subject):
         papers.extend(census_spanish_deferred())
     if subject == 'german':
         papers.extend(census_german_deferred())
+    if subject == 'french':
+        papers.extend(census_french_deferred())
     if subject == 'maths':
         papers.extend(census_maths_reviewed_booklets())
     if subject == 'physics':
@@ -5076,6 +5153,40 @@ def census_german_deferred():
         paper['paper'] = 'Deferred'
         paper['marksSum'], paper['marksQuestions'] = None, 0
         papers.append(paper)
+    return papers
+
+
+# The SEC's deferred French sittings in the archive: 2022 and 2023, Higher and Ordinary, each a written
+# booklet and a listening booklet in the bilingual edition (deferredexams/<year>/LC010<A|G>LP000BV.pdf and
+# LC010<A|G>LPA00BV.pdf; scheme LC010<A|G>LP000EV in deferredmarkingschemes/). None for 2024 or 2025.
+# (2022 and 2023, both levels.) A sitting is read once its reviewed reading ledger record exists
+# (french-reading-review-deferred.json), as Business adds its own sittings one by one.
+FR_DEFERRED_SITTINGS = tuple((r['year'], r['level']) for r in json.load(open(os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), 'french-reading-review-deferred.json'), encoding='utf-8'))['papers'])
+
+
+def census_french_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Each deferred French sitting (FR_DEFERRED_SITTINGS) is a paper of its own,
+    keyed 'Deferred' as Spanish's is (census_spanish_deferred): its written and
+    listening booklets read by census_lang exactly as June's are, with
+    fr_paper.FrPaper(..., sitting='deferred') and its own scheme
+    (schemes/<year>-<level>-deferred.md), so a deferred ask never lands on a
+    June leaf with the same address. The checksum is not run on it.
+    """
+    papers = []
+    for year, level in FR_DEFERRED_SITTINGS:
+        parts, texts, _files, P, S, claimed = census_lang('french', year, level, sitting='deferred')
+        leaves = list(leaves_of(parts))
+        flags = lang_flags(P, S, claimed)
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'french'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
     return papers
 
 

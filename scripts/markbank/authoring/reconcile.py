@@ -120,6 +120,10 @@ LETTERS = 'abcdefghijkl'
 CYRILLIC_LETTERS = 'абвгдежзийклмн'
 
 
+
+# French's deferred sittings' reviewed cards, one file per kind, read beside June's (fr_reading.py --deferred, ...).
+FRENCH_DEFERRED_FILES = ('deferred-writing.json', 'deferred-reading.json', 'deferred-cloze.json', 'deferred-listening.json')
+
 def shipped_cards(subject):
     """[(id, questionRef)] straight out of the deck files that actually ship.
 
@@ -190,6 +194,12 @@ def shipped_cards(subject):
             for name in ('writing.json', 'reading.json', 'cloze.json', 'listening.json'):
                 data = json.load(open(os.path.join(DECKS, subject, name), encoding='utf-8'))
                 out.extend((card['id'], card['questionRef']) for card in data if card['level'] == level)
+            # The deferred sittings' reviewed cards, in their own files (fr_reading.py --deferred, ...).
+            for name in FRENCH_DEFERRED_FILES:
+                path = os.path.join(DECKS, subject, name)
+                if os.path.exists(path):
+                    data = json.load(open(path, encoding='utf-8'))
+                    out.extend((card['id'], card['questionRef']) for card in data if card['level'] == level)
     if subject in ('applied-maths', 'russian', 'japanese'):
         # Mirror withReviewedCards: preserve literal identities, apply audited
         # corrections, then append newly reviewed tasks. CI imports the actual
@@ -757,7 +767,7 @@ def reconcile_subject(subject, census=None):
             if hist_deferred:
                 ref['paper'] = 'Deferred'
         if subject in ('economics', 'engineering', 'dcg', 'spanish', 'german', 'biology', 'physics', 'home-economics',
-                       'business'):
+                       'business', 'french'):
             # A deferred sitting is its own census paper, 'Deferred', and its
             # card says so twice: the id ("econ-2022-hl-deferred-...",
             # "eng-2022-hl-deferred-...", "dcg-2022-hl-deferred-...", "bio-2022-hl-deferred-...") and the
@@ -772,7 +782,8 @@ def reconcile_subject(subject, census=None):
                                       'biology': r'^bio-\d{4}-(?:hl|ol)-deferred-',
                                       'physics': r'^phys-\d{4}-(?:hl|ol)-deferred-',
                                       'home-economics': r'^he-\d{4}-(?:hl|ol)-deferred-',
-                                      'business': r'^bus-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
+                                      'business': r'^bus-\d{4}-(?:hl|ol)-deferred-',
+                                      'french': r'^fr-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
             if deferred != (' — Deferred sitting' in refstr):
                 unparsed.append({'id': cid, 'ref': refstr})
                 continue
@@ -964,6 +975,9 @@ def content_hash(subject):
         # answers.ts cuts the lifted answer lines into rows at load.
         for name in ('writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json', 'answers.ts'):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
+        for name in FRENCH_DEFERRED_FILES:
+            if os.path.exists(os.path.join(DECKS, subject, name)):
+                h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     return h.hexdigest()[:16]
 
 

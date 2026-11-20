@@ -60,6 +60,12 @@ TILED = {('2011-ol-000-paper.pdf', 2), ('2011-ol-000-paper.pdf', 4), ('2011-ol-0
          ('2011-ol-000-paper.pdf', 8), ('2011-hl-000-paper.pdf', 10), ('2011-hl-000-paper.pdf', 12)}
 
 
+# Spacing the SEC set inside a printed bracket, which the span matcher cannot
+# close over: 2022 Ordinary deferred scheme p.7 prints "seize/16 (ans )". The
+# words and brackets stay as printed; only the space before ")" goes.
+SPACING_REPAIRS = {('2022-ol-deferred.pdf', 7): (('(ans )', '(ans)'),)}
+
+
 @lru_cache(maxsize=None)
 def page_texts(path, page, aliases=()):
     """The page's text in each reading order the layer offers, cleaned.
@@ -79,7 +85,10 @@ def page_texts(path, page, aliases=()):
     for text in raw:
         for glyph in aliases:
             text = re.sub(rf'(?m)^(\s*){re.escape(glyph)}(?=\s)', r'\1•', text)
-        out.append(clean(text))
+        text = clean(text)
+        for printed, repaired in SPACING_REPAIRS.get((Path(path).name, page), ()):
+            text = text.replace(printed, repaired)
+        out.append(text)
     return tuple(out)
 
 

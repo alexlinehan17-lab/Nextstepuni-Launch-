@@ -49,7 +49,8 @@ const PINNED_MATHS_TOPIC_DIFFERENCES = new Set<string>(mathsTopicDifferences.key
 // a StudyClix heading whose question the model files elsewhere is a filing difference, listed per subject in
 // test/fixtures/studyclixModelTopicDifferences.json. Shrink-only like the Maths list: a new difference fails, and a
 // listed one that resolves must come off. STUDYCLIX_MODEL_DIFFERENCES_WRITE=1 rewrites the file; it refuses to grow
-// a subject already listed and adds a newly switched-on subject.
+// a subject already listed and adds a newly switched-on subject. A subject deliberately re-filed under a ruling is
+// named in STUDYCLIX_MODEL_REFILED=<subject,...> and its list is rewritten (say so in the commit).
 const MODEL_FIXTURE = path.join(__dirname, 'fixtures', 'studyclixModelTopicDifferences.json');
 const modelPinned: Record<string, string[]> = fs.existsSync(MODEL_FIXTURE)
   ? (JSON.parse(fs.readFileSync(MODEL_FIXTURE, 'utf8')) as { subjects: Record<string, string[]> }).subjects : {};
@@ -222,7 +223,9 @@ describe('StudyClix official-question parity', () => {
 
     const differing = Object.fromEntries(Object.entries(modelDiffering).map(([s, keys]) => [s, [...new Set(keys)].sort()]));
     if (process.env.STUDYCLIX_MODEL_DIFFERENCES_WRITE) {
-      const grows = Object.entries(differing).flatMap(([s, keys]) => (s in modelPinned ? keys.filter(k => !modelPinned[s].includes(k)) : []));
+      // A subject re-filed under a ruling is named in STUDYCLIX_MODEL_REFILED (comma-separated) and its list rewritten.
+      const refiled = new Set((process.env.STUDYCLIX_MODEL_REFILED ?? '').split(',').filter(Boolean));
+      const grows = Object.entries(differing).flatMap(([s, keys]) => (s in modelPinned && !refiled.has(s) ? keys.filter(k => !modelPinned[s].includes(k)) : []));
       if (grows.length) throw new Error(`refusing to grow the model differences list: ${grows.slice(0, 5).join('; ')}`);
       fs.writeFileSync(MODEL_FIXTURE, `${JSON.stringify({
         note: 'Shrink-only (test/studyclixQuestionParity.test.ts). StudyClix headings, in a subject switched on in the single model, whose question the model files under other headings of the one list (each part by what it asks).',

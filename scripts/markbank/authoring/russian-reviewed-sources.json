@@ -7693,7 +7693,16 @@
       12,
       13
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        12,
+        13
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2022-hl.json"
+    }
   },
   {
     "id": "ru-2022-hl-gw",
@@ -7711,7 +7720,17 @@
       15,
       16
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        14,
+        15,
+        16
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2022-hl.json"
+    }
   },
   {
     "id": "ru-2022-hl-l1-1-i",
@@ -8576,7 +8595,15 @@
     "schemePages": [
       5
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        5
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2022-ol.json"
+    }
   },
   {
     "id": "ru-2022-ol-la2",
@@ -8643,7 +8670,15 @@
     "schemePages": [
       12
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        12
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2022-ol.json"
+    }
   },
   {
     "id": "ru-2022-ol-ew",
@@ -8660,7 +8695,16 @@
       13,
       14
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        13,
+        14
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2022-ol.json"
+    }
   },
   {
     "id": "ru-2022-ol-l1-1",
@@ -9535,7 +9579,15 @@
     "schemePages": [
       5
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        5
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2021-ol.json"
+    }
   },
   {
     "id": "ru-2021-ol-la2",
@@ -9602,7 +9654,15 @@
     "schemePages": [
       12
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        12
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2021-ol.json"
+    }
   },
   {
     "id": "ru-2021-ol-ew",
@@ -9619,7 +9679,16 @@
       13,
       14
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        13,
+        14
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2021-ol.json"
+    }
   },
   {
     "id": "ru-2021-ol-l1-1",
@@ -10427,7 +10496,15 @@
     "schemePages": [
       5
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        5
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2019-ol.json"
+    }
   },
   {
     "id": "ru-2019-ol-la2",
@@ -10492,7 +10569,15 @@
     "schemePages": [
       9
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        9
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2019-ol.json"
+    }
   },
   {
     "id": "ru-2019-ol-ew",
@@ -10509,7 +10594,16 @@
       9,
       10
     ],
-    "component": "000"
+    "component": "000",
+    "reviewedAt": "2026-11-19",
+    "noPrintedAnswer": {
+      "fixedLine": "The scheme prints no answer for this part.",
+      "schemePages": [
+        9,
+        10
+      ],
+      "evidence": "scripts/markbank/authoring/reviews/russian-r4-second-pass-sec-20261119/2019-ol.json"
+    }
   },
   {
     "id": "ru-2019-ol-l1-1",

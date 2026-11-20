@@ -1,10 +1,13 @@
 import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
-import { afterEach, expect, it, vi } from 'vitest';
+import { afterEach, beforeAll, expect, it, vi } from 'vitest';
+import { loadAtlasModel } from '../components/PaperTrail/atlasModel';
 import MarkBankLibrary from '../components/MarkBank/MarkBankLibrary';
 import { REVIEWED_CARDS } from '../components/MarkBank/cards/russian/reviewed';
 import type { SecCard } from '../types/markBank';
 
 afterEach(cleanup);
+// Russian is in the single model: the library lists a card under its filed heading, which MarkBank.tsx loads first.
+beforeAll(() => loadAtlasModel('russian'));
 
 function library(card: SecCard) {
   const onStart = vi.fn();
