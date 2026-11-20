@@ -2666,6 +2666,83 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2019 Higher Level — © State Examinations Commission.",
+    id: "est-2019-hl-i-5", topicId: "estonian-0-1", conceptId: "artiklile-tuginedes-selgita-mis-sinu-arvates",
+    section: "I", questionRef: "2019 HL Section I Q5",
+    questionText: "Artiklile tuginedes selgita, mis sinu arvates motiveerib inimesi nullkulu eluviisiga liituma ja seda eluviisi järgima.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Protestiks ühiskonnas valitseva tarbimiskultuse ja traditsioonilise tarbimismustri vastu.", marks: null, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme closes the list with: “Jne.”." },
+    { id: "r-2", kind: "point", verbatim: "Kulutuste vähendamise ja säästlikuma eluviisi nimel.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Keskkonnasõbralikumate ja pikema elueaga toodete eelistamine.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Sallimatus prügistumise vastu, tervislikuma ja lihtsama eluviisi ning puhtama õhu nimel.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2019 Higher Level — © State Examinations Commission.",
+    id: "est-2019-hl-ii-1", topicId: "estonian-1-0", conceptId: "ehkki-kestlikumate-valikute-tegemise-vajadus-kahtlemata",
+    section: "II", questionRef: "2019 HL Section II Q1",
+    questionText: "„Ehkki kestlikumate valikute tegemise vajadus on kahtlemata ka laiemalt teadvustumas, kujutab zero waste sammu sellest edasi – äratundmist, et olulisem on tarbida vähem, mitte ainult paremini.“ Selgita, mille poolest on nullkuluelu samm kaugemale kui lihtsalt mõistmine, et vaja on teha kestlikumaid valikuid. Esita oma seisukoht umbes 100–150 sõnaga.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 100–150sõnaline ladus kommentaar, et tõestada teksti sisust arusaamist.", marks: 30, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Üksikisiku panus – mahetooted, kohalikku päritolu toit, toidu raiskamine, pakendivaba poodlemine, toodete kvaliteet ja koostis, väljamõeldud vajadused ja valikute rohkus, korduskasutus, prügi sorteerimine, jäätmete uus elu”; “Ühiskonna panus – seadusandlus, haridussüsteem, kodanikuvastutus, uus tehnoloogia, tootedisain, reklaam”; “Ökoloogiline jalajälg – transport, energia, keskkond, meelelahutus”. The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II ÜLESANNE",
+          "title": "Reading text — answer in Estonian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Estonian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2019 Higher Level — © State Examinations Commission.",
+    id: "est-2019-hl-iii-1", topicId: "estonian-1-1", conceptId: "saastatud-keskkond-saastatud-motlemise-tulemus",
+    section: "III", questionRef: "2019 HL Section III Q1",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Saastatud keskkond on saastatud mõtlemise tulemus.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC552ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2019 Higher Level — © State Examinations Commission.",
+    id: "est-2019-hl-iii-2", topicId: "estonian-1-1", conceptId: "vaheaasta-parast-keskkooli-loppu-kas-kasulik",
+    section: "III", questionRef: "2019 HL Section III Q2",
+    questionText: "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Vaheaasta pärast keskkooli lõppu – kas kasulik või raisatud aeg? Esita oma seisukoht umbes 300sõnalises kirjandis. Kaalu mõlema poole argumente.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.", marks: 40, contextNote: "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Kõikidele küsimustele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC552ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Estonian 2021 Higher Level — © State Examinations Commission.",

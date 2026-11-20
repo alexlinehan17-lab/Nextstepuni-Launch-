@@ -1,25 +1,5 @@
 [
  {
-  "ref": "2019 HL Section I Q5",
-  "reason": "the scheme markdown the provenance gate reads does not hold this answer as one run of words",
-  "evidence": "2019 HL scheme, \"\": \"viltu vaatama – põlastama, halvaks panema Vasta teksti põhjal küsimusele, sõnastades loetu ümber oma sõnadega.\" is not found in examiner-reports/estonian/schemes/2019-hl.md, which is the file the deck build checks every marking point against"
- },
- {
-  "ref": "2019 HL Section II Q1",
-  "reason": "the scheme prices no line of this written-production task",
-  "evidence": "2019 HL scheme, Part II: the scheme prints NOTHING under this task beyond the SEC's own wording and, where the paper offers two titles, the titles. There is no answer, no indicative content and no tariff beside any line of it."
- },
- {
-  "ref": "2019 HL Section III Q1",
-  "reason": "the scheme prices no line of this written-production task",
-  "evidence": "2019 HL scheme, Part III: the scheme prints NOTHING under this task beyond the SEC's own wording and, where the paper offers two titles, the titles. There is no answer, no indicative content and no tariff beside any line of it."
- },
- {
-  "ref": "2019 HL Section III Q2",
-  "reason": "the scheme prices no line of this written-production task",
-  "evidence": "2019 HL scheme, Part III: the scheme prints NOTHING under this task beyond the SEC's own wording and, where the paper offers two titles, the titles. There is no answer, no indicative content and no tariff beside any line of it."
- },
- {
   "ref": "2021 HL Section I Q5",
   "reason": "the scheme markdown the provenance gate reads does not hold this answer as one run of words",
   "evidence": "2021 HL scheme, \"\": \"ligimene – kaasinimene, teine inimene, lähedane inimene Vasta teksti põhjal küsimusele, sõnastades loetu ümber\" is not found in examiner-reports/estonian/schemes/2021-hl.md, which is the file the deck build checks every marking point against"
