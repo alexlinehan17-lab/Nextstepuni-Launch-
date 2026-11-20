@@ -247,7 +247,7 @@
     "kind": "point",
     "verbatim": "ca o consecinţă directă a « maşinii de spălat creierul », a difuzării continue de ştiri senzaţionale obişnuinţa cu ce este rău, extrem şi impresionant duce la o slăbire a sensibilităţii pană când nimic nu ne mai impresionează, nu mai suntem capabili să distingem între bine şi rău, banal şi ieşit din comun",
     "marks": 5,
-    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
+    "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\" The scheme heads its answer with the quotation in its own words (the paper prints \"anormal\"): “«tot ce era normal devenea automat o ştire obişnuită de la ora 5 »”."
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
@@ -715,7 +715,18 @@
     "contextNote": "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\" The scheme prints: “In partea II si III vor fi luate in considerare la acordarea notelor urmatoarele criterii:”."
    }
   ],
-  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PARTEA III",
+   "title": "Reading text — answer in Romanian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Romanian 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
+  }
  },
  {
   "id": "ron-2010-hl-iii-2",
@@ -1678,7 +1689,7 @@
   "level": "higher",
   "year": 2012,
   "section": "I",
-  "topicId": "romanian-0-1",
+  "topicId": "romanian-0-0",
   "conceptId": "explica-scurt-cuvintele-expresiile-urm-toare",
   "questionRef": "2012 HL Section I Q1",
   "questionText": "Explicaţi pe scurt cuvintele şi expresiile următoare folosind sinonime sau perifraze şi ţinând cont de context.\na) democratizarea totală a publicatului (p.2)\nb) lectura este pozitiv conotată (p.2)\nc) citesc cu nesaţ (p.4)\nd) predispuşi să-l facă praf (p.7)\ne) o fervoare a demascării (p.8)",
@@ -2389,7 +2400,7 @@
   "level": "higher",
   "year": 2014,
   "section": "I",
-  "topicId": "romanian-0-1",
+  "topicId": "romanian-0-0",
   "conceptId": "explica-urm-toarele-cuvinte-expresii-scrise",
   "questionRef": "2014 HL Section I Q1",
   "questionText": "Explicați următoarele cuvinte și expresii scrise îngroșat în text, folosind sinonime sau perifraze și ținând cont de contextul în care apar:\na) locuri incredibile, aproape nepământene\nb) patrimoniu cultural\nc) a imita\nd) păreri proaspete\ne) indiferența",
@@ -3118,7 +3129,7 @@
   "level": "higher",
   "year": 2016,
   "section": "I",
-  "topicId": "romanian-0-1",
+  "topicId": "romanian-0-0",
   "conceptId": "explica-scurt-urm-toarele-cuvinte-expresii",
   "questionRef": "2016 HL Section I Q1",
   "questionText": "Explicați pe scurt următoarele cuvinte și expresii scrise îngroșat în text, folosind sinonime sau perifraze și ținând cont de contextul în care apar:\na) oamenii de valoare\nb) pseudo-vedete\nc) trăncăneală\nd) decăderea moravurilor\ne) criza de încredere",

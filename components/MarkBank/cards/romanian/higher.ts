@@ -187,7 +187,7 @@ export const CARDS: SecCard[] = [
     questionText: "Enunţaţi câteva motive din text pentru care autorul consideră că “tot ce era anormal devenea automat o ştire obisnuită”(p.4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ca o consecinţă directă a « maşinii de spălat creierul », a difuzării continue de ştiri senzaţionale obişnuinţa cu ce este rău, extrem şi impresionant duce la o slăbire a sensibilităţii pană când nimic nu ne mai impresionează, nu mai suntem capabili să distingem între bine şi rău, banal şi ieşit din comun", marks: 5, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\"" },
+    { id: "r-1", kind: "point", verbatim: "ca o consecinţă directă a « maşinii de spălat creierul », a difuzării continue de ştiri senzaţionale obişnuinţa cu ce este rău, extrem şi impresionant duce la o slăbire a sensibilităţii pană când nimic nu ne mai impresionează, nu mai suntem capabili să distingem între bine şi rău, banal şi ieşit din comun", marks: 5, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\" The scheme heads its answer with the quotation in its own words (the paper prints \"anormal\"): “«tot ce era normal devenea automat o ştire obişnuită de la ora 5 »”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -320,6 +320,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "criterion", verbatim: "Compunere de aproximativ 300 de cuvinte la alegere între 2 subiecte, scrisă cursiv, urmărind o organizare coerentă a ideilor şi conducând la o concluzie clară.", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\" The scheme prints: “In partea II si III vor fi luate in considerare la acordarea notelor urmatoarele criterii:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înţelege întrebarea şi modul in care i se cere să răspundă – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Coerenta răspunsului – candidatul foloseşte un material adecvat într-o manieră structurată şi la subiect– 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Eficienţa limbajului – candidatul demonstrează că stăpâneşte limba destul de bine pentru a-şi comunica cu claritate şi cursivitate ideile – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Respectarea regulilor – gramatică, punctuaţie – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PARTEA III",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate răspunsurile vor fi scrise in limba româna\""
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -635,7 +646,7 @@ export const CARDS: SecCard[] = [
     year: 2012, level: "higher",
     paperFileid: "LC553ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2012 Higher Level — © State Examinations Commission.",
-    id: "ron-2012-hl-i-1", topicId: "romanian-0-1", conceptId: "explica-scurt-cuvintele-expresiile-urm-toare",
+    id: "ron-2012-hl-i-1", topicId: "romanian-0-0", conceptId: "explica-scurt-cuvintele-expresiile-urm-toare",
     section: "I", questionRef: "2012 HL Section I Q1",
     questionText: "Explicaţi pe scurt cuvintele şi expresiile următoare folosind sinonime sau perifraze şi ţinând cont de context.\na) democratizarea totală a publicatului (p.2)\nb) lectura este pozitiv conotată (p.2)\nc) citesc cu nesaţ (p.4)\nd) predispuşi să-l facă praf (p.7)\ne) o fervoare a demascării (p.8)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
@@ -842,7 +853,7 @@ export const CARDS: SecCard[] = [
     year: 2014, level: "higher",
     paperFileid: "LC553ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2014 Higher Level — © State Examinations Commission.",
-    id: "ron-2014-hl-i-1", topicId: "romanian-0-1", conceptId: "explica-urm-toarele-cuvinte-expresii-scrise",
+    id: "ron-2014-hl-i-1", topicId: "romanian-0-0", conceptId: "explica-urm-toarele-cuvinte-expresii-scrise",
     section: "I", questionRef: "2014 HL Section I Q1",
     questionText: "Explicați următoarele cuvinte și expresii scrise îngroșat în text, folosind sinonime sau perifraze și ținând cont de contextul în care apar:\na) locuri incredibile, aproape nepământene\nb) patrimoniu cultural\nc) a imita\nd) păreri proaspete\ne) indiferența",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
@@ -1052,7 +1063,7 @@ export const CARDS: SecCard[] = [
     year: 2016, level: "higher",
     paperFileid: "LC553ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2016 Higher Level — © State Examinations Commission.",
-    id: "ron-2016-hl-i-1", topicId: "romanian-0-1", conceptId: "explica-scurt-urm-toarele-cuvinte-expresii",
+    id: "ron-2016-hl-i-1", topicId: "romanian-0-0", conceptId: "explica-scurt-urm-toarele-cuvinte-expresii",
     section: "I", questionRef: "2016 HL Section I Q1",
     questionText: "Explicați pe scurt următoarele cuvinte și expresii scrise îngroșat în text, folosind sinonime sau perifraze și ținând cont de contextul în care apar:\na) oamenii de valoare\nb) pseudo-vedete\nc) trăncăneală\nd) decăderea moravurilor\ne) criza de încredere",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,

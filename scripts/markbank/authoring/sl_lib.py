@@ -31,6 +31,7 @@ Shapes (CARD-STANDARD sections 2, 3, 10a, 10b, 10i; coordinator rulings of
 * nothing printed               -> the printed total and UNPRINTED_ANSWER (R4);
 * no scheme published           -> NO_SCHEME_PUBLISHED, unscored (R4).
 """
+import json
 import os
 import re
 import sys
@@ -369,7 +370,8 @@ class ListQuestion:
         stem = PL(self.page, self.stem).text(doc) if not isinstance(self.stem, Run) else \
             paper_run(doc, self.stem.page or self.page, self.stem.first, self.stem.last)
         stem = clean_question(MARKER.sub('', stem, count=1))
-        items = [clean_question((PL(*i) if isinstance(i, tuple) else PL(self.page, i)).text(doc))
+        items = [clean_question(paper_run(doc, i.page or self.page, i.first, i.last) if isinstance(i, Run)
+                                else (PL(*i) if isinstance(i, tuple) else PL(self.page, i)).text(doc))
                  for i in self.items]
         return '\n'.join([stem] + items)
 
@@ -394,6 +396,22 @@ def prerun(page, first, last):
     """The census question with a printed instruction of several lines put
     before it (a run of the paper's lines, `first` to `last`)."""
     return lambda doc, q: clean_question(f'{paper_run(doc, page, first, last)} {q}')
+
+
+class RawLine(Sel):
+    """Scheme line n as printed, its opening dash or bullet KEPT: a wrapped
+    sentence whose next printed line opens with a dash ("un tot" / "– corp,
+    minte, suflet.", Romanian 2015), which the bullet strip would drop."""
+    def text(self, doc):
+        t = doc[self.src][self.n - 1].replace('\xa0', ' ')
+        t = re.sub(r'\s+', ' ', t).strip()
+        if not t:
+            raise ValueError(f'{self.src} line {self.n} is empty')
+        return t
+
+
+def SR(n):
+    return RawLine('scheme', n)
 
 
 def L(a, b=None, after=None, before=None):
@@ -457,8 +475,14 @@ RULE_LINES = 3      # the rule's sentence ends within this many printed lines
 #   cropping them at 400 dpi and looking (p4): glyph 1931, read U+020A, is drawn
 #   as I with a circumflex ("În zilele noastre"); glyph 1440, read U+1E6D, as t
 #   with a comma below ("fericiți").
-TEXT_FIXES = {('romanian', 2013): {'\u04bb': '\u1eb7'},
-              ('romanian', 2011): {'\u020a': '\u00ce', '\u1e6d': '\u021b'}}
+TEXT_FIXES = {('romanian', 2011): {'\u020a': '\u00ce', '\u1e6d': '\u021b'}}
+# - Paper maps derived from glyph ids by ro_glyphs.py (Romanian 2013: Times New
+#   Roman with no ToUnicode map; each entry voted by the same glyph's clean
+#   sightings across the corpus, or settled on a render): loaded as written.
+for _path in sorted(__import__('glob').glob(os.path.join(HERE, 'glyphmap-*-*-paper.json'))):
+    _subject, _year = os.path.basename(_path)[len('glyphmap-'):-len('-paper.json')].rsplit('-', 1)
+    with open(_path, encoding='utf-8') as _fh:
+        TEXT_FIXES.setdefault((_subject, int(_year)), {}).update(json.load(_fh))
 RULE_FIXES = TEXT_FIXES
 
 
@@ -619,7 +643,10 @@ def cards(subject, year, specs, level='hl', scheme=True):
             'section': key[0],
             # In a two-part sitting (2021, 2022) Part II IS the essay: filed
             # and shown as Part III's is.
-            'topicId': topic_for(subject, 'classic', essay_part(key[0], two_part), key[2]),
+            # A question carded whole over its lettered expressions is filed as
+            # the expressions are (second reader, 20 Nov: Q1 sat under two topics).
+            'topicId': topic_for(subject, 'classic', essay_part(key[0], two_part),
+                                 key[2] or ('*' if key in parents else None)),
             # From the ask's own printed words, not an instruction put before
             # them (2026 Q1(c)-(e) shared one; second reader, 20 Nov).
             'conceptId': concept_for(clean_question(MARKER.sub('', ask.text, count=1)) or question),
@@ -688,7 +715,10 @@ def cards(subject, year, specs, level='hl', scheme=True):
             })
         if spec.stem if hasattr(spec, 'stem') else None:
             card['stem'] = spec.stem(doc) if callable(spec.stem) else spec.stem
-        if getattr(spec, 'source', True) and essay_part(key[0], two_part) in ('I', 'II'):
+        # The reading text travels with Parts I and II, and with an essay title
+        # that cites a paragraph of it (source='text'; Romanian 2010 III "(p.6)").
+        if getattr(spec, 'source', True) and (essay_part(key[0], two_part) in ('I', 'II')
+                                              or spec.source == 'text'):
             if getattr(spec, 'pages', None):
                 # The spec's pages, read on the render, where the census attaches
                 # none or the wrong ones (Romanian 2010 has none).

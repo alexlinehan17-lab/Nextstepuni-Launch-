@@ -4,7 +4,7 @@
 One entry per printed ask; see sl_lib.py for the selector language. Line
 numbers are lines of examiner-reports/romanian/schemes/<year>-hl.md.
 """
-from sl_lib import (R, S, J, L, PL, PC, QP, QL, Run, pre, prerun, PP, SP, PY, RX, PaperP, PARTP,  # noqa: F401
+from sl_lib import (R, S, SR, J, L, PL, PC, QP, QL, Run, pre, prerun, PP, SP, PY, RX, PaperP, PARTP,  # noqa: F401
                     one, shown, graded, crit, examples, quote, unprinted, part, NoScheme)
 from pl_listen_lib import Join  # noqa: F401
 
@@ -40,7 +40,9 @@ SPECS[2010] = [
     R('I1e', [one(L(28, 29, after='• '), PP())]),
     R('I2', [shown(J(S(32, after='• '), S(33, after='• '), S(34, after='• '))), shown(L(35, 37, after='• ')),
              shown(L(38, 41, after='• '))], whole=True),
-    R('I3', [one(L(44, 47), PP())]),
+    R('I3', [one(L(44, 47), PP())],
+      rownote=quote(S(43, after='3. '), lead='The scheme heads its answer with the quotation in its own words '
+                                                  '(the paper prints "anormal")')),
     R('I4', [shown(S(55, after='• '), lead=S(54)), shown(S(56, after='• '), lead=S(54)),
              shown(L(57, 58, after='• '), lead=S(54)), shown(S(60, after='• '), lead=S(59)),
              shown(S(61, after='• '), lead=S(59)), shown(L(62, 63, after='• '), lead=S(59))], whole=True,
@@ -51,7 +53,7 @@ SPECS[2010] = [
       rownote=quote(L(76, 77, after='6. '), lead='The scheme heads it')),
     R('II1', [graded(L(102, 105), PARTP(), CRIT_2010)],
       rownote=quote(S(93), lead='The scheme prints')),
-    R('III1', [graded(L(107, 108), PARTP(), CRIT_2010)],
+    R('III1', [graded(L(107, 108), PARTP(), CRIT_2010)], source='text',
       rownote=quote(S(93), lead='The scheme prints'),
       question=QP(4, 'Scrieţi un comentariu de aproximativ 300', '1. “Informaţia')),
     R('III2', [graded(L(107, 108), PARTP(), CRIT_2010)],
@@ -332,6 +334,148 @@ SPECS[2016] = [
 SPECS[2016].insert(0, R('I1', [shown(L(51, 54, after=' – ')), shown(L(55, 56, after=' – ')), shown(L(57, 58, after=' – ')), shown(L(59, 60, after=' – ')), shown(L(61, 63, after=' – '))], whole=True, total=Q1P_2016,
       question=QL(3, Run('1. Explicați pe scurt ur', 'perifraze și ținând cont'), 'a) oamenii de valoar', 'b) pseudo-vedete', 'c) trăncăneală', 'd) decăderea moravur', 'e) criza de încreder')))
 for _s in SPECS[2016]:
+    _s.pages = (2, 3)
+
+
+# ================================================================ 2013 HL ===
+# GLYPHS FIRST: this sitting's scheme .md and the paper's own text layer print
+# Romanian letters as other code points ("܊" for ţ/ț, "܈" for ş/ș, "Ġ" and "а"
+# for ţ, "ú" and "Ю" for ş, "һ" for ă, "Ӽ" for Ă; 78 scheme lines, 40 paper
+# lines, the questions included). The rendered pages print the right letters.
+# Every card below would show the wrong ones until the .md and the paper's text
+# are glyph-repaired (map derived from glyph ids, never by hand). The specs are
+# written on the current line numbers; no anchor or opening below holds a
+# mangled character, so they survive an in-place repair.
+# Paper (rendered pp3-4): PARTEA I "(30/100)"; Q1 prints its five expressions
+# a)-e), each with "(paragraful N)", and ONE "(5 puncte)" under e) for the
+# question as a whole; Q2-Q6 "(5 puncte)" each on lines of their own; PARTEA a
+# II-a "(30/100)"; PARTEA a III-a "(40/100)", two titles joined by "SAU". The
+# census's 13 asks are the paper's 13; it gives Q1's "(5 puncte)" to e) alone.
+# Scheme (rendered pp3-5): Q1 LETTERS its answers a)-e), reprinting each
+# expression above its dash, and prices "(5 puncte)" for the question. No
+# expression is priced on its own by paper or scheme, so Q1(a)-(e) are
+# CARD-STANDARD 10i asks: NOT in SPECS but in Q1 (carded at the question)_2013 (see 2012).
+# Q2-Q6 print three or four dashes each with no split: shown, priced as a
+# whole (10a), under the scheme's own heading; Q6's third dash runs over the
+# p4/p5 break ("în" / "neînţelegere."): joined. Parts II (30) and III (40) are
+# marked on the four criteria printed on p5 (30/30/30/10 %, whole numbers:
+# 10b), under each part's own descriptive line; under Part II the scheme also
+# prints three dashes of content, quoted as examples, not a checklist.
+
+
+def dashes(*spans, mark='– '):
+    """Shown rows, one per printed dash: each a span (a, b) of wrapped lines."""
+    return [shown(L(a, b, after=mark)) for a, b in ((sp, sp) if isinstance(sp, int) else sp for sp in spans)]
+
+
+def _head(a, b=None, after=None):
+    return quote(L(a, b, after=after), lead='The scheme heads it')
+
+
+CRIT_2013 = crit(147, (148, 149), (150, 151), 152)
+ESSAY_2013 = Run('Scrie', 'cuvinte):')
+Q1P_2013 = PY(3, 583)
+SPECS[2013] = [
+    R('I2', dashes((72, 73), (74, 76), (77, 79)), whole=True, rownote=_head(71, after='2. ')),
+    R('I3', dashes(82, (83, 85), (91, 93), (94, 96)), whole=True, rownote=_head(81, after='3. ')),
+    R('I4', dashes((100, 103), (104, 107), (108, 110)), whole=True, rownote=_head(98, 99, after='4. ')),
+    R('I5', dashes((114, 115), (116, 119), (120, 122), (123, 125)), whole=True,
+      rownote=_head(112, 113, after='5. ')),
+    R('I6', dashes((128, 131), (132, 133)) + [shown(J(L(134, 135, after='– '), L(141, 142)))], whole=True,
+      rownote=_head(127, after='6. ')),
+    R('II1', [graded(L(154, 157), PARTP(), CRIT_2013)],
+      rownote=both(quote(L(145, 146), lead='The scheme prints'),
+                   examples(None, L(158, 163, after='– '), L(164, 165, after='– '), L(166, 170, after='– ')))),
+    R('III1', [graded(L(172, 173), PARTP(), CRIT_2013)],
+      rownote=quote(L(145, 146), lead='The scheme prints'),
+      question=QP(4, ESSAY_2013, '1. Cultura')),
+    R('III2', [graded(L(172, 173), PARTP(), CRIT_2013)],
+      rownote=quote(L(145, 146), lead='The scheme prints'),
+      question=QP(4, ESSAY_2013, '2. Să-')),
+]
+
+# CARD-STANDARD 10i, not built by sl_lib here (see 2012). The scheme letters
+# each answer under its reprinted expression: a) line 51, b) 55, c) 58, d) 62,
+# e) 67.
+
+# The reading text is printed on pp2-3 (rendered: "Absurdul de zi cu zi.
+# Comunicarea" on p2, to Sever VOINESCU's byline on p3 y340).
+SPECS[2013].insert(0, R('I1', [shown(L(52, 54, after='– ')), shown(L(56, 57, after='– ')), shown(L(59, 61, after='– ')), shown(L(63, 66, after='– ')), shown(L(68, 69, after='– '))], whole=True, total=Q1P_2013,
+      question=QL(3, Run('1. Explicați pe scurt ur', 'contextul în care apar:'), Run('a) lume complet absu', '(paragraful 1)'), 'b) jalnice clişee al', Run('c) se dau bani grei', '(paragraful 3)'), Run('d) propagandă falsă', '(paragraful 4)'), Run('e) cronică neputință', '(paragraful 4)'))))
+for _s in SPECS[2013]:
+    _s.pages = (2, 3)
+
+
+# ================================================================ 2015 HL ===
+# GLYPHS FIRST: this sitting's scheme .md prints Romanian letters as other code
+# points on 86 lines ("܊" for ţ/ț, "܈" for ş/ș, "Ġ" and "а" for ţ, "ú" and
+# "Ю" for ş, "Ӽ" for Ă; pp1-2 are a shifted font, not used here). The rendered
+# scheme prints the right letters. Every scheme cut below would show the wrong
+# ones until the .md is glyph-repaired (map derived from glyph ids, never by
+# hand). The paper's questions are clean. No anchor below holds a mangled
+# character, so the specs survive an in-place repair.
+# Paper (rendered pp3-4): PARTEA I "(30/100)"; Q1 asks for five words and
+# expressions "scrise îngroşat în text" (each reprinted in the question) and
+# prints ONE "(5 puncte)" under e) for the question as a whole; Q2-Q6 "(5
+# puncte)" each; PARTEA a II-a "(30/100)"; PARTEA a III-a "(40/100)", two
+# titles joined by "SAU". The census's 13 asks are the paper's 13; it gives
+# Q1's "(5 puncte)" to e) alone.
+# Scheme (rendered pp3-6): Q1 letters its answers a)-e), each after its
+# expression and a dash on the same line, and prices "(5 puncte)" for the
+# question: CARD-STANDARD 10i asks, NOT in SPECS but in Q1 (carded at the question)_2015 (see
+# 2012). Q2-Q6: the scheme reprints each question in italics under its
+# heading, then two to four dashes with no split: shown, priced as a whole
+# (10a), under the heading; Q5's first dash runs over the p4/p5 break
+# ("praful" / "s-ar putea"): joined. Parts II (30) and III (40) are marked on
+# the four criteria printed on p5 (30/30/30/10 %, whole numbers: 10b). Part II
+# prints no descriptive line of its own (2010-2014 print "Comentarea
+# citatului ..."): its head is the scheme's line introducing the criteria, as
+# Dutch 2010 and 2011 (S(57), S(89)). Under it the scheme reprints the task
+# without the paper's "doar" ("Soylent hrăneşte corpul", paper "hrăneşte doar
+# corpul"): the paper wins on the question, the scheme's words quoted (10f);
+# then four unheaded paragraphs, quoted as examples, not a checklist. LIBRARY
+# LIMIT: the first paragraph wraps onto line 165, which opens with a printed
+# dash ("un tot" / "– corp, minte, suflet"); Sel's bullet strip drops it, so
+# the quote reads "un tot corp, minte, suflet". Part III is headed by its own
+# descriptive line (rendered p6).
+
+
+def dashes(*spans, mark='- '):
+    """Shown rows, one per printed dash: each a span (a, b) of wrapped lines."""
+    return [shown(L(a, b, after=mark)) for a, b in ((sp, sp) if isinstance(sp, int) else sp for sp in spans)]
+
+
+def _head(a, b=None, after=None):
+    return quote(L(a, b, after=after), lead='The scheme heads it')
+
+
+CRIT_2015 = crit(151, (152, 153), (154, 155), 156)
+NOTE_2015 = quote(L(149, 150), lead='The scheme prints')
+ESSAY_2015 = Run('Scrieţi un eseu', 'cuvinte):')
+Q1P_2015 = PY(3, 529)
+SPECS[2015] = [
+    R('I2', dashes((69, 72), (73, 76), (77, 78)), whole=True, rownote=_head(66, after='2. ')),
+    R('I3', dashes((87, 90), (91, 94), (95, 96), (97, 98)), whole=True, rownote=_head(84, after='3. ')),
+    R('I4', dashes((104, 107), (108, 109), (110, 112)), whole=True, rownote=_head(100, 101, after='4. ')),
+    R('I5', [shown(J(L(118, 120, after='- '), L(125, 126)))] + dashes((127, 130), (131, 132)), whole=True,
+      rownote=_head(114, 115, after='5. ')),
+    R('I6', dashes((137, 141), (142, 146)), whole=True, rownote=_head(134, after='6. ')),
+    R('II1', [graded(L(149, 150), PARTP(), CRIT_2015)],
+      rownote=both(quote(L(162, 163), lead='The scheme reprints the task as'),
+                   examples(None, J(S(164), SR(165), S(166), S(167)), L(168, 171), L(172, 173), L(174, 175)))),
+    R('III1', [graded(L(177, 178), PARTP(), CRIT_2015)], rownote=NOTE_2015,
+      question=QP(4, ESSAY_2015, Run('1 . „Oamenii', 'simtă că trăiesc'))),
+    R('III2', [graded(L(177, 178), PARTP(), CRIT_2015)], rownote=NOTE_2015,
+      question=QP(4, ESSAY_2015, '2. „ Cei care')),
+]
+
+# CARD-STANDARD 10i, not built by sl_lib here (see 2012). Each answer is cut
+# after the dash that follows its expression on the scheme's own line.
+
+# The reading text is printed on pp2-3 (rendered; questions from p3 PARTEA I).
+SPECS[2015].insert(0, R('I1', [shown(L(53, 55, after=' – ')), shown(L(56, 57, after=' – ')), shown(L(58, 59, after=' – ')), shown(L(60, 61, after=' – ')), shown(L(62, 64, after=' – '))], whole=True, total=Q1P_2015,
+      question=QL(3, '1. Explicaţi pe scurt următoar', 'a) trebuincioasă', 'b) mâncare minune', 'c) pământ suprapopul', 'd) ideea va prinde', Run('e) viaţă excepţional', '(5 puncte)'))))
+for _s in SPECS[2015]:
     _s.pages = (2, 3)
 
 
