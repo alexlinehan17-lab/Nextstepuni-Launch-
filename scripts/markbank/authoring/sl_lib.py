@@ -345,8 +345,11 @@ class R:
     """One card: the paper's address, its rows, the price it must add up to,
     and the notes. `whole` = `questionTotal` (rows shown, not claimed)."""
     def __init__(self, key, rows, total=None, whole=False, note=None, rownote=None,
-                 question=None, source=True, stem=None, pages=None, concept=None):
+                 question=None, source=True, stem=None, pages=None, concept=None, unpriced=None):
         self.key, self.rows, self.total, self.whole = key, rows, total, whole
+        # CARD-STANDARD 10i: an Unpriced(label, total) where the paper prints
+        # marks only for the section the ask sits in.
+        self.unpriced = unpriced
         self.note, self.rownote, self.question = note, rownote, question
         self.source, self.stem = source, stem
         # The question paper's pages that print the reading text, where the
@@ -356,6 +359,27 @@ class R:
         # where the census text it is usually built from is misaligned (Danish
         # 2024 reads each Q1 expression one letter late).
         self.concept = concept
+
+
+class Unpriced:
+    """CARD-STANDARD 10i: neither the paper nor the scheme prints marks for
+    this ask, only for the section it sits in. `label` selects the section's
+    name as the paper prints it (PL/PC on the paper's line, or a callable on
+    the document); `total` is the section's printed total (default PARTP()).
+    The card shows the scheme's answer rows with no marks, carries no total
+    of its own (0) and names the section and its total (`unpricedSection`);
+    the session prints "The paper gives N marks for <label> as a whole, not
+    for each question." Never split the section total into per-ask marks."""
+    def __init__(self, label, total=None):
+        self.label, self.total = label, total
+
+    def read(self, doc):
+        label = self.label.text(doc) if hasattr(self.label, 'text') else self.label(doc)
+        _c, total, notation = (self.total or PARTP()).read(doc)
+        label = label.strip()
+        if not label:
+            raise ValueError('10i: the section label lifts empty')
+        return label, total, notation
 
 
 class NoScheme:
@@ -1014,6 +1038,13 @@ def cards(subject, year, specs, level='hl', scheme=True):
                 rows = [{'id': 'r-1', 'kind': 'criterion', 'verbatim': UNPRINTED_ANSWER,
                          'marks': total, 'permittedMarks': list(range(total + 1)),
                          'unprinted': True, **({'contextNote': ctx} if ctx else {})}]
+            elif getattr(spec, 'unpriced', None):
+                rows, total = build_rows(doc, spec, note)
+                if total != 0 or any(r['kind'] != 'point' for r in rows):
+                    raise ValueError(f'{subject} {year} {spec.key}: a 10i card shows the scheme\'s answer '
+                                     'as point rows with no marks (shown)')
+                label, sec_total, _n = spec.unpriced.read(doc)
+                card['unpricedSection'] = {'label': label, 'totalMarks': sec_total}
             else:
                 rows, total = build_rows(doc, spec, note)
                 price = spec.total or default_price(key)
@@ -1025,12 +1056,16 @@ def cards(subject, year, specs, level='hl', scheme=True):
                 elif pc * pp != total:
                     raise ValueError(f'{subject} {year} {spec.key}: rows add to {total}, '
                                      f'the paper prints {pn!r}')
+            sec = card.get('unpricedSection')
             card.update({
-                'tariffModel': {'kind': 'questionTotal' if spec.whole else 'fixed'},
+                'tariffModel': {'kind': 'questionTotal' if spec.whole or sec else 'fixed'},
                 'totalMarks': total,
                 'rows': rows,
                 'notes': (f'Read on the rendered scheme and paper ({LANE}); the paper prints this ask '
                           f'on PDF page {ask.page} of the question paper.'
+                          + (f' Neither the paper nor the scheme prints marks for it: the paper prints '
+                             f'{sec["totalMarks"]} marks for "{sec["label"]}" as a whole (CARD-STANDARD 10i).'
+                             if sec else '')
                           + (f' {spec.note}' if spec.note else '')),
             })
         if spec.stem if hasattr(spec, 'stem') else None:
