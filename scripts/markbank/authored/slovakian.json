@@ -5895,6 +5895,457 @@
   }
  },
  {
+  "id": "slk-2019-hl-i-1-a",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "slovakian-0-0",
+  "conceptId": "peniaze-ali-sypa-odsek",
+  "questionRef": "2019 HL Section I Q1(a)",
+  "questionText": "peniaze sa začali sypať (1. odsek)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "zrazu začali zarábať veľa peňazí",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Slovakian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+  }
+ },
+ {
+  "id": "slk-2019-hl-i-1-b",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "slovakian-0-0",
+  "conceptId": "krsti-knihu-odsek",
+  "questionRef": "2019 HL Section I Q1(b)",
+  "questionText": "krstiť knihu (3. odsek)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "slávnosť, pri ktorej sa kniha uvádza na trh",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Slovakian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+  }
+ },
+ {
+  "id": "slk-2019-hl-i-1-c",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "slovakian-0-0",
+  "conceptId": "smie-sumy-odsek",
+  "questionRef": "2019 HL Section I Q1(c)",
+  "questionText": "smiešne sumy (4. odsek)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "málo peňazí",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Slovakian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+  }
+ },
+ {
+  "id": "slk-2019-hl-i-1-d",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "slovakian-0-0",
+  "conceptId": "nastal-zlom-odsek",
+  "questionRef": "2019 HL Section I Q1(d)",
+  "questionText": "nastal zlom (6. odsek)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "nastal čas zmeny – všetko sa zmenilo",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Slovakian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+  }
+ },
+ {
+  "id": "slk-2019-hl-i-1-e",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "slovakian-0-0",
+  "conceptId": "pochodu-odsek",
+  "questionRef": "2019 HL Section I Q1(e)",
+  "questionText": "učiť sa za pochodu (7. odsek)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "priebežne sa učiť, pracovať a zároveň sa učiť",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The paper prints Question 1 as a bare “1.” over the five expressions, with no instruction and no price; the scheme heads it “Vysvetlite vlastnými slovami výrazy:” and prices it “(5 x 1 bod)”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Slovakian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+  }
+ },
+ {
+  "id": "slk-2019-hl-ii-1",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2019,
+  "section": "II",
+  "topicId": "slovakian-1-0",
+  "conceptId": "napi-komentar-najmenej-100-slov-temu",
+  "questionRef": "2019 HL Section II Q1",
+  "questionText": "Napíšte komentár (najmenej 100 slov) na tému: „Títo mladí youtuberi nevidia vo svojej záľube žiadne riziká, nemyslia vôbec na to, či raz o 10 – 15 rokov nebudú ľutovať, že zverejnením svojho súkromia na internete vlastne oň prišli.“",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Zručnosti – gramatika, pravopis – 10%",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints, as examples, not a checklist: “Youtuberi nemyslia na budúcnosť, žijú len v prítomnosti.”; “Fakt, že sledovanie sociálnych sietí, médií, vlogov, je u mladých ľudí obľúbenou každodennou činnosťou, prináša youtuberom aj riziká: zverejňujú svoje súkromie a tým oň prichádzajú, stále musia myslieť na to, čím opäť zaujmú svojich sledovateľov, aby ich nestratili”; “Nedá sa žiť len vo virtuálnom svete, ale je možné zážitky z virtuálneho sveta využiť vo svoj prospech, aby nám pomohli zorientovať sa v tom skutočnom”; “Je všetko pravdivé, čo je n fb?”; “Užívatelia youtubu strácajú drahocenný čas, ktorý by mohli využiť na reálne zážitky, ktoré sú nenahraditeľné”; “Rodičia by mali stanoviť svojim deťom jasné pravidlá, maloletým by nemali dovoliť uverejňovať videá, mali by poučiť deti, že sa môžu stretnúť so zneužitím”; “Youtube ponúka stále nové videá, ponuka je nekonečná, človek tam denne môže stráviť hodiny a môže sa stať závislým”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ČASŤ II",
+   "title": "Reading text — answer in Slovakian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovakian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+  }
+ },
+ {
+  "id": "slk-2019-hl-iii-1",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2019,
+  "section": "III",
+  "topicId": "slovakian-1-1",
+  "conceptId": "tema-sme-deti-digitalneho-veku-pre",
+  "questionRef": "2019 HL Section III Q1",
+  "questionText": "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Sme deti digitálneho veku. Je to pre nás dobré alebo zlé? Komentujte túto tému z oboch strán.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "slk-2019-hl-iii-2",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2019,
+  "section": "III",
+  "topicId": "slovakian-1-1",
+  "conceptId": "tema-zobra-jeden-rok-strednej-kole",
+  "questionRef": "2019 HL Section III Q2",
+  "questionText": "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Zobrať si jeden voľný rok po strednej škole môže byť užitočné alebo je to len premárnený čas? Vo svojej eseji sa snažte rozvinúť obidva pohľady na túto otázku.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "slk-2021-hl-i-1-a",
   "subjectId": "slovakian",
   "level": "higher",
