@@ -4262,4 +4262,297 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2026 Higher Level — © State Examinations Commission.",
+    id: "nld-2026-hl-i-1-a", topicId: "dutch-0-0", conceptId: "waarnaar-verwijzen-volgende-woorden-dat-zin",
+    section: "I", questionRef: "2026 HL Section I Q1(a)",
+    questionText: "Waarnaar verwijzen de volgende woorden? ‘dat’ in de zin: Jongeren worden meer ondersteund en zijn mondiger dan eerdere generaties, maar dat heeft hun weerbaarheid niet vergroot – integendeel. (alinea 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dat jongeren meer worden ondersteund en mondiger zijn dan eerdere generaties", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2026 Higher Level — © State Examinations Commission.",
+    id: "nld-2026-hl-i-1-b", topicId: "dutch-0-0", conceptId: "waarnaar-verwijzen-volgende-woorden-die-zin",
+    section: "I", questionRef: "2026 HL Section I Q1(b)",
+    questionText: "Waarnaar verwijzen de volgende woorden? ‘Die’ in de zin: En er is bescherming: is de trainer of de juf te streng, in de perceptie van de ouders, dan krijgt die kritiek. (alinea 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "De trainer of de juf", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2026 Higher Level — © State Examinations Commission.",
+    id: "nld-2026-hl-i-1-c", topicId: "dutch-0-0", conceptId: "vragen-doen-een-beroep-grammaticale-inzicht",
+    section: "I", questionRef: "2026 HL Section I Q1(c)",
+    questionText: "Vragen a en b doen een beroep op je grammaticale inzicht; vragen c, d en e doen een beroep op je woordenschatkennis. Voor de laatste drie vragen kan het je helpen dat je de context van de woorden in de zinnen goed bekijkt. ‘gepamperd’ in de zin: Terwijl deze generatie, geboren tussen 1998 en 2015, juist is gecurld en gepamperd. (alinea 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In de watten gelegd, verwend", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2026 Higher Level — © State Examinations Commission.",
+    id: "nld-2026-hl-i-1-d", topicId: "dutch-0-0", conceptId: "vragen-doen-een-beroep-grammaticale-inzicht",
+    section: "I", questionRef: "2026 HL Section I Q1(d)",
+    questionText: "Vragen a en b doen een beroep op je grammaticale inzicht; vragen c, d en e doen een beroep op je woordenschatkennis. Voor de laatste drie vragen kan het je helpen dat je de context van de woorden in de zinnen goed bekijkt. ‘neiging’ in de zin: Er wordt enorm op deze generatie kinderen gelet. Je zou haast niet kúnnen ontsporen, als je die neiging zou hebben. (alinea 7)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Als je dat zou willen doen, als je dat al van plan was.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2026 Higher Level — © State Examinations Commission.",
+    id: "nld-2026-hl-i-1-e", topicId: "dutch-0-0", conceptId: "vragen-doen-een-beroep-grammaticale-inzicht",
+    section: "I", questionRef: "2026 HL Section I Q1(e)",
+    questionText: "Vragen a en b doen een beroep op je grammaticale inzicht; vragen c, d en e doen een beroep op je woordenschatkennis. Voor de laatste drie vragen kan het je helpen dat je de context van de woorden in de zinnen goed bekijkt. ‘eraan schort’ in de zin: Generatie Z kan nauwgezet verwoorden wat eraan schort in hun leven. (alinea 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Wat er mis is, wat er ontbreekt, wat er fout loopt.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2026 Higher Level — © State Examinations Commission.",
+    id: "nld-2026-hl-i-2", topicId: "dutch-0-1", conceptId: "geef-drie-voorbeelden-van-obstakels-die",
+    section: "I", questionRef: "2026 HL Section I Q2",
+    questionText: "Geef drie voorbeelden van obstakels die ouders wegwerken voor hun kinderen.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hulp bij huiswerk/bijles", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-2", kind: "point", verbatim: "Hulp bij verplaatsingen", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Hulp bij aanschaffen/vervangen van materiële zaken", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2026 Higher Level — © State Examinations Commission.",
+    id: "nld-2026-hl-i-3", topicId: "dutch-0-1", conceptId: "leg-uit-welke-factoren-volgens-tekst",
+    section: "I", questionRef: "2026 HL Section I Q3",
+    questionText: "Leg uit welke factoren volgens de tekst de mentale gezondheid van tieners negatief beïnvloeden.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Eenzaamheid, gebrek aan echt contact, en uit elkaar gevallen gezinnen, bevorderen de mentale gezondheid niet. Daarom, zegt hij, heeft de coronapandemie er zo in gehakt bij tieners: „Het is het moment dat je je eigen relaties gaat opbouwen en zelf de wereld gaat verkennen. Daar is een knip op gezet – dat kon niet meer.”", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-2", kind: "point", verbatim: "Daarnaast is er de prestatiedruk, die al decennia stijgt. „Hoogopgeleide ouders willen vaak op alle gebieden presteren”, zegt Staal. „Op het werk, in het sociale verkeer en als ouder. Dat legt druk op hun kinderen. Je kúnt helemaal niet excelleren op alle terreinen.”", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2026 Higher Level — © State Examinations Commission.",
+    id: "nld-2026-hl-i-4", topicId: "dutch-0-1", conceptId: "gebaseerd-tekst-hoogopgeleide-ouders-willen-vaak",
+    section: "I", questionRef: "2026 HL Section I Q4",
+    questionText: "Gebaseerd op de tekst: “Hoogopgeleide ouders willen vaak op alle gebieden presteren”, zegt Staal. „Op het werk, in het sociale verkeer en als ouder. Dat legt druk op hun kinderen. Je kúnt helemaal niet excelleren op alle terreinen.” Wat bedoelt Staal met deze uitspraak? Wat vind jij van zijn beweringen?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "De kandidaat verwijst naar alinea 12 (en 11) en past de situatie toe op de hem of haar zelf bekende situaties.", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2026 Higher Level — © State Examinations Commission.",
+    id: "nld-2026-hl-i-5", topicId: "dutch-0-1", conceptId: "dorea-laan-student-leiden-weet-alles",
+    section: "I", questionRef: "2026 HL Section I Q5",
+    questionText: "Dorea Laan (19), student in Leiden, weet er alles van. Ze slaagde summa cum laude op het gymnasium, en was nóg niet tevreden met zichzelf. „Als ik een 8 haalde, vroeg ik me af waarom het geen 9 was.” Uitgaande van jouw lectuur van de tekst: Zijn jongeren niet zelf verantwoordelijk voor hoe veeleisend ze voor zichzelf zijn ? Of zijn er factoren die dat onmogelijk maken?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "De kandidaat beargumenteert het antwoord en kan verwijzen naar de slotparagraaf in de tekst.", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2026 Higher Level — © State Examinations Commission.",
+    id: "nld-2026-hl-i-6", topicId: "dutch-0-1", conceptId: "alinea-staat-het-opvallendst-aan-generatie",
+    section: "I", questionRef: "2026 HL Section I Q6",
+    questionText: "In alinea 13 staat: Het opvallendst aan Generatie Z is misschien wel hun overvolle agenda. Opgezweept door marketingtaal als ‘make every day count’, ‘enjoy the moment’. Ze willen zich ontwikkelen, reizen, studeren, uitgaan, werken, dingen méémaken. Lummelen, mijmeren, is er niet meer bij. Ben je het daarmee eens of niet? Verdedig je standpunt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this question and prints nothing under it.", permittedMarks: [0,1,2,3,4,5], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2026 Higher Level — © State Examinations Commission.",
+    id: "nld-2026-hl-ii-1", topicId: "dutch-1-0", conceptId: "als-kinderen-jongeren-een-ding-nodig",
+    section: "II", questionRef: "2026 HL Section II Q1",
+    questionText: "Als kinderen en jongeren één ding nodig hebben, is dat: „sociale netwerken die ze als positief ervaren”, zegt Wouter Staal, hoogleraar jeugd- en kinderpsychiatrie aan het RadboudMC en academisch centrum voor kinder- en jeugdpsychiatrie Karakter. (alinea 10) Geef je eigen mening over deze uitspraak in 100 tot 150 woorden en bespreek of het mogelijk is om als jongere ondanks alle verwachtingen en druk de nodige stabiliteit te vinden.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 30, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task and prints nothing under it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEEL 2: COMMENTAAR",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2026 Higher Level — © State Examinations Commission.",
+    id: "nld-2026-hl-iii-1", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-minimum-300-woorden",
+    section: "III", questionRef: "2026 HL Section III Q1",
+    questionText: "Schrijf een opstel (minimum 300 woorden) over één van de volgende onderwerpen: Het is helemaal niet zo lastig om jong te zijn in deze tijden.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task and prints nothing under it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2026 Higher Level — © State Examinations Commission.",
+    id: "nld-2026-hl-iii-2", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-minimum-300-woorden",
+    section: "III", questionRef: "2026 HL Section III Q2",
+    questionText: "Schrijf een opstel (minimum 300 woorden) over één van de volgende onderwerpen: Het leven is eenvoudig, maar de mensen hebben het zo vreemd en zo ingewikkeld gemaakt. (Louis Couperus)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task and prints nothing under it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
 ];
