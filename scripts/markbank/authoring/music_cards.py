@@ -111,8 +111,12 @@ def recordings(year, deferred):
         ids = ('LC067ZLP117EV.mp3', 'LC067ZLP217EV.mp3')
     else:
         ids = ('LC067ZLP045EV.mp3', 'LC067ZLP046EV.mp3')
-    view = 'deferredexams' if deferred else 'exampapers'
-    return {n + 1: (f, f'https://www.examinations.ie/archive/{view}/{year}/{f}') for n, f in enumerate(ids)}
+    if deferred:
+        # CARD-STANDARD 10g: no recording file name is built by pattern, and the SEC's deferred listing has not
+        # been read (coordinator ruling 20 Nov). A deferred listening ask that needs its recording is held open
+        # (build_sitting) until the audio-hosting lane sends the names.
+        return None
+    return {n + 1: (f, f'https://www.examinations.ie/archive/exampapers/{year}/{f}') for n, f in enumerate(ids)}
 
 
 class Sitting:
@@ -505,9 +509,14 @@ def crops_overlapping(s):
 def build_sitting(s, atlas):
     cards, census, covers = [], {}, {}
     shared = {}
+    s.held = []
     for a in s.data['asks']:
         cid = s.card_id(a)
         census.setdefault(a['paper'], []).append({'id': cid, 'questionRef': s.ref(a)})
+        if s.deferred and a.get('needsRecording') and recordings(s.year, s.deferred) is None:
+            # counted, not carded: its recording is not yet named (coordinator ruling 20 Nov)
+            s.held.append(s.ref(a))
+            continue
         if a.get('sharedCard'):
             shared.setdefault(a['sharedCard'], []).append(a)
             continue
@@ -583,6 +592,8 @@ def check(path, crops_to):
         got = sum(max(v) if k[1] == 'B' else sum(v) for k, v in sums.get(q, {}).items())
         flag = '' if printed.get(q) == got else '   <-- CHECK'
         print(f'  Listening Q{q}: paper prints {printed.get(q)}, asks give {got}{flag}')
+    if getattr(s, 'held', None):
+        print(f'  HELD OPEN (recording not yet named): {len(s.held)} asks, e.g. {s.held[0]}')
     for r in s.data.get('readFromPage', []):
         print(f"  READ FROM PAGE ({r['booklet']} p{r['page']}, {r['readBy']}): {r['text']}")
     for n1, n2, page in crops_overlapping(s):
