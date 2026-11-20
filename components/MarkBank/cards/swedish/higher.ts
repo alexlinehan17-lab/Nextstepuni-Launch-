@@ -2138,6 +2138,176 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2018 Higher Level — © State Examinations Commission.",
+    id: "swe-2018-hl-i-1-a", topicId: "swedish-0-0", conceptId: "betraktades",
+    section: "I", questionRef: "2018 HL Section I Q1(a)",
+    questionText: "Förklara dessa ord och uttryck såsom de används i texten. betraktades",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ansågs, bedömdes, tycktes", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2018 Higher Level — © State Examinations Commission.",
+    id: "swe-2018-hl-i-1-b", topicId: "swedish-0-0", conceptId: "prylar",
+    section: "I", questionRef: "2018 HL Section I Q1(b)",
+    questionText: "Förklara dessa ord och uttryck såsom de används i texten. prylar",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "saker, grejor, föremål", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2018 Higher Level — © State Examinations Commission.",
+    id: "swe-2018-hl-i-1-c", topicId: "swedish-0-0", conceptId: "dess-morkaste",
+    section: "I", questionRef: "2018 HL Section I Q1(c)",
+    questionText: "Förklara dessa ord och uttryck såsom de används i texten. dess mörkaste vrår",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "de mörkaste skrymslen, det allra mörkaste, något fult, negativt som är gömt/ dolt, något man inte vill eller vågar visa", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2018 Higher Level — © State Examinations Commission.",
+    id: "swe-2018-hl-i-1-d", topicId: "swedish-0-0", conceptId: "lotsa",
+    section: "I", questionRef: "2018 HL Section I Q1(d)",
+    questionText: "Förklara dessa ord och uttryck såsom de används i texten. lotsa",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "leda, vägleda, ledsaga, hjälpa", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2018 Higher Level — © State Examinations Commission.",
+    id: "swe-2018-hl-i-1-e", topicId: "swedish-0-0", conceptId: "agnar",
+    section: "I", questionRef: "2018 HL Section I Q1(e)",
+    questionText: "Förklara dessa ord och uttryck såsom de används i texten. ägnar",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ägnar sig åt, sysslar med, håller på med, bedriver, utövar", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2018 Higher Level — © State Examinations Commission.",
+    id: "swe-2018-hl-ii-1", topicId: "swedish-1-0", conceptId: "kommentera-detta-citat-och-uttryck-dina",
+    section: "II", questionRef: "2018 HL Section II Q1",
+    questionText: "Kommentera detta citat och uttryck dina tankar med ungefär 100 ord: ”Jag trodde att 2000‐talet skulle bli annorlunda och öppna upp för vidgade könsroller (…).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "I del II och III kommer följande kriterier att vägas in i betygssättningen:", marks: 30, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\" The scheme prints, as examples, not a checklist: “Sonia Livingstone uttrycker besvikelse: i ställer för att skillnaderna mellan könen skulle minska eller ändras, har internet förstärkt/ befäst den traditionella bilden. Klichéer om tjejer/ kvinnor och killar/ män sprids nu ständigt via nätet. Skönhetskrav och kroppsfixering är hela tiden närvarande. Sonia Livingstone är kritisk till att unga sprider budskap om vikten av att se bra ut för att bli framgångsrik. Enligt henne är det reaktionärt/ bakåtsträvande och kommersiellt.”. It adds: “Kandidaten kommenterar citatet och förklarar Sonia Livingstones besvikelse och kritik. Kandidaten utvecklar sina egna synpunkter, där han eller hon håller med, helt eller delvis, eller vänder sig mot Livingstones åsikter. Kandidaten diskuterar fritt och kommer med egna exempel som stöd för sitt resonemang.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Ett tydligt syfte – kandidaten har förstått frågan och vet hur den ska besvaras – 30%.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ett sammanhängande svar – kandidaten använder relevant och lämplig fakta ur materialet på ett strukturerat och meningsfullt sätt – 30%.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Språklig klarhet – kandidaten uppvisar en språkbehandling som med tydlighet och med visst flyt kan uttrycka dennes idéer – 40 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEL II",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2018 Higher Level — © State Examinations Commission.",
+    id: "swe-2018-hl-iii-1", topicId: "swedish-1-1", conceptId: "den-som-god-van-med-alla",
+    section: "III", questionRef: "2018 HL Section III Q1",
+    questionText: "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. Den som är god vän med alla är inte vän med någon‐ Drottning Kristina",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "I del II och III kommer följande kriterier att vägas in i betygssättningen:", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Ett tydligt syfte – kandidaten har förstått frågan och vet hur den ska besvaras – 30%.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Ett sammanhängande svar – kandidaten använder relevant och lämplig fakta ur materialet på ett strukturerat och meningsfullt sätt – 30%.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Språklig klarhet – kandidaten uppvisar en språkbehandling som med tydlighet och med visst flyt kan uttrycka dennes idéer – 40 %.","marks":16,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2018 Higher Level — © State Examinations Commission.",
+    id: "swe-2018-hl-iii-2", topicId: "swedish-1-1", conceptId: "kladerna-gor-mannen-ller-med-detta",
+    section: "III", questionRef: "2018 HL Section III Q2",
+    questionText: "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. ”Kläderna gör mannen”. Håller du med om detta?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "I del II och III kommer följande kriterier att vägas in i betygssättningen:", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 1: \"Alla svar måste vara skrivna på svenska.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Ett tydligt syfte – kandidaten har förstått frågan och vet hur den ska besvaras – 30%.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Ett sammanhängande svar – kandidaten använder relevant och lämplig fakta ur materialet på ett strukturerat och meningsfullt sätt – 30%.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Språklig klarhet – kandidaten uppvisar en språkbehandling som med tydlighet och med visst flyt kan uttrycka dennes idéer – 40 %.","marks":16,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2019, level: "higher",
     paperFileid: "LC039ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2019 Higher Level — © State Examinations Commission.",
