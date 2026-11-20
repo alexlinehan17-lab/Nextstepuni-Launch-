@@ -1,0 +1,466 @@
+{
+  "status": "deferred-sittings-review",
+  "reviewedAt": "2026-11-20",
+  "papers": {
+    "2022-hl-deferred-000-paper.pdf": {
+      "sha256": "3b5d3fadf770d824f7ec9ad3ed6e65a817148841c2f26a0a72d9ed1c638904e6",
+      "directives": [
+        {
+          "key": "3:1:da5c9533caa5",
+          "page": 3,
+          "phrase": "Answer ONE",
+          "context": "teanna 2, 3, 4, 5 agus 6. Section A Reading Comprehension / Compréhension Écrite 60 marks Answer ONE question, either Reading Comprehension 1 or Reading Comprehension 2. Section B Written Production / Production Écrite 70 marks Answer TWO questions – Question 1 and ONE of Questi",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "3:2:384d54d281e0",
+          "page": 3,
+          "phrase": "either",
+          "context": "s 6. Section A Reading Comprehension / Compréhension Écrite 60 marks Answer ONE question, either Reading Comprehension 1 or Reading Comprehension 2. Section B Written Production / Production Écrite 70 marks Answer TWO questions – Question 1 and ONE of Questions 2, 3, 4, 5 an",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "3:3:102ee74f732f",
+          "page": 3,
+          "phrase": "Answer TWO",
+          "context": "1 or Reading Comprehension 2. Section B Written Production / Production Écrite 70 marks Answer TWO questions – Question 1 and ONE of Questions 2, 3, 4, 5 and 6.",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "3:4:0864508c59b0",
+          "page": 3,
+          "phrase": "ONE of",
+          "context": "n B Written Production / Production Écrite 70 marks Answer TWO questions – Question 1 and ONE of Questions 2, 3, 4, 5 and 6.",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "4:1:d2a39df6c04a",
+          "page": 4,
+          "phrase": "choix multiple",
+          "context": "ion 2. Lisez les passages suivants et répondez aux questions. Dans le cas des questions à choix multiple, indiquez la bonne réponse en cochant ( ) la case correcte. Aux autres questions en français, il faut répondre en français. Aux questions posées en irlandais/anglais, il faut ré",
+          "policy": "mcq-answer",
+          "reason": "Choose the correct response to one comprehension question; incorrect boxes are distractors, not alternative tasks."
+        },
+        {
+          "key": "4:2:734b74ba490d",
+          "page": 4,
+          "phrase": "choisir",
+          "context": "homme, il me fallait un animal pour m’aider, un cheval peut‐être. Mon père m’a proposé de choisir Camomille, une jeune vache dans son troupeau. 3. Début août, j’ai pris la route avec Camomille. On marchait environ 20 km par jour. Je trouvais toujours quelque chose à manger : d",
+          "policy": "source-content",
+          "reason": "Hadrien’s father proposing that he choose Camomille is part of the reading passage; no candidate task selection is being prescribed."
+        },
+        {
+          "key": "8:1:9db94184695a",
+          "page": 8,
+          "phrase": "Répondez à deux",
+          "context": "tificate Examination 8 French – Higher Level Section B Production Écrite 70 points Répondez à deux questions – la Question 1 et une des Questions 2, 3, 4, 5 et 6. N.B. LA QUESTION 1 EST OBLIGATOIRE. Question 1 (40 points) Répondez à (a) ou à (b) ou à (c). (a) Dans",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "8:2:740662514565",
+          "page": 8,
+          "phrase": "une des Questions",
+          "context": "Section B Production Écrite 70 points Répondez à deux questions – la Question 1 et une des Questions 2, 3, 4, 5 et 6. N.B. LA QUESTION 1 EST OBLIGATOIRE. Question 1 (40 points) Répondez à (a) ou à (b) ou à (c). (a) Dans la Section A, Q.1, Hadrien dit que « J’avais be",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "8:3:8d96224c68a6",
+          "page": 8,
+          "phrase": "Répondez à (a)",
+          "context": "s 2, 3, 4, 5 et 6. N.B. LA QUESTION 1 EST OBLIGATOIRE. Question 1 (40 points) Répondez à (a) ou à (b) ou à (c). (a) Dans la Section A, Q.1, Hadrien dit que « J’avais besoin d’élargir mon horizon ». Pensez‐vous que c’est une bonne idée de passer une année sabbatique apr",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "8:4:21a97e648dde",
+          "page": 8,
+          "phrase": "OU",
+          "context": "eacht / du Leaving Certificate et de faire quelque chose de différent ? (90 mots environ) OU (b) Selon la Section A, Q.1, Hadrien dormait en plein air la plupart du temps pendant sa traversée de la France. Un jour, vous et quelques ami(e)s avez décidé de faire du camping",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "8:5:a81e2083832b",
+          "page": 8,
+          "phrase": "réel ou imaginaire",
+          "context": ", vous avez rencontré des problèmes ! Racontez ce qui s’est passé. (Votre récit peut être réel ou imaginaire.) (90 mots environ) OU (c) Dans la Section A, Q.2, Colombe et sa sœur Alice partagent une chambre. Les rapports entre frères ou sœurs peuvent être difficiles. Pourtant, être",
+          "policy": "open-scope",
+          "reason": "The candidate supplies a real or imaginary story. There is no closed printed response pool."
+        },
+        {
+          "key": "8:6:15cfde3e13a2",
+          "page": 8,
+          "phrase": "OU",
+          "context": "acontez ce qui s’est passé. (Votre récit peut être réel ou imaginaire.) (90 mots environ) OU (c) Dans la Section A, Q.2, Colombe et sa sœur Alice partagent une chambre. Les rapports entre frères ou sœurs peuvent être difficiles. Pourtant, être enfant unique n’est pas fac",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "11:1:7ed0e32b0573",
+          "page": 11,
+          "phrase": "Répondez à une",
+          "context": "na hArdteistiméireachta 11 Fraincis – Ardleibhéal Questions 2 à 6 (30 points) Répondez à une des questions suivantes. Question 2 C’est le mois de mai, la fin de l’année de Terminale. Vous allez bientôt dire « au revoir » à vos professeurs et à vos camarades",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "11:2:b178cad9cc87",
+          "page": 11,
+          "phrase": "OU",
+          "context": "olaire. Qu’est‐ce que vous notez à ce sujet dans votre journal intime ? (75 mots environ) OU Question 3 Tá sé ar intinn ag do thuismitheoirí a dteach a mhalartú le teaghlach ón bhFrainc ar feadh míosa. Scríobh ríomhphost i bhFraincis chuig an teaghlach. Luaigh na pointí",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "12:1:28b53b7b9662",
+          "page": 12,
+          "phrase": "OU",
+          "context": "Leaving Certificate Examination 12 French – Higher Level OU Question 4 Vos parents proposent que toute la famille passe une semaine entière sans écran. Alors, pas de téléphone portable, pas de tablette, pas d’ordinateur !",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "12:2:b12b51f1d96a",
+          "page": 12,
+          "phrase": "OU",
+          "context": "table, pas de tablette, pas d’ordinateur ! Quelle est votre réaction ? (75 mots environ) OU Question 5 Êtes‐vous d’accord ? (75 mots environ) OU Question 6 Donnez vos réactions. (75 mots environ) « Nous ne devrions pas garder les animau",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "12:3:e9fb24fec854",
+          "page": 12,
+          "phrase": "OU",
+          "context": "5 mots environ) OU Question 5 Êtes‐vous d’accord ? (75 mots environ) OU Question 6 Donnez vos réactions. (75 mots environ) « Nous ne devrions pas garder les animaux en captivité dans les zoos. C’est cruel ! » Martine, 17 ans L’",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        }
+      ]
+    },
+    "2022-ol-deferred-000-paper.pdf": {
+      "sha256": "6ac27c19a0c602a0953bf6c4a65e66e8cfdfb270265b46437e0e17ae9945851f",
+      "directives": [
+        {
+          "key": "3:1:c2e872c9d1a1",
+          "page": 3,
+          "phrase": "Answer TWO",
+          "context": "a), 2(b), 3(a) agus 3(b). Section A Reading Comprehension / Compréhension Écrite 80 marks Answer TWO questions. Answer Reading Comprehension Question 1 or 2 AND answer Reading Comprehension Question 3 or 4. Section B Written Production / Production Écrite 60 marks Answer ANY TWO",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "3:2:0b124cdaadac",
+          "page": 3,
+          "phrase": "Answer ANY TWO",
+          "context": "Comprehension Question 3 or 4. Section B Written Production / Production Écrite 60 marks Answer ANY TWO questions from questions 1(a), 1(b), 2(a), 2(b), 3(a) and 3(b).",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "6:1:2ffdf9611458",
+          "page": 6,
+          "phrase": "selection",
+          "context": "olas ar chnuasach leabhar a bhfuil tóir orthu. Q.2 This article gives information on a selection of popular books. VIVE LA LECTURE Je hais les vacances Juliette et les autres enfants décident de passer leurs grandes vacances dans un camping. Cependant, il y a des probl",
+          "policy": "source-content",
+          "reason": "The introduction says the article presents a selection of popular books; it is source content, not a direction to choose a practice task."
+        },
+        {
+          "key": "10:1:ac23c5dd2b2f",
+          "page": 10,
+          "phrase": "choisis",
+          "context": "écrite. « Qu’est‐ce que c’est que ça, maman ? » « Les noms de quinze correspondants. Tu choisis celui que tu veux, tu lui écris en français, il te répond en anglais, et dans trois mois tu es bilingue ! C’est simple. » « Mais je ne peux pas, je suis trop timide. Je ne les co",
+          "policy": "source-content",
+          "reason": "Kamo’s mother telling him to choose a pen-friend is part of the reading passage; no candidate task selection is being prescribed."
+        },
+        {
+          "key": "12:1:5e747d7dc573",
+          "page": 12,
+          "phrase": "choisissez",
+          "context": "n 12 French – Ordinary Level Section B Expression Écrite 60 points Dans cette section, choisissez deux des Questions 1(a), 1(b), 2(a), 2(b), 3(a) et 3(b). Rédigez vos réponses en français. Question 1 (a) Complétez la lettre ci‐dessous en écrivant les mots suivants dans les es",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "12:2:a63382742997",
+          "page": 12,
+          "phrase": "deux des Questions",
+          "context": "h – Ordinary Level Section B Expression Écrite 60 points Dans cette section, choisissez deux des Questions 1(a), 1(b), 2(a), 2(b), 3(a) et 3(b). Rédigez vos réponses en français. Question 1 (a) Complétez la lettre ci‐dessous en écrivant les mots suivants dans les espaces appropriés. (",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "13:1:638a9f677bba",
+          "page": 13,
+          "phrase": "choisissez",
+          "context": "travailler à Disneyland Paris. Remplissez le formulaire suivant: N.B. Pour 6, 7, 8 et 9, choisissez trois questions et répondez par des phrases complètes. 1. Nom : ________________________________________________________________ 2. Prénom : ___________________________________",
+          "policy": "finite-pool",
+          "reason": "The paper requires three from four sentence questions, yielding four routes; the five initial fields each have their own 2-mark boundary.",
+          "task": "B1B",
+          "choose": 3,
+          "poolSize": 4,
+          "routes": 4
+        },
+        {
+          "key": "14:1:a66a998bdb3d",
+          "page": 14,
+          "phrase": "three of",
+          "context": "your friend Martin/Martine with whom you are staying in Poitiers. In the message include three of the following five points: ‐ You woke up early this morning. ‐ There is no milk in the fridge at the moment. ‐ You have gone to the supermarket at the corner of the st",
+          "policy": "finite-pool",
+          "reason": "The paper requires three of the five printed communication points. Every combination keeps the single 30-mark tariff of this writing task.",
+          "task": "B2A",
+          "choose": 3,
+          "poolSize": 5,
+          "routes": 10
+        },
+        {
+          "key": "14:2:a2b0c51811c3",
+          "page": 14,
+          "phrase": "three of",
+          "context": "in Avignon. Write a postcard in French to your friend Ronan/Sinéad in which you include three of the following five points: ‐ The weather is hot and there are a lot of tourists. ‐ You saw the famous bridge this morning. ‐ You bought some flowers in the market. ‐ Yo",
+          "policy": "finite-pool",
+          "reason": "The paper requires three of the five printed communication points. Every combination keeps the single 30-mark tariff of this writing task.",
+          "task": "B2B",
+          "choose": 3,
+          "poolSize": 5,
+          "routes": 10
+        },
+        {
+          "key": "16:1:2bbf23aeaa16",
+          "page": 16,
+          "phrase": "three of",
+          "context": "linn na seachtaine. (a) Your French friends Chantal and Pierre are coming to visit. Note three of the following five points in French in your diary: ‐ Your French friends phoned today. ‐ Your friends want to visit Ireland this month. ‐ Chantal and Pierre will arrive",
+          "policy": "finite-pool",
+          "reason": "The paper requires three of the five printed communication points. Every combination keeps the single 30-mark tariff of this writing task.",
+          "task": "B3A",
+          "choose": 3,
+          "poolSize": 5,
+          "routes": 10
+        },
+        {
+          "key": "16:2:6fee3458cd71",
+          "page": 16,
+          "phrase": "three of",
+          "context": "ur Jacques Privat, Hôtel Mimosa, Promenade des Anglais, 06200 Nice. In the letter include three of the following five points: ‐ Say you will travel to Nice with some friends in the autumn. ‐ Say you will arrive at the hotel on 10th September. ‐ Say you would like to boo",
+          "policy": "finite-pool",
+          "reason": "The paper requires three of the five printed communication points. Every combination keeps the single 30-mark tariff of this writing task.",
+          "task": "B3B",
+          "choose": 3,
+          "poolSize": 5,
+          "routes": 10
+        }
+      ]
+    },
+    "2023-hl-deferred-000-paper.pdf": {
+      "sha256": "5feb661ec0939b8bbc8a52e9e22f90c33fb75aa66f81bc9c27b359ad93a6ff43",
+      "directives": [
+        {
+          "key": "3:1:2baf8960259a",
+          "page": 3,
+          "phrase": "Answer TWO",
+          "context": "and Reading Comprehension 2. Section B Written Production / Production Écrite 100 marks Answer TWO questions – Question 1 and ONE of Questions 2, 3, 4, 5 and 6.",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "3:2:90946ba3c799",
+          "page": 3,
+          "phrase": "ONE of",
+          "context": "B Written Production / Production Écrite 100 marks Answer TWO questions – Question 1 and ONE of Questions 2, 3, 4, 5 and 6.",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "4:1:42f18453c7a0",
+          "page": 4,
+          "phrase": "choix multiple",
+          "context": "points Lisez les passages suivants et répondez aux questions. Dans le cas des questions à choix multiple, indiquez la bonne réponse en cochant ( ) la case correcte. Aux autres questions en français, il faut répondre en français. Aux questions posées en irlandais/anglais, il faut ré",
+          "policy": "mcq-answer",
+          "reason": "Choose the correct comprehension answer. Distractors do not create elective examination tasks."
+        },
+        {
+          "key": "8:1:0b937b6ff1d3",
+          "page": 8,
+          "phrase": "Répondez à deux",
+          "context": "tificate Examination 8 French – Higher Level Section B Production Écrite 100 points Répondez à deux questions – la Question 1 et une des Questions 2, 3, 4, 5 et 6. N.B. LA QUESTION 1 EST OBLIGATOIRE. Question 1 (60 points) Répondez à (a) ou à (b) ou à (c). (a) Dans",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "8:2:961ea646b224",
+          "page": 8,
+          "phrase": "une des Questions",
+          "context": "Section B Production Écrite 100 points Répondez à deux questions – la Question 1 et une des Questions 2, 3, 4, 5 et 6. N.B. LA QUESTION 1 EST OBLIGATOIRE. Question 1 (60 points) Répondez à (a) ou à (b) ou à (c). (a) Dans la Section A, Q.1, Clémence nous parle de sa vi",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "8:3:c65a58576aff",
+          "page": 8,
+          "phrase": "Répondez à (a)",
+          "context": "s 2, 3, 4, 5 et 6. N.B. LA QUESTION 1 EST OBLIGATOIRE. Question 1 (60 points) Répondez à (a) ou à (b) ou à (c). (a) Dans la Section A, Q.1, Clémence nous parle de sa vie à la campagne. A votre avis, est‐ce que la vie à la campagne est meilleure que la vie en ville ? (90",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "8:4:7c934be4099a",
+          "page": 8,
+          "phrase": "OU",
+          "context": "is, est‐ce que la vie à la campagne est meilleure que la vie en ville ? (90 mots environ) OU (b) Dans la Section A, Q.2, le narrateur vient en aide à la jeune femme. C’est un acte de gentillesse de sa part. Et vous, est‐ce que vous avez déjà rendu un petit service à quel",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "8:5:e96fbf029349",
+          "page": 8,
+          "phrase": "réel ou imaginaire",
+          "context": "vait dans une situation difficile ? Racontez ce qui s’est passé. (Votre récit peut être réel ou imaginaire.) (90 mots environ) OU (c) Dans la Section A, Q2, le narrateur craint que son père ait une réaction négative face à ses décisions. Est‐ce que vous croyez que les parents me",
+          "policy": "open-scope",
+          "reason": "A real or imaginary récit allows the candidate to supply any narrative. It is open creative scope, not a closed set of printed prompts."
+        },
+        {
+          "key": "8:6:360a95f3387d",
+          "page": 8,
+          "phrase": "OU",
+          "context": "acontez ce qui s’est passé. (Votre récit peut être réel ou imaginaire.) (90 mots environ) OU (c) Dans la Section A, Q2, le narrateur craint que son père ait une réaction négative face à ses décisions. Est‐ce que vous croyez que les parents mettent trop de pression sur",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "11:1:fdb192f37ac5",
+          "page": 11,
+          "phrase": "Répondez à une",
+          "context": "na hArdteistiméireachta 11 Fraincis – Ardleibhéal Questions 2 à 6 (40 points) Répondez à une des questions suivantes. Question 2 C’était un samedi soir et vous aviez l’intention de sortir avec vos copains. Au dernier moment, vos parents vous ont demandé de f",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "11:2:dba9709bbb2d",
+          "page": 11,
+          "phrase": "OU",
+          "context": "sœur. Qu’est‐ce que vous notez à ce sujet dans votre journal intime ? (75 mots environ) OU Question 3 Votre amie française, Nicole, vous a envoyé le courrier électronique suivant. « J’ai lu un petit reportage sur le système scolaire en Irlande. Ça m’a beaucoup intére",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "11:3:24b7745c402b",
+          "page": 11,
+          "phrase": "OU",
+          "context": "’est‐ce que tu penses du choix de matières dans les écoles en Irlande ? (75 mots environ) OU Question 4 (75 mots environ) De nos jours la technologie facilite la communication mais, malheureusement depuis quelques années, on a perdu l’art de la conversation",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "12:1:4f526bdb651e",
+          "page": 12,
+          "phrase": "OU",
+          "context": "Leaving Certificate Examination 12 French – Higher Level OU Question 5. (75 mots environ) OU Question 6. « On n’a pas besoin d’être connu ou célèbre pour être un héros – on trouve de vrais héros dans la vie de tous les jours »",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "12:2:6c8c9e29bca3",
+          "page": 12,
+          "phrase": "OU",
+          "context": "Certificate Examination 12 French – Higher Level OU Question 5. (75 mots environ) OU Question 6. « On n’a pas besoin d’être connu ou célèbre pour être un héros – on trouve de vrais héros dans la vie de tous les jours » Ludovic 19 ans Etes‐vous d’accord av",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        }
+      ]
+    },
+    "2023-ol-deferred-000-paper.pdf": {
+      "sha256": "242d04a7b175ed283339813b0202a7d64b858e8730292182cfd5585b22bde20d",
+      "directives": [
+        {
+          "key": "3:1:71f80af2c3b4",
+          "page": 3,
+          "phrase": "Answer ANY TWO",
+          "context": "60 marks Answer ALL questions. Section B Written Production / Production Écrite 60 marks Answer ANY TWO questions from questions 1(a), 1(b), 2(a), 2(b), 3(a) and 3(b).",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "12:1:ce93afa5746c",
+          "page": 12,
+          "phrase": "choisissez",
+          "context": "n 12 French – Ordinary Level Section B Expression Écrite 60 points Dans cette section, choisissez DEUX des Questions 1(a), 1(b), 2(a), 2(b), 3(a) et 3(b). Rédigez vos réponses en français. Ceist 1/Question 1 (a) Complétez la lettre ci‐dessous en écrivant les mots suivants da",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "12:2:61eb1b9f4d9c",
+          "page": 12,
+          "phrase": "DEUX des Questions",
+          "context": "h – Ordinary Level Section B Expression Écrite 60 points Dans cette section, choisissez DEUX des Questions 1(a), 1(b), 2(a), 2(b), 3(a) et 3(b). Rédigez vos réponses en français. Ceist 1/Question 1 (a) Complétez la lettre ci‐dessous en écrivant les mots suivants dans les espaces appr",
+          "policy": "independent-tasks",
+          "reason": "Exam-level choice among separately priced questions or lettered alternatives. Each is kept as an independent task at its own published tariff; answering two of them does not create one combined practice card."
+        },
+        {
+          "key": "13:1:54f6ba346252",
+          "page": 13,
+          "phrase": "Choisissez",
+          "context": "rmarché Carrefour à Toulouse. Remplissez le formulaire suivant. N.B. Pour 6, 7, 8 et 9 : Choisissez trois questions et répondez par des phrases complètes. 1. Nom : ________________________________________________________________ 2. Prénom : ___________________________________",
+          "policy": "finite-pool",
+          "reason": "The paper requires three from four sentence questions, yielding four routes; the five initial fields each have their own 2-mark boundary.",
+          "task": "B1B",
+          "choose": 3,
+          "poolSize": 4,
+          "routes": 4
+        },
+        {
+          "key": "14:1:5a7e071ff37e",
+          "page": 14,
+          "phrase": "three of",
+          "context": "or your friend Henri/Claire with whom you are staying in Lille. In the message include three of the following five points: ‐ You met Louis at the swimming pool this afternoon. ‐ He cannot go to the concert tomorrow. ‐ He will phone you at 9 p.m. ‐ You have gone to",
+          "policy": "finite-pool",
+          "reason": "The paper requires three of the five printed communication points. Every combination keeps the single 30-mark tariff of this writing task.",
+          "task": "B2A",
+          "choose": 3,
+          "poolSize": 5,
+          "routes": 10
+        },
+        {
+          "key": "14:2:6200f59626b8",
+          "page": 14,
+          "phrase": "three of",
+          "context": "s in Antibes. Write a postcard in French to your friend Sabine/Hugo in which you include three of the following five points: ‐ You are on holidays in Antibes with your sister. ‐ Yesterday you bought some presents in town. ‐ You hope to visit Grasse next week. ‐ You w",
+          "policy": "finite-pool",
+          "reason": "The paper requires three of the five printed communication points. Every combination keeps the single 30-mark tariff of this writing task.",
+          "task": "B2B",
+          "choose": 3,
+          "poolSize": 5,
+          "routes": 10
+        },
+        {
+          "key": "16:1:0f2e0273d4ae",
+          "page": 16,
+          "phrase": "three of",
+          "context": "rt. ‐ Fanfaidh tú sa bhaile tráthnóna. (a) You have just spent an enjoyable day. Note three of the following five points in French in your diary: - You went cycling near the river this morning. - The countryside is beautiful in summer. - At 3 p.m. you went to the cine",
+          "policy": "finite-pool",
+          "reason": "The paper requires three of the five printed communication points. Every combination keeps the single 30-mark tariff of this writing task.",
+          "task": "B3A",
+          "choose": 3,
+          "poolSize": 5,
+          "routes": 10
+        },
+        {
+          "key": "16:2:fe5e1bd25e79",
+          "page": 16,
+          "phrase": "three of",
+          "context": "to L’Office de Tourisme, 1 rue Jean Jaurès, 74000 Annecy, France. In the letter include three of the following five points: ‐ You hope to spend a week in France in July. ‐ You are looking for an apartment near the lake. - You intend to go swimming every day. - You woul",
+          "policy": "finite-pool",
+          "reason": "The paper requires three of the five printed communication points. Every combination keeps the single 30-mark tariff of this writing task.",
+          "task": "B3B",
+          "choose": 3,
+          "poolSize": 5,
+          "routes": 10
+        }
+      ]
+    }
+  }
+}

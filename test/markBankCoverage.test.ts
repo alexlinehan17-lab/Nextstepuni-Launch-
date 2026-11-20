@@ -374,6 +374,11 @@ describe('Mark Bank paper-coverage ratchet', () => {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
+      // The deferred sittings' reviewed cards (reconcile.py's FRENCH_DEFERRED_FILES), where present.
+      for (const name of ['deferred-writing.json', 'deferred-reading.json', 'deferred-cloze.json', 'deferred-listening.json']) {
+        const file = resolve(__dirname, '..', 'components', 'MarkBank', 'cards', subject, name);
+        if (existsSync(file)) h.update(readFileSync(file));
+      }
     }
     expect(
       h.digest('hex').slice(0, 16),
