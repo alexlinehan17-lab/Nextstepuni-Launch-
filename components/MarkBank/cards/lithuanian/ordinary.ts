@@ -854,6 +854,33 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC550GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2023 Ordinary Level — © State Examinations Commission.",
+    id: "lt-2023-ol-a-1-h", topicId: "lithuanian-2-1", conceptId: "veike-severija-sunumeruokite-ivykius-eiles-tvarka",
+    section: "U1", questionRef: "2023 OL Section A Q1(h)",
+    stem: "Pirma užduotis",
+    questionText: "Ką veikė Severija? Sunumeruokite įvykius eilės tvarka pagal pavyzdį. (3 dalis)\nPamatė autobusą.\nPradėjo skaityti.\nPrirakino dviratį. 2\nAtsisėdo ant kelmo.\nPakilo ir ėmė vaikštinėti.\nĖmė lyti. 1",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "6", marks: 2, contextNote: "For “Pamatė autobusą.”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "4", marks: 2, contextNote: "For “Pradėjo skaityti.”" },
+    { id: "r-3", kind: "point", verbatim: "3", marks: 2, contextNote: "For “Atsisėdo ant kelmo.”" },
+    { id: "r-4", kind: "point", verbatim: "5", marks: 2, contextNote: "For “Pakilo ir ėmė vaikštinėti.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PIRMA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Lithuanian 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2023 Ordinary Level — © State Examinations Commission.",
     id: "lt-2023-ol-a-1-i", topicId: "lithuanian-2-1", conceptId: "teisinga-atsakyma-autobuso-durys-buvo-uzdarytos",
     section: "U1", questionRef: "2023 OL Section A Q1(i)",
     stem: "Pirma užduotis",
