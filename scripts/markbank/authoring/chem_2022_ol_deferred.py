@@ -223,7 +223,9 @@ C.route([k('11', 'c', 'iv')], TOPIC, 'many-moles-oxygen-gas-priestley-obtained',
 # (scheme page 16), each lifted. A's lead-in prints three asks: two ways industrial chemistry contributes (ANY TWO:
 # 4 + 3), two differences between a batch and a continuous process (ANY TWO: 9 + 3), and one chemical property of glass
 # and stainless steel, which the scheme neither answers nor prices: its prices for A add to the paper's 25 without it.
-# Then "Answer any one of the following" (i)-(iii), ANY ONE: (6).
+# That third ask is held open (coordinator, 20 Nov: never a mark the SEC did not print, and no row the session cannot
+# show unpriced) until the unpricedSection field (CARD-STANDARD 10i) can show it. Then "Answer any one of the
+# following" (i)-(iii), ANY ONE: (6).
 _ways = [C.lifted('x', o, 4, '')['verbatim'] for o in (
     'makes drugs to cure disease', 'makes artificial fertilizer', 'produces new materials, e.g fabrics or plastics',
     'produces dyes (semiconductors, fuels)', 'provides employment')]
@@ -237,13 +239,7 @@ C.add([ka('11', 'd', None, 'A')], TOPIC, 'industrial-chemistry-batch-and-continu
     anyN('r-2', _batch[0], 12, 2, 9, _batch + _cont,
          'Any two differences, (9 + 3). The scheme lists what marks a batch process (the first three: "Batch: '
          'reactants added at start only / product removed only at the end / definite reaction time / etc") and a '
-         'continuous one (the last three: "Continuous: ... / etc").', steps=[9, 3]),
-    {'id': 'r-3', 'kind': 'criterion', 'verbatim': 'The scheme prints no answer for this part.', 'marks': 0,
-     'unprinted': True,
-     'contextNote': 'For "Glass and stainless steel are often used in the manufacture of reaction vessels in industry. '
-                    'Give one chemical property of these materials which makes them suitable for this purpose." the '
-                    'scheme prints no answer and no mark: its marks for A\'s other asks add to the 25 the paper '
-                    'prints for A.'}], total=19)
+         'continuous one (the last three: "Continuous: ... / etc").', steps=[9, 3])], total=19)
 C.add([ka('11', 'd', 'i', 'A'), ka('11', 'd', 'ii', 'A'), ka('11', 'd', 'iii', 'A')], TOPIC,
       'ammonia-nitrogen-monoxide-magnesium-oxide', [
     anyN('r-1', 'making fertilizer / making explosives', 6, 1, 6, [
