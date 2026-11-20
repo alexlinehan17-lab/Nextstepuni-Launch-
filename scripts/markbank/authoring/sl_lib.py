@@ -525,10 +525,14 @@ def rule_sentence(subject, doc):
             # the sentence's start: after the last sentence end before the
             # answer word, on this line or the one above it
             prev = lines[i - 1] if i else ''
-            head = f'{prev} {line[:m.start()]}' if prev else line[:m.start()]
-            ends = [e.end() for e in SENT_END.finditer(head)]
-            lead = head[ends[-1]:].strip() if ends else (line[:m.start()].strip() if prev else head.strip())
-            text = f'{lead} {line[m.start():]}'.strip() if lead else line[m.start():]
+            combined = f'{prev} {line}' if prev else line
+            at = (len(prev) + 1 if prev else 0) + m.start()
+            ends = [e.end() for e in SENT_END.finditer(combined[:at])]
+            start = ends[-1] if ends else (len(prev) + 1 if prev else 0)
+            # Cut, never re-joined: the printed spacing stands ("It‐tweġibiet",
+            # where the answer word opens inside a hyphenated word; Maltese 2022).
+            text = combined[start:].strip()
+            lead = combined[start:at].strip()
             for nxt in lines[i + 1:i + RULE_LINES]:
                 stop = SENT_END.search(text, len(lead))
                 if stop:

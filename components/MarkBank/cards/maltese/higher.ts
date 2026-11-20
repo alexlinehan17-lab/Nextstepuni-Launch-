@@ -106,6 +106,225 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2018 Higher Level — © State Examinations Commission.",
+    id: "mlt-2018-hl-i-1-a", topicId: "maltese-0-0", conceptId: "minijiet-aktar-bikrija",
+    section: "I", questionRef: "2018 HL Section I Q1(a)",
+    questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: fi żminijiet aktar bikrija",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "fi żmien l-imgħoddi/ ta’ qabel", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2018 Higher Level — © State Examinations Commission.",
+    id: "mlt-2018-hl-i-1-b", topicId: "maltese-0-0", conceptId: "nsibuha-diffi-ningwalawha-mieg",
+    section: "I", questionRef: "2018 HL Section I Q1(b)",
+    questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: nsibuha diffiċli ningwalawha miegħu",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ma nsibuhiex faċli biex nagħmlu ħbieb ma’ din il-persuna/diffiċli biex naqblu miegħu", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2018 Higher Level — © State Examinations Commission.",
+    id: "mlt-2018-hl-i-1-ċ", topicId: "maltese-0-0", conceptId: "konna-nie",
+    section: "I", questionRef: "2018 HL Section I Q1(ċ)",
+    questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: konna nieħdu r-ruħ",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "konna nserrħu rasna/ nieqfu ninkwetaw/nistrieħu", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2018 Higher Level — © State Examinations Commission.",
+    id: "mlt-2018-hl-i-1-d", topicId: "maltese-0-0", conceptId: "jirrestrin",
+    section: "I", questionRef: "2018 HL Section I Q1(d)",
+    questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: jirrestrinġi",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "jillimita/ inaqqas/ jagħlaq", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2018 Higher Level — © State Examinations Commission.",
+    id: "mlt-2018-hl-i-1-e", topicId: "maltese-0-0", conceptId: "fissa",
+    section: "I", questionRef: "2018 HL Section I Q1(e)",
+    questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: fissa",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "li ma tiċċaqlaqx/ stabbli/ dejjem fl-istess post", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2018 Higher Level — © State Examinations Commission.",
+    id: "mlt-2018-hl-i-4", topicId: "maltese-0-1", conceptId: "istudju-tal-fruntieri-huwa-interessanti-aliex",
+    section: "I", questionRef: "2018 HL Section I Q4",
+    questionText: "L-istudju tal-fruntieri huwa interessanti għaliex, bħal studji oħrajn, iġibna konxji ta’ ħwejjeġ ovvji, ovvji tant li jaħarbulna. Ikkkummenta dwar dan il-kliem fil-kuntest tal-artiklu.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "L-awtur juri li fil-ħajja ta’ kuljum hemm affarijiet li ma nagħtux kashom minkejja li huma importanti; il-fruntieri bejn il-bnedmin jeżistu, qegħdin hemm iżda qatt ma naħsbu dwarhom.", marks: null, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\" The scheme prints above this answer: “(It-tweġibiet għall-mistoqsijiet 4, 5, 6 jeħtieġu r-rispons tal-kandidat. It-tweġibiet hawn taħt huma eżempji.)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2018 Higher Level — © State Examinations Commission.",
+    id: "mlt-2018-hl-i-5", topicId: "maltese-0-1", conceptId: "aliex-hemm-enfassi-qawwija-fuq-fatt",
+    section: "I", questionRef: "2018 HL Section I Q5",
+    questionText: "Għaliex hemm enfassi qawwija fuq il-fatt li l-fruntieri jiċċaqilqu?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dan juri kif id-diviżjonijiet li l-bniedem joħloq huma ta’ spiss artifiċjali jew bla raġuni soda għaliex jinbidlu skont il-kuntest storiku jew soċjali.", marks: null, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\" The scheme prints above its answer to Question 4: “(It-tweġibiet għall-mistoqsijiet 4, 5, 6 jeħtieġu r-rispons tal-kandidat. It-tweġibiet hawn taħt huma eżempji.)”." },
+    { id: "r-2", kind: "point", verbatim: "Issir ukoll referenza għall-kunċett ta’ bidla li ssir fil-fruntieri; ħaġa li tidher kontradittorja għall-bidu.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2018 Higher Level — © State Examinations Commission.",
+    id: "mlt-2018-hl-ii-1", topicId: "maltese-1-0", conceptId: "iddiskuti-dan-madwar-100-kelma-minn",
+    section: "II", questionRef: "2018 HL Section II Q1",
+    questionText: "Iddiskuti dan li ġej f’madwar 100 kelma. Minn meta nkunu żgħar, aħna nħossu l-bżonn u anke nitgħallmu npoġġu fruntieri bejnna u bejn dawk li aħna nqisuhom differenti minna.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 30, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\" The scheme prints answers for Part I only and nothing for this part.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TAQSIMA II",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2018 Higher Level — © State Examinations Commission.",
+    id: "mlt-2018-hl-iii-1", topicId: "maltese-1-0", conceptId: "nistg-ixu-bla-fruntieri-ala-meta",
+    section: "III", questionRef: "2018 HL Section III Q1",
+    questionText: "Agħżel mistoqsija waħda minn din it-taqsima u ikteb madwar 300 kelma. Nistgħu ngħixu bla fruntieri? Bħala żgħażugħ/a, meta tħares lejn il-futur, taħseb li l-ġenerazzjoni tiegħek tista’ ’l quddiem tgħix bla fruntieri? Iddiskuti.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\" The scheme prints answers for Part I only and nothing for this part.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2018 Higher Level — © State Examinations Commission.",
+    id: "mlt-2018-hl-iii-2", topicId: "maltese-1-0", conceptId: "ilbies-jag-mlek-nies-proverbju-malti",
+    section: "III", questionRef: "2018 HL Section III Q2",
+    questionText: "Agħżel mistoqsija waħda minn din it-taqsima u ikteb madwar 300 kelma. ”L-ilbies jagħmlek nies” jgħid il-proverbju Malti. Kemm hu veru li nistgħu nagħmlu ġudizzju preċiż tan-nies mill-ħwejjeġ li jilbsu? Ikkonsidra argumenti favur u kontra u agħti l-opinjoni tiegħek f’komponiment ta’ madwar 300 kelma.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 1: \"Wieġeb bil-Malti, b’mod ċar u preċiż taqsimiet I, II u III tal-karta tal-eżami.\" The scheme prints answers for Part I only and nothing for this part.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2019, level: "higher",
     paperFileid: "LC557ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2019 Higher Level — © State Examinations Commission.",
