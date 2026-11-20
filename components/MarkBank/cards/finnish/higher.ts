@@ -462,6 +462,61 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2011 Higher Level — © State Examinations Commission.",
+    id: "fin-2011-hl-ii-1", topicId: "finnish-1-0", conceptId: "kirjoita-suunnilleen-100-sanan-mittainen-oma",
+    section: "II", questionRef: "2011 HL Section II Q1",
+    questionText: "Kirjoita suunnilleen 100 sanan mittainen oma kommenttisi tekstin väitteeseen: ”Investointi vanhemmuuteen on niin vaivalloinen ja isotöinen asia, että ellei sokeaa rakastumista olisi, koko homma jäisi.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "mitä vanhemmuus on – läsnäoloa, hoivaa, rakkautta, taloudellista turvaa, kasvattamista", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" The scheme heads them: “Hyvän vastauksen aineksia:”." },
+    { id: "r-2", kind: "point", verbatim: "kiinnittyminen lapseen tapahtuu varhaisessa vaiheessa – tärkeät 3kk ja 3v", marks: null },
+    { id: "r-3", kind: "point", verbatim: "vauva-ajan ja lapsuuden merkitys myöhemmille elämänvaiheille", marks: null },
+    { id: "r-4", kind: "point", verbatim: "luonto huolehtii osasta: kiinnittyminen on myös biologiaa, oksitosiinihormoni erittyy = ”vaistomainen rakkaus”", marks: null },
+    { id: "r-5", kind: "point", verbatim: "ihminen siirtää huolehtimisen malleja eteenpäin = evoluutio", marks: null },
+    { id: "r-6", kind: "point", verbatim: "varhaisen vuorovaikutuksen ongelmat näkyvät myöhemmin", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II TEHTÄVÄ: 30P",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2011 Higher Level — © State Examinations Commission.",
+    id: "fin-2011-hl-iii-1", topicId: "finnish-1-1", conceptId: "veri-vetta-sakeampaa-ota-kantaa-sanontaan",
+    section: "III", questionRef: "2011 HL Section III Q1",
+    questionText: "Kirjoita suunnilleen 300 sanan aine. Valitse aiheeksi toinen näistä: ”Veri on vettä sakeampaa”. Ota kantaa sanontaan.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" Under “III Tehtävä:” the scheme reprints only the instruction “Kirjoita suunnilleen 300 sanan aine. Valitse aiheeksi toinen näistä:” and the two titles; it prints no answer, no content and no criteria for this part.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2011 Higher Level — © State Examinations Commission.",
+    id: "fin-2011-hl-iii-2", topicId: "finnish-1-1", conceptId: "useimmat-kansat-ovat-juuri-niin-onnellisia",
+    section: "III", questionRef: "2011 HL Section III Q2",
+    questionText: "Kirjoita suunnilleen 300 sanan aine. Valitse aiheeksi toinen näistä: ”Useimmat kansat ovat juuri niin onnellisia kuin ne päättävät olla” (Abraham Lincoln, USA:n 16. presidentti 1809-1865)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\" Under “III Tehtävä:” the scheme reprints only the instruction “Kirjoita suunnilleen 300 sanan aine. Valitse aiheeksi toinen näistä:” and the two titles; it prints no answer, no content and no criteria for this part.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2012, level: "higher",
     paperFileid: "LC049ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2012 Higher Level — © State Examinations Commission.",
