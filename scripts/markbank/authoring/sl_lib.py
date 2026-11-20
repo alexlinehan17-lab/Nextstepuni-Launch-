@@ -971,8 +971,10 @@ def cards(subject, year, specs, level='hl', scheme=True):
         note = lang_note = rule_note(subject, doc, language)
         card = {
             'id': (mgr_all.card_id(year, level, key) if mgr
-                   else (lt_all.card_id if lt else card_id)(subject, year, level, key).lower() if added
+                   # an lt part printed as one unnumbered task is keyed bare, census-added or not
+                   # (Latvian 2014's commentary, added: lv-2014-hl-ii)
                    else f'{lt_all.ID_PREFIX[subject]}-{year}-{level}-{key[0].lower()}' if lt and key[1] is None
+                   else (lt_all.card_id if lt else card_id)(subject, year, level, key).lower() if added
                    else (lt_all.card_id if lt else card_id)(subject, year, level, key)),
             'subjectId': subject,
             'level': LEVEL_WORD[level],

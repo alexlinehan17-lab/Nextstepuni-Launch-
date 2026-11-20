@@ -867,6 +867,203 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2014 Higher Level — © State Examinations Commission.",
+    id: "lv-2014-hl-i-2", topicId: "latvian-0-1", conceptId: "kas-latvija-tiek-darits-lai-attistitu",
+    section: "I", questionRef: "2014 HL Section I Q2",
+    questionText: "Kas Latvijā tiek darīts, lai attīstītu skolēnu, jauniešu talantu fizikas jomā?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tiek koordinēta fizikas olimpiāžu darbība", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Izveidota Jauno fiziķu skola", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Izveidota apdāvināto bērnu fakultatīvā skola", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Katru nedēļu ir lekcijas un fizikas svētki", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Jaunie talanti piedalās starptautiskās olimpiādēs", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2014 Higher Level — © State Examinations Commission.",
+    id: "lv-2014-hl-i-3", topicId: "latvian-0-1", conceptId: "kapec-tiek-organizets-zinatnieku-uznemeju-forums",
+    section: "I", questionRef: "2014 HL Section I Q3",
+    questionText: "Kāpēc tiek organizēts zinātnieku un uzņēmēju forums?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lai iepazīstinātu uzņēmējus ar jaunākajiem pētījumiem", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Lai veicinātu zinātnieku un uzņēmēju sadarbību", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Lai apmainītos idejām", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Uzņēmēji var piedāvāt sadarbību, finansēt pētījumu projektus", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Uzņēmēji var kādu atklājumu pārvērst konkrētā produktā, kas kalpo un palīdz cilvēkiem", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Zinātnieki var sniegt padomus, konsultēt uzņēmējus", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Uzņēmēji var ieteikt un parādīt jomas (piem., veselības joma, lauksaimniecība, pārtikas kvalitāte), kurās nepieciešama zinātnieku palīdzība un atklājumi, kas varētu kalpot un palīdzēt cilvēkiem", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2014 Higher Level — © State Examinations Commission.",
+    id: "lv-2014-hl-i-4", topicId: "latvian-0-1", conceptId: "dzilakas-domasanas-kultura-patlaban-apdraudeta-kapec",
+    section: "I", questionRef: "2014 HL Section I Q4",
+    questionText: "„Dziļākas domāšanas kultūra patlaban ir apdraudēta”. Kāpēc, jūsuprāt, Vjačeslavs nonācis pie šāda secinājuma? Vai jūs piekrītat šim apgalvojumam?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Vjačeslavs pie šāda secinājuma nonācis, vērojot mūsdienu paviršās domāšanas un mācīšanas tendences, domāšanas seklumu un sadrumstalotību. Tendenci informāciju pārkopēt no interneta resursiem", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Masu izglītība pārvērtusies par \"kaut ko sakopē, kaut ko sakombinē!'' Nav izpratnes, ka plaģiāts ir problēma", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Nedomājot precīzi, mēs riskējam, ka mūsu vietā domās kāds cits, ka mēs esam tikai sekotāji. Vjačelavs nevēlas, lai latvieši pasaulē ir pazīstami kā aklas sekošanas nācija. Mums pašiem jābūt, ko teikt", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2014 Higher Level — © State Examinations Commission.",
+    id: "lv-2014-hl-i-5", topicId: "latvian-0-1", conceptId: "zinatnieki-cilveki-savam-moralajam-izvelem-pasaules",
+    section: "I", questionRef: "2014 HL Section I Q5",
+    questionText: "„Zinātnieki ir cilvēki ar savām morālajām izvēlēm, pasaules skatījumu”. Izsakiet argumentētu viedokli par šo apgalvojumu!",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Zinātniekam ir jābūt sirdsapziņai, stabilai vērtību sistēmai, jāapzinās, kādam mērķim kalpos viņa pētījumi", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "intelektuālais godīgums prasītu iesaistīties un izmantot savu autoritāti, lai iestātos par taisnīgumu", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Zinātniekiem jāapzinās, cik tālu viņi var iet, vai mērķis attaisno līdzekļus", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Zinātniekiem ir svarīga ne tikai intelektuālā brīvība, bet arī tas, lai viņu atklājumi kalpotu cilvēku labklājībai, palīdz, rada, nevis kalpo par dzīvības iznīcināšanas ieroci", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2014 Higher Level — © State Examinations Commission.",
+    id: "lv-2014-hl-i-6", topicId: "latvian-0-1", conceptId: "raksturojiet-vjaceslavu-cilveku-zinatnieku-balstoties",
+    section: "I", questionRef: "2014 HL Section I Q6",
+    questionText: "Raksturojiet Vjačeslavu kā cilvēku un zinātnieku, balstoties uz tekstu!",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mērķtiecīgi strādājis, lai kļūtu par zinātnieku: jau skolā piedalījies eksakto zinību olimpiādēs un guvis zelta medaļas republikas līmenī, studējis fiziku Latvijas Universitātē un Telavivā, pašlaik strādā par pasniedzēju", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Vjačeslava nepieciešamais minimums ir intelektuālā brīvība, lai viņš būtu paēdis un varētu strādāt zinātnē", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Spēj adaptēties, pielāgoties", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Uzskata, ka zinātnē jābūt tiem, kam ir iekšējā motivācija, kas spēj pārvarēt grūtības, tikt galā ar problēmām un nepadodas", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Vjačeslavs ir atvērts, aktīvs, sadarbojas ar uzņēmējiem, cenšas realizēt savus projektus", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Vēlas dot Latvijai, nevis ņemt un kaut ko prasīt. Viņš uzdod sev būtisku jautājumu, kas ir tas, ko viņš var izdarīt zinātnes un Latvijas labā", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Aktīvi un mērķtiecīgi strādā ar spējīgiem jauniešiem, palīdzot viņiem attīstīt talantus eksaktajās zinātnēs", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2014 Higher Level — © State Examinations Commission.",
+    id: "lv-2014-hl-ii", topicId: "latvian-1-0", conceptId: "cilvekresursi-tas-derigais-izraktenis-kas-latvijai",
+    section: "II", questionRef: "2014 HL Section II",
+    questionText: "„Cilvēkresursi ir tas derīgais izraktenis, kas Latvijai ļoti jāsargā''. Izsakiet viedokli par šo apgalvojumu, balstoties uz tekstu! (vismaz 100 vārdu)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Viens no valsts ekonomiskās izaugsmes pamatnosacījumiem ir cilvēkresursu kvantitāte un kvalitāte", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints the task as: “„Cilvēkresursi ir tas derīgais izraktenis, kas Latvijai ļoti jāsargā''. Izsaki viedokli par šo apgalvojumu, balstoties uz tekstu! (vismaz 100 vārdu)”. The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Eiropas brīvais darba tirgus sniedz cilvēkiem jaunas iespējas", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Pēdējos gados vērojama kvalificēta, izglītota darbaspēka aizplūšana uz citām ES valstīm labāk atalgota darba un labākas dzīves meklējumos", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Imigrācija, t.i., cilvēkresursu aizplūšana uz citām valstīm, var apdraudēt tautas pastāvēšanu", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Intelektuālā potenciāla un cilvēkresursu zaudēšanas lielākais iemesls ir zems atalgojums, finansējuma, darba iespēju, atbalsta un saistošu izaicinājumu trūkums", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Pašlaik ir daudz jaunu zinātnieku Latvijā, kuri aizbrauca, jo viņi nespēj realizēt savus projektus. Latvijā viņu pētījumi apstājas. Zinātne nav tirgus, par to nevar pateikt, \"kurš var, izdzīvo, kurš ne - lai iet!'' Tas ir milzīgs zaudējums valstij. Tāpēc ir ļoti liela nozīme, kā mazie naudas resursi, kas valstij ir, tiek sadalīti. Jācenšas piesaistīt šos resursus no starptautiskiem fondiem", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Jābūt ciešākai sadarbībai starp izglītības iestādēm un uzņēmējiem, lai veicinātu esošo talantu izaugsmi, nodrošinātu viņiem iespēju strādāt un realizēt savus projektus Latvijā", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II DAĻA",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2014 Higher Level — © State Examinations Commission.",
+    id: "lv-2014-hl-ii-1", topicId: "latvian-1-0", conceptId: "zinatne-nepastav-tikai-zinatnes-del-pastav",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) „Zinātne nepastāv tikai zinātnes dēļ. Tā pastāv cilvēku dēļ”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The paper heads this part “II daļa (40 punkti)”; the scheme heads it “III daļa (40 punkti)”. The scheme reprints the instruction and the two titles and prints nothing under them: no criteria, no descriptive line and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2014 Higher Level — © State Examinations Commission.",
+    id: "lv-2014-hl-ii-2", topicId: "latvian-1-0", conceptId: "mes-varam-apcelot-visu-pasauli-mekledami",
+    section: "II", questionRef: "2014 HL Section II Q2",
+    questionText: "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) „Mēs varam apceļot visu pasauli, meklēdami skaistumu, bet mēs to neatradīsim, ja neglabāsim savā sirdī”. Ralfs Valdo Emersons (1803-1882)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The paper heads this part “II daļa (40 punkti)”; the scheme heads it “III daļa (40 punkti)”. The scheme reprints the instruction and the two titles and prints nothing under them: no criteria, no descriptive line and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2015, level: "higher",
     paperFileid: "LC549ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2015 Higher Level — © State Examinations Commission.",

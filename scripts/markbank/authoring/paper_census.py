@@ -4365,13 +4365,28 @@ ADDED_ASKS = {
         {'key': ['II', 1, None, None], 'label': 'Section II Q1', 'before': ['II', 2, None, None],
          'cut': (4, '1.\u201cSuomessa kannustamisen', '1.'), 'alternative': True},
     ],
+    # Latvian 2014 misprints its essay head as "II daļa (40 punkti)" (p4 y618;
+    # the scheme heads it "III daļa (40 punkti)"), so the lt walker reads one
+    # Part II and keys the two essay titles II1/II2, and the commentary printed
+    # under the true "II daļa (30 punkti)" (y521), one task with no number, gets
+    # no ask. Added here as the bare Section II the other sittings key, its marks
+    # read off that head.
+    ('latvian', 2014, 'hl'): [
+        {'key': ['II', None, None, None], 'label': 'Section II', 'before': ['II', 1, None, None],
+         'lines': (4, '\u201eCilv\u0113kresursi ir tas', '(vismaz 100 v\u0101rdu)'),
+         'price_head': (4, 'II da\u013ca (30'), 'price': r'\((\d+)\s*punkti\)'},
+    ],
 }
 
 
 def _added_leaf(subject, year, level, spec):
     """One ADDED_ASKS leaf, its text and price read off the printed paper."""
-    import eu_paper
-    P = eu_paper.EuPaper(year, level, subject)
+    if subject in ('latvian', 'czech'):            # the lt walker's sittings
+        import lt_paper
+        P = lt_paper.LtPaper(year, level, subject)
+    else:
+        import eu_paper
+        P = eu_paper.EuPaper(year, level, subject)
     if 'cut' in spec:
         # a title the text layer welds onto another printed line: the words after `after`
         page, opening, after = spec['cut']
@@ -4386,6 +4401,15 @@ def _added_leaf(subject, year, level, spec):
     end = next(i for i, l in enumerate(lines[start:], start) if l.text.strip().endswith(last))
     body = [l for l in lines[start:end + 1] if abs(l.x - lines[start].x) < 40]
     price = re.compile(spec.get('price', r'\(\s*(\d+)\s*marki?\s*\)'))
+    if 'price_head' in spec:
+        # an unnumbered part task priced only on its part's head ("II daļa (30 punkti)")
+        hp, hopen = spec['price_head']
+        heads = [l for l in P.lines if l.page == hp and l.text.strip().startswith(hopen)]
+        if len(heads) != 1 or not price.search(heads[0].text):
+            raise ValueError(f'{subject} {year}: {len(heads)} heads open {hopen!r}')
+        text = re.sub(r'\s+', ' ', ' '.join(l.text for l in body)).strip()
+        return ({'key': spec['key'], 'label': spec['label'], 'text': text},
+                int(price.search(heads[0].text).group(1)))
     cells = [l for l in lines if abs(l.y - lines[end].y) < 2 and l is not lines[end]
              and price.fullmatch(l.text.strip())]
     if len(cells) != 1:
