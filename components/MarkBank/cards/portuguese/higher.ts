@@ -33,6 +33,298 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2012 Higher Level — © State Examinations Commission.",
+    id: "por-2012-hl-i-1-a", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-paises-civilizados",
+    section: "I", questionRef: "2012 HL Section I Q1(a)",
+    questionText: "Explique por palavras suas o sentido das seguintes expressões: “Países civilizados” (§ 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "países livres, democráticos, onde todos têm as mesmas oportunidades;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2012 Higher Level — © State Examinations Commission.",
+    id: "por-2012-hl-i-1-b", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-analfabetismo",
+    section: "I", questionRef: "2012 HL Section I Q1(b)",
+    questionText: "Explique por palavras suas o sentido das seguintes expressões: “Analfabetismo” (§ 3);",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "não saber ler, nem escrever;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2012 Higher Level — © State Examinations Commission.",
+    id: "por-2012-hl-i-1-c", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-cultura-autentica",
+    section: "I", questionRef: "2012 HL Section I Q1(c)",
+    questionText: "Explique por palavras suas o sentido das seguintes expressões: “Cultura autêntica” (§ 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "saber que se adquire pelo estudo, pela leitura, reflexão, sentido crítico;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2012 Higher Level — © State Examinations Commission.",
+    id: "por-2012-hl-i-1-d", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-vertiginosa-vida",
+    section: "I", questionRef: "2012 HL Section I Q1(d)",
+    questionText: "Explique por palavras suas o sentido das seguintes expressões: “Vertiginosa vida actual” (§ 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "quotidiano que se vive sem reflexão;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2012 Higher Level — © State Examinations Commission.",
+    id: "por-2012-hl-i-1-e", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-deus-dara",
+    section: "I", questionRef: "2012 HL Section I Q1(e)",
+    questionText: "Explique por palavras suas o sentido das seguintes expressões: “Ao deus-dará” (§ 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sem normas, sem reflexão ou concentração.", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2012 Higher Level — © State Examinations Commission.",
+    id: "por-2012-hl-i-2", topicId: "portuguese-2-0", conceptId: "saber-ler-parece-nos-vergonha-civilizacao",
+    section: "I", questionRef: "2012 HL Section I Q2",
+    questionText: "Não saber ler “parece-nos uma vergonha para a Civilização”. Explique o sentido da frase.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Se por Civilização se entender um pleno exercício de igualdade de direitos para todos os cidadãos; se aceitarmos que aqueles direitos não se exercem plenamente sem a capacidade de saber ler; então não saber ler é de facto uma vergonha civilizacional.", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2012 Higher Level — © State Examinations Commission.",
+    id: "por-2012-hl-i-3", topicId: "portuguese-2-0", conceptId: "basta-saber-ler-saber-ler-entende",
+    section: "I", questionRef: "2012 HL Section I Q3",
+    questionText: "“Não basta saber ler, se por saber ler se entende distinguir uns certos caracteres e dar-lhes significado!” Explique o sentido da frase e porque entende o autor que não é suficiente.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Não basta saber juntar caracteres e dar-lhes sentido, é necessário e importante que o acto de ler seja expresso na capacidade de interpretar o que está implícito; saber ler é ler com sentido crítico.", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2012 Higher Level — © State Examinations Commission.",
+    id: "por-2012-hl-i-4", topicId: "portuguese-2-0", conceptId: "quer-dizer-autor-afirmar-saber-ler",
+    section: "I", questionRef: "2012 HL Section I Q4",
+    questionText: "Explique o que quer dizer o autor ao afirmar “saber ler no superior sentido”. Concorda com este ponto de vista? Justifique.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A expressão significa, meditar, dialogar, discutir, viajar, admirar os bons autores da literatura. Só os grandes autores nos questionam e nos fazem reflectir sobre a nossa condição de seres humanos.", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2012 Higher Level — © State Examinations Commission.",
+    id: "por-2012-hl-i-5", topicId: "portuguese-2-0", conceptId: "relacao-estabelece-autor-entre-vida-actual",
+    section: "I", questionRef: "2012 HL Section I Q5",
+    questionText: "Que relação estabelece o autor entre a vida actual e as condições apresentadas como necessárias à \"boa leitura\"?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Estabelece uma relação de oposição: a vida actual é vertiginosa, rápida, superficial e a boa leitura requer tempo, concentração.", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2012 Higher Level — © State Examinations Commission.",
+    id: "por-2012-hl-i-6", topicId: "portuguese-2-0", conceptId: "saber-ler-colaborar-afirmacao-analise-base",
+    section: "I", questionRef: "2012 HL Section I Q6",
+    questionText: "“Saber ler é colaborar”. Explique esta afirmação e analise-a com base no texto, dando também a sua opinião.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Saber ler é fruir o prazer da leitura, interpretar e compreender, meditando o que o texto diz explicita e implicitamente. Colaborar não pode aqui significar “estar de acordo”, antes sim caminhar ao lado, ouvindo e comentando o texto que se lê.", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2012 Higher Level — © State Examinations Commission.",
+    id: "por-2012-hl-ii-1", topicId: "portuguese-2-2", conceptId: "mas-fim-cabo-homem-acabara-sofrer",
+    section: "II", questionRef: "2012 HL Section II Q1",
+    questionText: "Mas no fim e ao cabo, ou o homem acabará por sofrer uma degradação, ou, na medida do possível, terá de se opor à vertigem em que foi arrastado. Faça um comentário crítico a esta passagem do texto em cerca de 100 palavras.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A frase apresenta-nos duas alternativas: se o homem continuar esta vertiginosa vida, entrará necessariamente numa crise de valores que o levarão à degradação. Em vez disso, por outro lado, apela ao exercício da vontade, do esforço, da reflexão, do sentido crítico como forma de oposição à vertigem. Lendo hoje este texto dos anos 60, sem dúvida que o homem escolheu aquela primeira alternativa.", marks: null, contextNote: "For “PARTE II”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2012 Higher Level — © State Examinations Commission.",
+    id: "por-2012-hl-iii-1", topicId: "portuguese-2-2", conceptId: "proposta-abrir-livro-abrir-espirito-anonimo",
+    section: "III", questionRef: "2012 HL Section III Q1",
+    stem: "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Resposta em cerca de 300 palavras)",
+    questionText: "Proposta 1 “Abrir um livro é abrir o espírito” (anónimo)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ler um livro é abrir o espírito. Eu diria, abrir um bom livro e lê-lo com capacidade de o compreender é abrir o espírito, porque é aprender. Ler um livro é viajar, é conhecer aquilo que nunca se visitou. É questionarmo-nos sobre a nossa condição; é interrogar. Ler um livro é partir à aventura e abrir as asas da imaginação. É desenvolver o espírito crítico, a capacidade de análise, é estar atento e desvendar a manipulação, a demagogia. Ler é aprender e interpretar a vida.", marks: null, contextNote: "For “Proposta 1”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2012 Higher Level — © State Examinations Commission.",
+    id: "por-2012-hl-iii-2", topicId: "portuguese-2-2", conceptId: "proposta-sociedade-actual-tudo-centradono-aqui",
+    section: "III", questionRef: "2012 HL Section III Q2",
+    stem: "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Resposta em cerca de 300 palavras)",
+    questionText: "Proposta 2 Na sociedade actual, tudo está centradono aqui e agora.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Na sociedade actual, a vida vive-se sem compromisso; queremos o mundo e queremo-lo agora. Vive-se pensando no imediato, no presente, em detrimento do passado, do futuro e da reflexão. Damos pouca importância a Historia, vive-se uma vida de precipício.", marks: null, contextNote: "For “Proposta 2”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2013, level: "higher",
     paperFileid: "LC018ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2013 Higher Level — © State Examinations Commission.",
