@@ -2555,6 +2555,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2019 Higher Level — © State Examinations Commission.",
+    id: "swe-2019-hl-ii-1", topicId: "swedish-1-0", conceptId: "kommentera-detta-citat-och-uttryck-dina",
+    section: "II", questionRef: "2019 HL Section II Q1",
+    questionText: "Kommentera detta citat och uttryck dina tankar med ungefär 100 ord: ”Teknikfolk är duktiga på vad de gör, men de missar ibland att försäkra sig om att det som de har byggt blir bra för mänskligheten.”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "I del II och III kommer följande kriterier att vägas in i betygssättningen:", marks: 30, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme prints: “Kandidaten för en diskussion kring etik och teknik med utgångspunkt från digitaliseringen.”. The scheme prints, as examples, not a checklist: “Zeynep Tufekci lyfter fram behovet av en mer intensiv debatt om etiska frågor kring dagens digitalisering. Hon pekar också på ansvarsfrågan: för en som har teknisk insikt går det inte att strunta i de etiska konsekvenserna. Man måste ställa etiska krav på dem som bygger systemen.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Ett tydligt syfte – kandidaten har förstått frågan och vet hur den ska besvaras – 30%.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ett sammanhängande svar – kandidaten använder relevant och lämplig fakta ur materialet på ett strukturerat och meningsfullt sätt – 30%.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Språklig klarhet – kandidaten uppvisar en språkbehandling som med tydlighet och med visst flyt kan uttrycka dennes idéer – 40 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEL II (30 POÄNG)",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2019 Higher Level — © State Examinations Commission.",
+    id: "swe-2019-hl-iii-1", topicId: "swedish-1-1", conceptId: "ibland-ste-man-gora-saker-man",
+    section: "III", questionRef: "2019 HL Section III Q1",
+    questionText: "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. ”Ibland måste man göra saker man inte vågar, annars är man ingen människa utan bara en liten lort.” Astrid Lindgren",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "I del II och III kommer följande kriterier att vägas in i betygssättningen:", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Ett tydligt syfte – kandidaten har förstått frågan och vet hur den ska besvaras – 30%.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Ett sammanhängande svar – kandidaten använder relevant och lämplig fakta ur materialet på ett strukturerat och meningsfullt sätt – 30%.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Språklig klarhet – kandidaten uppvisar en språkbehandling som med tydlighet och med visst flyt kan uttrycka dennes idéer – 40 %.","marks":16,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2019 Higher Level — © State Examinations Commission.",
+    id: "swe-2019-hl-iii-2", topicId: "swedish-1-1", conceptId: "ett-sabbats-efter-gymnasiet-vardefullt-eller",
+    section: "III", questionRef: "2019 HL Section III Q2",
+    questionText: "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. Är ett sabbatsår efter gymnasiet värdefullt eller är det bara slöseri med tid? Diskutera båda sidor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "I del II och III kommer följande kriterier att vägas in i betygssättningen:", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Ett tydligt syfte – kandidaten har förstått frågan och vet hur den ska besvaras – 30%.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Ett sammanhängande svar – kandidaten använder relevant och lämplig fakta ur materialet på ett strukturerat och meningsfullt sätt – 30%.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Språklig klarhet – kandidaten uppvisar en språkbehandling som med tydlighet och med visst flyt kan uttrycka dennes idéer – 40 %.","marks":16,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC039ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2021 Higher Level — © State Examinations Commission.",
