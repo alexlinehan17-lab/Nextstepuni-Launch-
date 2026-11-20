@@ -1520,6 +1520,266 @@ export const CARDS: SecCard[] = [
     year: 2015, level: "higher",
     paperFileid: "LC018ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2015 Higher Level — © State Examinations Commission.",
+    id: "por-2015-hl-i-1-a", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-mentores",
+    section: "I", questionRef: "2015 HL Section I Q1(a)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. Mentores (§ 1);",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pessoas que orientam outras ;", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Portuguese 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2015 Higher Level — © State Examinations Commission.",
+    id: "por-2015-hl-i-1-b", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-esquizofrenicamente-situada",
+    section: "I", questionRef: "2015 HL Section I Q1(b)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. Esquizofrenicamente situada entre os dois mundos (§ 2);",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a forma como vive, entre a literatura e a realidade, levam-na à loucura;", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Portuguese 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2015 Higher Level — © State Examinations Commission.",
+    id: "por-2015-hl-i-1-c", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-cumulo-distincao",
+    section: "I", questionRef: "2015 HL Section I Q1(c)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. O cúmulo da distinção (§ 2);",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "máximo da excepção e honra;", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Portuguese 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2015 Higher Level — © State Examinations Commission.",
+    id: "por-2015-hl-i-1-d", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-evasao-quotidiano",
+    section: "I", questionRef: "2015 HL Section I Q1(d)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. Evasão do quotidiano (§ 3);",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "afastamento, fuga da realidade do dia-a-dia;", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Portuguese 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2015 Higher Level — © State Examinations Commission.",
+    id: "por-2015-hl-i-1-e", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-fazer-pela",
+    section: "I", questionRef: "2015 HL Section I Q1(e)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. Fazer pela vida (§ 3).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "trabalhar.", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Portuguese 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2015 Higher Level — © State Examinations Commission.",
+    id: "por-2015-hl-i-2", topicId: "portuguese-2-0", conceptId: "definem-conceitos-trabalho-alegria-trabalho",
+    section: "I", questionRef: "2015 HL Section I Q2",
+    questionText: "Como se definem no texto os conceitos de ‘trabalho’ e ‘alegria no trabalho’?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A autora refere-se ao trabalho como a actividade que nos permite ganhar dinheiro para viver. Distingue-o de “alegria no trabalho”, quando aquela actividade é realizada com menos sofrimento.", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Portuguese 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2015 Higher Level — © State Examinations Commission.",
+    id: "por-2015-hl-i-3", topicId: "portuguese-2-0", conceptId: "identifica-autora-aquilo-protege-dificuldades-dia",
+    section: "I", questionRef: "2015 HL Section I Q3",
+    questionText: "O que identifica a autora como aquilo que a protege das dificuldades do dia-a-dia?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A autora sempre pensou que a literatura, lida ou escrita, a protegesse das canseiras, rotinas e aborrecimentos do dia-a-dia. Como isso começa a não acontecer, socorre-se da evasão para o deserto, ou seja, para longe de tudo o que é quotidiano.", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Portuguese 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2015 Higher Level — © State Examinations Commission.",
+    id: "por-2015-hl-i-4", topicId: "portuguese-2-0", conceptId: "explicite-sentido-metafora-arregacar-acariciar-estuque",
+    section: "I", questionRef: "2015 HL Section I Q4",
+    questionText: "Explicite o sentido da metáfora ”arregaçar e acariciar o estuque molhado das nossas vidas”.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A metáfora significa que, quando começamos a trabalhar, é necessário enfrentar as preocupações, os prazos, os horários e as obrigações a que estamos sujeitos na nossa vida.", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Portuguese 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2015 Higher Level — © State Examinations Commission.",
+    id: "por-2015-hl-i-5", topicId: "portuguese-2-0", conceptId: "porque-diz-autora-ninguem-pode-viver",
+    section: "I", questionRef: "2015 HL Section I Q5",
+    questionText: "Porque diz a autora “Ninguém pode viver assim, esquizofrenicamente situada entre dois mundos”? Está de acordo com esta afirmação?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ao dizer esta frase, a autora mostra o seu descontentamento por ser confrontada com as misérias, preocupações e obrigações quotidianas, quando pensava que a leitura ou a escrita a podiam poupar a este sofrimento. Sente-se forçada a viver entre dois mundos opostos: o prazer da literatura e as preocupações quotidianas, sem poder abdicar do segundo.", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Portuguese 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2015 Higher Level — © State Examinations Commission.",
+    id: "por-2015-hl-i-6", topicId: "portuguese-2-0", conceptId: "palavras-significado-expressao-vida-neurastenia-desejo",
+    section: "I", questionRef: "2015 HL Section I Q6",
+    questionText: "Explique por palavras suas o significado da expressão “A vida é (…) uma neurastenia e um desejo absurdo de sofrer”.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 0,
+    unpricedSection: {"label":"Parte I","totalMarks":30},
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A frase sai ao correr da pena e exprime um momento de desespero e desilusão pela vida que a autora é obrigada a viver. Sempre desejou uma vida que lhe permitisse fazer só aquilo de que gosta: dedicar-se à literatura. Como isso acontece cada vez menos, parece-lhe que o sofrimento que sente é quase voluntário.", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Portuguese 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2015 Higher Level — © State Examinations Commission.",
     id: "por-2015-hl-ii-1", topicId: "portuguese-2-2", conceptId: "literatura-fosse-suficiente-proteger-quotidiano-havia",
     section: "II", questionRef: "2015 HL Section II Q1",
     questionText: "“Se a literatura não fosse suficiente para me proteger do quotidiano havia sempre o deserto, (...). Se a literatura me protegesse ia agora mesmo para casa (...) e pegava nas Arabian Sands do Wilfred Thesiger e evadia-me do quotidiano.” Faça um comentário sobre a frase do texto, em cerca de 100 palavras.",

@@ -1508,7 +1508,7 @@ const PORTUGUESE_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2018: { higher: 13, ordinary: 0 },
   2017: { higher: 13, ordinary: 0 },
   2016: { higher: 13, ordinary: 0 },
-  2015: { higher: 3, ordinary: 0 },
+  2015: { higher: 13, ordinary: 0 },
   2014: { higher: 13, ordinary: 0 },
   2013: { higher: 13, ordinary: 0 },
   2012: { higher: 13, ordinary: 0 },
