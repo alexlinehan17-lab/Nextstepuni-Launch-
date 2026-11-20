@@ -2996,6 +2996,302 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-i-1-a", topicId: "czech-0-0", conceptId: "gramotnost",
+    section: "I", questionRef: "2025 HL Section I Q1(a)",
+    questionText: "Vysvětlete vlastními slovy: gramotnost",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "základní gramotností je schopnost číst a psát, identifikovat písmena a spojovat je ve slova. V článku je použito ve smyslu finančním, tedy jako schopnost rozumět finančním záležitostem.", marks: 1, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The paper prices Question 1 “[5 × 1 bod]”: one mark for each of its five expressions." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-i-1-b", topicId: "czech-0-0", conceptId: "kapesne",
+    section: "I", questionRef: "2025 HL Section I Q1(b)",
+    questionText: "Vysvětlete vlastními slovy: kapesné",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "peníze, které můžou na základě svého uvážení dávat rodiče anebo i prarodiče dětem. Můžou jim je dávat pravidelně (třeba týdně, měsíčně) i nepravidelně. Částky jsou závislé na možnostech domácností. Díky kapesnému se děti můžou začít učit hospodařit ještě v době, kdy si samy nemohou vydělávat.", marks: 1, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The paper prices Question 1 “[5 × 1 bod]”: one mark for each of its five expressions." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-i-1-c", topicId: "czech-0-0", conceptId: "koordinator",
+    section: "I", questionRef: "2025 HL Section I Q1(c)",
+    questionText: "Vysvětlete vlastními slovy: koordinátor",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "někdo, kdo řídí určitou akci, projekt nebo případně skupinu lidi, aby všechno správně fungovalo.", marks: 1, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The paper prices Question 1 “[5 × 1 bod]”: one mark for each of its five expressions." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-i-1-d", topicId: "czech-0-0", conceptId: "distancni-vzdelavani",
+    section: "I", questionRef: "2025 HL Section I Q1(d)",
+    questionText: "Vysvětlete vlastními slovy: „distanční vzdělávaní“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "multimediální forma řízeného samostatného studia, které je koordinováno vzdělávací institucí a v němž jsou vyučující v průběhu vzdělávání trvale nebo převážně fyzicky odděleni od vzdělávaných.", marks: 1, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The paper prices Question 1 “[5 × 1 bod]”: one mark for each of its five expressions." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-i-1-e", topicId: "czech-0-0", conceptId: "vzdelavaci-mezera",
+    section: "I", questionRef: "2025 HL Section I Q1(e)",
+    questionText: "Vysvětlete vlastními slovy: „vzdělávací mezera“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "nedostatek ve vzdělávání, chybějící obsah vzdělání, zejména se to týká nových technologií a obsahu, které doteď nebyly ve vzdělávání pokryty.", marks: 1, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The paper prices Question 1 “[5 × 1 bod]”: one mark for each of its five expressions." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-i-2", topicId: "czech-0-1", conceptId: "ruzova-dan-jaky-jeji-priklad-uvedeny",
+    section: "I", questionRef: "2025 HL Section I Q2",
+    questionText: "Co je to „růžová daň“ a jaký je její příklad, uvedený v článku?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Růžová daň je založená na tom, že ženy přikládají některým věcem vyšší hodnotu, což si obchodníci uvědomují, a tak jim tyto produkty či služby nacení. Něco, co je specificky určené pro ženy, může být bezdůvodně dražší než ta samá věc určená pro muže. Například, muže vyjde běžné ostříhání asi na stokorunu, ženy za něj zaplatí až pětkrát vyšší cenu.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-i-3", topicId: "czech-0-1", conceptId: "zaklade-textu-uvedte-jaky-hlavni-cil",
+    section: "I", questionRef: "2025 HL Section I Q3",
+    questionText: "Na základě textu uveďte, jaký je hlavní cíl projektu ve vztahu k rodinám studentů?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Finanční gramotnost je úzce propojena s tím, co děti přebírají z rodiny. Když rodina nezvládá finance dobře, potom na tom ani dítě není dobře. Autoři projektu doufají, ze jejich aktivita bude mít pozitivní vliv na to, jak mladí lidé nakládají penězi. A že se tím zvýší i finanční gramotnost v rodinách díky vědomostem, které žáci přinesou z výuky domu.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-i-4", topicId: "czech-0-1", conceptId: "zaklade-textu-vaseho-nazoru-uvedte-proc",
+    section: "I", questionRef: "2025 HL Section I Q4",
+    questionText: "Na základě textu a vašeho názoru uveďte, proč studenti finanční gramotnost označili dokonce za důležitější než schopnost řešit problémy či mluvit cizím jazykem.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Studenti si myslí, že by je škola měla naučit zacházet s penězi, vnímají, že schopnost správně nakládat s penězi je důležitá. Vetší význam tomu zřejmě přikládají proto, že jim to přijde důležitější pro prakticky život.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    { id: "r-2", kind: "point", verbatim: "Vyjádřete vlastní názor, vlastní zkušenost.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-i-5", topicId: "czech-0-1", conceptId: "jak-organizatorum-projektu-podarilo-ziskat-zajem",
+    section: "I", questionRef: "2025 HL Section I Q5",
+    questionText: "Jak se organizátorům projektu podařilo získat zájem studentů? Myslíte si, že je dobrý nápad začlenit finanční gramotnost do jiných školních předmětů, nebo by měla být samostatným předmětem? Uveďte svůj názor na základě textu a vašich zkušeností.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Autorka projektu chápala, že je důležité projekt podat v jazyce srozumitelném teenagerům, takže se snažili v projektu používat jazyk mladých. Z obavy, aby to nebylo trapné, si to nechali zkontrolovat, příslušníky mladé generace, vlastními dětmi, dětmi příbuzných nebo kolegů.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    { id: "r-2", kind: "point", verbatim: "Prostor pro vlastní názor, vlastní zkušenost, souhlas (vážný problém, ze to není součástí školní výuky, protože je velmi duležité znát finanční triky a naučit se, jak pracovat s penězi) – nesouhlas (předmět nemá žadnou váhu a neměl by se učit ve skole).", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-i-6", topicId: "czech-0-1", conceptId: "zaklade-cteni-textu-vaseho-nazoru-diskutujte",
+    section: "I", questionRef: "2025 HL Section I Q6",
+    questionText: "Na základě čtení textu a vašeho názoru diskutujte, jak jsou média a finanční gramotnost propojeny.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Propojeni finanční a mediální gramotnosti, kritického myšlení a čtenářské gramotnosti", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme heads the points “Body, které by neměly v odpovědi chybět:” None carries a mark of its own." },
+    { id: "r-2", kind: "point", verbatim: "Měl by se tento předmět učit ve školách, pokud ano, tak jak by měl byt vyučován", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Ovlivnění médii ve finančním rozhodování (influenceři apod.)", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Vlastní vysvětlení: vlastními slovy, bez opsání frází z textu", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Vlastní zkušenost.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-ii", topicId: "czech-1-0", conceptId: "zaklade-textu-napiste-komentar-100-150",
+    section: "II", questionRef: "2025 HL Section II",
+    questionText: "Na základě textu napište komentář o 100-150 slovech, ve kterém vyjádříte svůj vlastní názor, na toto tvrzení: „My lidé vždycky potřebujeme někam patřit a často máme nějaký vzor…“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 30, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme reprints the part's head and the task, and prints nothing under them: no answer, no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČÁST 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-iii-1", topicId: "czech-1-0", conceptId: "penize-jsou-dobry-sluha-ale-spatny",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: „Peníze jsou dobrý sluha, ale špatný pán.“ (Francis Bacon)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme reprints the part's head, the instruction and the two titles; under them it prints only “Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.” It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-iii-2", topicId: "czech-1-0", conceptId: "vsichni-lide-jsou-rovni-jsou-jakehokoli",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: „Všichni lidé jsou si rovni, ať jsou jakéhokoli stavu, pohlaví nebo věku.“ (Jan Amos Komenský)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme reprints the part's head, the instruction and the two titles; under them it prints only “Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.” It prints no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2026, level: "higher",
     paperFileid: "LC547ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2026 Higher Level — © State Examinations Commission.",
