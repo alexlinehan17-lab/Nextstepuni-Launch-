@@ -1487,6 +1487,300 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2015 Higher Level — © State Examinations Commission.",
+    id: "nld-2015-hl-i-1-a", topicId: "dutch-0-0", conceptId: "waarnaar-verwijzen-volgende-woorden-alinea-hemel",
+    section: "I", questionRef: "2015 HL Section I Q1(a)",
+    questionText: "Waarnaar verwijzen de volgende woorden? ‘ze’ (alinea 1: O hemel – ze zijn weer bezig)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Naar de onderzoekers die dergelijke vragenlijsten opstellen", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2015 Higher Level — © State Examinations Commission.",
+    id: "nld-2015-hl-i-1-b", topicId: "dutch-0-0", conceptId: "waarnaar-verwijzen-volgende-woorden-hij-alinea",
+    section: "I", questionRef: "2015 HL Section I Q1(b)",
+    questionText: "Waarnaar verwijzen de volgende woorden? ‘hij’ (alinea 2: Inzake de Nederlandse taal betekent dit dat hij onverdroten de regels van de spelling uit het hoofd leert en gewapend met die kennis het Groot Dictee wint.)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "De kokende en verkavelende mens in deze contreien.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2015 Higher Level — © State Examinations Commission.",
+    id: "nld-2015-hl-i-1-c", topicId: "dutch-0-0", conceptId: "waarnaar-verwijst-die-kleine-provinciale-authentieke",
+    section: "I", questionRef: "2015 HL Section I Q1(c)",
+    questionText: "Waarnaar verwijst ‘die kleine, provinciale, authentieke mensjes’ in de zin: ‘De taal van die kleine, provinciale, authentieke mensjes moet dringend geconserveerd worden. (alinea 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Naar de Vlamingen", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2015 Higher Level — © State Examinations Commission.",
+    id: "nld-2015-hl-i-1-d", topicId: "dutch-0-0", conceptId: "wat-betekent-krakkemikkige-zin-maar-daar",
+    section: "I", questionRef: "2015 HL Section I Q1(d)",
+    questionText: "Wat betekent ‘krakkemikkige’ in de zin: ‘Maar daar komt hij zelden; liever zit hij in de keuken, op een krakkemikkige houten stoel, aan de formica tafel die uit een ander vroeger dateert.’(alinea 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In slechte toestand, bijna stuk", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2015 Higher Level — © State Examinations Commission.",
+    id: "nld-2015-hl-i-1-e", topicId: "dutch-0-0", conceptId: "wat-betekent-tegen-bierkaai-vechten-deze",
+    section: "I", questionRef: "2015 HL Section I Q1(e)",
+    questionText: "Wat betekent ‘tegen de bierkaai vechten’ in deze zin: ‘de leraren die dagelijks tegen de bierkaai vechten’(alinea 7)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Een bij voorbaat verloren strijd leveren", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2015 Higher Level — © State Examinations Commission.",
+    id: "nld-2015-hl-i-2", topicId: "dutch-0-1", conceptId: "waarom-volgens-barnard-niks-tegen-dat",
+    section: "I", questionRef: "2015 HL Section I Q2",
+    questionText: "Waarom is er –volgens Barnard- niks op tegen dat Vlaamse en Surinaamse woorden en uitdrukkingen het Nederlands verrijken?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Omdat het behoort tot en bijdraagt aan de weelde van het Nederlands.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2015 Higher Level — © State Examinations Commission.",
+    id: "nld-2015-hl-i-3", topicId: "dutch-0-1", conceptId: "welke-drie-verwijten-maakt-barnard-het",
+    section: "I", questionRef: "2015 HL Section I Q3",
+    questionText: "Welke drie verwijten maakt Barnard het onderwijs?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dat het te weinig woordenschat aanleert, de tussentaal onvoldoende corrigeert en de leerlingen te weinig laat kennismaken met de grote literaire werken uit Vlaanderen en Nederland.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2015 Higher Level — © State Examinations Commission.",
+    id: "nld-2015-hl-i-4", topicId: "dutch-0-1", conceptId: "leg-uit-waarom-onderlijnde-beeldspraak-onderstaand",
+    section: "I", questionRef: "2015 HL Section I Q4",
+    questionText: "Leg uit waarom de onderlijnde beeldspraak in onderstaand fragment zowel positief als negatief is. ‘Inzake de Nederlandse taal betekent dit dat hij onverdroten de regels van de spelling uit het hoofd leert en gewapend met die kennis het Groot Dictee wint. In de salon van zijn geest treft men het zware meubilair van vroeger aan, het Franse buffet, de mystieke spiegel, de plechtstatige leunstoel. Maar daar komt hij zelden; liever zit hij in de keuken, op een krakkemikkige houten stoel, aan de formica tafel die uit een ander vroeger dateert.’",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Omdat het het beeld schept van de ijverig taal studerende Vlaming die wil verbeteren inzake taal maar die aan de andere kant leeft in een talig verleden.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2015 Higher Level — © State Examinations Commission.",
+    id: "nld-2015-hl-i-5", topicId: "dutch-0-1", conceptId: "leg-uit-wat-barnard-bedoelt-met",
+    section: "I", questionRef: "2015 HL Section I Q5",
+    questionText: "Leg uit wat Barnard bedoelt met ‘Nederlands is een huis met vele kamers’.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dat er verschillende varianten van het Nederlands bestaan met elk hun eigen kenmerken.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2015 Higher Level — © State Examinations Commission.",
+    id: "nld-2015-hl-i-6", topicId: "dutch-0-1", conceptId: "bespreek-barnards-visie-taal-deze-tekst",
+    section: "I", questionRef: "2015 HL Section I Q6",
+    questionText: "Bespreek Barnards visie op taal in deze tekst.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Barnards standpunt is dat alle vormen van taal hun eigen waarde hebben en onderwijs een belangrijke rol speelt inzake literatuur en woordenschat.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2015 Higher Level — © State Examinations Commission.",
+    id: "nld-2015-hl-ii-1", topicId: "dutch-1-0", conceptId: "becommentarieer-minimum-100-woorden-toon-humor",
+    section: "II", questionRef: "2015 HL Section II Q1",
+    questionText: "Becommentarieer in minimum 100 woorden de toon en de humor in de tekst. Sommige delen van de tekst zijn duidelijk ironisch en zelfs bijna sarcastisch. Wat denk je dat hij hoopte te bereiken met het gebruik van ironie en sarcasme?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "De lezer provoceren, mogelijk tot een agressief antwoord", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-2", kind: "point", verbatim: "Door de humor aanduiden dat een agressief antwoord niet zinvol is", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Verhoogde aandacht voor het probleem", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Een basis hebben voor een meer gefundeerde discussie", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Alle andere waardevolle inzichten die van de kandidaat", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEEL 2: COMMENTAAR",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2015 Higher Level — © State Examinations Commission.",
+    id: "nld-2015-hl-iii-1", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-van-minimaal-300",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    questionText: "Schrijf een opstel van minimaal 300 woorden. Kies één van de volgende opgaven. ‘Mijn taal is mijn wereld.’",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task and prints nothing under it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2015 Higher Level — © State Examinations Commission.",
+    id: "nld-2015-hl-iii-2", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-van-minimaal-300",
+    section: "III", questionRef: "2015 HL Section III Q2",
+    questionText: "Schrijf een opstel van minimaal 300 woorden. Kies één van de volgende opgaven. ‘De rijkste is hij die tevreden is met het minste.‘ (Socrates)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task and prints nothing under it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC017ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2021 Higher Level — © State Examinations Commission.",
