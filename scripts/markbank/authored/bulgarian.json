@@ -5616,6 +5616,200 @@
   }
  },
  {
+  "id": "bul-2021-hl-i-3",
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "year": 2021,
+  "section": "I",
+  "topicId": "bulgarian-0-1",
+  "conceptId": "ask",
+  "questionRef": "2021 HL Section I Q3",
+  "questionText": "В текста се отправя критика към българските медии. Защо, според вас?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "В текста се твърди, че „езикът на огромна част от медиите, а и на част от политиците, е всъщност дори по‐лош от този на улицата”, като в същото време се отбелязва, че публичният език „не трябва да деградира до езика на улицата, нито да се превръща в инструмент за тормоз и унижение на индивиди или цели групи хора”.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Bulgarian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Bulgarian 2021 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
+  }
+ },
+ {
+  "id": "bul-2021-hl-i-4",
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "year": 2021,
+  "section": "I",
+  "topicId": "bulgarian-0-1",
+  "conceptId": "ask",
+  "questionRef": "2021 HL Section I Q4",
+  "questionText": "С кои „обидни думи” се бори политическата коректност и защо?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Политическата коректност се бори с обидното „етикетиране”. Не става въпрос за „изобщо обидни думи”, а за обидни думи в публичното пространство, които дискриминират определени групи и малцинства ‐ социални, етнически, религиозни, също и хора, „които имат същите права като останалите, но са по‐различни, било по ръст, тегло, физически или умствен недъг, пол, раса, сексуална ориентация и т.н.” Тя замества дискриминиращите думи (с негативно вътрешно значение, често наложено исторически и с вкоренена употреба) с неутрални названия и така реагира срещу дискриминацията. В текста са дадени различни примери за това как е невъзможно да променим отношението си към хора, като в същото време ги наричаме „идиоти”, „ненормални” и „чифути”, думи с трайни негативни конотаци.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Bulgarian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Bulgarian 2021 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
+  }
+ },
+ {
+  "id": "bul-2021-hl-i-6",
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "year": 2021,
+  "section": "I",
+  "topicId": "bulgarian-0-1",
+  "conceptId": "ask",
+  "questionRef": "2021 HL Section I Q6",
+  "questionText": "В текста политическата коректност е наречена „цивилизационен филтър”. В такъв случай, не може ли да говорим просто за „норми на доброто възпитание” и не е ли излишен терминът „политическа коректност”?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Истина е, че когато сме „политически коректни”, ние демонстрираме едновременно и добро възпитание. Но доброто възпитание е по‐широко понятие, което се отнася към цялостното ни поведение, както в публичното пространство, така и в интимен, домашен и приятелски кръг. Политическата коректност няма претенция да кодифицира всяка една езикова изява, тя се грижи за публичното пространство и за обществените дебати и е базова езикова конвенция на обществото, която гарантира, че всички ще бъдат третирани „с уважение и като равни”, тя е „цивилизоционен филтър” на публичното пространство, в което коригира както дискриминиращи жестове, така и неуместни реакции, персонални нападки, борби и противопоставяния и всичко, което пречи на добрата комуникация и от което обществото няма полза.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Bulgarian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Bulgarian 2021 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
+  }
+ },
+ {
+  "id": "bul-2021-hl-ii-1",
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "year": 2021,
+  "section": "II",
+  "topicId": "bulgarian-1-1",
+  "conceptId": "ask",
+  "questionRef": "2021 HL Section II Q1",
+  "questionText": "Напишете есе (минимум 300 думи) по една от следните теми: „Всеки човек трябва сам да възпитава себе си.” - Иван Тургенев",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Яснота и точност на израза – кандидатът разбира добре въпросите и знае как да отговори ясно и точно;",
+    "marks": null,
+    "contextNote": "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\" The scheme heads this part “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” and prints, with no marks or percentages beside the criteria: “При оценяването на отговорите от първите две части се прилагат следните критерии:” It reprints the instruction as “Напишете съчинение (минимум 300 думи) на една от следните теми:”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Свързаност и непротиворечивост на отговорите – кандидатът използва откъси от текста, които са адекватни на мисълта му, идеите му са непротиворечиви и композицията на съчинението следва определена логика",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Езикова компетентност – кандидатът умее свободно да изразява идеите си, езикът на изказването му е ясен и точен",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Конвенционални умения – кандидатът владее и прилага граматичната норма и правописа на съвременния български книжовен език",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "bul-2021-hl-ii-2",
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "year": 2021,
+  "section": "II",
+  "topicId": "bulgarian-1-1",
+  "conceptId": "ask",
+  "questionRef": "2021 HL Section II Q2",
+  "questionText": "Напишете есе (минимум 300 думи) по една от следните теми: „Вие не можете просто да си измисляте собствени факти, само защото не харесвате това, което чувате…” - Грета Тунберг",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Яснота и точност на израза – кандидатът разбира добре въпросите и знае как да отговори ясно и точно;",
+    "marks": null,
+    "contextNote": "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\" The scheme heads this part “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” and prints, with no marks or percentages beside the criteria: “При оценяването на отговорите от първите две части се прилагат следните критерии:” It reprints the instruction as “Напишете съчинение (минимум 300 думи) на една от следните теми:”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Свързаност и непротиворечивост на отговорите – кандидатът използва откъси от текста, които са адекватни на мисълта му, идеите му са непротиворечиви и композицията на съчинението следва определена логика",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Езикова компетентност – кандидатът умее свободно да изразява идеите си, езикът на изказването му е ясен и точен",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Конвенционални умения – кандидатът владее и прилага граматичната норма и правописа на съвременния български книжовен език",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "bul-2022-hl-i-1-а",
   "subjectId": "bulgarian",
   "level": "higher",
