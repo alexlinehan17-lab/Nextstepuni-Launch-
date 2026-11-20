@@ -616,7 +616,8 @@ RULE_WORDS = {
     # cards say only that the question is in the language; new cards quote it).
     'ukrainian': (r'відповід', r'українськ'),
     # "Οι απαντήσεις να δοθούν στα νέα Ελληνικά."; 2021 "Όλες οι απαντήσεις πρέπει να γραφούν ..."
-    'modern-greek': (r'απαντήσεις', r'Ελληνικ|Νεοελληνικ'),
+    # (2016 prints "... στα νέα ελληνικά." in lower case)
+    'modern-greek': (r'απαντήσεις', r'[Εε]λληνικ|[Νν]εοελληνικ'),
     'czech': (r'Všechny otázky', r'česk'),
     'latvian': (r'Visām atbildēm', r'latvisk'),
 }
@@ -784,8 +785,13 @@ def part_head(P, section):
     return heads[-1] if heads else None
 
 
+# Modern Greek's census keys its groups by number ("ΟΜΑΔΑ 1η"): the parts they are.
+MGR_PART = {'1': 'I', '2': 'II', '3': 'III'}
+
+
 def essay_part(section, two_part):
     """The part an ask is answered as: a two-part sitting's Part II is its essay."""
+    section = MGR_PART.get(section, section)
     return 'III' if two_part and section == 'II' else section
 
 
@@ -936,7 +942,7 @@ def cards(subject, year, specs, level='hl', scheme=True):
     # 2 "questionTotal"; Latvian and Czech Q1 are the precedent).
     parents = {a.key: a for a in P._asks if a.letter is None and a.roman is None
                and any(b.section == a.section and b.q == a.q and b.letter for b in P._asks)}
-    two_part = not any(k[0] == 'III' for k in asks)
+    two_part = not any(MGR_PART.get(k[0], k[0]) == 'III' for k in asks)
     out, seen = [], set()
     for spec in specs:
         key = parse_key(spec.key)
