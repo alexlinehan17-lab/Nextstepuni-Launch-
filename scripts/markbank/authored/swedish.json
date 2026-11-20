@@ -8938,9 +8938,15 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Kandidaten kan utgå från artikeln men hen kan också ta egna exempel. Hen kan eventuellt göra en jämförelse med ett annat ämne hen tycker är speciellt.",
+    "verbatim": "Kandidaten utgår från citatet och uttrycker tydligt sin åsikt/ sina åsikter.",
     "marks": null,
-    "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme prints: “Kandidaten utgår från citatet och uttrycker tydligt sin åsikt/ sina åsikter.”."
+    "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Kandidaten kan utgå från artikeln men hen kan också ta egna exempel. Hen kan eventuellt göra en jämförelse med ett annat ämne hen tycker är speciellt.",
+    "marks": null
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",

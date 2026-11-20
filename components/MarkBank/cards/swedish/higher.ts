@@ -3992,7 +3992,8 @@ export const CARDS: SecCard[] = [
     questionText: "Kommentera detta citat och uttryck dina tankar med 100 - 150 ord: ”Jag tycker att klimatfrågan är speciell.”",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kandidaten kan utgå från artikeln men hen kan också ta egna exempel. Hen kan eventuellt göra en jämförelse med ett annat ämne hen tycker är speciellt.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme prints: “Kandidaten utgår från citatet och uttrycker tydligt sin åsikt/ sina åsikter.”." },
+    { id: "r-1", kind: "point", verbatim: "Kandidaten utgår från citatet och uttrycker tydligt sin åsikt/ sina åsikter.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    { id: "r-2", kind: "point", verbatim: "Kandidaten kan utgå från artikeln men hen kan också ta egna exempel. Hen kan eventuellt göra en jämförelse med ett annat ämne hen tycker är speciellt.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",

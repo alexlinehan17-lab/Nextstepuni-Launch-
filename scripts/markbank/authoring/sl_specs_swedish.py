@@ -1596,8 +1596,8 @@ def _part3_note_2025(d):
 
 
 SPECS[2025] = [
-    R('II1', [shown(L(122, 123))], whole=True, total=II_P_2025,
-      rownote=quote(S(121), lead='The scheme prints'),
+    # line 121 is part of the answer, not a heading (second reader): its own shown row
+    R('II1', [shown(S(121)), shown(L(122, 123))], whole=True, total=II_P_2025,
       question=QP(4, 'Kommentera detta citat', '”Jag tycker att klimat'), pages=(2, 3),
       concept='question'),
     R('III1', [unprinted(_part3_note_2025)], total=III_P_2025,
