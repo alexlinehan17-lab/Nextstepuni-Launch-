@@ -2371,6 +2371,206 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2020 Higher Level — © State Examinations Commission.",
+    id: "ron-2020-hl-i-1", topicId: "romanian-0-1", conceptId: "cinci-cuvinte-sau-expresii-care-definesc",
+    section: "I", questionRef: "2020 HL Section I Q1",
+    questionText: "Găsiţi cinci cuvinte sau expresii care definesc cuvântul „conflict“ în primele patru paragrafe ale textului.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Potrivit textului, conflictul este văzut ca o confruntare între adolescenți și părinți, elevi și profesori. Acesta mai poate fi definit prin următoarele cuvinte: discuții contrare izvorâte din diferențele care există între generații, certuri care provin din neînțelegeri, lupte pentru susținerea unor idei.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Identificarea cuvintelor și expresiilor din text care definesc cuvântul ”conflict”:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2020 Higher Level — © State Examinations Commission.",
+    id: "ron-2020-hl-i-2", topicId: "romanian-0-1", conceptId: "scrie-propriile-cuvinte-trei-motive-pentru",
+    section: "I", questionRef: "2020 HL Section I Q2",
+    questionText: "Scrieţi cu propriile cuvinte trei motive pentru care, în concepţia autorului, conflictele duc la rezultate pozitive.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Conflictele ne oferă oportunitatea de a ne exprima ideile, oamenii din jur au propriile opinii și viziuni, ceea ce e bine, deoarece există diversitate, dar acest aspect ne motivează să ne expunem ideile și să ni le susținem.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Explicarea prin propriile cuvinte a trei motive potrivit cărora, conflictele duc la rezultate pozitive, în concepția autorului:”." },
+    { id: "r-2", kind: "point", verbatim: "Conflictele ne dezvoltă spiritul competitiv și ne fac viața mai interesantă prin prezentarea propriilor păreri. Acestea nu au ca scop cearta și ruperea relațiilor, ci progresul, adoptarea unei noi perspective asupra vieții și ideilor expuse, schimbarea constructivă, pozitivă a mentalității.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Generația tânără poate să-și exprime părerile, chiar dacă acestea par absurde în concepția părinților sau profesorilor, dar cea mai bună metodă de a-i convinge este conflictul rațional, constructiv, bine argumentat.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2020 Higher Level — © State Examinations Commission.",
+    id: "ron-2020-hl-i-3", topicId: "romanian-0-1", conceptId: "dup-rerea-povestitorului-din-text-care",
+    section: "I", questionRef: "2020 HL Section I Q3",
+    questionText: "După părerea povestitorului din text, care este atitudinea unor adolescenţi faţă de colegii lor în privinţa bunurilor materiale posedate şi a posibilităţilor acestora de cumpărare?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Autorul descrie foarte clar situația din multe școli și presiunea care există între studenți în privința bunurilor materiale pe care aceștia le posedă sau își permit să le achiziționeze. ”Multe suferințe adolescentine” sunt cauza lipsei unor posesiuni cum ar fi un telefon de ultimă generație, haine de brand, deoarece presiunea grupului, a anturajului e mare la această vârstă și pentru ca să fii acceptat, trebuie să te conformezi. Cei care le posedă sunt considerați cool, sunt admirați și populari, iar cei care, din nefericire, nu au posibilitatea de a cumpăra aceste bunuri scumpe, suferă, fiind desconsiderați și umiliți de către ceilalți colegi. Consecințele duc deseori la conflicte cu părinții, depresii și complexe de inferioritate, deoarece studenții umiliți se simt fără valoare, marginalizați.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Descrierea atitudinii adolescenților față de colegii lor în privința bunurilor materiale posedate și a posibilităților acestora de cumpărare:”." },
+    { id: "r-2", kind: "point", verbatim: "Personal, sunt de părere că n-ar trebui să existe astfel de împrejurări, pentru că valoarea unui om nu este dată de bunurile pe care le deține, ci de ceea ce este el, adică de caracterul lui, de bunul simț, de modul în care se comportă cu cei din jur.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2020 Higher Level — © State Examinations Commission.",
+    id: "ron-2020-hl-i-4", topicId: "romanian-0-1", conceptId: "cum-definit-text-stilul-profesorului",
+    section: "I", questionRef: "2020 HL Section I Q4",
+    questionText: "Cum este definit în text stilul profesorului?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Elevii din zilele noastre își doresc un profesor modern, sociabil și ”cool”. E bine să fie atractiv și interesant, dar cel mai important este să aibă capacitatea de a-i motiva să învețe, să citească fără a le impune aceasta. Un profesor ”cool” este ”cel căruia într-adevăr îi pasă” de elevi, pentru aceștia este importantă relația profesor-elev.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Descrierea stilului profesorului, în text:”." },
+    { id: "r-2", kind: "point", verbatim: "Tinerilor le place să fie înțeleși de către cei care îi învață, să fie deschiși la dialog, astfel elevii să-și poată exprima punctele de vedere. Nu contează bagajul de cunoștințe pe care un profesor îl posedă, ci modul în care știe să transmită învățătura.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Profesorul trebuie să fie inteligent, înțelegător, răbdător și cu bun simț, capabil să le stârnească interesul pentru materie și să le mențină motivația de a învăța.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2020 Higher Level — © State Examinations Commission.",
+    id: "ron-2020-hl-i-5", topicId: "romanian-0-1", conceptId: "cum-spunde-intrebarea-formulat-titlul-articolului",
+    section: "I", questionRef: "2020 HL Section I Q5",
+    questionText: "Cum răspundeţi la întrebarea formulată de titlul articolului: „Este conflictul dintre generaţii o falsă problemă?“?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Din punctul meu de vedere, conflictul dintre generații este o problemă reală care domină societatea de astăzi. Acesta este mai evident între adolescenți și părinți sau profesori, datorită punctelor de vedere diferite. Cauzele conflictelor sunt sistemele de valori în care au fost crescute cele două generații, sistemele de educație la care au fost expuse și evoluția societății.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Înțelegerea profundă a unor idei din text, exprimate mai puțin explicit, demonstrând capacitatea de gândire analitică și sintetizarea cunoștințelor:”." },
+    { id: "r-2", kind: "point", verbatim: "Tinerii doresc să-și exprime opiniile, să-și impună punctele de vedere pe care le consideră inovatoare, să contribuie la îmbunătățirea calității vieții. Părinții, și implicit profesorii au crescut într-un alt regim (probabil comunist, unde li s-au impus multe idei), au acumulat experiență de viață și multă înțelepciune, ei apreciază elanul tineresc, dar consideră că trebuie să fie un echilibru între punctele de vedere diferite ale celor două generații. Conflictul poate fi rezolvat prin discuții, prin găsirea soluțiilor de comun acord, prin acceptarea noilor opinii și luarea în considerare a experienței și sfaturilor adulților.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2020 Higher Level — © State Examinations Commission.",
+    id: "ron-2020-hl-i-6", topicId: "romanian-0-1", conceptId: "fel-refer-paragraful-final-ansamblul-textului",
+    section: "I", questionRef: "2020 HL Section I Q6",
+    questionText: "În ce fel se referă paragraful final la ansamblul textului ?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ultimul paragraf este o concluzie a textului și a mesajului pe care acesta dorește să-l transmită, acesta este un semnal de alarmă și ne determină să analizăm situația pentru ca să evităm o ”ruptură între generații”. Mesajul transmis în acest paragraf dorește să ne conștientizeze că transformarea atât de rapidă a societății, dezvoltarea sporită a tehnologiei și interesul exagerat pentru mass-media, care uneori este o sursă de dezinformare, pot să creeze consecințe grave în înțelegerea și relaționarea tinerei generații cu cei mai în vârstă. Pentru a împiedica aceste situații nefavorabile trebuie să existe un interes din ambele părți, să se înțeleagă contextele în care cele două generații s-au format și să se apropie cu înțelepciune, cu acceptare și cu dorința de a învăța unii de la alții.", marks: 5, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Demonstrarea unei bune înțelegeri a textului în ansamblu și capacitatea de a argumenta puncte de vedere personale:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2020 Higher Level — © State Examinations Commission.",
+    id: "ron-2020-hl-ii-1", topicId: "romanian-1-0", conceptId: "conflictele-fac-mai-puternici-urma-lecturii",
+    section: "II", questionRef: "2020 HL Section II Q1",
+    questionText: "„Conflictele ne fac mai puternici.“ În urma lecturii textului, comentaţi acest punct de vedere în aproximativ 100 de cuvinte.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "La Partea a Ⅱ-a și Partea a Ⅲ-a, pentru acordarea punctajului, se vor lua în considerare următoarele aspecte:", marks: 30, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme prints, as examples, not a checklist: “Oamenii au puncte de vedere diferite, acesta e un aspect benefic, deoarece creează diversitate în societate, dar exprimarea acestora duce la conflicte. Este bine ca ideile să fie expuse deoarece astfel se dezvoltă modul de a gândi și, mai ales, gândirea critică, se schimbă perspectiva de a vedea lucrurile, mentalitatea, se adoptă idei noi. Conflictele pot fi văzute ca o provocare, o posibilitate de a susține argumentele personale. La început provoacă tensiune și o anumită rivalitate, dar, dacă sunt bine gestionate, pot duce la progres și ne fac mai puternici. Confruntarea oamenilor implică mult curaj, voință, tărie de caracter, muncă intelectuală, dar ne ajută să creștem, să ne întărim convingerile sau să le schimbăm, ne consolidează stima de sine, devenim mai buni, mai umani și ne ajută să ne înțelegem mai bine unii pe alții.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"a) Înțelegerea cerințelor și coerența răspunsurilor – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"b) Eficiența limbajului – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"c) Organizarea clară a argumentelor – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"d) Respectarea regulilor gramaticale, de ortografie și de punctuație – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PARTEA A II-A",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2020 Higher Level — © State Examinations Commission.",
+    id: "ron-2020-hl-iii-1", topicId: "romanian-1-1", conceptId: "lupt-pentru-iubim-pas-ceilal-sau",
+    section: "III", questionRef: "2020 HL Section III Q1",
+    questionText: "Scrieţi un comentariu (de aproximativ 300 de cuvinte) despre unul din următoarele subiecte: Luptăm pentru că iubim şi ne pasă de ceilalţi.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Compunere de aproximativ 300 de cuvinte, la alegere între două subiecte. Se urmărește coerența exprimării, structurarea clară a argumentelor având în vedere cele trei părți ale unei compuneri (introducere, cuprins și încheiere).", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme prints: “La Partea a Ⅱ-a și Partea a Ⅲ-a, pentru acordarea punctajului, se vor lua în considerare următoarele aspecte:”. The scheme reprints the instruction as: “Scrieți un eseu de aproximativ 300 de cuvinte, pornind de la una dintre cele două teme expuse mai jos:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"a) Înțelegerea cerințelor și coerența răspunsurilor – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"b) Eficiența limbajului – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"c) Organizarea clară a argumentelor – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"d) Respectarea regulilor gramaticale, de ortografie și de punctuație – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2020 Higher Level — © State Examinations Commission.",
+    id: "ron-2020-hl-iii-2", topicId: "romanian-1-1", conceptId: "crede-societatea-noastr-societatea-hypercomunic-rii",
+    section: "III", questionRef: "2020 HL Section III Q2",
+    questionText: "Scrieţi un comentariu (de aproximativ 300 de cuvinte) despre unul din următoarele subiecte: Credeţi că societatea noastră, societatea hypercomunicării – emailuri, camere de „chat“, telefoane mobile etc., ne ajută să comunicăm mai bine între noi?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Compunere de aproximativ 300 de cuvinte, la alegere între două subiecte. Se urmărește coerența exprimării, structurarea clară a argumentelor având în vedere cele trei părți ale unei compuneri (introducere, cuprins și încheiere).", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme prints: “La Partea a Ⅱ-a și Partea a Ⅲ-a, pentru acordarea punctajului, se vor lua în considerare următoarele aspecte:”. The scheme reprints the instruction as: “Scrieți un eseu de aproximativ 300 de cuvinte, pornind de la una dintre cele două teme expuse mai jos:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"a) Înțelegerea cerințelor și coerența răspunsurilor – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"b) Eficiența limbajului – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"c) Organizarea clară a argumentelor – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"d) Respectarea regulilor gramaticale, de ortografie și de punctuație – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC553ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2021 Higher Level — © State Examinations Commission.",
