@@ -283,6 +283,46 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2021 Higher Level — © State Examinations Commission.",
+    id: "por-2021-hl-ii-1", topicId: "portuguese-2-2", conceptId: "topico-faca-comentario-sentido-ultimo-nas",
+    section: "II", questionRef: "2021 HL Section II Q1",
+    stem: "Escreva um comentário (mínimo de 300 palavras) sobre um dos seguintes temas.",
+    questionText: "Tópico 1 Faça um comentário ao sentido do último parágrafo texto nas diferentes perspectivas que ele pode conter. “Muitos anos passaram. O homem certamente morreu. Mas continua ao nosso lado. Pelas ruas.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A última frase do conto encerra a tese do que a narradora pretende transmitir com os acontecimentos narrados ao longo do conto: aquele homem triste, pobre e abandonado morreu, certamente. Mas como aquele homem, outros seres humanos continuam vivos, presentes e deambulantes pelas ruas da nossa vida: cruzamo‐nos com eles e estão diariamente vivos; passamos ao seu lado e somos diariamente confrontados com a sua presença viva; deambulam pelas ruas da cidade em busca de auxílio, em busca de um ombro amigo, em busca de alguém que escute os seus desabafos tristes, em busca de alguém que lhes mate a fome ou cure as doenças. Ele é o sem‐abrigo debaixo do alpendre, na rua, ou no banco do jardim, à chuva e ao frio; ele é o desempregado sem possibilidade de se alimentar ou alimentar a família; ele é o doente que não pode pagar os medicamentos para se curar; ele é o velho frágil que vive sozinho; ele é aquele que sofre física e espiritualmente o abandono social.", marks: null, contextNote: "For “Tema 1”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Portuguese 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2021 Higher Level — © State Examinations Commission.",
+    id: "por-2021-hl-ii-2", topicId: "portuguese-2-2", conceptId: "topico-podemos-inventar-nossos-proprios-factos",
+    section: "II", questionRef: "2021 HL Section II Q2",
+    stem: "Escreva um comentário (mínimo de 300 palavras) sobre um dos seguintes temas.",
+    questionText: "Tópico 2 “Não podemos inventar os nossos próprios factos só porque não gostamos daquilo que ouvimos.” - Greta Thunberg",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Chegados à era da pós‐verdade, todos duvidam, todos comentam, todos criam a sua verdade: a verdade que mais convém no momento, a verdade que propícia uma vitória numa discussão à mesa do café, a verdade que rapidamente se espalha pelas redes sociais, a verdade difundida pelos meios de comunicação social comprometidos com determinadas ideologias negacionistas. Seja relativamente aos problemas ambientais do planeta, seja agora relativamente aos problemas trazidos pelo pandemia, as investigações e os dados científicos passaram para segundo plano e cada grupo de cidadãos, cada empresa, cada país “vende” a verdade que mais convém no momento: mas uma mentira repetida mil vezes não passa a ser verdade. Portanto, os factos são irrefutáveis e os dados científicos mostram o verdadeiro alcance do que fica dito na frase de Greta Thunberg: os recursos do planeta estão à beira do esgotamento e é urgente uma reacção comum para parar o colapso total.", marks: null, contextNote: "For “Tema 2”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "higher",
     paperFileid: "LC018ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",

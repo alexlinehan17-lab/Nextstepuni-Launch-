@@ -41,7 +41,7 @@ LEVEL_TITLE = {'hl': 'Higher', 'ol': 'Ordinary'}
 # booklet also letters it, the letter and a dash come first ("LC3a-i" is
 # Q3(a)(i)); a reading ask's roman follows a dash ("A1b-ii").
 KEY = re.compile(r'^(L[A-E])(\d{1,2})(?:([a-h])-)?(i{1,3}|iv|vi{0,3})?$'
-                 r'|^(A|B)(\d{1,2})([a-l])?(?:-(i{1,3}|iv|vi{0,3}))?$')
+                 r'|^(A|B|II|I)(\d{1,2})([a-l])?(?:-(i{1,3}|iv|vi{0,3}))?$')
 AUDIO = os.path.join(ROOT, 'data', 'portugueseAudio.json')
 PARTE = re.compile(r'^Parte\s+([A-E])\b')
 # A question's printed number: "(1)" (2025, 2026) or "1." (2022-2024).
@@ -73,13 +73,20 @@ def card_id(year, level, key):
 class C:
     """One card: the census address, its rows, the price it must add up to."""
     def __init__(self, key, rows, total=None, note=None, rownote=None, extra=(), whole=False,
-                 question=None):
+                 question=None, stem=None, source=True):
         self.key, self.rows, self.total, self.note = key, rows, total, note
         self.rownote, self.extra, self.whole = rownote, extra, whole
         # Where the census's reading of the ask is cut short (a true/false
         # table read as its first statement): the question as the paper prints
         # it, line by line, PL / PLc selectors joined.
         self.question = question
+        # The instruction the paper prints over a choice of tasks ("Escreva um
+        # comentário ... sobre um dos seguintes temas."), where the booklet's
+        # lead for the question number belongs to another part.
+        self.stem = stem
+        # False where the booklet's reading text is not the task's material
+        # (2021 Tópico 2 comments on a quotation, not on the text).
+        self.source = source
 
 
 class PaperCut:
@@ -218,6 +225,19 @@ class EachOnly:
         return 1, int(m.group(2)), m.group(0)
 
 
+class Pontos:
+    """A price printed in points, "PARTE II (40 pontos)" (the 2021 scheme): one
+    answer at that total."""
+    def __init__(self, n):
+        self.n = n
+
+    def read(self, doc):
+        m = re.search(r'\((\d{1,3})\s*pontos\)', doc['raw'][self.n - 1])
+        if not m:
+            raise ValueError(f'scheme line {self.n} prints no "(N pontos)"')
+        return 1, int(m.group(1)), m.group(0)
+
+
 SUPERSCRIPT = str.maketrans('0123456789', '⁰¹²³⁴⁵⁶⁷⁸⁹')
 
 
@@ -327,9 +347,11 @@ def reading_cards(year, level):
                       + (f' {spec.note}' if spec.note else '')),
         }
         lead = P.lead(ask.q)
-        if lead and len(lead) >= 12:
+        if spec.stem:
+            card['stem'] = ' '.join(x.text(doc) for x in spec.stem)
+        elif lead and len(lead) >= 12:
             card['stem'] = lead
-        source = eu_all.source_material(P, ask, SUBJECT, language, level, year)
+        source = eu_all.source_material(P, ask, SUBJECT, language, level, year) if spec.source else None
         if source:
             card['sourceMaterial'] = source
         out.append(card)
@@ -1060,6 +1082,24 @@ LISTENING[(2023, 'hl')] = [
 # Live: 18 reading cards. New: six reading asks (Q1(c) and Q1(e) each one
 # tick question, as the census now counts them, 10c) and the listening test
 # (scheme .md lines 355-498, pages 13-17; each Part 24). Written held.
+# ============================================================== 2021 HL ===
+# Part II, the written commentary: "Escreva um comentário (mínimo de 300
+# palavras) sobre um dos seguintes temas." (paper p4), Tópico 1 or Tópico 2.
+# The scheme (pp4-5) prints a MODEL commentary for each, no marking list, and
+# prices the part "(40 pontos)": CARD-STANDARD 10a, each model shown after the
+# reveal under the scheme's own heading ("Tema 1" / "Tema 2"), word for word,
+# scored on the printed total (questionTotal), never claimable.
+_CHOICE_2021 = (PL(4, 'Escreva um comentário'),)
+READING[(2021, 'hl')] = [
+    C('II1', [shown(J(*[S(n) for n in range(83, 95)]), lead=S(78))], total=Pontos(76), whole=True,
+      question=(PL(4, 'Tópico 1'), PL(4, 'Faça um comentário'), PL(4, 'conter.'), PL(4, '“Muitos anos passaram')),
+      stem=_CHOICE_2021),
+    C('II2', [shown(J(*[S(n) for n in range(102, 114)]), lead=S(99))], total=Pontos(76), whole=True,
+      question=(PL(4, 'Tópico 2'), PL(4, '“Não podemos inventar'), PL(4, '- Greta Thunberg')),
+      stem=_CHOICE_2021, source=False),
+]
+
+
 # ============================================================== 2022 OL ===
 # The reading asks the old shared generator excluded: two true/false ticks the
 # text layer cannot read (taken from the scheme PDF by tick position, CARD-

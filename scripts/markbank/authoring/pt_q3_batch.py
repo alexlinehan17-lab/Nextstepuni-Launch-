@@ -93,7 +93,7 @@ def sitting_cards(year, level, present='raise'):
         new = [c for c in new if c['id'] not in have]
     elif clash:
         raise ValueError(f'{year} {level}: new ids already live {clash}')
-    order = {k: i for i, k in enumerate(['A', 'B', 'LA', 'LB', 'LC', 'LD', 'LE'])}
+    order = {k: i for i, k in enumerate(['A', 'B', 'I', 'II', 'LA', 'LB', 'LC', 'LD', 'LE'])}
 
     def place(c):
         key = pt_specs.parse_key(_spec_key(c))
@@ -146,7 +146,7 @@ def add(year, level):
     paper order after the live ones; no card already there moves or changes."""
     authored, new = sitting_cards(year, level, present='skip')
     lv = LEVEL_WORD[level]
-    order = {k: i for i, k in enumerate(['A', 'B', 'LA', 'LB', 'LC', 'LD', 'LE'])}
+    order = {k: i for i, k in enumerate(['A', 'B', 'I', 'II', 'LA', 'LB', 'LC', 'LD', 'LE'])}
     import pt_specs
 
     def place(c):
