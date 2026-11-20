@@ -232,7 +232,8 @@ READING_ROWS = {
                   'contextNote': ('The scheme prints these answers under “Families:”, and “*Educate can only '
                                   'be used once”. It also pays part marks for a shorter answer: “To help the '
                                   'environment” 3 marks; “To work with the community” 1 mark; “To make a '
-                                  'difference” 1 mark; “Promotion” 1 mark. The scheme prints: “The following '
+                                  'difference” 1 mark; “Promotion” 1 mark; “Education” 1 mark. The scheme '
+                                  'prints: “The following '
                                   'answers can only be used for one category”.')},
                  {'id': 'r-2', 'kind': 'anyN', 'marks': None,
                   'verbatim': 'Shops — the answers the scheme accepts',
@@ -242,18 +243,19 @@ READING_ROWS = {
                   'contextNote': 'The scheme prints these answers under “Shops:”.'}],
         'check': ['Families: To save money', 'Shops: To increase', '*Educate can only be used once',
                   'The following answers can only be used for one category', '(To help the environment 3 marks)',
-                  '(To work with the community 1 mark)', '(To make a difference 1 mark)', '(Promotion 1 mark)']},
-    # 2016 Ordinary B1 Q4 prices each detail "2 marks (1+1)", and its shorter
-    # answer "(They are of a part-time nature 1 mark)* only if not mentioned
-    # above" stands for either.
+                  '(To work with the community 1 mark)', '(To make a difference 1 mark)', '(Promotion 1 mark)',
+                  '(Education 1 mark)']},
+    # 2016 Ordinary B1 Q4 prices each detail "2 marks (1+1)", and its one
+    # shorter answer "(They are of a part-time nature 1 mark)* only if not
+    # mentioned above" is offered once, on the first detail, so it counts once.
     (2016, 'ol', 'B1', 4, None): {
         'tariff': 'fixed',
         'rows': [{'id': 'r-1', 'kind': 'point', 'marks': 2, 'verbatim': 'You work four hours a day',
                   'contextNote': ('The scheme also pays part marks for a shorter answer: “They are of a '
                                   'part-time nature” 1 mark (“* only if not mentioned above”).')},
                  {'id': 'r-2', 'kind': 'point', 'marks': 2, 'verbatim': 'You work three days a week',
-                  'contextNote': ('The scheme also pays part marks for a shorter answer: “They are of a '
-                                  'part-time nature” 1 mark (“* only if not mentioned above”).')}],
+                  'contextNote': ('The shorter answer “They are of a part-time nature” counts once, on the '
+                                  'first detail.')}],
         'check': ['(They are of a part-time nature 1 mark)* only if not mentioned above']},
 }
 

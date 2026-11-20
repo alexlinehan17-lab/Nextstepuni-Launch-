@@ -841,7 +841,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // unpriced criteria the student judges against the printed total; it has
     // no printed steps to check.
     const stepped = rows.filter(({ card, row }) => row.kind === 'criterion' && card.tariffModel.kind !== 'questionTotal');
-    expect(stepped).toHaveLength(89);
+    expect(stepped).toHaveLength(88);
     for (const { card, row } of stepped) {
       const where = `${card.id}/${row.id}`;
       expect(row.permittedMarks![0], where).toBe(0);

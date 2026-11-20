@@ -12073,7 +12073,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why would families and shops take\npart in this initiative?\n(Par. 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Families — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under “Families:”, and “*Educate can only be used once”. It also pays part marks for a shorter answer: “To help the environment” 3 marks; “To work with the community” 1 mark; “To make a difference” 1 mark; “Promotion” 1 mark. The scheme prints: “The following answers can only be used for one category”.", group: {"claimMax":1,"options":["To save money [3] on their shopping [2]","To reduce their waste [2] charges [2]","To carry out their civic duty","*To educate family members"],"perOption":5} },
+    { id: "r-1", kind: "anyN", verbatim: "Families — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under “Families:”, and “*Educate can only be used once”. It also pays part marks for a shorter answer: “To help the environment” 3 marks; “To work with the community” 1 mark; “To make a difference” 1 mark; “Promotion” 1 mark; “Education” 1 mark. The scheme prints: “The following answers can only be used for one category”.", group: {"claimMax":1,"options":["To save money [3] on their shopping [2]","To reduce their waste [2] charges [2]","To carry out their civic duty","*To educate family members"],"perOption":5} },
     { id: "r-2", kind: "anyN", verbatim: "Shops — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under “Shops:”.", group: {"claimMax":1,"options":["To increase their customers numbers / To be seen as being more environmentally friendly","*To educate the community"],"perOption":5} },
     ],
     sourceMaterial: {
@@ -18383,7 +18383,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "criterion", verbatim: "You work four hours a day", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They are of a part-time nature” 1 mark (“* only if not mentioned above”).", permittedMarks: [0,1,2] },
-    { id: "r-2", kind: "criterion", verbatim: "You work three days a week", marks: 2, contextNote: "The scheme also pays part marks for a shorter answer: “They are of a part-time nature” 1 mark (“* only if not mentioned above”).", permittedMarks: [0,1,2] },
+    { id: "r-2", kind: "point", verbatim: "You work three days a week", marks: 2, contextNote: "The shorter answer “They are of a part-time nature” counts once, on the first detail." },
     ],
     sourceMaterial: {
           "kind": "source-text",
