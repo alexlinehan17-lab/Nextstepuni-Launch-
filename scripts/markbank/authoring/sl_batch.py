@@ -119,6 +119,35 @@ def review(subject, year, level='hl'):
     print(f'{len(new)} card(s)')
 
 
+def check(subject):
+    """Every sitting this lane has written, rebuilt from its specs and compared
+    with the authored file card by card: a change to the runtime or a spec that
+    would move a committed card fails here."""
+    with open(ADDITIONS, encoding='utf-8') as fh:
+        added = json.load(fh).get(subject, {})
+    with open(authored_path(subject), encoding='utf-8') as fh:
+        have = {c['id']: c for c in json.load(fh)}
+    mod = importlib.import_module(f'sl_specs_{subject.replace("-", "_")}')
+    bad = 0
+    for year, ids in sorted(added.items()):
+        spec_list = mod.specs(int(year))
+        scheme = not all(isinstance(s, sl_lib.NoScheme) for s in spec_list)
+        built = {c['id']: c for c in sl_lib.cards(subject, int(year), spec_list, 'hl', scheme=scheme)}
+        for i in ids:
+            if i not in built or json.dumps(built[i], sort_keys=True) != json.dumps(have.get(i), sort_keys=True):
+                bad += 1
+                print(f'DIFFERS {i}')
+        extra = sorted(set(built) - set(ids))
+        if extra:
+            bad += len(extra)
+            print(f'{subject} {year}: specs build cards not written {extra}')
+    print(f'{subject}: {sum(len(v) for v in added.values())} lane cards checked, {bad} differ')
+    return 1 if bad else 0
+
+
 if __name__ == '__main__':
-    cmd, subject, year = sys.argv[1], sys.argv[2], int(sys.argv[3])
+    cmd, subject = sys.argv[1], sys.argv[2]
+    if cmd == 'check':
+        sys.exit(check(subject))
+    year = int(sys.argv[3])
     {'review': review, 'write': write}[cmd](subject, year)

@@ -334,6 +334,12 @@ def pre(page, opening):
         f'{MARKER.sub("", PL(page, opening).text(doc), count=1)} {JOINER.sub("", MARKER.sub("", q, count=1))}')
 
 
+def prerun(page, first, last):
+    """The census question with a printed instruction of several lines put
+    before it (a run of the paper's lines, `first` to `last`)."""
+    return lambda doc, q: clean_question(f'{paper_run(doc, page, first, last)} {q}')
+
+
 def L(a, b=None, after=None, before=None):
     """Scheme lines a..b joined (the SEC wrapped them), cut after `after` on
     the first and before `before` on the last."""
@@ -371,21 +377,35 @@ def quote(*sels, lead='The scheme prints'):
 
 
 # ------------------------------------------------------------------ cards ---
-def rule_note(subject, doc, language):
-    """The answer-language note, with the page the paper prints its rule on.
+# The words each paper's answer-language rule opens with, where they are not
+# the first two words of eu_topics.ONE_LANGUAGE's (2025-era) sentence.
+RULE_OPENING = {}
 
-    eu_topics.language_note says the rule is printed "on its own first page",
-    which is the cover in these booklets (second reader, 20 Nov: Dutch prints
-    it on page 3 or 4). The page is read here from the paper's own lines."""
+
+def rule_note(subject, doc, language):
+    """The answer-language note, quoting the rule as THIS paper prints it.
+
+    eu_topics.language_note quotes one sitting's sentence for every sitting
+    and says it is printed "on its own first page", which is the cover in these
+    booklets (second reader, 20 Nov: Dutch prints it on p2, p3 or p4, worded
+    three ways). Here the sentence is cut from the paper's own text, from its
+    opening words to its full stop, and its page named."""
     rule = ONE_LANGUAGE.get(subject)
     if not rule:
         return language_note(subject, language)
-    want = re.sub(r'\s+', ' ', rule).strip()
-    pages = sorted({p for p, t in doc['paper'] if want in re.sub(r'\s+', ' ', t)})
-    if len(pages) != 1:
-        raise ValueError(f'{subject}: the paper prints its answer-language rule on pages {pages}')
+    opening = RULE_OPENING.get(subject) or ' '.join(rule.split()[:2])
+    hits = []
+    for page in sorted({p for p, _t in doc['paper']}):
+        text = re.sub(r'\s+', ' ', ' '.join(t for p, t in doc['paper'] if p == page))
+        i = text.find(opening)
+        if i >= 0:
+            j = text.find('.', i)
+            hits.append((page, text[i:j + 1] if j > i else text[i:]))
+    if len(hits) != 1:
+        raise ValueError(f'{subject}: the paper prints {len(hits)} answer-language rules: {hits}')
+    page, sentence = hits[0]
     return (f'The examination requires every answer in {LANGUAGE_NAME[subject].upper()}. '
-            f'The paper prints the rule on page {pages[0]}: "{rule}"')
+            f'The paper prints the rule on page {page}: "{sentence}"')
 
 
 def part_head(P, section):
@@ -400,6 +420,11 @@ def part_head(P, section):
             if (part_map.get(token) or eu_paper._part_token(token)) == section:
                 heads.append(line.text)
     return heads[-1] if heads else None
+
+
+def essay_part(section, two_part):
+    """The part an ask is answered as: a two-part sitting's Part II is its essay."""
+    return 'III' if two_part and section == 'II' else section
 
 
 def default_price(key):
@@ -418,6 +443,7 @@ def documents(subject, year, level='hl', scheme=True):
 def cards(subject, year, specs, level='hl', scheme=True):
     P, doc = documents(subject, year, level, scheme)
     asks = {a.key: a for a in P.all_asks()}
+    two_part = not any(k[0] == 'III' for k in asks)
     out, seen = [], set()
     for spec in specs:
         key = parse_key(spec.key)
@@ -439,7 +465,9 @@ def cards(subject, year, specs, level='hl', scheme=True):
             'level': LEVEL_WORD[level],
             'year': year,
             'section': key[0],
-            'topicId': topic_for(subject, 'classic', key[0], key[2]),
+            # In a two-part sitting (2021, 2022) Part II IS the essay: filed
+            # and shown as Part III's is.
+            'topicId': topic_for(subject, 'classic', essay_part(key[0], two_part), key[2]),
             'conceptId': concept_for(question),
             'questionRef': question_ref(year, level, key),
             'questionText': question,
@@ -506,7 +534,7 @@ def cards(subject, year, specs, level='hl', scheme=True):
             })
         if spec.stem if hasattr(spec, 'stem') else None:
             card['stem'] = spec.stem(doc) if callable(spec.stem) else spec.stem
-        if getattr(spec, 'source', True) and key[0] in ('I', 'II'):
+        if getattr(spec, 'source', True) and essay_part(key[0], two_part) in ('I', 'II'):
             src = source_material(P, ask, subject, language, level, year)
             if src:
                 src['presentationNote'] = ('Read the text exactly as the examination printed it, then '

@@ -4,7 +4,7 @@
 One entry per printed ask; see sl_lib.py for the selector language. Line
 numbers are lines of examiner-reports/dutch/schemes/<year>-hl.md.
 """
-from sl_lib import (R, S, J, L, PL, QP, Run, pre, PP, SP, PY, RX, PARTP, one, shown, graded, crit,  # noqa: F401
+from sl_lib import (R, S, J, L, PL, QP, Run, pre, prerun, PP, SP, PY, RX, PARTP, one, shown, graded, crit,  # noqa: F401
                     examples, quote, unprinted, part, NoScheme)
 
 
@@ -275,11 +275,116 @@ SPECS[2018] = [
     R('III2', [unprinted(NOTHING_2018)], question=pre(4, 'Schrijf een opstel')),
 ]
 
+# ================================================================ 2019 HL ===
+# Q2 prices its three reasons "(1 p)", "(2 p)", "(2 p)". Q5: the paper prints
+# one question at "(5 punten)" (p4); the scheme prices that answer "(2 punten)"
+# and adds a second question the paper does not print, "(3 punten)": carded on
+# the paper's question and total, the scheme's lines quoted (CARD-STANDARD 5,
+# 10f). Q3, Q4, Q6 and Deel 2: points and requirements shown, priced as a
+# whole (10a). Deel 3: the scheme prints a different first title from the
+# paper's and nothing under either (R4).
+SPECS[2019] = [
+    R('I1a', [one(S(53), PP())]),
+    R('I1b', [one(S(55), PP())]),
+    R('I1c', [one(S(59), PP())]),
+    R('I1d', [one(S(63), PP())]),
+    R('I1e', [one(S(71), PP())]),
+    R('I2', [one(S(75, after='- ', before=' (1 p)'), RX(75, P1)),
+             one(S(76, after='- ', before=' (2 p)'), RX(76, P1)),
+             one(S(77, after='- ', before=' (2 p)'), RX(77, P1))]),
+    R('I3', [shown(S(n)) for n in range(81, 89)], whole=True),
+    R('I4', [shown(L(93, 95)), shown(L(96, 97)), shown(L(98, 99))], whole=True),
+    R('I5', [shown(L(107, 108)), shown(L(109, 110)), shown(L(111, 112))], whole=True,
+      question=QP(4, Run('5. Gebaseerd op de tekst', 'onderwijs een verbod')),
+      rownote=lambda d: (f'The scheme prices this answer “{S(113).text(d)}” and goes on to a second question '
+                         f'the paper does not print, “{L(114, 115).text(d)}” “{S(116).text(d)}”, with '
+                         f'“{L(117, 118).text(d)}” The paper prints the question above at '
+                         f'“(5 punten)”, and that is the card\'s total.')),
+    R('I6', [shown(L(123, 125)), shown(L(126, 128)), shown(L(129, 130))], whole=True),
+    R('II1', [shown(L(138, 139)), shown(L(140, 141)), shown(S(142))], whole=True),
+    R('III1', [unprinted(lambda d: f'At a) the scheme prints a different title from the paper\'s, '
+                                   f'“{S(145, after="a) ").text(d)}”, and nothing under either title.')],
+      question=pre(4, 'Schrijf een opstel')),
+    R('III2', [unprinted('The scheme reprints this title and prints nothing under it.')],
+      question=pre(4, 'Schrijf een opstel')),
+]
+
+# ================================================================ 2020 HL ===
+# Q1-Q4 answered with the scheme's own lines (Q2 and Q3 quote the passage).
+# Q5 and Q6 print what an answer must refer to: shown, priced as a whole
+# (10a). Deel 2 and Deel 3: nothing printed under the task (R4).
+NOTHING_2020 = 'The scheme reprints this task and prints nothing under it.'
+SPECS[2020] = [
+    R('I1a', [one(L(53, 54), PP())], question=QP(3, '1) Waarnaar verwijzen', 'a: ‘dat’')),
+    R('I1b', [one(L(56, 57), PP())], question=QP(3, '1) Waarnaar verwijzen', 'b: ‘daarvan’')),
+    R('I1c', [one(S(61), PP())]),
+    R('I1d', [one(S(65), PP())]),
+    R('I1e', [one(S(73), PP())]),
+    R('I2', [one(L(76, 80), PP())]),
+    R('I3', [one(L(84, 89), PP())]),
+    R('I4', [one(L(93, 95), PP())]),
+    R('I5', [shown(L(103, 105))], whole=True),
+    R('I6', [shown(L(109, 111)), shown(S(112))], whole=True),
+    R('II1', [unprinted(NOTHING_2020)]),
+    R('III1', [unprinted(NOTHING_2020)], question=QP(4, 'Schrijf een opstel', 'a) Taal verdeelt')),
+    R('III2', [unprinted(NOTHING_2020)], question=QP(4, 'Schrijf een opstel', 'b) Mensen laten')),
+]
+
+# ================================================================ 2026 HL ===
+# The paper's instruction over Q1 says (a) and (b) test grammar and (c)-(e)
+# vocabulary; the second three carry it, the first two their own "Waarnaar
+# verwijzen". Q5's census text lost "(19)" (Dorea Laan's age, read as a price,
+# which also made the census price Q5 at 24): question and price read from the
+# paper's own lines. From Q2 on the scheme prints points or requirements with
+# no split: shown, priced as a whole (10a). Q6, Deel 2 and Deel 3: nothing
+# printed under the task (R4).
+NOTHING_2026 = 'The scheme reprints this task and prints nothing under it.'
+VOCAB_2026 = prerun(3, 'Vragen a en b', 'woorden in de zinnen')
+SPECS[2026] = [
+    R('I1a', [one(S(69), PP())], question=pre(3, '1. Waarnaar verwijzen')),
+    R('I1b', [one(S(73), PP())], question=pre(3, '1. Waarnaar verwijzen')),
+    R('I1c', [one(S(77), PP())], question=VOCAB_2026),
+    R('I1d', [one(S(81), PP())], question=VOCAB_2026),
+    R('I1e', [one(S(85), PP())], question=VOCAB_2026),
+    R('I2', [shown(S(92)), shown(S(93)), shown(S(94))], whole=True),
+    R('I3', [shown(L(97, 100)), shown(L(101, 103))], whole=True),
+    R('I4', [shown(L(109, 110))], whole=True),
+    R('I5', [shown(L(116, 117))], whole=True, total=PY(4, 364),
+      question=QP(4, Run('5. Dorea Laan', 'het geen 9 was'), Run('Uitgaande van', 'veeleisend ze'))),
+    R('I6', [unprinted('The scheme reprints this question and prints nothing under it.')]),
+    R('II1', [unprinted(NOTHING_2026)]),
+    R('III1', [unprinted(NOTHING_2026)], question=QP(4, 'Schrijf een opstel', '1. Het is helemaal')),
+    R('III2', [unprinted(NOTHING_2026)],
+      question=QP(4, 'Schrijf een opstel', Run('2. Het leven', '(Louis Couperus)'))),
+]
+
+# ================================================================ 2021 HL ===
+# Live: Q1-Q5 (9 cards). The three asks the old reader excluded: Q6 and Deel 2's
+# two titles (this sitting has no commentary; Deel 2 is the essay, 40). The
+# scheme reprints each and prints nothing under it (R4).
+SPECS[2021] = [
+    R('I6', [unprinted('The scheme reprints this question and prints nothing under it.')]),
+    R('II1', [unprinted('The scheme reprints the two titles and prints nothing under them.')],
+      question=pre(4, 'Schrijf een opstel')),
+    R('II2', [unprinted('The scheme reprints the two titles and prints nothing under them.')],
+      question=pre(4, 'Schrijf een opstel')),
+]
+
+# ================================================================ 2022 HL ===
+# Live: Q1-Q5 (9 cards). Q6 and Deel 2's two titles: nothing printed (R4).
+SPECS[2022] = [
+    R('I6', [unprinted('The scheme reprints this question and prints nothing under it.')]),
+    R('II1', [unprinted('The scheme reprints the two titles and prints nothing under them.')],
+      question=pre(4, 'Schrijf een opstel')),
+    R('II2', [unprinted('The scheme reprints the two titles and prints nothing under them.')],
+      question=pre(4, 'Schrijf een opstel')),
+]
+
 # The pages each sitting prints its reading text on. Every Dutch booklet sets
 # its passage on pp2-3 (cover p1, questions from p3 or p4); the census reads
 # pp2-4 for 2010 and p3 alone where the passage opens with an unnumbered
 # title (second reader, 20 Nov; checked on every paper's p2).
-PAGES = {y: (2, 3) for y in list(range(2010, 2021)) + [2026]}
+PAGES = {y: (2, 3) for y in list(range(2010, 2023)) + [2026]}
 
 
 def specs(year):
