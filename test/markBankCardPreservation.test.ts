@@ -1563,7 +1563,7 @@ const portugueseAddedTotal = [...Object.values(PORTUGUESE_ADDED), ...Object.valu
 const LITHUANIAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 32, ordinary: 40 },
   2025: { higher: 28, ordinary: 34 },
-  2024: { higher: 0, ordinary: 27 },
+  2024: { higher: 0, ordinary: 35 },
   2023: { higher: 25, ordinary: 25 },
 };
 /* The listening booklet (sections LA-LE) and Section B's written tasks, which
@@ -1571,6 +1571,14 @@ const LITHUANIAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: num
  * name, since their ids share the live cards' form. */
 const LITHUANIAN_ADDED_TO_FROZEN_ID = /^lt-202[2-6]-(?:hl|ol)-(?:l[a-e]-|b-)/;
 const LITHUANIAN_ADDED_TO_FROZEN_READING = new Set<string>([
+  'lt-2024-ol-a-1-e-ii',
+  'lt-2024-ol-a-1-e-iii',
+  'lt-2024-ol-a-1-e-iv',
+  'lt-2024-ol-a-1-e-v',
+  'lt-2024-ol-a-1-g',
+  'lt-2024-ol-a-2-e',
+  'lt-2024-ol-a-2-h',
+  'lt-2024-ol-a-3-e',
   'lt-2025-ol-a-1-f',
   'lt-2025-ol-a-1-i',
   'lt-2025-ol-a-2-h',

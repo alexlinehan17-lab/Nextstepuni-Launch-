@@ -10270,6 +10270,150 @@
   }
  },
  {
+  "id": "lt-2024-ol-a-1-e-ii",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2024,
+  "section": "U1",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "isrinkite-tinkama-zodi-irasykite-remkites-paltas",
+  "questionRef": "2024 OL Section A Q1(e)(ii)",
+  "questionText": "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) paltas viena užkalbintų sustingusi sukryžiuotos kojos",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "kojos sukryžiuotos",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 Marks (4 x 1)' over rows (ii)-(v); row (i) is printed answered as the worked example. The paper prints this ask on page 5 of the question booklet.",
+  "stem": "Pirma užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PIRMA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Lithuanian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2024-ol-a-1-e-iii",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2024,
+  "section": "U1",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "isrinkite-tinkama-zodi-irasykite-remkites-paltas",
+  "questionRef": "2024 OL Section A Q1(e)(iii)",
+  "questionText": "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) paltas viena užkalbintų sustingusi sukryžiuotos leidžia laiką",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "leidžia laiką viena",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 Marks (4 x 1)' over rows (ii)-(v); row (i) is printed answered as the worked example. The paper prints this ask on page 5 of the question booklet.",
+  "stem": "Pirma užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PIRMA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Lithuanian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2024-ol-a-1-e-iv",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2024,
+  "section": "U1",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "isrinkite-tinkama-zodi-irasykite-remkites-paltas",
+  "questionRef": "2024 OL Section A Q1(e)(iv)",
+  "questionText": "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) paltas viena užkalbintų sustingusi sukryžiuotos veido išraiška",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "veido išraiška sustingusi",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 Marks (4 x 1)' over rows (ii)-(v); row (i) is printed answered as the worked example. The paper prints this ask on page 5 of the question booklet.",
+  "stem": "Pirma užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PIRMA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Lithuanian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2024-ol-a-1-e-v",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2024,
+  "section": "U1",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "isrinkite-tinkama-zodi-irasykite-remkites-paltas",
+  "questionRef": "2024 OL Section A Q1(e)(v)",
+  "questionText": "Išrinkite tinkamą žodį ir jį įrašykite. Remkitės tekstu. (2 dalis) paltas viena užkalbintų sustingusi sukryžiuotos šalia prisėstų ir",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "šalia prisėstų ir užkalbintų",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 Marks (4 x 1)' over rows (ii)-(v); row (i) is printed answered as the worked example. The paper prints this ask on page 5 of the question booklet.",
+  "stem": "Pirma užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PIRMA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Lithuanian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
   "id": "lt-2024-ol-a-1-f",
   "subjectId": "lithuanian",
   "level": "ordinary",
@@ -10312,6 +10456,70 @@
    }
   ],
   "notes": "The scheme prints the tariff as '5 Marks'; the paper prints this ask on page 5 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "stem": "Pirma užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "PIRMA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Lithuanian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2024-ol-a-1-g",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2024,
+  "section": "U1",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "sunumeruokite-veiksmus-pagal-eiliskuma-irasykite-skaiciu",
+  "questionRef": "2024 OL Section A Q1(g)",
+  "questionText": "Sunumeruokite veiksmus pagal jų eiliškumą tekste. Įrašykite skaičių. (2 dalis)\nPasakotojas paprašo Ričio nubėgti arbatos. 1\nPasakotojas lėtu žingsniu priėjo prie moters.\nPasakotojas atsisėdo šalia.\nPasakotojas kelias akimirkas sėdėjo tylėdamas.\nMoteris į pasakotoją net neatsisuko.\nPasakotojas nusprendžia pakilti iš vietos.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3",
+    "marks": 2,
+    "contextNote": "For “Pasakotojas lėtu žingsniu priėjo prie moters.”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "5",
+    "marks": 2,
+    "contextNote": "For “Pasakotojas atsisėdo šalia.”"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "6",
+    "marks": 2,
+    "contextNote": "For “Pasakotojas kelias akimirkas sėdėjo tylėdamas.”"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4",
+    "marks": 2,
+    "contextNote": "For “Moteris į pasakotoją net neatsisuko.”"
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "2",
+    "marks": 2,
+    "contextNote": "For “Pasakotojas nusprendžia pakilti iš vietos.”"
+   }
+  ],
+  "notes": "The scheme prints the tariff as '10 Marks (5 x 2)'; \"Pasakotojas paprašo Ričio nubėgti arbatos\" is printed already numbered 1 as the worked example. The positions are the scheme's. The paper prints this task on page 6 of the question booklet.",
   "stem": "Pirma užduotis",
   "sourceMaterial": {
    "kind": "source-text",
@@ -10719,6 +10927,57 @@
   }
  },
  {
+  "id": "lt-2024-ol-a-2-e",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2024,
+  "section": "U2",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "sudarykite-sakinius-irasykite-atsakymo-raide-prie",
+  "questionRef": "2024 OL Section A Q2(e)",
+  "questionText": "Sudarykite sakinius. Įrašykite atsakymo raidę prie žemiau pateiktų skaičių. (2 dalis)\n1. Žaidimo programėlę kūrė A. ... spaustuvė.\n2. Žaidimui lentą pagamino B. ... žaidimais prekiaujanti firma.\n3. Žaidimą sutiko pardavinėti C. ... informacinių technologijų specialistas.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C",
+    "marks": 2,
+    "contextNote": "For “1. Žaidimo programėlę kūrė”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A",
+    "marks": 2,
+    "contextNote": "For “2. Žaidimui lentą pagamino”"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 2,
+    "contextNote": "For “3. Žaidimą sutiko pardavinėti”"
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 Marks (3 x 2)' and answers the grid in one line, \"1. 2. 3.\" over \"C A B\". The paper prints this task on page 8 of the question booklet; the census counts it once (10c).",
+  "stem": "Antra užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ANTRA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    7,
+    8
+   ],
+   "attribution": "SEC Lithuanian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
   "id": "lt-2024-ol-a-2-f",
   "subjectId": "lithuanian",
   "level": "ordinary",
@@ -10789,6 +11048,61 @@
    }
   ],
   "notes": "The scheme prints the tariff as '4 marks'; the paper prints this ask on page 9 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "stem": "Antra užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ANTRA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    7,
+    8
+   ],
+   "attribution": "SEC Lithuanian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2024-ol-a-2-h",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2024,
+  "section": "U2",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "rasite-kondigno-zaidime-zaidimo-lenta-sesias",
+  "questionRef": "2024 OL Section A Q2(h)",
+  "questionText": "Remdamiesi tekstu pažymėkite (✓), ką rasite Kondigno žaidime. (3 dalis)\n(i) Žaidimo lentą\n(ii) Šešias palmes\n(iii) Kauliukus\n(iv) Maišelį\n(v) Medinius pagaliukus",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Žaidimo lenta",
+    "marks": 2,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language. The scheme leaves “Kauliukai” unticked."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Šešios palmės",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Maišelis",
+    "marks": 2
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Mediniai pagaliukai",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prints the tariff as '8 Marks (4 x 2)' and ticks 4 of the 5 options; the ticks were read on a render of the whole table. The paper prints this task on page 9 of the question booklet; the census counts it once (10c).",
   "stem": "Antra užduotis",
   "sourceMaterial": {
    "kind": "source-text",
@@ -11021,6 +11335,57 @@
    }
   ],
   "notes": "The scheme prints the tariff as '3 Marks'; the paper prints this ask on page 11 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "stem": "Trečia užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "TREČIA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    10,
+    11
+   ],
+   "attribution": "SEC Lithuanian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "lt-2024-ol-a-3-e",
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "year": 2024,
+  "section": "U3",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "sudarykite-sakinius-irasykite-atsakymo-raide-prie",
+  "questionRef": "2024 OL Section A Q3(e)",
+  "questionText": "Sudarykite sakinius. Įrašykite atsakymo raidę prie žemiau pateiktų skaičių. (2 dalis)\n1. Dominika A. ... kartu keliauja.\n2. Mama B. ... išmokė breiko pagrindų.\n3. Treneris C. ... pamatė breiką Youtube kanale.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C",
+    "marks": 2,
+    "contextNote": "For “1. Dominika”: The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A",
+    "marks": 2,
+    "contextNote": "For “2. Mama”"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 2,
+    "contextNote": "For “3. Treneris”"
+   }
+  ],
+  "notes": "The scheme prints the tariff as '6 Marks (3 x 2)' and answers the grid in one line, \"1. 2. 3.\" over \"C A B\". The paper prints this task on page 11 of the question booklet; the census counts it once (10c).",
   "stem": "Trečia užduotis",
   "sourceMaterial": {
    "kind": "source-text",
