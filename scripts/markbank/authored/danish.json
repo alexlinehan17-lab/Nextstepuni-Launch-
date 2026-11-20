@@ -245,7 +245,7 @@
    }
   ],
   "noScheme": true,
-  "notes": "Read on the rendered paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper and prices it \"Opgave II (30)\". The SEC published no marking scheme for this sitting (SOURCES.md: not in the 31 Aug 2026 archive listing; live check 18 Nov 2026 = 404).",
+  "notes": "Read on the rendered paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper and prints this part's total, 30 marks, on its head. The SEC published no marking scheme for this sitting (SOURCES.md: not in the 31 Aug 2026 archive listing; live check 18 Nov 2026 = 404).",
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OPGAVE II",
@@ -282,7 +282,7 @@
    }
   ],
   "noScheme": true,
-  "notes": "Read on the rendered paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper and prices it \"Opgave III (maksimum 40 point) (40)\". The SEC published no marking scheme for this sitting (SOURCES.md: not in the 31 Aug 2026 archive listing; live check 18 Nov 2026 = 404)."
+  "notes": "Read on the rendered paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper and prints this part's total, 40 marks, on its head. The SEC published no marking scheme for this sitting (SOURCES.md: not in the 31 Aug 2026 archive listing; live check 18 Nov 2026 = 404)."
  },
  {
   "id": "dan-2011-hl-i-1",
@@ -3365,7 +3365,7 @@
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
   "sourceMaterial": {
    "kind": "source-text",
-   "label": "OPGAVE I",
+   "label": "QUESTION 6",
    "title": "Reading text — answer in Danish",
    "pages": [
     2,

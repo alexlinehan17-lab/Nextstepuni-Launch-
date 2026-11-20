@@ -1520,7 +1520,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "OPGAVE I",
+          "label": "QUESTION 6",
           "title": "Reading text — answer in Danish",
           "pages": [
                 2,

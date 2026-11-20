@@ -968,14 +968,19 @@ def cards(subject, year, specs, level='hl', scheme=True):
             'questionText': question,
         }
         if isinstance(spec, NoScheme):
-            _c, total, notation = (spec.total or default_price(key)).read(doc)
+            price = spec.total or default_price(key)
+            _c, total, notation = price.read(doc)
+            # a part's total is printed on its head, not beside the ask: say so, never quote a
+            # notation the paper does not print ("Opgave II (30)"; second reader, 20 Nov)
+            priced = (f'prints this part\'s total, {total} marks, on its head' if isinstance(price, PartPrice)
+                      else f'prices it "{notation}"')
             card.update({
                 'tariffModel': {'kind': 'questionTotal'}, 'totalMarks': total,
                 'rows': [{'id': 'r-1', 'kind': 'criterion', 'verbatim': NO_SCHEME_PUBLISHED,
                           'marks': None, 'contextNote': note}],
                 'noScheme': True,
                 'notes': (f'Read on the rendered paper ({LANE}); the paper prints this ask on PDF page '
-                          f'{ask.page} of the question paper and prices it "{notation}". The SEC '
+                          f'{ask.page} of the question paper and {priced}. The SEC '
                           f'published no marking scheme for this sitting (SOURCES.md: not in the 31 Aug '
                           f'2026 archive listing; live check 18 Nov 2026 = 404).'),
             })
@@ -1045,9 +1050,10 @@ def cards(subject, year, specs, level='hl', scheme=True):
                                            'answer. ' + lang_note)
                 if getattr(spec, 'pages', None):
                     src['pages'] = list(spec.pages)
-                if key[0] != 'I' or added:
+                if key[0] != 'I' or (added and not isinstance(key[1], int)):
                     # Part II's own head; and the part head for an unnumbered
-                    # question, which has no "Question N" of its own.
+                    # question, which has no "Question N" of its own (Maltese
+                    # 2019 Q1A; Danish 2018 Q6 prints its number, so keeps it).
                     head = part_head(P, key[0])
                     if head:
                         src['label'] = clean_question(head).upper()[:60]
