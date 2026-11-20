@@ -1439,6 +1439,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2014 Higher Level — © State Examinations Commission.",
+    id: "slk-2014-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-najmenej-100-slov-temu",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "Napíšte komentár (najmenej 100 slov) na tému: „O čo sa to môže zrýchliť? Aký veľký harddisk zajtra budem mať? Dá sa ešte rýchlejšie žiť?“",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints, as examples, not a checklist: “Už v súčasnosti vďaka moderným technológiám vieme komunikovať s celým svetom, vždy máme aktuálne informácie, cesta za lepšie platenou prácou nám nerobí problémy.”; “Tempo nášho života je omnoho rýchlejšie ako bolo tempo na začiatku 20. storočia.”; “Rýchlosť života sa naďalej zvyšuje.”; “Moderné technológie možu zväčšiť kapacitu naši „harddiscov“.”; “Ale už teraz platíme za to vysokú cenu – psychické problémy, zdravotné problémy, syndróm burn-out.”; “Takéto zrýchľovanie už teraz vedie k tomu, že zo života sa vytrácajú napríklad reálne ľudské vzťahy, ktoré sa nahrádzajú virtuálnymi.”; “Žijeme osamelo, aby sme dokázali odolať stresu a túžbe všetko mať, musíme si stanoviť priority a niečo odmietnuť - a snažiť sa pomalšie s šťastnejšie žiť.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2014 Higher Level — © State Examinations Commission.",
+    id: "slk-2014-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-praca-povinnos-poslanie-alebo",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Práca – povinnosť a poslanie",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2014 Higher Level — © State Examinations Commission.",
+    id: "slk-2014-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-precestujeme-svet-aby-sme-krasu",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: „Aj keď precestujeme svet, aby sme našli krásu, musíme ju nosiť v sebe, ináč ju nenájdeme.“ Ralph Waldo Emerson",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under “ČASŤ III” the scheme reprints only the instruction “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2015, level: "higher",
     paperFileid: "LC554ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2015 Higher Level — © State Examinations Commission.",
