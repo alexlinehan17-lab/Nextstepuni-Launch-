@@ -30046,4 +30046,3825 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC067ALP007EV"
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q1-x1-i", topicId: "music-2-16", conceptId: "mus-excerpt-from-taken-this",
+    section: "L", questionRef: "2017 HL Listening Q1 Excerpt 1(i)",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An outline score of the music in this excerpt is printed below.",
+    questionText: "This excerpt is taken from",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "the beginning of the work", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 2,
+                      "r": [
+                            0.08,
+                            0.535,
+                            0.95,
+                            0.595
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q1-x1-i-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q1-x1-i-score.png",
+          "srcHash": "b11d3b6c33b4123a59cba0f969a0b660",
+          "alt": "The outline score of bars 1-26 and the printed question with its three options (the beginning / the middle / the end of the work), printed with Listening Q1 Excerpt 1(i) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q1-x1-ii", topicId: "music-2-16", conceptId: "mus-based-excerpt-irish-melody",
+    section: "L", questionRef: "2017 HL Listening Q1 Excerpt 1(ii)",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An outline score of the music in this excerpt is printed below.",
+    questionText: "Name the Irish tune on which the melody in this excerpt is based.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sí Beag Sí Mór", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 2,
+                      "r": [
+                            0.08,
+                            0.598,
+                            0.95,
+                            0.66
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q1-x1-ii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q1-x1-ii-score.png",
+          "srcHash": "e50067993e0f84d26eea6eb81a56f245",
+          "alt": "The outline score of bars 1-26 (the melody the question asks about), part (i) and the question, printed with Listening Q1 Excerpt 1(ii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q1-x1-iii", topicId: "music-2-16", conceptId: "mus-compositional-describe-excerpt-identify",
+    section: "L", questionRef: "2017 HL Listening Q1 Excerpt 1(iii)",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An outline score of the music in this excerpt is printed below.",
+    questionText: "Identify a compositional technique used in this excerpt. Describe how this technique is used in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Canon", marks: 1 },
+    { id: "r-2", kind: "criterion", verbatim: "4-part (canon) at the crotchet and at the octave in the order vln, vla, vc and piano (LH)", marks: 3, contextNote: "The scheme reads: “Up to 3 marks for an accurate description of how canon is used in the excerpt.” “The answer must refer to the music in the excerpt.”", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 2,
+                      "r": [
+                            0.08,
+                            0.67,
+                            0.95,
+                            0.868
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q1-x1-iii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q1-x1-iii-score.png",
+          "srcHash": "9924a836434bc8052bcbe96c63830bea",
+          "alt": "The printed question, its three options (augmentation, polymetry, canon) and the follow-on \"Describe\" line, printed with Listening Q1 Excerpt 1(iii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q1-x1-iv", topicId: "music-2-16", conceptId: "mus-bars-change-excerpt-features",
+    section: "L", questionRef: "2017 HL Listening Q1 Excerpt 1(iv)",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1. An outline score of the music in this excerpt is printed below.",
+    questionText: "Bars 1–26 are repeated in the excerpt. This repeat features a change in",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "dynamics", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 2,
+                      "r": [
+                            0.08,
+                            0.88,
+                            0.95,
+                            0.94
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q1-x1-iv-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q1-x1-iv-score.png",
+          "srcHash": "3603f41105dd60743cc8b12b20082361",
+          "alt": "The printed question and its three options (pitch, tempo, dynamics), printed with Listening Q1 Excerpt 1(iv) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q1-x2-i", topicId: "music-2-16", conceptId: "mus-excerpt-hear-name-section",
+    section: "L", questionRef: "2017 HL Listening Q1 Excerpt 2(i)",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2. There is no printed music for this excerpt.",
+    questionText: "Name the section of the work that you hear in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hommage à Horrowitz / C4 / solo piano (section)", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.06,
+                            0.95,
+                            0.088
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q1-x2-i-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q1-x2-i-score.png",
+          "srcHash": "7594ac934f7aac979e010704e6524aff",
+          "alt": "The printed question, printed with Listening Q1 Excerpt 2(i) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q1-x2-ii", topicId: "music-2-16", conceptId: "mus-describe-differs-excerpt-from",
+    section: "L", questionRef: "2017 HL Listening Q1 Excerpt 2(ii)",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2. There is no printed music for this excerpt.",
+    questionText: "Describe two ways in which the music in this excerpt differs from the music in excerpt 1.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Differences from the music in excerpt 1", marks: null, contextNote: "The scheme reads: “Up to 2 marks for each of two valid accurate differences.”", group: {"claimMax":2,"perOption":2,"options":["This section is for solo piano only.","The music is played in octaves.","There is no canon.","The dynamics are now fff / louder.","This (2nd) excerpt is not based on  Sí Beag Sí Mór.","This excerpt is based on C (material).","This excerpt is chromatic."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.089,
+                            0.95,
+                            0.248
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q1-x2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q1-x2-ii-score.png",
+          "srcHash": "033b0d14c46a95c4cd8f25f041f60926",
+          "alt": "The printed question, printed with Listening Q1 Excerpt 2(ii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q1-x2-iii", topicId: "music-2-16", conceptId: "mus-excerpt-features-music-this",
+    section: "L", questionRef: "2017 HL Listening Q1 Excerpt 2(iii)",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2. There is no printed music for this excerpt.",
+    questionText: "The music in this excerpt features",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "octaves", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.25,
+                            0.95,
+                            0.308
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q1-x2-iii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q1-x2-iii-score.png",
+          "srcHash": "ad4c1e89311fddb873d5b16b712f9c07",
+          "alt": "The printed question and its three options (3rds, 5ths, octaves), printed with Listening Q1 Excerpt 2(iii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q1-x3-i", topicId: "music-2-16", conceptId: "mus-excerpt-heard-instruments-name",
+    section: "L", questionRef: "2017 HL Listening Q1 Excerpt 3(i)",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3. An outline score of the music in this excerpt is printed below.",
+    questionText: "Name the three instruments heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "violin", marks: 0.5, contextNote: "The scheme reads: “violin, viola and cello (in any order)”" },
+    { id: "r-2", kind: "point", verbatim: "viola", marks: 0.5 },
+    { id: "r-3", kind: "point", verbatim: "cello", marks: 0.5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.47,
+                            0.95,
+                            0.53
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q1-x3-i-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q1-x3-i-score.png",
+          "srcHash": "e1fe1f88159cc558cb01836d2cd87013",
+          "alt": "The outline score of bars 1-11 and the printed question with its three answer slots, printed with Listening Q1 Excerpt 3(i) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q1-x3-ii", topicId: "music-2-16", conceptId: "mus-asked-excerpt-explain-flautando",
+    section: "L", questionRef: "2017 HL Listening Q1 Excerpt 3(ii)",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3. An outline score of the music in this excerpt is printed below.",
+    questionText: "In this excerpt, the performers are asked to play flautando. Explain.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Explanations of flautando", marks: null, group: {"claimMax":1,"perOption":1,"options":["to make the instrument sound like a flute","to bow near the fingerboard","to use harmonics"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.53,
+                            0.95,
+                            0.585
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q1-x3-ii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q1-x3-ii-score.png",
+          "srcHash": "99ee68f3b133a257b3270c2ac557a8de",
+          "alt": "The printed question, printed with Listening Q1 Excerpt 3(ii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q1-x3-iii", topicId: "music-2-16", conceptId: "mus-excerpt-music-this-tonality",
+    section: "L", questionRef: "2017 HL Listening Q1 Excerpt 3(iii)",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3. An outline score of the music in this excerpt is printed below.",
+    questionText: "The tonality of the music in this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "atonal", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.594,
+                            0.95,
+                            0.623
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q1-x3-iii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q1-x3-iii-score.png",
+          "srcHash": "aaf4ddbc74a942491a0613d2f8ad7048",
+          "alt": "The printed question and its three options (major, minor, atonal), printed with Listening Q1 Excerpt 3(iii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q1-x3-iv", topicId: "music-2-16", conceptId: "mus-changing-effect-excerpt-have",
+    section: "L", questionRef: "2017 HL Listening Q1 Excerpt 3(iv)",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3. An outline score of the music in this excerpt is printed below.",
+    questionText: "What effect do the changing time signatures have on the music in this excerpt?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1.5, contextNote: "The scheme reads: “Up to 1.5 marks for an accurate description of the effect of changing time signatures on the music in the excerpt.”", permittedMarks: [0,1,1.5], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.623,
+                            0.95,
+                            0.715
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q1-x3-iv-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q1-x3-iv-score.png",
+          "srcHash": "595e3986bf0a63181a401962fa7648d2",
+          "alt": "The printed question, printed with Listening Q1 Excerpt 3(iv) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q1-x3-v", topicId: "music-2-16", conceptId: "mus-barry-briefly-describe-features",
+    section: "L", questionRef: "2017 HL Listening Q1 Excerpt 3(v)",
+    stem: "Three excerpts from Piano Quartet No.1 by Gerald Barry.\n• Each excerpt will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3. An outline score of the music in this excerpt is printed below.",
+    questionText: "Briefly describe any two of the following features as used in Piano Quartet No. 1 by Gerald Barry.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 4, contextNote: "The scheme reads: “Up to 2 marks for each of two descriptions of two given features as used in the quartet.” “polymetry” “augmentation” “retrograde” “inversion”", permittedMarks: [0,1,2,3,4], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.08,
+                            0.722,
+                            0.95,
+                            0.931
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q1-x3-v-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q1-x3-v-score.png",
+          "srcHash": "ac943398448ff9483d207b5b7924c665",
+          "alt": "The printed question and its four features (polymetry, augmentation, retrograde, inversion), printed with Listening Q1 Excerpt 3(v) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q2-i", topicId: "music-2-14", conceptId: "mus-before-enters-excerpt-features",
+    section: "L", questionRef: "2017 HL Listening Q2(i)",
+    stem: "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• The main vocal line in this excerpt is printed below.\n• Answer the following questions:",
+    questionText: "Identify two features of the music heard before the main vocal line enters in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of the music before the main vocal line", marks: null, contextNote: "The scheme reads: “any two correct identifications of features which can be heard in the music” “allow correct references to instrumental techniques”", group: {"claimMax":2,"perOption":1,"options":["(guitar/vocal) overdubs","(rising) broken chords (on guitar)","descending (chromatic) bass line","backing vocals (‘oh, yeah’)","there are elements of repetition in the guitar part (e.g. licks)","accented/strong backbeat"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.37,
+                            0.95,
+                            0.47
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q2-i-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q2-i-score.png",
+          "srcHash": "7093c47900421c4505ad77ad5578f31c",
+          "alt": "The printed question, printed with Listening Q2(i) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q2-ii", topicId: "music-2-14", conceptId: "mus-above-five-insert-missing",
+    section: "L", questionRef: "2017 HL Listening Q2(ii)",
+    stem: "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• The main vocal line in this excerpt is printed below.\n• Answer the following questions:",
+    questionText: "Insert the five missing notes at X on the score above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2.5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "0.5 for each correct note (pitch and rhythm must be correct)", marks: 2.5, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", permittedMarks: [0,0.5,1,1.5,2,2.5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.485,
+                            0.95,
+                            0.512
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q2-ii-score.png",
+          "srcHash": "deb0e179b62909bc01eef604508b8869",
+          "alt": "The printed vocal line with its words (X bracket over bar 2), part (i) and the question, printed with Listening Q2(ii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2017-HL-scheme-p12-l-q2-ii",
+          "src": "/exam-figures/music/markbank/music-2017-HL-scheme-p12-l-q2-ii.png",
+          "srcHash": "6d3ef4f484dd403a4d05d4a6087b4561",
+          "alt": "The marking scheme’s printed answer for Listening Q2(ii): the five notes printed on a treble stave, with the marking line, cropped from page 12 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q2-iii", topicId: "music-2-14", conceptId: "mus-after-describe-excerpt-feature",
+    section: "L", questionRef: "2017 HL Listening Q2(iii)",
+    stem: "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• The main vocal line in this excerpt is printed below.\n• Answer the following questions:",
+    questionText: "Describe one feature of the piano music in the last section of this excerpt (after the vocals ‘nothing really matters to me’ are heard).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of the piano music in the last section", marks: null, contextNote: "The scheme reads: “Up 2 to marks for one valid description”", group: {"claimMax":1,"perOption":2,"options":["(rising) broken chords","rising chords","block chords","repeated chords","chord sequence","a (repeated) 2-note figure","repeated motif/figure","descending (chromatic) bass line (LH)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.53,
+                            0.95,
+                            0.66
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q2-iii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q2-iii-score.png",
+          "srcHash": "431e1c57fd34adf8db8c9851d7b61e41",
+          "alt": "The printed question, printed with Listening Q2(iii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q2-iv", topicId: "music-2-14", conceptId: "mus-excerpt-heard-instrument-name",
+    section: "L", questionRef: "2017 HL Listening Q2(iv)",
+    stem: "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• The main vocal line in this excerpt is printed below.\n• Answer the following questions:",
+    questionText: "Name the percussion instrument heard at the very end of this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 0.5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "gong (tam tam)", marks: 0.5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.668,
+                            0.95,
+                            0.695
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q2-iv-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q2-iv-score.png",
+          "srcHash": "4d64e927aced0c017470562d3ee3b394",
+          "alt": "The printed question, printed with Listening Q2(iv) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q2-v", topicId: "music-2-14", conceptId: "mus-below-between-bohemian-choice",
+    section: "L", questionRef: "2017 HL Listening Q2(v)",
+    stem: "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• The main vocal line in this excerpt is printed below.\n• Answer the following questions:",
+    questionText: "Describe two differences between the music heard in this excerpt and one of the following sections of Bohemian Rhapsody. Indicate your choice of section below:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 3, contextNote: "The scheme reads: “Up to 1.5 marks for each of two descriptions of two valid differences between the music in this excerpt and the music in the Opening or in the Main Song or in the Operatic Section.”", permittedMarks: [0,1,1.5,2,2.5,3], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.08,
+                            0.713,
+                            0.95,
+                            0.922
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q2-v-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q2-v-score.png",
+          "srcHash": "08504b97792d8823fd715763ebe6e054",
+          "alt": "The printed question and its three sections to choose from (Opening, Main song, Operatic section), printed with Listening Q2(v) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q3-i", topicId: "music-2-17", conceptId: "mus-bars-excerpt-from-movement",
+    section: "L", questionRef: "2017 HL Listening Q3(i)",
+    stem: "An excerpt from Cantata No.78, Jesu, der du meine Seele by J.S. Bach will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Name the movement from which this excerpt is taken. It is sung by The opening bars of this excerpt are sung",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2 / Movement 2 / Aria Duetto (Duet)/ the Soprano and Alto Aria / the Soprano and Alto Duet", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "soprano and alto", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "in 3rds", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.17,
+                            0.95,
+                            0.345
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q3-i-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q3-i-score.png",
+          "srcHash": "e9207ff58e28f6dfae58506f9edfa9e6",
+          "alt": "The printed part (i): its three questions and the options of the two tick-box questions (soprano and alto / soprano and tenor / alto and tenor; in unison / in 3rds / in 6ths), printed with Listening Q3(i) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q3-ii", topicId: "music-2-17", conceptId: "mus-excerpt-features-identify-lines",
+    section: "L", questionRef: "2017 HL Listening Q3(ii)",
+    stem: "An excerpt from Cantata No.78, Jesu, der du meine Seele by J.S. Bach will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Identify two features of the vocal lines in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sequences", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "imitation", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.365,
+                            0.95,
+                            0.43
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q3-ii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q3-ii-score.png",
+          "srcHash": "c424123e2cd8c71c151f6b9c02686102",
+          "alt": "The printed question and its four options (sequences, trills, triplets, imitation), printed with Listening Q3(ii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q3-iii", topicId: "music-2-17", conceptId: "mus-bass-excerpt-explain-figured",
+    section: "L", questionRef: "2017 HL Listening Q3(iii)",
+    stem: "An excerpt from Cantata No.78, Jesu, der du meine Seele by J.S. Bach will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Name the keyboard instrument that plays in this excerpt. The keyboard player reads from a figured bass. Explain.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "organ / harmonium", marks: 0.5 },
+    { id: "r-2", kind: "criterion", verbatim: "figures  (written under the bass line) which indicate to the keyboard player what chords / chord positions / notes to play", marks: 1.5, contextNote: "The scheme reads: “Up to 1.5 marks for a correct explanation of figured bass”", permittedMarks: [0,1,1.5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.452,
+                            0.95,
+                            0.63
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q3-iii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q3-iii-score.png",
+          "srcHash": "d0a3f2850a3a99b32f425e6a02c73f78",
+          "alt": "The printed part (iii): its two questions, printed with Listening Q3(iii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q3-iv", topicId: "music-2-17", conceptId: "mus-cadence-excerpt-heard-identify",
+    section: "L", questionRef: "2017 HL Listening Q3(iv)",
+    stem: "An excerpt from Cantata No.78, Jesu, der du meine Seele by J.S. Bach will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Identify the cadence heard at the end of this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "perfect", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.646,
+                            0.95,
+                            0.675
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q3-iv-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q3-iv-score.png",
+          "srcHash": "d5fdb5fdb4cd49e166456e4efa3c1971",
+          "alt": "The printed question, printed with Listening Q3(iv) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q3-v", topicId: "music-2-17", conceptId: "mus-describe-example-movement-painting",
+    section: "L", questionRef: "2017 HL Listening Q3(v)",
+    stem: "An excerpt from Cantata No.78, Jesu, der du meine Seele by J.S. Bach will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Describe one example of word painting in this movement.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Up to 2 marks for a valid description of word painting as used in this movement”", permittedMarks: [0,1,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.08,
+                            0.699,
+                            0.95,
+                            0.84
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q3-v-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q3-v-score.png",
+          "srcHash": "3d7c661b588f3c33d72d57d5aac79007",
+          "alt": "The printed question, printed with Listening Q3(v) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q4-i", topicId: "music-2-15", conceptId: "mus-excerpt-from-taken-this",
+    section: "L", questionRef: "2017 HL Listening Q4(i)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "This excerpt is taken from the",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Exposition", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.138,
+                            0.95,
+                            0.203
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q4-i-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q4-i-score.png",
+          "srcHash": "e68a7b9c492c9c9ff6e26cc004788da3",
+          "alt": "The printed question and its three options (Exposition, Development, Recapitulation), printed with Listening Q4(i) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q4-ii", topicId: "music-2-15", conceptId: "mus-excerpt-features-heard-identify",
+    section: "L", questionRef: "2017 HL Listening Q4(ii)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "The theme heard in this excerpt is the Identify two features of this theme.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Strife theme", marks: 1 },
+    { id: "r-2", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Any two valid rhythmic or melodic features (of the melody line itself).” “Allow correct reference to instruments playing the melody.” “Allow correct reference to dynamics, tempo and tonality.”", permittedMarks: [0,1,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.21,
+                            0.95,
+                            0.385
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q4-ii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q4-ii-score.png",
+          "srcHash": "ac1b88e398643dd86252414f10ac18d7",
+          "alt": "The printed part (ii): the tick-box question with its three options (Friar Lawrence theme, Strife theme, Love theme) and the follow-on question, printed with Listening Q4(ii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q4-iii", topicId: "music-2-15", conceptId: "mus-based-between-dialogue-excerpt",
+    section: "L", questionRef: "2017 HL Listening Q4(iii)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "This excerpt features dialogue between strings and woodwind. This dialogue is based on",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "3-note figure", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.39,
+                            0.95,
+                            0.49
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q4-iii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q4-iii-score.png",
+          "srcHash": "700738509cdfd2a67a4b596935d7bce0",
+          "alt": "The printed question and its three options (a 2-note, a 3-note, a 4-note figure), printed with Listening Q4(iii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q4-iv", topicId: "music-2-15", conceptId: "mus-canon-describe-excerpt-half",
+    section: "L", questionRef: "2017 HL Listening Q4(iv)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Describe Tchaikovsky’s use of canon in the second half of this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Descriptions of the canon", marks: null, contextNote: "The scheme reads: “Up to 2 marks for any valid description of canon as used in this excerpt.”", openList: true, group: {"claimMax":1,"perOption":2,"options":["there is canon between the lower strings (cello & bass) and woodwind (piccolo, flute & oboe)","this melody is based on the strife theme + elaboration","the imitation is at the minim distance","the imitation is at the octave","the canon is repeated (further in the excerpt) at a different (higher) pitch","the canon is repeated in a different key","the canon is first heard in D Minor and repeated in G Minor"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.494,
+                            0.95,
+                            0.64
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q4-iv-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q4-iv-score.png",
+          "srcHash": "aa36bbe3bbc61b2806a07efb739fc8c4",
+          "alt": "The printed question, printed with Listening Q4(iv) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q4-v", topicId: "music-2-15", conceptId: "mus-between-describe-differences-excerpt",
+    section: "L", questionRef: "2017 HL Listening Q4(v)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played three times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Describe two differences between the theme heard in this excerpt and one other theme from Romeo and Juliet Fantasy Overture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 3, contextNote: "The scheme reads: “Up to 1.5 marks for each description of two valid differences (rhythmic/melodic), between the strife theme and one other theme in Romeo and Juliet Fantasy Overture.” “Allow correct reference to instruments playing the melody.” “Allow correct reference to dynamics, tempo and tonality.”", permittedMarks: [0,1,1.5,2,2.5,3], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.08,
+                            0.65,
+                            0.95,
+                            0.89
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q4-v-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q4-v-score.png",
+          "srcHash": "13bbf2f47969080e17e094952f7ea12c",
+          "alt": "The printed question, printed with Listening Q4(v) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-a-x1-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-identify",
+    section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 1(i)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    questionText: "Identify the type of dance tune heard in this excerpt and its time signature.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "hornpipe", marks: 0.5 },
+    { id: "r-2", kind: "point", verbatim: "4/4", marks: 0.5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.172,
+                            0.95,
+                            0.234
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q5-a-x1-i-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q5-a-x1-i-score.png",
+          "srcHash": "3d11ba1e8f42b27dad29c7db1f29f7b6",
+          "alt": "The printed question with its two answer slots (Dance, Time signature), printed with Listening Q5 A Excerpt 1(i) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-a-x1-ii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-this",
+    section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 1(ii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    questionText: "Write one bar of rhythm associated with this type of dance.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "One correct bar of hornpipe rhythm", marks: 1, permittedMarks: [0,1] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.238,
+                            0.95,
+                            0.268
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q5-a-x1-ii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q5-a-x1-ii-score.png",
+          "srcHash": "f7d586f9135f8a03ae9ca382e70dd091",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 1(ii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-a-x1-iii", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-melody-name",
+    section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 1(iii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    questionText: "Name one instrument which plays the melody in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "fiddle / (button/piano) accordion / box / melodeon  / flute / tin whistle", marks: 1, contextNote: "The scheme reads: “(any one)”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.272,
+                            0.95,
+                            0.303
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q5-a-x1-iii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q5-a-x1-iii-score.png",
+          "srcHash": "9216abdbb2d775d7da3cf629a69e032e",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 1(iii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-a-x1-iv", topicId: "music-2-2", conceptId: "mus-accompanying-excerpt-instrument-this",
+    section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 1(iv)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    questionText: "The accompanying instrument in this excerpt is the",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "harp", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.306,
+                            0.95,
+                            0.338
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q5-a-x1-iv-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q5-a-x1-iv-score.png",
+          "srcHash": "a3b14a507fbeb35700682337247f511b",
+          "alt": "The printed question and its three options (piano, guitar, harp), printed with Listening Q5 A Excerpt 1(iv) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-a-x2-i", topicId: "music-2-2", conceptId: "mus-excerpt-identify-singing-style",
+    section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 2(i)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 Two verses from Neainsín Bhán.",
+    questionText: "Identify the style of singing in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sean-nós", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.422,
+                            0.95,
+                            0.45
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q5-a-x2-i-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q5-a-x2-i-score.png",
+          "srcHash": "c3da8af26950587692826e61795ff5ff",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 2(i) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-a-x2-ii", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
+    section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 2(ii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 Two verses from Neainsín Bhán.",
+    questionText: "Identify three features of this style of singing as heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of sean-nós style", marks: null, contextNote: "The scheme reads: “Any 3 valid features of sean-nós style as heard in the excerpt”", group: {"claimMax":3,"perOption":1,"options":["sung solo","unaccompanied (accept a cappella)","sung with ornamentation","sung with free rhythm","sliding","nasalisation"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.457,
+                            0.95,
+                            0.6
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q5-a-x2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q5-a-x2-ii-score.png",
+          "srcHash": "3e93d412426181b5c2b5dc2bc9e69c1b",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 2(ii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-a-x2-iii", topicId: "music-2-2", conceptId: "mus-down-form-letters-using",
+    section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 2(iii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2 Two verses from Neainsín Bhán.",
+    questionText: "Using letters, write down the form of the verse.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "AABA", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.604,
+                            0.95,
+                            0.633
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q5-a-x2-iii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q5-a-x2-iii-score.png",
+          "srcHash": "b3fac275c0f1f541f67cad1e30c7dbda",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 2(iii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-a-x3-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-identify",
+    section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 3(i)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    questionText: "Identify the type of dance tune heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "reel", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.685,
+                            0.95,
+                            0.713
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q5-a-x3-i-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q5-a-x3-i-score.png",
+          "srcHash": "92164a83b5384827104b796adffc437a",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 3(i) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-a-x3-ii", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-melody-name",
+    section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 3(ii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    questionText: "Name one instrument playing the melody in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "One instrument playing the melody", marks: null, contextNote: "The scheme reads: “Allow concertina/melodeon;”", group: {"claimMax":1,"perOption":1,"options":["banjo /(button/piano) accordion","concertina/melodeon"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.717,
+                            0.95,
+                            0.747
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q5-a-x3-ii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q5-a-x3-ii-score.png",
+          "srcHash": "ddeb43ef6e681ee11f4d662a8a2aafd0",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 3(ii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-a-x3-iii", topicId: "music-2-2", conceptId: "mus-excerpt-feature-heard-identify",
+    section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 3(iii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    questionText: "Identify one traditional feature of the music heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A traditional feature", marks: null, contextNote: "The scheme reads: “Allow correct reference to type of dance tune, a reel.” “Allow correct reference to instrument heard in this recording.” “Allow ornamentation.”", group: {"claimMax":1,"perOption":1,"options":["modal","flattened 7th","ornamentation"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.758,
+                            0.95,
+                            0.815
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q5-a-x3-iii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q5-a-x3-iii-score.png",
+          "srcHash": "5e76957f7feb9ffa7529a5cbfe95835a",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 3(iii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-a-x3-iv", topicId: "music-2-2", conceptId: "mus-accompaniment-describe-excerpt-feature",
+    section: "L", questionRef: "2017 HL Listening Q5 A Excerpt 3(iv)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    questionText: "Describe one feature of the accompaniment in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of the accompaniment", marks: null, contextNote: "The scheme reads: “Up to 2 marks for a valid description of one feature of the accompaniment.”", group: {"claimMax":1,"perOption":2,"options":["use of guitars/drums/keyboard(s) + elaboration","use of repeated notes /chords (at the start)","(strummed) chords on guitar","off-beat chords on guitar","syncopated chords","syncopation","repeated bass (pedal) note"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.05,
+                            0.818,
+                            0.95,
+                            0.945
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q5-a-x3-iv-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q5-a-x3-iv-score.png",
+          "srcHash": "0a3f2681c6f59ace48b55ae69f276cf1",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 3(iv) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2017 Higher Level, p.16 — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-b-i", topicId: "music-2-13", conceptId: "mus-context-description-give-harp",
+    section: "L", questionRef: "2017 HL Listening Q5 B(i)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    questionText: "Give a description of the uilleann pipes or the Irish harp in the context of Irish traditional music.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence.",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.05,
+                            0.07,
+                            0.95,
+                            0.097
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2017 Higher Level, p.16 — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-b-ii", topicId: "music-2-13", conceptId: "mus-context-discuss-group-have",
+    section: "L", questionRef: "2017 HL Listening Q5 B(ii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    questionText: "Discuss the musical style of any well-known group that you have studied in the context of Irish traditional music.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence.",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.05,
+                            0.103,
+                            0.95,
+                            0.148
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2017 Higher Level, p.16 — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-b-iii", topicId: "music-2-13", conceptId: "mus-band-context-discuss-irish",
+    section: "L", questionRef: "2017 HL Listening Q5 B(iii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    questionText: "Discuss the céilí band tradition in the context of Irish traditional music.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence.",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.05,
+                            0.154,
+                            0.95,
+                            0.183
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2017 Higher Level, p.16 — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q5-b-iv", topicId: "music-2-13", conceptId: "mus-america-contribution-discuss-folk",
+    section: "L", questionRef: "2017 HL Listening Q5 B(iv)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    questionText: "Discuss the contribution made by Irish folk music to the music of North America.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Where there is a choice of question to answer (Q5B), if a candidate answers more than one question, mark all answers and award the marks for the best answer."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence.",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.05,
+                            0.189,
+                            0.95,
+                            0.217
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q6-x1-i", topicId: "music-2-4", conceptId: "mus-bars-music-played",
+    section: "L", questionRef: "2017 HL Listening Q6 Excerpt 1(i)",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. Excerpt 1, first section played three times. An outline score of bars 1–6 of this excerpt is printed below.",
+    questionText: "The music in bars 1–6 is played",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "in unison", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.287,
+                            0.95,
+                            0.352
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q6-x1-i-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q6-x1-i-score.png",
+          "srcHash": "952dc866b7ba74e0d24a5149c8be92eb",
+          "alt": "The excerpt heading, the outline score of bars 1-6 and the printed question with its three options (in unison, in harmony, in imitation), printed with Listening Q6 Excerpt 1(i) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q6-x1-ii", topicId: "music-2-4", conceptId: "mus-bars-describe-feature-follows",
+    section: "L", questionRef: "2017 HL Listening Q6 Excerpt 1(ii)",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. Excerpt 1, first section played three times. An outline score of bars 1–6 of this excerpt is printed below.",
+    questionText: "Describe one feature of the music which immediately follows bars 1–6.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of the music which follows bars 1-6", marks: null, contextNote: "The scheme reads: “Up to 2 marks for a valid description of the music which immediately follows bars 1-6”", group: {"claimMax":1,"perOption":2,"options":["sustained chords/notes","rising chords/notes","repeated chords","woodwind chords","the music is/dynamics are (very) soft","there are pauses (on every note/chord)","the music is at a high register / pitch","the texture of the music is homophonic"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.374,
+                            0.95,
+                            0.475
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q6-x1-ii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q6-x1-ii-score.png",
+          "srcHash": "3c204e26aa7c750f8639ad9b7cedbe61",
+          "alt": "The printed question, printed with Listening Q6 Excerpt 1(ii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q6-x1-iii", topicId: "music-2-4", conceptId: "mus-accompanied-chords-complete-excerpt",
+    section: "L", questionRef: "2017 HL Listening Q6 Excerpt 1(iii)",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. Excerpt 1, first section played three times. An outline score of bars 1–6 of this excerpt is printed below.",
+    questionText: "A new melody is heard in the final part of the excerpt. Complete the following statement. The melody is played on the accompanied by chords on the .",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "violin", marks: 1, contextNote: "The scheme reads: “(violins = 0)”" },
+    { id: "r-2", kind: "point", verbatim: "harp", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.482,
+                            0.95,
+                            0.565
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q6-x1-iii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q6-x1-iii-score.png",
+          "srcHash": "c2c864e8f6389aea38f3f22d67805806",
+          "alt": "The printed question and its statement with two blanks, printed with Listening Q6 Excerpt 1(iii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q6-x1-iv", topicId: "music-2-4", conceptId: "mus-features-music-section-this",
+    section: "L", questionRef: "2017 HL Listening Q6 Excerpt 1(iv)",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. A later section from the same movement, played three times. Answer (iv).",
+    questionText: "The music in this section features (tick two).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "changes of key", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "sequences", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.08,
+                            0.646,
+                            0.95,
+                            0.712
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · A later section from the same movement",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q6-x1-iv-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q6-x1-iv-score.png",
+          "srcHash": "77ffd68d05ab5d1b8694d4de70a78662",
+          "alt": "The printed question and its four options (syncopation, changes of key, changes of metre, sequences), printed with Listening Q6 Excerpt 1(iv) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q6-x2-i", topicId: "music-2-3", conceptId: "mus-above-missing-notes-score",
+    section: "L", questionRef: "2017 HL Listening Q6 Excerpt 2(i)",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. Excerpt 2, first section played three times. An outline score of the music in this excerpt is printed below.",
+    questionText: "The missing notes at X on the score above are",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The missing notes at X on the score above are", marks: 2, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.252,
+                            0.95,
+                            0.335
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 2",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q6-x2-i-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q6-x2-i-score.png",
+          "srcHash": "65085e0f7c82e6d49c8a92e6df75b37f",
+          "alt": "The excerpt heading, the outline score of bars 1-8 (X over bar 1) and the printed question with its three options in notation, printed with Listening Q6 Excerpt 2(i) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2017-HL-scheme-p17-l-q6-x2-i",
+          "src": "/exam-figures/music/markbank/music-2017-HL-scheme-p17-l-q6-x2-i.png",
+          "srcHash": "342e4a3bca94e8d243dc539249fc7cfc",
+          "alt": "The marking scheme’s printed answer for Listening Q6 Excerpt 2(i): the chosen notes printed on a treble stave, cropped from page 17 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q6-x2-ii", topicId: "music-2-4", conceptId: "mus-accompaniment-describe-excerpt-feature",
+    section: "L", questionRef: "2017 HL Listening Q6 Excerpt 2(ii)",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. Excerpt 2, first section played three times. An outline score of the music in this excerpt is printed below.",
+    questionText: "Describe one feature of the accompaniment in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of the accompaniment", marks: null, contextNote: "The scheme reads: “Up to 2 marks for a description of one valid feature of the accompaniment in this excerpt”", group: {"claimMax":1,"perOption":2,"options":["sustained chord/notes (on strings: violas, cellos & basses)","the accompaniment is played by strings","pedal note","chromatic movement","it is played legato/smoothly"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.352,
+                            0.95,
+                            0.45
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 2",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q6-x2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q6-x2-ii-score.png",
+          "srcHash": "b79fc405fd0cb2cc2fe6890c773223ce",
+          "alt": "The printed question, printed with Listening Q6 Excerpt 2(ii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q6-x2-iii", topicId: "music-2-4", conceptId: "mus-between-describe-differences-excerpt",
+    section: "L", questionRef: "2017 HL Listening Q6 Excerpt 2(iii)",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. A later section from the same movement, played three times. Answer (iii).",
+    questionText: "Describe two differences between this music and the music heard in the first section of Excerpt 2.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Differences from the first section of Excerpt 2", marks: null, contextNote: "The scheme reads: “Up to 2 marks for each of two valid differences”", group: {"claimMax":2,"perOption":2,"options":["the melody is now on clarinet","the melody is heard on flute","the melody is at a higher pitch","the melody is played less legato","(the melody is played detaché/staccato/jauntily)","the accompaniment now includes percussion (side drum, tambourine and triangle)","there are chords on strings and woodwind","the chords are short here and not sustained","the tempo is faster","the 2nd section is in a different key"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.495,
+                            0.95,
+                            0.66
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · A later section from the same movement",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q6-x2-iii-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q6-x2-iii-score.png",
+          "srcHash": "8695ef548226b844ff61a38e215328d0",
+          "alt": "The printed question, printed with Listening Q6 Excerpt 2(iii) in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2017 Higher Level — © State Examinations Commission.",
+    id: "mus-2017-hl-l-q6-x3", topicId: "music-2-4", conceptId: "mus-between-coda-describe-excerpt",
+    section: "L", questionRef: "2017 HL Listening Q6 Excerpt 3",
+    stem: "Aural Skills. This question is based on excerpts of music from Scheherazade by Nikolai Rimsky-Korsakov.\n• Answer the questions on each excerpt. Excerpt 3, played three times. There is no printed music for this excerpt.",
+    questionText: "You will now hear the final section from this work. Describe one similarity between the music in this excerpt and the final section (Coda) of Romeo and Juliet Fantasy Overture by Tchaikovsky.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 3, contextNote: "The scheme reads: “Up to 3 marks for one valid description of a similarity between the music in the excerpt and the Coda section of Romeo and Juliet Fantasy Overture.”", permittedMarks: [0,1,2,3], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.08,
+                            0.7,
+                            0.95,
+                            0.912
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2017 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2017/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2017-HL-l-q6-x3-score",
+          "src": "/exam-figures/music/markbank/music-2017-HL-l-q6-x3-score.png",
+          "srcHash": "d5d2eac4cabb8434bdd97c972dd8852b",
+          "alt": "The printed question, printed with Listening Q6 Excerpt 3 in the 2017 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2017 Higher Level, p.3 — © State Examinations Commission.",
+    id: "mus-2017-hl-c-a-q1", topicId: "music-1-10", conceptId: "mus-appropriate-below-choose-clarinet",
+    section: "A", questionRef: "2017 HL Composing Section A Q1",
+    stem: "Answer one question only in this section: Q1 or Q2 or Q3.",
+    questionText: "CONTINUATION OF A GIVEN OPENING • Continue the opening below to make a 16–bar melody. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ violin □ clarinet □ horn □ oboe",
+    totalMarks: 40,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "SECTION A – MELODY COMPOSITION (40 marks)",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Melody has excellent style and imagination",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent sense of shape and structure",
+                                        "Excellent development of opening ideas",
+                                        "Excellent sense of direction and climax",
+                                        "Successful modulation",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good sense of melodic and rhythmic interest",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Very good sense of shape and structure",
+                                        "Very good development of opening ideas",
+                                        "Very good sense of direction and climax",
+                                        "Successful modulation",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chose."
+                                  ]
+                            },
+                            {
+                                  "label": "Good sense of melodic and rhythmic interest",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Good sense of shape and structure",
+                                        "Good development of opening ideas",
+                                        "Good sense of direction and climax",
+                                        "Unconfirmed modulation",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair sense of melodic and rhythmic interest",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Fair sense of shape and structure",
+                                        "Fair development of opening ideas",
+                                        "Fair sense of direction and climax",
+                                        "Unsuccessful modulation",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor melodic and rhythmic interest",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Poor sense of shape and structure",
+                                        "Poor development of opening ideas",
+                                        "Poor sense of direction",
+                                        "No attempt at modulation",
+                                        "Inappropriate performing directions (phrasing and dynamics) inserted",
+                                        "Unsuitable instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor melodic and rhythmic interest",
+                                  "marks": [4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very poor sense of shape and structure",
+                                        "Very poor development of opening ideas",
+                                        "Very poor sense of direction",
+                                        "No attempt at modulation",
+                                        "No performing directions (phrasing and dynamics) inserted",
+                                        "No instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Very little/no attempt",
+                                  "marks": [0,1,2,3],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2017 Higher Level, p.4 — © State Examinations Commission.",
+    id: "mus-2017-hl-c-a-q2", topicId: "music-1-11", conceptId: "mus-advances-appropriate-banner-bars",
+    section: "A", questionRef: "2017 HL Composing Section A Q2",
+    stem: "Answer one question only in this section: Q1 or Q2 or Q3.",
+    questionText: "SETTING MUSIC TO A GIVEN TEXT Here is an extract from the poem The Lady of the Lake by Sir Walter Scott. Hail to the chief who in triumph advances! Honoured and blessed be the evergreen pine! Long may the tree in his banner that glances Flourish the shelter and grace of our line! The opening line has been set to music below. • Set the remaining words to make a melody of 16 bars. (You may exceed this number of bars and include a modulation, if you wish.) • Add appropriate performing directions (phrasing and dynamics) to the melody.",
+    totalMarks: 40,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "SECTION A – MELODY COMPOSITION (40 marks)",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [
+                            "No text inserted 0"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "Excellent style and imagination",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent \"marriage\" of words and music",
+                                        "Excellent sense of shape and structure",
+                                        "Excellent sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good sense of melodic and rhythmic interest",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Very good “marriage” of words and music",
+                                        "Very good sense of shape and structure",
+                                        "Very good sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Good sense of  melodic and rhythmic interest",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Good “marriage” of words and music",
+                                        "Good sense of shape and structure",
+                                        "Good sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair sense of  melodic and rhythmic interest",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Fair “marriage” of words and music",
+                                        "Fair sense of shape and structure",
+                                        "Some sense of direction and climax",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor melodic interest.",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Poor “marriage” of words and music",
+                                        "Poor sense of shape and structure",
+                                        "Poor sense of direction",
+                                        "Inappropriate performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor melodic interest",
+                                  "marks": [4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very poor “marriage” of words and music",
+                                        "Very poor sense of shape and structure",
+                                        "Very poor sense of direction",
+                                        "No performing directions (phrasing and dynamics) inserted"
+                                  ]
+                            },
+                            {
+                                  "label": "Very little attempt",
+                                  "marks": [0,1,2,3],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2017 Higher Level, p.5 — © State Examinations Commission.",
+    id: "mus-2017-hl-c-a-q3", topicId: "music-1-12", conceptId: "mus-appropriate-below-choose-clarinet",
+    section: "A", questionRef: "2017 HL Composing Section A Q3",
+    stem: "Answer one question only in this section: Q1 or Q2 or Q3.",
+    questionText: "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM The opening phrase of a gavotte is given below. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ descant recorder □ flute □ violin □ clarinet",
+    totalMarks: 40,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "SECTION A – MELODY COMPOSITION (40 marks)",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Melody has excellent style and imagination",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent sense of shape and structure",
+                                        "Excellent development of opening ideas",
+                                        "Excellent sense of direction and climax",
+                                        "Successful modulation",
+                                        "Rhythmic integrity and style of dance maintained with flair",
+                                        "Excellent adherence to given structure",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good sense of melodic and rhythmic interest",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Very good sense of shape and structure",
+                                        "Very good development of opening ideas",
+                                        "Very good sense of direction and climax",
+                                        "Successful modulation",
+                                        "Rhythmic integrity and style of dance very well maintained",
+                                        "Very good adherence to given structure",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Good sense of melodic and rhythmic interest",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Good sense of shape and structure",
+                                        "Good development of opening ideas",
+                                        "Good sense of direction and climax",
+                                        "An unconfirmed modulation",
+                                        "Good attempt at maintaining dance rhythm",
+                                        "Good adherence to given structure",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair sense of melodic interest",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Some sense of shape and structure",
+                                        "Some development of opening ideas",
+                                        "Some sense of direction and climax",
+                                        "An unsuccessful modulation",
+                                        "Rhythmic integrity of dance fairly well maintained",
+                                        "Fair adherence to given structure",
+                                        "Appropriate performing directions (phrasing and dynamics) inserted",
+                                        "Suitable instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor melodic and rhythmic interest",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Poor sense of shape and structure",
+                                        "Poor development of opening ideas",
+                                        "Poor sense of direction",
+                                        "No attempt at modulation",
+                                        "Poor awareness of dance rhythm",
+                                        "Poor adherence to given structure",
+                                        "Inappropriate performing directions (phrasing and dynamics) inserted",
+                                        "Unsuitable instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor melodic and rhythmic interest",
+                                  "marks": [4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very poor sense of shape and structure",
+                                        "Very poor development of opening ideas",
+                                        "Very poor sense of direction",
+                                        "No attempt at modulation",
+                                        "Very poor awareness of dance rhythm",
+                                        "Very poor adherence to given structure",
+                                        "No performing directions (phrasing and dynamics) inserted",
+                                        "No instrument chosen"
+                                  ]
+                            },
+                            {
+                                  "label": "Very little/no attempt",
+                                  "marks": [0,1,2,3],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2017 Higher Level, p.6 — © State Examinations Commission.",
+    id: "mus-2017-hl-c-b-q4", topicId: "music-1-14", conceptId: "mus-available-bank-bass-below",
+    section: "B", questionRef: "2017 HL Composing Section B Q4",
+    stem: "Answer one question only in this section: Q4 or Q5 or Q6.",
+    questionText: "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS PREPARATORY WORK • Plot the chords available in the key of A major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "Melody",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent style and imagination",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent awareness of key and underlying harmonic structure",
+                                        "Excellent development of opening ideas",
+                                        "Excellent sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good style and imagination",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Very good awareness of key and underlying harmonic structure",
+                                        "Very good development of opening ideas",
+                                        "Very good sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Good style and imagination",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Good awareness of key and underlying harmonic structure",
+                                        "Good development of opening ideas",
+                                        "Good sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair style and imagination",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Fair awareness of key and underlying harmonic structure",
+                                        "Fair development of opening ideas",
+                                        "Fair sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor style and imagination",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Poor awareness of key and underlying harmonic structure",
+                                        "Poor development of opening ideas",
+                                        "Poor sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor style and imagination",
+                                  "marks": [4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very poor awareness of key and underlying harmonic structure",
+                                        "Very poor development of opening ideas",
+                                        "Very poor sense of direction and climax"
+                                  ]
+                            },
+                            {
+                                  "label": "Very little/no attempt",
+                                  "marks": [0,1,2,3],
+                                  "guidance": []
+                            }
+                      ]
+                },
+                {
+                      "id": "bass-count",
+                      "label": "0.5 mark per correct bass note under each chord symbol if treble melody note is also correct. (0.5 X 21)",
+                      "maxMarks": 10.5,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2,
+                            2.5,
+                            3,
+                            3.5,
+                            4,
+                            4.5,
+                            5,
+                            5.5,
+                            6,
+                            6.5,
+                            7,
+                            7.5,
+                            8,
+                            8.5,
+                            9,
+                            9.5,
+                            10,
+                            10.5
+                      ],
+                      "guidance": [
+                            "(Correct pitch in correct place rhythmically)"
+                      ],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 21
+                      }
+                },
+                {
+                      "id": "bass-quality",
+                      "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge",
+                      "maxMarks": 9.5,
+                      "permittedMarks": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            9.5
+                      ],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent bass line",
+                                  "marks": [
+                                        8,
+                                        9,
+                                        9.5
+                                  ],
+                                  "guidance": [
+                                        "Excellent awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good bass line",
+                                  "marks": [6,7],
+                                  "guidance": [
+                                        "Very good awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Good bass line",
+                                  "marks": [4,5],
+                                  "guidance": [
+                                        "Good awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair bass line",
+                                  "marks": [2,3],
+                                  "guidance": [
+                                        "Fair awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor bass line",
+                                  "marks": [0,1],
+                                  "guidance": [
+                                        "Poor awareness of style"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 4",
+          "pages": [
+                6,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2017 Higher Level, p.7 — © State Examinations Commission.",
+    id: "mus-2017-hl-c-b-q5", topicId: "music-1-13", conceptId: "mus-adjacent-available-bank-bass",
+    section: "B", questionRef: "2017 HL Composing Section B Q5",
+    stem: "Answer one question only in this section: Q4 or Q5 or Q6.",
+    questionText: "COMPOSING BASS NOTES AND CHORD INDICATIONS TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of A♭ major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Chord Progressions - General points",
+                "Same chord in adjacent boxes not accepted unless bass changed or 7th added",
+                "Accidental and suffix, where relevant, must be fully correct for mark to be awarded",
+                "Marks for chords not awarded in isolation. Chords must be part of a good progression.",
+                "V7 - V not accepted",
+                "ii – I or iib – I not accepted except as approach to Ic in cadential 6/4",
+                "Cadential 6/4 must be on the stronger of the two beats and at a cadence point",
+                "Chords that cause weak bass line (aug 4th, dim 5th) not accepted"
+          ],
+          "criteria": [
+                {
+                      "id": "chords-count-half",
+                      "label": "0.5 mark for each chord that is part of a good progression in boxes 12 and 13.",
+                      "maxMarks": 1,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1
+                      ],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 2
+                      }
+                },
+                {
+                      "id": "chords-count",
+                      "label": "1 mark for each chord that is part of a good progression in all other boxes.",
+                      "maxMarks": 22,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 22
+                      }
+                },
+                {
+                      "id": "chords-quality",
+                      "label": "Quality of musical  progressions and cadences overall",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent chord progressions",
+                                  "marks": [11,12],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good chord progressions",
+                                  "marks": [8,9,10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good chord progressions",
+                                  "marks": [5,6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Fair chord progressions",
+                                  "marks": [3,4],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Poor chord progressions",
+                                  "marks": [0,1,2],
+                                  "guidance": []
+                            }
+                      ]
+                },
+                {
+                      "id": "bass-count",
+                      "label": "0.5 mark per correct bass note under each correct chord symbol",
+                      "maxMarks": 12,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2,
+                            2.5,
+                            3,
+                            3.5,
+                            4,
+                            4.5,
+                            5,
+                            5.5,
+                            6,
+                            6.5,
+                            7,
+                            7.5,
+                            8,
+                            8.5,
+                            9,
+                            9.5,
+                            10,
+                            10.5,
+                            11,
+                            11.5,
+                            12
+                      ],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 24
+                      }
+                },
+                {
+                      "id": "bass-quality",
+                      "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent bass line",
+                                  "marks": [11,12,13],
+                                  "guidance": [
+                                        "Excellent awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good bass line",
+                                  "marks": [8,9,10],
+                                  "guidance": [
+                                        "Very good awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Good bass line",
+                                  "marks": [5,6,7],
+                                  "guidance": [
+                                        "Good awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair bass line",
+                                  "marks": [3,4],
+                                  "guidance": [
+                                        "Fair awareness of style"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor bass line",
+                                  "marks": [0,1,2],
+                                  "guidance": [
+                                        "Poor awareness of style"
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 5",
+          "pages": [
+                8,
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2017 Higher Level, p.8 — © State Examinations Commission.",
+    id: "mus-2017-hl-c-b-q6", topicId: "music-1-15", conceptId: "mus-adding-adjacent-available-bank",
+    section: "B", questionRef: "2017 HL Composing Section B Q6",
+    stem: "Answer one question only in this section: Q4 or Q5 or Q6.",
+    questionText: "ADDING A COUNTERMELODY OR DESCANT AND CHORDAL SUPPORT TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of A major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable chord indications in the boxes provided. • Continue the descant part in the given style to complete the piece. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "chords-count",
+                      "label": "1 mark for each chord that fits melody and is part of a good chord progression. (1 X 20)",
+                      "maxMarks": 20,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 20
+                      }
+                },
+                {
+                      "id": "descant",
+                      "label": "Descant",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent descant line within harmonic framework",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Very good descant line, within harmonic framework",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Very good adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Good descant line, within harmonic framework",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Good adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Fair descant line, within harmonic framework",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Fair adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Poor descant line, within harmonic framework",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Poor adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Very poor descant line, within harmonic framework",
+                                  "marks": [4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very poor  adherence to two-part style of given opening"
+                                  ]
+                            },
+                            {
+                                  "label": "Very little/no attempt",
+                                  "marks": [0,1,2,3],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 6",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "higher",
+    paperFileid: "LC067ALP007EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2017 Higher Level, p.18 — © State Examinations Commission.",
+    id: "mus-2017-hl-e-q1-q4", topicId: "music-2-8", conceptId: "mus-above-account-address-audio",
+    section: "E", questionRef: "2017 HL Elective Q1–Q4(b)",
+    stem: "Answer all questions.",
+    questionText: "1. State the title of your chosen Listening Elective topic. 2. List three of the sources which you used in studying this topic. Full details are required for all of your sources. If one of your sources is the Internet, give the full website address used in your research. 3. Name five pieces of music, and the composer or performer, which you studied as part of this listening elective, and which are on your audio recording. 4. (a) Identify three significant musical features of your chosen topic. (b) Give an account of your chosen topic ensuring that you • describe the three musical features which you have identified above • show how your three chosen, and other, musical features are present in the music you have studied for this elective • make reference to all the musical excerpts on your recording • include your personal response to your chosen topic.",
+    totalMarks: 100,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Refer to the Leaving Certificate Music Syllabus – page 12 – 2.3.5"
+          ],
+          "criteria": [
+                {
+                      "id": "elements-2-4",
+                      "label": "Listening – Higher level - Elective",
+                      "maxMarks": 100,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100],
+                      "guidance": [
+                            "Name of topic -"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic.",
+                                  "marks": [85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100],
+                                  "guidance": [
+                                        "Excellent reference to all ten musical excerpts on the accompanying audio recording which illustrate the feature(s) discussed.",
+                                        "Excellent research evident, with excellent personal response.",
+                                        "Excellent sources and reference to pieces of music/composer/performer."
+                                  ]
+                            },
+                            {
+                                  "label": "Very good awareness and detailed knowledge of musical features of topic.",
+                                  "marks": [70,71,72,73,74,75,76,77,78,79,80,81,82,83,84],
+                                  "guidance": [
+                                        "Very good reference to all ten musical excerpts on the accompanying audio recording which illustrate the feature(s) discussed.",
+                                        "Very well researched, with very good personal response.",
+                                        "Very good sources and reference to pieces of music/composer/performer."
+                                  ]
+                            },
+                            {
+                                  "label": "Good knowledge of musical features of chosen topic, but lacking in detail.",
+                                  "marks": [55,56,57,58,59,60,61,62,63,64,65,66,67,68,69],
+                                  "guidance": [
+                                        "Good reference to all/some of the musical excerpts on the accompanying audio recording which broadly illustrate the feature(s) discussed.",
+                                        "Good research in evidence with good personal response.",
+                                        "Good sources and good reference to pieces of music/composer/performer."
+                                  ]
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking in detail.",
+                                  "marks": [40,41,42,43,44,45,46,47,48,49,50,51,52,53,54],
+                                  "guidance": [
+                                        "Choice of topic too broad to allow for appropriate detailed and personal response.",
+                                        "Some reference to all/some of the musical features of topic and to musical recordings.",
+                                        "Recorded excerpts do not illustrate / relate to the features in the essay.",
+                                        "General sources used, but lacking specific focus.",
+                                        "Some reference to pieces of music/composer/performer."
+                                  ]
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [25,26,27,28,29,30,31,32,33,34,35,36,37,38,39],
+                                  "guidance": [
+                                        "Little or no evidence of research or personal response.",
+                                        "Little or no reference to musical features of topic",
+                                        "Little or no reference to musical recordings.",
+                                        "Inadequate sources listed  and inadequate reference to pieces of music/composer/performer."
+                                  ]
+                            },
+                            {
+                                  "label": "Very little response to chosen topic in evidence.",
+                                  "marks": [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0,1,2,3,4,5,6,7,8,9],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Listening – Higher level - Elective"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING ELECTIVE",
+          "title": "Listening elective — Questions",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The questions exactly as the elective booklet prints them, about your own chosen topic.",
+          "sourceFileid": "LC067ALP007EV"
+    },
+  } as SecCard,
 ];
