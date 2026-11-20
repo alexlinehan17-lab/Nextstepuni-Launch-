@@ -783,19 +783,19 @@
     "refsHash": "4b1c69d1a48c40d0"
   },
   "swedish": {
-    "cards": 121,
-    "contentHash": "abda9b946bc622f1",
-    "coveragePct": 96.3,
-    "covered": 121,
-    "excluded": 63,
+    "cards": 130,
+    "contentHash": "8b8c4e6ddcd20c26",
+    "coveragePct": 96.9,
+    "covered": 130,
+    "excluded": 55,
     "leaves": 191,
-    "open": 7,
+    "open": 6,
     "orphans": 0,
     "papers": {
       "count": 16,
       "hash": "3f4a29c9d6671847"
     },
-    "refsHash": "a952dfaa733dd380"
+    "refsHash": "c6e5ba437a9c0547"
   },
   "technology": {
     "cards": 2340,

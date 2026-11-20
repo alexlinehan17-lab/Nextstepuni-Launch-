@@ -33,6 +33,205 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2010 Higher Level — © State Examinations Commission.",
+    id: "swe-2010-hl-i-1", topicId: "swedish-0-1", conceptId: "ersatt-ordet-med-ett-annat-som",
+    section: "I", questionRef: "2010 HL Section I Q1",
+    questionText: "Ersätt ordet med ett annat som betyder samma sak.\n• livslånga (stycke 2)\n• outtömlig (stycke 5)\n• oron (stycke 5)\n• grubbla (stycke 7)\n• värker (stycke 8)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "som varar hela livet, oändliga, eviga,", marks: 1, contextNote: "For “livslånga”: The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme reprints the instruction as: “Ersätt uttrycket med ett som betyder samma sak.”." },
+    { id: "r-2", kind: "point", verbatim: "outsinlig, omätlig, otalig, ofantlig, obegränsad, gränslös", marks: 1, contextNote: "For “outtömlig”" },
+    { id: "r-3", kind: "point", verbatim: "ängslan, fruktan, rädslan, bekymret, farhågan, kvalet", marks: 1, contextNote: "For “oron”" },
+    { id: "r-4", kind: "point", verbatim: "fundera, ruva, grunna, filosofera, gräva ner sig i, tänka på, älta", marks: 1, contextNote: "For “grubbla”" },
+    { id: "r-5", kind: "point", verbatim: "göra ont, smärta, mola, pina, ila, svida", marks: 1, contextNote: "For “värker”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2010 Higher Level — © State Examinations Commission.",
+    id: "swe-2010-hl-i-2", topicId: "swedish-0-1", conceptId: "ersatt-uttrycket-haft-ett-gott-oga",
+    section: "I", questionRef: "2010 HL Section I Q2",
+    questionText: "Ersätt uttrycket ”haft ett gott öga till henne” (stycke 8) och ”dyka upp” (stycke 8) med andra uttryck som betyder samma sak.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "gillat, eftertraktat, velat åt, tyckt om, trånat efter", marks: 3, contextNote: "For “haft ett gott öga till henne”: The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme reprints this question as: “Ersätt uttrycket ”haft ett gott öga till henne” och uttrycket ”dyka upp” (båda uttryck finns i stycke 8) med ett som betyder samma sak.”." },
+    { id: "r-2", kind: "point", verbatim: "infinna sig, visa sig, poppa upp, komma, komma fram, materialiseras", marks: 2, contextNote: "For “dyka upp”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2010 Higher Level — © State Examinations Commission.",
+    id: "swe-2010-hl-i-3", topicId: "swedish-0-1", conceptId: "vad-skiljer-dagens-parrelation-hur-det",
+    section: "I", questionRef: "2010 HL Section I Q3",
+    questionText: "Vad skiljer dagens parrelation från hur det var tidigare?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Förr var en parrelation en ekonomisk inrättning. Man gifte sig för att skapa en materiell trygghet; frun blev försörjd och mannen fick en hushållerska och en mor till sina barn", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme heads its answer: “Möjliga svar, baserade på stycke 7:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2010 Higher Level — © State Examinations Commission.",
+    id: "swe-2010-hl-i-4", topicId: "swedish-0-1", conceptId: "och-nar-allt-ska-vara-perfekt",
+    section: "I", questionRef: "2010 HL Section I Q4",
+    questionText: "”Och när allt ska vara perfekt är risken stor att kraven blir alltför höga när man söker en partner.” (stycke 7). Vad menar Kurt Nurmi med detta citat?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "de högt ställda kraven kommer från att vi i dag funderar mer på våra liv och relationer. Medierna visar en idealbild som vi försöker att leva upp till. Är vi inte på topp fysiskt och psykiskt börjar vi att leta fel hos oss själva och hos vår partner.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme reprints this question as: “”Och när allt ska vara perfekt är risken stor att kraven blir alltför höga när man söker en partner... (stycke 7). Vad tror du Kurt numi menar med detta citat?”. It heads its answer: “Möjliga svar, baserade på stycke 7:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2010 Higher Level — © State Examinations Commission.",
+    id: "swe-2010-hl-i-5", topicId: "swedish-0-1", conceptId: "denna-text-kan-man-att-forh",
+    section: "I", questionRef: "2010 HL Section I Q5",
+    questionText: "I denna text kan man se att förhållanden ses som en risk. Hur märks det i texten?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Just det osäkra i förhållanden: om det är det rätta; om det ska hålla; om man går miste om någon annan som skulle ha passat bättre. Dessutom är rädslan för misslyckandet en viktig komponent, för det är jobbigt att skiljas. Även våra högt ställda krav på våra relationer sätter stark press på att vi ska lyckas. Också detta innebär en risk.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2010 Higher Level — © State Examinations Commission.",
+    id: "swe-2010-hl-i-6", topicId: "swedish-0-1", conceptId: "att-vara-singel-ses-nga-bara",
+    section: "I", questionRef: "2010 HL Section I Q6",
+    questionText: "”Att vara singel ses av många bara som en tillfällig parentes i väntan på den livslånga parrelationen. Det anses som något tragiskt att inte finna någon att dela livet med.” (stycke 2) Dela med dig av dina tankar kring detta citat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Abiturenten bör kunna diskutera frågan huruvida vi söker vår egen lycka eller blott vill ha vår framgång reflekterad i hur andra ser oss. Vidare bör abiturenten säga något om huruvida parrelationen alltid är eftersträvansvärd i sig. Dessutom bör frågan om nya familjekonstellationer dyka upp, en värld där gamla strukturer och värderingar håller på att ändras. Ett godkänt svar kännetecknas av djup, tydligt avstamp i texten och med väl utvecklat resonemang.", marks: 5, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2010 Higher Level — © State Examinations Commission.",
+    id: "swe-2010-hl-ii-1", topicId: "swedish-1-0", conceptId: "dag-ska-forh-llandet-bygga-karlek",
+    section: "II", questionRef: "2010 HL Section II Q1",
+    questionText: "”I dag ska förhållandet bygga på kärlek och när allt inte fungerar efter drömmallen är det lätt att få för sig att gräset är grönare någon annanstans” (stycke 7) Skriv en uppsats på ungefär 100 ord där du redogör för dina tankar om citatet ovan och hur du ser på författarnas syn på hur verkligheten påverkar våra förhållanden.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "En klart och tydligt skriven uppsats som väl håller sig till ämnet, med tydlig disposition, klart syfte och godtagbara formuleringar.", marks: 30, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme prints: “I del I och II kommer följande kriterier att vägas in i betygsättningen:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Ett tydligt syfte – kandidaten har förstått frågan och vet hur den ska besvaras – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ett sammanhängande svar – kandidaten använder relevant och lämplig fakta ur materialet på ett strukturerat och meningsfullt sätt – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Språklig klarhet – kandidaten uppvisar en språkbehandling som med tydlighet och med visst flyt kan uttrycka dennes idéer – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Formalia – grammatik, stavning – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEL II",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2010 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2010 Higher Level — © State Examinations Commission.",
+    id: "swe-2010-hl-iii-1", topicId: "swedish-1-1", conceptId: "skriv-uppsats-ungefar-300-ord-dar",
+    section: "III", questionRef: "2010 HL Section III Q1",
+    questionText: "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. Förväntar vi oss för mycket av livet nu för tiden?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under the two titles the scheme prints only “En klart och tydligt skriven uppsats som väl håller sig till ämnet, med tydlig disposition, klart syfte och godtagbara formuleringar.” Its criteria are printed for parts I and II only: “I del I och II kommer följande kriterier att vägas in i betygsättningen:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2010 Higher Level — © State Examinations Commission.",
+    id: "swe-2010-hl-iii-2", topicId: "swedish-1-1", conceptId: "ingen-manniska",
+    section: "III", questionRef: "2010 HL Section III Q2",
+    questionText: "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. Ingen människa är en ö",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under the two titles the scheme prints only “En klart och tydligt skriven uppsats som väl håller sig till ämnet, med tydlig disposition, klart syfte och godtagbara formuleringar.” Its criteria are printed for parts I and II only: “I del I och II kommer följande kriterier att vägas in i betygsättningen:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2011, level: "higher",
     paperFileid: "LC039ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2011 Higher Level — © State Examinations Commission.",

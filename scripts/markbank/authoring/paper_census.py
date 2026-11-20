@@ -4383,6 +4383,38 @@ ADDED_ASKS = {
         {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
          'line': (4, '\u00bbVsak \u010dlovek je enkratna stvaritev'), 'alternative': True},
     ],
+    # Swedish: the walker keys only the first of the two essay titles in six
+    # sittings (the second is printed after "eller"/a blank, a line or run of
+    # its own); and in 2016 it misses Question 1(b), "1b. Ersätt ..." priced
+    # "(2 poäng)" beside its instruction line (p3 y703), its expression on the
+    # next (y727). Drafter's census check, 20 Nov.
+    ('swedish', 2010, 'hl'): [
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'line': (4, 'Ingen människa är en ö'), 'alternative': True},
+    ],
+    ('swedish', 2011, 'hl'): [
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'line': (4, '\u201dDe flesta människor', 'Abraham Lincoln'), 'alternative': True},
+    ],
+    ('swedish', 2012, 'hl'): [
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'line': (4, 'I vårt moderna samhälle'), 'alternative': True},
+    ],
+    ('swedish', 2013, 'hl'): [
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'line': (4, 'Att följa sina drömmar'), 'alternative': True},
+    ],
+    ('swedish', 2015, 'hl'): [
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'line': (4, '\u201dHan är rikast'), 'alternative': True},
+    ],
+    ('swedish', 2016, 'hl'): [
+        {'key': ['I', 1, 'b', None], 'label': 'Section I Q1(b)', 'before': ['I', 2, None, None],
+         'lines': (3, '1b. Ersätt', 'Gå på magkänslan (stycke 2)'), 'price': r'\(\s*(\d+)\s*poäng\s*\)',
+         'price_beside_first': True},
+        {'key': ['III', 2, None, None], 'label': 'Section III Q2', 'before': None,
+         'line': (4, '\u201dVärlden kan vara', "Fintan O'Toole"), 'alternative': True},
+    ],
     ('latvian', 2014, 'hl'): [
         {'key': ['II', None, None, None], 'label': 'Section II', 'before': ['II', 1, None, None],
          'lines': (4, '\u201eCilv\u0113kresursi ir tas', '(vismaz 100 v\u0101rdu)'),
@@ -4400,13 +4432,19 @@ def _added_leaf(subject, year, level, spec):
         import eu_paper
         P = eu_paper.EuPaper(year, level, subject)
     if 'line' in spec:
-        # a title printed as one line of its own: that line, as printed
-        page, opening = spec['line']
-        hits = [l for l in P.lines if l.page == page and l.text.strip().startswith(opening)]
-        if len(hits) != 1:
-            raise ValueError(f'{subject} {year}: {len(hits)} lines open {opening!r}')
+        # a title printed as a line of its own (page, opening), or as a run of lines (page, first
+        # line's opening, last line's opening: every line between, by position, an attribution
+        # set to the right included): as printed
+        page, opening = spec['line'][:2]
+        last = spec['line'][2] if len(spec['line']) > 2 else opening
+        on_page = sorted((l for l in P.lines if l.page == page), key=lambda l: (round(l.y), l.x))
+        first = [l for l in on_page if l.text.strip().startswith(opening)]
+        end = [l for l in on_page if l.text.strip().startswith(last)]
+        if len(first) != 1 or len(end) != 1 or end[0].y < first[0].y:
+            raise ValueError(f'{subject} {year}: {len(first)}/{len(end)} lines open {opening!r}/{last!r}')
+        run = [l for l in on_page if first[0].y - 1 <= l.y <= end[0].y + 1]
         return {'key': spec['key'], 'label': spec['label'],
-                'text': re.sub(r'\s+', ' ', hits[0].text).strip()}, 0
+                'text': re.sub(r'\s+', ' ', ' '.join(l.text for l in run)).strip()}, 0
     if 'cut' in spec:
         # a title the text layer welds onto another printed line: the words after `after`
         page, opening, after = spec['cut']
@@ -4430,7 +4468,10 @@ def _added_leaf(subject, year, level, spec):
         text = re.sub(r'\s+', ' ', ' '.join(l.text for l in body)).strip()
         return ({'key': spec['key'], 'label': spec['label'], 'text': text},
                 int(price.search(heads[0].text).group(1)))
-    cells = [l for l in lines if abs(l.y - lines[end].y) < 2 and l is not lines[end]
+    # the price cell beside the ask's last line, or beside its first ('price_beside_first': a
+    # sub-question priced on its instruction line, Swedish 2016 1b)
+    at = lines[start] if spec.get('price_beside_first') else lines[end]
+    cells = [l for l in lines if abs(l.y - at.y) < 2 and l is not at
              and price.fullmatch(l.text.strip())]
     if len(cells) != 1:
         raise ValueError(f'{subject} {year}: {len(cells)} price cells beside the added ask')
