@@ -1197,6 +1197,296 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2014 Higher Level — © State Examinations Commission.",
+    id: "nld-2014-hl-i-1-a", topicId: "dutch-0-0", conceptId: "waarnaar-verwijzen-volgende-woorden-die-alinea",
+    section: "I", questionRef: "2014 HL Section I Q1(a)",
+    questionText: "Waarnaar verwijzen de volgende woorden? ‘die’ (alinea 1: die Google X werd gedoopt)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "aparte divisie", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme prints its answer in bold inside the passage: “In een aparte divisie, die Google X werd gedoopt…”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2014 Higher Level — © State Examinations Commission.",
+    id: "nld-2014-hl-i-1-b", topicId: "dutch-0-0", conceptId: "waarnaar-verwijzen-volgende-woorden-hierdoor-alinea",
+    section: "I", questionRef: "2014 HL Section I Q1(b)",
+    questionText: "Waarnaar verwijzen de volgende woorden? ‘hierdoor’(alinea 2: Hierdoor zouden minder mensen een auto nodig hebben en zouden de taxi’s minder risico op ongelukken lopen.)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "De robo-taxi’s", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme prints its answer in bold inside the passage: “De robo-taxi’s, die aanvankelijk nog over een menselijke chauffeur moeten beschikken, zouden autonoom internetklanten moeten oppikken en naar hun bestemming moeten brengen, bijvoorbeeld naar hun werk. Hierdoor zouden minder mensen een auto nodig hebben en zouden de taxi’s minder risico op ongelukken lopen.”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2014 Higher Level — © State Examinations Commission.",
+    id: "nld-2014-hl-i-1-c", topicId: "dutch-0-0", conceptId: "waarnaar-verwijst-laatstgenoemde-zin-volgens-duitse",
+    section: "I", questionRef: "2014 HL Section I Q1(c)",
+    questionText: "Waarnaar verwijst ‘laatstgenoemde’ in de zin: ‘Volgens de Duitse zakenkrant Frankfurter Allgemeine zou de Amerikaanse internetreus met laatstgenoemde zelfs dicht bij een akkoord staan.' (alinea 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Naar het bedrijf Continental.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2014 Higher Level — © State Examinations Commission.",
+    id: "nld-2014-hl-i-1-d", topicId: "dutch-0-0", conceptId: "wat-betekent-autonoom-deze-zin-robo",
+    section: "I", questionRef: "2014 HL Section I Q1(d)",
+    questionText: "Wat betekent ‘autonoom’ in deze zin: ‘De robo-taxi’s, die aanvankelijk nog over een menselijke chauffeur moeten beschikken, zouden autonoom internetklanten moeten oppikken en naar hun bestemming moeten brengen, bijvoorbeeld naar hun werk.’(alinea 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Zelfstandig, zonder menselijke chauffeur", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2014 Higher Level — © State Examinations Commission.",
+    id: "nld-2014-hl-i-1-e", topicId: "dutch-0-0", conceptId: "wat-betekent-structureel-deze-zin-het",
+    section: "I", questionRef: "2014 HL Section I Q1(e)",
+    questionText: "Wat betekent ‘structureel’ in deze zin: ‘Het personeel wordt er structureel aangespoord om tot 20 procent van zijn tijd te spenderen aan eigen persoonlijke projecten, die volkomen los staan van de operationele beslommeringen van het moment.’(alinea 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Planmatig, als onderdeel van de bedrijfscultuur", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2014 Higher Level — © State Examinations Commission.",
+    id: "nld-2014-hl-i-2", topicId: "dutch-0-1", conceptId: "waarom-het-meer-dan-een-anekdote",
+    section: "I", questionRef: "2014 HL Section I Q2",
+    questionText: "Waarom is het meer dan een anekdote dat journalist Efrati schreef over de zelfrijdende auto die Google ontwerpt? Verwijs naar het feit dat Google oorspronkelijk alleen een zoekmachine was.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Omdat het aantoont dat Google bezig is zijn impact op het dagelijkse leven van mensen nog te vergroten en ook op terreinen die zich buiten hun core business bevinden.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2014 Higher Level — © State Examinations Commission.",
+    id: "nld-2014-hl-i-3", topicId: "dutch-0-1", conceptId: "leg-uit-wat-google-verwerk-twee",
+    section: "I", questionRef: "2014 HL Section I Q3",
+    questionText: "Leg uit wat Google X is. Verwerk twee voorbeelden in je antwoord.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Speciale afdeling – Google Glass- Loon Project", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2014 Higher Level — © State Examinations Commission.",
+    id: "nld-2014-hl-i-4", topicId: "dutch-0-1", conceptId: "verklaar-wat-het-verband-tussen-het",
+    section: "I", questionRef: "2014 HL Section I Q4",
+    questionText: "Verklaar wat het verband is tussen het opzet van Google, en de belofte van de Amerikaanse president Kennedy om ooit als eerste natie een mens op de maan te laten landen.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Het wilde plan van Google lijkt niet meer te zijn dan een ‘moonshot’. Net als het plan van Kennedy om ooit de eerste mens op de maan te hebben, moet dit plan voor voldoende inspiratie zorgen zodat het ooit gerealiseerd kan worden.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2014 Higher Level — © State Examinations Commission.",
+    id: "nld-2014-hl-i-5", topicId: "dutch-0-1", conceptId: "leg-uit-dat-ideeen-van-google",
+    section: "I", questionRef: "2014 HL Section I Q5",
+    questionText: "Leg uit dat de ideeën van Google-baas Larry Page zowel worden toegejuicht als angst inboezemen. Geef ook je eigen standpunt hieromtrent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Antwoord bevat in elk geval verwijzing naar cafés die Google Glass gaan verbieden, of het onderzoek in de VS en UK naar gevaren in het verkeer", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2014 Higher Level — © State Examinations Commission.",
+    id: "nld-2014-hl-i-6", topicId: "dutch-0-1", conceptId: "wat-bedrijfsfilosofie-van-google-wat-denk",
+    section: "I", questionRef: "2014 HL Section I Q6",
+    questionText: "Wat is de bedrijfsfilosofie van Google en wat denk je daar zelf over? Bespreek in elk geval het aspect ‘personeelsontwikkeling’.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Antwoord bevat in elk geval verwijzing naar de 20 procent die besteed mag worden aan eigen initiatief.", marks: null, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2014 Higher Level — © State Examinations Commission.",
+    id: "nld-2014-hl-ii-1", topicId: "dutch-1-0", conceptId: "becommentarieer-minimum-100-woorden-volgende-kwestie",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "Becommentarieer in minimum 100 woorden de volgende kwestie: Microsoftbaas Bill Gates – die bekend staat om zijn belangrijke financiële steun in derdewereldlanden- zegt: ‘Ik veronderstel dat als je sterft aan malaria, je dan zal moeten opkijken om te kijken of je een Google-ballon ziet. Al ben ik niet zeker hoe die jou dan zal kunnen helpen.’",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 30, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task and prints nothing under it.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEEL 2: COMMENTAAR",
+          "title": "Reading text — answer in Dutch",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Dutch 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2014 Higher Level — © State Examinations Commission.",
+    id: "nld-2014-hl-iii-1", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-van-minimaal-300",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "Schrijf een opstel van minimaal 300 woorden. Kies één van de volgende opgaven. ‘Mijn afhankelijkheid van technologie zal alleen nog maar toenemen.’",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints the two titles, this one as its b), and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC017ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2014 Higher Level — © State Examinations Commission.",
+    id: "nld-2014-hl-iii-2", topicId: "dutch-1-1", conceptId: "schrijf-een-opstel-van-minimaal-300",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "Schrijf een opstel van minimaal 300 woorden. Kies één van de volgende opgaven. ‘Hoewel we de wereld rondreizen om het mooie te vinden, moeten we de schoonheid met ons meedragen of we zullen ze nooit vinden. ‘ (Ralph Waldo Emerson)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints the two titles, this one as its a), and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC017ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Dutch 2021 Higher Level — © State Examinations Commission.",
