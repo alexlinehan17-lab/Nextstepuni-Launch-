@@ -13,7 +13,9 @@ import React from 'react';
 import { cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import StudioSitting from '../components/ListeningStudio/StudioSitting';
-import { listeningSittings, type StudioSitting as Sitting } from '../components/ListeningStudio/model';
+import {
+  listeningSittings, type ListeningCard, type StudioSection, type StudioSitting as Sitting,
+} from '../components/ListeningStudio/model';
 import { loadCards } from '../components/MarkBank/deck';
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as MUSIC_HIGHER } from '../components/MarkBank/cards/music/higher';
@@ -30,6 +32,24 @@ afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 
 const paperOf = (sittings: Sitting[], year: number) =>
   sittings.find(sitting => sitting.year === year && !sitting.deferred) as Sitting;
+
+/** The same section on a recording the app holds no copy of. Which real
+ *  recordings are hosted changes as they are uploaded, so the tests that need
+ *  an unhosted one name a file the SEC archive does not have. */
+const UNHOSTED = 'https://www.examinations.ie/archive/exampapers/2099/LC067ZLP999EV.mp3';
+const unhosted = (section: StudioSection): StudioSection => {
+  const recast = (card: ListeningCard) => ({
+    ...card, audioMaterial: { ...card.audioMaterial, playbackUrl: UNHOSTED, canonicalUrl: UNHOSTED, secFileid: 'LC067ZLP999EV.mp3' },
+  }) as ListeningCard;
+  return {
+    ...section,
+    cards: section.cards.map(recast),
+    extracts: section.extracts.map(extract => ({
+      ...extract, cards: extract.cards.map(recast),
+      audio: { ...extract.audio, playbackUrl: UNHOSTED, canonicalUrl: UNHOSTED, secFileid: 'LC067ZLP999EV.mp3' },
+    })),
+  };
+};
 
 describe('Music 2025 Higher, Question 5', () => {
   const paper = paperOf(listeningSittings(MUSIC_HIGHER), 2025);
@@ -60,10 +80,10 @@ describe('Music 2025 Higher, Question 5', () => {
   });
 
   it('offers the SEC\'s own page while the recording has no copy in the app', () => {
-    const { dialog } = mount();
+    render(<StudioSitting subjectLabel="Music" sittingLabel={paper.title} section={unhosted(question)} onGrade={vi.fn()} onClose={vi.fn()} />);
+    const dialog = screen.getByRole('dialog', { name: 'Listening Studio: Music 2025 Higher, Question 5' });
     expect(within(dialog).getByText('This recording is not in the app yet.')).toBeInTheDocument();
-    expect(within(dialog).getByRole('link', { name: /Open the SEC recording/ }))
-      .toHaveAttribute('href', question.cards[0].audioMaterial.canonicalUrl);
+    expect(within(dialog).getByRole('link', { name: /Open the SEC recording/ })).toHaveAttribute('href', UNHOSTED);
     // No player is drawn that could only fail, and nothing is requested from the SEC.
     expect(screen.queryByRole('button', { name: 'Play the recording' })).not.toBeInTheDocument();
     expect(document.querySelector('audio')).not.toHaveAttribute('src');
