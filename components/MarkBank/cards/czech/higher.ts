@@ -1683,7 +1683,7 @@ export const CARDS: SecCard[] = [
     questionText: "V textu se zmiňuje, že lidé se zajímají mimo jiné i o tzv. udržitelnost módy (předposlední odstavec). Domníváte se, že je to důležité? A proč? Vysvětlete svůj názor.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Udržitelnost je velmi módní pojem současnosti vycházející z ekologie. Mladí lidé se zajímají často o to, aby oblečení, které se kupují, nebylo vyrobeno v asijských zemích, kde panují špatné pracovní podmínky. Často vyhledávají oblečení od lokálních návrhářů místo nákupu globálních řetězcových značek. Zajímá je i materiál, např. bavlna z ekologicky kontrolovaného zemědělství. Často také recyklují módu, nakupují v second-handech anebo vyrábějí nové věci ze starých. Důležité je nezatížit životní prostředí a budoucí generace.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    { id: "r-1", kind: "point", verbatim: "Udržitelnost je velmi módní pojem současnosti vycházející z ekologie. Mladí lidé se zajímají často o to, aby oblečení, které se kupují, nebylo vyrobeno v asijských zemích, kde panují špatné pracovní podmínky. Často vyhledávají oblečení od lokálních návrhářů místo nákupu globálních řetězcových značek. Zajímá je i materiál, např. bavlna z ekologicky kontrolovaného zemědělství. Často také recyklují módu, nakupují v second-handech anebo vyrábějí nové věci ze starých. Důležité je nezatížit životní prostředí a budoucí generace.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 1: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The paper glosses “udržitelnost” in a footnote: “Udržitelnost je definovaná v kontextu lidské civilizace jako praktická schopnost uspokojit základní potřeby dneška bez kompromitování schopnosti budoucích generací uspokojit jejich základní potřeby a udržet jejich životní úroveň. Udržitelná společnost musí být vystavena tak, aby její životní styl a podnikání nebyly v rozporu s inherentní schopností přírody udržet život.”" },
     { id: "r-2", kind: "point", verbatim: "Prostor pro vlastní názor.", marks: null },
     ],
     sourceMaterial: {
@@ -3148,7 +3148,7 @@ export const CARDS: SecCard[] = [
     questionText: "Na základě textu uveďte, jaký je hlavní cíl projektu ve vztahu k rodinám studentů?",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Finanční gramotnost je úzce propojena s tím, co děti přebírají z rodiny. Když rodina nezvládá finance dobře, potom na tom ani dítě není dobře. Autoři projektu doufají, ze jejich aktivita bude mít pozitivní vliv na to, jak mladí lidé nakládají penězi. A že se tím zvýší i finanční gramotnost v rodinách díky vědomostem, které žáci přinesou z výuky domu.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    { id: "r-1", kind: "point", verbatim: "Finanční gramotnost je úzce propojena s tím, co děti přebírají z rodiny. Když rodina nezvládá finance dobře, potom na tom ani dítě není dobře. Autoři projektu doufají, ze jejich aktivita bude mít pozitivní vliv na to, jak mladí lidé nakládají penězi. A že se tím zvýší i finanční gramotnost v rodinách díky vědomostem, které žáci přinesou z výuky domu.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme reprints this question as: “Jaký je hlavní cíl projektu ve vztahu k rodinám studentů?”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3448,7 +3448,7 @@ export const CARDS: SecCard[] = [
     questionText: "Na základě textu napište komentář o 100-150 slovech na toto tvrzení a vyjádřete vlastní názor: „Tato (stabilní) věž mírně oprýskává a na digitálních nádvořích pod ní se dějí zajímavé věci. Nicméně to neohrožuje existenci věže.“",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vlastní názor na uvedené tvrzení, lze vyjádřit souhlas i nesouhlas, pomocí argumentů z textu i vlastní zkušenosti.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints no criteria for the part and no mark beside either line; it is scored on its printed total." },
+    { id: "r-1", kind: "point", verbatim: "Vlastní názor na uvedené tvrzení, lze vyjádřit souhlas i nesouhlas, pomocí argumentů z textu i vlastní zkušenosti.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints no criteria for the part and no mark beside either line; it is scored on its printed total. It reprints the task as “Na základě textu napište komentář o 100-150 slovech na toto tvrzení:”" },
     { id: "r-2", kind: "point", verbatim: "Vlastními slovy, bez opsání frází z textu.", marks: null },
     ],
     sourceMaterial: {

@@ -832,6 +832,9 @@ def _q3_2018(d, _census=None):
 SPECS[2018] = [
     R('I2', [shown(L(65, 70))], whole=True, total=PaperP(4, '2. Vysvětlete'), pages=(2, 3)),
     R('I3', [shown(L(74, 80)), shown(S(81))], whole=True, total=PaperP(4, 'odstavec).'),
+      # second reader: the paper glosses "udržitelnost" in a footnote on the same page (p4 y718-741)
+      rownote=lambda d: f'The paper glosses “udržitelnost” in a footnote: “{PC(4, "1 Udržitelnost", after="1 ").text(d)} '
+                        f'{PL(4, "kompromitování schopnosti").text(d)} {PL(4, "společnost musí být").text(d)}”',
       question=_q3_2018, pages=(2, 3)),
     R('I4', [shown(L(88, 94)), shown(L(95, 96))], whole=True, total=PaperP(4, 'textu. [5'), pages=(2, 3)),
     R('I5', [shown(L(98, 104))], whole=True, total=PaperP(4, '5. Na základě'), pages=(2, 3)),
@@ -1503,7 +1506,8 @@ SPECS[2025] = [
       pages=(2, 3)),
     R('I1e', [one(L(72, 73, after='mezera“– '), Q1P_2025)], total=Q1P_2025, rownote=_q1_2025, pages=(2, 3)),
     R('I2', [shown(L(75, 79))], whole=True, total=PaperP(4, '2. Co je to'), pages=(2, 3)),
-    R('I3', [shown(L(81, 85))], whole=True, total=PaperP(4, '[5 bodů]'), pages=(2, 3)),
+    R('I3', [shown(L(81, 85))], whole=True, total=PaperP(4, '[5 bodů]'), pages=(2, 3),
+      rownote=quote(S(80, after='3. ', before=' [5'), lead='The scheme reprints this question as')),
     R('I4', [shown(L(93, 95)), shown(S(96))], whole=True, total=PaperP(4, 'důležitější'), pages=(2, 3)),
     R('I5', [shown(L(101, 104)), shown(L(105, 108))], whole=True, total=PaperP(4, 'předmětem?'), pages=(2, 3)),
     R('I6', [shown(L(112, 113)), shown(S(114)), shown(S(115)), shown(S(116)), shown(S(117))], whole=True,
@@ -1596,7 +1600,8 @@ def _essay_2026(d):
 
 
 def _commentary_2026(d):
-    return 'The scheme prints no criteria for the part and no mark beside either line; it is scored on its printed total.'
+    return ('The scheme prints no criteria for the part and no mark beside either line; it is scored on its printed total. '
+            f'It reprints the task as “{S(116).text(d)}”')
 
 
 SPECS[2026] = [
