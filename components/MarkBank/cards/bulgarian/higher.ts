@@ -2132,6 +2132,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2019 Higher Level — © State Examinations Commission.",
+    id: "bul-2019-hl-ii-1", topicId: "bulgarian-1-0", conceptId: "100",
+    section: "II", questionRef: "2019 HL Section II Q1",
+    questionText: "„Виртуалната реалност отнема свободата...” Какво е вашето мнение? Обяснете защо. (около 100 думи)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Лична интерпретация, ясни и непротиворечиви идеи.", marks: 30, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" The scheme prints: “При оценяването на отговорите от първите две части се прилагат следните критерии:”. The scheme prints, as examples, not a checklist: “Темата предлага много възможности за лична интерпретация, свързана с личния опит на кандидатите. В същото време предимство ще е да се пофилософства върху понятията «виртуално» и «реално» - самият израз «виртуална реалност» е противоречив, както и изрaзът «реална реалност» невъзможен. Под една или друга форма, «виртуалността» винаги е била присъща на човека, той винаги е изпитвал необходимост да живее малко „отвъд реалното”. В този смисъл виртуалното е част от неговата реалност... Друг е въпросът за личната стратегия на всеки за уравновесяване на реалното и виртуалното в ежедневието. Интересен подход ще е отговорът да се развие от гледна точка на понятиeто «свобода», какво отнема свободата ни, кога и как човек загубва контрол над самия себе си и става зависим.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Яснота и точност на израза – кандидатът разбира добре въпросите и знае как да отговори ясно и точно – 30% ;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Свързаност и непротиворечивост на отговорите – кандидатът използва откъси от текста, които са адекватни на мисълта му, идеите му са непротиворечиви и композицията на съчинението следва определена логика – 30% ;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Езикова компетентност – кандидатът умее свободно да изразява идеите си, езикът на изказването му е ясен и точен – 30% ;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Конвенционални умения – кандидатът владее и прилага граматичната норма и правописа на съвременния български книжовен език – 10%.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ВТОРА ЧАСТ",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2019 Higher Level — © State Examinations Commission.",
+    id: "bul-2019-hl-iii-1", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2019 HL Section III Q1",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: Бъдещето е вече тук.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under Part III the scheme reprints the instruction and the two titles and prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Its criteria are printed for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2019 Higher Level — © State Examinations Commission.",
+    id: "bul-2019-hl-iii-2", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2019 HL Section III Q2",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: Една година почивка след завършване на средното образование – полезно или просто загуба на време? Не забравяйте да аргументирате и двете възможности.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under Part III the scheme reprints the instruction and the two titles and prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Its criteria are printed for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2020, level: "higher",
     paperFileid: "LC559ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2020 Higher Level — © State Examinations Commission.",
