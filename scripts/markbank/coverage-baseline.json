@@ -454,7 +454,7 @@
   },
   "italian": {
     "cards": 1055,
-    "contentHash": "7354cfcb8bd26916",
+    "contentHash": "534a321579b52e65",
     "coveragePct": 49.4,
     "covered": 1121,
     "excluded": 0,
@@ -649,7 +649,7 @@
   },
   "polish": {
     "cards": 805,
-    "contentHash": "ab87a74dac9ca058",
+    "contentHash": "84e0dbb540a3ee24",
     "coveragePct": 100.0,
     "covered": 823,
     "excluded": 0,
@@ -679,7 +679,7 @@
   },
   "portuguese": {
     "cards": 744,
-    "contentHash": "9970d654ff30decd",
+    "contentHash": "ce36bcf5b5fb45e5",
     "coveragePct": 100.0,
     "covered": 744,
     "excluded": 0,
