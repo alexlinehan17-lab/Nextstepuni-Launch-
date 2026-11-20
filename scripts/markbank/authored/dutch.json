@@ -4476,6 +4476,624 @@
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet."
  },
  {
+  "id": "nld-2017-hl-i-1-a",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "dutch-0-0",
+  "conceptId": "waarnaar-verwijzen-volgende-woorden-dat-alinea",
+  "questionRef": "2017 HL Section I Q1(a)",
+  "questionText": "Waarnaar verwijzen de volgende woorden? ‘dat’ (alinea 2: dat zijn strijdtoneel):",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Een oprukkend leger taalpuristen",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2017-hl-i-1-b",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "dutch-0-0",
+  "conceptId": "waarnaar-verwijzen-volgende-woorden-alinea-dan",
+  "questionRef": "2017 HL Section I Q1(b)",
+  "questionText": "Waarnaar verwijzen de volgende woorden? ‘ze’ (alinea 5: Dan voelen ze zich aangevallen.)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mensen / gesprekspartners",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2017-hl-i-1-c",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "dutch-0-0",
+  "conceptId": "waarnaar-verwijst-het-zin-kunnen-het",
+  "questionRef": "2017 HL Section I Q1(c)",
+  "questionText": "Waarnaar verwijst ‘het’ in de zin: Ze kunnen het zich misschien permitteren, maar populair maken taalpuristen zich er niet mee. (alinea 7)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "De individualistische houding als taalpurist",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2017-hl-i-1-d",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "dutch-0-0",
+  "conceptId": "specifieer-betekenis-van-het-woord-rillingen",
+  "questionRef": "2017 HL Section I Q1(d)",
+  "questionText": "Specifieer de betekenis van het woord ‘rillingen’ zoals het in deze context wordt gebruikt: ‘Kreeg u rillingen van de titel?’ (alinea 1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Iets als negatief ervaren; zich ergeren aan.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2017-hl-i-1-e",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "dutch-0-0",
+  "conceptId": "wat-betekent-ingebakken-zit-deze-zin",
+  "questionRef": "2017 HL Section I Q1(e)",
+  "questionText": "Wat betekent ‘ingebakken zit’ in deze zin: ‘Dat komt volgens Van Keymeulen omdat de drang om het Nederlands te verdedigen al generaties lang in veel Vlamingen ingebakken zit.’ (alinea 8)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Van nature aanwezig zijn, een typisch kenmerk zijn van",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2017-hl-i-2",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "dutch-0-1",
+  "conceptId": "geef-drie-kenmerken-van-een-taalpurist",
+  "questionRef": "2017 HL Section I Q2",
+  "questionText": "Geef drie kenmerken van een taalpurist",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Taalpuristen worden boos wanneer ze taalfouten opmerken",
+    "marks": null,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme heads its points: “Bijvoorbeeld:”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Taalpuristen zullen soms de inhoud van de boodschap of een sterk argument missen omdat ze zich focussen op taalfouten en niet op de inhoud.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Taalpuristen denken dat taal beschermd moet worden zodat ze volledig kan worden doorgegeven aan de volgende generaties.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Taalpuristen denken dat taal vastligt in regels en boeken.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Taalpuristen storen zich sneller aan taalfouten",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Taalpuristen zijn individualistisch",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Taalpuristen hebben minder dan andere mensen de drang om tot een bepaalde groep te behoren (zoals de mensen die in het structure-perspectief thuishoren)",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2017-hl-i-3",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "dutch-0-1",
+  "conceptId": "oorzaak-van-dat-onheil-een-oprukkend",
+  "questionRef": "2017 HL Section I Q3",
+  "questionText": "‘De oorzaak van dat onheil? Een oprukkend leger taalpuristen, dat zijn strijdtoneel heeft verplaatst van de man in de straat naar de man op de sociale media.’ Wat is dat onheil? Waarom is het onheil, volgens de tekst?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mensen maken slechte veronderstellingen over taal; het maakt hen onnodig boos en beïnvloedt dus hun gedrag.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Ze hebben het gevoel dat de taal verloedert en daardoor ook de algemene kwaliteit van het leven.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2017-hl-i-4",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "dutch-0-1",
+  "conceptId": "ook-professor-jacques-van-keymeulen-van",
+  "questionRef": "2017 HL Section I Q4",
+  "questionText": "Ook professor Jacques Van Keymeulen van de vakgroep Nederlandse Taalkunde van de UGent vindt het jammer dat sommige mensen zo moeilijk kunnen aanvaarden dat taal leeft. Leg uit waarom de professor dit jammer vindt. Ben je het eens met zijn standpunt of niet? Leg uit waarom wel /niet.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Het antwoord van de kandidaat bevat in elk geval verwijzingen naar de tekst én bevat een eigen reflectie over het gebruik van het Nederlands in de persoonlijke levenssfeer van de kandidaat.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Het standpunt van de kandidaat dient in elk geval duidelijk te zijn en bevat in elk geval ook minstens één geldig argument.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2017-hl-i-5",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "dutch-0-1",
+  "conceptId": "gebaseerd-tekst-vergelijk-het-standpunt-over",
+  "questionRef": "2017 HL Section I Q5",
+  "questionText": "Gebaseerd op de tekst: Vergelijk het standpunt over taal volgens het structure‐perspectief met het agency‐perspectief.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Iemand die het structure-perspectief aanhangt gelooft dat er bepaalde patronen zijn die ons gedrag fel beperken. Met betrekking tot taal zal die groep geloven dat onze taalregels en woordenschat vastliggen in boeken.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Iemand die het agency-perspectief aanhangt gelooft dat mensen zelf bepalen wat ze doen. Deze groep gelooft dan ook dat onze taal constant evolueert en dat we ons taalgebruik perfect kunnen aanpassen aan onze gesprekspartners.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Het antwoord moet ook een duidelijke verwijzing naar het onderwijs en een standpunt met ten minste één geldig argument bevatten.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2017-hl-i-6",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2017,
+  "section": "I",
+  "topicId": "dutch-0-1",
+  "conceptId": "bespreek-waarom-professor-jaspaert-het-nodig",
+  "questionRef": "2017 HL Section I Q6",
+  "questionText": "Bespreek waarom professor Jaspaert het nodig vindt om opmerkingen en correcties te maken over geschreven taal (fouten) en waarom hij dat niet nodig vindt om dat te doen voor gesproken taal.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wanneer mensen gecorrigeerd worden op gesproken taal, voelen ze zich aangevallen.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Gesproken taal is een natuurlijk conversatiemiddel dat constant evolueert.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Geschreven taal moet beschermd en bewaakt worden zodat die heelhuids kan worden overgedragen naar de volgende generaties.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2017-hl-ii-1",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2017,
+  "section": "II",
+  "topicId": "dutch-1-0",
+  "conceptId": "hoe-kunnen-mensen-valselijk-worden-beoordeeld",
+  "questionRef": "2017 HL Section II Q1",
+  "questionText": "Hoe kunnen mensen valselijk worden beoordeeld op basis van hoe ze schrijven eerder dan op basis van wat ze schrijven? Becommentarieer in 100 tot 150 woorden jouw visie op deze kwestie.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Het antwoord van de kandidaat bevat verwijzingen over stijl, grammatica en spelling en de eventuele fouten die daartegen worden gemaakt waardoor de lezer van de tekst zijn of haar aandacht daarop gaat richten in plaats van op de eigenlijke inhoudelijke boodschap.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "De schrijver die opvallende of veel taalfouten maakt zal daardoor eerder worden weggezet als ‘dom’ en de lezer zal het gebruik van die taalfouten aanhalen als reden om de inhoudelijke argumenten van de auteur als ondermaats te beschouwen.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Zeker wanneer de lezer van de tekst iemand is die zich in het structure-kamp situeert zal dit het geval zijn.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "DEEL 2: COMMENTAAR",
+   "title": "Reading text — answer in Dutch",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Dutch 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+  }
+ },
+ {
+  "id": "nld-2017-hl-iii-1",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2017,
+  "section": "III",
+  "topicId": "dutch-1-1",
+  "conceptId": "schrijf-een-opstel-van-minimum-300",
+  "questionRef": "2017 HL Section III Q1",
+  "questionText": "Schrijf een opstel van minimum 300 woorden. Kies één van de volgende opgaven. ‘Mijn taal is mijn wereld.’",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task and prints nothing under it."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet."
+ },
+ {
+  "id": "nld-2017-hl-iii-2",
+  "subjectId": "dutch",
+  "level": "higher",
+  "year": 2017,
+  "section": "III",
+  "topicId": "dutch-1-1",
+  "conceptId": "schrijf-een-opstel-van-minimum-300",
+  "questionRef": "2017 HL Section III Q2",
+  "questionText": "Schrijf een opstel van minimum 300 woorden. Kies één van de volgende opgaven. \"Mijn mening is zoveel waard als de jouwe en alle meningen zouden gelijkwaardig moeten worden gewaardeerd.” Beoordeel dit standpunt in de context van de hedendaagse, moderne wereld en in het bijzonder in de context van de sociale media.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\" The scheme reprints this task and prints nothing under it."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on page 4 of the question booklet."
+ },
+ {
   "id": "nld-2021-hl-i-1-a",
   "subjectId": "dutch",
   "level": "higher",
