@@ -1565,6 +1565,92 @@
   }
  },
  {
+  "id": "mgr-2012-hl-2",
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "year": 2012,
+  "section": "2",
+  "topicId": "modern-greek-1-0",
+  "conceptId": "mgr-έκφραση-ανοιχτά-αντιπαρατεθεί",
+  "questionRef": "2012 HL Section 2",
+  "questionText": "Να σχολιάσετε σε περίπου 100 λέξεις πως καταλαβαίνετε την έκφραση: Κανένας δεν τολμά να αντιπαρατεθεί, να πάει κόντρα δηλαδή ή να περιφρονήσει ανοιχτά αυτόν τον μοντέρνο Θεό.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Το ποδόσφαιρο ενώνει τους ανθρώπους, τους δημιουργεί κοινή δράση, συναισθήματα, κοινές χαρές και λύπες, διάθεση να υποστηρίξουν κάτι κοινό όλοι μαζί. Η αποδοχή του αθλήματος σε όλα τα μήκη και τα πλάτη της γης, από όλες τις ηλικίες , και όλες τις τάξεις, αναγκάζει ακόμα και αυτούς που δεν το θαυμάζουν να μην εκφέρουν ανοιχτά τις διαφωνίες τους.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\" The scheme reprints the phrase as: “Κανένας δεν τολμά να αντιπαρατεθεί ή να περιφρονήσει ανοιχτά αυτόν τον μοντέρνο Θεό.”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ΤΟ ΚΕΙΜΕΝΟ",
+   "title": "The article this question is about — answer in Modern Greek",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Modern Greek 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+  }
+ },
+ {
+  "id": "mgr-2012-hl-3-1",
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "year": 2012,
+  "section": "3",
+  "topicId": "modern-greek-1-0",
+  "conceptId": "mgr-αρχαιοελληνικού-γερό-μυαλό",
+  "questionRef": "2012 HL Section 3 Q1",
+  "questionText": "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων. Να συζητήσετε τη σημασία του αρχαιοελληνικού ρητού: Ένα γερό μυαλό, σε ένα γερό σώμα.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ο αθλητισμός και η φροντίδα και άσκηση του σώματος συντελούν και βοηθούν στην όξυνση του πνεύματος, στην καλλιέργεια του πνεύματος.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "mgr-2012-hl-3-2",
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "year": 2012,
+  "section": "3",
+  "topicId": "modern-greek-1-0",
+  "conceptId": "mgr-εδώ-επικεντρωμένο-κοινωνία",
+  "questionRef": "2012 HL Section 3 Q2",
+  "questionText": "Να επιλέξετε ένα από τα δύο θέματα και να αναπτύξετε τις απόψεις σας σε ένα κείμενο 300 περίπου λέξεων. Στη σύγχρονη κοινωνία μας το κάθε τι είναι επικεντρωμένο στο εδώ και τώρα.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Μεγάλο μέρος της κοινωνίας μας στις μέρες μας φαίνεται ότι δεν ενδιαφέρεται για όνειρα που χρειάζονται χρόνο, κόπο, υπομονή και όνειρα. Οι κρίσεις οικονομική, ηθική , πολιτιστική που μαστίζουν την εποχή μας απογοητεύουν τους ανθρώπους με αποτέλεσμα να νοιάζονται μόνο για ότι μπορεί να τους δώσει άμεσα αποτελέσματα. Έτσι θέλουν να αποκτήσουν οτιδήποτε μπορεί να τους δοθεί χωρίς να χρειαστεί να μετακινηθούν ή να περιμένουν.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in MODERN GREEK. The paper prints the rule on page 3: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\" The scheme reprints the title as: “Στη σύγχρονη κοινωνία τους το κάθε τι είναι επικεντρωμένο στο εδώ και το τώρα.”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "mgr-2013-hl-1-1",
   "subjectId": "modern-greek",
   "level": "higher",
