@@ -131,6 +131,17 @@ TOTAL_ONLY = ('the scheme asks for more answers than its printed tariff divides 
 # 4 marks" over "Stimolando/catturando/monitorando/osservando/apportando (2
 # marks each)". Each alternative is a cut of that line (checked present).
 READING_OPTIONS = {
+    # 2024 Ordinary A2 1(b): "One of 5 marks" over the stem "The carrozzine
+    # per disabili are", which the reader welded to the first answer.
+    (2024, 'ol', 'A2', 1, 'b'): {
+        'claimMax': 1, 'perOption': 5,
+        'options': ['(Specialised) beach wheelchairs,', 'Larger than (conventional) wheelchairs',
+                    'Often very colourful wheelchairs', 'Wheelchairs that have very big (inflatable) wheels',
+                    'Submersible wheelchairs', 'Wheelchairs that move freely/roll easily on the sand'],
+        'check': ['The carrozzine per disabili are', 'They are wheelchairs 3 mark', 'They are big/colourful 2 marks'],
+        'contextNote': ('The scheme also pays part marks for a shorter answer: “They are wheelchairs” 3 marks; '
+                        '“They are big/colourful” 2 marks. Each answer completes the scheme’s “The carrozzine '
+                        'per disabili are”.')},
     (2023, 'hl', 'A', 4, 'b'): {
         'claimMax': 2, 'perOption': 2,
         'options': ['Stimolando', 'catturando', 'monitorando', 'osservando', 'apportando'],
@@ -145,7 +156,7 @@ def options_card(P, S, year, level, section, item, letter, cards):
                       if (sec, it, le) == (section, item, letter))
     ws = it_writing.Scheme(year, level)
     ws.check(*o['options'], 'Stimolando/catturando/monitorando/osservando/apportando (2 marks each)'
-             if (year, level) == (2023, 'hl') else o['options'][0])
+             if (year, level) == (2023, 'hl') else o['options'][0], *o.get('check', []))
     assert o['claimMax'] * o['perOption'] == ask.total
     language = it_all.answer_language(level, text)
     card = {
@@ -160,13 +171,15 @@ def options_card(P, S, year, level, section, item, letter, cards):
                   'verbatim': 'The answers the scheme accepts in full', 'marks': None,
                   'group': {'claimMax': o['claimMax'], 'perOption': o['perOption'],
                             'options': o['options']},
-                  'contextNote': f'{it_all.language_note(language)} The scheme prints "{o["note"]}".'}],
+                  'contextNote': (f'{it_all.language_note(language)} ' + (
+                      o['contextNote'] if 'contextNote' in o else f'The scheme prints "{o["note"]}".'))}],
         'notes': (f'The scheme prints the tariff as {ask.parts[0].notation!r}; the paper '
                   f'prints this ask on page {page}.'),
     }
     source = it_all.source_material(P, section, language, level, year)
     if source:
         card['sourceMaterial'] = source
+    cards[:] = [c for c in cards if c['id'] != card['id']]      # replaces the generic reader's card
     cards.append(card)
 
 
@@ -267,6 +280,19 @@ def _misprint_notes(cards, year, level):
 # checked against the scheme with split brackets ("(1+1+1+2)") ignored, as the
 # build's provenance form ignores them; the scheme's shorter answers quoted.
 READING_POINTS = {
+    # 2017 Ordinary A2 4(a) prints its answer on the head line and the next,
+    # "The (percentage) increase (1) in cyclists (2) 5 marks" / "since 2011
+    # (2) (until today)": three priced pieces.
+    (2017, 'ol', 'A2', 4, 'a'): {
+        'points': [('The (percentage) increase', 1), ('in cyclists', 2), ('since 2011', 2)],
+        'lesser': [('2011', 1)],
+        'note': 'The scheme prints the last piece as “since 2011 (2) (until today)”.'},
+    # 2016 Ordinary B3 Q1 prints its answer on the head line and the next,
+    # "30% off on all books (in the collection), 3 marks (1+1+1)" / "until
+    # the 13th of November": three elements at one mark each.
+    (2016, 'ol', 'B3', 1, None): {
+        'points': [('30% off', 1), ('on all books (in the collection),', 1), ('until the 13th of November', 1)],
+        'lesser': []},
     (2018, 'hl', 'A', 1, 'b'): {
         'points': [('Fare delle aree giochi/ campi da gioco', 1), ('in tutti i quartieri', 1),
                    ('soprattutto nelle periferie/ nelle zone', 1),

@@ -91,9 +91,9 @@ LEVEL_TITLE = {'hl': 'Higher', 'ol': 'Ordinary'}
 # all would be a wall of text rather than a question. The list is trimmed in
 # the SEC's own printed order and the trim is DISCLOSED on the row, which is
 # the pattern the bank already uses for an over-cap menu.
-MAX_OPTIONS = 16
+MAX_OPTIONS = 25      # the build's MAX_LONG_OPTION_ROWS: never drop a printed answer
 # How many lesser answers a card's note shows before it says it is trimming.
-MAX_RUNGS = 6
+MAX_RUNGS = 40      # every shorter answer the scheme prices is quoted: never drop one
 
 # The name the section takes on the card. `SecCardBase.section` is a single
 # letter, and the paper's own sections are A, B and C.
@@ -279,44 +279,84 @@ def _evidence(part):
 
 
 COUNT_PRINTED = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'a': 1, 'an': 1}
+SKIP_WORDS = {'any', 'three', 'five', 'the', 'and', 'from', 'with', 'her', 'his', 'one', 'two', 'four',
+              'what', 'about', 'learn', 'points', 'point'}
+AFTER_COUNT = re.compile(r'\(\s*(one|two|three|four)\s+(?:[a-z]+\s+)?points?\s*\)'
+                         r'|\bgive\s+(one|two|three|four)\s+(?:[a-z]+\s+)?points?\b')
+BEFORE_COUNT = re.compile(r'\b(one|two|three|four|a|an)\s+(?:[^\W\d_]+\s+){0,2}$')
 
 
-def _heading_counts(heads, question):
-    """How many points the PAPER asks for under each heading the scheme prints,
-    or None where it does not say for every one. Read from the question's own
-    words: "the founders (one point)", "one advantage", "What is Riccardo's
-    view …? Give two points"."""
+def _heading_counts(groups, question):
+    """(label, count) for each group: how many points the PAPER asks for under
+    each heading the scheme prints, read from the question's own words —
+    "the founders (one point)", "one advantage", "three reasons why", "What is
+    Riccardo's view …? Give two points". A first group with no heading of its
+    own (2019 Higher B1 Q5's points on the father, under "Four points are
+    required:") takes the count the paper prints before the first heading,
+    and the paper's own words for a label ("the narrator's father"). None
+    where the paper does not say for every group."""
     q = ' '.join(question.split())
     low = q.lower()
-    spots = []
-    for h in heads:
-        # The heading's last word that means something: "Guido's job" is
-        # found at "his jobs", not at "Guido (two points)" before it.
-        word = next((w for w in reversed(re.findall(r"[^\W\d_]+", h.lower()))
-                     if len(w) > 2 and w not in COUNT_PRINTED
-                     and w not in ('any', 'three', 'five', 'the', 'and', 'from', 'with', 'her', 'his')), None)
-        if word is None:
+    spots, start = [], 0
+    for head, _answers in groups:
+        if head is None:
+            spots.append(None)
+            continue
+        words = [w for w in reversed(re.findall(r"[^\W\d_]+", head.lower()))
+                 if len(w) > 2 and w not in COUNT_PRINTED and w not in SKIP_WORDS]
+        at = None
+        for w in words:
+            stem = w[:6] if len(w) >= 6 else w
+            m = re.compile(r'(?<![^\W\d_])' + re.escape(stem)).search(low, start)
+            if m:
+                at = m.start()
+                break
+        if at is None:
             return None
-        stem = word[:6] if len(word) >= 6 else word
-        m = re.search(r'(?<![^\W\d_])' + re.escape(stem), low)
-        if m is None:
-            return None
-        spots.append(m.start())
-    if spots != sorted(spots) or len(set(spots)) != len(spots):
+        spots.append(at)
+        start = at + 1
+    named = [x for x in spots if x is not None]
+    if not named or named != sorted(named):
         return None
-    counts = []
-    for k, at in enumerate(spots):
-        stop = spots[k + 1] if k + 1 < len(spots) else len(low)
-        before = re.search(r'\b(one|two|three|four|a|an)\s+$', low[:at])
-        after = re.search(r'\(\s*(one|two|three|four)\s+points?\s*\)'
-                          r'|\bgive\s+(one|two|three|four)\s+points?\b', low[at:stop])
+    out = []
+    for k, ((head, _answers), at) in enumerate(zip(groups, spots)):
+        nxt = next((x for x in spots[k + 1:] if x is not None), len(low))
+        if at is None:
+            if k != 0:
+                return None
+            m = list(AFTER_COUNT.finditer(low[:nxt]))
+            if not m:
+                return None
+            m = m[-1]
+            lead = q[:m.start()].rstrip(' ,')
+            label = ' '.join(re.split(r'\s+', re.split(r'\babout\b|\bof\b|,', lead)[-1].strip())[-3:])
+            out.append((label, COUNT_PRINTED[m.group(1) or m.group(2)]))
+            continue
+        after = AFTER_COUNT.search(low, at, nxt)
+        prev = max([x for x in spots[:k] if x is not None] or [0])
+        # The count may stand before the heading's FIRST word: "two points
+        # about Jacopo's hopes" (2021 Higher A Q5) is found at "hopes".
+        first_word = next((w for w in re.findall(r"[^\W\d_]+", head.lower())
+                           if len(w) > 2 and w not in SKIP_WORDS), None)
+        lead_at = at
+        if first_word:
+            m0 = re.compile(r'(?<![^\W\d_])' + re.escape(first_word[:6])).search(low, prev, at + 1)
+            if m0:
+                lead_at = m0.start()
+        before = BEFORE_COUNT.search(low[prev:lead_at]) or BEFORE_COUNT.search(low[prev:at])
         if after:
-            counts.append(COUNT_PRINTED[after.group(1) or after.group(2)])
+            out.append((head, COUNT_PRINTED[after.group(1) or after.group(2)]))
         elif before:
-            counts.append(COUNT_PRINTED[before.group(1)])
+            out.append((head, COUNT_PRINTED[before.group(1)]))
         else:
             return None
-    return counts
+    return out
+
+
+def _paper_label(name, question):
+    """The paper's words for an inline name: "Riccardo" -> "Riccardo's view"."""
+    m = re.search(re.escape(name) + r"[’']s\s+[^\W\d_]+", ' '.join(question.split()))
+    return m.group(0) if m else name
 
 
 def _grouped_rows(part, n, ask, question):
@@ -325,18 +365,23 @@ def _grouped_rows(part, n, ask, question):
     Where the paper does not say how many for every heading (the novel ask:
     "the passage and the novel as a whole"), one group over every answer,
     each led by the heading the scheme prints it under."""
+    counts = _heading_counts(part.groups, question) if n == 1 else None
+    equal = (part.split and len(part.split) > 1 and len(set(part.split)) == 1
+             and sum(part.split) == part.total)
     if part.counted and part.claim > 1 and part.split and len(part.split) != part.claim \
-            and sum(part.split) == part.total:
+            and sum(part.split) == part.total and not equal:
         return None     # a count and a split that disagree: _row_for refuses it
     claim, per = part.claim, part.per
-    if part.split and len(part.split) > 1 and len(set(part.split)) == 1 \
-            and sum(part.split) == part.total:
-        # "One of 20 marks" over "Why (5+5+5+5)" (2019 Higher A Q5): the count
-        # heads the first heading's points, the split prices the whole ask.
+    if equal:
+        # "Two of 20 marks" over "Benefit (5+5+5+5)" (2018 Higher A Q5): the
+        # count is the first heading's, the split prices the whole ask.
         claim, per = len(part.split), part.split
-    if per is None or len(set(per)) > 1 or claim < 2:
+    if per is None or len(set(per)) > 1 or not claim or claim < 2:
         return None
     heads = [h for h, _a in part.groups if h]
+    full = lambda h: part.fullnames.get(h, h)
+    if any(len(a) > MAX_OPTIONS for _h, a in part.groups):
+        return 'the scheme prints more answers under one heading than a card can show'
     prices = part.prices or {}
     if prices and n == 1 and len(part.groups) == len(heads):
         # A heading that prices its own points, and one that does not: the
@@ -346,52 +391,54 @@ def _grouped_rows(part, n, ask, question):
         if len(rest) == 1 and left > 0 and left % per[0] == 0:
             rows = []
             for k, (head, answers) in enumerate(part.groups, start=1):
-                shown = answers[:MAX_OPTIONS]
                 if head in prices:
                     count, _t, steps, printed = prices[head]
-                    group = {'claimMax': count, 'perOption': steps[0], 'options': shown}
+                    group = {'claimMax': count, 'perOption': steps[0], 'options': list(answers)}
                     if len(set(steps)) > 1:
                         group['perOptionSteps'] = steps
                     note = f'The scheme prints “{printed}”.'
                 else:
                     count = left // per[0]
-                    group = {'claimMax': count, 'perOption': per[0], 'options': shown}
-                    note = (f'The scheme prints these answers under the heading “{head}”, '
+                    group = {'claimMax': count, 'perOption': per[0], 'options': list(answers)}
+                    note = (f'The scheme prints these answers under the heading “{full(head)}”, '
                             f'{left} of the {part.total} marks.')
                 if len(answers) < count:
                     break
                 rows.append({'id': f'r-{k}', 'kind': 'anyN',
                              'verbatim': f'{head} — the answers the scheme accepts',
-                             'marks': None, 'group': group, 'contextNote': note,
-                             '_trimmed': len(answers) - len(shown)})
+                             'marks': None, 'group': group, 'contextNote': note})
             else:
                 return rows
-    counts = _heading_counts(heads, question)
-    shown_note = ''
-    if n == 1 and counts and sum(counts) == claim and len(part.groups) == len(heads) \
-            and all(len(a) >= c for (_h, a), c in zip(part.groups, counts)):
+    if counts and sum(c for _l, c in counts) == claim \
+            and all(len(a) >= c for (_h, a), (_l, c) in zip(part.groups, counts)):
         rows = []
-        for k, ((head, answers), count) in enumerate(zip(part.groups, counts), start=1):
-            shown = answers[:MAX_OPTIONS]
-            rows.append({
-                'id': f'r-{k}', 'kind': 'anyN',
-                'verbatim': f'{head} — the answers the scheme accepts',
-                'marks': None,
-                'group': {'claimMax': count, 'perOption': per[0], 'options': shown},
-                'contextNote': (f'The scheme prints these answers under the heading '
-                                f'“{head}”; the paper asks for {count} '
-                                f'{"point" if count == 1 else "points"} on it.'),
-                '_trimmed': len(answers) - len(shown)})
+        for k, ((head, answers), (label, count)) in enumerate(zip(part.groups, counts), start=1):
+            pts = f'{count} {"point" if count == 1 else "points"}'
+            if head is None:
+                show, note = label, (f'The paper asks for {pts} on {label}; the scheme prints '
+                                     f'these answers for it, before its first heading.')
+            elif head in part.inline:
+                show = _paper_label(head, question)
+                note = (f'The scheme begins each of these answers with “{head}:”; the paper asks '
+                        f'for {pts} on {show}.')
+            else:
+                show, note = head, (f'The scheme prints these answers under the heading '
+                                    f'“{full(head)}”; the paper asks for {pts} on it.')
+            rows.append({'id': f'r-{k}', 'kind': 'anyN',
+                         'verbatim': f'{show} — the answers the scheme accepts', 'marks': None,
+                         'group': {'claimMax': count, 'perOption': per[0], 'options': list(answers)},
+                         'contextNote': note})
         return rows
     options = [a if h is None else f'{h} — {a}' for h, answers in part.groups for a in answers]
-    shown = options[:MAX_OPTIONS]
+    if len(options) > MAX_OPTIONS:
+        return 'the scheme prints more answers than a card can show'
     return [{'id': f'r-{n}', 'kind': 'anyN',
              'verbatim': 'The answers the scheme accepts in full', 'marks': None,
-             'group': {'claimMax': claim, 'perOption': per[0], 'options': shown},
+             'group': {'claimMax': claim, 'perOption': per[0], 'options': options},
              'contextNote': (f'The scheme prints these answers under the '
                              f'heading{"s" if len(heads) > 1 else ""} '
-                             + ', '.join(f'“{h}”' for h in heads) + '.' + shown_note),
-             '_trimmed': len(options) - len(shown)}]
+                             + ', '.join(f'“{full(h)}”' for h in heads)
+                             + '; the paper does not say how many points it wants under each.')}]
 
 
 def _row_for(part, n, ask, question=None):
@@ -401,12 +448,14 @@ def _row_for(part, n, ask, question=None):
     if question is not None:
         confirm_headings(part, question)
     rows = _row_for_settled(part, n, ask, question)
-    if isinstance(rows, str) or not part.asides:
+    if isinstance(rows, str):
         return rows
     first = rows[0] if isinstance(rows, list) else rows
-    noted = ' '.join(f'The scheme also prints: “{a}”.' for a in part.asides if a.startswith('('))
+    noted = [a[1:] if a.startswith('§') else f'The scheme prints: “{a}”.' for a in (part.notes or [])]
+    noted += [f'The scheme also prints: “{a}”.' for a in (part.asides or []) if a.startswith('(')]
+    noted = list(dict.fromkeys(noted))
     if noted:
-        first['contextNote'] = f"{first.get('contextNote', '')} {noted}".strip()
+        first['contextNote'] = f"{first.get('contextNote', '')} {' '.join(noted)}".strip()
     return rows
 
 
@@ -415,10 +464,22 @@ def _row_for_settled(part, n, ask, question):
         return [{'id': f'r-{n}-{k}' if len(part.answers) > 1 else f'r-{n}', 'kind': 'point',
                  'verbatim': a, 'marks': m}
                 for k, (a, m) in enumerate(zip(part.answers, part.split), start=1)]
-    if part.groups and ask.total == 20 and part.claim:
+    if part.groups and ask.total == 20:
         grouped = _grouped_rows(part, n, ask, question)
         if grouped:
             return grouped
+    if (part.groups and n == 1 and all(h for h, _a in part.groups) and part.split
+            and len(set(part.split)) == 1 and len(part.split) == len(part.groups)
+            and sum(part.split) == part.total):
+        # "4 marks (2+2)" over "One of / People (who are)" and "One of / Who
+        # will" (2023 Ordinary B1 Q4): one answer from each heading.
+        full = lambda h: (part.fullnames or {}).get(h, h)
+        return [{'id': f'r-{k}', 'kind': 'anyN',
+                 'verbatim': f'{full(h)} — the answers the scheme accepts', 'marks': None,
+                 'group': {'claimMax': 1, 'perOption': part.split[0], 'options': list(a)},
+                 'contextNote': (f'The scheme prints these answers under the heading “{full(h)}”: '
+                                 f'one of them earns {part.split[0]} marks.')}
+                for k, (h, a) in enumerate(part.groups, start=1)]
     answers = [a for a in part.answers if a and a.strip()]
     if not answers:
         return 'the scheme states no answer for this ask'
@@ -450,7 +511,9 @@ def _row_for_settled(part, n, ask, question):
             # pieces of one view, "You can" over another): each answer is led
             # by the heading the scheme prints it under.
             answers = [a if h is None else f'{h} — {a}' for h, group in part.groups for a in group]
-        shown = answers[:MAX_OPTIONS]
+        if len(answers) > MAX_OPTIONS:
+            return 'the scheme prints more answers than a card can show'
+        shown = answers
         group = {'claimMax': part.claim, 'perOption': per[0],
                  'options': shown}
         if len(set(per)) > 1:
@@ -466,11 +529,9 @@ def _row_for_settled(part, n, ask, question):
             named = [h for h, _g in part.groups if h]
             row['contextNote'] = (f'The scheme prints these answers under the '
                                   f'heading{"s" if len(named) > 1 else ""} '
-                                  + ', '.join(f'“{h}”' for h in named) + '.')
+                                  + ', '.join(f'“{(part.fullnames or {}).get(h, h)}”' for h in named) + '.')
         elif label:
-            row['contextNote'] = (f'The scheme prices this half of the ask '
-                                  f'separately, under the heading '
-                                  f'“{label}”.')
+            row['contextNote'] = _label_note(part, label)
         return row
     if len(answers) > 1:
         # The scheme lists several answers under a bare tariff and never says
@@ -482,9 +543,16 @@ def _row_for_settled(part, n, ask, question):
     row = {'id': f'r-{n}', 'kind': 'point', 'verbatim': answers[0],
            'marks': part.total}
     if part.label:
-        row['contextNote'] = (f'The scheme prices this half of the ask '
-                              f'separately, under the heading “{part.label}”.')
+        row['contextNote'] = _label_note(part, part.label)
     return row
+
+
+def _label_note(part, label):
+    """What a row's label is: the stem its answers complete ("They can"), or
+    the heading the scheme prints over them ("The 30x30 campaign")."""
+    if part.stem:
+        return f'Each answer completes the scheme’s “{label}”.'
+    return f'The scheme prints these answers under the heading “{label}”.'
 
 
 # ----------------------------------------------------- the matching task ----

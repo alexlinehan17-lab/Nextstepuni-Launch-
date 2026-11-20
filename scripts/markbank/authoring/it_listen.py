@@ -500,7 +500,13 @@ def cards(year, level, refuse, row_for, concept_for):
             part0 = ask.parts[0] if ask.parts else None
             components = (part0 is not None and len(ask.parts) == 1 and not part0.directive and part0.split
                           and len(part0.split) == len(part0.answers) > 1
-                          and sum(part0.split) == ask.total)
+                          and sum(part0.split) == ask.total
+                          # Not answers that print their own full price: "A
+                          # youth (1) hostel (3)" and "Quadruple rooms … 4
+                          # marks)" are two answers, not two pieces of one.
+                          and not all(sum(int(m) for m in re.findall(r'\((\d{1,2})\s*m?\)', a)) == ask.total
+                                      or re.search(r'\b%d\s*marks?\b' % ask.total, a)
+                                      for a in part0.answers[:1]))
             if override:
                 rows = _override_rows(S, override, ref)
             elif components:

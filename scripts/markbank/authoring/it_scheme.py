@@ -194,6 +194,30 @@ COMPLETE = re.compile(r'(?:[.?!;:)\]”"’]|\b\d{1,2}\s*(?:m|marks?))\s*$', re.
 # marks)"): the end of the last block of the section before it, never part of
 # an answer (2016 and 2017 Higher hung it on A Q5 as a lesser answer worth 60).
 SECTION_LINE = re.compile(r'^SECTION\s+[A-C]\b[^()]*\(?\s*\d{1,3}\s*marks?\s*\)?\s*$', re.I)
+# An examiner's instruction printed where a heading would be: what the answer
+# must contain ("Four points are required", "The candidate must refer both to
+# the passage and to the novel as a whole", "NB= Either:", "Any suitable
+# points from the novel. For example:", a starred footnote). Never a group's
+# name and never an answer: it is quoted in the row's note.
+INSTRUCTION = re.compile(r'\b(?:points?|elements?)\s+(?:is|are)\s+required\b'
+                         r'|^(?:the\s+)?candidates?\s+must\s+refer\b'
+                         r'|^N\.?\s?B\.?\s*[=:]|^any\s+suitable\s+points\b|\bfor\s+example:?\s*$'
+                         # a starred footnote, not a starred answer ("*To
+                         # educate family members" is an answer; "*Educate can
+                         # only be used once" is the footnote it points to)
+                         r'|^\*\s*\(|^\*.*\b(?:only|if|must|marks?|allocated|reference)\b'
+                         r'|\bcan\s+only\s+be\s+used\b'
+                         r'|^incorrect\b.*\bminus\s+\d', re.I)
+# The paper's instruction echoed on the scheme's head line: "Give four
+# details", "One point for Nicole one point for Aurora", "Details: Two of:".
+ECHO = re.compile(r'^give\s+(?:one|two|three|four|five)\b|\bpoints?\s+for\b'
+                  r'|\b(?:one|two|three|four|five)\s+of\s*[.:]?\s*$', re.I)
+# A count printed before the first answer on the head line: "One of Chef/cook".
+LEAD_COUNT = re.compile(r'^(?:any\s+)?(?:one|two|three|four|five)\s+of\b\s*:?\s*', re.I)
+# A condition the scheme prints after one answer: "(2 elements required)".
+REQUIRED = re.compile(r'\s*\(\s*(?:\d|one|two|three|four)\s+elements?\s+required\s*\)\s*$', re.I)
+# Characters the extraction leaves where the scheme printed a tick or a cross.
+STRAY = re.compile(r'\s*¬`?\s*$')
 # A line held aside that is neither a heading nor an answer: the examiner's
 # condition ("If only point", "(This answer can be used only with …)") or an
 # elements scale ("5 elements 6 marks").
@@ -206,7 +230,9 @@ PRICED_HEAD = re.compile(r'^([^:]{2,40}):\s*(?:any\s+)?(one|two|three|four|five)
                          r'(\d{1,2})\s*marks?\s*\(\s*(\d{1,2}(?:\s*\+\s*\d{1,2})+)\s*\)\s*$', re.I)
 CLOSED_RUNG = re.compile(r'^\(?(.*?\S)\s*(\d{1,2})\s*marks?\s*\)\s*$', re.I)
 NOTE = re.compile(
-    r'^(?:Note\s*:|N\.?B\.?\b|Penalise|Candidates?\s+(?:will|may|must)\b'
+    # Not "Candidates must have" over "Minimum 10 years' experience": that is
+    # the advertisement's own wording, and the answer (2022 Ordinary B1 Q4).
+    r'^(?:Note\s*:|N\.?B\.?\b|Penalise|Candidates?\s+(?:will|may|must)\b(?!\s+have\b)'
     r'|All\s+candidates\s+awarded\b|These?\s+last\s+two\s+lesser\b'
     r'|This\s+lesser\s+answer\b|Where\s+(?:a|the|marks)\b|Marks\s+awarded\b'
     r'|For\s+good\s+points\b|Use\s+the\s+descriptors\b|Evidence\s+is\s+needed\b'
@@ -311,7 +337,8 @@ class Part:
 
     __slots__ = ('total', 'split', 'claim', 'directive', 'stated', 'label',
                  'answers', 'rungs', 'notation', 'seq', 'lead', 'confirmed',
-                 'groups', 'asides', 'prices', 'components')
+                 'groups', 'asides', 'prices', 'components', 'stem', 'notes',
+                 'inline', 'fullnames')
 
     @property
     def counted(self):
@@ -1017,14 +1044,21 @@ def _settle(part):
                 # The tail of the answer above it, not a line of its own: it
                 # opens in lower case or on a figure ("30, who share a passion
                 # …"), or the line above stops on a function word, a comma or
-                # a solidus, or the BULLETED answer above stops without
-                # finishing ("… thousand times worse than" / "Teschio"). An
-                # unbulleted line under an unbulleted one that ends on a word
-                # is a line of its own (2025 Higher A Q5's Serendippo points).
-                e[2] = bool(above and above[0] in ('ans', 'cand') and (
+                # a solidus, or it sits under a BULLETED answer, whose bullet
+                # it continues ("… thousand times worse than" / "Teschio";
+                # "… has a son / called Mario." / "She lives in Naples"),
+                # unless the paper prints it as a heading. An unbulleted line
+                # under an unbulleted one that ends on a word is a line of its
+                # own (2025 Higher A Q5's Serendippo points).
+                parallel = above and e[1].split()[:2] == above[1].split()[:2] and len(e[1].split()) > 2
+                # Never a bracket ("(A cycling event/For cycling" opens a
+                # shorter answer) or a line priced on its own ("Standard
+                # tickets cost €10 … 2 marks").
+                own = e[1].startswith('(') or BARE_MARK.search(e[1])
+                e[2] = bool(above and above[0] in ('ans', 'cand') and not parallel and not own and (
                     _opens_wrapped(e[1]) or CONTINUED.search(above[1])
                     or above[1].rstrip().endswith((',', '/', '-', '–'))
-                    or (chain[k - 1] and not COMPLETE.search(above[1]))))
+                    or chain[k - 1]))
             chain.append(bool(e[3] or (e[2] and chain and chain[-1])))
     body = [e for e in seq if e[0] == 'ans']
     heads = []
@@ -1092,6 +1126,33 @@ def _run(seq, text, name):
     return run
 
 
+def _balanced_outer(text):
+    """Whether the first bracket of `text` closes at its end: "(Go on the
+    internet /website=database)", not "(Era) una pianta verde"."""
+    depth = 0
+    for k, ch in enumerate(text):
+        depth += ch == '('
+        depth -= ch == ')'
+        if depth == 0:
+            return k == len(text) - 1
+    return False
+
+
+def _bracketed(part, text):
+    """A bracketed line under the answers: a lesser answer with its marks
+    ("(They were messing/playing 3 marks)*") becomes a lesser answer, and
+    anything else, or the condition starred after it, the examiner's note."""
+    m = re.match(r'^\((.*)\)\s*(\*.*)?$', text)
+    inner, star = (m.group(1), m.group(2)) if m else (text, None)
+    closed = re.match(r'^(.*\S)\s+(\d{1,2})\s*marks?\.?$', inner.strip(), re.I)
+    if closed and int(closed.group(2)) < part.total:
+        part.rungs.append((closed.group(1), int(closed.group(2))))
+        if star and star.strip('* '):
+            part.notes.append(f'§The scheme adds to the shorter answer “{closed.group(1)}”: “{star.strip()}”.')
+        return
+    part.asides.append(text if text.startswith('(') else f'({text})')
+
+
 def confirm_headings(part, question):
     """Settle the lines _settle held aside as possible headings, now the
     question is known: a heading the scheme marks, or one the paper prints,
@@ -1100,17 +1161,47 @@ def confirm_headings(part, question):
     if part.confirmed:
         return
     part.confirmed = True
+    part.asides, part.prices, part.notes, part.inline, part.fullnames = [], {}, [], set(), {}
     if not part.seq:
         return
     live = set(part.answers)
     restored = False
-    out, heads, groups = [], [], [[None, []]]
-    # The head line's own words can be the first heading: 2018 Higher B2B Q5
-    # prints "Candidate must refer both to the passage and to the text as a
-    # whole From the passage 20 marks (5+5+5+5)" and "From the novel:" lower.
-    first = re.search(r'(?:points?\s+)?from\s+the\s+(?:passage|novel|text)\b.*$', part.lead or '', re.I)
-    if first:
-        groups[0][0] = first.group(0)
+    out, heads, groups = [], [], [[None, [], None]]
+    # The head line's own words: a heading ("From the passage" in 2018
+    # Higher B2B Q5's "Candidate must refer both to the passage and to the
+    # text as a whole From the passage 20 marks"), or an instruction only.
+    if part.lead and not part.stem and not re.search(r'[^\W\d_]', part.lead):
+        part.lead = None        # "6. (a) . 2 marks": nothing printed but the stop
+    if part.lead and not part.stem and re.match(r'^(?:one|two|three|four|five)\s+required\b', part.lead, re.I):
+        part.lead = None        # "4. Two required 4 marks (3+1)": the count, read from the split
+    lead_restored = False
+    if part.lead and not part.stem:
+        first = re.search(r'(?:points?\s+)?from\s+the\s+(?:passage|novel|text)\b.*$', part.lead, re.I)
+        if first:
+            groups[0][0] = first.group(0)
+            rest = part.lead[:first.start()].strip()
+            if rest:
+                part.notes.append(rest)
+            part.lead = None
+        elif INSTRUCTION.search(part.lead) or ECHO.search(part.lead):
+            part.notes.append(part.lead)
+            part.lead = None
+        elif LEAD_COUNT.match(part.lead):
+            # "One of Chef/cook 3 marks": the count, then the first answer.
+            first_answer = STRAY.sub('', part.lead[LEAD_COUNT.match(part.lead).end():]).strip(' `')
+            part.lead = None
+            if len(first_answer) > 1:
+                live.add(first_answer)
+                part.seq = [['ans', first_answer, False, False]] + list(part.seq)
+                restored = lead_restored = True
+        elif not _printed_in(part.lead, question):
+            # The head line's own words are the first ANSWER, not a heading:
+            # "1. (a) Rest 8 marks (3+3+2)" over "Dance" and "Food"; "4.
+            # January (1), February (1), March (1) and April (1) 4 marks".
+            live.add(part.lead)
+            part.seq = [['ans', part.lead, False, False]] + list(part.seq)
+            part.lead = None
+            restored = lead_restored = True
     # A bracket opened on one held-aside line and closed on the next is one
     # line: "(Get information/discounts/much" / "More 1 mark)".
     seq = []
@@ -1120,10 +1211,52 @@ def confirm_headings(part, question):
             seq[-1] = ['cand', f'{seq[-1][1]} {e[1]}', False, seq[-1][3]]
             continue
         seq.append(list(e))
-    part.asides = []
-    part.prices = {}
-    last = None             # 'ans' or 'head': what a wrapped line goes on from
+    last = None             # 'ans', 'head' or 'note': what a wrapped line goes on from
+    parent = None           # a heading over headings ("Bruno's Mother:" over "Passage:")
+    in_nb = False
+    pending = None          # a bracket still open
     for at, (kind, text, wrapped, bulleted) in enumerate(seq):
+        printed = text
+        text = STRAY.sub('', text)
+        if pending is not None:
+            # The rest of a bracket opened on an earlier line.
+            pending = f'{pending} {text}'
+            if pending.count('(') <= pending.count(')'):
+                _bracketed(part, pending)
+                pending = None
+            continue
+        # The lines under "NB= Either:" are the rule it states, not answers.
+        if in_nb and kind in ('ans', 'cand') and (bulleted or wrapped or text.startswith('*')):
+            part.notes[-1] += ('; ' if bulleted else ' ') + text
+            continue
+        in_nb = False
+        if re.match(r'^\d\s*pts?\s+from\b', text, re.I):
+            # The rule under "NB= Either:" (2017 Higher B2A Q5): "3 pts from
+            # passage + 1 pt from novel", one line each.
+            if last == 'rule':
+                part.notes[-1] += f'; {text}'
+            else:
+                part.notes.append(text)
+            last = 'rule'
+            continue
+        if ((kind in ('head', 'cand') or not bulleted) and INSTRUCTION.search(text)) \
+                or (kind in ('head', 'cand') and ECHO.search(text)):
+            half = re.match(r'^((?:points?\s+)?from\s+the\s+(?:passage|novel|text))\s+(\S.*)$', text, re.I)
+            if half:
+                # "From the passage The candidate must refer both to the
+                # passage and to the text as a whole": the half it heads, and
+                # the instruction printed after it.
+                part.notes.append(half.group(2))
+                text, kind = half.group(1), 'head'
+            else:
+                part.notes.append(text.rstrip())
+                in_nb = bool(re.match(r'^N\.?\s?B', text))
+                last = 'note'
+                continue
+        if (text.startswith('(') and not bulleted and text.count('(') > text.count(')')
+                and not BRACKET_MARK.search(text)):
+            pending = text              # "(A cycling event/For cycling" over "(enthusiasts) 4 marks)"
+            continue
         if kind == 'cand':
             closed = CLOSED_RUNG.match(text)
             if closed and int(closed.group(2)) < part.total:
@@ -1138,42 +1271,47 @@ def confirm_headings(part, question):
                 terms = [int(x) for x in re.findall(r'\d{1,2}', priced.group(4))]
                 part.prices[name] = (COUNT_WORD[priced.group(2).lower()], int(priced.group(3)), terms, text)
                 heads.append(name)
-                groups.append([name, []])
+                groups.append([name, [], parent])
                 last = 'head'
                 continue
-            # The stem every answer under it completes: "They can" over
-            # "spend time together", "hug a tree" …; "He is of NoisyVision's"
-            # over "founder", "president".
-            after = []
-            for e in seq[at + 1:]:
-                if e[0] != 'ans':
-                    break
-                after.append(e[1])
-            if (at == 0 and not part.lead and after and len(after) >= (part.claim or 1)
-                    and text[:1].isupper() and all(_opens_wrapped(a) for a in after)
-                    and not _printed_in(text, question, False)):
-                part.lead = text
+        # The stem every answer completes, when it is the only such line:
+        # "They can" over "spend time together", "hug a tree" …; "She lived:"
+        # over "in a small town", "in the west of Ireland" …
+        if kind in ('cand', 'head') and at == 0 and not part.lead:
+            after = [e[1] for e in seq[1:] if (e[0] == 'ans' or (e[0] == 'cand' and _opens_wrapped(e[1])))
+                     and not e[1].startswith('(') and not CLOSED_RUNG.match(e[1])]
+            others = [e for e in seq[1:] if e[0] in ('cand', 'head')
+                      and not CLOSED_RUNG.match(e[1]) and not ASIDE.search(e[1])
+                      and not e[1].startswith('(') and not INSTRUCTION.search(e[1])
+                      and not _opens_wrapped(e[1])]
+            if (after and not others and len(after) >= (part.claim or 1)
+                    and text[:1].isupper() and all(_opens_wrapped(a) for a in after)):
+                part.lead = text.rstrip(': ').strip()
+                part.stem = True
                 continue
         # What the paper prints is a heading whatever its shape: the line above
         # "Disadvantage" in the scheme is a ladder of lesser answers, so in
         # the list it sits under an answer that does not end in a full stop.
-        shaped = (not bulleted and not wrapped and at + 1 < len(seq)
+        shaped = (not bulleted and at + 1 < len(seq)
                   and seq[at + 1][3] and seq[at + 1][0] == 'ans')
         if kind == 'head' or (kind == 'cand' and _printed_in(text, question, shaped)):
+            if last == 'head' and groups[-1][0] and not groups[-1][1]:
+                parent = groups.pop()[0]        # a heading over the headings under it
             heads.append(text)
-            groups.append([text, []])
+            groups.append([text, [], parent])
             last = 'head'
             continue
-        # A heading printed INSIDE each of its answers: 2017 Higher A Q5 sets
-        # "Riccardo: he is not very interested in art, …" for every point on
-        # the second half of its ask. The answer keeps its words; the name
-        # starts a group of its own.
+        # A heading printed INSIDE each of a run of answers: 2017 Higher A Q5
+        # sets "Riccardo: he is not very interested in art, …" for every point
+        # on the second half of its ask. The answers keep their words; the
+        # run is a group of its own.
         inline = re.match(r'^([^:]{2,30}):\s', text) if kind == 'ans' else None
         if (inline and text in live and groups[-1][0] != inline.group(1)
                 and _run(seq, text, inline.group(1)) >= 2
                 and _printed_in(inline.group(1), question)):
             heads.append(inline.group(1))
-            groups.append([inline.group(1), []])
+            groups.append([inline.group(1), [], parent])
+            part.inline.add(inline.group(1))
         # The tail of the answer above it: flagged when _settle read it, or the
         # answer above left a bracket open ("… Albanian name (1m) (meaning" /
         # "“mountain wind”)").
@@ -1181,8 +1319,31 @@ def confirm_headings(part, question):
             out[-1] = f'{out[-1]} {text}'
             groups[-1][1][-1] = out[-1]
             continue
-        if kind == 'ans' and text not in live:
+        if kind == 'ans' and printed not in live:
             continue        # taken off by _lead: the stem every option completes
+        closed = CLOSED_RUNG.match(text) if (kind == 'ans' and not text.startswith('(')
+                                             and text.count(')') > text.count('(')) else None
+        if closed:
+            # A shorter answer printed without its opening bracket ("The
+            # seaside 1 mark)"); at the full price it is another full answer
+            # ("Quadruple rooms in a hostel/ A hostel with kitchen facilities 4
+            # marks)").
+            if int(closed.group(2)) < part.total:
+                part.rungs.append((closed.group(1), int(closed.group(2))))
+                continue
+            text = closed.group(1)
+            restored = True
+        if text.startswith('(') and (kind == 'ans' or not bulleted):
+            if text.count('(') > text.count(')') and not BRACKET_MARK.search(text):
+                # "(The answers “For six months after purchase” … will only be
+                # acceptable as an answer in" / "Question 4. if not used …)".
+                pending = text
+                continue
+            whole = re.match(r'^(\(.*\))\s*(\*.*)?$', text)
+            if whole and whole.group(1).count('(') == whole.group(1).count(')') \
+                    and _balanced_outer(whole.group(1)):
+                _bracketed(part, text)
+                continue
         if (last == 'ans' and out[-1].count('(') > out[-1].count(')')
                 and text.count(')') > text.count('(')):
             # One answer the SEC bulleted twice: "She doesn't spend too much
@@ -1210,6 +1371,14 @@ def confirm_headings(part, question):
             if priced and int(priced.group(2)) == (part.split or [part.total])[0]:
                 text = priced.group(1)
             restored = True
+        required = REQUIRED.search(text)
+        if required:
+            # "You can spend (500€) on cultural events … (2 elements required)":
+            # the condition is the examiner's, quoted in the note.
+            cond = required.group(0).strip()
+            text = text[:required.start()].rstrip()
+            words = ' '.join(text.split()[:6])
+            part.notes.append(f'§The scheme prints “{cond}” after the answer beginning “{words}”.')
         out.append(text)
         groups[-1][1].append(text)
         last = 'ans'
@@ -1226,27 +1395,77 @@ def confirm_headings(part, question):
         # and prints only a lesser answer under it.
         out, part.lead = [part.lead], None
         groups[0][1].append(out[0])
+    if pending is not None:
+        part.asides.append(pending)
+    prices_each = [sum(int(m.group(1)) for m in BRACKET_MARK.finditer(a)) for a in out]
+    uniform = (len(out) > 1 and all(prices_each) and len(set(prices_each)) == 1
+               and part.total % prices_each[0] == 0 and part.total > prices_each[0])
+    if uniform and not part.counted and not part.split and restored:
+        # Every answer printed with the same price, "It's (very) flexible
+        # (2m)", "He can work (1) from home (1m)" …: separate answers, as many
+        # wanted as the total holds; and a line at that price the reader took
+        # for a shorter answer is one of them ("He never feels alone (2m)").
+        v = prices_each[0]
+        part.claim = part.total // v
+        back = [t for t, m in part.rungs if m == v]
+        part.rungs = [(t, m) for t, m in part.rungs if m != v]
+        out.extend(back)
+        groups[-1][1].extend(back)
+    if lead_restored and len(out) > 1 and groups[0][1][:2] == out[:2] and not uniform:
+        a, b = out[0], out[1]
+        share = (part.split[0] if part.split and len(set(part.split)) == 1 else part.total)
+        priced = sum(int(m.group(1)) for m in BRACKET_MARK.finditer(a))
+        more = sum(int(m.group(1)) for m in BRACKET_MARK.finditer(b))
+        if (a.rstrip().endswith((',', '/', '-', '–')) or CONTINUED.search(a) or _opens_wrapped(b)
+                or (priced and priced < share and priced + more == share)):
+            # The head line's answer runs on to the next line: "30% off on all
+            # books (in the collection)," / "until the 13th of November"; "The
+            # (percentage) increase (1) in cyclists (2)" / "since 2011 (2)".
+            out[:2] = [f'{a} {b}']
+            groups[0][1][:2] = [out[0]]
     part.answers = out
     if not part.counted and len(out) == 1:
         part.claim = None       # one answer left: a point, not a choice of one
-    part.label = ' / '.join(([part.lead] if part.lead else []) + heads) or None
+    if (not part.counted and restored and part.split and len(set(part.split)) == 1
+            and len(part.split) > 1 and len(out) >= len(part.split) and sum(part.split) == part.total):
+        part.claim = len(part.split)    # "4 marks (2+2)" over two answers: both
     # One answer the scheme cuts by an unequal split, read whole once its
     # first half is no longer taken for a heading: 2026 Higher B2B 4(a)
     # "5 marks (4+1)" over "Per riconoscerli" / "Così che quando tornano …".
     part.components = bool(restored and not part.counted and part.split
                            and len(set(part.split)) > 1 and len(part.split) == len(out)
-                           and sum(part.split) == part.total and not heads)
-    named = [g for g in groups if g[1]]
-    for g in named:
-        if g[0]:
-            g[0] = g[0].rstrip(': ').strip()
+                           and sum(part.split) == part.total and not heads
+                           and not any(BRACKET_MARK.search(a) for a in out))
+    # A group is named by its parent heading where it has one ("Bruno's
+    # Mother:" over "Passage:" and "Novel:"); the sub-heading goes in the note.
+    named = []
+    for name, answers, par in groups:
+        if not answers:
+            continue
+        label = par or name
+        if label:
+            full = label.rstrip(': ').strip()
+            label = re.sub(r'\s*\((?:[^)\s]+\s+){3,}[^)]*\)\s*$', '', full).strip() or full
+            part.fullnames.setdefault(label, full)
+            if par and name:
+                part.fullnames[label] = full
+        if named and named[-1][0] == label and par:
+            named[-1][1].extend(answers)
+        else:
+            named.append([label, list(answers)])
     headed = [g for g in named if g[0]]
     # One heading the scheme marks, over the second run of answers only: 2025
     # Higher B2A Q5 prints its passage points under "The candidate must refer
     # both …" and its novel points under "Points from the novel:".
     lone = (len(headed) == 1 and named[0][0] is None
-            and any(e[0] == 'head' and e[1].rstrip(': ').strip() == headed[0][0] for e in seq))
+            and any(e[0] == 'head' and e[1].rstrip(': ').strip().startswith(headed[0][0]) for e in seq))
     part.groups = named if (len(headed) > 1 or lone) else None
+    sub = [n for n, _a, p in groups if p and n and _a]
+    if sub:
+        part.notes.append('§Under each heading the scheme prints its points under '
+                          + ' and '.join(f'“{x.rstrip(": ")}”' for x in dict.fromkeys(sub)) + '.')
+    heads = [h for h in heads if h]
+    part.label = ' / '.join(([part.lead] if part.lead else []) + [g[0] for g in headed]) or None
     if part.groups:
         # A hyphen the SEC sets as a bullet under a heading ("- Manno: …").
         unhyphen = lambda a: a[1:].strip() if re.match(r'^-\s+\S', a) else a
@@ -1305,6 +1524,7 @@ def _lead(part):
     if len(part.answers) - 1 >= part.claim and CONTINUED.search(first) \
             and len(first.split()) <= 8:
         part.label = part.lead = first
+        part.stem = True
         part.answers = part.answers[1:]
 
 
@@ -1337,6 +1557,7 @@ puo puoi possono deve devono
 the of to and or for with is are was were that this these those their his her
 its from on at by as be been has have had not but if so into about out up
 can could may might must will would should do does did
+throughout during until than towards within without
 """.split())
 # NOT the comma. The SEC ends an option with one — 2024 Ordinary answers "give
 # three details" with "Like Ivy, she painted/drew from an early age," and four
@@ -1400,6 +1621,19 @@ def _join(lines, mode='wrap'):
                                    or HARD_WRAP.search(out[-1]))
         if mode == 'wrap' and out:
             joins = joins or head.islower() or bool(CONTINUED.search(out[-1]))
+        # Never onto a line that is complete in itself: a bare directive ("Two
+        # of" over the heading "Solutions"), or a lesser answer ending on its
+        # own marks ("… 3m" over "she did not make a lot of friends 3m"); and
+        # never a bracketed lesser answer onto the answer above it ("His team
+        # mates all love her" over "(She (always) helps/supports him 2 marks)").
+        # A bracketed shorter answer printed over two lines: "(A cycling
+        # event/For cycling" / "(enthusiasts) 4 marks)".
+        if out and out[-1].startswith('(') and out[-1].count('(') > out[-1].count(')'):
+            joins = True
+        if out and (DIRECTIVE.match(out[-1]) or BARE_MARK.search(out[-1])
+                    or (PAREN_RUNG.match(s) and s.startswith('(') and s.rstrip().endswith(')')
+                        and not out[-1].startswith('('))):
+            joins = False
         if (out and joins and not LADDER.match(s) and not LADDER.match(out[-1])
                 and not BULLET.match(s) and not PAGE.match(s)):
             out[-1] = f'{out[-1]} {s}'

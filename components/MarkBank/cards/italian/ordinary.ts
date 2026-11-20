@@ -14020,7 +14020,9 @@ export const CARDS: SecCard[] = [
     questionText: "Mention the three main hobbies of\nItalians.\n(Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Rest — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Cooking” 1 mark. The scheme prices this half of the ask separately, under the heading “Rest”.", group: {"claimMax":1,"perOption":8,"options":["Dance","Food"]} },
+    { id: "r-1-1", kind: "point", verbatim: "Rest", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Cooking” 1 mark." },
+    { id: "r-1-2", kind: "point", verbatim: "Dance", marks: 3 },
+    { id: "r-1-3", kind: "point", verbatim: "Food", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14229,7 +14231,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give four details about the ideal\ncandidate in the second advertisement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian.", group: {"claimMax":4,"perOption":3,"options":["The ideal candidate will have (At least) three years’ (1m) experience (1m) as a tour guide (1m)","A (deep) knowledge (1m) of the city of Florence (1m) and its surrounding areas (1m)","A (deep) knowledge (1m) of the Florentine (1m) artistic heritage (1m)","A fluency in (1m) in French / English / Spanish (2m)*","Available to work (1m) at week-ends (1m) and during public holidays/ festive days (1m)","A willingness to do seasonal / temporary (2m) work (1m)","*(1 mark for each language up to a maximum of 2 marks)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints: “*(1 mark for each language up to a maximum of 2 marks)”.", group: {"claimMax":4,"options":["The ideal candidate will have (At least) three years’ (1m) experience (1m) as a tour guide (1m)","A (deep) knowledge (1m) of the city of Florence (1m) and its surrounding areas (1m)","A (deep) knowledge (1m) of the Florentine (1m) artistic heritage (1m)","A fluency in (1m) in French / English / Spanish (2m)*","Available to work (1m) at week-ends (1m) and during public holidays/ festive days (1m)","A willingness to do seasonal / temporary (2m) work (1m)"],"perOption":3} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14298,7 +14300,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about the working hours\nfor the job in the fourth advertisement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Part-time hours” 1 mark.", group: {"claimMax":2,"perOption":1,"options":["(Shifts) of six hours a day","Four days a week","*If marks have not been allocated for either answer above"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Part-time hours” 1 mark. The scheme prints: “*If marks have not been allocated for either answer above”.", group: {"claimMax":2,"options":["(Shifts) of six hours a day","Four days a week"],"perOption":1} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16087,7 +16089,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about this promotion.\n(Par. 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Mondays” 1 mark; “Fridays” 1 mark; “Afternoons” 1 mark; “Evenings” 1 mark; “For a year” 1 mark; “On in the Odeon Cinema /other places e.g. Rome/Europe” 1 mark. The scheme lists 1 further lesser answer(s) for this ask.", group: {"claimMax":2,"perOption":4,"options":["It runs from Monday to Friday","It is for the afternoon and evening screenings","It is valid all year round","It is valid in cinemas (2) of the old / historical (1) city centre/centre (1)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Mondays” 1 mark; “Fridays” 1 mark; “Afternoons” 1 mark; “Evenings” 1 mark; “For a year” 1 mark; “On in the Odeon Cinema /other places e.g. Rome/Europe” 1 mark; “It saves you money” 1 mark.", group: {"claimMax":2,"options":["It runs from Monday to Friday","It is for the afternoon and evening screenings","It is valid all year round","It is valid in cinemas (2) of the old / historical (1) city centre/centre (1)"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16179,7 +16181,9 @@ export const CARDS: SecCard[] = [
     questionText: "What does the 42% figure refer to?\n(Par. 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "since 2011 (2) (until today)", marks: 5, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “2011” 1 mark. The scheme prices this half of the ask separately, under the heading “The (percentage) increase (1) in cyclists (2)”.", permittedMarks: [0,1,5] },
+    { id: "r-1-1", kind: "point", verbatim: "The (percentage) increase", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “2011” 1 mark. The scheme prints the last piece as “since 2011 (2) (until today)”." },
+    { id: "r-1-2", kind: "point", verbatim: "in cyclists", marks: 2 },
+    { id: "r-1-3", kind: "point", verbatim: "since 2011", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16456,7 +16460,10 @@ export const CARDS: SecCard[] = [
     questionText: "When is the voucher valid?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "(The answers “For six months after purchase” or “In the next six months” will only be acceptable as an answer in", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “For six months after purchase/In the next 6 months” 1 mark. The scheme prices this half of the ask separately, under the heading “January (1), February (1), March (1) and April (1)”.", permittedMarks: [0,1,4] },
+    { id: "r-1-1", kind: "point", verbatim: "January", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “For six months after purchase/In the next 6 months” 1 mark. The scheme also prints: “(The answers “For six months after purchase” or “In the next six months” will only be acceptable as an answer in”." },
+    { id: "r-1-2", kind: "point", verbatim: "February", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "March", marks: 1 },
+    { id: "r-1-4", kind: "point", verbatim: "April", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16502,7 +16509,8 @@ export const CARDS: SecCard[] = [
     questionText: "What do families or organisations have to\ndo when they are looking for volunteers?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "(Go on the internet /website=database)", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Database” 1 mark. The scheme prices this half of the ask separately, under the heading “Go to the WorkAway database (1) and place an advertisement (1)”.", permittedMarks: [0,1,2] },
+    { id: "r-1-1", kind: "point", verbatim: "Go to the WorkAway database", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Database” 1 mark. The scheme also prints: “(Go on the internet /website=database)”." },
+    { id: "r-1-2", kind: "point", verbatim: "place an advertisement", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17194,7 +17202,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name two of Marta’s work duties.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two of. — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Two of.”. Answer in English or Irish.", group: {"claimMax":2,"perOption":4,"options":["She looked after (1) two children (3)","He accompanied them (1) to school (3)","She did some domestic chores (4)","She collected (1) them from school (3)","She took them (1) (after school) activities (3)","She took them (1) to the park/to play with friends (3)","She helped (1) them with homework (3)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme prints: “Two of.”. Answer in English or Irish.", group: {"claimMax":2,"options":["She looked after (1) two children (3)","He accompanied them (1) to school (3)","She did some domestic chores (4)","She collected (1) them from school (3)","She took them (1) (after school) activities (3)","She took them (1) to the park/to play with friends (3)","She helped (1) them with homework (3)"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18374,8 +18382,8 @@ export const CARDS: SecCard[] = [
     questionText: "Give two details about the working hours\nfor the job in the fourth advertisement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "You work four hours a day", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
-    { id: "r-2", kind: "point", verbatim: "(They are of a part-time nature 1 mark)* only if not mentioned above", marks: 2, contextNote: "The scheme prices this half of the ask separately, under the heading “You work three days a week”." },
+    { id: "r-1", kind: "criterion", verbatim: "You work four hours a day", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They are of a part-time nature” 1 mark.", permittedMarks: [0,1,2] },
+    { id: "r-2", kind: "point", verbatim: "You work three days a week", marks: 2, contextNote: "The scheme adds to the shorter answer “They are of a part-time nature”: “* only if not mentioned above”." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18490,7 +18498,7 @@ export const CARDS: SecCard[] = [
     questionText: "In D, give full details of the successful\ncandidates.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Seven candidates will be between 26 to 30 of age", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “18 to 25 of age and 26 to 30 of age” 2 marks; “18 to 25 of age” 1 mark; “26 to 30 of age” 1 mark. The scheme prices this half of the ask separately, under the heading “Five candidates will be between 18 to 25 of age”.", permittedMarks: [0,1,2,4] },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “18 to 25 of age and 26 to 30 of age” 2 marks; “18 to 25 of age” 1 mark; “26 to 30 of age” 1 mark.", group: {"claimMax":2,"options":["Five candidates will be between 18 to 25 of age","Seven candidates will be between 26 to 30 of age"],"perOption":2} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18536,7 +18544,9 @@ export const CARDS: SecCard[] = [
     questionText: "In A, what is the special offer? Give full\ndetails.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "until the 13th of November", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prices this half of the ask separately, under the heading “30% off on all books (in the collection),”." },
+    { id: "r-1-1", kind: "point", verbatim: "30% off", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "on all books (in the collection),", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "until the 13th of November", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19415,7 +19425,7 @@ export const CARDS: SecCard[] = [
     questionText: "What were the two people in the queue behind Raffaele doing?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(They were messing/playing 3 marks)*", marks: 6, contextNote: "The scheme prices this half of the ask separately, under the heading “They were talking loudly and laughing in order to distract him”. Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "They were talking loudly and laughing in order to distract him", marks: 6, contextNote: "Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19555,7 +19565,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Michele say about his mother?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"options":["She is patient","She is generous","She always gives him lifts/ takes him to matches","She makes desserts for the team","His team mates all love her (She (always) helps/supports him 2 marks)"],"perOption":4,"perOptionSteps":[4,3]} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":2,"options":["She is patient","She is generous","She always gives him lifts/ takes him to matches","She makes desserts for the team","His team mates all love her"],"perOption":4,"perOptionSteps":[4,3]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
