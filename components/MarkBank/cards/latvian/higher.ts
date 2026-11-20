@@ -3206,6 +3206,208 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2024 Higher Level — © State Examinations Commission.",
+    id: "lv-2024-hl-i-1-b", topicId: "latvian-0-0", conceptId: "jagaz-milzigi-kalni",
+    section: "I", questionRef: "2024 HL Section I Q1(b)",
+    questionText: "Skaidrojiet vārdus un frāzes! jāgāž milzīgi kalni",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "pārvarēt grūtības, daudz izdarīt, daudz strādāt", marks: 1, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN. The scheme reprints this expression as “gāzt kalnus” and glosses it on the line under it; the paper prints “jāgāž milzīgi kalni”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2024 Higher Level — © State Examinations Commission.",
+    id: "lv-2024-hl-i-2", topicId: "latvian-0-1", conceptId: "kadu-problemu-dziesmu-svetku-organizesana-saskata",
+    section: "I", questionRef: "2024 HL Section I Q2",
+    questionText: "Kādu problēmu Dziesmu svētku organizēšanā saskata Lilija Zobens?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lilija Zobens saskata divas problēmas. Pirmkārt, Dziesmu svētku repertuārs tiek noteikts par vēlu. Par to būtu jāsāk domāt uzreiz pēc iepriekšējiem svētkiem. Otrkārt, organizatoru maiņa. Jaunie organizatori nezina, kādas bija veiksmes un neveiksmes iepriekšējos svētkos, tāpēc organizatoru komandā būtu jābūt kādam, kas ir piedalījies iepriekšējos svētkos.", marks: 5, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2024 Higher Level — © State Examinations Commission.",
+    id: "lv-2024-hl-i-3", topicId: "latvian-0-1", conceptId: "kada-nozime-pec-lilijas-zobens-domam",
+    section: "I", questionRef: "2024 HL Section I Q3",
+    questionText: "Kāda nozīme, pēc Lilijas Zobens domām, ir mūzikas stundu lomai bērna attīstībā un skolas gaitās?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mūzika prasa regulāru darbu un disciplīnu, kas norūda bērnu raksturu un dod izpratni, ka bez smaga darba nebūs labu rezultātu. Mūzika attīsta smadzeņu darbību, kas var palīdzēt tādos priekšmetos kā matemātika un valoda.", marks: 5, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2024 Higher Level — © State Examinations Commission.",
+    id: "lv-2024-hl-i-4", topicId: "latvian-0-1", conceptId: "latvija-tiek-uzskatita-par-zemi-kas",
+    section: "I", questionRef: "2024 HL Section I Q4",
+    questionText: "Latvija tiek uzskatīta par zemi, kas dzied. Kāda ir dziedāšanas nozīme latviešu dzīvē? Diskutējiet par to saistībā ar tekstu un savu pieredzi.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Latviešiem patīk dziedāt un viņi to var darīt dažādās dzīves situācijās. Latvieši sanāk kopā un dzied. Latvieši sāk dziedāt jau skolā vai bērnudārzā, kas rezultējas kora dziedāšanā. Skolēns var rakstīt par savu dziedāšanas pieredzi.", marks: 5, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2024 Higher Level — © State Examinations Commission.",
+    id: "lv-2024-hl-i-5", topicId: "latvian-0-1", conceptId: "raksturojiet-dziesmu-svetki-atspogulojusi-savu-laiku",
+    section: "I", questionRef: "2024 HL Section I Q5",
+    questionText: "Raksturojiet, kā Dziesmu svētki ir atspoguļojuši savu laiku. Kā tie ir palīdzējuši uzturēt latviskumu trimdā?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dziesmu svētkos tiek iekļautas dziesmas, kas ir raksturīgas konkrētam laikam, taču ir arī dziesmas, kas ir vienmēr tiks dziedātas Dziesmu svētkos, stabilas vērtības. Dziesmas un Dziesmu svētki palīdzēja latviešiem uzturēt latviskumu trimdā, jo tā ir latviešu valoda un tradīcijas, kas pastāv blakus mītnes zemes valodai un kultūrai.", marks: 5, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2024 Higher Level — © State Examinations Commission.",
+    id: "lv-2024-hl-i-6", topicId: "latvian-0-1", conceptId: "dziesmu-svetkus-medz-saukt-par-tautas",
+    section: "I", questionRef: "2024 HL Section I Q6",
+    questionText: "Dziesmu svētkus mēdz saukt par tautas lūgšanu. Kā jūs to saprotat? Kā tas ir saistīts ar latviskumu un latvisko idenditāti?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dziedāšana tiek salīdzināta ar lūgšanu. Latvieši sanāk kopā un dzied, ir vienoti, gluži kā kopējā lūgšanā. Dziesmu svētkos tiek dziedātas latviešu tautasdziesmas, kas stiprina latviskumu un palīdz uzturēt latvisko identitāti.", marks: 5, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2024 Higher Level — © State Examinations Commission.",
+    id: "lv-2024-hl-ii", topicId: "latvian-1-0", conceptId: "izsakiet-viedokli-par-apgalvojumu-100-150",
+    section: "II", questionRef: "2024 HL Section II",
+    questionText: "Izsakiet viedokli par apgalvojumu! (100 - 150 vārdu) Latviešiem “dziedāšanas gēns” ir spēcīgāks nekā citām tautām. Kā jūs to saprotat un vai jūs tam piekrītat?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Latvieši dzied kopš bērnības, kad ir dzirdējuši mammu un vecmammu dziedam. Līdz ar to tas ir attīsījis dziedāšanas gēnu viņos.", marks: null, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN. The scheme prints these two paragraphs under the statement, with no mark inside them and no criteria for the part." },
+    { id: "r-2", kind: "point", verbatim: "Skolēns var rakstīt par to, kādās situācijās latvieši dzied, proti, gan priekos, gan bēdās. Ir dažādi pasākumi, kuros latvieši dzied. Latvieši zina tautasdziesmas. Viņi var sanākt kopā un dziedāt. Skolēns var rakstīt par koru tradīciju Latvijā. Mums ir daudz koru, kas ir guvuši starptautiskus panākumus. Skolēns var rakstīt par to, ka vecmāmiņas un mammas bērniem dzied šūpuļdziesmas. Skolēns var rakstīt par savu dziedāšanas pieredzi vai pieredzi draugu lokā. Vai viņa draugi, skolas biedri, radinieki dzied. Kad un kā tas notiek. Vai viņi dzied korī, ansamblī vai televīzijas šovā.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II DAĻA",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2024 Higher Level — © State Examinations Commission.",
+    id: "lv-2024-hl-iii-1", topicId: "latvian-1-0", conceptId: "dziesmu-svetki-unikals-latviesu-kulturas-fenomens",
+    section: "III", questionRef: "2024 HL Section III Q1",
+    questionText: "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) Dziesmu svētki – unikāls latviešu kultūras fenomens.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Skolēns var rakstīt par Dziesmu svētku tradīciju, koru kultūru, tautas tērpiem, tautas dejām, attieksmi pret dziedāšanu un dejošanu. Skolēns var rakstīt par dalību Dziesmu svētkos. Var piedalīties gan kā dalībnieks, gan skatītājs. Dziesmu svētki tiek rīkoti ne tikai Latvijā, bet arī ārpus tās. Skolēns var rakstīt par savu un savu tuvinieku, draugu attieksmi pret dziedāšanu un Dziesmu svētkiem. Skolēns var rakstīt par savu vai savu draugu un radinieku dalību Dziesmu svētkos.", marks: null, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN. The scheme prints this paragraph under the title, with no mark inside it and no criteria for the part: an example, not a checklist. It heads the part “III daļa (30 punkti)”; the paper prints “III daļa (40 punkti)”, and the paper's total stands." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2024 Higher Level — © State Examinations Commission.",
+    id: "lv-2024-hl-iii-2", topicId: "latvian-1-0", conceptId: "muzika-labakais-mierinajums-noskumusam-cilvekam-martins",
+    section: "III", questionRef: "2024 HL Section III Q2",
+    questionText: "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) Mūzika ir labākais mierinājums noskumušam cilvēkam. (Mārtiņš Luters)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Skolēns var rakstīt, kā mūzika var palīdzēt grūtā dzīves brīdī. Kāda mūzika viņu nomierina vai uzlādē. Kādas emocijas mūzika viņā raisa. Kādos brīžos viņš klausās mūziku. Vai viņš klausās mūziku koncertos, radio vai kādā ierīcē. Vai mūzika vieno? Kādas ir mūzikas tradīcijas viņa dzīvē.", marks: null, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN. The scheme prints this paragraph under the title, with no mark inside it and no criteria for the part: an example, not a checklist. It heads the part “III daļa (30 punkti)”; the paper prints “III daļa (40 punkti)”, and the paper's total stands." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2026, level: "higher",
     paperFileid: "LC549ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2026 Higher Level — © State Examinations Commission.",
