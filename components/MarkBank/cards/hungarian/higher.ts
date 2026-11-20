@@ -853,6 +853,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2012 Higher Level — © State Examinations Commission.",
+    id: "hun-2012-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-szoveg-alapjan-kommentalja-alabbiakat-minimum",
+    section: "II", questionRef: "2012 HL Section II Q1",
+    questionText: "A szöveg alapján kommentálja az alábbiakat minimum 100 szóban: „ [A] viszonosság elvét egyformán követi a világ összes népe.” Kommentálja ezt a megállapítást 100 szóban!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100 szóban tisztán, érthetően kifejtett saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “Míg a szabálykövetési hajlamban köztudomásúan vannak eltérések az egyes nemzetek között, a viszonosság elvét egyformán követi a világ összes népe: nemcsak az Egyesült Államokban, hanem a dunántúli falvakban is gyakori, hogy a gazdák a portájuk előtt felügyelet nélküli asztalkákra helyezik a terményeiket, melyeknek ellenértékét kitett befőttesüvegekbe várják”; “A magyarok egyébként korábban jó eredménnyel vizsgáztak a viszonosság terén: az 1956-os forradalom idején két napig maradtak érintetlenek azok a Budapest utcáin álló lőszeres ládák, melyekben az elesettek családtagjainak megsegítésére gyűjtöttek”; “Tavaly nyáron újvilági metropolisok versenyeztek „a legőszintébb város” címért: ehhez felügyelet nélküli standokat állítottak fel több városban, a küzdelmet az italok árának több mint 93%-át kicsengető bostoniak nyerték, de a sereghajtó Chicagóban is a palackok több mint háromnegyedéért fizettek”; “Paul „Bagel man” Feldman vállalkozását a becsületkasszákra alapozza: öt éve úgy fuvarozza péksüteményeit nagyobb irodaházakba, hogy az önkiszolgáló standok mellé állított perselyeket csak a következő árufeltöltéskor üríti. Értékesítési mutatóiból kitűnik, hogy csak minden tizedik süteményét viszik el fizetés nélkül, így a vesztesége kevesebb, mint amennyi költsége egy munkatárs alkalmazásával lenne”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2012 Higher Level — © State Examinations Commission.",
+    id: "hun-2012-hl-iii-1", topicId: "hungarian-1-1", conceptId: "jobb-tisztessegben-szegenyen-elni-mint-tisztessegtelenul",
+    section: "III", questionRef: "2012 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Jobb tisztességben szegényen élni, mint tisztességtelenül, de gazdagon?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2012 Higher Level — © State Examinations Commission.",
+    id: "hun-2012-hl-iii-2", topicId: "hungarian-1-1", conceptId: "modern-tarsadalmunkban-minden-itt-most-koncentral",
+    section: "III", questionRef: "2012 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Modern társadalmunkban minden az „itt és most”-ra koncentrál.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2013, level: "higher",
     paperFileid: "LC551ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2013 Higher Level — © State Examinations Commission.",
