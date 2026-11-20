@@ -4,7 +4,7 @@
 One entry per printed ask; see sl_lib.py for the selector language. Line
 numbers are lines of examiner-reports/dutch/schemes/<year>-hl.md.
 """
-from sl_lib import (R, S, J, L, PL, QP, Run, pre, prerun, PP, SP, PY, RX, PARTP, one, shown, graded, crit,  # noqa: F401
+from sl_lib import (R, S, J, L, PL, PC, QP, Run, pre, prerun, PP, SP, PY, RX, PARTP, one, shown, graded, crit,  # noqa: F401
                     examples, quote, unprinted, part, NoScheme)
 
 
@@ -168,7 +168,15 @@ SPECS[2015] = [
     R('I1e', [one(S(68), PP())]),
     R('I2', [one(S(72), PP())]),
     R('I3', [one(L(78, 79), PP())]),
-    R('I4', [one(L(87, 88, before=' (5 punten)'), PP())]),
+    # The paper underlines the imagery the question asks about (p4, drawn
+    # rules under two runs of words; second reader): named on the stem.
+    R('I4', [one(L(87, 88, before=' (5 punten)'), PP())],
+      stem=lambda d: ('The paper underlines “'
+                      + J(PC(4, 'gewapend met die kennis', after='treft men '),
+                          PC(4, 'vroeger aan, het Franse', before='. Maar')).text(d)
+                      + '” and “'
+                      + J(PC(4, 'liever zit hij', after='in de keuken, '), PC(4, 'dateert', before='.’')).text(d)
+                      + '”.')),
     R('I5', [one(S(90), PP())]),
     R('I6', [one(L(93, 94), PP())]),
     R('II1', [shown(S(n)) for n in range(99, 104)], whole=True),
@@ -186,7 +194,9 @@ NOTHING_2016 = 'The scheme reprints this task and prints nothing under it.'
 SPECS[2016] = [
     R('I1a', [one(S(53), PP())], question=pre(3, '1. Waarnaar verwijzen')),
     R('I1b', [one(S(56), PP())], question=pre(3, '1. Waarnaar verwijzen')),
-    R('I1c', [one(S(60), PP())]),
+    # "de tweede (hier vetgedrukte) dat": the paper sets that "dat" in bold (p3).
+    R('I1c', [one(S(60), PP())],
+      stem=lambda d: 'The paper prints the second “dat” of this sentence in bold.'),
     R('I1d', [one(S(65), PP())]),
     R('I1e', [one(S(68), PP())]),
     R('I2', [shown(S(n, after='-')) for n in (77, 78, 79)], whole=True,
@@ -380,11 +390,67 @@ SPECS[2022] = [
       question=pre(4, 'Schrijf een opstel')),
 ]
 
+# ================================================================ 2023 HL ===
+# Live: Q1(a), (b), (d), (e), Q2, Q3. The scheme letters Q1's expressions in
+# another order from the paper's: its b) answers the paper's (c) 'het'
+# ("Kunstmatige intelligentie", p5), and the live (b) and (d) cards already
+# follow the paper. Q4: nothing printed (R4). Q5 and Q6: the scheme prints how
+# the candidate's own answer is judged, a row at the printed price. Deel 2 and
+# Deel 3: nothing printed under the task (R4).
+SPECS[2023] = [
+    R('I1c', [one(S(153), PP())],
+      question=QP(4, '1. Waarnaar verwijzen', Run('c: ‘het’', 'eigenlijk niet weten'), '(alinea 8)'),
+      note='The scheme letters this expression b) (p5); the paper prints it at (c).'),
+    R('I4', [unprinted('The scheme reprints this question and prints nothing under it.')]),
+    R('I5', [one(L(188, 189), PP())]),
+    R('I6', [one(S(194), PP())]),
+    R('II1', [unprinted('The scheme reprints this task, in slightly different words, and prints nothing '
+                        'under it.')],
+      question=QP(4, 'Kan de ontwikkeling', '‘We moeten meer', 'Wat bedoelt de auteur', 'Geef je eigen visie')),
+    R('III1', [unprinted('The scheme reprints the two titles and prints nothing under them.')],
+      question=QP(4, 'Schrijf een opstel', 'a) De grens')),
+    R('III2', [unprinted('The scheme reprints the two titles and prints nothing under them.')],
+      question=QP(4, 'Schrijf een opstel', 'b) ‘Ook deze')),
+]
+
+# ================================================================ 2024 HL ===
+# Live: Q1(a)-(e), Q2-Q4. Q5 and Q6: the scheme prints how the candidate's own
+# answer is judged and, for Q6, what it may refer to: shown, priced as a whole
+# (10a). Deel 2 and Deel 3: nothing printed under the task (R4).
+SPECS[2024] = [
+    R('I5', [shown(S(134, after='‐')), shown(S(135, after='‐')), shown(L(136, 137, after='‐')),
+             shown(L(138, 139, after='‐'))], whole=True,
+      rownote=quote(L(131, 132), S(133), lead='The scheme prints')),
+    R('I6', [shown(L(152, 153, after='‐ ')), shown(S(154, after='‐ ')), shown(L(155, 156, after='‐ ')),
+             shown(S(157, after='‐ '))], whole=True,
+      rownote=quote(S(149), L(150, 151), lead='The scheme prints')),
+    R('II1', [unprinted('The scheme reprints this task and prints nothing under it.')],
+      question=QP(4, 'Is de selfie-cultuur', Run('‘Het technologische', 'herhalingen op'),
+                  'Wat bedoelt de auteur')),
+    R('III1', [unprinted('The scheme reprints the two titles and prints nothing under them.')],
+      question=pre(4, 'Schrijf een opstel')),
+    R('III2', [unprinted('The scheme reprints the two titles and prints nothing under them.')],
+      question=pre(4, 'Schrijf een opstel')),
+]
+
+# ================================================================ 2025 HL ===
+# Live: Q1-Q6. Deel 2: what the answer may refer to, shown under the paper's 30
+# (10a). Deel 3: nothing printed under the titles (R4).
+SPECS[2025] = [
+    R('II1', [shown(L(182, 184, after='- ')), shown(L(185, 186, after='- ')), shown(L(187, 189, after='- ')),
+              shown(L(190, 191, after='- '))], whole=True,
+      rownote=quote(S(181), lead='The scheme heads its points')),
+    R('III1', [unprinted('The scheme reprints the two titles and prints nothing under them.')],
+      question=pre(4, 'Schrijf een opstel')),
+    R('III2', [unprinted('The scheme reprints the two titles and prints nothing under them.')],
+      question=pre(4, 'Schrijf een opstel')),
+]
+
 # The pages each sitting prints its reading text on. Every Dutch booklet sets
 # its passage on pp2-3 (cover p1, questions from p3 or p4); the census reads
 # pp2-4 for 2010 and p3 alone where the passage opens with an unnumbered
 # title (second reader, 20 Nov; checked on every paper's p2).
-PAGES = {y: (2, 3) for y in list(range(2010, 2023)) + [2026]}
+PAGES = {y: (2, 3) for y in list(range(2010, 2027))}
 
 
 def specs(year):

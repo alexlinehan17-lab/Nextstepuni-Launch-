@@ -293,6 +293,30 @@ JOINER = re.compile(r'\s+(?:of|or|ou|sau|eller|ili|alebo|vagy|tai|või|vai|nebo|
                     re.I)
 
 
+class PaperCut:
+    """A cut of one printed paper line (the line on `page` opening with
+    `opening`) at two printed anchors: words the paper marks (underlines,
+    bold) for a question to point at."""
+    def __init__(self, page, opening, after=None, before=None):
+        self.page, self.opening, self.after, self.before = page, opening, after, before
+
+    def text(self, doc):
+        t = PL(self.page, self.opening).text(doc)
+        if self.after is not None:
+            if self.after not in t:
+                raise ValueError(f'paper p{self.page}: anchor {self.after!r} not in {t!r}')
+            t = t.split(self.after, 1)[1]
+        if self.before is not None:
+            if self.before not in t:
+                raise ValueError(f'paper p{self.page}: anchor {self.before!r} not in {t!r}')
+            t = t.split(self.before, 1)[0]
+        return re.sub(r'\s+', ' ', t).strip()
+
+
+def PC(page, opening, after=None, before=None):
+    return PaperCut(page, opening, after, before)
+
+
 class PaperQuestion:
     """A question cut from the paper's printed lines: each `opening` names
     the line on `page` that opens with it (a pair (page, opening) for a line
@@ -403,9 +427,11 @@ def rule_note(subject, doc, language):
             hits.append((page, text[i:j + 1] if j > i else text[i:]))
     if len(hits) != 1:
         raise ValueError(f'{subject}: the paper prints {len(hits)} answer-language rules: {hits}')
-    page, sentence = hits[0]
+    _page, sentence = hits[0]
+    # No page number: some booklets number their pages one lower than the PDF
+    # (Dutch 2018's cover is unnumbered; second reader, 20 Nov).
     return (f'The examination requires every answer in {LANGUAGE_NAME[subject].upper()}. '
-            f'The paper prints the rule on page {page}: "{sentence}"')
+            f'The paper prints the rule: "{sentence}"')
 
 
 def part_head(P, section):
@@ -479,8 +505,8 @@ def cards(subject, year, specs, level='hl', scheme=True):
                 'rows': [{'id': 'r-1', 'kind': 'criterion', 'verbatim': NO_SCHEME_PUBLISHED,
                           'marks': None, 'contextNote': note}],
                 'noScheme': True,
-                'notes': (f'Read on the rendered paper ({LANE}); the paper prints this ask on page '
-                          f'{ask.page} of the question booklet and prices it "{notation}". The SEC '
+                'notes': (f'Read on the rendered paper ({LANE}); the paper prints this ask on PDF page '
+                          f'{ask.page} of the question paper and prices it "{notation}". The SEC '
                           f'published no marking scheme for this sitting (SOURCES.md: not in the 31 Aug '
                           f'2026 archive listing; live check 18 Nov 2026 = 404).'),
             })
@@ -529,7 +555,7 @@ def cards(subject, year, specs, level='hl', scheme=True):
                 'totalMarks': total,
                 'rows': rows,
                 'notes': (f'Read on the rendered scheme and paper ({LANE}); the paper prints this ask '
-                          f'on page {ask.page} of the question booklet.'
+                          f'on PDF page {ask.page} of the question paper.'
                           + (f' {spec.note}' if spec.note else '')),
             })
         if spec.stem if hasattr(spec, 'stem') else None:

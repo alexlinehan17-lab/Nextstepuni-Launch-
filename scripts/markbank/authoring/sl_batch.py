@@ -145,9 +145,40 @@ def check(subject):
     return 1 if bad else 0
 
 
+def refresh(subject):
+    """Rebuild every card this lane has written (never a live card: only ids in
+    sl_additions.json) from its specs, in place, under the same ids. For a
+    correction found by a second reader after a sitting was committed."""
+    with open(ADDITIONS, encoding='utf-8') as fh:
+        added = json.load(fh).get(subject, {})
+    with open(authored_path(subject), encoding='utf-8') as fh:
+        authored = json.load(fh)
+    mod = importlib.import_module(f'sl_specs_{subject.replace("-", "_")}')
+    rebuilt = {}
+    for year, ids in sorted(added.items()):
+        spec_list = mod.specs(int(year))
+        scheme = not all(isinstance(s, sl_lib.NoScheme) for s in spec_list)
+        built = {c['id']: c for c in sl_lib.cards(subject, int(year), spec_list, 'hl', scheme=scheme)}
+        if set(built) != set(ids):
+            raise ValueError(f'{subject} {year}: specs build {sorted(set(built) ^ set(ids))} apart from the written ids')
+        rebuilt.update(built)
+    changed = 0
+    for i, c in enumerate(authored):
+        if c['id'] in rebuilt:
+            if json.dumps(c, sort_keys=True) != json.dumps(rebuilt[c['id']], sort_keys=True):
+                changed += 1
+            authored[i] = rebuilt[c['id']]
+    with open(authored_path(subject), 'w', encoding='utf-8') as fh:
+        json.dump(authored, fh, ensure_ascii=False, indent=1)
+        fh.write('\n')
+    print(f'{subject}: {len(rebuilt)} lane cards rebuilt, {changed} changed')
+
+
 if __name__ == '__main__':
     cmd, subject = sys.argv[1], sys.argv[2]
     if cmd == 'check':
         sys.exit(check(subject))
+    if cmd == 'refresh':
+        sys.exit(refresh(subject))
     year = int(sys.argv[3])
     {'review': review, 'write': write}[cmd](subject, year)
