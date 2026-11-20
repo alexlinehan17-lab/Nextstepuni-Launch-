@@ -3242,6 +3242,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             {!printedQuestionReplacesText && (audioMaterial && listeningScoredAlone(assessmentCard) ? (
               <>
                 <AudioSourcePlayer source={audioMaterial} />
+                {/* A Music listening question is answered against the listening booklet's
+                    own page (staves, lyric sheets, grids), so its reader stays beside the
+                    recording, where Music showed it before each card became its own
+                    exercise. The language subjects have never shown a reader here. */}
+                {assessmentCard.subjectId === 'music' && sourceReaders}
                 <QuestionText text={assessmentCard.questionChoices ? assessmentCard.questionText.split('\n')[0] : assessmentCard.questionText} />
                 {assessmentCard.questionChoices && <FrenchQuestionChoices key={assessmentCard.id} options={assessmentCard.questionChoices} />}
               </>
