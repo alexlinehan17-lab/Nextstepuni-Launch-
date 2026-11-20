@@ -718,6 +718,216 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2014 Higher Level — © State Examinations Commission.",
+    id: "ron-2014-hl-i-1", topicId: "romanian-0-1", conceptId: "explica-urm-toarele-cuvinte-expresii-scrise",
+    section: "I", questionRef: "2014 HL Section I Q1",
+    questionText: "Explicați următoarele cuvinte și expresii scrise îngroșat în text, folosind sinonime sau perifraze și ținând cont de contextul în care apar:\na) locuri incredibile, aproape nepământene\nb) patrimoniu cultural\nc) a imita\nd) păreri proaspete\ne) indiferența",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Locuri de o frumusețe rară, care îi încântă pe cei ce vin să le vadă ; peisaje care, prin frumusețea lor, ne-ar putea face să ne credem într-o lume de basm.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\"" },
+    { id: "r-2", kind: "point", verbatim: "bogăție spirituală, culturală a unei țări; locurile sau operele care fac parte din aceasta.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "a copia, a face ca ceilalți; a împrumuta de la ceilalți un mod de a fi sau de a face lucrurile; a fi lipsit de originalitate.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "opinii noi, care pot aduce o perspectivă nouă asupra lucrurilor; opinii care nu sunt învechite, depășite, n-au mai fost exprimate de alții înainte și dovedesc că cei care le exprimă au înțeles într-un mod aparte, personal faptul la care se referă.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "nepăsare, lipsă de interes față de ceea ce ne înconjoară; privire superficială asupra lucrurilor; pasivitate, lipsă de implicare în probleme.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2014 Higher Level — © State Examinations Commission.",
+    id: "ron-2014-hl-i-2", topicId: "romanian-0-1", conceptId: "prezenta-cele-dou-imagini-pozitiv-negativ",
+    section: "I", questionRef: "2014 HL Section I Q2",
+    questionText: "Prezentați cele două imagini – pozitivă și negativă – pe care țara noastră le lasă turiștilor străini, așa cum sunt ele redate de autoarea articolului.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Potrivit autoarei, turiștii străini sunt, pe de o parte, atrași de frumusețile țării. Ei își amintesc de locurile magnifice pe care le vizitează, de natura care îi încântă sau de monumentele de arhitectură tipice spațiului românesc. Toate acestea le inspiră liniște și încântare.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Înţelegerea ideilor de fond exprimate în text :”." },
+    { id: "r-2", kind: "point", verbatim: "În același timp, există și o parte negativă în ceea ce văd : frumusețile arhitecturale sunt, de multe ori, lăsate în paragină, fiindcă autoritățile competente nu se ocupă de conservarea lor, iar oamenii par cuprinși de indiferență în fața bogățiilor (nu neapărat materiale, cât spirituale) pe lângă care trec în fiecare zi.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "O proastă organizare administrativă sau socială face ca pe străzi să fie plin de câini maidanezi, de cerșetori, dar și de oameni necinstiți care, prin activitățile pe care le desfășoară, încearcă să profite de pe urma celorlalți, mai ales de pe urma străinilor.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2014 Higher Level — © State Examinations Commission.",
+    id: "ron-2014-hl-i-3", topicId: "romanian-0-1", conceptId: "care-sunt-modalit-ile-prin-care",
+    section: "I", questionRef: "2014 HL Section I Q3",
+    questionText: "Care sunt modalitățile prin care tinerii își pot cunoaște, în prezent, țara?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Prima modalitate prin care tinerii își pot cunoaște țara rămâne școala. Astfel, prin intermediul lecțiilor – de istorie, de geografie, de literatură, în special –, ei pot afla informații prețioase despre locuri deosebite din țara lor, despre istoria acestor locuri, ca și despre evenimente și personalități ale căror nume se leagă de ele.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Identificarea informaţiilor detaliate din text:”." },
+    { id: "r-2", kind: "point", verbatim: "Există, de asemenea, posibilitatea de a-și cunoaște țara prin intermediul unor activități în afara școlii, precum excursii, ateliere de creație pe anumite teme, vizite la muzee. Avantajul acestora este că tinerii elevi sunt implicați direct (nu doar pasiv, ca, de multe ori, în cazul lecțiilor la școală) în descoperirea lucrurilor noi legate de cultura țării lor.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Prin organizarea de dezbateri, elevii pot, de asemenea, să-și formeze o opinie despre aspecte din cultura țării lor, la aceasta contribuind și cunoașterea părerii celorlalți, implicați, ca și ei, în acest proces de cunoaștere și de descoperire.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2014 Higher Level — © State Examinations Commission.",
+    id: "ron-2014-hl-i-4", topicId: "romanian-0-1", conceptId: "autoarea-articolului-apreciaz-rareori-avem-ochi",
+    section: "I", questionRef: "2014 HL Section I Q4",
+    questionText: "Autoarea articolului apreciază că „Rareori avem ochi pentru splendorile lăsate de înaintaşi.“ (paragraful 4). De ce credeți că se întâmplă așa și care este urmarea acestui fapt asupra tinerilor, mai ales? Sunteți de acord cu soluțiile propuse de autoare în continuare?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Oamenii sunt înconjurați de atâtea lucruri urâte, printre care se mișcă în fiecare zi, încât această urâțenia care le împânzește existența a devenit, pentru ei, o stare normală a lucrurilor. Astfel, ei nu mai au puterea de a vedea dincolo de această urâțenie, ceea ce-i face să treacă nepăsători pe lângă frumusețile care există, totuși, aproape de ei.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Înţelegerea profundă a unor idei din text, exprimate mai putin explicit, demonstrând capacitate de gândire analitică şi extrapolarea cunoştinţelor:”." },
+    { id: "r-2", kind: "point", verbatim: "Dacă ei nu mai au puterea de a vedea frumusețile pe lângă care trec, parte din patrimoniul cultural a țării lor, atunci nu vor avea nici convingerea necesară pentru a le transmite tinerilor valori legate de trecutul neamului, de moștenirile lăsate nouă de acesta.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Autoarea este de părere că tinerii au nevoie, pentru a descoperi bogățiile spirituale ale țării, de entuziasmul adulților, care ar trebui să le dezvăluie, cu încântare, patrimoniul țării.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2014 Higher Level — © State Examinations Commission.",
+    id: "ron-2014-hl-i-5", topicId: "romanian-0-1", conceptId: "plecand-acest-text-expune-motivele-pentru",
+    section: "I", questionRef: "2014 HL Section I Q5",
+    questionText: "Plecând de la acest text, expuneți motivele pentru care, în opinia voastră, noi, românii, ne-am putea considera „niște muritori norocoși și bogați“.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "În ceea ce privește resursele naturale ale țării noastre, suntem de invidiat: țara noastră are ieșire la mare, iar Delta Dunării este o splendoare a naturii, adăpostind o floră și o faună unice. Munții poartă încă resurse importante de metale prețioase (aur) sau de sare, dar, din păcate, lipsește o exploatare responsabilă a acestora.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Demonstrarea unei bune înţelegeri a textului în ansamblu şi capacitatea de a explica puncte de vedere personale:”." },
+    { id: "r-2", kind: "point", verbatim: "Cât despre stilul de viață, suntem o țară în care se păstrează traiul sănătos, în mijlocul unor peisaje pe care turiștii străini vin de departe să le vadă și să se bucure de ele.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Pe de altă parte, cultura noastră a dat nume mari, recunoscute mondial, în mai multe domenii de activitate. Ne putem mândri cu înaintași merituoși, dar și cu contemporani valoroși.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Cel mai important, însă, este să conștientizăm faptul că aceste bogății pe care le avem trebuie păstrate cu grijă, trebuie apreciate și ocrotite. Altfel, ele se vor pierde, iar noi, astfel, vom fi pierdut șansa de a rămâne „niște muritori norocoși și bogați“.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2014 Higher Level — © State Examinations Commission.",
+    id: "ron-2014-hl-i-6", topicId: "romanian-0-1", conceptId: "care-crede-atitudinea-care-trebui-aib",
+    section: "I", questionRef: "2014 HL Section I Q6",
+    questionText: "Care credeți că este atitudinea pe care ar trebui să o aibă un cetățean responsabil, pentru a putea crea și păstra „ legătura care se formează“ între el și țara lui?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "În primul rând, orice cetățean al țării ar trebui, pe de o parte, să cunoască și să fie mândru de valorile neamului său, dar, pe de altă parte, să fie conștient și de problemele pe care țara le are și care ar putea avea o înrâurire nefastă asupra valorilor, ducând la degradarea, la pierderea lor.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Buna înţelegere a textului şi a consecinţelor produse de fenomenul descris în el:”." },
+    { id: "r-2", kind: "point", verbatim: "Cetățenii sunt primii răspunzători de soarta bogățiilor țării lor, bogății pentru care alții ne invidiază, în vreme ce noi trecem nepăsători pe lângă ele. Gesturile simple ale fiecăruia duc la conservarea și la punerea în valoare a acestor bogății. Astfel, un cetățean cu putere de decizie poate alege să nu „ascundă“ un monument arhitectural valoros, tradițional, prin construirea unui edificiu modern. În acest fel, cu toții am avea posibilitatea de a ne bucura în continuare de vederea unui lucru frumos, pe care, altfel, am ajunge să îl uităm.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Este important să nu lăsăm mizeria să ne acopere drumurile, căci așa nu vom mai ajunge să vedem frumusețile care răsar la tot pasul.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Cunoașterea și respectarea tradițiilor sunt, de asemenea, importante în crearea unei legături între om și țara lui, căci acestea sunt cele care îi pot da sentimentul apartanenței la un spațiu spiritual.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2014 Higher Level — © State Examinations Commission.",
+    id: "ron-2014-hl-ii-1", topicId: "romanian-1-0", conceptId: "plecand-cuvintele-autoarei-cred-deci-pentru",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "Plecând de la cuvintele autoarei: „Cred, deci, că pentru ca generaţiile viitoare să fie fermecate de minunăţiile ţării, precum sînt străinii, ar trebui ca şi noi, adulţii, să începem să le vedem cu adevărat ca şi cum le-am vedea pentru prima oară. “ (paragraful 8), explicați cum și-ar putea îndeplini adulții acest rol față de tineri. (aproximativ 100 de cuvinte)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Comentarea citatului (în aproximativ 100 de cuvinte), demonstrând înţelegerea de ansamblu a subiectului şi, în special, a scopului cu care autorul a scris acest articol.", marks: 30, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme prints: “La părțile a II-a și a III-a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:”. The scheme prints, as examples, not a checklist: “Pentru întrebările și curiozitățile lor, tinerii se vor adresa, în primul rând, adulților. De aceea, este important ca, înainte de toate, aceștia să fie ei înșiși buni cunoscători ai patrimoniului nostru cultural, încât să le poată oferi tinerilor informații prețioase și prin care să le trezească, totodată, curiozitatea de a descoperi mai multe despre ce începe să-i intereseze.”; “Nu e bine ca adulții să se lase copleșiți de griji, de probleme sau de activități care să nu le lase timp să descopere și să se bucure de ceea ce peisajul românesc le oferă frumos. Dacă ei vor privi în jur cu entuziasm, același entuziasm le va fi inculcat și copiilor lor, care vor deveni, astfel, sensibili la bogățiile – naturale, culturale, arhitecturale – pe care le întâlnesc. Aceasta se poate întâmpla și în urma alegerii unor destinații turistice autohtone, a cărei miză să fie tocmai descoperirea noului, a frumosului, a valorosului național.”; “Totodată, adulții, prin atitudinile, gesturile și obiceiurile lor, pot fi un exemplu în responsabilizarea tinerilor față de patrimoniul natural sau cultural al țării lor; aceștia pot învăța de la adulți cât de importantă este păstrarea bogățiilor spirituale ale neamului, dar numai dacă au la dispoziție un model bun. Altfel, oferindu-le tinerilor modele negative de comportament, adulții îi „împing“ pe aceștia spre adoptarea unor comportamente nesănătoase, distrugătoare în raport cu mediul în care trăiesc.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într-un mod clar – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Coerența răspunsurilor – candidatul folosește textul într-un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Eficiența limbajului – candidatul demonstrează că stăpânește limba destul de bine pentru a-și exprima clar și cursiv ideile și opiniile – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PARTEA A II-A",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2014 Higher Level — © State Examinations Commission.",
+    id: "ron-2014-hl-iii-1", topicId: "romanian-1-1", conceptId: "bog-unui-popor-reg-primul-rand",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "Scrieți un eseu pornind de la una dintre cele două teme propuse mai jos (aproximativ 300 de cuvinte): Bogăția unui popor se regăsește, în primul rând, în valorile sale imateriale.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Compunere de aproximativ 300 de cuvinte, la alegere între două subiecte, scrisă cursiv, urmărind organizarea coerentă a ideilor şi conducând la o concluzie clară.", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme prints: “La părțile a II-a și a III-a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:”. The scheme reprints this title as: “Bogăția unui popor se regăsește, înainte de toate, în valorile sale imateriale.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într-un mod clar – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Coerența răspunsurilor – candidatul folosește textul într-un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Eficiența limbajului – candidatul demonstrează că stăpânește limba destul de bine pentru a-și exprima clar și cursiv ideile și opiniile – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2014 Higher Level — © State Examinations Commission.",
+    id: "ron-2014-hl-iii-2", topicId: "romanian-1-1", conceptId: "chiar-dac-str-batem-lumea-intreag",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "Scrieți un eseu pornind de la una dintre cele două teme propuse mai jos (aproximativ 300 de cuvinte): „Chiar dacă străbatem lumea întreagă pentru a găsi frumosul, trebuie să îl avem în noi, căci, altfel, nu îl vom găsi niciodată.“ – Ralph Waldo Emerson",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Compunere de aproximativ 300 de cuvinte, la alegere între două subiecte, scrisă cursiv, urmărind organizarea coerentă a ideilor şi conducând la o concluzie clară.", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme prints: “La părțile a II-a și a III-a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într-un mod clar – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Coerența răspunsurilor – candidatul folosește textul într-un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Eficiența limbajului – candidatul demonstrează că stăpânește limba destul de bine pentru a-și exprima clar și cursiv ideile și opiniile – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC553ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2021 Higher Level — © State Examinations Commission.",
