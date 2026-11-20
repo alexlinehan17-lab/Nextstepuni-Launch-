@@ -111,8 +111,12 @@ describe('Mathematics exam-topic registry', () => {
       ['mathematics-ordinary', 'Ordinary Level', 'ordinary'],
       ['mathematics-foundation', 'Foundation Level', 'foundation'],
     ]);
-    expect(taxonomy.topics.map(topic => [topic.id, topic.label, topic.sourcePath]))
+    // The 55 captured topics, then NextStepUni's own Higher "Number Systems" heading (19 Nov 2026 ruling: as
+    // Ordinary's and the syllabus's 3.1; the single model files the irrational proofs, surds and plain arithmetic there).
+    expect(taxonomy.topics.slice(0, 55).map(topic => [topic.id, topic.label, topic.sourcePath]))
       .toEqual(referenceTopics.map(topic => [topic.id, topic.label, topic.sourcePath]));
+    expect(taxonomy.topics.slice(55).map(topic => [topic.id, topic.label, topic.level, topic.referenceUnavailable]))
+      .toEqual([['mathematics-higher-number-systems', 'Number Systems', 'higher', true]]);
     expect(mathsReference.totals).toEqual({
       reported: 2946,
       state: 1768,
@@ -121,7 +125,7 @@ describe('Mathematics exam-topic registry', () => {
       sourceLabelConflicts: 0,
     });
     expect(referenceTopics).toHaveLength(55);
-    expect(topicsForSubject('mathematics')).toHaveLength(55);
+    expect(topicsForSubject('mathematics')).toHaveLength(56);
   });
 
   it('bridges every shelf to Mathematics curriculum and preserves every card', () => {
@@ -129,7 +133,7 @@ describe('Mathematics exam-topic registry', () => {
       CURRICULUM.find(subject => subject.id === 'mathematics')!
         .strands.flatMap(strand => strand.subtopics.map(topic => topic.id)),
     );
-    expect(Object.keys(mathsCrosswalk)).toHaveLength(55);
+    expect(Object.keys(mathsCrosswalk)).toHaveLength(56);
     for (const topic of taxonomy.topics) {
       const ids = curriculumNodeIdsForExamTopic(topic.id);
       expect(ids).toEqual(mathsCrosswalk[topic.id as keyof typeof mathsCrosswalk]);
