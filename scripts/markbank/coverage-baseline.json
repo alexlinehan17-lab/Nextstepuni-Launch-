@@ -259,7 +259,7 @@
   },
   "dutch": {
     "cards": 219,
-    "contentHash": "ed1f29892e7d105a",
+    "contentHash": "c80c9e14270a5b01",
     "coveragePct": 100.0,
     "covered": 219,
     "excluded": 0,
@@ -709,7 +709,7 @@
   },
   "romanian": {
     "cards": 63,
-    "contentHash": "52ced47bcf6ed5c9",
+    "contentHash": "eef1aa2d979a2fe3",
     "coveragePct": 35.3,
     "covered": 63,
     "excluded": 13,

@@ -3299,7 +3299,7 @@ export const CARDS: SecCard[] = [
     questionText: "‘Het’ in de zin: ‘Het beïnvloedt ons geweten, onze diepmenselijke behoefte aan erkenning en onze visie op wat een goed leven is.’ (alinea 8)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Technologie", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Technologie", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3310,7 +3310,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\""
     },
   } as SecCard,
   {
@@ -3323,7 +3323,7 @@ export const CARDS: SecCard[] = [
     questionText: "‘dat’ (alinea 11: Dat kan verwarrend zijn en onzeker maken.)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Het uitblijven van een onmiddellijke reactie op ons handelen in het dagdagelijkse leven.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Het uitblijven van een onmiddellijke reactie op ons handelen in het dagdagelijkse leven.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3334,7 +3334,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\""
     },
   } as SecCard,
   {
@@ -3347,7 +3347,7 @@ export const CARDS: SecCard[] = [
     questionText: "Wat betekent het woord ‘vervlogen’ in de zin: ‘Terughoudendheid is inmiddels een begrip uit vervlogen tijden.’ (alinea 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vroegere tijden", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Vroegere tijden", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3358,7 +3358,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\""
     },
   } as SecCard,
   {
@@ -3371,7 +3371,7 @@ export const CARDS: SecCard[] = [
     questionText: "Wat wordt bedoeld met het woord ‘hengelen’ in de volgende zin: ‘Het onbeperkte hengelen voedt als vanzelf het element van competitie, denkt techniekfilosoof Verbeek.’ (alinea 12)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Het voortdurend zoeken naar bevestiging", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Het voortdurend zoeken naar bevestiging", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3382,7 +3382,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\""
     },
   } as SecCard,
   {
@@ -3395,7 +3395,7 @@ export const CARDS: SecCard[] = [
     questionText: "Wat betekent ‘loden last’ in deze zin: ‘Om te kijken wat er maatschappelijk gezien schuilgaat onder ‘de loden last van de likes’’ (alinea 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "De zware last; iets wat moeilijk is om te (ver)dragen", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "De zware last; iets wat moeilijk is om te (ver)dragen", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3406,7 +3406,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\""
     },
   } as SecCard,
   {
@@ -3419,7 +3419,7 @@ export const CARDS: SecCard[] = [
     questionText: "Geef drie voorbeelden uit de tekst waaruit blijkt dat er op verschillende gebieden uit ons leven online concurrentie ontstaat.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "rouw ellende verdriet kinderen moeten leuker zijn hard huilen om dood van publieke figuren leuker feest", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "rouw ellende verdriet kinderen moeten leuker zijn hard huilen om dood van publieke figuren leuker feest", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3430,7 +3430,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\""
     },
   } as SecCard,
   {
@@ -3443,7 +3443,7 @@ export const CARDS: SecCard[] = [
     questionText: "Leg uit waarom -volgens Verbeek- de vrijheid in het liberale tijdperk een flinke schijnvrijheid is.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mensen voegen zich naar hun omgeving om erkenning te krijgen en te weten welke normen er gelden. De vrijheid is bijgevolg niet echt een vrijheid.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Mensen voegen zich naar hun omgeving om erkenning te krijgen en te weten welke normen er gelden. De vrijheid is bijgevolg niet echt een vrijheid.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3454,7 +3454,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\""
     },
   } as SecCard,
   {
@@ -3467,7 +3467,7 @@ export const CARDS: SecCard[] = [
     questionText: "Gebaseerd op de tekst: Waarom is de introductie van de ‘vind ik leuk’-knop mee de aanzet geweest tot de vergelijkings- en competitiecultuur op het internet?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Het antwoord van de kandidaat bevat in elk geval verwijzingen naar de tekst. Het standpunt van de kandidaat dient in elk geval duidelijk te zijn en bevat in elk geval ook minstens één geldig argument.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Het antwoord van de kandidaat bevat in elk geval verwijzingen naar de tekst. Het standpunt van de kandidaat dient in elk geval duidelijk te zijn en bevat in elk geval ook minstens één geldig argument.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3478,7 +3478,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\""
     },
   } as SecCard,
   {
@@ -3491,7 +3491,7 @@ export const CARDS: SecCard[] = [
     questionText: "Bespreek: ‘Terughoudendheid is inmiddels een begrip uit vervlogen tijden. Het publieke podium, eerst op tv daarna op internet, is allang niet meer voorbehouden aan artiesten, politici of deskundigen. De status van de gewone man verschoof van decorstuk naar centerpiece: iedereen kreeg zijn eigen podium.’",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Het antwoord van de kandidaat verwijst naar (onderdelen uit) alinea 6, 9 en 10 en geeft de eigen visie van de kandidaat weer.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Het antwoord van de kandidaat verwijst naar (onderdelen uit) alinea 6, 9 en 10 en geeft de eigen visie van de kandidaat weer.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3502,7 +3502,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2021 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 2: \"Alle antwoorden moeten worden geschreven in het Nederlands.\""
     },
   } as SecCard,
   {
@@ -3565,7 +3565,7 @@ export const CARDS: SecCard[] = [
     questionText: "Waarnaar verwijzen de volgende woorden? ‘ze’ (alinea 1: Nu zijn ze zelf aan de beurt.):",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Millenials", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Millenials", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3575,7 +3575,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -3588,7 +3588,7 @@ export const CARDS: SecCard[] = [
     questionText: "‘dat’ (alinea 3: Dat is online zichtbaar, maar ook bij fysieke demonstraties zoals de klimaatmars.)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "De inzet van generatie Z", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "De inzet van generatie Z", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3598,7 +3598,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -3611,7 +3611,7 @@ export const CARDS: SecCard[] = [
     questionText: "Waarnaar verwijst ‘die’ in het zinsdeel: ‘..houdt het grootste gedeelte zich bezig met de wereld en hoe we die in positieve zin kunnen veranderen.” (alinea 7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Naar de wereld", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Naar de wereld", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3621,7 +3621,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -3634,7 +3634,7 @@ export const CARDS: SecCard[] = [
     questionText: "Wat betekent ‘op één hoop gooien’ in de zin: ‘Ik word zo moe van boomers die millennials en Gen Z op één hoop gooien’. (alinea 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Als dezelfde groep aanzien", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Als dezelfde groep aanzien", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3644,7 +3644,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -3657,7 +3657,7 @@ export const CARDS: SecCard[] = [
     questionText: "Wat betekent ‘inhaalslag’ in deze zin: “Er werd lang gedacht dat millennials het grootste platform hadden, maar wij zijn nu een inhaalslag aan het maken. (alinea 15) Met platform wordt bedoeld: de meeste invloed",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Terrein winnen; de achterstand inhalen", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Terrein winnen; de achterstand inhalen", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3667,7 +3667,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -3680,7 +3680,7 @@ export const CARDS: SecCard[] = [
     questionText: "Geef drie voorbeelden van zaken waaraan Pippi de Nijs zich ergert. Leg ook uit waarom ze daardoor geërgerd is.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ze hekelt millennials die te pas en te onpas refereren aan de jaren negentig (‘alsof die zo bijzonder waren’), aan kattenfilmpjes en aan Harry Potter.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ze hekelt millennials die te pas en te onpas refereren aan de jaren negentig (‘alsof die zo bijzonder waren’), aan kattenfilmpjes en aan Harry Potter.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3690,7 +3690,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -3703,7 +3703,7 @@ export const CARDS: SecCard[] = [
     questionText: "Leg uit hoe – volgens de tekst – de opvoeding van millennials er mee toe leidt dat ze soms conflicten op de werkvloer ondervinden. Geef ook minstens één voorbeeld van zo’n conflict.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ouders voeden hun kinderen anders op dan dat hun eigen ouders dat hebben gedaan. De ouders van de millennials gaven hun kinderen mee: geef vorm aan je eigen leven. Dat zijn ze gaan doen, maar ze krijgen problemen wanneer ze gaan werken en in een vergrijsde organisatie terechtkomen. Ze verliezen hun handelingsvrijheid en creativiteit.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ouders voeden hun kinderen anders op dan dat hun eigen ouders dat hebben gedaan. De ouders van de millennials gaven hun kinderen mee: geef vorm aan je eigen leven. Dat zijn ze gaan doen, maar ze krijgen problemen wanneer ze gaan werken en in een vergrijsde organisatie terechtkomen. Ze verliezen hun handelingsvrijheid en creativiteit.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3713,7 +3713,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -3726,7 +3726,7 @@ export const CARDS: SecCard[] = [
     questionText: "Bespreek waarom de uitspraak ““Papa, mama, jullie moeten met elkaar gaan praten, want zo gaat het niet goed.” (alinea 14) typerend is voor Generatie Z.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "De uitspraak is typerend voor Generatie Z omdat ze uit de mond komt van een achtjarig meisje die niet zelf uitspraken doet over haar ouders maar ook daar haar ouders zelf ernstig wordt genomen.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "De uitspraak is typerend voor Generatie Z omdat ze uit de mond komt van een achtjarig meisje die niet zelf uitspraken doet over haar ouders maar ook daar haar ouders zelf ernstig wordt genomen.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3736,7 +3736,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -3749,7 +3749,7 @@ export const CARDS: SecCard[] = [
     questionText: "Gebaseerd op de tekst: Wat zijn volgens de vertegenwoordigers van Generatie Z de grootste verschillen in levensvisie en handelswijze tussen Generatie Z en de millennials?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Generatie Z zegt zich meer bezig te houden met de ‘ernstige problemen’ in de wereld zoals klimaatverandering, gelijkheid en feminisme. Volgens hen houden millennials zich bezig met veel trivialere zaken en vergroten ze vanzelfsprekend dingen als koken. Generatie Z is ook actiever aanwezig op zowel social media als op fysieke bijeenkomsten om die problemen aan te kaarten.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Generatie Z zegt zich meer bezig te houden met de ‘ernstige problemen’ in de wereld zoals klimaatverandering, gelijkheid en feminisme. Volgens hen houden millennials zich bezig met veel trivialere zaken en vergroten ze vanzelfsprekend dingen als koken. Generatie Z is ook actiever aanwezig op zowel social media als op fysieke bijeenkomsten om die problemen aan te kaarten.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3759,7 +3759,7 @@ export const CARDS: SecCard[] = [
                 4
           ],
           "attribution": "SEC Dutch 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -3822,7 +3822,7 @@ export const CARDS: SecCard[] = [
     questionText: "‘dat’ in de zin (‘dat’ verwijst hier naar een deel uit een zin; benoem dat deel) : ‘Maar is dat wel mogelijk? (alinea 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Dat de chatbot zelfbewust is", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Dat de chatbot zelfbewust is", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3832,7 +3832,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -3845,7 +3845,7 @@ export const CARDS: SecCard[] = [
     questionText: "Wat wordt bedoeld met de uitdrukking ‘voor de gek houden’ in de volgende zin: ‘Over LaMDA wordt bijvoorbeeld gezegd dat het programma ons manipuleert, met ons praat, ons voor de gek houdt of iets leert – allemaal termen die suggereren dat we er iemand “achter” deze handelingen zit.’ (alinea 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Iemand bedriegen; iets wijs maken", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Iemand bedriegen; iets wijs maken", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3855,7 +3855,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -3868,7 +3868,7 @@ export const CARDS: SecCard[] = [
     questionText: "Wat betekent ‘De aard’ in: ‘De aard van het lichaam doet ertoe’ (alinea 10)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "De soort van; de manier waarop het gebouwd is", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "De soort van; de manier waarop het gebouwd is", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3878,7 +3878,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -3891,7 +3891,7 @@ export const CARDS: SecCard[] = [
     questionText: "Wat betekent ‘een ethisch appel’ in deze zin: ‘Het apparaat oefent dus een enorme invloed uit op Lemoine, die LaMDA’s vragen als een ethisch appel ervaart: hij móét deze persoon helpen.’ (alinea 13)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Dat er beroep wordt gedaan op wat Lemoine aanvoelt als iets wat moet van nature uit; de morele verplichting om te helpen.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Dat er beroep wordt gedaan op wat Lemoine aanvoelt als iets wat moet van nature uit; de morele verplichting om te helpen.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3901,7 +3901,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -3914,7 +3914,7 @@ export const CARDS: SecCard[] = [
     questionText: "Geef drie redenen waarom volgens Haselager bewustzijn zoveel meer is dan intelligentie.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Maar bewustzijn is zo veel meer dan intelligentie: bewustzijn betekent dat je dingen ervaart, dat je je verdrietig en blij kunt voelen, dat je pijn kunt lijden en honger en dorst kan hebben. Voor dat alles heb je een lichaam nodig dat gesitueerd is in de wereld en dat zichzelf handhaaft door middel van metabolische processen.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Maar bewustzijn is zo veel meer dan intelligentie: bewustzijn betekent dat je dingen ervaart, dat je je verdrietig en blij kunt voelen, dat je pijn kunt lijden en honger en dorst kan hebben. Voor dat alles heb je een lichaam nodig dat gesitueerd is in de wereld en dat zichzelf handhaaft door middel van metabolische processen.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3924,7 +3924,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -3937,7 +3937,7 @@ export const CARDS: SecCard[] = [
     questionText: "Leg uit waarom de terminologie die we gebruiken om over een computer te praten die zelf taal genereert sommigen laat denken dat die computer bewustzijn heeft.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Wij mensen hebben een sterke neiging om menselijke eigenschappen toe te schrijven aan alles wat maar enigszins op ons lijkt. Omdat die computer zelf ‘praat zoals wij’ zijn we geneigd die computer als gelijkaardig te zien.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Wij mensen hebben een sterke neiging om menselijke eigenschappen toe te schrijven aan alles wat maar enigszins op ons lijkt. Omdat die computer zelf ‘praat zoals wij’ zijn we geneigd die computer als gelijkaardig te zien.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3947,7 +3947,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -4106,7 +4106,7 @@ export const CARDS: SecCard[] = [
     questionText: "die in de zin: “Tijdens de coronacrisis lijkt die trend te zijn versterkt, omdat mensen bij Zoom-sessies vaak naar hun eigen beeltenis zaten te kijken, wat allerlei onzekerheden over hun uiterlijk naar boven haalde – al was het maar omdat bijvoorbeeld je neus op een scherm veel groter lijkt dan die in werkelijkheid is.” (alinea 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Naar de neus", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Naar de neus", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4116,7 +4116,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -4129,7 +4129,7 @@ export const CARDS: SecCard[] = [
     questionText: "dat in de zin: Natuurlijk is het vaak zo dat mijn uiterlijk pas betekenis krijgt door de ogen van de ander, maar dat kan volgens mij alleen in een meer intieme verhouding dan bij sociale media het geval is. (alinea 7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Dat het uiterlijk betekenis krijgt door de ogen van de ander", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Dat het uiterlijk betekenis krijgt door de ogen van de ander", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4139,7 +4139,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -4152,7 +4152,7 @@ export const CARDS: SecCard[] = [
     questionText: "potentieel in de zin: “Iedere porie en oneffenheid is te zien op de digitale foto en vormt zo een potentieel probleem dat moet worden opgelost,” verzuchtte plastisch chirurg dr. Ali Pirayesh afgelopen zaterdag in Trouw. (alinea 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "mogelijk, iets wat een probleem kan worden maar het nog niet is", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "mogelijk, iets wat een probleem kan worden maar het nog niet is", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4162,7 +4162,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -4175,7 +4175,7 @@ export const CARDS: SecCard[] = [
     questionText: "dubieuze in de zin: Hoe kan het dan dat met name jonge vrouwen door een eindeloze gang met selfies dwalen, op zoek naar het perfecte gezicht - perfect naar hele dubieuze maatstaven? (alinea 5)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "twijfelachtige", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "twijfelachtige", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4185,7 +4185,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -4198,7 +4198,7 @@ export const CARDS: SecCard[] = [
     questionText: "‘springen in de houding’ in de zin: ‘Kinderen jonger dan twee jaar, kinderen die nog ‘ik’ moeten leren zeggen, springen in de houding en trekken een gezichtje als papa of mama de smartphone tevoorschijn haalt.’ (alinea 13)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "De juiste of te verwachten houding aannemen", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "De juiste of te verwachten houding aannemen", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4208,7 +4208,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -4221,7 +4221,7 @@ export const CARDS: SecCard[] = [
     questionText: "Geef drie redenen waarom het volgens van Brederode verbazingwekkend is dat er een nieuw kunstmatig schoonheidsideaal is ontstaan.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "“Eigenlijk verbaast het me dat er zo’n nieuw kunstmatig schoonheidsideaal is ontstaan”, reageert filosoof en schrijver Désanne van Brederode. “In mijn jeugd waren er zorgen over graatmagere fotomodellen, en vervolgens kwamen er reclamecampagnes met vrouwen van allerlei leeftijden, soorten en maten. Je zou dus verwachten dat ons bewustzijn van authenticiteit en emancipatie is toegenomen.” “Hoe kan het dan dat met name jonge vrouwen door een eindeloze gang met selfies dwalen, op zoek naar het perfecte gezicht ‐ perfect naar hele dubieuze maatstaven? Het is onmogelijk om je eigen uiterlijk objectief te beoordelen, maar hun streven lijkt te zijn om dat uiterlijk zoveel mogelijk door de ogen van een potentieel publiek te beoordelen.”", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "“Eigenlijk verbaast het me dat er zo’n nieuw kunstmatig schoonheidsideaal is ontstaan”, reageert filosoof en schrijver Désanne van Brederode. “In mijn jeugd waren er zorgen over graatmagere fotomodellen, en vervolgens kwamen er reclamecampagnes met vrouwen van allerlei leeftijden, soorten en maten. Je zou dus verwachten dat ons bewustzijn van authenticiteit en emancipatie is toegenomen.” “Hoe kan het dan dat met name jonge vrouwen door een eindeloze gang met selfies dwalen, op zoek naar het perfecte gezicht ‐ perfect naar hele dubieuze maatstaven? Het is onmogelijk om je eigen uiterlijk objectief te beoordelen, maar hun streven lijkt te zijn om dat uiterlijk zoveel mogelijk door de ogen van een potentieel publiek te beoordelen.”", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4231,7 +4231,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -4244,7 +4244,7 @@ export const CARDS: SecCard[] = [
     questionText: "Leg uit hoe de bedoelingen van Rembrandt en Van Gogh verschillen van de bedoelingen die mensen hebben wanneer ze een selfie maken.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "“Schilders als Rembrandt en Van Gogh waren zeker niet met hun uiterlijke schoonheid bezig als ze zelfportretten maakten, het lijkt alsof ze onbedoeld hun innerlijk vingen in die portretten. Als we naar die schilderijen kijken, hebben we het idee dat we nog steeds contact met hen kunnen maken. Als je een selfie maakt ben je helemaal niet uit op dat soort contact, omdat je helemaal niet bezig bent met het innerlijk. Op een selfie drukt een gezicht niet langer uit wat iemand van binnen beleeft, het is een ding op zich geworden, een soort kneedbare klei. Dat is volgens mij geen co‐evolutie, maar devolutie, een teruggang in ons bewustzijn.”", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "“Schilders als Rembrandt en Van Gogh waren zeker niet met hun uiterlijke schoonheid bezig als ze zelfportretten maakten, het lijkt alsof ze onbedoeld hun innerlijk vingen in die portretten. Als we naar die schilderijen kijken, hebben we het idee dat we nog steeds contact met hen kunnen maken. Als je een selfie maakt ben je helemaal niet uit op dat soort contact, omdat je helemaal niet bezig bent met het innerlijk. Op een selfie drukt een gezicht niet langer uit wat iemand van binnen beleeft, het is een ding op zich geworden, een soort kneedbare klei. Dat is volgens mij geen co‐evolutie, maar devolutie, een teruggang in ons bewustzijn.”", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4254,7 +4254,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -4267,7 +4267,7 @@ export const CARDS: SecCard[] = [
     questionText: "Gebaseerd op de tekst: Waarom vindt De Mul dat de ontwikkelingen van nieuwe media niet altijd even onschuldig zijn dan ze er in eerste instantie uitzien? Wat vind jij van zijn beweringen?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "De Mul: “Natuurlijk moeten we ons bij elk nieuw medium bewust blijven van de specifieke valkuilen: zo’n Instagram‐filter leek een paar jaar geleden nog een speelse tool, maar inmiddels kun je constateren dat de effecten niet zo onschuldig zijn. Het technologische evenbeeld, dat uitdrukking geeft aan een ideaal ik, kan door het effect van vele herhalingen op een gegeven moment échter lijken dan het spiegelbeeld in je badkamer. En dat verklaart de gang naar de plastisch chirurg, een wens om die twee spiegelbeelden samen te laten vallen.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "De Mul: “Natuurlijk moeten we ons bij elk nieuw medium bewust blijven van de specifieke valkuilen: zo’n Instagram‐filter leek een paar jaar geleden nog een speelse tool, maar inmiddels kun je constateren dat de effecten niet zo onschuldig zijn. Het technologische evenbeeld, dat uitdrukking geeft aan een ideaal ik, kan door het effect van vele herhalingen op een gegeven moment échter lijken dan het spiegelbeeld in je badkamer. En dat verklaart de gang naar de plastisch chirurg, een wens om die twee spiegelbeelden samen te laten vallen.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4277,7 +4277,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
     },
   } as SecCard,
   {
@@ -4394,7 +4394,7 @@ export const CARDS: SecCard[] = [
     questionText: "\"maatschappelijk werk\" in de zin: \"Vervolgens kreeg ze bericht dat maatschappelijk werk zou onderzoeken welke maatregelen ze had genomen om de veiligheid van haar kind te garanderen.\" (alinea 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Maatschappelijk werk verwijst hier naar een overheidsdienst of organisatie die mensen helpt bij sociale, persoonlijke of gezinsproblemen. In deze context onderzoekt het of de ouder voldoende zorg heeft gedragen voor de veiligheid van het kind.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Maatschappelijk werk verwijst hier naar een overheidsdienst of organisatie die mensen helpt bij sociale, persoonlijke of gezinsproblemen. In deze context onderzoekt het of de ouder voldoende zorg heeft gedragen voor de veiligheid van het kind.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4404,7 +4404,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\""
     },
   } as SecCard,
   {
@@ -4417,7 +4417,7 @@ export const CARDS: SecCard[] = [
     questionText: "\"risicomijdende samenleving\" in de zin: \"Dit hangt samen met een bredere tendens van een risicomijdende samenleving, maar je ziet er ook in terug dat we vinden dat jongeren hier niet zelf over kunnen beslissen op die leeftijd.\" (alinea 12)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Een risicomijdende samenleving is een maatschappij die risico’s zoveel mogelijk probeert te vermijden, bijvoorbeeld door regelgeving of het vermijden van gevaarlijke situaties, vaak uit een sterke behoefte aan veiligheid en controle.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Een risicomijdende samenleving is een maatschappij die risico’s zoveel mogelijk probeert te vermijden, bijvoorbeeld door regelgeving of het vermijden van gevaarlijke situaties, vaak uit een sterke behoefte aan veiligheid en controle.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4427,7 +4427,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\""
     },
   } as SecCard,
   {
@@ -4440,7 +4440,7 @@ export const CARDS: SecCard[] = [
     questionText: "\"technologische ontwikkelingen\" in de zin: \"Het is het gevolg van technologische ontwikkelingen, maar daaronder ligt een mensbeeld dat kinderen dit kennelijk nodig hebben.\" (alinea 13)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Technologische ontwikkelingen verwijzen hier naar innovaties en vooruitgang in technologie, zoals digitale platforms (bijvoorbeeld Magister) die het mogelijk maken om gegevens real-time te volgen en te monitoren.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Technologische ontwikkelingen verwijzen hier naar innovaties en vooruitgang in technologie, zoals digitale platforms (bijvoorbeeld Magister) die het mogelijk maken om gegevens real-time te volgen en te monitoren.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4450,7 +4450,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\""
     },
   } as SecCard,
   {
@@ -4463,7 +4463,7 @@ export const CARDS: SecCard[] = [
     questionText: "\"de psychologische zijwieltjes” in de zin: \"De psychologische zijwieltjes moeten er op een gegeven moment af.\" (alinea 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Deze uitdrukking betekent dat kinderen op een gegeven moment zonder hulp of ondersteuning van hun ouders moeten leren functioneren, vergelijkbaar met leren fietsen zonder zijwieltjes. Het gaat om zelfstandigheid ontwikkelen.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Deze uitdrukking betekent dat kinderen op een gegeven moment zonder hulp of ondersteuning van hun ouders moeten leren functioneren, vergelijkbaar met leren fietsen zonder zijwieltjes. Het gaat om zelfstandigheid ontwikkelen.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4473,7 +4473,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\""
     },
   } as SecCard,
   {
@@ -4486,7 +4486,7 @@ export const CARDS: SecCard[] = [
     questionText: "\"alles in de gaten houden\" in de zin: \"Ze houden alles in de gaten (helikopterouders) of poetsen alle problemen weg (curlingouders).\" (alinea 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "\"Alles in de gaten houden\" betekent dat iemand voortdurend controleert of toezicht houdt op alles wat er gebeurt. In deze context verwijst het naar ouders die overmatig toezicht houden op hun kinderen.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "\"Alles in de gaten houden\" betekent dat iemand voortdurend controleert of toezicht houdt op alles wat er gebeurt. In deze context verwijst het naar ouders die overmatig toezicht houden op hun kinderen.", marks: 1, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4496,7 +4496,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\""
     },
   } as SecCard,
   {
@@ -4509,7 +4509,7 @@ export const CARDS: SecCard[] = [
     questionText: "Wat betekent de term \"curlingouders\" zoals die in de tekst wordt gebruikt?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Curlingouders zijn ouders die de weg van hun kinderen volledig vrijmaken van obstakels, zodat hun kinderen nergens tegenaan lopen. Dit betekent dat ze problemen weghalen voordat het kind er zelf mee geconfronteerd wordt.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Curlingouders zijn ouders die de weg van hun kinderen volledig vrijmaken van obstakels, zodat hun kinderen nergens tegenaan lopen. Dit betekent dat ze problemen weghalen voordat het kind er zelf mee geconfronteerd wordt.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4519,7 +4519,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\""
     },
   } as SecCard,
   {
@@ -4532,7 +4532,7 @@ export const CARDS: SecCard[] = [
     questionText: "Waarom voelen ouders volgens het artikel meer druk om \"perfect\" te zijn in hun opvoeding dan in eerdere generaties?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ouders voelen meer druk door maatschappelijke verwachtingen, de overvloed aan informatie over opvoeding, en het vergelijken met andere ouders op sociale media. Hoewel ouders tegenwoordig beter geïnformeerd zijn en meer betrokkenheid tonen, leidt deze combinatie van informatie en vergelijking tot onzekerheid over hun eigen opvoedingskwaliteiten.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Ouders voelen meer druk door maatschappelijke verwachtingen, de overvloed aan informatie over opvoeding, en het vergelijken met andere ouders op sociale media. Hoewel ouders tegenwoordig beter geïnformeerd zijn en meer betrokkenheid tonen, leidt deze combinatie van informatie en vergelijking tot onzekerheid over hun eigen opvoedingskwaliteiten.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4542,7 +4542,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\""
     },
   } as SecCard,
   {
@@ -4555,7 +4555,7 @@ export const CARDS: SecCard[] = [
     questionText: "Waarom is het volgens de tekst zo dat ouders minder zeker zijn over de opvoeding van hun kinderen dan vroeger? Baseer je antwoord op de tekst en op je eigen standpunt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Er zijn veranderingen in de maatschappij, zoals de enorme hoeveelheid aan informatie over opvoeden en het vergelijken met andere ouders op sociale media. Dit geeft ouders stress. Uit studies blijkt dat ouders vandaag meer twijfelen aan hun aanpak, ook al zijn ze meer betrokken dan vroeger. Dit komt door de overvloed aan opvoedinformatie, sociale vergelijking en maatschappelijke druk. Bijvoorbeeld: Er zijn veranderingen in de maatschappij, zoals de enorme hoeveelheid informatie over ouderschap en de vergelijking met andere ouders op sociale media. Dit veroorzaakt stress bij ouders. Ouders kunnen het gevoel hebben dat ze te weinig tijd hebben voor hun kinderen vanwege de eisen van hun werkende leven. Kinderen worden tegenwoordig geconfronteerd met uitdagingen en bedreigingen die ouders zelf misschien niet hebben ervaren en waar ze misschien niet goed mee om kunnen gaan. Kinderen kunnen tegenwoordig hun eigen ouders gemakkelijker vergelijken met anderen vanwege de gemakkelijke toegang tot socialemediaplatforms. Dit kan ouders zelfs binnen hun eigen gezin onzeker maken.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Er zijn veranderingen in de maatschappij, zoals de enorme hoeveelheid aan informatie over opvoeden en het vergelijken met andere ouders op sociale media. Dit geeft ouders stress. Uit studies blijkt dat ouders vandaag meer twijfelen aan hun aanpak, ook al zijn ze meer betrokken dan vroeger. Dit komt door de overvloed aan opvoedinformatie, sociale vergelijking en maatschappelijke druk. Bijvoorbeeld: Er zijn veranderingen in de maatschappij, zoals de enorme hoeveelheid informatie over ouderschap en de vergelijking met andere ouders op sociale media. Dit veroorzaakt stress bij ouders. Ouders kunnen het gevoel hebben dat ze te weinig tijd hebben voor hun kinderen vanwege de eisen van hun werkende leven. Kinderen worden tegenwoordig geconfronteerd met uitdagingen en bedreigingen die ouders zelf misschien niet hebben ervaren en waar ze misschien niet goed mee om kunnen gaan. Kinderen kunnen tegenwoordig hun eigen ouders gemakkelijker vergelijken met anderen vanwege de gemakkelijke toegang tot socialemediaplatforms. Dit kan ouders zelfs binnen hun eigen gezin onzeker maken.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4565,7 +4565,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\""
     },
   } as SecCard,
   {
@@ -4578,7 +4578,7 @@ export const CARDS: SecCard[] = [
     questionText: "‘We zijn adolescenten steeds meer gaan beschouwen als kinderen in plaats van als bijna- volwassenen die nog wat ondersteuning nodig hebben’, zegt Loes Keijsers, hoogleraar pedagogiek in Rotterdam. Ben je het eens of oneens met deze stelling? Ondersteun je mening met argumenten uit de tekst en eigen ervaringen.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "De tekst suggereert dat adolescenten vaker als kinderen worden gezien door veranderingen in hoe jongeren worden gedefinieerd (bijvoorbeeld het verhogen van de leeftijdsgrenzen voor jongeren). Ook zien we dat regelgeving, zoals de alcoholleeftijd en de helmplicht, jongvolwassenen meer beschermt dan voorheen. Deze veranderingen erop wijzen erop dat jongeren minder autonomie krijgen. Dit kan voordelen hebben op het gebied van veiligheid, maar het beperkt hen in hun groei naar volwassenheid. Veel jongeren lijken hierdoor later zelfredzaam te worden dan vroeger. Bijvoorbeeld: Mee eens: Verhoging van de leeftijdsgrens voor alcohol Wetgeving over het dragen van een helm Er heerst een opvatting dat de voortgang en het gedrag van leerlingen op school dagelijks moeten worden gemonitord door online volgsystemen zoals Magister; voorheen werden deze zaken alleen besproken tijdens vergaderingen tussen leerkrachten onderling en tussen ouders en leerkrachten. Mee oneens: Jongeren hebben veel meer vrijheid om zelf verantwoordelijkheid te nemen: Jongeren mogen tot laat in de nacht feesten, terwijl er vroeger meestal een avondklok om middernacht gold. Ze kunnen ook samen op vakantie gaan na schooltijd. Ze hebben veel meer keuzevrijheid over de studie die ze volgen of het soort werk dat ze kiezen. Ze kunnen er ook voor kiezen om na de middelbare school een tussenjaar te nemen.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "De tekst suggereert dat adolescenten vaker als kinderen worden gezien door veranderingen in hoe jongeren worden gedefinieerd (bijvoorbeeld het verhogen van de leeftijdsgrenzen voor jongeren). Ook zien we dat regelgeving, zoals de alcoholleeftijd en de helmplicht, jongvolwassenen meer beschermt dan voorheen. Deze veranderingen erop wijzen erop dat jongeren minder autonomie krijgen. Dit kan voordelen hebben op het gebied van veiligheid, maar het beperkt hen in hun groei naar volwassenheid. Veel jongeren lijken hierdoor later zelfredzaam te worden dan vroeger. Bijvoorbeeld: Mee eens: Verhoging van de leeftijdsgrens voor alcohol Wetgeving over het dragen van een helm Er heerst een opvatting dat de voortgang en het gedrag van leerlingen op school dagelijks moeten worden gemonitord door online volgsystemen zoals Magister; voorheen werden deze zaken alleen besproken tijdens vergaderingen tussen leerkrachten onderling en tussen ouders en leerkrachten. Mee oneens: Jongeren hebben veel meer vrijheid om zelf verantwoordelijkheid te nemen: Jongeren mogen tot laat in de nacht feesten, terwijl er vroeger meestal een avondklok om middernacht gold. Ze kunnen ook samen op vakantie gaan na schooltijd. Ze hebben veel meer keuzevrijheid over de studie die ze volgen of het soort werk dat ze kiezen. Ze kunnen er ook voor kiezen om na de middelbare school een tussenjaar te nemen.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4588,7 +4588,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\""
     },
   } as SecCard,
   {
@@ -4601,7 +4601,7 @@ export const CARDS: SecCard[] = [
     questionText: "‘Eerst golden mensen tot 21 jaar als jongeren, nu is dat opgerekt tot 25 of 26 jaar.’ (alinea 11) Met verwijzing naar de tekst en gebaseerd op je eigen ervaring, bespreek waarom deze verandering tot stand is gekomen?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Veel jongeren wonen nog bij hun ouders in hun midden twintig of zelfs later. Ze studeren langer. Het is moeilijker om werk te vinden. Ze krijgen op latere leeftijd kinderen.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\"" },
+    { id: "r-1", kind: "point", verbatim: "Veel jongeren wonen nog bij hun ouders in hun midden twintig of zelfs later. Ze studeren langer. Het is moeilijker om werk te vinden. Ze krijgen op latere leeftijd kinderen.", marks: 5, contextNote: "The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4611,7 +4611,7 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Dutch 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on its own first page: \"Alle antwoorden moeten in het Nederlands gegeven worden.\""
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DUTCH. The paper prints the rule on page 3: \"Alle antwoorden moeten in het Nederlands worden gegeven.\""
     },
   } as SecCard,
   {
