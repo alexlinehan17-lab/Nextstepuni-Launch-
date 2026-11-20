@@ -55,6 +55,26 @@ SUBJECT_NAME = {**LANGUAGE_NAME, **lt_topics.LANGUAGE}
 from pl_listen_lib import (S, J, PL, one, menu, shown, graded,      # noqa: E402,F401
                            components, Graded, Shown, One, Menu, Sel, Join)
 from pl_listen_specs import build_rows                               # noqa: E402
+import pl_listen_specs as _pls                                      # noqa: E402
+
+_one_line_percent = _pls.percent_of
+
+
+def _percent_of(doc, n):
+    """pl_listen_lib.percent_of, also reading a percentage the SEC wrapped:
+    "... – 30" ending one scheme line and "%." opening the next (Czech 2015
+    criterion 3). Only that shape; anything else still refuses."""
+    try:
+        return _one_line_percent(doc, n)
+    except ValueError:
+        line, prev = doc['scheme'][n - 1], doc['scheme'][n - 2] if n > 1 else ''
+        m = re.search(r'(\d{1,3})\s*$', prev)
+        if re.match(r'\s*%', line) and m:
+            return int(m.group(1))
+        raise
+
+
+_pls.percent_of = _percent_of   # the graded-row builder this lane uses (sl_lib only)
 
 UNPRINTED_ANSWER = 'The scheme prints no answer for this part.'
 NO_SCHEME_PUBLISHED = 'The SEC published no marking scheme for this paper.'
@@ -92,7 +112,10 @@ def scheme_lines(subject, year, level='hl'):
 
 
 # ----------------------------------------------------------------- prices ---
-MARK_WORD = eu_paper.MARK_WORD
+# eu_paper's mark words, with the Czech and Latvian forms the lt papers print
+# ("[5 bodů]", "(5 punktu)", "1 punkts"), each before its shorter stem so the
+# alternation does not stop at "bod" / "punkt" (Czech drafter, 20 Nov).
+MARK_WORD = r'bodů|punktu|punkts|' + eu_paper.MARK_WORD
 # The papers' price words plus the bare "p" some sittings print ("(1 p)",
 # "(5 p)", Dutch 2017), which the census's own tariff reader does not take.
 PRICE_WORD = MARK_WORD + r'|p\.?'
