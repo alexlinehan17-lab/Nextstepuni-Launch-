@@ -9775,7 +9775,7 @@
   "questionRef": "2026 HL Section I Q1",
   "questionText": "Vysvětlete vlastními slovy: (a) paradoxně (b) „sociální sítě“ (c) média (d) „velmi tvrdá škola“ (e) konzervativní",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 5,
   "rows": [
@@ -9783,35 +9783,35 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "rozporně, protismyslně, zdánlivě nemožné. Paradox znamená tvrzení, které spojuje pojmy nebo výroky v běžném slova smyslu si odporující v neočekávaný, překvapivý, ale smysluplný celek.",
-    "marks": null,
+    "marks": 1,
     "contextNote": "The scheme prints this as the meaning of \"„paradoxně“\". The examination prints this question in Czech and it is answered in CZECH."
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "sociální sítě jsou je služba na internetu, která registrovaným členům umožňuje si vytvářet osobní (či firemní) veřejný či částečně veřejný profil, komunikovat spolu, sdílet informace, fotografie, videa, provozovat chat a další aktivity. Někdy se za sociální síť považují i internetová diskusní fóra, kde si uživatelé vyměňují názory a poznatky na vybraná témata apod.). Komunikace mezi uživateli sociálních sítí může probíhat buď soukromě mezi dvěma uživateli, nebo (nejčastěji) hromadně mezi uživatelem a skupinou s ním propojených dalších uživatelů.",
-    "marks": null,
+    "marks": 1,
     "contextNote": "The scheme prints this as the meaning of \"„sociální sítě“\". The examination prints this question in Czech and it is answered in CZECH."
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "hromadné sdělovací prostředky, např. televize, rozhlas apod. Přidávají se neustále nová, jako internet, sociální sítě apod. Média mají funkci manipulativní, informační, inspirativní a zábavnou.",
-    "marks": null,
+    "marks": 1,
     "contextNote": "The scheme prints this as the meaning of \"„média“\". The examination prints this question in Czech and it is answered in CZECH."
    },
    {
     "id": "r-4",
     "kind": "point",
     "verbatim": "toto spojení znamená, že člověk se musí něco naučit jako ve škole, ale je to velmi přísné, velmi náročné a že třeba ne každý to zvládne.",
-    "marks": null,
+    "marks": 1,
     "contextNote": "The scheme prints this as the meaning of \"„velmi tvrdá škola“\". The examination prints this question in Czech and it is answered in CZECH."
    },
    {
     "id": "r-5",
     "kind": "point",
     "verbatim": "charakteristikou konzervatismu je otevřená tendence bránit se (rychlým) změnám a podporovat tradiční normy. Těmi mohou v různých kontextech být: řád, autorita, tradice, vlast, rodina, náboženství, soukromé vlastnictví, hierarchizace společnosti a morálka. Často je to lpění na přežitém; hanlivě může znamenat zaujatý proti novému a zpátečnický.",
-    "marks": null,
+    "marks": 1,
     "contextNote": "The scheme prints this as the meaning of \"„konzervativní“\". The examination prints this question in Czech and it is answered in CZECH."
    }
   ],
