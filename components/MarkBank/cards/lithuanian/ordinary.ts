@@ -3348,6 +3348,630 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2024 Ordinary Level, pp.11-12 — © State Examinations Commission.",
+    id: "lt-2024-ol-b-4-a", topicId: "lithuanian-2-4", conceptId: "aprasykite-savo-hobi-kaip-kada-susidomejote",
+    section: "B", questionRef: "2024 OL Section B Q4(a)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "Aprašykite savo hobį. • Kaip ir kada susidomėjote šiuo hobiu? • Kiek laiko skiriate savo hobiui? • Papasakokite, ko išmokote, ką naujo sužinojote užsiimdami hobiu. • Kodėl jums patinka šis hobis? (apie 100 žodžių)",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "N.B. If the communicative task has not been carried out, no marks can be awarded for register, vocabulary or structures."
+          ],
+          "criteria": [
+                {
+                      "id": "communication-1",
+                      "label": "Communication · task 1",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Kaip ir kada susidomėjote šiuo hobiu?",
+                            "4 Communicative tasks @ 4 marks each = 16 marks.",
+                            "1st Category 0 – 2 message not clear.",
+                            "2nd Category 3 – 4 message clear."
+                      ]
+                },
+                {
+                      "id": "communication-2",
+                      "label": "Communication · task 2",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Kiek laiko skiriate savo hobiui?",
+                            "4 Communicative tasks @ 4 marks each = 16 marks.",
+                            "1st Category 0 – 2 message not clear.",
+                            "2nd Category 3 – 4 message clear."
+                      ]
+                },
+                {
+                      "id": "communication-3",
+                      "label": "Communication · task 3",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Papasakokite, ko išmokote, ką naujo sužinojote užsiimdami hobiu.",
+                            "4 Communicative tasks @ 4 marks each = 16 marks.",
+                            "1st Category 0 – 2 message not clear.",
+                            "2nd Category 3 – 4 message clear."
+                      ]
+                },
+                {
+                      "id": "communication-4",
+                      "label": "Communication · task 4",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Kodėl jums patinka šis hobis?",
+                            "4 Communicative tasks @ 4 marks each = 16 marks.",
+                            "1st Category 0 – 2 message not clear.",
+                            "2nd Category 3 – 4 message clear."
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 14,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [10,11,12,13,14],
+                                  "guidance": [
+                                        "verb endings, agreements, tenses nearly always correct;",
+                                        "very good range of vocabulary;",
+                                        "nearly all words spelt correctly;",
+                                        "good sense of register."
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "verb endings, tenses, agreements correct more often than incorrect;",
+                                        "reasonable to good range of vocabulary;",
+                                        "at least half the words spelt correctly;",
+                                        "some sense of register."
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "most verb endings, tenses, agreements incorrect;",
+                                        "most words misspelt;",
+                                        "no sense of register."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "KETVIRTA UŽDUOTIS",
+          "title": "Ketvirta užduotis (a) — answer in Lithuanian",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Lithuanian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2024 Ordinary Level, pp.11-12 — © State Examinations Commission.",
+    id: "lt-2024-ol-b-4-b", topicId: "lithuanian-2-4", conceptId: "jusu-megstamiausias-patiekalas-koks-tai-patiekalas",
+    section: "B", questionRef: "2024 OL Section B Q4(b)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "Jūsų mėgstamiausias patiekalas. • Koks tai patiekalas? • Iš kokios šalies šis patiekalas? • Kur teko valgyti šio patiekalo? • Kodėl šis patiekalas jums yra mėgstamiausias? (apie 100 žodžių)",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "N.B. If the communicative task has not been carried out, no marks can be awarded for register, vocabulary or structures."
+          ],
+          "criteria": [
+                {
+                      "id": "communication-1",
+                      "label": "Communication · task 1",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Koks tai patiekalas?",
+                            "4 Communicative tasks @ 4 marks each = 16 marks.",
+                            "1st Category 0 – 2 message not clear.",
+                            "2nd Category 3 – 4 message clear."
+                      ]
+                },
+                {
+                      "id": "communication-2",
+                      "label": "Communication · task 2",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Iš kokios šalies šis patiekalas?",
+                            "4 Communicative tasks @ 4 marks each = 16 marks.",
+                            "1st Category 0 – 2 message not clear.",
+                            "2nd Category 3 – 4 message clear."
+                      ]
+                },
+                {
+                      "id": "communication-3",
+                      "label": "Communication · task 3",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Kur teko valgyti šio patiekalo?",
+                            "4 Communicative tasks @ 4 marks each = 16 marks.",
+                            "1st Category 0 – 2 message not clear.",
+                            "2nd Category 3 – 4 message clear."
+                      ]
+                },
+                {
+                      "id": "communication-4",
+                      "label": "Communication · task 4",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Kodėl šis patiekalas jums yra mėgstamiausias?",
+                            "4 Communicative tasks @ 4 marks each = 16 marks.",
+                            "1st Category 0 – 2 message not clear.",
+                            "2nd Category 3 – 4 message clear."
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 14,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [10,11,12,13,14],
+                                  "guidance": [
+                                        "verb endings, agreements, tenses nearly always correct;",
+                                        "very good range of vocabulary;",
+                                        "nearly all words spelt correctly;",
+                                        "good sense of register."
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "verb endings, tenses, agreements correct more often than incorrect;",
+                                        "reasonable to good range of vocabulary;",
+                                        "at least half the words spelt correctly;",
+                                        "some sense of register."
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "most verb endings, tenses, agreements incorrect;",
+                                        "most words misspelt;",
+                                        "no sense of register."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "KETVIRTA UŽDUOTIS",
+          "title": "Ketvirta užduotis (b) — answer in Lithuanian",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Lithuanian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2024 Ordinary Level, pp.11-12 — © State Examinations Commission.",
+    id: "lt-2024-ol-b-4-c", topicId: "lithuanian-2-4", conceptId: "aprasykite-jums-patinkanti-izymu-zmogu-pavyzdziui",
+    section: "B", questionRef: "2024 OL Section B Q4(c)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "Aprašykite jums patinkantį įžymų žmogų, pavyzdžiui: aktorių, šokėją, dainininką, sportininką, rašytoją. • Įvardinkite jums patinkantį žmogų. • Papasakokite, ką jis / ji veikia. • Kodėl jums patinka šis žmogus? • Ką pasakysite, jeigu jį / ją sutiksite? (apie 100 žodžių)",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "N.B. If the communicative task has not been carried out, no marks can be awarded for register, vocabulary or structures."
+          ],
+          "criteria": [
+                {
+                      "id": "communication-1",
+                      "label": "Communication · task 1",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Įvardinkite jums patinkantį žmogų.",
+                            "4 Communicative tasks @ 4 marks each = 16 marks.",
+                            "1st Category 0 – 2 message not clear.",
+                            "2nd Category 3 – 4 message clear."
+                      ]
+                },
+                {
+                      "id": "communication-2",
+                      "label": "Communication · task 2",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Papasakokite, ką jis / ji veikia.",
+                            "4 Communicative tasks @ 4 marks each = 16 marks.",
+                            "1st Category 0 – 2 message not clear.",
+                            "2nd Category 3 – 4 message clear."
+                      ]
+                },
+                {
+                      "id": "communication-3",
+                      "label": "Communication · task 3",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Kodėl jums patinka šis žmogus?",
+                            "4 Communicative tasks @ 4 marks each = 16 marks.",
+                            "1st Category 0 – 2 message not clear.",
+                            "2nd Category 3 – 4 message clear."
+                      ]
+                },
+                {
+                      "id": "communication-4",
+                      "label": "Communication · task 4",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": [
+                            "Ką pasakysite, jeigu jį / ją sutiksite?",
+                            "4 Communicative tasks @ 4 marks each = 16 marks.",
+                            "1st Category 0 – 2 message not clear.",
+                            "2nd Category 3 – 4 message clear."
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 14,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [10,11,12,13,14],
+                                  "guidance": [
+                                        "verb endings, agreements, tenses nearly always correct;",
+                                        "very good range of vocabulary;",
+                                        "nearly all words spelt correctly;",
+                                        "good sense of register."
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "verb endings, tenses, agreements correct more often than incorrect;",
+                                        "reasonable to good range of vocabulary;",
+                                        "at least half the words spelt correctly;",
+                                        "some sense of register."
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "most verb endings, tenses, agreements incorrect;",
+                                        "most words misspelt;",
+                                        "no sense of register."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "KETVIRTA UŽDUOTIS",
+          "title": "Ketvirta užduotis (c) — answer in Lithuanian",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Lithuanian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2024 Ordinary Level, pp.12-13 — © State Examinations Commission.",
+    id: "lt-2024-ol-b-5-a", topicId: "lithuanian-2-4", conceptId: "organizuojate-talentu-sou-socialiniu-tinklu-paskyroje",
+    section: "B", questionRef: "2024 OL Section B Q5(a)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "Organizuojate talentų šou. Socialinių tinklų paskyroje parašykite žinutę draugams ir pakvieskite dalyvauti.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "N.B. If communicative task has not been carried out, no marks can be awarded for register, vocabulary or structures."
+          ],
+          "criteria": [
+                {
+                      "id": "communication-first",
+                      "label": "First 3 tasks @ 2 marks each = 6 marks.",
+                      "maxMarks": 6,
+                      "permittedMarks": [0,1,2,3,4,5,6],
+                      "guidance": []
+                },
+                {
+                      "id": "communication-tasks",
+                      "label": "4 Communicative tasks @ 3 marks each = 12 marks.",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "1st Category 0 – 1 message not clear",
+                            "2nd Category 2 – 3 message clear"
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [10,11,12],
+                                  "guidance": [
+                                        "verb endings, agreements, tenses nearly always correct;",
+                                        "very good range of vocabulary;",
+                                        "nearly all words spelt correctly;",
+                                        "good sense of register."
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "verb endings, tenses, agreements correct more often than incorrect;",
+                                        "reasonable to good range of vocabulary;",
+                                        "at least half the words spelt correctly;",
+                                        "some sense of register."
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "most verb endings, tenses, agreements incorrect;",
+                                        "most words misspelt;",
+                                        "no sense of register."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PENKTA UŽDUOTIS",
+          "title": "Penkta užduotis (a) — answer in Lithuanian",
+          "pages": [
+                16,
+                17
+          ],
+          "attribution": "SEC Lithuanian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2024 Ordinary Level, pp.12-13 — © State Examinations Commission.",
+    id: "lt-2024-ol-b-5-b", topicId: "lithuanian-2-4", conceptId: "sutikote-savo-seniai-matyta-drauga-uzpildykite",
+    section: "B", questionRef: "2024 OL Section B Q5(b)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "Sutikote savo seniai matytą draugą / ‐ę. Užpildykite pokalbį įrašydami atsakymus į tam skirtas vietas.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "N.B. If communicative task has not been carried out, no marks can be awarded for register, vocabulary or structures."
+          ],
+          "criteria": [
+                {
+                      "id": "communication-first",
+                      "label": "First 3 tasks @ 2 marks each = 6 marks.",
+                      "maxMarks": 6,
+                      "permittedMarks": [0,1,2,3,4,5,6],
+                      "guidance": []
+                },
+                {
+                      "id": "communication-tasks",
+                      "label": "4 Communicative tasks @ 3 marks each = 12 marks.",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "1st Category 0 – 1 message not clear",
+                            "2nd Category 2 – 3 message clear"
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [10,11,12],
+                                  "guidance": [
+                                        "verb endings, agreements, tenses nearly always correct;",
+                                        "very good range of vocabulary;",
+                                        "nearly all words spelt correctly;",
+                                        "good sense of register."
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "verb endings, tenses, agreements correct more often than incorrect;",
+                                        "reasonable to good range of vocabulary;",
+                                        "at least half the words spelt correctly;",
+                                        "some sense of register."
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "most verb endings, tenses, agreements incorrect;",
+                                        "most words misspelt;",
+                                        "no sense of register."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PENKTA UŽDUOTIS",
+          "title": "Penkta užduotis (b) — answer in Lithuanian",
+          "pages": [
+                17,
+                18
+          ],
+          "attribution": "SEC Lithuanian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC550GLP000EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Lithuanian 2024 Ordinary Level, pp.12-13 — © State Examinations Commission.",
+    id: "lt-2024-ol-b-5-c", topicId: "lithuanian-2-4", conceptId: "draugais-norite-ikurti-jaunimo-centra-paprasykite",
+    section: "B", questionRef: "2024 OL Section B Q5(c)",
+    stem: "Atsakykite į (a) arba (b), arba (c).",
+    questionText: "Su draugais norite įkurti jaunimo centrą. Paprašykite miesto vadovų pagalbos.",
+    totalMarks: 30,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "N.B. If communicative task has not been carried out, no marks can be awarded for register, vocabulary or structures."
+          ],
+          "criteria": [
+                {
+                      "id": "communication-first",
+                      "label": "First 3 tasks @ 2 marks each = 6 marks.",
+                      "maxMarks": 6,
+                      "permittedMarks": [0,1,2,3,4,5,6],
+                      "guidance": []
+                },
+                {
+                      "id": "communication-tasks",
+                      "label": "4 Communicative tasks @ 3 marks each = 12 marks.",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [
+                            "1st Category 0 – 1 message not clear",
+                            "2nd Category 2 – 3 message clear"
+                      ]
+                },
+                {
+                      "id": "language",
+                      "label": "Language",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "TOP",
+                                  "marks": [10,11,12],
+                                  "guidance": [
+                                        "verb endings, agreements, tenses nearly always correct;",
+                                        "very good range of vocabulary;",
+                                        "nearly all words spelt correctly;",
+                                        "good sense of register."
+                                  ]
+                            },
+                            {
+                                  "label": "MIDDLE",
+                                  "marks": [5,6,7,8,9],
+                                  "guidance": [
+                                        "verb endings, tenses, agreements correct more often than incorrect;",
+                                        "reasonable to good range of vocabulary;",
+                                        "at least half the words spelt correctly;",
+                                        "some sense of register."
+                                  ]
+                            },
+                            {
+                                  "label": "BOTTOM",
+                                  "marks": [0,1,2,3,4],
+                                  "guidance": [
+                                        "most verb endings, tenses, agreements incorrect;",
+                                        "most words misspelt;",
+                                        "no sense of register."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "",
+          "practiceNotes": [
+                "Write your answer in Lithuanian, then place it on the published grid: content and communication first, then language."
+          ]
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PENKTA UŽDUOTIS",
+          "title": "Penkta užduotis (c) — answer in Lithuanian",
+          "pages": [
+                18,
+                19
+          ],
+          "attribution": "SEC Lithuanian 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The task exactly as the examination printed it."
+    },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC550GLP000EV",
