@@ -4365,17 +4365,20 @@ export const CARDS: SecCard[] = [
           "criteria": [
                 {
                       "id": "communication-first",
-                      "label": "First 3 tasks @ 2 marks each = 6 marks.",
+                      "label": "Communication · first 3 tasks",
                       "maxMarks": 6,
                       "permittedMarks": [0,1,2,3,4,5,6],
-                      "guidance": []
+                      "guidance": [
+                            "First 3 tasks @ 2 marks each = 6 marks."
+                      ]
                 },
                 {
                       "id": "communication-tasks",
-                      "label": "4 Communicative tasks @ 3 marks each = 12 marks.",
+                      "label": "Communication · 4 communicative tasks",
                       "maxMarks": 12,
                       "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
                       "guidance": [
+                            "4 Communicative tasks @ 3 marks each = 12 marks.",
                             "1st Category 0 – 1 message not clear",
                             "2nd Category 2 – 3 message clear"
                       ]
@@ -4454,17 +4457,20 @@ export const CARDS: SecCard[] = [
           "criteria": [
                 {
                       "id": "communication-first",
-                      "label": "First 3 tasks @ 2 marks each = 6 marks.",
+                      "label": "Communication · first 3 tasks",
                       "maxMarks": 6,
                       "permittedMarks": [0,1,2,3,4,5,6],
-                      "guidance": []
+                      "guidance": [
+                            "First 3 tasks @ 2 marks each = 6 marks."
+                      ]
                 },
                 {
                       "id": "communication-tasks",
-                      "label": "4 Communicative tasks @ 3 marks each = 12 marks.",
+                      "label": "Communication · 4 communicative tasks",
                       "maxMarks": 12,
                       "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
                       "guidance": [
+                            "4 Communicative tasks @ 3 marks each = 12 marks.",
                             "1st Category 0 – 1 message not clear",
                             "2nd Category 2 – 3 message clear"
                       ]
@@ -4543,17 +4549,20 @@ export const CARDS: SecCard[] = [
           "criteria": [
                 {
                       "id": "communication-first",
-                      "label": "First 3 tasks @ 2 marks each = 6 marks.",
+                      "label": "Communication · first 3 tasks",
                       "maxMarks": 6,
                       "permittedMarks": [0,1,2,3,4,5,6],
-                      "guidance": []
+                      "guidance": [
+                            "First 3 tasks @ 2 marks each = 6 marks."
+                      ]
                 },
                 {
                       "id": "communication-tasks",
-                      "label": "4 Communicative tasks @ 3 marks each = 12 marks.",
+                      "label": "Communication · 4 communicative tasks",
                       "maxMarks": 12,
                       "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
                       "guidance": [
+                            "4 Communicative tasks @ 3 marks each = 12 marks.",
                             "1st Category 0 – 1 message not clear",
                             "2nd Category 2 – 3 message clear"
                       ]
@@ -6742,17 +6751,20 @@ export const CARDS: SecCard[] = [
           "criteria": [
                 {
                       "id": "communication-first",
-                      "label": "First 3 tasks @ 2 marks each = 6 marks.",
+                      "label": "Communication · first 3 tasks",
                       "maxMarks": 6,
                       "permittedMarks": [0,1,2,3,4,5,6],
-                      "guidance": []
+                      "guidance": [
+                            "First 3 tasks @ 2 marks each = 6 marks."
+                      ]
                 },
                 {
                       "id": "communication-tasks",
-                      "label": "4 Communicative tasks @ 3 marks each = 12 marks.",
+                      "label": "Communication · 4 communicative tasks",
                       "maxMarks": 12,
                       "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
                       "guidance": [
+                            "4 Communicative tasks @ 3 marks each = 12 marks.",
                             "1st Category 0 – 1 message not clear",
                             "2nd Category 2 – 3 message clear"
                       ]
@@ -6831,17 +6843,20 @@ export const CARDS: SecCard[] = [
           "criteria": [
                 {
                       "id": "communication-first",
-                      "label": "First 3 tasks @ 2 marks each = 6 marks.",
+                      "label": "Communication · first 3 tasks",
                       "maxMarks": 6,
                       "permittedMarks": [0,1,2,3,4,5,6],
-                      "guidance": []
+                      "guidance": [
+                            "First 3 tasks @ 2 marks each = 6 marks."
+                      ]
                 },
                 {
                       "id": "communication-tasks",
-                      "label": "4 Communicative tasks @ 3 marks each = 12 marks.",
+                      "label": "Communication · 4 communicative tasks",
                       "maxMarks": 12,
                       "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
                       "guidance": [
+                            "4 Communicative tasks @ 3 marks each = 12 marks.",
                             "1st Category 0 – 1 message not clear",
                             "2nd Category 2 – 3 message clear"
                       ]
@@ -6920,17 +6935,20 @@ export const CARDS: SecCard[] = [
           "criteria": [
                 {
                       "id": "communication-first",
-                      "label": "First 3 tasks @ 2 marks each = 6 marks.",
+                      "label": "Communication · first 3 tasks",
                       "maxMarks": 6,
                       "permittedMarks": [0,1,2,3,4,5,6],
-                      "guidance": []
+                      "guidance": [
+                            "First 3 tasks @ 2 marks each = 6 marks."
+                      ]
                 },
                 {
                       "id": "communication-tasks",
-                      "label": "4 Communicative tasks @ 3 marks each = 12 marks.",
+                      "label": "Communication · 4 communicative tasks",
                       "maxMarks": 12,
                       "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
                       "guidance": [
+                            "4 Communicative tasks @ 3 marks each = 12 marks.",
                             "1st Category 0 – 1 message not clear",
                             "2nd Category 2 – 3 message clear"
                       ]
@@ -9283,17 +9301,20 @@ export const CARDS: SecCard[] = [
           "criteria": [
                 {
                       "id": "communication-first",
-                      "label": "First 3 tasks @ 2 marks each = 6 marks.",
+                      "label": "Communication · first 3 tasks",
                       "maxMarks": 6,
                       "permittedMarks": [0,1,2,3,4,5,6],
-                      "guidance": []
+                      "guidance": [
+                            "First 3 tasks @ 2 marks each = 6 marks."
+                      ]
                 },
                 {
                       "id": "communication-tasks",
-                      "label": "4 Communicative tasks @ 3 marks each = 12 marks.",
+                      "label": "Communication · 4 communicative tasks",
                       "maxMarks": 12,
                       "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
                       "guidance": [
+                            "4 Communicative tasks @ 3 marks each = 12 marks.",
                             "1st Category 0 – 1 message not clear",
                             "2nd Category 2 – 3 message clear"
                       ]
@@ -9372,17 +9393,20 @@ export const CARDS: SecCard[] = [
           "criteria": [
                 {
                       "id": "communication-first",
-                      "label": "First 3 tasks @ 2 marks each = 6 marks.",
+                      "label": "Communication · first 3 tasks",
                       "maxMarks": 6,
                       "permittedMarks": [0,1,2,3,4,5,6],
-                      "guidance": []
+                      "guidance": [
+                            "First 3 tasks @ 2 marks each = 6 marks."
+                      ]
                 },
                 {
                       "id": "communication-tasks",
-                      "label": "4 Communicative tasks @ 3 marks each = 12 marks.",
+                      "label": "Communication · 4 communicative tasks",
                       "maxMarks": 12,
                       "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
                       "guidance": [
+                            "4 Communicative tasks @ 3 marks each = 12 marks.",
                             "1st Category 0 – 1 message not clear",
                             "2nd Category 2 – 3 message clear"
                       ]
@@ -9461,17 +9485,20 @@ export const CARDS: SecCard[] = [
           "criteria": [
                 {
                       "id": "communication-first",
-                      "label": "First 3 tasks @ 2 marks each = 6 marks.",
+                      "label": "Communication · first 3 tasks",
                       "maxMarks": 6,
                       "permittedMarks": [0,1,2,3,4,5,6],
-                      "guidance": []
+                      "guidance": [
+                            "First 3 tasks @ 2 marks each = 6 marks."
+                      ]
                 },
                 {
                       "id": "communication-tasks",
-                      "label": "4 Communicative tasks @ 3 marks each = 12 marks.",
+                      "label": "Communication · 4 communicative tasks",
                       "maxMarks": 12,
                       "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
                       "guidance": [
+                            "4 Communicative tasks @ 3 marks each = 12 marks.",
                             "1st Category 0 – 1 message not clear",
                             "2nd Category 2 – 3 message clear"
                       ]

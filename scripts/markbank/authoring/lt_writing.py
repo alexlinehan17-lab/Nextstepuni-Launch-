@@ -207,10 +207,14 @@ def ordinary_grid(S, q, letter, paper_bullets):
     else:
         first = S.lines[S.find(r'^First 3 tasks @ 2 marks each = 6 marks\.$', comm, nb)]
         four = S.lines[S.find(r'^4 Communicative tasks @ 3 marks each = 12 marks\.$', comm, nb)]
-        comm_crits = [{'id': 'communication-first', 'label': first, 'maxMarks': 6,
-                       'permittedMarks': list(range(7)), 'guidance': []},
-                      {'id': 'communication-tasks', 'label': four, 'maxMarks': 12,
-                       'permittedMarks': list(range(13)), 'guidance': cats}]
+        # Short app labels on the French pattern (unbanded, so the label is the
+        # app's; lead, 20 Nov), each criterion's printed line first in its
+        # guidance. The category lines ("1st Category 0 – 1 …") price the
+        # 3-mark communicative tasks, so they follow that line only.
+        comm_crits = [{'id': 'communication-first', 'label': 'Communication · first 3 tasks', 'maxMarks': 6,
+                       'permittedMarks': list(range(7)), 'guidance': [first]},
+                      {'id': 'communication-tasks', 'label': 'Communication · 4 communicative tasks', 'maxMarks': 12,
+                       'permittedMarks': list(range(13)), 'guidance': [four] + cats}]
     head = S.lines[comm]
     printed_comm = int(re.search(r'Communication: (\d+) marks', head).group(1))
     if sum(c['maxMarks'] for c in comm_crits) != printed_comm:
