@@ -1,0 +1,1294 @@
+{
+  "checkedAt": "2026-11-19T11:05:02.372433+00:00",
+  "sitting": "Russian 2023 HL",
+  "archiveRecheck": {
+    "year": 2023,
+    "level": "hl",
+    "url": "https://www.examinations.ie/archive/markingschemes/2023/LC099ALP000EV.pdf",
+    "filename": "Russian-2023-hl-SEC-fresh-20261119.pdf",
+    "pages": "27",
+    "downloadDone": true,
+    "checkedAt": "2026-11-19T11:01:01.957Z",
+    "bytes": 515584,
+    "sha256": "63933208c9846387f93bba3f48c13ec4d8821d7f3af1597998bcc8c531d983de",
+    "retainedSha256": "63933208c9846387f93bba3f48c13ec4d8821d7f3af1597998bcc8c531d983de",
+    "exactMatch": true,
+    "freshDownloadVerified": true,
+    "localFile": "/Users/alexlinehan/Documents/Nextstepuni-Russian-Continuation-20261106/tmp/russian-review/stale-exclusions-20261119/sec-recheck/2023-hl.pdf"
+  },
+  "retiredExclusions": 27,
+  "records": [
+    {
+      "record": 83,
+      "oldExclusion": {
+        "ref": "2023 HL Section LA1 Q(ii)",
+        "reason": "no printed instruction in the paper matches the task the scheme answers",
+        "evidence": "2023 HL scheme, Question 1.2 — Language awareness: the scheme reprints 'English or Russian.' and the paper's own English column yields 'English or Russian)'"
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-la1-ii",
+          "questionRef": "2023 HL Section LA1 Q(ii)",
+          "questionText": "Indicate the case of the following noun phrases. (You may write your answer in Irish, English or Russian)",
+          "marks": 10,
+          "paperFileid": "LC099ALP000BV.pdf",
+          "paperPages": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "schemePages": [
+            6
+          ],
+          "hasAudio": false,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-la1-ii",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section LA1 Q(ii)",
+            "topicId": "russian-3-2",
+            "paperFileid": "LC099ALP000BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              2,
+              3,
+              4,
+              5
+            ],
+            "schemePages": [
+              6
+            ],
+            "component": "000"
+          }
+        }
+      ]
+    },
+    {
+      "record": 84,
+      "oldExclusion": {
+        "ref": "2023 HL Section SD Q",
+        "reason": "the scheme prints this task's answers as a printed KEY the card cannot pair to the printed prompts",
+        "evidence": "2023 HL scheme, Structuring discourse: the scheme answers the structuring task the same way: at Higher the ten news items with the genre number printed beside each, at Ordinary the dialogue reprinted with the missing words already in place. Both state the answer only in a printed layout — a number in a box, a word in a gap — and this deck has no row kind for either."
+      },
+      "countedLeaves": 0,
+      "uncoveredLeaves": 0,
+      "matchedCards": [],
+      "obsoleteReferenceResolution": {
+        "id": "ru-2023-hl-sd",
+        "printedReference": "2023 HL Section SD Q3",
+        "reason": "The old exclusion splits a printed choice or omits its actual printed number. The independently read census and current card use the complete printed task.",
+        "questionText": "Match the following professions with their definitions. Indicate your answer by inserting the number of the appropriate profession in the box beside the relevant definition.",
+        "sourceRecord": {
+          "id": "ru-2023-hl-sd",
+          "year": 2023,
+          "level": "higher",
+          "questionRef": "2023 HL Section SD Q3",
+          "topicId": "russian-3-3",
+          "paperFileid": "LC099ALP000BV.pdf",
+          "schemeFileid": "LC099ALP000EV.pdf",
+          "paperPages": [
+            10
+          ],
+          "schemePages": [
+            10
+          ],
+          "component": "000"
+        }
+      }
+    },
+    {
+      "record": 85,
+      "oldExclusion": {
+        "ref": "2023 HL Section GR Q",
+        "reason": "the scheme prints this task's answers as a printed KEY the card cannot pair to the printed prompts",
+        "evidence": "2023 HL scheme, Grammar: the scheme answers the grammar question by reprinting the whole passage with the corrected forms inside the brackets the paper left blank — \"И только через девять (часов) поздравляют друг друга с праздником москвичи\" against the paper's \"через девять (часы) ……………\" — and prices it \"Award 2 marks per correct form: 15 x 2 marks\". The answers are stated, but each is stated only in its place in a 300-word passage: a card would have to reproduce the passage and the fifteen blanks in it, and this deck has no row kind for a gap-fill."
+      },
+      "countedLeaves": 0,
+      "uncoveredLeaves": 0,
+      "matchedCards": [],
+      "obsoleteReferenceResolution": {
+        "id": "ru-2023-hl-gr",
+        "printedReference": "2023 HL Section GR Q1",
+        "reason": "The old exclusion splits a printed choice or omits its actual printed number. The independently read census and current card use the complete printed task.",
+        "questionText": "Read through the following text. Put the words in brackets into the correct form. All nouns, adjectives and pronouns are supplied in the nominative form of the appropriate number (singular or plural); verbs are supplied in the infinitive of the appropriate aspect. No marks are awarded for incorrectly spelled words or substitute words.",
+        "sourceRecord": {
+          "id": "ru-2023-hl-gr",
+          "year": 2023,
+          "level": "higher",
+          "questionRef": "2023 HL Section GR Q1",
+          "topicId": "russian-3-7",
+          "paperFileid": "LC099ALP000BV.pdf",
+          "schemeFileid": "LC099ALP000EV.pdf",
+          "paperPages": [
+            11
+          ],
+          "schemePages": [
+            11
+          ],
+          "component": "000"
+        }
+      }
+    },
+    {
+      "record": 86,
+      "oldExclusion": {
+        "ref": "2023 HL Section SE Q",
+        "reason": "the scheme prints a band grid for this ask, not an answer",
+        "evidence": "2023 HL scheme, Short essay — cultural awareness: the scheme answers this ask with a BAND GRID and nothing else. It prices the essay \"Content (C) = 10 marks; Language + expression (E) = 20 marks\" and then describes the bands in prose — \"18-20 Rich and complex language, employing a wide range of appropriate lexis. Tone and register wholly suited to chosen task. Almost flawless in terms of accuracy.\" Those are qualities of a piece of writing, not answers, and the only content it states is the rule that pays them: \"Award 2 marks for each relevant content detail (up to a maximum of 10 marks)\", with no detail named."
+      },
+      "countedLeaves": 0,
+      "uncoveredLeaves": 0,
+      "matchedCards": [],
+      "obsoleteReferenceResolution": {
+        "id": "ru-2023-hl-se",
+        "printedReference": "2023 HL Section SE Q2",
+        "reason": "The old exclusion splits a printed choice or omits its actual printed number. The independently read census and current card use the complete printed task.",
+        "questionText": "Write a short essay (50 words) in Russian on one of the following topics. Supply five factual details. Marks are awarded for relevant content, expression and structure (organisation of ideas). Indicate which essay you are writing by supplying the essay title.\n\n• Príomhchathair Chónaidhm na Rúise / Capital city of the Russian Federation / Столица Российской Федерации\n• Pearsana Cáiliúla Cultúir de chuid na Rúise / Famous Russian cultural figures / Известные деятели русской культуры\n• An Córas Oideachais i gCónaidhm na Rúise / The education system in the Russian Federation / Oбразование в Российской Федерации\n• Spórt i gCónaidhm na Rúise / Sport in the Russian Federation / Спорт в Российской Федерации\n• Cúrsaí Iompair i gCónaidhm na Rúise / Transport in the Russian Federation / Транспорт в Российской Федерации",
+        "sourceRecord": {
+          "id": "ru-2023-hl-se",
+          "year": 2023,
+          "level": "higher",
+          "questionRef": "2023 HL Section SE Q2",
+          "topicId": "russian-3-8",
+          "paperFileid": "LC099ALP000BV.pdf",
+          "schemeFileid": "LC099ALP000EV.pdf",
+          "paperPages": [
+            12
+          ],
+          "schemePages": [
+            12,
+            13
+          ],
+          "component": "000"
+        }
+      }
+    },
+    {
+      "record": 87,
+      "oldExclusion": {
+        "ref": "2023 HL Section GW Q1",
+        "reason": "the scheme prints a band grid for this ask, not an answer",
+        "evidence": "2023 HL scheme, Guided writing: the scheme answers the guided-writing question with a BAND GRID and nothing else: \"1. Communication + content (C) = 15 marks; 2. Language + expression (E) = 15 marks; 3. Textual coherence (TC) = 10 marks\", then \"9-10 Excellent organisation. A high degree of coherence throughout\" and \"Vocabulary use good – rich, idiomatic and appropriate. Spelling mistakes rare, grammar generally correct.\" Where it lists points at all they are the communicative tasks the PAPER printed in the question itself — \"opening (A)\", \"where the cat lives now (B)\" — not answers to it."
+      },
+      "countedLeaves": 0,
+      "uncoveredLeaves": 0,
+      "matchedCards": [],
+      "obsoleteReferenceResolution": {
+        "id": "ru-2023-hl-gw",
+        "printedReference": "2023 HL Section GW Q3",
+        "reason": "The old exclusion splits a printed choice or omits its actual printed number. The independently read census and current card use the complete printed task.",
+        "questionText": "Write a piece of continuous prose in Russian (140\nwords) in answer to ONE of the following. In your\nanswer make sure to include ALL the points listed.\n\nYou may use vocabulary and turns of phrase from\ntexts in other sections of the examination paper,\nbut marks will not be awarded for segments of\nyour essay which replicate word for word\nsegments from examination texts.\n\n1. LETTER\nIt has been three years since your school\ngraduation. You want to organise a get-together to\nmark the occasion. Write a letter to your\nclassmates. In your letter include the following:\n\n• Who will be there\n• What you will be doing\n• Where the event will take place\n•  Briefly describe the menu for the evening\n• What type of music you will have\n\nOR\n\nWrite a letter to your friend’s parents trying to\nconvince them to let their son/daughter spend two\nweeks with you in Ireland. In your letter make\nreference to:\n   •   Suitable dates for travel\n   •  Ways to get to Ireland\n   •  Things to bring with him / her\n   •  What you will be doing\n   •  Where you will be staying\n\n2. NARRATIVE\n\n(a) Write about the best memory from your\n    winter holidays.\n\nOR\n\n(b) Write a review of a concert/festival that you\n    recently attended.\n\n3. DISCUSSION\n\n(a) Discuss the difficulty of a career choice for\n   young people today.\n\nOR\n\n(b) Discuss the challenges that gifted children face\n    in life.",
+        "sourceRecord": {
+          "id": "ru-2023-hl-gw",
+          "year": 2023,
+          "level": "higher",
+          "questionRef": "2023 HL Section GW Q3",
+          "topicId": "russian-3-9",
+          "paperFileid": "LC099ALP000BV.pdf",
+          "schemeFileid": "LC099ALP000EV.pdf",
+          "paperPages": [
+            13
+          ],
+          "schemePages": [
+            14,
+            15,
+            16
+          ],
+          "component": "000"
+        }
+      }
+    },
+    {
+      "record": 88,
+      "oldExclusion": {
+        "ref": "2023 HL Section GW Q2",
+        "reason": "the scheme prints a band grid for this ask, not an answer",
+        "evidence": "2023 HL scheme, Guided writing: the scheme answers the guided-writing question with a BAND GRID and nothing else: \"1. Communication + content (C) = 15 marks; 2. Language + expression (E) = 15 marks; 3. Textual coherence (TC) = 10 marks\", then \"9-10 Excellent organisation. A high degree of coherence throughout\" and \"Vocabulary use good – rich, idiomatic and appropriate. Spelling mistakes rare, grammar generally correct.\" Where it lists points at all they are the communicative tasks the PAPER printed in the question itself — \"opening (A)\", \"where the cat lives now (B)\" — not answers to it."
+      },
+      "countedLeaves": 0,
+      "uncoveredLeaves": 0,
+      "matchedCards": [],
+      "obsoleteReferenceResolution": {
+        "id": "ru-2023-hl-gw",
+        "printedReference": "2023 HL Section GW Q3",
+        "reason": "The old exclusion splits a printed choice or omits its actual printed number. The independently read census and current card use the complete printed task.",
+        "questionText": "Write a piece of continuous prose in Russian (140\nwords) in answer to ONE of the following. In your\nanswer make sure to include ALL the points listed.\n\nYou may use vocabulary and turns of phrase from\ntexts in other sections of the examination paper,\nbut marks will not be awarded for segments of\nyour essay which replicate word for word\nsegments from examination texts.\n\n1. LETTER\nIt has been three years since your school\ngraduation. You want to organise a get-together to\nmark the occasion. Write a letter to your\nclassmates. In your letter include the following:\n\n• Who will be there\n• What you will be doing\n• Where the event will take place\n•  Briefly describe the menu for the evening\n• What type of music you will have\n\nOR\n\nWrite a letter to your friend’s parents trying to\nconvince them to let their son/daughter spend two\nweeks with you in Ireland. In your letter make\nreference to:\n   •   Suitable dates for travel\n   •  Ways to get to Ireland\n   •  Things to bring with him / her\n   •  What you will be doing\n   •  Where you will be staying\n\n2. NARRATIVE\n\n(a) Write about the best memory from your\n    winter holidays.\n\nOR\n\n(b) Write a review of a concert/festival that you\n    recently attended.\n\n3. DISCUSSION\n\n(a) Discuss the difficulty of a career choice for\n   young people today.\n\nOR\n\n(b) Discuss the challenges that gifted children face\n    in life.",
+        "sourceRecord": {
+          "id": "ru-2023-hl-gw",
+          "year": 2023,
+          "level": "higher",
+          "questionRef": "2023 HL Section GW Q3",
+          "topicId": "russian-3-9",
+          "paperFileid": "LC099ALP000BV.pdf",
+          "schemeFileid": "LC099ALP000EV.pdf",
+          "paperPages": [
+            13
+          ],
+          "schemePages": [
+            14,
+            15,
+            16
+          ],
+          "component": "000"
+        }
+      }
+    },
+    {
+      "record": 89,
+      "oldExclusion": {
+        "ref": "2023 HL Section GW Q3",
+        "reason": "the scheme prints a band grid for this ask, not an answer",
+        "evidence": "2023 HL scheme, Guided writing: the scheme answers the guided-writing question with a BAND GRID and nothing else: \"1. Communication + content (C) = 15 marks; 2. Language + expression (E) = 15 marks; 3. Textual coherence (TC) = 10 marks\", then \"9-10 Excellent organisation. A high degree of coherence throughout\" and \"Vocabulary use good – rich, idiomatic and appropriate. Spelling mistakes rare, grammar generally correct.\" Where it lists points at all they are the communicative tasks the PAPER printed in the question itself — \"opening (A)\", \"where the cat lives now (B)\" — not answers to it."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-gw",
+          "questionRef": "2023 HL Section GW Q3",
+          "questionText": "Write a piece of continuous prose in Russian (140\nwords) in answer to ONE of the following. In your\nanswer make sure to include ALL the points listed.\n\nYou may use vocabulary and turns of phrase from\ntexts in other sections of the examination paper,\nbut marks will not be awarded for segments of\nyour essay which replicate word for word\nsegments from examination texts.\n\n1. LETTER\nIt has been three years since your school\ngraduation. You want to organise a get-together to\nmark the occasion. Write a letter to your\nclassmates. In your letter include the following:\n\n• Who will be there\n• What you will be doing\n• Where the event will take place\n•  Briefly describe the menu for the evening\n• What type of music you will have\n\nOR\n\nWrite a letter to your friend’s parents trying to\nconvince them to let their son/daughter spend two\nweeks with you in Ireland. In your letter make\nreference to:\n   •   Suitable dates for travel\n   •  Ways to get to Ireland\n   •  Things to bring with him / her\n   •  What you will be doing\n   •  Where you will be staying\n\n2. NARRATIVE\n\n(a) Write about the best memory from your\n    winter holidays.\n\nOR\n\n(b) Write a review of a concert/festival that you\n    recently attended.\n\n3. DISCUSSION\n\n(a) Discuss the difficulty of a career choice for\n   young people today.\n\nOR\n\n(b) Discuss the challenges that gifted children face\n    in life.",
+          "marks": 40,
+          "paperFileid": "LC099ALP000BV.pdf",
+          "paperPages": [
+            13
+          ],
+          "schemePages": [
+            14,
+            15,
+            16
+          ],
+          "hasAudio": false,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-gw",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section GW Q3",
+            "topicId": "russian-3-9",
+            "paperFileid": "LC099ALP000BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              13
+            ],
+            "schemePages": [
+              14,
+              15,
+              16
+            ],
+            "component": "000"
+          }
+        }
+      ]
+    },
+    {
+      "record": 90,
+      "oldExclusion": {
+        "ref": "2023 HL Section L1 Q1(i)",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section I: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l1-1-i",
+          "questionRef": "2023 HL Section L1 Q1(i)",
+          "questionText": "Why did Irina go to the doctor?\nGive two details.",
+          "marks": 4,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l1-1-i",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L1 Q1(i)",
+            "topicId": "russian-0-9",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              2
+            ],
+            "schemePages": [
+              17
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 91,
+      "oldExclusion": {
+        "ref": "2023 HL Section L1 Q1(ii)",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section I: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l1-1-ii",
+          "questionRef": "2023 HL Section L1 Q1(ii)",
+          "questionText": "What advice did the doctor give Irina?\nGive two details.",
+          "marks": 4,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l1-1-ii",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L1 Q1(ii)",
+            "topicId": "russian-2-2",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              2
+            ],
+            "schemePages": [
+              17
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 92,
+      "oldExclusion": {
+        "ref": "2023 HL Section L1 Q2",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section I: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l1-2",
+          "questionRef": "2023 HL Section L1 Q2",
+          "questionText": "Give three details about the ticket the passenger\nis buying.",
+          "marks": 6,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l1-2",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L1 Q2",
+            "topicId": "russian-0-8",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              2
+            ],
+            "schemePages": [
+              17
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 93,
+      "oldExclusion": {
+        "ref": "2023 HL Section L1 Q3(i)",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section I: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l1-3-i",
+          "questionRef": "2023 HL Section L1 Q3(i)",
+          "questionText": "Give two details about the item the\ncustomer wants to buy.",
+          "marks": 4,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l1-3-i",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L1 Q3(i)",
+            "topicId": "russian-0-9",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              2
+            ],
+            "schemePages": [
+              17
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 94,
+      "oldExclusion": {
+        "ref": "2023 HL Section L1 Q3(ii)",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section I: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l1-3-ii",
+          "questionRef": "2023 HL Section L1 Q3(ii)",
+          "questionText": "What advice did the sales assistant give the\ncustomer? Give one detail.",
+          "marks": 2,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            2
+          ],
+          "schemePages": [
+            17
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l1-3-ii",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L1 Q3(ii)",
+            "topicId": "russian-0-9",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              2
+            ],
+            "schemePages": [
+              17
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 95,
+      "oldExclusion": {
+        "ref": "2023 HL Section L2 Q1(i)",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section II: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l2-1-i",
+          "questionRef": "2023 HL Section L2 Q1(i)",
+          "questionText": "Why has Emily decided to study Russian?\nGive one detail.",
+          "marks": 2,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            3,
+            4
+          ],
+          "schemePages": [
+            18
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l2-1-i",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L2 Q1(i)",
+            "topicId": "russian-0-3",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              3,
+              4
+            ],
+            "schemePages": [
+              18
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 96,
+      "oldExclusion": {
+        "ref": "2023 HL Section L2 Q1(ii)",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section II: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l2-1-ii",
+          "questionRef": "2023 HL Section L2 Q1(ii)",
+          "questionText": "Emily talks about her stay in Russia.\nGive two details.",
+          "marks": 4,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            3,
+            4
+          ],
+          "schemePages": [
+            18
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l2-1-ii",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L2 Q1(ii)",
+            "topicId": "russian-0-8",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              3,
+              4
+            ],
+            "schemePages": [
+              18
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 97,
+      "oldExclusion": {
+        "ref": "2023 HL Section L2 Q2(i)",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section II: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l2-2-i",
+          "questionRef": "2023 HL Section L2 Q2(i)",
+          "questionText": "What does Emily think of Moscow?\nGive two details.",
+          "marks": 4,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            3,
+            4
+          ],
+          "schemePages": [
+            18
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l2-2-i",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L2 Q2(i)",
+            "topicId": "russian-0-2",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              3,
+              4
+            ],
+            "schemePages": [
+              18
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 98,
+      "oldExclusion": {
+        "ref": "2023 HL Section L2 Q2(ii)",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section II: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l2-2-ii",
+          "questionRef": "2023 HL Section L2 Q2(ii)",
+          "questionText": "Emily talks about Russian cuisine.\nGive two details.",
+          "marks": 4,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            3,
+            4
+          ],
+          "schemePages": [
+            18
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l2-2-ii",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L2 Q2(ii)",
+            "topicId": "russian-2-0",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              3,
+              4
+            ],
+            "schemePages": [
+              18
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 99,
+      "oldExclusion": {
+        "ref": "2023 HL Section L2 Q3(i)",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section II: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l2-3-i",
+          "questionRef": "2023 HL Section L2 Q3(i)",
+          "questionText": "What did Emily find challenging about\nstudying in Russia? Give one detail.",
+          "marks": 2,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            3,
+            4
+          ],
+          "schemePages": [
+            18
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l2-3-i",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L2 Q3(i)",
+            "topicId": "russian-0-3",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              3,
+              4
+            ],
+            "schemePages": [
+              18
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 100,
+      "oldExclusion": {
+        "ref": "2023 HL Section L2 Q3(ii)",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section II: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l2-3-ii",
+          "questionRef": "2023 HL Section L2 Q3(ii)",
+          "questionText": "What are Emily’s plans for the future?\nGive two details.",
+          "marks": 4,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            3,
+            4
+          ],
+          "schemePages": [
+            18
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l2-3-ii",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L2 Q3(ii)",
+            "topicId": "russian-0-6",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              3,
+              4
+            ],
+            "schemePages": [
+              18
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 101,
+      "oldExclusion": {
+        "ref": "2023 HL Section L3 Q1(i)",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section III: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l3-1-i",
+          "questionRef": "2023 HL Section L3 Q1(i)",
+          "questionText": "Give two details about entertainment\nprogrammes in the Krasnodar region.",
+          "marks": 4,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            5
+          ],
+          "schemePages": [
+            19
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l3-1-i",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L3 Q1(i)",
+            "topicId": "russian-0-8",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              5
+            ],
+            "schemePages": [
+              19
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 102,
+      "oldExclusion": {
+        "ref": "2023 HL Section L3 Q1(ii)",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section III: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l3-1-ii",
+          "questionRef": "2023 HL Section L3 Q1(ii)",
+          "questionText": "What can active people do on the tour\nabroad? Give three details.",
+          "marks": 6,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            5
+          ],
+          "schemePages": [
+            19
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l3-1-ii",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L3 Q1(ii)",
+            "topicId": "russian-0-8",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              5
+            ],
+            "schemePages": [
+              19
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 103,
+      "oldExclusion": {
+        "ref": "2023 HL Section L3 Q2",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section III: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l3-2",
+          "questionRef": "2023 HL Section L3 Q2",
+          "questionText": "What is included in the price of a ski package\nholiday? Give three details.",
+          "marks": 6,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            5
+          ],
+          "schemePages": [
+            19
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l3-2",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L3 Q2",
+            "topicId": "russian-0-8",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              5
+            ],
+            "schemePages": [
+              19
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 104,
+      "oldExclusion": {
+        "ref": "2023 HL Section L3 Q3",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section III: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l3-3",
+          "questionRef": "2023 HL Section L3 Q3",
+          "questionText": "What tours does this travel agent offer in Russia?\nGive two details.",
+          "marks": 4,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            5
+          ],
+          "schemePages": [
+            19
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l3-3",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L3 Q3",
+            "topicId": "russian-0-8",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              5
+            ],
+            "schemePages": [
+              19
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 105,
+      "oldExclusion": {
+        "ref": "2023 HL Section L4 Q1",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section IV: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l4-1",
+          "questionRef": "2023 HL Section L4 Q1",
+          "questionText": "Give three details about Vlad.",
+          "marks": 6,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            6
+          ],
+          "schemePages": [
+            20
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l4-1",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L4 Q1",
+            "topicId": "russian-0-7",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              6
+            ],
+            "schemePages": [
+              20
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 106,
+      "oldExclusion": {
+        "ref": "2023 HL Section L4 Q2(i)",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section IV: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l4-2-i",
+          "questionRef": "2023 HL Section L4 Q2(i)",
+          "questionText": "Give one detail about Vlad’s parents.",
+          "marks": 2,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            6
+          ],
+          "schemePages": [
+            20
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l4-2-i",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L4 Q2(i)",
+            "topicId": "russian-0-1",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              6
+            ],
+            "schemePages": [
+              20
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 107,
+      "oldExclusion": {
+        "ref": "2023 HL Section L4 Q2(ii)",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section IV: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l4-2-ii",
+          "questionRef": "2023 HL Section L4 Q2(ii)",
+          "questionText": "Vlad has an unusual surname.\nGive two details.",
+          "marks": 4,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            6
+          ],
+          "schemePages": [
+            20
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l4-2-ii",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L4 Q2(ii)",
+            "topicId": "russian-0-7",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              6
+            ],
+            "schemePages": [
+              20
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 108,
+      "oldExclusion": {
+        "ref": "2023 HL Section L4 Q3",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section IV: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l4-3",
+          "questionRef": "2023 HL Section L4 Q3",
+          "questionText": "Vlad had many hobbies as a teenager.\nGive three details.",
+          "marks": 6,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            6
+          ],
+          "schemePages": [
+            20
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l4-3",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L4 Q3",
+            "topicId": "russian-0-5",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              6
+            ],
+            "schemePages": [
+              20
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "record": 109,
+      "oldExclusion": {
+        "ref": "2023 HL Section L4 Q4",
+        "reason": "the ask needs the recording, which no card can carry",
+        "evidence": "2023 HL Listening Comprehension Test, Listening Comprehension Section IV: the ask can only be answered from the recording. The Listening Comprehension Test is a separate SEC booklet whose own instructions read \"Seinnfear an t-ábhar trí huaire: an chéad uair ó thús deireadh, ansin ina thrí mhír agus sosanna eatarthu\" — the material will be played three times, first right through, then in three segments with pauses — and the paper prints no text of what is said. The only printed source of that material is the marking scheme's own \"APPENDIX 2: AURAL TEXTS\", the ANSWER document, so carrying it on the card would hand the student the answers with the question. No verified playback copy of the SEC recording is bound to this deck, so the card would be unanswerable from what it shows."
+      },
+      "countedLeaves": 1,
+      "uncoveredLeaves": 0,
+      "matchedCards": [
+        {
+          "id": "ru-2023-hl-l4-4",
+          "questionRef": "2023 HL Section L4 Q4",
+          "questionText": "What happened in Vlad’s life in 2020?\nGive one detail.",
+          "marks": 2,
+          "paperFileid": "LC099ALPA00BV.pdf",
+          "paperPages": [
+            6
+          ],
+          "schemePages": [
+            20
+          ],
+          "hasAudio": true,
+          "hasFixedNoAnswerLine": false,
+          "type": "rubric",
+          "allocation": null,
+          "sourceRecord": {
+            "id": "ru-2023-hl-l4-4",
+            "year": 2023,
+            "level": "higher",
+            "questionRef": "2023 HL Section L4 Q4",
+            "topicId": "russian-0-7",
+            "paperFileid": "LC099ALPA00BV.pdf",
+            "schemeFileid": "LC099ALP000EV.pdf",
+            "paperPages": [
+              6
+            ],
+            "schemePages": [
+              20
+            ],
+            "component": "A00",
+            "guidancePages": [
+              17
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "cardsWithNoPrintedAnswer": [
+    {
+      "id": "ru-2023-hl-se",
+      "printedMarks": 30,
+      "schemePages": [
+        12,
+        13
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2023-hl.pdf",
+      "schemeSha256": "63933208c9846387f93bba3f48c13ec4d8821d7f3af1597998bcc8c531d983de",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2023-hl.json"
+    },
+    {
+      "id": "ru-2023-hl-gw",
+      "printedMarks": 40,
+      "schemePages": [
+        14,
+        15,
+        16
+      ],
+      "schemePath": "examiner-reports/russian/schemes/2023-hl.pdf",
+      "schemeSha256": "63933208c9846387f93bba3f48c13ec4d8821d7f3af1597998bcc8c531d983de",
+      "reviewedAt": "2026-11-19",
+      "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2023-hl.json"
+    }
+  ],
+  "decision": "Every old printed ask has a card. Obsolete references are mapped to the actual printed task, preserving each printed choice. The exclusion record is retained here as history and removed from the active list.",
+  "listeningReleaseIssue": "Published SEC recordings are bound to the listening cards, but direct embedding is blocked; verified hosted playback remains required before release.",
+  "originalFileSha256": "ffa4662757fcb5bf473d693bad26c0f628b861109786461d46685a1e3a552916"
+}

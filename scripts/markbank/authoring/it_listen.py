@@ -565,11 +565,6 @@ OVERRIDES = {
         'claimMax': 2, 'perOption': 4,
         'options': ['Emotional/nervous', 'a little nervous/excited', 'worried'],
         'note': ['(any two elements)', '(If just one emotion is given and if another reason also given – allow an additional 1 mark only. Reasons - It’s the first time /Living together (is not easy)/(Facing) other people’s habits/ Language barriers)']},
-    # "4 marks" printed on the line ABOVE "8. His family (1) for at least
-    # (1m) two (1) weeks(1) (1+1+1+1)", so the reader never prices the ask.
-    (2018, 'hl', 3, 8): {'total': 4, 'points': [('His family', 1), ('for at least', 1),
-                                                ('two', 1), ('weeks', 1)],
-                         'note': ['His family (1) for at least (1m) two (1) weeks(1) (1+1+1+1)']},
     # Five elements priced (1) each under "Four elements required 4 marks
     # (1+1+1+1)": any four of the five, each its own claimable option.
     (2025, 'hl', 2, 4): {
@@ -588,6 +583,28 @@ OVERRIDES = {
         'note': ['in April (1m) and', 'May (1m) (before going away)', 'worked 1m'],
         'contextNote': ('The scheme prints “in April (1m) and” over “May (1m) (before going away)”. '
                         'The scheme also pays part marks for a shorter answer: “worked” 1 mark.')},
+    # "4. 4 marks" over three answers, each in two pieces priced (1m): any
+    # four of the six priced pieces, the three printed answers quoted.
+    (2019, 'hl', 2, 4): {
+        'claimMax': 4, 'perOption': 1,
+        'options': ['You can look', 'at the scenery', 'You can chat', 'with other passengers',
+                    'You can save money/it’s cheaper', 'if travel by night'],
+        'note': ['You can look (1m) at the scenery (1m)/', 'You can chat (1m) with other passengers (1m)/',
+                 'You can save money/it’s cheaper (1m) if travel by night (1m)',
+                 'You can visit all the European capitals/cities 1m'],
+        'contextNote': ('The scheme prints three answers in priced pieces: “You can look (1m) at the '
+                        'scenery (1m)/”, “You can chat (1m) with other passengers (1m)/”, “You can '
+                        'save money/it’s cheaper (1m) if travel by night (1m)”, for 4 marks. The scheme '
+                        'also pays part marks for a shorter answer: “You can visit all the European '
+                        'capitals/cities” 1 mark.')},
+    # "4. In the new (1m) library (1m) of her/ Grazia’s neighbourhood/ 3 marks"
+    # over "area (1m) (1+1+1)": three priced pieces, the head tariff printed
+    # inside the third.
+    (2020, 'hl', 2, 4): {
+        'points': [('In the new', 1), ('library', 1), ('of her/ Grazia’s neighbourhood', 1)],
+        'note': ['of her/ Grazia’s neighbourhood/', 'area (1m) (1+1+1)'],
+        'contextNote': ('The scheme prints the third piece as “of her/ Grazia’s neighbourhood/” and, '
+                        'after its tariff, “area (1m) (1+1+1)”.')},
     (2026, 'ol', 2, 4): {
         'claimMax': 4, 'perOption': 2,
         'options': ['A (prizewinning) app', 'to practice/learn', 'their verbs',
