@@ -352,6 +352,85 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2011 Higher Level — © State Examinations Commission.",
+    id: "swe-2011-hl-i-1", topicId: "swedish-0-1", conceptId: "ersatt-understrukna-orden-med-andra-som",
+    section: "I", questionRef: "2011 HL Section I Q1",
+    questionText: "Ersätt de understrukna orden med andra som betyder samma sak.\nGarv (stycke 2)\nBortåt (stycke 3)\nOmhuldande (stycke 6)\nDriver med (stycke 10)\nErsätt de följande understrukna uttrycken med andra som betyder samma sak:\n”landar man mjukare” (stycke 6)\noch\n”när det gäller” (stycke 11)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "skratt, flabb, gnägg, munterhet", marks: null, contextNote: "For “Garv”: The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme reprints the two instructions as: “Ersätt ordet med ett annat som betyder samma sak.” “Ersätt följande uttryck med andra som betyder samma sak:”." },
+    { id: "r-2", kind: "point", verbatim: "nästan, inemot, uppskattningsvis, omkring", marks: null, contextNote: "For “Bortåt”" },
+    { id: "r-3", kind: "point", verbatim: "beskyddande, vårdande, gynnande, ompysslande", marks: null, contextNote: "For “Omhuldande”" },
+    { id: "r-4", kind: "point", verbatim: "skojar, driver gäck, retar, tetas", marks: null, contextNote: "For “Driver med”" },
+    { id: "r-5", kind: "point", verbatim: "blir man inte så ledsen, går man inte ner sig så, får man lättare tröst, hämtar man sig fortare", marks: null, contextNote: "For “landar man mjukare”" },
+    { id: "r-6", kind: "point", verbatim: "när det kommer till kritan, när man står där, när man verkligen behöver det, när det är allvar", marks: null, contextNote: "For “när det gäller”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2011 Higher Level — © State Examinations Commission.",
+    id: "swe-2011-hl-ii-1", topicId: "swedish-1-0", conceptId: "vanskapen-framtidens-relation-stycke-skriv-uppsats",
+    section: "II", questionRef: "2011 HL Section II Q1",
+    questionText: "Vänskapen är framtidens relation (stycke 6). Skriv en uppsats på 100 ord där du uttrycker dina tankar om detta citat.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "I del I och II kommer följande kriterier att vägas in i betygssättningen:", marks: 30, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under the scheme's heading “Möjliga svar:”, as examples, not a checklist: “(stycke 4,5,6)Rubriken antyder att vänner i framtiden kommer att spela en mer central roll i våra liv. Kandidaten kan diskutera hur det moderna samhället med dess lösare struktur präglat av senare familjebildning och arbetslivets krav på flexibilitet och förnyelse göra långvariga förhållanden svåra att uppnå, eftersom de kräver obruten uppmärksamhet över lång tid. Det har också blivit status att ha många vänner, oberoende av hur djup vänskapen i själva verket är. Den urbana människan kan till sin räddning ta vänner som får fylla flera olika funktioner. Kandidaten bör diskutera riktigheten i påståendet och kunna anföra exempel som stöd för sin tes.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Ett tydligt syfte – kandidaten har förstått frågan och vet hur den ska besvaras – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ett sammanhängande svar – kandidaten använder relevant och lämplig fakta ur materialet på ett strukturerat och meningsfullt sätt – 30%.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Språklig klarhet – kandidaten uppvisar en språkbehandling som med tydlighet och med visst flyt kan uttrycka dennes idéer – 30%.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Formalia – grammatik, stavning – 10%.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEL II",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2011 Higher Level — © State Examinations Commission.",
+    id: "swe-2011-hl-iii-1", topicId: "swedish-1-1", conceptId: "skriv-uppsats-ungefar-300-ord-dar",
+    section: "III", questionRef: "2011 HL Section III Q1",
+    questionText: "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. Hur står sig mediernas skildring av vänskap jämfört med verkligheten?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under “Del III” the scheme reprints only the instruction and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts I and II only: “I del I och II kommer följande kriterier att vägas in i betygssättningen:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2011 Higher Level — © State Examinations Commission.",
+    id: "swe-2011-hl-iii-2", topicId: "swedish-1-1", conceptId: "flesta-manniskor-ungefar-lyckliga-som-bestamt",
+    section: "III", questionRef: "2011 HL Section III Q2",
+    questionText: "Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. ”De flesta människor är ungefär så lyckliga som de bestämt sig för att vara.” Abraham Lincoln [USA:s 16:e president, 1809-1865]",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under “Del III” the scheme reprints only the instruction and the two titles; it prints no answer, no content and no criteria for this part. Its criteria are printed for parts I and II only: “I del I och II kommer följande kriterier att vägas in i betygssättningen:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2012, level: "higher",
     paperFileid: "LC039ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2012 Higher Level — © State Examinations Commission.",
