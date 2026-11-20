@@ -100,8 +100,11 @@ def write(subject, year, level='hl', skip_lane=False):
             excl = json.load(fh)
         # a whole-question card ("Section I Q1") also answers the parts its
         # question prints ("Section I Q1(a)" ...)
+        # an exclusion is answered by a card at its ref, by a whole-question card over its letter, or (the
+        # reverse) by letter cards under a whole-question exclusion (Latvian 2021 Q1, carded per letter)
         kept = [e for e in excl if e.get('ref') not in refs
-                and not any(str(e.get('ref', '')).startswith(r + '(') for r in refs)]
+                and not any(str(e.get('ref', '')).startswith(r + '(') for r in refs)
+                and not any(r.startswith(str(e.get('ref', '')) + '(') for r in refs)]
         dropped = len(excl) - len(kept)
         with open(path, 'w', encoding='utf-8') as fh:
             json.dump(kept, fh, ensure_ascii=False, indent=1)

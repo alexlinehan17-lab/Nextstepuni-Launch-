@@ -2364,6 +2364,278 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2021 Higher Level — © State Examinations Commission.",
+    id: "lv-2021-hl-i-1-a", topicId: "latvian-0-0", conceptId: "iziet-caur-uguni-udeni-rindkopa",
+    section: "I", questionRef: "2021 HL Section I Q1(a)",
+    questionText: "Izskaidrojiet vārdus un vārdu savienojumus! iziet caur uguni un ūdeni (1. rindkopa)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "izturēt daudz un dažādu grūtību", marks: 1, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2021 Higher Level — © State Examinations Commission.",
+    id: "lv-2021-hl-i-1-b", topicId: "latvian-0-0", conceptId: "atpazistamibas-vilnis-rindkopa",
+    section: "I", questionRef: "2021 HL Section I Q1(b)",
+    questionText: "Izskaidrojiet vārdus un vārdu savienojumus! atpazīstamības vilnis (2. rindkopa)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "būt pazīstamam/populāram kādā konkrētā laikā", marks: 1, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2021 Higher Level — © State Examinations Commission.",
+    id: "lv-2021-hl-i-1-c", topicId: "latvian-0-0", conceptId: "dienas-iespaidi-rindkopa",
+    section: "I", questionRef: "2021 HL Section I Q1(c)",
+    questionText: "Izskaidrojiet vārdus un vārdu savienojumus! dienas iespaidi (4. rindkopa)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "pārdzīvojumi, piedzīvotais filmēšanas laikā", marks: 1, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2021 Higher Level — © State Examinations Commission.",
+    id: "lv-2021-hl-i-1-d", topicId: "latvian-0-0", conceptId: "dzives-sitieni-rindkopa",
+    section: "I", questionRef: "2021 HL Section I Q1(d)",
+    questionText: "Izskaidrojiet vārdus un vārdu savienojumus! dzīves sitieni (5. rindkopa)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "pēkšņi pārdzīvojumi/skumīgi brīži/noticis kaut kas slikts", marks: 1, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2021 Higher Level — © State Examinations Commission.",
+    id: "lv-2021-hl-i-1-e", topicId: "latvian-0-0", conceptId: "zvaigznu-slimiba-rindkopa",
+    section: "I", questionRef: "2021 HL Section I Q1(e)",
+    questionText: "Izskaidrojiet vārdus un vārdu savienojumus! zvaigžņu slimība (6. rindkopa)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "populārs cilvēks kļūst iedomīgs, grib, lai visa uzmanība tiktu veltīta tikai viņam", marks: 1, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2021 Higher Level — © State Examinations Commission.",
+    id: "lv-2021-hl-i-2", topicId: "latvian-0-1", conceptId: "kapec-rezisors-izvelejas-oto-brantevicu-galvenajai",
+    section: "I", questionRef: "2021 HL Section I Q2",
+    questionText: "Kāpēc režisors izvēlējās Oto Brantevicu galvenajai lomai filmā “Dvēseļu putenis”?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Režisors nemeklēja lomai jau gatavu karavīru un varoni, bet zēnu, kas ir naivs, bikls un nepieredzējis kā Aleksandra Grīna aprakstītais varonis – krietnu lauku puisi, kuram nāksies iet karā un pieaugt. Oto, būdams strādīgs puisis no laukiem, atbilda šīm tēlam. Oto arī atzīst, ka nesapņo kļūt par aktieri, bet robežsargu. Tas režisoram bijis pirmais intereses signāls, kuru uzrunāja arī Oto dziļā interese par vēsturi, viņa patiesais patriotisms un fakts, ka romānu “Dvēseļu putenis” no laba prāta izlasījis, pirms uzzinājis par filmas provēm. Oto bijis dabisks un patiess kameru priekšā.", marks: 5, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2021 Higher Level — © State Examinations Commission.",
+    id: "lv-2021-hl-i-3", topicId: "latvian-0-1", conceptId: "pamatojiet-kapec-var-apgalvot-filmesanas-laika",
+    section: "I", questionRef: "2021 HL Section I Q3",
+    questionText: "Pamatojiet, kāpēc var apgalvot, ka filmēšanas laikā Oto no zēna kļuvis par vīrieti!",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Oto bija tikai piecpadsmit gadu, kad viņu apstiprināja lomai, tagad viņš ir 12.klases skolēns 18 gadus vecs. Filmēšana ilga četrus gadus, no zēna pieaugot par jaunu vīrieti. Oto 15 gadu vecumā, apstiprināts galvenajai lomai, bija neparasti gara auguma, taču tagad viņš ir vēl garāks. No kautrīga zēna, kas sarkst kameru priekšā, viņš ir izaudzis par pārliecinātu vīrieti, kurš noteikti ietu karot par Latviju, ietu cauri ellei, debesīm, ugunij un ūdenim, lai tikai viņa ģimene būtu drošībā.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints these paragraphs under the question, with no mark on any of them: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Oto pirmizrādi gaida bez lielas sirds drebēšanas, tas nozīmē, ka viņš ir pārliecināts par sava darba rezultātu, viņam nav jākaunas par paveikto.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Agrāk pieredzes trūkuma dēļ noticējis pirmajai ziņai, kas izlasīta internetā, un to tālāk izplatījis sociālajos tīklos kā savu viedokli. Tagad par to jūtas neērti, jo sapratis, ka jāizlasa vismaz 20 dažādi ziņu avoti vairākās valodās, lai kaut aptuveni saprastu \"spēles laukumu\".", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Oto ir kompetents sarunas partneris.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2021 Higher Level — © State Examinations Commission.",
+    id: "lv-2021-hl-i-4", topicId: "latvian-0-1", conceptId: "rezisors-apgalvo-galveno-lomu-telotaji-tautas",
+    section: "I", questionRef: "2021 HL Section I Q4",
+    questionText: "Režisors apgalvo, ka \"galveno lomu tēlotāji \"no tautas\" ir liels risks\". Kas bija šie riski, un vai tie īstenojās?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dzintars Dreibergs uzsver, ka galveno lomu tēlotāji \"no tautas\" ir liels risks, jo pēc pirmā filmēšanās pusgada parasti jaunietis tēlo zvaigznes, izliekas, ka visu zina un prot, un tad nav iespējams režisoram normāli strādāt, ir krīze.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints these paragraphs under the question, with no mark on any of them: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Režisors bija apmierināts ar izvēli, jo Oto zvaigžņu slimība nepiemita, viņš bija vienkāršs, sirsnīgs un kautrīgs puisis no laukiem, kas dzīvē nemāk tēlot un melot, arī pēc filmēšanās negrib lieku uzmanību un gatavs smagi strādāt. Filmēšanas laikā strādāja apzinīgi, ne par ko nežēlojās.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2021 Higher Level — © State Examinations Commission.",
+    id: "lv-2021-hl-i-5", topicId: "latvian-0-1", conceptId: "agro-ritu-rudijums-darbs-lauku-saimnieciba",
+    section: "I", questionRef: "2021 HL Section I Q5",
+    questionText: "Kā “agro rītu rūdījums un darbs lauku saimniecībā” palīdzēja Oto filmēšanas laikā?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Agro rītu rūdījums ļoti palīdzējis filmēšanā, jo viņam nereti jau četros no rīta bija jāierodas uz grimēšanos, jāfilmējas. Oto ikdienā bija pieradis smagi strādāt dažādos, pat bargos laika apstākļos (auksts, līst vai ir sniegputenis), ievērot stingru dienas režīmu (no rītiem ļoti agri ceļas), darīt to, kas nepieciešams tagad un tūlīt.", marks: 5, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2021 Higher Level — © State Examinations Commission.",
+    id: "lv-2021-hl-i-6", topicId: "latvian-0-1", conceptId: "pamatojiet-kapec-oto-apgalvo-filmesana-nav",
+    section: "I", questionRef: "2021 HL Section I Q6",
+    questionText: "Pamatojiet, kāpēc Oto apgalvo, ka “filmēšana nav izklaide, tā nav arī jautra ballīte ar slaveniem cilvēkiem, bet ļoti smags, svarīgs darbs”!",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Filmēšanā prasa lielu izturību, intensīvu darbu. Visā darba periodā jaunietim bijusi tikai pusotra brīva diena.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints these paragraphs under the question, with no mark on any of them: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Filmēšanas apstākļi un darba uzdevumi bijuši smagi gan aktieriem, gan brīvprātīgajiem masu skatu dalībniekiem, brīžam uz fiziskās izturības robežas. Bieži vien pat aktieri strādāja līdz pagurumam, ka “knapi turas kājās. Un vakarā, aizmieg bezmaz turpat pie galda ar seju šķīvī”.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Aktieriem “pēc dažām kaujas ainām naktīs rādījušies murgi, mocījis bezmiegs no aizvadītās dienas iespaidiem”.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2021 Higher Level — © State Examinations Commission.",
+    id: "lv-2021-hl-ii-1", topicId: "latvian-1-0", conceptId: "neesmu-pasaules-pilsonis-esmu-savas-zemes",
+    section: "II", questionRef: "2021 HL Section II Q1",
+    questionText: "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) \"Es neesmu pasaules pilsonis, esmu savas zemes patriots.”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ikvienam šobrīd ir iespējams dzīvot jebkurā vietā neatkarīgi no tā, kur esi piedzimis. Dažādu apsvērumu dēļ bieži vien nākas pamest savu dzimto valsti, zemi. Lai kur mēs atrastos, tomēr vienmēr domājam par savām mājām, dzimto pusi. Lai cik labi mēs iejustos jaunajā mītnes zemē, tik un tā tu esi ciemiņš. Būdami arī prom no etniskās dzimtenes, mēs sekojam līdzi notikumiem Latvijā, fanojam par Latvijas sportistiem, mūziķiem.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints this paragraph under the title, with no mark inside it and no criteria for the part: an example, not a checklist." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2021 Higher Level — © State Examinations Commission.",
+    id: "lv-2021-hl-ii-2", topicId: "latvian-1-0", conceptId: "fakti-fakti-tos-nedrikst-izdomat-tikai",
+    section: "II", questionRef: "2021 HL Section II Q2",
+    questionText: "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) “Fakti ir fakti, tos nedrīkst izdomāt tikai tāpēc, ka jums tie nepatīk.” - Grēta Tūnberga",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Politiķiem patīk pakārtot faktus savām vajadzībām, interesēm, tāpēc viņi tos bieži pārveido, pielāgo, interpretē. Arī ikdienā cilvēki mēdz sagrozīt patiesību sev par labu.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints this paragraph under the title, with no mark inside it and no criteria for the part: an example, not a checklist. It closes it with “(Skolēnu atbildēs jābūt konkrētiem piemēriem.)”" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "higher",
     paperFileid: "LC549ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2022 Higher Level — © State Examinations Commission.",
