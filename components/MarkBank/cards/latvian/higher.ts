@@ -662,6 +662,183 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2013 Higher Level — © State Examinations Commission.",
+    id: "lv-2013-hl-i-2", topicId: "latvian-0-1", conceptId: "izskaidro-kapec-tomam-patika-piedalities-rakstisanas",
+    section: "I", questionRef: "2013 HL Section I Q2",
+    questionText: "Izskaidro kāpēc Tomam patika piedalīties rakstīšanas konkursos?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Iespējas rakstīt savus darbus un dot lasīt savus darbus citiem, deva iespēju Tomam uzlabot savas rakstīšanas prasmes un arī uzzināt ko jaunu, interesantu par pieaugušo pasauli, jo tolaik viņš bija tikai pusaudzis. Iespēja apgūt ko jaunu deva arī tas, ka viņš lasīja citu rakstnieku darbus un varēja paust savu viedokli.", marks: 5, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2013 Higher Level — © State Examinations Commission.",
+    id: "lv-2013-hl-i-3", topicId: "latvian-0-1", conceptId: "izskaidro-kapec-toms-iemacijas-anglu-valodu",
+    section: "I", questionRef: "2013 HL Section I Q3",
+    questionText: "Izskaidro kā un kāpēc Toms iemācijās angļu valodu (6.paragrāfs)?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lasot grāmatas, rakstot konkursos, apgūstot angļu valodu pie privātskolotāja, studējot , dzīvojot angliski runājošā vidē,", marks: null, contextNote: "For “KĀ”: The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints this question as: “Izskaidro, kā un kāpēc Toms iemācījās angļu valodu (6.rindkopa)!”." },
+    { id: "r-2", kind: "point", verbatim: "Lasot daudz zinātniskās fantastikas grāmatas, sacenšoties ar citiem zinātniskās fantastikas rakstniekiem, vēlas panākt to, ka viņš var pelnīt iztiku ar zinātniskās fantastikas darbus rakstīšanu.", marks: null, contextNote: "For “KĀPĒC”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2013 Higher Level — © State Examinations Commission.",
+    id: "lv-2013-hl-i-4", topicId: "latvian-0-1", conceptId: "butu-tik-viegli-rakstit-tad-jau",
+    section: "I", questionRef: "2013 HL Section I Q4",
+    questionText: "\"Ja būtu tik viegli rakstīt, tad jau visi pēc kārtas tos bestsellerus taisītu\". Pamato savu viedokli, kāpēc nav viegli rakstīt bestsellerus?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lielā mērā tas ir talanta jautājums. Lai uzrakstītu labu darbu, cilvēkam ir jābūt valodas absolūtai sajūtai. Rakstīšanas spēja, spēja formulēt, pateikt to, ko domā, pateikt to, ko vēlies, ir visa pamats un sākums. Protams, nepietiek tikai ar talantu, tas ir jāizkopj.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints this question as: “\"Ja būtu tik viegli rakstīt, tad jau visi pēc kārtas tos bestsellerus taisītu\". Pamato savu viedokli, kāpēc nav viegli rakstīt bestsellerus! (7.rindkopa)”." },
+    { id: "r-2", kind: "point", verbatim: "Tomam rakstīt patika jau skolas laikā. Viņš mērķtiecīgi izkopa talantu lasot un rakstot. Piedalījās internetā organizētajos rakstīšanas konkursos un mācījās akadēmisko angļu valodu, lai pats varētu profesionālāk rakstīt. Atteicās no labi apmaksāta darba un pārcēlās atpakaļ uz Latviju, lai rakstītu romānu.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2013 Higher Level — © State Examinations Commission.",
+    id: "lv-2013-hl-i-5", topicId: "latvian-0-1", conceptId: "manuprat-cilveks-kurs-nav-kaut-apsests",
+    section: "I", questionRef: "2013 HL Section I Q5",
+    questionText: "« Manuprāt, cilvēks, kurš nav ar kaut ko apsēsts, nav īpaši interesants,» Komentē šo apgalvojumu, pamatojot savu viedokli un analizē apsēstības lomu viņa dzīvē!",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kad cilvēks ir apsēsts ar kaut ko, viņš uz pasauli skatās savādāk nekā citi. Viņš mēģina piepildīt kādu savu sapni, un tāpēc šis cilvēks citiem liekas interesants un aizraujošs. Taču apsēstība var būt arī bīstama, ja cilvēks zaudē realitātes izjūtu un pakārto visu savai apsēstībai.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints this question as: “« Manuprāt, cilvēks, kurš nav ar kaut ko apsēsts, nav īpaši interesants». Komentē šo apgalvojumu, pamatojot savu viedokli un analizē apsēstības lomu viņa dzīvē! (13.rindkopa)”." },
+    { id: "r-2", kind: "point", verbatim: "Cilvēkam nav jābūt apsēstam (tas nav pats precīzākais jēdziens, kas izsaka cilvēka ilgas realizēt savu talantu), drīzāk cilvēkam jāmīl tas, ko viņš dara, jāizjūt nepārvaramas ilgas, nepieciešamību, vēlmi un dziņu sasniegt sevis izvēlēto mērķi, daudz strādājot. Toms to arī dara, viņa ilgas ir viņa lielākais dzinulis un motivācija nepārtraukti mācīties, smagi strādāt, lai pilnveidotu rakstīt prasmes.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2013 Higher Level — © State Examinations Commission.",
+    id: "lv-2013-hl-i-6", topicId: "latvian-0-1", conceptId: "toms-fantastikas-zanru-pats-nosaucis-par",
+    section: "I", questionRef: "2013 HL Section I Q6",
+    questionText: "Toms fantastikas žanru pats nosaucis par apjomīgu metaforu. Analizē šo ideju un pēc tavām domām kā tas ietekmē to , ko viņš raksta pats?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fantastikas žanrs ir apjomīga metafora. Fantastikas žanra priekšrocība ir tās izteiksmes veids. Uzrakstītajam lasītājs var ticēt vai neticēt. Fantastikas žanrs atļauj rakstniekam paralēli reālajai pasaulei radīt fantāzijas pasauli, tajā pašā laikā atbrīvojot no noteiktajiem ierobežojumiem. Tādēļ tā ir metafora. Šausmas un vardarbība var tikt attēlota fantāzijas situācijā, bet tas neizslēdz iespēju, ka tās var radīt līdzīgus zaudējumus un sekas, kādas ir reālajā pasaulē.", marks: 5, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2013 Higher Level — © State Examinations Commission.",
+    id: "lv-2013-hl-ii", topicId: "latvian-1-0", conceptId: "autoram-svarigi-but-atbildigam-par-vins",
+    section: "II", questionRef: "2013 HL Section II",
+    questionText: "\"Autoram ir svarīgi būt atbildīgam par to ko viņš raksta\". Kā Toms uzņēmies šo atbildību ? Komentē šo apgalvojumu, pamatojot savu viedokli ar piemēriem no teksta. (Uzrakstiet vismaz 100 vārdu garu aprakstu)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tomam ir svarīgi ne tikai zināt, kas patīk cilvēkiem, auditorijai, kurai viņš raksta. Viņam ir svarīgi būt atbildīgam par to, ko viņš raksta ,t.i., atklājot, parādot, cik postošas ir aprakstītās vardarbības un šausmu sekas. Viņš saka :„Nekad nav tā, ka sāp tikai otram.” Tā ir atbildīga rakstnieka iezīme – vienmēr paturēt prātā, ka vārdam ir liels spēks. Atbildības pazīme ir arī vēlme mērķtiecīgi pilnveidot savas rakstīt prasmes. Tā ir profesionālisma pazīme- neapstāties pie sasniegtā, bet augt kā rakstniekam, sasniedzot visaugstāko meistarības pakāpi visu valodas reģistru pārvaldīšanā, daiļdarba formas un satura izjūtā.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints this one paragraph under the task, with no mark inside it and no criteria for the part." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II DAĻA",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2013 Higher Level — © State Examinations Commission.",
+    id: "lv-2013-hl-iii-1", topicId: "latvian-1-0", conceptId: "uzrakstiet-eseju-par-vienu-esejam-vismaz",
+    section: "III", questionRef: "2013 HL Section III Q1",
+    questionText: "Uzrakstiet eseju par vienu no esejām (vismaz 300 vārdu)! \"Toms izpakojot čemodānus, jau kā jauns vīrietis. \" Vai tev ir līdzīga pieredze ? Izskaidro kāpēc / kāpēc nē !",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Līdzīga pieredze, iegūstot izglītību ārzemēs.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints the instruction and this title as “Uzrakstiet eseju par vienu no tēmām (vismaz 300 vārdu)!” “\"Toms izpakoja čemodānus jau kā jauns vīrietis. \"” “Vai tev ir līdzīga pieredze? Izskaidro, kāpēc / kāpēc ne!” Under it, with no heading and no mark, it prints these points: examples, not a checklist. It prints no criteria for the part." },
+    { id: "r-2", kind: "point", verbatim: "Pieredze strādājot ārzemēs.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Pilnveidojot savas svešvalodu valodas zināšanas ārzemēs.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Sekojot savam sapnim, aicinājumam.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Krasi mainot savu profesiju vai nodarbošanos.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2013 Higher Level — © State Examinations Commission.",
+    id: "lv-2013-hl-iii-2", topicId: "latvian-1-0", conceptId: "sekosi-sapnim-tava-dzive-bus-rugti",
+    section: "III", questionRef: "2013 HL Section III Q2",
+    questionText: "Uzrakstiet eseju par vienu no esejām (vismaz 300 vārdu)! \"Ja sekosi sapnim, tava dzīve būs rūgti salds ceļojums.\"",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints the part's head, the instruction and both titles. It prints five points under the first title and nothing under this one: no criteria, no descriptive line and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2014, level: "higher",
     paperFileid: "LC549ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2014 Higher Level — © State Examinations Commission.",
