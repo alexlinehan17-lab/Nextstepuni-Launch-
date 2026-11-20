@@ -725,6 +725,603 @@
   }
  },
  {
+  "id": "cs-2011-hl-i-2",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "autor-mluvi-smlouve-rodici-vysvetlete-zaklade",
+  "questionRef": "2011 HL Section I Q2",
+  "questionText": "Autor mluví o „smlouvě s rodiči“, vysvětlete na základě textu, co má autor na mysli.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Smlouva s rodiči by měla být uzavřena mezi školou a rodiči a měla by přenést zodpovědnost za chování dětí v době výuky ze školy směrem na rodiče. Účelem je chránit učitele před narůstající agresivitou žáků.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2011-hl-i-3",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "autor-pri-popisu-situace-skolach-zduraznuje",
+  "questionRef": "2011 HL Section I Q3",
+  "questionText": "Autor při popisu situace ve školách zdůrazňuje, že už je to 20 let od pádu totalitního režimu. Proč v této souvislosti zdůrazňuje právě tento fakt? Vysvětlete na základě textu.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pád totalitní režimu je obecně brán jako velký předěl v dějinách naší země, všechno se dělí na dobu „před“ a na dobu „po“. Prakticky všechno se v České republice změnilo, ne jen politické zřízení, ale celá společnost prošla obrovskou proměnou. Pokud něco zůstává stejné i po dvaceti letech od těchto změn, je to bráno jako něco neuvěřitelného a velmi špatného, tendence je změnit opravdu celé naše životy.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2011-hl-i-4",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "srovnejte-zaklade-textu-vlastnimi-slovy-kazen",
+  "questionRef": "2011 HL Section I Q4",
+  "questionText": "Srovnejte na základě textu – vlastními slovy – kázeň a postavení dětí v rodině dříve a dnes.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dříve zaujímaly děti v rodině jiné postavení, hlavou a nejdůležitějším členem rodiny byl její živitel, zpravidla otec, starší členy rodiny děti chovaly ve velké ústě, často např. svým rodičům a prarodičům vykaly; děti také měly na starosti velkou část domácích povinností, musely se podílet na chodu rodiny. V současné době se všechno přizpůsobuje dětem, děti dostávají všechno první a všeho nejvíc, nejsou na ně kladeny prakticky žádné povinnosti, jejich jedinou povinností je „se dobře učit“. Děti jsou rozmazlovány a zahrnovány velkým množstvím hmotných statků, často na úkor času stráveného společně s rodiči.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2011-hl-i-5",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "nich-kteri-nejsou-schopni-pred-svymi",
+  "questionRef": "2011 HL Section I Q5",
+  "questionText": "„A ti z nich, kteří nejsou schopni před svými žáky obhájit smysl konkrétního úseku vzdělávání, degradují sama sebe…“ Vysvětlete, proč si toto autor myslí, a napište svůj vlastní názor na toto tvrzení.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "V dřívější době byl učitel přirozenou autoritou, nejen svým postavením ve společnosti, ale zejména svými vědomostmi, byl to on, kdo „věděl nejvíc“. V současné době je učitelské vzdělání degradováno a postavení učitele také. Mnoho učitelů toto povolání vykovává jen jako „z nouze ctnost“, chybí jim zájem a nadšení, pouze reprodukují to, co děti najdou v učebnicích. Pak se dají v obsahu vědomostí snadno překonat a pokud ještě nejsou schopni přesvědčit žáky o tom, proč jsou vzdělání a vědomosti užitečné, jejich postavení tím velmi klesá, u dětí ztrácejí důvěru.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2011-hl-i-6",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "czech-0-1",
+  "conceptId": "deti-rozdil-predchozich-generaci-sebevedomejsi-napiste",
+  "questionRef": "2011 HL Section I Q6",
+  "questionText": "„... děti, na rozdíl od předchozích generací sebevědomější…“ – napište krátký text odkazující k textu a vysvětlující, proč jsou současné děti sebevědomější, než byli jejich rodiče.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sebevědomí dětí souvisí s výchovou, od počátku je jim nuceno, že bez sebevědomí to nikam nedotáhnou. Souvisí to také s obrovským nárůstem přístupu k informací a informací samotných. Zároveň jsou děti nuceny k velké samostatnosti, protože rodiče často tráví celé dny v práci.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2011-hl-ii",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2011,
+  "section": "II",
+  "topicId": "czech-1-0",
+  "conceptId": "postrada-ucitelske-vzdelani-svoji-nekdejsi-spolecenskou",
+  "questionRef": "2011 HL Section II",
+  "questionText": "„… postrádá učitelské vzdělání svoji někdejší společenskou hodnotu.“ Vysvětlete, proč si toto autor myslí, a napište komentář (minimum 100 slov), ve kterém vysvětlíte svůj názor na toto tvrzení.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Správný, plynulý komentář o minimálně 100 slovech.",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30%.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30%.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Efektivita jazyka – uchazeč je schopen používat komunikovat v jazyce jasně a plynule – 30%.",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pravidla: gramatika, pravopis – 10%.",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”. The scheme prints, as examples, not a checklist: “Souhlas, nesouhlas. Dříve měli učitelé naprosto rozdílné postavení než dnes, byli bráni za elitu společnosti. V současné době je postavení učitele i učitelské vzdělání degradováno, mnoho studentů chodí na pedagogické fakulty jen proto, že je nikam jinam nevzali, učitelé mají velmi nízké platy, a tak i materiálně často velmi zaostávají za svými žáky.”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ČÁST 2",
+   "title": "Reading text — answer in Czech",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Czech 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+  }
+ },
+ {
+  "id": "cs-2011-hl-iii-1",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2011,
+  "section": "III",
+  "topicId": "czech-1-0",
+  "conceptId": "uceni-dnesnich-mladych-lidi-vyzva",
+  "questionRef": "2011 HL Section III Q1",
+  "questionText": "Napište esej (minimum 300 slov) na jedno z následujících témat: Učení dnešních mladých lidí – je to výzva?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30%.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30%.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Efektivita jazyka – uchazeč je schopen používat komunikovat v jazyce jasně a plynule – 30%.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pravidla: gramatika, pravopis – 10%.",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "cs-2011-hl-iii-2",
+  "subjectId": "czech",
+  "level": "higher",
+  "year": 2011,
+  "section": "III",
+  "topicId": "czech-1-0",
+  "conceptId": "vetsina-lidi-tak-stastna-jak-stastna",
+  "questionRef": "2011 HL Section III Q2",
+  "questionText": "Napište esej (minimum 300 slov) na jedno z následujících témat: „Většina lidí je tak šťastná, jak šťastná se rozhodla být.“ (Abraham Lincoln, 16. prezident USA: 1809–1865)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30%.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30%.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Efektivita jazyka – uchazeč je schopen používat komunikovat v jazyce jasně a plynule – 30%.",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Pravidla: gramatika, pravopis – 10%.",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "cs-2012-hl-i-1",
   "subjectId": "czech",
   "level": "higher",
