@@ -2593,6 +2593,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2018 Higher Level — © State Examinations Commission.",
+    id: "hun-2018-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-min-100-max-150-szoban",
+    section: "II", questionRef: "2018 HL Section II Q1",
+    questionText: "Kommentár (min. 100, max. 150 szóban) Kommentálja a szöveg alapján min. 100 szóban, hogy miért mondhatjuk, hogy nem minden úgy valósult meg, ahogy azt Ludwig Erhard, a nyugatnémet gazdasági csoda atyja elképzelte 60 éve megjelent, mindenkinek jólétet ígérő téziseiben!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100, maximum 150 szóban tisztán, érthetően kifejtett saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “Azért nem minden úgy valósult meg, ahogy azt Ludwig Erhard, a nyugatnémet gazdasági csoda atyja elképzelte 60 éve megjelent, mindenkinek jólétet ígérő téziseiben, mert:”; “e szerint a gazdaság felhajtóereje az egyéni vállalkozás teljes szabadsága, a jobb teljesítményre és tisztes nyereségre ösztönző verseny, az állam pedig jogrendjével, a gazdasági környezet szabályozásával ügyel a verseny tisztaságára, és arra, hogy aki önhibáján kívül végképp lemarad, az se kerüljön a társadalmon kívülre (1. bk);”; “úgy gondolta, hogy a verseny a legeredményesebb eszköz a társadalmi jólét megteremtésére. „Minden gazdaság végső célja az, hogy az embereket kiszabadítsa az anyagi szűkölködésből” – foglalta össze credóját a könyvében. Ez sikerült is. Nyugat-Németország hatalmas léptekkel számolta fel a háborús károkat, majd indította be iparát, kereskedelmét. (3. bk);”; “A fő szerepet azonban a verseny kibontakozása játszotta (3. bk);”; “A szociális piacgazdaság elhozta-e mára mindenki számára a jólétet? Érdemes azt is megnézni, hogy ez mennyiben az emberek egyéni teljesítményének gyümölcse, vagyis mennyire tudtak élni a szociális piacgazdaság biztosította szabadsággal, az ideális esetben mindenki számára egyenlő feltételekkel. És az sem mindegy, hogy az a bizonyos jólét mindenki számára növekedett, vagy csak egyeseknek jut jobb lét. (5. bk);”; “Marcel Fratzscher közgazdászprofesszor úgy vélte, a szociális piacgazdaság ideálja ebből a szempontból megbukott, a mai Németország nem biztosít egyenlő feltételeket a gazdasági élet szereplőinek, az emberek nem azonos feltételekkel vesznek részt a gazdasági versenyben, az egyenlő indulófeltételek megteremtése lenne az állam feladata. (6. bk);”; “ma egy munkavállaló jövedelme, jóléte csak felerészben függ attól, hogy ő maga milyen szorgalmas, a másik felét születéstől hozza magával (7. bk);”; “Az egyenlőtlenség nemcsak újratermelődik, hanem ezen a mechanizmuson keresztül növekszik is. Az ország csak akkor mondhatja el magáról, hogy megfelel a valódi szociális piacgazdaság elveinek, ha a jelenleginél jóval nagyobb energiát fordít az esélyegyenlőség megteremtésére, újragondolja oktatási és képzési rendszerét (8. bk)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2018 Higher Level — © State Examinations Commission.",
+    id: "hun-2018-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-orszag-csak-akkor-mondhatja",
+    section: "III", questionRef: "2018 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! „Az ország csak akkor mondhatja el magáról, hogy megfelel a valódi szociális piacgazdaság elveinek, ha a jelenleginél jóval nagyobb energiát fordít az esélyegyenlőség megteremtésére”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2018 Higher Level — © State Examinations Commission.",
+    id: "hun-2018-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-ruha-teszi-embert-mennyiben",
+    section: "III", questionRef: "2018 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! A ruha teszi az embert? Mennyiben igaz az, hogy teljesen pontos értékítéletet tudunk alkotni az emberekről a ruházatuk alapján? Az érveket és ellenérveket is figyelembe véve fejtse ki véleményét egy min. 300 szavas esszében!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 1: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2019, level: "higher",
     paperFileid: "LC551ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2019 Higher Level — © State Examinations Commission.",
