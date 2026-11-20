@@ -1,0 +1,32 @@
+{
+  "status": "deferred-sittings-review",
+  "reviewedAt": "2026-11-20",
+  "cards": 8,
+  "review": [
+    {
+      "year": 2022,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        8,
+        11,
+        12
+      ],
+      "schemePages": [
+        12,
+        13
+      ],
+      "notes": "Q1a/b/c are alternatives; Q1a and Q1b refer to the Section A Q.1 passage and Q1c to Q.2. Q3 is printed in Irish and English; the English rendering is used and all five e-mail points are required. Q1b real/imaginary is open creative scope, not a finite response pool. No Section B task prints an illustration."
+    },
+    {
+      "source": "examiner-reports/french/papers/2022-hl-deferred-000-paper.pdf",
+      "sha256": "3b5d3fadf770d824f7ec9ad3ed6e65a817148841c2f26a0a72d9ed1c638904e6"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2022-hl-deferred.pdf",
+      "sha256": "4867d2d4f922f3a2bdc0d7204ed36aaea3a4312efe0312a4f9db1ce3fc0b58c9"
+    }
+  ],
+  "examSelectionPolicy": "Choosing two separately marked examination questions does not create one combined practice card. Each task is independently practicable at its own tariff."
+}

@@ -1,0 +1,1928 @@
+[
+  {
+    "id": "fr-2022-hl-deferred-reading-a1-q1-a",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A1 Q1(a) — Deferred sitting",
+    "questionText": "Où Hadrien a‐t‐il grandi ? (Section 1)",
+    "totalMarks": 5,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "Appropriate direct quotation OR correct manipulation acceptable.",
+        "• Dans la ferme de ses parents, (il a grandi au contact de la nature) — 5 Marks",
+        "- Dans la ferme de mes parents, (j’ai grandi au contact de la nature) — 4 Marks",
+        "- Dans une ferme — 4 Marks",
+        "- Au contact de la nature — 3 Marks",
+        "- Dans la ferme — 3 Marks",
+        "- Une ferme — 3 Marks",
+        "- La ferme — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a1-q1-b",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A1 Q1(b) — Deferred sitting",
+    "questionText": "Trouvez une phrase qui explique pourquoi Hadrien voulait voyager. (Section 1)",
+    "totalMarks": 5,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "One of :",
+        "• J’avais besoin d’élargir mon horizon — 5 Marks",
+        "• Je voulais marcher pour aller à la rencontre des autres et de moi‐même — 5 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a1-q2-a",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A1 Q2(a) — Deferred sitting",
+    "questionText": "Comment Hadrien apprenait‐il à reconnaître les plantes sauvages ? (Section 2)",
+    "totalMarks": 5,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "Appropriate direct quotation OR correct manipulation acceptable.",
+        "• Il lisait des manuels de botanique (pour apprendre………médicinales) — 5 Marks",
+        "- Je lisais des manuels de botanique (pour apprendre………médicinales) — 4 Marks",
+        "- Il lisait des manuels — 4 Marks",
+        "- Il passait tout son temps à la bibliothèque — 4 Marks",
+        "- Je lisais des manuels — 3 Marks",
+        "- Je passais tout mon temps à la bibliothèque — 3 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a1-q2-b",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A1 Q2(b) — Deferred sitting",
+    "questionText": "Qu’est‐ce qui indique qu’Hadrien avait l’intention de dormir en plein air ? (Section 2)",
+    "totalMarks": 5,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "Appropriate direct quotation OR correct manipulation acceptable.",
+        "One of :",
+        "• Il a apporté / Il a eu / Il avait (besoin d’) une tente (et un sac de couchage) — 5 Marks",
+        "• Il a apporté / Il a eu / Il avait (besoin d’) un sac de couchage — 5 Marks",
+        "- une tente (et un sac de couchage) — 4 Marks",
+        "- un sac de couchage — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a1-q3-a",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A1 Q3(a) — Deferred sitting",
+    "questionText": "Pourquoi était‐il nécessaire pour Hadrien d’avoir un animal avec lui ? (Section 2)",
+    "totalMarks": 5,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "Correct manipulation required",
+        "One of :",
+        "• Parce‐que son matériel était trop lourd (pour un seul homme) — 5 Marks",
+        "• Il avait (besoin de) beaucoup de matériel — 5 Marks",
+        "• Il avait une tente, un sac de couchage, une hache, sa / une guitare — 5 Marks",
+        "- Tout ça étant trop lourd pour un seul homme, il lui fallait un animal (pour l’aider, un cheval peut‐être) — 4 Marks",
+        "- Pour l’aider — 4 Marks",
+        "- Tout ça étant trop lourd pour un seul homme — 3 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a1-q3-b",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A1 Q3(b) — Deferred sitting",
+    "questionText": "Trouvez un exemple de ce qu’il mangeait en chemin. (Section 3)",
+    "totalMarks": 5,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "Appropriate direct quotation OR correct manipulation acceptable.",
+        "One of:",
+        "• Des champignons — 5 Marks",
+        "• des noix — 5 Marks",
+        "• des fruits — 5 Marks",
+        "- Champignons / noix / fruits — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a1-q4-a",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A1 Q4(a) — Deferred sitting",
+    "questionText": "D’après la troisième section, Hadrien\nne refusait jamais l’aide des agriculteurs\ncherchait de l’autorisation pour camper sur les fermes\nlaissait la vache errer librement chaque nuit\nne découvrait pas toujours d’eau à la campagne",
+    "totalMarks": 5,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Dans le cas des questions à choix multiple, indiquez la bonne réponse en cochant (✓ ) la case correcte.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "• ne découvrait pas toujours l'eau à la campagne (Fourth answer) — 5 Marks",
+        "Note:",
+        "➢ If candidate clearly identifies / highlights correct answer, without using a tick = 5 marks.",
+        "➢ If more than one answer offered = 0 marks."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "questionChoices": [
+      "ne refusait jamais l’aide des agriculteurs",
+      "cherchait de l’autorisation pour camper sur les fermes",
+      "laissait la vache errer librement chaque nuit",
+      "ne découvrait pas toujours d’eau à la campagne"
+    ]
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a1-q4-b",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A1 Q4(b) — Deferred sitting",
+    "questionText": "Pourquoi Hadrien n’a‐t‐il pas pu dormir, une nuit dans le Massif Central ? (Section 4)",
+    "totalMarks": 5,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "Appropriate direct quotation OR correct manipulation acceptable.",
+        "• (Parce‐qu') il a eu / faisait (très / tellement) froid — 5 Marks ‐ C'était en novembre — 4 Marks ‐ La température tombait (le soir) — 4 Marks ‐ Personne ne lui / leur avait proposé le gîte (et il a eu / faisait (très / tellement) froid) — 4 Marks ‐ (Car) c’était devenu trop dur de passer la nuit dehors — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a1-q5-a",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A1 Q5(a) — Deferred sitting",
+    "questionText": "Citez l’expression qui montre qu’Hadrien n’a pas toujours trouvé de logement quand il en demandait. (Section 4)",
+    "totalMarks": 5,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "• On nous a fermé la porte (au nez en me traitant de vagabond) — 5 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a1-q5-b",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A1 Q5(b) — Deferred sitting",
+    "questionText": "Dans la cinquième section, relevez un verbe à l’infinitif.",
+    "totalMarks": 5,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "One of:",
+        "• Renoncer — 5 Marks",
+        "• Confirmer — 5 Marks",
+        "• Poser — 5 Marks",
+        "• Repartir — 5 Marks",
+        "Note:",
+        "➢ Any extraneous element = 0 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a1-q6",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A1 Q6 — Deferred sitting",
+    "questionText": "Hadrien had prepared very well for his journey around France. Do you agree? Refer to the text in support of your answer. (Two points, about 50 words in total.)",
+    "totalMarks": 10,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.7; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 7,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais, il faut répondre en irlandais ou en anglais.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "Candidates may choose to agree or disagree using the following points.",
+        "Agree:",
+        "• Hadrien read up about edible and medicinal plants in the library.",
+        "• Brought the necessary equipment, such as tent, sleeping bag, and an axe with him.",
+        "• He arranged with his father to bring a cow to carry the baggage.",
+        "• He brought his guitar so that he could entertain himself.",
+        "Etc. etc.",
+        "Disagree:",
+        "• He hadn’t arranged anything about getting water for Camomile, so had to ask the farmers.",
+        "• He had difficulty feeding himself once November arrived.",
+        "• He hadn’t prepared adequately for the cold weather, so had to change his plans and ask farmers for shelter, which didn’t always work.",
+        "Etc. etc."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Give 2 distinct points. Each earns at most 5 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a2-q1-a",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A2 Q1(a) — Deferred sitting",
+    "questionText": "Trouvez l’expression qui indique qu’Alice est amusante. (Section 1)",
+    "totalMarks": 5,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.8; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "• Alice fait rire tout le monde (et monopolise l'attention) — 5 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a2-q1-b",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A2 Q1(b) — Deferred sitting",
+    "questionText": "Dans la première section, relevez une expression qui évoque l’ordre, et une expression qui évoque le désordre. L'ordre : Le désordre :",
+    "totalMarks": 10,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.8; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "(a) L'ordre",
+        "One of:",
+        "• Parfaitement ordonné — 5 Marks",
+        "• Tout est à sa place — 5 Marks",
+        "• Le lit est fait — 5 Marks",
+        "• Les vêtements pliés — 5 Marks",
+        "• Les livres rangés (par ordre alphabétique) — 5 Marks",
+        "(b) Le désordre",
+        "One of:",
+        "• (On pourrait croire qu') une bombe vient d'exploser — 5 Marks",
+        "• Des chaussettes / (et) des culottes éparpillées (sur la moquette) — 5 Marks",
+        "• Des magazines entassés (sur la table de nuit) — 5 Marks",
+        "• Des peluches jetées ça et là — 5 Marks",
+        "• (habituée à) ce chaos — 5 Marks",
+        "- Côté Alice, on pourrait croire qu'une bombe vient d'exploser (Full sentence) — 4 Marks",
+        "- Colombe est habituée à ce chaos (Full sentence) — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Give 2 distinct points. Each earns at most 5 marks; do not score the same point twice.",
+        "The scheme prints this head as 5 marks but pays 5 marks for each of the two required expressions (order, disorder); this card is scored out of 10 so that Q.2 adds up to its printed 60 marks.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a2-q2-a",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A2 Q2(a) — Deferred sitting",
+    "questionText": "Où Colombe garde‐t‐elle son roman ? (Section 2)",
+    "totalMarks": 5,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.9; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "Appropriate direct quotation OR correct manipulation acceptable.",
+        "• (Il est caché) sous une pile de papiers, au fond d'un tiroir — 5 Marks ‐ (Il est caché) sous une pile de papiers / au fond d'un tiroir — 4 Marks ‐ Sur un cahier (d’école) — 3 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a2-q2-b",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A2 Q2(b) — Deferred sitting",
+    "questionText": "Qu’est‐ce que Colombe imagine faire avec son roman, après l’avoir fini ? (Section 2)",
+    "totalMarks": 5,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.9; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "Appropriate direct quotation OR correct manipulation acceptable.",
+        "One of:",
+        "• Le corriger — 5 Marks",
+        "• Le taper à la machine — 5 Marks",
+        "• (Elle pourrait) l'envoyer par la poste à quelques éditeurs — 5 Marks",
+        "• Faire publier son roman — 5 Marks",
+        "- Qu’elle le corrige — 3 Marks",
+        "- Qu’elle le tape à la machine — 3 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a2-q3-a",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A2 Q3(a) — Deferred sitting",
+    "questionText": "Citez l’expression qui veut dire « être à la fois fâchée et étonnée ». (Section 3)",
+    "totalMarks": 5,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.9; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "• Tirée entre la colère et la surprise — 5 Marks",
+        "- Entre la colère et la surprise — 4 Marks",
+        "- La colère et la surprise — 3 Mark"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a2-q3-b",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A2 Q3(b) — Deferred sitting",
+    "questionText": "D’après la troisième section, pourquoi Colombe se sent‐elle malheureuse ?\nSa sœur veut détruire le roman.\nSon bureau est rempli de papiers.\nSon manuscrit n’est pas bien écrit.\nSa meilleure amie refuse de lui parler.",
+    "totalMarks": 5,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.9; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Dans le cas des questions à choix multiple, indiquez la bonne réponse en cochant (✓ ) la case correcte.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "• Son manuscrit n'est pas bien écrit (Third Answer) — 5 Marks",
+        "Note:",
+        "➢ If candidate clearly identifies / highlights correct answer, without using a tick = 5 marks.",
+        "➢ If more than one answer offered = 0 marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "questionChoices": [
+      "Sa sœur veut détruire le roman.",
+      "Son bureau est rempli de papiers.",
+      "Son manuscrit n’est pas bien écrit.",
+      "Sa meilleure amie refuse de lui parler."
+    ]
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a2-q4",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A2 Q4 — Deferred sitting",
+    "questionText": "Dans la quatrième section, que fait Colombe pour être certaine que les deux filles l’entendent arriver ? (Deux détails)",
+    "totalMarks": 10,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.10; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "Appropriate direct quotation OR correct manipulation acceptable.",
+        "• Elle fait claquer la porte (d'entrée) — 5 Marks",
+        "• Elle pose ses / les clefs bruyamment (dans un bol en cuivre sur une table) — 5 Marks",
+        "- Elle pose ses / les clefs dans un bol en cuivre sur une table — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Give 2 distinct points. Each earns at most 5 marks; do not score the same point twice.",
+        "The scheme prints this head as 5 marks but pays 5 marks for each of the two required details; this card is scored out of 10 so that Q.2 adds up to its printed 60 marks.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a2-q5",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A2 Q5 — Deferred sitting",
+    "questionText": "Quelle excuse Colombe donne‐t‐elle à sa sœur pour expliquer son retour ? (Section 4)",
+    "totalMarks": 5,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.10; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux autres questions en français, il faut répondre en français.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "Correct manipulation required",
+        "One of:",
+        "• (Elle dit que) sa / la prof d'anglais est malade — 5 Marks",
+        "• (Elle dit que) son / le prof d'anglais est malade — 5 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-reading-a2-q6",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 HL Section A2 Q6 — Deferred sitting",
+    "questionText": "What do we learn about the character of Colombe from this extract? Refer to the text in support of your answer. (Two points, about 50 words in total.)",
+    "totalMarks": 10,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, pp.11; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais, il faut répondre en irlandais ou en anglais.",
+        "In both Reading Comprehensions, the following general points apply:",
+        "Questions with sub‐divisions [e.g. (a) and (b)] must be answered on separate lines allocated.",
+        "Where separate spaces are provided, and two or more answers are placed on one line, this is regarded as one answer and is marked accordingly.",
+        "Any extra sub‐division is rewarded only if one of the previous answers to the question is cancelled.",
+        "Penalties:",
+        "1. Excess material: ‐1 or ‐2 marks.",
+        "2. All other errors to be penalised minus 1 max. per question/segment. These include:",
+        "Inappropriate quotation.",
+        "Manipulation when not required.",
+        "Language/grammar errors in manipulation.",
+        "When manipulation is required and not attempted.",
+        "Answers given in the wrong language, e.g. answers in Irish/English when French required as in Compréhension Écrite; q.6 segments answered in French.",
+        "Note: The penalty for excess may apply in conjunction with any of the penalties mentioned in 2 above"
+      ],
+      "answerGuide": [
+        "• Colombe is quiet, and very different from her sister, Alice.",
+        "• People don’t notice her.",
+        "• She likes everything to be tidy and in order, so she keeps her bed made, her clothes tidy, and her books arranged in alphabetical order.",
+        "• She doesn’t give out to Alice about her untidiness, but just ignores it.",
+        "• She’s secretive, as she hides the fact that she’s writing a novel from her parents and sister, and hides the exercise books she uses in a drawer.",
+        "• She is a perfectionist, as she wants to finish, correct and type out the manuscript.",
+        "• She is dreamy: imagines an editor phoning her to say he will publish the novel.",
+        "• She is sensitive and easily hurt when Alice and Myriam read her novel, and she thinks it isn’t good enough.",
+        "• She is devious: she pretends she had only just arrived home, and made sure she made noise, and she lied about her teacher being ill.",
+        "Etc., etc."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Give 2 distinct points. Each earns at most 5 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  }
+]

@@ -2341,7 +2341,7 @@ const reRubricCards = SUBJECT_ID === 'religious-education' && existsSync(resolve
 // over the generated cards of each level module.
 const reviewedOverlaySubject = ['applied-maths', 'russian', 'japanese'].includes(SUBJECT_ID);
 const moduleImports = reviewedOverlaySubject ? "import { withReviewedCards } from './reviewed';"
-  : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\n"
+  : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\nimport { deferredCardsForLevel } from './deferred';\n"
     : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n"
       : reRubricCards.length ? "import { rubricCardsForLevel } from './rubric';\n" : '';
 // Cards carrying exam-year curriculum nodes (Agricultural Science's reviewed
@@ -2384,7 +2384,7 @@ ${historyEssayMarking[level].map(json => `  ${json.replace(/\n/g, '\n  ')},`).jo
 ` : ''}
 export const CARDS: SecCard[] = ${reviewedOverlaySubject ? 'withReviewedCards(' : ''}[
 ${cards.join('\n')}
-${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : reRubricCards.length ? `  ...rubricCardsForLevel(${q(level)}),\n` : ''}]${reviewedOverlaySubject ? `, '${level}')` : ''};
+${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n  ...deferredCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : reRubricCards.length ? `  ...rubricCardsForLevel(${q(level)}),\n` : ''}]${reviewedOverlaySubject ? `, '${level}')` : ''};
 `;
 
 /* A level gets a module when the subject HAS that level, never as a matter of
@@ -2407,7 +2407,8 @@ for (const level of LEVELS) {
   const reviewedAliases = SUBJECT_ID === 'japanese'
     ? JSON.parse(readFileSync(resolve(OUT_DIR, 'aliases.json'), 'utf8')) : {};
   const additionsCount = SUBJECT_ID === 'french'
-    ? ['writing.json', 'reading.json', 'cloze.json', 'listening.json'].flatMap(name => JSON.parse(readFileSync(resolve(OUT_DIR, name), 'utf8'))).filter(card => card.level === level).length
+    ? ['writing.json', 'reading.json', 'cloze.json', 'listening.json', 'deferred-writing.json', 'deferred-reading.json', 'deferred-cloze.json']
+      .flatMap(name => JSON.parse(readFileSync(resolve(OUT_DIR, name), 'utf8'))).filter(card => card.level === level).length
     : 0;
   sizes[level] = reviewedOverlaySubject ? new Set([...originalIds.filter(id => !Object.hasOwn(reviewedAliases, id)), ...reviewedIds]).size : levelCards.length + additionsCount + levelRubrics;
   process.stderr.write(`  ${level}: ${sizes[level]} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);

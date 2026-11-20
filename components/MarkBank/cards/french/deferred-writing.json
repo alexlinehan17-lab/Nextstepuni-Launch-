@@ -1,0 +1,1815 @@
+[
+  {
+    "id": "fr-2022-hl-deferred-writing-b1a",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 HL Section B Q1(a) — Deferred sitting",
+    "questionText": "Dans la Section A, Q.1, Hadrien dit que « J’avais besoin d’élargir mon horizon ». Pensez‐vous que c’est une bonne idée de passer une année sabbatique après l’examen de An Ard Teistiméireacht / du Leaving Certificate et de faire quelque chose de différent ?\n(90 mots environ)",
+    "totalMarks": 40,
+    "topicId": "french-7-1",
+    "conceptId": "french-writing-french-7-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1A",
+      "title": "Printed writing task",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, p.11 (PDF page 13) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 13,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "idiomatic French",
+                "rich vocabulary",
+                "complex sentences well handled",
+                "few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "guidance": [
+                "vocabulary adequate",
+                "verbs generally correct",
+                "rule of agreement generally respected",
+                "not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "problems with vocabulary",
+                "most verbs incorrect",
+                "basic rule of agreement not respected",
+                "many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Write your answer in French.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-text",
+        "label": "Section A passage",
+        "title": "Reading passage referenced by this task",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "SEC French 2022 Higher Level deferred examination — © State Examinations Commission.",
+        "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+      }
+    ]
+  },
+  {
+    "id": "fr-2022-hl-deferred-writing-b1b",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 HL Section B Q1(b) — Deferred sitting",
+    "questionText": "Selon la Section A, Q.1, Hadrien dormait en plein air la plupart du temps pendant sa traversée de la France. Un jour, vous et quelques ami(e)s avez décidé de faire du camping à la campagne. Mais, malheureusement, vous avez rencontré des problèmes ! Racontez ce qui s’est passé. (Votre récit peut être réel ou imaginaire.)\n(90 mots environ)",
+    "totalMarks": 40,
+    "topicId": "french-6-7",
+    "conceptId": "french-writing-french-6-7",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, p.11 (PDF page 13) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 13,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "idiomatic French",
+                "rich vocabulary",
+                "complex sentences well handled",
+                "few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "guidance": [
+                "vocabulary adequate",
+                "verbs generally correct",
+                "rule of agreement generally respected",
+                "not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "problems with vocabulary",
+                "most verbs incorrect",
+                "basic rule of agreement not respected",
+                "many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Write your answer in French.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-text",
+        "label": "Section A passage",
+        "title": "Reading passage referenced by this task",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "SEC French 2022 Higher Level deferred examination — © State Examinations Commission.",
+        "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+      }
+    ]
+  },
+  {
+    "id": "fr-2022-hl-deferred-writing-b1c",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 HL Section B Q1(c) — Deferred sitting",
+    "questionText": "Dans la Section A, Q.2, Colombe et sa sœur Alice partagent une chambre. Les rapports entre frères ou sœurs peuvent être difficiles. Pourtant, être enfant unique n’est pas facile non plus. Qu’en pensez‐vous ?\n(90 mots environ)",
+    "totalMarks": 40,
+    "topicId": "french-7-7",
+    "conceptId": "french-writing-french-7-7",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1C",
+      "title": "Printed writing task",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, p.11 (PDF page 13) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 13,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "idiomatic French",
+                "rich vocabulary",
+                "complex sentences well handled",
+                "few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "guidance": [
+                "vocabulary adequate",
+                "verbs generally correct",
+                "rule of agreement generally respected",
+                "not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "problems with vocabulary",
+                "most verbs incorrect",
+                "basic rule of agreement not respected",
+                "many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Write your answer in French.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-text",
+        "label": "Section A passage",
+        "title": "Reading passage referenced by this task",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "SEC French 2022 Higher Level deferred examination — © State Examinations Commission.",
+        "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+      }
+    ]
+  },
+  {
+    "id": "fr-2022-hl-deferred-writing-b2",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 HL Section B Q2 — Deferred sitting",
+    "questionText": "C’est le mois de mai, la fin de l’année de Terminale. Vous allez bientôt dire « au revoir » à vos professeurs et à vos camarades de classe. Vous avez beaucoup de bons souvenirs de votre vie scolaire. Qu’est‐ce que vous notez à ce sujet dans votre journal intime ?\n(75 mots environ)",
+    "totalMarks": 30,
+    "topicId": "french-6-0",
+    "conceptId": "french-writing-french-6-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B2",
+      "title": "Printed writing task",
+      "pages": [
+        11
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, p.11 (PDF page 13) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 13,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "idiomatic French",
+                "rich vocabulary",
+                "complex sentences well handled",
+                "few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "vocabulary adequate",
+                "verbs generally correct",
+                "rule of agreement generally respected",
+                "not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "problems with vocabulary",
+                "most verbs incorrect",
+                "basic rule of agreement not respected",
+                "many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Write your answer in French.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-writing-b3",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 HL Section B Q3 — Deferred sitting",
+    "questionText": "Your parents wish to organise a house exchange with a family in France for a month. Write an e‐mail in French to the family and include the following details: \n• Give a brief description of the accommodation you require \n• Tell them some details about your area \n• Describe some activities that could interest tourists in Ireland \n• Say you will travel to France by boat and will bring a car \n• Say that your family likes cycling and ask if they have bicycles.\n(about 75 words)",
+    "totalMarks": 30,
+    "topicId": "french-6-3",
+    "conceptId": "french-writing-french-6-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B3",
+      "title": "Printed writing task",
+      "pages": [
+        11
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, p.11 (PDF page 13) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 13,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Q. 3 – no particular layout required"
+          ],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "idiomatic French",
+                "rich vocabulary",
+                "complex sentences well handled",
+                "few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "vocabulary adequate",
+                "verbs generally correct",
+                "rule of agreement generally respected",
+                "not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "problems with vocabulary",
+                "most verbs incorrect",
+                "basic rule of agreement not respected",
+                "many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Write your answer in French.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-writing-b4",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 HL Section B Q4 — Deferred sitting",
+    "questionText": "Vos parents proposent que toute la famille passe une semaine entière sans écran. Alors, pas de téléphone portable, pas de tablette, pas d’ordinateur ! Quelle est votre réaction ?\n(75 mots environ)",
+    "totalMarks": 30,
+    "topicId": "french-7-6",
+    "conceptId": "french-writing-french-7-6",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B4",
+      "title": "Printed writing task",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, p.11 (PDF page 13) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 13,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "idiomatic French",
+                "rich vocabulary",
+                "complex sentences well handled",
+                "few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "vocabulary adequate",
+                "verbs generally correct",
+                "rule of agreement generally respected",
+                "not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "problems with vocabulary",
+                "most verbs incorrect",
+                "basic rule of agreement not respected",
+                "many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Write your answer in French.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-writing-b5",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 HL Section B Q5 — Deferred sitting",
+    "questionText": "« Nous ne devrions pas garder les animaux en captivité dans les zoos. C’est cruel ! »\n\nMartine, 17 ans\n\nÊtes‐vous d’accord ?\n(75 mots environ)",
+    "totalMarks": 30,
+    "topicId": "french-7-0",
+    "conceptId": "french-writing-french-7-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B5",
+      "title": "Printed writing task",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, p.11 (PDF page 13) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 13,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "idiomatic French",
+                "rich vocabulary",
+                "complex sentences well handled",
+                "few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "vocabulary adequate",
+                "verbs generally correct",
+                "rule of agreement generally respected",
+                "not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "problems with vocabulary",
+                "most verbs incorrect",
+                "basic rule of agreement not respected",
+                "many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Write your answer in French.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2022-hl-deferred-writing-b6",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010ALP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 HL Section B Q6 — Deferred sitting",
+    "questionText": "L’important dans le sport, c’est de participer. Gagner n’est pas essentiel.\n\nDonnez vos réactions.\n(75 mots environ)",
+    "totalMarks": 30,
+    "topicId": "french-7-5",
+    "conceptId": "french-writing-french-7-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B6",
+      "title": "Printed writing task",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2022 Higher Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Higher Level marking scheme, deferred examination, p.11 (PDF page 13) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV-deferred.pdf",
+      "p": 13,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "idiomatic French",
+                "rich vocabulary",
+                "complex sentences well handled",
+                "few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "vocabulary adequate",
+                "verbs generally correct",
+                "rule of agreement generally respected",
+                "not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "problems with vocabulary",
+                "most verbs incorrect",
+                "basic rule of agreement not respected",
+                "many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Write your answer in French.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  }
+]

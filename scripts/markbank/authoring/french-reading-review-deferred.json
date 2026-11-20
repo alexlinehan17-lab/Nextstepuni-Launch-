@@ -1,0 +1,67 @@
+{
+  "status": "deferred-sittings-review",
+  "reviewedAt": "2026-11-20",
+  "expectedCards": 20,
+  "papers": [
+    {
+      "year": 2022,
+      "level": "hl",
+      "sitting": "deferred",
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2022-hl-deferred-000-paper.pdf",
+          "sha256": "3b5d3fadf770d824f7ec9ad3ed6e65a817148841c2f26a0a72d9ed1c638904e6"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2022-hl-deferred.pdf",
+          "sha256": "4867d2d4f922f3a2bdc0d7204ed36aaea3a4312efe0312a4f9db1ce3fc0b58c9"
+        }
+      ],
+      "tariffDecisions": {
+        "A2-Q1-b": {
+          "printedHeadMarks": 5,
+          "perPointMarks": 5,
+          "requiredPoints": 2,
+          "schemePage": 8,
+          "reason": "Paper page 6 asks for one expression that evokes order AND one that evokes disorder, with two labelled answer lines (L’ordre : / Le désordre :). Scheme page 8 prints the head “1 (b) … 5 Marks” but prices each required expression at 5 Marks under its own “(a) L’ordre” and “(b) Le désordre”. Two 5-mark expressions reconcile Q.2 to the 60 marks printed on its head; one would leave it at 50.",
+          "sourceNote": "The scheme prints this head as 5 marks but pays 5 marks for each of the two required expressions (order, disorder); this card is scored out of 10 so that Q.2 adds up to its printed 60 marks."
+        },
+        "A2-Q4": {
+          "printedHeadMarks": 5,
+          "perPointMarks": 5,
+          "requiredPoints": 2,
+          "schemePage": 10,
+          "reason": "Paper page 7 asks “(Deux détails)”. Scheme page 10 prints the head “4 … 5 Marks” but prices each of the two details at 5 Marks. Two 5-mark details reconcile Q.2 to the 60 marks printed on its head.",
+          "sourceNote": "The scheme prints this head as 5 marks but pays 5 marks for each of the two required details; this card is scored out of 10 so that Q.2 adds up to its printed 60 marks."
+        }
+      },
+      "pricedBoundaries": [
+        "1:1a:5",
+        "1:1b:5",
+        "1:2a:5",
+        "1:2b:5",
+        "1:3a:5",
+        "1:3b:5",
+        "1:4a:5",
+        "1:4b:5",
+        "1:5a:5",
+        "1:5b:5",
+        "1:6:10",
+        "2:1a:5",
+        "2:1b:10",
+        "2:2a:5",
+        "2:2b:5",
+        "2:3a:5",
+        "2:3b:5",
+        "2:4:10",
+        "2:5:5",
+        "2:6:10"
+      ],
+      "generalRulesPage": 3,
+      "guideHeadings": [
+        "(a) L'ordre",
+        "(b) Le désordre"
+      ]
+    }
+  ]
+}
