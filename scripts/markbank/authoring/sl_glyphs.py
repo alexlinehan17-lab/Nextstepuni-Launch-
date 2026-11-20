@@ -45,6 +45,8 @@ from glyph_ids import MANGLED, load_table, family, page_glyphs  # noqa: E402
 ROMANIAN = set('ăâîşșţțĂÂÎŞȘŢȚ')
 CZECH = set('áčďéěíňóřšťúůýžÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ')
 CROATIAN = set('čćđšžČĆĐŠŽ')
+# Greek and Coptic (U+0370-03FF) and Greek Extended (U+1F00-1FFF), as build-deck's REAL class
+GREEK = {chr(c) for c in list(range(0x370, 0x400)) + list(range(0x1F00, 0x2000))}
 BULGARIAN = set('абвгдежзийклмнопрстуфхцчшщъьюяѝАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЮЯЍ')
 MIN_SIGHTINGS, MIN_SHARE = 3, 0.95
 
@@ -146,6 +148,18 @@ SUBJECTS = {
     'croatian': {'docs': {2015: ('scheme',)}, 'alphabet': CROATIAN,
                  'rendered': {'Georgia|264': '\u0110', 'Georgia|253': '\u010c'}, 'suspect': set(),
                  'standin': lambda c: False, 'positional': True},
+    # Modern Greek 2015 (scheme): Times New Roman and Calibri Type0 fonts with no
+    # Unicode for any Greek letter ("ǺǹĬȂȅȁȅīǿȀǼȈ" for its heading). By position.
+    # Eight Times New Roman capitals with fewer than three clean sightings, each
+    # settled by cropping its own box at 400 dpi in its word (p3-p4): 299 Γ
+    # ("ΒΑΘΜΟΛΟΓΙΚΕΣ"), 300 Θ, 498 Έ ("Ένα"), 506 Β, 513 Λ, 516 Ξ ("ΕΝΔΕΙΞΕΙΣ"),
+    # 518 Π ("Πες"), 522 Υ ("Υπάρχουν").
+    'modern-greek': {'docs': {2015: ('scheme',)}, 'alphabet': GREEK,
+                     'rendered': {'TimesNewRoman|299': '\u0393', 'TimesNewRoman|300': '\u0398',
+                                  'TimesNewRoman|498': '\u0388', 'TimesNewRoman|506': '\u0392',
+                                  'TimesNewRoman|513': '\u039b', 'TimesNewRoman|516': '\u039e',
+                                  'TimesNewRoman|518': '\u03a0', 'TimesNewRoman|522': '\u03a5'}, 'suspect': set(),
+                     'standin': lambda c: False, 'positional': True},
     'bulgarian': {'docs': {2015: ('scheme',)}, 'alphabet': BULGARIAN,
                   'rendered': {'TimesNewRoman|630': '\u044c'}, 'suspect': set(),
                   'standin': lambda c: False},
