@@ -228,19 +228,19 @@
     "refsHash": "223459d1ccf6fd01"
   },
   "danish": {
-    "cards": 104,
-    "contentHash": "9a350b49de1bc819",
+    "cards": 110,
+    "contentHash": "b7e8fe278f849e40",
     "coveragePct": 100.0,
-    "covered": 104,
-    "excluded": 21,
-    "leaves": 125,
+    "covered": 110,
+    "excluded": 16,
+    "leaves": 126,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 13,
       "hash": "d51ea34693abb0f0"
     },
-    "refsHash": "b7dc191173828b74"
+    "refsHash": "914819c85e6914a5"
   },
   "dcg": {
     "cards": 1284,
