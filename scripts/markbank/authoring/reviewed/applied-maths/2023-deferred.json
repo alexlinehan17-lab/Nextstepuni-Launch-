@@ -1,0 +1,2806 @@
+{
+  "subjectId": "applied-mathematics",
+  "year": 2023,
+  "sitting": "deferred",
+  "reviewedAt": "2026-11-20",
+  "reviewMethod": "Independent visual sweep of every page of the 2023 deferred Higher Level English question paper (LC020ALP000EV, 44 pages: cover, instructions, Questions 1-10 on pages 3-41 with the answer-space-only pages 13, 16, 20, 25 and 27, extra-work pages 42-43 and the back cover) and its deferred marking scheme (18 pages: cover, the note on deferred schemes on page 2, a title page, solutions for all ten questions on pages 4-16, the blank page 17 and the back cover), each rendered to PNG at 1.5x and read. Every printed ask, mark placement, scale and part total was transcribed against the original layout, and the scheme arithmetic was re-worked line by line, including the matrix product, the Dijkstra and dynamic-programming tables, and the early and late times. The scheme prints a solution and marks for every part of all ten questions, so no task is unpriced. June 2023 Higher (same syllabus and booklet format: answer any eight questions) was the template for task boundaries, credit ladders, topics and wording, with June 2024 and 2025 for scale shapes. The scheme title page is headed \"M32C 2024\" although its cover reads Leaving Certificate 2023 Deferred Examinations; no mark is affected. No earlier deferred cards exist, so there are no card corrections.",
+  "progressIdentityReview": "No 2023 deferred Applied Mathematics cards have shipped (no am-2023-hl-deferred- identity in the card source, the compiled reviewed bank or the alias map), so no identity is retained or retired. Suffixes follow June 2023 style; separately priced outputs inside one printed ask use descriptive suffixes (3-i-cd, 3-ii-g6, 3-iii-g6, and 8-i-a with 8-i-b). The deferred card prefix differs from June's am-2023-hl- so these suffixes cannot collide with June 2023 cards.",
+  "papers": [
+    {
+      "level": "higher",
+      "paperSha256": "d8eb7419370e43e263d0ef74b4eaec7f3c8a903962c313b67ad5bfcc0af91b72",
+      "schemeSha256": "571de26eb618aa4157f5a92f3e3629b86d3559aed99d017c17f2196595a58f76",
+      "questionPages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "printedTaskCount": 49,
+      "practiceTaskCount": 53,
+      "availableMarks": 500,
+      "questionMarks": {
+        "1": 50,
+        "2": 50,
+        "3": 50,
+        "4": 50,
+        "5": 50,
+        "6": 50,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      },
+      "selectionDirectives": [
+        {
+          "page": 2,
+          "text": "Answer any eight questions.",
+          "classification": "Whole-examination choice",
+          "reason": "Candidates answer eight of the ten questions. Every printed question is included as practice tasks; whole-examination combinations are not additional tasks.",
+          "decision": "Whole-examination choice; all ten questions included."
+        },
+        {
+          "page": 24,
+          "text": "sub‐contractors. The manager wishes to choose the optimal policy for maintaining the road,",
+          "classification": "Not a selection directive",
+          "reason": "In Q6(b) \"choose the optimal policy\" describes the road manager's decision problem, which the candidate solves by computing the cheapest plan; it offers no choice of question, part or answer.",
+          "decision": "Narrative description of the optimisation problem, not an answer choice."
+        }
+      ],
+      "selectionReview": [
+        {
+          "wording": "Answer any eight questions.",
+          "classification": "Whole-examination choice",
+          "reason": "Candidates answer eight of the ten questions. Every printed question is included as practice tasks; whole-examination combinations are not additional tasks.",
+          "decision": "Whole-examination choice; all ten questions included."
+        },
+        {
+          "wording": "sub‐contractors. The manager wishes to choose the optimal policy for maintaining the road,",
+          "classification": "Not a selection directive",
+          "reason": "In Q6(b) \"choose the optimal policy\" describes the road manager's decision problem, which the candidate solves by computing the cheapest plan; it offers no choice of question, part or answer.",
+          "decision": "Narrative description of the optimisation problem, not an answer choice."
+        },
+        {
+          "wording": "Finite-looking routes, plans, algorithm names, assumptions and paired values",
+          "classification": "No finite answer pool",
+          "reason": "The routes through the computer network (Q2(a)(ii)) and the road-maintenance network (Q6(b)) are data for single optimisation tasks, not choices of task. Naming the algorithm used and outlining the model's assumptions (Q10(i)) admit open valid answers. Paired outputs follow the published placements: the acceleration and tension in Q8(ii), the speed and direction in Q10(iii) and the two sketches in Q6(a)(iii) each share one placement.",
+          "decision": "No finite alternative answer pools occur."
+        }
+      ],
+      "markingGuideNote": "The deferred scheme prints its mark placements and three marking scales but no general marking instructions; its own note says its solutions are not exhaustive and alternatives may be acceptable. These cards apply the general instructions of the June 2023 Higher scheme (same syllabus and format): use the published scale where printed. Other placements allow 2 for a partially correct element. Deduct 3 for a mathematical error, or 1 for a slip or minor misreading; do not deduct an error twice. The Q9(ii) table loses 1 for each incorrect entry. Alternative valid methods are accepted.",
+      "boundaryReview": "Every step placement is a 5 except Q1(a)(i) (the product AB) and Q2(a)(i) (the weighted graph), each one printed 10. Q2(a)(ii) and Q9(iii) are printed 15 [0/6/9/12] scales and Q6(b) a printed 20 [0/8/14/17] scale; Q2(a)(ii) keeps the time, route and algorithm name together under its scale, and Q9(iii) the early and late times. Q9(ii) is one 10-mark table with −1 for each incorrect part, not thirteen one-mark tasks. Q3(i) gives 5 for forming the second-order equation and 5 for the values of c and d, so two tasks. Q3(ii) and Q3(iii) each give three 5s to the expression for Gₙ and a separate final 5 to G₆, so each is an expression task (15) and a G₆ task (5). Q8(i) prints \"5, 5\", one 5 for each block's force diagram, so two tasks sharing one crop. Q8(ii) acceleration and tension share the final 5 and stay with the two equations of motion. Q8(v) the extra 0.12 m is a step towards the total displacement. Q10(iii) speed and direction share one 5. Q6(a)(iii) both sketches share one 5. Q7(i) has five 5s, the first on the before-and-after velocity table. Required method steps are not split into separate tasks.",
+      "schemeNotes": {
+        "4-iv": "A misprint in the scheme: the first line integrates \"dp\" with a lower-case p, although the variable is P (read it as dP).",
+        "7-iii": "A sign slip in the scheme: it writes F = −kx, then integrates kx rather than −kx. Its answer, W = ½kx², is the work done against the restoring force.",
+        "10-iv": "A misprint in the scheme: \"sp\" in the last line should read \"so\"."
+      },
+      "tasks": [
+        {
+          "ref": "Q1(a)(i)",
+          "idSuffix": "1-a-i",
+          "questionText": "Calculate AB.",
+          "topicId": "applied-mathematics-1-1",
+          "examTopicIds": [
+            "applied-mathematics-higher-networks-and-graphs"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 4,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.1558
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q1(a)(ii)",
+          "idSuffix": "1-a-ii",
+          "questionText": "Verify that AB ≠ BA.",
+          "topicId": "applied-mathematics-1-1",
+          "examTopicIds": [
+            "applied-mathematics-higher-networks-and-graphs"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 4,
+          "schemeRegion": [
+            0.05,
+            0.1558,
+            0.96,
+            0.2277
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q1(b)(i)",
+          "idSuffix": "1-b-i",
+          "questionText": "Show on a diagram the forces acting on the bob.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 4,
+          "schemeRegion": [
+            0.05,
+            0.2277,
+            0.96,
+            0.4035
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q1(b)(ii)",
+          "idSuffix": "1-b-ii",
+          "questionText": "Derive an expression for v in terms of l, θ and g, the acceleration due to gravity.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 4,
+          "schemeRegion": [
+            0.05,
+            0.4035,
+            0.96,
+            0.5453
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q1(b)(iii)",
+          "idSuffix": "1-b-iii",
+          "questionText": "Derive an expression for T, the period of rotation of the bob, in terms of l, θ and g.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            4,
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 4,
+          "schemeRegion": [
+            0.05,
+            0.5453,
+            0.96,
+            0.6655
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q1(b)(iv)",
+          "idSuffix": "1-b-iv",
+          "questionText": "Use dimensional analysis to show that the units for the expression you derived in part (iii) are equivalent to the units for period.",
+          "topicId": "applied-mathematics-2-8",
+          "examTopicIds": [
+            "applied-mathematics-higher-dimensional-analysis"
+          ],
+          "paperPages": [
+            4,
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 4,
+          "schemeRegion": [
+            0.05,
+            0.6655,
+            0.96,
+            0.7763
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q2(a)(i)",
+          "idSuffix": "2-a-i",
+          "questionText": "Use the table above to draw a weighted graph to represent the computer network.",
+          "topicId": "applied-mathematics-1-1",
+          "examTopicIds": [
+            "applied-mathematics-higher-networks-and-graphs"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 5,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.3659
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q2(a)(ii)",
+          "idSuffix": "2-a-ii",
+          "questionText": "Calculate the shortest time for a message to travel from computer A to computer G. List the computers that the message travelled through, in order. Name the algorithm you used. Relevant supporting work must be shown.",
+          "topicId": "applied-mathematics-1-3",
+          "examTopicIds": [
+            "applied-mathematics-higher-networks-and-graphs",
+            "applied-mathematics-higher-optimal-critical-paths"
+          ],
+          "paperPages": [
+            6,
+            7
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 5,
+          "schemeRegion": [
+            0.05,
+            0.3659,
+            0.96,
+            0.6342
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                6,
+                9,
+                12,
+                15
+              ],
+              "guidance": "Printed as \"15 [0/6/9/12]\". The deferred scheme gives no descriptors for the levels; the June 2023 Higher scheme describes its 15-mark scale as: 15: correct; 12: one systemic error; 9: two systemic errors; 6: a valid attempt that cannot be awarded higher marks; 0: no credit. Do not deduct a systemic error twice. The time, the route and the name of the algorithm sit together under this one scale."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q2(b)(i)",
+          "idSuffix": "2-b-i",
+          "questionText": "Solve this difference equation to find an expression for Eₙ in terms of n and C.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            8
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.1693
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q2(b)(ii)",
+          "idSuffix": "2-b-ii",
+          "questionText": "It is found that the message contains zero errors after it reaches the 21st computer, i.e. E₂₁ = 0. Calculate the value of C to the nearest whole number.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            8,
+            9
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.1693,
+            0.96,
+            0.2758
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q2(b)(iii)",
+          "idSuffix": "2-b-iii",
+          "questionText": "E may also be modelled using a differential equation. Write a differential equation for dE/dn, the rate of change of E with respect to n, in terms of E and C.",
+          "topicId": "applied-mathematics-3-3",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            8,
+            9
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.2758,
+            0.96,
+            0.3614
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q3(i) — Difference equation for G",
+          "idSuffix": "3-i",
+          "questionText": "Use this information to form a second-order inhomogeneous difference equation for G and express it in the form: Gₙ₊₂ + cGₙ₊₁ + dGₙ = S for the constants c, d which are to be determined. Calculate the values for c and d.",
+          "topicId": "applied-mathematics-3-1",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            10
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.138
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ],
+              "guidance": "Use the first 5-mark placement, for forming the second-order equation for G from the three relationships. The values of c and d are practised separately."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question.",
+          "practiceFocus": "Difference equation for G"
+        },
+        {
+          "ref": "Q3(i) — Values of c and d",
+          "idSuffix": "3-i-cd",
+          "questionText": "Use this information to form a second-order inhomogeneous difference equation for G and express it in the form: Gₙ₊₂ + cGₙ₊₁ + dGₙ = S for the constants c, d which are to be determined. Calculate the values for c and d.",
+          "topicId": "applied-mathematics-3-1",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            10
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.138,
+            0.96,
+            0.1846
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ],
+              "guidance": "Use the second 5-mark placement, which c and d share. Forming the equation is practised separately."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question.",
+          "practiceFocus": "Values of c and d"
+        },
+        {
+          "ref": "Q3(ii) — Expression for Gₙ",
+          "idSuffix": "3-ii",
+          "questionText": "Assuming the government spends no money (i.e. assuming S = 0 euro), G can be expressed by the second-order homogeneous difference equation: Gₙ₊₂ + cGₙ₊₁ + dGₙ = 0 Using G₀ = 840 and G₁ = 820 in billions of euros, solve this difference equation to find an expression for Gₙ in terms of n. Calculate G₆ to the nearest billion euros.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            10,
+            11
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.1846,
+            0.96,
+            0.323
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ],
+              "guidance": "Use the first three 5-mark placements: the characteristic equation, the general solution and the constants from G₀ and G₁. The final placement, for G₆, is practised separately."
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question.",
+          "practiceFocus": "Expression for Gₙ"
+        },
+        {
+          "ref": "Q3(ii) — G₆",
+          "idSuffix": "3-ii-g6",
+          "questionText": "Assuming the government spends no money (i.e. assuming S = 0 euro), G can be expressed by the second-order homogeneous difference equation: Gₙ₊₂ + cGₙ₊₁ + dGₙ = 0 Using G₀ = 840 and G₁ = 820 in billions of euros, solve this difference equation to find an expression for Gₙ in terms of n. Calculate G₆ to the nearest billion euros.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            10,
+            11
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.323,
+            0.96,
+            0.3612
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ],
+              "guidance": "Use only the final 5-mark placement, for G₆. The expression for Gₙ is practised separately."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question.",
+          "practiceFocus": "G₆"
+        },
+        {
+          "ref": "Q3(iii) — Expression for Gₙ",
+          "idSuffix": "3-iii",
+          "questionText": "Assuming the government spends 40 billion euros each year (i.e. assuming S = 40 in billions of euros), G can be expressed by the second-order inhomogeneous difference equation: Gₙ₊₂ + cGₙ₊₁ + dGₙ = 40 Again using G₀ = 840 and G₁ = 820 in billions of euros, solve this difference equation to find an expression for Gₙ in terms of n. Again calculate G₆ to the nearest billion euros.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            10,
+            11,
+            12
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.3612,
+            0.96,
+            0.6135
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ],
+              "guidance": "Use the first three 5-mark placements: the form of the particular solution, its constants, and the constants from G₀ and G₁. The final placement, for G₆, is practised separately. In this solution a and b are new constants of the particular solution f(n) = an + b, not the a = 15/16 and b = 3/5 given in the question."
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question.",
+          "practiceFocus": "Expression for Gₙ"
+        },
+        {
+          "ref": "Q3(iii) — G₆",
+          "idSuffix": "3-iii-g6",
+          "questionText": "Assuming the government spends 40 billion euros each year (i.e. assuming S = 40 in billions of euros), G can be expressed by the second-order inhomogeneous difference equation: Gₙ₊₂ + cGₙ₊₁ + dGₙ = 40 Again using G₀ = 840 and G₁ = 820 in billions of euros, solve this difference equation to find an expression for Gₙ in terms of n. Again calculate G₆ to the nearest billion euros.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            10,
+            11,
+            12
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.6135,
+            0.96,
+            0.6547
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ],
+              "guidance": "Use only the final 5-mark placement, for G₆. The expression for Gₙ is practised separately."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question.",
+          "practiceFocus": "G₆"
+        },
+        {
+          "ref": "Q4(i)",
+          "idSuffix": "4-i",
+          "questionText": "Solve this simplified differential equation to find an expression for P in terms of t.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            14
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.1658
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q4(ii)",
+          "idSuffix": "4-ii",
+          "questionText": "Calculate P to the nearest whole number when t = 12 weeks.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            14,
+            15
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.1658,
+            0.96,
+            0.2383
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q4(iii)",
+          "idSuffix": "4-iii",
+          "questionText": "Explain why this approximation of Verhulst’s model is not practical for predicting the long-term behaviour of the population of insects.",
+          "topicId": "applied-mathematics-3-3",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            14,
+            15
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.2383,
+            0.96,
+            0.3119
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q4(iv)",
+          "idSuffix": "4-iv",
+          "questionText": "Solve the differential equation for Verhulst’s model: dP/dt = rP(1 − P/K) to find an expression that relates P, K and t. Note that 1/(y(x − y)) = (1/x)(1/y + 1/(x − y)).",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations",
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
+          ],
+          "paperPages": [
+            14,
+            15
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.3119,
+            0.96,
+            0.5605
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q4(v)",
+          "idSuffix": "4-v",
+          "questionText": "P = 39 insects when t = 12 weeks. Calculate the value of K to the nearest whole number.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            14,
+            15,
+            17
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.5605,
+            0.96,
+            0.6642
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q4(vi)",
+          "idSuffix": "4-vi",
+          "questionText": "Explain the significance of K in the Verhulst model.",
+          "topicId": "applied-mathematics-3-3",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            14,
+            17
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.6642,
+            0.96,
+            0.7404
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q5(i)",
+          "idSuffix": "5-i",
+          "questionText": "A ball is thrown vertically upwards from the edge of a building that is 24.5 m high. The ball reaches its maximum height 2 s after it is thrown. Using a model that neglects the effects of air resistance, calculate the time from when the ball is thrown to when it lands on the ground at the bottom of the building.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            18
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.2066
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q5(ii)",
+          "idSuffix": "5-ii",
+          "questionText": "Solve this differential equation to find an expression for v in terms of t and k.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations",
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
+          ],
+          "paperPages": [
+            19
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.2066,
+            0.96,
+            0.4154
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q5(iii)",
+          "idSuffix": "5-iii",
+          "questionText": "Using k = 0.1225, calculate the time the ball takes to reach its maximum height.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            19,
+            21
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.4154,
+            0.96,
+            0.5442
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q5(iv)",
+          "idSuffix": "5-iv",
+          "questionText": "Write down a differential equation for the rate of change of the velocity of the ball on the downward part of its journey.",
+          "topicId": "applied-mathematics-3-3",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            19,
+            21
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.5442,
+            0.96,
+            0.6299
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q6(a)(i)",
+          "idSuffix": "6-a-i",
+          "questionText": "Calculate the greatest distance that car C is ahead of motorbike B.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            22
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.1899
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q6(a)(ii)",
+          "idSuffix": "6-a-ii",
+          "questionText": "Calculate the distance from S to the point where B overtakes C.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            22,
+            23
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.1899,
+            0.96,
+            0.3324
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q6(a)(iii)",
+          "idSuffix": "6-a-iii",
+          "questionText": "Using the axes below, sketch the shape of the displacement-time graph for the displacement of B relative to S for the first 30 s of its motion after it passes S. Using the same axes, sketch the shape of the displacement-time graph for the displacement of C relative to S for the same period of time. Include scales on your axes.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            22,
+            23
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.3324,
+            0.96,
+            0.7559
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q6(b)",
+          "idSuffix": "6-b",
+          "questionText": "Calculate the plan which minimises the cost of maintaining the road. Relevant supporting work must be shown.",
+          "topicId": "applied-mathematics-1-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ],
+          "paperPages": [
+            24
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.6184
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                8,
+                14,
+                17,
+                20
+              ],
+              "guidance": "Printed as \"20 [0/8/14/17]\". The deferred scheme gives no descriptors for the levels; the June 2023 Higher scheme describes its 20-mark scale as: 20: correct; 17: one systemic error; 14: two systemic errors; 8: a valid attempt that cannot be awarded higher marks; 0: no credit. Do not deduct a systemic error twice."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q7(i)",
+          "idSuffix": "7-i",
+          "questionText": "Show that tan θ = 1/3.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ],
+          "paperPages": [
+            26
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.4093
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q7(ii)",
+          "idSuffix": "7-ii",
+          "questionText": "Calculate the i⃗ and j⃗ components of the velocity of Q immediately after the collision in terms of u.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ],
+          "paperPages": [
+            26,
+            28
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.4093,
+            0.96,
+            0.5303
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q7(iii)",
+          "idSuffix": "7-iii",
+          "questionText": "Derive an expression for the work done when Q moves through displacement x.",
+          "topicId": "applied-mathematics-2-6",
+          "examTopicIds": [
+            "applied-mathematics-higher-work-power-energy-momentum",
+            "applied-mathematics-higher-hookes-law"
+          ],
+          "paperPages": [
+            26,
+            29
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.5303,
+            0.96,
+            0.6683
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q7(iv)",
+          "idSuffix": "7-iv",
+          "questionText": "Find the maximum displacement of Q from its initial position in terms of m, k and u.",
+          "topicId": "applied-mathematics-2-6",
+          "examTopicIds": [
+            "applied-mathematics-higher-work-power-energy-momentum",
+            "applied-mathematics-higher-hookes-law"
+          ],
+          "paperPages": [
+            26,
+            28,
+            29
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.6683,
+            0.96,
+            0.7591
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q8(i) — Force diagram for A",
+          "idSuffix": "8-i-a",
+          "questionText": "Show, on separate diagrams, the forces acting on blocks A and B while they are moving.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            30
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.3176
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ],
+              "guidance": "The scheme prints \"5, 5\": use the first 5, for the diagram of block A. Block B is practised separately."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question.",
+          "practiceFocus": "Force diagram for A"
+        },
+        {
+          "ref": "Q8(i) — Force diagram for B",
+          "idSuffix": "8-i-b",
+          "questionText": "Show, on separate diagrams, the forces acting on blocks A and B while they are moving.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            30
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.3176
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ],
+              "guidance": "The scheme prints \"5, 5\": use the second 5, for the diagram of block B. Block A is practised separately."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question.",
+          "practiceFocus": "Force diagram for B"
+        },
+        {
+          "ref": "Q8(ii)",
+          "idSuffix": "8-ii",
+          "questionText": "Calculate the common acceleration of blocks A and B and the tension in the string.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            30,
+            31
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.3176,
+            0.96,
+            0.4849
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q8(iii)",
+          "idSuffix": "8-iii",
+          "questionText": "Calculate the speed of block B when it touches the ground.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles",
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            30,
+            31,
+            32
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.4849,
+            0.96,
+            0.5586
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q8(iv)",
+          "idSuffix": "8-iv",
+          "questionText": "Calculate the new acceleration of block A as it continues to move up side YX.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            30,
+            32
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.5586,
+            0.96,
+            0.6634
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q8(v)",
+          "idSuffix": "8-v",
+          "questionText": "Calculate the total displacement of block A from its initial position when it is at its greatest height.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles",
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            30,
+            32,
+            33
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.6634,
+            0.96,
+            0.7642
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q9(i)",
+          "idSuffix": "9-i",
+          "questionText": "Explain the significance of the edges represented by dotted lines.",
+          "topicId": "applied-mathematics-1-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ],
+          "paperPages": [
+            34
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.1438
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q9(ii)",
+          "idSuffix": "9-ii",
+          "questionText": "Complete the table below by listing, for each activity, the other activities on which it depends directly. That is, for each activity X ∈ {A, B, C, … , M}, write the smallest possible list of other activities which need to be completed before activity X can begin. Use the space below to show relevant supporting work, if necessary.",
+          "topicId": "applied-mathematics-1-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ],
+          "paperPages": [
+            34,
+            35
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.1438,
+            0.96,
+            0.4907
+          ],
+          "allocations": [
+            {
+              "label": "Published deduction rule",
+              "credit": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": "Printed as \"10\" with \"–1 for each incorrect part\". Start at 10 and deduct 1 for each incorrect entry in the table (activities A to M); select the resulting mark, not below 0. Do not deduct the same error again."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q9(iii)",
+          "idSuffix": "9-iii",
+          "questionText": "The time, in hours, to complete each of the activities is represented by the number in brackets. Calculate the early time and the late time for each event. Complete the diagram below by writing the early time (upper box) and late time (lower box) at the node representing each event. Use the space below to show relevant supporting work, if necessary.",
+          "topicId": "applied-mathematics-1-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ],
+          "paperPages": [
+            34,
+            36
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.4907,
+            0.96,
+            0.8323
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                6,
+                9,
+                12,
+                15
+              ],
+              "guidance": "Printed as \"15 [0/6/9/12]\". The deferred scheme gives no descriptors for the levels; the June 2023 Higher scheme describes its 15-mark scale as: 15: correct; 12: one systemic error; 9: two systemic errors; 6: a valid attempt that cannot be awarded higher marks; 0: no credit. Do not deduct a systemic error twice. The early and late times share this one scale."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q9(iv)",
+          "idSuffix": "9-iv",
+          "questionText": "Write down the critical path(s) for the network.",
+          "topicId": "applied-mathematics-1-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ],
+          "paperPages": [
+            34,
+            36,
+            37
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.1263
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q9(v)",
+          "idSuffix": "9-v",
+          "questionText": "Calculate the minimum time needed to complete the project.",
+          "topicId": "applied-mathematics-1-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ],
+          "paperPages": [
+            34,
+            36,
+            37
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.1263,
+            0.96,
+            0.2
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q9(vi)",
+          "idSuffix": "9-vi",
+          "questionText": "If activity D takes 7 hours instead of 5 hours, what effect will this have on the critical path(s) and the time it takes to complete the project? Explain your answer.",
+          "topicId": "applied-mathematics-1-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ],
+          "paperPages": [
+            34,
+            36,
+            37
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.2,
+            0.96,
+            0.2735
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q9(vii)",
+          "idSuffix": "9-vii",
+          "questionText": "If activity J takes 7 hours instead of 2 hours, what effect will this have on the critical path(s) and the time taken to complete the project? Explain your answer.",
+          "topicId": "applied-mathematics-1-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ],
+          "paperPages": [
+            34,
+            36,
+            37
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.2735,
+            0.96,
+            0.3671
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q10(i)",
+          "idSuffix": "10-i",
+          "questionText": "Outline the assumptions made by the student’s model.",
+          "topicId": "applied-mathematics-0-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-mathematical-modelling-project",
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            38
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.1438
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q10(ii)",
+          "idSuffix": "10-ii",
+          "questionText": "Calculate the value of θ when the object leaves the surface of the cylinder.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            38,
+            39
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.1438,
+            0.96,
+            0.3152
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q10(iii)",
+          "idSuffix": "10-iii",
+          "questionText": "Calculate the velocity of the object when it leaves the surface of the cylinder.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            38,
+            39,
+            40
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.3152,
+            0.96,
+            0.3961
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q10(iv)",
+          "idSuffix": "10-iv",
+          "questionText": "Calculate the time between when the object leaves the surface of the cylinder and when it lands on the ground.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-projectiles"
+          ],
+          "paperPages": [
+            38,
+            39,
+            40
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.3961,
+            0.96,
+            0.539
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        },
+        {
+          "ref": "Q10(v)",
+          "idSuffix": "10-v",
+          "questionText": "Calculate the horizontal distance between point P and the point where the object lands on the ground.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-projectiles"
+          ],
+          "paperPages": [
+            38,
+            39,
+            40,
+            41
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.539,
+            0.96,
+            0.626
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take the value of g, the acceleration due to gravity, to be 9.8 m s⁻². Unless otherwise indicated, i⃗ and j⃗ are unit perpendicular vectors in the horizontal and vertical directions, respectively, or eastwards and northwards, respectively, as appropriate to the question."
+        }
+      ]
+    }
+  ]
+}

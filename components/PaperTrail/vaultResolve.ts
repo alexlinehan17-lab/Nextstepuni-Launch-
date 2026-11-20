@@ -199,6 +199,7 @@ export const HOSTED_ANSWER_OVERRIDES = new Set([
   'applied-mathematics|2026|LC020GLP000EV.pdf',
   // Applied Mathematics' deferred sittings (deferred lane): their reviewed answer maps, hosted.
   'applied-mathematics|2022|LC020ALP000EV-deferred.pdf',
+  'applied-mathematics|2023|LC020ALP000EV-deferred.pdf',
   // Irish editions with independently reviewed native question and scheme regions.
   'applied-mathematics|2010|LC020ALP000IV.pdf',
   'applied-mathematics|2010|LC020GLP000IV.pdf',

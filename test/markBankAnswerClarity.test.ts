@@ -714,8 +714,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
 
   it('Applied Maths: every published step shows the lines it prices as a crop of the scheme page, or the card is in the residue with its reason', () => {
     const cards = APPLIED_MATHS_REVIEWED.filter((card): card is SecRubricCard & { rubric: AppliedMathematicsRubric } => card.kind === 'rubric' && card.rubric.system === 'applied-mathematics');
-    // June's 1,486 and the carded deferred sittings' tasks (2022 Higher: 42).
-    expect(cards).toHaveLength(1486 + 42);
+    // June's 1,486 and the carded deferred sittings' tasks (2022 Higher: 42; 2023 Higher: 53).
+    expect(cards).toHaveLength(1486 + 42 + 53);
     const residue = new Set(appliedMathsResidue.cards.map(card => card.id));
     let cut = 0, scaleOnly = 0;
     for (const card of cards) {
@@ -749,7 +749,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // 1,434 cut and 52 priced by a scale over the whole solution (2026-10-28, exclusions wave): every card with published steps is cut.
     // A floor, not an exact count, so a later lift never needs a re-pin; the residue is pinned by id (none).
     expect(cut).toBeGreaterThanOrEqual(1434);
-    expect(scaleOnly).toBe(52);
+    // June's 52 and the 2023 Higher deferred sitting's four (Q2(a)(ii), Q6(b) and Q9(iii) scales, the Q9(ii) deduction rule).
+    expect(scaleOnly).toBe(52 + 4);
     expect([...residue].sort()).toEqual([]);
     for (const card of appliedMathsResidue.cards) expect(card.reason.length, card.id).toBeGreaterThan(0);
   });

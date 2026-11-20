@@ -6781,5 +6781,119 @@
     "topicIds": [
       "applied-mathematics-higher-differential-equations"
     ]
+  },
+  {
+    "year": 2023,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "1",
+    "topicIds": [
+      "applied-mathematics-higher-networks-and-graphs",
+      "applied-mathematics-higher-circular-motion",
+      "applied-mathematics-higher-dimensional-analysis"
+    ]
+  },
+  {
+    "year": 2023,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "2",
+    "topicIds": [
+      "applied-mathematics-higher-networks-and-graphs",
+      "applied-mathematics-higher-optimal-critical-paths",
+      "applied-mathematics-higher-difference-equations",
+      "applied-mathematics-higher-differential-equations"
+    ]
+  },
+  {
+    "year": 2023,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "3",
+    "topicIds": [
+      "applied-mathematics-higher-difference-equations"
+    ]
+  },
+  {
+    "year": 2023,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "4",
+    "topicIds": [
+      "applied-mathematics-higher-differential-equations",
+      "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
+    ]
+  },
+  {
+    "year": 2023,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "5",
+    "topicIds": [
+      "applied-mathematics-higher-uniform-accelerated-motion",
+      "applied-mathematics-higher-differential-equations",
+      "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
+    ]
+  },
+  {
+    "year": 2023,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "6",
+    "topicIds": [
+      "applied-mathematics-higher-uniform-accelerated-motion",
+      "applied-mathematics-higher-optimal-critical-paths"
+    ]
+  },
+  {
+    "year": 2023,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "7",
+    "topicIds": [
+      "applied-mathematics-higher-impacts-collisions",
+      "applied-mathematics-higher-work-power-energy-momentum",
+      "applied-mathematics-higher-hookes-law"
+    ]
+  },
+  {
+    "year": 2023,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "8",
+    "topicIds": [
+      "applied-mathematics-higher-newtons-laws-connected-particles",
+      "applied-mathematics-higher-uniform-accelerated-motion"
+    ]
+  },
+  {
+    "year": 2023,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "9",
+    "topicIds": [
+      "applied-mathematics-higher-optimal-critical-paths"
+    ]
+  },
+  {
+    "year": 2023,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "10",
+    "topicIds": [
+      "applied-mathematics-higher-mathematical-modelling-project",
+      "applied-mathematics-higher-circular-motion",
+      "applied-mathematics-higher-projectiles"
+    ]
   }
 ]

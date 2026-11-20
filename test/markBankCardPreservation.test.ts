@@ -1377,7 +1377,7 @@ const isAccountingDeferred = (id: string) => /^acc-\d{4}-(?:hl|ol)-deferred-q/.t
 const accountingDeferredTotal = ACCOUNTING_DEFERRED_ADDED.higher + ACCOUNTING_DEFERRED_ADDED.ordinary;
 /* Applied Mathematics' deferred sittings (reviewed/applied-maths/<year>-deferred.json), am-<year>-hl-deferred-…: new
  * cards on top of the frozen 716 / 770, pinned here. */
-const APPLIED_MATHS_DEFERRED_ADDED = { higher: 42, ordinary: 0 };
+const APPLIED_MATHS_DEFERRED_ADDED = { higher: 42 + 53, ordinary: 0 };
 const isAppliedMathsDeferred = (id: string) => /^am-\d{4}-(?:hl|ol)-deferred-/.test(id);
 const appliedMathsDeferredTotal = APPLIED_MATHS_DEFERRED_ADDED.higher + APPLIED_MATHS_DEFERRED_ADDED.ordinary;
 const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED || isArtDeferred(id);
