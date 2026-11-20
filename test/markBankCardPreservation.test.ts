@@ -1505,7 +1505,7 @@ const PORTUGUESE_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2026: { higher: 51, ordinary: 52 },
 };
 const PORTUGUESE_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
-  2025: { higher: 40, ordinary: 34 },
+  2025: { higher: 40, ordinary: 40 },
   2024: { higher: 45, ordinary: 37 },
   2023: { higher: 43, ordinary: 44 },
   2022: { higher: 9, ordinary: 6 },
