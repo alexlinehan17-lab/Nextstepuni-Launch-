@@ -1244,6 +1244,214 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2015 Higher Level — © State Examinations Commission.",
+    id: "ron-2015-hl-i-1", topicId: "romanian-0-0", conceptId: "explica-scurt-urm-toarele-cuvinte-expresii",
+    section: "I", questionRef: "2015 HL Section I Q1",
+    questionText: "Explicaţi pe scurt următoarele cuvinte şi expresii scrise îngroşat în text, folosind sinonime sau perifraze şi ţinând cont de contextul în care apar:\na) trebuincioasă\nb) mâncare minune\nc) pământ suprapopulat\nd) ideea va prinde\ne) viaţă excepţională",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "de care cineva are nevoie, care îi este utilă cuiva, fiind folosită cu un scop, având un rol în viața acelei persoane; fără de care nu se poate să te descurci într-o situație, la un moment dat.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\"" },
+    { id: "r-2", kind: "point", verbatim: "o mâncare miraculoasă, prin caracteristicile sau proprietățile ei; care face minuni, extraordinară pentru cei care o consumă; mai mult decât o mâncare obișnuită.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "populat cu prea mulți indivizi, mai mult decât poate cuprinde sau suporta; aglomerat.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "ideea îi va convinge pe oameni, oamenii vor fi seduși la aflarea ei, vor fi „furați“, „fermecați“ de ea, „păcăliți“, într-un fel; oamenii vor urma această idee.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "viață extraordinară, plină de evenimente „excepționale“, mărețe, deosebite; viață aventuroasă; viață încununată de succes, de realizări, de reușite; viață deosebită, prin ceea ce faci, de cea a celorlalți.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2015 Higher Level — © State Examinations Commission.",
+    id: "ron-2015-hl-i-2", topicId: "romanian-0-1", conceptId: "cine-sunt-potrivit-textului-doritorii-interesa",
+    section: "I", questionRef: "2015 HL Section I Q2",
+    questionText: "Cine sunt, potrivit textului, „doritorii“ interesaţi de procurarea noului praf inventat pentru a înlocui mâncarea?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Potrivit textului, sunt atâția oameni ocupați cu munca peste măsură, stresați de avalanșa de sarcini pe care le au zilnic de îndeplinit. Pentru aceștia, mâncarea devine o problemă, întrucât nu le mai rămâne timp să-și pregătească o masă și să mănânce liniștiți. Pe ei i-ar putea interesa acest praf care înlocuiește mâncarea.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Identificarea informaţiilor detaliate din text:”." },
+    { id: "r-2", kind: "point", verbatim: "De asemenea, sunt și oameni care nu cunosc neapărat plăcerile culinare sau pe care nu-i încântă, pur și simplu, un fel de mâncare pregătit cu grijă și pasiune. Apoi, printre acești oameni, există și unii care nu își permit să ia masa la restaurant – și ei ar putea fi, de pildă, interesați de existența acestui praf.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Autoarea are în vedere și situația în care acest praf le-ar fi de folos, pentru supraviețuire, populațiilor sărace, pentru care pământul pare să nu mai aibă resurse.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2015 Higher Level — © State Examinations Commission.",
+    id: "ron-2015-hl-i-3", topicId: "romanian-0-1", conceptId: "crede-refer-autoarea-atunci-cand-vorbe",
+    section: "I", questionRef: "2015 HL Section I Q3",
+    questionText: "La ce credeţi că se referă autoarea atunci când vorbeşte despre „ritualurile“ care înconjoară mâncarea?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "În jurul mâncării, există o mulțime de alte aspecte ale vieții noastre care se leagă, se întrepătrund. Ne putem gândi, în primul rând, la pregătirea anumitor feluri de mâncare pentru anumite ocazii. Pregătirea și prezența acelui fel de mâncare sunt la fel de importante ca orice alt element din recuzita evenimentului (de exemplu, tortul aniversar).", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Înţelegerea ideilor de fond exprimate în text :”." },
+    { id: "r-2", kind: "point", verbatim: "De asemenea, există obiceiuri străvechi ce au în centru, pe lângă semnificația specială simbolică (religioasă sau de altă natură), și pregătirea unui anumit fel de mâncare. Întâlnim aceasta în fiecare cultură: la noi, de pildă, există pasca pentru Sfintele Paști, cozonacul și sarmalele pentru Crăciun, carnea de curcan în noaptea de Anul Nou.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Anumite feluri de mâncare au ele însele semnificații aparte, de aceea pregătirea lor este specială, ritualică, într-adevăr: ouăle înroșite de Sfintele Paști sau colacii pentru comemorări.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Chiar dacă în ziua de azi o parte din aceste semnificații s-au pierdut, mâncarea și pregătirea ei continuă să aibă, în multe situații, încărcătura unui ritual.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2015 Higher Level — © State Examinations Commission.",
+    id: "ron-2015-hl-i-4", topicId: "romanian-0-1", conceptId: "care-atitudinea-autoarei-aceast-inven-prezenta",
+    section: "I", questionRef: "2015 HL Section I Q4",
+    questionText: "Care este atitudinea autoarei faţă de această invenţie? Prezentaţi argumentele ei din text pentru a-şi exprima poziţia.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Atitudinea autoarei este împotriva utilității acestei invenții. Chiar dacă la început autoarea recunoaște faptul că munca și ocupațiile zilnice pot fi stresante până la a ne face să uităm să mâncăm, apoi atitudinea ei este în favoarea petrecerii timpului pentru a pregăti masa sau pentru a sta liniștiți la masă și a savura un fel de mâncare delicios.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Înţelegerea profundă a unor idei din text, exprimate mai putin explicit, demonstrând capacitate de gândire analitică şi extrapolarea cunoştinţelor:”." },
+    { id: "r-2", kind: "point", verbatim: "După părerea ei, de mâncare se leagă o mare parte din plăcerile vieții noastre – mese conviviale, atmosferă destinsă, ocazia de a socializa, istorisiri amuzante, curiozități culinare.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "În sprijinul poziției sale, autoarea aduce exemplul jurnalistului care a încercat acest praf. Astfel, ea vrea să ne arate că nu e neapărat greu să nu mănânci, cât să te lipsești de toate aspectele enumerate mai sus care vin odată cu mâncarea.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2015 Higher Level — © State Examinations Commission.",
+    id: "ron-2015-hl-i-5", topicId: "romanian-0-1", conceptId: "prezenta-avantajele-dezavantajele-care-crede-inventarea",
+    section: "I", questionRef: "2015 HL Section I Q5",
+    questionText: "Prezentaţi avantajele şi dezavantajele pe care credeţi că le are inventarea unui asemenea produs.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "În condițiile în care există oameni care nu au cu ce să se hrănească, iar resursele pământului par a nu mai fi de ajuns, această pudră ar reprezenta o soluție, în sensul că i-ar ține pe oameni în viață, oferindu-le aportul de nutrienți necesar unei bune funcționări a organismului. De asemenea, praful s-ar putea dovedi util în situația unei călătorii sau într-un context de criză, în care supraviețuirea să fie prima grijă a oamenilor.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Demonstrarea unei bune înţelegeri a textului în ansamblu şi capacitatea de a explica puncte de vedere personale:”." },
+    { id: "r-2", kind: "point", verbatim: "Pe de altă parte, a mânca nu are de-a face doar cu înghițirea unor nutrienți; acesta este doar unul dintre rezultatele unui proces cu însemnătate socială. A mânca este și un act social, iar dezavantajul cu această pulbere inventată este că ea elimină din start aceste valențe ale actului de a se hrăni.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Un alt dezavantaj îl constituie suprimarea plăcerii gustului și chiar a aspectului felurilor noastre de mâncare preferate.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2015 Higher Level — © State Examinations Commission.",
+    id: "ron-2015-hl-i-6", topicId: "romanian-0-1", conceptId: "explica-ironia-din-cuvintele-autoarei-sfar",
+    section: "I", questionRef: "2015 HL Section I Q6",
+    questionText: "Explicaţi ironia din cuvintele autoarei de la sfârşitul textului: „Zic că ar rezolva dintr-un foc o grămadă de probleme ale lumii în care trăim.“.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Autoarea face referire la „problemele lumii în care trăim“, în raport cu „problemele“ (așa-zise) pe care le rezolvă alimentul minune – glutenul, alimentația de tip vegan sau halal. Dar acestea nu reprezintă cu adevărat probleme, ci sunt mai degrabă opțiuni personale – ce mâncăm? cum mâncăm? – sau aspecte care țin de convingerile sau de tradițiile alimentare ale indivizilor sau ale grupului căruia aceștia îi aparțin.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Buna înţelegere a textului şi a implicațiilor fenomenului descris în el:”." },
+    { id: "r-2", kind: "point", verbatim: "Lumea nu este lipsită de probleme. Adevăratele probleme sunt războiul, care încă se petrece în lume, catastrofele naturale care amenință chiar soarta planetei. Foametea este, de asemenea, o problemă a lumii noastre; foametea înseamnă „a nu avea ce să mănânci, încât să-ți asiguri supraviețuirea“, iar în lumea în care trăim oamenii mor de foame în fiecare zi. Calitățile sau proprietățile noului aliment pudră nu schimbă cu nimic această realitate.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2015 Higher Level — © State Examinations Commission.",
+    id: "ron-2015-hl-ii-1", topicId: "romanian-1-0", conceptId: "avand-vedere-cele-exprimate-text-propriile",
+    section: "II", questionRef: "2015 HL Section II Q1",
+    questionText: "Având în vedere cele exprimate în text, ca şi propriile convingeri, explicaţi următoarea idee: Soylent hrăneşte doar corpul, dar mâncarea hrăneşte şi sufletul. (aproximativ 100 de cuvinte)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "La părțile a II-a și a III-a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:", marks: 30, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme reprints the task as: “Având în vedere cele exprimate în text, ca și propriile convingeri, explicați următoare idee: Soylent hrănește corpul, dar mâncarea hrănește și sufletul. (aproximativ 100 de cuvinte)”. The scheme prints, as examples, not a checklist: “Primul lucru la care ne putem gândi este acela că nu suntem doar niște organisme, ci suntem un tot – corp, minte, suflet. Sigur, pentru a fi sănătoși, trebuie să avem grijă de corpul nostru, hrănindu-l cum trebuie, dar aceasta nu e totul. Căci mâncând, nu ne hrănim doar corpul, ci ne hrănim pe noi, ca un tot echilibrat.”; “De asemenea, suntem ființe sociale, iar această dimensiune a noastră n-ar putea fi înlocuită doar de o bună funcționare a corpului nostru, în singurătate. Atmosfera și intimitatea create în jurul mesei îi conferă acesteia valoarea unei comuniuni sufletești. Masa „adună“, la fel cum lipsa cuiva de la masă poate avea înțelesul unei dezbinări.”; “Mâncarea este, totodată, un extraordinar stimulent senzorial – și cât de importante nu sunt, în viața noastră, senzațiile, poftele, satisfacțiile pe care ni le prilejuiește masa!...”; “Nu mâncăm pentru a ne „alimenta“ corpul, ci pentru a ne regăsi în tihnă, pentru a ne bucura, pentru a împărtăși o plăcere...”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într-un mod clar – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Coerența răspunsurilor – candidatul folosește textul într-un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Eficiența limbajului – candidatul demonstrează că stăpânește limba destul de bine pentru a-și exprima clar și cursiv ideile și opiniile – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PARTEA A II-A",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2015 Higher Level — © State Examinations Commission.",
+    id: "ron-2015-hl-iii-1", topicId: "romanian-1-1", conceptId: "oamenii-rand-iesc-nance-bea-oamenii",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    questionText: "Scrieţi un eseu pornind de la una dintre cele două teme propuse mai jos (aproximativ 300 de cuvinte): „Oamenii de rând trăiesc ca să mănânce şi să bea. Oamenii de valoare mănâncă şi beau ca să simtă că trăiesc.“ (Socrate)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Compunere de aproximativ 300 de cuvinte, la alegere între două subiecte, scrisă cursiv, urmărind organizarea coerentă a ideilor şi conducând la o concluzie clară.", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme prints: “La părțile a II-a și a III-a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într-un mod clar – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Coerența răspunsurilor – candidatul folosește textul într-un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Eficiența limbajului – candidatul demonstrează că stăpânește limba destul de bine pentru a-și exprima clar și cursiv ideile și opiniile – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2015 Higher Level — © State Examinations Commission.",
+    id: "ron-2015-hl-iii-2", topicId: "romanian-1-1", conceptId: "cei-care-mul-umesc-sunt-cei",
+    section: "III", questionRef: "2015 HL Section III Q2",
+    questionText: "Scrieţi un eseu pornind de la una dintre cele două teme propuse mai jos (aproximativ 300 de cuvinte): „ Cei care se mulţumesc cu puţin sunt cei mai fericiţi.“ (Socrate)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Compunere de aproximativ 300 de cuvinte, la alegere între două subiecte, scrisă cursiv, urmărind organizarea coerentă a ideilor şi conducând la o concluzie clară.", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme prints: “La părțile a II-a și a III-a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într-un mod clar – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Coerența răspunsurilor – candidatul folosește textul într-un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Eficiența limbajului – candidatul demonstrează că stăpânește limba destul de bine pentru a-și exprima clar și cursiv ideile și opiniile – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "higher",
     paperFileid: "LC553ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2016 Higher Level — © State Examinations Commission.",
