@@ -285,7 +285,9 @@ SPECS[2012] = [
     R('I4', [one(L(35, 36), PaperP(4, '4. Kāpēc'))], total=PaperP(4, '4. Kāpēc'), pages=(2, 3)),
     R('I5', [one(L(39, 41), PaperP(4, 'un pazust'))], total=PaperP(4, 'un pazust'), pages=(2, 3)),
     R('I6', [shown(L(44, 46)), shown(L(50, 51))], whole=True, total=PaperP(4, 'Analizē šīs'), pages=(2, 3)),
-    R('II', [shown(S(56)), shown(S(57)), shown(S(58)), shown(S(59))], whole=True, rownote=_points_2012,
+    # the scheme reprints the task without the paper's question about Nauris (second reader): quoted (10f)
+    R('II', [shown(S(56)), shown(S(57)), shown(S(58)), shown(S(59))], whole=True,
+      rownote=both(quote(L(53, 54), lead='The scheme reprints the task as'), _points_2012),
       pages=(2, 3)),
     R('III1', [unprinted(_essay_2012)]),
     R('III2', [unprinted(_essay_2012)], question=QP(4, ESSAY_2012, '"Mūsdienu')),
@@ -901,6 +903,8 @@ SPECS[2017] = [
     R('III1', [_pt_2017(138, 141, 'a'), _pt_2017(142, 147, 'b'), _pt_2017(148, 149, 'c'), _pt_2017(150, 152, 'd'),
                _pt_2017(153, 154, 'e')], whole=True, rownote=_examples_2017,
       question=QP(4, ESSAY_2017, '1. “Nākotnes')),
+    # the scheme reprints the title without the paper's second sentence (second reader): quoted (10f)
     R('III2', [_pt_2017(156, 158, 'a'), _pt_2017(159, 160, 'b'), _pt_2017(161, 163, 'c')], whole=True,
-      rownote=_examples_2017, question=QP(4, ESSAY_2017, '2. “Mans', 'Atklājiet šo tematu')),
+      rownote=both(quote(S(155, after='2. '), lead='The scheme reprints this title as'), _examples_2017),
+      question=QP(4, ESSAY_2017, '2. “Mans', 'Atklājiet šo tematu')),
 ]

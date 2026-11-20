@@ -589,7 +589,7 @@ export const CARDS: SecCard[] = [
     questionText: "Ka tu vari raksturot Nauri, kad viņš teica: \"Cilvēki bieži runā par to, ko viņi nezin\" Komentē šo apgalvojumu, pamatojot savu viedokli ar piemēriem no teksta. (Uzrakstiet vismaz 100 vārdu garu aprakstu)",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "patstāvīgi domājošs,", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme heads them “Piemēram:”: examples, not a checklist. None carries a mark of its own, and the scheme prints no criteria for the part." },
+    { id: "r-1", kind: "point", verbatim: "patstāvīgi domājošs,", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints the task as: “Komentē šo apgalvojumu, pamatojot savu viedokli ar piemēriem no teksta. (Uzrakstiet vismaz 100 vārdu garu aprakstu)”. The scheme heads them “Piemēram:”: examples, not a checklist. None carries a mark of its own, and the scheme prints no criteria for the part." },
     { id: "r-2", kind: "point", verbatim: "tāds, kam rūp citi,", marks: null },
     { id: "r-3", kind: "point", verbatim: "atvērts,", marks: null },
     { id: "r-4", kind: "point", verbatim: "cilvēcīgs.", marks: null },
@@ -1744,7 +1744,7 @@ export const CARDS: SecCard[] = [
     questionText: "Uzraksti pārspriedumu par vienu no tematiem! (ne mazāk kā 300 vārdu) “Mans viedoklis nav sliktāks par tavējo, visi viedoklļi ir vienlīdz vērtīgi.” Atklājiet šo tematu modernās pasaules un sociālo mediju lietošanas kontekstā!",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Demokrātiskā sabiedrībā katram ir tiesības izteikt savu veidokli par jebkuru tematu. Nav pareizu un nepareizu viedokļu, sliktāku vai labāku viedokļu, ir tikai argumentēti viedokļi. Jebkurā viedoklī ir patiesība, jo katrs par savu taisnību pārliecināts.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints these points with no mark on any of them and no criteria for the part: examples, not a checklist." },
+    { id: "r-1", kind: "point", verbatim: "Demokrātiskā sabiedrībā katram ir tiesības izteikt savu veidokli par jebkuru tematu. Nav pareizu un nepareizu viedokļu, sliktāku vai labāku viedokļu, ir tikai argumentēti viedokļi. Jebkurā viedoklī ir patiesība, jo katrs par savu taisnību pārliecināts.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints this title as: ““Mans viedoklis nav sliktāks par tavējo, visi viedoklļi ir vienlīdz vērtīgi.””. The scheme prints these points with no mark on any of them and no criteria for the part: examples, not a checklist." },
     { id: "r-2", kind: "point", verbatim: "Pieņemot lēmumu, jāanalizē visi viedokļi. Nedrīkst vērtēt viedokli tikai no sev izdevīgas pozīcijas.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Šodien īpaši jābūt uzmanīgiem, uzklausot, izlasot citu viedokļus sociālajos medijos, jo aizvien biežāk nākas uzklausīt viedokļus, kuros tā paudējs izsaka tikai sev izdevīgu argumentāciju. Jābūt kritiskiem, analizējot visus viedokļus.", marks: null },
     ],
