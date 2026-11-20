@@ -1,6 +1,34 @@
 {
   "status": "deferred-sittings-review",
   "reviewedAt": "2026-11-20",
-  "expectedCards": 0,
-  "papers": []
+  "expectedCards": 10,
+  "papers": [
+    {
+      "year": 2022,
+      "paperPage": 12,
+      "schemePage": 11,
+      "answers": [
+        "bonne",
+        "cadeaux",
+        "un",
+        "tombe",
+        "mes",
+        "pas",
+        "dangereuses",
+        "février",
+        "passer",
+        "prochaine"
+      ],
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2022-ol-deferred-000-paper.pdf",
+          "sha256": "6ac27c19a0c602a0953bf6c4a65e66e8cfdfb270265b46437e0e17ae9945851f"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2022-ol-deferred.pdf",
+          "sha256": "fbf3f622a345ec69bc9e1e3decf61739d803bab0b97fd7e7b26f34f6b42a111d"
+        }
+      ]
+    }
+  ]
 }

@@ -1,8 +1,59 @@
 {
   "status": "deferred-sittings-review",
   "reviewedAt": "2026-11-20",
-  "cards": 8,
+  "cards": 18,
   "review": [
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 14,
+      "schemePage": 13
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 14,
+      "schemePage": 14
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 16,
+      "schemePage": 15
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 16,
+      "schemePage": 16
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 3,
+      "poolSize": 4,
+      "cards": 1,
+      "separatelyMarkedFields": 5,
+      "paperPage": 13,
+      "schemePage": 12
+    },
     {
       "year": 2022,
       "level": "higher",
@@ -26,6 +77,14 @@
     {
       "source": "examiner-reports/french/schemes/2022-hl-deferred.pdf",
       "sha256": "4867d2d4f922f3a2bdc0d7204ed36aaea3a4312efe0312a4f9db1ce3fc0b58c9"
+    },
+    {
+      "source": "examiner-reports/french/papers/2022-ol-deferred-000-paper.pdf",
+      "sha256": "6ac27c19a0c602a0953bf6c4a65e66e8cfdfb270265b46437e0e17ae9945851f"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2022-ol-deferred.pdf",
+      "sha256": "fbf3f622a345ec69bc9e1e3decf61739d803bab0b97fd7e7b26f34f6b42a111d"
     }
   ],
   "examSelectionPolicy": "Choosing two separately marked examination questions does not create one combined practice card. Each task is independently practicable at its own tariff."

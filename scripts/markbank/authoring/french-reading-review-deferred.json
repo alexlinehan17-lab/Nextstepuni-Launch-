@@ -1,7 +1,7 @@
 {
   "status": "deferred-sittings-review",
   "reviewedAt": "2026-11-20",
-  "expectedCards": 20,
+  "expectedCards": 53,
   "papers": [
     {
       "year": 2022,
@@ -61,6 +61,106 @@
       "guideHeadings": [
         "(a) L'ordre",
         "(b) Le désordre"
+      ]
+    },
+    {
+      "year": 2022,
+      "level": "ol",
+      "sitting": "deferred",
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2022-ol-deferred-000-paper.pdf",
+          "sha256": "6ac27c19a0c602a0953bf6c4a65e66e8cfdfb270265b46437e0e17ae9945851f"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2022-ol-deferred.pdf",
+          "sha256": "fbf3f622a345ec69bc9e1e3decf61739d803bab0b97fd7e7b26f34f6b42a111d"
+        }
+      ],
+      "tariffDecisions": {
+        "A2-Q4": {
+          "printedHeadMarks": 8,
+          "perPointMarks": 4,
+          "requiredPoints": 1,
+          "schemePage": 6,
+          "reason": "Paper page 7 asks one thing (the nationality of the girl Petite-Fleur) with one answer line. Scheme page 6 prints the head “4. … 4 + 4 Marks” over a single answer, “Chinese … 4 Marks”. One 4-mark answer reconciles Q.2 to the 40 marks printed on its head; 4 + 4 would make it 44.",
+          "sourceNote": "The scheme prints this head as 4 + 4 marks over a single 4-mark answer; this card is scored out of 4 so that Q.2 adds up to its printed 40 marks."
+        }
+      },
+      "schemeBlocks": [
+        {
+          "address": "A4-Q1",
+          "reason": "Paper page 10 prints Q.4 1 as two lettered asks, “(a) en anglais ?” and “(b) en histoire ?”, each with its own answer line. Scheme page 9 prints one head “1. … 4 Marks” with one 4-mark answer for each, “En anglais – Trois (sur vingt)” and “En histoire – Dix-sept (sur vingt)”. Split at the printed letters, every answer line kept verbatim; two 4-mark parts reconcile Q.4 to its printed 40 marks.",
+          "sourceLines": [
+            "1. .....................................................................................................................................4 Marks",
+            "Selon la première section, dans son bulletin scolaire, quelle note Kamo a-t-il reçue",
+            "• En anglais – Trois (sur vingt) ...................................................................................... 4 Marks",
+            "• En histoire – Dix-sept (sur vingt) ................................................................................ 4 Marks"
+          ],
+          "replacementLines": [
+            "1.(a) .....................................................................................................................................4 Marks",
+            "Selon la première section, dans son bulletin scolaire, quelle note Kamo a-t-il reçue",
+            "• En anglais – Trois (sur vingt) ...................................................................................... 4 Marks",
+            "1.(b) .....................................................................................................................................4 Marks",
+            "• En histoire – Dix-sept (sur vingt) ................................................................................ 4 Marks"
+          ]
+        }
+      ],
+      "paperCues": {
+        "A4-Q1-a": "en anglais ?",
+        "A4-Q1-b": "en histoire ?",
+        "A4-Q1": "Selon la première section, dans son bulletin scolaire, quelle note Kamo a-t-il reçue"
+      },
+      "pricedBoundaries": [
+        "1:1:4",
+        "1:2:4",
+        "1:3:4",
+        "1:4:4",
+        "1:5:8",
+        "1:6:4",
+        "1:7:4",
+        "1:8:8",
+        "2:1a-d:16",
+        "2:2:8",
+        "2:3:4",
+        "2:4:4",
+        "2:5:4",
+        "2:6:4",
+        "3:1:4",
+        "3:2:4",
+        "3:3:8",
+        "3:4:4",
+        "3:5:4",
+        "3:6:4",
+        "3:7:4",
+        "3:8:8",
+        "4:1a:4",
+        "4:1b:4",
+        "4:2:4",
+        "4:3:4",
+        "4:4:8",
+        "4:5:4",
+        "4:6:4",
+        "4:7:8"
+      ],
+      "schemePartSplits": {
+        "A4-Q1": {
+          "reason": "Paper page 10 prints Q.4 1 as one stem with two lettered asks, (a) en anglais ? and (b) en histoire ?, each with its own answer line; each card carries the stem and its own printed letter."
+        }
+      },
+      "printedPrompts": {
+        "A4-Q7": {
+          "page": 11,
+          "reason": "Paper page 11 prints the ask as one sentence across two lines, \"7. Give one point about the personality / (i) of Kamo and (ii) of his mother. / Answer in English, referring to the text.\"; the reader cuts it at \"(i)\". The scheme prices it as one 4 + 4 ask.",
+          "lines": [
+            "Give one point about the personality (i) of Kamo and (ii) of his mother.",
+            "Answer in English, referring to the text."
+          ]
+        }
+      },
+      "guideHeadings": [
+        "Kamo:",
+        "His Mother:"
       ]
     }
   ]

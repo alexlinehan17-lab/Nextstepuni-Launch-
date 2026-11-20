@@ -1811,5 +1811,1390 @@
         "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
       ]
     }
+  },
+  {
+    "id": "fr-2022-ol-deferred-writing-b1b-field-1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(b) · field 1 — Deferred sitting",
+    "questionText": "Vous vous appelez Cillian/Claire O’Riordan. Vous désirez travailler à Disneyland Paris. Remplissez le formulaire suivant:\n\n1. Nom :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        13
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.12 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 12,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Nom",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Surname – accept any reasonable surname"
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-writing-b1b-field-2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(b) · field 2 — Deferred sitting",
+    "questionText": "Vous vous appelez Cillian/Claire O’Riordan. Vous désirez travailler à Disneyland Paris. Remplissez le formulaire suivant:\n\n2. Prénom :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        13
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.12 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 12,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Prénom",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "First name – accept any reasonable first name"
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-writing-b1b-field-3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(b) · field 3 — Deferred sitting",
+    "questionText": "Vous vous appelez Cillian/Claire O’Riordan. Vous désirez travailler à Disneyland Paris. Remplissez le formulaire suivant:\n\n3. Date de naissance :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        13
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.12 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 12,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Date de naissance",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Date of Birth– accept any reasonable date"
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-writing-b1b-field-4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(b) · field 4 — Deferred sitting",
+    "questionText": "Vous vous appelez Cillian/Claire O’Riordan. Vous désirez travailler à Disneyland Paris. Remplissez le formulaire suivant:\n\n4. Lieu de naissance :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        13
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.12 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 12,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Lieu de naissance",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Place of Birth– accept any reasonable place"
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-writing-b1b-field-5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(b) · field 5 — Deferred sitting",
+    "questionText": "Vous vous appelez Cillian/Claire O’Riordan. Vous désirez travailler à Disneyland Paris. Remplissez le formulaire suivant:\n\n5. Langue(s) parlée(s) :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        13
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.12 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 12,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Langue(s) parlée(s)",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Languages spoken – accept any reasonable answer for full marks"
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-writing-b1b-route-6789",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(b) · points 6, 7, 8, 9 — Deferred sitting",
+    "questionText": "Vous vous appelez Cillian/Claire O’Riordan. Vous désirez travailler à Disneyland Paris. Remplissez le formulaire suivant:\n\n6. Avez‐vous déjà visité la France ?\n7. Pourquoi voulez‐vous travailler à Disneyland Paris ?\n8. Quels sont vos passe‐temps ?\n9. Quelles sont vos qualités personnelles ?",
+    "totalMarks": 20,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        13
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.12 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 12,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Pour 6, 7, 8 et 9, choisissez trois questions et répondez par des phrases complètes."
+      ],
+      "criteria": [
+        {
+          "id": "communication-first",
+          "label": "Communication · first question you chose",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "6. Avez‐vous déjà visité la France ?",
+            "7. Pourquoi voulez‐vous travailler à Disneyland Paris ?",
+            "8. Quels sont vos passe‐temps ?",
+            "9. Quelles sont vos qualités personnelles ?",
+            "1st Category 0 – 2 - message not clear.",
+            "2nd Category 3 - message clear."
+          ]
+        },
+        {
+          "id": "communication-second",
+          "label": "Communication · second question you chose",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "6. Avez‐vous déjà visité la France ?",
+            "7. Pourquoi voulez‐vous travailler à Disneyland Paris ?",
+            "8. Quels sont vos passe‐temps ?",
+            "9. Quelles sont vos qualités personnelles ?",
+            "1st Category 0 – 2 - message not clear.",
+            "2nd Category 3 - message clear."
+          ]
+        },
+        {
+          "id": "communication-third",
+          "label": "Communication · third question you chose",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "6. Avez‐vous déjà visité la France ?",
+            "7. Pourquoi voulez‐vous travailler à Disneyland Paris ?",
+            "8. Quels sont vos passe‐temps ?",
+            "9. Quelles sont vos qualités personnelles ?",
+            "1st Category 0 – 2 - message not clear.",
+            "2nd Category 3 - message clear."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                6,
+                7,
+                8
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly",
+                "some sense of register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": [
+                "very poor to poor use of vocabulary of vocabulary",
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ],
+          "requiresAttempt": true
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Choose any three of the four printed questions. Each Communication mark is for one question you chose; one question cannot earn two of them.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-writing-b2a",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q2(a) — Deferred sitting",
+    "questionText": "Leave the following message in French for your friend Martin/Martine with whom you are staying in Poitiers. In the message include three of the following five points:\n\n‐ You woke up early this morning.\n‐ There is no milk in the fridge at the moment.\n‐ You have gone to the supermarket at the corner of the street.\n‐ You will buy some bread and some meat for lunch.\n‐ You will phone him/her in half an hour.",
+    "totalMarks": 30,
+    "topicId": "french-6-2",
+    "conceptId": "french-writing-french-6-2",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B2A",
+      "title": "Printed writing task",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.13 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 13,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Rédigez vos réponses en français.",
+        "In the message include three of the following five points:",
+        "Ignore layout."
+      ],
+      "criteria": [
+        {
+          "id": "communication-first",
+          "label": "Communication · first point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You woke up early this morning. — You woke up early/ this morning.",
+            "There is no milk in the fridge at the moment. — There is no milk in the fridge/at the moment.",
+            "You have gone to the supermarket at the corner of the street. — You have gone to the supermarket/ at the corner of the street.",
+            "You will buy some bread and some meat for lunch. — You will buy some bread and some meat/ for lunch",
+            "You will phone him/her in half an hour. — You will phone him/her/ in half an hour",
+            "Two points required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "communication-second",
+          "label": "Communication · second point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You woke up early this morning. — You woke up early/ this morning.",
+            "There is no milk in the fridge at the moment. — There is no milk in the fridge/at the moment.",
+            "You have gone to the supermarket at the corner of the street. — You have gone to the supermarket/ at the corner of the street.",
+            "You will buy some bread and some meat for lunch. — You will buy some bread and some meat/ for lunch",
+            "You will phone him/her in half an hour. — You will phone him/her/ in half an hour",
+            "Two points required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "communication-third",
+          "label": "Communication · third point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You woke up early this morning. — You woke up early/ this morning.",
+            "There is no milk in the fridge at the moment. — There is no milk in the fridge/at the moment.",
+            "You have gone to the supermarket at the corner of the street. — You have gone to the supermarket/ at the corner of the street.",
+            "You will buy some bread and some meat for lunch. — You will buy some bread and some meat/ for lunch",
+            "You will phone him/her in half an hour. — You will phone him/her/ in half an hour",
+            "Two points required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly",
+                "some sense of register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "very poor to poor use of vocabulary of vocabulary",
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Source discrepancy: the marking scheme introduces this message as one left for Monsieur Latour, a guest at the hotel where you work as a receptionist, while the paper sets it for your friend Martin/Martine in Poitiers. The five points and their scheme answers match. This card keeps the task printed in the paper.",
+        "Choose any three of the five printed points. Each Communication mark is for one point you chose; one point cannot earn two of them.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-writing-b2b",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q2(b) — Deferred sitting",
+    "questionText": "You are on holidays in Avignon. Write a postcard in French to your friend Ronan/Sinéad in which you include three of the following five points:\n\n‐ The weather is hot and there are a lot of tourists.\n‐ You saw the famous bridge this morning.\n‐ You bought some flowers in the market.\n‐ You will go to the theatre this evening.\n‐ You will be back home next Monday.",
+    "totalMarks": 30,
+    "topicId": "french-6-4",
+    "conceptId": "french-writing-french-6-4",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B2B",
+      "title": "Printed writing task",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.14 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 14,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Rédigez vos réponses en français.",
+        "Write a postcard in French to your friend Ronan/Sinéad in which you include three of the following five points:",
+        "Ignore layout."
+      ],
+      "criteria": [
+        {
+          "id": "communication-first",
+          "label": "Communication · first point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "The weather is hot and there are a lot of tourists. — The weather is hot/ and there are a lot of tourists.",
+            "You saw the famous bridge this morning. — You saw the famous bridge/ this morning.",
+            "You bought some flowers in the market. — You bought some flowers/ in the market.",
+            "You will go to the theatre this evening. — You will go to the theatre/ this evening.",
+            "You will be back home next Monday. — You will be back home/ next Monday.",
+            "Two points required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "communication-second",
+          "label": "Communication · second point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "The weather is hot and there are a lot of tourists. — The weather is hot/ and there are a lot of tourists.",
+            "You saw the famous bridge this morning. — You saw the famous bridge/ this morning.",
+            "You bought some flowers in the market. — You bought some flowers/ in the market.",
+            "You will go to the theatre this evening. — You will go to the theatre/ this evening.",
+            "You will be back home next Monday. — You will be back home/ next Monday.",
+            "Two points required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "communication-third",
+          "label": "Communication · third point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "The weather is hot and there are a lot of tourists. — The weather is hot/ and there are a lot of tourists.",
+            "You saw the famous bridge this morning. — You saw the famous bridge/ this morning.",
+            "You bought some flowers in the market. — You bought some flowers/ in the market.",
+            "You will go to the theatre this evening. — You will go to the theatre/ this evening.",
+            "You will be back home next Monday. — You will be back home/ next Monday.",
+            "Two points required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly",
+                "some sense of register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "very poor to poor use of vocabulary of vocabulary",
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Choose any three of the five printed points. Each Communication mark is for one point you chose; one point cannot earn two of them.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-writing-b3a",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q3(a) — Deferred sitting",
+    "questionText": "Your French friends Chantal and Pierre are coming to visit. Note three of the following five points in French in your diary:\n\n‐ Your French friends phoned today.\n‐ Your friends want to visit Ireland this month.\n‐ Chantal and Pierre will arrive at the station at 5 p.m.\n‐ You prepared their bedroom this morning.\n‐ You hope to visit a museum during the week.",
+    "totalMarks": 30,
+    "topicId": "french-6-0",
+    "conceptId": "french-writing-french-6-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B3A",
+      "title": "Printed writing task",
+      "pages": [
+        16
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.15 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 15,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Rédigez vos réponses en français.",
+        "Note three of the following five points in French in your diary:",
+        "No marks for layout."
+      ],
+      "criteria": [
+        {
+          "id": "communication-first",
+          "label": "Communication · first point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Your French friends phoned today. — Your French friends phoned/ today",
+            "Your friends want to visit Ireland this month. — Your friends want to visit Ireland/ this month",
+            "Chantal and Pierre will arrive at the station at 5 p.m. — Chantal and Pierre will arrive at the station/ at 5 p.m.",
+            "You prepared their bedroom this morning. — You prepared their bedroom /this morning.",
+            "You hope to visit a museum during the week. — You hope to visit a museum /during the week.",
+            "Two points required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "communication-second",
+          "label": "Communication · second point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Your French friends phoned today. — Your French friends phoned/ today",
+            "Your friends want to visit Ireland this month. — Your friends want to visit Ireland/ this month",
+            "Chantal and Pierre will arrive at the station at 5 p.m. — Chantal and Pierre will arrive at the station/ at 5 p.m.",
+            "You prepared their bedroom this morning. — You prepared their bedroom /this morning.",
+            "You hope to visit a museum during the week. — You hope to visit a museum /during the week.",
+            "Two points required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "communication-third",
+          "label": "Communication · third point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "Your French friends phoned today. — Your French friends phoned/ today",
+            "Your friends want to visit Ireland this month. — Your friends want to visit Ireland/ this month",
+            "Chantal and Pierre will arrive at the station at 5 p.m. — Chantal and Pierre will arrive at the station/ at 5 p.m.",
+            "You prepared their bedroom this morning. — You prepared their bedroom /this morning.",
+            "You hope to visit a museum during the week. — You hope to visit a museum /during the week.",
+            "Two points required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly",
+                "some sense of register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "very poor to poor use of vocabulary of vocabulary",
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Choose any three of the five printed points. Each Communication mark is for one point you chose; one point cannot earn two of them.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-writing-b3b",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q3(b) — Deferred sitting",
+    "questionText": "Write a formal letter in French to Monsieur Jacques Privat, Hôtel Mimosa, Promenade des Anglais, 06200 Nice. In the letter include three of the following five points:\n\n‐ Say you will travel to Nice with some friends in the autumn.\n‐ Say you will arrive at the hotel on 10th September.\n‐ Say you would like to book two rooms with shower.\n‐ Ask if there is a car park near the hotel.\n‐ Ask him to organise an excursion to the mountains.\n\nYou are Patrick / Noelle Murray, 28 Lake View, Killarney, Co. Kerry.",
+    "totalMarks": 30,
+    "topicId": "french-6-1",
+    "conceptId": "french-writing-french-6-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B3B",
+      "title": "Printed writing task",
+      "pages": [
+        16
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.16, 22 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 16,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Rédigez vos réponses en français.",
+        "In the letter include three of the following five points:"
+      ],
+      "criteria": [
+        {
+          "id": "format-top",
+          "label": "Format · top of page",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [
+            "Top of page - 3 marks (France not necessary in address)",
+            "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
+            "City / town / village & date (Killarney, le 12 juin, 2022) in top right corner or underneath.",
+            "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+            "Include “Irlande”, accept “Ireland” / “Éire”.",
+            "1 mistake - ignore.",
+            "2 mistakes - deduct 1 mark.",
+            "3 mistakes - deduct 2 marks.",
+            "If candidate has general layout of Top of Page or Closing Formula correct, despite numerous mistakes - award one mark."
+          ]
+        },
+        {
+          "id": "format-close",
+          "label": "Format · closing formula",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [
+            "Formal ending required.",
+            "Treat one or more incorrect accents in closing formula as one mistake.",
+            "1 mistake - ignore.",
+            "2 mistakes - deduct 1 mark.",
+            "3 mistakes - deduct 2 marks.",
+            "If candidate has general layout of Top of Page or Closing Formula correct, despite numerous mistakes - award one mark."
+          ]
+        },
+        {
+          "id": "communication-first",
+          "label": "Communication · first point you chose",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "Say you will travel to Nice with some friends in the autumn. — Say you will travel to Nice with some friends/ in the autumn.",
+            "Say you will arrive at the hotel on 10th September. — Say you will arrive at the hotel/ on 10th September.",
+            "Say you would like to book two rooms with shower. — Say you would like to book two rooms/ with shower.",
+            "Ask if there is a car park near the hotel. — Ask if there is a car park/ near the hotel.",
+            "Ask him to organise an excursion to the mountains. — Ask him to organise an excursion/ to the mountains.",
+            "Two points required for 4 marks (2 + 2)",
+            "1st Category 0 - 1 - message not clear.",
+            "2nd Category 2 - message clear."
+          ]
+        },
+        {
+          "id": "communication-second",
+          "label": "Communication · second point you chose",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "Say you will travel to Nice with some friends in the autumn. — Say you will travel to Nice with some friends/ in the autumn.",
+            "Say you will arrive at the hotel on 10th September. — Say you will arrive at the hotel/ on 10th September.",
+            "Say you would like to book two rooms with shower. — Say you would like to book two rooms/ with shower.",
+            "Ask if there is a car park near the hotel. — Ask if there is a car park/ near the hotel.",
+            "Ask him to organise an excursion to the mountains. — Ask him to organise an excursion/ to the mountains.",
+            "Two points required for 4 marks (2 + 2)",
+            "1st Category 0 - 1 - message not clear.",
+            "2nd Category 2 - message clear."
+          ]
+        },
+        {
+          "id": "communication-third",
+          "label": "Communication · third point you chose",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "Say you will travel to Nice with some friends in the autumn. — Say you will travel to Nice with some friends/ in the autumn.",
+            "Say you will arrive at the hotel on 10th September. — Say you will arrive at the hotel/ on 10th September.",
+            "Say you would like to book two rooms with shower. — Say you would like to book two rooms/ with shower.",
+            "Ask if there is a car park near the hotel. — Ask if there is a car park/ near the hotel.",
+            "Ask him to organise an excursion to the mountains. — Ask him to organise an excursion/ to the mountains.",
+            "Two points required for 4 marks (2 + 2)",
+            "1st Category 0 - 1 - message not clear.",
+            "2nd Category 2 - message clear."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 12,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                9,
+                10,
+                11,
+                12
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                5,
+                6,
+                7,
+                8
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly",
+                "some sense of register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "guidance": [
+                "very poor to poor use of vocabulary of vocabulary",
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ],
+          "requiresAttempt": true
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Choose any three of the five printed points. Each Communication mark is for one point you chose; one point cannot earn two of them.",
+        "Use the formal letter layout and the supplied addresses.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
   }
 ]

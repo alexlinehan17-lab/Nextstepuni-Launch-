@@ -1924,5 +1924,2674 @@
       "humanReviewedBy": "agent-verified",
       "humanReviewedAt": "2026-11-20"
     }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a1-q1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A1 Q1 — Deferred sitting",
+    "questionText": "When did Célia first meet her best friend Sabine? (Section 1)",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• The first day of (pre)school — 4 Marks",
+        "- (When they were) in (pre)school — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            2,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a1-q2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A1 Q2 — Deferred sitting",
+    "questionText": "What does Sabine hope to do next year? (Section 1)",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• To go to university / college — 4 Marks",
+        "• To become an engineer — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a1-q3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A1 Q3 — Deferred sitting",
+    "questionText": "What did Florian’s parents decide to do last summer? (Section 2)",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• To send Florian to Spain to do a language course — 4 Marks",
+        "• To send Florian to Spain for a month — 4 Marks",
+        "− To send Florian to Spain — 2 Marks",
+        "− To get Florian to do a language course — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            2,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a1-q4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A1 Q4 — Deferred sitting",
+    "questionText": "What disadvantage does Florian mention? (Section 2)",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• The temptation to speak French (when they were together was too strong)/They spoke French (when they were together) — 4 Marks",
+        "• They didn’t make much progress in Spanish — 4 Marks",
+        "- He spoke French — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            2,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a1-q5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A1 Q5 — Deferred sitting",
+    "questionText": "What are the two physical differences between Morgane and her twin sister Colette? (Section 3)",
+    "totalMarks": 8,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "Accept any two of the following:",
+        "• Colette is (a little) smaller — 4 Marks",
+        "• Colette has darker hair — 4 marks",
+        "- Height — 2 Marks",
+        "- Hair — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a1-q6",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A1 Q6 — Deferred sitting",
+    "questionText": "What does Colette never get angry about? (Section 3)",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• Morgane taking / wearing her clothes / new skirt — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a1-q7",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A1 Q7 — Deferred sitting",
+    "questionText": "Why is Théo’s family moving house? (Section 4)",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• His father found a job in Lille / 600 kms away — 4 Marks",
+        "- His father found a job — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            2,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a1-q8",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A1 Q8 — Deferred sitting",
+    "questionText": "What two things did his friends give him at his farewell party? (Section 4)",
+    "totalMarks": 8,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "Accept any two of the following:",
+        "• An enormous card — 4 Marks",
+        "• A green and yellow jersey — 4 Marks",
+        "− A card — 2 Marks",
+        "− A jersey — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a2-q1-a",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A2 Q1(a) — Deferred sitting",
+    "questionText": "Write the name (in French) of the books which refer to each of the following:\n\na young boy who gets lost",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• A young boy who gets lost- le prix du pardon — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a2-q1-b",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A2 Q1(b) — Deferred sitting",
+    "questionText": "Write the name (in French) of the books which refer to each of the following:\n\nearning money",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• Earning money - Le garcon talisman — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a2-q1-c",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A2 Q1(c) — Deferred sitting",
+    "questionText": "Write the name (in French) of the books which refer to each of the following:\n\na swimming pool",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• A swimming pool- Ton père, ce héros — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a2-q1-d",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A2 Q1(d) — Deferred sitting",
+    "questionText": "Write the name (in French) of the books which refer to each of the following:\n\nworking hard",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• Working hard- Petite-Fleur — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a2-q2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A2 Q2 — Deferred sitting",
+    "questionText": "In the book Je hais les vacances, what upsets the children’s holiday? (Two details)",
+    "totalMarks": 8,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "Accept any two of the following:",
+        "• They are sick in the car — 4 Marks",
+        "• It is difficult to put up the tent — 4 Marks",
+        "• They find/have nothing to eat — 4 Marks",
+        "- They are sick — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a2-q3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A2 Q3 — Deferred sitting",
+    "questionText": "Why is everyone afraid of Bruno in Des poings dans le ventre?",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• He is (always) angry — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a2-q4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A2 Q4 — Deferred sitting",
+    "questionText": "In the book Petite‐Fleur, what is the nationality of the girl Petite‐Fleur?",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• Chinese — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "The scheme prints this head as 4 + 4 marks over a single 4-mark answer; this card is scored out of 4 so that Q.2 adds up to its printed 40 marks.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a2-q5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A2 Q5 — Deferred sitting",
+    "questionText": "In the book Le prix du pardon, what is Louis’ father’s job?",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• A policeman — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a2-q6",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A2 Q6 — Deferred sitting",
+    "questionText": "What do the father and son prepare for in Ton père, ce héros?",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• The return to school/classes — 4 Marks",
+        "- School/Classes — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            2,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a3-q1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A3 Q1 — Deferred sitting",
+    "questionText": "Quel âge avait Cécile quand elle a commencé à jouer de la harpe celtique ? (Section 1)",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.7; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 7,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• (Elle a découvert la harpe celtique à) seize/16 (ans) — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a3-q2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A3 Q2 — Deferred sitting",
+    "questionText": "Citez une expression qui indique que les gens s’intéressaient à sa musique. (Section 1)",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.7; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 7,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• Des gens s’arrêtaient, intrigués par l’instrument — 4 Marks",
+        "• Ils me posaient des questions. — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a3-q3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A3 Q3 — Deferred sitting",
+    "questionText": "Nommez deux pays qui ont influencé le style de musique de Cécile. (Section 2)",
+    "totalMarks": 8,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.7; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 7,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• Irlande. — 4 Marks",
+        "• Écosse — 4 Marks",
+        "- Irlandais — 2 Marks",
+        "- Écossais — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a3-q4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A3 Q4 — Deferred sitting",
+    "questionText": "D’après la deuxième section, Cécile\nn’a jamais joué avec un groupe\na publié un livre de chansons\nn’a pas gagné un bon salaire\nest devenue très célèbre",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.7; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 7,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• n’a pas gagné un bon salaire (troisième réponse) — 4 Marks",
+        "Note:",
+        "➢ If candidate clearly identifies / highlights correct answer, without using a tick = 4 Marks.",
+        "➢ If more than one answer offered = 0 Marks."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Select one answer. The other printed options are distractors.",
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "questionChoices": [
+      "n’a jamais joué avec un groupe",
+      "a publié un livre de chansons",
+      "n’a pas gagné un bon salaire",
+      "est devenue très célèbre"
+    ]
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a3-q5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A3 Q5 — Deferred sitting",
+    "questionText": "Quel autre musicien a reçu de l’argent en même temps que Cécile ? (Section 3)",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.8; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• (Un) violoniste — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a3-q6",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A3 Q6 — Deferred sitting",
+    "questionText": "Relevez la phrase qui indique que Cécile a eu beaucoup de succès avec son premier album. (Section 3)",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.8; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• J’ai vendu 10 000 exemplaires du C.D. — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a3-q7",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A3 Q7 — Deferred sitting",
+    "questionText": "Qu’est‐ce que Cécile, a‐t‐elle aimé dans la ville de Prague ? (Section 4)",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.8; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• L’architecture — 4 Marks",
+        "• Les couleurs — 4 Marks",
+        "• Les parcs — 4 Marks",
+        "• Une grande douceur se dégage de cette ville — 4 Marks",
+        "• Il y a beaucoup de chaleur chez ses habitants — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a3-q8",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A3 Q8 — Deferred sitting",
+    "questionText": "Do you think that Cécile’s life as a musician in Paris was easy or difficult? Answer in English, giving TWO points and referring to the text.",
+    "totalMarks": 8,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.8; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning.",
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "Candidates may choose to agree or disagree using the following points.",
+        "Any two of:",
+        "Agree:",
+        "• She/ her music was well received when she played on the streets",
+        "• She got a grant which allowed her to bring out her album",
+        "• She sold 10,000 copies of her C.D.",
+        "• She gets to travel abroad because of her music",
+        "Etc., etc.",
+        "Disagree:",
+        "• She, herself, had to pay to continue Harp classes in Paris",
+        "• She earned very little when she was performing in cafés",
+        "• She had to sell her CDs herself Etc., etc. ."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a4-q1-a",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A4 Q1(a) — Deferred sitting",
+    "questionText": "Selon la première section, dans son bulletin scolaire, quelle note Kamo a‐t‐il reçue\n\nen anglais ?",
+    "totalMarks": 4,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.9; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• En anglais – Trois (sur vingt) — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a4-q1-b",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A4 Q1(b) — Deferred sitting",
+    "questionText": "Selon la première section, dans son bulletin scolaire, quelle note Kamo a‐t‐il reçue\n\nen histoire ?",
+    "totalMarks": 4,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.9; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• En histoire – Dix-sept (sur vingt) — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a4-q2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A4 Q2 — Deferred sitting",
+    "questionText": "D’après la première section, la mère de Kamo\ntravaille depuis longtemps chez Biopool\ns’intéresse aux médicaments naturels\nn’a pas de travail en ce moment\nest en très bonne humeur",
+    "totalMarks": 4,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.9; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• N’a pas de travail en ce moment (troisième réponse) — 4 Marks",
+        "Note:",
+        "➢ If candidate clearly identifies / highlights correct answer, without using a tick = 4 Marks.",
+        "➢ If more than one answer offered = 0 Marks."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Select one answer. The other printed options are distractors.",
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "questionChoices": [
+      "travaille depuis longtemps chez Biopool",
+      "s’intéresse aux médicaments naturels",
+      "n’a pas de travail en ce moment",
+      "est en très bonne humeur"
+    ]
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a4-q3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A4 Q3 — Deferred sitting",
+    "questionText": "Combien de temps la mère donne‐t‐elle à Kamo pour apprendre l’anglais ? (Section 2)",
+    "totalMarks": 4,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.9; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• Trois mois — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a4-q4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A4 Q4 — Deferred sitting",
+    "questionText": "Relevez dans le texte deux expressions qui montrent que la mère de Kamo passait beaucoup de temps à travailler. (Section 2)",
+    "totalMarks": 8,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.9; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "Accept any two of the following:",
+        "• Elle rentrait parfois si tard (que Kamo devait faire les courses et la cuisine). — 4 Marks",
+        "• Elle rapportait même des dossiers (à la maison). — 4 Marks",
+        "• Elle travaillait aussi le dimanche — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a4-q5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A4 Q5 — Deferred sitting",
+    "questionText": "Qu’est‐ce qui était écrit sur le papier que la mère de Kamo lui a donné ? (Section 3)",
+    "totalMarks": 4,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.10; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "Appropriate direct quotation OR correct manipulation acceptable",
+        "• Une liste de noms britanniques. — 4 Marks",
+        "• Les noms de quinze correspondants — 4 Marks",
+        "- Une liste de noms — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a4-q6",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A4 Q6 — Deferred sitting",
+    "questionText": "Trouvez dans la quatrième section un verbe au futur simple.",
+    "totalMarks": 4,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.10; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• Trouveras — 4 Marks",
+        "• Verras — 4 Marks",
+        "• Arriveras — 4 Marks",
+        "Note:",
+        "➢ Minus 1 mark for each extraneous element"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-reading-a4-q7",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2022 OL Section A4 Q7 — Deferred sitting",
+    "questionText": "Give one point about the personality (i) of Kamo and (ii) of his mother.\nAnswer in English, referring to the text.",
+    "totalMarks": 8,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, pp.10; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "Kamo:",
+        "• He is cheeky when he asks his mother why she lost her job",
+        "• He likes a challenge, he immediately takes up the challenge offered by his mother",
+        "• He is helpful, he does the shopping and cooking when his mother is under pressure",
+        "• He is shy, he doesn’t want to correspond with strangers",
+        "Etc., etc.",
+        "His Mother:",
+        "• She is cross with him about his poor result in his English exam",
+        "• She is hard working, her job is tough and has long hours but she keeps at it",
+        "• She is organised, she has a list of people for him to correspond with",
+        "• She is loving, she kisses him as she is leaving Etc., etc."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
   }
 ]

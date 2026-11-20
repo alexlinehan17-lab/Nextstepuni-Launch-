@@ -1,1 +1,732 @@
-[]
+[
+  {
+    "id": "fr-2022-ol-deferred-cloze-b1a-gap-1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(a) · gap 1 — Deferred sitting",
+    "questionText": "Complétez la lettre ci‐dessous en écrivant les mots suivants dans les espaces appropriés. (N.B. Cette liste n’est pas dans le bon ordre.)\n\nprochaine, tombe, février, un, dangereuses, pas, bonne, cadeaux, passer, mes\n\nJe t’écris pour te souhaiter une [1] année.",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 1",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "answerGuide": [
+        "1. bonne",
+        "10 gaps for 3 marks each",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "This card practises gap [1] only; any other numbered gap in the excerpt is a separate card.",
+        "Score 3 for the correct word, 2 when careless transcription is the only fault (the scheme deducts 1 mark), otherwise 0."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-cloze-b1a-gap-2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(a) · gap 2 — Deferred sitting",
+    "questionText": "Complétez la lettre ci‐dessous en écrivant les mots suivants dans les espaces appropriés. (N.B. Cette liste n’est pas dans le bon ordre.)\n\nprochaine, tombe, février, un, dangereuses, pas, bonne, cadeaux, passer, mes\n\nQu’est‐ce que tu as reçu comme [2] de Noël ?",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 2",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "answerGuide": [
+        "2. cadeaux",
+        "10 gaps for 3 marks each",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "This card practises gap [2] only; any other numbered gap in the excerpt is a separate card.",
+        "Score 3 for the correct word, 2 when careless transcription is the only fault (the scheme deducts 1 mark), otherwise 0."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-cloze-b1a-gap-3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(a) · gap 3 — Deferred sitting",
+    "questionText": "Complétez la lettre ci‐dessous en écrivant les mots suivants dans les espaces appropriés. (N.B. Cette liste n’est pas dans le bon ordre.)\n\nprochaine, tombe, février, un, dangereuses, pas, bonne, cadeaux, passer, mes\n\nMoi, j’ai eu [3] nouveau vélo, des vêtements, et quelques romans.",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 3",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "answerGuide": [
+        "3. un",
+        "10 gaps for 3 marks each",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "This card practises gap [3] only; any other numbered gap in the excerpt is a separate card.",
+        "Score 3 for the correct word, 2 when careless transcription is the only fault (the scheme deducts 1 mark), otherwise 0."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-cloze-b1a-gap-4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(a) · gap 4 — Deferred sitting",
+    "questionText": "Complétez la lettre ci‐dessous en écrivant les mots suivants dans les espaces appropriés. (N.B. Cette liste n’est pas dans le bon ordre.)\n\nprochaine, tombe, février, un, dangereuses, pas, bonne, cadeaux, passer, mes\n\nIci, à Briançon, la neige [4] depuis hier et maintenant le paysage est très pittoresque.",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 4",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "answerGuide": [
+        "4. tombe",
+        "10 gaps for 3 marks each",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "This card practises gap [4] only; any other numbered gap in the excerpt is a separate card.",
+        "Score 3 for the correct word, 2 when careless transcription is the only fault (the scheme deducts 1 mark), otherwise 0."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-cloze-b1a-gap-5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(a) · gap 5 — Deferred sitting",
+    "questionText": "Complétez la lettre ci‐dessous en écrivant les mots suivants dans les espaces appropriés. (N.B. Cette liste n’est pas dans le bon ordre.)\n\nprochaine, tombe, février, un, dangereuses, pas, bonne, cadeaux, passer, mes\n\nJ’adore la neige mais [5] parents ne sont ____________ contents parce que les routes sont très ____________ .",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 5",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "answerGuide": [
+        "5. mes",
+        "10 gaps for 3 marks each",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "This card practises gap [5] only; any other numbered gap in the excerpt is a separate card.",
+        "Score 3 for the correct word, 2 when careless transcription is the only fault (the scheme deducts 1 mark), otherwise 0."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-cloze-b1a-gap-6",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(a) · gap 6 — Deferred sitting",
+    "questionText": "Complétez la lettre ci‐dessous en écrivant les mots suivants dans les espaces appropriés. (N.B. Cette liste n’est pas dans le bon ordre.)\n\nprochaine, tombe, février, un, dangereuses, pas, bonne, cadeaux, passer, mes\n\nJ’adore la neige mais ____________ parents ne sont [6] contents parce que les routes sont très ____________ .",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 6",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "answerGuide": [
+        "6. pas",
+        "10 gaps for 3 marks each",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "This card practises gap [6] only; any other numbered gap in the excerpt is a separate card.",
+        "Score 3 for the correct word, 2 when careless transcription is the only fault (the scheme deducts 1 mark), otherwise 0."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-cloze-b1a-gap-7",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(a) · gap 7 — Deferred sitting",
+    "questionText": "Complétez la lettre ci‐dessous en écrivant les mots suivants dans les espaces appropriés. (N.B. Cette liste n’est pas dans le bon ordre.)\n\nprochaine, tombe, février, un, dangereuses, pas, bonne, cadeaux, passer, mes\n\nJ’adore la neige mais ____________ parents ne sont ____________ contents parce que les routes sont très [7] .",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 7",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "answerGuide": [
+        "7. dangereuses",
+        "10 gaps for 3 marks each",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "This card practises gap [7] only; any other numbered gap in the excerpt is a separate card.",
+        "Score 3 for the correct word, 2 when careless transcription is the only fault (the scheme deducts 1 mark), otherwise 0."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-cloze-b1a-gap-8",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(a) · gap 8 — Deferred sitting",
+    "questionText": "Complétez la lettre ci‐dessous en écrivant les mots suivants dans les espaces appropriés. (N.B. Cette liste n’est pas dans le bon ordre.)\n\nprochaine, tombe, février, un, dangereuses, pas, bonne, cadeaux, passer, mes\n\nNous pourrons peut‐être nous rencontrer au mois de [8] en Irlande.",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 8",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "answerGuide": [
+        "8. février",
+        "10 gaps for 3 marks each",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "This card practises gap [8] only; any other numbered gap in the excerpt is a separate card.",
+        "Score 3 for the correct word, 2 when careless transcription is the only fault (the scheme deducts 1 mark), otherwise 0."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-cloze-b1a-gap-9",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(a) · gap 9 — Deferred sitting",
+    "questionText": "Complétez la lettre ci‐dessous en écrivant les mots suivants dans les espaces appropriés. (N.B. Cette liste n’est pas dans le bon ordre.)\n\nprochaine, tombe, février, un, dangereuses, pas, bonne, cadeaux, passer, mes\n\nMon professeur d’anglais organise un voyage scolaire et nous comptons [9] cinq jours à Dublin.",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 9",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "answerGuide": [
+        "9. passer",
+        "10 gaps for 3 marks each",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "This card practises gap [9] only; any other numbered gap in the excerpt is a separate card.",
+        "Score 3 for the correct word, 2 when careless transcription is the only fault (the scheme deducts 1 mark), otherwise 0."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2022-ol-deferred-cloze-b1a-gap-10",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2022,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2022 OL Section B Q1(a) · gap 10 — Deferred sitting",
+    "questionText": "Complétez la lettre ci‐dessous en écrivant les mots suivants dans les espaces appropriés. (N.B. Cette liste n’est pas dans le bon ordre.)\n\nprochaine, tombe, février, un, dangereuses, pas, bonne, cadeaux, passer, mes\n\nJe t’enverrai plus de détails la semaine [10] .",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 10",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2022 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2022 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "answerGuide": [
+        "10. prochaine",
+        "10 gaps for 3 marks each",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "This card practises gap [10] only; any other numbered gap in the excerpt is a separate card.",
+        "Score 3 for the correct word, 2 when careless transcription is the only fault (the scheme deducts 1 mark), otherwise 0."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  }
+]
