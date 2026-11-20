@@ -34,7 +34,10 @@ const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const reference = readJson(REFERENCE_PATH);
 const curriculumCrosswalk = readJson(CURRICULUM_CROSSWALK_PATH);
 const reviewed = readJson(REVIEWED_PATH);
-const localPapers = readJson(TAGS_PATH);
+// The tags file also holds the carded deferred booklets ("…-deferred.pdf",
+// scripts/paper-trail/business_deferred.py); their Atlas topics come from
+// business-deferred-question-topics.json (registry.ts), not this crosswalk.
+const localPapers = readJson(TAGS_PATH).filter(paper => !/-deferred\.pdf$/i.test(paper.fileid));
 const preservationBaseline = readJson(BASELINE_PATH);
 
 const VARIANTS = [

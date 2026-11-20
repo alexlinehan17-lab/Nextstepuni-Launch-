@@ -554,8 +554,9 @@ const LADDER = String.raw`(?:\s+graded\*?)?(?:\s*\(\s*(?:graded\s*)?(\d+(?:\s*\/
 /** "Total 10m", "Sub-total 25 marks", "5 marks total": furniture on a criterion. */
 const CRITERION_TOTAL = /\b(?:sub\s*[-–]?\s*)?total\s*:?\s*\d+\s*(?:marks?|m)\b\.?|\b\d+\s*(?:marks?|m)\s+total\b\.?/gi;
 /** A cell that is nothing but a price ("4 marks", "8 x SRPs", "3 @ 20 marks
- *  each", "1+1 mark (Circle & Centred)"): one column of a two-route table. */
-const PRICE_CELL = new RegExp(String.raw`^(?:${COUNT}\s*@\s*)?\d+(?:\s*[/+]\s*\d+)*\s*(?:x\s*SRP'?s?|(?:marks?|m)\b(?:\s+each)?(?:\s+graded\*?)?(?:\s*\([^)]*\))?)\.?$`, 'i');
+ *  each", "1+1 mark (Circle & Centred)", the 2024 deferred scheme's "1 mark- Circle"):
+ *  one column of a two-route table. */
+const PRICE_CELL = new RegExp(String.raw`^(?:${COUNT}\s*@\s*)?\d+(?:\s*[/+]\s*\d+)*\s*(?:x\s*SRP'?s?|(?:marks?|m)\b(?:\s+each)?(?:\s+graded\*?)?(?:\s*\([^)]*\)|-\s*[A-Z][a-z]+)?)\.?$`, 'i');
 const HEADING_PHRASE = /^(?:each question|sketch|.*\bas follows|.*:)$/i;
 /** The scheme prices a slot without printing an answer for it: "Tectonic
  *  plate named", "Two definitions", or a numbered slot ("Use 1", "Reason 2"). */
@@ -1391,8 +1392,8 @@ function readCriterion(context: GeographyCriterionContext, criterion: GeographyC
           return shared || !priceCells(line).length ? [line] : [];
         }
         const price = cells.filter(isPrice)[column];
-        // "1+1 mark (Circle & Centred)": the column names its own slot.
-        const own = price.match(/^(.*?)\s*\(([^)]*[A-Za-z][^)]*)\)\s*$/);
+        // "1+1 mark (Circle & Centred)", "1 mark- Circle": the column names its own slot.
+        const own = price.match(/^(.*?)\s*\(([^)]*[A-Za-z][^)]*)\)\s*$/) ?? price.match(/^(.*?)-\s*([A-Z][a-z]+)\s*$/);
         if (own) return [[own[2], own[1]].join(CELL)];
         return [[...cells.filter(cell => !isPrice(cell)), price].join(CELL)];
       });

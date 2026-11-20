@@ -25,6 +25,7 @@ import artRuntimeJson from './art-runtime.json';
 import biologyRuntimeJson from './biology-runtime.json';
 import businessRuntimeJson from './business-runtime.json';
 import businessSourceReviewedTopics from './business-source-reviewed-topics.json';
+import businessDeferredQuestionTopics from './business-deferred-question-topics.json';
 import chemistryRuntimeJson from './chemistry-runtime.json';
 import classicalStudiesAuditJson from './classical-studies.json';
 import computerScienceRuntimeJson from './computer-science-runtime.json';
@@ -3950,6 +3951,25 @@ for (const review of businessSourceReviewedTopics.questions) {
   const redeveloped = (QUESTION_TOPICS.get(key) ?? []).filter(id =>
     businessTopics.some(topic => topic.id === id && topic.course !== 'old'));
   QUESTION_TOPICS.set(key, [...topics.map(topic => topic.id), ...redeveloped]);
+}
+// The SEC's deferred sittings, carded (scripts/markbank/authoring/business/
+// add-<year>-<level>-deferred.py writes business-deferred-question-topics.json
+// with the cards). Each booklet is its own paper ("LC033ALP032EV-deferred.pdf",
+// "LC033ALP041EV-deferred.pdf"), numbered as June's: its questions join on the
+// booklet, so they never replace or merge with June's question of the same
+// number (Biology and Engineering do the same), and take the examined
+// syllabus's topics their cards are filed under, as a reviewed question does.
+for (const review of businessDeferredQuestionTopics.questions) {
+  const topics = businessTopics.filter(topic => topic.level === review.level
+    && topic.course === 'old'
+    && topic.curriculumNodeIds.every(id => review.canonicalNodeIds.includes(id)));
+  if (review.canonicalNodeIds.some(id => !topics.some(topic => topic.curriculumNodeIds.includes(id)))) {
+    throw new Error(`Business deferred review has an unresolved topic: ${review.year} ${review.fileid} ${review.n}`);
+  }
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey('business', review.level as PaperLevel, review.year, 'main', review.fileid, review.n, review.paperKey),
+    topics.map(topic => topic.id),
+  );
 }
 
 // Construction Studies uses the exact audited joins for both official-

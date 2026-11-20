@@ -31,7 +31,11 @@ const isBusinessRubric = (card: SecCard): card is SecRubricCard & { rubric: Busi
 // Direct SEC review files questions under the examined 1999 syllabus; provider
 // joins to the redeveloped (2027) course remain attached beside them.
 const outgoing = (ids: string[]) => ids.filter(id => !id.startsWith('business-2027-'));
-const businessRubrics = HIGHER.filter(isBusinessRubric);
+// June's sittings. A deferred sitting is a paper of its own (deferred-authored.json, its ids
+// "bus-<year>-<level>-deferred-…"), checked in its own block below, never in June's cohorts.
+const isJuneBusinessRubric = (card: SecCard): card is SecRubricCard & { rubric: BusinessRubric } =>
+  isBusinessRubric(card) && !card.paperFileid?.endsWith('-deferred');
+const businessRubrics = HIGHER.filter(isJuneBusinessRubric);
 const reviewed = businessRubrics.filter(card => card.section === '2');
 const enterprise = reviewed.find(card => card.id === 'bus-2025-hl-s2-abq-a')!;
 const hasPdfParser = (() => {
@@ -1508,7 +1512,7 @@ describe('Business 2021 Higher full paper', () => {
 });
 
 describe('Business 2010 Higher full paper outside the ABQ', () => {
-  const higherRubrics = HIGHER.filter(isBusinessRubric);
+  const higherRubrics = HIGHER.filter(isJuneBusinessRubric);
   const y2010 = higherRubrics.filter(card => card.year === 2010 && card.section !== '2');
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -1564,7 +1568,7 @@ describe('Business 2010 Higher full paper outside the ABQ', () => {
 });
 
 describe('Business 2011 Higher full paper outside the ABQ', () => {
-  const higherRubrics = HIGHER.filter(isBusinessRubric);
+  const higherRubrics = HIGHER.filter(isJuneBusinessRubric);
   const y2011 = higherRubrics.filter(card => card.year === 2011 && card.section !== '2');
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -1618,7 +1622,7 @@ describe('Business 2011 Higher full paper outside the ABQ', () => {
 });
 
 describe('Business 2012 Higher full paper outside the ABQ', () => {
-  const higherRubrics = HIGHER.filter(isBusinessRubric);
+  const higherRubrics = HIGHER.filter(isJuneBusinessRubric);
   const y2012 = higherRubrics.filter(card => card.year === 2012 && card.section !== '2');
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -1676,7 +1680,7 @@ describe('Business 2012 Higher full paper outside the ABQ', () => {
 });
 
 describe('Business 2026 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2026 = ordinaryRubrics.filter(card => card.year === 2026);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -1755,7 +1759,7 @@ describe('Business 2026 Ordinary full paper', () => {
 });
 
 describe('Business 2025 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2025 = ordinaryRubrics.filter(card => card.year === 2025);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -1852,7 +1856,7 @@ describe('Business 2025 Ordinary full paper', () => {
 });
 
 describe('Business 2024 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2024 = ordinaryRubrics.filter(card => card.year === 2024);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -1939,7 +1943,7 @@ describe('Business 2024 Ordinary full paper', () => {
 });
 
 describe('Business 2023 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2023 = ordinaryRubrics.filter(card => card.year === 2023);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2024,7 +2028,7 @@ describe('Business 2023 Ordinary full paper', () => {
 });
 
 describe('Business 2022 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2022 = ordinaryRubrics.filter(card => card.year === 2022);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2106,7 +2110,7 @@ describe('Business 2022 Ordinary full paper', () => {
 });
 
 describe('Business 2021 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2021 = ordinaryRubrics.filter(card => card.year === 2021);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2203,7 +2207,7 @@ describe('Business 2021 Ordinary full paper', () => {
 });
 
 describe('Business 2010 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2010 = ordinaryRubrics.filter(card => card.year === 2010);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2278,7 +2282,7 @@ describe('Business 2010 Ordinary full paper', () => {
 });
 
 describe('Business 2011 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2011 = ordinaryRubrics.filter(card => card.year === 2011);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2363,7 +2367,7 @@ describe('Business 2011 Ordinary full paper', () => {
 });
 
 describe('Business 2012 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2012 = ordinaryRubrics.filter(card => card.year === 2012);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2451,7 +2455,7 @@ describe('Business 2012 Ordinary full paper', () => {
 });
 
 describe('Business 2013 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2013 = ordinaryRubrics.filter(card => card.year === 2013);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2525,7 +2529,7 @@ describe('Business 2013 Ordinary full paper', () => {
 });
 
 describe('Business 2014 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2014 = ordinaryRubrics.filter(card => card.year === 2014);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2596,7 +2600,7 @@ describe('Business 2014 Ordinary full paper', () => {
 });
 
 describe('Business 2015 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2015 = ordinaryRubrics.filter(card => card.year === 2015);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2672,7 +2676,7 @@ describe('Business 2015 Ordinary full paper', () => {
 });
 
 describe('Business 2016 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2016 = ordinaryRubrics.filter(card => card.year === 2016);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2748,7 +2752,7 @@ describe('Business 2016 Ordinary full paper', () => {
 });
 
 describe('Business 2017 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2017 = ordinaryRubrics.filter(card => card.year === 2017);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2834,7 +2838,7 @@ describe('Business 2017 Ordinary full paper', () => {
 });
 
 describe('Business 2018 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2018 = ordinaryRubrics.filter(card => card.year === 2018);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -2927,7 +2931,7 @@ describe('Business 2018 Ordinary full paper', () => {
 });
 
 describe('Business 2019 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2019 = ordinaryRubrics.filter(card => card.year === 2019);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -3001,7 +3005,7 @@ describe('Business 2019 Ordinary full paper', () => {
 });
 
 describe('Business 2020 Ordinary full paper', () => {
-  const ordinaryRubrics = ORDINARY.filter(isBusinessRubric);
+  const ordinaryRubrics = ORDINARY.filter(isJuneBusinessRubric);
   const y2020 = ordinaryRubrics.filter(card => card.year === 2020);
   const qOf = (card: { questionRef: string }) => card.questionRef.match(/ Q(\d+)/)![1];
   const find = (id: string) => {
@@ -3187,5 +3191,51 @@ describe('Business ABQ scoring and source reader', () => {
     expect(screen.getByRole('dialog')).toBeVisible();
     fireEvent.click(screen.getByRole('button', { name: 'Close marking scheme' }));
     await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument());
+  });
+});
+
+// The SEC's deferred sittings (scripts/markbank/authoring/business/add-<year>-<level>-deferred.py): each is a paper
+// of its own, named three ways (CARD-STANDARD.md section 4), its printed questions carded at the paper's own marks.
+describe('Business deferred sittings', () => {
+  const deferred = cards.filter(isBusinessRubric).filter(card => card.paperFileid?.endsWith('-deferred'));
+  const SITTINGS: Record<string, { cards: number; marks: Record<string, number> }> = {
+    '2022-higher': { cards: 55, marks: { '1': 120, '2': 80, '3': 480 } },
+    '2022-ordinary': { cards: 68, marks: { '1': 225, '2': 675 } },
+    '2023-higher': { cards: 52, marks: { '1': 120, '2': 80, '3': 480 } },
+  };
+
+  it('names the sitting in every id, reference, booklet and citation', () => {
+    expect(deferred).toHaveLength(Object.values(SITTINGS).reduce((n, s) => n + s.cards, 0));
+    for (const card of deferred) {
+      expect(card.id).toMatch(/^bus-\d{4}-(?:hl|ol)-deferred-s[123]-/);
+      expect(card.questionRef).toMatch(/^\d{4} (?:HL|OL) Section [123] .* — Deferred sitting$/);
+      expect(card.paperFileid).toMatch(/^LC033[AG]LP0(?:32|33|41)EV-deferred$/);
+      expect(card.rubric.schemeFileid).toMatch(/^LC033[AG]LP000EV-deferred$/);
+      expect(card.schemeCitation).toMatch(/, deferred examination — © State Examinations Commission\.$/);
+      expect(card.sourceMaterial?.attribution).toMatch(/, deferred examination — © State Examinations Commission\.$/);
+      expect(tariffReconciles(card), card.id).toBe(true);
+    }
+  });
+
+  it('cards every printed question at the marks the paper prints', () => {
+    for (const [sitting, { cards: count, marks }] of Object.entries(SITTINGS)) {
+      const [year, level] = sitting.split('-');
+      const cohort = deferred.filter(card => card.year === Number(year) && card.level === level);
+      expect(cohort, sitting).toHaveLength(count);
+      const bySection: Record<string, number> = {};
+      for (const card of cohort) bySection[card.section!] = (bySection[card.section!] ?? 0) + card.totalMarks;
+      expect(bySection, sitting).toEqual(marks);
+    }
+  });
+
+  it('shows the scheme’s printed responses as rows, and says so where the scheme prints none', () => {
+    const unprinted = deferred.filter(card => !card.rubric.expected);
+    // 2023 Higher Section 3 Q3: the deferred scheme prints nothing for it (its p2 note).
+    expect(unprinted.map(card => card.id)).toEqual(['bus-2023-hl-deferred-s3-q3a', 'bus-2023-hl-deferred-s3-q3b', 'bus-2023-hl-deferred-s3-q3c']);
+    for (const card of unprinted) {
+      expect(card.rubric.responses).toHaveLength(1);
+      expect(card.rubric.responses[0].label).toBe('The scheme prints no answer for this part.');
+      expect(card.rubric.guidance[0]).toContain('will only have been finalised for the questions attempted');
+    }
   });
 });

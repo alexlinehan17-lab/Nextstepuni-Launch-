@@ -37,6 +37,12 @@ FIGURE_URL = '/exam-figures/geography/markbank/'
 SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'geography', 'schemes')
 CORPUS_ROOT = os.path.join(ROOT, 'paper-trail-corpus', 'exampapers')
 MARKING_ROOT = os.path.join(ROOT, 'paper-trail-corpus', 'markingschemes')
+# The SEC's deferred sittings (2022-2025) are papers of their own, harvested
+# beside June's; Paper Trail files each booklet as "<fileid>-deferred.pdf".
+DEFERRED_CORPUS_ROOT = os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams')
+DEFERRED_MARKING_ROOT = os.path.join(ROOT, 'paper-trail-corpus', 'deferredmarkingschemes')
+# A deferred card's reference is June's form plus this, after any route label.
+DEFERRED_REF = ' — Deferred sitting'
 LEVEL_CODE = {'higher': 'A', 'ordinary': 'G'}
 
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
@@ -498,14 +504,23 @@ class Sitting:
     level: str
     papers: dict[int, Document]
     scheme: Document
+    deferred: bool = False
 
     @classmethod
-    def open(cls, year: int, level: str) -> 'Sitting':
+    def open(cls, year: int, level: str, deferred: bool = False) -> 'Sitting':
         """The sitting's official documents: the examiner-reports copies where
         they exist (2021-2026), else the harvested Paper Trail corpus. From 2020
         Part One and Part Two are separate booklets (042, 043); before 2020 one
-        booklet (000) printed both, so both parts read the same document."""
+        booklet (000) printed both, so both parts read the same document. A
+        deferred sitting reads its own booklets and scheme from the deferred
+        corpus."""
         short, code = LEVEL_SHORT[level], LEVEL_CODE[level]
+        if deferred:
+            return cls(year=year, level=level, deferred=True, papers={
+                part: Document(os.path.join(DEFERRED_CORPUS_ROOT, str(year),
+                                            f'LC005{code}LP04{part + 1}EV.pdf'))
+                for part in (1, 2)}, scheme=Document(os.path.join(
+                    DEFERRED_MARKING_ROOT, str(year), f'LC005{code}LP000EV.pdf')))
 
         def paper_path(part: int) -> str:
             copy = os.path.join(PAPER_ROOT, f'{year}-{short}-04{part + 1}-paper.pdf')
@@ -719,7 +734,9 @@ def build_task_cards(sitting: Sitting, task: Task, fileid: str,
                     'pages': [task.page],
                     'attribution': (
                         f'State Examinations Commission Geography {LEVEL_REF[level]} '
-                        f'question paper {year} — © State Examinations Commission.'),
+                        f'question paper {year}'
+                        + (', deferred examination' if sitting.deferred else '')
+                        + ' — © State Examinations Commission.'),
                     'presentationNote': (
                         'Official examination layout, reproduced page-for-page so every '
                         'printed map, chart, photograph and source remains in context.'),
@@ -733,7 +750,8 @@ def build_task_cards(sitting: Sitting, task: Task, fileid: str,
             'year': year,
             'level': level,
             'part': task.part,
-            'questionRef': ref if not route.label else f'{ref} · {route.label}',
+            'questionRef': (ref if not route.label else f'{ref} · {route.label}')
+                           + (DEFERRED_REF if sitting.deferred else ''),
             'stem': ' — '.join([title, ' '.join(stem_parts)]) if stem_parts else title,
             'questionText': text,
             'paperPage': task.page,

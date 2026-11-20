@@ -1,0 +1,152 @@
+[
+ {
+  "year": 2026,
+  "paperFileids": [
+   "LC018ALPA00EV.pdf",
+   "LC018GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Portuguese listening",
+   "title": "2026 Portuguese · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+   "secFileid": "LC018ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2026/LC018ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "listedAt": "2026-08-31",
+   "listing": "sources-tools/sec-archive-manifest-20260831.jsonl",
+   "listingRow": {
+    "view": "exampapers",
+    "exam": "lc",
+    "year": "2026",
+    "subjectId": "18",
+    "fileid": "LC018ZLP017BV.mp3",
+    "label": "Sound File (BV)"
+   },
+   "method": "File name read from the SEC archive's own listing (CARD-STANDARD 10g, coordinator ruling 19 Nov 2026). Not fetched or downloaded: the archive has blocked this Mac since 19 Nov 11:19 UTC; the audio-hosting lane confirms and uploads the copy."
+  }
+ },
+ {
+  "year": 2025,
+  "paperFileids": [
+   "LC018ALPA00EV.pdf",
+   "LC018GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Portuguese listening",
+   "title": "2025 Portuguese · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2025/LC018ZLP017BV.mp3",
+   "secFileid": "LC018ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2025/LC018ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "listedAt": "2026-08-31",
+   "listing": "sources-tools/sec-archive-manifest-20260831.jsonl",
+   "listingRow": {
+    "view": "exampapers",
+    "exam": "lc",
+    "year": "2025",
+    "subjectId": "18",
+    "fileid": "LC018ZLP017BV.mp3",
+    "label": "Sound File (BV)"
+   },
+   "method": "File name read from the SEC archive's own listing (CARD-STANDARD 10g, coordinator ruling 19 Nov 2026). Not fetched or downloaded: the archive has blocked this Mac since 19 Nov 11:19 UTC; the audio-hosting lane confirms and uploads the copy."
+  }
+ },
+ {
+  "year": 2024,
+  "paperFileids": [
+   "LC018ALPA00EV.pdf",
+   "LC018GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Portuguese listening",
+   "title": "2024 Portuguese · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+   "secFileid": "LC018ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2024/LC018ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "listedAt": "2026-08-31",
+   "listing": "sources-tools/sec-archive-manifest-20260831.jsonl",
+   "listingRow": {
+    "view": "exampapers",
+    "exam": "lc",
+    "year": "2024",
+    "subjectId": "18",
+    "fileid": "LC018ZLP017BV.mp3",
+    "label": "Sound File (BV)"
+   },
+   "method": "File name read from the SEC archive's own listing (CARD-STANDARD 10g, coordinator ruling 19 Nov 2026). Not fetched or downloaded: the archive has blocked this Mac since 19 Nov 11:19 UTC; the audio-hosting lane confirms and uploads the copy."
+  }
+ },
+ {
+  "year": 2023,
+  "paperFileids": [
+   "LC018ALPA00EV.pdf",
+   "LC018GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Portuguese listening",
+   "title": "2023 Portuguese · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+   "secFileid": "LC018ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2023/LC018ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "listedAt": "2026-08-31",
+   "listing": "sources-tools/sec-archive-manifest-20260831.jsonl",
+   "listingRow": {
+    "view": "exampapers",
+    "exam": "lc",
+    "year": "2023",
+    "subjectId": "18",
+    "fileid": "LC018ZLP017BV.mp3",
+    "label": "Sound File (BV)"
+   },
+   "method": "File name read from the SEC archive's own listing (CARD-STANDARD 10g, coordinator ruling 19 Nov 2026). Not fetched or downloaded: the archive has blocked this Mac since 19 Nov 11:19 UTC; the audio-hosting lane confirms and uploads the copy."
+  }
+ },
+ {
+  "year": 2022,
+  "paperFileids": [
+   "LC018ALPA00EV.pdf",
+   "LC018GLPA00EV.pdf"
+  ],
+  "source": {
+   "kind": "source-audio",
+   "label": "Portuguese listening",
+   "title": "2022 Portuguese · Listening Comprehension Test",
+   "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+   "secFileid": "LC018ZLP017BV.mp3",
+   "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+   "attribution": "© State Examinations Commission.",
+   "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+  },
+  "verification": {
+   "listedAt": "2026-08-31",
+   "listing": "sources-tools/sec-archive-manifest-20260831.jsonl",
+   "listingRow": {
+    "view": "exampapers",
+    "exam": "lc",
+    "year": "2022",
+    "subjectId": "18",
+    "fileid": "LC018ZLP017BV.mp3",
+    "label": "Sound File (BV)"
+   },
+   "method": "File name read from the SEC archive's own listing (CARD-STANDARD 10g, coordinator ruling 19 Nov 2026). Not fetched or downloaded: the archive has blocked this Mac since 19 Nov 11:19 UTC; the audio-hosting lane confirms and uploads the copy."
+  }
+ }
+]

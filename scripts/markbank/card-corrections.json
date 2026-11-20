@@ -424,6 +424,12 @@
    "reason": "Never shipped: a figure twin of bio-2021-ol-q16d-iv, which carries the reviewed task and its figure.",
    "drop": true,
    "replacementId": "bio-2021-ol-q16d-iv"
+  },
+  "bio-2025-hl-deferred-q16-d-iii-1": {
+   "reason": "The paper prints the relative IAA concentrations as powers of ten (10⁻¹, 10⁰, 10¹, 10², superscripts at 8 pt, p8); the text layer drops the superscripts, which read as 101, 102.",
+   "set": {
+    "questionText": "1. On the graph paper in your answerbook, plot line graphs to illustrate the data obtained by the botanist. Put the relative IAA concentrations (0, 10⁻¹, 10⁰, 10¹, 10²) on the horizontal axis."
+   }
   }
  },
  "physics": {
