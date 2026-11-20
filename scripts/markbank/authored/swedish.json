@@ -9483,5 +9483,179 @@
    "attribution": "SEC Swedish 2026 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
   }
+ },
+ {
+  "id": "swe-2026-hl-ii-1",
+  "subjectId": "swedish",
+  "level": "higher",
+  "year": 2026,
+  "section": "II",
+  "topicId": "swedish-1-0",
+  "conceptId": "kommentera-detta-citat-och-uttryck-dina",
+  "questionRef": "2026 HL Section II Q1",
+  "questionText": "Kommentera detta citat och uttryck dina tankar med 100 - 150 ord: ”De flesta teorier utgår från att människor bygger starka band genom att vara på samma geografiska plats över lång tid.”",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kandidaten kan t.ex. utgå från egna erfarenheter om att bygga vänskapsband i och utanför skolan, oavsett om hen bott på samma plats länge eller flyttat under uppväxten. Hen kan också tala om egna erfarenheter om att bygga och behålla familje- och vänskapsband på avstånd, när man bor i olika länder. Kandidaten kan också föra en allmän diskussion om ämnet utifrån artikeln eller diskutera just ämnet digitala nomader.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme reprints the task as: “Kommentera detta citat och uttryck dina tankar med ungefär 100 ord:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "DEL II (30 POÄNG)",
+   "title": "Reading text — answer in Swedish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Swedish 2026 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+  }
+ },
+ {
+  "id": "swe-2026-hl-iii-1",
+  "subjectId": "swedish",
+  "level": "higher",
+  "year": 2026,
+  "section": "III",
+  "topicId": "swedish-1-1",
+  "conceptId": "lust-gor-tungt-arbete-latt-och",
+  "questionRef": "2026 HL Section III Q1",
+  "questionText": "Skriv en uppsats på minst 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. ”Lust gör tungt arbete lätt och olust gör lätt arbete tungt.” (Svenskt ordspråk)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under “Del III (40 poäng)” the scheme reprints the instruction, as “Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan.”, and the two titles; it prints no answer, no content and no criteria for this part (and no criteria anywhere in this scheme)."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "swe-2026-hl-iii-2",
+  "subjectId": "swedish",
+  "level": "higher",
+  "year": 2026,
+  "section": "III",
+  "topicId": "swedish-1-1",
+  "conceptId": "karleken-vore-vardelos-bara-att-den",
+  "questionRef": "2026 HL Section III Q2",
+  "questionText": "Skriv en uppsats på minst 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. ”Om kärleken vore värdelös bara för att den inte varar för alltid, vore livet meningslöst av samma skäl.” (Pär Westberg)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under “Del III (40 poäng)” the scheme reprints the instruction, as “Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan.”, and the two titles; it prints no answer, no content and no criteria for this part (and no criteria anywhere in this scheme)."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
  }
 ]
