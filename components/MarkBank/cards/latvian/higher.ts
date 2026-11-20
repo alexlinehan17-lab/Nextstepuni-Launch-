@@ -2664,6 +2664,154 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2022 Higher Level — © State Examinations Commission.",
+    id: "lv-2022-hl-i-2", topicId: "latvian-0-1", conceptId: "raksturojiet-liepina-pieredzi-emocijas-pardzivojumus-sakot",
+    section: "I", questionRef: "2022 HL Section I Q2",
+    questionText: "Raksturojiet K.Liepiņa pieredzi, emocijas un pārdzīvojumus, sākot apgūt klinšu kāpšanu un alpīnismu!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Jau skolas gados K.Liepiņš darbojās alpīnisma pulciņā pie Aivara Bojāra. Jau bērnība viņu un viņa vienaudžus iedvesmoja grāmatas par alpīnismu. Avairs Bojārs veidoja jauniešos apziņu, ka cīnoties, strādājot ar sevi iespējams pārvarēt robežas vārda tiešajā un pārnestajā nozīmē. Lai tiktu uz Kaukāzu, K.Liepiņam bija jāiztur milzīga konkurence, jāpiedalās visās nodarbībās, pārgājienos, jāiztur visi fiziskie testi. Kaukāza pieredze K.Liepiņā radīju dziļu interesi, vēlmi par alpīnismu nodarboties profesionāli.", marks: 5, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2022 Higher Level — © State Examinations Commission.",
+    id: "lv-2022-hl-i-3", topicId: "latvian-0-1", conceptId: "kuri-klienti-profesionali-alpinisti-kadas-situacijas",
+    section: "I", questionRef: "2022 HL Section I Q3",
+    questionText: "Kuri klienti, profesionāli alpīnisti un kādas situācijas K.Liepiņā izraisa nepatiku un kāpēc?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "K.Liepinā nepatiku izraisa tādi klienti, kuri sagaida, ka, paišiem neko nedarot, neieliekot pūles, netrenējoties, instruktors viņus uzvilks kalnā, cilvēki, kuri kalnos kāpšanu uzskata par nopērkamu pakalpojumu, nepatiku izraisa cilvēki, kuri uzskata, ka virsotne ir gala mērķis. K.Liepiņu sanikno nevērīgi kalnā kāpēji, kuri ar savu nezināšanu, nevērību, vieglprātību apdraud citus. Nepatīkami ir arī, ja kalnos valda vilku attiecības ar lamāšanos un grūstīšanos.", marks: 5, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2022 Higher Level — © State Examinations Commission.",
+    id: "lv-2022-hl-i-4", topicId: "latvian-0-1", conceptId: "kalnos-kapsana-veido-maina-cilveka-personibu",
+    section: "I", questionRef: "2022 HL Section I Q4",
+    questionText: "Kā kalnos kāpšana veido, maina cilvēka personību un kādas rakstura īpašības jāattīsta un ir nepieciešamas alpīnistam?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kalnos kāpšana iemāca pašdisciplīnu, pārliecību par saviem spēkiem, koncentrēties virsotnes sasniegšanai, atteikties no visa tā, kas traucē. Tā māca arī izvērtēt situācijas, adekvāti pieņemt lēmumus, adekvāti reaģēt, arī atzīt savu vājumu, apstāties un neturpināt, ja tas apdraud dzīvību. Šeit ir arī ētiskais aspekts – būt godīgam, nemelot par sasniegumiem, nezagt kalnos citu alpīnistu ekipējumu, nepiesārņot vidi.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme prints these paragraphs under the question, with no mark on any of them: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Alpīnistam jābūt labā fiziskā formā, jābūt labai koordinācijai, līdzsvara izjūtai, spējai pieņemt lēmumus, ātrai reakcijai. Ir regulāri daudz jātrenējas, jāsaglabā motivācija.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2022 Higher Level — © State Examinations Commission.",
+    id: "lv-2022-hl-i-5", topicId: "latvian-0-1", conceptId: "kapec-liepins-kapj-kalnos-kadas-izjutas",
+    section: "I", questionRef: "2022 HL Section I Q5",
+    questionText: "Kāpēc K.Liepiņš kāpj kalnos un kādas izjūtas viņu pārņem, sasniedzot virsotni? Vai grūtību pārvarēšana ir tā vērtas? Paskaidro, kāpēc jā vai kāpēc ne!",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Liepiņš kāpj kalnos, jo tad viņš dzīvo jēgpilnu, piepildītu dzīvi: izaicinājumi, sevis pārvarēšana, skaisti skati, cilvēki, attiecības, izaicinājumi, sevis pārvarēšana, adrenalīns. Virsotnes sasniegšana sniedz eiforijas, laimes, piepildījuma un gandarījuma sajūtu. Nekas, neviena cita nodarbe to nespēj sniegt. Viņam tā šķiet “Jēdzīga, piepildīta dzīve”.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme prints these paragraphs under the question, with no mark on any of them: shown as the scheme prints them, scored on the question's total. The scheme reprints this question as: “Kāpēc K.Liepiņš kāpj kalnos un kādas izjūtas viņu pārņem, sasniedzot virsotni? Vai šīs sajūtas ir grūtību pārvarēšanas vērtas?”." },
+    { id: "r-2", kind: "point", verbatim: "Grūtību pārvarēšana veido mūs par labākiem cilvēkiem, trenē mūsu gribu, veido mūsu varēšanu, personību. Jāizvērtē arī savas spējas un varēšana, neriskējot ar savu vai citu veselību, nenodarot pāri citiem.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2022 Higher Level — © State Examinations Commission.",
+    id: "lv-2022-hl-i-6", topicId: "latvian-0-1", conceptId: "nav-atkariba-adrenalina-atkariba-jedzigas-piepilditas",
+    section: "I", questionRef: "2022 HL Section I Q6",
+    questionText: "“Tā nav atkarība no adrenalīna, tā ir atkarība no jēdzīgas, piepildītas dzīves.”Izsakiet argumentētu viedokli par šo apgalvojumu, pamatojot to ar faktiem no teksta un savas dzīves pieredzes!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ir cilvēki, kuriem ekstrēmas nodarbes, izaicinājumi, ārkārtēju grūtību pārvarēšana rada atkarību no adrenalīna, bez tā dzīve nešķiet jēgpilna. K.Liepiņš runā par to, ka kalnos kāpšana iemāca pašdisciplīnu, trenē spēju, varēšanu pārvarēt šķēršļus, grūtības, sasniegt savus mērķus, veidot savu dzīvi tā, kā cilvēks pats vēlas, attīstīt savus talantus , realizēt sapņus.", marks: 5, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2022 Higher Level — © State Examinations Commission.",
+    id: "lv-2022-hl-ii-1", topicId: "latvian-1-0", conceptId: "mani-interese-cels-nevis-merkis",
+    section: "II", questionRef: "2022 HL Section II Q1",
+    questionText: "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) “Mani interesē ceļš, nevis mērķis”.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme reprints the part's head, the instruction and the two titles, and prints nothing under them: no criteria, no descriptive line and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2022 Higher Level — © State Examinations Commission.",
+    id: "lv-2022-hl-ii-2", topicId: "latvian-1-0", conceptId: "rodas-ista-draudziba",
+    section: "II", questionRef: "2022 HL Section II Q2",
+    questionText: "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) Kā rodas īsta draudzība.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski!\" The scheme reprints the part's head, the instruction and the two titles, and prints nothing under them: no criteria, no descriptive line and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC549ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2023 Higher Level — © State Examinations Commission.",
