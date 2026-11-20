@@ -31,6 +31,8 @@ def census_applied_maths(verify_sources=True):
     # Reviewed window only: June sittings from 2010. Since #256 the index also
     # carries the 1996-2009 archive and the deferred sitting, which reuses
     # (year, level, language) and has no review ledger.
+    # The SEC's deferred sittings with a review ledger ("sitting": "deferred") are editions of their own.
+    deferred_indexed = {(e['year'], e['level'], e['lang']): e for e in entries if e.get('sitting') == 'deferred'}
     entries = [e for e in entries if not e.get('sitting') and e['year'] >= 2010]
     indexed = {(e['year'], e['level'], e['lang']): e for e in entries}
     assert len(indexed) == len(entries), 'Duplicate indexed Applied Mathematics edition'
@@ -47,12 +49,14 @@ def census_applied_maths(verify_sources=True):
     for path in sorted((review_root / 'reviewed/applied-maths').glob('*.json')):
         review = read(path)
         assert review.get('reviewMethod'), f'Missing visual review method: {path}'
+        deferred = review.get('sitting') == 'deferred'
         for p in review['papers']:
             year, level = review['year'], p['level']
-            short = {'higher': 'hl', 'ordinary': 'ol'}[level]
-            key = (year, level, 'ev')
-            assert key in indexed and key not in canonical, f'Unindexed/duplicate review: {key}'
-            assert len(indexed[key]['papers']) == 1, f'Unreviewed component: {key}'
+            short = {'higher': 'hl', 'ordinary': 'ol'}[level] + ('-deferred' if deferred else '')
+            key = (year, level, 'ev') + (('deferred',) if deferred else ())
+            table = deferred_indexed if deferred else indexed
+            assert key[:3] in table and key not in canonical, f'Unindexed/duplicate review: {key}'
+            assert len(table[key[:3]]['papers']) == 1, f'Unreviewed component: {key}'
             source(ROOT / f'examiner-reports/applied-maths/papers/{year}-{short}-paper.pdf', p['paperSha256'])
             source(ROOT / f'examiner-reports/applied-maths/schemes/{year}-{short}.pdf', p['schemeSha256'])
             tasks = p['tasks']
@@ -66,17 +70,17 @@ def census_applied_maths(verify_sources=True):
                 tariff = sum(max(a['credit']) for a in task['allocations'])
                 number = re.match(r'^Q(\d+)', task['ref'])[1]
                 marks[number] = marks.get(number, 0) + tariff
-                leaves.append({'key': [cid], 'label': f'{year} {short.upper()} {task["ref"]}',
+                leaves.append({'key': [cid], 'label': f'{year} {short[:2].upper()} {task["ref"]}' + (' — Deferred sitting' if deferred else ''),
                                'text': task['questionText'], 'marks': tariff})
             assert marks == p['questionMarks'], f'Published question tariffs changed: {key}'
             assert sum(marks.values()) == p['availableMarks'], f'Paper tariff mismatch: {key}'
             canonical[key] = (path, p, leaves)
-            papers.append({'year': year, 'level': short, 'paper': None,
+            papers.append({'year': year, 'level': short[:2], 'paper': 'Deferred' if deferred else None,
                            'leafCount': len(leaves), 'leaves': leaves, 'flags': [],
                            'marksSum': p['availableMarks'], 'marksQuestions': len(marks)})
             editions.append({'year': year, 'level': level, 'lang': 'ev',
                              'paperSha256': p['paperSha256'], 'schemeSha256': p['schemeSha256'],
-                             'schemeLang': 'ev', 'tasks': len(tasks)})
+                             'schemeLang': 'ev', 'tasks': len(tasks), **({'sitting': 'deferred'} if deferred else {})})
 
     translated_keys = set()
     crop_reviews = {(p['year'], p['level']): p for p in
@@ -116,7 +120,7 @@ def census_applied_maths(verify_sources=True):
             editions.append({'year': year, 'level': level, 'lang': 'iv',
                              'paperSha256': p['paperSha256'], 'schemeSha256': p['schemeSha256'],
                              'schemeLang': p['schemeLang'], 'tasks': len(expected)})
-    assert set(indexed) == set(canonical) | translated_keys, 'Indexed paper edition has no independent review'
+    assert set(indexed) == {k for k in canonical if len(k) == 3} | translated_keys, 'Indexed paper edition has no independent review'
     assert set(crop_reviews) == {(k[0], k[1]) for k in translated_keys}, 'Missing/orphan native crop review'
     return {'subject': 'applied-maths', 'mode': 'reviewed-boundaries',
             'papers': papers, 'sourceEditions': editions}

@@ -141,6 +141,8 @@ const ADMITTED_DEFERRED = new Set([
   'accounting|2022|LC032ALP000EV-deferred.pdf',
   // Agricultural Science: the paper of its one deferred sitting (2023 Higher).
   'agricultural-science|2023|LC024ALP000EV-deferred.pdf',
+  // Applied Mathematics: the paper of each carded deferred sitting (2022 Higher).
+  'applied-mathematics|2022|LC020ALP000EV-deferred.pdf',
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {

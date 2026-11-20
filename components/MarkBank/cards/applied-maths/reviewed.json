@@ -155590,5 +155590,4757 @@
       "humanReviewedBy": "Codex source review (not human sign-off)",
       "humanReviewedAt": "2026-10-07"
     }
+  },
+  {
+    "id": "am-2022-hl-deferred-1-a-i",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-0",
+    "conceptId": "applied-mathematics-2-0",
+    "section": "B",
+    "questionRef": "2022 HL Q1(a)(i) — Deferred sitting",
+    "questionText": "Find the value of t.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 15,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q1(a)(i) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        2
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.398
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 4 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q1(a)(i)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          4
+        ],
+        "regions": [
+          [
+            0.05,
+            0.06,
+            0.96,
+            0.224
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.06,
+              0.96,
+              0.0921
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.0901,
+              0.96,
+              0.1231
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.1211,
+              0.96,
+              0.2161
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-1-a-ii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-0",
+    "conceptId": "applied-mathematics-2-0",
+    "section": "B",
+    "questionRef": "2022 HL Q1(a)(ii) — Deferred sitting",
+    "questionText": "Find the distance from P to the meeting point.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q1(a)(ii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        2
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.398
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 4 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q1(a)(ii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          4
+        ],
+        "regions": [
+          [
+            0.05,
+            0.226,
+            0.96,
+            0.298
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.226,
+              0.96,
+              0.2892
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-1-a-iii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-0",
+    "conceptId": "applied-mathematics-2-0",
+    "section": "B",
+    "questionRef": "2022 HL Q1(a)(iii) — Deferred sitting",
+    "questionText": "Find the distance between the cars when A is 160 m from the meeting point, before the cars meet.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q1(a)(iii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        2
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.398
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 4 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q1(a)(iii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          4
+        ],
+        "regions": [
+          [
+            0.05,
+            0.3,
+            0.96,
+            0.452
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.3,
+              0.96,
+              0.3862
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.3842,
+              0.96,
+              0.4417
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-1-b-i",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-0",
+    "conceptId": "applied-mathematics-2-0",
+    "section": "B",
+    "questionRef": "2022 HL Q1(b)(i) — Deferred sitting",
+    "questionText": "Find the time it takes to fall to the ground.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 15,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q1(b)(i) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        2
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.398
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 4 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q1(b)(i)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          4
+        ],
+        "regions": [
+          [
+            0.05,
+            0.484,
+            0.96,
+            0.722
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.484,
+              0.96,
+              0.5497
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.5477,
+              0.96,
+              0.6055
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.6035,
+              0.96,
+              0.7137
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-1-b-ii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-0",
+    "conceptId": "applied-mathematics-2-0",
+    "section": "B",
+    "questionRef": "2022 HL Q1(b)(ii) — Deferred sitting",
+    "questionText": "Find the value of h.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q1(b)(ii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        2
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.398
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 4 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q1(b)(ii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          4
+        ],
+        "regions": [
+          [
+            0.05,
+            0.733,
+            0.96,
+            0.806
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.733,
+              0.96,
+              0.797
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-2-a-i",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-9",
+    "conceptId": "applied-mathematics-2-9",
+    "section": "B",
+    "questionRef": "2022 HL Q2(a)(i) — Deferred sitting",
+    "questionText": "Find the value of t.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q2(a)(i) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        2
+      ],
+      "regions": [
+        [
+          0.05,
+          0.405,
+          0.96,
+          0.83
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 5 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q2(a)(i)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          5
+        ],
+        "regions": [
+          [
+            0.05,
+            0.06,
+            0.96,
+            0.238
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.06,
+              0.96,
+              0.1709
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.1689,
+              0.96,
+              0.2242
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-2-a-ii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-9",
+    "conceptId": "applied-mathematics-2-9",
+    "section": "B",
+    "questionRef": "2022 HL Q2(a)(ii) — Deferred sitting",
+    "questionText": "At the instant A and B meet, how far is C from the meeting point?",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 15,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q2(a)(ii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        2
+      ],
+      "regions": [
+        [
+          0.05,
+          0.405,
+          0.96,
+          0.83
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 5 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q2(a)(ii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          5
+        ],
+        "regions": [
+          [
+            0.05,
+            0.245,
+            0.96,
+            0.505
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.245,
+              0.96,
+              0.3011
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.2991,
+              0.96,
+              0.3978
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.3958,
+              0.96,
+              0.4969
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-2-b-i",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-9",
+    "conceptId": "applied-mathematics-2-9",
+    "section": "B",
+    "questionRef": "2022 HL Q2(b)(i) — Deferred sitting",
+    "questionText": "Find the value of α if the boat is to land on the opposite bank as little downstream as possible.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 20,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q2(b)(i) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        2
+      ],
+      "regions": [
+        [
+          0.05,
+          0.405,
+          0.96,
+          0.83
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 5 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q2(b)(i)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          5
+        ],
+        "regions": [
+          [
+            0.05,
+            0.538,
+            0.96,
+            0.802
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.538,
+              0.96,
+              0.5705
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.5685,
+              0.96,
+              0.595
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.593,
+              0.96,
+              0.681
+            ]
+          }
+        },
+        {
+          "id": "allocation-4",
+          "label": "Published step 4",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.679,
+              0.96,
+              0.7879
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-2-b-ii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-9",
+    "conceptId": "applied-mathematics-2-9",
+    "section": "B",
+    "questionRef": "2022 HL Q2(b)(ii) — Deferred sitting",
+    "questionText": "Find the time taken to cross the river under these conditions.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q2(b)(ii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        2
+      ],
+      "regions": [
+        [
+          0.05,
+          0.405,
+          0.96,
+          0.83
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 5 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q2(b)(ii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          5
+        ],
+        "regions": [
+          [
+            0.05,
+            0.808,
+            0.96,
+            0.884
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.808,
+              0.96,
+              0.8754
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-3-a",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-2",
+    "conceptId": "applied-mathematics-2-2",
+    "section": "B",
+    "questionRef": "2022 HL Q3(a) — Deferred sitting",
+    "questionText": "Find the two values of α that will give a range of 10 m.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 20,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q3(a) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        3
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.355
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 6 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q3(a)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          6
+        ],
+        "regions": [
+          [
+            0.05,
+            0.072,
+            0.96,
+            0.32
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 6,
+            "r": [
+              0.05,
+              0.072,
+              0.96,
+              0.1094
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 6,
+            "r": [
+              0.05,
+              0.1074,
+              0.96,
+              0.1915
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 6,
+            "r": [
+              0.05,
+              0.1895,
+              0.96,
+              0.2302
+            ]
+          }
+        },
+        {
+          "id": "allocation-4",
+          "label": "Published step 4",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 6,
+            "r": [
+              0.05,
+              0.2282,
+              0.96,
+              0.3116
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-3-b-i",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-2",
+    "conceptId": "applied-mathematics-2-2",
+    "section": "B",
+    "questionRef": "2022 HL Q3(b)(i) — Deferred sitting",
+    "questionText": "Find the time of flight of the particle.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q3(b)(i) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        3
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.355
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 6 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q3(b)(i)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          6
+        ],
+        "regions": [
+          [
+            0.05,
+            0.352,
+            0.96,
+            0.462
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 6,
+            "r": [
+              0.05,
+              0.352,
+              0.96,
+              0.3847
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 6,
+            "r": [
+              0.05,
+              0.3827,
+              0.96,
+              0.4511
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-3-b-ii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-2",
+    "conceptId": "applied-mathematics-2-2",
+    "section": "B",
+    "questionRef": "2022 HL Q3(b)(ii) — Deferred sitting",
+    "questionText": "Find the range of the particle on the inclined plane.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q3(b)(ii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        3
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.355
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 6 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q3(b)(ii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          6
+        ],
+        "regions": [
+          [
+            0.05,
+            0.464,
+            0.96,
+            0.628
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 6,
+            "r": [
+              0.05,
+              0.464,
+              0.96,
+              0.4944
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 6,
+            "r": [
+              0.05,
+              0.4924,
+              0.96,
+              0.6176
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-3-b-iii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-2",
+    "conceptId": "applied-mathematics-2-2",
+    "section": "B",
+    "questionRef": "2022 HL Q3(b)(iii) — Deferred sitting",
+    "questionText": "If the particle strikes the plane horizontally, find β.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q3(b)(iii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        3
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.355
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 6 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q3(b)(iii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          6
+        ],
+        "regions": [
+          [
+            0.05,
+            0.63,
+            0.96,
+            0.862
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 6,
+            "r": [
+              0.05,
+              0.63,
+              0.96,
+              0.7276
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 6,
+            "r": [
+              0.05,
+              0.7256,
+              0.96,
+              0.8525
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-4-a",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-5",
+    "conceptId": "applied-mathematics-2-5",
+    "section": "B",
+    "questionRef": "2022 HL Q4(a) — Acceleration of P, including the shared equations of motion — Deferred sitting",
+    "questionText": "Find the accelerations of P, Q and R in terms of g.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "practiceFocus": "Acceleration of P, including the shared equations of motion",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 20,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q4(a) — Acceleration of P, including the shared equations of motion · question and context",
+      "title": "Original question pages",
+      "pages": [
+        3
+      ],
+      "regions": [
+        [
+          0.05,
+          0.39,
+          0.96,
+          0.815
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 7 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q4(a) — Acceleration of P, including the shared equations of motion",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          7
+        ],
+        "regions": [
+          [
+            0.05,
+            0.06,
+            0.96,
+            0.384
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "guidance": "The first three placements are the shared equations of motion for P, Q and R. The fourth, on a = (1/5)g, is the acceleration of P. The final placement, aQ = aR = (2/5)g, belongs to the separately practised accelerations of Q and R.",
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.06,
+              0.96,
+              0.228
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.226,
+              0.96,
+              0.2627
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.2607,
+              0.96,
+              0.2976
+            ]
+          }
+        },
+        {
+          "id": "allocation-4",
+          "label": "Published step 4",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.2956,
+              0.96,
+              0.3356
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-4-a-q-r",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-5",
+    "conceptId": "applied-mathematics-2-5",
+    "section": "B",
+    "questionRef": "2022 HL Q4(a) — Accelerations of Q and R — Deferred sitting",
+    "questionText": "Find the accelerations of P, Q and R in terms of g.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "practiceFocus": "Accelerations of Q and R",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q4(a) — Accelerations of Q and R · question and context",
+      "title": "Original question pages",
+      "pages": [
+        3
+      ],
+      "regions": [
+        [
+          0.05,
+          0.39,
+          0.96,
+          0.815
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 7 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q4(a) — Accelerations of Q and R",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          7
+        ],
+        "regions": [
+          [
+            0.05,
+            0.386,
+            0.96,
+            0.432
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "guidance": "Use the final 5-mark placement, aQ = aR = (2/5)g, which Q and R share. The shared equations of motion and the acceleration of P are practised separately.",
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.386,
+              0.96,
+              0.4185
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-4-b-i",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-5",
+    "conceptId": "applied-mathematics-2-5",
+    "section": "B",
+    "questionRef": "2022 HL Q4(b)(i) — Deferred sitting",
+    "questionText": "Show, on separate diagrams, the forces acting on the particle and on the wedge.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q4(b)(i) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        3
+      ],
+      "regions": [
+        [
+          0.05,
+          0.39,
+          0.96,
+          0.815
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 7 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q4(b)(i)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          7
+        ],
+        "regions": [
+          [
+            0.05,
+            0.462,
+            0.96,
+            0.616
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.462,
+              0.96,
+              0.6088
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-4-b-ii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-5",
+    "conceptId": "applied-mathematics-2-5",
+    "section": "B",
+    "questionRef": "2022 HL Q4(b)(ii) — Deferred sitting",
+    "questionText": "Find the acceleration of the wedge.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 15,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q4(b)(ii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        3
+      ],
+      "regions": [
+        [
+          0.05,
+          0.39,
+          0.96,
+          0.815
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 7 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q4(b)(ii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          7
+        ],
+        "regions": [
+          [
+            0.05,
+            0.632,
+            0.96,
+            0.792
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.632,
+              0.96,
+              0.6655
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.6635,
+              0.96,
+              0.7262
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.7242,
+              0.96,
+              0.783
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-4-b-iii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-5",
+    "conceptId": "applied-mathematics-2-5",
+    "section": "B",
+    "questionRef": "2022 HL Q4(b)(iii) — Deferred sitting",
+    "questionText": "Find the acceleration of the particle relative to the wedge.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q4(b)(iii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        3
+      ],
+      "regions": [
+        [
+          0.05,
+          0.39,
+          0.96,
+          0.815
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 7 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q4(b)(iii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          7
+        ],
+        "regions": [
+          [
+            0.05,
+            0.794,
+            0.96,
+            0.872
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.794,
+              0.96,
+              0.8573
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-5-a-i",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-4",
+    "conceptId": "applied-mathematics-2-4",
+    "section": "B",
+    "questionRef": "2022 HL Q5(a)(i) — Speed of P, including shared collision equations — Deferred sitting",
+    "questionText": "Find the speed of P and the speed of Q after impact in terms of u and e.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "practiceFocus": "Speed of P, including shared collision equations",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 15,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q5(a)(i) — Speed of P, including shared collision equations · question and context",
+      "title": "Original question pages",
+      "pages": [
+        4
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.41
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 8 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q5(a)(i) — Speed of P, including shared collision equations",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          8
+        ],
+        "regions": [
+          [
+            0.05,
+            0.06,
+            0.96,
+            0.345
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "guidance": "The first two placements are the shared collision equations. Use the first of the paired final 5-mark placements for P; the other belongs to the separately practised speed of Q.",
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.06,
+              0.96,
+              0.2446
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.2426,
+              0.96,
+              0.3353
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.2426,
+              0.96,
+              0.3353
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-5-a-i-q",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-4",
+    "conceptId": "applied-mathematics-2-4",
+    "section": "B",
+    "questionRef": "2022 HL Q5(a)(i) — Speed of Q — Deferred sitting",
+    "questionText": "Find the speed of P and the speed of Q after impact in terms of u and e.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "practiceFocus": "Speed of Q",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q5(a)(i) — Speed of Q · question and context",
+      "title": "Original question pages",
+      "pages": [
+        4
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.41
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 8 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q5(a)(i) — Speed of Q",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          8
+        ],
+        "regions": [
+          [
+            0.05,
+            0.302,
+            0.96,
+            0.345
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "guidance": "Use the second of the paired final 5-mark placements, for Q. The shared collision equations and the speed of P are practised separately.",
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.302,
+              0.96,
+              0.3353
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-5-a-ii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-4",
+    "conceptId": "applied-mathematics-2-4",
+    "section": "B",
+    "questionRef": "2022 HL Q5(a)(ii) — Deferred sitting",
+    "questionText": "If P and Q are moving in the same direction after impact, show that 0 ≤ e < 1/15.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q5(a)(ii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        4
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.41
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 8 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q5(a)(ii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          8
+        ],
+        "regions": [
+          [
+            0.05,
+            0.347,
+            0.96,
+            0.437
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.347,
+              0.96,
+              0.4254
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-5-b-i",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-4",
+    "conceptId": "applied-mathematics-2-4",
+    "section": "B",
+    "questionRef": "2022 HL Q5(b)(i) — Speed of A, including shared collision equations — Deferred sitting",
+    "questionText": "Find the speed of A and the speed of B after impact in terms of u, e and α.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "practiceFocus": "Speed of A, including shared collision equations",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 15,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q5(b)(i) — Speed of A, including shared collision equations · question and context",
+      "title": "Original question pages",
+      "pages": [
+        4
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.41
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 8 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q5(b)(i) — Speed of A, including shared collision equations",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          8
+        ],
+        "regions": [
+          [
+            0.05,
+            0.455,
+            0.96,
+            0.732
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "guidance": "The first two placements are the shared collision equations. The third, on v₁ = ((1 − e)/2)u cos α, is the component of A along the line of centres from which the speed of A follows; the scheme gives no separate placement on the line for vA. The final placement, on vB, belongs to the separately practised speed of B.",
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.455,
+              0.96,
+              0.5647
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.5627,
+              0.96,
+              0.6373
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.6353,
+              0.96,
+              0.7233
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-5-b-i-b",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-4",
+    "conceptId": "applied-mathematics-2-4",
+    "section": "B",
+    "questionRef": "2022 HL Q5(b)(i) — Speed of B — Deferred sitting",
+    "questionText": "Find the speed of A and the speed of B after impact in terms of u, e and α.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "practiceFocus": "Speed of B",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q5(b)(i) — Speed of B · question and context",
+      "title": "Original question pages",
+      "pages": [
+        4
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.41
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 8 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q5(b)(i) — Speed of B",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          8
+        ],
+        "regions": [
+          [
+            0.05,
+            0.6979,
+            0.96,
+            0.732
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "guidance": "Use the final 5-mark placement, on vB = ((1 + e)/2)u cos α. The shared collision equations and the speed of A are practised separately.",
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.6979,
+              0.96,
+              0.7233
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-5-b-ii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-4",
+    "conceptId": "applied-mathematics-2-4",
+    "section": "B",
+    "questionRef": "2022 HL Q5(b)(ii) — Deferred sitting",
+    "questionText": "Given that A is deflected through angle α because of the collision, show that tan²α = e.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q5(b)(ii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        4
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.41
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 8 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q5(b)(ii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          8
+        ],
+        "regions": [
+          [
+            0.05,
+            0.734,
+            0.96,
+            0.834
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.734,
+              0.96,
+              0.8275
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-6-a-i",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-13",
+    "conceptId": "applied-mathematics-2-13",
+    "section": "B",
+    "questionRef": "2022 HL Q6(a)(i) — Deferred sitting",
+    "questionText": "Find the amplitude of the motion.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 15,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q6(a)(i) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        4
+      ],
+      "regions": [
+        [
+          0.05,
+          0.448,
+          0.96,
+          0.745
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 9 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q6(a)(i)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          9
+        ],
+        "regions": [
+          [
+            0.05,
+            0.06,
+            0.96,
+            0.214
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.05,
+              0.06,
+              0.96,
+              0.1184
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.05,
+              0.1164,
+              0.96,
+              0.1454
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.05,
+              0.1434,
+              0.96,
+              0.2054
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-6-a-ii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-13",
+    "conceptId": "applied-mathematics-2-13",
+    "section": "B",
+    "questionRef": "2022 HL Q6(a)(ii) — Deferred sitting",
+    "questionText": "Find the period.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q6(a)(ii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        4
+      ],
+      "regions": [
+        [
+          0.05,
+          0.448,
+          0.96,
+          0.745
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 9 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q6(a)(ii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          9
+        ],
+        "regions": [
+          [
+            0.05,
+            0.216,
+            0.96,
+            0.312
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.05,
+              0.216,
+              0.96,
+              0.297
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-6-a-iii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-13",
+    "conceptId": "applied-mathematics-2-13",
+    "section": "B",
+    "questionRef": "2022 HL Q6(a)(iii) — Deferred sitting",
+    "questionText": "Find the time taken to travel from an extreme point to a point mid-way between the extreme point and P.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q6(a)(iii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        4
+      ],
+      "regions": [
+        [
+          0.05,
+          0.448,
+          0.96,
+          0.745
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 9 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q6(a)(iii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          9
+        ],
+        "regions": [
+          [
+            0.05,
+            0.316,
+            0.96,
+            0.418
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.05,
+              0.316,
+              0.96,
+              0.4024
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-6-b",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-7",
+    "conceptId": "applied-mathematics-2-7",
+    "section": "B",
+    "questionRef": "2022 HL Q6(b) — Deferred sitting",
+    "questionText": "Show the string goes slack when it makes an angle cos⁻¹(2/3) with the upward vertical through O.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 25,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q6(b) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        4
+      ],
+      "regions": [
+        [
+          0.05,
+          0.448,
+          0.96,
+          0.745
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 9 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q6(b)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          9
+        ],
+        "regions": [
+          [
+            0.05,
+            0.424,
+            0.96,
+            0.72
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.05,
+              0.424,
+              0.96,
+              0.4612
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.05,
+              0.4592,
+              0.96,
+              0.5337
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.05,
+              0.5317,
+              0.96,
+              0.5916
+            ]
+          }
+        },
+        {
+          "id": "allocation-4",
+          "label": "Published step 4",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.05,
+              0.5896,
+              0.96,
+              0.6251
+            ]
+          }
+        },
+        {
+          "id": "allocation-5",
+          "label": "Published step 5",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.05,
+              0.6231,
+              0.96,
+              0.705
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-7-a-i",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-10",
+    "conceptId": "applied-mathematics-2-10",
+    "section": "B",
+    "questionRef": "2022 HL Q7(a)(i) — Deferred sitting",
+    "questionText": "Find the tension in the string.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 15,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q7(a)(i) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        5
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.465
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 10 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q7(a)(i)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          10
+        ],
+        "regions": [
+          [
+            0.05,
+            0.06,
+            0.96,
+            0.338
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.06,
+              0.96,
+              0.2493
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.2473,
+              0.96,
+              0.2806
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.2786,
+              0.96,
+              0.3325
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-7-a-ii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-10",
+    "conceptId": "applied-mathematics-2-10",
+    "section": "B",
+    "questionRef": "2022 HL Q7(a)(ii) — Deferred sitting",
+    "questionText": "Find the magnitude of the reaction at the hinge.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q7(a)(ii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        5
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.465
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 10 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q7(a)(ii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          10
+        ],
+        "regions": [
+          [
+            0.05,
+            0.34,
+            0.96,
+            0.448
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.34,
+              0.96,
+              0.3847
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.3827,
+              0.96,
+              0.4402
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-7-b",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-10",
+    "conceptId": "applied-mathematics-2-10",
+    "section": "B",
+    "questionRef": "2022 HL Q7(b) — Deferred sitting",
+    "questionText": "Show that the tension in the string is 2W/(3 tan α).",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 25,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q7(b) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        5
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.465
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 10 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q7(b)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          10
+        ],
+        "regions": [
+          [
+            0.05,
+            0.455,
+            0.96,
+            0.9
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.455,
+              0.96,
+              0.6871
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.455,
+              0.96,
+              0.6871
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.6851,
+              0.96,
+              0.7149
+            ]
+          }
+        },
+        {
+          "id": "allocation-4",
+          "label": "Published step 4",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.7129,
+              0.96,
+              0.8252
+            ]
+          }
+        },
+        {
+          "id": "allocation-5",
+          "label": "Published step 5",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.8232,
+              0.96,
+              0.8875
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-8-a",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-12",
+    "conceptId": "applied-mathematics-2-12",
+    "section": "B",
+    "questionRef": "2022 HL Q8(a) — Deferred sitting",
+    "questionText": "Prove that the moment of inertia of a uniform square lamina, of mass m and side 2a, about an axis through its centre parallel to one of its sides is (1/3)ma².",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 20,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q8(a) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        5
+      ],
+      "regions": [
+        [
+          0.05,
+          0.495,
+          0.96,
+          0.77
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 11 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q8(a)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          11
+        ],
+        "regions": [
+          [
+            0.05,
+            0.075,
+            0.96,
+            0.356
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.075,
+              0.96,
+              0.1759
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.1739,
+              0.96,
+              0.2129
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.2109,
+              0.96,
+              0.2573
+            ]
+          }
+        },
+        {
+          "id": "allocation-4",
+          "label": "Published step 4",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.2553,
+              0.96,
+              0.3427
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-8-b-i",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-12",
+    "conceptId": "applied-mathematics-2-12",
+    "section": "B",
+    "questionRef": "2022 HL Q8(b)(i) — Deferred sitting",
+    "questionText": "Show that the periodic time is (8π/3)√(√2a/g).",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 20,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q8(b)(i) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        5
+      ],
+      "regions": [
+        [
+          0.05,
+          0.495,
+          0.96,
+          0.77
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 11 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q8(b)(i)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          11
+        ],
+        "regions": [
+          [
+            0.05,
+            0.382,
+            0.96,
+            0.572
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.382,
+              0.96,
+              0.4209
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.382,
+              0.96,
+              0.4209
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.4189,
+              0.96,
+              0.4679
+            ]
+          }
+        },
+        {
+          "id": "allocation-4",
+          "label": "Published step 4",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.4659,
+              0.96,
+              0.5585
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-8-b-ii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-12",
+    "conceptId": "applied-mathematics-2-12",
+    "section": "B",
+    "questionRef": "2022 HL Q8(b)(ii) — Deferred sitting",
+    "questionText": "If the length of the equivalent simple pendulum is 8√2/9, find the value of a.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q8(b)(ii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        5
+      ],
+      "regions": [
+        [
+          0.05,
+          0.495,
+          0.96,
+          0.77
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 11 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q8(b)(ii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          11
+        ],
+        "regions": [
+          [
+            0.05,
+            0.58,
+            0.96,
+            0.75
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.58,
+              0.96,
+              0.6167
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.6147,
+              0.96,
+              0.7371
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-9-a",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-11",
+    "conceptId": "applied-mathematics-2-11",
+    "section": "B",
+    "questionRef": "2022 HL Q9(a) — Deferred sitting",
+    "questionText": "Find the value of r.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 25,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q9(a) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        6
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.475
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 12 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q9(a)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          12
+        ],
+        "regions": [
+          [
+            0.05,
+            0.06,
+            0.96,
+            0.25
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.06,
+              0.96,
+              0.0931
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.0911,
+              0.96,
+              0.1256
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.1236,
+              0.96,
+              0.1539
+            ]
+          }
+        },
+        {
+          "id": "allocation-4",
+          "label": "Published step 4",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.1519,
+              0.96,
+              0.1827
+            ]
+          }
+        },
+        {
+          "id": "allocation-5",
+          "label": "Published step 5",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.1807,
+              0.96,
+              0.2422
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-9-b-i",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-11",
+    "conceptId": "applied-mathematics-2-11",
+    "section": "B",
+    "questionRef": "2022 HL Q9(b)(i) — Deferred sitting",
+    "questionText": "Find, in terms of W, the tension in the string.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 15,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q9(b)(i) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        6
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.475
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 12 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q9(b)(i)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          12
+        ],
+        "regions": [
+          [
+            0.05,
+            0.272,
+            0.96,
+            0.472
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.272,
+              0.96,
+              0.3615
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.3595,
+              0.96,
+              0.3997
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.3977,
+              0.96,
+              0.4587
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-9-b-ii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-2-11",
+    "conceptId": "applied-mathematics-2-11",
+    "section": "B",
+    "questionRef": "2022 HL Q9(b)(ii) — Deferred sitting",
+    "questionText": "Find, in terms of W, the reaction between the sphere and the bottom of the container.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q9(b)(ii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        6
+      ],
+      "regions": [
+        [
+          0.05,
+          0.062,
+          0.96,
+          0.475
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 12 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q9(b)(ii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          12
+        ],
+        "regions": [
+          [
+            0.05,
+            0.478,
+            0.96,
+            0.58
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.478,
+              0.96,
+              0.5111
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.5091,
+              0.96,
+              0.5666
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-10-a-i",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-3-4",
+    "conceptId": "applied-mathematics-3-4",
+    "section": "B",
+    "questionRef": "2022 HL Q10(a)(i) — Deferred sitting",
+    "questionText": "Solve the differential equation (1 + t²)(dr/dt) = 1 given that r = 0 when t = π/4.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 15,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q10(a)(i) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        6
+      ],
+      "regions": [
+        [
+          0.05,
+          0.515,
+          0.96,
+          0.885
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 13 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q10(a)(i)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          13
+        ],
+        "regions": [
+          [
+            0.05,
+            0.058,
+            0.96,
+            0.186
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.058,
+              0.96,
+              0.0921
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.0901,
+              0.96,
+              0.121
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.119,
+              0.96,
+              0.1793
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-10-a-ii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-3-4",
+    "conceptId": "applied-mathematics-3-4",
+    "section": "B",
+    "questionRef": "2022 HL Q10(a)(ii) — Deferred sitting",
+    "questionText": "If dy/dx = (y + 4) cos² 3x and y = −3 when x = 0, find the value of y when x = π/6.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q10(a)(ii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        6
+      ],
+      "regions": [
+        [
+          0.05,
+          0.515,
+          0.96,
+          0.885
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 13 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q10(a)(ii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          13
+        ],
+        "regions": [
+          [
+            0.05,
+            0.188,
+            0.96,
+            0.358
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.188,
+              0.96,
+              0.2248
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.2228,
+              0.96,
+              0.3505
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-10-b-i",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-3-4",
+    "conceptId": "applied-mathematics-3-4",
+    "section": "B",
+    "questionRef": "2022 HL Q10(b)(i) — Deferred sitting",
+    "questionText": "Find the speed of the particle after t seconds.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q10(b)(i) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        6
+      ],
+      "regions": [
+        [
+          0.05,
+          0.515,
+          0.96,
+          0.885
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 13 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q10(b)(i)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          13
+        ],
+        "regions": [
+          [
+            0.05,
+            0.376,
+            0.96,
+            0.486
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.376,
+              0.96,
+              0.4131
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.4111,
+              0.96,
+              0.4784
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-10-b-ii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-3-4",
+    "conceptId": "applied-mathematics-3-4",
+    "section": "B",
+    "questionRef": "2022 HL Q10(b)(ii) — Deferred sitting",
+    "questionText": "Find the distance travelled in t seconds.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 10,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q10(b)(ii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        6
+      ],
+      "regions": [
+        [
+          0.05,
+          0.515,
+          0.96,
+          0.885
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 13 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q10(b)(ii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          13
+        ],
+        "regions": [
+          [
+            0.05,
+            0.488,
+            0.96,
+            0.616
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.488,
+              0.96,
+              0.5266
+            ]
+          }
+        },
+        {
+          "id": "allocation-2",
+          "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.5246,
+              0.96,
+              0.6099
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "am-2022-hl-deferred-10-b-iii",
+    "source": "sec",
+    "kind": "rubric",
+    "subjectId": "applied-maths",
+    "year": 2022,
+    "level": "higher",
+    "topicId": "applied-mathematics-3-4",
+    "conceptId": "applied-mathematics-3-4",
+    "section": "B",
+    "questionRef": "2022 HL Q10(b)(iii) — Deferred sitting",
+    "questionText": "Find the speed v in terms of the distance travelled, s.",
+    "stem": "Take the value of g to be 9.8 m s⁻².",
+    "paperFileid": "LC020ALP000EV-deferred",
+    "totalMarks": 5,
+    "sourceMaterial": {
+      "attribution": "© State Examinations Commission",
+      "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+      "kind": "source-paper",
+      "label": "Q10(b)(iii) · question and context",
+      "title": "Original question pages",
+      "pages": [
+        6
+      ],
+      "regions": [
+        [
+          0.05,
+          0.515,
+          0.96,
+          0.885
+        ]
+      ]
+    },
+    "schemeCitation": "SEC Applied Mathematics 2022 Higher Level marking scheme, deferred examination, PDF page 13 — © State Examinations Commission.",
+    "rubric": {
+      "system": "applied-mathematics",
+      "solution": {
+        "attribution": "© State Examinations Commission",
+        "presentationNote": "Original SEC examination layout, including mathematical notation and diagrams.",
+        "kind": "source-scheme",
+        "label": "Q10(b)(iii)",
+        "title": "Official worked solution",
+        "sourceFileid": "LC020ALP000EV-deferred.pdf",
+        "pages": [
+          13
+        ],
+        "regions": [
+          [
+            0.05,
+            0.618,
+            0.96,
+            0.772
+          ]
+        ]
+      },
+      "allocations": [
+        {
+          "id": "allocation-1",
+          "label": "Published step 1",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.618,
+              0.96,
+              0.7593
+            ]
+          }
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error (blunder), or 1 for a numerical slip or a misreading that is not serious. A serious blunder, omission or misreading that oversimplifies the task receives the attempt mark only. The scheme shows one correct solution to each question; other equally valid methods are accepted."
+    },
+    "qa": {
+      "gates": [
+        "paper-scheme-visual-review",
+        "published-tariffs",
+        "source-hashes",
+        "selection-review"
+      ],
+      "humanReviewedBy": "Codex source review (not human sign-off)",
+      "humanReviewedAt": "2026-11-20"
+    }
   }
 ]

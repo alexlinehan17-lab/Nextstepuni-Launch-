@@ -1375,6 +1375,11 @@ const isArtDeferred = (id: string) => /^art-\d{4}-(?:hl|ol)-deferred-/.test(id);
 const ACCOUNTING_DEFERRED_ADDED = { higher: 43, ordinary: 0 };
 const isAccountingDeferred = (id: string) => /^acc-\d{4}-(?:hl|ol)-deferred-q/.test(id);
 const accountingDeferredTotal = ACCOUNTING_DEFERRED_ADDED.higher + ACCOUNTING_DEFERRED_ADDED.ordinary;
+/* Applied Mathematics' deferred sittings (reviewed/applied-maths/<year>-deferred.json), am-<year>-hl-deferred-…: new
+ * cards on top of the frozen 716 / 770, pinned here. */
+const APPLIED_MATHS_DEFERRED_ADDED = { higher: 42, ordinary: 0 };
+const isAppliedMathsDeferred = (id: string) => /^am-\d{4}-(?:hl|ol)-deferred-/.test(id);
+const appliedMathsDeferredTotal = APPLIED_MATHS_DEFERRED_ADDED.higher + APPLIED_MATHS_DEFERRED_ADDED.ordinary;
 const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED || isArtDeferred(id);
 /* Spanish keeps its 347 2021-2025 IDs frozen (204 Higher + 143 Ordinary, the
  * identity hashes above). The languages lane (2026-11-05) cards every further
@@ -2839,6 +2844,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   if (name === 'technology:ordinary') return ids.filter(id => !isTechnologyAdded(id));
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
   if (name.startsWith('accounting:')) return ids.filter(id => !isAccountingDeferred(id));
+  if (name.startsWith('applied-maths:')) return ids.filter(id => !isAppliedMathsDeferred(id));
   if (name.startsWith('dcg:')) return ids.filter(id => !isDcgAdded(id));
   if (name.startsWith('italian:')) return ids.filter(id => !isItalianAdded(id));
   if (name.startsWith('home-economics:')) return [...ids.filter(id => !homeEconomicsAdditionIds.has(id)), ...homeEconomicsAliasIds.filter(id => id.includes(name.endsWith(':higher') ? '-hl-' : '-ol-'))];
@@ -3128,6 +3134,13 @@ describe('Mark Bank card preservation', () => {
     expect([aliased('-hl-'), aliased('-ol-')]).toEqual([20, 48]);
     expect(ART_HIGHER).toHaveLength(222 - aliased('-hl-') + artAdded('higher'));
     expect(ART_ORDINARY).toHaveLength(240 - aliased('-ol-') + artAdded('ordinary'));
+  });
+
+  it('adds the Applied Mathematics deferred sittings on top of the frozen decks', () => {
+    const deferred = [...APPLIED_MATHS_HIGHER, ...APPLIED_MATHS_ORDINARY].filter(card => isAppliedMathsDeferred(card.id));
+    expect([deferred.filter(card => card.level === 'higher').length, deferred.filter(card => card.level === 'ordinary').length])
+      .toEqual([APPLIED_MATHS_DEFERRED_ADDED.higher, APPLIED_MATHS_DEFERRED_ADDED.ordinary]);
+    expect(deferred.every(card => card.questionRef.endsWith(' — Deferred sitting') && card.paperFileid.endsWith('-deferred'))).toBe(true);
   });
 
   it('adds the Accounting deferred sittings on top of the frozen decks', () => {
@@ -3536,7 +3549,8 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(24_087 + frenchAdditionIds.size + artNet + russianAdditionIds.size + accountingDeferredTotal);
+    ), 0)).toBe(24_087 + frenchAdditionIds.size + artNet + russianAdditionIds.size + accountingDeferredTotal
+      + appliedMathsDeferredTotal);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
       .toBe(24_087 + frenchAdditionIds.size + businessAdditionIds.size + technologyAddedCount + dcgAddedCount
         + russianAdditionIds.size
@@ -3559,8 +3573,8 @@ describe('Mark Bank card preservation', () => {
         + italianAddedCount
         // Polish and Portuguese additions (languages-q3 lane).
         + polishAddedTotal + portugueseAddedTotal
-        // Accounting's carded deferred sittings (deferred lane), on top of its frozen 721 / 644.
-        + accountingDeferredTotal
+        // Accounting's and Applied Mathematics' carded deferred sittings (deferred lane), on top of their frozen decks.
+        + accountingDeferredTotal + appliedMathsDeferredTotal
         // The small languages (Claude queue 5), Maltese's aside: its deck is not in `decks`.
         + [...smallLanguageAddedIds].filter(id => !id.startsWith('mlt-')).length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.

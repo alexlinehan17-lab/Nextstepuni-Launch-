@@ -6680,5 +6680,106 @@
       "applied-mathematics-ordinary-optimal-critical-paths",
       "applied-mathematics-ordinary-dimensional-analysis"
     ]
+  },
+  {
+    "year": 2022,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "1",
+    "topicIds": [
+      "applied-mathematics-higher-uniform-accelerated-motion"
+    ]
+  },
+  {
+    "year": 2022,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "2",
+    "topicIds": [
+      "applied-mathematics-higher-relative-velocity"
+    ]
+  },
+  {
+    "year": 2022,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "3",
+    "topicIds": [
+      "applied-mathematics-higher-projectiles"
+    ]
+  },
+  {
+    "year": 2022,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "4",
+    "topicIds": [
+      "applied-mathematics-higher-newtons-laws-connected-particles"
+    ]
+  },
+  {
+    "year": 2022,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "5",
+    "topicIds": [
+      "applied-mathematics-higher-impacts-collisions"
+    ]
+  },
+  {
+    "year": 2022,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "6",
+    "topicIds": [
+      "applied-mathematics-higher-simple-harmonic-motion",
+      "applied-mathematics-higher-circular-motion"
+    ]
+  },
+  {
+    "year": 2022,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "7",
+    "topicIds": [
+      "applied-mathematics-higher-statics-centre-of-gravity"
+    ]
+  },
+  {
+    "year": 2022,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "8",
+    "topicIds": [
+      "applied-mathematics-higher-rigid-body-motion-moments-of-inertia"
+    ]
+  },
+  {
+    "year": 2022,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "9",
+    "topicIds": [
+      "applied-mathematics-higher-hydrostatics"
+    ]
+  },
+  {
+    "year": 2022,
+    "level": "higher",
+    "lang": "ev",
+    "fileid": "LC020ALP000EV-deferred.pdf",
+    "n": "10",
+    "topicIds": [
+      "applied-mathematics-higher-differential-equations"
+    ]
   }
 ]

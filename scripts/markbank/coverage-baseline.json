@@ -45,22 +45,22 @@
     "refsHash": "d07829765aae8bf1"
   },
   "applied-maths": {
-    "cards": 1486,
-    "contentHash": "f015af7cba454cda",
+    "cards": 1528,
+    "contentHash": "247808fe39ff3cca",
     "coveragePct": 100.0,
-    "covered": 1486,
+    "covered": 1528,
     "excluded": 0,
-    "leaves": 1486,
-    "nativeSchemes": 65,
+    "leaves": 1528,
+    "nativeSchemes": 66,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 66,
-      "hash": "445d863125e8baac"
+      "count": 67,
+      "hash": "6e4bfc133b28dc46"
     },
-    "refsHash": "32b700ecc5e47388",
-    "sourceEditions": 66,
-    "sourceTaskLinks": 2972
+    "refsHash": "bd5e490432b1e44b",
+    "sourceEditions": 67,
+    "sourceTaskLinks": 3014
   },
   "arabic": {
     "cards": 250,

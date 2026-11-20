@@ -171,7 +171,8 @@ describe('Applied Mathematics exam-topic registry', () => {
       }
     }
     expect(subjectAtlasStats('applied-mathematics')).toMatchObject({
-      questions: 318,
+      // June's 318 and each carded deferred sitting's ten questions (2022 Higher).
+      questions: 318 + 10,
       topics: 39,
       yearMin: 2010,
       yearMax: 2026,

@@ -714,7 +714,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
 
   it('Applied Maths: every published step shows the lines it prices as a crop of the scheme page, or the card is in the residue with its reason', () => {
     const cards = APPLIED_MATHS_REVIEWED.filter((card): card is SecRubricCard & { rubric: AppliedMathematicsRubric } => card.kind === 'rubric' && card.rubric.system === 'applied-mathematics');
-    expect(cards).toHaveLength(1486);
+    // June's 1,486 and the carded deferred sittings' tasks (2022 Higher: 42).
+    expect(cards).toHaveLength(1486 + 42);
     const residue = new Set(appliedMathsResidue.cards.map(card => card.id));
     let cut = 0, scaleOnly = 0;
     for (const card of cards) {

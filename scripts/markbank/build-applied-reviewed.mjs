@@ -6,7 +6,7 @@ import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { paperIndex, paperEntry, resolvePaperFileid } from './paperIndex.mjs';
+import { paperIndex, paperEntry, deferredPaperEntry, resolvePaperFileid } from './paperIndex.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const reviewDir = resolve(root, 'scripts/markbank/authoring/reviewed/applied-maths');
@@ -22,11 +22,19 @@ const hash = path => createHash('sha256').update(readFileSync(path)).digest('hex
 const schemeSources = task => task.schemePages
   ? task.schemePages.map((page, index) => ({ page, region: task.schemeRegions[index] }))
   : [{ page: task.schemePage, region: task.schemeRegion }];
+// --deferred compiles only the SEC's deferred sittings' ledgers ("sitting": "deferred") and merges their cards,
+// Atlas rows and answer maps onto the committed June output, which it leaves exactly as it is (the June ledgers'
+// card-correction guard reads hashes of deck blocks that later deck builds have since re-emitted).
+const DEFERRED_ONLY = process.argv.includes('--deferred');
 for (const filename of readdirSync(reviewDir).filter(name => name.endsWith('.json')).sort()) {
   const review = JSON.parse(readFileSync(resolve(reviewDir, filename)));
+  if (DEFERRED_ONLY && review.sitting !== 'deferred') continue;
+  // A deferred sitting's ledger ("sitting": "deferred") is its own edition: ids am-<year>-<lvl>-deferred-…, its paper
+  // and scheme linked as <year>-<lvl>-deferred-paper.pdf and schemes/<year>-<lvl>-deferred.pdf, its own index entry.
+  const deferred = review.sitting === 'deferred';
   for (const paper of review.papers) {
     const short = paper.level === 'higher' ? 'hl' : 'ol';
-    const prefix = `${review.year}-${short}`;
+    const prefix = `${review.year}-${short}${deferred ? '-deferred' : ''}`;
     const originalSource = readFileSync(resolve(root, `components/MarkBank/cards/applied-maths/${paper.level}.ts`), 'utf8');
     const originalBlocks = new Map([...originalSource.matchAll(/  \{\n    \.\.\.base,[\s\S]*?  \} as SecCard,/g)]
       .map(([block]) => [block.match(/^    id: "([^"]+)"/m)?.[1], block]));
@@ -80,8 +88,9 @@ print(json.dumps(sorted(set(clipped))))
       return schemeSources(task).map(({ page, region }) => ({ idSuffix: task.idSuffix, schemePage: page, schemeRegion: region }));
     })), encoding: 'utf8' }));
     if (clipped.length) throw new Error(`${prefix}: clipped source text in ${clipped.join(', ')}`);
-    const fileid = resolvePaperFileid('applied-maths', review.year, paper.level, 'B');
-    const entry = paperEntry('applied-maths', review.year, paper.level);
+    const fileid = resolvePaperFileid('applied-maths', review.year, paper.level, 'B', deferred ? 'deferred' : 'main');
+    const entry = deferred ? deferredPaperEntry('applied-maths', review.year, paper.level)
+      : paperEntry('applied-maths', review.year, paper.level);
     const schemeFileid = entry?.papers.find(item => item.doc.f.replace(/\.pdf$/, '') === fileid)?.scheme?.f;
     if (!fileid || !schemeFileid) throw new Error(`${prefix}: unbound source`);
     const totals = new Map();
@@ -110,18 +119,22 @@ print(json.dumps(sorted(set(clipped))))
         id, source: 'sec', kind: 'rubric', subjectId: 'applied-maths',
         year: review.year, level: paper.level, topicId: task.topicId,
         conceptId: task.topicId, section: 'B',
-        questionRef: `${review.year} ${short.toUpperCase()} ${task.ref}`,
+        questionRef: `${review.year} ${short.toUpperCase()} ${task.ref}${deferred ? ' — Deferred sitting' : ''}`,
         questionText: task.questionText,
         ...(task.stem ? { stem: task.stem } : {}),
         ...(task.practiceFocus ? { practiceFocus: task.practiceFocus } : {}),
         paperFileid: fileid, totalMarks,
         sourceMaterial: { ...common, kind: 'source-paper', label: `${task.ref} · question and context`, title: 'Original question pages', pages: task.paperPages,
           ...(task.paperRegions ? { regions: task.paperRegions } : {}) },
-        schemeCitation: `SEC Applied Mathematics ${review.year} ${paper.level === 'higher' ? 'Higher' : 'Ordinary'} Level marking scheme, PDF page${solutionSources.length > 1 ? 's' : ''} ${solutionSources.map(source => source.page).join(', ')} — © State Examinations Commission.`,
+        schemeCitation: `SEC Applied Mathematics ${review.year} ${paper.level === 'higher' ? 'Higher' : 'Ordinary'} Level marking scheme${deferred ? ', deferred examination' : ''}, PDF page${solutionSources.length > 1 ? 's' : ''} ${solutionSources.map(source => source.page).join(', ')} — © State Examinations Commission.`,
         rubric: {
           system: 'applied-mathematics',
           solution: { ...common, kind: 'source-scheme', label: task.ref, title: 'Official worked solution', sourceFileid: schemeFileid, pages: solutionSources.map(source => source.page), regions: solutionSources.map(source => source.region) },
-          allocations: task.allocations.map((item, index) => ({ id: `allocation-${index + 1}`, ...item })),
+          allocations: task.allocations.map((item, index) => ({ id: `allocation-${index + 1}`, ...item,
+            // A misprint in the scheme, said in plain words on the card's first step (CARD-STANDARD 10f): ledgers
+            // name them in schemeNotes (the deferred sittings').
+            ...(index === 0 && paper.schemeNotes?.[task.idSuffix]
+              ? { guidance: [item.guidance, paper.schemeNotes[task.idSuffix]].filter(Boolean).join(' ') } : {}) })),
           markingGuideNote: paper.markingGuideNote,
         },
         qa: { gates: ['paper-scheme-visual-review', 'published-tariffs', 'source-hashes', 'selection-review', ...(correctionIds.has(id) ? ['reviewed-card-correction'] : [])], humanReviewedBy: 'Codex source review (not human sign-off)', humanReviewedAt: review.reviewedAt },
@@ -178,12 +191,24 @@ print(json.dumps(sorted(set(clipped))))
     const output = resolve(root, `public/paper-answers/${review.year}/${fullFileid}.json`);
     mkdirSync(dirname(output), { recursive: true });
     writeFileSync(output, JSON.stringify(hosted) + '\n');
+    if (deferred) {
+      // The reviewed deferred edition's index item carries "answers": 1, as June's reviewed editions do; its map is
+      // hosted (HOSTED_ANSWER_OVERRIDES in components/PaperTrail/vaultResolve.ts).
+      const indexPath = resolve(root, 'paperTrailData.ts');
+      const index = readFileSync(indexPath, 'utf8');
+      const esc = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const item = new RegExp(`(\\{"year": ${review.year}, "level": "${paper.level}", "lang": "ev", "sitting": "deferred", "papers": \\[\\{"label": "Deferred · Exam Paper", "doc": \\{"f": "${esc(fullFileid)}", "b": \\d+\\}, "sitting": "deferred", "scheme": \\{"f": "${esc(schemeFileid)}", "b": \\d+\\})(, "answers": 1)?(\\}\\]\\})`, 'g');
+      const hits = [...index.matchAll(item)];
+      if (hits.length !== 1) throw new Error(`${prefix}: ${hits.length} deferred index items`);
+      const flagged = index.replace(item, '$1, "answers": 1$3');
+      if (flagged !== index) writeFileSync(indexPath, flagged);
+    }
   }
 }
 // A translated booklet keeps its native coordinates, but identical tasks share
 // the canonical cards. A separate visual review is required before it is added.
 const translatedDir = resolve(root, 'scripts/markbank/authoring/translated/applied-maths');
-for (const filename of existsSync(translatedDir) ? readdirSync(translatedDir).filter(name => name.endsWith('.json')).sort() : []) {
+for (const filename of !DEFERRED_ONLY && existsSync(translatedDir) ? readdirSync(translatedDir).filter(name => name.endsWith('.json')).sort() : []) {
   const review = JSON.parse(readFileSync(resolve(translatedDir, filename)));
   const canonicalPath = resolve(reviewDir, filename);
   for (const paper of review.papers) {
@@ -244,7 +269,17 @@ for (const filename of existsSync(translatedDir) ? readdirSync(translatedDir).fi
     writeFileSync(output, JSON.stringify(hosted) + '\n');
   }
 }
+const REVIEWED_PATH = resolve(root, 'components/MarkBank/cards/applied-maths/reviewed.json');
+const QUESTIONS_PATH = resolve(root, 'data/examTopics/applied-mathematics-reviewed-questions.json');
+if (DEFERRED_ONLY) {
+  // June's committed cards and rows, unchanged and in place; the deferred sittings' after them, rebuilt.
+  const isDeferredId = id => /^am-\d{4}-(?:hl|ol)-deferred-/.test(id);
+  const june = JSON.parse(readFileSync(REVIEWED_PATH)).filter(card => !isDeferredId(card.id));
+  const juneRows = JSON.parse(readFileSync(QUESTIONS_PATH)).filter(row => !row.fileid.endsWith('-deferred.pdf'));
+  cards.unshift(...june);
+  questionMappings.unshift(...juneRows);
+}
 if (new Set(cards.map(card => card.id)).size !== cards.length) throw new Error('Duplicate task ID');
-writeFileSync(resolve(root, 'components/MarkBank/cards/applied-maths/reviewed.json'), JSON.stringify(cards, null, 2) + '\n');
-writeFileSync(resolve(root, 'data/examTopics/applied-mathematics-reviewed-questions.json'), JSON.stringify(questionMappings, null, 2) + '\n');
+writeFileSync(REVIEWED_PATH, JSON.stringify(cards, null, 2) + '\n');
+writeFileSync(QUESTIONS_PATH, JSON.stringify(questionMappings, null, 2) + '\n');
 console.log(`Compiled ${cards.length} reviewed tasks. This is not a full-corpus completion claim.`);
