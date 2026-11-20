@@ -38,6 +38,14 @@ def page_has(path: str, page: int, text: str) -> bool:
     return P.normal(text) in P.normal(P.visible_lines(P._open(path)[page - 1]))
 
 
+def in_reading_order(path: str, text: str) -> bool:
+    """Printed in the order the page is read, top to bottom (art_cards' own word order): a text box the text layer
+    lists after the parts it sits above (the extract of 2023 Higher deferred Q2) is read where it is printed."""
+    pages = [' '.join(w[4] for w in sorted(P.visible_words(page), key=lambda w: (round(w[1]), w[0])))
+             for page in P._open(path)]
+    return P.normal(text) in P.normal(' '.join(pages))
+
+
 def on_cited_page(path: str, pages, text: str) -> bool:
     pages = pages if isinstance(pages, list) else [pages]
     return any(page_has(path, page, text) for page in pages)
@@ -48,9 +56,12 @@ class ArtSecWordingTest(unittest.TestCase):
         self.assertTrue(AUDITED)
         # Descriptors exist from 2023; the 2021-2022 schemes allocate marks
         # to components without descriptor bands.
+        # Each carded deferred sitting from 2023 has its own, keyed <year>-<level>-deferred.
         self.assertEqual(sorted(AUTHORED['descriptors']),
-                         sorted(f'{year}-{level}' for year in AUDITED if year >= 2023
-                                for level in ('higher', 'ordinary')))
+                         sorted([f'{year}-{level}' for year in AUDITED if year >= 2023
+                                 for level in ('higher', 'ordinary')]
+                                + [f'{year}-{level}-deferred' for year, level in art_cards.DEFERRED_SITTINGS
+                                   if year >= 2023]))
 
     def test_every_card_string_is_printed(self):
         failures = []
@@ -65,7 +76,7 @@ class ArtSecWordingTest(unittest.TestCase):
             if card.get('stem'):
                 checks.append(('stem', card['stem']))
             for kind, text in checks:
-                if not P.printed(paper, text):
+                if not (P.printed(paper, text) or in_reading_order(paper, text)):
                     failures.append((card['id'], kind, text))
             if re.search('[\ue000-\uf8ff]', json.dumps(card, ensure_ascii=False)):
                 failures.append((card['id'], 'private-use glyph', ''))

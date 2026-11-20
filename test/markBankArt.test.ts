@@ -32,7 +32,7 @@ describe('complete Art corpus, 2010–2026', () => {
   it('cards every printed task of each carded deferred sitting on its own paper and sheet', () => {
     const deferredCensus = census.papers.filter(paper => 'sitting' in paper && paper.sitting === 'deferred');
     expect(deferredCensus.map(paper => [paper.year, paper.level, paper.paperFileid, paper.expectedCards]))
-      .toEqual([[2022, 'higher', 'LC014ALP000EV-deferred', 62]]);
+      .toEqual([[2022, 'higher', 'LC014ALP000EV-deferred', 62], [2023, 'higher', 'LC014ALP000EV-deferred', 26]]);
     expect(DEFERRED.map(card => card.id).sort())
       .toEqual(deferredCensus.flatMap(paper => paper.cards.map(card => card.cardId)).sort());
     for (const card of DEFERRED) {
@@ -40,14 +40,15 @@ describe('complete Art corpus, 2010–2026', () => {
       expect(card.paperFileid, card.id).toBe(`LC014${card.level === 'higher' ? 'A' : 'G'}LP000EV-deferred`);
       expect(card.schemeCitation, card.id).toContain(', deferred examination,');
       if (/accompanying sheet/i.test(`${card.stem ?? ''} ${card.questionText}`)) {
-        // The deferred sitting's own sheet: English-only in 2022 (LC014ALP004EV-deferred).
+        // The deferred sitting's own sheet: English-only in 2022 (LC014ALP004EV-deferred), bilingual in 2023.
         expect(card.sourceMaterial?.sourceFileid, card.id).toMatch(/^LC014[AG]LP004[EB]V-deferred$/);
       }
     }
-    // The 2022 Higher sheet prints nine of its twenty questions' illustrations.
-    expect(new Set(DEFERRED.filter(card => card.sourceMaterial)
-      .map(card => card.questionRef.match(/Q(\d+)/)![1]))).toEqual(
-      new Set(['1', '3', '6', '10', '11', '12', '17', '18', '20']));
+    // The 2022 Higher sheet prints nine of its twenty questions' illustrations, the 2023 Higher sheet four.
+    const illustrated = (year: number) => new Set(DEFERRED.filter(card => card.year === year && card.sourceMaterial)
+      .map(card => card.questionRef.match(/Q(\d+)/)![1]));
+    expect(illustrated(2022)).toEqual(new Set(['1', '3', '6', '10', '11', '12', '17', '18', '20']));
+    expect(illustrated(2023)).toEqual(new Set(['1', '3', '4', '6']));
   });
 
   it('keeps the audited task census for each paper', () => {

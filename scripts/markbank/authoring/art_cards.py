@@ -1582,12 +1582,16 @@ def comparable(value: str) -> str:
 # by June's own readers (use_sitting): the per-paper tables below replace June's while it is read, and its cards
 # are June's shape with ids art-<year>-<lvl>-deferred-..., citations "... — Deferred sitting" and booklet
 # ...-deferred (deferred_cards).
-DEFERRED_SITTINGS: tuple[tuple[int, str], ...] = ((2022, 'higher'),)
+DEFERRED_SITTINGS: tuple[tuple[int, str], ...] = ((2022, 'higher'), (2023, 'higher'))
 DEFERRED_ILLUSTRATION_SUFFIX = {(2022, 'higher'): 'EV'}
 DEFERRED_TABLES: dict[str, dict[Any, Any]] = {
-    'EXPECTED_QUESTIONS_BY_YEAR_LEVEL': {(2022, 'higher'): 20},
-    'EXPECTED_CARDS_BY_YEAR_LEVEL': {(2022, 'higher'): 62},
-    'ANSWER_BOX_LABELS': {},
+    'EXPECTED_QUESTIONS_BY_YEAR_LEVEL': {(2022, 'higher'): 20, (2023, 'higher'): 19},
+    'EXPECTED_CARDS_BY_YEAR_LEVEL': {(2022, 'higher'): 62, (2023, 'higher'): 26},
+    # 2023 Higher Q7: the answer areas' labels for the parts the printed question already names.
+    'ANSWER_BOX_LABELS': {
+        (2023, 'higher', 7): ('Name of film, television programme or video game:', 'Colour and mood:',
+                              'Visual aspect:', 'Reasons:'),
+    },
     'PRINTED_CHOICES': {
         (2022, 'higher', 4): (
             ('parliament-house', 'Parliament House, Dublin'),
@@ -1630,13 +1634,27 @@ DEFERRED_TABLES: dict[str, dict[Any, Any]] = {
     },
     'TASK_COMBINATION_CHOICES': {},
     'REVIEWED_NON_ENUMERABLE_POOLS': {},
-    'REVIEWED_OPEN_SELECTIONS': {},
+    'REVIEWED_OPEN_SELECTIONS': {
+        (2023, 'higher', 4): (
+            '"Why would an artist choose to make and exhibit a temporary artwork rather than a permanent artwork?": '
+            'the artist\'s choice the question asks about, not one the student makes; one card.'),
+    },
     # The deferred sheet (LC014ALP004EV), read page by page: page 1 prints Questions 17, 18, 20, 1, 3 and 6,
     # page 2 Questions 10, 11 and 12 -- the nine whose asks refer to their illustration.
     'ILLUSTRATION_PAGES': {
         (2022, 'higher'): {1: 1, 3: 1, 6: 1, 17: 1, 18: 1, 20: 1, 10: 2, 11: 2, 12: 2},
+        # The 2023 Higher sheet (LC014ALP004BV): page 1 prints Questions 1 and 6, page 2 Questions 3 and 4.
+        (2023, 'higher'): {1: 1, 6: 1, 3: 2, 4: 2},
     },
-    'CURRENT_SHORT_TOPICS': {},
+    # 2023 Higher Section A, each as June files the same kind of question and each among the headings the factual
+    # reference gives that deferred question: Berkery's painting (Processes and Media), the Zurich Portrait Prize and
+    # commissions (Theory and Thinking), the mural Flidhais (Social Commentary, as June's murals are), the Eirigh
+    # pavilion (Art and the Environment, as June's pavilion is), the curator and an exhibition theme (Theory and
+    # Thinking, as June's gallery questions are), the Ballymaloe poster and colour in film (Processes and Media).
+    'CURRENT_SHORT_TOPICS': {
+        (2023, 'higher', number): topic for number, topic in enumerate(
+            ('art-6-1', 'art-6-0', 'art-6-2', 'art-6-3', 'art-6-0', 'art-6-1', 'art-6-1'), start=1)
+    },
     'LEGACY_QUESTION_TOPICS': {},
     # Reviewed where the keyword reading misfiles the question, each as June files the same kind of question:
     # Q4's Georgian buildings (Parliament House, Russborough House, the Four Courts) under the Georgian Period; Q7's

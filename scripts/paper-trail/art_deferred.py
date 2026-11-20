@@ -19,7 +19,9 @@ numbered as June's. A sitting is written here once Mark Bank holds its cards (ar
 cards carry "sitting": "deferred"), and then:
 
   * its anchor map, public/paper-anchors/<year>/<fileid>.json: paper only, mode "pagejump", one entry per printed
-    question, from each question's printed head ("N." on the 2021-2022 papers, "Question N" from 2023) to the next;
+    question, from each question's printed head ("N." on the 2021-2022 papers, "Question N" from 2023) to the next
+    on the same or the following page, else (a section's last question, its answer pages after it) to the foot of
+    its own page;
   * its topic-tag paper in topic-tags/tags/art.json, after June's (then build-tags.mjs), each printed question tagged
     with the topics its cards are filed under (reviewed in art_cards.py), first two in card order.
 
@@ -81,26 +83,20 @@ def heads(year, level):
                 m = re.fullmatch(r'(\d{1,2})', following) if word[4] == 'Question' else None
             if m:
                 found.setdefault(int(m.group(1)), (page_number, round(word[1] / page.rect.height, 4)))
-    return found, tail(doc, max(page for page, _ in found.values()) if found else 1)
+    return found, doc
 
 
-def tail(doc, last_head_page):
-    """Where the last question ends: the foot of the last printed line on the last page from its head's page on
-    that carries more than the copyright notice (the booklet's back page is the notice alone)."""
-    end = (last_head_page, 0.92)
-    for page_number in range(last_head_page, len(doc) + 1):
-        page = doc[page_number - 1]
-        if 'Copyright notice' in page.get_text():
-            break
-        lines = [line for block in page.get_text('dict')['blocks'] for line in block.get('lines', [])
-                 if not FURNITURE.fullmatch(' '.join(span['text'] for span in line['spans']).replace('\xa0', ' ').strip())]
-        if lines:
-            end = (page_number, round(min(1, max(line['bbox'][3] for line in lines) / page.rect.height + 0.01), 4))
-    return end
+def foot(doc, page_number):
+    """The foot of the last printed line on a page, its running header and footer aside (matched by text)."""
+    page = doc[page_number - 1]
+    lines = [line for block in page.get_text('dict')['blocks'] for line in block.get('lines', [])
+             if not FURNITURE.fullmatch(' '.join(span['text'] for span in line['spans']).replace('\xa0', ' ').strip())]
+    bottom = max((line['bbox'][3] for line in lines), default=0.92 * page.rect.height)
+    return page_number, round(min(1, bottom / page.rect.height + 0.01), 4)
 
 
 def anchor_map(year, level, fileid, numbers):
-    found, last = heads(year, level)
+    found, doc = heads(year, level)
     if sorted(found) != numbers:
         raise SystemExit(f'{year} {level} deferred: heads {sorted(found)}, cards {numbers}')
     positions = [found[n] for n in numbers]
@@ -108,7 +104,11 @@ def anchor_map(year, level, fileid, numbers):
         raise SystemExit(f'{year} {level} deferred: heads out of order')
     questions = []
     for index, n in enumerate(numbers):
-        end = positions[index + 1] if index + 1 < len(numbers) else last
+        # To the next question's head when it is on this page or the next; otherwise (the last question of a
+        # section, whose answer pages follow, and the paper's last question) to the foot of its own page.
+        following = positions[index + 1] if index + 1 < len(numbers) else None
+        end = following if following and following[0] <= positions[index][0] + 1 \
+            else foot(doc, positions[index][0])
         questions.append({'n': str(n), 'pP': positions[index][0], 'pY': [positions[index][1], 1],
                           'region': [{'p': 1}], 'mode': 'pagejump', 'conf': 0.5, 'label': f'Question {n}',
                           'printOrder': index + 1, 'endP': end[0], 'endY': end[1]})
