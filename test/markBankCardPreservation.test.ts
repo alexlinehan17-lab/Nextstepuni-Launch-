@@ -1564,7 +1564,7 @@ const LITHUANIAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: num
   2026: { higher: 41, ordinary: 46 },
   2025: { higher: 37, ordinary: 40 },
   2024: { higher: 9, ordinary: 41 },
-  2023: { higher: 35, ordinary: 26 },
+  2023: { higher: 35, ordinary: 32 },
 };
 /* The listening booklet (sections LA-LE) and Section B's written tasks, which
  * have no live card, by their ids; the reading asks the generator refused, by
