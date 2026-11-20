@@ -300,6 +300,43 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2011 Higher Level — © State Examinations Commission.",
+    id: "dan-2011-hl-ii-1", topicId: "danish-1-0", conceptId: "overlykkelige-risikerer-blive-passive-mangle-empati",
+    section: "II", questionRef: "2011 HL Section II Q1",
+    questionText: "”Er vi overlykkelige, risikerer vi at blive passive og mangle empati og fremdrift. Den engelske 1700-tals moralfilosof og økonom Adam Smith har sagt, at det faktum, at vi aldrig når vores mål, er et menneskeligt vilkår og årsag til, at vi udvikler os og er nysgerrige. Den lille utilfredshed giver os kræfter og overskud.” Kommenter dette synspunkt med minimum 100 ord.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Svaret forventes at indfange det dialektiske ved lykken i citatet: at et vist mål af ulykke er produktivt og nødvendigt for vores udvikling. Samtidig ville opnåelse af fuldkommen lykke ifølge citatet ikke være godt.", marks: 30, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\" The scheme prints: “Note: I del 2 og del 3 vil de følgende elementer blive anvendt som vurderingskriterier.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Målstyring – eksaminanden viser forståelse af spørgsmålet og af en måde at besvare det på – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Sammenhæng – eksaminanden inddrager relevante og passende emner på en struktureret og meningsfuld måde – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Sprogligt herredømme – eksaminanden demonstrerer sprogligt herredømme competent nok til at kommunikere ideer klart og flydende – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Sprogregler – grammatiske regler, staveregler, tegnsætning – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OPGAVE II",
+          "title": "Reading text — answer in Danish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Danish 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC038ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2011 Higher Level — © State Examinations Commission.",
+    id: "dan-2011-hl-iii-1", topicId: "danish-1-1", conceptId: "skriv-essay-cirka-300-ord-disse",
+    section: "III", questionRef: "2011 HL Section III Q1",
+    questionText: "Skriv et essay på cirka 300 ord om ét af disse to emner:\nForholdet mellem åndelig og materiel lykkeopfattelse\n\"De fleste mennesker er omtrent så lykkelige, som de beslutter sig for at være.\" (Abraham Lincoln 16. præsident i USA - 1809-1865)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Svaret forventes at forholde sig eksplicit til begreberne materiel og åndelig/sjælelig lykke. Man kan forestille sig en historisk vinkel på emnet, siden en sådan er nævnt i teksten. Under alle omstændigheder en personlig stillingtagen til emnet.", marks: 40, contextNote: "The examination requires every answer in DANISH. The paper prints the rule on page 3: \"Alle spørgsmål skal besvares med dine egne ord og på dansk\" The scheme prints: “Note: I del 2 og del 3 vil de følgende elementer blive anvendt som vurderingskriterier.”. The scheme prints this paragraph under “Opgave III” and names neither title.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Målstyring – eksaminanden viser forståelse af spørgsmålet og af en måde at besvare det på – 30 %","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Sammenhæng – eksaminanden inddrager relevante og passende emner på en struktureret og meningsfuld måde – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Sprogligt herredømme – eksaminanden demonstrerer sprogligt herredømme competent nok til at kommunikere ideer klart og flydende – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Sprogregler – grammatiske regler, staveregler, tegnsætning – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2012, level: "higher",
     paperFileid: "LC038ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Danish 2012 Higher Level — © State Examinations Commission.",
