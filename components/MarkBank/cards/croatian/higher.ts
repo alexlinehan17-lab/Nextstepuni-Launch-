@@ -2849,6 +2849,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2025 Higher Level — © State Examinations Commission.",
+    id: "hrv-2025-hl-ii-1", topicId: "croatian-1-0", conceptId: "najve-darovi-koje-ete-dati-svojoj",
+    section: "II", questionRef: "2025 HL Section II Q1",
+    questionText: "„Najveći darovi koje možete dati svojoj djeci osjećaji su pripadnosti i ljubavi koji dolaze kroz zajednički provedene trenutke”. Komentirajte ovu izjavu vlastitim riječima (100 – 150 riječi).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "U potpunosti se slažem s ovom izjavom. Iako moji roditelji uistinu mnogo rade kako bi meni i sestri mogli priuštiti se što nam treba, ono što me čini najsretnijom naši su zajednički dugi ručkovi vikendom, naša zajednička putovanja na kojima skupljamo predivne uspomene ili moje i sestrino zajedničko i sad već tradicionalno pečenje božićnih kolača. Jako sam bliska sa svojom mamom i sve joj mogu povjeriti jer mi od malih nogu daje do znanja da joj je najvažnije da sam ja dobro i da ništa što s njom podijelim neće naići na osudu, nego razumijevanje. Puno vremena provodimo zajedno i pritom se baš dobro zabavljamo. S tatom također imam svoje teme, s njim najviše uživam u sportskim aktivnostima, tata me naučio plivati, skijati, a planiramo zajedno proći i tečaj ronjenja. Pa ipak, najljepše uspomene koje nosim iz djetinjstva vezane su za blagdansko vrijeme i, iako se itekako sjećam uzbuđenja božićnog jutra na koje smo sestra i ja otvarale darove, ono čega se sjećam još snažnije zajedničko je ukrašavanje kuće, kićenje božićnog drvca, zajednička večera na Badnjak na kojoj bi se okupila cijela obitelj, zamamni mirisi koji su dolazili iz kuhinje, smijeh i pjesma. Lijepo je primati darove, lijepo je moći si priuštiti materijalne stvari, ali baš ništa ne može zamijeniti osjećaj doma koji su meni i mojoj sestri omogućili moji roditelji.", marks: null, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme heads it: “Na primjer:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. DIO",
+          "title": "Reading text — answer in Croatian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Croatian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2025 Higher Level — © State Examinations Commission.",
+    id: "hrv-2025-hl-iii-1", topicId: "croatian-1-1", conceptId: "poput-grude-snijega-kotrlja-sve-martin",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "Napišite esej (od najmanje 300 riječi) o jednoj od sljedećih tema: „Laž je poput grude snijega: što se duže kotrlja, sve je veća” Martin Luther, Govori za stolom",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme reprints the part's head, the instruction and the two titles with their attributions, and prints nothing under them: no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC567ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2025 Higher Level — © State Examinations Commission.",
+    id: "hrv-2025-hl-iii-2", topicId: "croatian-1-1", conceptId: "nije-najve-budala-onaj-koji-zna",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "Napišite esej (od najmanje 300 riječi) o jednoj od sljedećih tema: ”Nije najveća budala onaj koji ne zna čitati, nego onaj koji misli da je sve što pročita istina” Ivo Andrić, Bosanska trilogija",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme reprints the part's head, the instruction and the two titles with their attributions, and prints nothing under them: no criteria and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2026, level: "higher",
     paperFileid: "LC567ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Croatian 2026 Higher Level — © State Examinations Commission.",
