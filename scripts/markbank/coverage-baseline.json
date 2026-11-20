@@ -498,11 +498,11 @@
     "refsHash": "1068c61a33369766"
   },
   "latvian": {
-    "cards": 36,
-    "contentHash": "0b3adf342a7fcb31",
+    "cards": 44,
+    "contentHash": "d8181208eba9ebf3",
     "coveragePct": 99.5,
-    "covered": 84,
-    "excluded": 134,
+    "covered": 92,
+    "excluded": 126,
     "leaves": 219,
     "open": 1,
     "orphans": 0,
@@ -510,7 +510,7 @@
       "count": 17,
       "hash": "f66362d289720cbb"
     },
-    "refsHash": "bd48c1d040369c85"
+    "refsHash": "24eaa487f976ad20"
   },
   "lcvp": {
     "cards": 518,
