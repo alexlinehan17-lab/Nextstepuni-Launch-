@@ -11,6 +11,46 @@ from pathlib import Path
 
 
 def reviewed_keys(year, level):
+    if (year, level) == (2017, 'ol'):
+        # Independent original-paper census: 33 written and 18 listening asks.
+        # Printed choices remain single asks; no bundled listening sections.
+        root = Path(__file__).resolve().parents[3] / 'examiner-reports/russian'
+        for relative, digest in {
+            'papers/2017-ol-000-paper.pdf':'2b705ed6fdff983ac7effe1b4d3737fdaca5a1cd893f19b8b58946f544d713f6',
+            'papers/2017-ol-A00-paper.pdf':'98fbb84beb3eb52c85dc18ccca198dfb964a2b7727444aa42634a041f3bcdd61',
+            'schemes/2017-ol.pdf':'27ccb0243cfcc6e793f3abfff15dab61fe0d7b2a575a624629770bf1d1fa447f',
+        }.items():
+            assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == digest
+        keys=[('IR1',None,None,r) for r in ('i','ii','iii','iv','v','vi','vii','viii')]
+        keys += [('IR2',None,None,r) for r in ('i','ii','iii','iv','v','vi','vii')]
+        keys += [('CD',q,None,r) for q,rs in [(1,('i','ii','iii')),(2,(None,)),(3,('i','ii','iii','iv')),(4,('i','ii','iii','iv'))] for r in rs]
+        keys += [(u,None,None,None) for u in ('LA1','LA2','SD','SA','EW')]+[('MM',1,None,None)]
+        assert len(keys)==33
+        keys += [('L1',q,None,r) for q,r in [(1,None),(2,None),(3,'i'),(3,'ii'),(4,None)]]
+        keys += [('L2',q,None,r) for q,r in [(1,None),(2,None),(3,'i'),(3,'ii')]]
+        keys += [('L3',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,None)]]
+        keys += [('L4',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,None),(4,None)]]
+        assert len(keys)==len(set(keys))==51
+        return set(keys)
+    if (year, level) == (2021, 'hl'):
+        # Independent 52-page visual sweep: 21 written + 20 listening asks.
+        # Six guided-writing alternatives share one 40-mark task, not three.
+        # The repeated Irish LA2 label does not create an extra source task.
+        root=Path(__file__).resolve().parents[3]/'examiner-reports/russian'
+        for relative,digest in {'papers/2021-hl-000-paper.pdf': 'cc1ccca7e039ac3d38af858cdf842bd549c42183c392684f368e67cc952cca22',
+         'papers/2021-hl-A00-paper.pdf': 'b635aff4288709c732cc1cdc18e891ab13517d8ee21643f8578ff363266b5bf4',
+         'schemes/2021-hl.pdf': '7339c36919457d79424b100fb782372daf99d8c790dbe26ca5d69900779d3b41'}.items():assert hashlib.sha256((root/relative).read_bytes()).hexdigest()==digest
+        keys=[('C1',q,None,r) for q,rs in [(1,('i','ii')),(2,('i','ii')),(3,('i','ii','iii')),(4,('i','ii'))] for r in rs]
+        keys += [('LA1',None,None,None),('CA1',None,None,None)]
+        keys += [('C2',q,None,None) for q in range(1,5)]
+        keys += [('LA2',None,None,r) for r in ('i','ii')]
+        keys += [(u,q,None,None) for u,q in [('SD',3),('GR',1),('SE',2),('GW',3)]]
+        keys += [('L1',q,None,None) for q in range(1,5)]
+        keys += [('L2',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,'i'),(2,'ii'),(3,None),(4,None)]]
+        keys += [('L3',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,'i'),(3,'ii'),(4,None)]]
+        keys += [('L4',q,None,r) for q,r in [(1,'i'),(1,'ii'),(2,None),(3,None)]]
+        assert len(keys)==len(set(keys))==41
+        return set(keys)
     if (year, level) == (2010, 'hl'):
         # Independent visual sweep: 16 written, 8 aural and 20 scheme pages.
         # C1 Q5 is the cultural task; the missing city answer remains a leaf.

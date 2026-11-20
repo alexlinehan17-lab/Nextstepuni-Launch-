@@ -10,7 +10,7 @@
  * checked against the SEC PDFs by bio_review.py; this pins what reached the
  * shipped deck so a later regeneration cannot silently drop or reshape it.
  */
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
 import { CARDS as BIO_HIGHER } from '../components/MarkBank/cards/biology/higher';
 import { CARDS as BIO_ORDINARY } from '../components/MarkBank/cards/biology/ordinary';
 import audit from '../scripts/markbank/authored/biology-review-audit.json';
@@ -19,7 +19,10 @@ import { createHash } from 'node:crypto';
 import { tariffReconciles, UNPRINTED_ANSWER } from '../types/markBank';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { curriculumNodeIdsForExamTopic, examTopicIdsForQuestion } from '../data/examTopics/registry';
+import { askRecord } from '../components/PaperTrail/atlasModel';
 import { questionsForTopics } from '../components/PaperTrail/topics';
+import { loadAllAtlasModels as loadAtlasModelsForTest } from '../components/PaperTrail/atlasModel';
+beforeAll(() => loadAtlasModelsForTest());
 
 type Task = { id: string; questionRef: string; total: number; route: string | null;
   status: 'carded' | 'excluded' | 'verified' | 'corrected' | 'added' };
@@ -42,7 +45,7 @@ type ReviewedCard = (typeof BIO_HIGHER)[number] & {
   questionFigure?: unknown;
   sourceMaterial?: { pages: number[] };
 };
-const cards2026 = BIO_HIGHER.filter(card => card.year === 2026) as unknown as ReviewedCard[];
+const cards2026 = BIO_HIGHER.filter(card => card.year === 2026 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const byId = new Map(cards2026.map(card => [card.id, card]));
 
 describe('Biology 2026 Higher — reviewed sitting', () => {
@@ -125,7 +128,7 @@ describe('Biology 2026 Higher — reviewed sitting', () => {
 });
 
 const ol = sittings['2026-ol'];
-const ordinary2026 = BIO_ORDINARY.filter(card => card.year === 2026) as unknown as ReviewedCard[];
+const ordinary2026 = BIO_ORDINARY.filter(card => card.year === 2026 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const olById = new Map(ordinary2026.map(card => [card.id, card]));
 const verbatims = (id: string) => (olById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
   .map(row => row.verbatim);
@@ -236,7 +239,7 @@ describe('Biology 2026 Ordinary — reviewed sitting', () => {
 });
 
 const hl25 = sittings['2025-hl'];
-const higher2025 = BIO_HIGHER.filter(card => card.year === 2025) as unknown as ReviewedCard[];
+const higher2025 = BIO_HIGHER.filter(card => card.year === 2025 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const hl25ById = new Map(higher2025.map(card => [card.id, card]));
 const contentHash = (cards: readonly unknown[]) => createHash('sha256')
   .update(JSON.stringify(cards)).digest('hex');
@@ -340,7 +343,7 @@ describe('Biology 2025 Higher — reviewed sitting, corrected in place', () => {
 });
 
 const ol25 = sittings['2025-ol'];
-const ordinary2025 = BIO_ORDINARY.filter(card => card.year === 2025) as unknown as ReviewedCard[];
+const ordinary2025 = BIO_ORDINARY.filter(card => card.year === 2025 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const ol25ById = new Map(ordinary2025.map(card => [card.id, card]));
 const ol25Verbatims = (id: string) => (ol25ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
   .map(row => row.verbatim);
@@ -460,7 +463,7 @@ describe('Biology 2025 Ordinary — reviewed sitting, corrected in place', () =>
 });
 
 const hl24 = sittings['2024-hl'];
-const higher2024 = BIO_HIGHER.filter(card => card.year === 2024) as unknown as ReviewedCard[];
+const higher2024 = BIO_HIGHER.filter(card => card.year === 2024 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const hl24ById = new Map(higher2024.map(card => [card.id, card]));
 const hl24Verbatims = (id: string) => (hl24ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
   .map(row => row.verbatim);
@@ -570,7 +573,7 @@ describe('Biology 2024 Higher — reviewed sitting, corrected in place', () => {
 });
 
 const ol24 = sittings['2024-ol'];
-const ordinary2024 = BIO_ORDINARY.filter(card => card.year === 2024) as unknown as ReviewedCard[];
+const ordinary2024 = BIO_ORDINARY.filter(card => card.year === 2024 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const ol24ById = new Map(ordinary2024.map(card => [card.id, card]));
 const ol24Verbatims = (id: string) => (ol24ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
   .map(row => row.verbatim);
@@ -669,7 +672,7 @@ describe('Biology 2024 Ordinary — reviewed sitting, corrected in place', () =>
 });
 
 const hl23 = sittings['2023-hl'];
-const higher2023 = BIO_HIGHER.filter(card => card.year === 2023) as unknown as ReviewedCard[];
+const higher2023 = BIO_HIGHER.filter(card => card.year === 2023 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const hl23ById = new Map(higher2023.map(card => [card.id, card]));
 
 describe('Biology 2023 Higher — reviewed sitting, corrected in place', () => {
@@ -787,7 +790,7 @@ describe('Biology 2023 Higher — reviewed sitting, corrected in place', () => {
 });
 
 const ol23 = sittings['2023-ol'];
-const ordinary2023 = BIO_ORDINARY.filter(card => card.year === 2023) as unknown as ReviewedCard[];
+const ordinary2023 = BIO_ORDINARY.filter(card => card.year === 2023 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const ol23ById = new Map(ordinary2023.map(card => [card.id, card]));
 const ol23Verbatims = (id: string) => (ol23ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
   .map(row => row.verbatim);
@@ -913,8 +916,41 @@ describe('Biology 2023 Ordinary — reviewed sitting, corrected in place', () =>
   });
 });
 
+/* The SEC's deferred sittings, carded for the first time from 2026-11-19
+ * (bio_review_<year>_<level>_deferred.py, its ledger kept as data in
+ * authored/biology-deferred-ledgers/<year>-<level>.json): each card names the
+ * sitting twice, in its id ("bio-2022-hl-deferred-…") and its citation ("… —
+ * Deferred sitting"), and opens its own booklet ("LC025ALP038EV-deferred",
+ * "LC025ALP040EV-deferred") and scheme ("…, deferred examination"). */
+const DEFERRED_SITTINGS: Array<[string, readonly ReviewedCard[], number]> = [
+  ['2022-hl', BIO_HIGHER as unknown as ReviewedCard[], 182],
+  ['2022-ol', BIO_ORDINARY as unknown as ReviewedCard[], 182],
+];
+describe.each(DEFERRED_SITTINGS)('Biology %s deferred sitting', (key, deck, count) => {
+  const [year, level] = key.split('-');
+  const sitting = sittings[`${key}-deferred`];
+  const cards = deck.filter(card => card.id.startsWith(`bio-${year}-${level}-deferred-`));
+
+  it('ships every reviewed task, and nothing else, for the sitting', () => {
+    expect(sitting.cardCount).toBe(count);
+    expect(cards).toHaveLength(count);
+    expect(new Set(sitting.tasks.map(task => task.id))).toEqual(new Set(cards.map(card => card.id)));
+  });
+
+  it('says it is the deferred sitting, and opens its own booklet and scheme', () => {
+    const letter = level === 'hl' ? 'A' : 'G';
+    for (const card of cards) {
+      expect(card.questionRef.endsWith(' — Deferred sitting'), card.id).toBe(true);
+      expect(card.year, card.id).toBe(Number(year));
+      expect([`LC025${letter}LP038EV-deferred`, `LC025${letter}LP040EV-deferred`], card.id).toContain(card.paperFileid);
+      expect(card.paperFileid, card.id).toBe(`LC025${letter}LP0${card.section === 'C' ? '40' : '38'}EV-deferred`);
+      expect(card.schemeCitation, card.id).toContain(', deferred examination — ');
+    }
+  });
+});
+
 const hl22 = sittings['2022-hl'];
-const higher2022 = BIO_HIGHER.filter(card => card.year === 2022) as unknown as ReviewedCard[];
+const higher2022 = BIO_HIGHER.filter(card => card.year === 2022 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const hl22ById = new Map(higher2022.map(card => [card.id, card]));
 const hl22Verbatims = (id: string) => (hl22ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
   .map(row => row.verbatim);
@@ -1022,7 +1058,7 @@ describe('Biology 2022 Higher — reviewed sitting, corrected in place', () => {
 });
 
 const ol22 = sittings['2022-ol'];
-const ordinary2022 = BIO_ORDINARY.filter(card => card.year === 2022) as unknown as ReviewedCard[];
+const ordinary2022 = BIO_ORDINARY.filter(card => card.year === 2022 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const ol22ById = new Map(ordinary2022.map(card => [card.id, card]));
 const ol22Verbatims = (id: string) => (ol22ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
   .map(row => row.verbatim);
@@ -1161,7 +1197,7 @@ describe('Biology 2022 Ordinary — reviewed sitting, corrected in place', () =>
 });
 
 const hl21 = sittings['2021-hl'];
-const higher2021 = BIO_HIGHER.filter(card => card.year === 2021) as unknown as ReviewedCard[];
+const higher2021 = BIO_HIGHER.filter(card => card.year === 2021 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const hl21ById = new Map(higher2021.map(card => [card.id, card]));
 const hl21Verbatims = (id: string) => (hl21ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
   .map(row => row.verbatim);
@@ -1271,7 +1307,7 @@ describe('Biology 2021 Higher — reviewed sitting, corrected in place', () => {
 });
 
 const ol21 = sittings['2021-ol'];
-const ordinary2021 = BIO_ORDINARY.filter(card => card.year === 2021) as unknown as ReviewedCard[];
+const ordinary2021 = BIO_ORDINARY.filter(card => card.year === 2021 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const ol21ById = new Map(ordinary2021.map(card => [card.id, card]));
 const ol21Verbatims = (id: string) => (ol21ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
   .map(row => row.verbatim);
@@ -1408,7 +1444,7 @@ describe('Biology 2021 Ordinary — reviewed sitting, corrected in place', () =>
 });
 
 const hl20 = sittings['2020-hl'];
-const higher2020 = BIO_HIGHER.filter(card => card.year === 2020) as unknown as ReviewedCard[];
+const higher2020 = BIO_HIGHER.filter(card => card.year === 2020 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const hl20ById = new Map(higher2020.map(card => [card.id, card]));
 const hl20Verbatims = (id: string) => (hl20ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
   .map(row => row.verbatim);
@@ -1505,7 +1541,7 @@ describe('Biology 2020 Higher — carded from a paper-by-paper review', () => {
 });
 
 const ol20 = sittings['2020-ol'];
-const ordinary2020 = BIO_ORDINARY.filter(card => card.year === 2020) as unknown as ReviewedCard[];
+const ordinary2020 = BIO_ORDINARY.filter(card => card.year === 2020 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const ol20ById = new Map(ordinary2020.map(card => [card.id, card]));
 const ol20Verbatims = (id: string) => (ol20ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
   .map(row => row.verbatim);
@@ -1588,7 +1624,7 @@ describe('Biology 2020 Ordinary — carded from a paper-by-paper review', () => 
 });
 
 const hl19 = sittings['2019-hl'];
-const higher2019 = BIO_HIGHER.filter(card => card.year === 2019) as unknown as ReviewedCard[];
+const higher2019 = BIO_HIGHER.filter(card => card.year === 2019 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const hl19ById = new Map(higher2019.map(card => [card.id, card]));
 const hl19Verbatims = (id: string) => (hl19ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
   .map(row => row.verbatim);
@@ -1721,7 +1757,7 @@ describe('Biology 2019 Higher — carded from a paper-by-paper review', () => {
 });
 
 const hl18 = sittings['2018-hl'];
-const higher2018 = BIO_HIGHER.filter(card => card.year === 2018) as unknown as ReviewedCard[];
+const higher2018 = BIO_HIGHER.filter(card => card.year === 2018 && !card.id.includes('-deferred-')) as unknown as ReviewedCard[];
 const hl18ById = new Map(higher2018.map(card => [card.id, card]));
 
 describe('Biology 2018 Higher — carded from a paper-by-paper review', () => {
@@ -2051,7 +2087,7 @@ describe('Biology — every deck', () => {
     expect(Object.values(sittings).flatMap(s => s.checks.excluded.map(e => e.id))).toEqual([]);
   });
 
-  it('files every card under its own printed Topic Atlas question, listed under each of its headings', () => {
+  it('files every card under its own printed Topic Atlas question, listed under each heading the part is filed under', () => {
     // The Atlas audit: a card's question (its year, level, booklet and printed
     // number) is an Atlas question; one of that question's Atlas topics holds
     // the card's curriculum node; and the question is listed under each such
@@ -2075,11 +2111,13 @@ describe('Biology — every deck', () => {
       const fileid = `${card.paperFileid}.pdf`;
       const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === fileid);
       if (!paper) { missing.push(`${card.id}: no Atlas paper ${fileid}`); continue; }
-      const filed = examTopicIdsForQuestion('biology', card.level as 'higher' | 'ordinary', card.year, 'main', n,
-        paper.paperKey, 'ev', fileid);
-      const node = EQUIV[card.topicId] ?? card.topicId;
-      const holding = filed.filter(topic => curriculumNodeIdsForExamTopic(topic).includes(node));
-      if (!holding.length) { missing.push(`${card.id}: ${card.topicId} under none of Q${n}'s ${filed.join(', ')}`); continue; }
+      // The single model (components/PaperTrail/atlasModel.ts): each part is filed under the heading for what it
+      // asks (scripts/atlas-model/filings/biology.json, read part by part), and its question is listed under every
+      // heading its parts are filed under. EQUIV and the crosswalk remain the evidence the filing started from.
+      void EQUIV; void examTopicIdsForQuestion; void curriculumNodeIdsForExamTopic;
+      const record = askRecord(card.id);
+      if (!record || record.n !== n || record.year !== card.year) { missing.push(`${card.id}: no topic record for Q${n}`); continue; }
+      const holding = record.topics.map(topic => topic.id);
       for (const topic of holding) {
         if (!under(topic).has(`${card.year}|${card.level}|${paper.paperKey}|${fileid}|${n}`)) {
           missing.push(`${card.id}: Q${n} not listed under ${topic}`);

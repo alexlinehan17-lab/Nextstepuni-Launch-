@@ -8,7 +8,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
 import biologyReference from '../data/examTopics/biology.json';
 import biologyEvidence from '../data/examTopics/biology-local-crosswalk.json';
 import curriculumCrosswalk from '../data/examTopics/biology-curriculum-crosswalk.json';
@@ -33,6 +33,8 @@ import {
   resolveCurriculumSpecification,
 } from '../curriculumRegistry';
 import preservationBaseline from './fixtures/biologyTopicQuestionBaseline.json';
+import { loadAllAtlasModels as loadAtlasModelsForTest } from '../components/PaperTrail/atlasModel';
+beforeAll(() => loadAtlasModelsForTest());
 
 const ROOT = process.cwd();
 const VARIANTS = [
@@ -94,7 +96,9 @@ describe('Biology exam-topic registry', () => {
       .toEqual(referenceTopics.map(topic => topic.id));
     expect(taxonomy.topics.map(topic => topic.label))
       .toEqual(referenceTopics.map(topic => topic.label));
-    expect(topicsForSubject('biology')).toHaveLength(122);
+    // The registry keeps all 122 reference topics (above). Biology's Atlas now browses the single model's one list,
+    // the 66 new-course headings its cards are filed under (components/PaperTrail/atlasModel.ts).
+    expect(topicsForSubject('biology')).toHaveLength(66);
   });
 
   it('bridges every practice bucket to the correct canonical specification', () => {
@@ -125,8 +129,9 @@ describe('Biology exam-topic registry', () => {
       referenceOfficialAssociations: 2419,
       referenceMockAssociations: 2333,
       referenceProviderSampleAssociations: 139,
-      matchedAssociations: 1561,
-      sourceBlockedAssociations: 858,
+      // + 72: the 2022 Higher deferred sitting's reference headings now match its carded booklets.
+      matchedAssociations: 1561 + 72,
+      sourceBlockedAssociations: 858 - 72,
       matchedLogicalCards: 485,
       retainedLocalLogicalCards: 49,
     });
@@ -191,7 +196,14 @@ describe('Biology exam-topic registry', () => {
   });
 
   it('exposes every official paper edition through 2026', () => {
-    const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'biology');
+    // The June editions; the carded deferred booklets ("…-deferred.pdf") are pinned beside them.
+    const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'biology' && !paper.fileid.endsWith('-deferred.pdf'));
+    const deferred = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'biology' && paper.fileid.endsWith('-deferred.pdf'));
+    expect(deferred.map(paper => `${paper.year}|${paper.level}|${paper.fileid}|${paper.q.length}`)).toEqual([
+      '2022|higher|LC025ALP038EV-deferred.pdf|10', '2022|higher|LC025ALP040EV-deferred.pdf|7',
+      '2022|ordinary|LC025GLP038EV-deferred.pdf|10', '2022|ordinary|LC025GLP040EV-deferred.pdf|7',
+    ]);
+    expect(biologyEvidence.summary).toMatchObject({ deferredLogicalQuestions: 34 });
     expect(biologyEvidence.summary).toMatchObject({
       localPaperVariants: 100,
       localPhysicalCards: 1068,
@@ -302,10 +314,11 @@ describe('Biology exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 534 entitled questions through all 122 topic buckets', () => {
+  it('surfaces all 534 entitled questions, and the carded deferred sittings\', through the single model\'s 66 headings', () => {
     expect(subjectAtlasStats('biology')).toMatchObject({
-      questions: 534,
-      topics: 122,
+      // + the carded deferred sittings' printed questions (2022 Higher: 17; 2022 Ordinary: 17).
+      questions: 534 + 17 + 17,
+      topics: 66,
       yearMin: 2010,
       yearMax: 2026,
     });

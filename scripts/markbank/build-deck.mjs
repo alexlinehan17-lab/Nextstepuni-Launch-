@@ -789,6 +789,17 @@ function spanishGridFault(c, scheme) {
   if (criteria.reduce((sum, k) => sum + k.maxMarks, 0) !== c.totalMarks) return `the criteria do not add up to the paper's ${c.totalMarks}`;
   for (const k of criteria) {
     const allowed = k.permittedMarks ?? [];
+    // A line the scheme marks by counting items at a printed rate (Music
+    // Composing Section B: "0.5 mark per correct bass note ... (0.5 X 20)"):
+    // placed on every count from 0 to the printed number of items, each at the
+    // printed rate, with no bands of its own. Only Music prints one.
+    if (k.counted) {
+      if (SUBJECT_ID !== 'music') return `${k.label} is counted at a rate, which only Music prints`;
+      const { rate, items } = k.counted;
+      if (!(rate > 0) || !Number.isInteger(items) || items < 1 || rate * items !== k.maxMarks) return `${k.label}'s count does not make its ${k.maxMarks} marks`;
+      if (k.bands || allowed.length !== items + 1 || allowed.some((m, i) => m !== i * rate)) return `${k.label} is not placed on every count from 0 to ${items}`;
+      continue;
+    }
     if (allowed.length !== k.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
     if (k.bands) {
       const marks = k.bands.flatMap(b => b.marks).sort((a, b) => a - b);
@@ -837,7 +848,7 @@ function spanishGridFault(c, scheme) {
   const lifted = [
     ...r.taskRequirements,
     ...String(r.markingGuideNote ?? '').split('\n').filter(Boolean),
-    ...criteria.flatMap(k => [...k.guidance, ...(k.bands ? [k.label] : []),
+    ...criteria.flatMap(k => [...k.guidance, ...(k.bands || k.counted ? [k.label] : []),
       // German prints its expression categories unnamed ("CATEGORY
       // DESCRIPTION"): "Category 1" is the card's own label, never traced.
       ...(k.bands ?? []).flatMap(b => [...(SUBJECT_ID === 'german' ? [] : [b.label]), ...b.guidance]),
@@ -887,6 +898,7 @@ const DEFERRED_ID = {
   spanish: /^es-\d{4}-(?:hl|ol)-deferred-/,
   dcg: /^dcg-\d{4}-(?:hl|ol)-deferred-/,
   german: /^de-\d{4}-(?:hl|ol)-deferred-/,
+  biology: /^bio-\d{4}-(?:hl|ol)-deferred-/,
   physics: /^phys-\d{4}-(?:hl|ol)-deferred-/,
   'home-economics': /^he-\d{4}-(?:hl|ol)-deferred-/,
   maths: /^maths-\d{4}-(?:hl|ol|fl)-deferred-/,
@@ -2189,15 +2201,15 @@ for (const c of cards) {
    * audioQuestionPaperFileid. No other deck has these. */
   const listening = (SUBJECT_ID === 'spanish' && c.section === 'L')
     || (SUBJECT_ID === 'german' && /^L[1-4]$/.test(c.section));
-  /* A DCG deferred sitting is two booklets, as June's is: its card opens the
-   * one that prints its section, never simply the entry's first. */
+  /* A DCG or Biology deferred sitting is two booklets, as June's is: its card
+   * opens the one that prints its section, never simply the entry's first. */
   const fileid = reviewedSource
     ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
     : deferredEntry && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
     ? deferredDoc(SUBJECT_ID, c, listening ? 'Aural Paper' : 'Exam Paper')
     : deferredEntry
-    ? (SUBJECT_ID === 'dcg'
-      ? resolvePaperFileid('dcg', year, level, paperSection, 'deferred')
+    ? (SUBJECT_ID === 'dcg' || SUBJECT_ID === 'biology'
+      ? resolvePaperFileid(SUBJECT_ID, year, level, paperSection, 'deferred')
       : String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null)
     : listening
       ? resolveCompanionFileid(SUBJECT_ID, year, level, 'Aural Paper')

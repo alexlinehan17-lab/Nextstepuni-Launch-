@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-11-12T16:32:42.249733+00:00",
+  "url": "https://www.examinations.ie/exammaterialarchive/index.php",
+  "authority": "State Examinations Commission",
+  "listings": [
+    {
+      "view": "exampapers",
+      "year": 2020,
+      "subject": "99",
+      "sha256": "3fe3dcba4b6dd54948d362e295908ffff133d62f86d29a5b1d814c73d7d4a1ac",
+      "rawResponse": "exampapers-russian.html",
+      "files": [
+        {
+          "fileid": "LC099ALP000BV.pdf",
+          "label": "Higher Level (BV)",
+          "sizeHint": ""
+        },
+        {
+          "fileid": "LC099ALPA00BV.pdf",
+          "label": "Aural Paper / Higher Level (BV)",
+          "sizeHint": ""
+        },
+        {
+          "fileid": "LC099ZLP017EV.mp3",
+          "label": "Sound File (EV)",
+          "sizeHint": ""
+        }
+      ],
+      "status": 200
+    },
+    {
+      "view": "markingschemes",
+      "year": 2020,
+      "subject": "99",
+      "sha256": "e525069b50e59bee1724b7709c2e26fa8fca6d98716ccbd8c7fc5f246b4e1124",
+      "rawResponse": "markingschemes-russian.html",
+      "files": [
+        {
+          "fileid": "LC099ALP000EV.pdf",
+          "label": "Higher Level (EV)",
+          "sizeHint": ""
+        }
+      ],
+      "status": 200
+    }
+  ],
+  "scope": "Published2020 main archive only; no inference about examinations occurring."
+}

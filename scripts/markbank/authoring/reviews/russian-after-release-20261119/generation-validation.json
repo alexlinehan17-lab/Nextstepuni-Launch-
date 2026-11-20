@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-11-19T13:17:20.208442+00:00",
+  "status": "The generated candidate exactly matches the proposal after its eight stated ID-retention mappings and live concept-ID preservation.",
+  "cards": 1495,
+  "allSourcePassagesVerified": 13607,
+  "applicationChecks": "All714 unique checks passed, including75 checks across the three corrected assertion files.",
+  "approval": "pending",
+  "browserCaptures": 44
+}

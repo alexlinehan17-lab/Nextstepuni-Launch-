@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-11-18T20:13:41.389430+00:00",
+  "url": "https://www.examinations.ie/archive/markingschemes/2021/LC099ALP000EV.pdf",
+  "question": "Recheck the published SEC marking scheme for Russian 2021 Higher cultural-awareness essay, pages 13–15, before applying R4.",
+  "archiveSearchToolAttempt": "Web open of SEC archive index failed as inaccessible; direct official PDF retrieval attempted next.",
+  "error": "HTTP Error 403: Forbidden",
+  "browserAttempt": "Browser access host unavailable; no archive result was obtained.",
+  "webPdfAttempt": "Official PDF also inaccessible through web tool; exact SEC-domain search returned no results.",
+  "retainedScheme": {
+    "path": "examiner-reports/russian/schemes/2021-hl.pdf",
+    "sha256": "7339c36919457d79424b100fb782372daf99d8c790dbe26ca5d69900779d3b41",
+    "visuallyReviewedPages": [
+      13,
+      14,
+      15
+    ],
+    "findings": "The published scheme gives content 10 and expression 20 with marking directions and descriptor grids, but no model essay or factual answer. All five printed choices are retained. The literal soft-sign direction is Deduct 1/2 marks; it is shown without an inferred automatic deduction."
+  },
+  "cardIds": [
+    "ru-2021-hl-se"
+  ],
+  "fixedLine": "The scheme prints no answer for this part.",
+  "claimBoundary": "The 403 and failed search are access/search outcomes, not evidence that no scheme was published. This card uses the existing hash-verified published scheme.",
+  "successfulNativeRecheck": {
+    "checkedAt": "2026-11-18T20:49:18.004915+00:00",
+    "method": "Native Chrome opened the exact official scheme URL. Automatic site verification completed, the28-page PDF appeared, and its Download control saved a fresh PDF. No challenge was clicked or solved.",
+    "officialUrl": "https://www.examinations.ie/archive/markingschemes/2021/LC099ALP000EV.pdf",
+    "downloadedFile": "Russian-2021-Higher-SEC-recheck-20261118.pdf",
+    "sha256": "7339c36919457d79424b100fb782372daf99d8c790dbe26ca5d69900779d3b41",
+    "bytes": 385962,
+    "matchesRetainedOriginalByteForByte": true,
+    "result": "The SEC currently publishes the same28-page marking scheme used for the cards. Original pages13–15 have the printed content/expression grid and no model essay or factual answer."
+  }
+}

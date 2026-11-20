@@ -47,6 +47,12 @@ export const hostedAnchorsUrl = (year: number, fileid: string) =>
  * Storage object is live, an entry can be removed without changing callers.
  */
 export const HOSTED_ANSWER_OVERRIDES = new Set([
+  // Newly reviewed Russian 2017 Ordinary sitting.
+  'russian|2017|LC099GLP000EV.pdf',
+  'russian|2017|LC099GLPA00EV.pdf',
+  // Newly reviewed Russian 2021 Higher sitting.
+  'russian|2021|LC099ALP000BV.pdf',
+  'russian|2021|LC099ALPA00BV.pdf',
   // Russian: independently reviewed written and listening task pools (the
   // 2010 and 2018-2020 Higher entries as Codex 465e0c377 binds them; its 2021
   // entries wait for the 2021 Higher sitting).
@@ -452,6 +458,19 @@ export const HOSTED_ANSWER_OVERRIDES = new Set([
   'english|2025|LC002ALP200EV.pdf',
   'english|2025|LC002GLP100EV.pdf',
   'english|2025|LC002GLP200EV.pdf',
+  // English deferred sittings, published paper by paper (english_publish.py): reviewed deferred answer maps.
+  'english|2025|LC002ALP100EV-deferred.pdf',
+  'english|2025|LC002ALP200EV-deferred.pdf',
+  'english|2024|LC002ALP100EV-deferred.pdf',
+  'english|2024|LC002ALP200EV-deferred.pdf',
+  'english|2024|LC002GLP100EV-deferred.pdf',
+  'english|2024|LC002GLP200EV-deferred.pdf',
+  'english|2023|LC002ALP100EV-deferred.pdf',
+  'english|2023|LC002ALP200EV-deferred.pdf',
+  'english|2022|LC002ALP100EV-deferred.pdf',
+  'english|2022|LC002ALP200EV-deferred.pdf',
+  'english|2022|LC002GLP100EV-deferred.pdf',
+  'english|2022|LC002GLP200EV-deferred.pdf',
   'english|2026|LC002ALP100EV.pdf',
   'english|2026|LC002ALP200EV.pdf',
   'english|2026|LC002GLP100EV.pdf',

@@ -32,6 +32,7 @@
  * share a surface. `test/markBankSession.test.tsx` asserts it.
  */
 
+import { atlasLinkForCard } from '../PaperTrail/atlasModel';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import ActionButton from '../ui/ActionButton';
 import { LogOut, Maximize2, Minimize2, X } from 'lucide-react';
@@ -68,6 +69,7 @@ import {
   type PclmRubric,
   type SecCard,
   type SecRubricCard,
+  UNPRINTED_ANSWER,
 } from '../../types/markBank';
 import type { MarkBankGrade } from './scheduler';
 import { figureUrl } from '../../utils/figureUrl';
@@ -1159,6 +1161,14 @@ const PclmRubricPanel: React.FC<{
 
   return (
     <div>
+      {rubric.unprintedAnswer && (
+        // A task the scheme sets out no block for (deferred schemes): the fixed line, then the
+        // general criteria and grid it is marked on. Even neutral border, no accent.
+        <div style={{ margin: '0 0 16px', padding: '11px 12px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}>
+          <p style={{ margin: 0, font: `600 13px/1.45 ${SANS}`, color: INK }}>{UNPRINTED_ANSWER}</p>
+          <p style={{ margin: '4px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>{rubric.unprintedAnswer.citation}</p>
+        </div>
+      )}
       <div style={{ margin: '0 0 16px', padding: '0 0 15px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
         <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
           Task check · no marks added here
@@ -2580,6 +2590,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     );
     return selected ? { ...baseAssessmentCard, rows: selected.rows } : baseAssessmentCard;
   }, [answerVariantId, baseAssessmentCard]);
+  const atlasLink = useMemo(() => (assessmentCard ? atlasLinkForCard(assessmentCard.id) : null), [assessmentCard]);
   const wholeResponseAssessment = Boolean(assessmentCard && isPointCard(assessmentCard)
     && assessmentCard.tariffModel.kind === 'questionTotal');
   // A held task (isConfidenceReviewCard) is reviewed against its guidance with
@@ -3267,6 +3278,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             )}
 
             {paperLayout && assessmentCard.paperFileid && <a className="mb-original-paper" href={`/?view=innovation-zone&tool=paper-trail&subject=${encodeURIComponent(assessmentCard.subjectId)}&year=${assessmentCard.year}&level=${assessmentCard.level}&lang=ev&paper=${encodeURIComponent(assessmentCard.paperFileid.endsWith('.pdf')?assessmentCard.paperFileid:assessmentCard.paperFileid+'.pdf')}`} target="_blank" rel="noopener noreferrer">Open original paper ↗</a>}
+            {/* The single model (atlasModel.ts): the card knows its Topic Atlas question and heading. */}
+            {paperLayout && atlasLink && <a className="mb-original-paper" data-testid="mb-atlas-link" style={{ display: 'flex', marginTop: 10 }} href={atlasLink.href} target="_blank" rel="noopener noreferrer">In the Topic Atlas: {atlasLink.heading.label} · {atlasLink.question} ↗</a>}
             {/* Irish listening cards show their readers beside the recording, above. */}
             {!(audioMaterial && !printedQuestionReplacesText && assessmentCard.subjectId !== 'french') && sourceReaders}
 
