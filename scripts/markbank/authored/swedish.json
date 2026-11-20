@@ -6499,6 +6499,80 @@
   }
  },
  {
+  "id": "swe-2021-hl-ii-1",
+  "subjectId": "swedish",
+  "level": "higher",
+  "year": 2021,
+  "section": "II",
+  "topicId": "swedish-1-1",
+  "conceptId": "det-basta-med-bok-inte-tankar",
+  "questionRef": "2021 HL Section II Q1",
+  "questionText": "Skriv en uppsats (minst 300 ord) om ett av följande ämnen: \"Det bästa med en bok är inte de tankar den innehåller utan de tankar den framkallar.” - John Greenleaf Whittier",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Ett tydligt syfte – kandidaten har förstått frågan och vet hur den ska besvaras",
+    "marks": null,
+    "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme prints these criteria with no marks or percentages; their lead reads: “I del II och III kommer följande kriterier att vägas in i betygssättningen:”. It reprints the instruction as: “Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan.”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Ett sammanhängande svar – kandidaten använder relevant och lämplig fakta ur materialet på ett strukturerat och meningsfullt sätt",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Språklig klarhet – kandidaten uppvisar en språkbehandling som med tydlighet och med visst flyt kan uttrycka dennes idéer",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "swe-2021-hl-ii-2",
+  "subjectId": "swedish",
+  "level": "higher",
+  "year": 2021,
+  "section": "II",
+  "topicId": "swedish-1-1",
+  "conceptId": "kan-inte-bara-hitta-din-egen",
+  "questionRef": "2021 HL Section II Q2",
+  "questionText": "Skriv en uppsats (minst 300 ord) om ett av följande ämnen: ”Du kan inte bara hitta på din egen fakta för att du inte gillar vad du hör.” - Greta Thunberg",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Ett tydligt syfte – kandidaten har förstått frågan och vet hur den ska besvaras",
+    "marks": null,
+    "contextNote": "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme prints these criteria with no marks or percentages; their lead reads: “I del II och III kommer följande kriterier att vägas in i betygssättningen:”. It reprints the instruction as: “Skriv en uppsats på ungefär 300 ord där du redogör för dina tankar om ett av de två ämnena nedan.”."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Ett sammanhängande svar – kandidaten använder relevant och lämplig fakta ur materialet på ett strukturerat och meningsfullt sätt",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Språklig klarhet – kandidaten uppvisar en språkbehandling som med tydlighet och med visst flyt kan uttrycka dennes idéer",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "swe-2022-hl-i-1-a",
   "subjectId": "swedish",
   "level": "higher",
