@@ -848,10 +848,10 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "nogurdināt, nostrādināt", marks: null, contextNote: "The scheme prints this as the meaning of \"nokausēt\". The examination prints this question in Latvian and it is answered in LATVIAN." },
-    { id: "r-2", kind: "point", verbatim: "cita autora darba vai tā daļas (4.fragments) (literāra, zinātniska darba, izgudrojuma u.tml.) uzdošana par savu, publicēšana ar savu vārdu vai pseidonīmu", marks: null, contextNote: "The scheme prints this as the meaning of \"plaģiāts\". The examination prints this question in Latvian and it is answered in LATVIAN." },
-    { id: "r-3", kind: "point", verbatim: "tauta, kas (4.fragments) nedomā, nerada, ar kuru viegli manipulēt; tauta, kuras vietā domā citi", marks: null, contextNote: "The scheme prints this as the meaning of \"aklas sekošanas nācija\". The examination prints this question in Latvian and it is answered in LATVIAN." },
-    { id: "r-4", kind: "point", verbatim: "apmierinājums, prieks par (5.fragments) paveikto", marks: null, contextNote: "The scheme prints this as the meaning of \"gandarījums\". The examination prints this question in Latvian and it is answered in LATVIAN." },
-    { id: "r-5", kind: "point", verbatim: "1) ticēt tam, ko saka 2) (6.fragments) uzticēties 3) ieklausīties un ticēt sacītajam", marks: null, contextNote: "The scheme prints this as the meaning of \"ņemt par pilnu\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-2", kind: "point", verbatim: "cita autora darba vai tā daļas (literāra, zinātniska darba, izgudrojuma u.tml.) uzdošana par savu, publicēšana ar savu vārdu vai pseidonīmu", marks: null, contextNote: "The scheme prints this as the meaning of \"plaģiāts\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-3", kind: "point", verbatim: "tauta, kas nedomā, nerada, ar kuru viegli manipulēt; tauta, kuras vietā domā citi", marks: null, contextNote: "The scheme prints this as the meaning of \"aklas sekošanas nācija\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-4", kind: "point", verbatim: "apmierinājums, prieks par paveikto", marks: null, contextNote: "The scheme prints this as the meaning of \"gandarījums\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-5", kind: "point", verbatim: "1) ticēt tam, ko saka 2) uzticēties 3) ieklausīties un ticēt sacītajam", marks: null, contextNote: "The scheme prints this as the meaning of \"ņemt par pilnu\". The examination prints this question in Latvian and it is answered in LATVIAN." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1074,8 +1074,8 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "skārienjūtīgais telefons, viedtālrunis", marks: null, contextNote: "The scheme prints this as the meaning of \"glāstekrāna ierocis\". The examination prints this question in Latvian and it is answered in LATVIAN." },
     { id: "r-2", kind: "point", verbatim: "ziņu pienesējs, nosūdzētājs", marks: null, contextNote: "The scheme prints this as the meaning of \"stukačs\". The examination prints this question in Latvian and it is answered in LATVIAN." },
-    { id: "r-3", kind: "point", verbatim: "virtuālā vide, dažādi interneta portāli, kuros (4.rindkopa) izvietojam fotogrāfijas", marks: null, contextNote: "The scheme prints this as the meaning of \"virtuālās sienas\". The examination prints this question in Latvian and it is answered in LATVIAN." },
-    { id: "r-4", kind: "point", verbatim: "anonīmu, nezināmu cilvēku (4.rindkopa) fotogrāfijas", marks: null, contextNote: "The scheme prints this as the meaning of \"anonīmu cilvēku trofejas\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-3", kind: "point", verbatim: "virtuālā vide, dažādi interneta portāli, kuros izvietojam fotogrāfijas", marks: null, contextNote: "The scheme prints this as the meaning of \"virtuālās sienas\". The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-4", kind: "point", verbatim: "anonīmu, nezināmu cilvēku fotogrāfijas", marks: null, contextNote: "The scheme prints this as the meaning of \"anonīmu cilvēku trofejas\". The examination prints this question in Latvian and it is answered in LATVIAN." },
     { id: "r-5", kind: "point", verbatim: "fotografēšana", marks: null, contextNote: "The scheme prints this as the meaning of \"knipsēšana\". The examination prints this question in Latvian and it is answered in LATVIAN." },
     ],
     sourceMaterial: {
