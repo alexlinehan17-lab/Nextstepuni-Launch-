@@ -239,7 +239,8 @@ class SchemeSpan:
             raw = doc['scheme'][n - 1].strip()
             if not raw or raw.startswith('## Page') or re.fullmatch(r'\d{1,3}', raw):
                 continue
-            parts.append(S(n).text(doc))
+            # The bullet the shared cut leaves on: a minus sign (2018 Higher).
+            parts.append(re.sub(r'^−\s+', '', S(n).text(doc)))
         return re.sub(r'\s+', ' ', ' '.join(parts)).strip()
 
 
@@ -256,6 +257,32 @@ class PaperPontos:
         if not m:
             raise ValueError(f'paper p{self.page}: {t!r} prints no "(N pontos)"')
         return 1, int(m.group(1)), m.group(0)
+
+    def tariff_note(self, doc):
+        return f"The paper prints the tariff as '{self.read(doc)[2]}'"
+
+
+class PaperEach:
+    """One part's price where the PAPER prices a question part by part on its
+    head ("(5 x 1 ponto)" over Q1(a)-(e)) and the scheme prints none."""
+    def __init__(self, page, opening, q):
+        self.page, self.opening, self.q = page, opening, q
+
+    def _m(self, doc):
+        t = PL(self.page, self.opening).text(doc)
+        m = re.search(r'\((\d{1,2})\s*[x×]\s*(\d{1,2})\s*pontos?\)', t)
+        if not m:
+            raise ValueError(f'paper p{self.page}: {t!r} prints no "(N x P pontos)"')
+        return m
+
+    def read(self, doc):
+        m = self._m(doc)
+        return 1, int(m.group(2)), m.group(0)
+
+    def tariff_note(self, doc):
+        m = self._m(doc)
+        return (f"The paper prints the tariff as '{m.group(0)}' on the head of Q{self.q}, "
+                f"walked down to its {m.group(1)} parts")
 
 
 class Pontos:
@@ -375,9 +402,12 @@ def reading_cards(year, level):
             'tariffModel': {'kind': 'questionTotal' if spec.whole else 'fixed'},
             'totalMarks': total,
             'rows': rows,
-            'notes': (f'The scheme prices this ask {total} {"mark" if total == 1 else "marks"}; '
-                      f'the paper prints it on page {ask.page} of the question booklet.'
-                      + (f' {spec.note}' if spec.note else '')),
+            'notes': ((f'{spec.total.tariff_note(doc)}; the paper prints this ask on page {ask.page} '
+                       'of the question booklet.')
+                      if hasattr(spec.total, 'tariff_note') else
+                      (f'The scheme prices this ask {total} {"mark" if total == 1 else "marks"}; '
+                       f'the paper prints it on page {ask.page} of the question booklet.'))
+                     + (f' {spec.note}' if spec.note else ''),
         }
         lead = P.lead(ask.q)
         if spec.stem is not None:
@@ -1159,7 +1189,24 @@ READING[(2019, 'hl')] = [
 
 
 _CHOICE_P4 = (PL(4, 'Das duas propostas'), PL(4, '(Comente a citação'))
+# 2018 prints Q1's five answers on one run ("1. a) coisas sem importância; b)
+# ambiente ..."), which the shared generator carded whole on Q1(a): each part
+# is cut to its own answer here, at the paper's "(5 x 1 ponto)".
+_Q1_2018 = PaperEach(3, '(5 x 1 ponto)', 1)
+_LEAD_2018 = PLc(3, '1. Explique por palavras suas', after='1. ')
+_JOINED = ('The scheme of this sitting reprints no question, so the two documents are joined on the '
+           'numbering they both print, which the census checks question by question.')
 READING[(2018, 'hl')] = [
+    C('I1a', [one(S(46, after='a) ', before=' b)'), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'a) futilidades', after='a) ')), stem=()),
+    C('I1b', [one(S(46, after='b) ', before=' c)'), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'b) rarefeito', after='b) ')), stem=()),
+    C('I1c', [one(J(S(46, after='c) '), S(47, before=' d)')), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'c) limpar', after='c) ')), stem=()),
+    C('I1d', [one(S(47, after='d) ', before=' e)'), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'd) apartamento', after='d) ')), stem=()),
+    C('I1e', [one(J(S(47, after='e) '), S(48)), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'e) Epitáfio', after='e) ')), stem=()),
     C('II1', [shown(SchemeSpan(65, 71), lead=S(64))], total=PaperPontos(4, '(30 pontos)'), whole=True,
       question=(PL(4, 'Faça um comentário sobre a frase'), PL(4, 'A lágrima rolou'), PL(4, 'perda, pelo'),
                 PL(4, 'que chamamos futuro')), stem=()),

@@ -17,12 +17,156 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "coisas sem importância; b) ambiente citadino desconfortável, inóspito; c) defender a honra; d) habitação pequena, exígua; e) frase que se apõe num túmulo para homenagear o morto.",
+    "verbatim": "coisas sem importância;",
     "marks": 1,
     "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
    }
   ],
-  "notes": "The paper prints the tariff as '(5 x 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "notes": "The paper prints the tariff as '(5 x 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2018-hl-i-1-b",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-rarefeito-cosmopolita",
+  "questionRef": "2018 HL Section I Q1(b)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. rarefeito ar cosmopolita (§ 3);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ambiente citadino desconfortável, inóspito;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 x 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2018-hl-i-1-c",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-limpar-nome",
+  "questionRef": "2018 HL Section I Q1(c)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. limpar o nome (§ 4);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "defender a honra;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 x 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2018-hl-i-1-d",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-apartamento-acanhado",
+  "questionRef": "2018 HL Section I Q1(d)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. apartamento acanhado (§ 4).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "habitação pequena, exígua;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 x 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2018-hl-i-1-e",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-epitafio",
+  "questionRef": "2018 HL Section I Q1(e)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Epitáfio (§ 6).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "frase que se apõe num túmulo para homenagear o morto.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 x 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
   "sourceMaterial": {
    "kind": "source-text",
    "label": "QUESTION 1",
@@ -238,7 +382,7 @@
     "contextNote": "For “Parte II”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
    }
   ],
-  "notes": "The scheme prices this ask 30 marks; the paper prints it on page 4 of the question booklet.",
+  "notes": "The paper prints the tariff as '(30 pontos)'; the paper prints this ask on page 4 of the question booklet.",
   "sourceMaterial": {
    "kind": "source-text",
    "label": "QUESTION 1",
@@ -269,18 +413,18 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "− a ideia de um país sem rumo, sem organização, sem objectivos; um país que, como uma pedra tumular, abandona e esconde os cidadãos mais desprotegidos, sem que aqueles que os deviam proteger apresentem uma solução.",
+    "verbatim": "a ideia de um país sem rumo, sem organização, sem objectivos; um país que, como uma pedra tumular, abandona e esconde os cidadãos mais desprotegidos, sem que aqueles que os deviam proteger apresentem uma solução.",
     "marks": null,
     "contextNote": "For “Aspectos que o aluno pode referir na sua resposta:”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "− a raiva, a impotência de quem assiste a este cenário é tanat que nem lágrimas há para chorar os mortos; é um sofrimento, uma dor sem lágrimas: é uma trovoada seca.",
+    "verbatim": "a raiva, a impotência de quem assiste a este cenário é tanat que nem lágrimas há para chorar os mortos; é um sofrimento, uma dor sem lágrimas: é uma trovoada seca.",
     "marks": null
    }
   ],
-  "notes": "The scheme prices this ask 40 marks; the paper prints it on page 4 of the question booklet.",
+  "notes": "The paper prints the tariff as '(40 pontos)'; the paper prints this ask on page 4 of the question booklet.",
   "stem": "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)"
  },
  {
@@ -350,7 +494,7 @@
     "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The paper prices this task “(40 pontos)”; the scheme prints no answer for it."
    }
   ],
-  "notes": "The scheme prices this ask 40 marks; the paper prints it on page 4 of the question booklet.",
+  "notes": "The paper prints the tariff as '(40 pontos)'; the paper prints this ask on page 4 of the question booklet.",
   "stem": "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)"
  },
  {

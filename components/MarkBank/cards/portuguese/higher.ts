@@ -41,7 +41,103 @@ export const CARDS: SecCard[] = [
     questionText: "Explique por palavras suas, o sentido das seguintes expressões. futilidades (§ 3);",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "coisas sem importância; b) ambiente citadino desconfortável, inóspito; c) defender a honra; d) habitação pequena, exígua; e) frase que se apõe num túmulo para homenagear o morto.", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "coisas sem importância;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
+    id: "por-2018-hl-i-1-b", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-rarefeito-cosmopolita",
+    section: "I", questionRef: "2018 HL Section I Q1(b)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. rarefeito ar cosmopolita (§ 3);",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ambiente citadino desconfortável, inóspito;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
+    id: "por-2018-hl-i-1-c", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-limpar-nome",
+    section: "I", questionRef: "2018 HL Section I Q1(c)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. limpar o nome (§ 4);",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "defender a honra;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
+    id: "por-2018-hl-i-1-d", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-apartamento-acanhado",
+    section: "I", questionRef: "2018 HL Section I Q1(d)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. apartamento acanhado (§ 4).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "habitação pequena, exígua;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
+    id: "por-2018-hl-i-1-e", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-epitafio",
+    section: "I", questionRef: "2018 HL Section I Q1(e)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. Epitáfio (§ 6).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "frase que se apõe num túmulo para homenagear o morto.", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -210,8 +306,8 @@ export const CARDS: SecCard[] = [
     questionText: "Proposta 1 Vejo um país cinzento e pesado como uma pedra tumular abatendo-se sobre nós perante a complacência, cobardia e arrogância. A raiva faz evaporar as lágrimas porque é uma trovoada seca.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "− a ideia de um país sem rumo, sem organização, sem objectivos; um país que, como uma pedra tumular, abandona e esconde os cidadãos mais desprotegidos, sem que aqueles que os deviam proteger apresentem uma solução.", marks: null, contextNote: "For “Aspectos que o aluno pode referir na sua resposta:”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
-    { id: "r-2", kind: "point", verbatim: "− a raiva, a impotência de quem assiste a este cenário é tanat que nem lágrimas há para chorar os mortos; é um sofrimento, uma dor sem lágrimas: é uma trovoada seca.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "a ideia de um país sem rumo, sem organização, sem objectivos; um país que, como uma pedra tumular, abandona e esconde os cidadãos mais desprotegidos, sem que aqueles que os deviam proteger apresentem uma solução.", marks: null, contextNote: "For “Aspectos que o aluno pode referir na sua resposta:”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "a raiva, a impotência de quem assiste a este cenário é tanat que nem lágrimas há para chorar os mortos; é um sofrimento, uma dor sem lágrimas: é uma trovoada seca.", marks: null },
     ],
   } as SecCard,
   {
