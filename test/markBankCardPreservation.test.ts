@@ -3196,6 +3196,7 @@ describe('Mark Bank card preservation', () => {
       ['2014 ordinary', 52, '42596fd6679cade7d6c3eeb3c5ca314790d4929140d4cc0e537e1cf6acf46ac3'],
       ['2013 higher', 55, '0cb69426999770514fc2f3da657f8344089c338130ec556d0f9fecbe71f79778'],
       ['2013 ordinary', 51, '339d41160ba1ae084c13bdca8937fb6029fbb660b6569f6af6eb6cc5ea8b0716'],
+      ['2011 higher', 56, '5726ceeb3a351cd26b81b5fcab2ade266b549a313af8fbae44b6c2312125fcb8'],
     ];
     const lane = new Map<string, string[]>();
     for (const card of [...MUSIC_HIGHER, ...MUSIC_ORDINARY]) {
