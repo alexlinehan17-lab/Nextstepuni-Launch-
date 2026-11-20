@@ -750,6 +750,204 @@
   }
  },
  {
+  "id": "hrv-2016-hl-ii-1",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2016,
+  "section": "II",
+  "topicId": "croatian-1-0",
+  "conceptId": "kvaliteta-ivota-nije-istozna-nica-kvantitetom",
+  "questionRef": "2016 HL Section II Q1",
+  "questionText": "„Kvaliteta života nije istoznačnica s kvantitetom – novca, stvari ili prostora. [...] Komfor nije stvar materijalnog obilja, nego zadovoljstva unutarnje sigurnosti.” Komentirajte, vlastitim riječima (minimalno 100 riječi), ovu misao.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Iako su ekonomski napredak i poboljšanje životnog standarda neupitno neke od pozitivnih posljedica potrošačkog načina života, takav način života sa sobom donosi i mnoštvo negativnih posljedica. Neke od najzabrinjavajućih su zagađenje okoliša, neodrživo iskorištavanje prirodnih resursa, narušavanje ljudskih prava u manje razvijenim dijelovima svijeta, duhovno propadanje.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" The scheme heads it “Na primjer:” The scheme reprints the task with a different quotation from the one the paper sets: “„„Komfor nije stvar materijalnog obilja, nego zadovoljstva unutarnje sigurnosti. [...] Nakon zadovoljenja osnovnih materijalnih potreba, najvažniji je unutarnji doživljaj života.””"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Ljudi danas žive u uvjerenju da je imati isto što i biti te da se uspjeh i zadovoljstvo u životu poistovjećuju s materijalnim obiljem.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Takav način života otupljuje, puni naše ormare i stanove, ali prazni naš duh, što u konačnici dovodi do dubokog unutarnjeg nezadovoljstva jer jednostavno nije moguće imati sve, a dovodi i do otuđenja čovjeka jer on na ostale ljude počinje gledati kao na suparnike u stjecanju dobara, a ne prijatelje i osobe s kojima može podijeliti toliko toga dubljega, važnijega i za duh i dušu blagotvornijega od utrke za najnovijim parom dizajnerskih tenisica ili još pametnijim pametnim telefonom.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Čovjek ne može biti smiren i zadovoljan ako neprestano mora imati više i bolje. Kako bi imao više i bolje, čovjek mora bolje i više zarađivati i biti u stalnom strahu hoće li u tome uspjeti.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Pojedinci koji su se dobrovoljno odlučili na život u minijaturnim domovima svjesno su se odrekli tog straha i brige. Oni znaju da mogu preživjeti i s vrlo malo, znaju granice svojih potreba, u doticaju su s prirodom, a sve to ima blagotvoran i nemjerljiv učinak na njihov duh i unutarnji osjećaj sigurnosti, sreće, mira i zadovoljstva.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2016-hl-iii-1",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "croatian-1-1",
+  "conceptId": "usvojite-ritam-prirode-njezina-tajna-strpljenje",
+  "questionRef": "2016 HL Section III Q1",
+  "questionText": "Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema: „Usvojite ritam prirode: njezina je tajna strpljenje”. – Ralph Waldo Emerson",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" Under Part III the scheme reprints only the instruction and the two titles, with no answer, criteria or notes: “Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema:”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "hrv-2016-hl-iii-2",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2016,
+  "section": "III",
+  "topicId": "croatian-1-1",
+  "conceptId": "svijet-biti-prili-mjesto-ako-udru",
+  "questionRef": "2016 HL Section III Q2",
+  "questionText": "Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema: „Svijet može biti prilično loše mjesto ako ne udružimo napore kako bismo ga učinili jednakijim, demokratičnijim i održivijim”. - Fintan O'Toole, The Irish Times, 22. veljače 2016.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on page 2: \"Svi odgovori moraju biti na hrvatskome jeziku.\" Under Part III the scheme reprints only the instruction and the two titles, with no answer, criteria or notes: “Napišite esej (minimalno 300 riječi) o jednoj od sljedećih tema:”"
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "hrv-2017-hl-i-2",
   "subjectId": "croatian",
   "level": "higher",
