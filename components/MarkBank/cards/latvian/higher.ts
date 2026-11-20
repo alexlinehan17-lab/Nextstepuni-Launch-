@@ -3408,6 +3408,316 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2025 Higher Level — © State Examinations Commission.",
+    id: "lv-2025-hl-i-1-a", topicId: "latvian-0-0", conceptId: "cienasts",
+    section: "I", questionRef: "2025 HL Section I Q1(a)",
+    questionText: "Skaidrojiet tekstā lietotos vārdus un frāzes! cienasts",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ēdiens", marks: 1, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2025 Higher Level — © State Examinations Commission.",
+    id: "lv-2025-hl-i-1-b", topicId: "latvian-0-0", conceptId: "dzivesbiedrs",
+    section: "I", questionRef: "2025 HL Section I Q1(b)",
+    questionText: "Skaidrojiet tekstā lietotos vārdus un frāzes! dzīvesbiedrs",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "vīrs", marks: 1, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2025 Higher Level — © State Examinations Commission.",
+    id: "lv-2025-hl-i-1-c", topicId: "latvian-0-0", conceptId: "mazotnes",
+    section: "I", questionRef: "2025 HL Section I Q1(c)",
+    questionText: "Skaidrojiet tekstā lietotos vārdus un frāzes! no mazotnes",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "no bērnības, no mazām dienām", marks: 1, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2025 Higher Level — © State Examinations Commission.",
+    id: "lv-2025-hl-i-1-d", topicId: "latvian-0-0", conceptId: "rikot",
+    section: "I", questionRef: "2025 HL Section I Q1(d)",
+    questionText: "Skaidrojiet tekstā lietotos vārdus un frāzes! rīkot",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "organizēt, sagatavot", marks: 1, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2025 Higher Level — © State Examinations Commission.",
+    id: "lv-2025-hl-i-1-e", topicId: "latvian-0-0", conceptId: "teju-gadus",
+    section: "I", questionRef: "2025 HL Section I Q1(e)",
+    questionText: "Skaidrojiet tekstā lietotos vārdus un frāzes! teju 20 gadus",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "gandrīz 20 gadus", marks: 1, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2025 Higher Level — © State Examinations Commission.",
+    id: "lv-2025-hl-i-2", topicId: "latvian-0-1", conceptId: "kadas-sajutas-par-latviju-latviesu-tautu",
+    section: "I", questionRef: "2025 HL Section I Q2",
+    questionText: "Kādas sajūtas par Latviju un latviešu tautu Laurai izraisa 18.novembris.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Laurai ir lepnums par Latviju un latviešiem kā brīviem un neatkarīgiem cilvēkiem. Viņa apbrīno cilvēkus, kas cīnījušies par Latvijas brīvību. Viņa izjūt arī pateicību. Laura uzsver latviešu tautas neatkarību un vēlmi pašiem lemt par Latvijas nākotni.", marks: 5, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2025 Higher Level — © State Examinations Commission.",
+    id: "lv-2025-hl-i-3", topicId: "latvian-0-1", conceptId: "aprakstiet-sanitas-bernu-pieredzi-augot-multikulturala",
+    section: "I", questionRef: "2025 HL Section I Q3",
+    questionText: "Aprakstiet Sanitas bērnu pieredzi, augot multikulturālā ģimenē.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Viena no pieredzēm ir saistīta ar identitāti. Kā identificēt sevi multikulturālā ģimenē. Sanitas bērni vairāk sevi izjūt kā zviedrus, lai gan neviens no vecākiem nav zviedrs. Viņu mamma ir latviete un tētis ir francūzis, bērniem pat ir doti divi vārdi, lai pastiprinātu viņu etnisko izcelsmi. Taču Sanitas bērni nedzīvo ne Latvijā, ne Francijā, bet citā valstī, kas lielā mērā nosaka arī identitāti.", marks: null, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN. The scheme prints these paragraphs under the question, with no mark on any of them: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Izaicinājums Sanitas bērniem ir arī valoda, jo viņiem jācenšas atbildēt tajā valodā, ko lieto vecāki, bet tam pa vidu vēl ir valsts valoda, kurā viņi dzīvo.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Sanitas bērni var baudīt arī dažādu kultūru ēdienus, jo, augot multikulturālā ģimenē, vecāki grib parādīt dažādas kultūras – caur ēdieniem un valodu.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2025 Higher Level — © State Examinations Commission.",
+    id: "lv-2025-hl-i-4", topicId: "latvian-0-1", conceptId: "vai-jus-piekritat-latviesu-berni-kas",
+    section: "I", questionRef: "2025 HL Section I Q4",
+    questionText: "Vai jūs piekrītat, ka latviešu bērni, kas dzīvo ārpus Latvijas, ir ieguvēji? Izskaidrojiet savu viedokli, atsaucoties uz tekstu un savu pieredzi.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Laura uzskata, ka latviešu bērni, kas dzīvo ārpus Latvijas, ir ieguvēji, jo viņiem ir divas kultūras, ko pārstāvēt un divi svētki, ko svinēt. Skolēni var tam piekrist vai nepiekrist. Viņi var izklāstīt šādas situācijas pozitīvās iezīmes, piemēram, vairāku valodu zināšanas, draugi divās valstīs u.c. un negatīvās iezīmes, piemēram, identitātes problēmas, nevēlēšanās pieņemt citu kultūru u.c. Kādam var likties, ka divas vai vairākas kultūras un valodas ir ieguvums, bet citiem tas var likties traucēklis, jo ir grūti definēt savu identitāti. Skolēni var rakstīt par savu pieredzi, dzīvojot ārpus Latvijas. Iespējams, viņi dzīvo latviešu ģimenē, piemēram, Īrijā, bet, iespējams, viņi dzīvo multikulturālā ģimenē, kur tikai viens no vecākiem ir latvietis, otrs ir kādas citas nacionalitātes pārstāvis, bet mītnes zeme varētu būt Īrija. Skolēni var rakstīt arī par draugu pieredzi, jo diasporas situācijas ir ļoti dažādas.", marks: 5, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2025 Higher Level — © State Examinations Commission.",
+    id: "lv-2025-hl-i-5", topicId: "latvian-0-1", conceptId: "kas-palidz-uzturet-latviskumu-arpus-latvijas",
+    section: "I", questionRef: "2025 HL Section I Q5",
+    questionText: "Kas palīdz uzturēt latviskumu ārpus Latvijas? Vērtējiet to saistībā ar tekstu un savu pieredzi.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ir daudzas lietas, kas var palīdzēt uzturēt latviskumu, nedzīvojot Latvijā, piemēram, latviešu valoda, latviešu svētki un to svinēšanas tradīcijas, latviešu ēdieni, piedalīšanās latviešu kopienas pasākumos, mācības latviešu skoliņā. Skolēni var rakstīt par to, kas viņiem ir svarīgi un kā viņi saprot latviskumu. Kāds varbūt to saista tikai ar valodu, un valoda palīdz sazināties ar radiniekiem Latvijā un saprast, kas notiek Latvijā. Bet kādam var likties, ka svarīgas ir tradīcijas un kultūra, piemēram, ēdieni, mūzika, un valodai nav tik lielas nozīmes. Skolēni var pieminēt arī vēlēšanas un iesaistīšanos citās aktivitātēs, kas ir svarīgas Latvijai. Piemēram, balsojot vēlēšanās, tu jūties piederīgs valstij, jo vari lemt par tās dzīvi, neskatoties uz to, ka fiziski tur nedzīvo.", marks: 5, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2025 Higher Level — © State Examinations Commission.",
+    id: "lv-2025-hl-i-6", topicId: "latvian-0-1", conceptId: "caur-kulturu-var-iepazit-valsti-cik",
+    section: "I", questionRef: "2025 HL Section I Q6",
+    questionText: "“Caur kultūru var iepazīt valsti”. Cik lielā mērā jūs tam piekrītat? Diskutējiet par to saistībā ar tekstu un savu pieredzi.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pasaules apceļotāji Laine un Artūrs savos ceļojumos ļoti bieži stāsta par Latviju un latviešu kultūru, latviešu svētku svinēšanas tradīcijām, latviešiem nozīmīgiem pasākumiem, piemēram, Dziesmu un deju svētkiem. Viņi bieži rāda ārzemniekiem dažādus video vai fotogrāfijas no Latvijas. Tas rada interesi par Latviju un vēlmi tur aizbraukt, lai gan iepriekš par Latviju nekas nav bijis dzirdēts un nav pat bijis skaidrs, kur tāda zeme ir. Tā ir ļoti laba reklāma, kas piesaista un ieinteresē ārzemniekus. Tas nozīmē, ka caur kultūru var radīt interesi par attiecīgo zemi. Skolēni var rakstīt par savu pieredzi, iespējams, viņi arī ir reklamējuši Latviju saviem draugiem vai paziņām, kas nav latvieši un nekad nav bijuši Latvijā. Skolēni var rakstīt arī par filmu vai mūzikas pieredzi, piemēram, slaveni aktieri vai mūziķi nāk no Latvijas un tas ārzemniekus var ieinteresēt apmeklēt viņu dzimteni. Sociālajos tīklos ir pieejami arī dažādi video, kas reklamē konkrēto valsti – arhitektūra, ēdieni, tradīcijas. Tas arī var radīt vēlmi aizbraukt uz konkrēto valsti un piedzīvot, redzēt to savām acīm.", marks: 5, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2025 Higher Level — © State Examinations Commission.",
+    id: "lv-2025-hl-ii", topicId: "latvian-1-0", conceptId: "izsakiet-viedokli-par-apgalvojumu-100-150",
+    section: "II", questionRef: "2025 HL Section II",
+    questionText: "Izsakiet viedokli par apgalvojumu! (100-150 vārdu) “Viņa arī novērojusi kādu diasporām raksturīgu iezīmi – ārpus Latvijas – 18. novembris tiek svinēts vēl sirsnīgāk”.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kā jau tika minēts teksta ievadā, ir viegli sajust Latvijas neatkarības svētku sajūtu, esot Latvijā, jo uz ielām var redzēt karogus, cilvēkiem ir brīvdiena. Pilsētās notiek koncerti un dažādi citi svētku pasākumi, bet, dzīvojot ārpus Latvijas, šo elementu nav. Taču latvieši, kas dzīvo ārpus Latvijas, ļoti aktīvi organizē dažādus latviešu svētkus, tai skaitā arī neatkarības dienu. Un viņi to dara nopietni un atbildīgi – gatavo latviešu ēdienus, velk latviešu tautastērpus, dzied himnu, rīko koncertus un citus pasākumus, iesaistot tajos diasporas bērnus un arī pārējo sabiedrību. Tas ir kā vienojošs elements latviešiem, kas dzīvo ārpus Latvijas un tajā pašā laikā arī saikne ar Latviju. Mūziķi vai citi mākslinieki no Latvijas, kas atbrauc svētku laikā uz citu valsti pie latviešiem, redz to visu un jūt latviešu sabiedrības vienotību, patriotismu un mīlestību pret Latviju. Tāpēc arī tekstā ir teikts, ka viņiem svētku sajūta ir lielāka, svinot ar diasporu, nekā esot uz vietas Latvijā.", marks: null, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN. The scheme prints these two paragraphs under the statement, with no mark inside them and no criteria for the part." },
+    { id: "r-2", kind: "point", verbatim: "Skolēns var rakstīt, vai viņš tam piekrīt; vai viņa ģimene arī svin un iesaistās latviešu svētku rīkošanā. Vai viņš ir saticis kādus viesus no Latvijas.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II DAĻA",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Latvian 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2025 Higher Level — © State Examinations Commission.",
+    id: "lv-2025-hl-iii-1", topicId: "latvian-1-0", conceptId: "tradicijas-sabiedribas-pamats-vai",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "Uzrakstiet eseju par vienu no tēmām! (ne mazāk kā 300 vārdu) Tradīcijas ir sabiedrības pamats.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Skolēns var rakstīt vai viņš tam piekrīt vai nē. Viņš var aprakstīt kādas tradīcijas ir mums apkārt dažādos cilvēka dzīves posmos, piemēram, vakara pasaciņas lasīšana bērnam pirms gulētiešanas, kopīga piparkūku cepšana Ziemassvētkos, tradīcijas uzsākot skolas gaitas un skolu absolvējot, tradīcijas kāzās u.c. Skolēns var uzskaitīt, kādas tradīcijas ir viņa ģimenē un kādas ir viņa valstī. Vai viņa ģimenē tiek svinēta neatkarības diena? Kādas ir atšķirības, svinot Latvijas un mītnes zemes neatkarības dienu? Var saistīt šos jautājumus ar informāciju tekstā, varbūt viņa pieredze ir līdzīga.", marks: null, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN. The scheme prints these paragraphs under the title, with no mark on any of them and no criteria for the part: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "Skolēns var diskutēt, vai bez tradīcijām sabiedrība var pastāvēt? Cik liela nozīme tradīcijām ir sabiedrības un indivīda dzīvē? Vai ir svarīgi nodot tradīcijas nākamajām paaudzēm?", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Skolēns var runāt arī par latviešu tradīcijām – vai tas stiprina latvietību viņā un piederības sajūtu Latvijai. Kā tradīcijas saistās ar identitāti, kultūru, valodu un socializēšanos?", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Skolēns var pievērsties arī tādiem jautājumiem kā: Vai ģimenes tradīcijas ir pamats laimīgai bērnībai? Vai tradīcijas saliedē sabiedrību? Vai ir tradīcijas, kas var šķelt sabiedrību?", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2025 Higher Level — © State Examinations Commission.",
+    id: "lv-2025-hl-iii-2", topicId: "latvian-1-0", conceptId: "nekad-neuzliec-vecuma-limitu-saviem-sapniem",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "Uzrakstiet eseju par vienu no tēmām! (ne mazāk kā 300 vārdu) “Nekad neuzliec vecuma limitu saviem sapņiem” (Dara Torres)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Vecums nav šķērslis, lai īstenotu savu sapni. To var darīt jebkurā vecumā. Nekad nav par vēlu sākt mācīties kaut ko jaunu. Cilvēks var sasniegt jebko un jebkurā vecumā, ja vien viņam ir mērķis, vēlme un entuziasms to paveikt. Turklāt panākumi parasti netiek sasniegti vienas dienas laikā. Tiem ir vajadzīgs laiks. Skolēns var rakstīt par savu pieredzi vai savu vecāku, vecvecāku un apkārtējo pieredzi. Vai viņiem ir bijis kāds sapnis, kurš ir īstenots, piemēram, tikai aizejot pensijā? Skolēns var rakstīt, kāpēc tā notiek?", marks: null, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN. The scheme prints these paragraphs under the title, with no mark on any of them and no criteria for the part: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "Ne vienmēr sapņus var īstenot tad, kad mēs to gribam. Tam var būt vairāki iemesli – pieredzes trūkums, finanšu trūkums u.c.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Skolēns var rakstīt par dažādu sacensību vai Olimpisko spēļu pieredzi. Tur startē sportisti dažādos vecumos. Zelta medaļu var izcīnīt arī 50 un 60 gadu vecumā un pārspēt gados jaunākus sportistus.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Skolēns var pieminēt arī talantu. Talantam nav vecuma ierobežojuma. Piemēram, cilvēkam ir burvīga balss un viņš visu mūžu ir gribējis dziedāt. Šo sapni var īstenot jebkurā vecumā – var iestāties korī, piedalīties talantu šovā u.c.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2026, level: "higher",
     paperFileid: "LC549ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2026 Higher Level — © State Examinations Commission.",
