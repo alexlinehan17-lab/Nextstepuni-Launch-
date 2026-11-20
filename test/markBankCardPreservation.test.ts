@@ -2836,8 +2836,8 @@ const technologyAdditions = {
   ordinary: [TECHNOLOGY_ORDINARY, 600, '08bec3e9d34162f043903934b63c8ba8a91a25c57ebe1f76264e3c4b79054a9b'],
 } as const;
 const italianAdditions = {
-  higher: [ITALIAN_HIGHER, 232, 'dbdb1373b37ce794472bf5226ccee614ab8f2c2c1093aa569d14f584bebff061'],
-  ordinary: [ITALIAN_ORDINARY, 204, 'a155ef64bfaea7b85e2cdc92eccd5ba3b627b28e9040ebad3d4b2417a2a6974b'],
+  higher: [ITALIAN_HIGHER, 436, 'ad9de9b34b4501d67915b443dc5485a91988b8e781d7dd03a933ee019f630f16'],
+  ordinary: [ITALIAN_ORDINARY, 269, '3e4cc8f260417745b5f178183ea24fdf9b8bfec0d24ee1a413bbadfa1ee2351a'],
 } as const;
 const dcgAdditions = {
   higher: [DCG_HIGHER, 460, 'f3f80dccc2dbf842c64db715d43b83169290d4cb7315d9eb2087ad8b29c0a4c1'],
@@ -2966,7 +2966,12 @@ describe('Mark Bank card preservation', () => {
     // Dialogue 3 Q1 carded from the scheme's own line - and writing 4); 2021
     // Higher 33 for the 37 its 35 live cards left out (A Q5 on its printed
     // total, its count and split disagreeing); 2021 Ordinary 28 for the 28
-    // its 37 live cards left out (listening 24 and writing 4).
+    // its 37 live cards left out (listening 24 and writing 4); 2020 Higher
+    // added whole, 68 cards for its 68 asks (no live cards; its LB1 Q1 and LB3
+    // Q1 trace through the split-only scheme form); 2019 Higher added whole,
+    // 68 cards for its 68 asks; 2019 Ordinary added whole, 65 cards for its
+    // 71 asks (the matching task's eight items are two cards of four); 2018
+    // Higher added whole, 68 cards for its 68 asks.
     const additions = cards.map(card => card.id).filter(isItalianAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);
@@ -3177,6 +3182,14 @@ describe('Mark Bank card preservation', () => {
       ['2021 higher', 49, 'ea13cfed03b3ea396d8733eabc4cfae72b1e5808dfa57cf98206964a83a60a48'],
       ['2021 ordinary', 58, '1c980af7d2f21f596c29c06f60cd59109beae576545254494c50999316d112ca'],
       ['2020 higher', 52, 'a2677fa649697b54889ea70b4452da79cef0574f41b5295411cbf87da250a9f1'],
+      ['2019 higher', 55, '55322e758ec8eac8c39649a6ffb68cf7a98f0176049c727b9fdca67f7e87a743'],
+      ['2019 ordinary', 52, '2ba9229ada814758708ed18ca2194860412ebfbd04596c2d6d2129c60620f41e'],
+      ['2018 higher', 50, 'eba4e6f785f08467ea6ffa3662cade25d707d3655dd9199c3e798be7e4376e39'],
+      ['2018 ordinary', 46, 'd0fd57d9c51117f8eec807dc680f679d559a714ebef18993fd18056e10d1a2f5'],
+      ['2017 higher', 57, '044683a1337881c65289d788ce076d63f4c6f30622f46eaedb87bf895aaa20d5'],
+      ['2017 ordinary', 52, '786f96da46a3ebed10203b54c31c4a968817ca9b38b5e89d32317046a03ef731'],
+      ['2016 higher', 54, '10af64b857b24fdab3c24b64b85a504920d10037c792ea56c782044fa29b504d'],
+      ['2016 ordinary', 48, '7315da8115ab273e6e8f5ae5790da66a3fcf7591ea43b46d3420a62160ebb696'],
     ];
     const lane = new Map<string, string[]>();
     for (const card of [...MUSIC_HIGHER, ...MUSIC_ORDINARY]) {

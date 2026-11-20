@@ -83,10 +83,13 @@ def music_signs(pdf):
                 chars = [(c['c'], span['font']) for span in line['spans'] for c in span['chars']]
                 text = ''.join(c for c, _ in chars)
                 for i, (c, font) in enumerate(chars):
-                    if c in SIGN and i and chars[i - 1][0] in 'ABCDEFG' and any(f in font for f in MUSIC_FONTS) \
-                            and not any(f in chars[i - 1][1] for f in MUSIC_FONTS):
+                    if c in SIGN and i and chars[i - 1][0] in 'ABCDEFG' and any(f in font for f in MUSIC_FONTS):
                         left = re.sub(r'\s+', ' ', text[max(0, i - 7):i])
                         right = re.sub(r'\s+', ' ', text[i + 1:i + 7])
+                        # a letter in the music font too is a chord symbol, unless it sits in a sentence
+                        # (2015 OL "the scale of B♭ major", both letters in OpusChords)
+                        if any(f in chars[i - 1][1] for f in MUSIC_FONTS) and not (left[:-1].strip() and right.strip()):
+                            continue
                         out.add((left, c, right))
     return out
 
@@ -369,6 +372,14 @@ def figure_keys(s, a, card, cid):
                                  f'cropped from page {sc["page"]} of the scheme.', s.attr_scheme, solution=True)
 
 
+def excerpt_name(line):
+    """The recording's name for the player: "Excerpt 2" (or "Excerpt 5 and Excerpt 6"), not the
+    whole printed heading with its lyrics; a heading that names no excerpt keeps its first clause."""
+    first = (line or '').split('\n')[0]
+    m = re.match(r'Excerpt \d+(?: and Excerpt \d+)?', first)
+    return m.group(0) if m else first.split(',')[0]
+
+
 def point_card(s, a, atlas):
     cid = s.card_id(a)
     q = int(s.question_number(a))
@@ -388,7 +399,7 @@ def point_card(s, a, atlas):
         fileid, url = recordings(s.year, s.deferred)[n]
         card['audioMaterial'] = {
             'kind': 'source-audio',
-            'label': f'Question {q} · {(a.get("excerptLine") or "").split(",")[0]}'.strip(' ·'),
+            'label': f'Question {q} · {excerpt_name(a.get("excerptLine"))}'.strip(' ·'),
             'title': f'{s.year} Music · {"Deferred " if s.deferred else ""}Listening test (Higher and Ordinary)'
                      if not s.deferred else f'{s.year} Music · Deferred listening test (Higher)',
             'playbackUrl': url, 'secFileid': fileid, 'canonicalUrl': url,
@@ -397,6 +408,9 @@ def point_card(s, a, atlas):
                                 'Use the player to move to the question and replay the excerpt.'}
     card['rows'] = build_rows(s, a)
     card['tariffModel'] = {'kind': 'fixed'}
+    if len(card['rows']) > 6:
+        # types/markBank.ts MAX_ROWS: a fixed-tariff point card shows at most six rows (markBankDeck.test.ts)
+        raise SystemExit(f'{s.ref(a)}: {len(card["rows"])} rows, over the six-row cap of a point card')
     figure_keys(s, a, card, cid)
     if any(r.get('printedAnswer') or r['type'] == 'ask' for r in a['rows']) and not a.get('schemeCrop'):
         raise SystemExit(f'{s.ref(a)}: an answer printed in notation needs the scheme crop')
@@ -544,6 +558,16 @@ def check(path, crops_to):
         # "Question 1 (25 marks)", or before 2021 a bare "(25)" beside the question number.
         for m in re.finditer(r'Question\s+(\d)\s*[\s\S]{0,40}?\((\d+)(?:\s*marks)?\)', text):
             printed.setdefault(int(m.group(1)), int(m.group(2)))
+        if not printed:
+            # Before 2021: "Q. 1 ..." opens a question and its total stands alone, "(25)", at its end
+            # (read from the text layer only: OCR readings repeat pages).
+            layer = '\n'.join(p.get_text() for p in fitz.open(s.papers['listening']))
+            heads = list(re.finditer(r'(?m)^\s*Q\.\s*(\d)\b', layer))
+            for k, h in enumerate(heads):
+                seg = layer[h.end():heads[k + 1].start() if k + 1 < len(heads) else len(layer)]
+                totals = re.findall(r'(?m)^\s*\((\d{1,3})\)\s*$', seg)
+                if totals:
+                    printed.setdefault(int(h.group(1)), int(totals[-1]))
     sums = {}
     for a in s.data['asks']:
         if a['paper'] != 'listening':

@@ -93,8 +93,8 @@
   "ordinary": 926
  },
  "italian": {
-  "higher": 404,
-  "ordinary": 382
+  "higher": 608,
+  "ordinary": 447
  },
  "russian": {
   "higher": 704,
@@ -201,7 +201,7 @@
   "ordinary": 644
  },
  "music": {
-  "higher": 339,
-  "ordinary": 293
+  "higher": 555,
+  "ordinary": 491
  }
 }

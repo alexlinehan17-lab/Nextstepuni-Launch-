@@ -1,0 +1,842 @@
+{
+ "readingFile": "2019-hl.json",
+ "readBy": "second reader (Opus helper), 19 Nov 2026",
+ "method": "Every page carrying an in-scope string was rendered whole at 110 dpi with music_pages.py render and read; every in-scope line was then re-read in a PyMuPDF clip at 300-400 dpi, and characters in doubt at 500-900 dpi: apostrophes (all curly ’), the dashes in 'bars 1–8', 'bars 1–4' and '16–bar' (HL Q1, en dash) against '16-bar' (HL Q3, hyphen), 'God-awful', 'Fair-Haired' and 'eight-bar' (hyphens), the cadence dashes in OL Q4 (measured at 900 dpi: a 114 px bar, about 0.85 em, an em dash), the superscripts in AA¹BB¹, the flat in 'B♭ major', and full stops after 'Excerpt N'. The booklets' text layers are glyph-shifted and were not used as a source (one plain line of the OL listening layer, 'Excerpt 1' on page 8, was looked at afterwards only to confirm the missing full stop). I typed my own transcription of every in-scope string from the renders without copying the reading file, then diffed it against the file by machine. Conventions applied: a printed bullet in a context string is '\\n• '; composing bullet lines are joined by ' • '; a heading or line printed without a bullet is joined by a space; a tick box is '□ '. Q5 B(i)-(iv) (HL) carry no questionContext or excerptLine (null); their printed lead-in is checked as grid.stem. Where excerptLine is null (Q2 and Q3 in both files) the page prints no excerpt heading, so the null was checked and matches. The elective booklet (2019-hl-007) is out of scope and was not read. Every verdict is against the reading file as it stood when this record was written (2019-hl.json modified 20:43:17, 2019-ol.json modified 20:53:42 on 19 Nov 2026); 2019-ol.json changed while the sweep was running (Q2(a) and Q4 bullets removed), and those two entries were re-checked against the new strings.",
+ "booklets": {
+  "listening": "examiner-reports/music/papers/2019-hl-008-paper.pdf",
+  "composing": "examiner-reports/music/papers/2019-hl-006-paper.pdf"
+ },
+ "pagesRendered": {
+  "listening": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   12,
+   13
+  ],
+  "composing": [
+   3,
+   5,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13
+  ]
+ },
+ "asks": [
+  {
+   "address": "Q1(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(a)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below."
+  },
+  {
+   "address": "Q1(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(b)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times. An outline score of bars 1–8 of the music in this excerpt is printed below."
+  },
+  {
+   "address": "Q1(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(c)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times."
+  },
+  {
+   "address": "Q1(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times. An outline score of the music in this excerpt is printed below."
+  },
+  {
+   "address": "Q1(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(e)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played once more."
+  },
+  {
+   "address": "Q1(f)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(f)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played three times."
+  },
+  {
+   "address": "Q1(g)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(g)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played three times."
+  },
+  {
+   "address": "Q1(h)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(h)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played three times."
+  },
+  {
+   "address": "Q1(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Five excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 5, played three times."
+  },
+  {
+   "address": "Q2(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(a)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": null
+  },
+  {
+   "address": "Q2(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(b)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": null
+  },
+  {
+   "address": "Q2(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(c)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": null
+  },
+  {
+   "address": "Q2(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": null
+  },
+  {
+   "address": "Q3(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(a)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": null
+  },
+  {
+   "address": "Q3(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(b)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": null
+  },
+  {
+   "address": "Q3(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(c)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": null
+  },
+  {
+   "address": "Q3(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": null
+  },
+  {
+   "address": "Q3(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Cantata Jesu, der du meine Seele by J.S. Bach will be played three times.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(e)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": null
+  },
+  {
+   "address": "Q3(e)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This is a recitative. Describe one similarity and one difference between this recitative and the other recitative in the Cantata Jesu, der du meine Seele by J.S. Bach.\nSimilarity:\nDifference (you must refer to both recitatives in your answer):"
+  },
+  {
+   "address": "Q4(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(a)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity."
+  },
+  {
+   "address": "Q4(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(b)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity."
+  },
+  {
+   "address": "Q4(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(c)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity."
+  },
+  {
+   "address": "Q4(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times. The lyrics are printed below. Line 1 I see a little silhouette of a man, Line 2 Scaramouche, Scaramouche, will you do the Fandango? Line 3 Thunderbolt and light’ning, very, very fright’ning me. Line 4 Galileo, Galileo, Galileo, Galileo, Galileo Figaro. Magnifico. Line 5 I’m just a poor boy, nobody loves me. Line 6 He’s just a poor boy from a poor family, Line 7 Spare him his life from this monstrosity."
+  },
+  {
+   "address": "Q4(e)(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(e)(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times. The lyrics are printed below. Line 8 Easy come, easy go, will you let me go? Line 9 Bismillah. No we will not let you go. Let him go. Line 10 Bismillah. We will not let you go. Let him go. Line 11 Bismillah. We will not let you go. Let me go. Line 12 Will not let you go. Let me go. Will not let you go. Let me go. Oh. Line 13 No no no no no no no. Line 14 Oh mama mia, mama mia. Mama mia let me go. Line 15 Beelzebub has a devil put aside for me, for me, for me."
+  },
+  {
+   "address": "Q4(e)(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(e)(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times. The lyrics are printed below. Line 8 Easy come, easy go, will you let me go? Line 9 Bismillah. No we will not let you go. Let him go. Line 10 Bismillah. We will not let you go. Let him go. Line 11 Bismillah. We will not let you go. Let me go. Line 12 Will not let you go. Let me go. Will not let you go. Let me go. Oh. Line 13 No no no no no no no. Line 14 Oh mama mia, mama mia. Mama mia let me go. Line 15 Beelzebub has a devil put aside for me, for me, for me."
+  },
+  {
+   "address": "Q4(f)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Two excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(f)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times. The lyrics are printed below. Line 8 Easy come, easy go, will you let me go? Line 9 Bismillah. No we will not let you go. Let him go. Line 10 Bismillah. We will not let you go. Let him go. Line 11 Bismillah. We will not let you go. Let me go. Line 12 Will not let you go. Let me go. Will not let you go. Let me go. Oh. Line 13 No no no no no no no. Line 14 Oh mama mia, mama mia. Mama mia let me go. Line 15 Beelzebub has a devil put aside for me, for me, for me."
+  },
+  {
+   "address": "Q5 A(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(a)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. One verse from the ballad The Bonny Irish Maid."
+  },
+  {
+   "address": "Q5 A(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(b)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. One verse from the ballad The Bonny Irish Maid."
+  },
+  {
+   "address": "Q5 A(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(c)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. One verse from the ballad The Bonny Irish Maid."
+  },
+  {
+   "address": "Q5 A(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2."
+  },
+  {
+   "address": "Q5 A(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(e)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2."
+  },
+  {
+   "address": "Q5 A(f)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(f)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2."
+  },
+  {
+   "address": "Q5 A(g)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(g)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2."
+  },
+  {
+   "address": "Q5 A(h)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(h)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3."
+  },
+  {
+   "address": "Q5 A(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3."
+  },
+  {
+   "address": "Q5 A(j)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A(j)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3."
+  },
+  {
+   "address": "Q5 B(i)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:"
+  },
+  {
+   "address": "Q5 B(ii)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:"
+  },
+  {
+   "address": "Q5 B(iii)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:"
+  },
+  {
+   "address": "Q5 B(iv)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:"
+  },
+  {
+   "address": "Q6(a)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(a)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times. An outline score of bars 1–4 of this excerpt is printed below."
+  },
+  {
+   "address": "Q6(b)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(b)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played once more."
+  },
+  {
+   "address": "Q6(c)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(c)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played once more."
+  },
+  {
+   "address": "Q6(d)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(d)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times."
+  },
+  {
+   "address": "Q6(e)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(e)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times. The lyrics are printed below. Line 1 It’s a God-awful small affair to the girl with the mousy hair Line 2 But her mummy is yelling no, and her daddy has told her to go. Line 3 But her friend is nowhere to be seen, now she walks through her sunken dream Line 4 To the seat with the clearest view and she’s hooked to the silver screen."
+  },
+  {
+   "address": "Q6(f)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(f)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times. The lyrics are printed below. Line 1 It’s a God-awful small affair to the girl with the mousy hair Line 2 But her mummy is yelling no, and her daddy has told her to go. Line 3 But her friend is nowhere to be seen, now she walks through her sunken dream Line 4 To the seat with the clearest view and she’s hooked to the silver screen."
+  },
+  {
+   "address": "Q6(g)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(g)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times. The lyrics are printed below. Line 1 It’s a God-awful small affair to the girl with the mousy hair Line 2 But her mummy is yelling no, and her daddy has told her to go. Line 3 But her friend is nowhere to be seen, now she walks through her sunken dream Line 4 To the seat with the clearest view and she’s hooked to the silver screen."
+  },
+  {
+   "address": "Q6(h)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(h)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played twice. The lyrics are printed below. Line 1 Sailors fighting in the dance hall. Line 2 Oh man, look at those cavemen go, it’s the freakiest show. Line 3 Take a look at the lawman beating up the wrong guy Line 4 Oh man, wonder if he’ll ever know he’s in the best selling show. Line 5 Is there life on Mars?"
+  },
+  {
+   "address": "Q6(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Aural Skills. This question is based on four excerpts of music.\n• Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played twice more."
+  },
+  {
+   "address": "Section A Q1",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "CONTINUATION OF A GIVEN OPENING • Continue the opening below to make a 16–bar melody. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ horn □ violin □ clarinet □ flute"
+  },
+  {
+   "address": "Section A Q2",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "SETTING MUSIC TO A GIVEN TEXT Here is an extract from the poem The Fair-Haired Girl (Anonymous 18th century). The sun has set, the stars are still, The red moon hides behind the hill; The tide has left the brown beach bare, The birds have fled the upper air. The opening line has been set to music below. • Set the remaining words to make a melody of 16 bars. (You may exceed this number of bars and include a modulation, if you wish.) • Add appropriate performing directions (phrasing and dynamics) to the melody."
+  },
+  {
+   "address": "Section A Q3",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM The opening phrase of a gigue is given below. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ violin □ oboe □ clarinet □ trumpet"
+  },
+  {
+   "address": "Section B Q4",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS PREPARATORY WORK • Plot the chords available in the key of B minor, either in the chord bank grid or on the stave below. • Study the piece of music below. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style."
+  },
+  {
+   "address": "Section B Q5",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "COMPOSING BASS NOTES AND CHORD INDICATIONS TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of C minor, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both."
+  },
+  {
+   "address": "Section B Q6",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "ADDING A COUNTERMELODY OR DESCANT AND CHORDAL SUPPORT TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of B♭ major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable chord indications in the boxes provided. • Continue the descant part in the given style to complete the piece. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both."
+  },
+  {
+   "address": "readFromPage composing page 12 box [0.05, 0.04, 0.95, 0.22]",
+   "paper": "composing",
+   "field": "readFromPage",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Plot the chords available in the key of B♭ major, either in the chord bank grid or on the stave below.",
+   "note": "Page 12 prints '• Plot the chords available in the key of B♭ major, either in the chord bank grid or on the stave below.' The flat is a flat sign (zoomed at 600 dpi), not the letter b."
+  }
+ ],
+ "summary": {
+  "entriesChecked": 100,
+  "matchesPrint": 100,
+  "differs": 0
+ }
+}

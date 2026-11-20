@@ -453,19 +453,19 @@
     "refsHash": "55377fc06aab0b52"
   },
   "italian": {
-    "cards": 786,
-    "contentHash": "51b374e6b4c17a47",
-    "coveragePct": 37.3,
-    "covered": 846,
+    "cards": 1055,
+    "contentHash": "7354cfcb8bd26916",
+    "coveragePct": 49.4,
+    "covered": 1121,
     "excluded": 0,
     "leaves": 2270,
-    "open": 1424,
+    "open": 1149,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "4f7a342aa9e434bd"
     },
-    "refsHash": "b0fec6b3ce76d4be"
+    "refsHash": "ae6bf80533cdda5e"
   },
   "japanese": {
     "cards": 1941,
@@ -603,19 +603,19 @@
     "refsHash": "98497719950dbd78"
   },
   "music": {
-    "cards": 632,
-    "contentHash": "fd8a2e7257a5dd1a",
+    "cards": 1046,
+    "contentHash": "8bea73c5994963ba",
     "coveragePct": 100.0,
-    "covered": 662,
+    "covered": 1096,
     "excluded": 0,
-    "leaves": 662,
+    "leaves": 1096,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 90,
       "hash": "19ae47d97a6c3bd4"
     },
-    "refsHash": "5bf5c630be2b416c"
+    "refsHash": "7c417bd48f8a2bc8"
   },
   "physical-education": {
     "cards": 772,
@@ -724,7 +724,7 @@
   },
   "russian": {
     "cards": 1485,
-    "contentHash": "7d2d3e47eab56c67",
+    "contentHash": "4496cd53e33943e0",
     "coveragePct": 100.0,
     "covered": 1489,
     "excluded": 0,

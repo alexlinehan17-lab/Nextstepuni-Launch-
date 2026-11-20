@@ -30368,13 +30368,22 @@
         13,
         14
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          13,
+          14
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2024-hl.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
       "system": "language-writing",
       "taskRequirements": [],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
@@ -30682,7 +30691,17 @@
         16,
         17
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          15,
+          16,
+          17
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2024-hl.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -30690,7 +30709,7 @@
       "taskRequirements": [
         "Question 3. Guided writing (40 marks) Write a piece of continuous prose in Russian (140 words) in answer to ONE of the following. In your answer, make sure to include ALL the points listed. 1. LETTER a) Write a letter on behalf of Lyonka to the fishermen (Comprehension Text, Question1) to let them know about how the cat has settled in since they left. In your letter, you should refer to the following: • opening (A) • where the cat lives now (B) • what the cat looks like now (C) • how the cat’s character has changed (D) • sign off (E) OR b) Write a letter of enquiry about work as a team leader in a summer camp. In your letter, you should refer to the following: • opening (A) • basic information about yourself, including your education (B) and hobbies (C); • why you are interested in this position (D) • dates you are available (E) • your work experience to date (F) • sign off (G) 2. NARRATIVE a) Write an account of your most memorable school trip. OR b) Masha (Comprehension Text, Question 2) has recently started her part-time job. Write Masha’s blog entry describing her first day in work. 3. DISCUSSION a) Discuss the importance of keeping traditions. OR b) Discuss the advantages (A) and disadvantages (B) of having a pet animal."
       ],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
@@ -36486,7 +36505,15 @@
       "schemePages": [
         5
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          5
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2024-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -36542,7 +36569,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {
@@ -36996,7 +37023,15 @@
       "schemePages": [
         12
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          12
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2024-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -37074,7 +37109,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {
@@ -37107,7 +37142,16 @@
         13,
         14
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          13,
+          14
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2024-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -37366,7 +37410,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {
@@ -42882,7 +42926,15 @@
       "schemePages": [
         6
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          6
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2023-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -42938,7 +42990,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {
@@ -43276,7 +43328,15 @@
       "schemePages": [
         12
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          12
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2023-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -43354,7 +43414,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {
@@ -43387,7 +43447,16 @@
         13,
         14
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          13,
+          14
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2023-ol.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -43646,7 +43715,7 @@
           ]
         }
       ],
-      "markingGuideNote": ""
+      "markingGuideNote": "The scheme prints no answer for this part."
     }
   },
   {
@@ -114943,13 +115012,22 @@
         12,
         13
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          12,
+          13
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2023-hl.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
       "system": "language-writing",
       "taskRequirements": [],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
@@ -115257,7 +115335,17 @@
         15,
         16
       ],
-      "component": "000"
+      "component": "000",
+      "reviewedAt": "2026-11-19",
+      "noPrintedAnswer": {
+        "fixedLine": "The scheme prints no answer for this part.",
+        "schemePages": [
+          14,
+          15,
+          16
+        ],
+        "evidence": "scripts/markbank/authoring/reviews/russian-stale-exclusions-sec-20261119/2023-hl.json"
+      }
     },
     "kind": "rubric",
     "rubric": {
@@ -115265,7 +115353,7 @@
       "taskRequirements": [
         "Q.3. Guided writing 40 marks Write a piece of continuous prose in Russian (140 words) in answer to ONE of the following. In your answer make sure to include ALL the points listed. 1. LETTER It has been three years since your school graduation. You want to organise a get-together to mark the occasion. Write a letter to your classmates. In your letter include the following: Opening (A) • Who will be there (B) • What you will be doing (C) • Where the event will take place (D) • Briefly describe the menu for the evening (E) • What type of music you will have (F) Sign Off (G) OR Write a letter to your friend’s parents trying to convince them to let their son/daughter spend two weeks with you in Ireland. In your letter make reference to: Opening (A) • suitable dates for travel (B) • ways to get to Ireland (C) • things to bring (D) • what you will be doing (E) • where you will be staying (F) Sign Off (G) 2. NARRATIVE (a) Write about the best memory from your winter holidays. OR (b) Write a review of a concert/festival that you recently attended. 3. DISCUSSION (a) Discuss the difficulty of a career choice for young people today. OR (b) Discuss the challenges that gifted children face in life."
       ],
-      "markingGuideNote": "",
+      "markingGuideNote": "The scheme prints no answer for this part.",
       "criteria": [
         {
           "id": "content",
