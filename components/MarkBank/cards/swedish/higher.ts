@@ -1159,6 +1159,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2014 Higher Level — © State Examinations Commission.",
+    id: "swe-2014-hl-ii-1", topicId: "swedish-1-0", conceptId: "trots-alla-vetenskapliga-teorier-tror-manniskor",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "Trots alla vetenskapliga teorier tror människor fortfarande att drömmar förmedlar dolda budskap och sanningar. Varför tror du att det är så? Skriv en uppsats på minst 100 ord där du diskuterar denna fråga med stöd från egna erfarenheter och kanske även egna drömmar.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Drömmar är högst personliga och där kan de mest bisarra och privata händelser spelas upp. Det ligger nära till hands att tro att vi där konfronteras med vårt innersta väsen. Eftersom religionen och litteraturen bär prov på en uppsjö av sanndrömmar och meddelanden från andra världar är de inte så lätta att avfärda eftersom de utgör själva grunden till vår kultur och identitet. Arbiturenten måste utgå från minst ett exempel från sitt eget liv där drömmar visat sig vara antingen sanna eller missvisande. Arbiturenten ska också diskutera vår syn på vetenskapen som allenarådande förklaringsmodell.", marks: null, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" The scheme heads it: “Förslag till lösningar:”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "DEL II",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2014 Higher Level — © State Examinations Commission.",
+    id: "swe-2014-hl-iii-1", topicId: "swedish-1-1", conceptId: "hoppet-vakendrom-aristoteles-eller",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "Skriv en uppsats på minst 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. ”Hoppet är en vakendröm.” Aristoteles",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under “Del III” the scheme reprints only the instruction and the two titles with their attributions; it prints no answer, no content and no criteria for this part (this sitting's scheme prints no criteria at all).", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2014 Higher Level — © State Examinations Commission.",
+    id: "swe-2014-hl-iii-2", topicId: "swedish-1-1", conceptId: "fastan-reser-jorden-runt-att-finna",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "Skriv en uppsats på minst 300 ord där du redogör för dina tankar om ett av de två ämnena nedan. ”Fastän vi reser jorden runt för att finna skönhet, måste vi bära den med oss, annars hittar vi den ej.” Ralph Waldo Emerson",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on page 2: \"Alla svar måste vara skrivna på svenska.\" Under “Del III” the scheme reprints only the instruction and the two titles with their attributions; it prints no answer, no content and no criteria for this part (this sitting's scheme prints no criteria at all).", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2015, level: "higher",
     paperFileid: "LC039ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2015 Higher Level — © State Examinations Commission.",

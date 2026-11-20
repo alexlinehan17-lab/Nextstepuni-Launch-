@@ -783,11 +783,11 @@
     "refsHash": "4b1c69d1a48c40d0"
   },
   "swedish": {
-    "cards": 145,
-    "contentHash": "8d58deeffadceeb4",
+    "cards": 148,
+    "contentHash": "e543dd2d4cba6e7c",
     "coveragePct": 98.4,
-    "covered": 145,
-    "excluded": 43,
+    "covered": 148,
+    "excluded": 40,
     "leaves": 191,
     "open": 3,
     "orphans": 0,
@@ -795,7 +795,7 @@
       "count": 16,
       "hash": "3f4a29c9d6671847"
     },
-    "refsHash": "2ee4658589b7eda6"
+    "refsHash": "53917735c9d7f8cd"
   },
   "technology": {
     "cards": 2340,
