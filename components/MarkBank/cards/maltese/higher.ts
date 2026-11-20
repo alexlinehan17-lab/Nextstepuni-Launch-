@@ -806,7 +806,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
     id: "mlt-2022-hl-i-5", topicId: "maltese-0-1", conceptId: "dan-iktar-empju-kif-meta-died",
     section: "I", questionRef: "2022 HL Section I Q5",
-    questionText: "Dan hu l‐iktar eżempju ċar ta’ kif meta tiżdied id‐diversità f’settur, igawdi kulħadd, mhux in‐ nisa biss. Spjega kif it‐tibdil li jsir fuq il‐postijiet tax‐xogħol biex jgħin lin‐nisa jista’ wkoll ikun ta’ għajnuna għall‐ħaddiema kollha.",
+    questionText: "Dan hu l‐iktar eżempju ċar ta’ kif meta tiżdied id‐diversità f’settur, igawdi kulħadd, mhux in‐nisa biss. Spjega kif it‐tibdil li jsir fuq il‐postijiet tax‐xogħol biex jgħin lin‐nisa jista’ wkoll ikun ta’ għajnuna għall‐ħaddiema kollha.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\" The marking scheme the SEC published for 2022 answers a different text in Part I (its Question 1 explains tajt titwila, battala, burdati, l‐għan, il‐qofol), so it gives no answer for this question.", permittedMarks: [0,1,2,3,4,5], unprinted: true },
@@ -831,7 +831,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
     id: "mlt-2022-hl-i-6", topicId: "maltese-0-1", conceptId: "aliex-jissemmew-nisa-amlu-ess-fil",
     section: "I", questionRef: "2022 HL Section I Q6",
-    questionText: "Għaliex jissemmew nisa li għamlu suċċess fil‐qasam tat‐trasport? Ikkumenta dwar il‐ konlużjoni tal‐awtriċi. X’inhu l‐għan ewlieni tal‐awtriċi u kif turi dan fl‐aħħar żewġ paragrafi tas‐silta?",
+    questionText: "Għaliex jissemmew nisa li għamlu suċċess fil‐qasam tat‐trasport? Ikkumenta dwar il‐konlużjoni tal‐awtriċi. X’inhu l‐għan ewlieni tal‐awtriċi u kif turi dan fl‐aħħar żewġ paragrafi tas‐silta?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"It‐tweġibiet kollha għandhom jinkitbu bil‐Malti.\" The marking scheme the SEC published for 2022 answers a different text in Part I (its Question 1 explains tajt titwila, battala, burdati, l‐għan, il‐qofol), so it gives no answer for this question.", permittedMarks: [0,1,2,3,4,5], unprinted: true },
@@ -1358,7 +1358,7 @@ export const CARDS: SecCard[] = [
     questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: il-ħidma",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\" The scheme sets at its d) an expression the paper does not print, “jibqa’ mistgħaġeb”, answers the paper’s d) at its e), and prints no answer for this one.", permittedMarks: [0,1], unprinted: true },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\" The scheme sets at its d) an expression the paper does not set, “jibqa’ mistgħaġeb”, answers the paper’s d) at its e), and prints no answer for this one.", permittedMarks: [0,1], unprinted: true },
     ],
     sourceMaterial: {
           "kind": "source-text",

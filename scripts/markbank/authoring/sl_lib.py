@@ -277,6 +277,10 @@ def clean_question(text):
     its own tariff in the question)."""
     t = TARIFF_WORDED.sub(' ', text)
     t = TARIFF_EDGE.sub(' ', t)
+    # A word the SEC broke at a line end after its hyphen (U+2010, the Maltese
+    # article: "in‐" / "nisa") comes back from the line reader with a space
+    # inside it; the printed word has none (second reader, 20 Nov).
+    t = re.sub(r'(?<=\w)\u2010 (?=\w)', '\u2010', t)
     return re.sub(r'\s+', ' ', t).strip()
 
 

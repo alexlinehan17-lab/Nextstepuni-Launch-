@@ -494,7 +494,7 @@ SPECS[2024] = [
       note='The scheme letters this expression e) (p3): its d) is an expression the paper does not set.',
       rownote=lambda d: (f'The scheme answers this expression at its e); its d) is {_extra_d_2024(d)}, which the '
                          f'paper does not set.')),
-    R('I1e', [unprinted(lambda d: (f'The scheme sets at its d) an expression the paper does not print, '
+    R('I1e', [unprinted(lambda d: (f'The scheme sets at its d) an expression the paper does not set, '
                                    f'{_extra_d_2024(d)}, answers the paper’s d) at its e), and prints no answer '
                                    f'for this one.'))]),
     R('I3', [one(LH(59, 61, before=' (5 marki)'), PP())]),

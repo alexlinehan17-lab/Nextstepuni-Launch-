@@ -1488,7 +1488,7 @@
   "topicId": "maltese-0-1",
   "conceptId": "dan-iktar-empju-kif-meta-died",
   "questionRef": "2022 HL Section I Q5",
-  "questionText": "Dan hu l‐iktar eżempju ċar ta’ kif meta tiżdied id‐diversità f’settur, igawdi kulħadd, mhux in‐ nisa biss. Spjega kif it‐tibdil li jsir fuq il‐postijiet tax‐xogħol biex jgħin lin‐nisa jista’ wkoll ikun ta’ għajnuna għall‐ħaddiema kollha.",
+  "questionText": "Dan hu l‐iktar eżempju ċar ta’ kif meta tiżdied id‐diversità f’settur, igawdi kulħadd, mhux in‐nisa biss. Spjega kif it‐tibdil li jsir fuq il‐postijiet tax‐xogħol biex jgħin lin‐nisa jista’ wkoll ikun ta’ għajnuna għall‐ħaddiema kollha.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -1534,7 +1534,7 @@
   "topicId": "maltese-0-1",
   "conceptId": "aliex-jissemmew-nisa-amlu-ess-fil",
   "questionRef": "2022 HL Section I Q6",
-  "questionText": "Għaliex jissemmew nisa li għamlu suċċess fil‐qasam tat‐trasport? Ikkumenta dwar il‐ konlużjoni tal‐awtriċi. X’inhu l‐għan ewlieni tal‐awtriċi u kif turi dan fl‐aħħar żewġ paragrafi tas‐silta?",
+  "questionText": "Għaliex jissemmew nisa li għamlu suċċess fil‐qasam tat‐trasport? Ikkumenta dwar il‐konlużjoni tal‐awtriċi. X’inhu l‐għan ewlieni tal‐awtriċi u kif turi dan fl‐aħħar żewġ paragrafi tas‐silta?",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -2555,7 +2555,7 @@
      1
     ],
     "unprinted": true,
-    "contextNote": "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\" The scheme sets at its d) an expression the paper does not print, “jibqa’ mistgħaġeb”, answers the paper’s d) at its e), and prints no answer for this one."
+    "contextNote": "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\" The scheme sets at its d) an expression the paper does not set, “jibqa’ mistgħaġeb”, answers the paper’s d) at its e), and prints no answer for this one."
    }
   ],
   "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
