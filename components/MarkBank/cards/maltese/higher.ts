@@ -1052,6 +1052,131 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2023 Higher Level — © State Examinations Commission.",
+    id: "mlt-2023-hl-i-1-d", topicId: "maltese-0-0", conceptId: "impjieg",
+    section: "I", questionRef: "2023 HL Section I Q1(d)",
+    questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: impjieg",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\" At d) the scheme answers an expression the paper does not set, “qofol: iċ‐ċentru/ l‐important/dak li jorbot u jħoll”, and prints no answer for this one.", permittedMarks: [0,1], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2023 Higher Level — © State Examinations Commission.",
+    id: "mlt-2023-hl-i-5", topicId: "maltese-0-1", conceptId: "psikologu-gottfried-catania-semma-sens-frustrazzjoni",
+    section: "I", questionRef: "2023 HL Section I Q5",
+    questionText: "“...il-psikologu Dr Gottfried Catania semma’ s-sens ta’ frustrazzjoni, l-ansjetà u r-rabja li qegħdin jesperjenzaw eluf ta’ nies kuljum waqt il-ħinijiet tas-sewqan.” Iddeskrivi fi kliemek il-problemi msemmija mill-psikologu. Taqbel mal-opinjoni tal-psikologu? Agħti raġunijiet għalfejn taqbel jew ma taqbilx.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Il‐psikologu jitkellem dwar l‐istress u l‐ansjeta’ mentali; dan jiġri minħabba ħin twil li fih is‐sewwieqa jkunu maqbudin fil‐karozzi fit‐traffiku; l‐istorbju kullimkien, anke minn ġewwa d‐djar ikompli joħloq iktar frustrazzjoni.", marks: null, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\" The scheme reprints the second half of the question as: “X’tahseb dwar dan?”." },
+    { id: "r-2", kind: "point", verbatim: "l‐opinjoni tal‐istudent", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2023 Higher Level — © State Examinations Commission.",
+    id: "mlt-2023-hl-i-6", topicId: "maltese-0-1", conceptId: "alfejn-awtri-tag-ssaqsi-mistoqsijiet-alfejn",
+    section: "I", questionRef: "2023 HL Section I Q6",
+    questionText: "Għalfejn l-awtriċi tagħżel li ssaqsi żewġ mistoqsijiet, “Għalfejn għadna mjassra mill-karozzi? Tmiem sena iebsa oħra wasal ukoll. Għalfejn ir-raqda?”",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "L‐awtriċi tuża l‐mistoqsijiet biex twassal il‐messaġġ b’mod iktar qawwi.", marks: null, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\" The scheme reprints the question as: “Għalfejn l‐awtriċi tagħżel li ttemm l‐artiklu b’żewġ mistoqsijiet?”." },
+    { id: "r-2", kind: "point", verbatim: "Dan huwa mod li bih tesprimi b’mod iktar effettiv ir‐rabja tagħha.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Il‐qarrej ikollu jaħseb dwar il‐problema u forsi jipprova jasal biex jieħu azzjoni.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2023 Higher Level — © State Examinations Commission.",
+    id: "mlt-2023-hl-ii-1", topicId: "maltese-1-0", conceptId: "iddiskuti-dan-madwar-100-150-kelma",
+    section: "II", questionRef: "2023 HL Section II Q1",
+    questionText: "Iddiskuti dan li ġej f’madwar 100 - 150 kelma. Fl-opinjoni tiegħek, x’inhuma l-fatturi ewlenin li aħna l-bnedmin għandna bżonn biex inkunu f’saħħitna?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Firxa wiesgħa ta’ fatturi jikkontribwixxu; dawn il‐fatturi flimkien ma’ eżempji mill‐ħajja ta’ kuljum huma kollha validi.", marks: null, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "TAQSIMA II",
+          "title": "Reading text — answer in Maltese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Maltese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2023 Higher Level — © State Examinations Commission.",
+    id: "mlt-2023-hl-iii-1", topicId: "maltese-1-0", conceptId: "kemm-huma-importanti-annimali-fil-ajja",
+    section: "III", questionRef: "2023 HL Section III Q1",
+    questionText: "Agħżel mistoqsija waħda minn din it-taqsima u ikteb madwar 300 kelma. Kemm huma importanti l-annimali fil-ħajja tagħna? X’taħseb dwar dan?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\" The scheme reprints the instruction and the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC557ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2023 Higher Level — © State Examinations Commission.",
+    id: "mlt-2023-hl-iii-2", topicId: "maltese-1-0", conceptId: "mistoqsija-hija-erf-seb-dwar-dan",
+    section: "III", questionRef: "2023 HL Section III Q2",
+    questionText: "Agħżel mistoqsija waħda minn din it-taqsima u ikteb madwar 300 kelma. “Il-mistoqsija hija oħt il-għerf.” X’taħseb dwar dan il-proverbju fil-ħajja tal-istudenti?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on page 2: \"Wieġeb bil-Malti, it-taqsimiet kollha: l-Ewwel Taqsima, t-Tieni Taqsima u t-Tielet Taqsima.\" The scheme reprints the instruction and the two titles and prints nothing under them.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC557ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2024 Higher Level — © State Examinations Commission.",
