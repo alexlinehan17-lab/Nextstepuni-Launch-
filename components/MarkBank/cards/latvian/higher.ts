@@ -1977,6 +1977,190 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2019 Higher Level — © State Examinations Commission.",
+    id: "lv-2019-hl-i-2", topicId: "latvian-0-1", conceptId: "kapec-abu-meri-parcelas-libanas-latviju",
+    section: "I", questionRef: "2019 HL Section I Q2",
+    questionText: "Kāpēc Abu Meri pārcēlās no Libānas uz Latviju?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Atšķirībā no drošās Latvijas, kurā dzīvo mierīga tauta, Libānā bija karš un politiskā krīze. Abu Meri dzīve bija „māja, skola un atpakaļ, jo ārpus mājas nebija drošības”.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Latvijā Abu Meri studēja medicīnu, un arī tagad viņš strādā savā profesijā.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Dzīvojot un studējot Latvijā, Abu Meri sajutās piederīgs Latvijai.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Abu Meri ģimene ir Latvijā.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2019 Higher Level — © State Examinations Commission.",
+    id: "lv-2019-hl-i-3", topicId: "latvian-0-1", conceptId: "par-kadiem-nopelniem-abu-meri-tika",
+    section: "I", questionRef: "2019 HL Section I Q3",
+    questionText: "Par kādiem nopelniem Abu Meri tika piešķirta Latvijas pilsonība?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pilsonība tika piešķirta par Abu Meri 15 gadu ilgo profesionālo un sabiedrisko darbu Latvijā.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Viņš ir nodibinājis un vada Libānas biedrību un Arābu kultūras centru.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Ir izvirzīts Libānas goda konsula amatam.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2019 Higher Level — © State Examinations Commission.",
+    id: "lv-2019-hl-i-4", topicId: "latvian-0-1", conceptId: "kapec-abu-meri-izveidoja-latvijas-libanas",
+    section: "I", questionRef: "2019 HL Section I Q4",
+    questionText: "Kāpēc Abu Meri izveidoja Latvijas-Libānas kultūras biedrību un Arābu kultūras centru?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lai iepazīstinātu ar Libānu, tās kultūru un tradīcijām.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Abu Meri apgalvo, ka „Cilvēki, kas daudz ceļo un bijuši arābu pasaulē, ir atvērti. Citiem, kas neceļo, ir zināma fobija, stereotipi, ko viņi sadzirdējuši medijos”. Abu Meri vēlas lauzt šos stereotipus un parādīt latviešiem arābu pasauli tādu, kādu viņš to pazīst.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2019 Higher Level — © State Examinations Commission.",
+    id: "lv-2019-hl-i-5", topicId: "latvian-0-1", conceptId: "esi-smaidigs-tad-kontaktu-var-nodibinat",
+    section: "I", questionRef: "2019 HL Section I Q5",
+    questionText: "„Ja tu esi smaidīgs, tad kontaktu var nodibināt.” Izsakiet argumentētu viedokli par šo apgalvojumu!",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Abu Meri ir tāds cilvēks, kas smaida, neraugoties uz to, kā jūtas, jo tas palīdz veidot attiecības ar cilvēkiem pozitīvā gaisotnē. Tas attiecas ne tikai uz Abu Meri, bet uz ikvienu cilvēku.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Ja cilvēks ir nīgrs, dusmīgs, neapmierināts un to izrāda, viņš apzināti izolē sevi no sabiedrības. Reti kuram tādi cilvēki patīk. Sekas ir tādas, ka no tā cieš vairāk pats indivīds, nevis sabiedrība, jo „sabiedrībai ir vienalga, vai tu esi iekšpus tās vai ārā”.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Pozitīva attieksme, smaids noteikti palīdz ne tikai draudzībā, bet arī darba u.c. attiecībās.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2019 Higher Level — © State Examinations Commission.",
+    id: "lv-2019-hl-i-6", topicId: "latvian-0-1", conceptId: "kad-esi-pilsonis-tad-cita-atbildiba",
+    section: "I", questionRef: "2019 HL Section I Q6",
+    questionText: "„Kad esi pilsonis, tad ir cita atbildība,” apgalvo Abu Meri. Kā, viņaprāt, izpaužas pilsoniskā atbildība?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kā ārzemnieks Abu Meri nevarēja paust viedokli pilnīgi visos jautājumos, bet, iegūstos pilsonību, viņam tagad oficiāli būs tāda atbildība.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme gives no mark to any of these points and does not say how many are wanted: shown as the scheme prints them, scored on the question's total." },
+    { id: "r-2", kind: "point", verbatim: "Abu Meri uzskata, ka cilvēkiem aktīvāk jāiesaistās pilsoniskajā dzīvē, jāseko līdzi visam, kas notiek valstī (jāseko līdzi procesiem ekonomikā, politikā, sabiedrības dzīvē; jāpiedalās vēlēšanās).", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Pilsoņiem aktīvāk jārunā par taisnīgumu.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Pilsoniskā atbildība izpaužas arī, aktīvi strādājot savā profesijā, maksājot nodokļus un piedaloties sabiedriskajā dzīvē.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2019 Higher Level — © State Examinations Commission.",
+    id: "lv-2019-hl-ii", topicId: "latvian-1-0", conceptId: "vairs-nejutu-esmu-arzemnieks-bet-valodu",
+    section: "II", questionRef: "2019 HL Section II",
+    questionText: "„Es vairs nejūtu, ka esmu ārzemnieks, bet ar valodu un ārējo izskatu es vienmēr būšu ārzemnieks.” Uzrakstiet, ko šie vārdi atklāj/liecina par Abu Meri identitāti un pieredzi, dzīvojot Latvijā! (vismaz 100 vārdu)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Abu Meri Latvijā jūtas kā mājās, jo Latvijā dzīvo jau 15 gadus, ir ieguvis šeit izglītību, šeit ir viņa ģimene, viņš brīvi pārvalda latviešu valdu un ir veiksmīgs biznesmenis. Abu Meri ir Latvijas pilsonis, kurš aktīvi piedalās arī sabiedriskajā dzīvē un kuram ir laba izpratne par Latvijas vēsturi un sabiedrību.", marks: null, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme prints these points with no mark on any of them and no criteria for the part: examples, not a checklist." },
+    { id: "r-2", kind: "point", verbatim: "Tomēr Abu Meri vienmēr būs ārzemnieks savas valodas, ārējā izskata un izcelsmes dēļ – tā ir viņa identitāte.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Viņš ir un izskatās kā libānietis, kurš mīl arī savu zemi un kuram rūp Libānas un arābu kultūra.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Latvijā ir ļoti maz iebraucēju no arābu valstīm, tādēļ arī Abu Meri uz pārējo fona izceļas un ir pamanāms.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II DAĻA",
+          "title": "Reading text — answer in Latvian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Latvian 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2019 Higher Level — © State Examinations Commission.",
+    id: "lv-2019-hl-iii-1", topicId: "latvian-1-0", conceptId: "musdienas-nozime-patriotisms-vai",
+    section: "III", questionRef: "2019 HL Section III Q1",
+    questionText: "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) „Ko mūsdienās nozīmē patriotisms”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints the part's head, the instruction and the two titles, and prints nothing under them: no criteria, no descriptive line and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "higher",
+    paperFileid: "LC549ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2019 Higher Level — © State Examinations Commission.",
+    id: "lv-2019-hl-iii-2", topicId: "latvian-1-0", conceptId: "brivs-gads-pec-skolas-beigsanas-noderigi",
+    section: "III", questionRef: "2019 HL Section III Q2",
+    questionText: "Uzrakstiet pārspriedumu par vienu no tēmām! (ne mazāk kā 300 vārdu) „Brīvs gads pēc skolas beigšanas – noderīgi vai laika tērēšana”. Lūdzu analizējiet abus aspektus!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints the part's head, the instruction and the two titles, and prints nothing under them: no criteria, no descriptive line and no split of the part's marks.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "higher",
     paperFileid: "LC549ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2022 Higher Level — © State Examinations Commission.",
