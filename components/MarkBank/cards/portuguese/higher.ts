@@ -2377,11 +2377,9 @@ export const CARDS: SecCard[] = [
     section: "LB", questionRef: "2022 HL Section LB Q2",
     stem: "You will hear a piece about a youth movement. Answer in Portuguese.",
     questionText: "Quais os objetivos do movimento?",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Conectar jovens que falam português nas redes sociais.", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prices this ask “6 marks: 3 x 2 marks” and prints “Any 2” beside it: the split does not add up, so the card keeps the printed total, 6 marks." },
-    { id: "r-2", kind: "point", verbatim: "Acesso a informações sobre outros países.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Organizar debates entre os jovens.", marks: null },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prints “Any 2” beside the answers, but it prices the question “6 marks: 3 x 2 marks”; the printed price is carded.", group: {"claimMax":3,"perOption":2,"options":["Conectar jovens que falam português nas redes sociais.","Acesso a informações sobre outros países.","Organizar debates entre os jovens."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

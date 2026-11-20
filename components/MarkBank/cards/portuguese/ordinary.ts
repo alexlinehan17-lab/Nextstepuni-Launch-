@@ -644,12 +644,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Section A Q3(g)",
     stem: "Questão 3 – Texto 3",
     questionText: "Give details of two of the medals Patrícia Mamona has won. (paragraphs 1 and 5) Year Place Medal",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "2021 Poland Gold", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices the table “6 marks: 6 x 1 marks” and prints “Any two lines” beside it: a mark for each detail of two of the lines." },
-    { id: "r-2", kind: "point", verbatim: "2012 Helsinki/ Finland Silver", marks: null },
-    { id: "r-3", kind: "point", verbatim: "2016 Amsterdam Gold", marks: null },
-    { id: "r-4", kind: "point", verbatim: "2020 Tokyo/Japan Silver", marks: null },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices the table “6 marks: 6 x 1 marks” and prints “Any two lines” beside it: a mark for each detail (Year, Place, Medal) of two of its lines, “2021 Poland Gold”, “2012 Helsinki/ Finland Silver”, “2016 Amsterdam Gold”, “2020 Tokyo/Japan Silver”.", group: {"claimMax":6,"perOption":1,"options":["2021","Poland","Gold","2012","Helsinki/ Finland","Silver","2016","Amsterdam","Gold","2020","Tokyo/Japan","Silver"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1848,9 +1845,9 @@ export const CARDS: SecCard[] = [
     section: "LB", questionRef: "2022 OL Section LB Q4(iii)",
     stem: "You will hear a piece about a youth movement. Answer in Portuguese.",
     questionText: "A intenção do movimento é fazer publicações. Indique dois temas das publicações.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Literatura, cultura, inovação, curiosidades, política, debates, filmes.", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prices this ask “6 marks: 3 x 2 marks” and prints “Any 2” beside it, for two themes asked: the split does not add up, so the card keeps the printed total, 6 marks." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The paper asks for two themes and the scheme prints “Any 2”, but it prices the question “6 marks: 3 x 2 marks”; the printed price is carded.", group: {"claimMax":3,"perOption":2,"options":["Literatura","cultura","inovação","curiosidades","política","debates","filmes."]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

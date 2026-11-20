@@ -1105,7 +1105,7 @@ READING[(2021, 'hl')] = [
 # text layer cannot read (taken from the scheme PDF by tick position, CARD-
 # STANDARD 10c), and the medals table (Q3(g) on the paper, (i) in the scheme:
 # "6 marks: 6 x 1 marks", "Any two lines", each line a year, a place and a
-# medal), scored on its printed total.
+# medal), one claimable option a detail, capped at the printed 6.
 READING[(2022, 'ol')] = [
     # The paper sets each label beside an empty box the text layer reads as
     # U+F063: the question is its printed lines, the boxes left out.
@@ -1113,13 +1113,18 @@ READING[(2022, 'ol')] = [
       question=(PLc(4, '(d) Qual é a ocupação', after='(d) '), PL(4, 'Clara é estudante'), PL(4, 'Verdadeiro'),
                 PLc(4, 'Falso', before=' \uf063'))),
     C('A2d', [one(VI(160, 8), T(160))]),
-    # The scheme prints "Any two lines" beside the third line, so the four
-    # lines never read as one statement: each is shown, scored on the printed
-    # total, the price quoted.
-    C('A3g', [shown(S(216)), shown(S(217)), shown(S(218, before=' Any two')), shown(S(219))],
-      total=T(217), whole=True,
-      rownote='The scheme prices the table “6 marks: 6 x 1 marks” and prints “Any two lines” beside it: '
-              'a mark for each detail of two of the lines.'),
+    # Each line's Year, Place and Medal sit in separate printed cells
+    # (rendered), each worth 1 mark ("6 marks: 6 x 1 marks"): every cell is a
+    # claimable option, in printed line order, capped at the printed 6.
+    C('A3g', [menu([S(216, before=' Poland'), S(216, after='2021 ', before=' Gold'), S(216, after='Poland '),
+                    S(217, before=' Helsinki'), S(217, after='2012 ', before=' Silver'), S(217, after='Finland '),
+                    S(218, before=' Amsterdam'), S(218, after='2016 ', before=' Gold'),
+                    S(218, after='Amsterdam ', before=' Any'),
+                    S(219, before=' Tokyo'), S(219, after='2020 ', before=' Silver'), S(219, after='Japan ')],
+                   T(217))],
+      rownote='The scheme prices the table “6 marks: 6 x 1 marks” and prints “Any two lines” beside it: a '
+              'mark for each detail (Year, Place, Medal) of two of its lines, “2021 Poland Gold”, “2012 '
+              'Helsinki/ Finland Silver”, “2016 Amsterdam Gold”, “2020 Tokyo/Japan Silver”.'),
 ]
 
 # Scheme .md lines 363-489 (pages 17-22). The recording is the 2022 one
@@ -1139,11 +1144,16 @@ LISTENING[(2022, 'ol')] = [
       question=(PL(4, 'Quantos objetivos'), PL(4, 'Dois'), PL(4, 'Três'))),
     C('LB4i', [one(S(402), T(402))]),
     C('LB4ii', [one(S(405), T(405))]),
-    # "6 marks: 3 x 2 marks" beside "Any 2" for "Indique dois temas": the
-    # printed lines disagree on the split, so the card keeps the printed total.
-    C('LB4iii', [shown(J(S(412), S(413)))], total=T(412), whole=True,
-      rownote='The scheme prices this ask “6 marks: 3 x 2 marks” and prints “Any 2” beside it, for two '
-           'themes asked: the split does not add up, so the card keeps the printed total, 6 marks.'),
+    # The paper asks for two themes and the scheme prints "Any 2", but it
+    # prices the question "6 marks: 3 x 2 marks": the printed price is carded
+    # (as 2025 OL LB6), each printed theme an option, the conflict quoted.
+    C('LB4iii', [menu([S(412, before=', cultura'), S(412, after='Literatura, ', before=', inovação'),
+                       S(412, after='cultura, ', before=', curiosidades'),
+                       S(412, after='inovação, ', before=', política'),
+                       S(412, after='curiosidades, ', before=', debates'), S(412, after='política, ', before=','),
+                       S(413)], T(412))],
+      rownote='The paper asks for two themes and the scheme prints “Any 2”, but it prices the question '
+              '“6 marks: 3 x 2 marks”; the printed price is carded.'),
     C('LC1', [one(S(418), T(418))]),
     C('LC2', [one(S(422), T(422))]),
     C('LC3', [one(VI(425, 19), T(425))]),
@@ -1179,12 +1189,12 @@ LISTENING[(2022, 'hl')] = [
     C('LA5', [one(S(454), T(454))]),
     C('LA6', [menu([S(457), S(458)], T(457))]),
     C('LB1', [one(S(462), T(462))]),
-    # "6 marks: 3 x 2 marks" beside "Any 2": the printed split does not add up,
-    # so the card keeps the printed total.
-    C('LB2', [shown(S(465, after='1. ')), shown(S(467, after='2. ')), shown(S(469, after='3. '))],
-      total=T(466), whole=True,
-      rownote='The scheme prices this ask “6 marks: 3 x 2 marks” and prints “Any 2” beside it: the split '
-              'does not add up, so the card keeps the printed total, 6 marks.'),
+    # The scheme prints "Any 2" beside the answers but prices the question
+    # "6 marks: 3 x 2 marks": the printed price is carded (as 2025 OL LB6) and
+    # the conflict quoted (CARD-STANDARD 10f).
+    C('LB2', [menu([S(465, after='1. '), S(467, after='2. '), S(469, after='3. ')], T(466))],
+      rownote='The scheme prints “Any 2” beside the answers, but it prices the question “6 marks: 3 x 2 '
+              'marks”; the printed price is carded.'),
     C('LB3', [one(S(472), T(472))]),
     C('LB4i', [one(S(480), T(480))]),
     C('LB4ii', [one(S(484, after='Terça-feira '), T(484), lead=S(484, before=' Cultura')),
