@@ -1,0 +1,101 @@
+{
+  "at": "2026-11-20T11:51:23.835602+00:00",
+  "pin": "c369eabcd0156424cf604783dd399d0c5cf64fd2",
+  "scope": "183 new June asks with11 builder compatibility repairs; not approved live-card corrections or release clearance",
+  "asks": 183,
+  "marks": 840,
+  "candidateInputs": {
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2010.json": "5afc0285c26f2f9a621a535ca04e9f980de7c27c89c205a6ecc37ea7c4a6ca05",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2011.json": "fa712f9f9970c683acaced3e58be644b26e497ef35ce5bd3130fdecd7e1eb085",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2012.json": "9bbaba7620f172a13439227397b2033dd1a86785859515697b8b34f971cd3f6f",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2013.json": "cbc580b91a208f3a0d8896b0bee0823bd8ef092ddea22102e7637bfeb0a306a6"
+  },
+  "immutablePacketFiles": {
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-authoring/proposed-48-authored-cards.json": "abf05b904313b3f64a23e64d74ad55848e99a8d36d0b19ebddde2e69cc0520e9",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-authoring/proposed-47-authored-cards.json": "fa712f9f9970c683acaced3e58be644b26e497ef35ce5bd3130fdecd7e1eb085",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-authoring/proposed-47-authored-cards.json": "c3790d702477748be6a877a01f0e7bdb788671274aa762f208ee7ba8da2a69b9",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/proposed-authored-cards.json": "b8bc53100661798bdc5b01af2793c43ddd3a7c68123b09f778450e21b2d753ad",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-transcripts/2010-cl.md": "82d62f8e700e718c8350b1dad3494ddbf0c9748b3ad26de6ed2cf72bcea410a7",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-transcripts/2011-cl.md": "5acb742099cca916dc5f62b8083fcb79d2e754b87981d7e26bce3bea6e85b241",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-transcripts/2012-cl.md": "1eb5b53f1cd717ac5750aba8a0af40c32d379b0eff1f606c10c0a84ff0d5fbb7",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-transcripts/2013-cl.md": "90e83e86bc4c3c639b058777c90d42ea6a7937ccbe1b211f0be13e4d4373be9f",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-candidate-source-binding-preflight.json": "77f0380ff65ec54e8a7ac62ec4b238cbeafad01786f0f1ae5cd5e337c3d54751",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-transcripts/manifest.json": "6f166f55e7f2b76a77baa638150d3a6426ea828bc7e0434449202124f14c268f",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2010.json": "5afc0285c26f2f9a621a535ca04e9f980de7c27c89c205a6ecc37ea7c4a6ca05",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2011.json": "fa712f9f9970c683acaced3e58be644b26e497ef35ce5bd3130fdecd7e1eb085",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2012.json": "9bbaba7620f172a13439227397b2033dd1a86785859515697b8b34f971cd3f6f",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2013.json": "cbc580b91a208f3a0d8896b0bee0823bd8ef092ddea22102e7637bfeb0a306a6",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-codex-third-reading-index/final-note-cleanup/proof.json": "2a0c5b163a325c710911a7be2cfbb446de31c25f77a21127d7c50c5546dd9a47",
+    "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-2010-2013-generator-preflight/revision-input-manifest.json": "741ea8aefe806e233c17f0ffe63872be49f633a1fa4ccd9a5b089b13fb6ba9ac"
+  },
+  "localFiles": {
+    "june-generator-input-inventory.json": "6ec17cbd1575cece789c953371554c602b0c5a09c8f63ae0c6b4460d13fd78a6",
+    "independent-binding-bridge.json": "ddb8d811ca180e21b9f20e5848709c23656e793f96a9f6e4573372174f361511",
+    "review-183-fixture.json": "a8127bcddd37f0072b6bf22ce45ac1c6dedab4f06188015e73d14ce31f7bcedf",
+    "original-183-fixture.json": "91ae72cc9489b70747f14fe22676a5b33faa61f2f351d8628e8a8f1f55f11497",
+    "repair-report.json": "7f0df32aabdfe92a10e73aed9d41b6e2396ab1bf1e3613e7c6b0985f3e05e9b6"
+  },
+  "exactExternalTranscripts": [
+    {
+      "path": "examiner-reports/lcvp/schemes/2010-cl.md",
+      "sourcePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-transcripts/2010-cl.md",
+      "bytes": 32439,
+      "sha256": "82d62f8e700e718c8350b1dad3494ddbf0c9748b3ad26de6ed2cf72bcea410a7"
+    },
+    {
+      "path": "examiner-reports/lcvp/schemes/2011-cl.md",
+      "sourcePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-transcripts/2011-cl.md",
+      "bytes": 38122,
+      "sha256": "5acb742099cca916dc5f62b8083fcb79d2e754b87981d7e26bce3bea6e85b241"
+    },
+    {
+      "path": "examiner-reports/lcvp/schemes/2012-cl.md",
+      "sourcePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-transcripts/2012-cl.md",
+      "bytes": 37876,
+      "sha256": "1eb5b53f1cd717ac5750aba8a0af40c32d379b0eff1f606c10c0a84ff0d5fbb7"
+    },
+    {
+      "path": "examiner-reports/lcvp/schemes/2013-cl.md",
+      "sourcePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-transcripts/2013-cl.md",
+      "bytes": 43006,
+      "sha256": "90e83e86bc4c3c639b058777c90d42ea6a7937ccbe1b211f0be13e4d4373be9f"
+    }
+  ],
+  "baselinePath": "scripts/markbank/authored/lcvp.json",
+  "baselineSha256": "fffce0f1e7d347efc6835510377b27cfdc11105d540e8bd416e9556b79ae460f",
+  "baselineCards": 518,
+  "pinnedSourceRouteEvidence": [
+    {
+      "path": "scripts/paper-trail/answers/2010/LC462CLP000EV.pdf.json",
+      "sha256": "444a65119d2fa2502d5092bb182a63f64564776ae438cc34056221f1bcb4b873",
+      "bytes": 2839
+    },
+    {
+      "path": "scripts/paper-trail/answers/2011/LC462CLP000EV.pdf.json",
+      "sha256": "fda29c515d0fa8f748fd0521a7ba151f288720b2a1a1268ffb2a699ac36800d8",
+      "bytes": 3021
+    },
+    {
+      "path": "scripts/paper-trail/answers/2012/LC462CLP000EV.pdf.json",
+      "sha256": "0ae90dce4e6a2304253ee50af6a9c0f34c25c2afc40e724425d2d85555ed8213",
+      "bytes": 2844
+    },
+    {
+      "path": "scripts/paper-trail/answers/2013/LC462CLP000EV.pdf.json",
+      "sha256": "ab9702be242b7fe7b2d9086c01deb322556216d49df83aec131c5c8e383d7104",
+      "bytes": 2900
+    }
+  ],
+  "oldBindingProofPath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-candidate-source-binding-preflight.json",
+  "oldBindingProofSha256": "77f0380ff65ec54e8a7ac62ec4b238cbeafad01786f0f1ae5cd5e337c3d54751",
+  "bridgePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/independent-binding-bridge.json",
+  "bridgeSha256": "ddb8d811ca180e21b9f20e5848709c23656e793f96a9f6e4573372174f361511",
+  "originalPreparationManifest": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-2010-2013-generator-preflight/before-revision/COPY-MANIFEST.json",
+  "originalPreparationManifestSha256": "45f0aa26a37c0f8f392b11dde808a3724e64c136208ace81baa820233eedeb03",
+  "emptySerializationRules": [
+    "Empty figureKey/labelKey are authoring-only inputs.",
+    "An empty stem is omitted by the existing serializer.",
+    "An empty additionalTopicIds list would be omitted by the existing serializer; current five nonempty lists must be exact."
+  ],
+  "noGeneratorExecuted": true
+}

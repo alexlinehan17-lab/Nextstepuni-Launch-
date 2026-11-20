@@ -1,0 +1,396 @@
+{
+  "at": "2026-11-20T11:49:44.735359+00:00",
+  "reviewer": "Codex second reader /root/russian_independent_review",
+  "method": "Exact preparation audit after original independent source readings; informed by parent remedy. No generator, browser, rendering, network, lane or candidate edit.",
+  "pin": "c369eabcd0156424cf604783dd399d0c5cf64fd2",
+  "observedOriginMain": "c369eabcd0156424cf604783dd399d0c5cf64fd2",
+  "preparedHelperSha256": "2ac4473a50ebf34ac70a983d9edfe0deca76ea66aaa49d4995b9a3d892b67d4a",
+  "preparedManifestSha256": "f212e989ee5b0c17ab33400aca47e50b626c804ffd1294d150864ee2a13f4398",
+  "revisedFixtureSha256": "d66d2cad87719c4a0fbba02644ba2a8065603c994984ee52252f110ef72a1da2",
+  "originalFixtureSha256": "91ae72cc9489b70747f14fe22676a5b33faa61f2f351d8628e8a8f1f55f11497",
+  "asks": 183,
+  "marks": 840,
+  "unchangedCards": 172,
+  "changedCards": [
+    {
+      "id": "lcvp-2010-cl-a8",
+      "paths": [
+        "/rows/1/parts"
+      ],
+      "marks": 6
+    },
+    {
+      "id": "lcvp-2010-cl-c3a",
+      "paths": [
+        "/questionText"
+      ],
+      "marks": 2
+    },
+    {
+      "id": "lcvp-2010-cl-c3b",
+      "paths": [
+        "/rows/0/parts",
+        "/rows/1/parts",
+        "/rows/2/parts"
+      ],
+      "marks": 5
+    },
+    {
+      "id": "lcvp-2010-cl-c3d",
+      "paths": [
+        "/rows/2/parts",
+        "/rows/3/parts"
+      ],
+      "marks": 6
+    },
+    {
+      "id": "lcvp-2010-cl-c5c",
+      "paths": [
+        "/rows/1/parts"
+      ],
+      "marks": 5
+    },
+    {
+      "id": "lcvp-2012-cl-b2iii-2",
+      "paths": [
+        "/questionRef"
+      ],
+      "marks": 2
+    },
+    {
+      "id": "lcvp-2012-cl-c4b-2",
+      "paths": [
+        "/questionRef"
+      ],
+      "marks": 4
+    },
+    {
+      "id": "lcvp-2012-cl-c4c-2",
+      "paths": [
+        "/questionRef"
+      ],
+      "marks": 4
+    },
+    {
+      "id": "lcvp-2012-cl-c5a-2",
+      "paths": [
+        "/questionRef"
+      ],
+      "marks": 2
+    },
+    {
+      "id": "lcvp-2012-cl-c5b-2",
+      "paths": [
+        "/questionRef"
+      ],
+      "marks": 4
+    },
+    {
+      "id": "lcvp-2013-cl-c2c",
+      "paths": [
+        "/rows/3/parts"
+      ],
+      "marks": 7
+    }
+  ],
+  "removedSingletons": [
+    {
+      "id": "lcvp-2010-cl-a8",
+      "row": "response-2",
+      "part": {
+        "id": "component-1",
+        "verbatim": "2m",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          2
+        ]
+      },
+      "parentSteps": [
+        0,
+        2
+      ],
+      "numericStepsSame": true,
+      "visibleControlGroupingChanges": true
+    },
+    {
+      "id": "lcvp-2010-cl-c3b",
+      "row": "response-1",
+      "part": {
+        "id": "component-1",
+        "verbatim": "2m",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          2
+        ]
+      },
+      "parentSteps": [
+        0,
+        2
+      ],
+      "numericStepsSame": true,
+      "visibleControlGroupingChanges": true
+    },
+    {
+      "id": "lcvp-2010-cl-c3b",
+      "row": "response-2",
+      "part": {
+        "id": "component-1",
+        "verbatim": "2m",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          2
+        ]
+      },
+      "parentSteps": [
+        0,
+        2
+      ],
+      "numericStepsSame": true,
+      "visibleControlGroupingChanges": true
+    },
+    {
+      "id": "lcvp-2010-cl-c3b",
+      "row": "response-3",
+      "part": {
+        "id": "component-1",
+        "verbatim": "1m",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ]
+      },
+      "parentSteps": [
+        0,
+        1
+      ],
+      "numericStepsSame": true,
+      "visibleControlGroupingChanges": true
+    },
+    {
+      "id": "lcvp-2010-cl-c3d",
+      "row": "response-3",
+      "part": {
+        "id": "component-1",
+        "verbatim": "1m",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ]
+      },
+      "parentSteps": [
+        0,
+        1
+      ],
+      "numericStepsSame": true,
+      "visibleControlGroupingChanges": true
+    },
+    {
+      "id": "lcvp-2010-cl-c3d",
+      "row": "response-4",
+      "part": {
+        "id": "component-1",
+        "verbatim": "1m",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ]
+      },
+      "parentSteps": [
+        0,
+        1
+      ],
+      "numericStepsSame": true,
+      "visibleControlGroupingChanges": true
+    },
+    {
+      "id": "lcvp-2010-cl-c5c",
+      "row": "response-2",
+      "part": {
+        "id": "component-1",
+        "verbatim": "2m",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          2
+        ]
+      },
+      "parentSteps": [
+        0,
+        2
+      ],
+      "numericStepsSame": true,
+      "visibleControlGroupingChanges": true
+    },
+    {
+      "id": "lcvp-2013-cl-c2c",
+      "row": "response-4",
+      "part": {
+        "id": "component-1",
+        "verbatim": "1m",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ]
+      },
+      "parentSteps": [
+        0,
+        1
+      ],
+      "numericStepsSame": true,
+      "visibleControlGroupingChanges": true
+    }
+  ],
+  "allNewInAuthoredAndRuntimeMain": true,
+  "mainAuthoredSha256": "fffce0f1e7d347efc6835510377b27cfdc11105d540e8bd416e9556b79ae460f",
+  "mainRuntimeSha256": "ddbace4e97e0b7560bb02e7e11c0db75daff5c1325e28b3b4b853e8d896fedba",
+  "sourceIdentityQuestionsMarksAndGuidancePreservedExceptExactSharedInstructionInCVQuestion": true,
+  "sourceChecks": [
+    {
+      "year": 2010,
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2010/LC462CLP000EV.pdf",
+      "sha256": "4669535c42a2604efb2288fef4d1e814e52949af561cef5ee04f93b3e86935a7",
+      "pagesTextChecked": [
+        20
+      ],
+      "exactPhrases": [
+        "Explain the three underlined words.",
+        "CV"
+      ]
+    },
+    {
+      "year": 2012,
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/exampapers/2012/LC462CLP000EV.pdf",
+      "sha256": "26f7d6e54302fa61029046dd8183634ff3c62120b34a16a656dfb06a592e76e9",
+      "pagesTextChecked": [
+        10,
+        23,
+        24,
+        26
+      ],
+      "exactPhrases": [
+        "implications for the committee",
+        "usefulness of each research method",
+        "reason for each subject choice",
+        "product/service",
+        "type of support"
+      ]
+    }
+  ],
+  "originalImageReopened": {
+    "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/original-pages/paper-20.png",
+    "sha256": "64e9bdc8c1cb2048012c2451355b2fb440b85ce8853779dbf846c8f755055e3c"
+  },
+  "preparationInputHashesVerified": [
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-authoring/proposed-48-authored-cards.json",
+      "sha256": "abf05b904313b3f64a23e64d74ad55848e99a8d36d0b19ebddde2e69cc0520e9"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2011-authoring/proposed-47-authored-cards.json",
+      "sha256": "fa712f9f9970c683acaced3e58be644b26e497ef35ce5bd3130fdecd7e1eb085"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2012-authoring/proposed-47-authored-cards.json",
+      "sha256": "c3790d702477748be6a877a01f0e7bdb788671274aa762f208ee7ba8da2a69b9"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2013-source-reading/proposed-authored-cards.json",
+      "sha256": "b8bc53100661798bdc5b01af2793c43ddd3a7c68123b09f778450e21b2d753ad"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-transcripts/2010-cl.md",
+      "sha256": "82d62f8e700e718c8350b1dad3494ddbf0c9748b3ad26de6ed2cf72bcea410a7"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-transcripts/2011-cl.md",
+      "sha256": "5acb742099cca916dc5f62b8083fcb79d2e754b87981d7e26bce3bea6e85b241"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-transcripts/2012-cl.md",
+      "sha256": "1eb5b53f1cd717ac5750aba8a0af40c32d379b0eff1f606c10c0a84ff0d5fbb7"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-transcripts/2013-cl.md",
+      "sha256": "90e83e86bc4c3c639b058777c90d42ea6a7937ccbe1b211f0be13e4d4373be9f"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-candidate-source-binding-preflight.json",
+      "sha256": "77f0380ff65ec54e8a7ac62ec4b238cbeafad01786f0f1ae5cd5e337c3d54751"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/june-transcripts/manifest.json",
+      "sha256": "6f166f55e7f2b76a77baa638150d3a6426ea828bc7e0434449202124f14c268f"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2010.json",
+      "sha256": "b3b0adde59fe45cfd18b579e0e3e94eaaa00eab0ae962cb38b4924370260aa47"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2011.json",
+      "sha256": "fa712f9f9970c683acaced3e58be644b26e497ef35ce5bd3130fdecd7e1eb085"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2012.json",
+      "sha256": "a7e84b8a020702628d81ed7aca05d341b7ebdeab0c3a830066ef664af08d9d1d"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2013.json",
+      "sha256": "cbc580b91a208f3a0d8896b0bee0823bd8ef092ddea22102e7637bfeb0a306a6"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-2010-2013-generator-preflight/revision-input-manifest.json",
+      "sha256": "741ea8aefe806e233c17f0ffe63872be49f633a1fa4ccd9a5b089b13fb6ba9ac"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2010.json",
+      "sha256": "b3b0adde59fe45cfd18b579e0e3e94eaaa00eab0ae962cb38b4924370260aa47"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2011.json",
+      "sha256": "fa712f9f9970c683acaced3e58be644b26e497ef35ce5bd3130fdecd7e1eb085"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2012.json",
+      "sha256": "a7e84b8a020702628d81ed7aca05d341b7ebdeab0c3a830066ef664af08d9d1d"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/candidates/2013.json",
+      "sha256": "cbc580b91a208f3a0d8896b0bee0823bd8ef092ddea22102e7637bfeb0a306a6"
+    }
+  ],
+  "helperChangeFromPreviouslyAudited183Runner": "Only frozen MANIFEST_SHA changed. Guards, sandbox, complete authored-field and source-binding assertions, raw/semantic snapshots, timeout partial logs, original-input checks and fixed pin stay intact.",
+  "bridge": "Exact four-year ID sets and all183 extensionless LC462CLP000EV resolutions match unchanged old proof; updated candidate hashes are honest, no old proof rewritten.",
+  "decisionsAndConcerns": [
+    {
+      "id": "cv-practice-scope",
+      "status": "Application preview concern; source split settled",
+      "detail": "Printed instruction names all three terms, but this card scores CV only for2 marks. Current questionRef ends — CV and is visible before reveal; row context says Define only this fixed underlined term only after reveal. Root proposed caption — CV only would clarify practice scope without modifying printed question text. Do not claim it is printed wording. Current exact candidate remains unchanged; actual app preview required.",
+      "decisionPath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2010-independent/third-reader-decision.json",
+      "decisionSha256": "3c823d7b57028341300cbda8524ba841f3b10e569d5efc29738c567b40fe0e21"
+    },
+    {
+      "id": "stale-c4b-editorial-note",
+      "status": "Existing stale note, not a newly unsettled split",
+      "detail": "2012 C4b-2 still contains Proposed 2+4 split awaits adjudication. Existing final-note-cleanup proof already records C4b as two separate printed instructions under coordinator rule; its first-part note was cleaned, second-part sentence was missed. Original immutable candidate retained here. Recommend a separately recorded new-candidate editorial cleanup before release; no mark/source/answer revision.",
+      "evidencePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-codex-third-reading-index/final-note-cleanup/proof.json",
+      "evidenceSha256": "2a0c5b163a325c710911a7be2cfbb446de31c25f77a21127d7c50c5546dd9a47"
+    },
+    {
+      "id": "singleton-controls",
+      "status": "Acceptable new-card representation proposal; application checks pending",
+      "detail": "Eight numeric-only singleton subcontrols are removed across five new cards. Parent row marks/steps and all guidance remain; no semantic child label is lost. This changes control nesting/key and is not merely byte/schema normalization. Unlike approved20, none of these183 asks is live or in a live-card approval packet."
+    }
+  ],
+  "limitations": [
+    "No actual generator or browser execution in this audit.",
+    "No full sitting source reread; existing complete readings retained, one original paper image reopened and five original page texts checked.",
+    "Paper-opening/crop/Atlas/heading/media/full-subject/production checks remain separate; this input bridge does not certify them."
+  ]
+}
