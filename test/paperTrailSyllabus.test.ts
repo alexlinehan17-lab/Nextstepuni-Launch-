@@ -137,6 +137,8 @@ const ADMITTED_DEFERRED = new Set([
   'chemistry|2023|LC022ALP000EV-deferred.pdf',
   // Art: the written paper of each carded deferred sitting (2022 Higher, 2023 Higher and Ordinary).
   'art|2022|LC014ALP000EV-deferred.pdf', 'art|2023|LC014ALP000EV-deferred.pdf', 'art|2023|LC014GLP000EV-deferred.pdf',
+  // Accounting: the English paper of each carded deferred sitting (2022 Higher).
+  'accounting|2022|LC032ALP000EV-deferred.pdf',
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {

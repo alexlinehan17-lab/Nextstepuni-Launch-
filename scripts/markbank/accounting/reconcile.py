@@ -36,11 +36,22 @@ def reconcile():
     # holds the 1995-2009 archive (#256), which has no reviews or cards.
     papers = {f'{p.parent.name}/{p.name}': p for p in (ROOT / 'paper-trail-corpus/exampapers').glob('*/LC032*.pdf')
               if int(p.parent.name) >= 2010}
+    # The deferred sittings' English papers carded so far (build.py CARDED_DEFERRED_YEARS, entered in the inventory),
+    # each its own edition "<fileid>-deferred.pdf" read from the deferred corpus.
+    deferred_papers = {f'{i["year"]}/{i["fileid"]}': ROOT / 'paper-trail-corpus/deferredexams' / str(i['year'])
+                       / i['fileid'].replace('-deferred.pdf', '.pdf')
+                       for i in read(HERE / 'inventory.json')['papers'] if i.get('sitting') == 'deferred'}
+    for key, path in deferred_papers.items():
+        check(path.exists(), f'{key}: deferred paper missing from the corpus')
+    papers.update(deferred_papers)
+
+    def edition(review):
+        return review['fileid'].replace('.pdf', '-deferred.pdf') if review.get('sitting') == 'deferred' else review['fileid']
     inventory = read(HERE / 'inventory.json')['papers']
     check(set(papers) == {f'{i["year"]}/{i["fileid"]}' for i in inventory}, 'Inventory/corpus editions differ')
     reviews = [read(p) for p in sorted((HERE / 'reviewed').glob('*.json'))]
     translations = [read(p) for p in sorted((HERE / 'correspondence').glob('*.json'))]
-    all_reviews = {f'{r["year"]}/{r["fileid"]}': r for r in reviews + translations}
+    all_reviews = {f'{r["year"]}/{edition(r)}': r for r in reviews + translations}
     check(set(papers) == set(all_reviews), 'Unreviewed source edition or orphan review')
     authored = read(ROOT / 'components/MarkBank/cards/accounting/authored.json')['cards']
     cards = {c['id']: c for c in authored}
@@ -57,7 +68,8 @@ def reconcile():
         with fitz.open(paper) as doc:
             check(review['visualPaperPages'] == list(range(1, len(doc) + 1)), f'{key}: incomplete paper sweep')
             page_totals['paper'] += len(doc)
-        scheme = ROOT / 'paper-trail-corpus/markingschemes' / key
+        scheme = (ROOT / 'paper-trail-corpus/deferredmarkingschemes' / key.replace('-deferred.pdf', '.pdf')
+                  if key in deferred_papers else ROOT / 'paper-trail-corpus/markingschemes' / key)
         if not scheme.exists():
             fallback = review.get('schemeFallback', {})
             check(bool(fallback.get('reason')) and bool(fallback.get('paperComparison')), f'{key}: unexplained missing scheme')
@@ -79,8 +91,9 @@ def reconcile():
             check(bool(directive['reason']), f'{key}: unexplained selection decision')
             selection_totals[classification] = selection_totals.get(classification, 0) + 1
     for review in reviews:
-        year, level, fileid = review['year'], review['level'], review['fileid']
+        year, level, fileid = review['year'], review['level'], edition(review)
         key = f'{year}/{fileid}'
+        deferred = key in deferred_papers
         rows = [c for c in authored if c['year'] == year and c['paperFileid'] == fileid]
         source_tasks = []
         for task in review['tasks']:
@@ -91,7 +104,7 @@ def reconcile():
             if pool:
                 pools.append({'edition': key, 'task': task['key'], 'choose': pool['choose'], 'options': len(pool['options']), 'cards': variants, 'marks': task['marks']})
             for variant in variants:
-                ident = f'acc-{year}-{"hl" if level == "higher" else "ol"}-q{variant}'
+                ident = f'acc-{year}-{"hl" if level == "higher" else "ol"}-{"deferred-" if deferred else ""}q{variant}'
                 expected_ids.add(ident)
                 card = cards.get(ident)
                 check(card is not None, f'{key}: missing task {variant}')
@@ -112,7 +125,8 @@ def reconcile():
             group = [c for c in rows if c['questionNumber'] == number]
             check(bool(group) and sum(c['totalMarks'] for c in group) == expected, f'{key} Q{number}: unreconciled published tariff')
             parent_rows.append({'edition': key, 'question': number, 'tasks': [c['taskKey'] for c in group], 'allRouteMarks': expected})
-        before = read(ROOT / 'scripts/paper-trail/answers' / (key + '.json'))
+        # A deferred edition has no audited answer map before its review: nothing to preserve.
+        before = {'q': []} if deferred else read(ROOT / 'scripts/paper-trail/answers' / (key + '.json'))
         after = read(ROOT / 'public/paper-answers' / (key + '.json'))
         after_by_key = {q['n']: q for q in after['q']}
         check(len(after_by_key) == len(after['q']), f'{key}: duplicate answer ID')
@@ -136,7 +150,8 @@ def reconcile():
         check({q['questionNumber'] for q in review['questionReview']} == set(range(1, 10)), f'{review["fileid"]}: missing translated question review')
     check(expected_ids == set(cards), 'Uncovered or orphan Mark Bank task')
     check(set(mappings) == {(c['year'], c['paperFileid'], c['taskKey']) for c in authored}, 'Uncovered or orphan Atlas mapping')
-    result = {'subjectId': 'accounting', 'scope': 'All local Paper Trail Accounting papers, 2010–2026, Higher and Ordinary, English and Irish',
+    result = {'subjectId': 'accounting', 'scope': 'All local Paper Trail Accounting papers, 2010–2026, Higher and Ordinary, English and Irish'
+              + (', and the deferred sittings\' English papers' if deferred_papers else ''),
               'method': 'Independent reconciliation of visually reviewed boundaries against source files, published parent tariffs, preserved sidecars, one-card printed choices and generated artifacts. Runtime Atlas and canonical-topic checks are in markBankAccounting.test.tsx.',
               'sourceReconciliationPassed': not issues, 'checks': checks, 'openIssues': issues,
               'sourceEditions': len(papers), 'visuallyReviewedPages': page_totals,

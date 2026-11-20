@@ -10,6 +10,9 @@ type AuthoredTask = Omit<(typeof authored.cards)[number], 'level' | 'schemeRegio
   schemeRegions: Array<{ p: number; r: [number, number, number, number]; rotate?: 0 | 90 | 180 | 270 }>;
 };
 
+/** The SEC's deferred sittings (build.py is_deferred): their own edition, "LC032ALP000EV-deferred.pdf". */
+const isDeferred = (task: AuthoredTask) => (task as { sitting?: string }).sitting === 'deferred';
+
 const makeCard = (task: AuthoredTask): SecRubricCard => {
   const specification = resolveCurriculumSpecification('accounting', task.year);
   if (!specification || !specification.groups.some(group => group.topics.some(topic => topic.id === task.topicId))) {
@@ -32,10 +35,10 @@ const makeCard = (task: AuthoredTask): SecRubricCard => {
     conceptId: `accounting-${task.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
     source: 'sec', kind: 'rubric', year: task.year, paperFileid: task.paperFileid.replace(/\.pdf$/, ''),
     section: task.questionNumber <= 4 ? '1' : task.questionNumber <= 7 ? '2' : '3',
-    questionRef: `${task.year} ${task.level === 'higher' ? 'HL' : 'OL'} Q${task.taskKey}`,
+    questionRef: `${task.year} ${task.level === 'higher' ? 'HL' : 'OL'} Q${task.taskKey}${isDeferred(task) ? ' — Deferred sitting' : ''}`,
     stem: task.taskFocus ? `${task.title}. ${task.taskFocus}` : task.title,
     questionText: task.questionText, totalMarks: task.totalMarks, sourceMaterial,
-    schemeCitation: `SEC Accounting ${task.year} ${task.level === 'higher' ? 'Higher' : 'Ordinary'} Level, PDF pages ${solution.pages.join(', ')} — © State Examinations Commission.`,
+    schemeCitation: `SEC Accounting ${task.year} ${task.level === 'higher' ? 'Higher' : 'Ordinary'} Level${isDeferred(task) ? ', deferred examination' : ''}, PDF pages ${solution.pages.join(', ')} — © State Examinations Commission.`,
     schemeRegion: { schemeFileid: task.paperFileid, ...task.schemeRegions[0] },
     specVersion: specification.id,
     qa: {

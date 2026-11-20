@@ -1,5 +1,5 @@
 {
-  "complete": true,
+  "complete": false,
   "cards": [
     {
       "id": "acc-2010-hl-q1(a)",
@@ -36897,6 +36897,1656 @@
       "taskFocus": null,
       "allocationNote": "One published 8-mark open explanation.",
       "reviewedAt": "2026-10-07"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q1A(a)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 1,
+      "taskKey": "1A(a)",
+      "title": "Company: trading and profit and loss account",
+      "questionText": "Prepare a trading and profit and loss account for the year ended 31/12/2021.",
+      "totalMarks": 75,
+      "topicId": "accounting-4-1",
+      "examTopicIds": [
+        "accounting-higher-final-accounts-company"
+      ],
+      "paperPages": [
+        2,
+        3
+      ],
+      "schemeRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 75 marks to this task. A misprint in the scheme: its last line labels the closing balance of 80,045 \"Profit and Loss Balance 01/01/2021\", the label of the opening balance.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q1A(b)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 1,
+      "taskKey": "1A(b)",
+      "title": "Company: balance sheet",
+      "questionText": "Prepare a balance sheet as at 31/12/2021.",
+      "totalMarks": 45,
+      "topicId": "accounting-4-1",
+      "examTopicIds": [
+        "accounting-higher-final-accounts-company"
+      ],
+      "paperPages": [
+        2,
+        3
+      ],
+      "schemeRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 45 marks to this task. A misprint in the scheme: the fixed-asset cost total is printed \"100,7000\"; it is 1,007,000.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q1B(a)-manufacturing",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 1,
+      "taskKey": "1B(a)-manufacturing",
+      "title": "Manufacturing account",
+      "questionText": "Prepare a manufacturing, trading and profit and loss account for the year ended 31/12/2021.",
+      "totalMarks": 40,
+      "topicId": "accounting-5-0",
+      "examTopicIds": [
+        "accounting-higher-final-accounts-manufacturing"
+      ],
+      "paperPages": [
+        4,
+        5
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": "Prepare the manufacturing account.",
+      "allocationNote": "The SEC scheme allocates 40 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q1B(a)-trading-profit",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 1,
+      "taskKey": "1B(a)-trading-profit",
+      "title": "Manufacturing company: trading and profit and loss account",
+      "questionText": "Prepare a manufacturing, trading and profit and loss account for the year ended 31/12/2021.",
+      "totalMarks": 35,
+      "topicId": "accounting-5-0",
+      "examTopicIds": [
+        "accounting-higher-final-accounts-manufacturing"
+      ],
+      "paperPages": [
+        4,
+        5
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": "Prepare the trading and profit and loss account.",
+      "allocationNote": "The SEC scheme allocates 35 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q1B(b)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 1,
+      "taskKey": "1B(b)",
+      "title": "Manufacturing company: balance sheet",
+      "questionText": "Prepare a balance sheet as at 31/12/2021.",
+      "totalMarks": 45,
+      "topicId": "accounting-5-0",
+      "examTopicIds": [
+        "accounting-higher-final-accounts-manufacturing"
+      ],
+      "paperPages": [
+        4,
+        5
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 45 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q2(a)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 2,
+      "taskKey": "2(a)",
+      "title": "Vehicles account",
+      "questionText": "You are required to show, with workings, for each of the years 2020 and 2021:\nThe vehicles account.",
+      "totalMarks": 6,
+      "topicId": "accounting-2-5",
+      "examTopicIds": [
+        "accounting-higher-depreciation-of-fixed-assets"
+      ],
+      "paperPages": [
+        6
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 6 marks to this task. Misprints in the scheme: its account dates the transactions 01/05/2020 and 01/08/2021, where the paper gives 01/07/2020 and 01/05/2021, and it brings down 288,000 against the 276,000 it carries down.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q2(b)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 2,
+      "taskKey": "2(b)",
+      "title": "Provision for depreciation account",
+      "questionText": "You are required to show, with workings, for each of the years 2020 and 2021:\nThe provision for depreciation on vehicles account.",
+      "totalMarks": 32,
+      "topicId": "accounting-2-5",
+      "examTopicIds": [
+        "accounting-higher-depreciation-of-fixed-assets"
+      ],
+      "paperPages": [
+        6
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 32 marks to this task. Misprints in the scheme: its disposal transfers are dated 01/05/2020 and 01/08/2021, where the paper gives 01/07/2020 and 01/05/2021, and its final balance brought down is dated 01/01/2021.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q2(c)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 2,
+      "taskKey": "2(c)",
+      "title": "Vehicles disposal account",
+      "questionText": "You are required to show, with workings, for each of the years 2020 and 2021:\nThe vehicles disposal account.",
+      "totalMarks": 14,
+      "topicId": "accounting-2-5",
+      "examTopicIds": [
+        "accounting-higher-depreciation-of-fixed-assets"
+      ],
+      "paperPages": [
+        6
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 14 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q2(d)(i)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 2,
+      "taskKey": "2(d)(i)",
+      "title": "Depreciation in calculating profit",
+      "questionText": "Explain why a company charges depreciation in calculating profit.",
+      "totalMarks": 4,
+      "topicId": "accounting-2-5",
+      "examTopicIds": [
+        "accounting-higher-depreciation-of-fixed-assets"
+      ],
+      "paperPages": [
+        6
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 4 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q2(d)(ii)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 2,
+      "taskKey": "2(d)(ii)",
+      "title": "Factors in a depreciation policy",
+      "questionText": "List the factors that should be considered when determining the depreciation policy for a particular asset.",
+      "totalMarks": 4,
+      "topicId": "accounting-2-5",
+      "examTopicIds": [
+        "accounting-higher-depreciation-of-fixed-assets"
+      ],
+      "paperPages": [
+        6
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 4 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q3(a)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 3,
+      "taskKey": "3(a)",
+      "title": "Adjusted creditors control account",
+      "questionText": "Prepare the adjusted creditors ledger control account.",
+      "totalMarks": 24,
+      "topicId": "accounting-2-2",
+      "examTopicIds": [
+        "accounting-higher-control-accounts"
+      ],
+      "paperPages": [
+        7
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 24 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q3(b)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 3,
+      "taskKey": "3(b)",
+      "title": "Adjusted schedule of creditors",
+      "questionText": "Prepare the adjusted schedule of creditors showing the original balance.",
+      "totalMarks": 28,
+      "topicId": "accounting-2-2",
+      "examTopicIds": [
+        "accounting-higher-control-accounts"
+      ],
+      "paperPages": [
+        7
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 28 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q3(c)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 3,
+      "taskKey": "3(c)",
+      "title": "Debit balances in the creditors control account",
+      "questionText": "Explain what is meant by the opening debit balance in the creditors control account.\nGive two reasons why such a balance might arise.",
+      "totalMarks": 8,
+      "topicId": "accounting-2-2",
+      "examTopicIds": [
+        "accounting-higher-control-accounts"
+      ],
+      "paperPages": [
+        7
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 8 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q4(a)-profit-loss",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 4,
+      "taskKey": "4(a)-profit-loss",
+      "title": "Published profit and loss account",
+      "questionText": "Prepare the published profit and loss account for the year ended 31/12/2021 in accordance with the Companies Act and appropriate accounting standards showing the following notes:\nAccounting policy note for tangible fixed assets and stock.\nOperating profit.\nInterest payable.\nDividends.\nTangible fixed assets.",
+      "totalMarks": 36,
+      "topicId": "accounting-4-2",
+      "examTopicIds": [
+        "accounting-higher-published-accounts"
+      ],
+      "paperPages": [
+        8,
+        9
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": "Prepare the published profit and loss account.",
+      "allocationNote": "36 marks: the account’s published line credits total 36; the five required notes carry a separate 16, together the boxed 52.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q4(a)-notes",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 4,
+      "taskKey": "4(a)-notes",
+      "title": "Notes to the published accounts",
+      "questionText": "Prepare the published profit and loss account for the year ended 31/12/2021 in accordance with the Companies Act and appropriate accounting standards showing the following notes:\nAccounting policy note for tangible fixed assets and stock.\nOperating profit.\nInterest payable.\nDividends.\nTangible fixed assets.",
+      "totalMarks": 16,
+      "topicId": "accounting-4-2",
+      "examTopicIds": [
+        "accounting-higher-published-accounts"
+      ],
+      "paperPages": [
+        8,
+        9
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": "Prepare all five required notes to the published accounts.",
+      "allocationNote": "16 marks: accounting policy 4, operating profit 3, interest payable 2, tangible fixed assets 5 and dividends 2. The scheme's accounting policy note mentions a year-end revaluation of buildings that the paper does not describe.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q4(b)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 4,
+      "taskKey": "4(b)",
+      "title": "Auditor’s report and directors’ report",
+      "questionText": "Explain the purpose of an auditor’s report.\nState three items of information that must be included in a directors’ report.",
+      "totalMarks": 8,
+      "topicId": "accounting-4-2",
+      "examTopicIds": [
+        "accounting-higher-published-accounts"
+      ],
+      "paperPages": [
+        8,
+        9
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 8 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q5(a)(i)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 5,
+      "taskKey": "5(a)(i)",
+      "title": "Opening stock from stock turnover",
+      "questionText": "You are required to calculate the following for 2021\n(where appropriate calculations should be made to two decimal places):\nThe opening stock if the rate of stock turnover is 8 based on average stock.",
+      "totalMarks": 12,
+      "topicId": "accounting-8-5",
+      "examTopicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ],
+      "paperPages": [
+        10,
+        11
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 12 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q5(a)(ii)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 5,
+      "taskKey": "5(a)(ii)",
+      "title": "Interest cover",
+      "questionText": "You are required to calculate the following for 2021\n(where appropriate calculations should be made to two decimal places):\nInterest cover.",
+      "totalMarks": 8,
+      "topicId": "accounting-8-7",
+      "examTopicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ],
+      "paperPages": [
+        10,
+        11
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 8 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q5(a)(iii)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 5,
+      "taskKey": "5(a)(iii)",
+      "title": "Dividend cover",
+      "questionText": "You are required to calculate the following for 2021\n(where appropriate calculations should be made to two decimal places):\nDividend cover.",
+      "totalMarks": 10,
+      "topicId": "accounting-8-8",
+      "examTopicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ],
+      "paperPages": [
+        10,
+        11
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 10 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q5(a)(iv)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 5,
+      "taskKey": "5(a)(iv)",
+      "title": "Return on shareholders’ funds",
+      "questionText": "You are required to calculate the following for 2021\n(where appropriate calculations should be made to two decimal places):\nReturn on shareholders’ funds.",
+      "totalMarks": 10,
+      "topicId": "accounting-8-8",
+      "examTopicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ],
+      "paperPages": [
+        10,
+        11
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 10 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q5(a)(v)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 5,
+      "taskKey": "5(a)(v)",
+      "title": "Price earnings ratio",
+      "questionText": "You are required to calculate the following for 2021\n(where appropriate calculations should be made to two decimal places):\nPrice earnings ratio.",
+      "totalMarks": 10,
+      "topicId": "accounting-8-8",
+      "examTopicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ],
+      "paperPages": [
+        10,
+        11
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 10 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q5(b)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 5,
+      "taskKey": "5(b)",
+      "title": "Ordinary shareholders’ assessment of Ash Ltd",
+      "questionText": "Indicate if the ordinary shareholders would be satisfied with the performance, state of affairs and prospects of the company. Use relevant ratios and other information to support your answer.",
+      "totalMarks": 40,
+      "topicId": "accounting-8-9",
+      "examTopicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ],
+      "paperPages": [
+        10,
+        11
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 40 marks to this task. A slip in the scheme: its gearing comments compare 2019 with 2020 and date the debentures 2026, where the paper gives 2020 and 2021 figures and debentures due in 2023.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q5(c)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 5,
+      "taskKey": "5(c)",
+      "title": "Limitations of ratio analysis",
+      "questionText": "Outline the limitations of ratio analysis that must be considered when using ratios.",
+      "totalMarks": 10,
+      "topicId": "accounting-8-9",
+      "examTopicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ],
+      "paperPages": [
+        10,
+        11
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 10 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q6(a)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 6,
+      "taskKey": "6(a)",
+      "title": "Club: accumulated fund",
+      "questionText": "Show the club’s accumulated fund on 01/01/2021.",
+      "totalMarks": 30,
+      "topicId": "accounting-5-2",
+      "examTopicIds": [
+        "accounting-higher-club-accounts"
+      ],
+      "paperPages": [
+        12,
+        13
+      ],
+      "schemeRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 30 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q6(b)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 6,
+      "taskKey": "6(b)",
+      "title": "Club: income and expenditure account",
+      "questionText": "Show the club’s income and expenditure account for the year ended 31/12/2021.",
+      "totalMarks": 40,
+      "topicId": "accounting-5-2",
+      "examTopicIds": [
+        "accounting-higher-club-accounts"
+      ],
+      "paperPages": [
+        12,
+        13
+      ],
+      "schemeRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 40 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q6(c)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 6,
+      "taskKey": "6(c)",
+      "title": "Club: balance sheet",
+      "questionText": "Show the club’s balance sheet as at 31/12/2021.",
+      "totalMarks": 20,
+      "topicId": "accounting-5-2",
+      "examTopicIds": [
+        "accounting-higher-club-accounts"
+      ],
+      "paperPages": [
+        12,
+        13
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 20 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q6(d)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 6,
+      "taskKey": "6(d)",
+      "title": "Club levies and their accounting treatment",
+      "questionText": "Explain why some clubs charge levies.\nWhy are levies treated differently to annual subscriptions in the accounts?",
+      "totalMarks": 10,
+      "topicId": "accounting-5-2",
+      "examTopicIds": [
+        "accounting-higher-club-accounts"
+      ],
+      "paperPages": [
+        12,
+        13
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 10 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q7(a)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 7,
+      "taskKey": "7(a)",
+      "title": "Journalise corrections",
+      "questionText": "Journalise the necessary corrections.",
+      "totalMarks": 54,
+      "topicId": "accounting-2-4",
+      "examTopicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ],
+      "paperPages": [
+        14,
+        15
+      ],
+      "schemeRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 54 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q7(b)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 7,
+      "taskKey": "7(b)",
+      "title": "Suspense account",
+      "questionText": "Show Jones’ suspense account.",
+      "totalMarks": 6,
+      "topicId": "accounting-2-3",
+      "examTopicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ],
+      "paperPages": [
+        14,
+        15
+      ],
+      "schemeRegions": [
+        {
+          "p": 23,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 6 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q7(c)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 7,
+      "taskKey": "7(c)",
+      "title": "Corrected net profit",
+      "questionText": "Prepare a statement showing the corrected net profit for Jones.",
+      "totalMarks": 14,
+      "topicId": "accounting-2-4",
+      "examTopicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ],
+      "paperPages": [
+        14,
+        15
+      ],
+      "schemeRegions": [
+        {
+          "p": 23,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 14 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q7(d)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 7,
+      "taskKey": "7(d)",
+      "title": "Corrected balance sheet",
+      "questionText": "Prepare the corrected balance sheet of Jones.",
+      "totalMarks": 20,
+      "topicId": "accounting-2-4",
+      "examTopicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ],
+      "paperPages": [
+        14,
+        15
+      ],
+      "schemeRegions": [
+        {
+          "p": 24,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 20 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q7(e)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 7,
+      "taskKey": "7(e)",
+      "title": "Trial balance purpose and undetected errors",
+      "questionText": "What is the purpose of preparing a trial balance?\nState and explain two types of errors not revealed by the trial balance.",
+      "totalMarks": 6,
+      "topicId": "accounting-2-4",
+      "examTopicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ],
+      "paperPages": [
+        14,
+        15
+      ],
+      "schemeRegions": [
+        {
+          "p": 24,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The paper prints 6 marks for this part. The scheme gives it no separate box: its boxes for (a) to (d) total 94 of the question’s 100, leaving the printed 6.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q8(a)(i)-break-even",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 8,
+      "taskKey": "8(a)(i)-break-even",
+      "title": "Break-even point",
+      "questionText": "Calculate the break‐even point and margin of safety in units.",
+      "totalMarks": 10,
+      "topicId": "accounting-9-3",
+      "examTopicIds": [
+        "accounting-higher-costing-marginal"
+      ],
+      "paperPages": [
+        16
+      ],
+      "schemeRegions": [
+        {
+          "p": 25,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": "Calculate the break-even point in units.",
+      "allocationNote": "10 marks: the scheme prints [10] beside the break-even result and [1] beside each of seven marginal-statement figures. Part (a) is boxed 50 = 10 + 5 + 15 + 16 + 4, so those statement credits fall within the 10.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q8(a)(i)-margin-of-safety",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 8,
+      "taskKey": "8(a)(i)-margin-of-safety",
+      "title": "Margin of safety",
+      "questionText": "Calculate the break‐even point and margin of safety in units.",
+      "totalMarks": 5,
+      "topicId": "accounting-9-3",
+      "examTopicIds": [
+        "accounting-higher-costing-marginal"
+      ],
+      "paperPages": [
+        16
+      ],
+      "schemeRegions": [
+        {
+          "p": 25,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": "Calculate the margin of safety in units.",
+      "allocationNote": "The SEC scheme allocates 5 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q8(a)(ii)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 8,
+      "taskKey": "8(a)(ii)",
+      "title": "Profit after price, advertising and volume changes",
+      "questionText": "Calculate the profit the company would make if it reduced its selling price by 10%, increased advertising by €100,000 and increased the sales volume by 10%, with all other cost levels and percentages remaining unchanged.",
+      "totalMarks": 15,
+      "topicId": "accounting-9-3",
+      "examTopicIds": [
+        "accounting-higher-costing-marginal"
+      ],
+      "paperPages": [
+        16
+      ],
+      "schemeRegions": [
+        {
+          "p": 25,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 15 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q8(a)(iii)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 8,
+      "taskKey": "8(a)(iii)",
+      "title": "Selling price at 50% capacity",
+      "questionText": "Calculate the selling price that would earn current profits from the sales if the firm had to operate at 50% capacity and all other costs remaining unchanged.",
+      "totalMarks": 16,
+      "topicId": "accounting-9-3",
+      "examTopicIds": [
+        "accounting-higher-costing-marginal"
+      ],
+      "paperPages": [
+        16
+      ],
+      "schemeRegions": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 25,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 16 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q8(a)(iv)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 8,
+      "taskKey": "8(a)(iv)",
+      "title": "Uses of the contribution sales ratio",
+      "questionText": "For what purpose is the contribution sales ratio regularly used?",
+      "totalMarks": 4,
+      "topicId": "accounting-9-3",
+      "examTopicIds": [
+        "accounting-higher-costing-marginal"
+      ],
+      "paperPages": [
+        16
+      ],
+      "schemeRegions": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 4 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q8(b)(i)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 8,
+      "taskKey": "8(b)(i)",
+      "title": "Separate production overheads",
+      "questionText": "Separate production overheads into fixed and variable elements.",
+      "totalMarks": 8,
+      "topicId": "accounting-9-5",
+      "examTopicIds": [
+        "accounting-higher-budgeting-flexible"
+      ],
+      "paperPages": [
+        17
+      ],
+      "schemeRegions": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "Variable cost 4 + fixed cost 4 total 8. A misprint in the scheme: its working prints \"45,000 x €3.50\", but the 202,500 it prints is 45,000 x €4.50.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q8(b)(ii)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 8,
+      "taskKey": "8(b)(ii)",
+      "title": "Separate other overhead costs",
+      "questionText": "Separate other overhead costs into fixed and variable elements.",
+      "totalMarks": 8,
+      "topicId": "accounting-9-5",
+      "examTopicIds": [
+        "accounting-higher-budgeting-flexible"
+      ],
+      "paperPages": [
+        17
+      ],
+      "schemeRegions": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "Variable cost 4 + fixed cost 4 total 8. A misprint in the scheme: its working prints \"45,000 x €3.50\", but the 171,000 it prints is 45,000 x €3.80.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q8(b)(iii)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 8,
+      "taskKey": "8(b)(iii)",
+      "title": "Flexible budget at 95% activity",
+      "questionText": "Prepare a flexible budget for 95% activity level using marginal costing principles, and show the contribution.",
+      "totalMarks": 14,
+      "topicId": "accounting-9-5",
+      "examTopicIds": [
+        "accounting-higher-budgeting-flexible"
+      ],
+      "paperPages": [
+        17
+      ],
+      "schemeRegions": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 26,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "Published line credits 2+1+1+1+1+3+1+1+1+2 total 14; part (b) is boxed 30 = 8 + 8 + 14.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q9(a)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 9,
+      "taskKey": "9(a)",
+      "title": "Six-month cash budget",
+      "questionText": "Prepare a cash budget for the six months July to December 2022.",
+      "totalMarks": 57,
+      "topicId": "accounting-9-6",
+      "examTopicIds": [
+        "accounting-higher-budgeting-cash"
+      ],
+      "paperPages": [
+        18
+      ],
+      "schemeRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 57 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q9(b)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 9,
+      "taskKey": "9(b)",
+      "title": "Budgeted profit and loss account",
+      "questionText": "Prepare a budgeted profit and loss account for the six months ended 31/12/2022.",
+      "totalMarks": 17,
+      "topicId": "accounting-9-6",
+      "examTopicIds": [
+        "accounting-higher-budgeting-cash"
+      ],
+      "paperPages": [
+        18
+      ],
+      "schemeRegions": [
+        {
+          "p": 29,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 28,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 17 marks to this task. Misprints in the scheme: its sales line prints \"(42,400 x 80)\" and its discount working \"3446000 x .03 x .05\"; the figures it prints, 3,446,000 and 51,690, follow the paper.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
+    },
+    {
+      "id": "acc-2022-hl-deferred-q9(c)",
+      "year": 2022,
+      "level": "higher",
+      "paperFileid": "LC032ALP000EV-deferred.pdf",
+      "questionNumber": 9,
+      "taskKey": "9(c)",
+      "title": "Principal budget factor and cash-budget advice",
+      "questionText": "Explain what is meant by the term ‘principal budget factor’. Give two examples, other than sales.\nOn the basis of the cash budget you have prepared what advice would you give Oak Ltd?",
+      "totalMarks": 6,
+      "topicId": "accounting-9-4",
+      "examTopicIds": [
+        "accounting-higher-budgeting-cash"
+      ],
+      "paperPages": [
+        18
+      ],
+      "schemeRegions": [
+        {
+          "p": 29,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 28,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "taskFocus": null,
+      "allocationNote": "The SEC scheme allocates 6 marks to this task.",
+      "reviewedAt": "2026-11-20",
+      "sitting": "deferred"
     },
     {
       "id": "acc-2022-hl-q1A(a)",

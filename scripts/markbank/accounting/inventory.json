@@ -1477,6 +1477,19 @@
         "9"
       ],
       "reviewStatus": "pending"
+    },
+    {
+      "year": 2022,
+      "fileid": "LC032ALP000EV-deferred.pdf",
+      "sitting": "deferred",
+      "level": "higher",
+      "lang": "ev",
+      "paperPages": 20,
+      "paperSha256": "d821375c7e958973bc289760aaec13ee0c62e4c7215b2405ad62651dc40d38e1",
+      "schemePages": 31,
+      "schemeSha256": "16f6d9952ff81824f30231da26cef915ca9b361521322190a74df22681602fe3",
+      "sidecarQuestions": [],
+      "reviewStatus": "pending"
     }
   ]
 }

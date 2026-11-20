@@ -137,7 +137,9 @@ def shipped_cards(subject):
     """
     if subject == 'accounting':
         cards = json.load(open(os.path.join(DECKS, subject, 'authored.json'), encoding='utf-8'))['cards']
-        return [(c['id'], f"{c['year']} {'HL' if c['level'] == 'higher' else 'OL'} Q{c['taskKey']}") for c in cards]
+        # As factory.ts writes it: a deferred sitting's task says so (" — Deferred sitting").
+        return [(c['id'], f"{c['year']} {'HL' if c['level'] == 'higher' else 'OL'} Q{c['taskKey']}"
+                 + (' — Deferred sitting' if c.get('sitting') == 'deferred' else '')) for c in cards]
     if subject == 'physical-education':
         # Same manifest as the runtime level modules; old identities are also
         # pinned independently by the generator and preservation regression.

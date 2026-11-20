@@ -54,9 +54,19 @@ HEAD=re.compile(r'^\(([a-z]{1,4})\)$')
 ROMAN={'i','ii','iii','iv','v','vi','vii','viii','ix','x'}
 INTRO=re.compile(r'INTRODUCTION|Marks allocated to each line', re.I)
 docs={}; page_cache={}
+def scheme_path(year,fid):
+    # A deferred sitting's edition ("LC032ALP000EV-deferred.pdf", accounting/build.py) reads the deferred scheme,
+    # filed under June's id.
+    if fid.endswith('-deferred.pdf'):
+        return f"paper-trail-corpus/deferredmarkingschemes/{year}/{fid.replace('-deferred.pdf', '.pdf')}"
+    return f'paper-trail-corpus/markingschemes/{year}/{fid}'
+def june_2022(year,fid):
+    # June 2022's schemes set subset fonts with no ToUnicode map and price "(3)"; the 2022 deferred scheme reads as
+    # text and prices "[3]", as the other years do.
+    return year==2022 and not fid.endswith('-deferred.pdf')
 def doc_for(year,fid):
     key=(year,fid)
-    if key not in docs: docs[key]=fitz.open(f'paper-trail-corpus/markingschemes/{year}/{fid}')
+    if key not in docs: docs[key]=fitz.open(scheme_path(year,fid))
     return docs[key]
 def tokens(word, x0, x1):
     """Split a word on bracketed marks: '[3](150,700)' -> '[3]', '(150,700)'; '180,000[1]' -> '180,000', '[1]'."""
@@ -106,7 +116,7 @@ def page_lines(year,fid,p):
     key=(year,fid,p)
     if key in page_cache: return page_cache[key]
     page=doc_for(year,fid)[p-1]; W,H=page.rect.width,page.rect.height; bx=boxes(page)
-    words=list(words_2022(page) if year==2022 else page.get_text('words'))
+    words=list(words_2022(page) if june_2022(year,fid) else page.get_text('words'))
     dirs=collections.Counter(tuple(round(v) for v in l['dir']) for b in page.get_text('dict')['blocks'] for l in b.get('lines',[]))
     if dirs and dirs.most_common(1)[0][0]==(0,-1):
         # the page is printed sideways, text running up the page: read it in its own frame (x along the text, y across it)
@@ -134,7 +144,7 @@ def page_lines(year,fid,p):
         if len(ws)==1 and re.fullmatch(r'\d{1,3}', ws[0][3]) and ws[0][0]/W>=0.75:
             ws=[(ws[0][0],ws[0][1],ws[0][2],f'<box {ws[0][3]}>')]
         # the 2022 schemes price a figure with the mark beside it: "(3)" or a bare digit right after the figure, in a marks column or mid-line
-        if year==2022:
+        if june_2022(year,fid):
             for k in range(1,len(ws)):
                 x0,y0,x1,t=ws[k]
                 if FIG.match(ws[k-1][3]) and x0/W>=0.4 and (re.fullmatch(r'\((\d{1,2})\)', t) or (re.fullmatch(r'\d{1,2}', t) and int(t)<=12)):
@@ -491,7 +501,7 @@ for item in review['tasks']:
         raise ValueError(f'{cid}: duplicate or unknown reviewed task')
     review_ids.add(cid)
     c=by_id[cid]; source=item['source']
-    expected=f"paper-trail-corpus/markingschemes/{c['year']}/{c['paperFileid']}"
+    expected=scheme_path(c['year'], c['paperFileid'])
     if source['path'] != expected:
         raise ValueError(f'{cid}: wrong reviewed source')
     if expected not in checked_sources:

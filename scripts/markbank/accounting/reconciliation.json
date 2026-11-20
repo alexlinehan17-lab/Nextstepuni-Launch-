@@ -1,20 +1,20 @@
 {
   "subjectId": "accounting",
-  "scope": "All local Paper Trail Accounting papers, 2010–2026, Higher and Ordinary, English and Irish",
+  "scope": "All local Paper Trail Accounting papers, 2010–2026, Higher and Ordinary, English and Irish, and the deferred sittings' English papers",
   "method": "Independent reconciliation of visually reviewed boundaries against source files, published parent tariffs, preserved sidecars, one-card printed choices and generated artifacts. Runtime Atlas and canonical-topic checks are in markBankAccounting.test.tsx.",
   "sourceReconciliationPassed": true,
-  "checks": 19944,
+  "checks": 20427,
   "openIssues": [],
-  "sourceEditions": 68,
+  "sourceEditions": 69,
   "visuallyReviewedPages": {
-    "paper": 1056,
-    "scheme": 1630
+    "paper": 1076,
+    "scheme": 1661
   },
-  "logicalTasks": 1365,
+  "logicalTasks": 1408,
   "selectionClassifications": {
-    "paper-level-choice": 441,
-    "open-response": 105,
-    "not-a-selection": 1129,
+    "paper-level-choice": 450,
+    "open-response": 109,
+    "not-a-selection": 1134,
     "finite-pool-one-card": 1,
     "equivalent-units": 1,
     "comparison-required": 1,
@@ -2517,6 +2517,112 @@
         "9(d)",
         "9(e)",
         "9(f)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2022/LC032ALP000EV-deferred.pdf",
+      "question": 1,
+      "tasks": [
+        "1A(a)",
+        "1A(b)",
+        "1B(a)-manufacturing",
+        "1B(a)-trading-profit",
+        "1B(b)"
+      ],
+      "allRouteMarks": 240
+    },
+    {
+      "edition": "2022/LC032ALP000EV-deferred.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)",
+        "2(c)",
+        "2(d)(i)",
+        "2(d)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2022/LC032ALP000EV-deferred.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)",
+        "3(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2022/LC032ALP000EV-deferred.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)-profit-loss",
+        "4(a)-notes",
+        "4(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2022/LC032ALP000EV-deferred.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2022/LC032ALP000EV-deferred.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)",
+        "6(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2022/LC032ALP000EV-deferred.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)",
+        "7(d)",
+        "7(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2022/LC032ALP000EV-deferred.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)-break-even",
+        "8(a)(i)-margin-of-safety",
+        "8(a)(ii)",
+        "8(a)(iii)",
+        "8(a)(iv)",
+        "8(b)(i)",
+        "8(b)(ii)",
+        "8(b)(iii)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2022/LC032ALP000EV-deferred.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)"
       ],
       "allRouteMarks": 80
     },
