@@ -1367,7 +1367,7 @@ const ART_ADDED: Record<number, { higher: number; ordinary: number }> = {
 };
 /* The SEC's deferred sittings (art_cards.py DEFERRED_SITTINGS), all new cards (art-<year>-<lvl>-deferred-…), pinned
  * per level beside the June additions and never folded into the frozen hashes. */
-const ART_DEFERRED_ADDED = { higher: 62 + 26, ordinary: 0 };
+const ART_DEFERRED_ADDED = { higher: 62 + 26, ordinary: 26 };
 const isArtDeferred = (id: string) => /^art-\d{4}-(?:hl|ol)-deferred-/.test(id);
 const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED || isArtDeferred(id);
 /* Spanish keeps its 347 2021-2025 IDs frozen (204 Higher + 143 Ordinary, the

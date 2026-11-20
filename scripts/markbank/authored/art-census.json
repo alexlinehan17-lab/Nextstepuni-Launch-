@@ -26,8 +26,8 @@
   "selectionUnit": "One card per separately marked printed task. Where the student chooses among printed items, the task is one card showing every option; holistic Section B/C essays remain intact.",
   "expectedCards": {
     "higher": 990,
-    "ordinary": 854,
-    "total": 1844
+    "ordinary": 880,
+    "total": 1870
   },
   "papers": [
     {
@@ -16909,6 +16909,249 @@
           "number": 19,
           "cardId": "art-2023-hl-deferred-q19",
           "questionRef": "2023 HL Q19 — Deferred sitting",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "sitting": "deferred",
+      "paperFileid": "LC014GLP000EV-deferred",
+      "expectedCards": 26,
+      "cards": [
+        {
+          "number": 1,
+          "cardId": "art-2023-ol-deferred-q1-a",
+          "questionRef": "2023 OL Q1(a) — Deferred sitting",
+          "section": "A",
+          "paperPage": 3,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 1,
+          "cardId": "art-2023-ol-deferred-q1-b",
+          "questionRef": "2023 OL Q1(b) — Deferred sitting",
+          "section": "A",
+          "paperPage": 3,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 2,
+          "cardId": "art-2023-ol-deferred-q2-a",
+          "questionRef": "2023 OL Q2(a) — Deferred sitting",
+          "section": "A",
+          "paperPage": 4,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 2,
+          "cardId": "art-2023-ol-deferred-q2-b",
+          "questionRef": "2023 OL Q2(b) — Deferred sitting",
+          "section": "A",
+          "paperPage": 4,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 3,
+          "cardId": "art-2023-ol-deferred-q3-a",
+          "questionRef": "2023 OL Q3(a) — Deferred sitting",
+          "section": "A",
+          "paperPage": 5,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 3,
+          "cardId": "art-2023-ol-deferred-q3-b",
+          "questionRef": "2023 OL Q3(b) — Deferred sitting",
+          "section": "A",
+          "paperPage": 5,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 4,
+          "cardId": "art-2023-ol-deferred-q4-a",
+          "questionRef": "2023 OL Q4(a) — Deferred sitting",
+          "section": "A",
+          "paperPage": 6,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 4,
+          "cardId": "art-2023-ol-deferred-q4-b",
+          "questionRef": "2023 OL Q4(b) — Deferred sitting",
+          "section": "A",
+          "paperPage": 6,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 5,
+          "cardId": "art-2023-ol-deferred-q5-a",
+          "questionRef": "2023 OL Q5(a) — Deferred sitting",
+          "section": "A",
+          "paperPage": 7,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 5,
+          "cardId": "art-2023-ol-deferred-q5-b",
+          "questionRef": "2023 OL Q5(b) — Deferred sitting",
+          "section": "A",
+          "paperPage": 7,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 6,
+          "cardId": "art-2023-ol-deferred-q6-a",
+          "questionRef": "2023 OL Q6(a) — Deferred sitting",
+          "section": "A",
+          "paperPage": 8,
+          "totalMarks": 6,
+          "hasIllustration": false
+        },
+        {
+          "number": 6,
+          "cardId": "art-2023-ol-deferred-q6-b",
+          "questionRef": "2023 OL Q6(b) — Deferred sitting",
+          "section": "A",
+          "paperPage": 8,
+          "totalMarks": 4,
+          "hasIllustration": false
+        },
+        {
+          "number": 7,
+          "cardId": "art-2023-ol-deferred-q7-a",
+          "questionRef": "2023 OL Q7(a) — Deferred sitting",
+          "section": "A",
+          "paperPage": 9,
+          "totalMarks": 6,
+          "hasIllustration": true
+        },
+        {
+          "number": 7,
+          "cardId": "art-2023-ol-deferred-q7-b",
+          "questionRef": "2023 OL Q7(b) — Deferred sitting",
+          "section": "A",
+          "paperPage": 9,
+          "totalMarks": 4,
+          "hasIllustration": true
+        },
+        {
+          "number": 8,
+          "cardId": "art-2023-ol-deferred-q8",
+          "questionRef": "2023 OL Q8 — Deferred sitting",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 9,
+          "cardId": "art-2023-ol-deferred-q9",
+          "questionRef": "2023 OL Q9 — Deferred sitting",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 10,
+          "cardId": "art-2023-ol-deferred-q10",
+          "questionRef": "2023 OL Q10 — Deferred sitting",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 11,
+          "cardId": "art-2023-ol-deferred-q11",
+          "questionRef": "2023 OL Q11 — Deferred sitting",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 12,
+          "cardId": "art-2023-ol-deferred-q12",
+          "questionRef": "2023 OL Q12 — Deferred sitting",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 13,
+          "cardId": "art-2023-ol-deferred-q13",
+          "questionRef": "2023 OL Q13 — Deferred sitting",
+          "section": "B",
+          "paperPage": 11,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2023-ol-deferred-q14",
+          "questionRef": "2023 OL Q14 — Deferred sitting",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2023-ol-deferred-q15",
+          "questionRef": "2023 OL Q15 — Deferred sitting",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 16,
+          "cardId": "art-2023-ol-deferred-q16",
+          "questionRef": "2023 OL Q16 — Deferred sitting",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 17,
+          "cardId": "art-2023-ol-deferred-q17",
+          "questionRef": "2023 OL Q17 — Deferred sitting",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 18,
+          "cardId": "art-2023-ol-deferred-q18",
+          "questionRef": "2023 OL Q18 — Deferred sitting",
+          "section": "C",
+          "paperPage": 17,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 19,
+          "cardId": "art-2023-ol-deferred-q19",
+          "questionRef": "2023 OL Q19 — Deferred sitting",
           "section": "C",
           "paperPage": 17,
           "totalMarks": 50,

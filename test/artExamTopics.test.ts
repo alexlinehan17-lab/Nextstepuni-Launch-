@@ -191,8 +191,9 @@ describe('Art exam-topic registry', () => {
     });
     // June's papers; each carded deferred sitting's paper (art_deferred.py) is its own file after them.
     const deferred = papers.filter(paper => paper.fileid.endsWith('-deferred.pdf'));
-    expect([...deferred].sort((a, b) => a.year - b.year).map(paper => [paper.year, paper.level, paper.fileid, paper.q.length]))
-      .toEqual([[2022, 'higher', 'LC014ALP000EV-deferred.pdf', 20], [2023, 'higher', 'LC014ALP000EV-deferred.pdf', 19]]);
+    expect([...deferred].sort((a, b) => a.year - b.year || a.level.localeCompare(b.level)).map(paper => [paper.year, paper.level, paper.fileid, paper.q.length]))
+      .toEqual([[2022, 'higher', 'LC014ALP000EV-deferred.pdf', 20], [2023, 'higher', 'LC014ALP000EV-deferred.pdf', 19],
+        [2023, 'ordinary', 'LC014GLP000EV-deferred.pdf', 19]]);
     papers = papers.filter(paper => !deferred.includes(paper));
     expect(papers).toHaveLength(152);
     expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(2154);
@@ -275,7 +276,7 @@ describe('Art exam-topic registry', () => {
       }
     }
     // June's 65 scheme maps and 87 paper-only maps, and one paper-only map per carded deferred sitting.
-    expect({ schemeMaps, paperOnlyMaps }).toEqual({ schemeMaps: 65, paperOnlyMaps: 87 + 2 });
+    expect({ schemeMaps, paperOnlyMaps }).toEqual({ schemeMaps: 65, paperOnlyMaps: 87 + 3 });
   });
 
   it('files every Mark Bank card under a heading the Atlas gives its question', () => {
@@ -294,8 +295,8 @@ describe('Art exam-topic registry', () => {
 
   it('surfaces all 1,077 entitled questions and every authored Mark Bank card', () => {
     expect(subjectAtlasStats('art')).toMatchObject({
-      // June's 1,077 and each carded deferred sitting's own questions (2022 Higher 20, 2023 Higher 19).
-      questions: 1077 + 20 + 19,
+      // June's 1,077 and each carded deferred sitting's own questions (2022 Higher 20, 2023 Higher 19, Ordinary 19).
+      questions: 1077 + 20 + 19 + 19,
       topics: 32,
       yearMin: 2010,
       yearMax: 2026,
@@ -304,11 +305,11 @@ describe('Art exam-topic registry', () => {
     // the 68 withdrawn per-option ids are cardAliases.ts keys. The 2026 papers
     // add 52 (26 Higher, 26 Ordinary) and each further year (2010-2020) its own (ART_ADDED in the preservation test).
     // June's 1756 and the carded deferred sittings' cards (art_cards.py DEFERRED_SITTINGS): 2022 Higher 62,
-    // 2023 Higher 26.
-    expect(authoredArt.cardCount).toBe(1756 + 62 + 26);
+    // 2023 Higher 26, 2023 Ordinary 26.
+    expect(authoredArt.cardCount).toBe(1756 + 62 + 26 + 26);
     expect(ART_HIGHER).toHaveLength(902 + 62 + 26);
-    expect(ART_ORDINARY).toHaveLength(854);
-    expect(new Set([...ART_HIGHER, ...ART_ORDINARY].map(card => card.id)).size).toBe(1756 + 62 + 26);
+    expect(ART_ORDINARY).toHaveLength(854 + 26);
+    expect(new Set([...ART_HIGHER, ...ART_ORDINARY].map(card => card.id)).size).toBe(1756 + 62 + 26 + 26);
     expect([...ART_HIGHER, ...ART_ORDINARY].filter(card => /^art-\d{4}-(?:hl|ol)-deferred-/.test(card.id))
       .every(card => card.questionRef.endsWith(' — Deferred sitting') && card.paperFileid.endsWith('-deferred')
         && card.schemeCitation.includes(', deferred examination,'))).toBe(true);

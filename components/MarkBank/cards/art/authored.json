@@ -1,7 +1,7 @@
 {
   "subjectId": "art",
   "corpus": "All separately marked written-examination tasks, 2010–2026; a printed choice is one card",
-  "cardCount": 1844,
+  "cardCount": 1870,
   "auditedYears": [
     2010,
     2011,
@@ -2152,6 +2152,250 @@
               ],
               "guidance": [
                 "A thorough choice of artists, and examples of artworks/artefacts that are most relevant/recognised and support a highly accurate response.",
+                "A thorough understanding of the selected artists used and a thorough understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            }
+          }
+        },
+        {
+          "id": "visual-language",
+          "label": "Visual Language (terminology and/or sketches)",
+          "maxMarks": 10,
+          "page": 25,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited use and understanding of terminology to communicate ideas.",
+                "If sketches are used: the sketches demonstrate a limited ability to support the answer and communicate ideas."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good use and understanding of terminology which is accurate and relevant and adds to the communication of ideas.",
+                "If sketches are used: the sketches demonstrate a good ability to support the answer and communicate ideas. The sketches are mostly accurate and relevant."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough use and understanding of terminology which is accurate, relevant and supports the communication of ideas.",
+                "If sketches are used: the sketches demonstrate a thorough ability to support the answer and communicate ideas. The sketches are thorough, accurate and relevant."
+              ]
+            }
+          }
+        }
+      ],
+      "notes": {
+        "current-short-descriptors": {
+          "page": 16,
+          "text": [
+            "These descriptors should be interpreted in the context of the challenges and demands of the question the candidate has chosen."
+          ]
+        },
+        "current-long-descriptors": {
+          "page": 21,
+          "text": [
+            "Candidates may choose from a wide range of relevant examples and content to answer a question. Relevant content must be credited.",
+            "These descriptors should be interpreted in the context of the challenges and demands of the question the candidate has chosen."
+          ]
+        }
+      }
+    },
+    "2023-ordinary-deferred": {
+      "short": {
+        "page": 17,
+        "lead": "The response shows evidence of the following where appropriate:",
+        "bands": {
+          "low": [
+            "Limited understanding of the requirements of the question.",
+            "Limited application of accurate and informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A limited level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Limited analysis, interpretation and evaluation of any given stimulus material.",
+            "Limited presentation of accurate and/or relevant arguments, explanations and ideas which are based on little or no evidence.",
+            "Presentation of an answer with limited and/or no coherence and focus.",
+            "Use of visual art terminology and/or sketches with limited accuracy and relevance."
+          ],
+          "moderate": [
+            "Good understanding of the requirements of the question.",
+            "Good application of accurate and informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A good level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Good analysis, interpretation and evaluation of any given stimulus material.",
+            "Good presentation of accurate and relevant arguments, explanations and ideas which are in the main based on evidence.",
+            "Presentation of a coherent and focused answer.",
+            "Good accurate and relevant use of visual art terminology and/ or sketches."
+          ],
+          "high": [
+            "Thorough understanding of the requirements of the question.",
+            "Thorough application of accurate and well-informed practice, knowledge and understanding to new and unfamiliar situations.",
+            "A thorough level of problem-solving skills in relation to Visual Studies and the practical application of art.",
+            "Consistent and well-informed analysis, interpretation and evaluation of any given stimulus material.",
+            "Thorough presentation of accurate and relevant arguments, explanations and ideas based on evidence.",
+            "Thorough presentation of a coherent and focused answer.",
+            "Thorough, accurate and relevant use of visual art terminology and/ or sketches."
+          ]
+        }
+      },
+      "long": [
+        {
+          "id": "coherence-focus",
+          "label": "Coherence and focus",
+          "maxMarks": 10,
+          "page": 22,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited ability to understand the demands of the question and to create an answer based on the question posed.",
+                "A limited ability to form and present reasonable, sequential and logical arguments and ideas. Work is based on very limited or no evidence.",
+                "A limited ability to articulate a personal understanding in the response."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good ability to understand the demands of the question and to create an appropriate answer based on the question posed.",
+                "A good ability to form and present reasonable, sequential and logical arguments and ideas which are for the most part based on evidence.",
+                "A good ability to articulate a personal understanding in the response."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough ability to understand the demands of the question and to create a high-level answer based on the question posed.",
+                "A thorough ability to form and present reasonable, sequential and logical arguments and ideas which are clearly based on evidence.",
+                "A thorough ability to articulate a personal understanding in the response."
+              ]
+            }
+          }
+        },
+        {
+          "id": "subject-knowledge",
+          "label": "Subject Knowledge",
+          "maxMarks": 20,
+          "page": 23,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "A limited level of recall, knowledge and understanding of the section of focus.",
+                "A limited level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A limited critical or perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "guidance": [
+                "A good level of recall, knowledge and understanding of the section of focus.",
+                "A good level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A good critical and perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            },
+            "high": {
+              "marks": [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "A thorough level of recall, knowledge and understanding of the section of focus.",
+                "A thorough level of critical thinking to analyse and evaluate their knowledge of the section of focus.",
+                "A thorough critical and perceptive use of their knowledge of the section of focus to appropriately support their approach to the question."
+              ]
+            }
+          }
+        },
+        {
+          "id": "relevant-examples",
+          "label": "Relevant Examples",
+          "maxMarks": 10,
+          "page": 24,
+          "lead": "The response shows evidence of:",
+          "bands": {
+            "low": {
+              "marks": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "guidance": [
+                "A limited choice of artists, and examples of artworks/artefacts with limited relevance/not recognised and support a very limited response.",
+                "A limited understanding of the selected artists used and a limited understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            },
+            "moderate": {
+              "marks": [
+                4,
+                5,
+                6
+              ],
+              "guidance": [
+                "A good choice of artists, and examples of artworks/artefacts that are mostly relevant/recognised and support a mostly accurate response.",
+                "A good understanding of the selected artists used and a good understanding of the examples of artworks/artefacts used to justify the response."
+              ]
+            },
+            "high": {
+              "marks": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "A thorough choice of artists and examples of artworks/artefacts that are most relevant/recognised and support a highly accurate response.",
                 "A thorough understanding of the selected artists used and a thorough understanding of the examples of artworks/artefacts used to justify the response."
               ]
             }
@@ -129340,6 +129584,1226 @@
         "Compare and contrast the treatment of the human figure in the work of two Irish artists you have studied from this period.",
         "Refer to two named artists and their artworks.",
         "Include discussion of context, materials, art elements and design principles."
+      ],
+      "assessment": "current-long-descriptors",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q1-a",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2023 OL Q1(a) — Deferred sitting",
+      "questionText": "(a) Describe this poster using the following headings: imagery, lettering, colour.",
+      "paperPage": 3,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2023-q1-ol-a-deferred",
+      "taskRequirements": [
+        "(a) Describe this poster using the following headings: imagery, lettering, colour."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Description of the poster using the given headings: imagery, lettering, colour."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q1",
+        "title": "Official illustrations for Question 1",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014GLP004BV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2023 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "A poster by Holly Pereira is illustrated on the accompanying sheet.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q1-b",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2023 OL Q1(b) — Deferred sitting",
+      "questionText": "(b) Do you think the layout of this poster is effective? Use a tick (✓) to indicate your answer.\nYes: No:\nGive reasons for your answer.",
+      "paperPage": 3,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2023-q1-ol-b-deferred",
+      "taskRequirements": [
+        "(b) Do you think the layout of this poster is effective? Use a tick (✓) to indicate your answer.",
+        "Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) Do you think the layout of the poster is effective? Give reasons for your answer."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q1",
+        "title": "Official illustrations for Question 1",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014GLP004BV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2023 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "A poster by Holly Pereira is illustrated on the accompanying sheet.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q2-a",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2023 OL Q2(a) — Deferred sitting",
+      "questionText": "(a) This artwork was inspired by the sea. What evidence for this can you find in the illustration shown? Give reasons for your answer.",
+      "paperPage": 4,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2023-q2-ol-a-deferred",
+      "taskRequirements": [
+        "(a) This artwork was inspired by the sea. What evidence for this can you find in the illustration shown? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Evidence found in the illustration to show inspiration from the sea. Give reasons for your answer."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q2",
+        "title": "Official illustrations for Question 2",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014GLP004BV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2023 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "A ceramic bowl by Darren Francis Cassidy called Na Farraige (Of the Sea) is illustrated on the accompanying sheet.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q2-b",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2023 OL Q2(b) — Deferred sitting",
+      "questionText": "(b) Do you think the artist focused more on the form and decoration of the bowl, or the function of the bowl, or both, when designing it? Use a tick (✓) to indicate your answer.\nForm and decoration Function Both\nGive reasons for your answer.",
+      "paperPage": 4,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2023-q2-ol-b-deferred",
+      "taskRequirements": [
+        "(b) Do you think the artist focused more on the form and decoration of the bowl, or the function of the bowl, or both, when designing it? Use a tick (✓) to indicate your answer.",
+        "Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) Did the artist focus more on the form and decoration of the bowl or the function of the bowl or both when designing it? Give reasons for your answer."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q2",
+        "title": "Official illustrations for Question 2",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014GLP004BV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2023 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "A ceramic bowl by Darren Francis Cassidy called Na Farraige (Of the Sea) is illustrated on the accompanying sheet.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q3-a",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2023 OL Q3(a) — Deferred sitting",
+      "questionText": "(a) Describe this sculpture using the following headings: subject matter, form, materials.",
+      "paperPage": 5,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2023-q3-ol-a-deferred",
+      "taskRequirements": [
+        "(a) Describe this sculpture using the following headings: subject matter, form, materials."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Description of the sculpture using the following headings: subject matter, form, materials."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q3",
+        "title": "Official illustrations for Question 3",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014GLP004BV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2023 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "The Púca, a sculpture by Aidan Harte is illustrated on the accompanying sheet.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q3-b",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2023 OL Q3(b) — Deferred sitting",
+      "questionText": "(b) What mood does this sculpture communicate? Give reasons for your answer using evidence from the image shown.",
+      "paperPage": 5,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        18
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2023-q3-ol-b-deferred",
+      "taskRequirements": [
+        "(b) What mood does this sculpture communicate? Give reasons for your answer using evidence from the image shown."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) Mood communicated by this sculpture. Give reasons for your answer."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q3",
+        "title": "Official illustrations for Question 3",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014GLP004BV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2023 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "The Púca, a sculpture by Aidan Harte is illustrated on the accompanying sheet.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q4-a",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2023 OL Q4(a) — Deferred sitting",
+      "questionText": "(a) Why might an artist create a portrait? Give reasons for your answer.",
+      "paperPage": 6,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 5,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2023-q4-ol-a-deferred",
+      "taskRequirements": [
+        "(a) Why might an artist create a portrait? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "(a) Why an artist might create a portrait. Give reasons for your answer."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4,
+              5
+            ]
+          }
+        }
+      ],
+      "stem": "A portrait is an artwork about a person.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q4-b",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2023 OL Q4(b) — Deferred sitting",
+      "questionText": "(b) What materials and processes would you like an artist, creating a portrait of you, to use? Give reasons for your answer.",
+      "paperPage": 6,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 5,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2023-q4-ol-b-deferred",
+      "taskRequirements": [
+        "(b) What materials and processes would you like an artist, creating a portrait of you, to use? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "(b) Description of the materials and processes you would like an artist, creating a portrait of you, to use. Give reasons for your answer."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4,
+              5
+            ]
+          }
+        }
+      ],
+      "stem": "A portrait is an artwork about a person.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q5-a",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2023 OL Q5(a) — Deferred sitting",
+      "questionText": "(a) Describe this artwork using the following headings: form, use of materials.",
+      "paperPage": 7,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2023-q5-ol-a-deferred",
+      "taskRequirements": [
+        "(a) Describe this artwork using the following headings: form, use of materials."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Description of the artwork using the following headings: form, use of materials."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q5",
+        "title": "Official illustrations for Question 5",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014GLP004BV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2023 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "A sculptural light by Niamh Barry is illustrated on the accompanying sheet.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q5-b",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2023 OL Q5(b) — Deferred sitting",
+      "questionText": "(b) What kind of space or interior would best suit this artwork? Give reasons for your answer.",
+      "paperPage": 7,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-1",
+      "conceptId": "art-2023-q5-ol-b-deferred",
+      "taskRequirements": [
+        "(b) What kind of space or interior would best suit this artwork? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) The kind of space or interior that would best suit this artwork. Give reasons for your answer."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q5",
+        "title": "Official illustrations for Question 5",
+        "pages": [
+          2
+        ],
+        "sourceFileid": "LC014GLP004BV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2023 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "A sculptural light by Niamh Barry is illustrated on the accompanying sheet.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q6-a",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2023 OL Q6(a) — Deferred sitting",
+      "questionText": "(a) Why might it be important for the public to support and buy from their local design and craft communities? Give reasons for your answer.",
+      "paperPage": 8,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-0",
+      "conceptId": "art-2023-q6-ol-a-deferred",
+      "taskRequirements": [
+        "(a) Why might it be important for the public to support and buy from their local design and craft communities? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Why it might be important for the public to support and buy from their local design and craft communities. Give reasons for your answer."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "stem": "Please read the text below. Design & Crafts Council Ireland launched ‘Made Local, Made to Last’ in 2022. The nationwide campaign highlights the importance of supporting your local design and craft community and buying sustainably. (Adapted from www.dcci.ie)",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q6-b",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2023 OL Q6(b) — Deferred sitting",
+      "questionText": "(b) How could an artist visually research their local environment to develop ideas for their artwork?",
+      "paperPage": 8,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        19
+      ],
+      "topicId": "art-6-0",
+      "conceptId": "art-2023-q6-ol-b-deferred",
+      "taskRequirements": [
+        "(b) How could an artist visually research their local environment to develop ideas for their artwork?"
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) How an artist could visually research their local environment to develop ideas for their artwork."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "stem": "Please read the text below. Design & Crafts Council Ireland launched ‘Made Local, Made to Last’ in 2022. The nationwide campaign highlights the importance of supporting your local design and craft community and buying sustainably. (Adapted from www.dcci.ie)",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q7-a",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2023 OL Q7(a) — Deferred sitting",
+      "questionText": "(a) Describe this interior space and its furnishings using the following headings: shape, colour.",
+      "paperPage": 9,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 6,
+      "schemePage": [
+        16,
+        17,
+        20
+      ],
+      "topicId": "art-6-3",
+      "conceptId": "art-2023-q7-ol-a-deferred",
+      "taskRequirements": [
+        "(a) Describe this interior space and its furnishings using the following headings: shape, colour."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Part (a)",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidance": [
+            "(a) Description of this interior space and its furnishings using the following headings: shape, colour."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1,
+              2
+            ],
+            "moderate": [
+              3,
+              4
+            ],
+            "high": [
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q7",
+        "title": "Official illustrations for Question 7",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014GLP004BV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2023 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "An interior space by Charlap Hyman and Herrero is illustrated on the accompanying sheet.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q7-b",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "A",
+      "questionRef": "2023 OL Q7(b) — Deferred sitting",
+      "questionText": "(b) What mood does this interior space communicate? Give reasons for your answer.",
+      "paperPage": 9,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 4,
+      "schemePage": [
+        16,
+        17,
+        20
+      ],
+      "topicId": "art-6-3",
+      "conceptId": "art-2023-q7-ol-b-deferred",
+      "taskRequirements": [
+        "(b) What mood does this interior space communicate? Give reasons for your answer."
+      ],
+      "assessment": "current-short-descriptors",
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Part (b)",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "(b) The mood communicated by this interior space. Give reasons for your answer."
+          ],
+          "bandMarks": {
+            "low": [
+              0,
+              1
+            ],
+            "moderate": [
+              2,
+              3
+            ],
+            "high": [
+              4
+            ]
+          }
+        }
+      ],
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "ILLUSTRATION SHEET · Q7",
+        "title": "Official illustrations for Question 7",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC014GLP004BV-deferred",
+        "attribution": "Official State Examinations Commission illustration sheet; individual artwork credits are printed on the sheet.",
+        "presentationNote": "Official 2023 SEC examination layout, reproduced page-for-page."
+      },
+      "stem": "An interior space by Charlap Hyman and Herrero is illustrated on the accompanying sheet.",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q8",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "B",
+      "questionRef": "2023 OL Q8 — Deferred sitting",
+      "questionText": "Romanesque and Gothic (c.1000 – 1500s)\nCompare and contrast the features of Romanesque and Gothic architecture.\n• Refer in your answer to one named church or cathedral from each period.\n• Include discussion of context, innovation and invention, materials and techniques.",
+      "paperPage": 11,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-0",
+      "conceptId": "art-2023-q8-ol-response-deferred",
+      "taskRequirements": [
+        "Compare and contrast the features of Romanesque and Gothic architecture.",
+        "Refer in your answer to one named church or cathedral from each period.",
+        "Include discussion of context, innovation and invention, materials and techniques."
+      ],
+      "assessment": "current-long-descriptors",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q9",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "B",
+      "questionRef": "2023 OL Q9 — Deferred sitting",
+      "questionText": "The Renaissance – Proto, Early, High Renaissance & Mannerism (c.1300 – 1600s)\nDescribe and discuss the impact of perspective on Renaissance Art.\n• Refer to named artists and two named artworks.\n• Include discussion of context, art elements and design principles, media and processes.",
+      "paperPage": 11,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-1",
+      "conceptId": "art-2023-q9-ol-response-deferred",
+      "taskRequirements": [
+        "Describe and discuss the impact of perspective on Renaissance Art.",
+        "Refer to named artists and two named artworks.",
+        "Include discussion of context, art elements and design principles, media and processes."
+      ],
+      "assessment": "current-long-descriptors",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q10",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "B",
+      "questionRef": "2023 OL Q10 — Deferred sitting",
+      "questionText": "Baroque (c.1600 – 1700s)\nHow did Baroque artists create a sense of drama in their work?\n• Refer to named artists and two named artworks.\n• Include discussion of context, media and techniques, art elements and design principles.",
+      "paperPage": 11,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-2",
+      "conceptId": "art-2023-q10-ol-response-deferred",
+      "taskRequirements": [
+        "How did Baroque artists create a sense of drama in their work?",
+        "Refer to named artists and two named artworks.",
+        "Include discussion of context, media and techniques, art elements and design principles."
+      ],
+      "assessment": "current-long-descriptors",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q11",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "B",
+      "questionRef": "2023 OL Q11 — Deferred sitting",
+      "questionText": "Realism, Impressionism and Post-Impressionism (c.1850 – 1900s)\nAnalyse how the study of colour and light impacted on the artwork of the period.\n• Refer to named artists and two named artworks.\n• Include discussion of subject matter, media and techniques, art elements and design principles.",
+      "paperPage": 11,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-3",
+      "conceptId": "art-2023-q11-ol-response-deferred",
+      "taskRequirements": [
+        "Analyse how the study of colour and light impacted on the artwork of the period.",
+        "Refer to named artists and two named artworks.",
+        "Include discussion of subject matter, media and techniques, art elements and design principles."
+      ],
+      "assessment": "current-long-descriptors",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q12",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "B",
+      "questionRef": "2023 OL Q12 — Deferred sitting",
+      "questionText": "Modernism (c.1900 – 1960s)\nAnalyse how media and processes were used in innovative ways by two artists from this period.\n• Refer to two named artists and their artworks.\n• Include discussion of context, subject matter, art elements and design principles.",
+      "paperPage": 11,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-4",
+      "conceptId": "art-2023-q12-ol-response-deferred",
+      "taskRequirements": [
+        "Analyse how media and processes were used in innovative ways by two artists from this period.",
+        "Refer to two named artists and their artworks.",
+        "Include discussion of context, subject matter, art elements and design principles."
+      ],
+      "assessment": "current-long-descriptors",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q13",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "B",
+      "questionRef": "2023 OL Q13 — Deferred sitting",
+      "questionText": "Post 1960\nDescribe and discuss how artists used photographs and/or film and video in their work during this period.\n• Refer to two named artists and their artworks.\n• Include discussion of context, subject matter, art elements and design principles.",
+      "paperPage": 11,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-4-5",
+      "conceptId": "art-2023-q13-ol-response-deferred",
+      "taskRequirements": [
+        "Describe and discuss how artists used photographs and/or film and video in their work during this period.",
+        "Refer to two named artists and their artworks.",
+        "Include discussion of context, subject matter, art elements and design principles."
+      ],
+      "assessment": "current-long-descriptors",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q14",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "C",
+      "questionRef": "2023 OL Q14 — Deferred sitting",
+      "questionText": "Pre-Christian (c.4000 BCE – 500 CE)\nDiscuss how metal artefacts developed during the Bronze Age.\n• Refer in your answer to two specific Bronze Age artefacts.\n• Include discussion of context, innovation and invention, techniques used and decoration.",
+      "paperPage": 17,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-0",
+      "conceptId": "art-2023-q14-ol-response-deferred",
+      "taskRequirements": [
+        "Discuss how metal artefacts developed during the Bronze Age.",
+        "Refer in your answer to two specific Bronze Age artefacts.",
+        "Include discussion of context, innovation and invention, techniques used and decoration."
+      ],
+      "assessment": "current-long-descriptors",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q15",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "C",
+      "questionRef": "2023 OL Q15 — Deferred sitting",
+      "questionText": "Insular Art (c.500 – 1100s)\nGive an account of the development of High Crosses during this period.\n• Refer to two named crosses.\n• Include discussion of context, innovation and invention, subject matter, media and processes.",
+      "paperPage": 17,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-1",
+      "conceptId": "art-2023-q15-ol-response-deferred",
+      "taskRequirements": [
+        "Give an account of the development of High Crosses during this period.",
+        "Refer to two named crosses.",
+        "Include discussion of context, innovation and invention, subject matter, media and processes."
+      ],
+      "assessment": "current-long-descriptors",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q16",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "C",
+      "questionRef": "2023 OL Q16 — Deferred sitting",
+      "questionText": "Late Medieval Architecture and Art (c.1100 – 1550s)\nDiscuss the impact of the Gaelic Revival on the architecture and art of the period.\n• Refer to two specific examples.\n• Include discussion of context, art elements and design principles, decoration and techniques used.",
+      "paperPage": 17,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-2",
+      "conceptId": "art-2023-q16-ol-response-deferred",
+      "taskRequirements": [
+        "Discuss the impact of the Gaelic Revival on the architecture and art of the period.",
+        "Refer to two specific examples.",
+        "Include discussion of context, art elements and design principles, decoration and techniques used."
+      ],
+      "assessment": "current-long-descriptors",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q17",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "C",
+      "questionRef": "2023 OL Q17 — Deferred sitting",
+      "questionText": "Georgian period (c.1720 – 1800s)\nWhat influenced the design of Georgian country houses in Ireland?\n• Refer to two named buildings of the period.\n• Include discussion of context, art elements and design principles, structure and decoration.",
+      "paperPage": 17,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-3",
+      "conceptId": "art-2023-q17-ol-response-deferred",
+      "taskRequirements": [
+        "What influenced the design of Georgian country houses in Ireland?",
+        "Refer to two named buildings of the period.",
+        "Include discussion of context, art elements and design principles, structure and decoration."
+      ],
+      "assessment": "current-long-descriptors",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q18",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "C",
+      "questionRef": "2023 OL Q18 — Deferred sitting",
+      "questionText": "Irish Art and Modernism (c.1880 – 1960s)\nDiscuss the influence of international art movements on the work of one Irish artist.\n• Refer to two named artworks by this artist.\n• Include discussion of context, subject matter, style, art elements and design principles.",
+      "paperPage": 17,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-4",
+      "conceptId": "art-2023-q18-ol-response-deferred",
+      "taskRequirements": [
+        "Discuss the influence of international art movements on the work of one Irish artist.",
+        "Refer to two named artworks by this artist.",
+        "Include discussion of context, subject matter, style, art elements and design principles."
+      ],
+      "assessment": "current-long-descriptors",
+      "sitting": "deferred"
+    },
+    {
+      "id": "art-2023-ol-deferred-q19",
+      "year": 2023,
+      "level": "ordinary",
+      "section": "C",
+      "questionRef": "2023 OL Q19 — Deferred sitting",
+      "questionText": "Post 1960\nDiscuss the impact of innovation and invention on two post 1960 Irish artists.\n• Refer to two named artists and their artworks.\n• Include discussion of context, art elements and design principles, media and processes.",
+      "paperPage": 17,
+      "paperFileid": "LC014GLP000EV-deferred",
+      "totalMarks": 50,
+      "schemePage": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "topicId": "art-5-5",
+      "conceptId": "art-2023-q19-ol-response-deferred",
+      "taskRequirements": [
+        "Discuss the impact of innovation and invention on two post 1960 Irish artists.",
+        "Refer to two named artists and their artworks.",
+        "Include discussion of context, art elements and design principles, media and processes."
       ],
       "assessment": "current-long-descriptors",
       "sitting": "deferred"

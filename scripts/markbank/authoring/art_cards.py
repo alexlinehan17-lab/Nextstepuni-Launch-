@@ -1582,15 +1582,20 @@ def comparable(value: str) -> str:
 # by June's own readers (use_sitting): the per-paper tables below replace June's while it is read, and its cards
 # are June's shape with ids art-<year>-<lvl>-deferred-..., citations "... — Deferred sitting" and booklet
 # ...-deferred (deferred_cards).
-DEFERRED_SITTINGS: tuple[tuple[int, str], ...] = ((2022, 'higher'), (2023, 'higher'))
+DEFERRED_SITTINGS: tuple[tuple[int, str], ...] = ((2022, 'higher'), (2023, 'higher'), (2023, 'ordinary'))
 DEFERRED_ILLUSTRATION_SUFFIX = {(2022, 'higher'): 'EV'}
 DEFERRED_TABLES: dict[str, dict[Any, Any]] = {
-    'EXPECTED_QUESTIONS_BY_YEAR_LEVEL': {(2022, 'higher'): 20, (2023, 'higher'): 19},
-    'EXPECTED_CARDS_BY_YEAR_LEVEL': {(2022, 'higher'): 62, (2023, 'higher'): 26},
+    'EXPECTED_QUESTIONS_BY_YEAR_LEVEL': {(2022, 'higher'): 20, (2023, 'higher'): 19, (2023, 'ordinary'): 19},
+    'EXPECTED_CARDS_BY_YEAR_LEVEL': {(2022, 'higher'): 62, (2023, 'higher'): 26, (2023, 'ordinary'): 26},
     # 2023 Higher Q7: the answer areas' labels for the parts the printed question already names.
     'ANSWER_BOX_LABELS': {
         (2023, 'higher', 7): ('Name of film, television programme or video game:', 'Colour and mood:',
                               'Visual aspect:', 'Reasons:'),
+        # 2023 Ordinary: the answer areas' labels for the headings and parts the printed questions already name.
+        (2023, 'ordinary', 1): ('Imagery:', 'Lettering:', 'Colour:'),
+        (2023, 'ordinary', 3): ('Subject matter, form, materials:',),
+        (2023, 'ordinary', 5): ('Space or interior:', 'Reasons:', 'Form:', 'Use of materials:'),
+        (2023, 'ordinary', 7): ('Shape, colour:',),
     },
     'PRINTED_CHOICES': {
         (2022, 'higher', 4): (
@@ -1645,6 +1650,8 @@ DEFERRED_TABLES: dict[str, dict[Any, Any]] = {
         (2022, 'higher'): {1: 1, 3: 1, 6: 1, 17: 1, 18: 1, 20: 1, 10: 2, 11: 2, 12: 2},
         # The 2023 Higher sheet (LC014ALP004BV): page 1 prints Questions 1 and 6, page 2 Questions 3 and 4.
         (2023, 'higher'): {1: 1, 6: 1, 3: 2, 4: 2},
+        # The 2023 Ordinary sheet (LC014GLP004BV): page 1 prints Questions 1 and 7, page 2 Questions 2, 3 and 5.
+        (2023, 'ordinary'): {1: 1, 7: 1, 2: 2, 3: 2, 5: 2},
     },
     # 2023 Higher Section A, each as June files the same kind of question and each among the headings the factual
     # reference gives that deferred question: Berkery's painting (Processes and Media), the Zurich Portrait Prize and
@@ -1654,6 +1661,15 @@ DEFERRED_TABLES: dict[str, dict[Any, Any]] = {
     'CURRENT_SHORT_TOPICS': {
         (2023, 'higher', number): topic for number, topic in enumerate(
             ('art-6-1', 'art-6-0', 'art-6-2', 'art-6-3', 'art-6-0', 'art-6-1', 'art-6-1'), start=1)
+    } | {
+        # 2023 Ordinary Section A, each as June files the same kind of question (the factual reference lists no
+        # 2023 Ordinary deferred heading): the An Post poster, the sea-inspired ceramic bowl's form, decoration and
+        # function (as June 2023 Ordinary Q6's hats), the Puca sculpture and a portrait (Processes and Media, as
+        # June's sculptures and portraits), the light sculpture's form and materials (Processes and Media), buying
+        # from local design and craft communities (Theory and Thinking, as June's craft questions), and the Vitra
+        # Haus interior (Art and the Environment, as June 2023 Higher Q7's interior architecture).
+        (2023, 'ordinary', number): topic for number, topic in enumerate(
+            ('art-6-1', 'art-6-1', 'art-6-1', 'art-6-1', 'art-6-1', 'art-6-0', 'art-6-3'), start=1)
     },
     'LEGACY_QUESTION_TOPICS': {},
     # Reviewed where the keyword reading misfiles the question, each as June files the same kind of question:
@@ -1824,6 +1840,10 @@ def clean_prompt(value: str, sentence_lines: bool = False) -> str:
     # Tick-box options printed on their own line ("Yes [ ]  No [ ]") keep it,
     # so they do not run into the sentences either side (2023 OL Q5(b)).
     value = re.sub(r'(?m)^[ \t]*Yes[ \t]+No[ \t]*$', '\n@@BOXES@@\n', value)
+    # Any other options line printed under "Use a tick (✓) to indicate your answer." keeps its own line too, as
+    # printed ("Yes: No:", "Form and decoration Function Both" in 2023 Ordinary deferred Q1(b) and Q2(b)).
+    value = re.sub(r'(?m)(to indicate your answer\.)[ \t]*\n(?:[ \t]*\n)*[ \t]*(?!@@BOXES@@)([^\n]+?)[ \t]*$',
+                   lambda m: m.group(1) + '\n@@TICKS@@' + ' '.join(m.group(2).split()) + '@@END@@', value)
     # A choose-one directive whose options print one per line with no bullet
     # marker (2012 OL Q11 "Choose one of the following works and answer (a)
     # and (b)", 2010 OL Q11 the same with a colon, then the titled works):
@@ -1855,6 +1875,7 @@ def clean_prompt(value: str, sentence_lines: bool = False) -> str:
     value = value.replace('@@PART@@', '\n')
     value = value.replace('@@AND@@', '\nand')
     value = re.sub(r'\s*@@BOXES@@\s*', '\nYes No\n', value)
+    value = re.sub(r'\s*@@TICKS@@(.*?)@@END@@\s*', lambda m: '\n' + m.group(1) + '\n', value)
     value = re.sub(r'\s*@@LINE@@\s*', '\n', value)
     value = re.sub(r'\s+([?.!,;:])', r'\1', value)
     value = re.sub(r'[ \t]+\n', '\n', value)
@@ -2150,8 +2171,16 @@ def parse_short_table(table: Any, page: Any) -> list[dict[str, Any]]:
         if len(boxes) != 1:
             raise AssertionError(f'Art scheme row is not one cell: {cells!r}')
         guidance = art_printed.cell_text(page, boxes[0])
-        band_header = nonempty_cells(rows[index + 1]) if index + 1 < len(rows) else []
-        band_ranges = nonempty_cells(rows[index + 2]) if index + 2 < len(rows) else []
+        # The band header is the next row; a table reader can repeat the row's own last line as a row of its own
+        # before it ("Give reasons for your answer." under 2023 Ordinary deferred Q5(b), already in the cell's text):
+        # such a row, which the cell's text holds, is passed over.
+        header_at = index + 1
+        while (header_at < len(rows) and header_at <= index + 2
+               and not any(re.search(r'\d+\s*Marks?', cell, re.I) for cell in nonempty_cells(rows[header_at]))
+               and all(compact(cell) in compact(guidance) for cell in nonempty_cells(rows[header_at]))):
+            header_at += 1
+        band_header = nonempty_cells(rows[header_at]) if header_at < len(rows) else []
+        band_ranges = nonempty_cells(rows[header_at + 1]) if header_at + 1 < len(rows) else []
         marks_cell = next((cell for cell in band_header if re.search(r'\d+\s*Marks?', cell, re.I)), None)
         if marks_cell is None or len(band_ranges) < 3:
             raise AssertionError(f'incomplete Art short-answer descriptor table: {rows!r}')
@@ -2625,7 +2654,9 @@ def printed_requirements(question_text: str, assessment: str, stem: str | None =
         body = line[2:] if line.startswith('• ') else None
         return (choosing and body is not None and any(body.startswith(label) for label in options)
                 and not (chosen and body.startswith(chosen)))
-    lines = [line for line in lines if line.strip() != 'Yes No' and not is_other_option(line)]
+    # The options line under "Use a tick (✓) to indicate your answer." is where the tick goes, as "Yes No" is.
+    ticks = {after for before, after in zip(lines, lines[1:]) if before.rstrip().endswith('to indicate your answer.')}
+    lines = [line for line in lines if line.strip() != 'Yes No' and line not in ticks and not is_other_option(line)]
     out = asks + [re.sub(r'^•\s*', '', line).strip() for line in lines]
     if not out or any(not line for line in out):
         raise AssertionError(f'no printed requirement lines in {question_text!r}')
