@@ -1,0 +1,1076 @@
+{
+ "readingFile": "2018-hl.json",
+ "readBy": "second reader (Opus helper), 19 Nov 2026",
+ "method": "Rendered every ask page of both booklets with music_pages.py render at 130 dpi and read each full page; then zoomed clips with PyMuPDF (250-800 dpi) on every glyph in doubt: curly apostrophes (I’m, doesn’t, Barry’s, Carolan’s, look’d) and the opening quote in ‘twas, en dash vs hyphen (lines 1–2, bars 1–6, bars 1–4, 16–bar in HL composing Q1 vs 16-bar in Q3, eight-bar), the em dashes in OL Q4 (IV—ii—V), the superscripts in AA¹BB¹, the flat sign in B♭, the acute accents in An Bonnán Buí, full stops after excerpt headings, the case of every title and of \"PREPARATORY WORK\" (full capitals, not small caps), and every bullet at the left margin. Typed the printed text of every in-scope field from the renders into a script (bullets as \"\\n• \" in questionContext, \" • \" between printed bullet lines in composing questionText, space for unbulleted lines) and compared it with the file string exactly, after collapsing runs of spaces; checked the code point of every non-ASCII character in the file strings. Tick-box glyph shape ignored; \" • \" / \"\\n• \" treated as structure. Elective asks and composing grid stems were outside the brief and are not recorded.",
+ "booklets": {
+  "listening": "examiner-reports/music/papers/2018-hl-008-paper.pdf",
+  "composing": "examiner-reports/music/papers/2018-hl-006-paper.pdf"
+ },
+ "pagesRendered": {
+  "listening": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   8,
+   9,
+   10,
+   11
+  ],
+  "composing": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ]
+ },
+ "asks": [
+  {
+   "address": "Q1 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The melody heard at the start of this excerpt is based on the"
+  },
+  {
+   "address": "Q1 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 2 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1 for the first time. Answer (i) and (ii)."
+  },
+  {
+   "address": "Q1 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This excerpt is taken from the"
+  },
+  {
+   "address": "Q1 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 2 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1 for the first time. Answer (i) and (ii)."
+  },
+  {
+   "address": "Q1 Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The music in this excerpt features antiphonal dialogue. Explain antiphonal dialogue, with reference to the music heard in this excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 2 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1 for the second time. Answer (iii)."
+  },
+  {
+   "address": "Q1 Excerpt 1(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The first 2 bars of the melody are printed below. Insert the four missing notes in bars 3 and 4, marked X on the score."
+  },
+  {
+   "address": "Q1 Excerpt 1(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 2 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 1(iv)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played twice more. Answer (iv)."
+  },
+  {
+   "address": "Q1 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe two differences between the music heard in this excerpt and the music heard in Excerpt 1. Refer to both excerpts in your answer."
+  },
+  {
+   "address": "Q1 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 2 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times."
+  },
+  {
+   "address": "Q1 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The opening melody is played by"
+  },
+  {
+   "address": "Q1 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 3 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 3(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q1 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The tonality of the music in this excerpt is"
+  },
+  {
+   "address": "Q1 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 3 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 3(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q1 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two features of the music heard in this excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 3 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 3(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q1 Excerpt 4(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Which one of the following rhythms can be heard quietly in the background?"
+  },
+  {
+   "address": "Q1 Excerpt 4(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 3 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 4(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played three times."
+  },
+  {
+   "address": "Q1 Excerpt 4(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe two features of the music which immediately follows the music in this excerpt in Romeo and Juliet Fantasy Overture."
+  },
+  {
+   "address": "Q1 Excerpt 4(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 3 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Four excerpts from Romeo and Juliet Fantasy Overture by Tchaikovsky. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q1 Excerpt 4(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played three times."
+  },
+  {
+   "address": "Q2(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two features of the vocals in lines 1–2."
+  },
+  {
+   "address": "Q2(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe one feature of the accompaniment in line 3."
+  },
+  {
+   "address": "Q2(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The music in line 5 features"
+  },
+  {
+   "address": "Q2(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify and describe an example of word-painting, as heard in this excerpt."
+  },
+  {
+   "address": "Q2(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q2(v)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe two differences between the music heard in this excerpt and the operatic section of Bohemian Rhapsody. Refer to both sections in your answer."
+  },
+  {
+   "address": "Q2(v)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An excerpt from Bohemian Rhapsody by Freddie Mercury will be played three times.\n• The lyrics are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, No escape from reality. Line 3 Open your eyes, Look up to the skies and see. Line 4 I’m just a poor boy, I need no sympathy. Line 5 Because I’m easy come, easy go, little high, little low. Line 6 Any way the wind blows doesn’t really matter to me, to me.\n• Answer the following questions:"
+  },
+  {
+   "address": "Q3(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Name the instruments that play in this excerpt. The music is performed mp senza vib. Explain mp senza vib."
+  },
+  {
+   "address": "Q3(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the following questions:\" to the lead-in with a space; page 5 prints it as its own bulleted line (\"• Answer the following questions:\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\\n• Answer the following questions:\""
+   ],
+   "checked": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times. Answer the following questions:"
+  },
+  {
+   "address": "Q3(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "An outline score of bars 1–6 of the excerpt is printed below. Insert the missing time signatures in bars 4 and 5."
+  },
+  {
+   "address": "Q3(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the following questions:\" to the lead-in with a space; page 5 prints it as its own bulleted line (\"• Answer the following questions:\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\\n• Answer the following questions:\""
+   ],
+   "checked": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times. Answer the following questions:"
+  },
+  {
+   "address": "Q3(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe the texture of the music heard in this excerpt."
+  },
+  {
+   "address": "Q3(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the following questions:\" to the lead-in with a space; page 5 prints it as its own bulleted line (\"• Answer the following questions:\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\\n• Answer the following questions:\""
+   ],
+   "checked": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times. Answer the following questions:"
+  },
+  {
+   "address": "Q3(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe two ways in which the thematic material heard in this excerpt differs from the first time it is heard in this quartet. Refer to both sections in your answer."
+  },
+  {
+   "address": "Q3(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the following questions:\" to the lead-in with a space; page 5 prints it as its own bulleted line (\"• Answer the following questions:\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\\n• Answer the following questions:\""
+   ],
+   "checked": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times. Answer the following questions:"
+  },
+  {
+   "address": "Q3(v)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Other than texture, describe one feature of Gerald Barry’s style as heard in his Piano Quartet No.1."
+  },
+  {
+   "address": "Q3(v)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the following questions:\" to the lead-in with a space; page 5 prints it as its own bulleted line (\"• Answer the following questions:\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times.\\n• Answer the following questions:\""
+   ],
+   "checked": "An excerpt from Piano Quartet No.1 by Gerald Barry will be played three times. Answer the following questions:"
+  },
+  {
+   "address": "Q4(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify the type of voice heard in this excerpt."
+  },
+  {
+   "address": "Q4(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 6 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q4(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two features of the vocal line heard in this excerpt."
+  },
+  {
+   "address": "Q4(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 6 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q4(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify one feature of the accompaniment heard in this excerpt."
+  },
+  {
+   "address": "Q4(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 6 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q4(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify the cadence heard at the end of this excerpt."
+  },
+  {
+   "address": "Q4(iv)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 6 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(iv)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q4(v)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This excerpt is taken from • Give a reason for your choice."
+  },
+  {
+   "address": "Q4(v)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 6 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(v)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q4(vi)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The music in this excerpt is more dramatic than the music in Excerpt 1. Explain why this is so and how it is achieved."
+  },
+  {
+   "address": "Q4(vi)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 6 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Two excerpts from Cantata Jesu, der du meine Seele by J.S. Bach. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q4(vi)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times."
+  },
+  {
+   "address": "Q5 A Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify the style of singing in this excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 8 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 1(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. A verse from An Bonnán Buí."
+  },
+  {
+   "address": "Q5 A Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify three features of this style of singing, as heard in this excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 8 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 1(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. A verse from An Bonnán Buí."
+  },
+  {
+   "address": "Q5 A Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The form of the verse is"
+  },
+  {
+   "address": "Q5 A Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 8 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 1(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1. A verse from An Bonnán Buí."
+  },
+  {
+   "address": "Q5 A Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify three different instruments heard playing the melody in this excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 8 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 2(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2. An excerpt from Carolan’s Concerto."
+  },
+  {
+   "address": "Q5 A Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The music in this excerpt features"
+  },
+  {
+   "address": "Q5 A Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 8 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2. An excerpt from Carolan’s Concerto."
+  },
+  {
+   "address": "Q5 A Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Carolan’s Concerto is often described as being Baroque in style. Identify two features of the music heard in this excerpt which support this statement."
+  },
+  {
+   "address": "Q5 A Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 8 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2. An excerpt from Carolan’s Concerto."
+  },
+  {
+   "address": "Q5 A Excerpt 3",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This excerpt consists of three different dances based on the tune Drops of Brandy. In the case of each one, identify the type of dance and give its time signature and one bar of rhythm associated with it."
+  },
+  {
+   "address": "Q5 A Excerpt 3",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 8 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear three excerpts, each played three times. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q5 A Excerpt 3",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3"
+  },
+  {
+   "address": "Q5 B(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Discuss the Irish song tradition."
+  },
+  {
+   "address": "Q5 B(i)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:"
+  },
+  {
+   "address": "Q5 B(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "With reference to regional styles, discuss some of the changes that took place in Irish traditional music in the 20th century."
+  },
+  {
+   "address": "Q5 B(ii)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:"
+  },
+  {
+   "address": "Q5 B(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe the music of a well known group/band that fuses traditional Irish music with another style of music."
+  },
+  {
+   "address": "Q5 B(iii)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:"
+  },
+  {
+   "address": "Q5 B(iv)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Discuss the contribution made to the preservation of Irish traditional music by one of the great collectors of the 19th century."
+  },
+  {
+   "address": "Q5 B(iv)",
+   "paper": "listening",
+   "field": "grid.stem",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:"
+  },
+  {
+   "address": "Q6 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Identify two features of the music heard in this excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 10 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 1(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 1, played three times."
+  },
+  {
+   "address": "Q6 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Insert the five missing notes at X on the score."
+  },
+  {
+   "address": "Q6 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 10 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 2(i)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times. An outline score of bars 1–4 of this excerpt is printed below. Answer (i) and (ii)."
+  },
+  {
+   "address": "Q6 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "The missing time signature at the start of the score is"
+  },
+  {
+   "address": "Q6 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 10 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 2(ii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played three times. An outline score of bars 1–4 of this excerpt is printed below. Answer (i) and (ii)."
+  },
+  {
+   "address": "Q6 Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Briefly describe two features of the accompaniment, as heard in this excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 10 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 2(iii)",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 2, played twice more. Answer (iii)."
+  },
+  {
+   "address": "Q6 Excerpt 3",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Describe two differences between the music heard in this excerpt and the music heard in Excerpt 2. Refer to both excerpts in your answer."
+  },
+  {
+   "address": "Q6 Excerpt 3",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 11 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 3",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 3, played three times."
+  },
+  {
+   "address": "Q6 Excerpt 4",
+   "paper": "listening",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "This excerpt is the concluding section of E.T. Flying Theme by John Williams. Describe two ways in which the composer uses the orchestra to achieve a sense of climax in this excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 4",
+   "paper": "listening",
+   "field": "questionContext",
+   "verdict": "differs",
+   "differences": [
+    "Missing printed bullet. The file joins \"Answer the questions on each excerpt.\" to the lead-in with a space; page 11 prints it as its own bulleted line (\"• Answer the questions on each excerpt.\"), so the string needs \"\\n• \" before \"Answer\". Printed: \"Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams.\\n• Answer the questions on each excerpt.\""
+   ],
+   "checked": "Aural Skills. This question is based on excerpts of music from E.T. Flying Theme by John Williams. Answer the questions on each excerpt."
+  },
+  {
+   "address": "Q6 Excerpt 4",
+   "paper": "listening",
+   "field": "excerptLine",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "Excerpt 4, played three times."
+  },
+  {
+   "address": "Section A Q1",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "CONTINUATION OF A GIVEN OPENING • Continue the opening below to make a 16–bar melody. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ oboe □ violin □ trumpet □ flute"
+  },
+  {
+   "address": "Section A Q2",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "SETTING MUSIC TO A GIVEN TEXT Here is an extract from the poem As Slow Our Ship by Thomas Moore. As slow our ship her foamy track Against the wind was cleaving, Her trembling pennant still look’d back To that dear isle ‘twas leaving. The opening line has been set to music below. • Set the remaining words to make a melody of 16 bars. (You may exceed this number of bars and include a modulation, if you wish.) • Add appropriate performing directions (phrasing and dynamics) to the melody."
+  },
+  {
+   "address": "Section A Q3",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM The opening phrase of a gavotte is given below. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ trumpet □ violin □ horn □ flute"
+  },
+  {
+   "address": "Section B Q4",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS PREPARATORY WORK • Plot the chords available in the key of A minor, either in the chord bank grid or on the stave below. • Study the piece of music below. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style."
+  },
+  {
+   "address": "Section B Q5",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "COMPOSING BASS NOTES AND CHORD INDICATIONS TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of G minor, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable bass notes and chord indications in the style of the given opening. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both."
+  },
+  {
+   "address": "Section B Q6",
+   "paper": "composing",
+   "field": "questionText",
+   "verdict": "matches print",
+   "differences": [],
+   "checked": "ADDING A COUNTERMELODY OR DESCANT AND CHORDAL SUPPORT TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of D major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable chord indications in the boxes provided. • Continue the descant part in the given style to complete the piece. • Do not use the same chord in the same position in adjacent boxes. • You may use either chord symbols or Roman numerals, but not both."
+  }
+ ],
+ "summary": {
+  "entriesChecked": 121,
+  "matchesPrint": 87,
+  "differs": 34
+ }
+}

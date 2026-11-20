@@ -2903,6 +2903,1902 @@
      "questionRef": "2020 HL Composing Section B Q6"
     }
    ]
+  },
+  {
+   "year": 2019,
+   "level": "higher",
+   "paper": "Listening",
+   "expectedAsks": 48,
+   "asks": [
+    {
+     "id": "mus-2019-hl-l-q1-a",
+     "questionRef": "2019 HL Listening Q1(a)"
+    },
+    {
+     "id": "mus-2019-hl-l-q1-b",
+     "questionRef": "2019 HL Listening Q1(b)"
+    },
+    {
+     "id": "mus-2019-hl-l-q1-c",
+     "questionRef": "2019 HL Listening Q1(c)"
+    },
+    {
+     "id": "mus-2019-hl-l-q1-d",
+     "questionRef": "2019 HL Listening Q1(d)"
+    },
+    {
+     "id": "mus-2019-hl-l-q1-e",
+     "questionRef": "2019 HL Listening Q1(e)"
+    },
+    {
+     "id": "mus-2019-hl-l-q1-f",
+     "questionRef": "2019 HL Listening Q1(f)"
+    },
+    {
+     "id": "mus-2019-hl-l-q1-g",
+     "questionRef": "2019 HL Listening Q1(g)"
+    },
+    {
+     "id": "mus-2019-hl-l-q1-h",
+     "questionRef": "2019 HL Listening Q1(h)"
+    },
+    {
+     "id": "mus-2019-hl-l-q1-i",
+     "questionRef": "2019 HL Listening Q1(i)"
+    },
+    {
+     "id": "mus-2019-hl-l-q2-a",
+     "questionRef": "2019 HL Listening Q2(a)"
+    },
+    {
+     "id": "mus-2019-hl-l-q2-b",
+     "questionRef": "2019 HL Listening Q2(b)"
+    },
+    {
+     "id": "mus-2019-hl-l-q2-c",
+     "questionRef": "2019 HL Listening Q2(c)"
+    },
+    {
+     "id": "mus-2019-hl-l-q2-d",
+     "questionRef": "2019 HL Listening Q2(d)"
+    },
+    {
+     "id": "mus-2019-hl-l-q3-a",
+     "questionRef": "2019 HL Listening Q3(a)"
+    },
+    {
+     "id": "mus-2019-hl-l-q3-b",
+     "questionRef": "2019 HL Listening Q3(b)"
+    },
+    {
+     "id": "mus-2019-hl-l-q3-c",
+     "questionRef": "2019 HL Listening Q3(c)"
+    },
+    {
+     "id": "mus-2019-hl-l-q3-d",
+     "questionRef": "2019 HL Listening Q3(d)"
+    },
+    {
+     "id": "mus-2019-hl-l-q3-e",
+     "questionRef": "2019 HL Listening Q3(e)"
+    },
+    {
+     "id": "mus-2019-hl-l-q4-a",
+     "questionRef": "2019 HL Listening Q4(a)"
+    },
+    {
+     "id": "mus-2019-hl-l-q4-b",
+     "questionRef": "2019 HL Listening Q4(b)"
+    },
+    {
+     "id": "mus-2019-hl-l-q4-c",
+     "questionRef": "2019 HL Listening Q4(c)"
+    },
+    {
+     "id": "mus-2019-hl-l-q4-d",
+     "questionRef": "2019 HL Listening Q4(d)"
+    },
+    {
+     "id": "mus-2019-hl-l-q4-e-i",
+     "questionRef": "2019 HL Listening Q4(e)(i)"
+    },
+    {
+     "id": "mus-2019-hl-l-q4-e-ii",
+     "questionRef": "2019 HL Listening Q4(e)(ii)"
+    },
+    {
+     "id": "mus-2019-hl-l-q4-f",
+     "questionRef": "2019 HL Listening Q4(f)"
+    },
+    {
+     "id": "mus-2019-hl-l-q5-a-a",
+     "questionRef": "2019 HL Listening Q5 A(a)"
+    },
+    {
+     "id": "mus-2019-hl-l-q5-a-b",
+     "questionRef": "2019 HL Listening Q5 A(b)"
+    },
+    {
+     "id": "mus-2019-hl-l-q5-a-c",
+     "questionRef": "2019 HL Listening Q5 A(c)"
+    },
+    {
+     "id": "mus-2019-hl-l-q5-a-d",
+     "questionRef": "2019 HL Listening Q5 A(d)"
+    },
+    {
+     "id": "mus-2019-hl-l-q5-a-e",
+     "questionRef": "2019 HL Listening Q5 A(e)"
+    },
+    {
+     "id": "mus-2019-hl-l-q5-a-f",
+     "questionRef": "2019 HL Listening Q5 A(f)"
+    },
+    {
+     "id": "mus-2019-hl-l-q5-a-g",
+     "questionRef": "2019 HL Listening Q5 A(g)"
+    },
+    {
+     "id": "mus-2019-hl-l-q5-a-h",
+     "questionRef": "2019 HL Listening Q5 A(h)"
+    },
+    {
+     "id": "mus-2019-hl-l-q5-a-i",
+     "questionRef": "2019 HL Listening Q5 A(i)"
+    },
+    {
+     "id": "mus-2019-hl-l-q5-a-j",
+     "questionRef": "2019 HL Listening Q5 A(j)"
+    },
+    {
+     "id": "mus-2019-hl-l-q5-b-i",
+     "questionRef": "2019 HL Listening Q5 B(i)"
+    },
+    {
+     "id": "mus-2019-hl-l-q5-b-ii",
+     "questionRef": "2019 HL Listening Q5 B(ii)"
+    },
+    {
+     "id": "mus-2019-hl-l-q5-b-iii",
+     "questionRef": "2019 HL Listening Q5 B(iii)"
+    },
+    {
+     "id": "mus-2019-hl-l-q5-b-iv",
+     "questionRef": "2019 HL Listening Q5 B(iv)"
+    },
+    {
+     "id": "mus-2019-hl-l-q6-a",
+     "questionRef": "2019 HL Listening Q6(a)"
+    },
+    {
+     "id": "mus-2019-hl-l-q6-b",
+     "questionRef": "2019 HL Listening Q6(b)"
+    },
+    {
+     "id": "mus-2019-hl-l-q6-c",
+     "questionRef": "2019 HL Listening Q6(c)"
+    },
+    {
+     "id": "mus-2019-hl-l-q6-d",
+     "questionRef": "2019 HL Listening Q6(d)"
+    },
+    {
+     "id": "mus-2019-hl-l-q6-e",
+     "questionRef": "2019 HL Listening Q6(e)"
+    },
+    {
+     "id": "mus-2019-hl-l-q6-f",
+     "questionRef": "2019 HL Listening Q6(f)"
+    },
+    {
+     "id": "mus-2019-hl-l-q6-g",
+     "questionRef": "2019 HL Listening Q6(g)"
+    },
+    {
+     "id": "mus-2019-hl-l-q6-h",
+     "questionRef": "2019 HL Listening Q6(h)"
+    },
+    {
+     "id": "mus-2019-hl-l-q6-i",
+     "questionRef": "2019 HL Listening Q6(i)"
+    }
+   ]
+  },
+  {
+   "year": 2019,
+   "level": "higher",
+   "paper": "Composing",
+   "expectedAsks": 6,
+   "asks": [
+    {
+     "id": "mus-2019-hl-c-a-q1",
+     "questionRef": "2019 HL Composing Section A Q1"
+    },
+    {
+     "id": "mus-2019-hl-c-a-q2",
+     "questionRef": "2019 HL Composing Section A Q2"
+    },
+    {
+     "id": "mus-2019-hl-c-a-q3",
+     "questionRef": "2019 HL Composing Section A Q3"
+    },
+    {
+     "id": "mus-2019-hl-c-b-q4",
+     "questionRef": "2019 HL Composing Section B Q4"
+    },
+    {
+     "id": "mus-2019-hl-c-b-q5",
+     "questionRef": "2019 HL Composing Section B Q5"
+    },
+    {
+     "id": "mus-2019-hl-c-b-q6",
+     "questionRef": "2019 HL Composing Section B Q6"
+    }
+   ]
+  },
+  {
+   "year": 2019,
+   "level": "higher",
+   "paper": "Elective",
+   "expectedAsks": 5,
+   "asks": [
+    {
+     "id": "mus-2019-hl-e-q1",
+     "questionRef": "2019 HL Elective Q1"
+    },
+    {
+     "id": "mus-2019-hl-e-q2",
+     "questionRef": "2019 HL Elective Q2"
+    },
+    {
+     "id": "mus-2019-hl-e-q3",
+     "questionRef": "2019 HL Elective Q3"
+    },
+    {
+     "id": "mus-2019-hl-e-q4-a",
+     "questionRef": "2019 HL Elective Q4(a)"
+    },
+    {
+     "id": "mus-2019-hl-e-q4-b",
+     "questionRef": "2019 HL Elective Q4(b)"
+    }
+   ]
+  },
+  {
+   "year": 2019,
+   "level": "ordinary",
+   "paper": "Listening",
+   "expectedAsks": 44,
+   "asks": [
+    {
+     "id": "mus-2019-ol-l-q1-a",
+     "questionRef": "2019 OL Listening Q1(a)"
+    },
+    {
+     "id": "mus-2019-ol-l-q1-b",
+     "questionRef": "2019 OL Listening Q1(b)"
+    },
+    {
+     "id": "mus-2019-ol-l-q1-c",
+     "questionRef": "2019 OL Listening Q1(c)"
+    },
+    {
+     "id": "mus-2019-ol-l-q1-d",
+     "questionRef": "2019 OL Listening Q1(d)"
+    },
+    {
+     "id": "mus-2019-ol-l-q1-e",
+     "questionRef": "2019 OL Listening Q1(e)"
+    },
+    {
+     "id": "mus-2019-ol-l-q1-f",
+     "questionRef": "2019 OL Listening Q1(f)"
+    },
+    {
+     "id": "mus-2019-ol-l-q1-g",
+     "questionRef": "2019 OL Listening Q1(g)"
+    },
+    {
+     "id": "mus-2019-ol-l-q1-h",
+     "questionRef": "2019 OL Listening Q1(h)"
+    },
+    {
+     "id": "mus-2019-ol-l-q1-i",
+     "questionRef": "2019 OL Listening Q1(i)"
+    },
+    {
+     "id": "mus-2019-ol-l-q2-a",
+     "questionRef": "2019 OL Listening Q2(a)"
+    },
+    {
+     "id": "mus-2019-ol-l-q2-b",
+     "questionRef": "2019 OL Listening Q2(b)"
+    },
+    {
+     "id": "mus-2019-ol-l-q2-c",
+     "questionRef": "2019 OL Listening Q2(c)"
+    },
+    {
+     "id": "mus-2019-ol-l-q2-d",
+     "questionRef": "2019 OL Listening Q2(d)"
+    },
+    {
+     "id": "mus-2019-ol-l-q2-e",
+     "questionRef": "2019 OL Listening Q2(e)"
+    },
+    {
+     "id": "mus-2019-ol-l-q3-a",
+     "questionRef": "2019 OL Listening Q3(a)"
+    },
+    {
+     "id": "mus-2019-ol-l-q3-b-i",
+     "questionRef": "2019 OL Listening Q3(b)(i)"
+    },
+    {
+     "id": "mus-2019-ol-l-q3-b-ii",
+     "questionRef": "2019 OL Listening Q3(b)(ii)"
+    },
+    {
+     "id": "mus-2019-ol-l-q3-c",
+     "questionRef": "2019 OL Listening Q3(c)"
+    },
+    {
+     "id": "mus-2019-ol-l-q3-d",
+     "questionRef": "2019 OL Listening Q3(d)"
+    },
+    {
+     "id": "mus-2019-ol-l-q3-e",
+     "questionRef": "2019 OL Listening Q3(e)"
+    },
+    {
+     "id": "mus-2019-ol-l-q4-a-i",
+     "questionRef": "2019 OL Listening Q4(a)(i)"
+    },
+    {
+     "id": "mus-2019-ol-l-q4-a-ii",
+     "questionRef": "2019 OL Listening Q4(a)(ii)"
+    },
+    {
+     "id": "mus-2019-ol-l-q4-b",
+     "questionRef": "2019 OL Listening Q4(b)"
+    },
+    {
+     "id": "mus-2019-ol-l-q4-c",
+     "questionRef": "2019 OL Listening Q4(c)"
+    },
+    {
+     "id": "mus-2019-ol-l-q4-d",
+     "questionRef": "2019 OL Listening Q4(d)"
+    },
+    {
+     "id": "mus-2019-ol-l-q4-e",
+     "questionRef": "2019 OL Listening Q4(e)"
+    },
+    {
+     "id": "mus-2019-ol-l-q5-a",
+     "questionRef": "2019 OL Listening Q5(a)"
+    },
+    {
+     "id": "mus-2019-ol-l-q5-b",
+     "questionRef": "2019 OL Listening Q5(b)"
+    },
+    {
+     "id": "mus-2019-ol-l-q5-c",
+     "questionRef": "2019 OL Listening Q5(c)"
+    },
+    {
+     "id": "mus-2019-ol-l-q5-d",
+     "questionRef": "2019 OL Listening Q5(d)"
+    },
+    {
+     "id": "mus-2019-ol-l-q5-e",
+     "questionRef": "2019 OL Listening Q5(e)"
+    },
+    {
+     "id": "mus-2019-ol-l-q5-f",
+     "questionRef": "2019 OL Listening Q5(f)"
+    },
+    {
+     "id": "mus-2019-ol-l-q5-g",
+     "questionRef": "2019 OL Listening Q5(g)"
+    },
+    {
+     "id": "mus-2019-ol-l-q5-h",
+     "questionRef": "2019 OL Listening Q5(h)"
+    },
+    {
+     "id": "mus-2019-ol-l-q5-i",
+     "questionRef": "2019 OL Listening Q5(i)"
+    },
+    {
+     "id": "mus-2019-ol-l-q5-j",
+     "questionRef": "2019 OL Listening Q5(j)"
+    },
+    {
+     "id": "mus-2019-ol-l-q6-a",
+     "questionRef": "2019 OL Listening Q6(a)"
+    },
+    {
+     "id": "mus-2019-ol-l-q6-b",
+     "questionRef": "2019 OL Listening Q6(b)"
+    },
+    {
+     "id": "mus-2019-ol-l-q6-c",
+     "questionRef": "2019 OL Listening Q6(c)"
+    },
+    {
+     "id": "mus-2019-ol-l-q6-d",
+     "questionRef": "2019 OL Listening Q6(d)"
+    },
+    {
+     "id": "mus-2019-ol-l-q6-e",
+     "questionRef": "2019 OL Listening Q6(e)"
+    },
+    {
+     "id": "mus-2019-ol-l-q6-f",
+     "questionRef": "2019 OL Listening Q6(f)"
+    },
+    {
+     "id": "mus-2019-ol-l-q6-g",
+     "questionRef": "2019 OL Listening Q6(g)"
+    },
+    {
+     "id": "mus-2019-ol-l-q6-h",
+     "questionRef": "2019 OL Listening Q6(h)"
+    }
+   ]
+  },
+  {
+   "year": 2019,
+   "level": "ordinary",
+   "paper": "Composing",
+   "expectedAsks": 9,
+   "asks": [
+    {
+     "id": "mus-2019-ol-c-a-q1-a",
+     "questionRef": "2019 OL Composing Section A Q1(a)"
+    },
+    {
+     "id": "mus-2019-ol-c-a-q1-b",
+     "questionRef": "2019 OL Composing Section A Q1(b)"
+    },
+    {
+     "id": "mus-2019-ol-c-a-q2-a",
+     "questionRef": "2019 OL Composing Section A Q2(a)"
+    },
+    {
+     "id": "mus-2019-ol-c-a-q2-b",
+     "questionRef": "2019 OL Composing Section A Q2(b)"
+    },
+    {
+     "id": "mus-2019-ol-c-a-q3-a",
+     "questionRef": "2019 OL Composing Section A Q3(a)"
+    },
+    {
+     "id": "mus-2019-ol-c-a-q3-b",
+     "questionRef": "2019 OL Composing Section A Q3(b)"
+    },
+    {
+     "id": "mus-2019-ol-c-b-q4",
+     "questionRef": "2019 OL Composing Section B Q4"
+    },
+    {
+     "id": "mus-2019-ol-c-b-q5",
+     "questionRef": "2019 OL Composing Section B Q5"
+    },
+    {
+     "id": "mus-2019-ol-c-b-q6",
+     "questionRef": "2019 OL Composing Section B Q6"
+    }
+   ]
+  },
+  {
+   "year": 2018,
+   "level": "higher",
+   "paper": "Listening",
+   "expectedAsks": 43,
+   "asks": [
+    {
+     "id": "mus-2018-hl-l-q1-x1-i",
+     "questionRef": "2018 HL Listening Q1 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2018-hl-l-q1-x1-ii",
+     "questionRef": "2018 HL Listening Q1 Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q1-x1-iii",
+     "questionRef": "2018 HL Listening Q1 Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q1-x1-iv",
+     "questionRef": "2018 HL Listening Q1 Excerpt 1(iv)"
+    },
+    {
+     "id": "mus-2018-hl-l-q1-x2-i",
+     "questionRef": "2018 HL Listening Q1 Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2018-hl-l-q1-x3-i",
+     "questionRef": "2018 HL Listening Q1 Excerpt 3(i)"
+    },
+    {
+     "id": "mus-2018-hl-l-q1-x3-ii",
+     "questionRef": "2018 HL Listening Q1 Excerpt 3(ii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q1-x3-iii",
+     "questionRef": "2018 HL Listening Q1 Excerpt 3(iii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q1-x4-i",
+     "questionRef": "2018 HL Listening Q1 Excerpt 4(i)"
+    },
+    {
+     "id": "mus-2018-hl-l-q1-x4-ii",
+     "questionRef": "2018 HL Listening Q1 Excerpt 4(ii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q2-i",
+     "questionRef": "2018 HL Listening Q2(i)"
+    },
+    {
+     "id": "mus-2018-hl-l-q2-ii",
+     "questionRef": "2018 HL Listening Q2(ii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q2-iii",
+     "questionRef": "2018 HL Listening Q2(iii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q2-iv",
+     "questionRef": "2018 HL Listening Q2(iv)"
+    },
+    {
+     "id": "mus-2018-hl-l-q2-v",
+     "questionRef": "2018 HL Listening Q2(v)"
+    },
+    {
+     "id": "mus-2018-hl-l-q3-i",
+     "questionRef": "2018 HL Listening Q3(i)"
+    },
+    {
+     "id": "mus-2018-hl-l-q3-ii",
+     "questionRef": "2018 HL Listening Q3(ii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q3-iii",
+     "questionRef": "2018 HL Listening Q3(iii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q3-iv",
+     "questionRef": "2018 HL Listening Q3(iv)"
+    },
+    {
+     "id": "mus-2018-hl-l-q3-v",
+     "questionRef": "2018 HL Listening Q3(v)"
+    },
+    {
+     "id": "mus-2018-hl-l-q4-i",
+     "questionRef": "2018 HL Listening Q4(i)"
+    },
+    {
+     "id": "mus-2018-hl-l-q4-ii",
+     "questionRef": "2018 HL Listening Q4(ii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q4-iii",
+     "questionRef": "2018 HL Listening Q4(iii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q4-iv",
+     "questionRef": "2018 HL Listening Q4(iv)"
+    },
+    {
+     "id": "mus-2018-hl-l-q4-v",
+     "questionRef": "2018 HL Listening Q4(v)"
+    },
+    {
+     "id": "mus-2018-hl-l-q4-vi",
+     "questionRef": "2018 HL Listening Q4(vi)"
+    },
+    {
+     "id": "mus-2018-hl-l-q5-a-x1-i",
+     "questionRef": "2018 HL Listening Q5 A Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2018-hl-l-q5-a-x1-ii",
+     "questionRef": "2018 HL Listening Q5 A Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q5-a-x1-iii",
+     "questionRef": "2018 HL Listening Q5 A Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q5-a-x2-i",
+     "questionRef": "2018 HL Listening Q5 A Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2018-hl-l-q5-a-x2-ii",
+     "questionRef": "2018 HL Listening Q5 A Excerpt 2(ii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q5-a-x2-iii",
+     "questionRef": "2018 HL Listening Q5 A Excerpt 2(iii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q5-a-x3",
+     "questionRef": "2018 HL Listening Q5 A Excerpt 3"
+    },
+    {
+     "id": "mus-2018-hl-l-q5-b-i",
+     "questionRef": "2018 HL Listening Q5 B(i)"
+    },
+    {
+     "id": "mus-2018-hl-l-q5-b-ii",
+     "questionRef": "2018 HL Listening Q5 B(ii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q5-b-iii",
+     "questionRef": "2018 HL Listening Q5 B(iii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q5-b-iv",
+     "questionRef": "2018 HL Listening Q5 B(iv)"
+    },
+    {
+     "id": "mus-2018-hl-l-q6-x1-i",
+     "questionRef": "2018 HL Listening Q6 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2018-hl-l-q6-x2-i",
+     "questionRef": "2018 HL Listening Q6 Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2018-hl-l-q6-x2-ii",
+     "questionRef": "2018 HL Listening Q6 Excerpt 2(ii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q6-x2-iii",
+     "questionRef": "2018 HL Listening Q6 Excerpt 2(iii)"
+    },
+    {
+     "id": "mus-2018-hl-l-q6-x3",
+     "questionRef": "2018 HL Listening Q6 Excerpt 3"
+    },
+    {
+     "id": "mus-2018-hl-l-q6-x4",
+     "questionRef": "2018 HL Listening Q6 Excerpt 4"
+    }
+   ]
+  },
+  {
+   "year": 2018,
+   "level": "higher",
+   "paper": "Composing",
+   "expectedAsks": 6,
+   "asks": [
+    {
+     "id": "mus-2018-hl-c-a-q1",
+     "questionRef": "2018 HL Composing Section A Q1"
+    },
+    {
+     "id": "mus-2018-hl-c-a-q2",
+     "questionRef": "2018 HL Composing Section A Q2"
+    },
+    {
+     "id": "mus-2018-hl-c-a-q3",
+     "questionRef": "2018 HL Composing Section A Q3"
+    },
+    {
+     "id": "mus-2018-hl-c-b-q4",
+     "questionRef": "2018 HL Composing Section B Q4"
+    },
+    {
+     "id": "mus-2018-hl-c-b-q5",
+     "questionRef": "2018 HL Composing Section B Q5"
+    },
+    {
+     "id": "mus-2018-hl-c-b-q6",
+     "questionRef": "2018 HL Composing Section B Q6"
+    }
+   ]
+  },
+  {
+   "year": 2018,
+   "level": "higher",
+   "paper": "Elective",
+   "expectedAsks": 5,
+   "asks": [
+    {
+     "id": "mus-2018-hl-e-q1",
+     "questionRef": "2018 HL Elective Q1"
+    },
+    {
+     "id": "mus-2018-hl-e-q2",
+     "questionRef": "2018 HL Elective Q2"
+    },
+    {
+     "id": "mus-2018-hl-e-q3",
+     "questionRef": "2018 HL Elective Q3"
+    },
+    {
+     "id": "mus-2018-hl-e-q4-a",
+     "questionRef": "2018 HL Elective Q4(a)"
+    },
+    {
+     "id": "mus-2018-hl-e-q4-b",
+     "questionRef": "2018 HL Elective Q4(b)"
+    }
+   ]
+  },
+  {
+   "year": 2018,
+   "level": "ordinary",
+   "paper": "Listening",
+   "expectedAsks": 38,
+   "asks": [
+    {
+     "id": "mus-2018-ol-l-q1-x1-i",
+     "questionRef": "2018 OL Listening Q1 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2018-ol-l-q1-x1-ii",
+     "questionRef": "2018 OL Listening Q1 Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q1-x1-iii",
+     "questionRef": "2018 OL Listening Q1 Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q1-x1-iv",
+     "questionRef": "2018 OL Listening Q1 Excerpt 1(iv)"
+    },
+    {
+     "id": "mus-2018-ol-l-q1-x2-i",
+     "questionRef": "2018 OL Listening Q1 Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2018-ol-l-q1-x3-i",
+     "questionRef": "2018 OL Listening Q1 Excerpt 3(i)"
+    },
+    {
+     "id": "mus-2018-ol-l-q1-x3-ii",
+     "questionRef": "2018 OL Listening Q1 Excerpt 3(ii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q1-x3-iii",
+     "questionRef": "2018 OL Listening Q1 Excerpt 3(iii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q1-x4-i",
+     "questionRef": "2018 OL Listening Q1 Excerpt 4(i)"
+    },
+    {
+     "id": "mus-2018-ol-l-q1-x4-ii",
+     "questionRef": "2018 OL Listening Q1 Excerpt 4(ii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q2-i",
+     "questionRef": "2018 OL Listening Q2(i)"
+    },
+    {
+     "id": "mus-2018-ol-l-q2-ii",
+     "questionRef": "2018 OL Listening Q2(ii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q2-iii",
+     "questionRef": "2018 OL Listening Q2(iii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q2-iv",
+     "questionRef": "2018 OL Listening Q2(iv)"
+    },
+    {
+     "id": "mus-2018-ol-l-q2-v",
+     "questionRef": "2018 OL Listening Q2(v)"
+    },
+    {
+     "id": "mus-2018-ol-l-q3-i",
+     "questionRef": "2018 OL Listening Q3(i)"
+    },
+    {
+     "id": "mus-2018-ol-l-q3-ii",
+     "questionRef": "2018 OL Listening Q3(ii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q3-iii",
+     "questionRef": "2018 OL Listening Q3(iii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q3-iv",
+     "questionRef": "2018 OL Listening Q3(iv)"
+    },
+    {
+     "id": "mus-2018-ol-l-q3-v",
+     "questionRef": "2018 OL Listening Q3(v)"
+    },
+    {
+     "id": "mus-2018-ol-l-q4-i",
+     "questionRef": "2018 OL Listening Q4(i)"
+    },
+    {
+     "id": "mus-2018-ol-l-q4-ii",
+     "questionRef": "2018 OL Listening Q4(ii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q4-iii",
+     "questionRef": "2018 OL Listening Q4(iii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q4-iv",
+     "questionRef": "2018 OL Listening Q4(iv)"
+    },
+    {
+     "id": "mus-2018-ol-l-q4-v",
+     "questionRef": "2018 OL Listening Q4(v)"
+    },
+    {
+     "id": "mus-2018-ol-l-q5-x1-i",
+     "questionRef": "2018 OL Listening Q5 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2018-ol-l-q5-x1-ii",
+     "questionRef": "2018 OL Listening Q5 Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q5-x2-i",
+     "questionRef": "2018 OL Listening Q5 Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2018-ol-l-q5-x2-ii",
+     "questionRef": "2018 OL Listening Q5 Excerpt 2(ii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q5-x3-i",
+     "questionRef": "2018 OL Listening Q5 Excerpt 3(i)"
+    },
+    {
+     "id": "mus-2018-ol-l-q5-x3-ii",
+     "questionRef": "2018 OL Listening Q5 Excerpt 3(ii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q5-x3-iii",
+     "questionRef": "2018 OL Listening Q5 Excerpt 3(iii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q6-x1-i",
+     "questionRef": "2018 OL Listening Q6 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2018-ol-l-q6-x1-ii",
+     "questionRef": "2018 OL Listening Q6 Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q6-x2-i",
+     "questionRef": "2018 OL Listening Q6 Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2018-ol-l-q6-x2-ii",
+     "questionRef": "2018 OL Listening Q6 Excerpt 2(ii)"
+    },
+    {
+     "id": "mus-2018-ol-l-q6-x3",
+     "questionRef": "2018 OL Listening Q6 Excerpt 3"
+    },
+    {
+     "id": "mus-2018-ol-l-q6-x4",
+     "questionRef": "2018 OL Listening Q6 Excerpt 4"
+    }
+   ]
+  },
+  {
+   "year": 2018,
+   "level": "ordinary",
+   "paper": "Composing",
+   "expectedAsks": 9,
+   "asks": [
+    {
+     "id": "mus-2018-ol-c-a-q1-a",
+     "questionRef": "2018 OL Composing Section A Q1(a)"
+    },
+    {
+     "id": "mus-2018-ol-c-a-q1-b",
+     "questionRef": "2018 OL Composing Section A Q1(b)"
+    },
+    {
+     "id": "mus-2018-ol-c-a-q2-a",
+     "questionRef": "2018 OL Composing Section A Q2(a)"
+    },
+    {
+     "id": "mus-2018-ol-c-a-q2-b",
+     "questionRef": "2018 OL Composing Section A Q2(b)"
+    },
+    {
+     "id": "mus-2018-ol-c-a-q3-a",
+     "questionRef": "2018 OL Composing Section A Q3(a)"
+    },
+    {
+     "id": "mus-2018-ol-c-a-q3-b",
+     "questionRef": "2018 OL Composing Section A Q3(b)"
+    },
+    {
+     "id": "mus-2018-ol-c-b-q4",
+     "questionRef": "2018 OL Composing Section B Q4"
+    },
+    {
+     "id": "mus-2018-ol-c-b-q5",
+     "questionRef": "2018 OL Composing Section B Q5"
+    },
+    {
+     "id": "mus-2018-ol-c-b-q6",
+     "questionRef": "2018 OL Composing Section B Q6"
+    }
+   ]
+  },
+  {
+   "year": 2017,
+   "level": "higher",
+   "paper": "Listening",
+   "expectedAsks": 50,
+   "asks": [
+    {
+     "id": "mus-2017-hl-l-q1-x1-i",
+     "questionRef": "2017 HL Listening Q1 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2017-hl-l-q1-x1-ii",
+     "questionRef": "2017 HL Listening Q1 Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q1-x1-iii",
+     "questionRef": "2017 HL Listening Q1 Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q1-x1-iv",
+     "questionRef": "2017 HL Listening Q1 Excerpt 1(iv)"
+    },
+    {
+     "id": "mus-2017-hl-l-q1-x2-i",
+     "questionRef": "2017 HL Listening Q1 Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2017-hl-l-q1-x2-ii",
+     "questionRef": "2017 HL Listening Q1 Excerpt 2(ii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q1-x2-iii",
+     "questionRef": "2017 HL Listening Q1 Excerpt 2(iii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q1-x3-i",
+     "questionRef": "2017 HL Listening Q1 Excerpt 3(i)"
+    },
+    {
+     "id": "mus-2017-hl-l-q1-x3-ii",
+     "questionRef": "2017 HL Listening Q1 Excerpt 3(ii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q1-x3-iii",
+     "questionRef": "2017 HL Listening Q1 Excerpt 3(iii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q1-x3-iv",
+     "questionRef": "2017 HL Listening Q1 Excerpt 3(iv)"
+    },
+    {
+     "id": "mus-2017-hl-l-q1-x3-v",
+     "questionRef": "2017 HL Listening Q1 Excerpt 3(v)"
+    },
+    {
+     "id": "mus-2017-hl-l-q2-i",
+     "questionRef": "2017 HL Listening Q2(i)"
+    },
+    {
+     "id": "mus-2017-hl-l-q2-ii",
+     "questionRef": "2017 HL Listening Q2(ii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q2-iii",
+     "questionRef": "2017 HL Listening Q2(iii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q2-iv",
+     "questionRef": "2017 HL Listening Q2(iv)"
+    },
+    {
+     "id": "mus-2017-hl-l-q2-v",
+     "questionRef": "2017 HL Listening Q2(v)"
+    },
+    {
+     "id": "mus-2017-hl-l-q3-i",
+     "questionRef": "2017 HL Listening Q3(i)"
+    },
+    {
+     "id": "mus-2017-hl-l-q3-ii",
+     "questionRef": "2017 HL Listening Q3(ii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q3-iii",
+     "questionRef": "2017 HL Listening Q3(iii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q3-iv",
+     "questionRef": "2017 HL Listening Q3(iv)"
+    },
+    {
+     "id": "mus-2017-hl-l-q3-v",
+     "questionRef": "2017 HL Listening Q3(v)"
+    },
+    {
+     "id": "mus-2017-hl-l-q4-i",
+     "questionRef": "2017 HL Listening Q4(i)"
+    },
+    {
+     "id": "mus-2017-hl-l-q4-ii",
+     "questionRef": "2017 HL Listening Q4(ii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q4-iii",
+     "questionRef": "2017 HL Listening Q4(iii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q4-iv",
+     "questionRef": "2017 HL Listening Q4(iv)"
+    },
+    {
+     "id": "mus-2017-hl-l-q4-v",
+     "questionRef": "2017 HL Listening Q4(v)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-a-x1-i",
+     "questionRef": "2017 HL Listening Q5 A Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-a-x1-ii",
+     "questionRef": "2017 HL Listening Q5 A Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-a-x1-iii",
+     "questionRef": "2017 HL Listening Q5 A Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-a-x1-iv",
+     "questionRef": "2017 HL Listening Q5 A Excerpt 1(iv)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-a-x2-i",
+     "questionRef": "2017 HL Listening Q5 A Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-a-x2-ii",
+     "questionRef": "2017 HL Listening Q5 A Excerpt 2(ii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-a-x2-iii",
+     "questionRef": "2017 HL Listening Q5 A Excerpt 2(iii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-a-x3-i",
+     "questionRef": "2017 HL Listening Q5 A Excerpt 3(i)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-a-x3-ii",
+     "questionRef": "2017 HL Listening Q5 A Excerpt 3(ii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-a-x3-iii",
+     "questionRef": "2017 HL Listening Q5 A Excerpt 3(iii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-a-x3-iv",
+     "questionRef": "2017 HL Listening Q5 A Excerpt 3(iv)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-b-i",
+     "questionRef": "2017 HL Listening Q5 B(i)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-b-ii",
+     "questionRef": "2017 HL Listening Q5 B(ii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-b-iii",
+     "questionRef": "2017 HL Listening Q5 B(iii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q5-b-iv",
+     "questionRef": "2017 HL Listening Q5 B(iv)"
+    },
+    {
+     "id": "mus-2017-hl-l-q6-x1-i",
+     "questionRef": "2017 HL Listening Q6 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2017-hl-l-q6-x1-ii",
+     "questionRef": "2017 HL Listening Q6 Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q6-x1-iii",
+     "questionRef": "2017 HL Listening Q6 Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q6-x1-iv",
+     "questionRef": "2017 HL Listening Q6 Excerpt 1(iv)"
+    },
+    {
+     "id": "mus-2017-hl-l-q6-x2-i",
+     "questionRef": "2017 HL Listening Q6 Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2017-hl-l-q6-x2-ii",
+     "questionRef": "2017 HL Listening Q6 Excerpt 2(ii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q6-x2-iii",
+     "questionRef": "2017 HL Listening Q6 Excerpt 2(iii)"
+    },
+    {
+     "id": "mus-2017-hl-l-q6-x3",
+     "questionRef": "2017 HL Listening Q6 Excerpt 3"
+    }
+   ]
+  },
+  {
+   "year": 2017,
+   "level": "higher",
+   "paper": "Composing",
+   "expectedAsks": 6,
+   "asks": [
+    {
+     "id": "mus-2017-hl-c-a-q1",
+     "questionRef": "2017 HL Composing Section A Q1"
+    },
+    {
+     "id": "mus-2017-hl-c-a-q2",
+     "questionRef": "2017 HL Composing Section A Q2"
+    },
+    {
+     "id": "mus-2017-hl-c-a-q3",
+     "questionRef": "2017 HL Composing Section A Q3"
+    },
+    {
+     "id": "mus-2017-hl-c-b-q4",
+     "questionRef": "2017 HL Composing Section B Q4"
+    },
+    {
+     "id": "mus-2017-hl-c-b-q5",
+     "questionRef": "2017 HL Composing Section B Q5"
+    },
+    {
+     "id": "mus-2017-hl-c-b-q6",
+     "questionRef": "2017 HL Composing Section B Q6"
+    }
+   ]
+  },
+  {
+   "year": 2017,
+   "level": "higher",
+   "paper": "Elective",
+   "expectedAsks": 5,
+   "asks": [
+    {
+     "id": "mus-2017-hl-e-q1",
+     "questionRef": "2017 HL Elective Q1"
+    },
+    {
+     "id": "mus-2017-hl-e-q2",
+     "questionRef": "2017 HL Elective Q2"
+    },
+    {
+     "id": "mus-2017-hl-e-q3",
+     "questionRef": "2017 HL Elective Q3"
+    },
+    {
+     "id": "mus-2017-hl-e-q4-a",
+     "questionRef": "2017 HL Elective Q4(a)"
+    },
+    {
+     "id": "mus-2017-hl-e-q4-b",
+     "questionRef": "2017 HL Elective Q4(b)"
+    }
+   ]
+  },
+  {
+   "year": 2017,
+   "level": "ordinary",
+   "paper": "Listening",
+   "expectedAsks": 44,
+   "asks": [
+    {
+     "id": "mus-2017-ol-l-q1-x1-i",
+     "questionRef": "2017 OL Listening Q1 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2017-ol-l-q1-x1-ii",
+     "questionRef": "2017 OL Listening Q1 Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q1-x1-iii",
+     "questionRef": "2017 OL Listening Q1 Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q1-x2-i",
+     "questionRef": "2017 OL Listening Q1 Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2017-ol-l-q1-x2-ii",
+     "questionRef": "2017 OL Listening Q1 Excerpt 2(ii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q1-x2-iii",
+     "questionRef": "2017 OL Listening Q1 Excerpt 2(iii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q1-x3-i",
+     "questionRef": "2017 OL Listening Q1 Excerpt 3(i)"
+    },
+    {
+     "id": "mus-2017-ol-l-q1-x3-ii",
+     "questionRef": "2017 OL Listening Q1 Excerpt 3(ii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q1-x3-iii",
+     "questionRef": "2017 OL Listening Q1 Excerpt 3(iii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q1-x3-iv",
+     "questionRef": "2017 OL Listening Q1 Excerpt 3(iv)"
+    },
+    {
+     "id": "mus-2017-ol-l-q2-i",
+     "questionRef": "2017 OL Listening Q2(i)"
+    },
+    {
+     "id": "mus-2017-ol-l-q2-ii",
+     "questionRef": "2017 OL Listening Q2(ii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q2-iii",
+     "questionRef": "2017 OL Listening Q2(iii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q2-iv",
+     "questionRef": "2017 OL Listening Q2(iv)"
+    },
+    {
+     "id": "mus-2017-ol-l-q2-v",
+     "questionRef": "2017 OL Listening Q2(v)"
+    },
+    {
+     "id": "mus-2017-ol-l-q3-i",
+     "questionRef": "2017 OL Listening Q3(i)"
+    },
+    {
+     "id": "mus-2017-ol-l-q3-ii",
+     "questionRef": "2017 OL Listening Q3(ii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q3-iii",
+     "questionRef": "2017 OL Listening Q3(iii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q3-iv",
+     "questionRef": "2017 OL Listening Q3(iv)"
+    },
+    {
+     "id": "mus-2017-ol-l-q3-v",
+     "questionRef": "2017 OL Listening Q3(v)"
+    },
+    {
+     "id": "mus-2017-ol-l-q4-i",
+     "questionRef": "2017 OL Listening Q4(i)"
+    },
+    {
+     "id": "mus-2017-ol-l-q4-ii",
+     "questionRef": "2017 OL Listening Q4(ii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q4-iii",
+     "questionRef": "2017 OL Listening Q4(iii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q4-iv",
+     "questionRef": "2017 OL Listening Q4(iv)"
+    },
+    {
+     "id": "mus-2017-ol-l-q4-v",
+     "questionRef": "2017 OL Listening Q4(v)"
+    },
+    {
+     "id": "mus-2017-ol-l-q5-x1-i",
+     "questionRef": "2017 OL Listening Q5 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2017-ol-l-q5-x1-ii",
+     "questionRef": "2017 OL Listening Q5 Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q5-x1-iii",
+     "questionRef": "2017 OL Listening Q5 Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q5-x1-iv",
+     "questionRef": "2017 OL Listening Q5 Excerpt 1(iv)"
+    },
+    {
+     "id": "mus-2017-ol-l-q5-x2-i",
+     "questionRef": "2017 OL Listening Q5 Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2017-ol-l-q5-x2-ii",
+     "questionRef": "2017 OL Listening Q5 Excerpt 2(ii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q5-x2-iii",
+     "questionRef": "2017 OL Listening Q5 Excerpt 2(iii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q5-x3-i",
+     "questionRef": "2017 OL Listening Q5 Excerpt 3(i)"
+    },
+    {
+     "id": "mus-2017-ol-l-q5-x3-ii",
+     "questionRef": "2017 OL Listening Q5 Excerpt 3(ii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q5-x3-iii",
+     "questionRef": "2017 OL Listening Q5 Excerpt 3(iii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q5-x3-iv",
+     "questionRef": "2017 OL Listening Q5 Excerpt 3(iv)"
+    },
+    {
+     "id": "mus-2017-ol-l-q6-x1-i",
+     "questionRef": "2017 OL Listening Q6 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2017-ol-l-q6-x1-ii",
+     "questionRef": "2017 OL Listening Q6 Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q6-x1-iii",
+     "questionRef": "2017 OL Listening Q6 Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q6-x1-iv",
+     "questionRef": "2017 OL Listening Q6 Excerpt 1(iv)"
+    },
+    {
+     "id": "mus-2017-ol-l-q6-x2-i",
+     "questionRef": "2017 OL Listening Q6 Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2017-ol-l-q6-x2-ii",
+     "questionRef": "2017 OL Listening Q6 Excerpt 2(ii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q6-x2-iii",
+     "questionRef": "2017 OL Listening Q6 Excerpt 2(iii)"
+    },
+    {
+     "id": "mus-2017-ol-l-q6-x3",
+     "questionRef": "2017 OL Listening Q6 Excerpt 3"
+    }
+   ]
+  },
+  {
+   "year": 2017,
+   "level": "ordinary",
+   "paper": "Composing",
+   "expectedAsks": 9,
+   "asks": [
+    {
+     "id": "mus-2017-ol-c-a-q1-a",
+     "questionRef": "2017 OL Composing Section A Q1(a)"
+    },
+    {
+     "id": "mus-2017-ol-c-a-q1-b",
+     "questionRef": "2017 OL Composing Section A Q1(b)"
+    },
+    {
+     "id": "mus-2017-ol-c-a-q2-a",
+     "questionRef": "2017 OL Composing Section A Q2(a)"
+    },
+    {
+     "id": "mus-2017-ol-c-a-q2-b",
+     "questionRef": "2017 OL Composing Section A Q2(b)"
+    },
+    {
+     "id": "mus-2017-ol-c-a-q3-a",
+     "questionRef": "2017 OL Composing Section A Q3(a)"
+    },
+    {
+     "id": "mus-2017-ol-c-a-q3-b",
+     "questionRef": "2017 OL Composing Section A Q3(b)"
+    },
+    {
+     "id": "mus-2017-ol-c-b-q4",
+     "questionRef": "2017 OL Composing Section B Q4"
+    },
+    {
+     "id": "mus-2017-ol-c-b-q5",
+     "questionRef": "2017 OL Composing Section B Q5"
+    },
+    {
+     "id": "mus-2017-ol-c-b-q6",
+     "questionRef": "2017 OL Composing Section B Q6"
+    }
+   ]
+  },
+  {
+   "year": 2016,
+   "level": "higher",
+   "paper": "Listening",
+   "expectedAsks": 47,
+   "asks": [
+    {
+     "id": "mus-2016-hl-l-q1-x1-i",
+     "questionRef": "2016 HL Listening Q1 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2016-hl-l-q1-x1-ii",
+     "questionRef": "2016 HL Listening Q1 Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q1-x1-iii",
+     "questionRef": "2016 HL Listening Q1 Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q1-x1-iv",
+     "questionRef": "2016 HL Listening Q1 Excerpt 1(iv)"
+    },
+    {
+     "id": "mus-2016-hl-l-q1-x1-v",
+     "questionRef": "2016 HL Listening Q1 Excerpt 1(v)"
+    },
+    {
+     "id": "mus-2016-hl-l-q1-x1-vi",
+     "questionRef": "2016 HL Listening Q1 Excerpt 1(vi)"
+    },
+    {
+     "id": "mus-2016-hl-l-q1-x2-i",
+     "questionRef": "2016 HL Listening Q1 Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2016-hl-l-q1-x2-ii",
+     "questionRef": "2016 HL Listening Q1 Excerpt 2(ii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q1-x2-iii",
+     "questionRef": "2016 HL Listening Q1 Excerpt 2(iii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q1-x3-i",
+     "questionRef": "2016 HL Listening Q1 Excerpt 3(i)"
+    },
+    {
+     "id": "mus-2016-hl-l-q1-x3-ii",
+     "questionRef": "2016 HL Listening Q1 Excerpt 3(ii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q1-x3-iii",
+     "questionRef": "2016 HL Listening Q1 Excerpt 3(iii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q2-i",
+     "questionRef": "2016 HL Listening Q2(i)"
+    },
+    {
+     "id": "mus-2016-hl-l-q2-ii",
+     "questionRef": "2016 HL Listening Q2(ii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q2-iii",
+     "questionRef": "2016 HL Listening Q2(iii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q2-iv",
+     "questionRef": "2016 HL Listening Q2(iv)"
+    },
+    {
+     "id": "mus-2016-hl-l-q2-v",
+     "questionRef": "2016 HL Listening Q2(v)"
+    },
+    {
+     "id": "mus-2016-hl-l-q3-i",
+     "questionRef": "2016 HL Listening Q3(i)"
+    },
+    {
+     "id": "mus-2016-hl-l-q3-ii",
+     "questionRef": "2016 HL Listening Q3(ii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q3-iii",
+     "questionRef": "2016 HL Listening Q3(iii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q3-iv",
+     "questionRef": "2016 HL Listening Q3(iv)"
+    },
+    {
+     "id": "mus-2016-hl-l-q3-v",
+     "questionRef": "2016 HL Listening Q3(v)"
+    },
+    {
+     "id": "mus-2016-hl-l-q4-i",
+     "questionRef": "2016 HL Listening Q4(i)"
+    },
+    {
+     "id": "mus-2016-hl-l-q4-ii",
+     "questionRef": "2016 HL Listening Q4(ii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q4-iii",
+     "questionRef": "2016 HL Listening Q4(iii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q4-iv",
+     "questionRef": "2016 HL Listening Q4(iv)"
+    },
+    {
+     "id": "mus-2016-hl-l-q4-v",
+     "questionRef": "2016 HL Listening Q4(v)"
+    },
+    {
+     "id": "mus-2016-hl-l-q5-a-x1-i",
+     "questionRef": "2016 HL Listening Q5 A Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2016-hl-l-q5-a-x1-ii",
+     "questionRef": "2016 HL Listening Q5 A Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q5-a-x1-iii",
+     "questionRef": "2016 HL Listening Q5 A Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q5-a-x2-i",
+     "questionRef": "2016 HL Listening Q5 A Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2016-hl-l-q5-a-x2-ii",
+     "questionRef": "2016 HL Listening Q5 A Excerpt 2(ii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q5-a-x2-iii",
+     "questionRef": "2016 HL Listening Q5 A Excerpt 2(iii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q5-a-x3-i",
+     "questionRef": "2016 HL Listening Q5 A Excerpt 3(i)"
+    },
+    {
+     "id": "mus-2016-hl-l-q5-a-x3-ii",
+     "questionRef": "2016 HL Listening Q5 A Excerpt 3(ii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q5-a-x3-iii",
+     "questionRef": "2016 HL Listening Q5 A Excerpt 3(iii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q5-b-i",
+     "questionRef": "2016 HL Listening Q5 B(i)"
+    },
+    {
+     "id": "mus-2016-hl-l-q5-b-ii",
+     "questionRef": "2016 HL Listening Q5 B(ii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q5-b-iii",
+     "questionRef": "2016 HL Listening Q5 B(iii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q5-b-iv",
+     "questionRef": "2016 HL Listening Q5 B(iv)"
+    },
+    {
+     "id": "mus-2016-hl-l-q6-x1-i",
+     "questionRef": "2016 HL Listening Q6 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2016-hl-l-q6-x1-ii",
+     "questionRef": "2016 HL Listening Q6 Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q6-x1-iii",
+     "questionRef": "2016 HL Listening Q6 Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2016-hl-l-q6-x1-iv",
+     "questionRef": "2016 HL Listening Q6 Excerpt 1(iv)"
+    },
+    {
+     "id": "mus-2016-hl-l-q6-x2",
+     "questionRef": "2016 HL Listening Q6 Excerpt 2"
+    },
+    {
+     "id": "mus-2016-hl-l-q6-x3",
+     "questionRef": "2016 HL Listening Q6 Excerpt 3"
+    },
+    {
+     "id": "mus-2016-hl-l-q6-x4",
+     "questionRef": "2016 HL Listening Q6 Excerpt 4"
+    }
+   ]
+  },
+  {
+   "year": 2016,
+   "level": "higher",
+   "paper": "Composing",
+   "expectedAsks": 6,
+   "asks": [
+    {
+     "id": "mus-2016-hl-c-a-q1",
+     "questionRef": "2016 HL Composing Section A Q1"
+    },
+    {
+     "id": "mus-2016-hl-c-a-q2",
+     "questionRef": "2016 HL Composing Section A Q2"
+    },
+    {
+     "id": "mus-2016-hl-c-a-q3",
+     "questionRef": "2016 HL Composing Section A Q3"
+    },
+    {
+     "id": "mus-2016-hl-c-b-q4",
+     "questionRef": "2016 HL Composing Section B Q4"
+    },
+    {
+     "id": "mus-2016-hl-c-b-q5",
+     "questionRef": "2016 HL Composing Section B Q5"
+    },
+    {
+     "id": "mus-2016-hl-c-b-q6",
+     "questionRef": "2016 HL Composing Section B Q6"
+    }
+   ]
+  },
+  {
+   "year": 2016,
+   "level": "higher",
+   "paper": "Elective",
+   "expectedAsks": 5,
+   "asks": [
+    {
+     "id": "mus-2016-hl-e-q1",
+     "questionRef": "2016 HL Elective Q1"
+    },
+    {
+     "id": "mus-2016-hl-e-q2",
+     "questionRef": "2016 HL Elective Q2"
+    },
+    {
+     "id": "mus-2016-hl-e-q3",
+     "questionRef": "2016 HL Elective Q3"
+    },
+    {
+     "id": "mus-2016-hl-e-q4-a",
+     "questionRef": "2016 HL Elective Q4(a)"
+    },
+    {
+     "id": "mus-2016-hl-e-q4-b",
+     "questionRef": "2016 HL Elective Q4(b)"
+    }
+   ]
+  },
+  {
+   "year": 2016,
+   "level": "ordinary",
+   "paper": "Listening",
+   "expectedAsks": 40,
+   "asks": [
+    {
+     "id": "mus-2016-ol-l-q1-x1-i",
+     "questionRef": "2016 OL Listening Q1 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2016-ol-l-q1-x1-ii",
+     "questionRef": "2016 OL Listening Q1 Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q1-x1-iii",
+     "questionRef": "2016 OL Listening Q1 Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q1-x1-iv",
+     "questionRef": "2016 OL Listening Q1 Excerpt 1(iv)"
+    },
+    {
+     "id": "mus-2016-ol-l-q1-x1-v",
+     "questionRef": "2016 OL Listening Q1 Excerpt 1(v)"
+    },
+    {
+     "id": "mus-2016-ol-l-q1-x2-i",
+     "questionRef": "2016 OL Listening Q1 Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2016-ol-l-q1-x2-ii",
+     "questionRef": "2016 OL Listening Q1 Excerpt 2(ii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q1-x2-iii",
+     "questionRef": "2016 OL Listening Q1 Excerpt 2(iii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q1-x3-i",
+     "questionRef": "2016 OL Listening Q1 Excerpt 3(i)"
+    },
+    {
+     "id": "mus-2016-ol-l-q1-x3-ii",
+     "questionRef": "2016 OL Listening Q1 Excerpt 3(ii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q2-i",
+     "questionRef": "2016 OL Listening Q2(i)"
+    },
+    {
+     "id": "mus-2016-ol-l-q2-ii",
+     "questionRef": "2016 OL Listening Q2(ii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q2-iii",
+     "questionRef": "2016 OL Listening Q2(iii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q2-iv",
+     "questionRef": "2016 OL Listening Q2(iv)"
+    },
+    {
+     "id": "mus-2016-ol-l-q2-v",
+     "questionRef": "2016 OL Listening Q2(v)"
+    },
+    {
+     "id": "mus-2016-ol-l-q3-i",
+     "questionRef": "2016 OL Listening Q3(i)"
+    },
+    {
+     "id": "mus-2016-ol-l-q3-ii",
+     "questionRef": "2016 OL Listening Q3(ii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q3-iii",
+     "questionRef": "2016 OL Listening Q3(iii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q3-iv",
+     "questionRef": "2016 OL Listening Q3(iv)"
+    },
+    {
+     "id": "mus-2016-ol-l-q3-v",
+     "questionRef": "2016 OL Listening Q3(v)"
+    },
+    {
+     "id": "mus-2016-ol-l-q4-i",
+     "questionRef": "2016 OL Listening Q4(i)"
+    },
+    {
+     "id": "mus-2016-ol-l-q4-ii",
+     "questionRef": "2016 OL Listening Q4(ii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q4-iii",
+     "questionRef": "2016 OL Listening Q4(iii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q4-iv",
+     "questionRef": "2016 OL Listening Q4(iv)"
+    },
+    {
+     "id": "mus-2016-ol-l-q4-v",
+     "questionRef": "2016 OL Listening Q4(v)"
+    },
+    {
+     "id": "mus-2016-ol-l-q5-x1-i",
+     "questionRef": "2016 OL Listening Q5 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2016-ol-l-q5-x1-ii",
+     "questionRef": "2016 OL Listening Q5 Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q5-x1-iii",
+     "questionRef": "2016 OL Listening Q5 Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q5-x2-i",
+     "questionRef": "2016 OL Listening Q5 Excerpt 2(i)"
+    },
+    {
+     "id": "mus-2016-ol-l-q5-x2-ii",
+     "questionRef": "2016 OL Listening Q5 Excerpt 2(ii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q5-x2-iii",
+     "questionRef": "2016 OL Listening Q5 Excerpt 2(iii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q5-x3-i",
+     "questionRef": "2016 OL Listening Q5 Excerpt 3(i)"
+    },
+    {
+     "id": "mus-2016-ol-l-q5-x3-ii",
+     "questionRef": "2016 OL Listening Q5 Excerpt 3(ii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q5-x3-iii",
+     "questionRef": "2016 OL Listening Q5 Excerpt 3(iii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q6-x1-i",
+     "questionRef": "2016 OL Listening Q6 Excerpt 1(i)"
+    },
+    {
+     "id": "mus-2016-ol-l-q6-x1-ii",
+     "questionRef": "2016 OL Listening Q6 Excerpt 1(ii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q6-x1-iii",
+     "questionRef": "2016 OL Listening Q6 Excerpt 1(iii)"
+    },
+    {
+     "id": "mus-2016-ol-l-q6-x2",
+     "questionRef": "2016 OL Listening Q6 Excerpt 2"
+    },
+    {
+     "id": "mus-2016-ol-l-q6-x3",
+     "questionRef": "2016 OL Listening Q6 Excerpt 3"
+    },
+    {
+     "id": "mus-2016-ol-l-q6-x4",
+     "questionRef": "2016 OL Listening Q6 Excerpt 4"
+    }
+   ]
+  },
+  {
+   "year": 2016,
+   "level": "ordinary",
+   "paper": "Composing",
+   "expectedAsks": 9,
+   "asks": [
+    {
+     "id": "mus-2016-ol-c-a-q1-a",
+     "questionRef": "2016 OL Composing Section A Q1(a)"
+    },
+    {
+     "id": "mus-2016-ol-c-a-q1-b",
+     "questionRef": "2016 OL Composing Section A Q1(b)"
+    },
+    {
+     "id": "mus-2016-ol-c-a-q2-a",
+     "questionRef": "2016 OL Composing Section A Q2(a)"
+    },
+    {
+     "id": "mus-2016-ol-c-a-q2-b",
+     "questionRef": "2016 OL Composing Section A Q2(b)"
+    },
+    {
+     "id": "mus-2016-ol-c-a-q3-a",
+     "questionRef": "2016 OL Composing Section A Q3(a)"
+    },
+    {
+     "id": "mus-2016-ol-c-a-q3-b",
+     "questionRef": "2016 OL Composing Section A Q3(b)"
+    },
+    {
+     "id": "mus-2016-ol-c-b-q4",
+     "questionRef": "2016 OL Composing Section B Q4"
+    },
+    {
+     "id": "mus-2016-ol-c-b-q5",
+     "questionRef": "2016 OL Composing Section B Q5"
+    },
+    {
+     "id": "mus-2016-ol-c-b-q6",
+     "questionRef": "2016 OL Composing Section B Q6"
+    }
+   ]
   }
  ],
  "covers": {
@@ -2971,6 +4867,50 @@
   "mus-2021-ol-c-a-q2": [
    "mus-2021-ol-c-a-q2-a",
    "mus-2021-ol-c-a-q2-b"
+  ],
+  "mus-2019-hl-e-q1-q4": [
+   "mus-2019-hl-e-q1",
+   "mus-2019-hl-e-q2",
+   "mus-2019-hl-e-q3",
+   "mus-2019-hl-e-q4-a",
+   "mus-2019-hl-e-q4-b"
+  ],
+  "mus-2019-ol-c-a-q2": [
+   "mus-2019-ol-c-a-q2-a",
+   "mus-2019-ol-c-a-q2-b"
+  ],
+  "mus-2018-hl-e-q1-q4": [
+   "mus-2018-hl-e-q1",
+   "mus-2018-hl-e-q2",
+   "mus-2018-hl-e-q3",
+   "mus-2018-hl-e-q4-a",
+   "mus-2018-hl-e-q4-b"
+  ],
+  "mus-2018-ol-c-a-q2": [
+   "mus-2018-ol-c-a-q2-a",
+   "mus-2018-ol-c-a-q2-b"
+  ],
+  "mus-2017-hl-e-q1-q4": [
+   "mus-2017-hl-e-q1",
+   "mus-2017-hl-e-q2",
+   "mus-2017-hl-e-q3",
+   "mus-2017-hl-e-q4-a",
+   "mus-2017-hl-e-q4-b"
+  ],
+  "mus-2017-ol-c-a-q2": [
+   "mus-2017-ol-c-a-q2-a",
+   "mus-2017-ol-c-a-q2-b"
+  ],
+  "mus-2016-hl-e-q1-q4": [
+   "mus-2016-hl-e-q1",
+   "mus-2016-hl-e-q2",
+   "mus-2016-hl-e-q3",
+   "mus-2016-hl-e-q4-a",
+   "mus-2016-hl-e-q4-b"
+  ],
+  "mus-2016-ol-c-a-q2": [
+   "mus-2016-ol-c-a-q2-a",
+   "mus-2016-ol-c-a-q2-b"
   ]
  },
  "note": "Every numbered ask each sitting's booklets print, read page by page: 2025 Higher from authored/music-2025-hl-review.json, every other sitting from authored/music-review/. Unnumbered, unmarked \"Preparatory work\" tasks sit inside their question."
