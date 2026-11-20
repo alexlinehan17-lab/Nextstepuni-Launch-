@@ -208,7 +208,7 @@ const comparable = (text: string) => comparableScheme(text);
 // A card from the SEC's deferred sitting ("econ-2022-hl-deferred-...",
 // "eng-2022-hl-deferred-...", "hist-2023-hl-deferred-lm-...",
 // "dcg-2022-hl-deferred-...", "phys-2022-hl-deferred-...",
-// "he-2023-hl-deferred-...", "maths-2025-hl-deferred-p1-...") traces to that
+// "he-2023-hl-deferred-...", "maths-2025-hl-deferred-p1-...", "mus-2023-hl-deferred-...") traces to that
 // sitting's own scheme ("2022-hl-deferred.md"), as build-deck reads it.
 const deferredCard = (card: { id?: string; subjectId: string }) =>
   (card.subjectId === 'economics' && /^econ-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
@@ -224,7 +224,8 @@ const deferredCard = (card: { id?: string; subjectId: string }) =>
   || (card.subjectId === 'physics' && /^phys-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'home-economics' && /^he-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'maths' && /^maths-\d{4}-(?:hl|ol|fl)-deferred-/.test(card.id ?? ''))
-  || (card.subjectId === 'business' && /^bus-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
+  || (card.subjectId === 'business' && /^bus-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'music' && /^mus-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
 // Codex's reviewed subjects bind each card to its exact reviewed booklet.
 const REVIEWED_SOURCE_SUBJECTS = new Set(['maths', 'physics', 'home-economics']);
 
@@ -632,6 +633,12 @@ describe('every card points at the question paper it came from', () => {
         // by the Paper Trail label, as build-deck's MUSIC_BOOKLET does.
         if (c.subjectId === 'music') {
           const label = ({ L: 'Listening', A: 'Composing', B: 'Composing', E: 'Elective' } as Record<string, string>)[c.section];
+          // A deferred card opens its own sitting's booklet ("Deferred · Listening"), as build-deck resolves it.
+          if (deferredCard(c)) {
+            const named = deferredPaperEntry('music', c.year, c.level)?.papers
+              ?.find((p: { label: string }) => p.label === `Deferred · ${label}`);
+            return !label || String(named?.doc?.f ?? '').replace(/\.pdf$/, '') !== c.paperFileid;
+          }
           return !label || c.paperFileid !== resolveCompanionFileid('music', c.year, c.level, label);
         }
         // Irish prints two papers a sitting, in Irish: a deferred card's paper is the one its section names in the

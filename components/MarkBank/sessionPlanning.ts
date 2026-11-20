@@ -20,14 +20,22 @@ export const MARK_BANK_SESSION_SIZE = 12;
  * sitting together so the reviewer can keep one recording mounted while every
  * question for it remains visible.
  */
-/** Subjects whose listening cards each carry one independently scored task,
- *  shown with the recording above that card's own question. French, Spanish,
- *  German, Japanese, Russian, Polish, Italian and Portuguese; only the Irish
- *  path combines section criteria into one assessment, and grouping these
- *  would hide every task after the first without assessing it. */
-const LISTENING_SCORED_ALONE = new Set(['french', 'spanish', 'german', 'japanese', 'russian', 'polish', 'italian', 'portuguese']);
+/** Only Irish listening is grouped by recording. The reviewer has one combined
+ *  marking sheet, and it is built from Irish rubric criteria
+ *  (SessionScreen's combinedListeningAssessment). A group of any other kind of
+ *  card shows the first card's scheme, grades that card alone and never shows
+ *  the rest. Every other listening card is therefore its own exercise, with the
+ *  recording above its own question.
+ *
+ *  This used to be a hand-kept list of the subjects scored alone, and a subject
+ *  left off it lost every task after the first: Japanese in the release, then
+ *  Music on the live app (20 Nov 2026: 1,110 of its 1,337 listening cards could
+ *  not be reached). The rule now names the one exception instead, so a newly
+ *  carded subject is safe without anyone remembering to add it.
+ *  test/listeningGrouping.test.tsx holds every deck to this. */
+const LISTENING_GROUPED_BY_RECORDING = new Set(['irish']);
 export const listeningScoredAlone = (card: SecCard): boolean =>
-  Boolean(card.audioMaterial) && LISTENING_SCORED_ALONE.has(card.subjectId);
+  Boolean(card.audioMaterial) && !LISTENING_GROUPED_BY_RECORDING.has(card.subjectId);
 
 export function listeningExerciseKey(card: SecCard): string | null {
   if (!card.audioMaterial) return null;

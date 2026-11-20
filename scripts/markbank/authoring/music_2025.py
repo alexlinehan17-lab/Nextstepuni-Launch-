@@ -260,7 +260,7 @@ def listening_card(r):
     file_no = 1 if q <= 4 else 2
     fileid, which, length = AUDIO[file_no]
     question = paper('listening', r['questionText'])
-    stem = ' '.join(x for x in [r.get('questionContext'), r.get('excerptLine')] if x)
+    stem = '\n'.join(x for x in [r.get('questionContext'), r.get('excerptLine')] if x)
     card = {
         'id': listening_id(a), 'subjectId': 'music', 'level': 'higher', 'year': YEAR,
         'section': 'L', 'topicId': topic, 'conceptId': concept(r.get('conceptText') or question),

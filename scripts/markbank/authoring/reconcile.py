@@ -97,18 +97,20 @@ HEAD = re.compile(
 # five expressions "а) б) в) г) д)" — five Cyrillic letters that look like
 # Latin ones and are not — and a Latin-only token class read none of them, so
 # every Bulgarian citation naming a part failed to parse and its exclusions
-# reported stale forever. The mirror of this grammar in
-# test/markBankCoverage.test.ts reads the same class.
-PART_TOKEN = re.compile(
-    r'\s*(?:\(\s*([A-Za-z\u0430-\u044f\u0410-\u042f]{1,4}|\d{1,2})\s*\)'
-    r'|([\u2013\u2014-])|(,|\band\b))')
-# A part letter is not always a LATIN letter: Maltese letters the five
+# reported stale forever.
+# A part letter is not always a LATIN letter either: Maltese letters the five
 # expressions of every Question 1 "a) b) ċ) d) e)", in the Maltese alphabet,
-# and a citation names the marker the candidate saw. The mirror of this class
-# is TAIL in test/markBankCoverage.test.ts, and the two have to agree.
+# and a citation names the marker the candidate saw.
+# ONE class holds all three alphabets. It was once written twice, the Maltese
+# copy after the Cyrillic one, and the second silently replaced the first: the
+# parser stopped at "(а)", read "Q1(а)" as the whole of Q1, and a Bulgarian
+# card for one expression reported all five covered (2025: one card, five
+# asks). The mirror of this class is TAIL in test/markBankCoverage.test.ts,
+# which already held the union; the two have to agree.
 PART_TOKEN = re.compile(
-    r'\s*(?:\(\s*([A-Za-z\u010b\u010a\u0121\u0120\u0127\u0126'
-    r'\u017c\u017b]{1,4}|\d{1,2})\s*\)|([\u2013\u2014-])|(,|\band\b))')
+    r'\s*(?:\(\s*([A-Za-z\u010b\u010a\u0121\u0120\u0127\u0126\u017c\u017b'
+    r'\u0430-\u044f\u0410-\u042f]{1,4}|\d{1,2})\s*\)'
+    r'|([\u2013\u2014-])|(,|\band\b))')
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
           'xi', 'xii']
 LETTERS = 'abcdefghijkl'
@@ -117,6 +119,10 @@ LETTERS = 'abcdefghijkl'
 # citation ("(а)–(в)") expands over the alphabet it was printed in.
 CYRILLIC_LETTERS = 'абвгдежзийклмн'
 
+
+
+# French's deferred sittings' reviewed cards, one file per kind, read beside June's (fr_reading.py --deferred, ...).
+FRENCH_DEFERRED_FILES = ('deferred-writing.json', 'deferred-reading.json', 'deferred-cloze.json', 'deferred-listening.json')
 
 def shipped_cards(subject):
     """[(id, questionRef)] straight out of the deck files that actually ship.
@@ -188,6 +194,12 @@ def shipped_cards(subject):
             for name in ('writing.json', 'reading.json', 'cloze.json', 'listening.json'):
                 data = json.load(open(os.path.join(DECKS, subject, name), encoding='utf-8'))
                 out.extend((card['id'], card['questionRef']) for card in data if card['level'] == level)
+            # The deferred sittings' reviewed cards, in their own files (fr_reading.py --deferred, ...).
+            for name in FRENCH_DEFERRED_FILES:
+                path = os.path.join(DECKS, subject, name)
+                if os.path.exists(path):
+                    data = json.load(open(path, encoding='utf-8'))
+                    out.extend((card['id'], card['questionRef']) for card in data if card['level'] == level)
     if subject in ('applied-maths', 'russian', 'japanese'):
         # Mirror withReviewedCards: preserve literal identities, apply audited
         # corrections, then append newly reviewed tasks. CI imports the actual
@@ -755,7 +767,7 @@ def reconcile_subject(subject, census=None):
             if hist_deferred:
                 ref['paper'] = 'Deferred'
         if subject in ('economics', 'engineering', 'dcg', 'spanish', 'german', 'biology', 'physics', 'home-economics',
-                       'business'):
+                       'business', 'french'):
             # A deferred sitting is its own census paper, 'Deferred', and its
             # card says so twice: the id ("econ-2022-hl-deferred-...",
             # "eng-2022-hl-deferred-...", "dcg-2022-hl-deferred-...", "bio-2022-hl-deferred-...") and the
@@ -770,7 +782,8 @@ def reconcile_subject(subject, census=None):
                                       'biology': r'^bio-\d{4}-(?:hl|ol)-deferred-',
                                       'physics': r'^phys-\d{4}-(?:hl|ol)-deferred-',
                                       'home-economics': r'^he-\d{4}-(?:hl|ol)-deferred-',
-                                      'business': r'^bus-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
+                                      'business': r'^bus-\d{4}-(?:hl|ol)-deferred-',
+                                      'french': r'^fr-\d{4}-(?:hl|ol)-deferred-'}[subject], cid))
             if deferred != (' — Deferred sitting' in refstr):
                 unparsed.append({'id': cid, 'ref': refstr})
                 continue
@@ -835,6 +848,9 @@ def reconcile_subject(subject, census=None):
         'papers': papers,
         'censusFlags': sum(len(p.get('flags', [])) for p in census['papers']),
         'unreadPapers': [p for p in census['papers'] if p.get('error')],
+        # Sittings the SEC never published (paper_census.NOT_PUBLISHED), only
+        # for the subjects that list any: not unread, nothing to card.
+        **({'notPublished': census['notPublished']} if census.get('notPublished') else {}),
     }
 
 
@@ -847,6 +863,8 @@ def report(r, show_open=False):
           f"{len(r['unparsed'])} unparsed, {r['censusFlags']} census flag(s){incomplete}")
     for paper in unread[:3]:
         print(f"    UNREAD {paper['year']} {paper['level']}: {paper['error']}")
+    for paper in r.get('notPublished', []):
+        print(f"    NOT PUBLISHED {paper['year']} {paper['level'].upper()}: {paper['evidence']}")
     for o in r['orphans'][:8]:
         print(f"    ORPHAN {o['id']}: \"{o['ref']}\" — {o['why']}")
     for u in r['unparsed'][:4]:
@@ -957,6 +975,9 @@ def content_hash(subject):
         # answers.ts cuts the lifted answer lines into rows at load.
         for name in ('writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json', 'answers.ts'):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
+        for name in FRENCH_DEFERRED_FILES:
+            if os.path.exists(os.path.join(DECKS, subject, name)):
+                h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     return h.hexdigest()[:16]
 
 

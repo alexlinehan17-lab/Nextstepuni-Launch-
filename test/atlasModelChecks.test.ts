@@ -22,6 +22,11 @@ import { deriveAskTopics, MODEL_SUBJECTS } from '../scripts/atlas-model/askTopic
 import headings from '../data/atlasModel/headings.json';
 
 const FIXTURE = path.join(__dirname, 'fixtures', 'atlasModelKnownMisses.json');
+// One-off misses the coordinator ruled on (id, reason, owner each): the only ids the list may take beyond a newly
+// switched-on subject's own, and each must still miss, so the file only shrinks.
+interface Ruled { entries: Array<{ subject: string; kind: 'card' | 'question'; id: string; reason: string; owner: string; ruling: string }> }
+const RULED: Ruled = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures', 'atlasModelRuledMisses.json'), 'utf8'));
+const ruledKey = new Set(RULED.entries.map(e => `${e.subject}: ${e.id}`));
 interface Known { note: string; cards: Record<string, string[]>; questions: CheckResult['questions'] }
 const known: Known | null = fs.existsSync(FIXTURE) ? JSON.parse(fs.readFileSync(FIXTURE, 'utf8')) : null;
 
@@ -53,8 +58,8 @@ describe('the single model: Mark Bank and Topic Atlas, both ways', () => {
     if (process.env.ATLAS_MISSES_WRITE) {
       const next = { cards: gatedCards(result.cards), questions: gated(result.questions) };
       const grows = known && [
-        ...compare(next.cards, known.cards ?? {}).grew.filter(k => k.split(': ')[0] in (known.cards ?? {})),
-        ...compare(next.questions, known.questions).grew.filter(k => k.split(': ')[0] in known.questions),
+        ...compare(next.cards, known.cards ?? {}).grew.filter(k => k.split(': ')[0] in (known.cards ?? {}) && !ruledKey.has(k)),
+        ...compare(next.questions, known.questions).grew.filter(k => k.split(': ')[0] in known.questions && !ruledKey.has(k)),
       ];
       if (grows && grows.length) throw new Error(`refusing to grow the known-miss list: ${grows.slice(0, 5).join('; ')}`);
       fs.writeFileSync(FIXTURE, `${JSON.stringify({
@@ -86,6 +91,22 @@ describe('the single model: Mark Bank and Topic Atlas, both ways', () => {
     const { grew, fixed } = compare(gated(result.questions), known!.questions);
     expect(grew, 'Atlas questions that newly have no card').toEqual([]);
     expect(fixed, 'fixed: take these questions off the known-miss list (ATLAS_MISSES_WRITE=1)').toEqual([]);
+  });
+
+  it('every ruled one-off miss still misses and is on the known-miss list (the ruled list only shrinks)', () => {
+    const missing = new Set([
+      ...Object.entries(gatedCards(result.cards)).flatMap(([s, ids]) => ids.map(id => `${s}: ${id}`)),
+      ...Object.entries(gated(result.questions)).flatMap(([s, keys]) => keys.map(k => `${s}: ${k}`)),
+    ]);
+    const listed = new Set([
+      ...Object.entries(known!.cards ?? {}).flatMap(([s, ids]) => ids.map(id => `${s}: ${id}`)),
+      ...Object.entries(known!.questions).flatMap(([s, keys]) => keys.map(k => `${s}: ${k}`)),
+    ]);
+    for (const e of RULED.entries) {
+      expect(e.reason && e.owner && e.ruling, `${e.subject}: ${e.id} needs a reason, an owner and a ruling`).toBeTruthy();
+    }
+    expect([...ruledKey].filter(k => !missing.has(k)), 'cleared: take these off atlasModelRuledMisses.json and the known-miss list').toEqual([]);
+    expect([...ruledKey].filter(k => !listed.has(k)), 'ruled but not on the known-miss list (ATLAS_MISSES_WRITE=1)').toEqual([]);
   });
 
   it('the committed topic record of every switched-on subject is the one the model derives today', async () => {
