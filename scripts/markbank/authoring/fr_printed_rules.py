@@ -60,9 +60,10 @@ def reading_mcq_instruction(year, level, pages):
 
 
 @lru_cache(maxsize=None)
-def reading_general_points(year, page):
-    """The Higher scheme's general points for both reading comprehensions."""
-    text, _ = printed(scheme(year, 'hl'), r'In both Reading Comprehensions, the following general points apply:.*?mentioned in (?:point )?2 above\.',
+def reading_general_points(year, page, level='hl'):
+    """The Higher scheme's general points for both reading comprehensions.
+    (`level` names the scheme file: 'hl', or 'hl-deferred' for the deferred sitting's.)"""
+    text, _ = printed(scheme(year, level), r'In both Reading Comprehensions, the following general points apply:.*?mentioned in (?:point )?2 above\.?',
                       pages=[page], what=f'{year} hl general points')
     head, rest = text.split(':', 1)
     out = [head + ':']
@@ -76,26 +77,26 @@ def reading_general_points(year, page):
 
 
 @lru_cache(maxsize=None)
-def ordinary_equivalence(year):
+def ordinary_equivalence(year, level='ol'):
     """The Ordinary scheme's equivalent-meaning paragraph (comprehension 1, 2 and the opinion questions)."""
-    text, _ = printed(scheme(year, 'ol'), r'Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for .*?equivalent meaning\.',
+    text, _ = printed(scheme(year, level), r'Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for .*?equivalent meaning\.',
                       what=f'{year} ol equivalence')
     return tuple(re.split(r'(?<=Test\.)\s+', text))
 
 
 @lru_cache(maxsize=None)
-def ordinary_question_rules(year, rc):
+def ordinary_question_rules(year, rc, level='ol'):
     """The rules printed under the Ordinary scheme's Q.3 / Q.4 heading."""
     head = rf'(?:Q\.\s*{rc}\s*\(40 marks\)|Question {rc}\s*[–-]\s*40 marks)'
-    text, page = printed(scheme(year, 'ol'), rf'{head}\s*(?:\d+\s+)?(.*?)(?=\s1\s?[.…])', what=f'{year} ol Q{rc} rules')
+    text, page = printed(scheme(year, level), rf'{head}\s*(?:\d+\s+)?(.*?)(?=\s1\s?[.…])', what=f'{year} {level} Q{rc} rules')
     body = re.sub(rf'^{head}\s*(?:\d+\s+)?', '', text)
     sentences = re.split(r'(?<!N\.B\.)(?<=\.)\s+(?=N\.B\.|[A-Z])', body)
     return tuple(s.strip() for s in sentences if s.strip()), page
 
 
-def special_segment_rule(year):
+def special_segment_rule(year, level='hl'):
     """The Higher scheme's Q.6 higher-segment rule, printed under the comprehension heading."""
-    text, _ = printed(scheme(year, 'hl'), r'In Q\.6, where less than full marks is achieved in either segment, the higher mark is to be awarded to each segment\.',
+    text, _ = printed(scheme(year, level), r'In Q\.6, where less than full marks is achieved in either segment, the higher mark is to be awarded to each segment\.',
                       what=f'{year} hl Q6 rule')
     return text
 

@@ -4,7 +4,8 @@ import { FRENCH_WRITING_CARDS as cards } from '../components/MarkBank/cards/fren
 import { CARDS as higher } from '../components/MarkBank/cards/french/higher';
 import { CARDS as ordinary } from '../components/MarkBank/cards/french/ordinary';
 import legacy from '../scripts/markbank/authored/french.json';
-import tasks from '../data/examTopics/french-reviewed-tasks.json';
+import allTasks from '../data/examTopics/french-reviewed-tasks.json';
+import { FRENCH_DEFERRED_CARDS } from '../components/MarkBank/cards/french/deferred';
 import sources from '../scripts/markbank/authoring/french-writing-sources.json';
 import readingReview from '../scripts/markbank/authoring/french-reading-review.json';
 import { tariffReconciles } from '../types/markBank';
@@ -14,6 +15,8 @@ import { paperRegionFor } from '../components/PaperTrail/paperRegion';
 import { frenchMarks, frenchScoreId, FRENCH_ATTEMPT_ID } from '../components/MarkBank/frenchRubric';
 
 const deck = [...higher, ...ordinary];
+// June's reviewed tasks; the deferred sittings' (sitting 'deferred') are pinned in frenchReading.test.ts.
+const tasks = allTasks.filter(task => task.sitting !== 'deferred');
 const correctedReadingIds = new Set(readingReview.papers.flatMap(paper => Object.values(paper.preservedCardIds ?? {})));
 
 describe('reviewed 2010–2026 French writing tasks', () => {
@@ -21,7 +24,7 @@ describe('reviewed 2010–2026 French writing tasks', () => {
     expect(cards).toHaveLength(306);
     expect(cards.filter(card => card.level === 'higher')).toHaveLength(136);
     expect(cards.filter(card => card.level === 'ordinary')).toHaveLength(170);
-    expect(deck).toHaveLength(2120);
+    expect(deck).toHaveLength(2120 + FRENCH_DEFERRED_CARDS.length);
     expect(new Set(deck.map(card => card.id)).size).toBe(deck.length);
     for (const old of legacy) {
       const live = deck.find(card => card.id === old.id)!;

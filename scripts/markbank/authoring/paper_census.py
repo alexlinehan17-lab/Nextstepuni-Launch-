@@ -2464,7 +2464,7 @@ def census_sections(subject, year, level, files=None):
     return set(parts), texts, P.files
 
 
-def census_lang(subject, year, level):
+def census_lang(subject, year, level, sitting=None):
     """French: the written booklet and the listening booklet, read together.
 
     THE DENOMINATOR IS THE PAPER, and in this subject the paper needs help
@@ -2495,8 +2495,8 @@ def census_lang(subject, year, level):
     from fr_paper import FrPaper                              # noqa: E402
     from fr_scheme import FrScheme                            # noqa: E402
 
-    P = FrPaper(year, level, subject)
-    S = FrScheme(year, level, subject)
+    P = FrPaper(year, level, subject, sitting=sitting)
+    S = FrScheme(year, level, subject, sitting=sitting)
     # A readable text file is not proof that this parser understood its layout.
     # Older schemes use Roman sections and paired 7+1 allocations. Without
     # this guard they silently census zero reading tasks after PDF extraction.
@@ -4815,6 +4815,8 @@ def census_subject(subject):
         papers.extend(census_spanish_deferred())
     if subject == 'german':
         papers.extend(census_german_deferred())
+    if subject == 'french':
+        papers.extend(census_french_deferred())
     if subject == 'maths':
         papers.extend(census_maths_reviewed_booklets())
     if subject == 'physics':
@@ -5102,6 +5104,40 @@ def census_german_deferred():
         paper['paper'] = 'Deferred'
         paper['marksSum'], paper['marksQuestions'] = None, 0
         papers.append(paper)
+    return papers
+
+
+# The SEC's deferred French sittings in the archive: 2022 and 2023, Higher and Ordinary, each a written
+# booklet and a listening booklet in the bilingual edition (deferredexams/<year>/LC010<A|G>LP000BV.pdf and
+# LC010<A|G>LPA00BV.pdf; scheme LC010<A|G>LP000EV in deferredmarkingschemes/). None for 2024 or 2025.
+# (2022 and 2023, both levels.) A sitting is read once its reviewed reading ledger record exists
+# (french-reading-review-deferred.json), as Business adds its own sittings one by one.
+FR_DEFERRED_SITTINGS = tuple((r['year'], r['level']) for r in json.load(open(os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), 'french-reading-review-deferred.json'), encoding='utf-8'))['papers'])
+
+
+def census_french_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Each deferred French sitting (FR_DEFERRED_SITTINGS) is a paper of its own,
+    keyed 'Deferred' as Spanish's is (census_spanish_deferred): its written and
+    listening booklets read by census_lang exactly as June's are, with
+    fr_paper.FrPaper(..., sitting='deferred') and its own scheme
+    (schemes/<year>-<level>-deferred.md), so a deferred ask never lands on a
+    June leaf with the same address. The checksum is not run on it.
+    """
+    papers = []
+    for year, level in FR_DEFERRED_SITTINGS:
+        parts, texts, _files, P, S, claimed = census_lang('french', year, level, sitting='deferred')
+        leaves = list(leaves_of(parts))
+        flags = lang_flags(P, S, claimed)
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'french'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
     return papers
 
 
