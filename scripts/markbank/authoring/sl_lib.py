@@ -560,11 +560,13 @@ RULE_WORDS = {
     # lines; 2014 words it "Odgovore napišite na hrvatskome jeziku, ...".
     'croatian': (r'Svi odgovori|Svi$|Odgovore napišite', r'hrvatsk'),
     'danish': (r'Alle (?:svar|spørgsmål|opgaver)', r'dansk'),
-    'estonian': (r'K[õo]ikidele', r'eesti'),
+    'estonian': (r'K[õo]ikidele|Ülesannetele tuleb', r'eesti'),
     'finnish': (r'Vastaa', r'suome'),
-    'hungarian': (r'[Vv]álaszoljon', r'magyar'),
+    # Hungarian: "Válaszolj ..." (2010, 2011, 2020), "... válaszoljon ..." and "Minden
+    # válaszát magyarul írja le!" (2021, 2022).
+    'hungarian': (r'[Vv]álaszolj(?:on)?\b|Minden válaszát', r'magyar'),
     'slovakian': (r'[Oo]dpove', r'slovensk'),
-    'slovenian': (r'[Oo]dgovor', r'slovensk'),
+    'slovenian': (r'[Oo]dgovor', r'sloven(?:sk|šč)'),
     'swedish': (r'Alla? svar', r'svensk'),
     'maltese': (r'[Ww]ieġeb|[Tt]weġibiet', r'[Mm]alti'),
     # Czech and Latvian print the rule on their own p2 (the lt walker's live
@@ -607,8 +609,9 @@ LATIN_SUBJECTS = {'dutch', 'romanian', 'hungarian', 'slovakian', 'swedish', 'est
 
 
 # A sentence ends at . ! ? followed by an upper-case letter, a line end or the
-# text's end; not at "I." in "az I., II. és III. részben" (Hungarian).
-SENT_END = re.compile(r'[.!?](?=\s+[A-ZÀ-ÖØ-ÞĀ-Ž\u0400-\u042f]|\s*$)')
+# text's end, or a bracket opening one ("... slovenščini. (Največ 100 točk)",
+# Slovenian 2024); not at "I." in "az I., II. és III. részben" (Hungarian).
+SENT_END = re.compile(r'[.!?](?=\s+[(\[]?[A-ZÀ-ÖØ-ÞĀ-Ž\u0400-\u042f]|\s*$)')
 
 
 def rule_sentence(subject, doc):
@@ -621,35 +624,38 @@ def rule_sentence(subject, doc):
     for page in sorted({p for p, _t in doc['paper']}):
         lines = [re.sub(r'\s+', ' ', t).strip() for p, t in doc['paper'] if p == page]
         for i, line in enumerate(lines):
-            m = answer.search(line)
-            if not m:
-                continue
-            # the sentence's start: after the last sentence end before the
-            # answer word, on this line or the one above it
-            prev = lines[i - 1] if i else ''
-            combined = f'{prev} {line}' if prev else line
-            at = (len(prev) + 1 if prev else 0) + m.start()
-            ends = [e.end() for e in SENT_END.finditer(combined[:at])]
-            start = ends[-1] if ends else (len(prev) + 1 if prev else 0)
-            # Cut, never re-joined: the printed spacing stands ("It‐tweġibiet",
-            # where the answer word opens inside a hyphenated word; Maltese 2022).
-            text = combined[start:].strip()
-            lead = combined[start:at].strip()
-            for nxt in lines[i + 1:i + RULE_LINES]:
+            # every answer word on the line: the rule may follow another use of
+            # it ("... odpovedajte na otázky ... častiach. Odpovede napíšte po
+            # slovensky ...", Slovakian)
+            for m in answer.finditer(line):
+                # the sentence's start: after the last sentence end before the
+                # answer word, on this line or the one above it
+                prev = lines[i - 1] if i else ''
+                combined = f'{prev} {line}' if prev else line
+                at = (len(prev) + 1 if prev else 0) + m.start()
+                ends = [e.end() for e in SENT_END.finditer(combined[:at])]
+                start = ends[-1] if ends else (len(prev) + 1 if prev else 0)
+                # Cut, never re-joined: the printed spacing stands ("It‐tweġibiet",
+                # where the answer word opens inside a hyphenated word; Maltese 2022).
+                text = combined[start:].strip()
+                lead = combined[start:at].strip()
+                for nxt in lines[i + 1:i + RULE_LINES]:
+                    stop = SENT_END.search(text, len(lead))
+                    if stop:
+                        break
+                    # ... unless the next line runs on in lower case, or opens with a part's
+                    # Roman numeral ("az I., II. és" / "III. részben", Hungarian)
+                    if lang.search(text) and not re.match(r'[a-zà-öø-ÿā-ž\u0430-\u044f]|(?:I{1,3}|IV)\.\s', nxt):
+                        break
+                    text = f'{text} {nxt}'
                 stop = SENT_END.search(text, len(lead))
-                if stop:
-                    break
-                if lang.search(text) and not re.match(r'[a-zà-öø-ÿā-ž\u0430-\u044f]', nxt):
-                    break
-                text = f'{text} {nxt}'
-            stop = SENT_END.search(text, len(lead))
-            sent = text[:stop.end()] if stop else text
-            if lang.search(sent):
-                for bad, good in RULE_FIXES.get((subject, doc['P'].year), {}).items():
-                    sent = sent.replace(bad, good)
-                if subject in LATIN_SUBJECTS and re.search('[\u0400-\u04ff\ufffd]', sent):
-                    raise ValueError(f'{subject} {doc["P"].year}: rule text carries an unrepaired glyph: {sent!r}')
-                return page, sent
+                sent = text[:stop.end()] if stop else text
+                if lang.search(sent):
+                    for bad, good in RULE_FIXES.get((subject, doc['P'].year), {}).items():
+                        sent = sent.replace(bad, good)
+                    if subject in LATIN_SUBJECTS and re.search('[\u0400-\u04ff\ufffd]', sent):
+                        raise ValueError(f'{subject} {doc["P"].year}: rule text carries an unrepaired glyph: {sent!r}')
+                    return page, sent
     return None
 
 
