@@ -34,8 +34,11 @@ describe('Business marking schemes are extractor output, not editable text', () 
   test('every scheme is present', () => {
     // 2021-2025 Higher and Ordinary, plus the extractor output for the
     // 2010-2020 and 2026 Higher and the 2010-2020 and 2026 Ordinary schemes
-    // behind the reviewed rubric cards.
-    expect(files.length).toBe(34);
+    // behind the reviewed rubric cards; and the deferred sittings' own schemes
+    // (2022 Higher and Ordinary, 2023 Higher: <year>-<level>-deferred.md).
+    expect(files.filter(f => !f.endsWith('-deferred.md')).length).toBe(34);
+    expect(files.filter(f => f.endsWith('-deferred.md')).sort())
+      .toEqual(['2022-hl-deferred.md', '2022-ol-deferred.md', '2023-hl-deferred.md']);
   });
 
   test.each(files)('%s carries no editorial insertion', (file) => {

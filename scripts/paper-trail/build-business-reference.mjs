@@ -137,7 +137,8 @@ const output = {
 fs.writeFileSync(OUTPUT_PATH, `${JSON.stringify(output, null, 2)}\n`);
 
 if (process.argv.includes('--freeze-baseline')) {
-  const tags = readJson(TAGS_PATH);
+  // The carded deferred booklets (business_deferred.py) are not part of the June preservation baseline.
+  const tags = readJson(TAGS_PATH).filter(paper => !/-deferred\.pdf$/i.test(paper.fileid));
   const baseline = tags.map(paper => ({
     level: paper.level,
     lang: paper.lang,

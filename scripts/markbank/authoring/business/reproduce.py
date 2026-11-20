@@ -63,6 +63,8 @@ CHAIN = [
     'add-2011-hl.py', 'add-2011-hl-paper-reviews.py',
     'add-2010-hl.py', 'add-2010-hl-paper-reviews.py',
     'post-generation-edits.py',
+    # The SEC's deferred sittings, in their own files (deferred_lib.py); each replaces only its own sitting.
+    'add-2022-hl-deferred.py', 'add-2022-ol-deferred.py', 'add-2023-hl-deferred.py',
 ]
 
 OUTPUTS = [
@@ -73,10 +75,13 @@ OUTPUTS = [
     'scripts/markbank/authored/business-2013-hl-pending-review.json',
     'scripts/markbank/authored/business-corpus-inventory.json',
     'data/examTopics/business-source-reviewed-topics.json',
+    'components/MarkBank/cards/business/deferred-authored.json',
+    'data/examTopics/business-deferred-question-topics.json',
 ]
 
 # Scheme files extracted in this work, with the extractor flags that made them.
 SCHEMES = [f'{y}-hl' for y in range(2010, 2021)] + ['2010-ol', '2011-ol', '2012-ol', '2013-ol', '2014-ol', '2015-ol', '2016-ol', '2017-ol', '2018-ol', '2019-ol', '2020-ol', '2026-hl', '2026-ol']
+DEFERRED_SCHEMES = ['2022-hl-deferred', '2022-ol-deferred', '2023-hl-deferred']
 
 
 def run(cmd):
@@ -104,6 +109,15 @@ def check_schemes():
                  '--glyph-ids', '--unnamed-glyphs', '-o', str(out)])
             if out.read_bytes() != Path(f'examiner-reports/business/schemes/{name}.md').read_bytes():
                 bad.append(name)
+        # The deferred sittings' schemes (deferredmarkingschemes/), read with the same flags.
+        for name in DEFERRED_SCHEMES:
+            year, level, _ = name.split('-')
+            pdf = f'paper-trail-corpus/deferredmarkingschemes/{year}/LC033{"ALP" if level == "hl" else "GLP"}000EV.pdf'
+            out = Path(tmp) / f'{name}.md'
+            run([sys.executable, 'scripts/markbank/extract-scheme.py', pdf, '--marks-column', '--digit-mark-cells',
+                 '--glyph-ids', '--unnamed-glyphs', '-o', str(out)])
+            if out.read_bytes() != Path(f'examiner-reports/business/schemes/{name}.md').read_bytes():
+                bad.append(name)
     return bad
 
 
@@ -126,7 +140,7 @@ def main():
     for name in bad:
         print(f'DIFFERS examiner-reports/business/schemes/{name}.md')
     if '--schemes' in sys.argv:
-        print(f'{len(SCHEMES) - len(bad)}/{len(SCHEMES)} scheme files re-extract byte-identically')
+        print(f'{len(SCHEMES) + len(DEFERRED_SCHEMES) - len(bad)}/{len(SCHEMES) + len(DEFERRED_SCHEMES)} scheme files re-extract byte-identically')
     if (changed and not write) or bad:
         raise SystemExit(1)
 
