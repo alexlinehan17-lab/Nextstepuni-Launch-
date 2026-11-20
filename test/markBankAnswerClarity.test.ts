@@ -816,7 +816,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     const inline = /\(\s*\d+\s*m?\s*\)|\[\s*\d+\s*\]/g;
     expect(rows.filter(({ row }) => row.kind !== 'anyN' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
     const pieces = rows.filter(({ row }) => /^r-\d+-\d+$/.test(row.id));
-    expect([pieces.length, new Set(pieces.map(({ card }) => card.id)).size]).toEqual([299, 105]);
+    expect([pieces.length, new Set(pieces.map(({ card }) => card.id)).size]).toEqual([316, 111]);
     for (const { card, row } of pieces) {
       expect(row.kind, `${card.id}/${row.id}`).toBe('point');
       expect(/[\p{L}\p{N}]/u.test(row.verbatim), `${card.id}/${row.id}: "${row.verbatim}"`).toBe(true);
@@ -850,7 +850,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // options (the group has no per-option steps). Model one of those and lower its number here.
     const noted = rows.filter(({ row }) => row.kind !== 'criterion' && (row.contextNote ?? '').includes(lesser));
     expect(noted.filter(({ row }) => row.kind === 'point').every(({ row }) => /^r-\d+-\d+$/.test(row.id))).toBe(true);
-    expect([noted.filter(({ row }) => row.kind === 'point').length, noted.filter(({ row }) => row.kind === 'anyN').length]).toEqual([31, 158]);
+    expect([noted.filter(({ row }) => row.kind === 'point').length, noted.filter(({ row }) => row.kind === 'anyN').length]).toEqual([31, 166]);
   });
 
   it('Technology: a drawn answer is the ask as its one row behind the scheme\'s own print; every printed 2026 Higher ask is a card', () => {
