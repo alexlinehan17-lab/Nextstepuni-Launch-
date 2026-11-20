@@ -33,6 +33,8 @@ export const HOSTED_AUDIO_MISSING: readonly string[] = [
   'audio/2012/LC001ZLPO17IV.mp3',
   'audio/2012/LC012ZLPO17EV.mp3',
   'audio/2012/LC058ZLPO17EV.mp3',
+  'audio/2012/LC067ZLP117EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
+  'audio/2012/LC067ZLP217EV.mp3', // Recorded exception, coordinator ruling 19 Nov 2026: the SEC archive has blocked this Mac since 19 Nov 11:19 UTC; owner: audio-hosting lane.
   'audio/2012/LC099ZLPO17EV.mp3',
   'audio/2013/LC001BLP017IV.mp3',
   'audio/2013/LC001ZLP017IV.mp3',

@@ -55248,4 +55248,3555 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC067ALP007EV"
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q1-x1-i", topicId: "music-2-14", conceptId: "mus-excerpt-heard-identify-line",
+    section: "L", questionRef: "2012 HL Listening Q1 Excerpt 1(i)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
+    questionText: "Identify the style of singing heard in line 1 of this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Style of singing", marks: null, contextNote: "The scheme reads: “Any one style.”", group: {"claimMax":1,"perOption":1.5,"options":["a cappella","close harmony"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.1,
+                            0.12,
+                            0.93,
+                            0.146
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q1-x1-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q1-x1-i-score.png",
+          "srcHash": "5be515477da6f1084df48e89124825e9",
+          "alt": "The printed question, printed with Listening Q1 Excerpt 1(i) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q1-x1-ii", topicId: "music-2-14", conceptId: "mus-does-enter-line-piano",
+    section: "L", questionRef: "2012 HL Listening Q1 Excerpt 1(ii)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
+    questionText: "In which line does the piano enter? It plays",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Line 3", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "broken chords", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.1,
+                            0.148,
+                            0.93,
+                            0.197
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q1-x1-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q1-x1-ii-score.png",
+          "srcHash": "b1b591657351f539bf974937140d1cd4",
+          "alt": "The printed question, its follow-on line and three options (staccato chords, sustained chords, broken chords), printed with Listening Q1 Excerpt 1(ii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q1-x1-iii", topicId: "music-2-14", conceptId: "mus-features-heard-identify-line",
+    section: "L", questionRef: "2012 HL Listening Q1 Excerpt 1(iii)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
+    questionText: "Identify two features of the vocal music as heard in line 5.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of the vocal music in line 5", marks: null, contextNote: "The scheme reads: “Any two valid answers.”", group: {"claimMax":2,"perOption":1,"options":["repeated notes","chromatic movement","syllabic","4-note motif","close harmony","overdubbing /multitracking"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.1,
+                            0.197,
+                            0.93,
+                            0.243
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q1-x1-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q1-x1-iii-score.png",
+          "srcHash": "dfa31756ef6274a7d0e7f050ba8f6194",
+          "alt": "The printed question, printed with Listening Q1 Excerpt 1(iii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q1-x1-iv", topicId: "music-2-14", conceptId: "mus-anyway-blows’-describe-effect",
+    section: "L", questionRef: "2012 HL Listening Q1 Excerpt 1(iv)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 1. The lyrics of this excerpt are printed below. Line 1 Is this the real life? Is this just fantasy? Line 2 Caught in a landslide, no escape from reality. Line 3 Open your eyes, look up to the skies and see, Line 4 I’m just a poor boy, I need no sympathy, Line 5 Because I’m easy come, easy go, little high, little low, Line 6 Any way the wind blows, doesn’t really matter to me, to me.",
+    questionText: "Describe the effect used to illustrate the words ‘anyway the wind blows’ in line 6.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Flanged (crash) cymbal", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.1,
+                            0.244,
+                            0.93,
+                            0.318
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q1-x1-iv-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q1-x1-iv-score.png",
+          "srcHash": "ba00fecff604bf6e71513465cdea0b5f",
+          "alt": "The printed question, printed with Listening Q1 Excerpt 1(iv) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q1-x2-i", topicId: "music-2-14", conceptId: "mus-bars-bass-describe-excerpt",
+    section: "L", questionRef: "2012 HL Listening Q1 Excerpt 2(i)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. An outline score of the music for this excerpt is printed below.",
+    questionText: "Describe the bass guitar part heard in bars 1–6 of this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The bass guitar part in bars 1-6", marks: null, contextNote: "The scheme reads: “Any valid description”", openList: true, group: {"claimMax":1,"perOption":2,"options":["note on 1st beat of each bar","roots of chords","sustained notes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.1,
+                            0.342,
+                            0.93,
+                            0.415
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q1-x2-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q1-x2-i-score.png",
+          "srcHash": "85e8fbff6dbcf8d4d2bc62edf2f04a77",
+          "alt": "The printed question, printed with Listening Q1 Excerpt 2(i) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q1-x2-ii", topicId: "music-2-14", conceptId: "mus-five-insert-melody-missing",
+    section: "L", questionRef: "2012 HL Listening Q1 Excerpt 2(ii)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. An outline score of the music for this excerpt is printed below.",
+    questionText: "Insert the five missing melody notes at X on the score.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2.5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: ".5 per correct note", marks: 2.5, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", permittedMarks: [0,0.5,1,1.5,2,2.5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.1,
+                            0.415,
+                            0.93,
+                            0.437
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q1-x2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q1-x2-ii-score.png",
+          "srcHash": "0cb8e3e6906c86f8fb36d89bd8878900",
+          "alt": "The Excerpt 2 heading and its outline score, bars 1-15, with the lyrics set under the notes (the X bracket over bar 6, its rhythm printed above the empty bar), printed with Listening Q1 Excerpt 2(ii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "music-2012-HL-scheme-p8-l-q1-x2-ii",
+          "src": "/exam-figures/music/markbank/music-2012-HL-scheme-p8-l-q1-x2-ii.png",
+          "srcHash": "f31947d81a05207e566852bf5b00556c",
+          "alt": "The marking scheme’s printed answer for Listening Q1 Excerpt 2(ii): the five notes printed on a treble stave, the mark 2.5 and \".5 per correct note\", cropped from page 8 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q1-x2-iii", topicId: "music-2-14", conceptId: "mus-describe-excerpt-heard-music",
+    section: "L", questionRef: "2012 HL Listening Q1 Excerpt 2(iii)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 2. An outline score of the music for this excerpt is printed below.",
+    questionText: "Describe the style of music heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The style of music", marks: null, contextNote: "The scheme reads: “Up to 3 marks for a good description of the style as heard in this excerpt:” “any valid description”", openList: true, group: {"claimMax":1,"perOption":3,"options":["ballad","pop ballad","light rock"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.1,
+                            0.437,
+                            0.93,
+                            0.51
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q1-x2-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q1-x2-iii-score.png",
+          "srcHash": "a9426659769db869033278492953364c",
+          "alt": "The printed question, printed with Listening Q1 Excerpt 2(iii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q1-x3-i", topicId: "music-2-14", conceptId: "mus-excerpt-from-section-song",
+    section: "L", questionRef: "2012 HL Listening Q1 Excerpt 3(i)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    questionText: "From which section of the song is this excerpt taken?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "operatic / dramatic section", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.1,
+                            0.536,
+                            0.93,
+                            0.562
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q1-x3-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q1-x3-i-score.png",
+          "srcHash": "a955b066ac04d866500da840c7815795",
+          "alt": "The printed question, printed with Listening Q1 Excerpt 3(i) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q1-x3-ii", topicId: "music-2-14", conceptId: "mus-excerpt-explain-this-vocals",
+    section: "L", questionRef: "2012 HL Listening Q1 Excerpt 3(ii)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    questionText: "The vocals in this excerpt are Explain.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "antiphonal", marks: 1 },
+    { id: "r-2", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Explanation of antiphonal as heard in this excerpt.”", permittedMarks: [0,1,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.1,
+                            0.564,
+                            0.93,
+                            0.675
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q1-x3-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q1-x3-ii-score.png",
+          "srcHash": "863c2fe46b46549124a22653b726d235",
+          "alt": "The printed question, its three options (a capella, antiphonal, contrapuntal) and \"Explain.\", printed with Listening Q1 Excerpt 3(ii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q1-x3-iii", topicId: "music-2-14", conceptId: "mus-emphasised-excerpt-this-word",
+    section: "L", questionRef: "2012 HL Listening Q1 Excerpt 3(iii)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    questionText: "How is the word ‘no’ emphasised in this excerpt?.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "How the word ‘no’ is emphasised", marks: null, contextNote: "The scheme reads: “Any valid answer.”", openList: true, group: {"claimMax":1,"perOption":2,"options":["unison rhythm in vocal and instrumental parts","cymbal crash on each chord/word","accented/strong/staccato/detached chords","rising chords","rich/full harmony on each word","rich/full texture on each word"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.1,
+                            0.675,
+                            0.93,
+                            0.745
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q1-x3-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q1-x3-iii-score.png",
+          "srcHash": "2b572241969403ad20b81e13dc70acd2",
+          "alt": "The printed question, printed with Listening Q1 Excerpt 3(iii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q1-x3-iv", topicId: "music-2-14", conceptId: "mus-contrasts-describe-excerpt-heard",
+    section: "L", questionRef: "2012 HL Listening Q1 Excerpt 3(iv)",
+    stem: "Three excerpts from Bohemian Rhapsody by Freddie Mercury.\n• Each excerpt will be played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on page 3. Excerpt 3. There is no printed music for this excerpt.",
+    questionText: "Describe two ways in which the music heard in the remainder of the song, contrasts with the music heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 4, contextNote: "The scheme reads: “Up to two marks for each of two valid contrasts between this excerpt and the remainder of the song (1st guitar interlude; hard rock section/2nd song; 2nd guitar interlude; recap and coda).”", permittedMarks: [0,1,2,3,4], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 1",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 3,
+                      "r": [
+                            0.1,
+                            0.745,
+                            0.93,
+                            0.89
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 1 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q1-x3-iv-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q1-x3-iv-score.png",
+          "srcHash": "316dca820acdb0a861a4c1594b8224da",
+          "alt": "The printed question (two lines), printed with Listening Q1 Excerpt 3(iv) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q2-i", topicId: "music-2-15", conceptId: "mus-excerpt-from-section-taken",
+    section: "L", questionRef: "2012 HL Listening Q2(i)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "From which section of the work is this excerpt taken?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Development", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.1,
+                            0.2,
+                            0.93,
+                            0.24
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q2-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q2-i-score.png",
+          "srcHash": "30d49de4aa4d5882b627ef1f3a90b60b",
+          "alt": "The printed question, printed with Listening Q2(i) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q2-ii", topicId: "music-2-15", conceptId: "mus-excerpt-heard-name-played",
+    section: "L", questionRef: "2012 HL Listening Q2(ii)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Name the theme heard at the start of this excerpt. It is played by",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Friar Lawrence/ecclesiastical/chorale/introductory/opening theme", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "French horns", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.1,
+                            0.25,
+                            0.93,
+                            0.335
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q2-ii-score.png",
+          "srcHash": "5cf4ea4e10e5741d954b11228b741ec3",
+          "alt": "The printed question, its follow-on line and three options (clarinets, bassoons, French horns), printed with Listening Q2(ii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q2-iii", topicId: "music-2-15", conceptId: "mus-against-brass-describe-excerpt",
+    section: "L", questionRef: "2012 HL Listening Q2(iii)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Which of the following rhythmic figures is heard on the violins in this excerpt? Describe the music heard on the woodwind and brass instruments against this rhythmic figure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Which of the following rhythmic figures is heard on the violins in this excerpt?", marks: 1, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
+    { id: "r-2", kind: "anyN", verbatim: "The music on the woodwind and brass against this figure", marks: null, contextNote: "The scheme reads: “any valid answer”", openList: true, group: {"claimMax":1,"perOption":2,"options":["dialogue between brass and woodwind","4-note crotchet figure","4-note (or 2-note) chromatic figure"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.1,
+                            0.352,
+                            0.93,
+                            0.53
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q2-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q2-iii-score.png",
+          "srcHash": "2745e9555031e8d8c722d3dfe3034b2f",
+          "alt": "The printed question, its three rhythmic figures printed in notation (tick boxes, unlabelled) and the second line, printed with Listening Q2(iii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2012-HL-scheme-p9-l-q2-iii",
+          "src": "/exam-figures/music/markbank/music-2012-HL-scheme-p9-l-q2-iii.png",
+          "srcHash": "9b326707596eb87de9db6def3791d779",
+          "alt": "The marking scheme’s printed answer for Listening Q2(iii): the rhythmic figure printed in notation, with its mark 1, cropped from page 9 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q2-iv", topicId: "music-2-15", conceptId: "mus-excerpt-this-tonality",
+    section: "L", questionRef: "2012 HL Listening Q2(iv)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "The tonality of this excerpt is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Minor", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.1,
+                            0.543,
+                            0.93,
+                            0.592
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q2-iv-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q2-iv-score.png",
+          "srcHash": "0f1356fcee0385bebffca09b2c9c6e70",
+          "alt": "The printed question and its three options (major, minor, modal), printed with Listening Q2(iv) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q2-v", topicId: "music-2-15", conceptId: "mus-discuss-example-fantasy-juliet",
+    section: "L", questionRef: "2012 HL Listening Q2(v)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Romeo and Juliet Fantasy Overture is an example of Programme music. Discuss",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 3, contextNote: "The scheme reads: “Up to 3 marks for a good answer which demonstrates an understanding of Programme music and how it relates to Romeo and Juliet Fantasy Overture.”", permittedMarks: [0,1,2,3], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 4,
+                      "r": [
+                            0.1,
+                            0.612,
+                            0.93,
+                            0.8
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q2-v-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q2-v-score.png",
+          "srcHash": "ab9e1037af89fac6c74fed32abcd45c3",
+          "alt": "The printed question, printed with Listening Q2(v) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q3-i", topicId: "music-2-17", conceptId: "mus-enter-excerpt-first-from",
+    section: "L", questionRef: "2012 HL Listening Q3(i)",
+    stem: "An excerpt from the cantata Jesu, der du meine Seele by J.S. Bach will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "From which movement is this excerpt taken? The first voice to enter is the",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1st movement / Chorus / Chor", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "alto", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.1,
+                            0.196,
+                            0.93,
+                            0.29
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q3-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q3-i-score.png",
+          "srcHash": "87de4b6870e44c8626a9ba4273e59782",
+          "alt": "The printed question, its follow-on line and four options (soprano, alto, tenor, bass), printed with Listening Q3(i) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q3-ii", topicId: "music-2-17", conceptId: "mus-another-cantata-doubles-heard",
+    section: "L", questionRef: "2012 HL Listening Q3(ii)",
+    stem: "An excerpt from the cantata Jesu, der du meine Seele by J.S. Bach will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Name one instrument which doubles the soprano melody line. Identify another movement in this cantata where the same melody line is heard.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "flute / French horn", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "7th movement / Chorale / Choral", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.1,
+                            0.298,
+                            0.93,
+                            0.36
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q3-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q3-ii-score.png",
+          "srcHash": "3e75ee4e16ebf5dfe2dd8950aa4627a8",
+          "alt": "The printed question (both lines), printed with Listening Q3(ii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q3-iii", topicId: "music-2-17", conceptId: "mus-excerpt-explain-heard-music",
+    section: "L", questionRef: "2012 HL Listening Q3(iii)",
+    stem: "An excerpt from the cantata Jesu, der du meine Seele by J.S. Bach will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "The texture of the music heard in this excerpt is Explain.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2.5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "polyphonic", marks: 0.5 },
+    { id: "r-2", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Any valid explanation relating to this excerpt.”", permittedMarks: [0,1,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.1,
+                            0.376,
+                            0.93,
+                            0.54
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q3-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q3-iii-score.png",
+          "srcHash": "36d9a269119546f33fac22592d664367",
+          "alt": "The printed question, its three options (monophonic, homophonic, polyphonic) and \"Explain.\", printed with Listening Q3(iii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q3-iv", topicId: "music-2-17", conceptId: "mus-excerpt-explain-features-this",
+    section: "L", questionRef: "2012 HL Listening Q3(iv)",
+    stem: "An excerpt from the cantata Jesu, der du meine Seele by J.S. Bach will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "This excerpt features Explain.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2.5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a chaconne", marks: 0.5 },
+    { id: "r-2", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Any valid explanation relating to this excerpt.”", permittedMarks: [0,1,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.1,
+                            0.543,
+                            0.93,
+                            0.7
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q3-iv-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q3-iv-score.png",
+          "srcHash": "c2ef6a81c0d430cd48860d78d9745dff",
+          "alt": "The printed question, its three options (an obligato, a Tierce de Picardie, a chaconne) and \"Explain.\", printed with Listening Q3(iv) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q3-v", topicId: "music-2-17", conceptId: "mus-cadence-excerpt-heard-identify",
+    section: "L", questionRef: "2012 HL Listening Q3(v)",
+    stem: "An excerpt from the cantata Jesu, der du meine Seele by J.S. Bach will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• There is no printed music for this question.\n• Answer the following questions:",
+    questionText: "Identify the cadence heard at the end of the excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "perfect cadence", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.1,
+                            0.707,
+                            0.93,
+                            0.735
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q3-v-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q3-v-score.png",
+          "srcHash": "bd34312793501dd936fa2c7281732527",
+          "alt": "The printed question, printed with Listening Q3(v) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q4-i", topicId: "music-2-16", conceptId: "mus-above-bars-excerpt-from",
+    section: "L", questionRef: "2012 HL Listening Q4(i)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–7 of the excerpt is printed below.\n• Answer the following questions:",
+    questionText: "This excerpt is taken from Insert the missing time signatures in bars 2, 4 and 5 on the score above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "the middle of the work", marks: 0.5 },
+    { id: "r-2", kind: "criterion", verbatim: "4/4; 3/4; 3/8", marks: 1.5, contextNote: "The scheme reads: “(.5 mark per correct time signature)”", permittedMarks: [0,0.5,1,1.5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.1,
+                            0.343,
+                            0.93,
+                            0.425
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q4-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q4-i-score.png",
+          "srcHash": "51ce6a492f21c2b794d71ddfea539fa5",
+          "alt": "The outline score of bars 1-7 (time signatures printed in bars 1, 6 and 7 only), the bullet below it, and the question with its three options (the beginning / the middle / the end of the work) and its second line, printed with Listening Q4(i) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q4-ii", topicId: "music-2-16", conceptId: "mus-music-played",
+    section: "L", questionRef: "2012 HL Listening Q4(ii)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–7 of the excerpt is printed below.\n• Answer the following questions:",
+    questionText: "The music is played",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "with accents", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.1,
+                            0.43,
+                            0.93,
+                            0.49
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q4-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q4-ii-score.png",
+          "srcHash": "c22ade9d4134b87162226328870a1357",
+          "alt": "The printed question and its three options (pizzicato, with accents, legato), printed with Listening Q4(ii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q4-iii", topicId: "music-2-16", conceptId: "mus-excerpt-explain-features-this",
+    section: "L", questionRef: "2012 HL Listening Q4(iii)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–7 of the excerpt is printed below.\n• Answer the following questions:",
+    questionText: "This excerpt features Explain.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "retrograde", marks: 1 },
+    { id: "r-2", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Any valid explanation relating to this excerpt.”", permittedMarks: [0,1,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.1,
+                            0.502,
+                            0.93,
+                            0.64
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q4-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q4-iii-score.png",
+          "srcHash": "7d747e34de3e009dfe9bb2ad86446768",
+          "alt": "The printed question, its three options (inversion, augmentation, retrograde) and \"Explain.\", printed with Listening Q4(iii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q4-iv", topicId: "music-2-16", conceptId: "mus-describe-excerpt-identify-texture",
+    section: "L", questionRef: "2012 HL Listening Q4(iv)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–7 of the excerpt is printed below.\n• Answer the following questions:",
+    questionText: "Identify and describe the texture of this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "polyphonic", marks: 1 },
+    { id: "r-2", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1, contextNote: "The scheme reads: “Any valid description relating to this excerpt.”", permittedMarks: [0,1], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.1,
+                            0.641,
+                            0.93,
+                            0.765
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q4-iv-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q4-iv-score.png",
+          "srcHash": "f862a4e8fad583d201327e581ca8389c",
+          "alt": "The printed question, printed with Listening Q4(iv) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q4-v", topicId: "music-2-16", conceptId: "mus-describe-excerpt-follows-immediately",
+    section: "L", questionRef: "2012 HL Listening Q4(v)",
+    stem: "An excerpt from Piano Quartet No.1 by Gerald Barry will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–7 of the excerpt is printed below.\n• Answer the following questions:",
+    questionText: "Describe the music which immediately follows this excerpt in the work.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Any valid description of Homage a Horowitz”", permittedMarks: [0,1,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 6,
+                      "r": [
+                            0.1,
+                            0.767,
+                            0.93,
+                            0.895
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 4",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "secFileid": "LC067ZLP117EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP117EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q4-v-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q4-v-score.png",
+          "srcHash": "70e069472566c77b3fed0dee472d6cd1",
+          "alt": "The printed question, printed with Listening Q4(v) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q5-a-x1-i", topicId: "music-2-2", conceptId: "mus-dance-excerpt-heard-identify",
+    section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 1(i)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    questionText: "Identify the type of dance tune heard in this excerpt and its time signature.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "slip jig", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "9/8", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.1,
+                            0.192,
+                            0.93,
+                            0.248
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q5-a-x1-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q5-a-x1-i-score.png",
+          "srcHash": "9800b44915d41fe98bd7d88282f1778c",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 1(i) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q5-a-x1-ii", topicId: "music-2-2", conceptId: "mus-associated-dance-rhythm-this",
+    section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 1(ii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    questionText: "Write one bar of rhythm associated with this type of dance:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Bar of rhythm", marks: 1, permittedMarks: [0,1] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.1,
+                            0.25,
+                            0.93,
+                            0.282
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q5-a-x1-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q5-a-x1-ii-score.png",
+          "srcHash": "3b73bfae280a7e4c9d8d9f3a25965b15",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 1(ii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q5-a-x1-iii", topicId: "music-2-2", conceptId: "mus-excerpt-features-this",
+    section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 1(iii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 1",
+    questionText: "This excerpt features",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a drone", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.1,
+                            0.283,
+                            0.93,
+                            0.335
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q5-a-x1-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q5-a-x1-iii-score.png",
+          "srcHash": "a841e35db0e4cc4a85da329269e27782",
+          "alt": "The printed question and its three options (free rhythm, a drone, syncopation), printed with Listening Q5 A Excerpt 1(iii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q5-a-x2-i", topicId: "music-2-2", conceptId: "mus-excerpt-features-heard-identify",
+    section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 2(i)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    questionText: "Identify two features of the vocals heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Features of the vocals", marks: null, contextNote: "The scheme reads: “Any two valid answers”", group: {"claimMax":2,"perOption":1,"options":["ornamentation","unaccompanied singing (at the start)","nasal tone","sean nós style","free rhythm","harmony/descant (2nd verse"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.1,
+                            0.36,
+                            0.93,
+                            0.465
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q5-a-x2-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q5-a-x2-i-score.png",
+          "srcHash": "0c09d4d312bd8b490c9c37d46f18e660",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 2(i) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q5-a-x2-ii", topicId: "music-2-2", conceptId: "mus-excerpt-heard-identify-instruments",
+    section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 2(ii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    questionText: "Identify two traditional instruments heard in this excerpt",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Traditional instruments", marks: null, contextNote: "The scheme reads: “Any two (.5 x 2)”", group: {"claimMax":2,"perOption":0.5,"options":["tin whistle","bodhrán","pipes","harp","violin","flute"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.1,
+                            0.465,
+                            0.93,
+                            0.525
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q5-a-x2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q5-a-x2-ii-score.png",
+          "srcHash": "8f6b83875afaad8e6e6cd2dfa1118917",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 2(ii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q5-a-x2-iii", topicId: "music-2-2", conceptId: "mus-describe-excerpt-feature-heard",
+    section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 2(iii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 2",
+    questionText: "Describe one non-traditional feature of the music heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A non-traditional feature", marks: null, contextNote: "The scheme reads: “Any valid non-traditional feature e.g.”", openList: true, group: {"claimMax":1,"perOption":2,"options":["vocal harmony","use of non-traditional instruments (guitar, bass)","accompaniment"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.1,
+                            0.526,
+                            0.93,
+                            0.61
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q5-a-x2-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q5-a-x2-iii-score.png",
+          "srcHash": "004ef0e653d4ed666fa200248eea6a7f",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 2(iii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q5-a-x3-i", topicId: "music-2-2", conceptId: "mus-excerpt-heard-instruments-name",
+    section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 3(i)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    questionText: "Name two instruments heard in this excerpt",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Instruments heard", marks: null, contextNote: "The scheme reads: “Any two (.5 x 2)”", group: {"claimMax":2,"perOption":0.5,"options":["bones/spoons","piano","bodhrán"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.1,
+                            0.635,
+                            0.93,
+                            0.69
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q5-a-x3-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q5-a-x3-i-score.png",
+          "srcHash": "a821f196a350f21bdc1eb4c3a8efcef2",
+          "alt": "The printed question, printed with Listening Q5 A Excerpt 3(i) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q5-a-x3-ii", topicId: "music-2-2", conceptId: "mus-both-describe-different-excerpt",
+    section: "L", questionRef: "2012 HL Listening Q5 A Excerpt 3(ii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions. A. You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question. Answer the questions on each excerpt. Excerpt 3",
+    questionText: "This recording is a fusion of two different styles. Identify both styles and describe features of both styles as heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Style 1(traditional)", marks: 0.5 },
+    { id: "r-2", kind: "anyN", verbatim: "Features of style 1 (traditional)", marks: null, contextNote: "The scheme reads: “Style 1(traditional) + 2 or more features:” “any valid feature as heard in the excerpt.”", openList: true, group: {"claimMax":2,"perOption":1,"options":["Irish dance/reel tune","repeated last note","ornamentation","dotted feel to the music (like hornpipe)","wide range","binary dance tune"]} },
+    { id: "r-3", kind: "point", verbatim: "Style 2 (classical/jazz)", marks: 0.5 },
+    { id: "r-4", kind: "anyN", verbatim: "Features of style 2 (classical/jazz)", marks: null, contextNote: "The scheme reads: “Style 2 (classical/jazz) + 2 or more features:” “any valid feature as heard in the excerpt.”", openList: true, group: {"claimMax":2,"perOption":1,"options":["Jazz chords","syncopation","flattened/jazz/blues notes","improvisation (rhythm/melody/form)","chromatic movement","homophonic"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 5",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 8,
+                      "r": [
+                            0.1,
+                            0.693,
+                            0.93,
+                            0.9
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q5-a-x3-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q5-a-x3-ii-score.png",
+          "srcHash": "8bdd0e0e0867a7839d57e36661e404ee",
+          "alt": "The printed question (two lines), printed with Listening Q5 A Excerpt 3(ii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Higher Level, p.10 — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q5-b-i", topicId: "music-2-13", conceptId: "mus-answer-appropriate-century-describe",
+    section: "L", questionRef: "2012 HL Listening Q5 B(i)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    questionText: "Describe some of the ways in which Irish music was preserved in the 18th and/or 19th century. In your answer refer to events and/or publications as appropriate.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Deduct up to 3 marks for inadequate reference to musical examples etc as appropriate to the question answered."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic.",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail.",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail.",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence.",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.1,
+                            0.128,
+                            0.93,
+                            0.163
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Higher Level, p.10 — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q5-b-ii", topicId: "music-2-13", conceptId: "mus-answer-appropriate-both-discuss",
+    section: "L", questionRef: "2012 HL Listening Q5 B(ii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    questionText: "Discuss regional styles in both Irish traditional instrumental music and Irish sean-nós singing. In your answer, refer to specific musical examples and performers, as appropriate.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Deduct up to 3 marks for inadequate reference to musical examples etc as appropriate to the question answered."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic.",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail.",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail.",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence.",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.1,
+                            0.175,
+                            0.93,
+                            0.209
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Higher Level, p.10 — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q5-b-iii", topicId: "music-2-13", conceptId: "mus-answer-describe-detail-different",
+    section: "L", questionRef: "2012 HL Listening Q5 B(iii)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    questionText: "Discuss the Irish song tradition, making reference to at least four different types of songs. Describe two of these types of songs in detail. Refer to specific songs in your answer.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Deduct up to 3 marks for inadequate reference to musical examples etc as appropriate to the question answered."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic.",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail.",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail.",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence.",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.1,
+                            0.221,
+                            0.93,
+                            0.255
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Higher Level, p.10 — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q5-b-iv", topicId: "music-2-13", conceptId: "mus-century-changes-discuss-during",
+    section: "L", questionRef: "2012 HL Listening Q5 B(iv)",
+    stem: "Irish Music. Answer A and B. Note that B contains a choice of questions.\nB. Answer one of the following:",
+    questionText: "Discuss some of the changes that took place in Irish traditional music during the 20th century.",
+    totalMarks: 10,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Deduct up to 3 marks for inadequate reference to musical examples etc as appropriate to the question answered."
+          ],
+          "criteria": [
+                {
+                      "id": "quality",
+                      "label": "Up to 10 marks for quality of answers and knowledge of topic chosen.",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic.",
+                                  "marks": [10],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic",
+                                  "marks": [8,9],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good knowledge of topic, but lacking in detail.",
+                                  "marks": [6,7],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking sufficient detail.",
+                                  "marks": [4,5],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [2,3],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence.",
+                                  "marks": [1],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Up to 10 marks for quality of answers and knowledge of topic chosen."
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Question 5 B",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.1,
+                            0.266,
+                            0.93,
+                            0.285
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q6-x1-i", topicId: "music-2-4", conceptId: "mus-bars-instrument-melody-name",
+    section: "L", questionRef: "2012 HL Listening Q6 Excerpt 1(i)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• The full excerpt will be played ONCE only. The introduction (bars 1–7), taken from this excerpt, will then be played THREE times.\n• The outline score of the introduction is printed below.",
+    questionText: "Name the instrument which plays the melody in bars 1–7.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "flute", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.1,
+                            0.358,
+                            0.93,
+                            0.385
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q6-x1-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q6-x1-i-score.png",
+          "srcHash": "850ec7c23499f5eec7f1d63a82814f9d",
+          "alt": "The printed question, printed with Listening Q6 Excerpt 1(i) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q6-x1-ii", topicId: "music-2-4", conceptId: "mus-accompaniment-bars-describe-feature",
+    section: "L", questionRef: "2012 HL Listening Q6 Excerpt 1(ii)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• The full excerpt will be played ONCE only. The introduction (bars 1–7), taken from this excerpt, will then be played THREE times.\n• The outline score of the introduction is printed below.",
+    questionText: "Describe one feature of the harp accompaniment in bars 1–7.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature of the harp accompaniment", marks: null, contextNote: "The scheme reads: “any valid answer.”", openList: true, group: {"claimMax":1,"perOption":2,"options":["rising arpeggios/rising broken chords","block/rolled/spread chords (bars 5-7)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.1,
+                            0.386,
+                            0.93,
+                            0.48
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q6-x1-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q6-x1-ii-score.png",
+          "srcHash": "f9f75c9a70508b2b8488b1b1683f202f",
+          "alt": "The printed question, printed with Listening Q6 Excerpt 1(ii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q6-x1-iii", topicId: "music-2-4", conceptId: "mus-form-heard-music-section",
+    section: "L", questionRef: "2012 HL Listening Q6 Excerpt 1(iii)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 1\n• The full excerpt will be played ONCE only. The introduction (bars 1–7), taken from this excerpt, will then be played THREE times.\n• The outline score of the introduction is printed below.\n• The rest of the excerpt will now be played TWICE. Answer (iii) below.",
+    questionText: "The form of the music heard in this section is",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "AA¹BB¹", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.1,
+                            0.517,
+                            0.93,
+                            0.58
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 1",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q6-x1-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q6-x1-iii-score.png",
+          "srcHash": "e5aab52da0a8664365c6e11f92e8dbff",
+          "alt": "The printed question and its three options (AAA¹B, ABA¹B¹, AA¹BB¹), printed with Listening Q6 Excerpt 1(iii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q6-x2-i", topicId: "music-2-4", conceptId: "mus-excerpt-heard-identify-music",
+    section: "L", questionRef: "2012 HL Listening Q6 Excerpt 2(i)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• The excerpt will be played THREE times.",
+    questionText: "Identify the time signature of the music heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "C / 4/4 / 2/4", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.1,
+                            0.654,
+                            0.93,
+                            0.68
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q6-x2-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q6-x2-i-score.png",
+          "srcHash": "33b5a2bb2e4d92550f03488a5c13cba0",
+          "alt": "The printed question, printed with Listening Q6 Excerpt 2(i) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q6-x2-ii", topicId: "music-2-4", conceptId: "mus-accompaniment-figure-heard-rhythmic",
+    section: "L", questionRef: "2012 HL Listening Q6 Excerpt 2(ii)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• The excerpt will be played THREE times.",
+    questionText: "Which rhythmic figure can be heard in the accompaniment?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1.5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Which rhythmic figure can be heard in the accompaniment?", marks: 1.5, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", ask: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.1,
+                            0.695,
+                            0.93,
+                            0.76
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q6-x2-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q6-x2-ii-score.png",
+          "srcHash": "7a0b276736f22670b524eda7885d8aae",
+          "alt": "The printed question and its three rhythmic figures printed in notation (tick boxes, unlabelled), printed with Listening Q6 Excerpt 2(ii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2012-HL-scheme-p11-l-q6-x2-ii",
+          "src": "/exam-figures/music/markbank/music-2012-HL-scheme-p11-l-q6-x2-ii.png",
+          "srcHash": "338b6561b2df35f7f60fdacdd8b5ee2f",
+          "alt": "The marking scheme’s printed answer for Listening Q6 Excerpt 2(ii): the rhythmic figure printed in notation, with its mark 1.5, cropped from page 11 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q6-x2-iii", topicId: "music-2-4", conceptId: "mus-describe-excerpt-heard-identify",
+    section: "L", questionRef: "2012 HL Listening Q6 Excerpt 2(iii)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 2\n• The excerpt will be played THREE times.",
+    questionText: "Identify and describe the texture of the music heard in this excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2.5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "homophonic", marks: 1 },
+    { id: "r-2", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 1.5, contextNote: "The scheme reads: “Any valid description which refers to excerpt”", permittedMarks: [0,1,1.5], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 10,
+                      "r": [
+                            0.1,
+                            0.785,
+                            0.93,
+                            0.89
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 2",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q6-x2-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q6-x2-iii-score.png",
+          "srcHash": "8fddcb863d710ee86a420a96119ce5a5",
+          "alt": "The printed question, printed with Listening Q6 Excerpt 2(iii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q6-x3-i", topicId: "music-2-4", conceptId: "mus-cadences-identify",
+    section: "L", questionRef: "2012 HL Listening Q6 Excerpt 3(i)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.",
+    questionText: "Identify the cadences at X and Z.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Perfect", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "Perfect", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.1,
+                            0.306,
+                            0.93,
+                            0.362
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q6-x3-i-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q6-x3-i-score.png",
+          "srcHash": "9b263d3a64492163a30f50219a80b72b",
+          "alt": "The melody of bars 1-16 (brackets X over bars 4-5, Y over bars 9-10 left empty, Z over bars 15-16) and the question, printed with Listening Q6 Excerpt 3(i) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q6-x3-ii", topicId: "music-2-3", conceptId: "mus-four-insert-missing-notes",
+    section: "L", questionRef: "2012 HL Listening Q6 Excerpt 3(ii)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.",
+    questionText: "Insert the four missing notes at Y on the score.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "One mark per correct note (.5 pitch, .5 rhythm)", marks: 4, contextNote: "The scheme prints its answer in music notation: its print is shown on this card.", permittedMarks: [0,0.5,1,1.5,2,2.5,3,3.5,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.1,
+                            0.364,
+                            0.93,
+                            0.392
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q6-x3-ii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q6-x3-ii-score.png",
+          "srcHash": "fd4576740f629baa89c8fb98b8233b8a",
+          "alt": "The melody of bars 1-16 (the Y bracket over the two empty bars 9-10), part (i) and its answer slots, and the question, printed with Listening Q6 Excerpt 3(ii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "music-2012-HL-scheme-p11-l-q6-x3-ii",
+          "src": "/exam-figures/music/markbank/music-2012-HL-scheme-p11-l-q6-x3-ii.png",
+          "srcHash": "5714a6c1e9210ddb551874f3fef2f8c0",
+          "alt": "The marking scheme’s printed answer for Listening Q6 Excerpt 3(ii): the four notes printed on a stave, the mark 4 and \"One mark per correct note (.5 pitch, .5 rhythm)\", cropped from page 11 of the scheme.",
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q6-x3-iii", topicId: "music-2-4", conceptId: "mus-excerpt-identify-tonality",
+    section: "L", questionRef: "2012 HL Listening Q6 Excerpt 3(iii)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.",
+    questionText: "Identify the tonality of the excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Major / Eb major", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.1,
+                            0.397,
+                            0.93,
+                            0.42
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q6-x3-iii-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q6-x3-iii-score.png",
+          "srcHash": "1608056dee425f98b6175a9e5f864079",
+          "alt": "The printed question, printed with Listening Q6 Excerpt 3(iii) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2012 Higher Level — © State Examinations Commission.",
+    id: "mus-2012-hl-l-q6-x3-iv", topicId: "music-2-4", conceptId: "mus-choice-closest-excerpt-from",
+    section: "L", questionRef: "2012 HL Listening Q6 Excerpt 3(iv)",
+    stem: "Aural Skills. This question is based on THREE excerpts of music.\n• There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3\n• The full excerpt will be played ONCE only. Bars 1–16 will then be played THREE times.\n• The melody of bars 1–16 is printed below.\n• The full excerpt will now be played ONCE more. Answer (iv) below.",
+    questionText: "From your prescribed works, select the work which, in your opinion, is closest in style to the music heard in this excerpt. Give two reasons for your choice.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 4, contextNote: "The scheme reads: “Name of set work” “Any two valid similarities between this extract and the named set work.”", permittedMarks: [0,1,2,3,4], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING (CORE)",
+          "title": "Listening — Question 6",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 11,
+                      "r": [
+                            0.1,
+                            0.467,
+                            0.93,
+                            0.75
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067ALP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 6 · Excerpt 3",
+          "title": "2012 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2012/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+    questionFigure: {
+          "candId": "music-2012-HL-l-q6-x3-iv-score",
+          "src": "/exam-figures/music/markbank/music-2012-HL-l-q6-x3-iv-score.png",
+          "srcHash": "ec2480ef009f0cb86015a61d4df4f745",
+          "alt": "The printed question (two lines), printed with Listening Q6 Excerpt 3(iv) in the 2012 Higher Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Higher Level, p.3 — © State Examinations Commission.",
+    id: "mus-2012-hl-c-a-q1", topicId: "music-1-10", conceptId: "mus-appropriate-below-choose-clarinet",
+    section: "A", questionRef: "2012 HL Composing Section A Q1",
+    stem: "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3",
+    questionText: "CONTINUATION OF A GIVEN OPENING • Continue the opening below to make a 16–bar melody. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ flute □ violin □ clarinet □ descant recorder",
+    totalMarks: 40,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Deductions, if omitted or deficient: Phrasing (structural or articulation), dynamics, instrument (up to 2 each).",
+                "Phrasing should reflect the resting points in the candidate’s melody.",
+                "Accept one correct instrument only (clef & range)."
+          ],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "SECTION A – MELODY COMPOSITION (40 marks)",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Melody has excellent style and imagination.",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent awareness of shape and structure.",
+                                        "Excellent development of opening ideas.",
+                                        "Excellent point(s) of climax."
+                                  ]
+                            },
+                            {
+                                  "label": "A very good sense of melodic and rhythmic interest.",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Very good sense of shape and structure.",
+                                        "Musical, with very good point(s) of climax.",
+                                        "Opening ideas very well developed."
+                                  ]
+                            },
+                            {
+                                  "label": "A good sense of melodic and rhythmic interest.",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Points of rest well outlined.",
+                                        "Good development of opening ideas with a good sense of shape, structure and good technical knowledge."
+                                  ]
+                            },
+                            {
+                                  "label": "A fair sense of melodic and rhythmic interest.",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "A fair sense of shape and some awareness of balance between phrases.",
+                                        "A fair sense of structure and technical knowledge."
+                                  ]
+                            },
+                            {
+                                  "label": "Little melodic and rhythmic interest.",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Little sense of structure or technical knowledge.",
+                                        "Poor overall shape."
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no melodic or rhythmic interest.",
+                                  "marks": [0,1,2,3,4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very little or no shape, sense of structure or technical knowledge."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Higher Level, p.3 — © State Examinations Commission.",
+    id: "mus-2012-hl-c-a-q2", topicId: "music-1-11", conceptId: "mus-appropriate-bars-been-below",
+    section: "A", questionRef: "2012 HL Composing Section A Q2",
+    stem: "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3",
+    questionText: "SETTING MUSIC TO A GIVEN TEXT Here is an extract from The Road Not Taken by Robert Frost. Two roads diverged in a yellow wood And sorry I could not travel both And be one traveller, long I stood And looked down one as far as I could. • The opening line has been set to music below. • Set the remaining words to make a melody of 16 bars. (You may exceed this number of bars, and include a modulation, if you wish.) • Add appropriate performing directions (phrasing and dynamics) to the melody.",
+    totalMarks: 40,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Deductions, if omitted or deficient: Phrasing (structural), dynamics (up to 2 each).",
+                "Phrasing should reflect the resting points in the candidate’s melody."
+          ],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "SECTION A – MELODY COMPOSITION (40 marks)",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Showing excellent style and imagination with an excellent \"marriage\" of words, music and an excellent sense of climax.",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Melodically and rhythmically very convincing with a very good sense of words, music and climax.",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "Good sense of melody writing with good word setting.",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Good sense of climax, shape and balance."
+                                  ]
+                            },
+                            {
+                                  "label": "Fair sense of melodic interest.",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "A fair sense of shape and balance between phrases.",
+                                        "Some sense of climax.",
+                                        "A fair sense of technical knowledge and word setting"
+                                  ]
+                            },
+                            {
+                                  "label": "Little melodic interest and sense of key.",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "An attempt at word setting.",
+                                        "Little sense of technical knowledge.",
+                                        "Poor shape."
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no shape, sense of structure or technical knowledge.",
+                                  "marks": [0,1,2,3,4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Almost non-existent word setting."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Higher Level, p.4 — © State Examinations Commission.",
+    id: "mus-2012-hl-c-a-q3", topicId: "music-1-12", conceptId: "mus-appropriate-below-choose-clarinet",
+    section: "A", questionRef: "2012 HL Composing Section A Q3",
+    stem: "Answer ONE QUESTION ONLY in this section: Q1 or Q2 or Q3",
+    questionText: "COMPOSING TO A GIVEN DANCE RHYTHM OR METRE OR FORM The opening phrase of a gavotte is given below. • Continue the given opening to make a 16-bar melody. • Use the form AA¹BB¹. • Include a modulation to the dominant at a suitable point. • Add appropriate performing directions (phrasing and dynamics) to the melody. • Choose a suitable instrument for your melody from the following list: □ violin □ clarinet □ flute □ trumpet",
+    totalMarks: 40,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Deductions, if omitted or deficient: Modulation (Up to 4), Phrasing (structural or articulation), dynamics, instrument (up to 2 each).",
+                "Phrasing should reflect the resting points in the candidate’s melody.",
+                "Accept one correct instrument only (clef & range)."
+          ],
+          "criteria": [
+                {
+                      "id": "melody",
+                      "label": "SECTION A – MELODY COMPOSITION (40 marks)",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Melody has excellent style and imagination.",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent awareness of shape and structure.",
+                                        "Excellent development of opening ideas.",
+                                        "Excellent point(s) of climax.",
+                                        "Rhythmic integrity and style of dance maintained with flair.",
+                                        "Excellent adherence to given structure."
+                                  ]
+                            },
+                            {
+                                  "label": "Very good sense of melody, shape and structure.",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Musical, with very good point(s) of climax.",
+                                        "Opening ideas very well developed.",
+                                        "Rhythmic integrity and style of dance very well maintained.",
+                                        "Very good adherence to given structure."
+                                  ]
+                            },
+                            {
+                                  "label": "A good sense of melodic and rhythmic interest.",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Points of rest outlined and good development of opening ideas.",
+                                        "Good attempt at maintaining dance rhythm.",
+                                        "Good adherence to given structure.",
+                                        "A good sense of shape and balance."
+                                  ]
+                            },
+                            {
+                                  "label": "A fair sense of melody, shape and some awareness of balance between phrases.",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Rhythmic integrity of dance fairly well maintained.",
+                                        "A fair sense of technical knowledge.",
+                                        "Fair adherence to given structure."
+                                  ]
+                            },
+                            {
+                                  "label": "Little melodic and rhythmic interest.",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Little sense of structure or technical knowledge.",
+                                        "Poor shape.",
+                                        "Little awareness of dance rhythm.",
+                                        "Little adherence to given structure."
+                                  ]
+                            },
+                            {
+                                  "label": "Very little or no shape, sense of structure or technical knowledge.",
+                                  "marks": [0,1,2,3,4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very little or no awareness of dance rhythm.",
+                                        "Very little or no adherence to given structure."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION A – MELODY COMPOSITION (40 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION A",
+          "title": "Section A — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Higher Level, p.5 — © State Examinations Commission.",
+    id: "mus-2012-hl-c-b-q4", topicId: "music-1-14", conceptId: "mus-available-bank-bass-below",
+    section: "B", questionRef: "2012 HL Composing Section B Q4",
+    stem: "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6",
+    questionText: "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS PREPARATORY WORK • Plot the chords available in the key of B minor, either in the chord bank grid or on the stave below. • Study the piece of music below. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "bass-count",
+                      "label": ".5 mark per correct bass note under each chord symbol if treble melody note is also correct. (.5 X 20)",
+                      "maxMarks": 10,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2,
+                            2.5,
+                            3,
+                            3.5,
+                            4,
+                            4.5,
+                            5,
+                            5.5,
+                            6,
+                            6.5,
+                            7,
+                            7.5,
+                            8,
+                            8.5,
+                            9,
+                            9.5,
+                            10
+                      ],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 20
+                      }
+                },
+                {
+                      "id": "bass-quality",
+                      "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge",
+                      "maxMarks": 10,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10],
+                      "guidance": []
+                },
+                {
+                      "id": "melody",
+                      "label": "Melody",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Melody has excellent style and imagination with an excellent awareness of underlying harmonic structure and development of opening ideas.",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent point(s) of climax."
+                                  ]
+                            },
+                            {
+                                  "label": "Very good sense of shape and structure.",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Musical, with a very good awareness of harmonic structure and very good point(s) of climax.",
+                                        "Opening ideas very well developed."
+                                  ]
+                            },
+                            {
+                                  "label": "A good sense of melodic and rhythmic interest and awareness of harmonic structure.",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Points of rest well outlined and good development of opening ideas."
+                                  ]
+                            },
+                            {
+                                  "label": "A fair sense of shape and balance between phrases.",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Notes generally fit chords."
+                                  ]
+                            },
+                            {
+                                  "label": "Some melodic and rhythmic interest.",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Little sense of structure.",
+                                        "Some notes fit chords."
+                                  ]
+                            },
+                            {
+                                  "label": "No shape.",
+                                  "marks": [0,1,2,3,4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very few notes fit chords."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 4",
+          "pages": [
+                6,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Higher Level, p.5 — © State Examinations Commission.",
+    id: "mus-2012-hl-c-b-q5", topicId: "music-1-13", conceptId: "mus-adjacent-available-bank-bass",
+    section: "B", questionRef: "2012 HL Composing Section B Q5",
+    stem: "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6",
+    questionText: "COMPOSING BASS NOTES AND CHORD INDICATIONS TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of F minor, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable bass notes and chord indications in the style of the given opening. • Do not repeat the same chord in the same position in adjacent boxes. • You may use chord symbols or Roman numerals, but not both.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "chords-count-1-4",
+                      "label": ".5 mark for each chord that is part of a good progression in chord boxes 1-4.",
+                      "maxMarks": 2,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2
+                      ],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 4
+                      }
+                },
+                {
+                      "id": "chords-count-5-27",
+                      "label": "1 mark for each chord that is part of a good progression in chord boxes 5-27.",
+                      "maxMarks": 23,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 23
+                      }
+                },
+                {
+                      "id": "chords-quality",
+                      "label": "Quality of musical  progressions and cadences overall",
+                      "maxMarks": 12,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+                      "guidance": []
+                },
+                {
+                      "id": "bass-count",
+                      "label": ".5 mark per correct bass note under each correct chord symbol",
+                      "maxMarks": 11.5,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2,
+                            2.5,
+                            3,
+                            3.5,
+                            4,
+                            4.5,
+                            5,
+                            5.5,
+                            6,
+                            6.5,
+                            7,
+                            7.5,
+                            8,
+                            8.5,
+                            9,
+                            9.5,
+                            10,
+                            10.5,
+                            11,
+                            11.5
+                      ],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 23
+                      }
+                },
+                {
+                      "id": "bass-quality",
+                      "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge",
+                      "maxMarks": 11.5,
+                      "permittedMarks": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10,
+                            11,
+                            11.5
+                      ],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 5",
+          "pages": [
+                8,
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Higher Level, p.6 — © State Examinations Commission.",
+    id: "mus-2012-hl-c-b-q6", topicId: "music-1-15", conceptId: "mus-adding-adjacent-available-bank",
+    section: "B", questionRef: "2012 HL Composing Section B Q6",
+    stem: "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6",
+    questionText: "ADDING A COUNTERMELODY OR DESCANT AND CHORDAL SUPPORT TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of A major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable chord indications in the boxes provided and continue the descant part in the given style to complete the piece. • You may use either chord symbols or Roman numerals, but not both. • Do not repeat the same chord in the same position in adjacent boxes.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "chords-count",
+                      "label": "1 mark for each chord that fits melody and descant lines and is part of a good musical progression. (1 X 16)",
+                      "maxMarks": 16,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 16
+                      }
+                },
+                {
+                      "id": "cadences",
+                      "label": "Up to 4 marks for correct cadences",
+                      "maxMarks": 4,
+                      "permittedMarks": [0,1,2,3,4],
+                      "guidance": []
+                },
+                {
+                      "id": "descant",
+                      "label": "Descant",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Excellent melodic line within harmonic framework.",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent adherence to two-part style throughout."
+                                  ]
+                            },
+                            {
+                                  "label": "Very good melodic line, which fits well over harmonic structure.",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Two-part style of given opening very well maintained."
+                                  ]
+                            },
+                            {
+                                  "label": "Good melodic line and shape.",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Melody fits harmonic structure.",
+                                        "Good attempt at maintaining two-part style of opening."
+                                  ]
+                            },
+                            {
+                                  "label": "Fair melody line and shape.",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Notes generally fit chords.",
+                                        "Some attempt at maintaining two-part style of opening."
+                                  ]
+                            },
+                            {
+                                  "label": "Some notes fit chords.",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Little attempt at maintaining style.",
+                                        "Little sense of structure.",
+                                        "Little sense of technical knowledge."
+                                  ]
+                            },
+                            {
+                                  "label": "Very few notes fit chords.",
+                                  "marks": [0,1,2,3,4,5,6,7,8,9],
+                                  "guidance": [
+                                        "No attempt at maintaining style.",
+                                        "Very poor technical knowledge."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 6",
+          "pages": [
+                10,
+                11
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "higher",
+    paperFileid: "LC067ALP007EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2012 Higher Level, p.12 — © State Examinations Commission.",
+    id: "mus-2012-hl-e-q1-q4", topicId: "music-2-8", conceptId: "mus-above-address-audio-chosen",
+    section: "E", questionRef: "2012 HL Elective Q1–Q4(b)",
+    stem: "Answer ALL questions.",
+    questionText: "1. State the title of your chosen Listening Elective topic. 2. List three of the sources which you used in studying this topic. Full details are required for all of your sources. If one of your sources is the internet, give the full website address used in your research. 3. Name five pieces of music and the composer or performer, which you studied as part of this listening elective, and which are on your audio recording. 4. (a) Identify three significant musical features of your chosen topic. (b) Discuss your chosen topic ensuring that you • describe the three musical features which you have identified above. • show how your three chosen and other musical features are present in the music you have studied for this elective. • make reference to the musical excerpts on your recording including the pieces of music named above. • include your personal response to your chosen topic.",
+    totalMarks: 90,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [
+                "Refer to the Leaving Certificate Music Syllabus – page 12 – 2.3.5",
+                "Deductions:",
+                "Deduct up to 5 marks for quality of sources at Section 2",
+                "Deduct up to 5 marks (1 mark per piece) for omission of 5 relevant pieces and/or composer/performer at Section 3",
+                "Deduct up to 5 marks for non – reference or inadequate reference to recorded extracts and named pieces at section 4."
+          ],
+          "criteria": [
+                {
+                      "id": "paper-q1-q4",
+                      "label": "Listening – Higher level - Elective",
+                      "maxMarks": 90,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90],
+                      "guidance": [
+                            "Name of topic -",
+                            "Relevant and appropriate sources -",
+                            "Five relevant pieces and the composer/performer -"
+                      ],
+                      "bands": [
+                            {
+                                  "label": "Excellent awareness and detailed knowledge of musical features of topic.",
+                                  "marks": [77,78,79,80,81,82,83,84,85,86,87,88,89,90],
+                                  "guidance": [
+                                        "Excellent reference to musical recordings.",
+                                        "Excellent research evident, with excellent personal response."
+                                  ]
+                            },
+                            {
+                                  "label": "Very good knowledge of musical features of chosen topic.",
+                                  "marks": [63,64,65,66,67,68,69,70,71,72,73,74,75,76],
+                                  "guidance": [
+                                        "Very good reference to musical recordings.",
+                                        "Very well researched, with very good personal response."
+                                  ]
+                            },
+                            {
+                                  "label": "Good knowledge of musical features of chosen topic, but lacking in detail.",
+                                  "marks": [50,51,52,53,54,55,56,57,58,59,60,61,62],
+                                  "guidance": [
+                                        "Good reference to musical recordings.",
+                                        "Adequate research in evidence.",
+                                        "Some evidence of personal response."
+                                  ]
+                            },
+                            {
+                                  "label": "Some general points on topic, but lacking any detail.",
+                                  "marks": [36,37,38,39,40,41,42,43,44,45,46,47,48,49],
+                                  "guidance": [
+                                        "Very little evidence of research or personal response.",
+                                        "Choice of topic too broad to allow for appropriate detailed and personal response.",
+                                        "Little reference to musical features of topic or to musical recordings."
+                                  ]
+                            },
+                            {
+                                  "label": "Generally inadequate response to chosen topic.",
+                                  "marks": [23,24,25,26,27,28,29,30,31,32,33,34,35],
+                                  "guidance": [
+                                        "No evidence of research or personal response.",
+                                        "No reference to musical recordings."
+                                  ]
+                            },
+                            {
+                                  "label": "Little response to chosen topic in evidence.",
+                                  "marks": [9,10,11,12,13,14,15,16,17,18,19,20,21,22],
+                                  "guidance": []
+                            },
+                            {
+                                  "label": "No response to chosen topic in evidence.",
+                                  "marks": [0,1,2,3,4,5,6,7,8],
+                                  "guidance": []
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "Listening – Higher level - Elective"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING ELECTIVE",
+          "title": "Listening elective — Questions",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Music 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The questions exactly as the elective booklet prints them, about your own chosen topic.",
+          "sourceFileid": "LC067ALP007EV"
+    },
+  } as SecCard,
 ];
