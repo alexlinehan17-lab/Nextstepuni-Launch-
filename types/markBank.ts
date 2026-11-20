@@ -2478,10 +2478,16 @@ export function tariffReconciles(card: SecCard): boolean {
               && rate * items === criterion.maxMarks
               && allowed.length === items + 1 && allowed.every((mark, index) => mark === index * rate);
           }
+          // A Music band line may print a half-mark top ("8 – 9.5"): its ladder is
+          // every whole mark below that top and the top itself, nothing else.
+          const halfTop = card.subjectId === 'music' && !Number.isInteger(criterion.maxMarks)
+            && Number.isInteger(criterion.maxMarks * 2)
+            && allowed.length === Math.floor(criterion.maxMarks) + 2
+            && allowed.every((mark, index) => mark === (index <= Math.floor(criterion.maxMarks) ? index : criterion.maxMarks));
           if (!allowed.length || Math.min(...allowed) !== 0
             || Math.max(...allowed) !== criterion.maxMarks
             || new Set(allowed).size !== allowed.length
-            || allowed.some(mark => !Number.isInteger(mark) || mark < 0)) return false;
+            || allowed.some(mark => (!Number.isInteger(mark) && !(halfTop && mark === criterion.maxMarks)) || mark < 0)) return false;
           if (!criterion.bands) return true;
           const marks = criterion.bands.flatMap(band => band.marks);
           return marks.length === allowed.length && new Set(marks).size === marks.length

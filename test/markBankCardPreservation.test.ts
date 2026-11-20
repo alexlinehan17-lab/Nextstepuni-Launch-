@@ -3169,6 +3169,14 @@ describe('Mark Bank card preservation', () => {
       ['2026 ordinary', 48, 'a5afbcf10d02d25dd699036a151444daafb5de89e16958c5ed1d54c5a9dfa47a'],
       ['2025 ordinary', 45, '9e48dccaa817e4794a5d66be0fe64437eee127158bc9e8d728c77d07a4902cfa'],
       ['2024 higher', 41, 'ae7bcd811086917d0b01d58c13f230471592207e378e7800eccd8c86df819c13'],
+      ['2023 higher', 46, '7a00f4ada5a057a1155666911d6a7790156544c2de115193ad745f8ba79a87bd'],
+      ['2023 ordinary', 49, '7e98423ac2396a730531a5d062928ff20e1bc3a0c6a5c33ed9ebe9476af6af46'],
+      ['2022 higher', 46, '02c9d681ec7687bbdfe6e87644143135e124436b596846592fed8fcf8e67728c'],
+      ['2022 ordinary', 50, '4f11e42020c66984a50bbcfe73489369ba4b962700bb361ab8abc66e7abf2586'],
+      ['2024 ordinary', 43, '071715cc041aacb54332c2fedf874795febb2ade6355650894c0beb348123cb6'],
+      ['2021 higher', 49, 'ea13cfed03b3ea396d8733eabc4cfae72b1e5808dfa57cf98206964a83a60a48'],
+      ['2021 ordinary', 58, '1c980af7d2f21f596c29c06f60cd59109beae576545254494c50999316d112ca'],
+      ['2020 higher', 52, 'a2677fa649697b54889ea70b4452da79cef0574f41b5295411cbf87da250a9f1'],
     ];
     const lane = new Map<string, string[]>();
     for (const card of [...MUSIC_HIGHER, ...MUSIC_ORDINARY]) {
