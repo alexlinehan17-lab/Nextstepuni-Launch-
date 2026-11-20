@@ -754,12 +754,12 @@
   },
   "slovenian": {
     "cards": 23,
-    "contentHash": "278dc16d9fb21192",
-    "coveragePct": 100.0,
+    "contentHash": "29ca1a617165a720",
+    "coveragePct": 96.9,
     "covered": 23,
     "excluded": 39,
-    "leaves": 62,
-    "open": 0,
+    "leaves": 64,
+    "open": 2,
     "orphans": 0,
     "papers": {
       "count": 5,
