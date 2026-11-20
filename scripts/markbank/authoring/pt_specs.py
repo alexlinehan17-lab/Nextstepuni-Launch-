@@ -27,7 +27,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
 sys.path.insert(0, HERE)
 
-from pt_lib import (S, J, B, T, T2, TG, AnyOf, CELL, PL, Sel, one, menu, alt, stepped, shown, rest,   # noqa: E402,F401
+from pt_lib import (S, J, B, T, T2, TG, AnyOf, CELL, PL, Sel, one, menu, alt, stepped, shown, rest, pct,   # noqa: E402,F401
                     pairs, scheme_doc, build_rows, SCHEMES)
 from eu_paper import EuPaper, read_lines                          # noqa: E402
 from eu_topics import (topic_for, concept_for, answer_language,    # noqa: E402
@@ -41,7 +41,7 @@ LEVEL_TITLE = {'hl': 'Higher', 'ol': 'Ordinary'}
 # booklet also letters it, the letter and a dash come first ("LC3a-i" is
 # Q3(a)(i)); a reading ask's roman follows a dash ("A1b-ii").
 KEY = re.compile(r'^(L[A-E])(\d{1,2})(?:([a-h])-)?(i{1,3}|iv|vi{0,3})?$'
-                 r'|^(A|B)(\d{1,2})([a-l])?(?:-(i{1,3}|iv|vi{0,3}))?$')
+                 r'|^(A|B|III|II|I)(\d{1,2})([a-l])?(?:-(i{1,3}|iv|vi{0,3}))?$')
 AUDIO = os.path.join(ROOT, 'data', 'portugueseAudio.json')
 PARTE = re.compile(r'^Parte\s+([A-E])\b')
 # A question's printed number: "(1)" (2025, 2026) or "1." (2022-2024).
@@ -73,13 +73,36 @@ def card_id(year, level, key):
 class C:
     """One card: the census address, its rows, the price it must add up to."""
     def __init__(self, key, rows, total=None, note=None, rownote=None, extra=(), whole=False,
-                 question=None):
+                 question=None, stem=None, source=True, unpriced=None):
         self.key, self.rows, self.total, self.note = key, rows, total, note
+        # (section label, section total): a question the paper prices only as
+        # part of its section (types/markBank.ts unpricedSection, CARD-STANDARD
+        # 10i): the scheme's answer shown, no total of the card's own.
+        self.unpriced = unpriced
         self.rownote, self.extra, self.whole = rownote, extra, whole
         # Where the census's reading of the ask is cut short (a true/false
         # table read as its first statement): the question as the paper prints
         # it, line by line, PL / PLc selectors joined.
         self.question = question
+        # The instruction the paper prints over a choice of tasks ("Escreva um
+        # comentário ... sobre um dos seguintes temas."), where the booklet's
+        # lead for the question number belongs to another part.
+        self.stem = stem
+        # False where the booklet's reading text is not the task's material
+        # (2021 Tópico 2 comments on a quotation, not on the text).
+        self.source = source
+
+
+class Heading:
+    """A heading printed alone on its line ("Parte I"), exactly one on `page`."""
+    def __init__(self, page, text):
+        self.page, self.text_ = page, text
+
+    def text(self, doc):
+        hits = [t for p, t in doc['paper'] if p == self.page and t.strip() == self.text_]
+        if len(hits) != 1:
+            raise ValueError(f'paper p{self.page}: {len(hits)} lines read {self.text_!r}')
+        return hits[0].strip()
 
 
 class PaperCut:
@@ -163,10 +186,12 @@ def V(n, page):
 class InlineVerdict(Sel):
     """A tick set in the box AFTER its label on the same row ("True False ✓",
     2025 Higher Q2(j)(i)): the label printed immediately left of the tick, on
-    scheme line n's row of page `page`."""
-    def __init__(self, n, page):
+    scheme line n's row of page `page`. Where a page prints several true/false
+    rows (2022 Ordinary p20, Parte D Q1 and Q2), `k` names the row, counted
+    from the top of the page."""
+    def __init__(self, n, page, k=None):
         super().__init__('scheme', n)
-        self.page = page
+        self.page, self.k = page, k
 
     def text(self, doc):
         import fitz
@@ -183,7 +208,12 @@ class InlineVerdict(Sel):
             row = [h for h in heads if abs(h[1] - t[1]) < 8]
             left = [h for h in row if h[2] <= t[0]]
             if len(row) >= 2 and left:
-                found.append(max(left, key=lambda h: h[2])[4])
+                found.append((t[1], max(left, key=lambda h: h[2])[4]))
+        found = [label for _y, label in sorted(found)]
+        if self.k is not None:
+            if len(found) <= self.k:
+                raise ValueError(f'scheme p{self.page}: no inline tick #{self.k}: {found}')
+            found = [found[self.k]]
         if len(found) != 1:
             raise ValueError(f'scheme p{self.page}: {len(found)} inline ticks after a label: {found}')
         line = doc['scheme'][self.n - 1]
@@ -192,8 +222,164 @@ class InlineVerdict(Sel):
         return found[0]
 
 
-def VI(n, page):
-    return InlineVerdict(n, page)
+def VI(n, page, k=None):
+    return InlineVerdict(n, page, k)
+
+
+class EachOnly:
+    """One answer at the per-answer marks of the "N x P marks" printed on
+    scheme line n, where the cell's own total disagrees with it ("3 marks: 2 x
+    3 marks" under "Answer 6 Marks", 2022 Higher Parte D Q3): the card's total
+    is the question's printed one, and the disagreement goes in the note."""
+    def __init__(self, n):
+        self.n = n
+
+    def read(self, doc):
+        m = re.search(r'(\d{1,2})\s*[x×]\s*(\d{1,2})\s*marks?\b', doc['raw'][self.n - 1], re.I)
+        if not m:
+            raise ValueError(f'scheme line {self.n} prints no "N x P marks"')
+        return 1, int(m.group(2)), m.group(0)
+
+
+class SchemeSpan:
+    """Scheme lines a..b read as one text: a model commentary that runs over a
+    page break. Only the page's furniture between is left out (blank lines,
+    "## Page" markers, a page number alone on its line); every other line is
+    read with S(n), so cells and prices are cut as everywhere else."""
+    def __init__(self, a, b):
+        self.a, self.b = a, b
+
+    def text(self, doc):
+        parts = []
+        for n in range(self.a, self.b + 1):
+            raw = doc['scheme'][n - 1].strip()
+            if not raw or raw.startswith('## Page') or re.fullmatch(r'\d{1,3}', raw):
+                continue
+            # The bullet the shared cut leaves on: a minus sign (2018 Higher).
+            parts.append(re.sub(r'^−\s+', '', S(n).text(doc)))
+        return re.sub(r'\s+', ' ', ' '.join(parts)).strip()
+
+
+class Lines:
+    """Scheme lines a..b joined as printed, nothing cut: a criterion whose
+    percentage the SEC wrapped onto a line of its own ("- 30%", 2011), which
+    the bullet cut would strip."""
+    def __init__(self, a, b):
+        self.a, self.b = a, b
+
+    def text(self, doc):
+        return re.sub(r'\s+', ' ', ' '.join(doc['scheme'][n - 1] for n in range(self.a, self.b + 1))).strip()
+
+
+class PaperPontos:
+    """A part's price as the PAPER prints it, on the line that opens with
+    `opening` on `page` ("(30 pontos)" under "Parte II"), where the scheme
+    prints none (2012, 2013, 2015, 2018)."""
+    def __init__(self, page, opening, under=None):
+        self.page, self.opening, self.under = page, opening, under
+
+    def _line(self, doc):
+        if self.under is None:
+            return PL(self.page, self.opening).text(doc)
+        # The line printed directly under a heading ("Parte II"), where the
+        # page prints the same price more than once (2015 p4).
+        lines = [t for p, t in doc['paper'] if p == self.page]
+        at = [i for i, t in enumerate(lines) if t.strip() == self.under]
+        if len(at) != 1 or at[0] + 1 >= len(lines) or not lines[at[0] + 1].startswith(self.opening):
+            raise ValueError(f'paper p{self.page}: no {self.opening!r} under one {self.under!r}')
+        return lines[at[0] + 1]
+
+    def read(self, doc):
+        t = self._line(doc)
+        m = re.search(r'\((\d{1,3})\s*pontos\)', t)
+        if not m:
+            raise ValueError(f'paper p{self.page}: {t!r} prints no "(N pontos)"')
+        return 1, int(m.group(1)), m.group(0)
+
+    def tariff_note(self, doc):
+        return f"The paper prints the tariff as '{self.read(doc)[2]}'"
+
+
+class PaperEach:
+    """One part's price where the PAPER prices a question part by part on its
+    head ("(5 x 1 ponto)" over Q1(a)-(e)) and the scheme prints none."""
+    def __init__(self, page, opening, q):
+        self.page, self.opening, self.q = page, opening, q
+
+    def _m(self, doc):
+        t = PL(self.page, self.opening).text(doc)
+        m = re.search(r'\((\d{1,2})\s*[x×]\s*(\d{1,2})\s*pontos?\)', t)
+        if not m:
+            raise ValueError(f'paper p{self.page}: {t!r} prints no "(N x P pontos)"')
+        return m
+
+    def read(self, doc):
+        m = self._m(doc)
+        return 1, int(m.group(2)), m.group(0)
+
+    def tariff_note(self, doc):
+        m = self._m(doc)
+        return (f"The paper prints the tariff as '{m.group(0)}' on the head of Q{self.q}, "
+                f"walked down to its {m.group(1)} parts")
+
+
+class PontosSplit:
+    """A split price the scheme prints on line n, "(3+2 pontos)": with k, the
+    k-th printed part's marks (one answer); without, the whole."""
+    def __init__(self, n, k=None):
+        self.n, self.k = n, k
+
+    def read(self, doc):
+        line = doc['raw'][self.n - 1]
+        m = re.search(r'\((\d{1,2})\s*\+\s*(\d{1,2})\s*pontos\)', line)
+        if not m:
+            raise ValueError(f'scheme line {self.n} prints no "(N+M pontos)": {line!r}')
+        parts = [int(m.group(1)), int(m.group(2))]
+        return 1, (sum(parts) if self.k is None else parts[self.k]), m.group(0)
+
+
+class Pontos:
+    """A price printed in points, "PARTE II (40 pontos)" (the 2021 scheme): one
+    answer at that total."""
+    def __init__(self, n):
+        self.n = n
+
+    def read(self, doc):
+        m = re.search(r'\((\d{1,3})\s*pontos\)', doc['raw'][self.n - 1])
+        if not m:
+            raise ValueError(f'scheme line {self.n} prints no "(N pontos)"')
+        return 1, int(m.group(1)), m.group(0)
+
+
+SUPERSCRIPT = str.maketrans('0123456789', '⁰¹²³⁴⁵⁶⁷⁸⁹')
+
+
+class PdfSup:
+    """A scheme answer read from the scheme PDF with its raised digits kept
+    raised: the 2022 schemes print a temperature as "27" over a raised "0"
+    ("27⁰ C"), which the text layer flattens to "270 C". `line` is the .md
+    line the answer sits on (its text, digits joined, must match), `page` its
+    printed page; every span the PDF flags superscript has its digits mapped
+    to the Unicode superscript digits, nothing else changed."""
+    def __init__(self, line, page):
+        self.line, self.page = line, page
+
+    def text(self, doc):
+        import fitz
+        want = re.sub(r'\s+', '', doc['scheme'][self.line - 1])
+        pdf = fitz.open(os.path.join(SCHEMES, f'{doc["year"]}-{doc["level"]}.pdf'))
+        for block in pdf[self.page - 1].get_text('dict')['blocks']:
+            for ln in block.get('lines', []):
+                spans = ln['spans']
+                flat = re.sub(r'\s+', '', ''.join(sp['text'] for sp in spans))
+                if not flat or flat != want:
+                    continue
+                if not any(sp['flags'] & 1 for sp in spans):
+                    raise ValueError(f'scheme line {self.line}: no raised span on p{self.page}')
+                out = ''.join(sp['text'].translate(SUPERSCRIPT) if sp['flags'] & 1 else sp['text']
+                              for sp in spans)
+                return re.sub(r'\s+', ' ', out).strip()
+        raise ValueError(f'scheme line {self.line}: not found on p{self.page} of the PDF')
 
 
 def quoted(*sels):
@@ -251,7 +437,15 @@ def reading_cards(year, level):
         if spec.rownote:
             note = f'{note} {spec.rownote(doc) if callable(spec.rownote) else spec.rownote}'
         rows, total = build_rows(doc, spec.rows, note, spec.key)
-        if spec.whole:
+        section = None
+        if spec.unpriced:
+            label = spec.unpriced[0].text(doc)
+            c, p, n = spec.unpriced[1].read(doc)
+            section = {'label': label, 'totalMarks': c * p, 'notation': n}
+            if total or any(r.get('marks') is not None for r in rows):
+                raise ValueError(f'{year} {level} {spec.key}: an unpriced question carries no marks')
+            total = 0
+        elif spec.whole:
             c, p, n = spec.total.read(doc)
             total = c * p
         else:
@@ -266,17 +460,31 @@ def reading_cards(year, level):
             'conceptId': concept_for(question),
             'questionRef': f'{year} {level.upper()} {key_label(key)}',
             'questionText': question,
-            'tariffModel': {'kind': 'questionTotal' if spec.whole else 'fixed'},
+            'tariffModel': {'kind': 'questionTotal' if spec.whole or section else 'fixed'},
             'totalMarks': total,
             'rows': rows,
-            'notes': (f'The scheme prices this ask {total} {"mark" if total == 1 else "marks"}; '
-                      f'the paper prints it on page {ask.page} of the question booklet.'
-                      + (f' {spec.note}' if spec.note else '')),
+            'notes': ((f'The paper prints no price on this question: it prints “{section["label"]}” '
+                       f'“{section["notation"]}” for the part as a whole; the paper prints this ask on page '
+                       f'{ask.page} of the question booklet.')
+                      if section else
+                      (f'{spec.total.tariff_note(doc)}; the paper prints this ask on page {ask.page} '
+                       'of the question booklet.')
+                      if hasattr(spec.total, 'tariff_note') else
+                      (f'The scheme prices this ask {total} {"mark" if total == 1 else "marks"}; '
+                       f'the paper prints it on page {ask.page} of the question booklet.'))
+                     + (f' {spec.note}' if spec.note else ''),
         }
+        if section:
+            card['unpricedSection'] = {'label': section['label'], 'totalMarks': section['totalMarks']}
         lead = P.lead(ask.q)
-        if lead and len(lead) >= 12:
+        if spec.stem is not None:
+            # An empty tuple: the task prints no instruction of its own, and the
+            # booklet's lead for its number belongs to another part.
+            if spec.stem:
+                card['stem'] = ' '.join(x.text(doc) for x in spec.stem)
+        elif lead and len(lead) >= 12:
             card['stem'] = lead
-        source = eu_all.source_material(P, ask, SUBJECT, language, level, year)
+        source = eu_all.source_material(P, ask, SUBJECT, language, level, year) if spec.source else None
         if source:
             card['sourceMaterial'] = source
         out.append(card)
@@ -310,6 +518,9 @@ def section_intro(doc):
 
 def _listening_language(stem):
     if re.search(r'\bresponda\b.*\bem portugu[eê]s\b', stem, re.I):
+        return 'Portuguese'
+    # 2022 gives the instruction in English: "Answer in Portuguese."
+    if re.search(r'\banswer\b.*\bin Portuguese\b', stem, re.I):
         return 'Portuguese'
     if re.search(r'\banswer\b.*\bin English\b', stem, re.I):
         return ENGLISH_OR_IRISH
@@ -1004,6 +1215,462 @@ LISTENING[(2023, 'hl')] = [
 # Live: 18 reading cards. New: six reading asks (Q1(c) and Q1(e) each one
 # tick question, as the census now counts them, 10c) and the listening test
 # (scheme .md lines 355-498, pages 13-17; each Part 24). Written held.
+# ============================================================== 2021 HL ===
+# Part II, the written commentary: "Escreva um comentário (mínimo de 300
+# palavras) sobre um dos seguintes temas." (paper p4), Tópico 1 or Tópico 2.
+# The scheme (pp4-5) prints a MODEL commentary for each, no marking list, and
+# prices the part "(40 pontos)": CARD-STANDARD 10a, each model shown after the
+# reveal under the scheme's own heading ("Tema 1" / "Tema 2"), word for word,
+# scored on the printed total (questionTotal), never claimable.
+_CHOICE_2021 = (PL(4, 'Escreva um comentário'),)
+READING[(2021, 'hl')] = [
+    C('II1', [shown(J(*[S(n) for n in range(83, 95)]), lead=S(78))], total=Pontos(76), whole=True,
+      question=(PL(4, 'Tópico 1'), PL(4, 'Faça um comentário'), PL(4, 'conter.'), PL(4, '“Muitos anos passaram')),
+      stem=_CHOICE_2021),
+    C('II2', [shown(J(*[S(n) for n in range(102, 114)]), lead=S(99))], total=Pontos(76), whole=True,
+      question=(PL(4, 'Tópico 2'), PL(4, '“Não podemos inventar'), PL(4, '- Greta Thunberg')),
+      stem=_CHOICE_2021, source=False),
+]
+
+
+# ===================================================== 2010-2019 HL (old) ===
+# The old examination: Part I (reading; the shared generator's cards, the
+# shape of live 2021 Part I), Part II ("Parte II (30 pontos)", a commentary
+# of about 100 words on a sentence) and Part III ("Parte III (40 pontos)",
+# "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma."
+# over Proposta 1 and 2). The scheme prints a MODEL commentary for each task
+# and no marking list: CARD-STANDARD 10a, as 2021 Part II -- each model shown
+# after the reveal under the scheme's own heading for it, word for word,
+# scored on the printed total (questionTotal), never claimable; Part III is
+# two cards, the choice instruction the stem of each.
+_CHOICE_2019 = (PL(4, 'Das duas propostas'), PL(4, '(Comente a citação'))
+READING[(2019, 'hl')] = [
+    C('II1', [shown(SchemeSpan(85, 92), lead=S(84))], total=Pontos(83), whole=True,
+      question=(PL(4, 'Todos os atrevidos'), PL(4, 'Comente a frase em cerca de 100')), stem=()),
+    C('III1', [shown(SchemeSpan(100, 108), lead=S(99))], total=Pontos(97), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'A sorte protege')), stem=_CHOICE_2019, source=False),
+    C('III2', [shown(SchemeSpan(110, 132), lead=S(109))], total=Pontos(97), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, 'Fazer uma interrupção'), PL(4, 'de tempo?'),
+                PL(4, 'Dê uma resposta a esta'), PL(4, 'argumento.')), stem=_CHOICE_2019, source=False),
+]
+
+
+_CHOICE_P4 = (PL(4, 'Das duas propostas'), PL(4, '(Comente a citação'))
+_JOINED_LATER = ('The scheme of this sitting reprints no question, so the two documents are joined on the '
+                 'numbering they both print, which the census checks question by question.')
+from pl_listen_lib import Join   # noqa: E402
+# 2017 and 2016 print Q1's five answers on one run, as 2018: each part is cut
+# to its own answer at the paper's "(5 x 1 ponto)". 2017 prints no price on
+# Q2-Q6 (held for the unpriced-section shape); 2016 prints "(5)" on each.
+_Q1_2017 = PaperEach(3, '(5 x 1 ponto)', 1)
+_LEAD_2017 = PLc(3, '1. Explique por palavras suas', after='1. ')
+_Q1_2016 = PaperEach(3, '(5 × 1 ponto)', 1)
+_LEAD_2016 = PLc(3, '1. Explique por palavras suas', after='1. ')
+_I1_2017 = [
+    C('I1a', [one(S(50, after='a) ', before=' b)'), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'a) alcofa', after='a) ')), stem=()),
+    C('I1b', [one(S(50, after='b) ', before=' c)'), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'b) trazia', after='b) ')), stem=()),
+    # "c)" closes line 50; its answer opens line 51.
+    C('I1c', [one(S(51, before=' d)'), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'c) ameigavam', after='c) ')), stem=()),
+    C('I1d', [one(S(51, after='d) ', before=' e)'), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'd) desbotada', after='d) ')), stem=()),
+    C('I1e', [one(J(S(51, after='e) '), S(52)), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'e) moldaram', after='e) ')), stem=()),
+]
+_I1_2016 = [
+    C('I1a', [one(S(50, after='a) ', before=' b)'), _Q1_2016)], total=_Q1_2016, note=_JOINED_LATER,
+      question=(_LEAD_2016, PLc(3, 'a) sítio', after='a) ')), stem=()),
+    # "livro-" closes line 50 and "leitor" opens 51: the compound is joined
+    # as printed, with no space.
+    C('I1b', [one(Join(S(50, after='b) '), S(51, before=' c)'), sep=''), _Q1_2016)], total=_Q1_2016,
+      note=_JOINED_LATER, question=(_LEAD_2016, PLc(3, 'b) o livro', after='b) ')), stem=()),
+    C('I1c', [one(J(S(51, after='c) '), S(52, before=' d)')), _Q1_2016)], total=_Q1_2016, note=_JOINED_LATER,
+      question=(_LEAD_2016, PLc(3, 'c) fluxo', after='c) ')), stem=()),
+    C('I1d', [one(S(52, after='d) ', before=' e)'), _Q1_2016)], total=_Q1_2016, note=_JOINED_LATER,
+      question=(_LEAD_2016, PLc(3, 'd) passatempo', after='d) ')), stem=()),
+    C('I1e', [one(J(S(52, after='e) '), S(53)), _Q1_2016)], total=_Q1_2016, note=_JOINED_LATER,
+      question=(_LEAD_2016, PLc(3, 'e) tirar', after='e) ')), stem=()),
+]
+# 2018 prints Q1's five answers on one run ("1. a) coisas sem importância; b)
+# ambiente ..."), which the shared generator carded whole on Q1(a): each part
+# is cut to its own answer here, at the paper's "(5 x 1 ponto)".
+_Q1_2018 = PaperEach(3, '(5 x 1 ponto)', 1)
+_LEAD_2018 = PLc(3, '1. Explique por palavras suas', after='1. ')
+_JOINED = ('The scheme of this sitting reprints no question, so the two documents are joined on the '
+           'numbering they both print, which the census checks question by question.')
+READING[(2018, 'hl')] = [
+    C('I1a', [one(S(46, after='a) ', before=' b)'), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'a) futilidades', after='a) ')), stem=()),
+    C('I1b', [one(S(46, after='b) ', before=' c)'), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'b) rarefeito', after='b) ')), stem=()),
+    C('I1c', [one(J(S(46, after='c) '), S(47, before=' d)')), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'c) limpar', after='c) ')), stem=()),
+    C('I1d', [one(S(47, after='d) ', before=' e)'), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'd) apartamento', after='d) ')), stem=()),
+    C('I1e', [one(J(S(47, after='e) '), S(48)), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'e) Epitáfio', after='e) ')), stem=()),
+    C('II1', [shown(SchemeSpan(65, 71), lead=S(64))], total=PaperPontos(4, '(30 pontos)'), whole=True,
+      question=(PL(4, 'Faça um comentário sobre a frase'), PL(4, 'A lágrima rolou'), PL(4, 'perda, pelo'),
+                PL(4, 'que chamamos futuro')), stem=()),
+    # The scheme's Part III prints one indicative list ("Aspectos que o aluno
+    # pode referir na sua resposta:"), for Proposta 1's quotation.
+    C('III1', [shown(SchemeSpan(78, 80), lead=S(77)), shown(SchemeSpan(81, 82))],
+      total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'Vejo um país'), PL(4, 'complacência'), PL(4, 'seca.')),
+      stem=_CHOICE_P4, source=False),
+    # Nothing for Proposta 2: CARD-STANDARD 3, the scheme prints no answer.
+    C('III2', [rest(PaperPontos(4, '(40 pontos)'), 0)], total=PaperPontos(4, '(40 pontos)'),
+      question=(PL(4, 'Proposta 2'), PL(4, 'O hábito não faz'), PL(4, 'Em que medida'),
+                PL(4, 'argumentos a favor'), PL(4, 'palavras.')), stem=_CHOICE_P4, source=False),
+]
+READING[(2017, 'hl')] = _I1_2017 + [
+    C('II1', [shown(SchemeSpan(84, 86), lead=S(83))], total=Pontos(82), whole=True,
+      question=(PL(4, 'Faça um comentário sobre a frase'), PL(4, '“A parte do mundo')), stem=()),
+    # Tema 1's answer is the scheme's guidance for the task, shown as printed.
+    C('III1', [shown(SchemeSpan(90, 91), lead=S(89))], total=Pontos(87), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'Relembre um objecto'), PL(4, 'como ele foi')),
+      stem=_CHOICE_P4, source=False),
+    C('III2', [shown(SchemeSpan(93, 109), lead=S(92))], total=Pontos(87), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, '“A minha opinião'), PL(4, 'Comente a frase no contexto')),
+      stem=_CHOICE_P4, source=False),
+]
+READING[(2016, 'hl')] = _I1_2016 + [
+    C('II1', [shown(SchemeSpan(71, 80), lead=S(70))], total=Pontos(69), whole=True,
+      question=(PL(4, 'Faça um comentário sobre a frase'), PL(4, 'Os bons livros'), PL(4, 'suja basta virar'),
+                PL(4, 'tem princípio nem fim')), stem=()),
+    C('III1', [shown(SchemeSpan(84, 88), lead=S(83))], total=Pontos(81), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'Uma língua é o lugar'), PL(4, 'pensar e sentir'),
+                PL(4, 'como da de outros'), PL(4, 'mar foi a da nossa'), PL(4, 'Vergílio Ferreira')),
+      stem=_CHOICE_P4, source=False),
+    C('III2', [shown(SchemeSpan(90, 97), lead=S(89))], total=Pontos(81), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, 'O mundo pode ser'), PL(4, 'fazermos mais igual'), PL(4, 'Fintan')),
+      stem=_CHOICE_P4, source=False),
+]
+
+
+_Q1_2014 = PaperEach(3, '(5 × 1 ponto)', 1)
+_LEAD_2014 = PLc(3, '1. Explique por palavras suas', after='1. ')
+READING[(2014, 'hl')] = [
+    # Q1's five answers on one run, as 2018.
+    C('I1a', [one(S(52, after='a) ', before=' b)'), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'a) Ostracismo', after='a) ')), stem=()),
+    C('I1b', [one(S(52, after='b) ', before=' c)'), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'b) Canícula', after='b) ')), stem=()),
+    C('I1c', [one(S(52, after='c)'), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'c) Maturidade', after='c) ')), stem=()),
+    C('I1d', [one(S(53, after='d) ', before=' e)'), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'd) Demográfico', after='d) ')), stem=()),
+    C('I1e', [one(J(S(53, after='e) '), S(54)), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'e) Marginalização', after='e) ')), stem=()),
+    # "(3+2 pontos)" over the two motives the scheme names: one row each, at
+    # the printed parts in the order it prints them.
+    C('I2', [one(S(56, after='Os dois temas são ', before='; e a'), PontosSplit(58, 0)),
+             one(J(S(56, after='; e '), S(57)), PontosSplit(58, 1))], total=PontosSplit(58), note=_JOINED,
+      rownote='The scheme prices the two motives “(3+2 pontos)”, in the order it prints them.',
+      question=(PLc(4, '2. Identifique', after='2. '),)),
+    C('II1', [shown(SchemeSpan(87, 94), lead=S(86))], total=Pontos(85), whole=True,
+      question=(PL(4, '"Quem aprender'), PL(4, 'vinho saído'), PL(4, 'maduras e bebessem'),
+                PL(4, 'Qual o seu ponto'), PL(4, 'Em cerca de 100')), stem=()),
+    C('III1', [shown(SchemeSpan(99, 119), lead=S(97))], total=Pontos(95), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, '“É aos jovens')), stem=_CHOICE_P4, source=False),
+    C('III2', [shown(SchemeSpan(121, 134), lead=S(120))], total=Pontos(95), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, '“Se viajamos'), PL(4, 'nós próprios'), PL(4, 'Ralph Waldo')),
+      stem=_CHOICE_P4, source=False),
+]
+
+
+_CHOICE_RESP = (PL(4, 'Das duas propostas'), PL(4, '(Resposta em cerca de 300'))
+_Q1_2013 = PaperEach(3, '(5 × 1 ponto)', 1)
+_LEAD_2013 = PLc(3, '1. Explique', after='1. ')
+READING[(2013, 'hl')] = [
+    # Q1's five answers on one run, as 2018.
+    C('I1a', [one(S(50, after='a) ', before=' b)'), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'a) “Petulante”', after='a) ')), stem=()),
+    C('I1b', [one(J(S(50, after='b) '), S(51, before=' c)')), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'b) “Egoísta”', after='b) ')), stem=()),
+    C('I1c', [one(S(51, after='c) ', before=' d)'), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'c) “Intransigência”', after='c) ')), stem=()),
+    C('I1d', [one(J(S(51, after='d) '), S(52, before=' e)')), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'd) “Solidão”', after='d) ')), stem=()),
+    C('I1e', [one(S(52, after='e) '), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'e) “Vulnerável”', after='e) ')), stem=()),
+    # The scheme prints "(30 pontos / Total: 100)": the paper's "(30 pontos)".
+    C('II1', [shown(SchemeSpan(86, 97), lead=S(84))], total=PaperPontos(4, '(30 pontos)'), whole=True,
+      question=(PL(4, 'O facto de guardar'), PL(4, 'quase me deu'), PL(4, 'fora dos muros'), PL(4, 'de que se rodeou'),
+                PL(4, 'Num comentário crítico'), PL(4, 'diz sobre o autor')), stem=()),
+    C('III1', [shown(SchemeSpan(101, 110), lead=S(100))], total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'Os laços familiares')), stem=_CHOICE_RESP, source=False),
+    C('III2', [shown(SchemeSpan(112, 122), lead=S(111))], total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, 'Perseguir os nossos')), stem=_CHOICE_RESP, source=False),
+]
+_Q1_2012 = PaperEach(3, '(5 × 1 ponto)', 1)
+_LEAD_2012 = PLc(3, '1. Explique', after='1. ')
+READING[(2012, 'hl')] = [
+    C('I1a', [one(S(23, after='a) ', before=' b)'), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'a) “Países', after='a) ')), stem=()),
+    C('I1b', [one(J(S(23, after='b) '), S(24, before=' c)')), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'b) “Analfabetismo', after='b) ')), stem=()),
+    C('I1c', [one(J(S(24, after='c) '), S(25, before=' d)')), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'c) “Cultura', after='c) ')), stem=()),
+    C('I1d', [one(S(25, after='d) ', before=' e)'), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'd) “Vertiginosa', after='d) ')), stem=()),
+    C('I1e', [one(J(S(25, after='e) '), S(26)), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'e) “Ao deus', after='e) ')), stem=()),
+    C('II1', [shown(SchemeSpan(48, 52), lead=S(46))], total=PaperPontos(4, '(30 pontos)'), whole=True,
+      question=(PL(4, 'Mas no fim e ao cabo'), PL(4, 'possível, terá'), PL(4, 'Faça um comentário crítico')), stem=()),
+    C('III1', [shown(SchemeSpan(56, 61), lead=S(55))], total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, '“Abrir um livro')), stem=_CHOICE_RESP, source=False),
+    C('III2', [shown(SchemeSpan(63, 65), lead=S(62))], total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, 'Na sociedade actual')), stem=_CHOICE_RESP, source=False),
+]
+
+
+# 2010 and 2011 print four percentage criteria for Parts II and III under
+# "Observações" ("Na classificação da segunda e terceira partes, serão
+# considerados os seguintes aspectos :"): CARD-STANDARD 10b, marks per
+# criterion (30%/30%/30%/10% of 30 = 9/9/9/3; of 40 = 12/12/12/4), each the
+# printed line whole, the block's lead line on the first criterion; the
+# scheme's model shown before them, as printed, under its own heading (10a).
+def _criteria(lines, total, lead):
+    return [pct(Lines(*lines[0]), total, lead=lead)] + [pct(Lines(*l), total) for l in lines[1:]]
+
+
+_CRIT_2010 = ((114, 114), (115, 117), (118, 119), (120, 120))
+_CRIT_LEAD_2010 = J(S(112, after='Observações : '), S(113))
+READING[(2010, 'hl')] = [
+    C('II1', [shown(SchemeSpan(62, 75), lead=S(61))] + _criteria(_CRIT_2010, Pontos(60), _CRIT_LEAD_2010),
+      total=Pontos(60),
+      question=(PL(4, '“A democracia e a tecnologia'), PL(4, 'mundo à nossa volta'), PL(4, 'Em cerca de 100 palavras')),
+      stem=()),
+    C('III1', [shown(SchemeSpan(83, 97), lead=S(82))] + _criteria(_CRIT_2010, Pontos(80), _CRIT_LEAD_2010),
+      total=Pontos(80),
+      question=(PL(4, 'Proposta 1'), PL(4, '“O homem nasceu livre'), PL(4, '(Jean-Jacques')),
+      stem=_CHOICE_P4, source=False),
+    C('III2', [shown(SchemeSpan(99, 111), lead=S(98))] + _criteria(_CRIT_2010, Pontos(80), _CRIT_LEAD_2010),
+      total=Pontos(80),
+      question=(PL(4, 'Proposta 2'), PL(4, '“Nenhum homem'), PL(4, '(John Donne)')),
+      stem=_CHOICE_P4, source=False),
+]
+_CRIT_2011 = ((100, 101), (102, 104), (105, 106), (107, 107))
+READING[(2011, 'hl')] = [
+    C('II1', [shown(SchemeSpan(55, 64), lead=S(54))] + _criteria(_CRIT_2011, Pontos(53), S(99)),
+      total=Pontos(53),
+      question=(PL(4, '“A TVI mostra-nos'), PL(4, 'mental, feitas'), PL(4, 'Em cerca de 100 palavras')),
+      stem=()),
+    C('III1', [shown(SchemeSpan(68, 94), lead=S(67))] + _criteria(_CRIT_2011, Pontos(65), S(99)),
+      total=Pontos(65),
+      question=(PL(4, 'Proposta 1'), PL(4, '“Grandes momentos')),
+      stem=_CHOICE_P4, source=False),
+    # The scheme prints no model for Proposta 2 (it restates the quotation and
+    # goes to "Observações"): the criteria are its marking.
+    C('III2', _criteria(_CRIT_2011, Pontos(65), S(99)),
+      total=Pontos(65),
+      question=(PL(4, 'Proposta 2'), PL(4, '“A maior parte'), PL(4, 'Abraham Lincoln')),
+      stem=_CHOICE_P4, source=False),
+]
+
+
+# 2015 prints no price on any Part I question (only "Parte I (30 pontos)"):
+# its 15 Part I asks are held for the unpriced-section shape. Parts II and III
+# are priced by the paper (the scheme prints "(30 pontos / Total: 100)" and
+# "(40 points / Total: 100)").
+_CHOICE_2015 = (PL(4, 'Das duas propostas'), PL(4, 'Comente a frase em cerca de 300'))
+READING[(2015, 'hl')] = [
+    C('II1', [shown(SchemeSpan(74, 89), lead=S(72))], total=PaperPontos(4, '(30 pontos)', under='Parte II'),
+      whole=True,
+      question=(PL(4, '“Se a literatura não fosse'), PL(4, 'deserto, (...)'), PL(4, 'nas Arabian Sands'),
+                PL(4, 'Faça um comentário sobre a frase')), stem=()),
+    C('III1', [shown(SchemeSpan(93, 97), lead=S(92))], total=PaperPontos(4, '(40 pontos)', under='Parte III'),
+      whole=True, question=(PL(4, 'Proposta 1'), PL(4, 'A importância dos livros')),
+      stem=_CHOICE_2015, source=False),
+    C('III2', [shown(SchemeSpan(99, 104), lead=S(98))], total=PaperPontos(4, '(40 pontos)', under='Parte III'),
+      whole=True, question=(PL(4, 'Proposta 2'), PL(4, '“Aquele que se contenta')),
+      stem=_CHOICE_2015, source=False),
+]
+
+
+# ------------------------------------------- the unpriced Part I asks (10i) ---
+# 2017 Q2-Q6 and 2015 Q1(a)-(e), Q2-Q6: the paper prints no price on the
+# question, only "Parte I" "(30 pontos)" for the part as a whole (2015 also
+# none on Q1). Coordinator ruling (B), 20 Nov 2026 (types/markBank.ts
+# unpricedSection): the scheme's answer shown word for word, no marks, no
+# total of the card's own; the section's printed name and total lifted from
+# the line under its heading.
+_UNPRICED_2017 = (Heading(2, 'Parte I'), PaperPontos(2, '(30 pontos)', under='Parte I'))
+READING[(2017, 'hl')] += [
+    C('I2', [shown(J(S(53, after='2. '), S(54)))], unpriced=_UNPRICED_2017, note=_JOINED_LATER),
+    C('I3', [shown(J(S(55, after='3. '), S(56), S(57)))], unpriced=_UNPRICED_2017, note=_JOINED_LATER),
+    C('I4', [shown(J(S(58, after='4. '), S(59), S(60), S(61), S(62)))], unpriced=_UNPRICED_2017,
+      note=_JOINED_LATER),
+    C('I5', [shown(J(S(63, after='5. '), S(64), S(65), S(66), S(67)))], unpriced=_UNPRICED_2017,
+      note=_JOINED_LATER),
+    # Over a page break (line 72 is the page number).
+    C('I6', [shown(J(S(68, after='6. '), S(69), S(70), S(71), S(76), S(77), S(78), S(79), S(80), S(81)))],
+      unpriced=_UNPRICED_2017, note=_JOINED_LATER),
+]
+_UNPRICED_2015 = (Heading(4, 'Parte I'), PaperPontos(4, '(30 pontos)', under='Parte I'))
+_LEAD_2015 = PLc(4, '1. Explique por palavras suas', after='1. ')
+READING[(2015, 'hl')] += [
+    # Q1's five answers on one run, as 2018: each part cut at the printed letters.
+    C('I1a', [shown(S(53, after='a) ', before=' b)'))], unpriced=_UNPRICED_2015, note=_JOINED_LATER,
+      question=(_LEAD_2015, PLc(4, 'a) Mentores', after='a) ')), stem=()),
+    # "levam-" closes line 53 and "na" opens 54: the clitic is joined as printed.
+    C('I1b', [shown(Join(S(53, after='b) '), S(54, before=' c)'), sep=''))], unpriced=_UNPRICED_2015,
+      note=_JOINED_LATER, question=(_LEAD_2015, PLc(4, 'b) Esquizofrenicamente', after='b) ')), stem=()),
+    C('I1c', [shown(S(54, after='c) ', before=' d)'))], unpriced=_UNPRICED_2015, note=_JOINED_LATER,
+      question=(_LEAD_2015, PLc(4, 'c) O cúmulo', after='c) ')), stem=()),
+    C('I1d', [shown(S(54, after='d) '))], unpriced=_UNPRICED_2015, note=_JOINED_LATER,
+      question=(_LEAD_2015, PLc(4, 'd) Evasão', after='d) ')), stem=()),
+    C('I1e', [shown(S(55, after='e) '))], unpriced=_UNPRICED_2015, note=_JOINED_LATER,
+      question=(_LEAD_2015, PLc(4, 'e) Fazer pela vida', after='e) ')), stem=()),
+    C('I2', [shown(J(S(56, after='2. '), S(57), S(58)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
+    C('I3', [shown(J(S(59, after='3. '), S(60), S(61)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
+    C('I4', [shown(J(S(62, after='4. '), S(63)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
+    C('I5', [shown(J(S(64, after='5. '), S(65), S(66), S(67)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
+    C('I6', [shown(J(S(68, after='6. '), S(69), S(70), S(71)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
+]
+
+
+# ============================================================== 2022 OL ===
+# The reading asks the old shared generator excluded: two true/false ticks the
+# text layer cannot read (taken from the scheme PDF by tick position, CARD-
+# STANDARD 10c), and the medals table (Q3(g) on the paper, (i) in the scheme:
+# "6 marks: 6 x 1 marks", "Any two lines", each line a year, a place and a
+# medal), one claimable option a detail, capped at the printed 6.
+READING[(2022, 'ol')] = [
+    # The paper sets each label beside an empty box the text layer reads as
+    # U+F063: the question is its printed lines, the boxes left out.
+    C('A1d', [one(VI(100, 5), T(100))],
+      question=(PLc(4, '(d) Qual é a ocupação', after='(d) '), PL(4, 'Clara é estudante'), PL(4, 'Verdadeiro'),
+                PLc(4, 'Falso', before=' \uf063'))),
+    C('A2d', [one(VI(160, 8), T(160))]),
+    # Each line's Year, Place and Medal sit in separate printed cells
+    # (rendered), each worth 1 mark ("6 marks: 6 x 1 marks"): every cell is a
+    # claimable option, in printed line order, capped at the printed 6.
+    C('A3g', [menu([S(216, before=' Poland'), S(216, after='2021 ', before=' Gold'), S(216, after='Poland '),
+                    S(217, before=' Helsinki'), S(217, after='2012 ', before=' Silver'), S(217, after='Finland '),
+                    S(218, before=' Amsterdam'), S(218, after='2016 ', before=' Gold'),
+                    S(218, after='Amsterdam ', before=' Any'),
+                    S(219, before=' Tokyo'), S(219, after='2020 ', before=' Silver'), S(219, after='Japan ')],
+                   T(217))],
+      rownote='The scheme prices the table “6 marks: 6 x 1 marks” and prints “Any two lines” beside it: a '
+              'mark for each detail (Year, Place, Medal) of two of its lines, “2021 Poland Gold”, “2012 '
+              'Helsinki/ Finland Silver”, “2016 Amsterdam Gold”, “2020 Tokyo/Japan Silver”.'),
+]
+
+# Scheme .md lines 363-489 (pages 17-22). The recording is the 2022 one
+# (LC018ZLP017BV.mp3, CARD-STANDARD 10g).
+LISTENING[(2022, 'ol')] = [
+    C('LA1', [one(S(367), T(367))]),
+    C('LA2', [one(S(370), T(370))]),
+    C('LA3', [one(VI(373, 17), T(373))]),
+    C('LA4', [one(S(376, after='i) '), T(376)), one(S(377, after='ii) '), T(377)),
+              one(S(378, after='iii) '), T(378)), one(S(379, after='iv) '), T(379))], total=T(375)),
+    C('LA5', [one(S(382), T(382))]),
+    C('LB1', [one(S(390), T(390))]),
+    # Each half of the station's name on its own line at a lower price: paid
+    # in place of the full name, never beside it.
+    C('LB2', [menu([S(393)], T(393), [alt(S(394), T(394), of=0), alt(S(395), T(395), of=0)])]),
+    C('LB3', [one(S(398), T(398))],
+      question=(PL(4, 'Quantos objetivos'), PL(4, 'Dois'), PL(4, 'Três'))),
+    C('LB4i', [one(S(402), T(402))]),
+    C('LB4ii', [one(S(405), T(405))]),
+    # The paper asks for two themes and the scheme prints "Any 2", but it
+    # prices the question "6 marks: 3 x 2 marks": the printed price is carded
+    # (as 2025 OL LB6), each printed theme an option, the conflict quoted.
+    C('LB4iii', [menu([S(412, before=', cultura'), S(412, after='Literatura, ', before=', inovação'),
+                       S(412, after='cultura, ', before=', curiosidades'),
+                       S(412, after='inovação, ', before=', política'),
+                       S(412, after='curiosidades, ', before=', debates'), S(412, after='política, ', before=','),
+                       S(413)], T(412))],
+      rownote='The paper asks for two themes and the scheme prints “Any 2”, but it prices the question '
+              '“6 marks: 3 x 2 marks”; the printed price is carded.'),
+    C('LC1', [one(S(418), T(418))]),
+    C('LC2', [one(S(422), T(422))]),
+    C('LC3', [one(VI(425, 19), T(425))]),
+    C('LC4', [one(S(428), T(428))]),
+    # The full answer, or either half of it at the lower price, in its place.
+    C('LC5', [menu([S(435)], T(435), [alt(S(436), T(436), of=0), alt(S(437), T(437), of=0)])]),
+    C('LC6', [menu([S(440), S(441)], T(440))]),
+    C('LD1', [one(VI(446, 20, 0), T(446))]),
+    C('LD2', [one(VI(449, 20, 1), T(449))]),
+    C('LD3', [one(PdfSup(456, 21), T(456))]),
+    C('LD4', [one(S(459, before=' e Porto'), T(459, each=True)), one(S(459, after='Lisbon e '), T(459, each=True))],
+      total=T(459)),
+    C('LD5', [menu([S(462, after='is ', before=', weak'), S(462, after='temperatures, ', before=' and'),
+                    S(463)], T(462))]),
+    C('LE1', [one(S(467), T(467))]),
+    C('LE2', [one(VI(471, 21), T(471))]),
+    C('LE3', [menu([J(S(478), S(479)), S(480), S(481)], T(478))]),
+    C('LE4', [one(S(485, after='Morning '), T(485), lead=S(485, before=' 2')),
+              one(S(486, after='Afternoon '), T(486), lead=S(486, before=' 3'))], total=T(483)),
+    C('LE5', [one(S(489), T(489))]),
+]
+
+
+# ============================================================== 2022 HL ===
+# Scheme .md lines 426-592 (pages 17-24); the 2022 recording (10g).
+LISTENING[(2022, 'hl')] = [
+    C('LA1', [menu([S(430), S(431)], T(430), [alt(S(432), T(432), of=0)])]),
+    C('LA2', [one(VI(435, 17), T(435))]),
+    C('LA3', [stepped(J(S(438), S(440)), T(439))]),
+    C('LA4', [menu([S(443, before=' Tem cabelo'), S(443, after='magro. ', before=' Tem olhos'),
+                    J(S(443, after='curto. '), S(445, before=' Tem barba')), S(445, after='grandes. '),
+                    S(447)], T(444))]),
+    C('LA5', [one(S(454), T(454))]),
+    C('LA6', [menu([S(457), S(458)], T(457))]),
+    C('LB1', [one(S(462), T(462))]),
+    # The scheme prints "Any 2" beside the answers but prices the question
+    # "6 marks: 3 x 2 marks": the printed price is carded (as 2025 OL LB6) and
+    # the conflict quoted (CARD-STANDARD 10f).
+    C('LB2', [menu([S(465, after='1. '), S(467, after='2. '), S(469, after='3. ')], T(466))],
+      rownote='The scheme prints “Any 2” beside the answers, but it prices the question “6 marks: 3 x 2 '
+              'marks”; the printed price is carded.'),
+    C('LB3', [one(S(472), T(472))]),
+    C('LB4i', [one(S(480), T(480))]),
+    C('LB4ii', [one(S(484, after='Terça-feira '), T(484), lead=S(484, before=' Cultura')),
+                one(S(486, after='Quinta-feira '), T(486), lead=S(486, before=' Curiosidades')),
+                one(S(488, after='Sábado '), T(488), lead=S(488, before=' Debates')),
+                one(S(489, after='Domingo '), T(489), lead=S(489, before=' Filmes'))], total=T(482)),
+    C('LC1', [one(S(498), T(498))]),
+    C('LC2', [menu([S(501)], T(501), [alt(S(502), T(502), of=0), alt(S(503), T(503), of=0)])]),
+    C('LC3', [menu([J(S(506), S(508))], T(507), [alt(S(509), T(509), of=0), alt(S(510), T(510), of=0),
+                                                alt(S(511), T(511), of=0)])],
+      rownote='The scheme prices the full answer “3 marks” and prints “Any 2” beside it: any two of its details.'),
+    C('LC4i', [one(S(515), T(515))]),
+    C('LC4ii', [one(S(522), T(522))]),
+    # The number, or the marks for one to two and three to five wrong digits
+    # in its place; the printed "6 or more wrong numbers ⟨0 marks⟩" is no
+    # option (an option earns marks), so the note quotes it.
+    C('LC5', [menu([S(525)], T(525), [alt(S(526), T(526), of=0), alt(S(527), T(527), of=0)])],
+      rownote='The scheme gives “6 or more wrong numbers” 0 marks.'),
+    C('LC6', [menu([S(531), S(532), S(533)], T(531))]),
+    C('LD1', [one(PdfSup(541, 22), T(541))]),
+    C('LD2', [one(S(545, after='Coimbra '), T(545), lead=S(545, before=' Cloudy')),
+              one(S(546, after='Algarve '), T(546), lead=S(546, before=' Weak'))], total=T(543),
+      rownote='The scheme prints “Any 3” beside the table.'),
+    C('LD3', [one(S(550, before=' and Porto'), EachOnly(550)), one(S(550, after='Lisbon and '), EachOnly(550))],
+      total=T(549),
+      rownote='The scheme prints “3 marks: 2 x 3 marks” beside this answer and “6 Marks” over it: the card '
+              'keeps the question’s printed 6 marks, 3 for each city.'),
+    C('LD4', [menu([S(553, before=', weak'), S(553, after='temperatures, ', before=' and'),
+                    S(553, after='and ')], T(553))]),
+    C('LE1', [menu([S(562)], T(562), [alt(S(n), T(n), of=0) for n in range(563, 568)])]),
+    C('LE2', [menu([S(570), S(571)], T(570))]),
+    C('LE3', [stepped(B(S(574), S(575), S(576)), T(575))]),
+    C('LE4', [menu([S(583)], T(582), [alt(S(584), T(584), of=0)])],
+      rownote='The scheme prices the full answer “4 marks: 2 x 2 marks”.'),
+    # The scheme centres "Morning" / "Afternoon" between the two lines of each
+    # answer cell, so a cell read whole never traces: each row is its cell's
+    # first printed line, and the note quotes the line that continues it.
+    C('LE5', [one(S(587), T(588), lead=S(588)), one(S(590), T(591), lead=S(591))], total=T(586),
+      rownote='The scheme continues the morning answer with “[or] working out.” and the afternoon '
+              'answer with “for international competition”, each on the line under its label.'),
+]
+
+
 READING[(2023, 'ol')] = [
     # The four options the scheme prints as correct, each "1 mark".
     C('A1c', [one(S(n), T(n)) for n in range(91, 95)], total=T(90),
