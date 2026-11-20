@@ -1003,7 +1003,13 @@ function schemeFor(subjectId, card) {
  * Calibri: the 2022 Higher Polish listening booklet prints "grows in 20\u1D52C" (rendered:
  * a degree sign), and its text layer carries the character itself, not a
  * subset's stand-in. Added alone; at the time no other deck input held it. */
-const REAL = /[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D52\u1D62-\u1D6A\u1F00-\u1FFF]/;
+/* U+1EB7 LATIN SMALL LETTER A WITH BREVE AND DOT BELOW is what the Romanian
+ * papers of 2012-2020 actually print in their bold instruction lines: the SEC
+ * typed "Toate r\u1EB7spunsurile trebuie scrise \u00een limba rom\u00e2n\u0103" (rendered at
+ * 300 dpi: an a with a breve and a dot below; 2013's text layer reads the same
+ * glyph, id 1211, as U+04BB and is repaired from that id). The answer-language
+ * note quotes that rule as printed. Added alone; no other deck input holds it. */
+const REAL = /[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D52\u1D62-\u1D6A\u1EB7\u1F00-\u1FFF]/;
 /* Greek Extended (U+1F00-U+1FFF) is genuinely Greek, for the same reason
  * U+0370-U+03FF already is: POLYTONIC Greek is the alphabet the Ancient Greek
  * paper and its scheme are printed in, and every accented vowel in it lives
