@@ -8238,6 +8238,459 @@
   }
  },
  {
+  "id": "est-2023-hl-i-5",
+  "subjectId": "estonian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "estonian-0-1",
+  "conceptId": "enese-juhtimine-olukorra-kontrollimine-voimalus-ise",
+  "questionRef": "2023 HL Section I Q5",
+  "questionText": "„Enese juhtimine, olukorra kontrollimine, võimalus ise midagi linnalooduse heaks ära teha ja sellest tulenev saavutustunne peaksid olema siinkohal võtmesõnad.“ Arutle artikli põhjal, kuidas saab sinu arvates loodus aidata kaasa enesejuhtimisele, olukorra kontrollimisele ning innustada ise midagi keskkonna heaks ära tegema.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Loodus õpetab meid oma elu juhtima ja olukordadega paremini toime tulema. Aktiivne isetegevus ja tööprotsessis osalemine aitavad olukordi kontrollida. Ükskõik, mida me loome või kujundame – olgu kooliaias töötamine, kodune rõdukast või lillepeenar, külvamine‐kasvatamine‐hooldamine‐hoolitsemine vms –, omandame me selle tegevuse käigus uusi kogemusi ja õpime midagi uut. Kui ettevõtmine õnnestub, saame positiivse eduelamuse, mis loodetavasti suurendab tahet järgmine kord midagi sarnast looduses korda saata. Isegi kui töö käigus tuleb ette takistusi ja ebaõnnestumist, saab sellestki midagi õppida. Just see, kui anda noortele vabad käed valida ise välja idee või projekt, mida looduses ellu viia, see iseseisvalt kavandada ja omade jõududega edukalt lõpetada, aitab kaasa loovusele, iseseiseva mõtlemise ja algatusvõime kujunemisele. Samuti aitavad noortel loovust arendada ja iseseisvust õpetada kõikvõimalikud spontaanselt tekkivad loodusmängud ja loovusprojektid looduses. Looduses tegutsemise kaudu saab selgeks ka koostöö tähtsus.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" The scheme reprints the task’s opening as: “Arutle teksti põhjal”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Estonian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Estonian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
+  }
+ },
+ {
+  "id": "est-2023-hl-ii-1",
+  "subjectId": "estonian",
+  "level": "higher",
+  "year": 2023,
+  "section": "II",
+  "topicId": "estonian-1-0",
+  "conceptId": "loodus-arvusta-sind-oli-mote-millega",
+  "questionRef": "2023 HL Section II Q1",
+  "questionText": "„„Loodus ei arvusta sind“ oli mõte, millega üks Inglise noor kirjeldas linnalooduses tekkivat heaolutunnet.“ Mil moel loodus pigem toetab sind kui arvustab? Arutle artikli põhjal selle väite üle ja kirjuta umbes 100–150sõnaline arvamus oma seisukoha põhjenduseks.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:",
+    "marks": 30,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%",
+      "marks": 9,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" Under the scheme's heading “Näiteks:”, as examples, not a checklist: “Digivahendid ja tehnoloogia, tarbiv elustiil, kliimamuutused, rohealade kättesaadavus”; “Tervis ja heaolu: üksindus, stress, unehäired, kurbus, kaaluprobleemid, koolikius, (kliima)murelikkus, kehaline aktiivsus, vaimne heaolu, psühholoogia ja stressimaandus, metsateraapia”; “Uued teadmised ja oskused: looduslaagrid, õppekäigud, looduse vaatlemine‐uurimine‐analüüs, hobid, sport, elusloodus”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II ÜLESANNE",
+   "title": "Reading text — answer in Estonian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Estonian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\""
+  }
+ },
+ {
+  "id": "est-2023-hl-iii-1",
+  "subjectId": "estonian",
+  "level": "higher",
+  "year": 2023,
+  "section": "III",
+  "topicId": "estonian-1-1",
+  "conceptId": "ruum-umber-kujundab-motteviisi",
+  "questionRef": "2023 HL Section III Q1",
+  "questionText": "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. Ruum me ümber kujundab me mõtteviisi.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "est-2023-hl-iii-2",
+  "subjectId": "estonian",
+  "level": "higher",
+  "year": 2023,
+  "section": "III",
+  "topicId": "estonian-1-1",
+  "conceptId": "ajad-teised-inimesed-endised-anton-hansen",
+  "questionRef": "2023 HL Section III Q2",
+  "questionText": "Kirjuta umbes 300sõnaline kirjand. Vali üks antud teemadest. „Ajad on teised, inimesed endised.” (Anton Hansen Tammsaare)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Umbes 300sõnaline sidus teemakohane kirjand läbimõeldud sisu, selge ülesehituse ning sorava lausestusega.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "parts": [
+     {
+      "id": "c1",
+      "verbatim": "1. Teemast arusaamine ja sisu: teema on kandidaadi jaoks mõistetav ning ta on võimeline antud teemal mõtteid esitama – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c2",
+      "verbatim": "2. Teksti ülesehitus: kandidaadi lausestus on asjakohane, struktureeritud ja eesmärgipärane – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c3",
+      "verbatim": "3. Sõnavara ja stiil: kandidaadi keelekasutus on pädev oma mõtete selgeks ja ladusaks väljendamiseks – 30%",
+      "marks": 12,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12
+      ]
+     },
+     {
+      "id": "c4",
+      "verbatim": "4. Õigekiri: õigekeelsus ja kirjavahemärgid – 10%",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ],
+    "contextNote": "The examination requires every answer in ESTONIAN. The paper prints the rule on page 2: \"Ülesannetele tuleb vastata eesti keeles.\" The scheme prints: “II ja III ülesande hindamisel arvestatakse järgmisi kriteeriume:”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "est-2024-hl-i-2",
   "subjectId": "estonian",
   "level": "higher",
