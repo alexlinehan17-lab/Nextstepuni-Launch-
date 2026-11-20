@@ -1,4 +1,4 @@
-import { markBankCurriculumMenu, cardsForCurriculumNode } from './curriculumMenu';
+import { markBankCurriculumMenu, cardsForMenuTopic } from './curriculumMenu';
 import { consumeInitialPracticeLink } from './markBankDeepLink';
 import { loadAtlasModel } from '../PaperTrail/atlasModel';
 import { resolveSubjectId } from '../../curriculumRegistry';
@@ -256,7 +256,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
   const retention = retentionFor(now(), deck.examTs);
 
   const cohortMenu = useMemo(() => markBankCurriculumMenu(subjectId, level, examDate, cards), [subjectId, level, examDate, cards]);
-  const topicCardsFor = (id: string, pool: SecCard[]) => cardsForCurriculumNode(id, pool, cohortMenu.spec);
+  const topicCardsFor = (id: string, pool: SecCard[]) => cardsForMenuTopic(id, pool, cohortMenu);
 
   const startSession = (topicId?: string, preparedQueue?: SecCard[]) => {
     if (launchingTopicId !== null) return;

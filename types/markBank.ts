@@ -1484,8 +1484,16 @@ export interface FrenchLowerScale {
   maxMarks: number;
   permittedMarks: number[];
   bands: { label: string; marks: number[]; guidance: string[] }[];
+  /** The criteria whose marks switch the scale on; [] when the word count
+   *  alone does (Portuguese 2025-2026). */
   contentCriteria: string[];
-  contentAtMost: number;
+  /** The content total at or below which the scale applies. Present exactly
+   *  when contentCriteria names criteria; absent, never a made-up number,
+   *  when the word count alone switches the scale on. */
+  contentAtMost?: number;
+  /** "Less than N words": the student switches the scale on. One switch
+   *  serves a card: every criterion with a word count reads the first one's
+   *  (frenchShortSwitchId), as one printed statement lowers them together. */
   wordsUnder?: number;
   /** The printed rule, verbatim. */
   rule: string;

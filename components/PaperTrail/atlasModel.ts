@@ -60,6 +60,11 @@ for (const entry of SUBJECTS) {
   bySubject.set(entry.subjectId, { entry, headings, groups });
   for (const atlasId of entry.atlasIds) subjectOfAtlas.set(atlasId, entry.subjectId);
 }
+const headingById = new Map<string, ModelHeading>();
+for (const { headings } of bySubject.values()) for (const h of headings) if (!headingById.has(h.id)) headingById.set(h.id, h);
+/** A heading's name from the one list, for a heading no question is tagged with yet. */
+export const modelHeadingLabel = (topicId: string): string | undefined => headingById.get(topicId)?.label;
+
 /** The model subject (Mark Bank id) behind a Mark Bank or Atlas subject id. */
 const modelSubjectOf = (id: string): string | undefined => (bySubject.has(id) ? id : subjectOfAtlas.get(id));
 

@@ -1502,6 +1502,49 @@ const isPolishAdded = (id: string) => /^pl-\d{4}-/.test(id) && (Number(id.slice(
 const polishAddedTotal = [...Object.values(POLISH_ADDED), ...Object.values(POLISH_ADDED_TO_FROZEN)]
   .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
 
+/* Portuguese (the languages-q3 lane, from 2026-11-19): additions on top of
+ * the frozen 2021-2025 identity, as Polish does: new sittings whole (2026),
+ * and in a frozen sitting its Listening Comprehension Test (Partes A-E,
+ * sections LA-LE), its written tasks (Section B) and the reading asks the
+ * shared reader refused, each named. */
+const PORTUGUESE_ADDED: Record<number, { higher: number; ordinary: number }> = {
+  2026: { higher: 60, ordinary: 58 },
+};
+const PORTUGUESE_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
+  2025: { higher: 40, ordinary: 40 },
+  2024: { higher: 45, ordinary: 37 },
+  2023: { higher: 43, ordinary: 44 },
+  2022: { higher: 9, ordinary: 6 },
+};
+const PORTUGUESE_ADDED_TO_FROZEN_ID = /^por-202[1-5]-(?:hl|ol)-(?:l[a-e]-|b-)/;
+const PORTUGUESE_ADDED_TO_FROZEN_READING = new Set<string>([
+  'por-2025-hl-a-1-b-ii',
+  'por-2025-hl-a-1-i',
+  'por-2025-hl-a-2-j-i',
+  'por-2025-ol-a-1-d',
+  'por-2025-ol-a-1-h',
+  'por-2025-ol-a-2-f-i',
+  'por-2025-ol-a-2-f-ii',
+  'por-2025-ol-a-2-g',
+  'por-2025-ol-a-3-b',
+  'por-2024-hl-a-1-i',
+  'por-2024-hl-a-2-j',
+  'por-2024-ol-a-1-e',
+  'por-2023-hl-a-1-e',
+  'por-2023-hl-a-2-g',
+  'por-2023-ol-a-1-c',
+  'por-2023-ol-a-1-e',
+  'por-2023-ol-a-1-g',
+  'por-2023-ol-a-2-a',
+  'por-2023-ol-a-2-h',
+  'por-2023-ol-a-3-b',
+]);
+const isPortugueseAdded = (id: string) => /^por-\d{4}-/.test(id) && (Number(id.slice(4, 8)) in PORTUGUESE_ADDED
+  || (Number(id.slice(4, 8)) in PORTUGUESE_ADDED_TO_FROZEN
+    && (PORTUGUESE_ADDED_TO_FROZEN_ID.test(id) || PORTUGUESE_ADDED_TO_FROZEN_READING.has(id))));
+const portugueseAddedTotal = [...Object.values(PORTUGUESE_ADDED), ...Object.values(PORTUGUESE_ADDED_TO_FROZEN)]
+  .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
+
 /* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
  * addition on top of the frozen 2020-2026 set, never a replacement -- those
  * sittings had no card at all before. Pinned per level, count and id hash,
@@ -2780,6 +2823,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   if (name.startsWith('spanish:')) return ids.filter(id => !isSpanishAdded(id));
   if (name.startsWith('german:')) return ids.filter(id => !isGermanAdded(id));
   if (name.startsWith('polish:')) return ids.filter(id => !isPolishAdded(id));
+  if (name.startsWith('portuguese:')) return ids.filter(id => !isPortugueseAdded(id));
   if (name.startsWith('engineering:')) return ids.filter(id => !engineeringAdditionIds.has(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -3111,6 +3155,23 @@ describe('Mark Bank card preservation', () => {
       .toBe(true);
   });
 
+  it('adds each further Portuguese sitting on top of the frozen 2021-2025 identity', () => {
+    const cards = [...PORTUGUESE_HIGHER, ...PORTUGUESE_ORDINARY];
+    for (const [year, counts] of Object.entries(PORTUGUESE_ADDED)) {
+      const added = cards.filter(card => card.year === Number(year));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+      expect(added.every(card => card.id.startsWith(`por-${year}-`))).toBe(true);
+    }
+    for (const [year, counts] of Object.entries(PORTUGUESE_ADDED_TO_FROZEN)) {
+      const added = cards.filter(card => card.year === Number(year) && isPortugueseAdded(card.id));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+    }
+    expect(cards.filter(card => !isPortugueseAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
+      .toBe(true);
+  });
+
   /* A German card's conceptId is its level-independent identity, the key a
    * student's progress is carried on between Higher and Ordinary
    * (types/markBank.ts: it "cannot be retrofitted"), so it is held like the
@@ -3203,6 +3264,10 @@ describe('Mark Bank card preservation', () => {
       ['2017 ordinary', 52, '786f96da46a3ebed10203b54c31c4a968817ca9b38b5e89d32317046a03ef731'],
       ['2016 higher', 54, '10af64b857b24fdab3c24b64b85a504920d10037c792ea56c782044fa29b504d'],
       ['2016 ordinary', 48, '7315da8115ab273e6e8f5ae5790da66a3fcf7591ea43b46d3420a62160ebb696'],
+      ['2015 higher', 51, '89a71fc02367f26d4d72f088359128aecd96deacbe9b2b4de02d42b5d4bdaccf'],
+      ['2015 ordinary', 52, '0b3ac0058425a2a63b7bb2afc77125aac38f346b37248ee1bfe957d434ab27a2'],
+      ['2014 higher', 58, '81a38a10481a0b6222b729de7aa5c3e08f814a0ec88c0224c08f0f3bb68ebba2'],
+      ['2014 ordinary', 52, '42596fd6679cade7d6c3eeb3c5ca314790d4929140d4cc0e537e1cf6acf46ac3'],
     ];
     const lane = new Map<string, string[]>();
     for (const card of [...MUSIC_HIGHER, ...MUSIC_ORDINARY]) {
@@ -3323,6 +3388,7 @@ describe('Mark Bank card preservation', () => {
         : name.startsWith('spanish:') ? cards.filter(card => isSpanishAdded(card.id)).length
         : name.startsWith('german:') ? cards.filter(card => isGermanAdded(card.id)).length
         : name.startsWith('polish:') ? cards.filter(card => isPolishAdded(card.id)).length
+        : name.startsWith('portuguese:') ? cards.filter(card => isPortugueseAdded(card.id)).length
         // Technology's 2010-2019 and DCG's 2010-2018 additions count on top of the bank the same way.
         : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
@@ -3370,8 +3436,8 @@ describe('Mark Bank card preservation', () => {
         + treatmentAdditionIds.size
         // Italian (classics-italian lane): every card on top of the frozen 350.
         + italianAddedCount
-        // Polish additions (languages-q3 lane).
-        + polishAddedTotal);
+        // Polish and Portuguese additions (languages-q3 lane).
+        + polishAddedTotal + portugueseAddedTotal);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

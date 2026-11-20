@@ -19,9 +19,16 @@ export function menuTopicIds(card: SecCard, menu: { model?: boolean; spec?: Cano
   return libraryTopicIds(card, menu.spec);
 }
 
+/** The cards under one topic of a Mark Bank menu: in the single model, the cards filed under that heading; otherwise
+ *  the cards of that curriculum topic. Only the menu reads headings: a curriculum id elsewhere (a studied topic, a
+ *  quiz scope) keeps its curriculum meaning, even where a subject's heading list reuses curriculum ids (Russian). */
+export function cardsForMenuTopic(id: string, cards: SecCard[], menu: { model?: boolean; spec?: CanonicalCurriculumSpecification }): SecCard[] {
+  if (menu.model) return cardsForModelHeading(id, cards) ?? [];
+  return cardsForCurriculumNode(id, cards, menu.spec);
+}
+
+/** The cards of one curriculum topic (card.topicId and its library aliases), for modules, quizzes and progress. */
 export function cardsForCurriculumNode(id: string, cards: SecCard[], spec?: CanonicalCurriculumSpecification): SecCard[] {
-  const filed = cardsForModelHeading(id, cards);
-  if (filed) return filed;
   const nodes = new Set(spec ? canonicalNodeIds(spec, id) : [id]);
   return cards.filter(card => nodes.has(card.topicId) || libraryTopicIds(card, spec).some(topicId => nodes.has(topicId)));
 }

@@ -117027,7 +117027,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "rinse (wash) with potassium manganate(VII) (permanganate, KMnO₄, MnO₄ –, solution it is to contain)",
+    "verbatim": "rinse (wash) with potassium manganate(VII) (permanganate, KMnO₄, MnO₄⁻, solution it is to contain)",
     "marks": 3,
     "openList": true,
     "contextNote": ""
@@ -117126,7 +117126,7 @@
   "section": "A",
   "questionRef": "2022 HL Q1(e)(i) — Deferred sitting",
   "questionText": "the concentration of the solution in the volumetric flask in moles per litre of iron(II),",
-  "stem": "Ammonium iron(II) sulfate crystals are used in lawn feed. To analyse the iron(II) content of ammonium iron(II) sulfate crystals, 11.76 g of the crystals were used to make up 250 cm³ of solution. The ammonium iron(II) sulfate crystals were first dissolved in about 30 cm³ of dilute sulfuric acid in a small beaker. This solution was then carefully transferred to a 250 cm³ volumetric flask and the solution was made up to the mark using deionised water. The resulting iron(II) solution was measured in 25.0 cm³ portions into a conical flask, about 15 cm³ of dilute sulfuric acid were added and the mixture was then titrated with a previously standardised 0.020 M solution of potassium manganate(VII) (KMnO₄). The titration reaction is described by the equation: MnO₄ – + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O In the titrations, 25.0 cm³ portions of the iron(II) solution made from the crystals required 30.0 cm³ of the 0.020 M KMnO₄ solution for complete reaction. Calculate",
+  "stem": "Ammonium iron(II) sulfate crystals are used in lawn feed. To analyse the iron(II) content of ammonium iron(II) sulfate crystals, 11.76 g of the crystals were used to make up 250 cm³ of solution. The ammonium iron(II) sulfate crystals were first dissolved in about 30 cm³ of dilute sulfuric acid in a small beaker. This solution was then carefully transferred to a 250 cm³ volumetric flask and the solution was made up to the mark using deionised water. The resulting iron(II) solution was measured in 25.0 cm³ portions into a conical flask, about 15 cm³ of dilute sulfuric acid were added and the mixture was then titrated with a previously standardised 0.020 M solution of potassium manganate(VII) (KMnO₄). The titration reaction is described by the equation: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O In the titrations, 25.0 cm³ portions of the iron(II) solution made from the crystals required 30.0 cm³ of the 0.020 M KMnO₄ solution for complete reaction. Calculate",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -117135,7 +117135,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "30 × 0.02 ÷ 1000 = 0.0006 moles MnO₄ –",
+    "verbatim": "30 × 0.02 ÷ 1000 = 0.0006 moles MnO₄⁻",
     "marks": 3,
     "openList": true,
     "contextNote": "The scheme prints 30 × 0.02 over 1000 as a fraction; ÷ stands for its bar."
@@ -117169,7 +117169,7 @@
   "section": "A",
   "questionRef": "2022 HL Q1(e)(ii) — Deferred sitting",
   "questionText": "the mass of iron(II) in the 11.76 g of crystals used to make up the 250 cm³ of solution,",
-  "stem": "Ammonium iron(II) sulfate crystals are used in lawn feed. To analyse the iron(II) content of ammonium iron(II) sulfate crystals, 11.76 g of the crystals were used to make up 250 cm³ of solution. The ammonium iron(II) sulfate crystals were first dissolved in about 30 cm³ of dilute sulfuric acid in a small beaker. This solution was then carefully transferred to a 250 cm³ volumetric flask and the solution was made up to the mark using deionised water. The resulting iron(II) solution was measured in 25.0 cm³ portions into a conical flask, about 15 cm³ of dilute sulfuric acid were added and the mixture was then titrated with a previously standardised 0.020 M solution of potassium manganate(VII) (KMnO₄). The titration reaction is described by the equation: MnO₄ – + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O In the titrations, 25.0 cm³ portions of the iron(II) solution made from the crystals required 30.0 cm³ of the 0.020 M KMnO₄ solution for complete reaction. Calculate",
+  "stem": "Ammonium iron(II) sulfate crystals are used in lawn feed. To analyse the iron(II) content of ammonium iron(II) sulfate crystals, 11.76 g of the crystals were used to make up 250 cm³ of solution. The ammonium iron(II) sulfate crystals were first dissolved in about 30 cm³ of dilute sulfuric acid in a small beaker. This solution was then carefully transferred to a 250 cm³ volumetric flask and the solution was made up to the mark using deionised water. The resulting iron(II) solution was measured in 25.0 cm³ portions into a conical flask, about 15 cm³ of dilute sulfuric acid were added and the mixture was then titrated with a previously standardised 0.020 M solution of potassium manganate(VII) (KMnO₄). The titration reaction is described by the equation: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O In the titrations, 25.0 cm³ portions of the iron(II) solution made from the crystals required 30.0 cm³ of the 0.020 M KMnO₄ solution for complete reaction. Calculate",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -117204,7 +117204,7 @@
   "section": "A",
   "questionRef": "2022 HL Q1(e)(iii) — Deferred sitting",
   "questionText": "the percentage by mass of iron(II) in the crystals.",
-  "stem": "Ammonium iron(II) sulfate crystals are used in lawn feed. To analyse the iron(II) content of ammonium iron(II) sulfate crystals, 11.76 g of the crystals were used to make up 250 cm³ of solution. The ammonium iron(II) sulfate crystals were first dissolved in about 30 cm³ of dilute sulfuric acid in a small beaker. This solution was then carefully transferred to a 250 cm³ volumetric flask and the solution was made up to the mark using deionised water. The resulting iron(II) solution was measured in 25.0 cm³ portions into a conical flask, about 15 cm³ of dilute sulfuric acid were added and the mixture was then titrated with a previously standardised 0.020 M solution of potassium manganate(VII) (KMnO₄). The titration reaction is described by the equation: MnO₄ – + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O In the titrations, 25.0 cm³ portions of the iron(II) solution made from the crystals required 30.0 cm³ of the 0.020 M KMnO₄ solution for complete reaction. Calculate",
+  "stem": "Ammonium iron(II) sulfate crystals are used in lawn feed. To analyse the iron(II) content of ammonium iron(II) sulfate crystals, 11.76 g of the crystals were used to make up 250 cm³ of solution. The ammonium iron(II) sulfate crystals were first dissolved in about 30 cm³ of dilute sulfuric acid in a small beaker. This solution was then carefully transferred to a 250 cm³ volumetric flask and the solution was made up to the mark using deionised water. The resulting iron(II) solution was measured in 25.0 cm³ portions into a conical flask, about 15 cm³ of dilute sulfuric acid were added and the mixture was then titrated with a previously standardised 0.020 M solution of potassium manganate(VII) (KMnO₄). The titration reaction is described by the equation: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O In the titrations, 25.0 cm³ portions of the iron(II) solution made from the crystals required 30.0 cm³ of the 0.020 M KMnO₄ solution for complete reaction. Calculate",
   "figureKey": "chemistry-2022-HL-deferred-scheme-q1e-iii",
   "tariffModel": {
    "kind": "fixed"
@@ -119992,7 +119992,7 @@
     "verbatim": "C₂H₄ to C₂H₅OH",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices these points [3 × 3]. [Expanded structures acceptable]"
+    "contextNote": "The scheme prices these points [3 × 3]. [Expanded structures acceptable] A misprint in the scheme: in its list of oxidising agents it writes the dichromate ion as \"Cr₂O₇⁻\", with one minus charge. The dichromate ion carries two (Cr₂O₇²⁻), as the potassium dichromate printed beside it, K₂Cr₂O₇, shows."
    },
    {
     "id": "r-2",
@@ -120021,7 +120021,7 @@
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "acidified potassium manganate(VII) / acidified potassium permanganate / H⁺ and MnO₄ – (KMnO₄)/ acidified sodium chromate(VI) / acidified sodium dichromate / H⁺ and Cr₂O₇ – (K₂Cr₂O₇) / alkaline potassium permanganate",
+    "verbatim": "acidified potassium manganate(VII) / acidified potassium permanganate / H⁺ and MnO₄⁻ (KMnO₄)/ acidified sodium chromate(VI) / acidified sodium dichromate / H⁺ and Cr₂O₇⁻ (K₂Cr₂O₇) / alkaline potassium permanganate",
     "marks": 3,
     "openList": true,
     "contextNote": "The scheme prices these points [3 × 3]. [DESCRIBE and IDENTIFY are linked.]"

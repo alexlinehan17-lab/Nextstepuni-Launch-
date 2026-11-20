@@ -1242,6 +1242,36 @@ DEFERRED_SCHEME_REPAIRS = {
     # 2017 Higher scheme holds the same glyph, so it is repaired here, for this scheme, not in SYMBOL_FONT).
     (2023, 'hl'): (('(H\uf064)+', '(Hδ+)'), ('(Cl\uf064)–', '(Clδ–)')),
 }
+# A negative charge the deferred 2022 Higher documents print as a small raised "–" set beside its formula, which the
+# text layer reads as a line of its own a few points higher ("MnO₄" then "– + 5Fe²⁺"): it was joined as a spaced dash,
+# "MnO₄ – + 5Fe²⁺". Each is named by its page and place and looked at in a crop: the paper's equation in Q1(e) (page 2)
+# and the scheme's "MnO₄⁻" in Q1(b) and Q1(e)(i) (page 6) and "MnO₄⁻", "Cr₂O₇⁻" in Q10(a) (page 20). The minus joins
+# the formula it is printed against, as "⁻"; whatever the raised run prints after it stays where it is.
+DEFERRED_RAISED_MINUS = {
+    (2022, 'hl'): {'paper': ((2, 184.1, 456.5),),
+                   'scheme': ((6, 506.4, 144.3), (6, 322.8, 447.4), (20, 530.4, 194.6), (20, 523.5, 210.0))},
+}
+
+
+def attach_raised_minus(lines, places):
+    """The lines with each named raised minus joined to the formula before it (DEFERRED_RAISED_MINUS)."""
+    lines = list(lines)
+    for page, x0, y0 in places:
+        hits = [i for i, l in enumerate(lines)
+                if l.page == page and abs(l.x0 - x0) < 1 and abs(l.y0 - y0) < 1 and l.text.startswith('–')]
+        assert len(hits) == 1, (page, x0, y0, hits)
+        line, before = lines[hits[0]], lines[hits[0] - 1]
+        assert before.page == page and abs(before.y0 - y0) < 4 and before.x0 < x0, (page, x0, y0, before.text)
+        rest = line.text[1:].strip()
+        if not rest or rest[0] in ',.;)':
+            before.text += '⁻' + rest
+            del lines[hits[0]]
+        else:
+            before.text += '⁻'
+            line.text = rest
+    return lines
+
+
 DEFERRED_FOOTER = re.compile(r'^(?=.)(ATAL Chemistry 20\d\d)?\s*(Leaving Certificate Deferred Examination \(M\d+C\))?$')
 # A deferred scheme's part markers printed wrong, each named by its page and place: (page, x0, y0, printed, meant).
 DEFERRED_SCHEME_MARKERS = {
@@ -1277,6 +1307,8 @@ class Printed:
             # page break ("... the mass of the unused reactant. Leaving Certificate Examination").
             self.paper_lines = [l for l in self.paper_lines
                                 if not (l.y0 > 765 and l.text == 'Leaving Certificate Examination')]
+            self.paper_lines = attach_raised_minus(
+                self.paper_lines, DEFERRED_RAISED_MINUS.get(deferred_key, {}).get('paper', ()))
         if (year, lvl) == (2012, 'hl'):
             # 2012 HL paper page 5 sets the state symbol "(l)" of the product Q6(a)(iii) draws in
             # full (2,2,4-trimethylpentane) as a run of its own after the structure's last "H"
@@ -1301,6 +1333,8 @@ class Printed:
             # Deferred Examination (M34C)" (every answer page, x 57, y 782 and 796), sometimes read as one run, which
             # FOOTER does not read: it was filed as answer text.
             self.scheme_lines = [l for l in self.scheme_lines if not (l.y0 > 765 and DEFERRED_FOOTER.match(l.text))]
+            self.scheme_lines = attach_raised_minus(
+                self.scheme_lines, DEFERRED_RAISED_MINUS.get(deferred_key, {}).get('scheme', ()))
             for page, x0, y0, printed, meant in DEFERRED_SCHEME_MARKERS.get(deferred_key, ()):
                 hits = [l for l in self.scheme_lines
                         if l.page == page and abs(l.x0 - x0) < 1.5 and abs(l.y0 - y0) < 1.5]
