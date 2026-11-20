@@ -196,7 +196,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "QUESTION 1",
+          "label": "II. DIO",
           "title": "Reading text — answer in Croatian",
           "pages": [
                 2,
@@ -394,7 +394,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "QUESTION 1",
+          "label": "II. DIO",
           "title": "Reading text — answer in Croatian",
           "pages": [
                 2,
@@ -692,7 +692,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "QUESTION 1",
+          "label": "II. DIO",
           "title": "Reading text — answer in Croatian",
           "pages": [
                 2,
@@ -903,7 +903,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "QUESTION 1",
+          "label": "II. DIO",
           "title": "Reading text — answer in Croatian",
           "pages": [
                 2,
@@ -1201,7 +1201,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "QUESTION 1",
+          "label": "II. DIO",
           "title": "Reading text — answer in Croatian",
           "pages": [
                 2,
@@ -1498,7 +1498,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "QUESTION 1",
+          "label": "II. DIO",
           "title": "Reading text — answer in Croatian",
           "pages": [
                 2,
@@ -1698,7 +1698,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-text",
-          "label": "QUESTION 1",
+          "label": "II. DIO",
           "title": "Reading text — answer in Croatian",
           "pages": [
                 2,

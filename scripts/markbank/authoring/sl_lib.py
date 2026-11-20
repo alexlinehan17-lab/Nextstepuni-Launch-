@@ -713,9 +713,18 @@ def part_head(P, section):
         return P.part_head(section)
     part_pat = re.compile(cfg(P.subject, 'classic_part'), re.I)
     part_map = cfg(P.subject, 'classic_part_map') or {}
+    tail = cfg(P.subject, 'classic_part_tail')
     heads = []
     for line in P.lines:
         pm = part_pat.match(line.text) or part_pat.match(re.sub(r'\s+', '', line.text))
+        if not pm and tail and re.fullmatch(r'(?:I{1,3}|[123])\s*\.?', line.text.strip()):
+            # The numeral set as a cell of its own, "II." + "dio [30 bodova]"
+            # (Croatian 2015-2020): eu_paper's classic_part_tail joins them, as
+            # the census does.
+            nxt = sorted((l for l in P.lines if l.page == line.page and abs(l.y - line.y) < 2 and l.x > line.x),
+                         key=lambda l: l.x)
+            if nxt and re.match(tail, nxt[0].text.strip(), re.I):
+                pm = part_pat.match(f'{line.text.strip()} {nxt[0].text.strip()}')
         if pm:
             token = next(g for g in pm.groups() if g).lower()
             if (part_map.get(token) or eu_paper._part_token(token)) == section:
