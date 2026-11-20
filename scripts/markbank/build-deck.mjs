@@ -852,13 +852,28 @@ function spanishGridFault(c, scheme, schemeCells = '', schemeRanges = '') {
     if (allowed.length !== lower.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label}'s lower scale is not placed on every mark from 0 to ${lower.maxMarks}`;
     const marks = (lower.bands ?? []).flatMap(b => b.marks).sort((a, b) => a - b);
     if ((lower.bands ?? []).length && (marks.length !== allowed.length || marks.some((m, i) => m !== i))) return `${k.label}'s lower bands do not cover 0 to ${lower.maxMarks} once`;
-    if (!lower.contentCriteria?.length || lower.contentCriteria.some(id => id === k.id || !criteria.some(other => other.id === id && !other.lowerScale))) {
+    // At least one trigger: content criteria it counts (each another,
+    // un-lowered criterion of the card), a word count the student switches,
+    // or both. Portuguese 2025-2026 prints the word count alone ("If the
+    // answer is too short (less than 140 words), mark questions 3 and 4 out
+    // of 20 marks (lower scale)"): contentCriteria [] and no threshold.
+    if (!Array.isArray(lower.contentCriteria)) return `${k.label}'s lower scale lists no content criteria`;
+    if (!lower.contentCriteria.length && lower.wordsUnder === undefined) return `${k.label}'s lower scale has no trigger`;
+    if (lower.contentCriteria.some(id => id === k.id || !criteria.some(other => other.id === id && !other.lowerScale))) {
       return `${k.label}'s lower scale counts a criterion the card does not have`;
     }
-    const content = lower.contentCriteria.reduce((sum, id) => sum + criteria.find(other => other.id === id).maxMarks, 0);
-    if (!Number.isInteger(lower.contentAtMost) || lower.contentAtMost < 0 || lower.contentAtMost >= content) return `${k.label}'s lower scale threshold is outside its content's 0 to ${content}`;
+    if (lower.contentCriteria.length) {
+      const content = lower.contentCriteria.reduce((sum, id) => sum + criteria.find(other => other.id === id).maxMarks, 0);
+      if (!Number.isInteger(lower.contentAtMost) || lower.contentAtMost < 0 || lower.contentAtMost >= content) return `${k.label}'s lower scale threshold is outside its content's 0 to ${content}`;
+    } else if (lower.contentAtMost !== undefined) return `${k.label}'s lower scale sets a content threshold but counts no content`;
     if (lower.wordsUnder !== undefined && !(Number.isInteger(lower.wordsUnder) && lower.wordsUnder > 0)) return `${k.label}'s lower scale word count is not a count`;
     if (!String(lower.rule ?? '').trim()) return `${k.label}'s lower scale prints no rule`;
+  }
+  // One "under N words" switch serves the card (frenchShortSwitchId), so
+  // every criterion with a word count states the same count and rule.
+  const worded = criteria.filter(k => k.lowerScale?.wordsUnder !== undefined);
+  if (worded.some(k => k.lowerScale.wordsUnder !== worded[0].lowerScale.wordsUnder || k.lowerScale.rule !== worded[0].lowerScale.rule)) {
+    return 'two word-count rules on one card cannot share its one switch';
   }
   if (!c.schemePages?.length || !c.schemePages.every(p => Number.isInteger(p) && p > 0)) return 'no scheme pages';
   const lifted = [

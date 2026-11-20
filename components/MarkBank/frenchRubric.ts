@@ -51,13 +51,28 @@ export function frenchAllocationMarks(total: number, allocation: FrenchAllocatio
 /** The student's "my answer is under N words" toggle for a lower scale. */
 export const frenchShortId = (criterionId: string): FrenchScoreId => `french:${criterionId}:short`;
 
+/** The one "my answer is under N words" switch a card's lower scales read:
+ *  the short flag of the FIRST criterion carrying a word count. A printed
+ *  word-count rule lowers every criterion it names from one statement
+ *  (Portuguese 2025-2026: "If the answer is too short (less than 140 words),
+ *  mark questions 3 and 4 out of 20 marks (lower scale)" lowers Content and
+ *  Communication and Language together), so one switch serves them all. A
+ *  card with one such criterion (every German card) keeps that criterion's
+ *  own id. */
+export function frenchShortSwitchId(criteria: readonly FrenchCriterion[], criterion: FrenchCriterion): FrenchScoreId {
+  const first = criteria.find(other => other.lowerScale?.wordsUnder !== undefined);
+  return frenchShortId((first ?? criterion).id);
+}
+
 /** Whether a criterion's printed lower scale applies: the content it names
  *  adds up to its threshold or less, or the student says the answer is short.
- *  False for every criterion without one. */
+ *  A scale switched on by the word count alone (no content criteria) applies
+ *  only when the student says so. False for every criterion without one. */
 export function lowerScaleActive(criteria: readonly FrenchCriterion[], criterion: FrenchCriterion, scores: FrenchScores): boolean {
   const lower = criterion.lowerScale;
   if (!lower) return false;
-  if (lower.wordsUnder && scores[frenchShortId(criterion.id)] === 1) return true;
+  if (lower.wordsUnder && scores[frenchShortSwitchId(criteria, criterion)] === 1) return true;
+  if (!lower.contentCriteria.length || lower.contentAtMost === undefined) return false;
   const content = lower.contentCriteria.reduce((sum, id) => {
     const named = criteria.find(other => other.id === id);
     return sum + (named && !named.lowerScale ? frenchCriterionMark(criteria, named, scores) : 0);
