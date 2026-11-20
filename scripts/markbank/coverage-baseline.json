@@ -318,11 +318,11 @@
     "refsHash": "2b0da202e5b95214"
   },
   "estonian": {
-    "cards": 127,
-    "contentHash": "a520ddb87f1b3c40",
+    "cards": 130,
+    "contentHash": "798b7e721e3674ef",
     "coveragePct": 100.0,
-    "covered": 127,
-    "excluded": 45,
+    "covered": 130,
+    "excluded": 42,
     "leaves": 172,
     "open": 0,
     "orphans": 0,
@@ -330,7 +330,7 @@
       "count": 15,
       "hash": "be94459f5763acb6"
     },
-    "refsHash": "5f62ea10d47e8d43"
+    "refsHash": "1d8dd956a4fee266"
   },
   "finnish": {
     "cards": 90,
