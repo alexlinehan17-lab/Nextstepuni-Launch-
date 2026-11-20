@@ -4213,6 +4213,111 @@
   }
  },
  {
+  "id": "dan-2022-hl-i-5",
+  "subjectId": "danish",
+  "level": "higher",
+  "year": 2022,
+  "section": "I",
+  "topicId": "danish-0-1",
+  "conceptId": "kvinder-noget-underlagt-masse-krav-til",
+  "questionRef": "2022 HL Section I Q5",
+  "questionText": "”Kvinder er om noget underlagt en masse krav til deres fremtoning. De skal have makeup på, tjekket hår, lækkert tøj. Høje hæle frem for flade sko. Tynde kjoler frem for tykke bukser. For ikke at tale om plastikoperationer, skønhedsbehandlinger, hårfarvning.” Forklar Maja Lucas’ synspunkt. Vurder, om kvinder er underlagt flere krav end mænd vedrørende deres fremtoning. (begrund dit svar)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Maja Lucas mener, at kvinder er underlagt mange krav til deres fremtoning, hvor de stræber efter perfektion, lige fra daglig makeup til plastikoperationer, hvor man nærmest kan designe sit eget udseende, mens mænd ikke er underlagt samme krav. Førhen var det måske nok for mænd at have en høj indkomst og en god karriere for at opnå status, men i dag er kravet for karrieremændene også at udstråle succes. Mange moderne metroseksuelle mænd går i designertøj, bruger mandemakeup, farver hår, får skønhedsbehandlinger og får foretaget plastikkirurgi for at vise deres succes, og fordi de på samme måde som kvinderne stræber efter perfektion og evig ungdom.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Danish",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Danish 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\""
+  }
+ },
+ {
+  "id": "dan-2022-hl-ii-1",
+  "subjectId": "danish",
+  "level": "higher",
+  "year": 2022,
+  "section": "II",
+  "topicId": "danish-1-1",
+  "conceptId": "skriv-essay-cirka-300-ord-disse",
+  "questionRef": "2022 HL Section II Q1",
+  "questionText": "Skriv et essay på cirka 300 ord om ét af disse to emner, hvor du overvejer argumenter for og imod.\nHvordan ægte venskab skabes\n”At rejse er at leve” ‐ H. C. Andersen.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in DANISH. The paper prints the rule on page 2: \"Alle svar skal skrives på dansk.\" Under the essay the scheme prints only: “Essayet skal være velskrevet, relevant i forhold til hver sit emne, med sammenhængende organisation af tanker, klarhed i dispositionen og rimeligt flydende sprog. Essayet skal indeholde relevante abstrakte og filosofiske refleksioner, rationel argumentation samt en fokuseret konklusion”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "dan-2023-hl-i-1-a",
   "subjectId": "danish",
   "level": "higher",
