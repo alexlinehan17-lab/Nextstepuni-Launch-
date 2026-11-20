@@ -1226,10 +1226,19 @@ PAPER_ALT_LETTERS[(2011, 'hl')] = {('11', 'c')}
 class Printed:
     """One sitting in the printed layout: its paper and its scheme, split into parts."""
 
-    def __init__(self, year, lvl, figures=False):
+    def __init__(self, year, lvl, figures=False, sitting=None):
         self.year, self.lvl = year, lvl
-        self.paper_path = os.path.join(PAPERS, f'{year}-{lvl}-paper.pdf')
-        self.scheme_path = os.path.join(SCHEMES, f'{year}-{lvl}.pdf')
+        # The SEC's deferred sitting (2022 and 2023 Higher): its own paper and scheme, linked beside
+        # June's as <year>-<lvl>-deferred-paper.pdf and schemes/<year>-<lvl>-deferred.pdf (the archive
+        # files both under June's id). None of the sitting-keyed repairs below names it.
+        self.sitting = sitting
+        self.stem = f'{year}-{lvl}-deferred' if sitting == 'deferred' else f'{year}-{lvl}'
+        # chem_print_figures.CROPS keys a deferred sitting's crops (year, '<lvl>-deferred').
+        self.crop_key = (year, f'{lvl}-deferred') if sitting == 'deferred' else (year, lvl)
+        self.paper_path = os.path.join(PAPERS, f'{self.stem}-paper.pdf')
+        self.scheme_path = os.path.join(SCHEMES, f'{self.stem}.pdf')
+        if sitting == 'deferred':
+            year = lvl = None   # no June repair keyed (year, lvl) may touch a deferred document
         # (2013 OL: a head set in one run with its words, split_heads.)
         self.paper_lines = split_heads(read_lines(self.paper_path), year, lvl)
         if (year, lvl) == (2012, 'hl'):
@@ -1423,7 +1432,7 @@ class Printed:
             self.scheme_lines = cue_lines(self.scheme_lines)
         self.sseg, _ = segments(self.scheme_lines, answers=True, alt_letters=alt_letters,
                                 cue=self.cue)
-        self.scheme_md = open(os.path.join(SCHEMES, f'{year}-{lvl}.md')).read()
+        self.scheme_md = open(os.path.join(SCHEMES, f'{self.stem}.md')).read()
         # The gate folds the SEC's ligature glyphs before it compares ("soŌ"
         # is "soft"); so does this guide to it.
         lig = ligatures()
@@ -1441,7 +1450,7 @@ class Printed:
         out of the asks and lead-ins. A part marker or a mark inside a crop
         means the rectangle is wrong, and stops the run."""
         from chem_print_figures import CROPS
-        boxes = [(page, rect) for _n, src, page, rect in CROPS.get((self.year, self.lvl), [])
+        boxes = [(page, rect) for _n, src, page, rect in CROPS.get(self.crop_key, [])
                  if src in ('paper', 'paper-image', 'labels')]
         kept, emptied = [], set()
         for l in lines:
@@ -1467,7 +1476,7 @@ class Printed:
         are the picture's. A mark cell or a part marker inside means the
         rectangle is wrong, and stops the run."""
         from chem_print_figures import CROPS
-        boxes = [(page, rect) for _n, src, page, rect in CROPS.get((self.year, self.lvl), [])
+        boxes = [(page, rect) for _n, src, page, rect in CROPS.get(self.crop_key, [])
                  if src in ('scheme-art', 'scheme-labels')]
         if not boxes:
             return lines
@@ -1642,7 +1651,7 @@ class Printed:
                   " const md = m.comparableScheme(fs.readFileSync(process.argv[2], 'utf8'));"
                   " console.log(m.claimMatches(md, process.argv[3]) ? 'yes' : 'no');")
             url = 'file://' + os.path.join(ROOT, 'scripts', 'markbank', 'schemeText.mjs')
-            md = os.path.join(SCHEMES, f'{self.year}-{self.lvl}.md')
+            md = os.path.join(SCHEMES, f'{self.stem}.md')
             out = subprocess.run(['node', '--input-type=module', '-e', js, url, md, claim],
                                  capture_output=True, text=True, check=True).stdout.strip()
             cache[claim] = out == 'yes'
@@ -1701,7 +1710,7 @@ class Cards:
         self.P = P
         self.cards, self.open = [], []
         self.level = 'higher' if P.lvl == 'hl' else 'ordinary'
-        self.prefix = f'chem-{P.year}-{P.lvl}-'
+        self.prefix = f'chem-{P.year}-{P.lvl}-' + ('deferred-' if getattr(P, 'sitting', None) == 'deferred' else '')
         self._card = make_card('chemistry')
         self._fixes_used = set()
         # Carry a lead-in printed after one letter into the next letter's

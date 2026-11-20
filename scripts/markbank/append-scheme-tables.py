@@ -61,6 +61,16 @@ def pdf_for(subject: str, year: int, level: str) -> Path | None:
     exists to stop.
     """
     d = ROOT / 'examiner-reports' / subject
+    if level.endswith('-deferred'):
+        # A deferred sitting's own scheme, linked as schemes/<year>-<level>-deferred.pdf, and only it:
+        # its cover must say Deferred (the June names above are never read for it).
+        path = d / 'schemes' / f'{year}-{level}.pdf'
+        if not path.exists():
+            return None
+        with pymupdf.open(path) as doc:
+            cover = ' '.join(doc[0].get_text().split())
+        want = 'Ordinary Level' if level.startswith('ol') else 'Higher Level'
+        return path if 'Deferred' in cover and want in cover else None
     # schemes/<year>-<level>.pdf FIRST: that is where fetch-corpus.py puts every
     # scheme, it is explicitly levelled, and the fetcher never pulls a deferred
     # paper. Without it a newly fetched subject silently got no folds at all —

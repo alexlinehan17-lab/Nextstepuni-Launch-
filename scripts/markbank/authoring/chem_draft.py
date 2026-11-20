@@ -127,12 +127,13 @@ def classify(P, keys):
     return 'fixed', ''
 
 
-def draft(year, lvl):
-    P = cp.Printed(year, lvl, figures=True)
+def draft(year, lvl, sitting=None):
+    P = cp.Printed(year, lvl, figures=True, sitting=sitting)
     C = cp.Cards(P)
     pl = leaves(P.pseg)
-    prefix = f'chem-{year}-{lvl}-'
-    prior = {i: c for i, c in cp.prior_deck().items() if i.startswith(prefix)}
+    prefix = C.prefix
+    # (A deferred sitting has no pre-audit cards: every card is new.)
+    prior = {i: c for i, c in cp.prior_deck().items() if i.startswith(prefix)} if not sitting else {}
     import chem_apply_print
     shipped = chem_apply_print.base_built_ids()
 
@@ -255,4 +256,4 @@ def _q(x):
 
 
 if __name__ == '__main__':
-    print(draft(int(sys.argv[1]), sys.argv[2]))
+    print(draft(int(sys.argv[1]), sys.argv[2], 'deferred' if '--deferred' in sys.argv[3:] else None))
