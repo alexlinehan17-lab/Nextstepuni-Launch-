@@ -22,7 +22,7 @@ import {
 import { PAPER_TRAIL_INDEX } from '../../paperTrailData';
 import { physicalEducationTask, withPhysicalEducationAtlasTasks } from './physicalEducationTasks';
 import { isDeferredFileid } from './sitting';
-import { atlasHeadingGroups, atlasHeadings, atlasModelVersion, isModelSubject, modelTopicsForQuestion } from './atlasModel';
+import { atlasHeadingGroups, atlasHeadings, atlasModelVersion, isModelSubject, modelHeadingLabel, modelTopicsForQuestion } from './atlasModel';
 
 /** Normalise a paper label to a stable slot so P1 and P2 topic pools stay
  *  separate in the frequency counts. */
@@ -61,7 +61,7 @@ export const logicalQuestionIdentity = (question: Pick<
   question.n,
 ].join('|');
 
-export const topicLabel = (id: string): string => examTopicLabel(id) ?? TOPIC_LABELS[id] ?? id;
+export const topicLabel = (id: string): string => examTopicLabel(id) ?? TOPIC_LABELS[id] ?? modelHeadingLabel(id) ?? id;
 
 const canonicalTopicIds = (q: QuestionTopicTag): string[] =>
   [q.primary, q.secondary].filter((id): id is string => Boolean(id));
@@ -536,7 +536,8 @@ export function strandsFor(subjectId: string, taggedIds: string[]): AtlasStrand[
     }
   }
   const subj = CURRICULUM.find(c => c.id === subjectId);
-  for (const strand of examTaxonomy ? [] : (subj?.strands ?? [])) {
+  // A subject in the single model shows only its one list (its groups above), never the outline's strands as well.
+  for (const strand of modelGroups || examTaxonomy ? [] : (subj?.strands ?? [])) {
     const ids = strand.subtopics.map(t => t.id).filter(id => tagged.has(id));
     if (!ids.length) continue;
     out.push({ id: strand.id, name: strand.name, subtopicIds: ids });
