@@ -259,11 +259,22 @@ class PaperPontos:
     """A part's price as the PAPER prints it, on the line that opens with
     `opening` on `page` ("(30 pontos)" under "Parte II"), where the scheme
     prints none (2012, 2013, 2015, 2018)."""
-    def __init__(self, page, opening):
-        self.page, self.opening = page, opening
+    def __init__(self, page, opening, under=None):
+        self.page, self.opening, self.under = page, opening, under
+
+    def _line(self, doc):
+        if self.under is None:
+            return PL(self.page, self.opening).text(doc)
+        # The line printed directly under a heading ("Parte II"), where the
+        # page prints the same price more than once (2015 p4).
+        lines = [t for p, t in doc['paper'] if p == self.page]
+        at = [i for i, t in enumerate(lines) if t.strip() == self.under]
+        if len(at) != 1 or at[0] + 1 >= len(lines) or not lines[at[0] + 1].startswith(self.opening):
+            raise ValueError(f'paper p{self.page}: no {self.opening!r} under one {self.under!r}')
+        return lines[at[0] + 1]
 
     def read(self, doc):
-        t = PL(self.page, self.opening).text(doc)
+        t = self._line(doc)
         m = re.search(r'\((\d{1,3})\s*pontos\)', t)
         if not m:
             raise ValueError(f'paper p{self.page}: {t!r} prints no "(N pontos)"')
@@ -1215,6 +1226,43 @@ READING[(2019, 'hl')] = [
 
 
 _CHOICE_P4 = (PL(4, 'Das duas propostas'), PL(4, '(Comente a citação'))
+_JOINED_LATER = ('The scheme of this sitting reprints no question, so the two documents are joined on the '
+                 'numbering they both print, which the census checks question by question.')
+from pl_listen_lib import Join   # noqa: E402
+# 2017 and 2016 print Q1's five answers on one run, as 2018: each part is cut
+# to its own answer at the paper's "(5 x 1 ponto)". 2017 prints no price on
+# Q2-Q6 (held for the unpriced-section shape); 2016 prints "(5)" on each.
+_Q1_2017 = PaperEach(3, '(5 x 1 ponto)', 1)
+_LEAD_2017 = PLc(3, '1. Explique por palavras suas', after='1. ')
+_Q1_2016 = PaperEach(3, '(5 × 1 ponto)', 1)
+_LEAD_2016 = PLc(3, '1. Explique por palavras suas', after='1. ')
+_I1_2017 = [
+    C('I1a', [one(S(50, after='a) ', before=' b)'), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'a) alcofa', after='a) ')), stem=()),
+    C('I1b', [one(S(50, after='b) ', before=' c)'), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'b) trazia', after='b) ')), stem=()),
+    # "c)" closes line 50; its answer opens line 51.
+    C('I1c', [one(S(51, before=' d)'), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'c) ameigavam', after='c) ')), stem=()),
+    C('I1d', [one(S(51, after='d) ', before=' e)'), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'd) desbotada', after='d) ')), stem=()),
+    C('I1e', [one(J(S(51, after='e) '), S(52)), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'e) moldaram', after='e) ')), stem=()),
+]
+_I1_2016 = [
+    C('I1a', [one(S(50, after='a) ', before=' b)'), _Q1_2016)], total=_Q1_2016, note=_JOINED_LATER,
+      question=(_LEAD_2016, PLc(3, 'a) sítio', after='a) ')), stem=()),
+    # "livro-" closes line 50 and "leitor" opens 51: the compound is joined
+    # as printed, with no space.
+    C('I1b', [one(Join(S(50, after='b) '), S(51, before=' c)'), sep=''), _Q1_2016)], total=_Q1_2016,
+      note=_JOINED_LATER, question=(_LEAD_2016, PLc(3, 'b) o livro', after='b) ')), stem=()),
+    C('I1c', [one(J(S(51, after='c) '), S(52, before=' d)')), _Q1_2016)], total=_Q1_2016, note=_JOINED_LATER,
+      question=(_LEAD_2016, PLc(3, 'c) fluxo', after='c) ')), stem=()),
+    C('I1d', [one(S(52, after='d) ', before=' e)'), _Q1_2016)], total=_Q1_2016, note=_JOINED_LATER,
+      question=(_LEAD_2016, PLc(3, 'd) passatempo', after='d) ')), stem=()),
+    C('I1e', [one(J(S(52, after='e) '), S(53)), _Q1_2016)], total=_Q1_2016, note=_JOINED_LATER,
+      question=(_LEAD_2016, PLc(3, 'e) tirar', after='e) ')), stem=()),
+]
 # 2018 prints Q1's five answers on one run ("1. a) coisas sem importância; b)
 # ambiente ..."), which the shared generator carded whole on Q1(a): each part
 # is cut to its own answer here, at the paper's "(5 x 1 ponto)".
@@ -1247,7 +1295,7 @@ READING[(2018, 'hl')] = [
       question=(PL(4, 'Proposta 2'), PL(4, 'O hábito não faz'), PL(4, 'Em que medida'),
                 PL(4, 'argumentos a favor'), PL(4, 'palavras.')), stem=_CHOICE_P4, source=False),
 ]
-READING[(2017, 'hl')] = [
+READING[(2017, 'hl')] = _I1_2017 + [
     C('II1', [shown(SchemeSpan(84, 86), lead=S(83))], total=Pontos(82), whole=True,
       question=(PL(4, 'Faça um comentário sobre a frase'), PL(4, '“A parte do mundo')), stem=()),
     # Tema 1's answer is the scheme's guidance for the task, shown as printed.
@@ -1258,7 +1306,7 @@ READING[(2017, 'hl')] = [
       question=(PL(4, 'Proposta 2'), PL(4, '“A minha opinião'), PL(4, 'Comente a frase no contexto')),
       stem=_CHOICE_P4, source=False),
 ]
-READING[(2016, 'hl')] = [
+READING[(2016, 'hl')] = _I1_2016 + [
     C('II1', [shown(SchemeSpan(71, 80), lead=S(70))], total=Pontos(69), whole=True,
       question=(PL(4, 'Faça um comentário sobre a frase'), PL(4, 'Os bons livros'), PL(4, 'suja basta virar'),
                 PL(4, 'tem princípio nem fim')), stem=()),
@@ -1391,6 +1439,25 @@ READING[(2011, 'hl')] = [
       total=Pontos(65),
       question=(PL(4, 'Proposta 2'), PL(4, '“A maior parte'), PL(4, 'Abraham Lincoln')),
       stem=_CHOICE_P4, source=False),
+]
+
+
+# 2015 prints no price on any Part I question (only "Parte I (30 pontos)"):
+# its 15 Part I asks are held for the unpriced-section shape. Parts II and III
+# are priced by the paper (the scheme prints "(30 pontos / Total: 100)" and
+# "(40 points / Total: 100)").
+_CHOICE_2015 = (PL(4, 'Das duas propostas'), PL(4, 'Comente a frase em cerca de 300'))
+READING[(2015, 'hl')] = [
+    C('II1', [shown(SchemeSpan(74, 89), lead=S(72))], total=PaperPontos(4, '(30 pontos)', under='Parte II'),
+      whole=True,
+      question=(PL(4, '“Se a literatura não fosse'), PL(4, 'deserto, (...)'), PL(4, 'nas Arabian Sands'),
+                PL(4, 'Faça um comentário sobre a frase')), stem=()),
+    C('III1', [shown(SchemeSpan(93, 97), lead=S(92))], total=PaperPontos(4, '(40 pontos)', under='Parte III'),
+      whole=True, question=(PL(4, 'Proposta 1'), PL(4, 'A importância dos livros')),
+      stem=_CHOICE_2015, source=False),
+    C('III2', [shown(SchemeSpan(99, 104), lead=S(98))], total=PaperPontos(4, '(40 pontos)', under='Parte III'),
+      whole=True, question=(PL(4, 'Proposta 2'), PL(4, '“Aquele que se contenta')),
+      stem=_CHOICE_2015, source=False),
 ]
 
 

@@ -1517,6 +1517,298 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2016 Higher Level — © State Examinations Commission.",
+    id: "por-2016-hl-i-1-a", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-sitio-inabitavel",
+    section: "I", questionRef: "2016 HL Section I Q1(a)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. sítio inabitável (§ 1);",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lugar impróprio para o ser humano habitar, desconfortável, um caos;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2016 Higher Level — © State Examinations Commission.",
+    id: "por-2016-hl-i-1-b", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-livro-escuta",
+    section: "I", questionRef: "2016 HL Section I Q1(b)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. o livro escuta (§ 5);",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "na relação livro-leitor é este que conversa e o livro é o seu confidente, por isso escuta;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2016 Higher Level — © State Examinations Commission.",
+    id: "por-2016-hl-i-1-c", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-fluxo-refluxo",
+    section: "I", questionRef: "2016 HL Section I Q1(c)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. fluxo e refluxo das emoções partilhadas (§ 5);",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "vai-vém de sentimentos trocados reciprocamente;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2016 Higher Level — © State Examinations Commission.",
+    id: "por-2016-hl-i-1-d", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-passatempo-inocuo",
+    section: "I", questionRef: "2016 HL Section I Q1(d)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. passatempo inócuo (§ 5);",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ocupação do tempo sem consequências;", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2016 Higher Level — © State Examinations Commission.",
+    id: "por-2016-hl-i-1-e", topicId: "portuguese-2-0", conceptId: "palavras-sentido-seguintes-expressoes-tirar-seu",
+    section: "I", questionRef: "2016 HL Section I Q1(e)",
+    questionText: "Explique por palavras suas, o sentido das seguintes expressões. tirar o seu alimento do efémero (§ 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "alimentam-se, ganham dinheiro com o que é popular mas depressa perde o interesse.", marks: 1, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2016 Higher Level — © State Examinations Commission.",
+    id: "por-2016-hl-i-2", topicId: "portuguese-2-0", conceptId: "cronista-funcao-leitor",
+    section: "I", questionRef: "2016 HL Section I Q2",
+    questionText: "Segundo o cronista, qual a função do leitor?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ao leitor cabe a função de saber conversar com o livro; conseguir nadar ao lado do escritor e regressar a terra de mãos cheias.", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2016 Higher Level — © State Examinations Commission.",
+    id: "por-2016-hl-i-3", topicId: "portuguese-2-0", conceptId: "atitude-cronista-diante-jornalismo",
+    section: "I", questionRef: "2016 HL Section I Q3",
+    questionText: "Qual a atitude do cronista diante do jornalismo?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Para o cronista, o jornalismo não é arte; o jornalismo dá-nos a conhecer coisas que são menos interessantes amanhã do que hoje; é efémero e circunstancial.", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2016 Higher Level — © State Examinations Commission.",
+    id: "por-2016-hl-i-4", topicId: "portuguese-2-0", conceptId: "influencia-pode-ter-editor-nos-habitos",
+    section: "I", questionRef: "2016 HL Section I Q4",
+    questionText: "De acordo com o texto, que influência pode ter um editor nos hábitos de leitura do público?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Não deve ser a cultura a descer ao povo, mas antes o povo a subir/aceder à cultura; assim é o trabalho do editor, cuidando, escolhendo e editando os livros que, provocando a emoção da leitura, permitem o enriquecimento cultural de quem os lê.", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2016 Higher Level — © State Examinations Commission.",
+    id: "por-2016-hl-i-5", topicId: "portuguese-2-0", conceptId: "reaccao-autor-face-argumento-temos-pessoas",
+    section: "I", questionRef: "2016 HL Section I Q5",
+    questionText: "Explique a reacção do autor face ao argumento de que “temos de pôr as pessoas a ler” e relacione-a com a convicção de que “não devia haver cursos de escrita criativa mas de leitura criativa”.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "O autor reage negativamente ao argumento da necessidade de pôr as pessoas a ler, porque não basta ler qualquer coisa. Se existem cursos de escrita criativa e o autor considera que ler é mais difícil do que escrever, então os cursos deveriam ser de leitura criativa.", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2016 Higher Level — © State Examinations Commission.",
+    id: "por-2016-hl-i-6", topicId: "portuguese-2-0", conceptId: "discuta-sentido-primeira-frase-cabeca-escritor",
+    section: "I", questionRef: "2016 HL Section I Q6",
+    questionText: "Explique e discuta o sentido da primeira frase do texto: “A cabeça de um escritor é um sítio inabitável, cheio de sombras negras que se devoram umas às outras, remorsos, fantasmas, dores, insignificâncias em que não reparamos e ele repara, sensações, luzes, criaturas sem nexo.”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "O autor do texto, sendo também escritor, descreve-se a si próprio. A cabeça de um escritor é como um sótão onde podemos encontrar todas as relíquias amontoadas, guardadas sem organização, do passado de alguém: experiências de vida, emoções, sentimentos recalcados. Os que conseguem lá entrar e descobrir algo de novo, ou conseguem perceber a organização daquele caos, são os bons leitores.", marks: 5, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2016 Higher Level — © State Examinations Commission.",
+    id: "por-2016-hl-ii-1", topicId: "portuguese-2-2", conceptId: "faca-comentario-frase-cerca-100-palavras",
+    section: "II", questionRef: "2016 HL Section II Q1",
+    questionText: "Faça um comentário sobre a frase do texto, em cerca de 100 palavras. Os bons livros são para pingar eternidade fora: o Mondego começa gota a gota; a água suja basta virar o balde e encharca-nos. A água do balde acaba logo. O Mondego não tem princípio nem fim.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "O autor utiliza neste parágrafo duas belas metáforas. Como a água da chuva que eternamente pinga e só ao fim de muito pingar o depósito fica cheio, assim são os bons livros: vendem-se pouco, lêem-se pouco, mas vendem-se e lêem-se eternamente. Na segunda parte da frase, além de reforçar a metáfora da longevidade do bom livro, estabelece uma relação entre a água suja do balde que nos encharca e logo finda com a nascente de um rio mítico na literatura portuguesa: o Mondego. Gota a gota vai nascendo, lentamente vai correndo, mas não finda; a foz é o fim de um novo princípio.", marks: null, contextNote: "For “(Comentário pessoal, correcto e fluente em cerca de 100 palavras.)”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Portuguese",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Portuguese 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2016 Higher Level — © State Examinations Commission.",
+    id: "por-2016-hl-iii-1", topicId: "portuguese-2-2", conceptId: "proposta-lingua-lugar-onde-mundo-tracam",
+    section: "III", questionRef: "2016 HL Section III Q1",
+    stem: "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)",
+    questionText: "Proposta 1 Uma língua é o lugar de onde se vê o mundo e em que se traçam os limites do nosso pensar e sentir. Da minha língua vê-se o mar. Da minha língua ouve-se o seu rumor, como da de outros se ouvirá o da floresta ou o silêncio do deserto. Por isso a voz do mar foi a da nossa inquietação. Vergílio Ferreira",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No comentário a esta frase, pede-se ao aluno que, partindo da ideia ali presente, assuma uma perspectiva pessoal e crítica sobre a importância da cultura, do modo de pensar e sentir e da própria geografia do país na construção da língua e da literatura de um povo; porque é com a língua, sistema de construção de uma literatura, que perspectivamos o mundo, limitamos o nosso pensamento e expressamos sentimentos.", marks: null, contextNote: "For “Tema 1”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2016 Higher Level — © State Examinations Commission.",
+    id: "por-2016-hl-iii-2", topicId: "portuguese-2-2", conceptId: "proposta-mundo-pode-ser-lugar-bastante",
+    section: "III", questionRef: "2016 HL Section III Q2",
+    stem: "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)",
+    questionText: "Proposta 2 O mundo pode ser um lugar bastante mau se não trabalharmos em comum para o fazermos mais igual, mais democrático e mais sustentável. Fintan O’Toole, The Irish Times, 22.2.2016",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A frase reforça de forma simples, certeira e actual, um conceito clássico que os romanos definiam na máxima e pluribus unum. Confrontados com as dificuldades dos dias de hoje, a ausência de solidariedade, o esvaziamento dos valores democráticos pelos poderes ocultos, o uso e abuso das potencialidades do planeta, farão deste mundo um sítio inabitável. Pede-se ao aluno que comente criticamente a frase referindo os diferentes aspectos que a própria sugere, se o ser humano não cumprir o objectivo de trabalhar em comum: igualdade entre os cidadãos; defesa dos valores democráticos e sustentabilidade do planeta.", marks: null, contextNote: "For “Tema 2”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC018ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2018 Higher Level — © State Examinations Commission.",
