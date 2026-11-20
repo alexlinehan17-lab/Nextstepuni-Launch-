@@ -1131,8 +1131,14 @@ function repairText(text) {
   }
   if (!BROKEN.test(out)) return out;
   BROKEN.lastIndex = 0;
-  return [...out].map(ch => GLYPHS[ch] ?? ch).join('');
+  // A deck written in Cyrillic keeps its own letters: glyphmap.json maps "Ф"
+  // to the Greek "Φ" for decks whose fonts set a physics phi as U+0424, which
+  // turned Bulgarian "Фейсбук" into "Φейсбук" (small-languages review, 20 Nov).
+  const own = CYRILLIC_DECKS.has(SUBJECT_ID) ? /[\u0400-\u04FF]/ : null;
+  return [...out].map(ch => (own && own.test(ch) ? ch : (GLYPHS[ch] ?? ch))).join('');
 }
+/** Decks whose language is written in Cyrillic: a Cyrillic letter in them is real. */
+const CYRILLIC_DECKS = new Set(['bulgarian', 'ukrainian', 'russian']);
 
 /* Every string on the card, not a list of the fields that were mangled the
  * last time someone looked. Naming them missed contextNote, which is where the
