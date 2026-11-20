@@ -3563,6 +3563,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2024 Higher Level — © State Examinations Commission.",
+    id: "bul-2024-hl-ii-1", topicId: "bulgarian-1-0", conceptId: "100-150",
+    section: "II", questionRef: "2024 HL Section II Q1",
+    questionText: "Мислите ли, че подобно на фотографията в миналото, ИИ може да се използва като инструмент в сътворяването на истинско изкуство? (100‐150 думи)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Лична интерпретация, ясни и непротиворечиви идеи.", marks: 30, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" The scheme prints: “При оценяването на отговорите от първите две части се прилагат следните критерии:”. The scheme prints, as examples, not a checklist: “Примерът с фотографията е много удачен – действително в първия момент, при появата на ново техническо средство, хората съзират заплаха в него, но по‐късно, усвоявайки изобретението, разбират предимствата му. ИИ може да бъде използвана за техническа реализация на различни артистични проекти, която обикновено изисква много време и средства. ИИ може да спести време във всяко изкуство – в изобразителното, в киното, музиката, литературата и архитектурата. Вече сме свидетели на множество произведения, създадени с помощта на ИИ. Все пак, творческият момент принадлежи на човека – автор на произведението, който трябва да знае как да постави въпроса на машината и творчески да преобрази отговора й, а не да остави творбата си изцяло „в ръцете” на ИИ. В този смисъл, въпросът за авторското право не е само формален, той е и творчески.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Яснота и точност на израза – кандидатът разбира добре въпросите и знае как да отговори ясно и точно – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Свързаност и непротиворечивост на отговорите – кандидатът използва откъси от текста, които са адекватни на мисълта му, идеите му са непротиворечиви – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Езикова компетентност – кандидатът умее свободно да изразява идеите си, езикът на изказването му е ясен и точен – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Конвенционални умения – кандидатът владее и прилага граматичната норма и правописа на съвременния български книжовен език – 10%.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ВТОРА ЧАСТ",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2024 Higher Level — © State Examinations Commission.",
+    id: "bul-2024-hl-iii-1", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2024 HL Section III Q1",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: „Техническият прогрес трябва да ни изглежда като въпрос, поставен от науката на съзнанието.” (Гюстав Тибон)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under Part III the scheme reprints the instruction and the two titles and prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Its criteria are printed for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2024 Higher Level — © State Examinations Commission.",
+    id: "bul-2024-hl-iii-2", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2024 HL Section III Q2",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: „Най‐безнадеждното нещо е да убеждаваш хората в нещо. Всеки трябва да стига до своята истина сам, за да повярва в нея.\" (Павел Вежинов)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under Part III the scheme reprints the instruction and the two titles and prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Its criteria are printed for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC559ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2025 Higher Level — © State Examinations Commission.",
