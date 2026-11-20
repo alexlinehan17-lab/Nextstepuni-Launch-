@@ -239,6 +239,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2011 Higher Level examination paper — © State Examinations Commission.",
@@ -262,6 +263,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2011 Higher Level examination paper — © State Examinations Commission.",
@@ -285,6 +287,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2011 Higher Level examination paper — © State Examinations Commission.",
@@ -308,6 +311,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2011 Higher Level examination paper — © State Examinations Commission.",
@@ -331,6 +335,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2011 Higher Level examination paper — © State Examinations Commission.",
@@ -1077,6 +1082,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2016 Higher Level examination paper — © State Examinations Commission.",
@@ -1100,6 +1106,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2016 Higher Level examination paper — © State Examinations Commission.",
@@ -1123,6 +1130,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2016 Higher Level examination paper — © State Examinations Commission.",
@@ -1146,6 +1154,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2016 Higher Level examination paper — © State Examinations Commission.",
@@ -1169,6 +1178,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2016 Higher Level examination paper — © State Examinations Commission.",
@@ -1192,6 +1202,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2016 Higher Level examination paper — © State Examinations Commission.",
@@ -1215,6 +1226,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2016 Higher Level examination paper — © State Examinations Commission.",
@@ -1238,6 +1250,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2016 Higher Level examination paper — © State Examinations Commission.",
@@ -1261,6 +1274,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2016 Higher Level examination paper — © State Examinations Commission.",
@@ -1284,6 +1298,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2016 Higher Level examination paper — © State Examinations Commission.",
@@ -1357,6 +1372,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1380,6 +1396,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1403,6 +1420,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1426,6 +1444,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1449,6 +1468,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1472,6 +1492,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1495,6 +1516,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1518,6 +1540,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1541,6 +1564,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1564,6 +1588,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2017 Higher Level examination paper — © State Examinations Commission.",
@@ -1637,7 +1662,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 1: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -1660,7 +1686,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 1: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -1683,7 +1710,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 1: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -1706,7 +1734,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 1: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -1729,7 +1758,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 1: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -1752,7 +1782,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 1: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -1775,7 +1806,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 1: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -1798,7 +1830,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 1: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -1821,7 +1854,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 1: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -1844,7 +1878,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2018 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 1: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -1917,7 +1952,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -1940,7 +1976,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -1963,7 +2000,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -1986,7 +2024,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -2009,7 +2048,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -2032,7 +2072,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -2055,7 +2096,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -2078,7 +2120,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -2101,7 +2144,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -2124,7 +2168,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2019 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -2197,6 +2242,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -2220,6 +2266,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -2243,6 +2290,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -2266,6 +2314,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -2289,6 +2338,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -2312,6 +2362,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -2335,6 +2386,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -2358,6 +2410,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -2381,6 +2434,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 5",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -2404,6 +2458,7 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 6",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
+                2,
                 3
           ],
           "attribution": "SEC Bulgarian 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -2750,8 +2805,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
@@ -2775,8 +2829,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
@@ -2800,8 +2853,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
@@ -2825,8 +2877,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
@@ -2850,8 +2901,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
@@ -2875,8 +2925,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
@@ -2900,8 +2949,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
@@ -2925,8 +2973,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български.\""
@@ -3030,8 +3077,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3055,8 +3101,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3080,8 +3125,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3105,8 +3149,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3130,8 +3173,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3155,8 +3197,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3180,8 +3221,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3205,8 +3245,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3230,8 +3269,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3329,8 +3367,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3354,8 +3391,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3379,8 +3415,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3404,8 +3439,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3429,8 +3463,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3454,8 +3487,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3479,8 +3511,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3504,8 +3535,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3529,8 +3559,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3554,8 +3583,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3629,8 +3657,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2025 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3654,8 +3681,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2025 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3679,8 +3705,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2025 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3704,8 +3729,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2025 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3729,8 +3753,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2025 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3754,8 +3777,7 @@ export const CARDS: SecCard[] = [
           "title": "Reading text — answer in Bulgarian",
           "pages": [
                 2,
-                3,
-                4
+                3
           ],
           "attribution": "SEC Bulgarian 2025 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3924,7 +3946,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2026 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3947,7 +3970,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2026 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3970,7 +3994,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2026 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -3993,7 +4018,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2026 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -4016,7 +4042,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 1",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2026 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -4039,7 +4066,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 2",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2026 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -4062,7 +4090,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 3",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2026 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
@@ -4085,7 +4114,8 @@ export const CARDS: SecCard[] = [
           "label": "QUESTION 4",
           "title": "Reading text — answer in Bulgarian",
           "pages": [
-                4
+                2,
+                3
           ],
           "attribution": "SEC Bulgarian 2026 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
