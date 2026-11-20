@@ -5658,6 +5658,30 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "higher",
     paperFileid: "LC550ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Higher Level — © State Examinations Commission.",
+    id: "lt-2026-hl-a-2-a", topicId: "lithuanian-2-1", conceptId: "kas-justinas-jarutis-dvi",
+    section: "U2", questionRef: "2026 HL Section A Q2(a)",
+    stem: "Antra užduotis",
+    questionText: "Kas yra Justinas Jarutis? Parašykite dvi detales. (1 dalis)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Dainininkas","Aktorius","Kompozitorius","„Lietuvos balso“ mokytojas","Grupės „Freaks On Floor“ vienas iš įkūrėjų","Gitaristas"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ANTRA UŽDUOTIS",
+          "title": "Reading text — answer in Lithuanian",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Lithuanian 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC550ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2026 Higher Level — © State Examinations Commission.",
     id: "lt-2026-hl-a-2-b", topicId: "lithuanian-2-1", conceptId: "kur-vyks-rugsejo-dienos-koncertas",
     section: "U2", questionRef: "2026 HL Section A Q2(b)",
     stem: "Antra užduotis",

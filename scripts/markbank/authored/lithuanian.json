@@ -18245,6 +18245,54 @@
   }
  },
  {
+  "id": "lt-2026-hl-a-2-a",
+  "subjectId": "lithuanian",
+  "level": "higher",
+  "year": 2026,
+  "section": "U2",
+  "topicId": "lithuanian-2-1",
+  "conceptId": "kas-justinas-jarutis-dvi",
+  "questionRef": "2026 HL Section A Q2(a)",
+  "questionText": "Kas yra Justinas Jarutis? Parašykite dvi detales. (1 dalis)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Dainininkas",
+      "Aktorius",
+      "Kompozitorius",
+      "„Lietuvos balso“ mokytojas",
+      "Grupės „Freaks On Floor“ vienas iš įkūrėjų",
+      "Gitaristas"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 marks (2 x 2)'; the paper prints this ask on page 8 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "stem": "Antra užduotis",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "ANTRA UŽDUOTIS",
+   "title": "Reading text — answer in Lithuanian",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Lithuanian 2026 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Lithuanian and it is answered in LITHUANIAN. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
   "id": "lt-2026-hl-a-2-b",
   "subjectId": "lithuanian",
   "level": "higher",

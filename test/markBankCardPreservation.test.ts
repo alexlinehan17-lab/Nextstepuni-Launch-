@@ -1561,7 +1561,7 @@ const portugueseAddedTotal = [...Object.values(PORTUGUESE_ADDED), ...Object.valu
  * Listening Comprehension Test (sections LA-LE, CARD-STANDARD 10g), and then
  * the asks the shared generator refused, each named. */
 const LITHUANIAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
-  2026: { higher: 31, ordinary: 40 },
+  2026: { higher: 32, ordinary: 40 },
   2025: { higher: 28, ordinary: 30 },
   2024: { higher: 0, ordinary: 27 },
   2023: { higher: 25, ordinary: 25 },
@@ -1571,6 +1571,7 @@ const LITHUANIAN_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: num
  * name, since their ids share the live cards' form. */
 const LITHUANIAN_ADDED_TO_FROZEN_ID = /^lt-202[2-6]-(?:hl|ol)-(?:l[a-e]-|b-)/;
 const LITHUANIAN_ADDED_TO_FROZEN_READING = new Set<string>([
+  'lt-2026-hl-a-2-a',
   'lt-2026-ol-a-1-e-ii',
   'lt-2026-ol-a-1-e-iii',
   'lt-2026-ol-a-1-e-iv',
