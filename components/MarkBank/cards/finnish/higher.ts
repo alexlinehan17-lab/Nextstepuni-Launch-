@@ -3769,4 +3769,54 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\""
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2025 Higher Level — © State Examinations Commission.",
+    id: "fin-2025-hl-ii-1", topicId: "finnish-1-0", conceptId: "luontoa-pitaisi-tarjota-hoitona-terveydenhuollossa-niin",
+    section: "II", questionRef: "2025 HL Section II Q1",
+    questionText: "“Luontoa pitäisi tarjota hoitona terveydenhuollossa niin vastaanottokäynneillä kuin erilaisissa digitaalisissa hoitopoluissa.” Kirjoita noin 100–150 sanaa kommentti artikkelin esittämään ajatukseen.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Miten Suomen talvessa onnistuu luonnossa annettava synnytysvalmennus tai uniapnean ryhmävastaanotto? Lisäksi syksyisin ja talvisin Suomessa on varsin pimeää ulkona. Tulisiko sen vuoksi lisätä keinovaloja luontoon, jotta terveyspalvelut onnistuisivat? Suomi on harvaan asuttu ja välimatkat ovat pitkiä. Miten järjestetään turvallisia luontopolkuja haja-asutusalueille?", marks: null, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\" The scheme restates the task as: “Kirjoita noin 100–150 sanan kommentti artikkelin esittämään ajatukseen, jonka mukaan Suomessa tulisi olla kansallinen luontoterveysohjelma, jonka avulla luontoa tarjottaisiin hoitokeinona “niin vastaanottokäynneillä kuin erilaisissa digitaalisessa hoitopoluissa”.”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II TEHTÄVÄ",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2025 Higher Level — © State Examinations Commission.",
+    id: "fin-2025-hl-iii-1", topicId: "finnish-1-1", conceptId: "mennaan-metsaan-sanoo-suomalainen-pohdi-metsan",
+    section: "III", questionRef: "2025 HL Section III Q1",
+    questionText: "Kirjoita vähintään 300 sanan pituinen essee. Valitse aiheeksi toinen näistä. “Mennään metsään”, sanoo suomalainen. Pohdi metsän merkitystä suomalaisille.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\" The scheme prints nothing under the two titles. It reprints the instruction as: “Kirjoita noin 300 sanan essee. Valitse aiheeksi toinen näistä.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2025 Higher Level — © State Examinations Commission.",
+    id: "fin-2025-hl-iii-2", topicId: "finnish-1-1", conceptId: "ellemme-varmuudella-tieda-kuinka-tulee-kaymaan",
+    section: "III", questionRef: "2025 HL Section III Q2",
+    questionText: "Kirjoita vähintään 300 sanan pituinen essee. Valitse aiheeksi toinen näistä. ”Ellemme varmuudella tiedä, kuinka tulee käymään, olettakaamme, että kaikki käy hyvin”, on presidentti Mauno Koiviston (1923–2017) tunnettu sitaatti. Pohdi asenteen merkitystä nykymaailmassa.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Vastaa kaikkiin tehtäviin suomeksi.\" The scheme prints nothing under the two titles. It reprints the instruction as: “Kirjoita noin 300 sanan essee. Valitse aiheeksi toinen näistä.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
 ];
