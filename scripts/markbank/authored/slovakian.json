@@ -7158,6 +7158,92 @@
   }
  },
  {
+  "id": "slk-2022-hl-ii-1",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2022,
+  "section": "II",
+  "topicId": "slovakian-1-1",
+  "conceptId": "tema-dobe-dostupnych-lacnych-veci-stavaju",
+  "questionRef": "2022 HL Section II Q1",
+  "questionText": "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: V dobe dostupných a lacných vecí sa stávajú drahé a ťažko dostupné priateľské vzťahy",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať",
+    "marks": null,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints, with no marks or percentages beside the criteria: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:” Under “ČASŤ II” it reprints only the instruction and the two titles."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Zručnosti – gramatika, pravopis",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "slk-2022-hl-ii-2",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2022,
+  "section": "II",
+  "topicId": "slovakian-1-1",
+  "conceptId": "tema-ako-vznika-prave-priate-stvo",
+  "questionRef": "2022 HL Section II Q2",
+  "questionText": "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Ako vzniká pravé priateľstvo",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať",
+    "marks": null,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints, with no marks or percentages beside the criteria: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:” Under “ČASŤ II” it reprints only the instruction and the two titles."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Zručnosti – gramatika, pravopis",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "slk-2023-hl-i-1-e",
   "subjectId": "slovakian",
   "level": "higher",
