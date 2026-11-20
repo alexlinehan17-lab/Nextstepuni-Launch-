@@ -4394,5 +4394,955 @@
   "md5": "7ce46e6a6be583d7e930f97d9a959517",
   "alt": "The question and its three printed options (2, 3, 4), printed with Listening Q6 Excerpt 1(iii) in the 2016 Ordinary Level paper, as the SEC set it.",
   "attribution": "SEC Leaving Certificate Music 2016 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q1-x1-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q1-x1-i-score.png",
+  "md5": "36673240e1fbd496bf305e46cd38e3e7",
+  "alt": "The printed question and its three options (the beginning, the middle, the end of the work), printed with Listening Q1 Excerpt 1(i) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q1-x1-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q1-x1-ii-score.png",
+  "md5": "8745c61f8b4261911148df7bebad061b",
+  "alt": "The Excerpt 1 heading and the printed outline score of bars 1-16 (bar 5 has no time signature), printed with Listening Q1 Excerpt 1(ii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q1-x1-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q1-x1-iii-score.png",
+  "md5": "7735d58685d4e1e962225db07b6e5436",
+  "alt": "The printed question, printed with Listening Q1 Excerpt 1(iii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q1-x1-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q1-x1-iv-score.png",
+  "md5": "53f8a03266af9c3c938a7334177476c1",
+  "alt": "The printed question, printed with Listening Q1 Excerpt 1(iv) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q1-x2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q1-x2-i-score.png",
+  "md5": "9d7b8b38c73ad970faf487df82bea235",
+  "alt": "The printed question, printed with Listening Q1 Excerpt 2(i) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q1-x2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q1-x2-ii-score.png",
+  "md5": "718c5538eccacf8846828297b276ae23",
+  "alt": "The printed question, its three four-note rhythmic figures printed in notation, and the second line, printed with Listening Q1 Excerpt 2(ii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-scheme-p11-l-q1-x2-ii": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-scheme-p11-l-q1-x2-ii.png",
+  "md5": "fee7acfec09a496ede60867c81f51783",
+  "alt": "The marking scheme’s printed answer for Listening Q1 Excerpt 2(ii): the rhythmic figure printed as a picture, with the instrument line of the same part, cropped from page 11 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2015-HL-l-q1-x2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q1-x2-iii-score.png",
+  "md5": "0a5b8c24c1eaa51f3123de85b19a4533",
+  "alt": "The printed question, printed with Listening Q1 Excerpt 2(iii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q1-x3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q1-x3-i-score.png",
+  "md5": "19d7d3587c03b2bf93f233310f458f7a",
+  "alt": "The printed question, printed with Listening Q1 Excerpt 3(i) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q1-x3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q1-x3-ii-score.png",
+  "md5": "dd220b5899b2b4bd5e3448e774becc22",
+  "alt": "The printed question, printed with Listening Q1 Excerpt 3(ii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q1-x3-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q1-x3-iii-score.png",
+  "md5": "d940ab855eeb9bbc1e6e2ec33af8e98b",
+  "alt": "The printed question (both lines), printed with Listening Q1 Excerpt 3(iii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q2-i-score.png",
+  "md5": "c2177cc44303e738783a2fb97dc79fad",
+  "alt": "The outline score of bars 1-4 and the printed question with its three options (monophonic, homophonic, polyphonic), printed with Listening Q2(i) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q2-ii-score.png",
+  "md5": "52491f9d2d78145d755c674f569782f3",
+  "alt": "The printed question and its six options (canon, dotted rhythm, ascending scales, pizzicato strings, countermelody, antiphonal dialogue), printed with Listening Q2(ii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q2-iii-score.png",
+  "md5": "2b29b0503266f5b4ef384c6a68f74803",
+  "alt": "The printed question, printed with Listening Q2(iii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q2-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q2-iv-score.png",
+  "md5": "06265b50f47b8f83a7251ac786085aa6",
+  "alt": "The printed question, printed with Listening Q2(iv) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q2-v-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q2-v-score.png",
+  "md5": "599dc099b269143c3ecaa34e8cf92bef",
+  "alt": "The printed question, printed with Listening Q2(v) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q3-i-score.png",
+  "md5": "98a55e7484ee651312a73565dfbdd8ef",
+  "alt": "The printed question and its three tempo options (allegro, allegretto, adagio), printed with Listening Q3(i) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q3-ii-score.png",
+  "md5": "c829f72caaac23ea30dc3eefcf916f86",
+  "alt": "The printed line \"An outline score ...\", the outline score of bars 1-16 (X bracket over bars 9-10, Y over bars 11-12), part (i) and the question, printed with Listening Q3(ii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-scheme-p13-l-q3-ii": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-scheme-p13-l-q3-ii.png",
+  "md5": "a69cf7f31448ed3e2fac2f108da06cdf",
+  "alt": "The marking scheme’s printed answer for Listening Q3(ii): the five notes printed on a stave, with the marking line, cropped from page 13 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2015-HL-l-q3-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q3-iii-score.png",
+  "md5": "21ed0c87464f75febcab690d26d5a0b2",
+  "alt": "The outline score of bars 1-16 (Y bracket over bars 11-12), parts (i)-(ii) and the question, printed with Listening Q3(iii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q3-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q3-iv-score.png",
+  "md5": "d273cbf464bdd88e0b722671cdc3e7d5",
+  "alt": "The outline score of bars 1-16, parts (i)-(iii) and the question (the ask names bars 5-10), printed with Listening Q3(iv) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q3-v-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q3-v-score.png",
+  "md5": "2ee09a8f95f57f2591b4fb48a991d4b5",
+  "alt": "The printed question, printed with Listening Q3(v) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q4-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q4-i-score.png",
+  "md5": "01f48b3ea5415021b0ac5fbf737d309d",
+  "alt": "The printed lyrics with their chord symbols and the question with its three rhythm options in notation, printed with Listening Q4(i) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-scheme-p14-l-q4-i": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-scheme-p14-l-q4-i.png",
+  "md5": "298260964ee7ef94123fd75835681ed6",
+  "alt": "The marking scheme’s printed answer for Listening Q4(i): the rhythm printed as a picture of a stave, cropped from page 14 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2015-HL-l-q4-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q4-ii-score.png",
+  "md5": "8147ab8cd2dafe4228f9f29bfe29dd2f",
+  "alt": "The printed lyrics (Pepper underlined in line 2), part (i) and the question with its three options (D, C, G), printed with Listening Q4(ii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q4-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q4-iii-score.png",
+  "md5": "09ed366e3297a63be97f622f1b345423",
+  "alt": "The printed lyrics, parts (i)-(ii) and the question with its three options (a descending scale, broken chords, repeated notes), printed with Listening Q4(iii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q4-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q4-iv-score.png",
+  "md5": "86bbd551b97cb13c75c206a9e93b122e",
+  "alt": "The printed question, printed with Listening Q4(iv) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q4-v-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q4-v-score.png",
+  "md5": "96aab05a2f9c04c9ae5c645a028032eb",
+  "alt": "The printed question (both lines), printed with Listening Q4(v) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q5-a-x1-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q5-a-x1-i-score.png",
+  "md5": "2e4d8f8ef746a2d5e6ae61c2c2150ccb",
+  "alt": "The printed question and its two answer slots (Dance, Time signature), printed with Listening Q5 A Excerpt 1(i) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q5-a-x1-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q5-a-x1-ii-score.png",
+  "md5": "8a5545779eaba91b64ac0d6892e45145",
+  "alt": "The printed question, printed with Listening Q5 A Excerpt 1(ii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q5-a-x1-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q5-a-x1-iii-score.png",
+  "md5": "5a52ff5628e0a456c929f6c767580138",
+  "alt": "The printed question and its three numbered answer slots, printed with Listening Q5 A Excerpt 1(iii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q5-a-x2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q5-a-x2-i-score.png",
+  "md5": "19ad9c4a0e11411c5f87169511a5aee0",
+  "alt": "The printed question, printed with Listening Q5 A Excerpt 2(i) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q5-a-x2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q5-a-x2-ii-score.png",
+  "md5": "30b113d7f49ed3a56305b4ee6edeec53",
+  "alt": "The printed question and its three options (repeated last note, small range, flattened 7th), printed with Listening Q5 A Excerpt 2(ii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q5-a-x2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q5-a-x2-iii-score.png",
+  "md5": "fca7cf908fecf5f6a300901ceb4d07ac",
+  "alt": "The printed question, printed with Listening Q5 A Excerpt 2(iii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q5-a-x3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q5-a-x3-i-score.png",
+  "md5": "dfe389c6c57ea67258354938506d229b",
+  "alt": "The printed question, printed with Listening Q5 A Excerpt 3(i) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q5-a-x3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q5-a-x3-ii-score.png",
+  "md5": "d300cfed6e2976a8495f3ace1fb6fcf5",
+  "alt": "The printed question (both lines), printed with Listening Q5 A Excerpt 3(ii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q6-x1-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q6-x1-i-score.png",
+  "md5": "d5eb8030da1299b32f5b89cf9854dbb6",
+  "alt": "The Excerpt 1 heading, the outline score of bars 1-16 and the question (the ask names bars 1-8), printed with Listening Q6 Excerpt 1(i) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q6-x1-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q6-x1-ii-score.png",
+  "md5": "6f7e0cb95c82e012c178da1edea3c2f6",
+  "alt": "The Excerpt 1 heading, the outline score of bars 1-16 (X bracket over bars 13-14, their rhythm printed), part (i) and the question, printed with Listening Q6 Excerpt 1(ii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-scheme-p16-l-q6-x1-ii": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-scheme-p16-l-q6-x1-ii.png",
+  "md5": "a5a38fa1cc1d09ed79b7dd61b10d7e8d",
+  "alt": "The marking scheme’s printed answer for Listening Q6 Excerpt 1(ii): the five notes printed on a treble stave, with the marking line, cropped from page 16 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2015-HL-l-q6-x1-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q6-x1-iii-score.png",
+  "md5": "679c7c6accf151f4497a79984e1f180d",
+  "alt": "The printed question, printed with Listening Q6 Excerpt 1(iii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q6-x2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q6-x2-i-score.png",
+  "md5": "a8ca24b716cf19c35199d3729af87091",
+  "alt": "The printed question and its three time-signature options (2/4, 3/4, 4/4) printed stacked in a music font, printed with Listening Q6 Excerpt 2(i) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q6-x2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q6-x2-ii-score.png",
+  "md5": "11bce313e18a3fae277c2ff8254529d4",
+  "alt": "The printed question, printed with Listening Q6 Excerpt 2(ii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q6-x2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q6-x2-iii-score.png",
+  "md5": "e86c9065c6d8edbffa48c75b6ff5257d",
+  "alt": "The printed question and its six options (arpeggios, trills, repeated phrases, chromatic movement, augmentation, glissando), printed with Listening Q6 Excerpt 2(iii) in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-HL-l-q6-x3-score": {
+  "src": "/exam-figures/music/markbank/music-2015-HL-l-q6-x3-score.png",
+  "md5": "28dd526a00bc8601b8e5088d66744b21",
+  "alt": "The printed question (both lines), printed with Listening Q6 Excerpt 3 in the 2015 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q1-x1-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q1-x1-i-score.png",
+  "md5": "7080541bafb0a8f9aef394890d25f26f",
+  "alt": "The question and its three printed options (the beginning of the work, the middle of the work, the end of the work), printed with Listening Q1 Excerpt 1(i) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q1-x1-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q1-x1-ii-score.png",
+  "md5": "c1f89679effa7461ea94202bd5604282",
+  "alt": "The question, its three printed options (3-note cell, 4-note cell, 5-note cell) and \"Explain.\" with its answer lines, printed with Listening Q1 Excerpt 1(ii) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q1-x2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q1-x2-i-score.png",
+  "md5": "d3f1b5f05c94e9f0368c8a97b8603e60",
+  "alt": "The question and its three printed time signatures (3/2, 3/4, 3/8), each with a box, printed with Listening Q1 Excerpt 2(i) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q1-x2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q1-x2-iii-score.png",
+  "md5": "e9222b8913fb51c281782b09c5653a9b",
+  "alt": "The question, its three printed options (augmentation, canon, subtraction) and \"Explain.\" with its answer line, printed with Listening Q1 Excerpt 2(iii) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q1-x3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q1-x3-i-score.png",
+  "md5": "878332d56e6664b39fbcad1e9fc7d3fd",
+  "alt": "The question and its three printed options (double stopping, harmonics, glissando), printed with Listening Q1 Excerpt 3(i) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q1-x3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q1-x3-ii-score.png",
+  "md5": "1614239a3f1e2b655dbbfabbebba5517",
+  "alt": "The question and its three printed options (broken chords, sustained chords, chord clusters), printed with Listening Q1 Excerpt 3(ii) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q2-ii-score.png",
+  "md5": "657df6d250618a1cc28b4fe319db0b31",
+  "alt": "The bullet \"An outline score of bars 1–4 of the excerpt is printed below.\", the printed outline score of bars 1-4, the bullet \"Answer the following questions:\", question (i) with its answer line, and question (ii) with its three printed options (woodwind, strings, brass), printed with Listening Q2(ii) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q2-iii-score.png",
+  "md5": "639780d9a15aff0da8b2df1be21d7118",
+  "alt": "The question and its three printed options (ascending scales, arpeggios, repeated notes), printed with Listening Q2(iii) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q2-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q2-iv-score.png",
+  "md5": "ca8861fdb8f765c42d902d10e04e6687",
+  "alt": "The question, its three printed options (waltz theme, idée fixe theme, march theme) and \"Name the solo instrument playing this theme.\" with its answer line, printed with Listening Q2(iv) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q3-i-score.png",
+  "md5": "90f42390788fb2511f94d89abb275b67",
+  "alt": "The question and its three printed options (movement one, movement two, movement three), printed with Listening Q3(i) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q3-ii-score.png",
+  "md5": "afe45ebb7e65e364318d5fba3e3774c9",
+  "alt": "The printed outline score of bars 1-16 with X bracketed over bar 10, the bullet \"Answer the following questions:\", question (i) with its options, and question (ii) with its three printed note groups on a treble stave (three sharps), each with a box, printed with Listening Q3(ii) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-scheme-p12-l-q3-ii": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-scheme-p12-l-q3-ii.png",
+  "md5": "5452b6de7e0e381b58c4a1a35b0b62f1",
+  "alt": "The marking scheme’s printed answer for Listening Q3(ii): the three missing notes printed on a treble stave, with its 2 marks, cropped from page 12 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2015-OL-l-q3-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q3-iii-score.png",
+  "md5": "ff771afebfa9a63aa7d6c04703bb1a0f",
+  "alt": "The question and its six printed options (trills, triplets, wide leaps, dotted rhythm, ascending scale, pedal note), printed with Listening Q3(iii) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q3-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q3-iv-score.png",
+  "md5": "fa3ee2b26bcf5bd223be7502ef049864",
+  "alt": "The printed outline score of bars 1-16 with its bar numbers (the bars the answer is counted in), printed with Listening Q3(iv) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q3-v-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q3-v-score.png",
+  "md5": "a8f70558d05cd4754b457b8e27267737",
+  "alt": "The question and its three printed options (plagal, imperfect, perfect), printed with Listening Q3(v) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q4-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q4-i-score.png",
+  "md5": "193dc3f66f9ad3d903bc9cdbf3c2e0cc",
+  "alt": "The question and its three printed options (moves mostly by step, moves mostly by leap, has repeated notes), printed with Listening Q4(i) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q4-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q4-ii-score.png",
+  "md5": "3f48d02b0ad6fcd83040d99a3f63a891",
+  "alt": "The question and its three printed options (is lower than lines 1–4, is higher than lines 1–4, is the same as lines 1–4), printed with Listening Q4(ii) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q5-x1-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q5-x1-ii-score.png",
+  "md5": "c5667d9642e107570dc06384e64cf62c",
+  "alt": "The question and its three printed options (a slip jig, a hornpipe, a reel), printed with Listening Q5 Excerpt 1(ii) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q5-x1-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q5-x1-iii-score.png",
+  "md5": "6eab083e0e56bd31441144f4b38f7d7a",
+  "alt": "The question and its three printed time signatures (6/8, 4/4, 9/8), each with a box, printed with Listening Q5 Excerpt 1(iii) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q5-x1-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q5-x1-iv-score.png",
+  "md5": "65bd9736ed0d483c28194a3fa21e78fe",
+  "alt": "The question and its three printed rhythms in music notation, each with a box, printed with Listening Q5 Excerpt 1(iv) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-scheme-p14-l-q5-x1-iv": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-scheme-p14-l-q5-x1-iv.png",
+  "md5": "42003f9270592bad3efd0812964a8812",
+  "alt": "The marking scheme’s printed answer for Listening Q5 Excerpt 1(iv): the bar of rhythm printed in notation, with its 2 marks, cropped from page 14 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2015-OL-l-q5-x2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q5-x2-i-score.png",
+  "md5": "3c2e4c9f872afd5e244eeff44021262a",
+  "alt": "The question and its three printed options (AABB, ABBA, AABA), printed with Listening Q5 Excerpt 2(i) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q5-x2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q5-x2-ii-score.png",
+  "md5": "c4289554315ba48c6b59678140ea57be",
+  "alt": "The question and its six printed options (block chords, a drone, a countermelody, syncopation, broken chords, imitation), printed with Listening Q5 Excerpt 2(ii) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q5-x3-v-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q5-x3-v-score.png",
+  "md5": "7fa8f9879163ce254a01f9aa6b179990",
+  "alt": "The question, its four printed options (rock music, classical music, jazz music, other type of music) and \"Give a reason for your answer.\" with its answer lines, printed with Listening Q5 Excerpt 3(v) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q6-x1-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q6-x1-i-score.png",
+  "md5": "f67c94f8b08b51833aef72915669ed5d",
+  "alt": "The bullet \"An outline score of bars 1–16 of the excerpt is printed below.\", the printed outline score of bars 1-16 with X bracketed over bars 2-3, and the question, printed with Listening Q6 Excerpt 1(i) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-scheme-p15-l-q6-x1-i": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-scheme-p15-l-q6-x1-i.png",
+  "md5": "a9bb5514f7c67664fd03d872f9c29fff",
+  "alt": "The marking scheme’s printed answer for Listening Q6 Excerpt 1(i): the three missing notes printed on a treble stave, with their marks 1+1+1, cropped from page 15 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2015-OL-l-q6-x1-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q6-x1-ii-score.png",
+  "md5": "cf5f40fbeb08d83a0ae5acdf390c2fb8",
+  "alt": "The question and its three printed options (monophonic, homophonic, polyphonic), printed with Listening Q6 Excerpt 1(ii) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q6-x2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q6-x2-ii-score.png",
+  "md5": "2ca55da8fe471e19dec82e5f5517838f",
+  "alt": "The question and its three printed options (pizzicato, glissando, timpani roll), printed with Listening Q6 Excerpt 2(ii) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q6-x2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q6-x2-iii-score.png",
+  "md5": "248cefcec2d930d0097e8997656dd463",
+  "alt": "The question and its three printed options (a waltz, a march, a reel), printed with Listening Q6 Excerpt 2(iii) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q6-x2-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q6-x2-iv-score.png",
+  "md5": "da537121be90daf61715ba97c6dc4800",
+  "alt": "The question and its three printed options (2, 3, 4), printed with Listening Q6 Excerpt 2(iv) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2015-OL-l-q6-x3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2015-OL-l-q6-x3-i-score.png",
+  "md5": "f0e1844d3a1686fbd99bb32240b98dee",
+  "alt": "The question and its three printed options, one under another (strings and brass, strings and percussion, a full orchestra), printed with Listening Q6 Excerpt 3(i) in the 2015 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2015 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q1-x1-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q1-x1-i-score.png",
+  "md5": "8896e395ecb0f83173ccbb44210a1440",
+  "alt": "The printed question, printed with Listening Q1 Excerpt 1(i) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q1-x1-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q1-x1-ii-score.png",
+  "md5": "0ad724a6d928011566ef7aa382b56689",
+  "alt": "The printed question (both lines), printed with Listening Q1 Excerpt 1(ii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q1-x1-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q1-x1-iii-score.png",
+  "md5": "290acd5ff4396978b8c46eb17419993d",
+  "alt": "The printed question and its three options (strings only, strings and woodwind, strings and brass), printed with Listening Q1 Excerpt 1(iii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q1-x1-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q1-x1-iv-score.png",
+  "md5": "ba6c8f5c192b1cf007e4f46797e01876",
+  "alt": "The printed question, printed with Listening Q1 Excerpt 1(iv) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q1-x2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q1-x2-i-score.png",
+  "md5": "23130f0de87f7e89630952278ae40b5d",
+  "alt": "The printed question and its three options (A major, B major, E major), printed with Listening Q1 Excerpt 2(i) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q1-x2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q1-x2-ii-score.png",
+  "md5": "4f725d4b1693ae4aa51b407bfd4513e0",
+  "alt": "The Excerpt 2 heading and its printed score of bars 1-8 (X bracket over bar 2, an empty bar with its rhythm of eight quavers printed above the stave), printed with Listening Q1 Excerpt 2(ii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-scheme-p11-l-q1-x2-ii": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-scheme-p11-l-q1-x2-ii.png",
+  "md5": "60c5662b9d5359621432f590292fa5b6",
+  "alt": "The marking scheme’s printed answer for Listening Q1 Excerpt 2(ii): the eight notes printed on a treble stave, with the marking line, cropped from page 11 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2014-HL-l-q1-x2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q1-x2-iii-score.png",
+  "md5": "600c42e98144ba1eaf571af803a3307f",
+  "alt": "The printed question, printed with Listening Q1 Excerpt 2(iii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q1-x2-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q1-x2-iv-score.png",
+  "md5": "d9d4ddc3eaa8306d3aeca11970b93af4",
+  "alt": "The printed question, printed with Listening Q1 Excerpt 2(iv) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q1-x3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q1-x3-i-score.png",
+  "md5": "fe4784b71afc587c605377ab7b8e20b9",
+  "alt": "The printed question, printed with Listening Q1 Excerpt 3(i) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q1-x3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q1-x3-ii-score.png",
+  "md5": "361d8f837e6617850dc22c434916cc36",
+  "alt": "The printed question and its six options (pedal note, pizzicato, triplets, trills, imitation, tremolo), printed with Listening Q1 Excerpt 3(ii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q1-x3-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q1-x3-iii-score.png",
+  "md5": "01bafe75e3096c3eb8a6b807a64893f3",
+  "alt": "The printed question (both lines), printed with Listening Q1 Excerpt 3(iii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q1-x3-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q1-x3-iv-score.png",
+  "md5": "c5a900e9e4e63bf9b7d1064ad01ab672",
+  "alt": "The printed question, printed with Listening Q1 Excerpt 3(iv) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q2-i-score.png",
+  "md5": "61df2380c4bf43372346bc1941a1b018",
+  "alt": "The printed question (both lines), printed with Listening Q2(i) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q2-ii-score.png",
+  "md5": "7a9ed4c417f984c2732c72e90a8e3167",
+  "alt": "The printed question, printed with Listening Q2(ii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q2-iii-score.png",
+  "md5": "637006dbd541eeddfb3ab89b6852d977",
+  "alt": "The printed question and its three one-bar rhythm options in notation, printed with Listening Q2(iii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-scheme-p12-l-q2-iii": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-scheme-p12-l-q2-iii.png",
+  "md5": "d2265c4586fac7a7ef3a1d59c243effc",
+  "alt": "The marking scheme’s printed answer for Listening Q2(iii): the chosen rhythm printed as a picture of a stave, cropped from page 12 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2014-HL-l-q2-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q2-iv-score.png",
+  "md5": "3f790e458badab6c8d37ddb682be05a7",
+  "alt": "The printed question, printed with Listening Q2(iv) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q2-v-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q2-v-score.png",
+  "md5": "ad9649f3feac251a2b790dde221c53e2",
+  "alt": "The printed question, printed with Listening Q2(v) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q3-i-score.png",
+  "md5": "9caf4e9fa3c2f18d6fb404f2381e3530",
+  "alt": "The outline score of bars 1-16 and the printed part (i): its three lines (the ask names bars 1-16), printed with Listening Q3(i) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q3-ii-score.png",
+  "md5": "1438010ec85d6a724780fe64f71ec097",
+  "alt": "The printed question and its three options (melody on flute, rallentando, pizzicato broken chords), printed with Listening Q3(ii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q3-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q3-iii-score.png",
+  "md5": "2bc6cdb651f863e5eada01084e3f08b3",
+  "alt": "The printed question (both lines), printed with Listening Q3(iii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q3-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q3-iv-score.png",
+  "md5": "4e0bc49202c9b8eb5888b994f3e2c043",
+  "alt": "The printed question and its three options (Tonic (I), Subdominant (IV), Dominant (V)), printed with Listening Q3(iv) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q3-v-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q3-v-score.png",
+  "md5": "7b757760bf68d7fc9c26cfb888c892fa",
+  "alt": "The printed question, printed with Listening Q3(v) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q4-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q4-i-score.png",
+  "md5": "b7c3d5db93989ba811329197a8db2295",
+  "alt": "The printed question, printed with Listening Q4(i) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q4-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q4-ii-score.png",
+  "md5": "7c0b478ec243ef8fe9a6dc945cce4bf8",
+  "alt": "The printed question and its Instrument / Order table (Violin, Guiro, Marimba), printed with Listening Q4(ii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q4-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q4-iii-score.png",
+  "md5": "d0e804751082b93003fed0f1e5856f42",
+  "alt": "The printed question (both lines), printed with Listening Q4(iii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q4-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q4-iv-score.png",
+  "md5": "4f4931d253926cdca1c9ce0e695deabd",
+  "alt": "The printed question, printed with Listening Q4(iv) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q4-v-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q4-v-score.png",
+  "md5": "6be272bf475b2d3b75d3e319e55cffc3",
+  "alt": "The printed question, printed with Listening Q4(v) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q5-a-x1-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q5-a-x1-i-score.png",
+  "md5": "b2e2cf7f07addf56ccbfd5b9d06c51d4",
+  "alt": "The printed question, printed with Listening Q5 A Excerpt 1(i) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q5-a-x1-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q5-a-x1-ii-score.png",
+  "md5": "2881bbc608d2edb27a3421b103fe8468",
+  "alt": "The printed question, printed with Listening Q5 A Excerpt 1(ii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q5-a-x1-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q5-a-x1-iii-score.png",
+  "md5": "5b63df13f0e8a6fa87d20c15cefa0d72",
+  "alt": "The printed question and its three options (flattened 7th, repeated final note, wide range), printed with Listening Q5 A Excerpt 1(iii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q5-a-x2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q5-a-x2-i-score.png",
+  "md5": "f4d67ac24f6b1d35f0dd2f0d528e777d",
+  "alt": "The printed sentence, the three questions (i)-(iii) and the Dance 1 / Dance 2 answer slots (Dance, Time signature, Bar of rhythm), printed with Listening Q5 A Excerpt 2(i) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q5-a-x2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q5-a-x2-ii-score.png",
+  "md5": "f4d67ac24f6b1d35f0dd2f0d528e777d",
+  "alt": "The printed sentence, the three questions (i)-(iii) and the Dance 1 / Dance 2 answer slots (Dance, Time signature, Bar of rhythm), printed with Listening Q5 A Excerpt 2(ii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q5-a-x2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q5-a-x2-iii-score.png",
+  "md5": "f4d67ac24f6b1d35f0dd2f0d528e777d",
+  "alt": "The printed sentence, the three questions (i)-(iii) and the Dance 1 / Dance 2 answer slots (Dance, Time signature, Bar of rhythm), printed with Listening Q5 A Excerpt 2(iii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q5-a-x3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q5-a-x3-i-score.png",
+  "md5": "03f7a43fd76bfd0e0f0e9cf7c145eabb",
+  "alt": "The printed question, printed with Listening Q5 A Excerpt 3(i) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q5-a-x3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q5-a-x3-ii-score.png",
+  "md5": "1eab494912ed6fd7407d359d1ef7fbf8",
+  "alt": "The printed question, printed with Listening Q5 A Excerpt 3(ii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q6-x1-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q6-x1-i-score.png",
+  "md5": "65f32b2dadff4370b3207fb41fda6ff2",
+  "alt": "The printed question, printed with Listening Q6 Excerpt 1(i) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q6-x1-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q6-x1-ii-score.png",
+  "md5": "84513be170b3458bc7cd403cc4c5f8c4",
+  "alt": "The Excerpt 1 heading, the outline score of the verse, bars 1-17 (X bracket over bar 4, left empty), part (i) and the question with its three options printed on treble staves, printed with Listening Q6 Excerpt 1(ii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-scheme-p16-l-q6-x1-ii": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-scheme-p16-l-q6-x1-ii.png",
+  "md5": "f3af6003cfa9deb77b90d743914bfb1c",
+  "alt": "The marking scheme’s printed answer for Listening Q6 Excerpt 1(ii): the chosen notes printed on a treble stave, cropped from page 16 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2014-HL-l-q6-x1-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q6-x1-iii-score.png",
+  "md5": "6b323810f874ccb1c09ca45e4b265ddb",
+  "alt": "The Excerpt 1 heading, the outline score of the verse (bars 13-14 named by the ask), parts (i)-(ii) and the question with its three options (repeated notes, an arpeggio, chromatic movement), printed with Listening Q6 Excerpt 1(iii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q6-x1-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q6-x1-iv-score.png",
+  "md5": "7f37cabdadbb061c2c09826db38a897c",
+  "alt": "The printed question, printed with Listening Q6 Excerpt 1(iv) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q6-x2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q6-x2-i-score.png",
+  "md5": "f4686ecab82f7e59f7669422c34738b9",
+  "alt": "The printed question and its three options (2, 3, 4), printed with Listening Q6 Excerpt 2(i) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q6-x2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q6-x2-ii-score.png",
+  "md5": "3982e1f9dce84ad2527ce99e8552c949",
+  "alt": "The printed question, printed with Listening Q6 Excerpt 2(ii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q6-x2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q6-x2-iii-score.png",
+  "md5": "c1753322ccaf3c33b3dde921ceab35f5",
+  "alt": "The printed question and its three options (a sequence, an ostinato, imitation), printed with Listening Q6 Excerpt 2(iii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q6-x2-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q6-x2-iv-score.png",
+  "md5": "e91313290cff938c023a47c8e33d16d4",
+  "alt": "The printed question and its four-bar melody on a treble stave (one flat), with the \"Line\" answer slot, printed with Listening Q6 Excerpt 2(iv) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q6-x3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q6-x3-i-score.png",
+  "md5": "f26c1e39fee9a61c204105ad150ef77a",
+  "alt": "The printed question, its three options (repeated block chords, broken chords, sustained chords) and the follow-on line, printed with Listening Q6 Excerpt 3(i) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q6-x3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q6-x3-ii-score.png",
+  "md5": "70b8118c8fa378339583d681459160d3",
+  "alt": "The printed lyrics (in line 3 \"end of the storm is a golden sky,\" is underlined), part (i) and the question, printed with Listening Q6 Excerpt 3(ii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q6-x3-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q6-x3-iii-score.png",
+  "md5": "bab345f9d27887b54bbe188a3e69037f",
+  "alt": "The printed question, printed with Listening Q6 Excerpt 3(iii) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-HL-l-q6-x3-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2014-HL-l-q6-x3-iv-score.png",
+  "md5": "f5f85d4cbf39732e1e21748e3b5f3248",
+  "alt": "The printed question, printed with Listening Q6 Excerpt 3(iv) in the 2014 Higher Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Higher Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q1-x1-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q1-x1-i-score.png",
+  "md5": "d48d44e0217f9cf7904e0f26d66d0d7c",
+  "alt": "The question and its three printed options (exposition, development, cadenza), printed with Listening Q1 Excerpt 1(i) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q1-x1-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q1-x1-ii-score.png",
+  "md5": "f177e1f8d65bfc50e5f4253c2a7b5be4",
+  "alt": "The Excerpt 1 heading and the printed score of bars 1-16, with X bracketed over bar 3 (its rhythm, four crotchets, printed above the empty stave) and Y over bar 5, printed with Listening Q1 Excerpt 1(ii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-scheme-p7-l-q1-x1-ii": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-scheme-p7-l-q1-x1-ii.png",
+  "md5": "da21560890cb4b619c88f4573afc62b5",
+  "alt": "The marking scheme’s printed answer for Listening Q1 Excerpt 1(ii): the four missing notes printed on a treble stave, with \"1 mark for each correct melody note\" and its 4 marks, cropped from page 7 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2014-OL-l-q1-x1-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q1-x1-iii-score.png",
+  "md5": "bfb17285a7f4525716b855f7678262ff",
+  "alt": "The question and its three printed options (woodwind, brass, strings), printed with Listening Q1 Excerpt 1(iii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q1-x2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q1-x2-i-score.png",
+  "md5": "73f4a36ddd7ede0d573dc95c59852f62",
+  "alt": "The question and its three printed options (melody only, melody and accompaniment, accompaniment only), printed with Listening Q1 Excerpt 2(i) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q1-x2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q1-x2-iii-score.png",
+  "md5": "70cd7294244b4714193bc2fe3be68fb4",
+  "alt": "The question and its three printed options (imperfect, plagal, perfect), printed with Listening Q1 Excerpt 2(iii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q1-x3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q1-x3-i-score.png",
+  "md5": "d66146a24718f2a79e95d0ec15985582",
+  "alt": "The question, its three printed options (imitation, pizzicato, triplets) and \"Give a reason for your answer.\" with its answer lines, printed with Listening Q1 Excerpt 3(i) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q1-x3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q1-x3-ii-score.png",
+  "md5": "b340ec279e4f06c3591dea81dc1db14d",
+  "alt": "The question and its three printed options (sustained notes, running semiquaver passages, block chords), printed with Listening Q1 Excerpt 3(ii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q2-ii-score.png",
+  "md5": "abbc6a64a56dfa337689cc0067486ca0",
+  "alt": "The question with its answer blank, \"It plays\" and its three printed options (broken chords, block chords, scales), printed with Listening Q2(ii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q2-iii-score.png",
+  "md5": "c9c41983ad5a1c07cdb8726fde4786ea",
+  "alt": "The question and its three printed rhythms in music notation (four crotchets, eight quavers, two minims), each with a box, printed with Listening Q2(iii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-scheme-p8-l-q2-iii": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-scheme-p8-l-q2-iii.png",
+  "md5": "862df6b22c44a778f6efaaba5e8d4652",
+  "alt": "The marking scheme’s printed answer for Listening Q2(iii): the rhythm printed on a stave, with its 2 marks, cropped from page 8 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2014-OL-l-q2-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q2-iv-score.png",
+  "md5": "2a24624f27af804536ea5051e19994e2",
+  "alt": "The question and its three printed options (solo, in unison, in harmony), printed with Listening Q2(iv) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q2-v-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q2-v-score.png",
+  "md5": "bb1d0964bd09ab00d6ed2796f892e4ee",
+  "alt": "The question and its two printed answer slots, \"Name of song\" and \"Description of style\", with their answer lines, printed with Listening Q2(v) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q3-ii-score.png",
+  "md5": "a36aca3f8f6c5764e5dece270b643bd6",
+  "alt": "The printed outline score of bars 1-16 (3/8, three sharps) with X bracketed over bars 11-12, printed with Listening Q3(ii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q3-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q3-iii-score.png",
+  "md5": "e62c5657d292c83b6a4ce4b88efe3a1c",
+  "alt": "The question and its three printed options (a rising arpeggio, a rising scale, repeated notes), printed with Listening Q3(iii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q3-iv-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q3-iv-score.png",
+  "md5": "8701b8e90398e793eea2faffe81eeabd",
+  "alt": "The question, its three printed options (a march, a waltz, a jig) and \"Give a reason for your answer.\" with its answer lines, printed with Listening Q3(iv) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q4-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q4-i-score.png",
+  "md5": "3d00850ed263ef9dfb4178be4acaae69",
+  "alt": "The sentence with its answer blank, \"They play in\" and its three printed options (unison, imitation, harmony), printed with Listening Q4(i) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q4-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q4-ii-score.png",
+  "md5": "aa4ac21f020a9f2db6ee6697c03b95c8",
+  "alt": "The question and its three printed options (maracas, crotales, guiro), printed with Listening Q4(ii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q4-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q4-iii-score.png",
+  "md5": "47880e2c45ec2aa4d1f62ca43570d6db",
+  "alt": "The question and its three printed options (the main melody, Totentanz (Danse Macabre), Dies Irae), printed with Listening Q4(iii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q5-x2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q5-x2-i-score.png",
+  "md5": "a1e05d371a2b6b07345b8088b4fe04bc",
+  "alt": "The question and its four printed options (slip jig, reel, hornpipe, jig), printed with Listening Q5 Excerpt 2(i) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q5-x2-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q5-x2-iii-score.png",
+  "md5": "bd42c3a53fcc4348451f827c735a21a0",
+  "alt": "The question, its three printed options (a céilí band, a pipe band, a traditional group) and \"Give a reason for your answer\", printed with Listening Q5 Excerpt 2(iii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q5-x3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q5-x3-i-score.png",
+  "md5": "69a99d1d8c452a38e00a76e7521413eb",
+  "alt": "The question and its six printed options (tin whistle, bones, guitar, uileann pipes, piano, harp), printed with Listening Q5 Excerpt 3(i) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q6-x1-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q6-x1-i-score.png",
+  "md5": "e197db323c0bc5ac781bec9a4e2bfca0",
+  "alt": "The two printed questions and their options (2, 4, 8; gets louder, gets softer, does not change in volume), printed with Listening Q6 Excerpt 1(i) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q6-x1-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q6-x1-ii-score.png",
+  "md5": "553b83e7fd703f73cf517dc64c497fd7",
+  "alt": "The bullet \"The outline score of the verse is printed below.\", the printed outline score of bars 1-17 with its words and X bracketed over bar 6, question (i) with its options, and question (ii) with its three printed note groups on a treble stave (three sharps), each with a box, printed with Listening Q6 Excerpt 1(ii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-scheme-p12-l-q6-x1-ii": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-scheme-p12-l-q6-x1-ii.png",
+  "md5": "6d2b13556ab8227dfaff4295fc7f1a3e",
+  "alt": "The marking scheme’s printed answer for Listening Q6 Excerpt 1(ii): the missing notes printed on a treble stave, with their 2 marks, cropped from page 12 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
+ },
+ "music-2014-OL-l-q6-x2-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q6-x2-i-score.png",
+  "md5": "70645918bd693217b3356a83f9620e79",
+  "alt": "The question and its three printed options (2, 3, 4) on one line, printed with Listening Q6 Excerpt 2(i) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q6-x2-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q6-x2-ii-score.png",
+  "md5": "c9072e30136f137dfc14687d74d0c9c3",
+  "alt": "The question and its three printed options (the same, similar, completely different), printed with Listening Q6 Excerpt 2(ii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q6-x3-i-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q6-x3-i-score.png",
+  "md5": "530fa8fe8b7c0b50c083c4aeb2a304a6",
+  "alt": "The two printed questions and their options (harp, guitar, piano; scales, broken chords, long notes), printed with Listening Q6 Excerpt 3(i) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q6-x3-ii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q6-x3-ii-score.png",
+  "md5": "a6690522c6f0f6e00bba03d3508c127d",
+  "alt": "The question and its four printed options (a soprano, an alto, a tenor, a bass), printed with Listening Q6 Excerpt 3(ii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-l-q6-x3-iii-score": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-l-q6-x3-iii-score.png",
+  "md5": "aba17937c37071a5d1b23570e96ac7ad",
+  "alt": "The printed lyrics from Line 5 (with \"through the wind, walk on through the rain\" underlined) to Line 10, questions (i) and (ii) with their options, and question (iii) with its three printed options (ascends by leap, ascends by step, ascends by leap and step), printed with Listening Q6 Excerpt 3(iii) in the 2014 Ordinary Level paper, as the SEC set it.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level examination paper — © State Examinations Commission"
+ },
+ "music-2014-OL-scheme-p12-l-q6-x3-iv": {
+  "src": "/exam-figures/music/markbank/music-2014-OL-scheme-p12-l-q6-x3-iv.png",
+  "md5": "22e2508da4303a60a947597274571fc3",
+  "alt": "The marking scheme’s printed answer for Listening Q6 Excerpt 3(iv): the line of words with the second \"never\" circled, with its 2 marks, cropped from page 12 of the scheme.",
+  "attribution": "SEC Leaving Certificate Music 2014 Ordinary Level marking scheme — © State Examinations Commission",
+  "solution": true
  }
 }

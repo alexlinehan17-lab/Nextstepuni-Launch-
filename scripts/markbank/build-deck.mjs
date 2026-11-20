@@ -27,7 +27,7 @@ import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { resolvePaperFileid, resolveIndexedPaperFileid, resolveCompanionFileid, corpusSubjectFor, paperEntry, deferredPaperEntry } from './paperIndex.mjs';
-import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
+import { normalise, comparableScheme, comparableSchemeWithCells, comparableSchemeWithoutRangeLines, claimMatches, rangeLabelFault } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
 import { questionStandsAlone } from './questionText.mjs';
@@ -761,7 +761,9 @@ function historyEssayFault(c, scheme) {
  *  carry a printed lower scale). */
 // Polish joins with treatment D (languages-q3 lane, 19 Nov 2026): its Część B
 // tasks are marked on one Content (C) / Expression (E) grid, the same card.
-const GRID_SUBJECTS = new Set(['spanish', 'german', 'music', 'polish', 'italian']);
+// Portuguese joins the same way (languages-q3, 19 Nov 2026): its Section B
+// tasks are marked on a Content and Communication / Language grid.
+const GRID_SUBJECTS = new Set(['spanish', 'german', 'music', 'polish', 'italian', 'portuguese']);
 /** Music is sat in separate booklets; a card's section names the booklet it is
  *  printed in, by the Paper Trail index's own label. */
 const MUSIC_BOOKLET = { L: 'Listening', A: 'Composing', B: 'Composing', E: 'Elective' };
@@ -780,9 +782,9 @@ const bandNameTraces = (scheme, label) => {
   const esc = w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   return new RegExp(words.map(esc).join('[0-9]*')).test(scheme);
 };
-function spanishGridFault(c, scheme) {
+function spanishGridFault(c, scheme, schemeCells = '', schemeRanges = '') {
   const r = c.rubric;
-  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German, Music or Polish marking grid';
+  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German, Music, Polish, Italian or Portuguese marking grid';
   if (r.allocation || r.answerGuide) return 'a marking grid carries no answer rows';
   const criteria = r.criteria ?? [];
   if (!criteria.length || new Set(criteria.map(k => k.id)).size !== criteria.length) return 'no criteria, or two with one id';
@@ -815,6 +817,9 @@ function spanishGridFault(c, scheme) {
     if (k.bands) {
       const marks = k.bands.flatMap(b => b.marks).sort((a, b) => a - b);
       if (marks.length !== allowed.length || marks.some((m, i) => m !== i)) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
+      // A band named only by its printed range carries exactly that range.
+      const misnamed = k.bands.map(rangeLabelFault).find(Boolean);
+      if (misnamed) return `${k.label}: ${misnamed}`;
     }
   }
   // A criterion zeroed by another's 0 names a criterion of this card, and the
@@ -847,13 +852,28 @@ function spanishGridFault(c, scheme) {
     if (allowed.length !== lower.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label}'s lower scale is not placed on every mark from 0 to ${lower.maxMarks}`;
     const marks = (lower.bands ?? []).flatMap(b => b.marks).sort((a, b) => a - b);
     if ((lower.bands ?? []).length && (marks.length !== allowed.length || marks.some((m, i) => m !== i))) return `${k.label}'s lower bands do not cover 0 to ${lower.maxMarks} once`;
-    if (!lower.contentCriteria?.length || lower.contentCriteria.some(id => id === k.id || !criteria.some(other => other.id === id && !other.lowerScale))) {
+    // At least one trigger: content criteria it counts (each another,
+    // un-lowered criterion of the card), a word count the student switches,
+    // or both. Portuguese 2025-2026 prints the word count alone ("If the
+    // answer is too short (less than 140 words), mark questions 3 and 4 out
+    // of 20 marks (lower scale)"): contentCriteria [] and no threshold.
+    if (!Array.isArray(lower.contentCriteria)) return `${k.label}'s lower scale lists no content criteria`;
+    if (!lower.contentCriteria.length && lower.wordsUnder === undefined) return `${k.label}'s lower scale has no trigger`;
+    if (lower.contentCriteria.some(id => id === k.id || !criteria.some(other => other.id === id && !other.lowerScale))) {
       return `${k.label}'s lower scale counts a criterion the card does not have`;
     }
-    const content = lower.contentCriteria.reduce((sum, id) => sum + criteria.find(other => other.id === id).maxMarks, 0);
-    if (!Number.isInteger(lower.contentAtMost) || lower.contentAtMost < 0 || lower.contentAtMost >= content) return `${k.label}'s lower scale threshold is outside its content's 0 to ${content}`;
+    if (lower.contentCriteria.length) {
+      const content = lower.contentCriteria.reduce((sum, id) => sum + criteria.find(other => other.id === id).maxMarks, 0);
+      if (!Number.isInteger(lower.contentAtMost) || lower.contentAtMost < 0 || lower.contentAtMost >= content) return `${k.label}'s lower scale threshold is outside its content's 0 to ${content}`;
+    } else if (lower.contentAtMost !== undefined) return `${k.label}'s lower scale sets a content threshold but counts no content`;
     if (lower.wordsUnder !== undefined && !(Number.isInteger(lower.wordsUnder) && lower.wordsUnder > 0)) return `${k.label}'s lower scale word count is not a count`;
     if (!String(lower.rule ?? '').trim()) return `${k.label}'s lower scale prints no rule`;
+  }
+  // One "under N words" switch serves the card (frenchShortSwitchId), so
+  // every criterion with a word count states the same count and rule.
+  const worded = criteria.filter(k => k.lowerScale?.wordsUnder !== undefined);
+  if (worded.some(k => k.lowerScale.wordsUnder !== worded[0].lowerScale.wordsUnder || k.lowerScale.rule !== worded[0].lowerScale.rule)) {
+    return 'two word-count rules on one card cannot share its one switch';
   }
   if (!c.schemePages?.length || !c.schemePages.every(p => Number.isInteger(p) && p > 0)) return 'no scheme pages';
   const lifted = [
@@ -866,8 +886,15 @@ function spanishGridFault(c, scheme) {
       ...(k.lowerScale ? [k.lowerScale.rule, ...k.lowerScale.bands.flatMap(b => b.guidance)] : [])]),
   ];
   const bandNames = new Set(criteria.flatMap(k => (k.bands ?? []).map(b => b.label)));
+  // A grid line traces in the scheme as compared everywhere, or in one of its
+  // two grid-only added forms (schemeText.mjs ADDED FORMS): the marks cells
+  // kept (bands named by their printed range, rung prices, penalties printed
+  // only in cells), or the band-range lines lifted out (a bullet the range
+  // printed beside it split in two).
   const untraced = lifted.find(text => !String(text).trim()
-    || !(claimMatches(scheme, text) || (bandNames.has(text) && bandNameTraces(scheme, text))));
+    || !(claimMatches(scheme, text) || (schemeCells && claimMatches(schemeCells, text))
+      || (schemeRanges && claimMatches(schemeRanges, text))
+      || (bandNames.has(text) && bandNameTraces(scheme, text))));
   if (untraced !== undefined) return `a marking line not found in the ${c.year} ${c.level} scheme, "${String(untraced).slice(0, 60)}"`;
   return null;
 }
@@ -929,7 +956,10 @@ const deferredDoc = (subjectId, card, label) => {
 const historyDeferred = (subjectId, card) =>
   subjectId === 'history' && deferredCard(subjectId, card);
 
-function schemeFor(subjectId, card) {
+/* `cells` / `ranges`: the scheme with its marks cells kept, or with its
+ * band-range lines lifted out (schemeText.mjs ADDED FORMS), for the
+ * marking-grid gate alone. */
+function schemeFor(subjectId, card, { cells = false, ranges = false } = {}) {
   // A deferred Link Modules card reads the transcript of its own reviewed
   // archive scheme, never June's.
   const lcvpSource = subjectId === 'lcvp' ? reviewedLcvpSource(card) : undefined;
@@ -944,11 +974,13 @@ function schemeFor(subjectId, card) {
   const deferred = deferredCard(subjectId, card);
   const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}${project ? '-project' : deferred ? '-deferred' : ''}`;
   const file = resolve(ROOT, 'examiner-reports', subjectId, 'schemes', `${stem}.md`);
-  if (!schemeCache.has(file)) {
+  const key = cells ? `${file}|cells` : ranges ? `${file}|ranges` : file;
+  if (!schemeCache.has(key)) {
     const raw = existsSync(file) ? readFileSync(file, 'utf8') : '';
-    schemeCache.set(file, comparableScheme(raw));
+    schemeCache.set(key, cells ? comparableSchemeWithCells(raw)
+      : ranges ? comparableSchemeWithoutRangeLines(raw) : comparableScheme(raw));
   }
-  return schemeCache.get(file);
+  return schemeCache.get(key);
 }
 
 /**
@@ -1789,7 +1821,8 @@ for (const c of cards) {
     if (badQ) { dropped.push(`${c.id}: ${badQ} — "${c.questionText}"`); continue; }
     const scheme = schemeFor(SUBJECT_ID, c);
     if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
-    const fault = spanishGridFault(c, scheme);
+    const fault = spanishGridFault(c, scheme, schemeFor(SUBJECT_ID, c, { cells: true }),
+      schemeFor(SUBJECT_ID, c, { ranges: true }));
     if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
     const source = c.sourceMaterial;
     if (source?.sourceLabel) {

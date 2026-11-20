@@ -52,7 +52,7 @@ describe('Russian 2019 Ordinary source review',()=>{
     expect(languageMarks(number,Object.assign({},...number.rubric.groups.map(g=>selected(g.id))))).toBe(6);
     expect(languageMarks(matching,Object.assign({},...matching.rubric.groups.map(g=>selected(g.id))))).toBe(40);
   });
-  it('preserves both mandatory dialogues and publishes no invented per-gap or per-detail price',()=>{
+  it('preserves both mandatory dialogues and the complete question total without invented detail marks',()=>{
     const discourse=get('sd');if(isRubricCard(discourse))throw new Error('Wrong card');
     expect(discourse.answerVariants).toBeUndefined();
     expect(discourse.rows.map(r=>r.verbatim)).toEqual(['Где','кто','кем / где','каком','кем / где','Чем','Какие','Сколько','Когда','какой']);
@@ -60,7 +60,7 @@ describe('Russian 2019 Ordinary source review',()=>{
       const c=get(suffix);if(isRubricCard(c))throw new Error('Wrong card');
       expect(c.tariffModel).toEqual({kind:'questionTotal'});
       expect(c.rows.every(r=>r.marks===null)).toBe(true);
-      expect(c.rows[0].contextNote).toContain('numeric self-scoring is unavailable');
+      expect(c.rows[0].contextNote).toContain(suffix==='sd'?'Assess the complete exercise out of20':'Assess the complete response out of10');
       expect(marksClaimed(c,Object.fromEntries(c.rows.map(r=>[r.id,1])))).toBe(0);
     }
   });
