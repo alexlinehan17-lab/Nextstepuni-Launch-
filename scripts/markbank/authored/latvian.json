@@ -737,6 +737,372 @@
   }
  },
  {
+  "id": "lv-2011-hl-i-2",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "kapec-virietis-kurs-karojis-afganistana-sasveicinas",
+  "questionRef": "2011 HL Section I Q2",
+  "questionText": "Kāpēc vīrietis, kurš karojis Afganistānā sasveicinās ar Jāni militārā veidā?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tāpēc, ka Jānis klibo, jo pusaudžu vecumā krita no motocikla. Vīrietis sasveicinās ar Jāni militārā veidā, jo domā, ka viņš savu ievainojumu ir ieguvis karojot.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2011-hl-i-3",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "piemeriem-teksta-izskaidro-varda-pozitivisms-nozimi",
+  "questionRef": "2011 HL Section I Q3",
+  "questionText": "Ar 3 piemēriem no teksta izskaidro vārda \"pozitīvisms\" nozīmi (2. rindkopa)?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mīlestības pilna attieksme pret skolēniem. Spēja uzklausīt, atbalstīt otru. Spēja kontaktēties ar otru tā, ka viņš jūtas īpašs.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2011-hl-i-4",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "doma-kapec-janis-izcinija-titulu-gada",
+  "questionRef": "2011 HL Section I Q4",
+  "questionText": "Kā tu domā kāpēc Jānis izcīnīja titulu \"Gada labākais skolotājs 2008\"?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tāpēc, ka Jānim skolotāja darbs ļoti patīk. Darbs ir viņa misija. Ja skolotājs darbu dara ar lielu prieku, tad bērni mācās no sirds.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2011-hl-i-5",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "aija-pati-pelnijusi-but-latvijas-lepnums",
+  "questionRef": "2011 HL Section I Q5",
+  "questionText": "„Aija pati ir pelnījusi būt \"Latvijas Lepnums\"? Pamato savu viedokli ar piemēriem no teksta.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Aija ir meitene ar īpašām vajadzībām. Viņa nekad nav staigājusi. Viņa mācās parastā vidusskolā un ar labiem rezultātiem. Viņa ar savu piemēru liek būt labākiem citiem. Sekojot viņas paraugam, skolā sāks mācīties vēl viena meitene ar īpašām vajadzībām.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2011-hl-i-6",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2011,
+  "section": "I",
+  "topicId": "latvian-0-1",
+  "conceptId": "vai-liepajas-vidusskola-laimiga-vieta-pamato",
+  "questionRef": "2011 HL Section I Q6",
+  "questionText": "Vai Liepājas 8. vidusskola ir laimīga vieta? Pamato savu atbildi kāpēc vai kāpēc nav.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Manuprāt, skola ir laimīga vieta. Skolā strādā skolotāji, kuriem patīk savs darbs. Skolēni atbalsta viens otru un ir kopā grūtā brīdī . Skolēni lepojas ar savu skolu un vēlas to parādīt citu klašu skolēniem un arī visai Latvijai, piesakot Jāni konkursam „Latvijas lepnums \". Skolā nebaidās no sarežģītām situācijām, bet tiek darītas lietas lai palīdzētu .",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints this question as: “Vai Liepājas 8. vidusskola ir laimīga vieta? Pamato savu atbildi kāpēc ir vai kāpēc nav”."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 3 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2011-hl-ii",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2011,
+  "section": "II",
+  "topicId": "latvian-1-0",
+  "conceptId": "jana-radinieks-biznesmenis-apgalvoja-nevar-pabarot",
+  "questionRef": "2011 HL Section II",
+  "questionText": "Jāņa radinieks- biznesmenis apgalvoja , ka nevar pabarot ģimeni ar bērnu pateicību. Komentē šo apgalvojumu, pamatojot savu viedokli ar piemēriem no teksta. (Uzrakstiet vismaz 100 vārdu garu aprakstu)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pateicība sniedz garīgu gandarījumu.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme heads them “Piemēram:”: examples, not a checklist. None carries a mark of its own, and the scheme prints no criteria for the part."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Citu pateicība un novērtējums mudina sasniegt jaunus mērķus.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Ja skolotāja darbs ir kā misija, tad skolotājs dara visu nepieciešamo.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "II DAĻA",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\""
+  }
+ },
+ {
+  "id": "lv-2011-hl-iii-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2011,
+  "section": "III",
+  "topicId": "latvian-1-0",
+  "conceptId": "uzrakstiet-eseju-vismaz-300-vardu-milestiba",
+  "questionRef": "2011 HL Section III Q1",
+  "questionText": "Uzrakstiet eseju (vismaz 300 vārdu)! \"Mīlestība neko nemaksā”",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints the part's head, the instruction and the two titles, and prints nothing under them: no criteria, no descriptive line and no split of the part's marks."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "lv-2011-hl-iii-2",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2011,
+  "section": "III",
+  "topicId": "latvian-1-0",
+  "conceptId": "mes-esam-tik-laimigi-cik-laimigi",
+  "questionRef": "2011 HL Section III Q2",
+  "questionText": "Uzrakstiet eseju (vismaz 300 vārdu)! „Mēs esam tik laimīgi, cik laimīgi ļaujam sev būt”. (Abrahams Linkolns)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": 40,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "unprinted": true,
+    "contextNote": "The examination requires every answer in LATVIAN. The paper prints the rule on page 2: \"Visām atbildēm jābūt latviski.\" The scheme reprints the part's head, the instruction and the two titles, and prints nothing under them: no criteria, no descriptive line and no split of the part's marks."
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "lv-2012-hl-i-1",
   "subjectId": "latvian",
   "level": "higher",
