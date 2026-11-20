@@ -539,6 +539,80 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2011 Higher Level — © State Examinations Commission.",
+    id: "hun-2011-hl-i-1-a", topicId: "hungarian-0-0", conceptId: "magyarazd-meg-mit-jelent-moralis-szo",
+    section: "I", questionRef: "2011 HL Section I Q1(a)",
+    questionText: "Magyarázd meg, mit jelent a „morális” szó!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A 4. bekezdésben található szó saját szavaiddal kifejezve: a „morális” szó azt jelenti, hogy erkölcsös, erkölcsi. Azon normák alapján élő, amelyeket társadalmi szinten helyesnek tartunk.", marks: 1, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2011 Higher Level — © State Examinations Commission.",
+    id: "hun-2011-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-szoveg-alapjan-kommentald-alabbiakat-minimum",
+    section: "II", questionRef: "2011 HL Section II Q1",
+    questionText: "A szöveg alapján kommentáld az alábbiakat minimum 100 szóban: Kommentáld, hogyan jelenik meg a szövegben a nációk együttélése, és fejtsd ki róla a saját véleményedet!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100 szóban tisztán, érthetően kifejtett saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “a) Németország a pozitív példa:”; “Még a német kancellár is otthagyta a fontos világgazdasági tanácskozást, hogy megnézze hazája meccsét, ez a fajta lelkesedés a társadalom minden rétegében ott van a hétköznapokban is”; “A multikulturalitást és a sikeres integrációt jelképezi: minden réteget egybeforraszt; még a bevándorlók lakta kerületekben is legalább annyi látható a nemzeti összetartozás jelképeiből, mint az „igazi német” negyedekben; a győztes meccs utáni ünnepléseken nemcsak a németek, hanem bevándorlók is ugyanúgy részt vesznek”; “A sokféleség elfogadása a kulcs: a 23 fős német vb-keretben 11 játékosnak vannak külföldi gyökerei, ezért a vegyes összetételű csapatért egyaránt tud lelkesedni a bennszülött és a bevándorolt német focirajongó is”; “Nincs köztük egyetlen idegenlégiós sem, valamennyien a Bundesliga meccsein lépnek pályára hétről hétre, hazai közönség előtt”; “Az identitás egyik alappillére lehet a futball: saját nevelésű fiatalok, akik németek éppúgy lehetnek, mint bevándorlók”; “b) Franciaország a negatív példa:”; “Az utcai bandák morális szintjére süllyedt a korábban a multikulturális nemzeti egységet jelképező válogatott”; “A fehér elit és a bevándorlók alkotta „osztályon kívüliek” között óriási a szakadék”; “Játékuk társadalmi válságtünet is: arra a társadalmi bajra mutat rá, hogy a nációk együttélése kölcsönös faji gyűlölködésbe, többoldalú rasszizmusba csapott át”; “A világbajnokságon a francia válogatott játékának a szabotálásában is tetten érhető volt a csillagászati összegeket kereső észak-afrikai származású játékosok lázadása”; “c) Saját szavakkal kifejtett vélemény”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2011 Higher Level — © State Examinations Commission.",
+    id: "hun-2011-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-diverzitas-segiti-sikert-vagy",
+    section: "III", questionRef: "2011 HL Section III Q1",
+    questionText: "A két téma közül válassz ki egyet, és írj egy minimum 300 szavas esszét! A diverzitás elősegíti-e a sikert?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2011 Higher Level — © State Examinations Commission.",
+    id: "hun-2011-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-legtobben-annyira-boldogok-amennyire",
+    section: "III", questionRef: "2011 HL Section III Q2",
+    questionText: "A két téma közül válassz ki egyet, és írj egy minimum 300 szavas esszét! „A legtöbben annyira boldogok, amennyire elszánták magukat.” (Abraham Lincoln, az Amerikai Egyesült Államok 16. elnöke, 1809–1865)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Válaszolj érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2012, level: "higher",
     paperFileid: "LC551ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2012 Higher Level — © State Examinations Commission.",
