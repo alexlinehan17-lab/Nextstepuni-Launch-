@@ -2841,7 +2841,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-la-1", topicId: "portuguese-2-5", conceptId: "onde-quando-passa-noticia-onde-quando",
     section: "LA", questionRef: "2023 OL Section LA Q1",
@@ -2877,7 +2877,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-la-2", topicId: "portuguese-2-5", conceptId: "noticia-complete-espacos-palavras-falta-idosa",
     section: "LA", questionRef: "2023 OL Section LA Q2",
@@ -2917,7 +2917,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-la-3", topicId: "portuguese-2-5", conceptId: "quem-foi-entrevistado-pelo-jornalista",
     section: "LA", questionRef: "2023 OL Section LA Q3",
@@ -2952,7 +2952,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-la-4", topicId: "portuguese-2-5", conceptId: "apenas-assaltantes-acabou-ser-preso-assinale",
     section: "LA", questionRef: "2023 OL Section LA Q4",
@@ -2987,7 +2987,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-la-5", topicId: "portuguese-2-5", conceptId: "idosa-quis-ser-identificada",
     section: "LA", questionRef: "2023 OL Section LA Q5",
@@ -3022,7 +3022,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-lb-1", topicId: "portuguese-2-5", conceptId: "sofia-pedro-costumam-estar-juntos-muitas",
     section: "LB", questionRef: "2023 OL Section LB Q1",
@@ -3057,7 +3057,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-lb-2", topicId: "portuguese-2-5", conceptId: "quando-sofia-foi-centro-comercial",
     section: "LB", questionRef: "2023 OL Section LB Q2",
@@ -3092,7 +3092,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-lb-3", topicId: "portuguese-2-5", conceptId: "carlos-gosta-fazer",
     section: "LB", questionRef: "2023 OL Section LB Q3",
@@ -3127,7 +3127,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-lb-4", topicId: "portuguese-2-5", conceptId: "assinale-opcao-correta-serra-estrela-ano",
     section: "LB", questionRef: "2023 OL Section LB Q4",
@@ -3162,7 +3162,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-lb-5", topicId: "portuguese-2-5", conceptId: "complete-espacos-aquilo-sofia-deve-levar",
     section: "LB", questionRef: "2023 OL Section LB Q5",
@@ -3197,7 +3197,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-lb-6", topicId: "portuguese-2-5", conceptId: "sofia-quer-fazer-durante-ferias",
     section: "LB", questionRef: "2023 OL Section LB Q6",
@@ -3232,7 +3232,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-lb-7", topicId: "portuguese-2-5", conceptId: "serra-estrela-serra-estrela",
     section: "LB", questionRef: "2023 OL Section LB Q7",
@@ -3269,7 +3269,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-lc-1", topicId: "portuguese-2-5", conceptId: "long-ago-history-porto-seguro-known",
     section: "LC", questionRef: "2023 OL Section LC Q1",
@@ -3304,7 +3304,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-lc-2", topicId: "portuguese-2-5", conceptId: "group-tourists-porto-seguro-popular-destination",
     section: "LC", questionRef: "2023 OL Section LC Q2",
@@ -3339,7 +3339,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-lc-3", topicId: "portuguese-2-5", conceptId: "porto-seguro-find-old-buildings-points",
     section: "LC", questionRef: "2023 OL Section LC Q3",
@@ -3374,7 +3374,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-lc-4", topicId: "portuguese-2-5", conceptId: "dining-out-meeting-people-having-fun",
     section: "LC", questionRef: "2023 OL Section LC Q4",
@@ -3409,7 +3409,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-lc-5", topicId: "portuguese-2-5", conceptId: "beaches-sea-porto-seguro",
     section: "LC", questionRef: "2023 OL Section LC Q5",
@@ -3445,7 +3445,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-lc-6", topicId: "portuguese-2-5", conceptId: "accommodation-city-sold-out-high-season",
     section: "LC", questionRef: "2023 OL Section LC Q6",
@@ -3480,7 +3480,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-ld-1", topicId: "portuguese-2-5", conceptId: "sara-party",
     section: "LD", questionRef: "2023 OL Section LD Q1",
@@ -3515,7 +3515,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-ld-2", topicId: "portuguese-2-5", conceptId: "old-sara",
     section: "LD", questionRef: "2023 OL Section LD Q2",
@@ -3550,7 +3550,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-ld-3", topicId: "portuguese-2-5", conceptId: "complete-sara's-father",
     section: "LD", questionRef: "2023 OL Section LD Q3",
@@ -3585,7 +3585,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-ld-4", topicId: "portuguese-2-5", conceptId: "whom-sara-father-talking",
     section: "LD", questionRef: "2023 OL Section LD Q4",
@@ -3620,7 +3620,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-ld-5", topicId: "portuguese-2-5", conceptId: "tick-correct-answer-below-sara-uncle",
     section: "LD", questionRef: "2023 OL Section LD Q5",
@@ -3658,7 +3658,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-ld-6", topicId: "portuguese-2-5", conceptId: "duarte-drink-party",
     section: "LD", questionRef: "2023 OL Section LD Q6",
@@ -3693,7 +3693,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-le-1", topicId: "portuguese-2-5", conceptId: "podcast",
     section: "LE", questionRef: "2023 OL Section LE Q1",
@@ -3728,7 +3728,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-le-2", topicId: "portuguese-2-5", conceptId: "film-also-seen-outside-angola-tick",
     section: "LE", questionRef: "2023 OL Section LE Q2",
@@ -3763,7 +3763,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-le-3", topicId: "portuguese-2-5", conceptId: "musical-rhythm-mentioned-podcast",
     section: "LE", questionRef: "2023 OL Section LE Q3",
@@ -3798,7 +3798,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-le-4", topicId: "portuguese-2-5", conceptId: "celebration-taking-place-film-released",
     section: "LE", questionRef: "2023 OL Section LE Q4",
@@ -3833,7 +3833,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-le-5", topicId: "portuguese-2-5", conceptId: "njinga-characteristics",
     section: "LE", questionRef: "2023 OL Section LE Q5",
@@ -3868,7 +3868,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-le-6", topicId: "portuguese-2-5", conceptId: "tick-correct-answer-below-reference-lesliana",
     section: "LE", questionRef: "2023 OL Section LE Q6",
@@ -3903,7 +3903,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-le-7", topicId: "portuguese-2-5", conceptId: "gave-standing-ovation-premiere-film",
     section: "LE", questionRef: "2023 OL Section LE Q7",
@@ -3938,7 +3938,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Ordinary Level — © State Examinations Commission.",
     id: "por-2023-ol-le-8", topicId: "portuguese-2-5", conceptId: "njinga-rainha-angola-sell-more-tickets",
     section: "LE", questionRef: "2023 OL Section LE Q8",
@@ -5295,7 +5295,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-la-1", topicId: "portuguese-2-5", conceptId: "pedro-comecou-clube-agora",
     section: "LA", questionRef: "2024 OL Section LA Q1",
@@ -5330,7 +5330,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-la-2", topicId: "portuguese-2-5", conceptId: "complete-frase-letra-opcao-correta-marina",
     section: "LA", questionRef: "2024 OL Section LA Q2",
@@ -5365,7 +5365,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-la-3", topicId: "portuguese-2-5", conceptId: "marina-enumera-vantagens-treinar-naquele-clube",
     section: "LA", questionRef: "2024 OL Section LA Q3",
@@ -5400,7 +5400,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-la-4", topicId: "portuguese-2-5", conceptId: "assinale-tick-dois-beneficios-exercicio-fisico",
     section: "LA", questionRef: "2024 OL Section LA Q4",
@@ -5435,7 +5435,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-la-5", topicId: "portuguese-2-5", conceptId: "dois-falam-horarios-vao-treinar-preencha",
     section: "LA", questionRef: "2024 OL Section LA Q5",
@@ -5471,7 +5471,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-la-6", topicId: "portuguese-2-5", conceptId: "marina-recomenda-aula-pedro-preencha-tabela",
     section: "LA", questionRef: "2024 OL Section LA Q6",
@@ -5508,7 +5508,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-lb-1", topicId: "portuguese-2-5", conceptId: "onde-nasceu-escritora",
     section: "LB", questionRef: "2024 OL Section LB Q1",
@@ -5543,7 +5543,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-lb-2", topicId: "portuguese-2-5", conceptId: "complete-frase-letra-opcao-correta-desde",
     section: "LB", questionRef: "2024 OL Section LB Q2",
@@ -5578,7 +5578,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-lb-3", topicId: "portuguese-2-5", conceptId: "paulina-estudou-escola-comercial-angola-assinale",
     section: "LB", questionRef: "2024 OL Section LB Q3",
@@ -5613,7 +5613,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-lb-4", topicId: "portuguese-2-5", conceptId: "preencha-espacos-complete-frase-alguns-depois",
     section: "LB", questionRef: "2024 OL Section LB Q4",
@@ -5651,7 +5651,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-lb-5", topicId: "portuguese-2-5", conceptId: "quem-personagens-principais-historias-escritora",
     section: "LB", questionRef: "2024 OL Section LB Q5",
@@ -5686,7 +5686,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-lb-6", topicId: "portuguese-2-5", conceptId: "ano-livro-balada-amor-vento-foi",
     section: "LB", questionRef: "2024 OL Section LB Q6",
@@ -5721,7 +5721,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-lb-7", topicId: "portuguese-2-5", conceptId: "foi-premio-paulina-recebeu-2021",
     section: "LB", questionRef: "2024 OL Section LB Q7",
@@ -5756,7 +5756,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-lc-1", topicId: "portuguese-2-5", conceptId: "tick-correct-answer-alice-porto-doctor",
     section: "LC", questionRef: "2024 OL Section LC Q1",
@@ -5791,7 +5791,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-lc-2", topicId: "portuguese-2-5", conceptId: "alice-waiting-visitors-fill-table-below",
     section: "LC", questionRef: "2024 OL Section LC Q2",
@@ -5827,7 +5827,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-lc-3", topicId: "portuguese-2-5", conceptId: "alice-been-boat-rio-douro-tick",
     section: "LC", questionRef: "2024 OL Section LC Q3",
@@ -5862,7 +5862,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-lc-4", topicId: "portuguese-2-5", conceptId: "many-days-holiday-package-alice-chose",
     section: "LC", questionRef: "2024 OL Section LC Q4",
@@ -5897,7 +5897,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-lc-5", topicId: "portuguese-2-5", conceptId: "included-price",
     section: "LC", questionRef: "2024 OL Section LC Q5",
@@ -5932,7 +5932,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-lc-6", topicId: "portuguese-2-5", conceptId: "price-holiday-package-per-adult",
     section: "LC", questionRef: "2024 OL Section LC Q6",
@@ -5967,7 +5967,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-ld-1", topicId: "portuguese-2-5", conceptId: "theme-today-radio-programme",
     section: "LD", questionRef: "2024 OL Section LD Q1",
@@ -6002,7 +6002,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-ld-2", topicId: "portuguese-2-5", conceptId: "many-companies-talk",
     section: "LD", questionRef: "2024 OL Section LD Q2",
@@ -6037,7 +6037,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-ld-3", topicId: "portuguese-2-5", conceptId: "enter-correct-letter-box-provided-companies",
     section: "LD", questionRef: "2024 OL Section LD Q3",
@@ -6072,7 +6072,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-ld-4", topicId: "portuguese-2-5", conceptId: "foods-roupa-terra-uses-make-products",
     section: "LD", questionRef: "2024 OL Section LD Q4",
@@ -6107,7 +6107,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-ld-5", topicId: "portuguese-2-5", conceptId: "whom-verde-company-produce-clothes",
     section: "LD", questionRef: "2024 OL Section LD Q5",
@@ -6142,7 +6142,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-ld-6", topicId: "portuguese-2-5", conceptId: "fill-table-below-natura-pura-country",
     section: "LD", questionRef: "2024 OL Section LD Q6",
@@ -6182,7 +6182,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-le-1", topicId: "portuguese-2-5", conceptId: "luiz-invites-sara-birthday-party-tick",
     section: "LE", questionRef: "2024 OL Section LE Q1",
@@ -6217,7 +6217,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-le-2", topicId: "portuguese-2-5", conceptId: "reason-event",
     section: "LE", questionRef: "2024 OL Section LE Q2",
@@ -6252,7 +6252,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-le-3", topicId: "portuguese-2-5", conceptId: "money-used",
     section: "LE", questionRef: "2024 OL Section LE Q3",
@@ -6287,7 +6287,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-le-4", topicId: "portuguese-2-5", conceptId: "theme-event",
     section: "LE", questionRef: "2024 OL Section LE Q4",
@@ -6322,7 +6322,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2024 Ordinary Level — © State Examinations Commission.",
     id: "por-2024-ol-le-5", topicId: "portuguese-2-5", conceptId: "event-take-place-big-room-offer",
     section: "LE", questionRef: "2024 OL Section LE Q5",
@@ -7982,7 +7982,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-la-1-i", topicId: "portuguese-2-5", conceptId: "aconteceu-algo-misterioso-quando-dia-semana",
     section: "LA", questionRef: "2025 OL Section LA Q1(i)",
@@ -8018,7 +8018,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-la-1-ii", topicId: "portuguese-2-5", conceptId: "aconteceu-algo-misterioso-onde",
     section: "LA", questionRef: "2025 OL Section LA Q1(ii)",
@@ -8053,7 +8053,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-la-2", topicId: "portuguese-2-5", conceptId: "peixe-pacu-adulto-peso-local-onde",
     section: "LA", questionRef: "2025 OL Section LA Q2",
@@ -8091,7 +8091,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-la-3", topicId: "portuguese-2-5", conceptId: "complete-frase-autoridades-suspeitam-peixe-estava",
     section: "LA", questionRef: "2025 OL Section LA Q3",
@@ -8128,7 +8128,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-la-4", topicId: "portuguese-2-5", conceptId: "comunidade-brasileira-pacu-veio-fazer-irlanda",
     section: "LA", questionRef: "2025 OL Section LA Q4",
@@ -8163,7 +8163,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-lb-1", topicId: "portuguese-2-5", conceptId: "chama-single",
     section: "LB", questionRef: "2025 OL Section LB Q1",
@@ -8198,7 +8198,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-lb-2", topicId: "portuguese-2-5", conceptId: "relacao-entre-membros-banda",
     section: "LB", questionRef: "2025 OL Section LB Q2",
@@ -8233,7 +8233,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-lb-3", topicId: "portuguese-2-5", conceptId: "significa-palavra-calema",
     section: "LB", questionRef: "2025 OL Section LB Q3",
@@ -8268,7 +8268,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-lb-4", topicId: "portuguese-2-5", conceptId: "duas-influencias-calema",
     section: "LB", questionRef: "2025 OL Section LB Q4",
@@ -8305,7 +8305,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-lb-5", topicId: "portuguese-2-5", conceptId: "aconteceu-franca",
     section: "LB", questionRef: "2025 OL Section LB Q5",
@@ -8340,7 +8340,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-lb-6", topicId: "portuguese-2-5", conceptId: "foi-concerto-angola-dois",
     section: "LB", questionRef: "2025 OL Section LB Q6",
@@ -8375,7 +8375,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-lc-1", topicId: "portuguese-2-5", conceptId: "elisa-study-before-becoming-tattoo-artist",
     section: "LC", questionRef: "2025 OL Section LC Q1",
@@ -8410,7 +8410,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-lc-2", topicId: "portuguese-2-5", conceptId: "images-represented-elisa-work",
     section: "LC", questionRef: "2025 OL Section LC Q2",
@@ -8445,7 +8445,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-lc-3", topicId: "portuguese-2-5", conceptId: "joao-studio",
     section: "LC", questionRef: "2025 OL Section LC Q3",
@@ -8480,7 +8480,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-lc-4", topicId: "portuguese-2-5", conceptId: "ages-joao-clients",
     section: "LC", questionRef: "2025 OL Section LC Q4",
@@ -8515,7 +8515,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-lc-5", topicId: "portuguese-2-5", conceptId: "miguel-2022",
     section: "LC", questionRef: "2025 OL Section LC Q5",
@@ -8550,7 +8550,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-lc-6", topicId: "portuguese-2-5", conceptId: "miguel-studio",
     section: "LC", questionRef: "2025 OL Section LC Q6",
@@ -8585,7 +8585,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-ld-1", topicId: "portuguese-2-5", conceptId: "day-match",
     section: "LD", questionRef: "2025 OL Section LD Q1",
@@ -8620,7 +8620,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-ld-2", topicId: "portuguese-2-5", conceptId: "friends-stadium",
     section: "LD", questionRef: "2025 OL Section LD Q2",
@@ -8655,7 +8655,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-ld-3", topicId: "portuguese-2-5", conceptId: "time-meet",
     section: "LD", questionRef: "2025 OL Section LD Q3",
@@ -8690,7 +8690,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-ld-4", topicId: "portuguese-2-5", conceptId: "bring-support-team",
     section: "LD", questionRef: "2025 OL Section LD Q4",
@@ -8725,7 +8725,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-ld-5", topicId: "portuguese-2-5", conceptId: "buy-park",
     section: "LD", questionRef: "2025 OL Section LD Q5",
@@ -8760,7 +8760,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-ld-6", topicId: "portuguese-2-5", conceptId: "francisco-always-time-football-tick-correct",
     section: "LD", questionRef: "2025 OL Section LD Q6",
@@ -8795,7 +8795,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-le-1", topicId: "portuguese-2-5", conceptId: "complaints-parents-teachers-computer-games",
     section: "LE", questionRef: "2025 OL Section LE Q1",
@@ -8830,7 +8830,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-le-2", topicId: "portuguese-2-5", conceptId: "advantages-playing-computer-games",
     section: "LE", questionRef: "2025 OL Section LE Q2",
@@ -8865,7 +8865,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-le-3", topicId: "portuguese-2-5", conceptId: "players-feel-virtual-world",
     section: "LE", questionRef: "2025 OL Section LE Q3",
@@ -8900,7 +8900,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-le-4-i", topicId: "portuguese-2-5", conceptId: "presenter-dream-create-computer-game-want",
     section: "LE", questionRef: "2025 OL Section LE Q4(i)",
@@ -8935,7 +8935,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2025 Ordinary Level — © State Examinations Commission.",
     id: "por-2025-ol-le-4-ii", topicId: "portuguese-2-5", conceptId: "players-exchange-other-computer-game",
     section: "LE", questionRef: "2025 OL Section LE Q4(ii)",
@@ -10614,7 +10614,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-la-1", topicId: "portuguese-2-5", conceptId: "complete-frase-voo-problema-escadas-aviao",
     section: "LA", questionRef: "2026 OL Section LA Q1",
@@ -10650,7 +10650,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-la-2", topicId: "portuguese-2-5", conceptId: "horas-novo-horario-embarque",
     section: "LA", questionRef: "2026 OL Section LA Q2",
@@ -10685,7 +10685,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-la-3", topicId: "portuguese-2-5", conceptId: "bruno-vai-viajar",
     section: "LA", questionRef: "2026 OL Section LA Q3",
@@ -10720,7 +10720,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-la-4", topicId: "portuguese-2-5", conceptId: "quem-vai-estar-porto-complete-tabela",
     section: "LA", questionRef: "2026 OL Section LA Q4",
@@ -10757,7 +10757,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-la-5", topicId: "portuguese-2-5", conceptId: "bruno-pode-confirmar-horario-voo-tres",
     section: "LA", questionRef: "2026 OL Section LA Q5",
@@ -10792,7 +10792,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-la-6", topicId: "portuguese-2-5", conceptId: "catarina-explica-bruno-onde-encher-garrafa",
     section: "LA", questionRef: "2026 OL Section LA Q6",
@@ -10832,7 +10832,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-lb-1", topicId: "portuguese-2-5", conceptId: "quando-acontece-evento",
     section: "LB", questionRef: "2026 OL Section LB Q1",
@@ -10869,7 +10869,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-lb-2", topicId: "portuguese-2-5", conceptId: "verdadeiro-falso-assinale-resposta-correta-evento",
     section: "LB", questionRef: "2026 OL Section LB Q2",
@@ -10910,7 +10910,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-lb-3", topicId: "portuguese-2-5", conceptId: "tres-tipos-alojamento-disponiveis-evento",
     section: "LB", questionRef: "2026 OL Section LB Q3",
@@ -10945,7 +10945,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-lb-4", topicId: "portuguese-2-5", conceptId: "duas-formas-chegar-evento",
     section: "LB", questionRef: "2026 OL Section LB Q4",
@@ -10980,7 +10980,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-lb-5", topicId: "portuguese-2-5", conceptId: "duas-informacoes-uteis-disponiveis-pagina-oficial",
     section: "LB", questionRef: "2026 OL Section LB Q5",
@@ -11015,7 +11015,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-lc-1", topicId: "portuguese-2-5", conceptId: "complete-sentence-correct-letter-teresa-start",
     section: "LC", questionRef: "2026 OL Section LC Q1",
@@ -11050,7 +11050,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-lc-2", topicId: "portuguese-2-5", conceptId: "teresa-look-after-grandparents",
     section: "LC", questionRef: "2026 OL Section LC Q2",
@@ -11085,7 +11085,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-lc-3", topicId: "portuguese-2-5", conceptId: "jobs-teresa-looking-tick-correct-answers",
     section: "LC", questionRef: "2026 OL Section LC Q3",
@@ -11120,7 +11120,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-lc-4", topicId: "portuguese-2-5", conceptId: "teresa-personality",
     section: "LC", questionRef: "2026 OL Section LC Q4",
@@ -11155,7 +11155,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-lc-5", topicId: "portuguese-2-5", conceptId: "teresa-availability-after-september",
     section: "LC", questionRef: "2026 OL Section LC Q5",
@@ -11190,7 +11190,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-ld-1", topicId: "portuguese-2-5", conceptId: "paulo-correia-talk-podcast",
     section: "LD", questionRef: "2026 OL Section LD Q1",
@@ -11225,7 +11225,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-ld-2", topicId: "portuguese-2-5", conceptId: "comedians-nationalities-show-tons-comedia",
     section: "LD", questionRef: "2026 OL Section LD Q2",
@@ -11260,7 +11260,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-ld-3", topicId: "portuguese-2-5", conceptId: "target-audience-show-tons-comedia",
     section: "LD", questionRef: "2026 OL Section LD Q3",
@@ -11295,7 +11295,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-ld-4", topicId: "portuguese-2-5", conceptId: "comedians-present-show-dublin",
     section: "LD", questionRef: "2026 OL Section LD Q4",
@@ -11330,7 +11330,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-ld-5", topicId: "portuguese-2-5", conceptId: "tons-comedia-different-portugal-tick-correct",
     section: "LD", questionRef: "2026 OL Section LD Q5",
@@ -11365,7 +11365,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-le-1", topicId: "portuguese-2-5", conceptId: "luana-jonas-meet",
     section: "LE", questionRef: "2026 OL Section LE Q1",
@@ -11400,7 +11400,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-le-2", topicId: "portuguese-2-5", conceptId: "items-jonas-bringing-tick-correct-answers",
     section: "LE", questionRef: "2026 OL Section LE Q2",
@@ -11435,7 +11435,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-le-3", topicId: "portuguese-2-5", conceptId: "jonas-idea",
     section: "LE", questionRef: "2026 OL Section LE Q3",
@@ -11470,7 +11470,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-le-4", topicId: "portuguese-2-5", conceptId: "luana-suggest",
     section: "LE", questionRef: "2026 OL Section LE Q4",
@@ -11505,7 +11505,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-le-5-i", topicId: "portuguese-2-5", conceptId: "jonas-wants-people-envelopes-envelopes",
     section: "LE", questionRef: "2026 OL Section LE Q5(i)",
@@ -11540,7 +11540,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-le-5-ii", topicId: "portuguese-2-5", conceptId: "jonas-wants-people-envelopes-envelopes-made",
     section: "LE", questionRef: "2026 OL Section LE Q5(ii)",
@@ -11575,7 +11575,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-le-6-i", topicId: "portuguese-2-5", conceptId: "group-won-young-scientist-award-prize",
     section: "LE", questionRef: "2026 OL Section LE Q6(i)",
@@ -11610,7 +11610,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2026, level: "ordinary",
-    paperFileid: "LC018GLP000EV",
+    paperFileid: "LC018GLPA00EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2026 Ordinary Level — © State Examinations Commission.",
     id: "por-2026-ol-le-6-ii", topicId: "portuguese-2-5", conceptId: "group-won-young-scientist-award-device",
     section: "LE", questionRef: "2026 OL Section LE Q6(ii)",
