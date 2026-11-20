@@ -2689,7 +2689,13 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Eșecul comunicării poate fi semnul eșecului unei societăți în care mesajele transmise nu le mai sunt oamenilor de folos, nu-i mai apropie, ci îi rătăcesc, pe fiecare, în neînțelegere. Fiind prea multe cuvinte, sensul se pierde și totul devine cacofonie, vorbărie goală, zgomot…",
+    "verbatim": "Eșecul comunicării poate fi semnul eșecului unei societăți în care mesajele transmise nu le mai sunt oamenilor de folos, nu-i mai apropie, ci îi rătăcesc, pe fiecare, în",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "neînțelegere. Fiind prea multe cuvinte, sensul se pierde și totul devine cacofonie, vorbărie goală, zgomot…",
     "marks": null
    }
   ],

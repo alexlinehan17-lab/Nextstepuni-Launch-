@@ -987,6 +987,33 @@ export const CARDS: SecCard[] = [
     year: 2013, level: "higher",
     paperFileid: "LC553ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2013 Higher Level — © State Examinations Commission.",
+    id: "ron-2013-hl-i-6", topicId: "romanian-0-1", conceptId: "explica-potrivit-autorului-societatea-cetatea-sub",
+    section: "I", questionRef: "2013 HL Section I Q6",
+    questionText: "Explicați de ce, potrivit autorului, societatea („cetatea“), sub noile tendințe din comunicare, „pare un fel de Babel isteric, în care se comunică haotic, cacofonic, indescifrabil.“ (paragraful 4).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Babelul face referire la spațiul în care oamenii nu se mai înțeleg, fiecare vorbind o altă limbă, neînțeleasă de ceilalți. Societatea devenită un „Babel isteric…“ este privită ca un spațiu în care fiecare are de comunicat ceva, vrea, cu orice preț, să spună ceva, fără a fi neapărat interesat ca ceilalți să-l înțeleagă.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Buna înţelegere a textului şi a consecinţelor produse de fenomenul descris în el:”." },
+    { id: "r-2", kind: "point", verbatim: "Multitudinea mesajelor de tot felul – de propagandă, publicitare... – împânzesc spațiul public, efectul fiind confuzia generală a celor bombardați de atâtea mesaje.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Eșecul comunicării poate fi semnul eșecului unei societăți în care mesajele transmise nu le mai sunt oamenilor de folos, nu-i mai apropie, ci îi rătăcesc, pe fiecare, în", marks: null },
+    { id: "r-4", kind: "point", verbatim: "neînțelegere. Fiind prea multe cuvinte, sensul se pierde și totul devine cacofonie, vorbărie goală, zgomot…", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 2: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2013 Higher Level — © State Examinations Commission.",
     id: "ron-2013-hl-ii-1", topicId: "romanian-1-0", conceptId: "comenta-afirma-autorului-comunicarea-devenit-metod",
     section: "II", questionRef: "2013 HL Section II Q1",
     questionText: "Comentați afirmația autorului: „Comunicarea a devenit o metodă de a vinde ceea ce ai de vîndut sau de a obţine ceea ce ai de obţinut.“ – paragraful 4 (aproximativ 100 de cuvinte).",

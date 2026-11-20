@@ -381,7 +381,10 @@ SPECS[2013] = [
     R('I4', dashes((100, 103), (104, 107), (108, 110)), whole=True, rownote=_head(98, 99, after='4. ')),
     R('I5', dashes((114, 115), (116, 119), (120, 122), (123, 125)), whole=True,
       rownote=_head(112, 113, after='5. ')),
-    R('I6', dashes((128, 131), (132, 133)) + [shown(J(L(134, 135, after='– '), L(141, 142)))], whole=True,
+    # The third point runs over the scheme's page break (p4 foot to p5 head);
+    # the build traces only an unbroken run, so its two printed halves are two
+    # shown rows, in order.
+    R('I6', dashes((128, 131), (132, 133)) + [shown(L(134, 135, after='– ')), shown(L(141, 142))], whole=True,
       rownote=_head(127, after='6. ')),
     R('II1', [graded(L(154, 157), PARTP(), CRIT_2013)],
       rownote=both(quote(L(145, 146), lead='The scheme prints'),
