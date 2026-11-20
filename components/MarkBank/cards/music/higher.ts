@@ -47838,6 +47838,248 @@ export const CARDS: SecCard[] = [
     ...base, kind: "rubric",
     year: 2013, level: "higher",
     paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2013 Higher Level, p.5 — © State Examinations Commission.",
+    id: "mus-2013-hl-c-b-q4", topicId: "music-1-14", conceptId: "mus-available-bank-bass-below",
+    section: "B", questionRef: "2013 HL Composing Section B Q4",
+    stem: "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6",
+    questionText: "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS PREPARATORY WORK • Plot the chords available in the key of A major, either in the chord bank grid or on the stave below. • Study the piece of music below. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "bass-count",
+                      "label": ".5 mark per correct bass note under each chord symbol if treble melody note is also correct. (.5 X 21)",
+                      "maxMarks": 10.5,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2,
+                            2.5,
+                            3,
+                            3.5,
+                            4,
+                            4.5,
+                            5,
+                            5.5,
+                            6,
+                            6.5,
+                            7,
+                            7.5,
+                            8,
+                            8.5,
+                            9,
+                            9.5,
+                            10,
+                            10.5
+                      ],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 21
+                      }
+                },
+                {
+                      "id": "bass-quality",
+                      "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge",
+                      "maxMarks": 9.5,
+                      "permittedMarks": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            9.5
+                      ],
+                      "guidance": []
+                },
+                {
+                      "id": "melody",
+                      "label": "Melody",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Melody has excellent style and imagination with an excellent awareness of underlying harmonic structure and development of opening ideas.",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent point(s) of climax."
+                                  ]
+                            },
+                            {
+                                  "label": "Very good sense of shape and structure.",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Musical, with a very good awareness of harmonic structure and very good point(s) of climax.",
+                                        "Opening ideas very well developed."
+                                  ]
+                            },
+                            {
+                                  "label": "A good sense of melodic and rhythmic interest and awareness of harmonic structure.",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Points of rest well outlined and good development of opening ideas."
+                                  ]
+                            },
+                            {
+                                  "label": "A fair sense of shape and balance between phrases.",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Notes generally fit chords."
+                                  ]
+                            },
+                            {
+                                  "label": "Some melodic and rhythmic interest.",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Little sense of structure.",
+                                        "Some notes fit chords."
+                                  ]
+                            },
+                            {
+                                  "label": "No shape.",
+                                  "marks": [0,1,2,3,4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very few notes fit chords."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 4",
+          "pages": [
+                6,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Music 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2013 Higher Level, p.5 — © State Examinations Commission.",
+    id: "mus-2013-hl-c-b-q5", topicId: "music-1-13", conceptId: "mus-adjacent-available-bank-bass",
+    section: "B", questionRef: "2013 HL Composing Section B Q5",
+    stem: "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6",
+    questionText: "COMPOSING BASS NOTES AND CHORD INDICATIONS TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of F♯ minor, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable bass notes and chord indications in the style of the given opening. • Do not repeat the same chord in the same position in adjacent boxes. • You may use chord symbols or Roman numerals, but not both.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "chords-count",
+                      "label": "1 mark for each chord that is part of a good progression (1 x 23)",
+                      "maxMarks": 23,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 23
+                      }
+                },
+                {
+                      "id": "chords-quality",
+                      "label": "Quality of musical  progressions and cadences overall",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": []
+                },
+                {
+                      "id": "bass-count",
+                      "label": ".5 mark per correct bass note under each correct chord symbol",
+                      "maxMarks": 11.5,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2,
+                            2.5,
+                            3,
+                            3.5,
+                            4,
+                            4.5,
+                            5,
+                            5.5,
+                            6,
+                            6.5,
+                            7,
+                            7.5,
+                            8,
+                            8.5,
+                            9,
+                            9.5,
+                            10,
+                            10.5,
+                            11,
+                            11.5
+                      ],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 23
+                      }
+                },
+                {
+                      "id": "bass-quality",
+                      "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge",
+                      "maxMarks": 12.5,
+                      "permittedMarks": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10,
+                            11,
+                            12,
+                            12.5
+                      ],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 5",
+          "pages": [
+                8,
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "higher",
+    paperFileid: "LC067ALP006EV",
     schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2013 Higher Level, p.6 — © State Examinations Commission.",
     id: "mus-2013-hl-c-b-q6", topicId: "music-1-15", conceptId: "mus-adding-adjacent-available-bank",
     section: "B", questionRef: "2013 HL Composing Section B Q6",
@@ -51160,6 +51402,248 @@ export const CARDS: SecCard[] = [
           "title": "Section A — Question 3",
           "pages": [
                 5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2011 Higher Level, p.5 — © State Examinations Commission.",
+    id: "mus-2011-hl-c-b-q4", topicId: "music-1-14", conceptId: "mus-available-bank-bass-below",
+    section: "B", questionRef: "2011 HL Composing Section B Q4",
+    stem: "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6",
+    questionText: "COMPOSING MELODY AND BASS NOTES FROM A SET OF CHORDS PREPARATORY WORK • Plot the chords available in the key of A minor, either in the chord bank grid or on the stave below. • Study the piece of music below. • Using the chords indicated, compose melody and bass notes to complete the piece in the given style.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "bass-count",
+                      "label": ".5 mark per correct bass note under each chord symbol if treble melody note is also correct. (.5 X 21)",
+                      "maxMarks": 10.5,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2,
+                            2.5,
+                            3,
+                            3.5,
+                            4,
+                            4.5,
+                            5,
+                            5.5,
+                            6,
+                            6.5,
+                            7,
+                            7.5,
+                            8,
+                            8.5,
+                            9,
+                            9.5,
+                            10,
+                            10.5
+                      ],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 21
+                      }
+                },
+                {
+                      "id": "bass-quality",
+                      "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge",
+                      "maxMarks": 9.5,
+                      "permittedMarks": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            9.5
+                      ],
+                      "guidance": []
+                },
+                {
+                      "id": "melody",
+                      "label": "Melody",
+                      "maxMarks": 40,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                      "guidance": [],
+                      "bands": [
+                            {
+                                  "label": "Melody has excellent style and imagination with an excellent awareness of underlying harmonic structure and development of opening ideas.",
+                                  "marks": [34,35,36,37,38,39,40],
+                                  "guidance": [
+                                        "Excellent point(s) of climax."
+                                  ]
+                            },
+                            {
+                                  "label": "Very good sense of shape and structure.",
+                                  "marks": [28,29,30,31,32,33],
+                                  "guidance": [
+                                        "Musical, with a very good awareness of harmonic structure and very good point(s) of climax.",
+                                        "Opening ideas very well developed."
+                                  ]
+                            },
+                            {
+                                  "label": "A good sense of melodic and rhythmic interest and awareness of harmonic structure.",
+                                  "marks": [22,23,24,25,26,27],
+                                  "guidance": [
+                                        "Points of rest well outlined and good development of opening ideas."
+                                  ]
+                            },
+                            {
+                                  "label": "A fair sense of shape and balance between phrases.",
+                                  "marks": [16,17,18,19,20,21],
+                                  "guidance": [
+                                        "Notes generally fit chords."
+                                  ]
+                            },
+                            {
+                                  "label": "Some melodic and rhythmic interest.",
+                                  "marks": [10,11,12,13,14,15],
+                                  "guidance": [
+                                        "Little sense of structure.",
+                                        "Some notes fit chords."
+                                  ]
+                            },
+                            {
+                                  "label": "No shape.",
+                                  "marks": [0,1,2,3,4,5,6,7,8,9],
+                                  "guidance": [
+                                        "Very few notes fit chords."
+                                  ]
+                            }
+                      ]
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 4",
+          "pages": [
+                6,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Music 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",
+          "sourceFileid": "LC067ALP006EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC067ALP006EV",
+    schemeCitation: "Marking grid quoted from the SEC marking scheme, Music 2011 Higher Level, p.5 — © State Examinations Commission.",
+    id: "mus-2011-hl-c-b-q5", topicId: "music-1-13", conceptId: "mus-adjacent-available-bank-bass",
+    section: "B", questionRef: "2011 HL Composing Section B Q5",
+    stem: "Answer ONE QUESTION ONLY in this section: Q4 or Q5 or Q6",
+    questionText: "COMPOSING BASS NOTES AND CHORD INDICATIONS TO A GIVEN TUNE PREPARATORY WORK • Plot the chords available in the key of G minor, either in the chord bank grid or on the stave below. • Study the piece of music below. • Insert suitable bass notes and chord indications in the style of the given opening. • Do not repeat the same chord in the same position in adjacent boxes. • You may use chord symbols or Roman numerals, but not both.",
+    totalMarks: 60,
+    rubric: {
+          "system": "french",
+          "taskRequirements": [],
+          "criteria": [
+                {
+                      "id": "chords-count",
+                      "label": "1 mark for each chord that is part of a good progression in chord boxes",
+                      "maxMarks": 23,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 1,
+                            "items": 23
+                      }
+                },
+                {
+                      "id": "chords-quality",
+                      "label": "Quality of musical  progressions and cadences overall",
+                      "maxMarks": 13,
+                      "permittedMarks": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+                      "guidance": []
+                },
+                {
+                      "id": "bass-count",
+                      "label": ".5 mark per correct bass note under each correct chord symbol",
+                      "maxMarks": 11.5,
+                      "permittedMarks": [
+                            0,
+                            0.5,
+                            1,
+                            1.5,
+                            2,
+                            2.5,
+                            3,
+                            3.5,
+                            4,
+                            4.5,
+                            5,
+                            5.5,
+                            6,
+                            6.5,
+                            7,
+                            7.5,
+                            8,
+                            8.5,
+                            9,
+                            9.5,
+                            10,
+                            10.5,
+                            11,
+                            11.5
+                      ],
+                      "guidance": [],
+                      "counted": {
+                            "rate": 0.5,
+                            "items": 23
+                      }
+                },
+                {
+                      "id": "bass-quality",
+                      "label": "Quality of bass line, including sense of musicality, awareness of style and technical knowledge",
+                      "maxMarks": 12.5,
+                      "permittedMarks": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10,
+                            11,
+                            12,
+                            12.5
+                      ],
+                      "guidance": []
+                }
+          ],
+          "markingGuideNote": "SECTION B – HARMONY (60 marks)"
+    },
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "COMPOSING · SECTION B",
+          "title": "Section B — Question 5",
+          "pages": [
+                8,
+                9
           ],
           "attribution": "SEC Leaving Certificate Music 2011 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "The question and its printed opening, exactly as the composing booklet sets them.",

@@ -38776,6 +38776,52 @@ export const CARDS: SecCard[] = [
     year: 2013, level: "ordinary",
     paperFileid: "LC067GLP008EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2013-ol-l-q5-x3-ii", topicId: "music-2-2", conceptId: "mus-chosen-describe-each-excerpt",
+    section: "L", questionRef: "2013 OL Listening Q5 Excerpt 3(ii)",
+    stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3",
+    questionText: "Describe one feature of each style you have chosen as heard in the excerpt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 4, contextNote: "The scheme reads: “Feature of style 1” “Feature of style 2”", permittedMarks: [0,2,4], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 5",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Leaving Certificate Music 2013 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 9,
+                      "r": [
+                            0.05,
+                            0.222,
+                            0.95,
+                            0.46
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Question 5 · Excerpt 3",
+          "title": "2013 Music · Listening test (Higher and Ordinary)",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2013/LC067ZLP217EV.mp3",
+          "secFileid": "LC067ZLP217EV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC067ZLP217EV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 2 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2013 Ordinary Level — © State Examinations Commission.",
     id: "mus-2013-ol-l-q5-x3-iii", topicId: "music-2-2", conceptId: "mus-excerpt-instrument-irish-name",
     section: "L", questionRef: "2013 OL Listening Q5 Excerpt 3(iii)",
     stem: "Irish Music You will hear THREE excerpts, each played THREE times. There is a twenty second gap between each playing of the music in this question.\n• Answer the questions on each excerpt. Excerpt 3",
@@ -40966,6 +41012,51 @@ export const CARDS: SecCard[] = [
           "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC067ZLP100EV.mp3",
           "attribution": "© State Examinations Commission.",
           "presentationNote": "The SEC publishes this test as two sound files. This is Sound File 1 of 2. Use the player to move to the question and replay the excerpt."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC067GLP008EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Music 2011 Ordinary Level — © State Examinations Commission.",
+    id: "mus-2011-ol-l-q3-v", topicId: "music-2-15", conceptId: "mus-above-appear-explain-markings",
+    section: "L", questionRef: "2011 OL Listening Q3(v)",
+    stem: "An excerpt from Romeo and Juliet Fantasy Overture by Tchaikovsky will be played THREE times.\n• There is a twenty second gap between each playing of the music in this question.\n• The outline score of bars 1–11 of the excerpt is printed below.\n• Answer the following questions:",
+    questionText: "Explain the markings p and mf as they appear on the score above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 2, contextNote: "The scheme reads: “Explanation of p” “Explanation of mf”", permittedMarks: [0,1,2], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING",
+          "title": "Listening — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Music 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "The question as the listening booklet prints it. Play the recording, then answer.",
+          "regions": [
+                {
+                      "p": 5,
+                      "r": [
+                            0.05,
+                            0.732,
+                            0.95,
+                            0.835
+                      ]
+                }
+          ],
+          "sourceFileid": "LC067GLP008EV"
+    },
+    questionFigure: {
+          "candId": "music-2011-OL-l-q3-v-score",
+          "src": "/exam-figures/music/markbank/music-2011-OL-l-q3-v-score.png",
+          "srcHash": "1bec39e329a6293cf1b467b33ddd1c1a",
+          "alt": "The printed outline score of bars 1-11 (treble clef, four flats, C time) with its markings p marc., a crescendo hairpin, mf and p, printed with Listening Q3(v) in the 2011 Ordinary Level paper, as the SEC set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Music 2011 Ordinary Level examination paper — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {

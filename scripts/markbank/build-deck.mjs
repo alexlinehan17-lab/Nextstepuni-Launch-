@@ -807,8 +807,12 @@ function spanishGridFault(c, scheme) {
     if (halfTop) {
       const ladder = [...Array(Math.floor(k.maxMarks) + 1).keys(), k.maxMarks];
       if (allowed.length !== ladder.length || allowed.some((m, i) => m !== ladder[i])) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
-      const marks = (k.bands ?? []).flatMap(b => b.marks).sort((a, b) => a - b);
-      if (marks.length !== ladder.length || marks.some((m, i) => m !== ladder[i])) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
+      // A quality line the scheme prints with its marks only (2011/2013 HL "Quality of bass line ... 9.5") has
+      // no bands; where bands are printed they cover the ladder once, as on every other criterion.
+      if (k.bands) {
+        const marks = k.bands.flatMap(b => b.marks).sort((a, b) => a - b);
+        if (marks.length !== ladder.length || marks.some((m, i) => m !== ladder[i])) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
+      }
       continue;
     }
     if (allowed.length !== k.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;

@@ -118517,25 +118517,14 @@
     "id": "r-1",
     "kind": "criterion",
     "verbatim": "The scheme prints no answer for this part.",
-    "marks": 2,
+    "marks": 4,
     "permittedMarks": [
      0,
-     2
+     2,
+     4
     ],
     "unprinted": true,
-    "contextNote": "The scheme reads: “Feature of style 1”"
-   },
-   {
-    "id": "r-2",
-    "kind": "criterion",
-    "verbatim": "The scheme prints no answer for this part.",
-    "marks": 2,
-    "permittedMarks": [
-     0,
-     2
-    ],
-    "unprinted": true,
-    "contextNote": "The scheme reads: “Feature of style 2”"
+    "contextNote": "The scheme reads: “Feature of style 1” “Feature of style 2”"
    }
   ],
   "tariffModel": {
@@ -126418,25 +126407,14 @@
     "id": "r-1",
     "kind": "criterion",
     "verbatim": "The scheme prints no answer for this part.",
-    "marks": 1,
+    "marks": 2,
     "permittedMarks": [
      0,
-     1
+     1,
+     2
     ],
     "unprinted": true,
-    "contextNote": "The scheme reads: “Explanation of p”"
-   },
-   {
-    "id": "r-2",
-    "kind": "criterion",
-    "verbatim": "The scheme prints no answer for this part.",
-    "marks": 1,
-    "permittedMarks": [
-     0,
-     1
-    ],
-    "unprinted": true,
-    "contextNote": "The scheme reads: “Explanation of mf”"
+    "contextNote": "The scheme reads: “Explanation of p” “Explanation of mf”"
    }
   ],
   "tariffModel": {

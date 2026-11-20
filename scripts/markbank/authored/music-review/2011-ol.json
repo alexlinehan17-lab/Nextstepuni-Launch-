@@ -824,30 +824,21 @@
    "rows": [
     {
      "type": "rule",
-     "marks": 1,
+     "marks": 2,
      "steps": [
       0,
-      1
+      1,
+      2
      ],
      "quote": [
-      "Explanation of p"
-     ]
-    },
-    {
-     "type": "rule",
-     "marks": 1,
-     "steps": [
-      0,
-      1
-     ],
-     "quote": [
+      "Explanation of p",
       "Explanation of mf"
      ]
     }
    ],
    "grid": null,
    "sharedCard": null,
-   "notes": "One excerpt for the whole question: the Q. 3 line and its three printed bullets are the lead-in, each bullet with \"\\n• \" (the \"Answer the following questions:\" bullet is printed below the score; as 2011 Higher Q3, the same lines). The title is italic in print. The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; checked line by line against the OCR and the renders). The scheme prints no title for Q3. \"p\" and \"mf\" are printed as bold italic dynamic marks in the question line; the text layer carries them as the letters \"p\" and \"mf\", written so. The two answer lines are labelled \"p\" / \"mf\" (answer slots, not typed). The ask is about the printed score (\"as they appear on the score above\"), not the recording, so needsRecording false, and the figure is the score (question typed, includesPrompt false). The scheme prints no explanation, only \"Explanation of p\" 1 and \"Explanation of mf\" 1 (p and mf italic): two rule rows, steps 0 and 1. Q3: 2 + 2 + 2 + 2 + 2 = 10, the printed (10)."
+   "notes": "One excerpt for the whole question: the Q. 3 line and its three printed bullets are the lead-in, each bullet with \"\\n• \" (the \"Answer the following questions:\" bullet is printed below the score; as 2011 Higher Q3, the same lines). The title is italic in print. The listening booklet's text layer is clean Times New Roman for every question line (capitals such as \"THREE\" stored as printed; checked line by line against the OCR and the renders). The scheme prints no title for Q3. \"p\" and \"mf\" are printed as bold italic dynamic marks in the question line; the text layer carries them as the letters \"p\" and \"mf\", written so. The two answer lines are labelled \"p\" / \"mf\" (answer slots, not typed). The ask is about the printed score (\"as they appear on the score above\"), not the recording, so needsRecording false, and the figure is the score (question typed, includesPrompt false). The scheme prints no explanation, only \"Explanation of p\" 1 and \"Explanation of mf\" 1 (p and mf italic): two rule rows, steps 0 and 1. Q3: 2 + 2 + 2 + 2 + 2 = 10, the printed (10). The scheme prices two answers it does not print: one rule row on the full mark, its two printed lines quoted (an unprinted row must be the card's only one)."
   },
   {
    "paper": "listening",

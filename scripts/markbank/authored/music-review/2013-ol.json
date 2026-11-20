@@ -1434,30 +1434,21 @@
    "rows": [
     {
      "type": "rule",
-     "marks": 2,
+     "marks": 4,
      "steps": [
       0,
-      2
+      2,
+      4
      ],
      "quote": [
-      "Feature of style 1"
-     ]
-    },
-    {
-     "type": "rule",
-     "marks": 2,
-     "steps": [
-      0,
-      2
-     ],
-     "quote": [
+      "Feature of style 1",
       "Feature of style 2"
      ]
     }
    ],
    "grid": null,
    "sharedCard": null,
-   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The section heading \"Irish Music\" opens the lead-in (lane ruling), then the printed lead-in sentences (wrapped over two lines, joined with a space) and its bullet with \"\\n• \" (as 2014 and 2015 Ordinary). Each excerpt heading prints only \"Excerpt N\" (bold, no full stop); the scheme names no tunes for Q5. The text layer is clean on pages 8-9 (\"THREE\" stored as printed). \"one\" is bold in print; \"Style 1\" / \"Feature\" / \"Style 2\" / \"Feature\" are answer-slot labels (not asks, not typed). The scheme prints no feature, only \"Feature of style 1\" 2 and \"Feature of style 2\" 2: two rule rows, steps 0 and 2 each (no partial mark printed)."
+   "notes": "Address: the booklet numbers the parts afresh under each excerpt, so the excerpt is in the address (lane ruling, 19 Nov evening). The section heading \"Irish Music\" opens the lead-in (lane ruling), then the printed lead-in sentences (wrapped over two lines, joined with a space) and its bullet with \"\\n• \" (as 2014 and 2015 Ordinary). Each excerpt heading prints only \"Excerpt N\" (bold, no full stop); the scheme names no tunes for Q5. The text layer is clean on pages 8-9 (\"THREE\" stored as printed). \"one\" is bold in print; \"Style 1\" / \"Feature\" / \"Style 2\" / \"Feature\" are answer-slot labels (not asks, not typed). The scheme prints no feature, only \"Feature of style 1\" 2 and \"Feature of style 2\" 2: two rule rows, steps 0 and 2 each (no partial mark printed). The scheme prices two answers it does not print: one rule row on the full mark, its two printed lines quoted (an unprinted row must be the card's only one)."
   },
   {
    "paper": "listening",
