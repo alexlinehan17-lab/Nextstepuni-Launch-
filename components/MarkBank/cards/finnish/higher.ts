@@ -1215,6 +1215,157 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2014 Higher Level — © State Examinations Commission.",
+    id: "fin-2014-hl-i-1-b", topicId: "finnish-0-0", conceptId: "selita-omin-sanoin-seuraavat-ilmaisut-tykastynyt",
+    section: "I", questionRef: "2014 HL Section I Q1(b)",
+    questionText: "Selitä omin sanoin seuraavat ilmaisut: tykästynyt",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "pitää, olla kovin ihastunut/rakastunut (puhekielinen, arkinen)", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Finnish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2014 Higher Level — © State Examinations Commission.",
+    id: "fin-2014-hl-i-1-d", topicId: "finnish-0-0", conceptId: "selita-omin-sanoin-seuraavat-ilmaisut-mollata",
+    section: "I", questionRef: "2014 HL Section I Q1(d)",
+    questionText: "Selitä omin sanoin seuraavat ilmaisut: mollata",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "haukkua, moittia, arvostella", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Finnish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2014 Higher Level — © State Examinations Commission.",
+    id: "fin-2014-hl-i-2", topicId: "finnish-0-1", conceptId: "mita-kielipelissa-tapahtuu-puhujien-valilla-terapeutti",
+    section: "I", questionRef: "2014 HL Section I Q2",
+    questionText: "Mitä kielipelissä tapahtuu puhujien välillä terapeutti Benny Uhleniuksen mukaan?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kielipeliä pelaava punoo sanoilla verkon, johon toinen jää tunteistaan kiinni. Puhujan lähdettyä jäljelle jää odotuksia, toiveita, oletuksia – tai aavistus tulevasta mielipahasta. –Kurjan olon tajuaa, mutta ei sitä, miten se syntyi. Paljon on puhuttu, se on varmaa. Mutta mistä puhuttiin, voikin olla jo epäselvempää. Ja sovittiinko jotain? Useimmiten ei. Ja jos sovittiin, sopiminen tapahtui tasolla ”katsotaan”.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Finnish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2014 Higher Level — © State Examinations Commission.",
+    id: "fin-2014-hl-i-4", topicId: "finnish-0-1", conceptId: "tie-helvettiin-paallystetty-hyvin-aikein-mita",
+    section: "I", questionRef: "2014 HL Section I Q4",
+    questionText: "”Tie helvettiin on päällystetty hyvin aikein”, mitä tämä tarkoittaa tekstin mukaan?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kukaan ei ole niin taitava sabotoimaan omia aikeitaan kuin ihminen itse. Kunnianhimoisiin tekoihin tarvitaan myös kunnianhimoista puhetta. Konditionaaliin eli isi-muotoon kannattaa kiinnittää huomiota, jos ihmissuhteissa tuntuu olevan epämääräisen hankalaa pitää suunta selkeänä Silloin käytetään konditionaalia.Isi- muotoihin tykästyneen kanssa kannattaa harkita, mihin sitoutuu.", marks: 5, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Finnish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2014 Higher Level — © State Examinations Commission.",
+    id: "fin-2014-hl-ii-1", topicId: "finnish-1-0", conceptId: "kirjoita-suunnilleen-100-sanan-mittainen-oma",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "Kirjoita suunnilleen 100 sanan mittainen oma kommenttisi tekstin väitteeseen: ”Sanat, joilla on aito merkitys, vaikuttavat myönteisesti omaan hyvinvointiimme ja ihmissuhteisiimme.”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "HUOMAA: Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet", marks: 30, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Tekstin sisällön ymmärtäminen 30% : kokelas ymmärtää kysymykset ja osaa vastata niihin.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Vastausten sisältö ja rakenne30%: kokelas käyttää asianmukaista ja täsmällistä kieltä jäsentyneesti sekä viittaa oikein tekstiin.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Kielellinen ilmaisu 30%: kokelas pystyy kielentämään selkeästi ja sujuvasti ajatuksiaan.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Kieliasu 10%: kieliopillinen rakenne, oikeinkirjoitus, välimerkit","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II TEHTÄVÄ:",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3,
+                4
+          ],
+          "attribution": "SEC Finnish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2014 Higher Level — © State Examinations Commission.",
+    id: "fin-2014-hl-iii-1", topicId: "finnish-1-1", conceptId: "kieli-poliittisen-yhteiskunnallisen-vallankayton-valineena",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "Kirjoita suunnilleen 300 sanan essee. Valitse aiheeksi toinen näistä: Kieli poliittisen ja yhteiskunnallisen vallankäytön välineenä.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "HUOMAA: Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Tekstin sisällön ymmärtäminen 30% : kokelas ymmärtää kysymykset ja osaa vastata niihin.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Vastausten sisältö ja rakenne30%: kokelas käyttää asianmukaista ja täsmällistä kieltä jäsentyneesti sekä viittaa oikein tekstiin.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Kielellinen ilmaisu 30%: kokelas pystyy kielentämään selkeästi ja sujuvasti ajatuksiaan.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Kieliasu 10%: kieliopillinen rakenne, oikeinkirjoitus, välimerkit","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2014 Higher Level — © State Examinations Commission.",
+    id: "fin-2014-hl-iii-2", topicId: "finnish-1-1", conceptId: "vaikka-matkustaisimme-maailman-aariin-loytaaksemme-kauneutta",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "Kirjoita suunnilleen 300 sanan essee. Valitse aiheeksi toinen näistä: ”Vaikka matkustaisimme maailman ääriin löytääksemme kauneutta, meillä täytyy olla sitä mukanamme, muuten emme sitä löydä.” - Ralph Waldo Emerson",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "HUOMAA: Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Tekstin sisällön ymmärtäminen 30% : kokelas ymmärtää kysymykset ja osaa vastata niihin.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Vastausten sisältö ja rakenne30%: kokelas käyttää asianmukaista ja täsmällistä kieltä jäsentyneesti sekä viittaa oikein tekstiin.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Kielellinen ilmaisu 30%: kokelas pystyy kielentämään selkeästi ja sujuvasti ajatuksiaan.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Kieliasu 10%: kieliopillinen rakenne, oikeinkirjoitus, välimerkit","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2015, level: "higher",
     paperFileid: "LC049ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2015 Higher Level — © State Examinations Commission.",

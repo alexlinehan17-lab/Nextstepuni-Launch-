@@ -333,11 +333,11 @@
     "refsHash": "ca6f9603134fc99f"
   },
   "finnish": {
-    "cards": 112,
-    "contentHash": "960467674f70fe1a",
+    "cards": 119,
+    "contentHash": "9c1f805f0f77a42a",
     "coveragePct": 100.0,
-    "covered": 112,
-    "excluded": 55,
+    "covered": 119,
+    "excluded": 48,
     "leaves": 167,
     "open": 0,
     "orphans": 0,
@@ -345,7 +345,7 @@
       "count": 13,
       "hash": "f03b7ec1b6337cd6"
     },
-    "refsHash": "8c8ed85d37ddc482"
+    "refsHash": "cb110d511c315678"
   },
   "french": {
     "cards": 2286,
