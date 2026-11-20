@@ -258,19 +258,19 @@
     "refsHash": "0ffa06bee95d8270"
   },
   "dutch": {
-    "cards": 81,
-    "contentHash": "6d7a98ca2cd0851f",
-    "coveragePct": 46.6,
-    "covered": 81,
+    "cards": 94,
+    "contentHash": "abc700fd81e42b72",
+    "coveragePct": 52.5,
+    "covered": 94,
     "excluded": 21,
     "leaves": 219,
-    "open": 117,
+    "open": 104,
     "orphans": 0,
     "papers": {
       "count": 17,
       "hash": "454d40d79ee24093"
     },
-    "refsHash": "10c880b53c8b981a"
+    "refsHash": "3ca82751ab2922f2"
   },
   "economics": {
     "cards": 2297,
