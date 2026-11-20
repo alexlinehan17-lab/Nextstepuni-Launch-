@@ -35,7 +35,7 @@ import { audioForPaper } from './paperRecording';
 import FrenchPaperAudio from './FrenchPaperAudio';
 import AudioSourcePlayer from '../MarkBank/AudioSourcePlayer';
 import { asksForQuestion, isModelSubject, markBankLinkForCards } from './atlasModel';
-import type { SecCard } from '../../types/markBank';
+import { isUnpricedSectionCard, unpricedSectionChip, type SecCard } from '../../types/markBank';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
@@ -195,7 +195,7 @@ const PartsOnThisTopic: React.FC<{ sibling: TopicSibling; topicId: string; onOpe
               <div className="flex items-baseline gap-3">
                 <span className="shrink-0 text-[12px] font-bold tabular-nums" style={{ color: INK, minWidth: 64 }}>{card.questionRef.replace(/^\d{4} [A-Z]{2} /, '')}</span>
                 <span className="flex-1 text-[13.5px] leading-snug" style={{ color: INK }}>{card.questionText}</span>
-                <span className="shrink-0 text-[12px] font-semibold tabular-nums" style={{ color: '#7a7068' }}>{card.totalMarks}m</span>
+                <span className="shrink-0 text-[12px] font-semibold tabular-nums" style={{ color: '#7a7068' }}>{isUnpricedSectionCard(card) ? unpricedSectionChip(card.unpricedSection) : `${card.totalMarks}m`}</span>
               </div>
             </li>
           );

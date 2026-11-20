@@ -237,7 +237,7 @@ def language_and_matching(docs):
     answers=[squash(span['text']) for span in spans if squash(span['text'])]
     assert answers==['Где','кто','кем / где','каком','кем / где','Чем','Какие','Сколько','Когда','какой'],answers
     c['rows']=[{'id':f'gap-{n}','kind':'point','verbatim':answer,'marks':None} for n,answer in enumerate(answers,1)]
-    c['rows'][0]['contextNote']='Complete both Group A and Group B. The scheme publishes 20 marks for the whole exercise without per-gap allocations. Review all ten answers here; numeric self-scoring is unavailable for this exercise.'
+    c['rows'][0]['contextNote']='Complete both Group A and Group B. The scheme publishes 20 marks for the whole exercise without per-gap allocations. Assess the complete exercise out of20 using all ten printed answers; do not infer a separate mark for each gap.'
     cards.append(c)
     return cards
 
@@ -271,7 +271,7 @@ def listening(docs,P):
             if total==10:
                 c['kind']='question';c['tariffModel']={'kind':'questionTotal'}
                 c['rows']=[{'id':f'answer-{n}','kind':'point','verbatim':answer,'marks':None} for n,answer in enumerate(answers,1)]
-                c['rows'][0]['contextNote']=' '.join(general)+' Choose two distinct details. The scheme publishes 10 marks for this question without a per-detail allocation. Review the accepted answers here; numeric self-scoring is unavailable for this question.'
+                c['rows'][0]['contextNote']=' '.join(general)+' Choose two distinct details. The scheme publishes 10 marks for this question without a per-detail allocation. Assess the complete response out of10 using the printed answer pool; do not infer a separate mark for each detail.'
             else:
                 c=as_points(c,answers,1)
                 for group in c['rubric']['groups']:group['rows'][0]['marks']=5

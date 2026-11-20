@@ -1,0 +1,338 @@
+[
+  {
+    "year": 2022,
+    "sitting": "deferred",
+    "hlGridPage": 13,
+    "olLanguagePage": 12,
+    "formPage": 13,
+    "formSchemePage": 12,
+    "form_stem": "Vous vous appelez Cillian/Claire O’Riordan. Vous désirez travailler à Disneyland Paris. Remplissez le formulaire suivant:",
+    "fields": [
+      "Nom",
+      "Prénom",
+      "Date de naissance",
+      "Lieu de naissance",
+      "Langue(s) parlée(s)"
+    ],
+    "answers": [
+      "Surname – accept any reasonable surname",
+      "First name – accept any reasonable first name",
+      "Date of Birth– accept any reasonable date",
+      "Place of Birth– accept any reasonable place",
+      "Languages spoken – accept any reasonable answer for full marks"
+    ],
+    "form_questions": [
+      "Avez‐vous déjà visité la France ?",
+      "Pourquoi voulez‐vous travailler à Disneyland Paris ?",
+      "Quels sont vos passe‐temps ?",
+      "Quelles sont vos qualités personnelles ?"
+    ],
+    "pools": [
+      [
+        "B2A",
+        14,
+        13,
+        "Leave the following message in French for your friend Martin/Martine with whom you are staying in Poitiers.",
+        [
+          "You woke up early this morning.",
+          "There is no milk in the fridge at the moment.",
+          "You have gone to the supermarket at the corner of the street.",
+          "You will buy some bread and some meat for lunch.",
+          "You will phone him/her in half an hour."
+        ],
+        [
+          "You woke up early/ this morning.",
+          "There is no milk in the fridge/at the moment.",
+          "You have gone to the supermarket/ at the corner of the street.",
+          "You will buy some bread and some meat/ for lunch",
+          "You will phone him/her/ in half an hour"
+        ]
+      ],
+      [
+        "B2B",
+        14,
+        14,
+        "You are on holidays in Avignon. Write a postcard in French to your friend Ronan/Sinéad",
+        [
+          "The weather is hot and there are a lot of tourists.",
+          "You saw the famous bridge this morning.",
+          "You bought some flowers in the market.",
+          "You will go to the theatre this evening.",
+          "You will be back home next Monday."
+        ],
+        [
+          "The weather is hot/ and there are a lot of tourists.",
+          "You saw the famous bridge/ this morning.",
+          "You bought some flowers/ in the market.",
+          "You will go to the theatre/ this evening.",
+          "You will be back home/ next Monday."
+        ]
+      ],
+      [
+        "B3A",
+        16,
+        15,
+        "Your French friends Chantal and Pierre are coming to visit.",
+        [
+          "Your French friends phoned today.",
+          "Your friends want to visit Ireland this month.",
+          "Chantal and Pierre will arrive at the station at 5 p.m.",
+          "You prepared their bedroom this morning.",
+          "You hope to visit a museum during the week."
+        ],
+        [
+          "Your French friends phoned/ today",
+          "Your friends want to visit Ireland/ this month",
+          "Chantal and Pierre will arrive at the station/ at 5 p.m.",
+          "You prepared their bedroom /this morning.",
+          "You hope to visit a museum /during the week."
+        ]
+      ],
+      [
+        "B3B",
+        16,
+        16,
+        "Write a formal letter in French to Monsieur Jacques Privat, Hôtel Mimosa, Promenade des Anglais, 06200 Nice.",
+        [
+          "Say you will travel to Nice with some friends in the autumn.",
+          "Say you will arrive at the hotel on 10th September.",
+          "Say you would like to book two rooms with shower.",
+          "Ask if there is a car park near the hotel.",
+          "Ask him to organise an excursion to the mountains."
+        ],
+        [
+          "Say you will travel to Nice with some friends/ in the autumn.",
+          "Say you will arrive at the hotel/ on 10th September.",
+          "Say you would like to book two rooms/ with shower.",
+          "Ask if there is a car park/ near the hotel.",
+          "Ask him to organise an excursion/ to the mountains."
+        ]
+      ]
+    ],
+    "letterIdentity": "You are Patrick / Noelle Murray, 28 Lake View, Killarney, Co. Kerry.",
+    "languageBottom": "very poor to poor use of vocabulary of vocabulary",
+    "formatSchemePage": 22,
+    "formatNotes": {
+      "top": [
+        "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
+        "City / town / village & date (Killarney, le 12 juin, 2022) in top right corner or underneath.",
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
+      ],
+      "close": [
+        "Formal ending required.",
+        "Treat one or more incorrect accents in closing formula as one mistake."
+      ],
+      "deductions": [
+        "1 mistake - ignore.",
+        "2 mistakes - deduct 1 mark.",
+        "3 mistakes - deduct 2 marks.",
+        "If candidate has general layout of Top of Page or Closing Formula correct, despite numerous mistakes - award one mark."
+      ]
+    },
+    "hlCriteriaMax": [
+      20,
+      15
+    ],
+    "hlNoLayoutQuestion": 3,
+    "fieldAllowed": {},
+    "hlPassageRefs": {
+      "B1A": 1,
+      "B1B": 1,
+      "B1C": 2
+    },
+    "illustrationTasks": [],
+    "hlPromptParagraphs": {
+      "B3": [
+        "Your parents wish to organise a house exchange with a family in France for a month. Write an e‐mail in French to the family and include the following details:  Give a brief description of the accommodation you require  Tell them some details about your area  Describe some activities that could interest tourists in Ireland  Say you will travel to France by boat and will bring a car  Say that your family likes cycling and ask if they have bicycles."
+      ],
+      "B5": [
+        "« Nous ne devrions pas garder les animaux en captivité dans les zoos. C’est cruel ! »",
+        "Martine, 17 ans",
+        "Êtes‐vous d’accord ?"
+      ],
+      "B6": [
+        "L’important dans le sport, c’est de participer. Gagner n’est pas essentiel.",
+        "Donnez vos réactions."
+      ]
+    },
+    "hlWordCountLines": {
+      "B3": "(about 75 words)"
+    },
+    "hlSchemePageOffset": -2,
+    "hlSelectionNote": "Q1a/b/c are alternatives; Q1a and Q1b refer to the Section A Q.1 passage and Q1c to Q.2. Q3 is printed in Irish and English; the English rendering is used and all five e-mail points are required. Q1b real/imaginary is open creative scope, not a finite response pool. No Section B task prints an illustration.",
+    "taskSourceNotes": {
+      "ordinary": {
+        "B2A": "Source discrepancy: the marking scheme introduces this message as one left for Monsieur Latour, a guest at the hotel where you work as a receptionist, while the paper sets it for your friend Martin/Martine in Poitiers. The five points and their scheme answers match. This card keeps the task printed in the paper."
+      }
+    },
+    "sourceNotes": [
+      "Higher Q1 tasks are 40 marks (20 Communication + 20 Language); Q2–Q6 tasks are 30 (15 + 15).",
+      "The 2022 deferred Higher scheme has a two-page offset: PDF page 13 is printed page 11. Viewer regions use PDF indices; citations distinguish both.",
+      "Higher Q3 is printed in Irish and then in English; the card uses the English rendering and its own word-count line.",
+      "Higher Q5 and Q6 print their quotations in boxes whose text layer follows the questions below them; the cards use each box's text and the printed ask."
+    ],
+    "diaryInstruction": "Note three of the following five points in French in your diary:",
+    "formInstruction": "Pour 6, 7, 8 et 9, choisissez trois questions et répondez par des phrases complètes."
+  },
+  {
+    "year": 2023,
+    "sitting": "deferred",
+    "hlGridPage": 14,
+    "olLanguagePage": 14,
+    "formPage": 13,
+    "formSchemePage": 11,
+    "form_stem": "Vous vous appelez Kevin/Anne Corcoran. Vous désirez travailler dans le supermarché Carrefour à Toulouse. Remplissez le formulaire suivant.",
+    "fields": [
+      "Nom",
+      "Prénom",
+      "Âge",
+      "Nationalité",
+      "Lieu de naissance"
+    ],
+    "answers": [
+      "Surname – accept any reasonable surname",
+      "First name – accept any reasonable first name",
+      "Age– accept any reasonable age",
+      "Nationality– accept any reasonable nationality",
+      "Place of birth – accept any reasonable country"
+    ],
+    "form_questions": [
+      "Donnez une brève description de votre personnalité.",
+      "Quel est votre niveau de français ?",
+      "Pourquoi voulez‐vous travailler en France ?",
+      "Avez‐vous déjà travaillé dans un supermarché ?"
+    ],
+    "pools": [
+      [
+        "B2A",
+        14,
+        12,
+        "Leave the following message in French for your friend Henri/Claire with whom you are staying in Lille.",
+        [
+          "You met Louis at the swimming pool this afternoon.",
+          "He cannot go to the concert tomorrow.",
+          "He will phone you at 9 p.m.",
+          "You have gone to have dinner in a small restaurant.",
+          "You will be home late tonight."
+        ],
+        [
+          "You met Louis at the pool/ this afternoon.",
+          "He cannot go to the concert/ tomorrow.",
+          "He will phone you/at 9pm.",
+          "You have gone to have dinner/in a small restaurant.",
+          "You will be home late/tonight."
+        ]
+      ],
+      [
+        "B2B",
+        14,
+        13,
+        "You are on holidays in Antibes. Write a postcard in French to your friend Sabine/Hugo",
+        [
+          "You are on holidays in Antibes with your sister.",
+          "Yesterday you bought some presents in town.",
+          "You hope to visit Grasse next week.",
+          "You will take the train to Nice on Wednesday.",
+          "You spoke French in a bank this morning."
+        ],
+        [
+          "You are on holidays in Antibes/ with your sister.",
+          "Yesterday you bought some presents/ in town.",
+          "You hope to visit Grasse/ nest week.",
+          "You will take the train to Nice/ on Wednesday.",
+          "You spike French in a bank/ this morning."
+        ]
+      ],
+      [
+        "B3A",
+        16,
+        14,
+        "You have just spent an enjoyable day.",
+        [
+          "You went cycling near the river this morning.",
+          "The countryside is beautiful in summer.",
+          "At 3 p.m. you went to the cinema with a friend.",
+          "You are very tired now.",
+          "You will stay at home this evening."
+        ],
+        [
+          "You went cycling near the river/ this morning.",
+          "The countryside is beautiful/ in summer.",
+          "At 3 p.m. you went to the cinema/ with a friend.",
+          "You are very tired/ now.",
+          "You will stay at home/ this evening."
+        ]
+      ],
+      [
+        "B3B",
+        16,
+        15,
+        "Write a formal letter in French to L’Office de Tourisme, 1 rue Jean Jaurès, 74000 Annecy, France.",
+        [
+          "You hope to spend a week in France in July.",
+          "You are looking for an apartment near the lake.",
+          "You intend to go swimming every day.",
+          "You would like a list of activities in the area.",
+          "Ask if you can hire a boat for a day."
+        ],
+        [
+          "You hope to spend a week in France/ in July.",
+          "You are looking for an apartment/ near the lake.",
+          "You intend to go swimming/every day.",
+          "You would like a list of activities/ in the area.",
+          "Ask if you can hire a boat/ for a day."
+        ]
+      ]
+    ],
+    "letterIdentity": "You are Robert / Gráinne Brady, 25 Monaleen, Mallow, Co. Cork.",
+    "languageBottom": "very poor to poor use of vocabulary of vocabulary",
+    "formatSchemePage": 20,
+    "formatNotes": {
+      "top": [
+        "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
+        "City / town / village & date (Monaleen, le 18 mai 2023) in top right corner or underneath.",
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
+      ],
+      "close": [
+        "Formal ending required.",
+        "Treat one or more incorrect accents in closing formula as one mistake."
+      ],
+      "deductions": [
+        "1 mistake - ignore.",
+        "2 mistakes - deduct 1 mark.",
+        "3 mistakes - deduct 2 marks.",
+        "If candidate has general layout of Top of Page or Closing Formula correct, despite numerous mistakes - award one mark."
+      ]
+    },
+    "hlCriteriaMax": [
+      30,
+      20
+    ],
+    "hlNoLayoutQuestion": 3,
+    "fieldAllowed": {},
+    "hlPassageRefs": {
+      "B1A": 1,
+      "B1B": 2,
+      "B1C": 2
+    },
+    "illustrationTasks": [
+      "B4",
+      "B5"
+    ],
+    "hlPromptParagraphs": {},
+    "hlSelectionNote": "Q1a/b/c are alternatives; Q1a refers to the Section A Q.1 passage and Q1b and Q1c to Q.2. Q3 email requires answers to all three of Nicole’s questions. Q1b real/imaginary is open creative scope, not a finite response pool. The Q4 and Q5 photographs are retained in the illustration viewer.",
+    "taskSourceNotes": {
+      "ordinary": {
+        "B2B": "Source discrepancy: the marking scheme prints “nest week” in its answer to the third point and “You spike French” in its answer to the fifth, where the paper prints “next week” and “You spoke French”. The scheme’s answers are shown as printed."
+      }
+    },
+    "sourceNotes": [
+      "Higher Q1 tasks are 60 marks (30 Communication + 30 Language); Q2–Q6 tasks are 40 (20 + 20).",
+      "The Ordinary language descriptors are lifted from scheme page 14: pages 11 to 13 break “at least half the words spelt correctly” across two lines after “incorrect; at”."
+    ],
+    "diaryInstruction": "Note three of the following five points in French in your diary:",
+    "formInstruction": "Pour 6, 7, 8 et 9 : Choisissez trois questions et répondez par des phrases complètes."
+  }
+]

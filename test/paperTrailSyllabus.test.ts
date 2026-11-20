@@ -129,6 +129,9 @@ const ADMITTED_DEFERRED = new Set([
   'business|2022|LC033ALP032EV-deferred.pdf', 'business|2022|LC033ALP041EV-deferred.pdf',
   'business|2022|LC033GLP032EV-deferred.pdf', 'business|2022|LC033GLP033EV-deferred.pdf',
   'business|2023|LC033ALP032EV-deferred.pdf', 'business|2023|LC033ALP041EV-deferred.pdf',
+  // French: the written paper of each deferred sitting (2022 and 2023, both levels). The listening booklets
+  // join when their listening is carded, which waits on the deferred recordings.
+  ...[2022, 2023].flatMap(year => ['ALP000', 'GLP000'].map(booklet => `french|${year}|LC010${booklet}BV-deferred.pdf`)),
 ]);
 
 describe('Topic Atlas stays on the reviewed June papers', () => {

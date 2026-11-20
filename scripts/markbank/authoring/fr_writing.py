@@ -16,10 +16,19 @@ from fr_paper import FrPaper
 from fr_selection import verify_paper
 from fr_reviewed_tasks import write_tasks
 from fr_pdf_words import fragmented_words
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'paper-trail'))
+import french_deferred  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / 'components/MarkBank/cards/french/writing.json'
 DATA = ROOT / 'examiner-reports/french'
+# The deferred sittings (2022 and 2023): their own sources, selection review, card file and audit, so
+# June's files and every card built from them are untouched by them.
+DEFERRED_SOURCES = ROOT / 'scripts/markbank/authoring/french-writing-sources-deferred.json'
+DEFERRED_SELECTION = ROOT / 'scripts/markbank/authoring/french-selection-review-deferred.json'
+DEFERRED_OUT = ROOT / 'components/MarkBank/cards/french/deferred-writing.json'
+DEFERRED_REVIEW = ROOT / 'scripts/markbank/authoring/french-writing-review-deferred.json'
 
 
 def norm(text):
@@ -182,13 +191,19 @@ OL_POINT_TARIFFS = {
     2025: {'B2A': (14, PARTS_5), 'B2B': (15, PARTS_5), 'B3A': (16, POINTS_5), 'B3B': (17, POINTS_4)},
     2026: {'B2A': (16, PARTS_5), 'B2B': (17, PARTS_5), 'B3A': (18, POINTS_5), 'B3B': (19, POINTS_4)},
 }
+# The deferred sittings' own scheme pages and lines, checked the same way (20 November 2026).
+OL_POINT_TARIFFS_DEFERRED = {
+    2022: {'B2A': (13, POINTS_5), 'B2B': (14, POINTS_5), 'B3A': (15, POINTS_5), 'B3B': (16, POINTS_4)},
+    2023: {'B2A': (12, PARTS_5), 'B2B': (13, PARTS_5), 'B3A': (14, POINTS_5), 'B3B': (15, POINTS_4)},
+}
 
 
-def printed_tariff(year, parent, scheme_ol, scheme_page, maximum):
+def printed_tariff(year, parent, scheme_ol, scheme_page, maximum, sitting=None):
     """Return the verified tariff line, asserting it is the page's only one."""
-    assert year in OL_POINT_TARIFFS, f'No verified OL communication tariff wording for {year}'
-    assert parent in OL_POINT_TARIFFS[year], f'No verified OL communication tariff wording for {year} {parent}'
-    page, line = OL_POINT_TARIFFS[year][parent]
+    tariffs = OL_POINT_TARIFFS_DEFERRED if sitting else OL_POINT_TARIFFS
+    assert year in tariffs, f'No verified OL communication tariff wording for {year}'
+    assert parent in tariffs[year], f'No verified OL communication tariff wording for {year} {parent}'
+    page, line = tariffs[year][parent]
     assert page == scheme_page, (year, parent, page, scheme_page)
     assert line.endswith(f'for {maximum} marks ({maximum - 2} + 2)'), (year, parent, line, maximum)
     printed = [re.sub(r'\s+', ' ', text).strip() for text in scheme_ol[page - 1].get_text().splitlines()]
@@ -218,8 +233,12 @@ def language(maximum, descriptors):
 
 def build_year(config):
     YEAR = config['year']
+    sitting = config.get('sitting')
+    selection = json.loads(DEFERRED_SELECTION.read_text()) if sitting else None
+    # A deferred sitting's files are named by it ("2022-hl-deferred-000-paper.pdf"); see fr_paper.FrPaper.
+    fl = (lambda level: f'{level}-deferred') if sitting else (lambda level: level)
     for level in ['hl', 'ol']:
-        verify_paper(DATA / f'papers/{YEAR}-{level}-000-paper.pdf')
+        verify_paper(DATA / f'papers/{YEAR}-{fl(level)}-000-paper.pdf', selection)
     ol_language = [list(notes) for notes in OL_LANGUAGE]
     if config['languageBottom'] is None:
         # The 2021 scheme has only three bottom-band descriptors. Do not
@@ -231,19 +250,30 @@ def build_year(config):
     block = index_text.split('  "french": [', 1)[1].split('\n  ],', 1)[0]
     entries = [json.loads(line.strip().rstrip(',')) for line in block.splitlines() if line.strip()]
     # Reviewed window only: June sittings from 2010.
-    entries = [entry for entry in entries if not entry.get('sitting') and entry['year'] >= 2010]
+    entries = [entry for entry in entries if entry.get('sitting') == sitting and entry['year'] >= 2010]
     tags = json.loads((ROOT / 'scripts/paper-trail/topic-tags/tags/french.json').read_text())
     runtime = json.loads((ROOT / 'data/examTopics/french-runtime.json').read_text())
     cards, mappings, audit = [], [], []
 
     def add(level, n, parent, prompt, page, scheme_page, criteria, requirements=None, passage=None, practice=None):
         entry = next(e for e in entries if e['year'] == YEAR and e['level'] == level and e['lang'] == 'ev')
-        item = next(p for p in entry['papers'] if p['label'] == 'Exam Paper')
-        paper = next(p for p in tags if p['year'] == YEAR and p['level'] == level and p['fileid'] == item['doc']['f'])
+        item = next(p for p in entry['papers'] if p['label'] == ('Deferred · Exam Paper' if sitting else 'Exam Paper'))
+        if 'levels' in config and {'higher': 'hl', 'ordinary': 'ol'}[level] not in config['levels']:
+            # (Deferred sources.) A level not yet carded: its task is read and checked here, and its card
+            # dropped at the end of build_year; its paper has no topic tags yet.
+            paper = {'q': [{'n': parent, 'primary': ''}]}
+        else:
+            paper = next(p for p in tags if p['year'] == YEAR and p['level'] == level and p['fileid'] == item['doc']['f'])
         tag = next(q for q in paper['q'] if q['n'] == parent)
-        topic_indexes = next(m[5] for m in runtime['questionMappings']
-                             if m[:5] == [level[0], 'e', YEAR - 2000, 's', parent])
-        cid = f'fr-{YEAR}-{"hl" if level == "higher" else "ol"}-writing-{n.lower()}'
+        if sitting and not tag['primary']:
+            topic_ids = []
+        elif sitting:
+            topic_ids = french_deferred.runtime_topic_ids(YEAR, 'hl' if level == 'higher' else 'ol', 's', parent)
+        else:
+            topic_indexes = next(m[5] for m in runtime['questionMappings']
+                                 if m[:5] == [level[0], 'e', YEAR - 2000, 's', parent])
+            topic_ids = [runtime['topics'][i][0] for i in topic_indexes]
+        cid = f'fr-{YEAR}-{"hl" if level == "higher" else "ol"}-{"deferred-" if sitting else ""}writing-{n.lower()}'
         printed = re.fullmatch(r'B(\d+)([A-C]?)', parent)
         reference = 'Q' + printed[1] + (f'({printed[2].lower()})' if printed[2] else '')
         if '-route-' in n:
@@ -251,18 +281,18 @@ def build_year(config):
         if '-field-' in n:
             reference += ' · field ' + n.split('-')[-1]
         source = dict(kind='source-text', label=f'Section B · {parent}', title='Printed writing task',
-                      pages=[page], attribution=f'SEC French {YEAR} {level.title()} Level — © State Examinations Commission.',
+                      pages=[page], attribution=f'SEC French {YEAR} {level.title()} Level{" deferred examination" if sitting else ""} — © State Examinations Commission.',
                       presentationNote='Open the original task, including its illustrations and layout, then return to your answer.')
         card = dict(id=cid, subjectId='french', level=level, source='sec', kind='rubric', year=YEAR,
                     paperFileid=item['doc']['f'].removesuffix('.pdf'), section='B',
-                    questionRef=f'{YEAR} {"HL" if level == "higher" else "OL"} Section B {reference}',
+                    questionRef=f'{YEAR} {"HL" if level == "higher" else "OL"} Section B {reference}' + (' — Deferred sitting' if sitting else ''),
                     questionText=prompt, totalMarks=sum(c['maxMarks'] for c in criteria),
                     topicId=tag['primary'], conceptId=f'french-writing-{tag["primary"]}',
                     sourceMaterial=source, specVersion='lc-french-syllabus',
-                    schemeCitation=f'SEC French {YEAR} {level.title()} Level marking scheme, p.{scheme_page} — © State Examinations Commission.',
+                    schemeCitation=f'SEC French {YEAR} {level.title()} Level marking scheme{", deferred examination" if sitting else ""}, p.{scheme_page} — © State Examinations Commission.',
                     schemeRegion=dict(schemeFileid=item['scheme']['f'], p=scheme_page, r=[0, 0, 1, 1]),
                     qa=dict(gates=['paper-prompt', 'published-french-grid', 'finite-route-expansion', 'visual-paper-scheme-review'],
-                            humanReviewedBy='agent-verified', humanReviewedAt='2026-10-07'),
+                            humanReviewedBy='agent-verified', humanReviewedAt='2026-11-20' if sitting else '2026-10-07'),
                     rubric=dict(system='french', taskRequirements=requirements or [], criteria=criteria,
                                 markingGuideNote='', practiceNotes=[*(practice or []), PRACTICE_GRID]))
         if level == 'higher' and config.get('hlSchemePageOffset'):
@@ -276,15 +306,15 @@ def build_year(config):
             # A source discrepancy is our disclosure, not SEC text.
             card['rubric']['practiceNotes'].insert(0, source_note)
         cards.append(card)
-        mappings.append(dict(cardId=cid, subjectId='french', level=level, year=YEAR, sitting='main',
+        mappings.append(dict(cardId=cid, subjectId='french', level=level, year=YEAR, sitting=sitting or 'main',
                              paperKey='single', lang='ev', fileid=item['doc']['f'], n=n, parent=parent,
-                             topicIds=[runtime['topics'][i][0] for i in topic_indexes],
+                             topicIds=topic_ids,
                              topicId=tag['primary'], pages=sorted(set([page] + (passage or []))),
                              label=f'Section B · {reference}'))
 
-    paper = FrPaper(YEAR, 'hl')
+    paper = FrPaper(YEAR, 'hl', sitting=sitting)
     hl_doc = fitz.open(paper.path)
-    scheme_hl = fitz.open(DATA / f'schemes/{YEAR}-hl.pdf')
+    scheme_hl = fitz.open(DATA / f'schemes/{YEAR}-{fl("hl")}.pdf')
     for notes in COMMUNICATION + HL_LANGUAGE:
         for note in notes:
             assert_on_page(note, scheme_hl, config['hlGridPage'])
@@ -343,7 +373,7 @@ def build_year(config):
             criteria[0]['guidance'] = [note]
         if q == 1:
             # 2010 Q1(a) says "Dans le texte de la Question 1 (Section I)".
-            ref = re.search(r'Section\s*(?:A|I),\s*Q[.,]\s*([12])|Question\s*([12])\s*\(Section\s*I\)', prompt, re.I)
+            ref = re.search(r'Section\s*(?:A|I),\s*Q[.,]?\s*([12])|Question\s*([12])\s*\(Section\s*I\)', prompt, re.I)
             assert ref and int(ref[1] or ref[2]) == config['hlPassageRefs'][parent], (YEAR, parent, prompt)
         add('higher', parent, parent, prompt, page, config['hlGridPage'], criteria, [],
             practice=['Write your answer in French.'],
@@ -351,7 +381,7 @@ def build_year(config):
         if task_grid.get('formatMarks'):
             offset = config.get('hlSchemePageOffset', 0)
             pages = [config['hlGridPage'] - 1, config['hlGridPage']]
-            cards[-1]['schemeCitation'] = (f'SEC French {YEAR} Higher Level marking scheme, '
+            cards[-1]['schemeCitation'] = (f'SEC French {YEAR} Higher Level marking scheme{", deferred examination" if sitting else ""}, '
                 f'pp.{pages[0] + offset}–{pages[1] + offset} (PDF pages {pages[0]}–{pages[1]}) '
                 '— © State Examinations Commission.')
         if parent in config['illustrationTasks']:
@@ -360,8 +390,8 @@ def build_year(config):
                 title='Original writing prompt and illustration',
                 presentationNote='Open the illustration before answering the prompt.')
 
-    doc = fitz.open(DATA / f'papers/{YEAR}-ol-000-paper.pdf')
-    scheme_ol = fitz.open(DATA / f'schemes/{YEAR}-ol.pdf')
+    doc = fitz.open(DATA / f'papers/{YEAR}-{fl("ol")}-000-paper.pdf')
+    scheme_ol = fitz.open(DATA / f'schemes/{YEAR}-{fl("ol")}.pdf')
     format_page = config['formatSchemePage']
     format_pages = config.get('formatSchemePages', [format_page])
     format_notes = config['formatNotes']
@@ -374,7 +404,7 @@ def build_year(config):
     ol_language_names = ol_language
     ol_language = [lift(notes, scheme_ol, config['olLanguagePage']) for notes in ol_language_names]
     # The paper's own Section II instruction, printed above Option A every year.
-    section_page = FrPaper(YEAR, 'ol').section_b_page + 1
+    section_page = FrPaper(YEAR, 'ol', sitting=sitting).section_b_page + 1
     in_french = printed_line(doc, section_page, r'Rédigez vos réponses en français\.')
     form_stem = config['form_stem']
     assert_on_page(form_stem, doc, config['formPage'])
@@ -473,14 +503,14 @@ def build_year(config):
         # Each point as the paper prints it, with the paper's own list marker
         # ("-", "‐", "−" or "–"); the marked locator prefers the list line
         # over a stem that repeats the same words (2013 Q2(b)).
-        printed_points = [lift_printed(doc_texts(DATA / f'papers/{YEAR}-ol-000-paper.pdf', [page]), f'- {point}', marks='', what=f'{YEAR} {parent}')
+        printed_points = [lift_printed(doc_texts(DATA / f'papers/{YEAR}-{fl("ol")}-000-paper.pdf', [page]), f'- {point}', marks='', what=f'{YEAR} {parent}')
                           for point in points]
         for point, line in zip(points, printed_points):
             assert line.endswith(point) and re.match(r'^[-‐–−] ', line), (YEAR, parent, line)
         for chosen in [tuple(range(len(points)))] if choose else combinations(range(len(points)), 3):
             suffix = ''.join(str(i+1) for i in chosen)
             maximum = 4 if parent == 'B3B' else 5
-            tariff = printed_tariff(YEAR, parent, scheme_ol, scheme_page, maximum)
+            tariff = printed_tariff(YEAR, parent, scheme_ol, scheme_page, maximum, sitting)
             notes = communication_notes(config, scheme_ol, scheme_page)
             categories = [printed_line(scheme_ol, scheme_page, r'1st Category[^.]*?message not clear\.'),
                           printed_line(scheme_ol, scheme_page, r'2nd Category[^.]*?message clear\.')]
@@ -535,27 +565,35 @@ def build_year(config):
                       notes=config.get('hlSelectionNote', f'Q1a/b/c are alternatives. Q{config["hlNoLayoutQuestion"]} email bullets are all required. Q1c real/imaginary is open creative scope, not a finite response pool.')))
     for level in ['hl', 'ol']:
         for kind, suffix in [('papers', '-000-paper'), ('schemes', '')]:
-            file = DATA / kind / f'{YEAR}-{level}{suffix}.pdf'
+            file = DATA / kind / f'{YEAR}-{fl(level)}{suffix}.pdf'
             audit.append(dict(source=str(file.relative_to(ROOT)), sha256=hashlib.sha256(file.read_bytes()).hexdigest()))
+    if 'levels' in config:
+        # (Deferred sources.) Both levels are still read and checked; only the listed levels' cards ship.
+        keep = {{'hl': 'higher', 'ol': 'ordinary'}[level] for level in config['levels']}
+        cards = [card for card in cards if card['level'] in keep]
+        mappings = [row for row in mappings if row['level'] in keep]
+        audit = [row for row in audit if row.get('level', 'higher' if '-hl' in row.get('source', '') else 'ordinary') in keep]
     return cards, mappings, audit
 
 
-def build():
-    configs = json.loads((ROOT / 'scripts/markbank/authoring/french-writing-sources.json').read_text())
+def build(sitting=None):
+    configs = json.loads((DEFERRED_SOURCES if sitting else ROOT / 'scripts/markbank/authoring/french-writing-sources.json').read_text())
     cards, mappings, audit = [], [], []
     for config in configs:
+        assert config.get('sitting') == sitting, config['year']
         new_cards, new_mappings, new_audit = build_year(config)
         cards.extend(new_cards)
         mappings.extend(new_mappings)
         audit.extend(new_audit)
-    OUT.write_text(json.dumps(cards, ensure_ascii=False, indent=2) + '\n')
-    write_tasks('writing', mappings)
-    (ROOT / 'scripts/markbank/authoring/french-writing-review.json').write_text(json.dumps(dict(
-        status='partial-corpus-review', reviewedAt='2026-10-07', cards=len(cards), review=audit,
+    (DEFERRED_OUT if sitting else OUT).write_text(json.dumps(cards, ensure_ascii=False, indent=2) + '\n')
+    write_tasks('writing', mappings, sitting=sitting or 'main')
+    (DEFERRED_REVIEW if sitting else ROOT / 'scripts/markbank/authoring/french-writing-review.json').write_text(json.dumps(dict(
+        status='deferred-sittings-review' if sitting else 'partial-corpus-review',
+        reviewedAt='2026-11-20' if sitting else '2026-10-07', cards=len(cards), review=audit,
         examSelectionPolicy='Choosing two separately marked examination questions does not create one combined practice card. Each task is independently practicable at its own tariff.'
     ), ensure_ascii=False, indent=2) + '\n')
     print(f'Wrote {len(cards)} reviewed French writing cards and exact Atlas identities.')
 
 
 if __name__ == '__main__':
-    build()
+    build('deferred' if '--deferred' in sys.argv[1:] else None)

@@ -1,0 +1,1787 @@
+#!/usr/bin/env python3
+"""Reviewed specs for the Portuguese cards the shared generator does not make
+right: every listening ask, and the reading asks eu_all refuses or shapes
+wrongly. Portuguese-only, on the Polish pattern (pl_listen_specs.py).
+
+    python3 scripts/markbank/authoring/pt_specs.py draft 2026 hl     # census asks beside the scheme
+    python3 scripts/markbank/authoring/pt_specs.py cards 2026 hl     # what the specs build
+
+Each entry names the census address the card answers and says, by SELECTORS
+(pt_lib), which scheme lines are its answers and which printed price pays it.
+Nothing is typed: the question is the census's reading of the paper or the
+listening booklet (eu_paper), with booklet lines a question prints below
+itself appended by PL(page, opening); the answers and prices are cuts of the
+scheme's .md. A reading card keeps every field eu_all would give it (id, topic,
+concept, stem, the reading text's pages) and takes its rows from the spec.
+
+Checked as it builds: every census listening ask of the sitting gets exactly
+one card; each card adds up to the price its spec names; each Parte adds up to
+the total the scheme prints on its head ("Parte A Diálogo ⟨20 Marks⟩").
+"""
+import json
+import os
+import re
+import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
+sys.path.insert(0, HERE)
+
+from pt_lib import (S, J, B, T, T2, TG, AnyOf, CELL, PL, Sel, one, menu, alt, stepped, shown, rest, pct,   # noqa: E402,F401
+                    pairs, scheme_doc, build_rows, SCHEMES)
+from eu_paper import EuPaper, read_lines                          # noqa: E402
+from eu_topics import (topic_for, concept_for, answer_language,    # noqa: E402
+                       language_note, ENGLISH_OR_IRISH)
+from paper_census import key_label                                # noqa: E402
+
+SUBJECT = 'portuguese'
+LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
+LEVEL_TITLE = {'hl': 'Higher', 'ol': 'Ordinary'}
+# A listening ask's roman follows its number ("LD4i" is Q4(i)), and where the
+# booklet also letters it, the letter and a dash come first ("LC3a-i" is
+# Q3(a)(i)); a reading ask's roman follows a dash ("A1b-ii").
+KEY = re.compile(r'^(L[A-E])(\d{1,2})(?:([a-h])-)?(i{1,3}|iv|vi{0,3})?$'
+                 r'|^(A|B|III|II|I)(\d{1,2})([a-l])?(?:-(i{1,3}|iv|vi{0,3}))?$')
+AUDIO = os.path.join(ROOT, 'data', 'portugueseAudio.json')
+PARTE = re.compile(r'^Parte\s+([A-E])\b')
+# A question's printed number: "(1)" (2025, 2026) or "1." (2022-2024).
+NUMBERED = re.compile(r'^(?:\(\d{1,2}\)|\d{1,2}\.\s)')
+# "Parte A Diálogo ⟨20 Marks⟩", "Parte B Anúncio 20 marks", and 2025 Higher's
+# bare "Parte B Entrevista 20".
+SECTION_TOTAL = re.compile(r'^Parte?\s+([A-E])\b.*?(\d{1,3})\s*(?:marks?\b|\u27e9|$)', re.I)
+# A rule the booklet prints after the last words of a question: furniture.
+# (The census already leaves out the "1." "2." "3." answer lines, and a
+# question may itself end in a number: "porta de embarque número 7.")
+TRAILING = re.compile(r'(?:\s+_{3,})+\s*$')
+
+
+def parse_key(spec_key):
+    m = KEY.match(spec_key)
+    if not m:
+        raise ValueError(f'bad key {spec_key!r}')
+    g = m.groups()
+    sec, q, letter, roman = g[:4] if g[0] else g[4:]
+    return (sec, int(q), letter or None, roman or None)
+
+
+def card_id(year, level, key):
+    section, q, letter, roman = key
+    return '-'.join(['por', str(year), level, section.lower(), str(q)]
+                    + ([letter] if letter else []) + ([roman] if roman else []))
+
+
+class C:
+    """One card: the census address, its rows, the price it must add up to."""
+    def __init__(self, key, rows, total=None, note=None, rownote=None, extra=(), whole=False,
+                 question=None, stem=None, source=True, unpriced=None):
+        self.key, self.rows, self.total, self.note = key, rows, total, note
+        # (section label, section total): a question the paper prices only as
+        # part of its section (types/markBank.ts unpricedSection, CARD-STANDARD
+        # 10i): the scheme's answer shown, no total of the card's own.
+        self.unpriced = unpriced
+        self.rownote, self.extra, self.whole = rownote, extra, whole
+        # Where the census's reading of the ask is cut short (a true/false
+        # table read as its first statement): the question as the paper prints
+        # it, line by line, PL / PLc selectors joined.
+        self.question = question
+        # The instruction the paper prints over a choice of tasks ("Escreva um
+        # comentário ... sobre um dos seguintes temas."), where the booklet's
+        # lead for the question number belongs to another part.
+        self.stem = stem
+        # False where the booklet's reading text is not the task's material
+        # (2021 Tópico 2 comments on a quotation, not on the text).
+        self.source = source
+
+
+class Heading:
+    """A heading printed alone on its line ("Parte I"), exactly one on `page`."""
+    def __init__(self, page, text):
+        self.page, self.text_ = page, text
+
+    def text(self, doc):
+        hits = [t for p, t in doc['paper'] if p == self.page and t.strip() == self.text_]
+        if len(hits) != 1:
+            raise ValueError(f'paper p{self.page}: {len(hits)} lines read {self.text_!r}')
+        return hits[0].strip()
+
+
+class PaperCut:
+    """The paper's printed line on `page` that opens with `opening`, cut at
+    printed anchors (the question letter "(h) " off the front)."""
+    def __init__(self, page, opening, after=None, before=None):
+        self.line, self.after, self.before = PL(page, opening), after, before
+
+    def text(self, doc):
+        t = self.line.text(doc)
+        if self.after is not None:
+            if self.after not in t:
+                raise ValueError(f'paper: {self.after!r} not in {t!r}')
+            t = t.split(self.after, 1)[1]
+        if self.before is not None:
+            if self.before not in t:
+                raise ValueError(f'paper: {self.before!r} not in {t!r}')
+            t = t.split(self.before, 1)[0]
+        return t.strip()
+
+
+def PLc(page, opening, after=None, before=None):
+    return PaperCut(page, opening, after, before)
+
+
+class Verdict(Sel):
+    """The column a true/false tick stands in, read from the scheme PDF: the
+    heading word ("Verdadeiro", "Falso") whose printed span holds the tick
+    set on the same row as the statement on scheme line n."""
+    def __init__(self, n, page):
+        super().__init__('scheme', n)
+        self.page = page
+
+    def text(self, doc):
+        import fitz
+        pdf = fitz.open(os.path.join(SCHEMES, f'{doc["year"]}-{doc["level"]}.pdf'))
+        words = pdf[self.page - 1].get_text('words')
+        statement = re.sub(r'\s*✓\s*$', '', doc['scheme'][self.n - 1]).strip()
+        first = statement.split()[0]
+        rows = [w for w in words if w[4] == first and w[0] < 200]
+        hits = []
+        for r in rows:
+            line = ' '.join(x[4] for x in sorted(words, key=lambda x: x[0])
+                            if abs(x[1] - r[1]) < 3 and x[0] < 300)
+            if line.startswith(statement) or statement.startswith(line):
+                hits.append(r)
+        if len(hits) != 1:
+            raise ValueError(f'scheme p{self.page}: {len(hits)} rows read {statement!r}')
+        y = hits[0][1]
+        # The column heads: the nearest row of them printed above this one.
+        heads = [w for w in words if w[4] in ('Verdadeiro', 'Falso', 'True', 'False', 'T', 'F') and w[1] < y]
+        if not heads:
+            raise ValueError(f'scheme p{self.page}: no column heads above {statement!r}')
+        top = max(w[1] for w in heads)
+        heads = {w[4]: (w[0], w[2]) for w in heads if abs(w[1] - top) < 3}
+        # The tick nearest this row by vertical centre, which must be nearer it
+        # than any other row the table prints (a tick sits a few points lower
+        # than its row's text: 2025 Ordinary p6 and p8).
+        mid = lambda w: (w[1] + w[3]) / 2                              # noqa: E731
+        row_mid = mid(hits[0])
+        ticks = sorted((w for w in words if w[4] in ('\uf0fc', '\uf0fe', '\u2713', '\u2714')
+                        and abs(mid(w) - row_mid) < 14), key=lambda w: abs(mid(w) - row_mid))
+        if not ticks:
+            raise ValueError(f'scheme p{self.page}: no tick beside {statement!r}')
+        others = [mid(w) for w in words if w is not hits[0] and abs(w[0] - hits[0][0]) < 3
+                  and abs(mid(w) - row_mid) > 3]
+        if any(abs(o - mid(ticks[0])) < abs(row_mid - mid(ticks[0])) for o in others):
+            raise ValueError(f'scheme p{self.page}: the tick nearest {statement!r} is nearer another row')
+        ticks = ticks[:1]
+        cx = (ticks[0][0] + ticks[0][2]) / 2
+        col = [h for h, (x0, x1) in heads.items() if x0 - 10 <= cx <= x1 + 10]
+        if len(col) != 1:
+            raise ValueError(f'scheme p{self.page}: tick at x={cx:.0f} under {col} for {statement!r}')
+        return col[0]
+
+
+def V(n, page):
+    return Verdict(n, page)
+
+
+class InlineVerdict(Sel):
+    """A tick set in the box AFTER its label on the same row ("True False ✓",
+    2025 Higher Q2(j)(i)): the label printed immediately left of the tick, on
+    scheme line n's row of page `page`. Where a page prints several true/false
+    rows (2022 Ordinary p20, Parte D Q1 and Q2), `k` names the row, counted
+    from the top of the page."""
+    def __init__(self, n, page, k=None):
+        super().__init__('scheme', n)
+        self.page, self.k = page, k
+
+    def text(self, doc):
+        import fitz
+        pdf = fitz.open(os.path.join(SCHEMES, f'{doc["year"]}-{doc["level"]}.pdf'))
+        words = pdf[self.page - 1].get_text('words')
+        heads = [w for w in words if w[4] in ('Verdadeiro', 'Falso', 'True', 'False')]
+        # A tick, or the checked box the 2024 schemes draw (U+F0FE; U+F063 is
+        # the empty box beside the other label).
+        ticks = [w for w in words if w[4] in ('\uf0fc', '\uf0fe', '✓', '✔')]
+        found = []
+        for t in ticks:
+            # Both labels on the tick's row; the box belongs to the label
+            # printed nearest on its left ("True ☒ False" is True).
+            row = [h for h in heads if abs(h[1] - t[1]) < 8]
+            left = [h for h in row if h[2] <= t[0]]
+            if len(row) >= 2 and left:
+                found.append((t[1], max(left, key=lambda h: h[2])[4]))
+        found = [label for _y, label in sorted(found)]
+        if self.k is not None:
+            if len(found) <= self.k:
+                raise ValueError(f'scheme p{self.page}: no inline tick #{self.k}: {found}')
+            found = [found[self.k]]
+        if len(found) != 1:
+            raise ValueError(f'scheme p{self.page}: {len(found)} inline ticks after a label: {found}')
+        line = doc['scheme'][self.n - 1]
+        if found[0] not in line:
+            raise ValueError(f'scheme line {self.n} does not print {found[0]!r}: {line!r}')
+        return found[0]
+
+
+def VI(n, page, k=None):
+    return InlineVerdict(n, page, k)
+
+
+class EachOnly:
+    """One answer at the per-answer marks of the "N x P marks" printed on
+    scheme line n, where the cell's own total disagrees with it ("3 marks: 2 x
+    3 marks" under "Answer 6 Marks", 2022 Higher Parte D Q3): the card's total
+    is the question's printed one, and the disagreement goes in the note."""
+    def __init__(self, n):
+        self.n = n
+
+    def read(self, doc):
+        m = re.search(r'(\d{1,2})\s*[x×]\s*(\d{1,2})\s*marks?\b', doc['raw'][self.n - 1], re.I)
+        if not m:
+            raise ValueError(f'scheme line {self.n} prints no "N x P marks"')
+        return 1, int(m.group(2)), m.group(0)
+
+
+class SchemeSpan:
+    """Scheme lines a..b read as one text: a model commentary that runs over a
+    page break. Only the page's furniture between is left out (blank lines,
+    "## Page" markers, a page number alone on its line); every other line is
+    read with S(n), so cells and prices are cut as everywhere else."""
+    def __init__(self, a, b):
+        self.a, self.b = a, b
+
+    def text(self, doc):
+        parts = []
+        for n in range(self.a, self.b + 1):
+            raw = doc['scheme'][n - 1].strip()
+            if not raw or raw.startswith('## Page') or re.fullmatch(r'\d{1,3}', raw):
+                continue
+            # The bullet the shared cut leaves on: a minus sign (2018 Higher).
+            parts.append(re.sub(r'^−\s+', '', S(n).text(doc)))
+        return re.sub(r'\s+', ' ', ' '.join(parts)).strip()
+
+
+class Lines:
+    """Scheme lines a..b joined as printed, nothing cut: a criterion whose
+    percentage the SEC wrapped onto a line of its own ("- 30%", 2011), which
+    the bullet cut would strip."""
+    def __init__(self, a, b):
+        self.a, self.b = a, b
+
+    def text(self, doc):
+        return re.sub(r'\s+', ' ', ' '.join(doc['scheme'][n - 1] for n in range(self.a, self.b + 1))).strip()
+
+
+class PaperPontos:
+    """A part's price as the PAPER prints it, on the line that opens with
+    `opening` on `page` ("(30 pontos)" under "Parte II"), where the scheme
+    prints none (2012, 2013, 2015, 2018)."""
+    def __init__(self, page, opening, under=None):
+        self.page, self.opening, self.under = page, opening, under
+
+    def _line(self, doc):
+        if self.under is None:
+            return PL(self.page, self.opening).text(doc)
+        # The line printed directly under a heading ("Parte II"), where the
+        # page prints the same price more than once (2015 p4).
+        lines = [t for p, t in doc['paper'] if p == self.page]
+        at = [i for i, t in enumerate(lines) if t.strip() == self.under]
+        if len(at) != 1 or at[0] + 1 >= len(lines) or not lines[at[0] + 1].startswith(self.opening):
+            raise ValueError(f'paper p{self.page}: no {self.opening!r} under one {self.under!r}')
+        return lines[at[0] + 1]
+
+    def read(self, doc):
+        t = self._line(doc)
+        m = re.search(r'\((\d{1,3})\s*pontos\)', t)
+        if not m:
+            raise ValueError(f'paper p{self.page}: {t!r} prints no "(N pontos)"')
+        return 1, int(m.group(1)), m.group(0)
+
+    def tariff_note(self, doc):
+        return f"The paper prints the tariff as '{self.read(doc)[2]}'"
+
+
+class PaperEach:
+    """One part's price where the PAPER prices a question part by part on its
+    head ("(5 x 1 ponto)" over Q1(a)-(e)) and the scheme prints none."""
+    def __init__(self, page, opening, q):
+        self.page, self.opening, self.q = page, opening, q
+
+    def _m(self, doc):
+        t = PL(self.page, self.opening).text(doc)
+        m = re.search(r'\((\d{1,2})\s*[x×]\s*(\d{1,2})\s*pontos?\)', t)
+        if not m:
+            raise ValueError(f'paper p{self.page}: {t!r} prints no "(N x P pontos)"')
+        return m
+
+    def read(self, doc):
+        m = self._m(doc)
+        return 1, int(m.group(2)), m.group(0)
+
+    def tariff_note(self, doc):
+        m = self._m(doc)
+        return (f"The paper prints the tariff as '{m.group(0)}' on the head of Q{self.q}, "
+                f"walked down to its {m.group(1)} parts")
+
+
+class PontosSplit:
+    """A split price the scheme prints on line n, "(3+2 pontos)": with k, the
+    k-th printed part's marks (one answer); without, the whole."""
+    def __init__(self, n, k=None):
+        self.n, self.k = n, k
+
+    def read(self, doc):
+        line = doc['raw'][self.n - 1]
+        m = re.search(r'\((\d{1,2})\s*\+\s*(\d{1,2})\s*pontos\)', line)
+        if not m:
+            raise ValueError(f'scheme line {self.n} prints no "(N+M pontos)": {line!r}')
+        parts = [int(m.group(1)), int(m.group(2))]
+        return 1, (sum(parts) if self.k is None else parts[self.k]), m.group(0)
+
+
+class Pontos:
+    """A price printed in points, "PARTE II (40 pontos)" (the 2021 scheme): one
+    answer at that total."""
+    def __init__(self, n):
+        self.n = n
+
+    def read(self, doc):
+        m = re.search(r'\((\d{1,3})\s*pontos\)', doc['raw'][self.n - 1])
+        if not m:
+            raise ValueError(f'scheme line {self.n} prints no "(N pontos)"')
+        return 1, int(m.group(1)), m.group(0)
+
+
+SUPERSCRIPT = str.maketrans('0123456789', '⁰¹²³⁴⁵⁶⁷⁸⁹')
+
+
+class PdfSup:
+    """A scheme answer read from the scheme PDF with its raised digits kept
+    raised: the 2022 schemes print a temperature as "27" over a raised "0"
+    ("27⁰ C"), which the text layer flattens to "270 C". `line` is the .md
+    line the answer sits on (its text, digits joined, must match), `page` its
+    printed page; every span the PDF flags superscript has its digits mapped
+    to the Unicode superscript digits, nothing else changed."""
+    def __init__(self, line, page):
+        self.line, self.page = line, page
+
+    def text(self, doc):
+        import fitz
+        want = re.sub(r'\s+', '', doc['scheme'][self.line - 1])
+        pdf = fitz.open(os.path.join(SCHEMES, f'{doc["year"]}-{doc["level"]}.pdf'))
+        for block in pdf[self.page - 1].get_text('dict')['blocks']:
+            for ln in block.get('lines', []):
+                spans = ln['spans']
+                flat = re.sub(r'\s+', '', ''.join(sp['text'] for sp in spans))
+                if not flat or flat != want:
+                    continue
+                if not any(sp['flags'] & 1 for sp in spans):
+                    raise ValueError(f'scheme line {self.line}: no raised span on p{self.page}')
+                out = ''.join(sp['text'].translate(SUPERSCRIPT) if sp['flags'] & 1 else sp['text']
+                              for sp in spans)
+                return re.sub(r'\s+', ' ', out).strip()
+        raise ValueError(f'scheme line {self.line}: not found on p{self.page} of the PDF')
+
+
+def quoted(*sels):
+    """A line the scheme prints over its answers, quoted for the student."""
+    return lambda d: ' '.join(f'The scheme heads its answers “{x.text(d)}”.' for x in sels)
+
+
+READING, LISTENING = {}, {}
+
+
+# ------------------------------------------------------------- building ---
+def _doc(year, level, P=None, aural=False):
+    doc = scheme_doc(year, level)
+    doc['year'], doc['level'] = year, level
+    if P is not None:
+        path = P.aural_path if aural else P.path
+        doc['paper'] = [(l.page, l.text) for l in read_lines(path, P.furniture)]
+    return doc
+
+
+def _question(ask, spec, doc):
+    if spec.question:
+        return ' '.join(x.text(doc) for x in spec.question)
+    q = TRAILING.sub('', ask.full_text).strip()
+    if spec.extra:
+        # Booklet lines are kept whole: a gap's rule is part of the question.
+        q = ' '.join([q] + [x.text(doc).strip() for x in spec.extra])
+    return q
+
+
+def _check_total(spec, doc, total, where):
+    if spec.total is not None:
+        c, p, n = spec.total.read(doc)
+        if c * p != total:
+            raise ValueError(f'{where} {spec.key}: rows add to {total}, the scheme prints {n!r}')
+
+
+def reading_cards(year, level):
+    specs = READING.get((year, level), [])
+    if not specs:
+        return []
+    P = EuPaper(year, level, SUBJECT)
+    import eu_all
+    asks = _census_aural(year, level, P, written=True)
+    doc = _doc(year, level, P)
+    out = []
+    for spec in specs:
+        key = parse_key(spec.key)
+        if key not in asks:
+            raise ValueError(f'{year} {level} {spec.key}: the census prints no such ask')
+        ask = asks[key]
+        question = _question(ask, spec, doc)
+        language = answer_language(SUBJECT, question)
+        note = language_note(SUBJECT, language)
+        if spec.rownote:
+            note = f'{note} {spec.rownote(doc) if callable(spec.rownote) else spec.rownote}'
+        rows, total = build_rows(doc, spec.rows, note, spec.key)
+        section = None
+        if spec.unpriced:
+            label = spec.unpriced[0].text(doc)
+            c, p, n = spec.unpriced[1].read(doc)
+            section = {'label': label, 'totalMarks': c * p, 'notation': n}
+            if total or any(r.get('marks') is not None for r in rows):
+                raise ValueError(f'{year} {level} {spec.key}: an unpriced question carries no marks')
+            total = 0
+        elif spec.whole:
+            c, p, n = spec.total.read(doc)
+            total = c * p
+        else:
+            _check_total(spec, doc, total, f'{year} {level}')
+        card = {
+            'id': card_id(year, level, key),
+            'subjectId': SUBJECT,
+            'level': LEVEL_WORD[level],
+            'year': year,
+            'section': key[0],
+            'topicId': topic_for(SUBJECT, P.era, key[0], key[2]),
+            'conceptId': concept_for(question),
+            'questionRef': f'{year} {level.upper()} {key_label(key)}',
+            'questionText': question,
+            'tariffModel': {'kind': 'questionTotal' if spec.whole or section else 'fixed'},
+            'totalMarks': total,
+            'rows': rows,
+            'notes': ((f'The paper prints no price on this question: it prints “{section["label"]}” '
+                       f'“{section["notation"]}” for the part as a whole; the paper prints this ask on page '
+                       f'{ask.page} of the question booklet.')
+                      if section else
+                      (f'{spec.total.tariff_note(doc)}; the paper prints this ask on page {ask.page} '
+                       'of the question booklet.')
+                      if hasattr(spec.total, 'tariff_note') else
+                      (f'The scheme prices this ask {total} {"mark" if total == 1 else "marks"}; '
+                       f'the paper prints it on page {ask.page} of the question booklet.'))
+                     + (f' {spec.note}' if spec.note else ''),
+        }
+        if section:
+            card['unpricedSection'] = {'label': section['label'], 'totalMarks': section['totalMarks']}
+        lead = P.lead(ask.q)
+        if spec.stem is not None:
+            # An empty tuple: the task prints no instruction of its own, and the
+            # booklet's lead for its number belongs to another part.
+            if spec.stem:
+                card['stem'] = ' '.join(x.text(doc) for x in spec.stem)
+        elif lead and len(lead) >= 12:
+            card['stem'] = lead
+        source = eu_all.source_material(P, ask, SUBJECT, language, level, year) if spec.source else None
+        if source:
+            card['sourceMaterial'] = source
+        out.append(card)
+    return out
+
+
+def section_intro(doc):
+    """{part: (title, the booklet's instruction under it)}, lifted."""
+    out, part, buf = {}, None, []
+    for page, text in doc['paper']:
+        m = PARTE.match(text)
+        if m:
+            if part and part not in out:
+                out[part] = buf
+            part, buf = m.group(1), [text]
+            continue
+        if part and part not in out:
+            if NUMBERED.match(text):
+                out[part] = buf
+                continue
+            buf.append(text)
+    if part and part not in out:
+        out[part] = buf
+    res = {}
+    for k, v in out.items():
+        title = [v[0]] + [t for t in v[1:] if not t.rstrip().endswith('.')]
+        said = [t for t in v[1:] if t.rstrip().endswith('.')]
+        res[k] = (' '.join(title), ' '.join(said))
+    return res
+
+
+def _listening_language(stem):
+    if re.search(r'\bresponda\b.*\bem portugu[eê]s\b', stem, re.I):
+        return 'Portuguese'
+    # 2022 gives the instruction in English: "Answer in Portuguese."
+    if re.search(r'\banswer\b.*\bin Portuguese\b', stem, re.I):
+        return 'Portuguese'
+    if re.search(r'\banswer\b.*\bin English\b', stem, re.I):
+        return ENGLISH_OR_IRISH
+    raise ValueError(f'no answer language in {stem!r}')
+
+
+# A booklet whose text layer hands back a wrong character for a ligature,
+# fixed only where the printed page was rendered and read (as Polish's
+# VERIFIED_FILE): 2024 Higher listening booklet p3, Parte A Q3, set in Calibri,
+# prints "exercício físico" and its "fí" ligature reads back as U+0130 "İ"
+# The 2024 Ordinary listening booklet p3, Parte A Q4, has the same font and
+# fault twice: "beneİcios do exercício İsico" prints "benefícios do exercício
+# físico". These are the only U+0130 in any Portuguese booklet (render
+# checked 19 Nov 2026).
+GLYPH_FIXES = {(2024, 'hl', 'aural'): {'\u0130': 'fí'},
+               (2024, 'ol', 'aural'): {'\u0130': 'fí'}}
+
+
+def _repair(year, level, booklet, text):
+    for bad, good in GLYPH_FIXES.get((year, level, booklet), {}).items():
+        text = text.replace(bad, good)
+    return text
+
+
+def _census_aural(year, level, P, written=False):
+    """The asks of one booklet as the census counts them: the walker's, with
+    the census's corrections (paper_census.EU_FOLDED_ASKS) applied, each new
+    ask on the page of the first ask it replaces."""
+    from types import SimpleNamespace
+    import paper_census
+    asks = {a.key: a for a in (P.all_asks() if written else P.aural_asks())}
+    fix = paper_census.EU_FOLDED_ASKS.get((SUBJECT, year, level))
+    if not fix or (fix.get('booklet') == 'written') != written:
+        return asks
+    texts = paper_census.census_eu(SUBJECT, year, level)[1]
+    page = asks[fix['folded'][0]].page
+    for k in fix['folded']:
+        asks.pop(k)
+    for k in fix['asks']:
+        asks[k] = SimpleNamespace(key=k, page=page, full_text=texts[k], q=k[1], section=k[0],
+                                  letter=k[2], roman=k[3])
+    return asks
+
+
+def recording(year):
+    with open(AUDIO, encoding='utf-8') as fh:
+        return next(r for r in json.load(fh) if r['year'] == year)
+
+
+def listening_cards(year, level):
+    specs = LISTENING.get((year, level))
+    if specs is None:
+        raise KeyError(f'no listening spec for {year} {level}')
+    P = EuPaper(year, level, SUBJECT)
+    asks = _census_aural(year, level, P)
+    doc = _doc(year, level, P, aural=True)
+    intros = section_intro(doc)
+    rec = recording(year)
+    out, seen = [], set()
+    for spec in specs:
+        key = parse_key(spec.key)
+        if key not in asks:
+            raise ValueError(f'{year} {level} {spec.key}: the census prints no such ask')
+        if key in seen:
+            raise ValueError(f'{year} {level} {spec.key}: carded twice')
+        seen.add(key)
+        ask = asks[key]
+        part = key[0][1]
+        title, stem = intros[part]
+        stem = _repair(year, level, 'aural', stem)
+        question = _repair(year, level, 'aural', _question(ask, spec, doc))
+        language = _listening_language(stem)
+        note = language_note(SUBJECT, language)
+        if spec.rownote:
+            note = f'{note} {spec.rownote(doc) if callable(spec.rownote) else spec.rownote}'
+        rows, total = build_rows(doc, spec.rows, note, spec.key)
+        if spec.whole:
+            c, p, n = spec.total.read(doc)
+            total = c * p
+        else:
+            _check_total(spec, doc, total, f'{year} {level}')
+        suffix = (f'({key[2]})' if key[2] else '') + (f'({key[3]})' if key[3] else '')
+        out.append({
+            'id': card_id(year, level, key),
+            'subjectId': SUBJECT,
+            'level': LEVEL_WORD[level],
+            'year': year,
+            'section': key[0],
+            'topicId': topic_for(SUBJECT, P.era, key[0]),
+            'conceptId': concept_for(question),
+            'questionRef': f'{year} {level.upper()} {key_label(key)}',
+            'questionText': question,
+            'tariffModel': {'kind': 'questionTotal' if spec.whole else 'fixed'},
+            'totalMarks': total,
+            'rows': rows,
+            'notes': (f'The scheme prices this listening ask {total} '
+                      f'{"mark" if total == 1 else "marks"}; the listening booklet prints it on '
+                      f'page {ask.page}.' + (f' {spec.note}' if spec.note else '')),
+            'stem': stem,
+            'sourceMaterial': {
+                'kind': 'source-text',
+                'label': 'LISTENING COMPREHENSION',
+                'title': f'{title} — Question {key[1]}{suffix}',
+                'pages': [ask.page],
+                'sourceLabel': 'Aural Paper',
+                'attribution': (f'SEC Portuguese {year} {LEVEL_TITLE[level]} Level Listening '
+                                f'Comprehension — © State Examinations Commission.'),
+                'presentationNote': ('The question page of the listening booklet. '
+                                     'Play the recording, then answer.'),
+            },
+            'audioMaterial': {**rec['source'], 'label': f'Parte {part} · listening'},
+        })
+    missing = sorted(set(asks) - seen, key=str)
+    if missing:
+        raise ValueError(f'{year} {level}: no card for {[key_label(k) for k in missing]}')
+    printed, inside = {}, False
+    for line in doc['raw']:
+        t = line.strip()
+        if t.startswith('Listening Comprehension'):
+            inside = True
+        if t.startswith('APPENDIX'):
+            break
+        m = SECTION_TOTAL.match(t) if inside else None
+        if m and m.group(1) not in printed:
+            printed[m.group(1)] = int(m.group(2))
+    if set(printed) != {k[0][1] for k in asks}:
+        raise ValueError(f'{year} {level}: Parte totals printed for {sorted(printed)}')
+    for part, want in printed.items():
+        got = sum(c['totalMarks'] for c in out if c['section'] == f'L{part}')
+        if got != want:
+            raise ValueError(f'{year} {level} Parte {part}: cards add to {got}, the scheme prints {want}')
+    return out
+
+
+# ================================================================ 2026 HL ===
+# Scheme .md lines 92-226 (reading, pages 5-9) and 304-426 (listening, pages
+# 12-16). Reading: Q1 and Q2 (a)-(f)/(e) in Portuguese, the rest in English.
+# Listening: Partes A and B in Portuguese, C to E in English; each Parte 20.
+READING[(2026, 'hl')] = [
+    C('A1a', [menu([S(97), S(98)], T(97))]),
+    # (e): two answers at "4 marks" (any 1) and a third the scheme prints as a
+    # bullet of its own at "2 marks".
+    C('A1e', [menu([J(S(126), S(127)), S(129)], T(127), [alt(S(130), T(130))])], total=T(127)),
+    C('A1f', pairs(range(133, 138), 132, after=')'), total=T(132)),
+    C('A1h', [stepped(S(146), T(146))]),
+    C('A1j', [menu([S(158), S(159), S(160), S(161), S(162), J(S(163), S(164))], T(161))]),
+    C('A2a', [stepped(J(S(172), S(173), S(174)), T(173))]),
+    C('A2c', [stepped(S(182), T(182))]),
+    C('A2d', [stepped(J(S(184), S(185)), T(185))]),
+    C('A2f', [stepped(J(S(197), S(198)), T(197))]),
+]
+
+LISTENING[(2026, 'hl')] = [
+    C('LA1', [stepped(S(307), T(307))]),
+    C('LA2', [menu([S(309), S(310), S(312)], T(310))]),
+    C('LA3', [stepped(J(S(314), S(315)), T(314))]),
+    C('LA4', [stepped(J(S(317), S(318)), T(317))]),
+    C('LA5', [stepped(J(S(321), S(322), S(323)), T(322))]),
+    C('LA6', [one(S(325), T(325))]),
+    C('LB1', [menu([S(332), S(333), S(334), S(336), S(337)], T(334))]),
+    C('LB2', [menu([J(S(339), S(340)), J(S(341), S(342))], T(340))]),
+    C('LB3', [stepped(J(S(344), S(345)), T(344))]),
+    C('LB4', [stepped(S(347), T(347))]),
+    C('LB5', [stepped(J(S(349), S(350), S(351), S(352)), T(350))]),
+    C('LB6', [menu([S(354, before=', preços'), S(354, after='Horários, ', before=' e concursos'),
+                    S(354, after='bilhetes e ')], T(354))]),
+    C('LC1', [menu([S(362), S(363), S(365)], T(363))]),
+    C('LC2', [stepped(J(S(367), S(368)), T(367))]),
+    C('LC3', [stepped(J(S(370), S(371)), T(370))]),
+    C('LC4', [menu([S(373, before=', secretary'), S(373, after='elderly, ', before=', sales'),
+                    S(373, after='secretary, ', before=', customer'), S(373, after='assistant, ')],
+                   T(373))]),
+    C('LC5', [menu([S(375, before=', be positive'), S(375, after='calm, ', before=', focus'),
+                    S(375, after='positive, ', before=' and be'),
+                    J(S(375, after='kind and '), S(376))], T(375))]),
+    C('LC6', [stepped(S(378), T(378))]),
+    C('LD1', [menu([S(385), S(386)], T(386))]),
+    C('LD2', [menu([S(388, before=', their'), S(388, after='speaks, ', before=' and cultural'),
+                    S(388, after='humour and ', before=' 4 marks')], T(388))]),
+    C('LD3', [stepped(S(390), T(390))]),
+    C('LD4i', [stepped(S(393), T(393))]),
+    C('LD4ii', [menu([S(395, before=', varied'), S(395, after='stories, ', before=', different'),
+                      S(395, after='characters, ', before=' and type'),
+                      S(395, after='accents and ')], T(395))]),
+    C('LD5', [menu([J(S(398), S(399)), S(401)], T(399))]),
+    C('LD6', [one(S(403), T(403))]),
+    C('LE1', [menu([S(410), S(411)], T(410))]),
+    C('LE2', [menu([S(413, before=', plastic'), S(413, after='cartons, ', before=', hot'),
+                    S(413, after='bottles, ', before=' and markers'), S(413, after='glue and ')],
+                   T(413))]),
+    C('LE3', [stepped(S(415), T(415))]),
+    C('LE4', [stepped(J(S(417), S(418)), T(418))]),
+    C('LE5', [stepped(S(420), T(420))]),
+    C('LE6i', [one(S(423), T(423))]),
+    C('LE6ii', [stepped(S(425), T(425))]),
+]
+
+
+# ================================================================ 2026 OL ===
+# Scheme .md lines 95-223 (reading, pages 5-9) and 263-385 (listening, pages
+# 11-15). Listening: Partes A and B in Portuguese, C to E in English; each 24.
+READING[(2026, 'ol')] = [
+    C('A1c', [menu([J(S(109), S(110)), J(S(111), S(112))], T(110))]),
+    C('A1e', pairs([118, 119, 121, 122], 120, after=')'), total=T(120)),
+    C('A1f', [menu([S(130, before=', and'), S(131)], T(131))]),
+    # (a): the scheme prints a second, shorter answer on its own line at
+    # "2 marks", with no "ou" or "or": an answer of its own.
+    C('A2a', [menu([S(154)], T(154), [alt(S(155), T(155))])]),
+    C('A2d', [menu([S(164, before=', Dia'), S(164, after='Aniversários, ', before=' e chá'),
+                    S(164, after='Mulheres e ')], T(164))]),
+    C('A2e', [stepped(J(S(167), S(168)), T(167))]),
+    C('A2f', pairs([170, 171, 173, 174], 172, after=')'), total=T(172)),
+    C('A2i', [stepped(J(S(190), S(191)), T(190))]),
+    C('A3c', [menu([S(211, before=' e '), S(211, after=' e ')], T(211))]),
+    # (d): "6 marks" for the question and no split printed (CARD-STANDARD 5).
+    C('A3d', [shown(S(213)), shown(S(214))], total=T(213), whole=True,
+      note='The scheme prices the question as a whole and prints no split between its answers.'),
+    C('A3e', [stepped(S(217), T(217))]),
+]
+
+LISTENING[(2026, 'ol')] = [
+    # Fill-ins: one row per gap, each at the per-gap price, led by the
+    # scheme's completed sentence.
+    C('LA1', [one(S(266, after='está ', before=' porque'), T(266, each=True), lead=J(S(266), S(267))),
+              one(S(266, after='problema ', before=' com'), T(266, each=True), lead=J(S(266), S(267)))],
+      total=T(266), extra=(PL(3, 'O voo está'), PL(3, 'escadas do avião'))),
+    C('LA2', [stepped(S(269), T(269))]),
+    C('LA3', [menu([S(271, before=' / aniversário de 100'), S(271, after='família / ', before=' / aniversário da'),
+                    S(271, after='anos / ', before=' / festa'), J(S(271, after='avó / '), S(272))],
+                   T(271))]),
+    C('LA4', [one(S(275, after='avó '), T(276, each=True), lead=S(275, before=' Brasil')),
+              one(S(277, before=' Moçambique'), T(276, each=True), lead=S(277, after='Primos ')),
+              one(S(278, before=' Guiné-Bissau'), T(276, each=True), lead=S(278, after='Tios '))],
+      total=T(276)),
+    C('LA5', [menu([S(280, before=', balcão'), S(280, after='informações, ', before=','), S(281)], T(281))]),
+    C('LA6', [one(S(284, after='em ', before=' neste'), T(285, each=True), lead=S(284)),
+              one(S(284, after='corredor da ', before='.'), T(285, each=True), lead=S(284)),
+              one(S(285, after='na ', before=' à'), T(285, each=True), lead=S(285)),
+              one(S(285, after='à ', before='.'), T(285, each=True), lead=S(285)),
+              one(S(286, after='ao ', before=' da'), T(285, each=True), lead=S(286)),
+              one(S(286, after='lado da ', before=' de embarque'), T(285, each=True), lead=S(286))],
+      total=T(285), extra=(PL(3, 'Segues'), PL(3, 'Viras'), PL(3, 'Mesmo ao'))),
+    C('LB1', [one(S(293, after='De ', before=' a '), T(293, each=True), lead=S(293)),
+              one(S(293, after=' a ', before=' de'), T(293, each=True), lead=S(293)),
+              one(S(293, after='23 de ', before='.'), T(293, each=True), lead=S(293))],
+      total=T(293)),
+    # True/false: the verdict is the column heading the tick stands under on
+    # scheme p12, read by position (Verdict).
+    C('LB2', [one(V(n, 12), T(295, each=True), lead=S(n, before=' ✓')) for n in range(298, 305)],
+      total=T(295)),
+    C('LB3', [menu([S(306, before=', pousadas'), S(306, after='Hotéis, ', before=', turismo'),
+                    S(306, after='pousadas, ', before=', casas'), S(306, after='rural, ')], T(306))]),
+    C('LB4', [menu([S(309, before=', transporte'), S(309, after='carro, ', before=', rede'),
+                    S(309, after='público, ')], T(309))]),
+    C('LB5', [menu([S(312, before='; preços'), S(312, after='Horários; ', before=' e concursos'),
+                    S(312, after='bilhetes) e ')], T(312))]),
+    C('LC1', [one(S(322, after='medicine '), T(320), lead=S(323))]),
+    C('LC2', [stepped(J(S(326), S(327)), T(326))]),
+    C('LC3', [menu([S(330, after='Childminder ', before=' ✓'), S(330, after='assistant ✓ ', before=' ✓')], T(329))],
+      extra=(PL(5, 'Childminder'), PL(5, 'Sales assistant'), PL(5, 'Customer service'), PL(5, 'Waitress'))),
+    C('LC4', [menu([S(332, before='; positive'), S(332, after='Calm; ', before='; responsible'),
+                    S(332, after='(personality); ', before='; honest'), S(332, after='responsible; ', before='; patient'),
+                    S(332, after='honest; ', before='; good'), J(S(332, after='patient; '), S(333, before='; punctual')),
+                    S(333, after='listener; ', before='; team'), S(333, after='punctual; ', before='; she'),
+                    J(S(333, after='player; '), S(335))], T(333))]),
+    C('LC5', [stepped(J(S(337), S(338)), T(338))]),
+    C('LD1', [menu([S(345, before=', comedy'), S(345, after='Humour, ', before=' and premieres'),
+                    S(345, after='shows and ')], T(345))]),
+    C('LD2', [menu([S(348, before=', Brazilian'), S(348, after='Angolan, ', before=' and'),
+                    S(348, after='Brazilian and ')], T(348))]),
+    C('LD3', [stepped(S(351), T(351))]),
+    C('LD4', [menu([S(353, before=', several'), S(353, after='stories, ', before=', and'),
+                    S(353, after='characters, and ')], T(353))]),
+    C('LD5', [menu([S(356, before=' ✓'), S(359, before=' ✓')], T(355))],
+      extra=(PL(6, 'The show was boring'), PL(6, 'They invited'), PL(6, 'They made new jokes'))),
+    C('LE1', [menu([S(366, before=', create'), S(366, after='presentation, ', before=', a leaflet'),
+                    S(366, after='posters, ', before=', and'), S(366, after='leaflet, and ')], T(366))]),
+    C('LE2', [menu([S(370, before=' ✓ Glass'), S(370, after='Glass bottles ', before=' ✓ News')],
+                   T(369))]),
+    C('LE3', [stepped(S(372), T(372))]),
+    C('LE4', [stepped(J(S(374), S(375)), T(374))]),
+    C('LE5i', [one(S(378), T(378))]),
+    C('LE5ii', [one(S(380), T(380))]),
+    C('LE6i', [one(S(383), T(383))]),
+    C('LE6ii', [stepped(S(385), T(385))]),
+]
+
+
+# ================================================================ 2025 HL ===
+# Live: 18 reading cards (eu_all). New here: the three reading asks it refused,
+# and the listening test (scheme .md lines 279-411, pages 11-15; each Parte 20,
+# Parte B's head printing a bare "20"). Written tasks held (lower scale).
+READING[(2025, 'hl')] = [
+    C('A1b-ii', [menu([S(106, before=' Vão'), S(106, after='família. '), S(107)], T(106))]),
+    # A numbering task: one row per printed piece of information, each led by
+    # it, its answer the part the scheme numbers it with.
+    C('A1i', [one(S(n, before=' ' + w), T(142, each=True), lead=S(n, after=f'Part {k} '))
+              for n, k, w in [(143, 4, 'New'), (144, 3, 'Online'), (145, 1, 'Like'), (146, 2, 'Unexpected')]],
+      total=T(142), extra=(PL(7, 'New perspectives'), PL(7, 'Online friendship'),
+                           PL(7, 'Like grandmother'), PL(7, 'Unexpected news'))),
+    # True/false: the tick stands in the box after "False" (scheme p8).
+    C('A2j-i', [one(VI(202, 8), T(202))]),
+]
+
+LISTENING[(2025, 'hl')] = [
+    C('LA1', [stepped(S(282), T(282))]),
+    C('LA2', [stepped(S(284), T(284))]),
+    C('LA3', [menu([S(286), S(287), S(288), S(290), S(291)], T(288))]),
+    C('LA4', [stepped(S(293), T(293))]),
+    C('LA5', [stepped(J(S(295), S(296)), T(296))]),
+    C('LA6', [one(S(298), T(298))]),
+    C('LB1', [stepped(J(S(306), S(307)), T(306))]),
+    C('LB2', [stepped(S(309), T(309))]),
+    C('LB3', [stepped(S(312), T(312))]),
+    # "4 marks" for the question and no split printed (CARD-STANDARD 5).
+    C('LB4', [shown(S(314)), shown(S(316))], total=T(315), whole=True,
+      note='The scheme prices the question as a whole and prints no split between its answers.'),
+    C('LB5', [menu([S(318), S(319), S(320), S(321), J(S(322), S(323))], T(320))]),
+    C('LC1', [stepped(J(S(330), S(331)), T(330))]),
+    C('LC2', [one(S(333), T(333))]),
+    C('LC3', [menu([S(335), S(336), S(337), S(338), S(339)], T(337))]),
+    C('LC4', [stepped(J(S(341), S(342)), T(341))]),
+    C('LC5', [stepped(S(344), T(344))]),
+    C('LC6', [menu([S(346), S(347), S(348), S(350), S(351)], T(348))]),
+    # The table: every cell is asked (the booklet prints only its two heads).
+    C('LD1', [one(S(n, before=' ' + w), T(358, each=True), lead=S(359, before=' How long'))
+              if half == 0 else
+              one(S(n, after=w0 + ' '), T(358, each=True), lead=S(359, after='there? '))
+              for n, w, w0 in [(360, 'Half', 'Train'), (361, '20', 'Metro'), (362, '10', 'Walking')]
+              for half in (0, 1)], total=T(358)),
+    C('LD2', [stepped(S(364), T(364))]),
+    # Three answers at the full 4 marks: the first priced "4 marks: 2 x 2
+    # marks", the other two "4 marks". One is claimed.
+    C('LD3', [menu([S(366), S(367), S(368)], T(367))],
+      rownote=lambda d: (f'The scheme prices “{S(366).text(d)}” “{T(366).read(d)[2]}” and each '
+                         f'of the other two “{T(367).read(d)[2]}”.')),
+    C('LD4', [menu([S(370), S(371), S(372), S(373), S(374)], T(372))]),
+    C('LD5', [one(S(376), T(376))]),
+    C('LD6', [stepped(S(378), T(378))]),
+    C('LE1', [menu([S(387), S(388), S(389)], T(388))], rownote=quoted(S(386))),
+    C('LE2', [stepped(J(S(391), S(392)), T(391))]),
+    C('LE3', [menu([S(394), S(395), S(396), S(398), S(399)], T(396))]),
+    C('LE4', [menu([S(402), S(403), S(404), S(405), S(406)], T(403))], rownote=quoted(S(401))),
+    C('LE5', [stepped(B(J(S(408), S(409)), S(410), S(411)), T(409))]),
+]
+
+
+# ================================================================ 2025 OL ===
+# Live: 16 reading cards. New: the seven reading asks eu_all refused and the
+# listening test (scheme .md lines 306-430, pages 12-16; heads "Part A" ...,
+# each 24). Many prices are split over two lines: "⟨4 marks:⟩" / "⟨4 x 1
+# mark⟩" (T2). Written tasks held (lower scale).
+READING[(2025, 'ol')] = [
+    # A numbering task: each event's printed position is its answer.
+    C('A1d', pairs([113, 114, 115, 116], T2(114, 115, each=True), after='. '), total=T2(114, 115),
+      extra=(PL(4, 'O trabalho parou'), PL(4, 'Os colegas ficaram'), PL(4, 'Senhor Google Pacheco desapareceu'))),
+    # True/false: the verdict is the column the tick stands under (scheme p6).
+    C('A1h', [one(V(145, 6), T2(142, 143, each=True), lead=S(145, before=' ✓')),
+              one(V(146, 6), T2(142, 143, each=True), lead=J(S(146, before=' ✓'), S(147))),
+              one(V(148, 6), T2(142, 143, each=True), lead=S(148, before=' ✓')),
+              one(V(149, 6), T2(142, 143, each=True), lead=S(149, before=' ✓'))], total=T2(142, 143),
+      question=(PL(5, 'True or False? Tick'), PLc(5, '(h)', after='(h) '),
+                PL(5, 'The owner of the company travelled'), PL(5, 'The owner of the company had'),
+                PL(5, 'with Google'), PL(5, 'Some colleagues'), PL(5, 'Everyone agreed'))),
+    C('A2f-i', [one(V(n, 8), T2(188, 189, each=True), lead=S(n, before=' ✓')) for n in range(191, 195)],
+      total=T2(188, 189),
+      question=(PLc(8, '(f) True', after='(f) '), PLc(8, '(i) Tick', after='(i) '),
+                PL(8, '1. Lucas'), PL(8, '2. Lucas'), PL(8, '3. Teresa'), PL(8, '4. There'))),
+    C('A2f-ii', [menu([S(196), S(197)], T2(197, 198))],
+      question=(PLc(8, '(f) True', after='(f) '), PL(8, '1. Lucas'), PL(8, '2. Lucas'),
+                PL(8, '3. Teresa'), PL(8, '4. There'), PLc(8, '(ii) Number', after='(ii) '))),
+    # Four numbered steps priced "6 marks: 6 x 1 mark" with no split between
+    # them: one answer, placed on the printed steps. Quoted in the scheme's
+    # own reading order, its step numbers included.
+    C('A2g', [stepped(J(S(201), S(202), S(203), S(204), S(205), S(206)), T2(203, 204))]),
+    # Two columns, "Any 3" each, under "12 marks: 6 x 2 marks".
+    C('A3b', [menu([S(227), S(228), S(229), S(230)], AnyOf(T2(224, 225), 228), lead=S(226)),
+              menu([S(232), S(233), S(234), S(235), S(236)], AnyOf(T2(224, 225), 233), lead=S(231))],
+      total=T2(224, 225),
+      question=(PLc(10, '(b) Preencha', after='(b) '), PL(10, 'Brasileiros em Portugal'),
+                PL(10, 'Portugueses no Brasil'))),
+]
+
+LISTENING[(2025, 'ol')] = [
+    C('LA1i', [one(S(310, after='Semana: '), T(310), lead=S(310, before=': domingo')),
+               one(S(311, after='Data: '), T(311), lead=S(311, before=': 18'))],
+      extra=(PL(3, 'Dia da semana'), PL(3, 'Data:'))),
+    C('LA1ii', [one(S(313), T(313))]),
+    C('LA2', [one(S(315, after='Peso: '), T2(316, 317, each=True), lead=S(315, before=': até')),
+              one(S(316, after='1. '), T2(316, 317, each=True), lead=S(316, before=': 1.')),
+              one(S(317, after='2. '), T2(316, 317, each=True), lead=S(316, before=': 1.')),
+              one(S(318, after='Alimentação: '), T2(316, 317, each=True), lead=S(318, before=': vegetariano'))],
+      total=T2(316, 317), extra=(PL(3, '2.'), PL(3, 'Alimentação'))),
+    C('LA3', [one(S(320, after='estava ', before=', mas'), T2(320, 321, each=True), lead=J(S(320), S(321))),
+              one(S(321, before=' e por isso'), T2(320, 321, each=True), lead=J(S(320), S(321))),
+              one(S(321, after='por isso ', before='.'), T2(320, 321, each=True), lead=J(S(320), S(321)))],
+      total=T2(320, 321), extra=(PL(3, 'As autoridades'), PL(3, 'mas'), PL(3, 'e por isso'))),
+    C('LA4', [one(S(323), T2(323, 324))]),
+    C('LB1', [one(S(331), T(331))]),
+    C('LB2', [one(S(333), T(333))]),
+    C('LB3', [stepped(S(335), T2(335, 336))]),
+    # Two answers printed for "6 marks: 3 x 2 marks": each at 2, and the 2 the
+    # scheme pays beyond them on the unprinted row (CARD-STANDARD 3).
+    C('LB4', [one(S(338), T2(338, 339, each=True)), one(S(339), T2(338, 339, each=True)),
+              rest(T2(338, 339), 2)], total=T2(338, 339)),
+    C('LB5', [one(S(341), T(341))]),
+    # The paper asks for two details and the scheme prints "(any 2)", but
+    # prices the question "6 marks: 3 x 2 marks": the printed price is carded
+    # (CARD-STANDARD 5) and the conflict quoted.
+    C('LB6', [menu([S(343), S(344), S(345), J(S(346), S(347))], T2(344, 345))],
+      rownote=lambda d: (f'The paper asks for two details and the scheme prints “(any 2)”, but it '
+                         f'prices the question “{T2(344, 345).read(d)[2]}”; the printed price is carded.')),
+    C('LC1', [one(S(354), T(354))]),
+    C('LC2', [menu([S(356), S(357), S(358), S(359), S(360)], T2(357, 358))]),
+    C('LC3', [menu([S(362), S(363), S(364), S(366)], T2(363, 364))]),
+    C('LC4', [stepped(S(368), T2(368, 369))]),
+    C('LC5', [menu([S(371), S(372), S(373), S(375)], T2(372, 373))]),
+    # A second answer on a line of its own at "1 mark", no "or": an answer of
+    # its own.
+    C('LC6', [menu([S(377)], T(377), [alt(S(378), T(378))])]),
+    C('LD1', [one(S(385), T(385))]),
+    C('LD2', [menu([S(387), S(388), S(389), S(390)], T2(387, 388))]),
+    C('LD3', [one(S(392), T(392))]),
+    C('LD4', [menu([S(394), S(395)], T2(394, 395))]),
+    C('LD5', [menu([S(397), S(398)], T2(397, 398))]),
+    C('LD6', [one(S(400, before=' ✓'), T(400))], extra=(PL(6, 'True'), PL(6, 'False'))),
+    C('LE1', [menu([S(407), S(408), S(409)], T2(407, 408))]),
+    C('LE2', [menu([S(n) for n in range(411, 418)], T2(413, 414))]),
+    C('LE3', [stepped(S(419), T2(419, 420))]),
+    C('LE4i', [stepped(J(S(424), S(425)), T2(423, 425))]),
+    C('LE4ii', [menu([S(427), S(428), S(429), S(430)], T2(428, 429))]),
+]
+
+
+# ================================================================ 2024 HL ===
+# Live: 21 reading cards. New: the two reading asks eu_all refused and the
+# listening test (scheme .md lines 271-386, pages 11-15; heads "Part A" ...,
+# each 20). The census unfolds Parte C Q3 into (a)(i)-(b)(ii) (paper_census
+# EU_FOLDED_ASKS). Written tasks: pt_writing.py.
+READING[(2024, 'hl')] = [
+    # "What?" and "Why?" answered under one "6 marks: 3 x 2 marks".
+    C('A1i', [stepped(J(S(153), S(155)), T(154))]),
+    # A numbering task: each sentence's printed position, read from the cell
+    # the scheme prints beside it ("⟨4⟩").
+    C('A2j', [one(CELL(209), T(208, each=True), lead=S(209)),
+              one(CELL(210), T(208, each=True), lead=S(210)),
+              one(CELL(211), T(208, each=True), lead=J(S(211), S(212))),
+              one(CELL(213), T(208, each=True), lead=S(213)),
+              one(CELL(214), T(208, each=True), lead=S(214))], total=T(208),
+      question=(PLc(10, '(j) Number', after='(j) '), PL(10, 'The Tamar project connects'),
+                PL(10, 'Only a small'), PL(10, 'The Tamar project is one'), PL(10, 'initiatives.'),
+                PL(10, 'The Tamar project is an'), PL(10, 'The Tamar project rescues'))),
+]
+
+LISTENING[(2024, 'hl')] = [
+    C('LA1i', [stepped(S(275), T(275))]),
+    C('LA1ii', [one(S(277), T(277))]),
+    # Six printed answers set as one slash-separated list, "any 3".
+    C('LA2', [menu([S(280, before=' / Os amigos'), S(280, after='pessoal / ', before=' / Os aparelhos'),
+                    S(280, after='que fez / ', before=' /'), S(281, before=' / É perto'),
+                    S(281, after='aulas / ', before=' / Não'), J(S(281, after='dela / '), S(283))], T(281))]),
+    C('LA3', [menu([S(285, before=' / Melhorar'), S(285, after='forma / ', before=' / Ter'),
+                    S(285, after='mental / ')], T(285))]),
+    C('LA4', [one(S(287, after='Aula: '), T(287, each=True), lead=S(287, before=': Ioga')),
+              one(S(288, after='Horário: '), T(287, each=True), lead=S(288, before=': 8'))], total=T(287)),
+    C('LA5', [stepped(J(S(290), S(291)), T(291))]),
+    C('LB1', [one(S(298, after='Cidade: '), T(298, each=True), lead=S(298, before=': Maputo')),
+              one(S(299, after='Idade: '), T(298, each=True), lead=S(299, before=': seis'))], total=T(298)),
+    C('LB2', [menu([S(302, before=', pintura'), S(302, after='Dança, ', before=', escrita'),
+                    S(302, after='pintura, ', before=' e ritmos'), S(302, after='escrita e ')], T(302))]),
+    # A four-gap sentence: one row per gap, led by the completed sentence.
+    C('LB3', [one(S(305, after='década de ', before=', trabalhou'), T(305, each=True), lead=J(S(305), S(306))),
+              one(S(305, after='(70), ', before=' como'), T(305, each=True), lead=J(S(305), S(306))),
+              one(S(306, before=' na Cruz'), T(305, each=True), lead=J(S(305), S(306))),
+              one(S(306, after='Cruz ', before='.'), T(305, each=True), lead=J(S(305), S(306)))],
+      total=T(305)),
+    C('LB4', [stepped(S(308), T(308))]),
+    # Title and year priced together "4 marks: 4 x 1 mark", no split between
+    # them: one answer on the printed steps.
+    C('LB5', [stepped(B(S(310), S(311)), T(311))]),
+    C('LB6', [one(S(313), T(313))]),
+    C('LC1i', [one(S(320), T(320))], question=(PLc(5, '1. (i) Why', after='1. (i) '),)),
+    # Two answers at the full 2 marks, the first split "2 x 1": one claimed.
+    C('LC1ii', [menu([S(322), S(323)], T(323))], question=(PLc(5, '(ii) Why does', after='(ii) '),),
+      rownote=lambda d: (f'The scheme prices “{S(322).text(d)}” “{T(322).read(d)[2]}” and '
+                         f'“{S(323).text(d)}” “{T(323).read(d)[2]}”.')),
+    C('LC2i', [one(S(325), T(325))], question=(PLc(5, '2. (i) Who', after='2. (i) '),)),
+    C('LC2ii', [one(S(327), T(327))], question=(PLc(5, '(ii) How long', after='(ii) '),)),
+    C('LC3a-i', [one(S(331), T(331))]),
+    C('LC3a-ii', [menu([S(333, before=', dinner'), S(333, after='hotel, ', before=', live'),
+                        S(333, after='dinner, ')], T(333))]),
+    C('LC3b-i', [menu([S(336, before=' and traditional'), S(336, after='tour and ')], T(336))]),
+    C('LC3b-ii', [one(S(338), T(338))]),
+    C('LC4', [menu([S(340, before=', hotel'), S(340, after='Cruise, ', before=', trips'),
+                    S(340, after='hotel, ', before=', visits'), S(340, after='trips, ', before=', meals'),
+                    S(340, after='visits, ')], T(340))]),
+    C('LC5', [stepped(S(343), T(343))]),
+    C('LD1', [stepped(S(350), T(350))]),
+    C('LD2i', [one(S(352), T(352))]),
+    C('LD2ii', [menu([S(354, before=', corn'), S(354, after='skin, ', before=', bamboo'),
+                      S(354, after='fibre, ', before=' and soy'), S(354, after='bamboo and ')], T(354))]),
+    C('LD3i', [menu([S(357, before=', sustainability'), S(357, after='Transparency, ', before=' and'),
+                     S(357, after='sustainability and ')], T(357))],
+      question=(PLc(6, '3. (i) Name', after='3. (i) '),)),
+    C('LD3ii', [menu([S(359, before=' and in'), S(359, after='Online and ')], T(359))],
+      question=(PLc(6, '(ii) Where can', after='(ii) '),)),
+    # The table: every cell the booklet leaves blank, "6 marks: 6 x 1 mark
+    # (any 6)".
+    C('LD4', [one(S(361, after='State: '), T(363, each=True), lead=S(361, after='Location ', before=': Mato')),
+              one(S(362, after='Country: '), T(363, each=True), lead=S(362, before=': Brazil')),
+              one(S(363, after='1. '), T(363, each=True), lead=S(364, before=' 2.')),
+              one(S(364, after='2. '), T(363, each=True), lead=S(364, before=' 2.')),
+              one(S(365, after='3. '), T(363, each=True), lead=S(364, before=' 2.')),
+              one(S(366, after='Material '), T(363, each=True), lead=S(366, before=' Organic'))],
+      total=T(363), extra=(PL(6, 'Location'), PL(6, 'State: Country:'), PL(6, 'Products'),
+                           PL(6, 'Type of'), PL(6, 'Material'))),
+    # "To help animals." at 1 mark under the fuller answer's "2 x 1": a
+    # partial of the same point, quoted beside it.
+    C('LE1i', [stepped(S(373), T(373))]),
+    C('LE1ii', [stepped(S(375), T(375))],
+      rownote=lambda d: f'The scheme also allows “{S(376).text(d)}” for {T(376).read(d)[1]} mark.'),
+    C('LE2', [menu([S(378, before=', shelter'), S(378, after='Food, ', before=' and'),
+                    S(378, after='shelter and ')], T(378))]),
+    C('LE3', [menu([S(380, before=' and best'), S(380, after='superhero and ')], T(380))]),
+    C('LE4', [one(S(382, after='Date: ', before=', 5th'), T(382, each=True), lead=S(382, before=': Friday')),
+              one(S(382, after='Friday, ', before='.'), T(382, each=True), lead=S(382, before=': Friday')),
+              one(S(383, after='From: ', before=' To:'), T(382, each=True), lead=S(383, before=': 7pm')),
+              one(S(383, after='To: '), T(382, each=True), lead=S(383, after='19h ', before=': midnight'))],
+      total=T(382), extra=(PL(7, 'Date:'), PL(7, 'From:'), PL(7, 'To:'))),
+    C('LE5', [menu([S(386, before=', dance'), S(386, after='Music, ', before=', food'),
+                    S(386, after='floor, ', before=' and drink'), S(386, after='food and ')], T(386))]),
+]
+
+
+# ================================================================ 2024 OL ===
+# Live: 22 reading cards. New: Q1(e) (true/false) and the listening test
+# (scheme .md lines 255-363, pages 10-14; heads "Part A" ..., each 24). The
+# 2024 scheme draws a checked box (U+F0FE) after the label it ticks.
+READING[(2024, 'ol')] = [
+    C('A1e', [one(VI(116, 5), T(116))]),
+]
+
+LISTENING[(2024, 'ol')] = [
+    # A second answer on a line of its own at "2 marks", no "ou": an answer
+    # of its own.
+    C('LA1', [menu([S(258)], T(258), [alt(S(259), T(259))])]),
+    C('LA2', [one(S(262), T(262))]),
+    C('LA3', [menu([S(265), S(266), S(267), S(268)], T(266))]),
+    C('LA4', [menu([S(270, before=' ✓'), S(272, before=' ✓')], T(271))],
+      extra=(PL(3, 'Aumenta'), PL(3, 'Diminui'), PL(3, 'Melhora'), PL(3, 'Piora'))),
+    C('LA5', [one(S(276, after='Marina: '), T(277, each=True), lead=S(276, before=': 7')),
+              one(S(277, after='Pedro: '), T(277, each=True), lead=S(277, before=': 8'))],
+      total=T(277), extra=(PL(3, 'Marina:'), PL(3, 'Pedro:'))),
+    C('LA6', [one(S(279, after='Aula: ', before=' Horário'), T(279, each=True), lead=S(279, before=': Ioga')),
+              one(S(279, after='Horário: ', before=' Sala'), T(279, each=True),
+                  lead=S(279, after='Yoga ', before=': 8')),
+              one(S(279, after='Sala: '), T(279, each=True), lead=S(279, after='8:30 ', before=': 3'))],
+      total=T(279)),
+    C('LB1', [one(S(286), T(286))]),
+    C('LB2', [one(S(289), T(289))]),
+    C('LB3', [one(VI(291, 11), T(291))]),
+    C('LB4', [one(S(293, after='Alguns ', before=' depois'), T(293, each=True), lead=J(S(293), S(294))),
+              one(S(293, after='depois, ', before=' seus'), T(293, each=True), lead=J(S(293), S(294))),
+              one(S(293, after='seus ', before=' contos'), T(293, each=True), lead=J(S(293), S(294))),
+              one(S(293, after='contos em '), T(293, each=True), lead=J(S(293), S(294)))],
+      total=T(293), extra=(PL(4, 'Alguns'), PL(4, '___'))),
+    C('LB5', [one(S(296), T(296))]),
+    C('LB6', [one(S(298), T(298))]),
+    C('LB7', [one(S(300), T(300))]),
+    C('LC1', [one(S(310, before=' ✓'), T(308))]),
+    C('LC2', [one(S(312, after='Who: ', before=' When'), T(312, each=True), lead=S(312, before=': Her')),
+              one(S(312, after='When: '), T(312, each=True), lead=S(312, after='family. ', before=': Next'))],
+      total=T(312), extra=(PL(5, 'Who:'), PL(5, 'When:'))),
+    C('LC3', [one(VI(314, 12), T(314))]),
+    C('LC4', [one(S(316), T(316))]),
+    C('LC5', [menu([S(318), S(319), S(320), S(321), S(322)], T(319))]),
+    C('LC6', [one(S(324), T(324))]),
+    C('LD1', [one(S(331), T(331))]),
+    C('LD2', [one(S(333), T(333))]),
+    C('LD3', [one(S(336), T(336))]),
+    C('LD4', [menu([S(338, before=', corn'), S(338, after='(skin), ', before=', bamboo'),
+                    S(338, after='corn, ', before=' and soya'), S(338, after='bamboo and ')], T(338))]),
+    C('LD5', [menu([S(341, before=' and women'), S(341, after='male and ')], T(341))]),
+    # Five cells printed for "6 marks: 6 x 1 mark": each at 1, and the mark
+    # the scheme pays beyond them on the unprinted row (CARD-STANDARD 3).
+    C('LD6', [one(S(343, after='Country: '), T(345, each=True), lead=S(343, after='Location ', before=': Brazil')),
+              one(S(344, after='1. '), T(345, each=True), lead=S(345, before=' 2.')),
+              one(S(345, after='2. '), T(345, each=True), lead=S(345, before=' 2.')),
+              one(J(S(346, after='3. '), S(347)), T(345, each=True), lead=S(345, before=' 2.')),
+              one(S(348, after='Material '), T(345, each=True), lead=S(348, before=' Organic')),
+              rest(T(345), 5)],
+      total=T(345),
+      question=(PLc(6, '6. Fill', after='6. '), PL(6, 'Country:'), PL(6, 'Products'),
+                PL(6, 'Type of'), PL(6, 'Material'))),
+    C('LE1', [one(VI(355, 14), T(355))]),
+    C('LE2', [stepped(S(357), T(357))]),
+    C('LE3', [menu([S(359, before=', shelter'), S(359, after='Food, ', before=' and'),
+                    S(359, after='shelter and ')], T(359))]),
+    C('LE4', [menu([S(361, before=' and villains'), S(361, after='Superheroes and ')], T(361))]),
+    C('LE5', [menu([S(363, before=', dance'), S(363, after='Music, ', before=', food'),
+                    S(363, after='floor, ', before=' and drink'), S(363, after='food and ')], T(363))]),
+]
+
+
+# ================================================================ 2023 HL ===
+# Live: 22 reading cards. New: Q1(e) and Q2(g), and the listening test
+# (scheme .md lines 440-605, pages 14-18; each Part 20). The scheme sets
+# circled markers (➀) over the words each mark is for; they are never cut
+# into an answer. Written tasks: pt_writing.py.
+from pt_writing import PLk                                        # noqa: E402
+
+READING[(2023, 'hl')] = [
+    # Three cells, Manhã / Tarde / Noite, each "2 marks: 2 x 1 mark" (any 2):
+    # an anyN row per cell, led by it (cell boundaries read on the rendered
+    # scheme p5: "Foi à escola" is Noite's).
+    C('A1e', [menu([S(114, after='• '), S(115)], T(114), lead=S(114, before=' •')),
+              menu([S(116), S(117, after='• '), S(118)], T(116), lead=S(117, before=' •')),
+              menu([S(119), S(120, after='• '), S(121), S(122)], T(120), lead=S(120, before=' •'))],
+      total=T(113)),
+    C('A2g', [one(CELL(n), T(233, each=True), lead=S(n)) for n in range(234, 241)]
+      + [one(CELL(241), T(233, each=True), lead=J(S(241), S(242)))], total=T(233),
+      question=(PLc(10, '(g) Number', after='(g) '), PL(10, 'the text.'),
+                PL(10, 'Andreas, The Trash'), PL(10, 'You can follow'), PL(10, 'Andreas Noe'),
+                PL(10, 'Andreas has left'), PL(10, 'The Trash Traveller assembled'),
+                PL(10, 'The highest mountain'), PL(10, 'The Trash Traveller will'), PL(10, 'Germany pays'))),
+]
+
+LISTENING[(2023, 'hl')] = [
+    C('LA1', [stepped(B(S(444), S(446)), T(445))]),
+    # The shorter form of the same answer, on its own line at "2 marks": paid
+    # in place of the full answer, never beside it.
+    C('LA2', [menu([J(S(449), S(450))], T(449), [alt(S(451), T(451), of=0)])]),
+    C('LA3', [one(S(454, after='sentiram: '), T(454), lead=S(454, before=': ficaram')),
+              menu([S(455, after='fizeram: ', before='/ esconderam'), S(455, after='porta/ ', before='/ olharam'),
+                    J(S(455, after='esconderam-se/ '), S(456, before='/ riram')), S(456, after='loja/ ')],
+                   T(455), lead=S(455, before=': trancaram'))],
+      extra=(PL(3, 'Testemunhas'), PL(3, 'O que sentiram'), PL(3, 'O que fizeram'))),
+    C('LA4', [one(S(460, after='Assaltante 1 '), T(460), lead=S(460, before=' Ficou')),
+              stepped(J(S(461, after='Assaltante 2 '), S(462, before=' 3 marks')), T(462),
+                      lead=S(461, before=' Tentou'))], total=T(458)),
+    C('LA5', [stepped(J(S(465), S(466)), T(465))]),
+    C('LB1', [one(VI(477, 15), T(477))]),
+    C('LB2', [one(S(480), T(480))]),
+    C('LB3', [one(S(483, after='é ', before=' da Sofia'), T(484, each=True), lead=S(483)),
+              one(S(484, after='gosta de '), T(484, each=True), lead=S(484)),
+              one(S(485, after='possui ', before=' na Serra'), T(484, each=True), lead=S(485)),
+              one(S(485, after='casa na '), T(484, each=True), lead=S(485))], total=T(484),
+      question=(PLc(5, '3. Complete', after='3. '), PL(5, 'O Carlos'), PL(5, 'é _'),
+                PL(5, 'gosta de'), PL(5, 'possui'))),
+    C('LB4', [stepped(J(S(489, before=' ➀'), S(490)), T(489))]),
+    C('LB5', [menu([S(493, before='; meias'), S(493, after='Botas; ', before='; casaco'),
+                    S(493, after='quentes; ', before='; gorro'), S(493, after='impermeável; ', before='; cachecol'),
+                    S(493, after='gorro; ', before='; luvas'), S(493, after='cachecol; ', before=';'),
+                    S(494)], T(493))]),
+    C('LB6', [stepped(J(S(497), S(498)), T(497))]),
+    C('LC1', [one(VI(509, 16), T(509))]),
+    C('LC2', [menu([S(512), S(513), S(514), S(515)], T(514))]),
+    C('LC3', [stepped(S(518), T(518))]),
+    C('LC4', [menu([S(521, before=', groups'), S(521, after='people, ', before=', couples'),
+                    J(S(521, after='friends, '), S(522, before=' or families')), S(522, after='getaway or ')],
+                   T(521))]),
+    C('LC5', [stepped(B(S(525), S(526)), T(526))]),
+    C('LC6', [stepped(J(S(529), S(530)), T(529))]),
+    C('LD1', [one(S(540), T(540))]),
+    # Two answers, each "3 marks: 1 x 3 marks": one claimed.
+    C('LD2', [menu([S(543), S(544)], T(543))]),
+    C('LD3', [stepped(S(547), T(547))]),
+    C('LD4', [one(S(550, after='in-law '), T(551, each=True), lead=S(550, before=' Ana')),
+              one(S(551, after='in-law '), T(551, each=True), lead=S(551, before=' Manuel'))], total=T(551)),
+    C('LD5', [menu([S(554), S(555)], T(554))]),
+    C('LD6', [stepped(S(559), T(559))]),
+    C('LD7', [stepped(S(563), T(563))]),
+    # Two answers, the second on its own line at "2 marks", no "or": an
+    # answer of its own.
+    C('LE1', [menu([S(573)], T(573), [alt(S(574), T(574))])]),
+    C('LE2', [menu([S(577, before=', oil'), S(577, after='economics, ', before=', cultural'),
+                    S(577, after='petrol, ')], T(577))]),
+    C('LE3', [one(J(S(581), S(583)), T(582))]),
+    # Two sentences holding the marked details, "3 marks: 3 x 1 mark (any 3)"
+    # (the cell broken over two lines): one answer on the printed steps.
+    C('LE4', [stepped(B(J(S(587), S(588)), S(589)), TG(586, 588))]),
+    C('LE5', [one(S(593), T(593))], extra=tuple(PLk(12, 'She is a', k) for k in range(4))),
+    C('LE6', [menu([S(596, before=', writers'), S(596, after='Actors, ', before=', journalists'),
+                    S(596, after='writers, ', before=', historians'), S(596, after='journalists, ', before=', and'),
+                    S(596, after='historians, and ')], T(596))]),
+    C('LE7', [one(VI(601, 18), TG(601, 602))]),
+    C('LE8', [one(S(605), T(605))]),
+]
+
+
+# ================================================================ 2023 OL ===
+# Live: 18 reading cards. New: six reading asks (Q1(c) and Q1(e) each one
+# tick question, as the census now counts them, 10c) and the listening test
+# (scheme .md lines 355-498, pages 13-17; each Part 24). Written held.
+# ============================================================== 2021 HL ===
+# Part II, the written commentary: "Escreva um comentário (mínimo de 300
+# palavras) sobre um dos seguintes temas." (paper p4), Tópico 1 or Tópico 2.
+# The scheme (pp4-5) prints a MODEL commentary for each, no marking list, and
+# prices the part "(40 pontos)": CARD-STANDARD 10a, each model shown after the
+# reveal under the scheme's own heading ("Tema 1" / "Tema 2"), word for word,
+# scored on the printed total (questionTotal), never claimable.
+_CHOICE_2021 = (PL(4, 'Escreva um comentário'),)
+READING[(2021, 'hl')] = [
+    C('II1', [shown(J(*[S(n) for n in range(83, 95)]), lead=S(78))], total=Pontos(76), whole=True,
+      question=(PL(4, 'Tópico 1'), PL(4, 'Faça um comentário'), PL(4, 'conter.'), PL(4, '“Muitos anos passaram')),
+      stem=_CHOICE_2021),
+    C('II2', [shown(J(*[S(n) for n in range(102, 114)]), lead=S(99))], total=Pontos(76), whole=True,
+      question=(PL(4, 'Tópico 2'), PL(4, '“Não podemos inventar'), PL(4, '- Greta Thunberg')),
+      stem=_CHOICE_2021, source=False),
+]
+
+
+# ===================================================== 2010-2019 HL (old) ===
+# The old examination: Part I (reading; the shared generator's cards, the
+# shape of live 2021 Part I), Part II ("Parte II (30 pontos)", a commentary
+# of about 100 words on a sentence) and Part III ("Parte III (40 pontos)",
+# "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma."
+# over Proposta 1 and 2). The scheme prints a MODEL commentary for each task
+# and no marking list: CARD-STANDARD 10a, as 2021 Part II -- each model shown
+# after the reveal under the scheme's own heading for it, word for word,
+# scored on the printed total (questionTotal), never claimable; Part III is
+# two cards, the choice instruction the stem of each.
+_CHOICE_2019 = (PL(4, 'Das duas propostas'), PL(4, '(Comente a citação'))
+READING[(2019, 'hl')] = [
+    C('II1', [shown(SchemeSpan(85, 92), lead=S(84))], total=Pontos(83), whole=True,
+      question=(PL(4, 'Todos os atrevidos'), PL(4, 'Comente a frase em cerca de 100')), stem=()),
+    C('III1', [shown(SchemeSpan(100, 108), lead=S(99))], total=Pontos(97), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'A sorte protege')), stem=_CHOICE_2019, source=False),
+    C('III2', [shown(SchemeSpan(110, 132), lead=S(109))], total=Pontos(97), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, 'Fazer uma interrupção'), PL(4, 'de tempo?'),
+                PL(4, 'Dê uma resposta a esta'), PL(4, 'argumento.')), stem=_CHOICE_2019, source=False),
+]
+
+
+_CHOICE_P4 = (PL(4, 'Das duas propostas'), PL(4, '(Comente a citação'))
+_JOINED_LATER = ('The scheme of this sitting reprints no question, so the two documents are joined on the '
+                 'numbering they both print, which the census checks question by question.')
+from pl_listen_lib import Join   # noqa: E402
+# 2017 and 2016 print Q1's five answers on one run, as 2018: each part is cut
+# to its own answer at the paper's "(5 x 1 ponto)". 2017 prints no price on
+# Q2-Q6 (held for the unpriced-section shape); 2016 prints "(5)" on each.
+_Q1_2017 = PaperEach(3, '(5 x 1 ponto)', 1)
+_LEAD_2017 = PLc(3, '1. Explique por palavras suas', after='1. ')
+_Q1_2016 = PaperEach(3, '(5 × 1 ponto)', 1)
+_LEAD_2016 = PLc(3, '1. Explique por palavras suas', after='1. ')
+_I1_2017 = [
+    C('I1a', [one(S(50, after='a) ', before=' b)'), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'a) alcofa', after='a) ')), stem=()),
+    C('I1b', [one(S(50, after='b) ', before=' c)'), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'b) trazia', after='b) ')), stem=()),
+    # "c)" closes line 50; its answer opens line 51.
+    C('I1c', [one(S(51, before=' d)'), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'c) ameigavam', after='c) ')), stem=()),
+    C('I1d', [one(S(51, after='d) ', before=' e)'), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'd) desbotada', after='d) ')), stem=()),
+    C('I1e', [one(J(S(51, after='e) '), S(52)), _Q1_2017)], total=_Q1_2017, note=_JOINED_LATER,
+      question=(_LEAD_2017, PLc(3, 'e) moldaram', after='e) ')), stem=()),
+]
+_I1_2016 = [
+    C('I1a', [one(S(50, after='a) ', before=' b)'), _Q1_2016)], total=_Q1_2016, note=_JOINED_LATER,
+      question=(_LEAD_2016, PLc(3, 'a) sítio', after='a) ')), stem=()),
+    # "livro-" closes line 50 and "leitor" opens 51: the compound is joined
+    # as printed, with no space.
+    C('I1b', [one(Join(S(50, after='b) '), S(51, before=' c)'), sep=''), _Q1_2016)], total=_Q1_2016,
+      note=_JOINED_LATER, question=(_LEAD_2016, PLc(3, 'b) o livro', after='b) ')), stem=()),
+    C('I1c', [one(J(S(51, after='c) '), S(52, before=' d)')), _Q1_2016)], total=_Q1_2016, note=_JOINED_LATER,
+      question=(_LEAD_2016, PLc(3, 'c) fluxo', after='c) ')), stem=()),
+    C('I1d', [one(S(52, after='d) ', before=' e)'), _Q1_2016)], total=_Q1_2016, note=_JOINED_LATER,
+      question=(_LEAD_2016, PLc(3, 'd) passatempo', after='d) ')), stem=()),
+    C('I1e', [one(J(S(52, after='e) '), S(53)), _Q1_2016)], total=_Q1_2016, note=_JOINED_LATER,
+      question=(_LEAD_2016, PLc(3, 'e) tirar', after='e) ')), stem=()),
+]
+# 2018 prints Q1's five answers on one run ("1. a) coisas sem importância; b)
+# ambiente ..."), which the shared generator carded whole on Q1(a): each part
+# is cut to its own answer here, at the paper's "(5 x 1 ponto)".
+_Q1_2018 = PaperEach(3, '(5 x 1 ponto)', 1)
+_LEAD_2018 = PLc(3, '1. Explique por palavras suas', after='1. ')
+_JOINED = ('The scheme of this sitting reprints no question, so the two documents are joined on the '
+           'numbering they both print, which the census checks question by question.')
+READING[(2018, 'hl')] = [
+    C('I1a', [one(S(46, after='a) ', before=' b)'), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'a) futilidades', after='a) ')), stem=()),
+    C('I1b', [one(S(46, after='b) ', before=' c)'), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'b) rarefeito', after='b) ')), stem=()),
+    C('I1c', [one(J(S(46, after='c) '), S(47, before=' d)')), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'c) limpar', after='c) ')), stem=()),
+    C('I1d', [one(S(47, after='d) ', before=' e)'), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'd) apartamento', after='d) ')), stem=()),
+    C('I1e', [one(J(S(47, after='e) '), S(48)), _Q1_2018)], total=_Q1_2018, note=_JOINED,
+      question=(_LEAD_2018, PLc(3, 'e) Epitáfio', after='e) ')), stem=()),
+    C('II1', [shown(SchemeSpan(65, 71), lead=S(64))], total=PaperPontos(4, '(30 pontos)'), whole=True,
+      question=(PL(4, 'Faça um comentário sobre a frase'), PL(4, 'A lágrima rolou'), PL(4, 'perda, pelo'),
+                PL(4, 'que chamamos futuro')), stem=()),
+    # The scheme's Part III prints one indicative list ("Aspectos que o aluno
+    # pode referir na sua resposta:"), for Proposta 1's quotation.
+    C('III1', [shown(SchemeSpan(78, 80), lead=S(77)), shown(SchemeSpan(81, 82))],
+      total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'Vejo um país'), PL(4, 'complacência'), PL(4, 'seca.')),
+      stem=_CHOICE_P4, source=False),
+    # Nothing for Proposta 2: CARD-STANDARD 3, the scheme prints no answer.
+    C('III2', [rest(PaperPontos(4, '(40 pontos)'), 0)], total=PaperPontos(4, '(40 pontos)'),
+      question=(PL(4, 'Proposta 2'), PL(4, 'O hábito não faz'), PL(4, 'Em que medida'),
+                PL(4, 'argumentos a favor'), PL(4, 'palavras.')), stem=_CHOICE_P4, source=False),
+]
+READING[(2017, 'hl')] = _I1_2017 + [
+    C('II1', [shown(SchemeSpan(84, 86), lead=S(83))], total=Pontos(82), whole=True,
+      question=(PL(4, 'Faça um comentário sobre a frase'), PL(4, '“A parte do mundo')), stem=()),
+    # Tema 1's answer is the scheme's guidance for the task, shown as printed.
+    C('III1', [shown(SchemeSpan(90, 91), lead=S(89))], total=Pontos(87), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'Relembre um objecto'), PL(4, 'como ele foi')),
+      stem=_CHOICE_P4, source=False),
+    C('III2', [shown(SchemeSpan(93, 109), lead=S(92))], total=Pontos(87), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, '“A minha opinião'), PL(4, 'Comente a frase no contexto')),
+      stem=_CHOICE_P4, source=False),
+]
+READING[(2016, 'hl')] = _I1_2016 + [
+    C('II1', [shown(SchemeSpan(71, 80), lead=S(70))], total=Pontos(69), whole=True,
+      question=(PL(4, 'Faça um comentário sobre a frase'), PL(4, 'Os bons livros'), PL(4, 'suja basta virar'),
+                PL(4, 'tem princípio nem fim')), stem=()),
+    C('III1', [shown(SchemeSpan(84, 88), lead=S(83))], total=Pontos(81), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'Uma língua é o lugar'), PL(4, 'pensar e sentir'),
+                PL(4, 'como da de outros'), PL(4, 'mar foi a da nossa'), PL(4, 'Vergílio Ferreira')),
+      stem=_CHOICE_P4, source=False),
+    C('III2', [shown(SchemeSpan(90, 97), lead=S(89))], total=Pontos(81), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, 'O mundo pode ser'), PL(4, 'fazermos mais igual'), PL(4, 'Fintan')),
+      stem=_CHOICE_P4, source=False),
+]
+
+
+_Q1_2014 = PaperEach(3, '(5 × 1 ponto)', 1)
+_LEAD_2014 = PLc(3, '1. Explique por palavras suas', after='1. ')
+READING[(2014, 'hl')] = [
+    # Q1's five answers on one run, as 2018.
+    C('I1a', [one(S(52, after='a) ', before=' b)'), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'a) Ostracismo', after='a) ')), stem=()),
+    C('I1b', [one(S(52, after='b) ', before=' c)'), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'b) Canícula', after='b) ')), stem=()),
+    C('I1c', [one(S(52, after='c)'), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'c) Maturidade', after='c) ')), stem=()),
+    C('I1d', [one(S(53, after='d) ', before=' e)'), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'd) Demográfico', after='d) ')), stem=()),
+    C('I1e', [one(J(S(53, after='e) '), S(54)), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'e) Marginalização', after='e) ')), stem=()),
+    # "(3+2 pontos)" over the two motives the scheme names: one row each, at
+    # the printed parts in the order it prints them.
+    C('I2', [one(S(56, after='Os dois temas são ', before='; e a'), PontosSplit(58, 0)),
+             one(J(S(56, after='; e '), S(57)), PontosSplit(58, 1))], total=PontosSplit(58), note=_JOINED,
+      rownote='The scheme prices the two motives “(3+2 pontos)”, in the order it prints them.',
+      question=(PLc(4, '2. Identifique', after='2. '),)),
+    C('II1', [shown(SchemeSpan(87, 94), lead=S(86))], total=Pontos(85), whole=True,
+      question=(PL(4, '"Quem aprender'), PL(4, 'vinho saído'), PL(4, 'maduras e bebessem'),
+                PL(4, 'Qual o seu ponto'), PL(4, 'Em cerca de 100')), stem=()),
+    C('III1', [shown(SchemeSpan(99, 119), lead=S(97))], total=Pontos(95), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, '“É aos jovens')), stem=_CHOICE_P4, source=False),
+    C('III2', [shown(SchemeSpan(121, 134), lead=S(120))], total=Pontos(95), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, '“Se viajamos'), PL(4, 'nós próprios'), PL(4, 'Ralph Waldo')),
+      stem=_CHOICE_P4, source=False),
+]
+
+
+_CHOICE_RESP = (PL(4, 'Das duas propostas'), PL(4, '(Resposta em cerca de 300'))
+_Q1_2013 = PaperEach(3, '(5 × 1 ponto)', 1)
+_LEAD_2013 = PLc(3, '1. Explique', after='1. ')
+READING[(2013, 'hl')] = [
+    # Q1's five answers on one run, as 2018.
+    C('I1a', [one(S(50, after='a) ', before=' b)'), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'a) “Petulante”', after='a) ')), stem=()),
+    C('I1b', [one(J(S(50, after='b) '), S(51, before=' c)')), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'b) “Egoísta”', after='b) ')), stem=()),
+    C('I1c', [one(S(51, after='c) ', before=' d)'), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'c) “Intransigência”', after='c) ')), stem=()),
+    C('I1d', [one(J(S(51, after='d) '), S(52, before=' e)')), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'd) “Solidão”', after='d) ')), stem=()),
+    C('I1e', [one(S(52, after='e) '), _Q1_2013)], total=_Q1_2013, note=_JOINED,
+      question=(_LEAD_2013, PLc(3, 'e) “Vulnerável”', after='e) ')), stem=()),
+    # The scheme prints "(30 pontos / Total: 100)": the paper's "(30 pontos)".
+    C('II1', [shown(SchemeSpan(86, 97), lead=S(84))], total=PaperPontos(4, '(30 pontos)'), whole=True,
+      question=(PL(4, 'O facto de guardar'), PL(4, 'quase me deu'), PL(4, 'fora dos muros'), PL(4, 'de que se rodeou'),
+                PL(4, 'Num comentário crítico'), PL(4, 'diz sobre o autor')), stem=()),
+    C('III1', [shown(SchemeSpan(101, 110), lead=S(100))], total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, 'Os laços familiares')), stem=_CHOICE_RESP, source=False),
+    C('III2', [shown(SchemeSpan(112, 122), lead=S(111))], total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, 'Perseguir os nossos')), stem=_CHOICE_RESP, source=False),
+]
+_Q1_2012 = PaperEach(3, '(5 × 1 ponto)', 1)
+_LEAD_2012 = PLc(3, '1. Explique', after='1. ')
+READING[(2012, 'hl')] = [
+    C('I1a', [one(S(23, after='a) ', before=' b)'), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'a) “Países', after='a) ')), stem=()),
+    C('I1b', [one(J(S(23, after='b) '), S(24, before=' c)')), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'b) “Analfabetismo', after='b) ')), stem=()),
+    C('I1c', [one(J(S(24, after='c) '), S(25, before=' d)')), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'c) “Cultura', after='c) ')), stem=()),
+    C('I1d', [one(S(25, after='d) ', before=' e)'), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'd) “Vertiginosa', after='d) ')), stem=()),
+    C('I1e', [one(J(S(25, after='e) '), S(26)), _Q1_2012)], total=_Q1_2012, note=_JOINED,
+      question=(_LEAD_2012, PLc(3, 'e) “Ao deus', after='e) ')), stem=()),
+    C('II1', [shown(SchemeSpan(48, 52), lead=S(46))], total=PaperPontos(4, '(30 pontos)'), whole=True,
+      question=(PL(4, 'Mas no fim e ao cabo'), PL(4, 'possível, terá'), PL(4, 'Faça um comentário crítico')), stem=()),
+    C('III1', [shown(SchemeSpan(56, 61), lead=S(55))], total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, '“Abrir um livro')), stem=_CHOICE_RESP, source=False),
+    C('III2', [shown(SchemeSpan(63, 65), lead=S(62))], total=PaperPontos(4, '(40 pontos)'), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, 'Na sociedade actual')), stem=_CHOICE_RESP, source=False),
+]
+
+
+# 2010 and 2011 print four percentage criteria for Parts II and III under
+# "Observações" ("Na classificação da segunda e terceira partes, serão
+# considerados os seguintes aspectos :"): CARD-STANDARD 10b, marks per
+# criterion (30%/30%/30%/10% of 30 = 9/9/9/3; of 40 = 12/12/12/4), each the
+# printed line whole, the block's lead line on the first criterion; the
+# scheme's model shown before them, as printed, under its own heading (10a).
+def _criteria(lines, total, lead):
+    return [pct(Lines(*lines[0]), total, lead=lead)] + [pct(Lines(*l), total) for l in lines[1:]]
+
+
+_CRIT_2010 = ((114, 114), (115, 117), (118, 119), (120, 120))
+_CRIT_LEAD_2010 = J(S(112, after='Observações : '), S(113))
+READING[(2010, 'hl')] = [
+    C('II1', [shown(SchemeSpan(62, 75), lead=S(61))] + _criteria(_CRIT_2010, Pontos(60), _CRIT_LEAD_2010),
+      total=Pontos(60),
+      question=(PL(4, '“A democracia e a tecnologia'), PL(4, 'mundo à nossa volta'), PL(4, 'Em cerca de 100 palavras')),
+      stem=()),
+    C('III1', [shown(SchemeSpan(83, 97), lead=S(82))] + _criteria(_CRIT_2010, Pontos(80), _CRIT_LEAD_2010),
+      total=Pontos(80),
+      question=(PL(4, 'Proposta 1'), PL(4, '“O homem nasceu livre'), PL(4, '(Jean-Jacques')),
+      stem=_CHOICE_P4, source=False),
+    C('III2', [shown(SchemeSpan(99, 111), lead=S(98))] + _criteria(_CRIT_2010, Pontos(80), _CRIT_LEAD_2010),
+      total=Pontos(80),
+      question=(PL(4, 'Proposta 2'), PL(4, '“Nenhum homem'), PL(4, '(John Donne)')),
+      stem=_CHOICE_P4, source=False),
+]
+_CRIT_2011 = ((100, 101), (102, 104), (105, 106), (107, 107))
+READING[(2011, 'hl')] = [
+    C('II1', [shown(SchemeSpan(55, 64), lead=S(54))] + _criteria(_CRIT_2011, Pontos(53), S(99)),
+      total=Pontos(53),
+      question=(PL(4, '“A TVI mostra-nos'), PL(4, 'mental, feitas'), PL(4, 'Em cerca de 100 palavras')),
+      stem=()),
+    C('III1', [shown(SchemeSpan(68, 94), lead=S(67))] + _criteria(_CRIT_2011, Pontos(65), S(99)),
+      total=Pontos(65),
+      question=(PL(4, 'Proposta 1'), PL(4, '“Grandes momentos')),
+      stem=_CHOICE_P4, source=False),
+    # The scheme prints no model for Proposta 2 (it restates the quotation and
+    # goes to "Observações"): the criteria are its marking.
+    C('III2', _criteria(_CRIT_2011, Pontos(65), S(99)),
+      total=Pontos(65),
+      question=(PL(4, 'Proposta 2'), PL(4, '“A maior parte'), PL(4, 'Abraham Lincoln')),
+      stem=_CHOICE_P4, source=False),
+]
+
+
+# 2015 prints no price on any Part I question (only "Parte I (30 pontos)"):
+# its 15 Part I asks are held for the unpriced-section shape. Parts II and III
+# are priced by the paper (the scheme prints "(30 pontos / Total: 100)" and
+# "(40 points / Total: 100)").
+_CHOICE_2015 = (PL(4, 'Das duas propostas'), PL(4, 'Comente a frase em cerca de 300'))
+READING[(2015, 'hl')] = [
+    C('II1', [shown(SchemeSpan(74, 89), lead=S(72))], total=PaperPontos(4, '(30 pontos)', under='Parte II'),
+      whole=True,
+      question=(PL(4, '“Se a literatura não fosse'), PL(4, 'deserto, (...)'), PL(4, 'nas Arabian Sands'),
+                PL(4, 'Faça um comentário sobre a frase')), stem=()),
+    C('III1', [shown(SchemeSpan(93, 97), lead=S(92))], total=PaperPontos(4, '(40 pontos)', under='Parte III'),
+      whole=True, question=(PL(4, 'Proposta 1'), PL(4, 'A importância dos livros')),
+      stem=_CHOICE_2015, source=False),
+    C('III2', [shown(SchemeSpan(99, 104), lead=S(98))], total=PaperPontos(4, '(40 pontos)', under='Parte III'),
+      whole=True, question=(PL(4, 'Proposta 2'), PL(4, '“Aquele que se contenta')),
+      stem=_CHOICE_2015, source=False),
+]
+
+
+# ------------------------------------------- the unpriced Part I asks (10i) ---
+# 2017 Q2-Q6 and 2015 Q1(a)-(e), Q2-Q6: the paper prints no price on the
+# question, only "Parte I" "(30 pontos)" for the part as a whole (2015 also
+# none on Q1). Coordinator ruling (B), 20 Nov 2026 (types/markBank.ts
+# unpricedSection): the scheme's answer shown word for word, no marks, no
+# total of the card's own; the section's printed name and total lifted from
+# the line under its heading.
+_UNPRICED_2017 = (Heading(2, 'Parte I'), PaperPontos(2, '(30 pontos)', under='Parte I'))
+READING[(2017, 'hl')] += [
+    C('I2', [shown(J(S(53, after='2. '), S(54)))], unpriced=_UNPRICED_2017, note=_JOINED_LATER),
+    C('I3', [shown(J(S(55, after='3. '), S(56), S(57)))], unpriced=_UNPRICED_2017, note=_JOINED_LATER),
+    C('I4', [shown(J(S(58, after='4. '), S(59), S(60), S(61), S(62)))], unpriced=_UNPRICED_2017,
+      note=_JOINED_LATER),
+    C('I5', [shown(J(S(63, after='5. '), S(64), S(65), S(66), S(67)))], unpriced=_UNPRICED_2017,
+      note=_JOINED_LATER),
+    # Over a page break (line 72 is the page number).
+    C('I6', [shown(J(S(68, after='6. '), S(69), S(70), S(71), S(76), S(77), S(78), S(79), S(80), S(81)))],
+      unpriced=_UNPRICED_2017, note=_JOINED_LATER),
+]
+_UNPRICED_2015 = (Heading(4, 'Parte I'), PaperPontos(4, '(30 pontos)', under='Parte I'))
+_LEAD_2015 = PLc(4, '1. Explique por palavras suas', after='1. ')
+READING[(2015, 'hl')] += [
+    # Q1's five answers on one run, as 2018: each part cut at the printed letters.
+    C('I1a', [shown(S(53, after='a) ', before=' b)'))], unpriced=_UNPRICED_2015, note=_JOINED_LATER,
+      question=(_LEAD_2015, PLc(4, 'a) Mentores', after='a) ')), stem=()),
+    # "levam-" closes line 53 and "na" opens 54: the clitic is joined as printed.
+    C('I1b', [shown(Join(S(53, after='b) '), S(54, before=' c)'), sep=''))], unpriced=_UNPRICED_2015,
+      note=_JOINED_LATER, question=(_LEAD_2015, PLc(4, 'b) Esquizofrenicamente', after='b) ')), stem=()),
+    C('I1c', [shown(S(54, after='c) ', before=' d)'))], unpriced=_UNPRICED_2015, note=_JOINED_LATER,
+      question=(_LEAD_2015, PLc(4, 'c) O cúmulo', after='c) ')), stem=()),
+    C('I1d', [shown(S(54, after='d) '))], unpriced=_UNPRICED_2015, note=_JOINED_LATER,
+      question=(_LEAD_2015, PLc(4, 'd) Evasão', after='d) ')), stem=()),
+    C('I1e', [shown(S(55, after='e) '))], unpriced=_UNPRICED_2015, note=_JOINED_LATER,
+      question=(_LEAD_2015, PLc(4, 'e) Fazer pela vida', after='e) ')), stem=()),
+    C('I2', [shown(J(S(56, after='2. '), S(57), S(58)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
+    C('I3', [shown(J(S(59, after='3. '), S(60), S(61)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
+    C('I4', [shown(J(S(62, after='4. '), S(63)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
+    C('I5', [shown(J(S(64, after='5. '), S(65), S(66), S(67)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
+    C('I6', [shown(J(S(68, after='6. '), S(69), S(70), S(71)))], unpriced=_UNPRICED_2015, note=_JOINED_LATER),
+]
+
+
+# ============================================================== 2022 OL ===
+# The reading asks the old shared generator excluded: two true/false ticks the
+# text layer cannot read (taken from the scheme PDF by tick position, CARD-
+# STANDARD 10c), and the medals table (Q3(g) on the paper, (i) in the scheme:
+# "6 marks: 6 x 1 marks", "Any two lines", each line a year, a place and a
+# medal), one claimable option a detail, capped at the printed 6.
+READING[(2022, 'ol')] = [
+    # The paper sets each label beside an empty box the text layer reads as
+    # U+F063: the question is its printed lines, the boxes left out.
+    C('A1d', [one(VI(100, 5), T(100))],
+      question=(PLc(4, '(d) Qual é a ocupação', after='(d) '), PL(4, 'Clara é estudante'), PL(4, 'Verdadeiro'),
+                PLc(4, 'Falso', before=' \uf063'))),
+    C('A2d', [one(VI(160, 8), T(160))]),
+    # Each line's Year, Place and Medal sit in separate printed cells
+    # (rendered), each worth 1 mark ("6 marks: 6 x 1 marks"): every cell is a
+    # claimable option, in printed line order, capped at the printed 6.
+    C('A3g', [menu([S(216, before=' Poland'), S(216, after='2021 ', before=' Gold'), S(216, after='Poland '),
+                    S(217, before=' Helsinki'), S(217, after='2012 ', before=' Silver'), S(217, after='Finland '),
+                    S(218, before=' Amsterdam'), S(218, after='2016 ', before=' Gold'),
+                    S(218, after='Amsterdam ', before=' Any'),
+                    S(219, before=' Tokyo'), S(219, after='2020 ', before=' Silver'), S(219, after='Japan ')],
+                   T(217))],
+      rownote='The scheme prices the table “6 marks: 6 x 1 marks” and prints “Any two lines” beside it: a '
+              'mark for each detail (Year, Place, Medal) of two of its lines, “2021 Poland Gold”, “2012 '
+              'Helsinki/ Finland Silver”, “2016 Amsterdam Gold”, “2020 Tokyo/Japan Silver”.'),
+]
+
+# Scheme .md lines 363-489 (pages 17-22). The recording is the 2022 one
+# (LC018ZLP017BV.mp3, CARD-STANDARD 10g).
+LISTENING[(2022, 'ol')] = [
+    C('LA1', [one(S(367), T(367))]),
+    C('LA2', [one(S(370), T(370))]),
+    C('LA3', [one(VI(373, 17), T(373))]),
+    C('LA4', [one(S(376, after='i) '), T(376)), one(S(377, after='ii) '), T(377)),
+              one(S(378, after='iii) '), T(378)), one(S(379, after='iv) '), T(379))], total=T(375)),
+    C('LA5', [one(S(382), T(382))]),
+    C('LB1', [one(S(390), T(390))]),
+    # Each half of the station's name on its own line at a lower price: paid
+    # in place of the full name, never beside it.
+    C('LB2', [menu([S(393)], T(393), [alt(S(394), T(394), of=0), alt(S(395), T(395), of=0)])]),
+    C('LB3', [one(S(398), T(398))],
+      question=(PL(4, 'Quantos objetivos'), PL(4, 'Dois'), PL(4, 'Três'))),
+    C('LB4i', [one(S(402), T(402))]),
+    C('LB4ii', [one(S(405), T(405))]),
+    # The paper asks for two themes and the scheme prints "Any 2", but it
+    # prices the question "6 marks: 3 x 2 marks": the printed price is carded
+    # (as 2025 OL LB6), each printed theme an option, the conflict quoted.
+    C('LB4iii', [menu([S(412, before=', cultura'), S(412, after='Literatura, ', before=', inovação'),
+                       S(412, after='cultura, ', before=', curiosidades'),
+                       S(412, after='inovação, ', before=', política'),
+                       S(412, after='curiosidades, ', before=', debates'), S(412, after='política, ', before=','),
+                       S(413)], T(412))],
+      rownote='The paper asks for two themes and the scheme prints “Any 2”, but it prices the question '
+              '“6 marks: 3 x 2 marks”; the printed price is carded.'),
+    C('LC1', [one(S(418), T(418))]),
+    C('LC2', [one(S(422), T(422))]),
+    C('LC3', [one(VI(425, 19), T(425))]),
+    C('LC4', [one(S(428), T(428))]),
+    # The full answer, or either half of it at the lower price, in its place.
+    C('LC5', [menu([S(435)], T(435), [alt(S(436), T(436), of=0), alt(S(437), T(437), of=0)])]),
+    C('LC6', [menu([S(440), S(441)], T(440))]),
+    C('LD1', [one(VI(446, 20, 0), T(446))]),
+    C('LD2', [one(VI(449, 20, 1), T(449))]),
+    C('LD3', [one(PdfSup(456, 21), T(456))]),
+    C('LD4', [one(S(459, before=' e Porto'), T(459, each=True)), one(S(459, after='Lisbon e '), T(459, each=True))],
+      total=T(459)),
+    C('LD5', [menu([S(462, after='is ', before=', weak'), S(462, after='temperatures, ', before=' and'),
+                    S(463)], T(462))]),
+    C('LE1', [one(S(467), T(467))]),
+    C('LE2', [one(VI(471, 21), T(471))]),
+    C('LE3', [menu([J(S(478), S(479)), S(480), S(481)], T(478))]),
+    C('LE4', [one(S(485, after='Morning '), T(485), lead=S(485, before=' 2')),
+              one(S(486, after='Afternoon '), T(486), lead=S(486, before=' 3'))], total=T(483)),
+    C('LE5', [one(S(489), T(489))]),
+]
+
+
+# ============================================================== 2022 HL ===
+# Scheme .md lines 426-592 (pages 17-24); the 2022 recording (10g).
+LISTENING[(2022, 'hl')] = [
+    C('LA1', [menu([S(430), S(431)], T(430), [alt(S(432), T(432), of=0)])]),
+    C('LA2', [one(VI(435, 17), T(435))]),
+    C('LA3', [stepped(J(S(438), S(440)), T(439))]),
+    C('LA4', [menu([S(443, before=' Tem cabelo'), S(443, after='magro. ', before=' Tem olhos'),
+                    J(S(443, after='curto. '), S(445, before=' Tem barba')), S(445, after='grandes. '),
+                    S(447)], T(444))]),
+    C('LA5', [one(S(454), T(454))]),
+    C('LA6', [menu([S(457), S(458)], T(457))]),
+    C('LB1', [one(S(462), T(462))]),
+    # The scheme prints "Any 2" beside the answers but prices the question
+    # "6 marks: 3 x 2 marks": the printed price is carded (as 2025 OL LB6) and
+    # the conflict quoted (CARD-STANDARD 10f).
+    C('LB2', [menu([S(465, after='1. '), S(467, after='2. '), S(469, after='3. ')], T(466))],
+      rownote='The scheme prints “Any 2” beside the answers, but it prices the question “6 marks: 3 x 2 '
+              'marks”; the printed price is carded.'),
+    C('LB3', [one(S(472), T(472))]),
+    C('LB4i', [one(S(480), T(480))]),
+    C('LB4ii', [one(S(484, after='Terça-feira '), T(484), lead=S(484, before=' Cultura')),
+                one(S(486, after='Quinta-feira '), T(486), lead=S(486, before=' Curiosidades')),
+                one(S(488, after='Sábado '), T(488), lead=S(488, before=' Debates')),
+                one(S(489, after='Domingo '), T(489), lead=S(489, before=' Filmes'))], total=T(482)),
+    C('LC1', [one(S(498), T(498))]),
+    C('LC2', [menu([S(501)], T(501), [alt(S(502), T(502), of=0), alt(S(503), T(503), of=0)])]),
+    C('LC3', [menu([J(S(506), S(508))], T(507), [alt(S(509), T(509), of=0), alt(S(510), T(510), of=0),
+                                                alt(S(511), T(511), of=0)])],
+      rownote='The scheme prices the full answer “3 marks” and prints “Any 2” beside it: any two of its details.'),
+    C('LC4i', [one(S(515), T(515))]),
+    C('LC4ii', [one(S(522), T(522))]),
+    # The number, or the marks for one to two and three to five wrong digits
+    # in its place; the printed "6 or more wrong numbers ⟨0 marks⟩" is no
+    # option (an option earns marks), so the note quotes it.
+    C('LC5', [menu([S(525)], T(525), [alt(S(526), T(526), of=0), alt(S(527), T(527), of=0)])],
+      rownote='The scheme gives “6 or more wrong numbers” 0 marks.'),
+    C('LC6', [menu([S(531), S(532), S(533)], T(531))]),
+    C('LD1', [one(PdfSup(541, 22), T(541))]),
+    C('LD2', [one(S(545, after='Coimbra '), T(545), lead=S(545, before=' Cloudy')),
+              one(S(546, after='Algarve '), T(546), lead=S(546, before=' Weak'))], total=T(543),
+      rownote='The scheme prints “Any 3” beside the table.'),
+    C('LD3', [one(S(550, before=' and Porto'), EachOnly(550)), one(S(550, after='Lisbon and '), EachOnly(550))],
+      total=T(549),
+      rownote='The scheme prints “3 marks: 2 x 3 marks” beside this answer and “6 Marks” over it: the card '
+              'keeps the question’s printed 6 marks, 3 for each city.'),
+    C('LD4', [menu([S(553, before=', weak'), S(553, after='temperatures, ', before=' and'),
+                    S(553, after='and ')], T(553))]),
+    C('LE1', [menu([S(562)], T(562), [alt(S(n), T(n), of=0) for n in range(563, 568)])]),
+    C('LE2', [menu([S(570), S(571)], T(570))]),
+    C('LE3', [stepped(B(S(574), S(575), S(576)), T(575))]),
+    C('LE4', [menu([S(583)], T(582), [alt(S(584), T(584), of=0)])],
+      rownote='The scheme prices the full answer “4 marks: 2 x 2 marks”.'),
+    # The scheme centres "Morning" / "Afternoon" between the two lines of each
+    # answer cell, so a cell read whole never traces: each row is its cell's
+    # first printed line, and the note quotes the line that continues it.
+    C('LE5', [one(S(587), T(588), lead=S(588)), one(S(590), T(591), lead=S(591))], total=T(586),
+      rownote='The scheme continues the morning answer with “[or] working out.” and the afternoon '
+              'answer with “for international competition”, each on the line under its label.'),
+]
+
+
+READING[(2023, 'ol')] = [
+    # The four options the scheme prints as correct, each "1 mark".
+    C('A1c', [one(S(n), T(n)) for n in range(91, 95)], total=T(90),
+      question=(PLc(4, '(c) Quais', after='(c) '), PL(4, 'Assinale com um'), PL(4, '(i) Telefonar'),
+                PL(4, '(ii) Falar'), PL(4, '(iii) Iniciar'), PL(4, '(iv) Escrever'), PL(4, '(v) Abrir'),
+                PL(4, '(vi) Jogar'))),
+    # Each statement's scheme line ends in the checked box (U+F0FE): cut off.
+    C('A1e', [one(V(n, 5), T(108, each=True), lead=S(n, before=' \uf0fe')) for n in range(110, 114)],
+      total=T(108),
+      question=(PLc(5, '(e) Tick', after='(e) '), PL(5, '(i) Pedro Barros'), PL(5, '(ii) The post'),
+                PL(5, '(iii) Pedro and'), PL(5, '(iv) Antônio keeps'))),
+    # The option's number, as the scheme prints it beside the option.
+    C('A1g', [one(S(125, after='call. '), T(125), lead=S(125, before=' 2'))],
+      question=(PLc(5, '(g) What happened', after='(g) '), PL(5, 'Enter the correct'), PL(5, '1. Antônio'),
+                PL(5, '2. Antônio'), PL(5, '3. Antônio'))),
+    # Q2(a)'s answer is the bare line "2018 ⟨1 mark⟩", which traces through
+    # schemeText's year-line form (lead ruling, 19 Nov 2026).
+    C('A2a', [one(S(135), T(135))]),
+    C('A2h', [one(VI(173, 7), T(173))], extra=(PL(8, 'Tick (✓)'), PL(8, 'True'))),
+    C('A3b', [one(VI(190, 8), T(190))]),
+]
+
+LISTENING[(2023, 'ol')] = [
+    C('LA1', [one(S(359, after='Onde: '), T(360, each=True), lead=S(359, before=': Numa')),
+              one(S(361, after='Quando: '), T(360, each=True), lead=S(361, before=': segunda'))],
+      total=T(360), extra=(PL(3, 'Onde:'), PL(3, 'Quando:'))),
+    # The six words the scheme sets in the sentence's boxes, in the order of
+    # the gaps ("Com a mala na mão ... impediu-os de continuar o assalto").
+    C('LA2', [one(S(364, after='começou a ', before=' mão'), T(365, each=True)),
+              one(S(364, after='mala ', before=' bater'), T(365, each=True)),
+              one(S(364, after='mão '), T(365, each=True)),
+              one(S(366, after='o . ', before=' continuar'), T(365, each=True)),
+              one(S(366, after='assaltantes ', before=' assalto'), T(365, each=True)),
+              one(S(366, after='continuar '), T(365, each=True))],
+      total=T(365), extra=(PL(3, 'Com a'), PL(3, 'nos e'))),
+    C('LA3', [one(S(369), T(369))]),
+    C('LA4', [one(VI(372, 13), T(372))]),
+    C('LA5', [stepped(J(S(375), S(376)), T(376))]),
+    C('LB1', [one(VI(385, 14), T(385))]),
+    C('LB2', [one(S(388), T(388))]),
+    C('LB3', [one(S(391), T(391))]),
+    C('LB4', [one(S(394), T(394))],
+      extra=(PL(4, 'Na Serra da Estrela'), PL(4, 'ainda não nevou'), PL(4, 'nevou pouco'),
+             PL(4, 'nevou muito'), PL(4, 'ainda vai nevar'))),
+    C('LB5', [menu([S(397, before=', meias'), S(397, after='Botas, ', before=', casaco'),
+                    S(397, after='[quentes], ', before=', gorro'), S(397, after='[impermeável], ', before=', cachecol'),
+                    S(397, after='gorro, ', before=', luvas'), S(397, after='cachecol, ', before=','),
+                    S(398)], T(397))]),
+    C('LB6', [stepped(S(401), TG(401, 402))]),
+    C('LB7', [one(S(405), TG(406, 407, each=True)), one(S(406), TG(406, 407, each=True)),
+              one(S(407), TG(406, 407, each=True))], total=TG(406, 407),
+      extra=(PL(5, 'A Serra da Estrela'),)),
+    # A less exact answer on its own line at the lower price: paid in place
+    # of the full one, never beside it.
+    C('LC1', [menu([S(416)], T(416), [alt(S(417), T(417), of=0)])]),
+    C('LC2', [one(S(420), T(420))]),
+    C('LC3', [menu([S(423)], T(423), [alt(S(424), T(424), of=0)])]),
+    C('LC4', [one(VI(428, 15), T(428))]),
+    C('LC5', [one(S(431, after='Beaches '), T(431, each=True), lead=S(431, before=' Fine')),
+              one(S(432, after='Sea '), T(431, each=True), lead=S(432, before=' Warm'))], total=T(431)),
+    C('LC6', [one(S(435), T(435))]),
+    C('LD1', [one(S(444), T(444))]),
+    C('LD2', [one(S(447), T(447))]),
+    C('LD3', [menu([S(450, before=', bald'), S(450, after='Tall, ', before=', with'),
+                    S(450, after='bald, ', before=' and brown'), S(450, after='moustache and ')], T(450))],
+      extra=(PL(8, "Sara's father is:"),)),
+    C('LD4', [one(S(453), T(453))]),
+    C('LD5', [one(V(n, 16), T(456, each=True), lead=S(n, before=' ✓')) for n in range(458, 462)],
+      total=T(456), extra=(PL(9, 'T'), PL(9, 'F'), PL(9, 'Sara’s uncle’s band'), PL(9, 'Sara’s aunt'),
+                           PL(9, 'Sara’s uncle´s rehearsal'), PL(9, 'It’s a warm'))),
+    C('LD6', [one(S(464), T(464))]),
+    C('LE1', [one(S(473), T(473))]),
+    C('LE2', [one(VI(476, 17), T(476))]),
+    C('LE3', [one(S(479), T(479))]),
+    # Three forms of one answer, each shorter at a lower price: one paid.
+    C('LE4', [menu([S(482)], T(482), [alt(S(483), T(483), of=0), alt(S(484), T(484), of=0)])]),
+    C('LE5', [menu([S(487), S(488)], T(487))]),
+    C('LE6', [one(S(491, after=' '), T(491))], extra=tuple(PLk(11, 'She is', k) for k in range(4))),
+    C('LE7', [menu([S(494, before=', writers'), S(494, after='actors, ', before=', journalists'),
+                    S(494, after='writers, ', before=', historians'), S(494, after='journalists, ', before=', and'),
+                    S(494, after='historians, and ')], T(494))]),
+    C('LE8', [one(S(498), T(498))]),
+]
+
+
+# ----------------------------------------------------------------- CLI ----
+def _show(cards):
+    for c in cards:
+        print(f"== {c['questionRef']} [{c['totalMarks']}] {c['tariffModel']['kind']}")
+        print(f"   Q: {c['questionText']}")
+        for r in c['rows']:
+            g = r.get('group')
+            if g:
+                om = g.get('optionMarks')
+                print(f"   anyN {g['claimMax']} x {g['perOption']}" + (f" marks={om} of={g.get('optionOf')}" if om else '')
+                      + ': ' + ' || '.join(g['options']))
+            else:
+                print(f"   {r['kind']} {r['marks']} {r.get('permittedMarks', '')}: {r['verbatim']}")
+            if r.get('contextNote'):
+                print(f"     note: {r['contextNote']}")
+
+
+def main():
+    cmd, year, level = sys.argv[1], int(sys.argv[2]), sys.argv[3]
+    if cmd == 'cards':
+        _show(reading_cards(year, level) + listening_cards(year, level))
+    elif cmd == 'draft':
+        P = EuPaper(year, level, SUBJECT)
+        for a in P.aural_asks():
+            print(key_label(a.key), 'p', a.page, '|', a.full_text)
+
+
+if __name__ == '__main__':
+    main()

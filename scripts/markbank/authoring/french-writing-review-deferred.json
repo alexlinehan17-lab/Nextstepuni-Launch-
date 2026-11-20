@@ -1,0 +1,174 @@
+{
+  "status": "deferred-sittings-review",
+  "reviewedAt": "2026-11-20",
+  "cards": 36,
+  "review": [
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 14,
+      "schemePage": 13
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 14,
+      "schemePage": 14
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 16,
+      "schemePage": 15
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 16,
+      "schemePage": 16
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 3,
+      "poolSize": 4,
+      "cards": 1,
+      "separatelyMarkedFields": 5,
+      "paperPage": 13,
+      "schemePage": 12
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        8,
+        11,
+        12
+      ],
+      "schemePages": [
+        12,
+        13
+      ],
+      "notes": "Q1a/b/c are alternatives; Q1a and Q1b refer to the Section A Q.1 passage and Q1c to Q.2. Q3 is printed in Irish and English; the English rendering is used and all five e-mail points are required. Q1b real/imaginary is open creative scope, not a finite response pool. No Section B task prints an illustration."
+    },
+    {
+      "source": "examiner-reports/french/papers/2022-hl-deferred-000-paper.pdf",
+      "sha256": "3b5d3fadf770d824f7ec9ad3ed6e65a817148841c2f26a0a72d9ed1c638904e6"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2022-hl-deferred.pdf",
+      "sha256": "4867d2d4f922f3a2bdc0d7204ed36aaea3a4312efe0312a4f9db1ce3fc0b58c9"
+    },
+    {
+      "source": "examiner-reports/french/papers/2022-ol-deferred-000-paper.pdf",
+      "sha256": "6ac27c19a0c602a0953bf6c4a65e66e8cfdfb270265b46437e0e17ae9945851f"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2022-ol-deferred.pdf",
+      "sha256": "fbf3f622a345ec69bc9e1e3decf61739d803bab0b97fd7e7b26f34f6b42a111d"
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 14,
+      "schemePage": 12
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 14,
+      "schemePage": 13
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 16,
+      "schemePage": 14
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 16,
+      "schemePage": 15
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 3,
+      "poolSize": 4,
+      "cards": 1,
+      "separatelyMarkedFields": 5,
+      "paperPage": 13,
+      "schemePage": 11
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        8,
+        11,
+        12
+      ],
+      "schemePages": [
+        13,
+        14
+      ],
+      "notes": "Q1a/b/c are alternatives; Q1a refers to the Section A Q.1 passage and Q1b and Q1c to Q.2. Q3 email requires answers to all three of Nicole’s questions. Q1b real/imaginary is open creative scope, not a finite response pool. The Q4 and Q5 photographs are retained in the illustration viewer."
+    },
+    {
+      "source": "examiner-reports/french/papers/2023-hl-deferred-000-paper.pdf",
+      "sha256": "5feb661ec0939b8bbc8a52e9e22f90c33fb75aa66f81bc9c27b359ad93a6ff43"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2023-hl-deferred.pdf",
+      "sha256": "ce881b053d55bdd448ca9b673ee172393ac797354d86b64eca5df285c814ed37"
+    },
+    {
+      "source": "examiner-reports/french/papers/2023-ol-deferred-000-paper.pdf",
+      "sha256": "242d04a7b175ed283339813b0202a7d64b858e8730292182cfd5585b22bde20d"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2023-ol-deferred.pdf",
+      "sha256": "5688e07cb7ae8022f1cc96c4521919bd75b15564a3471fb7cdab62f3135cbdb7"
+    }
+  ],
+  "examSelectionPolicy": "Choosing two separately marked examination questions does not create one combined practice card. Each task is independently practicable at its own tariff."
+}

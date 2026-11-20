@@ -4,20 +4,30 @@ from pathlib import Path
 import hashlib
 import json
 import re
+import sys
 import fitz
 from fr_paper import FrPaper
 from fr_selection import verify_paper
 from fr_reviewed_tasks import write_tasks
 
 ROOT = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(ROOT / 'scripts' / 'paper-trail'))
+import french_deferred  # noqa: E402
+# The deferred sittings (2022 and 2023): their own ledger, selection review and card file, so June's
+# ledger and every card built from it are untouched by them.
+DEFERRED_LEDGER = Path(__file__).with_name('french-cloze-review-deferred.json')
+DEFERRED_SELECTION = Path(__file__).with_name('french-selection-review-deferred.json')
+DEFERRED_OUT = ROOT / 'components/MarkBank/cards/french/deferred-cloze.json'
 
 
-def build():
-    review = json.loads(Path(__file__).with_name('french-cloze-review.json').read_text())
+def build(sitting=None):
+    review = json.loads((DEFERRED_LEDGER if sitting else Path(__file__).with_name('french-cloze-review.json')).read_text())
+    selection = json.loads(DEFERRED_SELECTION.read_text()) if sitting else None
+    ol = 'ol-deferred' if sitting else 'ol'
     block = (ROOT / 'paperTrailData.ts').read_text().split('  "french": [', 1)[1].split('\n  ],', 1)[0]
     entries = [json.loads(line.strip().rstrip(',')) for line in block.splitlines() if line.strip()]
     # Reviewed window only: June sittings from 2010.
-    entries = [entry for entry in entries if not entry.get('sitting') and entry['year'] >= 2010]
+    entries = [entry for entry in entries if entry.get('sitting') == sitting and entry['year'] >= 2010]
     tags = json.loads((ROOT / 'scripts/paper-trail/topic-tags/tags/french.json').read_text())
     runtime = json.loads((ROOT / 'data/examTopics/french-runtime.json').read_text())
     cards, tasks = [], []
@@ -25,8 +35,8 @@ def build():
         year = record['year']
         for source in record['sources']:
             assert hashlib.sha256((ROOT / source['path']).read_bytes()).hexdigest() == source['sha256']
-        paper = FrPaper(year, 'ol')
-        verify_paper(Path(paper.path), pages=[record['paperPage']])
+        paper = FrPaper(year, 'ol', sitting=sitting)
+        verify_paper(Path(paper.path), selection, pages=[record['paperPage']])
         text, page = next((text, page) for q, letter, text, page in paper.section_b_asks() if q == 1 and letter == 'a')
         assert page == record['paperPage']
         with fitz.open(paper.path) as source_pdf:
@@ -62,7 +72,7 @@ def build():
         if compact(bank + '.') in compact(printed_page):
             bank += '.'
         assert compact(bank) in compact(printed_page), year
-        with fitz.open(ROOT / f'examiner-reports/french/schemes/{year}-ol.pdf') as scheme:
+        with fitz.open(ROOT / f'examiner-reports/french/schemes/{year}-{ol}.pdf') as scheme:
             scheme_text = ' '.join(scheme[record['schemePage'] - 1].get_text().split())
             for answer in record['answers']:
                 assert answer in scheme_text, (year, answer)
@@ -103,27 +113,31 @@ def build():
         counter = iter(range(1, 11))
         numbered = re.sub(r'_{3,}', lambda _: f'[{next(counter)}]', body)
         entry = next(e for e in entries if e['year'] == year and e['level'] == 'ordinary' and e['lang'] == 'ev')
-        doc = next(p for p in entry['papers'] if p['label'] == 'Exam Paper')
+        doc = next(p for p in entry['papers'] if p['label'] == ('Deferred · Exam Paper' if sitting else 'Exam Paper'))
         paper_tag = next(p for p in tags if p['year'] == year and p['level'] == 'ordinary' and p['fileid'] == doc['doc']['f'])
         tag = next(q for q in paper_tag['q'] if q['n'] == 'B1A')
-        topic_indexes = next(m[5] for m in runtime['questionMappings'] if m[:5] == ['o', 'e', year - 2000, 's', 'B1A'])
+        if sitting:
+            topic_ids = french_deferred.runtime_topic_ids(year, 'ol', 's', 'B1A')
+        else:
+            topic_indexes = next(m[5] for m in runtime['questionMappings'] if m[:5] == ['o', 'e', year - 2000, 's', 'B1A'])
+            topic_ids = [runtime['topics'][i][0] for i in topic_indexes]
         for gap, answer in enumerate(record['answers'], 1):
             sentences = re.split(r'(?<=[.!?])\s+', numbered)
             excerpt = next(sentence for sentence in sentences if f'[{gap}]' in sentence)
             # Only this card's gap carries its number; any other gap in the same
             # sentence keeps the printed blank, so the target is unambiguous.
             excerpt = re.sub(r'\[(\d+)\]', lambda m: m.group(0) if int(m.group(1)) == gap else blanks[int(m.group(1)) - 1], excerpt)
-            n, cid = f'B1A-gap-{gap}', f'fr-{year}-ol-cloze-b1a-gap-{gap}'
+            n, cid = f'B1A-gap-{gap}', f'fr-{year}-ol-{"deferred-" if sitting else ""}cloze-b1a-gap-{gap}'
             prompt = f'{instruction}\n\n{bank}\n\n{excerpt}'
             gap_evidence = evidence.get(str(gap))
             source = dict(kind='source-text', label='Original letter', title=f'Section B · Q1(a) — gap {gap}', pages=[page],
-                          attribution=f'SEC French {year} Ordinary Level examination paper — © State Examinations Commission.',
+                          attribution=f'SEC French {year} Ordinary Level {"deferred " if sitting else ""}examination paper — © State Examinations Commission.',
                           presentationNote='Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter.')
             card = dict(id=cid, subjectId='french', level='ordinary', source='sec', kind='rubric', year=year,
-                        paperFileid=doc['doc']['f'].removesuffix('.pdf'), section='B', questionRef=f'{year} OL Section B Q1(a) · gap {gap}',
+                        paperFileid=doc['doc']['f'].removesuffix('.pdf'), section='B', questionRef=f'{year} OL Section B Q1(a) · gap {gap}' + (' — Deferred sitting' if sitting else ''),
                         questionText=prompt, topicId=tag['primary'], conceptId='cloze-letter-gap-fill', totalMarks=3,
                         sourceMaterial=source, specVersion='lc-french-syllabus',
-                        schemeCitation=f'SEC French {year} Ordinary Level marking scheme, p.{record["schemePage"]} — © State Examinations Commission.',
+                        schemeCitation=f'SEC French {year} Ordinary Level marking scheme{", deferred examination" if sitting else ""}, p.{record["schemePage"]} — © State Examinations Commission.',
                         schemeRegion=dict(schemeFileid=doc['scheme']['f'], p=record['schemePage'], r=[0, 0, 1, 1]),
                         rubric=dict(system='french', taskRequirements=[],
                                     answerGuide=[list_entries[gap], *([gap_evidence['printed']] if gap_evidence else []),
@@ -137,13 +151,14 @@ def build():
                                                    *([gap_evidence['note']] if gap_evidence else [])]),
                         qa=dict(gates=['visual-paper-scheme-review', 'published-gap-tariff', 'selection-review'], humanReviewedBy='agent-verified', humanReviewedAt=review['reviewedAt']))
             cards.append(card)
-            tasks.append(dict(cardId=cid, subjectId='french', level='ordinary', year=year, sitting='main', paperKey='single', lang='ev', fileid=doc['doc']['f'],
-                              n=n, parent='B1A', topicIds=[runtime['topics'][i][0] for i in topic_indexes], topicId=tag['primary'], pages=[page], label=f'Section B · Q1(a) · gap {gap}'))
+            tasks.append(dict(cardId=cid, subjectId='french', level='ordinary', year=year, sitting=sitting or 'main', paperKey='single', lang='ev', fileid=doc['doc']['f'],
+                              n=n, parent='B1A', topicIds=topic_ids, topicId=tag['primary'], pages=[page], label=f'Section B · Q1(a) · gap {gap}'))
     assert len(cards) == review['expectedCards']
-    (ROOT / 'components/MarkBank/cards/french/cloze.json').write_text(json.dumps(cards, ensure_ascii=False, indent=2) + '\n')
-    write_tasks('cloze', tasks)
+    (DEFERRED_OUT if sitting else ROOT / 'components/MarkBank/cards/french/cloze.json').write_text(
+        json.dumps(cards, ensure_ascii=False, indent=2) + '\n')
+    write_tasks('cloze', tasks, sitting=sitting or 'main')
     print(f'Wrote {len(cards)} reviewed gap tasks and exact Atlas identities.')
 
 
 if __name__ == '__main__':
-    build()
+    build('deferred' if '--deferred' in sys.argv[1:] else None)
