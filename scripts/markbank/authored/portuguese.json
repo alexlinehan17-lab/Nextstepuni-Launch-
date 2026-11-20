@@ -1,5 +1,674 @@
 [
  {
+  "id": "por-2010-hl-i-1-a",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-democracia",
+  "questionRef": "2010 HL Section I Q1(a)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Democracia (§ 1);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sistema político em que a autoridade é atribuída pelos cidadãos eleitores;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 x 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2010-hl-i-1-b",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-marcha-historia",
+  "questionRef": "2010 HL Section I Q1(b)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Marcha da história (§ 1);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Acontecimentos e transformações sociais de grande relevo internacional;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 x 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2010-hl-i-1-c",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-impunidade",
+  "questionRef": "2010 HL Section I Q1(c)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Impunidade (§ 2);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ausência de castigo para o cidadão que comete um crime;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 x 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2010-hl-i-1-d",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-indignacao",
+  "questionRef": "2010 HL Section I Q1(d)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Indignação (§ 2);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Revolta, injustiça, repulsa;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 x 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2010-hl-i-1-e",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-privilegios-corperativos",
+  "questionRef": "2010 HL Section I Q1(e)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Privilégios corperativos (§ 5).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Direitos definidos por um grupo social ou profissional para se auto-proteger em detrimento do bem comum; direitos de classe.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 x 1 ponto) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2010-hl-i-2",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "forma-cidadao-comum-criou-ilusao-pode",
+  "questionRef": "2010 HL Section I Q2",
+  "questionText": "De que forma o cidadão comum criou a ilusão de que pode interferir no exercício do poder? (§ 1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Na sociedade de informação em que hoje vivemos, os cidadãos criaram a noção de que têm acesso fácil aos acontecimentos e comentá-los; podem influenciar o exercício do poder manifestando as suas ideias e opiniões através dos meios da internet. Criou-se a ilusão de que o poder e a informação são interactivos. (§ 1)",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2010-hl-i-3",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "actos-indignacao-protesto-cidadao-anonimo-tem",
+  "questionRef": "2010 HL Section I Q3",
+  "questionText": "Os actos de indignação e protesto do cidadão anónimo não têm, hoje, normalmente, consequências. Explique porquê, de acordo com a opinião da cronista.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "O cidadão pode protestar contra tudo de forma livre e impunemente, com total ausência de controlo. Mas o excesso, a repetição produz a indiferença dos protestados; os meios de comunicação, pelo excesso de informação, dão voz ao que lhes interessa. Por estes motivos, o protesto tem um efeito diminuto. (§ 2)",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2010-hl-i-4",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "nos-media-estamos-infotainement-sua-leitura",
+  "questionRef": "2010 HL Section I Q4",
+  "questionText": "“Nós, os media, estamos no infotainement.” Na sua leitura do texto, explique como chegou a autora a esta conclusão.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Os media, a comunicação social ocupa-se com futilidades; preenche as páginas dos jornais e os tempos de informação com os temas menos importantes mas que cativam audiências, fazem ganhar dinheiro; de certa forma, estão condicionados ao poder económico que lhes paga. Numa palavra, divertem-se, em vez de informar com claro espírito crítico. (§ 5)",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2010-hl-i-5",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "somos-devorados-pelo-ecra-chegou-cronista",
+  "questionRef": "2010 HL Section I Q5",
+  "questionText": "“Somos devorados pelo ecrã.” Explique como chegou a cronista a esta conclusão.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "O cidadão comum tem acesso fácil à imensidão de tecnologia que está disponível no mercado. O que é que hoje fazemos que não possa ser feito através da consulta de um ecrã? Cinema, televisão, telefone, telemóvel, ouvir música, falar com familiares e amigos; conversar com desconhecidos; conduzir um automóvel; ler as notícias; ler um livro… O contacto pessoal, os afectos, o respeito, a hierarquia, a responsabilidade ficam desta forma desvalorizados porque o contacto é frio, impessoal, através do ecrã. Mas o exercício do poder e da justiça, principalmente, não têm acesso tão fácil àqueles meios. Ora, uma sociedade onde a justiça tem menos meios que o criminoso, não é uma sociedade justa, não é democrática, não é livre.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2010-hl-i-6",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2010,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "nosso-problema-democracias-civilizadas-sociedades-abundancia",
+  "questionRef": "2010 HL Section I Q6",
+  "questionText": "“O nosso problema, o das democracias civilizadas e das sociedades de abundância e direitos humanos, é o da aprendizagem com os erros e do estabelecimento dos limites. Não aprendemos e desconfiamos dos limites.” Respeitando a interpretação do texto, explique o sentido da frase transcrita.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "O mundo ocidental, civilizado, onde se vive em abundância, onde os direitos humanos são minimamente respeitados, acomodou-se. Os cidadãos esperam diariamente que o poder, seja ele qual for, controle, descubra, acuse, penalize. Mas não aceitamos que nos imponham regras, não aceitamos nenhum limite, nem conseguimos, ou não queremos aprender com os nossos próprios erros. Nós queremos o mundo, o “outro” que resolva os problemas. (§ 4)",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2010-hl-ii-1",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2010,
+  "section": "II",
+  "topicId": "portuguese-2-2",
+  "conceptId": "democracia-tecnologia-aliaram-nos-dar-ilusao",
+  "questionRef": "2010 HL Section II Q1",
+  "questionText": "“A democracia e a tecnologia aliaram-se para nos dar a ilusão de que controlamos o mundo à nossa volta.” Em cerca de 100 palavras, comente a frase transcrita, de acordo com o sentido do texto.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A democracia como regime político permite ao cidadão viver em liberdade, participar na vida da sociedade e intervir na escolha daqueles que governam. Tradicionalmente, o cidadão era chamado a participar nos momentos eleitorais, limitando-se, a partir daí, a sua intervenção a actividades em movimentos cívicos. Com a democratização da tecnologia, todos podem actuar, intervir, protestar, reivindicar, comentar, criticar, mesmo não pertencendo a nenhum grupo ou organização social. Podemos fazê-lo de forma individual. Mas a que preço? Muitas vezes no anonimato, de forma desonesta e covarde. Mesmo o cidadão mais desprovido de valores morais tem possibilidade de se manifestar, acusar, criticar, sem assumir qualquer responsabilidade. Tudo é possível nesta época de interactividade. Mas um poder assim distribuído, sem contrapartidas, é de facto um não- poder. Quem dá importância àquilo que eu digo ou escrevo no sossego do meu computador? Banalizou-se a capacidade de informação e este foi o caminho para a esvaziar de poder de intervenção.",
+    "marks": null,
+    "contextNote": "For “(Comentário pessoal, correcto e fluente em cerca de 100 palavras.)”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "1. Clareza do discurso – o aluno compreendeu as questões e respondeu de forma clara - 30%",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "For “Na classificação da segunda e terceira partes, serão considerados os seguintes aspectos :”"
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "2. Coerência das respostas – o aluno fez citações apropriadas à estrutura do seu pensamento ; as ideias não são contraditórias e a composição mantém uma coesão interna - 30%",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "id": "r-4",
+    "kind": "criterion",
+    "verbatim": "3. Competência linguística – o aluno exprimiu correcta e livremente as suas ideias e opiniões - 30%",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "id": "r-5",
+    "kind": "criterion",
+    "verbatim": "4. Competência gramatical – correcção gramatical e ortográfica - 10%",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  ],
+  "notes": "The scheme prices this ask 30 marks; the paper prints it on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2010-hl-iii-1",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2010,
+  "section": "III",
+  "topicId": "portuguese-2-2",
+  "conceptId": "proposta-homem-nasceu-livre-mas-todos",
+  "questionRef": "2010 HL Section III Q1",
+  "questionText": "Proposta 1 “O homem nasceu livre, mas em todos os lugares está aprisionado.” (Jean-Jacques Rousseau)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "O homem, mesmo quando aprisionado, mesmo escravo, pode considerar-se livre porque é livre a sua vontade. A verdade desta afirmação, contudo, não é absoluta, porque uma vontade só é livre quando educada em liberdade e no desenvolvimento de um verdadeiro espírito crítico. Não basta proclamar a liberdade se depois aceitamos sem critério tudo o que nos impõem; não basta proclamar a liberdade e depois aceitamos ser governados por aqueles que os outros escolhem porque nós achamo-nos no direito de não votar; não basta proclamar a liberdade se depois reagimos com indiferença às injustiças e aos abusos de poder. Para se viver em liberdade é preciso saber escolher, saber fazer opções; e para se fazerem as boas opções é necessário um espírito crítico apurado. Se assim não for constantemente actuamos segundo a vontade, a manipulação, os desejos dos outros; dizemo-nos livres mas os outros é que escolhem por nós. Assim estaremos sempre condicionados, aprisionados pelo mercado, pela publicidade, pelos media, pelo ecrã, por quem quer que chegue até nós e em nós veja um espírito fraco, ignorante, desinformado. Liberdade é saber dizer sim e ter coragem para dizer não.",
+    "marks": null,
+    "contextNote": "For “Proposta 1”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "1. Clareza do discurso – o aluno compreendeu as questões e respondeu de forma clara - 30%",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "For “Na classificação da segunda e terceira partes, serão considerados os seguintes aspectos :”"
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "2. Coerência das respostas – o aluno fez citações apropriadas à estrutura do seu pensamento ; as ideias não são contraditórias e a composição mantém uma coesão interna - 30%",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "id": "r-4",
+    "kind": "criterion",
+    "verbatim": "3. Competência linguística – o aluno exprimiu correcta e livremente as suas ideias e opiniões - 30%",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "id": "r-5",
+    "kind": "criterion",
+    "verbatim": "4. Competência gramatical – correcção gramatical e ortográfica - 10%",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  ],
+  "notes": "The scheme prices this ask 40 marks; the paper prints it on page 4 of the question booklet.",
+  "stem": "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)"
+ },
+ {
+  "id": "por-2010-hl-iii-2",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2010,
+  "section": "III",
+  "topicId": "portuguese-2-2",
+  "conceptId": "proposta-nenhum-homem-ilha-john-donne",
+  "questionRef": "2010 HL Section III Q2",
+  "questionText": "Proposta 2 “Nenhum homem é uma ilha.” (John Donne)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "O ser humano é um animal gregário. Desde sempre viveu em grupo. Mesmo considerando a tese de Rousseau sobre o mito do bom selvagem, esta não pressupunha a ausência total de parceiros. Faz então sentido o verso de John Donne: nenhum homem é uma ilha, ou seja, o ser humano não vive isolado. Toda a vida do homem é concebida/construída na sua relação/dependência dos outros: na infância é a ligação e a educação da família; mais tarde a escola e a formação; na vida adulta são as relações laborais e sociais. No nosso tempo, essa existência de ilha pode considerar-se apenas fisicamente. No conforto do lar, através da tecnologia podemos ter acesso a tudo sem sair de casa. Mas nesta situação é ainda mais forte a nossa dependência dos outros. Também não é recomendável ao homem viver como uma ilha, no sentido mais positivo e activo da sua natureza. Neste aspecto é importante a nossa intervenção social, participação nas actividades do grupo, solidariedade e entre-ajuda.",
+    "marks": null,
+    "contextNote": "For “Proposta 2”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "1. Clareza do discurso – o aluno compreendeu as questões e respondeu de forma clara - 30%",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "For “Na classificação da segunda e terceira partes, serão considerados os seguintes aspectos :”"
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "2. Coerência das respostas – o aluno fez citações apropriadas à estrutura do seu pensamento ; as ideias não são contraditórias e a composição mantém uma coesão interna - 30%",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "id": "r-4",
+    "kind": "criterion",
+    "verbatim": "3. Competência linguística – o aluno exprimiu correcta e livremente as suas ideias e opiniões - 30%",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "id": "r-5",
+    "kind": "criterion",
+    "verbatim": "4. Competência gramatical – correcção gramatical e ortográfica - 10%",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  ],
+  "notes": "The scheme prices this ask 40 marks; the paper prints it on page 4 of the question booklet.",
+  "stem": "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)"
+ },
+ {
   "id": "por-2011-hl-i-1-a",
   "subjectId": "portuguese",
   "level": "higher",
