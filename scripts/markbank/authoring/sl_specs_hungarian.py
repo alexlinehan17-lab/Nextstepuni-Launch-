@@ -572,9 +572,12 @@ LEAD_2020 = quote(S(105), lead='The scheme prints')
 PART2_2020 = PaperP(4, '(30 pont/', k=0)
 SPECS[2020] = [
     R('II1', [graded(L(119, 120), PART2_2020, CRIT_2020)], total=PART2_2020,
-      rownote=both(LEAD_2020, examples(S(125), L(126, 127), L(128, 129), L(130, 131), L(132, 133), L(134, 135),
-                                       L(136, 137), L(138, 139))),
-      question=QP(4, 'Kommentár', Run('Fejtsd ki álláspontodat', 'kapcsolatban!'), Run('„Azonban mit sem', 'nem kellően')),
+      # the scheme rewords the task (116): quoted, the paper's words stand (10f; second reader); the bare
+      # sub-head "Kommentár" left out, as 2010-2016 (2017-2019, 2023-2026 keep theirs: it prints the word limit)
+      rownote=both(quote(S(116), lead='The scheme reprints the task as'), LEAD_2020,
+                   examples(S(125), L(126, 127), L(128, 129), L(130, 131), L(132, 133), L(134, 135),
+                            L(136, 137), L(138, 139))),
+      question=QP(4, Run('Fejtsd ki álláspontodat', 'kapcsolatban!'), Run('„Azonban mit sem', 'nem kellően')),
       pages=(2, 3)),
     R('III1', [graded(S(143), PARTP(), CRIT_2020)], rownote=LEAD_2020,
       question=QP(4, 'A két téma közül', 'Mi a konfliktus')),
