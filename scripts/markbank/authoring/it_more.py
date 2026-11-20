@@ -316,6 +316,24 @@ def _reading_points(year, level, reading):
         card['tariffModel'] = {'kind': 'fixed'}
 
 
+# Symbol-font glyphs the Italian schemes print as private-use code points
+# (0xF000 + the font's own code), each settled by cropping the glyph from the
+# page: Wingdings 0xE8 is the heavy right arrow in 2017 Higher's scheme p. 16
+# ("he betrays him ➔ Secret+driving lesson"), the only Italian scheme that
+# prints it (every occurrence checked to be Wingdings).
+SETTLED_GLYPHS = {'\uf0e8': '➔'}
+
+
+def _settle_glyphs(value):
+    if isinstance(value, str):
+        return ''.join(SETTLED_GLYPHS.get(ch, ch) for ch in value)
+    if isinstance(value, list):
+        return [_settle_glyphs(v) for v in value]
+    if isinstance(value, dict):
+        return {k: _settle_glyphs(v) for k, v in value.items()}
+    return value
+
+
 def sitting(year, level):
     P = ItPaper(year, level)
     S = ItScheme(year, level)
@@ -348,6 +366,7 @@ def sitting(year, level):
     cards += it_listen.cards(year, level, refuse, it_all._row_for, it_all.concept_for)
     cards += it_writing.higher(year) if level == 'hl' else it_writing.ordinary(year)
     _misprint_notes(cards, year, level)
+    cards = [_settle_glyphs(c) for c in cards]
     return cards, refused
 
 
