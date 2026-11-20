@@ -1125,6 +1125,80 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2013 Higher Level — © State Examinations Commission.",
+    id: "slk-2013-hl-i-1-e", topicId: "slovakian-0-0", conceptId: "poplach-odsek",
+    section: "I", questionRef: "2013 HL Section I Q1(e)",
+    questionText: "Vysvetlite vlastnými slovami výrazy: biť na poplach (odsek 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "upozorniť na vážnosť situácie", marks: 1, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme heads Q1 “(1 x 5 bodov)” and letters this expression “d) biť na poplach”, a second d) after “d) kráčajú v šľapajach”; the paper prints it as e) and prices each expression “(5 × 1 bod)”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2013 Higher Level — © State Examinations Commission.",
+    id: "slk-2013-hl-ii-1", topicId: "slovakian-1-0", conceptId: "napi-komentar-nasledovnej-vety-textu-najmenej",
+    section: "II", questionRef: "2013 HL Section II Q1",
+    questionText: "Napíšte komentár nasledovnej vety z textu (najmenej 100 slov): Na ľuďoch sú častokrát najkrajšie ich chyby.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Komentár obsahujúci najmenej 100 slov, ktorý jasne preukáže porozumenie textu v podstatných bodoch.", marks: 30, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" The scheme prints: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”. The scheme reprints the task as: “Napíšte komentár (najmenej 100 slov) na tému:”. The scheme prints, as examples, not a checklist: “Na ľuďoch sú ľudské aj chyby. Tie ich odlišujú od ostatných živých bytostí a najmä od robotov, počítačov a strojov. Človek vo svojom živote musí čeliť viacerým výzvam a musí zaujať stanovisko v mnohých zložitých situáciách. Častokrát si vyberie zlú cestu, zvolí zlé riešenie a je neúspešný. Prehrá, ale život ho núti ísť ďalej a veľakrát ho to posilní. Ak chyby, ktoré človek robí, nie sú dominantné v jeho živote, a dokáže ich eliminovať, takýto človek je vlastne ľudský, podobný ostatným a preto je nám blízky a sympatický. Často sa nad chybami našich najbližších iba pousmejeme a berieme ich ako samozrejmosť. Vieme, že dedko zabúda, že babka stráca klúče a nevie nájsť v kabelke peňaženku, že mama často hľadá okuliare a otec si mýli tváre ľudí. Ale preto ich dieťa neprestane mať rado, aj keď to niekedy môže liezť na nervy. Ale veď človek bez chýb by nebol ani človekom. Treba ho prijať aký je a veriť, že sa možno raz celkom zbaví niektorých chýb. Ale aké by bolo potom ľudstvo?”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať – 30 %","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Zručnosti – gramatika, pravopis – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČASŤ II",
+          "title": "Reading text — answer in Slovakian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Slovakian 2013 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2013 Higher Level — © State Examinations Commission.",
+    id: "slk-2013-hl-iii-1", topicId: "slovakian-1-1", conceptId: "tema-laska-ziskava-krasou-dokonalos-prejavuje",
+    section: "III", questionRef: "2013 HL Section III Q1",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Láska sa získava krásou a dokonalosťou a prejavuje sa materiálnou odmenou?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "higher",
+    paperFileid: "LC554ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2013 Higher Level — © State Examinations Commission.",
+    id: "slk-2013-hl-iii-2", topicId: "slovakian-1-1", conceptId: "tema-putovanie-svojimi-snami-sladka-cesta",
+    section: "III", questionRef: "2013 HL Section III Q2",
+    questionText: "Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém: Putovanie za svojimi snami – sladká cesta s horkou príchuťou",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Odpovede napíšte po slovensky vlastnými slovami na základe predloženého textu.\" Under the two titles the scheme prints only “Zrozumiteľne napísaná slohová práca obsahujúca najmenej 300 slov, zodpovedajúca téme s ucelenou štruktúrou, zrozumiteľne sformulovanými myšlienkami a vytvárajúca súvislý celok.” Its criteria are printed for parts 1 and 2 only: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2014, level: "higher",
     paperFileid: "LC554ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Slovakian 2014 Higher Level — © State Examinations Commission.",
