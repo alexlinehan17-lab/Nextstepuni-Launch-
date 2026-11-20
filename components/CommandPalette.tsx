@@ -30,6 +30,7 @@ export const TOOL_TITLES: Record<string, string> = {
   'points-passport': 'Points Passport',
   'college-compass': 'College Compass',
   'mark-bank': 'Mark Bank',
+  'listening-studio': 'Listening Studio',
   'paper-trail': 'Paper Trail',
   'oral-trainer': 'Irish Oral Trainer',
   'examiners-chair': "The Examiner's Chair",

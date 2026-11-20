@@ -111,8 +111,12 @@ def recordings(year, deferred):
         ids = ('LC067ZLP117EV.mp3', 'LC067ZLP217EV.mp3')
     else:
         ids = ('LC067ZLP045EV.mp3', 'LC067ZLP046EV.mp3')
-    view = 'deferredexams' if deferred else 'exampapers'
-    return {n + 1: (f, f'https://www.examinations.ie/archive/{view}/{year}/{f}') for n, f in enumerate(ids)}
+    if deferred:
+        # CARD-STANDARD 10g: no recording file name is built by pattern, and the SEC's deferred listing has not
+        # been read (coordinator ruling 20 Nov). A deferred listening ask that needs its recording is held open
+        # (build_sitting) until the audio-hosting lane sends the names.
+        return None
+    return {n + 1: (f, f'https://www.examinations.ie/archive/exampapers/{year}/{f}') for n, f in enumerate(ids)}
 
 
 class Sitting:
@@ -195,13 +199,15 @@ class Sitting:
         kind, addr = a['paper'], a['address']
         base = f'mus-{self.year}-{self.tag}'
         if kind == 'listening':
-            # 2018 numbers its parts afresh under each excerpt: "Q1 Excerpt 2(i)".
-            m = re.fullmatch(r'Q(\d)(?: ([AB]))?(?: Excerpt (\d))?((?:\([a-z]+\))*)', addr)
+            # 2018 numbers its parts afresh under each excerpt: "Q1 Excerpt 2(i)". 2011 HL Q6 numbers them afresh
+            # again inside one excerpt, under the printed "The next 8 bars (bars 9–16) ...": "Q6 Excerpt 1 Bars 9–16(i)".
+            m = re.fullmatch(r'Q(\d)(?: ([AB]))?(?: Excerpt (\d))?(?: Bars (\d+)–(\d+))?((?:\([a-z]+\))*)', addr)
             if not m:
                 raise SystemExit(f'listening address {addr!r}')
-            parts = re.findall(r'\(([a-z]+)\)', m.group(4))
+            parts = re.findall(r'\(([a-z]+)\)', m.group(6))
             excerpt = f'x{m.group(3)}' if m.group(3) else ''
-            return '-'.join(x for x in [f'{base}-l', f'q{m.group(1)}', (m.group(2) or '').lower(), excerpt, *parts] if x)
+            bars = f'b{m.group(4)}-{m.group(5)}' if m.group(4) else ''
+            return '-'.join(x for x in [f'{base}-l', f'q{m.group(1)}', (m.group(2) or '').lower(), excerpt, bars, *parts] if x)
         if kind == 'composing':
             # Ordinary Level prints two melodies under one question, "Answer (a) and (b)".
             m = re.fullmatch(r'Section ([AB]) Q(\d)((?:\([a-z]+\))*)', addr)
@@ -387,11 +393,14 @@ def point_card(s, a, atlas):
     topic = a['topicId']
     atlas.check(s, a, topic)
     card = {'id': cid, 'subjectId': 'music', 'level': s.level, 'year': s.year,
-            'section': {'listening': 'L', 'composing': 'A', 'elective': 'E'}[a['paper']],
+            # a composing point card (a deferred question its scheme leaves unmarked) keeps its printed section
+            'section': a['address'][8] if a['paper'] == 'composing' else {'listening': 'L', 'elective': 'E'}[a['paper']],
             'topicId': topic, 'conceptId': music_2025.concept(a.get('conceptText') or question), 'questionRef': s.ref(a),
             'questionText': question, 'totalMarks': a['marks'],
             'sourceMaterial': source_for(s, a, f'{BOOKLET[a["paper"]]} — Question {q}')}
-    stem = ' '.join(printed_block(s, a['paper'], x) for x in [a.get('questionContext'), a.get('excerptLine')] if x)
+    # The lead-in and the excerpt heading are separate printed lines: a line break between them, shown as
+    # printed (SessionScreen routes Music stems through stemWithPrintedBreaks, coordinator 20 Nov).
+    stem = '\n'.join(printed_block(s, a['paper'], x) for x in [a.get('questionContext'), a.get('excerptLine')] if x)
     if stem:
         card['stem'] = stem
     if a.get('needsRecording'):
@@ -502,9 +511,14 @@ def crops_overlapping(s):
 def build_sitting(s, atlas):
     cards, census, covers = [], {}, {}
     shared = {}
+    s.held = []
     for a in s.data['asks']:
         cid = s.card_id(a)
         census.setdefault(a['paper'], []).append({'id': cid, 'questionRef': s.ref(a)})
+        if s.deferred and a.get('needsRecording') and recordings(s.year, s.deferred) is None:
+            # counted, not carded: its recording is not yet named (coordinator ruling 20 Nov)
+            s.held.append(s.ref(a))
+            continue
         if a.get('sharedCard'):
             shared.setdefault(a['sharedCard'], []).append(a)
             continue
@@ -580,6 +594,8 @@ def check(path, crops_to):
         got = sum(max(v) if k[1] == 'B' else sum(v) for k, v in sums.get(q, {}).items())
         flag = '' if printed.get(q) == got else '   <-- CHECK'
         print(f'  Listening Q{q}: paper prints {printed.get(q)}, asks give {got}{flag}')
+    if getattr(s, 'held', None):
+        print(f'  HELD OPEN (recording not yet named): {len(s.held)} asks, e.g. {s.held[0]}')
     for r in s.data.get('readFromPage', []):
         print(f"  READ FROM PAGE ({r['booklet']} p{r['page']}, {r['readBy']}): {r['text']}")
     for n1, n2, page in crops_overlapping(s):

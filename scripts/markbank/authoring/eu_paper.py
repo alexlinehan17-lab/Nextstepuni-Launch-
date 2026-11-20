@@ -176,6 +176,14 @@ LANGS = {
         'source_line': r'^(?:Bron\s*:|Naar\s+aanleiding|Uit\s*:|Bewerkt)',
         'rubric': (r'^(?:Vragen\b|Beantwoord\b|Lees\b|Schrijf\b|'
                    r'Alle\s+antwoorden\b|Geef\s+je\s+eigen)'),
+        # The 2010, 2011, 2013 and 2014 booklets head Deel 1 TWICE: "DEEL 1
+        # (30 PUNTEN)" over a passage whose paragraphs are numbered "1." to
+        # "11.", and "Deel 1: tekstbegrip" over the questions "1)" to "6)".
+        # Read under the first head, the paragraphs censused as Questions 2-11
+        # and Question 1's five expressions took paragraph 1's words (18 asks
+        # where the paper prints 13). Portuguese's opt-in, below: the second
+        # head restarts the part, and what was read under the first is its text.
+        'classic_rehead_restarts': True,
     },
     # ---------------------------------------------------------------------
     # The nine remaining non-curricular EU languages, added 10 September 2026.

@@ -122,6 +122,7 @@ import { FRENCH_WRITING_CARDS } from '../components/MarkBank/cards/french/writin
 import { FRENCH_LISTENING_CARDS } from '../components/MarkBank/cards/french/listening';
 import { FRENCH_CLOZE_CARDS } from '../components/MarkBank/cards/french/cloze';
 import { FRENCH_READING_CARDS } from '../components/MarkBank/cards/french/reading';
+import { FRENCH_DEFERRED_CARDS } from '../components/MarkBank/cards/french/deferred';
 import { CARDS as GERMAN_HIGHER } from '../components/MarkBank/cards/german/higher';
 import { CARDS as GERMAN_ORDINARY } from '../components/MarkBank/cards/german/ordinary';
 import { CARDS as SPANISH_HIGHER } from '../components/MarkBank/cards/spanish/higher';
@@ -220,6 +221,7 @@ import { CARDS as SLOVAKIAN_HIGHER } from '../components/MarkBank/cards/slovakia
 import { CARDS as SLOVENIAN_HIGHER } from '../components/MarkBank/cards/slovenian/higher';
 import { CARDS as SWEDISH_HIGHER } from '../components/MarkBank/cards/swedish/higher';
 import { CARDS as UKRAINIAN_HIGHER } from '../components/MarkBank/cards/ukrainian/higher';
+import { CARDS as MALTESE_HIGHER } from '../components/MarkBank/cards/maltese/higher';
 import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
 import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
 import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
@@ -1497,6 +1499,65 @@ const isPolishAdded = (id: string) => /^pl-\d{4}-/.test(id) && (Number(id.slice(
 const polishAddedTotal = [...Object.values(POLISH_ADDED), ...Object.values(POLISH_ADDED_TO_FROZEN)]
   .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
 
+/* Portuguese (the languages-q3 lane, from 2026-11-19): additions on top of
+ * the frozen 2021-2025 identity, as Polish does: new sittings whole (2026),
+ * and in a frozen sitting its Listening Comprehension Test (Partes A-E,
+ * sections LA-LE), its written tasks (Section B) and the reading asks the
+ * shared reader refused, each named. */
+const PORTUGUESE_ADDED: Record<number, { higher: number; ordinary: number }> = {
+  2026: { higher: 60, ordinary: 58 },
+  2019: { higher: 13, ordinary: 0 },
+  2018: { higher: 13, ordinary: 0 },
+  2017: { higher: 13, ordinary: 0 },
+  2016: { higher: 13, ordinary: 0 },
+  2015: { higher: 13, ordinary: 0 },
+  2014: { higher: 13, ordinary: 0 },
+  2013: { higher: 13, ordinary: 0 },
+  2012: { higher: 13, ordinary: 0 },
+  2011: { higher: 13, ordinary: 0 },
+  2010: { higher: 13, ordinary: 0 },
+};
+const PORTUGUESE_ADDED_TO_FROZEN: Record<number, { higher: number; ordinary: number }> = {
+  2025: { higher: 40, ordinary: 40 },
+  2024: { higher: 45, ordinary: 37 },
+  2023: { higher: 43, ordinary: 44 },
+  2022: { higher: 36, ordinary: 36 },
+  2021: { higher: 2, ordinary: 0 },
+};
+const PORTUGUESE_ADDED_TO_FROZEN_ID = /^por-202[1-5]-(?:hl|ol)-(?:l[a-e]-|b-)/;
+const PORTUGUESE_ADDED_TO_FROZEN_READING = new Set<string>([
+  'por-2025-hl-a-1-b-ii',
+  'por-2025-hl-a-1-i',
+  'por-2025-hl-a-2-j-i',
+  'por-2025-ol-a-1-d',
+  'por-2025-ol-a-1-h',
+  'por-2025-ol-a-2-f-i',
+  'por-2025-ol-a-2-f-ii',
+  'por-2025-ol-a-2-g',
+  'por-2025-ol-a-3-b',
+  'por-2024-hl-a-1-i',
+  'por-2024-hl-a-2-j',
+  'por-2024-ol-a-1-e',
+  'por-2023-hl-a-1-e',
+  'por-2023-hl-a-2-g',
+  'por-2023-ol-a-1-c',
+  'por-2023-ol-a-1-e',
+  'por-2023-ol-a-1-g',
+  'por-2023-ol-a-2-a',
+  'por-2023-ol-a-2-h',
+  'por-2023-ol-a-3-b',
+  'por-2022-ol-a-1-d',
+  'por-2022-ol-a-2-d',
+  'por-2022-ol-a-3-g',
+  'por-2021-hl-ii-1',
+  'por-2021-hl-ii-2',
+]);
+const isPortugueseAdded = (id: string) => /^por-\d{4}-/.test(id) && (Number(id.slice(4, 8)) in PORTUGUESE_ADDED
+  || (Number(id.slice(4, 8)) in PORTUGUESE_ADDED_TO_FROZEN
+    && (PORTUGUESE_ADDED_TO_FROZEN_ID.test(id) || PORTUGUESE_ADDED_TO_FROZEN_READING.has(id))));
+const portugueseAddedTotal = [...Object.values(PORTUGUESE_ADDED), ...Object.values(PORTUGUESE_ADDED_TO_FROZEN)]
+  .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
+
 /* Technology (the 2010-2019 lane, from 2026-11-04): every 2010-2019 card is an
  * addition on top of the frozen 2020-2026 set, never a replacement -- those
  * sittings had no card at all before. Pinned per level, count and id hash,
@@ -1547,6 +1608,14 @@ const businessAdditionIds = new Set([
 // their own ids are not additions and stay in the frozen hash.
 const engineeringAdditionIds = new Set<string>((JSON.parse(readFileSync(resolve(__dirname, '..',
   'scripts/markbank/authoring/eng_residue/additions.json'), 'utf8')) as { ids: string[] }).ids);
+/* The small languages (Claude queue 5, from 2026-11-20): every card that lane
+ * adds is listed by subject and sitting in sl_additions.json (written by
+ * scripts/markbank/authoring/sl_batch.py) and held apart from its deck's frozen
+ * pre-lane identity above, never folded into it. Each sitting is pinned by
+ * count and id hash (SMALL_LANGUAGE_SITTINGS below). */
+const smallLanguageAdditions = JSON.parse(readFileSync(resolve(__dirname, '..',
+  'scripts/markbank/authoring/sl_additions.json'), 'utf8')) as Record<string, Record<string, string[]>>;
+const smallLanguageAddedIds = new Set(Object.values(smallLanguageAdditions).flatMap(bySitting => Object.values(bySitting).flat()));
 // Keep the original French count/hash frozen. Reviewed additions have their own
 // source-and-route audit in frenchWriting.test.ts; never rebaseline missing IDs.
 const frenchAdditionIds = new Set([
@@ -1554,6 +1623,8 @@ const frenchAdditionIds = new Set([
   // Reviewed corrections retain legacy IDs and remain in the frozen hash.
   ...FRENCH_READING_CARDS.filter(card => card.id.includes('-reading-')),
   ...FRENCH_CLOZE_CARDS, ...FRENCH_LISTENING_CARDS,
+  // The deferred sittings' reviewed cards (2022 and 2023): new, never a frozen identity.
+  ...FRENCH_DEFERRED_CARDS,
 ].map(card => card.id));
 /* Economics keeps its 697 pre-review IDs frozen (383 Higher + 314 Ordinary, the
  * original identity hashes above). The paper-by-paper physical review
@@ -2772,7 +2843,9 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
   if (name.startsWith('spanish:')) return ids.filter(id => !isSpanishAdded(id));
   if (name.startsWith('german:')) return ids.filter(id => !isGermanAdded(id));
+  if (name.split(':')[0] in smallLanguageAdditions) return ids.filter(id => !smallLanguageAddedIds.has(id));
   if (name.startsWith('polish:')) return ids.filter(id => !isPolishAdded(id));
+  if (name.startsWith('portuguese:')) return ids.filter(id => !isPortugueseAdded(id));
   if (name.startsWith('engineering:')) return ids.filter(id => !engineeringAdditionIds.has(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -3104,6 +3177,93 @@ describe('Mark Bank card preservation', () => {
       .toBe(true);
   });
 
+  it('pins every card the small-languages lane adds, sitting by sitting', () => {
+    // [subject, year, cards, sha256 of the sorted ids]. One row per sitting,
+    // added in the commit that cards it; a row never changes once added.
+    const SMALL_LANGUAGE_SITTINGS: Array<[string, number, number, string]> = [
+      ['dutch', 2010, 13, '3a68196d10246f17ffe2c2693bf6398820bed450dc655cb515ad450ed31ecaef'],
+      ['dutch', 2011, 13, '5a92235acf051a9e4f36c945f37769a69a8527ec10816712f3c39ae4a31b8524'],
+      ['dutch', 2012, 13, '06b2559861d2da72d2e5ecc3d4bf65fe990a5a322ce09da458c8703f026a1402'],
+      ['dutch', 2013, 13, 'a378638b30d1f6be020056854e8039fe3d14fbf407485e1eb422237e4345f987'],
+      ['dutch', 2014, 13, '408f512f6afa78afc50d6ca21526f68acc9b2acdfcfc5ca355f1a14ed472b21a'],
+      ['dutch', 2015, 13, '22c9d7a17c0c0053dd8b0efc4113235d51c5afea5d6148dea52fc2fd9108b2cb'],
+      ['dutch', 2016, 13, '86342775d756ed3aa3853e3ab8031e85a55fa350abe324a3646e648966554a34'],
+      ['dutch', 2017, 13, 'c793fc39cc9381a4dfad0c103535abafaf02c30277e55cc8dc4beeb35e17c190'],
+      ['dutch', 2018, 13, '0757dbf969812da401e67bedfb41bd5400b6395de16feffc49320a53f45613cd'],
+      ['dutch', 2019, 13, 'bdea504288d0524e7ceef6810591f728e8fc70cb9fc728095abfcf46f80affef'],
+      ['dutch', 2020, 13, 'e333d7476c467ae58f3aec8edbe6f2517500e8e56377e3c984c6bb2c4bcbe050'],
+      ['dutch', 2026, 13, '8d422d1df08c3f3ed6148b3968847c640148ab8eaa3ceba58091bb95575f1e4c'],
+      ['dutch', 2021, 3, 'db001b028c6873d58554d410a85bff20ae222a1780d2ce52bfdae777b60066c1'],
+      ['dutch', 2022, 3, '9396985d5841bd534a5648316b8abf7d545bebd735ed71c41f9d8b0bed21cc9d'],
+      ['dutch', 2023, 7, 'ae0bf4986a45a2d9c988e595e3ecedf962ff9b0b6d5f2682fad9c74f553d5be1'],
+      ['dutch', 2024, 5, 'ee49790d05585d81a93a01b480d71f872e910db7099f2f017a103974d4bdfcd2'],
+      ['dutch', 2025, 3, 'c4631a98cf05cccc437075552640f2bfbe77a3878eabc45c2a4ecbc8b60c7c56'],
+      ['romanian', 2010, 13, 'b388cedfdd59e269acfdb1a84469f59d9784ef19b1bac733ec88066561039322'],
+      ['romanian', 2011, 13, 'd8bfba521906869e46792a3ca77b504684822d0dc142ab65ac115957871e5299'],
+      ['romanian', 2012, 9, '0c957a48104e3bc625edbd087a8cdfd1f1479759433f214cb283c96a4ba34036'],
+      ['romanian', 2014, 9, '22180f3a9dd576d09b3ff2b40060bf6292444139f74fb791aa88a69e325748e2'],
+      ['romanian', 2016, 9, '86e3dc3638613ed4a4022a661ecfa5d6df98d83acdb40a056412facad4783854'],
+      ['romanian', 2013, 9, 'f00de84d0599be29ea1a4c9aa5c333037ad9c71419366e1c19304dccca1580b3'],
+      ['romanian', 2015, 9, '35d8156afacb48b2d0b1ac48e678f585d60c0478f9a1ebc59733a445de6a01e4'],
+      ['romanian', 2017, 9, '0179a8a8fdd25b4aef2252aa5bb8a1f6381b6bd310fa16678bf03ddf702559c3'],
+      ['romanian', 2018, 9, 'fdd90c79b9584893886511e60c989dc68a1f103ea70132c1ace6414d49d29e69'],
+      ['romanian', 2019, 13, '28a8dcc3fadd7530aefcbdecdf03a6ee1e4d049e89dcf9b8bd80ef9839dc3746'],
+      ['romanian', 2020, 9, '6c0fe26e2151364b80feb57a52cea48cb84234337e08de6d2337977661bd7749'],
+      ['romanian', 2026, 13, '4bbeb67251b021c1fe80c19ba03ecb3c72bbb63cbdea80b4f595411b95476a25'],
+      ['romanian', 2021, 2, '384ca0376d7ec379740b82017bbef065945a039f011e6010faeaafec012fc747'],
+      ['romanian', 2022, 2, '0a42c13cefc4f3cbd2bed0a7a0a4ca9962b67052a28a03353922ad816d88e783'],
+      ['romanian', 2023, 3, '670bc19087ba638f329e553a93cd29b51eb0bf8d78d6b1871ce0fd34740faa1f'],
+      ['romanian', 2024, 3, 'ef4d720529b9e031b1002284203c34e28d40916e0d5fbbbc02284064bd1b6a2d'],
+      ['romanian', 2025, 3, '7d5c07acaf944f948c9a19f86940a02dd414c1bb69add61e0a1480ad0e3cabab'],
+      ['maltese', 2018, 10, '92a2ec8e7c757c140730d3c23482d00f3ed8baed96a350ba56be860c02e34c5a'],
+      ['maltese', 2019, 7, '75d3d020cbec3f912bd0dbc410c0bbb754fc6be203bac6b2a6c10049c2e03cfb'],
+      ['maltese', 2022, 12, '4d04a303b1502f9e31a68ed05e8fcf0f64c4505adc6a4701275c421848e989f9'],
+      ['maltese', 2023, 6, 'bc2f7d0beaea922a15cbdc470ecf3de1b410e67bbaf16605695cbb64e9651c02'],
+      ['maltese', 2024, 8, 'c26537548d009f342ab802d90797794fc028b4d499a74a2b15893d8a47183931'],
+      ['maltese', 2025, 4, '1142c628c9dbe6d8aa2eaf9c60bd32131d8d47ee75a20128ffcb99b595f09250'],
+    ];
+    const listed = Object.entries(smallLanguageAdditions)
+      .flatMap(([subject, bySitting]) => Object.keys(bySitting).map(year => `${subject} ${year}`)).sort();
+    expect(listed).toEqual(SMALL_LANGUAGE_SITTINGS.map(([subject, year]) => `${subject} ${year}`).sort());
+    // Maltese is outside `decks` (never pinned before this lane; adding it there would move the bank's
+    // frozen totals): its 29 cards live on 2026-11-20 are pinned here instead, and held apart the same way.
+    const MALTESE_FROZEN: [number, string] = [29, '2c2e7c672b90c7a3edf05caaeeb789d39b21a59c61d9036a1fb8dad24ed22477'];
+    const malteseFrozen = MALTESE_HIGHER.map(card => card.id).filter(id => !smallLanguageAddedIds.has(id));
+    expect([malteseFrozen.length, idHash(malteseFrozen)]).toEqual(MALTESE_FROZEN);
+    const deckIds = (subject: string) => new Set([
+      ...decks.filter(([name]) => name.split(':')[0] === subject).flatMap(([, cards]) => cards.map(card => card.id)),
+      ...(subject === 'maltese' ? MALTESE_HIGHER.map(card => card.id) : []),
+    ]);
+    for (const [subject, year, count, hash] of SMALL_LANGUAGE_SITTINGS) {
+      const ids = smallLanguageAdditions[subject][String(year)];
+      expect(ids, `${subject} ${year}`).toHaveLength(count);
+      expect(idHash(ids), `${subject} ${year}`).toBe(hash);
+      const live = deckIds(subject);
+      for (const id of ids) {
+        expect(live.has(id), `${id}: not in the ${subject} deck`).toBe(true);
+        expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
+        expect(id.includes(`-${year}-`), `${id}: filed under ${year}`).toBe(true);
+      }
+    }
+  });
+
+  it('adds each further Portuguese sitting on top of the frozen 2021-2025 identity', () => {
+    const cards = [...PORTUGUESE_HIGHER, ...PORTUGUESE_ORDINARY];
+    for (const [year, counts] of Object.entries(PORTUGUESE_ADDED)) {
+      const added = cards.filter(card => card.year === Number(year));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+      expect(added.every(card => card.id.startsWith(`por-${year}-`))).toBe(true);
+    }
+    for (const [year, counts] of Object.entries(PORTUGUESE_ADDED_TO_FROZEN)) {
+      const added = cards.filter(card => card.year === Number(year) && isPortugueseAdded(card.id));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+    }
+    expect(cards.filter(card => !isPortugueseAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
+      .toBe(true);
+  });
+
   /* A German card's conceptId is its level-independent identity, the key a
    * student's progress is carried on between Higher and Ordinary
    * (types/markBank.ts: it "cannot be retrofitted"), so it is held like the
@@ -3196,6 +3356,20 @@ describe('Mark Bank card preservation', () => {
       ['2017 ordinary', 52, '786f96da46a3ebed10203b54c31c4a968817ca9b38b5e89d32317046a03ef731'],
       ['2016 higher', 54, '10af64b857b24fdab3c24b64b85a504920d10037c792ea56c782044fa29b504d'],
       ['2016 ordinary', 48, '7315da8115ab273e6e8f5ae5790da66a3fcf7591ea43b46d3420a62160ebb696'],
+      ['2015 higher', 51, '89a71fc02367f26d4d72f088359128aecd96deacbe9b2b4de02d42b5d4bdaccf'],
+      ['2015 ordinary', 52, '0b3ac0058425a2a63b7bb2afc77125aac38f346b37248ee1bfe957d434ab27a2'],
+      ['2014 higher', 58, '81a38a10481a0b6222b729de7aa5c3e08f814a0ec88c0224c08f0f3bb68ebba2'],
+      ['2014 ordinary', 52, '42596fd6679cade7d6c3eeb3c5ca314790d4929140d4cc0e537e1cf6acf46ac3'],
+      ['2013 higher', 55, '0cb69426999770514fc2f3da657f8344089c338130ec556d0f9fecbe71f79778'],
+      ['2013 ordinary', 51, '339d41160ba1ae084c13bdca8937fb6029fbb660b6569f6af6eb6cc5ea8b0716'],
+      ['2011 higher', 56, '5726ceeb3a351cd26b81b5fcab2ade266b549a313af8fbae44b6c2312125fcb8'],
+      ['2011 ordinary', 53, 'f4031d66c14bb6f27cc05d69c215c21c072bd55e0699c6f11cef8325c888dd77'],
+      ['2010 higher', 52, '32c134a41995cdd3d2e4f114d168ca032398b9727160acc1a75061ada4e043b7'],
+      ['2010 ordinary', 52, '38d03c3c3eab8c66b8a23e9225cff58b2ef69df208a8a7c12f470d8cad0b31ad'],
+      ['2012 higher', 55, '0a0e4c44992f3397cfaa06b522616b04181327d1366cddea39ff5b0023bbd3f2'],
+      ['2012 ordinary', 53, '90cc73fbdf587827dbbc894324f3ee9a0d8d2e7ae8f0c1fd90114344c1e8d96d'],
+      ['2023 higher deferred', 11, '75d010f65ce07730f15d1759058a02eb92a891561773b13f27c6bc05773712ee'],
+      ['2022 higher deferred', 11, '48007df9138409a6b4d6ab6cbc9eec98328e49abea766734aba54aef0d1cc5ea'],
     ];
     const lane = new Map<string, string[]>();
     for (const card of [...MUSIC_HIGHER, ...MUSIC_ORDINARY]) {
@@ -3316,12 +3490,15 @@ describe('Mark Bank card preservation', () => {
         : name.startsWith('spanish:') ? cards.filter(card => isSpanishAdded(card.id)).length
         : name.startsWith('german:') ? cards.filter(card => isGermanAdded(card.id)).length
         : name.startsWith('polish:') ? cards.filter(card => isPolishAdded(card.id)).length
+        : name.startsWith('portuguese:') ? cards.filter(card => isPortugueseAdded(card.id)).length
         // Technology's 2010-2019 and DCG's 2010-2018 additions count on top of the bank the same way.
         : name.startsWith('technology:') ? cards.filter(card => isTechnologyAdded(card.id)).length
         : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length
         : name.startsWith('dcg:') ? cards.filter(card => isDcgAdded(card.id)).length
         : name === 'latin:higher' || name === 'ancient-greek:ordinary' ? cards.filter(card => treatmentAdditionIds.has(card.id)).length
-        : name.startsWith('italian:') ? cards.filter(card => isItalianAdded(card.id)).length : 0;
+        : name.startsWith('italian:') ? cards.filter(card => isItalianAdded(card.id)).length
+        // The small languages (Claude queue 5): sl_additions.json, on top of each frozen deck.
+        : name.split(':')[0] in smallLanguageAdditions ? cards.filter(card => smallLanguageAddedIds.has(card.id)).length : 0;
     const italianAddedCount = [...ITALIAN_HIGHER, ...ITALIAN_ORDINARY].filter(card => isItalianAdded(card.id)).length;
     const technologyAddedCount = [...TECHNOLOGY_HIGHER, ...TECHNOLOGY_ORDINARY]
       .filter(card => isTechnologyAdded(card.id)).length;
@@ -3363,8 +3540,10 @@ describe('Mark Bank card preservation', () => {
         + treatmentAdditionIds.size
         // Italian (classics-italian lane): every card on top of the frozen 350.
         + italianAddedCount
-        // Polish additions (languages-q3 lane).
-        + polishAddedTotal);
+        // Polish and Portuguese additions (languages-q3 lane).
+        + polishAddedTotal + portugueseAddedTotal
+        // The small languages (Claude queue 5), Maltese's aside: its deck is not in `decks`.
+        + [...smallLanguageAddedIds].filter(id => !id.startsWith('mlt-')).length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

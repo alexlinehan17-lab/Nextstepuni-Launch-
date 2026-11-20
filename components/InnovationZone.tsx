@@ -13,7 +13,7 @@ import { MotionDiv } from './Motion';
 import { FileSearch,
     Compass, Target,
     CalendarDays, Calculator, GitBranch,
-    Map, Milestone, Highlighter, Users, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck, Waypoints
+    Map, Milestone, Highlighter, Users, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck, Waypoints, Headphones
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment, deleteField } from 'firebase/firestore';
 import { saveInBackground } from '../utils/firestoreWrite';
@@ -99,7 +99,7 @@ interface ToolChrome {
  * reading column. `max-w-4xl` yields 848px of usable width, which is right for a
  * page of prose and wrong for a two-pane workspace.
  */
-const WIDE_TOOLS = new Set(['mark-bank', 'your-possible-life', 'war-room', 'journey', 'planner', 'paper-trail', 'coursework-companion']);
+const WIDE_TOOLS = new Set(['mark-bank', 'listening-studio', 'your-possible-life', 'war-room', 'journey', 'planner', 'paper-trail', 'coursework-companion']);
 
 const TOOL_CHROME: Record<string, ToolChrome> = {
   'journey':         { themeColor: '#8B82B8', eyebrow: 'Track · Simulator',           subtitle: 'Navigate the choices of your final school year, then turn the outcome into a practical next step.', showHeader: true },
@@ -128,6 +128,8 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   // of every screen INCLUDING every review card, which is where the exam question
   // should be. The subtitle still does its job on the tool tile, read once.
   'mark-bank':       { themeColor: '#123B2B', eyebrow: 'Practice · Flashcards', subtitle: 'Flashcards made from real exam questions, marked point by point against the real scheme and brought back to you right before you\u2019d forget them.', showHeader: false },
+  // No header, for Mark Bank's reason: it is this same tool on its listening front page.
+  'listening-studio': { themeColor: '#1A1A1A', eyebrow: 'Practice · Listening', subtitle: 'Sit a listening with the recording beside the questions, then mark each part against the real scheme.', showHeader: false },
   'paper-trail':     { themeColor: '#33658A', eyebrow: 'Understand · Exam archive',   subtitle: 'Every past paper and marking scheme, free — your subjects, your level, three taps.', showHeader: false },
   'topic-atlas':     { themeColor: '#B4530A', eyebrow: 'Understand · Topic map',      subtitle: 'Every question the SEC has ever asked, mapped by topic — with the marking scheme one tap away.', showHeader: false },
   'diagram-vault':   { themeColor: '#F26B1F', eyebrow: 'Understand · Exam diagrams',  subtitle: 'Every diagram, graph, map and chart that has come up — cropped from the paper and decoded.', showHeader: true },
@@ -683,7 +685,17 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-900 dark:text-emerald-300',
             accentBarColor: 'bg-emerald-800', tagBg: 'bg-emerald-100 dark:bg-emerald-900/30', tagText: 'text-emerald-900 dark:text-emerald-400',
             hoverBorder: 'hover:border-emerald-400/50 dark:hover:border-emerald-500/40',
-            component: <MarkBank examDate={subjectProfile?.examStartDate} uid={user?.uid} studentSubjects={subjectProfile?.subjects} />,
+            component: <MarkBank examDate={subjectProfile?.examStartDate} uid={user?.uid} studentSubjects={subjectProfile?.subjects} onOpenListeningStudio={() => setActiveTool('listening-studio')} />,
+        },
+        {
+            // Mark Bank's cards that carry a recording, sat as listenings (components/ListeningStudio).
+            id: 'listening-studio', title: 'Listening Studio', description: 'Sit a listening with the recording beside the questions, then mark each part against the real scheme.', icon: Headphones, needsProfile: false,
+            curriculum: 'senior' as const,
+            tag: 'Listening', accentHex: '#1A1A1A', gridClass: 'md:col-span-2',
+            iconBg: 'bg-zinc-100 dark:bg-zinc-800', iconColor: 'text-zinc-900 dark:text-zinc-200',
+            accentBarColor: 'bg-zinc-800', tagBg: 'bg-zinc-100 dark:bg-zinc-800', tagText: 'text-zinc-900 dark:text-zinc-300',
+            hoverBorder: 'hover:border-zinc-400/50 dark:hover:border-zinc-500/40',
+            component: <MarkBank studio examDate={subjectProfile?.examStartDate} uid={user?.uid} studentSubjects={subjectProfile?.subjects} />,
         },
         {
             id: 'paper-trail', title: 'Paper Trail', description: 'Every SEC past paper and marking scheme — three taps away.', icon: FileSearch, needsProfile: false,
@@ -796,6 +808,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
 
     const TOOL_CATEGORIES: Record<string, 'understand' | 'practice' | 'plan' | 'track'> = {
         'mark-bank': 'practice',
+        'listening-studio': 'practice',
         'cao-simulator': 'understand',
         'future-finder': 'understand',
         'planner': 'plan',
@@ -1044,7 +1057,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                     )}
 
                     <div className="lp-tools-grid">
-                      {[...filteredTools].sort((a,b) => { const order = ['planner','paper-trail','future-finder-revamped','mark-bank','war-room','your-possible-life','comeback','points-passport','college-compass','catch-up-lane','topic-atlas','command-word-reflex','how-they-did-it','future-finder','journey']; return order.indexOf(a.id) - order.indexOf(b.id); }).map(tool => {
+                      {[...filteredTools].sort((a,b) => { const order = ['planner','paper-trail','future-finder-revamped','mark-bank','listening-studio','war-room','your-possible-life','comeback','points-passport','college-compass','catch-up-lane','topic-atlas','command-word-reflex','how-they-did-it','future-finder','journey']; return order.indexOf(a.id) - order.indexOf(b.id); }).map(tool => {
                         const pending = tool.needsProfile && !profileLoaded;
                         const locked = tool.needsProfile && profileLoaded && !subjectProfile;
                         return <LaunchpadToolCard key={tool.id} tool={tool.id as ToolIconKey} title={tool.title} description={tool.description} pending={Boolean(pending)} locked={Boolean(locked)} recommendation={gcRecommendations[tool.id] ? gcRecommendations[tool.id].fromName || 'your counsellor' : undefined} onClick={() => handleToolClick(tool.id, tool.needsProfile)} />;

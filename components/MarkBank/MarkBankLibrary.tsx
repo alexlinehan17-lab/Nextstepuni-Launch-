@@ -23,7 +23,7 @@ import { markBankCurriculumMenu, menuTopicIds } from './curriculumMenu';
 import { SUBJECTS, LEVEL_LABEL, levelsFor, type Level } from './deck';
 import { completeListeningExercises, resolveSessionQueue } from './sessionPlanning';
 import type { DeckState } from './store';
-import { isConfidenceReviewCard, type SecCard } from '../../types/markBank';
+import { isConfidenceReviewCard, isUnpricedSectionCard, unpricedSectionChip, type SecCard } from '../../types/markBank';
 import './mark-bank-library.css';
 
 const serial = (n:number)=>String(n).padStart(2,'0');
@@ -43,8 +43,10 @@ interface Props {
  chooseSubject:(id:string)=>void; chooseLevel:(level:Level)=>void; canSelectSubject:(name:string)=>boolean;
  onStart:(topicId?:string,queue?:SecCard[])=>void; busy:boolean; ready:boolean; loading:boolean; error:boolean; onRetry:()=>void; online:boolean;
  onStartingPoint?:()=>void;
+ /** Cards of this deck that carry a recording: they are sat in Listening Studio, not reviewed here. */
+ listeningCount?:number; onOpenListeningStudio?:()=>void;
 }
-export default function MarkBankLibrary({examDate,subjectId,level,cards,state,now,chooseSubject,chooseLevel,canSelectSubject,onStart,onStartingPoint,busy,ready,loading,error,onRetry,online}:Props){
+export default function MarkBankLibrary({examDate,subjectId,level,cards,state,now,chooseSubject,chooseLevel,canSelectSubject,onStart,onStartingPoint,busy,ready,loading,error,onRetry,online,listeningCount=0,onOpenListeningStudio}:Props){
  const base=SUBJECTS.find(item=>item.id===subjectId) ?? SUBJECTS[0];
  const menu=useMemo(()=>markBankCurriculumMenu(subjectId,level,examDate,cards),[subjectId,level,examDate,cards]);
  const groups=menu.strands;
@@ -122,6 +124,10 @@ export default function MarkBankLibrary({examDate,subjectId,level,cards,state,no
       </div>
       <p className="mb-source-note">{menu.current ? `Your syllabus: ${menu.spec?.title}.` : "Your cohort map is being verified."}{menu.model ? ' Topics are the Topic Atlas headings, so a question sits under the same topic in both.' : ''} Questions retain their original paper year. Archived topics are labelled in the index.</p>
       {onStartingPoint && <Button variant="outline" disabled={busy || !ready} onClick={onStartingPoint}>Where should I start?</Button>}
+      {listeningCount > 0 && <p className="mb-source-note" data-testid="mark-bank-listening-moved">
+        {listeningCount} listening {listeningCount === 1 ? 'question' : 'questions'} for {subject.title} {listeningCount === 1 ? 'is' : 'are'} sat with the recording in Listening Studio.
+        {onOpenListeningStudio && <>{' '}<Button variant="outline" size="sm" onClick={onOpenListeningStudio}>Open Listening Studio</Button></>}
+      </p>}
       {loading && <p className="mb-sr" role="status">Loading this question bank…</p>}
       {!online && <p className="mb-source-note">You’re offline. Reviews save on this device and sync when your connection returns.</p>}
 
@@ -179,7 +185,7 @@ export default function MarkBankLibrary({examDate,subjectId,level,cards,state,no
                 <p className="mb-start-note">Write an answer. Then open the scheme.</p>
                 <div className="mb-in-file">
                   <p className="mb-kicker">INSIDE THIS TOPIC</p>
-                  <ul>{selectedCards.slice(0,3).map((sample, index) => <li key={sample.id}><button type="button" className="mb-sample" onClick={() => begin(index)}><span className="mb-sample-copy"><strong>{sample.stem || selected.title}</strong><small>{sample.questionRef}</small></span><span className="mb-sample-marks">{isConfidenceReviewCard(sample) ? <small>Confidence review</small> : <>{sample.totalMarks}<small>marks</small></>}</span></button></li>)}</ul>
+                  <ul>{selectedCards.slice(0,3).map((sample, index) => <li key={sample.id}><button type="button" className="mb-sample" onClick={() => begin(index)}><span className="mb-sample-copy"><strong>{sample.stem || selected.title}</strong><small>{sample.questionRef}</small></span><span className="mb-sample-marks">{isConfidenceReviewCard(sample) ? <small>Confidence review</small> : isUnpricedSectionCard(sample) ? <small>{unpricedSectionChip(sample.unpricedSection)}</small> : <>{sample.totalMarks}<small>marks</small></>}</span></button></li>)}</ul>
                 </div>
               </> : <div className="mb-empty-topic"><p>No questions are available for this topic in the current corpus.</p><p>You can still explore the rest of the subject index.</p></div>}
             </>}

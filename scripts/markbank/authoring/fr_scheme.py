@@ -200,6 +200,8 @@ MISPRINTS = {
     # are attributed to nothing: the sitting censused 11 asks where the paper
     # prints 22.
     (2023, 'hl'): [('Q,1 (60 Marks)', 'Q.1 (60 Marks)')],
+    # The 2023 Higher deferred scheme prints the same comma on the same head.
+    (2023, 'hl-deferred'): [('Q,1 (60 Marks)', 'Q.1 (60 Marks)')],
 }
 
 
@@ -244,7 +246,7 @@ class Ask:
     __slots__ = ('unit', 'rc', 'section', 'item', 'letter', 'letter_to',
                  'total', 'per', 'count', 'notation', 'cue', 'directives',
                  'answers', 'full', 'part', 'routes', 'notes', 'open_list',
-                 'line', 'fault')
+                 'line', 'fault', 'decision')
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -262,9 +264,12 @@ class Ask:
 class FrScheme:
     """One published French marking scheme, read as a list of asks."""
 
-    def __init__(self, year, level, subject=SUBJECT, *, raw_text=None):
+    def __init__(self, year, level, subject=SUBJECT, *, raw_text=None, sitting=None):
         self.year, self.level, self.subject = year, level, subject
-        self.path = os.path.join(schemes_dir(subject), f'{year}-{level}.md')
+        # A deferred sitting's scheme is its own extraction, <year>-<level>-deferred.md.
+        self.sitting = sitting
+        name = f'{year}-{level}-deferred.md' if sitting == 'deferred' else f'{year}-{level}.md'
+        self.path = os.path.join(schemes_dir(subject), name)
         if raw_text is None:
             with open(self.path, encoding='utf-8') as fh:
                 raw = fh.read()
@@ -272,16 +277,25 @@ class FrScheme:
             # Explicit opt-in for a separately reviewed PDF extraction. Never
             # silently treat an unreadable older scheme as an empty census.
             raw = raw_text
-        for old, new in MISPRINTS.get((year, level), ()):
+        if sitting == 'deferred':
+            # The deferred schemes set their words apart with no-break spaces
+            # ("Appropriate\xa0direct\xa0quotation"), which no pattern here reads
+            # as a space. June's extractions are read exactly as before.
+            raw = raw.replace('\xa0', ' ')
+        for old, new in MISPRINTS.get((year, f'{level}-deferred' if sitting == 'deferred' else level), ()):
             assert old in raw, f'{year} {level}: misprint {old!r} is not in the scheme'
             raw = raw.replace(old, new)
         # PDF text companions can indent entire section headings (2020 HL).
         self.lines = [l.strip() for l in raw.split('\n')]
         self.legacy_ordinary = year in range(2010, 2020) and level == 'ol'
-        ledger = os.path.join(HERE, 'french-reading-review.json')
+        # A deferred sitting's reviewed repairs live in their own ledger, so
+        # June's ledger and every card built from it are untouched by them.
+        ledger = os.path.join(HERE, 'french-reading-review-deferred.json' if sitting == 'deferred'
+                              else 'french-reading-review.json')
         with open(ledger, encoding='utf-8') as source:
             records = json.load(source)['papers']
-        record = next((r for r in records if r['year'] == year and r['level'] == level), {})
+        record = next((r for r in records if r['year'] == year and r['level'] == level
+                       and r.get('sitting') == sitting), {})
         for alias in record.get('schemeBulletAliases', []):
             pattern = re.compile(r'^' + re.escape(alias['glyph']) + r'\s+')
             assert alias['reason'] and any(pattern.match(line) for line in self.lines), alias
@@ -293,6 +307,10 @@ class FrScheme:
         from fr_legacy_reading import apply_reviewed_blocks
         self.lines = apply_reviewed_blocks(self.lines, record.get('schemeBlocks', []))
         self.paper_question_groups = record.get('paperQuestionGroups', {})
+        # Deferred sittings only: a head whose printed tariff disagrees with its
+        # own priced answers and its comprehension's printed total, settled from
+        # those printed figures by a reviewed decision (see _decide).
+        self.tariff_decisions = record.get('tariffDecisions', {}) if sitting == 'deferred' else {}
         if self.legacy_ordinary:
             from fr_legacy_reading import normalize_ordinary
             self.lines = normalize_ordinary(self.lines, record.get('schemePartSplits', {}), record.get('schemeCombinedParts', {}))
@@ -321,12 +339,19 @@ class FrScheme:
             if unit != 'L' and UNIT_A.match(line):
                 unit, rc, lsec = 'A', None, None
                 continue
-            if UNIT_L.match(line):
+            if UNIT_L.match(line) and not (self.sitting == 'deferred' and re.search(r'\.\s+\w', line)):
+                # (The 2023 Ordinary deferred scheme's explanatory note wraps
+                # "... and the / Listening Comprehension Test. They can obtain
+                # full marks ..." onto a line of its own: a sentence, not a head.)
                 unit, rc, lsec = 'L', None, None
                 continue
             if unit != 'L' and UNIT_B.match(line):
                 unit, rc, lsec = 'B', None, None
                 continue
+            if unit is None and self.sitting == 'deferred' and RC_HEAD.match(line):
+                # The 2023 Ordinary deferred scheme opens its first comprehension
+                # ("Q.1 (40 marks)") with no "Section A" line above it.
+                unit = 'A'
             if unit == 'A':
                 m = RC_HEAD.match(line)
                 if m:
@@ -380,7 +405,30 @@ class FrScheme:
                 self.refused.append((head, ask))
             else:
                 self.asks.append(ask)
+        self._decide()
         self._checksum()
+
+    def _decide(self):
+        """Apply the reviewed tariff decisions of a deferred sitting.
+
+        The deferred schemes print some heads that disagree with the answers
+        beneath them: "4 + 4 Marks" over a single four-mark answer (2022
+        Ordinary Q.2 4), or "5 Marks" over an ask the paper sets for two details,
+        each answer priced at five (2022 Higher Q.2 4). Each such head is settled
+        only from figures the scheme prints -- the per-answer mark on its own
+        answer lines and the total on its comprehension's head -- and only by a
+        decision that names both; the comprehension must then add up to its own
+        printed total, which _checksum still checks.
+        """
+        for address, decision in self.tariff_decisions.items():
+            ask = next(a for a in self.asks if a.unit == 'A' and (
+                f'A{a.rc}-Q{a.item}' + (f'-{a.letter}' if a.letter and not a.letter_to else '')) == address)
+            assert decision['reason'] and decision['sourceNote'], address
+            assert ask.total == decision['printedHeadMarks'], (address, ask.total)
+            assert all(b['marks'] == decision['perPointMarks'] for b in ask.full if b['text']), address
+            ask.per, ask.count = decision['perPointMarks'], decision['requiredPoints']
+            ask.total = ask.per * ask.count
+            ask.decision = decision
 
     def _checksum(self):
         """The SEC's own arithmetic, applied to each reading comprehension.
@@ -622,7 +670,8 @@ def audit(subject=SUBJECT):
     for path in sorted(glob.glob(os.path.join(schemes_dir(subject), '*.md'))):
         stem = os.path.basename(path)[:-3]
         year, level = int(stem[:4]), stem[5:]
-        S = FrScheme(year, level, subject)
+        sitting = 'deferred' if level.endswith('-deferred') else None
+        S = FrScheme(year, level.removesuffix('-deferred'), subject, sitting=sitting)
         read = S.reading()
         print(f'{stem}: {len(read)} reading asks, {len(S.listening())} listening '
               f'asks, {len(S.refused)} refused')
@@ -654,10 +703,11 @@ def main():
     ap.add_argument('--audit', action='store_true')
     ap.add_argument('--full', action='store_true')
     ap.add_argument('--listening', action='store_true')
+    ap.add_argument('--deferred', action='store_true')
     args = ap.parse_args()
     if args.audit or not args.year:
         return audit(args.subject)
-    S = FrScheme(args.year, args.level, args.subject)
+    S = FrScheme(args.year, args.level, args.subject, sitting='deferred' if args.deferred else None)
     asks = S.listening() if args.listening else S.reading()
     print(f'{args.year} {args.level.upper()}: {len(asks)} asks')
     for a in asks:

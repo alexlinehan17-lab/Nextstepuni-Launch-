@@ -11,6 +11,7 @@
  * question number in the card's reference (the audit's own inference, listed as such).
  */
 import spanishAtlas from '../markbank/authoring/spanish-atlas.json';
+import japaneseAtlas from '../markbank/authoring/japanese-atlas.json';
 import physicalEducationTasks from '../../data/paperTrail/physicalEducationTasks.json';
 import accountingAuthored from '../../components/MarkBank/cards/accounting/authored.json';
 import agsciRuntime from '../../data/examTopics/agricultural-science-question-runtime.json';
@@ -42,6 +43,7 @@ const irishFiles = import.meta.glob('../../components/MarkBank/cards/irish/*auth
 const economicsReviews = import.meta.glob('../markbank/authoring/reviews/economics-*-ev.json', { eager: true, import: 'default' }) as Record<string, { fileid: string; questions: Array<{ n: string; tasks?: Array<{ cardId?: string }> }> }>;
 
 const spanish = (spanishAtlas as { cards: Record<string, { fileid: string; n: string }> }).cards;
+const japanese = (japaneseAtlas as { cards: Record<string, { fileid: string; n: string | null }> }).cards;
 const peByCard = new Map((physicalEducationTasks as Array<{ cardId: string; fileid: string; n: string }>).map(t => [t.cardId, t]));
 const accByCard = new Map(((accountingAuthored as { cards: Json[] }).cards).map(c => [String(c.id), c]));
 const agsciByCard = new Map(((agsciRuntime as { markBankCards: Json[] }).markBankCards).map(r => [String(r.cardId), r]));
@@ -160,7 +162,11 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
     case 'home-economics': {
       // Sections B and C share one booklet and both restart at Q1; the Atlas lists n 1-5 once, so a Section C card
       // has no Atlas question of its own.
-      if (c.section === 'C') return { fail: 'no-own-atlas-question', cls: 'inferred' };
+      // Since the 19 Nov release some papers list Section C after Section B's five questions (2024: C Q1 is n 6).
+      if (c.section === 'C') {
+        const k = qnum(ref);
+        return k ? { fileid: fid, cands: [{ ifHas: String(5 + Number(k)), n: String(5 + Number(k)) }], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
+      }
       const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
     }
     case 'religious-education': {
@@ -172,7 +178,19 @@ export function atlasAddress(c: SecCard, atlas: string, ctx: ReturnType<typeof a
       const t = /\bTopic (\d{1,2})\(/.exec(ref); if (t) return { fileid: fid, cands: [t[1]], cls: 'inferred' };
       const q = qnum(ref); return q ? { fileid: fid, cands: [q], cls: 'inferred' } : { fail: 'unreadable-ref', cls: 'inferred' };
     }
-    case 'italian': case 'japanese':
+    case 'russian': {
+      // The Atlas numbers Russian parts by the card id's own suffix (c1-1-i, la1-ii, sd); 2019-2020 aural lists 1-4.
+      const m = /^ru-\d{4}-(?:hl|ol)-(?:deferred-)?(.+)$/.exec(c.id);
+      if (!m) return { fail: 'unreadable-ref', cls: 'inferred' };
+      const aural = /^l(\d)$/.exec(m[1]);
+      return { fileid: fid, cands: aural ? [m[1], { ifHas: aural[1], n: aural[1] }] : [m[1]], cls: 'inferred' };
+    }
+    case 'japanese': {
+      // The Atlas numbers each Japanese paper straight through, with labels that change by year: a committed join.
+      const e = japanese[c.id];
+      return e?.n ? { fileid: e.fileid, cands: [e.n], cls: 'join' } : { fail: e ? 'no-atlas-question' : 'no-join-entry', cls: 'join' };
+    }
+    case 'italian':
       // The Atlas numbers these papers straight through; card citations restart in each section. No join yet.
       return { fail: 'no-address-rule', cls: 'none' };
     default: {

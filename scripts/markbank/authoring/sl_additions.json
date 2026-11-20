@@ -1,0 +1,449 @@
+{
+ "dutch": {
+  "2010": [
+   "nld-2010-hl-i-1-a",
+   "nld-2010-hl-i-1-b",
+   "nld-2010-hl-i-1-c",
+   "nld-2010-hl-i-1-d",
+   "nld-2010-hl-i-1-e",
+   "nld-2010-hl-i-2",
+   "nld-2010-hl-i-3",
+   "nld-2010-hl-i-4",
+   "nld-2010-hl-i-5",
+   "nld-2010-hl-i-6",
+   "nld-2010-hl-ii-1",
+   "nld-2010-hl-iii-1",
+   "nld-2010-hl-iii-2"
+  ],
+  "2011": [
+   "nld-2011-hl-i-1-a",
+   "nld-2011-hl-i-1-b",
+   "nld-2011-hl-i-1-c",
+   "nld-2011-hl-i-1-d",
+   "nld-2011-hl-i-1-e",
+   "nld-2011-hl-i-2",
+   "nld-2011-hl-i-3",
+   "nld-2011-hl-i-4",
+   "nld-2011-hl-i-5",
+   "nld-2011-hl-i-6",
+   "nld-2011-hl-ii-1",
+   "nld-2011-hl-iii-1",
+   "nld-2011-hl-iii-2"
+  ],
+  "2012": [
+   "nld-2012-hl-i-1-a",
+   "nld-2012-hl-i-1-b",
+   "nld-2012-hl-i-1-c",
+   "nld-2012-hl-i-1-d",
+   "nld-2012-hl-i-1-e",
+   "nld-2012-hl-i-2",
+   "nld-2012-hl-i-3",
+   "nld-2012-hl-i-4",
+   "nld-2012-hl-i-5",
+   "nld-2012-hl-i-6",
+   "nld-2012-hl-ii-1",
+   "nld-2012-hl-iii-1",
+   "nld-2012-hl-iii-2"
+  ],
+  "2013": [
+   "nld-2013-hl-i-1-a",
+   "nld-2013-hl-i-1-b",
+   "nld-2013-hl-i-1-c",
+   "nld-2013-hl-i-1-d",
+   "nld-2013-hl-i-1-e",
+   "nld-2013-hl-i-2",
+   "nld-2013-hl-i-3",
+   "nld-2013-hl-i-4",
+   "nld-2013-hl-i-5",
+   "nld-2013-hl-i-6",
+   "nld-2013-hl-ii-1",
+   "nld-2013-hl-iii-1",
+   "nld-2013-hl-iii-2"
+  ],
+  "2014": [
+   "nld-2014-hl-i-1-a",
+   "nld-2014-hl-i-1-b",
+   "nld-2014-hl-i-1-c",
+   "nld-2014-hl-i-1-d",
+   "nld-2014-hl-i-1-e",
+   "nld-2014-hl-i-2",
+   "nld-2014-hl-i-3",
+   "nld-2014-hl-i-4",
+   "nld-2014-hl-i-5",
+   "nld-2014-hl-i-6",
+   "nld-2014-hl-ii-1",
+   "nld-2014-hl-iii-1",
+   "nld-2014-hl-iii-2"
+  ],
+  "2015": [
+   "nld-2015-hl-i-1-a",
+   "nld-2015-hl-i-1-b",
+   "nld-2015-hl-i-1-c",
+   "nld-2015-hl-i-1-d",
+   "nld-2015-hl-i-1-e",
+   "nld-2015-hl-i-2",
+   "nld-2015-hl-i-3",
+   "nld-2015-hl-i-4",
+   "nld-2015-hl-i-5",
+   "nld-2015-hl-i-6",
+   "nld-2015-hl-ii-1",
+   "nld-2015-hl-iii-1",
+   "nld-2015-hl-iii-2"
+  ],
+  "2016": [
+   "nld-2016-hl-i-1-a",
+   "nld-2016-hl-i-1-b",
+   "nld-2016-hl-i-1-c",
+   "nld-2016-hl-i-1-d",
+   "nld-2016-hl-i-1-e",
+   "nld-2016-hl-i-2",
+   "nld-2016-hl-i-3",
+   "nld-2016-hl-i-4",
+   "nld-2016-hl-i-5",
+   "nld-2016-hl-i-6",
+   "nld-2016-hl-ii-1",
+   "nld-2016-hl-iii-1",
+   "nld-2016-hl-iii-2"
+  ],
+  "2017": [
+   "nld-2017-hl-i-1-a",
+   "nld-2017-hl-i-1-b",
+   "nld-2017-hl-i-1-c",
+   "nld-2017-hl-i-1-d",
+   "nld-2017-hl-i-1-e",
+   "nld-2017-hl-i-2",
+   "nld-2017-hl-i-3",
+   "nld-2017-hl-i-4",
+   "nld-2017-hl-i-5",
+   "nld-2017-hl-i-6",
+   "nld-2017-hl-ii-1",
+   "nld-2017-hl-iii-1",
+   "nld-2017-hl-iii-2"
+  ],
+  "2018": [
+   "nld-2018-hl-i-1-a",
+   "nld-2018-hl-i-1-b",
+   "nld-2018-hl-i-1-c",
+   "nld-2018-hl-i-1-d",
+   "nld-2018-hl-i-1-e",
+   "nld-2018-hl-i-2",
+   "nld-2018-hl-i-3",
+   "nld-2018-hl-i-4",
+   "nld-2018-hl-i-5",
+   "nld-2018-hl-i-6",
+   "nld-2018-hl-ii-1",
+   "nld-2018-hl-iii-1",
+   "nld-2018-hl-iii-2"
+  ],
+  "2019": [
+   "nld-2019-hl-i-1-a",
+   "nld-2019-hl-i-1-b",
+   "nld-2019-hl-i-1-c",
+   "nld-2019-hl-i-1-d",
+   "nld-2019-hl-i-1-e",
+   "nld-2019-hl-i-2",
+   "nld-2019-hl-i-3",
+   "nld-2019-hl-i-4",
+   "nld-2019-hl-i-5",
+   "nld-2019-hl-i-6",
+   "nld-2019-hl-ii-1",
+   "nld-2019-hl-iii-1",
+   "nld-2019-hl-iii-2"
+  ],
+  "2020": [
+   "nld-2020-hl-i-1-a",
+   "nld-2020-hl-i-1-b",
+   "nld-2020-hl-i-1-c",
+   "nld-2020-hl-i-1-d",
+   "nld-2020-hl-i-1-e",
+   "nld-2020-hl-i-2",
+   "nld-2020-hl-i-3",
+   "nld-2020-hl-i-4",
+   "nld-2020-hl-i-5",
+   "nld-2020-hl-i-6",
+   "nld-2020-hl-ii-1",
+   "nld-2020-hl-iii-1",
+   "nld-2020-hl-iii-2"
+  ],
+  "2021": [
+   "nld-2021-hl-i-6",
+   "nld-2021-hl-ii-1",
+   "nld-2021-hl-ii-2"
+  ],
+  "2022": [
+   "nld-2022-hl-i-6",
+   "nld-2022-hl-ii-1",
+   "nld-2022-hl-ii-2"
+  ],
+  "2023": [
+   "nld-2023-hl-i-1-c",
+   "nld-2023-hl-i-4",
+   "nld-2023-hl-i-5",
+   "nld-2023-hl-i-6",
+   "nld-2023-hl-ii-1",
+   "nld-2023-hl-iii-1",
+   "nld-2023-hl-iii-2"
+  ],
+  "2024": [
+   "nld-2024-hl-i-5",
+   "nld-2024-hl-i-6",
+   "nld-2024-hl-ii-1",
+   "nld-2024-hl-iii-1",
+   "nld-2024-hl-iii-2"
+  ],
+  "2025": [
+   "nld-2025-hl-ii-1",
+   "nld-2025-hl-iii-1",
+   "nld-2025-hl-iii-2"
+  ],
+  "2026": [
+   "nld-2026-hl-i-1-a",
+   "nld-2026-hl-i-1-b",
+   "nld-2026-hl-i-1-c",
+   "nld-2026-hl-i-1-d",
+   "nld-2026-hl-i-1-e",
+   "nld-2026-hl-i-2",
+   "nld-2026-hl-i-3",
+   "nld-2026-hl-i-4",
+   "nld-2026-hl-i-5",
+   "nld-2026-hl-i-6",
+   "nld-2026-hl-ii-1",
+   "nld-2026-hl-iii-1",
+   "nld-2026-hl-iii-2"
+  ]
+ },
+ "maltese": {
+  "2018": [
+   "mlt-2018-hl-i-1-a",
+   "mlt-2018-hl-i-1-b",
+   "mlt-2018-hl-i-1-d",
+   "mlt-2018-hl-i-1-e",
+   "mlt-2018-hl-i-1-ċ",
+   "mlt-2018-hl-i-4",
+   "mlt-2018-hl-i-5",
+   "mlt-2018-hl-ii-1",
+   "mlt-2018-hl-iii-1",
+   "mlt-2018-hl-iii-2"
+  ],
+  "2019": [
+   "mlt-2019-hl-i-2",
+   "mlt-2019-hl-i-3",
+   "mlt-2019-hl-i-4",
+   "mlt-2019-hl-i-5",
+   "mlt-2019-hl-ii-1",
+   "mlt-2019-hl-iii-1",
+   "mlt-2019-hl-iii-2"
+  ],
+  "2022": [
+   "mlt-2022-hl-i-1-a",
+   "mlt-2022-hl-i-1-b",
+   "mlt-2022-hl-i-1-d",
+   "mlt-2022-hl-i-1-e",
+   "mlt-2022-hl-i-1-ċ",
+   "mlt-2022-hl-i-2",
+   "mlt-2022-hl-i-3",
+   "mlt-2022-hl-i-4",
+   "mlt-2022-hl-i-5",
+   "mlt-2022-hl-i-6",
+   "mlt-2022-hl-ii-1",
+   "mlt-2022-hl-ii-2"
+  ],
+  "2023": [
+   "mlt-2023-hl-i-1-d",
+   "mlt-2023-hl-i-5",
+   "mlt-2023-hl-i-6",
+   "mlt-2023-hl-ii-1",
+   "mlt-2023-hl-iii-1",
+   "mlt-2023-hl-iii-2"
+  ],
+  "2024": [
+   "mlt-2024-hl-i-1-b",
+   "mlt-2024-hl-i-1-d",
+   "mlt-2024-hl-i-1-e",
+   "mlt-2024-hl-i-3",
+   "mlt-2024-hl-i-4",
+   "mlt-2024-hl-ii-1",
+   "mlt-2024-hl-iii-1",
+   "mlt-2024-hl-iii-2"
+  ],
+  "2025": [
+   "mlt-2025-hl-i-5",
+   "mlt-2025-hl-ii-1",
+   "mlt-2025-hl-iii-1",
+   "mlt-2025-hl-iii-2"
+  ]
+ },
+ "romanian": {
+  "2010": [
+   "ron-2010-hl-i-1-a",
+   "ron-2010-hl-i-1-b",
+   "ron-2010-hl-i-1-c",
+   "ron-2010-hl-i-1-d",
+   "ron-2010-hl-i-1-e",
+   "ron-2010-hl-i-2",
+   "ron-2010-hl-i-3",
+   "ron-2010-hl-i-4",
+   "ron-2010-hl-i-5",
+   "ron-2010-hl-i-6",
+   "ron-2010-hl-ii-1",
+   "ron-2010-hl-iii-1",
+   "ron-2010-hl-iii-2"
+  ],
+  "2011": [
+   "ron-2011-hl-i-1-a",
+   "ron-2011-hl-i-1-b",
+   "ron-2011-hl-i-1-c",
+   "ron-2011-hl-i-1-d",
+   "ron-2011-hl-i-1-e",
+   "ron-2011-hl-i-2",
+   "ron-2011-hl-i-3",
+   "ron-2011-hl-i-4",
+   "ron-2011-hl-i-5",
+   "ron-2011-hl-i-6",
+   "ron-2011-hl-ii-1",
+   "ron-2011-hl-iii-1",
+   "ron-2011-hl-iii-2"
+  ],
+  "2012": [
+   "ron-2012-hl-i-1",
+   "ron-2012-hl-i-2",
+   "ron-2012-hl-i-3",
+   "ron-2012-hl-i-4",
+   "ron-2012-hl-i-5",
+   "ron-2012-hl-i-6",
+   "ron-2012-hl-ii-1",
+   "ron-2012-hl-iii-1",
+   "ron-2012-hl-iii-2"
+  ],
+  "2013": [
+   "ron-2013-hl-i-1",
+   "ron-2013-hl-i-2",
+   "ron-2013-hl-i-3",
+   "ron-2013-hl-i-4",
+   "ron-2013-hl-i-5",
+   "ron-2013-hl-i-6",
+   "ron-2013-hl-ii-1",
+   "ron-2013-hl-iii-1",
+   "ron-2013-hl-iii-2"
+  ],
+  "2014": [
+   "ron-2014-hl-i-1",
+   "ron-2014-hl-i-2",
+   "ron-2014-hl-i-3",
+   "ron-2014-hl-i-4",
+   "ron-2014-hl-i-5",
+   "ron-2014-hl-i-6",
+   "ron-2014-hl-ii-1",
+   "ron-2014-hl-iii-1",
+   "ron-2014-hl-iii-2"
+  ],
+  "2015": [
+   "ron-2015-hl-i-1",
+   "ron-2015-hl-i-2",
+   "ron-2015-hl-i-3",
+   "ron-2015-hl-i-4",
+   "ron-2015-hl-i-5",
+   "ron-2015-hl-i-6",
+   "ron-2015-hl-ii-1",
+   "ron-2015-hl-iii-1",
+   "ron-2015-hl-iii-2"
+  ],
+  "2016": [
+   "ron-2016-hl-i-1",
+   "ron-2016-hl-i-2",
+   "ron-2016-hl-i-3",
+   "ron-2016-hl-i-4",
+   "ron-2016-hl-i-5",
+   "ron-2016-hl-i-6",
+   "ron-2016-hl-ii-1",
+   "ron-2016-hl-iii-1",
+   "ron-2016-hl-iii-2"
+  ],
+  "2017": [
+   "ron-2017-hl-i-1",
+   "ron-2017-hl-i-2",
+   "ron-2017-hl-i-3",
+   "ron-2017-hl-i-4",
+   "ron-2017-hl-i-5",
+   "ron-2017-hl-i-6",
+   "ron-2017-hl-ii-1",
+   "ron-2017-hl-iii-1",
+   "ron-2017-hl-iii-2"
+  ],
+  "2018": [
+   "ron-2018-hl-i-1",
+   "ron-2018-hl-i-2",
+   "ron-2018-hl-i-3",
+   "ron-2018-hl-i-4",
+   "ron-2018-hl-i-5",
+   "ron-2018-hl-i-6",
+   "ron-2018-hl-ii-1",
+   "ron-2018-hl-iii-1",
+   "ron-2018-hl-iii-2"
+  ],
+  "2019": [
+   "ron-2019-hl-i-1-a",
+   "ron-2019-hl-i-1-b",
+   "ron-2019-hl-i-1-c",
+   "ron-2019-hl-i-1-d",
+   "ron-2019-hl-i-1-e",
+   "ron-2019-hl-i-2",
+   "ron-2019-hl-i-3",
+   "ron-2019-hl-i-4",
+   "ron-2019-hl-i-5",
+   "ron-2019-hl-i-6",
+   "ron-2019-hl-ii-1",
+   "ron-2019-hl-iii-1",
+   "ron-2019-hl-iii-2"
+  ],
+  "2020": [
+   "ron-2020-hl-i-1",
+   "ron-2020-hl-i-2",
+   "ron-2020-hl-i-3",
+   "ron-2020-hl-i-4",
+   "ron-2020-hl-i-5",
+   "ron-2020-hl-i-6",
+   "ron-2020-hl-ii-1",
+   "ron-2020-hl-iii-1",
+   "ron-2020-hl-iii-2"
+  ],
+  "2021": [
+   "ron-2021-hl-ii-1",
+   "ron-2021-hl-ii-2"
+  ],
+  "2022": [
+   "ron-2022-hl-ii-1",
+   "ron-2022-hl-ii-2"
+  ],
+  "2023": [
+   "ron-2023-hl-ii-1",
+   "ron-2023-hl-iii-1",
+   "ron-2023-hl-iii-2"
+  ],
+  "2024": [
+   "ron-2024-hl-ii-1",
+   "ron-2024-hl-iii-1",
+   "ron-2024-hl-iii-2"
+  ],
+  "2025": [
+   "ron-2025-hl-ii-1",
+   "ron-2025-hl-iii-1",
+   "ron-2025-hl-iii-2"
+  ],
+  "2026": [
+   "ron-2026-hl-i-1-a",
+   "ron-2026-hl-i-1-b",
+   "ron-2026-hl-i-1-c",
+   "ron-2026-hl-i-1-d",
+   "ron-2026-hl-i-1-e",
+   "ron-2026-hl-i-2",
+   "ron-2026-hl-i-3",
+   "ron-2026-hl-i-4",
+   "ron-2026-hl-i-5",
+   "ron-2026-hl-i-6",
+   "ron-2026-hl-ii-1",
+   "ron-2026-hl-iii-1",
+   "ron-2026-hl-iii-2"
+  ]
+ }
+}

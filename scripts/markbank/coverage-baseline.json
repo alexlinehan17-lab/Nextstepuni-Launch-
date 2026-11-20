@@ -109,7 +109,7 @@
   },
   "bulgarian": {
     "cards": 141,
-    "contentHash": "19d141129fe89fa4",
+    "contentHash": "88638f4591b1979f",
     "coveragePct": 100.0,
     "covered": 141,
     "excluded": 78,
@@ -258,19 +258,19 @@
     "refsHash": "0ffa06bee95d8270"
   },
   "dutch": {
-    "cards": 42,
-    "contentHash": "e9c0193ea33db730",
+    "cards": 219,
+    "contentHash": "a4d28c69e16b387b",
     "coveragePct": 100.0,
-    "covered": 42,
-    "excluded": 21,
-    "leaves": 63,
+    "covered": 219,
+    "excluded": 0,
+    "leaves": 219,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 5,
-      "hash": "b3a5be1d5053e77e"
+      "count": 17,
+      "hash": "454d40d79ee24093"
     },
-    "refsHash": "4bab4f79d784d94c"
+    "refsHash": "0ed1632758bc2776"
   },
   "economics": {
     "cards": 2297,
@@ -348,19 +348,19 @@
     "refsHash": "b09aab8adfbbe234"
   },
   "french": {
-    "cards": 2120,
-    "contentHash": "cb31f9d606064fb4",
-    "coveragePct": 100.0,
-    "covered": 1876,
+    "cards": 2286,
+    "contentHash": "a35d4dadbeb7c3bb",
+    "coveragePct": 95.9,
+    "covered": 2012,
     "excluded": 0,
-    "leaves": 1876,
-    "open": 0,
+    "leaves": 2097,
+    "open": 85,
     "orphans": 0,
     "papers": {
-      "count": 68,
-      "hash": "f1bfcddb8b7e2aff"
+      "count": 76,
+      "hash": "920510cefee5bb86"
     },
-    "refsHash": "9aa653ddbc92b175"
+    "refsHash": "a0bb78da2a557c0e"
   },
   "geography": {
     "cards": 4641,
@@ -543,19 +543,19 @@
     "refsHash": "15602894c57e4cf0"
   },
   "maltese": {
-    "cards": 29,
-    "contentHash": "30ba73ce24958549",
-    "coveragePct": 73.7,
-    "covered": 29,
-    "excluded": 27,
+    "cards": 76,
+    "contentHash": "f7eb421a1516a463",
+    "coveragePct": 100.0,
+    "covered": 76,
+    "excluded": 0,
     "leaves": 76,
-    "open": 20,
+    "open": 0,
     "orphans": 0,
     "papers": {
       "count": 6,
       "hash": "33e3be70d6c6fac1"
     },
-    "refsHash": "528ec21bd8e43b8b"
+    "refsHash": "9f1ba0db49381417"
   },
   "mandarin-chinese": {
     "cards": 201,
@@ -603,19 +603,19 @@
     "refsHash": "98497719950dbd78"
   },
   "music": {
-    "cards": 1046,
-    "contentHash": "8bea73c5994963ba",
-    "coveragePct": 100.0,
-    "covered": 1096,
+    "cards": 1708,
+    "contentHash": "8cc16882eb137a54",
+    "coveragePct": 95.4,
+    "covered": 1786,
     "excluded": 0,
-    "leaves": 1096,
-    "open": 0,
+    "leaves": 1873,
+    "open": 87,
     "orphans": 0,
     "papers": {
       "count": 90,
       "hash": "19ae47d97a6c3bd4"
     },
-    "refsHash": "7c417bd48f8a2bc8"
+    "refsHash": "b7b0eca0a10423ac"
   },
   "physical-education": {
     "cards": 772,
@@ -678,19 +678,19 @@
     "refsHash": "38694d71adeb29ca"
   },
   "portuguese": {
-    "cards": 173,
-    "contentHash": "1ad70be44482d80a",
+    "cards": 744,
+    "contentHash": "9970d654ff30decd",
     "coveragePct": 100.0,
-    "covered": 173,
-    "excluded": 329,
-    "leaves": 502,
+    "covered": 744,
+    "excluded": 0,
+    "leaves": 744,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 17,
-      "hash": "193d6de2ff2d009f"
+      "count": 31,
+      "hash": "1ed69ceed274dcd0"
     },
-    "refsHash": "c737847455bc4dc6"
+    "refsHash": "4c0d60523a88bcfe"
   },
   "religious-education": {
     "cards": 786,
@@ -708,23 +708,23 @@
     "refsHash": "3cd697c2c27583ae"
   },
   "romanian": {
-    "cards": 50,
-    "contentHash": "b9e5b706d1bb83fa",
+    "cards": 187,
+    "contentHash": "f4c89c5b1efba7d5",
     "coveragePct": 100.0,
-    "covered": 50,
-    "excluded": 13,
-    "leaves": 63,
+    "covered": 215,
+    "excluded": 0,
+    "leaves": 215,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 5,
-      "hash": "cb6697c0963fc51f"
+      "count": 17,
+      "hash": "c6a2348848034e00"
     },
-    "refsHash": "8dc6e8622a1ca48e"
+    "refsHash": "9fce2f7819b2c061"
   },
   "russian": {
     "cards": 1485,
-    "contentHash": "4496cd53e33943e0",
+    "contentHash": "bb43e347028b3a5f",
     "coveragePct": 100.0,
     "covered": 1489,
     "excluded": 0,
