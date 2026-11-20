@@ -348,19 +348,19 @@
     "refsHash": "b09aab8adfbbe234"
   },
   "french": {
-    "cards": 2231,
-    "contentHash": "48d217ce711e2d5f",
-    "coveragePct": 96.8,
-    "covered": 1973,
+    "cards": 2284,
+    "contentHash": "38de817d43cfa290",
+    "coveragePct": 95.9,
+    "covered": 2012,
     "excluded": 0,
-    "leaves": 2038,
-    "open": 65,
+    "leaves": 2097,
+    "open": 85,
     "orphans": 0,
     "papers": {
       "count": 76,
       "hash": "920510cefee5bb86"
     },
-    "refsHash": "b10440a86332a2a4"
+    "refsHash": "e7ac7c6d3e15f47b"
   },
   "geography": {
     "cards": 4641,

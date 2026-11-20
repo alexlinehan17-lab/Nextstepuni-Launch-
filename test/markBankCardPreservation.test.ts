@@ -122,6 +122,7 @@ import { FRENCH_WRITING_CARDS } from '../components/MarkBank/cards/french/writin
 import { FRENCH_LISTENING_CARDS } from '../components/MarkBank/cards/french/listening';
 import { FRENCH_CLOZE_CARDS } from '../components/MarkBank/cards/french/cloze';
 import { FRENCH_READING_CARDS } from '../components/MarkBank/cards/french/reading';
+import { FRENCH_DEFERRED_CARDS } from '../components/MarkBank/cards/french/deferred';
 import { CARDS as GERMAN_HIGHER } from '../components/MarkBank/cards/german/higher';
 import { CARDS as GERMAN_ORDINARY } from '../components/MarkBank/cards/german/ordinary';
 import { CARDS as SPANISH_HIGHER } from '../components/MarkBank/cards/spanish/higher';
@@ -1554,6 +1555,8 @@ const frenchAdditionIds = new Set([
   // Reviewed corrections retain legacy IDs and remain in the frozen hash.
   ...FRENCH_READING_CARDS.filter(card => card.id.includes('-reading-')),
   ...FRENCH_CLOZE_CARDS, ...FRENCH_LISTENING_CARDS,
+  // The deferred sittings' reviewed cards (2022 and 2023): new, never a frozen identity.
+  ...FRENCH_DEFERRED_CARDS,
 ].map(card => card.id));
 /* Economics keeps its 697 pre-review IDs frozen (383 Higher + 314 Ordinary, the
  * original identity hashes above). The paper-by-paper physical review

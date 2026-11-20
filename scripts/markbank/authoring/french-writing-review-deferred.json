@@ -1,7 +1,7 @@
 {
   "status": "deferred-sittings-review",
   "reviewedAt": "2026-11-20",
-  "cards": 26,
+  "cards": 36,
   "review": [
     {
       "year": 2022,
@@ -88,6 +88,57 @@
     },
     {
       "year": 2023,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 14,
+      "schemePage": 12
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 14,
+      "schemePage": 13
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 16,
+      "schemePage": 14
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 5,
+      "cards": 1,
+      "paperPage": 16,
+      "schemePage": 15
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 3,
+      "poolSize": 4,
+      "cards": 1,
+      "separatelyMarkedFields": 5,
+      "paperPage": 13,
+      "schemePage": 11
+    },
+    {
+      "year": 2023,
       "level": "higher",
       "question": "B",
       "routes": 8,
@@ -109,6 +160,14 @@
     {
       "source": "examiner-reports/french/schemes/2023-hl-deferred.pdf",
       "sha256": "ce881b053d55bdd448ca9b673ee172393ac797354d86b64eca5df285c814ed37"
+    },
+    {
+      "source": "examiner-reports/french/papers/2023-ol-deferred-000-paper.pdf",
+      "sha256": "242d04a7b175ed283339813b0202a7d64b858e8730292182cfd5585b22bde20d"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2023-ol-deferred.pdf",
+      "sha256": "5688e07cb7ae8022f1cc96c4521919bd75b15564a3471fb7cdab62f3135cbdb7"
     }
   ],
   "examSelectionPolicy": "Choosing two separately marked examination questions does not create one combined practice card. Each task is independently practicable at its own tariff."

@@ -1,7 +1,7 @@
 {
   "status": "deferred-sittings-review",
   "reviewedAt": "2026-11-20",
-  "expectedCards": 75,
+  "expectedCards": 108,
   "papers": [
     {
       "year": 2022,
@@ -215,6 +215,79 @@
           ]
         }
       }
+    },
+    {
+      "year": 2023,
+      "level": "ol",
+      "sitting": "deferred",
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2023-ol-deferred-000-paper.pdf",
+          "sha256": "242d04a7b175ed283339813b0202a7d64b858e8730292182cfd5585b22bde20d"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2023-ol-deferred.pdf",
+          "sha256": "5688e07cb7ae8022f1cc96c4521919bd75b15564a3471fb7cdab62f3135cbdb7"
+        }
+      ],
+      "tariffDecisions": {
+        "A1-Q7": {
+          "printedHeadMarks": 4,
+          "perPointMarks": 4,
+          "requiredPoints": 2,
+          "schemePage": 4,
+          "reason": "Paper page 5 asks “(Two details)” with two answer lines. Scheme page 4 prints the head “7 … 4 Marks” over two answers, “(Old) cookery books … 4 Marks” and “Cookery programmes … 4 Marks”. Two 4-mark details reconcile Q.1 to the 40 marks printed on its head.",
+          "sourceNote": "The scheme prints this head as 4 marks but pays 4 marks for each of the two required details; this card is scored out of 8 so that Q.1 adds up to its printed 40 marks."
+        },
+        "A2-Q6": {
+          "printedHeadMarks": 8,
+          "perPointMarks": 4,
+          "requiredPoints": 1,
+          "schemePage": 5,
+          "reason": "Paper page 7 asks one thing (how Madame Loyseau recognises Antoine’s talent) with one answer line. Scheme page 5 prints the head “6 … 4+4 Marks” over a single answer, “She hears him singing … 4 Marks”. One 4-mark answer reconciles Q.2 to its printed 40 marks.",
+          "sourceNote": "The scheme prints this head as 4+4 marks over a single 4-mark answer; this card is scored out of 4 so that Q.2 adds up to its printed 40 marks."
+        },
+        "A4-Q6": {
+          "printedHeadMarks": 8,
+          "perPointMarks": 4,
+          "requiredPoints": 1,
+          "schemePage": 9,
+          "reason": "Paper page 11 asks for “l’inconvénient” (one) with one answer line. Scheme page 9 prints the head “6 … 4+4 Marks” over a single answer, “(Cela attire) beaucoup d’ennemis … 4 Marks”. One 4-mark answer reconciles Q.4 to its printed 40 marks.",
+          "sourceNote": "The scheme prints this head as 4+4 marks over a single 4-mark answer; this card is scored out of 4 so that Q.4 adds up to its printed 40 marks."
+        }
+      },
+      "pricedBoundaries": [
+        "1:1:4",
+        "1:2:4",
+        "1:3:4",
+        "1:4:8",
+        "1:5:4",
+        "1:6:4",
+        "1:7:8",
+        "1:8:4",
+        "2:1a-d:16",
+        "2:2:4",
+        "2:3:8",
+        "2:4:4",
+        "2:5:4",
+        "2:6:4",
+        "3:1:4",
+        "3:2:4",
+        "3:3:4",
+        "3:4:4",
+        "3:5:4",
+        "3:6:8",
+        "3:7:4",
+        "3:8:8",
+        "4:1:4",
+        "4:2:4",
+        "4:3:4",
+        "4:4:8",
+        "4:5:4",
+        "4:6:4",
+        "4:7:4",
+        "4:8:8"
+      ]
     }
   ]
 }

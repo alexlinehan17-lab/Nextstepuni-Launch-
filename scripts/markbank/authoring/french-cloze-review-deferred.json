@@ -1,7 +1,7 @@
 {
   "status": "deferred-sittings-review",
   "reviewedAt": "2026-11-20",
-  "expectedCards": 10,
+  "expectedCards": 20,
   "papers": [
     {
       "year": 2022,
@@ -29,6 +29,37 @@
           "sha256": "fbf3f622a345ec69bc9e1e3decf61739d803bab0b97fd7e7b26f34f6b42a111d"
         }
       ]
+    },
+    {
+      "year": 2023,
+      "paperPage": 12,
+      "schemePage": 10,
+      "answers": [
+        "ans",
+        "mardi",
+        "sœur",
+        "école",
+        "quand",
+        "au",
+        "devenir",
+        "la",
+        "grandes",
+        "en"
+      ],
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2023-ol-deferred-000-paper.pdf",
+          "sha256": "242d04a7b175ed283339813b0202a7d64b858e8730292182cfd5585b22bde20d"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2023-ol-deferred.pdf",
+          "sha256": "5688e07cb7ae8022f1cc96c4521919bd75b15564a3471fb7cdab62f3135cbdb7"
+        }
+      ],
+      "answerListEntries": {
+        "3": "3. soeur"
+      },
+      "reviewNote": "The paper’s word bank prints “sœur”; the scheme’s numbered answer list prints “3. soeur” and its completed letter “ma sœur”. The card shows the list entry as printed."
     }
   ]
 }

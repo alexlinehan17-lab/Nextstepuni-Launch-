@@ -6712,5 +6712,2647 @@
       "humanReviewedBy": "agent-verified",
       "humanReviewedAt": "2026-11-20"
     }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a1-q1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A1 Q1 — Deferred sitting",
+    "questionText": "What has been Vincent’s dream since childhood? (Section 1)",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• To work as a baker — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a1-q2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A1 Q2 — Deferred sitting",
+    "questionText": "What disadvantage of the job does he mention? (Section 1)",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• He has to get up very early in the morning / at 4 a.m — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a1-q3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A1 Q3 — Deferred sitting",
+    "questionText": "Where in Marseille is Gabrielle’s restaurant situated? (Section 2)",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• Near the bus station — 4 Marks",
+        "- Near the station — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            2,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a1-q4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A1 Q4 — Deferred sitting",
+    "questionText": "What is Gabrielle’s personal style of cooking? (Two details) (Section 2)",
+    "totalMarks": 8,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• Very colourful dishes — 4 Marks",
+        "• Healthy dishes with lots of vegetables — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            4,
+            8
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a1-q5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A1 Q5 — Deferred sitting",
+    "questionText": "When did Joachim go camping with the scouts one year? (Section 3)",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• At the start of the Easter holidays — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a1-q6",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A1 Q6 — Deferred sitting",
+    "questionText": "Name one fruit Joachim mentions. (Section 3)",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• Lemons / Strawberries/ Cherries — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a1-q7",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A1 Q7 — Deferred sitting",
+    "questionText": "Where does Sandrine find the recipes that inspire her? (Two",
+    "totalMarks": 8,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• (Old) cookery books — 4 Marks",
+        "• Cookery programmes — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            4,
+            8
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "The scheme prints this head as 4 marks but pays 4 marks for each of the two required details; this card is scored out of 8 so that Q.1 adds up to its printed 40 marks.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a1-q8",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A1 Q8 — Deferred sitting",
+    "questionText": "What do her customers leave with at the end of the day? (Section 4)",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 1",
+      "title": "Reading Comprehension 1",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.4; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 4,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• A dish that they made themselves — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a2-q1-a",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A2 Q1(a) — Deferred sitting",
+    "questionText": "Write the name in French of the film which refers to each of the following:\n\nsomeone who is ill",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• Someone who is ill – Mes Frères et Moi — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a2-q1-b",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A2 Q1(b) — Deferred sitting",
+    "questionText": "Write the name in French of the film which refers to each of the following:\n\nsomeone who wants to change jobs",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• Someone who wants to change jobs – La Très Très Grande Classe.4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a2-q1-c",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A2 Q1(c) — Deferred sitting",
+    "questionText": "Write the name in French of the film which refers to each of the following:\n\nsomeone who has two children",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• Someone who has two children– A Plein Temps — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a2-q1-d",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A2 Q1(d) — Deferred sitting",
+    "questionText": "Write the name in French of the film which refers to each of the following:\n\nsomeone who lives in the suburbs",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• Someone who lives in the suburbs -Ténor — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a2-q2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A2 Q2 — Deferred sitting",
+    "questionText": "In La Guerre des Lulus, to which country do the friends decide to travel?",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• Switzerland — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a2-q3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A2 Q3 — Deferred sitting",
+    "questionText": "In À Plein Temps, name two things which Julie worries about each day.",
+    "totalMarks": 8,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• Will she succeed in catching her train — 4 Marks",
+        "• Will she arrive at school on time — 4 Marks",
+        "• Will she be late for work — 4 Marks",
+        "- Will she arrive at school — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            2,
+            4,
+            6,
+            8
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a2-q4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A2 Q4 — Deferred sitting",
+    "questionText": "In Mes Frères et Moi, what was Nicolas doing when he first met Sarah?",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• Sailing — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a2-q5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A2 Q5 — Deferred sitting",
+    "questionText": "In La Très Très Grande Classe, why is Sofia unhappy with her job?",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• A lot of the students are indisciplined/ lazy — 4 Marks",
+        "- The students are indisciplined/ lazy — 3 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a2-q6",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A2 Q6 — Deferred sitting",
+    "questionText": "In Ténor, how does Madame Loyseau recognise Antoine’s talent?",
+    "totalMarks": 4,
+    "topicId": "french-5-3",
+    "conceptId": "french-reading-french-5-3",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 2",
+      "title": "Reading Comprehension 2",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.5; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 5,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning."
+      ],
+      "answerGuide": [
+        "• She hears him singing — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "The scheme prints this head as 4+4 marks over a single 4-mark answer; this card is scored out of 4 so that Q.2 adds up to its printed 40 marks.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a3-q1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A3 Q1 — Deferred sitting",
+    "questionText": "Combien de frères et de sœurs a Xenia ? (Section 1)",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• (Elle a) dix frères et soeurs — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a3-q2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A3 Q2 — Deferred sitting",
+    "questionText": "Qu’est‐ce qui réveille Xenia le matin ? (Section 2)",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• Les cris des enfants — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a3-q3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A3 Q3 — Deferred sitting",
+    "questionText": "Relevez le détail qui montre qu’il y a beaucoup de nourriture dans la maison. (Section 2)",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• Cinq frigos toujours remplis — 4 Marks",
+        "• Il y a toujours du choix — 4 Marks",
+        "• Ma mère fait les achats deux fois par semaine — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a3-q4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A3 Q4 — Deferred sitting",
+    "questionText": "Quand est‐ce que Xenia se retrouve seule le matin ? (Section 2)",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• Quand elle part au lycée — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a3-q5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A3 Q5 — Deferred sitting",
+    "questionText": "Trouvez dans la troisième section un adjectif au féminin singulier.",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• Contente / bonne / grande — 4 Marks",
+        "Note:",
+        "➢ Minus 1 mark for each extraneous element"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a3-q6",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A3 Q6 — Deferred sitting",
+    "questionText": "Quelles sont les deux choses que Xenia fait après le dîner ? (Section 3)",
+    "totalMarks": 8,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.6; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 6,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• Elle range la cuisine — 4 Marks",
+        "• Elle aide les plus jeunes avec leurs devoirs — 4 Marks",
+        "- Les tâches ménagères — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a3-q7",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A3 Q7 — Deferred sitting",
+    "questionText": "D’après la quatrième section, Xenia\nne s’entend pas avec ses frères et sœurs\npréférerait habiter seule dans un appartement\nn’aime pas du tout l’ambiance dans la maison\naimerait avoir une grande famille dans l’avenir",
+    "totalMarks": 4,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.7; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 7,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Answer multiple‐choice questions by putting a tick (✓) in the relevant box.",
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• aimerait avoir une grande famille dans l’avenir (quatrième réponse) — 4 Marks",
+        "Note:",
+        "➢ If candidate clearly identifies / highlights correct answer, without using a tick = 4 Marks.",
+        "➢ If more than one answer offered = 0 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "questionChoices": [
+      "ne s’entend pas avec ses frères et sœurs",
+      "préférerait habiter seule dans un appartement",
+      "n’aime pas du tout l’ambiance dans la maison",
+      "aimerait avoir une grande famille dans l’avenir"
+    ]
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a3-q8",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A3 Q8 — Deferred sitting",
+    "questionText": "The daily routine in Xenia’s family is complicated. Do you agree? Answer in English giving TWO points and referring to the text.",
+    "totalMarks": 8,
+    "topicId": "french-5-0",
+    "conceptId": "french-reading-french-5-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 3",
+      "title": "Reading Comprehension 3",
+      "pages": [
+        8,
+        9
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.7; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 7,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning.",
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "Accept any valid point which can be substantiated from the text. Award 2 marks if answer is partially correct.",
+        "Any two of: YES:",
+        "• Her mum must provide vast quantities of food in the house",
+        "• The bathroom routine is hectic in the morning",
+        "• The house is full of rows and tears NO:",
+        "• Her mum has all the food organised in five fridges",
+        "• The household is very well organised with everyone having their own designated chores",
+        "• The household is full of laughter and joy",
+        "Etc., etc."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a4-q1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A4 Q1 — Deferred sitting",
+    "questionText": "Quels vêtements portait Philippe Kleber ? (Section 1)",
+    "totalMarks": 4,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.8; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• Il portait un costume bleu-marine avec une cravate rouge — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a4-q2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A4 Q2 — Deferred sitting",
+    "questionText": "Qu’est‐ce qui indique que Monsieur Kleber était de bonne humeur ? (Section 1)",
+    "totalMarks": 4,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.8; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• Il avait un grand sourire au visage — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a4-q3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A4 Q3 — Deferred sitting",
+    "questionText": "Dans la grande pièce, où est‐ce que Monsieur Kleber s’est assis ? (Section 2)",
+    "totalMarks": 4,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.8; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• Il s’est assis dans un fauteuil derrière son bureau — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a4-q4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A4 Q4 — Deferred sitting",
+    "questionText": "Citez deux expressions qui montrent que Bruno n’était pas à son aise. (Section 2)",
+    "totalMarks": 8,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.8; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "Accept any two of the following:",
+        "• J’étais déterminé à ne pas me montrer stressé — 4 Marks",
+        "• Mais mon cœur battait très fort — 4 Marks",
+        "• J’avais la bouche sèche — 4 Marks",
+        "• Je me sentais nerveux — 4 Marks",
+        "- Stressé — 2 Marks",
+        "- Nerveux — 2 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a4-q5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A4 Q5 — Deferred sitting",
+    "questionText": "Relevez une phrase qui montre que Bruno avait eu des problèmes à l’école. (Section 3)",
+    "totalMarks": 4,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.8; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 8,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• Et vous avez été renvoyé de trois écoles — 4 Marks",
+        "• Vous étiez un élève assez turbulent, j’imagine ? — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a4-q6",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A4 Q6 — Deferred sitting",
+    "questionText": "Selon Monsieur Kleber, quel est l’inconvénient d’être riche ? (Section 3)",
+    "totalMarks": 4,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.9; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• (Cela attire) beaucoup d’ennemis — 4 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "The scheme prints this head as 4+4 marks over a single 4-mark answer; this card is scored out of 4 so that Q.4 adds up to its printed 40 marks.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a4-q7",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A4 Q7 — Deferred sitting",
+    "questionText": "D’après la quatrième section, Camille\nest très timide\nest en danger\nne va pas à l’école\nest une amie de Bruno",
+    "totalMarks": 4,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.9; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Answer multiple‐choice questions by putting a tick (✓) in the relevant box.",
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "• est en danger (deuxième réponse) — 4 Marks",
+        "Note:",
+        "➢ If candidate clearly identifies / highlights correct answer, without using a tick = 4 Marks.",
+        "➢ If more than one answer offered = 0 Marks"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            4
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Answer in French.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "questionChoices": [
+      "est très timide",
+      "est en danger",
+      "ne va pas à l’école",
+      "est une amie de Bruno"
+    ]
+  },
+  {
+    "id": "fr-2023-ol-deferred-reading-a4-q8",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "A",
+    "questionRef": "2023 OL Section A4 Q8 — Deferred sitting",
+    "questionText": "Monsieur Kleber and Bruno belong to different worlds. Do you agree? Answer in English, giving TWO points and referring to the text.",
+    "totalMarks": 8,
+    "topicId": "french-5-1",
+    "conceptId": "french-reading-french-5-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Reading Comprehension 4",
+      "title": "Reading Comprehension 4",
+      "pages": [
+        10,
+        11
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the original passage and return to this task."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.9; general rules p.3 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 9,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais.",
+        "Candidates are not required to produce the exact wording of the solutions proposed in this marking scheme for Q.1, Q.2, Q.3 (8), Q.4 (8), and the Listening Comprehension Test.",
+        "They can obtain full marks if they convey the equivalent meaning.",
+        "Penalise extraneous material to a maximum of 2 marks.",
+        "N.B. In questions 1 - 7, if answered through English / Irish – allow half marks only.",
+        "Where manipulation is required, do not penalise mistakes in grammar.",
+        "Where manipulation is required and a quotation is given, deduct 1 mark."
+      ],
+      "answerGuide": [
+        "Accept any valid point which can be substantiated from the text. Award 2 Marks if answer is partially correct. 1. Monsieur Kleber:",
+        "• He was rich, he wore a gold watch",
+        "• He was well dressed in a suit and tie",
+        "• He was a business man",
+        "Etc., etc 2. Bruno:",
+        "• He wasn’t rich, he earned 8 time less than the salary he was now being offered",
+        "• He was wearing a jeans and an old jumper",
+        "• He was a mechanic",
+        "Etc., etc"
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidance": []
+        }
+      ],
+      "markingGuideNote": "In this Marking Scheme, a bullet point indicates an answer which is worth full marks, a dash indicates an answer which is worth partial marks or 0 marks, and round brackets indicate extraneous material which is not penalised.\nIn the case of marking schemes that include model solutions or answers, it should be noted that these are not intended to be exhaustive. Variations and alternatives may also be acceptable.",
+      "practiceNotes": [
+        "Give 2 distinct points. Each earns at most 4 marks; do not score the same point twice.",
+        "Use the accepted answers and partial-credit rules above, then apply any stated deductions."
+      ]
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-tariff-boundary",
+        "complete-partial-credit",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    }
   }
 ]

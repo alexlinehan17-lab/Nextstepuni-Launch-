@@ -5229,5 +5229,1390 @@
         "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
       ]
     }
+  },
+  {
+    "id": "fr-2023-ol-deferred-writing-b1b-field-1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2023 OL Section B Q1(b) · field 1 — Deferred sitting",
+    "questionText": "Vous vous appelez Kevin/Anne Corcoran. Vous désirez travailler dans le supermarché Carrefour à Toulouse. Remplissez le formulaire suivant.\n\n1. Nom :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        13
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Nom",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Surname – accept any reasonable surname"
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-writing-b1b-field-2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2023 OL Section B Q1(b) · field 2 — Deferred sitting",
+    "questionText": "Vous vous appelez Kevin/Anne Corcoran. Vous désirez travailler dans le supermarché Carrefour à Toulouse. Remplissez le formulaire suivant.\n\n2. Prénom :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        13
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Prénom",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "First name – accept any reasonable first name"
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-writing-b1b-field-3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2023 OL Section B Q1(b) · field 3 — Deferred sitting",
+    "questionText": "Vous vous appelez Kevin/Anne Corcoran. Vous désirez travailler dans le supermarché Carrefour à Toulouse. Remplissez le formulaire suivant.\n\n3. Âge :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        13
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Âge",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Age– accept any reasonable age"
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-writing-b1b-field-4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2023 OL Section B Q1(b) · field 4 — Deferred sitting",
+    "questionText": "Vous vous appelez Kevin/Anne Corcoran. Vous désirez travailler dans le supermarché Carrefour à Toulouse. Remplissez le formulaire suivant.\n\n4. Nationalité :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        13
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Nationalité",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Nationality– accept any reasonable nationality"
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-writing-b1b-field-5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2023 OL Section B Q1(b) · field 5 — Deferred sitting",
+    "questionText": "Vous vous appelez Kevin/Anne Corcoran. Vous désirez travailler dans le supermarché Carrefour à Toulouse. Remplissez le formulaire suivant.\n\n5. Lieu de naissance :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        13
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Lieu de naissance",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Place of birth – accept any reasonable country"
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-writing-b1b-route-6789",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2023 OL Section B Q1(b) · points 6, 7, 8, 9 — Deferred sitting",
+    "questionText": "Vous vous appelez Kevin/Anne Corcoran. Vous désirez travailler dans le supermarché Carrefour à Toulouse. Remplissez le formulaire suivant.\n\n6. Donnez une brève description de votre personnalité.\n7. Quel est votre niveau de français ?\n8. Pourquoi voulez‐vous travailler en France ?\n9. Avez‐vous déjà travaillé dans un supermarché ?",
+    "totalMarks": 20,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        13
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, p.11 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 11,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Pour 6, 7, 8 et 9 : Choisissez trois questions et répondez par des phrases complètes."
+      ],
+      "criteria": [
+        {
+          "id": "communication-first",
+          "label": "Communication · first question you chose",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "6. Donnez une brève description de votre personnalité.",
+            "7. Quel est votre niveau de français ?",
+            "8. Pourquoi voulez‐vous travailler en France ?",
+            "9. Avez‐vous déjà travaillé dans un supermarché ?",
+            "1st Category 0 – 2 - message not clear.",
+            "2nd Category 3 – 4 - message clear."
+          ]
+        },
+        {
+          "id": "communication-second",
+          "label": "Communication · second question you chose",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "6. Donnez une brève description de votre personnalité.",
+            "7. Quel est votre niveau de français ?",
+            "8. Pourquoi voulez‐vous travailler en France ?",
+            "9. Avez‐vous déjà travaillé dans un supermarché ?",
+            "1st Category 0 – 2 - message not clear.",
+            "2nd Category 3 – 4 - message clear."
+          ]
+        },
+        {
+          "id": "communication-third",
+          "label": "Communication · third question you chose",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "6. Donnez une brève description de votre personnalité.",
+            "7. Quel est votre niveau de français ?",
+            "8. Pourquoi voulez‐vous travailler en France ?",
+            "9. Avez‐vous déjà travaillé dans un supermarché ?",
+            "1st Category 0 – 2 - message not clear.",
+            "2nd Category 3 – 4 - message clear."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                6,
+                7,
+                8
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly",
+                "some sense of register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": [
+                "very poor to poor use of vocabulary of vocabulary",
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ],
+          "requiresAttempt": true
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Choose any three of the four printed questions. Each Communication mark is for one question you chose; one question cannot earn two of them.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-writing-b2a",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2023 OL Section B Q2(a) — Deferred sitting",
+    "questionText": "Leave the following message in French for your friend Henri/Claire with whom you are staying in Lille. In the message include three of the following five points:\n\n‐ You met Louis at the swimming pool this afternoon.\n‐ He cannot go to the concert tomorrow.\n‐ He will phone you at 9 p.m.\n‐ You have gone to have dinner in a small restaurant.\n‐ You will be home late tonight.",
+    "totalMarks": 30,
+    "topicId": "french-6-2",
+    "conceptId": "french-writing-french-6-2",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B2A",
+      "title": "Printed writing task",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, p.12 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 12,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Rédigez vos réponses en français.",
+        "In the message include three of the following five points:",
+        "Ignore layout."
+      ],
+      "criteria": [
+        {
+          "id": "communication-first",
+          "label": "Communication · first point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You met Louis at the swimming pool this afternoon. — You met Louis at the pool/ this afternoon.",
+            "He cannot go to the concert tomorrow. — He cannot go to the concert/ tomorrow.",
+            "He will phone you at 9 p.m. — He will phone you/at 9pm.",
+            "You have gone to have dinner in a small restaurant. — You have gone to have dinner/in a small restaurant.",
+            "You will be home late tonight. — You will be home late/tonight.",
+            "Two parts required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "communication-second",
+          "label": "Communication · second point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You met Louis at the swimming pool this afternoon. — You met Louis at the pool/ this afternoon.",
+            "He cannot go to the concert tomorrow. — He cannot go to the concert/ tomorrow.",
+            "He will phone you at 9 p.m. — He will phone you/at 9pm.",
+            "You have gone to have dinner in a small restaurant. — You have gone to have dinner/in a small restaurant.",
+            "You will be home late tonight. — You will be home late/tonight.",
+            "Two parts required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "communication-third",
+          "label": "Communication · third point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You met Louis at the swimming pool this afternoon. — You met Louis at the pool/ this afternoon.",
+            "He cannot go to the concert tomorrow. — He cannot go to the concert/ tomorrow.",
+            "He will phone you at 9 p.m. — He will phone you/at 9pm.",
+            "You have gone to have dinner in a small restaurant. — You have gone to have dinner/in a small restaurant.",
+            "You will be home late tonight. — You will be home late/tonight.",
+            "Two parts required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly",
+                "some sense of register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "very poor to poor use of vocabulary of vocabulary",
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Choose any three of the five printed points. Each Communication mark is for one point you chose; one point cannot earn two of them.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-writing-b2b",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2023 OL Section B Q2(b) — Deferred sitting",
+    "questionText": "You are on holidays in Antibes. Write a postcard in French to your friend Sabine/Hugo in which you include three of the following five points:\n\n‐ You are on holidays in Antibes with your sister.\n‐ Yesterday you bought some presents in town.\n‐ You hope to visit Grasse next week.\n‐ You will take the train to Nice on Wednesday.\n‐ You spoke French in a bank this morning.",
+    "totalMarks": 30,
+    "topicId": "french-6-4",
+    "conceptId": "french-writing-french-6-4",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B2B",
+      "title": "Printed writing task",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, p.13 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 13,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Rédigez vos réponses en français.",
+        "Write a postcard in French to your friend Sabine/Hugo in which you include three of the following five points:",
+        "Ignore layout."
+      ],
+      "criteria": [
+        {
+          "id": "communication-first",
+          "label": "Communication · first point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You are on holidays in Antibes with your sister. — You are on holidays in Antibes/ with your sister.",
+            "Yesterday you bought some presents in town. — Yesterday you bought some presents/ in town.",
+            "You hope to visit Grasse next week. — You hope to visit Grasse/ nest week.",
+            "You will take the train to Nice on Wednesday. — You will take the train to Nice/ on Wednesday.",
+            "You spoke French in a bank this morning. — You spike French in a bank/ this morning.",
+            "Two parts required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "communication-second",
+          "label": "Communication · second point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You are on holidays in Antibes with your sister. — You are on holidays in Antibes/ with your sister.",
+            "Yesterday you bought some presents in town. — Yesterday you bought some presents/ in town.",
+            "You hope to visit Grasse next week. — You hope to visit Grasse/ nest week.",
+            "You will take the train to Nice on Wednesday. — You will take the train to Nice/ on Wednesday.",
+            "You spoke French in a bank this morning. — You spike French in a bank/ this morning.",
+            "Two parts required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "communication-third",
+          "label": "Communication · third point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You are on holidays in Antibes with your sister. — You are on holidays in Antibes/ with your sister.",
+            "Yesterday you bought some presents in town. — Yesterday you bought some presents/ in town.",
+            "You hope to visit Grasse next week. — You hope to visit Grasse/ nest week.",
+            "You will take the train to Nice on Wednesday. — You will take the train to Nice/ on Wednesday.",
+            "You spoke French in a bank this morning. — You spike French in a bank/ this morning.",
+            "Two parts required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly",
+                "some sense of register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "very poor to poor use of vocabulary of vocabulary",
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Source discrepancy: the marking scheme prints “nest week” in its answer to the third point and “You spike French” in its answer to the fifth, where the paper prints “next week” and “You spoke French”. The scheme’s answers are shown as printed.",
+        "Choose any three of the five printed points. Each Communication mark is for one point you chose; one point cannot earn two of them.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-writing-b3a",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2023 OL Section B Q3(a) — Deferred sitting",
+    "questionText": "You have just spent an enjoyable day. Note three of the following five points in French in your diary:\n\n- You went cycling near the river this morning.\n- The countryside is beautiful in summer.\n- At 3 p.m. you went to the cinema with a friend.\n- You are very tired now.\n‐ You will stay at home this evening.",
+    "totalMarks": 30,
+    "topicId": "french-6-0",
+    "conceptId": "french-writing-french-6-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B3A",
+      "title": "Printed writing task",
+      "pages": [
+        16
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, p.14 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 14,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Rédigez vos réponses en français.",
+        "Note three of the following five points in French in your diary:",
+        "No marks for layout."
+      ],
+      "criteria": [
+        {
+          "id": "communication-first",
+          "label": "Communication · first point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You went cycling near the river this morning. — You went cycling near the river/ this morning.",
+            "The countryside is beautiful in summer. — The countryside is beautiful/ in summer.",
+            "At 3 p.m. you went to the cinema with a friend. — At 3 p.m. you went to the cinema/ with a friend.",
+            "You are very tired now. — You are very tired/ now.",
+            "You will stay at home this evening. — You will stay at home/ this evening.",
+            "Two points required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "communication-second",
+          "label": "Communication · second point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You went cycling near the river this morning. — You went cycling near the river/ this morning.",
+            "The countryside is beautiful in summer. — The countryside is beautiful/ in summer.",
+            "At 3 p.m. you went to the cinema with a friend. — At 3 p.m. you went to the cinema/ with a friend.",
+            "You are very tired now. — You are very tired/ now.",
+            "You will stay at home this evening. — You will stay at home/ this evening.",
+            "Two points required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "communication-third",
+          "label": "Communication · third point you chose",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You went cycling near the river this morning. — You went cycling near the river/ this morning.",
+            "The countryside is beautiful in summer. — The countryside is beautiful/ in summer.",
+            "At 3 p.m. you went to the cinema with a friend. — At 3 p.m. you went to the cinema/ with a friend.",
+            "You are very tired now. — You are very tired/ now.",
+            "You will stay at home this evening. — You will stay at home/ this evening.",
+            "Two points required for 5 marks (3 + 2)",
+            "1st Category - message not clear.",
+            "2nd Category - message clear."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly",
+                "some sense of register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "very poor to poor use of vocabulary of vocabulary",
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Choose any three of the five printed points. Each Communication mark is for one point you chose; one point cannot earn two of them.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
+  },
+  {
+    "id": "fr-2023-ol-deferred-writing-b3b",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2023,
+    "paperFileid": "LC010GLP000BV-deferred",
+    "section": "B",
+    "questionRef": "2023 OL Section B Q3(b) — Deferred sitting",
+    "questionText": "Write a formal letter in French to L’Office de Tourisme, 1 rue Jean Jaurès, 74000 Annecy, France. In the letter include three of the following five points:\n\n‐ You hope to spend a week in France in July.\n‐ You are looking for an apartment near the lake.\n- You intend to go swimming every day.\n- You would like a list of activities in the area.\n‐ Ask if you can hire a boat for a day.\n\nYou are Robert / Gráinne Brady, 25 Monaleen, Mallow, Co. Cork.",
+    "totalMarks": 30,
+    "topicId": "french-6-1",
+    "conceptId": "french-writing-french-6-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B3B",
+      "title": "Printed writing task",
+      "pages": [
+        16
+      ],
+      "attribution": "SEC French 2023 Ordinary Level deferred examination — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2023 Ordinary Level marking scheme, deferred examination, pp.15, 20 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV-deferred.pdf",
+      "p": 15,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-11-20"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Rédigez vos réponses en français.",
+        "In the letter include three of the following five points:"
+      ],
+      "criteria": [
+        {
+          "id": "format-top",
+          "label": "Format · top of page",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [
+            "Top of page - 3 marks (France not necessary in address)",
+            "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
+            "City / town / village & date (Monaleen, le 18 mai 2023) in top right corner or underneath.",
+            "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+            "Include “Irlande”, accept “Ireland” / “Éire”.",
+            "1 mistake - ignore.",
+            "2 mistakes - deduct 1 mark.",
+            "3 mistakes - deduct 2 marks.",
+            "If candidate has general layout of Top of Page or Closing Formula correct, despite numerous mistakes - award one mark."
+          ]
+        },
+        {
+          "id": "format-close",
+          "label": "Format · closing formula",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [
+            "Formal ending required.",
+            "Treat one or more incorrect accents in closing formula as one mistake.",
+            "1 mistake - ignore.",
+            "2 mistakes - deduct 1 mark.",
+            "3 mistakes - deduct 2 marks.",
+            "If candidate has general layout of Top of Page or Closing Formula correct, despite numerous mistakes - award one mark."
+          ]
+        },
+        {
+          "id": "communication-first",
+          "label": "Communication · first point you chose",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "You hope to spend a week in France in July. — You hope to spend a week in France/ in July.",
+            "You are looking for an apartment near the lake. — You are looking for an apartment/ near the lake.",
+            "You intend to go swimming every day. — You intend to go swimming/every day.",
+            "You would like a list of activities in the area. — You would like a list of activities/ in the area.",
+            "Ask if you can hire a boat for a day. — Ask if you can hire a boat/ for a day.",
+            "Two points required for 4 marks (2 + 2)",
+            "1st Category 0 – 1 - message not clear.",
+            "2nd Category 2 - message clear."
+          ]
+        },
+        {
+          "id": "communication-second",
+          "label": "Communication · second point you chose",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "You hope to spend a week in France in July. — You hope to spend a week in France/ in July.",
+            "You are looking for an apartment near the lake. — You are looking for an apartment/ near the lake.",
+            "You intend to go swimming every day. — You intend to go swimming/every day.",
+            "You would like a list of activities in the area. — You would like a list of activities/ in the area.",
+            "Ask if you can hire a boat for a day. — Ask if you can hire a boat/ for a day.",
+            "Two points required for 4 marks (2 + 2)",
+            "1st Category 0 – 1 - message not clear.",
+            "2nd Category 2 - message clear."
+          ]
+        },
+        {
+          "id": "communication-third",
+          "label": "Communication · third point you chose",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "You hope to spend a week in France in July. — You hope to spend a week in France/ in July.",
+            "You are looking for an apartment near the lake. — You are looking for an apartment/ near the lake.",
+            "You intend to go swimming every day. — You intend to go swimming/every day.",
+            "You would like a list of activities in the area. — You would like a list of activities/ in the area.",
+            "Ask if you can hire a boat for a day. — Ask if you can hire a boat/ for a day.",
+            "Two points required for 4 marks (2 + 2)",
+            "1st Category 0 – 1 - message not clear.",
+            "2nd Category 2 - message clear."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 12,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                9,
+                10,
+                11,
+                12
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                5,
+                6,
+                7,
+                8
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly",
+                "some sense of register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "guidance": [
+                "very poor to poor use of vocabulary of vocabulary",
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ],
+          "requiresAttempt": true
+        }
+      ],
+      "markingGuideNote": "",
+      "practiceNotes": [
+        "Choose any three of the five printed points. Each Communication mark is for one point you chose; one point cannot earn two of them.",
+        "Use the formal letter layout and the supplied addresses.",
+        "Use the published descriptors to place the response you wrote. You are marked on this task alone, and where it asks you to choose points or questions, on the ones you chose."
+      ]
+    }
   }
 ]
