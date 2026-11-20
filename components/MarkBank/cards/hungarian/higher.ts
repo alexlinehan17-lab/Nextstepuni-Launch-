@@ -1433,6 +1433,56 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2014 Higher Level — © State Examinations Commission.",
+    id: "hun-2014-hl-ii-1", topicId: "hungarian-1-0", conceptId: "kommentar-szoveg-alapjan-kommentalja-alabbiakat-minimum",
+    section: "II", questionRef: "2014 HL Section II Q1",
+    questionText: "A szöveg alapján kommentálja az alábbiakat minimum 100 szóban! A cikk alapján magyarázza meg, miért mondhatjuk, hogy a mai Magyarországon csak látszólag valósult meg Szent István intelme!",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "A minimum 100 szóban tisztán, érthetően kifejtett saját vélemény.", marks: 30, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”. Under the scheme's heading “Lehetséges irányok:”, as examples, not a checklist: “Azért mondhatjuk, hogy Szent István intelme csak látszólag valósult meg Magyarországon, mert ugyan a nagyvárosok központjában megtelepedtek a kínai és indiai éttermek; betérve egy-egy belvárosi romkocsmába, vagy jegyet váltva az ismertebb fürdők valamelyikébe, esetleg Hévízre kirándulva, lassanként kevesebb magyar szót hallani, mint idegent, ám a mindennapi tapasztalatok és számos felmérés is megerősíti, hogy a Szent István-i „befogadó nemzet” ideája nem létezik. Leginkább a „fontolva maradás” kifejezés igaz az országra és Budapestre, mert”; “már az elméleti számításnak szánt ötlet is heves politikai elutasítottságot váltott ki, amely felvetette, hogy ha 1,8 millió bevándorlót befogadna az ország, 50 évre megoldódnának a népesség fogyásából, elöregedéséből eredő problémák (3. bk);”; “a magyarok negyede-harmada huzamosabb ideje azon az állásponton van, hogy minden menedéket kereső előtt le kellene zárni a határokat. A nem eleve elutasítók kétharmada is mérlegelné, kit engedne be; de még a „reálpolitikus többség” is mazsolázna a letelepedni szándékozók között (4. bk);”; “amikor elviekben faggatják a magyarokat egy-egy „idegenről”, akkor jóval kevésbé elfogadók, mint azok, akiknek már közvetlen tapasztalataik is vannak (6. bk);”; “a másság elutasítása nem azt jelenti, hogy az idegent feltétlenül rossznak ítélik a magyarok, csak többnyire úgy vannak vele, hogy nem kellenek az életükbe, negatív sztereotípiák élnek bennük például idegen népcsoportok beözönlésével kapcsolatban, s ezen érzelmek felkorbácsolásában persze nem elhanyagolható az a politikai propaganda, amire elsősorban a szélsőjobb játszik rá (6. bk);”; “a legnagyobb távolságtartással kezelt „idegenek” a nem uniós országokból származó migránsok, jóllehet a külföldiek látható jelenléte ugyanakkor még közel sem érte el azt a szintet, ami a felmérések szerint irritáló lehetne (7. bk)”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II. RÉSZ",
+          "title": "Reading text — answer in Hungarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Hungarian 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2014 Higher Level — © State Examinations Commission.",
+    id: "hun-2014-hl-iii-1", topicId: "hungarian-1-1", conceptId: "lehet-seg-sokszin-seg-nyei-vagy",
+    section: "III", questionRef: "2014 HL Section III Q1",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! A sokszínűség előnyei",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC551ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2014 Higher Level — © State Examinations Commission.",
+    id: "hun-2014-hl-iii-2", topicId: "hungarian-1-1", conceptId: "lehet-seg-beutazhatjuk-egesz-vilagot-hogy",
+    section: "III", questionRef: "2014 HL Section III Q2",
+    questionText: "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! „Beutazhatjuk az egész világot, hogy megtaláljuk a szépséget, de magunkban kell azt hordoznunk, különben sosem fogunk rálelni.” – Ralph Waldo Emerson",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Tisztán, érthetően és világosan megírt esszé.", marks: 40, contextNote: "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Olvassa el a következő szöveget, és válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!\" The scheme prints: “A II. és III. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Megértés – A válaszadó megérti a kérdéseket és tudja, miként válaszoljon rájuk. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit. – 30%","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Nyelvhelyesség – Nyelvi és helyesírási szabályok. – 10%","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2015, level: "higher",
     paperFileid: "LC551ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Hungarian 2015 Higher Level — © State Examinations Commission.",
