@@ -1021,6 +1021,205 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2015 Higher Level — © State Examinations Commission.",
+    id: "cs-2015-hl-i-1", topicId: "czech-0-0", conceptId: "vysvetlete-vlastnimi-slovy",
+    section: "I", questionRef: "2015 HL Section I Q1",
+    questionText: "Vysvětlete vlastními slovy:\na) rituál\nb) stereotypní\nc) „dostat do širšího povědomí“\nd) „obávaná legenda“\ne) „pud sebezáchovy“",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "slavnostní zvyk, zvyklost, obřad. V současném jazyce cokoliv, co má nějaký hlubší význam a pravidelně se opakuje.", marks: null, contextNote: "For “rituál”: The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme reprints expression c) as “„dostat se do širšího povědomí“”; the paper prints “„dostat do širšího povědomí“”." },
+    { id: "r-2", kind: "point", verbatim: "stále se opakující, stále stejný, neměnný, pravidelný, v negativním slova smylsu šablonovitý, prázdný, jednotvárný, nudný.", marks: null, contextNote: "For “stereotypní”" },
+    { id: "r-3", kind: "point", verbatim: "dozví se tom veřejnost, informace se stane všeobecně známou.", marks: null, contextNote: "For “„dostat do širšího povědomí“”" },
+    { id: "r-4", kind: "point", verbatim: "něco velmi známého, z čeho jde ale strach, protože dostupné informace o oné věci jsou negativní.", marks: null, contextNote: "For “„obávaná legenda“”" },
+    { id: "r-5", kind: "point", verbatim: "instinkt, jakási záklopka, která člověka varuje, že určitá sitace může být nebezpečná.", marks: null, contextNote: "For “„pud sebezáchovy“”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2015 Higher Level — © State Examinations Commission.",
+    id: "cs-2015-hl-i-2", topicId: "czech-0-1", conceptId: "vysvetlete-zaklade-textu-proc-autistickym-detem",
+    section: "I", questionRef: "2015 HL Section I Q2",
+    questionText: "Vysvětlete na základě textu, proč se autistickým dětem říká děti úplňku?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mezi tajuplné a nevysvětlené otázky kolem autismu patří fakt, že záchvaty často propukají kolem úplňku měsíce.", marks: 5, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2015 Higher Level — © State Examinations Commission.",
+    id: "cs-2015-hl-i-3", topicId: "czech-0-1", conceptId: "popiste-zaklade-textu-proc-rodice-autistickych",
+    section: "I", questionRef: "2015 HL Section I Q3",
+    questionText: "Popište na základě textu, proč se rodiče autistických dětí cítí tak zoufale?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Chápaní veřejnosti ohledně této nemoci je dost nejasné, případně zkreslené sledováním filmů jako Rain man, takže se domnívají, že každý autista je zároveň matematický génius. Zároveň je péče o tyto děti velmi náročná, všechno dění v rodině se musí přizpůsobit jim, protože chování těchto dětí nelze nějak zvenčí ovlivnit. Často jsou tyto děti agresivní vůči vlastním rodičům. Ale je velmi těžké těmto rodinám ulevit, protože najít místo v nějaké zdravotnické nebo sociální pečovatelské instituci je velmi náročné, ošetřovatelé těchto dětí to často sami nezvládají a odchází, personálu je obecně nedostatek. Velmi často také léčba nemá žádný efekt.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2015 Higher Level — © State Examinations Commission.",
+    id: "cs-2015-hl-i-4", topicId: "czech-0-1", conceptId: "vysvetlete-zaklade-textu-proc-autisticke-deti",
+    section: "I", questionRef: "2015 HL Section I Q4",
+    questionText: "Vysvětlete na základě textu, proč autistické děti představují takový problém pro zdravotnická a sociální zařízení.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Péče o autististy je velmi finančně náročná, protože jeden ošetřovatel se nemůže zároveň starat o větší množství klientů, často zvládne jen dva nebo tři, nekdy dokonce jen jednoho, pokud se jedná o těžší prípad. Velmi často je potřeba vytvočit specifické podmínky, např. každý musí mít vlastní pokoj. Takže většina zdravotnických zařízení na to nemá kapacity ani finanční, ani personální. Výjimku tvoří soukromá zařízení, která jsou sparavována např. církví, ale i tato zařízení bojují dlouhodobě s nedostatkem peněz.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2015 Higher Level — © State Examinations Commission.",
+    id: "cs-2015-hl-i-5", topicId: "czech-0-1", conceptId: "popiste-vlastnimi-slovy-jak-pribeh-carly",
+    section: "I", questionRef: "2015 HL Section I Q5",
+    questionText: "Popište vlastními slovy, jak příběh Carly Fleischmannové ukazuje pravdu této věty z textu: „A nelze vyloučit, že vnější dojem zásadně klame.“",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Carla se zdála být mentálně retardovanou, protže vůbec nemluvila a chovala se neovladatelně. Při jedné terapii ale najednou „promluvila“ pomocí počítače naprosto perfektní agličtinou. Zjistili, že rozumí všemu, co se kolem ní děje, co si lidé povídají a že prožívá vztahy s ostaními lidmi jako zdravé dítě. A tomu vnější dojem vůbec nedopovídal. Nelze tedy člověka např. odsoudit jenom proto, že se chová nestandardně, protože jeho vnitřní svět může být úplně stejný jako ten náš. Lze vztáhnout i na obecnou rovinu, kdy často odsoudíme lidi jen na základě vnějšího dojmu jako chudé nebo hloupé, ale toto zdání může klamat.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    { id: "r-2", kind: "point", verbatim: "Vlastní interpretace tohoto trvrzení, vlastními slovy.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2015 Higher Level — © State Examinations Commission.",
+    id: "cs-2015-hl-i-6", topicId: "czech-0-1", conceptId: "vysvetlete-jak-tento-text-ovlivnil-vasi",
+    section: "I", questionRef: "2015 HL Section I Q6",
+    questionText: "Vysvětlete, jak tento text ovlivnil vaši vlastní představu o autismu.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Úkolem je vlastními slovy vysvětlit, jestli se případně chápání autismu změnilo, případně, že to byly naprosto nové informace. Vlastní vysvětlení: vlastními slovy, bez opsání frází z textu.", marks: null, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2015 Higher Level — © State Examinations Commission.",
+    id: "cs-2015-hl-ii", topicId: "czech-1-0", conceptId: "ted-vime-tam-uvnitr-pod-boxerskou",
+    section: "II", questionRef: "2015 HL Section II",
+    questionText: "„Teď už víme, že tam uvnitř – pod boxerskou helmou – je člověk jako my.“ Napište komentář (minimum 100 slov), ve kterém vysvětlíte svůj názor na toto tvrzení.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vlastními slovy, bez opsání frází z textu.", marks: 30, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”. The scheme prints, as examples, not a checklist: “Souhlas, nesouhlas. I nemocný člověk, který se může zdát méněcenný, je pořád člověk a zaslouží si respekt jako osobnost. Někdy se můžeme domnívat, že když člověk je plnohodnotným členem společnosti jen tedy, když zapadne do škatulek. To, že se z nich nějak vymyká - třeba nemocí - by nemělo ovlivnit náš názor o jeho lidských kvalitách.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ČÁST 2",
+          "title": "Reading text — answer in Czech",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Czech 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2015 Higher Level — © State Examinations Commission.",
+    id: "cs-2015-hl-iii-1", topicId: "czech-1-0", conceptId: "laska-radikalni-respekt-jinym-jejich-jinakosti",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: „Láska je radikální respekt k jiným v jejich jinakosti.“ (Humberto Maturana)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC547ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2015 Higher Level — © State Examinations Commission.",
+    id: "cs-2015-hl-iii-2", topicId: "czech-1-0", conceptId: "clovek-ktery-stastny-malem-ten-nejbohatsi",
+    section: "III", questionRef: "2015 HL Section III Q2",
+    questionText: "Napište esej (minimum 300 slov) na jedno z následujících témat: „Člověk, který je šťastný s málem, je ten nejbohatší ze všech.“ (Sokrates)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Jasně psaná kompozice, odpovídající tématu, se souvisle organizovanými myšlenkami, srozumitelným záměrem a rozumným vyjadřováním.", marks: 40, contextNote: "The examination requires every answer in CZECH. The paper prints the rule on page 2: \"Všechny otázky musí být zodpovězeny v českém jazyce.\" The scheme prints: “V částech 2 a 3 jsou odpovědi posuzovány podle následujících kritérií:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Srozumitelný záměr – uchazeč rozumí otázce a ví, jak začít s odpovědí – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Souvislost odpovědi – uchazeč užívá odpovídající a vhodnou slovní zásobu, styl odpovědi je jasně strukturovaný a cílevědomý – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Efektivita jazyka – uchazeč je schopen komunikovat v jazyce jasně a plynule – 30 %.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Pravidla: gramatika, pravopis – 10 %.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "higher",
     paperFileid: "LC547ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Czech 2016 Higher Level — © State Examinations Commission.",

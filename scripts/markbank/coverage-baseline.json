@@ -213,11 +213,11 @@
     "refsHash": "5715cb3bc399035d"
   },
   "czech": {
-    "cards": 55,
-    "contentHash": "8795e2f131413e83",
+    "cards": 64,
+    "contentHash": "d9ce5f0130afe13b",
     "coveragePct": 100.0,
-    "covered": 115,
-    "excluded": 104,
+    "covered": 128,
+    "excluded": 91,
     "leaves": 219,
     "open": 0,
     "orphans": 0,
@@ -225,7 +225,7 @@
       "count": 17,
       "hash": "325d56e0739fd63d"
     },
-    "refsHash": "a743ea207db99e03"
+    "refsHash": "fda3a2c20d02a2b7"
   },
   "danish": {
     "cards": 79,
