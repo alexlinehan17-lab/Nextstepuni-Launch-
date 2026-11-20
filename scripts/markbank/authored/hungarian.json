@@ -9405,6 +9405,92 @@
   }
  },
  {
+  "id": "hun-2022-hl-ii-1",
+  "subjectId": "hungarian",
+  "level": "higher",
+  "year": 2022,
+  "section": "II",
+  "topicId": "hungarian-1-1",
+  "conceptId": "lehet-seg-elet-attol-izgalmas-dolgokat",
+  "questionRef": "2022 HL Section II Q1",
+  "questionText": "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Az élet attól izgalmas, ha új dolgokat teremtünk. Ha folyton a biztonság után kutatunk, az elsorvasztja életerőnket. (Andrew Matthews)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\" Under “A II. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:” the scheme prints the four criteria with no marks or percentages beside them, so they are shown and the part is scored on its printed total. Under Part II itself it reprints the instruction and the two titles and prints nothing else."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Nyelvhelyesség – Nyelvi és helyesírási szabályok.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "hun-2022-hl-ii-2",
+  "subjectId": "hungarian",
+  "level": "higher",
+  "year": 2022,
+  "section": "II",
+  "topicId": "hungarian-1-1",
+  "conceptId": "lehet-seg",
+  "questionRef": "2022 HL Section II Q2",
+  "questionText": "A két téma közül válasszon ki egyet, és írjon egy minimum 300 szavas esszét! Hogyan jön létre az igazi barátság?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Megértés – A válaszadó megérti a kérdéseket, és tudja, miként válaszoljon rájuk.",
+    "marks": null,
+    "contextNote": "The examination requires every answer in HUNGARIAN. The paper prints the rule on page 2: \"Minden válaszát magyarul írja le!\" Under “A II. részben elérhető pontok az alábbi szempontok szerint oszlanak meg:” the scheme prints the four criteria with no marks or percentages beside them, so they are shown and the part is scored on its printed total. Under Part II itself it reprints the instruction and the two titles and prints nothing else."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. A válasz koherenciája – A válaszadó releváns és megfelelő ismeretanyagot használ jól strukturálva és világosan kifejtve.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Nyelvi képesség – A válaszadó nyelvhasználatában megfelelően kompetens ahhoz, hogy tisztán és összefüggően kifejtse nézeteit.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Nyelvhelyesség – Nyelvi és helyesírási szabályok.",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "hun-2023-hl-i-1-a",
   "subjectId": "hungarian",
   "level": "higher",
