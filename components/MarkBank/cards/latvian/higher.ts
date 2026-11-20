@@ -1915,7 +1915,7 @@ export const CARDS: SecCard[] = [
     questionText: "Izskaidrojiet vārdu savienojumus un frāzes! panākumu atslēga – krietni cilvēki",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN.", group: {"claimMax":1,"perOption":1,"options":["krietni cilvēki ‐ strādīgi, mērķtiecīgi cilvēki ar augstu darba ētiku","veicina, spēj sasniegt labus rezultātus, mērķus. (5 ×"]} },
+    { id: "r-1", kind: "point", verbatim: "strādīgi, mērķtiecīgi cilvēki ar augstu darba ētiku veicina, spēj sasniegt labus rezultātus, mērķus.", marks: 1, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2014,7 +2014,7 @@ export const CARDS: SecCard[] = [
     questionText: "Skaidrojiet vārdus un frāzes! kopš bērna kājas",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "bērnībā, jaunā vecumā, kopš mazām dienām (5 ×", marks: 1, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
+    { id: "r-1", kind: "point", verbatim: "bērnībā, jaunā vecumā, kopš mazām dienām", marks: 1, contextNote: "The examination prints this question in Latvian and it is answered in LATVIAN." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2036,7 +2036,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latvian 2026 Higher Level — © State Examinations Commission.",
     id: "lv-2026-hl-i-1", topicId: "latvian-0-0", conceptId: "skaidrojiet-vardus-frazes-izpratne-lidzbiedrs-pratiba",
     section: "U1", questionRef: "2026 HL Section I Q1",
-    questionText: "Skaidrojiet vārdus un frāzes! (a) izpratne (b) līdzbiedrs (c) pratība (d) pētījums (e) pelnīt maizi",
+    questionText: "Skaidrojiet tekstā lietotos vārdus un frāzes! a) izpratne b) līdzbiedrs c) pratība d) pētījums e) pelnīt maizi",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "stāvoklis, kad ir uztverta un pilnīgi saprasta (kā) būtība, saturs, nozīme; spēja; prasme uztvert un saprast (kā) būtību, saturu, nozīmi;", marks: null, contextNote: "The scheme prints this as the meaning of \"Izpratne\". The examination prints this question in Latvian and it is answered in LATVIAN." },

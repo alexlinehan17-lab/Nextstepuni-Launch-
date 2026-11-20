@@ -4456,18 +4456,10 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "The answers the scheme accepts in full",
-    "marks": null,
-    "contextNote": "The examination prints this question in Latvian and it is answered in LATVIAN.",
-    "group": {
-     "claimMax": 1,
-     "perOption": 1,
-     "options": [
-      "krietni cilvēki ‐ strādīgi, mērķtiecīgi cilvēki ar augstu darba ētiku",
-      "veicina, spēj sasniegt labus rezultātus, mērķus. (5 ×"
-     ]
-    }
+    "kind": "point",
+    "verbatim": "strādīgi, mērķtiecīgi cilvēki ar augstu darba ētiku veicina, spēj sasniegt labus rezultātus, mērķus.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Latvian and it is answered in LATVIAN."
    }
   ],
   "notes": "The scheme prints the tariff as '(5 × 1 punkti) on Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. Paper/scheme wording agreement 0.50.",
@@ -4612,7 +4604,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "bērnībā, jaunā vecumā, kopš mazām dienām (5 ×",
+    "verbatim": "bērnībā, jaunā vecumā, kopš mazām dienām",
     "marks": 1,
     "contextNote": "The examination prints this question in Latvian and it is answered in LATVIAN."
    }
@@ -4640,7 +4632,7 @@
   "topicId": "latvian-0-0",
   "conceptId": "skaidrojiet-vardus-frazes-izpratne-lidzbiedrs-pratiba",
   "questionRef": "2026 HL Section I Q1",
-  "questionText": "Skaidrojiet vārdus un frāzes! (a) izpratne (b) līdzbiedrs (c) pratība (d) pētījums (e) pelnīt maizi",
+  "questionText": "Skaidrojiet tekstā lietotos vārdus un frāzes! a) izpratne b) līdzbiedrs c) pratība d) pētījums e) pelnīt maizi",
   "tariffModel": {
    "kind": "questionTotal"
   },
