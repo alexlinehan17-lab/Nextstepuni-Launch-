@@ -23,8 +23,11 @@ describe('Construction Studies papers reviewed on the shared engine', () => {
 });
 
 for (const paper of CONSTRUCTION_REVIEWED_PAPERS) {
-  const name = `${paper.year} ${paper.level}`;
-  const review = JSON.parse(fs.readFileSync(`scripts/markbank/authored/construction-studies-${paper.year}-${paper.level}-reviewed.json`, 'utf8')) as {
+  // A deferred sitting is its own paper: its review, draft folder, edition and cards carry "-deferred".
+  const deferred = paper.sitting === 'deferred';
+  const d = deferred ? '-deferred' : '';
+  const name = `${paper.year} ${paper.level}${deferred ? ' deferred' : ''}`;
+  const review = JSON.parse(fs.readFileSync(`scripts/markbank/authored/construction-studies-${paper.year}-${paper.level}${d}-reviewed.json`, 'utf8')) as {
     tasks: Array<{correction: boolean; card: Pick<SecQuestionCard, 'id' | 'rows' | 'totalMarks' | 'questionBonus' | 'stem' | 'sourceMaterial'> & {figureKey?: string; questionFigureKey: string}}>;
     bindings: Array<{cardId: string; canonicalTopicIds: string[]; atlasTopicIds: string[]; questionNumber: string}>;
     corrections: Array<{cardId: string; priorSha256: string}>;
@@ -32,7 +35,7 @@ for (const paper of CONSTRUCTION_REVIEWED_PAPERS) {
   };
 
   describe(`Construction Studies ${name} source-reviewed theory`, () => {
-    it.skipIf(!hasConstructionSources(paper.year, paper.level))('reconciles original wording, tariffs, routes, figures, selection directives and corrections', () => {
+    it.skipIf(!hasConstructionSources(paper.year, paper.level, paper.sitting))('reconciles original wording, tariffs, routes, figures, selection directives and corrections', () => {
       const result = JSON.parse(execFileSync('python3', [paper.validator], { encoding: 'utf8' }));
       expect(result).toEqual(paper.result);
     });
@@ -51,7 +54,7 @@ for (const paper of CONSTRUCTION_REVIEWED_PAPERS) {
     });
 
     it('keeps every earlier card ID in place or withdrawn on record and appends only the added tasks', () => {
-      const prior = JSON.parse(fs.readFileSync(`docs/markbank-audit/2026-09-28/drafts/construction-${paper.year}-${paper.level}/prior-authored-card-hashes.json`, 'utf8')) as {count: number; cards: Record<string, string>};
+      const prior = JSON.parse(fs.readFileSync(`docs/markbank-audit/2026-09-28/drafts/construction-${paper.year}-${paper.level}${d}/prior-authored-card-hashes.json`, 'utf8')) as {count: number; cards: Record<string, string>};
       const authored: SecCard[] = JSON.parse(fs.readFileSync('scripts/markbank/authored/construction-studies.json', 'utf8'));
       expect(prior.count).toBe(paper.priorCount);
       const withdrawn = new Set(fs.readdirSync('scripts/markbank/authored').filter(n => /^construction-studies-.*-reviewed\.json$/.test(n))
@@ -68,10 +71,11 @@ for (const paper of CONSTRUCTION_REVIEWED_PAPERS) {
     it('ships all reviewed tasks, their source figures and exact topic bindings', async () => {
       const deck = await loadCards('construction-studies', paper.level);
       const cards = new Map(deck.map(c => [c.id, c]));
-      const atlas = topicsForPaper('construction-studies', paper.year, paper.level, 'ev', FILEID[paper.level]);
+      const atlas = topicsForPaper('construction-studies', paper.year, paper.level, 'ev', FILEID[paper.level].replace(/\.pdf$/, `${d}.pdf`));
       const spec = resolveCurriculumSpecification('construction-studies', paper.year)!;
       expect(spec.id).toBe('construction-studies:outgoing');
-      expect(deck.filter(c => c.year === paper.year).map(c => c.id).sort()).toEqual(review.tasks.map(t => t.card.id).sort());
+      expect(deck.filter(c => c.year === paper.year && c.id.includes('-deferred-') === deferred).map(c => c.id).sort())
+        .toEqual(review.tasks.map(t => t.card.id).sort());
       for (const {card: source} of review.tasks) {
         const card = cards.get(source.id)!;
         if (card.kind !== 'question') throw new Error(`Expected a question card: ${card.id}`);

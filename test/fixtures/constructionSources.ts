@@ -23,6 +23,6 @@ const hasPyMuPDF = (() => {
   }
 })();
 
-export const hasConstructionSources = (year: number, level: 'higher' | 'ordinary'): boolean => hasPyMuPDF
-  && fs.existsSync(`paper-trail-corpus/exampapers/${year}/${FILEID[level]}`)
-  && fs.existsSync(`paper-trail-corpus/markingschemes/${year}/${FILEID[level]}`);
+export const hasConstructionSources = (year: number, level: 'higher' | 'ordinary', sitting?: 'deferred'): boolean => hasPyMuPDF
+  && fs.existsSync(`paper-trail-corpus/${sitting === 'deferred' ? 'deferredexams' : 'exampapers'}/${year}/${FILEID[level]}`)
+  && fs.existsSync(`paper-trail-corpus/${sitting === 'deferred' ? 'deferredmarkingschemes' : 'markingschemes'}/${year}/${FILEID[level]}`);

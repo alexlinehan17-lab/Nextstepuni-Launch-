@@ -11,6 +11,8 @@ import fs from 'node:fs';
 export interface ConstructionReviewedPaper {
   year: number;
   level: 'higher' | 'ordinary';
+  /** Present on the SEC's deferred sitting of a year: its own edition ("LC029ALP000EV-deferred.pdf"). */
+  sitting?: 'deferred';
   validator: string;
   result: Record<string, number | boolean>;
   priorCount: number;

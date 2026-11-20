@@ -774,7 +774,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // "Location 3 and reason 2", "The distribution board drawn (4) and annotated (1)", "Correct tabulation 2, wood 3, …").
     // Every part is the scheme's own words (construction_paper.validate); a note that paraphrases the scheme's table
     // keeps only the words it prints, and a row whose head word the scheme does not print stays unsplit.
-    expect(withParts).toHaveLength(1284);
+    // June's 1,284 and the 2022 Higher deferred sitting's 81 (construction_rows.py over its review).
+    expect(withParts).toHaveLength(1284 + 81);
     for (const { card, row } of withParts) {
       expect(rowPartsReconcile(row), `${card.id}/${row.id}`).toBe(true);
       // Every part is a word the row or its note prints, and the row's own text, marks and steps are untouched.

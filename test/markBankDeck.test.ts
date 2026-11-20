@@ -230,7 +230,8 @@ const deferredCard = (card: { id?: string; subjectId: string }) =>
   || (card.subjectId === 'music' && /^mus-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'accounting' && /^acc-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
   || (card.subjectId === 'agricultural-science' && /^agsci-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
-  || (card.subjectId === 'applied-maths' && /^am-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
+  || (card.subjectId === 'applied-maths' && /^am-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''))
+  || (card.subjectId === 'construction-studies' && /^cons-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? ''));
 // Codex's reviewed subjects bind each card to its exact reviewed booklet.
 const REVIEWED_SOURCE_SUBJECTS = new Set(['maths', 'physics', 'home-economics']);
 

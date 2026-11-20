@@ -25,7 +25,11 @@ function buildReviewedLibraryTopics(subjectId, topicPrefix = `${subjectId}-`, sp
   const entries = {};
   const papers = [];
   for (const review of reviews) {
-    if (review.sitting !== 'main') throw new Error('A deferred review needs a sitting-aware library intake');
+    // A deferred sitting's review (Construction Studies 2022 Higher) binds its own cards ("cons-2022-hl-deferred-…"), so
+    // its entries never meet June's; its paper is listed after June's of the same year and level.
+    if (review.sitting !== 'main' && !(subjectId === 'construction-studies' && review.sitting === 'deferred')) {
+      throw new Error('A deferred review needs a sitting-aware library intake');
+    }
     for (const [file,digest] of Object.entries(review.sourceHashes)) {
       if (createHash('sha256').update(fs.readFileSync(path.join(root,file))).digest('hex') !== digest) throw new Error(`Changed source: ${file}`);
     }
@@ -57,11 +61,12 @@ function buildReviewedLibraryTopics(subjectId, topicPrefix = `${subjectId}-`, sp
       if (entries[id]) throw new Error(`Duplicate ${subjectLabel} library binding: ${id}`);
       entries[id]=topicsFor(id);
     }
-    papers.push({year:review.year,level:review.level,cards:cards.size});
+    papers.push({year:review.year,level:review.level,...(review.sitting === 'deferred' ? {sitting:'deferred'} : {}),cards:cards.size});
   }
   return {schemaVersion:1,subjectId,specificationId,
     provenance:'Source-pinned authoring and exact Atlas bridge. Complete routes inherit the union of their separately reviewed constituent canonical topics.',
-    papers:papers.sort((a,b) => a.year-b.year || a.level.localeCompare(b.level)),
+    papers:papers.sort((a,b) => a.year-b.year || a.level.localeCompare(b.level)
+      || Number(a.sitting === 'deferred') - Number(b.sitting === 'deferred')),
     cards:Object.fromEntries(Object.entries(entries).sort(([a],[b]) => a.localeCompare(b)))};
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

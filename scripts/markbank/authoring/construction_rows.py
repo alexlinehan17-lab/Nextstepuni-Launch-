@@ -133,8 +133,8 @@ def lift(words, scheme):
 
 def scheme_text(path):
     """The normalised scheme text for a reviewed-paper file, construction_paper's way."""
-    year, level = re.search(r'construction-studies-(\d{4})-(higher|ordinary)-reviewed', path.name).groups()
-    _, S = cp.sources(int(year), level)
+    year, level, deferred = re.search(r'construction-studies-(\d{4})-(higher|ordinary)(-deferred)?-reviewed', path.name).groups()
+    _, S = cp.sources(int(year), level, 'deferred' if deferred else 'main')  # a deferred sitting reads its own scheme
     return cp.normalise(' '.join(cp.page_text(S, p) for p in range(1, cp.page_count(S) + 1)))
 
 

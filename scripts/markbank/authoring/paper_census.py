@@ -1623,7 +1623,9 @@ def census_merged(subject, year, level, component=None, *, files=None):
     if subject == 'chemistry':
         # (A deferred sitting names its own booklet: census_chemistry_deferred.)
         parts, texts = chemistry_choice_parts(year, level, parts, texts, path=files[0] if files else None)
-    if subject == 'construction-studies':
+    if subject == 'construction-studies' and files is None:
+        # (A deferred sitting names its own booklet, and no June repair keyed (year, level) touches it:
+        # census_construction_deferred.)
         from construction_census_repairs import apply_construction_census_repairs
         parts, texts = apply_construction_census_repairs(year, level, parts, texts)
 
@@ -4885,6 +4887,8 @@ def _census_subject(subject):
         papers.extend(census_chemistry_deferred())
     if subject == 'agricultural-science':
         papers.extend(census_agri_deferred())
+    if subject == 'construction-studies':
+        papers.extend(census_construction_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
 
 
@@ -4909,6 +4913,33 @@ def census_agri_deferred():
             'year': year, 'level': level, 'paper': 'Deferred',
             'leafCount': len(leaves),
             'leaves': [{'key': list(k), 'label': key_label(k, 'agricultural-science'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
+
+
+# The SEC's deferred Construction Studies sitting in the archive, English version: deferredexams/2022/LC029ALP000EV.pdf
+# (Higher; the theory paper only, nothing for 2023-2025), its scheme in deferredmarkingschemes/.
+CONS_DEFERRED_SITTINGS = ((2022, 'hl'),)
+
+
+def census_construction_deferred():
+    """Each deferred Construction Studies sitting (CONS_DEFERRED_SITTINGS), read by June's reader (census_merged over its
+    own booklet, no June repair applied) and keyed 'Deferred', as Biology keys its own (census_biology_deferred), so a
+    deferred ask never lands on a June leaf with the same address. The checksum is not run on it."""
+    papers = []
+    for year, level in CONS_DEFERRED_SITTINGS:
+        letter = 'A' if level == 'hl' else 'G'
+        files = [os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'LC029{letter}LP000EV.pdf')]
+        parts, texts, _ = census_merged('construction-studies', year, level, files=files)
+        leaves = leaves_of(parts)
+        flags = [f for f in continuity_flags(parts, texts, 'construction-studies')
+                 if not short_ask_ok('construction-studies', year, level, f, sitting='deferred')]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'construction-studies'),
                         'text': texts.get(k, '')[:160]} for k in leaves],
             'marksSum': None, 'marksQuestions': 0, 'flags': flags,
         })

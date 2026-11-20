@@ -454,12 +454,11 @@ interface ConstructionStudiesRuntime {
   partReferences: Array<[number, number, number, string, number, string]>;
   /** [h/o, year-2000, stable card number, topic indexes] */
   questionMappings: Array<['h' | 'o', number, string, number[]]>;
-}
-
-interface EngineeringRuntime extends ConstructionStudiesRuntime {
   /** The SEC's deferred sittings: [h/o, year-2000, paper file id, printed question number, topic indexes]. */
   deferredQuestionMappings?: Array<['h' | 'o', number, string, string, number[]]>;
 }
+
+type EngineeringRuntime = ConstructionStudiesRuntime;
 
 interface TechnologyRuntime {
   v: 1;
@@ -3999,6 +3998,24 @@ for (const [levelCode, yearOffset, n, topicIndexes] of (
       levelCode === 'h' ? 'higher' : 'ordinary',
       yearOffset + 2000,
       'main',
+      n,
+      'single',
+    ),
+    topicIndexes.map(topicIndex => constructionStudiesTopicIdentity(topicIndex).id),
+  );
+}
+// A deferred sitting's paper ("LC029ALP000EV-deferred.pdf") is numbered as June's: its questions join on the paper,
+// never on June's question of the same number (Engineering's and Art's do the same).
+for (const [levelCode, yearOffset, fileid, n, topicIndexes] of (
+  constructionStudiesRuntime.deferredQuestionMappings ?? []
+)) {
+  FILE_QUESTION_TOPICS.set(
+    fileQuestionKey(
+      constructionStudiesRuntime.subjectId,
+      levelCode === 'h' ? 'higher' : 'ordinary',
+      yearOffset + 2000,
+      'main',
+      fileid,
       n,
       'single',
     ),

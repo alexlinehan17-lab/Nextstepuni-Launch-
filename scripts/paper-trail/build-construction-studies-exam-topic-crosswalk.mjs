@@ -167,7 +167,13 @@ const paperIdentity = paper => [
   paper.paperKey,
   paper.fileid,
 ].join('|');
-const logicalIdentity = (level, year, n) => [level, year, n].join('|');
+// A deferred question's key carries its sitting; June's is unchanged.
+const logicalIdentity = (level, year, n, sitting = 'main') => [
+  level,
+  year,
+  ...(sitting === 'deferred' ? ['deferred'] : []),
+  n,
+].join('|');
 const expectedNumbers = level => Array.from(
   { length: level === 'higher' ? 10 : 9 },
   (_, index) => String(index + 1),
@@ -236,10 +242,32 @@ for (const [year, level, langs] of [
     });
   }
 }
+/* The SEC's deferred sitting in the Atlas, 2022 Higher (the archive holds no other): its own paper,
+ * "LC029ALP000EV-deferred.pdf", numbered as June's, its anchors in public/paper-anchors/2022/ (paper-only). Its
+ * questions join on that file id (deferredQuestionMappings, as Engineering's and Art's do), never on June's year and
+ * number, so they neither replace nor merge with June's question of the same number. Its source tags were read off
+ * the page, each printed question tagged by its content. The reference's 2022 deferred headings now match it (they
+ * were source-blocked while the corpus held no deferred paper); its card review joins each question as June's does. */
+const DEFERRED_FILEID = 'LC029ALP000EV-deferred.pdf';
+const DEFERRED_EXPECTED = new Map([[2022, { matched: 49, logical: 10 }]]);
+const isDeferred = paper => /-deferred\.pdf$/i.test(paper.fileid);
+const deferredPapers = sourcePapers.filter(isDeferred);
+if (JSON.stringify(deferredPapers.map(paper => paper.year)) !== JSON.stringify([...DEFERRED_EXPECTED.keys()])) {
+  throw new Error(`Expected the deferred papers of ${[...DEFERRED_EXPECTED.keys()].join(', ')}`);
+}
+for (const paper of deferredPapers) {
+  if (
+    paper.subjectId !== SUBJECT_ID || paper.level !== 'higher' || paper.lang !== 'ev' || paper.paperKey !== 'single'
+    || paper.fileid !== DEFERRED_FILEID
+    || JSON.stringify(paper.q.map(question => question.n)) !== JSON.stringify(expectedNumbers(paper.level))
+  ) {
+    throw new Error(`${paperIdentity(paper)}: incomplete or invalid Construction Studies deferred paper`);
+  }
+}
 const additionIds = new Set(additions.map(paperIdentity));
 const localPapers = [
   ...additions,
-  ...sourcePapers.filter(paper => !additionIds.has(paperIdentity(paper))),
+  ...sourcePapers.filter(paper => !additionIds.has(paperIdentity(paper)) && !isDeferred(paper)),
 ];
 const paperIds = localPapers.map(paperIdentity);
 if (localPapers.length !== 68 || paperIds.length !== new Set(paperIds).size) {
@@ -292,8 +320,9 @@ const parseHeading = (heading) => {
         : 'main',
   };
 };
-const englishPaper = (level, year, n) => {
-  const candidates = localPapers.filter(paper => (
+// A deferred heading names the deferred paper's question, never June's.
+const englishPaper = (level, year, n, sitting = 'main') => {
+  const candidates = (sitting === 'deferred' ? deferredPapers : localPapers).filter(paper => (
     paper.level === level
     && paper.lang === 'ev'
     && paper.year === year
@@ -311,7 +340,7 @@ const blockedReason = (parsed) => {
   if (parsed.sitting === 'sample') {
     return 'The factual heading belongs to an official sample paper that is not a selectable document in the entitled local corpus. It remains source-blocked; no StudyClix-hosted question image or PDF is copied.';
   }
-  if (parsed.sitting === 'deferred') {
+  if (parsed.sitting === 'deferred' && !deferredPapers.some(paper => paper.year === parsed.year)) {
     return 'The entitled local corpus does not contain this separate deferred sitting. The factual heading is retained; no StudyClix-hosted question image or PDF is copied.';
   }
   return null;
@@ -323,7 +352,7 @@ for (const topic of allTopics) {
   for (const heading of topic.officialQuestionHeadings) {
     const parsed = parseHeading(heading);
     const explicitBlock = blockedReason(parsed);
-    const paper = explicitBlock ? null : englishPaper(topic.level, parsed.year, parsed.n);
+    const paper = explicitBlock ? null : englishPaper(topic.level, parsed.year, parsed.n, parsed.sitting);
     if (!paper) {
       associations.push({
         topicId: topic.id,
@@ -338,7 +367,7 @@ for (const topic of allTopics) {
       });
       continue;
     }
-    const key = logicalIdentity(topic.level, parsed.year, parsed.n);
+    const key = logicalIdentity(topic.level, parsed.year, parsed.n, parsed.sitting);
     const indexes = exactTopicsByCard.get(key) ?? [];
     const index = topicIndex.get(topic.id);
     if (index === undefined) throw new Error(`Unknown Construction Studies topic ${topic.id}`);
@@ -375,7 +404,9 @@ const cardingTopics = new Map();
 const reviewDirectory = path.join(ROOT, 'scripts/markbank/atlas-reviews');
 for (const name of fs.readdirSync(reviewDirectory).filter(name => name.startsWith('construction-studies-') && name.endsWith('.json'))) {
   const review = readJson(path.join(reviewDirectory, name));
-  if (review.subjectId !== SUBJECT_ID || review.sitting !== 'main' || review.paperKey !== 'single') {
+  // A deferred sitting's review (construction-studies-<year>-<level>-deferred.json, sitting "deferred") names the
+  // deferred paper's questions and joins them alone.
+  if (review.subjectId !== SUBJECT_ID || !['main', 'deferred'].includes(review.sitting) || review.paperKey !== 'single') {
     throw new Error(`Unsupported Construction Studies source identity: ${name}`);
   }
   for (const [file, hash] of Object.entries(review.sourceHashes)) {
@@ -384,7 +415,7 @@ for (const name of fs.readdirSync(reviewDirectory).filter(name => name.startsWit
     }
   }
   for (const question of review.questions) {
-    const paper = localPapers.find(p => p.level === review.level && p.year === review.year
+    const paper = (review.sitting === 'deferred' ? deferredPapers : localPapers).find(p => p.level === review.level && p.year === review.year
       && p.lang === review.lang && p.paperKey === review.paperKey && p.fileid === question.fileid);
     if (!paper?.q.some(q => q.n === question.n)) throw new Error(`Missing original Construction Studies anchor: ${name} Q${question.n}`);
     const indexes = question.topicIds.map(id => {
@@ -393,7 +424,7 @@ for (const name of fs.readdirSync(reviewDirectory).filter(name => name.startsWit
       return index;
     });
     if (!indexes.length) throw new Error(`Empty Construction Studies topic union: ${name}`);
-    const key = logicalIdentity(review.level, review.year, question.n);
+    const key = logicalIdentity(review.level, review.year, question.n, review.sitting);
     cardingTopics.set(key, [...new Set([...(cardingTopics.get(key) ?? []), ...indexes])]);
   }
 }
@@ -440,6 +471,21 @@ if (JSON.stringify([...usedReviewed].sort()) !== JSON.stringify(Object.keys(revi
   throw new Error('Reviewed Construction Studies map must equal the exact local-reference omissions');
 }
 
+// A deferred question takes the reference's deferred headings and its sitting's card review; a question neither files
+// stops the build.
+const deferredQuestionMappings = [];
+for (const paper of deferredPapers) {
+  for (const question of paper.q) {
+    const key = logicalIdentity(paper.level, paper.year, question.n, 'deferred');
+    const indexes = [...new Set([...(exactTopicsByCard.get(key) ?? []), ...(cardingTopics.get(key) ?? [])])];
+    if (!indexes.length) throw new Error(`${key}: deferred Construction Studies question has no reference heading and no reviewed topic`);
+    deferredQuestionMappings.push([paper.level === 'higher' ? 'h' : 'o', paper.year - 2000, paper.fileid, question.n, indexes]);
+  }
+}
+const deferredExpected = [...DEFERRED_EXPECTED.values()].reduce((sum, expected) => ({
+  matched: sum.matched + expected.matched, logical: sum.logical + expected.logical,
+}), { matched: 0, logical: 0 });
+
 const reported = allTopics.reduce((sum, topic) => sum + topic.reportedQuestionCount, 0);
 const official = allTopics.reduce((sum, topic) => sum + topic.officialQuestionHeadings.length, 0);
 const mocks = allTopics.reduce((sum, topic) => sum + topic.mockQuestionCount, 0);
@@ -452,18 +498,19 @@ if (
   || mocks !== 940
   || providerSamples !== 0
   || reported !== official + mocks + providerSamples
-  || matchedAssociations.length !== 1031
-  || sourceBlockedAssociations.length !== 365
-  || exactTopicsByCard.size !== 302
+  || matchedAssociations.length !== 1031 + deferredExpected.matched
+  || sourceBlockedAssociations.length !== 365 - deferredExpected.matched
+  || exactTopicsByCard.size !== 302 + deferredExpected.logical
   || retainedLocalCards.length !== 21
   || questionMappings.length !== 323
+  || deferredQuestionMappings.length !== deferredPapers.reduce((sum, paper) => sum + paper.q.length, 0)
 ) {
   throw new Error('Construction Studies reconciliation coverage changed unexpectedly');
 }
 
 let verifiedSchemeMaps = 0;
 let verifiedPaperOnlyMaps = 0;
-for (const paper of localPapers) {
+for (const paper of [...localPapers, ...deferredPapers]) {
   const classicPath = path.join(HERE, 'answers', String(paper.year), `${paper.fileid}.json`);
   const hostedPath = path.join(HOSTED_ROOT, String(paper.year), `${paper.fileid}.json`);
   const mapPath = fs.existsSync(classicPath) ? classicPath : fs.existsSync(hostedPath) ? hostedPath : null;
@@ -472,10 +519,13 @@ for (const paper of localPapers) {
   if (JSON.stringify(map.q?.map(question => question.n)) !== JSON.stringify(expectedNumbers(paper.level))) {
     throw new Error(`${paperIdentity(paper)} has a mismatched question map at ${mapPath}`);
   }
+  if (isDeferred(paper) && (mapPath !== hostedPath || map.paperOnly !== 1 || map.paperFileid !== paper.fileid)) {
+    throw new Error(`${paperIdentity(paper)} needs its hosted paper-only anchor map`);
+  }
   if (map.paperOnly === 1) verifiedPaperOnlyMaps += 1;
   else verifiedSchemeMaps += 1;
 }
-if (verifiedSchemeMaps !== 64 || verifiedPaperOnlyMaps !== 4) {
+if (verifiedSchemeMaps !== 64 || verifiedPaperOnlyMaps !== 4 + deferredPapers.length) {
   throw new Error('Construction Studies paper/scheme map boundary changed unexpectedly');
 }
 
@@ -540,6 +590,7 @@ const matchedQuestionTopicLinks = new Set(matchedAssociations.map(item => [
   item.topicId,
   item.level,
   item.year,
+  item.sitting,
   item.n,
 ].join('|'))).size;
 const physicalMappings = localPapers.reduce((sum, paper) => sum + paper.q.length, 0);
@@ -580,7 +631,7 @@ if (
   || summary.newlyAddedPaperVariants !== 5
   || summary.newlyAddedPhysicalMappings !== 48
   || sourceBlockedBreakdown.beforeLocalCorpus !== 225
-  || sourceBlockedBreakdown.deferredSittings !== 49
+  || sourceBlockedBreakdown.deferredSittings !== 49 - deferredExpected.matched
   || sourceBlockedBreakdown.officialSamplePapers !== 91
 ) {
   throw new Error('Construction Studies corpus or source-boundary totals changed unexpectedly');
@@ -614,10 +665,11 @@ const runtime = {
   headingTails: tails,
   partReferences: compactPartReferences,
   questionMappings,
+  deferredQuestionMappings,
   summary,
 };
 
-fs.writeFileSync(TAGS_PATH, `${JSON.stringify(localPapers, null, 1)}\n`);
+fs.writeFileSync(TAGS_PATH, `${JSON.stringify([...localPapers, ...deferredPapers], null, 1)}\n`);
 fs.writeFileSync(CURRICULUM_CROSSWALK_PATH, `${JSON.stringify(curriculumCrosswalk, null, 2)}\n`);
 fs.writeFileSync(OUTPUT_PATH, `${JSON.stringify(evidence, null, 2)}\n`);
 fs.writeFileSync(RUNTIME_PATH, `${JSON.stringify(runtime)}\n`);
