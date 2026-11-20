@@ -117403,6 +117403,7 @@
   "questionRef": "2022 HL Q2(e) — Deferred sitting",
   "questionText": "Having separated the aqueous and organic layers into two separate flasks, describe how a dry sample of clove oil is then obtained.",
   "stem": "Eugenol (boiling point 254 °C) is a heat sensitive substance that can be extracted from cloves as the major component of clove oil using steam distillation. The distillate produced consists of an emulsion of clove oil and water. Liquid‐liquid extraction is then used to isolate the clove oil from the distillate. The structural formula of eugenol is shown.",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q2",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -117464,6 +117465,7 @@
   "questionRef": "2022 HL Q2(g) — Deferred sitting",
   "questionText": "Give a commercial use for clove oil.",
   "stem": "Eugenol (boiling point 254 °C) is a heat sensitive substance that can be extracted from cloves as the major component of clove oil using steam distillation. The distillate produced consists of an emulsion of clove oil and water. Liquid‐liquid extraction is then used to isolate the clove oil from the distillate. The structural formula of eugenol is shown.",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q2",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -119956,6 +119958,7 @@
   "questionRef": "2022 HL Q11(d)B(iii) — Deferred sitting",
   "questionText": "Describe one feature of the process that reduces the cost of producing aluminium.",
   "stem": "Although aluminium is placed before (above) iron in the electrochemical series, an object made from aluminium will corrode much more slowly than an object made from iron if both are exposed to air and water. Why is this the case? Alumina (Al₂O₃) is exported from Ireland to be processed into pure aluminium by the electrolysis of the molten oxide in a cell similar to that shown in the diagram above.",
+  "figureKey": "chemistry-2022-HL-deferred-paper-q11d-b",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -122623,6 +122626,7 @@
   "questionRef": "2023 HL Q1(b)(i) — Deferred sitting",
   "questionText": "What is a standard solution?",
   "stem": "The dissolved oxygen concentration of lake water, supplied in a stoppered sample bottle completely filled with the water, was determined as summarised below. A small quantity of a concentrated solution of Mn²⁺ ions was added, using a dropper as shown in the diagram. The stopper was replaced carefully and the bottle was inverted several times. Then a small quantity of a concentrated solution of alkaline potassium iodide (KOH/KI) was added to the bottle. This addition was made in a similar way and the bottle was stoppered and inverted again. Some of the Mn²⁺ ions were oxidised by the dissolved oxygen present to Mn^x+ (x = 3 or 4). The Mn^x+ compounds appeared as a precipitate. A small volume of concentrated sulfuric acid was then added to the water sample using a dropper so that it flowed down the inside of the neck of the bottle and once again the bottle was stoppered and inverted several times. Some of the I⁻ ions added earlier were now oxidised by the Mn^x+ ions present to form a solution of free iodine (I₂). Then 150.0 cm³ portions of the solution from the sample bottle, measured into a conical flask, were titrated with a standard solution of sodium thiosulfate to determine their average free iodine concentration. The balanced equation for the titration reaction is: 2S₂O₃²⁻ + I₂ → S₄O₆²⁻ + 2I⁻",
+  "figureKey": "chemistry-2023-HL-deferred-paper-q1",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -122649,6 +122653,7 @@
   "questionRef": "2023 HL Q1(b)(ii) — Deferred sitting",
   "questionText": "Using a pipette, how could 150.0 cm³ of iodine solution have been measured accurately and transferred into the conical flask?",
   "stem": "The dissolved oxygen concentration of lake water, supplied in a stoppered sample bottle completely filled with the water, was determined as summarised below. A small quantity of a concentrated solution of Mn²⁺ ions was added, using a dropper as shown in the diagram. The stopper was replaced carefully and the bottle was inverted several times. Then a small quantity of a concentrated solution of alkaline potassium iodide (KOH/KI) was added to the bottle. This addition was made in a similar way and the bottle was stoppered and inverted again. Some of the Mn²⁺ ions were oxidised by the dissolved oxygen present to Mn^x+ (x = 3 or 4). The Mn^x+ compounds appeared as a precipitate. A small volume of concentrated sulfuric acid was then added to the water sample using a dropper so that it flowed down the inside of the neck of the bottle and once again the bottle was stoppered and inverted several times. Some of the I⁻ ions added earlier were now oxidised by the Mn^x+ ions present to form a solution of free iodine (I₂). Then 150.0 cm³ portions of the solution from the sample bottle, measured into a conical flask, were titrated with a standard solution of sodium thiosulfate to determine their average free iodine concentration. The balanced equation for the titration reaction is: 2S₂O₃²⁻ + I₂ → S₄O₆²⁻ + 2I⁻",
+  "figureKey": "chemistry-2023-HL-deferred-paper-q1",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -122675,6 +122680,7 @@
   "questionRef": "2023 HL Q1(b)(iii) — Deferred sitting",
   "questionText": "Name the indicator used in the titrations.",
   "stem": "The dissolved oxygen concentration of lake water, supplied in a stoppered sample bottle completely filled with the water, was determined as summarised below. A small quantity of a concentrated solution of Mn²⁺ ions was added, using a dropper as shown in the diagram. The stopper was replaced carefully and the bottle was inverted several times. Then a small quantity of a concentrated solution of alkaline potassium iodide (KOH/KI) was added to the bottle. This addition was made in a similar way and the bottle was stoppered and inverted again. Some of the Mn²⁺ ions were oxidised by the dissolved oxygen present to Mn^x+ (x = 3 or 4). The Mn^x+ compounds appeared as a precipitate. A small volume of concentrated sulfuric acid was then added to the water sample using a dropper so that it flowed down the inside of the neck of the bottle and once again the bottle was stoppered and inverted several times. Some of the I⁻ ions added earlier were now oxidised by the Mn^x+ ions present to form a solution of free iodine (I₂). Then 150.0 cm³ portions of the solution from the sample bottle, measured into a conical flask, were titrated with a standard solution of sodium thiosulfate to determine their average free iodine concentration. The balanced equation for the titration reaction is: 2S₂O₃²⁻ + I₂ → S₄O₆²⁻ + 2I⁻",
+  "figureKey": "chemistry-2023-HL-deferred-paper-q1",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -122701,6 +122707,7 @@
   "questionRef": "2023 HL Q1(b)(iv) — Deferred sitting",
   "questionText": "What colour change was observed in the conical flask at the end point?",
   "stem": "The dissolved oxygen concentration of lake water, supplied in a stoppered sample bottle completely filled with the water, was determined as summarised below. A small quantity of a concentrated solution of Mn²⁺ ions was added, using a dropper as shown in the diagram. The stopper was replaced carefully and the bottle was inverted several times. Then a small quantity of a concentrated solution of alkaline potassium iodide (KOH/KI) was added to the bottle. This addition was made in a similar way and the bottle was stoppered and inverted again. Some of the Mn²⁺ ions were oxidised by the dissolved oxygen present to Mn^x+ (x = 3 or 4). The Mn^x+ compounds appeared as a precipitate. A small volume of concentrated sulfuric acid was then added to the water sample using a dropper so that it flowed down the inside of the neck of the bottle and once again the bottle was stoppered and inverted several times. Some of the I⁻ ions added earlier were now oxidised by the Mn^x+ ions present to form a solution of free iodine (I₂). Then 150.0 cm³ portions of the solution from the sample bottle, measured into a conical flask, were titrated with a standard solution of sodium thiosulfate to determine their average free iodine concentration. The balanced equation for the titration reaction is: 2S₂O₃²⁻ + I₂ → S₄O₆²⁻ + 2I⁻",
+  "figureKey": "chemistry-2023-HL-deferred-paper-q1",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -122754,6 +122761,7 @@
   "questionRef": "2023 HL Q1(c)(ii) — Deferred sitting",
   "questionText": "the number of moles of I₂ in 150.0 cm³ of the solution titrated,",
   "stem": "The dissolved oxygen concentration of lake water, supplied in a stoppered sample bottle completely filled with the water, was determined as summarised below. A small quantity of a concentrated solution of Mn²⁺ ions was added, using a dropper as shown in the diagram. The stopper was replaced carefully and the bottle was inverted several times. Then a small quantity of a concentrated solution of alkaline potassium iodide (KOH/KI) was added to the bottle. This addition was made in a similar way and the bottle was stoppered and inverted again. Some of the Mn²⁺ ions were oxidised by the dissolved oxygen present to Mn^x+ (x = 3 or 4). The Mn^x+ compounds appeared as a precipitate. For every one mole of dissolved oxygen (O₂) in the lake water sample, two moles of free iodine (I₂) were formed. The sodium thiosulfate solution used in the titrations contained 3.72 g Na₂S₂O₃∙5H₂O per litre. If, on average, 7.6 cm³ of this solution were required for complete reaction with 150.0 cm³ portions of the I₂ solution titrated, find",
+  "figureKey": "chemistry-2023-HL-deferred-paper-q1",
   "tariffModel": {
    "kind": "fixed"
   },

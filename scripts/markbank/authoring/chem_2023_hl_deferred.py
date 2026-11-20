@@ -280,6 +280,9 @@ _ids['q9-a-iii']['stem'] = ''
 # printed ask (questionFigureIncludesPrompt: False).
 PAPER_FIGURES = {
     'q1-a-i-iii': 'paper-q1',                                       # the dropper and the stoppered sample bottle
+    # Q1(b) and Q1(c)(ii) carry Q1's stem, "using a dropper as shown in the diagram" (card lint, 20 Nov); Q1(c)(i),
+    # (iii) and (iv) already show the scheme's answer and Q1(a) the paper's drawing.
+    **{c: 'paper-q1' for c in ('q1-b-i', 'q1-b-ii', 'q1-b-iii', 'q1-b-iv', 'q1-c-ii')},
     'q2-c-iv': 'paper-q2c',                                         # the fluted filter paper "as shown"
     'q3-a-i-iii': 'paper-q3a',                                      # the hazard pictogram
     **{c: 'paper-q3c' for c in ('q3-c-i', 'q3-c-ii')},              # the results table

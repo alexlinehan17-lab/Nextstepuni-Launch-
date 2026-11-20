@@ -35830,6 +35830,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "evaporate", marks: 6, contextNote: "The scheme prices these points [2 × 6], one each.", openList: true },
     { id: "r-2", kind: "point", verbatim: "solvent", marks: 6, contextNote: "The scheme adds: [Allow drying agent (MgSO₄, Na₂SO₄, CaCl₂, etc) for (6)]", openList: true },
     ],
+    figure: {
+          "candId": "chemistry-2022-HL-deferred-paper-q2",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-deferred-paper-q2.png",
+          "srcHash": "862517c6a99af6fe67f8b8eae3ddb34e",
+          "alt": "The structural formula of eugenol as the paper prints it: on the left, a carbon–carbon double bond with two H atoms on its end carbon and one on the other, joined through CH₂ to a benzene ring (a hexagon with a circle inside); the ring carries OH at its top right and an O–CH₃ group at its lower right.",
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -35867,6 +35875,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "flavouring / preserve food / spice / antiseptic / toothache treatment / perfumes (soaps)", marks: 3, openList: true },
     ],
+    figure: {
+          "candId": "chemistry-2022-HL-deferred-paper-q2",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-deferred-paper-q2.png",
+          "srcHash": "862517c6a99af6fe67f8b8eae3ddb34e",
+          "alt": "The structural formula of eugenol as the paper prints it: on the left, a carbon–carbon double bond with two H atoms on its end carbon and one on the other, joined through CH₂ to a benzene ring (a hexagon with a circle inside); the ring carries OH at its top right and an O–CH₃ group at its lower right.",
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -37116,6 +37132,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "DESCRIBE uses hydroelectric power / use of cryolite / recycles (reuses) aluminium", marks: 6, openList: true },
     ],
+    figure: {
+          "candId": "chemistry-2022-HL-deferred-paper-q11d-b",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-deferred-paper-q11d-b.png",
+          "srcHash": "cb1196cc22717e2ada1ef2903b08b65c",
+          "alt": "Diagram of the cell that extracts aluminium: three blocks hanging from a bar labelled \"anode\" dip into the liquid labelled \"electrolyte\" in a tank whose lining is labelled \"cathode\"; the metal collects in a layer on the tank's floor and runs out through an outlet at the lower right labelled \"aluminium\".",
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -37202,6 +37226,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "known concentration / known moles (mass) in known volume", marks: 3, openList: true },
     ],
+    figure: {
+          "candId": "chemistry-2023-HL-deferred-paper-q1",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-deferred-paper-q1.png",
+          "srcHash": "6e3f8bf16d341060c9b67a72cf4d65ae",
+          "alt": "A dropper (a dropping pipette with a rubber bulb) held upright, its glass tube passed down through the open neck of a sample bottle so that its tip is well inside the bottle; the bottle's glass stopper lies on its side on the bench beside the bottle, at the lower right.",
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -37216,6 +37248,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "rinsed with deionised (distilled, pure) water and with iodine solution (solution from bottle, solution it will measure) // use filler // fill until bottom of meniscus on mark // read at eye‐level // allow drainage time / last drop to remain (not to be shaken out, blown out) / drain under gravity / touch (tip, tap) pipette against wall of conical flask repeat a number of times to add 150 cm³ in total", marks: 9, contextNote: "The scheme prices this point [3 × 3].", openList: true },
     ],
+    figure: {
+          "candId": "chemistry-2023-HL-deferred-paper-q1",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-deferred-paper-q1.png",
+          "srcHash": "6e3f8bf16d341060c9b67a72cf4d65ae",
+          "alt": "A dropper (a dropping pipette with a rubber bulb) held upright, its glass tube passed down through the open neck of a sample bottle so that its tip is well inside the bottle; the bottle's glass stopper lies on its side on the bench beside the bottle, at the lower right.",
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -37230,6 +37270,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "starch", marks: 3, openList: true },
     ],
+    figure: {
+          "candId": "chemistry-2023-HL-deferred-paper-q1",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-deferred-paper-q1.png",
+          "srcHash": "6e3f8bf16d341060c9b67a72cf4d65ae",
+          "alt": "A dropper (a dropping pipette with a rubber bulb) held upright, its glass tube passed down through the open neck of a sample bottle so that its tip is well inside the bottle; the bottle's glass stopper lies on its side on the bench beside the bottle, at the lower right.",
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -37244,6 +37292,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "blue (black, blue‐black) to colourless", marks: 3, contextNote: "The scheme adds: [Ending with ‘blue (black, blue‐black) to colourless’ essential if other colours mentioned.]", openList: true },
     ],
+    figure: {
+          "candId": "chemistry-2023-HL-deferred-paper-q1",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-deferred-paper-q1.png",
+          "srcHash": "6e3f8bf16d341060c9b67a72cf4d65ae",
+          "alt": "A dropper (a dropping pipette with a rubber bulb) held upright, its glass tube passed down through the open neck of a sample bottle so that its tip is well inside the bottle; the bottle's glass stopper lies on its side on the bench beside the bottle, at the lower right.",
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -37281,6 +37337,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "thiosulfate : I₂ = 2 : 1 ⇒ 0.000114 (1.14 × 10⁻⁴, 57/500000) ÷ 2 = 0.000057 (5.7 × 10⁻⁵, 57/1000000) moles I₂ in 150.0 cm³", marks: 3, contextNote: "The scheme adds: [Divide by 2 essential.]", openList: true },
     ],
+    figure: {
+          "candId": "chemistry-2023-HL-deferred-paper-q1",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-deferred-paper-q1.png",
+          "srcHash": "6e3f8bf16d341060c9b67a72cf4d65ae",
+          "alt": "A dropper (a dropping pipette with a rubber bulb) held upright, its glass tube passed down through the open neck of a sample bottle so that its tip is well inside the bottle; the bottle's glass stopper lies on its side on the bench beside the bottle, at the lower right.",
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

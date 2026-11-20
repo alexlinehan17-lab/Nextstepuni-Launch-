@@ -302,6 +302,8 @@ C.fixed([ka('11', 'd', 'iii', 'B')], TOPIC, 'feature-process-reduces-cost-produc
 _ids = {c['id'][len(C.prefix):]: c for c in C.cards}
 PAPER_FIGURES = {
     'q2-a-i-ii': 'paper-q2',                      # the structure of eugenol it copies
+    # Q2(e) and Q2(g) carry Q2's stem, which ends "The structural formula of eugenol is shown." (card lint, 20 Nov).
+    'q2-e': 'paper-q2', 'q2-g': 'paper-q2',
     'q2-c': 'paper-q2-funnel', 'q2-d-i': 'paper-q2-funnel', 'q2-d-ii': 'paper-q2-funnel',
     'q3-c': 'paper-q3', 'q3-d-i': 'paper-q3', 'q3-d-ii': 'paper-q3', 'q3-e': 'paper-q3',   # the results table
     'q4-j-i-ii': 'paper-q4j',                     # the photographs of nettles and almonds
@@ -310,6 +312,7 @@ PAPER_FIGURES = {
     'q9-b': 'paper-q9b',
     'q10-b-calculation': 'paper-q10b',            # the isotopes' abundances
     'q11-d-b-i': 'paper-q11d-b', 'q11-d-b-ii': 'paper-q11d-b',
+    'q11-d-b-iii': 'paper-q11d-b',                # its stem reads "a cell similar to that shown in the diagram above"
 }
 # A letter that prints several asks and is carded as one card per ask: each card's question is its own
 # printed ask, lifted from the paper's lines (by index, asserted), and its stem the lines it reads from.
