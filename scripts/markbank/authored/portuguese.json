@@ -1,5 +1,459 @@
 [
  {
+  "id": "por-2014-hl-i-1-a",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2014,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-ostracismo",
+  "questionRef": "2014 HL Section I Q1(a)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Ostracismo (§ 2);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Esquecimento, isolamento, proscrição;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2014-hl-i-1-b",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2014,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-canicula",
+  "questionRef": "2014 HL Section I Q1(b)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Canícula(§ 2);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calor excessivo;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2014-hl-i-1-c",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2014,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-maturidade",
+  "questionRef": "2014 HL Section I Q1(c)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Maturidade (§ 3);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Idade madura;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2014-hl-i-1-d",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2014,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-demografico",
+  "questionRef": "2014 HL Section I Q1(d)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Demográfico (§ 4);",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "relativo à população de uma localidade, país ou planeta;",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2014-hl-i-1-e",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2014,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "palavras-sentido-seguintes-expressoes-marginalizacao",
+  "questionRef": "2014 HL Section I Q1(e)",
+  "questionText": "Explique por palavras suas, o sentido das seguintes expressões. Marginalização (§ 11).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "colocar à margem de um grupo ou sociedade, pôr de parte.",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1 ponto)' on the head of Q1, walked down to its 5 parts; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2014-hl-i-2",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2014,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "identifique-inicio-dois-motivos-levaram-autora",
+  "questionRef": "2014 HL Section I Q2",
+  "questionText": "Identifique, no início do texto, os dois motivos que levaram a autora a escrever esta crónica.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "a educação moderna, na pessoa da professora de rugas",
+    "marks": 3,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prices the two motives “(3+2 pontos)”, in the order it prints them."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "a velhice e a identificação do seu abandono.",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2014-hl-i-3",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2014,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "faca-breve-comentario-frase-transcrita-velhos",
+  "questionRef": "2014 HL Section I Q3",
+  "questionText": "Faça um breve comentário à frase transcrita: “os velhos estão-se a tornar nos verdadeiros \"marcianos da Terra\".” (§ 4).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "O comportamento das sociedades modernas ocidentais não se compadece com a serenidade, fragilidade e calma dos mais velhos. Como os mais jovens estão sempre com pressa; tudo deve ser feito rapidamente, os mais velhos são postos de parte, são empurrados “para a solidão e o esquecimento”, são estranhos e não acompanham aquele ritmo.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2014-hl-i-4",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2014,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "principais-caracteristicas-pessoas-mais-velhas-tem",
+  "questionRef": "2014 HL Section I Q4",
+  "questionText": "Quais as principais características das pessoas mais velhas, que têm sido desvalorizadas pelas sociedades modernas?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A modernidade que soube dar uma nova esperança de vida aos idosos, não é capaz reconhecer as suas virtudes e delas retirar exemplos: a experiência, a sabedoria, a memória.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2014-hl-i-5",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2014,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "apresente-pelas-qualidade-vida-mais-velhos",
+  "questionRef": "2014 HL Section I Q5",
+  "questionText": "Apresente as razões pelas quais a qualidade de vida dos mais velhos, nas sociedades mais desenvolvidas, é um paradoxo.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Trata-se de um paradoxo, porque as sociedades modernas tudo fazem para disfarçar a idade, escondendo-a atrás de viagens, operações plásticas, Viagra, esquecendo o que de mais importante os mais velhos nos podem dar. Os mais velhos fazem tudo “para manter a ilusão da juventude eterna”.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2014-hl-i-6",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2014,
+  "section": "I",
+  "topicId": "portuguese-2-0",
+  "conceptId": "velhice-anuncia-homem-seu-destino-futuro",
+  "questionRef": "2014 HL Section I Q6",
+  "questionText": "“A velhice anuncia ao homem o seu destino” e “o futuro pertence aos jovens”. Encontramo- nos perante duas afirmações opostas, ou será possível torná-las complementares? Explique o seu ponto de vista.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "“A velhice anuncia ao homem o seu destino”, porque o enfraquecimento do corpo o coloca perante a verdade da morte. Por outro lado, “o futuro pertence aos jovens” porque é na juventude que construímos os sonhos que pretendemos concretizar ao longo da vida. Contudo, as afirmações são opostas só aparentemente. Velhos ou novos, é do Homem que se fala. O futuro é dos jovens mas desse futuro faz parte também a velhice.",
+    "marks": 5,
+    "contextNote": "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 pontos)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2014-hl-ii-1",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2014,
+  "section": "II",
+  "topicId": "portuguese-2-2",
+  "conceptId": "quem-aprender-lei-divina-homens-novos",
+  "questionRef": "2014 HL Section II Q1",
+  "questionText": "\"Quem aprender a lei divina com homens novos é como se comesse uvas verdes e bebesse vinho saído do lagar; porém, os que aprendem com mestres idosos é como se comessem uvas maduras e bebessem vinho velho.\" Qual o seu ponto de vista perante esta afirmação? Em cerca de 100 palavras, comente a frase transcrita.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "O acesso ao saber com o apoio de pessoas inexperientes não é tão completo nem tão profundo, como a aprendizagem que fazemos com o auxílio de mestres experientes, cuja vida longa, além do conhecimento, lhes proporcionou também o saber-fazer; o contacto com mestres sábios e experientes, permite-nos o acesso ao conhecimento e a capacidade de saber discernir o melhor e mais adequado momento para tomarmos as decisões que depreendem daquele conhecimento; a experiência aguça o nosso sentido crítico e a melhor oportunidade de acção. O “saber de experiência feito” é tantas vezes tão importante como o saber livresco.",
+    "marks": null,
+    "contextNote": "For “(Comentário pessoal, correcto e fluente em cerca de 100 palavras.)”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this ask 30 marks; the paper prints it on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Portuguese",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Portuguese 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+  }
+ },
+ {
+  "id": "por-2014-hl-iii-1",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2014,
+  "section": "III",
+  "topicId": "portuguese-2-2",
+  "conceptId": "proposta-aos-jovens-cabe-formacao-jovens",
+  "questionRef": "2014 HL Section III Q1",
+  "questionText": "Proposta 1 “É aos jovens que cabe a formação dos jovens”",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Se considerarmos apenas a perspectiva do texto, é difícil aceitar o conteúdo da afirmação, porque isso implica pôr de lado a história do próprio ser humano que sempre recorreu à experiência e sabedoria dos mais velhos para ensinar os mais novos; a mesma perspectiva implicaria aceitar que só a educação proporcionada pelos jovens seria eficaz. Por outro lado, não podemos defender que apenas os mais velhos são os únicos veiculadores de uma verdadeira formação. Primeiro, porque colocaria de parte todos aqueles que sendo jovens demonstram capacidades especiais; em segundo lugar, porque a história também nos dá a conhecer casos de pessoas mais velhas e experientes que contudo são péssimos exemplos de formação; por último, se os mais velhos possuem a experiência e o saber de uma vida que os mais jovens não devem desprezar, os mais jovens possuem a novidade, a capacidade de ver de forma diferente e nova; possuem a energia da juventude e alegria de viver, são capazes de proporcionar novas situações, novas perspectivas sobre um tema antigo. Em suma, é no equilíbrio entre as gerações mais velhas e os mais jovens que encontramos a melhor forma de educar através do saber e da experiência, conjugados com a novidade, a força e a capacidade de evoluir dos mais jovens.",
+    "marks": null,
+    "contextNote": "For “Proposta 1”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this ask 40 marks; the paper prints it on page 4 of the question booklet.",
+  "stem": "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)"
+ },
+ {
+  "id": "por-2014-hl-iii-2",
+  "subjectId": "portuguese",
+  "level": "higher",
+  "year": 2014,
+  "section": "III",
+  "topicId": "portuguese-2-2",
+  "conceptId": "proposta-viajamos-pelo-mundo-inteiro-encontrar",
+  "questionRef": "2014 HL Section III Q2",
+  "questionText": "Proposta 2 “Se viajamos pelo mundo inteiro para encontrar a beleza, é necessário levá-la dentro de nós próprios, porque de outra forma nunca a encontraremos.” Ralph Waldo Emerson",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A frase de Emerson congrega na perfeição o tema da beleza humana e natural com os temas da viagem, da aventura e da procura incessante que o homem faz na vida. Um dos primeiros objectivos da nossa existência deve ser a procura da felicidade. Desta forma a busca da beleza contribui para atingir aquela felicidade. Mas não deve o homem preocupar-se apenas em buscar a beleza dos outros e da natureza, sem primeiro a fermentar dentro de si próprio. Beleza e felicidade, sendo conceitos universais, não são discutíveis, ainda que tenhamos de os procurar, acima de tudo, dentro de nós. “Viver é escolher” e “ler é viajar”, são, por exemplo, máximas que enformam o conceito do qual partimos e que ajudam a definir a personalidade humana. Quero com isto dizer que, não só viajando, ipsis verbis, como em toda e qualquer outra “viagem” é de busca de felicidade e beleza que nos devemos ocupar, mas para tanto é necessário estarmos preparados para, através da beleza que possuímos dentro de nós próprios, conseguirmos encontrar a beleza do outro, contribuindo assim para a felicidade dele e de nós próprios, porque todas as coisas são verdadeiramente belas.",
+    "marks": null,
+    "contextNote": "For “Proposta 2”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language."
+   }
+  ],
+  "notes": "The scheme prices this ask 40 marks; the paper prints it on page 4 of the question booklet.",
+  "stem": "Das duas propostas abaixo apresentadas, escolha e responda apenas a uma. (Comente a citação em cerca de 300 palavras)"
+ },
+ {
   "id": "por-2018-hl-i-1-a",
   "subjectId": "portuguese",
   "level": "higher",

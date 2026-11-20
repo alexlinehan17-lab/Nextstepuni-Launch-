@@ -285,6 +285,21 @@ class PaperEach:
                 f"walked down to its {m.group(1)} parts")
 
 
+class PontosSplit:
+    """A split price the scheme prints on line n, "(3+2 pontos)": with k, the
+    k-th printed part's marks (one answer); without, the whole."""
+    def __init__(self, n, k=None):
+        self.n, self.k = n, k
+
+    def read(self, doc):
+        line = doc['raw'][self.n - 1]
+        m = re.search(r'\((\d{1,2})\s*\+\s*(\d{1,2})\s*pontos\)', line)
+        if not m:
+            raise ValueError(f'scheme line {self.n} prints no "(N+M pontos)": {line!r}')
+        parts = [int(m.group(1)), int(m.group(2))]
+        return 1, (sum(parts) if self.k is None else parts[self.k]), m.group(0)
+
+
 class Pontos:
     """A price printed in points, "PARTE II (40 pontos)" (the 2021 scheme): one
     answer at that total."""
@@ -1242,6 +1257,37 @@ READING[(2016, 'hl')] = [
       stem=_CHOICE_P4, source=False),
     C('III2', [shown(SchemeSpan(90, 97), lead=S(89))], total=Pontos(81), whole=True,
       question=(PL(4, 'Proposta 2'), PL(4, 'O mundo pode ser'), PL(4, 'fazermos mais igual'), PL(4, 'Fintan')),
+      stem=_CHOICE_P4, source=False),
+]
+
+
+_Q1_2014 = PaperEach(3, '(5 × 1 ponto)', 1)
+_LEAD_2014 = PLc(3, '1. Explique por palavras suas', after='1. ')
+READING[(2014, 'hl')] = [
+    # Q1's five answers on one run, as 2018.
+    C('I1a', [one(S(52, after='a) ', before=' b)'), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'a) Ostracismo', after='a) ')), stem=()),
+    C('I1b', [one(S(52, after='b) ', before=' c)'), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'b) Canícula', after='b) ')), stem=()),
+    C('I1c', [one(S(52, after='c)'), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'c) Maturidade', after='c) ')), stem=()),
+    C('I1d', [one(S(53, after='d) ', before=' e)'), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'd) Demográfico', after='d) ')), stem=()),
+    C('I1e', [one(J(S(53, after='e) '), S(54)), _Q1_2014)], total=_Q1_2014, note=_JOINED,
+      question=(_LEAD_2014, PLc(3, 'e) Marginalização', after='e) ')), stem=()),
+    # "(3+2 pontos)" over the two motives the scheme names: one row each, at
+    # the printed parts in the order it prints them.
+    C('I2', [one(S(56, after='Os dois temas são ', before='; e a'), PontosSplit(58, 0)),
+             one(J(S(56, after='; e '), S(57)), PontosSplit(58, 1))], total=PontosSplit(58), note=_JOINED,
+      rownote='The scheme prices the two motives “(3+2 pontos)”, in the order it prints them.',
+      question=(PLc(4, '2. Identifique', after='2. '),)),
+    C('II1', [shown(SchemeSpan(87, 94), lead=S(86))], total=Pontos(85), whole=True,
+      question=(PL(4, '"Quem aprender'), PL(4, 'vinho saído'), PL(4, 'maduras e bebessem'),
+                PL(4, 'Qual o seu ponto'), PL(4, 'Em cerca de 100')), stem=()),
+    C('III1', [shown(SchemeSpan(99, 119), lead=S(97))], total=Pontos(95), whole=True,
+      question=(PL(4, 'Proposta 1'), PL(4, '“É aos jovens')), stem=_CHOICE_P4, source=False),
+    C('III2', [shown(SchemeSpan(121, 134), lead=S(120))], total=Pontos(95), whole=True,
+      question=(PL(4, 'Proposta 2'), PL(4, '“Se viajamos'), PL(4, 'nós próprios'), PL(4, 'Ralph Waldo')),
       stem=_CHOICE_P4, source=False),
 ]
 
