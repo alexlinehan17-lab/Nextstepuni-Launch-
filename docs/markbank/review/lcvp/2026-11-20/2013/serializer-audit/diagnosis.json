@@ -1,0 +1,131 @@
+{
+  "reviewer": "Codex second worker /root/russian_independent_review",
+  "recordedAt": "2026-11-20T12:13:48.292510+00:00",
+  "scope": "Read-only post-run diagnosis of every authored and emitted field. No generator, browser, runner/input/lane change or network request.",
+  "failedRun": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/generator-isolation/run-20261120T120853Z-bd3d47b1",
+  "failedRunPreserved": true,
+  "pin": "c369eabcd0156424cf604783dd399d0c5cf64fd2",
+  "generatorSha256": "b7cdf40b63bdec99ef25d83b7d928497dc879bfac6ee3c8790db46ad1526db78",
+  "generatorScratchExactlyEqualsPin": true,
+  "actualGenerator": {
+    "exit": 0,
+    "built": 183,
+    "dropped": 0,
+    "marks": 840
+  },
+  "harnessStatusPreserved": {
+    "builderPassed": false,
+    "success": false,
+    "failure": "AssertionError(('lcvp-2011-cl-a7-2', 'rows', 'authored field changed or omitted'))"
+  },
+  "comparison": {
+    "cards": 183,
+    "rows": 292,
+    "inputIdsExactlyEqualOutputIds": true,
+    "allGeneratedFieldsExactlyAccountedFor": true,
+    "emptyFigureKeyOmissions": 183,
+    "emptyLabelKeyOmissions": 183,
+    "emptyStemOmissions": 31,
+    "newlyDocumentedEmptyRowContextNoteOmissions": 4,
+    "generatedMetadataFieldsPerCard": 6,
+    "sourceBindingsExactlyMatch": 183,
+    "nonEmptySourceOrScoringDifferences": 0
+  },
+  "fourAffectedCards": [
+    {
+      "id": "lcvp-2011-cl-a7-2",
+      "rowIndex": 0,
+      "rowId": "learning",
+      "rowKind": "anyN",
+      "totalMarks": 5,
+      "difference": "Authored contextNote is exactly the empty string; emitted property is absent. All other fields equal."
+    },
+    {
+      "id": "lcvp-2013-cl-b2i",
+      "rowIndex": 0,
+      "rowId": "agencies",
+      "rowKind": "anyN",
+      "totalMarks": 2,
+      "difference": "Authored contextNote is exactly the empty string; emitted property is absent. All other fields equal."
+    },
+    {
+      "id": "lcvp-2013-cl-c1b",
+      "rowIndex": 0,
+      "rowId": "benefits",
+      "rowKind": "anyN",
+      "totalMarks": 2,
+      "difference": "Authored contextNote is exactly the empty string; emitted property is absent. All other fields equal."
+    },
+    {
+      "id": "lcvp-2013-cl-c1b-2",
+      "rowIndex": 0,
+      "rowId": "challenges",
+      "rowKind": "anyN",
+      "totalMarks": 2,
+      "difference": "Authored contextNote is exactly the empty string; emitted property is absent. All other fields equal."
+    }
+  ],
+  "cause": "The verifier compares the complete rows list exactly and documented only top-level empty stems/additionalTopicIds. Existing builder row emission line2167 uses if(r.contextNote), so the four empty strings are intentionally omitted. This is optional serialization, not loss of source prose, options, scoring controls or marks.",
+  "codeEvidence": [
+    {
+      "path": "scripts/markbank/build-deck.mjs",
+      "line": 2167,
+      "source": "if (r.contextNote) parts.push(`contextNote: ${q(r.contextNote)}`);"
+    },
+    {
+      "path": "scripts/markbank/build-deck.mjs",
+      "line": 2244,
+      "meaning": "Existing empty-stem truthy omission"
+    },
+    {
+      "path": "components/MarkBank/SessionScreen.tsx",
+      "line": 785,
+      "meaning": "Row context note renders only when truthy; empty string and missing property both render nothing."
+    },
+    {
+      "path": "components/MarkBank/SessionScreen.tsx",
+      "line": 974,
+      "meaning": "The anyN branch also renders contextNote only when truthy."
+    }
+  ],
+  "minimalVerifierRecommendation": "If root revises a separate future check, permit only a missing row.contextNote whose exact authored value is the empty string; preserve row order, every other key and all non-empty values. Do not drop all falsy values: false, zero and null carry scoring meaning. No payload, shared generator or UI change is required for these four omissions.",
+  "runBoundary": "The historical run remains failed. Its later scratch-write/size and final field-proof steps were not reached; this diagnostic does not silently award them a pass or grant application/Atlas/production clearance. The six emitted metadata fields, including existing QA metadata, do not add a new review or clearance claim.",
+  "inputs": [
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/review-183-fixture.json",
+      "sha256": "a8127bcddd37f0072b6bf22ce45ac1c6dedab4f06188015e73d14ce31f7bcedf"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/revision-input-manifest.json",
+      "sha256": "83ae12b59251c4597c05648c831dd30f4ca86868e88015db1f5bc2f2d97dd8ae"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/independent-binding-bridge.json",
+      "sha256": "ddb8d811ca180e21b9f20e5848709c23656e793f96a9f6e4573372174f361511"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/run-isolated-june-generator.py",
+      "sha256": "8fdcd268afd8ca500817a87cd752780afbc36ae5b6e051ea3a338d8d3bafe96b"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/generator-isolation/run-20261120T120853Z-bd3d47b1/result.json",
+      "sha256": "486d5b8bf2c2becf355b3d71a351dafa358f4a4547e5f8005a83425f5a60e269"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/generator-isolation/run-20261120T120853Z-bd3d47b1/generated-183-asks.json",
+      "sha256": "bf113b2cd613992e299d2641e2aedb82532da8017585503fe3b42403513cc517"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/generator-isolation/run-20261120T120853Z-bd3d47b1/generator.stderr.log",
+      "sha256": "7281fc4d92632092b96fa485ab3604066a8e138ce7c0b7d7f9a5a4088c9b7e9e"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/generator-isolation/run-20261120T120853Z-bd3d47b1/generator.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-20-lcvp-june-builder-recovery/generator-isolation/run-20261120T120853Z-bd3d47b1/scratch/scripts/markbank/build-deck.mjs",
+      "sha256": "b7cdf40b63bdec99ef25d83b7d928497dc879bfac6ee3c8790db46ad1526db78"
+    }
+  ]
+}

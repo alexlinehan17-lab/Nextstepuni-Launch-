@@ -1,0 +1,3272 @@
+[
+  {
+    "id": "lcvp-2013-cl-a1",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "lcvp-2013-a1",
+    "level": "common",
+    "year": 2013,
+    "section": "A",
+    "questionRef": "2013 CL Section A Q1",
+    "questionText": "How long have Andrea and Tom been living in Co. Kilkenny?",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 1,
+    "rows": [
+      {
+        "id": "years",
+        "kind": "point",
+        "verbatim": "6 years.",
+        "marks": 1
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        3
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2013 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2013 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original recording with its sound and follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2013-cl-a2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "lcvp-2013-a2",
+    "level": "common",
+    "year": 2013,
+    "section": "A",
+    "questionRef": "2013 CL Section A Q2",
+    "questionText": "State two ways that Tom and Andrea have benefited from life in rural Ireland compared to life in the USA.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "State two ways that Tom and Andrea have benefited from life in rural Ireland compared to life in the USA.",
+        "marks": 2,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "Rent is cheaper than in New York.",
+            "They get to spend a lot more time together now.",
+            "Kilkenny is a supportive and friendly environment to work and live in.",
+            "Better quality of life.",
+            "Closer to family/miss family."
+          ]
+        },
+        "contextNote": "The scheme gives 2 responses 1 or 0 marks each. Keep all original alternatives."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        3
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2013 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2013 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original recording with its sound and follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2013-cl-a3",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "lcvp-2013-a3",
+    "level": "common",
+    "year": 2013,
+    "section": "A",
+    "questionRef": "2013 CL Section A Q3",
+    "questionText": "How does the Kilkenny Craft Trail benefit ‘Stars by Night’?",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "How does the Kilkenny Craft Trail benefit ‘Stars by Night’?",
+        "marks": 3,
+        "openList": true,
+        "group": {
+          "claimMax": 3,
+          "perOption": 1,
+          "options": [
+            "Range of artists – help each other out/supportive/friendly.",
+            "Tourist attraction – this increases trade for all crafts.",
+            "Get good adverting on the Kilkenny Trail website."
+          ]
+        },
+        "contextNote": "The scheme gives 3 responses 1 or 0 marks each. Keep all original alternatives."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        3
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2013 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2013 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original recording with its sound and follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2013-cl-a4",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-a4",
+    "level": "common",
+    "year": 2013,
+    "section": "A",
+    "questionRef": "2013 CL Section A Q4",
+    "questionText": "Describe some of the ways that Tom organises the finances of ‘Stars by Night’.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Describe some of the ways that Tom organised the finances of ‘Stars by Night’.",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 4,
+          "perOption": 1,
+          "options": [
+            "Savings from the USA.",
+            "Applied to the Craft Council for a grant.",
+            "Negotiates with the Bank.",
+            "Pays the bills.",
+            "Keeps an eye on all the finances."
+          ]
+        },
+        "contextNote": "The scheme gives 4 responses 1 or 0 marks each. Keep all original alternatives."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        4
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2013 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2013 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original recording with its sound and follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2013-cl-a5",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "lcvp-2013-a5",
+    "level": "common",
+    "year": 2013,
+    "section": "A",
+    "questionRef": "2013 CL Section A Q5",
+    "questionText": "Explain two advantages of buying a locally produced craft product as a gift instead of buying a mass-produced product.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Explain two advantages of buying a locally produced craft product as a gift instead of buying a mass produced product.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": "The scheme gives 2 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Buyers know that each piece of craft is good quality/ it is a one-off and hand-crafted. | Buying local helps keep money in the area – helps create jobs.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2013 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2013 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original recording with its sound and follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2013-cl-a6",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "lcvp-2013-a6",
+    "level": "common",
+    "year": 2013,
+    "section": "A",
+    "questionRef": "2013 CL Section A Q6",
+    "questionText": "Outline two problems that craft industries in Ireland have faced in recent years.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Outline two problems that craft industries in Ireland have faced in recent years.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": "The scheme gives 2 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Tourism is down – visitors from abroad find Ireland expensive. | Irish people have less income/saving more/effects of the recession – spending less money now on luxury goods such as crafts. | Costs have risen – cost of importing materials and other costs such as taxes and insurance.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        5
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2013 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2013 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original recording with its sound and follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2013-cl-a7",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-a7",
+    "level": "common",
+    "year": 2013,
+    "section": "A",
+    "questionRef": "2013 CL Section A Q7",
+    "questionText": "Explain three ways in which Information and Communications Technology (ICT) could be used to market Irish craft industries.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Explain three ways in which Information and Communications Technology (ICT) can help to market Irish Craft industries.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "The scheme gives 3 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Websites/YouTube – a website for each firm or a website for all craft firms in an area. | Social media sites such as Facebook, Twitter etc can be used to promote goods. | Phone Apps – available on smart phones / list of craft designers / allows people to design their own jewellery. They can be used as visitors travel to different locations to find craft firms. | Email – Set up a database of customers/artists/contacts.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        6
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2013 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2013 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original recording with its sound and follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2013-cl-a8",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-a8",
+    "level": "common",
+    "year": 2013,
+    "section": "A",
+    "questionRef": "2013 CL Section A Q8",
+    "questionText": "What advice would you give to someone considering setting up a craft business in Ireland at present?",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "What advice would you give to someone considering setting up a craft business in Ireland at present?",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "The scheme gives 3 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Carry out plenty of research into all aspects of the industry before you set up – this will mean less chance of failure. | Have a good business skill set/have a business person on board/mentor/go on training courses/up skill/CEB. | Promote the craft products well – join together with other craft people in the area such as the Kilkenny Craft Trail. Use technology in the promotion of your craft industry – websites, facebook, twitter, smart phone apps etc. | Finances – Ensure you have enough money to start up/ savings/ loan/grants. | Prepare a good business plan/ to examine different aspects of a business or to provide focus for staff. | Choose a suitable location passing trade near other craft workers tourism parking",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        7
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "videoMaterial": {
+      "kind": "source-video",
+      "label": "OFFICIAL VIDEO",
+      "title": "2013 LCVP audiovisual examination",
+      "playbackUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2013/LC462CLP031EV.mp4",
+      "secFileid": "LC462CLP031EV.mp4",
+      "attribution": "State Examinations Commission — original 2013 Common Level English audiovisual recording.",
+      "presentationNote": "Watch the original recording with its sound and follow the printed viewing instructions."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original audiovisual instructions",
+        "pages": [
+          2
+        ],
+        "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2013-cl-b1",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-1",
+    "conceptId": "lcvp-2013-b1",
+    "level": "common",
+    "year": 2013,
+    "section": "B",
+    "questionRef": "2013 CL Section B Q1",
+    "questionText": "Explain three of the following terms: Smartphones Plan of Action Redundancy Package Curriculum Vitae",
+    "stem": "AXEL COMPUTERS Axel Computers, an American transnational corporation has had a manufacturing facility in Claragh since 1991. The Claragh plant manufactures components for desktop computers. It has been the main employer in the town since the early 1990s. With the increase in popularity of laptops, tablet computers and smartphones the demand for larger desktop computers has fallen in recent years. As a result the workforce of the Claragh branch of Axel Computers has fallen to 500 compared to 1,300 at the peak of production in 1995. In 2012, the American head office of Axel Computers announced that the Claragh plant will close in July 2013. There is obvious distress among staff and local business people. Although Axel Computers is not as important to the local economy as before it is still the main employer in the town. The Claragh Chamber of Commerce and Claragh Town Council have decided to come together and devise a ‘Plan of Action’ to deal with the closure of the factory. It is hoped that they will come up with ideas and strategies to minimise the negative effects of the closure. Emphasis will be on job creation, training and community enterprise development. Their first task will be to contact relevant government agencies for support. A town meeting has been arranged so that locals can voice their opinions on developments. Mark Ryan has worked at Axel Computers since he left school twelve years ago. He started working on the assembly line and worked his way up to his present position ‘Manufacturing Technician’. Over the years he participated in as many training opportunities and courses as possible. His most recent job involved installing microprocessors into PC’s. Like all other staff of the computer manufacturing firm, he is greatly concerned about the future. He is worried that his lack of a third level qualification and lack of varied work experience will make it more difficult to find employment in the current economic climate. As Mark has worked for Axel Computers for twelve years he will receive a generous redundancy package. He is considering using this money to gain a formal qualification. The I.T. industry is still strong in Ireland but Mark knows that the major I.T. companies operate in the area of software development. He is interested in achieving a suitable qualification in Computer Software Development and Engineering but is not sure how to get the information on the relevant third level courses. Axel Computers, in an attempt to help staff prepare themselves to re-enter the jobs market, has arranged for everyone to meet with recruitment experts. These professionals will advise on Curriculum Vitae preparation and help each worker to devise his/her strategy to gain employment. Axel will also organise support for staff who wish to set up a business of their own.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "terms",
+        "kind": "criterion",
+        "verbatim": "Explain three of the following terms.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "The paper asks for three of four terms. Keep this one printed choice and every complete model. The paper says Redundancy Package; the scheme heading is Redundancy. No option is compulsory. Keep each response distinct and credit it only once. Complete original guidance: Smartphones: This is a mobile phone/device which has more advanced computing ablity. Some applications which previously were only possible to do on a computer can now be carried out on a smart phone e.g. emails, internet. It can also be used to access phone apps. | Plan of Action: An outline of what needs to be done and by when/by who in order to achieve a particular goal. | Redundancy: A financial settlement paid to compensate employees when they lose their jobs. The payment is based on how long the employee has been working in the firm. | Curriculum Vitae: It is a document used to apply for a job/it gives job seeker’s details such as educational qualifications, work experience, skills, interest/hobbies, referees.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Complete original case study",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          9
+        ],
+        "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2013-cl-b2i",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "lcvp-2013-b2i",
+    "level": "common",
+    "year": 2013,
+    "section": "B",
+    "questionRef": "2013 CL Section B Q2(i)",
+    "questionText": "Name two relevant government agencies the Town Council and Local Chamber of Commerce should consult for support in dealing with the closure of Axel Computers.",
+    "stem": "AXEL COMPUTERS Axel Computers, an American transnational corporation has had a manufacturing facility in Claragh since 1991. The Claragh plant manufactures components for desktop computers. It has been the main employer in the town since the early 1990s. With the increase in popularity of laptops, tablet computers and smartphones the demand for larger desktop computers has fallen in recent years. As a result the workforce of the Claragh branch of Axel Computers has fallen to 500 compared to 1,300 at the peak of production in 1995. In 2012, the American head office of Axel Computers announced that the Claragh plant will close in July 2013. There is obvious distress among staff and local business people. Although Axel Computers is not as important to the local economy as before it is still the main employer in the town. The Claragh Chamber of Commerce and Claragh Town Council have decided to come together and devise a ‘Plan of Action’ to deal with the closure of the factory. It is hoped that they will come up with ideas and strategies to minimise the negative effects of the closure. Emphasis will be on job creation, training and community enterprise development. Their first task will be to contact relevant government agencies for support. A town meeting has been arranged so that locals can voice their opinions on developments. Mark Ryan has worked at Axel Computers since he left school twelve years ago. He started working on the assembly line and worked his way up to his present position ‘Manufacturing Technician’. Over the years he participated in as many training opportunities and courses as possible. His most recent job involved installing microprocessors into PC’s. Like all other staff of the computer manufacturing firm, he is greatly concerned about the future. He is worried that his lack of a third level qualification and lack of varied work experience will make it more difficult to find employment in the current economic climate. As Mark has worked for Axel Computers for twelve years he will receive a generous redundancy package. He is considering using this money to gain a formal qualification. The I.T. industry is still strong in Ireland but Mark knows that the major I.T. companies operate in the area of software development. He is interested in achieving a suitable qualification in Computer Software Development and Engineering but is not sure how to get the information on the relevant third level courses. Axel Computers, in an attempt to help staff prepare themselves to re-enter the jobs market, has arranged for everyone to meet with recruitment experts. These professionals will advise on Curriculum Vitae preparation and help each worker to devise his/her strategy to gain employment. Axel will also organise support for staff who wish to set up a business of their own.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "agencies",
+        "kind": "anyN",
+        "verbatim": "Name two relevant government agencies the Town Council and Local Chamber of Commerce should consult for support in dealing with the closure of Axel Computers.",
+        "marks": 2,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "IDA Ireland",
+            "Enterprise Ireland",
+            "County Enterprise Boards",
+            "FAS (SOLAS) – Department of Soial Protection",
+            "Leader"
+          ]
+        },
+        "contextNote": ""
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Complete original case study",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          10,
+          11
+        ],
+        "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2013-cl-b2ii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "lcvp-2013-b2ii",
+    "level": "common",
+    "year": 2013,
+    "section": "B",
+    "questionRef": "2013 CL Section B Q2(ii)",
+    "questionText": "Outline the types of support these agencies can give to help the town deal with the closure of Axel Computers.",
+    "stem": "AXEL COMPUTERS Axel Computers, an American transnational corporation has had a manufacturing facility in Claragh since 1991. The Claragh plant manufactures components for desktop computers. It has been the main employer in the town since the early 1990s. With the increase in popularity of laptops, tablet computers and smartphones the demand for larger desktop computers has fallen in recent years. As a result the workforce of the Claragh branch of Axel Computers has fallen to 500 compared to 1,300 at the peak of production in 1995. In 2012, the American head office of Axel Computers announced that the Claragh plant will close in July 2013. There is obvious distress among staff and local business people. Although Axel Computers is not as important to the local economy as before it is still the main employer in the town. The Claragh Chamber of Commerce and Claragh Town Council have decided to come together and devise a ‘Plan of Action’ to deal with the closure of the factory. It is hoped that they will come up with ideas and strategies to minimise the negative effects of the closure. Emphasis will be on job creation, training and community enterprise development. Their first task will be to contact relevant government agencies for support. A town meeting has been arranged so that locals can voice their opinions on developments. Mark Ryan has worked at Axel Computers since he left school twelve years ago. He started working on the assembly line and worked his way up to his present position ‘Manufacturing Technician’. Over the years he participated in as many training opportunities and courses as possible. His most recent job involved installing microprocessors into PC’s. Like all other staff of the computer manufacturing firm, he is greatly concerned about the future. He is worried that his lack of a third level qualification and lack of varied work experience will make it more difficult to find employment in the current economic climate. As Mark has worked for Axel Computers for twelve years he will receive a generous redundancy package. He is considering using this money to gain a formal qualification. The I.T. industry is still strong in Ireland but Mark knows that the major I.T. companies operate in the area of software development. He is interested in achieving a suitable qualification in Computer Software Development and Engineering but is not sure how to get the information on the relevant third level courses. Axel Computers, in an attempt to help staff prepare themselves to re-enter the jobs market, has arranged for everyone to meet with recruitment experts. These professionals will advise on Curriculum Vitae preparation and help each worker to devise his/her strategy to gain employment. Axel will also organise support for staff who wish to set up a business of their own. Name two relevant government agencies the Town Council and Local Chamber of Commerce should consult for support in dealing with the closure of Axel Computers.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "response-1",
+        "kind": "criterion",
+        "verbatim": "Outline the types of support these agencies can give to help the town deal with the closure of Axel Computers.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          2,
+          4
+        ],
+        "contextNote": "Response 1 of 2. Use the same two agencies selected in part (i). The scheme gives 2 @ 4m (2 + 2). Keep every agency pool and all its models. No cross-card deduction is invented. Complete original guidance: IDA Ireland: Provides advice for attracting other overseas investment into Ireland. | They can assist businesses who wish to set up in Ireland/grants | They will be able to market Claragh as a location for new companies who can export. | They work on building links between international businesses, third level education, academic and research centres to ensure the necessary skills and research and development capabilities are in place. | They can influence the competitive needs of Ireland's economy by actively engaging in the development of infrastructure, business support services, telecoms, education and regulatory issues e.g. EU policy. | The can provide essential information and statistics on key business sectors and locations within Ireland. | They can offer advice on property solutions for international investors/infrastructure | Enterprise Ireland: Funding supports for start-ups, expansion and research and development. | Export assistance with marketing support and access to an international network. | Supports to develop competitiveness in Irish companies operating in international markets. | Assistance with research and development for new products and services. | Connections to customers overseas. | County Enterprise Board: They provide grants for start-ups, feasibility grants and business expansion grants. | Provide support/advice for small businesses with 10 employees or less, at local level. | They promote entrepreneurship/provide training/capacity building and women-in-business at local level. | The CEBs support both new and established businesses by offering mentoring. | FAS (SOLAS): FÁS provides help and advice for those seeking employment to find suitable job opportunities. | It provides a range of training courses suited to the needs of jobseekers/relevant training/upskilling. | Department of Social Protection: The Community Employment programme benefits the local community and voluntary organisations as those who are unemployed can work for these organisations and receive social welfare payments. | The JobBridge scheme provides work experience placements for those who are unable to get work without experience. | Leader: To stimulate new and innovative ideas. Support the development and creation of rural business. | Funding/grants available to develope new and existing local businesses, facilities and services. | Provide mentoring services to businesses, farm families and community groups in getting their ideas off the ground. | Provide training/upskilling courses.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-2",
+        "kind": "criterion",
+        "verbatim": "Outline the types of support these agencies can give to help the town deal with the closure of Axel Computers.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          2,
+          4
+        ],
+        "contextNote": "Response 2 of 2. Use the same two agencies selected in part (i). The scheme gives 2 @ 4m (2 + 2). Keep every agency pool and all its models. No cross-card deduction is invented. Complete original guidance: IDA Ireland: Provides advice for attracting other overseas investment into Ireland. | They can assist businesses who wish to set up in Ireland/grants | They will be able to market Claragh as a location for new companies who can export. | They work on building links between international businesses, third level education, academic and research centres to ensure the necessary skills and research and development capabilities are in place. | They can influence the competitive needs of Ireland's economy by actively engaging in the development of infrastructure, business support services, telecoms, education and regulatory issues e.g. EU policy. | The can provide essential information and statistics on key business sectors and locations within Ireland. | They can offer advice on property solutions for international investors/infrastructure | Enterprise Ireland: Funding supports for start-ups, expansion and research and development. | Export assistance with marketing support and access to an international network. | Supports to develop competitiveness in Irish companies operating in international markets. | Assistance with research and development for new products and services. | Connections to customers overseas. | County Enterprise Board: They provide grants for start-ups, feasibility grants and business expansion grants. | Provide support/advice for small businesses with 10 employees or less, at local level. | They promote entrepreneurship/provide training/capacity building and women-in-business at local level. | The CEBs support both new and established businesses by offering mentoring. | FAS (SOLAS): FÁS provides help and advice for those seeking employment to find suitable job opportunities. | It provides a range of training courses suited to the needs of jobseekers/relevant training/upskilling. | Department of Social Protection: The Community Employment programme benefits the local community and voluntary organisations as those who are unemployed can work for these organisations and receive social welfare payments. | The JobBridge scheme provides work experience placements for those who are unable to get work without experience. | Leader: To stimulate new and innovative ideas. Support the development and creation of rural business. | Funding/grants available to develope new and existing local businesses, facilities and services. | Provide mentoring services to businesses, farm families and community groups in getting their ideas off the ground. | Provide training/upskilling courses.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "2m",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Complete original case study",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          10,
+          11
+        ],
+        "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2013-cl-b2iii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "lcvp-2013-b2iii",
+    "level": "common",
+    "year": 2013,
+    "section": "B",
+    "questionRef": "2013 CL Section B Q2(iii)",
+    "questionText": "Why is it important for locals to attend the planned town meeting?",
+    "stem": "AXEL COMPUTERS Axel Computers, an American transnational corporation has had a manufacturing facility in Claragh since 1991. The Claragh plant manufactures components for desktop computers. It has been the main employer in the town since the early 1990s. With the increase in popularity of laptops, tablet computers and smartphones the demand for larger desktop computers has fallen in recent years. As a result the workforce of the Claragh branch of Axel Computers has fallen to 500 compared to 1,300 at the peak of production in 1995. In 2012, the American head office of Axel Computers announced that the Claragh plant will close in July 2013. There is obvious distress among staff and local business people. Although Axel Computers is not as important to the local economy as before it is still the main employer in the town. The Claragh Chamber of Commerce and Claragh Town Council have decided to come together and devise a ‘Plan of Action’ to deal with the closure of the factory. It is hoped that they will come up with ideas and strategies to minimise the negative effects of the closure. Emphasis will be on job creation, training and community enterprise development. Their first task will be to contact relevant government agencies for support. A town meeting has been arranged so that locals can voice their opinions on developments. Mark Ryan has worked at Axel Computers since he left school twelve years ago. He started working on the assembly line and worked his way up to his present position ‘Manufacturing Technician’. Over the years he participated in as many training opportunities and courses as possible. His most recent job involved installing microprocessors into PC’s. Like all other staff of the computer manufacturing firm, he is greatly concerned about the future. He is worried that his lack of a third level qualification and lack of varied work experience will make it more difficult to find employment in the current economic climate. As Mark has worked for Axel Computers for twelve years he will receive a generous redundancy package. He is considering using this money to gain a formal qualification. The I.T. industry is still strong in Ireland but Mark knows that the major I.T. companies operate in the area of software development. He is interested in achieving a suitable qualification in Computer Software Development and Engineering but is not sure how to get the information on the relevant third level courses. Axel Computers, in an attempt to help staff prepare themselves to re-enter the jobs market, has arranged for everyone to meet with recruitment experts. These professionals will advise on Curriculum Vitae preparation and help each worker to devise his/her strategy to gain employment. Axel will also organise support for staff who wish to set up a business of their own.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Why is it important for locals to attend the planned town meeting?",
+        "marks": 2,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "They can voice their opinions on developments.",
+            "A good attendance will ensure there is a wide range of representation from the local community.",
+            "More ideas could be generated which will mean a better plan of action.",
+            "There is a greater chance of success for new enterprises/uses if there is local support.",
+            "The local community are involved in working through any problems that arise which is better in the long run/foster better community spirit/creates awareness of issues faced by the community."
+          ]
+        },
+        "contextNote": "The scheme gives 2 responses 1 or 0 marks each. Keep all original alternatives."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Complete original case study",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          10,
+          11
+        ],
+        "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2013-cl-b3i",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-2",
+    "conceptId": "lcvp-2013-b3i",
+    "level": "common",
+    "year": 2013,
+    "section": "B",
+    "questionRef": "2013 CL Section B Q3(i)",
+    "questionText": "Describe how Mark should proceed so that that he obtains the best formal qualification suited to his requirements",
+    "stem": "AXEL COMPUTERS Axel Computers, an American transnational corporation has had a manufacturing facility in Claragh since 1991. The Claragh plant manufactures components for desktop computers. It has been the main employer in the town since the early 1990s. With the increase in popularity of laptops, tablet computers and smartphones the demand for larger desktop computers has fallen in recent years. As a result the workforce of the Claragh branch of Axel Computers has fallen to 500 compared to 1,300 at the peak of production in 1995. In 2012, the American head office of Axel Computers announced that the Claragh plant will close in July 2013. There is obvious distress among staff and local business people. Although Axel Computers is not as important to the local economy as before it is still the main employer in the town. The Claragh Chamber of Commerce and Claragh Town Council have decided to come together and devise a ‘Plan of Action’ to deal with the closure of the factory. It is hoped that they will come up with ideas and strategies to minimise the negative effects of the closure. Emphasis will be on job creation, training and community enterprise development. Their first task will be to contact relevant government agencies for support. A town meeting has been arranged so that locals can voice their opinions on developments. Mark Ryan has worked at Axel Computers since he left school twelve years ago. He started working on the assembly line and worked his way up to his present position ‘Manufacturing Technician’. Over the years he participated in as many training opportunities and courses as possible. His most recent job involved installing microprocessors into PC’s. Like all other staff of the computer manufacturing firm, he is greatly concerned about the future. He is worried that his lack of a third level qualification and lack of varied work experience will make it more difficult to find employment in the current economic climate. As Mark has worked for Axel Computers for twelve years he will receive a generous redundancy package. He is considering using this money to gain a formal qualification. The I.T. industry is still strong in Ireland but Mark knows that the major I.T. companies operate in the area of software development. He is interested in achieving a suitable qualification in Computer Software Development and Engineering but is not sure how to get the information on the relevant third level courses. Axel Computers, in an attempt to help staff prepare themselves to re-enter the jobs market, has arranged for everyone to meet with recruitment experts. These professionals will advise on Curriculum Vitae preparation and help each worker to devise his/her strategy to gain employment. Axel will also organise support for staff who wish to set up a business of their own.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Describe how Mark should proceed so that he obtains the best formal qualification suited to his requirements.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "The scheme gives 3 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Mark needs to assess his own skills, qualifications, experience and aptitudes and identify possible areas needing further development. He needs to determine what qualification he wants to have. | Speak to a career guidance professional. He should make good use of the advice and the career planning opportunities offered by the company. | He can research suitable IT courses using Careers Portal, Qualifax, college websites, FÁS, career fairs, adult guidance services, discover entry requirements or interview someone in the career area. | Mark should check to see if there are any government schemes or grants which will provide him with financial assistance. | Apply for a desired course – CAO/Direct entry",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Complete original case study",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          11,
+          12
+        ],
+        "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2013-cl-b3ii",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-1",
+    "conceptId": "lcvp-2013-b3ii",
+    "level": "common",
+    "year": 2013,
+    "section": "B",
+    "questionRef": "2013 CL Section B Q3(ii)",
+    "questionText": "Mark, as a mature student, has an interview for a place on an IT course. Explain how can he ensure that he performs well at his interview.",
+    "stem": "AXEL COMPUTERS Axel Computers, an American transnational corporation has had a manufacturing facility in Claragh since 1991. The Claragh plant manufactures components for desktop computers. It has been the main employer in the town since the early 1990s. With the increase in popularity of laptops, tablet computers and smartphones the demand for larger desktop computers has fallen in recent years. As a result the workforce of the Claragh branch of Axel Computers has fallen to 500 compared to 1,300 at the peak of production in 1995. In 2012, the American head office of Axel Computers announced that the Claragh plant will close in July 2013. There is obvious distress among staff and local business people. Although Axel Computers is not as important to the local economy as before it is still the main employer in the town. The Claragh Chamber of Commerce and Claragh Town Council have decided to come together and devise a ‘Plan of Action’ to deal with the closure of the factory. It is hoped that they will come up with ideas and strategies to minimise the negative effects of the closure. Emphasis will be on job creation, training and community enterprise development. Their first task will be to contact relevant government agencies for support. A town meeting has been arranged so that locals can voice their opinions on developments. Mark Ryan has worked at Axel Computers since he left school twelve years ago. He started working on the assembly line and worked his way up to his present position ‘Manufacturing Technician’. Over the years he participated in as many training opportunities and courses as possible. His most recent job involved installing microprocessors into PC’s. Like all other staff of the computer manufacturing firm, he is greatly concerned about the future. He is worried that his lack of a third level qualification and lack of varied work experience will make it more difficult to find employment in the current economic climate. As Mark has worked for Axel Computers for twelve years he will receive a generous redundancy package. He is considering using this money to gain a formal qualification. The I.T. industry is still strong in Ireland but Mark knows that the major I.T. companies operate in the area of software development. He is interested in achieving a suitable qualification in Computer Software Development and Engineering but is not sure how to get the information on the relevant third level courses. Axel Computers, in an attempt to help staff prepare themselves to re-enter the jobs market, has arranged for everyone to meet with recruitment experts. These professionals will advise on Curriculum Vitae preparation and help each worker to devise his/her strategy to gain employment. Axel will also organise support for staff who wish to set up a business of their own.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Mark, as a mature student, has an interview for a place on an IT course. Explain how he can ensure that he performs well at his interview.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "The scheme gives 3 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Mark should be punctual for the interview + valid expansion | He should dress appropriately to make a good first impression. | Positive body language shows you are interested e.g. sit upright and firm hand shake/be polite and courteous. | Maintain eye contact with the interviewer. It conveys confidence. | He should speak clearly and slowly so that the interviewer understands and hears all his points. | Answer all questions asked, ask for clarification if unsure, develop answers. | Mark should be well prepared, know the relevant facts to show he has researched the college and the course. Review his CV. He should prepare some questions which he can ask the interviewer. | Do a mock interview + valid expansion",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "missing-expansion",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "unprinted": true,
+        "contextNote": "Only the valid expansions for options 1 and 8 are unprinted. Keep all eight printed options and the existing three two-mark response controls; this notice adds no marks."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Complete original case study",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-question",
+        "label": "OFFICIAL SOURCE",
+        "title": "Original question",
+        "pages": [
+          11,
+          12
+        ],
+        "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+        "presentationNote": "Read the complete original source and question in context."
+      }
+    ]
+  },
+  {
+    "id": "lcvp-2013-cl-c1a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-c1a",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q1(a)",
+    "questionText": "Explain the term ‘Entrepreneur’.",
+    "stem": "An entrepreneur’s life is both challenging and rewarding.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "definition",
+        "kind": "criterion",
+        "verbatim": "Explain the term ‘entrepreneur’.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          2,
+          4
+        ],
+        "contextNote": "The scheme gives the whole definition 2 @ 2m (0, 2). Keep two binary components and the full model; no one-mark award is printed. Keep each response distinct and credit it only once. Complete original guidance: This is a person who uses their initiative / to come up with a business opportunity/idea, takes the risk and starts up a business.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c1b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-c1b",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q1(b)",
+    "questionText": "Describe two benefits",
+    "stem": "An entrepreneur’s life is both challenging and rewarding. Describe two benefits and two challenges for an entrepreneur.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "benefits",
+        "kind": "anyN",
+        "verbatim": "Describe two benefits",
+        "marks": 2,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "Independence - you work for yourself/own boss.",
+            "Personal satisfaction at setting up a business.",
+            "High profits if the business is successful.",
+            "You have control over the decisions made/set your own hours."
+          ]
+        },
+        "contextNote": ""
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c1b-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-c1b-2",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q1(b) — challenges",
+    "questionText": "and two challenges for an entrepreneur.",
+    "stem": "An entrepreneur’s life is both challenging and rewarding. Describe two benefits",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "challenges",
+        "kind": "anyN",
+        "verbatim": "and two challenges for an entrepreneur.",
+        "marks": 2,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "It can be stressful/make all major decisions/need expertise in all areas of business.",
+            "There is a risk of personal and financial failure.",
+            "The business will be affected by the economic climate/hard to get finance/competition.",
+            "You have to work long hours/can never switch off/effect on family life."
+          ]
+        },
+        "contextNote": ""
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c1c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-c1c",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q1(c)",
+    "questionText": "As part of the Leaving Certificate Vocational Programme you have investigated an entrepreneur in your local area. Outline the steps taken to prepare for the interview with this entrepreneur.",
+    "stem": "An entrepreneur’s life is both challenging and rewarding.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "As part of the LCVP you have investigated an entrepreneur in your local area. Outline the steps taken to prepare for the interview with this entrepreneur.",
+        "marks": 8,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "contextNote": "The scheme gives 4 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Research the entrepreneur in the business/service/organisation. | Make initial contact with the entrepreneur. Be precise about arranging date, time and location of interview. Confirm arrangements | Decide on the questions to ask and make sure they are clear and precise. Be clear on the aims of the interview and the information you wish to find out. | Ask your teacher for advice/to review questions before doing the interview. | Practice asking questions/communication skills. Practice the best way to approach the interview. | If interviewing as a team decide in advance the role of each person, interviewer, note taker etc.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        15
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c1d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-c1d",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q1(d)",
+    "questionText": "State three essential personal characteristics of an entrepreneur.",
+    "stem": "An entrepreneur’s life is both challenging and rewarding.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "names",
+        "kind": "criterion",
+        "verbatim": "State three essential personal characteristics of an entrepreneur.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "The scheme gives 3 @ 1m – naming. No repetition of points. Keep each response distinct and credit it only once. Complete original guidance: Risk taker The entrepreneur can take a personal financial risk. This is important as you must be willing to lose out if the enterprise does not succeed. | Self Confidence The entrepreneur has to have confidence/belief in their idea. This allows the person act positively as they believe they will succeed. | Hard working Setting up a business means long hours and willingness to do different types of jobs/can’t afford to pay someone else. | Flexible The entrepreneur should be able to adapt to different situation/roles. Success comes when you are willing to change plans if needed. | Decisive The entrepreneur must be able to make quick informed decisions. This is important as you must not be afraid to make a decision which will affect the running of your business. | Innovation Must have the ability to come up with new ideas/improve on an old idea. Give your product/service an edge on the competition.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        16
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c1d-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-c1d-2",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q1(d) — importance of characteristics",
+    "questionText": "Explain the importance of each characteristic.",
+    "stem": "An entrepreneur’s life is both challenging and rewarding. State three essential personal characteristics of an entrepreneur.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "importance",
+        "kind": "criterion",
+        "verbatim": "Explain the importance of each characteristic.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "The scheme gives 3 @ 2m (1 + 1), Characteristic/ Explanation/ Importance. Explain the same three selected characteristics. No repetition of points. Keep each response distinct and credit it only once. Complete original guidance: Risk taker The entrepreneur can take a personal financial risk. This is important as you must be willing to lose out if the enterprise does not succeed. | Self Confidence The entrepreneur has to have confidence/belief in their idea. This allows the person act positively as they believe they will succeed. | Hard working Setting up a business means long hours and willingness to do different types of jobs/can’t afford to pay someone else. | Flexible The entrepreneur should be able to adapt to different situation/roles. Success comes when you are willing to change plans if needed. | Decisive The entrepreneur must be able to make quick informed decisions. This is important as you must not be afraid to make a decision which will affect the running of your business. | Innovation Must have the ability to come up with new ideas/improve on an old idea. Give your product/service an edge on the competition.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        16
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c2a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-3",
+    "conceptId": "lcvp-2013-c2a",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q2(a)",
+    "questionText": "Outline how you prepared for your work experience placement.",
+    "stem": "Work Experience/Shadowing is a great learning experience.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Outline how you prepared for your work experience placement.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "The scheme gives 3 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Researched the places where it was possible to do work experience. | Prepare a CV/prepare work placement template | Contacted the employer/wrote letter/telephoned/emailed/personal contacts. | Handed in Parental Consent form. | Gave insurance details to the employer. | Researched the type of work to be done/company where placement is to take place. | Checked the starting/finishing times. | Made arrangements for travel/clothes/lunch/necessary equipment | Underwent relevant training/security checks.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        17
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c2b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-3",
+    "conceptId": "lcvp-2013-c2b",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q2(b)",
+    "questionText": "Interpersonal skills are very important in the workplace. Describe two different situations where you demonstrated interpersonal skills during your work experience placement.",
+    "stem": "Work Experience/Shadowing is a great learning experience.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Interpersonal skills are very important in the workplace. Describe two different situations where you demonstrated interpersonal skills during your work placement.",
+        "marks": 4,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "contextNote": "The scheme gives 2 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Dealing with customers/clients, answering queries. | Asking others for help with a task/interacting with other staff/teamwork. | Interviewing a supervisor/owner about the type of work/preparing my career investigation. | Dealing with a difficult task/stressful situation. | Feedback/review.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        17
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c2c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-3",
+    "conceptId": "lcvp-2013-c2c",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q2(c)",
+    "questionText": "Explain how an employer can ensure that students have a meaningful and useful work experience.",
+    "stem": "Work Experience/Shadowing is a great learning experience.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 7,
+    "rows": [
+      {
+        "id": "response-1",
+        "kind": "criterion",
+        "verbatim": "Explain how an employer can ensure that students have a meaningful and useful work experience.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Response 1 of 4. The scheme gives 3 @ 2m (1 + 1), plus 1 @ 1m. Four distinct responses; no uniform mark allocation is inferred. Complete original guidance: Employers should make sure that students receive proper training e.g. Health and Safety information/good induction at the start of the job. | A clearly defined job description should be provided,including start and finish times, dress code, lunch arrangements etc. | They should provide a variety of tasks to broaden the experience. Not given boring non meaningful work. Kept busy/not over worked. | There should be a mentor assigned to the student who will look after them and answer any questions/provide feedback. | Treat the student as a full time employee as far as possible. Not ignored, discriminated against. | Provide information on a career path.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-2",
+        "kind": "criterion",
+        "verbatim": "Explain how an employer can ensure that students have a meaningful and useful work experience.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Response 2 of 4. The scheme gives 3 @ 2m (1 + 1), plus 1 @ 1m. Four distinct responses; no uniform mark allocation is inferred. Complete original guidance: Employers should make sure that students receive proper training e.g. Health and Safety information/good induction at the start of the job. | A clearly defined job description should be provided,including start and finish times, dress code, lunch arrangements etc. | They should provide a variety of tasks to broaden the experience. Not given boring non meaningful work. Kept busy/not over worked. | There should be a mentor assigned to the student who will look after them and answer any questions/provide feedback. | Treat the student as a full time employee as far as possible. Not ignored, discriminated against. | Provide information on a career path.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-3",
+        "kind": "criterion",
+        "verbatim": "Explain how an employer can ensure that students have a meaningful and useful work experience.",
+        "marks": 2,
+        "permittedMarks": [
+          0,
+          1,
+          2
+        ],
+        "contextNote": "Response 3 of 4. The scheme gives 3 @ 2m (1 + 1), plus 1 @ 1m. Four distinct responses; no uniform mark allocation is inferred. Complete original guidance: Employers should make sure that students receive proper training e.g. Health and Safety information/good induction at the start of the job. | A clearly defined job description should be provided,including start and finish times, dress code, lunch arrangements etc. | They should provide a variety of tasks to broaden the experience. Not given boring non meaningful work. Kept busy/not over worked. | There should be a mentor assigned to the student who will look after them and answer any questions/provide feedback. | Treat the student as a full time employee as far as possible. Not ignored, discriminated against. | Provide information on a career path.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-4",
+        "kind": "criterion",
+        "verbatim": "Explain how an employer can ensure that students have a meaningful and useful work experience.",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": "Response 4 of 4. The scheme gives 3 @ 2m (1 + 1), plus 1 @ 1m. Four distinct responses; no uniform mark allocation is inferred. Complete original guidance: Employers should make sure that students receive proper training e.g. Health and Safety information/good induction at the start of the job. | A clearly defined job description should be provided,including start and finish times, dress code, lunch arrangements etc. | They should provide a variety of tasks to broaden the experience. Not given boring non meaningful work. Kept busy/not over worked. | There should be a mentor assigned to the student who will look after them and answer any questions/provide feedback. | Treat the student as a full time employee as far as possible. Not ignored, discriminated against. | Provide information on a career path."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        18
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c2d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-0-3",
+    "conceptId": "lcvp-2013-c2d",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q2(d)",
+    "questionText": "Explain the importance of evaluating work experience.",
+    "stem": "Work Experience/Shadowing is a great learning experience.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Explain the importance of evaluating work experience.",
+        "marks": 8,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "contextNote": "The scheme gives 4 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Evaluation is important as you can reflect on what you have learned/met aims or objectives. | It helps you in the future e.g. decide on the career you want/don’t want. | Evaluation will identify if you have areas you need to improve for the future/what went well or not well. | To see if the experience can help in any of your Leaving Certificate subjects. | To review how you coped with challenges and problems during your placement. | Feedback for other students/teacher. | To see how skills and knowledge can help you in School/Home/Community/future",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        19
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c3a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "lcvp-2013-c3a",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q3(a)",
+    "questionText": "Outline the benefits of recreational facilities and organised activities for teenagers in local areas.",
+    "stem": "My Own Place activity is a valuable way to learn about your local area.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Outline the benefits of recreational facilities and organised activities for teenagers in local areas.",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "Young people will not get into trouble/antisocial behaviour.",
+            "Training/personal development aspect/positive use of their time, from the activities which is good.",
+            "It is good for the young people to socialise outside home/school/social aspect.",
+            "It allows young people who live in different areas/go to different schools to meet and get to know each other.",
+            "It is cheaper on families than young people looking for money to go out etc.",
+            "They will be positive towards their area so they may come up with ideas to improve it.",
+            "Better physical/mental health."
+          ]
+        },
+        "contextNote": "The scheme gives 2 responses 2 or 0 marks each. Keep all original alternatives."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        20
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c3b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-c3b",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q3(b)",
+    "questionText": "The accompanying graph shows the results of part of a survey of teenagers about their preferred choice of recreational facilities in a small town. Explain the steps involved in the successful completion of a survey.",
+    "stem": "My Own Place activity is a valuable way to learn about your local area.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "The accompanying graph shows the results of part of a survey of teenagers preferred choice of recreational facilities in a small town. Explain the steps involved in the successful completion of a survey.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "The scheme gives 3 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Be clear on what information is required/clear instruction/good layout. | Decide on your target audience/group. | Prepare clear questions that are quick and easy to answer/variety of question styles. Do not have too many questions in the survey/no personal/biased/leading questions. | Decide when and where you want to carry out the survey. | Decide how you are going to gather/count the results. Make sure that all the class know how to collate the results/record the results accurately | Present the results in a clear manner. | Use the results to inform action/analyse results",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original recreational-facilities chart and question",
+      "pages": [
+        20
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original pie chart, its title, legend, percentages and question before answering."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c3c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "lcvp-2013-c3c",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q3(c)",
+    "questionText": "Name a voluntary organisation or a community enterprise in your local area.",
+    "stem": "My Own Place activity is a valuable way to learn about your local area.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 1,
+    "rows": [
+      {
+        "id": "name",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": "Name of organisation. 1m. No particular organisation is printed.",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        21
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c3c-2",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "lcvp-2013-c3c-2",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q3(c) — account of the organisation",
+    "questionText": "Write a detailed account of the above body under four relevant headings.",
+    "stem": "My Own Place activity is a valuable way to learn about your local area. Name a voluntary organisation or a community enterprise in your local area.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "account",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 8,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "contextNote": "The scheme gives 4 @ 2m (1 + 1). No Marks for headings. Use the same organisation selected in the first ask and four relevant headings. No chosen-organisation account is printed. Complete original guidance: Outline of activity/Aims and Objectives. What the organisation does. Who they help. Why they were set up. | History of the organisation. | Finances and Fundraising. How they are financed? Fundraising activities. Problems with finance/recession. | Staffing/Volunteers What staff are needed? How they are recruited? Training offered. Benefit of working in the organisation. | Marketing and Promotion How they get publicity? | Development Plans and Future Plans",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ],
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        21
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c3d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-2",
+    "conceptId": "lcvp-2013-c3d",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q3(d)",
+    "questionText": "Community organisations depend on local people to volunteer their time and efforts. Describe how they could encourage more involvement by young people.",
+    "stem": "My Own Place activity is a valuable way to learn about your local area.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Community organisations depend on local people to volunteer their time and efforts. Describe how community organisations can encourage more involvement by young people.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "The scheme gives 3 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Get involved in projects in the local schools. Offer to speak to the classes. Request students to get involved in fundraising. Organise competitions in schools with suitable prizes. | Offer work placements to LCVP and TY students/ gain a new skill eg first aid/coaching/enhances CV/receive awards | Fun filled way to fill their free time/social aspect/social events | Set up clubs for young people. Help the young people set up their own clubs or give them projects within the community organisation. | Have a clearly defined recruitment procedure and publicise it. | Use social networking/celebrity apperances to promote the work of the organisation and communicate with young people. | Allow young people make decisions/have input about what they can do within the organisation.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        22
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c4a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "lcvp-2013-c4a",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q4(a)",
+    "questionText": "Name a business you have visited as part of your Leaving Certificate Vocational Programme.",
+    "stem": "Learning about the businesses operating in your local area is a core part of the Leaving Certificate Vocational Programme.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 1,
+    "rows": [
+      {
+        "id": "unprinted-answer",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 1,
+        "permittedMarks": [
+          0,
+          1
+        ],
+        "contextNote": "Name of the Business. 1m. No particular business is printed.",
+        "unprinted": true
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        23
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c4b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "lcvp-2013-c4b",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q4(b)",
+    "questionText": "Many local businesses actively help and support schools. Explain how a business can help secondary schools in its local area.",
+    "stem": "Learning about the businesses operating in your local area is a core part of the Leaving Certificate Vocational Programme. Name a business you have visited as part of your Leaving Certificate Vocational Programme.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Many local businesses actively help and support schools. Explain how a business can help secondary schools in its local area.",
+        "marks": 8,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "contextNote": "The scheme gives 4 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Offer work experience to students + valid expansion | Accommodate visit outs if appropriate. | Speak to students about what they do/business in general. | Offer sponsorship/donations/services/facilities for school activity eg. Sports team/musicals etc. | Assist with mock interviews/career days in the school. | Sit on the Board of Management in the school. Give advice/practical skills/specialist advice on developments at the school or in the area affecting the school. | Provide mentoring services",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "missing-expansion",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "unprinted": true,
+        "contextNote": "Only option 1 requires an unprinted valid expansion. Keep all seven printed models and four two-mark response controls. This notice adds no marks."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        23
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c4c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-c4c",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q4(c)",
+    "questionText": "Outline four ways the manager/owner of a business can ensure that the business targets are met.",
+    "stem": "Learning about the businesses operating in your local area is a core part of the Leaving Certificate Vocational Programme. Name a business you have visited as part of your Leaving Certificate Vocational Programme.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Outline four ways the manager/owner of a business can ensure that the business targets are met.",
+        "marks": 8,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "contextNote": "The scheme gives 4 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Ensure good planning/Make sure that targets set are realistic/achievable. Make sure all staff know and understand the targets so everyone is working towards the same goal/provide sufficient resources to achieve goal | Put employees/teams in charge of different areas/staffing/provide training. | Review targets frequently and revise/take corrective action if needed//work overtime. | Seek outside help/advice as appropriate. | Offer an incentive such as a bonus or commission. | Watch customer service so that you do not lose customers. Change your product/service to provide what customers want so that they stay loyal. | Market the business well to help generate sales",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        24
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c4d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-1",
+    "conceptId": "lcvp-2013-c4d",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q4(d)",
+    "questionText": "Many businesses have been affected by the current economic recession. Describe some of the strategies businesses could use to overcome the effects of this recession.",
+    "stem": "Learning about the businesses operating in your local area is a core part of the Leaving Certificate Vocational Programme. Name a business you have visited as part of your Leaving Certificate Vocational Programme.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Many businesses have been affected by the current economic recession. Describe some of the strategies businesses could use to overcome the affects of the recession.",
+        "marks": 8,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "contextNote": "The scheme gives 4 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Keep costs/overheads as low as possible e.g. negotiate with suppliers, negotiate with landlords on rent, negotiate with banks to ensure they get the best rates/restructure repayments so that the business can keep going through bad times/make workers redundant. | Concentrate on their core business and do this well. | Provide good customer service so that customers will be loyal. | Introduce product lines/diversify/expand into other countries | Use a marketing campaign to stress the quality of the product. Use market research to stay ahead of the competition/special offers so customers will be getting value for money and will stay with you | Join interest groups e.g. Buy Irish, Fiver Friday that encourage support for Irish business/shop local",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-4",
+            "verbatim": "Response 4",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        25
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c5a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-3",
+    "conceptId": "lcvp-2013-c5a",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q5(a)",
+    "questionText": "List two methods of generating ideas for a class enterprise.",
+    "stem": "As part of the Leaving Certificate Vocational Programme you are required to organise a class enterprise activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 2,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "List two methods of generating ideas for a class enterprise.",
+        "marks": 2,
+        "openList": true,
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "Brainstorming/class discussion/mind maps.",
+            "Market research/survey/questionaire/suggestion box.",
+            "Identify an niche market.",
+            "Review what has been done in the past/analysing failure.",
+            "Use TV/internet to look at seasonal trends which could have good ideas.",
+            "Visit local shops/business to check what sells/competition/look abroad. Research what works in the local area.",
+            "Ask parents/teachers."
+          ]
+        },
+        "contextNote": "The scheme gives 2 responses 1 or 0 marks each. Keep all original alternatives."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        26
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c5b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-c5b",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q5(b)",
+    "questionText": "Outline three reasons for carrying out market research.",
+    "stem": "As part of the Leaving Certificate Vocational Programme you are required to organise a class enterprise activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Outline three reasons for carrying out market research.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "The scheme gives 3 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: You find out if the students would be interested in the product/ what year groups are interested so you can plan your product around them. | You can get an idea of how much students would be willing to pay. | Potential problems could be identified e.g. quality, need for raw materials/start up capital/location. | Make sure money is not wasted, produce the correct quantity. | Information on competitors/whats in the shops/give ideas for new produces to introduce.",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        26
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c5c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-3",
+    "conceptId": "lcvp-2013-c5c",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q5(c)",
+    "questionText": "Draft the Resources and Costs (financial) section of an Action Plan using the information provided. • 200 items sold at €5 each • sponsorship €100 • advertising €75 • raw materials €300 • telephone calls €8.50 • stationery €18",
+    "stem": "As part of the Leaving Certificate Vocational Programme you are required to organise a class enterprise activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 11,
+    "rows": [
+      {
+        "id": "heading-1",
+        "kind": "point",
+        "verbatim": "Resources and Costs/Financial Section [Income/Expenditure]",
+        "marks": 1,
+        "contextNote": "Summary: 7 figures with labels @ 1m each; 4 Headings @ 1m each. The unmarked intermediate totals 1,100.00 and 401.50 remain in this complete printed model and receive no additional marks:\nResources and Costs/Financial Section [Income/Expenditure] \n1m \nRevenue [Income] \n1m \nSales \n1,000  [1] \nSponsorship \n   100  [1] \n1,100.00 \n \nCosts [Expenditure] \n \n1m \nAdvertising \n75.00  [1] \nRaw Materials \n300.00  [1] \nTelephone \n8.50  [1] \nStationery \n  18.00  [1] \n   401.50 \nSurplus[Profit]  \n€698.50 [1] \n \n1m"
+      },
+      {
+        "id": "heading-2",
+        "kind": "point",
+        "verbatim": "Revenue [Income]",
+        "marks": 1
+      },
+      {
+        "id": "heading-3",
+        "kind": "point",
+        "verbatim": "Costs [Expenditure]",
+        "marks": 1
+      },
+      {
+        "id": "heading-4",
+        "kind": "point",
+        "verbatim": "Surplus[Profit]",
+        "marks": 1
+      },
+      {
+        "id": "figure-1",
+        "kind": "point",
+        "verbatim": "Sales 1,000",
+        "marks": 1
+      },
+      {
+        "id": "figure-2",
+        "kind": "point",
+        "verbatim": "Sponsorship 100",
+        "marks": 1
+      },
+      {
+        "id": "figure-3",
+        "kind": "point",
+        "verbatim": "Advertising 75.00",
+        "marks": 1
+      },
+      {
+        "id": "figure-4",
+        "kind": "point",
+        "verbatim": "Raw Materials 300.00",
+        "marks": 1
+      },
+      {
+        "id": "figure-5",
+        "kind": "point",
+        "verbatim": "Telephone 8.50",
+        "marks": 1
+      },
+      {
+        "id": "figure-6",
+        "kind": "point",
+        "verbatim": "Stationery 18.00",
+        "marks": 1
+      },
+      {
+        "id": "figure-7",
+        "kind": "point",
+        "verbatim": "Surplus[Profit] €698.50",
+        "marks": 1
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        27
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c5d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-c5d",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q5(d)",
+    "questionText": "Identify a product/service you might like to promote. State and explain three types of advertising that could be used to promote this product/service.",
+    "stem": "As part of the Leaving Certificate Vocational Programme you are required to organise a class enterprise activity.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "criterion",
+        "verbatim": "Identify a product/service you might like to promote. State and explain three types of advertising that could be used to promote this product/service.",
+        "marks": 6,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "contextNote": "The scheme gives 3 responses 2 marks each in printed one-mark components. Keep each response distinct and credit it only once. Complete original guidance: Television. Television is very effective and seen by many. Good visuals may be used/cinema | Radio has a large target audience and advertising can be more specific e.g. Radio 1 for an older age group. | Posters/billboards/flyers/buses/press releases. | Special promotions e.g. free samples which can be given out with an existing product or with a complementary product. This is easy to do and provides direct access to the market/stand at a trade fair/celebrity endorsement. | Sponsorship of local event/team. This is good for encouraging new customers and keeping the name fresh. | Run a competition such as writing a slogan for the product. | Newspapers/magazines. | Use of ICT – Facebook/Twitter/Email/Phone apps",
+        "parts": [
+          {
+            "id": "response-1",
+            "verbatim": "Response 1",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-2",
+            "verbatim": "Response 2",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "response-3",
+            "verbatim": "Response 3",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "missing-expansion",
+        "kind": "criterion",
+        "verbatim": "The scheme prints no answer for this part.",
+        "marks": 0,
+        "unprinted": true,
+        "contextNote": "Only the explanations for printed options 3, 7 and 8 are absent. Retain all eight models and three two-mark response controls. The generic (1 + 1) does not label separate state/explain allocations; the whole ask carries six marks. No product-name mark is printed or invented."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        28
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c6a",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-c6a",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q6(a)",
+    "questionText": "Outline the benefits of inviting a guest speaker into school to address the LCVP Link Modules class.",
+    "stem": "Visitors into the classroom are a valuable way of learning about local businesses/community organisations.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Outline the benefits of inviting a guest speaker into school to address the LCVP Link Modules class",
+        "marks": 4,
+        "openList": true,
+        "group": {
+          "claimMax": 4,
+          "perOption": 1,
+          "options": [
+            "Planning this visit is good teamwork activity so the class learns from this.",
+            "You learn about the organisation which may also help in a career choice.",
+            "Developes a relationship with the local business/community organisation which will help in the future/work experience/mentoring/visit out.",
+            "Class have information they can use to write up a portfolio item such as a Summary Report.",
+            "You have experience organising a visit-in.",
+            "Comunication skills are tested/improved as someone has to welcome, thank and ask questions."
+          ]
+        },
+        "contextNote": "The scheme gives 4 responses 1 or 0 marks each. Keep all original alternatives."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        29
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c6b",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-c6b",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q6(b)",
+    "questionText": "Outline the steps that should be taken on the day of the visit in to ensure that the event is successful.",
+    "stem": "Visitors into the classroom are a valuable way of learning about local businesses/community organisations.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 5,
+    "rows": [
+      {
+        "id": "responses",
+        "kind": "anyN",
+        "verbatim": "Outline the steps that should be taken on the day of the visit to ensure that the event is successful.",
+        "marks": 5,
+        "openList": true,
+        "group": {
+          "claimMax": 5,
+          "perOption": 1,
+          "options": [
+            "Confirm the time of the talk on the day.",
+            "Make sure room is ready e.g set out chairs.",
+            "Ensure that refreshments/water are in place.",
+            "Check any equipment that is being used eg data projectors/ micro phones/dvd players etc..",
+            "Draw up a list of jobs to be done. Ensure that all students with jobs are in school, if not get new people to do them, so that everything is done.",
+            "Practice the introduction, thank you’s and questions so that these go well/meet and greet.",
+            "Make sure that all class members have a copy/pen to take notes.",
+            "Watch the time keeping so that you do not run out of time for questions/get in trouble with other teachers for being late."
+          ]
+        },
+        "contextNote": "The scheme gives 5 responses 1 or 0 marks each. Keep all original alternatives."
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        29
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c6c",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-c6c",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q6(c)",
+    "questionText": "Draft an email to the manager of a local business/community organisation inviting him/her to speak to the LCVP class.",
+    "stem": "Visitors into the classroom are a valuable way of learning about local businesses/community organisations.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 7,
+    "rows": [
+      {
+        "id": "email-1",
+        "kind": "point",
+        "verbatim": "To",
+        "marks": 1,
+        "contextNote": "Complete original email and printed marking directions:\nTo: \nEmail address \nSubject: \nClass visit. \nDear Ms ................ \nI am writing on behalf of my 5th year class in .................... School.  As part of our Link Modules \ncourse we want to learn about .................... \nWe would like to invite you to speak to our class on the work \nof your organisation.  We have a double class on Tuesday \nNovember 15th at 2:30pm.  There are 30 students in the class.  \nIf this time and date do not suit you we can arrange an \nalternative. \nI look forward to hearing from you. \nYours sincerely, \nMark Smith  \n5th year LCVP Student. \n\nSummary of Marks \nTo \n   1m \nSubject Line \n1m \nOpening \n1m \nPurpose of email \n1m \nArrangements \n1m \nClosing \n1m \nNeatness/Presentation/Layout 1m \nTotal \n7m"
+      },
+      {
+        "id": "email-2",
+        "kind": "point",
+        "verbatim": "Subject Line",
+        "marks": 1
+      },
+      {
+        "id": "email-3",
+        "kind": "point",
+        "verbatim": "Opening",
+        "marks": 1
+      },
+      {
+        "id": "email-4",
+        "kind": "point",
+        "verbatim": "Purpose of email",
+        "marks": 1
+      },
+      {
+        "id": "email-5",
+        "kind": "point",
+        "verbatim": "Arrangements",
+        "marks": 1
+      },
+      {
+        "id": "email-6",
+        "kind": "point",
+        "verbatim": "Closing",
+        "marks": 1
+      },
+      {
+        "id": "email-7",
+        "kind": "point",
+        "verbatim": "Neatness/Presentation/Layout",
+        "marks": 1
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        30
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  },
+  {
+    "id": "lcvp-2013-cl-c6d",
+    "subjectId": "lcvp",
+    "topicId": "lcvp-link-modules-1-0",
+    "conceptId": "lcvp-2013-c6d",
+    "level": "common",
+    "year": 2013,
+    "section": "C",
+    "questionRef": "2013 CL Section C Q6(d)",
+    "questionText": "Describe how your class would evaluate the success of the visit in from the guest speaker.",
+    "stem": "Visitors into the classroom are a valuable way of learning about local businesses/community organisations.",
+    "figureKey": "",
+    "labelKey": [],
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "response-1",
+        "kind": "criterion",
+        "verbatim": "Describe how your class would evaluate the success of the visit-in from the guest speaker.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 1 of 3. The scheme gives 3 @ 3m (1 + 1 + 1): Heading / Explanation / Reason. One requested description, with three complete evaluation responses. Keep all five full models. Complete original guidance: Questionnaire: Can be given to the organization visited as well as to the class Reason: Easy to administer/collate results. Can be completed anonymously. Generally inexpensive. Good response rate. They are objective. | Ask Teachers/Member of organisation visited for their opinion. Reason: Allows the class to practice their interview/communication skills. Questions can be explained if necessary. Easy to do. No cost involved. You will get honest feedback/review of teamwork. | Quality of report -has enough information/correct type of information been learned. Reason: Easy method to use as all class members must produce a report. Reports can be compared easily. | Review of Teamwork to see if the class put into practice what they have learned. Reason Objective was to work well as a team. All class members are aware of what is involved. | Class Discussion: Varying opinions and discussions can be taken on board. Reason Easy to organize Everyone can participate. Allows one to see how much was learned. Good to show improvement or practice in communication skills.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-3",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-2",
+        "kind": "criterion",
+        "verbatim": "Describe how your class would evaluate the success of the visit-in from the guest speaker.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 2 of 3. The scheme gives 3 @ 3m (1 + 1 + 1): Heading / Explanation / Reason. One requested description, with three complete evaluation responses. Keep all five full models. Complete original guidance: Questionnaire: Can be given to the organization visited as well as to the class Reason: Easy to administer/collate results. Can be completed anonymously. Generally inexpensive. Good response rate. They are objective. | Ask Teachers/Member of organisation visited for their opinion. Reason: Allows the class to practice their interview/communication skills. Questions can be explained if necessary. Easy to do. No cost involved. You will get honest feedback/review of teamwork. | Quality of report -has enough information/correct type of information been learned. Reason: Easy method to use as all class members must produce a report. Reports can be compared easily. | Review of Teamwork to see if the class put into practice what they have learned. Reason Objective was to work well as a team. All class members are aware of what is involved. | Class Discussion: Varying opinions and discussions can be taken on board. Reason Easy to organize Everyone can participate. Allows one to see how much was learned. Good to show improvement or practice in communication skills.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-3",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "id": "response-3",
+        "kind": "criterion",
+        "verbatim": "Describe how your class would evaluate the success of the visit-in from the guest speaker.",
+        "marks": 3,
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "contextNote": "Response 3 of 3. The scheme gives 3 @ 3m (1 + 1 + 1): Heading / Explanation / Reason. One requested description, with three complete evaluation responses. Keep all five full models. Complete original guidance: Questionnaire: Can be given to the organization visited as well as to the class Reason: Easy to administer/collate results. Can be completed anonymously. Generally inexpensive. Good response rate. They are objective. | Ask Teachers/Member of organisation visited for their opinion. Reason: Allows the class to practice their interview/communication skills. Questions can be explained if necessary. Easy to do. No cost involved. You will get honest feedback/review of teamwork. | Quality of report -has enough information/correct type of information been learned. Reason: Easy method to use as all class members must produce a report. Reports can be compared easily. | Review of Teamwork to see if the class put into practice what they have learned. Reason Objective was to work well as a team. All class members are aware of what is involved. | Class Discussion: Varying opinions and discussions can be taken on board. Reason Easy to organize Everyone can participate. Allows one to see how much was learned. Good to show improvement or practice in communication skills.",
+        "parts": [
+          {
+            "id": "component-1",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-2",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "component-3",
+            "verbatim": "1m",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "Original 2013 marking scheme allocation."
+    },
+    "sourceMaterial": {
+      "kind": "source-question",
+      "label": "OFFICIAL SOURCE",
+      "title": "Original question",
+      "pages": [
+        31
+      ],
+      "attribution": "SEC LCVP Link Modules 2013 Common Level — © State Examinations Commission.",
+      "presentationNote": "Read the complete original source and question in context."
+    }
+  }
+]
