@@ -65,23 +65,63 @@ describe('Mark Bank', () => {
 });
 
 describe('Listening Studio', () => {
-  it('opens on the student\'s first subject with listenings and lists its papers by question', async () => {
-    render(<MarkBank studio uid="student-a" now={() => NOW}
-      studentSubjects={[{ subjectName: 'Biology', level: 'higher' }, { subjectName: 'Music', level: 'higher' }]} />);
-    expect(await screen.findByRole('heading', { level: 1, name: 'Listening Studio' })).toBeInTheDocument();
+  const mount = (subjects = [{ subjectName: 'Biology', level: 'higher' }, { subjectName: 'Music', level: 'higher' }]) => {
+    const leave = vi.fn();
+    render(<MarkBank studio uid="student-a" now={() => NOW} studentSubjects={subjects} onLeaveStudio={leave} />);
+    return { leave };
+  };
+  const chosenPaper = () => screen.getByRole('region', { name: 'The paper you have chosen' });
+
+  it('opens on the student\'s first subject with listenings, as a wall of papers', async () => {
+    const { leave } = mount();
+    expect(await screen.findByRole('dialog', { name: 'Listening Studio' })).toBeInTheDocument();
     await waitFor(() => expect(mocks.loadCards).toHaveBeenCalledWith('music', 'higher'));
-    const paper = await screen.findByRole('region', { name: '2025 Higher' });
-    expect(within(paper).getAllByRole('button')).toHaveLength(6);
+    expect(mocks.library).not.toHaveBeenCalled();
+
+    // The student's own listening subjects are the tabs; Biology has no listening.
+    const tabs = screen.getByRole('group', { name: 'Subject' });
+    expect(within(tabs).getByRole('button', { name: 'Music' })).toHaveAttribute('aria-pressed', 'true');
+    expect(within(tabs).queryByRole('button', { name: 'Biology' })).not.toBeInTheDocument();
+
+    // One tile a paper; the newest is chosen, and its sections are ready to sit.
+    const wall = await screen.findByRole('group', { name: 'Music Higher papers' });
+    expect(within(wall).getAllByRole('button')).toHaveLength(1);
+    expect(within(wall).getByRole('button', { name: /^2025/ })).toHaveAttribute('aria-pressed', 'true');
+    const paper = chosenPaper();
+    expect(within(paper).getByRole('heading', { name: /2025\s*Higher/ })).toBeInTheDocument();
+    expect(within(paper).getAllByRole('button', { name: /^Question \d/ })).toHaveLength(6);
     expect(within(paper).getByRole('button', { name: /^Question 5/ })).toHaveTextContent('3 extracts · 6 parts · 15 marks');
     // A paper says where its recording is: here once its sound files are uploaded, the SEC's site until then.
-    const playsHere = listeningSittings(MUSIC_2025)[0].playsInApp;
-    expect(within(paper).getByText(playsHere ? 'Recording plays here' : 'Recording opens on the SEC site')).toBeInTheDocument();
-    expect(mocks.library).not.toHaveBeenCalled();
+    const sitting = listeningSittings(MUSIC_2025)[0];
+    expect(within(paper).getByText(new RegExp(sitting.playsInApp ? 'Recording plays here' : 'Recording opens on the SEC site'))).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: 'Leave Listening Studio' }));
+    expect(leave).toHaveBeenCalledTimes(1);
+  });
+
+  it('offers every subject with a listening on the subject screen', async () => {
+    mount();
+    fireEvent.click(await screen.findByRole('button', { name: /^All \d+ subjects$/ }));
+    expect(screen.getByRole('heading', { name: 'Choose a subject' })).toBeInTheDocument();
+    for (const name of ['Irish', 'French', 'German', 'Spanish', 'Italian', 'Music', 'Japanese', 'Russian', 'Polish', 'Portuguese']) {
+      expect(screen.getByRole('button', { name: new RegExp(`^${name}`) })).toBeInTheDocument();
+    }
+    expect(screen.getByRole('button', { name: /^Music/ })).toHaveTextContent('One of your subjects');
+    // French is fully hosted, and the screen says how many recordings that is.
+    expect(screen.getByRole('button', { name: /^French/ })).toHaveTextContent(/\d+ recordings play here/);
+
+    fireEvent.click(screen.getByRole('button', { name: /^French/ }));
+    await waitFor(() => expect(mocks.loadCards).toHaveBeenCalledWith('french', 'higher'));
+    // Back on the wall, with the chosen subject beside the student's own.
+    const tabs = await screen.findByRole('group', { name: 'Subject' });
+    expect(within(tabs).getByRole('button', { name: 'French' })).toHaveAttribute('aria-pressed', 'true');
+    expect(within(tabs).getByRole('button', { name: 'Music' })).toBeInTheDocument();
   });
 
   it('saves a part through Mark Bank\'s own recorder, to the same deck and card', async () => {
-    render(<MarkBank studio uid="student-a" studentSubjects={[{ subjectName: 'Music', level: 'higher' }]} now={() => NOW} />);
-    fireEvent.click(await screen.findByRole('button', { name: /^Question 5/ }));
+    mount([{ subjectName: 'Music', level: 'higher' }]);
+    await screen.findByRole('group', { name: 'Music Higher papers' });
+    fireEvent.click(within(chosenPaper()).getByRole('button', { name: /^Question 5/ }));
     const sitting = await screen.findByRole('dialog', { name: 'Listening Studio: Music 2025 Higher, Question 5' });
     fireEvent.click(within(sitting).getByRole('button', { name: 'Next: Excerpt 2' }));
     fireEvent.click(within(sitting).getByRole('button', { name: 'Next: Excerpt 3' }));
@@ -97,5 +137,20 @@ describe('Listening Studio', () => {
     // The next question on the paper is one tap away.
     fireEvent.click(within(sitting).getByRole('button', { name: 'Next: Question 6' }));
     expect(await screen.findByRole('dialog', { name: 'Listening Studio: Music 2025 Higher, Question 6' })).toBeInTheDocument();
+  });
+
+  it('remembers where the student left off and carries on from there', async () => {
+    mount([{ subjectName: 'Music', level: 'higher' }]);
+    await screen.findByRole('group', { name: 'Music Higher papers' });
+    expect(screen.queryByText('Where you left off')).not.toBeInTheDocument();
+    fireEvent.click(within(chosenPaper()).getByRole('button', { name: /^Question 3/ }));
+    const sitting = await screen.findByRole('dialog', { name: 'Listening Studio: Music 2025 Higher, Question 3' });
+    fireEvent.click(within(sitting).getByRole('button', { name: 'Leave this sitting' }));
+    await waitFor(() => expect(screen.queryByRole('dialog', { name: /Question 3$/ })).not.toBeInTheDocument());
+
+    expect(screen.getByText('Where you left off')).toBeInTheDocument();
+    expect(screen.getByText('Music · 2025 Higher · Question 3')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /^Carry on/ }));
+    expect(await screen.findByRole('dialog', { name: 'Listening Studio: Music 2025 Higher, Question 3' })).toBeInTheDocument();
   });
 });
