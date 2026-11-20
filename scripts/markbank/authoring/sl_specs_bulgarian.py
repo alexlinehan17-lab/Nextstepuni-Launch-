@@ -436,6 +436,124 @@ SPECS[2014] = [
 ]
 
 
+# ================================================================ 2015 HL ===
+# Drafted (small-languages lane, 20 Nov): all thirteen asks of this sitting,
+# I1а-д, I2-I6, II1, III1, III2 (all excluded before; no live 2015 cards).
+# The scheme .md was repaired from glyph ids (it read "ɨɬɝɨɜɨɪɢ" for
+# "отговори"); every line cut below was checked against the rendered scheme
+# (pp3-5 at 190 dpi) and reads as printed.
+# Paper (rendered pp2-4): the reading text "За приятелството" pp2-3;
+# "Въпроси (100 точки)" (p4 y56); "Първа част (30 /100)" (p4 y89); Q1 prints
+# "1 точка" as a cell beside each expression а)-д) (p4 y131-182); Q2-Q5 "5
+# точки" each as a cell; Q6 "5 точки" at the END of its own last line (p4
+# y436, "е този, който „хвърля мост през пропастта на това несъответствие”? 5
+# точки"); "Втора част (30/100)" (p4 y466/467); "Трета част (40/100)" (p4
+# y639/641), "Напишете съчинение (минимум 300 думи) на една от следните
+# теми:", two titles joined by "или". No "30 точки"/"40 точки" under the tasks
+# on the paper (the scheme prints them, lines 144, 165).
+# CENSUS FLAGS, settled on the render:
+# - "unpriced-ask" Q1(а)-(д) and "orphan-scheme-ask Section I Q1": the census's
+#   scheme reader (eu_scheme) reads the scheme PDF, whose text layer is still
+#   the glyph-broken one, so it finds Q1-Q6 by number and none of the Cyrillic
+#   letters а)-д) (EuScheme(2015).reading() = I1..I6, no letters, no prices).
+#   READ: the scheme prints Q1's stem (52) and under it, in bold, each
+#   expression with "1 точка" at the right (а) привързаност 53, б) сигурност 55,
+#   в) мистерия 57, г) отчуждение 59, д) морално право 63) and its gloss in
+#   italics after a dash on the line(s) below. Paired by WORDS; the letters
+#   agree with the paper's. The paper prints "1 точка" beside each (census
+#   tariff (1, 1, 1): PP()).
+# - "part-total: ... add to 25": the census reads no tariff for Q6 (its "5
+#   точки" is on the question's own text line, not a cell). 5 x 1 + 5 x 5 =
+#   30 with Q6's printed 5: the part closes. Q6 priced from that line
+#   (PaperP); the scheme prints the same "5 точки" (118). Not a remainder, not
+#   10i.
+# PRICES: I1а-д PP() = 1 each; I2-I5 PP() = 5 each; I6 PaperP = 5; II1 the
+# part head's "(30/100)" (PARTP); III1/III2 "(40/100)" (PARTP). The census
+# reads all three part heads.
+# WHAT THE SCHEME PRINTS (rendered pp3-5; questions bold, answers italic):
+# - Q1: one gloss each after a dash: а) 54; б) 56; в) 58; г) 60-62; д) 64-69.
+# - Q2 (70-72 reprint, "5 точки"): one paragraph after a dash, 73-80.
+# - Q3 (81 reprint): one paragraph after a dash, 82-85.
+# - Q4 (86-87 reprint): one paragraph after a hyphen, 88-92 and, over the
+#   p3/p4 break, 97-101 (93-96 are the page number and head, left out).
+# - Q5 (102-103 reprint): one paragraph after a hyphen, 104-115.
+# - Q6 (116-118 reprint): one paragraph after a hyphen, 119-134.
+# - Part II (135-144 reprint the head and the task, "(около 100 думи) 30
+#   точки"): on p5 the underlined descriptive line "Лична интерпретация, ясни и
+#   непротиворечиви идеи." (149), its own heading "Различни възможности за
+#   отговор:" (150) and one paragraph of content (151-159).
+# - Part III (160-165 reprint the head, the instruction, both titles, "40
+#   точки"): one underlined descriptive line only (166-167, "Умение за
+#   създаване на цялостен, ... речеви умения.").
+# - Criteria ("Бележки:", 168-178, italics, p5): "При оценяването на
+#   отговорите от първите две части се прилагат следните критерии:" -- the
+#   FIRST TWO parts (I and II), not Part III. 1. 30 % (170-171), 2. 30 %
+#   (172-174), 3. 30 % (175-176), 4. 10 % (177-178): all four printed
+#   (rendered p5), 100 %.
+# SHAPES:
+# - I1а-д: one(gloss, PP()) each, the row cut after the dash.
+# - I2-I6: one printed paragraph each = one row at the paper's 5 (as the
+#   finished 2013 I6, 2021-2026 Part I), the row cut to the answer.
+# - II1: graded on the four criteria (10b), 9 / 9 / 9 / 3 of the paper's 30;
+#   head the part's descriptive line (149); the criteria's lead quoted and
+#   the paragraph quoted under its own heading as examples (10a), as 2016.
+# - III1/III2: only a descriptive line, criteria for the first two parts
+#   only: R4 (unprinted) at the paper's 40, quoting both (as 2014, 2016).
+# JUDGEMENT CALLS:
+# - Q6's answer is one paragraph: line 125 "Това твърдение ..." continues
+#   the paragraph (rendered p4, no gap, no indent).
+# - The scheme's reprints of Q2-Q6 and of Part II's task match the paper's
+#   words; Q2's reprint opens the inner quotation with “ for the paper's „:
+#   punctuation only, not quoted.
+# - Part III title 2: the scheme reprints it without the paper's "..."
+#   ("с най-малко” (Сократ)" for "с най-малко...“ (Сократ)") and without the
+#   space after „: punctuation only, not quoted.
+# - Questions: I1-I6 and II1 are the census's text (II1's "(30/100)" taken
+#   off); III1/III2 cut from the paper's lines, instruction first (the census
+#   glues "или" to title 1).
+# - Reading text pp2-3 (rendered: the rule and title "За приятелството" p2
+#   y88-144, the text to the byline and author note on p3 y591-682; p4 opens
+#   "Въпроси"). No live 2015 cards to compare.
+# GLYPHS (repaired .md against the render): every word cut matches the
+# rendered page. Three letters are LATIN in the .md: line 64 "e" (U+0065) in
+# "моралното право e отнесено" (I1д's row) and line 121 "caмo" (Latin c, a,
+# o around a Cyrillic м; I6's row). They were Latin in the ORIGINAL text layer
+# too (rawdict: spans ' e ' and ' ca' 'ɦ' 'o ', where every Cyrillic letter
+# came out as IPA), so they are Latin glyphs the SEC typed, rendered
+# identically to е / само; not a repair fault. Lifted as printed, flagged.
+# Also printed as such (rendered p4): line 126 "затов" (for "затова"), kept.
+
+CRIT_2015 = crit((170, 171), (172, 174), (175, 176), (177, 178))
+ESSAY_2015 = 'Напишете съчинение'
+Q6P_2015 = PaperP(4, 'е този, който „хвърля')
+
+
+def _part3_note_2015(d):
+    return (f'Under the two titles the scheme prints only “{L(166, 167).text(d)}” Under '
+            f'“{S(168).text(d)}” it prints its criteria for the first two parts only: “{S(169).text(d)}”')
+
+
+SPECS[2015] = [
+    R('I1а', [one(S(54), PP())], pages=(2, 3)),
+    R('I1б', [one(S(56), PP())], pages=(2, 3)),
+    R('I1в', [one(S(58), PP())], pages=(2, 3)),
+    R('I1г', [one(L(60, 62), PP())], pages=(2, 3)),
+    R('I1д', [one(L(64, 69), PP())], pages=(2, 3)),
+    R('I2', [one(L(73, 80), PP())], pages=(2, 3)),
+    R('I3', [one(L(82, 85), PP())], pages=(2, 3)),
+    R('I4', [one(J(L(88, 92), L(97, 101)), PP())], pages=(2, 3)),
+    R('I5', [one(L(104, 115), PP())], pages=(2, 3)),
+    R('I6', [one(L(119, 134), Q6P_2015)], total=Q6P_2015, pages=(2, 3)),
+    R('II1', [graded(S(149), PARTP(), CRIT_2015)],
+      rownote=both(quote(S(169), lead='The scheme prints'), examples(S(150), L(151, 159))),
+      pages=(2, 3)),
+    R('III1', [unprinted(_part3_note_2015)],
+      question=QP(4, ESSAY_2015, '1. „ Който')),
+    R('III2', [unprinted(_part3_note_2015)],
+      question=QP(4, ESSAY_2015, '2. „ Най-богат')),
+]
+
+
 # ================================================================ 2016 HL ===
 # Drafted (small-languages lane, 20 Nov): the three open asks of this sitting,
 # II1, III1, III2. Live: I1а-д, I2-I6 (10 cards); not touched.

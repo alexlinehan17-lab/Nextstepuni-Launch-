@@ -1067,6 +1067,296 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2015 Higher Level — © State Examinations Commission.",
+    id: "bul-2015-hl-i-1-а", topicId: "bulgarian-0-0", conceptId: "ask",
+    section: "I", questionRef: "2015 HL Section I Q1(а)",
+    questionText: "Какво е значението на думите и на изразите в текста? привързаност",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "чувство на обич към някого, преданост, отдаденост, вярност", marks: 1, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2015 Higher Level — © State Examinations Commission.",
+    id: "bul-2015-hl-i-1-б", topicId: "bulgarian-0-0", conceptId: "ask",
+    section: "I", questionRef: "2015 HL Section I Q1(б)",
+    questionText: "Какво е значението на думите и на изразите в текста? сигурност",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "отсъствие, липса на опасност, защитеност от опасност", marks: 1, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2015 Higher Level — © State Examinations Commission.",
+    id: "bul-2015-hl-i-1-в", topicId: "bulgarian-0-0", conceptId: "ask",
+    section: "I", questionRef: "2015 HL Section I Q1(в)",
+    questionText: "Какво е значението на думите и на изразите в текста? мистерия",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "нещо непознато, необяснимо, тайнствено, загадъчно, неразгадаемо", marks: 1, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2015 Higher Level — © State Examinations Commission.",
+    id: "bul-2015-hl-i-1-г", topicId: "bulgarian-0-0", conceptId: "ask",
+    section: "I", questionRef: "2015 HL Section I Q1(г)",
+    questionText: "Какво е значението на думите и на изразите в текста? отчуждение",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "прекратяване или липса на близост между хората, затваряне на човека в себе си, безразличие към света, отдалечаване от света на другите, социален процес на отчуждение", marks: 1, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2015 Higher Level — © State Examinations Commission.",
+    id: "bul-2015-hl-i-1-д", topicId: "bulgarian-0-0", conceptId: "ask",
+    section: "I", questionRef: "2015 HL Section I Q1(д)",
+    questionText: "Какво е значението на думите и на изразите в текста? морално право",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "моралното право e отнесено към нормите на поведение в обществото - поведението, което общността очаква от човека и определя като нравствено; да имаш морално право означава, че постъпваш съобразено с тези норми, с ценностната система на обществото и с принципите му, отнасящи се до понятията за добро и зло", marks: 1, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2015 Higher Level — © State Examinations Commission.",
+    id: "bul-2015-hl-i-2", topicId: "bulgarian-0-1", conceptId: "ask",
+    section: "I", questionRef: "2015 HL Section I Q2",
+    questionText: "„Точно това е имал предвид гражданинът, който се явил при свети Петър и казал: „Но аз живях седем живота… Имах шестима приятели.” Какво е имал предвид гражданинът?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Всяко приятелство ни обогатява с ново познание и опит, всяко приятелство е за нас като нов, допълнителен живот, „защото следим, интересуваме се и се вълнуваме от това, което той (приятелят ни) чувства, мисли, прави”. „Неговият жизнен опит малко или много става наш жизнен опит, както неговите успехи и радости са донякъде наши успехи и радости или пък неговите провали и страдания са до голяма степен наши провали и страдания.” Авторът говори за богатия обмен, който тече между приятелите, за даровете на приятелството.", marks: 5, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2015 Higher Level — © State Examinations Commission.",
+    id: "bul-2015-hl-i-3", topicId: "bulgarian-0-1", conceptId: "ask",
+    section: "I", questionRef: "2015 HL Section I Q3",
+    questionText: "Коя е голямата магия на приятелството според автора?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "За автора загадката е в началото, в избора на приятел, в откриването му, в раждането на приятелското чувство, което свободно събира „най-невероятни и противоречиви компании”, прескача социални бариери и свързва хора с най-различни характери и интереси.", marks: 5, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2015 Higher Level — © State Examinations Commission.",
+    id: "bul-2015-hl-i-4", topicId: "bulgarian-0-1", conceptId: "ask",
+    section: "I", questionRef: "2015 HL Section I Q4",
+    questionText: "Кое според автора е „главното и единственото условие” на приятелството? Обяснете защо.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Според автора главното условие е общуването или по-скоро неговото „качество”, което е различно от това на общуването с „другите” в обществото. Като че ли „някаква хармонична даденост на характерите” ражда чувството за сигурност и доверието, че човек може „да разкрива себе си неуязвимо”, да споделя открито и да бъде разбран. „Приятелството винаги е съпроводено с чувство за сигурност. То идва от топлото усещане, че не сте сам на този свят, че имате някой, който е с вас, че този някой ви разбира и вие можете да му кажете всичко, да откриете себе си така, както не можете да правите пред другите, защото с тях нямате тази сигурност, с приятеля вие можете да бъдете себе си.”", marks: 5, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2015 Higher Level — © State Examinations Commission.",
+    id: "bul-2015-hl-i-5", topicId: "bulgarian-0-1", conceptId: "ask",
+    section: "I", questionRef: "2015 HL Section I Q5",
+    questionText: "„С приятеля представлението свършва...” За какво „представление” говори авторът и защо с приятеля то свършва?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Представлението е метафора на социалното общуване. В обществото хората са като актьори - играят „присъщи или неприсъщи роли”. На социалното общуване - игра на роли авторът противопоставя приятелското общуване, в което сме това, което сме. В обществото ролите предпазват хората от „студенината и даже враждебността на заобикалящия свят”, ние ги играем „с инстинктивната цел да запазим себе си от внезапен удар и болка, да не позволим никому да проникне в толкова скъпата ни интимност.” С приятеля представлението свършва, ние не играем роли, а сме това, което сме, защото приятелят „има нашето доверие, нашата сигурност, той принадлежи някак към нашата интимност”. Приятелството е сигурност и гаранция, че „по основа сте разбран”.", marks: 5, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2015 Higher Level — © State Examinations Commission.",
+    id: "bul-2015-hl-i-6", topicId: "bulgarian-0-1", conceptId: "ask",
+    section: "I", questionRef: "2015 HL Section I Q6",
+    questionText: "„Има ужасно несъответствие между човек и фактите, които той произвежда.” За какво несъответствие става въпрос и защо приятелят е този, който „хвърля мост през пропастта на това несъответствие”?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Авторът говори за несъответствието между това, което човек е в действителност и непълния му фактически образ в обществото. Обществото не познава човека интимно, затова интерпретира caмo „видимата” страна на личността. „Аз твърдо вярвам, че съществува трагично несъответствие между това, което ние в действителност представляваме и портретите, които делата ни рисуват пред хората.” Това твърдение разкрива смисъла си след казаното преди в текста – в обществото ние играем роли, не се разкриваме изцяло, затов образът ни е „прикрит”, непълен, портретът ни – фрагментарен... Пред приятеля си ние сме такива, каквито сме, приятелят е част от нашата интимност. Пред него ние се разкриваме, защото сме сигурни, че той понася грешките и недостатъците ни, които едва ли би понасял при другите хора. Затова приятелят ни знае много повече за нас, знае, че ние не сме само фрагмента от портрета... Така той става онзи привилегирован, който може да хвърли мост през пропастта на несъответствието...", marks: 5, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2015 Higher Level — © State Examinations Commission.",
+    id: "bul-2015-hl-ii-1", topicId: "bulgarian-1-0", conceptId: "100",
+    section: "II", questionRef: "2015 HL Section II Q1",
+    questionText: "„Приятелското чувство е може би най-волната птица, някога летяла над земята. Защото тя дарява с присъствието си най-различни хора и събира най-невероятни и противоречиви компании. То прескача социални и расови бариери, за да свърже най-различни хора.” Авторът твърди, че „хората могат да бъдат приятели и с най-различни професионални или житейски интереси, с най-различни разбирания и различен интелектуален и емоционален заряд.” Съгласни ли сте с него и защо? (около 100 думи)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Лична интерпретация, ясни и непротиворечиви идеи.", marks: 30, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" The scheme prints: “При оценяването на отговорите от първите две части се прилагат следните критерии:”. Under the scheme's heading “Различни възможности за отговор:”, as examples, not a checklist: “Ако е съгласен с автора, кандидатът би могъл да систематизира и развие някои от идеите в текста, но би могъл и да опровергае автора, като се позове на личния си опит, даде пример за приятелство, породено от взаимност на интереси (професионални, житейски...), сходност на политически възгледи, на етически убеждения и на характери или просто поради групова или клубна принадлежност. Ще бъде предимство, ако кандидатът изрази аргументирано мнение за това дали наистина приятелството може да „прескочи” определени социални и расови бариери.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Яснота и точност на израза – кандидатът разбира добре въпросите и знае как да отговори ясно и точно – 30% ;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Свързаност и непротиворечивост на отговорите – кандидатът използва откъси от текста, които са адекватни на мисълта му, идеите му са непротиворечиви и композицията на съчинението следва определена логика – 30% ;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Езикова компетентност – кандидатът умее свободно да изразява идеите си, езикът на изказването му е ясен и точен – 30% ;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Конвенционални умения – кандидатът владее и прилага граматичната норма и правописа на съвременния български книжовен език – 10%.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "ВТОРА ЧАСТ",
+          "title": "Reading text — answer in Bulgarian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Bulgarian 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2015 Higher Level — © State Examinations Commission.",
+    id: "bul-2015-hl-iii-1", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: „ Който е приятел на всички, не е приятел на никого” (Аристотел)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under the two titles the scheme prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Under “Бележки:” it prints its criteria for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC559ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2015 Higher Level — © State Examinations Commission.",
+    id: "bul-2015-hl-iii-2", topicId: "bulgarian-1-1", conceptId: "ask",
+    section: "III", questionRef: "2015 HL Section III Q2",
+    questionText: "Напишете съчинение (минимум 300 думи) на една от следните теми: „ Най-богат е този, който се задоволява с най-малко...“ (Сократ)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 40, contextNote: "The examination requires every answer in BULGARIAN. The paper prints the rule on page 2: \"Всички отговори трябва да бъдат написани на български език.\" Under the two titles the scheme prints only “Умение за създаване на цялостен, логически последователен (кохерентен и кохезивен) текст, целенасоченост на аргументацията, езикова компетентност и речеви умения.” Under “Бележки:” it prints its criteria for the first two parts only: “При оценяването на отговорите от първите две части се прилагат следните критерии:”", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "higher",
     paperFileid: "LC559ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Bulgarian 2016 Higher Level — © State Examinations Commission.",
