@@ -3959,8 +3959,7 @@
       "When she is sick of playing with her sister her mom makes them a snack; she thinks that February’s snacks are the nicest because it’s Carnevale and her mom was making castagnole and fiocchetti for them they were adding sugar and alchermes",
       "She believes that it would be better to be an only child so you can get your own bedroom you can get a new rucksack every year you get new clothes/you don’t have to wear the clothes from your older brothers and sisters",
       "Camilla feels safe at home/she thinks that home is the place where you are safe home is where family stay, sleep and eat together home is where the children play/have an afternoon snack/do their homework home is the place that is always there waiting for you/home is where you go back to when you have been away home is somewhere that has to exist/cannot but exist",
-      "She has a twin sister/a sister called Sara when they were just born they weren’t very pretty they did not weigh a lot as they had to share the same space in her mom’s womb; Camilla was smaller/she weighed 1,250kg as her sister had taken more room in her mom’s womb; her sister was the mad one/she wanted to do things the other way round;",
-      "Camilla was calmer; Camilla was waiting for her turn without making too much fuss."
+      "She has a twin sister/a sister called Sara when they were just born they weren’t very pretty they did not weigh a lot as they had to share the same space in her mom’s womb; Camilla was smaller/she weighed 1,250kg as her sister had taken more room in her mom’s womb; her sister was the mad one/she wanted to do things the other way round; Camilla was calmer; Camilla was waiting for her turn without making too much fuss."
      ],
      "perOption": 5
     },
@@ -6660,7 +6659,7 @@
   "totalMarks": 20,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “share online” 1 mark; “get as many followers as possible” 1 mark; “make/create videos/photos/material” 1 mark; “create a page online” 1 mark; “Don’t try to do something without a plan” 4 marks; “risk of not being credible” 1 mark; “and not having followers” 1 mark. The scheme prints these answers under the heading “Starting point”; the paper asks for 1 point on it.",
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Starting point”; the paper asks for 1 point on it.",
     "group": {
      "claimMax": 1,
      "options": [
@@ -6674,7 +6673,7 @@
     "verbatim": "Starting point — the answers the scheme accepts"
    },
    {
-    "contextNote": "The scheme prints these answers under the heading “Things to be done”; the paper asks for 2 points on it.",
+    "contextNote": "The scheme also pays part marks for a shorter answer: “share online” 1 mark; “get as many followers as possible” 1 mark; “make/create videos/photos/material” 1 mark; “create a page online” 1 mark. The scheme prints these answers under the heading “Things to be done”; the paper asks for 2 points on it.",
     "group": {
      "claimMax": 2,
      "options": [
@@ -6696,7 +6695,7 @@
     "verbatim": "Things to be done — the answers the scheme accepts"
    },
    {
-    "contextNote": "The scheme prints these answers under the heading “Mistakes to be avoided”; the paper asks for 1 point on it.",
+    "contextNote": "The scheme also pays part marks for a shorter answer: “Don’t try to do something without a plan” 4 marks; “risk of not being credible” 1 mark; “and not having followers” 1 mark. The scheme prints these answers under the heading “Mistakes to be avoided”; the paper asks for 1 point on it.",
     "group": {
      "claimMax": 1,
      "options": [
@@ -7814,7 +7813,7 @@
   "totalMarks": 20,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Cut out from newspaper/ Osservatore romano (any reference” 1 mark. The scheme prints these answers under the heading “What we learn about the letter from the passage.”; the paper asks for 3 points on it. The scheme prints: “Candidate must refer both to the passage and to the text as a whole”.",
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “What we learn about the letter from the passage.”; the paper asks for 3 points on it. The scheme prints: “Candidate must refer both to the passage and to the text as a whole”.",
     "group": {
      "claimMax": 3,
      "options": [
@@ -7833,7 +7832,7 @@
     "verbatim": "What we learn about the letter from the passage. — the answers the scheme accepts"
    },
    {
-    "contextNote": "The scheme prints these answers under the heading “What we know about the letter at the end of the novel”; the paper asks for 1 point on it.",
+    "contextNote": "The scheme also pays part marks for a shorter answer: “Cut out from newspaper/ Osservatore romano (any reference” 1 mark. The scheme prints these answers under the heading “What we know about the letter at the end of the novel”; the paper asks for 1 point on it.",
     "group": {
      "claimMax": 1,
      "options": [
@@ -10697,13 +10696,16 @@
   "totalMarks": 6,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “guitto” 1 mark; “sembrava) fantasma” 1 mark; “truccato” 1 mark.",
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme prints each answer in two halves at 3 marks each. It also pays part marks for a shorter answer: “guitto” 1 mark; “(sembrava) fantasma” 1 mark; “truccato” 1 mark.",
     "group": {
      "claimMax": 2,
      "options": [
-      "Sembrava un guitto (3m) truccato per una parte da fantasma (3m)",
-      "Aveva una piega amara nella bocca (3) uno sguardo stanco e implorante (3)",
-      "(Il ritratto di Roscio) (era) ingrandito a proporzioni naturali (3) lugubremente ritoccato e alluttato (nel vestito e cavatta)(3)"
+      "Sembrava un guitto",
+      "truccato per una parte da fantasma",
+      "Aveva una piega amara nella bocca",
+      "uno sguardo stanco e implorante",
+      "(Il ritratto di Roscio) (era) ingrandito a proporzioni naturali",
+      "lugubremente ritoccato e alluttato (nel vestito e cavatta)"
      ],
      "perOption": 3
     },
@@ -12788,7 +12790,7 @@
   "totalMarks": 20,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She is the president” 1 mark. The scheme prints these answers under the heading “Serendippo”, 15 of the 20 marks.",
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Serendippo”, 15 of the 20 marks.",
     "group": {
      "claimMax": 3,
      "options": [
@@ -12806,7 +12808,7 @@
     "verbatim": "Serendippo — the answers the scheme accepts"
    },
    {
-    "contextNote": "The scheme prints “Etta Polico: Any two of 5 marks (3+2)”.",
+    "contextNote": "The scheme also pays part marks for a shorter answer: “She is the president” 1 mark. The scheme prints “Etta Polico: Any two of 5 marks (3+2)”.",
     "group": {
      "claimMax": 2,
      "options": [
@@ -13175,7 +13177,7 @@
   "totalMarks": 20,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Betta has a helper called Sally who cooks, cleans etc.” 2 marks. The scheme prints these answers under the heading “Grandfather”; the paper asks for 3 points on it. The scheme prints: “Four points are required”.",
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Grandfather”; the paper asks for 3 points on it. The scheme prints: “Four points are required”.",
     "group": {
      "claimMax": 3,
      "options": [
@@ -13201,7 +13203,7 @@
     "verbatim": "Grandfather — the answers the scheme accepts"
    },
    {
-    "contextNote": "The scheme prints these answers under the heading “Betta”; the paper asks for 1 point on it.",
+    "contextNote": "The scheme also pays part marks for a shorter answer: “Betta has a helper called Sally who cooks, cleans etc.” 2 marks. The scheme prints these answers under the heading “Betta”; the paper asks for 1 point on it.",
     "group": {
      "claimMax": 1,
      "options": [
@@ -14612,16 +14614,16 @@
   "questionRef": "2025 OL Section A2 Q5",
   "questionText": "What is Dario Sorgato’s objective? (Par. 5)",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also prints: “(Any five of eight elements)”.",
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints “5 marks (5x1)” and “(Any five of eight elements)”: one mark for each element of this answer you give, up to five. It does not list the eight elements: judge your answer against the 5 marks.",
     "id": "r-1",
-    "kind": "point",
-    "marks": 5,
-    "verbatim": "To facilitate inclusive and accessible walking/in nature (events)so that the disabled can walk and enjoy nature without (the necessity of) a guide (1)"
+    "kind": "criterion",
+    "marks": null,
+    "verbatim": "To facilitate inclusive and accessible walking/in nature (events)so that the disabled can walk and enjoy nature without (the necessity of) a guide"
    }
   ],
   "notes": "The scheme prints the tariff as '5 marks (5x1)'; the paper prints this ask on page 5 of the question booklet.",
@@ -16213,10 +16215,11 @@
   "totalMarks": 5,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Che lui era diverso da suo padre suo zio e cugini” 2 marks. Each answer completes the scheme’s “A chi assomigliava”.",
+    "contextNote": "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Che lui era diverso da suo padre suo zio e cugini” 2 marks.",
     "group": {
      "claimMax": 1,
      "options": [
+      "A chi assomigliava",
       "da dove gli veniva il richiamo della montagna",
       "che era simile a sua madre"
      ],
@@ -16225,7 +16228,7 @@
     "id": "r-1",
     "kind": "anyN",
     "marks": null,
-    "verbatim": "A chi assomigliava — the answers the scheme accepts"
+    "verbatim": "The answers the scheme accepts in full"
    }
   ],
   "notes": "The scheme prints the tariff as '5 marks'; the paper prints this ask on page 7 of the question booklet.",
@@ -31532,7 +31535,7 @@
   "totalMarks": 6,
   "rows": [
    {
-    "contextNote": "Answer in English or Irish.",
+    "contextNote": "The scheme also prints, for shorter answers: “(Working young people 4 marks)”; “(People who would use a discount card (at the cinema/ theatre/restaurants) 4 marks)”; “People on a budget (as there are no fees) 4 marks)”; “(Young people 3 marks)”; “(Working people 2 marks)”; “(Giada herself 1 mark)”; “(Children 1 mark)”; “(Cinemas/theatres/restaurants 1 mark)”. Answer in English or Irish.",
     "id": "r-1",
     "kind": "point",
     "marks": 6,
@@ -37261,7 +37264,7 @@
   "totalMarks": 20,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She is a success story” 1 mark; “She helps people” 1 mark; “She has travelled the world” 1 mark. The scheme prints these answers under the heading “Why”; the paper asks for 3 points on it.",
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Why”; the paper asks for 3 points on it.",
     "group": {
      "claimMax": 3,
      "options": [
@@ -37280,7 +37283,7 @@
     "verbatim": "Why — the answers the scheme accepts"
    },
    {
-    "contextNote": "The scheme prints these answers under the heading “Claudia”; the paper asks for 1 point on it.",
+    "contextNote": "The scheme also pays part marks for a shorter answer: “She is a success story” 1 mark; “She helps people” 1 mark; “She has travelled the world” 1 mark. The scheme prints these answers under the heading “Claudia”; the paper asks for 1 point on it.",
     "group": {
      "claimMax": 1,
      "options": [
@@ -41506,7 +41509,7 @@
   "totalMarks": 4,
   "rows": [
    {
-    "contextNote": "Answer in English or Irish.",
+    "contextNote": "The scheme also prints, for shorter answers: “(To have a break/On holidays 2 marks)”; “The seaside 1 mark)”. Answer in English or Irish.",
     "id": "r-1",
     "kind": "point",
     "marks": 4,
@@ -42010,7 +42013,7 @@
   "totalMarks": 20,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Many families have received their new computer and it has really helped them” 2 marks; “This initiative hopes to reduce the gap between people who have a lot and people who do not have enough/have little” 3 marks. The scheme prints these answers under the heading “Advantage”; the paper asks for 2 points on it.",
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Many families have received their new computer and it has really helped them” 2 marks. The scheme prints these answers under the heading “Advantage”; the paper asks for 2 points on it.",
     "group": {
      "claimMax": 2,
      "options": [
@@ -42034,7 +42037,7 @@
     "verbatim": "Advantage — the answers the scheme accepts"
    },
    {
-    "contextNote": "The scheme prints these answers under the heading “Jacopo’s hopes”; the paper asks for 2 points on it.",
+    "contextNote": "The scheme also pays part marks for a shorter answer: “This initiative hopes to reduce the gap between people who have a lot and people who do not have enough/have little” 3 marks. The scheme prints these answers under the heading “Jacopo’s hopes”; the paper asks for 2 points on it.",
     "group": {
      "claimMax": 2,
      "options": [
@@ -47264,7 +47267,7 @@
   "totalMarks": 20,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She is nostalgic about the times she watched Walt Disney movies with her family” 2 marks; “She listens to Nirvana” 1 mark; “They have a good relationship” 2 marks; “She liked the freedom she was granted” 2 marks. The scheme prints these answers under the heading “Eleonora”; the paper asks for 3 points on it. The scheme prints: “Five points are required:”.",
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She is nostalgic about the times she watched Walt Disney movies with her family” 2 marks; “She listens to Nirvana” 1 mark. The scheme prints these answers under the heading “Eleonora”; the paper asks for 3 points on it. The scheme prints: “Five points are required:”.",
     "group": {
      "claimMax": 3,
      "options": [
@@ -47289,7 +47292,7 @@
     "verbatim": "Eleonora — the answers the scheme accepts"
    },
    {
-    "contextNote": "The scheme prints these answers under the heading “Relationship with her father”; the paper asks for 1 point on it.",
+    "contextNote": "The scheme also pays part marks for a shorter answer: “They have a good relationship” 2 marks; “She liked the freedom she was granted” 2 marks. The scheme prints these answers under the heading “Relationship with her father”; the paper asks for 1 point on it.",
     "group": {
      "claimMax": 1,
      "options": [
@@ -47654,7 +47657,7 @@
   "totalMarks": 20,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Leo is mourning the death of Beatrice and coming to terms with it” 3 marks; “Leo is also slowly coming to terms with his love for Silvia” 2 marks; “Important for the relationship with his parents” 2 marks; “This passage comes immediately after Beatrice’s funeral” 2 marks. The scheme prints these answers under the heading “Points from the passage”; the paper asks for 3 points on it. The scheme prints: “The candidate must refer both to the passage and to the novel as a whole”.",
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under the heading “Points from the passage”; the paper asks for 3 points on it. The scheme prints: “The candidate must refer both to the passage and to the novel as a whole”.",
     "group": {
      "claimMax": 3,
      "options": [
@@ -47680,7 +47683,7 @@
     "verbatim": "Points from the passage — the answers the scheme accepts"
    },
    {
-    "contextNote": "The scheme prints these answers under the heading “Importance in the context of the novel”; the paper asks for 1 point on it.",
+    "contextNote": "The scheme also pays part marks for a shorter answer: “Leo is mourning the death of Beatrice and coming to terms with it” 3 marks; “Leo is also slowly coming to terms with his love for Silvia” 2 marks; “Important for the relationship with his parents” 2 marks; “This passage comes immediately after Beatrice’s funeral” 2 marks. The scheme prints these answers under the heading “Importance in the context of the novel”; the paper asks for 1 point on it.",
     "group": {
      "claimMax": 1,
      "options": [
@@ -48126,7 +48129,7 @@
   "totalMarks": 20,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Students waste money buying water bottles” 2 marks; “Even during winter, people buy a lot of water” 2 marks; “Decrease the spreading/ the amount of plastic in school” 1 mark; “They tried to find practical solutions” 1 mark. The scheme prints these answers under the heading “Findings”; the paper asks for 2 points on it.",
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Students waste money buying water bottles” 2 marks; “Even during winter, people buy a lot of water” 2 marks. The scheme prints these answers under the heading “Findings”; the paper asks for 2 points on it.",
     "group": {
      "claimMax": 2,
      "options": [
@@ -48143,7 +48146,7 @@
     "verbatim": "Findings — the answers the scheme accepts"
    },
    {
-    "contextNote": "The scheme prints these answers under the heading “Solutions”; the paper asks for 2 points on it.",
+    "contextNote": "The scheme also pays part marks for a shorter answer: “Decrease the spreading/ the amount of plastic in school” 1 mark; “They tried to find practical solutions” 1 mark. The scheme prints these answers under the heading “Solutions”; the paper asks for 2 points on it.",
     "group": {
      "claimMax": 2,
      "options": [
@@ -51352,7 +51355,7 @@
   "totalMarks": 20,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Because you never feel alone” 2 marks; “Because you get to meet people from all over the world” 2 marks; “Because you get to discover new traditions/cultures/ habits” 2 marks; “Because you get support and comfort when you are in difficulty” 2 marks; “Because you get the impression you visit places all over the world” 2 marks; “Because you get to improve your English” 2 marks; “Because some people are attracted to traditional means of communication” 2 marks; “Her pen pal was there for her when she went through difficult moments/when she decided to drop university/had problems with her boyfriend of the time” 3 marks; “Having a pen pal is very important” 2 marks. The scheme prints these answers under the heading “Why”; the paper asks for 1 point on it.",
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Because you never feel alone” 2 marks; “Because you get to meet people from all over the world” 2 marks; “Because you get to discover new traditions/cultures/ habits” 2 marks; “Because you get support and comfort when you are in difficulty” 2 marks; “Because you get the impression you visit places all over the world” 2 marks; “Because you get to improve your English” 2 marks; “Because some people are attracted to traditional means of communication” 2 marks. The scheme prints these answers under the heading “Why”; the paper asks for 1 point on it.",
     "group": {
      "claimMax": 1,
      "options": [
@@ -51385,7 +51388,7 @@
     "verbatim": "Giorgia — the answers the scheme accepts"
    },
    {
-    "contextNote": "The scheme prints these answers under the heading “Serena”; the paper asks for 1 point on it.",
+    "contextNote": "The scheme also pays part marks for a shorter answer: “Her pen pal was there for her when she went through difficult moments/when she decided to drop university/had problems with her boyfriend of the time” 3 marks; “Having a pen pal is very important” 2 marks. The scheme prints these answers under the heading “Serena”; the paper asks for 1 point on it.",
     "group": {
      "claimMax": 1,
      "options": [
@@ -51783,7 +51786,7 @@
   "totalMarks": 20,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He loved the Dolomites/hiking/the Mountains” 1 mark; “He was controlling” 1 mark; “He was short tempered” 1 mark; “It was a small wedding” 1 mark. The paper asks for 2 points on the narrator’s father; the scheme prints these answers for it, before its first heading. The scheme prints: “Four points are required:”.",
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He loved the Dolomites/hiking/the Mountains” 1 mark; “He was controlling” 1 mark; “He was short tempered” 1 mark. The paper asks for 2 points on the narrator’s father; the scheme prints these answers for it, before its first heading. The scheme prints: “Four points are required:”.",
     "group": {
      "claimMax": 2,
      "options": [
@@ -51821,7 +51824,7 @@
     "verbatim": "Mother — the answers the scheme accepts"
    },
    {
-    "contextNote": "The scheme prints these answers under the heading “Wedding”; the paper asks for 1 point on it.",
+    "contextNote": "The scheme also pays part marks for a shorter answer: “It was a small wedding” 1 mark. The scheme prints these answers under the heading “Wedding”; the paper asks for 1 point on it.",
     "group": {
      "claimMax": 1,
      "options": [
@@ -53481,29 +53484,27 @@
   "totalMarks": 5,
   "rows": [
    {
-    "contextNote": "Answer in English or Irish.",
+    "contextNote": "The scheme prints “(2+1+1+1)”: 2, 1, 1, 1 marks for the first, second and further answers given, in any order. Answer in English or Irish.",
+    "group": {
+     "claimMax": 4,
+     "options": [
+      "German",
+      "Swiss",
+      "Dutch",
+      "English"
+     ],
+     "perOption": 2,
+     "perOptionSteps": [
+      2,
+      1,
+      1,
+      1
+     ]
+    },
     "id": "r-1",
-    "kind": "point",
-    "marks": 2,
-    "verbatim": "German"
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "marks": 1,
-    "verbatim": "Swiss"
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "marks": 1,
-    "verbatim": "Dutch"
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "marks": 1,
-    "verbatim": "English"
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "The answers the scheme accepts in full"
    }
   ],
   "notes": "The scheme prints the tariff as '5 marks'; the listening booklet prints this ask on page 6.",
@@ -55874,23 +55875,36 @@
   "totalMarks": 10,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “To help the environment” 3 marks; “To work with the community” 1 mark; “To make a difference” 1 mark; “Promotion” 1 mark; “Education” 1 mark. The scheme prints: “*Educate can only be used once”. The scheme prints: “The following answers can only be used for one category”.",
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under “Families:”, and “*Educate can only be used once”. It also pays part marks for a shorter answer: “To help the environment” 3 marks; “To work with the community” 1 mark; “To make a difference” 1 mark; “Promotion” 1 mark. The scheme prints: “The following answers can only be used for one category”.",
     "group": {
-     "claimMax": 2,
+     "claimMax": 1,
      "options": [
-      "Families: To save money [3] on their shopping [2]",
+      "To save money [3] on their shopping [2]",
       "To reduce their waste [2] charges [2]",
       "To carry out their civic duty",
-      "*To educate family members",
-      "Shops: To increase their customers numbers / To be seen as being more environmentally friendly",
-      "*To educate the community"
+      "*To educate family members"
      ],
      "perOption": 5
     },
     "id": "r-1",
     "kind": "anyN",
     "marks": null,
-    "verbatim": "The answers the scheme accepts in full"
+    "verbatim": "Families — the answers the scheme accepts"
+   },
+   {
+    "contextNote": "The scheme prints these answers under “Shops:”.",
+    "group": {
+     "claimMax": 1,
+     "options": [
+      "To increase their customers numbers / To be seen as being more environmentally friendly",
+      "*To educate the community"
+     ],
+     "perOption": 5
+    },
+    "id": "r-2",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "Shops — the answers the scheme accepts"
    }
   ],
   "notes": "The scheme prints the tariff as '10 marks (5+5)'; the paper prints this ask on page 5 of the question booklet.",
@@ -58232,7 +58246,7 @@
   "totalMarks": 4,
   "rows": [
    {
-    "contextNote": "Answer in English or Irish.",
+    "contextNote": "The scheme also prints, for shorter answers: “(Tradition 2 marks)”; “(City 1 mark)”. Answer in English or Irish.",
     "group": {
      "claimMax": 1,
      "options": [
@@ -60104,7 +60118,7 @@
   "totalMarks": 20,
   "rows": [
    {
-    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It brings together people of any age / it brings young people together” 3 marks; “This initiative brings people from different areas/nationalities together” 3 marks; “It’s a way of socialising for young people who would be involved in bad and illegal activities instead” 3 marks; “It is a lot nicer to train outside than to use an indoor track” 3 marks; “People can arrange to exercise together through the web/ Facebook” 3 marks; “This initiative makes the parks/the public areas more welcoming /looked after” 2 marks; “They are really getting behind the initiative by being active on the Facebook group” 3 marks; “They are using this outdoor gym saving them from deterioration and vandalism” 2 marks; “Spreading the word about the initiative/inviting people” 1 mark. The scheme prints these answers under the heading “Benefit”; the paper asks for 2 points on it.",
+    "contextNote": "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It brings together people of any age / it brings young people together” 3 marks; “This initiative brings people from different areas/nationalities together” 3 marks; “It’s a way of socialising for young people who would be involved in bad and illegal activities instead” 3 marks; “It is a lot nicer to train outside than to use an indoor track” 3 marks; “People can arrange to exercise together through the web/ Facebook” 3 marks; “This initiative makes the parks/the public areas more welcoming /looked after” 2 marks. The scheme prints these answers under the heading “Benefit”; the paper asks for 2 points on it.",
     "group": {
      "claimMax": 2,
      "options": [
@@ -60128,7 +60142,7 @@
     "verbatim": "Benefit — the answers the scheme accepts"
    },
    {
-    "contextNote": "The scheme prints these answers under the heading “Sportspeople”; the paper asks for 1 point on it.",
+    "contextNote": "The scheme also pays part marks for a shorter answer: “They are really getting behind the initiative by being active on the Facebook group” 3 marks; “They are using this outdoor gym saving them from deterioration and vandalism” 2 marks; “Spreading the word about the initiative/inviting people” 1 mark. The scheme prints these answers under the heading “Sportspeople”; the paper asks for 1 point on it.",
     "group": {
      "claimMax": 1,
      "options": [

@@ -3728,9 +3728,9 @@ export const CARDS: SecCard[] = [
     id: "it-2025-ol-a2-5", topicId: "italian-5-3", conceptId: "dario-sorgato-objective",
     section: "A", questionRef: "2025 OL Section A2 Q5",
     questionText: "What is Dario Sorgato’s objective? (Par. 5)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "To facilitate inclusive and accessible walking/in nature (events)so that the disabled can walk and enjoy nature without (the necessity of) a guide (1)", marks: 5, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also prints: “(Any five of eight elements)”." },
+    { id: "r-1", kind: "criterion", verbatim: "To facilitate inclusive and accessible walking/in nature (events)so that the disabled can walk and enjoy nature without (the necessity of) a guide", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints “5 marks (5x1)” and “(Any five of eight elements)”: one mark for each element of this answer you give, up to five. It does not list the eight elements: judge your answer against the 5 marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7770,7 +7770,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who can benefit from the bank account Giada is opening?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Young people, newly employed/who have a new job", marks: 6, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "Young people, newly employed/who have a new job", marks: 6, contextNote: "The scheme also prints, for shorter answers: “(Working young people 4 marks)”; “(People who would use a discount card (at the cinema/ theatre/restaurants) 4 marks)”; “People on a budget (as there are no fees) 4 marks)”; “(Young people 3 marks)”; “(Working people 2 marks)”; “(Giada herself 1 mark)”; “(Children 1 mark)”; “(Cinemas/theatres/restaurants 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10372,7 +10372,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where is Piero going after the sailing trip?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The mountains (for a few days)", marks: 4, contextNote: "Answer in English or Irish." },
+    { id: "r-1", kind: "point", verbatim: "The mountains (for a few days)", marks: 4, contextNote: "The scheme also prints, for shorter answers: “(To have a break/On holidays 2 marks)”; “The seaside 1 mark)”. Answer in English or Irish." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12073,7 +12073,8 @@ export const CARDS: SecCard[] = [
     questionText: "Why would families and shops take\npart in this initiative?\n(Par. 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “To help the environment” 3 marks; “To work with the community” 1 mark; “To make a difference” 1 mark; “Promotion” 1 mark; “Education” 1 mark. The scheme prints: “*Educate can only be used once”. The scheme prints: “The following answers can only be used for one category”.", group: {"claimMax":2,"options":["Families: To save money [3] on their shopping [2]","To reduce their waste [2] charges [2]","To carry out their civic duty","*To educate family members","Shops: To increase their customers numbers / To be seen as being more environmentally friendly","*To educate the community"],"perOption":5} },
+    { id: "r-1", kind: "anyN", verbatim: "Families — the answers the scheme accepts", marks: null, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme prints these answers under “Families:”, and “*Educate can only be used once”. It also pays part marks for a shorter answer: “To help the environment” 3 marks; “To work with the community” 1 mark; “To make a difference” 1 mark; “Promotion” 1 mark. The scheme prints: “The following answers can only be used for one category”.", group: {"claimMax":1,"options":["To save money [3] on their shopping [2]","To reduce their waste [2] charges [2]","To carry out their civic duty","*To educate family members"],"perOption":5} },
+    { id: "r-2", kind: "anyN", verbatim: "Shops — the answers the scheme accepts", marks: null, contextNote: "The scheme prints these answers under “Shops:”.", group: {"claimMax":1,"options":["To increase their customers numbers / To be seen as being more environmentally friendly","*To educate the community"],"perOption":5} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13501,7 +13502,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does Gianfranco wish to live in the Le Langhe region? Give one detail.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "Answer in English or Irish.", group: {"claimMax":1,"options":["He is tired of busy life city","It’s a quieter place","He wants to rediscover (traditional) flavours","Has better quality products","He is becoming interested in viticulture","It is (in his opinion) where the best Italian vineyards are"],"perOption":4} },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The scheme also prints, for shorter answers: “(Tradition 2 marks)”; “(City 1 mark)”. Answer in English or Irish.", group: {"claimMax":1,"options":["He is tired of busy life city","It’s a quieter place","He wants to rediscover (traditional) flavours","Has better quality products","He is becoming interested in viticulture","It is (in his opinion) where the best Italian vineyards are"],"perOption":4} },
     ],
     sourceMaterial: {
           "kind": "source-text",

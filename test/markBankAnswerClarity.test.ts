@@ -853,7 +853,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // options (the group has no per-option steps). Model one of those and lower its number here.
     const noted = rows.filter(({ row }) => row.kind !== 'criterion' && (row.contextNote ?? '').includes(lesser));
     expect(noted.filter(({ row }) => row.kind === 'point').every(({ row }) => /^r-\d+-\d+$/.test(row.id))).toBe(true);
-    expect([noted.filter(({ row }) => row.kind === 'point').length, noted.filter(({ row }) => row.kind === 'anyN').length]).toEqual([38, 203]);
+    expect([noted.filter(({ row }) => row.kind === 'point').length, noted.filter(({ row }) => row.kind === 'anyN').length]).toEqual([38, 208]);
   });
 
   it('Technology: a drawn answer is the ask as its one row behind the scheme\'s own print; every printed 2026 Higher ask is a card', () => {
