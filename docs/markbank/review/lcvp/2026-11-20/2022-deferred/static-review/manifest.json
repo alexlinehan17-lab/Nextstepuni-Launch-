@@ -1,0 +1,56 @@
+{
+  "reviewer": "Codex second worker /root/russian_independent_review",
+  "scope": "Bounded independent read-only diagnosis/preparation. Pure small predicate and cached-source text checks only; not a generator, heavy command, browser, source census or release check.",
+  "files": [
+    {
+      "path": "REPORT.json",
+      "bytes": 15713,
+      "sha256": "2c8ac8aeb289927599978eab987ee448b90c03e43a4160f0153d6d36653e8bfc"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 1400,
+      "sha256": "38dac818f3059998de48d4a55af9835f4b0f9ccf60d2452be97d9ef61b9dc6a3"
+    },
+    {
+      "path": "current-original-pdf-claim-trace.json",
+      "bytes": 43214,
+      "sha256": "3ebdf000576729b383dee9d43c45a5c1d6b665f6d0695751113308f712c98a3d"
+    },
+    {
+      "path": "input-manifest.json",
+      "bytes": 5967,
+      "sha256": "ca47af1cdec9376c95b0e7c9c725276173603bb81427a5d2f345474f6b6b4f43"
+    },
+    {
+      "path": "pinned-read-only-code/scripts/markbank/authoring/glyphmap.json",
+      "bytes": 4212,
+      "sha256": "a0e32f8c0233f1cb2499a8b0e7538c79406d9b9552b3e2318159a77bfeadadeb"
+    },
+    {
+      "path": "pinned-read-only-code/scripts/markbank/build-deck.mjs",
+      "bytes": 154432,
+      "sha256": "b7cdf40b63bdec99ef25d83b7d928497dc879bfac6ee3c8790db46ad1526db78"
+    },
+    {
+      "path": "pinned-read-only-code/scripts/markbank/questionText.mjs",
+      "bytes": 3122,
+      "sha256": "fc25d8f19c5601ffac2c066bd3133e1ff1540b9ba67fa9cbe59b8e1a91edba52"
+    },
+    {
+      "path": "pinned-read-only-code/scripts/markbank/schemeText.mjs",
+      "bytes": 20728,
+      "sha256": "7a08b50a397aabe527573665a604ea437e8e279ec44636c76d04153c22f7ebe5"
+    },
+    {
+      "path": "static-predicate-checks.mjs",
+      "bytes": 4338,
+      "sha256": "50835aefebdd574e5e8066c614be585d37722b8569f5233a6a6b4eef8910062f"
+    },
+    {
+      "path": "static-predicate-findings.json",
+      "bytes": 93694,
+      "sha256": "ce0ca87f306499e0ea6962cee80e0868b8ca558a953c684e538e0535f57b941c"
+    }
+  ]
+}

@@ -1,0 +1,4280 @@
+{
+  "pin": "c369eabcd0156424cf604783dd399d0c5cf64fd2",
+  "scope": "Review-only inputs for unchanged explicit source-map/index APIs. Not installed source reviews, DEFERRED_ID registration or generator readiness.",
+  "old47Proof": {
+    "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-release/deferred-candidate-source-binding-preflight.json",
+    "sha256": "cfb79ba07e1ba9e99f3371ecf6430bf6bd042bd9ad2c1521be13fcccbb4b6142",
+    "preserved": true
+  },
+  "producerSearch": "No saved producer script found in searched review/old-lane helper paths. The unchanged source-map and indexed-pair APIs are reused directly; this is a newly recorded invocation, not a claim to rerun an unavailable historical script.",
+  "preparationCorrection": "The first local preparation stopped on an overstrict assumption that primary source pages equal question pages. Section B intentionally opens the complete case study as source-text and carries exact question pages in additionalSourceMaterials. Current inputs verify both roles separately; no candidate changed.",
+  "assets": [
+    {
+      "path": "scripts/markbank/lcvpSources.mjs",
+      "sha256": "c0cd8dc948f35470ec0cb9071747f357350f04c8c03b90c6a4c4c09ba616c397",
+      "bytes": 4783
+    },
+    {
+      "path": "scripts/markbank/paperIndex.mjs",
+      "sha256": "197dccfd3c8a19c557dee57dce40366958fd82c254fe1653ce9ecfbd748e5fd8",
+      "bytes": 21083
+    },
+    {
+      "path": "paperTrailData.ts",
+      "sha256": "7665a5a7ec807fdc8372d4129ae787454fada01b29bb4ffd133538188230d364",
+      "bytes": 1272185
+    }
+  ],
+  "inputs": [
+    {
+      "year": 2022,
+      "candidatePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/proposed-48-after-third-reading.json",
+      "candidateSha256": "a66a9e40753549d3c29b2f57a3c1485b1a357f565c3e0e6521a7fa28a30a1280",
+      "filingPath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-codex-third-reading-index/lcvp-filing-additions/2022-deferred.json",
+      "filingSha256": "b1ce7ba5884ee238837b4635e0813c34f9851ec8b6e6e340e45396895007acd8",
+      "sourceManifest": {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/source-manifest.json",
+        "sha256": "d01f1ac569c5742e2e60dde41d94f4d9254e4de38cbb039c75160feb7e021f68"
+      },
+      "sourceSelections": {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/source-parts.json",
+        "sha256": "732a6460d1def245044478b94c1703b1898d20b22cde6a4359d728ce67be030c"
+      },
+      "priorVisualReading": {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/first-reading-frozen.json",
+        "sha256": "51777ecc8f8639b740218dc456db40a63ddfef70655484498bd98c1bf98e8ac5"
+      },
+      "finalBoundaryDecision": {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/third-reader-decision.json",
+        "sha256": "ec8fae088bedbc0e7db2d6036ea790cc17ea89ac9975c62a85279bff580ccbf0"
+      },
+      "sources": [
+        {
+          "kind": "deferredexams",
+          "year": 2022,
+          "fileid": "LC462CLP000EV.pdf",
+          "path": "paper-trail-corpus/deferredexams/2022/LC462CLP000EV.pdf",
+          "sha256": "e345113703ad6ab2ed12634e6f6cba9b71795cc89cb20437fe61529443096835",
+          "pages": 40,
+          "localPath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/deferredexams/2022/LC462CLP000EV.pdf"
+        },
+        {
+          "kind": "deferredmarkingschemes",
+          "year": 2022,
+          "fileid": "LC462CLP000EV.pdf",
+          "path": "paper-trail-corpus/deferredmarkingschemes/2022/LC462CLP000EV.pdf",
+          "sha256": "9b14e6acf76be8d4467c394e15d5e59ecc2a0deaab5c52f4f2d887159f071ba2",
+          "pages": 20,
+          "localPath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/deferredmarkingschemes/2022/LC462CLP000EV.pdf"
+        }
+      ],
+      "transcript": {
+        "year": 2022,
+        "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/deferredmarkingschemes/2022/LC462CLP000EV.pdf",
+        "sourceSha256": "9b14e6acf76be8d4467c394e15d5e59ecc2a0deaab5c52f4f2d887159f071ba2",
+        "pages": 20,
+        "transcript": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/2022-cl-deferred.md",
+        "transcriptSha256": "e9da40354eaed0d0d4acf20b51321510c3b71472e9f1f2b86c6807329035c467",
+        "intendedDestination": "examiner-reports/lcvp/schemes/2022-cl-deferred.md"
+      },
+      "reviewOnlySourceMapInput": {
+        "year": 2022,
+        "level": "common",
+        "sitting": "deferred",
+        "language": "ev",
+        "visualSweep": {
+          "paper": "Earlier complete original-page reading: /Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/first-reading-frozen.json; SHA256 51777ecc8f8639b740218dc456db40a63ddfef70655484498bd98c1bf98e8ac5. This binding check adds no visual reading.",
+          "writtenScheme": "Earlier complete original-page reading: /Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-independent/first-reading-frozen.json; SHA256 51777ecc8f8639b740218dc456db40a63ddfef70655484498bd98c1bf98e8ac5. Final boundaries from the separately recorded third-reader decision."
+        },
+        "manualOriginalLeaves": 44,
+        "manualPricedTasks": 48,
+        "sources": [
+          {
+            "kind": "deferredexams",
+            "year": 2022,
+            "fileid": "LC462CLP000EV.pdf",
+            "path": "paper-trail-corpus/deferredexams/2022/LC462CLP000EV.pdf",
+            "sha256": "e345113703ad6ab2ed12634e6f6cba9b71795cc89cb20437fe61529443096835"
+          },
+          {
+            "kind": "deferredmarkingschemes",
+            "year": 2022,
+            "fileid": "LC462CLP000EV.pdf",
+            "path": "paper-trail-corpus/deferredmarkingschemes/2022/LC462CLP000EV.pdf",
+            "sha256": "9b14e6acf76be8d4467c394e15d5e59ecc2a0deaab5c52f4f2d887159f071ba2"
+          }
+        ],
+        "tasks": [
+          {
+            "id": "lcvp-2022-cl-deferred-a1",
+            "questionRef": "2022 CL Section A Q1 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-a2",
+            "questionRef": "2022 CL Section A Q2 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-a3",
+            "questionRef": "2022 CL Section A Q3 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-a4",
+            "questionRef": "2022 CL Section A Q4 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-a5",
+            "questionRef": "2022 CL Section A Q5 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-a6",
+            "questionRef": "2022 CL Section A Q6 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-a7",
+            "questionRef": "2022 CL Section A Q7 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-a8",
+            "questionRef": "2022 CL Section A Q8 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-b1",
+            "questionRef": "2022 CL Section B Q1 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-b2i",
+            "questionRef": "2022 CL Section B Q2(i) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-b2ii",
+            "questionRef": "2022 CL Section B Q2(ii) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-b2iii",
+            "questionRef": "2022 CL Section B Q2(iii) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-b3i",
+            "questionRef": "2022 CL Section B Q3(i) — positive effect — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-b3i-2",
+            "questionRef": "2022 CL Section B Q3(i) — negative effect — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-b3ii",
+            "questionRef": "2022 CL Section B Q3(ii) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c1a",
+            "questionRef": "2022 CL Section C Q1(a) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c1b",
+            "questionRef": "2022 CL Section C Q1(b) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c1c",
+            "questionRef": "2022 CL Section C Q1(c) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c1d",
+            "questionRef": "2022 CL Section C Q1(d) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c2a",
+            "questionRef": "2022 CL Section C Q2(a) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c2b",
+            "questionRef": "2022 CL Section C Q2(b) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c2ci",
+            "questionRef": "2022 CL Section C Q2(c)(i) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c2cii",
+            "questionRef": "2022 CL Section C Q2(c)(ii) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c2d",
+            "questionRef": "2022 CL Section C Q2(d) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c3a",
+            "questionRef": "2022 CL Section C Q3(a) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c3b",
+            "questionRef": "2022 CL Section C Q3(b) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c3c",
+            "questionRef": "2022 CL Section C Q3(c) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c3d",
+            "questionRef": "2022 CL Section C Q3(d) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c4a",
+            "questionRef": "2022 CL Section C Q4(a) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c4b",
+            "questionRef": "2022 CL Section C Q4(b) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c4c",
+            "questionRef": "2022 CL Section C Q4(c) — sources — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c4c-2",
+            "questionRef": "2022 CL Section C Q4(c) — developed support — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c4d",
+            "questionRef": "2022 CL Section C Q4(d) — challenges — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c4d-2",
+            "questionRef": "2022 CL Section C Q4(d) — solutions — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c5a",
+            "questionRef": "2022 CL Section C Q5(a) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c5b",
+            "questionRef": "2022 CL Section C Q5(b) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c5c",
+            "questionRef": "2022 CL Section C Q5(c) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c5d",
+            "questionRef": "2022 CL Section C Q5(d) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c6ai",
+            "questionRef": "2022 CL Section C Q6(a)(i) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c6aii",
+            "questionRef": "2022 CL Section C Q6(a)(ii) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c6b",
+            "questionRef": "2022 CL Section C Q6(b) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c6c",
+            "questionRef": "2022 CL Section C Q6(c) — sources — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c6c-2",
+            "questionRef": "2022 CL Section C Q6(c) — relevance — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c6d",
+            "questionRef": "2022 CL Section C Q6(d) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c7a",
+            "questionRef": "2022 CL Section C Q7(a) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c7b",
+            "questionRef": "2022 CL Section C Q7(b) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c7c",
+            "questionRef": "2022 CL Section C Q7(c) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2022-cl-deferred-c7d",
+            "questionRef": "2022 CL Section C Q7(d) — Deferred sitting"
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "id": "lcvp-2022-cl-deferred-a1",
+          "questionRef": "2022 CL Section A Q1 — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-a1",
+          "sourceRef": "A1",
+          "originalQuestionPages": [
+            4
+          ],
+          "originalSchemePages": [
+            4
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                4
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "bc963f80aabc35fd6538cafe1553555a39f5a0a235c81ced04701e859fd7ee17",
+              "4": "134c11904515cc3b1ccdb403061878bcbb9be181ac88f8ad940625a5352b3b04"
+            },
+            "scheme": {
+              "4": "a7d2ae287d735e8f7b8f4dd10cf57fa66e96f0dd7892f15c61b4e8ed32826a02"
+            }
+          },
+          "marks": 1,
+          "candidateCanonicalSha256": "c58d92adc27c7d0ba91d98561979c1c1fd0bdc1cabad7f68dd57bb357479a6dd"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a2",
+          "questionRef": "2022 CL Section A Q2 — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-a2",
+          "sourceRef": "A2",
+          "originalQuestionPages": [
+            4
+          ],
+          "originalSchemePages": [
+            4
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                4
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "bc963f80aabc35fd6538cafe1553555a39f5a0a235c81ced04701e859fd7ee17",
+              "4": "134c11904515cc3b1ccdb403061878bcbb9be181ac88f8ad940625a5352b3b04"
+            },
+            "scheme": {
+              "4": "a7d2ae287d735e8f7b8f4dd10cf57fa66e96f0dd7892f15c61b4e8ed32826a02"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "efbdeb460f2115636d95c2ed91a8855a71101d1b1b7f916d867ebf25c8150e25"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a3",
+          "questionRef": "2022 CL Section A Q3 — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-a3",
+          "sourceRef": "A3",
+          "originalQuestionPages": [
+            4
+          ],
+          "originalSchemePages": [
+            4
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                4
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "bc963f80aabc35fd6538cafe1553555a39f5a0a235c81ced04701e859fd7ee17",
+              "4": "134c11904515cc3b1ccdb403061878bcbb9be181ac88f8ad940625a5352b3b04"
+            },
+            "scheme": {
+              "4": "a7d2ae287d735e8f7b8f4dd10cf57fa66e96f0dd7892f15c61b4e8ed32826a02"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "cf2e5962ba0014ae8385505ddb2031fa17a2cb3a9d015a54fb77b062a87e2a68"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a4",
+          "questionRef": "2022 CL Section A Q4 — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-a4",
+          "sourceRef": "A4",
+          "originalQuestionPages": [
+            5
+          ],
+          "originalSchemePages": [
+            4
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                5
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "bc963f80aabc35fd6538cafe1553555a39f5a0a235c81ced04701e859fd7ee17",
+              "5": "dce0cfbcc4a4f90f6fbe6cc6262495539e6c99860da4ff30c67d2ff09d15a8d1"
+            },
+            "scheme": {
+              "4": "a7d2ae287d735e8f7b8f4dd10cf57fa66e96f0dd7892f15c61b4e8ed32826a02"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "a18a5046cfc2a63668d322f94ba94f9f9b5a8dce8f616ff1f417a8db06527ab6"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a5",
+          "questionRef": "2022 CL Section A Q5 — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-a5",
+          "sourceRef": "A5",
+          "originalQuestionPages": [
+            5
+          ],
+          "originalSchemePages": [
+            4,
+            5
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                5
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "bc963f80aabc35fd6538cafe1553555a39f5a0a235c81ced04701e859fd7ee17",
+              "5": "dce0cfbcc4a4f90f6fbe6cc6262495539e6c99860da4ff30c67d2ff09d15a8d1"
+            },
+            "scheme": {
+              "4": "a7d2ae287d735e8f7b8f4dd10cf57fa66e96f0dd7892f15c61b4e8ed32826a02",
+              "5": "f33db9a614b15daaa5d3b8d0869fd776cc317959a099b855687e2739606b51a1"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "ca034add42e60ef842480f11bca9aa9b33996e10f5920c684e3416b4c0231d95"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a6",
+          "questionRef": "2022 CL Section A Q6 — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-a6",
+          "sourceRef": "A6",
+          "originalQuestionPages": [
+            6
+          ],
+          "originalSchemePages": [
+            5
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                6
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "bc963f80aabc35fd6538cafe1553555a39f5a0a235c81ced04701e859fd7ee17",
+              "6": "2910c909f8cb98934765e7e8d99355acbfec55ca849fc38b40211e882f9b2817"
+            },
+            "scheme": {
+              "5": "f33db9a614b15daaa5d3b8d0869fd776cc317959a099b855687e2739606b51a1"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "0e6691cb8b0e6c75f202d302d92724439bc7f462906e71ed1d1abcf4f4bc1773"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a7",
+          "questionRef": "2022 CL Section A Q7 — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-a7",
+          "sourceRef": "A7",
+          "originalQuestionPages": [
+            7
+          ],
+          "originalSchemePages": [
+            5
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                7
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "bc963f80aabc35fd6538cafe1553555a39f5a0a235c81ced04701e859fd7ee17",
+              "7": "3b417a2d54c665cfa57d82dbdfd80ba98ed632d645d6f8e17a0d1222aac4ba7f"
+            },
+            "scheme": {
+              "5": "f33db9a614b15daaa5d3b8d0869fd776cc317959a099b855687e2739606b51a1"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "9a7b99547f41686fd12270d907d9c74e7b0733b797a85c5eaeb6b4b926f5a93c"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a8",
+          "questionRef": "2022 CL Section A Q8 — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-a8",
+          "sourceRef": "A8",
+          "originalQuestionPages": [
+            8
+          ],
+          "originalSchemePages": [
+            6
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                8
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "bc963f80aabc35fd6538cafe1553555a39f5a0a235c81ced04701e859fd7ee17",
+              "8": "dfcba592010e8e98bbef26903ea589930632d02c20b3e0019d5bae3bcf385a26"
+            },
+            "scheme": {
+              "6": "38815d68eac069288c144bd207178f54f26415e0e8a4052d1756ae0770273c8f"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "02a22f2b9ae56812d828a117c12cd3a9d1939d2820e825a6827c71409f65006b"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b1",
+          "questionRef": "2022 CL Section B Q1 — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-b1",
+          "sourceRef": "B1",
+          "originalQuestionPages": [
+            11
+          ],
+          "originalSchemePages": [
+            7
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-text",
+              "label": "OFFICIAL SOURCE",
+              "title": "Alex and Rami — complete case study",
+              "pages": [
+                10
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                11
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "10": "85a4e74b66ab67bedc0cda40d36a741e9cbdf447bd22ac7460540aa9cef37f1e",
+              "11": "ea7218ecd3db195d69cd8ff7eb0d3aaab0cedb35b8205392a868299c93895a5a"
+            },
+            "scheme": {
+              "7": "ff78947b0e1aadb993b6aac0500124f1e825faf6b23024e1a275a10ba275fc37"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "fdc1f4139c0593daccba072890b5c3b4a0eeca982ca5fe52eef85d871d8d0603"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b2i",
+          "questionRef": "2022 CL Section B Q2(i) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-b2i",
+          "sourceRef": "B2(i)",
+          "originalQuestionPages": [
+            12
+          ],
+          "originalSchemePages": [
+            7
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-text",
+              "label": "OFFICIAL SOURCE",
+              "title": "Alex and Rami — complete case study",
+              "pages": [
+                10
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                12
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "10": "85a4e74b66ab67bedc0cda40d36a741e9cbdf447bd22ac7460540aa9cef37f1e",
+              "12": "06bc9d6c3eb7a4aeb57277a021f320efb0462db3cd3d1772a54937a7f7af7a7b"
+            },
+            "scheme": {
+              "7": "ff78947b0e1aadb993b6aac0500124f1e825faf6b23024e1a275a10ba275fc37"
+            }
+          },
+          "marks": 1,
+          "candidateCanonicalSha256": "4db9c5ace56d9a503acb09d4de5d5764b27d44b7608c45e3f3af6a5cc5416c2f"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b2ii",
+          "questionRef": "2022 CL Section B Q2(ii) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-b2ii",
+          "sourceRef": "B2(ii)",
+          "originalQuestionPages": [
+            12
+          ],
+          "originalSchemePages": [
+            7
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-text",
+              "label": "OFFICIAL SOURCE",
+              "title": "Alex and Rami — complete case study",
+              "pages": [
+                10
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                12
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "10": "85a4e74b66ab67bedc0cda40d36a741e9cbdf447bd22ac7460540aa9cef37f1e",
+              "12": "06bc9d6c3eb7a4aeb57277a021f320efb0462db3cd3d1772a54937a7f7af7a7b"
+            },
+            "scheme": {
+              "7": "ff78947b0e1aadb993b6aac0500124f1e825faf6b23024e1a275a10ba275fc37"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "9dac0099601e03636dfad1d5b14961dbba50e4da51051f9a6e69d4dd3b197d6a"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b2iii",
+          "questionRef": "2022 CL Section B Q2(iii) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-b2iii",
+          "sourceRef": "B2(iii)",
+          "originalQuestionPages": [
+            12
+          ],
+          "originalSchemePages": [
+            7
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-text",
+              "label": "OFFICIAL SOURCE",
+              "title": "Alex and Rami — complete case study",
+              "pages": [
+                10
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                12
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "10": "85a4e74b66ab67bedc0cda40d36a741e9cbdf447bd22ac7460540aa9cef37f1e",
+              "12": "06bc9d6c3eb7a4aeb57277a021f320efb0462db3cd3d1772a54937a7f7af7a7b"
+            },
+            "scheme": {
+              "7": "ff78947b0e1aadb993b6aac0500124f1e825faf6b23024e1a275a10ba275fc37"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "42d19a902cb86ee2cebd5e2b15d0f53bda46c25a147682a16371953d3aeb41f4"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b3i",
+          "questionRef": "2022 CL Section B Q3(i) — positive effect — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-b3i",
+          "sourceRef": "B3(i)",
+          "originalQuestionPages": [
+            13,
+            14
+          ],
+          "originalSchemePages": [
+            8
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-text",
+              "label": "OFFICIAL SOURCE",
+              "title": "Alex and Rami — complete case study",
+              "pages": [
+                10
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                13,
+                14
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "10": "85a4e74b66ab67bedc0cda40d36a741e9cbdf447bd22ac7460540aa9cef37f1e",
+              "13": "bb43b2c7bf11c122636157301424d4d30c0c2b219a4b633f44e157252d78d8d8",
+              "14": "908237dcc4d5846ad2a214b2fdb117d81bf367018cfaf16936da19212c7b1b76"
+            },
+            "scheme": {
+              "8": "984ba7ff8172e953374a722c6203687a6b4b26723b30c1304ab704f7cccf3869"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "17c04ce715243add0e9b36a63375561986504d96229fd740739385214e441415"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b3i-2",
+          "questionRef": "2022 CL Section B Q3(i) — negative effect — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-b3i",
+          "sourceRef": "B3(i)",
+          "originalQuestionPages": [
+            13,
+            14
+          ],
+          "originalSchemePages": [
+            8
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-text",
+              "label": "OFFICIAL SOURCE",
+              "title": "Alex and Rami — complete case study",
+              "pages": [
+                10
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                13,
+                14
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "10": "85a4e74b66ab67bedc0cda40d36a741e9cbdf447bd22ac7460540aa9cef37f1e",
+              "13": "bb43b2c7bf11c122636157301424d4d30c0c2b219a4b633f44e157252d78d8d8",
+              "14": "908237dcc4d5846ad2a214b2fdb117d81bf367018cfaf16936da19212c7b1b76"
+            },
+            "scheme": {
+              "8": "984ba7ff8172e953374a722c6203687a6b4b26723b30c1304ab704f7cccf3869"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "cb090ef2d10d732678e9e05a0f234fbe5db0fdb7dfe65176c087998c56e441d6"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b3ii",
+          "questionRef": "2022 CL Section B Q3(ii) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-b3ii",
+          "sourceRef": "B3(ii)",
+          "originalQuestionPages": [
+            13,
+            14
+          ],
+          "originalSchemePages": [
+            8
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-text",
+              "label": "OFFICIAL SOURCE",
+              "title": "Alex and Rami — complete case study",
+              "pages": [
+                10
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                13,
+                14
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "10": "85a4e74b66ab67bedc0cda40d36a741e9cbdf447bd22ac7460540aa9cef37f1e",
+              "13": "bb43b2c7bf11c122636157301424d4d30c0c2b219a4b633f44e157252d78d8d8",
+              "14": "908237dcc4d5846ad2a214b2fdb117d81bf367018cfaf16936da19212c7b1b76"
+            },
+            "scheme": {
+              "8": "984ba7ff8172e953374a722c6203687a6b4b26723b30c1304ab704f7cccf3869"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "76a05624b826851c7d37c7b31162059ab320c95bd543b5f3f7c623e0d1954f0a"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1a",
+          "questionRef": "2022 CL Section C Q1(a) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c1a",
+          "sourceRef": "C1(a)",
+          "originalQuestionPages": [
+            18
+          ],
+          "originalSchemePages": [
+            9
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                18
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "18": "f2633dbbf800b5990935a0be858ba5073509e796c215c55ef1b13ffef4789653"
+            },
+            "scheme": {
+              "9": "84135f9194e7e0b4f09aca3eeb333c1c055da622a33733693d0f44e50569ed04"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "c5bdaa42bff6e073f8f291d6d8ffff3c54f222136690c346e788bb8f33b4ed6b"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1b",
+          "questionRef": "2022 CL Section C Q1(b) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c1b",
+          "sourceRef": "C1(b)",
+          "originalQuestionPages": [
+            18
+          ],
+          "originalSchemePages": [
+            9
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                18
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "18": "f2633dbbf800b5990935a0be858ba5073509e796c215c55ef1b13ffef4789653"
+            },
+            "scheme": {
+              "9": "84135f9194e7e0b4f09aca3eeb333c1c055da622a33733693d0f44e50569ed04"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "ed8f4013a51993cd4b9db58e1dec3fcf195522a1b3552f626bf63a50df8f9c37"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1c",
+          "questionRef": "2022 CL Section C Q1(c) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c1c",
+          "sourceRef": "C1(c)",
+          "originalQuestionPages": [
+            19
+          ],
+          "originalSchemePages": [
+            10
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                19
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "19": "43412d248f257e433324d5f42d7a47953279e0ffa95b233c66d1078f11dabc76"
+            },
+            "scheme": {
+              "10": "f4b9a26fa0562fe5cc966d076545e670d00929a3fd3e6c7818878ab0ef25901b"
+            }
+          },
+          "marks": 8,
+          "candidateCanonicalSha256": "e5dbf1d55ef44d8ae0e277f1dce45167a2849ab846795aff3b2d300e7a469ae6"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1d",
+          "questionRef": "2022 CL Section C Q1(d) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c1d",
+          "sourceRef": "C1(d)",
+          "originalQuestionPages": [
+            20
+          ],
+          "originalSchemePages": [
+            10
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                20
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "20": "2fd6bc59045a03b21dd924c00a9dc8a121a2bb28f9d1bb58bd6ae53360848efc"
+            },
+            "scheme": {
+              "10": "f4b9a26fa0562fe5cc966d076545e670d00929a3fd3e6c7818878ab0ef25901b"
+            }
+          },
+          "marks": 9,
+          "candidateCanonicalSha256": "db26b65082958679749d7b58ab2648da65c9412e47ff48c104806d9cec09a5d9"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c2a",
+          "questionRef": "2022 CL Section C Q2(a) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c2a",
+          "sourceRef": "C2(a)",
+          "originalQuestionPages": [
+            21
+          ],
+          "originalSchemePages": [
+            11
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                21
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "21": "a188c9ad5da9767389a7ea7b82acd03bcec26996d5be313bdb7aeabc4b782542"
+            },
+            "scheme": {
+              "11": "12f636636cdc57d7d16e0603a71a0b30ac95011b4f108f707eb70a2ed2f2e095"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "b97294de1da8820108687e3a8640448c4bf5b4b33b8f5963fe4b3cdcfd5bf087"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c2b",
+          "questionRef": "2022 CL Section C Q2(b) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c2b",
+          "sourceRef": "C2(b)",
+          "originalQuestionPages": [
+            21
+          ],
+          "originalSchemePages": [
+            11
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                21
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "21": "a188c9ad5da9767389a7ea7b82acd03bcec26996d5be313bdb7aeabc4b782542"
+            },
+            "scheme": {
+              "11": "12f636636cdc57d7d16e0603a71a0b30ac95011b4f108f707eb70a2ed2f2e095"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "7382408cecf4afb58faa830ccca2b9aa7e48ddc64e3d6b8b131cbc02d840d8a7"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c2ci",
+          "questionRef": "2022 CL Section C Q2(c)(i) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c2ci",
+          "sourceRef": "C2(c)(i)",
+          "originalQuestionPages": [
+            22
+          ],
+          "originalSchemePages": [
+            11
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                22
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "22": "b3e4192627b6d07062642b368108ae8cdb7b2b5a4604322f301b6fe2bee64e7e"
+            },
+            "scheme": {
+              "11": "12f636636cdc57d7d16e0603a71a0b30ac95011b4f108f707eb70a2ed2f2e095"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "06efa072dba641928b901610ea1b2688333f158196274e12a59d6535b6fce57b"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c2cii",
+          "questionRef": "2022 CL Section C Q2(c)(ii) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c2cii",
+          "sourceRef": "C2(c)(ii)",
+          "originalQuestionPages": [
+            22
+          ],
+          "originalSchemePages": [
+            11
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                22
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "22": "b3e4192627b6d07062642b368108ae8cdb7b2b5a4604322f301b6fe2bee64e7e"
+            },
+            "scheme": {
+              "11": "12f636636cdc57d7d16e0603a71a0b30ac95011b4f108f707eb70a2ed2f2e095"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "9f9adfa0d1dae6c87e08d957ea68dbd995cde56fbe66859e04b4bd0b79fa0a67"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c2d",
+          "questionRef": "2022 CL Section C Q2(d) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c2d",
+          "sourceRef": "C2(d)",
+          "originalQuestionPages": [
+            23
+          ],
+          "originalSchemePages": [
+            12
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                23
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "23": "7a9cd1f3419b47501565ce7f03e6418cd74ab9086a29a20869f2ab52744cc237"
+            },
+            "scheme": {
+              "12": "cc8a4b38e891f94c553452d43147f4d690b7059a9adbcc594656d8912b006630"
+            }
+          },
+          "marks": 9,
+          "candidateCanonicalSha256": "e0ed84335bab461d79953f2f70414c546713bd03abc868c3b42f9123c4496429"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3a",
+          "questionRef": "2022 CL Section C Q3(a) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c3a",
+          "sourceRef": "C3(a)",
+          "originalQuestionPages": [
+            24
+          ],
+          "originalSchemePages": [
+            12
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                24
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "24": "cde4b2a40f00ab63e054da3280f655e605841cd54d6a96cb7565b037029fbac0"
+            },
+            "scheme": {
+              "12": "cc8a4b38e891f94c553452d43147f4d690b7059a9adbcc594656d8912b006630"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "6a816c0d7362e13b15066ce68c42edfa8af0eb9be420b09cb127b9b5974d2220"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3b",
+          "questionRef": "2022 CL Section C Q3(b) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c3b",
+          "sourceRef": "C3(b)",
+          "originalQuestionPages": [
+            24
+          ],
+          "originalSchemePages": [
+            13
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                24
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "24": "cde4b2a40f00ab63e054da3280f655e605841cd54d6a96cb7565b037029fbac0"
+            },
+            "scheme": {
+              "13": "6c83ccea34782ac514d42f408c8b3552fe5725349af63760aba818f42038921f"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "42872c715c31a3df8c7c13ec92c5b85ab4f4b4cdf9b8ec9279385b49fcea23f5"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3c",
+          "questionRef": "2022 CL Section C Q3(c) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c3c",
+          "sourceRef": "C3(c)",
+          "originalQuestionPages": [
+            25
+          ],
+          "originalSchemePages": [
+            13
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                25
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "25": "cb27af25df777aeac974369d8cf594d4ef2e50f22767c49c49036f82cdc22086"
+            },
+            "scheme": {
+              "13": "6c83ccea34782ac514d42f408c8b3552fe5725349af63760aba818f42038921f"
+            }
+          },
+          "marks": 8,
+          "candidateCanonicalSha256": "9a40fc32b70beceb8f3fe8b98a971a1d0183d51dd072b569272926d7791c9ba8"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3d",
+          "questionRef": "2022 CL Section C Q3(d) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c3d",
+          "sourceRef": "C3(d)",
+          "originalQuestionPages": [
+            26
+          ],
+          "originalSchemePages": [
+            13
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                26
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "26": "a8b0f541ed833ac5dceda58a399e9a5bf4eea11bf78aa1656b5725a6e10555ad"
+            },
+            "scheme": {
+              "13": "6c83ccea34782ac514d42f408c8b3552fe5725349af63760aba818f42038921f"
+            }
+          },
+          "marks": 9,
+          "candidateCanonicalSha256": "485afe6152109ac3a4e8b63842c4e55d02452b7ce03dddf7d7054c961aa34276"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4a",
+          "questionRef": "2022 CL Section C Q4(a) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c4a",
+          "sourceRef": "C4(a)",
+          "originalQuestionPages": [
+            27
+          ],
+          "originalSchemePages": [
+            14
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                27
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "27": "ed611a6cca304ed078715401aba28305539f574194167036f8c578fb88eb18fc"
+            },
+            "scheme": {
+              "14": "31b91dedb38cc2f15ed47dabf60c7682686bb0e09466571bf46a22da79aa2453"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "76e87dc19092d93042cdf81eb15b78ba23ab224daa2f4ff9be0a3547d02cc70f"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4b",
+          "questionRef": "2022 CL Section C Q4(b) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c4b",
+          "sourceRef": "C4(b)",
+          "originalQuestionPages": [
+            27
+          ],
+          "originalSchemePages": [
+            14
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                27
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "27": "ed611a6cca304ed078715401aba28305539f574194167036f8c578fb88eb18fc"
+            },
+            "scheme": {
+              "14": "31b91dedb38cc2f15ed47dabf60c7682686bb0e09466571bf46a22da79aa2453"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "07ef845f0bd5203aad26125c1d6696a0e23d4884c5e5361dcd10b509c07176f1"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4c",
+          "questionRef": "2022 CL Section C Q4(c) — sources — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c4c",
+          "sourceRef": "C4(c)",
+          "originalQuestionPages": [
+            28
+          ],
+          "originalSchemePages": [
+            14
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                28
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "28": "780987ffd2a1f81309b305f3b71c811cfbc26caac6a00beab7d8516d0fb9b489"
+            },
+            "scheme": {
+              "14": "31b91dedb38cc2f15ed47dabf60c7682686bb0e09466571bf46a22da79aa2453"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "258cf852e75a41f3657f7f0320480d9f0de2e58cbee0269d1f9249991054dcc6"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4c-2",
+          "questionRef": "2022 CL Section C Q4(c) — developed support — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c4c",
+          "sourceRef": "C4(c)",
+          "originalQuestionPages": [
+            28
+          ],
+          "originalSchemePages": [
+            14
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                28
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "28": "780987ffd2a1f81309b305f3b71c811cfbc26caac6a00beab7d8516d0fb9b489"
+            },
+            "scheme": {
+              "14": "31b91dedb38cc2f15ed47dabf60c7682686bb0e09466571bf46a22da79aa2453"
+            }
+          },
+          "marks": 5,
+          "candidateCanonicalSha256": "cfeaa30dc57bdc2a3acd25dd66dc0c2a778c3624d27a7590be26f8d5346fbd59"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4d",
+          "questionRef": "2022 CL Section C Q4(d) — challenges — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c4d",
+          "sourceRef": "C4(d)",
+          "originalQuestionPages": [
+            29
+          ],
+          "originalSchemePages": [
+            14,
+            15
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                29
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "29": "6859b1b2189cbcfe7ae7199ac88911ebfd7651bd4d08a7fab6f6efecac0201ae"
+            },
+            "scheme": {
+              "14": "31b91dedb38cc2f15ed47dabf60c7682686bb0e09466571bf46a22da79aa2453",
+              "15": "809e36d0f1a645b83713fd54ff66641812914b13a76332e6b3a73a30a3a89533"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "f466df2a8f60efbe7d84dbc23414466e555b46699f8389479f913f00486fd03c"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4d-2",
+          "questionRef": "2022 CL Section C Q4(d) — solutions — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c4d",
+          "sourceRef": "C4(d)",
+          "originalQuestionPages": [
+            29
+          ],
+          "originalSchemePages": [
+            14,
+            15
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                29
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "29": "6859b1b2189cbcfe7ae7199ac88911ebfd7651bd4d08a7fab6f6efecac0201ae"
+            },
+            "scheme": {
+              "14": "31b91dedb38cc2f15ed47dabf60c7682686bb0e09466571bf46a22da79aa2453",
+              "15": "809e36d0f1a645b83713fd54ff66641812914b13a76332e6b3a73a30a3a89533"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "83f22576fc582bb14367714441f0a50d34cdf3212465a4f40968fc49b98a2b1c"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c5a",
+          "questionRef": "2022 CL Section C Q5(a) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c5a",
+          "sourceRef": "C5(a)",
+          "originalQuestionPages": [
+            30
+          ],
+          "originalSchemePages": [
+            15
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                30
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "30": "b0e11d65f574bfdca9497c7a257149bb0a97b235ab17df2bcf22c8bf2c4be9eb"
+            },
+            "scheme": {
+              "15": "809e36d0f1a645b83713fd54ff66641812914b13a76332e6b3a73a30a3a89533"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "94c17d1f9455a21f7745f6b462fd42cdae1f26c944d39c9f444f140952f28568"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c5b",
+          "questionRef": "2022 CL Section C Q5(b) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c5b",
+          "sourceRef": "C5(b)",
+          "originalQuestionPages": [
+            30
+          ],
+          "originalSchemePages": [
+            15
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                30
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "30": "b0e11d65f574bfdca9497c7a257149bb0a97b235ab17df2bcf22c8bf2c4be9eb"
+            },
+            "scheme": {
+              "15": "809e36d0f1a645b83713fd54ff66641812914b13a76332e6b3a73a30a3a89533"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "f64314b40035ff1bbee100b61bbc94c354a316b2216e144504eab1f4d4395948"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c5c",
+          "questionRef": "2022 CL Section C Q5(c) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c5c",
+          "sourceRef": "C5(c)",
+          "originalQuestionPages": [
+            31
+          ],
+          "originalSchemePages": [
+            15
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                31
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "31": "218ea0d60da1385b859debbfe07ced70625ba6920ec2d74c616abfb2236fc8f8"
+            },
+            "scheme": {
+              "15": "809e36d0f1a645b83713fd54ff66641812914b13a76332e6b3a73a30a3a89533"
+            }
+          },
+          "marks": 8,
+          "candidateCanonicalSha256": "e2379bd9a097e1f87f9f871ecb3a18225ad4f11d41a5e30043364f77cb1b839b"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c5d",
+          "questionRef": "2022 CL Section C Q5(d) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c5d",
+          "sourceRef": "C5(d)",
+          "originalQuestionPages": [
+            32
+          ],
+          "originalSchemePages": [
+            16
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                32
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "32": "5a7d446d18c8359fc622527904f29c4bc44e55b16f8acbc6a193b609fbb59fcb"
+            },
+            "scheme": {
+              "16": "ff40a66aaa9c99af0ffe6bbdd70996439a629bb15c23d73cd451a92817b7e259"
+            }
+          },
+          "marks": 9,
+          "candidateCanonicalSha256": "bc90123618c219561d0edac9359e3a100db64feb450f727caf353bf5fc5678e5"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6ai",
+          "questionRef": "2022 CL Section C Q6(a)(i) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c6ai",
+          "sourceRef": "C6(a)(i)",
+          "originalQuestionPages": [
+            33
+          ],
+          "originalSchemePages": [
+            16
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                33
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "33": "530ded594644aef4cea41ffa11a746319fb71a547fb960a64b92f8be87800907"
+            },
+            "scheme": {
+              "16": "ff40a66aaa9c99af0ffe6bbdd70996439a629bb15c23d73cd451a92817b7e259"
+            }
+          },
+          "marks": 1,
+          "candidateCanonicalSha256": "e10c5fc8f9ff6b4d4011dbf083231d47800fc6893a12b2d3174fc09487c3f5e2"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6aii",
+          "questionRef": "2022 CL Section C Q6(a)(ii) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c6aii",
+          "sourceRef": "C6(a)(ii)",
+          "originalQuestionPages": [
+            33
+          ],
+          "originalSchemePages": [
+            16
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                33
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "33": "530ded594644aef4cea41ffa11a746319fb71a547fb960a64b92f8be87800907"
+            },
+            "scheme": {
+              "16": "ff40a66aaa9c99af0ffe6bbdd70996439a629bb15c23d73cd451a92817b7e259"
+            }
+          },
+          "marks": 1,
+          "candidateCanonicalSha256": "5a73a5dda236321a02bdc16021a54e61d9ddc34cec1ab712dceb0df168a938b6"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6b",
+          "questionRef": "2022 CL Section C Q6(b) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c6b",
+          "sourceRef": "C6(b)",
+          "originalQuestionPages": [
+            33
+          ],
+          "originalSchemePages": [
+            16
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                33
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "33": "530ded594644aef4cea41ffa11a746319fb71a547fb960a64b92f8be87800907"
+            },
+            "scheme": {
+              "16": "ff40a66aaa9c99af0ffe6bbdd70996439a629bb15c23d73cd451a92817b7e259"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "9b9fa99c1d00345e4dfe506fc13fbf0c6f42cc682fb1cd4f1da82beb1ea3b917"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6c",
+          "questionRef": "2022 CL Section C Q6(c) — sources — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c6c",
+          "sourceRef": "C6(c)",
+          "originalQuestionPages": [
+            34
+          ],
+          "originalSchemePages": [
+            16,
+            17
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                34
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "34": "1c2f7b378849ee990281153f948774e346c4c98f18bcde40bac45b432a64afbb"
+            },
+            "scheme": {
+              "16": "ff40a66aaa9c99af0ffe6bbdd70996439a629bb15c23d73cd451a92817b7e259",
+              "17": "7c8ac56be28eadbc872507dab29492feb2e7eab3ed3ff1314d683a3b8cb51635"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "e153db0dfbde159fea3417863449b6b750637ddf75a0d2cf7d5007a97d53c08b"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6c-2",
+          "questionRef": "2022 CL Section C Q6(c) — relevance — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c6c",
+          "sourceRef": "C6(c)",
+          "originalQuestionPages": [
+            34
+          ],
+          "originalSchemePages": [
+            16,
+            17
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                34
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "34": "1c2f7b378849ee990281153f948774e346c4c98f18bcde40bac45b432a64afbb"
+            },
+            "scheme": {
+              "16": "ff40a66aaa9c99af0ffe6bbdd70996439a629bb15c23d73cd451a92817b7e259",
+              "17": "7c8ac56be28eadbc872507dab29492feb2e7eab3ed3ff1314d683a3b8cb51635"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "7efcd006a004f4c5b7bac95503f895b74ac602fccb7ebc4b860de41b2fe706e5"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6d",
+          "questionRef": "2022 CL Section C Q6(d) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c6d",
+          "sourceRef": "C6(d)",
+          "originalQuestionPages": [
+            35
+          ],
+          "originalSchemePages": [
+            17
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                35
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "35": "1f4ac331efbb218da79f80e87055e164683725941ea7680d79d90b51a4094f34"
+            },
+            "scheme": {
+              "17": "7c8ac56be28eadbc872507dab29492feb2e7eab3ed3ff1314d683a3b8cb51635"
+            }
+          },
+          "marks": 9,
+          "candidateCanonicalSha256": "cafaf34ed49f4c953569efb09d545eec80ad7eddddccc1958ca79075df9855c7"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c7a",
+          "questionRef": "2022 CL Section C Q7(a) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c7a",
+          "sourceRef": "C7(a)",
+          "originalQuestionPages": [
+            36
+          ],
+          "originalSchemePages": [
+            17
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                36
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "36": "2a10114d9a6159c879fde7eb421ac703bd22adaa08f01e25f04d02292b90b743"
+            },
+            "scheme": {
+              "17": "7c8ac56be28eadbc872507dab29492feb2e7eab3ed3ff1314d683a3b8cb51635"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "1deffafc61f905a2a8123d525b25c98300abcc17956c9e525f2e5ce3619ed41f"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c7b",
+          "questionRef": "2022 CL Section C Q7(b) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c7b",
+          "sourceRef": "C7(b)",
+          "originalQuestionPages": [
+            36
+          ],
+          "originalSchemePages": [
+            17
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                36
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "36": "2a10114d9a6159c879fde7eb421ac703bd22adaa08f01e25f04d02292b90b743"
+            },
+            "scheme": {
+              "17": "7c8ac56be28eadbc872507dab29492feb2e7eab3ed3ff1314d683a3b8cb51635"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "ecabbaa14f6eac60056d3bc9542f45af18749f153f868640887d58f883e159df"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c7c",
+          "questionRef": "2022 CL Section C Q7(c) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c7c",
+          "sourceRef": "C7(c)",
+          "originalQuestionPages": [
+            37
+          ],
+          "originalSchemePages": [
+            18
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                37
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "37": "556118c98eceb5fd805ea35fe0e5d91efb0b04631fed0d1647af11d3457846b2"
+            },
+            "scheme": {
+              "18": "55f05a529aab4ee778e53d338e830b6c56adc45df495d34b12df671b2bf11087"
+            }
+          },
+          "marks": 8,
+          "candidateCanonicalSha256": "f6094decb07c25cb2ad68624e6ce0d0936e9b826b1266306c7a7b6f7e27255de"
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c7d",
+          "questionRef": "2022 CL Section C Q7(d) — Deferred sitting",
+          "sourceRecordId": "lcvp-2022-cl-deferred-c7d",
+          "sourceRef": "C7(d)",
+          "originalQuestionPages": [
+            38
+          ],
+          "originalSchemePages": [
+            18
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                38
+              ],
+              "attribution": "SEC LCVP Link Modules 2022 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "38": "e0e1b147e14efd5b12718bb596a8006f098cc0ff6e0d431f15dc5ba05fb30787"
+            },
+            "scheme": {
+              "18": "55f05a529aab4ee778e53d338e830b6c56adc45df495d34b12df671b2bf11087"
+            }
+          },
+          "marks": 9,
+          "candidateCanonicalSha256": "9336e252ca6ffaee7d7407a92b189d9c607b57d6283d0da53a23a52747bd1370"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "candidatePath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/proposed-50-authored-cards.json",
+      "candidateSha256": "67cd973f737ed8e04f4db92edec3ecc7e6048685bd7e4d9eb570a66fd245ace1",
+      "filingPath": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-codex-third-reading-index/lcvp-filing-additions/2023-deferred.json",
+      "filingSha256": "b8a642d822afc9f6a35fa90d1329462eeb734056a9ea9e0c3b950096e13da78c",
+      "sourceManifest": {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/source-manifest.json",
+        "sha256": "34e414492469fdadb99dc0b6deeef275fe904c8c96b5da314ce285c5c93fa9d2"
+      },
+      "sourceSelections": {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/source-parts.json",
+        "sha256": "78c4e08272138eb7a1b4155f4d2b86e6fa33461f758039b4bd72c833d5e600bc"
+      },
+      "priorVisualReading": {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/first-reading-frozen.json",
+        "sha256": "944bfb81d07f6b4059abdbd2e4c5b6734286579903f7bfe7be8d28a98173cbb5"
+      },
+      "finalBoundaryDecision": {
+        "path": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/third-reader-decision.json",
+        "sha256": "15848a41a33b471b64468438fce20db2dc86da98008802f7a27fe0b7e98cfd4b"
+      },
+      "sources": [
+        {
+          "kind": "deferredexams",
+          "year": 2023,
+          "fileid": "LC462CLP000EV.pdf",
+          "path": "paper-trail-corpus/deferredexams/2023/LC462CLP000EV.pdf",
+          "sha256": "43b5e8362f07019d03fa8e8de76e2a7a455d24f32db8b29332ac7139e8f7be12",
+          "pages": 40,
+          "localPath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/deferredexams/2023/LC462CLP000EV.pdf"
+        },
+        {
+          "kind": "deferredmarkingschemes",
+          "year": 2023,
+          "fileid": "LC462CLP000EV.pdf",
+          "path": "paper-trail-corpus/deferredmarkingschemes/2023/LC462CLP000EV.pdf",
+          "sha256": "b64d9aff0039e06c09c21ca9218308263055547ea003d09fc1623e6afe2b6efa",
+          "pages": 20,
+          "localPath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/deferredmarkingschemes/2023/LC462CLP000EV.pdf"
+        }
+      ],
+      "transcript": {
+        "year": 2023,
+        "sourcePath": "/Users/alexlinehan/Documents/Nextstepuni-Maths-Launch-Integration-20261030/paper-trail-corpus/deferredmarkingschemes/2023/LC462CLP000EV.pdf",
+        "sourceSha256": "b64d9aff0039e06c09c21ca9218308263055547ea003d09fc1623e6afe2b6efa",
+        "pages": 20,
+        "transcript": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/2023-cl-deferred.md",
+        "transcriptSha256": "72c7532a75cad515921b1c960fb0940cb49e896ce466d66419f5c060cb9411ad",
+        "intendedDestination": "examiner-reports/lcvp/schemes/2023-cl-deferred.md"
+      },
+      "reviewOnlySourceMapInput": {
+        "year": 2023,
+        "level": "common",
+        "sitting": "deferred",
+        "language": "ev",
+        "visualSweep": {
+          "paper": "Earlier complete original-page reading: /Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/first-reading-frozen.json; SHA256 944bfb81d07f6b4059abdbd2e4c5b6734286579903f7bfe7be8d28a98173cbb5. This binding check adds no visual reading.",
+          "writtenScheme": "Earlier complete original-page reading: /Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-independent/first-reading-frozen.json; SHA256 944bfb81d07f6b4059abdbd2e4c5b6734286579903f7bfe7be8d28a98173cbb5. Final boundaries from the separately recorded third-reader decision."
+        },
+        "manualOriginalLeaves": 43,
+        "manualPricedTasks": 50,
+        "sources": [
+          {
+            "kind": "deferredexams",
+            "year": 2023,
+            "fileid": "LC462CLP000EV.pdf",
+            "path": "paper-trail-corpus/deferredexams/2023/LC462CLP000EV.pdf",
+            "sha256": "43b5e8362f07019d03fa8e8de76e2a7a455d24f32db8b29332ac7139e8f7be12"
+          },
+          {
+            "kind": "deferredmarkingschemes",
+            "year": 2023,
+            "fileid": "LC462CLP000EV.pdf",
+            "path": "paper-trail-corpus/deferredmarkingschemes/2023/LC462CLP000EV.pdf",
+            "sha256": "b64d9aff0039e06c09c21ca9218308263055547ea003d09fc1623e6afe2b6efa"
+          }
+        ],
+        "tasks": [
+          {
+            "id": "lcvp-2023-cl-deferred-a1",
+            "questionRef": "2023 CL Section A Q1 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-a2",
+            "questionRef": "2023 CL Section A Q2 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-a3",
+            "questionRef": "2023 CL Section A Q3 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-a4",
+            "questionRef": "2023 CL Section A Q4 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-a5",
+            "questionRef": "2023 CL Section A Q5 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-a6",
+            "questionRef": "2023 CL Section A Q6 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-a7",
+            "questionRef": "2023 CL Section A Q7 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-a8",
+            "questionRef": "2023 CL Section A Q8 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-b1",
+            "questionRef": "2023 CL Section B Q1 — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-b2i",
+            "questionRef": "2023 CL Section B Q2(i) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-b2ii",
+            "questionRef": "2023 CL Section B Q2(ii) — ways — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-b2ii-2",
+            "questionRef": "2023 CL Section B Q2(ii) — reasons — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-b3i",
+            "questionRef": "2023 CL Section B Q3(i) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-b3ii",
+            "questionRef": "2023 CL Section B Q3(ii) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-b3iii",
+            "questionRef": "2023 CL Section B Q3(iii) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c1a",
+            "questionRef": "2023 CL Section C Q1(a) — name — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c1a-2",
+            "questionRef": "2023 CL Section C Q1(a) — services — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c1b",
+            "questionRef": "2023 CL Section C Q1(b) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c1c",
+            "questionRef": "2023 CL Section C Q1(c) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c1di",
+            "questionRef": "2023 CL Section C Q1(d)(i) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c1dii",
+            "questionRef": "2023 CL Section C Q1(d)(ii) — methods — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c1dii-2",
+            "questionRef": "2023 CL Section C Q1(d)(ii) — reasons — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c2a",
+            "questionRef": "2023 CL Section C Q2(a) — career — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c2a-2",
+            "questionRef": "2023 CL Section C Q2(a) — qualities — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c2b",
+            "questionRef": "2023 CL Section C Q2(b) — sources — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c2b-2",
+            "questionRef": "2023 CL Section C Q2(b) — relevance — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c2c",
+            "questionRef": "2023 CL Section C Q2(c) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c2d",
+            "questionRef": "2023 CL Section C Q2(d) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c3a",
+            "questionRef": "2023 CL Section C Q3(a) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c3b",
+            "questionRef": "2023 CL Section C Q3(b) — need — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c3b-2",
+            "questionRef": "2023 CL Section C Q3(b) — solutions — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c3c",
+            "questionRef": "2023 CL Section C Q3(c) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c3d",
+            "questionRef": "2023 CL Section C Q3(d) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c4a",
+            "questionRef": "2023 CL Section C Q4(a) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c4b",
+            "questionRef": "2023 CL Section C Q4(b) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c4c",
+            "questionRef": "2023 CL Section C Q4(c) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c4d",
+            "questionRef": "2023 CL Section C Q4(d) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c5a",
+            "questionRef": "2023 CL Section C Q5(a) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c5b",
+            "questionRef": "2023 CL Section C Q5(b) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c5c",
+            "questionRef": "2023 CL Section C Q5(c) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c5d",
+            "questionRef": "2023 CL Section C Q5(d) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c6a",
+            "questionRef": "2023 CL Section C Q6(a) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c6b",
+            "questionRef": "2023 CL Section C Q6(b) — skills — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c6b-2",
+            "questionRef": "2023 CL Section C Q6(b) — qualities — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c6c",
+            "questionRef": "2023 CL Section C Q6(c) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c6d",
+            "questionRef": "2023 CL Section C Q6(d) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c7a",
+            "questionRef": "2023 CL Section C Q7(a) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c7b",
+            "questionRef": "2023 CL Section C Q7(b) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c7c",
+            "questionRef": "2023 CL Section C Q7(c) — Deferred sitting"
+          },
+          {
+            "id": "lcvp-2023-cl-deferred-c7d",
+            "questionRef": "2023 CL Section C Q7(d) — Deferred sitting"
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "id": "lcvp-2023-cl-deferred-a1",
+          "questionRef": "2023 CL Section A Q1 — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-a1",
+          "sourceRef": "A1",
+          "originalQuestionPages": [
+            4
+          ],
+          "originalSchemePages": [
+            4
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                4
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "fc65e383f42782ff1da23b7d424bd8c3dae512357f7f1de0ab28a980d82d5eca",
+              "4": "35f208e5a8cad83202ad2ea87541166643b7959a7093b04bfbc31daa28fe681e"
+            },
+            "scheme": {
+              "4": "6f62448ec3e87d18f68feb435d11be5bb6813a9a6ea0fde8b954adb52e4aaf31"
+            }
+          },
+          "marks": 1,
+          "candidateCanonicalSha256": "e9a6f315695a778e260cca30a2afcd2f651c7ef848a15c808677bc39eba1cf71"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a2",
+          "questionRef": "2023 CL Section A Q2 — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-a2",
+          "sourceRef": "A2",
+          "originalQuestionPages": [
+            4
+          ],
+          "originalSchemePages": [
+            4
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                4
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "fc65e383f42782ff1da23b7d424bd8c3dae512357f7f1de0ab28a980d82d5eca",
+              "4": "35f208e5a8cad83202ad2ea87541166643b7959a7093b04bfbc31daa28fe681e"
+            },
+            "scheme": {
+              "4": "6f62448ec3e87d18f68feb435d11be5bb6813a9a6ea0fde8b954adb52e4aaf31"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "0b847d6c1919fbbce8e0550a35e1e3f3f58b17644d4cea8ff132ef4800070a72"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a3",
+          "questionRef": "2023 CL Section A Q3 — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-a3",
+          "sourceRef": "A3",
+          "originalQuestionPages": [
+            4
+          ],
+          "originalSchemePages": [
+            4
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                4
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "fc65e383f42782ff1da23b7d424bd8c3dae512357f7f1de0ab28a980d82d5eca",
+              "4": "35f208e5a8cad83202ad2ea87541166643b7959a7093b04bfbc31daa28fe681e"
+            },
+            "scheme": {
+              "4": "6f62448ec3e87d18f68feb435d11be5bb6813a9a6ea0fde8b954adb52e4aaf31"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "6b3f066f4189444d5b8cf177a458f12698ab66b1062a6659da3554d54b6371b6"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a4",
+          "questionRef": "2023 CL Section A Q4 — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-a4",
+          "sourceRef": "A4",
+          "originalQuestionPages": [
+            5
+          ],
+          "originalSchemePages": [
+            4
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                5
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "fc65e383f42782ff1da23b7d424bd8c3dae512357f7f1de0ab28a980d82d5eca",
+              "5": "fc56baf65ac606220de0758a1de8e435d200ebe0d651af244126ff09384d7749"
+            },
+            "scheme": {
+              "4": "6f62448ec3e87d18f68feb435d11be5bb6813a9a6ea0fde8b954adb52e4aaf31"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "69869341c3a7a50c85fdd06b72824da5d52ed7655a6bc1eda33208d5b3e9c32c"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a5",
+          "questionRef": "2023 CL Section A Q5 — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-a5",
+          "sourceRef": "A5",
+          "originalQuestionPages": [
+            5
+          ],
+          "originalSchemePages": [
+            4
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                5
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "fc65e383f42782ff1da23b7d424bd8c3dae512357f7f1de0ab28a980d82d5eca",
+              "5": "fc56baf65ac606220de0758a1de8e435d200ebe0d651af244126ff09384d7749"
+            },
+            "scheme": {
+              "4": "6f62448ec3e87d18f68feb435d11be5bb6813a9a6ea0fde8b954adb52e4aaf31"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "12b1be7d40e1647523aef8f116d2a52f2e5ae0a008fe190361af5f1c57d18d29"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a6",
+          "questionRef": "2023 CL Section A Q6 — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-a6",
+          "sourceRef": "A6",
+          "originalQuestionPages": [
+            6
+          ],
+          "originalSchemePages": [
+            5
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                6
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "fc65e383f42782ff1da23b7d424bd8c3dae512357f7f1de0ab28a980d82d5eca",
+              "6": "66acdda0e4123e60a805e3df1d5f41379a3c74979c78cdaf2b56b9f78913342f"
+            },
+            "scheme": {
+              "5": "77613b2a455c9c1c7ad7393818109e0d0b57d066fdfcf91f6a7f8febf3b2a0a3"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "6560a1ea2a12477b4cb4d90fb6c0315ca827f9a6de61358c6b9eb1f7552db3b2"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a7",
+          "questionRef": "2023 CL Section A Q7 — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-a7",
+          "sourceRef": "A7",
+          "originalQuestionPages": [
+            7
+          ],
+          "originalSchemePages": [
+            5
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                7
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "fc65e383f42782ff1da23b7d424bd8c3dae512357f7f1de0ab28a980d82d5eca",
+              "7": "17aa347c827be6bfbade26010808d5ae4497afe32f8ff8dcb8a2250470cd6d7c"
+            },
+            "scheme": {
+              "5": "77613b2a455c9c1c7ad7393818109e0d0b57d066fdfcf91f6a7f8febf3b2a0a3"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "3b2fc8874df1c9a52d56908fb29d62ca1f2d4a01a6a58853bd4de1cc83ea8053"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a8",
+          "questionRef": "2023 CL Section A Q8 — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-a8",
+          "sourceRef": "A8",
+          "originalQuestionPages": [
+            8
+          ],
+          "originalSchemePages": [
+            5
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                8
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred audiovisual instructions",
+              "pages": [
+                3
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "3": "fc65e383f42782ff1da23b7d424bd8c3dae512357f7f1de0ab28a980d82d5eca",
+              "8": "ad2159674e5132d4a5d47292a3e5a26ccfe4691792e8e646da6b01ae01468796"
+            },
+            "scheme": {
+              "5": "77613b2a455c9c1c7ad7393818109e0d0b57d066fdfcf91f6a7f8febf3b2a0a3"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "be43f0dfdf554c4a64d69a55cd5499a23bb1bf7c76a345b5c5bb965b8155bf84"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b1",
+          "questionRef": "2023 CL Section B Q1 — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-b1",
+          "sourceRef": "B1",
+          "originalQuestionPages": [
+            10
+          ],
+          "originalSchemePages": [
+            6
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-text",
+              "label": "OFFICIAL SOURCE",
+              "title": "Ballyfert — complete case study",
+              "pages": [
+                9
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                10
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "9": "99ca360ef345868aefdff2b7f0bf7858af7f27980b505fef33020bdfeac18a0d",
+              "10": "51ed86d82243736239df79060fb3a11743740cfdefe8c8305098355b6c787661"
+            },
+            "scheme": {
+              "6": "31a099a8ff3d30408e9c6bdbf078a90ed7b2ded4fa3c965adbc3995363f09bb5"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "9e0dc73737bdf9d27711e8200f835fb5448daa97ccdd435ebecae160f6fcad2e"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2i",
+          "questionRef": "2023 CL Section B Q2(i) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-b2i",
+          "sourceRef": "B2(i)",
+          "originalQuestionPages": [
+            11
+          ],
+          "originalSchemePages": [
+            6
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-text",
+              "label": "OFFICIAL SOURCE",
+              "title": "Ballyfert — complete case study",
+              "pages": [
+                9
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                11
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "9": "99ca360ef345868aefdff2b7f0bf7858af7f27980b505fef33020bdfeac18a0d",
+              "11": "d1074d644ca37b9c68d5111d4289496b761cec480caedb2b08f89dc6578c89c5"
+            },
+            "scheme": {
+              "6": "31a099a8ff3d30408e9c6bdbf078a90ed7b2ded4fa3c965adbc3995363f09bb5"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "a3e9904848ac189708de78b24cd2e524f25213254064d1c46c1ca42aede4be6d"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2ii",
+          "questionRef": "2023 CL Section B Q2(ii) — ways — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-b2ii",
+          "sourceRef": "B2(ii)",
+          "originalQuestionPages": [
+            11
+          ],
+          "originalSchemePages": [
+            6
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-text",
+              "label": "OFFICIAL SOURCE",
+              "title": "Ballyfert — complete case study",
+              "pages": [
+                9
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                11
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "9": "99ca360ef345868aefdff2b7f0bf7858af7f27980b505fef33020bdfeac18a0d",
+              "11": "d1074d644ca37b9c68d5111d4289496b761cec480caedb2b08f89dc6578c89c5"
+            },
+            "scheme": {
+              "6": "31a099a8ff3d30408e9c6bdbf078a90ed7b2ded4fa3c965adbc3995363f09bb5"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "89f91f139669d48c63747ea3f5830074d4e4744abc5ce6ab70c28c66a7fa91e6"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2ii-2",
+          "questionRef": "2023 CL Section B Q2(ii) — reasons — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-b2ii",
+          "sourceRef": "B2(ii)",
+          "originalQuestionPages": [
+            11
+          ],
+          "originalSchemePages": [
+            6
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-text",
+              "label": "OFFICIAL SOURCE",
+              "title": "Ballyfert — complete case study",
+              "pages": [
+                9
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                11
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "9": "99ca360ef345868aefdff2b7f0bf7858af7f27980b505fef33020bdfeac18a0d",
+              "11": "d1074d644ca37b9c68d5111d4289496b761cec480caedb2b08f89dc6578c89c5"
+            },
+            "scheme": {
+              "6": "31a099a8ff3d30408e9c6bdbf078a90ed7b2ded4fa3c965adbc3995363f09bb5"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "6ad56da89701939c7d108434af5b5d1f03f5a555001d7f6b09c73076e828510b"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3i",
+          "questionRef": "2023 CL Section B Q3(i) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-b3i",
+          "sourceRef": "B3(i)",
+          "originalQuestionPages": [
+            12
+          ],
+          "originalSchemePages": [
+            7
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-text",
+              "label": "OFFICIAL SOURCE",
+              "title": "Ballyfert — complete case study",
+              "pages": [
+                9
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                12
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "9": "99ca360ef345868aefdff2b7f0bf7858af7f27980b505fef33020bdfeac18a0d",
+              "12": "b2c211fc00ac6b7f1ac0f9da58f8962c030259c0aa9be34a44e9d0c2166e4598"
+            },
+            "scheme": {
+              "7": "2a9ab69a95a4a3569bafd986bfa3d4073dbf5cfd5bae233e26ba68d6fb6e451f"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "e2277532fe1ae9b0ef3259c0eeca56c15e2029a1549a94afd290f6d53de3db0c"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3ii",
+          "questionRef": "2023 CL Section B Q3(ii) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-b3ii",
+          "sourceRef": "B3(ii)",
+          "originalQuestionPages": [
+            12
+          ],
+          "originalSchemePages": [
+            7
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-text",
+              "label": "OFFICIAL SOURCE",
+              "title": "Ballyfert — complete case study",
+              "pages": [
+                9
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                12
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "9": "99ca360ef345868aefdff2b7f0bf7858af7f27980b505fef33020bdfeac18a0d",
+              "12": "b2c211fc00ac6b7f1ac0f9da58f8962c030259c0aa9be34a44e9d0c2166e4598"
+            },
+            "scheme": {
+              "7": "2a9ab69a95a4a3569bafd986bfa3d4073dbf5cfd5bae233e26ba68d6fb6e451f"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "55b210360819f3c132acfdf93c5b6ec98d610268adc752ee276e7779c2bdf933"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3iii",
+          "questionRef": "2023 CL Section B Q3(iii) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-b3iii",
+          "sourceRef": "B3(iii)",
+          "originalQuestionPages": [
+            12,
+            13
+          ],
+          "originalSchemePages": [
+            7,
+            8
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-text",
+              "label": "OFFICIAL SOURCE",
+              "title": "Ballyfert — complete case study",
+              "pages": [
+                9
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            },
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                12,
+                13
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "9": "99ca360ef345868aefdff2b7f0bf7858af7f27980b505fef33020bdfeac18a0d",
+              "12": "b2c211fc00ac6b7f1ac0f9da58f8962c030259c0aa9be34a44e9d0c2166e4598",
+              "13": "8cdf3e7e5e66bf93e1423e9c2eee3f856489006d702c8d9193d49c4d5d06573d"
+            },
+            "scheme": {
+              "7": "2a9ab69a95a4a3569bafd986bfa3d4073dbf5cfd5bae233e26ba68d6fb6e451f",
+              "8": "0fef38f775a078d9beb1c8fd61d7f6a810c9b01a9c1f0082439782f243144da2"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "8690b43f137b98a2e811c5acc801d0a6f0b5e484ee8bd8f09bd92cc771b1b029"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1a",
+          "questionRef": "2023 CL Section C Q1(a) — name — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c1a",
+          "sourceRef": "C1(a)",
+          "originalQuestionPages": [
+            16
+          ],
+          "originalSchemePages": [
+            9
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                16
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "16": "92c2e089d622fd34cf0d1a2a9cbd8145e3d07a99fc04e74690734bbceed03c0f"
+            },
+            "scheme": {
+              "9": "ba71ba65c569fa10f487537bccc22beb273894c7def78bc5cc85cf7983eb3d4d"
+            }
+          },
+          "marks": 1,
+          "candidateCanonicalSha256": "c6f8bb4a23a67dd80b90072f85d54bbb4d4088d57791c1f5fd3669d6a8061ca7"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1a-2",
+          "questionRef": "2023 CL Section C Q1(a) — services — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c1a",
+          "sourceRef": "C1(a)",
+          "originalQuestionPages": [
+            16
+          ],
+          "originalSchemePages": [
+            9
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                16
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "16": "92c2e089d622fd34cf0d1a2a9cbd8145e3d07a99fc04e74690734bbceed03c0f"
+            },
+            "scheme": {
+              "9": "ba71ba65c569fa10f487537bccc22beb273894c7def78bc5cc85cf7983eb3d4d"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "1980fce208e5b95a4ecf8ead0f093aaf6961c48e2a49b98bcb3ff06c34201e2b"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1b",
+          "questionRef": "2023 CL Section C Q1(b) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c1b",
+          "sourceRef": "C1(b)",
+          "originalQuestionPages": [
+            16
+          ],
+          "originalSchemePages": [
+            9
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                16
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "16": "92c2e089d622fd34cf0d1a2a9cbd8145e3d07a99fc04e74690734bbceed03c0f"
+            },
+            "scheme": {
+              "9": "ba71ba65c569fa10f487537bccc22beb273894c7def78bc5cc85cf7983eb3d4d"
+            }
+          },
+          "marks": 5,
+          "candidateCanonicalSha256": "d5c9b6ce29f30e2b5bda99144920bcb8894f51a1a408282a7f2a0b3ce0ab40dc"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1c",
+          "questionRef": "2023 CL Section C Q1(c) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c1c",
+          "sourceRef": "C1(c)",
+          "originalQuestionPages": [
+            17
+          ],
+          "originalSchemePages": [
+            9
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                17
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "17": "a428300f0f2c38512711f263f54ef78d2575ee155509ee2bce66d17f1442f857"
+            },
+            "scheme": {
+              "9": "ba71ba65c569fa10f487537bccc22beb273894c7def78bc5cc85cf7983eb3d4d"
+            }
+          },
+          "marks": 8,
+          "candidateCanonicalSha256": "d95954021ae0eda8b56a4ae0820021054ce4e765a0d8383b5aebda0afbb9988c"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1di",
+          "questionRef": "2023 CL Section C Q1(d)(i) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c1di",
+          "sourceRef": "C1(d)(i)",
+          "originalQuestionPages": [
+            18
+          ],
+          "originalSchemePages": [
+            10
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                18
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "18": "6316f9a4790963ed929730a01c8eb628dbc6d38fc17ca362574fc2e189786152"
+            },
+            "scheme": {
+              "10": "64be843ace6e2b296c34a57224de1498d995f7f19921d2b9d2077c5a909e09b8"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "e207bc58dab4b67b68553fc46edc3c77940875c10accaf54b69825b529a5cd57"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1dii",
+          "questionRef": "2023 CL Section C Q1(d)(ii) — methods — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c1dii",
+          "sourceRef": "C1(d)(ii)",
+          "originalQuestionPages": [
+            18
+          ],
+          "originalSchemePages": [
+            10
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                18
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "18": "6316f9a4790963ed929730a01c8eb628dbc6d38fc17ca362574fc2e189786152"
+            },
+            "scheme": {
+              "10": "64be843ace6e2b296c34a57224de1498d995f7f19921d2b9d2077c5a909e09b8"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "fc5b7e7c6b15ba075b75a741f8b28303ccbbe23f798256567bb367b85e427f86"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1dii-2",
+          "questionRef": "2023 CL Section C Q1(d)(ii) — reasons — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c1dii",
+          "sourceRef": "C1(d)(ii)",
+          "originalQuestionPages": [
+            18
+          ],
+          "originalSchemePages": [
+            10
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                18
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "18": "6316f9a4790963ed929730a01c8eb628dbc6d38fc17ca362574fc2e189786152"
+            },
+            "scheme": {
+              "10": "64be843ace6e2b296c34a57224de1498d995f7f19921d2b9d2077c5a909e09b8"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "b666ef0fbe82016e2f6e17994f31834b9fa104ee238f6857e9dd9d6e1b064e32"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2a",
+          "questionRef": "2023 CL Section C Q2(a) — career — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c2a",
+          "sourceRef": "C2(a)",
+          "originalQuestionPages": [
+            19
+          ],
+          "originalSchemePages": [
+            11
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                19
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "19": "68e12d15d17be3555daf76815fa16bb34e16e3d736c2db43b783441f1b03c727"
+            },
+            "scheme": {
+              "11": "ce506f11fa0bd098aeb92e56fc263e9096ff27de8e4f5b46fb6b8a3892de6e14"
+            }
+          },
+          "marks": 1,
+          "candidateCanonicalSha256": "ae2e1ba3dd105c17e00e3835817238acf198022ead63ce71488350367fa3773e"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2a-2",
+          "questionRef": "2023 CL Section C Q2(a) — qualities — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c2a",
+          "sourceRef": "C2(a)",
+          "originalQuestionPages": [
+            19
+          ],
+          "originalSchemePages": [
+            11
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                19
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "19": "68e12d15d17be3555daf76815fa16bb34e16e3d736c2db43b783441f1b03c727"
+            },
+            "scheme": {
+              "11": "ce506f11fa0bd098aeb92e56fc263e9096ff27de8e4f5b46fb6b8a3892de6e14"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "4b2c48bd544971ff33664b1b3ca17400d473507215538b468428861cbfbfbb23"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2b",
+          "questionRef": "2023 CL Section C Q2(b) — sources — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c2b",
+          "sourceRef": "C2(b)",
+          "originalQuestionPages": [
+            19
+          ],
+          "originalSchemePages": [
+            11
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                19
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "19": "68e12d15d17be3555daf76815fa16bb34e16e3d736c2db43b783441f1b03c727"
+            },
+            "scheme": {
+              "11": "ce506f11fa0bd098aeb92e56fc263e9096ff27de8e4f5b46fb6b8a3892de6e14"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "15d705b44dff2f35b6e948f00cd0ea19b35d3051d3ac4c6797975bd93a4df581"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2b-2",
+          "questionRef": "2023 CL Section C Q2(b) — relevance — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c2b",
+          "sourceRef": "C2(b)",
+          "originalQuestionPages": [
+            19
+          ],
+          "originalSchemePages": [
+            11
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                19
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "19": "68e12d15d17be3555daf76815fa16bb34e16e3d736c2db43b783441f1b03c727"
+            },
+            "scheme": {
+              "11": "ce506f11fa0bd098aeb92e56fc263e9096ff27de8e4f5b46fb6b8a3892de6e14"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "f04d133e3dbd0f88bc3a518a8f3ec910d48f8a345e057c6c79ad6c61b3af73b6"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2c",
+          "questionRef": "2023 CL Section C Q2(c) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c2c",
+          "sourceRef": "C2(c)",
+          "originalQuestionPages": [
+            20
+          ],
+          "originalSchemePages": [
+            11
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                20
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "20": "908fe98585c6f0135ba54ec708f81cb01f2a30077a770251adbc6b8c47b277cf"
+            },
+            "scheme": {
+              "11": "ce506f11fa0bd098aeb92e56fc263e9096ff27de8e4f5b46fb6b8a3892de6e14"
+            }
+          },
+          "marks": 10,
+          "candidateCanonicalSha256": "2c2e816a6b2534b78d5c46900211abe2282fb2c99823f04e08c66774ec9f64a5"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2d",
+          "questionRef": "2023 CL Section C Q2(d) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c2d",
+          "sourceRef": "C2(d)",
+          "originalQuestionPages": [
+            21
+          ],
+          "originalSchemePages": [
+            12
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                21
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "21": "f8b1ce0a0e5bfe200c3529afb22bffa179d81d61bf4085236ac1b4c8c70c0215"
+            },
+            "scheme": {
+              "12": "e81abd3deeea47f3bd7713fa4e7ca0af1e95210d027af6ba06e56a0eaabc181e"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "19df7e9b082af6a2be0677f86f93f8c60561be744b311996e5cd6c283bf4231c"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3a",
+          "questionRef": "2023 CL Section C Q3(a) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c3a",
+          "sourceRef": "C3(a)",
+          "originalQuestionPages": [
+            22
+          ],
+          "originalSchemePages": [
+            13
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                22
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "22": "59432a14a99df14fb08f398b3086466e8854fbfd1848ab1117ef442e78970bd9"
+            },
+            "scheme": {
+              "13": "e6372914ac0122dcc049a279cd307153d62ea32688bb6c160ae9b52e678bf60d"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "2902e67d597da2bced93d25f810719a45702bb617c4444aee998ca56b7ca14ef"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3b",
+          "questionRef": "2023 CL Section C Q3(b) — need — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c3b",
+          "sourceRef": "C3(b)",
+          "originalQuestionPages": [
+            22
+          ],
+          "originalSchemePages": [
+            13
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                22
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "22": "59432a14a99df14fb08f398b3086466e8854fbfd1848ab1117ef442e78970bd9"
+            },
+            "scheme": {
+              "13": "e6372914ac0122dcc049a279cd307153d62ea32688bb6c160ae9b52e678bf60d"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "822f8116ff95b2dcc636dd7ac2eaea87405d6ed01ae01968be30902103372535"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3b-2",
+          "questionRef": "2023 CL Section C Q3(b) — solutions — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c3b",
+          "sourceRef": "C3(b)",
+          "originalQuestionPages": [
+            22
+          ],
+          "originalSchemePages": [
+            13
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                22
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "22": "59432a14a99df14fb08f398b3086466e8854fbfd1848ab1117ef442e78970bd9"
+            },
+            "scheme": {
+              "13": "e6372914ac0122dcc049a279cd307153d62ea32688bb6c160ae9b52e678bf60d"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "d2de7ce0e2602c9077f620ca8a12170b424fe8bb3cfcadc142b30d7327a1f52c"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3c",
+          "questionRef": "2023 CL Section C Q3(c) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c3c",
+          "sourceRef": "C3(c)",
+          "originalQuestionPages": [
+            23
+          ],
+          "originalSchemePages": [
+            13,
+            14
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                23
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "23": "08cf650a5ce2bbb00a82090aca7f8c6853c591b163c6c8ca9e96f6c94b98dd01"
+            },
+            "scheme": {
+              "13": "e6372914ac0122dcc049a279cd307153d62ea32688bb6c160ae9b52e678bf60d",
+              "14": "99197cf67a15583de0fe0d51b96c6fa1261712739c122a7c07eaf1ecb1db951a"
+            }
+          },
+          "marks": 8,
+          "candidateCanonicalSha256": "c84d1f66de13f18eddd050779fd7b923835d81fa47dd8e2ccb7a51e81457158c"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3d",
+          "questionRef": "2023 CL Section C Q3(d) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c3d",
+          "sourceRef": "C3(d)",
+          "originalQuestionPages": [
+            24
+          ],
+          "originalSchemePages": [
+            14
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                24
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "24": "7d4311e4ced2614bd29c8f2ab8b83be37f2b8f83daddc60dc74805ddaac5f3ed"
+            },
+            "scheme": {
+              "14": "99197cf67a15583de0fe0d51b96c6fa1261712739c122a7c07eaf1ecb1db951a"
+            }
+          },
+          "marks": 9,
+          "candidateCanonicalSha256": "90afebc2e79f43fbe9a73db5c1c2edb96bde3ce426d0a64c68c05218cc645f97"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c4a",
+          "questionRef": "2023 CL Section C Q4(a) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c4a",
+          "sourceRef": "C4(a)",
+          "originalQuestionPages": [
+            25
+          ],
+          "originalSchemePages": [
+            15
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                25
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "25": "6b9d5a82d1dfde337a59eaa91fc0f3dcdc9c9650a993fe75146190f1efed90ee"
+            },
+            "scheme": {
+              "15": "325982b17580877a815d7ea7f921fd8eea973f9d6536b85d88b0dc208a28be89"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "af1995e6d9823cba157fa3a05b626ef50b8b603068dcb7507cccfb1ea9d7e5d7"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c4b",
+          "questionRef": "2023 CL Section C Q4(b) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c4b",
+          "sourceRef": "C4(b)",
+          "originalQuestionPages": [
+            25
+          ],
+          "originalSchemePages": [
+            15
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                25
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "25": "6b9d5a82d1dfde337a59eaa91fc0f3dcdc9c9650a993fe75146190f1efed90ee"
+            },
+            "scheme": {
+              "15": "325982b17580877a815d7ea7f921fd8eea973f9d6536b85d88b0dc208a28be89"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "f90131e7b9866e31aa92ea60449c96342ca2f4bbdd74f937f79db6673bc6f05b"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c4c",
+          "questionRef": "2023 CL Section C Q4(c) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c4c",
+          "sourceRef": "C4(c)",
+          "originalQuestionPages": [
+            26
+          ],
+          "originalSchemePages": [
+            15,
+            16
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                26
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "26": "40ea2a516f89f1370d196e81fb88ae7a203e6dc93428b738135c842ebc20c6ce"
+            },
+            "scheme": {
+              "15": "325982b17580877a815d7ea7f921fd8eea973f9d6536b85d88b0dc208a28be89",
+              "16": "14b8d0c31a4f2638c49ef3ef63916bfa29dc6d1911f234ef1ccb63ca74ed00c9"
+            }
+          },
+          "marks": 8,
+          "candidateCanonicalSha256": "9fe45c98d311c35d7cbe4f9118f17774ffeb14bbb345bd8f0466034f8c3ed883"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c4d",
+          "questionRef": "2023 CL Section C Q4(d) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c4d",
+          "sourceRef": "C4(d)",
+          "originalQuestionPages": [
+            27
+          ],
+          "originalSchemePages": [
+            16
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                27
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "27": "f0dae750ee9dc854a4a1de8a0928495e550ef3455867041ed8561bf6640cbd0a"
+            },
+            "scheme": {
+              "16": "14b8d0c31a4f2638c49ef3ef63916bfa29dc6d1911f234ef1ccb63ca74ed00c9"
+            }
+          },
+          "marks": 9,
+          "candidateCanonicalSha256": "e0d7d7bd8d57e7e0975693829cfb9e0c904639e7d02e19616e09ceb837a22915"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5a",
+          "questionRef": "2023 CL Section C Q5(a) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c5a",
+          "sourceRef": "C5(a)",
+          "originalQuestionPages": [
+            28
+          ],
+          "originalSchemePages": [
+            17
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                28
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "28": "314bd67767ccb4544ec4b7dfb61c17167ed23b2a7fa33b64ee0be311c9b05501"
+            },
+            "scheme": {
+              "17": "ac1e71db02ce8387992289c227aab431325310751ffd93eaa2991ebb8cf00fcc"
+            }
+          },
+          "marks": 3,
+          "candidateCanonicalSha256": "1e3db2d370d7dd3ed54aee4637c6431a01d097c70b74474044d0381ffb5c9056"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5b",
+          "questionRef": "2023 CL Section C Q5(b) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c5b",
+          "sourceRef": "C5(b)",
+          "originalQuestionPages": [
+            28
+          ],
+          "originalSchemePages": [
+            17
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                28
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "28": "314bd67767ccb4544ec4b7dfb61c17167ed23b2a7fa33b64ee0be311c9b05501"
+            },
+            "scheme": {
+              "17": "ac1e71db02ce8387992289c227aab431325310751ffd93eaa2991ebb8cf00fcc"
+            }
+          },
+          "marks": 8,
+          "candidateCanonicalSha256": "4eeec215f9067597fbd9222570bfde41b71bcbf682ffbec3f9240c4392c1b1f5"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5c",
+          "questionRef": "2023 CL Section C Q5(c) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c5c",
+          "sourceRef": "C5(c)",
+          "originalQuestionPages": [
+            29
+          ],
+          "originalSchemePages": [
+            17
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                29
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "29": "6931fe55fcbfd6d857d4183cbc07b4fe8b64a732db7ae0f000f16569c2a26660"
+            },
+            "scheme": {
+              "17": "ac1e71db02ce8387992289c227aab431325310751ffd93eaa2991ebb8cf00fcc"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "dde56e84c34e7646d6256de701ce3f2c61bdd3d458352b8b041863b1ece56a48"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5d",
+          "questionRef": "2023 CL Section C Q5(d) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c5d",
+          "sourceRef": "C5(d)",
+          "originalQuestionPages": [
+            30
+          ],
+          "originalSchemePages": [
+            17
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                30
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "30": "6bfbb6363109f6edca251c62c06915054902ce2d95e5422aed797e0a16e41d4b"
+            },
+            "scheme": {
+              "17": "ac1e71db02ce8387992289c227aab431325310751ffd93eaa2991ebb8cf00fcc"
+            }
+          },
+          "marks": 8,
+          "candidateCanonicalSha256": "6a1aa184c6135ec0c9d5c23f69649cb588dc8ed30c2d307ec0cc891306722123"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6a",
+          "questionRef": "2023 CL Section C Q6(a) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c6a",
+          "sourceRef": "C6(a)",
+          "originalQuestionPages": [
+            31
+          ],
+          "originalSchemePages": [
+            18
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                31
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "31": "230a7d6cbe1bd4cb42af44c6184c4d865c2e2dc0cebee326a85e500d90cafeaf"
+            },
+            "scheme": {
+              "18": "b79fe3d5e35597cd301a337bdb7af643c356cf6e8ddb78a511c831730f271e9e"
+            }
+          },
+          "marks": 4,
+          "candidateCanonicalSha256": "028e224822d114529c61112360471651f36af1527184dd3ee9609dad80a0e7bc"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6b",
+          "questionRef": "2023 CL Section C Q6(b) — skills — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c6b",
+          "sourceRef": "C6(b)",
+          "originalQuestionPages": [
+            31
+          ],
+          "originalSchemePages": [
+            18
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                31
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "31": "230a7d6cbe1bd4cb42af44c6184c4d865c2e2dc0cebee326a85e500d90cafeaf"
+            },
+            "scheme": {
+              "18": "b79fe3d5e35597cd301a337bdb7af643c356cf6e8ddb78a511c831730f271e9e"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "7778397337bf970f136c2b935f13b543f83b78071f55c08dbb3fb7e3675dc103"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6b-2",
+          "questionRef": "2023 CL Section C Q6(b) — qualities — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c6b",
+          "sourceRef": "C6(b)",
+          "originalQuestionPages": [
+            31
+          ],
+          "originalSchemePages": [
+            18
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                31
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "31": "230a7d6cbe1bd4cb42af44c6184c4d865c2e2dc0cebee326a85e500d90cafeaf"
+            },
+            "scheme": {
+              "18": "b79fe3d5e35597cd301a337bdb7af643c356cf6e8ddb78a511c831730f271e9e"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "8bdf96b920333fb06cfd0139e7d34c32eebbd9a77514279dddde2aa731b056ce"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6c",
+          "questionRef": "2023 CL Section C Q6(c) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c6c",
+          "sourceRef": "C6(c)",
+          "originalQuestionPages": [
+            32
+          ],
+          "originalSchemePages": [
+            18
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                32
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "32": "1649a14ff0d967c04b0a9b05215f04495971e5f1699f67f75bb01e7b2ebc003e"
+            },
+            "scheme": {
+              "18": "b79fe3d5e35597cd301a337bdb7af643c356cf6e8ddb78a511c831730f271e9e"
+            }
+          },
+          "marks": 8,
+          "candidateCanonicalSha256": "d1586f2ae4f996561fe2f9c89dc5c94139c5c5067a874dedc460f8827fa8de75"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6d",
+          "questionRef": "2023 CL Section C Q6(d) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c6d",
+          "sourceRef": "C6(d)",
+          "originalQuestionPages": [
+            33
+          ],
+          "originalSchemePages": [
+            18
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                33
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "33": "ea53a135e4db733e722a3e5235c434ba98b6e8a0314b8596b3fd4c59907010d6"
+            },
+            "scheme": {
+              "18": "b79fe3d5e35597cd301a337bdb7af643c356cf6e8ddb78a511c831730f271e9e"
+            }
+          },
+          "marks": 9,
+          "candidateCanonicalSha256": "919017f99d226cc8bcb529f351708dd3846688714f5a9a32923570df5ec184e4"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7a",
+          "questionRef": "2023 CL Section C Q7(a) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c7a",
+          "sourceRef": "C7(a)",
+          "originalQuestionPages": [
+            34
+          ],
+          "originalSchemePages": [
+            19
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                34
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "34": "effc696ef2863e91b28d23824b479e26008272b3e3a09bd7a9025941a7202cfe"
+            },
+            "scheme": {
+              "19": "355999664adb96ddef563b98fcbd2f49fdbe59b14fb6b0f8a939384b94200cfb"
+            }
+          },
+          "marks": 2,
+          "candidateCanonicalSha256": "f33d6554cd6d365b3d45d6a5e4a78c47f99725ea74295fc79d0011be040f746b"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7b",
+          "questionRef": "2023 CL Section C Q7(b) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c7b",
+          "sourceRef": "C7(b)",
+          "originalQuestionPages": [
+            34
+          ],
+          "originalSchemePages": [
+            19
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                34
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "34": "effc696ef2863e91b28d23824b479e26008272b3e3a09bd7a9025941a7202cfe"
+            },
+            "scheme": {
+              "19": "355999664adb96ddef563b98fcbd2f49fdbe59b14fb6b0f8a939384b94200cfb"
+            }
+          },
+          "marks": 6,
+          "candidateCanonicalSha256": "42e7bc05c337cfdb267c4d2cfa9f7855fe6b45884f054e643818307d16fc48b9"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7c",
+          "questionRef": "2023 CL Section C Q7(c) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c7c",
+          "sourceRef": "C7(c)",
+          "originalQuestionPages": [
+            35
+          ],
+          "originalSchemePages": [
+            19
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                35
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "35": "af32b7c381cae97fe46472a980c2f36b88bcd0246697901b02e581d84bd34a60"
+            },
+            "scheme": {
+              "19": "355999664adb96ddef563b98fcbd2f49fdbe59b14fb6b0f8a939384b94200cfb"
+            }
+          },
+          "marks": 9,
+          "candidateCanonicalSha256": "b7aad02922f8a026d695d428937cf64ccaded2ed6b63c4e20265d524484f521f"
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7d",
+          "questionRef": "2023 CL Section C Q7(d) — Deferred sitting",
+          "sourceRecordId": "lcvp-2023-cl-deferred-c7d",
+          "sourceRef": "C7(d)",
+          "originalQuestionPages": [
+            36
+          ],
+          "originalSchemePages": [
+            19
+          ],
+          "sourceMaterialsExactlyAsAuthored": [
+            {
+              "kind": "source-question",
+              "label": "OFFICIAL SOURCE",
+              "title": "Original deferred question",
+              "pages": [
+                36
+              ],
+              "attribution": "SEC LCVP Link Modules 2023 Common Level, deferred examination — © State Examinations Commission.",
+              "presentationNote": "Read the complete original source and question in context."
+            }
+          ],
+          "nativePageTextSha256": {
+            "paper": {
+              "36": "ed1035e8fac3b057162c14f73bcdb358f2f5419c79dde9918724490c53a01c8d"
+            },
+            "scheme": {
+              "19": "355999664adb96ddef563b98fcbd2f49fdbe59b14fb6b0f8a939384b94200cfb"
+            }
+          },
+          "marks": 8,
+          "candidateCanonicalSha256": "eb25b0f45ba7ab3210c1cef70825d31299bc3aa6e444e96c6b43b2514cf475ab"
+        }
+      ]
+    }
+  ]
+}

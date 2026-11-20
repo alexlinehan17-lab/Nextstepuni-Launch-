@@ -1,0 +1,46 @@
+{
+  "reviewer": "Codex second worker /root/russian_independent_review",
+  "scope": "Final exact 48/50 source data/index lookup using unchanged public APIs. Not generator support or installed source review.",
+  "files": [
+    {
+      "path": "REPORT.json",
+      "bytes": 9186,
+      "sha256": "9a12e825b109b13c21b36e5c9dfcc22bae3860e8016043d5a9da03e7b2f9d543"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 1521,
+      "sha256": "2d86ec9c147a76eafe4a12e5a3765e1b2efb226d2b89cc62132de621010313f7"
+    },
+    {
+      "path": "binding-inputs.json",
+      "bytes": 171043,
+      "sha256": "28fafa106696b8c826c467db2f352891d0d2231d80b24dcec2b959ab75d5b685"
+    },
+    {
+      "path": "check-explicit-bindings.mjs",
+      "bytes": 5123,
+      "sha256": "7df769197c53e5dac14e6445c2b5db78c4f2242079baef2c858476d462842b97"
+    },
+    {
+      "path": "final-98-explicit-source-bindings.json",
+      "bytes": 217421,
+      "sha256": "06c0f7a911b89c374cd143e36ff02315b23debc0a07cd4869d94e907df282482"
+    },
+    {
+      "path": "pinned-read-only-code/paperTrailData.ts",
+      "bytes": 1272185,
+      "sha256": "7665a5a7ec807fdc8372d4129ae787454fada01b29bb4ffd133538188230d364"
+    },
+    {
+      "path": "pinned-read-only-code/scripts/markbank/lcvpSources.mjs",
+      "bytes": 4783,
+      "sha256": "c0cd8dc948f35470ec0cb9071747f357350f04c8c03b90c6a4c4c09ba616c397"
+    },
+    {
+      "path": "pinned-read-only-code/scripts/markbank/paperIndex.mjs",
+      "bytes": 21083,
+      "sha256": "197dccfd3c8a19c557dee57dce40366958fd82c254fe1653ce9ecfbd748e5fd8"
+    }
+  ]
+}

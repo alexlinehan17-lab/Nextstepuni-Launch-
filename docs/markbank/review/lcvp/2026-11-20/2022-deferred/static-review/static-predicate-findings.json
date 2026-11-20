@@ -1,0 +1,2691 @@
+{
+  "recordedAt": "2026-11-20T12:19:27.227Z",
+  "scope": "Small pure predicates and intended-source string checks; not actual generator or dependency integration. Does not activate deferred routing.",
+  "pin": "c369eabcd0156424cf604783dd399d0c5cf64fd2",
+  "criterionPredicateExtract": "function tariffFault(c) {\n  const t = c.tariffModel ?? { kind: 'fixed' };\n  if (c.rows.some(row => row.permittedMarks && (\n    t.kind !== 'fixed' || row.kind !== 'criterion' || !Number.isFinite(row.marks)\n    || !Array.isArray(row.permittedMarks) || row.permittedMarks.length < 2\n    || row.permittedMarks[0] !== 0 || row.permittedMarks.at(-1) !== row.marks\n    || row.permittedMarks.some((mark, index, steps) => !Number.isFinite(mark)\n      || mark < 0 || (index > 0 && mark <= steps[index - 1]))\n  ))) return 'invalid published criterion mark steps';\n  // A criterion row's parts (types/markBank.ts rowPartsReconcile) add up to it, each on printed steps.\n  if (c.rows.some(row => row.parts && (\n    !row.permittedMarks || row.kind !== 'criterion' || !Array.isArray(row.parts) || row.parts.length < 2\n    || new Set(row.parts.map(part => part.id)).size !== row.parts.length\n    || row.parts.reduce((sum, part) => sum + part.marks, 0) !== row.marks\n    || row.parts.some(part => !part.id || !String(part.verbatim ?? '').trim() || !Number.isInteger(part.marks) || part.marks <= 0\n      || !Array.isArray(part.permittedMarks) || part.permittedMarks.length < 2 || part.permittedMarks[0] !== 0\n      || part.permittedMarks.at(-1) !== part.marks\n      || part.permittedMarks.some((mark, index, steps) => !Number.isInteger(mark) || mark < 0 || (index > 0 && mark <= steps[index - 1])))\n  ))) return 'invalid criterion row parts';\n return null; }",
+  "results": [
+    {
+      "year": 2022,
+      "candidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2022-deferred-authoring/proposed-48-after-third-reading.json",
+      "candidateSha256": "a66a9e40753549d3c29b2f57a3c1485b1a357f565c3e0e6521a7fa28a30a1280",
+      "cards": 48,
+      "marks": 230,
+      "duplicateQuestionRefs": [],
+      "claimCount": 57,
+      "cardResults": [
+        {
+          "id": "lcvp-2022-cl-deferred-a1",
+          "questionRef": "2022 CL Section A Q1 — Deferred sitting",
+          "marks": 1,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 60,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Why are the students happy to be working together as a team?",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a2",
+          "questionRef": "2022 CL Section A Q2 — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 88,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Explain the two areas being researched by these students for their My Own Place project?",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a3",
+          "questionRef": "2022 CL Section A Q3 — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 46,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "What is Corporate Social Responsibility (CSR)?",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a4",
+          "questionRef": "2022 CL Section A Q4 — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 71,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Why does Cáit think that Kilabbey Supermarket is a great place to work?",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a5",
+          "questionRef": "2022 CL Section A Q5 — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 120,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Give examples of CSR in action in one of the four areas named below.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a6",
+          "questionRef": "2022 CL Section A Q6 — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 135,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Do you agree with Cáit that ‘giving back to the community is just a way for a business to advertise? Give two reasons for your answer.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a7",
+          "questionRef": "2022 CL Section A Q7 — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 84,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Have the aims of CSR been met by Kilabbey Supermarket? Give reasons for your answer. Three valid reasons",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a8",
+          "questionRef": "2022 CL Section A Q8 — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 50,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Why has CSR become more important in recent years? Three valid answers",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b1",
+          "questionRef": "2022 CL Section B Q1 — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 101,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Explain three of the following terms Three valid answers",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b2i",
+          "questionRef": "2022 CL Section B Q2(i) — Deferred sitting",
+          "marks": 1,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 28,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Why do businesses diversify?",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b2ii",
+          "questionRef": "2022 CL Section B Q2(ii) — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 67,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Outline two examples of diversification evident in this case study. Two valid answers",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b2iii",
+          "questionRef": "2022 CL Section B Q2(iii) — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 63,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Describe two risks associated with diversification in business Two valid answers",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b3i",
+          "questionRef": "2022 CL Section B Q3(i) — positive effect — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 72,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "positive",
+              "menuOption": false,
+              "claim": "Describe one positive and one negative effect for an enterprising moving to selling online. Two valid answers",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b3i-2",
+          "questionRef": "2022 CL Section B Q3(i) — negative effect — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 72,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "negative",
+              "menuOption": false,
+              "claim": "Describe one positive and one negative effect for an enterprising moving to selling online. Two valid answers",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b3ii",
+          "questionRef": "2022 CL Section B Q3(ii) — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 111,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Identify and explain three issues which should be considered when preparing a long‐ term plan for the business Three valid answers",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1a",
+          "questionRef": "2022 CL Section C Q1(a) — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 88,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "State two steps that you should take to prepare for an interview for the above position.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1b",
+          "questionRef": "2022 CL Section C Q1(b) — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 86,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "List two questions that might be asked at an interview for the position as advertised.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1c",
+          "questionRef": "2022 CL Section C Q1(c) — Deferred sitting",
+          "marks": 8,
+          "rows": 9,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 97,
+          "notices": [
+            {
+              "index": 8,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 0,
+              "form": "last",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "criterion-1",
+              "menuOption": false,
+              "claim": "Own address",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 1,
+              "rowId": "criterion-2",
+              "menuOption": false,
+              "claim": "Business address",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 2,
+              "rowId": "criterion-3",
+              "menuOption": false,
+              "claim": "Date",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 3,
+              "rowId": "criterion-4",
+              "menuOption": false,
+              "claim": "Subject line",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 4,
+              "rowId": "criterion-5",
+              "menuOption": false,
+              "claim": "Opening",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 5,
+              "rowId": "criterion-6",
+              "menuOption": false,
+              "claim": "Introduction/reason",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 6,
+              "rowId": "criterion-7",
+              "menuOption": false,
+              "claim": "Closing",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 7,
+              "rowId": "criterion-8",
+              "menuOption": false,
+              "claim": "CV/references",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1d",
+          "questionRef": "2022 CL Section C Q1(d) — Deferred sitting",
+          "marks": 9,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 122,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Why do employers emphasise communication skills when interviewing for new employees? Include three reasons in your answer. Three valid reasons",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c2a",
+          "questionRef": "2022 CL Section C Q2(a) — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 44,
+          "notices": [
+            {
+              "index": 0,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 2,
+              "form": "sole",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c2b",
+          "questionRef": "2022 CL Section C Q2(b) — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 68,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "State three benefits this community association brings to your area.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c2ci",
+          "questionRef": "2022 CL Section C Q2(c)(i) — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 61,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Outline two steps you should take in preparing for the visit.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c2cii",
+          "questionRef": "2022 CL Section C Q2(c)(ii) — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 78,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Identify three personal qualities you need to successfully organise the visit.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c2d",
+          "questionRef": "2022 CL Section C Q2(d) — Deferred sitting",
+          "marks": 9,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 64,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Describe three ways you could evaluate the success of the visit.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3a",
+          "questionRef": "2022 CL Section C Q3(a) — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 65,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Draw up an agenda for the class meeting to organise this activity.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3b",
+          "questionRef": "2022 CL Section C Q3(b) — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 33,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Outline two benefits of teamwork",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3c",
+          "questionRef": "2022 CL Section C Q3(c) — Deferred sitting",
+          "marks": 8,
+          "rows": 3,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 77,
+          "notices": [
+            {
+              "index": 2,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 0,
+              "form": "last",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "response-1",
+              "menuOption": false,
+              "claim": "Identify and describe two skills that could be developed during this activity.",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 1,
+              "rowId": "response-2",
+              "menuOption": false,
+              "claim": "Identify and describe two skills that could be developed during this activity.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3d",
+          "questionRef": "2022 CL Section C Q3(d) — Deferred sitting",
+          "marks": 9,
+          "rows": 2,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 73,
+          "notices": [
+            {
+              "index": 1,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 5,
+              "form": "last",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "headings",
+              "menuOption": true,
+              "claim": "Aims/Objectives",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "headings",
+              "menuOption": true,
+              "claim": "Research Methods",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "headings",
+              "menuOption": true,
+              "claim": "Analysis of Research",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "headings",
+              "menuOption": true,
+              "claim": "Action Steps",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "headings",
+              "menuOption": true,
+              "claim": "Schedule of Time",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "headings",
+              "menuOption": true,
+              "claim": "Schedule of Costs",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "headings",
+              "menuOption": true,
+              "claim": "Evaluation Methods",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4a",
+          "questionRef": "2022 CL Section C Q4(a) — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 51,
+          "notices": [
+            {
+              "index": 0,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 4,
+              "form": "sole",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4b",
+          "questionRef": "2022 CL Section C Q4(b) — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 44,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Outline two ways of finding work experience",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4c",
+          "questionRef": "2022 CL Section C Q4(c) — sources — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 94,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "sources",
+              "menuOption": false,
+              "claim": "State three different sources of support or help available to you during your work experience. Explain in detail how one of the stated sources helped you.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4c-2",
+          "questionRef": "2022 CL Section C Q4(c) — developed support — Deferred sitting",
+          "marks": 5,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 59,
+          "notices": [
+            {
+              "index": 0,
+              "id": "response-1",
+              "kind": "criterion",
+              "marks": 5,
+              "form": "sole",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4d",
+          "questionRef": "2022 CL Section C Q4(d) — challenges — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 81,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "challenges",
+              "menuOption": false,
+              "claim": "(i) Describe three challenges that a student may experience during their work experience/ work shadowing. Describe three difficulties",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4d-2",
+          "questionRef": "2022 CL Section C Q4(d) — solutions — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 45,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "solutions",
+              "menuOption": false,
+              "claim": "Outline how these challenges might be overcome.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c5a",
+          "questionRef": "2022 CL Section C Q5(a) — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 61,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Name one state agency that might offer assistance to Francis.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c5b",
+          "questionRef": "2022 CL Section C Q5(b) — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 65,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Outline three reasons why it is important for a business to plan. Three relevant answers",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c5c",
+          "questionRef": "2022 CL Section C Q5(c) — Deferred sitting",
+          "marks": 8,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 72,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Describe four ways Francis could evaluate the success of his enterprise. Four valid points",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c5d",
+          "questionRef": "2022 CL Section C Q5(d) — Deferred sitting",
+          "marks": 9,
+          "rows": 2,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 130,
+          "notices": [
+            {
+              "index": 1,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 0,
+              "form": "last",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Describe three enterprising characteristics that Francis should possess which would help in getting his enterprise up and running. Three valid answers",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6ai",
+          "questionRef": "2022 CL Section C Q6(a)(i) — Deferred sitting",
+          "marks": 1,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 52,
+          "notices": [
+            {
+              "index": 0,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 1,
+              "form": "sole",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6aii",
+          "questionRef": "2022 CL Section C Q6(a)(ii) — Deferred sitting",
+          "marks": 1,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 56,
+          "notices": [
+            {
+              "index": 0,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 1,
+              "form": "sole",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6b",
+          "questionRef": "2022 CL Section C Q6(b) — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 71,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Identify three personal skills or qualities required for this position. Three relevant skills or qualities",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6c",
+          "questionRef": "2022 CL Section C Q6(c) — sources — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 67,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "sources",
+              "menuOption": false,
+              "claim": "State four sources of information used to investigate the position.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6c-2",
+          "questionRef": "2022 CL Section C Q6(c) — relevance — Deferred sitting",
+          "marks": 4,
+          "rows": 2,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 37,
+          "notices": [
+            {
+              "index": 1,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 0,
+              "form": "last",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "relevance",
+              "menuOption": false,
+              "claim": "Outline how each source was relevant.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6d",
+          "questionRef": "2022 CL Section C Q6(d) — Deferred sitting",
+          "marks": 9,
+          "rows": 2,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 132,
+          "notices": [
+            {
+              "index": 1,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 0,
+              "form": "last",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Does the LCVP prepare students with the skills they need to succeed in the modern world of work? Give three reasons for your answer. Three valid reasons YES or NO",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c7a",
+          "questionRef": "2022 CL Section C Q7(a) — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 33,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "What is meant by market research?",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c7b",
+          "questionRef": "2022 CL Section C Q7(b) — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 75,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Why is market research important when undertaking an activity such as this?",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c7c",
+          "questionRef": "2022 CL Section C Q7(c) — Deferred sitting",
+          "marks": 8,
+          "rows": 2,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 77,
+          "notices": [
+            {
+              "index": 1,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 0,
+              "form": "last",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Identify and explain four forms of promotion you would use for this activity. Four valid points",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c7d",
+          "questionRef": "2022 CL Section C Q7(d) — Deferred sitting",
+          "marks": 9,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 114,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Describe three ways participation in the organisation and running of this activity would benefit you as a student.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "candidate": "/Users/alexlinehan/Documents/NextStepUni-MarkBank-Lanes-20261104/REVIEW/2026-11-19-lcvp-2023-deferred-authoring/proposed-50-authored-cards.json",
+      "candidateSha256": "67cd973f737ed8e04f4db92edec3ecc7e6048685bd7e4d9eb570a66fd245ace1",
+      "cards": 50,
+      "marks": 235,
+      "duplicateQuestionRefs": [],
+      "claimCount": 88,
+      "cardResults": [
+        {
+          "id": "lcvp-2023-cl-deferred-a1",
+          "questionRef": "2023 CL Section A Q1 — Deferred sitting",
+          "marks": 1,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 71,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "name",
+              "menuOption": false,
+              "claim": "Meitheal Ltd",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a2",
+          "questionRef": "2023 CL Section A Q2 — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 77,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Work shadowing is observing",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Ge to do the actual job",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Work placement more interesting",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a3",
+          "questionRef": "2023 CL Section A Q3 — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 80,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "From your understanding of the audio visual explain what a social enterprise is.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a4",
+          "questionRef": "2023 CL Section A Q4 — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 85,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Wear appropriate safety clothing",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Gives a health and safety statement to employees to read",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Provides training",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Employees/work experience students have a safe pass",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a5",
+          "questionRef": "2023 CL Section A Q5 — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 89,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Tenants pay rent",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Profit that are made are reinvested back into the company",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Two major investors provided start-up capital",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Receive grants from the social development fund",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Low interest social loans",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a6",
+          "questionRef": "2023 CL Section A Q6 — Deferred sitting",
+          "marks": 6,
+          "rows": 2,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 96,
+          "notices": [
+            {
+              "index": 1,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 0,
+              "form": "last",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Provides training/IT package",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Sits in on project team meetings",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Goes out on site visits",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Given regular feedback",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Provides a mentor",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a7",
+          "questionRef": "2023 CL Section A Q7 — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 83,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "In your opinion why is receiving feedback an important element of a work placement?",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a8",
+          "questionRef": "2023 CL Section A Q8 — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 154,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Other than providing feedback, explain why assigning a work place mentor to a student/new employee is important to work placement students/new employees.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b1",
+          "questionRef": "2023 CL Section B Q1 — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 73,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Describe three advantages to Ballyfert of organising the family festival.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2i",
+          "questionRef": "2023 CL Section B Q2(i) — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 128,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "To improve the area by providing a service to the community/help people in need/support a local cause",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "To help their town to prosper and encourage locals to stay or return to the area",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "To help attract new businesses to the new workspaces",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Assist with the successful integration of the refugees into the area",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Social aspect/can make friends/improves community spirit",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Gain referees for their CV",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Recognition in their own town",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Opportunity to voice their opinions and share ideas",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Could make them more employable/gives volunteers an opportunity to upskill",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2ii",
+          "questionRef": "2023 CL Section B Q2(ii) — ways — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 71,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "ways",
+              "menuOption": false,
+              "claim": "Suggest three ways that Ballyfert could further integrate the refugees. Give reasons for your answers.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2ii-2",
+          "questionRef": "2023 CL Section B Q2(ii) — reasons — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 30,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "reasons",
+              "menuOption": false,
+              "claim": "Suggest three ways that Ballyfert could further integrate the refugees. Give reasons for your answers.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3i",
+          "questionRef": "2023 CL Section B Q3(i) — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 137,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Gives the most up to date knowledge/to support/or not what they want to do or the aims they want to achieve",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Evidence from the research conducted and analysis of results may be required to support grant applications/loans etc.",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Locals and those who are new to the area who completed the survey will feel that their voice/input has been heard",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "It could highlight a weakness or an idea that had not been previously considered",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Builds credibility for the committee/information is accurate/up to date/supports aims",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Helps with problem solving/where to look for help/make informed decisions",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Identifies risks/less chance of failure",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3ii",
+          "questionRef": "2023 CL Section B Q3(ii) — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 112,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Outline two of the factors that might influence the Community Development Committee as they plan for the future.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3iii",
+          "questionRef": "2023 CL Section B Q3(iii) — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 76,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Outline the advantages and disadvantages of remote working for the employer.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1a",
+          "questionRef": "2023 CL Section C Q1(a) — name — Deferred sitting",
+          "marks": 1,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 39,
+          "notices": [
+            {
+              "index": 0,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 1,
+              "form": "sole",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1a-2",
+          "questionRef": "2023 CL Section C Q1(a) — services — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 51,
+          "notices": [
+            {
+              "index": 0,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 3,
+              "form": "sole",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1b",
+          "questionRef": "2023 CL Section C Q1(b) — Deferred sitting",
+          "marks": 5,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 67,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Draft five suitable questions you might ask on this visit",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1c",
+          "questionRef": "2023 CL Section C Q1(c) — Deferred sitting",
+          "marks": 8,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 83,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "How can the person conducting the presentation to the students during their visit ensure it is successful?",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1di",
+          "questionRef": "2023 CL Section C Q1(d)(i) — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 46,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "To see if it was successful or not",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Were the aims and objectives of the visit met",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Troubleshooting for the next visit/future plans",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1dii",
+          "questionRef": "2023 CL Section C Q1(d)(ii) — methods — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 68,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "methods",
+              "menuOption": false,
+              "claim": "Describe three methods that could be used to evaluate the visit out. Give a reason for choosing each method.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1dii-2",
+          "questionRef": "2023 CL Section C Q1(d)(ii) — reasons — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 39,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "reasons",
+              "menuOption": false,
+              "claim": "Describe three methods that could be used to evaluate the visit out. Give a reason for choosing each method.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2a",
+          "questionRef": "2023 CL Section C Q2(a) — career — Deferred sitting",
+          "marks": 1,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 35,
+          "notices": [
+            {
+              "index": 0,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 1,
+              "form": "sole",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2a-2",
+          "questionRef": "2023 CL Section C Q2(a) — qualities — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 49,
+          "notices": [
+            {
+              "index": 0,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 2,
+              "form": "sole",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2b",
+          "questionRef": "2023 CL Section C Q2(b) — sources — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 74,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "sources",
+              "menuOption": false,
+              "claim": "Identify three sources of information you used to investigate this career. How was each source relevant?",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2b-2",
+          "questionRef": "2023 CL Section C Q2(b) — relevance — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 29,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "relevance",
+              "menuOption": false,
+              "claim": "Identify three sources of information you used to investigate this career. How was each source relevant?",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2c",
+          "questionRef": "2023 CL Section C Q2(c) — Deferred sitting",
+          "marks": 10,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 158,
+          "notices": [
+            {
+              "index": 0,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 10,
+              "form": "sole",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2d",
+          "questionRef": "2023 CL Section C Q2(d) — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 65,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Explain three ways a strong work ethic could benefit an employee.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3a",
+          "questionRef": "2023 CL Section C Q3(a) — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 63,
+          "notices": [
+            {
+              "index": 0,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 2,
+              "form": "sole",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3b",
+          "questionRef": "2023 CL Section C Q3(b) — need — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 71,
+          "notices": [
+            {
+              "index": 0,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 2,
+              "form": "sole",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3b-2",
+          "questionRef": "2023 CL Section C Q3(b) — solutions — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 39,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "solutions",
+              "menuOption": false,
+              "claim": "Identify a need that is currently not being met in your local community and suggest how this need could be met.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3c",
+          "questionRef": "2023 CL Section C Q3(c) — Deferred sitting",
+          "marks": 8,
+          "rows": 4,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 48,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "heading-1",
+              "menuOption": false,
+              "claim": "Strengths:",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 1,
+              "rowId": "heading-2",
+              "menuOption": false,
+              "claim": "Weaknesses/Challenges:",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 2,
+              "rowId": "heading-3",
+              "menuOption": false,
+              "claim": "Opportunities:",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 3,
+              "rowId": "heading-4",
+              "menuOption": false,
+              "claim": "Threats:",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3d",
+          "questionRef": "2023 CL Section C Q3(d) — Deferred sitting",
+          "marks": 9,
+          "rows": 4,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 124,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "response-1",
+              "menuOption": false,
+              "claim": "What advice would you give to an entrepreneur who is considering setting up a business in your local area? Give four points.",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 1,
+              "rowId": "response-2",
+              "menuOption": false,
+              "claim": "What advice would you give to an entrepreneur who is considering setting up a business in your local area? Give four points.",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 2,
+              "rowId": "response-3",
+              "menuOption": false,
+              "claim": "What advice would you give to an entrepreneur who is considering setting up a business in your local area? Give four points.",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 3,
+              "rowId": "response-4",
+              "menuOption": false,
+              "claim": "What advice would you give to an entrepreneur who is considering setting up a business in your local area? Give four points.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c4a",
+          "questionRef": "2023 CL Section C Q4(a) — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 147,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "complete-pool",
+              "menuOption": false,
+              "claim": "Media/advertisements/brochures/posters/presentations/special events/displays & exhibits/promotional material/visit in from a representative",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c4b",
+          "questionRef": "2023 CL Section C Q4(b) — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 171,
+          "notices": [
+            {
+              "index": 0,
+              "id": "unprinted-answer",
+              "kind": "criterion",
+              "marks": 6,
+              "form": "sole",
+              "exactPredicateSatisfied": true
+            }
+          ],
+          "claims": [],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c4c",
+          "questionRef": "2023 CL Section C Q4(c) — Deferred sitting",
+          "marks": 8,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 80,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Explain the obligations of volunteers when working for a voluntary organisation.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c4d",
+          "questionRef": "2023 CL Section C Q4(d) — Deferred sitting",
+          "marks": 9,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 64,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Outline how a voluntary organisation could evaluate its success.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5a",
+          "questionRef": "2023 CL Section C Q5(a) — Deferred sitting",
+          "marks": 3,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 33,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Explain the term diversification.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5b",
+          "questionRef": "2023 CL Section C Q5(b) — Deferred sitting",
+          "marks": 8,
+          "rows": 7,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 82,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "model-1",
+              "menuOption": false,
+              "claim": "Provide a good quality product or service",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 1,
+              "rowId": "model-2",
+              "menuOption": false,
+              "claim": "Have a good after sales service",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 2,
+              "rowId": "model-3",
+              "menuOption": false,
+              "claim": "Variety of services offered/online services/be adaptable/convenient opening hours/deliveries on time",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 3,
+              "rowId": "model-4",
+              "menuOption": false,
+              "claim": "Use marketing strategies BOGOF/discounts/ click and collect/free postage/loyalty scheme",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 4,
+              "rowId": "model-5",
+              "menuOption": false,
+              "claim": "Market Research/plan ahead/anticipate changes in demand",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 5,
+              "rowId": "model-6",
+              "menuOption": false,
+              "claim": "Keep an eye on competition/price the product/service competitively",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 6,
+              "rowId": "model-7",
+              "menuOption": false,
+              "claim": "Support the local community/sponsor teams to develop a good relationship with the community",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5c",
+          "questionRef": "2023 CL Section C Q5(c) — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 68,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Discuss the reasons why it is important for a business to diversify.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5d",
+          "questionRef": "2023 CL Section C Q5(d) — Deferred sitting",
+          "marks": 8,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 166,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Information and Communications Technology (ICT) plays an important role in business. Outline how changes in ICT have impacted on the operations/running of a business.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6a",
+          "questionRef": "2023 CL Section C Q6(a) — Deferred sitting",
+          "marks": 4,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 30,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Explain the term entrepreneur.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6b",
+          "questionRef": "2023 CL Section C Q6(b) — skills — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 65,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "skills",
+              "menuOption": false,
+              "claim": "Outline two skills and two qualities of an entrepreneur that you are familiar with .",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6b-2",
+          "questionRef": "2023 CL Section C Q6(b) — qualities — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 68,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "qualities",
+              "menuOption": false,
+              "claim": "Outline two skills and two qualities of an entrepreneur that you are familiar with .",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6c",
+          "questionRef": "2023 CL Section C Q6(c) — Deferred sitting",
+          "marks": 8,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 65,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Discuss four benefits to an organisation of employees up-skilling",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6d",
+          "questionRef": "2023 CL Section C Q6(d) — Deferred sitting",
+          "marks": 9,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 121,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Teamwork is an essential element of the modern workplace. What are the benefits of teamwork to an individual team member?",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7a",
+          "questionRef": "2023 CL Section C Q7(a) — Deferred sitting",
+          "marks": 2,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 34,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "definition",
+              "menuOption": false,
+              "claim": "A Recruitment Agency is a business that will find employees/staff for an employer.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7b",
+          "questionRef": "2023 CL Section C Q7(b) — Deferred sitting",
+          "marks": 6,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 66,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Saves an employer time dealing with applications and short listing",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Saves them money by doing their advertising/the job search is streamlined",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Good recruitment agencies attract high caliber applicants",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "The agency will head-hunt for the employer/have specialized knowledge of the market/potential candidates",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "The agency will often have specialised staff who will recruit more objectively",
+              "tracesInIntendedDeferredTranscript": true
+            },
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": true,
+              "claim": "Negotiate salaries and terms/conditions between the employer and applicants",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7c",
+          "questionRef": "2023 CL Section C Q7(c) — Deferred sitting",
+          "marks": 9,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 81,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "Discuss three important features that employers look for in a potential employee.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7d",
+          "questionRef": "2023 CL Section C Q7(d) — Deferred sitting",
+          "marks": 8,
+          "rows": 1,
+          "singletonRows": [],
+          "criterionPredicateFault": null,
+          "questionStandsAlone": true,
+          "questionCharacters": 130,
+          "notices": [],
+          "claims": [
+            {
+              "rowIndex": 0,
+              "rowId": "responses",
+              "menuOption": false,
+              "claim": "You have been called for an online job interview via zoom. Describe in detail, four ways you would prepare for this interview.",
+              "tracesInIntendedDeferredTranscript": true
+            }
+          ],
+          "questionTotalRowsNull": true,
+          "emptyRowNotes": []
+        }
+      ]
+    }
+  ]
+}

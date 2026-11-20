@@ -1,0 +1,2436 @@
+#!/usr/bin/env node
+import { taskGroupsFault } from './taskGroups.mjs';
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Mark Bank — compile authored cards into the deck modules.
+ *
+ * Input is the JSON produced by an authoring workflow. This script does the two
+ * things an authoring agent is never allowed to do: bind a figure, and name a
+ * paper. Agents name a figure by KEY only and never name a paper at all; the real
+ * path, hash, attribution and SEC file id are resolved here from data on disk.
+ * Both historical figure corruptions in this repo entered through a
+ * hand-transcribed path, and the first Biology build pointed every card at the
+ * marking scheme PDF instead of the question paper for the same reason.
+ *
+ * The subject is taken from the cards themselves, not a flag — a flag that
+ * disagreed with the data would file a deck under the wrong subject silently.
+ *
+ *   node scripts/markbank/build-deck.mjs <cards.json>
+ */
+
+import { readFileSync, readdirSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
+import { resolve, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+import { resolvePaperFileid, resolveIndexedPaperFileid, resolveCompanionFileid, corpusSubjectFor, paperEntry, deferredPaperEntry } from './paperIndex.mjs';
+import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
+import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
+import { isContentFreeRow } from './contentFree.mjs';
+import { questionStandsAlone } from './questionText.mjs';
+import { assertEconomicsReviewCoverage, bindEconomicsEditions } from './economicsEditions.mjs';
+import { applyMathematicsReview, validateMathematicsReviewSources, assertReviewedMathematicsCards, reviewedMathematicsSource } from './mathematics/review.mjs';
+import { reviewedPhysicsSource } from './physicsSources.mjs';
+import { reviewedHomeEconomicsSource } from './homeEconomicsSources.mjs';
+import { reviewedLcvpSource, readLcvpDeferredScheme } from './lcvpSources.mjs';
+import { audioMaterialFault, audioQuestionPaperFileid } from './audioMaterial.mjs';
+import { videoMaterialFault } from './videoMaterial.mjs';
+import { withLiveConceptId } from './liveConceptIds.mjs';
+
+const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
+
+/** Per-subject facts the generated module needs. Adding a subject means adding
+ *  a row here, and nothing else in this script changes. */
+const SUBJECTS = {
+  engineering: {
+    title: 'Engineering',
+    /* The syllabus's section 2, "Materials and Technology", is what the
+     * written examination covers -- 300 marks at Higher, 200 at Ordinary.
+     * Its fourteen headings are the topics, plus the mechanisms heading from
+     * section 1. See ENGINEERING_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-engineering-materials-and-technology',
+    specNote: 'Cards are tagged to the headings of the Engineering syllabus, section 2 Materials and Technology.\n * The written paper sets nine questions of 50 marks at Higher and seven at Ordinary; candidates answer six and four.',
+    figureDir: 'public/exam-figures/engineering',
+    blocked: new Set(),
+  },
+  'physical-education': {
+    title: 'Physical Education',
+    /* The LCPE specification: two strands of five and six topics, plus the six
+     * physical activity areas. Only the WRITTEN paper is carded — the other
+     * two components are a coursework project and a physical performance, and
+     * neither is a question any paper prints. See PHYSICAL_EDUCATION_STRANDS
+     * in components/MarkBank/deck.ts. */
+    specVersion: 'lc-physical-education-specification',
+    specNote: 'Cards are tagged to the topics of the Leaving Certificate Physical Education specification:\n * Strand 1 Towards Optimum Performance, Strand 2 Contemporary Issues, and the physical activity areas.\n * The written paper is 50% of the subject; the project and the performance assessment are not carded.',
+    figureDir: 'public/exam-figures/physical-education',
+    blocked: new Set(),
+  },
+  technology: {
+    title: 'Technology',
+    /* The syllabus these papers were sat under -- seven core areas and five
+     * options, of which a candidate studies two. Named by what it is rather
+     * than by a year: no redeveloped Technology specification is examined
+     * yet. See TECHNOLOGY_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-technology-syllabus',
+    specNote: 'Cards are tagged to the areas of the Leaving Certificate Technology syllabus:\n * seven core areas, examined in Sections A and B, and the five options, of which\n * Section C sets one question each and a candidate answers one.',
+    figureDir: 'public/exam-figures/technology',
+    blocked: new Set(),
+  },
+  dcg: {
+    title: 'Design and Communication Graphics',
+    /* The syllabus these papers were sat under, first examined in 2009 and
+     * still current -- its redevelopment is scheduled for first examination
+     * in 2029. Cards tag against two of its three strands, which are what the
+     * written examination covers; the third is the student assignment and the
+     * CAD work. See DCG_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-design-and-communication-graphics-syllabus',
+    specNote: 'Cards are tagged to the headings of the Leaving Certificate Design and Communication\n * Graphics syllabus. The written examination is 60% of the subject and sits in two booklets:\n * Section A (four core short questions, any three answered) in one, and Sections B and C\n * (three core long questions, any two; five Applied Graphics options, one) in the other.',
+    figureDir: 'public/exam-figures/dcg',
+    blocked: new Set(),
+  },
+  'computer-science': {
+    title: 'Computer Science',
+    /* The specification first examined in 2020 -- the one these papers were
+     * sat under, and the current one. Three strands: the practices and
+     * principles, the five core concepts, and the four applied learning
+     * tasks. Read from the specification PDF; see COMPUTER_SCIENCE_STRANDS
+     * in components/MarkBank/deck.ts. */
+    specVersion: 'lc-computer-science-2020',
+    specNote: 'Cards are tagged to the strands of the Computer Science specification examined from 2020.\n * Sections A and B sit in one booklet and Section C, the programming task, in another.',
+    figureDir: 'public/exam-figures/computer-science',
+    blocked: new Set(),
+  },
+  maths: {
+    title: 'Mathematics',
+    /* The syllabus examined from 2015. Its redevelopment is scheduled but not
+     * yet examined, so there is nothing later to tag against. */
+    specVersion: 'lc-maths-2015',
+    specNote: 'Cards are tagged to the strands of the Mathematics syllabus examined from 2015.\n * Higher and Ordinary sit two papers, and a citation names which.',
+    figureDir: 'public/exam-figures/maths',
+    blocked: new Set(),
+  },
+  'construction-studies': {
+    title: 'Construction Studies',
+    /* The syllabus these papers were actually sat under. Its replacement,
+     * Construction Technology, is first examined 2028, so unlike the science
+     * subjects there is no redeveloped specification to tag against and the
+     * cards are filed where a student revising them is actually studying. */
+    specVersion: 'lc-construction-studies-syllabus',
+    specNote: 'Cards are tagged to the sections of the Construction Studies syllabus these\n * papers were sat under. Construction Technology replaces it from 2028.',
+    figureDir: 'public/exam-figures/construction-studies',
+    blocked: new Set(),
+  },
+  biology: {
+    title: 'Biology',
+    specVersion: 'lc-biology-2002',
+    specNote: 'Cards are tagged to the units of the REDEVELOPED Biology specification, first\n * examined June 2027, not to the syllabus the 2021-2025 papers were sat under.',
+    figureDir: 'public/exam-figures/biology',
+    /** Crops that hold a neighbour's image, or truncate a label the question
+     *  asks about. Never bindable. Mirrors BLOCKED_FIGURES in deck.ts. */
+    blocked: new Set([
+      'alveolus-gas-exchange', 'lymphocyte', 'shoulder-joint', 'neuron',
+      'root-longitudinal-section', 'cell-membrane',
+    ]),
+  },
+  physics: {
+    title: 'Physics',
+    /* The syllabus examined before the 2027 redevelopment, named by what it is
+     * rather than by a year — its publication year is unverified here, and an
+     * unverified date in a provenance field is worse than none. */
+    specVersion: 'lc-physics-legacy',
+    specNote: 'Cards are tagged to the units of the REDEVELOPED Physics specification, first\n * examined June 2027, not to the syllabus the 2021-2025 papers were sat under.',
+    figureDir: 'public/exam-figures/physics',
+    blocked: new Set(),
+  },
+  chemistry: {
+    title: 'Chemistry',
+    /* The syllabus examined before the 2027 redevelopment. Named by what it is
+     * rather than by a year, because I have not verified its publication year
+     * and an unverified date in a provenance field is worse than none. */
+    specVersion: 'lc-chemistry-legacy',
+    specNote: 'Cards are tagged to the units of the REDEVELOPED Chemistry specification, first\n * examined June 2027, not to the syllabus the 2021-2025 papers were sat under.',
+    figureDir: 'public/exam-figures/chemistry',
+    blocked: new Set(),
+  },
+  business: {
+    title: 'Business',
+    /* The 1999 syllabus, still examined. Named by year because it is verified:
+     * every paper in the corpus (2021-2025) sits on it. */
+    specVersion: 'lc-business-1999',
+    specNote: 'Cards are tagged to the 1999 Business syllabus examined in these papers.\n * Source-reviewed rubric cards resolve their specification by examination year.',
+    figureDir: 'public/exam-figures/business',
+    blocked: new Set(),
+  },
+  'home-economics': {
+    title: 'Home Economics',
+    /* The syllabus examined before the 2027 redevelopment. Named by what it is
+     * rather than by a year, because its publication year is unverified here. */
+    specVersion: 'lc-home-economics-legacy',
+    specNote: 'Cards are tagged to the areas of the Scientific and Social syllabus, which is the\n * one these papers were sat under and the one still being sat: the NCCA schedule\n * introduces a replacement in 2027 for first examination in 2029.',
+    figureDir: 'public/exam-figures/home-economics',
+    blocked: new Set(),
+  },
+  economics: {
+    title: 'Economics',
+    /* The NCCA specification published February 2019 and first examined in 2021
+     * — dated because it IS verified: every paper in the corpus (2021-2025) sits
+     * on it, with no syllabus change to straddle. */
+    specVersion: 'lc-economics-2019',
+    specNote: 'Cards are tagged to the strands of the specification the papers were actually sat\n * under. Economics was first examined on it in 2021, so the whole 2021-2025\n * corpus sits on one syllabus with nothing to straddle.',
+    figureDir: 'public/exam-figures/economics',
+    blocked: new Set(),
+  },
+  history: {
+    title: 'History',
+    /* The syllabus these papers were sat under. Its redevelopment is
+     * introduced in 2027 for first examination in 2029, so there is nothing
+     * later to tag against. Named by what it is rather than by a year: the
+     * publication year is unverified here, and an unverified date in a
+     * provenance field is worse than none. */
+    specVersion: 'lc-history-syllabus',
+    specNote: "Cards are tagged to the syllabus's four fields-and-areas and the six topics in\n * each. A candidate sits ONE field of study — Later Modern or Early Modern — which\n * the SEC prints as separate papers, so every citation names its field.",
+    figureDir: 'public/exam-figures/history',
+    blocked: new Set(),
+  },
+  'religious-education': {
+    title: 'Religious Education',
+    /* The syllabus published in 2003 and still examined — the whole
+     * 2021-2025 corpus sits on it, with nothing to straddle. Named by year
+     * because it is verified: the SEC's own scheme cites "the Leaving
+     * Certificate Religious Education syllabus published by the Department of
+     * Education and Skills in 2003" in its general introduction. */
+    specVersion: 'lc-religious-education-2003',
+    specNote: "Cards are tagged to the syllabus's own ten sections, A to J, which are the\n * sections the paper prints. A candidate answers Section A, two of B-D and one or\n * two of E-J; every section in the corpus is carded at both levels.",
+    figureDir: 'public/exam-figures/religious-education',
+    blocked: new Set(),
+  },
+  lcvp: {
+    title: 'Link Modules',
+    /* The LCVP programme statement, still examined: Life, Community and Work
+     * replaces it from 2028, so the whole 2018-2025 corpus sits on this one.
+     * Its two link modules and five units each are the topics; see
+     * LCVP_STRANDS in components/MarkBank/deck.ts, which reads them from the
+     * canonical curriculum rather than keeping a second list. */
+    specVersion: 'lcvp-link-modules-programme-statement',
+    specNote: 'Cards are tagged to the units of the LCVP Link Modules programme statement, which is\n * the one these papers were sat under. Life, Community and Work replaces it from 2028.\n * The paper is COMMON level: one paper, sat by everyone, cited "YYYY CL".',
+    figureDir: 'public/exam-figures/lcvp',
+    blocked: new Set(),
+  },
+  /* Review pack 1 prototype (treatments lane): ONE sitting, 2025 Higher. */
+  music: {
+    title: 'Music',
+    specVersion: 'lc-music-syllabus',
+    specNote: 'Cards are tagged to the Listening, Composing and elective strands of the Leaving\n * Certificate Music syllabus. A sitting is up to THREE booklets: Listening (core),\n * Composing and, at Higher Level, the Listening elective. A listening card plays the\n * SEC\'s own published sound file; a band-marked answer is placed on the scheme\'s\n * printed bands.',
+    figureDir: 'public/exam-figures/music',
+    blocked: new Set(),
+  },
+  german: {
+    title: 'German',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-german-syllabus',
+    specNote: 'Cards are tagged to the strands of the Leaving Certificate German syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the TEXT it quotes,\n * bound to the pages of the question paper it was printed on. The answer\n * language differs WITHIN one comprehension, so each card states its own.',
+    figureDir: 'public/exam-figures/german',
+    blocked: new Set(),
+  },
+  french: {
+    title: 'French',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-french-syllabus',
+    specNote: 'Cards are tagged to the strands of the Leaving Certificate French syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the passage it quotes,\n * bound to the pages of the question paper it was printed on.',
+    figureDir: 'public/exam-figures/french',
+    blocked: new Set(),
+  },
+  polish: {
+    title: 'Polish',
+    /* The syllabus these papers were sat under. Polish is a NON-CURRICULAR EU
+     * LANGUAGE: there is no Irish syllabus for it, and the SEC examines it
+     * against the language itself. It was rebuilt in 2022 — before that one
+     * 70-mark booklet at ONE level, since then Section A Reading and Section B
+     * Written Production at two levels with a Listening Comprehension Test
+     * beside them. See POLISH_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-polish-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Polish examination.\n * From 2022 a sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on. One comprehension is set in\n * two languages: the scheme awards HALF MARKS for an answer given in the wrong\n * one, so every card says which language its answer must be in.",
+    figureDir: 'public/exam-figures/polish',
+    blocked: new Set(),
+  },
+  portuguese: {
+    title: 'Portuguese',
+    /* The syllabus these papers were sat under. Portuguese is a
+     * NON-CURRICULAR EU LANGUAGE: there is no Irish syllabus for it, and the
+     * SEC examines it against the language itself. It was rebuilt in 2022 —
+     * before that one 70-mark booklet at ONE level, since then Part A Reading
+     * and Part B Written Production at two levels with a Listening
+     * Comprehension Test beside them. See PORTUGUESE_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-portuguese-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Portuguese examination.\n * From 2022 a sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on. One comprehension is set in\n * two languages: the scheme awards HALF MARKS for an answer given in the wrong\n * one, so every card says which language its answer must be in.",
+    figureDir: 'public/exam-figures/portuguese',
+    blocked: new Set(),
+  },
+  romanian: {
+    title: 'Romanian',
+    /* The syllabus these papers were sat under. Romanian is a NON-CURRICULAR
+     * EU LANGUAGE: there is no Irish syllabus for it, and the SEC examines it
+     * against the language itself. One booklet at ONE level in every year of
+     * the corpus, and no Listening Comprehension Test. See ROMANIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-romanian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the parts of the Leaving Certificate Romanian examination.\n * Its reading comprehension is priced on the QUESTION PAPER — \"(5 puncte)\",\n * \"(5 × 1 punct)\" in the right-hand margin — because the marking scheme of this\n * examination prints answers with no marks anywhere in it. Every card carries the\n * text it quotes, bound to the pages of the question paper it was printed on, and\n * every answer is written in Romanian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/romanian',
+    blocked: new Set(),
+  },
+  dutch: {
+    title: 'Dutch',
+    /* The syllabus these papers were sat under. Dutch is a NON-CURRICULAR EU
+     * LANGUAGE, and Romanian's twin in shape: one booklet at ONE level in
+     * every year of the corpus, no Listening Comprehension Test, and a reading
+     * comprehension priced on the paper. See DUTCH_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-dutch-non-curricular-eu-language',
+    specNote: "Cards are tagged to the parts of the Leaving Certificate Dutch examination.\n * Its reading comprehension is priced on the QUESTION PAPER — \"(5 punten)\",\n * \"(1 punt)\" in the right-hand margin — because the marking scheme of this\n * examination prints answers with no marks anywhere in it. Every card carries the\n * text it quotes, bound to the pages of the question paper it was printed on, and\n * every answer is written in Dutch: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/dutch',
+    blocked: new Set(),
+  },
+  lithuanian: {
+    title: 'Lithuanian',
+    /* The examination these papers were sat under. Lithuanian is a
+     * NON-CURRICULAR EU LANGUAGE: there is no Irish syllabus for it, and the
+     * SEC examines it against the language itself. The corpus holds three
+     * printed shapes — I/II/III DALIS out of 100 to 2020, I/II DALIS out of 70
+     * in 2021, and from 2022 Dalis A Skaitymas and Dalis B Rašymas at two
+     * levels with a Listening Comprehension Test beside them. See
+     * LITHUANIAN_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-lithuanian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Lithuanian examination.\n * From 2022 a sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on. One comprehension is set in\n * two languages: the scheme awards HALF MARKS for an answer given in the wrong\n * one, so every card of those sittings says which language its answer must be in.",
+    figureDir: 'public/exam-figures/lithuanian',
+    blocked: new Set(),
+  },
+  latvian: {
+    title: 'Latvian',
+    /* Latvian never made the 2022 change Lithuanian and Polish did: every
+     * sitting in the corpus, 2010 to 2026, is the old examination — one
+     * Higher-only booklet, three parts, no Listening Comprehension Test. */
+    specVersion: 'lc-latvian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Latvian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on.",
+    figureDir: 'public/exam-figures/latvian',
+    blocked: new Set(),
+  },
+  hungarian: {
+    title: 'Hungarian',
+    /* Hungarian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See HUNGARIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-hungarian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Hungarian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Hungarian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/hungarian',
+    blocked: new Set(),
+  },
+  bulgarian: {
+    title: 'Bulgarian',
+    /* Bulgarian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See BULGARIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-bulgarian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Bulgarian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Bulgarian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/bulgarian',
+    blocked: new Set(),
+  },
+  slovakian: {
+    title: 'Slovakian',
+    /* Slovakian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See SLOVAKIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-slovakian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Slovakian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Slovakian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/slovakian',
+    blocked: new Set(),
+  },
+  swedish: {
+    title: 'Swedish',
+    /* Swedish is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See SWEDISH_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-swedish-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Swedish examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Swedish: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/swedish',
+    blocked: new Set(),
+  },
+  estonian: {
+    title: 'Estonian',
+    /* Estonian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See ESTONIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-estonian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Estonian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Estonian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/estonian',
+    blocked: new Set(),
+  },
+  finnish: {
+    title: 'Finnish',
+    /* Finnish is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See FINNISH_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-finnish-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Finnish examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Finnish: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/finnish',
+    blocked: new Set(),
+  },
+  croatian: {
+    title: 'Croatian',
+    /* Croatian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See CROATIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-croatian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Croatian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Croatian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/croatian',
+    blocked: new Set(),
+  },
+  danish: {
+    title: 'Danish',
+    /* Danish is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See DANISH_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-danish-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Danish examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Danish: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/danish',
+    blocked: new Set(),
+  },
+  slovenian: {
+    title: 'Slovenian',
+    /* Slovenian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See SLOVENIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-slovenian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Slovenian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Slovenian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/slovenian',
+    blocked: new Set(),
+  },
+  czech: {
+    title: 'Czech',
+    /* Czech, like Latvian, prints the old examination in every year of the
+     * corpus. */
+    specVersion: 'lc-czech-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Czech examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on.",
+    figureDir: 'public/exam-figures/czech',
+    blocked: new Set(),
+  },
+  russian: {
+    title: 'Russian',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-russian-syllabus',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Russian syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the text it quotes, bound\n * to the pages of the question paper it was printed on. Comprehension and\n * information retrieval are answered in English or Irish; the language-awareness\n * tasks are answered in RUSSIAN, and the scheme awards no marks for either in\n * the wrong language.",
+    figureDir: 'public/exam-figures/russian',
+    blocked: new Set(),
+  },
+  italian: {
+    title: 'Italian',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-italian-syllabus',
+    specNote: 'Cards are tagged to the task types of the Leaving Certificate Italian syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the passage, advertisement\n * or literary extract it quotes, bound to the page of the question paper facing\n * its own questions. Higher answers Sections A and B in ITALIAN except the last\n * ask of each comprehension; Ordinary answers everything in Irish or English.',
+    figureDir: 'public/exam-figures/italian',
+    blocked: new Set(),
+  },
+  japanese: {
+    title: 'Japanese',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-japanese-syllabus',
+    specNote: 'Cards are tagged to the task types of the Leaving Certificate Japanese syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the web page, article,\n * blog or e-mail it is answered from, bound to the pages of the question paper\n * it was printed on. The answer language changes INSIDE a question: 問題2 heads\n * its first items "Answer in English" and its third "Answer in Japanese", and\n * the scheme pays half marks for the wrong one, so every card says which is\n * wanted. Furigana — the kana reading the SEC sets ABOVE a kanji — is folded\n * into the line in brackets, 秋葉原（あきはばら）, and every card carrying\n * Japanese discloses the convention.',
+    figureDir: 'public/exam-figures/japanese',
+    blocked: new Set(),
+  },
+  latin: {
+    title: 'Latin',
+    /* The LEGACY written paper, which is what every sitting in the corpus is.
+     * Latin's specification was redeveloped and its Strands 1 and 2 describe a
+     * course assessed by a capstone text and a research study the SEC has not
+     * examined yet; the syllabus strand these cards tag against is the legacy
+     * paper's own seven task types. See LATIN_STRANDS in deck.ts. */
+    specVersion: 'lc-latin-syllabus',
+    specNote: 'Cards are tagged to the task types of the legacy Leaving Certificate Latin\n * written paper, which is the paper every sitting in the bank was sat on. Latin\n * is examined in ONE booklet with no listening test. Three of its five questions\n * print a CHOICE of routes a candidate answers one of — "Answer either Section A\n * or Section B" — so a card names the route it was set under. Every unseen\n * comprehension card carries the Latin passage, the English summary and the\n * vocabulary the SEC glossed it with, bound to the page of the question paper\n * they were printed on; a card whose ask names a photograph opens the plate\n * page at the back of the same booklet. Translation asks are NOT carded: the\n * scheme prices them by segment, but the segments are the source text and not\n * a model answer.',
+    figureDir: 'public/exam-figures/latin',
+    blocked: new Set(),
+  },
+  'ancient-greek': {
+    title: 'Ancient Greek',
+    /* The LEGACY written paper, which is what every sitting in the corpus is.
+     * Ancient Greek's specification was redeveloped and its Strands 1 to 3
+     * describe a course assessed by a capstone text and a research study the
+     * SEC has not examined yet; the syllabus strand these cards tag against is
+     * the legacy paper's own six task types. See ANCIENT_GREEK_STRANDS in
+     * deck.ts. */
+    specVersion: 'lc-ancient-greek-syllabus',
+    specNote: 'Cards are tagged to the task types of the legacy Leaving Certificate Ancient\n * Greek written paper, which is the paper every sitting in the bank was sat on.\n * Ancient Greek is examined in ONE booklet with no listening test. Its questions\n * print a CHOICE of routes a candidate answers one of — "Answer Section A or\n * Section B" — so a card names the route it was set under, and Question 3\'s two\n * routes are the syllabus\'s two prescribed courses, A World of Heroes and The\n * Intellectual Revolution. Every unseen comprehension card carries the Greek\n * passage, the English summary and the vocabulary the SEC glossed it with, bound\n * to the page of the question paper they were printed on; a card whose ask names\n * a photograph opens the plate page at the back of the same booklet. Translation\n * asks are NOT carded: the scheme prices them by segment, and the segments are\n * the source text — Greek for the unseen passages, English for the composition —\n * and never a model answer.',
+    figureDir: 'public/exam-figures/ancient-greek',
+    blocked: new Set(),
+  },
+  maltese: {
+    title: 'Maltese',
+    /* The syllabus these six sittings were set on. Maltese is a
+     * NON-CURRICULAR EU LANGUAGE examined at ONE level in every year on disk,
+     * in ONE booklet, with no listening test: one printed text and three
+     * parts, of which only the first sets numbered questions. See
+     * MALTESE_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-maltese-non-curricular-eu-language',
+    specNote: 'Cards are tagged to the two halves of the Leaving Certificate Maltese\n * examination. Only L-Ewwel Taqsima, the reading comprehension, takes cards:\n * the commentary and the composition are written production, which the scheme\n * answers with an indicative menu of themes and prices nowhere. Every card\n * carries the article it is about, bound to the pages of the question paper it\n * was printed on, and states what the paper states — that every answer is to be\n * written in Maltese.',
+    figureDir: 'public/exam-figures/maltese',
+    blocked: new Set(),
+  },
+  ukrainian: {
+    title: 'Ukrainian',
+    /* The syllabus these two sittings were set on. Ukrainian is the newest
+     * subject in the corpus — first examined in 2025 — and prints the same
+     * classic paper Maltese, Romanian and Dutch do: ONE level, ONE booklet,
+     * no listening test, three parts of which only the first is questioned.
+     * See UKRAINIAN_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-ukrainian-non-curricular-eu-language',
+    specNote: 'Cards are tagged to the two halves of the Leaving Certificate Ukrainian\n * examination. Only ЧАСТИНА I, the reading comprehension, takes cards: the\n * commentary and the essay are written production, which the scheme answers\n * with an indicative menu headed "Наприклад:" and prices nowhere. Every card\n * carries the article it is about, bound to the pages of the question paper it\n * was printed on, and states what the paper states — that every answer is to be\n * written in Ukrainian.',
+    figureDir: 'public/exam-figures/ukrainian',
+    blocked: new Set(),
+  },
+  'mandarin-chinese': {
+    title: 'Mandarin Chinese',
+    /* The specification these ten sittings were set on. Mandarin Chinese was
+     * first examined in 2022 and is a CURRICULAR modern language sat in two
+     * booklets — the written paper (SEC component 000) and a Listening
+     * Comprehension Test (A00) — and printed, unlike the six curricular
+     * languages carded before it, as separate English and Irish editions
+     * rather than one bilingual booklet. Cards come from Section A, Reading,
+     * only. See MANDARIN_CHINESE_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-mandarin-chinese-specification',
+    specNote: 'Cards are tagged to the task types of the Leaving Certificate Mandarin Chinese\n * written paper. Only Section A, Reading, takes cards: Section B is written\n * production, which the scheme answers with a Communication and Language band\n * grid and no marking point, and the Listening Comprehension Test is answered\n * from a recording the SEC does not publish. Every card carries the material it\n * is about, bound to the pages of the question paper it was printed on, and\n * states which LANGUAGE the answer is wanted in — which this subject sets per\n * ask, not per paper — together with the paper\'s own rule that Chinese answers\n * must use simplified characters.',
+    figureDir: 'public/exam-figures/mandarin-chinese',
+    blocked: new Set(),
+  },
+  'modern-greek': {
+    title: 'Modern Greek',
+    /* The syllabus these sixteen sittings were set on. Modern Greek is a
+     * NON-CURRICULAR EU LANGUAGE, examined at ONE level in every year on disk,
+     * in ONE booklet, with no listening test: one passage and three numbered
+     * groups. See MODERN_GREEK_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-modern-greek-non-curricular-eu-language',
+    specNote: 'Cards are tagged to the two halves of the Leaving Certificate Modern Greek\n * examination. Only ΟΜΑΔΑ 1η, the reading comprehension, takes cards: the\n * commentary and the essay are written production, which the scheme answers with\n * one indicative composition of its own and prices nothing inside. Every card\n * carries the article it is about, bound to the pages of the question paper it\n * was printed on, and states what the paper states — that the answer is to be\n * given in Modern Greek.',
+    figureDir: 'public/exam-figures/modern-greek',
+    blocked: new Set(),
+  },
+  arabic: {
+    title: 'Arabic',
+    /* The syllabus these ten sittings were set on, which is examined to June
+     * 2026; the redeveloped specification is examined from 2027 and no paper
+     * exists to card against it yet. */
+    specVersion: 'lc-arabic-syllabus',
+    specNote: 'Cards are tagged to the task types of the Leaving Certificate Arabic syllabus\n * examined to June 2026. A sitting is ONE booklet — Arabic sets no Listening\n * Comprehension Test — numbered 1 to 15 straight through four printed parts, so\n * an ask is cited by its number and part letter alone. The paper is set in\n * Arabic and answered in Arabic, and every card says so, because Arabic reads\n * RIGHT TO LEFT and a card that does not say which language is wanted marks a\n * right answer wrong. The SEC letters its parts (أ) to (ه); a citation letters\n * them a to e, in that same abjad order.',
+    figureDir: 'public/exam-figures/arabic',
+    blocked: new Set(),
+  },
+  'classical-studies': {
+    title: 'Classical Studies',
+    /* TWO syllabuses, because the corpus straddles the change: 2021 and 2022
+     * were sat on the ten-topic syllabus and 2023 onwards on the four-strand
+     * specification. A card is filed under the course its own paper was set
+     * on — the legacy strand in deck.ts holds the ten topics the old paper
+     * prints over its own questions. */
+    specVersion: 'lc-classical-studies-2020',
+    specNote: 'Cards are tagged to the four strands of the Classical Studies specification\n * first examined in 2023, and to the ten topics of the syllabus the 2021 and 2022\n * papers were sat on. A sitting is TWO booklets — the question paper and the\n * accompanying Paper X of photographs and images — and a card whose ask names\n * one of those images opens Paper X at the page that booklet heads with it.',
+    figureDir: 'public/exam-figures/classical-studies',
+    blocked: new Set(),
+  },
+  'applied-maths': {
+    title: 'Applied Maths',
+    /* The specification first examined in 2023 — dated because it is verified
+     * against the papers themselves: the 2023-2025 booklets head themselves
+     * "Applied Mathematics – M32 2025" and set the graph theory, critical-path
+     * analysis and difference equations the revised course added. The 2021 and
+     * 2022 papers are the OUTGOING syllabus, which the specification kept whole
+     * inside Strand 3, so both sides of the break tag against one taxonomy.
+     * See APPLIED_MATHS_STRANDS in components/MarkBank/deck.ts, which reads the
+     * four strands from the canonical curriculum. */
+    specVersion: 'lc-applied-mathematics-2021',
+    specNote: 'Cards are tagged to the four strands of the Applied Mathematics specification\n * first examined in 2023. The 2021 and 2022 papers were sat on the outgoing\n * mechanics syllabus, which Strand 3 of that specification contains whole.',
+    figureDir: 'public/exam-figures/applied-maths',
+    blocked: new Set(),
+  },
+  spanish: {
+    title: 'Spanish',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-spanish-syllabus',
+    specNote: 'Cards are tagged to the strands of the Leaving Certificate Spanish syllabus.\n * A sitting is THREE booklets — the written paper, a separate Listening\n * Comprehension Test, and at Higher a two-page loose sheet carrying the Section B\n * article. Every reading card carries the text it quotes, bound to the pages of\n * the booklet that printed it; the Section B cards bind the loose sheet by its\n * own SEC file id, not the question paper\u2019s.',
+    figureDir: 'public/exam-figures/spanish',
+    blocked: new Set(),
+  },
+  'agricultural-science': {
+    title: 'Agricultural Science',
+    /* Historical additions override this default through the exam-year
+     * curriculum registry; their current practice filter is a separate field. */
+    specVersion: 'lc-agricultural-science-2019',
+    specNote: 'Current practice topics and the examined curriculum are distinct. Reviewed\n * historical cards resolve their specification through the exam-year registry.',
+    figureDir: 'public/exam-figures/agricultural-science',
+    blocked: new Set(),
+  },
+};
+
+/**
+ * Alt text for the Biology figures actually looked at, from before the figure
+ * manifest existed. A figure with no entry here has not been inspected, so it
+ * cannot be bound — describing an image nobody opened is how Diagram Vault ended
+ * up confidently captioning bread mould as an alveolus.
+ */
+const ALT = {
+  "cell-membrane-labelled": "Cross-section of a cell membrane: a curved phospholipid bilayer with proteins embedded in and across it. A brace marks X at the bilayer itself on the left, and an arrow marks Y at a protein spanning the membrane.",
+  "digestive-system": "Outline of a human torso showing the digestive tract. A leader line marks the tube running down the neck and chest; a second marks an organ below the liver. The pancreas and small intestine are named on the diagram.",
+  "rhizopus": "Rhizopus growing on a substrate: rounded heads on upright stalks, a cluster of small spores being released at the right, and a horizontal filament running across the surface.",
+  "cell-division": "A cell late in division: two daughter nuclei have formed, each with chromosomes drawn on a spindle, and the cell is pinching in at the middle.",
+  "circulatory-system": "A whole-body circulatory diagram: the heart at the centre, lungs above, and vessels running to the liver, gut, kidneys and the capillary beds of the head and lower body.",
+  "pupil-eyes": "Two eyes side by side, drawn identically except that the pupil is small in the left and much larger in the right.",
+  "mitochondrion": "Cross-section of a mitochondrion: a smooth outer membrane and an inner membrane folded into long finger-like cristae, with small dots scattered through the interior.",
+  "chloroplast": "Cross-section of a chloroplast: an outer envelope enclosing four stacks of disc-shaped compartments joined by flattened channels, with small dots in the surrounding fluid. No parts are lettered.",
+  "embryo-sac": "A carpel in section on the left, with an arrow enlarging its ovule on the right. Inside the enlarged ovule, leader lines mark P at a pair of central nuclei and Q at a cell below them.",
+  "neurons": "Two neurons drawn side by side. Neuron X has a branched cell body at the top and runs down to a block of muscle cells; Neuron Y runs from a patch of skin at the bottom up past its cell body. A brace marks Z at the fine branches at the top of Y, and arrows name the Schwann cells along both axons.",
+  "sperm-sem": "Electron micrograph of a single sperm cell against a dark background, with a 2 micrometre scale bar. An arrow marks A at the rounded head and a second marks B partway along the tail.",
+  "fermenter": "Photograph of an industrial stainless-steel fermenter: a sealed cylindrical vessel on a wheeled frame, with pipework, valves and gauges around it. No parts are lettered.",
+};
+
+/* ------------------------------------------------------- provenance gate ---- */
+
+const schemeCache = new Map();
+
+/** What an `unprinted` row says: the scheme prints no answer row for the
+ *  printed ask. Mirrors UNPRINTED_ANSWER in types/markBank.ts. */
+const UNPRINTED_ANSWER = 'The scheme prints no answer for this part.';
+
+/** The one line on a History essay card that is NextStepUni's, not the SEC's.
+ *  Mirrors HISTORY_ESSAY_NO_MODEL_ANSWER in types/markBank.ts; the panel prints
+ *  it, so no card carries it as data. */
+const HISTORY_ESSAY_NO_MODEL_ANSWER = 'The scheme prints no model answer for this question.';
+
+/** The line a card carries when the SEC published no marking scheme for its
+ *  paper (PLAN-2026-11-18 R4). Mirrors NO_SCHEME_PUBLISHED in types/markBank.ts. */
+const NO_SCHEME_PUBLISHED = 'The SEC published no marking scheme for this paper.';
+
+/**
+ * A card whose paper has no published scheme (types/markBank.ts `noScheme`):
+ * the question as printed, the paper's own marks, and one criterion row that
+ * reads NO_SCHEME_PUBLISHED and claims nothing. It is refused if the sitting
+ * HAS a scheme, on disk or in the Paper Trail index: the flag can never stand
+ * in for an answer the SEC printed. Returns the reason to drop it, or null.
+ */
+function noSchemeFault(c) {
+  const t = c.tariffModel ?? {};
+  if (t.kind !== 'questionTotal') return 'a no-scheme card has the questionTotal tariff';
+  if (c.rows.length !== 1) return 'a no-scheme card has exactly one row';
+  const [r] = c.rows;
+  if (r.kind !== 'criterion' || r.verbatim !== NO_SCHEME_PUBLISHED || (r.marks !== null && r.marks !== undefined)
+    || r.group || r.parts || r.permittedMarks || r.route || r.unprinted || r.ask) {
+    return `a no-scheme card's one row is an unpriced criterion reading "${NO_SCHEME_PUBLISHED}"`;
+  }
+  if (c.answerVariants?.length || c.questionBonus || c.taskGroups || c.figureKey || c.labelKey?.length) {
+    return 'a no-scheme card carries nothing from a scheme';
+  }
+  if (!Number.isInteger(c.totalMarks) || c.totalMarks <= 0) return 'a no-scheme card keeps the marks its paper prints';
+  const stem = `${c.year}-${LEVEL_TOKEN[c.level] ?? 'hl'}${deferredCard(SUBJECT_ID, c) ? '-deferred' : ''}`;
+  if (['md', 'pdf'].some(ext => existsSync(resolve(ROOT, 'examiner-reports', SUBJECT_ID, 'schemes', `${stem}.${ext}`)))) {
+    return `a scheme for ${c.year} ${c.level} is on disk`;
+  }
+  const entry = deferredCard(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, c.year, c.level) : paperEntry(SUBJECT_ID, c.year, c.level);
+  if (entry?.papers?.some(p => p.scheme?.f)) return `the Paper Trail index lists a scheme for ${c.year} ${c.level}`;
+  return null;
+}
+
+/** The fixed line on a translation card. Mirrors TRANSLATION_NO_MODEL in
+ *  types/markBank.ts; the panel prints it, so no card carries it as data. */
+const TRANSLATION_NO_MODEL = 'The scheme prints no model translation.';
+
+/**
+ * An unseen-translation rubric card (types/markBank.ts TranslationRubric),
+ * held as a point card's rows are: every unit of the passage and every line
+ * of the scheme's rule must be found in that year's scheme, the units' marks
+ * must make the question's total, and nothing else may ride on it. Returns
+ * the reason to drop the card, or null.
+ */
+function translationFault(c, scheme) {
+  const r = c.rubric;
+  if (r?.system !== 'translation') return 'not a translation rubric';
+  if ('schemeFileid' in r) return 'schemeFileid is resolved by the build, never authored';
+  if (!Array.isArray(r.units) || !r.units.length) return 'a translation card needs its units';
+  if (new Set(r.units.map(u => u.id)).size !== r.units.length) return 'two units share an id';
+  const bad = r.units.find(u => !String(u.text ?? '').trim() || !Number.isInteger(u.marks) || u.marks <= 0);
+  if (bad) return `unit ${bad.id} has no text or no whole positive mark`;
+  const sum = r.units.reduce((n, u) => n + u.marks, 0);
+  if (sum !== c.totalMarks) return `units sum to ${sum}, the paper prints ${c.totalMarks}`;
+  if (!Array.isArray(r.schemeGuidance) || !r.schemeGuidance.length) return 'a translation card quotes the scheme\'s own rule';
+  const untraced = [...r.units.map(u => u.text), ...r.schemeGuidance].find(text => !claimMatches(scheme, text));
+  if (untraced) return `not found in the ${c.year} ${c.level} scheme: "${String(untraced).slice(0, 60)}"`;
+  if (!Array.isArray(r.schemePages) || !r.schemePages.length || r.schemePages.some(p => !Number.isInteger(p) || p <= 0)) {
+    return 'schemePages must be the scheme pages the units are printed on';
+  }
+  if (!String(r.sourceLanguage ?? '').trim() || !String(r.markingGuideNote ?? '').trim()) return 'sourceLanguage and markingGuideNote are required';
+  return null;
+}
+
+/**
+ * A History essay rubric card (types/markBank.ts HistoryEssayRubric), checked
+ * the way a point card's rows are: every string the card shows from the
+ * scheme must be found in that year's scheme, the two ladders must cover
+ * their marks exactly once, and CM + OE must be the paper's total. Returns
+ * the reason to drop the card, or null.
+ */
+function historyEssayFault(c, scheme) {
+  const r = c.rubric;
+  if (SUBJECT_ID !== 'history' || r?.system !== 'history-essay') return 'a rubric card here must be a History essay';
+  if ('schemeFileid' in r) return 'schemeFileid is resolved by the build, never authored';
+  const ladder = (bands, top) => {
+    const marks = bands.flatMap(b => b.marks).sort((a, b) => a - b);
+    return bands.length > 0 && marks.length === top + 1 && marks.every((m, i) => m === i)
+      && bands.every(b => b.marks.length && b.marks.every((m, i) => Number.isInteger(m) && (i === 0 || m === b.marks[i - 1] + 1))
+        && b.printed.startsWith(`${b.label}: ${b.marks[0]}-${b.marks.at(-1)} mark`));
+  };
+  const { cm, oe } = r;
+  if (cm.max + (oe?.max ?? 0) !== c.totalMarks) return `CM ${cm.max} + OE ${oe?.max ?? 0} is not the paper's ${c.totalMarks}`;
+  if (cm.mode === 'paragraph') {
+    const top = Math.max(...cm.bands.flatMap(b => b.marks));
+    if (!ladder(cm.bands, top) || top > cm.max) return 'the CM paragraph ladder does not cover its marks once';
+  } else if (cm.mode === 'core-statement') {
+    // The value and the partial range are READ from the scheme's own
+    // procedure sentences, which must themselves trace below.
+    if (!cm.procedure.some(line => line.includes(`awarded ${cm.perStatement} marks`))) return 'the Core Statement value is not the printed one';
+    if (!cm.procedure.some(line => line.includes(`merit ${cm.incomplete[0]}-${cm.incomplete.at(-1)} marks`))) return 'the incomplete Core Statement marks are not the printed ones';
+  } else return `unknown CM mode ${cm.mode}`;
+  if (oe && !ladder(oe.bands, oe.max)) return 'the OE ladder does not cover 0 to its maximum once';
+  if (cm.elementRule && !(cm.elementRule.caps.length && cm.elementRule.caps.every(cap => cap.max > 0 && cap.max < cm.max
+    && cm.elementRule.note.includes(cap.when)))) return 'a NOTE ceiling is not below the CM maximum or not in its note';
+  if (!r.schemePages?.length || !r.schemePages.every(page => Number.isInteger(page) && page > 0)) return 'no scheme pages';
+  const lifted = [
+    ...r.schemeGuidance, cm.definition, ...cm.directions,
+    ...(cm.mode === 'paragraph'
+      ? [cm.paragraphLead, ...cm.paragraphKinds, ...cm.bands.map(b => `${b.printed}${b.descriptor ? ` ${b.descriptor}` : ''}`)]
+      : [cm.statementLead, ...cm.statementKinds, cm.procedureLead, ...cm.procedure]),
+    // A note set out over several printed lines (2018 Q4's elements, then its
+    // ceiling under the CM and OE maxima) is traced a line at a time.
+    ...(cm.elementRule ? cm.elementRule.note.split('\n') : []),
+    ...(oe ? [...oe.bands.map(b => `${b.printed}${b.descriptor ? ` ${b.descriptor}` : ''}`),
+      ...[oe.definition, oe.lead, oe.directionsLead].filter(Boolean), ...oe.directions] : []),
+  ];
+  const untraced = lifted.find(text => !String(text).trim() || !claimMatches(scheme, text));
+  if (untraced !== undefined) return `a marking line not found in the ${c.year} ${c.level} scheme, "${String(untraced).slice(0, 60)}"`;
+  if (lifted.includes(HISTORY_ESSAY_NO_MODEL_ANSWER)) return 'the no-model-answer line is the panel\'s, not data';
+  return null;
+}
+
+/**
+ * A Spanish written-production card (es_writing.py): a RUBRIC card on the
+ * scheme's own marking grid, in the French writing shape (types/markBank.ts
+ * FrenchRubric). Checked the way a point card's rows are: every string the
+ * card shows as the SEC's -- the grid's band descriptors, the ladder and the
+ * scheme's notes -- must be found in that year's scheme; the criteria must add
+ * up to the paper's total; each criterion is placed on every mark from 0 to its
+ * maximum, and its bands, where it has them, cover those marks exactly once.
+ * The criterion labels ("First turn") and practice notes are NextStepUni's and
+ * the panel says so. Returns the reason to drop the card, or null.
+ */
+/** The decks whose writing is a rubric card on the French grid shape, gated
+ *  by spanishGridFault: Spanish, and German (whose expression criterion may
+ *  carry a printed lower scale). */
+// Polish joins with treatment D (languages-q3 lane, 19 Nov 2026): its Część B
+// tasks are marked on one Content (C) / Expression (E) grid, the same card.
+const GRID_SUBJECTS = new Set(['spanish', 'german', 'music', 'polish', 'italian']);
+/** Music is sat in separate booklets; a card's section names the booklet it is
+ *  printed in, by the Paper Trail index's own label. */
+const MUSIC_BOOKLET = { L: 'Listening', A: 'Composing', B: 'Composing', E: 'Elective' };
+/* A band name the SEC sets on TWO lines of its table cell, with the band's
+ * own mark ranges printed in the next cells at the first line's height, so the
+ * text layer reads "Very 15 - 12 10-9 good" (Polish 2026 Higher scheme pp10-11,
+ * in its column runs) and the name is never contiguous. For these subjects a
+ * band name also traces where its words stand in that order with nothing but
+ * range digits between them. Only band NAMES take this path; descriptors and
+ * requirements trace as before. */
+const SPLIT_BAND_NAMES = new Set(['polish']);
+const bandNameTraces = (scheme, label) => {
+  if (!SPLIT_BAND_NAMES.has(SUBJECT_ID)) return false;
+  const words = String(label).split(/\s+/).map(w => normalise(w)).filter(Boolean);
+  if (words.length < 2) return false;
+  const esc = w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(words.map(esc).join('[0-9]*')).test(scheme);
+};
+function spanishGridFault(c, scheme) {
+  const r = c.rubric;
+  if (!GRID_SUBJECTS.has(SUBJECT_ID) || r?.system !== 'french') return 'a rubric card here must be a Spanish, German, Music or Polish marking grid';
+  if (r.allocation || r.answerGuide) return 'a marking grid carries no answer rows';
+  const criteria = r.criteria ?? [];
+  if (!criteria.length || new Set(criteria.map(k => k.id)).size !== criteria.length) return 'no criteria, or two with one id';
+  if (criteria.reduce((sum, k) => sum + k.maxMarks, 0) !== c.totalMarks) return `the criteria do not add up to the paper's ${c.totalMarks}`;
+  for (const k of criteria) {
+    const allowed = k.permittedMarks ?? [];
+    // A line the scheme marks by counting items at a printed rate (Music
+    // Composing Section B: "0.5 mark per correct bass note ... (0.5 X 20)"):
+    // placed on every count from 0 to the printed number of items, each at the
+    // printed rate, with no bands of its own. Only Music prints one.
+    if (k.counted) {
+      if (SUBJECT_ID !== 'music') return `${k.label} is counted at a rate, which only Music prints`;
+      const { rate, items } = k.counted;
+      if (!(rate > 0) || !Number.isInteger(items) || items < 1 || rate * items !== k.maxMarks) return `${k.label}'s count does not make its ${k.maxMarks} marks`;
+      if (k.bands || allowed.length !== items + 1 || allowed.some((m, i) => m !== i * rate)) return `${k.label} is not placed on every count from 0 to ${items}`;
+      continue;
+    }
+    // A Music band line may print a half-mark top (2018 HL Composing Q4's bass
+    // quality "8 – 9.5", beside 0.5 x 21 = 10.5): every whole mark below it and
+    // the printed top. Every other criterion is the whole ladder 0..max.
+    const halfTop = SUBJECT_ID === 'music' && !Number.isInteger(k.maxMarks) && Number.isInteger(k.maxMarks * 2);
+    if (halfTop) {
+      const ladder = [...Array(Math.floor(k.maxMarks) + 1).keys(), k.maxMarks];
+      if (allowed.length !== ladder.length || allowed.some((m, i) => m !== ladder[i])) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
+      const marks = (k.bands ?? []).flatMap(b => b.marks).sort((a, b) => a - b);
+      if (marks.length !== ladder.length || marks.some((m, i) => m !== ladder[i])) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
+      continue;
+    }
+    if (allowed.length !== k.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label} is not placed on every mark from 0 to ${k.maxMarks}`;
+    if (k.bands) {
+      const marks = k.bands.flatMap(b => b.marks).sort((a, b) => a - b);
+      if (marks.length !== allowed.length || marks.some((m, i) => m !== i)) return `${k.label}'s bands do not cover 0 to ${k.maxMarks} once`;
+    }
+  }
+  // A criterion zeroed by another's 0 names a criterion of this card, and the
+  // card carries the scheme's printed rule ("… no marks are awarded for Content
+  // … no marks will be awarded for Language"), itself traced below. Polish
+  // names the second criterion Expression: "Where no marks are awarded for
+  // content (i.e. effort totally irrelevant), no marks will be awarded for
+  // expression."
+  for (const k of criteria) {
+    if (!k.zeroWhenZero) continue;
+    if (k.zeroWhenZero === k.id || !criteria.some(other => other.id === k.zeroWhenZero)) return `${k.label} is zeroed by a criterion the card does not have`;
+    if (!r.taskRequirements.some(line => /no marks are awarded for Content\b.*no marks will be award(?:ed)? for (?:Language|Expression)\b/i.test(line))) {
+      return `${k.label} is zeroed by ${k.zeroWhenZero} but the card prints no such rule`;
+    }
+  }
+  // A lower scale (German "Lower E", FrenchCriterion.lowerScale): smaller than
+  // the criterion's own, placed on every mark from 0 to its maximum, its bands
+  // covering them once, switched on by content criteria the card has, and its
+  // rule and band descriptors lifted from the scheme like every other line.
+  for (const k of criteria) {
+    const lower = k.lowerScale;
+    if (!lower) continue;
+    // Any grid subject may carry the cap its scheme prints (German "Lower E";
+    // Italian "language will be marked out of 5", or at Ordinary "award no marks
+    // for language", a cap of 0). Bands are checked where the scheme prints
+    // them for the lower scale; a cap printed with no bands of its own carries
+    // none (Italian), and is placed on every mark from 0 to the cap.
+    if (!(lower.maxMarks >= 0 && lower.maxMarks < k.maxMarks)) return `${k.label}'s lower scale is not below its own ${k.maxMarks}`;
+    const allowed = lower.permittedMarks ?? [];
+    if (allowed.length !== lower.maxMarks + 1 || allowed.some((m, i) => m !== i)) return `${k.label}'s lower scale is not placed on every mark from 0 to ${lower.maxMarks}`;
+    const marks = (lower.bands ?? []).flatMap(b => b.marks).sort((a, b) => a - b);
+    if ((lower.bands ?? []).length && (marks.length !== allowed.length || marks.some((m, i) => m !== i))) return `${k.label}'s lower bands do not cover 0 to ${lower.maxMarks} once`;
+    if (!lower.contentCriteria?.length || lower.contentCriteria.some(id => id === k.id || !criteria.some(other => other.id === id && !other.lowerScale))) {
+      return `${k.label}'s lower scale counts a criterion the card does not have`;
+    }
+    const content = lower.contentCriteria.reduce((sum, id) => sum + criteria.find(other => other.id === id).maxMarks, 0);
+    if (!Number.isInteger(lower.contentAtMost) || lower.contentAtMost < 0 || lower.contentAtMost >= content) return `${k.label}'s lower scale threshold is outside its content's 0 to ${content}`;
+    if (lower.wordsUnder !== undefined && !(Number.isInteger(lower.wordsUnder) && lower.wordsUnder > 0)) return `${k.label}'s lower scale word count is not a count`;
+    if (!String(lower.rule ?? '').trim()) return `${k.label}'s lower scale prints no rule`;
+  }
+  if (!c.schemePages?.length || !c.schemePages.every(p => Number.isInteger(p) && p > 0)) return 'no scheme pages';
+  const lifted = [
+    ...r.taskRequirements,
+    ...String(r.markingGuideNote ?? '').split('\n').filter(Boolean),
+    ...criteria.flatMap(k => [...k.guidance, ...(k.bands || k.counted ? [k.label] : []),
+      // German prints its expression categories unnamed ("CATEGORY
+      // DESCRIPTION"): "Category 1" is the card's own label, never traced.
+      ...(k.bands ?? []).flatMap(b => [...(SUBJECT_ID === 'german' ? [] : [b.label]), ...b.guidance]),
+      ...(k.lowerScale ? [k.lowerScale.rule, ...k.lowerScale.bands.flatMap(b => b.guidance)] : [])]),
+  ];
+  const bandNames = new Set(criteria.flatMap(k => (k.bands ?? []).map(b => b.label)));
+  const untraced = lifted.find(text => !String(text).trim()
+    || !(claimMatches(scheme, text) || (bandNames.has(text) && bandNameTraces(scheme, text))));
+  if (untraced !== undefined) return `a marking line not found in the ${c.year} ${c.level} scheme, "${String(untraced).slice(0, 60)}"`;
+  return null;
+}
+
+/** Mirrors bestClaimedMarks() in types/markBank.ts: the best `count` values, added. */
+const bestOf = (values, count) => [...values].sort((a, b) => b - a).slice(0, count).reduce((n, m) => n + m, 0);
+// Mirrors optionGroupMarks() in types/markBank.ts: fully claimed, a menu priced
+// option by option pays its answers, never an answer's part beside it.
+const answerMarks = (g) => g.optionMarks.filter((_m, i) => g.optionOf?.[i] === null || g.optionOf?.[i] === undefined);
+// Mirrors ladderGroupMarks() in types/markBank.ts, fully claimed: the answers'
+// own prices, largest first, each paid the lesser of it and its step.
+const ladderOf = (g) => {
+  const steps = [...g.perOptionSteps].sort((a, b) => b - a);
+  return [...answerMarks(g)].sort((a, b) => b - a).slice(0, g.claimMax)
+    .reduce((n, cap, k) => n + Math.min(steps[k] ?? 0, cap), 0);
+};
+
+/** The level tokens a deck may carry.
+ *
+ * 'common' is not a third grade of difficulty: LCVP's Link Modules paper is
+ * sat at ONE level by everyone, which is what the SEC's own file id says with
+ * its level letter C (LC462CLP000EV.pdf) and what the canonical curriculum
+ * already records. Filing it as 'higher' would have every card cite a Higher
+ * Level paper that does not exist.
+ */
+const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl', foundation: 'fl' };
+const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common', foundation: 'Foundation' };
+
+/* A card from the SEC's DEFERRED sitting ("econ-2022-hl-deferred-sa-q1-a",
+ * "eng-2022-hl-deferred-q1-a", "dcg-2022-hl-deferred-a2a",
+ * "hist-2023-hl-deferred-lm-s1-q1a", cited "... — Deferred sitting"): its own
+ * paper, scheme and index entry. Physics, Home Economics and Maths mark theirs
+ * the same way on codex/home-economics-continuation-20261101. No other
+ * subject's id matches, so every other deck builds exactly as before. */
+const DEFERRED_ID = {
+  economics: /^econ-\d{4}-(?:hl|ol)-deferred-/,
+  engineering: /^eng-\d{4}-(?:hl|ol)-deferred-/,
+  history: /^hist-\d{4}-(?:hl|ol)-deferred-/,
+  spanish: /^es-\d{4}-(?:hl|ol)-deferred-/,
+  dcg: /^dcg-\d{4}-(?:hl|ol)-deferred-/,
+  german: /^de-\d{4}-(?:hl|ol)-deferred-/,
+  biology: /^bio-\d{4}-(?:hl|ol)-deferred-/,
+  physics: /^phys-\d{4}-(?:hl|ol)-deferred-/,
+  'home-economics': /^he-\d{4}-(?:hl|ol)-deferred-/,
+  maths: /^maths-\d{4}-(?:hl|ol|fl)-deferred-/,
+};
+const deferredCard = (subjectId, card) =>
+  Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));
+/* A deferred Spanish card's documents are its sitting's own: the index's
+ * deferred entry labels them "Deferred · Exam Paper", "Deferred · Aural Paper"
+ * and "Deferred · Section B" (the loose sheet), and a card names the June
+ * label ("Aural Paper", "Section B"). Null where the entry has no such
+ * document, never June's. */
+const deferredDoc = (subjectId, card, label) => {
+  const entry = deferredPaperEntry(subjectId, card.year, card.level);
+  const hit = entry?.papers?.find(p => p.label === `Deferred · ${label}`);
+  return hit ? String(hit.doc?.f ?? '').replace(/\.pdf$/i, '') || null : null;
+};
+const historyDeferred = (subjectId, card) =>
+  subjectId === 'history' && deferredCard(subjectId, card);
+
+function schemeFor(subjectId, card) {
+  // A deferred Link Modules card reads the transcript of its own reviewed
+  // archive scheme, never June's.
+  const lcvpSource = subjectId === 'lcvp' ? reviewedLcvpSource(card) : undefined;
+  if (lcvpSource) {
+    const file = lcvpSource.schemeTextPath;
+    if (!schemeCache.has(file)) schemeCache.set(file, comparableScheme(readLcvpDeferredScheme(lcvpSource)));
+    return schemeCache.get(file);
+  }
+  // An older Maths sitting prints a standard and a Project Maths booklet, each
+  // with its own scheme; the reviewed source names which one a card is from.
+  const project = subjectId === 'maths' && /LP030EV\.pdf$/.test(reviewedMathematicsSource(card.id)?.schemeFileid ?? '');
+  const deferred = deferredCard(subjectId, card);
+  const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}${project ? '-project' : deferred ? '-deferred' : ''}`;
+  const file = resolve(ROOT, 'examiner-reports', subjectId, 'schemes', `${stem}.md`);
+  if (!schemeCache.has(file)) {
+    const raw = existsSync(file) ? readFileSync(file, 'utf8') : '';
+    schemeCache.set(file, comparableScheme(raw));
+  }
+  return schemeCache.get(file);
+}
+
+/**
+ * Row kinds the deck's own type accepts.
+ *
+ * Nothing validated this, and it showed: the authored Home Economics file had
+ * drifted to kinds ("required", "explain") that are not in RowKind, which the
+ * build happily emitted and typecheck then rejected — after the deck had been
+ * written. Caught here the card is dropped with a reason instead.
+ * Mirrors RowKind in types/markBank.ts.
+ */
+/** The glyph a broken subset font left behind, if the card still shows one.
+ *
+ * Word embeds its fonts as subsets whose ToUnicode map is wrong, so a scheme's
+ * text layer spells "tan" in Oriya and "Certificate" as "CerƟficate".
+ * derive_glyphs.py repairs what it can prove; this refuses to ship the rest.
+ * A card that reads "h^(ᇱᇱ)(x)" where the scheme prints "h''(x)" is not a
+ * smaller version of the right card, it is the wrong one, and it went out
+ * looking poor because nothing was checking. Greek is genuinely Greek here,
+ * and the two combining marks carry p-hat and z-bar. */
+/* Greek is genuinely Greek, the two combining marks carry p-hat and z-bar,
+ * and U+0152/U+0153 are the French OE ligature -- a letter of the language,
+ * printed in 'sœur', 'cœur', 'nœud'. Refusing it dropped a correct French
+ * card for containing a French letter. */
+/* Characters inside BROKEN's range that a scheme really does print.
+ * Greek and the hat and bar were here already; the DOT and DOUBLE DOT are
+ * Newton's notation for a derivative — the 2022 Higher Applied Maths scheme
+ * sets "ẋ = A ω cos(ωt + ε)" and "ẍ = −A ω² sin(ωt + ε)" — and U+1D62-U+1D6A
+ * are the Unicode subscripts mathtext.subscripts() itself emits, so refusing
+ * them threw away a card for spelling v_r the way the reader spelled it. */
+/* Cyrillic (U+0400-U+04FF) is genuinely Cyrillic, for the same reason Greek is
+ * genuinely Greek: it is the alphabet the Russian paper and its scheme are
+ * printed in. Left inside BROKEN, every Russian marking point read as a page
+ * of unreadable glyphs and the whole deck was refused. */
+/* Latin Extended-A (U+0100-U+017F) is genuinely Latin Extended-A, for the same
+ * reason Cyrillic is genuinely Cyrillic: ą ć ę ł ń ó ś ź ż are letters of the
+ * POLISH alphabet, printed in every Polish paper and every Polish scheme, and
+ * they reach the text layer intact. Left inside BROKEN, half the Polish deck
+ * was refused for being written in Polish -- "Księgarnia była mała" counted as
+ * four unreadable glyphs. The block also carries the French OE ligature and
+ * the ligature glyphs LIGATURES already folds, which are handled before this
+ * test is reached. */
+/* U+0218 to U+021B are the four Romanian letters with a COMMA BELOW — Ș ș Ț ț
+ * — and they are letters, not accents: "ființă socială", "Explicați pe scurt",
+ * "recunoașterea celorlalți". They sit in Latin Extended-B rather than
+ * Extended-A, so widening the class for Polish did not reach them, and every
+ * Romanian card from 2025 was refused for being written in Romanian. Only
+ * these four are added and not the block they live in, because the block is
+ * also where several BROKEN subset glyphs land — U+019E stands for "tf" and
+ * U+019F for "ti" in glyphmap.json — and those must still be refused. */
+/* U+1D52 MODIFIER LETTER SMALL O is the raised o the SEC types for a degree in
+ * Calibri: the 2022 Higher Polish listening booklet prints "grows in 20\u1D52C" (rendered:
+ * a degree sign), and its text layer carries the character itself, not a
+ * subset's stand-in. Added alone; at the time no other deck input held it. */
+const REAL = /[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D52\u1D62-\u1D6A\u1F00-\u1FFF]/;
+/* Greek Extended (U+1F00-U+1FFF) is genuinely Greek, for the same reason
+ * U+0370-U+03FF already is: POLYTONIC Greek is the alphabet the Ancient Greek
+ * paper and its scheme are printed in, and every accented vowel in it lives
+ * here rather than in the basic block. "ἦν δέ τις ἐν τῇ στρατιᾷ Ξενοφῶν" is
+ * eight letters from this range in one printed line. Left inside BROKEN the
+ * whole Ancient Greek deck was refused for being written in Ancient Greek —
+ * the same failure Cyrillic and Latin Extended-A were fixed for, one block
+ * further along. Verified before widening: the 2015 Higher paper's page 3 was
+ * rendered at 190dpi and read beside agr_text's decoding of it, and the two
+ * agree character for character. */
+/* Script that is really script, inside the range the broken-subset test
+ * sweeps. Arabic joins it because Arabic ships: 0600-06FF is the alphabet the
+ * SEC sets its Arabic paper in, 0750-077F and 08A0-08FF the supplements. What
+ * does NOT join it is the Arabic Presentation Forms — FB50-FDFF and FE70-FEFF
+ * — because those are the SHAPED glyphs the text layer hands back and
+ * ara_text.py folds them to their letters; one reaching a card means the fold
+ * failed, which is exactly what this gate is for. */
+const BROKEN = /[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]/g;
+/** Undo a subset font's broken ToUnicode map, using the table derived from the
+ * schemes themselves by scripts/markbank/authoring/derive_glyphs.py. Applied
+ * here as well as at authoring time so every subject benefits from a re-derived
+ * table on its next build, without ten reader scripts each having to know. */
+const GLYPHS = JSON.parse(readFileSync(
+  resolve(ROOT, 'scripts/markbank/authoring/glyphmap.json'), 'utf8'));
+
+/* CambriaMath text layers sometimes return each mathematical LETTER twice at
+ * the same drawing origin. Collapsing letters is safe; doubled mathematical
+ * digits are not, because the same font can map a different digit onto the
+ * repeated glyph. Those are refused below instead of guessed. */
+const DOUBLED_MATHS_LETTER = /([\u{1D400}-\u{1D7CD}])\1/gu;
+const DOUBLED_MATHS_DIGIT = /([\u{1D7CE}-\u{1D7FF}])\1/u;
+
+function repairText(text) {
+  if (typeof text !== 'string') return text;
+  let out = text;
+  for (let i = 0; i < 4; i++) {
+    const next = out.replace(DOUBLED_MATHS_LETTER, '$1');
+    if (next === out) break;
+    out = next;
+  }
+  if (!BROKEN.test(out)) return out;
+  BROKEN.lastIndex = 0;
+  return [...out].map(ch => GLYPHS[ch] ?? ch).join('');
+}
+
+/* Every string on the card, not a list of the fields that were mangled the
+ * last time someone looked. Naming them missed contextNote, which is where the
+ * business deck kept its "the word set as GiOen is often" asides -- text that
+ * exists only because the mangling was not being repaired. Ids and keys are
+ * ASCII, so walking them costs a failed regex test and changes nothing. */
+function walkStrings(node, fn) {
+  if (Array.isArray(node)) {
+    node.forEach((v, i) => {
+      if (typeof v === 'string') node[i] = fn(v);
+      else if (v && typeof v === 'object') walkStrings(v, fn);
+    });
+  } else if (node && typeof node === 'object') {
+    for (const k of Object.keys(node)) {
+      const v = node[k];
+      if (typeof v === 'string') node[k] = fn(v);
+      else if (v && typeof v === 'object') walkStrings(v, fn);
+    }
+  }
+}
+
+function repairGlyphs(card) { walkStrings(card, repairText); }
+
+/* Ligature glyphs that a text layer misreads. Calibri draws "tt", "tti", "ti",
+ * "tf" and "tí" as single glyphs; a broken subset reports them as U+01A9,
+ * U+01AB, U+019F, U+019E and U+01A1, and the Latin presentation forms U+FB00-
+ * U+FB06 are the same glyphs reported honestly. None is ever a letter a card
+ * should show. derive_glyph_ids.py reads them by glyph id and
+ * repair_ligature_words.py repairs each source document; one that still
+ * reaches a shipped card means a source was not repaired, so it is refused. */
+const LIGATURE_CODEPOINTS = /[\u019E\u019F\u01A1\u01A9\u01AB\uFB00-\uFB06]/;
+
+/* The same glyphs misread as FEWER letters leave no odd code point behind: the
+ * 2023 OL Latin scheme's text layer says "batle" where the page prints
+ * "battle". repair_ligature_words.py records every such misread form it finds
+ * in a subject's papers and schemes; a shipped card still carrying one is
+ * refused, because the word it shows is not the word that was printed. */
+const LIGATURE_WORDS = (() => {
+  const path = resolve(ROOT, 'scripts/markbank/authoring/ligature_words.json');
+  if (!existsSync(path)) return {};
+  return JSON.parse(readFileSync(path, 'utf8'));
+})();
+
+/* Identifiers are keys, never shown: a concept id coined from a misread
+ * stem ("...-writen-force-...") is left alone, because renaming it would orphan
+ * whatever refers to it. Every printed string is still checked. */
+const LIGATURE_IDENTIFIER_KEYS = new Set(['id', 'conceptId', 'topicId', 'figureKey', 'questionFigureKey', 'labelKey', 'replacementId']);
+
+function printedStrings(node, out = []) {
+  if (Array.isArray(node)) node.forEach(v => (typeof v === 'string' ? out.push(v) : printedStrings(v, out)));
+  else if (node && typeof node === 'object') {
+    for (const [k, v] of Object.entries(node)) {
+      if (LIGATURE_IDENTIFIER_KEYS.has(k)) continue;
+      if (typeof v === 'string') out.push(v);
+      else printedStrings(v, out);
+    }
+  }
+  return out;
+}
+
+function misreadLigatures(card) {
+  const { notes, ...shipped } = card;
+  const text = printedStrings(shipped).join(' ');
+  const code = text.match(LIGATURE_CODEPOINTS);
+  if (code) return `ligature glyph U+${code[0].codePointAt(0).toString(16).toUpperCase().padStart(4, '0')} still on the card`;
+  const words = Object.keys(LIGATURE_WORDS[SUBJECT_ID] ?? {});
+  const hit = words.find(w => new RegExp(`(?<![\\p{L}\\p{N}_])${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}\\p{N}_])`, 'u').test(text));
+  return hit ? `misread ligature "${hit}" (printed "${LIGATURE_WORDS[SUBJECT_ID][hit]}")` : null;
+}
+
+function brokenGlyphs(text) {
+  if (DOUBLED_MATHS_DIGIT.test(text)) {
+    return 'a doubled maths digit whose value the text layer has lost — the font mis-maps some digits, so the pair cannot be collapsed';
+  }
+  // A Music scheme prints the forte dynamic as "ƒ" (U+0192), and its text
+  // layer carries it so ("sudden ƒ", 2022 OL Q3(c)): a sign of the subject,
+  // not a broken glyph. Music only; every other deck is checked as before.
+  const hits = (text.match(BROKEN) ?? []).filter(ch => !REAL.test(ch) && !(SUBJECT_ID === 'music' && ch === 'ƒ'));
+  if (!hits.length) return null;
+  const uniq = [...new Set(hits)];
+  return `${hits.length} unreadable glyph(s) from a broken font subset, e.g. `
+    + uniq.slice(0, 4).map(ch => `U+${ch.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')}`).join(' ');
+}
+
+function mangledText(card) {
+  const seen = [];
+  // Author notes may quote a corrupt extraction specifically to document why
+  // it was rejected; notes never ship, so police only the card students see.
+  const { notes, ...shipped } = card;
+  walkStrings(shipped, (v) => { seen.push(v); return v; });
+  return brokenGlyphs(seen.join(' '));
+}
+
+const ROW_KINDS = new Set(['point', 'alt', 'allOf', 'anyN', 'criterion', 'gate']);
+
+function badRowKind(c) {
+  for (const r of c.rows) {
+    if (!ROW_KINDS.has(r.kind)) {
+      return `row "${r.id}" has kind "${r.kind}", which is not one of ${[...ROW_KINDS].join(', ')}`;
+    }
+  }
+  return null;
+}
+
+/** Text that is a table fragment or a header rather than an answerable question. */
+function badQuestion(text, card) {
+  const t = String(text).trim();
+  if (!questionStandsAlone(card)) return 'question text is too short to stand alone';
+  if (/^section\s+[abc]\b/i.test(t)) return 'question text is a section header';
+  if (/^question\s+\d+\.?$/i.test(t)) return 'question text is just a question number';
+  if (/^\(?\d+\s*m(arks)?\)?\.?$/i.test(t)) return 'question text is a bare tariff';
+  return null;
+}
+
+const cardsPath = process.argv[2];
+if (!cardsPath) {
+  console.error('usage: build-deck.mjs <cards.json>');
+  process.exit(1);
+}
+
+const input = JSON.parse(readFileSync(cardsPath, 'utf8'));
+const rawCards = Array.isArray(input) ? input : (input.accepted ?? input.cards ?? []);
+
+/* The subject comes from the cards. Mixed input is a mistake, not a feature:
+ * one run writes one subject's modules, so a stray card would vanish silently.
+ * Religious Education's point file empties once every shipped sitting is a
+ * band-grid card (rubric-authored.json), and that empty file is still its
+ * deck's input: the subject is then read off the file's own name. */
+const subjectIds = rawCards.length || !/\/religious-education\.json$/.test(cardsPath)
+  ? [...new Set(rawCards.map(c => c.subjectId ?? 'biology'))]
+  : ['religious-education'];
+if (subjectIds.length !== 1) {
+  console.error(`cards span ${subjectIds.length} subjects (${subjectIds.join(', ')}) — build one subject at a time`);
+  process.exit(1);
+}
+const SUBJECT_ID = subjectIds[0];
+const LEVELS = ['higher', 'ordinary', ...(SUBJECT_ID === 'maths' ? ['foundation'] : []), 'common'];
+if (SUBJECT_ID === 'maths') validateMathematicsReviewSources();
+const SUBJECT = SUBJECTS[SUBJECT_ID];
+if (SUBJECT_ID === 'economics') {
+  // During the corpus audit, unreviewed papers remain explicitly pending.
+  // Reviewed papers are a hard gate: changed sources, stale review keys and
+  // new unclassified selection directives must stop generation.
+  process.stdout.write(execFileSync('python3', [
+    resolve(ROOT, 'scripts/markbank/authoring/econ_review.py'), '--allow-pending',
+  ], { cwd: ROOT, encoding: 'utf8' }));
+}
+if (!SUBJECT) {
+  console.error(`unknown subject "${SUBJECT_ID}" — add it to SUBJECTS in this script`);
+  process.exit(1);
+}
+
+// PE now uses the complete, visually reviewed task inventories. Rebuilding
+// historical authored input must never restore incomplete point-card content.
+if (SUBJECT_ID === 'physical-education') {
+  execFileSync('python3', [resolve(ROOT, 'scripts/markbank/authoring/pe_complete.py'), '--write'],
+    { cwd: ROOT, stdio: 'inherit' });
+  const reviewed = JSON.parse(readFileSync(resolve(ROOT,
+    'components/MarkBank/cards/physical-education/reviewed.json'), 'utf8')).cards;
+  const ids = new Set(reviewed.map(card => card.id));
+  if (rawCards.some(card => !ids.has(card.id))) {
+    throw new Error('PE input contains an unreviewed card; update the paper/scheme task inventory first.');
+  }
+  process.exit(0);
+}
+
+// A normal Business build fails closed while a raw-paper selection remains
+// unclassified. In-progress local authoring is explicit and never a completion
+// certificate; stale reviews and changed source hashes cannot be bypassed.
+if (SUBJECT_ID === 'business') {
+  try {
+    execFileSync('python3', [resolve(ROOT, 'scripts/markbank/authoring/business_corpus_inventory.py'),
+      '--check-selections'], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+  } catch (error) {
+    const message = String(error.stdout || error.stderr || error.message).trim();
+    if (error.status !== 3 || !process.argv.includes('--allow-incomplete-business-review')) {
+      throw new Error(`Business source review blocks generation: ${message}`);
+    }
+    process.stderr.write(`DRAFT BUSINESS BUILD — source review is incomplete.\n${message}\n`);
+  }
+}
+
+/**
+ * Reviewed repairs that must survive regeneration of the authored JSON.
+ *
+ * Most subjects have accumulated several generations of authoring scripts. A
+ * correction made only in a generated TypeScript deck disappears the next time
+ * one of those scripts runs; changing a historical parser can, conversely,
+ * rewrite hundreds of unrelated cards. This small declarative layer records an
+ * independently checked exception at the card boundary: a duplicate can be
+ * withdrawn, malformed OCR can be replaced, and official source pages can be
+ * attached without obscuring the generator that produced the underlying card.
+ */
+const CORRECTIONS_PATH = resolve(ROOT, 'scripts/markbank/card-corrections.json');
+const CORRECTIONS = existsSync(CORRECTIONS_PATH)
+  ? JSON.parse(readFileSync(CORRECTIONS_PATH, 'utf8'))
+  : {};
+const SOURCE_BINDINGS_PATH = resolve(ROOT, 'scripts/markbank/card-source-bindings.json');
+const SOURCE_BINDINGS = existsSync(SOURCE_BINDINGS_PATH)
+  ? JSON.parse(readFileSync(SOURCE_BINDINGS_PATH, 'utf8'))
+  : {};
+const subjectCorrections = CORRECTIONS[SUBJECT_ID] ?? {};
+const subjectSourceBindings = SOURCE_BINDINGS[SUBJECT_ID] ?? {};
+const rawIds = new Set(rawCards.map(card => card.id));
+// Independently reviewed French reading corrections keep their original IDs.
+// The source ledger must explicitly authorize each replacement; every other
+// authored card continues through the existing validation and rendering path.
+const reviewedFrenchReading = SUBJECT_ID === 'french'
+  ? JSON.parse(readFileSync(resolve(ROOT, 'components/MarkBank/cards/french/reading.json'), 'utf8'))
+  : [];
+const frenchReadingRepairs = SUBJECT_ID === 'french'
+  ? JSON.parse(readFileSync(resolve(ROOT, 'scripts/markbank/authoring/french-reading-review.json'), 'utf8')).papers
+    .flatMap(paper => Object.values(paper.preservedCardIds ?? {}).map(id => ({ id, reason: paper.correctionReason })))
+  : [];
+const repairedFrenchIds = new Set(frenchReadingRepairs.map(repair => repair.id));
+for (const repair of frenchReadingRepairs) {
+  if (!repair.reason || !rawIds.has(repair.id) || reviewedFrenchReading.filter(card => card.id === repair.id).length !== 1) {
+    throw new Error(`Invalid reviewed French reading correction: ${repair.id}`);
+  }
+}
+for (const card of reviewedFrenchReading) {
+  if (rawIds.has(card.id) && !repairedFrenchIds.has(card.id)) {
+    throw new Error(`Unreviewed French reading replacement: ${card.id}`);
+  }
+}
+for (const id of Object.keys(subjectCorrections)) {
+  if (!rawIds.has(id)) {
+    console.error(`stale correction for missing ${SUBJECT_ID} card "${id}"`);
+    process.exit(1);
+  }
+}
+for (const id of Object.keys(subjectSourceBindings)) {
+  if (!rawIds.has(id)) {
+    console.error(`stale source binding for missing ${SUBJECT_ID} card "${id}"`);
+    process.exit(1);
+  }
+}
+
+const appliedCorrections = [];
+const cards = [];
+// These two authored Japanese candidates were absent from the frozen served
+// deck. A later generic provenance improvement must not silently publish an
+// unreviewed older sitting during the 2026 source review. They remain OPEN in
+// the paper ledger until their 2021 Ordinary source review resolves them.
+const pendingJapaneseCandidates = new Set(['ja-2021-ol-2b-ii', 'ja-2021-ol-3a-4-iv']);
+for (const raw of rawCards) {
+  if (SUBJECT_ID === 'japanese' && pendingJapaneseCandidates.has(raw.id)) {
+    appliedCorrections.push(`${raw.id}: unshipped legacy candidate; awaiting its original-paper review`);
+    continue;
+  }
+  if (repairedFrenchIds.has(raw.id)) {
+    appliedCorrections.push(`${raw.id}: preserved in the visually reviewed reading deck`);
+    continue;
+  }
+  const correction = subjectCorrections[raw.id];
+  if (correction) {
+    if (!String(correction.reason ?? '').trim()) {
+      console.error(`${raw.id}: a correction must record why it is safe`);
+      process.exit(1);
+    }
+    if (correction.drop) {
+      if (!correction.replacementId || !rawIds.has(correction.replacementId)) {
+        console.error(`${raw.id}: a withdrawn card must name an existing replacementId`);
+        process.exit(1);
+      }
+      appliedCorrections.push(`${raw.id}: withdrawn; ${correction.reason}`);
+      continue;
+    }
+  }
+  const card = structuredClone(raw);
+  for (const [key, value] of Object.entries(correction?.set ?? {})) {
+    if (value === null) delete card[key];
+    else card[key] = value;
+  }
+  if (correction?.answerVariantSources) {
+    if (!Array.isArray(correction.answerVariantSources)) {
+      console.error(`${raw.id}: answerVariantSources must be an array`);
+      process.exit(1);
+    }
+    card.answerVariants = correction.answerVariantSources.map(source => {
+      const sourceCard = rawCards.find(candidate => candidate.id === source.cardId);
+      if (!sourceCard || !String(source.id ?? '').trim() || !String(source.label ?? '').trim()) {
+        console.error(`${raw.id}: invalid answer variant source ${JSON.stringify(source)}`);
+        process.exit(1);
+      }
+      if (sourceCard.year !== raw.year || sourceCard.level !== raw.level
+          || sourceCard.questionText !== raw.questionText) {
+        console.error(`${raw.id}: answer variant ${source.cardId} is not the same printed task`);
+        process.exit(1);
+      }
+      return { id: source.id, label: source.label, rows: structuredClone(sourceCard.rows) };
+    });
+  }
+  const binding = subjectSourceBindings[raw.id];
+  if (binding) {
+    const pages = Array.isArray(binding) ? binding : binding.pages;
+    const sourceKind = !Array.isArray(binding) && binding.kind === 'text'
+      ? 'source-text'
+      : 'source-illustration';
+    const sourceTitle = sourceKind === 'source-text' ? 'Source and question' : 'Official question page';
+    card.sourceMaterial = {
+      kind: sourceKind,
+      label: sourceKind === 'source-text' ? 'OFFICIAL SOURCE' : 'OFFICIAL QUESTION PAGE',
+      title: sourceTitle,
+      pages,
+      ...(!Array.isArray(binding) && binding.sourceFileid
+        ? { sourceFileid: binding.sourceFileid }
+        : {}),
+      attribution: `SEC ${SUBJECT.title} ${card.year} ${LEVEL_WORD[card.level] ?? 'Higher'} Level ${deferredCard(SUBJECT_ID, card) ? 'deferred ' : ''}examination paper — © State Examinations Commission.`,
+      presentationNote: sourceKind === 'source-text'
+        ? 'Read the exact source as it appeared in the examination paper, then answer the concise prompt above.'
+        : 'Open the exact examination page to use its published chart, table, photograph or diagram.',
+    };
+    if (!Array.isArray(binding) && binding.stripStem) delete card.stem;
+    if (!Array.isArray(binding) && binding.questionText) card.questionText = binding.questionText;
+    appliedCorrections.push(`${raw.id}: attached its inspected official question-page source`);
+  }
+  // A live card keeps its live conceptId (R12): live-concept-ids.json lists the
+  // only cards this touches, all in Codex's reviewed subjects.
+  cards.push(withLiveConceptId(SUBJECT_ID === 'maths' ? applyMathematicsReview(card) : card));
+  if (correction) appliedCorrections.push(`${raw.id}: ${correction.reason}`);
+}
+
+let economicsReviews = [];
+if (SUBJECT_ID === 'economics') {
+  const directory = resolve(ROOT, 'scripts/markbank/authoring/reviews');
+  economicsReviews = readdirSync(directory).filter(name => /^economics-.*\.json$/.test(name))
+    .map(name => JSON.parse(readFileSync(resolve(directory, name), 'utf8')));
+  bindEconomicsEditions(cards, economicsReviews);
+}
+
+/**
+ * Figures published by bind-figures.mjs: every one was OPENED by an inspecting
+ * agent, and only those it marked complete and non-truncated are in here. Its id
+ * is the extractor's own name, derived from the figure's page and index in the
+ * PDF, so an authoring agent naming a figure cannot invent a path.
+ */
+const MANIFEST_PATH = resolve(ROOT, 'components/MarkBank/figures.json');
+const SUBJECT_MANIFEST_PATH = resolve(
+  ROOT, `components/MarkBank/figures-${SUBJECT_ID}.json`);
+const MANIFEST = {
+  ...(existsSync(MANIFEST_PATH) ? JSON.parse(readFileSync(MANIFEST_PATH, 'utf8')) : {}),
+  ...(existsSync(SUBJECT_MANIFEST_PATH)
+    ? JSON.parse(readFileSync(SUBJECT_MANIFEST_PATH, 'utf8')) : {}),
+};
+
+const figureRecord = (key) => {
+  if (SUBJECT.blocked.has(key)) return { error: `figure "${key}" is on the blocklist` };
+
+  const inspected = MANIFEST[key];
+  if (inspected) {
+    const abs = resolve(ROOT, 'public', inspected.src.replace(/^\//, ''));
+    if (!existsSync(abs)) return { error: `figure file missing: ${inspected.src}` };
+    const md5 = createHash('md5').update(readFileSync(abs)).digest('hex');
+    if (md5 !== inspected.md5) return { error: `figure "${key}" changed on disk since it was inspected` };
+    return {
+      candId: key,
+      src: inspected.src,
+      srcHash: md5,
+      alt: inspected.alt,
+      attribution: inspected.attribution,
+      ...(inspected.solution ? { solution: true } : {}),
+      ...(inspected.sourceNote ? { sourceNote: inspected.sourceNote } : {}),
+    };
+  }
+
+  // Legacy 2025 Biology Higher Level crops, bound before the manifest existed.
+  if (SUBJECT_ID !== 'biology' || !ALT[key]) {
+    return { error: `figure "${key}" has not been inspected, so it has no verified alt text` };
+  }
+  const rel = `${SUBJECT.figureDir}/biology-2025-hl-${key}.png`;
+  const abs = resolve(ROOT, rel);
+  if (!existsSync(abs)) return { error: `figure file missing: ${rel}` };
+  return {
+    candId: `biology-2025-hl-${key}`,
+    src: `/exam-figures/biology/biology-2025-hl-${key}.png`,
+    srcHash: createHash('md5').update(readFileSync(abs)).digest('hex'),
+    alt: ALT[key],
+    attribution: 'SEC Leaving Certificate Biology 2025 Higher Level — © State Examinations Commission',
+  };
+};
+
+/**
+ * Early Maths question-crop descriptions were hard-cut after 220 characters.
+ * Keep their useful verified context, mark the cut honestly with an ellipsis,
+ * and append the complete card prompt so assistive technology never receives
+ * a sentence ending halfway through a word. New crops are authored without a
+ * fixed description limit; this repairs the already-inspected corpus at build.
+ */
+function accessibleQuestionFigureAlt(alt, card) {
+  const repaired = repairText(alt ?? '').trim();
+  if (SUBJECT_ID !== 'maths' || repaired.length !== 259) return repaired;
+  const context = repaired.replace(/\s+\S*$/, '').trimEnd();
+  const prompt = [card.stem, card.questionText]
+    .filter(value => typeof value === 'string' && value.trim())
+    .join(' ')
+    .trim();
+  return `${context}… Full card prompt: ${prompt}`;
+}
+
+const q = (s) => JSON.stringify(String(s));
+
+/**
+ * Whether a card's rows add up to the tariff the paper prints.
+ *
+ * Mirrors tariffReconciles in types/markBank.ts, including its handling of the
+ * double solidus: mutually exclusive routes are counted ONCE and each must reach
+ * the tariff alone, because a student takes one route or the other. Checked here
+ * so a bad card is DROPPED with a reason rather than failing the whole suite.
+ */
+function tariffFault(c) {
+  const t = c.tariffModel ?? { kind: 'fixed' };
+  if (c.rows.some(row => row.permittedMarks && (
+    t.kind !== 'fixed' || row.kind !== 'criterion' || !Number.isFinite(row.marks)
+    || !Array.isArray(row.permittedMarks) || row.permittedMarks.length < 2
+    || row.permittedMarks[0] !== 0 || row.permittedMarks.at(-1) !== row.marks
+    || row.permittedMarks.some((mark, index, steps) => !Number.isFinite(mark)
+      || mark < 0 || (index > 0 && mark <= steps[index - 1]))
+  ))) return 'invalid published criterion mark steps';
+  // A criterion row's parts (types/markBank.ts rowPartsReconcile) add up to it, each on printed steps.
+  if (c.rows.some(row => row.parts && (
+    !row.permittedMarks || row.kind !== 'criterion' || !Array.isArray(row.parts) || row.parts.length < 2
+    || new Set(row.parts.map(part => part.id)).size !== row.parts.length
+    || row.parts.reduce((sum, part) => sum + part.marks, 0) !== row.marks
+    || row.parts.some(part => !part.id || !String(part.verbatim ?? '').trim() || !Number.isInteger(part.marks) || part.marks <= 0
+      || !Array.isArray(part.permittedMarks) || part.permittedMarks.length < 2 || part.permittedMarks[0] !== 0
+      || part.permittedMarks.at(-1) !== part.marks
+      || part.permittedMarks.some((mark, index, steps) => !Number.isInteger(mark) || mark < 0 || (index > 0 && mark <= steps[index - 1])))
+  ))) return 'invalid criterion row parts';
+  if (t.kind === 'orderedSplit' || t.kind === 'questionTotal') {
+    return c.rows.every(r => r.marks === null || r.marks === undefined)
+      ? null : `a ${t.kind} tariff cannot give rows their own marks`;
+  }
+  if (t.kind === 'bestNofParts') {
+    return t.answer * t.perPart === c.totalMarks
+      ? null : `best-of tariff ${t.answer}x${t.perPart} does not make ${c.totalMarks}`;
+  }
+  // Mirrors groupMarks() in types/markBank.ts: a descending tariff pays its
+  // steps, not claimMax times one value.
+  const worth = (r) => (r.kind === 'anyN' && r.group
+    ? (r.group.optionMarks && r.group.perOptionSteps
+        ? ladderOf(r.group)
+        : r.group.optionMarks
+        ? bestOf(answerMarks(r.group), r.group.claimMax)
+        : r.group.perOptionSteps
+        ? r.group.perOptionSteps.slice(0, r.group.claimMax).reduce((n, m) => n + m, 0)
+        : r.group.claimMax * r.group.perOption)
+    : (r.marks ?? 0));
+  // A route the scheme pays ALONE for less (`alone` on all its rows, types/
+  // markBank.ts) falls short of the tariff; every other route reaches it.
+  if (c.rows.some(r => r.alone && !r.route)) return 'an alone row must sit on a route';
+  const byRoute = new Map();
+  const aloneRoute = new Map();
+  let common = 0;
+  for (const r of c.rows) {
+    if (!r.route) common += worth(r);
+    else {
+      byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + worth(r));
+      aloneRoute.set(r.route, (aloneRoute.get(r.route) ?? true) && !!r.alone);
+    }
+  }
+  common += c.questionBonus?.marks ?? 0;
+  if (!byRoute.size) {
+    return common === c.totalMarks ? null : `rows sum to ${common}, tariff is ${c.totalMarks}`;
+  }
+  const routes = [...byRoute.entries()];
+  if (!routes.some(([k]) => !aloneRoute.get(k))) return 'every route is an alone route; one must reach the tariff';
+  const short = routes.filter(([k, n]) => (aloneRoute.get(k)
+    ? !(n > 0 && common + n < c.totalMarks) : common + n !== c.totalMarks));
+  return short.length
+    ? `route ${short.map(([k, n]) => `"${k}" sums to ${common + n}`).join(', ')}, tariff is ${c.totalMarks}`
+    : null;
+}
+
+/**
+ * A tariff sentence standing where a marking point should be: "Any two rights,
+ * 5 marks each (3 for the right + 2 for explaining it)".
+ *
+ * An anyN row's own verbatim is the one string the build does NOT check against
+ * the scheme — the options carry the marking points, so the field looks free.
+ * Twelve Business cards used it to restate the tariff, which the session never
+ * renders, so the split it described reached nobody.
+ */
+const TARIFF_PROSE = /\bmarks? each\b|^\s*any (one|two|three|four|five|\d+)\b[^.]*\bmarks?\b/i;
+
+/**
+ * A row that states neither an answer nor an honest criterion.
+ *
+ * A row DECLARED `criterion` is the scheme pricing a judgement -- "Safety
+ * precaution described", "Any correct vitamin deficiency to match named
+ * vitamin" -- and the type reserves the kind for exactly that. Dropping the
+ * card for carrying one either loses the printed task or ships it with part of
+ * its published tariff missing, which the paper-by-paper audits forbid. Such a
+ * row is still refused when it is empty, or when it is a tariff written where
+ * the criterion should be AND the content-free test refuses it too. The second
+ * condition keeps the exemption from ever being stricter than the rule before
+ * it: Construction Studies ships criterion rows that print the scheme's own
+ * "Any 7 of the above details (5 marks each)", which the content-free test
+ * passes, and refusing every TARIFF_PROSE criterion dropped 125 of its cards on
+ * a rebuild. Biology holds its own criterion rows to TARIFF_PROSE alone, in
+ * test/markBankBiologyReview.test.ts. Every other kind is held to the
+ * content-free test as before.
+ */
+function contentFreeRow(r) {
+  if (r.kind === 'anyN') return false;
+  if (r.kind === 'criterion') {
+    const text = String(r.verbatim ?? '');
+    return !text.trim() || (TARIFF_PROSE.test(text) && isContentFreeRow(text));
+  }
+  return isContentFreeRow(r.verbatim);
+}
+
+/** Faults in a bounded pick-list that arithmetic can settle without an agent. */
+function groupFault(c) {
+  for (const r of c.rows) {
+    if (r.kind !== 'anyN' || !r.group) continue;
+    const g = r.group;
+    if (g.options.length < g.claimMax) {
+      return `row "${r.id}" lets a student claim ${g.claimMax} but lists ${g.options.length} option(s)`;
+    }
+    // The session prints "Any 2 of these — 7 marks each" from these two numbers,
+    // so a group worth more than the question tells the student a false total.
+    const groupWorth = g.optionMarks && g.perOptionSteps
+      ? ladderOf(g)
+      : g.optionMarks
+      ? bestOf(answerMarks(g), g.claimMax)
+      : g.perOptionSteps
+      ? g.perOptionSteps.slice(0, g.claimMax).reduce((n, m) => n + m, 0)
+      : g.claimMax * g.perOption;
+    // Options priced one by one (the scheme's partial credit): one positive
+    // whole price per option. Without steps perOption is the highest price;
+    // beside a descending tariff each price caps its option's step
+    // (ladderGroupMarks: "N.B. X = 1 mark only" under "3 + 1"), so none may
+    // exceed the top step, and perOption stays the first step.
+    if (g.optionMarks && (g.optionMarks.length !== g.options.length
+      || g.optionMarks.some(m => !Number.isInteger(m) || m <= 0)
+      || (g.perOptionSteps
+        ? g.optionMarks.some(m => m > Math.max(...g.perOptionSteps))
+        : g.perOption !== Math.max(...g.optionMarks)))) {
+      return `row "${r.id}" prices its options one by one inconsistently`;
+    }
+    // A partial points at the answer it credits (optionOf): an answer of its
+    // own, never itself, and never one priced below it.
+    if (g.optionOf && (!g.optionMarks || g.optionOf.length !== g.options.length
+      || g.optionOf.some((of, i) => of !== null && (!Number.isInteger(of) || of < 0 || of >= g.options.length
+        || of === i || g.optionOf[of] !== null || g.optionMarks[of] < g.optionMarks[i])))) {
+      return `row "${r.id}" ties a partial to its answer inconsistently`;
+    }
+    if (groupWorth > c.totalMarks) {
+      return `row "${r.id}" offers ${groupWorth} marks on a ${c.totalMarks}-mark question`;
+    }
+    // A descending tariff must state exactly as many steps as it lets a student
+    // claim, or the renderer pays the tail of a shorter list to nobody.
+    if (g.perOptionSteps && g.perOptionSteps.length !== g.claimMax) {
+      return `row "${r.id}" lists ${g.perOptionSteps.length} mark step(s) for ${g.claimMax} claimable option(s)`;
+    }
+    // Nothing enforced this before: rowCapFor() caps how many ROWS a card has,
+    // and a menu's options live inside ONE row, so a group could list any number
+    // at all. Ten Business groups had drifted past the cap unnoticed.
+    //
+    // Refused outright only past the LONG-question ceiling, which is a wall of
+    // text on any paper. Between the short cap and that ceiling it is reported
+    // instead of dropped: the count was only ever a proxy for reading load, and
+    // ten one-word options ("pure", "solid", "soluble") are lighter than eight
+    // paragraphs. Losing a working card to a proxy is the worse outcome.
+    if (g.options.length > MAX_LONG_OPTION_ROWS) {
+      return `row "${r.id}" shows ${g.options.length} options, past the ${MAX_LONG_OPTION_ROWS} any question may show`;
+    }
+    if (TARIFF_PROSE.test(r.verbatim ?? '')) {
+      return `row "${r.id}" states its tariff where its marking point should be: "${r.verbatim}"`;
+    }
+  }
+  return null;
+}
+
+function sourceMaterialFault(source, field = 'sourceMaterial') {
+  if (!source || typeof source !== 'object') return `${field} is not an object`;
+  if (!['source-text', 'source-illustration', 'source-question'].includes(source.kind)) {
+    return `${field}.kind must be source-text, source-illustration or source-question`;
+  }
+  for (const key of ['label', 'title', 'attribution', 'presentationNote']) {
+    if (!String(source[key] ?? '').trim()) return `${field}.${key} is empty`;
+  }
+  if (!Array.isArray(source.pages) || !source.pages.length
+      || source.pages.some(page => !Number.isInteger(page) || page < 1)) {
+    return `${field}.pages must contain one-based positive page numbers`;
+  }
+  if (new Set(source.pages).size !== source.pages.length) {
+    return `${field}.pages repeats a page`;
+  }
+  return null;
+}
+
+function answerVariantsFault(card) {
+  if (card.answerVariants === undefined) return null;
+  if (!Array.isArray(card.answerVariants) || card.answerVariants.length < 2) {
+    return 'answerVariants must contain at least two official routes';
+  }
+  const ids = new Set();
+  for (const variant of card.answerVariants) {
+    if (!String(variant?.id ?? '').trim() || !String(variant?.label ?? '').trim()) {
+      return 'every answer variant needs a non-empty id and label';
+    }
+    if (ids.has(variant.id)) return `answer variant id "${variant.id}" appears twice`;
+    ids.add(variant.id);
+    if (!Array.isArray(variant.rows) || !variant.rows.length) {
+      return `answer variant "${variant.id}" has no marking rows`;
+    }
+    const shadow = { ...card, rows: variant.rows };
+    const tariff = tariffFault(shadow);
+    if (tariff) return `answer variant "${variant.id}": ${tariff}`;
+    const group = groupFault(shadow);
+    if (group) return `answer variant "${variant.id}": ${group}`;
+    const rowIds = new Set();
+    for (const row of variant.rows) {
+      if (rowIds.has(row.id)) return `answer variant "${variant.id}" repeats row id "${row.id}"`;
+      rowIds.add(row.id);
+      if (!ROW_KINDS.has(row.kind)) {
+        return `answer variant "${variant.id}" row "${row.id}" has invalid kind "${row.kind}"`;
+      }
+      if (contentFreeRow(row)) {
+        return `answer variant "${variant.id}" contains content-free row "${row.verbatim}"`;
+      }
+    }
+  }
+  return null;
+}
+
+/**
+ * On a MATCHING card, a label marked "asked" must be one of the answers.
+ *
+ * LabelKeyPanel deliberately shows only the labels the question leaves alone —
+ * repeating one the student is self-marking would give the row away. On a card
+ * whose rows ARE the letters ("1. Merger — D"), a letter marked asked but
+ * claimed by no row is the distractor the paper warns about, and flagging it
+ * asked hides the only decoding of it the student would ever see.
+ *
+ * Narrow on purpose. Where the question names the label itself — "Identify the
+ * structure located at B", answer "Silage (pit)" — the label is genuinely asked
+ * and no row repeats it, which is why this only speaks up once some OTHER label
+ * has been found in the rows.
+ */
+function relabelDistractors(c) {
+  const keys = Array.isArray(c.labelKey) ? c.labelKey : [];
+  if (!keys.length) return null;
+  const body = c.rows.map(r => `${r.verbatim ?? ''} ${(r.group?.options ?? []).join(' ')}`).join(' ');
+  const claimed = (k) => new RegExp(`(^|[^A-Za-z0-9])${k.letter.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([^A-Za-z0-9]|$)`).test(body);
+  if (!keys.some(claimed)) return null;   // not a matching card; the letters live in the question
+  const orphan = keys.filter(k => k.askedInThisQuestion && !claimed(k));
+  if (!orphan.length) return null;
+  // Corrected rather than dropped. No row self-marks this letter, so showing it
+  // in the panel gives nothing away — and losing the whole card over one flag
+  // costs the student far more than the flag ever did.
+  for (const k of orphan) k.askedInThisQuestion = false;
+  return `${c.id}: ${orphan.map(k => `"${k.letter}"`).join(', ')} claimed by no row — shown in the label key instead of hidden`;
+}
+
+/**
+ * One card per question.
+ *
+ * A question first carded without its diagram, then re-carded once a verified
+ * figure existed, would otherwise ship twice — and the figureless version is the
+ * broken one: "Explain how you know the ventricles are contracting" cannot be
+ * answered without seeing which diagram is meant. Where two cards claim the same
+ * question, the one carrying a figure wins.
+ */
+// A repeated printed reference in two distinct Mathematics booklets is two
+// tasks. Preserve ordinary duplicate resolution within each exact booklet.
+const questionIdentity = c => SUBJECT_ID === 'maths'
+  ? JSON.stringify([reviewedMathematicsSource(c.id)?.paperFileid ?? null, c.questionRef, c.mathematicsScale?.practiceInstruction ?? null])
+  : c.questionRef;
+const byQuestion = new Map();
+for (const c of cards) {
+  const key = questionIdentity(c);
+  const prev = byQuestion.get(key);
+  if (!prev) { byQuestion.set(key, c); continue; }
+  const prevHasFigure = Boolean(prev.figureKey);
+  const thisHasFigure = Boolean(c.figureKey);
+  if (thisHasFigure && !prevHasFigure) byQuestion.set(key, c);
+}
+
+const out = [];
+/** History essay rubric cards: each level's distinct marking-by-paragraph apparatus, as emitted. */
+const historyEssayMarking = { higher: [], ordinary: [], common: [] };
+const dropped = [];
+const repaired = [];
+const overCap = [];
+const seenId = new Set();
+const seenHash = new Map();
+let unresolvedPapers = 0;
+
+for (const c of cards) {
+  /* An unseen translation marked unit by unit (Latin): a RUBRIC card of its
+   * own system, with its own gate. Only a card authored with
+   * rubric.system 'translation' takes this path, so every other deck,
+   * History's essays included, is emitted exactly as before. */
+  if (c.kind === 'rubric' && c.rubric?.system === 'translation') {
+    if (seenId.has(c.id)) { dropped.push(`${c.id}: duplicate id`); continue; }
+    const badQ = badQuestion(c.questionText, c);
+    if (badQ) { dropped.push(`${c.id}: ${badQ} — "${c.questionText}"`); continue; }
+    const scheme = schemeFor(SUBJECT_ID, c);
+    if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
+    const fault = translationFault(c, scheme);
+    if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
+    const source = c.sourceMaterial;
+    const badSource = source ? sourceMaterialFault(source, 'sourceMaterial') : null;
+    if (badSource) { dropped.push(`${c.id}: ${badSource}`); continue; }
+    repairGlyphs(c);
+    const mangled = mangledText(c);
+    if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+    const fileid = resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
+    if (!fileid) unresolvedPapers++;
+    const schemeFile = paperEntry(SUBJECT_ID, c.year, c.level)?.papers?.find(p => p.scheme?.f)?.scheme?.f;
+    if (!schemeFile) { dropped.push(`${c.id}: no scheme document in the Paper Trail index`); continue; }
+    const rubric = { ...c.rubric, schemeFileid: String(schemeFile).replace(/\.pdf$/i, '') };
+    const pages = rubric.schemePages.length > 1 ? `pp.${rubric.schemePages[0]}-${rubric.schemePages.at(-1)}` : `p.${rubric.schemePages[0]}`;
+    seenId.add(c.id);
+    out.push({ id: c.id, level: c.level, code: `  {
+    ...base, kind: "rubric",
+    year: ${c.year}, level: ${q(c.level)},
+    paperFileid: ${fileid ? q(fileid) : 'null'},
+    schemeCitation: ${q(`Units and marks quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level, ${pages} — © State Examinations Commission.`)},
+    id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
+    section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
+    questionText: ${q(c.questionText)},
+    totalMarks: ${c.totalMarks},
+    rubric: ${JSON.stringify(rubric, null, 6).replace(/\n/g, '\n    ')},${source ? `\n    sourceMaterial: ${JSON.stringify(source, null, 6).replace(/\n/g, '\n    ')},` : ''}
+  } as SecCard,` });
+    continue;
+  }
+  /* A History essay is a RUBRIC card: no rows, a paragraph-marking apparatus
+   * instead. It gets its own gates and its own literal, and nothing else in
+   * this loop applies to it. No other subject authors kind 'rubric' into its
+   * JSON (Business's rubric cards arrive by rubric-authored.json), so every
+   * other deck takes exactly the path it took before. */
+  if (c.kind === 'rubric' && GRID_SUBJECTS.has(SUBJECT_ID)) {
+    if (seenId.has(c.id)) { dropped.push(`${c.id}: duplicate id`); continue; }
+    const badQ = badQuestion(c.questionText, c);
+    if (badQ) { dropped.push(`${c.id}: ${badQ} — "${c.questionText}"`); continue; }
+    const scheme = schemeFor(SUBJECT_ID, c);
+    if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
+    const fault = spanishGridFault(c, scheme);
+    if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
+    const source = c.sourceMaterial;
+    if (source?.sourceLabel) {
+      const sourceFileid = deferredCard(SUBJECT_ID, c)
+        ? deferredDoc(SUBJECT_ID, c, source.sourceLabel)
+        : resolveCompanionFileid(SUBJECT_ID, c.year, c.level, source.sourceLabel);
+      delete source.sourceLabel;
+      if (!sourceFileid) { dropped.push(`${c.id}: source document "${source.label}" is not in the Paper Trail index`); continue; }
+      source.sourceFileid = sourceFileid;
+    }
+    const badSource = source ? sourceMaterialFault(source, 'sourceMaterial') : null;
+    if (badSource) { dropped.push(`${c.id}: ${badSource}`); continue; }
+    repairGlyphs(c);
+    const mangled = mangledText(c);
+    if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+    const fileid = deferredCard(SUBJECT_ID, c)
+      ? deferredDoc(SUBJECT_ID, c, 'Exam Paper')
+      : SUBJECT_ID === 'music'
+      ? resolveCompanionFileid('music', c.year, c.level, MUSIC_BOOKLET[c.section])
+      : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
+    if (!fileid) unresolvedPapers++;
+    const pages = c.schemePages.length > 1 ? `pp.${c.schemePages[0]}-${c.schemePages.at(-1)}` : `p.${c.schemePages[0]}`;
+    /* A crop of the scheme's own print, where its text layer cannot be lifted:
+     * German 2014 Ordinary Äußerung (b) sets "Ich heiße .." in a font shifted
+     * into control characters, so the guidance line keeps only the words after
+     * it and the line itself is shown as the SEC printed it. A solution crop:
+     * held back until the reveal. Only a card that names a figureKey takes
+     * this path, so every other grid deck is emitted exactly as before. */
+    let gridFigure = null;
+    if (c.figureKey) {
+      const rec = figureRecord(c.figureKey);
+      if (rec.error) { dropped.push(`${c.id}: ${rec.error}`); continue; }
+      const prev = seenHash.get(rec.srcHash);
+      if (prev && prev !== c.figureKey) { dropped.push(`${c.id}: crop already bound as "${prev}"`); continue; }
+      seenHash.set(rec.srcHash, c.figureKey);
+      gridFigure = { ...rec, lettersVisible: [] };
+    }
+    seenId.add(c.id);
+    out.push({ id: c.id, level: c.level, code: `  {
+    ...base, kind: "rubric",
+    year: ${c.year}, level: ${q(c.level)},
+    paperFileid: ${fileid ? q(fileid) : 'null'},
+    schemeCitation: ${q(`Marking grid quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level${deferredCard(SUBJECT_ID, c) ? ', deferred examination' : ''}, ${pages} — © State Examinations Commission.`)},
+    id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
+    section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
+    questionText: ${q(c.questionText)},
+    totalMarks: ${c.totalMarks},
+    rubric: ${JSON.stringify(c.rubric, null, 6).replace(/\[\s*(\d+(?:,\s*\d+)*)\s*\]/g, (_m, list) => `[${list.split(/,\s*/).join(',')}]`).replace(/\n/g, '\n    ')},${source ? `\n    sourceMaterial: ${JSON.stringify(source, null, 6).replace(/\n/g, '\n    ')},` : ''}${gridFigure ? `\n    figure: ${JSON.stringify(gridFigure)},` : ''}
+  } as SecCard,` });
+    continue;
+  }
+  if (c.kind === 'rubric') {
+    if (seenId.has(c.id)) { dropped.push(`${c.id}: duplicate id`); continue; }
+    const badQ = badQuestion(c.questionText, c);
+    if (badQ) { dropped.push(`${c.id}: ${badQ} — "${c.questionText}"`); continue; }
+    const scheme = schemeFor(SUBJECT_ID, c);
+    if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
+    const fault = historyEssayFault(c, scheme);
+    if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
+    repairGlyphs(c);
+    const mangled = mangledText(c);
+    if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+    const deferredEntry = historyDeferred(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, c.year, c.level) : null;
+    const fileid = deferredEntry
+      ? String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null
+      : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
+    if (!fileid) unresolvedPapers++;
+    // ONE scheme answers both fields of study, indexed under History itself.
+    const schemeFile = (deferredEntry ?? paperEntry(SUBJECT_ID, c.year, c.level))?.papers?.find(p => p.scheme?.f)?.scheme?.f;
+    if (!schemeFile) { dropped.push(`${c.id}: no scheme document in the Paper Trail index`); continue; }
+    const rubric = { ...c.rubric, schemeFileid: String(schemeFile).replace(/\.pdf$/i, '') };
+    /* A sitting's marking by paragraph is the same for every essay on it
+     * (and for its Q4, the other unit): emitted once per level module as
+     * ESSAY_MARKING and spread into each card, which adds only what is its
+     * own -- the scheme pages and the question's NOTE. Inlined whole it put
+     * 4 KB of identical ladders on every card. */
+    const { schemePages, cm: { elementRule, ...cmShared }, ...rest } = rubric;
+    const marking = historyEssayMarking[c.level];
+    const shared = JSON.stringify({ ...rest, cm: cmShared }, null, 1);
+    if (!marking.includes(shared)) marking.push(shared);
+    const ref = `ESSAY_MARKING[${marking.indexOf(shared)}]`;
+    const rubricCode = elementRule
+      ? `{ ...${ref}, cm: { ...${ref}.cm, elementRule: ${JSON.stringify(elementRule)} }, schemePages: ${JSON.stringify(schemePages)} }`
+      : `{ ...${ref}, schemePages: ${JSON.stringify(schemePages)} }`;
+    seenId.add(c.id);
+    out.push({ id: c.id, level: c.level, code: `  {
+    ...base, kind: "rubric",
+    year: ${c.year}, level: ${q(c.level)},
+    paperFileid: ${fileid ? q(fileid) : 'null'},
+    schemeCitation: ${q(`Marking ${c.rubric.cm.mode === 'core-statement' ? 'by Core Statement' : 'by paragraph'} quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level${deferredEntry ? ', deferred examination' : ''} — © State Examinations Commission.`)},
+    id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
+    section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
+    questionText: ${q(c.questionText)},
+    totalMarks: ${c.totalMarks},
+    rubric: ${rubricCode},
+  } as SecCard,` });
+    continue;
+  }
+  if (c.questionFigureIncludesPrompt !== undefined
+      && (typeof c.questionFigureIncludesPrompt !== 'boolean' || !c.questionFigureKey)) {
+    throw new Error(`${c.id}: questionFigureIncludesPrompt requires a question figure and a boolean value`);
+  }
+  if (byQuestion.get(questionIdentity(c)) !== c) {
+    dropped.push(`${c.id}: superseded for ${c.questionRef} by a card carrying its figure`);
+    continue;
+  }
+  if (seenId.has(c.id)) { dropped.push(`${c.id}: duplicate id`); continue; }
+
+  // A question-side crop already preserves the SEC's answer lines and page
+  // layout exactly. Keep the accessible text prompt, but remove blank-rule
+  // scaffolding and page furniture so students do not see a noisy OCR copy
+  // above the official crop.
+  if (c.questionFigureKey && c.questionFigureIncludesPrompt !== false) {
+    const originalQuestionText = c.questionText;
+    c.questionText = String(c.questionText)
+      .replace(/_{3,}/g, '')
+      .replace(/\bThis question continues(?: on the next page)?\.?/gi, '')
+      .replace(/\bSection B\s+Contexts and Applications\s+150 marks\b/gi, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (c.questionText !== originalQuestionText) {
+      repaired.push(`${c.id}: removed duplicated answer-line/page furniture from its question-crop prompt`);
+    }
+  }
+
+  const contentFree = c.rows.filter(contentFreeRow);
+  if (contentFree.length) {
+    dropped.push(`${c.id}: ${contentFree.length} content-free row(s), e.g. "${contentFree[0].verbatim}"`);
+    continue;
+  }
+
+  const badQ = badQuestion(c.questionText, c);
+  if (badQ) { dropped.push(`${c.id}: ${badQ} — "${c.questionText}"`); continue; }
+
+  const badTariff = tariffFault(c);
+  if (badTariff) { dropped.push(`${c.id}: ${badTariff}`); continue; }
+
+  const badGroup = groupFault(c);
+  if (badGroup) { dropped.push(`${c.id}: ${badGroup}`); continue; }
+
+  const badTaskGroups = taskGroupsFault(c);
+  if (badTaskGroups) { dropped.push(`${c.id}: ${badTaskGroups}`); continue; }
+
+  const badVariants = answerVariantsFault(c);
+  if (badVariants) { dropped.push(`${c.id}: ${badVariants}`); continue; }
+
+  const badAudio = audioMaterialFault(c, SUBJECT_ID);
+  if (badAudio) { dropped.push(`${c.id}: ${badAudio}`); continue; }
+
+  const badVideo = videoMaterialFault(c, SUBJECT_ID);
+  if (badVideo) throw new Error(`${c.id}: ${badVideo}`);
+
+  const sources = [c.sourceMaterial, ...(c.additionalSourceMaterials ?? [])]
+    .filter(Boolean);
+  /* A source printed in a SEPARATE official document names that document by
+   * its Paper Trail label, and the id is resolved here rather than typed by an
+   * author -- the same rule paperFileid has followed since a Biology build
+   * defaulted it to the marking scheme's id. Spanish needs it: its Higher
+   * Section B article is a two-page loose sheet (LC012ALP015EV) and the
+   * questions about it are in the question paper, so a card that let
+   * sourceFileid default would open the student on the questions and never
+   * show them the article. Unresolvable means the card is DROPPED. */
+  const unresolvedSource = sources.map((source) => {
+    if (!source.sourceLabel) return null;
+    const fileid = deferredCard(SUBJECT_ID, c) && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
+      ? deferredDoc(SUBJECT_ID, c, source.sourceLabel)
+      : resolveCompanionFileid(
+        corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year ?? 2025,
+        c.level ?? 'higher', source.sourceLabel,
+        deferredCard(SUBJECT_ID, c) ? 'deferred' : 'main');
+    delete source.sourceLabel;
+    if (!fileid) return `source document "${source.label}" is not in the Paper Trail index`;
+    source.sourceFileid = fileid;
+    return null;
+  }).find(Boolean);
+  if (unresolvedSource) { dropped.push(`${c.id}: ${unresolvedSource}`); continue; }
+  const badSource = sources.map((source, index) => sourceMaterialFault(
+    source,
+    index === 0 ? 'sourceMaterial' : `additionalSourceMaterials[${index - 1}]`,
+  )).find(Boolean);
+  if (badSource) { dropped.push(`${c.id}: ${badSource}`); continue; }
+
+  const relabelled = relabelDistractors(c);
+  if (relabelled) repaired.push(relabelled);
+
+  for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows), ...(c.questionBonus ? [[c.questionBonus]] : [])].flat()) {
+    const cap = optionCapFor(c.section);
+    if (r.group && r.group.options.length > cap) {
+      overCap.push(`${c.id}: row "${r.id}" shows ${r.group.options.length} options in section ${c.section}, over the ${cap} agreed for a short question`);
+    }
+  }
+
+  /* A row id repeated inside one card is not cosmetic: rowId() keys the claims
+   * map, so two rows sharing an id are one claim to the scorer — ticking either
+   * credits both — and React collapses them to a single element. Seen in the
+   * wild, so the build refuses it rather than the deck carrying it. */
+  const rowIds = new Set();
+  const dupeRow = c.rows.map(r => r.id).find(id => rowIds.has(id) || (rowIds.add(id), false));
+  if (dupeRow) { dropped.push(`${c.id}: row id "${dupeRow}" appears twice`); continue; }
+
+  // A question naming lettered parts is unanswerable without the figure.
+  /* The exemption is cardlint.py's INVITES_DRAWING, which this had drifted
+   * from. cardlint calls its own NAMES_LETTERS "mirrored from build-deck.mjs's
+   * namesLetters gate" while carrying the WIDER exemption — a question that
+   * asks the student to draw is not asking what a letter means, it is telling
+   * them where to put their pencil: "Draw a sectional elevation on A-A,
+   * showing the parts fully assembled with the portion of the handle labelled
+   * X in a vertical position." Two copies of one rule drift and the drift is
+   * invisible, which is why schemeText.mjs, contentFree.mjs and paperIndex.mjs
+   * exist; these two are now the same rule. Measured before converging them:
+   * across every authored deck in the repo exactly TWO cards change verdict,
+   * both DCG assembly questions whose printed drawing is bound on the question
+   * side. */
+  const invitesDrawing = /\b(?:draw|sketch|label the diagram)\b/i.test(c.questionText);
+  // CASE-SENSITIVE on the letter. The SEC indexes a diagram with CAPITALS --
+  // "structure A", "the part labelled B" -- and those need a key decoding what
+  // each points at. A lower-case letter is the thing's own name, not an index:
+  // "three circles, labelled p, q, and r" and "the side labelled l" label
+  // themselves on the printed diagram and have nothing to decode. The /i flag
+  // conflated the two and refused four Maths cards whose crops show the labels.
+  // In Mathematics, capital letters often ARE the names of plotted points or
+  // complex numbers.  They do not encode hidden structures that need a label
+  // key: X means point X, and A means the plotted complex number A.  Their
+  // official question crop is sufficient.  Treating the broad phrase
+  // "labelled X" as an anatomy-style label dropped two complete Maths cards.
+  const selfNamingMathsPoints = SUBJECT_ID === 'maths'
+    && /\b(?:points?|complex numbers?),?\s+(?:which are\s+)?labelled\s+[A-Z]\b/i.test(c.questionText);
+  // Engineering labels a picture's parts with their own NAMES -- "roll cage",
+  // "seat", "wheel rim" round the 2022 Ordinary dune buggy -- and asks for "a
+  // suitable material for each of the labelled parts". The printed label is
+  // the decoding; there is no letter to key. Only the bare "labelled parts"
+  // phrase, never a capital letter, and only with the picture on the question
+  // side. Engineering only, like the Maths case above: no other deck's
+  // verdict can move.
+  const wordLabelledEngineering = SUBJECT_ID === 'engineering' && Boolean(c.questionFigureKey)
+    && /\blabelled\s+parts\b/.test(c.questionText)
+    && !/\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )/.test(c.questionText);
+  const namesLetters = !invitesDrawing && !selfNamingMathsPoints && !wordLabelledEngineering
+    && /\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )|\blabelled\s+(parts|structures)\b/.test(c.questionText);
+  // Not merely "has a figure": a question about labelled parts needs those
+  // labels DECODED, so it must carry a label key as well as the picture.
+  /* The picture may sit on the QUESTION side. "Identify the crystal structures
+   * A, B and C" is unanswerable unless the student can see A, B and C BEFORE
+   * the reveal, which is what questionFigureKey is for and what the answer
+   * slot's one-crop-one-card rule forbids; demanding figureKey here asked for
+   * the stimulus to be hidden until after the answer. Both mirrors of this
+   * rule already allow it — cardlint.py counts questionFigureKey in its
+   * has_fig, and markBankDeck.test.ts's own namesLetters test exempts a card
+   * with a questionFigure — so this was the odd one out, in the same way the
+   * INVITES_DRAWING exemption above had drifted. Measured across every
+   * authored deck in the repo: exactly ONE card changes verdict. */
+  const hasReviewedMathematicsSource = SUBJECT_ID === 'maths' && c.mathematicsScale
+    && c.sourceMaterial?.kind === 'source-question' && c.sourceMaterial.pages?.length;
+  if (namesLetters && !hasReviewedMathematicsSource && !((c.figureKey || c.questionFigureKey)
+      && Array.isArray(c.labelKey) && c.labelKey.length)) {
+    dropped.push(`${c.id}: names lettered parts but carries no labelled figure`);
+    continue;
+  }
+
+  const kindFault = badRowKind(c);
+  if (kindFault) { dropped.push(`${c.id}: ${kindFault}`); continue; }
+
+  /* A card whose paper has no published scheme claims nothing from one, so
+   * it has nothing to trace; noSchemeFault holds it to its one fixed row and
+   * refuses it outright where a scheme exists. Only a card authored with
+   * `noScheme` takes this path. */
+  if (c.noScheme) {
+    const fault = noSchemeFault(c);
+    if (fault) { dropped.push(`${c.id}: ${fault}`); continue; }
+  }
+  // Every marking point must actually appear in its own scheme.
+  const scheme = c.noScheme ? null : schemeFor(SUBJECT_ID, c);
+  if (!c.noScheme && !scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
+  const untraceable = [];
+  for (const r of c.noScheme ? [] : [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows), ...(c.questionBonus ? [[c.questionBonus]] : [])].flat()) {
+    if (r.unprinted) {
+      /* A printed ask whose scheme prints NO answer row (Biology 2010 Ordinary
+       * Q11(c)(vii)): every printed ask gets a card, and this row says the
+       * scheme prints no answer -- a direction, never an answer, so it claims
+       * nothing from the scheme. It must read exactly UNPRINTED_ANSWER, be a
+       * criterion, and be the card's only row (types/markBank.ts) -- or, where
+       * the scheme prices more answers than it prints (German 2011 Higher TEXT
+       * II Q3(a), "(6 marks: 3 x 2 marks)" over two answers), the card's LAST
+       * row, every row above it one the scheme prints. */
+      const last = c.rows.length > 1 && c.rows[c.rows.length - 1] === r
+        && c.rows.slice(0, -1).every(x => !x.unprinted && !x.ask);
+      if (r.verbatim !== UNPRINTED_ANSWER || r.kind !== 'criterion' || (c.rows.length !== 1 && !last)
+        || c.answerVariants?.length || !c.rows.includes(r)) {
+        untraceable.push(`${r.verbatim} (an unprinted row must be the card's one criterion row, or its last after the rows the scheme prints, reading "${UNPRINTED_ANSWER}")`);
+      }
+      continue;
+    }
+    if (r.ask) {
+      /* A row that restates the part's own ask, where the scheme answers with
+       * a drawing and prints no words to claim (the labelled schemes of
+       * 2010-2023 do not reprint the question). It claims nothing from the
+       * scheme: it must be the card's own question text, and the answer must
+       * be the scheme's print, held back as a solution figure. */
+      const rec = c.figureKey ? figureRecord(c.figureKey) : null;
+      if (!normalise(c.questionText ?? '').includes(normalise(r.verbatim))) {
+        untraceable.push(`${r.verbatim} (an ask row that is not the card's question text)`);
+      } else if (!rec || rec.error || !rec.solution) {
+        untraceable.push(`${r.verbatim} (an ask row with no scheme solution figure)`);
+      }
+      continue;
+    }
+    const claims = r.kind === 'anyN' && r.group ? r.group.options : [String(r.verbatim).split(/\s[—-]\s/).pop()];
+    for (const claim of claims) {
+      // A menu option that pairs a label with its value ("thoracic — 12") was
+      // read from a scheme TABLE, names in one row and numbers in the next
+      // (2017 HL Biology Q15(b)(i)), so the two are never adjacent in the text
+      // layer. It traces when each half does; a whole option still traces as
+      // it always did.
+      const halves = r.kind === 'anyN' ? String(claim).split(/\s—\s/) : [];
+      if (!claimMatches(scheme, claim)
+        && !(halves.length === 2 && halves.every(half => half.trim() && claimMatches(scheme, half)))) {
+        untraceable.push(claim);
+      }
+    }
+  }
+  if (untraceable.length) {
+    dropped.push(`${c.id}: ${untraceable.length} marking point(s) not found in the ${c.year} ${c.level} scheme, e.g. "${String(untraceable[0]).slice(0, 60)}"`);
+    continue;
+  }
+
+  /* Repaired after the provenance check, never before: the check reads the
+   * scheme's own text layer, so a card matched against it must still be
+   * spelled the way that layer spells things. What ships is the repaired
+   * text, which is what the scheme actually PRINTS -- the mangling is the
+   * PDF's broken ToUnicode map, not the examiner's writing. */
+  repairGlyphs(c);
+  const mangled = mangledText(c);
+  if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+  const misread = misreadLigatures(c);
+  if (misread) { dropped.push(`${c.id}: ${misread}`); continue; }
+
+  let figure = null;
+  let labelKey = null;
+  if (c.figureKey) {
+    const rec = figureRecord(c.figureKey);
+    if (rec.error) { dropped.push(`${c.id}: ${rec.error}`); continue; }
+    rec.alt = repairText(rec.alt ?? '');
+    const figMangled = brokenGlyphs(rec.alt);
+    if (figMangled) { dropped.push(`${c.id}: figure alt text — ${figMangled}`); continue; }
+    // A lettered figure MUST decode its letters; an unlettered one has nothing
+    // to decode and rides on a plain question card instead.
+    const lettered = Array.isArray(c.labelKey) && c.labelKey.length > 0;
+    const prev = seenHash.get(rec.srcHash);
+    if (prev && prev !== c.figureKey) { dropped.push(`${c.id}: crop already bound as "${prev}"`); continue; }
+    seenHash.set(rec.srcHash, c.figureKey);
+    figure = { ...rec, lettersVisible: lettered ? c.labelKey.map(k => k.letter) : [] };
+    labelKey = lettered ? c.labelKey : null;
+  }
+
+  /* The QUESTION-side crop: the SEC's own print of the ask and its setup,
+   * shown before the reveal. Unlike an answer figure it may legitimately be
+   * shared context across sibling cards, so it skips the one-crop-one-card
+   * rule; and it must never be a solution crop, which would print the answer
+   * in the question area. */
+  let questionFigure = null;
+  if (c.questionFigureKey) {
+    const rec = figureRecord(c.questionFigureKey);
+    if (rec.error) { dropped.push(`${c.id}: question figure — ${rec.error}`); continue; }
+    if (rec.solution) { dropped.push(`${c.id}: question figure "${c.questionFigureKey}" is a solution crop`); continue; }
+    questionFigure = { candId: rec.candId, src: rec.src, srcHash: rec.srcHash,
+      alt: accessibleQuestionFigureAlt(rec.alt, c), lettersVisible: [], attribution: rec.attribution };
+    if (c.questionFigureIncludesPrompt !== undefined) questionFigure.includesPrompt = c.questionFigureIncludesPrompt;
+  }
+
+  seenId.add(c.id);
+  const rows = c.rows.map(r => {
+    const parts = [`id: ${q(r.id)}`, `kind: ${q(r.kind)}`, `verbatim: ${q(r.verbatim)}`,
+      `marks: ${r.marks === null || r.marks === undefined ? 'null' : r.marks}`];
+    if (r.accepts?.length) parts.push(`accepts: ${JSON.stringify(r.accepts)}`);
+    if (r.contextNote) parts.push(`contextNote: ${q(r.contextNote)}`);
+    if (r.permittedMarks) parts.push(`permittedMarks: ${JSON.stringify(r.permittedMarks)}`);
+    if (r.parts) parts.push(`parts: ${JSON.stringify(r.parts)}`);
+    if (r.openList) parts.push('openList: true');
+    if (r.ask) parts.push('ask: true');
+    if (r.unprinted) parts.push('unprinted: true');
+    if (r.exactTermRequired) parts.push('exactTermRequired: true');
+    if (r.route) parts.push(`route: ${q(r.route)}`);
+    if (r.alone) parts.push('alone: true');
+    if (r.dependsOn) parts.push(`dependsOn: ${q(r.dependsOn)}`);
+    if (r.group) parts.push(`group: ${JSON.stringify(r.group)}`);
+    return `    { ${parts.join(', ')} },`;
+  }).join('\n');
+
+  const year = c.year ?? 2025;
+  const level = c.level ?? 'higher';
+  const levelWord = LEVEL_WORD[level] ?? 'Higher';
+  // Mathematics uses A/B as marking-scheme tariff sections, while its two
+  // question documents are identified by Paper 1 / Paper 2 in questionRef.
+  // Passing A/B to Paper Trail honestly resolves nothing, which previously
+  // left every Maths card without its source-paper link despite all ten papers
+  // being indexed. Read only the explicit paper number; never guess from a
+  // question number or topic.
+  const paperSection = SUBJECT_ID === 'maths'
+    ? c.questionRef.match(/\bPaper\s+([12])\b/i)?.[1] ?? c.section
+    : c.section;
+  /* History is examined in two FIELDS OF STUDY, printed as separate papers a
+   * candidate chooses between, and Paper Trail indexes them as two subjects.
+   * corpusSubjectFor reads the field out of the citation; see paperIndex.mjs. */
+  /* Codex's reviewed subjects bind each card to the exact booklet and scheme a
+   * reviewer read (an older Maths sitting prints two booklets with the same
+   * paper numbers; a deferred Physics or Home Economics card names its own
+   * deferred pair). Whether a card is deferred is still read one way, from its
+   * id (deferredCard), and the reviewed source must agree with it. */
+  const reviewedSource = SUBJECT_ID === 'maths' ? reviewedMathematicsSource(c.id)
+    : SUBJECT_ID === 'physics' ? reviewedPhysicsSource(c.id)
+    : SUBJECT_ID === 'home-economics' ? reviewedHomeEconomicsSource(c.id)
+    : SUBJECT_ID === 'lcvp' ? reviewedLcvpSource(c) : undefined;
+  if (reviewedSource && (reviewedSource.sitting === 'deferred') !== deferredCard(SUBJECT_ID, c)) {
+    throw new Error(`${c.id}: its reviewed source sitting (${reviewedSource.sitting}) disagrees with its id`);
+  }
+  const deferredEntry = !reviewedSource && deferredCard(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, year, level) : null;
+  /* A Spanish listening card (section L) is answered from the Listening
+   * Comprehension Test, a separate SEC booklet the Paper Trail index labels
+   * "Aural Paper": its paper is that booklet, never the written paper the
+   * section-less resolver returns for a language. German's listening test is
+   * the same booklet in four parts, filed L1 to L4. Japanese and Russian
+   * listening cards carry their recording and name their Aural Paper through
+   * audioQuestionPaperFileid. No other deck has these. */
+  const listening = (SUBJECT_ID === 'spanish' && c.section === 'L')
+    || (SUBJECT_ID === 'german' && /^L[1-4]$/.test(c.section));
+  /* A DCG or Biology deferred sitting is two booklets, as June's is: its card
+   * opens the one that prints its section, never simply the entry's first. */
+  const fileid = reviewedSource
+    ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
+    : deferredEntry && (SUBJECT_ID === 'spanish' || SUBJECT_ID === 'german')
+    ? deferredDoc(SUBJECT_ID, c, listening ? 'Aural Paper' : 'Exam Paper')
+    : deferredEntry
+    ? (SUBJECT_ID === 'dcg' || SUBJECT_ID === 'biology'
+      ? resolvePaperFileid(SUBJECT_ID, year, level, paperSection, 'deferred')
+      : String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null)
+    : listening
+      ? resolveCompanionFileid(SUBJECT_ID, year, level, 'Aural Paper')
+      : SUBJECT_ID === 'music'
+      ? resolveCompanionFileid('music', year, level, MUSIC_BOOKLET[c.section])
+      : audioQuestionPaperFileid(c, SUBJECT_ID)
+        ?? resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
+  if (!fileid) unresolvedPapers++;
+
+  out.push({ id: c.id, level, code: `  {
+    ...base,${c.qa ? ` qa: ${JSON.stringify(c.qa)},` : ''}${c.curriculumNodeIds ? `\n    ...examCardCurriculum(${q(SUBJECT_ID)}, ${year}, ${JSON.stringify(c.curriculumNodeIds)}),` : ''} kind: ${q(labelKey ? 'diagram' : 'question')},
+    year: ${year}, level: ${q(level)},
+    paperFileid: ${fileid ? q(fileid) : 'null'},
+    schemeCitation: ${q(c.noScheme
+    ? `No marking scheme: the SEC published none for ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry || reviewedSource?.sitting === 'deferred' ? ', deferred examination' : ''}. Question quoted from the SEC examination paper — © State Examinations Commission.`
+    : `Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry || reviewedSource?.sitting === 'deferred' ? ', deferred examination' : ''} — © State Examinations Commission.`)},
+    id: ${q(c.id)}, topicId: ${q(c.topicId)},${c.additionalTopicIds?.length ? ` additionalTopicIds: ${JSON.stringify(c.additionalTopicIds)},` : ''} conceptId: ${q(c.conceptId)},
+    section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
+    questionText: ${q(c.questionText)},${c.questionChoices?.length ? `\n    questionChoices: ${JSON.stringify(c.questionChoices)},` : ''}
+    tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},${c.noScheme ? '\n    noScheme: true,' : ''}
+    rows: [
+${rows}
+    ],${c.mathematicsScale ? `\n    mathematicsScale: ${JSON.stringify(c.mathematicsScale)},` : ''}${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.audioMaterial ? `\n    audioMaterial: ${JSON.stringify(c.audioMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.videoMaterial ? `\n    videoMaterial: ${JSON.stringify(c.videoMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
+  } as SecCard,` });
+}
+
+// A later provenance, glyph or figure rejection must not silently remove a
+// task that the independent physical-paper census requires. Fail before writes.
+if (SUBJECT_ID === 'economics') assertEconomicsReviewCoverage(seenId, economicsReviews);
+
+if (SUBJECT_ID === 'maths') assertReviewedMathematicsCards(out.map(card => card.id), dropped);
+process.stderr.write(`${SUBJECT.title}: built ${out.length} cards, dropped ${dropped.length}\n`);
+/* Every build ends with the paper-anchored ledger, so nobody can ship a deck
+ * without the coverage number in front of them — the class of failure where
+ * "64 cards" was reported for a subject whose papers print 500 asks. Best
+ * effort: a machine without python3 still builds. */
+if (SUBJECT_ID !== 'maths') {
+try {
+  const { execSync } = await import('node:child_process');
+  const led = execSync(
+    `python3 ${resolve(ROOT, 'scripts/markbank/authoring/reconcile.py')} ${SUBJECT_ID}`,
+    { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+  process.stderr.write(`LEDGER ${led.split('\n')[0]}\n`);
+} catch (e) {
+  const first = String(e.stdout ?? '').split('\n')[0];
+  process.stderr.write(first
+    ? `LEDGER ${first}\n`
+    : 'LEDGER unavailable (python3 missing?) — run reconcile.py by hand\n');
+}
+}
+for (const d of dropped) process.stderr.write(`  DROPPED ${d}\n`);
+for (const c of appliedCorrections) process.stderr.write(`  CORRECTED ${c}\n`);
+for (const r of repaired) process.stderr.write(`  REPAIRED ${r}\n`);
+for (const o of overCap) process.stderr.write(`  OVER CAP ${o}\n`);
+if (unresolvedPapers) {
+  process.stderr.write(`  ${unresolvedPapers} card(s) have no paper in the Paper Trail index; paperFileid is null rather than guessed\n`);
+}
+
+/**
+ * One module per subject and level, not one for the whole deck.
+ *
+ * A student sits one subject at one level, so shipping everything in a single
+ * chunk makes them download decks they will never open — and that cost grows with
+ * every authoring wave. Splitting here lets the tool dynamic-import only what is
+ * in front of the student.
+ */
+const OUT_DIR = resolve(ROOT, 'components/MarkBank/cards', SUBJECT_ID);
+mkdirSync(OUT_DIR, { recursive: true });
+
+// Business ABQs have independently published Name/Explain/Link allocations.
+// Existing IDs can move to the rubric renderer only with a source-reviewed
+// correction that pins their original wording and tariff. All other point
+// cards remain intact.
+const businessRubrics = SUBJECT_ID === 'business'
+  ? [...JSON.parse(readFileSync(resolve(OUT_DIR, 'rubric-authored.json'), 'utf8')).cards,
+    ...JSON.parse(execFileSync('node', [resolve(ROOT, 'scripts/markbank/authoring/business_routes.mjs')],
+      { cwd: ROOT, encoding: 'utf8' }))]
+  : [];
+if (businessRubrics.length) {
+  const ids = new Set();
+  for (const card of businessRubrics) {
+    if (ids.has(card.id)) throw new Error(`Duplicate Business rubric card ${card.id}`);
+    ids.add(card.id);
+    const original = rawCards.find(item => item.id === card.id);
+    if (original && (!card.correction?.reason
+      || card.correction.originalQuestionText !== original.questionText
+      || card.correction.originalTotalMarks !== original.totalMarks
+      || card.totalMarks !== original.totalMarks)) {
+      throw new Error(`Business rubric ${card.id} needs a verified correction for its existing ID`);
+    }
+    if (!original && card.correction) throw new Error(`Stale Business correction ${card.id}`);
+    if (resolvePaperFileid('business', card.year, card.level, card.section) !== card.paperFileid) {
+      throw new Error(`Business rubric ${card.id} does not resolve to its Paper Trail document`);
+    }
+    // Reviewed rubric cards bypass repairGlyphs, so refuse any glyph a broken
+    // subset font left in them rather than ship "se[U+01AB]ng" for "setting".
+    const residue = mangledText(card);
+    if (residue) throw new Error(`Business rubric ${card.id} carries ${residue}`);
+  }
+}
+
+// Subject-specific imports for the generated module. A subject with none gets
+// no line for them, so its module stays byte-identical to the one it had
+// before French and Applied Maths added theirs.
+// Religious Education's band-grid cards (re_lane.py) live beside the point
+// deck in rubric-authored.json; the sittings rebuilt into them have left the
+// point-card source, so each printed ask is carded once.
+const reRubricCards = SUBJECT_ID === 'religious-education' && existsSync(resolve(OUT_DIR, 'rubric-authored.json'))
+  ? JSON.parse(readFileSync(resolve(OUT_DIR, 'rubric-authored.json'), 'utf8')).cards : [];
+// Applied Maths, Japanese and Russian lay a reviewed overlay (reviewed.json)
+// over the generated cards of each level module.
+const reviewedOverlaySubject = ['applied-maths', 'russian', 'japanese'].includes(SUBJECT_ID);
+const moduleImports = reviewedOverlaySubject ? "import { withReviewedCards } from './reviewed';"
+  : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\n"
+    : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n"
+      : reRubricCards.length ? "import { rubricCardsForLevel } from './rubric';\n" : '';
+// Cards carrying exam-year curriculum nodes (Agricultural Science's reviewed
+// historical papers) spread examCardCurriculum into each card, so their level
+// module imports it. Every other module's import line is unchanged.
+const moduleImportsFor = level => `${moduleImports}${rawCards.some(c => (c.level ?? 'higher') === level && c.curriculumNodeIds?.length)
+  ? "import { examCardCurriculum } from '../../cardCurriculum';\n" : ''}`;
+const moduleFor = (level, cards) => `/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Mark Bank — authored ${SUBJECT.title} cards, ${LEVEL_WORD[level] ?? 'Higher'} Level.
+ *
+ * GENERATED by scripts/markbank/build-deck.mjs. Do not edit by hand.
+ *
+ * Every question, marking point and mark value is transcribed from the marking
+ * scheme for that card's own year and level in examiner-reports/${SUBJECT_ID}/schemes/,
+ * and the build drops any card whose content cannot be found there. Figure paths,
+ * hashes and SEC paper file ids are resolved from data on disk by the build
+ * script — never typed — because both historical figure corruptions in this repo
+ * entered through a hand-transcribed path.
+ *
+ * ${SUBJECT.specNote}
+ */
+
+import type { ${historyEssayMarking[level]?.length ? 'HistoryEssayRubric, ' : ''}SecCard } from '../../../../types/markBank';
+${moduleImportsFor(level) ? `${moduleImportsFor(level)}\n` : ''}${cards.length ? `
+const base = {
+  source: 'sec' as const,
+  subjectId: ${q(SUBJECT_ID)},
+  specVersion: ${q(SUBJECT.specVersion)},
+  qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-31' },
+};
+` : ''}${historyEssayMarking[level]?.length ? `
+/* The scheme's marking by paragraph, once per sitting and unit (a Section 2
+ * or 3 essay, or the documents question's Q4), spread into each essay card. */
+const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
+${historyEssayMarking[level].map(json => `  ${json.replace(/\n/g, '\n  ')},`).join('\n')}
+];
+` : ''}
+export const CARDS: SecCard[] = ${reviewedOverlaySubject ? 'withReviewedCards(' : ''}[
+${cards.join('\n')}
+${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : reRubricCards.length ? `  ...rubricCardsForLevel(${q(level)}),\n` : ''}]${reviewedOverlaySubject ? `, '${level}')` : ''};
+`;
+
+/* A level gets a module when the subject HAS that level, never as a matter of
+ * course: LCVP is examined at one level and writing it an empty higher.ts and
+ * ordinary.ts would put two dead decks in the picker. An existing file is
+ * always rewritten, so a subject that loses every card at a level still ends
+ * up with an honestly empty module rather than a stale one. */
+const sizes = {};
+const rubricIds = new Set([...businessRubrics, ...reRubricCards].map(card => card.id));
+for (const level of LEVELS) {
+  const levelCards = out.filter(c => c.level === level && !rubricIds.has(c.id)).map(c => c.code);
+  const levelRubrics = businessRubrics.filter(card => card.level === level).length
+    + reRubricCards.filter(card => card.level === level).length;
+  const path = resolve(OUT_DIR, `${level}.ts`);
+  if (!levelCards.length && !levelRubrics && !existsSync(path)) continue;
+  writeFileSync(path, moduleFor(level, levelCards));
+  const reviewedIds = reviewedOverlaySubject
+    ? JSON.parse(readFileSync(resolve(OUT_DIR, 'reviewed.json'), 'utf8')).filter(card => card.level === level).map(card => card.id) : [];
+  const originalIds = levelCards.map(code => code.match(/^    id: "([^"]+)"/m)?.[1]).filter(Boolean);
+  const reviewedAliases = SUBJECT_ID === 'japanese'
+    ? JSON.parse(readFileSync(resolve(OUT_DIR, 'aliases.json'), 'utf8')) : {};
+  const additionsCount = SUBJECT_ID === 'french'
+    ? ['writing.json', 'reading.json', 'cloze.json', 'listening.json'].flatMap(name => JSON.parse(readFileSync(resolve(OUT_DIR, name), 'utf8'))).filter(card => card.level === level).length
+    : 0;
+  sizes[level] = reviewedOverlaySubject ? new Set([...originalIds.filter(id => !Object.hasOwn(reviewedAliases, id)), ...reviewedIds]).size : levelCards.length + additionsCount + levelRubrics;
+  process.stderr.write(`  ${level}: ${sizes[level]} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);
+}
+
+/**
+ * How many cards each deck holds, so the tool can say which decks are ready
+ * WITHOUT importing them. Knowing that Chemistry Ordinary is empty is exactly
+ * the thing a student needs before they tap it, and finding out by downloading
+ * the deck defeats the point of splitting the decks in the first place.
+ *
+ * Merged rather than overwritten: one run builds one subject, and clobbering the
+ * file would erase every other subject's counts.
+ */
+const MANIFEST_OUT = resolve(ROOT, 'components/MarkBank/cards/sizes.json');
+const existing = existsSync(MANIFEST_OUT) ? JSON.parse(readFileSync(MANIFEST_OUT, 'utf8')) : {};
+writeFileSync(MANIFEST_OUT, `${JSON.stringify({ ...existing, [SUBJECT_ID]: sizes }, null, 1)}\n`);
+
+
+// Mathematics reconciles the just-written modules against the full Paper Trail
+// inventory, including Foundation. The legacy ledger counts only two levels
+// and runs before the files are written, so it cannot report this build.
+if (SUBJECT_ID === 'maths') {
+  const { execFileSync } = await import('node:child_process');
+  try {
+    process.stderr.write(execFileSync('python3', [resolve(ROOT, 'scripts/markbank/mathematics/audit.py')], { encoding: 'utf8' }));
+  } catch (error) {
+    process.stderr.write(String(error.stdout ?? error.message));
+  }
+}

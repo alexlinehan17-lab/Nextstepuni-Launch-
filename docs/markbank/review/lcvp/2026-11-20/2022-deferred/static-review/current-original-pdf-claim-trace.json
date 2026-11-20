@@ -1,0 +1,1333 @@
+{
+  "scope": "Automatic literal whitespace trace against cached original native/spatial text. No new visual/source correctness or generator claim.",
+  "results": [
+    {
+      "year": 2022,
+      "candidateSha256": "a66a9e40753549d3c29b2f57a3c1485b1a357f565c3e0e6521a7fa28a30a1280",
+      "schemeSha256": "9b14e6acf76be8d4467c394e15d5e59ecc2a0deaab5c52f4f2d887159f071ba2",
+      "physicalPages": 20,
+      "checked": 57,
+      "differences": [],
+      "claims": [
+        {
+          "id": "lcvp-2022-cl-deferred-a1",
+          "rowId": "responses",
+          "claim": "Why are the students happy to be working together as a team?",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a2",
+          "rowId": "responses",
+          "claim": "Explain the two areas being researched by these students for their My Own Place project?",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a3",
+          "rowId": "responses",
+          "claim": "What is Corporate Social Responsibility (CSR)?",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a4",
+          "rowId": "responses",
+          "claim": "Why does Cáit think that Kilabbey Supermarket is a great place to work?",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a5",
+          "rowId": "responses",
+          "claim": "Give examples of CSR in action in one of the four areas named below.",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a6",
+          "rowId": "responses",
+          "claim": "Do you agree with Cáit that ‘giving back to the community is just a way for a business to advertise? Give two reasons for your answer.",
+          "sourcePages": [
+            5
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a7",
+          "rowId": "responses",
+          "claim": "Have the aims of CSR been met by Kilabbey Supermarket? Give reasons for your answer. Three valid reasons",
+          "sourcePages": [
+            5
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-a8",
+          "rowId": "responses",
+          "claim": "Why has CSR become more important in recent years? Three valid answers",
+          "sourcePages": [
+            6
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b1",
+          "rowId": "responses",
+          "claim": "Explain three of the following terms Three valid answers",
+          "sourcePages": [
+            7
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b2i",
+          "rowId": "responses",
+          "claim": "Why do businesses diversify?",
+          "sourcePages": [
+            7
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b2ii",
+          "rowId": "responses",
+          "claim": "Outline two examples of diversification evident in this case study. Two valid answers",
+          "sourcePages": [
+            7
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b2iii",
+          "rowId": "responses",
+          "claim": "Describe two risks associated with diversification in business Two valid answers",
+          "sourcePages": [
+            7
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b3i",
+          "rowId": "positive",
+          "claim": "Describe one positive and one negative effect for an enterprising moving to selling online. Two valid answers",
+          "sourcePages": [
+            8
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b3i-2",
+          "rowId": "negative",
+          "claim": "Describe one positive and one negative effect for an enterprising moving to selling online. Two valid answers",
+          "sourcePages": [
+            8
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-b3ii",
+          "rowId": "responses",
+          "claim": "Identify and explain three issues which should be considered when preparing a long‐ term plan for the business Three valid answers",
+          "sourcePages": [
+            8
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1a",
+          "rowId": "responses",
+          "claim": "State two steps that you should take to prepare for an interview for the above position.",
+          "sourcePages": [
+            9
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1b",
+          "rowId": "responses",
+          "claim": "List two questions that might be asked at an interview for the position as advertised.",
+          "sourcePages": [
+            9
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1c",
+          "rowId": "criterion-1",
+          "claim": "Own address",
+          "sourcePages": [
+            10
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1c",
+          "rowId": "criterion-2",
+          "claim": "Business address",
+          "sourcePages": [
+            10
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1c",
+          "rowId": "criterion-3",
+          "claim": "Date",
+          "sourcePages": [
+            10,
+            12
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1c",
+          "rowId": "criterion-4",
+          "claim": "Subject line",
+          "sourcePages": [
+            10
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1c",
+          "rowId": "criterion-5",
+          "claim": "Opening",
+          "sourcePages": [
+            10
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1c",
+          "rowId": "criterion-6",
+          "claim": "Introduction/reason",
+          "sourcePages": [
+            10
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1c",
+          "rowId": "criterion-7",
+          "claim": "Closing",
+          "sourcePages": [
+            10
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1c",
+          "rowId": "criterion-8",
+          "claim": "CV/references",
+          "sourcePages": [
+            10
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c1d",
+          "rowId": "responses",
+          "claim": "Why do employers emphasise communication skills when interviewing for new employees? Include three reasons in your answer. Three valid reasons",
+          "sourcePages": [
+            10
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c2b",
+          "rowId": "responses",
+          "claim": "State three benefits this community association brings to your area.",
+          "sourcePages": [
+            11
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c2ci",
+          "rowId": "responses",
+          "claim": "Outline two steps you should take in preparing for the visit.",
+          "sourcePages": [
+            11
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c2cii",
+          "rowId": "responses",
+          "claim": "Identify three personal qualities you need to successfully organise the visit.",
+          "sourcePages": [
+            11
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c2d",
+          "rowId": "responses",
+          "claim": "Describe three ways you could evaluate the success of the visit.",
+          "sourcePages": [
+            12
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3a",
+          "rowId": "responses",
+          "claim": "Draw up an agenda for the class meeting to organise this activity.",
+          "sourcePages": [
+            12
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3b",
+          "rowId": "responses",
+          "claim": "Outline two benefits of teamwork",
+          "sourcePages": [
+            13
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3c",
+          "rowId": "response-1",
+          "claim": "Identify and describe two skills that could be developed during this activity.",
+          "sourcePages": [
+            13
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3c",
+          "rowId": "response-2",
+          "claim": "Identify and describe two skills that could be developed during this activity.",
+          "sourcePages": [
+            13
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3d",
+          "rowId": "headings",
+          "claim": "Aims/Objectives",
+          "sourcePages": [
+            12,
+            13
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3d",
+          "rowId": "headings",
+          "claim": "Research Methods",
+          "sourcePages": [
+            13
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3d",
+          "rowId": "headings",
+          "claim": "Analysis of Research",
+          "sourcePages": [
+            13
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3d",
+          "rowId": "headings",
+          "claim": "Action Steps",
+          "sourcePages": [
+            13
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3d",
+          "rowId": "headings",
+          "claim": "Schedule of Time",
+          "sourcePages": [
+            13
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3d",
+          "rowId": "headings",
+          "claim": "Schedule of Costs",
+          "sourcePages": [
+            13
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c3d",
+          "rowId": "headings",
+          "claim": "Evaluation Methods",
+          "sourcePages": [
+            13
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4b",
+          "rowId": "responses",
+          "claim": "Outline two ways of finding work experience",
+          "sourcePages": [
+            14
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4c",
+          "rowId": "sources",
+          "claim": "State three different sources of support or help available to you during your work experience. Explain in detail how one of the stated sources helped you.",
+          "sourcePages": [
+            14
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4d",
+          "rowId": "challenges",
+          "claim": "(i) Describe three challenges that a student may experience during their work experience/ work shadowing. Describe three difficulties",
+          "sourcePages": [
+            14
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c4d-2",
+          "rowId": "solutions",
+          "claim": "Outline how these challenges might be overcome.",
+          "sourcePages": [
+            15
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c5a",
+          "rowId": "responses",
+          "claim": "Name one state agency that might offer assistance to Francis.",
+          "sourcePages": [
+            15
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c5b",
+          "rowId": "responses",
+          "claim": "Outline three reasons why it is important for a business to plan. Three relevant answers",
+          "sourcePages": [
+            15
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c5c",
+          "rowId": "responses",
+          "claim": "Describe four ways Francis could evaluate the success of his enterprise. Four valid points",
+          "sourcePages": [
+            15
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c5d",
+          "rowId": "responses",
+          "claim": "Describe three enterprising characteristics that Francis should possess which would help in getting his enterprise up and running. Three valid answers",
+          "sourcePages": [
+            16
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6b",
+          "rowId": "responses",
+          "claim": "Identify three personal skills or qualities required for this position. Three relevant skills or qualities",
+          "sourcePages": [
+            16
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6c",
+          "rowId": "sources",
+          "claim": "State four sources of information used to investigate the position.",
+          "sourcePages": [
+            16
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6c-2",
+          "rowId": "relevance",
+          "claim": "Outline how each source was relevant.",
+          "sourcePages": [
+            16
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c6d",
+          "rowId": "responses",
+          "claim": "Does the LCVP prepare students with the skills they need to succeed in the modern world of work? Give three reasons for your answer. Three valid reasons YES or NO",
+          "sourcePages": [
+            17
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c7a",
+          "rowId": "responses",
+          "claim": "What is meant by market research?",
+          "sourcePages": [
+            17
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c7b",
+          "rowId": "responses",
+          "claim": "Why is market research important when undertaking an activity such as this?",
+          "sourcePages": [
+            17
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c7c",
+          "rowId": "responses",
+          "claim": "Identify and explain four forms of promotion you would use for this activity. Four valid points",
+          "sourcePages": [
+            18
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2022-cl-deferred-c7d",
+          "rowId": "responses",
+          "claim": "Describe three ways participation in the organisation and running of this activity would benefit you as a student.",
+          "sourcePages": [
+            18
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "candidateSha256": "67cd973f737ed8e04f4db92edec3ecc7e6048685bd7e4d9eb570a66fd245ace1",
+      "schemeSha256": "b64d9aff0039e06c09c21ca9218308263055547ea003d09fc1623e6afe2b6efa",
+      "physicalPages": 20,
+      "checked": 88,
+      "differences": [],
+      "claims": [
+        {
+          "id": "lcvp-2023-cl-deferred-a1",
+          "rowId": "name",
+          "claim": "Meitheal Ltd",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a2",
+          "rowId": "responses",
+          "claim": "Work shadowing is observing",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a2",
+          "rowId": "responses",
+          "claim": "Ge to do the actual job",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a2",
+          "rowId": "responses",
+          "claim": "Work placement more interesting",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a3",
+          "rowId": "responses",
+          "claim": "From your understanding of the audio visual explain what a social enterprise is.",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a4",
+          "rowId": "responses",
+          "claim": "Wear appropriate safety clothing",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a4",
+          "rowId": "responses",
+          "claim": "Gives a health and safety statement to employees to read",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a4",
+          "rowId": "responses",
+          "claim": "Provides training",
+          "sourcePages": [
+            4,
+            5
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a4",
+          "rowId": "responses",
+          "claim": "Employees/work experience students have a safe pass",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a5",
+          "rowId": "responses",
+          "claim": "Tenants pay rent",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a5",
+          "rowId": "responses",
+          "claim": "Profit that are made are reinvested back into the company",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a5",
+          "rowId": "responses",
+          "claim": "Two major investors provided start-up capital",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a5",
+          "rowId": "responses",
+          "claim": "Receive grants from the social development fund",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a5",
+          "rowId": "responses",
+          "claim": "Low interest social loans",
+          "sourcePages": [
+            4
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a6",
+          "rowId": "responses",
+          "claim": "Provides training/IT package",
+          "sourcePages": [
+            5
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a6",
+          "rowId": "responses",
+          "claim": "Sits in on project team meetings",
+          "sourcePages": [
+            5
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a6",
+          "rowId": "responses",
+          "claim": "Goes out on site visits",
+          "sourcePages": [
+            5
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a6",
+          "rowId": "responses",
+          "claim": "Given regular feedback",
+          "sourcePages": [
+            5
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a6",
+          "rowId": "responses",
+          "claim": "Provides a mentor",
+          "sourcePages": [
+            5
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a7",
+          "rowId": "responses",
+          "claim": "In your opinion why is receiving feedback an important element of a work placement?",
+          "sourcePages": [
+            5
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-a8",
+          "rowId": "responses",
+          "claim": "Other than providing feedback, explain why assigning a work place mentor to a student/new employee is important to work placement students/new employees.",
+          "sourcePages": [
+            5
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b1",
+          "rowId": "responses",
+          "claim": "Describe three advantages to Ballyfert of organising the family festival.",
+          "sourcePages": [
+            6
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2i",
+          "rowId": "responses",
+          "claim": "To improve the area by providing a service to the community/help people in need/support a local cause",
+          "sourcePages": [
+            6
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2i",
+          "rowId": "responses",
+          "claim": "To help their town to prosper and encourage locals to stay or return to the area",
+          "sourcePages": [
+            6
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2i",
+          "rowId": "responses",
+          "claim": "To help attract new businesses to the new workspaces",
+          "sourcePages": [
+            6
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2i",
+          "rowId": "responses",
+          "claim": "Assist with the successful integration of the refugees into the area",
+          "sourcePages": [
+            6
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2i",
+          "rowId": "responses",
+          "claim": "Social aspect/can make friends/improves community spirit",
+          "sourcePages": [
+            6
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2i",
+          "rowId": "responses",
+          "claim": "Gain referees for their CV",
+          "sourcePages": [
+            6
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2i",
+          "rowId": "responses",
+          "claim": "Recognition in their own town",
+          "sourcePages": [
+            6
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2i",
+          "rowId": "responses",
+          "claim": "Opportunity to voice their opinions and share ideas",
+          "sourcePages": [
+            6
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2i",
+          "rowId": "responses",
+          "claim": "Could make them more employable/gives volunteers an opportunity to upskill",
+          "sourcePages": [
+            6
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2ii",
+          "rowId": "ways",
+          "claim": "Suggest three ways that Ballyfert could further integrate the refugees. Give reasons for your answers.",
+          "sourcePages": [
+            6
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b2ii-2",
+          "rowId": "reasons",
+          "claim": "Suggest three ways that Ballyfert could further integrate the refugees. Give reasons for your answers.",
+          "sourcePages": [
+            6
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3i",
+          "rowId": "responses",
+          "claim": "Gives the most up to date knowledge/to support/or not what they want to do or the aims they want to achieve",
+          "sourcePages": [
+            7
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3i",
+          "rowId": "responses",
+          "claim": "Evidence from the research conducted and analysis of results may be required to support grant applications/loans etc.",
+          "sourcePages": [
+            7
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3i",
+          "rowId": "responses",
+          "claim": "Locals and those who are new to the area who completed the survey will feel that their voice/input has been heard",
+          "sourcePages": [
+            7
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3i",
+          "rowId": "responses",
+          "claim": "It could highlight a weakness or an idea that had not been previously considered",
+          "sourcePages": [
+            7
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3i",
+          "rowId": "responses",
+          "claim": "Builds credibility for the committee/information is accurate/up to date/supports aims",
+          "sourcePages": [
+            7
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3i",
+          "rowId": "responses",
+          "claim": "Helps with problem solving/where to look for help/make informed decisions",
+          "sourcePages": [
+            7
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3i",
+          "rowId": "responses",
+          "claim": "Identifies risks/less chance of failure",
+          "sourcePages": [
+            7
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3ii",
+          "rowId": "responses",
+          "claim": "Outline two of the factors that might influence the Community Development Committee as they plan for the future.",
+          "sourcePages": [
+            7
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-b3iii",
+          "rowId": "responses",
+          "claim": "Outline the advantages and disadvantages of remote working for the employer.",
+          "sourcePages": [
+            7
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1b",
+          "rowId": "responses",
+          "claim": "Draft five suitable questions you might ask on this visit",
+          "sourcePages": [
+            9
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1c",
+          "rowId": "responses",
+          "claim": "How can the person conducting the presentation to the students during their visit ensure it is successful?",
+          "sourcePages": [
+            9
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1di",
+          "rowId": "responses",
+          "claim": "To see if it was successful or not",
+          "sourcePages": [
+            10
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1di",
+          "rowId": "responses",
+          "claim": "Were the aims and objectives of the visit met",
+          "sourcePages": [
+            10
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1di",
+          "rowId": "responses",
+          "claim": "Troubleshooting for the next visit/future plans",
+          "sourcePages": [
+            10
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1dii",
+          "rowId": "methods",
+          "claim": "Describe three methods that could be used to evaluate the visit out. Give a reason for choosing each method.",
+          "sourcePages": [
+            10
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c1dii-2",
+          "rowId": "reasons",
+          "claim": "Describe three methods that could be used to evaluate the visit out. Give a reason for choosing each method.",
+          "sourcePages": [
+            10
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2b",
+          "rowId": "sources",
+          "claim": "Identify three sources of information you used to investigate this career. How was each source relevant?",
+          "sourcePages": [
+            11
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2b-2",
+          "rowId": "relevance",
+          "claim": "Identify three sources of information you used to investigate this career. How was each source relevant?",
+          "sourcePages": [
+            11
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c2d",
+          "rowId": "responses",
+          "claim": "Explain three ways a strong work ethic could benefit an employee.",
+          "sourcePages": [
+            12
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3b-2",
+          "rowId": "solutions",
+          "claim": "Identify a need that is currently not being met in your local community and suggest how this need could be met.",
+          "sourcePages": [
+            13
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3c",
+          "rowId": "heading-1",
+          "claim": "Strengths:",
+          "sourcePages": [
+            13
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3c",
+          "rowId": "heading-2",
+          "claim": "Weaknesses/Challenges:",
+          "sourcePages": [
+            13
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3c",
+          "rowId": "heading-3",
+          "claim": "Opportunities:",
+          "sourcePages": [
+            13
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3c",
+          "rowId": "heading-4",
+          "claim": "Threats:",
+          "sourcePages": [
+            14
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3d",
+          "rowId": "response-1",
+          "claim": "What advice would you give to an entrepreneur who is considering setting up a business in your local area? Give four points.",
+          "sourcePages": [
+            14
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3d",
+          "rowId": "response-2",
+          "claim": "What advice would you give to an entrepreneur who is considering setting up a business in your local area? Give four points.",
+          "sourcePages": [
+            14
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3d",
+          "rowId": "response-3",
+          "claim": "What advice would you give to an entrepreneur who is considering setting up a business in your local area? Give four points.",
+          "sourcePages": [
+            14
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c3d",
+          "rowId": "response-4",
+          "claim": "What advice would you give to an entrepreneur who is considering setting up a business in your local area? Give four points.",
+          "sourcePages": [
+            14
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c4a",
+          "rowId": "complete-pool",
+          "claim": "Media/advertisements/brochures/posters/presentations/special events/displays & exhibits/promotional material/visit in from a representative",
+          "sourcePages": [
+            15
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c4c",
+          "rowId": "responses",
+          "claim": "Explain the obligations of volunteers when working for a voluntary organisation.",
+          "sourcePages": [
+            15
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c4d",
+          "rowId": "responses",
+          "claim": "Outline how a voluntary organisation could evaluate its success.",
+          "sourcePages": [
+            16
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5a",
+          "rowId": "responses",
+          "claim": "Explain the term diversification.",
+          "sourcePages": [
+            17
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5b",
+          "rowId": "model-1",
+          "claim": "Provide a good quality product or service",
+          "sourcePages": [
+            17
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5b",
+          "rowId": "model-2",
+          "claim": "Have a good after sales service",
+          "sourcePages": [
+            17
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5b",
+          "rowId": "model-3",
+          "claim": "Variety of services offered/online services/be adaptable/convenient opening hours/deliveries on time",
+          "sourcePages": [
+            17
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5b",
+          "rowId": "model-4",
+          "claim": "Use marketing strategies BOGOF/discounts/ click and collect/free postage/loyalty scheme",
+          "sourcePages": [
+            17
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5b",
+          "rowId": "model-5",
+          "claim": "Market Research/plan ahead/anticipate changes in demand",
+          "sourcePages": [
+            17
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5b",
+          "rowId": "model-6",
+          "claim": "Keep an eye on competition/price the product/service competitively",
+          "sourcePages": [
+            17
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5b",
+          "rowId": "model-7",
+          "claim": "Support the local community/sponsor teams to develop a good relationship with the community",
+          "sourcePages": [
+            17
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5c",
+          "rowId": "responses",
+          "claim": "Discuss the reasons why it is important for a business to diversify.",
+          "sourcePages": [
+            17
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c5d",
+          "rowId": "responses",
+          "claim": "Information and Communications Technology (ICT) plays an important role in business. Outline how changes in ICT have impacted on the operations/running of a business.",
+          "sourcePages": [
+            17
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6a",
+          "rowId": "responses",
+          "claim": "Explain the term entrepreneur.",
+          "sourcePages": [
+            18
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6b",
+          "rowId": "skills",
+          "claim": "Outline two skills and two qualities of an entrepreneur that you are familiar with .",
+          "sourcePages": [
+            18
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6b-2",
+          "rowId": "qualities",
+          "claim": "Outline two skills and two qualities of an entrepreneur that you are familiar with .",
+          "sourcePages": [
+            18
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6c",
+          "rowId": "responses",
+          "claim": "Discuss four benefits to an organisation of employees up-skilling",
+          "sourcePages": [
+            18
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c6d",
+          "rowId": "responses",
+          "claim": "Teamwork is an essential element of the modern workplace. What are the benefits of teamwork to an individual team member?",
+          "sourcePages": [
+            18
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7a",
+          "rowId": "definition",
+          "claim": "A Recruitment Agency is a business that will find employees/staff for an employer.",
+          "sourcePages": [
+            19
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7b",
+          "rowId": "responses",
+          "claim": "Saves an employer time dealing with applications and short listing",
+          "sourcePages": [
+            19
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7b",
+          "rowId": "responses",
+          "claim": "Saves them money by doing their advertising/the job search is streamlined",
+          "sourcePages": [
+            19
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7b",
+          "rowId": "responses",
+          "claim": "Good recruitment agencies attract high caliber applicants",
+          "sourcePages": [
+            19
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7b",
+          "rowId": "responses",
+          "claim": "The agency will head-hunt for the employer/have specialized knowledge of the market/potential candidates",
+          "sourcePages": [
+            19
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7b",
+          "rowId": "responses",
+          "claim": "The agency will often have specialised staff who will recruit more objectively",
+          "sourcePages": [
+            19
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7b",
+          "rowId": "responses",
+          "claim": "Negotiate salaries and terms/conditions between the employer and applicants",
+          "sourcePages": [
+            19
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7c",
+          "rowId": "responses",
+          "claim": "Discuss three important features that employers look for in a potential employee.",
+          "sourcePages": [
+            19
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        },
+        {
+          "id": "lcvp-2023-cl-deferred-c7d",
+          "rowId": "responses",
+          "claim": "You have been called for an online job interview via zoom. Describe in detail, four ways you would prepare for this interview.",
+          "sourcePages": [
+            19
+          ],
+          "wholePdfLiteralWhitespaceTrace": true
+        }
+      ]
+    }
+  ]
+}
