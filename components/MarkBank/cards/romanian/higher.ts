@@ -1866,6 +1866,215 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2018 Higher Level — © State Examinations Commission.",
+    id: "ron-2018-hl-i-1", topicId: "romanian-0-0", conceptId: "explica-scurt-urm-toarele-cuvinte-expresii",
+    section: "I", questionRef: "2018 HL Section I Q1",
+    questionText: "Explicați pe scurt următoarele cuvinte și expresii scrise îngroșat în text, folosind sinonime sau perifraze și ținând cont de contextul în care apar:\na) introvertire\nb) lumea virtuală\nc) preferăm să ne amorțim pentru o perioadă\nd) să pozeze\ne) nevoia de a evada",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "tendința cuiva de a se retrage, de a se închide în sine ; refuzul sau neputința cuiva de a se deschide în fața celorlalți, de a se exprima printr-un comportament expansiv ;", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\"" },
+    { id: "r-2", kind: "point", verbatim: "spațiul din spatele ecranului calculatorului, în acest caz; spațiu creat în sau de imaginația cuiva, desprins de realitate, mai mult sau mai puțin ademănător cu aceasta.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "realitatea sau ceea ce trăim la un moment dat ne poate părea prea greu, prea solicitant, prea mult; putem alege să fugim din fața acestei realități, distrăgându-ne atenția, preocupându-ne de alte lucruri, poate, mai ușoare, mai neimportante, ca să uităm de cele care ne solicită afectiv sau mental.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "să ofere o anumită imagine, o poză despre sine, care să nu reflecte, de fapt, adevărata stare ; să creeze, în acest fel, o imagine falsă, care să ducă la o impresie falsă asupra sinelui.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "necesitatea pe care o simțim de a fugi, de a ne îndepărta de anumite lucruri din viața noastră; dorința de a ne regăsi într-un alt spațiu, mai mulțumitor pentru noi, la un moment dat.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2018 Higher Level — © State Examinations Commission.",
+    id: "ron-2018-hl-i-2", topicId: "romanian-0-1", conceptId: "care-sunt-potrivit-textului-motivele-pentru",
+    section: "I", questionRef: "2018 HL Section I Q2",
+    questionText: "Care sunt, potrivit textului, motivele pentru care o persoană ajunge să petreacă mult timp în spațiul on-line?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Potrivit textului, spațiul on line este o lume pe care utilizatorii o pot modela după așteptările și dorințele lor. Acesta ar putea fi un motiv pentru faptul că o persoană alege să petreacă mai mult timp într-o astfel de lume virtuală decât în situații de interacțiune reală cu ceilalți. Acest spațiu virtual poate fi preferat și ca urmare a nesiguranței pe care cineva poate să o resimtă în preajma celorlalți. În spațiul on line, identitatea reală poate fi schimbată sau pusă între paranteze, iar în acest fel dispar toate criticile cărora cineva le poate fi țintă .", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Identificarea informaţiilor detaliate din text:”." },
+    { id: "r-2", kind: "point", verbatim: "Spațiul online poate fi ales de persoanele care, în viața reală, se simt singure și lipsite de motivație; astfel, lumea virtuală ar reprezenta pentru ele un refugiu, un spațiu al siguranței, unde prietenii virtuali, chiar dacă rămân necunoscuți, pot compensa absența prietenilor din viața reală.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Potrivit textului, motivele petrecerii timpului în spațiul on line decurg mai ales din anumite situații de criză sau aspecte negative din viața reală a cuiva. Spațiul on line ar reprezenta un mod de a corecta realitatea.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 2",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2018 Higher Level — © State Examinations Commission.",
+    id: "ron-2018-hl-i-3", topicId: "romanian-0-1", conceptId: "ofer-lumea-virtual-utilizatorilor-elelor-socializare",
+    section: "I", questionRef: "2018 HL Section I Q3",
+    questionText: "Ce oferă lumea virtuală utilizatorilor rețelelor de socializare?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "În primul rând, lumea virtuală oferă posibilitatea de a poza, de a propune o imagine a ta convenabilă, mulțumitoare, chiar dacă infidelă realității. Această poză propusă interacționează, în fond, cu alte poze, iar această convenție a interacțiunii și a comunicării este acceptaă de toată lumea.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Înţelegerea ideilor de fond exprimate în text :”. The scheme reprints the question as: “Ce oferă lumea virtuală utilizatorilor rețelelor sociale?”." },
+    { id: "r-2", kind: "point", verbatim: "Lumea virtuală oferă un spațiu (chiar dacă iluzoriu, simulacru) al comunicării ; fiecare se poate exprima și poate fi ascultat. Exprimarea și ascultarea sunt elemente care poate îi lipsesc unei persoane în viața reală, prin urmare, spațiul virtual este ales ca să compenseze această lipsă.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Sentimentele și stările negative din existența reală pot fi lăsate la ușa lumii virtuale; aici, se intră tocmai pentru că se poate astfel evita orice aspect negativ din viața reală.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 3",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2018 Higher Level — © State Examinations Commission.",
+    id: "ron-2018-hl-i-4", topicId: "romanian-0-1", conceptId: "potrivit-textului-propriei-opinii-experien-cum",
+    section: "I", questionRef: "2018 HL Section I Q4",
+    questionText: "Potrivit textului și propriei opinii/experiențe, cum poate fi sprijinit cineva care simte nevoia de a se izola în lumea virtuală a rețelelor de socializare?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Putem pleca de la ideea că izolarea în lumea virtuală a rețelelor de socializare vine ca o consecință a lipsei de înțelegere, de acceptare și de siguranță pe care cineva o poate simți printre ceilalți, în viața reală. Prin urmare, cel mai bun sprijin acordat cuiva constă în acceptarea pe care putem să i-o arătăm în situații mărunte, oricând, și în aprecierea cu care să însoțim gesturile, inițiativele, ideile sale.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Înţelegerea profundă a unor idei din text, exprimate mai putin explicit, demonstrând capacitate de gândire analitică şi extrapolarea cunoştinţelor:”." },
+    { id: "r-2", kind: "point", verbatim: "Sprijinul poate veni prin reducea presiunii asupra acestei persoane, prin a nu o supune la o competiție permanentă cu imaginea pe care ne-o dorim noi de la acea persoană.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Sprijinul poate veni, pur și simplu, prin a vedea cu adevărat această persoană de lângă noi, cu tot ce reprezintă ea, bun sau mai puțin bun, slab sau forte, și prin a accepta, cu firească prietenie și căldură, acest tot pe care ea îl reprezintă.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 4",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2018 Higher Level — © State Examinations Commission.",
+    id: "ron-2018-hl-i-5", topicId: "romanian-0-1", conceptId: "potrivit-textului-mod-anonimatul-oferit-ecranul",
+    section: "I", questionRef: "2018 HL Section I Q5",
+    questionText: "Potrivit textului, în ce mod anonimatul oferit de ecranul calculatorului influențează modul cuiva de a-și exprima părerea? Sunteți de acord cu părerea exprimată în text? Explicați răspunsul vostru.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Potrivit textului, anonimatul oferit de spațiul virtual face ca opiniile să fie exprimate cu mai mult aplomb, ce poate merge chiar până la agresivitate. Fiecare opinie devine, în acest spațiu, o opinie importantă și merită să fie receptată cu atenție, ca oricare altă opinie.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Demonstrarea unei bune înţelegeri a textului în ansamblu şi capacitatea de a explica puncte de vedere personale:”." },
+    { id: "r-2", kind: "point", verbatim: "În acest fel, putem să ne trezim – și acest lucru se întâmplă – cu o avalanșă de opinii, nu toate valoroase, argumentate sau măcar originale, care sunt exprimate cu tărie.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Dar spațiul virtual poate să fie și o posibilitate de exprimare și de afirmare pentru persoanele care chiar au ceva de spus, au niște idei/păreri/argumente cu care ne putem îmbogăți mintea sau lărgi perspectiva, iar aceste persoane nu îndrăznesc să se exprime decât din spatele ecranului.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Pentru aceste persoane, timide, introvertite, nesigure pe ele în viața reală, spațiul virtual poate fi locul în care să capete o voce, pur și simplu. Așadar, nu orice act de exprimare în spațiul virtual se încarcă neapărat de agresivitate, dar poate reprezenta, pur și simplu, un act de curaj.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 5",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2018 Higher Level — © State Examinations Commission.",
+    id: "ron-2018-hl-i-6", topicId: "romanian-0-1", conceptId: "conecta-lumea-virtual-aten-distras-noi",
+    section: "I", questionRef: "2018 HL Section I Q6",
+    questionText: "Conectați la lumea virtuală, atenția ne este distrasă de la noi înșine, iar amorțeala degetului mare pe telefon e minoră comparativ cu cea sufletească. – Discutați acest punct de vedere, în lumina textului, în ansamblul său, și exprimându-vă propria părere.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lumea virtuală ne aduce în față atâtea imagini, atâtea situații diverse, grave sau minore, care ne atrag, unele prin importanța lor, altele prin inedit, prin amuzament, sau chiar prin stupiditatea lor. Curiozitatea ne împinge să butonăm ca să le cunoaștem detaliile, să cunoaștem amănunte, credem noi, din viața celorlalți, să experimentăm situații noi pentru noi înșine.", marks: null, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme heads it: “Buna înţelegere a textului şi a implicațiilor fenomenului descris în el:”." },
+    { id: "r-2", kind: "point", verbatim: "Ne îndepărtăm, astfel, de noi înșine, de ipostaza noastră din viața reală, mai ales atunci când chiar există ceva în viața noastră de care vrem să ne îndepărtăm.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Paradoxal, cu cât părem mai deschiși, prin preocuparea noastră de a fi mai conectați și mai adânciți în lumea virtuală, cu atât suntem mai închiși față de noi înșine. Alegem să ne lăsăm la o parte, să ne uităm, și să ne distrăm privind în altă parte.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 6",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2018 Higher Level — © State Examinations Commission.",
+    id: "ron-2018-hl-ii-1", topicId: "romanian-1-0", conceptId: "lume-care-noi-oamenii-creat-dar",
+    section: "II", questionRef: "2018 HL Section II Q1",
+    questionText: "E o lume pe care noi, oamenii, am creat-o, dar care trăiește în afara noastră. – Comentați această afirmație regăsită în text, exprimându-vă propriul punct de vedere. (aproximativ 100 de cuvinte)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "La părțile a II-a și a III-a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:", marks: 30, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme reprints the task as: “E o lume pe care noi, oamenii, am creat-o, dar care trăiește în afara noastră. – Comentați această afirmație, exprimandu-va propriul punct de vedere. (aproximativ 100 de cuvinte)”. The scheme prints, as examples, not a checklist: “Intrăm în spațiul virtual, pe care noi l-am creat, pentru a fi în contact unii cu alții, pentru a împătăși cu ceilalți experiențe, opinii, stări...”; “La început, poate că spațiul lumii virtuale era sub controlul fiecărui utilizator în parte. Acum, mașinăria a devenit mai puternică, mai capabilă decât cei care o folosesc. Astfel, într-o rețea de socializare pot apărea postări cu sau despre noi pe care nu noi le-am hotărât; o informație plasată undeva anume poate „migra” si ajunge oriunde altundeva în spațiul virtual; pe baza alegerilor făcute la un moment dat, calculatorul începe să selecteze el pentru noi anumite situri, pagini pe care ni le propune cu prioritate în fața altora; toate informațiile personale, mai mult decât ar putea reține sau gestiona fiecare dintre noi, sunt în permanență manipulate de sistemul virtual, recombinate și actualizate după o logică care nouă, utilizatorilor individuali, ne poate scăpa.”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într-un mod clar – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Coerența răspunsurilor – candidatul folosește textul într-un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Eficiența limbajului – candidatul demonstrează că stăpânește limba suficient de bine pentru a-și exprima clar și cursiv ideile și opiniile – 30%;","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "PARTEA A II-A",
+          "title": "Reading text — answer in Romanian",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Romanian 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2018 Higher Level — © State Examinations Commission.",
+    id: "ron-2018-hl-iii-1", topicId: "romanian-1-1", conceptId: "exist-limite-responsabilitatea-care-avem-prieteni",
+    section: "III", questionRef: "2018 HL Section III Q1",
+    questionText: "Scrieți un eseu pornind de la una dintre cele două teme propuse mai jos (aproximativ 300 de cuvinte): Există limite în responsabilitatea pe care o avem față de prieteni?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Compunere de aproximativ 300 de cuvinte, la alegere între două subiecte, scrisă cursiv, urmărind organizarea coerentă a ideilor şi conducând la o concluzie clară.", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme prints: “La părțile a II-a și a III-a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într-un mod clar – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Coerența răspunsurilor – candidatul folosește textul într-un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Eficiența limbajului – candidatul demonstrează că stăpânește limba suficient de bine pentru a-și exprima clar și cursiv ideile și opiniile – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC553ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2018 Higher Level — © State Examinations Commission.",
+    id: "ron-2018-hl-iii-2", topicId: "romanian-1-1", conceptId: "haina-face-spune-proverb-situa-potrivit",
+    section: "III", questionRef: "2018 HL Section III Q2",
+    questionText: "Scrieți un eseu pornind de la una dintre cele două teme propuse mai jos (aproximativ 300 de cuvinte): „Nu haina îl face pe om. “, spune un proverb. În ce situații este potrivit să spunem că ne putem forma o opinie justă despre oameni luându-ne după hainele pe care le poartă? Referiți-vă la argumente pentru și contra și exprimați-vă punctul de vedere cu privire la ideea cuprinsă în acest proverb.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Compunere de aproximativ 300 de cuvinte, la alegere între două subiecte, scrisă cursiv, urmărind organizarea coerentă a ideilor şi conducând la o concluzie clară.", marks: 40, contextNote: "The examination requires every answer in ROMANIAN. The paper prints the rule on page 1: \"Toate rặspunsurile trebuie scrise în limba română.\" The scheme prints: “La părțile a II-a și a III-a, vor fi luate în considerare, pentru acordarea punctajului, următoarele criterii:”.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Claritatea scopului – candidatul înțelege întrebarea şi răspunde într-un mod clar – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Coerența răspunsurilor – candidatul folosește textul într-un mod propriu gândirii sale; ideile sunt exprimate structurat și logic – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Eficiența limbajului – candidatul demonstrează că stăpânește limba suficient de bine pentru a-și exprima clar și cursiv ideile și opiniile – 30%;","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Respectarea regulilor de gramatică, de ortografie și de punctuație – 10%.","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC553ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Romanian 2021 Higher Level — © State Examinations Commission.",
