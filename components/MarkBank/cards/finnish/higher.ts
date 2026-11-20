@@ -1550,6 +1550,104 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2015 Higher Level — © State Examinations Commission.",
+    id: "fin-2015-hl-i-1-b", topicId: "finnish-0-0", conceptId: "selita-omin-sanoin-seuraavat-ilmaisut-kompata",
+    section: "I", questionRef: "2015 HL Section I Q1(b)",
+    questionText: "Selitä omin sanoin seuraavat ilmaisut: kompata",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "olla samaa mieltä jnkn kanssa jstkn asiasta", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2015 Higher Level — © State Examinations Commission.",
+    id: "fin-2015-hl-i-1-d", topicId: "finnish-0-0", conceptId: "selita-omin-sanoin-seuraavat-ilmaisut-some",
+    section: "I", questionRef: "2015 HL Section I Q1(d)",
+    questionText: "Selitä omin sanoin seuraavat ilmaisut: some",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sosiaalinen media", marks: 1, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2015 Higher Level — © State Examinations Commission.",
+    id: "fin-2015-hl-ii-1", topicId: "finnish-1-0", conceptId: "kirjoita-suunnilleen-100-sanan-mittainen-oma",
+    section: "II", questionRef: "2015 HL Section II Q1",
+    questionText: "Kirjoita suunnilleen 100 sanan mittainen oma kommenttisi tekstin väitteeseen: ”Ilmaukset, joita on lähes mahdoton kääntää muille kielille tuntuvat lähentävän minua juuriini”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "HUOMAA: Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet", marks: 30, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30], parts: [{"id":"c1","verbatim":"1. Tekstin sisällön ymmärtäminen 30% : kokelas ymmärtää kysymykset ja osaa vastata niihin.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c2","verbatim":"2. Vastausten sisältö ja rakenne 30%: kokelas käyttää asianmukaista ja täsmällistä kieltä jäsentyneesti sekä viittaa oikein tekstiin.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c3","verbatim":"3. Kielellinen ilmaisu 30%: kokelas pystyy kielentämään selkeästi ja sujuvasti ajatuksiaan.","marks":9,"permittedMarks":[0,1,2,3,4,5,6,7,8,9]},{"id":"c4","verbatim":"4. Kieliasu 10%: kieliopillinen rakenne, oikeinkirjoitus, välimerkit","marks":3,"permittedMarks":[0,1,2,3]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "II TEHTÄVÄ:",
+          "title": "Reading text — answer in Finnish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Finnish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2015 Higher Level — © State Examinations Commission.",
+    id: "fin-2015-hl-iii-1", topicId: "finnish-1-1", conceptId: "kielella-luodaan-maailmaa",
+    section: "III", questionRef: "2015 HL Section III Q1",
+    questionText: "Kirjoita suunnilleen 300 sanan essee. Valitse aiheeksi toinen näistä: Kielellä luodaan maailmaa.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "HUOMAA: Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Tekstin sisällön ymmärtäminen 30% : kokelas ymmärtää kysymykset ja osaa vastata niihin.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Vastausten sisältö ja rakenne 30%: kokelas käyttää asianmukaista ja täsmällistä kieltä jäsentyneesti sekä viittaa oikein tekstiin.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Kielellinen ilmaisu 30%: kokelas pystyy kielentämään selkeästi ja sujuvasti ajatuksiaan.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Kieliasu 10%: kieliopillinen rakenne, oikeinkirjoitus, välimerkit","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC049ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2015 Higher Level — © State Examinations Commission.",
+    id: "fin-2015-hl-iii-2", topicId: "finnish-1-1", conceptId: "eniten-silla-joka-tyytyy-vahimpaan-sokrates",
+    section: "III", questionRef: "2015 HL Section III Q2",
+    questionText: "Kirjoita suunnilleen 300 sanan essee. Valitse aiheeksi toinen näistä: Eniten on sillä, joka tyytyy vähimpään. (Sokrates)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "HUOMAA: Tehtävien II ja III arvostelussa otetaan huomioon seuraavat osa-alueet", marks: 40, contextNote: "The examination requires every answer in FINNISH. The paper prints the rule on page 2: \"Ohje: Vastaa kaikkiin kolmeen tehtävään suomeksi.\"", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40], parts: [{"id":"c1","verbatim":"1. Tekstin sisällön ymmärtäminen 30% : kokelas ymmärtää kysymykset ja osaa vastata niihin.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c2","verbatim":"2. Vastausten sisältö ja rakenne 30%: kokelas käyttää asianmukaista ja täsmällistä kieltä jäsentyneesti sekä viittaa oikein tekstiin.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c3","verbatim":"3. Kielellinen ilmaisu 30%: kokelas pystyy kielentämään selkeästi ja sujuvasti ajatuksiaan.","marks":12,"permittedMarks":[0,1,2,3,4,5,6,7,8,9,10,11,12]},{"id":"c4","verbatim":"4. Kieliasu 10%: kieliopillinen rakenne, oikeinkirjoitus, välimerkit","marks":4,"permittedMarks":[0,1,2,3,4]}] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "higher",
     paperFileid: "LC049ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Finnish 2016 Higher Level — © State Examinations Commission.",

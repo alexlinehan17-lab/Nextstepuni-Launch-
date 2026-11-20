@@ -581,7 +581,8 @@ def _q(*sels):
 
 STEM_2015 = PL(4, '1. Selitä omin sanoin')
 CRIT_2015 = [(L(114, 115), 114), (L(116, 117), 116), (L(118, 119), 118), (S(120), 120)]
-HEAD_2015 = L(112, 113)
+# the head's "osa-" / "alueet" is one word broken at the line end: joined without a space
+HEAD_2015 = Join(S(112), S(113), sep='')
 ESSAY_2015 = 'Kirjoita suunnilleen 300 sanan essee.'
 Q1B_2015 = RX(54, r'(\d)p$')
 Q1D_2015 = RX(56, r'(\d)p$')
