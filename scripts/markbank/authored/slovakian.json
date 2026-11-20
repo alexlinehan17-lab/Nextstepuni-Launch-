@@ -6706,6 +6706,92 @@
   }
  },
  {
+  "id": "slk-2021-hl-ii-1",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2021,
+  "section": "II",
+  "topicId": "slovakian-1-1",
+  "conceptId": "napi-esej-najmenej-300-slov-jednu",
+  "questionRef": "2021 HL Section II Q1",
+  "questionText": "Napíšte esej (najmenej 300 slov) na jednu z nasledovných tém: Dať peniaze do klobúka alebo...? Uvažuj o rôznych formách a o účinnosti pomoci – dať ľuďom peniaze a materiálnu pomoc alebo im dať prostriedky, naučiť ich niečo, aby si pomohli sami.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať",
+    "marks": null,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\" The scheme prints, with no marks or percentages beside the criteria: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:” Under the two titles it prints nothing else. It reprints the instruction as “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:” and the lines under this title as “Uvažujte o formách a o účinnosti pomoci – dať ľuďom peniaze a materiálnu pomoc alebo im dať prostriedky, naučiť ich niečo, aby si pomohli sami.”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Zručnosti – gramatika, pravopis",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
+  "id": "slk-2021-hl-ii-2",
+  "subjectId": "slovakian",
+  "level": "higher",
+  "year": 2021,
+  "section": "II",
+  "topicId": "slovakian-1-1",
+  "conceptId": "napi-esej-najmenej-300-slov-jednu",
+  "questionRef": "2021 HL Section II Q2",
+  "questionText": "Napíšte esej (najmenej 300 slov) na jednu z nasledovných tém: Nemôžeš si jednoducho vymyslieť svoje vlastné fakty len preto, lebo sa ti jednoducho nepáči to, čo počuješ.“ - Greta Thunberg",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Zrozumiteľnosť odpovedí – kandidát porozumel otázkam a dokáže na ne odpovedať",
+    "marks": null,
+    "contextNote": "The examination requires every answer in SLOVAKIAN. The paper prints the rule on page 2: \"Všetky odpovede musia byť napísané po slovensky.\" The scheme prints, with no marks or percentages beside the criteria: “V 1. a 2. časti budú pri hodnotení brané do úvahy nasledovné kritériá:” Under the two titles it prints nothing else. It reprints the instruction as “Napíšte esej (asi 300 slov) na jednu z dvoch nasledovných tém:”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Ucelenosť odpovede – kandidát zvolil vhodné výrazy a tvorí svoju odpoveď požadovaným spôsobom",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Ovládanie jazyka – kandidát preukázal dostatočné znalosti z jazyka, v ktorom je schopný sformulovať svoje myšlienky zrozumiteľne a ucelene",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Zručnosti – gramatika, pravopis",
+    "marks": null
+   }
+  ],
+  "notes": "Read on the rendered scheme and paper (small-languages lane, 20 Nov 2026); the paper prints this ask on PDF page 4 of the question paper."
+ },
+ {
   "id": "slk-2022-hl-i-1-a",
   "subjectId": "slovakian",
   "level": "higher",
