@@ -2085,6 +2085,959 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-la-1", topicId: "portuguese-2-5", conceptId: "maria-cansada",
+    section: "LA", questionRef: "2022 HL Section LA Q1",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer in Portuguese.",
+    questionText: "Por que razão a Maria está cansada?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme allows “Ela tem um projeto.” for 1 mark, in place of “Ela tem um projeto para entregar no fim da semana.”, never beside it.", group: {"claimMax":1,"perOption":2,"options":["Ela tem um projeto para entregar no fim da semana.","Ela tem muitas coisas para fazer.","Ela tem um projeto."],"optionMarks":[2,2,1],"optionOf":[null,null,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A: Um Favor — Question 1",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-la-2", topicId: "portuguese-2-5", conceptId: "maria-irma-mais-velha-assinale-opcao",
+    section: "LA", questionRef: "2022 HL Section LA Q2",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer in Portuguese.",
+    questionText: "Maria é a irmã mais velha. Assinale a opção correta com um (✓). Verdadeiro",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Verdadeiro", marks: 2, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A: Um Favor — Question 2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-la-3", topicId: "portuguese-2-5", conceptId: "maria-pode-buscar-irmao-aeroporto",
+    section: "LA", questionRef: "2022 HL Section LA Q3",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer in Portuguese.",
+    questionText: "Por que a Maria não pode ir buscar o irmão ao aeroporto?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Porque ela tem uma reunião muito importante à hora que ele chega.", marks: 4, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “4 marks: 2 x 2 marks”.", permittedMarks: [0,2,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A: Um Favor — Question 3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-la-4", topicId: "portuguese-2-5", conceptId: "identifique-quatro-caracteristicas-irmao-maria",
+    section: "LA", questionRef: "2022 HL Section LA Q4",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer in Portuguese.",
+    questionText: "Identifique quatro características do irmão da Maria.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":4,"perOption":2,"options":["Ele é alto e magro.","Tem cabelo preto e curto.","Tem olhos verdes e grandes.","Tem barba e usa óculos vermelhos.","Também costuma usar um casaco azul e comprido."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A: Um Favor — Question 4",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-la-5", topicId: "portuguese-2-5", conceptId: "irmao-maria-parecido-quem",
+    section: "LA", questionRef: "2022 HL Section LA Q5",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer in Portuguese.",
+    questionText: "O irmão da Maria é parecido com quem?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Com o pai.", marks: 2, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A: Um Favor — Question 5",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-la-6", topicId: "portuguese-2-5", conceptId: "quem-vai-pagar-jantar",
+    section: "LA", questionRef: "2022 HL Section LA Q6",
+    stem: "You will hear a dialogue. There will be a pause during the second playing. Answer in Portuguese.",
+    questionText: "Quem vai pagar o jantar?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":2,"options":["A Maria.","Ela."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte A: Um Favor — Question 6",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte A · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-lb-1", topicId: "portuguese-2-5", conceptId: "funcao-ricardo-soares",
+    section: "LB", questionRef: "2022 HL Section LB Q1",
+    stem: "You will hear a piece about a youth movement. Answer in Portuguese.",
+    questionText: "Qual a função de Ricardo Soares?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "É o cofundador do movimento.", marks: 2, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B: Movimento de Jovens — Question 1",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-lb-2", topicId: "portuguese-2-5", conceptId: "objetivos-movimento",
+    section: "LB", questionRef: "2022 HL Section LB Q2",
+    stem: "You will hear a piece about a youth movement. Answer in Portuguese.",
+    questionText: "Quais os objetivos do movimento?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Conectar jovens que falam português nas redes sociais.", marks: null, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language. The scheme prices this ask “6 marks: 3 x 2 marks” and prints “Any 2” beside it: the split does not add up, so the card keeps the printed total, 6 marks." },
+    { id: "r-2", kind: "point", verbatim: "Acesso a informações sobre outros países.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Organizar debates entre os jovens.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B: Movimento de Jovens — Question 2",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-lb-3", topicId: "portuguese-2-5", conceptId: "tipo-parceiros-eles-estao-procura",
+    section: "LB", questionRef: "2022 HL Section LB Q3",
+    stem: "You will hear a piece about a youth movement. Answer in Portuguese.",
+    questionText: "Que tipo de parceiros eles estão à procura?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pessoas que trabalhem com jovens na África.", marks: 2, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B: Movimento de Jovens — Question 3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-lb-4-i", topicId: "portuguese-2-5", conceptId: "intencao-movimento-fazer-publicacoes-diarias-rede",
+    section: "LB", questionRef: "2022 HL Section LB Q4(i)",
+    stem: "You will hear a piece about a youth movement. Answer in Portuguese.",
+    questionText: "A intenção do movimento é fazer publicações diárias. Qual a rede social usada?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Instagram.", marks: 2, contextNote: "The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B: Movimento de Jovens — Question 4(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-lb-4-ii", topicId: "portuguese-2-5", conceptId: "serao-tipos-publicacoes-segunda-feira-literatura",
+    section: "LB", questionRef: "2022 HL Section LB Q4(ii)",
+    stem: "You will hear a piece about a youth movement. Answer in Portuguese.",
+    questionText: "Quais serão os tipos de publicações? Segunda-feira Literatura Terça-feira Quarta-feira Inovação Quinta-feira Sexta-feira Política Sábado Domingo",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cultura", marks: 2, contextNote: "For “Terça-feira”: The examination prints this question in Portuguese and it is answered in PORTUGUESE. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-2", kind: "point", verbatim: "Curiosidades", marks: 2, contextNote: "For “Quinta-feira”" },
+    { id: "r-3", kind: "point", verbatim: "Debates", marks: 2, contextNote: "For “Sábado”" },
+    { id: "r-4", kind: "point", verbatim: "Filmes", marks: 2, contextNote: "For “Domingo”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte B: Movimento de Jovens — Question 4(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte B · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-lc-1", topicId: "portuguese-2-5", conceptId: "marina-guilherme-not-seen-other-long",
+    section: "LC", questionRef: "2022 HL Section LC Q1",
+    stem: "You will hear a chat between friends. There will be a pause during the second playing. Answer in English.",
+    questionText: "Marina and Guilherme have not seen each other in a long time. When was the last time they met?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Three years ago.", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C: Conversa entre Amigos — Question 1",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-lc-2", topicId: "portuguese-2-5", conceptId: "now-meet-chance-brought-them-together",
+    section: "LC", questionRef: "2022 HL Section LC Q2",
+    stem: "You will hear a chat between friends. There will be a pause during the second playing. Answer in English.",
+    questionText: "Now they meet by chance. What has brought them together?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme allows “They’re doing an exam in the college.” for 2 marks, in place of “An exam to apply to university.”, never beside it. The scheme allows “They’re doing an exam.” for 1 mark, in place of “An exam to apply to university.”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["An exam to apply to university.","They’re doing an exam in the college.","They’re doing an exam."],"optionMarks":[3,2,1],"optionOf":[null,0,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C: Conversa entre Amigos — Question 2",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-lc-3", topicId: "portuguese-2-5", conceptId: "marina-moved-schools-fell-new-school",
+    section: "LC", questionRef: "2022 HL Section LC Q3",
+    stem: "You will hear a chat between friends. There will be a pause during the second playing. Answer in English.",
+    questionText: "Marina has moved schools. How does she fell about the new school? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices the full answer “3 marks” and prints “Any 2” beside it: any two of its details. The scheme allows “She really likes the new school.” for 2 marks, in place of “She really likes the new school and she made many friends, the school is smaller.”, never beside it. The scheme allows “She made many friends.” for 2 marks, in place of “She really likes the new school and she made many friends, the school is smaller.”, never beside it. The scheme allows “The school is smaller.” for 2 marks, in place of “She really likes the new school and she made many friends, the school is smaller.”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["She really likes the new school and she made many friends, the school is smaller.","She really likes the new school.","She made many friends.","The school is smaller."],"optionMarks":[3,2,2,2],"optionOf":[null,0,0,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C: Conversa entre Amigos — Question 3",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-lc-4-i", topicId: "portuguese-2-5", conceptId: "remember-dona-antonia-great-teacher-subject",
+    section: "LC", questionRef: "2022 HL Section LC Q4(i)",
+    stem: "You will hear a chat between friends. There will be a pause during the second playing. Answer in English.",
+    questionText: "They remember Dona Antonia as a great teacher. What subject did she teach?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Biology", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C: Conversa entre Amigos — Question 4(i)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-lc-4-ii", topicId: "portuguese-2-5", conceptId: "remember-dona-antonia-great-teacher-current",
+    section: "LC", questionRef: "2022 HL Section LC Q4(ii)",
+    stem: "You will hear a chat between friends. There will be a pause during the second playing. Answer in English.",
+    questionText: "They remember Dona Antonia as a great teacher. What is her current role?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "She is the principal / director / head of the school.", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C: Conversa entre Amigos — Question 4(ii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-lc-5", topicId: "portuguese-2-5", conceptId: "guilherme-phone-number",
+    section: "LC", questionRef: "2022 HL Section LC Q5",
+    stem: "You will hear a chat between friends. There will be a pause during the second playing. Answer in English.",
+    questionText: "What is Guilherme’s phone number?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme gives “6 or more wrong numbers” 0 marks. The scheme allows “1 to 2 wrong numbers” for 2 marks, in place of “555 436 2 780”, never beside it. The scheme allows “3 to 5 wrong numbers” for 1 mark, in place of “555 436 2 780”, never beside it.", group: {"claimMax":1,"perOption":3,"options":["555 436 2 780","1 to 2 wrong numbers","3 to 5 wrong numbers"],"optionMarks":[3,2,1],"optionOf":[null,0,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C: Conversa entre Amigos — Question 5",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-lc-6", topicId: "portuguese-2-5", conceptId: "leave-quickly",
+    section: "LC", questionRef: "2022 HL Section LC Q6",
+    stem: "You will hear a chat between friends. There will be a pause during the second playing. Answer in English.",
+    questionText: "Why do they have to leave quickly?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["They have to start their exam.","The exams start in 20 minutes / at 3.","They only have 20 minutes left."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte C: Conversa entre Amigos — Question 6",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte C · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-ld-1", topicId: "portuguese-2-5", conceptId: "highest-temperature-lisbon-saturday",
+    section: "LD", questionRef: "2022 HL Section LD Q1",
+    stem: "You will hear a weather report. Answer in English.",
+    questionText: "What will the highest temperature be in Lisbon on Saturday?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "25⁰ C", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D: Previsão do Tempo — Question 1",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-ld-2", topicId: "portuguese-2-5", conceptId: "weather-forecast-region-saturday-porto-coimbra",
+    section: "LD", questionRef: "2022 HL Section LD Q2",
+    stem: "You will hear a weather report. Answer in English.",
+    questionText: "What is the weather forecast? Region Saturday Porto and Coimbra Algarve",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cloudy, 13° to 23°.", marks: 3, contextNote: "For “Porto and Coimbra”: The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prints “Any 3” beside the table." },
+    { id: "r-2", kind: "point", verbatim: "Weak wind/breeze, calm sea, 19° to 27°", marks: 3, contextNote: "For “Algarve”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D: Previsão do Tempo — Question 2",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-ld-3", topicId: "portuguese-2-5", conceptId: "cities-temperatures-between-degrees-sunday",
+    section: "LD", questionRef: "2022 HL Section LD Q3",
+    stem: "You will hear a weather report. Answer in English.",
+    questionText: "What cities will have temperatures between 12 and 20 degrees on Sunday?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lisboa/Lisbon", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prints “3 marks: 2 x 3 marks” beside this answer and “6 Marks” over it: the card keeps the question’s printed 6 marks, 3 for each city." },
+    { id: "r-2", kind: "point", verbatim: "Porto/ Oporto", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D: Previsão do Tempo — Question 3",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-ld-4", topicId: "portuguese-2-5", conceptId: "weather-forecast-sunday-south-country",
+    section: "LD", questionRef: "2022 HL Section LD Q4",
+    stem: "You will hear a weather report. Answer in English.",
+    questionText: "Describe the weather forecast for Sunday for the South of the country.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":2,"perOption":3,"options":["High temperatures","weak wind","no rain."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte D: Previsão do Tempo — Question 4",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte D · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-le-1", topicId: "portuguese-2-5", conceptId: "telma-start-practicing-judo",
+    section: "LE", questionRef: "2022 HL Section LE Q1",
+    stem: "You will hear an interview with Telma Monteiro. There will be a pause during the second playing. Answer in English.",
+    questionText: "Why did Telma start practicing judo?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme allows “Because of her sister and her friends” for 3 marks, in place of “Because her sister and her friends were practising already”, never beside it. The scheme allows “Her sister was practicing already” for 3 marks, in place of “Because her sister and her friends were practising already”, never beside it. The scheme allows “Her friends were practicing already” for 3 marks, in place of “Because her sister and her friends were practising already”, never beside it. The scheme allows “Because of her friends” for 2 marks, in place of “Because her sister and her friends were practising already”, never beside it. The scheme allows “Because of her sister” for 2 marks, in place of “Because her sister and her friends were practising already”, never beside it.", group: {"claimMax":1,"perOption":4,"options":["Because her sister and her friends were practising already","Because of her sister and her friends","Her sister was practicing already","Her friends were practicing already","Because of her friends","Because of her sister"],"optionMarks":[4,3,3,3,2,2],"optionOf":[null,0,0,0,0,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E: Entrevista Telma Monteiro — Question 1",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-le-2", topicId: "portuguese-2-5", conceptId: "long-telma-been-practicing-judo",
+    section: "LE", questionRef: "2022 HL Section LE Q2",
+    stem: "You will hear an interview with Telma Monteiro. There will be a pause during the second playing. Answer in English.",
+    questionText: "How long has Telma been practicing judo?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":1,"perOption":3,"options":["21 years.","Since she was 14 years old."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E: Entrevista Telma Monteiro — Question 2",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-le-3", topicId: "portuguese-2-5", conceptId: "there-complicated-time-telma-life",
+    section: "LE", questionRef: "2022 HL Section LE Q3",
+    stem: "You will hear an interview with Telma Monteiro. There will be a pause during the second playing. Answer in English.",
+    questionText: "There was a complicated time in Telma’s life. Why? Give details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "She was studying, training and competing. She was always tired. She thought about giving up.", marks: 5, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices this answer “5 marks: 5 x 1 mark”.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E: Entrevista Telma Monteiro — Question 3",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-le-4", topicId: "portuguese-2-5", conceptId: "find-strength-continue",
+    section: "LE", questionRef: "2022 HL Section LE Q4",
+    stem: "You will hear an interview with Telma Monteiro. There will be a pause during the second playing. Answer in English.",
+    questionText: "How does she find the strength to continue?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme prices the full answer “4 marks: 2 x 2 marks”. The scheme allows “Balancing work, pausing when necessary.” for 3 marks, in place of “Balancing work and personal life, pausing when necessary.”, never beside it.", group: {"claimMax":1,"perOption":4,"options":["Balancing work and personal life, pausing when necessary.","Balancing work, pausing when necessary."],"optionMarks":[4,3],"optionOf":[null,0]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E: Entrevista Telma Monteiro — Question 4",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC018ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2022 Higher Level — © State Examinations Commission.",
+    id: "por-2022-hl-le-5", topicId: "portuguese-2-5", conceptId: "telma-describes-day-training-routine",
+    section: "LE", questionRef: "2022 HL Section LE Q5",
+    stem: "You will hear an interview with Telma Monteiro. There will be a pause during the second playing. Answer in English.",
+    questionText: "Telma describes her day. Give details about her training routine.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2 hours physical preparation [or] exercising", marks: 2, contextNote: "For “Morning”: The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme continues the morning answer with “[or] working out.” and the afternoon answer with “for international competition”, each on the line under its label." },
+    { id: "r-2", kind: "point", verbatim: "3 hours judo training [or] 4 hours judo training", marks: 2, contextNote: "For “Afternoon”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "LISTENING COMPREHENSION",
+          "title": "Parte E: Entrevista Telma Monteiro — Question 5",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Portuguese 2022 Higher Level Listening Comprehension — © State Examinations Commission.",
+          "presentationNote": "The question page of the listening booklet. Play the recording, then answer.",
+          "sourceFileid": "LC018ALPA00EV"
+    },
+    audioMaterial: {
+          "kind": "source-audio",
+          "label": "Parte E · listening",
+          "title": "2022 Portuguese · Listening Comprehension Test",
+          "playbackUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "secFileid": "LC018ZLP017BV.mp3",
+          "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2022/LC018ZLP017BV.mp3",
+          "attribution": "© State Examinations Commission.",
+          "presentationNote": "Full official recording · Partes A–E, Higher and Ordinary Level. Use the player to pause, replay or move through the recording."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC018ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Portuguese 2023 Higher Level — © State Examinations Commission.",

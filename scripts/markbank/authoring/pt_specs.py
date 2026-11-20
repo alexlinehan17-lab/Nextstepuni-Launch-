@@ -163,10 +163,12 @@ def V(n, page):
 class InlineVerdict(Sel):
     """A tick set in the box AFTER its label on the same row ("True False ✓",
     2025 Higher Q2(j)(i)): the label printed immediately left of the tick, on
-    scheme line n's row of page `page`."""
-    def __init__(self, n, page):
+    scheme line n's row of page `page`. Where a page prints several true/false
+    rows (2022 Ordinary p20, Parte D Q1 and Q2), `k` names the row, counted
+    from the top of the page."""
+    def __init__(self, n, page, k=None):
         super().__init__('scheme', n)
-        self.page = page
+        self.page, self.k = page, k
 
     def text(self, doc):
         import fitz
@@ -183,7 +185,12 @@ class InlineVerdict(Sel):
             row = [h for h in heads if abs(h[1] - t[1]) < 8]
             left = [h for h in row if h[2] <= t[0]]
             if len(row) >= 2 and left:
-                found.append(max(left, key=lambda h: h[2])[4])
+                found.append((t[1], max(left, key=lambda h: h[2])[4]))
+        found = [label for _y, label in sorted(found)]
+        if self.k is not None:
+            if len(found) <= self.k:
+                raise ValueError(f'scheme p{self.page}: no inline tick #{self.k}: {found}')
+            found = [found[self.k]]
         if len(found) != 1:
             raise ValueError(f'scheme p{self.page}: {len(found)} inline ticks after a label: {found}')
         line = doc['scheme'][self.n - 1]
@@ -192,8 +199,54 @@ class InlineVerdict(Sel):
         return found[0]
 
 
-def VI(n, page):
-    return InlineVerdict(n, page)
+def VI(n, page, k=None):
+    return InlineVerdict(n, page, k)
+
+
+class EachOnly:
+    """One answer at the per-answer marks of the "N x P marks" printed on
+    scheme line n, where the cell's own total disagrees with it ("3 marks: 2 x
+    3 marks" under "Answer 6 Marks", 2022 Higher Parte D Q3): the card's total
+    is the question's printed one, and the disagreement goes in the note."""
+    def __init__(self, n):
+        self.n = n
+
+    def read(self, doc):
+        m = re.search(r'(\d{1,2})\s*[x×]\s*(\d{1,2})\s*marks?\b', doc['raw'][self.n - 1], re.I)
+        if not m:
+            raise ValueError(f'scheme line {self.n} prints no "N x P marks"')
+        return 1, int(m.group(2)), m.group(0)
+
+
+SUPERSCRIPT = str.maketrans('0123456789', '⁰¹²³⁴⁵⁶⁷⁸⁹')
+
+
+class PdfSup:
+    """A scheme answer read from the scheme PDF with its raised digits kept
+    raised: the 2022 schemes print a temperature as "27" over a raised "0"
+    ("27⁰ C"), which the text layer flattens to "270 C". `line` is the .md
+    line the answer sits on (its text, digits joined, must match), `page` its
+    printed page; every span the PDF flags superscript has its digits mapped
+    to the Unicode superscript digits, nothing else changed."""
+    def __init__(self, line, page):
+        self.line, self.page = line, page
+
+    def text(self, doc):
+        import fitz
+        want = re.sub(r'\s+', '', doc['scheme'][self.line - 1])
+        pdf = fitz.open(os.path.join(SCHEMES, f'{doc["year"]}-{doc["level"]}.pdf'))
+        for block in pdf[self.page - 1].get_text('dict')['blocks']:
+            for ln in block.get('lines', []):
+                spans = ln['spans']
+                flat = re.sub(r'\s+', '', ''.join(sp['text'] for sp in spans))
+                if not flat or flat != want:
+                    continue
+                if not any(sp['flags'] & 1 for sp in spans):
+                    raise ValueError(f'scheme line {self.line}: no raised span on p{self.page}')
+                out = ''.join(sp['text'].translate(SUPERSCRIPT) if sp['flags'] & 1 else sp['text']
+                              for sp in spans)
+                return re.sub(r'\s+', ' ', out).strip()
+        raise ValueError(f'scheme line {self.line}: not found on p{self.page} of the PDF')
 
 
 def quoted(*sels):
@@ -310,6 +363,9 @@ def section_intro(doc):
 
 def _listening_language(stem):
     if re.search(r'\bresponda\b.*\bem portugu[eê]s\b', stem, re.I):
+        return 'Portuguese'
+    # 2022 gives the instruction in English: "Answer in Portuguese."
+    if re.search(r'\banswer\b.*\bin Portuguese\b', stem, re.I):
         return 'Portuguese'
     if re.search(r'\banswer\b.*\bin English\b', stem, re.I):
         return ENGLISH_OR_IRISH
@@ -1004,6 +1060,125 @@ LISTENING[(2023, 'hl')] = [
 # Live: 18 reading cards. New: six reading asks (Q1(c) and Q1(e) each one
 # tick question, as the census now counts them, 10c) and the listening test
 # (scheme .md lines 355-498, pages 13-17; each Part 24). Written held.
+# ============================================================== 2022 OL ===
+# The reading asks the old shared generator excluded: two true/false ticks the
+# text layer cannot read (taken from the scheme PDF by tick position, CARD-
+# STANDARD 10c), and the medals table (Q3(g) on the paper, (i) in the scheme:
+# "6 marks: 6 x 1 marks", "Any two lines", each line a year, a place and a
+# medal), placed 0 to 6 in steps of 1 as one printed statement.
+READING[(2022, 'ol')] = [
+    C('A1d', [one(VI(100, 5), T(100))]),
+    C('A2d', [one(VI(160, 8), T(160))]),
+    C('A3g', [stepped(B(S(216), S(217), S(218, before=' Any two'), S(219)), T(217))],
+      rownote='The scheme prices the table “6 marks: 6 x 1 marks” and prints “Any two lines” beside it: '
+           'a mark for each detail of two of the lines.'),
+]
+
+# Scheme .md lines 363-489 (pages 17-22). The recording is the 2022 one
+# (LC018ZLP017BV.mp3, CARD-STANDARD 10g).
+LISTENING[(2022, 'ol')] = [
+    C('LA1', [one(S(367), T(367))]),
+    C('LA2', [one(S(370), T(370))]),
+    C('LA3', [one(VI(373, 17), T(373))]),
+    C('LA4', [one(S(376, after='i) '), T(376)), one(S(377, after='ii) '), T(377)),
+              one(S(378, after='iii) '), T(378)), one(S(379, after='iv) '), T(379))], total=T(375)),
+    C('LA5', [one(S(382), T(382))]),
+    C('LB1', [one(S(390), T(390))]),
+    # Each half of the station's name on its own line at a lower price: paid
+    # in place of the full name, never beside it.
+    C('LB2', [menu([S(393)], T(393), [alt(S(394), T(394), of=0), alt(S(395), T(395), of=0)])]),
+    C('LB3', [one(S(398), T(398))]),
+    C('LB4i', [one(S(402), T(402))]),
+    C('LB4ii', [one(S(405), T(405))]),
+    # "6 marks: 3 x 2 marks" beside "Any 2" for "Indique dois temas": the
+    # printed lines disagree on the split, so the card keeps the printed total.
+    C('LB4iii', [shown(J(S(412), S(413)))], total=T(412), whole=True,
+      rownote='The scheme prices this ask “6 marks: 3 x 2 marks” and prints “Any 2” beside it, for two '
+           'themes asked: the split does not add up, so the card keeps the printed total, 6 marks.'),
+    C('LC1', [one(S(418), T(418))]),
+    C('LC2', [one(S(422), T(422))]),
+    C('LC3', [one(VI(425, 19), T(425))]),
+    C('LC4', [one(S(428), T(428))]),
+    # The full answer, or either half of it at the lower price, in its place.
+    C('LC5', [menu([S(435)], T(435), [alt(S(436), T(436), of=0), alt(S(437), T(437), of=0)])]),
+    C('LC6', [menu([S(440), S(441)], T(440))]),
+    C('LD1', [one(VI(446, 20, 0), T(446))]),
+    C('LD2', [one(VI(449, 20, 1), T(449))]),
+    C('LD3', [one(PdfSup(456, 21), T(456))]),
+    C('LD4', [one(S(459, before=' e Porto'), T(459, each=True)), one(S(459, after='Lisbon e '), T(459, each=True))],
+      total=T(459)),
+    C('LD5', [menu([S(462, after='is ', before=', weak'), S(462, after='temperatures, ', before=' and'),
+                    S(463)], T(462))]),
+    C('LE1', [one(S(467), T(467))]),
+    C('LE2', [one(VI(471, 21), T(471))]),
+    C('LE3', [menu([J(S(478), S(479)), S(480), S(481)], T(478))]),
+    C('LE4', [one(S(485, after='Morning '), T(485), lead=S(485, before=' 2')),
+              one(S(486, after='Afternoon '), T(486), lead=S(486, before=' 3'))], total=T(483)),
+    C('LE5', [one(S(489), T(489))]),
+]
+
+
+# ============================================================== 2022 HL ===
+# Scheme .md lines 426-592 (pages 17-24); the 2022 recording (10g).
+LISTENING[(2022, 'hl')] = [
+    C('LA1', [menu([S(430), S(431)], T(430), [alt(S(432), T(432), of=0)])]),
+    C('LA2', [one(VI(435, 17), T(435))]),
+    C('LA3', [stepped(J(S(438), S(440)), T(439))]),
+    C('LA4', [menu([S(443, before=' Tem cabelo'), S(443, after='magro. ', before=' Tem olhos'),
+                    J(S(443, after='curto. '), S(445, before=' Tem barba')), S(445, after='grandes. '),
+                    S(447)], T(444))]),
+    C('LA5', [one(S(454), T(454))]),
+    C('LA6', [menu([S(457), S(458)], T(457))]),
+    C('LB1', [one(S(462), T(462))]),
+    # "6 marks: 3 x 2 marks" beside "Any 2": the printed split does not add up,
+    # so the card keeps the printed total.
+    C('LB2', [shown(S(465, after='1. ')), shown(S(467, after='2. ')), shown(S(469, after='3. '))],
+      total=T(466), whole=True,
+      rownote='The scheme prices this ask “6 marks: 3 x 2 marks” and prints “Any 2” beside it: the split '
+              'does not add up, so the card keeps the printed total, 6 marks.'),
+    C('LB3', [one(S(472), T(472))]),
+    C('LB4i', [one(S(480), T(480))]),
+    C('LB4ii', [one(S(484, after='Terça-feira '), T(484), lead=S(484, before=' Cultura')),
+                one(S(486, after='Quinta-feira '), T(486), lead=S(486, before=' Curiosidades')),
+                one(S(488, after='Sábado '), T(488), lead=S(488, before=' Debates')),
+                one(S(489, after='Domingo '), T(489), lead=S(489, before=' Filmes'))], total=T(482)),
+    C('LC1', [one(S(498), T(498))]),
+    C('LC2', [menu([S(501)], T(501), [alt(S(502), T(502), of=0), alt(S(503), T(503), of=0)])]),
+    C('LC3', [menu([J(S(506), S(508))], T(507), [alt(S(509), T(509), of=0), alt(S(510), T(510), of=0),
+                                                alt(S(511), T(511), of=0)])],
+      rownote='The scheme prices the full answer “3 marks” and prints “Any 2” beside it: any two of its details.'),
+    C('LC4i', [one(S(515), T(515))]),
+    C('LC4ii', [one(S(522), T(522))]),
+    # The number, or the marks for one to two and three to five wrong digits
+    # in its place; the printed "6 or more wrong numbers ⟨0 marks⟩" is no
+    # option (an option earns marks), so the note quotes it.
+    C('LC5', [menu([S(525)], T(525), [alt(S(526), T(526), of=0), alt(S(527), T(527), of=0)])],
+      rownote='The scheme gives “6 or more wrong numbers” 0 marks.'),
+    C('LC6', [menu([S(531), S(532), S(533)], T(531))]),
+    C('LD1', [one(PdfSup(541, 22), T(541))]),
+    C('LD2', [one(S(545, after='Coimbra '), T(545), lead=S(545, before=' Cloudy')),
+              one(S(546, after='Algarve '), T(546), lead=S(546, before=' Weak'))], total=T(543),
+      rownote='The scheme prints “Any 3” beside the table.'),
+    C('LD3', [one(S(550, before=' and Porto'), EachOnly(550)), one(S(550, after='Lisbon and '), EachOnly(550))],
+      total=T(549),
+      rownote='The scheme prints “3 marks: 2 x 3 marks” beside this answer and “6 Marks” over it: the card '
+              'keeps the question’s printed 6 marks, 3 for each city.'),
+    C('LD4', [menu([S(553, before=', weak'), S(553, after='temperatures, ', before=' and'),
+                    S(553, after='and ')], T(553))]),
+    C('LE1', [menu([S(562)], T(562), [alt(S(n), T(n), of=0) for n in range(563, 568)])]),
+    C('LE2', [menu([S(570), S(571)], T(570))]),
+    C('LE3', [stepped(B(S(574), S(575), S(576)), T(575))]),
+    C('LE4', [menu([S(583)], T(582), [alt(S(584), T(584), of=0)])],
+      rownote='The scheme prices the full answer “4 marks: 2 x 2 marks”.'),
+    # The scheme centres "Morning" / "Afternoon" between the two lines of each
+    # answer cell, so a cell read whole never traces: each row is its cell's
+    # first printed line, and the note quotes the line that continues it.
+    C('LE5', [one(S(587), T(588), lead=S(588)), one(S(590), T(591), lead=S(591))], total=T(586),
+      rownote='The scheme continues the morning answer with “[or] working out.” and the afternoon '
+              'answer with “for international competition”, each on the line under its label.'),
+]
+
+
 READING[(2023, 'ol')] = [
     # The four options the scheme prints as correct, each "1 mark".
     C('A1c', [one(S(n), T(n)) for n in range(91, 95)], total=T(90),

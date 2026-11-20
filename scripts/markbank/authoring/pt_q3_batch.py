@@ -43,8 +43,9 @@ ALL_NEW = {2026}
 # print each band's range on a line of its own (band-range form, d9cc8de6a).
 WRITING_HELD = set()
 # Sittings whose listening asks have no spec yet (pt_specs.LISTENING): they
-# stay open, and a write/add of the sitting carries no listening card.
-LISTENING_PENDING = {2022}
+# stay open, and a write/add of the sitting carries no listening card. (2022
+# was held here only while its written tasks went first.)
+LISTENING_PENDING = set()
 
 _GENERATED = None
 
