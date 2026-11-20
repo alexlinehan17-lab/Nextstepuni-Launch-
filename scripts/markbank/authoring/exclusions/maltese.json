@@ -1,40 +1,5 @@
 [
  {
-  "ref": "2024 HL Section I Q1(b)",
-  "reason": "the scheme answers a different expression from the one the paper prints at this address",
-  "evidence": "2024 HL: the paper asks for \"nisslet\" and the scheme answers \"nislet: żergħet/twieldet\" at the same letter — the two documents do not line up here, so no card is made"
- },
- {
-  "ref": "2024 HL Section I Q1(d)",
-  "reason": "the scheme answers a different expression from the one the paper prints at this address",
-  "evidence": "2024 HL: the paper asks for \"l-isfida\" and the scheme answers \"jibqa’ mistgħaġeb: ikun impressjonat\" at the same letter — the two documents do not line up here, so no card is made"
- },
- {
-  "ref": "2024 HL Section I Q1(e)",
-  "reason": "the scheme answers a different expression from the one the paper prints at this address",
-  "evidence": "2024 HL: the paper asks for \"il-ħidma\" and the scheme answers \"l‐isfida: prova li trid tegħlibha\" at the same letter — the two documents do not line up here, so no card is made"
- },
- {
-  "ref": "2024 HL Section I Q4",
-  "reason": "the sitting is printed in a subset font whose ToUnicode map is broken, so the SEC's own words cannot be read",
-  "evidence": "2024 HL scheme: \". X’hinuma l‐isfidi li jkolla tħabbat wiċċha magħhom biex tiddisinnja ħwejjeġ b’mod sosten\" — the text layer of this sitting hands back characters from the IPA and Latin Extended-B blocks where Cyrillic letters were printed (U+0244, U+0268, U+026B and hundreds more), so neither the question nor the answer can be quoted. Keyed to the sitting, like a misprint, rather than repaired by guesswork."
- },
- {
-  "ref": "2024 HL Section II Q1",
-  "reason": "the scheme prices no line of this written-production task",
-  "evidence": "2024 HL scheme, Part II: the scheme prints NOTHING under this task beyond the SEC's own wording and, where the paper offers two titles, the titles. There is no answer, no indicative content and no tariff beside any line of it."
- },
- {
-  "ref": "2024 HL Section III Q1",
-  "reason": "the scheme prices no line of this written-production task",
-  "evidence": "2024 HL scheme, Part III: the scheme prints NOTHING under this task beyond the SEC's own wording and, where the paper offers two titles, the titles. There is no answer, no indicative content and no tariff beside any line of it."
- },
- {
-  "ref": "2024 HL Section III Q2",
-  "reason": "the scheme prices no line of this written-production task",
-  "evidence": "2024 HL scheme, Part III: the scheme prints NOTHING under this task beyond the SEC's own wording and, where the paper offers two titles, the titles. There is no answer, no indicative content and no tariff beside any line of it."
- },
- {
   "ref": "2025 HL Section II Q1",
   "reason": "the scheme prices no line of this written-production task",
   "evidence": "2025 HL scheme, Part II: the scheme prints NOTHING under this task beyond the SEC's own wording and, where the paper offers two titles, the titles. There is no answer, no indicative content and no tariff beside any line of it."
